@@ -18,6 +18,8 @@ These are AI-assisted research and reconstruction records. The full proofs and q
 
 ## Download or inspect
 
+- [What we tried and why](ATTEMPTS.md): concise accounts of approaches, results, limited successes and unfinished work, with their broader motivations retained.
+
 - [All three topic directories](.): readable readers and source links; the complete S6 archive is linked from its topic guide because it exceeds ordinary repository-file limits.
 - [Yang–Mills editable sources](yang-mills/sources/) and [AI reading index](yang-mills/AI_READING_INDEX.md): full mathematical text, not a replacement summary.
 - [Release manifests](releases/2026-09-09/): exact file sizes, SHA-256 values and GitHub–Zenodo correspondence.

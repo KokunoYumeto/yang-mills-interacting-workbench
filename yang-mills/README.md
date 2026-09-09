@@ -1,5 +1,7 @@
 # Yang-Mills mathematical sources and readers - 9 September 2026
 
+[What the quantum, interaction, volume and spatial-limit tasks tried—and why](../ATTEMPTS.md#ym-attempts)
+
 This edition collects the supplied current quantum coarse-graining, volume-uniform actual-vacuum, spatial-continuum, and related finite-box mathematical proofs. It supplements the existing Yang-Mills collection, whose previous editions and complete historical workbench remain part of the publication history. This ZIP is an explicitly selected current-source edition, not a replacement for the entire historical workbench.
 
 ## Read the manuscripts

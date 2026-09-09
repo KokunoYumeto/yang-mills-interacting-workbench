@@ -2,6 +2,8 @@
 
 This is a collection of mathematical research programmes, not one finished proof. The papers contain the definitions and arguments; this page explains the purpose of each programme, what the released material contains, and where its results stop. The [machine-readable catalogue](workbench.json) identifies exact public file versions.
 
+For the short account of **what we tried, why it seemed promising, what worked and how far, and what remains unfinished**, read [the research attempts](ATTEMPTS.md). They include broader motivations and distinct routes within each task, with links to the complete work and to independently maintained peer workbenches.
+
 ## Yang–Mills: from explicit interacting models to continuum questions
 
 The investigation starts from specified finite-volume and regulated interacting systems and asks which state maps, spectral estimates and coarse-graining constructions persist when volume and spatial resolution change. The reason for keeping the parameters and nonlinear terms is that a result for an oscillator or a fixed box does not on its own settle the corresponding interacting continuum question.

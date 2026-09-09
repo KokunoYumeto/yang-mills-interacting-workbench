@@ -16,6 +16,12 @@ A release may contain a family of constructed objects, several theorem candidate
 
 ## Record research directions as history
 
+Give every research task a brief account that another task can read without its conversation history. Start with the broader aim and why it matters to the programme. Then give each materially different attempt two to four sentences: **we wanted to achieve this; we thought this route might help because of this observation; we tried this; it produced this result, to this extent, and was left here.** Link the complete argument or experiment. An implementation detail needs its own entry only when it changes the mathematical route or outcome.
+
+Keep the heuristic motivation visible even when it did not lead to the intended result. Say whether that reason is recorded in the original work or reconstructed from later evidence. If the original reason is unknown, say so. Describe limited success concretely, for example a result on a fixed finite family with the uniform limit unfinished. State whether an unfinished route was paused, superseded, blocked by a specific calculation, or simply left incomplete.
+
+The [short attempt accounts](../../ATTEMPTS.md) apply this convention to the current workbenches. Their [machine companion](../../research-attempts.json) retains the same aim, rationale, attempt, outcome, extent and status, with source references. These short accounts are navigation into full research, and apply equally to a whole theory and an individual calculation.
+
 For each major approach, preserve the motivating observation or suggestion; the actual model, hypotheses and conventions; the sources used; what was derived or tested; the artifact locations; why the attempt stopped or changed direction; and the implications supported by the outcome.
 
 Distinguish an unfinished attempt, a finite computation that found nothing, an identified gap, a proved obstruction to this route, and a counterexample to the target statement. An unsuccessful search is not a proof of impossibility. A checked obstruction may itself be a useful theorem.

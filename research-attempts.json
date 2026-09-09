@@ -1,0 +1,878 @@
+{
+  "format": "polyclank-descriptive-attempt-accounts-0.1",
+  "as_of": "2026-09-09",
+  "human_overview": "ATTEMPTS.md",
+  "scope": "Concise accounts of the identified programmes and material routes; not an exhaustive catalogue of every historical chat or subsidiary calculation.",
+  "editorial_basis": "Retained source bodies and task handoffs. Reconstructed rationales are labeled; source results are not new mathematical verification.",
+  "recurring_work": "paused; this is a finite editorial update",
+  "tasks": [
+    {
+      "id": "NS-primary",
+      "programme": "NS",
+      "title": "Navier–Stokes reconstruction",
+      "aim": "Make the supplied classical fluid construction understandable and checkable, while investigating exact connections with algebraic, heat-flow and geometric constructions.",
+      "broader_motivation": "The proposed connections suggested that a mechanism found in one setting might survive in another. The research therefore tracks the actual equations, viscosity, forcing and coordinate maps, with each connection's extent stated explicitly.",
+      "attempts": [
+        {
+          "id": "NS-reconstruct-source",
+          "title": "Reconstruct the supplied construction",
+          "aim": "Expose the full construction as a readable derivation that other researchers can inspect.",
+          "rationale": "An explicit supplied manuscript gave a concrete sequence of profiles, heat corrections and oscillatory stages to work through.",
+          "rationale_basis": "Recorded in the research programme and current research-state account.",
+          "tried": "Reconstructed the profiles, viscous background, oscillations, mean corrections, stage cycle and endpoint calculations.",
+          "outcome": "Published a corrected 208-page reader and 13 complete component bodies with finite-check records.",
+          "extent": "Independent verification of the complete assembled construction remains unfinished.",
+          "status": "published_reconstruction_with_unfinished_validation",
+          "brief": "We wanted the supplied construction to be readable and checkable. Its explicit sequence of profiles, heat corrections and oscillatory stages gave a concrete route to reconstruct. This produced the corrected 208-page reader and 13 complete source bodies; independent verification of the full assembled construction is still unfinished.",
+          "evidence": [
+            {
+              "path": "navier-stokes/RESEARCH_STATE.md",
+              "locator": "Purpose and route; Full calculation bodies; Where the work was left"
+            }
+          ]
+        },
+        {
+          "id": "NS-actual-shear-repair",
+          "title": "Retain the actual shear and repair the pulse calculation",
+          "aim": "Check whether the claimed production estimate survives the actual varying shear.",
+          "rationale": "The production calculation depends on the full shear; omitting its remainder could change the estimate.",
+          "rationale_basis": "The correction is explicitly recorded in the published reader and manifest; this sentence explains its mathematical purpose.",
+          "tried": "Carried the remainder through the production bounds, retained radial transport derivatives and wrote the plane-coordinate inverse on its domain.",
+          "outcome": "The corrected edition contains the complete local repairs and associated finite checks.",
+          "extent": "These corrected steps do not complete verification of the entire infinite construction.",
+          "status": "local_repair_completed",
+          "brief": "We checked whether pulse production survives the actual varying shear, since the omitted remainder affects that estimate. Keeping it led to corrected production bounds, retained transport derivatives and an explicit plane-coordinate inverse. Those local repairs are in the published reader; the full infinite construction remains unfinished in our independent validation.",
+          "evidence": [
+            {
+              "path": "navier-stokes/RESEARCH_STATE.md",
+              "locator": "Corrections and recorded checks"
+            },
+            {
+              "path": "navier_stokes_primary_manifest.json",
+              "locator": "Complete corrected source bodies and provenance"
+            }
+          ]
+        },
+        {
+          "id": "NS-formal-endpoint",
+          "title": "Check the formal endpoint against the stated problem",
+          "aim": "Obtain an independently replayed formal endpoint with the intended problem statement.",
+          "rationale": "The supplied formal repository offered a route to check both the declarations and their exact target statement.",
+          "rationale_basis": "Recorded in the formal-source and current research-state descriptions.",
+          "tried": "Inspected source/import declarations and attempted the coordinated compilation and endpoint comparison.",
+          "outcome": "The local formal run stopped without an endpoint or Comparator certificate.",
+          "extent": "No complete independent formal verification was obtained; compilation progress alone was not such a certificate.",
+          "status": "stopped_unfinished",
+          "brief": "We tried to obtain an independent formal endpoint because the supplied formal repository offered a check of the declarations and target statement. Source/import inspection and a coordinated compilation attempt were made. The run stopped without an endpoint or Comparator certificate; this route remains unfinished and paused.",
+          "evidence": [
+            {
+              "path": "navier-stokes/research-state.json",
+              "locator": "formal_source; current_formal_run_status; NS-INDEPENDENT-VALIDATION"
+            },
+            {
+              "path": "navier-stokes/RESEARCH_STATE.md",
+              "locator": "Where the work was left"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NS-source-audit",
+      "programme": "NS",
+      "title": "Fluid source and analytical audits",
+      "aim": "Find which proposed fluid mechanisms survive exact source, coordinate and analytical checks.",
+      "broader_motivation": "Explicit incoming formulas made individual maps and residuals tractable; a failure in one presentation prompted a more exact correspondence.",
+      "source_availability": "These accounts report the retained local task handoffs. Exact public counterparts for these later calculations have not yet been verified in this index; they are not silently assigned to the earlier 208-page archived reader.",
+      "attempts": [
+        {
+          "id": "ns-incoming-fluid-bundle-audit",
+          "title": "Reconstructing the incoming fluid bundle",
+          "aim": "Identify which parts of the incoming fluid reconstruction survive exact source, coordinate, force, and hypothesis checks, and deliver usable full proof fragments.",
+          "rationale": "The report's explicit equations and supplied symbolic checks made local transfers independently checkable. The log records that audit design, but does not document an original belief that this route would solve Navier–Stokes.",
+          "rationale_basis": "retrospective_inference",
+          "tried": "Read all 40 report pages and corresponding TeX; inspected the archive and supplied code; reconstructed the original Boussinesq scale map, CKN circle argument, rational-cylinder operators, IPM coefficient/mean map, and fixed/moving-centre correspondence.",
+          "outcome": "The historical handoff records full corrected mathematical fragments and saved exact-check receipts. Distinctions between constructions were followed by explicit residual, pressure, force, or operator maps.",
+          "extent": "A bounded audit of named incoming/source formulas. CKN regularity and suitable existence remained attributed external theorems; finite symbolic checks were not a certification of a general PDE iteration.",
+          "status": "complete_in_historical_handoff; unfinished; no general cascade or classical NS singularity certified",
+          "brief": "The aim was to turn an incoming fluid-research bundle into source-specific mathematics that the wider Navier–Stokes programme could use. Retrospectively, its explicit formulas made it a tractable place to test proposed transfers. The audit read the complete report, checked its supplied identities, and reconstructed Boussinesq, CKN, rational-cylinder, IPM, and moving-centre maps. It corrected omitted scales, coefficients, pressure terms, and force residuals. The bounded audit finished with complete proof fragments; it neither certified the incoming report nor established a general cascade or a classical Navier–Stokes singularity.",
+          "evidence": [],
+          "source_availability": "Retained local source handoff; public counterpart not verified in this index.",
+          "evidence_kind": "source-grounded account of local research; no new mathematical review"
+        },
+        {
+          "id": "ns-solenoidal-arithmetic-heat",
+          "title": "Putting the arithmetic heat map inside incompressible flow",
+          "aim": "Extend the incoming two-angular-channel heat correspondence to a typed, invertible coordinate decomposition of divergence-free velocity fields.",
+          "rationale": "The existing heat multiplier correspondence provided a concrete map to extend, while its componentwise range failed incompressibility except at zero. The next construction explicitly addresses that failure rather than treating it as a disconnection.",
+          "rationale_basis": "documented_mathematical_starting_point",
+          "tried": "Constructed projected angular channels, calculated their Gram factors and full inverse, retained the complementary velocity and full nonlinear equations, then composed with the physical angular-momentum projection and an additional toroidal heat channel.",
+          "outcome": "The recorded review passes the bounded operator/domain and full solution-coordinate identities after correcting the explicit source localization interval. The six-channel image has zero averaged swirl.",
+          "extent": "Coordinate identities and their application to an attributed supplied witness. Plancherel/distributional Fourier foundations and witness existence remain identified inputs; no independent whole-construction or zeta-zero certificate follows.",
+          "status": "complete_and_independently_reviewed_in_source_records; source existence and global endpoint not independently certified by this lane",
+          "brief": "This route sought an exact connection between an incoming arithmetic heat map and incompressible velocity fields. The documented starting problem was that the componentwise map had no nonzero divergence-free field in its range. The work constructed a solenoidal isometry, its inverse and complement, and retained nonlinear, pressure, forcing, and energy terms. A further angular-momentum calculation showed that the six-channel image has zero averaged swirl, placing the supplied witness’s reported swirl growth in the complement. The coordinate proofs were completed; source-witness existence remained attributed, with no new Navier–Stokes singularity or zeta-zero conclusion.",
+          "evidence": [],
+          "source_availability": "Retained local source handoff; public counterpart not verified in this index.",
+          "evidence_kind": "source-grounded account of local research; no new mathematical review"
+        },
+        {
+          "id": "ns-comparison-analytic-foundations",
+          "title": "Filling the analytical foundations of comparison",
+          "aim": "Supply complete analytical foundations for specifically identified steps of the whole-space comparison and H3 uniqueness argument.",
+          "rationale": "The continuity log explicitly identifies foundations named by the parent closure review, and the Sobolev review locates their actual source inputs. No broader original success expectation is documented.",
+          "rationale_basis": "documented_programme_target",
+          "tried": "Proved the critical-gradient vector Sobolev estimate with C_S=2/sqrt(3), actual cutoff jet map and H3 norm/Fourier dictionary; derived the full distributional Newtonian Hessian/Riesz bound; supplied H3 approximation, time differentiation, pressure projection and integrated energy identities.",
+          "outcome": "The independent records pass the bounded foundations after the missing SS11 derivative plus sign and HA30 initial-energy term were corrected. Current HA30 retains (||u(0)||_2+F(t))^2.",
+          "extent": "The exact named norm, operator, cutoff, and H3-class arguments. These are not a whole-source proof or a certificate of the global candidate's full comparison class.",
+          "status": "complete_corrected_and_reviewed_in_current_records; global validation remains incomplete",
+          "brief": "The aim was to make the comparison argument’s analytical inputs explicit. The log identifies the exact Sobolev, pressure, and H3 steps named by the programme’s closure review; this made them concrete targets for repair. The work proved the cutoff Sobolev estimate and norm dictionary, the ordered double-Riesz estimate, and the H3 approximation, time, pressure, and energy identities. Review corrected a missing cutoff derivative term and an initial-energy omission. These bounded foundations were completed and delivered; they did not certify the supplied manuscript or settle the global comparison and endpoint programme.",
+          "evidence": [],
+          "source_availability": "Retained local source handoff; public counterpart not verified in this index.",
+          "evidence_kind": "source-grounded account of local research; no new mathematical review"
+        }
+      ]
+    },
+    {
+      "id": "NS-coupled-stages",
+      "programme": "NS",
+      "title": "Coupled growth and viscous stages",
+      "aim": "Determine how much of the coupled growth, steering and holding mechanism survives physical diffusion.",
+      "broader_motivation": "The work followed the evolving states through actual finite stages, then compared those stages with supplied fluid pulses and their residuals.",
+      "source_availability": "These accounts report the retained local task handoffs. Exact public counterparts for these later calculations have not yet been verified in this index; they are not silently assigned to the earlier 208-page archived reader.",
+      "attempts": [
+        {
+          "id": "ns-coupled-finite-viscous-stages",
+          "title": "Continuing the coupled growth mechanism with viscosity",
+          "aim": "Construct actual finite stages of the original coupled source system with viscosity, evolving all parents and controls, and determine how far the mechanism survives.",
+          "rationale": "The log records that exact q2 determinant/numerator dynamics led to a direct positive-parent shooting proof, replacing the initially planned perturbation tube. This is evidence for the revised local route, not an invented initial blowup heuristic.",
+          "rationale_basis": "documented_route_revision",
+          "tried": "Derived physical-scale viscous feedback; corrected the first crossing to its actual damped threshold; proved a full second shooting family/return and hold; continued the evolving third pair through growth, transition and an initial steering interval; constructed compact fields, all forces and derivative costs.",
+          "outcome": "The 102-page historical handoff records the completed finite construction and 688 registered saved exact checks. It also proves a scope-specific obstruction for the unchanged released infinite state.",
+          "extent": "The full third shooting endpoint signs, selected root and third return are not proved. The sufficient positive diffusion range depends on source frequency; the unchanged-state obstruction is not a general impossibility result.",
+          "status": "complete_through_recorded_finite_intervals; full third return and infinite fixed-positive-diffusion continuation unfinished",
+          "brief": "The aim was to retain the original coupled Boussinesq growth, transition, steering, and holding mechanism while including physical diffusion. A documented turning point made the second return promising: exact determinant and numerator identities enabled direct shooting instead of the planned perturbation argument. The work reached the first two actual targets and second return, then the third growth, transition, and initial steering interval, with compact fields and complete forces. That finite construction was completed. The full third return, a fixed-positive-diffusion infinite sequence, and smooth terminal forcing remain unproved; the sufficient diffusion range shrinks with frequency.",
+          "evidence": [],
+          "source_availability": "Retained local source handoff; public counterpart not verified in this index.",
+          "evidence_kind": "source-grounded account of local research; no new mathematical review"
+        },
+        {
+          "id": "ns-coupled-source-pulse-bridge",
+          "title": "Connecting the coupled stages to the supplied NS pulse",
+          "aim": "Prove the exact relation between the finite coupled trajectory and the supplied source pulse, then identify every residual created by physical reconstruction.",
+          "rationale": "Parent steering explicitly required the source-profile/pulse connection before further auxiliary shooting. That the common pulse structure was a promising target is a retrospective interpretation of the chosen comparison, not a preserved private motive.",
+          "rationale_basis": "documented_redirection_with_marked_retrospective_inference",
+          "tried": "Calculated cylindrical operators, source/coupled pulse frame and finite fundamental-matrix intertwiner, actual compact curl/pressure, complete momentum-residual increment, radial moment projection and covariance inverse; added all-order finite derivative and frame costs.",
+          "outcome": "The current 41-page quantitative bridge handoff records complete finite maps and costs. The log preserves superseded drafts with erroneous scale, frame, moment and remainder claims; corrected full maps replaced them.",
+          "extent": "Source-pulse equality does not supply uniform weighted estimates for the distinct direct candidate L=I. Source theorem existence remains attributed; full source certification, third return, infinite modified sequence and terminal force extension remain outside the proved result.",
+          "status": "finite_bridge_complete_and_reviewed_in_handoff; direct-candidate endpoint and whole-source validation unfinished",
+          "brief": "This route asked how the completed finite coupled stages relate to the supplied Navier–Stokes manuscript’s profiles and pulses. The documented programme redirected work to that connection before more shooting; retrospectively, the shared pulse structure offered a concrete comparison target. The work built cylindrical operator maps, a moving tangent frame and finite-interval intertwiner, then reconstructed compact curl, pressure, and the full momentum residual. Early frame and covariance defects were corrected. The finite bridge and derivative costs were completed, including reflected signs; the supplied theorem stayed attributed, and uniform endpoint estimates for the distinct candidate were not transferred.",
+          "evidence": [],
+          "source_availability": "Retained local source handoff; public counterpart not verified in this index.",
+          "evidence_kind": "source-grounded account of local research; no new mathematical review"
+        },
+        {
+          "id": "ns-radial-moment-finite-class",
+          "title": "Turning the residual into moments, stress, and finite estimates",
+          "aim": "Apply source correction operations to the actual compact candidate's residual, retain their nonlinear defects, and quantify the resulting finite chart/band costs.",
+          "rationale": "The third-growth bridge handoff specifically directs use of its computed axial flux moments in source correction operations while retaining baseline, old-wave, curl, cutoff and quadratic terms.",
+          "rationale_basis": "documented_next_calculation",
+          "tried": "Computed pressure/flux defects, reconstructed shifted compact pressure, proved the physical five-row mean-velocity inverse and compact symmetric stress representation, propagated fixed-band source classes, and derived finite Q/epsilon orders for the retained third-growth seed and coefficient path.",
+          "outcome": "Current source records provide a 76-page fixed-band class reader and a corrected 26-page quantitative reader. The quantitative review corrected real-part harmonic upper bounds, distinct old-parent derivative orders, and the evaluated-phase flux exponent.",
+          "extent": "Fixed source band, finite labels and compact support under retained support/zero-mean/phase hypotheses. A compact stress is not an added velocity or wave covariance; nonlinear velocity-update defects remain computed. No uniform increasing-band or infinite-sequence result.",
+          "status": "finite_moment_stress_class_and_quantitative_work_complete_in_current_handoffs; uniform increasing-band estimates, infinite modified sequence and terminal smooth force unfinished",
+          "brief": "The aim was to control the actual residual left by the pulse bridge. Its explicitly computed axial flux moments suggested using the supplied source’s moment and mean-velocity correction operations; the handoff records that next step. The work reconstructed shifted pressure, computed radial moments, built a compact symmetric stress and five-row velocity inverse, and propagated fixed-band classes with full derivative costs. Later review repaired real-part norm and phase-flux estimates. These finite corrections and estimates were completed. Stress representation did not itself produce a correcting velocity or wave covariance, and increasing-band uniformity, infinite iteration, and terminal force extension remain unfinished.",
+          "evidence": [],
+          "source_availability": "Retained local source handoff; public counterpart not verified in this index.",
+          "evidence_kind": "source-grounded account of local research; no new mathematical review"
+        }
+      ]
+    },
+    {
+      "id": "YM-attempts",
+      "programme": "YM",
+      "title": "Yang–Mills states, interactions and limits",
+      "aim": "Connect explicit interacting quantum systems to the continuum and mass-gap questions.",
+      "broader_motivation": "Finite-box calculations and exact state maps gave concrete ways to test what persists when coupling, volume and spatial resolution change.",
+      "attempts": [
+        {
+          "id": "ym-quantum-blocking",
+          "title": "Quantum coarse-graining with retained memory",
+          "aim": "Preserve fine quantum dynamics under repeated spatial blocking to test continuum spectral routes.",
+          "rationale": "A coarse observable can retain the fine resolvent if eliminated variables return through an exact memory term.",
+          "rationale_basis": "Source-based reconstruction from the proved mechanism.",
+          "tried": "Built path-product maps in the actual vacuum, conditional integrations, and successive Schur complements.",
+          "outcome": "Proved associative reconstruction and volume-independent bounds for large Wilson-loop spectral channels.",
+          "extent": "Those channels keep a positive high-energy fraction at fixed coupling; this does not control every state's lowest energy.",
+          "status": "Continuum mass-gap conclusion unfinished.",
+          "evidence": [
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/extensive_quantum_blocking.md",
+              "section": "Exact memory, resolvent reconstruction, and physical norms",
+              "lines": "395–518",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/extensive_quantum_blocking.md",
+              "section": "Associativity of repeated blocking with all prior memory",
+              "lines": "519–580",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/extensive_quantum_blocking.md",
+              "section": "Original scales and the exact scope of the spectral conclusion",
+              "lines": "1255–1292",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            }
+          ],
+          "brief": "We wanted repeated spatial blocking to retain the fine quantum dynamics. The heuristic, reconstructed from the source, is that an exact memory term can preserve information in eliminated variables. Path maps, vacuum integrations and Schur complements gave associative reconstruction and volume-independent bounds for selected Wilson-loop channels. Those channels retain high-energy weight; the result does not determine every state's lowest energy or settle the continuum mass gap."
+        },
+        {
+          "id": "ym-nonabelian-vertex",
+          "title": "Recovering a nonabelian interaction beyond the free comparison",
+          "aim": "Test whether nonabelian interactions survive beyond the free finite-box comparison.",
+          "rationale": "The original kinetic and plaquette terms still contain nonabelian contributions despite the earlier free spectral correspondence.",
+          "rationale_basis": "Explicit source framing.",
+          "tried": "Expanded both contributions in the exact tree/Haar chart and calculated vacuum and covariance responses.",
+          "outcome": "Certified a nonzero physical cubic vertex on the L=2 box and actual weak-coupling response.",
+          "extent": "Responses are fixed-box results; survival under simultaneous spatial, coupling and time limits remains unproved.",
+          "status": "Interacting continuum unfinished.",
+          "evidence": [
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX.md",
+              "section": "Opening scope statement",
+              "lines": "1–7",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX.md",
+              "section": "A physical three-creation image of the complete cubic term; Theorem 17.1",
+              "equations": "179–186",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX.md",
+              "section": "The actual vacuum, raw quasimode Gram factor, and an observable response",
+              "equations": "187–190",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX.md",
+              "section": "The first nonlinear coefficient of the original local covariance; closing scope statement",
+              "equations": "197–198",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            }
+          ],
+          "brief": "We checked whether the original nonabelian interaction survives the earlier free comparison, because the kinetic and plaquette terms still contain it. Expanding both terms in the original chart produced a nonzero physical cubic vertex on the L=2 box and fixed-box vacuum/covariance responses. Survival through simultaneous spatial, coupling and time limits remains unfinished."
+        },
+        {
+          "id": "ym-interacting-tensor-band",
+          "title": "Mapping the material tensor into the interacting first band",
+          "aim": "Carry the original material tensor into the actual interacting excitation band.",
+          "rationale": "An invertible six-coordinate comparison map suggested all first-band states could remain accessible at small positive coupling.",
+          "rationale_basis": "Source-based reconstruction from the determinant argument.",
+          "tried": "Constructed the band map and its interaction matrix, retaining its Gram matrix and every intermediate mode.",
+          "outcome": "Proved an exact onto map and three symmetry channels; the specified cusp reaches all three.",
+          "extent": "Fixed box only: evaluating the three interaction coefficients and controlling simultaneous regulator limits remain unfinished.",
+          "status": "Band correspondence proved; continuum open.",
+          "evidence": [
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/INTERACTING_TENSOR_BAND.md",
+              "section": "Opening scope statement",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/INTERACTING_TENSOR_BAND.md",
+              "section": "The complete first interaction matrix in a raw frame",
+              "equations": "203–207",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/INTERACTING_TENSOR_BAND.md",
+              "section": "An exact onto tensor map at positive coupling",
+              "equations": "208–212",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/INTERACTING_TENSOR_BAND.md",
+              "section": "Raw interaction energies and the resolved spectral splitting; All three interaction channels in the source tensor",
+              "equations": "214–220",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            }
+          ],
+          "brief": "We wanted the material tensor to reach the actual interacting excitation band. The reconstructed heuristic was that the invertible six-coordinate comparison map might persist at small positive coupling. Retaining the Gram matrix and intermediate modes gave an onto map and three symmetry channels reached by the specified cusp. This holds at each fixed box for sufficiently small coupling; the three coefficient evaluations and simultaneous limits remain unfinished."
+        },
+        {
+          "id": "ym-volume-uniform-vacuum",
+          "title": "Local estimates that survive growth of the spatial box",
+          "aim": "Obtain actual-vacuum estimates that remain useful as the spatial box grows.",
+          "rationale": "Local edge-star interactions touch finitely many faces, suggesting errors can depend on local supports rather than total volume.",
+          "rationale_basis": "Source-based reconstruction from local decomposition.",
+          "tried": "Used local projections, convergent cluster coordinates, covariance bounds, and full-product spectral comparisons.",
+          "outcome": "Proved volume-uniform bounds on explicit coupling intervals, fixed-coupling spectral escape, and an all-positive-coupling finite-box covariance window.",
+          "extent": "On the logarithmic path, the certified window endpoint diverges; it establishes no fixed-energy spectral weight.",
+          "status": "Continuum spectral control unfinished.",
+          "evidence": [
+            {
+              "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+              "section": "2. A local projection and an exact comparison operator",
+              "equations": "2.1–2.5",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+              "section": "11. An explicit convergent cluster coordinate construction for the full vacuum; 12. Uniform full spectral estimate and the extensive electric covariance",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+              "section": "17.3. A positive uniform interval for every raw weight",
+              "equations": "17.13–17.15",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+              "section": "23.8. Exact fixed-coupling spectral escape and failure of uniform tails",
+              "equations": "23.26–23.28",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+              "section": "26.3. A proved low-energy window; 26.4. Exact behavior of the displayed endpoint on the prescribed path",
+              "equations": "26.11–26.23",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            }
+          ],
+          "brief": "We sought vacuum estimates that remain useful as the spatial box grows. The reconstructed heuristic was that finitely supported interactions could give local errors independent of total volume. Local projections, cluster coordinates and covariance estimates produced bounds on explicit coupling intervals and a finite-box covariance window at every positive coupling. Its certified endpoint diverges on the logarithmic path, so this estimate still gives no fixed-energy spectral weight."
+        },
+        {
+          "id": "ym-spatial-limit-routes",
+          "title": "Testing candidate states through the spatial limit",
+          "aim": "Find an interacting continuum with low-energy magnetic states by jointly refining geometry, box, mesh and coupling.",
+          "rationale": "Exact refinement maps and finite-box spectral limits offered a controlled way to test whether candidate states retain finite-energy mass.",
+          "rationale_basis": "Source-based reconstruction from the comparison strategy.",
+          "tried": "Compared native magnetic states, electric covariances, local profiles and radial observables along explicit or selected sequences.",
+          "outcome": "Constructed precise limits, but selected native sequences lose finite-energy weight even while their gaps close.",
+          "extent": "The logarithmic and fixed-electric-coefficient exact-lattice paths, and surviving continuum interactions, remain unresolved.",
+          "status": "Counterexample unfinished.",
+          "evidence": [
+            {
+              "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md",
+              "section": "1. Objects and scope of the calculation",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md",
+              "section": "6. Exact refinement maps, measures, and their limits",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md",
+              "section": "18. Complete covariance spectral weights and a weak-coupling spatial diagonal",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md",
+              "section": "26. Original finite-angle native states at weak coupling; 26.13. Exact prescribed-path rates for the fixed-box oscillator kernel",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            },
+            {
+              "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md",
+              "section": "28. Current mathematical conclusion",
+              "source_revision": "8dc1a52a840850a6ba4d9f835e5674be764500d6"
+            }
+          ],
+          "brief": "We tested whether exact refinement and finite-box spectral limits could produce an interacting continuum with low-energy states. That reconstructed heuristic led to comparisons of native magnetic states, electric covariances and radial observables on specified sequences. Some selected native sequences lose their finite-energy weight even while the gap closes. The prescribed logarithmic and fixed-electric-coefficient exact-lattice limits, and surviving continuum interactions, remain unresolved."
+        }
+      ]
+    },
+    {
+      "id": "ES-attempts",
+      "programme": "ES",
+      "title": "Erdős–Straus arithmetic routes",
+      "aim": "Resolve Erdős–Straus and develop exact structural connections to other mathematics, preserving the original arithmetic rather than replacing it by a restricted selector.",
+      "broader_motivation": "Arithmetic obstructions suggested connections to geometry, coloured structures and modular mathematics. Exact maps and their arithmetic return determine how far those connections work.",
+      "coverage": "Five routes in the published supplement; not every historical task or neighbouring workbench.",
+      "peer_workbench": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f/ATTEMPTS.md",
+      "attempts": [
+        {
+          "id": "es:attempt:full-shell-factor-sieves",
+          "title": "Full-shell occupancy and factor sieves",
+          "aim": "Determine exactly what an ES counterexample must evade.",
+          "rationale": "Bounded prime-factor exponents retain information discarded by a coarse congruence sieve.",
+          "rationale_basis": "Editorial reconstruction from cited constructions; broader aim recorded by source task.",
+          "tried": "Full divisor packets, ordered witness reconstruction and exact factor tests for residuals three and seven.",
+          "outcome": "Exact first-two-shell tests and a necessary-and-sufficient all-shell no-hit criterion at each input prime; explicit per-shell selector failures.",
+          "extent": "The original full finite prime-shell system, with complete fibres; the first-two-shell criterion concerns those shells only. No proof that some shell is occupied for every prime, and no prime with all shells empty.",
+          "status": "structural-results-with-unresolved-global-aim",
+          "brief": "We wanted to identify exactly what an ES counterexample would evade. The reconstructed heuristic was that bounded factor exponents retain information coarse congruences lose. Full divisor packets and factor tests gave exact first-two-shell tests and a primewise all-shell criterion. We have neither established occupancy at every prime nor found a prime with all shells empty.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/first_two_shell_sieve.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:r3-factor-sieve",
+                "es72:claim:thm:r7-factor-sieve",
+                "es72:claim:thm:global-no-hit"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/counterexample_sieve/all_shell_no_hit.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:r3-factor-sieve",
+                "es72:claim:thm:r7-factor-sieve",
+                "es72:claim:thm:global-no-hit"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            }
+          ]
+        },
+        {
+          "id": "es:attempt:bounded-shared-constraints",
+          "title": "Simultaneous constraints and bounded CRT",
+          "aim": "Express the colleague's linked conditions on one exact permitted integer tuple.",
+          "rationale": "CRT can organize congruences if shared variables and their original bounds survive the local-to-global passage.",
+          "rationale_basis": "Editorial reconstruction from cited constructions; broader aim recorded by source task.",
+          "tried": "Lattice gluing, bounded divisor CRT, Boolean coordinates and bounded input/prime-output incidence.",
+          "outcome": "Complete finite fibre algorithms and witness return; exact examples of integral and finite-budget obstructions.",
+          "extent": "All solutions in the specified original finite domains, with their exact input/output projections. Integral compatibility does not by itself give bounded occupancy; the prime-output construction has no asserted surjectivity.",
+          "status": "exact-fibre-algorithms-with-unresolved-occupancy",
+          "brief": "We wanted linked congruences to hold on one tuple inside its original bounds. The reconstructed heuristic was that CRT could organize them while preserving shared variables. Lattice, bounded-divisor and incidence calculations gave complete finite fibres and explicit obstructions. Integral compatibility still does not force a bounded solution, and the prime-output map is not known to be onto.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/bounded_transport.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:shared-variable-crt",
+                "es72:claim:thm:input-output-incidence"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/shared_variable_crt.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:shared-variable-crt",
+                "es72:claim:thm:input-output-incidence"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/input_output_incidence.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:shared-variable-crt",
+                "es72:claim:thm:input-output-incidence"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            }
+          ]
+        },
+        {
+          "id": "es:attempt:witness-propagation",
+          "title": "Witness propagation and exact first codes",
+          "aim": "Propagate solutions with their order, raw factor scale and original codes retained.",
+          "rationale": "A transport law can connect witnesses across shells or primes without restarting their construction.",
+          "rationale_basis": "Editorial reconstruction from cited constructions; broader aim recorded by source task.",
+          "tried": "Ratio maps, positive shears, fixed-denominator successors, ray returns and four swap/tag candidates.",
+          "outcome": "Complete integer domains, inverse maps and failed returns; a global first code on the occupied residual-three domain.",
+          "extent": "Each explicitly classified transport domain; the residual-three first-code theorem applies when that shell is occupied. The classified domains do not yet force universal occupancy. Two passing adjacent positive shears cannot compose.",
+          "status": "classified-transports-with-unresolved-global-coverage",
+          "brief": "We tried to propagate solutions with their order, factor scale and codes retained. The reconstructed rationale was that exact transport might replace repeated searches. Ratio maps, shears and returns yielded classified integer domains and a first code on occupied residual-three shells. Universal occupancy remains unresolved; in particular, two passing adjacent positive shears cannot compose.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/bounded_transport.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:no-two-shears",
+                "es72:claim:thm:boundary-r3-global-minimum"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/exact_audit/fixed_y_successor.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:no-two-shears",
+                "es72:claim:thm:boundary-r3-global-minimum"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/raw_scale_hit_incidence.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:no-two-shears",
+                "es72:claim:thm:boundary-r3-global-minimum"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/boundary_swap/boundary_swap_completion.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:no-two-shears",
+                "es72:claim:thm:boundary-r3-global-minimum"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            }
+          ]
+        },
+        {
+          "id": "es:attempt:divisor-cyclic-interface",
+          "title": "Divisor categories and cyclic coordinates",
+          "aim": "Construct exact Connes–Consani interfaces for the retained arithmetic.",
+          "rationale": "Embedded ordered groups retain finite divisor data, and integral cyclic characters can detect gluing obstructions.",
+          "rationale_basis": "Editorial reconstruction from cited constructions; broader aim recorded by source task.",
+          "tried": "Embedded intersections, reciprocal returns, primitive marks, affine shear correction and cyclic-character coordinates.",
+          "outcome": "Exact maps with arithmetic return; a stronger corrected map where the uncorrected map fails.",
+          "extent": "The specified finite divisor loci, transport domains and integral exponent-gluing obstruction. Zero integral obstruction still does not force occupancy of the original bounded fibre.",
+          "status": "proved-correspondences-with-unresolved-bounded-occupancy",
+          "brief": "We sought exact Connes–Consani interfaces for the original arithmetic. The reconstructed heuristic was that ordered groups retain divisor data and cyclic characters detect integral gluing obstructions. Intersections, returns, primitive marks and an affine correction produced exact maps with recoverable arithmetic. The corrected map improves on a failed candidate, but zero integral obstruction still does not force an occupied bounded fibre.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/connes_reading/connes_primitive_intersections.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:full-connes-shear",
+                "es72:claim:thm:cyclic-lattice-gluing"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/bounded_transport.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:full-connes-shear",
+                "es72:claim:thm:cyclic-lattice-gluing"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/integral_cyclic_bridge.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:full-connes-shear",
+                "es72:claim:thm:cyclic-lattice-gluing"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            }
+          ]
+        },
+        {
+          "id": "es:attempt:auxiliary-torus-operators",
+          "title": "Auxiliary torus, sampling and directional inverse",
+          "aim": "Transport arithmetic character packets through the cited auxiliary cover and return the analysis to its operators.",
+          "rationale": "Exact finite covering fibres determine what averaging and sampling preserve.",
+          "rationale_basis": "Editorial reconstruction from cited constructions; broader aim recorded by source task.",
+          "tried": "Unchanged-grid sampling, complete-preimage and character-coset repair, continuous transfer and directional inverse estimates.",
+          "outcome": "Explicit extra sampling terms, exact repairs preserving packet counts, and sharp directional inverse estimates.",
+          "extent": "The retained arithmetic packets and the specified finite or continuous operator domains, with full constants and fibres. No construction of a fluid solution from a prime, universal ES occupancy or complete fluid proof verification follows here.",
+          "status": "operator-and-packet-results-with-unresolved-endpoint-bridge",
+          "brief": "We wanted arithmetic character packets to pass through the auxiliary torus and return to the original operators. The reconstructed heuristic was that exact covering fibres reveal what averaging and sampling preserve. The work found extra sampling terms, repaired the packets without changing their counts, and derived directional inverse estimates. Constructing a fluid solution from a prime, universal ES occupancy and complete fluid validation remain unachieved.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/torus_cover_lemma.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:ns-character-coset-correction",
+                "es72:claim:thm:ns-sharp-smooth-inverse"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/sieve_character_cover.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:ns-character-coset-correction",
+                "es72:claim:thm:ns-sharp-smooth-inverse"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/reverse_proof_transport.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:ns-character-coset-correction",
+                "es72:claim:thm:ns-sharp-smooth-inverse"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/reverse_smooth_inverse.tex",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:ns-character-coset-correction",
+                "es72:claim:thm:ns-sharp-smooth-inverse"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/ATTRIBUTION.md",
+              "label": "Full arithmetic source",
+              "claim_ids": [
+                "es72:claim:thm:ns-character-coset-correction",
+                "es72:claim:thm:ns-sharp-smooth-inverse"
+              ],
+              "source_revision": "ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S6-attempts",
+      "programme": "S6",
+      "title": "S6 geometry and marked lattice constructions",
+      "aim": "Make the proposed complex-geometric construction inspectable and investigate the exact geometric and arithmetic structures encountered alongside it.",
+      "broader_motivation": "The programme pursued explicit maps through periods, fibrations, fillings and marked lattices. These accounts describe the frozen 6 September source record; its global S6 claim and proposed connections to other problems retain their stated qualifications.",
+      "coverage": "Five selected routes in the published key-advances reader; not the entire historical S6 workbench.",
+      "attempts": [
+        {
+          "id": "S6-intrinsic-fibration",
+          "title": "Recover the fibration from the threefold",
+          "aim": "Identify the fibration intrinsically so deformations of the whole threefold can be tested.",
+          "rationale": "The canonical sections can encode the base map rather than just a chosen marked fibre.",
+          "rationale_basis": "The source explicitly explains this as the purpose of the intrinsic fibration calculation.",
+          "tried": "Calculated the evaluation zero divisor, canonical powers and full graded anticanonical algebra in the original coordinates.",
+          "outcome": "The record gives an explicit degree-two map recovering the fibration up to its retained projective-coordinate choice.",
+          "extent": "A result for the specified analytic construction and its hypotheses; not independent validation of every step of the original S6 claim.",
+          "status": "intrinsic_map_recorded_with_full_proof_location",
+          "brief": "We wanted to test deformations of the whole threefold, so the fibration had to be recoverable from the threefold itself. Canonical sections offered that route. Computing the zero divisor and full anticanonical graded algebra produced an explicit degree-two map recovering the fibration, with the original projective-coordinate choice retained. The source records this for its specified analytic construction.",
+          "evidence": [
+            {
+              "path": "s6/27_s6_key_advances_frozen_2026-09-06.tex",
+              "section": "1. The anticanonical ring recovers the fibration; full proof Theorem 53.17, CR1–CR5"
+            },
+            {
+              "url": "https://doi.org/10.5281/zenodo.22678442",
+              "label": "Complete S6 source archive",
+              "archive_path": "project/supporting_materials/workbench/research/analytic_canonical_ring.tex"
+            }
+          ]
+        },
+        {
+          "id": "S6-period-deformation",
+          "title": "Vary the original period parameter",
+          "aim": "Determine whether the retained period parameter gives a nonzero deformation of the whole threefold.",
+          "rationale": "A nonzero regular-fibre variation can be carried to the whole space if the intrinsic fibration and its three critical values control possible trivializations.",
+          "rationale_basis": "Source-based reconstruction of the displayed local-to-global proof strategy.",
+          "tried": "Kept the original period matrices, computed the marked coordinate and Kodaira–Spencer maps, and used the intrinsic fibration to test first-order triviality.",
+          "outcome": "The record proves a nonzero global first-order deformation in the stated parameter region.",
+          "extent": "It does not classify all deformations or prove every two parameters yield nonisomorphic unmarked manifolds.",
+          "status": "nonzero_deformation_recorded_classification_unfinished",
+          "brief": "We varied the original period parameter to test whether it changes the whole threefold. The reconstructed heuristic was that the intrinsic fibration and three fixed critical values could promote a nonzero fibre variation to a global one. Exact period and Kodaira–Spencer calculations achieved that first-order result. They do not classify all deformations or distinguish every pair of unmarked fibres.",
+          "evidence": [
+            {
+              "path": "s6/27_s6_key_advances_frozen_2026-09-06.tex",
+              "section": "2. The original period constant gives a nonzero deformation; Theorem 53.18, PD1–PD18"
+            },
+            {
+              "url": "https://doi.org/10.5281/zenodo.22678442",
+              "label": "Complete S6 source archive",
+              "archive_path": "project/supporting_materials/workbench/research/period_parameter_deformation.tex"
+            }
+          ]
+        },
+        {
+          "id": "S6-finite-fillings",
+          "title": "Compute the actual finite fillings and attachments",
+          "aim": "Make the finite-centre quotient and attachment data explicit.",
+          "rationale": "Product covers and deck-group presentations give concrete access to the quotient and its full attachment kernel.",
+          "rationale_basis": "Editorial reconstruction from the specified cover and group calculations.",
+          "tried": "Retained original periods and affine generators, calculated cover kernels and the complete deck group, and gave the smooth normal-line trivialization and inverse.",
+          "outcome": "Explicit product covers, the full central attachment kernel, and the smooth trivialization are recorded.",
+          "extent": "The finite-centre calculations do not independently close the entire global construction.",
+          "status": "finite_attachment_calculations_recorded",
+          "brief": "We wanted the finite fillings and attachment maps to be explicit. The reconstructed heuristic was that product covers and deck groups make the quotient accessible to exact calculation. Keeping the original periods and affine generators yielded the cover kernels, complete central attachment kernel, and a smooth normal-line trivialization with inverse. These finish the specified finite-centre calculations, not every global step.",
+          "evidence": [
+            {
+              "path": "s6/27_s6_key_advances_frozen_2026-09-06.tex",
+              "section": "3. Finite fillings; full proofs Theorems 53.4, 53.6, 53.7, 53.9, FF1–FF46"
+            },
+            {
+              "url": "https://doi.org/10.5281/zenodo.22678442",
+              "label": "Complete S6 source archive",
+              "archive_path": "project/supporting_materials/workbench/research/finite_filling_certificates.tex"
+            }
+          ]
+        },
+        {
+          "id": "S6-marked-cubic-transport",
+          "title": "Carry cubic arithmetic through the marked lattices",
+          "aim": "Determine what the retained cubic records across the Niemeier, Leech and neighbouring lattice constructions.",
+          "rationale": "Keeping the residue marking and common real embedding makes exact arithmetic comparison possible.",
+          "rationale_basis": "Editorial reconstruction from the marked neighbour and cubic calculations.",
+          "tried": "Constructed the integral neighbours and intersections, polarized the full cubic, and calculated generated value groups with inclusion and reverse-generator certificates.",
+          "outcome": "The recorded value-group inclusions have successive quotients of orders four and three and total quotient of order twelve.",
+          "extent": "These are generated value groups; they do not identify the lattices or their nonlinear pointwise images and establish no physical mass-gap conclusion.",
+          "status": "marked_arithmetic_maps_recorded",
+          "brief": "We compared the marked Niemeier and Leech constructions while retaining their cubic arithmetic. The reconstructed heuristic was that the same marking and real embedding would permit an exact comparison. Integral neighbours and full cubic polarization yielded explicit value-group inclusions and quotients. Those are statements about generated value groups, with complete certificates; they do not identify the lattices or establish a physical mass-gap result.",
+          "evidence": [
+            {
+              "path": "s6/27_s6_key_advances_frozen_2026-09-06.tex",
+              "section": "4. Niemeier–Leech transport; higher-rung Sections 9–11, pp.106–125"
+            },
+            {
+              "url": "https://doi.org/10.5281/zenodo.22678442",
+              "label": "Complete higher-rung paper and source"
+            }
+          ]
+        },
+        {
+          "id": "S6-literal-triality-intersection",
+          "title": "Find the literal common lattice in the original triality space",
+          "aim": "Compare the cyclic octonionic Leech construction with the two retained embedded lattices on their actual common points.",
+          "rationale": "An exact intersection in the unchanged Cayley coordinates can test a relationship that abstract lattice isometry alone does not determine.",
+          "rationale_basis": "Editorial reconstruction from the literal-intersection calculation.",
+          "tried": "Computed both intersections in the original frame, their Gram data, and the cubic values on that common lattice.",
+          "outcome": "Both intersections equal the stated diagonal D4 lattice; the calculation also gives a value in its generated cubic-value group that the cubic does not attain.",
+          "extent": "This establishes the explicit shared lattice and that particular arithmetic nonattainment, not identity of all the surrounding structures.",
+          "status": "common_lattice_and_nonattainment_recorded",
+          "brief": "We wanted the actual common points of the cyclic octonionic construction and the retained embeddings. The reconstructed heuristic was that a literal intersection would reveal more than abstract isometry. Computing in the original Cayley frame gave the same diagonal D4 lattice in both cases. Its cubic also exhibits a generated-group value that is not attained, precisely distinguishing those two arithmetic questions.",
+          "evidence": [
+            {
+              "path": "s6/27_s6_key_advances_frozen_2026-09-06.tex",
+              "section": "5. A literal common lattice; higher-rung Section 12, pp.125–135"
+            },
+            {
+              "url": "https://doi.org/10.5281/zenodo.22678442",
+              "label": "Complete S6 source archive",
+              "archive_path": "project/supporting_materials/workbench/research/es_niemeier_wilson_cyclic.tex"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZETA-attempts",
+      "programme": "ZETA",
+      "title": "Zeta and arithmetic transport routes",
+      "aim": "Reconstruct the zeta literature and investigate explicit connections to the supplied geometric and fluid constructions, keeping the original equations, source attribution and full mathematical work accessible. The broader motivation was to learn what these constructions actually carry into arithmetic, including whether they could reach an RH-relevant criterion.",
+      "broader_motivation": "The accounts retain the attempts that gave exact transfers and the specific candidate that failed its full quadratic test.",
+      "coverage": "Selected routes documented in the frozen 411-page main reader; not an exhaustive account of the literature corpus or every sidebar, and not a statement that later work does not exist.",
+      "peer_workbench": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/63dc28e53c37a0c17c2648a5e006b3aea758e182/ATTEMPTS.md",
+      "attempts": [
+        {
+          "id": "ZETA-RETAINED-BRANCHES",
+          "title": "Keep the branches, then transport the equations",
+          "aim": "Carry the supplied polynomial mechanism into fluid and arithmetic coordinates without losing inverse branches.",
+          "rationale": "Its inverse-fibre geometry exposes precisely where projection loses information.",
+          "rationale_basis": "reconstructed_from_written_argument",
+          "tried": "Constructed the full cubic inverse chart, exceptional fibres, incompressible trajectories and transformed diffusion operators.",
+          "outcome": "Obtained exact maps and an escaping trajectory in the retained pullback metric.",
+          "extent": "That metric is incomplete; this route did not itself produce a classical Euclidean Navier–Stokes singularity or an off-critical zeta zero. The later work therefore also uses the actual released fluid field.",
+          "status": "explicit_maps_and_scope_identified",
+          "brief": "We tried to carry the supplied polynomial mechanism into fluid and arithmetic coordinates without losing inverse branches. The reconstructed heuristic was that its inverse fibres expose where projection loses information. Full inverse charts, exceptional fibres and diffusion maps gave exact correspondences and an escaping trajectory in the retained pullback metric. That metric is incomplete; this route did not produce a classical Euclidean fluid singularity or an off-critical zeta zero.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip",
+              "label": "Complete zeta source archive",
+              "archive_sha256": "8c28afda814d747bdaabb7a6946944fcfbd49dd42e61fc92c5aebd9bee534446",
+              "archive_path": "satellites/23_source_mechanism_transfer.tex",
+              "sha256": "ed580245e313b9842bfce08d3e3567a147b73b6bb8453954dd13d4fd8eaaf146",
+              "locator": "sec:retained-mechanism; prop:retained-fibre; eq:retained-piola; eq:retained-operators"
+            }
+          ]
+        },
+        {
+          "id": "ZETA-ACTUAL-WEIL-TEST",
+          "title": "Test the negative coefficient in the complete Weil form",
+          "aim": "Determine whether the coefficient-level negative signal survives in an RH-relevant quadratic test.",
+          "rationale": "The retained coefficient acts on the actual theta input whose Fourier transform is Xi.",
+          "rationale_basis": "reconstructed_from_written_argument",
+          "tried": "Evaluated the complete Weil form, retaining pole, gamma and prime-power terms, cross terms and infinite-tail bounds.",
+          "outcome": "The recorded certified value is positive, approximately 2.0984855607004 × 10⁻¹¹.",
+          "extent": "This particular input is not a negative Weil witness. The calculation neither proves global Weil positivity nor settles RH; the negative linear coefficient remains a different, explicitly related calculation.",
+          "status": "tested_candidate_not_a_negative_witness",
+          "brief": "We tested whether the negative coefficient survives in a complete RH-relevant Weil form. The reconstructed heuristic was that it acts on the actual theta input whose Fourier transform is Xi. Keeping pole, gamma, prime-power, cross and tail terms gave a certified positive value, about 2.0984855607004 × 10⁻¹¹. This input therefore failed as a negative witness; neither global Weil positivity nor RH was settled.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip",
+              "label": "Complete zeta source archive",
+              "archive_sha256": "8c28afda814d747bdaabb7a6946944fcfbd49dd42e61fc92c5aebd9bee534446",
+              "archive_path": "satellites/29f_actual_theta_weil.tex",
+              "sha256": "981793010e26b7fe72671339ab4b956031b7afeec7ec88c6b169d15c500970b6",
+              "locator": "sec:xi4-actual-theta-weil; eq:xt-full-value; eq:xt-result"
+            }
+          ]
+        },
+        {
+          "id": "ZETA-ACTUAL-SWIRL-MELLIN",
+          "title": "Transport the actual concentrating swirl into arithmetic",
+          "aim": "Propagate the released corrected fluid field itself, rather than infer its behaviour from an analogy.",
+          "rationale": "Angular momentum retains a concentrating source component and admits explicit dilation and Mellin maps.",
+          "rationale_basis": "user_direction_to_propagate_actual_source_and_written_argument",
+          "tried": "Kept both nonlinear fluxes, force, viscosity and the projection remainder; constructed the arithmetic map and inverse, then examined the fixed-axis derivative.",
+          "outcome": "The written calculation obtains a directly growing arithmetic derivative and an equal genuine Mellin residue at s = −1.",
+          "extent": "This is a precise transported signal, not an off-critical zeta zero. Independent verification of the imported complete source existence theorem is unfinished.",
+          "status": "explicit_source_signal_transported",
+          "brief": "We transported the supplied corrected fluid field through its angular momentum, which retains a concentrating component and admits dilation and Mellin maps. The calculation kept both nonlinear fluxes, force, viscosity and the projection remainder. It produced a growing arithmetic derivative and matching Mellin residue at s = −1. This is a transported source signal, not an off-critical zeta zero; independent validation of the imported full source theorem remains unfinished.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip",
+              "label": "Complete zeta source archive",
+              "archive_sha256": "8c28afda814d747bdaabb7a6946944fcfbd49dd42e61fc92c5aebd9bee534446",
+              "archive_path": "satellites/29k_ns_angular_mellin.tex",
+              "sha256": "84263a4c0fa4f7e00ca5d37d665dc73217173a8ef1352be1779d8a83ac60fd4c",
+              "locator": "sec:ns-angular-mellin; nam:arithmetic; nam:arithmeticpde; nam:actualsample"
+            },
+            {
+              "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip",
+              "label": "Complete zeta source archive",
+              "archive_sha256": "8c28afda814d747bdaabb7a6946944fcfbd49dd42e61fc92c5aebd9bee534446",
+              "archive_path": "satellites/29l_ns_axis_arithmetic_jet.tex",
+              "sha256": "5a759ec9ac6e7665ade9f33419eccb158e8648af682d816ef434e111bb8b78da",
+              "locator": "sec:ns-axis-arithmetic-jet; naj:B-axis; naj:exact-blowup; naj:residue"
+            }
+          ]
+        },
+        {
+          "id": "ZETA-HIDDEN-MELLIN-DATA",
+          "title": "Recover data hidden by trivial-zero cancellation",
+          "aim": "Find where higher radial information goes when a zeta factor cancels its Mellin pole.",
+          "rationale": "A cancelled pole need not mean that the input coefficient has disappeared.",
+          "rationale_basis": "reconstructed_from_written_argument",
+          "tried": "Expanded the full Mellin product at negative integers and retained the local zeta factors.",
+          "outcome": "Odd Taylor coefficients are recovered from residues; even coefficients from regular values divided by the nonzero derivative of the multiplier.",
+          "extent": "This recovers the complete Taylor sequence, not an arbitrary smooth germ from that sequence alone. Flat remainders remain in the full invertible transform; no new nontrivial zeta zero is obtained.",
+          "status": "exact_coefficient_recovery",
+          "brief": "We asked where radial data goes when a zeta factor cancels its Mellin pole. The reconstructed heuristic was that cancelling a pole need not erase the coefficient. Expanding the full product recovered odd Taylor coefficients from residues and even ones from regular values using the multiplier derivative. This recovers the Taylor sequence, not an arbitrary smooth germ; flat remainders remain in the full transform.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip",
+              "label": "Complete zeta source archive",
+              "archive_sha256": "8c28afda814d747bdaabb7a6946944fcfbd49dd42e61fc92c5aebd9bee534446",
+              "archive_path": "satellites/29n_ns_diffusion_hidden_mellin.tex",
+              "sha256": "ea02b8428c482b749bd34708cdf036a56439823c7e952b34cce8239161fe8681",
+              "locator": "sec:ns-hidden-mellin-diffusion; ndm:product; ndm:zeta-derivative; ndm:all-coefficients"
+            }
+          ]
+        },
+        {
+          "id": "ZETA-FINITE-RADIAL-RECURSION",
+          "title": "Make the higher radial source data constructive",
+          "aim": "Extend the axis calculation beyond its first derivative without replacing the complete corrected field.",
+          "rationale": "The preceding second-coefficient cancellation suggested finite source dependence at each fixed radial degree.",
+          "rationale_basis": "reconstructed_from_written_argument",
+          "tried": "Derived the coupled coefficient recursion with pressure, viscosity and cutoff terms, then carried it into residue/value coordinates.",
+          "outcome": "The written induction gives vanishing above correction order n > m and a finite algorithm for every fixed Taylor degree.",
+          "extent": "This is not convergence of the uncut series or an autonomous finite-dimensional fluid system. The full functions, nonlinear fluxes and flat remainders remain necessary.",
+          "status": "constructive_fixed_degree_recursion",
+          "brief": "We extended the axis calculation beyond its first derivative. Earlier cancellation suggested, as a reconstructed heuristic, finite source dependence at each fixed radial degree. The full coefficient recursion retained pressure, viscosity and cutoff terms and passed into residue/value coordinates. The source records vanishing for correction order n > m and a finite algorithm at each degree; convergence of the uncut series and an autonomous finite fluid system do not follow.",
+          "evidence": [
+            {
+              "url": "https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip",
+              "label": "Complete zeta source archive",
+              "archive_sha256": "8c28afda814d747bdaabb7a6946944fcfbd49dd42e61fc92c5aebd9bee534446",
+              "archive_path": "satellites/29p_ns_finite_radial_recursion.tex",
+              "sha256": "e2ac77ee6dd576a7b2849a5513f946bc2a120738d421332075359cb746f058a9",
+              "locator": "sec:ns-finite-radial-recursion; nfr:support; nfr:arithmetic"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

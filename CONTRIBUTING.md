@@ -4,6 +4,8 @@ Start with [the workbench overview](WORKBENCH.md). Contributions can be small or
 
 ## Describe what you did
 
+Maintain a short [attempt account](ATTEMPTS.md) for each research task: its broader aim, why an approach seemed promising, what was tried, what happened, how far the result reaches, and where the attempt was left. Usually two to four sentences per distinct route are enough, followed by a link to the full work. Update it when the route or result changes. Preserve unfinished and partly successful attempts; do not invent motivations after the fact.
+
 Give the mathematical question, the reason for the approach, the original objects and conventions, what was tried, what was obtained, and the exact locations of the supporting sources and evidence. Include incomplete attempts and specific obstructions when useful. An error in one proof does not itself refute its statement. Do not replace the full argument with the overview.
 
 Keep all parameters, signs, coordinates, domains, codomains and hypotheses; do not simplify or normalize the objects away. When relating formulations, derive the exact map and what it preserves. Record the sources actually inspected and used, with theorem or section locations.

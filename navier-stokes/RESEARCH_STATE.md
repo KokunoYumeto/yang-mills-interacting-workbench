@@ -4,6 +4,8 @@
 
 ## Purpose and route
 
+[Short accounts of the reconstruction attempts](../ATTEMPTS.md#ns-primary) · [Fluid source and analytical audits](../ATTEMPTS.md#ns-source-audit) · [Coupled viscous stages](../ATTEMPTS.md#ns-coupled-stages)
+
 The purpose is to make the supplied finite-time Navier–Stokes construction understandable and reusable through complete derivations, original coordinates and reproducible calculations. The programme initially investigated transfers from algebraic, S6-related and heat-flow constructions into fluid equations. Those directions motivated the research; their proposed implications are not certified by this reader. The arrival of the released Navier–Stokes manuscript redirected the main work toward reconstructing its explicit construction with the stated viscosity, initial data, forcing, pressure and nonlinear terms.
 
 The primary manuscript and formal source are identified in the [published manifest](../navier_stokes_primary_manifest.json). The derivation used a 165-page capture; a later 166-page capture and its revision audit are recorded separately. The [component index](research-state.json) preserves the capture hashes, formal repository revision and source-page ranges where known. Authorship remains with the cited sources; reconstruction and checking retain their own provenance.

@@ -12,6 +12,8 @@ The current design separates three things: the material published by a workbench
 
 ## Read by question
 
+**What did each task try, and why?** Read the [concise attempt accounts](../../ATTEMPTS.md) and their [machine-readable counterpart](../../research-attempts.json). Each retains the broader goal, heuristic reason, actual outcome, successful extent and unfinished work.
+
 **How would workbenches communicate without all being on GitHub?** Read [Networking and libp2p](NETWORKING.md). It describes a static-file starting point, optional peer-to-peer transport, message types, offline catch-up, and implementation acceptance tests.
 
 **What should a returning person or model know before continuing?** Read [Research state and large jobs](RESEARCH_STATE.md). It defines descriptive handoffs, programme-level contributions and durable memory without compulsory microtask decomposition.
