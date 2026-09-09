@@ -23,3 +23,6 @@ These are AI-assisted research and reconstruction records. The full proofs and q
 - [Live Overleaf workbench](https://www.overleaf.com/read/rtmyqxyrzprn#fa24eb): evolving workspace; it may contain work later than these archived editions.
 
 Each topic retains its own Zenodo publication family and prior versions. The older mixed full-Overleaf archive remains available in the [previous Yang–Mills edition](https://doi.org/10.5281/zenodo.22667605); the new selected Yang–Mills packet is a continuation, not a claim that this older full-project snapshot is current. Existing public files are retained.
+## Finding and continuing the work
+
+Read [the workbench map](WORKBENCH.md) for a plain-language route through the programmes, source versions, and open verification questions. [The machine-readable inventory](workbench.json) pins the indexed source revision. [The current handoff](RESEARCH_LOG.md) explains this organizational pass and what remains to do; [the review guide](REVIEW_GUIDE.md) explains how to record checks made while reusing another workbench's results. These additions do not certify the mathematics or replace the original research artifacts.
