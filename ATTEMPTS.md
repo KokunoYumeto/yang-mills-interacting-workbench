@@ -4,6 +4,8 @@
 
 A rationale reconstructed from a source is labeled as such. A partial result, a specific obstruction and an unfinished calculation retain their different meanings. These accounts describe the work and leave future researchers free to choose their own direction.
 
+**Reading key.** Source result = stated by the cited artifact; reconstructed rationale = recovered from a handoff; independent check = replayed or audited in this workbench; unresolved = the endpoint was not obtained.
+
 [Machine-readable accounts](research-attempts.json) · [Full workbench map](WORKBENCH.md) · [Convention for maintaining these accounts](docs/polyclank/RESEARCH_STATE.md)
 
 [Navier–Stokes reconstruction](#ns-primary) · [Fluid source and analytical audits](#ns-source-audit) · [Coupled growth and viscous stages](#ns-coupled-stages) · [Yang–Mills states, interactions and limits](#ym-attempts) · [Erdős–Straus arithmetic routes](#es-attempts) · [S6 geometry and marked lattice constructions](#s6-attempts) · [Zeta and arithmetic transport routes](#zeta-attempts)
@@ -12,13 +14,13 @@ A rationale reconstructed from a source is labeled as such. A partial result, a 
 
 ## Navier–Stokes reconstruction
 
-Make the supplied classical fluid construction understandable and checkable, while investigating exact connections with algebraic, heat-flow and geometric constructions. The proposed connections suggested that a mechanism found in one setting might survive in another. The research therefore tracks the actual equations, viscosity, forcing and coordinate maps, with each connection's extent stated explicitly.
+**Source:** OpenAI FINITE TIME BLOWUP FOR NAVIER–STOKES (2026-09-08 / formal companion 8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538). Reconstruct and audit OpenAI's public 8 September 2026 Navier–Stokes release, FINITE TIME BLOWUP FOR NAVIER–STOKES (165-page manuscript; formal companion pinned at openai/NavierStokesAndEuler@8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538). The source claims a classical 3D forced Navier–Stokes solution with positive viscosity, zero initial velocity, smooth compactly supported forcing, bounded kinetic energy, and a terminal unbounded-velocity event; this account records reconstruction status, not independent certification. The concrete source sequence is: leading profiles (manuscript §4 and App. B), base/heat correction (§5 and App. A), oscillatory velocity/shear fields (§§6–7 and App. C), mean corrections (§8), finite correction cycle (§9), and endpoint/localization (§10). Naming those objects lets the reader distinguish what was reconstructed from what remains unverified.
 
 <a id="ns-reconstruct-source"></a>
 
-### Reconstruct the supplied construction
+### Reconstruct OpenAI's FINITE TIME BLOWUP FOR NAVIER–STOKES stage sequence
 
-We wanted the supplied construction to be readable and checkable. Its explicit sequence of profiles, heat corrections and oscillatory stages gave a concrete route to reconstruct. This produced the corrected 208-page reader and 13 complete source bodies; independent verification of the full assembled construction is still unfinished.
+We reconstructed the named OpenAI manuscript's sequence: leading profiles (§4/App. B), base and heat correction (§5/App. A), oscillatory velocity/shear fields (§§6–7/App. C), mean correction (§8), finite cycle (§9), and endpoint/localization (§10). The result is the corrected 208-page reader plus 13 complete component bodies and finite checks. That makes the source inspectable; it does not independently verify the assembled infinite construction.
 
 [Purpose and route; Full calculation bodies; Where the work was left](navier-stokes/RESEARCH_STATE.md)
 
@@ -26,7 +28,7 @@ We wanted the supplied construction to be readable and checkable. Its explicit s
 
 ### Retain the actual shear and repair the pulse calculation
 
-We checked whether pulse production survives the actual varying shear, since the omitted remainder affects that estimate. Keeping it led to corrected production bounds, retained transport derivatives and an explicit plane-coordinate inverse. Those local repairs are in the published reader; the full infinite construction remains unfinished in our independent validation.
+We checked the OpenAI manuscript's actual varying shear in the oscillatory velocity stage, because dropping its remainder changes the production estimate. Retaining the remainder produced corrected production bounds, transport derivatives, and an explicit plane-coordinate inverse in the reader. These local repairs do not certify the manuscript's full cycle or endpoint.
 
 [Corrections and recorded checks](navier-stokes/RESEARCH_STATE.md) · [Complete corrected source bodies and provenance](navier_stokes_primary_manifest.json)
 
@@ -34,7 +36,7 @@ We checked whether pulse production survives the actual varying shear, since the
 
 ### Check the formal endpoint against the stated problem
 
-We tried to obtain an independent formal endpoint because the supplied formal repository offered a check of the declarations and target statement. Source/import inspection and a coordinated compilation attempt were made. The run stopped without an endpoint or Comparator certificate; this route remains unfinished and paused.
+We ran the formal companion openai/NavierStokesAndEuler@8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538 against its stated endpoint and Comparator target. Source/import inspection and a coordinated compilation attempt stopped before an endpoint or Comparator certificate. The formal route is paused and unfinished.
 
 [formal_source; current_formal_run_status; NS-INDEPENDENT-VALIDATION](navier-stokes/research-state.json) · [Where the work was left](navier-stokes/RESEARCH_STATE.md)
 
@@ -42,65 +44,77 @@ We tried to obtain an independent formal endpoint because the supplied formal re
 
 ## Fluid source and analytical audits
 
-Find which proposed fluid mechanisms survive exact source, coordinate and analytical checks. Explicit incoming formulas made individual maps and residuals tractable; a failure in one presentation prompted a more exact correspondence.
+**Source:** fluid_blowup_reconstruction.zip, 40-page reconstruction report (2026-09-09 local audit; public bundle navier-stokes_source_bundle.zip). Audit the 40-page fluid-blowup reconstruction report in fluid_blowup_reconstruction.zip and its named Boussinesq, CKN, rational-cylinder, IPM, and moving-centre constructions against the incompressible Navier–Stokes target. The bundle is a local handoff of explicit formulas, not a theorem by itself. We tested each proposed transfer by preserving coordinates, divergence, pressure, force, viscosity, and energy terms, so a successful local identity is not silently promoted to a global singularity proof.
 
 These accounts report the retained local task handoffs. Exact public counterparts for these later calculations have not yet been verified in this index; they are not silently assigned to the earlier 208-page archived reader.
 
 <a id="ns-incoming-fluid-bundle-audit"></a>
 
-### Reconstructing the incoming fluid bundle
+### Audit the 40-page fluid_blowup_reconstruction.zip report
 
-The aim was to turn an incoming fluid-research bundle into source-specific mathematics that the wider Navier–Stokes programme could use. Retrospectively, its explicit formulas made it a tractable place to test proposed transfers. The audit read the complete report, checked its supplied identities, and reconstructed Boussinesq, CKN, rational-cylinder, IPM, and moving-centre maps. It corrected omitted scales, coefficients, pressure terms, and force residuals. The bounded audit finished with complete proof fragments; it neither certified the incoming report nor established a general cascade or a classical Navier–Stokes singularity.
+We audited the 40-page fluid_blowup_reconstruction.zip report, reading its Boussinesq, CKN, rational-cylinder, IPM, and moving-centre maps. The bounded audit repaired omitted scales, coefficients, pressure terms, and force residuals and produced complete local proof fragments. It neither certifies the report nor proves a classical Navier–Stokes singularity.
+
+[Public source bundle; Boussinesq/CKN/rational-cylinder/IPM/moving-centre payloads](navier-stokes/navier_stokes_source_bundle.zip)
 
 <a id="ns-solenoidal-arithmetic-heat"></a>
 
-### Putting the arithmetic heat map inside incompressible flow
+### Test the report's arithmetic heat map in divergence-free velocity space
 
-This route sought an exact connection between an incoming arithmetic heat map and incompressible velocity fields. The documented starting problem was that the componentwise map had no nonzero divergence-free field in its range. The work constructed a solenoidal isometry, its inverse and complement, and retained nonlinear, pressure, forcing, and energy terms. A further angular-momentum calculation showed that the six-channel image has zero averaged swirl, placing the supplied witness’s reported swirl growth in the complement. The coordinate proofs were completed; source-witness existence remained attributed, with no new Navier–Stokes singularity or zeta-zero conclusion.
+We tested the report's arithmetic heat map as a map into divergence-free velocity fields. Its componentwise range had no nonzero solenoidal field, so we constructed the solenoidal isometry, inverse, complement, and the nonlinear, pressure, forcing, and energy terms. The six-channel image has zero averaged swirl; no Navier–Stokes singularity or zeta-zero conclusion follows.
+
+[Arithmetic heat map, solenoidal correction, angular-momentum audit](navier-stokes/RESEARCH_STATE.md)
 
 <a id="ns-comparison-analytic-foundations"></a>
 
-### Filling the analytical foundations of comparison
+### Replay the Sobolev, Riesz, pressure, and H3 closure checks
 
-The aim was to make the comparison argument’s analytical inputs explicit. The log identifies the exact Sobolev, pressure, and H3 steps named by the programme’s closure review; this made them concrete targets for repair. The work proved the cutoff Sobolev estimate and norm dictionary, the ordered double-Riesz estimate, and the H3 approximation, time, pressure, and energy identities. Review corrected a missing cutoff derivative term and an initial-energy omission. These bounded foundations were completed and delivered; they did not certify the supplied manuscript or settle the global comparison and endpoint programme.
+We made the comparison's named Sobolev, pressure, and H3 inputs explicit: cutoff Sobolev estimate and norm dictionary, ordered double-Riesz estimate, and H3 approximation, time, pressure, and energy identities. Review repaired a missing cutoff derivative and initial-energy omission. These bounded foundations do not certify the OpenAI manuscript or its global endpoint.
+
+[Sobolev, Riesz, H3, pressure and energy closure review](navier-stokes/RESEARCH_STATE.md)
 
 <a id="ns-coupled-stages"></a>
 
 ## Coupled growth and viscous stages
 
-Determine how much of the coupled growth, steering and holding mechanism survives physical diffusion. The work followed the evolving states through actual finite stages, then compared those stages with supplied fluid pulses and their residuals.
+**Source:** coupled viscous Boussinesq stages and finite pulse bridge (2026-09-09 handoff set; finite-stage and pulse-bridge readers). Track the coupled Boussinesq growth/transition/steering/holding system with physical viscosity, then compare its finite pulse to the OpenAI manuscript's profile/shear stages. The question was whether the finite viscous mechanism survives diffusion and whether its pulse can be mapped into the released Navier–Stokes construction. The finite stages and comparison maps are separate objects; the unfinished third return and infinite endpoint are recorded as such.
 
 These accounts report the retained local task handoffs. Exact public counterparts for these later calculations have not yet been verified in this index; they are not silently assigned to the earlier 208-page archived reader.
 
 <a id="ns-coupled-finite-viscous-stages"></a>
 
-### Continuing the coupled growth mechanism with viscosity
+### Continue the coupled Boussinesq stages with physical viscosity
 
-The aim was to retain the original coupled Boussinesq growth, transition, steering, and holding mechanism while including physical diffusion. A documented turning point made the second return promising: exact determinant and numerator identities enabled direct shooting instead of the planned perturbation argument. The work reached the first two actual targets and second return, then the third growth, transition, and initial steering interval, with compact fields and complete forces. That finite construction was completed. The full third return, a fixed-positive-diffusion infinite sequence, and smooth terminal forcing remain unproved; the sufficient diffusion range shrinks with frequency.
+We evolved the coupled Boussinesq growth, transition, steering, and holding stages with physical diffusion. Exact determinant and numerator identities enabled direct shooting; the first two targets, second return, and the third growth/transition/initial-steering interval were completed with compact fields and forces. The third return, a fixed-positive-diffusion infinite sequence, and smooth terminal forcing remain unproved.
+
+[Finite viscous stages, return status, diffusion and continuation boundary](navier-stokes/RESEARCH_STATE.md)
 
 <a id="ns-coupled-source-pulse-bridge"></a>
 
-### Connecting the coupled stages to the supplied NS pulse
+### Compare the finite viscous pulse with OpenAI's Navier–Stokes profile/shear stages
 
-This route asked how the completed finite coupled stages relate to the supplied Navier–Stokes manuscript’s profiles and pulses. The documented programme redirected work to that connection before more shooting; retrospectively, the shared pulse structure offered a concrete comparison target. The work built cylindrical operator maps, a moving tangent frame and finite-interval intertwiner, then reconstructed compact curl, pressure, and the full momentum residual. Early frame and covariance defects were corrected. The finite bridge and derivative costs were completed, including reflected signs; the supplied theorem stayed attributed, and uniform endpoint estimates for the distinct candidate were not transferred.
+We compared those finite viscous Boussinesq stages with the OpenAI manuscript's profile and pulse stages. Cylindrical operator maps, a moving tangent frame, a finite-interval intertwiner, compact curl, pressure, and full momentum residual were reconstructed; frame and covariance defects were corrected. The finite bridge is complete, but no uniform endpoint estimate transfers to the distinct candidate.
+
+[Finite pulse comparison, curl/pressure/residual calculations](navier-stokes/navier_stokes_workbench.tex)
 
 <a id="ns-radial-moment-finite-class"></a>
 
-### Turning the residual into moments, stress, and finite estimates
+### Reduce the finite pulse residual to radial moments and stress
 
-The aim was to control the actual residual left by the pulse bridge. Its explicitly computed axial flux moments suggested using the supplied source’s moment and mean-velocity correction operations; the handoff records that next step. The work reconstructed shifted pressure, computed radial moments, built a compact symmetric stress and five-row velocity inverse, and propagated fixed-band classes with full derivative costs. Later review repaired real-part norm and phase-flux estimates. These finite corrections and estimates were completed. Stress representation did not itself produce a correcting velocity or wave covariance, and increasing-band uniformity, infinite iteration, and terminal force extension remain unfinished.
+We controlled the residual left by that pulse comparison using its computed axial flux moments and the source's moment/mean-velocity correction operations. Shifted pressure, radial moments, compact symmetric stress, five-row velocity inverse, and fixed-band derivative costs were obtained. A stress representation is not a correcting velocity or wave covariance; increasing-band uniformity and infinite iteration remain unfinished.
+
+[Radial moments, stress and fixed-band correction material](navier-stokes/navier_stokes_workbench.tex)
 
 <a id="ym-attempts"></a>
 
 ## Yang–Mills states, interactions and limits
 
-Connect explicit interacting quantum systems to the continuum and mass-gap questions. Finite-box calculations and exact state maps gave concrete ways to test what persists when coupling, volume and spatial resolution change.
+**Source:** Yang–Mills interacting workbench source edition (2026-09-09 / source revision 8dc1a52). Test the selected 9 September 2026 Yang–Mills source edition's explicit finite-box interacting system against quantum blocking, nonabelian interaction, vacuum, and continuum-limit requirements. Each route names the finite-box or lattice object it actually computes. The results concern selected channels, fixed boxes, or specified paths; they do not by themselves establish a four-dimensional mass gap.
 
 <a id="ym-quantum-blocking"></a>
 
 ### Quantum coarse-graining with retained memory
 
-We wanted repeated spatial blocking to retain the fine quantum dynamics. The heuristic, reconstructed from the source, is that an exact memory term can preserve information in eliminated variables. Path maps, vacuum integrations and Schur complements gave associative reconstruction and volume-independent bounds for selected Wilson-loop channels. Those channels retain high-energy weight; the result does not determine every state's lowest energy or settle the continuum mass gap.
+We repeatedly blocked the finite-box/lattice Yang–Mills system while retaining an explicit memory term for eliminated variables. Path maps, vacuum integrations, and Schur complements gave associative reconstruction and volume-independent bounds for selected Wilson-loop channels. Those channels retain high-energy weight; the calculation does not determine every lowest-energy state or the continuum mass gap.
 
 [Exact memory, resolvent reconstruction, and physical norms](yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/extensive_quantum_blocking.md)
 
@@ -108,7 +122,7 @@ We wanted repeated spatial blocking to retain the fine quantum dynamics. The heu
 
 ### Recovering a nonabelian interaction beyond the free comparison
 
-We checked whether the original nonabelian interaction survives the earlier free comparison, because the kinetic and plaquette terms still contain it. Expanding both terms in the original chart produced a nonzero physical cubic vertex on the L=2 box and fixed-box vacuum/covariance responses. Survival through simultaneous spatial, coupling and time limits remains unfinished.
+We expanded the original kinetic and plaquette terms on the L=2 finite box to see whether the nonabelian interaction survives the free comparison. The physical cubic vertex is nonzero, with fixed-box vacuum and covariance responses. Survival through simultaneous spatial, coupling, and time limits remains unfinished.
 
 [Opening scope statement](yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX.md)
 
@@ -116,7 +130,7 @@ We checked whether the original nonabelian interaction survives the earlier free
 
 ### Mapping the material tensor into the interacting first band
 
-We wanted the material tensor to reach the actual interacting excitation band. The reconstructed heuristic was that the invertible six-coordinate comparison map might persist at small positive coupling. Retaining the Gram matrix and intermediate modes gave an onto map and three symmetry channels reached by the specified cusp. This holds at each fixed box for sufficiently small coupling; the three coefficient evaluations and simultaneous limits remain unfinished.
+We mapped the material tensor into the interacting first excitation band using the retained Gram matrix, intermediate modes, and six-coordinate map. At each fixed box and sufficiently small positive coupling the map is onto and reaches three symmetry channels. The three coefficient evaluations and simultaneous limits remain unfinished.
 
 [Opening scope statement](yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/INTERACTING_TENSOR_BAND.md)
 
@@ -124,7 +138,7 @@ We wanted the material tensor to reach the actual interacting excitation band. T
 
 ### Local estimates that survive growth of the spatial box
 
-We sought vacuum estimates that remain useful as the spatial box grows. The reconstructed heuristic was that finitely supported interactions could give local errors independent of total volume. Local projections, cluster coordinates and covariance estimates produced bounds on explicit coupling intervals and a finite-box covariance window at every positive coupling. Its certified endpoint diverges on the logarithmic path, so this estimate still gives no fixed-energy spectral weight.
+We tested local vacuum and covariance estimates as the finite spatial box grows. Local projections, cluster coordinates, and covariance estimates give explicit coupling intervals and a finite-box window at every positive coupling. The certified endpoint diverges along the logarithmic path, so no fixed-energy spectral weight is established.
 
 [2. A local projection and an exact comparison operator](yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md)
 
@@ -132,7 +146,7 @@ We sought vacuum estimates that remain useful as the spatial box grows. The reco
 
 ### Testing candidate states through the spatial limit
 
-We tested whether exact refinement and finite-box spectral limits could produce an interacting continuum with low-energy states. That reconstructed heuristic led to comparisons of native magnetic states, electric covariances and radial observables on specified sequences. Some selected native sequences lose their finite-energy weight even while the gap closes. The prescribed logarithmic and fixed-electric-coefficient exact-lattice limits, and surviving continuum interactions, remain unresolved.
+We compared native magnetic states, electric covariances, and radial observables along specified lattice-refinement and finite-box sequences. Some selected native sequences lose finite-energy weight even as the gap closes. The prescribed exact-lattice limits and a surviving interacting continuum remain unresolved.
 
 [1. Objects and scope of the calculation](yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md)
 
@@ -140,7 +154,7 @@ We tested whether exact refinement and finite-box spectral limits could produce 
 
 ## Erdős–Straus arithmetic routes
 
-Resolve Erdős–Straus and develop exact structural connections to other mathematics, preserving the original arithmetic rather than replacing it by a restricted selector. Arithmetic obstructions suggested connections to geometry, coloured structures and modular mathematics. Exact maps and their arithmetic return determine how far those connections work.
+**Source:** Erdős–Straus arithmetic source edition (2026-09-09 / source revision ead4c88). Study the Erdős–Straus conjecture—every integer n>1 is a sum of three positive unit fractions—while retaining the original factor, exponent, congruence, and boundedness data. The route tests whether exact divisor shells and transport maps can force a bounded Egyptian-fraction witness. Structural maps and finite fibres are useful even where universal occupancy and the final bounded witness are still open.
 
 [Maintaining workbench](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/9a3ddfe8b38a424f1ff0426201a1f4f6f9d2772f/ATTEMPTS.md)
 
@@ -148,7 +162,7 @@ Resolve Erdős–Straus and develop exact structural connections to other mathem
 
 ### Full-shell occupancy and factor sieves
 
-We wanted to identify exactly what an ES counterexample would evade. The reconstructed heuristic was that bounded factor exponents retain information coarse congruences lose. Full divisor packets and factor tests gave exact first-two-shell tests and a primewise all-shell criterion. We have neither established occupancy at every prime nor found a prime with all shells empty.
+For the Erdős–Straus conjecture, we tested full divisor shells and factor exponents rather than only coarse congruences. Exact first-two-shell tests and a primewise all-shell criterion were obtained. We have not proved occupancy at every prime or found a prime with all shells empty.
 
 [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/first_two_shell_sieve.tex) · [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/counterexample_sieve/all_shell_no_hit.tex)
 
@@ -156,7 +170,7 @@ We wanted to identify exactly what an ES counterexample would evade. The reconst
 
 ### Simultaneous constraints and bounded CRT
 
-We wanted linked congruences to hold on one tuple inside its original bounds. The reconstructed heuristic was that CRT could organize them while preserving shared variables. Lattice, bounded-divisor and incidence calculations gave complete finite fibres and explicit obstructions. Integral compatibility still does not force a bounded solution, and the prime-output map is not known to be onto.
+We tested whether linked Erdős–Straus congruences can be solved by bounded CRT while preserving the original shared variables and exponent bounds. Lattice, bounded-divisor, and incidence calculations give finite fibres and explicit obstructions. Integral compatibility still does not force a bounded solution, and the prime-output map is not known onto.
 
 [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/bounded_transport.tex) · [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/shared_variable_crt.tex)
 
@@ -164,7 +178,7 @@ We wanted linked congruences to hold on one tuple inside its original bounds. Th
 
 ### Witness propagation and exact first codes
 
-We tried to propagate solutions with their order, factor scale and codes retained. The reconstructed rationale was that exact transport might replace repeated searches. Ratio maps, shears and returns yielded classified integer domains and a first code on occupied residual-three shells. Universal occupancy remains unresolved; in particular, two passing adjacent positive shears cannot compose.
+We transported Erdős–Straus witnesses while retaining order, factor scale, and codes. Ratio maps, shears, and returns classify integer domains and give a first code on occupied residual-three shells. Universal occupancy remains unresolved; two passing adjacent positive shears do not compose.
 
 [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/bounded_transport.tex) · [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/exact_audit/fixed_y_successor.tex)
 
@@ -172,7 +186,7 @@ We tried to propagate solutions with their order, factor scale and codes retaine
 
 ### Divisor categories and cyclic coordinates
 
-We sought exact Connes–Consani interfaces for the original arithmetic. The reconstructed heuristic was that ordered groups retain divisor data and cyclic characters detect integral gluing obstructions. Intersections, returns, primitive marks and an affine correction produced exact maps with recoverable arithmetic. The corrected map improves on a failed candidate, but zero integral obstruction still does not force an occupied bounded fibre.
+We constructed the corrected Connes–Consani divisor/cyclic-coordinate interface for the original Erdős–Straus arithmetic. Intersections, returns, primitive marks, and an affine correction give exact maps with recoverable arithmetic. A zero integral obstruction still does not force an occupied bounded fibre.
 
 [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/connes_reading/connes_primitive_intersections.tex) · [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/bounded_transport.tex)
 
@@ -180,7 +194,7 @@ We sought exact Connes–Consani interfaces for the original arithmetic. The rec
 
 ### Auxiliary torus, sampling and directional inverse
 
-We wanted arithmetic character packets to pass through the auxiliary torus and return to the original operators. The reconstructed heuristic was that exact covering fibres reveal what averaging and sampling preserve. The work found extra sampling terms, repaired the packets without changing their counts, and derived directional inverse estimates. Constructing a fluid solution from a prime, universal ES occupancy and complete fluid validation remain unachieved.
+We passed Erdős–Straus character packets through the auxiliary torus and back to the original operators. Extra sampling terms were found and the packets repaired without changing counts; directional inverse estimates followed. A prime-to-fluid construction, universal occupancy, and complete fluid validation remain unachieved.
 
 [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/torus_cover_lemma.tex) · [Full arithmetic source](https://github.com/KokunoYumeto/erdos-straus-foundation/blob/ead4c88dff3c2e3bdf4b6c8dff6baf2237ad3641/research/expanded-2026-09-08/exact_bounded_transport_72/ns_operator_bridge/sieve_character_cover.tex)
 
@@ -188,13 +202,13 @@ We wanted arithmetic character packets to pass through the auxiliary torus and r
 
 ## S6 geometry and marked lattice constructions
 
-Make the proposed complex-geometric construction inspectable and investigate the exact geometric and arithmetic structures encountered alongside it. The programme pursued explicit maps through periods, fibrations, fillings and marked lattices. These accounts describe the frozen 6 September source record; its global S6 claim and proposed connections to other problems retain their stated qualifications.
+**Source:** 27_s6_key_advances_frozen_2026-09-06.tex (2026-09-06 / Zenodo 22678442). Inspect the claimed complex-threefold construction on S^6 circulated by Levent Alpöge with Fable, using the frozen key-advances reader and complete archive (Zenodo 22678442), while separating geometric certificates from broader physical interpretations. The calculations ask whether the proposed fibration, period deformation, finite fillings, and marked cubic lattices are intrinsic and exact. They do not turn the geometric construction into a Yang–Mills or mass-gap theorem.
 
 <a id="s6-intrinsic-fibration"></a>
 
 ### Recover the fibration from the threefold
 
-We wanted to test deformations of the whole threefold, so the fibration had to be recoverable from the threefold itself. Canonical sections offered that route. Computing the zero divisor and full anticanonical graded algebra produced an explicit degree-two map recovering the fibration, with the original projective-coordinate choice retained. The source records this for its specified analytic construction.
+For the claimed complex threefold on S^6, we tested whether the fibration is recoverable from the threefold rather than chosen as an external coordinate. Canonical sections and the full anticanonical graded algebra give an explicit degree-two map with the original projective coordinates retained. This is a certificate for the specified analytic construction.
 
 [1. The anticanonical ring recovers the fibration; full proof Theorem 53.17, CR1–CR5](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
 
@@ -202,7 +216,7 @@ We wanted to test deformations of the whole threefold, so the fibration had to b
 
 ### Vary the original period parameter
 
-We varied the original period parameter to test whether it changes the whole threefold. The reconstructed heuristic was that the intrinsic fibration and three fixed critical values could promote a nonzero fibre variation to a global one. Exact period and Kodaira–Spencer calculations achieved that first-order result. They do not classify all deformations or distinguish every pair of unmarked fibres.
+We varied the S^6 construction's original period parameter and computed the period and Kodaira–Spencer maps. The intrinsic fibration and three fixed critical values give a nonzero first-order fibre variation. This does not classify all deformations or distinguish every pair of unmarked fibres.
 
 [2. The original period constant gives a nonzero deformation; Theorem 53.18, PD1–PD18](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
 
@@ -210,7 +224,7 @@ We varied the original period parameter to test whether it changes the whole thr
 
 ### Compute the actual finite fillings and attachments
 
-We wanted the finite fillings and attachment maps to be explicit. The reconstructed heuristic was that product covers and deck groups make the quotient accessible to exact calculation. Keeping the original periods and affine generators yielded the cover kernels, complete central attachment kernel, and a smooth normal-line trivialization with inverse. These finish the specified finite-centre calculations, not every global step.
+We computed the finite fillings and attachment maps in the S^6 construction while retaining its periods and affine generators. Product covers and deck groups give the cover kernels, complete central attachment kernel, and a smooth normal-line trivialization with inverse. These finish the specified finite-centre calculations, not every global step.
 
 [3. Finite fillings; full proofs Theorems 53.4, 53.6, 53.7, 53.9, FF1–FF46](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
 
@@ -218,7 +232,7 @@ We wanted the finite fillings and attachment maps to be explicit. The reconstruc
 
 ### Carry cubic arithmetic through the marked lattices
 
-We compared the marked Niemeier and Leech constructions while retaining their cubic arithmetic. The reconstructed heuristic was that the same marking and real embedding would permit an exact comparison. Integral neighbours and full cubic polarization yielded explicit value-group inclusions and quotients. Those are statements about generated value groups, with complete certificates; they do not identify the lattices or establish a physical mass-gap result.
+We carried the cubic arithmetic through the marked Niemeier and Leech lattices in the S^6 reader. Integral neighbours and full cubic polarization give explicit value-group inclusions and quotients. They concern generated value groups; they do not identify the lattices or prove a physical mass gap.
 
 [4. Niemeier–Leech transport; higher-rung Sections 9–11, pp.106–125](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete higher-rung paper and source](https://doi.org/10.5281/zenodo.22678442)
 
@@ -226,7 +240,7 @@ We compared the marked Niemeier and Leech constructions while retaining their cu
 
 ### Find the literal common lattice in the original triality space
 
-We wanted the actual common points of the cyclic octonionic construction and the retained embeddings. The reconstructed heuristic was that a literal intersection would reveal more than abstract isometry. Computing in the original Cayley frame gave the same diagonal D4 lattice in both cases. Its cubic also exhibits a generated-group value that is not attained, precisely distinguishing those two arithmetic questions.
+We computed the literal intersection of the cyclic octonionic construction with the retained embeddings in the original Cayley frame. Both contain the same diagonal D4 lattice, while its cubic has a generated-group value that is not attained. This separates the literal intersection from the abstract arithmetic value group.
 
 [5. A literal common lattice; higher-rung Section 12, pp.125–135](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
 
@@ -234,7 +248,7 @@ We wanted the actual common points of the cyclic octonionic construction and the
 
 ## Zeta and arithmetic transport routes
 
-Reconstruct the zeta literature and investigate explicit connections to the supplied geometric and fluid constructions, keeping the original equations, source attribution and full mathematical work accessible. The broader motivation was to learn what these constructions actually carry into arithmetic, including whether they could reach an RH-relevant criterion. The accounts retain the attempts that gave exact transfers and the specific candidate that failed its full quadratic test.
+**Source:** zeta-function-research-reader complete source archive (2026-09-09 / archive commit 490a7ac7). Reconstruct the frozen 411-page zeta reader (Zenodo 22678086) and its complete source archive, then test explicit Weil, Mellin, angular-momentum, and radial-recursion claims without treating a transported signal as an RH proof. The route keeps the actual polynomial mechanism, theta input, corrected fluid field, full Mellin factors, and axis recursion named. This makes clear which calculations are exact source results and which RH-relevant conclusions remain unproved.
 
 [Maintaining workbench](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/63dc28e53c37a0c17c2648a5e006b3aea758e182/ATTEMPTS.md)
 
@@ -242,7 +256,7 @@ Reconstruct the zeta literature and investigate explicit connections to the supp
 
 ### Keep the branches, then transport the equations
 
-We tried to carry the supplied polynomial mechanism into fluid and arithmetic coordinates without losing inverse branches. The reconstructed heuristic was that its inverse fibres expose where projection loses information. Full inverse charts, exceptional fibres and diffusion maps gave exact correspondences and an escaping trajectory in the retained pullback metric. That metric is incomplete; this route did not produce a classical Euclidean fluid singularity or an off-critical zeta zero.
+In the frozen zeta reader's retained polynomial mechanism (satellites/23_source_mechanism_transfer.tex), we kept inverse branches, exceptional fibres, and diffusion maps while transporting the equations into fluid and arithmetic coordinates. The pullback metric has an escaping trajectory but is incomplete; no classical Euclidean fluid singularity or off-critical zeta zero follows.
 
 [Complete zeta source archive](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip)
 
@@ -250,7 +264,7 @@ We tried to carry the supplied polynomial mechanism into fluid and arithmetic co
 
 ### Test the negative coefficient in the complete Weil form
 
-We tested whether the negative coefficient survives in a complete RH-relevant Weil form. The reconstructed heuristic was that it acts on the actual theta input whose Fourier transform is Xi. Keeping pole, gamma, prime-power, cross and tail terms gave a certified positive value, about 2.0984855607004 × 10⁻¹¹. This input therefore failed as a negative witness; neither global Weil positivity nor RH was settled.
+We evaluated the negative coefficient against the complete Weil form using the actual theta input whose Fourier transform is Riemann Xi, retaining pole, gamma, prime-power, cross, and tail terms. The source records a positive value, about 2.0984855607004 × 10^-19, so this input is not a negative witness; global Weil positivity and RH remain unsettled.
 
 [Complete zeta source archive](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip)
 
@@ -258,7 +272,7 @@ We tested whether the negative coefficient survives in a complete RH-relevant We
 
 ### Transport the actual concentrating swirl into arithmetic
 
-We transported the supplied corrected fluid field through its angular momentum, which retains a concentrating component and admits dilation and Mellin maps. The calculation kept both nonlinear fluxes, force, viscosity and the projection remainder. It produced a growing arithmetic derivative and matching Mellin residue at s = −1. This is a transported source signal, not an off-critical zeta zero; independent validation of the imported full source theorem remains unfinished.
+We transported the released corrected fluid field's angular-momentum observable through dilation and Mellin maps, retaining nonlinear fluxes, force, viscosity, and projection remainder. The calculation gives a growing arithmetic derivative and matching Mellin residue at s=-1. This is a transported source signal, not an off-critical zeta zero; independent validation of the imported source theorem remains unfinished.
 
 [Complete zeta source archive](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip)
 
@@ -266,7 +280,7 @@ We transported the supplied corrected fluid field through its angular momentum, 
 
 ### Recover data hidden by trivial-zero cancellation
 
-We asked where radial data goes when a zeta factor cancels its Mellin pole. The reconstructed heuristic was that cancelling a pole need not erase the coefficient. Expanding the full product recovered odd Taylor coefficients from residues and even ones from regular values using the multiplier derivative. This recovers the Taylor sequence, not an arbitrary smooth germ; flat remainders remain in the full transform.
+We expanded the full Mellin product at negative integers to track data hidden when a zeta factor cancels a pole. Odd Taylor coefficients come from residues and even coefficients from regular values divided by the nonzero multiplier derivative. This recovers the Taylor sequence, not an arbitrary smooth germ; flat remainders remain.
 
 [Complete zeta source archive](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip)
 
@@ -274,6 +288,6 @@ We asked where radial data goes when a zeta factor cancels its Mellin pole. The 
 
 ### Make the higher radial source data constructive
 
-We extended the axis calculation beyond its first derivative. Earlier cancellation suggested, as a reconstructed heuristic, finite source dependence at each fixed radial degree. The full coefficient recursion retained pressure, viscosity and cutoff terms and passed into residue/value coordinates. The source records vanishing for correction order n > m and a finite algorithm at each degree; convergence of the uncut series and an autonomous finite fluid system do not follow.
+We extended the corrected fluid field's axis calculation beyond its first radial derivative, retaining pressure, viscosity, cutoff, and Mellin residue/value terms. The written induction gives vanishing above correction order n>m and a finite algorithm at each fixed degree. It does not prove convergence of the uncut series or produce an autonomous finite-dimensional fluid system.
 
 [Complete zeta source archive](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip)
