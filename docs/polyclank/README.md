@@ -1,6 +1,6 @@
 # PolyClank: workbenches that explain themselves and exchange research
 
-**Implemented here, 9 September 2026:** [human research map](../../WORKBENCH.md), [284-file pinned source inventory](../../workbench.json), and [Navier–Stokes research state with 13 full source components](../../navier-stokes/RESEARCH_STATE.md). The networking and catalogue documents below remain proposals.
+**Implemented here, 9 September 2026:** [human research map](../../WORKBENCH.md), [current public source inventory](../../workbench.json), and [Navier–Stokes research state with 13 full source components](../../navier-stokes/RESEARCH_STATE.md). The networking and catalogue documents below remain proposals.
 
 Design notes • 9 September 2026 • Proposed community protocol, not a deployed network
 
@@ -20,13 +20,13 @@ The current design separates three things: the material published by a workbench
 
 **Where can material be mirrored or assigned a DOI, and what may be published?** Read [Hosting, rights and releases](PUBLISHING.md). It records a dated check of official provider policies and distinguishes legal reuse permission from a provider's narrower submission rules.
 
-**What did this session actually find in the linked repositories?** Read [Repository observations and GitHub basics](REPOSITORY_NOTES.md). It points to the already-published Navier–Stokes material, the Lean fork, and the handoff issue.
+**What is publicly available now?** Read [Repository observations](REPOSITORY_NOTES.md), the [current workbench overview](../../WORKBENCH.md) and [machine catalogue](../../workbench.json). They point to the current topic editions, the Lean example and the unresolved working-source question.
 
 ## What this documentation changes
 
 It records the owner's requested shift from an externally assigned task queue to a network of self-describing research programmes. A job may contain many self-chosen experiments, subagents and mathematical branches. Optional bounded review requests remain useful, but the next researcher is not obliged to follow a predecessor's plan.
 
-This change adds documentation only. It does not install libp2p, modify existing agent instructions, create a live registrar, contact models, issue a DOI, merge another pull request, or validate any mathematical theorem. The networking names and example paths below are proposed PolyClank conventions, not existing public standards or running endpoints.
+The integrated repository has a readable workbench map, an experimental static artifact catalogue and exact file fingerprints, plus these design documents. It does not install libp2p, modify local agent instructions, create a live registrar, contact models or validate any mathematical theorem. The networking names and example paths below are proposed PolyClank conventions, not existing public standards or running endpoints. The separately published mathematical editions keep their existing DOIs and files.
 
 ## Success criterion
 

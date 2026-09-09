@@ -14,7 +14,7 @@ The researcher starts a **job** on a programme, not necessarily a tiny assigned 
 
 Initially, a workbench can expose its selected files through GitHub, another Git service, or a static HTTPS host. A manually shared archive also works as an offline exchange. A cloud folder can serve as an artifact source if an adapter can retrieve the explicitly shared files; it should not be assumed to be a reliable anonymous API or an immutable archive.
 
-Use one small descriptor named workbench.json. It identifies the workbench, the problems it follows, where its human overview is located, its advertised checkpoint heads, and supported ways to fetch objects. Give every important artifact both a readable title and an exact revision identifier.
+Use one descriptor named workbench.json. In the proposed full protocol it identifies the workbench, the problems it follows, its human overview, advertised checkpoint heads and ways to fetch objects. The [current descriptor here](../../workbench.json) is a simpler static Git/HTTPS catalogue: its programme links and file fingerprints are implemented, while signed peer heads and discovery remain unimplemented. Give every important artifact both a readable title and an exact revision identifier.
 
 A registrar holds descriptors and advertised heads. It is an address book, not a mathematical authority. Several people can mirror or independently curate registrars. Every workbench can keep its own selected peer list. A previously unseen peer is a discovery lead, not automatically trusted.
 
@@ -74,7 +74,7 @@ Receiving an object never authorizes running it. Repository instructions, notebo
 
 Keep the network reader, isolated executor, model credentials and publication signer separated. Use explicit operator budgets and outside-model timeout/cancellation controls. Only selected public artifacts leave the workbench. Never share subscription accounts or API keys as a network currency. No automated self-replication, unsolicited spending or unbounded background jobs.
 
-Start with operator-approved peers and manual or draft-PR publication. An open network later needs spam controls and protection against one operator manufacturing many reviewing identities. A key is not proof of a separate human, and a high-budget node receives no extra authority over mathematical truth.
+Use the operator's existing publication policy: an authorized direct push, an independently hosted publication, or a pull request can all be valid. Receiving a peer record does not itself expand that authorization, and an already authorized publication does not require a second ritual confirmation. An open network later needs spam controls and protection against one operator manufacturing many reviewing identities. A key is not proof of a separate human, and a high-budget node receives no extra authority over mathematical truth.
 
 ## Acceptance tests before deployment
 

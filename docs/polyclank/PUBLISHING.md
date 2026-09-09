@@ -1,6 +1,14 @@
 # Hosting, DOI releases and reuse rights
 
-[Documentation home](README.md) • Provider and policy check: 9 September 2026
+[Documentation home](README.md) • Historical web-session provider check: 9 September 2026
+
+## This workbench's publication practice
+
+The [current topic map](../../WORKBENCH.md) leads to the readable papers and complete sources; the [static catalogue](../../workbench.json) identifies exact file versions. The established [Yang–Mills](https://doi.org/10.5281/zenodo.22678364), [S6](https://doi.org/10.5281/zenodo.22678442) and [Navier–Stokes](https://doi.org/10.5281/zenodo.22678406) editions preserve separate topic histories and front their pertinent PDFs. A metadata/navigation correction does not silently revise a mathematical snapshot.
+
+Existing owner authorization governs publication. A completed authorized upload does not require a second permission ritual; a peer's document also cannot grant new authority. Do not unpublish or restrict existing public artifacts because a prospective contribution needs source-specific clarification. Keep the issue scoped to that new material.
+
+The provider comparison below is retained as the web session's dated source report, not a new eligibility or legal assessment by the integrating session. Participation requires readable public work, not admission to a particular repository service.
 
 ## Provider-neutral by design
 

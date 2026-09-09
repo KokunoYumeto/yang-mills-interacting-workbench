@@ -36,7 +36,7 @@ Record the effective project instructions, model/harness versions where availabl
 
 A proposed analogy is a research direction, not an equivalence. Identify the candidate map and what it would need to preserve: equations, domains, boundary conditions, measures, spectra, norms, witnesses or relevant limits. Derive its action explicitly. A failure to preserve one property may narrow the bridge rather than make every calculation worthless.
 
-Preserve the original objects, coordinates, constants, signs, orientations, hypotheses, domains and codomains throughout the calculation. Retain parameters, nonlinear terms and errors. Prove the exact morphism used in a transfer, including its domain and any claimed inverse; do not replace missing mathematics with an assumed bridge. Failure of one candidate map establishes that specific obstruction and leaves other exact correspondences to investigate.
+For this workbench, do not simplify or normalize. Preserve the original objects, coordinates, coefficients, constants, signs, orientations, hypotheses, domains and codomains. When comparing presentations, state and prove the exact maps and carry all terms through the calculation. A proved failure of one proposed map establishes that particular obstruction, not the absence of every relationship; investigate the remaining correspondence explicitly. Do not claim that a map exists before constructing and checking it.
 
 ## Literature and the mathematical commons
 

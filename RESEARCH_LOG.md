@@ -1,33 +1,31 @@
-# Current handoff and editorial record
+# Research state and publication history
 
-## 9 September 2026 — integrate the workbench and current research state
+## Current checkpoint — 9 September 2026
 
-**Purpose.** Make the existing large programmes discoverable and reusable through a human account of what was tried, why it was tried, its outcome and where it was left. Preserve full mathematical sources and the independence of future contributors.
+**Purpose of this update.** Make the existing work readable and reusable across independent workbenches, from a single checked calculation to a large programme. Preserve the mathematics, expose current readers and sources, and record what was done rather than impose a successor's research plan.
 
-**Change.** Incorporate navigation proposal #1 and networking/research-state proposal #3 into the reorganized source tree. Update the reading map to the current 79-, 81-, 129- and 208-page readers. Preserve the original 22-file index as a historical snapshot and index all 284 files at source revision e0a04c0. Add a Navier–Stokes research-state document and a map of 13 complete source components in its 120-member source archive. Retain the source versions and attribution.
+**Mathematical source checkpoint.** Commit [e0a04c0](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/commit/e0a04c078eaf0209e40b3d47d6f6dffb3f2a3e7f) supplied the three current topic trees and published edition links. The subsequent PolyClank integration changes navigation and metadata, not mathematical source/PDF/archive contents.
 
-**Verification.** Check raw Git object identities and all 120 source-archive member digests. The published Navier–Stokes JSON and checks match the corrected Zenodo edition; an earlier apparent discrepancy arose from Windows checkout newline conversion. Mathematical replay records are carried forward with their scopes. No mathematical check was rerun, no theorem was changed and no new independent validation is claimed.
+**What is available.** [WORKBENCH.md](WORKBENCH.md) describes the three programmes and the scope of the released material. [workbench.json](workbench.json) fingerprints the public tracked artifacts and points to exact Zenodo editions. The [release map](releases/2026-09-09/) relates repository and archival names. Existing mathematical statements and reported checks remain attributed to their sources; this update adds no mathematical validation mark.
 
-**Where left.** PolyClank has documentation and static indexes; replicated discovery and a large problem catalogue have not been deployed. The Navier–Stokes source reconstruction is public, while independent full analytical and formal validation is unfinished. The later local formal run stopped without its endpoint certificate. Recurring mirror work is paused after the publication update at the owner's request. Future workbenches choose their own mathematical directions.
+**What was corrected in the navigation.** The earlier map described the 22-file root snapshot at ed8cb4b. It now points to the 79-page quantum reader, 81-page volume reader, organized source trees, S6 collection, and corrected Navier–Stokes DOI. The old PK7/PK10 follow-up is not reissued as an outstanding assignment: the current spatial guide identifies the corrected oscillator rates in §26.13. A full review of the resulting analytic implications was not performed in this publishing pass.
 
-**History.** The earlier entries below retain the decisions and observations of their own sessions; they are not a current execution queue. Private conversations and operational logs are excluded from this public record.
+**Evidence of this pass.** The recorded checks concern repository links, descriptor structure, artifact byte identities and public publication metadata. They do not replay Lean, rerun the mathematical checkers, establish novelty or certify the underlying theorems.
 
-## 9 September 2026 — repository navigation pass
+**What remains incomplete.** The workbench descriptor is a static artifact catalogue, not an exhaustive theorem/dependency database. Networking, registrars, signatures and offline peer reconciliation are documented proposals, not a deployed federation. No new worker is automatically authorized by these files. The Navier–Stokes task has now supplied its [current research state](navier-stokes/RESEARCH_STATE.md) and [13-component source index](navier-stokes/research-state.json), including the stopped formal run and unfinished independent validation. This resolves the missing descriptive source handoff; it adds no new mathematical certificate.
 
-**Request.** Check access to the connected GitHub workbench and organize it so people and other workbenches can see what it contains. Preserve the mathematics and ongoing work. Make explanations readable without code diagrams.
+**Continuation.** Readers and contributors choose their own directions from the evidence. No fixed next-calculation queue is part of this checkpoint. The owner's recurring publication maintenance is paused; public reading, downloads and contributions remain available.
 
-**Observed starting point.** The main branch was ed8cb4bee090d8f7cc14166199aebdef557d066e. Its complete Git tree listed 22 root files. The inspected tree contained no AGENTS.md or workflow directory. The open-pull-request query returned none at the time of this pass. This is one repository's observed state, not an inventory of the owner's other repositories or live Codex sessions.
+## Navier–Stokes contribution to the same checkpoint
 
-**Material read.** README.md; 06_CURRENT_YM_LANES_README.md; scaled_angle_prescribed_kernel_rates.md; the Git tree and the starting commit's metadata. The remaining source bodies, PDFs, manifests, and archive interiors were not reviewed. Existing claims and check results have not been independently validated by this pass.
+The reconstruction task added its research history, the exact paths and hashes of 13 full source bodies in the 120-member archive, current Overleaf reading access and the recorded endpoint status. It verified all 120 member digests and the 284 raw source objects at e0a04c0. Published mathematical replay records were not rerun. The original 22-file descriptor is retained at [its historical snapshot](releases/2026-09-09/workbench_ed8cb4b.json).
 
-**Decision.** Add a human reading map, a pinned machine inventory, this handoff, and a review-record guide. Preserve all mathematical files and release archives in place. Append a navigation link to the existing README instead of replacing its descriptions. Use a separate branch, poly-clank/workbench-navigation-2026-09-09, and a draft pull request; do not merge main.
+The source handoff was prepared concurrently with the shared PolyClank integration. The merged result preserves the shared staged-blob catalogue generator and contribution guide, with the new Navier–Stokes documents included in its current inventory. This records both contributions without replacing either participant's mathematical work.
 
-**Why.** A new participant should be able to find the right programme without decoding large bundles or mistaking the existence of a checker for a completed proof. The guide still describes a 121-page bundled spatial reader; the inspected commit explicitly introduces the 129-page standalone reader as current. Both descriptions are retained with their different scopes.
+## Provenance of the two proposals
 
-**Mathematical work performed.** None. No Python mathematical checker, Lean build, comparator, or large archive job was run. This pass must not count as another mathematical verification of earlier model-generated material.
+[PR #1](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/pull/1) proposed the human workbench map, machine inventory, research log and scoped review guide from source commit ed8cb4bee090d8f7cc14166199aebdef557d066e. That snapshot remains accessible through Git history. Its artifact aliases are retained when their paths still identify the same public files; hashes identify the actual file revisions.
 
-**Outstanding next steps.** Reconcile this snapshot with any updates on main before merging. Extract programme motivations and exact theorem statements from the chosen source bodies, without guessing from titles. Give reusable claims their own identifiers and dependencies. Review the previously raised PK7/PK10 prefactor question in a separate mathematical change. Register other workbenches only after their endpoints and publication permission are known. No peer discovery or unattended worker has been deployed.
+[PR #3](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/pull/3) proposed networking, programme-state, problem-catalogue and publication documentation. The integration retains its workbench-first design while updating source pointers and removing permission to normalize mathematical data. No local instruction file was replaced.
 
-**For the next session.** Read WORKBENCH.md and the newest handoff first. Compare the actual repository state with the pinned inventory. Keep the user's current objective visible; do not resume an old calculation merely because it is familiar. Write a short rationale before changing direction and leave a resumption note before stopping.
-
-**Publication boundary.** These notes disclose only the requested workbench organization and the already public repository metadata. Private conversation exports, credentials, local library contents, and background jobs are not included. Existing instructions in a contributor's own environment remain in force.
+Private conversation exports, user logbooks, credentials and downloaded literature bodies are not included. This is a public account of work performed, not a publication of the private session.

@@ -1,4 +1,4 @@
-# What this documentation session found
+# Public editions and documentation history
 
 ## Integration update — 9 September 2026
 
@@ -8,7 +8,17 @@ Published raw Git JSON/check blobs match the corrected Zenodo objects. Local CRL
 
 [Documentation home](README.md) • Inspected 9 September 2026
 
-## The Navier–Stokes material is not absent
+## Current integrated repository
+
+The current [workbench overview](../../WORKBENCH.md) and [machine catalogue](../../workbench.json) supersede the earlier 22-file navigation snapshot. [Yang–Mills](../../yang-mills/) contains the 79-page quantum and 81-page volume readers, their companion readers and full selected sources; [S6](../../s6/) links its complete frozen project; [Navier–Stokes](../../navier-stokes/) gives the corrected reader and source records.
+
+The directly inspected current editions are [Yang–Mills 22678364](https://doi.org/10.5281/zenodo.22678364), [S6 22678442](https://doi.org/10.5281/zenodo.22678442), and [Navier–Stokes 22678406](https://doi.org/10.5281/zenodo.22678406). The last is the corrected **208-page** edition; **22667379 is the earlier 162-page edition**. The historical observation below reported a DOI from another README before the actual record could be inspected; it is not the current publication pointer.
+
+The [public Overleaf](https://www.overleaf.com/read/rtmyqxyrzprn#fa24eb) is the shared evolving workbench, not an immutable DOI snapshot. The Navier–Stokes task has now supplied [its own current research state](../../navier-stokes/RESEARCH_STATE.md), including the stopped formal run and a [dedicated corrected Overleaf reader](https://www.overleaf.com/read/hzthvczhdyxc#a60fc2). This supplies the descriptive handoff requested in issue #2; archived mathematical checks retain their original scopes.
+
+PRs #1 and #3 have been integrated into the current topic organization with these corrections. Their original proposals and inspection history remain accessible in Git. This pass changes navigation and metadata, not mathematical source/PDF/archive contents.
+
+## Earlier web-session observations (historical)
 
 [The Yang–Mills repository README](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/ed8cb4bee090d8f7cc14166199aebdef557d066e/README.md) identifies a 208-page Navier–Stokes workbench, full TeX, source bundle and JSON records. It expressly says complete analytical/Lean validation remains in progress. That is the source's scope statement, not a new assessment of the mathematics by this documentation session.
 
@@ -30,9 +40,9 @@ For PolyClank this is a useful kind of contribution: retain upstream identity an
 
 A **push** sends local commits to a remote repository. A **pull** brings remote changes into a local checkout. A **pull request** proposes incorporating one branch's changes into another; it is not the same operation as pulling. A **merge** incorporates those changes. A **draft pull request** is a proposal that is not yet eligible to merge. [G1, G2]
 
-The existing [navigation pull request #1](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/pull/1) was still open and in draft at this inspection. This session did not merge or change it. The networking documents are proposed separately so the owner can review the organization and the protocol independently.
+The [navigation pull request #1](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/pull/1) was open and in draft at the earlier web-session inspection. The later local integration reconciles it with the current topic directories and incorporates the networking proposal in PR #3. The earlier draft status is not an outstanding request to repeat publication authorization.
 
-To accept a draft through the website, open the pull request, inspect Files changed, and choose Ready for review. Once it is ready and required checks or rules permit merging, choose Merge pull request and then Confirm merge. Marking ready can notify configured code owners. Choosing not to merge is also valid. Do not bypass unresolved conflicts just to clear the queue. [G2, G3]
+For future contributions, a draft can be marked ready and merged through GitHub when its conflicts and applicable checks are resolved. An authorized maintainer can also integrate the commits locally and push the resulting merge. These are alternative workflows, not instructions for a reader to perform another approval of this completed integration. [G2, G3]
 
 ## No research-state inflation
 
