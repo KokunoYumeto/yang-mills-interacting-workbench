@@ -20,6 +20,12 @@ There are two connected but distinct aims:
    not an assumption that a higher-dimensional analogue must be a complex
    structure or a physical theory.
 
+Here “24-dimensional” refers to the rank of the Niemeier and Leech lattices;
+“triality” refers to the three 8-dimensional octonionic summands, and “mod 12”
+refers to the quotient obtained by composing the explicitly computed value-group
+inclusions. Those terms therefore name concrete source objects and maps, not
+unstated background assumptions.
+
 The motivation statements below are retrospective route descriptions, not
 quotations from private working records. “Result” means a result recorded in the
 frozen source; the documentation pass did not newly reprove these theorems.
