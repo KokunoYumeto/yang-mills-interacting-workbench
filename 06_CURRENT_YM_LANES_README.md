@@ -1,0 +1,7 @@
+# Current authored Yang-Mills lane consolidation (9 September 2026)
+
+This additive package consolidates the current authored mathematical material found in the registered Yang-Mills lanes: root, quantum coarse-graining, volume-uniform actual-vacuum, and spatial-continuum. The readable entry points are the five PDFs under `readers/`. The `sources/` tree preserves the associated Markdown/TeX proofs, authored inputs explicitly allowlisted by the lane registry, and exact checker programs/results. `YM_CURRENT_LANE_RELEASE_MANIFEST.json` gives every included file's byte count and SHA-256.
+
+The PDFs are supplied lane artifacts, not rebuilt by this publisher: quantum is 75 pages, its current interacting-tensor and nonabelian-vertex component readers are 71 and 63 pages, volume is 77 pages, and spatial is 121 pages. Exact checks are finite symbolic/arithmetic diagnostics within each lane's stated scope; they are not formal verification of the analytical proofs. The interacting four-dimensional continuum, a rigorous mass-gap resolution, and any Millennium Prize conclusion remain unfinished.
+
+Excluded are the registered xi4 heat/Navier--Stokes lane (not Yang--Mills), S6/topology and separate Navier--Stokes source bodies, private workflows and task metadata, user-turn/profanity exports, credentials/tokens, copied literature collections, unverified provisional notes, and duplicate historical blobs. No source bytes in the prior YM record are replaced or deleted; this package is additive to its latest version.
