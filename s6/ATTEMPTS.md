@@ -1,7 +1,7 @@
 # What has been tried in the S6 reconstruction
 
-This page is a cold-start map for readers who have not seen the surrounding
-sessions. The underlying source is a proposed construction of a compact complex
+This page is a cold-start map for a reader encountering this repository without
+any prior context. The underlying source is a proposed construction of a compact complex
 threefold whose **underlying smooth manifold is claimed to be the six-sphere
 S⁶**, with a torus fibration over ℙ¹ and specially described singular fibres.
 The public archive contains the original transcription, the dated audit, the
@@ -21,7 +21,7 @@ There are two connected but distinct aims:
    structure or a physical theory.
 
 The motivation statements below are retrospective route descriptions, not
-quotations from the original sessions. “Result” means a result recorded in the
+quotations from private working records. “Result” means a result recorded in the
 frozen source; the documentation pass did not newly reprove these theorems.
 
 ## 1. Deriving the finite-fibre attachment maps
