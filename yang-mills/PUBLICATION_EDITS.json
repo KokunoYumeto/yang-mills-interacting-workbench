@@ -1,0 +1,16 @@
+{
+  "mathematical_source_edits_by_packaging_worker": false,
+  "metadata_edits": [
+    {
+      "path": "sources/ym_quantum_coarse_graining_astra_20260908/RELEASED_PROFILE_MEASURES_CHECKS.json",
+      "change": "Replaced absolute source_path by archive-portable relative locator. All diagnostic data and input hash preserved.",
+      "original_sha256": "f65f3686f0f3b133edf1b2b63d5597675b9704fd22a4766220b6d53c2ae1bc7b"
+    },
+    {
+      "path": "sources/ym_volume_uniform_astra_20260908/CLAIMS.json",
+      "change": "Removed top-level private goal workflow status; all mathematical claim entries preserved.",
+      "original_sha256": "15a9e54a89ecb24bf6fc802afd4b2fa4361d9de0742c652774bd25695fce9c7e"
+    }
+  ],
+  "reader_build_note": "Publication coordinator corrected the volume TeX closing math delimiter to agree with unchanged Markdown and completed two serial LaTeX passes. The packaging worker did not rebuild PDFs."
+}
