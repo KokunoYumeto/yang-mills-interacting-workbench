@@ -1,297 +1,3299 @@
 {
-  "format": "polyclank-workbench-inventory-draft-0.1",
+  "format": "polyclank-experimental-static-file-catalogue-0.2",
+  "implementation_status": "Experimental static-file catalogue; no network protocol deployed.",
   "workbench_id": "KokunoYumeto/yang-mills-interacting-workbench",
-  "title": "Yang–Mills and Navier–Stokes workbenches",
+  "title": "Yang–Mills, S6 and Navier–Stokes research workbenches",
   "repository": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench",
-  "inventory_as_of": "2026-09-09",
-  "source_commit": "ed8cb4bee090d8f7cc14166199aebdef557d066e",
-  "source_tree": "cb2a7dd043d7bf9bd8cb3d31d0daba2558335a8f",
-  "coverage": "All 22 paths in the inspected source tree. Does not enumerate archive interiors or the organizational files introduced by this change.",
-  "id_policy": "ART identifiers are local handles for this versioned inventory. The commit and Git blob SHA identify the exact source. Preserve existing IDs when maintaining this inventory; mint new IDs for additional entries. IDs are not proofs, signatures, or a federation-wide registry.",
-  "human_overview": "WORKBENCH.md",
-  "handoff": "RESEARCH_LOG.md",
-  "review_guide": "REVIEW_GUIDE.md",
-  "purpose": "Make the repository's programmes, reader versions, sources, and verification boundaries discoverable without relocating mathematical work.",
-  "validation": {
-    "this_pass": "navigation_only",
-    "mathematical_checks_performed": false,
-    "source_results_independently_verified": false,
-    "formal_replay_performed": false,
-    "theorem_inventory_complete": false
+  "inspected_math_source_commit": "e0a04c078eaf0209e40b3d47d6f6dffb3f2a3e7f",
+  "commit_scope": "This is the previously inspected mathematical source baseline, not the commit of these generated documents or a claim that staged changes are committed.",
+  "payload_source": "git_index_stage_0_blobs",
+  "git_object_format": "sha1",
+  "coverage": "Every stage-0 tracked public payload file in the Git index, except the two generated catalogues listed in excluded_generated_files. Includes preserved historical paths and staged documentation. Hashes and sizes describe Git blob bytes, not checkout bytes after newline conversion. Untracked and unstaged changes, Git internals, archive interiors and externally hosted files are not inventoried. Archive files themselves are inventoried.",
+  "excluded_generated_files": [
+    {
+      "path": "workbench.json",
+      "reason": "Generated catalogue excluded to avoid recursive fingerprints."
+    },
+    {
+      "path": "releases/2026-09-09/GITHUB_TREE_MANIFEST.json",
+      "reason": "Generated catalogue excluded to avoid recursive fingerprints."
+    }
+  ],
+  "artifact_count": 294,
+  "payload_inventory_sha256": "9bfdf934003baab130859f75f75782086d95cd1a8a64299c8cc05892ac1e227d",
+  "payload_inventory_sha256_encoding": "SHA-256 of the files/artifacts array serialized as UTF-8 JSON with sorted object keys, literal Unicode, no whitespace and no trailing newline; entries are sorted by repository-relative forward-slash path.",
+  "generator": "tools/update_workbench_index.py",
+  "human_overview": "README.md",
+  "historical_inventory": {
+    "pull_request": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/pull/1",
+    "document": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/5835bf92c722cf095bc7ff3b13ad21c093c2d6c5/workbench.json",
+    "source_commit": "ed8cb4bee090d8f7cc14166199aebdef557d066e",
+    "note": "The earlier 22-file snapshot is historical; its existing path IDs are retained."
   },
+  "id_policy": "Preserve ART-001 through ART-022 for the original inventory paths. Additional paths use ART-PATH- followed by the first 16 hexadecimal digits of SHA-256 of the UTF-8 path; generation rejects collisions. IDs identify local paths; the sha256 and git_blob_oid fields identify their exact current payload bytes.",
+  "research_state_scope": "Programme descriptions record the published research state and contribution scope from the linked guides. They prescribe no next mathematical tasks; participants choose their own investigations within their authorization. Complete proofs and qualifications remain in the source artifacts.",
   "programmes": [
     {
-      "id": "YM-QUANTUM",
-      "title": "Quantum coarse-graining",
-      "artifacts": [
-        "ART-011",
-        "ART-012",
-        "ART-013"
-      ],
+      "id": "YM",
+      "title": "Yang–Mills research workbench",
+      "human_entry": "yang-mills/README.md",
+      "human_reader": "yang-mills/readers/quantum_coarse_graining.pdf",
+      "ai_entry": "yang-mills/AI_READING_INDEX.md",
+      "source_directory": "yang-mills/sources/",
+      "edition_doi": "10.5281/zenodo.22678364",
+      "edition_url": "https://doi.org/10.5281/zenodo.22678364",
+      "research_state": "The 9 September 2026 selected source edition contains quantum state and spectral maps, interacting tensor-band and non-Abelian vertex calculations, volume-independent vacuum estimates, and spatial-continuum maps and obstructions. The full manuscripts retain their constructions, calculations and hypotheses. Fixed-box oscillator path rates do not establish the missing volume-uniform simultaneous exact-lattice limit. The interacting four-dimensional continuum mass-gap conclusion remains unfinished.",
       "description_basis": [
-        "ART-002"
-      ],
-      "scope": "Programme named by the release guide; reader bodies not reviewed."
+        "yang-mills/README.md",
+        "yang-mills/AI_READING_INDEX.md"
+      ]
     },
     {
-      "id": "YM-VOLUME",
-      "title": "Volume-uniform actual-vacuum work",
-      "artifacts": [
-        "ART-022"
-      ],
+      "id": "S6",
+      "title": "S6 topology and related constructions",
+      "human_entry": "s6/README.md",
+      "human_reader": "s6/26_s6_key_advances_frozen_2026-09-06.pdf",
+      "ai_entry": "s6/S6_FROZEN_PROJECT_GUIDE_2026-09-09.md",
+      "source_manifest": "s6/S6_FROZEN_PROJECT_PACKAGE_MANIFEST_2026-09-09.json",
+      "edition_doi": "10.5281/zenodo.22678442",
+      "edition_url": "https://doi.org/10.5281/zenodo.22678442",
+      "research_state": "The full project checkpoint frozen on 6 September 2026 preserves the original transcription, historical annotations, later calculations, standalone papers, TeX/Bib sources and recorded checks. The five-page reader provides orientation; the complete 1,079-file archive is linked through the topic guide and Zenodo edition. This publication does not independently certify a global complex structure on S6, a CDP20 counterexample, or a Yang–Mills mass-gap theorem.",
       "description_basis": [
-        "ART-002"
-      ],
-      "scope": "Programme named by the release guide; parameter-uniform claims not independently checked."
+        "s6/README.md",
+        "s6/S6_FROZEN_PROJECT_GUIDE_2026-09-09.md"
+      ]
     },
     {
-      "id": "YM-SPATIAL",
-      "title": "Spatial-continuum work",
-      "artifacts": [
-        "ART-015",
-        "ART-016",
-        "ART-017",
-        "ART-018",
-        "ART-019",
-        "ART-020",
-        "ART-021"
-      ],
-      "preferred_entry": "ART-020",
-      "entry_selection_basis": "Starting commit message explicitly names the 129-page reader as current; no theorem-by-theorem supersession asserted.",
-      "scope": "Commit message describes regulator-level results, not a continuum mass-gap theorem."
-    },
-    {
-      "id": "YM-KERNEL",
-      "title": "Prescribed-path oscillator-kernel rates",
-      "artifacts": [
-        "ART-014"
-      ],
+      "id": "NS",
+      "title": "Navier–Stokes reconstruction and validation workbench",
+      "human_entry": "navier-stokes/README.md",
+      "human_reader": "navier-stokes/navier_stokes_workbench_208p.pdf",
+      "ai_entry": "navier-stokes/navier_stokes_workbench.tex",
+      "source_manifest": "navier-stokes/navier_stokes_primary_manifest.json",
+      "edition_doi": "10.5281/zenodo.22678406",
+      "edition_url": "https://doi.org/10.5281/zenodo.22678406",
+      "research_state": "The corrected 9 September 2026 reconstruction examines the supplied finite-time construction with positive viscosity, zero initial velocity and smooth compactly supported forcing. The 208-page reader preserves forcing, pressure, transport, nonlinear terms and correction-cycle calculations, including the actual-shear remainder and moving-plane projection. The source manifest and recorded checks accompany the reader. Complete independent analytical and Lean validation remains unfinished; this is not a completed independent certificate.",
       "description_basis": [
-        "ART-014"
-      ],
-      "scope": "Source describes fixed-box oscillator conclusions and a missing volume-uniform exact-lattice bridge; formulas not newly checked."
-    },
-    {
-      "id": "YM-DISK",
-      "title": "Fixed-coupling analytic-disk checker",
-      "artifacts": [
-        "ART-005"
-      ],
-      "scope": "File indexed only in this pass; no execution or coverage review."
-    },
-    {
-      "id": "NS-BRIDGES",
-      "title": "Navier–Stokes workbench and bridges",
-      "artifacts": [
-        "ART-006",
-        "ART-007",
-        "ART-008",
-        "ART-009",
-        "ART-010"
-      ],
-      "description_basis": [
-        "ART-004"
-      ],
-      "scope": "README reports complete analytic/Lean validation in progress; no certification supplied here."
-    },
-    {
-      "id": "YM-ARCHIVE",
-      "title": "Yang–Mills programme release archive",
-      "artifacts": [
-        "ART-001",
-        "ART-002",
-        "ART-003"
-      ],
-      "description_basis": [
-        "ART-002"
-      ],
-      "scope": "Guide read; archive contents and manifest not independently inspected."
-    },
-    {
-      "id": "ORIENTATION",
-      "title": "Original repository overview",
-      "artifacts": [
-        "ART-004"
-      ],
-      "description_basis": [
-        "ART-004"
-      ],
-      "scope": "Original framing preserved."
+        "navier-stokes/README.md"
+      ]
     }
   ],
   "artifacts": [
     {
       "id": "ART-001",
       "path": "05_current_authored_ym_lanes_2026-09-09.zip",
-      "git_blob_sha": "bf4ce90148698c6a1768315dda7401de5cedbf78",
+      "git_mode": "100644",
+      "git_blob_oid": "bf4ce90148698c6a1768315dda7401de5cedbf78",
       "bytes": 5374527,
-      "inspection": "tree_metadata_only"
+      "sha256": "bac512123b8792eca964899fa3ca1f8982ebb0197725db06cb0d2e71cceffcff",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-002",
       "path": "06_CURRENT_YM_LANES_README.md",
-      "git_blob_sha": "425e85a08722ee8b5f451682333cff27c5cd9164",
+      "git_mode": "100644",
+      "git_blob_oid": "425e85a08722ee8b5f451682333cff27c5cd9164",
       "bytes": 1528,
-      "inspection": "text_read_not_mathematically_validated"
+      "sha256": "95d1c6055c1baa0490f9cb2956a81ea324cd323004f2f538bc6b01edc2bd19f5",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-003",
       "path": "07_CURRENT_YM_LANE_MANIFEST.json",
-      "git_blob_sha": "4404f152ff9d2a75e64266a29c01683e22964b67",
+      "git_mode": "100644",
+      "git_blob_oid": "4404f152ff9d2a75e64266a29c01683e22964b67",
       "bytes": 51254,
-      "inspection": "tree_metadata_only"
+      "sha256": "8cf008f4e6297d1067a92fb7def44d070ca08fd0f2f91be8f1f972ed98dc6fe6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-db175f08ec4c21e9",
+      "path": "ARCHIVE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "0093725fedc25003b7f9de42b430e94fc20a2b44",
+      "bytes": 1851,
+      "sha256": "ef1041576b4c0576a00383eb65362826a66e308fc80b23327a4cf97641ed426f",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-eca12c0a30e25b4b",
+      "path": "CONTRIBUTING.md",
+      "git_mode": "100644",
+      "git_blob_oid": "b9cae520f77d7b73600918c27e5fa94a586fe8af",
+      "bytes": 2820,
+      "sha256": "bdca89980272d0a1d36c8833521f3895caaf346414e5abe40ca3f1ee0024315c",
+      "programme_ids": []
     },
     {
       "id": "ART-004",
       "path": "README.md",
-      "git_blob_sha": "9a29e678b72d7d6d6f11e6bdc9aa062a7650d336",
-      "bytes": 1428,
-      "inspection": "text_read_not_mathematically_validated"
+      "git_mode": "100644",
+      "git_blob_oid": "c78320acb716b1ed19156023151dcb480ddbe038",
+      "bytes": 3476,
+      "sha256": "090dddae7a9bc8762d42f665124bba9097486ad6e9666ebf283056ca205999e1",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-27f3bc597ccc45d5",
+      "path": "RESEARCH_LOG.md",
+      "git_mode": "100644",
+      "git_blob_oid": "3e055cbbdb5ec2bf9fde710688d1be0eca719cc7",
+      "bytes": 3665,
+      "sha256": "ae98310d6dcf4f183da5cc3339a16087dcf789f5cc84c842d7fc20945606997c",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-0e2498d4e69eae75",
+      "path": "REVIEW_GUIDE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "d26dc0f1eb19e4805e584b7e7f362059b243738f",
+      "bytes": 3969,
+      "sha256": "6608c03343bc6c974cd5653655df9171326b174ffc91f121f2920557006e9f5e",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-18b000a3d0ebb101",
+      "path": "WORKBENCH.md",
+      "git_mode": "100644",
+      "git_blob_oid": "da610503b94b4cd9b08e4c9c43bbcc31bea0bebf",
+      "bytes": 6390,
+      "sha256": "a4e2804e3c6d28f3d6488802e55a9a3112ae5170eea621711bbea6aab65749b9",
+      "programme_ids": []
     },
     {
       "id": "ART-005",
       "path": "check_fixed_coupling_analytic_disk_obstruction.py",
-      "git_blob_sha": "62e416e75ce58e25b130551f437d3f0d9cbcd009",
+      "git_mode": "100644",
+      "git_blob_oid": "62e416e75ce58e25b130551f437d3f0d9cbcd009",
       "bytes": 1012,
-      "inspection": "tree_metadata_only"
+      "sha256": "864c382c2dfb84b89a178307e978eefe764028238b52ea7546a18a8b7ddffce3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fcc1ace61eb154ce",
+      "path": "docs/polyclank/NETWORKING.md",
+      "git_mode": "100644",
+      "git_blob_oid": "358b370d72d46bde4648fe53962a3422ddd8868f",
+      "bytes": 11609,
+      "sha256": "89e27882ebbf1e8f31e4ad871b5f396b5b7e8814f9d46ab563ad85f16b005a65",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-5aa4febf2fb3bfdd",
+      "path": "docs/polyclank/PROBLEM_CATALOGUE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c6df82c2608e0f4f7fb952259bca8107edf02e37",
+      "bytes": 4452,
+      "sha256": "e99f1c84a66109438180130b37105f92a19c409332cdc4ae7f7ac2a8125d3526",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-3bb32d97d5522059",
+      "path": "docs/polyclank/PUBLISHING.md",
+      "git_mode": "100644",
+      "git_blob_oid": "1bb0a147530de5e262f1fef31368e22b9e97cd84",
+      "bytes": 8476,
+      "sha256": "0e999a6b01b143d40490cb0990e64b16832495510b72a427aadc87e901cb5911",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-654a7bb250a40b88",
+      "path": "docs/polyclank/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "d8e017b43aa3afe9259eba17a008a8a10f9ff80a",
+      "bytes": 3770,
+      "sha256": "58ab368da319306ef7cb6f6b92657830beecc4527e5037f8e46c4e4897afd7da",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-4220cf66ad4c24ba",
+      "path": "docs/polyclank/REPOSITORY_NOTES.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2658e243ad975a388208ecc7891ca57d50f2b000",
+      "bytes": 6573,
+      "sha256": "cec16cd86a8c52c081087ddd5a4f68ac62f6166aaab0630291e646063b33535a",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-85574b9a022d9adf",
+      "path": "docs/polyclank/RESEARCH_STATE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "b617a851082e4cd4ee30cd1b2b954da1abfa7a14",
+      "bytes": 6145,
+      "sha256": "03949112fdda9041ac8a5bde78b7c893f8230f13b0fe45ff2dac19941d413079",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-87b7fec152f125e3",
+      "path": "navier-stokes/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "6388177d742aa3c6e9aec184d60a410d1aeed5ad",
+      "bytes": 1802,
+      "sha256": "fef38de8c3c3bf92480b98e7f6db5a2a4ed595e6bb2aa2a26a6aab29d7ce4c2a",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-2af34f90c2925579",
+      "path": "navier-stokes/navier_stokes_checks.json",
+      "git_mode": "100644",
+      "git_blob_oid": "03c5061b57913350bcc73e95ff11790b37c2dbc4",
+      "bytes": 17112,
+      "sha256": "4ccf9256d9ab40d01a7920d501578092a2c14335751ba82dd5976b4f8aeb3633",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-524f096cc02e166f",
+      "path": "navier-stokes/navier_stokes_primary_manifest.json",
+      "git_mode": "100644",
+      "git_blob_oid": "4f60fc4db69ea73191cbb40b85938c4661425c88",
+      "bytes": 4368339,
+      "sha256": "386d3fef8edcf2665ecd5daa2944269f414ced12c1afe89d9d7fc50973fbd76a",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-1dbc297f7994fe0e",
+      "path": "navier-stokes/navier_stokes_source_bundle.zip",
+      "git_mode": "100644",
+      "git_blob_oid": "b3cf3be2d969381548778508650690ba679c7554",
+      "bytes": 4266561,
+      "sha256": "43b128e24f395327b2dd0f9874ca1ff120a52d625ab454f7df97d51f10c328c5",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-47598acc8bf163f4",
+      "path": "navier-stokes/navier_stokes_workbench.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "205a99807302e21a51c5eaf223390c0dfc42bcd0",
+      "bytes": 840076,
+      "sha256": "3b20e30b9b55c2126103e7374caa8c44489ae63a6be9223483c7901f1d333c0f",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-be6a2834e957eed6",
+      "path": "navier-stokes/navier_stokes_workbench_208p.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "ab94c6dfac3124e97661dad5d868741f40d6c346",
+      "bytes": 1993960,
+      "sha256": "242fe7f83feab43b91915595230b5e93e9f344eb654e1edcb65e9669a9cd5878",
+      "programme_ids": [
+        "NS"
+      ]
     },
     {
       "id": "ART-006",
       "path": "navier_stokes_checks.json",
-      "git_blob_sha": "03c5061b57913350bcc73e95ff11790b37c2dbc4",
+      "git_mode": "100644",
+      "git_blob_oid": "03c5061b57913350bcc73e95ff11790b37c2dbc4",
       "bytes": 17112,
-      "inspection": "tree_metadata_only"
+      "sha256": "4ccf9256d9ab40d01a7920d501578092a2c14335751ba82dd5976b4f8aeb3633",
+      "programme_ids": [
+        "NS"
+      ]
     },
     {
       "id": "ART-007",
       "path": "navier_stokes_primary_manifest.json",
-      "git_blob_sha": "4f60fc4db69ea73191cbb40b85938c4661425c88",
+      "git_mode": "100644",
+      "git_blob_oid": "4f60fc4db69ea73191cbb40b85938c4661425c88",
       "bytes": 4368339,
-      "inspection": "tree_metadata_only"
+      "sha256": "386d3fef8edcf2665ecd5daa2944269f414ced12c1afe89d9d7fc50973fbd76a",
+      "programme_ids": [
+        "NS"
+      ]
     },
     {
       "id": "ART-008",
       "path": "navier_stokes_source_bundle.zip",
-      "git_blob_sha": "b3cf3be2d969381548778508650690ba679c7554",
+      "git_mode": "100644",
+      "git_blob_oid": "b3cf3be2d969381548778508650690ba679c7554",
       "bytes": 4266561,
-      "inspection": "tree_metadata_only"
+      "sha256": "43b128e24f395327b2dd0f9874ca1ff120a52d625ab454f7df97d51f10c328c5",
+      "programme_ids": [
+        "NS"
+      ]
     },
     {
       "id": "ART-009",
       "path": "navier_stokes_workbench.tex",
-      "git_blob_sha": "99cd13ac2da9c674e70bf941d8a4ab5b99862b5e",
+      "git_mode": "100644",
+      "git_blob_oid": "99cd13ac2da9c674e70bf941d8a4ab5b99862b5e",
       "bytes": 854321,
-      "inspection": "tree_metadata_only"
+      "sha256": "0b5b832e1845469b316b992880b4731a88681e018b58fd50f9f38e1c0a1ec263",
+      "programme_ids": [
+        "NS"
+      ]
     },
     {
       "id": "ART-010",
       "path": "navier_stokes_workbench_208p.pdf",
-      "git_blob_sha": "ab94c6dfac3124e97661dad5d868741f40d6c346",
+      "git_mode": "100644",
+      "git_blob_oid": "ab94c6dfac3124e97661dad5d868741f40d6c346",
       "bytes": 1993960,
-      "inspection": "tree_metadata_only"
+      "sha256": "242fe7f83feab43b91915595230b5e93e9f344eb654e1edcb65e9669a9cd5878",
+      "programme_ids": [
+        "NS"
+      ]
     },
     {
       "id": "ART-011",
       "path": "quantum_coarse_graining_75p.pdf",
-      "git_blob_sha": "3e859aec91c3f17756e398d584c38c67bf7d6135",
+      "git_mode": "100644",
+      "git_blob_oid": "3e859aec91c3f17756e398d584c38c67bf7d6135",
       "bytes": 861695,
-      "inspection": "tree_metadata_only"
+      "sha256": "30b165ddc7444086f063586b3067d78905e2c43809c814589a477243d1a205b3",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-012",
       "path": "quantum_interacting_tensor_band_71p.pdf",
-      "git_blob_sha": "d053cf7fdfbcc8a40f712ab4c97e037cd308115d",
+      "git_mode": "100644",
+      "git_blob_oid": "d053cf7fdfbcc8a40f712ab4c97e037cd308115d",
       "bytes": 837741,
-      "inspection": "tree_metadata_only"
+      "sha256": "3b5ed7b5dcb1a5f7d128375f423171a38148e02404ee634337f011d559addb27",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-013",
       "path": "quantum_nonabelian_vertex_63p.pdf",
-      "git_blob_sha": "e26fe6d464ab86dd47c9e26d65567d30db1709ce",
+      "git_mode": "100644",
+      "git_blob_oid": "e26fe6d464ab86dd47c9e26d65567d30db1709ce",
       "bytes": 778286,
-      "inspection": "tree_metadata_only"
+      "sha256": "46b9c43e05f4e8167311f574b0cae4e94f0776846a1ea54cb855362a8d6b2e22",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-cbce4b09f9e479de",
+      "path": "releases/2026-09-09/HASHES.md",
+      "git_mode": "100644",
+      "git_blob_oid": "1b7e8d9f0e9e914ea58a2dcc5b798c9be83d628c",
+      "bytes": 1106,
+      "sha256": "a82b5afa25032a255012dc68b4b3c7d71f1312d3aac84864155e512623a25777",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-db74f3dca74d13e6",
+      "path": "releases/2026-09-09/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "5b4e39ee43491771519de1d30a81ed826650ff7f",
+      "bytes": 975,
+      "sha256": "a047e070155304b4297b696877cc2529977aff5d592e8b370acbd5ea5101ecdb",
+      "programme_ids": []
+    },
+    {
+      "id": "ART-PATH-72ea5982b2b279a3",
+      "path": "s6/26_s6_key_advances_frozen_2026-09-06.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "4b7746b8db5f41e3b522182fd614ffb6f07859ce",
+      "bytes": 302062,
+      "sha256": "561893cce317b8bcd890c77f3b1c5457b120a936120f1c421d5677d1d7026b71",
+      "programme_ids": [
+        "S6"
+      ]
+    },
+    {
+      "id": "ART-PATH-e692f95503160c3a",
+      "path": "s6/27_s6_key_advances_frozen_2026-09-06.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "4df0139fa59ccb7671307b0f8f77a73e938a26a6",
+      "bytes": 14283,
+      "sha256": "7d0f9f363ed5c023bc2c3e691c167bb0dc801d4eaa02048a96c08e5aa0a88c7a",
+      "programme_ids": [
+        "S6"
+      ]
+    },
+    {
+      "id": "ART-PATH-a1554d02ea2dc4f0",
+      "path": "s6/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "5077b6b627848ec8a8e01de4b0042d5efde307c7",
+      "bytes": 1455,
+      "sha256": "f4a1905e013485df59d5d002e5fe259ae6f64d91ae0567c58b97c5085a1d240d",
+      "programme_ids": [
+        "S6"
+      ]
+    },
+    {
+      "id": "ART-PATH-1e7851b5837f9588",
+      "path": "s6/S6_FROZEN_PROJECT_GUIDE_2026-09-09.md",
+      "git_mode": "100644",
+      "git_blob_oid": "1011f9607bdbbe9e8811988b8ae095219f574cdf",
+      "bytes": 3908,
+      "sha256": "a961cd1b80854ce99888efc27124104315caeeaa4f9a3f8796176558e18293ba",
+      "programme_ids": [
+        "S6"
+      ]
+    },
+    {
+      "id": "ART-PATH-6ef53ed3e2239331",
+      "path": "s6/S6_FROZEN_PROJECT_PACKAGE_MANIFEST_2026-09-09.json",
+      "git_mode": "100644",
+      "git_blob_oid": "51b2d4ef01f45655d2669590d27eb68108304019",
+      "bytes": 2608,
+      "sha256": "58f0a2d08886b1a70583964c3d61b2229366924d5317c7d7e4c8f302ae68aa5b",
+      "programme_ids": [
+        "S6"
+      ]
     },
     {
       "id": "ART-014",
       "path": "scaled_angle_prescribed_kernel_rates.md",
-      "git_blob_sha": "4a118bdbb03de1b9d6ca0789b093563c8debada5",
+      "git_mode": "100644",
+      "git_blob_oid": "4a118bdbb03de1b9d6ca0789b093563c8debada5",
       "bytes": 4447,
-      "inspection": "text_read_not_mathematically_validated"
+      "sha256": "9144c3615f8acab82abaa2f47218655c71588f295a1546362d9179b62935f153",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-015",
       "path": "spatial_continuum_121p.pdf",
-      "git_blob_sha": "a17402f04f1404b31c642b3047cef0a71e82d7d2",
+      "git_mode": "100644",
+      "git_blob_oid": "a17402f04f1404b31c642b3047cef0a71e82d7d2",
       "bytes": 1211190,
-      "inspection": "tree_metadata_only"
+      "sha256": "da3ba52d782ab2d5bd6be0663b3b17d7979ecd39272b0acc2177fe8921517362",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-016",
       "path": "spatial_continuum_127p.md",
-      "git_blob_sha": "b9335cdb44458dc86157d86a723d030fe6ff52a1",
+      "git_mode": "100644",
+      "git_blob_oid": "b9335cdb44458dc86157d86a723d030fe6ff52a1",
       "bytes": 398260,
-      "inspection": "tree_metadata_only"
+      "sha256": "d20ef4b5fa10222ce8b63f2760577f6f1ea3e6db7c50e68b462ef89007052156",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-017",
       "path": "spatial_continuum_127p.pdf",
-      "git_blob_sha": "b408b5d71e0785fb43240350c540fd25cfe6b576",
+      "git_mode": "100644",
+      "git_blob_oid": "b408b5d71e0785fb43240350c540fd25cfe6b576",
       "bytes": 1229023,
-      "inspection": "tree_metadata_only"
+      "sha256": "3c7fd0bfadc22e13a764fa96033ab07ebf01681a7a730b0cf23ada58d5d1eae9",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-018",
       "path": "spatial_continuum_127p.tex",
-      "git_blob_sha": "fb099a8ea843ec51d93bb025a850c0e5966d6019",
+      "git_mode": "100644",
+      "git_blob_oid": "fb099a8ea843ec51d93bb025a850c0e5966d6019",
       "bytes": 410072,
-      "inspection": "tree_metadata_only"
+      "sha256": "cd50a03f474ca9355e9e68bd8a0c96941ac50934dbfd48b2b71f644d22f0637c",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-019",
       "path": "spatial_continuum_129p.md",
-      "git_blob_sha": "18acd5601c0f6b155cb1fface72f63cc98773e81",
+      "git_mode": "100644",
+      "git_blob_oid": "18acd5601c0f6b155cb1fface72f63cc98773e81",
       "bytes": 402798,
-      "inspection": "tree_metadata_only"
+      "sha256": "bca1be087b32e83a2e85ae7712779ebaa926aa26a9ce351df2c8ffb37576f939",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-020",
       "path": "spatial_continuum_129p.pdf",
-      "git_blob_sha": "dd6ff13ad57a73e134e2444556abd95fde9c4271",
+      "git_mode": "100644",
+      "git_blob_oid": "dd6ff13ad57a73e134e2444556abd95fde9c4271",
       "bytes": 1242871,
-      "inspection": "tree_metadata_only"
+      "sha256": "770203d5422416011c4973582757ba9bf78a91a6d3f86f736477386799e3296f",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
       "id": "ART-021",
       "path": "spatial_continuum_129p.tex",
-      "git_blob_sha": "5d19e2044e34dddf3cd3b6520691d9d628dd6c68",
+      "git_mode": "100644",
+      "git_blob_oid": "5d19e2044e34dddf3cd3b6520691d9d628dd6c68",
       "bytes": 414872,
-      "inspection": "tree_metadata_only"
+      "sha256": "a879df6e5730ad285a4227d288cf075e12a88199d0e6a75f62a120bdd7c60118",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ddea3878fa9e7780",
+      "path": "tools/update_workbench_index.py",
+      "git_mode": "100644",
+      "git_blob_oid": "1ab3a4192729417d9579113aadfaecfc9a814113",
+      "bytes": 17087,
+      "sha256": "a3473e9d290a58e5271a64e51c9bf247937e5a68fc99b75268e38a958a355143",
+      "programme_ids": []
     },
     {
       "id": "ART-022",
       "path": "volume_uniform_vacuum_77p.pdf",
-      "git_blob_sha": "a78fe439d5cd7b3bf6954ebcbbf4f889c056dd63",
+      "git_mode": "100644",
+      "git_blob_oid": "a78fe439d5cd7b3bf6954ebcbbf4f889c056dd63",
       "bytes": 992446,
-      "inspection": "tree_metadata_only"
-    }
-  ],
-  "known_peers": [],
-  "peer_discovery_performed": false,
-  "new_mathematical_reviews": [],
-  "follow_up": [
-    {
-      "id": "NEXT-SYNC",
-      "description": "Reconcile with newer main-branch changes before merging."
+      "sha256": "87f9874041d834764f0c54ecc28859bf806e929a5d1fc4905507584fa4d108d4",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
-      "id": "NEXT-CLAIMS",
-      "description": "Extract exact claims, motivations, source locations, and dependencies from selected programme sources."
+      "id": "ART-PATH-857e781659e9dcea",
+      "path": "yang-mills/AI_READING_INDEX.md",
+      "git_mode": "100644",
+      "git_blob_oid": "e318ce515f8267f34e18aa7aa09c121ab9615396",
+      "bytes": 22424,
+      "sha256": "a7c1c7a5df0d3a67ecd50c9634d4ea4437d0cef49e6773084e005cff62cf2315",
+      "programme_ids": [
+        "YM"
+      ]
     },
     {
-      "id": "NEXT-PK",
-      "description": "Audit the previously raised PK7/PK10 prefactor question in a separate mathematical change; no verdict issued here."
+      "id": "ART-PATH-9654fed27cd76799",
+      "path": "yang-mills/DEPENDENCIES.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f796569847107a595bff942b0414688dd693fe4b",
+      "bytes": 5573,
+      "sha256": "2840b265f4803ecc78afcb0151b0263b1c220c426512d940640809bd178c8298",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2b3a824e859a92be",
+      "path": "yang-mills/OMISSIONS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "9478a4751bd7bfdc5de6ffaa453757e472b509fd",
+      "bytes": 2463,
+      "sha256": "42cf6bad8c34ad2863db6107189169757b4869dc64cb562d734743eb19646a46",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1ee369e982aefc8c",
+      "path": "yang-mills/PUBLICATION_EDITS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3770ceed645d93a49b1ee895e8752f65026a92ed",
+      "bytes": 927,
+      "sha256": "26e65a632634f366eb9ec96de58daa6b419e74e49a26ac017e2ec6c7bd47fc1c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-36d8e4c1b3c13954",
+      "path": "yang-mills/READER_PROVENANCE.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ba9184d96057729ff3d55f415b651bf770f0cd27",
+      "bytes": 3979,
+      "sha256": "760b28988886ff43a1aa62f91dcdfa993a91f4e1e0728143e47ebf3b17ec020e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6cb100d136e6f46d",
+      "path": "yang-mills/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "66e3a329a320f084ff8ff745e99dca7b4a299443",
+      "bytes": 5906,
+      "sha256": "435e708dda41583b3052b9ca05c29fb8cad19278626afd103271ea4e8affb290",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2bbddb1e499979a8",
+      "path": "yang-mills/SOURCE_MANIFEST.json",
+      "git_mode": "100644",
+      "git_blob_oid": "025d5bf620cb5febde007830748e8d1ef9ecf1f0",
+      "bytes": 54164,
+      "sha256": "2bb7803cdc28ffe480236e5f91677eca488199a12a93dc7726fbbe70efcc1077",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2a83d2a25232e4a4",
+      "path": "yang-mills/readers/quantum_coarse_graining.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "38c6986ee34fca211c4dc831d19e53f15be6d79a",
+      "bytes": 887944,
+      "sha256": "cba3a09cc7864ffe5e519fa2b0284293b1cb7e1c4040afa3ae9c504eacb7b8cf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8f25ced93a76280b",
+      "path": "yang-mills/readers/quantum_interacting_tensor_band.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "d053cf7fdfbcc8a40f712ab4c97e037cd308115d",
+      "bytes": 837741,
+      "sha256": "3b5ed7b5dcb1a5f7d128375f423171a38148e02404ee634337f011d559addb27",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9a6c32bc32c10809",
+      "path": "yang-mills/readers/quantum_nonabelian_vertex.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "e26fe6d464ab86dd47c9e26d65567d30db1709ce",
+      "bytes": 778286,
+      "sha256": "46b9c43e05f4e8167311f574b0cae4e94f0776846a1ea54cb855362a8d6b2e22",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-94ef36952379c0cc",
+      "path": "yang-mills/readers/spatial_continuum.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "7a4423a48baaf624373a2b0128a607d3b4a9d930",
+      "bytes": 1243123,
+      "sha256": "f0cf351fa8cc3844cd73e45296f28a52b1031b17094f47ba4726e902ae90f77e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9c1966501fc06143",
+      "path": "yang-mills/readers/volume_uniform_vacuum.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "504816def048ee65b5a2c5943cf5e79e31cccb21",
+      "bytes": 1015304,
+      "sha256": "b6c0dd99d697458b6d8b415de3b2a73c5ea30d0c26d7781ba5a84fcdec22ea06",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f1de79014cdcbe43",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/ADJACENT_PLAQUETTE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "21bc69d2aa50890598db55dd33803c551905eb8f",
+      "bytes": 1161,
+      "sha256": "321c87ec162dc64d86f4b4ea6bb54973bca6721c6ca10cd18a82435492d4b9be",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f2b82799aeef206c",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/CENTER_DISORDER_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "121a859b52ca85cef5f77be20af57505503ccd5f",
+      "bytes": 831,
+      "sha256": "a3d03f60ddc662a949ccc3505ac9de2eb1e328ea2073e876371ad017921c3cb0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3a5046d1c5554246",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/CUBIC_BOX_GAP_SYMMETRY_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "72a1478319fd098a108c07fa8dee877475b8012a",
+      "bytes": 8763,
+      "sha256": "0a0c8022ad1746e1883bbdb5dac303cc8ae1082a0cd57a43114074f90839692c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-eb8728a3b491f956",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/CUBIC_SINGLET_VACUUM_ENERGY_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "2ea914a29ee4522d4ee055ef93e35c247465808a",
+      "bytes": 8535,
+      "sha256": "6f360970d3248e9693f9aff9fe3436cfbea31ea577bf9fe6881e372a66376662",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3cc0878f917278ef",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/LOCAL_ENERGY_SPACETIME_RESPONSE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "af52697a6e2f44557fbf5d724ecd88b19eeedab5",
+      "bytes": 3206,
+      "sha256": "bb584e53b3fb5a6d7f83e4d80b5d274281ace6c08803851e4cb0b33cf0e310b0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f58a25a112474188",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/MAGNETIC_GEOMETRY_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "daa7bcacb86e4bb0db0a2b662b5b615f18534c12",
+      "bytes": 4965,
+      "sha256": "ae9e2e9609fac421be8fa9881afd54d6c38909129168727f9f9a614e973fca5a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f6e5697fd6bc6638",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/RADIAL_GAMMA_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "dfba9611b977737f9173eb35ccf3d719e8ab0b74",
+      "bytes": 3409,
+      "sha256": "5d178010e7c19c8842c9c4c311567a4f0da7ebc130ab2804bd7899578712e63e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-31c9c31a265b4547",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/RETAINED_CUSP_BRIDGE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f682955bddedc8b5a9d9730c7460a1d8be2d91a3",
+      "bytes": 2414,
+      "sha256": "66a82a2b9eafbbd867929bb45e9f70840e6dcdd2dc7b895bdfdd11b8a07ca9bf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ff2226df5aa6b400",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/SEPARATED_SPECTRAL_FUNCTIONAL_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "b528c825e4edba9741538442bf3151648f675613",
+      "bytes": 491,
+      "sha256": "55523ed0fc5986f2bd4384ca9d9580dbd43ed2e5912fac387416b7bcdf8828a2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-02fd723028e22c51",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/WEAK_ELECTRIC_GRAPH_COEFFICIENT_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "e743f1bfe9c2b52f2002b0b9739f897f4bbebadf",
+      "bytes": 325,
+      "sha256": "c2151ca0d9e94c09031a49d5362ec6fc79bbcba74a9ba0c85b48c8cb2e3e1af0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8798d31a5ec69df2",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/WEAK_OBSERVABLE_COEFFICIENT_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "9ec2c44c765873c10ae05e4d5ebcecafbaf36978",
+      "bytes": 371,
+      "sha256": "1fc540cd1aa4ba844bdab94220bdc774c0c700d3359494845a9fb8756334a290",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3982b3551ab44bb1",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.md",
+      "git_mode": "100644",
+      "git_blob_oid": "74fdd93ebee782519504a7fabbd37bdd3f97273e",
+      "bytes": 17764,
+      "sha256": "1deb6a738f7d12b3f213d2f0809579aefee465100a88abf260dc7e63fac5481b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6156f187840048e9",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "39d61dc8444eb6363e7dfed14e289af601e1ad81",
+      "bytes": 20222,
+      "sha256": "9a9f772d2b5547aaf02339dc9bbef45480aae935d52cc8194f86f8537352eb53",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-81b9bce01aa4ca3c",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/amplitude_time_kernel_independent_audit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2cacee89a66c61a7fc2bbc482204bd108b236029",
+      "bytes": 27663,
+      "sha256": "968cbd74b674400f44197dce71cfecb109dbad7896b4854444af9f8d3a17697d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d63d796712b79553",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_adjacent_plaquette.py",
+      "git_mode": "100644",
+      "git_blob_oid": "a120e690384570860ad42d59058d65f144f25d5a",
+      "bytes": 3815,
+      "sha256": "48809e4cb82e55f5514f039495fb6afbead278ed8da9ec1cb030ff03c3573c66",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1fe9e8041c486d18",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_center_disorder_bridge.py",
+      "git_mode": "100644",
+      "git_blob_oid": "e3124c873e7389e30802617ec2b40d3f1ff1a5d1",
+      "bytes": 3214,
+      "sha256": "47235109c8a0eb51c0acd5cce5cf0c983fde4aaf9130b9e2b3a824695354f93c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e46e0ff9b7fc71dd",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_cubic_box_gap_symmetry.py",
+      "git_mode": "100644",
+      "git_blob_oid": "7a6c2fbe9583f387e4646954c22e6b05ce244614",
+      "bytes": 2873,
+      "sha256": "4c8be99cc562057125e64c8f6496e60cfa9a9ced73c966ba80302a8e3eace4d9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ea2fa5979044a42c",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_cubic_singlet_vacuum_energy.py",
+      "git_mode": "100644",
+      "git_blob_oid": "4e455e9db24bbc2eb2fe5fc47a78d859ce0b4a22",
+      "bytes": 8060,
+      "sha256": "072eee2bc7ebcbd48f9f173a38be2db8b042422f599eb37c98006ae9d5aa3bb4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2aadc7ffe99f0ac9",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_fixed_coupling_analytic_disk_obstruction.py",
+      "git_mode": "100644",
+      "git_blob_oid": "e56bb2ebd6251dbf7893e15eb7c116c6f601199f",
+      "bytes": 1588,
+      "sha256": "bd63cd80d73384aec3e9cd71c3d96904a5eb755ff1e59853d4fef1ca33683720",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f83908ddef61b2d6",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_local_energy_spacetime_response.py",
+      "git_mode": "100644",
+      "git_blob_oid": "10e6c44007b77791596bc47f70c4f7c137629166",
+      "bytes": 3651,
+      "sha256": "27b25ad7d6414829f5bf5464272932958cec0a5d2acd2ab5d2fd85260955f8a7",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ccb8fa0a1598742d",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_magnetic_geometry_projection.py",
+      "git_mode": "100644",
+      "git_blob_oid": "b8e1c17bc8842dfdf60f16807f4c87d393cf0a6e",
+      "bytes": 4205,
+      "sha256": "3eef732591e32f627db92da5be34a27129df17056e97b6cf3f7d1c71d9660c2a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-412de590132b7f67",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_radial_gamma_candidate.py",
+      "git_mode": "100644",
+      "git_blob_oid": "3cc79364ce48f58bd3ac6a8db778224610e01566",
+      "bytes": 3631,
+      "sha256": "0553a1a6c850b60d40a0908ac7e0f531f534444c4532aaedfc9df8c8cb8ce354",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-00cfdfc08067095b",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_retained_cusp_bridge.py",
+      "git_mode": "100644",
+      "git_blob_oid": "adc81c359b9473bee0391797b123315af00cd499",
+      "bytes": 5290,
+      "sha256": "18375a4d4a7c75622dae2d54abc7138ea6ff05fb14621234e9c3501a4a470bec",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-add67e0d7b003251",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_separated_spectral_functional.py",
+      "git_mode": "100644",
+      "git_blob_oid": "814e310a156563bc6fbbc9964c76a5f3b2c015e8",
+      "bytes": 2834,
+      "sha256": "88634d1ed75077cfdf0caae53cd730067c2c7ddba34dcb7b48bbf524837bf69d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a4e1ba964c0f1c14",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_weak_coupling_tree.py",
+      "git_mode": "100644",
+      "git_blob_oid": "c9f6ea8a637825e68e6dd27640675d0c886c2c80",
+      "bytes": 10184,
+      "sha256": "19b67fef2eb4cb780c4445a40e8a1b9353f150c9f58f8e5ef5ceb714940617c0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6ba61ea637151be3",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_weak_electric_graph_coefficients.py",
+      "git_mode": "100644",
+      "git_blob_oid": "2b7bbcea0246798e8e6e8262dccc608ee6279af6",
+      "bytes": 2883,
+      "sha256": "ca11a31e5402c1d9e4b31b0a1c95b7d0f717b38bbc92ecf17a9a1281734c3609",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9196f3123a0f0fb6",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/check_weak_observable_coefficients.py",
+      "git_mode": "100644",
+      "git_blob_oid": "4c89ec6b3c9cd5b9800bb3edd8e80aa19170fe86",
+      "bytes": 2521,
+      "sha256": "bb24c9695aadacd0588aaefda79ec08596fb9f04f3f54c30202398e56a3b1633",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-45af25b85bdc43da",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/cubic_box_gap_symmetry.md",
+      "git_mode": "100644",
+      "git_blob_oid": "a1c3006d445dcd49d6fa90decd27f35547acd0ee",
+      "bytes": 12677,
+      "sha256": "b05523279afbbc8ce916073ce06ec79da95d9c1c4d3f45e09ee79c7e6a5eee68",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4710cb340417e5f8",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/cubic_singlet_vacuum_energy.md",
+      "git_mode": "100644",
+      "git_blob_oid": "f4b1627d9dd8e36359f8a2d6458bbef641adadb1",
+      "bytes": 35164,
+      "sha256": "aefec75ca82566d656b2d5f1f8388fda7b52b6dc6b2c59c3b0014a40ff27f06d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-40f9d8aaf9ba6cbb",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md",
+      "git_mode": "100644",
+      "git_blob_oid": "dfee77c0ca0d6ed897c4172fcbfe23cd9d10d313",
+      "bytes": 25531,
+      "sha256": "f5668637f2a7438f06b60be8f3048dc75f0276e21da5c29b490af1838739f5d4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f3ff1cc2f0037829",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/first_physical_excitation_band.md",
+      "git_mode": "100644",
+      "git_blob_oid": "55e1bbaf94698ae543304ea9a80a5649afa9cc08",
+      "bytes": 23770,
+      "sha256": "b160076bce03d22b448e16af8761588e5fba1b5caa2398f9e8699758191dee9f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-477d757380e8da81",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/first_separated_electric_covariance.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c42e9dd325cd59fa5bdcbb755f71cf18d8e90be4",
+      "bytes": 21930,
+      "sha256": "980cfecec0306e1ee2b2ecdd8383bc77e2d0a0430b5d613e689d78bad0e26a0b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8ade6dbc3835fc9d",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/fixed_coupling_analytic_disk_obstruction.md",
+      "git_mode": "100644",
+      "git_blob_oid": "ac854f412416acd04d2671ee30309d0b526db55f",
+      "bytes": 5225,
+      "sha256": "a9613fb21af75166df7221146d05c1d09985a0a21453578c646177882da1e503",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-73e3a3ce75d11fc9",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/local_energy_current_true_vacuum.md",
+      "git_mode": "100644",
+      "git_blob_oid": "284596480e24c6e200be2d0779ad64df9c4236c7",
+      "bytes": 22114,
+      "sha256": "3259ef519975357df2aff31f22320195b07511286247619b1da5710923c16039",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-25324b4b36ea936c",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/local_energy_radial_bridge_independent_audit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "66e6f6950961d031f6d35bb5a7734df414b61d1e",
+      "bytes": 35772,
+      "sha256": "a92ea60753d40236f94cecec9c25c22b1c148b57f2d726d8f6f5dbd5cafa9a7a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e819e31d6aa5c59f",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/local_energy_spacetime_and_coupling_response.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c57f89bec3e113247dbc3060aae306cb0e700e41",
+      "bytes": 18788,
+      "sha256": "2da24d9b33b819ee8a5764bab8779367e3565367218823239eba65130419c3c4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-07853e5dd871f2d3",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/magnetic_translation_true_vacuum.md",
+      "git_mode": "100644",
+      "git_blob_oid": "22bf5ab3c24cb1a1213769c4b08e683a02bc1236",
+      "bytes": 26403,
+      "sha256": "a1d7e0817f153ce966b4cc4fcf149dba52521e21a587c390b88d5b322cbce198",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-23322bec94f3094e",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/native_center_disorder_bridge.md",
+      "git_mode": "100644",
+      "git_blob_oid": "308fa19ba17e8a9b5554eff4185c9642e1bea5f2",
+      "bytes": 13426,
+      "sha256": "4bc2106827f88f073f00ff1100347afe8c452db81c5e15252478f2d4343595b1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a1dc257efdee52b7",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/ns_inner_profile_curvature_current_bridge.md",
+      "git_mode": "100644",
+      "git_blob_oid": "fc8c58e3932aa2ac030f40d83ac797854ae6f591",
+      "bytes": 31147,
+      "sha256": "80f5fd3e4265e89bdeede2de6ac8af071ac6bfb622b1c2d38ab4c91b4ca2e3c0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-db3cfb1832e05d21",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/operator_coupling_expansion_full_graph.md",
+      "git_mode": "100644",
+      "git_blob_oid": "25fa0d6e913356d46ead2d19c310722bef6ed0c8",
+      "bytes": 26880,
+      "sha256": "1f4f77f23ca02da91947417ede32008787fe83d12ad9737869f63cc9227abab4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-36db8d15870c4f54",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/radial_carrier_spatial_energy_measure.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2e7d73248bab018b70887929776c3a8e5b3a37f3",
+      "bytes": 13914,
+      "sha256": "d9c6d2d5780db94e865dfbb796dcc462cf3f024939580805e0df854e85dd2f63",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-75a3dac6600b1060",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/radial_gamma_configuration_bridge.md",
+      "git_mode": "100644",
+      "git_blob_oid": "8859f7b293e8d41f288bc5a3f3a4fb21f6a0317a",
+      "bytes": 10635,
+      "sha256": "47dbfbceacd4dca35d6285275a6593cae80ee8ea1bd61dd3b2f3618dca024355",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f55c10fd6f581ff8",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/radial_gamma_full_algebra_map.md",
+      "git_mode": "100644",
+      "git_blob_oid": "22c1048cf74bd36f7ba01b89c198f8c8a2d8db90",
+      "bytes": 17819,
+      "sha256": "7d6bd8913dc4d246d8034297669acd4597b732c76e43ea8d1be064af38fe07b3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-989c5bc6cefb1f83",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/radial_gamma_polymer_representation_map.md",
+      "git_mode": "100644",
+      "git_blob_oid": "cd68aba11c7e93a389f378057c6ab40751525fd3",
+      "bytes": 4818,
+      "sha256": "faf78a29d088335d5da6a7da4f5041b905cd99b7a9b1b98cace79667efbd772b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ce2e9bf75d3c8d06",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/retained_cusp_nonlinear_bridge.md",
+      "git_mode": "100644",
+      "git_blob_oid": "4b985c2ea68290e7c72c5195718ff5832a41a8cf",
+      "bytes": 29822,
+      "sha256": "8e1e7480561c893b649d31e5f0e1da83ccd2cc3cd1537ba0d5641029022b6e95",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-be3c2e9b9e6d78f0",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/retained_cusp_nonlinear_bridge.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "ef049f5202fcf7a03fda8bb1b852b978e576c0b8",
+      "bytes": 32621,
+      "sha256": "d29f3b0154fab8a65d342875b2f3093abfc95dddcec2193fc8f06eb1ce1fca01",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4cf909a15425b593",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/weak_coupling_electric_graph_limit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "160dd2762afad7b404c3f3276b3d24a48f81925c",
+      "bytes": 23290,
+      "sha256": "711b4762bdc29ce85f3f6dde6099248721bc332149c5f8530de1787925ce14f9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0a4851da1c89cff1",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/weak_coupling_radial_gamma_continuum_candidate.md",
+      "git_mode": "100644",
+      "git_blob_oid": "1445442d3f7f90b78f697a2d2f737fb34d69849d",
+      "bytes": 12734,
+      "sha256": "2f5f657a19885c4ffb291d942f0c3e934a920d4d19370889a68a9db6a1480bae",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7e77f1f59dcd3729",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/weak_coupling_state_observable_limit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7f9a8401b27d5ac2745daac83d3ac51216e97f07",
+      "bytes": 22245,
+      "sha256": "01e2fc70769cc67ea25960c4557f485e524cbe694b1f2efd69e0af11d08c16fc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-68a805686be8cef8",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/EXACT_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "b26668509d45ee126d0ef7df88888e2538962d66",
+      "bytes": 4521,
+      "sha256": "d961d8e6127811bafab10f3ebfb6b6b5eeb261f84b7e4198f33147aa65337cd4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5176ee1c4b404c40",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_AFFINE_ELECTRIC_SPECTRAL_MAP.md",
+      "git_mode": "100644",
+      "git_blob_oid": "643c61dd978949b8b67537a68b182a9055f18176",
+      "bytes": 6699,
+      "sha256": "de6639a8001add43c2ba13ed926b6f64f830db80ec24f2fd543529fe0f30daf0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-84550068d40c489f",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_CORRECTIONS_20260908.md",
+      "git_mode": "100644",
+      "git_blob_oid": "9b43e222cd47d01d3e2e713672b6c37c9d7f7f3c",
+      "bytes": 5116,
+      "sha256": "3f83e7fd23323665cc3dc5945154fbb70d0b997f025885e4a47cdc2a8119e8ba",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d7fb02b073bcc5e6",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_CURRENT_LATTICE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "a5a2f9573913757f578f1cb94dd655e54b9560f0",
+      "bytes": 1024,
+      "sha256": "5f2b7ea20dd82b87c48c76cd79903a5abccb45651f58e70c284941e4d79f5000",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c8be400da080dfdf",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_CURRENT_TO_LATTICE_AUDIT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "34f473edee51156fbfaa7e21b549f2299741a495",
+      "bytes": 5031,
+      "sha256": "7a9497d652c247e004906ad9a2c1540d4e632697791f3a6483044124584d0d06",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c859577ebfbf77c5",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_CURVATURE_TO_PHYSICAL_STATE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "8dfd5cbcad9df0b49ea34fc3a6614d054b68e5b9",
+      "bytes": 12411,
+      "sha256": "4702ab9f2e4b8251715b08169d0e3919189d250111041a3dce1197ad5162ba7b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f30e31c4473b9ffa",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_JACOBI_TO_YM_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ea82f853756db6e7e7dccb39046079c7dc3b4464",
+      "bytes": 1261,
+      "sha256": "dca25057e3d782344ec5483ad828441c7afcc2be685f75803f1f2bf188b15400",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-022eeb89f40da34d",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_JACOBI_TO_YM_COORDINATE_AUDIT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "3000d56d832142296ed27717d157b3aa0b29163c",
+      "bytes": 6132,
+      "sha256": "da81c1fc0ae85859cedb6423d6369dfe17f56031c88c8e3d216709a57ead03cd",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0aba20ca77d8ca0d",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_LOW_MODE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d2b36cd0a632c6ecbfac01eb3db9e6e2833eda8b",
+      "bytes": 6715,
+      "sha256": "d4952f6dff75c15aed47a0a2dbfb3abec5b8838d0b62241edb5cabc2adb6c27e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-46c333d0978df87f",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_LOW_MODE_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "52572f61727c3b8d143b347c8a322bbc4d559196",
+      "bytes": 24311,
+      "sha256": "04a0415ffc6d5b9af0f2288e7ff6c13ae71863e63200d0ee133f38525c768c79",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8273acc624ea9490",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_PHYSICAL_STATE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "a366d9407a87ca0a50f11d7765c88ac58c46ecd8",
+      "bytes": 821,
+      "sha256": "855c105de2c8b0796495553c48a40d5c5bc0bcec1f62c53a542fd41ba514625a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-00926767ffc791e1",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_SCHUR_SCALING_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "cb032212b7a8315a6669db3647ca25941e373933",
+      "bytes": 820,
+      "sha256": "b27f3d24780b683f3937c1c8687296eccb943dcc5734b81e4f0b1834a7a0e4a5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-955d22e1952507ce",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_TENSOR_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "d7e9180c2f1ceb66e8b0c67edd27235e67f9aa84",
+      "bytes": 25473,
+      "sha256": "d801d12ac38255f7df8dd5929621472b18651993efa1679ebf19b614580ab28a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8e85e126ba7e32fb",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_TENSOR_TRANSFER_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "607f0d7efda939c9e7d2c2f274a720d215416c2d",
+      "bytes": 4364,
+      "sha256": "fbab60088dde3ebb8b77f5b7b78955649dd5ef42e0578a157a1b34af4a81b90b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b1857f17e3c88dc0",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FABEL_WILSON_SCHUR_MEMORY.md",
+      "git_mode": "100644",
+      "git_blob_oid": "caf2863be7260fbeb7b364fb5fecc044596f77e7",
+      "bytes": 7252,
+      "sha256": "67f9ed044b3be2dd58d1733332820df0a6c58171b691cd0820a600a6a7bbf709",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d64cd84837ae531b",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FULL_LOCAL_SPECTRUM.md",
+      "git_mode": "100644",
+      "git_blob_oid": "f1185207c1a0c8953f8636e0c8c3b0a9b7fca3f0",
+      "bytes": 27483,
+      "sha256": "1bd7bf430b282cf1d9c757e61f467995de13737fcecbaa2c2ed1a64bf738a0d9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1fbea60df4c524fd",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/FULL_LOCAL_SPECTRUM_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "025283934ee11aafa73f28c09ab80331667ba2c5",
+      "bytes": 5607,
+      "sha256": "5d4328b6d4106d63aa7ad27d8b14f10f2fa4e10019c9b5bb042efb7c49a7db3e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-63e50523cb07463d",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/INTERACTING_TENSOR_BAND.md",
+      "git_mode": "100644",
+      "git_blob_oid": "5bad5956294660fa099cb451d73f173bf2590e27",
+      "bytes": 29491,
+      "sha256": "999eb5760f5992189ccee7cfddf31e76ca0a929d4f6d9d33c10cad9386a73125",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b5f554f855f2d2d2",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/INTERACTING_TENSOR_BAND_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1ac30870dd7fffad398682bf48ce757e7b616e71",
+      "bytes": 5302,
+      "sha256": "6c81c4401896169a32bf3044b4f35f8b4af723f0e6b256d6ae806861d48c5d79",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-028e620c43b155cc",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/LOCAL_ENERGY_BAND_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5c9c655fa1b430eb87543c31d6b45ba20b23c3d0",
+      "bytes": 4995,
+      "sha256": "568c416e5d74a6997875a32722a07a748d9159c4cfb066b885521894c3b76c99",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4846f21279c16c9f",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/LOCAL_ENERGY_BAND_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7354df9ff2263eda0e03e71b215c1e63fc8a2aa0",
+      "bytes": 23507,
+      "sha256": "bb2a093c6d20d6a5a6c0649115a8d6e22c89c116e900e32c40c3580f65103e17",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-199d41b332a30d84",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/NONABELIAN_FLOW_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "555502212c8f722bb30044cd192a82cb00153d87",
+      "bytes": 2250,
+      "sha256": "d5ceeaa8da3598095c44e0af41e8023555947856d072be9827e46c5e86c738a0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ac5d6c3755c03abb",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/NONABELIAN_VERTEX.md",
+      "git_mode": "100644",
+      "git_blob_oid": "8443bc780bbd52fdc725e38942b8bb179f339aa0",
+      "bytes": 34487,
+      "sha256": "278f33fdac1efb35203c377129ae931f7d4a1bf378df658f0e4335bbccb5d883",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d680b48b42d48417",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/NONABELIAN_VERTEX_CERTIFICATE.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d17e299181d0f5f02857f9cf11e00761233bf401",
+      "bytes": 6273,
+      "sha256": "2ad6aa3a1210b176db8420a1b201c83630043b75f2554e311009435fff75ddcc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fd92a8bae87e117a",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/NONABELIAN_VERTEX_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "8189f509ac42a056fd138dadb1c24e605c3b98f1",
+      "bytes": 5222,
+      "sha256": "2464680b0a2316ad1ed6786622599bf4bac716c022972c1972684cc1be211bf1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-718cf10fb41f4fa8",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/PHYSICAL_COMPLEMENT_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "11ed7c4d7da69ae8d0b2ea91b56bbde4a4f7008f",
+      "bytes": 689,
+      "sha256": "3ab720977b3ce9fe1d50bea793899f93718a8010c5ea2ffb2c804ad3e8296665",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-cb783b5db7e9084b",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/RELEASED_PROFILE_MEASURES_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5988d88310bd7e9b7396738d71db453028219a7a",
+      "bytes": 456,
+      "sha256": "9f5fcaa9e7ec9ed6a25d7cffe99b0985d827aaa37cedf7fb56b699fca18172c3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4d4c685cbb846925",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/ZERO_SHIFT_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6969610adcea252813d6ae12677cb8b77d5a2a03",
+      "bytes": 767,
+      "sha256": "d0bac19dab0fcee9ce6ae0c4a5460dfdc17b7cacd0cf0c516a2418ca509bbbc0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-99625ba1f856bab2",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/certify_nonabelian_vertex.py",
+      "git_mode": "100644",
+      "git_blob_oid": "f88ec3c29728d9ffab73e2dc46441c1362eabb4c",
+      "bytes": 5912,
+      "sha256": "81c5912a6300db3b54f2b2eb891f7f88c737ed21ae8345efecf9d72e61f567cb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bcf9ec248b75ca2b",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_extensive_blocking.py",
+      "git_mode": "100644",
+      "git_blob_oid": "5e307daa770b243f593d1e48b8147834b09fb312",
+      "bytes": 9859,
+      "sha256": "7483c43420ca19d35e66230cabf3ab9919e114fb1dcced016ffcb3a538773c07",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-087aa5db569747a1",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_fabel_affine_spectral.py",
+      "git_mode": "100644",
+      "git_blob_oid": "fff31909b170b909fdb01d3cb06920517b4581c4",
+      "bytes": 215,
+      "sha256": "3b66ccbb1cf1690bd96a77ec50309e45a145aed98a2fa4ca83b87f09b3435b00",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fa20362ce5ca1f4f",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_fabel_current_lattice.py",
+      "git_mode": "100644",
+      "git_blob_oid": "9b72dd038189311109b5d179e18b9f5126154827",
+      "bytes": 2287,
+      "sha256": "11b1d57045bd77262df14392ae5ca3132be9f6e50d8280496449dbe515eaf4d0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b28f343f69feb1ae",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_fabel_low_mode.py",
+      "git_mode": "100644",
+      "git_blob_oid": "cdfb2c669eeb96418950885abe5699253eb58277",
+      "bytes": 7515,
+      "sha256": "c96f17daf6eb3e2740b5599dc24b08ba1d8f435e2ae55b5f83ef919745a9e628",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-decb32b04f4fb584",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_fabel_physical_state.py",
+      "git_mode": "100644",
+      "git_blob_oid": "488869c2e78eba8be31b238cf020ae17d9f923d4",
+      "bytes": 1563,
+      "sha256": "7fbce8ca6337f50891b91e90df421e7f6c116c041471eb8dc540e844561e16bf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b6ab1f531e1e61c5",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_fabel_schur_scaling.py",
+      "git_mode": "100644",
+      "git_blob_oid": "2e585f289c67f7a2ad3ee7cf493655d38d90a668",
+      "bytes": 1580,
+      "sha256": "269884a3d9693d3984131c026ed7688ebbb5db5a658dc44b121b7a3e261c61bc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bca44a363f4acb94",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_fabel_tensor_transfer.py",
+      "git_mode": "100644",
+      "git_blob_oid": "9854a419da7f30427d47b360b7dbc7ab054de748",
+      "bytes": 8644,
+      "sha256": "6fdd438d423776fd3e92ecc174d0dcbd50b0d8e6d2e3b948fa0a1b0671cb4ba8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ff58ddda999a4bb2",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_fabel_ym_bridge.py",
+      "git_mode": "100644",
+      "git_blob_oid": "3578d57cd619a6802d3ab580000eff893bf895ce",
+      "bytes": 2955,
+      "sha256": "85e4707491fe45aaeac089be5c2b27e190ff40acbf2b4b911886acac9519b579",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-637bae88bae171d0",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_full_local_spectrum.py",
+      "git_mode": "100644",
+      "git_blob_oid": "478e17e72c4f00c8e2b8b72bc1d0c0cdc9aeb428",
+      "bytes": 8911,
+      "sha256": "d846a4dd90429dc2f5d76023561d7c5d91645a0bfa1d186ec3a0612508195763",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-07e17fd756a488af",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_interacting_tensor_band.py",
+      "git_mode": "100644",
+      "git_blob_oid": "ec4766262521e4431797814d81e43e29532aaa00",
+      "bytes": 10132,
+      "sha256": "4ea7dae536e71bdc19e3d42c5452630cdd30c6d14dac7583793f9ab66968c0f3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-29b6ad04cb77b396",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_local_energy_band.py",
+      "git_mode": "100644",
+      "git_blob_oid": "758de5554d0c61968ba60e32e25bdd10f392f8f8",
+      "bytes": 7091,
+      "sha256": "9eb93d28a0d046ded5342f180cabfc870e2d23c8356a532f8282445106f8cfb3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-88ffe4cd7d979884",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_nonabelian_flow.py",
+      "git_mode": "100644",
+      "git_blob_oid": "263118182dcf2899cff87d60d4d84c6464fb28d1",
+      "bytes": 5444,
+      "sha256": "26629529ef8f3843ce13c1e1086c1f6779db32f886d2ac15305d6f067b61417b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0ef150e23c5dccaa",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_nonabelian_vertex.py",
+      "git_mode": "100644",
+      "git_blob_oid": "febb89fafe28ff7e2dadedf20cecc6cc2485bc4b",
+      "bytes": 10234,
+      "sha256": "39a214c5cf2d074b8fc025e0f81c42837431b11cb444170f466ceaf33e6bce3e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-45a0527da1fb99ba",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_physical_complement.py",
+      "git_mode": "100644",
+      "git_blob_oid": "503ab83bf9f8b6ca91b44153e6251394c62e285c",
+      "bytes": 6307,
+      "sha256": "794f3cb978ee5feea5f48aad5c3ffab4860df1e1b4dc0e1b293fcafa1bee3949",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fc49731f8e1bbef9",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_released_profile_measures.py",
+      "git_mode": "100644",
+      "git_blob_oid": "f5adb1489d995b8b75f23cd171e754db2140d0e5",
+      "bytes": 2104,
+      "sha256": "6a01628f483ca4c51a0aad1312dca201a702c847ef63547d31504b3f18db31f9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7cbf05da8f107fb6",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/check_zero_shift.py",
+      "git_mode": "100644",
+      "git_blob_oid": "024f4688b441cbcd9ac968fdff5c56282d6b2263",
+      "bytes": 6312,
+      "sha256": "5b21d76b41092da8f7e0874c3cc0b079368aa65aa85d527c7afd393240bb260d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d49ce34089bd5cf3",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/extensive_quantum_blocking.md",
+      "git_mode": "100644",
+      "git_blob_oid": "567225221d86e7b56d1b52582cff8216e927fa51",
+      "bytes": 268623,
+      "sha256": "2e3c2a8ed0c6429f935ef4f1b9a71f8c591aa17fc9a2a6a8915124d43622619a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4b739d51c0536375",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/extensive_quantum_blocking.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "e48b444d2a4b14c8ba97fe8df32af2e19552f48a",
+      "bytes": 85116,
+      "sha256": "7b40e7cfa7ed0a3fc777b9251302385d0872c1cfe091e75880c345de569ad404",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-adce53b6c20979de",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/fabel_low_mode_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "d93ef335c02c17bb6db1259a966fc1e54a24ef40",
+      "bytes": 25056,
+      "sha256": "682e426d80d92989efdb5a691c0eb44a3f9269ea4a6d0ed943de80e71d5c8b2a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ca57bd705bdd6e05",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/fabel_propagation_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "922b10b7272e12f9ae2233657c6fc136d1b6cb9a",
+      "bytes": 26127,
+      "sha256": "da83a74a5c0fd9fb24a2475b69bff2b4208b45057c313c6686dab6f5a1e6aec8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fe9bcbdfeea4fd2f",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/full_local_spectrum_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "488741adece7dd41749a6fd0c22e97514f251538",
+      "bytes": 28541,
+      "sha256": "591789624212c329ae28522a94dfa195c3414715e96e2e94d2de0f0f137a8f84",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-df10524c18ce3f13",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/FABEL_CORRECTIONS_20260908.md",
+      "git_mode": "100644",
+      "git_blob_oid": "9b43e222cd47d01d3e2e713672b6c37c9d7f7f3c",
+      "bytes": 5116,
+      "sha256": "3f83e7fd23323665cc3dc5945154fbb70d0b997f025885e4a47cdc2a8119e8ba",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-01f041ef97709cc2",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/FABEL_LOW_MODE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d2b36cd0a632c6ecbfac01eb3db9e6e2833eda8b",
+      "bytes": 6715,
+      "sha256": "d4952f6dff75c15aed47a0a2dbfb3abec5b8838d0b62241edb5cabc2adb6c27e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e1b3d0ab9c5d1833",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/FABEL_LOW_MODE_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "52572f61727c3b8d143b347c8a322bbc4d559196",
+      "bytes": 24311,
+      "sha256": "04a0415ffc6d5b9af0f2288e7ff6c13ae71863e63200d0ee133f38525c768c79",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6d611ae69c6554ce",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/FABEL_TENSOR_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "d7e9180c2f1ceb66e8b0c67edd27235e67f9aa84",
+      "bytes": 25473,
+      "sha256": "d801d12ac38255f7df8dd5929621472b18651993efa1679ebf19b614580ab28a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4a8269693130c6b6",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/FABEL_TENSOR_TRANSFER_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "607f0d7efda939c9e7d2c2f274a720d215416c2d",
+      "bytes": 4364,
+      "sha256": "fbab60088dde3ebb8b77f5b7b78955649dd5ef42e0578a157a1b34af4a81b90b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4bac4c3ecfb05a02",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/FULL_LOCAL_SPECTRUM.md",
+      "git_mode": "100644",
+      "git_blob_oid": "f1185207c1a0c8953f8636e0c8c3b0a9b7fca3f0",
+      "bytes": 27483,
+      "sha256": "1bd7bf430b282cf1d9c757e61f467995de13737fcecbaa2c2ed1a64bf738a0d9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d4b1d92fbc79a385",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/FULL_LOCAL_SPECTRUM_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "025283934ee11aafa73f28c09ab80331667ba2c5",
+      "bytes": 5607,
+      "sha256": "5d4328b6d4106d63aa7ad27d8b14f10f2fa4e10019c9b5bb042efb7c49a7db3e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4b31b38bbcf51f38",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/INTERACTING_TENSOR_BAND.md",
+      "git_mode": "100644",
+      "git_blob_oid": "5bad5956294660fa099cb451d73f173bf2590e27",
+      "bytes": 29491,
+      "sha256": "999eb5760f5992189ccee7cfddf31e76ca0a929d4f6d9d33c10cad9386a73125",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a58a1ab8851304d6",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/INTERACTING_TENSOR_BAND_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1ac30870dd7fffad398682bf48ce757e7b616e71",
+      "bytes": 5302,
+      "sha256": "6c81c4401896169a32bf3044b4f35f8b4af723f0e6b256d6ae806861d48c5d79",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-36433afaadce9972",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/LOCAL_ENERGY_BAND_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5c9c655fa1b430eb87543c31d6b45ba20b23c3d0",
+      "bytes": 4995,
+      "sha256": "568c416e5d74a6997875a32722a07a748d9159c4cfb066b885521894c3b76c99",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b1a951678869b30f",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/LOCAL_ENERGY_BAND_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7354df9ff2263eda0e03e71b215c1e63fc8a2aa0",
+      "bytes": 23507,
+      "sha256": "bb2a093c6d20d6a5a6c0649115a8d6e22c89c116e900e32c40c3580f65103e17",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-90791b7b86d48ef5",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/NONABELIAN_VERTEX.md",
+      "git_mode": "100644",
+      "git_blob_oid": "8443bc780bbd52fdc725e38942b8bb179f339aa0",
+      "bytes": 34487,
+      "sha256": "278f33fdac1efb35203c377129ae931f7d4a1bf378df658f0e4335bbccb5d883",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e22752cd99e310fd",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/NONABELIAN_VERTEX_CERTIFICATE.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d17e299181d0f5f02857f9cf11e00761233bf401",
+      "bytes": 6273,
+      "sha256": "2ad6aa3a1210b176db8420a1b201c83630043b75f2554e311009435fff75ddcc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-cf82291d46fb354b",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/NONABELIAN_VERTEX_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "8189f509ac42a056fd138dadb1c24e605c3b98f1",
+      "bytes": 5222,
+      "sha256": "2464680b0a2316ad1ed6786622599bf4bac716c022972c1972684cc1be211bf1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fe62fb828dc28dc0",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/certify_nonabelian_vertex.py",
+      "git_mode": "100644",
+      "git_blob_oid": "f88ec3c29728d9ffab73e2dc46441c1362eabb4c",
+      "bytes": 5912,
+      "sha256": "81c5912a6300db3b54f2b2eb891f7f88c737ed21ae8345efecf9d72e61f567cb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-34991fb6ec5e02cc",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/check_fabel_low_mode.py",
+      "git_mode": "100644",
+      "git_blob_oid": "cdfb2c669eeb96418950885abe5699253eb58277",
+      "bytes": 7515,
+      "sha256": "c96f17daf6eb3e2740b5599dc24b08ba1d8f435e2ae55b5f83ef919745a9e628",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0ef693702ce0fff6",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/check_fabel_tensor_transfer.py",
+      "git_mode": "100644",
+      "git_blob_oid": "9854a419da7f30427d47b360b7dbc7ab054de748",
+      "bytes": 8644,
+      "sha256": "6fdd438d423776fd3e92ecc174d0dcbd50b0d8e6d2e3b948fa0a1b0671cb4ba8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0a038f1a457f38e4",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/check_full_local_spectrum.py",
+      "git_mode": "100644",
+      "git_blob_oid": "478e17e72c4f00c8e2b8b72bc1d0c0cdc9aeb428",
+      "bytes": 8911,
+      "sha256": "d846a4dd90429dc2f5d76023561d7c5d91645a0bfa1d186ec3a0612508195763",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e2a0701e191d0abf",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/check_interacting_tensor_band.py",
+      "git_mode": "100644",
+      "git_blob_oid": "ec4766262521e4431797814d81e43e29532aaa00",
+      "bytes": 10132,
+      "sha256": "4ea7dae536e71bdc19e3d42c5452630cdd30c6d14dac7583793f9ab66968c0f3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fff53bcc4239c772",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/check_local_energy_band.py",
+      "git_mode": "100644",
+      "git_blob_oid": "758de5554d0c61968ba60e32e25bdd10f392f8f8",
+      "bytes": 7091,
+      "sha256": "9eb93d28a0d046ded5342f180cabfc870e2d23c8356a532f8282445106f8cfb3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6c83763b620efb9a",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/check_nonabelian_vertex.py",
+      "git_mode": "100644",
+      "git_blob_oid": "febb89fafe28ff7e2dadedf20cecc6cc2485bc4b",
+      "bytes": 10234,
+      "sha256": "39a214c5cf2d074b8fc025e0f81c42837431b11cb444170f466ceaf33e6bce3e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2ef9050a9ffa1fbb",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/extensive_quantum_blocking.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2028fbee5374f2b6db4806daecc32a2c470efa43",
+      "bytes": 245511,
+      "sha256": "467d7c97a67815fafb8b4ab5ea2ee9426904a423389f6204b1b2b9b293b71034",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-04ace45177e51ea1",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/extensive_quantum_blocking.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "ed3a4be9e83d557707af7a6e8f935cda5241b4fc",
+      "bytes": 85021,
+      "sha256": "44e6d8892f3e98287af177ac58326b84da097887d6450410726c345cdc329bef",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-819ac06ac116a2b6",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/fabel_low_mode_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "d93ef335c02c17bb6db1259a966fc1e54a24ef40",
+      "bytes": 25056,
+      "sha256": "682e426d80d92989efdb5a691c0eb44a3f9269ea4a6d0ed943de80e71d5c8b2a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bff5b3c970b24146",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/fabel_propagation_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "922b10b7272e12f9ae2233657c6fc136d1b6cb9a",
+      "bytes": 26127,
+      "sha256": "da83a74a5c0fd9fb24a2475b69bff2b4208b45057c313c6686dab6f5a1e6aec8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-509c7e90d17022ba",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/full_local_spectrum_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "488741adece7dd41749a6fd0c22e97514f251538",
+      "bytes": 28541,
+      "sha256": "591789624212c329ae28522a94dfa195c3414715e96e2e94d2de0f0f137a8f84",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8ebab52cd2d76726",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/interacting_tensor_band_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "83c97db36b418c62f075bf396729c0bfca60a0d1",
+      "bytes": 30878,
+      "sha256": "ee4f2736fdfe1bf5f75f773cf8f804734ad9055be3968fac6759850cfed87e22",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b1cde3f9efeeab7a",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/local_energy_band_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "90497b2ed90e304ca95c4a8c3d860ac78ff71808",
+      "bytes": 24198,
+      "sha256": "b1c4c612e6f00bea45c1043219897fdbc52ce5f39aad816f54e8a322ee43257e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8fe46e3fc0ede709",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_band_publication_20260909/nonabelian_vertex_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "ac6999f8bd21b90dd688e06ef2d78f814edca7fd",
+      "bytes": 36073,
+      "sha256": "aa995661c142e7acb52f61496824d9cc1ad32f668f5e6c3783774dc8d78ef678",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-99489cb4eb74ea9e",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/interacting_tensor_band_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "83c97db36b418c62f075bf396729c0bfca60a0d1",
+      "bytes": 30878,
+      "sha256": "ee4f2736fdfe1bf5f75f773cf8f804734ad9055be3968fac6759850cfed87e22",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b5193434d30c35e0",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/local_energy_band_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "90497b2ed90e304ca95c4a8c3d860ac78ff71808",
+      "bytes": 24198,
+      "sha256": "b1c4c612e6f00bea45c1043219897fdbc52ce5f39aad816f54e8a322ee43257e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1f3381203ff6da6a",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/markdown_source.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "66a9ba1e043eb8636b536df5e458c54ddef5011a",
+      "bytes": 273231,
+      "sha256": "4c1a29fdf816e1ccfb35b11b5b788b8ab209cfdf8d4b7286d4c55d319d35e7ff",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bb70778918fa2544",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_fluid_profile_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "438f20334d568915bf00e24adcc7311d8cd1051d",
+      "bytes": 9490,
+      "sha256": "d6e11ced109dd91188cd655697810f73318ad9cfd6d821ee49693025dc7d7c64",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bef16e6014368778",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "ac6999f8bd21b90dd688e06ef2d78f814edca7fd",
+      "bytes": 36073,
+      "sha256": "aa995661c142e7acb52f61496824d9cc1ad32f668f5e6c3783774dc8d78ef678",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bda52fd7c5a0a732",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_coordinates.py",
+      "git_mode": "100644",
+      "git_blob_oid": "23e60ec8562c7603d65379b6a1b56e2990068706",
+      "bytes": 3835,
+      "sha256": "c41abed1d7048be9532b8a79ea7b269fb77353e88fe04d66e700a368ac8f3932",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-03a1b79397894ebe",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/FABEL_CORRECTIONS_20260908.md",
+      "git_mode": "100644",
+      "git_blob_oid": "9b43e222cd47d01d3e2e713672b6c37c9d7f7f3c",
+      "bytes": 5116,
+      "sha256": "3f83e7fd23323665cc3dc5945154fbb70d0b997f025885e4a47cdc2a8119e8ba",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-70cf9a9cbdc78692",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/FABEL_LOW_MODE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d2b36cd0a632c6ecbfac01eb3db9e6e2833eda8b",
+      "bytes": 6715,
+      "sha256": "d4952f6dff75c15aed47a0a2dbfb3abec5b8838d0b62241edb5cabc2adb6c27e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7f20e68dd8532bc9",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/FABEL_LOW_MODE_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "9501bdf68a2949e7371a5f747f2817b465b147fc",
+      "bytes": 24322,
+      "sha256": "75a92ca031f33f40ebbb61615c6e316364d3f4bd91899c2f9dc25f779bb60c5d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-309f444269a3a42c",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/FABEL_TENSOR_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "274ec14bd4828ab26d6c23b5ba31f995fad9117c",
+      "bytes": 25484,
+      "sha256": "ced198942c8c863ad3138c3714e371eebb7a0b518394dcb17ce313e4fb91751f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ca422491e7f26ac4",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/FABEL_TENSOR_TRANSFER_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "607f0d7efda939c9e7d2c2f274a720d215416c2d",
+      "bytes": 4364,
+      "sha256": "fbab60088dde3ebb8b77f5b7b78955649dd5ef42e0578a157a1b34af4a81b90b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-edbed160b87e7242",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/FULL_LOCAL_SPECTRUM.md",
+      "git_mode": "100644",
+      "git_blob_oid": "1657150a1d8c86b987ade8bc5c36bf3153bcca0c",
+      "bytes": 27494,
+      "sha256": "b4ea6019029b1cf761e302b1a7c9b95d679632a015afe150842846204bd37d46",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-83a35f3ea13054b2",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/FULL_LOCAL_SPECTRUM_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "025283934ee11aafa73f28c09ab80331667ba2c5",
+      "bytes": 5607,
+      "sha256": "5d4328b6d4106d63aa7ad27d8b14f10f2fa4e10019c9b5bb042efb7c49a7db3e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b8bcabdd98787e46",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/LOCAL_ENERGY_BAND_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5c9c655fa1b430eb87543c31d6b45ba20b23c3d0",
+      "bytes": 4995,
+      "sha256": "568c416e5d74a6997875a32722a07a748d9159c4cfb066b885521894c3b76c99",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f80810ab3abc5322",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/LOCAL_ENERGY_BAND_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c0a3750acfe1d170aefceeb425ecf72e41dfddd0",
+      "bytes": 23518,
+      "sha256": "605ab6a439d0e61f451ea07d91c9af72703cacb1eff4a26a6d1693167c7e51bb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0b4474d6fe1ed164",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX.md",
+      "git_mode": "100644",
+      "git_blob_oid": "0c0ce0cbc52b51565cd345c20b057ff1e2e1fc4b",
+      "bytes": 34498,
+      "sha256": "a5898a3e1db32382d6af3f213df23d6137754644e40e3a27f063e86ea0dd94b6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f040fb5fb90e3926",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX_CERTIFICATE.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d17e299181d0f5f02857f9cf11e00761233bf401",
+      "bytes": 6273,
+      "sha256": "2ad6aa3a1210b176db8420a1b201c83630043b75f2554e311009435fff75ddcc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fc097c2207dfa02e",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/NONABELIAN_VERTEX_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "8189f509ac42a056fd138dadb1c24e605c3b98f1",
+      "bytes": 5222,
+      "sha256": "2464680b0a2316ad1ed6786622599bf4bac716c022972c1972684cc1be211bf1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-20062535066f4cc2",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/certify_nonabelian_vertex.py",
+      "git_mode": "100644",
+      "git_blob_oid": "f88ec3c29728d9ffab73e2dc46441c1362eabb4c",
+      "bytes": 5912,
+      "sha256": "81c5912a6300db3b54f2b2eb891f7f88c737ed21ae8345efecf9d72e61f567cb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4433272cd9a6b45a",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/check_fabel_low_mode.py",
+      "git_mode": "100644",
+      "git_blob_oid": "cdfb2c669eeb96418950885abe5699253eb58277",
+      "bytes": 7515,
+      "sha256": "c96f17daf6eb3e2740b5599dc24b08ba1d8f435e2ae55b5f83ef919745a9e628",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e563d40df8cbfc1d",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/check_fabel_tensor_transfer.py",
+      "git_mode": "100644",
+      "git_blob_oid": "9854a419da7f30427d47b360b7dbc7ab054de748",
+      "bytes": 8644,
+      "sha256": "6fdd438d423776fd3e92ecc174d0dcbd50b0d8e6d2e3b948fa0a1b0671cb4ba8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e56920f204d52d86",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/check_full_local_spectrum.py",
+      "git_mode": "100644",
+      "git_blob_oid": "478e17e72c4f00c8e2b8b72bc1d0c0cdc9aeb428",
+      "bytes": 8911,
+      "sha256": "d846a4dd90429dc2f5d76023561d7c5d91645a0bfa1d186ec3a0612508195763",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4704a5c20ad81fe3",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/check_local_energy_band.py",
+      "git_mode": "100644",
+      "git_blob_oid": "758de5554d0c61968ba60e32e25bdd10f392f8f8",
+      "bytes": 7091,
+      "sha256": "9eb93d28a0d046ded5342f180cabfc870e2d23c8356a532f8282445106f8cfb3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2e6559aaf565c01a",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/check_nonabelian_vertex.py",
+      "git_mode": "100644",
+      "git_blob_oid": "febb89fafe28ff7e2dadedf20cecc6cc2485bc4b",
+      "bytes": 10234,
+      "sha256": "39a214c5cf2d074b8fc025e0f81c42837431b11cb444170f466ceaf33e6bce3e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7f64edc17a3499de",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/extensive_quantum_blocking.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c85bc016a3af035db01bced893839ea22d98d48b",
+      "bytes": 216087,
+      "sha256": "669b24be8561b918f7078b108b395da2b70a8f6428fc563d61065c550eca9b0d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9d8968dfce4868db",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/extensive_quantum_blocking.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "78d4ccaec3a44c915da9690365fcaac09fd77c69",
+      "bytes": 84976,
+      "sha256": "c7a9277f499561f0fddaa93ae7a51aee07b85d4fecf243aab1a4036176f5f611",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-443b9ff073cde2ee",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/fabel_low_mode_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "d93ef335c02c17bb6db1259a966fc1e54a24ef40",
+      "bytes": 25056,
+      "sha256": "682e426d80d92989efdb5a691c0eb44a3f9269ea4a6d0ed943de80e71d5c8b2a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8cd6147f40a57f1b",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/fabel_propagation_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "922b10b7272e12f9ae2233657c6fc136d1b6cb9a",
+      "bytes": 26127,
+      "sha256": "da83a74a5c0fd9fb24a2475b69bff2b4208b45057c313c6686dab6f5a1e6aec8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8132550d0518e87f",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/full_local_spectrum_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "488741adece7dd41749a6fd0c22e97514f251538",
+      "bytes": 28541,
+      "sha256": "591789624212c329ae28522a94dfa195c3414715e96e2e94d2de0f0f137a8f84",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f4a6ef050083c33c",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/local_energy_band_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "90497b2ed90e304ca95c4a8c3d860ac78ff71808",
+      "bytes": 24198,
+      "sha256": "b1c4c612e6f00bea45c1043219897fdbc52ce5f39aad816f54e8a322ee43257e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ae5c6b885a5b6c0c",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/nonabelian_vertex_publication_20260909/nonabelian_vertex_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "ac6999f8bd21b90dd688e06ef2d78f814edca7fd",
+      "bytes": 36073,
+      "sha256": "aa995661c142e7acb52f61496824d9cc1ad32f668f5e6c3783774dc8d78ef678",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8c3710ba7735638c",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/physical_complement_bridge.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "c3f3f006fdb47ce811584af11707ebd8e10921a3",
+      "bytes": 14642,
+      "sha256": "c3d81de2c2878af554e3bd5aa53d2f1ce3da59b8f8a78954b3895a91ecadcdd3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bd1fed68197db8d1",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/COUPLING_RESPONSE_INPUT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c57f89bec3e113247dbc3060aae306cb0e700e41",
+      "bytes": 18788,
+      "sha256": "2da24d9b33b819ee8a5764bab8779367e3565367218823239eba65130419c3c4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9e27e0dfc61b6644",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/CUBIC_BOX_SYMMETRY_INPUT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "a1c3006d445dcd49d6fa90decd27f35547acd0ee",
+      "bytes": 12677,
+      "sha256": "b05523279afbbc8ce916073ce06ec79da95d9c1c4d3f45e09ee79c7e6a5eee68",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7707c78e3a3596b4",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/CUBIC_SINGLET_INPUT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "f4b1627d9dd8e36359f8a2d6458bbef641adadb1",
+      "bytes": 35164,
+      "sha256": "aefec75ca82566d656b2d5f1f8388fda7b52b6dc6b2c59c3b0014a40ff27f06d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c92ac5bcaed3abe9",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/LANE_A_ELIMINATION_INPUTS.md",
+      "git_mode": "100644",
+      "git_blob_oid": "9450704650c707723593bd5617de733d1e1b1027",
+      "bytes": 57152,
+      "sha256": "e5edf454051b50979505e59b6dc5711a9e7a18f1a844ce8bd5481788d1d58ddf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-119fca0e5ee7ac6a",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/LOCAL_ENERGY_CURRENT_INPUT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "284596480e24c6e200be2d0779ad64df9c4236c7",
+      "bytes": 22114,
+      "sha256": "3259ef519975357df2aff31f22320195b07511286247619b1da5710923c16039",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-621ea2f14ff57533",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/WEAK_COUPLING_ELECTRIC_GRAPH_INPUT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "160dd2762afad7b404c3f3276b3d24a48f81925c",
+      "bytes": 23290,
+      "sha256": "711b4762bdc29ce85f3f6dde6099248721bc332149c5f8530de1787925ce14f9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1fe0be17a8ecbc4e",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/WEAK_COUPLING_FINITE_BOX_INPUT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "dfee77c0ca0d6ed897c4172fcbfe23cd9d10d313",
+      "bytes": 25531,
+      "sha256": "f5668637f2a7438f06b60be8f3048dc75f0276e21da5c29b490af1838739f5d4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5ff98a0b1b62fbd7",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/references/WEAK_COUPLING_STATE_INPUT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7f9a8401b27d5ac2745daac83d3ac51216e97f07",
+      "bytes": 22245,
+      "sha256": "01e2fc70769cc67ea25960c4557f485e524cbe694b1f2efd69e0af11d08c16fc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-dfecbabe543be9ea",
+      "path": "yang-mills/sources/ym_quantum_coarse_graining_astra_20260908/released_profile_measures_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "7caaeccb96fa70b7c7a5e95b6adc6adc41668816",
+      "bytes": 13965,
+      "sha256": "4cb39402a7db7ee9357e01e6b8c17777e4a54462401d4bd679c197ec65e03a5f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8ac15a2e32f7f315",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/BAND_RADIAL_OVERLAP_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c062c586bb156394dd8f590fb60d56592569990b",
+      "bytes": 7528,
+      "sha256": "af9cefd09b4ecefe40f2c35891bc806e0b058301ccc4d7eb091d48760fb0aebd",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5bacec58b9ccfc84",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/CHECK_RESULTS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6d55e1a284dddf4d915e242d2110eadbf8d86df7",
+      "bytes": 175,
+      "sha256": "badc69c07aa9482376af21fdaed65929d14e88bc6881d43aa9d928ae2be24bd9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ed8da6b6393fd76e",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/DIRECTIONAL_ELECTRIC_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "982f767df0934309aa3f0a675a48c926aa94cb76",
+      "bytes": 2624,
+      "sha256": "1fbd3d7a7ff08ff089fa1e8a16ed41033291612ca631e4001adb6cbaeeac0c44",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0ffbf5a39af82e8e",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/GAMMA_CONTINUATION_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d4b35c479b08533a07690ec16da0261bb1cf14b2",
+      "bytes": 8017,
+      "sha256": "373b18123b941a6472a9ec42c46739768e2ad4c7813916504991257caa9bbec8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2396151cbea66f6b",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/NATIVE_LOCALIZATION_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "32ba9f4dccc9212943d0928f76cce4671747cac6",
+      "bytes": 9735,
+      "sha256": "2d521c42dc2735300a59cc32bd7ddf869f81e1094585097ac159bcbf33be6bfa",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f6dcbb4483032ef4",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/ORIGINAL_WEIGHTED_TRACE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d51bcf141112dbfd764e0ae06cefa31f163fad6f",
+      "bytes": 4413,
+      "sha256": "e7e2c97b70718b2ac2524cba1d7fcdb7c966e46d27f41baae8b014cc7669c158",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6b256d144a5d02c7",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/PHASE_SQUARE_CONTINUATION_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "2420e9812ecb9fcd00d0229b7797afdf85746f0a",
+      "bytes": 4436,
+      "sha256": "6f44caff5aae692eca604118ea6d56747940bc5634d45be6a69927b5c1f8b966",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9943365a68cdb087",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/RELATIVE_CONTINUATION_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ebcce802eab5a26f09b1851d1b391296e1f9ce06",
+      "bytes": 17965,
+      "sha256": "3c6d02ecce40dd77e8a800a086aa47ce76e3da0db3bc91ea58c1a1fb28778b3a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-743af760ec166c38",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/SCALED_ANGLE_NATIVE_LIMIT_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "0de7200bb500fbd69c9cc279f0c3ecbe39510a49",
+      "bytes": 190,
+      "sha256": "64d15413b83c938d79aa044d3c8ded945de980604e4a88a8ef10173f43cfeb53",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e918a7f04962c249",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/WEAK_CONTINUATION_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f6b2d747dba4102e0fc5bb535e5bf1a2a4c4ebdd",
+      "bytes": 194,
+      "sha256": "c536224bb47a668144b824bfc1cb503f8911df6cb565538f89bff217d3ada782",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8c9abf0b0b3b8392",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_band_radial_overlap.py",
+      "git_mode": "100644",
+      "git_blob_oid": "067c4db458e4ea185e3de09af77c61608208607d",
+      "bytes": 11973,
+      "sha256": "067e3879b0b785168cec96d0639bae46abfb3ac347271689413157b6f1933ba3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-90ee89d12293e6f8",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_directional_electric_spectrum.py",
+      "git_mode": "100644",
+      "git_blob_oid": "c0f1a358cf4f674666719157a1e76fb293f37ed2",
+      "bytes": 3964,
+      "sha256": "be41b0d68dac59bc24efec0edc03feaf1a4a03f7bdecb59920e7b499709d1f6e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d0c375b39a4c32f9",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_fixed_coupling_analytic_disk_obstruction.py",
+      "git_mode": "100644",
+      "git_blob_oid": "62e416e75ce58e25b130551f437d3f0d9cbcd009",
+      "bytes": 1012,
+      "sha256": "864c382c2dfb84b89a178307e978eefe764028238b52ea7546a18a8b7ddffce3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a4fd534d7bb0ad4b",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_gamma_continuation.py",
+      "git_mode": "100644",
+      "git_blob_oid": "00588c1f1480555ee681dbceaafaf4e1393988c5",
+      "bytes": 6177,
+      "sha256": "6a70fd23ed5d74fd4e1361e358ea2cc83f44a29a882953091c48883dfee361d4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3eca5105e0596560",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_native_localization.py",
+      "git_mode": "100644",
+      "git_blob_oid": "48c3ab08f7ee04cb681a0454e661a24e1221cb4c",
+      "bytes": 13368,
+      "sha256": "39c059df0be1b23049dd90490a8e9b9b34b9ffb2752729258651baf1b428008e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ed7090365b869232",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_original_weighted_trace.py",
+      "git_mode": "100644",
+      "git_blob_oid": "406ea08ff2bf67615b1317a6583e007d952a5d26",
+      "bytes": 4776,
+      "sha256": "8431af0e6e8c1a57d31b95951c29f7ce48a9b474ccf19398905955343970b617",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-92153a5571465304",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_phase_square_continuation.py",
+      "git_mode": "100644",
+      "git_blob_oid": "e6c4d229c9f4da44944ef119138933894db58b44",
+      "bytes": 12606,
+      "sha256": "037b7b738e28ac6690a76bc13c6e95bb64e30cd7d6c34f97dc5996a62ef827bf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ba2e558854e4942b",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_relative_continuation.py",
+      "git_mode": "100644",
+      "git_blob_oid": "5e70632725160c139c58798ae8778431370782bc",
+      "bytes": 15806,
+      "sha256": "034aff9e13e8def474ffbc25d3bcd2722470cdcafba80dc04278d1179a350b47",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bd8acbfb91e52bc0",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_scaled_angle_native_limit.py",
+      "git_mode": "100644",
+      "git_blob_oid": "169a96901c61fb603c54de369f446f820648ab20",
+      "bytes": 763,
+      "sha256": "46bba190381468702355783582a7a5325e0cb741ea99cc58f9ca84390b23d2ac",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2a054a1c7c1259f9",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_spatial_continuum.py",
+      "git_mode": "100644",
+      "git_blob_oid": "9a67e9fc3487477f4b906de58e1d8788e5f3ce90",
+      "bytes": 5662,
+      "sha256": "b77143d0b6e36fde75f503621ca3f8aa2b7955267bc2d93f64ea2acff811ba58",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e6b3bde0f72fcf7e",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/check_weak_continuation.py",
+      "git_mode": "100644",
+      "git_blob_oid": "fa4b6ef88565c0c0d035c1403cc5421567d4cc11",
+      "bytes": 3732,
+      "sha256": "3529fa79edc93121f7ded5532be4c98bba673cc7b85cbf0831dc27b763b7e4b8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8b187e9cfa933c5e",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/requirements.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "31a0ac42e99273d7b6fd4c9b8cfb4cd46c4f17bf",
+      "bytes": 12,
+      "sha256": "a9029fbebed80d5530d9a770340843cfd032aac6af297d237cc24b758537ea81",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-80f1ac479a81e181",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/FABEL_CURRENT_TO_LATTICE_AUDIT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "34f473edee51156fbfaa7e21b549f2299741a495",
+      "bytes": 5031,
+      "sha256": "7a9497d652c247e004906ad9a2c1540d4e632697791f3a6483044124584d0d06",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2eb316a98129daaf",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/FABEL_TENSOR_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "b34ef46436cd3a641ab1af60680494714f2781e6",
+      "bytes": 25197,
+      "sha256": "4972607a4e9e0d730aa83a2989917deb10e5fec5da27f8cd97ec57a2e058dc30",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fc73c6604909c154",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/FABEL_TENSOR_TRANSFER_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "607f0d7efda939c9e7d2c2f274a720d215416c2d",
+      "bytes": 4364,
+      "sha256": "fbab60088dde3ebb8b77f5b7b78955649dd5ef42e0578a157a1b34af4a81b90b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5b56faf8b383d166",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/check_fabel_tensor_transfer.py",
+      "git_mode": "100644",
+      "git_blob_oid": "9854a419da7f30427d47b360b7dbc7ab054de748",
+      "bytes": 8644,
+      "sha256": "6fdd438d423776fd3e92ecc174d0dcbd50b0d8e6d2e3b948fa0a1b0671cb4ba8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2202b99a1f42584a",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/directional_electric_spectrum.md",
+      "git_mode": "100644",
+      "git_blob_oid": "47da78288a72f342ea7455a3ef466b042e9f78b8",
+      "bytes": 35179,
+      "sha256": "a23fee02f6e7628f6ae8b26fbed9c5f560ae0bf32a9b38418a53c97c04aa58bc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7da67b8939a78444",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/discrete_cosine_weight.md",
+      "git_mode": "100644",
+      "git_blob_oid": "bebfbd1d80c0708ad5768aac277ad09d75950c82",
+      "bytes": 9687,
+      "sha256": "0602acadca9061bbb93f03312d49bb283bf084fcaebcdb2891ad5a6b959f3de0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7fb3c980f65ac31c",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/full_local_spectrum_inputs/FULL_LOCAL_SPECTRUM.md",
+      "git_mode": "100644",
+      "git_blob_oid": "56563a8be56f74db4720029f789985763ddc5ce6",
+      "bytes": 27424,
+      "sha256": "b453de29909061ac02d3b670fbb1c7e49924769a10980842b6c082bae01bb404",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-505722bba468c3ea",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/full_local_spectrum_inputs/FULL_LOCAL_SPECTRUM_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "025283934ee11aafa73f28c09ab80331667ba2c5",
+      "bytes": 5607,
+      "sha256": "5d4328b6d4106d63aa7ad27d8b14f10f2fa4e10019c9b5bb042efb7c49a7db3e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2f9e92483abd5eaa",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/full_local_spectrum_inputs/check_full_local_spectrum.py",
+      "git_mode": "100644",
+      "git_blob_oid": "478e17e72c4f00c8e2b8b72bc1d0c0cdc9aeb428",
+      "bytes": 8911,
+      "sha256": "d846a4dd90429dc2f5d76023561d7c5d91645a0bfa1d186ec3a0612508195763",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-aa9f2c17f6057bc8",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/full_local_spectrum_inputs/full_local_spectrum_addendum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "9acb138300c42c5f46587231fe343c02270fc624",
+      "bytes": 28474,
+      "sha256": "19d5a6e3331bb34fcf7be52dc2d904c4760ab610b467ec3d762829a68d4f83ef",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c6476d931a339483",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/local_band_inputs/LOCAL_ENERGY_BAND_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5c9c655fa1b430eb87543c31d6b45ba20b23c3d0",
+      "bytes": 4995,
+      "sha256": "568c416e5d74a6997875a32722a07a748d9159c4cfb066b885521894c3b76c99",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3d1ead72f1767b67",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/local_band_inputs/LOCAL_ENERGY_BAND_TRANSFER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "ca3764399c624b2969efa28474a8cce129d56337",
+      "bytes": 23470,
+      "sha256": "6f4ccdba892a794871f2f5240c361bb700559591804ca4bbd73c79b09dbfabba",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1ac36ba7147e938d",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/local_band_inputs/check_local_energy_band.py",
+      "git_mode": "100644",
+      "git_blob_oid": "758de5554d0c61968ba60e32e25bdd10f392f8f8",
+      "bytes": 7091,
+      "sha256": "9eb93d28a0d046ded5342f180cabfc870e2d23c8356a532f8282445106f8cfb3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e9a2b15342b72491",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/local_band_inputs/extensive_quantum_blocking.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c5b6340563a46b512d7061f6852e629cc79c6de2",
+      "bytes": 154206,
+      "sha256": "81a13e6c175f993ef8b88050355ecbb11abc703aec3a0cf2f718677fa62225b0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-013bf2ed8f75006a",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/local_band_radial_correspondence.md",
+      "git_mode": "100644",
+      "git_blob_oid": "5e285fac235594daf6b0d6eb2ce18760f2e98a3d",
+      "bytes": 30789,
+      "sha256": "163f6f2c7312853dffad5d5b6d59d54341f029e7e6ee2f40de4342a157b1b21e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2d6178cdfe507bdd",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/magnetic_translation_true_vacuum.md",
+      "git_mode": "100644",
+      "git_blob_oid": "22bf5ab3c24cb1a1213769c4b08e683a02bc1236",
+      "bytes": 26403,
+      "sha256": "a1d7e0817f153ce966b4cc4fcf149dba52521e21a587c390b88d5b322cbce198",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e1ed622c28cb3151",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/native_original_angle_weak_localization.md",
+      "git_mode": "100644",
+      "git_blob_oid": "5d0f4cd6e74fd48c4e32b6edeebd749f15f3ad18",
+      "bytes": 22572,
+      "sha256": "53dbaad3d621841794b39914ad92656facef3ccc5cc8204c98e51f7caabe77b9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5792126d4b3b5408",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/original_weighted_heat_trace.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7fcac39c2c90ee40df87e490049a3715fbf48c59",
+      "bytes": 22341,
+      "sha256": "4772e0269ed322efc5424c143879d0f55c8682447b02440152efcfaed6d8b66b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-04a69842bd313ce7",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/polynomial_covariance_lower_bound.md",
+      "git_mode": "100644",
+      "git_blob_oid": "80df4988c043e05468edb0eac092c0c19fe1c234",
+      "bytes": 4461,
+      "sha256": "517362b2fb08ebeacab027a4929387074adc24eca237a1689becbf443e71aaa8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e92db8080a6a3a6b",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/prescribed_path_centered_remainder_obstruction.md",
+      "git_mode": "100644",
+      "git_blob_oid": "4759567485c7ac21b053a04591916321ee05267b",
+      "bytes": 4066,
+      "sha256": "7120549d74b98a101bc91ee10e84172596c4ae71593ff60bc4996b32f939f4b5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9150feaf1a04ba29",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/prescribed_path_moment_bound.md",
+      "git_mode": "100644",
+      "git_blob_oid": "f16dffb5674604fa9cbe64c8fda6215eb31956f9",
+      "bytes": 3195,
+      "sha256": "856beab6cbc32c6e22682c5a598a37e8def01f4cbe95fd25d5d08de092adbcaf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-45cb8cb8ac1f5b58",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/radial_gamma_inputs/RADIAL_GAMMA_CANDIDATE_CHECKS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "dfba9611b977737f9173eb35ccf3d719e8ab0b74",
+      "bytes": 3409,
+      "sha256": "5d178010e7c19c8842c9c4c311567a4f0da7ebc130ab2804bd7899578712e63e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-543c7e3038ca94d9",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/radial_gamma_inputs/amplitude_time_kernel_independent_audit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2cacee89a66c61a7fc2bbc482204bd108b236029",
+      "bytes": 27663,
+      "sha256": "968cbd74b674400f44197dce71cfecb109dbad7896b4854444af9f8d3a17697d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b4e156fec914278c",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/radial_gamma_inputs/check_radial_gamma_candidate.py",
+      "git_mode": "100644",
+      "git_blob_oid": "3cc79364ce48f58bd3ac6a8db778224610e01566",
+      "bytes": 3631,
+      "sha256": "0553a1a6c850b60d40a0908ac7e0f531f534444c4532aaedfc9df8c8cb8ce354",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-31463c221faa2a72",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/radial_gamma_inputs/radial_gamma_configuration_bridge.md",
+      "git_mode": "100644",
+      "git_blob_oid": "8859f7b293e8d41f288bc5a3f3a4fb21f6a0317a",
+      "bytes": 10635,
+      "sha256": "47dbfbceacd4dca35d6285275a6593cae80ee8ea1bd61dd3b2f3618dca024355",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-aa8dca5a313323ae",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/radial_gamma_inputs/weak_coupling_radial_gamma_continuum_candidate.md",
+      "git_mode": "100644",
+      "git_blob_oid": "eba25c2b1f421c157af2b30ce5a9d98ba0c6dd6e",
+      "bytes": 12053,
+      "sha256": "adf0f18e3a7a69b2306f991e221ca5fc89bdf93685412403454a038e684accd6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-dd0a451e5809fc6b",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/radial_phase_square_continuation.md",
+      "git_mode": "100644",
+      "git_blob_oid": "e850bc1e9d4db9dfa44d53e4e03c30259604405e",
+      "bytes": 28880,
+      "sha256": "08d48cf683b57eac715382cfc1ac1afb7c56d080610596d7347806b17289879f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2a20dde191a1038a",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/retained_cusp_nonlinear_bridge.md",
+      "git_mode": "100644",
+      "git_blob_oid": "4b985c2ea68290e7c72c5195718ff5832a41a8cf",
+      "bytes": 29822,
+      "sha256": "8e1e7480561c893b649d31e5f0e1da83ccd2cc3cd1537ba0d5641029022b6e95",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0cda2991c89f768f",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/scaled_angle_native_limit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "a08fc4cc7f3b497106220225c0008c33691a918a",
+      "bytes": 7653,
+      "sha256": "12de29477bfb99f74d6bf12c3910e6a8313dd17fddc9dc7d9b39504339eb2312",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a91fc45fde6b7de5",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/scaled_angle_prescribed_kernel_rates.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7884bf925048a82db8732d157662a6eea85217a7",
+      "bytes": 4387,
+      "sha256": "e22c91173ec15f25c33138727ecf234ede50b3b84dc6d93eda1670a47e60ea80",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5468e6bfaf88643c",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/scaled_angle_small_tau_expansion.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2628ba9376e701e2d5631cf1f356c002bcf1d36b",
+      "bytes": 3661,
+      "sha256": "f55765a7ae71b667e793f9ee98f29110e4262a77925f5708528347b864266e4e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ab442ba3bc72635d",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/scaled_volume_obstruction.md",
+      "git_mode": "100644",
+      "git_blob_oid": "f018f05a5bddfe873179d0b0ae2bcf51a099d155",
+      "bytes": 4642,
+      "sha256": "72263ae341b5b6c99b62991fd4633ce44c8be8263f3f8fc89aa369c618a8337e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fb56f77e9cd1df9b",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/volume_uniform_continuation.md",
+      "git_mode": "100644",
+      "git_blob_oid": "1f7d59471851f8551417776ecc362554cadd2aa0",
+      "bytes": 155428,
+      "sha256": "b5ec8e85fffdf4579d4e4f4b4350fb78b9caa043cf9dd890a857482dca88eea3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-709d2cd105feb5a1",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/volume_uniform_continuation.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "c932113b722b4fa9a350258ac011f53a4872510c",
+      "bytes": 160372,
+      "sha256": "2db6a26c01186fce7ed1ce5ce175e1ac257b0ea8897e0b0283e904b9fd69b11f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b82bd61647df33a2",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/weak_coupling_state_inputs/finite_box_weak_coupling_physical_gap.md",
+      "git_mode": "100644",
+      "git_blob_oid": "56744192d5ba3d54412c96df50616bc0104d0352",
+      "bytes": 24890,
+      "sha256": "0be604f044fd291750c93031141ab3bfcf8532c3eab600554f4a29fd6979ec03",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-90e51f4330f0b55f",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/weak_coupling_state_inputs/weak_coupling_electric_graph_limit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "231b06a623bdfe3798cb0ad664f78bcaff2a9d0b",
+      "bytes": 19449,
+      "sha256": "ca57becb2b035c029e08462b6ba78f7deffe1fa8b08bc49c22579730ddf82421",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-37f3d857a1d1e4be",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/sources/weak_coupling_state_inputs/weak_coupling_state_observable_limit.md",
+      "git_mode": "100644",
+      "git_blob_oid": "547df68cab7a2b9a64552d7224c7011f49010130",
+      "bytes": 22246,
+      "sha256": "908231d59ccc2fd6046eef7391e6e48c9370e40412d98f7acb771269892aea03",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-beede22d14e032b7",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2e6c27e2a1b49dd6f1a270acdf8ee67345bfcd26",
+      "bytes": 394410,
+      "sha256": "bcfc64f3dcf93037e6e0827ee6535caaeb05777ffd9d8b110b3021ecf111c690",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1cda541721ce4fa8",
+      "path": "yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "915f2284fbbf857f028e0d1cfcee37984aa5a615",
+      "bytes": 405929,
+      "sha256": "b716c8efee13453d41825bf0b838d2c49f911630272952be7cbf5759098b2410",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1151fc8dc6efd5fa",
+      "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/CLAIMS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "0a0e10710466cc66d8888295795fe52dc340d215",
+      "bytes": 29480,
+      "sha256": "803b131d7a05bdb4bfbd8abb0a2b863b8e6a3fccbafee12f74997bab29626a62",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fa62876bbe4bf014",
+      "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+      "git_mode": "100644",
+      "git_blob_oid": "66a7453a6452c2555a28270efcf53fa1997c26a8",
+      "bytes": 298549,
+      "sha256": "e42b522a285b5d76d60c259a03ea116ca3b79b55301e4c63dabbcb54635e513b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-68d0833d1867fef9",
+      "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "d82c3f17ee371dd18389d59f3dfa88464c2d309f",
+      "bytes": 307930,
+      "sha256": "2c5109ac7a34a1057fa401d9bf5097a1b8f241762569472ba81b000f07bdac61",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-54edc0a07ac8a411",
+      "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/check_volume_uniform_constants.py",
+      "git_mode": "100644",
+      "git_blob_oid": "c1c879cb130e1c021fde0eae3f0898a47f0f8a72",
+      "bytes": 43623,
+      "sha256": "f64af4e4d364e723271c14dd20571621b867168ab910e5f688cf6bc7086f7d25",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-848a4c4571f827c9",
+      "path": "yang-mills/yang_mills_current_sources_2026-09-09.zip",
+      "git_mode": "100644",
+      "git_blob_oid": "b5b50fefbd2c8891e1bbd05f236754d1890ffe24",
+      "bytes": 6178283,
+      "sha256": "c4a172f6a5ce1fb3ba5f3237733ca61b2776845e469edae01397e970055f807d",
+      "programme_ids": [
+        "YM"
+      ]
     }
   ],
-  "rights_note": "No new corpus license is declared by this index. Check permission before redistributing material.",
-  "operational_note": "Metadata and peer artifacts do not grant execution, spending, or repository-write authority."
+  "validation": {
+    "performed": "Staged blob identity, byte count, SHA-256, path and entry-point checks only.",
+    "mathematical_checks_performed": false,
+    "formal_replay_performed": false,
+    "new_mathematical_reviews": []
+  },
+  "network": {
+    "deployed": false,
+    "peer_discovery_performed": false,
+    "signed_checkpoints_published": false,
+    "scope": "Static discovery metadata; no signed checkpoint, federation receipt or automated reviewer is claimed."
+  }
 }

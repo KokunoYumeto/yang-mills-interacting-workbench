@@ -14,7 +14,7 @@
 
 **What remains incomplete.** The workbench descriptor is a static artifact catalogue, not an exhaustive theorem/dependency database. Networking, registrars, signatures and offline peer reconciliation are documented proposals, not a deployed federation. No new worker is automatically authorized by these files. The newest active Navier–Stokes source session has not been independently located; the public corrected edition is directly linked.
 
-**Continuation.** Readers and contributors choose their own directions from the evidence. No fixed next-calculation queue is part of this checkpoint. The owner's recurring publication maintenance is being paused after the requested organizational update; public reading, downloads and contributions remain available.
+**Continuation.** Readers and contributors choose their own directions from the evidence. No fixed next-calculation queue is part of this checkpoint. The owner's recurring publication maintenance is paused; public reading, downloads and contributions remain available.
 
 ## Provenance of the two proposals
 
