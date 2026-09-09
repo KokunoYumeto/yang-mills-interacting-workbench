@@ -1,6 +1,6 @@
 # Topic release hashes
 
-The DOI records are authoritative for the complete public inventories and anonymous byte verification. The locally sealed payload manifests are retained in the workspace at [`agent_work/publication_consolidation_20260909`](../../../../agent_work/publication_consolidation_20260909/).
+The DOI records retain the complete published inventories. The [GitHub tree manifest](GITHUB_TREE_MANIFEST.json) records the release mapping; the [versioned workbench inventory](../../workbench.json) identifies raw Git object bytes. Compare those objects or downloaded archive bytes, since checkout newline conversion can change local text-file hashes.
 
 - Yang–Mills source ZIP: `c4a172f6a5ce1fb3ba5f3237733ca61b2776845e469edae01397e970055f807d`
 - S6 complete project ZIP: `a4be9aa415f61efda53eb99157e1d9ea6f85716b636fe6fcab1ce39ec94b38ec`

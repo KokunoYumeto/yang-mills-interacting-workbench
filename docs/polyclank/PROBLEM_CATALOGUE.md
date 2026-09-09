@@ -16,7 +16,7 @@ A content hash fingerprints a particular serialized record or artifact. It is no
 
 Use the site namespace plus the stable question/post identifier as the source alias: distinguish Mathematics Stack Exchange from MathOverflow. Preserve the original link and the revision inspected. A username and posting date can be attribution metadata but are poor primary identifiers: users rename themselves, questions are edited, and similar names recur.
 
-Separate the source question from a normalized mathematical statement. A post may contain several subquestions or an ambiguous formulation. Record how the extracted statement was obtained and do not silently correct it. Alias claims that two catalogues name the same problem should have provenance and, where necessary, a mathematical equivalence argument.
+Retain the original source question alongside an explicitly transcribed mathematical statement, preserving its parameters and hypotheses. A post may contain several subquestions or an ambiguous formulation. Record how the extracted statement was obtained and do not silently correct it. Alias claims that two catalogues name the same problem should have provenance and, where necessary, a mathematical equivalence argument.
 
 ## The minimum discoverable record
 

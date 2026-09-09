@@ -1,5 +1,7 @@
 # Yang–Mills, S6 and Navier–Stokes research
 
+Start with [the research map](WORKBENCH.md), [the machine inventory](workbench.json), or [the PolyClank collaboration proposal](docs/polyclank/README.md).
+
 Readable mathematical papers, their complete sources, and reproducibility records. Choose a topic below; the corresponding Zenodo edition archives the same dated papers and source packages under a permanent DOI.
 
 | Topic | Start reading | Sources and scope | Archived edition |

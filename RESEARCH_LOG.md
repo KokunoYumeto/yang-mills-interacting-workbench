@@ -1,5 +1,17 @@
 # Current handoff and editorial record
 
+## 9 September 2026 — integrate the workbench and current research state
+
+**Purpose.** Make the existing large programmes discoverable and reusable through a human account of what was tried, why it was tried, its outcome and where it was left. Preserve full mathematical sources and the independence of future contributors.
+
+**Change.** Incorporate navigation proposal #1 and networking/research-state proposal #3 into the reorganized source tree. Update the reading map to the current 79-, 81-, 129- and 208-page readers. Preserve the original 22-file index as a historical snapshot and index all 284 files at source revision e0a04c0. Add a Navier–Stokes research-state document and a map of 13 complete source components in its 120-member source archive. Retain the source versions and attribution.
+
+**Verification.** Check raw Git object identities and all 120 source-archive member digests. The published Navier–Stokes JSON and checks match the corrected Zenodo edition; an earlier apparent discrepancy arose from Windows checkout newline conversion. Mathematical replay records are carried forward with their scopes. No mathematical check was rerun, no theorem was changed and no new independent validation is claimed.
+
+**Where left.** PolyClank has documentation and static indexes; replicated discovery and a large problem catalogue have not been deployed. The Navier–Stokes source reconstruction is public, while independent full analytical and formal validation is unfinished. The later local formal run stopped without its endpoint certificate. Recurring mirror work is paused after the publication update at the owner's request. Future workbenches choose their own mathematical directions.
+
+**History.** The earlier entries below retain the decisions and observations of their own sessions; they are not a current execution queue. Private conversations and operational logs are excluded from this public record.
+
 ## 9 September 2026 — repository navigation pass
 
 **Request.** Check access to the connected GitHub workbench and organize it so people and other workbenches can see what it contains. Preserve the mathematics and ongoing work. Make explanations readable without code diagrams.

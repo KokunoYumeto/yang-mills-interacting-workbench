@@ -1,0 +1,244 @@
+{
+  "format": "polyclank-research-state-draft-0.1",
+  "programme": "NS-BRIDGES",
+  "as_of": "2026-09-09",
+  "human_overview": "RESEARCH_STATE.md",
+  "purpose": "Make the supplied Navier–Stokes construction and the exact reconstruction work publicly understandable and reusable, preserving the calculations and the reasons for investigating them.",
+  "motivation": "The programme began by exploring transfers from algebraic and S6-related constructions into fluid equations. Receipt of the released Navier–Stokes manuscript redirected the main reader toward reconstructing that explicit construction. Earlier exploratory directions and the source reconstruction have separate provenance.",
+  "source_commit": "e0a04c078eaf0209e40b3d47d6f6dffb3f2a3e7f",
+  "source_manuscript": {
+    "title": "FINITE TIME BLOWUP FOR NAVIER-STOKES",
+    "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+    "derivation_capture": {
+      "pages": 165,
+      "sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81"
+    },
+    "later_capture": {
+      "pages": 166,
+      "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f"
+    },
+    "revision_audit_archive_path": "checks/source_revision_audit.json"
+  },
+  "formal_source": {
+    "repository": "https://github.com/openai/NavierStokesAndEuler/tree/8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+    "commit": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+    "toolchain": "leanprover/lean4:v4.34.0-rc2",
+    "static_audit": {
+      "local_ns_modules": 580,
+      "statement_comparisons": 26,
+      "scope": "Static source/import and declaration comparison; not kernel verification."
+    },
+    "import_compilation": "in progress; endpoint, fresh replay and comparator not completed"
+  },
+  "source_bundle": {
+    "path": "navier_stokes_source_bundle.zip",
+    "sha256": "43b128e24f395327b2dd0f9874ca1ff120a52d625ab454f7df97d51f10c328c5",
+    "doi": "10.5281/zenodo.22678406",
+    "members": 120
+  },
+  "components": [
+    {
+      "id": "NS-profiles",
+      "title": "Coordinate and leading-profile maps",
+      "purpose": "Express the profile fields in the original physical coordinates and retain the axis and Jacobian calculations.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/profiles/profiles_body.tex",
+      "sha256": "63327f4a6d339d39de096230af1810cb83e7c427ba0b0cc78c576b2750437a95",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": "24–45,144–157",
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only.",
+      "associated_checker": "proof_sources/profiles/exact_checks.py"
+    },
+    {
+      "id": "NS-base_heat",
+      "title": "Base field and heat correction",
+      "purpose": "Track the viscous term and the heat correction in the constructed base field.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/base_heat/derivation.tex",
+      "sha256": "98d101542a7d8d5c1475764ec99178a663fe363e416d572eeafa048e724a193d",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": "45–62,126–144",
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only.",
+      "associated_checker": "proof_sources/base_heat/verify_identities.py"
+    },
+    {
+      "id": "NS-oscillations",
+      "title": "Oscillatory velocity and stress",
+      "purpose": "Track phase, curl, covariance and shear terms in the oscillatory construction.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/oscillations/oscillations_body.tex",
+      "sha256": "3fd5c61de39b6f65a581ead5b29c741c2e0f46fb30f62e582dc24d93bbe83615",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": "62–87,157–165",
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only.",
+      "associated_checker": "proof_sources/oscillations/exact_checks.py"
+    },
+    {
+      "id": "NS-mean_corrections",
+      "title": "Mean corrections",
+      "purpose": "Record how the mean terms are corrected while retaining their equations and hypotheses.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/mean_corrections/mean_corrections_body.tex",
+      "sha256": "c494cebcaf476a01c5aae17d38f84dfc6b0092040c03b9aecbad1f5c3831ea29",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": "87–100",
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only.",
+      "associated_checker": "proof_sources/mean_corrections/verify_exact.py"
+    },
+    {
+      "id": "NS-stage9",
+      "title": "Finite-stage correction cycle",
+      "purpose": "Trace the residual and parameter estimates through the finite correction cycle.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/stage9/stage9_body.tex",
+      "sha256": "bce636fb3ed7348ed9c73912183f81a75557cc975418ce9e162c4be994f82cb0",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": "100–116",
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only.",
+      "associated_checker": "proof_sources/stage9/exact_checks.py"
+    },
+    {
+      "id": "NS-terminal_endpoint",
+      "title": "Localization, comparison and periodization",
+      "purpose": "Explain the endpoint maps used to compare the constructed field with a global smooth solution.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/terminal_endpoint/endpoint_derivation.tex",
+      "sha256": "ab3a4365baabf9203aeeb5ea2c74c4cbdcfe897dd9198aa680e19d7178e16358",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": "117–126",
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    },
+    {
+      "id": "NS-profile_assembly",
+      "title": "Profile assembly review",
+      "purpose": "Locate the assembly calculations and the inputs that the construction imports.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/profile_assembly_audit/profile_assembly_body.tex",
+      "sha256": "32ed054afdb0aca39ad66aa03a30ef9a3d3e004b60d7d9ba1b972435703c3c28",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": null,
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    },
+    {
+      "id": "NS-stage_inputs",
+      "title": "Initial stage and pulse inputs",
+      "purpose": "Make the stage initialization, pulse and covariance data explicit.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/stage_inputs_audit/stage_inputs_body.tex",
+      "sha256": "61aa4684591b964321b00304d58ca7e8e2bbf538cfc930bc8a6be219755bd7e3",
+      "source_capture_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "source_pages": null,
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    },
+    {
+      "id": "NS-summation_realization",
+      "title": "Summation and realization analysis",
+      "purpose": "Locate the finite-stage estimates and their remaining all-stage realization dependencies.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/primary_continuation/summation_realization_body.tex",
+      "sha256": "13d370917df47e46e2d75e0cd3a5d4ab5f2dfd1fd1f31e4eef3fa4413b6a3fa5",
+      "source_capture_sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+      "source_pages": null,
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    },
+    {
+      "id": "NS-terminal_trace",
+      "title": "Terminal trace calculations",
+      "purpose": "Record the endpoint trace and associated topology in its exact source body.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/primary_continuation/terminal_trace_body.tex",
+      "sha256": "f0eb87504ca5246eec37b09cfb17807053eee37e5282bc6ea4badefb3c822eb5",
+      "source_capture_sha256": null,
+      "source_pages": null,
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    },
+    {
+      "id": "NS-radial_stress_reconstruction_audit",
+      "title": "Radial stress reconstruction",
+      "purpose": "Give the radial reconstruction maps with the stated support and domain restrictions.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/lanes/web_bundle_audit/tex_handoff/portable_upstream/radial_stress_reconstruction_audit.tex",
+      "sha256": "dd6c119670316f1804226723caaefe062a580e40d2101efab86d823b5858ed8a",
+      "source_capture_sha256": null,
+      "source_pages": null,
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    },
+    {
+      "id": "NS-stage_cycle_gain_audit",
+      "title": "Correction-cycle gain calculations",
+      "purpose": "Retain the gain estimates and their parameter restrictions in the full derivation.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/lanes/web_bundle_audit/tex_handoff/portable_upstream/stage_cycle_gain_audit.tex",
+      "sha256": "497cb07b95a651bd5ed76f74c004722dc2172c1ef0575ddfea43c95cd56b361e",
+      "source_capture_sha256": null,
+      "source_pages": null,
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    },
+    {
+      "id": "NS-global_closure_body",
+      "title": "Global assembly analysis",
+      "purpose": "Locate the assembly argument and its imported dependencies; the title does not certify full closure.",
+      "record_kind": "complete_source_component",
+      "archive_path": "proof_sources/global_analytic_closure_review/global_closure_body.tex",
+      "sha256": "b212819c6788fc74086e501292567ba7630cd67f7a308f54c2102732c40e0954",
+      "source_capture_sha256": null,
+      "source_pages": null,
+      "review_scope": "Indexed from the published source manifest; this metadata pass performed byte verification only."
+    }
+  ],
+  "archived_validation_status": {
+    "complete_independent_analytical_validation": false,
+    "lean_kernel_certificate": false,
+    "prize_claim": false,
+    "priority_claim": false,
+    "analytical_validation_status": "in progress",
+    "formal_validation_status": "in progress"
+  },
+  "attempts": [
+    {
+      "id": "NS-EXPLORE-TRANSFERS",
+      "intent": "Investigate whether algebraic, heat-flow and geometric constructions transfer to the actual fluid equations.",
+      "outcome": "This corrected reader does not certify those initial conjectural cross-problem implications. Related research is discoverable through the peer link; it is not adopted wholesale.",
+      "status": "exploratory_history; not a new mathematical verdict"
+    },
+    {
+      "id": "NS-RECONSTRUCT-RELEASE",
+      "intent": "Reconstruct the released construction with full coordinates, viscosity, pressure, forcing and correction terms.",
+      "outcome": "Thirteen full source components, a corrected 208-page reader and retained finite replay/build records are public.",
+      "status": "published_reconstruction; independent full validation incomplete"
+    },
+    {
+      "id": "NS-CORRECT-SHEAR",
+      "intent": "Retain the actual shear in the pulse production calculation.",
+      "outcome": "The corrected edition restores the shear remainder and positive-production estimates; it also retains polynomial transport derivatives and proves the plane-coordinate inverse on its domain.",
+      "evidence": "Reader section Correction and continuation in this edition; full component proofs in the source bundle.",
+      "status": "correction_in_published_reader"
+    },
+    {
+      "id": "NS-INDEPENDENT-VALIDATION",
+      "intent": "Check the complete assembled construction and the exact formal endpoint.",
+      "outcome": "The frozen edition records analytical and Lean validation in progress. The later local formal run ended without an endpoint certificate or Comparator result; it is stopped.",
+      "status": "unfinished; no restart implied"
+    }
+  ],
+  "evidence": {
+    "published_check_record": "navier_stokes_checks.json",
+    "replay_program_count": 9,
+    "named_result_groups": 144,
+    "structural_probes": 12,
+    "new_execution_this_update": "Raw Git/blob and archive-member identity checks only; published mathematical replays were not rerun.",
+    "new_independent_mathematical_reviews": []
+  },
+  "unresolved_work": [
+    "Full imported profile and admissible-stress existence verification.",
+    "Independent verification of all-stage realization, convergence and the final force for the same assembled witness.",
+    "A completed formal endpoint and Comparator certificate."
+  ],
+  "related_workbench": "https://github.com/KokunoYumeto/zeta-function-research-reader",
+  "continuation": "The record describes what happened. Future participants choose their own mathematical direction.",
+  "overleaf_work": "paused_after_publication_update_by_owner_request",
+  "credit": "Source authorship remains in the cited primary sources. Reconstruction, review and model contributions retain their recorded provenance; no prize or discovery-priority claim is made.",
+  "formal_source_record_scope": "Frozen source metadata; its in-progress compilation wording describes the archived edition.",
+  "current_formal_run_status": "stopped_without_endpoint_or_Comparator_certificate",
+  "overleaf_read_url": "https://www.overleaf.com/read/hzthvczhdyxc#a60fc2"
+}

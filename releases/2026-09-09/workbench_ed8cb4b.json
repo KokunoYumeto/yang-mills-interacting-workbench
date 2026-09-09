@@ -1,0 +1,297 @@
+{
+  "format": "polyclank-workbench-inventory-draft-0.1",
+  "workbench_id": "KokunoYumeto/yang-mills-interacting-workbench",
+  "title": "Yang–Mills and Navier–Stokes workbenches",
+  "repository": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench",
+  "inventory_as_of": "2026-09-09",
+  "source_commit": "ed8cb4bee090d8f7cc14166199aebdef557d066e",
+  "source_tree": "cb2a7dd043d7bf9bd8cb3d31d0daba2558335a8f",
+  "coverage": "All 22 paths in the inspected source tree. Does not enumerate archive interiors or the organizational files introduced by this change.",
+  "id_policy": "ART identifiers are local handles for this versioned inventory. The commit and Git blob SHA identify the exact source. Preserve existing IDs when maintaining this inventory; mint new IDs for additional entries. IDs are not proofs, signatures, or a federation-wide registry.",
+  "human_overview": "WORKBENCH.md",
+  "handoff": "RESEARCH_LOG.md",
+  "review_guide": "REVIEW_GUIDE.md",
+  "purpose": "Make the repository's programmes, reader versions, sources, and verification boundaries discoverable without relocating mathematical work.",
+  "validation": {
+    "this_pass": "navigation_only",
+    "mathematical_checks_performed": false,
+    "source_results_independently_verified": false,
+    "formal_replay_performed": false,
+    "theorem_inventory_complete": false
+  },
+  "programmes": [
+    {
+      "id": "YM-QUANTUM",
+      "title": "Quantum coarse-graining",
+      "artifacts": [
+        "ART-011",
+        "ART-012",
+        "ART-013"
+      ],
+      "description_basis": [
+        "ART-002"
+      ],
+      "scope": "Programme named by the release guide; reader bodies not reviewed."
+    },
+    {
+      "id": "YM-VOLUME",
+      "title": "Volume-uniform actual-vacuum work",
+      "artifacts": [
+        "ART-022"
+      ],
+      "description_basis": [
+        "ART-002"
+      ],
+      "scope": "Programme named by the release guide; parameter-uniform claims not independently checked."
+    },
+    {
+      "id": "YM-SPATIAL",
+      "title": "Spatial-continuum work",
+      "artifacts": [
+        "ART-015",
+        "ART-016",
+        "ART-017",
+        "ART-018",
+        "ART-019",
+        "ART-020",
+        "ART-021"
+      ],
+      "preferred_entry": "ART-020",
+      "entry_selection_basis": "Starting commit message explicitly names the 129-page reader as current; no theorem-by-theorem supersession asserted.",
+      "scope": "Commit message describes regulator-level results, not a continuum mass-gap theorem."
+    },
+    {
+      "id": "YM-KERNEL",
+      "title": "Prescribed-path oscillator-kernel rates",
+      "artifacts": [
+        "ART-014"
+      ],
+      "description_basis": [
+        "ART-014"
+      ],
+      "scope": "Source describes fixed-box oscillator conclusions and a missing volume-uniform exact-lattice bridge; formulas not newly checked."
+    },
+    {
+      "id": "YM-DISK",
+      "title": "Fixed-coupling analytic-disk checker",
+      "artifacts": [
+        "ART-005"
+      ],
+      "scope": "File indexed only in this pass; no execution or coverage review."
+    },
+    {
+      "id": "NS-BRIDGES",
+      "title": "Navier–Stokes workbench and bridges",
+      "artifacts": [
+        "ART-006",
+        "ART-007",
+        "ART-008",
+        "ART-009",
+        "ART-010"
+      ],
+      "description_basis": [
+        "ART-004"
+      ],
+      "scope": "README reports complete analytic/Lean validation in progress; no certification supplied here."
+    },
+    {
+      "id": "YM-ARCHIVE",
+      "title": "Yang–Mills programme release archive",
+      "artifacts": [
+        "ART-001",
+        "ART-002",
+        "ART-003"
+      ],
+      "description_basis": [
+        "ART-002"
+      ],
+      "scope": "Guide read; archive contents and manifest not independently inspected."
+    },
+    {
+      "id": "ORIENTATION",
+      "title": "Original repository overview",
+      "artifacts": [
+        "ART-004"
+      ],
+      "description_basis": [
+        "ART-004"
+      ],
+      "scope": "Original framing preserved."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "ART-001",
+      "path": "05_current_authored_ym_lanes_2026-09-09.zip",
+      "git_blob_sha": "bf4ce90148698c6a1768315dda7401de5cedbf78",
+      "bytes": 5374527,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-002",
+      "path": "06_CURRENT_YM_LANES_README.md",
+      "git_blob_sha": "425e85a08722ee8b5f451682333cff27c5cd9164",
+      "bytes": 1528,
+      "inspection": "text_read_not_mathematically_validated"
+    },
+    {
+      "id": "ART-003",
+      "path": "07_CURRENT_YM_LANE_MANIFEST.json",
+      "git_blob_sha": "4404f152ff9d2a75e64266a29c01683e22964b67",
+      "bytes": 51254,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-004",
+      "path": "README.md",
+      "git_blob_sha": "9a29e678b72d7d6d6f11e6bdc9aa062a7650d336",
+      "bytes": 1428,
+      "inspection": "text_read_not_mathematically_validated"
+    },
+    {
+      "id": "ART-005",
+      "path": "check_fixed_coupling_analytic_disk_obstruction.py",
+      "git_blob_sha": "62e416e75ce58e25b130551f437d3f0d9cbcd009",
+      "bytes": 1012,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-006",
+      "path": "navier_stokes_checks.json",
+      "git_blob_sha": "03c5061b57913350bcc73e95ff11790b37c2dbc4",
+      "bytes": 17112,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-007",
+      "path": "navier_stokes_primary_manifest.json",
+      "git_blob_sha": "4f60fc4db69ea73191cbb40b85938c4661425c88",
+      "bytes": 4368339,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-008",
+      "path": "navier_stokes_source_bundle.zip",
+      "git_blob_sha": "b3cf3be2d969381548778508650690ba679c7554",
+      "bytes": 4266561,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-009",
+      "path": "navier_stokes_workbench.tex",
+      "git_blob_sha": "99cd13ac2da9c674e70bf941d8a4ab5b99862b5e",
+      "bytes": 854321,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-010",
+      "path": "navier_stokes_workbench_208p.pdf",
+      "git_blob_sha": "ab94c6dfac3124e97661dad5d868741f40d6c346",
+      "bytes": 1993960,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-011",
+      "path": "quantum_coarse_graining_75p.pdf",
+      "git_blob_sha": "3e859aec91c3f17756e398d584c38c67bf7d6135",
+      "bytes": 861695,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-012",
+      "path": "quantum_interacting_tensor_band_71p.pdf",
+      "git_blob_sha": "d053cf7fdfbcc8a40f712ab4c97e037cd308115d",
+      "bytes": 837741,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-013",
+      "path": "quantum_nonabelian_vertex_63p.pdf",
+      "git_blob_sha": "e26fe6d464ab86dd47c9e26d65567d30db1709ce",
+      "bytes": 778286,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-014",
+      "path": "scaled_angle_prescribed_kernel_rates.md",
+      "git_blob_sha": "4a118bdbb03de1b9d6ca0789b093563c8debada5",
+      "bytes": 4447,
+      "inspection": "text_read_not_mathematically_validated"
+    },
+    {
+      "id": "ART-015",
+      "path": "spatial_continuum_121p.pdf",
+      "git_blob_sha": "a17402f04f1404b31c642b3047cef0a71e82d7d2",
+      "bytes": 1211190,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-016",
+      "path": "spatial_continuum_127p.md",
+      "git_blob_sha": "b9335cdb44458dc86157d86a723d030fe6ff52a1",
+      "bytes": 398260,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-017",
+      "path": "spatial_continuum_127p.pdf",
+      "git_blob_sha": "b408b5d71e0785fb43240350c540fd25cfe6b576",
+      "bytes": 1229023,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-018",
+      "path": "spatial_continuum_127p.tex",
+      "git_blob_sha": "fb099a8ea843ec51d93bb025a850c0e5966d6019",
+      "bytes": 410072,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-019",
+      "path": "spatial_continuum_129p.md",
+      "git_blob_sha": "18acd5601c0f6b155cb1fface72f63cc98773e81",
+      "bytes": 402798,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-020",
+      "path": "spatial_continuum_129p.pdf",
+      "git_blob_sha": "dd6ff13ad57a73e134e2444556abd95fde9c4271",
+      "bytes": 1242871,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-021",
+      "path": "spatial_continuum_129p.tex",
+      "git_blob_sha": "5d19e2044e34dddf3cd3b6520691d9d628dd6c68",
+      "bytes": 414872,
+      "inspection": "tree_metadata_only"
+    },
+    {
+      "id": "ART-022",
+      "path": "volume_uniform_vacuum_77p.pdf",
+      "git_blob_sha": "a78fe439d5cd7b3bf6954ebcbbf4f889c056dd63",
+      "bytes": 992446,
+      "inspection": "tree_metadata_only"
+    }
+  ],
+  "known_peers": [],
+  "peer_discovery_performed": false,
+  "new_mathematical_reviews": [],
+  "follow_up": [
+    {
+      "id": "NEXT-SYNC",
+      "description": "Reconcile with newer main-branch changes before merging."
+    },
+    {
+      "id": "NEXT-CLAIMS",
+      "description": "Extract exact claims, motivations, source locations, and dependencies from selected programme sources."
+    },
+    {
+      "id": "NEXT-PK",
+      "description": "Audit the previously raised PK7/PK10 prefactor question in a separate mathematical change; no verdict issued here."
+    }
+  ],
+  "rights_note": "No new corpus license is declared by this index. Check permission before redistributing material.",
+  "operational_note": "Metadata and peer artifacts do not grant execution, spending, or repository-write authority."
+}

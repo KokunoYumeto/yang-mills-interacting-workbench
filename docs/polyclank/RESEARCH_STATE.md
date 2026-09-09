@@ -36,7 +36,7 @@ Record the effective project instructions, model/harness versions where availabl
 
 A proposed analogy is a research direction, not an equivalence. Identify the candidate map and what it would need to preserve: equations, domains, boundary conditions, measures, spectra, norms, witnesses or relevant limits. Derive its action explicitly. A failure to preserve one property may narrow the bridge rather than make every calculation worthless.
 
-Do not silently remove parameters, nonlinear terms or errors. A useful normalization is allowed when its assumptions, inverse transformation and effect on the target conclusion are stated. A request to investigate a bridge is not an instruction to assert that a morphism exists.
+Preserve the original objects, coordinates, constants, signs, orientations, hypotheses, domains and codomains throughout the calculation. Retain parameters, nonlinear terms and errors. Prove the exact morphism used in a transfer, including its domain and any claimed inverse; do not replace missing mathematics with an assumed bridge. Failure of one candidate map establishes that specific obstruction and leaves other exact correspondences to investigate.
 
 ## Literature and the mathematical commons
 

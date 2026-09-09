@@ -1,5 +1,9 @@
 # Navier–Stokes: corrected reconstruction and validation reader
 
+[What was tried and where it stands](RESEARCH_STATE.md) · [Machine-readable component map](research-state.json) · [Read in Overleaf](https://www.overleaf.com/read/hzthvczhdyxc#a60fc2)
+
+[What was tried and where it stands](RESEARCH_STATE.md) · [Machine-readable component map](research-state.json)
+
 [Read the 208-page PDF](../navier_stokes_workbench_208p.pdf) · [Standalone LaTeX](../navier_stokes_workbench.tex) · [Complete source ZIP](../navier_stokes_source_bundle.zip)
 
 This 9 September 2026 edition reconstructs and examines the supplied finite-time blowup construction with positive viscosity, zero initial velocity and smooth compactly supported forcing. It retains the original forcing, pressure, transport, nonlinear terms and correction-cycle calculations. The corrected edition restores the actual-shear remainder and its positive-production bounds, retains radial transport derivative factors, and makes the moving-plane projection explicit.

@@ -1,5 +1,11 @@
 # What this documentation session found
 
+## Integration update — 9 September 2026
+
+The current [workbench map](../../WORKBENCH.md) supersedes the discovery gaps described in the historical inspection below. It incorporates both documentation proposals and the 284-file source revision e0a04c0. The [Navier–Stokes state](../../navier-stokes/RESEARCH_STATE.md) supplies the programme intent, complete source-body map, correction history and unfinished validation status requested in issue #2. Its corrected DOI is [10.5281/zenodo.22678406](https://doi.org/10.5281/zenodo.22678406); the earlier 162-page DOI remains historical.
+
+Published raw Git JSON/check blobs match the corrected Zenodo objects. Local CRLF conversion caused an earlier apparent mismatch. The formal run is stopped without a completed endpoint certificate. Mirror work is paused after this update. The dated observations below describe the earlier documentation session and are retained as history.
+
 [Documentation home](README.md) • Inspected 9 September 2026
 
 ## The Navier–Stokes material is not absent

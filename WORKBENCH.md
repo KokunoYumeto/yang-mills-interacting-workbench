@@ -1,61 +1,43 @@
-# Start here: what this workbench contains
+# Start here: research programmes and complete sources
 
-**This repository holds several research programmes, not one finished proof.** It records work on interacting Yang–Mills systems, fixed-box calculations, volume and spatial-continuum questions, and source-dependent Navier–Stokes bridges. The purpose of this page is to help a person or another agent find the relevant work without reconstructing the project's history from large files.
+This workbench makes the Yang–Mills, S6 and Navier–Stokes programmes readable and reusable. Each programme retains its complete mathematical source, its reasons for pursuing the construction, and its recorded results. The reading map gives access to that work at the scale of a whole programme as well as an individual calculation.
 
-**Inventory checked: 9 September 2026, at commit ed8cb4bee090d8f7cc14166199aebdef557d066e.** This is a snapshot of one repository, not a claim to contain everything known about these problems. The machine-readable companion is [workbench.json](workbench.json).
-
-## What we are trying, and what is established here
-
-The repository's [original overview](README.md) describes exact calculations and bridges that preserve forcing, viscosity, transport, pressure, and nonlinear terms. The [Yang–Mills release guide](06_CURRENT_YM_LANES_README.md) distinguishes the separate programmes and says the interacting four-dimensional continuum and mass-gap conclusions remain unfinished. These are the maintainers' published descriptions; this organizational pass has not independently proved the underlying results.
-
-One specific motivation is stated in the [prescribed-path kernel note](scaled_angle_prescribed_kernel_rates.md): obtain estimates for a fixed-box oscillator kernel and determine whether they can transfer to an exact interacting lattice along simultaneous limits. Its final section identifies missing volume-uniform control. The note does not identify the oscillator calculation with an interacting-continuum result.
-
-For other programmes, the full motivation and theorem inventory still need extraction from their source bodies. Their titles below are navigation labels, not independently verified conclusions. Do not fill in those missing descriptions by guessing.
+**Current map: 9 September 2026.** The [machine inventory](workbench.json) identifies all 284 files in source revision [e0a04c0](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/tree/e0a04c078eaf0209e40b3d47d6f6dffb3f2a3e7f). The [earlier 22-file inventory](releases/2026-09-09/workbench_ed8cb4b.json) remains available with its original version pin. New navigation documents are outside that frozen source inventory; their versions are recorded by Git.
 
 ## Where to read
 
-### Quantum coarse-graining — YM-QUANTUM
+| Programme | Current reader | Complete source and context |
+| --- | --- | --- |
+| Quantum state and spectral maps | [79-page reader](yang-mills/readers/quantum_coarse_graining.pdf) | [Yang–Mills source index](yang-mills/AI_READING_INDEX.md), including the 71-page tensor-band and 63-page non-Abelian-vertex component snapshots linked in the [topic guide](yang-mills/README.md) |
+| Volume-independent vacuum estimates | [81-page reader](yang-mills/readers/volume_uniform_vacuum.pdf) | [Full estimates](yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md) and the hypotheses retained in that text |
+| Spatial-continuum maps and obstructions | [129-page reader](yang-mills/readers/spatial_continuum.pdf) | [Complete source](yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md); the topic guide identifies the corrected Section 26.13 rates and Section 27 perturbative-disk obstruction |
+| Navier–Stokes reconstruction | [Corrected 208-page reader](navier-stokes/navier_stokes_workbench_208p.pdf) | [Programme history and source map](navier-stokes/RESEARCH_STATE.md), [full source ZIP](navier_stokes_source_bundle.zip), and [component index](navier-stokes/research-state.json) |
+| S6 topology and related constructions | [Five-page orientation](s6/26_s6_key_advances_frozen_2026-09-06.pdf) | [Frozen-project guide](s6/S6_FROZEN_PROJECT_GUIDE_2026-09-09.md) and the complete 1,079-file project archive at [Zenodo](https://doi.org/10.5281/zenodo.22678442) |
 
-Start with [the 75-page reader](quantum_coarse_graining_75p.pdf). The release guide groups two component readers with it: [interacting tensor bands](quantum_interacting_tensor_band_71p.pdf) and [nonabelian vertices](quantum_nonabelian_vertex_63p.pdf). Associated source material and check records are described in the Yang–Mills bundle below. These reader bodies were not reviewed during this pass.
+The Yang–Mills programme studies explicit interacting systems, their quantum and spectral maps, and estimates needed for changes of scale, volume and regulator. The complete texts specify what the calculations establish. The interacting four-dimensional continuum and mass-gap endpoint remains unfinished. Earlier reader editions and focused calculations remain findable through [the archive guide](ARCHIVE.md).
 
-### Volume-uniform actual-vacuum work — YM-VOLUME
+The Navier–Stokes programme began with proposed transfers from algebraic and S6-related constructions. The released fluid manuscript supplied an explicit construction to reconstruct. Its [current research state](navier-stokes/RESEARCH_STATE.md) records the resulting work, corrections and unfinished independent validation. The S6 archive preserves its own frozen history and provenance. A link between programmes records a research connection; each mathematical map and its exact hypotheses must be read in the associated source.
 
-Start with [the 77-page volume reader](volume_uniform_vacuum_77p.pdf). Keep its hypotheses and limiting regime attached to every result reused elsewhere; its title alone does not establish a bound uniform in any particular parameter. The release guide identifies this as a separate programme.
+## What was tried, why, and where it was left
 
-### Spatial-continuum work — YM-SPATIAL
+Read [the research log](RESEARCH_LOG.md) and the relevant full source. A useful record explains the intended calculation, why that route was chosen, the actual outcome, and the exact text or check supporting it. It can describe a large system, an unsuccessful approach, an exposition, a literature connection or a small calculation. Future participants choose their own direction; a descriptive record does not require them to inherit a task queue.
 
-Start with [the 129-page reader](spatial_continuum_129p.pdf), accompanied by [Markdown](spatial_continuum_129p.md) and [TeX](spatial_continuum_129p.tex). The [inspected commit's own message](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/commit/ed8cb4bee090d8f7cc14166199aebdef557d066e) identifies this as the current standalone reader and explicitly limits it to regulator-level results.
+The inventory provides stable artifact identifiers separately from content hashes. The Navier–Stokes index additionally locates 13 complete source components in a 120-member source archive. These are source-body identifiers, not an exhaustive theorem inventory. This integration checked file identities and archive members; it did not add a mathematical review or run the recorded mathematical checks again.
 
-The [121-page reader](spatial_continuum_121p.pdf) and [127-page reader](spatial_continuum_127p.pdf), with [127-page Markdown](spatial_continuum_127p.md) and [TeX](spatial_continuum_127p.tex), remain available. The release guide still describes the 121-page bundled edition. Do not assume the bundle or its manifest includes later standalone additions, and do not infer that every argument was preserved merely from increasing page counts. No source comparison was performed here.
+SHA-256 values identify raw Git objects or the named archived bytes. Windows checkout newline conversion can change a text file's on-disk hash without changing its published Git blob. Compare the pinned objects when checking an edition.
 
-### Prescribed-path kernel rates — YM-KERNEL
+## Reuse and independent checking
 
-Read [the standalone note](scaled_angle_prescribed_kernel_rates.md). It states finite-box oscillator estimates and separately discusses the missing uniform bridge to simultaneous exact-lattice limits. Equations PK7 and PK10 were previously raised for a prefactor audit in the project discussion; no mathematical correction or recheck is included in this navigation pass. Do not interpret this listing as an endorsement of those equations.
+Use [the review guide](REVIEW_GUIDE.md) to attach a check to the source version and step actually examined while doing mathematics. Preserve the original objects, coordinates, constants, signs, orientations, hypotheses, domains and codomains. Prove the map used for a transfer, including its stated domain and inverse when an inverse is claimed. A failed candidate map establishes that obstruction; it does not establish that two programmes are unrelated.
 
-### Fixed-coupling disk checker — YM-DISK
+A check of one calculation earns a record for that calculation. Check counts and hashes are not a truth score. Full derivations, actual execution receipts and explicit correction histories let another workbench assess and reuse the work.
 
-The root contains [a Python checker](check_fixed_coupling_analytic_disk_obstruction.py). It is indexed here but was not executed or reviewed in this organizational pass. The next reviewer should record its exact test range, what claim those tests address, and what they leave unproved.
+## PolyClank: independently maintained workbenches
 
-### Navier–Stokes work and its bridges — NS-BRIDGES
+[The PolyClank documents](docs/polyclank/README.md) describe a host-neutral discovery and exchange proposal. Each workbench maintains its own research, versions and judgment. GitHub is one transport for the files. Replicated discovery, independent expositions, literature contributions and multilingual access can help workbenches find one another without a central mathematical authority.
 
-Start with [the 208-page workbench](navier_stokes_workbench_208p.pdf) and [its TeX](navier_stokes_workbench.tex). The [source bundle](navier_stokes_source_bundle.zip), [primary manifest](navier_stokes_primary_manifest.json), and [reported check records](navier_stokes_checks.json) accompany it. The original README says complete analytical/Lean validation of the supplied construction remains in progress. These files are not being newly certified here.
+This repository currently provides documentation and static indexes. It does not deploy a federation, run automatic peer discovery, or contain an imported 7,000-problem catalogue. The [related zeta reader](https://github.com/KokunoYumeto/zeta-function-research-reader/tree/cf3c5f9dd58524ad2f911a2ecccaff994c3f4f97) is a versioned reading connection, not an independent review of these results.
 
-### Yang–Mills source archive — YM-ARCHIVE
+Collective and pseudonymous contributions are welcome. Preserve source authorship and the actual human, model and tool provenance of a contribution. Criticism should address the mathematical statement, calculation or evidence.
 
-The [current-programmes ZIP](05_current_authored_ym_lanes_2026-09-09.zip), [release guide](06_CURRENT_YM_LANES_README.md), and [manifest](07_CURRENT_YM_LANE_MANIFEST.json) are the archive entry points. The guide describes source and reader directories inside the ZIP; those are not ordinary root directories in the inspected Git tree. The archive was not unpacked in this pass. Preserve it as a release artifact rather than rewriting it to update this index.
-
-## What another workbench can check
-
-A useful review can emerge while reusing the mathematics. Record it against the exact source version and identify the part actually examined. For example: "While deriving this consequence, we independently checked the substitution in equation X under assumptions A and B." That earns a scoped check record, not an automatic endorsement of the whole programme.
-
-Use [the review guide](REVIEW_GUIDE.md) for adoption, calculations, analytical review, formal replay, and challenges. The initial machine inventory contains no new mathematical reviews. A hash identifies file contents; it is not a correctness score.
-
-## How to resume without losing the purpose
-
-Read [the current handoff](RESEARCH_LOG.md), then choose a programme or direction. Before starting a substantial calculation, write what you are trying, why the route is worth trying, which sources support it, and what would count as progress. A speculative analogy is a valid starting point when marked as such.
-
-Keep the original objective and outstanding user requests outside the conversation. When the direction changes, say why. At the end of a run, link the actual artifacts and distinguish proposed, derived, tested, reviewed, and formally checked results. A workbench can contain a whole theory's worth of work; its overview must still make that work findable.
-
-## What this organizational pass did not do
-
-It did not move or delete any mathematical source, extract archives, install dependencies, run a model swarm, execute repository code, replay Lean, certify novelty, or revise a theorem. The new documents are navigation and proposed collaboration conventions. They do not license third-party material or authorize peer content to issue commands on a contributor's computer.
+The current Navier–Stokes edition is publicly archived at [10.5281/zenodo.22678406](https://doi.org/10.5281/zenodo.22678406). Independent full validation remains unfinished, and this work makes no prize or discovery-priority claim. Recurring Navier–Stokes mirror work is paused after this publication update at the owner's request.

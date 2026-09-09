@@ -1,5 +1,7 @@
 # PolyClank: workbenches that explain themselves and exchange research
 
+**Implemented here, 9 September 2026:** [human research map](../../WORKBENCH.md), [284-file pinned source inventory](../../workbench.json), and [Navier–Stokes research state with 13 full source components](../../navier-stokes/RESEARCH_STATE.md). The networking and catalogue documents below remain proposals.
+
 Design notes • 9 September 2026 • Proposed community protocol, not a deployed network
 
 **A workbench says what it tried, why it tried it, and where that leaves the research. It does not prescribe the next participant's mathematical ideas.**
