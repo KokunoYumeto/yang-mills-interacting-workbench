@@ -29,3 +29,13 @@ The source handoff was prepared concurrently with the shared PolyClank integrati
 [PR #3](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/pull/3) proposed networking, programme-state, problem-catalogue and publication documentation. The integration retains its workbench-first design while updating source pointers and removing permission to normalize mathematical data. No local instruction file was replaced.
 
 Private conversation exports, user logbooks, credentials and downloaded literature bodies are not included. This is a public account of work performed, not a publication of the private session.
+
+## Continuation — 14 September 2026: continuum spectral reconstruction
+
+A new additive continuation is recorded at [`yang-mills/continuations/20260914-spectral-reconstruction/`](yang-mills/continuations/20260914-spectral-reconstruction/). It extends the retained positive-time Yang–Mills correlation and Schur-memory programme from finite trial frames to a countable gauge-invariant spin-network/cylindrical family along one regulator subsequence.
+
+The continuation constructs the resulting positive self-adjoint observable-sector generator from the limiting correlation kernel, proves that its spectrum is the closure of the union of the diagonal spectral supports, gives an explicit Bernstein/Hausdorff moment reconstruction of the complete finite-energy matrix spectral measure from the values `C(mh)` and `C(0+)`, records Stieltjes inversion formulas for interval masses and atoms, and identifies the spectral bottom with the infimum of the exact large-time exponential decay edges. The compactified energy-infinity matrix remains retained separately as the zero-time Gram defect.
+
+The smooth-frame step is written with an explicit inverse congruence `mu(B)=T^{-*} mu^T(B) T^{-1}` and keeps raw Gram matrices. Its construction is informed by the explicit mutually inverse S6 smooth normal-line trivialization, while the Yang–Mills spectral statements are proved directly in their own typed spaces. The accompanying exact checker verifies the Bernstein-moment coordinate identity and inverse raw-frame congruence on rational matrix fixtures.
+
+This continuation does not assert construction of the full four-dimensional Yang–Mills theory or a positive continuum mass gap. It concentrates the remaining spectral question into the lower support edge of the reconstructed countable gauge-invariant continuum measures and the identification of that observable-sector reconstruction with the Hilbert space required by the target theorem.
