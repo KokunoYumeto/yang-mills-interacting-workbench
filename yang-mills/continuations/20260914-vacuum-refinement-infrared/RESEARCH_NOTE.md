@@ -1,0 +1,549 @@
+# Vacuum-aware refinement, smooth holonomy sections, and an infrared Schur budget
+
+14 September 2026. Additive research continuation against Yang–Mills commit
+`fab69fdc4ac197159b8e6ae8d73a82bde2b20d55`.
+
+This note proves five connected statements for the retained programme: smooth local sections of the complete finite-link holonomy map with their exact curvature cost; refinement in the actual interacting vacuum measure with a complete Dirichlet square identity; a projective equal-time vacuum limit; a regulator-uniform inverse-energy Schur budget; and the exact kernel comparing regulator-state sequences to the reconstructed observable space. The last construction corrects the escaping-label inference in the preceding spectral-reconstruction note. No positive continuum mass lower bound is asserted.
+
+## 1. Source objects and conventions
+
+[YM] is `yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md`, §§1–2, at the commit above. [SR] is `yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md` at the same commit. [S6] is `s6/27_s6_key_advances_frozen_2026-09-06.tex`, §3, at the same commit. [SZ] is `formal/splitzero/DERIVED_MATHEMATICS.md`, §§1–4, in `KokunoYumeto/zeta-function-research-reader` at `7ea0a49945390eae14d3160a5730858899768b5f`. These source bodies were inspected. The S6 source supplies explicit formulas and locations of its longer proofs; the elementary quotient-map verification used below is written here.
+
+Keep the original generators `T_alpha=-i sigma_alpha/2`, product Haar probability `dU_n`, and all oriented plaquette words. Fix the actual sequence
+
+\[
+a_n=a_0 2^{-n},\quad L_n=4\,2^{2n},\quad
+g_n^2=(g_0^{-2}+\beta n\log 2)^{-1},\qquad a_0,g_0,\beta>0.
+\tag{1.1}
+\]
+
+The displayed beta is a prescribed path parameter. On the open graph with vertices `{-L_n,...,L_n}^3`, let `Q_n=SU(2)^{E_n}` and
+
+\[
+\kappa_n=2g_n^2/a_n,\quad
+H_n=-\kappa_n\sum_{e,\alpha}X_{e,\alpha}^2+
+\frac1{2g_n^2a_n}\sum_p(2-\operatorname{tr}U_p),\quad
+A_n=H_n-E_{0,n}I.
+\tag{1.2}
+\]
+
+The positive unit vacuum `psi_n`, its exact energy `E_{0,n}`, and the invariant `H^2` and `H^1` operator/form domains are those of [YM]. Write `rho_n=psi_n^2`. Multiplication
+
+\[
+\mathscr U_n:L^2(Q_n,\rho_n dU_n)\longrightarrow L^2(Q_n,dU_n),
+\qquad f\longmapsto\psi_n f
+\tag{1.3}
+\]
+
+has inverse `u -> u/psi_n` and preserves the displayed inner products. Both maps preserve the physical invariant subspaces. The full ground-state identity is
+
+\[
+q_{A_n}(\mathscr U_n f)=\kappa_n\int\rho_n
+\sum_{e,\alpha}|X_{e,\alpha}f|^2dU_n.
+\tag{1.4}
+\]
+
+Its polarized form follows by expanding the kinetic derivatives and using the exact equation `H_n psi_n=E_{0,n} psi_n`. Every magnetic term enters that vacuum equation and the actual density `rho_n`.
+
+## 2. Smooth extension with the complete curvature cost
+
+### 2.1 The inspected S6 map
+
+The source's retained data obey `gamma(Lambda) subset Z`, `gamma A=gamma`, `gamma(v)=epsilon in {1,-1}`, and `zeta=exp(-2 pi i/m)`. Set
+
+\[
+H(x)=e^{-2\pi i\epsilon\gamma(x)}.
+\]
+
+Then `H(x+lambda)=H(x)` and
+
+\[
+H(Ax+v/m)=e^{-2\pi i\epsilon(\gamma(x)+\epsilon/m)}=\zeta H(x).
+\]
+
+Consequently the quotient-line maps
+
+\[
+[x,z]\longmapsto([x],z/H(x)),\qquad
+([x,w])\longmapsto[x,wH(x)]
+\tag{2.1}
+\]
+
+are invariant under both displayed deck generators, are smooth, and compose to the respective identities. The factor `H` remains in the inverse. The source uses `m=3,4`. The following Yang–Mills sections are constructed with their own explicit domains, inverses, and energy factors.
+
+### 2.2 Smooth local sections at every finite-link configuration
+
+Fix level `r` and a reference configuration `U^0 in Q_r`. For each positive edge `e=(x,x+a_r e_i)`, choose two real smooth profiles `p_0,p_1` with disjoint compact supports in `(1/4,3/8)` and `(5/8,3/4)`. Retain their actual nonzero integrals and squared integrals
+
+\[
+I_j=\int p_j(t)dt,\qquad J_j=\int p_j(t)^2dt\quad(j=0,1).
+\]
+
+Choose `chi in C_c^infty(R^2;R)` supported in the unit disk with `chi(0)=1`, and retain `J_chi=int |grad chi|^2`. Choose `0<epsilon<1/16`. The tubes of transverse radius `epsilon a_r` about these central edge segments are disjoint, including between edges in different coordinate directions.
+
+Choose `K_e^0 in su(2)` with `exp K_e^0=U_e^0`. On the open neighborhood where the spectrum of `(U_e^0)^{-1}U_e` avoids the negative real axis, use the analytic matrix logarithm
+
+\[
+K_e(U)=\log((U_e^0)^{-1}U_e).
+\]
+
+For `x'=x+a_r t e_i+y`, `y perpendicular e_i`, define the one-form in the edge tube by
+
+\[
+\mathcal A_e(U)(x')=
+\frac1{a_r}\left(\frac{p_0(t)}{I_0}K_e^0+
+\frac{p_1(t)}{I_1}K_e(U)\right)
+\chi\!\left(\frac{y}{\epsilon a_r}\right)dx_i,
+\qquad \mathcal A(U)=\sum_e\mathcal A_e(U).
+\tag{2.2}
+\]
+
+Every profile and every integral stays in (2.2). Extending each summand by zero gives a compactly supported smooth connection. It depends smoothly on `U` in the displayed neighborhood. In the original transport convention `V'=V mathcal A(dot gamma)`, the exact edge transport is
+
+\[
+\operatorname{Hol}_e(\mathcal A(U))=
+\exp K_e^0\,\exp K_e(U)=U_e.
+\tag{2.3}
+\]
+
+Indeed the two longitudinal supports are ordered and disjoint, and their integrals are respectively `K_e^0,K_e(U)`. The transverse cutoff equals one on the edge; every other edge misses that tube. Thus (2.2) is a smooth local right inverse of the **whole** finite-link holonomy map at every `U^0`, including reference links equal to `-I`.
+
+All products between connection components in one tube have the same differential `dx_i`, and distinct tubes are disjoint. Therefore `mathcal A wedge mathcal A=0` for this constructed connection. The curvature in a tube is its exact transverse derivative. With the original matrix Frobenius norm,
+
+\[
+\boxed{
+\int_{\mathbb R^3}\sum_{i<j}\|F_{ij}(\mathcal A(U))\|_F^2dx
+=\frac{J_\chi}{a_r}\sum_{e\in E_r}
+\left(\frac{J_0}{I_0^2}\|K_e^0\|_F^2+
+\frac{J_1}{I_1^2}\|K_e(U)\|_F^2\right).
+}
+\tag{2.4}
+\]
+
+To verify the coefficient, a transverse derivative contributes `(epsilon a_r)^{-1}`, the connection contributes `a_r^{-1}`, and `dx=a_r(epsilon a_r)^2 dt dz`. Their squared factors leave `a_r^{-1}`. The disjoint longitudinal supports remove precisely the cross product of the two displayed profiles. The magnetic curvature functional retains the additional factor `1/(4g_r^2)` when (2.4) is inserted into that functional.
+
+The maps (2.2)–(2.3) supply smooth local continuation. Equation (2.4) simultaneously retains its ultraviolet energy cost; none of its `a_r`, `g_r`, or profile factors is removed.
+
+## 3. Refinement in the actual fine-vacuum measure
+
+Fix `r<n` and `b=2^{n-r}`. Each coarse edge consists of `b` ordered fine links. Fine links outside those chains remain as variables. Put
+
+\[
+\pi_{r,n}(U)_e=U_{e,1}\cdots U_{e,b}.
+\tag{3.1}
+\]
+
+An explicit global coordinate map is
+
+\[
+\Phi_{r,n}:Q_n\longrightarrow Q_r\times Z_{r,n},\quad
+U\longmapsto(W,(U_{e,j})_{j<b},U_{\rm unused}),
+\]
+
+where `Z_{r,n}` is the product group with exactly `(b-1)|E_r|+|E_n|-b|E_r|` factors. Its inverse retains the displayed first `b-1` links and unused links and sets
+
+\[
+U_{e,b}=(U_{e,1}\cdots U_{e,b-1})^{-1}W_e.
+\tag{3.2}
+\]
+
+Both compositions are identities. Haar translation in the last link on each chain proves `dU_n=dW dz` in these coordinates. Gauge equivariance is the cancellation of every intermediate vertex factor in (3.1).
+
+Define the actual marginal and conditional map
+
+\[
+m_{r,n}(W)=\int_{Z_{r,n}}\rho_n(\Phi_{r,n}^{-1}(W,z))dz,
+\]
+\[
+(\mathsf E f)(W)=\frac{1}{m_{r,n}(W)}
+\int f(\Phi_{r,n}^{-1}(W,z))\rho_n(\Phi_{r,n}^{-1}(W,z))dz,
+\quad \mathsf Jg=g\circ\pi_{r,n}.
+\tag{3.3}
+\]
+
+These formulas retain the fine vacuum. The density `m=m_{r,n}` is smooth, strictly positive, gauge invariant, and has integral one. Fubini proves
+
+\[
+\mathsf J:L^2(m\,dW)\to L^2(\rho_n dU_n),\quad
+\mathsf J^*\mathsf J=I,\quad\mathsf J^*=\mathsf E.
+\tag{3.4}
+\]
+
+Thus `mathsf E mathsf J=I` and `mathsf P=mathsf J mathsf E` is an orthogonal projection. The maps commute with gauge averaging. Their comparison with the original coarse vacuum is also explicit: the identity-on-functions map from `L^2(rho_r dW)` to `L^2(m dW)` has squared norm pairing
+
+\[
+\langle f,g\rangle_m=\int\overline f g\frac{m}{\rho_r}\rho_r dW.
+\tag{3.5}
+\]
+
+Both densities and their ratio remain recorded.
+
+### 3.1 Exact horizontal fields and the retained density derivative
+
+Write `P_{e,j-1}=U_{e,1}...U_{e,j-1}`, with the empty product `I`, and
+
+\[
+a_{e,j;\alpha\beta}=(\operatorname{Ad}_{P_{e,j-1}})_{\alpha\beta},\qquad
+Y_{e,\alpha}=\frac1b\sum_{j=1}^b\sum_\beta
+ a_{e,j;\alpha\beta}X_{e,j,\beta}.
+\tag{3.6}
+\]
+
+Differentiation gives `X_{e,j,beta} mathsf Jg=sum_alpha a_{e,j;alpha beta} mathsf J X_{e,alpha}g`. Orthogonality of each adjoint matrix consequently proves
+
+\[
+Y_{e,\alpha}\mathsf Jg=\mathsf JX_{e,\alpha}g,
+\qquad \langle Y_{e,\alpha},Y_{f,\gamma}\rangle
+=b^{-1}\delta_{ef}\delta_{\alpha\gamma}.
+\tag{3.7}
+\]
+
+The inner product in (3.7) is the generator-coordinate coefficient inner product of the original sum of squares. Each coefficient in a summand of (3.6) is independent of the differentiated link `U_{e,j}`. Each `X` has Haar divergence zero. Hence every `Y` has Haar divergence zero.
+
+Define the actual centered density derivative
+
+\[
+S_{e,\alpha}=Y_{e,\alpha}\log\rho_n-
+\mathsf J(X_{e,\alpha}\log m).
+\tag{3.8}
+\]
+
+All these functions are smooth at each finite regulator. Integration by parts against a coarse smooth test function gives
+
+\[
+X_{e,\alpha}(m\mathsf E f)
+=m\mathsf E(Y_{e,\alpha}f+fY_{e,\alpha}\log\rho_n).
+\]
+
+Applying this to `f=1` and then substituting back proves
+
+\[
+\boxed{\mathsf E S_{e,\alpha}=0,\qquad
+X_{e,\alpha}\mathsf E f=
+\mathsf E(Y_{e,\alpha}f)+\mathsf E(fS_{e,\alpha}).}
+\tag{3.9}
+\]
+
+These component formulas hold on the full scalar spaces. Under gauge transformations their generator indices rotate by the endpoint adjoint matrices; the contracted expressions below preserve the physical invariant subspace.
+
+### 3.2 The full Dirichlet square identity
+
+For smooth physical `f`, put `g=mathsf E f`, `h=f-mathsf Jg`, and
+`v_{e,alpha}=mathsf E(hS_{e,alpha})`. Then `mathsf E h=0` and (3.9) gives `mathsf E Y_{e,alpha}h=-v_{e,alpha}`.
+
+Let `nabla_v` be the orthogonal complement of the fields in (3.7) in the original fine generator coordinates. More explicitly its chain component is
+
+\[
+(\nabla_v f)_{e,j,\beta}=X_{e,j,\beta}f-
+\sum_\alpha a_{e,j;\alpha\beta}Y_{e,\alpha}f,
+\tag{3.10}
+\]
+
+and its unused-edge components are the original `X f`. Squaring (3.10), using the adjoint identities, proves
+`sum |Xf|^2=b sum |Yf|^2+|nabla_v f|^2` pointwise. Also `nabla_v mathsf Jg=0`. Conditional expansion of each horizontal square now proves
+
+\[
+\boxed{\begin{aligned}
+q_{A_n}(\psi_n f)
+={}&\kappa_n b\int m\sum_{e,\alpha}|X_{e,\alpha}g-v_{e,\alpha}|^2dW\\
+&+\kappa_n b\int\rho_n\sum_{e,\alpha}
+ |Y_{e,\alpha}h+\mathsf Jv_{e,\alpha}|^2dU_n\\
+&+\kappa_n\int\rho_n|\nabla_vh|^2dU_n.
+\end{aligned}}
+\tag{3.11}
+\]
+
+The second line is exactly the conditional variance of `Yh`. The cross term retained in the expanded form is
+`-2 kappa_n b Re int m sum overline{Xg} mathsf E(hS)`.
+In particular the coarse cylindrical form is
+
+\[
+q_{A_n}(\psi_n\mathsf Jg)=\kappa_n b\int m\sum|Xg|^2dW,
+\quad
+\kappa_n b=\frac{2a_r}{a_n^2(g_0^{-2}+\beta n\log2)}.
+\tag{3.12}
+\]
+
+The represented coarse operator on smooth functions is
+`-kappa_n b m^{-1} sum X(m X)`; integrating by parts proves this expression directly. Equations (3.8) and (3.11) retain the entire fine-vacuum drift and the cross terms with fiber fluctuations.
+
+There is also a completely evaluated global bound for the density derivative. Orthogonality in (3.7) and conditional variance give
+
+\[
+\int\rho_n\sum|S|^2\le\frac4b\int\sum|X\psi_n|^2
+\le\frac{4E_{0,n}}{b\kappa_n}
+\le\frac{2|P_n|}{b g_n^4}.
+\tag{3.13}
+\]
+
+For the last step, the constant trial function has energy `|P_n|/(g_n^2 a_n)`: integrating any plaquette trace over one of its four distinct link variables gives zero. The potential is nonnegative, so the kinetic vacuum energy is at most `E_{0,n}`. The graph has `|P_n|=3(2L_n)^2(2L_n+1)`. Thus every regulator factor in this global bound is explicit.
+
+### 3.3 Split Zero and the full hierarchy
+
+Use the two cochain windows `0 -> H_f -> 0` and `ker mathsf E -> H_f -> 0`, with the second incoming map the actual inclusion. Here `H_f=L^2(rho_n dU_n)`, or its physical invariant subspace. The transition is the identity in the middle degree. The map
+
+\[
+H_f/\ker\mathsf E\longrightarrow H_c=L^2(m dW),
+\quad[f]\longmapsto\mathsf E f
+\tag{3.14}
+\]
+
+has inverse `g -> [mathsf Jg]`. Their compositions follow from `mathsf E mathsf J=I` and `f-mathsf J mathsf E f in ker mathsf E`. The transported-class kernel is exactly `ker mathsf E`; its boundary primitive is the original fluctuation `h`. Applying [SZ]'s two-support reconstruction records `(1,0)` together with that primitive. Equation (3.11) retains its full energy interaction.
+
+For fixed `n`, the projections for all coarse levels obey `mathsf P_r mathsf P_s=mathsf P_min(r,s)`: test the conditional integrals against an arbitrary function of the coarser ordered products and use Fubini. Therefore, with `d_0=mathsf P_0 f` and `d_r=(mathsf P_r-mathsf P_{r-1})f`,
+
+\[
+f=\sum_{r=0}^n d_r,\quad
+\operatorname{Var}_{\rho_n} f=\operatorname{Var}_{\rho_n}d_0+
+\sum_{r=1}^n\|d_r\|_{\rho_n}^2,
+\]
+\[
+q_{A_n}(\psi_n f)=\sum_{r,s=0}^n
+\kappa_n\int\rho_n\sum_{e,\alpha}
+\overline{X_{e,\alpha}d_r}X_{e,\alpha}d_s.
+\tag{3.15}
+\]
+
+The first identity uses orthogonal projections. The second retains every off-diagonal energy entry.
+
+## 4. A projective equal-time vacuum and its smooth sections
+
+Let `nu_{r,n}=(pi_{r,n})_*(rho_n dU_n)`. At every finite `n`, the exact product law gives
+`(pi_{r,s})_*nu_{s,n}=nu_{r,n}` for `r<s<=n`. Every `Q_r` is compact metric. Select a countable uniformly dense algebra of matrix-entry polynomials on each `Q_r`; diagonal subsequence selection for their bounded integrals gives one sequence `n_k` with weak limits `nu_r` for every `r`. Positivity and the bound by the uniform norm extend each limit functional to `C(Q_r)`, and its representing probability measure is `nu_r`. Testing against a continuous function proves `(pi_{r,s})_*nu_s=nu_r`.
+
+The inverse limit
+
+\[
+\mathfrak Q=\{(W_r)_{r\ge0}:\pi_{r,r+1}W_{r+1}=W_r\}
+\tag{4.1}
+\]
+
+is compact metric. Surjectivity of each (3.1) follows from (3.2). Compatible integration against `nu_r` defines a positive functional on its cylinder algebra. This algebra contains constants, is closed under conjugation, and separates points; uniform polynomial approximation and the representation of positive functionals therefore give a probability measure `nu` with all these marginals. Gauge invariance follows by change of variables at each finite level and passage to the same limits.
+
+Smooth connections map into `mathfrak Q` by their complete ordered edge holonomies. ODE concatenation proves compatibility. This image is dense: a nonempty cylinder neighborhood is detected at some finite level `r`, and (2.2) realizes any chosen configuration at that level by a smooth compactly supported connection. For each finite level the local section and its exact curvature cost remain (2.2) and (2.4).
+
+For any fixed cylindrical observables `O_i,O_j`, the complete equal-time Gram limit is consequently
+
+\[
+G^c_{ij}=\int\overline{O_i}O_j\,d\nu-
+\overline{\int O_i d\nu}\int O_jd\nu.
+\tag{4.2}
+\]
+
+The same diagonal selection can retain the positive-time correlations in [SR]. Their endpoint equation stays
+`E_infty=G^c-C(0+)`. Thus the equal-time measure, the finite-energy correlations, and the exact endpoint defect have now been put on one actual refinement subsequence. No value of `E_infty` is assigned by this construction.
+
+## 5. A regulator-uniform infrared Schur budget
+
+Take a fixed finite list of smooth bounded physical observables. Write
+
+\[
+r_{i,n}=(O_{i,n}-\langle\psi_n,O_{i,n}\psi_n\rangle)\psi_n,
+\quad R_{0,n}x=\sum_i x_i r_{i,n},\quad
+K_*=\sum_i\|O_i\|_\infty^2.
+\]
+
+The exact variance identity gives `R_{0,n}^*R_{0,n} preceq K_* I`.
+For a concrete six-vector frame, take the six positively oriented squares of physical side `a_0` in the `x^1,x^2` plane at `x^3=0`, with lower-left corners `a_0(-3,-3,0)`, `a_0(-1,-3,0)`, `a_0(1,-3,0)`, `a_0(-3,1,0)`, `a_0(-1,1,0)`, and `a_0(1,1,0)`. They lie in the original boxes and have disjoint edge sets; each loop uses exactly `4*2^n` fine edges. Take their complete ordered fundamental traces. Then `K_*=24`; independence follows by varying one edge in each loop while fixing all other links. Fix `tau>0`, set `R=e^{-tau A_n/2}R_{0,n}`, and use the following constructions for that six-vector frame. The heat multiplier is injective, so its raw Gram matrix `G=R^*R` is positive definite.
+
+Set
+
+\[
+P=RG^{-1}R^*,\quad Q=I-P,\quad K=R^*A_nR,\quad
+B=QA_nR,\quad D=QA_nQ\big|_{\operatorname{Dom}(A_n)\cap Q\mathcal H_n}.
+\tag{5.1}
+\]
+
+`D` is self-adjoint and nonnegative. Indeed `A_nP` is bounded finite rank since the range of `R` lies in every power domain of `A_n`. Its adjoint is the bounded extension of `PA_n`. Subtracting `QA_nP+PA_nQ` from `A_n` is a bounded self-adjoint perturbation with reducing subspaces `P,Q`; its Q restriction is `D`, and its quadratic form there equals that of `A_n`.
+
+For `s>0` define
+
+\[
+M(s)=B^*(D+s)^{-1}B,\quad F(s)=K+sG-M(s),\quad
+L(s)=R-(D+s)^{-1}B,
+\]
+\[
+d\sigma(\lambda)=B^*dE_D(\lambda)B.
+\tag{5.2}
+\]
+
+Substitution gives `Q(A_n+s)L=0`. Orthogonality to the range of R proves
+
+\[
+F=L^*(A_n+s)L,\quad F'=L^*L=G+B^*(D+s)^{-2}B,
+\quad R^*(A_n+s)^{-1}R=GF^{-1}G.
+\tag{5.3}
+\]
+
+In particular `F>=sG`, so `M(s)<=K` for every `s>0`. This also follows directly by inserting `Rx-(D+s)^{-1}Bx` into the positive quadratic form of `A_n`; its value is `x^*[K-M(s)-sB^*(D+s)^{-2}B]x`.
+
+Monotone convergence of the positive scalar contractions as `s downarrow0` now proves
+
+\[
+\boxed{\sigma(\{0\})=0,\qquad
+M(0):=\int_{(0,\infty)}\lambda^{-1}d\sigma(\lambda)\preceq K.}
+\tag{5.4}
+\]
+
+This proves inverse-energy integrability rather than imposing it. The heat multiplier maximum gives `K preceq K_* /(e tau) I`; for the six loops this is `24/(e tau) I`. It follows that
+
+\[
+\boxed{\sigma([0,\epsilon])\preceq\epsilon K
+\preceq\frac{24\epsilon}{e\tau}I\quad(\epsilon>0).}
+\tag{5.5}
+\]
+
+For `r>=1`, differentiation under the resolvent and (5.4) give the sharper bounds
+
+\[
+\boxed{
+0\preceq(-1)^rM^{(r)}(s)
+\preceq
+\frac{r!r^r}{(r+1)^{r+1}s^r}K
+\preceq\frac{24r!r^r}{e\tau(r+1)^{r+1}s^r}I,
+\qquad 0\preceq M(s)\preceq K.
+}
+\tag{5.6}
+\]
+
+Indeed write `d alpha=lambda^{-1}d sigma`. The derivative integrand is `r! lambda/(lambda+s)^{r+1}`. Its derivative in lambda is `(s-r lambda)/(lambda+s)^{r+2}`, so its maximum occurs at `lambda=s/r` and has precisely the displayed value. In particular
+
+\[
+\boxed{G\preceq F'(s)\preceq G+\frac{K}{4s},\qquad
+sF'(s)\preceq F(s).}
+\tag{5.7}
+\]
+
+The latter inequality also follows at once from (5.3) and `A_n>=0`.
+
+### 5.1 The inverse-energy endpoint and its exact retained class
+
+Restore the regulator suffix. Spectral calculus gives the additional bound
+`B_n^*B_n preceq 4K_* /(e^2 tau^2) I`. Let
+`d alpha_n=lambda^{-1}d sigma_n` on `(0,infty)`, with zero endpoint atoms initially. Its total matrix is at most `K_n`, and
+
+\[
+\alpha_n([\Lambda,\infty))\preceq
+\frac{4K_*}{e^2\tau^2\Lambda}I.
+\tag{5.8}
+\]
+
+Weak subsequence selection on `[0,infty]`, jointly with the previous selection, gives `alpha_n -> alpha`, `K_n -> K_infty`, and `S_n:=K_n-alpha_n([0,infty]) -> S_infty>=0`. Formula (5.8), tested with continuous tail cutoffs, proves `alpha({infty})=0`. Its possible atom at zero is retained as `Z_alpha=alpha({0})`.
+
+For `s>0` the function `lambda/(lambda+s)`, extended by zero at zero and by one at infinity, is continuous on this compactification. Hence
+
+\[
+M_\infty(s)=\int\frac{\lambda}{\lambda+s}d\alpha(\lambda),
+\qquad
+\boxed{F_\infty(0+)=S_\infty+Z_\alpha.}
+\tag{5.9}
+\]
+
+To prove the second equality, use `alpha(X)=lim M_n(0)`, `M_infty(0+)=alpha(X)-Z_alpha`, and `sG_n ->0` after the fixed-s regulator limit. Thus the endpoint correction is the exact difference between the two displayed zero-energy limit orders.
+
+For clarity, the ordinary memory limit satisfies `sigma_infty({0})=0` and `int_(0,infty) lambda^{-1}d sigma_infty<=K_infty`. The first assertion follows by testing (5.5) with shrinking continuous cutoffs. On each compact finite-energy interval, `d sigma_infty=lambda d alpha`; monotone cutoff integration proves the second. The atom `Z_alpha` remains visible in (5.9).
+
+On the vector space of finite complex measures on `[0,infty)`, the observation map
+
+\[
+\mathcal T\alpha(s)=\int\frac{\lambda}{\lambda+s}d\alpha(\lambda)
+\tag{5.10}
+\]
+
+has kernel exactly `C delta_0`. Here is the converse proof. Vanishing for every `s>0` and bounded convergence as `s downarrow0` show that the restriction to `(0,infty)` has total mass zero. Then `lambda/(lambda+s)=1-s/(lambda+s)` shows that its Stieltjes transform vanishes. Differentiation at `s=1` gives all integrals `(lambda+1)^{-k}`, `k>=1`; the total mass supplies k=0. The explicit coordinate `x=(1+lambda)^{-1}`, with inverse `lambda=x^{-1}-1`, transports these to all polynomial moments on `[0,1]`. Polynomial approximation proves that the restricted measure is zero. This argument applies entry by entry.
+
+The two-support windows `0 -> M ->0` and `C -> M ->0`, with incoming map `c -> c delta_0`, consequently have transported kernel `C delta_0`. Its actual primitive for the limit in (5.9) is each original matrix coordinate `(Z_alpha)_{ij}`. This is the inverse-energy Split Zero record.
+
+## 6. The regulator-state comparison and the escaping-label kernel
+
+Use one of the actual subsequences from [SR], jointly selected with §4. Let `z_{i,t,n}=e^{-tA_n}r_{i,n}` for positive rational times. The limiting symbols `z_{i,t}` span densely in the separable reconstructed space `H_obs`. Let `B_lim` be the vector space of bounded regulator-state sequences `(v_n)` for which every scalar limit
+`lim <z_{i,t,n},v_n>` exists. Omit finitely many indices preceding an observable's birth. Let `N` be its subspace with `||v_n|| ->0`.
+
+For a finite symbol sum z, define
+
+\[
+\ell_v(z)=\lim_n\langle z_n,v_n\rangle.
+\]
+
+Cauchy–Schwarz and convergence of `||z_n||` prove
+`|ell_v(z)|<=limsup ||v_n|| ||z||`. Therefore the Riesz representation theorem defines an actual linear map
+
+\[
+\boxed{\mathfrak b:B_{\rm lim}\longrightarrow H_{\rm obs},\qquad
+\langle z,\mathfrak b(v)\rangle=\ell_v(z),\quad
+\|\mathfrak b(v)\|\le\limsup_n\|v_n\|.}
+\tag{6.1}
+\]
+
+Its kernel is exactly
+
+\[
+\mathcal K=\{v:\lim_n\langle z_{i,t,n},v_n\rangle=0
+\text{ for every fixed }i,t\}.
+\tag{6.2}
+\]
+
+The map is onto. To prove this, approximate any `w in H_obs` by finite symbol sums `w_j` with error at most `2^{-j}`. Enumerate the rational-time test symbols. Choose increasing regulator thresholds `N_j` after all births in `w_j` so that, for all later regulators, the squared norm of its regulator counterpart differs from `||w_j||^2` by at most `2^{-j}`, and its first j test pairings differ from the limiting pairings by at most `2^{-j}`. Set `v_n` equal to the counterpart of `w_j` for `N_j<=n<N_{j+1}`, and zero before `N_1`. This sequence is bounded, has every test-pairing limit equal to that of w, and satisfies `||v_n|| -> ||w||`. Hence `mathfrak b(v)=w`.
+
+The exact cochain comparison is
+
+\[
+C_0:\quad\mathcal N\hookrightarrow B_{\rm lim}\longrightarrow0,
+\qquad C_1:\quad\mathcal K\hookrightarrow B_{\rm lim}\longrightarrow0.
+\]
+
+Use inclusion in degree zero and identity in degree one. Then
+
+\[
+\boxed{
+H^1(C_0)=B_{\rm lim}/\mathcal N,
+\quad H^1(C_1)\xrightarrow{\cong}H_{\rm obs},\ [v]\mapsto\mathfrak b(v),
+\quad\ker H^1(C_0\to C_1)=\mathcal K/\mathcal N.
+}
+\tag{6.3}
+\]
+
+The inverse is the class of any lift constructed above; two lifts differ by an element of `mathcal K`, which proves independence. The norm bound in (6.1) proves `N subset K`. This is a full typed comparison from regulator sequences, including its retained source relations, rather than an inference from density at each separate regulator.
+
+### 6.1 An exact commuting-observable test of escaping labels
+
+Define a finite test system `Omega_n={-1,1}^n` with its original product probability `2^{-n}`. Let `F_j` flip coordinate j and put
+
+\[
+A_n^{\rm test}=\sum_{j=1}^n\frac{c_{j,n}}2(I-F_j),\qquad
+c_{j,n}=1\ (j<n),\quad c_{n,n}=1/n.
+\tag{6.4}
+\]
+
+Constants are the unique vacuum. The ordered refinement map forgets the last coordinate, and its pullback preserves these product inner products. Multiplication by the Walsh functions
+`chi_S(omega)=prod_(j in S) omega_j`, for fixed finite nonempty S, is a bounded commuting observable of norm one. The exact identities are
+
+\[
+\langle\chi_S,\chi_T\rangle=\delta_{ST},\qquad
+A_n^{\rm test}\chi_S=\left(|S\setminus\{n\}|+
+\frac{\mathbf1_{n\in S}}n\right)\chi_S.
+\tag{6.5}
+\]
+
+The character basis spans the full space at each finite n. For every fixed S, its energy equals `|S|` at every `n>max S`; all fixed-label limiting correlations are consequently
+`delta_ST exp(-t |S|)`. The reconstructed centered generator has spectral bottom one. The actual regulator states
+
+\[
+v_n=\chi_{\{n\}},\quad \|v_n\|=1,\quad
+\langle v_n,A_n^{\rm test}v_n\rangle=1/n,
+\quad \mathfrak b(v)=0
+\tag{6.6}
+\]
+
+satisfy the last equality because every fixed-label pairing is eventually zero. Thus their class is an explicitly nonzero element of `mathcal K/N`, with its complete energy sequence retained. Equations (6.4)–(6.6) are algebraic test data; they assign no numerical value to a Yang–Mills gap.
+
+In [SR] §5 replace the sentence beginning “A sequence of low-energy states approaching zero is therefore recorded” by the exact statement: “The spectral-support and large-time formulas determine the reconstructed fixed-label observable sector. The regulator-state comparison has the retained kernel `K/N` constructed in the vacuum-refinement continuation, §6; equation (6.6) computes an escaping-label class together with its norm and energy sequence.” The previous spectral-support and Laplace-principle formulas remain as written.
+
+Two further notation corrections are recorded for [SR]: in §1 use
+`||A_n^q exp(-tA_n)||=sup_(lambda in sigma(A_n)) lambda^q exp(-t lambda) <= sup_(lambda>=0) lambda^q exp(-t lambda)`; and in §4 define the matrix imaginary part as `(R(z)-R(z)^*)/(2i)`. The latter retains complex off-diagonal spectral entries in the stated polarization argument.
+
+## 7. Verification and mathematical scope
+
+`verify.py` checks exact rational SU(2) chain and adjoint identities, the raw nonorthogonal Schur formulas and inverse-energy budget on declared finite fixtures, the derivative constants, a conditional-density square calculation, and the full Walsh escaping-label calculation. Its finite fixtures check specified algebraic identities. The measure, domain, smooth-section, and limit statements are proved in the text above; they are not claimed as outputs of those finite tests.
+
+This continuation supplies explicit smooth extensions with an energy cost, an actual vacuum-marginal refinement hierarchy with all cross terms, a projective equal-time limit, uniform infrared memory bounds, and the complete regulator-state comparison kernel. The quantities `rho_n`, the zero-energy inverse-memory matrix `Z_alpha`, and the interacting low-energy state content of `K/N` have not been numerically determined here. A nontrivial four-dimensional continuum Yang–Mills field and a positive physical continuum mass lower bound have not been established by this contribution.

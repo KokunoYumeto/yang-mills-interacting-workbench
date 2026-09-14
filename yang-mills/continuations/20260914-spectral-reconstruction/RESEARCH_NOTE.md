@@ -38,7 +38,8 @@ with the `q=0` factor interpreted as one. Indeed
 `||r_{i,n}||<=2||O_i||_infty`, and
 
 \[
- \|A_n^qe^{-tA_n}\|=\sup_{\lambda\ge0}\lambda^qe^{-t\lambda}
+ \|A_n^qe^{-tA_n}\|=\sup_{\lambda\in\sigma(A_n)}\lambda^qe^{-t\lambda}
+ \le\sup_{\lambda\ge0}\lambda^qe^{-t\lambda}
  =\left(\frac{q}{et}\right)^q.
 \]
 
@@ -197,7 +198,7 @@ Every entry is finite and analytic on `Re s>0`. Let
 
 On the negative real axis `R(-s)=S(s)`, so the analytic function `R` is uniquely fixed by the retained positive-time data.
 
-For `0<a<b<infty`, entrywise integration of the Poisson kernel gives
+Use the matrix imaginary part `Im R(z)=(R(z)-R(z)^*)/(2i)`, which retains the complex off-diagonal entries of the spectral measure. For `0<a<b<infty`, entrywise integration of the Poisson kernel gives
 
 \[
  \boxed{
@@ -257,7 +258,7 @@ Combining this with the spectral-support equality yields the exact observable-se
  }
 \]
 
-All centered Wilson/spin-network labels remain present. A sequence of low-energy states approaching zero is therefore recorded as spectral mass moving toward zero in at least one diagonal continuum measure; a positive lower spectral edge is recorded by the common large-time exponential edge of the total countable system.
+All centered Wilson/spin-network labels remain present. The spectral-support and large-time formulas determine the reconstructed fixed-label observable sector. The regulator-state comparison has the retained kernel `K/N` constructed in [the vacuum-refinement continuation, Section 6](../20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md#6-the-regulator-state-comparison-and-the-escaping-label-kernel); its equation (6.6) computes an escaping-label class together with its norm and energy sequence.
 
 ## 6. Retaining the energy-infinity endpoint
 
