@@ -1,0 +1,67 @@
+{
+  "all_passed": true,
+  "local_public_github_download": "DNS resolution failed; authenticated connector publication used",
+  "new_lean_run": false,
+  "parent_replay": {
+    "byte_identical": true,
+    "check_count": 56,
+    "historical_receipt_verified": true,
+    "negative_count": 17,
+    "optimized_exit": 0,
+    "ordinary_exit": 0
+  },
+  "receipt_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075",
+  "remote_ci_run_observed": false,
+  "repository_catalogue_regenerated": false,
+  "results": [
+    {
+      "exit_code": 0,
+      "kind": "clean-replay",
+      "mode": "ordinary",
+      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
+    },
+    {
+      "exit_code": 1,
+      "kind": "continuum_gap_proved",
+      "mode": "ordinary",
+      "rejected_by": "unsupported-continuum-claim"
+    },
+    {
+      "exit_code": 1,
+      "kind": "analytic_machine_checked",
+      "mode": "ordinary",
+      "rejected_by": "unsupported-analytic-claim"
+    },
+    {
+      "exit_code": 1,
+      "kind": "tampered-receipt",
+      "mode": "ordinary",
+      "rejected_by": "receipt-drift"
+    },
+    {
+      "exit_code": 0,
+      "kind": "clean-replay",
+      "mode": "optimized",
+      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
+    },
+    {
+      "exit_code": 1,
+      "kind": "continuum_gap_proved",
+      "mode": "optimized",
+      "rejected_by": "unsupported-continuum-claim"
+    },
+    {
+      "exit_code": 1,
+      "kind": "analytic_machine_checked",
+      "mode": "optimized",
+      "rejected_by": "unsupported-analytic-claim"
+    },
+    {
+      "exit_code": 1,
+      "kind": "tampered-receipt",
+      "mode": "optimized",
+      "rejected_by": "receipt-drift"
+    }
+  ],
+  "schema": "ym-coupled-response-execution-v1"
+}
