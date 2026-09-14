@@ -61,7 +61,7 @@ Then `H(x+lambda)=H(x)` and
 H(Ax+v/m)=e^{-2\pi i\epsilon(\gamma(x)+\epsilon/m)}=\zeta H(x).
 \]
 
-Consequently the quotient-line maps
+The retained deck actions on the total line are `(x,z) -> (x+lambda,z)` and `(x,z) -> (Ax+v/m,zeta z)`. Consequently the quotient-line maps
 
 \[
 [x,z]\longmapsto([x],z/H(x)),\qquad
@@ -406,7 +406,7 @@ For `r>=1`, differentiation under the resolvent and (5.4) give the sharper bound
 \tag{5.6}
 \]
 
-Indeed write `d alpha=lambda^{-1}d sigma`. The derivative integrand is `r! lambda/(lambda+s)^{r+1}`. Its derivative in lambda is `(s-r lambda)/(lambda+s)^{r+2}`, so its maximum occurs at `lambda=s/r` and has precisely the displayed value. In particular
+Indeed write `d alpha=lambda^{-1}d sigma`. The derivative integrand is `r! lambda/(lambda+s)^{r+1}`. The derivative of `lambda/(lambda+s)^{r+1}` in lambda is `(s-r lambda)/(lambda+s)^{r+2}`, so the maximum of the derivative integrand occurs at `lambda=s/r` and has precisely the displayed value. In particular
 
 \[
 \boxed{G\preceq F'(s)\preceq G+\frac{K}{4s},\qquad
@@ -428,7 +428,7 @@ Restore the regulator suffix. Spectral calculus gives the additional bound
 \tag{5.8}
 \]
 
-Weak subsequence selection on `[0,infty]`, jointly with the previous selection, gives `alpha_n -> alpha`, `K_n -> K_infty`, and `S_n:=K_n-alpha_n([0,infty]) -> S_infty>=0`. Formula (5.8), tested with continuous tail cutoffs, proves `alpha({infty})=0`. Its possible atom at zero is retained as `Z_alpha=alpha({0})`.
+Weak subsequence selection on `[0,infty]`, jointly with the previous selection, gives `alpha_n -> alpha`, `sigma_n -> sigma_infty`, `G_n -> G_infty`, `K_n -> K_infty`, and `S_n:=K_n-alpha_n([0,infty]) -> S_infty>=0`. Formula (5.8), tested with continuous tail cutoffs, proves `alpha({infty})=0`. Its possible atom at zero is retained as `Z_alpha=alpha({0})`.
 
 For `s>0` the function `lambda/(lambda+s)`, extended by zero at zero and by one at infinity, is continuous on this compactification. Hence
 
