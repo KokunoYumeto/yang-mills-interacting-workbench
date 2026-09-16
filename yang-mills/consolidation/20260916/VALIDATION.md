@@ -1,4 +1,4 @@
-# Validation of the 14â€“16 September consolidation
+# Validation of the 14–16 September consolidation
 
 ## Fresh computation
 
@@ -7,7 +7,7 @@ All eleven top-level delivery-replay commands completed with exit code zero in t
 | Checker family | Named positive checks | False-formula controls | Fresh comparison |
 | --- | ---: | ---: | --- |
 | Research-control | 56 | 17 | Ordinary and optimized output match the original complete receipt. |
-| Vacuum refinement | 181 | â€” | Ordinary and optimized output match each other; the six comparable fields agree with the historical summary. |
+| Vacuum refinement | 181 | — | Ordinary and optimized output match each other; the six comparable fields agree with the historical summary. |
 | Coupled response | 189 | 12 | Ordinary and optimized output match the original complete receipt. |
 | Actual loop moments | 134 | 12 | Ordinary and optimized output match the original complete receipt. |
 | Uniform gap / zero shift | 273 | 35 | Full replay, including predecessor and 18 intended CLI rejections, passed. |
