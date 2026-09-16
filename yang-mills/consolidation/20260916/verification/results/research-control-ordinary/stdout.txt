@@ -1,0 +1,166 @@
+{
+  "analytic_proof_checked": false,
+  "arithmetic": "exact rational; Python standard library",
+  "cached_sources": [],
+  "check_count": 56,
+  "checked_state_sha256": "cbd3f217d5e719ae9abbb644e4b4639575f72b147c7a9121833425d1e4a85c7c",
+  "checks": [
+    "research-record-structure",
+    "conditional-right-inverse",
+    "conditional-adjoint-raw-measure",
+    "conditional-state-orthogonality",
+    "minimum-section-independent-kkt",
+    "minimum-section-right-inverse",
+    "minimum-section-energy-gram",
+    "composite-minimum-section",
+    "composite-minimum-energy",
+    "kernel-basis-exact",
+    "score-coupling-minimum-section-sign",
+    "score-response-schur-form",
+    "restored-state-metric-derivative",
+    "full-rectangular-residual-gram",
+    "full-state-gram-including-mixed",
+    "canonical-kernel-correction",
+    "raw-frame-section-inverse",
+    "raw-frame-observation-energy",
+    "raw-frame-state-metric",
+    "empty-observation-retained",
+    "score-conditional-mean-zero",
+    "score-integrated-fisher-identity",
+    "conditional-cauchy-schwarz-0",
+    "conditional-cauchy-schwarz-1",
+    "conditional-cauchy-schwarz-2",
+    "local-score-coefficient-1-1/128",
+    "local-score-coefficient-1-1/64",
+    "local-score-coefficient-1-1",
+    "local-score-coefficient-1-7",
+    "local-score-coefficient-2-1/128",
+    "local-score-coefficient-2-1/64",
+    "local-score-coefficient-2-1",
+    "local-score-coefficient-2-7",
+    "local-score-coefficient-4-1/128",
+    "local-score-coefficient-4-1/64",
+    "local-score-coefficient-4-1",
+    "local-score-coefficient-4-7",
+    "local-score-coefficient-8-1/128",
+    "local-score-coefficient-8-1/64",
+    "local-score-coefficient-8-1",
+    "local-score-coefficient-8-7",
+    "local-score-coefficient-16-1/128",
+    "local-score-coefficient-16-1/64",
+    "local-score-coefficient-16-1",
+    "local-score-coefficient-16-7",
+    "delayed-observation-complete-stack",
+    "permanent-kernel-retained",
+    "collatz-polynomial-fiber--2",
+    "collatz-polynomial-fiber-0",
+    "collatz-polynomial-fiber-1",
+    "collatz-polynomial-fiber-3",
+    "collatz-polynomial-fiber-5",
+    "collatz-killed-polynomial-retained",
+    "rare-fiber-score-mean-zero",
+    "rare-fiber-integrated-versus-pointwise",
+    "unchanged-source-intake"
+  ],
+  "continuum_gap_proved": false,
+  "fixture_scope": "finite weighted-graph, matrix, polynomial and metadata fixtures; not evaluated Yang-Mills vacuum integrals",
+  "lean_run_performed": false,
+  "local_inputs": {
+    "AGENTS.md": "c11d0cdf714566c36a5a0ea35d1d5349e06ec7c2aaab5bfc24cbbfacd78303ad",
+    "research-control/RESEARCH_NOTE.md": "67454e30bc6a0a5f24ef2b63aac16ea05cd4b9fcc087688d351f7b0191a016ec",
+    "research-control/WORKFLOW.md": "bfd86146c808915f754ac74c0ee218bd7a4382531a61c2e4c58b14e58fa9e3d5",
+    "research-control/check.py": "068e763b341e7c054cb3a4a48fc240e10e250d673646add2a6169da6bbd610a6",
+    "research-control/state.json": "cbd3f217d5e719ae9abbb644e4b4639575f72b147c7a9121833425d1e4a85c7c"
+  },
+  "negative_controls": [
+    {
+      "false_claim_accepted": false,
+      "name": "fixed-section-as-energy-minimum",
+      "rejected_by": "fixed-section"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "drop-state-mixed-entries",
+      "rejected_by": "state-cross-term"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "naive-middle-form-in-tower",
+      "rejected_by": "middle-form"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "replace-raw-norm-by-identity",
+      "rejected_by": "raw-metric"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "integrated-score-as-pointwise-bound",
+      "rejected_by": "integral-to-supremum"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "one-step-kernel-as-permanent",
+      "rejected_by": "observed-iterates"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "specialization-recovers-history",
+      "rejected_by": "specialization-fiber"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "delete-kernel-energy-coupling",
+      "rejected_by": "energy-cross-term"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "duplicate-json-key",
+      "rejected_by": "duplicate-json-key"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "source-pin",
+      "rejected_by": "source-pin"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "evidence-promotion",
+      "rejected_by": "evidence-upgrade"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "continuum-promotion",
+      "rejected_by": "unsupported-continuum-claim"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "missing-physical-factor",
+      "rejected_by": "physical-constants"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "dangling-claim",
+      "rejected_by": "dangling-claim"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "missing-proof-anchor",
+      "rejected_by": "proof-anchor-body"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "path-escape",
+      "rejected_by": "source-path"
+    },
+    {
+      "false_claim_accepted": false,
+      "name": "changed-peer-head",
+      "rejected_by": "source-drift:yang-mills:main"
+    }
+  ],
+  "negative_count": 17,
+  "parent_source": "pinned bytes matched",
+  "schema": "ym-control-execution-v1",
+  "status": "passed"
+}

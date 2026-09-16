@@ -1,0 +1,1516 @@
+{
+  "schema": "ym-web-consolidation-provenance-v1",
+  "baseline_commit": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
+  "inputs": [
+    {
+      "filename": "ChatGPT-Research Yang Mills Workbench-20260916-2152.md",
+      "bytes": 224625,
+      "sha256": "7738120184cd5c3080637eabef0680a730bb5fe97ad054a0832a0cd3238766dd"
+    },
+    {
+      "filename": "yang_mills_actual_loop_moments.zip",
+      "bytes": 143305,
+      "sha256": "f31503f558d40b550e0afdbd1326d75aecae9bef63321341962be549228bed33"
+    },
+    {
+      "filename": "yang_mills_actual_loop_moments.patch",
+      "bytes": 94446,
+      "sha256": "ba5446e15b4e0d31320bab7f499a1f8304bb08113e3b8c3e497fb88e06c1d6fa"
+    },
+    {
+      "filename": "yang_mills_gauge_native_continuation.zip",
+      "bytes": 521773,
+      "sha256": "19040fd3e72c7a3c0a7a084375b0fe3bace560791ca7054af96c2f629182b323"
+    },
+    {
+      "filename": "yang_mills_cubic_linearized.zip",
+      "bytes": 93170,
+      "sha256": "c031cab99f782c7025000a2bee1bc7afb9c53d39a3651d4da8c41a876a51d2ef"
+    },
+    {
+      "filename": "yang_mills_cubic_linearized (1).zip",
+      "bytes": 93170,
+      "sha256": "c031cab99f782c7025000a2bee1bc7afb9c53d39a3651d4da8c41a876a51d2ef"
+    },
+    {
+      "filename": "yang_mills_cubic_linearized.patch",
+      "bytes": 102452,
+      "sha256": "ff3374f8c4f5d2fb13c313311df7e549058537d416ddc9a970444d0fcddea150"
+    },
+    {
+      "filename": "ZETA_SEVEN_OBSERVABLE_20260916.patch",
+      "bytes": 570101,
+      "sha256": "50f5903bba72da27b8ca25a159d1ee72e52db11ea93cc6b7fe9d35605a4288b7",
+      "content_identity": "Identical to yang_mills_gauge_native_continuation.patch in the gauge-native ZIP; filename is not the subject of its contents.",
+      "already_integrated": true
+    }
+  ],
+  "file_origins": [
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/ATTEMPTS.md",
+      "sha256": "5d0cd27d0b2712dd21d6d7cfd0a5439f3faf1b48584cd684de5800a8635ce8ee",
+      "bytes": 1456,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/README.md",
+      "sha256": "6e469324e863518195f04fce444be17a07f9171e847fcf76328d1ab0219ad0c4",
+      "bytes": 1507,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md",
+      "sha256": "b787a444d6c3995ac39fbc71a4f114478cad824172c40e33a32930661a771433",
+      "bytes": 16010,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/check.py",
+      "sha256": "17a4c442115288664499aa654726f5b6fb65353b484522fa6fa5f184f7dcf513",
+      "bytes": 12581,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/check.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/execution.json",
+      "sha256": "6eb9c93bd9f410f7acd95a6a6b068ea921a7541e98a1150a2b8f7ca449041766",
+      "bytes": 1814,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/intake-final.json",
+      "sha256": "02768255347e2f1cb3d9723ea1bcec230c58978f2462720616daf9b19167195c",
+      "bytes": 1053,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/intake-final.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/state.json",
+      "sha256": "3d9d90448bc842553634777e938f15f551b22638087aee75965900cbdf7941fd",
+      "bytes": 5120,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/verification.json",
+      "sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075",
+      "bytes": 9888,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md",
+      "previous_sha256": "e8a891792c12e0ce1f097f360087111681e518fc3d70a056582a6e53af233a00",
+      "event": "replaces-baseline-version"
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md",
+      "sha256": "5fffd882e97df0499263875d344f40935561106f0389077b2f832a7c3c568ba0",
+      "bytes": 10644,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-spectral-reconstruction/check_hausdorff_reconstruction.py",
+      "sha256": "5c6ae2c0a4c670d37b7a6db3360853c8dea3d7f1d77b8c670beef885ecf26bbc",
+      "bytes": 2144,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-spectral-reconstruction/check_hausdorff_reconstruction.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/ATTEMPTS.md",
+      "sha256": "67bedb5778124f56fb7c58cb69d8b12e19346bd8752eb07ceba9e65418e7ffd5",
+      "bytes": 1518,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/README.md",
+      "sha256": "7f5b1a3af80c59dee2ff02f7a76582f993eab1be6de425bbbc8201672147bb34",
+      "bytes": 930,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md",
+      "sha256": "0874d0d59e0fecec8d5fcd88b33918515e635fe22c27b3bd56ae0b3c4cb782c0",
+      "bytes": 27832,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verification-summary.json",
+      "sha256": "b1ecb0e01767d6c6ee004653d4a0a3907e8c86fef84e2f7060039fc809bf8046",
+      "bytes": 792,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verification-summary.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py",
+      "sha256": "4b0627eabb40997b8d1a0a972666d0ac5511e11caeeddbe19da5d89e30bb5a8b",
+      "bytes": 13515,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md",
+      "sha256": "d1e8fa24ce573ad1adfdaeecbb2ee6bfa1631717f9ce22b0f66d838981d5f240",
+      "bytes": 21186,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md",
+      "sha256": "931d8d2824062c6435dfe324cb9145bc6d8e7a450d37aa5f86a94f1190190453",
+      "bytes": 20675,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/README.md",
+      "sha256": "2fbb9f300d29ad35efd1ea3b2c9d07b29185308f3aeaefbfaf2738d180597a18",
+      "bytes": 2929,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json",
+      "sha256": "23849c8a138107a287fd2b28f0e16d43056f80333ef1eb605df786c988c15eb9",
+      "bytes": 2485,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md",
+      "sha256": "7bd1e91cbe38efa7e4415b347e4883d1d0c607b4d4a68a0bb593b6ccd7012039",
+      "bytes": 1283,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md",
+      "sha256": "9e435ee7f01042e8cea777a01246267239d2b384474959bdd555de02fc56822c",
+      "bytes": 1831,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py",
+      "sha256": "de1d9841ebd4655194801cc053bc1f71393433e8c241d0d88cdae65fc82f7c9f",
+      "bytes": 5495,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/execution.json",
+      "sha256": "1644b4ac46918691bba6dd11093cbe1c54d087c5d89d1a2aac35316b5aa9b1e2",
+      "bytes": 5814,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/geometry.py",
+      "sha256": "bd878efd339f05f320d051bee760bff0934ccfca10e9a2c1e6f26941a128cc1e",
+      "bytes": 2670,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/geometry.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py",
+      "sha256": "deeb7f0ca35596543738d84ef45a6799c13dfcadfcca4cb5eecc23e618e5db74",
+      "bytes": 2312,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/publication_replay.json",
+      "sha256": "caaa5ffa03fcffe7a593882c1304785a25dfe1cb6d4d0a6a2238e022e7622d6c",
+      "bytes": 1434,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/publication_replay.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/replay.py",
+      "sha256": "13f8d2e9c6f2717071de8c2c8c1afac2c342ede9f244f873b76ecee480fcb6d8",
+      "bytes": 3377,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/replay.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/state.json",
+      "sha256": "310162656f69b84b8059d6e201a867c0ef632492058cc43838191526419c5a1d",
+      "bytes": 2022,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/verify.py",
+      "sha256": "45bd9ff364efc4d41b205702472ba0557d9248335bf4f6b879f55f1d2bec0502",
+      "bytes": 19006,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/continuations/20260916-cubic-linearized/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/ATTEMPTS.md",
+      "sha256": "e026fa0599d71ddee6f8e661806eb304c9574a15ede8035eb666b659cd454594",
+      "bytes": 1499,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/consolidation/20260916/provenance/CURRENT-pr8.md",
+      "sha256": "2e07c1b5db6714f0837591df138d3a86b4a42f72561154a727d4333d3d992b49",
+      "bytes": 1792,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/CURRENT.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/RESEARCH_NOTE.md",
+      "sha256": "67454e30bc6a0a5f24ef2b63aac16ea05cd4b9fcc087688d351f7b0191a016ec",
+      "bytes": 17453,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/STATUS.md",
+      "sha256": "da6466575f5732d0a514d549965f57c15d4ca2448c0dd6cd267e68f1e47015f1",
+      "bytes": 2623,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/STATUS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/WORKFLOW.md",
+      "sha256": "bfd86146c808915f754ac74c0ee218bd7a4382531a61c2e4c58b14e58fa9e3d5",
+      "bytes": 7070,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/WORKFLOW.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/check.py",
+      "sha256": "068e763b341e7c054cb3a4a48fc240e10e250d673646add2a6169da6bbd610a6",
+      "bytes": 16692,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/check.py"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/state.json",
+      "sha256": "cbd3f217d5e719ae9abbb644e4b4639575f72b147c7a9121833425d1e4a85c7c",
+      "bytes": 11390,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/verification.json",
+      "sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed",
+      "bytes": 5387,
+      "origin": {
+        "id": "pr8",
+        "git_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+        "git_path": "yang-mills/research-control/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/ATTEMPTS.md",
+      "sha256": "5d0cd27d0b2712dd21d6d7cfd0a5439f3faf1b48584cd684de5800a8635ce8ee",
+      "bytes": 1456,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/README.md",
+      "sha256": "6e469324e863518195f04fce444be17a07f9171e847fcf76328d1ab0219ad0c4",
+      "bytes": 1507,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md",
+      "sha256": "b787a444d6c3995ac39fbc71a4f114478cad824172c40e33a32930661a771433",
+      "bytes": 16010,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/check.py",
+      "sha256": "17a4c442115288664499aa654726f5b6fb65353b484522fa6fa5f184f7dcf513",
+      "bytes": 12581,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/check.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/execution.json",
+      "sha256": "6eb9c93bd9f410f7acd95a6a6b068ea921a7541e98a1150a2b8f7ca449041766",
+      "bytes": 1814,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/intake-final.json",
+      "sha256": "02768255347e2f1cb3d9723ea1bcec230c58978f2462720616daf9b19167195c",
+      "bytes": 1053,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/intake-final.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/state.json",
+      "sha256": "3d9d90448bc842553634777e938f15f551b22638087aee75965900cbdf7941fd",
+      "bytes": 5120,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/verification.json",
+      "sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075",
+      "bytes": 9888,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-coupled-response/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md",
+      "sha256": "5fffd882e97df0499263875d344f40935561106f0389077b2f832a7c3c568ba0",
+      "bytes": 10644,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-spectral-reconstruction/check_hausdorff_reconstruction.py",
+      "sha256": "5c6ae2c0a4c670d37b7a6db3360853c8dea3d7f1d77b8c670beef885ecf26bbc",
+      "bytes": 2144,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-spectral-reconstruction/check_hausdorff_reconstruction.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/ATTEMPTS.md",
+      "sha256": "67bedb5778124f56fb7c58cb69d8b12e19346bd8752eb07ceba9e65418e7ffd5",
+      "bytes": 1518,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/README.md",
+      "sha256": "7f5b1a3af80c59dee2ff02f7a76582f993eab1be6de425bbbc8201672147bb34",
+      "bytes": 930,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md",
+      "sha256": "0874d0d59e0fecec8d5fcd88b33918515e635fe22c27b3bd56ae0b3c4cb782c0",
+      "bytes": 27832,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verification-summary.json",
+      "sha256": "b1ecb0e01767d6c6ee004653d4a0a3907e8c86fef84e2f7060039fc809bf8046",
+      "bytes": 792,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verification-summary.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py",
+      "sha256": "4b0627eabb40997b8d1a0a972666d0ac5511e11caeeddbe19da5d89e30bb5a8b",
+      "bytes": 13515,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-zero-shift-local-fibres-review/DELIVERED_RESEARCH_NOTE.md",
+      "sha256": "42aa9ab14a4b42ba9d170803fb0f9ce9f0d1d763d10139b3a15f9ba317543e55",
+      "bytes": 45674,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260915-zero-shift-local-fibres-review/DELIVERED_RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-zero-shift-local-fibres-review/README.md",
+      "sha256": "9023c33327d5ad575303cfdbb584ca148544f01842d27a73236fa73731f8bde9",
+      "bytes": 3489,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/continuations/20260915-zero-shift-local-fibres-review/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/ATTEMPTS.md",
+      "sha256": "e026fa0599d71ddee6f8e661806eb304c9574a15ede8035eb666b659cd454594",
+      "bytes": 1499,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/consolidation/20260916/provenance/CURRENT-pr7.md",
+      "sha256": "0fe2678fd2f4bdc882006cefed3912ca9c2987d845cd975e9c22b756ecf4b53a",
+      "bytes": 1124,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/CURRENT.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/RESEARCH_NOTE.md",
+      "sha256": "67454e30bc6a0a5f24ef2b63aac16ea05cd4b9fcc087688d351f7b0191a016ec",
+      "bytes": 17453,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/STATUS.md",
+      "sha256": "da6466575f5732d0a514d549965f57c15d4ca2448c0dd6cd267e68f1e47015f1",
+      "bytes": 2623,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/STATUS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/WORKFLOW.md",
+      "sha256": "bfd86146c808915f754ac74c0ee218bd7a4382531a61c2e4c58b14e58fa9e3d5",
+      "bytes": 7070,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/WORKFLOW.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/check.py",
+      "sha256": "068e763b341e7c054cb3a4a48fc240e10e250d673646add2a6169da6bbd610a6",
+      "bytes": 16692,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/check.py"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/state.json",
+      "sha256": "cbd3f217d5e719ae9abbb644e4b4639575f72b147c7a9121833425d1e4a85c7c",
+      "bytes": 11390,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/verification.json",
+      "sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed",
+      "bytes": 5387,
+      "origin": {
+        "id": "pr7",
+        "git_commit": "dd2cefd8445a014b1515897c0b19fd1c4f46757a",
+        "git_path": "yang-mills/research-control/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md",
+      "sha256": "dcf97352da0603c5a60e3da382a6ac2396f076921229557209dcde9443846f46",
+      "bytes": 1758,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/execution.json",
+      "sha256": "559573eea8a49a25e0cd8d58d03a16833c4253d7d04ff947f9faebff2971bcab",
+      "bytes": 5742,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/README.md",
+      "sha256": "bcf566904aa084df6000b25d8c9c00192e9a5f2f21ab72545563df001f8cc3ce",
+      "bytes": 2657,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md",
+      "sha256": "0ac4afbec39b2e878d5555af85a86803d9ba6ac5505dc7817f231e5533c0dd2b",
+      "bytes": 40933,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/state.json",
+      "sha256": "de88ddc9907c3172d94b7f0082164e5b76bf956073dba534a59bff5255b8a2b9",
+      "bytes": 4433,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/STATUS.md",
+      "sha256": "65e18c427308572fe668b5b190ad6bd56f9010811d7ee432788ddf3225c8d62c",
+      "bytes": 3140,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/STATUS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/verification.json",
+      "sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a",
+      "bytes": 10070,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+      "sha256": "690f3cd1de505aae7d152bcb4ce97a032ea2a1c72f8cb8a2c68bd4d4578bb042",
+      "bytes": 18437,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/consolidation/20260916/provenance/CURRENT-actual-loop.md",
+      "sha256": "60440fcf2c67e7aef6ac849aec4bad6b5b82aca821239ab91f8f8e206920729b",
+      "bytes": 1310,
+      "origin": {
+        "id": "actual-loop",
+        "archive": "yang_mills_actual_loop_moments.zip",
+        "member": "yang-mills/research-control/CURRENT.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/ATTEMPTS.md",
+      "sha256": "5d0cd27d0b2712dd21d6d7cfd0a5439f3faf1b48584cd684de5800a8635ce8ee",
+      "bytes": 1456,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/check.py",
+      "sha256": "17a4c442115288664499aa654726f5b6fb65353b484522fa6fa5f184f7dcf513",
+      "bytes": 12581,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/check.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/execution.json",
+      "sha256": "6eb9c93bd9f410f7acd95a6a6b068ea921a7541e98a1150a2b8f7ca449041766",
+      "bytes": 1814,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/intake-final.json",
+      "sha256": "02768255347e2f1cb3d9723ea1bcec230c58978f2462720616daf9b19167195c",
+      "bytes": 1053,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/intake-final.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/README.md",
+      "sha256": "6e469324e863518195f04fce444be17a07f9171e847fcf76328d1ab0219ad0c4",
+      "bytes": 1507,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md",
+      "sha256": "b787a444d6c3995ac39fbc71a4f114478cad824172c40e33a32930661a771433",
+      "bytes": 16010,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/state.json",
+      "sha256": "3d9d90448bc842553634777e938f15f551b22638087aee75965900cbdf7941fd",
+      "bytes": 5120,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-coupled-response/verification.json",
+      "sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075",
+      "bytes": 9888,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-coupled-response/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md",
+      "sha256": "5fffd882e97df0499263875d344f40935561106f0389077b2f832a7c3c568ba0",
+      "bytes": 10644,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-spectral-reconstruction/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/ATTEMPTS.md",
+      "sha256": "67bedb5778124f56fb7c58cb69d8b12e19346bd8752eb07ceba9e65418e7ffd5",
+      "bytes": 1518,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-vacuum-refinement-infrared/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/README.md",
+      "sha256": "7f5b1a3af80c59dee2ff02f7a76582f993eab1be6de425bbbc8201672147bb34",
+      "bytes": 930,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-vacuum-refinement-infrared/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md",
+      "sha256": "0874d0d59e0fecec8d5fcd88b33918515e635fe22c27b3bd56ae0b3c4cb782c0",
+      "bytes": 27832,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verification-summary.json",
+      "sha256": "b1ecb0e01767d6c6ee004653d4a0a3907e8c86fef84e2f7060039fc809bf8046",
+      "bytes": 792,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verification-summary.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py",
+      "sha256": "4b0627eabb40997b8d1a0a972666d0ac5511e11caeeddbe19da5d89e30bb5a8b",
+      "bytes": 13515,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md",
+      "sha256": "dcf97352da0603c5a60e3da382a6ac2396f076921229557209dcde9443846f46",
+      "bytes": 1758,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/execution.json",
+      "sha256": "559573eea8a49a25e0cd8d58d03a16833c4253d7d04ff947f9faebff2971bcab",
+      "bytes": 5742,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/README.md",
+      "sha256": "bcf566904aa084df6000b25d8c9c00192e9a5f2f21ab72545563df001f8cc3ce",
+      "bytes": 2657,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md",
+      "sha256": "0ac4afbec39b2e878d5555af85a86803d9ba6ac5505dc7817f231e5533c0dd2b",
+      "bytes": 40933,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/state.json",
+      "sha256": "de88ddc9907c3172d94b7f0082164e5b76bf956073dba534a59bff5255b8a2b9",
+      "bytes": 4433,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/STATUS.md",
+      "sha256": "65e18c427308572fe668b5b190ad6bd56f9010811d7ee432788ddf3225c8d62c",
+      "bytes": 3140,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/STATUS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/verification.json",
+      "sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a",
+      "bytes": 10070,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+      "sha256": "690f3cd1de505aae7d152bcb4ce97a032ea2a1c72f8cb8a2c68bd4d4578bb042",
+      "bytes": 18437,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-actual-loop-moments/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/ATTEMPTS.md",
+      "sha256": "296da4dcd2d3dab3a915c2d2f2d3f1d4a781122fb319803527ee6eaf0b542441",
+      "bytes": 2271,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/BAND_AND_CERTIFICATE.md",
+      "sha256": "0e02c37b3ecc51f04d2f3c18cca686cc96bc7a8b5fd3bb467b143970a02d7887",
+      "bytes": 23404,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/BAND_AND_CERTIFICATE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/BOX_L2_CERTIFICATE.json",
+      "sha256": "97c502538c316015dfe8b56f8fa6221e7d2658bf305f90ac5f31ce6a12e17b4d",
+      "bytes": 91829,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/BOX_L2_CERTIFICATE.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/DEVELOPMENT.md",
+      "sha256": "eec8333d56cd32321e10a97e1166e7ba0fe7b997d96fd919731d4383a0b5dfe7",
+      "bytes": 2260,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/DEVELOPMENT.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/execution.json",
+      "sha256": "b492d9754adfa9ae404c4efeef6584112e8fd3a398a9ea4ff08fca22d79506fb",
+      "bytes": 10176,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/README.md",
+      "sha256": "c361cf993edb919b5c15899f96a96aca3735d37d623970a1b8dedc8fce6fa22f",
+      "bytes": 4582,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/replay.py",
+      "sha256": "100e8dad5bfefde47c183914cd1ba6cce01f7d9e2e1594011e42c61a1e94c638",
+      "bytes": 6689,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/replay.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/RESEARCH_NOTE.md",
+      "sha256": "c24f5235b8c25daa1ee20fb81a13d8db94b88cb99b298ac7d10c8b4e5faafebd",
+      "bytes": 18298,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/SECOND_SOURCE.md",
+      "sha256": "044279aa33cc6a53ea933ebe0aa903741653b4964883d7ea40b14b6bf5b9ff14",
+      "bytes": 12745,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/SECOND_SOURCE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/SOURCE_INTAKE.json",
+      "sha256": "d89085fcd77e1fa4b3683d3bf09a846e2e95bf60e9f6dd99441fc17481589465",
+      "bytes": 3541,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/SOURCE_INTAKE.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/SPATIAL_RETURN.md",
+      "sha256": "b7c24b984cf19ac793ae6df532bfa9fb9db98d6319e1a02bb3b92607366f626e",
+      "bytes": 25916,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/SPATIAL_RETURN.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/state.json",
+      "sha256": "3513ae1e162e5a53274511f627fbceafb47b76057dc0f90e2ea4d4a378e45571",
+      "bytes": 4357,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/STATUS.md",
+      "sha256": "e2ee1968919d0e55a6058edffba263bcd8df35971f8f6fa9617aea377b2ad04d",
+      "bytes": 2887,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/STATUS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/verification.json",
+      "sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8",
+      "bytes": 35604,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-gauge-native-band/verify.py",
+      "sha256": "9a2db6eefdcc0beca6a562fd3d4f4e0dde9950b42222b58727b6d66cef450ad0",
+      "bytes": 37474,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-gauge-native-band/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/ATTEMPTS.md",
+      "sha256": "1724e0d427f45fa0519a8500353de7e070aed7df23ca943d46ed530684fdd508",
+      "bytes": 2246,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/DEVELOPMENT.md",
+      "sha256": "a7d245e85e1f21af51c8c024adef5c0381847a1823c8c7b23eccba8381781022",
+      "bytes": 906,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/DEVELOPMENT.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/execution.json",
+      "sha256": "7ab973562ee7d46d0f8e141597eeb368375504badbbef5af3383c4eba350d8f0",
+      "bytes": 6532,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/HEAT_BATH_GAP.md",
+      "sha256": "e37b1864544e0857c2dbc984d048ab8f1e0a567bead7d86c54a6ccc4870581fd",
+      "bytes": 15255,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/HEAT_BATH_GAP.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/OPTIMIZED_DOMAIN.md",
+      "sha256": "33acc63d3789f900854519500a59ba2bb033eabf8783238df34f0381033989fd",
+      "bytes": 13735,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/OPTIMIZED_DOMAIN.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/README.md",
+      "sha256": "300498fec498adfcc4c015ea67d91b1678ef09d69272709b0c76eddbf0317f12",
+      "bytes": 3546,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/replay.py",
+      "sha256": "a1362e26cff9ec593046085e366a02086e04782afe2615e6ace4bbb1f70c15f1",
+      "bytes": 6277,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/replay.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/RESEARCH_NOTE.md",
+      "sha256": "83d4de98b7b3e5de85efd747f56f1a42261cc55570e419c0d8fe62ccab93bad8",
+      "bytes": 34397,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/source_intake.json",
+      "sha256": "3d72799dcfffddb4b20a13693ade560a70e49947b11ddb8090e93f845f2df5dc",
+      "bytes": 3612,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/source_intake.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/state.json",
+      "sha256": "c0409dc41bdecac317981201cbb4dfab34aabeb5747c190dd2e3893acdeb2fef",
+      "bytes": 4983,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/STATUS.md",
+      "sha256": "8594ef7beef7dc237495eadb075f3a47481915f15653c52a81d41ca26f57f9fc",
+      "bytes": 2761,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/STATUS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json",
+      "sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+      "bytes": 18702,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py",
+      "sha256": "d78432d5eeab097efa7aa018de30932d67c4c77edcc4ceeeae843b955f60f655",
+      "bytes": 35855,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260915-uniform-gap-zero-shift/VOLUME_LIMIT.md",
+      "sha256": "3952922cfa7802d12796efe714bb469ddeb80fa3957f1ef51223b1884e94d4ad",
+      "bytes": 24720,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/continuations/20260915-uniform-gap-zero-shift/VOLUME_LIMIT.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/ATTEMPTS.md",
+      "sha256": "e026fa0599d71ddee6f8e661806eb304c9574a15ede8035eb666b659cd454594",
+      "bytes": 1499,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/ATTEMPTS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/check.py",
+      "sha256": "068e763b341e7c054cb3a4a48fc240e10e250d673646add2a6169da6bbd610a6",
+      "bytes": 16692,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/check.py"
+      }
+    },
+    {
+      "destination": "yang-mills/consolidation/20260916/provenance/CURRENT-gauge-native.md",
+      "sha256": "010eed0a5f175e51efc59949426a697810179de430757b4e60860fc59b1c0c1f",
+      "bytes": 2023,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/CURRENT.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/RESEARCH_NOTE.md",
+      "sha256": "67454e30bc6a0a5f24ef2b63aac16ea05cd4b9fcc087688d351f7b0191a016ec",
+      "bytes": 17453,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/RESEARCH_NOTE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/state.json",
+      "sha256": "cbd3f217d5e719ae9abbb644e4b4639575f72b147c7a9121833425d1e4a85c7c",
+      "bytes": 11390,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/STATUS.md",
+      "sha256": "da6466575f5732d0a514d549965f57c15d4ca2448c0dd6cd267e68f1e47015f1",
+      "bytes": 2623,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/STATUS.md"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/verification.json",
+      "sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed",
+      "bytes": 5387,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/research-control/WORKFLOW.md",
+      "sha256": "bfd86146c808915f754ac74c0ee218bd7a4382531a61c2e4c58b14e58fa9e3d5",
+      "bytes": 7070,
+      "origin": {
+        "id": "gauge-native",
+        "archive": "yang_mills_gauge_native_continuation.zip",
+        "member": "yang-mills/research-control/WORKFLOW.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py",
+      "sha256": "de1d9841ebd4655194801cc053bc1f71393433e8c241d0d88cdae65fc82f7c9f",
+      "bytes": 5495,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md",
+      "sha256": "d1e8fa24ce573ad1adfdaeecbb2ee6bfa1631717f9ce22b0f66d838981d5f240",
+      "bytes": 21186,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/execution.json",
+      "sha256": "1644b4ac46918691bba6dd11093cbe1c54d087c5d89d1a2aac35316b5aa9b1e2",
+      "bytes": 5814,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/execution.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/geometry.py",
+      "sha256": "bd878efd339f05f320d051bee760bff0934ccfca10e9a2c1e6f26941a128cc1e",
+      "bytes": 2670,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/geometry.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md",
+      "sha256": "931d8d2824062c6435dfe324cb9145bc6d8e7a450d37aa5f86a94f1190190453",
+      "bytes": 20675,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py",
+      "sha256": "deeb7f0ca35596543738d84ef45a6799c13dfcadfcca4cb5eecc23e618e5db74",
+      "bytes": 2312,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/publication_replay.json",
+      "sha256": "caaa5ffa03fcffe7a593882c1304785a25dfe1cb6d4d0a6a2238e022e7622d6c",
+      "bytes": 1434,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/publication_replay.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/README.md",
+      "sha256": "2fbb9f300d29ad35efd1ea3b2c9d07b29185308f3aeaefbfaf2738d180597a18",
+      "bytes": 2929,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/README.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/replay.py",
+      "sha256": "13f8d2e9c6f2717071de8c2c8c1afac2c342ede9f244f873b76ecee480fcb6d8",
+      "bytes": 3377,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/replay.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json",
+      "sha256": "23849c8a138107a287fd2b28f0e16d43056f80333ef1eb605df786c988c15eb9",
+      "bytes": 2485,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/state.json",
+      "sha256": "310162656f69b84b8059d6e201a867c0ef632492058cc43838191526419c5a1d",
+      "bytes": 2022,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/state.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md",
+      "sha256": "7bd1e91cbe38efa7e4415b347e4883d1d0c607b4d4a68a0bb593b6ccd7012039",
+      "bytes": 1283,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/verification.json",
+      "sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6",
+      "bytes": 180403,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/verification.json"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/verify.py",
+      "sha256": "45bd9ff364efc4d41b205702472ba0557d9248335bf4f6b879f55f1d2bec0502",
+      "bytes": 19006,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/verify.py"
+      }
+    },
+    {
+      "destination": "yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md",
+      "sha256": "9e435ee7f01042e8cea777a01246267239d2b384474959bdd555de02fc56822c",
+      "bytes": 1831,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md"
+      }
+    },
+    {
+      "destination": "yang-mills/consolidation/20260916/provenance/CURRENT-cubic-zip.md",
+      "sha256": "2e07c1b5db6714f0837591df138d3a86b4a42f72561154a727d4333d3d992b49",
+      "bytes": 1792,
+      "origin": {
+        "id": "cubic-zip",
+        "archive": "yang_mills_cubic_linearized (1).zip",
+        "member": "yang-mills/research-control/CURRENT.md"
+      }
+    }
+  ],
+  "policy": "Mathematical source bodies and original scoped receipts retained exactly. Raw user transcript and source AGENTS instructions remain in private intake, with hashes recorded; embedded instructions were not adopted. Branch imports do not merge or close the historical pull requests. CURRENT variants retained under provenance."
+}

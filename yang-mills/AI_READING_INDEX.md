@@ -2,6 +2,14 @@
 
 This file is an index, not a concatenation of the source bodies. The linked paths resolve within the extracted source ZIP. Read the linked full bodies; this index does not replace their definitions or proofs.
 
+## Integrated continuation, 14–16 September 2026
+
+The [complete continuation source sequence](consolidation/20260916/README.md) links every stage, including previously separate downloaded dependencies. Read [CURRENT_RESEARCH.md](consolidation/20260916/CURRENT_RESEARCH.md) for exact current scope, [SOURCE_COVERAGE.md](consolidation/20260916/SOURCE_COVERAGE.md) for absent attachments, and [VALIDATION.md](consolidation/20260916/VALIDATION.md) for fresh checks and bounded reviews. The [editable cumulative TeX](consolidation/20260916/reader/yang_mills_web_continuation.tex) contains the full available mathematical bodies; the [reader chapter manifest](consolidation/20260916/reader/CHAPTER_MANIFEST.json) pins its sources.
+
+Latest complete proofs: [CUBIC_SOURCE.md](continuations/20260916-cubic-linearized/CUBIC_SOURCE.md) and [LINEARIZED_RETURN.md](continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md), with the [gauge-native predecessor](continuations/20260915-gauge-native-band/README.md), [uniform-gap sources](continuations/20260915-uniform-gap-zero-shift/README.md), and separate [local-fibre proof](continuations/20260915-zero-shift-local-fibres-review/DELIVERED_RESEARCH_NOTE.md). The [historical full mathematical responses](consolidation/20260916/transcript-mathematics/README.md) retain missing-attachment distinctions and are not live instructions.
+
+## Foundation full source bodies
+
 - [sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.md](sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.md)
 - [sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.tex](sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.tex)
 - [sources/ym_gap_primary_20260908/amplitude_time_kernel_independent_audit.md](sources/ym_gap_primary_20260908/amplitude_time_kernel_independent_audit.md)

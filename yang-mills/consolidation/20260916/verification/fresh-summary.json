@@ -1,0 +1,351 @@
+{
+  "all_manifests_validate": true,
+  "all_top_level_commands_exit_zero": true,
+  "direct_comparisons": [
+    {
+      "check_count": 134,
+      "fresh_json_equals_original_receipt": true,
+      "fresh_stdout_bytes": 10070,
+      "fresh_stdout_exactly_matches_original_receipt": true,
+      "fresh_stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a",
+      "historic_fields_not_in_fresh_output": [],
+      "historic_summary_common_fields_match": {
+        "certified_evaluation": true,
+        "finite_checks": true,
+        "geometry": true,
+        "negative_controls": true,
+        "schema": true,
+        "scope": true,
+        "source_sha256": true
+      },
+      "name": "actual-loop",
+      "negative_count": 12,
+      "ordinary_optimized_byte_identical": true,
+      "original_receipt": "sources/yang_mills_actual_loop_moments/yang-mills/continuations/20260915-actual-loop-moments/verification.json",
+      "original_receipt_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "check_count": 56,
+      "fresh_json_equals_original_receipt": true,
+      "fresh_stdout_bytes": 5387,
+      "fresh_stdout_exactly_matches_original_receipt": true,
+      "fresh_stdout_sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed",
+      "historic_fields_not_in_fresh_output": [],
+      "historic_summary_common_fields_match": {
+        "analytic_proof_checked": true,
+        "arithmetic": true,
+        "cached_sources": true,
+        "check_count": true,
+        "checked_state_sha256": true,
+        "checks": true,
+        "continuum_gap_proved": true,
+        "fixture_scope": true,
+        "lean_run_performed": true,
+        "local_inputs": true,
+        "negative_controls": true,
+        "negative_count": true,
+        "parent_source": true,
+        "schema": true,
+        "status": true
+      },
+      "name": "research-control",
+      "negative_count": 17,
+      "ordinary_optimized_byte_identical": true,
+      "original_receipt": "sources/yang_mills_gauge_native_continuation/yang-mills/research-control/verification.json",
+      "original_receipt_sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed"
+    },
+    {
+      "check_count": 189,
+      "fresh_json_equals_original_receipt": true,
+      "fresh_stdout_bytes": 9888,
+      "fresh_stdout_exactly_matches_original_receipt": true,
+      "fresh_stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075",
+      "historic_fields_not_in_fresh_output": [],
+      "historic_summary_common_fields_match": {
+        "analytic_machine_checked": true,
+        "check_count": true,
+        "checks": true,
+        "continuum_gap_proved": true,
+        "fixture_scope": true,
+        "local_inputs": true,
+        "negative_controls": true,
+        "negative_count": true,
+        "new_lean_run": true,
+        "parent_checker_blob": true,
+        "sample": true,
+        "schema": true,
+        "status": true
+      },
+      "name": "coupled-response",
+      "negative_count": 12,
+      "ordinary_optimized_byte_identical": true,
+      "original_receipt": "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-coupled-response/verification.json",
+      "original_receipt_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
+    },
+    {
+      "check_count": 181,
+      "fresh_json_equals_original_receipt": false,
+      "fresh_stdout_bytes": 7529,
+      "fresh_stdout_exactly_matches_original_receipt": false,
+      "fresh_stdout_sha256": "1609998268bc9f204d25f922df943ca9fd474aa7d2fea124ece567b73892f6af",
+      "historic_fields_not_in_fresh_output": [
+        "prior_checker_replay"
+      ],
+      "historic_summary_common_fields_match": {
+        "arithmetic": true,
+        "check_count": true,
+        "checker_sha256": true,
+        "note_sha256": true,
+        "scope": true,
+        "status": true
+      },
+      "name": "vacuum-refinement",
+      "negative_count": 0,
+      "ordinary_optimized_byte_identical": true,
+      "original_receipt": "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-vacuum-refinement-infrared/verification-summary.json",
+      "original_receipt_sha256": "b1ecb0e01767d6c6ee004653d4a0a3907e8c86fef84e2f7060039fc809bf8046"
+    }
+  ],
+  "environment": {
+    "os": "Ubuntu-22.04 WSL2",
+    "python": "3.10.12",
+    "sympy": "1.9"
+  },
+  "executions": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "sources/yang_mills_actual_loop_moments/yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+        "--verify-receipt",
+        "sources/yang_mills_actual_loop_moments/yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/actual-loop-ordinary/manifest.json",
+      "manifest_sha256": "efb8fb42284817244e7f9cef14e53bb98128b6b18e35c188e56b5244cb004cca",
+      "name": "actual-loop-ordinary",
+      "run_status": "completed",
+      "runtime_seconds": 1.375785,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-O",
+        "-B",
+        "sources/yang_mills_actual_loop_moments/yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+        "--verify-receipt",
+        "sources/yang_mills_actual_loop_moments/yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/actual-loop-optimized/manifest.json",
+      "manifest_sha256": "ea4fa7f32664a65784c85b2ea5cedef55e9ada828235dadbd8acf45f5a06a3c3",
+      "name": "actual-loop-optimized",
+      "run_status": "completed",
+      "runtime_seconds": 1.443026,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/research-control/check.py",
+        "--verify-receipt",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/research-control/verification.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/research-control-ordinary/manifest.json",
+      "manifest_sha256": "2c0b73aed0944fc3d0135d77bf8bb911a5047f2c2cc25b50ef48815b4ed8356d",
+      "name": "research-control-ordinary",
+      "run_status": "completed",
+      "runtime_seconds": 0.947668,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-O",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/research-control/check.py",
+        "--verify-receipt",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/research-control/verification.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/research-control-optimized/manifest.json",
+      "manifest_sha256": "4ac4f733a25b2c80dbad9318e88839700b67d4de1f8a13b5874a0a49982d776f",
+      "name": "research-control-optimized",
+      "run_status": "completed",
+      "runtime_seconds": 1.637875,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-coupled-response/check.py",
+        "--verify-receipt",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-coupled-response/verification.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/coupled-response-ordinary/manifest.json",
+      "manifest_sha256": "70292a725c18817da27245955ad7c9c0529e783c16896e0b4560e0d32a8ada00",
+      "name": "coupled-response-ordinary",
+      "run_status": "completed",
+      "runtime_seconds": 1.809812,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-O",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-coupled-response/check.py",
+        "--verify-receipt",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-coupled-response/verification.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/coupled-response-optimized/manifest.json",
+      "manifest_sha256": "bc27f92131588ca7e62ce96031fc227102bd6a4aa1fd3287ad7b9cefe3c21a70",
+      "name": "coupled-response-optimized",
+      "run_status": "completed",
+      "runtime_seconds": 2.08946,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py"
+      ],
+      "exit_code": 0,
+      "manifest": "results/vacuum-refinement-ordinary/manifest.json",
+      "manifest_sha256": "ee9ca7024c2d2c95842504fd8d85a18d9756670094e334d4892946ca6bf1b945",
+      "name": "vacuum-refinement-ordinary",
+      "run_status": "completed",
+      "runtime_seconds": 14.28725,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1609998268bc9f204d25f922df943ca9fd474aa7d2fea124ece567b73892f6af"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-O",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260914-vacuum-refinement-infrared/verify.py"
+      ],
+      "exit_code": 0,
+      "manifest": "results/vacuum-refinement-optimized/manifest.json",
+      "manifest_sha256": "affab4255e268cc070e6b1550a0965ed2bc68efcb1ca30f133150786eb3c77f7",
+      "name": "vacuum-refinement-optimized",
+      "run_status": "completed",
+      "runtime_seconds": 16.933333,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1609998268bc9f204d25f922df943ca9fd474aa7d2fea124ece567b73892f6af"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260915-uniform-gap-zero-shift/replay.py",
+        "--progress",
+        "--output",
+        "results/uniform-gap-replay/execution.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/uniform-gap-replay/manifest.json",
+      "manifest_sha256": "95d15205d4ef373ec9b03dc9456134e81eacfb005195005af2e14b20c6168dfa",
+      "name": "uniform-gap-replay",
+      "run_status": "completed",
+      "runtime_seconds": 11.487588,
+      "stderr_sha256": "9562dc1b1f00f4d867837b472d12b99b665e0c46174b232e48f9fa9b21f1a408",
+      "stdout_sha256": "7ab973562ee7d46d0f8e141597eeb368375504badbbef5af3383c4eba350d8f0"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260915-gauge-native-band/replay.py",
+        "--parent-root",
+        "sources/yang_mills_gauge_native_continuation",
+        "--output",
+        "results/gauge-native-replay/execution.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/gauge-native-replay/manifest.json",
+      "manifest_sha256": "ad8f20ef66771f5b4650f320300e003775548a6efb8c6079a80373602f9f4c9e",
+      "name": "gauge-native-replay",
+      "run_status": "completed",
+      "runtime_seconds": 186.569559,
+      "stderr_sha256": "a48b67df42197033579a8139f1d32f2bbc874c5fb36cb42d8c73ab1657fb96e7",
+      "stdout_sha256": "b492d9754adfa9ae404c4efeef6584112e8fd3a398a9ea4ff08fca22d79506fb"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "sources/yang_mills_cubic_linearized (1)/yang-mills/continuations/20260916-cubic-linearized/replay.py",
+        "--parent",
+        "sources/yang_mills_gauge_native_continuation/yang-mills/continuations/20260915-gauge-native-band",
+        "--output",
+        "results/cubic-replay/execution.json"
+      ],
+      "exit_code": 0,
+      "manifest": "results/cubic-replay/manifest.json",
+      "manifest_sha256": "b4cccd9433acad3df6e2bc87d154e8aa6c4d852c768038d1bbf9aa5e9ad9e3fe",
+      "name": "cubic-replay",
+      "run_status": "completed",
+      "runtime_seconds": 204.991683,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1ec2c59aa3e14564027f2e3c487d1ba6bc731450b72099925cbdf09a55856bbb"
+    }
+  ],
+  "generated_at_utc": "2026-09-16T20:08:49.084471+00:00",
+  "interpretation": "Results reproduced; implementation and accompanying analytical proofs not independently validated by this replay. Finite source-defined exact checks and rejection controls only.",
+  "no_Lean_or_remote_execution": true,
+  "provenance_note": "Per-run bounds.script was populated from the final argv item and may denote a receipt or output argument. The authoritative executed script and arguments are the command array in each manifest and in this summary.",
+  "replay_summaries": [
+    {
+      "execution_receipt": "results/uniform-gap-replay/execution.json",
+      "execution_receipt_sha256": "7ab973562ee7d46d0f8e141597eeb368375504badbbef5af3383c4eba350d8f0",
+      "intended_rejection_exit_1_count": 18,
+      "name": "uniform-gap-replay",
+      "reported_ordinary_optimized_identical": "byte-comparisons-in-driver",
+      "subprocess_count": 25,
+      "success_exit_0_count": 7,
+      "unexpected_exit_count": 0
+    },
+    {
+      "execution_receipt": "results/gauge-native-replay/execution.json",
+      "execution_receipt_sha256": "b492d9754adfa9ae404c4efeef6584112e8fd3a398a9ea4ff08fca22d79506fb",
+      "intended_rejection_exit_1_count": 20,
+      "name": "gauge-native-replay",
+      "reported_ordinary_optimized_identical": true,
+      "subprocess_count": 28,
+      "success_exit_0_count": 8,
+      "unexpected_exit_count": 0
+    },
+    {
+      "execution_receipt": "results/cubic-replay/execution.json",
+      "execution_receipt_sha256": "18cd4c36a93218b55735e95830b1d54010f7da7e24fe7b3c51728fc5aef2c14b",
+      "intended_rejection_exit_1_count": 8,
+      "name": "cubic-replay",
+      "reported_ordinary_optimized_identical": true,
+      "subprocess_count": 16,
+      "success_exit_0_count": 8,
+      "unexpected_exit_count": 0
+    }
+  ],
+  "schema": "ym-consolidation-fresh-replay-20260916-v1",
+  "source_preservation": {
+    "all_original_files_unchanged": true,
+    "changed_paths": [],
+    "checked_at_utc": "2026-09-16T20:08:26.404270+00:00",
+    "file_count": 125
+  }
+}

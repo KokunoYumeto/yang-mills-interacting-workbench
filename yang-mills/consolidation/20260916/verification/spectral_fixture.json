@@ -1,0 +1,16 @@
+{
+  "schema": "ym-spectral-fixture-replay-v1",
+  "source": "yang-mills/continuations/20260914-spectral-reconstruction/check_hausdorff_reconstruction.py",
+  "source_sha256": "5c6ae2c0a4c670d37b7a6db3360853c8dea3d7f1d77b8c670beef885ecf26bbc",
+  "python_version": "3.13.9",
+  "command": [
+    "python",
+    "-B",
+    "yang-mills/continuations/20260914-spectral-reconstruction/check_hausdorff_reconstruction.py"
+  ],
+  "exit_code": 0,
+  "stdout": "PASS: exact Bernstein-moment identity and raw-frame inverse congruence\r\n",
+  "stderr": "",
+  "runtime_seconds": 0.06452059998991899,
+  "scope": "Exact two-atom 2x2 rational Bernstein-moment and raw-frame inverse-congruence fixture. Executed without -O so assert statements remain active. Does not prove general spectral reconstruction."
+}

@@ -294,3 +294,7 @@ We expanded the full Mellin product at negative integers to track data hidden wh
 We extended the corrected fluid field's axis calculation beyond its first radial derivative, retaining pressure, viscosity, cutoff, and Mellin residue/value terms. The written induction gives vanishing above correction order n>m and a finite algorithm at each fixed degree. It does not prove convergence of the uncut series or produce an autonomous finite-dimensional fluid system.
 
 [Complete zeta source archive](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/490a7ac7ef693702e9d92ba1e933a440d8f55b9b/zenodo_collection_20260909_main411/07-complete-mathematical-sources.zip)
+
+## Yang–Mills continuation: retained responses, gauge-native sources and cubic return
+
+The 14–16 September session applied retained-source and minimum-energy constructions to the original lattice operator, then developed actual-loop response estimates, strong-coupling source bounds, a gauge-native band calculation and the complete cubic/linearized return. The [complete continuation edition](yang-mills/consolidation/20260916/) preserves full arguments and the source sequence; its current state keeps the finite-lattice and fixed-spacing volume-limit ranges separate. The fourth vacuum-energy coefficient is supplied, while the connected fourth vacuum-source calculation was still in progress at the export boundary. Earlier response bodies and missing attachment distinctions are retained so that attempted routes are inspectable.

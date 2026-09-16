@@ -1,0 +1,7 @@
+# Attempt account
+
+The aim is quantitative control of the original energy primitive through refinement, directed toward the physical continuum mass gap. The preceding Schur budget gave nonnegative retained energy but no evaluated strict continuum margin. I therefore followed the actual conditional-vacuum density derivative into the kernel coupling, rather than adding more fixed-frame spectral examples.
+
+The local exterior-vacuum equation gives a linear all-coupling electric expectation bound. Combined with the exact conditional score, it removes the exterior-volume factor from the integrated score bound. The same score gives the full off-diagonal Hamiltonian, energy-minimizing section, restored state Gram, and exact composition through induced intermediate forms. All coupling, ultraviolet and mixed-norm terms remain in the note.
+
+Peer intake found newer unmerged contributions. Zeta's same-fiber source transport and corrected residual Gram were used with explicitly specified Yang–Mills metrics. Collatz and Erdős 817 informed regression and evidence design; later ES moments and controller results remain separately recorded candidates. The executable tests passed at their finite scope, including false-formula rejections. Actual response integrals and a uniform positive continuum spectral margin remain unevaluated. The next selected quantity is the full score-resolvent response in L19 relative to its kinetic form and restored metric, on growing physical observation families.

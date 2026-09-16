@@ -6,6 +6,8 @@ For the short account of **what we tried, why it seemed promising, what worked a
 
 ## Yang–Mills: from explicit interacting models to continuum questions
 
+The [14–16 September continuation edition](yang-mills/consolidation/20260916/) consolidates the complete available web-session proofs, downloaded gauge-native dependencies, cubic and linearized calculations, historical mathematical responses and fresh validation. Its [current state](yang-mills/consolidation/20260916/CURRENT_RESEARCH.md) preserves the different domains of the finite-lattice and fixed-spacing volume-limit results. The foundation readers described below retain their dated original scope.
+
 The investigation starts from specified finite-volume and regulated interacting systems and asks which state maps, spectral estimates and coarse-graining constructions persist when volume and spatial resolution change. The reason for keeping the parameters and nonlinear terms is that a result for an oscillator or a fixed box does not on its own settle the corresponding interacting continuum question.
 
 The current collection has five readers: [quantum coarse-graining (79 pages)](yang-mills/readers/quantum_coarse_graining.pdf), [interacting tensor bands (71)](yang-mills/readers/quantum_interacting_tensor_band.pdf), [non-Abelian vertices (63)](yang-mills/readers/quantum_nonabelian_vertex.pdf), [volume-uniform vacuum estimates (81)](yang-mills/readers/volume_uniform_vacuum.pdf), and [spatial-continuum maps and obstructions (129)](yang-mills/readers/spatial_continuum.pdf). The two component quantum readers preserve their earlier focused snapshots; they are not represented as rebuilt extracts of the cumulative reader.

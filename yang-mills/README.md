@@ -1,4 +1,12 @@
-# Yang-Mills mathematical sources and readers - 9 September 2026
+# Yang–Mills mathematical sources and readers
+
+## Current continuation: 14–16 September 2026
+
+Read the [complete web-session consolidation](consolidation/20260916/), its [cumulative PDF](consolidation/20260916/reader/yang_mills_web_continuation.pdf), or the [editable TeX](consolidation/20260916/reader/yang_mills_web_continuation.tex). The edition integrates the actual-loop, uniform-gap, gauge-native, local-fibre, cubic-source and linearized-return proofs with their complete available dependencies and scoped verification records. The [current mathematical state](consolidation/20260916/CURRENT_RESEARCH.md) keeps the finite-lattice gap domain, fixed-spacing volume-limit domain and remaining continuum questions explicit.
+
+The [coverage and provenance](consolidation/20260916/SOURCE_COVERAGE.md) identify the exact archive and Git sources; the [fresh validation record](consolidation/20260916/VALIDATION.md) distinguishes executed finite checks from bounded proof reviews. Earlier source and execution records retain their original historical status. This continuation is a GitHub edition; the DOI below identifies the earlier 9 September archive.
+
+## Foundation edition: 9 September 2026
 
 [What the quantum, interaction, volume and spatial-limit tasks tried—and why](../ATTEMPTS.md#ym-attempts)
 
@@ -27,4 +35,3 @@ The original finite-box objects, coefficients, domains and hypotheses are stated
 The PDFs are supplied artifacts copied byte-for-byte into this archive. The packaging worker did not rebuild them or rerun mathematical checkers. The publication coordinator regenerated the volume reader after correcting a single TeX inline-math closing delimiter to match the already correct Markdown; the mathematical source content was unchanged. Included checker programs and recorded results are finite symbolic, arithmetic or numerical diagnostics within their stated scope. Packaging integrity and dependency checks are not formal verification of the analytical proofs. To compile an included TeX manuscript, run a LaTeX distribution from its containing directory; dependencies identified by literal input commands are supplied. The Markdown-to-TeX conversion intermediate `markdown_source.tex` is included for the current quantum manuscript. Python checkers require their stated imports, including SymPy, NumPy, SciPy and mpmath where used, and should be run from their containing directory. Original sibling lane names are retained so relative cross-lane paths resolve. One recorded result's absolute source locator is replaced by its portable relative path; its mathematical data and cited input hash are retained.
 
 `OMISSIONS.json` records exclusions from the historical allowlist. Private task records, user transcripts, feedback, credentials, copied literature bodies, separate S6 and Navier-Stokes source collections, and the uncertified full-L2 tensor contraction calculation/report are excluded. No mathematical claim is made for that excluded exploratory calculation.
-

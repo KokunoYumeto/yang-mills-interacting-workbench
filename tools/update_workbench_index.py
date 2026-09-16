@@ -18,7 +18,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "https://github.com/KokunoYumeto/yang-mills-interacting-workbench"
-INSPECTED_MATH_SOURCE_COMMIT = "e0a04c078eaf0209e40b3d47d6f6dffb3f2a3e7f"
+INSPECTED_MATH_SOURCE_COMMIT = "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55"
 HISTORICAL_INDEX_COMMIT = "5835bf92c722cf095bc7ff3b13ad21c093c2d6c5"
 OUTPUTS = ("workbench.json", "releases/2026-09-09/GITHUB_TREE_MANIFEST.json")
 
@@ -156,21 +156,26 @@ def programmes() -> list[dict]:
             "id": "YM",
             "title": "Yang–Mills research workbench",
             "human_entry": "yang-mills/README.md",
-            "human_reader": "yang-mills/readers/quantum_coarse_graining.pdf",
+            "human_reader": "yang-mills/consolidation/20260916/reader/yang_mills_web_continuation.pdf",
             "ai_entry": "yang-mills/AI_READING_INDEX.md",
-            "source_directory": "yang-mills/sources/",
-            "edition_doi": "10.5281/zenodo.22678364",
-            "edition_url": "https://doi.org/10.5281/zenodo.22678364",
+            "source_directory": "yang-mills/",
+            "research_state_document": "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
+            "source_manifest": "yang-mills/consolidation/20260916/provenance/SOURCE_INTAKE.json",
+            "foundation_edition_doi": "10.5281/zenodo.22678364",
+            "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678364",
             "research_state": (
-                "The 9 September 2026 selected source edition contains quantum state and "
-                "spectral maps, interacting tensor-band and non-Abelian vertex calculations, "
-                "volume-independent vacuum estimates, and spatial-continuum maps and "
-                "obstructions. The full manuscripts retain their constructions, calculations "
-                "and hypotheses. Fixed-box oscillator path rates do not establish the "
-                "missing volume-uniform simultaneous exact-lattice limit. The interacting "
-                "four-dimensional continuum mass-gap conclusion remains unfinished."
+                "The 14-16 September 2026 continuation consolidates complete available "
+                "web-session proofs, gauge-native source dependencies, cubic/linearized "
+                "finite-lattice calculations, retained historical mathematical responses, "
+                "bounded analytical audits and fresh finite replay records. The source "
+                "guide records missing attachments and exact provenance. The finite-lattice "
+                "gap domain and earlier fixed-spacing infinite-volume uniqueness domain "
+                "remain distinct. The interacting four-dimensional continuum mass-gap "
+                "conclusion remains unestablished. The 9 September foundation edition "
+                "and all its source bodies remain available."
             ),
-            "description_basis": ["yang-mills/README.md", "yang-mills/AI_READING_INDEX.md"],
+            "description_basis": ["yang-mills/README.md", "yang-mills/AI_READING_INDEX.md",
+                                  "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md"],
         },
         {
             "id": "S6",

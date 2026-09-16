@@ -4,6 +4,8 @@ Readable mathematical papers, their complete sources, and reproducibility record
 
 [What we tried and what the programmes contain](WORKBENCH.md) · [Contribute or publish a scoped check](CONTRIBUTING.md) · [Machine-readable catalogue](workbench.json) · [PolyClank design](docs/polyclank/)
 
+**New Yang–Mills continuation, 14–16 September 2026:** [complete reader and editable sources](yang-mills/consolidation/20260916/), including the web-session calculations, their previously separate gauge-native dependencies, full mathematical responses, bounded audits and fresh reproducibility records. The [source coverage guide](yang-mills/consolidation/20260916/SOURCE_COVERAGE.md) records which delivered bundles are cumulative and which attachments remain unavailable. This GitHub edition supplements the dated foundation readers below.
+
 | Topic | Start reading | Sources and scope | Archived edition |
 | --- | --- | --- | --- |
 | Yang–Mills | [Quantum state and spectral maps — 79 pages](yang-mills/readers/quantum_coarse_graining.pdf) | [Five readers, complete selected proofs and checks](yang-mills/) | [10.5281/zenodo.22678364](https://doi.org/10.5281/zenodo.22678364) |
