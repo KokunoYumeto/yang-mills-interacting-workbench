@@ -1,8 +1,26 @@
-# Current additive checkpoint
+# Current mathematical checkpoint: connected cubic source and linearized return
 
-The continuation is [Coupled Hamiltonians and two-sided response enclosures](../continuations/20260914-coupled-response/README.md).
-Its [state](../continuations/20260914-coupled-response/state.json) includes refreshed peer heads, the preserved Hamiltonian/self-adjointness exchange direction and the next actual matrix inputs N0,N1,N2.
+Read [the complete cubic calculation](../continuations/20260916-cubic-linearized/CUBIC_SOURCE.md)
+and [the complete linearized return](../continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md).
+[Verification setup](../continuations/20260916-cubic-linearized/VERIFY_FIRST.md) recreates the
+full observed record with its exact hash; the source, state and replay are in that directory.
 
-The parent research-control files and receipt remain unchanged historical records. Read them for the original workflow; then read the current continuation and run its checker as well as the parent checker. The continuation uses the same physical operators, fine vacuum and raw Grams. Its finite certificates have no claimed evaluation of the actual vacuum moments or continuum gap.
+The actual cubic source is completely evaluated on its original five connected
+families. Its coefficient bound is 944984/351. The full residual at
+xi*v1+xi^2*v2 retains xi^3*v3 and xi^4*B(v2,v2), its original scalar, the actual
+linearized inverse and the complete nonlinear endpoint tail. The physical gap
+is bounded below uniformly in L for g^2>=1/(2sqrt(alpha)), where alpha is the
+specified first positive quartic root (threshold g^2 approximately3.825973052393386).
+The fourth original vacuum-energy coefficient and an all-order analytic remainder
+are also supplied. This does not establish a nontrivial four-dimensional continuum
+field or a finite positive continuum mass.
 
-The next selected calculation encloses the original loop/energy score moments and returns the response interval to the restored state metric, retaining the coarse complement and escaping-state quotient. Other justified mathematical directions remain available; record their original quantity and exact maps before changing route. No automatic execution or merge is active.
+The next actual quantity is v4=2B(v1,v3)+B(v2,v2) on original connected four-face
+supports and the signed same-support action of the linearized operator. The cubic
+table, full quartic residual formula and evaluated first/second spin budgets are
+completed inputs, not calculations to repeat. Preserve original scalar energy,
+physical units, gauge image, support labels, original metrics and endpoint defects.
+
+All previous source files and receipts remain unchanged. The earlier coupled-response
+[checkpoint](../continuations/20260914-coupled-response/README.md) remains an ancestor.
+No automatic research, paid model run or merge is active.
