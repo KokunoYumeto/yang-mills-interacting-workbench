@@ -14,7 +14,7 @@ The [14–16 September reader](yang-mills/consolidation/20260916/) develops the 
 
 | Topic | Start reading | Sources and scope | Archived edition |
 | --- | --- | --- | --- |
-| Yang–Mills | [Vacuum, energy and spectral return](yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf) | [Reading guide, full proofs and calculations](yang-mills/) | [17 September edition](https://doi.org/10.5281/zenodo.22803564) |
+| Yang–Mills | [Vacuum, energy and spectral return](yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf) | [Reading guide, full proofs and calculations](yang-mills/) | [9 September archive](https://doi.org/10.5281/zenodo.22678364); 17 September archival upload pending |
 | S6 topology and related constructions | [Key advances — 5 pages](s6/26_s6_key_advances_frozen_2026-09-06.pdf) | [Full frozen project, standalone papers and calculations](s6/) | [10.5281/zenodo.22678442](https://doi.org/10.5281/zenodo.22678442) |
 | Navier–Stokes | [Corrected reconstruction — 208 pages](navier_stokes_workbench_208p.pdf) | [Standalone LaTeX, structured proofs and checks](navier-stokes/) | [10.5281/zenodo.22678406](https://doi.org/10.5281/zenodo.22678406) |
 
