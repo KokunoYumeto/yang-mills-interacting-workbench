@@ -1,0 +1,43 @@
+{
+  "base_commit": "91434b6962062bd80439d4cb2cae9d2479264dde",
+  "base_pull_request": 8,
+  "checker_scope": {
+    "Hamiltonian_spin_cutoff": false,
+    "analytic_proof_formalized": false,
+    "finite_original_coordinates": true,
+    "new_Lean_run": false,
+    "vacuum_sampling": false
+  },
+  "completed": [
+    "all 8621 anchored fourth-order multisets, 78 signed-coordinate orbit representatives, 743 rational trace monomials",
+    "evaluated fourth-source coefficient bound and actual cubic total-/point-spin budgets",
+    "complete fourth-source total-/point-spin bounds with rational channel duals and transported anchors",
+    "full residual at the cubic reference and convergent linear/nonlinear corrections including the endpoint",
+    "full residual through degree eight and all-order endpoint correction at the actual quartic reference q4",
+    "whole physical spectrum lower bound in original units",
+    "complete sixth ground-energy coefficient with all open-boundary counts and higher-order remainder",
+    "independent cube six-face denominator sum and linear-eigenvector coefficient recurrence",
+    "actual averaged Wilson half-trace through degree five, with a volume-uniform complete derivative remainder and explicit current-literature parameter/boundary maps"
+  ],
+  "continuum_path_inclusion": "c_n<=2 sqrt(alpha_[4]) on a_n=a0 2^(-n), g_n^2=1/c_n",
+  "coupling_domain": "xi<=alpha_[4], first positive root of D_[4]=(1-ell_quartic)^2-8delta_quartic/3; exact rational constants and functions in series.py",
+  "date": "2026-09-17",
+  "g_squared_sufficient": "3.715960362535435237",
+  "next_original_calculation": "Evaluate the signed channel-resolved fifth logarithmic-vacuum coefficient and its q5 correction using the full computed quartic table. The q4 correction and every degree-five-through-eight residual term are completed inputs. Keep the closed-cube scalar contribution and original physical inverse norm.",
+  "original_repository": "KokunoYumeto/yang-mills-interacting-workbench",
+  "proof_files": [
+    "QUARTIC_SOURCE.md",
+    "PHYSICAL_RETURN.md",
+    "SIXTH_ENERGY.md"
+  ],
+  "remote_write_performed": false,
+  "scheduled_work": false,
+  "schema": "ym-quartic-cube-state-v1",
+  "scope": "Original cubic SU(2) finite-regulator operator, all open boxes L>=2, original a and g",
+  "target": "Nontrivial four-dimensional continuum Yang-Mills field and finite positive mass gap",
+  "values_not_established": [
+    "a nontrivial smooth continuum field",
+    "finite positive continuum mass",
+    "a global literature-priority result"
+  ]
+}

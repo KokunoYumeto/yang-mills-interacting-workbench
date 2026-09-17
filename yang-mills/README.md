@@ -1,10 +1,22 @@
 # Yang–Mills mathematical sources and readers
 
-## Current continuation: 14–16 September 2026
+This collection develops explicit mathematics for interacting SU(2) lattice gauge theory: the vacuum and its response to local couplings, ground energies, physical excitation spectra, and maps relating states and operators at different scales. Finite-box calculations are combined with estimates that can survive growth of the box. The separate spatial-limit investigations state what additional control is needed for a continuum theory.
+
+## Start reading
+
+- **[Fourth-order vacuum sources and sixth-order energy](consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf)** (49 pages): an introduction to the Hamiltonian, two exact presentations of the fourth logarithmic-vacuum coefficient, the sixth energy including boundary and cube contributions, signed local response, and the resulting physical spectral estimate. All six proof notes are included. [Formulas, sources and reproduction](consolidation/20260917/).
+- **[Source equations, gauge coordinates and spectral return](consolidation/20260916/reader/yang_mills_web_continuation.pdf)** (297 pages): the preceding complete 14–16 September continuation, including actual-loop, gauge-native, local-fibre, cubic-source and linearized-return arguments.
+- **The five foundation papers below**: broader entry points for quantum state maps, interacting tensor bands and vertices, volume-independent vacuum estimates, and spatial-continuum investigations.
+
+The fourth-order calculation leads to a convergent correction for the original Hamiltonian, not merely its truncated series. In the papers' convention `kappa = 2g^2/a` and `xi = 1/(4g^4)`, the complete physical gap is bounded uniformly in the finite box size on a stated strong-coupling interval; in particular `g^2 >= 15/4` gives `Delta > 1.6584 kappa`. The latest reader states the exact interval, hypotheses and proof. These fixed-spacing results do not establish a four-dimensional continuum field or a finite positive continuum mass.
+
+The [17 September Zenodo edition](https://doi.org/10.5281/zenodo.22803564) archives the collection through this continuation. The two new source packages retain their distinct derivations. Their complete fourth-order polynomials agree under an explicit coordinate map; the [validation account](consolidation/20260917/VALIDATION.md) explains that comparison, the finite checks and the analytical review separately.
+
+## Previous continuation: 14–16 September 2026
 
 Read the [complete web-session consolidation](consolidation/20260916/), its [cumulative PDF](consolidation/20260916/reader/yang_mills_web_continuation.pdf), or the [editable TeX](consolidation/20260916/reader/yang_mills_web_continuation.tex). The edition integrates the actual-loop, uniform-gap, gauge-native, local-fibre, cubic-source and linearized-return proofs with their complete available dependencies and scoped verification records. The [current mathematical state](consolidation/20260916/CURRENT_RESEARCH.md) keeps the finite-lattice gap domain, fixed-spacing volume-limit domain and remaining continuum questions explicit.
 
-The [coverage and provenance](consolidation/20260916/SOURCE_COVERAGE.md) identify the exact archive and Git sources; the [fresh validation record](consolidation/20260916/VALIDATION.md) distinguishes executed finite checks from bounded proof reviews. Earlier source and execution records retain their original historical status. This continuation is a GitHub edition; the DOI below identifies the earlier 9 September archive.
+The [coverage and provenance](consolidation/20260916/SOURCE_COVERAGE.md) identify the exact archive and Git sources; the [validation record](consolidation/20260916/VALIDATION.md) distinguishes executed finite checks from bounded proof reviews. Earlier source and execution records retain their original historical status. This continuation is now also included in the 17 September archive; the DOI below identifies the earlier 9 September edition.
 
 ## Foundation edition: 9 September 2026
 
@@ -28,7 +40,7 @@ This edition: [10.5281/zenodo.22678364](https://doi.org/10.5281/zenodo.22678364)
 
 The original finite-box objects, coefficients, domains and hypotheses are stated in the included proofs. The oscillator path rates are fixed-box/oscillator consequences: a volume-uniform comparison with the simultaneous exact-lattice limit is not established. The fixed-coupling disk result identifies the limitation of a particular global perturbative bound. These results do not establish or refute the interacting four-dimensional continuum Yang-Mills mass gap.
 
-## Sources and reproducibility
+## Foundation sources and reproducibility
 
 `sources/` preserves the selected files' original names and local dependency hierarchy. Each quantum component is retained in its own original snapshot directory. `AI_READING_INDEX.md` links the complete Markdown and TeX bodies. Bibliographic entries remain in the manuscripts; no downloaded literature corpus is redistributed. `DEPENDENCIES.json` records resolved literal TeX inputs. `READER_PROVENANCE.json` records page counts and exact PDF/TeX/Markdown hashes. `SOURCE_MANIFEST.json` gives the byte count and SHA-256 of each archived file other than the manifest itself. It contains only archive-relative paths.
 

@@ -1,0 +1,63 @@
+{
+  "pdf_pages": 49,
+  "rendered_pages": 49,
+  "private_path_or_instruction_markers": [],
+  "latex_material_errors": [],
+  "body_text_outliers": [],
+  "contact_sheets": [
+    "contact-1.png",
+    "contact-2.png",
+    "contact-3.png",
+    "contact-4.png",
+    "contact-5.png"
+  ],
+  "pdf_metadata": {
+    "/Creator": "Pandoc and XeLaTeX",
+    "/Title": "Fourth-order vacuum sources and sixth-order energy in cubic SU(2) lattice Yang-Mills theory",
+    "/Subject": "Fourth-order source and sixth-order energy with complete supplied proofs",
+    "/Author": "KokunoYumeto",
+    "/Producer": "MiKTeX-dvipdfmx (20260404)",
+    "/CreationDate": "D:20260917031643+02'00'"
+  },
+  "artifacts": {
+    "yang_mills_quartic_cube_reader.pdf": {
+      "bytes": 236579,
+      "sha256": "6dbeb511cba47cdb906ecb6060f3fc6cc8c76eb98f85c56ddd600b09e79c1e52"
+    },
+    "yang_mills_quartic_cube_reader.md": {
+      "bytes": 111611,
+      "sha256": "39fce45ea62d8989fb368e8b986fc32483505acca646961df4b0035c4487071f"
+    },
+    "yang_mills_quartic_cube_reader.tex": {
+      "bytes": 181839,
+      "sha256": "78cd64465cf4eb25e8a821617934625748242cac6cb6393241c3e93a09a199dd"
+    },
+    "source_integrity.json": {
+      "bytes": 2541,
+      "sha256": "148306d0bb890e9b7b6beb827e147739131824c0540e4457977c1080ed3a104d"
+    },
+    "build_reader.py": {
+      "bytes": 2990,
+      "sha256": "76a405cf9fec471450d9864ddce9e6702af8755d441257e670fcee2c38ecf1b0"
+    },
+    "reader_template.tex": {
+      "bytes": 2456,
+      "sha256": "26d862e1fcd8e9a5a0dc49989e949de9236a631caddf19e96fa41b4862663e89"
+    },
+    "inline_code.lua": {
+      "bytes": 660,
+      "sha256": "87c8ce46f004ece0a2426a43c7797e24aed28ac2025c4224e3fe28c250cd73ca"
+    }
+  },
+  "build_environment": {
+    "python": "3.12.14",
+    "pandoc": "pandoc 3.9.0.2",
+    "xelatex": "MiKTeX-XeTeX 4.18 (MiKTeX 26.5)"
+  },
+  "commands": [
+    "build_reader.ps1",
+    "pdftoppm -r 65 -png yang_mills_quartic_cube_reader.pdf tmp/pdfs/page",
+    "python verify_reader.py"
+  ],
+  "visual_review": "All 49 pages inspected in five contact sheets. PDF pages 5, 17, 38 and 47 inspected at 125 dpi for mathematical displays, source tables, and appendix transitions. The final introduction-only exponent correction was checked on PDF page 4 at 150 dpi; all pages were rerendered after that final build. No clipping, overlap, missing glyphs or broken layout found."
+}

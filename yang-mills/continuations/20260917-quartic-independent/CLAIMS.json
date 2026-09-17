@@ -1,0 +1,52 @@
+{
+  "completed": [
+    {
+      "evidence": "Exact Git blob and parser check",
+      "id": "recover-original-geometry",
+      "scope": "Only this recovered original file is byte-verified against Git"
+    },
+    {
+      "evidence": "results/inherited_scalar_audit.json",
+      "id": "inherited-scalar-arithmetic",
+      "scope": "Finite arithmetic using input norm bounds as given; not independent analytic certification"
+    },
+    {
+      "evidence": "78 expanded exact polynomials,1,053 original inverse equations and1,053 logarithmic-source equations",
+      "id": "complete-v4",
+      "scope": "Fourth-order coefficient on every original connected support; no norm estimate promoted to full gap"
+    },
+    {
+      "evidence": "282 explicit response entries and2,156 zero quotient-polynomial residuals",
+      "id": "signed-tangent",
+      "scope": "Formal derivative through third degree"
+    },
+    {
+      "evidence": "Original K-state recurrence, linked subtraction, all cube paths, independent half-path sum and full finite-box contraction",
+      "id": "complete-e6",
+      "scope": "Sixth ground-energy coefficient with original open boundaries"
+    },
+    {
+      "evidence": "Written resolvent/contour proof E15\u201316",
+      "id": "analytic-remainder",
+      "scope": "R=3/(8M), finite volume; proof not machine-formalized"
+    }
+  ],
+  "main_checker": {
+    "false_formula_controls": 9,
+    "named_checks": 630
+  },
+  "not_established": [
+    "A new uniform-coupling bound for the fourth-order catalogue",
+    "Independent certification of all inherited gap proofs",
+    "A nontrivial four-dimensional continuum field",
+    "A finite positive four-dimensional continuum mass",
+    "A global literature-priority claim",
+    "Independent external or Lean review"
+  ],
+  "schema": "ym-audit-claim-status-v1",
+  "tangent_checker": {
+    "classes": 78,
+    "response_entries": 282,
+    "zero_polynomial_residuals": 2156
+  }
+}

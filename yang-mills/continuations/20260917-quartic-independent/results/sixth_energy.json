@@ -1,0 +1,115 @@
+{
+  "all_higher_orders_bound": "|R8| <= (3*kappa/4)*(|xi|/R)^8/(1-(|xi|/R)^2), R=3/(8M), |xi|<R",
+  "coefficient_limit_scope": "limit of this exact finite-order coefficient; no exchange with a nonperturbative infinite-volume series",
+  "cube_weight_from_two_independent_sums": "-83/1944",
+  "finite_boxes": [
+    {
+      "Cauchy_radius": "1/640",
+      "L": 2,
+      "ground_energy_over_kappa_coefficients": {
+        "xi": "480",
+        "xi2": "-80",
+        "xi4": "1198/351",
+        "xi6": "-3528610133/1172873520"
+      },
+      "original_counts": {
+        "J": 1128,
+        "M": 240,
+        "common": 576,
+        "corner": 512,
+        "cube": 64,
+        "path": 6732
+      }
+    },
+    {
+      "Cauchy_radius": "1/2016",
+      "L": 3,
+      "ground_energy_over_kappa_coefficients": {
+        "xi": "1512",
+        "xi2": "-252",
+        "xi4": "2383/234",
+        "xi6": "-11727394583/1172873520"
+      },
+      "original_counts": {
+        "J": 3852,
+        "M": 756,
+        "common": 2160,
+        "corner": 1728,
+        "cube": 216,
+        "path": 25140
+      }
+    },
+    {
+      "Cauchy_radius": "1/4608",
+      "L": 4,
+      "ground_energy_over_kappa_coefficients": {
+        "xi": "3456",
+        "xi2": "-576",
+        "xi4": "7928/351",
+        "xi6": "-27598370087/1172873520"
+      },
+      "original_counts": {
+        "J": 9168,
+        "M": 1728,
+        "common": 5376,
+        "corner": 4096,
+        "cube": 512,
+        "path": 62412
+      }
+    },
+    {
+      "Cauchy_radius": "1/8800",
+      "L": 5,
+      "ground_energy_over_kappa_coefficients": {
+        "xi": "6600",
+        "xi2": "-1100",
+        "xi4": "2285/54",
+        "xi6": "-7668327743/167553360"
+      },
+      "original_counts": {
+        "J": 17940,
+        "M": 3300,
+        "common": 10800,
+        "corner": 8000,
+        "cube": 1000,
+        "path": 125172
+      }
+    }
+  ],
+  "independently_enumerated_counts": [
+    {
+      "J": 1128,
+      "M": 240,
+      "common": 576,
+      "corner": 512,
+      "cube": 64,
+      "path": 6732
+    },
+    {
+      "J": 3852,
+      "M": 756,
+      "common": 2160,
+      "corner": 1728,
+      "cube": 216,
+      "path": 25140
+    },
+    {
+      "J": 9168,
+      "M": 1728,
+      "common": 5376,
+      "corner": 4096,
+      "cube": 512,
+      "path": 62412
+    }
+  ],
+  "linked_sixth_weights": {
+    "adjacent_pair": "22285/23654592",
+    "common": "244/4312035",
+    "corner": "-212/542997",
+    "cube": "-83/1944",
+    "path": "-4909/118272960",
+    "single": "-289/77760"
+  },
+  "operator": "H/kappa=K+xi*(2M-S)",
+  "sixth_coefficient_per_plaquette_spatial_limit": "-211396463/14074482240"
+}

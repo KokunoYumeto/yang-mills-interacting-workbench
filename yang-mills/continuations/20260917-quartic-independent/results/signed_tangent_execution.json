@@ -1,0 +1,33 @@
+{
+  "analytic_proofs_formalized": false,
+  "classes": 78,
+  "exact_polynomial_tangent_identities": 2156,
+  "explicit_degree_three_entries": 282,
+  "full_linearized_operator_norm_bound": false,
+  "records": [
+    {
+      "elapsed_seconds": 56.710595699999885,
+      "fresh_copy": true,
+      "mode": "ordinary",
+      "output_bytes": 7194918,
+      "output_sha256": "4f7b82a87d1a75087a5b0d45d02f6b1ce8e31e4ae1f384e7df11ba4ddfd8f90b",
+      "returncode": 0,
+      "started_utc": "2026-09-16T23:41:21.312813+00:00"
+    },
+    {
+      "elapsed_seconds": 58.7537621309998,
+      "fresh_copy": true,
+      "mode": "optimized",
+      "output_bytes": 7194918,
+      "output_sha256": "4f7b82a87d1a75087a5b0d45d02f6b1ce8e31e4ae1f384e7df11ba4ddfd8f90b",
+      "returncode": 0,
+      "started_utc": "2026-09-16T23:42:18.027962+00:00"
+    }
+  ],
+  "schema": "ym-signed-tangent-observed-execution-v1",
+  "source_hashed_in_receipt": {
+    "calculations/build_quartic.py": "12d03e1bc12147aead8e127d6f41514bbb24672707997aaa688db8af69acc9cb",
+    "calculations/gauge_polynomial.py": "a4de5136fbebb53c8e29b60fec7471ac38a42fa9d62d402cc951cf96f141697b",
+    "checks/verify_signed_tangent.py": "19ed15bb57a2db31b45e54aca9eb758cd43248dd7dc60e7cca3b4e81ce33d5c3"
+  }
+}

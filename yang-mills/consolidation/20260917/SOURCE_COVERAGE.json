@@ -1,0 +1,890 @@
+{
+  "base": "fdb66c24479f3a60ed526553a31ec5ddfa9e245b",
+  "created_utc": "2026-09-17T01:07:01.881072+00:00",
+  "retained_source_files": [
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py",
+      "bytes": 5495,
+      "sha256": "de1d9841ebd4655194801cc053bc1f71393433e8c241d0d88cdae65fc82f7c9f"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md",
+      "bytes": 21186,
+      "sha256": "d1e8fa24ce573ad1adfdaeecbb2ee6bfa1631717f9ce22b0f66d838981d5f240"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/execution.json",
+      "bytes": 5814,
+      "sha256": "1644b4ac46918691bba6dd11093cbe1c54d087c5d89d1a2aac35316b5aa9b1e2"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/geometry.py",
+      "bytes": 2670,
+      "sha256": "bd878efd339f05f320d051bee760bff0934ccfca10e9a2c1e6f26941a128cc1e"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md",
+      "bytes": 20675,
+      "sha256": "931d8d2824062c6435dfe324cb9145bc6d8e7a450d37aa5f86a94f1190190453"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py",
+      "bytes": 2312,
+      "sha256": "deeb7f0ca35596543738d84ef45a6799c13dfcadfcca4cb5eecc23e618e5db74"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/publication_replay.json",
+      "bytes": 1434,
+      "sha256": "caaa5ffa03fcffe7a593882c1304785a25dfe1cb6d4d0a6a2238e022e7622d6c"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/README.md",
+      "bytes": 2929,
+      "sha256": "2fbb9f300d29ad35efd1ea3b2c9d07b29185308f3aeaefbfaf2738d180597a18"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/replay.py",
+      "bytes": 3377,
+      "sha256": "13f8d2e9c6f2717071de8c2c8c1afac2c342ede9f244f873b76ecee480fcb6d8"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json",
+      "bytes": 2485,
+      "sha256": "23849c8a138107a287fd2b28f0e16d43056f80333ef1eb605df786c988c15eb9"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/state.json",
+      "bytes": 2022,
+      "sha256": "310162656f69b84b8059d6e201a867c0ef632492058cc43838191526419c5a1d"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md",
+      "bytes": 1283,
+      "sha256": "7bd1e91cbe38efa7e4415b347e4883d1d0c607b4d4a68a0bb593b6ccd7012039"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/verification.json",
+      "bytes": 180403,
+      "sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/verify.py",
+      "bytes": 19006,
+      "sha256": "45bd9ff364efc4d41b205702472ba0557d9248335bf4f6b879f55f1d2bec0502"
+    },
+    {
+      "path": "yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md",
+      "bytes": 1831,
+      "sha256": "9e435ee7f01042e8cea777a01246267239d2b384474959bdd555de02fc56822c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/audit_delivery.py",
+      "bytes": 4210,
+      "sha256": "245fe98ef507f15f90ffd7bd7cbfdfe9fc745e6c1aa664694f5b397c20a2637b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/channel_bounds.py",
+      "bytes": 3587,
+      "sha256": "172f6991d5751fe02bfe32203703f5cba5e7178ac00fb091197005b770e6a6b2"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/clusters.py",
+      "bytes": 1444,
+      "sha256": "0d6bc961abb8181b5954446caf579924e1bb8a6845da56701aabadcb601fe170"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/DEVELOPMENT.md",
+      "bytes": 2199,
+      "sha256": "43677160de9827419d9ac142ed4e52c721f4fb1d0b5f28fd8dd0081ff136eb71"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/differential_audit.py",
+      "bytes": 2445,
+      "sha256": "5c07b74a9d66d1f9638892369c1912f34e73fbe76b13a7a668dd3d411cc8f3d6"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/energy.py",
+      "bytes": 1734,
+      "sha256": "f1575cb1dfe91a9ea5c944072bfe2c0459d2b7cbbc087589d033fd12fe7cac4b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/exact_lp.py",
+      "bytes": 1864,
+      "sha256": "e72efd7a04c65cf3d40e051e883a072b3c8aa274e7284bbe86bef9b1179dfaa6"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/execution.json",
+      "bytes": 10217,
+      "sha256": "9bc1d5f5b09bfe4382ada35518eee170ec3e0f847eff860d39ad85ee087c7248"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_bounds.json",
+      "bytes": 107974,
+      "sha256": "253358e604345ea32115d97537c1758b3415bc22e78aa13c6350806ecd599e1d"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_coefficients.json",
+      "bytes": 500638,
+      "sha256": "fe159a6bfb090265c77b08b3ea4d29a05a992becfb11a51c02f84b609e0441ab"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_spin_budgets.json",
+      "bytes": 254177,
+      "sha256": "883f8ac81fb293f84e24593a2f28a0610ea4747324e7718c6a03210a24283e1d"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_transports.json",
+      "bytes": 5732854,
+      "sha256": "fababc256c9734a7139fc965f0c4aa4c5c4bead1c5df915d7fa11e04b49a96ab"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/sixth_energy.json",
+      "bytes": 4789,
+      "sha256": "74e5530fc4df71ce8c1442f9ae198aaf190eb09b8890d4c1c13ea738e3938896"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/verification.json",
+      "bytes": 45456,
+      "sha256": "d42ccdf0da93ba0131b6a2a5a54151ea1e828a97b0e2efb3f25a996f739d1409"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/PHYSICAL_RETURN.md",
+      "bytes": 19548,
+      "sha256": "53ce90cf955e40df807b7c9787773e754810de55ed0e9ea5abf3f3f6ead56c1f"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/quartic_budgets.py",
+      "bytes": 2520,
+      "sha256": "986a0715dc57b374a86701b2cc6ab0b27cee6425b4cb3e358c28539d3b4c4c83"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/QUARTIC_SOURCE.md",
+      "bytes": 22691,
+      "sha256": "735844de373612ef62790c257b90ba88d1eca79e074aa524e04108b07d68c179"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/README.md",
+      "bytes": 2302,
+      "sha256": "88876ddff5eba4d824d608a07c191e04c990dd6b4f22cf82e4a01ffe233a9dbd"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/replay.py",
+      "bytes": 2768,
+      "sha256": "61bc07bfd13837cdf934b2f37f1d1134d9f419403588c86a0b50fad28be40e80"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/series.py",
+      "bytes": 2216,
+      "sha256": "d293794f9615679d7ef6058a37c6005de3beddf93a103be6e58319a278b524e5"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/SIXTH_ENERGY.md",
+      "bytes": 15892,
+      "sha256": "89d2ca7bfbacef2c7766ae79a7a66863e551bae583a527fb8475c4e8e6e6926e"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/source_engine.py",
+      "bytes": 1259,
+      "sha256": "fd1bdf38ce379b2cfc0f2e400c4aef24fee279df22ed42656331662074b313d5"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/SOURCE_INTAKE.json",
+      "bytes": 3064,
+      "sha256": "dbf169446b5e7a7f29547582e566b9d37e6cd809b05b35a9aaf45e0c3ca577e0"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/spin_bounds.py",
+      "bytes": 2330,
+      "sha256": "516ddbdc6948284e976a1bc8b97c5ac0e934f47d96fb828a97d643b17b8578d5"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/state.json",
+      "bytes": 2568,
+      "sha256": "df3d11bba8fabc50a91d27a2da294224b484d8912b8e35cf1a3283d487be86d3"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/trace_algebra.py",
+      "bytes": 6969,
+      "sha256": "cfafffe6e2fd30e4a1e89f40c48b59784f379cf93982b0c4b83421f6a890f138"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/verify.py",
+      "bytes": 18484,
+      "sha256": "8f45e42e1554e75a78974e47eefac8dda3718e2945a664def1e2a0c7096a037c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-cube/VERIFY_FIRST.md",
+      "bytes": 2711,
+      "sha256": "af70ea140eeefa7357c89309bbcd30d6454f8ca862da9f5d6bd03276dafce9b9"
+    },
+    {
+      "path": "yang-mills/consolidation/20260917/provenance/supplied_quartic_checkpoint.md",
+      "bytes": 2470,
+      "sha256": "45318bea4489b7444848c1c7ff2820b794a6dca8d5815b3b04f5804b65563413",
+      "original_path": "yang-mills/research-control/CURRENT.md"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/AUDIT_REPORT.md",
+      "bytes": 9794,
+      "sha256": "2b62e251d57c365ae636da65570d8ffe39fd5cacd265aa9d30255a51fcb5f40e"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/audit_inherited.py",
+      "bytes": 4216,
+      "sha256": "accccb9455d874c23e89094d58d1f080ce07e27b298b55c897a93586615e71f2"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/build_quartic.py",
+      "bytes": 2627,
+      "sha256": "12d03e1bc12147aead8e127d6f41514bbb24672707997aaa688db8af69acc9cb"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/gauge_polynomial.py",
+      "bytes": 11773,
+      "sha256": "a4de5136fbebb53c8e29b60fec7471ac38a42fa9d62d402cc951cf96f141697b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/gauge_polynomial_v1.txt",
+      "bytes": 8330,
+      "sha256": "674026c8aef61af3a16aa601534748e8ec99d6301facffb73fc1ed02bd7371e3"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/linked_sixth_scratch.py",
+      "bytes": 1794,
+      "sha256": "31236feb9ec4405e9abf46099eddd2b281eb210ec3bd8fc35b22d4e282628881"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/original_link_audit.py",
+      "bytes": 3621,
+      "sha256": "5a09a466ef2b3950a5315f359d5708d70a0c943d3fe0345563e05c7963a31756"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/quartic_catalogue.py",
+      "bytes": 2063,
+      "sha256": "e1b7bbcf1b45264558fb2e039d509c2c5d2d34f580876bc911d9b32adb48c8b8"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/reconstruct.py",
+      "bytes": 2492,
+      "sha256": "bad6a19dd2aac6fdead96282c34e00d143e45ebe272abb3ecb0db4c9e6d4a037"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/sixth_energy.py",
+      "bytes": 6685,
+      "sha256": "fe130176d451b0f440a7427065e096a061916d3b4fb2cec044e9ef1d007c2532"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/replay.py",
+      "bytes": 5313,
+      "sha256": "83ac2a99d1af9c623089dc3d26a941492954b1d7d2f34ee413050ff3f6e592df"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/replay_signed_tangent.py",
+      "bytes": 2277,
+      "sha256": "257239a1c4ee15106e8ef8776d7bcfd9f10cb4d476681b979b10985f69cccda7"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/verify.py",
+      "bytes": 13860,
+      "sha256": "19f3b9efd766259c7b6baa40eab4c3a5507e62f5172cc83188ea52238af4f79a"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/verify_manifest.py",
+      "bytes": 1063,
+      "sha256": "dfdf69f293cd9795e42eb7fed4cddce835494c4ff9e04db1c988b5b488d3ed88"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/verify_signed_tangent.py",
+      "bytes": 4618,
+      "sha256": "19ed15bb57a2db31b45e54aca9eb758cd43248dd7dc60e7cca3b4e81ce33d5c3"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/CLAIMS.json",
+      "bytes": 1937,
+      "sha256": "23357c809cf6b05a33b3b823364837bc2bc8083acbc2fac720af76993090b26c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/FINAL_STATUS.json",
+      "bytes": 1336,
+      "sha256": "8d7a5279c1bc8d6f1edb7aac9f1c181ec951e3e9deb17c6a9819aae0facb914a"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/first_complete_progress.log",
+      "bytes": 4602,
+      "sha256": "5c77a3a587fce05a76a3afdeb56158a8c25b81fe73e80399fa42501050c9c671"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/first_complete_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/inherited_scalar_audit_output.json",
+      "bytes": 2940,
+      "sha256": "312ad7ee6a071c79c607b50134f2ce2c38d4de3ebaf84d43b8497211510f2bab"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/original_link_jet_audit.log",
+      "bytes": 2158,
+      "sha256": "7732595457baf1478501779c51e2e199de32233a68059bac3290c97f2fadfd2f"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/quartic_build.jsonl",
+      "bytes": 11642,
+      "sha256": "0fa4ed2c5cdfb3161c6f5d6b0e024ac17ad4964b1435d26ab56f7784a457c13c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/RECOVERY_NOTES.md",
+      "bytes": 1373,
+      "sha256": "8a82f3c76ad6374e49b2d1d8f2a682bf7b361433626ed80919dc96f4f62f6839"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/replay_current.log",
+      "bytes": 612,
+      "sha256": "624ccb0cd283a538c9a4b58f6b866fabe2d20ff3b99f838b34e1be576db41fba"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/signed_tangent_fresh_replay.log",
+      "bytes": 63,
+      "sha256": "1d57aa2cc2ecde01c703647c99cfe154b215e2af05173859df136b1ebc6faff0"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/signed_tangent_progress.log",
+      "bytes": 1940,
+      "sha256": "63894cef9bb8328397a3a21b025dd2a3b4c859b80766bac77c305cf8ee094b68"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/sixth_energy_output.json",
+      "bytes": 2639,
+      "sha256": "467e6bbbb5a37e202aafa63b9bc379a7a395530b80063db69cceb996ebe386fa"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/tangent_optimized.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/tangent_optimized_output.json",
+      "bytes": 7194918,
+      "sha256": "4f7b82a87d1a75087a5b0d45d02f6b1ce8e31e4ae1f384e7df11ba4ddfd8f90b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/tangent_optimized_process.json",
+      "bytes": 154,
+      "sha256": "f31d013d834431cd9854e2ea598b8f5c2bc45fde4a651f1f1e6e5e7a54194c9d"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/proofs/FOURTH_ORDER_SOURCE.md",
+      "bytes": 12727,
+      "sha256": "08f337075340ce03365fbffb4a30616fb918fee1007f1007968b021cfaf7adb1"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/proofs/SIGNED_TANGENT_CERTIFICATE.md",
+      "bytes": 2432,
+      "sha256": "ed570f705cf87509d8b7d576d8c9950cd3da267ccb50a696386ffe78e67d8ce2"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/proofs/SIXTH_ORDER_ENERGY.md",
+      "bytes": 16354,
+      "sha256": "b64b30bccb4b27aaeb8a43b2651c06c53372a2b35561f4bb3e8916d5ac95423b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/README.md",
+      "bytes": 5635,
+      "sha256": "198f52f80e21a17dfb81f0e6635eda51b200d8cabe338fe8c006331feb94a143"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/recovered/geometry.py",
+      "bytes": 2670,
+      "sha256": "bd878efd339f05f320d051bee760bff0934ccfca10e9a2c1e6f26941a128cc1e"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/recovered/linearized_excerpt_clean.md",
+      "bytes": 11484,
+      "sha256": "df2ac2cb55927159ecf9c6790390c868fda352576760ca0d00f2067235b43859"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/anchored_quartic_transports.json",
+      "bytes": 5805558,
+      "sha256": "181a71595aee6252b4924556cf71994af3387c881b8ba8ccdce1a2aafa977d2b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/cluster_sixth_direct.jsonl",
+      "bytes": 1822,
+      "sha256": "615e4577b6cb5fe056ddbf0cfcd649137c274d8ff4f16b650fd69cd2f263eeb7"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/cluster_sixth_direct_v2.jsonl",
+      "bytes": 1822,
+      "sha256": "462af84d3ec7ab853ad504d470d78b955489ba995fdfde678b67cab4c52ffcb7"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/cube_sixth_paths.json",
+      "bytes": 174021,
+      "sha256": "825ea45848f09bc7ae1c4816ec37fe336177230554bc144cf2427c60d5988f69"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/execution.json",
+      "bytes": 9991,
+      "sha256": "b6bbbb9d52fa6faa9e71f9a929d87a8937d90deb2a8d7a22789512aac8119222"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/inherited_scalar_audit.json",
+      "bytes": 2940,
+      "sha256": "745e558ce8860dc794c68b08515cb73c46b07aa1e254f998ff78733579138caa"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/original_link_jet_audit.json",
+      "bytes": 22109,
+      "sha256": "d6668144df47086d70110cf14d944889bfea790a95cbe0cbd6d7d8669bd4725c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_00.json",
+      "bytes": 7660,
+      "sha256": "a0dbe2881fe1f459ba302c6892cbcdc971e7af37ec4c0e365973568f100302c7"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_01.json",
+      "bytes": 14284,
+      "sha256": "64597dde2cd559ec204fe6b7388f2f30e1dd69ee2e7094dcd8ee77a136ca29f5"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_02.json",
+      "bytes": 14881,
+      "sha256": "8f577c2ff24fb27a44bcc57f6680a879b24e1921fcdbd504391914e7a06b59e2"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_03.json",
+      "bytes": 15228,
+      "sha256": "2ac76eb4257decb815f9c5c01bc9f438664ad5613f04378433ccb4325ab29e62"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_04.json",
+      "bytes": 23522,
+      "sha256": "828c5462039adbdf87bd797fdd5350719c80f58cc91b302ec3775529bbdf13c0"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_05.json",
+      "bytes": 23905,
+      "sha256": "c88c3b85e48921d97504cb80903f5122b34b527d9e8003a22f73dd00b994fb58"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_06.json",
+      "bytes": 23905,
+      "sha256": "1d69783b9211c5f8335167a17d1ca956eb36938b20d9455100b8760d1371678e"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_07.json",
+      "bytes": 25051,
+      "sha256": "95225b7cb91ad65432c87ba7c600c8f2e4424b1907ca561b7bebcce17a4a9de8"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_08.json",
+      "bytes": 25051,
+      "sha256": "df42a29185f6c0ba63b7491dc8b98bd0ed8a83728f24b418761e007b131cc234"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_09.json",
+      "bytes": 24540,
+      "sha256": "b1dba824aef32aebccdf29488969a230b9e4ac823241126dd33adf7ae8a98180"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_10.json",
+      "bytes": 23461,
+      "sha256": "0eb588e830edebb9e3deec9d156c16a3b057aec2e954271886f8a4efacd266b2"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_11.json",
+      "bytes": 15826,
+      "sha256": "50f52ca87324965a39ff0a1c46d90cd83a8cbd25a4039905a21f6c3598cf99ff"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_12.json",
+      "bytes": 24014,
+      "sha256": "6457258a5b78e5b204ddecbeb0d684ff84e4a63f9bc484e62f031c07a145cbb5"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_13.json",
+      "bytes": 23899,
+      "sha256": "14d9130d54821593f0df5ab848aa7447a3ce6accaebfb6892231386714ce6517"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_14.json",
+      "bytes": 25108,
+      "sha256": "1cf29d0ac06f528e181a6914a7060fd814a6a147ca0428f9514880652b9b7d05"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_15.json",
+      "bytes": 25108,
+      "sha256": "8986c8ba1023b9da0f6645ba966ffb4df69c5ec6a75400fde9f64e5281797427"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_16.json",
+      "bytes": 25559,
+      "sha256": "eddb0743b917634fd8a2892611429d69567916bcf42a2193dbbbfa3e949be78c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_17.json",
+      "bytes": 24662,
+      "sha256": "9f94cea1113065251261f4937254d91460e70c4de19022df6865f3337ddc7905"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_18.json",
+      "bytes": 23899,
+      "sha256": "aa95fc9e00eda48598e8c7aeab7067955b27afc95ca6a7a1f3d31f06bb9ab0f3"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_19.json",
+      "bytes": 25108,
+      "sha256": "2beefdb3159e5a4baf88b26ecb5b66af51727ae1494696f2821713924d0f0c17"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_20.json",
+      "bytes": 38095,
+      "sha256": "ac2a6d4c90b1ee57d06f5d20949c956d4b247353e8941174cf0fcccb60c85dea"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_21.json",
+      "bytes": 38566,
+      "sha256": "4e486c7d9c88bf66b943c1b2547d1c01cf45c7e347c0b944fe05ef6c2abd1e0d"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_22.json",
+      "bytes": 34605,
+      "sha256": "d03c531b45651684fc85465c38778e461c0a0e7cbf862944ef86aff554ec1234"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_23.json",
+      "bytes": 41353,
+      "sha256": "e40cd8c75ca9235f1d1fdb1c44ea5ecfaf65f52e6fa9baf3db2c8b7a60df195d"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_24.json",
+      "bytes": 40564,
+      "sha256": "1ae7a226cbbfd33231f8bf56e9048ac479e27bbcec94ce80176ad5acf678d963"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_25.json",
+      "bytes": 96709,
+      "sha256": "53a7ed162016bcb259a816fae7a3ae9295a22f2db0821a97b4c544b856add268"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_26.json",
+      "bytes": 41185,
+      "sha256": "698e88c73fbb8c10f8de41cd178974b6b94005dbd83c9e73199d0c24687033af"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_27.json",
+      "bytes": 40135,
+      "sha256": "502dd42d48c4e72af8221990f8618c397840491c821971b96c7466653a39ee64"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_28.json",
+      "bytes": 40073,
+      "sha256": "49eed08841eb44ff61379eba3df33865da4ad601d92b102c9a773d2bfffb3d0d"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_29.json",
+      "bytes": 41353,
+      "sha256": "6a3e1790998ee2cccddb9ca4ebe130e12fa798674766ed3f1c708524ca993c3a"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_30.json",
+      "bytes": 41184,
+      "sha256": "2227e69821ae7b73faab2ff9ee27ad748608cdf237d36b0657b697a9aae6cadd"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_31.json",
+      "bytes": 41185,
+      "sha256": "77343d6533f4f2cd75e4426cdc6b84fc18d32743620a992baca400f9ee0e5eae"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_32.json",
+      "bytes": 40563,
+      "sha256": "98e3ada3312549ec7c19f666b4b3608e52399d51847977511d4f43c4e7f735ab"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_33.json",
+      "bytes": 40135,
+      "sha256": "cae2f10a2192ad7b3fd313a802a593258f463a1a92bc15dbd05b6d264b365be6"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_34.json",
+      "bytes": 40073,
+      "sha256": "8555c1a549bcb82f25264149b6ad68c9afb24bfb68413a98c9473ef897e1deb6"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_35.json",
+      "bytes": 40732,
+      "sha256": "98bae843008cfdc7eab7ee0aee499441e52a3ea1ee662724e46a840a9791ecbf"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_36.json",
+      "bytes": 38874,
+      "sha256": "84774f35df98ec871c77aa7a36c047fa1625a3a901151f478381b1448e996683"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_37.json",
+      "bytes": 35095,
+      "sha256": "932305b95d7ebcf7cc723d7e6effe57961e8c95e4e81639d790666841ea06fdb"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_38.json",
+      "bytes": 40295,
+      "sha256": "26da598772a0ce4628008413209c79fe968089c3fcc10aeb487722d498f319fd"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_39.json",
+      "bytes": 40295,
+      "sha256": "f4e1eec986e5731c77c51ea93cbe78605758e0d91beecc76d4873a0c476dea8e"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_40.json",
+      "bytes": 40748,
+      "sha256": "4af045a77ec4b9802a3ed179a94e2862a633dec8e708de2d6ab573a525547cf8"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_41.json",
+      "bytes": 40020,
+      "sha256": "209897cfb061eb71266b67b8fa4d9c9d9f4aac9b82d0f23f67cfcb7c673a5b2a"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_42.json",
+      "bytes": 35344,
+      "sha256": "d6993752a386434397d961a2e7b9f9aaa74a503af697e8d1a11572929d00d752"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_43.json",
+      "bytes": 40494,
+      "sha256": "146fb91cca948876f1ec57812d08faab67f9b837970af8e61f3cc34b489ea3ea"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_44.json",
+      "bytes": 26254,
+      "sha256": "8e03b9039ef66227166c434bb77b212e0911244daa0511f5188545f93e0ff09f"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_45.json",
+      "bytes": 24014,
+      "sha256": "5ce7ec4fec7daf8f02c7d67f895ed44ae6c216e6396d00c82b9a9516d6671456"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_46.json",
+      "bytes": 35367,
+      "sha256": "bb7d98bb60337ed89fb751f53f4fc8f4845123946d296c0d10b34602b22779f7"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_47.json",
+      "bytes": 35368,
+      "sha256": "1a9c30cebda7eefbc8b87b32f9062afd2948fff1f62b21a2cc36484e28d8bdea"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_48.json",
+      "bytes": 34759,
+      "sha256": "7fff1ed955ca2f3d1dc226a4750438fe1bb03af434afb9ce9adaac0baae6f9a8"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_49.json",
+      "bytes": 34933,
+      "sha256": "3d082ef4b5e0b07dbe69e7db23f90f2d4a0c27cd3864e9b821a83ce87e5e305c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_50.json",
+      "bytes": 40674,
+      "sha256": "278e7bf1267d19fa1565c38f8677ee891b206ceec203a2f7c558be68832c1e4c"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_51.json",
+      "bytes": 40724,
+      "sha256": "2b70227c9cafac0fe1f39975fc5d2a3d0151587e90c164244c5094946255c20a"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_52.json",
+      "bytes": 42995,
+      "sha256": "3a0b11512331de42a379602ea3eea9f289f9c42f01dbf5e9d09444f05ee78b21"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_53.json",
+      "bytes": 41766,
+      "sha256": "9bf6423c33a9ed27d1b2b2413dd939a2d1105073a6e97dd219f42b68f57ec862"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_54.json",
+      "bytes": 41883,
+      "sha256": "6ace27b0ea5efd99af7838953fd1a9a1ed2806ff835579ffadcdbff1c0f8feed"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_55.json",
+      "bytes": 43164,
+      "sha256": "c6017c63e645210e07cbf805ee395c4f8ea18da806e960cea53157f9e82b7979"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_56.json",
+      "bytes": 42996,
+      "sha256": "6b918e7a9756d7a491bb2c01274b8ddd2df96365dbb6ae3f907e3d4f7cf30359"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_57.json",
+      "bytes": 40601,
+      "sha256": "8abc2604733bbf8468da8f42dfb39ed5f61c1ebb31fd079bcc8a48311aa27f53"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_58.json",
+      "bytes": 41329,
+      "sha256": "09e7b5130033ad402f611dba677640ba7b40d951ac320604fecd5a1cb4bdbfb4"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_59.json",
+      "bytes": 41946,
+      "sha256": "a6464307260954a6b632451fc8e9992d2665bc3e6aecb005c13abe406adbd500"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_60.json",
+      "bytes": 41782,
+      "sha256": "657334407e798da515116ee438ddb9007db835a247ee489259230830e3322123"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_61.json",
+      "bytes": 41329,
+      "sha256": "bcb817d87ac269d2dcf66ba670db4a31b142b2d5adbcb8fc91c8851c0c6d8572"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_62.json",
+      "bytes": 42105,
+      "sha256": "cebc2e107b65c95e6ddfb873fd7fe8bd4453e0577419c68219358038ed8ce2a2"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_63.json",
+      "bytes": 24954,
+      "sha256": "e6a8e6d26d63116ef24f63e7c99bc06b91d765715843db9e2abad85e563a9c7e"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_64.json",
+      "bytes": 26254,
+      "sha256": "4285af1600a28127e191e6fa17397ab66bf38c8dcd1866f7e626a3b5c5c63a5e"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_65.json",
+      "bytes": 40674,
+      "sha256": "d26e2011cbe73680ac6cbb30752cd59cbe1af2d7ecff01619cf220f9f765913b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_66.json",
+      "bytes": 36416,
+      "sha256": "331920b181eb78572b213604a5a9b487d000d953588275f76871b7c65c17adeb"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_67.json",
+      "bytes": 43164,
+      "sha256": "87eb1631af6e435d205862638c38d2af0ce7428f098163083f3d1687445d3caf"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_68.json",
+      "bytes": 42995,
+      "sha256": "17a4dc387bec6e3937457e2f9a83109b14b3be59e4c1fec33d9b287eacc6a591"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_69.json",
+      "bytes": 41884,
+      "sha256": "ac3250650a1ed8884c21d8ba2aaba8bc44c52329c178f43079d14c8fcebc8f04"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_70.json",
+      "bytes": 43164,
+      "sha256": "e29d882a82bbd6514db29eefe4126e4b9cbf7d509d32d46dd948d216790490a5"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_71.json",
+      "bytes": 42995,
+      "sha256": "e9b88006fd00f34af1d73976a4dfd1fe65473556ecfaa1793e87a60d2adbbddc"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_72.json",
+      "bytes": 41329,
+      "sha256": "6627a7f401bb3651d05905ba1368afcade0142ba9e17f8b7e4e7ead67f6480f4"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_73.json",
+      "bytes": 41329,
+      "sha256": "26ab5f04ff55de09fa192183a8b1205d1deb73a358510286bbf3e2ed0e9535ad"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_74.json",
+      "bytes": 35538,
+      "sha256": "0c304452470500d4a35e669ece73eb86bc6fd9d552a5b2fcf1eac9114c5f3f77"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_75.json",
+      "bytes": 42106,
+      "sha256": "d319f1b1be8d8206933645280ea5387267cda0183844d181537c4863a733f2a9"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_76.json",
+      "bytes": 42106,
+      "sha256": "3d3275e9480b7d2e314c39b60ace5035f75b08d82f714863cd46bccd3861f9ad"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_77.json",
+      "bytes": 34032,
+      "sha256": "6725b289bd4a541ef773453d70c8d056ab4077e88b49a946dcc8d4566c61d7f3"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_geometric_classes.json",
+      "bytes": 39061,
+      "sha256": "82b9d9940cffd9b9a1a0a3eead9a922f7f674454cab881e0880fd74a0fc37754"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_index.csv",
+      "bytes": 7087,
+      "sha256": "ebafa5295c25e99985c1304faf44bb9cd8a7382ca1bd5758279a6a433437dbb1"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/signed_tangent.json",
+      "bytes": 7194918,
+      "sha256": "4f7b82a87d1a75087a5b0d45d02f6b1ce8e31e4ae1f384e7df11ba4ddfd8f90b"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/signed_tangent_execution.json",
+      "bytes": 1245,
+      "sha256": "38a2421f814e77e23cc2b4c8903af4894c737feee7eea7a50502073cf428819f"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/sixth_energy.json",
+      "bytes": 2639,
+      "sha256": "8a6e7322999142bb346c5dcc2c07d07c2addf3f82eba6f98dc5c320cd95b15e3"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/verification.json",
+      "bytes": 73438,
+      "sha256": "3ff8aaba44a00dfcb85abd51978ec2d49e1a5767a5531672b7935b94cf68e15a"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/SHA256_MANIFEST.json",
+      "bytes": 20935,
+      "sha256": "ac5c1cabc9d837cefbad216b23cd4029affc989b9be85c006522f81f4034a283"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/sources/historical_artifact_inventory.json",
+      "bytes": 9311,
+      "sha256": "578af9f50d48ab26227ca3e5bd098f8da24968f6a6b46805641c2f4053efecd9"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/sources/recover_pinned_github.py",
+      "bytes": 2849,
+      "sha256": "48e93c0c359603c55a99b5f28522bd4934ea2169c0c0b4c642c589d3eb8ac406"
+    },
+    {
+      "path": "yang-mills/continuations/20260917-quartic-independent/sources/SOURCE_RECORDS.json",
+      "bytes": 2485,
+      "sha256": "195269b571a9dd2a63755d250174b3e6957ea57700e186ba71dbc73b2ed02738"
+    }
+  ],
+  "omissions": [
+    {
+      "original_path": "input/Pasted markdown(6).md",
+      "bytes": 22238,
+      "sha256": "080f9b988c5dff5b1d8669041f672bf44d783bbeb062c88d48a7eb836cc35f16",
+      "reason": "Private user transcript; not a mathematical computation input. Original preserved locally."
+    }
+  ]
+}

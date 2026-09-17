@@ -1,0 +1,56 @@
+{
+  "artifact_recovery_limit": "Historical filenames printed in the upload are not original mounted files. All unavailable historical files are individually listed in historical_artifact_inventory.json.",
+  "audit_date": "2026-09-17",
+  "claimed_prior_receipts_replayed": false,
+  "failed_copy_attempt": {
+    "result": "Library access disabled; no original bytes materialized by that attempt.",
+    "tool": "files.materialize on GitHub source reference"
+  },
+  "github": {
+    "PR": 8,
+    "base": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+    "head": "91434b6962062bd80439d4cb2cae9d2479264dde",
+    "read_scope": [
+      "PR metadata",
+      "CUBIC_SOURCE.md source content",
+      "full geometry.py",
+      "pinned source directory listing"
+    ],
+    "recovered_original_file": {
+      "bytes": 2670,
+      "git_blob": "c8d385b276909ea1e885747c42773e64e9553c87",
+      "original_path": "yang-mills/continuations/20260916-cubic-linearized/geometry.py",
+      "path": "recovered/geometry.py"
+    },
+    "repo": "KokunoYumeto/yang-mills-interacting-workbench",
+    "state_at_read": "open draft unmerged"
+  },
+  "independent_external_analytic_review": false,
+  "literature": [
+    {
+      "read_scope": "Original b2 characteristic-value coefficients, especially q2,q4,q6,q8. Parameter map explicitly derived in E17.",
+      "supports": "One-plaquette coefficient comparison, not external review of full cubic lattice e6.",
+      "url": "https://dlmf.nist.gov/28.6.E5"
+    },
+    {
+      "authors": "Schuette, Zheng Weihong, Hamer",
+      "read_scope": "Established exponential-vacuum and gauge-invariant linked-source framework, section3",
+      "supports": "Attribution of method, not a priority claim for new bounds.",
+      "url": "https://arxiv.org/html/hep-lat/9603026v1"
+    },
+    {
+      "read_scope": "Single-plaquette Mathieu representation, equation39; source conventions require transport",
+      "supports": "Context for original one-plaquette reduction.",
+      "url": "https://link.springer.com/article/10.1140/epjc/s10052-025-15120-x"
+    }
+  ],
+  "network_recovery_script": "recover_pinned_github.py is optional and not represented as successfully executed here.",
+  "new_Lean_execution": false,
+  "remote_changes_performed": false,
+  "requested_basis": {
+    "file": "input/Pasted markdown(6).md",
+    "original_preserved": true,
+    "sha256": "080f9b988c5dff5b1d8669041f672bf44d783bbeb062c88d48a7eb836cc35f16"
+  },
+  "schema": "ym-upload-audit-source-record-v1"
+}

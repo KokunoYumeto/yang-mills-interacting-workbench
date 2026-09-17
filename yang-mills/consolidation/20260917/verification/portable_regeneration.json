@@ -1,0 +1,24 @@
+{
+  "schema": "ym-public-regeneration-summary-v1",
+  "record_type": "Selected fields from a completed private-workstation execution record; absolute workstation paths are not distributed.",
+  "source_record_sha256": "fcb08874976185495ff3943ab7c4656f03f2853f09e7ffcfc373df83c1230ae8",
+  "date": "2026-09-17",
+  "python": "3.13.9",
+  "platform": "Windows",
+  "wrapper_sha256": "20c82c49c2782d4cb5ec48cb5d0f6fed8582c4fe49738627fe8425ee0573237d",
+  "passed": true,
+  "canonical_receipt_sha256": "d42ccdf0da93ba0131b6a2a5a54151ea1e828a97b0e2efb3f25a996f739d1409",
+  "all_six_generated_files_equal_original_bytes": true,
+  "all_six_generated_files_have_no_crlf": true,
+  "all_original_inputs_unchanged": true,
+  "existing_destination_rejected_without_changes": true,
+  "checks_per_mathematical_execution": 1056,
+  "negative_controls_per_mathematical_execution": 19,
+  "resource_limits": {"process_commit_bytes": 2147483648, "aggregate_job_commit_bytes": 2147483648, "active_processes": 1, "logical_cores": 1, "wall_seconds": 300},
+  "executions": [
+    {"name": "generation", "exit_code": 0, "seconds": 38.31406609999249, "peak_commit_bytes": 200499200},
+    {"name": "original_verification_optimized", "exit_code": 0, "seconds": 51.513338799995836, "peak_commit_bytes": 199155712},
+    {"name": "existing_destination_rejection", "exit_code": 2, "expected_exit_code": 2, "seconds": 0.11809769997489639, "peak_commit_bytes": 11755520}
+  ],
+  "interpretation": "The additive wrapper preserves canonical UTF-8/LF bytes and the unchanged original verifier's mathematics. This is a serialization and replay result, not machine formalization of the analytic proofs."
+}

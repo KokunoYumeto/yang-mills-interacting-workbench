@@ -1,28 +1,52 @@
-> Consolidation entry: [complete 14–16 September edition](../consolidation/20260916/README.md), [current domain and review record](../consolidation/20260916/CURRENT_RESEARCH.md). The original checkpoint below is preserved as historical source in the edition provenance.
+# Current mathematics: fourth-order vacuum, sixth-order energy and physical return
 
-# Current mathematical checkpoint: connected cubic source and linearized return
+The [17 September reading guide](../consolidation/20260917/README.md) and
+[49-page reader](../consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf)
+bring together the two independent contributions. The [exact comparison and
+validation](../consolidation/20260917/VALIDATION.md) identifies their complete
+fourth-order polynomials under explicit coordinates, retains both sixth-energy
+derivations, and adds the signed local response certificate. The original supplied
+checkpoint is preserved in the edition's provenance directory.
 
-Read [the complete cubic calculation](../continuations/20260916-cubic-linearized/CUBIC_SOURCE.md)
-and [the complete linearized return](../continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md).
-[Verification setup](../continuations/20260916-cubic-linearized/VERIFY_FIRST.md) recreates the
-full observed record with its exact hash; the source, state and replay are in that directory.
+The complete polynomial comparison passes in all 78 classes and all 8,621
+coordinate transports agree. The independent quaternion calculation gives
+282 expanded cubic response polynomials and 2,156 differentiated equations;
+282 are degree-zero equations with forcing W_p, and 1,874 are homogeneous
+positive-degree equations. The two energy remainders have distinct proofs and
+domains, not conflicting claims.
 
-The actual cubic source is completely evaluated on its original five connected
-families. Its coefficient bound is 944984/351. The full residual at
-xi*v1+xi^2*v2 retains xi^3*v3 and xi^4*B(v2,v2), its original scalar, the actual
-linearized inverse and the complete nonlinear endpoint tail. The physical gap
-is bounded below uniformly in L for g^2>=1/(2sqrt(alpha)), where alpha is the
-specified first positive quartic root (threshold g^2 approximately3.825973052393386).
-The fourth original vacuum-energy coefficient and an all-order analytic remainder
-are also supplied. This does not establish a nontrivial four-dimensional continuum
-field or a finite positive continuum mass.
+Read the complete [fourth source](../continuations/20260917-quartic-cube/QUARTIC_SOURCE.md),
+[physical return](../continuations/20260917-quartic-cube/PHYSICAL_RETURN.md), and
+[sixth vacuum energy](../continuations/20260917-quartic-cube/SIXTH_ENERGY.md).
+[Verification setup](../continuations/20260917-quartic-cube/VERIFY_FIRST.md)
+replays the unchanged cubic predecessor and the complete current certificate.
 
-The next actual quantity is v4=2B(v1,v3)+B(v2,v2) on original connected four-face
-supports and the signed same-support action of the linearized operator. The cubic
-table, full quartic residual formula and evaluated first/second spin budgets are
-completed inputs, not calculations to repeat. Preserve original scalar energy,
-physical units, gauge image, support labels, original metrics and endpoint defects.
+All 8,621 anchored fourth-order multisets are retained through 78 explicit
+invertible coordinate transports. The full 743-term trace table, Casimir lists,
+source bounds, rational duals and transported anchors are exposed. The complete
+q4 residual retains every term at degrees five through eight. The Neumann and
+nonlinear series, including the closed endpoint, give the full physical bound
+Delta_L >= kappa d_[4](xi), uniformly in L, on the domain in R25-R30.
+The exact original g-squared threshold is between 3.715960362535435236 and
+3.715960362535435237. At g^2>=15/4 the proved gap is >1.6584 kappa.
+The earlier cubic-reference calculation remains R1-R23 and is an intermediate
+result, not the final endpoint.
 
-All previous source files and receipts remain unchanged. The earlier coupled-response
-[checkpoint](../continuations/20260914-coupled-response/README.md) remains an ancestor.
-No automatic research, paid model run or merge is active.
+The complete sixth ground-energy coefficient retains all open-boundary counts
+and the six-distinct-face cube contribution -83/1944. The separate eigenvector
+recurrence and full 720-order denominator sum agree. Its all-order Cauchy
+remainder returns to the actual average plaquette through fifth order, including
+the original coupling, trace and periodic-boundary comparison in E11-E14.
+
+A further calculation is the channel-resolved source
+v5=2B(v1,v4)+2B(v2,v3). It has not been separately expanded into a final table.
+That is not a missing term in the completed sixth-energy formula or in the
+fourth-reference correction: the proofs retain the full residual and its bound.
+
+The standing continuum path eventually leaves the certified coupling interval.
+No nontrivial four-dimensional continuum field or finite positive continuum
+mass is established here. Earlier source files and historical receipts remain
+unchanged. The quartic calculation cites the cubic predecessor at
+91434b6962062bd80439d4cb2cae9d2479264dde; its dependency files agree byte-for-byte
+with the cubic files already present on main. The two quartic contributions are
+published together in the dated consolidation without replacing either derivation.

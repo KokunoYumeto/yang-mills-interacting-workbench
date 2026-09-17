@@ -1,0 +1,81 @@
+{
+  "records": [
+    {
+      "label": "ordinary",
+      "status": "completed",
+      "exit_code": 0,
+      "seconds": 27.905393599998206,
+      "caps": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 0,
+        "pid": 12208,
+        "peak_process_commit_bytes": 199008256,
+        "peak_job_commit_bytes": 199008256
+      },
+      "stdout_sha256": "246ea82cca16e6d8686457cf01cd09007499b4207330fcb22cf45a1c8e5c26b3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "counts": {
+          "exact_checks": 1056,
+          "negative_controls": 19
+        },
+        "passed": true,
+        "receipt_sha256": "d42ccdf0da93ba0131b6a2a5a54151ea1e828a97b0e2efb3f25a996f739d1409",
+        "tables_sha256": {
+          "quartic_bounds.json": "253358e604345ea32115d97537c1758b3415bc22e78aa13c6350806ecd599e1d",
+          "quartic_coefficients.json": "fe159a6bfb090265c77b08b3ea4d29a05a992becfb11a51c02f84b609e0441ab",
+          "quartic_spin_budgets.json": "883f8ac81fb293f84e24593a2f28a0610ea4747324e7718c6a03210a24283e1d",
+          "quartic_transports.json": "fababc256c9734a7139fc965f0c4aa4c5c4bead1c5df915d7fa11e04b49a96ab",
+          "sixth_energy.json": "74e5530fc4df71ce8c1442f9ae198aaf190eb09b8890d4c1c13ea738e3938896"
+        }
+      },
+      "source_files": 49,
+      "inputs_unchanged": true
+    },
+    {
+      "label": "optimized",
+      "status": "completed",
+      "exit_code": 0,
+      "seconds": 27.384698500012746,
+      "caps": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 1,
+        "pid": 2976,
+        "peak_process_commit_bytes": 199061504,
+        "peak_job_commit_bytes": 199061504
+      },
+      "stdout_sha256": "246ea82cca16e6d8686457cf01cd09007499b4207330fcb22cf45a1c8e5c26b3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "counts": {
+          "exact_checks": 1056,
+          "negative_controls": 19
+        },
+        "passed": true,
+        "receipt_sha256": "d42ccdf0da93ba0131b6a2a5a54151ea1e828a97b0e2efb3f25a996f739d1409",
+        "tables_sha256": {
+          "quartic_bounds.json": "253358e604345ea32115d97537c1758b3415bc22e78aa13c6350806ecd599e1d",
+          "quartic_coefficients.json": "fe159a6bfb090265c77b08b3ea4d29a05a992becfb11a51c02f84b609e0441ab",
+          "quartic_spin_budgets.json": "883f8ac81fb293f84e24593a2f28a0610ea4747324e7718c6a03210a24283e1d",
+          "quartic_transports.json": "fababc256c9734a7139fc965f0c4aa4c5c4bead1c5df915d7fa11e04b49a96ab",
+          "sixth_energy.json": "74e5530fc4df71ce8c1442f9ae198aaf190eb09b8890d4c1c13ea738e3938896"
+        }
+      },
+      "source_files": 49,
+      "inputs_unchanged": true
+    }
+  ],
+  "stdout_bytes_identical": true
+}
