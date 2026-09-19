@@ -6,6 +6,8 @@ For the short account of **what we tried, why it seemed promising, what worked a
 
 ## Yang–Mills: from explicit interacting models to continuum questions
 
+The [19 September continuation](yang-mills/consolidation/20260919/) adds the sixth-source and eighth-energy manuscripts, finite plaquette response and minimum-energy support maps. Exact one-face and certificate arithmetic were replayed; the new spatial tables and final cumulative execution package were not supplied. The [17 September reader](yang-mills/consolidation/20260917/) contains the preceding complete fourth-vacuum and sixth-energy exposition.
+
 The [14–16 September continuation edition](yang-mills/consolidation/20260916/) consolidates the complete available web-session proofs, downloaded gauge-native dependencies, cubic and linearized calculations, historical mathematical responses and fresh validation. Its [current state](yang-mills/consolidation/20260916/CURRENT_RESEARCH.md) preserves the different domains of the finite-lattice and fixed-spacing volume-limit results. The foundation readers described below retain their dated original scope.
 
 The investigation starts from specified finite-volume and regulated interacting systems and asks which state maps, spectral estimates and coarse-graining constructions persist when volume and spatial resolution change. The reason for keeping the parameters and nonlinear terms is that a result for an oscillator or a fixed box does not on its own settle the corresponding interacting continuum question.
@@ -25,6 +27,8 @@ Start with [the five-page key-advances reader](s6/26_s6_key_advances_frozen_2026
 Historical reviews and later calculations retain their own dates and scope. This publication does not independently certify a global complex structure on S6, a counterexample to CDP20, or an interacting Yang–Mills mass-gap conclusion. The original annotations remain provenance; readers should consult the later workbench for subsequent calculations, not reinterpret an old review as today's theorem.
 
 ## Navier–Stokes: reconstruction and independent validation
+
+The [19 September vacuum-hydrodynamics continuation](navier-stokes/continuations/20260919-vacuum-hydrodynamics/) adds exact marked Einstein initial data with a full-velocity decoder, a Rindler shear boundary response, finite modal-residue cancellation, and a separate layered-stress regularity theorem. It preserves both recovered manuscripts and their mathematical predecessors, with explicit proofs, literature links, comparison maps and compact independent checks. These constructions do not depend on independently establishing the upstream blowup claim; any source-specific use retains that claim's existing validation status.
 
 This programme examines the supplied finite-time blowup construction with positive viscosity, zero initial velocity and smooth compactly supported forcing. Its object is to reconstruct the actual equations and correction calculations, retaining pressure, transport, nonlinear terms and forcing, and to inspect the analytical and formal steps.
 

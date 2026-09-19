@@ -18,7 +18,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "https://github.com/KokunoYumeto/yang-mills-interacting-workbench"
-INSPECTED_MATH_SOURCE_COMMIT = "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55"
+INSPECTED_MATH_SOURCE_COMMIT = "143f6773feb424ad9ed3a8d116653200f20346b7"
 HISTORICAL_INDEX_COMMIT = "5835bf92c722cf095bc7ff3b13ad21c093c2d6c5"
 OUTPUTS = ("workbench.json", "releases/2026-09-09/GITHUB_TREE_MANIFEST.json")
 
@@ -156,14 +156,21 @@ def programmes() -> list[dict]:
             "id": "YM",
             "title": "Yang–Mills research workbench",
             "human_entry": "yang-mills/README.md",
-            "human_reader": "yang-mills/consolidation/20260916/reader/yang_mills_web_continuation.pdf",
+            "human_reader": "yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf",
+            "latest_continuation": "yang-mills/consolidation/20260919/README.md",
             "ai_entry": "yang-mills/AI_READING_INDEX.md",
             "source_directory": "yang-mills/",
-            "research_state_document": "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
-            "source_manifest": "yang-mills/consolidation/20260916/provenance/SOURCE_INTAKE.json",
+            "research_state_document": "yang-mills/consolidation/20260919/README.md",
+            "source_manifest": "yang-mills/consolidation/20260919/SOURCE_MANIFEST.json",
             "foundation_edition_doi": "10.5281/zenodo.22678364",
             "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678364",
             "research_state": (
+                "The 19 September continuation adds preserved sixth-source, eighth-energy "
+                "and finite plaquette-response manuscripts, exact arithmetic checks and "
+                "minimum-energy support maps. New spatial coefficient tables and the final "
+                "execution package were not supplied; catalogue completeness and their "
+                "response implications remain attributed to the source. The 17 September "
+                "reader supplies the fourth-vacuum and sixth-energy calculation. "
                 "The 14-16 September 2026 continuation consolidates complete available "
                 "web-session proofs, gauge-native source dependencies, cubic/linearized "
                 "finite-lattice calculations, retained historical mathematical responses, "
@@ -175,7 +182,8 @@ def programmes() -> list[dict]:
                 "and all its source bodies remain available."
             ),
             "description_basis": ["yang-mills/README.md", "yang-mills/AI_READING_INDEX.md",
-                                  "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md"],
+                                  "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
+                                  "yang-mills/consolidation/20260919/README.md"],
         },
         {
             "id": "S6",
@@ -202,6 +210,7 @@ def programmes() -> list[dict]:
             "title": "Navier–Stokes reconstruction and validation workbench",
             "human_entry": "navier-stokes/README.md",
             "human_reader": "navier-stokes/navier_stokes_workbench_208p.pdf",
+            "latest_continuation": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md",
             "ai_entry": "navier-stokes/navier_stokes_workbench.tex",
             "source_manifest": "navier-stokes/navier_stokes_primary_manifest.json",
             "research_state_document": "navier-stokes/RESEARCH_STATE.md",
@@ -210,6 +219,14 @@ def programmes() -> list[dict]:
             "edition_doi": "10.5281/zenodo.22678406",
             "edition_url": "https://doi.org/10.5281/zenodo.22678406",
             "research_state": (
+                "The 19 September vacuum-hydrodynamics continuation recovers an exact "
+                "nonlinear marked Einstein constraint-data encoding with a full-velocity "
+                "left inverse, a linear Rindler shear response and finite pole-cluster "
+                "calculation, and a distinct positive slab-stress regularity theorem. "
+                "Unchanged manuscripts, earlier mathematical sources, proof exposition, "
+                "compact symbolic/numerical checks and source hashes accompany the guide. "
+                "No NS-time Einstein conjugacy, nonlinear blowup cancellation or S6 "
+                "implication is established by these maps. "
                 "The corrected 9 September 2026 reconstruction examines the supplied "
                 "finite-time construction with positive viscosity, zero initial velocity "
                 "and smooth compactly supported forcing. The 208-page reader preserves "
@@ -219,7 +236,8 @@ def programmes() -> list[dict]:
                 "reader. Complete independent analytical and Lean validation remains "
                 "unfinished; the later local formal run is stopped without an endpoint or Comparator certificate."
             ),
-            "description_basis": ["navier-stokes/README.md", "navier-stokes/RESEARCH_STATE.md"],
+            "description_basis": ["navier-stokes/README.md", "navier-stokes/RESEARCH_STATE.md",
+                                  "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md"],
         },
     ]
 

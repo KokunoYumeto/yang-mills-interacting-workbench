@@ -1,0 +1,167 @@
+{
+  "schema": "ym-predecessor-replay-20260919",
+  "scope": "Fifth-source archive only; no replay of undelivered sixth/eighth spatial tables.",
+  "full_fifth_symbolic_audit_run": false,
+  "steps": [
+    {
+      "label": "manifest-ordinary",
+      "started_utc": "2026-09-18T23:10:49.356764+00:00",
+      "elapsed_seconds": 1.6644684999919264,
+      "exit_code": 0,
+      "script": "verify_cumulative.py",
+      "args": [],
+      "optimized": false,
+      "guard_sha256": "b6b2a0a176f7c34b7f06f0612573f555885601a293d681d71fcb8c629529042d",
+      "stdout_sha256": "b70206b297983e3f1ba213156a6c166d90d10b6e6d6b541d0dcaf4199f42dec4",
+      "stderr": "",
+      "limits": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 0,
+        "pid": 36960,
+        "peak_process_commit_bytes": 45531136,
+        "peak_job_commit_bytes": 45531136
+      }
+    },
+    {
+      "label": "fifth-ordinary",
+      "started_utc": "2026-09-18T23:10:51.023202+00:00",
+      "elapsed_seconds": 18.380816100005177,
+      "exit_code": 0,
+      "script": "workbench/yang-mills/continuations/20260917-fifth-source/verify_fifth.py",
+      "args": [
+        "--verify-receipt",
+        "generated/verification.json"
+      ],
+      "optimized": false,
+      "guard_sha256": "b6b2a0a176f7c34b7f06f0612573f555885601a293d681d71fcb8c629529042d",
+      "stdout_sha256": "6c2723c6a3d2340cd052675b22d5c3755d1dc83b0c25b3425991f57ea6a88370",
+      "stderr": "",
+      "limits": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 0,
+        "pid": 40092,
+        "peak_process_commit_bytes": 222146560,
+        "peak_job_commit_bytes": 222146560
+      }
+    },
+    {
+      "label": "manifest-optimized",
+      "started_utc": "2026-09-18T23:11:09.406623+00:00",
+      "elapsed_seconds": 0.5687615999922855,
+      "exit_code": 0,
+      "script": "verify_cumulative.py",
+      "args": [],
+      "optimized": true,
+      "guard_sha256": "b6b2a0a176f7c34b7f06f0612573f555885601a293d681d71fcb8c629529042d",
+      "stdout_sha256": "b70206b297983e3f1ba213156a6c166d90d10b6e6d6b541d0dcaf4199f42dec4",
+      "stderr": "",
+      "limits": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 1,
+        "pid": 17496,
+        "peak_process_commit_bytes": 45309952,
+        "peak_job_commit_bytes": 45309952
+      }
+    },
+    {
+      "label": "fifth-optimized",
+      "started_utc": "2026-09-18T23:11:09.977505+00:00",
+      "elapsed_seconds": 18.94939059999888,
+      "exit_code": 0,
+      "script": "workbench/yang-mills/continuations/20260917-fifth-source/verify_fifth.py",
+      "args": [
+        "--verify-receipt",
+        "generated/verification.json"
+      ],
+      "optimized": true,
+      "guard_sha256": "b6b2a0a176f7c34b7f06f0612573f555885601a293d681d71fcb8c629529042d",
+      "stdout_sha256": "6c2723c6a3d2340cd052675b22d5c3755d1dc83b0c25b3425991f57ea6a88370",
+      "stderr": "",
+      "limits": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 1,
+        "pid": 20020,
+        "peak_process_commit_bytes": 221884416,
+        "peak_job_commit_bytes": 221884416
+      }
+    },
+    {
+      "label": "source-expectation",
+      "started_utc": "2026-09-18T23:11:28.930342+00:00",
+      "elapsed_seconds": 1.8227503999951296,
+      "exit_code": 0,
+      "script": "supplementary_audits/source_expectation_check.py",
+      "args": [
+        "--verify-receipt",
+        "source_expectation_receipt.json"
+      ],
+      "optimized": false,
+      "guard_sha256": "b6b2a0a176f7c34b7f06f0612573f555885601a293d681d71fcb8c629529042d",
+      "stdout_sha256": "cfe1a87da34cabb7a716c27e4e809abdb037c34c54a25271dcc6cd3075c54d9e",
+      "stderr": "",
+      "limits": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 0,
+        "pid": 41832,
+        "peak_process_commit_bytes": 23273472,
+        "peak_job_commit_bytes": 23273472
+      }
+    },
+    {
+      "label": "post-manifest",
+      "started_utc": "2026-09-18T23:11:30.754989+00:00",
+      "elapsed_seconds": 0.618697500001872,
+      "exit_code": 0,
+      "script": "verify_cumulative.py",
+      "args": [],
+      "optimized": false,
+      "guard_sha256": "b6b2a0a176f7c34b7f06f0612573f555885601a293d681d71fcb8c629529042d",
+      "stdout_sha256": "b70206b297983e3f1ba213156a6c166d90d10b6e6d6b541d0dcaf4199f42dec4",
+      "stderr": "",
+      "limits": {
+        "mechanism": "Windows kernel Job Object, verified before executing supplied code",
+        "process_memory_limit_bytes": 2147483648,
+        "job_memory_limit_bytes": 2147483648,
+        "active_process_limit": 1,
+        "limit_flags": 8968,
+        "cpu_affinity_mask": 1,
+        "logical_cores": 1,
+        "python_optimization_level": 0,
+        "pid": 42748,
+        "peak_process_commit_bytes": 45547520,
+        "peak_job_commit_bytes": 45547520
+      }
+    }
+  ],
+  "passed": true
+}

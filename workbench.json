@@ -4,7 +4,7 @@
   "workbench_id": "KokunoYumeto/yang-mills-interacting-workbench",
   "title": "Yang–Mills, S6 and Navier–Stokes research workbenches",
   "repository": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench",
-  "inspected_math_source_commit": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
+  "inspected_math_source_commit": "143f6773feb424ad9ed3a8d116653200f20346b7",
   "commit_scope": "This is the previously inspected mathematical source baseline, not the commit of these generated documents or a claim that staged changes are committed.",
   "payload_source": "git_index_stage_0_blobs",
   "git_object_format": "sha1",
@@ -19,8 +19,8 @@
       "reason": "Generated catalogue excluded to avoid recursive fingerprints."
     }
   ],
-  "artifact_count": 471,
-  "payload_inventory_sha256": "a672960cb4cc7ac1ca5e8174f51f91ea3d1add46b6e4850d67c9dee174376f82",
+  "artifact_count": 724,
+  "payload_inventory_sha256": "199c62403b17d9447c94f1ba44ec8ec060af4eb9095b91e3774928b6a92e2ba6",
   "payload_inventory_sha256_encoding": "SHA-256 of the files/artifacts array serialized as UTF-8 JSON with sorted object keys, literal Unicode, no whitespace and no trailing newline; entries are sorted by repository-relative forward-slash path.",
   "generator": "tools/update_workbench_index.py",
   "human_overview": "README.md",
@@ -37,18 +37,20 @@
       "id": "YM",
       "title": "Yang–Mills research workbench",
       "human_entry": "yang-mills/README.md",
-      "human_reader": "yang-mills/consolidation/20260916/reader/yang_mills_web_continuation.pdf",
+      "human_reader": "yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf",
+      "latest_continuation": "yang-mills/consolidation/20260919/README.md",
       "ai_entry": "yang-mills/AI_READING_INDEX.md",
       "source_directory": "yang-mills/",
-      "research_state_document": "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
-      "source_manifest": "yang-mills/consolidation/20260916/provenance/SOURCE_INTAKE.json",
+      "research_state_document": "yang-mills/consolidation/20260919/README.md",
+      "source_manifest": "yang-mills/consolidation/20260919/SOURCE_MANIFEST.json",
       "foundation_edition_doi": "10.5281/zenodo.22678364",
       "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678364",
-      "research_state": "The 14-16 September 2026 continuation consolidates complete available web-session proofs, gauge-native source dependencies, cubic/linearized finite-lattice calculations, retained historical mathematical responses, bounded analytical audits and fresh finite replay records. The source guide records missing attachments and exact provenance. The finite-lattice gap domain and earlier fixed-spacing infinite-volume uniqueness domain remain distinct. The interacting four-dimensional continuum mass-gap conclusion remains unestablished. The 9 September foundation edition and all its source bodies remain available.",
+      "research_state": "The 19 September continuation adds preserved sixth-source, eighth-energy and finite plaquette-response manuscripts, exact arithmetic checks and minimum-energy support maps. New spatial coefficient tables and the final execution package were not supplied; catalogue completeness and their response implications remain attributed to the source. The 17 September reader supplies the fourth-vacuum and sixth-energy calculation. The 14-16 September 2026 continuation consolidates complete available web-session proofs, gauge-native source dependencies, cubic/linearized finite-lattice calculations, retained historical mathematical responses, bounded analytical audits and fresh finite replay records. The source guide records missing attachments and exact provenance. The finite-lattice gap domain and earlier fixed-spacing infinite-volume uniqueness domain remain distinct. The interacting four-dimensional continuum mass-gap conclusion remains unestablished. The 9 September foundation edition and all its source bodies remain available.",
       "description_basis": [
         "yang-mills/README.md",
         "yang-mills/AI_READING_INDEX.md",
-        "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md"
+        "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
+        "yang-mills/consolidation/20260919/README.md"
       ]
     },
     {
@@ -71,6 +73,7 @@
       "title": "Navier–Stokes reconstruction and validation workbench",
       "human_entry": "navier-stokes/README.md",
       "human_reader": "navier-stokes/navier_stokes_workbench_208p.pdf",
+      "latest_continuation": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md",
       "ai_entry": "navier-stokes/navier_stokes_workbench.tex",
       "source_manifest": "navier-stokes/navier_stokes_primary_manifest.json",
       "research_state_document": "navier-stokes/RESEARCH_STATE.md",
@@ -78,10 +81,11 @@
       "overleaf_reader": "https://www.overleaf.com/read/hzthvczhdyxc#a60fc2",
       "edition_doi": "10.5281/zenodo.22678406",
       "edition_url": "https://doi.org/10.5281/zenodo.22678406",
-      "research_state": "The corrected 9 September 2026 reconstruction examines the supplied finite-time construction with positive viscosity, zero initial velocity and smooth compactly supported forcing. The 208-page reader preserves forcing, pressure, transport, nonlinear terms and correction-cycle calculations, including the actual-shear remainder and moving-plane projection. The source manifest and recorded checks accompany the reader. Complete independent analytical and Lean validation remains unfinished; the later local formal run is stopped without an endpoint or Comparator certificate.",
+      "research_state": "The 19 September vacuum-hydrodynamics continuation recovers an exact nonlinear marked Einstein constraint-data encoding with a full-velocity left inverse, a linear Rindler shear response and finite pole-cluster calculation, and a distinct positive slab-stress regularity theorem. Unchanged manuscripts, earlier mathematical sources, proof exposition, compact symbolic/numerical checks and source hashes accompany the guide. No NS-time Einstein conjugacy, nonlinear blowup cancellation or S6 implication is established by these maps. The corrected 9 September 2026 reconstruction examines the supplied finite-time construction with positive viscosity, zero initial velocity and smooth compactly supported forcing. The 208-page reader preserves forcing, pressure, transport, nonlinear terms and correction-cycle calculations, including the actual-shear remainder and moving-plane projection. The source manifest and recorded checks accompany the reader. Complete independent analytical and Lean validation remains unfinished; the later local formal run is stopped without an endpoint or Comparator certificate.",
       "description_basis": [
         "navier-stokes/README.md",
-        "navier-stokes/RESEARCH_STATE.md"
+        "navier-stokes/RESEARCH_STATE.md",
+        "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md"
       ]
     }
   ],
@@ -159,9 +163,9 @@
       "id": "ART-004",
       "path": "README.md",
       "git_mode": "100644",
-      "git_blob_oid": "0013de6e5b7eb2355a0bdfd43366605086094b5e",
-      "bytes": 4185,
-      "sha256": "78a0da6a51ab2b30526c07a1811b5bbf1b335e70514c7c84f326feee59951605",
+      "git_blob_oid": "bda1ba7ab8f225697d2846c0a7c11de182d635b2",
+      "bytes": 8052,
+      "sha256": "c5fdc0c5e8021abcf356828f5f8ab721e826fa8f634edaee26f51d605d993451",
       "programme_ids": []
     },
     {
@@ -186,9 +190,9 @@
       "id": "ART-PATH-18b000a3d0ebb101",
       "path": "WORKBENCH.md",
       "git_mode": "100644",
-      "git_blob_oid": "686f42576d62b4033ec8caca967ae2cca245176c",
-      "bytes": 7608,
-      "sha256": "c9c5e17ba0433c86eb51d38041ae6c0baba285fb4f09eae924bba685239a6dbb",
+      "git_blob_oid": "e4cb2928ace4952a60663869f631c42e12ce4f20",
+      "bytes": 8697,
+      "sha256": "33833e2976fd8f143cd3cfa8c49ef7ced04dbde9bea0a0db4e59e55c53e69839",
       "programme_ids": []
     },
     {
@@ -260,9 +264,9 @@
       "id": "ART-PATH-87b7fec152f125e3",
       "path": "navier-stokes/README.md",
       "git_mode": "100644",
-      "git_blob_oid": "4796e79d1f1fb7cb2c1485c9654135e7f4e4054b",
-      "bytes": 2103,
-      "sha256": "df10ba579bb9ebf6f9a95759c75cb37f7cdbe16b81ec82df7e95cf90d3ee96b0",
+      "git_blob_oid": "41585a099089c3f85c1a274bcb0deecf174d9094",
+      "bytes": 2531,
+      "sha256": "612f7775ba43907d9da82b21345ac431ae61e7f2ad978b13b47b6aae76ddb5ab",
       "programme_ids": [
         "NS"
       ]
@@ -271,9 +275,240 @@
       "id": "ART-PATH-bb785ea645bdd813",
       "path": "navier-stokes/RESEARCH_STATE.md",
       "git_mode": "100644",
-      "git_blob_oid": "fe04bb04e7de0fdf9c2f66e8538bb63b4efd54fc",
-      "bytes": 6277,
-      "sha256": "bfa58a83f307ac7460cd5200d68629971e44f025aba052a4262f37c0183ccd55",
+      "git_blob_oid": "cd3e8ad41fa2cab1ac140cc0d87dfcef0b4d31c1",
+      "bytes": 7054,
+      "sha256": "a1c71fad211938123cf918c050ac84b34630acb89b1de08188f217ac3bef935f",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-8aa84fdea42f70e2",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/.gitattributes",
+      "git_mode": "100644",
+      "git_blob_oid": "fa1385d99a319b43c06f5309d1aae9fdd3adea46",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-1c687525a44c6dfa",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "31e944961e7daf00a3047869679fcd0a6e0736dd",
+      "bytes": 15752,
+      "sha256": "bcdf85356d1fcea4ac77fa5e061a4fbc647d187c56c38f6fba8d45729037c04c",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-6c11063bef15ca7e",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/SLAB_COMPARATORS.md",
+      "git_mode": "100644",
+      "git_blob_oid": "b8bd8c3ff44039f376d9e21efe68316fd6010265",
+      "bytes": 12964,
+      "sha256": "6f8824b83e126ac0d589e4d5895a9c2409a1056cc817bd3134e3f5143c2e38a7",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-4489ab0435ccc439",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/archive/er-epr-continuation/docs/ER_EPR_CONTINUATION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "e7610c4c4b8662bcf940a3872f1ddd853d9f9488",
+      "bytes": 39202,
+      "sha256": "1fbf39722f0203523aee8452b821e2a4c95c8ae761e01d83de76053ed1d87dd9",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-e5e816535acefa99",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/archive/ns-bh-interior/docs/INTERIOR_CONTINUATION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "4ed0bcdbda621c4b327e1a2f149d8c32ae717185",
+      "bytes": 29973,
+      "sha256": "0b9d1b980ed8ea666851165ef45211ef8c23ba1f8c9131957013c3217a3fe7fe",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-a276b06a13d9b45c",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/archive/ns-vacuum-propagation/docs/HIGHER_ORDER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "bbb3dda9d0846062095cbc283f4b3895cbf424b1",
+      "bytes": 4776,
+      "sha256": "cdcfb51b9becb8dd933f7b93eafe6ca93831d2d09486bdbe8b8bca0138224244",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-ee14cd43d46ec056",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/archive/ns-vacuum-propagation/docs/PROPAGATION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "aefc8b584aa3e8ab93ed20d92eea451f142e98a0",
+      "bytes": 38947,
+      "sha256": "fca6e8953c0b2001943fff610b30feeb7e3cb7826e27705c7ff0d567f15bf5c5",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-4bf9f041628d0774",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/archive/vacuum-hydrodynamics/RESEARCH_NOTE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "5da495d5e37c5b769b4b89645c33a507d0708794",
+      "bytes": 38457,
+      "sha256": "d0d2645f8c56cff3ce2aad079b73970db35b7047be372302666d44493921f494",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-1b2a0338a4e0d5a5",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/build_github_readers.py",
+      "git_mode": "100644",
+      "git_blob_oid": "23f881b415c3167591bcf17f2d02365c8e1fd461",
+      "bytes": 2940,
+      "sha256": "b5e9f80b1e3b384ed26dfa4f1fe0681c587f4d92abe3c216fe505f71223174c8",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-15354dfc34f1a4a9",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/manuscripts/IDENTITY_AND_COMPLETION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "8a2a5527e0dd2ed932555f8eec0b2bac107b45b1",
+      "bytes": 37426,
+      "sha256": "3094be2b338ecda01146b8f019c639b0d7ef4461b3607eff0ed037f3ddbd8cb7",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-8d906e82983c59c5",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/manuscripts/RESEARCH.md",
+      "git_mode": "100644",
+      "git_blob_oid": "0b6cb9a49adcc0b9dd40553d09072202a04ae073",
+      "bytes": 29921,
+      "sha256": "f381a8012b0781747444a09f5c7cf15c8f1e2576172dcc4d9ca6312f1a644f1c",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-27b374af2c252f0d",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/provenance.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d8d120c00373f52e35538dc43ea3e17d5e932480",
+      "bytes": 6424,
+      "sha256": "43e710514dfcc74e4b032e09f50266c0f2ff28e4d767788399fe9612541691d7",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-c744559fb573902a",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/ER_EPR_CONTINUATION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7280d6e57f92553b9c1e3d779ba4e4bb0083201b",
+      "bytes": 39349,
+      "sha256": "619e6ba79a5f53d3702d2d1b20b383ac435c018b709349b0441aea173a6eb12c",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-33908f074f830a5d",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/HIGHER_ORDER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7428564e5b1b6a905470c6a2214e7e50a96adf9e",
+      "bytes": 4918,
+      "sha256": "f41ddee7f19b618806b621f43033514fc8d3b6cb091e9e884b0fcf2e67f3b126",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-dcf48f1cc462f30f",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/IDENTITY_AND_COMPLETION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7b26cd8f57cffbd3d122deaa35421337b6ce76bf",
+      "bytes": 37224,
+      "sha256": "5626fc931e268345c7fc6e487fe9cdb225c948efe5bf3d29960c35a7886d4e0d",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-a3736292cdb09dec",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/INTERIOR_CONTINUATION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "952f41fd71a313dbb89f9bbcb478ae512e6275d8",
+      "bytes": 29883,
+      "sha256": "77a514e810f9620691f1d021c3a7d7dce658aa1fe476cfd6af09bc0db3f013b0",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-bda61203888589d5",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/PROPAGATION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "b565022a085244767e339e3c76b2d2ecdb19300f",
+      "bytes": 39088,
+      "sha256": "054abd50c672a86f74bb806678b4e632e07582078c8913df2c17da8d038b42ee",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-2ed8dba0f5f5f982",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/RESEARCH.md",
+      "git_mode": "100644",
+      "git_blob_oid": "e2c2eacea282b958b625f84051f0f801ceb6965a",
+      "bytes": 30036,
+      "sha256": "795253528a815692347e5cc66109d33c5e667d0dcdd3fa450df0246c170a959c",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-7c3e05d8f5f5edf2",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/RESEARCH_NOTE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "e70637c783a6c7791deb93882d86c87dcae72a96",
+      "bytes": 38594,
+      "sha256": "17a820b59722beae108a59c132f1caf0a68c7cf808571143c0cf2be1e9456a2d",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-4a4aad1c306e6cfe",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/readers/manifest.json",
+      "git_mode": "100644",
+      "git_blob_oid": "642a850c5bf4bcff1c5097b5617459ae2a57cb72",
+      "bytes": 2382,
+      "sha256": "7f72b4a3920c804caf0c39c97156d41ac2bc705bb15696d77e71917702db48f9",
+      "programme_ids": [
+        "NS"
+      ]
+    },
+    {
+      "id": "ART-PATH-276a0574e824ab6b",
+      "path": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/verify_recovered_formulas.py",
+      "git_mode": "100644",
+      "git_blob_oid": "b9a700b2b70575554b2f79dd3adc09dda1c1035a",
+      "bytes": 2823,
+      "sha256": "ca0a26112d865377c29f38f8ae2fce07cec6f5f5527cc2028a21491ca7f213af",
       "programme_ids": [
         "NS"
       ]
@@ -644,9 +879,9 @@
       "id": "ART-PATH-ddea3878fa9e7780",
       "path": "tools/update_workbench_index.py",
       "git_mode": "100644",
-      "git_blob_oid": "f93de731e0990b88aec8acb179fccb70c27fee0f",
-      "bytes": 17864,
-      "sha256": "f757a947fad4fd1fd67a8767994f53b2a5e1435152f56c6b252bd45f8ae45f8e",
+      "git_blob_oid": "429039187df870c627aedf9d5ae9bad4f3af6514",
+      "bytes": 19445,
+      "sha256": "bef1392eb6f3af4dd048eea3691d700ce0ca17bf2f476a043d7121ab36e0e398",
       "programme_ids": []
     },
     {
@@ -673,9 +908,9 @@
       "id": "ART-PATH-857e781659e9dcea",
       "path": "yang-mills/AI_READING_INDEX.md",
       "git_mode": "100644",
-      "git_blob_oid": "fef440630bb83f656c017d291e815151fa5a28e4",
-      "bytes": 23833,
-      "sha256": "98248856869d67c65326f3372ba6e06353daecaae2de16d938430a7c85f60e75",
+      "git_blob_oid": "dcb973a1ce7e92d0e9a15299dee8e21cd6dafe4d",
+      "bytes": 24305,
+      "sha256": "39ddf0247ce65d4ea3bf0ae637a2db8f41a8d2a3da0db4f1360ca03f4a29a656",
       "programme_ids": [
         "YM"
       ]
@@ -728,9 +963,9 @@
       "id": "ART-PATH-6cb100d136e6f46d",
       "path": "yang-mills/README.md",
       "git_mode": "100644",
-      "git_blob_oid": "d79b24b9210d00a1c4e929a466fae6492fc64aa3",
-      "bytes": 7147,
-      "sha256": "02ab01c7e807731e68d31460e6ea402d53755120ddf5aadbc83199afd4c83e33",
+      "git_blob_oid": "9bb2307d41096bd3368b2307c41b482da4987749",
+      "bytes": 10210,
+      "sha256": "0c9dbd18011d2d0d32d9850911628f815faffeb0394c18d74b6986b8357cb3a8",
       "programme_ids": [
         "YM"
       ]
@@ -1737,6 +1972,765 @@
       ]
     },
     {
+      "id": "ART-PATH-0ae7d8afeae33382",
+      "path": "yang-mills/consolidation/20260917/EDITION_MANIFEST.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ee163e5c13fd16f73ac309a5f0250ab250cd282f",
+      "bytes": 51435,
+      "sha256": "7c1e1b0e8b1795e4c163e871f86140516bd9fd30a9db5b26465eea4d67bc4f6a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-df3304dd7090dc9c",
+      "path": "yang-mills/consolidation/20260917/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "528f411b692758e72250bea7ec66ac583ccf6278",
+      "bytes": 7853,
+      "sha256": "7ae7ffd779151d9e0d3493965921c9770b39c4e4f632d00b7fdb33a447c2ce7f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b20da8d76cfa4ed1",
+      "path": "yang-mills/consolidation/20260917/SOURCE_COVERAGE.json",
+      "git_mode": "100644",
+      "git_blob_oid": "48f695a03df8a79ffe3e4fa49c85764187c47daa",
+      "bytes": 39897,
+      "sha256": "dc2554b3abb18562b3da0eaed197e4215d94c6b8dfcbcaf88e14de12bc8ecb4c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-07ed0e2eae4960e6",
+      "path": "yang-mills/consolidation/20260917/VALIDATION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7ea315964dc87ad458ae72f8756a1b74216d2f92",
+      "bytes": 12715,
+      "sha256": "2a4f212b7157de6f62ec48301b18a7df7aaf9b26ab5506518464d450e4c37d1e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-358e8b0d5a0a1ac5",
+      "path": "yang-mills/consolidation/20260917/YM_READING_GUIDE_20260917.md",
+      "git_mode": "100644",
+      "git_blob_oid": "ff9ccbfbb5872bb515ae79e6c1d9b7561c9fe72a",
+      "bytes": 6182,
+      "sha256": "bd78391f0298276b569fec131a6c8f9d7e60198f71b70902cc596a47c7778431",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5a1bbd4b4a59f4ab",
+      "path": "yang-mills/consolidation/20260917/provenance/supplied_quartic_checkpoint.md",
+      "git_mode": "100644",
+      "git_blob_oid": "8b3dfdf6fc6425c964ffa28f1c139cc6fc65b653",
+      "bytes": 2470,
+      "sha256": "45318bea4489b7444848c1c7ff2820b794a6dca8d5815b3b04f5804b65563413",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ff4deb6c0f93bebb",
+      "path": "yang-mills/consolidation/20260917/reader/BUILDING_READER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "dff2dd88377032ade76183eac18e1f10f1361421",
+      "bytes": 1196,
+      "sha256": "3af4abbf4aa4c9fd1c400782a677513513709e6f1c9d1d5625c893d1a8129520",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9b6596907c3bfd9d",
+      "path": "yang-mills/consolidation/20260917/reader/reader_qa.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f91036a3d516572df787a923f9a98a6a67ac63e2",
+      "bytes": 2446,
+      "sha256": "54116314051aea6a086e0aa4aa3f3c84195608f96b3a81a057279807b49e5ad6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b3d0884d9d63b37c",
+      "path": "yang-mills/consolidation/20260917/reader/source_integrity.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ead203c34b62e7e56e2ad5a0941334f6a83c85cd",
+      "bytes": 2541,
+      "sha256": "148306d0bb890e9b7b6beb827e147739131824c0540e4457977c1080ed3a104d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5c0219d9c3e76918",
+      "path": "yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2a64fc9dea31e738db33a3581c7725ca4c698d3b",
+      "bytes": 111611,
+      "sha256": "39fce45ea62d8989fb368e8b986fc32483505acca646961df4b0035c4487071f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-51c2fac84629e113",
+      "path": "yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf",
+      "git_mode": "100644",
+      "git_blob_oid": "554c9a4c1883a0c51aa449a99ee36c2a382bcc04",
+      "bytes": 236579,
+      "sha256": "6dbeb511cba47cdb906ecb6060f3fc6cc8c76eb98f85c56ddd600b09e79c1e52",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bbdb55ef161b2a68",
+      "path": "yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.tex",
+      "git_mode": "100644",
+      "git_blob_oid": "7c506c12700c4455c5d688dffb6e303c06a42368",
+      "bytes": 181839,
+      "sha256": "78cd64465cf4eb25e8a821617934625748242cac6cb6393241c3e93a09a199dd",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b18f51db42cf9b51",
+      "path": "yang-mills/consolidation/20260917/verification/PUBLIC_REPLAY.json",
+      "git_mode": "100644",
+      "git_blob_oid": "fa169f7404fad19c648baf1b4faa846bd6b5f59f",
+      "bytes": 62739,
+      "sha256": "6d9faf77f22c810bd07cfb051c3663a0ac2e1e35ec4237dd3562c660668f0346",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0f33b0a664bf88dc",
+      "path": "yang-mills/consolidation/20260917/verification/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "ed879424e3aa7032ef3dc0e92bf6e7c8c9b3cb79",
+      "bytes": 2696,
+      "sha256": "99678eb71b2bd9c2f8c227f97b1750d91bebf1f6eebcd878dc853fcdee95c3ba",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-27f0110a3790c7da",
+      "path": "yang-mills/consolidation/20260917/verification/bounded_worker.py",
+      "git_mode": "100644",
+      "git_blob_oid": "48155d94bf22355089f810adc57c895cd123d1bc",
+      "bytes": 4976,
+      "sha256": "b6b2a0a176f7c34b7f06f0612573f555885601a293d681d71fcb8c629529042d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2e668eea2635f88d",
+      "path": "yang-mills/consolidation/20260917/verification/catalogue_bridge_delivery.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6e927be823f787fbe75a6f18a34cbd787691a7b1",
+      "bytes": 56324,
+      "sha256": "766cf4f3a1a64e60fe83877c113489a6b0c25c33d2ce842a23729a10f2df6efd",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9c7f996a135da2d5",
+      "path": "yang-mills/consolidation/20260917/verification/check_gap_scalars.py",
+      "git_mode": "100644",
+      "git_blob_oid": "33d74244a25a87389f93b9df04ef1af4a77c3c7e",
+      "bytes": 7168,
+      "sha256": "bc5dcd7d3c6294f2d3c8fa08ea77636a75b764ae838cec989c6efa8fb6d1cd9d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f046f1564a63d2e9",
+      "path": "yang-mills/consolidation/20260917/verification/compare_catalogues.py",
+      "git_mode": "100644",
+      "git_blob_oid": "c882841ecf0eb683a265f5d2fc7fe747f613e4a3",
+      "bytes": 11657,
+      "sha256": "0c69538ed6d172558607db9427b6cf0994475fd32f63a169da57e2b07f2e62c3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4d7d8acd3016d45b",
+      "path": "yang-mills/consolidation/20260917/verification/independent_cube_counts.json",
+      "git_mode": "100644",
+      "git_blob_oid": "bb8cf95552fe55091982c7a9ac85bfaa598fca04",
+      "bytes": 2588,
+      "sha256": "fe20c26fafb75e26411602b7deec7b5d09fc41eea3de0f47e7a841bdf6190ac8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7749b46c79fa7d0a",
+      "path": "yang-mills/consolidation/20260917/verification/independent_cube_counts_windows.py",
+      "git_mode": "100644",
+      "git_blob_oid": "b3be3a0646f876a436dfee43a534b7c547a5950f",
+      "bytes": 8126,
+      "sha256": "b717a534754d3c74d86dba67a41311d2cc7fe320f6604a406f151d29aeb79fb2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ae02869d3120b28b",
+      "path": "yang-mills/consolidation/20260917/verification/independent_singleface.json",
+      "git_mode": "100644",
+      "git_blob_oid": "9d07da709365215fd9ac16158a9fa173ae266309",
+      "bytes": 479,
+      "sha256": "f58a7640ab9b45774b532363ee9c4cc768d976e495db9cd4ac4a01ac712dcb11",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-89cc65719b51edc1",
+      "path": "yang-mills/consolidation/20260917/verification/independent_singleface.py",
+      "git_mode": "100644",
+      "git_blob_oid": "8289d1996d5da0175cb2d150251d990f9ee27158",
+      "bytes": 2099,
+      "sha256": "cca188f5dc5e065368001499b99e87c21e0afeb205a1ea50b92a172a434fa09d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3e44c16a53ace148",
+      "path": "yang-mills/consolidation/20260917/verification/portable_regeneration.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ed612142093a2aa4778b4f539702c84264c80daf",
+      "bytes": 1657,
+      "sha256": "82ad348d6d0cae8002a18de4995150e9f45cd949f8062edf4cb6da620564d360",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e49d13bdefdc200f",
+      "path": "yang-mills/consolidation/20260917/verification/quaternion_replay.json",
+      "git_mode": "100644",
+      "git_blob_oid": "92da01125e0914b1390ca767881e3940ba0aadde",
+      "bytes": 84792,
+      "sha256": "f7f5b8ac7580c8574189f3b5e7c462f7bea9529948a9b89f4416a4c124d37d89",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-19ab24e8b082bc2a",
+      "path": "yang-mills/consolidation/20260917/verification/run_checks.py",
+      "git_mode": "100644",
+      "git_blob_oid": "71eef6791275e7cc48e4d2074cbbd81c594cb96a",
+      "bytes": 6334,
+      "sha256": "12cc8481f0ea36d1ceb8f2fd0ae18ed0acce09af51366a37cecd07931f05179b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b36898882833286c",
+      "path": "yang-mills/consolidation/20260917/verification/runs/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "9b7b3885294309cf844b22f73018f8100fdbcbfe",
+      "bytes": 478,
+      "sha256": "09a57124872b8a7de7f19f4e7ff2b2049337062a6f2610798cf1372b76a146b8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-43cbc35b4b918d89",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/bridge/limits.json",
+      "git_mode": "100644",
+      "git_blob_oid": "33c1d2fd5c36181dc0b1f3d00126dc2efdf14df1",
+      "bytes": 413,
+      "sha256": "4805ef2e83ef2e380c946044d696a1f3772b86671d329a77e360b212285d1c17",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ebc636ea3acd7124",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/bridge/stderr.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "3df2105313197321999f55778c20014f6cfc12b3",
+      "bytes": 6033,
+      "sha256": "94519b2b180af734de27f44bbee5ca150894e79a5c7c3e9fc4d792b593dcb8b1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-084bffe7d86a4c54",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/bridge/stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "15312cc137ab45ab6e7d07eb90a576fd626623d6",
+      "bytes": 58440,
+      "sha256": "67e1d745b2a2eb7f49b61417649994e051a92a0ed1c25876332555a840e230a3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b15b7c1cc68099e3",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/execution.json",
+      "git_mode": "100644",
+      "git_blob_oid": "fa169f7404fad19c648baf1b4faa846bd6b5f59f",
+      "bytes": 62739,
+      "sha256": "6d9faf77f22c810bd07cfb051c3663a0ac2e1e35ec4237dd3562c660668f0346",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3d90941dd627ba4c",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/gap-scalars/limits.json",
+      "git_mode": "100644",
+      "git_blob_oid": "517f4a237cdd019581a5f3f8e758f510ffd9bf87",
+      "bytes": 413,
+      "sha256": "623c40e35118d7dac3a205635a094aed028110885791c4459350e2b5dbf4dc9d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-943c31929fa03e56",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/gap-scalars/stderr.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-685c50cb0929ac86",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/gap-scalars/stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "7c91feb18ef1aa0ba20c7787fe81e97216c592f8",
+      "bytes": 7386,
+      "sha256": "f25022d4148008f8de0f78bb6887a1291e427c95fb333c91de8c828b627ee770",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1688b9c5ff52ab79",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/quaternion/limits.json",
+      "git_mode": "100644",
+      "git_blob_oid": "a878ff474299bfc68ce7316427647eb3cb247180",
+      "bytes": 412,
+      "sha256": "ee945ad53b3ba38a3b3a8a7f139bfe32f4d0c1f033b3d4362248871aed6c9ffc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-59a577cad9d8e6d9",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/quaternion/stderr.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-97d19cbccaea982d",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/quaternion/stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "92da01125e0914b1390ca767881e3940ba0aadde",
+      "bytes": 84792,
+      "sha256": "f7f5b8ac7580c8574189f3b5e7c462f7bea9529948a9b89f4416a4c124d37d89",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-50c78df05f02e8db",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/singleface/limits.json",
+      "git_mode": "100644",
+      "git_blob_oid": "886e4e3f20aef9ee2036480854d46e2ac3a44327",
+      "bytes": 413,
+      "sha256": "cc18bc3f799eec3ff8971cbb722974b9682570d63cdd68970c8ea10a30d16288",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d621003f419d876d",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/singleface/stderr.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-499cd32b23e382e3",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/singleface/stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "5315de7eada55729264935c45f0c03771938a143",
+      "bytes": 694,
+      "sha256": "46666f659e7b0cf8e0500768d7551b1db305f4d02a070104087cdc35ed104410",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-de66556a420c2b27",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/tangent/limits.json",
+      "git_mode": "100644",
+      "git_blob_oid": "7bb18ff0439e7395744caddc895a183a368ed8a7",
+      "bytes": 413,
+      "sha256": "8fc0b43b0c0fcd66e8b935019b824832b854948059e48e3445d7607f708a7472",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-15a0a97dacd9d7a0",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/tangent/stderr.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "f7b9c8025a0dd26b8ca2c924883046812c90a4dd",
+      "bytes": 2018,
+      "sha256": "27106c897ac5a8b10f82712ddbf3d3d90c96763f7d4f9ec696c7790b93627324",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0767f24e35130a34",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/tangent/stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "7f39cbbef1d8c21c3ce524e7bf2f25b1a58502f1",
+      "bytes": 792,
+      "sha256": "d1a64d98215811566a8c315e1ef173adabd6369d2d252f8ef9fd9a13cd3ae6ad",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-75c5c2325e5d5601",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/trace-optimized/limits.json",
+      "git_mode": "100644",
+      "git_blob_oid": "8d669fea853026dff0f7d64df18780535e4205d8",
+      "bytes": 415,
+      "sha256": "b44158fde47f1380c06ba39cdc7823dfd5a88a6fd9e51afaf61fa7b74c972dba",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f4b97283da21b8f8",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/trace-optimized/stderr.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1c7f99641bcec058",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/trace-optimized/stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "a2c4d9ed58be51bd140cdc88d923ead06e964bf5",
+      "bytes": 711,
+      "sha256": "246ea82cca16e6d8686457cf01cd09007499b4207330fcb22cf45a1c8e5c26b3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c3dead31b05c7b4f",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/trace/limits.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5027b7e8ffc2248393ced5c5ca6b0ea5e95188bd",
+      "bytes": 415,
+      "sha256": "3b9309b331d163d9d7964d1fa30aa155e8c47db5faf54a307cae5291d27dd70d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a75feace64968c30",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/trace/stderr.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6db0bfc3489f656e",
+      "path": "yang-mills/consolidation/20260917/verification/runs/public-edition-final/trace/stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "a2c4d9ed58be51bd140cdc88d923ead06e964bf5",
+      "bytes": 711,
+      "sha256": "246ea82cca16e6d8686457cf01cd09007499b4207330fcb22cf45a1c8e5c26b3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a5b37c7f4dd60183",
+      "path": "yang-mills/consolidation/20260917/verification/tangent_replay.json",
+      "git_mode": "100644",
+      "git_blob_oid": "7f39cbbef1d8c21c3ce524e7bf2f25b1a58502f1",
+      "bytes": 792,
+      "sha256": "d1a64d98215811566a8c315e1ef173adabd6369d2d252f8ef9fd9a13cd3ae6ad",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8cc5e428f5922485",
+      "path": "yang-mills/consolidation/20260917/verification/trace_replay.json",
+      "git_mode": "100644",
+      "git_blob_oid": "0beee3e8cdd5d7aeb0d8c99c05b5b77129c5af01",
+      "bytes": 3443,
+      "sha256": "58e14ea9d14c817c2b4c05e40e3316624a41a5d4d36f937e816d4274f7bff1ab",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-99d231a2d2602182",
+      "path": "yang-mills/consolidation/20260917/yang_mills_quartic_comparison_sources_20260917.zip",
+      "git_mode": "100644",
+      "git_blob_oid": "abc2335400e6a9e6af5cca1c647c1396e7dc0b73",
+      "bytes": 1309150,
+      "sha256": "4b841c95489934c245c03a9abf47cec96d2f0e7a5ff8a4cce540c2f514c51b94",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3a988d0dd40b488e",
+      "path": "yang-mills/consolidation/20260919/.gitattributes",
+      "git_mode": "100644",
+      "git_blob_oid": "fa1385d99a319b43c06f5309d1aae9fdd3adea46",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c3b81be065587c7e",
+      "path": "yang-mills/consolidation/20260919/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "6a0b9b22c965f06cbe78006cdf4b0f4207d5d371",
+      "bytes": 14676,
+      "sha256": "21b405d6fd0a85593f16067902568cdc165316e933d5315ae6c5f2bdf4557f93",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-097c8daeb70362e6",
+      "path": "yang-mills/consolidation/20260919/SOURCE_MANIFEST.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3916804117ec53ba4a79268283ac89b8f98dd678",
+      "bytes": 405157,
+      "sha256": "fe208097f5f53ec0d8519c7fbb697c9b24b13883c64b9d2ff79d751873a31d87",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7d034bafcbbbc851",
+      "path": "yang-mills/consolidation/20260919/supplied/EIGHTH_ENERGY.md",
+      "git_mode": "100644",
+      "git_blob_oid": "b190e1bbbffdcf319337eb252f4fe8080e8f9987",
+      "bytes": 14012,
+      "sha256": "0b3c1514d93274d8177717e1d087d752398d43c5f8660c85fdc5abb5c1cdb247",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b2b9b5f6e7efdff4",
+      "path": "yang-mills/consolidation/20260919/supplied/RESPONSE_AND_REMAINDER.md",
+      "git_mode": "100644",
+      "git_blob_oid": "11a3a46c61a10db5fe7abd516fe9ca65309ea72b",
+      "bytes": 37022,
+      "sha256": "7cd5f28c82e1b6c50d1088a4a02862a83489e36ccd8e56e8abec38562e52278e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fb9aab3c806e707e",
+      "path": "yang-mills/consolidation/20260919/supplied/SIXTH_SOURCE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "82859211673f86b8c0d345fb5bac6af98ce0b77b",
+      "bytes": 24093,
+      "sha256": "41e16538ac98850e5a3c1a01018cf759c7cca10585a866289e97f450e85f1496",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d9fa35529ce1bf2e",
+      "path": "yang-mills/consolidation/20260919/supplied/gram_cauchy.json",
+      "git_mode": "100644",
+      "git_blob_oid": "15698b214d1dc12e20a16bb1658be7daeed5f4ea",
+      "bytes": 1403,
+      "sha256": "0ce79adc26349f0e3b5d89263c2459274c9244b13e7946f28c3f013c965bc8f6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4aec20ce1a32ffa4",
+      "path": "yang-mills/consolidation/20260919/supplied/native_response.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6e2bd033fca8d61ad1fc4521cfc43d5563acb281",
+      "bytes": 30254,
+      "sha256": "3974bafabd00e0f0a565183cfc4bcf6d9f100bddefd5fd2ed71bee67154bb85b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fae552de9dcc7da1",
+      "path": "yang-mills/consolidation/20260919/supplied/yang_mills_cumulative_20260917.zip",
+      "git_mode": "100644",
+      "git_blob_oid": "68bd955ecacc6964b3672324806b06c0b0297360",
+      "bytes": 7934406,
+      "sha256": "859635f5bb246388b6a831f03847b3a92e693adf1233f01575c3678076c35d21",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-dfcb95544c2be6d8",
+      "path": "yang-mills/consolidation/20260919/supplied/yang_mills_cumulative_validation.json",
+      "git_mode": "100644",
+      "git_blob_oid": "da3010cbb909660c0f3e7cd5744e5a23d8f7e387",
+      "bytes": 3244,
+      "sha256": "3cd287cfc6aad506c394b8e1ce09b73b664effd860d513c225d22dd8124e8e81",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f299a17be38b4fd0",
+      "path": "yang-mills/consolidation/20260919/verification/EVIDENCE_MANIFEST.json",
+      "git_mode": "100644",
+      "git_blob_oid": "2000782f923fd0a0fc4efea2a27665bf5d45c460",
+      "bytes": 1325,
+      "sha256": "c032d58f0a2f8a137f8a2dbf303d6cafb06ee1dd80cb2e68647df8329cc01492",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-702537abe94e7a70",
+      "path": "yang-mills/consolidation/20260919/verification/eighth_checks/check_eighth_intake.py",
+      "git_mode": "100644",
+      "git_blob_oid": "7495c0c87b55bc7095beba8c779971f47b094ff1",
+      "bytes": 8770,
+      "sha256": "88718a029c39bae1ae0d619c251e996fe5aae7eef6cb916a3d6a21b9c93ddc71",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3d8dbfcd4d4edb5e",
+      "path": "yang-mills/consolidation/20260919/verification/eighth_checks/expected_receipt.json",
+      "git_mode": "100644",
+      "git_blob_oid": "9b91080f53ac057e854f9ed937f3373f8831339c",
+      "bytes": 1471,
+      "sha256": "f343d1bbd8907575a291b157517b9d19eda3e808cdbf64b74ca3b8beb15f44bb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1837fea696e97990",
+      "path": "yang-mills/consolidation/20260919/verification/eighth_intake_review.md",
+      "git_mode": "100644",
+      "git_blob_oid": "4de97bfd9e2bf341d04815a27842c445307528c6",
+      "bytes": 14657,
+      "sha256": "b13610e9085c5542072f48184b3d13704b8cac26c3e4d1743333ced5d3c86d7f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0d628d04bb499683",
+      "path": "yang-mills/consolidation/20260919/verification/predecessor_replay/REPLAY.json",
+      "git_mode": "100644",
+      "git_blob_oid": "8e8555b0b44375e50108594e7bcb55f50454d1c9",
+      "bytes": 6412,
+      "sha256": "745056d2ed5a8bbf613d92124e444713b75cee6e0c5ed1c4a931948a3cf8504b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f445ddf6682bc804",
+      "path": "yang-mills/consolidation/20260919/verification/response_checks/check_response_certificates.py",
+      "git_mode": "100644",
+      "git_blob_oid": "62e6837c079e43afe267581310ebfa3ecfe44fd1",
+      "bytes": 8147,
+      "sha256": "b9fe840dc815cad76106205d349ce3aac1092eabc5437582f954d772970792ec",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2723bdd5fdea49a5",
+      "path": "yang-mills/consolidation/20260919/verification/response_checks/receipt.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f7b4a72b61ca37020870d036847ce396ea0133ff",
+      "bytes": 12372,
+      "sha256": "3cde85a4a7f44981e0ceead7c404a9ded17c9775ba29f879f903d9135ba3fa66",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-06ac041e59d00e3f",
+      "path": "yang-mills/consolidation/20260919/verification/response_intake_review.md",
+      "git_mode": "100644",
+      "git_blob_oid": "263106383ec7fcbcb85b8cbaed0f5e89044cc731",
+      "bytes": 16764,
+      "sha256": "f3a8b48a6326f2de5325c40eee372c5b959451af1a22aa8be687daa337953380",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
       "id": "ART-PATH-77d4adb6b7cf6828",
       "path": "yang-mills/continuations/20260914-coupled-response/ATTEMPTS.md",
       "git_mode": "100644",
@@ -2496,6 +3490,1799 @@
       ]
     },
     {
+      "id": "ART-PATH-c4306758d8532d31",
+      "path": "yang-mills/continuations/20260917-quartic-cube/DEVELOPMENT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "e9066ef27f49f2072f14dcb9a4658be181f73e4c",
+      "bytes": 2199,
+      "sha256": "43677160de9827419d9ac142ed4e52c721f4fb1d0b5f28fd8dd0081ff136eb71",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7c0dec6a019ed8a8",
+      "path": "yang-mills/continuations/20260917-quartic-cube/PHYSICAL_RETURN.md",
+      "git_mode": "100644",
+      "git_blob_oid": "c2af777c6d248192208b5136acf05306439d132a",
+      "bytes": 19548,
+      "sha256": "53ce90cf955e40df807b7c9787773e754810de55ed0e9ea5abf3f3f6ead56c1f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-02abb07a11821206",
+      "path": "yang-mills/continuations/20260917-quartic-cube/QUARTIC_SOURCE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "2cc150f9df4a34a3e45fcbb809d3e19fcfff1942",
+      "bytes": 22691,
+      "sha256": "735844de373612ef62790c257b90ba88d1eca79e074aa524e04108b07d68c179",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-daf66d344ff6c627",
+      "path": "yang-mills/continuations/20260917-quartic-cube/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "30b10447d2fc73ddedc839736b4ab6336ef9f9c4",
+      "bytes": 2302,
+      "sha256": "88876ddff5eba4d824d608a07c191e04c990dd6b4f22cf82e4a01ffe233a9dbd",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-12c18c996e5a30a0",
+      "path": "yang-mills/continuations/20260917-quartic-cube/SIXTH_ENERGY.md",
+      "git_mode": "100644",
+      "git_blob_oid": "63bde5786d00a1b3c7816865ae9082333032873a",
+      "bytes": 15892,
+      "sha256": "89d2ca7bfbacef2c7766ae79a7a66863e551bae583a527fb8475c4e8e6e6926e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-082a04262d05ccc1",
+      "path": "yang-mills/continuations/20260917-quartic-cube/SOURCE_INTAKE.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3db146dd2e5663d922ff2f3473e3ae8a9e45ef46",
+      "bytes": 3064,
+      "sha256": "dbf169446b5e7a7f29547582e566b9d37e6cd809b05b35a9aaf45e0c3ca577e0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c243b94f53109767",
+      "path": "yang-mills/continuations/20260917-quartic-cube/VERIFY_FIRST.md",
+      "git_mode": "100644",
+      "git_blob_oid": "0bec93cd3f576ab7dc6312bacc34839b4807f131",
+      "bytes": 2711,
+      "sha256": "af70ea140eeefa7357c89309bbcd30d6454f8ca862da9f5d6bd03276dafce9b9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0d253cd1a94919e5",
+      "path": "yang-mills/continuations/20260917-quartic-cube/audit_delivery.py",
+      "git_mode": "100644",
+      "git_blob_oid": "d4b6c654257d2f14a99a8c0e480e65e06fafab76",
+      "bytes": 4210,
+      "sha256": "245fe98ef507f15f90ffd7bd7cbfdfe9fc745e6c1aa664694f5b397c20a2637b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-443b5c748d8c2354",
+      "path": "yang-mills/continuations/20260917-quartic-cube/channel_bounds.py",
+      "git_mode": "100644",
+      "git_blob_oid": "f8e02d9efc80cfc7277746996ecfc1cf45eb7b43",
+      "bytes": 3587,
+      "sha256": "172f6991d5751fe02bfe32203703f5cba5e7178ac00fb091197005b770e6a6b2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-586e84d7b24d99a7",
+      "path": "yang-mills/continuations/20260917-quartic-cube/clusters.py",
+      "git_mode": "100644",
+      "git_blob_oid": "241ea6c91eef2a9b919f0a324b49578d066e43c4",
+      "bytes": 1444,
+      "sha256": "0d6bc961abb8181b5954446caf579924e1bb8a6845da56701aabadcb601fe170",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7fb0fb318f94417f",
+      "path": "yang-mills/continuations/20260917-quartic-cube/differential_audit.py",
+      "git_mode": "100644",
+      "git_blob_oid": "098d5229de5c4438d39512074a8922edd6945c14",
+      "bytes": 2445,
+      "sha256": "5c07b74a9d66d1f9638892369c1912f34e73fbe76b13a7a668dd3d411cc8f3d6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b2420337fb99672d",
+      "path": "yang-mills/continuations/20260917-quartic-cube/energy.py",
+      "git_mode": "100644",
+      "git_blob_oid": "0c444a7708bac630ebd78c3d7bcd87588b91bbdf",
+      "bytes": 1734,
+      "sha256": "f1575cb1dfe91a9ea5c944072bfe2c0459d2b7cbbc087589d033fd12fe7cac4b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-96b89013d662e78d",
+      "path": "yang-mills/continuations/20260917-quartic-cube/exact_lp.py",
+      "git_mode": "100644",
+      "git_blob_oid": "c2a8b3ca7226bcf2f5a813a5d3dbf5f111687904",
+      "bytes": 1864,
+      "sha256": "e72efd7a04c65cf3d40e051e883a072b3c8aa274e7284bbe86bef9b1179dfaa6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ea611ee6c94b4b6d",
+      "path": "yang-mills/continuations/20260917-quartic-cube/execution.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3d3155f3930ac196acfebdf80e7fdfcd33e5de65",
+      "bytes": 10217,
+      "sha256": "9bc1d5f5b09bfe4382ada35518eee170ec3e0f847eff860d39ad85ee087c7248",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-443b49618a7a6f47",
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_bounds.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f102589b666ef90474d57bd1a430b59e1cc1f97f",
+      "bytes": 107974,
+      "sha256": "253358e604345ea32115d97537c1758b3415bc22e78aa13c6350806ecd599e1d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d53f02a3bdf59deb",
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_coefficients.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6db98162b198be9d99e5666f704645a60950f047",
+      "bytes": 500638,
+      "sha256": "fe159a6bfb090265c77b08b3ea4d29a05a992becfb11a51c02f84b609e0441ab",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d31bc812a0595206",
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_spin_budgets.json",
+      "git_mode": "100644",
+      "git_blob_oid": "09ab87fe07af5079fb8a3de998f49d6a9bf9e59d",
+      "bytes": 254177,
+      "sha256": "883f8ac81fb293f84e24593a2f28a0610ea4747324e7718c6a03210a24283e1d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bdeb29b4af46d79f",
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/quartic_transports.json",
+      "git_mode": "100644",
+      "git_blob_oid": "aa879b4c44828008796f175832ccf118bc944764",
+      "bytes": 5732854,
+      "sha256": "fababc256c9734a7139fc965f0c4aa4c5c4bead1c5df915d7fa11e04b49a96ab",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8aa45ce615676fc7",
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/sixth_energy.json",
+      "git_mode": "100644",
+      "git_blob_oid": "916fb5814040a0be15fae2b0aa7d3f2f076b5755",
+      "bytes": 4789,
+      "sha256": "74e5530fc4df71ce8c1442f9ae198aaf190eb09b8890d4c1c13ea738e3938896",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6e4a6a07dbb237fa",
+      "path": "yang-mills/continuations/20260917-quartic-cube/generated/verification.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3d455b6e283bc617d709d33e79dbb6a8cd5411a9",
+      "bytes": 45456,
+      "sha256": "d42ccdf0da93ba0131b6a2a5a54151ea1e828a97b0e2efb3f25a996f739d1409",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-31f802f22cad1a25",
+      "path": "yang-mills/continuations/20260917-quartic-cube/quartic_budgets.py",
+      "git_mode": "100644",
+      "git_blob_oid": "da048e7344f9d2e174945e483ca779a0fa31b40e",
+      "bytes": 2520,
+      "sha256": "986a0715dc57b374a86701b2cc6ab0b27cee6425b4cb3e358c28539d3b4c4c83",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4be5d5e33fbfc996",
+      "path": "yang-mills/continuations/20260917-quartic-cube/regenerate_portable.py",
+      "git_mode": "100644",
+      "git_blob_oid": "045874b5575ab98893072fcc315c5b56ca2ae9bc",
+      "bytes": 2042,
+      "sha256": "20c82c49c2782d4cb5ec48cb5d0f6fed8582c4fe49738627fe8425ee0573237d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bebd524b990dcc4e",
+      "path": "yang-mills/continuations/20260917-quartic-cube/replay.py",
+      "git_mode": "100644",
+      "git_blob_oid": "e7bb917710dd9ba7ac3f2af63bda0abeb09bda86",
+      "bytes": 2768,
+      "sha256": "61bc07bfd13837cdf934b2f37f1d1134d9f419403588c86a0b50fad28be40e80",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-860a0e144cec88b6",
+      "path": "yang-mills/continuations/20260917-quartic-cube/series.py",
+      "git_mode": "100644",
+      "git_blob_oid": "829df7d4a584087d31c2b85348f25871a6ebd98f",
+      "bytes": 2216,
+      "sha256": "d293794f9615679d7ef6058a37c6005de3beddf93a103be6e58319a278b524e5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-844f9a40300eeaa6",
+      "path": "yang-mills/continuations/20260917-quartic-cube/source_engine.py",
+      "git_mode": "100644",
+      "git_blob_oid": "fdc912477310b24ee1ff3bde1a2ef9eb896953ed",
+      "bytes": 1259,
+      "sha256": "fd1bdf38ce379b2cfc0f2e400c4aef24fee279df22ed42656331662074b313d5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-cb5395b029e96921",
+      "path": "yang-mills/continuations/20260917-quartic-cube/spin_bounds.py",
+      "git_mode": "100644",
+      "git_blob_oid": "fb8e8046d96df7584313bc93bda653ef17fe5fa3",
+      "bytes": 2330,
+      "sha256": "516ddbdc6948284e976a1bc8b97c5ac0e934f47d96fb828a97d643b17b8578d5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bdbfe394c642dfe2",
+      "path": "yang-mills/continuations/20260917-quartic-cube/state.json",
+      "git_mode": "100644",
+      "git_blob_oid": "a878a05008b615a5cc5efc64f1e7b36e937afb09",
+      "bytes": 2568,
+      "sha256": "df3d11bba8fabc50a91d27a2da294224b484d8912b8e35cf1a3283d487be86d3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c814ff818fa02699",
+      "path": "yang-mills/continuations/20260917-quartic-cube/trace_algebra.py",
+      "git_mode": "100644",
+      "git_blob_oid": "b6ef34f446e44129da76cd3b21e791347a81fb24",
+      "bytes": 6969,
+      "sha256": "cfafffe6e2fd30e4a1e89f40c48b59784f379cf93982b0c4b83421f6a890f138",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-862e746a823a2e0e",
+      "path": "yang-mills/continuations/20260917-quartic-cube/verify.py",
+      "git_mode": "100644",
+      "git_blob_oid": "2937925526cceaed55838ad91fd3b5492a7f138a",
+      "bytes": 18484,
+      "sha256": "8f45e42e1554e75a78974e47eefac8dda3718e2945a664def1e2a0c7096a037c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-9d4dd2dde95a453b",
+      "path": "yang-mills/continuations/20260917-quartic-independent/AUDIT_REPORT.md",
+      "git_mode": "100644",
+      "git_blob_oid": "09947eff5ea4755ba894abf48d4531e568f65e4b",
+      "bytes": 9794,
+      "sha256": "2b62e251d57c365ae636da65570d8ffe39fd5cacd265aa9d30255a51fcb5f40e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-59c433e017af971d",
+      "path": "yang-mills/continuations/20260917-quartic-independent/CLAIMS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "7f0d9019fb42697c28860a72ed4a08341bdd8c6c",
+      "bytes": 1937,
+      "sha256": "23357c809cf6b05a33b3b823364837bc2bc8083acbc2fac720af76993090b26c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-aa53f53314bc92f3",
+      "path": "yang-mills/continuations/20260917-quartic-independent/FINAL_STATUS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "0be0c1b0558ff3d83a8a862cf419600410fc2e27",
+      "bytes": 1336,
+      "sha256": "8d7a5279c1bc8d6f1edb7aac9f1c181ec951e3e9deb17c6a9819aae0facb914a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-14b97c78caca9ff7",
+      "path": "yang-mills/continuations/20260917-quartic-independent/PUBLIC_EDITION.md",
+      "git_mode": "100644",
+      "git_blob_oid": "6c0b221660008f366393d3ef47e8ecd672333248",
+      "bytes": 4046,
+      "sha256": "e9b022e783381ab1b6b4df886e407d0172455edccd75a504b3588db95a8780e1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-368fc3c4429a2366",
+      "path": "yang-mills/continuations/20260917-quartic-independent/README.md",
+      "git_mode": "100644",
+      "git_blob_oid": "7115283c06ac10b80e35898788b002ec450d2256",
+      "bytes": 5635,
+      "sha256": "198f52f80e21a17dfb81f0e6635eda51b200d8cabe338fe8c006331feb94a143",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-302c587eb4e532b2",
+      "path": "yang-mills/continuations/20260917-quartic-independent/SHA256_MANIFEST.json",
+      "git_mode": "100644",
+      "git_blob_oid": "96031fbf010479e7e3ccf0d18b433a342831cb6e",
+      "bytes": 20935,
+      "sha256": "ac5c1cabc9d837cefbad216b23cd4029affc989b9be85c006522f81f4034a283",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e34d616e8f42dda8",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/audit_inherited.py",
+      "git_mode": "100644",
+      "git_blob_oid": "c316e1df9c5e469583e4002dc627a0f1dbcf4819",
+      "bytes": 4216,
+      "sha256": "accccb9455d874c23e89094d58d1f080ce07e27b298b55c897a93586615e71f2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-801ab69ba92aa880",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/build_quartic.py",
+      "git_mode": "100644",
+      "git_blob_oid": "bcefa1d58c8e621d86e8aabc1e9df7d0dd13b7a9",
+      "bytes": 2627,
+      "sha256": "12d03e1bc12147aead8e127d6f41514bbb24672707997aaa688db8af69acc9cb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-eff0c5bbf80c08e1",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/gauge_polynomial.py",
+      "git_mode": "100644",
+      "git_blob_oid": "634b92eb06df4d9326a0456aefa9fbc89a1316e6",
+      "bytes": 11773,
+      "sha256": "a4de5136fbebb53c8e29b60fec7471ac38a42fa9d62d402cc951cf96f141697b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b4c293a9f5e6e715",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/gauge_polynomial_v1.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "fc6c4e363d47fecebcf07fd2761acc4243f81fdb",
+      "bytes": 8330,
+      "sha256": "674026c8aef61af3a16aa601534748e8ec99d6301facffb73fc1ed02bd7371e3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-51328119aec516fe",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/linked_sixth_scratch.py",
+      "git_mode": "100644",
+      "git_blob_oid": "f3834072c1b62a07439507d613ff35105dff0237",
+      "bytes": 1794,
+      "sha256": "31236feb9ec4405e9abf46099eddd2b281eb210ec3bd8fc35b22d4e282628881",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b876fdb71cf14a97",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/original_link_audit.py",
+      "git_mode": "100644",
+      "git_blob_oid": "202ed5165ae97e1d834ead876d6258dff8f7ffd2",
+      "bytes": 3621,
+      "sha256": "5a09a466ef2b3950a5315f359d5708d70a0c943d3fe0345563e05c7963a31756",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-cd72758abdf17630",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/quartic_catalogue.py",
+      "git_mode": "100644",
+      "git_blob_oid": "87cc64f59ded1524c9d75e101356a0a896ede876",
+      "bytes": 2063,
+      "sha256": "e1b7bbcf1b45264558fb2e039d509c2c5d2d34f580876bc911d9b32adb48c8b8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a2ab57d7d2df1703",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/reconstruct.py",
+      "git_mode": "100644",
+      "git_blob_oid": "08972b2477d52f443657f18ed24c507959894173",
+      "bytes": 2492,
+      "sha256": "bad6a19dd2aac6fdead96282c34e00d143e45ebe272abb3ecb0db4c9e6d4a037",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0f8683f74165c1c4",
+      "path": "yang-mills/continuations/20260917-quartic-independent/calculations/sixth_energy.py",
+      "git_mode": "100644",
+      "git_blob_oid": "498a9535e4e15dee471597282570d377a2141435",
+      "bytes": 6685,
+      "sha256": "fe130176d451b0f440a7427065e096a061916d3b4fb2cec044e9ef1d007c2532",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f383c09bdee68b85",
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/replay.py",
+      "git_mode": "100644",
+      "git_blob_oid": "1d5fa8ae8542683fd24e33f070496e5404c34f9b",
+      "bytes": 5313,
+      "sha256": "83ac2a99d1af9c623089dc3d26a941492954b1d7d2f34ee413050ff3f6e592df",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bd270411ba3b6c3a",
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/replay_signed_tangent.py",
+      "git_mode": "100644",
+      "git_blob_oid": "d3dc58ea85c5d8a606111e001eaff3daf4133391",
+      "bytes": 2277,
+      "sha256": "257239a1c4ee15106e8ef8776d7bcfd9f10cb4d476681b979b10985f69cccda7",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b8232920a522f3f1",
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/verify.py",
+      "git_mode": "100644",
+      "git_blob_oid": "9e824e8cf00661342abdeefa2ca9939dcb669b10",
+      "bytes": 13860,
+      "sha256": "19f3b9efd766259c7b6baa40eab4c3a5507e62f5172cc83188ea52238af4f79a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-42f7a5f8067cf066",
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/verify_manifest.py",
+      "git_mode": "100644",
+      "git_blob_oid": "ccee8289c38b24f7222d6a7c5e96a472937033f1",
+      "bytes": 1063,
+      "sha256": "dfdf69f293cd9795e42eb7fed4cddce835494c4ff9e04db1c988b5b488d3ed88",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-361ccb1416f05afb",
+      "path": "yang-mills/continuations/20260917-quartic-independent/checks/verify_signed_tangent.py",
+      "git_mode": "100644",
+      "git_blob_oid": "4423de6e731c02ca3b74ef1c278c77d3137272d4",
+      "bytes": 4618,
+      "sha256": "19ed15bb57a2db31b45e54aca9eb758cd43248dd7dc60e7cca3b4e81ce33d5c3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e5ea9a4d2d434d4c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/RECOVERY_NOTES.md",
+      "git_mode": "100644",
+      "git_blob_oid": "345a9ad22925059486094554df81ffcabbe28781",
+      "bytes": 1373,
+      "sha256": "8a82f3c76ad6374e49b2d1d8f2a682bf7b361433626ed80919dc96f4f62f6839",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-10c170b2590bcc90",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/first_complete_progress.log",
+      "git_mode": "100644",
+      "git_blob_oid": "65e98d71299764fe39971facfe030d6a9ff43861",
+      "bytes": 4602,
+      "sha256": "5c77a3a587fce05a76a3afdeb56158a8c25b81fe73e80399fa42501050c9c671",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fab54acc65a9c91f",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/first_complete_stdout.txt",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fdea4a383868da19",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/inherited_scalar_audit_output.json",
+      "git_mode": "100644",
+      "git_blob_oid": "71043d551bc54203a7733e932834674a0bc00d26",
+      "bytes": 2940,
+      "sha256": "312ad7ee6a071c79c607b50134f2ce2c38d4de3ebaf84d43b8497211510f2bab",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d09a7f5341c16d1e",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/original_link_jet_audit.log",
+      "git_mode": "100644",
+      "git_blob_oid": "e227e3efb88a120bfbd1203d65921f1c8eae3af8",
+      "bytes": 2158,
+      "sha256": "7732595457baf1478501779c51e2e199de32233a68059bac3290c97f2fadfd2f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5061529560c40a52",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/quartic_build.jsonl",
+      "git_mode": "100644",
+      "git_blob_oid": "c66893e4c41f32cbf298086fe8b824f4626b57c5",
+      "bytes": 11642,
+      "sha256": "0fa4ed2c5cdfb3161c6f5d6b0e024ac17ad4964b1435d26ab56f7784a457c13c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-33904e24f8ee8819",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/replay_current.log",
+      "git_mode": "100644",
+      "git_blob_oid": "22df6d1551ed61e6598183b9c0e6a2b8b8e64895",
+      "bytes": 612,
+      "sha256": "624ccb0cd283a538c9a4b58f6b866fabe2d20ff3b99f838b34e1be576db41fba",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-158bb950d9fba780",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/signed_tangent_fresh_replay.log",
+      "git_mode": "100644",
+      "git_blob_oid": "5690cc01c3857de41748e9d255d2901178097a31",
+      "bytes": 63,
+      "sha256": "1d57aa2cc2ecde01c703647c99cfe154b215e2af05173859df136b1ebc6faff0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c1588368dca4fe39",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/signed_tangent_progress.log",
+      "git_mode": "100644",
+      "git_blob_oid": "60306ce7bb3e4bacf5df1dae8062ac2acd97330f",
+      "bytes": 1940,
+      "sha256": "63894cef9bb8328397a3a21b025dd2a3b4c859b80766bac77c305cf8ee094b68",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8f8aa536da90e1ae",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/sixth_energy_output.json",
+      "git_mode": "100644",
+      "git_blob_oid": "387978b7fb5d6582ee25f32ea679331669564359",
+      "bytes": 2639,
+      "sha256": "467e6bbbb5a37e202aafa63b9bc379a7a395530b80063db69cceb996ebe386fa",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-114d37d8f96c3ed0",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/tangent_optimized.log",
+      "git_mode": "100644",
+      "git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-51b5cef831cad1ff",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/tangent_optimized_output.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5dbd5455ecb4f307180b1cbe297745ad5faf0783",
+      "bytes": 7194918,
+      "sha256": "4f7b82a87d1a75087a5b0d45d02f6b1ce8e31e4ae1f384e7df11ba4ddfd8f90b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0f75b77cbe76a175",
+      "path": "yang-mills/continuations/20260917-quartic-independent/logs/tangent_optimized_process.json",
+      "git_mode": "100644",
+      "git_blob_oid": "03544c5e0a1ed590e37945ae3513874c8bb0beec",
+      "bytes": 154,
+      "sha256": "f31d013d834431cd9854e2ea598b8f5c2bc45fde4a651f1f1e6e5e7a54194c9d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c7510430212ac9bc",
+      "path": "yang-mills/continuations/20260917-quartic-independent/proofs/FOURTH_ORDER_SOURCE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "271a901c375d5be39d7bdc3e6e65c15e7324bd00",
+      "bytes": 12727,
+      "sha256": "08f337075340ce03365fbffb4a30616fb918fee1007f1007968b021cfaf7adb1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-482231d9b4741ce2",
+      "path": "yang-mills/continuations/20260917-quartic-independent/proofs/SIGNED_TANGENT_CERTIFICATE.md",
+      "git_mode": "100644",
+      "git_blob_oid": "cd62ffe213d0442843565b2a5e32d705d3851a5c",
+      "bytes": 2432,
+      "sha256": "ed570f705cf87509d8b7d576d8c9950cd3da267ccb50a696386ffe78e67d8ce2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bd6541dbf4533028",
+      "path": "yang-mills/continuations/20260917-quartic-independent/proofs/SIXTH_ORDER_ENERGY.md",
+      "git_mode": "100644",
+      "git_blob_oid": "449229bcfeacd8ca3d1d5a3ac137c73286bdfa80",
+      "bytes": 16354,
+      "sha256": "b64b30bccb4b27aaeb8a43b2651c06c53372a2b35561f4bb3e8916d5ac95423b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d9631c4974641527",
+      "path": "yang-mills/continuations/20260917-quartic-independent/recovered/geometry.py",
+      "git_mode": "100644",
+      "git_blob_oid": "c8d385b276909ea1e885747c42773e64e9553c87",
+      "bytes": 2670,
+      "sha256": "bd878efd339f05f320d051bee760bff0934ccfca10e9a2c1e6f26941a128cc1e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1b6305ae5c30dd6c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/recovered/linearized_excerpt_clean.md",
+      "git_mode": "100644",
+      "git_blob_oid": "cdaeb5d51e7eaea92cc5f6528e664960db12866d",
+      "bytes": 11484,
+      "sha256": "df2ac2cb55927159ecf9c6790390c868fda352576760ca0d00f2067235b43859",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7ee91fec8ee51c87",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/anchored_quartic_transports.json",
+      "git_mode": "100644",
+      "git_blob_oid": "08667d2481f789e901c78384b2392a35ec520747",
+      "bytes": 5805558,
+      "sha256": "181a71595aee6252b4924556cf71994af3387c881b8ba8ccdce1a2aafa977d2b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-74d14ff7583d80e9",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/cluster_sixth_direct.jsonl",
+      "git_mode": "100644",
+      "git_blob_oid": "9632bf22a13aeeea9d52d4cdda7f4237b1fb103d",
+      "bytes": 1822,
+      "sha256": "615e4577b6cb5fe056ddbf0cfcd649137c274d8ff4f16b650fd69cd2f263eeb7",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-41a0bb0ad057258d",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/cluster_sixth_direct_v2.jsonl",
+      "git_mode": "100644",
+      "git_blob_oid": "bf23d1ccca388cdf307b459c983b1f7d22274079",
+      "bytes": 1822,
+      "sha256": "462af84d3ec7ab853ad504d470d78b955489ba995fdfde678b67cab4c52ffcb7",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-fe196da4a7a58297",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/cube_sixth_paths.json",
+      "git_mode": "100644",
+      "git_blob_oid": "0be2aa73da05a2531fee1a65d91199fb776311f7",
+      "bytes": 174021,
+      "sha256": "825ea45848f09bc7ae1c4816ec37fe336177230554bc144cf2427c60d5988f69",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-01534aebdbcf0472",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/execution.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f3606ac0dfb8b4920f7bc0c37b4d72ec19265953",
+      "bytes": 9991,
+      "sha256": "b6bbbb9d52fa6faa9e71f9a929d87a8937d90deb2a8d7a22789512aac8119222",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d608a69dd95e5350",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/inherited_scalar_audit.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3e6b4ee5befe76fcdb34f8de7419f379d61d7254",
+      "bytes": 2940,
+      "sha256": "745e558ce8860dc794c68b08515cb73c46b07aa1e254f998ff78733579138caa",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4c7824877af44521",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/original_link_jet_audit.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6617c4eb4cd8b3330fde4b19c0cce31805d8fa46",
+      "bytes": 22109,
+      "sha256": "d6668144df47086d70110cf14d944889bfea790a95cbe0cbd6d7d8669bd4725c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-90e698b1b84e0619",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_00.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c2490f876234e6bba9a7ad4df1b972c23b249c81",
+      "bytes": 7660,
+      "sha256": "a0dbe2881fe1f459ba302c6892cbcdc971e7af37ec4c0e365973568f100302c7",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8433c931674b2c39",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_01.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1a94f12cc8441c434e370686d03ef297db4d2595",
+      "bytes": 14284,
+      "sha256": "64597dde2cd559ec204fe6b7388f2f30e1dd69ee2e7094dcd8ee77a136ca29f5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6b16e5b56cd5ba44",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_02.json",
+      "git_mode": "100644",
+      "git_blob_oid": "32573d8498354550678a9431f3faf540fbb4b9c0",
+      "bytes": 14881,
+      "sha256": "8f577c2ff24fb27a44bcc57f6680a879b24e1921fcdbd504391914e7a06b59e2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a102ce707c933f4c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_03.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1c69ddde39aa4730cf14ace19199fbc9d230d592",
+      "bytes": 15228,
+      "sha256": "2ac76eb4257decb815f9c5c01bc9f438664ad5613f04378433ccb4325ab29e62",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b9c8c33fc5b833b9",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_04.json",
+      "git_mode": "100644",
+      "git_blob_oid": "77109b499d1f82373e3328ed59814fceb250d726",
+      "bytes": 23522,
+      "sha256": "828c5462039adbdf87bd797fdd5350719c80f58cc91b302ec3775529bbdf13c0",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4500efdb85470f6b",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_05.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ec9c0d9c32506c38eb01106236fb9b974f637651",
+      "bytes": 23905,
+      "sha256": "c88c3b85e48921d97504cb80903f5122b34b527d9e8003a22f73dd00b994fb58",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-764c10d3545aeb30",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_06.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c5d8a8b20141fb8df51c44d3161a328948fa9a41",
+      "bytes": 23905,
+      "sha256": "1d69783b9211c5f8335167a17d1ca956eb36938b20d9455100b8760d1371678e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-60695d47f14a0db9",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_07.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3de5264e13e4efcd1972105c572bc7ca12823b37",
+      "bytes": 25051,
+      "sha256": "95225b7cb91ad65432c87ba7c600c8f2e4424b1907ca561b7bebcce17a4a9de8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6286a406016318e2",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_08.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c787c00351c4b7a5b35c5e57d50331f0ddb19b31",
+      "bytes": 25051,
+      "sha256": "df42a29185f6c0ba63b7491dc8b98bd0ed8a83728f24b418761e007b131cc234",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4c7eb2b4f8da8eac",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_09.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d47cb21281dc951eb00590fea2075c16ef3e207a",
+      "bytes": 24540,
+      "sha256": "b1dba824aef32aebccdf29488969a230b9e4ac823241126dd33adf7ae8a98180",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-970a99cff687200e",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_10.json",
+      "git_mode": "100644",
+      "git_blob_oid": "39a31c2f4b5dc56112c97efc9ac6f50928d86ab1",
+      "bytes": 23461,
+      "sha256": "0eb588e830edebb9e3deec9d156c16a3b057aec2e954271886f8a4efacd266b2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-468a94c2d7c51998",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_11.json",
+      "git_mode": "100644",
+      "git_blob_oid": "8b37fb925bba45d8e2f567446211c5b3c4674b0c",
+      "bytes": 15826,
+      "sha256": "50f52ca87324965a39ff0a1c46d90cd83a8cbd25a4039905a21f6c3598cf99ff",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-07a67f6381f733e1",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_12.json",
+      "git_mode": "100644",
+      "git_blob_oid": "55a0d294322ac15e7831a464c61ffdc69a6bf609",
+      "bytes": 24014,
+      "sha256": "6457258a5b78e5b204ddecbeb0d684ff84e4a63f9bc484e62f031c07a145cbb5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e05a6d321024742d",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_13.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d31929184cdaf32f2f1c0b8cbcea24be9c97e4aa",
+      "bytes": 23899,
+      "sha256": "14d9130d54821593f0df5ab848aa7447a3ce6accaebfb6892231386714ce6517",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-dbbfd5e1a19bb1e0",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_14.json",
+      "git_mode": "100644",
+      "git_blob_oid": "082f2a3d12ac1869c01e572fe091944edc923021",
+      "bytes": 25108,
+      "sha256": "1cf29d0ac06f528e181a6914a7060fd814a6a147ca0428f9514880652b9b7d05",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5d3c8195325fb58f",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_15.json",
+      "git_mode": "100644",
+      "git_blob_oid": "2f55b0cbe1b591c1328fa99ca7fdcff951180afc",
+      "bytes": 25108,
+      "sha256": "8986c8ba1023b9da0f6645ba966ffb4df69c5ec6a75400fde9f64e5281797427",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c3f6933855cbe1d0",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_16.json",
+      "git_mode": "100644",
+      "git_blob_oid": "2e4eefb8c091110b6b2b91bbbf762b11dfbbcd7e",
+      "bytes": 25559,
+      "sha256": "eddb0743b917634fd8a2892611429d69567916bcf42a2193dbbbfa3e949be78c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-27e69c3117025897",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_17.json",
+      "git_mode": "100644",
+      "git_blob_oid": "fc9e08abe3ae39cfe6b3de2109f2b114bbaaca5b",
+      "bytes": 24662,
+      "sha256": "9f94cea1113065251261f4937254d91460e70c4de19022df6865f3337ddc7905",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f77dd06a08dc1e9c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_18.json",
+      "git_mode": "100644",
+      "git_blob_oid": "cfcaf2e1702e8baa6d1e88b6c06b958a1a42c4b1",
+      "bytes": 23899,
+      "sha256": "aa95fc9e00eda48598e8c7aeab7067955b27afc95ca6a7a1f3d31f06bb9ab0f3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-150167f4bfabb2ec",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_19.json",
+      "git_mode": "100644",
+      "git_blob_oid": "618e67f754a959176b937e170ed914f0ae921ced",
+      "bytes": 25108,
+      "sha256": "2beefdb3159e5a4baf88b26ecb5b66af51727ae1494696f2821713924d0f0c17",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-cfbf7027f4057c16",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_20.json",
+      "git_mode": "100644",
+      "git_blob_oid": "46a4ac4e59e61fdf476f47319db0c8a2aff41bc7",
+      "bytes": 38095,
+      "sha256": "ac2a6d4c90b1ee57d06f5d20949c956d4b247353e8941174cf0fcccb60c85dea",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6f4d61057d58efef",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_21.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c9bc9a2fa18ae6b3e1a3981f06b8b3fd0b7d44b4",
+      "bytes": 38566,
+      "sha256": "4e486c7d9c88bf66b943c1b2547d1c01cf45c7e347c0b944fe05ef6c2abd1e0d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5955b08acd1e92e8",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_22.json",
+      "git_mode": "100644",
+      "git_blob_oid": "0ecd5e99540c671783d2671a6651e7ec45b38034",
+      "bytes": 34605,
+      "sha256": "d03c531b45651684fc85465c38778e461c0a0e7cbf862944ef86aff554ec1234",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0523e43d0f78444c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_23.json",
+      "git_mode": "100644",
+      "git_blob_oid": "64b75930e02a10232b905710747c947c394c202f",
+      "bytes": 41353,
+      "sha256": "e40cd8c75ca9235f1d1fdb1c44ea5ecfaf65f52e6fa9baf3db2c8b7a60df195d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-3d57992e06428dea",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_24.json",
+      "git_mode": "100644",
+      "git_blob_oid": "b4ee4b43fccc964013b8aa58f8b9c363e24b4d90",
+      "bytes": 40564,
+      "sha256": "1ae7a226cbbfd33231f8bf56e9048ac479e27bbcec94ce80176ad5acf678d963",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-133c8ff3887a7bfa",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_25.json",
+      "git_mode": "100644",
+      "git_blob_oid": "78e541bd0de5abfae8ded568b4c90347bb40b207",
+      "bytes": 96709,
+      "sha256": "53a7ed162016bcb259a816fae7a3ae9295a22f2db0821a97b4c544b856add268",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d59a36c63b870d81",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_26.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5d05cffca15302a7dede5bcd6c88316862a20d69",
+      "bytes": 41185,
+      "sha256": "698e88c73fbb8c10f8de41cd178974b6b94005dbd83c9e73199d0c24687033af",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-a3659b7a82bc6cb8",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_27.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f64bf117e778040d01a1bdfe8c1b66777946f4c4",
+      "bytes": 40135,
+      "sha256": "502dd42d48c4e72af8221990f8618c397840491c821971b96c7466653a39ee64",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c55bc00577440e90",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_28.json",
+      "git_mode": "100644",
+      "git_blob_oid": "d9121dac00e55070bd292924ae4f3fa5d8e6ed9b",
+      "bytes": 40073,
+      "sha256": "49eed08841eb44ff61379eba3df33865da4ad601d92b102c9a773d2bfffb3d0d",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-5bcd048296be3da2",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_29.json",
+      "git_mode": "100644",
+      "git_blob_oid": "edd2921d596dd89d5642ddd36bfe7814f2000fa1",
+      "bytes": 41353,
+      "sha256": "6a3e1790998ee2cccddb9ca4ebe130e12fa798674766ed3f1c708524ca993c3a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-dba129685f8c2584",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_30.json",
+      "git_mode": "100644",
+      "git_blob_oid": "e9faecdd7fd698db6fb638cf7c92df0c26633be2",
+      "bytes": 41184,
+      "sha256": "2227e69821ae7b73faab2ff9ee27ad748608cdf237d36b0657b697a9aae6cadd",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d4be0f09e6fdc8df",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_31.json",
+      "git_mode": "100644",
+      "git_blob_oid": "4fa87cf24f7f93cafefa5ad0d7fdf6f4c968cf9d",
+      "bytes": 41185,
+      "sha256": "77343d6533f4f2cd75e4426cdc6b84fc18d32743620a992baca400f9ee0e5eae",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7ee1fb3a26a2086c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_32.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f7d41aae2fae3a0d80f2338ca97185ce8b67d82d",
+      "bytes": 40563,
+      "sha256": "98e3ada3312549ec7c19f666b4b3608e52399d51847977511d4f43c4e7f735ab",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-313b0f37f8bd9b52",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_33.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f9b46cc0f533c9a97c878a1ab26d3df16d0c59ce",
+      "bytes": 40135,
+      "sha256": "cae2f10a2192ad7b3fd313a802a593258f463a1a92bc15dbd05b6d264b365be6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e3d3fbdc350d84e7",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_34.json",
+      "git_mode": "100644",
+      "git_blob_oid": "77e25cb2296dadfdea54de4b44caf7d9f364cdec",
+      "bytes": 40073,
+      "sha256": "8555c1a549bcb82f25264149b6ad68c9afb24bfb68413a98c9473ef897e1deb6",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-676bcf773da76b1c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_35.json",
+      "git_mode": "100644",
+      "git_blob_oid": "60d675e3617c4d657336715bd4521e130436e3ef",
+      "bytes": 40732,
+      "sha256": "98bae843008cfdc7eab7ee0aee499441e52a3ea1ee662724e46a840a9791ecbf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-d40dc624bdf75522",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_36.json",
+      "git_mode": "100644",
+      "git_blob_oid": "23f6e81a8db80ef6cf78eeffbde66c97fc29e69b",
+      "bytes": 38874,
+      "sha256": "84774f35df98ec871c77aa7a36c047fa1625a3a901151f478381b1448e996683",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-52eed26f3930f2b5",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_37.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c65b56e54eff01435cfee5e3d883da207eddbaa2",
+      "bytes": 35095,
+      "sha256": "932305b95d7ebcf7cc723d7e6effe57961e8c95e4e81639d790666841ea06fdb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-74389d7895bbe143",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_38.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1f222865a0cf08a9cf00b9236c09b47c8bad4d10",
+      "bytes": 40295,
+      "sha256": "26da598772a0ce4628008413209c79fe968089c3fcc10aeb487722d498f319fd",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-eb25a0f34a227ceb",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_39.json",
+      "git_mode": "100644",
+      "git_blob_oid": "32bcfd3a3a94e60de19bc4aee1f89dcce6dfdcfa",
+      "bytes": 40295,
+      "sha256": "f4e1eec986e5731c77c51ea93cbe78605758e0d91beecc76d4873a0c476dea8e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0ef59c4b0cd28939",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_40.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6e363b374745c54fa17524f31826980f57d4b301",
+      "bytes": 40748,
+      "sha256": "4af045a77ec4b9802a3ed179a94e2862a633dec8e708de2d6ab573a525547cf8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-68509854061a699d",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_41.json",
+      "git_mode": "100644",
+      "git_blob_oid": "b695091044fe1093a4ff7baf54ff6613860b5fc9",
+      "bytes": 40020,
+      "sha256": "209897cfb061eb71266b67b8fa4d9c9d9f4aac9b82d0f23f67cfcb7c673a5b2a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b49d36445160aee8",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_42.json",
+      "git_mode": "100644",
+      "git_blob_oid": "fa4335827a931c16078255c04e56e6b372bea690",
+      "bytes": 35344,
+      "sha256": "d6993752a386434397d961a2e7b9f9aaa74a503af697e8d1a11572929d00d752",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f5855c718e72a5ac",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_43.json",
+      "git_mode": "100644",
+      "git_blob_oid": "0e309539bd64c6c8ae07f4a35f6cd62c5a9981b7",
+      "bytes": 40494,
+      "sha256": "146fb91cca948876f1ec57812d08faab67f9b837970af8e61f3cc34b489ea3ea",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-08e97571cac387a3",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_44.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f18b39c83eff510508bc504dd1e722e3d92540da",
+      "bytes": 26254,
+      "sha256": "8e03b9039ef66227166c434bb77b212e0911244daa0511f5188545f93e0ff09f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b80544499c5fd8e0",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_45.json",
+      "git_mode": "100644",
+      "git_blob_oid": "9c5c5bdb3ebdad379e494684ea76c3e6778f0345",
+      "bytes": 24014,
+      "sha256": "5ce7ec4fec7daf8f02c7d67f895ed44ae6c216e6396d00c82b9a9516d6671456",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-cf2b9619bd578f1b",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_46.json",
+      "git_mode": "100644",
+      "git_blob_oid": "12f7514de9c1641f215eab1ea750cdb78c02d66a",
+      "bytes": 35367,
+      "sha256": "bb7d98bb60337ed89fb751f53f4fc8f4845123946d296c0d10b34602b22779f7",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b230f62847a537fa",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_47.json",
+      "git_mode": "100644",
+      "git_blob_oid": "b87f52ff43cb6ab2e73adb8bc85109546c5dadd3",
+      "bytes": 35368,
+      "sha256": "1a9c30cebda7eefbc8b87b32f9062afd2948fff1f62b21a2cc36484e28d8bdea",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-07306da0a20f88cd",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_48.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6d6b4546ecab56efbbfdc7edbc8af5f2e841f213",
+      "bytes": 34759,
+      "sha256": "7fff1ed955ca2f3d1dc226a4750438fe1bb03af434afb9ce9adaac0baae6f9a8",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-279bf1547e573a76",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_49.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c604a0f896827332544551bbbed763a0bb669bc8",
+      "bytes": 34933,
+      "sha256": "3d082ef4b5e0b07dbe69e7db23f90f2d4a0c27cd3864e9b821a83ce87e5e305c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-48d82e56d67bfc02",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_50.json",
+      "git_mode": "100644",
+      "git_blob_oid": "496d81b432293f59251fae2412e50900a3139452",
+      "bytes": 40674,
+      "sha256": "278e7bf1267d19fa1565c38f8677ee891b206ceec203a2f7c558be68832c1e4c",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8143f82663ace760",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_51.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f58bc2b1f412be4426bff87f2e75df9bdaf5a4e4",
+      "bytes": 40724,
+      "sha256": "2b70227c9cafac0fe1f39975fc5d2a3d0151587e90c164244c5094946255c20a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-aa0f3408f8543367",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_52.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f2888c49fd2b82b33892df84b23a09d246eadbb5",
+      "bytes": 42995,
+      "sha256": "3a0b11512331de42a379602ea3eea9f289f9c42f01dbf5e9d09444f05ee78b21",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-ca78ad9879acbca2",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_53.json",
+      "git_mode": "100644",
+      "git_blob_oid": "ed84256c26f43112e70f5efedec9555d513b923c",
+      "bytes": 41766,
+      "sha256": "9bf6423c33a9ed27d1b2b2413dd939a2d1105073a6e97dd219f42b68f57ec862",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1e21be9df0ea9b0b",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_54.json",
+      "git_mode": "100644",
+      "git_blob_oid": "4c187f2d228884f544689f427ae82b3dab8af20d",
+      "bytes": 41883,
+      "sha256": "6ace27b0ea5efd99af7838953fd1a9a1ed2806ff835579ffadcdbff1c0f8feed",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-8ddc65244ee3b469",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_55.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3c288d3fe83dac18be37b8e36891abf4c475dd7c",
+      "bytes": 43164,
+      "sha256": "c6017c63e645210e07cbf805ee395c4f8ea18da806e960cea53157f9e82b7979",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-dc349df37f5b1b69",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_56.json",
+      "git_mode": "100644",
+      "git_blob_oid": "e7bdbca07281a96802dad30efb15b3bc3f9b6911",
+      "bytes": 42996,
+      "sha256": "6b918e7a9756d7a491bb2c01274b8ddd2df96365dbb6ae3f907e3d4f7cf30359",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7b447985fe96683c",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_57.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6c9cc08514eb1c079de26d5c2336da2cc6844fdf",
+      "bytes": 40601,
+      "sha256": "8abc2604733bbf8468da8f42dfb39ed5f61c1ebb31fd079bcc8a48311aa27f53",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-0e0bb13e66beb7de",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_58.json",
+      "git_mode": "100644",
+      "git_blob_oid": "791bf462974b292c6e21fdcc5894b6ea165f4ef6",
+      "bytes": 41329,
+      "sha256": "09e7b5130033ad402f611dba677640ba7b40d951ac320604fecd5a1cb4bdbfb4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b1808f5042217f8f",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_59.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1ba0e9d68a1205b4b4d57fdc4b8defa7c70c9022",
+      "bytes": 41946,
+      "sha256": "a6464307260954a6b632451fc8e9992d2665bc3e6aecb005c13abe406adbd500",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-7ed1e0d7b6b56dc5",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_60.json",
+      "git_mode": "100644",
+      "git_blob_oid": "f3770de7b91e6c8620fc062420862d13b38bb4a0",
+      "bytes": 41782,
+      "sha256": "657334407e798da515116ee438ddb9007db835a247ee489259230830e3322123",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-974afa85a3296430",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_61.json",
+      "git_mode": "100644",
+      "git_blob_oid": "9f3450ee9b877ff01dac5533053eaf91b86bab91",
+      "bytes": 41329,
+      "sha256": "bcb817d87ac269d2dcf66ba670db4a31b142b2d5adbcb8fc91c8851c0c6d8572",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-6a2feebc4efdbed9",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_62.json",
+      "git_mode": "100644",
+      "git_blob_oid": "4cfe56fe584ad20526f0ab00e7cc36a9544805da",
+      "bytes": 42105,
+      "sha256": "cebc2e107b65c95e6ddfb873fd7fe8bd4453e0577419c68219358038ed8ce2a2",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-93017b1bcc86a77b",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_63.json",
+      "git_mode": "100644",
+      "git_blob_oid": "c1b01d0b9433d8208c1db7ccab8b814efd51afb0",
+      "bytes": 24954,
+      "sha256": "e6a8e6d26d63116ef24f63e7c99bc06b91d765715843db9e2abad85e563a9c7e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-796e891c2c454273",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_64.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3220b75d8c8e15d88d5160e8a3bee0e4f1e87da6",
+      "bytes": 26254,
+      "sha256": "4285af1600a28127e191e6fa17397ab66bf38c8dcd1866f7e626a3b5c5c63a5e",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-bf6489883446921e",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_65.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1b7501699152ad2a1d3e78ea8b88c01d52dc5018",
+      "bytes": 40674,
+      "sha256": "d26e2011cbe73680ac6cbb30752cd59cbe1af2d7ecff01619cf220f9f765913b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2d29d7f66c2c678a",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_66.json",
+      "git_mode": "100644",
+      "git_blob_oid": "2b4b06f4474781bc95b897b98107f2ca3b20649c",
+      "bytes": 36416,
+      "sha256": "331920b181eb78572b213604a5a9b487d000d953588275f76871b7c65c17adeb",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-01f9ea8728da8f0e",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_67.json",
+      "git_mode": "100644",
+      "git_blob_oid": "462f58bd4d5df3eebf1b255167258f9720261ee1",
+      "bytes": 43164,
+      "sha256": "87eb1631af6e435d205862638c38d2af0ce7428f098163083f3d1687445d3caf",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-4570976a6d702f6a",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_68.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3af7baccdd57be3a7aa2b4724db9a38bb21d47de",
+      "bytes": 42995,
+      "sha256": "17a4dc387bec6e3937457e2f9a83109b14b3be59e4c1fec33d9b287eacc6a591",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-89b8cbe21ea16c2f",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_69.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1e5a7975ab98f84fd3ce6c4579d75f6eec19c751",
+      "bytes": 41884,
+      "sha256": "ac3250650a1ed8884c21d8ba2aaba8bc44c52329c178f43079d14c8fcebc8f04",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-983516549e415b0e",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_70.json",
+      "git_mode": "100644",
+      "git_blob_oid": "59af1430a0ebf90dca6b9ae46843b9a0b761810c",
+      "bytes": 43164,
+      "sha256": "e29d882a82bbd6514db29eefe4126e4b9cbf7d509d32d46dd948d216790490a5",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-698cf5c67e917068",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_71.json",
+      "git_mode": "100644",
+      "git_blob_oid": "1c2b7f9946b5b03b51e228baed521857cee48c5a",
+      "bytes": 42995,
+      "sha256": "e9b88006fd00f34af1d73976a4dfd1fe65473556ecfaa1793e87a60d2adbbddc",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-df25dcc2d6a25d02",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_72.json",
+      "git_mode": "100644",
+      "git_blob_oid": "a6b5fe285b5b111bbc42f6d06ae9d8d5e3adee4e",
+      "bytes": 41329,
+      "sha256": "6627a7f401bb3651d05905ba1368afcade0142ba9e17f8b7e4e7ead67f6480f4",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1f33dca8abf79352",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_73.json",
+      "git_mode": "100644",
+      "git_blob_oid": "a84d01669becd546d6cc3ca7dfa5de54aa41f7c2",
+      "bytes": 41329,
+      "sha256": "26ab5f04ff55de09fa192183a8b1205d1deb73a358510286bbf3e2ed0e9535ad",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-617a088725cefe50",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_74.json",
+      "git_mode": "100644",
+      "git_blob_oid": "289e4f615f94b37c3ab7c640d39f5704d3873ff7",
+      "bytes": 35538,
+      "sha256": "0c304452470500d4a35e669ece73eb86bc6fd9d552a5b2fcf1eac9114c5f3f77",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-808a5aa143f898bf",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_75.json",
+      "git_mode": "100644",
+      "git_blob_oid": "58430219194ff39b30a40dbf48702c25544ffbd8",
+      "bytes": 42106,
+      "sha256": "d319f1b1be8d8206933645280ea5387267cda0183844d181537c4863a733f2a9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e80d47405a960100",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_76.json",
+      "git_mode": "100644",
+      "git_blob_oid": "a3198c616a8251f719c507fac2fd8bf8bd46cde6",
+      "bytes": 42106,
+      "sha256": "3d3275e9480b7d2e314c39b60ace5035f75b08d82f714863cd46bccd3861f9ad",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c115183d423330fe",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_coefficients/class_77.json",
+      "git_mode": "100644",
+      "git_blob_oid": "07c1f0097c307ee9d7e93869117e913b5c3757d7",
+      "bytes": 34032,
+      "sha256": "6725b289bd4a541ef773453d70c8d056ab4077e88b49a946dcc8d4566c61d7f3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-673b46cf1e703edd",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_geometric_classes.json",
+      "git_mode": "100644",
+      "git_blob_oid": "3e6d7d5e79d020d628fdbdf1be84526b3fb23ce5",
+      "bytes": 39061,
+      "sha256": "82b9d9940cffd9b9a1a0a3eead9a922f7f674454cab881e0880fd74a0fc37754",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-e348ec880da692cf",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/quartic_index.csv",
+      "git_mode": "100644",
+      "git_blob_oid": "d2d1aaa839922a25922198631f549e67471e1447",
+      "bytes": 7087,
+      "sha256": "ebafa5295c25e99985c1304faf44bb9cd8a7382ca1bd5758279a6a433437dbb1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-b47c146d70b1868e",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/signed_tangent.json",
+      "git_mode": "100644",
+      "git_blob_oid": "5dbd5455ecb4f307180b1cbe297745ad5faf0783",
+      "bytes": 7194918,
+      "sha256": "4f7b82a87d1a75087a5b0d45d02f6b1ce8e31e4ae1f384e7df11ba4ddfd8f90b",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2746cbccfe8af1b8",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/signed_tangent_execution.json",
+      "git_mode": "100644",
+      "git_blob_oid": "9f0c1abfebae4f437358d8fef230ff52f5727e02",
+      "bytes": 1245,
+      "sha256": "38a2421f814e77e23cc2b4c8903af4894c737feee7eea7a50502073cf428819f",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2d7a1d6f7c7233d2",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/sixth_energy.json",
+      "git_mode": "100644",
+      "git_blob_oid": "6327de0011dccbe72c34b2855fabafa25a27b61d",
+      "bytes": 2639,
+      "sha256": "8a6e7322999142bb346c5dcc2c07d07c2addf3f82eba6f98dc5c320cd95b15e3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-18c02cd84dd75e79",
+      "path": "yang-mills/continuations/20260917-quartic-independent/results/verification.json",
+      "git_mode": "100644",
+      "git_blob_oid": "68abb883e261dd526434241dd7806bbd1f95bbdd",
+      "bytes": 73438,
+      "sha256": "3ff8aaba44a00dfcb85abd51978ec2d49e1a5767a5531672b7935b94cf68e15a",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-1f8e7299e910d84f",
+      "path": "yang-mills/continuations/20260917-quartic-independent/sources/SOURCE_RECORDS.json",
+      "git_mode": "100644",
+      "git_blob_oid": "b2f71181f8d7730f611f4528a7602fc23724c3e3",
+      "bytes": 2485,
+      "sha256": "195269b571a9dd2a63755d250174b3e6957ea57700e186ba71dbc73b2ed02738",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-f95b117cc7b6a5cf",
+      "path": "yang-mills/continuations/20260917-quartic-independent/sources/historical_artifact_inventory.json",
+      "git_mode": "100644",
+      "git_blob_oid": "7cf48bec55572251b3200cdb4c2a388f7de989e7",
+      "bytes": 9311,
+      "sha256": "578af9f50d48ab26227ca3e5bd098f8da24968f6a6b46805641c2f4053efecd9",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-2034c4ea5e8b4282",
+      "path": "yang-mills/continuations/20260917-quartic-independent/sources/recover_pinned_github.py",
+      "git_mode": "100644",
+      "git_blob_oid": "8cf2ecd48747520c1668508f6325e04af40b2baf",
+      "bytes": 2849,
+      "sha256": "48e93c0c359603c55a99b5f28522bd4934ea2169c0c0b4c642c589d3eb8ac406",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-31651856596c9e50",
+      "path": "yang-mills/continuations/20260917-quartic-independent/verify_portable_tangent.py",
+      "git_mode": "100644",
+      "git_blob_oid": "60c48d4f5bd5cc85aa92112e8c9c00fcd4685147",
+      "bytes": 2121,
+      "sha256": "f05d8967b110761dda6fa313b61bf6607aeaf3a0800e9db93a7f2e08ad30c5a3",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
+      "id": "ART-PATH-c78331512ad7a3c1",
+      "path": "yang-mills/continuations/20260917-quartic-independent/verify_public_catalogue.py",
+      "git_mode": "100644",
+      "git_blob_oid": "d33df3afa84d471d96ec49d71111c355408e0daa",
+      "bytes": 3912,
+      "sha256": "89ce164c4a04da94554d85f6d81036f6acd37d0bc0d67d638ed8498680649cf1",
+      "programme_ids": [
+        "YM"
+      ]
+    },
+    {
       "id": "ART-PATH-2a83d2a25232e4a4",
       "path": "yang-mills/readers/quantum_coarse_graining.pdf",
       "git_mode": "100644",
@@ -2565,9 +5352,9 @@
       "id": "ART-PATH-e92b0021280e2de7",
       "path": "yang-mills/research-control/CURRENT.md",
       "git_mode": "100644",
-      "git_blob_oid": "dcc2cb5d55e1dc3e6accb1553f4806e4f392807c",
-      "bytes": 2093,
-      "sha256": "74292e057d9ec11a6dd40dd2b5e8482e1b346f1c82db238905a6dba307992337",
+      "git_blob_oid": "0947b46b779bfc174746f954fb433fb23f7850c7",
+      "bytes": 3381,
+      "sha256": "ec86f73f54c97666514154c9823c8611c3886ea5d1bc2c9155a61fd099b725e5",
       "programme_ids": [
         "YM"
       ]

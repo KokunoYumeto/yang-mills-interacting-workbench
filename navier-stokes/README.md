@@ -1,5 +1,7 @@
 # Navier–Stokes: corrected reconstruction and validation reader
 
+[Vacuum hydrodynamics continuation, 19 September 2026](continuations/20260919-vacuum-hydrodynamics/README.md): exact nonlinear Einstein constraint data with a complete-velocity decoder; the Rindler shear response and finite pole-cluster cancellation; and a separate positive-stress regularity theorem. The continuation retains its source hypotheses and distinguishes exact identities, numerical results and imported NS claims.
+
 [What was tried and where it stands](RESEARCH_STATE.md) · [Machine-readable component map](research-state.json) · [Read in Overleaf](https://www.overleaf.com/read/hzthvczhdyxc#a60fc2)
 
 [What was tried and where it stands](RESEARCH_STATE.md) · [Machine-readable component map](research-state.json)

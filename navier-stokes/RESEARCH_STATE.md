@@ -2,6 +2,8 @@
 
 **9 September 2026.** [Read the corrected 208-page reconstruction](navier_stokes_workbench_208p.pdf), [open the complete source archive](../navier_stokes_source_bundle.zip), or [inspect the structured research state](research-state.json). The permanent corrected edition is [10.5281/zenodo.22678406](https://doi.org/10.5281/zenodo.22678406).
 
+**19 September 2026 addendum.** The recovered [vacuum-hydrodynamics continuation](continuations/20260919-vacuum-hydrodynamics/README.md) adds an exact marked velocity-to-Einstein-constraint encoding and decoder, an explicit nonlinear homogeneous interior realization, the linear Rindler shear response, and a separate stratified-slab regularity theorem. Its guide states hypotheses, comparison maps and verification scope. These additions do not alter the frozen 208-page edition or complete its outstanding independent NS validation. The Rindler collision is numerically located; the snapshot construction is not an NS-time Einstein conjugacy. The recovered latest packages' historical code was not supplied, so their historical check counts are not reported as new replays.
+
 ## Purpose and route
 
 [Short accounts of the reconstruction attempts](../ATTEMPTS.md#ns-primary) · [Fluid source and analytical audits](../ATTEMPTS.md#ns-source-audit) · [Coupled viscous stages](../ATTEMPTS.md#ns-coupled-stages)

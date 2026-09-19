@@ -4,6 +4,8 @@ This collection develops explicit mathematics for interacting SU(2) lattice gaug
 
 ## Start reading
 
+- **[Sixth source, eighth energy and finite-volume plaquette response](consolidation/20260919/)**: the 19 September continuation preserves the three new research notes, their response certificates, and the predecessor executable archive. It presents the precise response and support-transition maps alongside the independent one-face and arithmetic checks. The missing new spatial coefficient tables and unfinished final execution package are identified explicitly; no complete spatial replay is claimed.
+
 - **[Fourth-order vacuum sources and sixth-order energy](consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf)** (49 pages): an introduction to the Hamiltonian, two exact presentations of the fourth logarithmic-vacuum coefficient, the sixth energy including boundary and cube contributions, signed local response, and the resulting physical spectral estimate. All six proof notes are included. [Formulas, sources and reproduction](consolidation/20260917/).
 - **[Source equations, gauge coordinates and spectral return](consolidation/20260916/reader/yang_mills_web_continuation.pdf)** (297 pages): the preceding complete 14–16 September continuation, including actual-loop, gauge-native, local-fibre, cubic-source and linearized-return arguments.
 - **The five foundation papers below**: broader entry points for quantum state maps, interacting tensor bands and vertices, volume-independent vacuum estimates, and spatial-continuum investigations.

@@ -1,0 +1,59 @@
+{
+  "edition": "2026-09-19 vacuum hydrodynamics recovery",
+  "repository": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench",
+  "comparison_commit": "143f6773feb424ad9ed3a8d116653200f20346b7",
+  "comparison": {
+    "standalone_ns_tex": "navier-stokes/navier_stokes_workbench.tex",
+    "standalone_ns_tex_checkout_sha256": "0b5b832e1845469b316b992880b4731a88681e018b58fd50f9f38e1c0a1ec263",
+    "source_archive": "navier_stokes_source_bundle.zip",
+    "source_archive_sha256": "43b128e24f395327b2dd0f9874ca1ff120a52d625ab454f7df97d51f10c328c5",
+    "source_archive_members": 120,
+    "text_members_compared": 82,
+    "distinctive_construction_signatures": ["Kasner", "Rindler", "Brown.York", "Lichnerowicz", "holograph", "Einstein", "anomaly", "inflow", "hyperdissip", "Bessel"],
+    "signature_matching_text_members": [],
+    "scope": "Standalone NS body, all text members of its source archive, NS research state, and readable S6 source/guide/attempt files. No exhaustive review of the external full S6 archive or literature-wide novelty claim."
+  },
+  "supplied_sources": [
+    {"id": "connect-conversation", "bytes": 132746, "lines": 4424, "sha256": "51021823d6814af294a052ca5293b8680a23507f99b54af84e4f5b41bef60420", "disposition": "Read completely; raw conversation retained privately. Mathematical papers and the reading guide carry its results."},
+    {"id": "literature-conversation", "bytes": 100390, "lines": 2314, "sha256": "b65b345806530f5d2371848b2a24ec7188e4a62d19387b166a483f280f370918", "disposition": "Read completely; raw conversation retained privately. Distinct slab/stratification mathematics recovered in SLAB_COMPARATORS.md."},
+    {"id": "identity-handoff", "bytes": 4622, "sha256": "cfa5ce65e3f1126bc364e805043cb12806f1d6fcfe9674ff6caa94a8f4ed9800", "disposition": "Read completely and retained privately as historical workflow data; did not launch its proposed continuation."},
+    {"id": "identity-paper", "path": "manuscripts/IDENTITY_AND_COMPLETION.md", "bytes": 37426, "sha256": "3094be2b338ecda01146b8f019c639b0d7ef4461b3607eff0ed037f3ddbd8cb7", "disposition": "Read completely and preserved byte for byte."},
+    {"id": "spectral-paper", "path": "manuscripts/RESEARCH.md", "bytes": 29921, "sha256": "f381a8012b0781747444a09f5c7cf15c8f1e2576172dcc4d9ca6312f1a644f1c", "disposition": "Read completely and preserved byte for byte."}
+  ],
+  "predecessor_archive": {
+    "name": "NS_Black_Hole_Interior_Continuation_Codex_2026-09-11.zip",
+    "bytes": 1719603,
+    "sha256": "6287e6d75fb147503455d8eb051eafa8c83b69db443651bd7028be6c148be8b8",
+    "disposition": "Recovered by a bounded local Downloads filename search; complete archive preserved privately. Public reader includes the five mathematical documents listed below, with original bytes. It does not claim a full public mirror of the historical package."
+  },
+  "preserved_documents": [
+    {"path": "archive/er-epr-continuation/docs/ER_EPR_CONTINUATION.md", "bytes": 39202, "sha256": "1fbf39722f0203523aee8452b821e2a4c95c8ae761e01d83de76053ed1d87dd9"},
+    {"path": "archive/ns-bh-interior/docs/INTERIOR_CONTINUATION.md", "bytes": 29973, "sha256": "0b9d1b980ed8ea666851165ef45211ef8c23ba1f8c9131957013c3217a3fe7fe"},
+    {"path": "archive/ns-vacuum-propagation/docs/HIGHER_ORDER.md", "bytes": 4776, "sha256": "cdcfb51b9becb8dd933f7b93eafe6ca93831d2d09486bdbe8b8bca0138224244"},
+    {"path": "archive/ns-vacuum-propagation/docs/PROPAGATION.md", "bytes": 38947, "sha256": "fca6e8953c0b2001943fff610b30feeb7e3cb7826e27705c7ff0d567f15bf5c5"},
+    {"path": "archive/vacuum-hydrodynamics/RESEARCH_NOTE.md", "bytes": 38457, "sha256": "d0d2645f8c56cff3ce2aad079b73970db35b7047be372302666d44493921f494"}
+  ],
+  "mathematical_review": {
+    "exact": ["TT divergence/trace and mixed norm", "four-dimensional conformal constraint powers", "barrier/exhaustion/decay/uniqueness argument", "marked strain decoder and Newton left inverse", "homogeneous Kasner constraints and inverse", "zero-shift evolution defect", "five rational hydrodynamic coefficients", "finite isolated pole-cluster residue formula"],
+    "numerical": "Fresh 65-decimal multiprecision collision and Laurent evaluation; not an interval enclosure.",
+    "asymptotic": "High-frequency Airy calculation has numerical support but no uniform remainder or global branch-classification proof in the supplied paper.",
+    "scope_qualifications": ["NS solution domain requires snapshots in the compact smooth divergence-free class.", "Differentiation of the scalar solve requires a suitable smooth curve of decaying inputs, for example locally common compact support.", "Homogeneous constant phi has a different far-field value and is only a local limit of compact-input solutions.", "Development denotes maximal globally hyperbolic development with its initial marking; no NS-time conjugacy is supplied.", "The Rindler compliance formula is stated for q>0; the homogeneous mode requires separate treatment.", "All source-dependent blowup estimates remain imported, with the existing workbench validation status retained."]
+  },
+  "current_verification": {
+    "program": "verify_recovered_formulas.py",
+    "command": "python verify_recovered_formulas.py",
+    "date": "2026-09-19",
+    "status": "passed",
+    "sympy": "1.13.1",
+    "mpmath": "1.3.0",
+    "working_decimal_precision": 65,
+    "qc": "0.77847280099033007618035644618907612458883783",
+    "alpha_c": "-0.5697140809723617844384576686630716327619139",
+    "collision_residual": "5.9347298e-67",
+    "cluster_at_time_one": "0.89054141305336694342373588925294412725279356"
+  },
+  "not_replayed": ["Historical identity-package 60-assertion/21-check suite", "Historical spectral-package 19-method suite", "Upstream NS formal proof", "A numerical source-specific Lichnerowicz solve", "Nonlinear Einstein evolution"],
+  "missing_latest_artifacts": ["NS_Einstein_Identity_Completion_Codex_2026-09-11.zip", "VACUUM_SPECTRAL_COMPLETION_2026-09-11.zip", "FHLT_VACUUM_INFLOW_RESEARCH_2026-09-10.zip", "FHLT_REGULARITY_GENERALIZATION_2026-09-11.zip"],
+  "routing": "Navier–Stokes continuation. No actual S6 map was identified in the inspected source material. No Yang–Mills or S6 theorem is asserted.",
+  "rights": "Recovered project manuscripts and newly written mathematical reading material. Primary literature is cited and linked. No third-party license or discovery priority is assigned by this integration."
+}
