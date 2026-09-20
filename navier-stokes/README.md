@@ -4,6 +4,20 @@
 
 Permanent archive of the 166-page source edition, including its editable LaTeX: [10.5281/zenodo.22852310](https://doi.org/10.5281/zenodo.22852310).
 
+## Everyday English: a working comparison
+
+This page-3 example shows an attempt to make the paper's reasoning explicit in everyday prose. Both passages are retained for comparison. The second passage is a working draft, not the finished edition; preliminary feedback on its wording is not a final check of the whole paragraph.
+
+**Original, page 3** ([source LaTeX](sources/openai-source-faithful-20260920/upstream/reconstruction/sections/pp001-006.tex)):
+
+> For any incompressible flow u and pressure p, we can always define the external force f to be the residual in (1.1). The Navier–Stokes equations then hold by construction. The challenge is to choose a flow that blows up while this residual remains smooth. The individual terms in the momentum residual can diverge, but we must arrange sufficient cancellation that their sum and all its derivatives extend smoothly through the singular time.
+
+**Current Everyday English version, 20 September 2026:**
+
+> For any incompressible flow u and pressure p, the external force f can always be set equal to the residual in (1.1), the result of adding up the four terms on its left-hand side. The Navier–Stokes equations then hold by construction, because the force was chosen to equal that result. The hard part is choosing a flow that blows up while this residual stays smooth. The separate terms in this residual from the momentum equation can each become unbounded. Their unbounded parts have to cancel one another so that their sum, and every derivative of that sum, still extends smoothly through the singular time, the time when the velocity becomes unbounded.
+
+## Research continuations and analytical reader
+
 [Vacuum hydrodynamics continuation, 19 September 2026](continuations/20260919-vacuum-hydrodynamics/README.md): exact nonlinear Einstein constraint data with a complete-velocity decoder; the Rindler shear response and finite pole-cluster cancellation; and a separate positive-stress regularity theorem. The continuation retains its source hypotheses and distinguishes exact identities, numerical results and imported NS claims.
 
 [What was tried and where it stands](RESEARCH_STATE.md) · [Machine-readable component map](research-state.json) · [Read in Overleaf](https://www.overleaf.com/read/hzthvczhdyxc#a60fc2)
