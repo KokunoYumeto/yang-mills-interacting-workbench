@@ -69,5 +69,29 @@
     "checker": "sources/openai-source-faithful-20260920/verify_mirror.py",
     "authorization": "User requested taking this session's complete LaTeX and putting it online in the existing workbench."
   },
+  "zenodo_archive": {
+    "record": "https://zenodo.org/records/22852310",
+    "doi": "10.5281/zenodo.22852310",
+    "concept_doi": "10.5281/zenodo.22852309",
+    "title": "Finite Time Blowup for Navier--Stokes: Independent LaTeX Reconstruction",
+    "source_commit": "5e162f34cd2d3581f890660e81fbf063509085d0",
+    "pdf": {
+      "filename": "finite-time-blowup-navier-stokes-independent-latex-reconstruction.pdf",
+      "bytes": 3679554,
+      "sha256": "67bca97d638868c2fcb34b0ef1acdc4918cfcbb1a210afe98f0019a3c93fe8d9"
+    },
+    "zip": {
+      "filename": "openai-navier-stokes-latex-5e162f34cd2d3581f890660e81fbf063509085d0.zip",
+      "bytes": 8203063,
+      "sha256": "48b42eaec06b602f42594a5bf6c679f79be7a8b3644bc2da6e434cab98f0dc0e"
+    },
+    "verified_on": "2026-09-20",
+    "public_record_and_file_metadata_checked": true,
+    "pdf_is_default_preview": true,
+    "downloaded_pdf_and_zip_hashes_checked": true,
+    "archive_files_matching_workbench_snapshot": 124,
+    "archive_missing_extra_or_mismatched_files": 0,
+    "packaging_note": "The Zenodo ZIP and this workbench's Git archive have different archive bytes but identical sets of 124 file payloads. Their hashes identify the separate packages."
+  },
   "reuse": "The complete user-requested mirror preserves the upstream LICENSE-NOTICE.md without assigning any new licence; the separate Lean repository licence is not assigned to the paper or reconstruction."
 }

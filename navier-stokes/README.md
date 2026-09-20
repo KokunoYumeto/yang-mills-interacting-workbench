@@ -2,6 +2,8 @@
 
 **Read or download the complete source here.** This workbench now contains the [editable LaTeX](sources/openai-source-faithful-20260920/upstream/reconstruction/), [checked 166-page PDF](sources/openai-source-faithful-20260920/upstream/output/pdf/source-faithful-reconstruction.pdf), and [complete source ZIP](sources/openai-source-faithful-20260920/full-source-release.zip), including figures and verification records. The [build and reading guide](sources/openai-source-faithful-20260920/) explains the preserved copy of release `5e162f34`. This is an independent source-faithful reconstruction, not official OpenAI source and not the 208-page analytical reader below. Its page and formula records concern transcription fidelity, not an independent proof of the mathematics. The [pinned source record](SOURCE_READING_20260920.json) identifies the official PDF, reconstruction revision and verification scope.
 
+Permanent archive of the 166-page source edition, including its editable LaTeX: [10.5281/zenodo.22852310](https://doi.org/10.5281/zenodo.22852310).
+
 [Vacuum hydrodynamics continuation, 19 September 2026](continuations/20260919-vacuum-hydrodynamics/README.md): exact nonlinear Einstein constraint data with a complete-velocity decoder; the Rindler shear response and finite pole-cluster cancellation; and a separate positive-stress regularity theorem. The continuation retains its source hypotheses and distinguishes exact identities, numerical results and imported NS claims.
 
 [What was tried and where it stands](RESEARCH_STATE.md) · [Machine-readable component map](research-state.json) · [Read in Overleaf](https://www.overleaf.com/read/hzthvczhdyxc#a60fc2)

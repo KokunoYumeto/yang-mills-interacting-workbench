@@ -1,10 +1,12 @@
 # Finite Time Blowup for Navier–Stokes — complete editable source
 
-[Read the 166-page PDF](upstream/output/pdf/source-faithful-reconstruction.pdf) · [Browse the LaTeX](upstream/reconstruction/) · [Download the complete source ZIP](full-source-release.zip)
+[Read the 166-page PDF](upstream/output/pdf/source-faithful-reconstruction.pdf) · [Browse the LaTeX](upstream/reconstruction/) · [Download the complete source ZIP](full-source-release.zip) · [Zenodo archive](https://doi.org/10.5281/zenodo.22852310)
 
 This is a complete copy of the independent, source-faithful LaTeX reconstruction of OpenAI's *Finite Time Blowup for Navier–Stokes*, preserved from [release `5e162f34`](https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/5e162f34cd2d3581f890660e81fbf063509085d0). The editable text, six figures, style file, checked PDF and transcription records are available directly in this workbench. The original release's files are unchanged in `upstream/`; the ZIP contains the same committed snapshot.
 
 The source-faithful edition preserves the paper's wording, mathematical notation and numbering. It is not an official OpenAI LaTeX release. It is also distinct from this workbench's [208-page analytical reader](../../navier_stokes_workbench_208p.pdf) and later research continuations.
+
+For a permanent citation to this source edition, use [10.5281/zenodo.22852310](https://doi.org/10.5281/zenodo.22852310). The record provides the PDF for reading and an editable-source archive for reuse. Its [publication family](https://doi.org/10.5281/zenodo.22852309) links versions of this source edition, separately from the analytical reader.
 
 ## Build the paper
 
