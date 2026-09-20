@@ -211,6 +211,7 @@ def programmes() -> list[dict]:
             "human_entry": "navier-stokes/README.md",
             "human_reader": "navier-stokes/navier_stokes_workbench_208p.pdf",
             "latest_continuation": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md",
+            "primary_source_reading_record": "navier-stokes/SOURCE_READING_20260920.json",
             "ai_entry": "navier-stokes/navier_stokes_workbench.tex",
             "source_manifest": "navier-stokes/navier_stokes_primary_manifest.json",
             "research_state_document": "navier-stokes/RESEARCH_STATE.md",
@@ -237,6 +238,7 @@ def programmes() -> list[dict]:
                 "unfinished; the later local formal run is stopped without an endpoint or Comparator certificate."
             ),
             "description_basis": ["navier-stokes/README.md", "navier-stokes/RESEARCH_STATE.md",
+                                  "navier-stokes/SOURCE_READING_20260920.json",
                                   "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md"],
         },
     ]

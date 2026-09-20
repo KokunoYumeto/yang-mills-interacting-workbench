@@ -1,5 +1,7 @@
 # Navier–Stokes: corrected reconstruction and validation reader
 
+**Read the source paper in editable form.** The separate [166-page, source-faithful LaTeX reconstruction](https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/19ae9fb7213ecc33da46e7777cd75cce64121431/reconstruction) and its [checked PDF](https://github.com/KokunoYumeto/openai-navier-stokes-latex/blob/19ae9fb7213ecc33da46e7777cd75cce64121431/output/pdf/source-faithful-reconstruction.pdf) preserve the paper's text and notation. This is an independent reconstruction, not official OpenAI source and not the 208-page analytical reader below. Its page and formula records concern transcription fidelity, not an independent proof of the mathematics. The [pinned source record](SOURCE_READING_20260920.json) identifies the official PDF, reconstruction revision and verification scope.
+
 [Vacuum hydrodynamics continuation, 19 September 2026](continuations/20260919-vacuum-hydrodynamics/README.md): exact nonlinear Einstein constraint data with a complete-velocity decoder; the Rindler shear response and finite pole-cluster cancellation; and a separate positive-stress regularity theorem. The continuation retains its source hypotheses and distinguishes exact identities, numerical results and imported NS claims.
 
 [What was tried and where it stands](RESEARCH_STATE.md) · [Machine-readable component map](research-state.json) · [Read in Overleaf](https://www.overleaf.com/read/hzthvczhdyxc#a60fc2)

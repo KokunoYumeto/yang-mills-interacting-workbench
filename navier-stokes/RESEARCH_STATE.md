@@ -6,6 +6,8 @@
 
 ## Purpose and route
 
+**20 September source-access update.** An independent [source-faithful LaTeX reconstruction](https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/19ae9fb7213ecc33da46e7777cd75cce64121431/reconstruction) now provides editable access to the same 166-page official PDF identified in this workbench. The [reconstructed PDF](https://github.com/KokunoYumeto/openai-navier-stokes-latex/blob/19ae9fb7213ecc33da46e7777cd75cce64121431/output/pdf/source-faithful-reconstruction.pdf), source-page correspondence and formula inventory are pinned by [this source record](SOURCE_READING_20260920.json). The publisher records 166 page checks and 6,175 mathematical occurrences. This workbench checked the release identity and PDF hash; it did not repeat those visual checks. The reconstruction improves source access without changing the analytical or formal-validation conclusions below.
+
 [Short accounts of the reconstruction attempts](../ATTEMPTS.md#ns-primary) · [Fluid source and analytical audits](../ATTEMPTS.md#ns-source-audit) · [Coupled viscous stages](../ATTEMPTS.md#ns-coupled-stages)
 
 The purpose is to make the supplied finite-time Navier–Stokes construction understandable and reusable through complete derivations, original coordinates and reproducible calculations. The programme initially investigated transfers from algebraic, S6-related and heat-flow constructions into fluid equations. Those directions motivated the research; their proposed implications are not certified by this reader. The arrival of the released Navier–Stokes manuscript redirected the main work toward reconstructing its explicit construction with the stated viscosity, initial data, forcing, pressure and nonlinear terms.

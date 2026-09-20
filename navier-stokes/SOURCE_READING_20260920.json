@@ -1,0 +1,52 @@
+{
+  "schema": "pinned-external-mathematical-source-v1",
+  "recorded_on": "2026-09-20",
+  "purpose": "Editable access to the primary 166-page manuscript used by the Navier–Stokes workbench; independent transcription, not an official source release or a new proof validation.",
+  "primary_paper": {
+    "author_as_printed": "OPENAI",
+    "title": "Finite Time Blowup for Navier–Stokes",
+    "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+    "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+    "bytes": 2959204,
+    "pages": 166,
+    "role": "Transcription authority and mathematical attribution; same frozen PDF identity as the existing workbench's 166-page source."
+  },
+  "reconstruction": {
+    "repository": "https://github.com/KokunoYumeto/openai-navier-stokes-latex",
+    "commit": "19ae9fb7213ecc33da46e7777cd75cce64121431",
+    "latex_url": "https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/19ae9fb7213ecc33da46e7777cd75cce64121431/reconstruction",
+    "pdf_url": "https://github.com/KokunoYumeto/openai-navier-stokes-latex/blob/19ae9fb7213ecc33da46e7777cd75cce64121431/output/pdf/source-faithful-reconstruction.pdf",
+    "pdf_sha256": "67bca97d638868c2fcb34b0ef1acdc4918cfcbb1a210afe98f0019a3c93fe8d9",
+    "pdf_git_blob_sha1": "b7a7a18292b534005e53673572e3366559280349",
+    "pdf_bytes": 3679554,
+    "independent_reconstruction": true,
+    "official_source_release": false
+  },
+  "publisher_evidence_paths_at_pinned_commit": {
+    "transcription_audit": "evidence/transcription/TRANSCRIPTION_AUDIT.json",
+    "page_correspondence": "evidence/transcription/PDF_TEX_CORRESPONDENCE.json",
+    "formula_inventory": "evidence/transcription/FORMULA_INVENTORY.json",
+    "final_pdf_visual_checks": "evidence/build/visual_qa.jsonl",
+    "file_manifest": "MANIFEST.sha256"
+  },
+  "publisher_reported_transcription_checks": {
+    "status": "pass",
+    "source_pages": 166,
+    "page_checks": 166,
+    "mathematical_occurrences": 6175,
+    "pending_ranges": [],
+    "unresolved_internal_references": [],
+    "independent_mathematical_proof_verification": false
+  },
+  "checks_by_this_workbench": {
+    "remote_commit_exists": true,
+    "local_reconstruction_pdf_sha256_matches_publisher_manifest": true,
+    "local_pdf_git_object_matches_remote_pinned_file": true,
+    "read_publisher_scope_and_audit_record": true,
+    "repeated_visual_transcription_audit": false,
+    "lean_or_lake_run": false,
+    "new_mathematical_audit": false
+  },
+  "relationship_to_existing_outputs": "The source-faithful 166-page reconstruction is distinct from this workbench's corrected 208-page analytical reconstruction and the later vacuum-hydrodynamics papers. Older source citations remain version-specific; the new reconstruction does not retroactively change them.",
+  "reuse": "Link to the pinned public source rather than duplicate it. Consult that repository's LICENSE-NOTICE.md; a separate Lean repository licence is not assigned to the paper or reconstruction."
+}
