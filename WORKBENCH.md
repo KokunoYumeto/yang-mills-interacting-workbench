@@ -28,6 +28,8 @@ Historical reviews and later calculations retain their own dates and scope. This
 
 ## Navier–Stokes: reconstruction and independent validation
 
+For editable access to the primary paper, use the pinned [166-page source-faithful LaTeX reconstruction](https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/5e162f34cd2d3581f890660e81fbf063509085d0/reconstruction) and [checked PDF](https://github.com/KokunoYumeto/openai-navier-stokes-latex/blob/5e162f34cd2d3581f890660e81fbf063509085d0/output/pdf/source-faithful-reconstruction.pdf). This independently prepared source edition is distinct from the analytical reader below; its [identity and transcription-check scope](navier-stokes/SOURCE_READING_20260920.json) are recorded separately.
+
 The [19 September vacuum-hydrodynamics continuation](navier-stokes/continuations/20260919-vacuum-hydrodynamics/) adds exact marked Einstein initial data with a full-velocity decoder, a Rindler shear boundary response, finite modal-residue cancellation, and a separate layered-stress regularity theorem. It preserves both recovered manuscripts and their mathematical predecessors, with explicit proofs, literature links, comparison maps and compact independent checks. These constructions do not depend on independently establishing the upstream blowup claim; any source-specific use retains that claim's existing validation status.
 
 This programme examines the supplied finite-time blowup construction with positive viscosity, zero initial velocity and smooth compactly supported forcing. Its object is to reconstruct the actual equations and correction calculations, retaining pressure, transport, nonlinear terms and forcing, and to inspect the analytical and formal steps.

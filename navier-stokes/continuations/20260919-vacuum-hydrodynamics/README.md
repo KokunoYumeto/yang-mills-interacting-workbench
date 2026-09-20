@@ -6,6 +6,8 @@ These are complementary constructions with different equations and domains. The 
 
 ## Read the mathematics
 
+The upstream 166-page Navier–Stokes paper is available in a pinned independent [editable LaTeX reconstruction](https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/5e162f34cd2d3581f890660e81fbf063509085d0/reconstruction) and [checked PDF](https://github.com/KokunoYumeto/openai-navier-stokes-latex/blob/5e162f34cd2d3581f890660e81fbf063509085d0/output/pdf/source-faithful-reconstruction.pdf). Its [source identity and transcription-check scope](../../SOURCE_READING_20260920.json) are distinct from the mathematical checks of this continuation.
+
 | Paper | What it contains |
 | --- | --- |
 | [The gravitational identity carried by Navier–Stokes strain](readers/IDENTITY_AND_COMPLETION.md) | Conserved radial tensor, nonlinear Kasner map, exact homogeneous Einstein metric, compact TT lift, scalar constraint existence and uniqueness, complete-velocity decoder, evolution defect and probe functional. |

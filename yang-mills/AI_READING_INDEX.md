@@ -12,6 +12,8 @@ Latest complete proofs: [CUBIC_SOURCE.md](continuations/20260916-cubic-linearize
 
 ## Foundation full source bodies
 
+For the Navier–Stokes inputs to the fluid-profile and curvature/current papers below, the complete primary manuscript is available as a pinned independent [editable LaTeX reconstruction](https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/5e162f34cd2d3581f890660e81fbf063509085d0/reconstruction) and [166-page PDF](https://github.com/KokunoYumeto/openai-navier-stokes-latex/blob/5e162f34cd2d3581f890660e81fbf063509085d0/output/pdf/source-faithful-reconstruction.pdf). Consult the [source identity record](../navier-stokes/SOURCE_READING_20260920.json); the official paper remains the mathematical source, and the reconstruction's checks concern transcription.
+
 - [sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.md](sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.md)
 - [sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.tex](sources/ym_gap_primary_20260908/adjacent_plaquette_quantum_correction.tex)
 - [sources/ym_gap_primary_20260908/amplitude_time_kernel_independent_audit.md](sources/ym_gap_primary_20260908/amplitude_time_kernel_independent_audit.md)
