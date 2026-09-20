@@ -212,6 +212,9 @@ def programmes() -> list[dict]:
             "human_reader": "navier-stokes/navier_stokes_workbench_208p.pdf",
             "latest_continuation": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md",
             "primary_source_reading_record": "navier-stokes/SOURCE_READING_20260920.json",
+            "mirrored_primary_latex": "navier-stokes/sources/openai-source-faithful-20260920/upstream/reconstruction/main.tex",
+            "mirrored_primary_pdf": "navier-stokes/sources/openai-source-faithful-20260920/upstream/output/pdf/source-faithful-reconstruction.pdf",
+            "mirrored_primary_guide": "navier-stokes/sources/openai-source-faithful-20260920/README.md",
             "ai_entry": "navier-stokes/navier_stokes_workbench.tex",
             "source_manifest": "navier-stokes/navier_stokes_primary_manifest.json",
             "research_state_document": "navier-stokes/RESEARCH_STATE.md",
@@ -239,6 +242,7 @@ def programmes() -> list[dict]:
             ),
             "description_basis": ["navier-stokes/README.md", "navier-stokes/RESEARCH_STATE.md",
                                   "navier-stokes/SOURCE_READING_20260920.json",
+                                  "navier-stokes/sources/openai-source-faithful-20260920/README.md",
                                   "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md"],
         },
     ]

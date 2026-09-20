@@ -28,7 +28,7 @@ These are AI-assisted research and reconstruction records. The full proofs and q
 
 ## Navier–Stokes and gravitational response
 
-The source paper is now available as an independent [166-page editable LaTeX reconstruction and checked PDF](https://github.com/KokunoYumeto/openai-navier-stokes-latex/tree/5e162f34cd2d3581f890660e81fbf063509085d0). It is separate from this workbench's 208-page analytical reader; [source identity and transcription-check scope](navier-stokes/SOURCE_READING_20260920.json) are recorded explicitly.
+The source paper is available directly in this workbench as a [complete editable LaTeX reconstruction, checked 166-page PDF and source ZIP](navier-stokes/sources/openai-source-faithful-20260920/). The complete pinned release, including figures and verification records, is preserved unchanged. It is separate from this workbench's 208-page analytical reader; [source identity and transcription-check scope](navier-stokes/SOURCE_READING_20260920.json) are recorded explicitly.
 
 The **[19 September vacuum-hydrodynamics continuation](navier-stokes/continuations/20260919-vacuum-hydrodynamics/)** recovers two complementary manuscripts and their mathematical predecessors. The first constructs exact nonlinear Einstein initial data from any compact smooth divergence-free velocity field, with an explicit left inverse recovering the whole velocity. The second calculates the linear shear response of a Rindler cutoff through a Bessel boundary problem. It derives the hydrodynamic coefficients and explains how two individually divergent modal residues combine into a finite response at a pole collision. A companion gives the positive slab-stress construction and the regularity proof for its modified fluid equation.
 

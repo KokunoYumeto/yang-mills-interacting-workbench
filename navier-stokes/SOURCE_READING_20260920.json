@@ -54,5 +54,20 @@
     "new_mathematical_audit": false
   },
   "relationship_to_existing_outputs": "The source-faithful 166-page reconstruction is distinct from this workbench's corrected 208-page analytical reconstruction and the later vacuum-hydrodynamics papers. Older source citations remain version-specific; the new reconstruction does not retroactively change them.",
-  "reuse": "Link to the pinned public source rather than duplicate it. Consult that repository's LICENSE-NOTICE.md; a separate Lean repository licence is not assigned to the paper or reconstruction."
+  "workbench_mirror": {
+    "guide": "sources/openai-source-faithful-20260920/README.md",
+    "complete_snapshot": "sources/openai-source-faithful-20260920/upstream",
+    "latex": "sources/openai-source-faithful-20260920/upstream/reconstruction",
+    "pdf": "sources/openai-source-faithful-20260920/upstream/output/pdf/source-faithful-reconstruction.pdf",
+    "zip": "sources/openai-source-faithful-20260920/full-source-release.zip",
+    "zip_sha256": "997e825e34fa825d189bd301edaa6251e5505710fe294bec99c83a9712558e4c",
+    "zip_bytes": 8179985,
+    "snapshot_files_including_manifest": 124,
+    "manifest_files_verified": 123,
+    "complete_reconstruction_inputs": {"tex_files":30,"style_files":1,"figure_pdfs":6,"figure_svgs":6},
+    "original_release_files_modified": false,
+    "checker": "sources/openai-source-faithful-20260920/verify_mirror.py",
+    "authorization": "User requested taking this session's complete LaTeX and putting it online in the existing workbench."
+  },
+  "reuse": "The complete user-requested mirror preserves the upstream LICENSE-NOTICE.md without assigning any new licence; the separate Lean repository licence is not assigned to the paper or reconstruction."
 }
