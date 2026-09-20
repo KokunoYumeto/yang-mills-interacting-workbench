@@ -6,6 +6,8 @@ Readable mathematical papers, their sources, and reproducibility records. Choose
 
 ## Yang–Mills: vacuum, energy and physical excitations
 
+**[Full Yang–Mills proofs and editable LaTeX](yang-mills/README.md#full-proofs-and-editable-latex)** are available directly on GitHub, alongside their PDFs and source packages.
+
 The **[19 September continuation: sixth source, eighth energy and plaquette response](yang-mills/consolidation/20260919/)** adds the complete supplied mathematical notes and exact arithmetic checks. It gives the displayed eighth-energy boundary polynomial, a finite 240-face response estimate, and explicit minimum-energy maps for changing the observed face support. The new spatial tables and final cumulative execution package were not delivered: their completeness is reported by the source, not independently replayed here. The continuation explains this distinction and retains the physical complement and every dimensional factor.
 
 The Yang–Mills programme studies an interacting SU(2) gauge theory on finite cubic lattices, keeping the original gauge constraints and physical scales. The papers construct state and operator maps, calculate the interacting vacuum and its energy, and use controlled corrections to obtain spectral estimates that remain valid as the box grows. Separate manuscripts examine the additional questions involved in a continuum limit.

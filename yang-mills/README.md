@@ -2,6 +2,15 @@
 
 This collection develops explicit mathematics for interacting SU(2) lattice gauge theory: the vacuum and its response to local couplings, ground energies, physical excitation spectra, and maps relating states and operators at different scales. Finite-box calculations are combined with estimates that can survive growth of the box. The separate spatial-limit investigations state what additional control is needed for a continuum theory.
 
+## Full proofs and editable LaTeX
+
+The mathematical manuscripts are public here as editable sources, not only as PDF readers or summaries.
+
+- **Fourth-order vacuum, sixth-order energy and physical spectral return:** [complete LaTeX, including all six proof notes](consolidation/20260917/reader/yang_mills_quartic_cube_reader.tex), [PDF](consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf), and [source package](consolidation/20260917/yang_mills_quartic_comparison_sources_20260917.zip).
+- **Source equations, gauge coordinates and spectral return, 14–16 September:** [complete cumulative LaTeX](consolidation/20260916/reader/yang_mills_web_continuation.tex), [PDF](consolidation/20260916/reader/yang_mills_web_continuation.pdf), and [source package](consolidation/20260916/yang_mills_complete_available_sources_20260916.zip).
+- **Foundation manuscripts:** [LaTeX and accompanying source files](sources/), with individual paper links in [Read the manuscripts](#read-the-manuscripts) below.
+- **Sixth-source, eighth-energy and response continuation, 19 September:** [full supplied mathematical texts](consolidation/20260919/supplied/) in their original Markdown format, with the [reading guide](consolidation/20260919/).
+
 ## Start reading
 
 - **[Sixth source, eighth energy and finite-volume plaquette response](consolidation/20260919/)**: the 19 September continuation preserves the three new research notes, their response certificates, and the predecessor executable archive. It presents the precise response and support-transition maps alongside the independent one-face and arithmetic checks. The missing new spatial coefficient tables and unfinished final execution package are identified explicitly; no complete spatial replay is claimed.
