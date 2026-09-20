@@ -14,7 +14,7 @@ This page-3 example shows an attempt to make the paper's reasoning explicit in e
 
 **Current Everyday English version, 20 September 2026:**
 
-> For any incompressible flow u and pressure p, the external force f can always be set equal to the residual in (1.1), the result of adding up the four terms on its left-hand side. The Navier–Stokes equations then hold by construction, because the force was chosen to equal that result. The hard part is choosing a flow that blows up while this residual stays smooth. The separate terms in this residual from the momentum equation can each become unbounded. Their unbounded parts have to cancel one another so that their sum, and every derivative of that sum, still extends smoothly through the singular time, the time when the velocity becomes unbounded.
+> For any incompressible flow u and pressure p, the external force f can always be set equal to the residual in (1.1), the result of adding up the four terms on its left-hand side. The Navier–Stokes equations then hold by construction, because f has been chosen to equal that result. The hard part is choosing a flow that blows up while this residual stays smooth. The separate terms in this residual from the momentum equation can each become unbounded. Their unbounded parts have to cancel one another so that their sum, and every derivative of that sum, still extends smoothly through the singular time, the time when the velocity becomes unbounded.
 
 ## Research continuations and analytical reader
 
