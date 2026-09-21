@@ -1,5 +1,7 @@
 # What has been tried in the S6 reconstruction
 
+The originating construction is due to the programme circulated by **Levent Alpöge and produced with Claude**. Its period data, and their later use in Yang–Mills maps, are credited with exact locators in the [attribution clarification](../ATTRIBUTION.md). The dated archive and its own mathematical qualifications are retained.
+
 This page is a cold-start map for a reader encountering this repository without
 any prior context. The underlying source is a proposed construction of a compact complex
 threefold whose **underlying smooth manifold is claimed to be the six-sphere

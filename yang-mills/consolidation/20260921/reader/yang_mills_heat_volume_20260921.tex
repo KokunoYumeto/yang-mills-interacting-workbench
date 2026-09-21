@@ -1,0 +1,3222 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}[Scale=0.86]
+\usepackage{amsmath,amssymb}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{longtable,booktabs,array}
+\newcounter{none}
+\usepackage{calc}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{244B70}
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\small,breaklines=true,breakanywhere=true,breaksymbolleft={},breaksymbolright={},xleftmargin=5pt}
+\usepackage{enumitem}
+\setlist{itemsep=2pt,parsep=1pt,topsep=4pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small SU(2) lattice Yang-Mills heat correlations}
+\fancyhead[R]{\small 21 September 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=linkblue,urlcolor=linkblue,pdftitle={Heat
+correlations and the full physical complement in SU(2) lattice
+Yang-Mills
+theory},pdfauthor={KokunoYumeto},pdfsubject={Fourth-order heat, volume-independent error, and the full physical complement},pdfcreator={Pandoc and XeLaTeX}}
+\usepackage{bookmark}
+\urlstyle{same}
+\setlength{\emergencystretch}{4em}
+\hfuzz=0.2pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\let\originalsection\section
+\renewcommand{\section}{\clearpage\originalsection}
+\let\originaldisplaystart\[
+\let\originaldisplayend\]
+\renewcommand{\[}{\begingroup\small\originaldisplaystart}
+\renewcommand{\]}{\originaldisplayend\endgroup}
+\begin{document}
+\begin{titlepage}
+\vspace*{14mm}
+{\sffamily\Large MATHEMATICAL READER\par}
+\vspace{12mm}
+{\LARGE\bfseries Heat correlations and the full physical complement in
+SU(2) lattice Yang-Mills theory\par}
+\vspace{9mm}
+{\large Fourth-order coefficients, volume-independent bounds, and
+original state and energy metrics\par}
+\vspace{13mm}
+{\large KokunoYumeto\par}
+\vspace{3mm}
+{21 September 2026\par}
+\vfill
+\begin{minipage}{0.96\textwidth}
+A mathematical introduction followed by all five complete proof manuscripts. The original link coordinates, Haar pairings, physical time and complementary states are retained. The results concern a stated strong-coupling domain and spatial volume at fixed lattice spacing; a four-dimensional continuum mass gap is not claimed.
+
+\medskip
+The earlier workbench's distinct \(S^6\) and Jacobian inputs are credited to Levent Alpöge and their named collaborators in the introduction. The present heat transfer's precise dependencies are identified separately.
+\end{minipage}
+\vspace{10mm}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\section{Reading the heat and volume
+results}\label{reading-the-heat-and-volume-results}
+
+The basic question of this edition is concrete. A plaquette observable
+probes a small square of a lattice gauge field. How does its correlation
+with another plaquette decay under the interacting heat flow? Can one
+control the error in a fourth-order calculation without that error
+growing with the size of the lattice? Finally, when states built from
+those observables are allowed to mix with every other physical state,
+how much can their energy change?
+
+The five manuscripts collected here answer these questions on an
+explicitly specified strong-coupling domain. They give the complete
+fourth-order heat coefficients, a bound on their all-order error that is
+independent of spatial volume, and quantitative control of the entire
+complementary physical space. The volume-independent estimates also
+construct an infinite spatial lattice at \textbf{fixed lattice spacing}.
+They do not establish a four-dimensional continuum Yang-Mills field or
+its continuum mass gap.
+
+This introduction states the objects and results and explains how the
+proofs fit together. Appendices A-E reproduce all five supplied proof
+texts, including their original equation labels, parameter restrictions,
+and source citations. The exact coefficient tables, proofs, replay
+scripts and historical records are in the
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/tree/main/yang-mills/consolidation/20260921}{public
+workbench}. This is a readable companion to those records, not a
+replacement for the complete calculation.
+
+\subsection{The original lattice and its physical Hilbert
+space}\label{the-original-lattice-and-its-physical-hilbert-space}
+
+Let \(L\geq2\) be an integer. The vertices are \(\{-L,\ldots,L\}^3\);
+all contained positive nearest-neighbour links and elementary plaquettes
+are retained. A link carries a matrix \(U_e\in\mathrm{SU}(2)\). The
+Hilbert space is the subspace of the product-Haar \(L^2\) space
+invariant under gauge transformations at every vertex, including the
+boundary vertices. Its inner product is conjugate-linear in the first
+entry.
+
+For \(p=(n;i,j)\), \(i<j\), the plaquette observable is the fundamental
+trace
+
+\[
+W_p=\operatorname{tr}\!\left(U_i(n)U_j(n+e_i)
+U_i(n+e_j)^{-1}U_j(n)^{-1}\right).
+\]
+
+With \(T_\alpha=-i\sigma_\alpha/2\) and the corresponding original link
+derivatives \(X_{e,\alpha}\), set
+
+\[
+K_L=-\sum_{e,\alpha}X_{e,\alpha}^2,\qquad
+H_L=\kappa K_L+\kappa\xi\sum_{p\in\mathsf P_L}(2-W_p),
+\qquad \kappa=\frac{2g^2}{a},\quad \xi=\frac1{4g^4}.
+\]
+
+Here \(a>0\) is lattice spacing and \(g>0\) is coupling. The operator
+and form domains are the physical parts of \(H^2\) and \(H^1\) on the
+finite product of link groups. The smooth positive unit ground vector is
+\(\psi_L\), its energy is \(E_{0,L}\), and
+
+\[
+A_L=H_L-E_{0,L},\qquad \rho_L=\psi_L^2,\qquad
+r_p=(W_p-\langle W_p\rangle_{\rho_L})\psi_L.
+\]
+
+Thus \(r_p\) is centered in the \emph{interacting} vacuum, not just in
+Haar measure. On the centered physical space
+\(\mathcal H_{0,L}=\psi_L^\perp\), the connected heat correlation is
+
+\[
+\widehat C_{L,pq}(\tau;\xi)
+=\langle r_p,e^{-\tau A_L/\kappa}r_q\rangle,
+\qquad \tau=\kappa t.
+\]
+
+The physical time is \(t\); \(\tau\) is its stated dimensionless
+coordinate. The number of plaquettes is \(M_L=3(2L)^2(2L+1)\), so
+\(M_2=240\).
+
+\subsection{What the fourth-order calculation
+contains}\label{what-the-fourth-order-calculation-contains}
+
+The link-center symmetry makes the two-mark correlation even in the
+homogeneous source \(\xi\). The calculation therefore has the form
+
+\[
+\widehat C_L(\tau;\xi)
+=C_{0,L}(\tau)+\xi^2C_{2,L}(\tau)+\xi^4C_{4,L}(\tau)
++\mathcal R_{6,L}(\tau;\xi).
+\]
+
+Appendix A, H2-H4, computes the coefficients from the actual
+ground-state and resolvent recurrences. The ground-energy shift,
+division by the original vacuum norm, and subtraction of the ground pole
+are included. Each connected Laplace coefficient is a finite
+partial-fraction sum
+
+\[
+F_\nu(z)=\sum_{c>0,\,m\geq1}\frac{a_{c,m}}{(z+c)^m},
+\qquad
+C_\nu(\tau)=\sum_{c,m}
+\frac{a_{c,m}}{(m-1)!}\tau^{m-1}e^{-c\tau}.
+\]
+
+There are 84 exact time functions across 17 geometric cases. Their
+\textbf{Laplace transforms} are rational functions; the time functions
+are finite polynomial-exponential sums. The phrase "rational time
+functions" in the preserved source should be read with that distinction.
+On the \(L=2\) box the resulting coefficient matrices have respectively
+240, 2,496 and 9,660 nonzero entries at degrees zero, two and four.
+Their time integrals return the earlier static response matrices.
+
+The finite first excitation band is a related, but separate, result. If
+\(Y_\xi\) is the actual projected plaquette frame, its state Gram
+\(G_{\rm band}=Y_\xi^*Y_\xi\) need not be the identity. Appendix A, H8,
+gives
+
+\[
+A_{\rm band}=3I+\xi^2T_2+\xi^4T_4+\cdots,
+\qquad T_2=\frac7{15}I-\frac{D_{\rm degree}+A_{\rm adj}}{21},
+\]
+
+\[
+T_4-T_4^*=T_2G_{{\rm band},2}-G_{{\rm band},2}T_2.
+\]
+
+This last identity explains why an ordinary coordinate adjoint is not
+the adjoint in the computed band metric. On the open \(L=2\) box its
+right-hand side has 1,440 nonzero entries. The band remainder is proved
+only for \(|\xi|<1/(32M_L)\); the later volume-independent \emph{heat}
+result does not silently enlarge that band domain.
+
+\subsection{From a finite-box estimate to a volume-independent heat
+bound}\label{from-a-finite-box-estimate-to-a-volume-independent-heat-bound}
+
+Appendix B first proves an entrywise analytic bound on \(|\xi|<1/M_L\).
+This controls a fixed box, but its source radius shrinks as the box
+grows. Appendix D addresses exactly that dependence. The proof uses a
+locally labelled Fourier-coefficient norm to construct the exponential
+source, while keeping the original Haar pairing and all scalar energy
+terms.
+
+The essential estimates are as follows. The physical representation
+labels satisfy \(c_j\geq6j_e\) at each active link and \(c_j\geq3\) away
+from the constant block. The original plaquette coefficient has trace
+norm \(8\). These facts give a convergent labelled source series on
+
+\[
+R_0=\frac3{256},\qquad
+\chi(r)=\frac{1-\sqrt{1-256r/3}}2,\qquad
+d(r)=3(1-\chi(r)).
+\]
+
+The scalar mean is solved together with the nonconstant equation. A
+closed generator on a stated dense coefficient domain then gives the
+actual heat flow, rather than replacing a semigroup estimate by an
+estimate on one inverse. The Poisson identity pairs that flow against an
+arbitrary signed sum of plaquettes. Taking the supremum over the signs
+controls an entire matrix row.
+
+For \(\|B\|_{\rm row}=\max_p\sum_q|B_{pq}|\), the result is
+
+\[
+\boxed{\displaystyle
+\|\mathcal R_{6,L}(\tau;\xi)\|_{\rm row}
+\leq512e^{-3\tau/2}\frac{\theta^6}{1-\theta^2},
+\qquad \theta=\frac{|\xi|}{R_0}<1.}
+\]
+
+It holds for every \(L\geq2\) and \(\tau\geq0\) with the same constants
+(Appendix D, U29-U30). A second bound, U29b, has the smaller radius
+\(R_1=45/4096\), prefactor \(6184/25\), and decay \(15/8\). Both bounds
+are retained with their own radii; the better of their scalar error
+bounds may be used where both apply.
+
+Local Taylor coefficients agree once their original support fits inside
+both boxes. Combined with the complete analytic tail, this gives
+full-sequence convergence of local vacuum means and heat correlations.
+U9 constructs the limiting gauge-invariant state and symmetric Markov
+semigroup, with a self-adjoint generator on its physical \(L^2\) space.
+This passage increases spatial volume with \(a\) fixed. It is not an
+ultraviolet limit \(a\to0\).
+
+\subsection{The three Grams and why the complement
+matters}\label{the-three-grams-and-why-the-complement-matters}
+
+Let \(R:\mathbb C^{M_L}\to\mathcal H_{0,L}\) be the column map
+\(Rc=\sum_pc_pr_p\), and define its inverse-energy family
+
+\[
+\Phi=\kappa A_L^{-1}R,\qquad A_L\Phi=\kappa R.
+\]
+
+The three original Grams measure different things:
+
+\[
+G_0=R^*R,\qquad G_1=R^*\Phi,\qquad
+G_2=\Phi^*\Phi,\qquad E=\Phi^*A_L\Phi=\kappa G_1.
+\]
+
+Here \(G_0\) is the norm of the forcing columns, \(G_2\) is the norm of
+the inverse-energy states, and \(E\) is their energy form. More
+generally, \(G_k=\kappa^kR^*A_L^{-k}R\) for \(k\geq1\). The heat
+integral computes all these inverse-energy moments:
+
+\[
+G_k=\frac1{(k-1)!}\int_0^\infty
+\tau^{k-1}\widehat C_L(\tau;\xi)\,d\tau\quad(k\geq1).
+\]
+
+At \(g^2\geq16\), Appendix E, M10, obtains, uniformly over \(L\geq2\)
+and \(a>0\),
+
+\[
+\|G_0-I\|<\frac{124}{10^6},\qquad
+\|G_1-I/3\|<\frac{66}{10^6},\qquad
+\|G_2-I/9\|<\frac{36}{10^6}.
+\]
+
+The coefficient bound is valid at boundary rows because absolute values
+are summed \emph{before} contributions from distinct supports can
+cancel. The full-space estimate is \(A_L\geq(117/40)\kappa I\) on
+\(\mathcal H_{0,L}\).
+
+These facts alone would not justify pretending that
+\(\operatorname{im}\Phi\) is a reducing subspace. Its coupling to the
+rest of the Hilbert space must be retained. Define
+
+\[
+P=\Phi G_2^{-1}\Phi^*,\qquad Q=I-P,\qquad B=QR.
+\]
+
+Then \(P\) is the actual orthogonal state projection and
+
+\[
+B^*B=G_0-G_1G_2^{-1}G_1.
+\]
+
+For every form-domain vector written as \(\Phi c+h\),
+\(h\in Q\mathcal H_{0,L}\), the full energy is
+
+\[
+q_{A_L}(\Phi c+h)
+=c^*Ec+2\kappa\operatorname{Re}\langle Bc,h\rangle+q_{A_L}(h).
+\]
+
+Appendix E, M5, proves that the complementary operator \(D_Q=QA_LQ\) on
+\(\operatorname{Dom}(A_L)\cap Q\mathcal H_{0,L}\) is self-adjoint and
+bounded below. Minimization over its entire form domain therefore gives
+
+\[
+h_{\min}(c)=-\kappa D_Q^{-1}Bc,\qquad
+E_{\rm full}=E-\kappa^2B^*D_Q^{-1}B,
+\]
+
+\[
+G_{\rm restored}=G_2+\kappa^2B^*D_Q^{-2}B.
+\]
+
+At \(g^2\geq16\) the sharpened bounds are
+
+\[
+\frac{999}{1000}E\prec E_{\rm full}\preceq E,
+\qquad
+G_2\preceq G_{\rm restored}\prec\frac{1001}{1000}G_2.
+\]
+
+Thus the original family\textquotesingle s energy decreases by less than
+one part in a thousand when the entire complement is allowed to relax,
+while its state Gram increases by less than one part in a thousand. The
+inequalities are between quadratic forms in the same original
+coefficients; a strict inequality is evaluated on nonzero coefficients.
+They are not quotients of matrix entries. M8 carries the bounded maps
+and estimates to \(\ell^2\) of the infinite plaquette family, including
+its full physical complement.
+
+\subsection{Two concrete consequences}\label{two-concrete-consequences}
+
+First, take opposite faces \(p=(0,0,0;0,1)\) and \(q=(0,0,1;0,1)\).
+Their degree-zero and degree-two correlations vanish; the degree-four
+term consists of four original three-face paths and one cube. At
+\(\xi=10^{-10}\), so that \(g^2=50000\) and \(\kappa=100000/a\),
+Appendix E, M26, gives
+
+\[
+\frac{85910}{10^7}
+<\frac{C_{pq}(1/\kappa;\xi)}{\xi^4}
+<\frac{85920}{10^7}.
+\]
+
+The complete correlation is positive throughout
+\(1/\kappa\leq t\leq3/\kappa\), in every \(L\geq2\) and in the
+fixed-spacing spatial limit. The all-order remainder is smaller than the
+explicitly proved coefficient lower bound on this interval. Positivity
+is therefore a statement about the actual interacting correlation, not
+merely its truncated expansion.
+
+Second, finite heat time gives a controlled replacement of
+inverse-energy states:
+
+\[
+\Phi_T=(I-e^{-TA_L})\Phi
+=\kappa\int_0^Te^{-tA_L}R\,dt,\qquad
+A_L\Phi_T=\kappa R-\kappa e^{-TA_L}R.
+\]
+
+The omitted forcing is explicit. If \(\varepsilon=e^{-\kappa dT}\) with
+the full-space lower bound \(A_L\geq\kappa dI\), spectral calculus gives
+
+\[
+(1-\varepsilon)^2G_2\preceq\Phi_T^*\Phi_T\preceq G_2,
+\qquad
+(1-\varepsilon)^2E\preceq\Phi_T^*A_L\Phi_T\preceq E.
+\]
+
+These inequalities survive restriction and minimization over the
+\emph{same coefficient fibers}. In particular, a signed sum
+\(\mathcal L=\sum_ja_j\log\det Q_j\) of such original positive quotient
+forms satisfies
+
+\[
+|\mathcal L_T-\mathcal L|
+\leq2\mathcal B[-\log(1-\varepsilon)],\qquad
+\mathcal B=\sum_j|a_j|\operatorname{rank}Q_j.
+\]
+
+For four returns with coefficients \(a_j\in\{-1,+1\}\) and ranks at most
+240, so that \(\mathcal B\leq960\), \(g^2\geq16\) and \(T=10/\kappa\)
+give error below \(4\times10^{-10}\) in every exterior volume. For a
+growing observation family, M25 keeps the rank explicitly and reaches
+tolerance \(\eta>0\) at
+
+\[
+T=\frac1{\kappa d}\log\!\left(1+\frac{2\mathcal B}{\eta}\right).
+\]
+
+\subsection{Sources, mathematical lineage, and how to verify the
+edition}\label{sources-mathematical-lineage-and-how-to-verify-the-edition}
+
+The exponential-vacuum and character framework has a human antecedent in
+Schütte, Zheng Weihong and Hamer {[}1{]}. The block minimization is a
+Feshbach-Schur construction; {[}2{]} is a modern primary reference.
+Appendix D proves the needed compact-group Fourier coefficient estimates
+and cites Eymard {[}3{]}. Its generator argument states the domain,
+dissipativity and range conditions used from Lumer and Phillips {[}4{]}.
+These are point-of-use dependencies, not generic acknowledgments.
+
+Two distinct contributions associated with \textbf{Levent Alpöge} enter
+the earlier workbench and deserve separate attribution. The \(S^6\)
+branch starts from the claimed complex-threefold construction he
+circulated with AI assistance {[}5{]}, also credited to him in
+Engel\textquotesingle s exposition {[}6{]}. A different branch starts
+from his Jacobian counterexample: global noninjectivity despite a
+constant nonzero Jacobian. His original announcement {[}7{]} credits
+Akhil\textquotesingle s question and Fable\textquotesingle s work;
+Tao\textquotesingle s later exposition is credited separately {[}8{]}.
+These constructions are not interchangeable. Their subsequent coordinate
+maps and conductor calculations belong to their respective
+continuations. The five heat manuscripts collected here do not directly
+use either originating construction as a lemma: their actual transferred
+inputs are the heat, Gram, quotient-minimum and inverse-power maps
+specified next. This distinction records the programme\textquotesingle s
+mathematical origins without attributing the present heat bounds to
+Alpöge or claiming an unproved spectral equivalence.
+
+The workbench\textquotesingle s
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/ATTRIBUTION.md}{attribution
+and mathematical lineage record} gives the primary sources and exact
+historical points of use.
+
+The direct transfer used in the present proofs is the heat/Gram and
+minimum-fiber argument from the Riemann workbench, not a spectral
+identification of its arithmetic objects with Yang-Mills fields.
+Appendix C identifies the receiving maps explicitly. Its pinned source
+revision is
+{\ttfamily 1\allowbreak{}2\allowbreak{}8\allowbreak{}a\allowbreak{}a\allowbreak{}3\allowbreak{}0\allowbreak{}8\allowbreak{}d\allowbreak{}d\allowbreak{}2\allowbreak{}a\allowbreak{}7\allowbreak{}0\allowbreak{}b\allowbreak{}a\allowbreak{}6\allowbreak{}e\allowbreak{}0\allowbreak{}7\allowbreak{}3\allowbreak{}8\allowbreak{}1\allowbreak{}6\allowbreak{}a\allowbreak{}9\allowbreak{}5\allowbreak{}7\allowbreak{}d\allowbreak{}1\allowbreak{}e\allowbreak{}e\allowbreak{}6\allowbreak{}4\allowbreak{}1\allowbreak{}4\allowbreak{}b\allowbreak{}a\allowbreak{}2\allowbreak{}c\allowbreak{}}
+in
+\href{https://github.com/KokunoYumeto/zeta-function-research-reader/tree/128aa308dd2a70ba6e073816a957d1ee6414ba2c}{the
+Riemann workbench}: HM6-HM14 and HM19-HM24 of
+{\ttfamily H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}\_\allowbreak{}T\allowbreak{}O\allowbreak{}\_\allowbreak{}O\allowbreak{}R\allowbreak{}I\allowbreak{}G\allowbreak{}I\allowbreak{}N\allowbreak{}A\allowbreak{}L\allowbreak{}\_\allowbreak{}Q\allowbreak{}U\allowbreak{}O\allowbreak{}T\allowbreak{}I\allowbreak{}E\allowbreak{}N\allowbreak{}T\allowbreak{}\_\allowbreak{}M\allowbreak{}E\allowbreak{}T\allowbreak{}R\allowbreak{}I\allowbreak{}C\allowbreak{}S\allowbreak{}.\allowbreak{}t\allowbreak{}e\allowbreak{}x\allowbreak{}},
+HG6-HG10 of
+{\ttfamily O\allowbreak{}R\allowbreak{}I\allowbreak{}G\allowbreak{}I\allowbreak{}N\allowbreak{}A\allowbreak{}L\allowbreak{}\_\allowbreak{}H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}\_\allowbreak{}A\allowbreak{}N\allowbreak{}D\allowbreak{}\_\allowbreak{}S\allowbreak{}O\allowbreak{}U\allowbreak{}R\allowbreak{}C\allowbreak{}E\allowbreak{}\_\allowbreak{}E\allowbreak{}N\allowbreak{}D\allowbreak{}P\allowbreak{}O\allowbreak{}I\allowbreak{}N\allowbreak{}T\allowbreak{}.\allowbreak{}t\allowbreak{}e\allowbreak{}x\allowbreak{}},
+and IK9-IK12 of
+{\ttfamily I\allowbreak{}N\allowbreak{}V\allowbreak{}E\allowbreak{}R\allowbreak{}S\allowbreak{}E\allowbreak{}\_\allowbreak{}P\allowbreak{}O\allowbreak{}W\allowbreak{}E\allowbreak{}R\allowbreak{}\_\allowbreak{}C\allowbreak{}O\allowbreak{}N\allowbreak{}D\allowbreak{}U\allowbreak{}C\allowbreak{}T\allowbreak{}O\allowbreak{}R\allowbreak{}\_\allowbreak{}O\allowbreak{}B\allowbreak{}S\allowbreak{}E\allowbreak{}R\allowbreak{}V\allowbreak{}A\allowbreak{}B\allowbreak{}I\allowbreak{}L\allowbreak{}I\allowbreak{}T\allowbreak{}Y\allowbreak{}.\allowbreak{}t\allowbreak{}e\allowbreak{}x\allowbreak{}}.
+The source intake records retain their full paths and blob identities.
+Original conductor coefficients, zeta-zero data and arithmetic constants
+remain attached to their source constructions.
+
+The workbench was developed with AI assistance from ChatGPT 5.6 Sol in
+Ultra mode in Codex and GPT-6 Astra; the collection preserves the
+individual mathematical and source records. The supplied mathematical
+arguments are presented for scrutiny. Fresh integration checks repeated
+2,425 exact volume checks with 16 false-formula controls, 879 heat
+checks with 21 controls, and 52 route calculations, in both ordinary and
+optimized Python. The cumulative manifest passed before and after these
+runs. These executions verify their declared finite algebra and
+endpoints. They are not Lean proofs, independent external peer review,
+or a formal verification of every infinite-dimensional analytical step.
+
+The source texts remain complete below, so the numerical statements can
+be followed through their constructions rather than accepted from this
+introduction. The original cumulative volume archive contains 2,015
+files and retains all files of the preceding heat edition, including the
+five earlier control documents in its history directory. A non-mutating
+integrity check from the extracted archive root is
+{\ttfamily p\allowbreak{}y\allowbreak{}t\allowbreak{}h\allowbreak{}o\allowbreak{}n\allowbreak{} \allowbreak{}-\allowbreak{}B\allowbreak{} \allowbreak{}v\allowbreak{}e\allowbreak{}r\allowbreak{}i\allowbreak{}f\allowbreak{}y\allowbreak{}\_\allowbreak{}c\allowbreak{}u\allowbreak{}m\allowbreak{}u\allowbreak{}l\allowbreak{}a\allowbreak{}t\allowbreak{}i\allowbreak{}v\allowbreak{}e\allowbreak{}.\allowbreak{}p\allowbreak{}y\allowbreak{}}.
+Full producer replays should use a new disposable copy; their scripts
+generate files and are not read-only checks.
+
+The mathematical advance described here is the passage from finite-box
+heat coefficients to a volume-independent heat error and to a
+quantitative full-complement return in original physical metrics. The
+next, different issue is extension beyond the stated strong-coupling
+domain. The simultaneous shrinking-spacing path discussed in the source
+eventually leaves that domain. Neither the existing local source
+certificate nor its elementary restart establishes the ultraviolet
+continuum limit.
+
+\subsection{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  D. Schütte, Zheng Weihong and C. J. Hamer, \emph{The Coupled Cluster
+  Method in Hamiltonian Lattice Field Theory}, 1996,
+  \href{https://arxiv.org/abs/hep-lat/9603026}{{a\allowbreak{}r\allowbreak{}X\allowbreak{}i\allowbreak{}v\allowbreak{}:\allowbreak{}h\allowbreak{}e\allowbreak{}p\allowbreak{}-\allowbreak{}l\allowbreak{}a\allowbreak{}t\allowbreak{}/\allowbreak{}9\allowbreak{}6\allowbreak{}0\allowbreak{}3\allowbreak{}0\allowbreak{}2\allowbreak{}6\allowbreak{}}}.
+\item
+  G. Dusson, I. M. Sigal and B. Stamm, \emph{The Feshbach-Schur map and
+  perturbation theory}, 2021,
+  \href{https://arxiv.org/abs/2105.02058}{arXiv:2105.02058}.
+\item
+  P. Eymard, \emph{L\textquotesingle algèbre de Fourier
+  d\textquotesingle un groupe localement compact}, Bulletin de la
+  Société Mathématique de France 92 (1964), 181-236.
+  \href{https://www.numdam.org/item/BSMF_1964__92__181_0/}{Original
+  article}.
+\item
+  G. Lumer and R. S. Phillips, \emph{Dissipative operators in a Banach
+  space}, Pacific Journal of Mathematics 11 (1961), 679-698, Theorem
+  3.1, pp. 686-687.
+  \href{https://msp.org/pjm/1961/11-2/pjm-v11-n2-p19-s.pdf}{Original
+  article}.
+\item
+  Levent Alpöge, \(S^6\) construction circulated with AI assistance,
+  \href{https://alpo.ge/s6.pdf}{original 108-page manuscript},
+  especially p. 2, Setup, for the coordinate matrix \(\Pi\).
+\item
+  Philip Engel, \emph{Complex structures on \(S^6\)}, 13 September 2026,
+  \href{https://philip-engel.github.io/S6.pdf}{expository manuscript},
+  abstract and Section 1.3.
+\item
+  Levent Alpöge,
+  \href{https://x.com/__alpoge__/status/2079028340955197566}{original
+  announcement of the Jacobian counterexample}, 20 July 2026. The
+  announcement credits Akhil and Fable.
+\item
+  Terence Tao, \emph{A digestion of the Jacobian conjecture
+  counterexample}, 21 July 2026,
+  \href{https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/}{exposition}.
+\end{enumerate}
+
+\clearpage
+\appendix
+
+\section{Original Yang--Mills heat correlations: the complete
+fourth-degree
+return}\label{original-yangmills-heat-correlations-the-complete-fourth-degree-return}
+
+21 September 2026. This is an additive continuation of the recovered
+cumulative workbench. The original open-box SU(2) operator, physical
+units, Haar measure, gauge constraints and source coordinates remain.
+The coefficient calculation uses the complete available fifth-source
+archive. The separately saved sixth-source proofs are preserved with
+their recovery status; their missing catalogues are not prerequisites
+for this calculation. General exponential-vacuum and character methods
+retain Schütte--Zheng--Hamer (1996) as a human antecedent. The exact
+finite calculations here are accompanied by analytic proofs and
+executable audits; independent external analytical review and historical
+priority are not asserted.
+
+\subsection{H1. The actual operator and time
+coordinate}\label{h1.-the-actual-operator-and-time-coordinate}
+
+For L\textgreater=2 use every vertex n in \{-L,...,L\}\^{}3, every
+contained positive edge (n,i), and every contained elementary face
+p=(n;i,j), i\textless j. Put
+
+\begin{verbatim}
+W_p=tr(U_i(n) U_j(n+e_i) U_i(n+e_j)^(-1) U_j(n)^(-1)),
+T_alpha=-i sigma_alpha/2,
+X_e,alpha f=d/ds f(...,exp(s T_alpha)U_e,...) at s=0,
+K=-sum_(e,alpha) X_e,alpha^2,
+H(x)=kappa K+kappa sum_p x_p(2-W_p),
+kappa=2g^2/a,   x_p=xi=1/(4g^4) on the homogeneous line.       (H1)
+\end{verbatim}
+
+The inner product on the original product Haar probability space is
+conjugate linear in its first entry. The physical subspace is invariant
+under all vertex gauge transformations, including boundary vertices. The
+domains are the physical parts of H\^{}2 and H\^{}1. The original
+bounded smooth potential preserves these domains; the compact elliptic
+operator has a smooth strictly positive unit ground state psi\_x with
+energy E0(x). These domain and vacuum facts are the ones in the pinned
+original finite-box source
+{(\allowbreak{}S\allowbreak{}O\allowbreak{}U\allowbreak{}R\allowbreak{}C\allowbreak{}E\allowbreak{}\_\allowbreak{}I\allowbreak{}N\allowbreak{}T\allowbreak{}A\allowbreak{}K\allowbreak{}E\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{},\allowbreak{}}
+YM0).
+
+The coefficient operator and its inverse physical return are exactly
+
+\begin{verbatim}
+B_x=(H(x)-2kappa sum_p x_p I)/kappa=K-sum_p x_p W_p,
+H(x)=kappa B_x+2kappa sum_p x_p I,
+E0(x)=kappa[2sum_p x_p+e(x)].                              (H2)
+\end{verbatim}
+
+Both scalar energy terms remain in the return. Let A\_x=H(x)-E0(x) and
+{r\allowbreak{}\_\allowbreak{}p\allowbreak{}=\allowbreak{}(\allowbreak{}W\allowbreak{}\_\allowbreak{}p\allowbreak{}-\allowbreak{}\textless{}\allowbreak{}W\allowbreak{}\_\allowbreak{}p\allowbreak{}\textgreater{}\allowbreak{}\_\allowbreak{}r\allowbreak{}h\allowbreak{}o\allowbreak{})\allowbreak{}p\allowbreak{}s\allowbreak{}i\allowbreak{}\_\allowbreak{}x\allowbreak{},\allowbreak{}}
+rho=psi\_x\^{}2. Define
+
+\begin{verbatim}
+C_pq(t;x)=<r_p,exp(-t A_x)r_q>,
+Chat_pq(tau;x)=C_pq(tau/kappa;x),
+tau=kappa t,   t=tau/kappa.                              (H3)
+\end{verbatim}
+
+This is an invertible physical-time change; no link or field coordinate
+is changed. The Laplace variable z below is conjugate to this stated
+tau:
+
+\begin{verbatim}
+F_pq(z;x)=int_0^infinity exp(-z tau) Chat_pq(tau;x) dtau
+         =kappa <r_p,(A_x+kappa z)^(-1)r_q>.              (H4)
+\end{verbatim}
+
+All expressions are initially at real sufficiently small x and
+z\textgreater0. The separate analytic proof gives their full domains and
+uniform time remainders.
+
+\subsection{H2. The complete coefficient recurrence, including the
+ground
+pole}\label{h2.-the-complete-coefficient-recurrence-including-the-ground-pole}
+
+Retain the source section u=psi\_x/m\_x, m\_x=P\_H psi\_x. Its inverse
+is psi\_x=m\_x u, and its original scalar obeys
+m\_x\^{}2\textless u,u\textgreater\_H=1. Thus P\_H u=1 and the original
+norm N(x)=\textless u,u\textgreater\_H is kept in every expectation.
+Expand u(x)=sum\_nu u\_nu x\^{}nu,
+{e\allowbreak{}(\allowbreak{}x\allowbreak{})\allowbreak{}=\allowbreak{}s\allowbreak{}u\allowbreak{}m\allowbreak{}\_\allowbreak{}(\allowbreak{}n\allowbreak{}u\allowbreak{}!\allowbreak{}=\allowbreak{}0\allowbreak{})\allowbreak{}e\allowbreak{}\_\allowbreak{}n\allowbreak{}u\allowbreak{}}
+x\^{}nu, with u\_0=1, P\_H u\_nu=0 for nu!=0. The exact eigen-equation
+gives
+
+\begin{verbatim}
+e_nu=-sum_(j:nu_j>0) P_H(W_j u_(nu-e_j)),
+K u_nu=sum_j W_j u_(nu-e_j)
+          +sum_(0<mu<=nu)e_mu u_(nu-mu).                 (H5)
+\end{verbatim}
+
+The last term includes e\_nu u\_0, and its Haar scalar makes the RHS
+centered. Its unique centered inverse is the original K\^{}(-1)Q\_H. The
+recovered coefficient engine supplies these actual finite coefficients
+and all their source labels.
+
+For a marked face q, define
+{h\allowbreak{}\_\allowbreak{}q\allowbreak{}(\allowbreak{}z\allowbreak{};\allowbreak{}x\allowbreak{})\allowbreak{}=\allowbreak{}(\allowbreak{}B\allowbreak{}\_\allowbreak{}x\allowbreak{}-\allowbreak{}e\allowbreak{}(\allowbreak{}x\allowbreak{})\allowbreak{}+\allowbreak{}z\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}W\allowbreak{}\_\allowbreak{}q\allowbreak{}}
+u(x). Its coefficient equation is
+
+\begin{verbatim}
+(K+z)h_(q,nu)=W_q u_nu+sum_j W_j h_(q,nu-e_j)
+                     +sum_(0<mu<=nu)e_mu h_(q,nu-mu).     (H6)
+\end{verbatim}
+
+The source index may include repeated faces; all multiplicities remain
+literal multiindex coefficients. Define
+
+\begin{verbatim}
+N_nu=sum_(alpha+beta=nu)<u_alpha,u_beta>_H,
+Mp_nu=sum_(alpha+beta=nu)<u_alpha,W_p u_beta>_H,
+Hpq_nu=sum_(alpha+beta=nu)<u_alpha,W_p h_(q,beta)>_H.        (H7)
+\end{verbatim}
+
+Coefficient division by N, with N\_0=1, gives the original mean
+mu\_p=Mp/N and the uncentered resolvent Hpq/N. The complete connected
+answer is
+
+\begin{verbatim}
+F_pq=Hpq/N-mu_p mu_q/z.                                  (H8)
+\end{verbatim}
+
+The subtracted term is retained as an actual ground-state contribution.
+The source shift e\_mu in (H6), both norm divisions and this term are
+all required. Every resulting coefficient in the catalogue has zero
+coefficient at each power z\^{}(-j), j\textgreater0. The original
+positive free excitation gap also proves this cancellation analytically
+near (x,z)=(0,0), after the ground projection is removed.
+
+\subsection{H3. Exact original Casimir inversion and time
+reconstruction}\label{h3.-exact-original-casimir-inversion-and-time-reconstruction}
+
+An original invariant trace monomial has a finite tensor representation
+on its original edge set. For r\_e occurrences on edge e, the allowed
+doubled spins are r\_e,r\_e-2,... . At each original vertex the sum of
+the doubled spins is even, and no one exceeds the sum of the others.
+These are the SU(2) invariant-tensor conditions: iterated
+angular-momentum addition supplies every intermediate spin in the
+parity-compatible interval, so zero belongs exactly on those conditions.
+The resulting finite Casimir list contains all eigenvalues of that
+monomial. It retains multiplicities inside every equal-eigenvalue
+eigenspace.
+
+For its distinct values C, use the literal original operator projectors
+
+\begin{verbatim}
+P_c=product_(d in C,d!=c)(K-dI)/(c-d),
+(K+z)^(-1)f=sum_(c in C) P_c f/(z+c).                     (H9)
+\end{verbatim}
+
+The full physical operator has all spins. The finite list in (H9) is the
+complete representation space reached by that Taylor coefficient and its
+marked word. It does not discard a path contributing to the coefficient.
+
+Every response coefficient is stored as exact partial fractions
+
+\begin{verbatim}
+F_nu(z)=sum_(c>0,n>=1) a_(c,n)/(z+c)^n.                   (H10)
+\end{verbatim}
+
+Their time functions are exactly
+
+\begin{verbatim}
+Chat_nu(tau)=sum_(c,n) a_(c,n) tau^(n-1)exp(-c tau)/(n-1)!.(H11)
+\end{verbatim}
+
+Indeed direct integration of each finite term gives (H10). The analytic
+heat construction in the companion proof shows these are the actual
+Taylor coefficients, and uniqueness of the Laplace transform identifies
+them. For explicit uniqueness, weighting a vanishing transform by
+exp(-s0 tau) produces a finite complex measure; x=exp(-tau) carries its
+integer Laplace samples to all polynomial moments on {[}0,1{]}.
+Polynomial approximation forces the measure to vanish; continuity gives
+equality of the time functions.
+
+Products in the partial-fraction engine are also exact. For a!=b, the
+principal part of (z+a)\^{}(-m)(z+b)\^{}(-n) at -a has coefficients
+
+\begin{verbatim}
+(-1)^k binom(n+k-1,k)/(b-a)^(n+k),  k=0,...,m-1,          (H12)
+\end{verbatim}
+
+at power (z+a)\^{}(-(m-k)); the analogous -b principal part is retained.
+Their sum has the same two principal parts and vanishes at infinity, so
+the rational functions are equal. Coincident poles add their orders.
+This retains every repeated pole and hence every time-polynomial factor
+in (H11).
+
+The exact original source equation (H6) is audited as a complete
+polynomial in all retained tree/chord quaternion coordinates, separately
+for every pole. The map is Z\_e=t\_s U\_e t\_t\^{}(-1), with its
+original inverse U\_e=t\_s\^{}(-1)Z\_e t\_t and the tree variables
+retained. On each chord, Z=x0 I-i sum x\_a sigma\_a and sum\_(a=0)\^{}3
+x\_a\^{}2=1. The remainder basis has x0 exponent zero or one. The map
+and injectivity argument are the recovered fifth-source coordinate
+proof, unchanged. Every residual coefficient is zero in this full
+product-of-spheres algebra, not merely at sampled links.
+
+\subsection{H4. Complete support classification and original box
+assembly}\label{h4.-complete-support-classification-and-original-box-assembly}
+
+A change U\_e -\textgreater{} -U\_e multiplies each source or marked
+trace using e by -1. Thus a nonzero coefficient has an even total
+multiplicity on every original edge, counting both marked traces. At
+total face multiplicity 2 or 4 this requires all face multiplicities
+even. At total multiplicity 6 it permits, in addition, the six distinct
+faces of one elementary cube. The original closed cubical two-chain
+argument is retained in the sixth-energy proof: a nonempty closed
+mod-two face set has at least six faces; at six, each of the four edges
+of an extreme face requires its adjacent side face, and closure of their
+remaining edges forces the opposite face. The resulting set is the
+boundary of that original cube.
+
+A disconnected face source factors over disjoint original edge factors.
+The original operators, positive vacua and their means factor
+accordingly. A source component containing neither mark cancels between
+numerator and N; marks in different components have zero connected
+correlation. This remains true with shared graph vertices: the full
+tensor-product Hamiltonian and the actual invariant vectors give the
+same physical expectation. Connectedness therefore means sharing
+original edges, exactly as in the source catalogue.
+
+The complete list is:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2857}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2857}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+heat/source degree
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+total face multiplicity including marks
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+coordinate cases
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+marked responses
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 & 2 & 1 & 1 \\
+2 & 4 & 3 & 7 \\
+4 & 6 & 13 & 76 \\
+\end{longtable}
+}
+
+There are 84 full rational time functions. At total degree six the cases
+are one single face, two geometries of an ordered 4+2 pair, seven
+geometries of a three-face path, one common-edge triple, one cube corner
+and one cube. All marks and all allowed diagonal marks are retained.
+Faces with repeated multiplicity are never replaced by a factorial
+convention.
+
+A signed coordinate permutation and translation
+
+\begin{verbatim}
+y_i=epsilon_i x_(pi(i))-d_i,
+x_(pi(i))=epsilon_i(y_i+d_i)                              (H13)
+\end{verbatim}
+
+transports every actual face multiset and both marked faces to its
+record. Each original edge is mapped to the corresponding forward or
+inverse edge. The product-Haar map is unitary, carries K to K on that
+support, and maps the actual face words to the target face word or its
+inverse. In SU(2), tr(U\^{}-1)=tr(U) by the two eigenvalues
+lambda,lambda\^{}-1; hence the same trace is returned. The inverse in
+(H13) returns every source to its original coordinates.
+
+The L=2 assembly retains all 240 original faces, 1,128 adjacent pairs,
+6,732 paths, 576 common-edge triples, 512 corners and 64 cubes. The
+coefficient matrices have respectively 240, 2,496 and 9,660 nonzero
+entries. Their entire time integrals agree entry by entry with the
+preceding static matrices:
+
+\begin{verbatim}
+int_0^infinity Chat_0(tau)dtau=I/3,
+int_0^infinity Chat_2(tau)dtau
+  =-(5/36)I+(2/1053)D_degree+(4/1053)A_adj,                (H14)
+\end{verbatim}
+
+and the full original Chat\_4 integral is the previously calculated R4,
+including every boundary row and cube. All complete matrices and all
+their coordinate transports are in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}h\allowbreak{}e\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}m\allowbreak{}a\allowbreak{}t\allowbreak{}r\allowbreak{}i\allowbreak{}x\allowbreak{}\_\allowbreak{}L\allowbreak{}2\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}}
+and
+{h\allowbreak{}e\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}t\allowbreak{}r\allowbreak{}a\allowbreak{}n\allowbreak{}s\allowbreak{}p\allowbreak{}o\allowbreak{}r\allowbreak{}t\allowbreak{}s\allowbreak{}\_\allowbreak{}L\allowbreak{}2\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+Those files preserve the original face ordering.
+
+\subsection{H5. Explicit time-dependent
+functions}\label{h5.-explicit-time-dependent-functions}
+
+For one original plaquette with only its own source parameter, the
+degree-two coefficient is
+
+\begin{verbatim}
+exp(-3tau)[-241/900-(7/15)tau]+(4/225)exp(-8tau).          (H15)
+\end{verbatim}
+
+For two different faces sharing one original edge, the coefficient of
+x\_p x\_q is
+
+\begin{verbatim}
+exp(-3tau)[-409/17199+tau/21]
+   +exp(-9tau/2)/36+exp(-13tau/2)/588.                    (H16)
+\end{verbatim}
+
+Its integral is 4/1053 and its value at zero is 2/351. The corresponding
+diagonal, neighbour-source term replaces -409/17199 by -13/441; its
+integral is 2/1053 and its time-zero value is zero. These distinct
+values retain the full source and state pairings.
+
+Now take opposite faces
+
+\begin{verbatim}
+p=(0,0,0;0,1),  q=(0,0,1;0,1).                          (H17)
+\end{verbatim}
+
+Their coefficients at degrees zero and two vanish. Four original
+three-face paths and one original cube contribute at degree four. One
+path gives
+
+\begin{verbatim}
+P(tau)=exp(-3tau)[75173779/67612708800
+                 -(4441/3611790)tau+tau^2/882]
+   -(121/108864)exp(-9tau/2)+(1/11664)exp(-6tau)
+   -(197/9988160)exp(-13tau/2)+(1/163800)exp(-8tau)
+   +(1/6492304)exp(-10tau).                              (H18)
+\end{verbatim}
+
+The cube gives
+
+\begin{verbatim}
+B(tau)=exp(-3tau)[-235/648+(10/27)tau]
+   +exp(-9tau/2)[1123/2916+(23/81)tau+tau^2/18]
+   +(1/648)exp(-6tau).                                  (H19)
+\end{verbatim}
+
+Thus the complete actual degree-four coefficient is
+
+\begin{verbatim}
+h_4(tau)=4P(tau)+B(tau),
+h_4(0)=8869/365040,
+int_0^infinity h_4(tau)dtau=641033/29568240.               (H20)
+\end{verbatim}
+
+All six decay rates and both repeated-pole orders remain. The
+coefficient at tau=1 is enclosed by rational exponential bounds in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}h\allowbreak{}e\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}b\allowbreak{}o\allowbreak{}u\allowbreak{}n\allowbreak{}d\allowbreak{}s\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{};\allowbreak{}}
+its numerical size is approximately 0.00859150755. This diagnostic
+decimal is not an acceptance test. The companion proof turns (H20) into
+intervals for the full actual correlation, retaining every higher Taylor
+order.
+
+\subsection{H6. Independent checks on the same original
+geometry}\label{h6.-independent-checks-on-the-same-original-geometry}
+
+The single-plaquette check uses the infinite original character basis
+chi\_(j/2), where K
+{c\allowbreak{}h\allowbreak{}i\allowbreak{}\_\allowbreak{}(\allowbreak{}j\allowbreak{}/\allowbreak{}2\allowbreak{})\allowbreak{}=\allowbreak{}j\allowbreak{}(\allowbreak{}j\allowbreak{}+\allowbreak{}2\allowbreak{})\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}\_\allowbreak{}(\allowbreak{}j\allowbreak{}/\allowbreak{}2\allowbreak{})\allowbreak{}}
+and W
+{c\allowbreak{}h\allowbreak{}i\allowbreak{}\_\allowbreak{}(\allowbreak{}j\allowbreak{}/\allowbreak{}2\allowbreak{})\allowbreak{}=\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}\_\allowbreak{}(\allowbreak{}(\allowbreak{}j\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}/\allowbreak{}2\allowbreak{})\allowbreak{}+\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}\_\allowbreak{}(\allowbreak{}(\allowbreak{}j\allowbreak{}+\allowbreak{}1\allowbreak{})\allowbreak{}/\allowbreak{}2\allowbreak{})\allowbreak{},\allowbreak{}}
+with the negative-index term zero. At order n every contributing
+insertion path has j\textless=n+1; the independent recurrence retains
+all these indices. It reproduces all three self-source heat
+coefficients, with both original norm divisions and the ground pole. Its
+integrated coefficients are
+{1\allowbreak{}/\allowbreak{}3\allowbreak{},\allowbreak{}-\allowbreak{}5\allowbreak{}/\allowbreak{}3\allowbreak{}6\allowbreak{},\allowbreak{}2\allowbreak{}8\allowbreak{}9\allowbreak{}/\allowbreak{}5\allowbreak{}1\allowbreak{}8\allowbreak{}4\allowbreak{}.\allowbreak{}}
+They also follow by twice differentiating the retained one-plaquette
+energy coefficients. The original radial coordinate return
+{e\allowbreak{}\_\allowbreak{}o\allowbreak{}n\allowbreak{}e\allowbreak{}(\allowbreak{}x\allowbreak{}i\allowbreak{})\allowbreak{}=\allowbreak{}b\allowbreak{}\_\allowbreak{}2\allowbreak{}(\allowbreak{}-\allowbreak{}4\allowbreak{}x\allowbreak{}i\allowbreak{})\allowbreak{}/\allowbreak{}4\allowbreak{}-\allowbreak{}1\allowbreak{}}
+matches the NIST DLMF 28.6.5 expansion; the map and scalar energy term
+are in the recovered audit report. This comparison covers that
+one-plaquette coefficient convention only.
+
+There is an additional computation for every marked cube pair. Orient
+the six faces outward. Original Haar integration yields
+2\^{}8/2\^{}12=1/16. For any proper visited face subset S, each edge
+already visited twice can never occur in a later insertion. Its
+surviving representation is the original spin zero; each boundary edge
+carries the remaining spin one-half. Therefore its original intermediate
+energy is c(S)=3\textbar boundary S\textbar/4.
+
+For marks p!=q, arrange the other four faces in a permutation and split
+the ordered list into right-vacuum, middle-heat and left-vacuum pieces.
+All 24 permutations and all 15 length triples occur. Right and left
+vacuum prefixes contribute 1/c(S); the middle heat state begins at \{q\}
+union right and each middle insertion contributes 1/{[}z+c(S){]}. The
+original 1/16 remains. Summing these 360 rational functions gives
+exactly the cube coefficient in (H10). All fifteen marked cube pairs
+were checked: 5,400 complete original insertion records, including every
+intermediate boundary energy. This calculation imports none of the
+trace-differentiation or Casimir-projection engine.
+
+The time-zero covariance, its first derivative
+{-\allowbreak{}\textless{}\allowbreak{}G\allowbreak{}a\allowbreak{}m\allowbreak{}m\allowbreak{}a\allowbreak{}(\allowbreak{}W\allowbreak{}\_\allowbreak{}p\allowbreak{},\allowbreak{}W\allowbreak{}\_\allowbreak{}q\allowbreak{})\allowbreak{}\textgreater{}\allowbreak{}\_\allowbreak{}r\allowbreak{}h\allowbreak{}o\allowbreak{},\allowbreak{}}
+and its second derivative
+{\textless{}\allowbreak{}[\allowbreak{}K\allowbreak{},\allowbreak{}W\allowbreak{}\_\allowbreak{}p\allowbreak{}]\allowbreak{}u\allowbreak{},\allowbreak{}[\allowbreak{}K\allowbreak{},\allowbreak{}W\allowbreak{}\_\allowbreak{}q\allowbreak{}]\allowbreak{}u\allowbreak{}\textgreater{}\allowbreak{}\_\allowbreak{}H\allowbreak{}/\allowbreak{}N\allowbreak{}}
+are also calculated separately from the entire original density quotient
+at each coefficient. All 84 rational functions reproduce these three
+values. The full-polynomial source audit and these moment identities
+have distinct execution records.
+
+\subsection{H7. Sources and present mathematical
+scope}\label{h7.-sources-and-present-mathematical-scope}
+
+The original operator/domain and maximal-tree maps are the pinned
+finite-box workbench source. The exponential and character/Casimir
+antecedent is D. Schütte, Zheng Weihong and C. J. Hamer,
+{a\allowbreak{}r\allowbreak{}X\allowbreak{}i\allowbreak{}v\allowbreak{}:\allowbreak{}h\allowbreak{}e\allowbreak{}p\allowbreak{}-\allowbreak{}l\allowbreak{}a\allowbreak{}t\allowbreak{}/\allowbreak{}9\allowbreak{}6\allowbreak{}0\allowbreak{}3\allowbreak{}0\allowbreak{}2\allowbreak{}6\allowbreak{}.\allowbreak{}}
+The residue and minimum-section comparison imported from the current
+Split-Zero heat work is specified completely in
+{R\allowbreak{}H\allowbreak{}\_\allowbreak{}H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}\_\allowbreak{}T\allowbreak{}R\allowbreak{}A\allowbreak{}N\allowbreak{}S\allowbreak{}F\allowbreak{}E\allowbreak{}R\allowbreak{}.\allowbreak{}m\allowbreak{}d\allowbreak{},\allowbreak{}}
+with its exact source revision and read equations. No arithmetic period
+or Gamma constant is assigned to a physical Yang--Mills matrix.
+
+These are actual finite-regulator heat coefficients and actual
+finite-volume analytic bounds. The Cauchy radius in the companion is
+1/M. It therefore retains dependence on the original volume, and does
+not supply an ultraviolet continuum construction. The earlier
+uniform-gap manuscripts retain their recorded independent-audit
+qualification.
+
+\subsection{H8. The complete fourth-order first-band return in its
+original
+metric}\label{h8.-the-complete-fourth-order-first-band-return-in-its-original-metric}
+
+The original free energy-three space is exactly span\{Wp\}. To see the
+next separation, an active invariant graph with four edges is a
+four-cycle; its vertex intertwiners force equal edge spins, giving
+energy 4j(j+1)=3,8,... . A simple bipartite active graph with five edges
+and minimum degree at least two would have one cyclic component with
+five vertices and five edges, hence an odd five-cycle, or at most four
+vertices, where bipartiteness permits at most four edges. Both cases
+contradict its assumptions. Therefore any other active assignment has at
+least six edges and energy \textgreater=9/2. Thus
+
+\begin{verbatim}
+spec(K_phys) subset {0,3} union [9/2,infinity),
+P3H_phys=span{Wp},   dim P3=M.                           (H21)
+\end{verbatim}
+
+For sufficiently small real xi let Pi\_xi be the complete spectral
+projection near energy 3 of B\_xi-e(xi), and put
+
+\begin{verbatim}
+Y_xi c=Pi_xi sum_p c_p r_p,
+Gband=Y_xi*Y_xi,
+(B_xi-e)Y_xi=Y_xi Aband.                                (H22)
+\end{verbatim}
+
+The exact quantitative construction below proves invertibility of this
+frame onto the actual band. At xi=0, c-\textgreater sum c\_p Wp is the
+original Haar isometry R0. Projection of the heat resolvent onto its
+original energy-three poles gives
+
+\begin{verbatim}
+Cband(tau)=Gband exp(-tau Aband),
+Gband=I+xi^2 G2+xi^4 G4+...,
+Aband=3I+xi^2 T2+xi^4 T4+....                            (H23)
+\end{verbatim}
+
+The original center symmetry makes both matrices even. For each of the
+full heat matrices let A\_(n,j) be the coefficient of (z+3)\^{}(-j).
+Then literal multiplication of the two series in (H23) proves
+
+\begin{verbatim}
+G2=A_(2,1),  G4=A_(4,1),  T2=-A_(2,2),
+A_(4,3)=T2^2,
+T4=-A_(4,2)-G2 T2.                                    (H24)
+\end{verbatim}
+
+All matrix factors retain their order. The complete L=2 calculation
+gives
+
+\begin{verbatim}
+T2=(7/15)I-(D_degree+A_adj)/21.                          (H25)
+\end{verbatim}
+
+It gives all 9,660 nonzero entries of T4 and all 9,660 entries of G4 in
+{f\allowbreak{}i\allowbreak{}r\allowbreak{}s\allowbreak{}t\allowbreak{}\_\allowbreak{}b\allowbreak{}a\allowbreak{}n\allowbreak{}d\allowbreak{}\_\allowbreak{}L\allowbreak{}2\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+Every entry of A\_(4,3)=T2\^{}2 is checked. Original self-adjointness
+returns through the full Gram as
+
+\begin{verbatim}
+Gband Aband=Aband* Gband,
+T4-T4* = T2 G2-G2 T2.                                  (H26)
+\end{verbatim}
+
+The right side has 1,440 nonzero entries for this open box. For the
+original faces (-2,-2,-2;0,1) and (-2,-1,-2;0,1), the displayed
+difference is exactly 2/7371. This is the explicit correction between
+the coordinate adjoint and the original metric adjoint. Its value is
+retained, rather than forcing a symmetric coefficient matrix by dropping
+the mixed product.
+
+Here is a complete analytic remainder for (H23). Work on the complex
+homogeneous circle \textbar zeta\textbar=1/(32M). The original
+ground/complement calculation in A1-\/-A2 applies with
+{|\allowbreak{}|\allowbreak{}W\allowbreak{}|\allowbreak{}|\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}=\allowbreak{}e\allowbreak{}t\allowbreak{}a\allowbreak{}=\allowbreak{}1\allowbreak{}/\allowbreak{}(\allowbreak{}1\allowbreak{}0\allowbreak{}2\allowbreak{}4\allowbreak{}M\allowbreak{})\allowbreak{}}
+and Re D\textgreater=47/16. On \textbar e\textbar=eta,
+{|\allowbreak{}|\allowbreak{}Z\allowbreak{}(\allowbreak{}D\allowbreak{}-\allowbreak{}e\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}W\allowbreak{}|\allowbreak{}|\allowbreak{}\textless{}\allowbreak{}e\allowbreak{}t\allowbreak{}a\allowbreak{},\allowbreak{}}
+so the same scalar argument principle gives
+\textbar e\textbar\textless=eta. Consequently
+
+\begin{verbatim}
+||B_zeta-e-K|| <=1/16+1/(1024M)<1/15.                    (H27)
+\end{verbatim}
+
+On the spectral circle \textbar lambda-3\textbar=1/2 the original free
+resolvent has norm at most 2. Its norm-convergent resolvent series gives
+
+\begin{verbatim}
+||Pi-P3|| <=2/13,
+||(B_zeta-e-3)Pi||<=1/13.                               (H28)
+\end{verbatim}
+
+For the first inequality, integrate the difference of resolvents: the
+bound is 2b/(1-2b) with b\textless=1/15. For the second, integrate that
+difference multiplied by lambda-3, obtaining b/(1-2b). The corresponding
+free integral is zero because (K-3)P3=0. The circle encloses exactly the
+original M-dimensional band, by the same resolvent homotopy and finite
+rank at zero.
+
+Use the exact Haar section u=1+w, where
+{|\allowbreak{}|\allowbreak{}w\allowbreak{}|\allowbreak{}|\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}1\allowbreak{}/\allowbreak{}(\allowbreak{}9\allowbreak{}2\allowbreak{}s\allowbreak{}q\allowbreak{}r\allowbreak{}t\allowbreak{}(\allowbreak{}M\allowbreak{})\allowbreak{})\allowbreak{};\allowbreak{}}
+the denominator in its block inverse exceeds 23/8. The column map
+Fu:c-\textgreater sum c\_p Wp u satisfies
+
+\begin{verbatim}
+||Fu-R0||<=2sqrt(M)||w||<=1/46.
+\end{verbatim}
+
+Define Yhat=Pi Fu. Its original coefficient map obeys
+
+\begin{verbatim}
+||R0*Yhat-I||<=107/598,
+||(R0*Yhat)^(-1)||<=598/491.                             (H29)
+\end{verbatim}
+
+Indeed the two contributions are Pi-P3 and Pi(Fu-R0), bounded by 2/13
+and (15/13)/46. Its inverse on the band is (R0*Yhat)\^{}(-1)R0*. The
+actual unit-vacuum frame is Y=m Yhat, with psi=m u and
+m\^{}2\textless u,u\textgreater\_H=1 retained. Its scalar cancels from
+the operator intertwining, not from Gband. Thus
+
+\begin{verbatim}
+Aband=(R0*Yhat)^(-1)R0*(B_zeta-e)Yhat,
+||Aband-3I|| <=(598/491)(1/13)(47/46)=47/491.             (H30)
+\end{verbatim}
+
+All these maps are analytic on a neighborhood of the closed source
+circle. The original center involution sends Yhat\_-zeta=-C Yhat\_zeta
+and R0*C=-R0*, so Aband is even. Cauchy\textquotesingle s formula and
+the full even tail prove
+
+\begin{verbatim}
+||Aband-3I-xi^2T2-xi^4T4||
+  <=(47/491)(32M|xi|)^6/[1-(32M|xi|)^2],
+                     |xi|<1/(32M).                    (H31)
+\end{verbatim}
+
+Multiplication by kappa returns this to physical energy. This is an
+actual finite-volume matrix remainder, with all original band
+coordinates, the nonidentity Gram (H23), and the dependence on M
+retained. No diagonalization of T4 or uniform-in-volume fourth-order
+spectral claim is inferred here.
+
+\section{Full-time heat bounds and the original plaquette response
+metrics}\label{full-time-heat-bounds-and-the-original-plaquette-response-metrics}
+
+21 September 2026. This proof uses the unchanged finite-box SU(2)
+Hamiltonian and the complete coefficients in
+{P\allowbreak{}H\allowbreak{}Y\allowbreak{}S\allowbreak{}I\allowbreak{}C\allowbreak{}A\allowbreak{}L\allowbreak{}\_\allowbreak{}H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}\_\allowbreak{}C\allowbreak{}O\allowbreak{}E\allowbreak{}F\allowbreak{}F\allowbreak{}I\allowbreak{}C\allowbreak{}I\allowbreak{}E\allowbreak{}N\allowbreak{}T\allowbreak{}S\allowbreak{}.\allowbreak{}m\allowbreak{}d\allowbreak{}.\allowbreak{}}
+Its analytic argument is finite-volume and independent of the inherited
+volume-uniform source-norm estimates. The original number M of
+plaquettes appears in every Cauchy radius. Written arguments and
+executed finite checks have separate records. All inner products are
+conjugate-linear in the first entry.
+
+\subsection{A1. Original free spectrum and Haar
+blocks}\label{a1.-original-free-spectrum-and-haar-blocks}
+
+Use H1-\/-H3 of the coefficient proof. The original physical free
+operator K has its constant eigenvector 1, and every other physical
+Fourier block has energy at least 3. Here is the graph argument. In a
+nonzero invariant representation assignment, a vertex incident to only
+one active edge has no invariant tensor. Thus the finite active graph
+has minimum degree at least two and contains a cycle. The original
+simple cubic graph has no triangles and every cycle has at least four
+edges. Each active edge has spin j\textgreater=1/2 and Casimir
+j(j+1)\textgreater=3/4. Hence the complete physical K on the orthogonal
+complement of 1 is \textgreater=3. The elementary plaquette trace has
+four spin-one-half edges and energy 3.
+
+Write P0=\textbar1\textgreater\textless1\textbar{} and Q0=I-P0 in the
+original product Haar space. Integrating one original link gives P0
+Wp=0. Two distinct elementary plaquettes have an edge occurring in just
+one of their two words; integration over that link vanishes. For p=q,
+the product holonomy has the original Haar law and the fundamental
+character has squared norm one. Therefore
+
+\begin{verbatim}
+<Wp,Wq>_H=delta_pq.                                      (A1)
+\end{verbatim}
+
+For the complex homogeneous coefficient zeta, x\_p=zeta, put
+B\_zeta=K-zeta S. This complex variable retains the physical return H=
+kappa B\_xi+2kappa M xi I at real xi. On C1 plus Q0 H\_phys the full
+original block operator is
+
+\begin{verbatim}
+B_zeta = [[0,Z],[W,D]],
+D=Q0(K-zeta S)Q0 on Dom(K) intersect Q0 H_phys,
+W=-zeta sum_p Wp,   Z=-zeta P0 S Q0.                     (A2)
+\end{verbatim}
+
+Z is the original complex-linear row, with no conjugation of its
+parameter in the analytic extension. Equation (A1) proves exactly
+
+\begin{verbatim}
+||W||=||Z||=sqrt(M)|zeta|.
+\end{verbatim}
+
+On \textbar zeta\textbar\textless=1/M, Re\textless Dh,h\textgreater{}
+\textgreater= \textbar\textbar h\textbar\textbar\^{}2 since
+\textbar\textbar zeta S\textbar\textbar\textless=2. The closed operator
+D is a bounded perturbation of Q0KQ0 on the same domain. For Re
+e\textless1 its inverse D-e exists with norm \textless=(1-Re e)\^{}(-1):
+injectivity and closed range follow from the real part inequality; the
+same inequality for its adjoint gives dense range, hence surjectivity.
+All finite boxes here have
+{M\allowbreak{}=\allowbreak{}3\allowbreak{}(\allowbreak{}2\allowbreak{}L\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}(\allowbreak{}2\allowbreak{}L\allowbreak{}+\allowbreak{}1\allowbreak{})\allowbreak{}\textgreater{}\allowbreak{}=\allowbreak{}2\allowbreak{}4\allowbreak{}0\allowbreak{}.\allowbreak{}}
+
+\subsection{A2. A complete ground/complement decomposition on the
+complex
+disk}\label{a2.-a-complete-groundcomplement-decomposition-on-the-complex-disk}
+
+The scalar equation for the small eigenvalue is
+
+\begin{verbatim}
+f(e)=e+Z(D-e)^(-1)W=0.                                  (A3)
+\end{verbatim}
+
+On \textbar e\textbar=2/M the second term has modulus at most
+1/(M-2)\textless2/M. The finite scalar argument principle, or
+Rouche\textquotesingle s theorem applied to e, gives one simple zero
+inside that circle, with multiplicity counted. The contour construction
+makes e(zeta) analytic on a neighborhood of the closed
+\textbar zeta\textbar\textless=1/M disk and
+\textbar e\textbar\textless=2/M. Define the actual right and left graph
+coordinates
+
+\begin{verbatim}
+w=-(D-e)^(-1)W,
+ell=-Z(D-e)^(-1),
+P=(1,w)(1,ell)/(1+ell w).                               (A4)
+\end{verbatim}
+
+They satisfy B(1,w)=e(1,w), (1,ell)B=e(1,ell), ell W=e, and Z+ell D=e
+ell. Their norms obey
+
+\begin{verbatim}
+||w||,||ell|| <= sqrt(M)/(M-2),
+M/(M-2)^2 <= 240/238^2 < 1/225.
+\end{verbatim}
+
+The last bound decreases with M\textgreater=240 by differentiating
+M/(M-2)\^{}2. Consequently 1+ell w is nonzero, P\^{}2=P, and
+
+\begin{verbatim}
+||P||_trace <= (1+1/225)/(1-1/225)=113/112.               (A5)
+\end{verbatim}
+
+The original complement is ker(1,ell). Its exact coordinate map and
+inverse are
+
+\begin{verbatim}
+J:Q0H -> ker(1,ell),   Jh=(-ell h,h),
+J^(-1)=Q0 restricted to ker(1,ell).                     (A6)
+\end{verbatim}
+
+On the unchanged operator domain direct multiplication gives
+
+\begin{verbatim}
+(B-e)J=J Bc,   Bc=D-e-Well.                             (A7)
+\end{verbatim}
+
+Every factor in the feedback Well is retained. For its real part,
+
+\begin{verbatim}
+Re<Bc h,h> >= [1-2/M-1/(M-2)]||h||^2
+             >=[1-1/120-1/238]||h||^2
+             > (49/50)||h||^2.                         (A8)
+\end{verbatim}
+
+Bc is again the same self-adjoint free operator plus a bounded
+perturbation. The norm-convergent Duhamel series constructs its strongly
+continuous semigroup; its derivative on Dom(K), followed by the
+real-part energy inequality (A8), proves \textbar\textbar exp(-tau
+{B\allowbreak{}c\allowbreak{})\allowbreak{}|\allowbreak{}|\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}e\allowbreak{}x\allowbreak{}p\allowbreak{}(\allowbreak{}-\allowbreak{}4\allowbreak{}9\allowbreak{}t\allowbreak{}a\allowbreak{}u\allowbreak{}/\allowbreak{}5\allowbreak{}0\allowbreak{})\allowbreak{}.\allowbreak{}}
+Density extends this estimate to all vectors. Holomorphy in zeta follows
+locally from the uniformly convergent bounded perturbation series and
+the analytic coefficients in (A4).
+
+The exact excited semigroup is therefore
+
+\begin{verbatim}
+exp[-tau(B-e)](I-P)=J exp(-tau Bc)Q0(I-P).               (A9)
+\end{verbatim}
+
+The bounds on the original graph maps are
+
+\begin{verbatim}
+||J||<=226/225,
+||Q0P||<=113/1680,
+||Q0(I-P)||<=1793/1680.                                 (A10)
+\end{verbatim}
+
+For example
+{Q\allowbreak{}0\allowbreak{}P\allowbreak{}=\allowbreak{}w\allowbreak{}(\allowbreak{}1\allowbreak{},\allowbreak{}e\allowbreak{}l\allowbreak{}l\allowbreak{})\allowbreak{}/\allowbreak{}(\allowbreak{}1\allowbreak{}+\allowbreak{}e\allowbreak{}l\allowbreak{}l\allowbreak{}}
+w), and using \textbar\textbar w\textbar\textbar\textless=1/15 and
+{s\allowbreak{}q\allowbreak{}r\allowbreak{}t\allowbreak{}(\allowbreak{}1\allowbreak{}+\allowbreak{}1\allowbreak{}/\allowbreak{}2\allowbreak{}2\allowbreak{}5\allowbreak{})\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}2\allowbreak{}2\allowbreak{}6\allowbreak{}/\allowbreak{}2\allowbreak{}2\allowbreak{}5\allowbreak{}}
+gives 113/1680. No product-space Gram is replaced.
+
+For real xi, B\_xi is the full self-adjoint physical operator less its
+displayed scalar. Its lowest eigenvalue is \textless=0 by the original
+constant trial state. Equation (A8) leaves the entire remaining spectrum
+positive after subtracting e. Thus e is its actual ground eigenvalue. P
+is its actual orthogonal ground projection, obtained above on the same
+domain. This also identifies the analytic branch without choosing a
+surrogate vacuum.
+
+\subsection{A3. The complete all-time analytic
+bound}\label{a3.-the-complete-all-time-analytic-bound}
+
+Define the analytic connected heat observable by the literal trace
+
+\begin{verbatim}
+Chat_pq(tau;zeta)
+  =Tr[P Wp exp[-tau(B-e)](I-P)Wq].                       (A11)
+\end{verbatim}
+
+At real xi this equals the original
+{C\allowbreak{}\_\allowbreak{}p\allowbreak{}q\allowbreak{}(\allowbreak{}t\allowbreak{}a\allowbreak{}u\allowbreak{}/\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{};\allowbreak{}x\allowbreak{}i\allowbreak{})\allowbreak{},\allowbreak{}}
+with its actual vacuum-mean subtraction. The complex trace is its
+holomorphic continuation; no conjugation of zeta is inserted. Each
+original multiplication Wp has norm at most 2. Equations (A5), (A9),
+(A10) give
+
+\begin{verbatim}
+|Chat_pq(tau;zeta)|
+  <=4(113/112)(226/225)(1793/1680)exp(-49tau/50)
+  <5 exp(-49tau/50),    |zeta|<=1/M, tau>=0.             (A12)
+\end{verbatim}
+
+The original link-center substitution U\_(n,i) -\textgreater{}
+{(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}s\allowbreak{}u\allowbreak{}m\allowbreak{}\_\allowbreak{}(\allowbreak{}j\allowbreak{}\textless{}\allowbreak{}i\allowbreak{})\allowbreak{}n\allowbreak{}\_\allowbreak{}j\allowbreak{})\allowbreak{}}
+U\_(n,i) sends every plaquette trace to -Wp, preserves Haar, K and all
+gauge spaces, and is its own inverse. It carries B\_zeta to B\_-zeta.
+Both marked traces change sign, so (A11) is even in zeta.
+Cauchy\textquotesingle s coefficient formula on the original circle
+\textbar zeta\textbar=1/M and summation of the full even tail now prove
+
+\begin{verbatim}
+|Chat_pq(tau;xi)-C0_pq(tau)-xi^2 C2_pq(tau)-xi^4 C4_pq(tau)|
+  <=5 exp(-49tau/50)(M|xi|)^6/[1-(M|xi|)^2],
+                |xi|<1/M, tau>=0.                     (A13)
+\end{verbatim}
+
+All constants and all higher orders remain. The bound is uniform in
+positive time, with its original volume dependence. It also justifies
+differentiation in the source before Laplace integration. The finite
+rational functions in the coefficient proof are therefore precisely the
+Taylor coefficients of (A11). The Laplace uniqueness argument H3 returns
+their actual time functions.
+
+\subsection{A4. A positive original opposite-face correlation on an
+entire time
+interval}\label{a4.-a-positive-original-opposite-face-correlation-on-an-entire-time-interval}
+
+For the two faces H17, C0=C2=0 and C4=h4=4P+B with H18-\/-H20. Exact
+rational Taylor remainder estimates enclose exp(-x) for each x in
+{[}0,50{]}: the even Taylor sum of degree 240 is an upper bound, and
+subtracting x\^{}241/241! is a lower bound. Taylor\textquotesingle s
+Lagrange remainder has the required negative sign and magnitude
+\textless=x\^{}241/241!. The code checks positive lower endpoints. This
+is an interval calculation with rational endpoints, including at all
+cited times.
+
+At L=2, M=240, xi=10\^{}(-10), tau=1, evaluation of H18-\/-H20 and (A13)
+gives
+
+\begin{verbatim}
+85879/10^7 < Chat_pq(1;xi)/xi^4 < 85951/10^7.             (A14)
+\end{verbatim}
+
+The complete rational inner endpoints are in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}h\allowbreak{}e\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}b\allowbreak{}o\allowbreak{}u\allowbreak{}n\allowbreak{}d\allowbreak{}s\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+The physical parameters are g\^{}2=50000, kappa=100000/a, and t=1/kappa.
+
+The positivity on 1\textless=tau\textless=3 has a continuous proof. In
+the first bracket of H18, let a=1/882, b=-4441/3611790,
+{c\allowbreak{}=\allowbreak{}7\allowbreak{}5\allowbreak{}1\allowbreak{}7\allowbreak{}3\allowbreak{}7\allowbreak{}7\allowbreak{}9\allowbreak{}/\allowbreak{}6\allowbreak{}7\allowbreak{}6\allowbreak{}1\allowbreak{}2\allowbreak{}7\allowbreak{}0\allowbreak{}8\allowbreak{}8\allowbreak{}0\allowbreak{}0\allowbreak{}.\allowbreak{}}
+Its quadratic minimum is c-b\^{}2/(4a). Exact rational comparison gives
+
+\begin{verbatim}
+c-b^2/(4a) > (121/108864)/4+(197/9988160)/16.              (A15)
+\end{verbatim}
+
+Since exp(-3/2)\textless1/4 and exp(-7/2)\textless1/16, the two negative
+exponentials in H18 are bounded by this quantity times exp(-3tau) for
+tau\textgreater=1. Its other terms are positive. Thus
+P(tau)\textgreater0 throughout tau\textgreater=1. In H19 the first
+bracket is at least 5/648 at tau=1 and increases, and both other terms
+are positive. Hence
+
+\begin{verbatim}
+h4(tau) >= (5/648)exp(-3tau),    tau>=1.                 (A16)
+\end{verbatim}
+
+For tau in {[}1,3{]}, the ratio of the complete error (A13) to xi\^{}4
+times (A16) is at most
+
+\begin{verbatim}
+648 M^6 xi^2 exp(303/50)/[1-(Mxi)^2] < 0.531 < 1         (A17)
+\end{verbatim}
+
+at the actual M and xi above. Consequently the full interacting-vacuum
+correlation, not just its leading coefficient, is strictly positive on
+{1\allowbreak{}/\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}t\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}3\allowbreak{}/\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{}.\allowbreak{}}
+Its original integrated value has all physical factors retained by H4.
+
+\subsection{A5. Full inverse-power metrics, including the original state
+norm}\label{a5.-full-inverse-power-metrics-including-the-original-state-norm}
+
+Let R:C\^{}M-\textgreater H\_phys,0 have the original centered columns
+r\_p. For integer k\textgreater=1,
+
+\begin{verbatim}
+G^(k)=kappa^k R* A^(-k) R
+     =int_0^infinity tau^(k-1) Chat(tau)d tau/(k-1)!.     (A18)
+\end{verbatim}
+
+The actual finite-regulator spectral theorem and the positive centered
+gap established in A2 justify the integral. Equation (A12) gives a
+uniform integrable majorant for the analytic Taylor coefficients and
+their remainder. For a partial fraction a/(z+c)\^{}n, its exact
+contribution is
+
+\begin{verbatim}
+a (k+n-2)!/[(k-1)!(n-1)! c^(k+n-1)].                    (A19)
+\end{verbatim}
+
+Every original pole and multiplicity is used. Integrating (A13) proves
+the entrywise bound
+
+\begin{verbatim}
+|G^(k)_pq - sum_(j=0)^2 xi^(2j) G^(k)_(2j),pq|
+  <=5(50/49)^k (M|xi|)^6/[1-(M|xi|)^2].                 (A20)
+\end{verbatim}
+
+The physical energy response is G\^{}(1). For the actual derivative
+primitive
+
+\begin{verbatim}
+Phi=kappa A^(-1)R,
+A Phi=kappa R,    Phi*Phi=G^(2),
+Phi*A Phi=kappa G^(1),                                 (A21)
+\end{verbatim}
+
+the original state and energy metrics remain separately specified.
+
+All coefficients for k=1,2 on the original 240-face L=2 box are
+calculated entry by entry in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}n\allowbreak{}a\allowbreak{}t\allowbreak{}i\allowbreak{}v\allowbreak{}e\allowbreak{}\_\allowbreak{}i\allowbreak{}n\allowbreak{}v\allowbreak{}e\allowbreak{}r\allowbreak{}s\allowbreak{}e\allowbreak{}\_\allowbreak{}m\allowbreak{}e\allowbreak{}t\allowbreak{}r\allowbreak{}i\allowbreak{}c\allowbreak{}s\allowbreak{}\_\allowbreak{}L\allowbreak{}2\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+Let L\_(k,j) be the maximum absolute row sum of the exact degree-2j
+coefficient matrix. A real symmetric M by M error whose entries have
+magnitude at most e has operator norm at most M e: apply the row and
+column bounds and Cauchy-\/-Schwarz. Therefore (A20), with the complete
+off-diagonal rows, gives
+
+\begin{verbatim}
+[3^(-k)-w_k]I <= G^(k) <= [3^(-k)+w_k]I,
+w_k=xi^2 L_(k,1)+xi^4 L_(k,2)
+      +5M(50/49)^k(Mxi)^6/[1-(Mxi)^2].                  (A22)
+\end{verbatim}
+
+For 0\textless xi\textless=1/1600, all the scalar terms on the right
+increase with xi, so its endpoint evaluation bounds the whole interval.
+Exact rational evaluation gives
+
+\begin{verbatim}
+(3/10)I_240 < G^(1) < (11/30)I_240,
+(9/100)I_240 < G^(2) < (13/100)I_240.                    (A23)
+\end{verbatim}
+
+This is the original L=2 box, every a\textgreater0, and every
+g\^{}2\textgreater=20. The identities use the original coefficient
+pairing on C\^{}240; the actual state Gram is the calculated G\^{}(2),
+not the identity. The complete original energy form on these primitive
+columns is kappa G\^{}(1). The tighter rational endpoints and each
+original row-sum certificate are retained in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}h\allowbreak{}e\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}b\allowbreak{}o\allowbreak{}u\allowbreak{}n\allowbreak{}d\allowbreak{}s\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+
+\subsection{A6. Scope and comparison with the preceding
+analysis}\label{a6.-scope-and-comparison-with-the-preceding-analysis}
+
+The finite-volume Cauchy circle in (A13) has radius 1/M. Equation (A23)
+has been evaluated on the original L=2 family, with all 240 columns.
+Every dependence on M, a, g and time is displayed. These statements
+establish neither a nontrivial four-dimensional continuum field nor a
+uniform-in-volume positive mass bound. They do not independently
+recertify the earlier
+{u\allowbreak{}n\allowbreak{}i\allowbreak{}f\allowbreak{}o\allowbreak{}r\allowbreak{}m\allowbreak{}-\allowbreak{}s\allowbreak{}o\allowbreak{}u\allowbreak{}r\allowbreak{}c\allowbreak{}e\allowbreak{}/\allowbreak{}g\allowbreak{}a\allowbreak{}p\allowbreak{}}
+argument.
+
+The method uses classical bounded perturbation, block resolvents, the
+scalar argument principle and the original spectral theorem. A relevant
+primary Feshbach-\/-Schur antecedent is Dusson-\/-Sigal-\/-Stamm,
+arXiv:2105.02058. The present proof gives all blocks, graph inverses and
+finite constants on the actual Hamiltonian instead of supplying a
+desired spectral gap as an input. The new Split-Zero heat transfer to
+the resulting actual Grams is in
+{R\allowbreak{}H\allowbreak{}\_\allowbreak{}H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}\_\allowbreak{}T\allowbreak{}R\allowbreak{}A\allowbreak{}N\allowbreak{}S\allowbreak{}F\allowbreak{}E\allowbreak{}R\allowbreak{}.\allowbreak{}m\allowbreak{}d\allowbreak{}.\allowbreak{}}
+
+\subsection{A7. The original forcing Gram for the same observation
+family}\label{a7.-the-original-forcing-gram-for-the-same-observation-family}
+
+The time-zero matrix is the original forcing Gram G\^{}(0)=R*R=Chat(0).
+It is computed from exactly the same complete pole coefficients by
+
+\begin{verbatim}
+G^(0)_(2j),pq=sum_(c>0) a_(c,1),                        (A24)
+\end{verbatim}
+
+because higher pole orders vanish at tau=0. Equation (A13) at zero
+supplies its complete entry error
+{5\allowbreak{}(\allowbreak{}M\allowbreak{}x\allowbreak{}i\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}6\allowbreak{}/\allowbreak{}[\allowbreak{}1\allowbreak{}-\allowbreak{}(\allowbreak{}M\allowbreak{}x\allowbreak{}i\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}]\allowbreak{}.\allowbreak{}}
+The identical full row-sum argument on the actual L=2 box and
+0\textless xi\textless=1/1600 proves
+
+\begin{verbatim}
+(49/50)I_240 < G^(0) < (51/50)I_240.                    (A25)
+\end{verbatim}
+
+No division by a chosen source norm is involved. The tighter rational
+interval is retained with G\^{}(1),G\^{}(2) in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}h\allowbreak{}e\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}b\allowbreak{}o\allowbreak{}u\allowbreak{}n\allowbreak{}d\allowbreak{}s\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+Thus all three original Grams R*R, Phi*A Phi/kappa and Phi*Phi are
+quantitatively controlled together. Their use in the actual
+inverse-power observation is proved in T7 of the source-transfer note.
+
+\subsection{A8. The full original kinetic Gram, retaining its local zero
+entries}\label{a8.-the-full-original-kinetic-gram-retaining-its-local-zero-entries}
+
+The forcing columns have original energy Gram R*A R=kappa Kobs, where
+
+\begin{verbatim}
+Kobs_pq=<Gamma(Wp,Wq)>_rho=-Chat'_pq(0).                 (A26)
+\end{verbatim}
+
+The ground-state form identity proves the first equality;
+differentiation of the original semigroup proves the second. In the
+coefficient file each simple pole contributes its energy times its
+coefficient and each double pole contributes minus its coefficient.
+Higher poles contribute zero. This gives all entries through degree four
+in
+{n\allowbreak{}a\allowbreak{}t\allowbreak{}i\allowbreak{}v\allowbreak{}e\allowbreak{}\_\allowbreak{}i\allowbreak{}n\allowbreak{}v\allowbreak{}e\allowbreak{}r\allowbreak{}s\allowbreak{}e\allowbreak{}\_\allowbreak{}m\allowbreak{}e\allowbreak{}t\allowbreak{}r\allowbreak{}i\allowbreak{}c\allowbreak{}s\allowbreak{}\_\allowbreak{}L\allowbreak{}2\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+
+Every off-diagonal entry outside the original face adjacency is zero
+exactly: Gamma differentiates a common original edge. On a diagonal,
+Gamma(Wp,Wp)=4-Wp\^{}2 has absolute value at most4. On adjacent distinct
+faces, their single shared-edge derivative vectors each have Euclidean
+length at most one; writing the original SU(2) product as q0I-iq.sigma
+gives the length sqrt(1-q0\^{}2). Their scalar product has absolute
+value at most1. Each face has at most12 original neighbours. All
+assertions concern the unchanged original link derivatives, with their
+generator factor1/2 retained.
+
+The complex ground projection from (A4)-\/-(A5) therefore bounds the
+diagonal expectation by4*113/112 and each adjacent expectation
+by113/112. Original center symmetry makes these analytic expectations
+even. Cauchy\textquotesingle s formula on \textbar zeta\textbar=1/M
+bounds the entire row of the omitted tail by
+
+\begin{verbatim}
+(113/112)*16*(M|xi|)^6/[1-(M|xi|)^2].                   (A27)
+\end{verbatim}
+
+This uses the exact local support, rather than a dense-M multiplier on
+this particular Gram. The exact degree-two and degree-four row sums and
+(A27) give, on the original L=2 box with g\^{}2\textgreater=20,
+
+\begin{verbatim}
+(29/10)I_240 < Kobs < (31/10)I_240.                     (A28)
+\end{verbatim}
+
+The sharper rational endpoints and every nonzero coefficient are
+retained in the same records. This is the further original energy input
+used in T8 to bound the correction between the actual state-minimum and
+energy-minimum sections of the inverse-power family.
+
+\section{The Split-Zero heat comparison transferred to the original
+Yang--Mills
+Grams}\label{the-split-zero-heat-comparison-transferred-to-the-original-yangmills-grams}
+
+21 September 2026. This is a source-specific transfer, accompanied by a
+new calculation of actual Yang--Mills heat correlations. The inspected
+Riemann workbench revision is 128aa308dd2a70ba6e073816a957d1ee6414ba2c.
+The exact read ranges and source blobs are in
+{S\allowbreak{}O\allowbreak{}U\allowbreak{}R\allowbreak{}C\allowbreak{}E\allowbreak{}\_\allowbreak{}I\allowbreak{}N\allowbreak{}T\allowbreak{}A\allowbreak{}K\allowbreak{}E\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+Its arithmetic quantities remain attached to their own source; the
+Yang--Mills quantities below are computed from the original Hamiltonian
+and its physical vacuum.
+
+\subsection{T1. What was read and what is
+transferred}\label{t1.-what-was-read-and-what-is-transferred}
+
+The complete argument used from the Riemann workbench is HM6-\/-HM14 and
+HM19-\/-HM24 of
+{H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}\_\allowbreak{}T\allowbreak{}O\allowbreak{}\_\allowbreak{}O\allowbreak{}R\allowbreak{}I\allowbreak{}G\allowbreak{}I\allowbreak{}N\allowbreak{}A\allowbreak{}L\allowbreak{}\_\allowbreak{}Q\allowbreak{}U\allowbreak{}O\allowbreak{}T\allowbreak{}I\allowbreak{}E\allowbreak{}N\allowbreak{}T\allowbreak{}\_\allowbreak{}M\allowbreak{}E\allowbreak{}T\allowbreak{}R\allowbreak{}I\allowbreak{}C\allowbreak{}S\allowbreak{}.\allowbreak{}t\allowbreak{}e\allowbreak{}x\allowbreak{}}
+(19 September). It constructs its original coefficient column map Rcal
+and a finite heat replacement Rcal\_J=Rcal-T\_s Pcal. The physical
+arithmetic source pairing is unchanged and T\_s* T\_s=s\^{}(-1)I. From
+the complete original Gram, including both relation cross blocks, HM13
+proves the relative column error. Triangle inequalities give
+(1-delta)\^{}2 G \textless= G\_J \textless=(1+delta)\^{}2 G. Completing
+the square on the same coefficient fibers carries these bounds through
+their actual restrictions and quotient minima. HM22-\/-HM24 retain every
+determinant rank and give the finite heat depth for a prescribed return
+error.
+
+HG6-\/-HG10 of
+{O\allowbreak{}R\allowbreak{}I\allowbreak{}G\allowbreak{}I\allowbreak{}N\allowbreak{}A\allowbreak{}L\allowbreak{}\_\allowbreak{}H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}\_\allowbreak{}A\allowbreak{}N\allowbreak{}D\allowbreak{}\_\allowbreak{}S\allowbreak{}O\allowbreak{}U\allowbreak{}R\allowbreak{}C\allowbreak{}E\allowbreak{}\_\allowbreak{}E\allowbreak{}N\allowbreak{}D\allowbreak{}P\allowbreak{}O\allowbreak{}I\allowbreak{}N\allowbreak{}T\allowbreak{}.\allowbreak{}t\allowbreak{}e\allowbreak{}x\allowbreak{}}
+were also read. They expand actual
+{o\allowbreak{}b\allowbreak{}s\allowbreak{}e\allowbreak{}r\allowbreak{}v\allowbreak{}a\allowbreak{}t\allowbreak{}i\allowbreak{}o\allowbreak{}n\allowbreak{}/\allowbreak{}k\allowbreak{}e\allowbreak{}r\allowbreak{}n\allowbreak{}e\allowbreak{}l\allowbreak{}}
+currents with both mixed products and give their error under a relative
+change of the same original Gram. The fixed-divisor subexponential
+estimate HG1-\/-HG5 is retained as an inspected arithmetic result; no
+value of its divisor-dependent constants is assigned to a Yang--Mills
+bound.
+
+The common column-map calculation is instantiated below, on actual
+Yang--Mills spaces. Its input error is supplied by the original physical
+semigroup rather than by the arithmetic dilation. A source-specific map
+between arithmetic zeta packets and physical gauge fields is not
+asserted. The explicit shared interface and each new map are the
+displayed linear maps below.
+
+\subsection{T2. The original physical heat columns and their entire
+forcing
+defect}\label{t2.-the-original-physical-heat-columns-and-their-entire-forcing-defect}
+
+Fix the original L=2 open box, M=240, a\textgreater0, and
+g\^{}2\textgreater=20. Let A=H-E0 on the centered physical Hilbert space
+H0, with its unchanged inner product. The source columns R have entries
+{r\allowbreak{}p\allowbreak{}=\allowbreak{}(\allowbreak{}W\allowbreak{}p\allowbreak{}-\allowbreak{}\textless{}\allowbreak{}W\allowbreak{}p\allowbreak{}\textgreater{}\allowbreak{}\_\allowbreak{}r\allowbreak{}h\allowbreak{}o\allowbreak{})\allowbreak{}p\allowbreak{}s\allowbreak{}i\allowbreak{}.\allowbreak{}}
+From A23,
+
+\begin{verbatim}
+Phi=kappa A^(-1)R,
+G2=Phi*Phi,   E=Phi*A Phi=kappa G1,
+(9/100)I<G2<(13/100)I,
+(3kappa/10)I<E<(11kappa/30)I.                           (T1)
+\end{verbatim}
+
+All original coefficient axes p are retained. In particular Phi is
+injective. The finite-regulator inverse and the original source identity
+A Phi=kappa R are established in the analytic proof, not assumed as an
+observation metric.
+
+The physical gap needed here has an independent short derivation. In the
+original Haar space, minmax applied to B\_xi=K-xi S gives its second
+physical eigenvalue \textgreater=3-2Mxi. Its ground eigenvalue is
+\textless=0 by the original constant trial vector. Therefore, for the
+actual centered A,
+
+\begin{verbatim}
+A >=kappa(3-2Mxi)I >=(27kappa/10)I                       (T2)
+\end{verbatim}
+
+because xi\textless=1/1600. This is a bound for this original box and
+coupling domain. Every volume factor in its derivation is explicit.
+
+For T\textgreater0 define the actual map and its convergent inverse on
+H0
+
+\begin{verbatim}
+C_T=I-exp(-TA),
+C_T^(-1)=sum_(j>=0)exp(-jTA),
+||C_T^(-1)|| <=[1-exp(-27kappa T/10)]^(-1).              (T3)
+\end{verbatim}
+
+They commute with A on Dom(A); convergence in the graph norm follows by
+commuting A through each term and applying the same geometric bound. Put
+
+\begin{verbatim}
+Phi_T=C_T Phi=kappa int_0^T exp(-tA)R dt,
+E_T=Phi_T*A Phi_T,  G2_T=Phi_T*Phi_T.                   (T4)
+\end{verbatim}
+
+Both state and energy errors retain their complete mixed products.
+Specifically,
+
+\begin{verbatim}
+E_T-E =-Phi*A exp(-TA)Phi
+        -Phi*exp(-TA)A Phi
+        +Phi*exp(-TA)A exp(-TA)Phi,                     (T5)
+\end{verbatim}
+
+with the analogous identity omitting A for G2. The two cross products
+are equal here because the original A and its heat semigroup commute;
+their origin in the expansion remains explicit. The source equation is
+
+\begin{verbatim}
+A Phi_T=kappa R-kappa exp(-TA)R.                        (T6)
+\end{verbatim}
+
+Thus the original forcing defect and its primitive are exactly -kappa
+exp(-TA)R and -exp(-TA)Phi, respectively.
+
+For epsilon=exp(-27kappa T/10), spectral calculus applied on the
+complete centered physical space gives
+
+\begin{verbatim}
+(1-epsilon)^2 G2 <= G2_T <= G2,
+(1-epsilon)^2 E <= E_T <= E.                            (T7)
+\end{verbatim}
+
+For the energy inequality one applies C\_T to A\^{}(1/2)Phi; for the
+state inequality one applies it to Phi. These are the actual column-map
+instances of HM11, with a sharper one-sided upper bound supplied by the
+semigroup. The norm of the omitted column is bounded relatively in its
+own original state/energy pairing. All constants are independent of a
+after the exact physical time T is inserted; T itself retains its factor
+1/kappa.
+
+\subsection{T3. Original support quotients and the corrected
+minimum}\label{t3.-original-support-quotients-and-the-corrected-minimum}
+
+For an original face subset F, put V\_F=Phi(C\^{}F), U\_F=A V\_F=kappa
+R(C\^{}F). The complex is
+
+\begin{verbatim}
+V_F --A--> H0 --0--> 0.                                 (T8)
+\end{verbatim}
+
+Its support transition F subset G is the actual inclusion in degree zero
+and identity on H0. The differential square commutes by the same
+original A. For J=G\textbackslash F, the transported cohomology kernel
+is exactly
+
+\begin{verbatim}
+V_G/V_F -> ker[H0/U_F -> H0/U_G],
+[h] -> [Ah].                                           (T9)
+\end{verbatim}
+
+Surjectivity follows by writing a killed class as Ah with h in V\_G.
+Changing h by V\_F changes Ah by U\_F, and conversely the injectivity of
+A on H0 implies that a change by U\_F has exactly a change by V\_F. The
+inverse is {[}Ah{]} -\textgreater{} {[}h{]}. The heat complexes use
+V\_F\^{}T=C\_TV\_F with the same target H0 and differential A. The
+actual pair (C\_T,C\_T) intertwines their differentials and is
+invertible by (T3). It commutes with every support inclusion. Applying
+the Split-Zero support reconstruction therefore retains F and its
+receiving zero, together with the original killed representative and its
+primitive.
+
+The energy-minimum representative of {[}Phi\_J y{]} in V\_G/V\_F has the
+old-support coordinate
+
+\begin{verbatim}
+x_F=-E_FF^(-1)E_FJ y.
+\end{verbatim}
+
+All blocks are taken in the fixed original face coordinates. Its exact
+quotient Gram is
+
+\begin{verbatim}
+Q_E(F,G)=E_JJ-E_JF E_FF^(-1)E_FJ.                       (T10)
+\end{verbatim}
+
+Completing the square in x\_F proves this formula and both inverse
+coordinate maps to the quotient. The removed primitive Phi\_F x\_F
+remains. The state minimum has the separately calculated formula with
+G2; it is not substituted for the energy minimum.
+
+Equation (T7) holds at every vector (x\_F,y) in the same original
+coefficient fiber. Taking the infimum in x\_F on both sides proves
+
+\begin{verbatim}
+(1-epsilon)^2 Q_E(F,G)<=Q_(E_T)(F,G)<=Q_E(F,G),           (T11)
+\end{verbatim}
+
+and the state counterpart. The same proof applies successively to every
+finite chain of fixed restrictions and quotient maps, retaining the same
+two bounds, not multiplying an error factor at each stage. This is the
+actual HM19-\/-HM21 minimum-fiber argument in the physical metric. A
+rank-zero quotient retains its unique zero vector and determinant one.
+
+To retain the surrounding physical space, put P\_Phi=Phi G2\^{}(-1)Phi*.
+Its multiplication identities give
+{P\allowbreak{}\_\allowbreak{}P\allowbreak{}h\allowbreak{}i\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}=\allowbreak{}P\allowbreak{}\_\allowbreak{}P\allowbreak{}h\allowbreak{}i\allowbreak{}=\allowbreak{}P\allowbreak{}\_\allowbreak{}P\allowbreak{}h\allowbreak{}i\allowbreak{}*\allowbreak{}.\allowbreak{}}
+For any original form-domain h perpendicular to im(Phi), the full energy
+is
+
+\begin{verbatim}
+q_A(Phi c+h)=kappa c*G1 c
+            +2kappa Re<Rc,h>+q_A(h).                  (T12)
+\end{verbatim}
+
+This is the complete original coupling to the remaining physical
+functions. No reducing-subspace property of the finite observation
+family is used.
+
+\subsection{T4. A finite heat horizon for every four-return
+determinant}\label{t4.-a-finite-heat-horizon-for-every-four-return-determinant}
+
+For a rank-r positive form G and its same-coordinate heat comparison
+satisfying (T7), its relative eigenvalues belong to
+{[}(1-epsilon)\^{}2,1{]}. The determinant ratio is invariant under the
+displayed congruence with G\^{}(-1/2), including its inverse G\^{}(1/2).
+Hence
+
+\begin{verbatim}
+|log det G_T-log det G| <=2r[-log(1-epsilon)].           (T13)
+\end{verbatim}
+
+The difference uses the same original frame and, for energy Grams, the
+same kappa\^{}r factor, which cancels exactly in the ratio. For any four
+prescribed
+{r\allowbreak{}e\allowbreak{}s\allowbreak{}t\allowbreak{}r\allowbreak{}i\allowbreak{}c\allowbreak{}t\allowbreak{}i\allowbreak{}o\allowbreak{}n\allowbreak{}/\allowbreak{}q\allowbreak{}u\allowbreak{}o\allowbreak{}t\allowbreak{}i\allowbreak{}e\allowbreak{}n\allowbreak{}t\allowbreak{}}
+returns with coefficients +1,+1,-1,-1 and ranks r\_j\textless=240,
+
+\begin{verbatim}
+|L_T-L| <=2 sum_j r_j [-log(1-epsilon)]
+          <=1920 epsilon/(1-epsilon).                 (T14)
+\end{verbatim}
+
+The final inequality follows by integrating 1/(1-x) from zero to
+epsilon. Take the actual physical horizon
+
+\begin{verbatim}
+T=10/kappa=5a/g^2.                                     (T15)
+\end{verbatim}
+
+Then epsilon=exp(-27). The exact rational exponential enclosure gives
+
+\begin{verbatim}
+epsilon<19/10^13,
+1920 epsilon/(1-epsilon)<4/10^9.                        (T16)
+\end{verbatim}
+
+The calculated inner upper bound is approximately
+3.608695327762*10\^{}(-9). The complete rational fraction is in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}h\allowbreak{}e\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}b\allowbreak{}o\allowbreak{}u\allowbreak{}n\allowbreak{}d\allowbreak{}s\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+This is one common finite heat horizon for all four original returns and
+all original support choices in this 240-column family. It requires no
+estimate of a newly selected arithmetic comparison constant or
+observation angle.
+
+\subsection{T5. Every signed observation current retains its mixed
+terms}\label{t5.-every-signed-observation-current-retains-its-mixed-terms}
+
+Fix a surjection Lambda from the original C\^{}240 onto its actual
+chosen observation image; for example its rows can read a fixed subset
+of original face coordinates. From the energy Gram E define
+
+\begin{verbatim}
+Q=(Lambda E^(-1)Lambda*)^(-1),
+Omega=Lambda*Q Lambda,
+L=E-Omega.                                             (T17)
+\end{verbatim}
+
+The minimum representative S=E\^{}(-1)Lambda*Q satisfies Lambda S=I and
+E S=Lambda*Q. Direct expansion proves that y*L y is the squared E-norm
+of (1-S Lambda)y. Thus both the kernel residual and boundary Gram are
+the original canonical ones, with every rectangular mixed entry
+preserved. Define the heat versions using E\_T and the identical Lambda.
+
+Put eta=2epsilon-epsilon\^{}2. Equation (T7) gives
+(1-eta)E\textless=E\_T\textless=E. Minimize on the identical Lambda
+fibers to get the same bounds for Q. For fixed original columns a1,a2,v
+and omega\textgreater0 let
+
+\begin{verbatim}
+K_i=a_i*L v, B_i=a_i*Omega v,
+d_i=a_i*E a_i, E_v=v*E v,
+Phi_K=2Re(conj(K1)K2)/omega,
+Phi_B=2Re(conj(B1)B2)/omega,
+Phi_cross=2Re(conj(K1)B2+conj(B1)K2)/omega.              (T18)
+\end{verbatim}
+
+The same-fiber bounds and Cauchy-\/-Schwarz give \textbar Delta
+K\_i\textbar\textless=2eta sqrt(d\_i E\_v), \textbar Delta
+B\_i\textbar\textless=eta sqrt(d\_i E\_v), while each original
+\textbar K\_i\textbar{} and \textbar B\_i\textbar{} is at most sqrt(d\_i
+E\_v). Expanding every linear and quadratic product in (T18) proves the
+HG8 receiving inequalities
+
+\begin{verbatim}
+|Delta Phi_K|<=2sqrt(d1 d2)E_v(4eta+4eta^2)/omega,
+|Delta Phi_B|<=2sqrt(d1 d2)E_v(2eta+eta^2)/omega,
+|Delta Phi_cross|<=2sqrt(d1 d2)E_v(6eta+4eta^2)/omega.    (T19)
+\end{verbatim}
+
+These estimates contain the original phases and both cross products. The
+actual source/target numerical values in this application are the
+calculated Yang--Mills Grams, and their relative error is (T16). No sign
+of a current is inferred from its norm alone.
+
+\subsection{T6. Source and execution
+scope}\label{t6.-source-and-execution-scope}
+
+This contribution reads the original HM/HG heat and metric proofs and
+proves the displayed Yang--Mills instances in full. The arithmetic
+dilation T\_s, its Mellin variables, zeta-zero jets, original source
+masses and period-dependent constants remain in the cited RH
+construction. Here exp(-TA) is the physical ground-relative semigroup,
+with T (T15) in the original time units.
+
+The heat coefficients, original box matrices, graph constants and
+rational bounds are independently exercised by the executable tests
+described in VERIFICATION.md. Their complete analytic proofs are
+supplied as written arguments for review. The tests do not give a Lean
+proof, independently audit every older source estimate, or establish the
+four-dimensional continuum gap. The standing continuum path and the
+growing-volume problem still require bounds beyond the explicitly finite
+M-dependent domain proved here.
+
+\subsection{T7. The latest inverse-power observation has a concrete
+receiving
+instance}\label{t7.-the-latest-inverse-power-observation-has-a-concrete-receiving-instance}
+
+After the heat-source intake, the complete 21 September source
+{I\allowbreak{}N\allowbreak{}V\allowbreak{}E\allowbreak{}R\allowbreak{}S\allowbreak{}E\allowbreak{}\_\allowbreak{}P\allowbreak{}O\allowbreak{}W\allowbreak{}E\allowbreak{}R\allowbreak{}\_\allowbreak{}C\allowbreak{}O\allowbreak{}N\allowbreak{}D\allowbreak{}U\allowbreak{}C\allowbreak{}T\allowbreak{}O\allowbreak{}R\allowbreak{}\_\allowbreak{}O\allowbreak{}B\allowbreak{}S\allowbreak{}E\allowbreak{}R\allowbreak{}V\allowbreak{}A\allowbreak{}B\allowbreak{}I\allowbreak{}L\allowbreak{}I\allowbreak{}T\allowbreak{}Y\allowbreak{}.\allowbreak{}t\allowbreak{}e\allowbreak{}x\allowbreak{}}
+was read at the same pinned commit. Its IK9-\/-IK10 construct a literal
+left inverse of selected original conductor rows on their inverse-power
+space. IK12 returns that inverse through the original source and
+observation Grams, retaining their eigenvalue factors. IK13 explicitly
+permits its lower bound to tend to zero with its cutoff. Those
+coefficients, root differences and guards remain in that construction.
+
+In the present Yang--Mills family the actual inverse-power source is
+
+\begin{verbatim}
+Phi=kappa A^(-1)R:C^240->H0,
+O=R*:H0->C^240,
+O Phi=G^(1).                                           (T20)
+\end{verbatim}
+
+The independent computed bound (A23) makes this original response matrix
+invertible, so its exact coefficient left inverse is
+
+\begin{verbatim}
+W=(G^(1))^(-1) R*,
+W Phi=I_240,   ||(G^(1))^(-1)||<=10/3.                  (T21)
+\end{verbatim}
+
+This is a proved inverse on these specific columns, not an assumed
+observation angle. The original quotient metric for the observation O is
+(G\^{}(0))\^{}(-1): minimizing the physical Hilbert norm over R*h=z has
+the representative R(G\^{}(0))\^{}(-1)z. Its full residual is
+perpendicular to im(R), as multiplication by R* verifies. Thus
+{P\allowbreak{}\_\allowbreak{}R\allowbreak{}=\allowbreak{}R\allowbreak{}(\allowbreak{}G\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}0\allowbreak{})\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}R\allowbreak{}*\allowbreak{}}
+is the actual orthogonal projection, and every nonzero coefficient
+vector c satisfies
+
+\begin{verbatim}
+||P_R Phi c||^2=c*G^(1)(G^(0))^(-1)G^(1)c,
+||Phi c||^2=c*G^(2)c.                                  (T22)
+\end{verbatim}
+
+Returning the three computed original metrics (A23),(A25) gives
+
+\begin{verbatim}
+G^(1)(G^(0))^(-1)G^(1) >= (3/34)I,
+||P_R Phi c||^2 / ||Phi c||^2 > 150/221.                 (T23)
+\end{verbatim}
+
+Indeed the first coefficient is
+{(\allowbreak{}3\allowbreak{}/\allowbreak{}1\allowbreak{}0\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}/\allowbreak{}(\allowbreak{}5\allowbreak{}1\allowbreak{}/\allowbreak{}5\allowbreak{}0\allowbreak{})\allowbreak{}=\allowbreak{}3\allowbreak{}/\allowbreak{}3\allowbreak{}4\allowbreak{},\allowbreak{}}
+and dividing by the upper state coefficient 13/100 gives 150/221. Every
+source metric and its inverse has been retained. This is the IK12
+{l\allowbreak{}e\allowbreak{}f\allowbreak{}t\allowbreak{}-\allowbreak{}i\allowbreak{}n\allowbreak{}v\allowbreak{}e\allowbreak{}r\allowbreak{}s\allowbreak{}e\allowbreak{}/\allowbreak{}m\allowbreak{}i\allowbreak{}n\allowbreak{}i\allowbreak{}m\allowbreak{}u\allowbreak{}m\allowbreak{}}
+argument applied to the original physical inverse-power family, with the
+needed Gram bounds actually calculated here. It detects all 240 columns
+simultaneously at L=2, every a\textgreater0 and g\^{}2\textgreater=20.
+It does not supply an infinite-volume fraction or an independence
+assertion for an uncomputed concatenation of higher powers.
+
+The portion outside this observation is the exact vector (I-P\_R)Phi c.
+Its squared norm is
+
+\begin{verbatim}
+c*[G^(2)-G^(1)(G^(0))^(-1)G^(1)]c,                       (T24)
+\end{verbatim}
+
+and is positive semidefinite by the original orthogonal decomposition.
+No component is removed from the energy formula (T12). The maps
+(T20)-\/-(T24) state the entire receiving construction; they make no
+identification of arithmetic zeta zeros with physical spectral points.
+
+\subsection{T8. The actual residual between the state and energy
+sections is
+bounded}\label{t8.-the-actual-residual-between-the-state-and-energy-sections-is-bounded}
+
+Retain the original orthogonal state projection P\_R from T7 and define
+
+\begin{verbatim}
+h=(I-P_R)Phi,
+B0=(G^(0))^(-1)G^(1),   P_R Phi=R B0.                  (T25)
+\end{verbatim}
+
+All columns of h satisfy R*h=0. Since A Phi=kappa R, the mixed energy
+q\_A(Phi c,h d) vanishes for every coefficient pair c,d, by the original
+Hilbert adjoint identity. Thus Phi is the actual minimum-energy section
+of the affine fibers R*f=G\^{}(1)c. The state-minimum section of that
+same fiber is R B0 c. They have the exact comparison
+
+\begin{verbatim}
+h*Ah=kappa[G^(1)(G^(0))^(-1)Kobs(G^(0))^(-1)G^(1)-G^(1)],
+(P_R Phi)*A(P_R Phi)=Phi*A Phi+h*Ah.                    (T26)
+\end{verbatim}
+
+To verify the first identity, expand the whole expression
+(Phi-RB0)*A(Phi-RB0). Both cross products are kappa G\^{}(1), while the
+last term is kappa B0* Kobs B0; their signed sum is (T26). This also
+proves nonnegativity of the right side. The state residual remains the
+matrix (T24).
+
+The three raw bounds (A23),(A25),(A28) give the strict original energy
+bound
+
+\begin{verbatim}
+0<=h*Ah < (1322/7203) Phi*A Phi.                        (T27)
+\end{verbatim}
+
+Indeed congruence by (G\^{}(1))\^{}(-1/2), with its explicitly inverse
+square root, puts the bracket in (T26) below
+
+\begin{verbatim}
+[(31/10)(50/49)^2(11/30)-1]I = (1322/7203)I.
+\end{verbatim}
+
+Returning that congruence proves (T27) in the original coefficient
+coordinates. Thus the state-section correction has at most this fraction
+(less than0.184) of the original primitive\textquotesingle s energy, and
+(T23) retains more than150/221 of its state norm in the actual observed
+force span. The difference itself remains an element of ker(R*) with its
+complete state and energy Grams, rather than being dropped. Both
+conclusions hold simultaneously for all240 original columns on the
+specified finite box and coupling domain.
+
+For a prescribed observation z, the two exact sections are
+Phi(G\^{}(1))\^{}(-1)z and R(G\^{}(0))\^{}(-1)z, and their difference is
+h(G\^{}(1))\^{}(-1)z. Their source-to-observation compositions are both
+the identity. This supplies the explicit section-correction morphism and
+its quantitative energy return in the original metric. It is the same
+minimum-section mechanism read in the Split-Zero source, now with all
+physical Grams evaluated and the entire correction bounded on its stated
+domain.
+
+\section{Original Yang--Mills heat: a box-independent analytic radius
+and row-sum
+remainder}\label{original-yangmills-heat-a-box-independent-analytic-radius-and-row-sum-remainder}
+
+21 September 2026. This continuation addresses the two quantities left
+by the heat edition: its radius 1/M and the coupling of its observed
+states to the full physical complement. All operator coefficients, Haar
+masses, original link and plaquette coordinates, and state and energy
+pairings are retained. This note proves the local-source-to-heat
+argument used here in full. It does not certify every earlier
+stronger-coupling assertion. Its coefficient tables are the inherited,
+separately replayed heat tables; new constant and matrix calculations
+have their own records. No continuum mass-gap conclusion,
+historical-priority determination, or external analytical review is
+asserted.
+
+\subsection{U1. Original operator, physical time, and coefficient
+maps}\label{u1.-original-operator-physical-time-and-coefficient-maps}
+
+For each L\textgreater=2 take vertices \{-L,...,L\}\^{}3, all contained
+positive nearest-neighbor links e=(n,i), and all elementary faces
+p=(n;i,j), i\textless j. Retain
+
+\begin{verbatim}
+Wp=tr(U_i(n) U_j(n+e_i) U_i(n+e_j)^(-1) U_j(n)^(-1)),
+T_a=-i sigma_a/2,  X_e,a f=d/dt f(...,exp(t T_a)U_e,...)|0,
+K=-sum_(e,a) X_e,a^2,
+H(x)=kappa K+kappa sum_p x_p(2-Wp),
+kappa=2g^2/a,   x_p=xi=1/(4g^4),   a,g>0.                 (U1)
+\end{verbatim}
+
+The physical Hilbert space is the invariant subspace of original product
+Haar probability L2(dU), with every vertex including boundary vertices
+averaged. H has physical H2 domain and H1 form domain, since the
+original potential is smooth bounded on this finite compact group. Its
+smooth positive unit ground vector psi and simple bottom energy E0
+follow from the modulus form inequality, elliptic regularity, the
+maximum principle, and the identity
+
+\begin{verbatim}
+q_(H-E0)(psi f)=kappa int psi^2 sum_i |X_i f|^2.         (U2)
+\end{verbatim}
+
+The multiplication map f -\textgreater{} psi f and inverse division by
+psi are unitary between L2(rho dU) and original L2(dU), rho=psi\^{}2.
+The time coordinates are tau=kappa t and t=tau/kappa. No field variable
+is rescaled.
+
+For a product-spin label j=(j\_e), define pi\_j(U)=tensor\_e
+pi\_(j\_e)(U\_e),
+{d\allowbreak{}\_\allowbreak{}j\allowbreak{}=\allowbreak{}p\allowbreak{}r\allowbreak{}o\allowbreak{}d\allowbreak{}u\allowbreak{}c\allowbreak{}t\allowbreak{}\_\allowbreak{}e\allowbreak{}(\allowbreak{}2\allowbreak{}j\allowbreak{}\_\allowbreak{}e\allowbreak{}+\allowbreak{}1\allowbreak{})\allowbreak{},\allowbreak{}}
+c\_j=sum\_e j\_e(j\_e+1), and the actual coefficient
+
+\begin{verbatim}
+A_j=d_j int f(U) pi_j(U)^* dU,
+f(U)=sum_j Tr(A_j pi_j(U)).                             (U3)
+\end{verbatim}
+
+This Fourier map and its inverse follow from the original Haar
+matrix-coefficient orthogonality. The trace-coefficient norm is
+\textbar\textbar f\textbar\textbar\_X=sum\_j
+\textbar\textbar A\_j\textbar\textbar\_1. Let X0 be its zero-Haar
+physical part, and Y0 its dense domain
+{s\allowbreak{}u\allowbreak{}m\allowbreak{}\_\allowbreak{}(\allowbreak{}j\allowbreak{}!\allowbreak{}=\allowbreak{}0\allowbreak{})\allowbreak{}c\allowbreak{}\_\allowbreak{}j\allowbreak{}|\allowbreak{}|\allowbreak{}A\allowbreak{}\_\allowbreak{}j\allowbreak{}|\allowbreak{}|\allowbreak{}\_\allowbreak{}1\allowbreak{}\textless{}\allowbreak{}i\allowbreak{}n\allowbreak{}f\allowbreak{}i\allowbreak{}n\allowbreak{}i\allowbreak{}t\allowbreak{}y\allowbreak{}.\allowbreak{}}
+The actual K maps Y0 bijectively onto X0 by multiplying each coefficient
+by c\_j; its inverse divides it by that same c\_j. These are auxiliary
+convergence estimates on the original coefficients, not replacements for
+(U2).
+
+The compact-group Fourier algebra and its product norm are classical
+(Eymard, 1964). Here their required inequalities are proved directly. In
+a product of two coefficient functions, decompose pi\_j tensor pi\_k
+into its full irreducible and multiplicity spaces by a unitary
+intertwiner. Pinching to all its diagonal representation blocks and
+tracing each multiplicity space returns the exact output coefficients.
+Pinching is an average of unitary conjugations. For a partial trace,
+trace-norm duality gives \textbar Tr{[}(Z tensor
+I)C{]}\textbar\textless=\textbar\textbar C\textbar\textbar\_1 when
+\textbar\textbar Z\textbar\textbar\textless=1. Hence
+
+\begin{verbatim}
+||fh||_X<=||f||_X||h||_X,
+||A(X_e,a f_j)||_1<=j_e||A_j||_1.                      (U4)
+\end{verbatim}
+
+Every representation dimension and every multiplicity is included in
+this argument.
+
+\subsection{U2. The graph bound that enters the source
+estimate}\label{u2.-the-graph-bound-that-enters-the-source-estimate}
+
+A nonzero gauge-invariant coefficient has an invariant tensor on the
+original incident indices at every vertex. Grouping the factors gives an
+intertwiner from the dual spin-j\_e factor into the tensor product of
+the others. The maximum target weight is their summed spin, so
+
+\begin{verbatim}
+j_e<=sum_(f incident v, f!=e) j_f.                      (U5)
+\end{verbatim}
+
+Fix e=\{u,v\}, and let E1 be the other edges at its endpoints. Because
+the graph is simple and triangle-free, their outer endpoints are
+distinct. Put J1=sum\_(f in E1)j\_f. The two endpoint inequalities give
+J1\textgreater=2j\_e. Sum the outer-endpoint inequalities: every edge
+outside E1 and \{e\} is counted at most twice, so J1\textless=2J2, where
+J2 counts these outer edges once. Therefore sum\_f
+{j\allowbreak{}\_\allowbreak{}f\allowbreak{}\textgreater{}\allowbreak{}=\allowbreak{}j\allowbreak{}\_\allowbreak{}e\allowbreak{}+\allowbreak{}J\allowbreak{}1\allowbreak{}+\allowbreak{}J\allowbreak{}2\allowbreak{}\textgreater{}\allowbreak{}=\allowbreak{}4\allowbreak{}j\allowbreak{}\_\allowbreak{}e\allowbreak{}.\allowbreak{}}
+The original half-integer spectrum obeys j(j+1)\textgreater=(3/2)j, and
+consequently
+
+\begin{verbatim}
+c_j>=6j_e on every physical block;
+sum_e j_e<=(2/3)c_j on every product block.             (U6)
+\end{verbatim}
+
+In particular c\_j\textgreater=3 on each nonconstant physical block. The
+fundamental elementary plaquette has c\_j=3. This argument includes
+active bridges and boundary vertices; no cycle decomposition of every
+active edge is presumed.
+
+\subsection{U3. Local labelled source and its exact assembly
+kernel}\label{u3.-local-labelled-source-and-its-exact-assembly-kernel}
+
+For every nonempty finite edge label S retain a zero-Haar physical
+coefficient family A\_(S,j), with supp(j) contained in S; the label may
+exceed the active support. Put
+
+\begin{verbatim}
+||v||loc=sup_e sum_(S containing e,j!=0)c_j||A_(S,j)||_1. (U7)
+\end{verbatim}
+
+On a finite graph this is a complete space, and its total c-weighted
+coefficient sum is at most \textbar E\_L\textbar{}
+\textbar\textbar v\textbar\textbar loc. Assembly sends A\_(S,j) to
+sum\_(S containing supp(j)) A\_(S,j). Its kernel is exactly the family
+equations that all those sums vanish. For each S strictly containing
+supp(j), the relation with coefficient A at (S,j) and -A at (supp(j),j)
+has zero assembly. The actual coefficients at all enlarged S give a
+unique decomposition of every assembly-kernel element into these
+relations. Its inverse reads those same enlarged-label coefficients.
+This supplies the support-preserving quotient map and both inverse laws.
+
+Define, retaining the original union label,
+
+\begin{verbatim}
+B(v,h)_S=K^(-1) Q_H sum_(S1 union S2=S) Gamma(v_S1,h_S2),
+Gamma(f,h)=sum_(e,a)(X_e,a f)(X_e,a h),  Q_H=I-P_H.     (U8)
+\end{verbatim}
+
+Each Haar scalar removed by Q\_H is recorded separately. For an anchor
+in S1, (U4) and (U6) bound the output before K inversion by
+
+\begin{verbatim}
+3 sum_(S1 containing anchor,j) ||A_(S1,j)||_1
+    sum_e j_e sum_(S2 containing e,k) k_e||B_(S2,k)||_1
+  <=(1/3)||v||loc||h||loc.
+\end{verbatim}
+
+The anchor-in-S2 contribution gives the other 1/3. The original output
+Casimir cancels precisely against its nonzero inverse Casimir in (U8).
+Thus
+
+\begin{verbatim}
+||B(v,h)||loc<=(2/3)||v||loc||h||loc.                   (U9)
+\end{verbatim}
+
+\subsection{U4. Exact elementary coefficient and convergent complex
+source}\label{u4.-exact-elementary-coefficient-and-convergent-complex-source}
+
+For the original four-link word, the coefficient matrix on
+(C2)\^{}tensor4 has entries
+
+\begin{verbatim}
+A_(i1,i2,1-i2,1-i3 ; i0,i1,1-i3,1-i0) += (-1)^(i0+i2),
+i0,i1,i2,i3 in {0,1}.                                  (U10)
+\end{verbatim}
+
+The identity
+{(\allowbreak{}U\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{})\allowbreak{}\_\allowbreak{}(\allowbreak{}r\allowbreak{},\allowbreak{}c\allowbreak{})\allowbreak{}=\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}r\allowbreak{}+\allowbreak{}c\allowbreak{})\allowbreak{}}
+U\_(1-c,1-r) proves its trace formula. Its four nonzero 2-by-2 blocks,
+up to row/column order, are {[}{[}1,-1{]},{[}-1,1{]}{]}. Direct
+multiplication gives (A* A)\^{}2=4A* A and Tr(A* A)=16. Thus
+\textbar A\textbar=A* A/2 and \textbar\textbar Wp\textbar\textbar\_X=8.
+At most four original plaquettes meet an edge.
+
+Allow independent complex x\_p with
+max\_p\textbar x\_p\textbar\textless=r. The source equation is
+
+\begin{verbatim}
+v=(1/3)sum_p x_p Wp+B(v,v).                            (U11)
+\end{verbatim}
+
+Its homogeneous order-n coefficient obeys the original binary
+recurrence, giving
+
+\begin{verbatim}
+a_n(r)=Cat_(n-1)(2/3)^(n-1)(32r)^n,
+sum_(n>=1) a_n(r)=r_v(r)=(3/4)(1-sqrt(1-256r/3)).       (U12)
+\end{verbatim}
+
+The radius used throughout the new bound is exactly
+
+\begin{verbatim}
+R0=3/256.                                              (U13)
+\end{verbatim}
+
+For r\textless R0 the series is norm-analytic. It converges absolutely
+also at r=R0, where its tail is
+{(\allowbreak{}3\allowbreak{}/\allowbreak{}4\allowbreak{})\allowbreak{}b\allowbreak{}i\allowbreak{}n\allowbreak{}o\allowbreak{}m\allowbreak{}(\allowbreak{}2\allowbreak{}N\allowbreak{},\allowbreak{}N\allowbreak{})\allowbreak{}/\allowbreak{}4\allowbreak{}\textasciicircum{}\allowbreak{}N\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}3\allowbreak{}/\allowbreak{}(\allowbreak{}4\allowbreak{}s\allowbreak{}q\allowbreak{}r\allowbreak{}t\allowbreak{}(\allowbreak{}N\allowbreak{}+\allowbreak{}1\allowbreak{})\allowbreak{})\allowbreak{}.\allowbreak{}}
+The finite coefficient proof is
+{C\allowbreak{}a\allowbreak{}t\allowbreak{}\_\allowbreak{}N\allowbreak{}/\allowbreak{}4\allowbreak{}\textasciicircum{}\allowbreak{}N\allowbreak{}=\allowbreak{}2\allowbreak{}(\allowbreak{}b\allowbreak{}\_\allowbreak{}N\allowbreak{}-\allowbreak{}b\allowbreak{}\_\allowbreak{}(\allowbreak{}N\allowbreak{}+\allowbreak{}1\allowbreak{})\allowbreak{})\allowbreak{},\allowbreak{}}
+{b\allowbreak{}\_\allowbreak{}N\allowbreak{}=\allowbreak{}b\allowbreak{}i\allowbreak{}n\allowbreak{}o\allowbreak{}m\allowbreak{}(\allowbreak{}2\allowbreak{}N\allowbreak{},\allowbreak{}N\allowbreak{})\allowbreak{}/\allowbreak{}4\allowbreak{}\textasciicircum{}\allowbreak{}N\allowbreak{}.\allowbreak{}}
+No strict contraction at the boundary is used.
+
+Each order-n label is an edge-connected union of at most n plaquettes.
+The coefficients agree literally in every original box containing that
+union. This follows inductively from (U8): derivatives require a shared
+original edge, and K inversion acts on the same coefficients.
+
+On a finite graph the norm convergence controls every first and second
+coordinate derivative, since j\_e j\_f\textless=c\_j. Thus the actual
+assembled function solves
+
+\begin{verbatim}
+Kv=sum_p x_pWp+Gamma(v,v)-C(x),
+C(x)=P_H Gamma(v,v).                                   (U14)
+\end{verbatim}
+
+For real x,
+{p\allowbreak{}s\allowbreak{}i\allowbreak{}=\allowbreak{}e\allowbreak{}x\allowbreak{}p\allowbreak{}(\allowbreak{}v\allowbreak{})\allowbreak{}/\allowbreak{}s\allowbreak{}q\allowbreak{}r\allowbreak{}t\allowbreak{}(\allowbreak{}i\allowbreak{}n\allowbreak{}t\allowbreak{}}
+exp(2v)) is positive and solves the original eigen-equation with
+
+\begin{verbatim}
+E0=kappa[2sum_p x_p-C(x)].                              (U15)
+\end{verbatim}
+
+Equation (U2) then proves it is the actual ground vector and fixes every
+scalar. Elliptic bootstrapping makes it smooth. For complex x the
+nonzero function exp(v) is still a smooth solution of that
+eigen-equation. Its squared integral is addressed below, rather than
+presumed nonzero.
+
+\subsection{U5. The full drift, including its scalar
+row}\label{u5.-the-full-drift-including-its-scalar-row}
+
+Set D\_v f=2 Gamma(v,f). Equations (U4),(U6) give, on the original
+coefficient spaces,
+
+\begin{verbatim}
+||D_v h||_X<=chi(r)||Kh||_X,
+chi(r)=(2/3)r_v(r)=(1-sqrt(1-256r/3))/2<=1/2.           (U16)
+\end{verbatim}
+
+Both the constant and nonconstant outputs are included. Indeed the sum
+over generators is at most 6 sum\_j
+\textbar\textbar A\_j(h)\textbar\textbar\_1 sum\_e j\_e {[}r\_v/6{]},
+and
+{s\allowbreak{}u\allowbreak{}m\allowbreak{}\_\allowbreak{}e\allowbreak{}j\allowbreak{}\_\allowbreak{}e\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}(\allowbreak{}2\allowbreak{}/\allowbreak{}3\allowbreak{})\allowbreak{}c\allowbreak{}\_\allowbreak{}j\allowbreak{}.\allowbreak{}}
+Define
+
+\begin{verbatim}
+T=Q_H D_v K^(-1):X0->X0,
+p=P_H D_v K^(-1):X0->C,
+S=(I-T)^(-1)=sum_(n>=0)T^n.                            (U17)
+\end{verbatim}
+
+The stacked bound is
+{|\allowbreak{}p\allowbreak{}y\allowbreak{}|\allowbreak{}+\allowbreak{}|\allowbreak{}|\allowbreak{}T\allowbreak{}y\allowbreak{}|\allowbreak{}|\allowbreak{}\_\allowbreak{}X\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}|\allowbreak{}|\allowbreak{}y\allowbreak{}|\allowbreak{}|\allowbreak{}\_\allowbreak{}X\allowbreak{};\allowbreak{}}
+in particular \textbar\textbar S\textbar\textbar\textless=1/(1-chi).
+Define the actual mean functional by
+
+\begin{verbatim}
+mu_x(F)=P_HF+p S Q_HF.                                 (U18)
+\end{verbatim}
+
+For chi\textless=1/2,
+{|\allowbreak{}m\allowbreak{}u\allowbreak{}\_\allowbreak{}x\allowbreak{}(\allowbreak{}F\allowbreak{})\allowbreak{}|\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}|\allowbreak{}|\allowbreak{}F\allowbreak{}|\allowbreak{}|\allowbreak{}\_\allowbreak{}X\allowbreak{}}
+and
+{|\allowbreak{}m\allowbreak{}u\allowbreak{}\_\allowbreak{}x\allowbreak{}(\allowbreak{}Q\allowbreak{}\_\allowbreak{}H\allowbreak{}F\allowbreak{})\allowbreak{}|\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}|\allowbreak{}|\allowbreak{}Q\allowbreak{}\_\allowbreak{}H\allowbreak{}F\allowbreak{}|\allowbreak{}|\allowbreak{}\_\allowbreak{}X\allowbreak{}/\allowbreak{}(\allowbreak{}1\allowbreak{}-\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{})\allowbreak{}.\allowbreak{}}
+The associated source inverse is h=K\^{}(-1)S Q\_HF in Y0, with
+
+\begin{verbatim}
+(K-D_v)h=F-mu_x(F).                                    (U19)
+\end{verbatim}
+
+All maps are analytic for r\textless R0.
+
+Here (U18) equals the actual complex density functional as well. Put
+Z\_x=int exp(2v). Integration by parts gives int exp(2v)(K-D\_v)h=0 for
+h in Y0, since its first and second derivatives converge. Equation (U19)
+therefore gives
+
+\begin{verbatim}
+int exp(2v)F=mu_x(F) Z_x.                               (U20)
+\end{verbatim}
+
+If Z\_x vanished, the left side would vanish for every physical Fourier
+polynomial. Their uniform closure contains the conjugate of the nonzero
+smooth gauge-invariant exp(2v). Its squared modulus would then have zero
+integral, a contradiction. Hence Z\_x is nonzero, and mu\_x(F)=int
+exp(2v)F/Z\_x. For real x it is precisely expectation in rho. The exact
+bilinear integration identity is
+
+\begin{verbatim}
+mu_x((K-D_v)h . G)=mu_x(Gamma(h,G)).                    (U21)
+\end{verbatim}
+
+Complex x uses the bilinear analytic continuation; the physical
+real-coupling Hilbert pairing retains conjugation in its first entry.
+
+\subsection{U6. Closed generator and heat flow in the same
+coefficients}\label{u6.-closed-generator-and-heat-flow-in-the-same-coefficients}
+
+Let L\_x=K-Q\_H D\_v on X0, Dom(L\_x)=Y0. The graph norms of K and L\_x
+are equivalent because \textbar\textbar Q\_H
+{D\allowbreak{}\_\allowbreak{}v\allowbreak{}h\allowbreak{}|\allowbreak{}|\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}|\allowbreak{}|\allowbreak{}K\allowbreak{}h\allowbreak{}|\allowbreak{}|\allowbreak{},\allowbreak{}}
+chi\textless1. Thus L\_x is closed and densely defined. For
+h\textgreater0,
+
+\begin{verbatim}
+I+hL_x=[I-hQ_H D_v(I+hK)^(-1)](I+hK),                 (U22)
+\end{verbatim}
+
+and the square bracket is invertible by a Neumann series of norm ratio
+at most chi. The original sum of trace norms also gives
+
+\begin{verbatim}
+||(I+hL_x)f||_X
+  >=||f||_X+h(1-chi)||Kf||_X
+  >=[1+3h(1-chi)]||f||_X.                              (U23)
+\end{verbatim}
+
+All powers of the actual resolvent obey the corresponding product bound.
+The
+{H\allowbreak{}i\allowbreak{}l\allowbreak{}l\allowbreak{}e\allowbreak{}–\allowbreak{}Y\allowbreak{}o\allowbreak{}s\allowbreak{}i\allowbreak{}d\allowbreak{}a\allowbreak{}/\allowbreak{}L\allowbreak{}u\allowbreak{}m\allowbreak{}e\allowbreak{}r\allowbreak{}–\allowbreak{}P\allowbreak{}h\allowbreak{}i\allowbreak{}l\allowbreak{}l\allowbreak{}i\allowbreak{}p\allowbreak{}s\allowbreak{}}
+generation theorem applies to this explicitly closed dense domain and
+the proved surjectivity (U22). It gives
+
+\begin{verbatim}
+E_x(tau)=exp(-tau L_x),
+||E_x(tau)||<=exp[-d(r)tau],  d(r)=3(1-chi(r))>=3/2.    (U24)
+\end{verbatim}
+
+For completeness, the shifted operator L\_x-d(r) is dissipative with the
+negative-generator convention: the directional norm derivative of -Kf is
+-\textbar\textbar Kf\textbar\textbar, and its perturbation is at most
+chi\textbar\textbar Kf\textbar\textbar. Its sufficiently large positive
+resolvent is obtained by (U22) and the resolvent identity. This proves
+the decay constant, rather than using a norm for one inverse as a
+substitute for a semigroup estimate. Lumer--Phillips (1961), Theorem3.1,
+pp686--687, is the primary generation reference.
+
+Each resolvent in (U22) is analytic in x. Its exponential Euler powers
+are uniformly bounded on compact complex source polydisks and converge
+strongly to (U24). Here the latter assertion has a direct integral
+proof:
+{(\allowbreak{}I\allowbreak{}+\allowbreak{}h\allowbreak{}L\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}f\allowbreak{}=\allowbreak{}i\allowbreak{}n\allowbreak{}t\allowbreak{}\_\allowbreak{}0\allowbreak{}\textasciicircum{}\allowbreak{}i\allowbreak{}n\allowbreak{}f\allowbreak{}i\allowbreak{}n\allowbreak{}i\allowbreak{}t\allowbreak{}y\allowbreak{}}
+exp(-u)E\_x(hu)f du, by integration on the original generator domain and
+density. The m-fold product at h=tau/m is the average of E\_x(tau
+Y\_m/m)f, where Y\_m has the convolution density
+{e\allowbreak{}x\allowbreak{}p\allowbreak{}(\allowbreak{}-\allowbreak{}u\allowbreak{})\allowbreak{}u\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}m\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}/\allowbreak{}(\allowbreak{}m\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}!\allowbreak{},\allowbreak{}}
+mean m and variance m. The nonnegative scalar density has mass one.
+Chebyshev\textquotesingle s inequality outside a fixed neighborhood of
+tau, strong continuity inside it, and the contraction bound give the
+stated strong convergence. No spectral diagonalization of the perturbed
+coefficient generator is presumed. Applying scalar Vitali convergence to
+every bounded functional and then the locally bounded weak-to-strong
+holomorphy principle proves analytic dependence of E\_x(tau).
+Equivalently the sectorial resolvent obtained from (U16) gives the same
+contour construction. This concerns source analyticity, not a
+holomorphic continuation of physical time across arbitrary rays.
+
+For real x the full physical heat return is
+
+\begin{verbatim}
+T_x(tau)F=E_x(tau)Q_HF+mu_x(F)-mu_x(E_x(tau)Q_HF).      (U25)
+\end{verbatim}
+
+On the dense smooth domain it solves the actual equation with generator
+K-D\_v, preserves its original mean, and agrees with the physical
+Hilbert semigroup by uniqueness. Its positive physical time is
+tau/kappa. The same formula defines the analytic continuation for
+complex x. In particular
+
+\begin{verbatim}
+||T_x(tau)F-mu_x(F)||_X
+  <=exp[-d(r)tau]||Q_HF||_X/(1-chi).                   (U26)
+\end{verbatim}
+
+Every physical eigenfunction in a finite box is smooth and belongs to Y0
+after subtracting its Haar constant. This last membership follows from
+Plancherel and Cauchy--Schwarz with a sufficiently high original Casimir
+power: sum\_j
+{d\allowbreak{}\_\allowbreak{}j\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}(\allowbreak{}1\allowbreak{}+\allowbreak{}c\allowbreak{}\_\allowbreak{}j\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}s\allowbreak{})\allowbreak{}\textless{}\allowbreak{}i\allowbreak{}n\allowbreak{}f\allowbreak{}i\allowbreak{}n\allowbreak{}i\allowbreak{}t\allowbreak{}y\allowbreak{}}
+for s\textgreater3\textbar E\_L\textbar/2. Thus (U24) applied to the
+exact eigen-equation proves A=H-E0\textgreater=kappa d(r) on the
+complete centered physical Hilbert space. Compact spectral resolution
+gives the full form-domain statement. This is a rederivation of the
+elementary strong-coupling lower bound on this explicit domain, not of
+every stronger historical source estimate.
+
+\subsection{U7. The row-sum estimate that removes the volume
+factor}\label{u7.-the-row-sum-estimate-that-removes-the-volume-factor}
+
+For fixed original p put q\_tau=E\_x(tau)Wp and h\_tau=K\^{}(-1)S
+q\_tau. The exact mean equation gives
+
+\begin{verbatim}
+(K-D_v)h_tau=T_x(tau)Wp-mu_x(Wp).                      (U27)
+\end{verbatim}
+
+For arbitrary complex coefficients z\_q with
+max\_q\textbar z\_q\textbar\textless=1, set G\_z=sum\_q z\_qWq. The
+original edge incidences and trace coefficient 8 give
+
+\begin{verbatim}
+sup_e sum_(q containing e) (1/2)||z_q Wq||_X<=16.
+\end{verbatim}
+
+Consequently, with every generator retained,
+
+\begin{verbatim}
+||Gamma(h,G_z)||_X
+  <=3*16 sum_j sum_e j_e||A_j(h)||_1
+  <=32||Kh||_X.                                       (U28)
+\end{verbatim}
+
+Use (U21), \textbar\textbar mu\_x\textbar\textbar\textless=1,
+\textbar\textbar S\textbar\textbar\textless=1/(1-chi), and
+\textbar\textbar Wp\textbar\textbar\_X=8. The connected analytic heat
+matrix satisfies
+
+\begin{verbatim}
+Chat_pq(tau;x)=mu_x[(T_x(tau)Wp-mu_xWp)Wq],
+sum_q |Chat_pq(tau;x)|
+  <=[256/(1-chi(r))] exp[-d(r)tau]
+  <=512 exp(-3tau/2).                                  (U29)
+\end{verbatim}
+
+The sum equality to a supremum over phases z\_q is exact in every
+original finite face set. At real x this is precisely
+\textless r\_p,exp(-tau A/kappa)r\_q\textgreater. Its transpose symmetry
+extends to complex x by analyticity from the real multivariate polydisk.
+Thus the same bound holds for columns and for the coefficient-space
+operator norm. No M is introduced.
+
+There is a useful sharper bound that uses the original Haar projection
+before estimating the returned mean. The physical Fourier block with
+spin one-half on the four edges of a specified elementary plaquette and
+zero on all other edges is one-dimensional: at each two-edge vertex the
+invariant contraction is unique, and following the original indices
+gives Wp. Consequently, for physical h in Y0,
+
+\begin{verbatim}
+|P_H Gamma(h,G_z)| <= (1/8)||Kh||_X.
+\end{verbatim}
+
+Indeed the contributing block is a\_p Wp, has
+norm8\textbar a\_p\textbar{} and Casimir3, and its Haar pairing with Wp
+is a\_p. All other product-spin labels integrate to zero. On the
+nonconstant output, (U18) gives
+{|\allowbreak{}(\allowbreak{}m\allowbreak{}u\allowbreak{}-\allowbreak{}P\allowbreak{}\_\allowbreak{}H\allowbreak{})\allowbreak{}Q\allowbreak{}F\allowbreak{}|\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}|\allowbreak{}|\allowbreak{}Q\allowbreak{}F\allowbreak{}|\allowbreak{}|\allowbreak{}\_\allowbreak{}X\allowbreak{}/\allowbreak{}(\allowbreak{}1\allowbreak{}-\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{})\allowbreak{}.\allowbreak{}}
+Retaining both terms in this mean decomposition and using (U28) yields
+the additional full-row bound
+
+\begin{verbatim}
+||Chat(tau;x)||row
+   <=[(1+255chi)/(1-chi)^2] exp[-3(1-chi)tau].        (U29a)
+\end{verbatim}
+
+The original bound(U29) remains available. Take the exact original
+source radius and its derived constants
+
+\begin{verbatim}
+R1=45/4096,  chi(R1)=3/8,
+C1=6184/25,  d1=15/8.
+\end{verbatim}
+
+Then (U29a) supplies
+
+\begin{verbatim}
+||Chat-C0-xi^2 C2-xi^4 C4||row
+  <=(6184/25) exp(-15tau/8)
+         (|xi|/R1)^6/[1-(|xi|/R1)^2], |xi|<R1.        (U29b)
+\end{verbatim}
+
+This second circle has its stated smaller radius and sharper prefactor
+and decay. A scalar minimum of the two error bounds is permitted; no
+minimum of noncommuting matrices is introduced. For the kth inverse
+moment its prefactor is
+{(\allowbreak{}6\allowbreak{}1\allowbreak{}8\allowbreak{}4\allowbreak{}/\allowbreak{}2\allowbreak{}5\allowbreak{})\allowbreak{}(\allowbreak{}8\allowbreak{}/\allowbreak{}1\allowbreak{}5\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}k\allowbreak{}.\allowbreak{}}
+These are used in the strengthened numerical return M10.
+
+\subsection{U8. Uniform analytic remainder and all inverse-energy
+moments}\label{u8.-uniform-analytic-remainder-and-all-inverse-energy-moments}
+
+Now restrict x\_p=zeta homogeneously. The original central link map
+U\_(n,i) -\textgreater{}
+{(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}s\allowbreak{}u\allowbreak{}m\allowbreak{}\_\allowbreak{}(\allowbreak{}j\allowbreak{}\textless{}\allowbreak{}i\allowbreak{})\allowbreak{}n\allowbreak{}\_\allowbreak{}j\allowbreak{})\allowbreak{}U\allowbreak{}\_\allowbreak{}(\allowbreak{}n\allowbreak{},\allowbreak{}i\allowbreak{})\allowbreak{}}
+preserves Haar, K and every gauge constraint and sends all Wp to -Wp.
+Both marked traces change sign, so Chat(tau;zeta) is even. Let
+theta=\textbar xi\textbar/R0. Cauchy\textquotesingle s formula using
+(U29), first at radius r\textless R0 and then letting r increase to R0,
+proves in maximum absolute row-sum norm
+
+\begin{verbatim}
+||Chat(tau;xi)-C0(tau)-xi^2 C2(tau)-xi^4 C4(tau)||row
+   <=512 exp(-3tau/2) theta^6/(1-theta^2),
+   |xi|<R0, tau>=0.                                    (U30)
+\end{verbatim}
+
+The original coefficients C0,C2,C4 are exactly the inherited full heat
+tables: uniqueness of the local analytic eigen/heat equation at x=0
+gives the identical recurrence and ground-pole subtraction. Their source
+and original time coordinates are unchanged.
+
+For the original centered columns R and A=H-E0 put
+
+\begin{verbatim}
+G0=R*R,  Gk=kappa^k R*A^(-k)R (k>=1),
+Phi=kappa A^(-1)R,  Phi*Phi=G2,  Phi*A Phi=kappa G1.
+\end{verbatim}
+
+The physical spectral theorem and (U30) justify all integrals, including
+their complete tails:
+
+\begin{verbatim}
+Gk=int_0^infinity tau^(k-1) Chat(tau)d tau/(k-1)!,
+||Gk-sum_(j=0)^2 xi^(2j) Gk_(2j)||row
+   <=512(2/3)^k theta^6/(1-theta^2), k>=1.              (U31)
+\end{verbatim}
+
+For G0, (U30) at tau=0 supplies the same formula with k=0. A pole
+a/(z+c)\^{}n contributes
+{a\allowbreak{}(\allowbreak{}k\allowbreak{}+\allowbreak{}n\allowbreak{}-\allowbreak{}2\allowbreak{})\allowbreak{}!\allowbreak{}/\allowbreak{}[\allowbreak{}(\allowbreak{}k\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}!\allowbreak{}(\allowbreak{}n\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}!\allowbreak{}c\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}k\allowbreak{}+\allowbreak{}n\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}]\allowbreak{}.\allowbreak{}}
+These maps use the original kappa in both the heat-time integral and
+every inverse energy.
+
+\subsection{U9. Spatial tails and the actual volume
+limit}\label{u9.-spatial-tails-and-the-actual-volume-limit}
+
+The preceding estimates also specify their spatial return. Set all
+couplings outside a given finite list to zero. The scalar Hilbert tensor
+factors on disjoint active link components factorize, as do the positive
+vacuum and semigroup. Their restrictions to the original invariant
+observables agree with that scalar calculation. A connected marked
+correlation therefore has zero multivariate coefficient unless its
+original marks and source faces lie in one edge-connected component. In
+particular, if the original face-adjacency distance is d(p,q), a
+degree-n coefficient connecting distinct marks needs
+n\textgreater=d(p,q)-1. Both marks retain their original links.
+
+At degree n, the same coefficient depends only on the n-neighborhood of
+the union of marked links, where two links are adjacent when they share
+an original plaquette. This follows either from the tensor factorization
+or directly from (U8),(U17),(U25): every source insertion attaches its
+original connected plaquette union through a differentiated edge, K and
+its resolvent preserve link support, and all orders add to n. The
+constant and disconnected products are retained until the connected
+subtraction.
+
+For two boxes containing the N-neighborhood of the same marks, every
+homogeneous coefficient through N is identical.
+Equation(U30)\textquotesingle s coefficient bound gives
+
+\begin{verbatim}
+|Chat_L-Chat_L'|
+   <=1024 exp(-3tau/2) theta^(2(floor(N/2)+1))/(1-theta^2). (U32)
+\end{verbatim}
+
+The identical reasoning gives a row tail outside face-distance D by
+omitting every coefficient with n\textless D-1; n is even. These are
+explicit spatial bounds, with the physical link length a unaltered.
+
+For clarity the limiting state and dynamics are also constructed. The
+coefficient mean (U18) is analytic and bounded by
+\textbar\textbar F\textbar\textbar X, and its Taylor coefficients depend
+on finite original neighborhoods. Cauchy tails prove full-sequence
+convergence mu\_L(F)-\textgreater mu(F) for every cylinder Fourier
+polynomial on \textbar xi\textbar\textless R0. Real-coupling positivity
+and mass one pass from the original vacua. For an arbitrary cylinder
+function use the actual finite vertex Haar average P\_G on its incident
+vertices; the equality mu\_L(F)=mu\_L(P\_G F) extends the limiting
+physical functional consistently to all cylinder functions. Uniform
+cylinder approximation then gives its gauge-invariant probability lift
+on the product of original link groups. Both positivity and this gauge
+extension are the original finite-volume ones.
+
+Equation(U25) has norm at most3\textbar\textbar F\textbar\textbar X and
+localized Taylor coefficients. Hence T\_L(tau)F converges uniformly,
+first on cylinder Fourier polynomials and then on their continuous
+uniform completion by the real Markov contraction. The resulting T is
+positive, unital, strongly continuous, and preserves mu. Its semigroup
+and symmetry laws pass by approximating the intermediate continuous
+function uniformly with cylinder polynomials. Equations(U24)--(U26)
+prove uniqueness of its invariant probability on the gauge-invariant
+observable algebra: integrate the uniform mixing bound and use density.
+This claim concerns physical observables; it does not assign a unique
+gauge-variant probability from those observations alone.
+
+The symmetric Markov semigroup has its self-adjoint generator A\_infty
+on L2(mu)\_phys. The finite real bounds pass on cylinder functions by
+the uniform convergence and then by L2 density, giving
+
+\begin{verbatim}
+A_infty|_(1 perp)>=kappa d(|xi|).                       (U33)
+\end{verbatim}
+
+On an original cylinder Fourier polynomial F, the functions (K-D\_v,L)F
+converge in X to their infinite-label sum: at each source order they
+involve finite neighborhoods, and the full drift tails are bounded by
+the convergent local-source tail times
+\textbar\textbar KF\textbar\textbar\_X. Passing to the semigroup
+integral equation proves F belongs to the limiting generator domain with
+A\_infty
+{F\allowbreak{}=\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{}(\allowbreak{}K\allowbreak{}-\allowbreak{}D\allowbreak{}\_\allowbreak{}v\allowbreak{},\allowbreak{}i\allowbreak{}n\allowbreak{}f\allowbreak{}t\allowbreak{}y\allowbreak{})\allowbreak{}F\allowbreak{}.\allowbreak{}}
+In particular
+{q\allowbreak{}\_\allowbreak{}i\allowbreak{}n\allowbreak{}f\allowbreak{}t\allowbreak{}y\allowbreak{}(\allowbreak{}F\allowbreak{},\allowbreak{}G\allowbreak{})\allowbreak{}=\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{}}
+mu Gamma(conjugate(F),G) on this cylinder core. This also fixes the
+kinetic moment in the limiting original energy pairing.
+
+All local time-ordered correlations pass through the same
+product/semigroup limits. The row tails above construct bounded infinite
+plaquette Gram operators on l2(P\_Z3), with the same bounds
+(U29)--(U31). Their coefficientwise local limit and norm-bounded
+convergence on finitely supported vectors give strong convergence on
+that l2 space. This is a fixed-a spatial-volume construction on the
+displayed coupling domain. It makes no assertion of an ultraviolet field
+or finite continuum mass.
+
+\subsection{U10. Primary sources and
+scope}\label{u10.-primary-sources-and-scope}
+
+G. Lumer and R. S. Phillips, Dissipative operators in a Banach space,
+Pacific J. Math.11(1961),679--698, Theorem3.1, pp686--687: dense-domain
+dissipativity plus actual range surjectivity gives the contraction
+semigroup. The original theorem pages were inspected. The
+coefficient-domain verification is (U22)--(U24).
+
+P. Eymard, L\textquotesingle algebre de Fourier d\textquotesingle un
+groupe localement compact, Bull. Soc. Math. France92(1964),181--236:
+Fourier-algebra antecedent. The needed compact coefficient product and
+domain estimates are proved here in (U3)--(U9); no claim is made to have
+re-audited the complete historical paper.
+
+D. Schuette, Zheng Weihong and C. J. Hamer, The Coupled Cluster Method
+in Hamiltonian Lattice Field Theory, hep-lat/9603026:
+exponential-vacuum, gauge-invariant character, and excitation
+antecedents. The original constants and new heat row-sum return are
+derived above. The predecessor heat catalogue and the point-of-use
+source paths are in
+{S\allowbreak{}O\allowbreak{}U\allowbreak{}R\allowbreak{}C\allowbreak{}E\allowbreak{}\_\allowbreak{}I\allowbreak{}N\allowbreak{}T\allowbreak{}A\allowbreak{}K\allowbreak{}E\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+Numerical checks certify their declared finite algebra and endpoints,
+not the written analytical arguments as a formal proof.
+
+\section{Growing original plaquette families and their full physical
+complement}\label{growing-original-plaquette-families-and-their-full-physical-complement}
+
+21 September 2026. This is the quantitative return of
+{V\allowbreak{}O\allowbreak{}L\allowbreak{}U\allowbreak{}M\allowbreak{}E\allowbreak{}\_\allowbreak{}U\allowbreak{}N\allowbreak{}I\allowbreak{}F\allowbreak{}O\allowbreak{}R\allowbreak{}M\allowbreak{}\_\allowbreak{}H\allowbreak{}E\allowbreak{}A\allowbreak{}T\allowbreak{}.\allowbreak{}m\allowbreak{}d\allowbreak{},\allowbreak{}}
+with its source, graph, domain and semigroup proofs. Every finite open
+box L\textgreater=2, spacing a\textgreater0, and coupling
+g\^{}2\textgreater=16 is included below. All coefficient axes are
+original plaquettes. Every Hilbert, energy and quotient pairing is
+stated explicitly. The static and time-dependent coefficient tables are
+the inherited original calculations, replayed unchanged; the
+boundary-safe assembly and rational endpoints below are new
+calculations. The analytic proof is written for review, not a formal
+certificate.
+
+\subsection{M1. Boundary-safe full-family
+constants}\label{m1.-boundary-safe-full-family-constants}
+
+Write R0=3/256, theta=xi/R0, and
+{t\allowbreak{}6\allowbreak{}=\allowbreak{}t\allowbreak{}h\allowbreak{}e\allowbreak{}t\allowbreak{}a\allowbreak{}\textasciicircum{}\allowbreak{}6\allowbreak{}/\allowbreak{}(\allowbreak{}1\allowbreak{}-\allowbreak{}t\allowbreak{}h\allowbreak{}e\allowbreak{}t\allowbreak{}a\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{})\allowbreak{}.\allowbreak{}}
+The complete marked heat tables have 199 connected multisets containing
+the anchor face (0,0,0;0,1): one degree-zero self term; one self and
+twelve adjacent-pair terms at degree two; and one self, twenty-four
+ordered repeated-pair, 138 path, twelve common-edge, eight corner and
+two cube terms at degree four. Their 559 marked-row contributions are
+all retained.
+
+For each contribution, integrate its actual partial fractions as in U31,
+or take the original time-zero value. Sum absolute values before
+different original supports can cancel. Every finite box contains a
+subset of these original contributions at a specified anchor. Thus the
+following are bounds for every original row, including every boundary
+row, independent of box size:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrr@{}}
+\toprule\noalign{}
+Original matrix & degree2 bound & degree4 bound \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+G0 & 149/468 &
+{2\allowbreak{}3\allowbreak{}6\allowbreak{}1\allowbreak{}9\allowbreak{}9\allowbreak{}4\allowbreak{}0\allowbreak{}7\allowbreak{}3\allowbreak{}/\allowbreak{}4\allowbreak{}6\allowbreak{}9\allowbreak{}1\allowbreak{}4\allowbreak{}9\allowbreak{}4\allowbreak{}0\allowbreak{}8\allowbreak{}0\allowbreak{}} \\
+G1 & 97/468 &
+{3\allowbreak{}7\allowbreak{}6\allowbreak{}8\allowbreak{}8\allowbreak{}2\allowbreak{}6\allowbreak{}9\allowbreak{}1\allowbreak{}/\allowbreak{}9\allowbreak{}3\allowbreak{}8\allowbreak{}2\allowbreak{}9\allowbreak{}8\allowbreak{}8\allowbreak{}1\allowbreak{}6\allowbreak{}} \\
+G2 & 73313/657072 &
+{9\allowbreak{}8\allowbreak{}2\allowbreak{}0\allowbreak{}6\allowbreak{}9\allowbreak{}7\allowbreak{}1\allowbreak{}8\allowbreak{}9\allowbreak{}6\allowbreak{}3\allowbreak{}8\allowbreak{}3\allowbreak{}3\allowbreak{}/\allowbreak{}3\allowbreak{}9\allowbreak{}1\allowbreak{}9\allowbreak{}1\allowbreak{}8\allowbreak{}0\allowbreak{}3\allowbreak{}2\allowbreak{}4\allowbreak{}5\allowbreak{}5\allowbreak{}0\allowbreak{}4\allowbreak{}0\allowbreak{}0\allowbreak{}} \\
+Kobs & 187/468 &
+{5\allowbreak{}8\allowbreak{}6\allowbreak{}6\allowbreak{}6\allowbreak{}8\allowbreak{}4\allowbreak{}2\allowbreak{}1\allowbreak{}/\allowbreak{}1\allowbreak{}5\allowbreak{}6\allowbreak{}3\allowbreak{}8\allowbreak{}3\allowbreak{}1\allowbreak{}3\allowbreak{}6\allowbreak{}0\allowbreak{}} \\
+J3=G0-6G1+9G2 & 6779/73008 &
+{1\allowbreak{}5\allowbreak{}2\allowbreak{}3\allowbreak{}3\allowbreak{}8\allowbreak{}6\allowbreak{}7\allowbreak{}4\allowbreak{}0\allowbreak{}0\allowbreak{}5\allowbreak{}9\allowbreak{}8\allowbreak{}9\allowbreak{}/\allowbreak{}4\allowbreak{}3\allowbreak{}5\allowbreak{}4\allowbreak{}6\allowbreak{}4\allowbreak{}4\allowbreak{}8\allowbreak{}0\allowbreak{}5\allowbreak{}0\allowbreak{}5\allowbreak{}6\allowbreak{}0\allowbreak{}0\allowbreak{}} \\
+\end{longtable}
+}
+
+Call these numbers B\_(k,2),B\_(k,4), and similarly B\_K,B\_J. The exact
+transport for every contribution is the original signed coordinate
+permutation and translation. The independent audit constructs the 199
+original multisets without calling that transport producer, verifies its
+inverse coordinate formula, and reintegrates each original pole
+directly. The exact row entries of the existing full L2 matrix lie below
+these bounds; no assertion that the bulk signed row is the largest
+boundary row is used.
+
+The kinetic matrix is
+{K\allowbreak{}o\allowbreak{}b\allowbreak{}s\allowbreak{}=\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}R\allowbreak{}*\allowbreak{}A\allowbreak{}R\allowbreak{}=\allowbreak{}\textless{}\allowbreak{}G\allowbreak{}a\allowbreak{}m\allowbreak{}m\allowbreak{}a\allowbreak{}(\allowbreak{}W\allowbreak{}p\allowbreak{},\allowbreak{}W\allowbreak{}q\allowbreak{})\allowbreak{}\textgreater{}\allowbreak{}r\allowbreak{}h\allowbreak{}o\allowbreak{}.\allowbreak{}}
+Only p=q or faces sharing an original edge can contribute. At p=q the
+exact function is
+{4\allowbreak{}-\allowbreak{}W\allowbreak{}p\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}=\allowbreak{}3\allowbreak{}-\allowbreak{}c\allowbreak{}h\allowbreak{}i\allowbreak{}\_\allowbreak{}1\allowbreak{}(\allowbreak{}W\allowbreak{}p\allowbreak{})\allowbreak{}.\allowbreak{}}
+Its trace-coefficient norm is at most30: the original four-edge spin-one
+contraction has norm27, as can be obtained by contracting its
+three-dimensional indices, or bounded by the original tensor coefficient
+with one turn. For adjacent faces the direct derivative estimate U4
+gives norm at most3*(8/2)\^{}2=48. There are at most twelve neighbors.
+Therefore, on the full complex source disk,
+
+\begin{verbatim}
+||Kobs(zeta)||row<=30+12*48=606.                        (M1)
+\end{verbatim}
+
+The spin-one contraction used for30 has the same four-link index formula
+as U10 with the SU(2) invariant dual matrix in dimension3; its nonzero
+singular values are3 with total trace norm27. In the original
+magnetic-weight basis its fixed dual matrix is C\_(mn)=(-1)\^{}(j-m)
+delta\_(m,-n), m,n=-j,...,j. Thus pi\_j(U\^{}(-1))=C pi\_j(U)\^{}T
+C\^{}(-1); both coefficient-side unitary factors are retained. For the
+trace of four general d-by-d factors with its last two transposed, the
+coefficient has A\_(b,c,c,e ; a,b,e,a) +=1. Direct multiplication gives
+(A* A)\^{}2=d\^{}2 A* A and Tr(A* A)=d\^{}4, so its trace norm is
+d\^{}3. Taking d=3 proves27. Its inverse-link signs are represented by
+the stated dual matrix, not omitted. The accompanying finite check
+verifies the dimension2 and dimension3 contraction directly.
+Alternatively the bound4+8\^{}2=68 would give644 and slightly wider
+kinetic endpoints.
+
+Combining U30--U31, M1, and the table proves
+
+\begin{verbatim}
+||Gk-3^(-k)I|| <= xi^2 B_(k,2)+xi^4 B_(k,4)
+                     +512(2/3)^k t6 = w_k, k=0,1,2,
+||Kobs-3I|| <= xi^2 B_(K,2)+xi^4 B_(K,4)+606 t6=w_K,
+0<=J3<=beta I,
+beta=xi^2 B_(J,2)+xi^4 B_(J,4)+4608 t6.                 (M2)
+\end{verbatim}
+
+The whole-matrix bound follows from equality of row and column absolute
+norm for the original symmetric real matrices, followed by the l2 Schur
+bound. The
+{r\allowbreak{}e\allowbreak{}m\allowbreak{}a\allowbreak{}i\allowbreak{}n\allowbreak{}d\allowbreak{}e\allowbreak{}r\allowbreak{}4\allowbreak{}6\allowbreak{}0\allowbreak{}8\allowbreak{}=\allowbreak{}5\allowbreak{}1\allowbreak{}2\allowbreak{}+\allowbreak{}6\allowbreak{}*\allowbreak{}5\allowbreak{}1\allowbreak{}2\allowbreak{}*\allowbreak{}(\allowbreak{}2\allowbreak{}/\allowbreak{}3\allowbreak{})\allowbreak{}+\allowbreak{}9\allowbreak{}*\allowbreak{}5\allowbreak{}1\allowbreak{}2\allowbreak{}*\allowbreak{}(\allowbreak{}2\allowbreak{}/\allowbreak{}3\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}}
+includes all three original moment errors. The matrix J3 is positive
+because it is exactly (R-3Phi)*(R-3Phi), with Phi=kappa A\^{}(-1)R.
+
+\subsection{M2. Actual numerical bounds for every original
+box}\label{m2.-actual-numerical-bounds-for-every-original-box}
+
+For xi\textless=1/1024, equivalently g\^{}2\textgreater=16,
+theta\textless=1/12. Every term in (M2) is increasing in xi. Evaluation
+at the endpoint by exact rational arithmetic gives
+
+\begin{verbatim}
+w_0<173/10^6,     w_1<116/10^6,
+w_2<77/10^6,      w_K<205/10^6,
+beta<1555/10^6.                                        (M3)
+\end{verbatim}
+
+The sharper fractions, not these rounded values, are retained in
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}u\allowbreak{}n\allowbreak{}i\allowbreak{}f\allowbreak{}o\allowbreak{}r\allowbreak{}m\allowbreak{}\_\allowbreak{}c\allowbreak{}o\allowbreak{}n\allowbreak{}s\allowbreak{}t\allowbreak{}a\allowbreak{}n\allowbreak{}t\allowbreak{}s\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}.\allowbreak{}}
+Set
+
+\begin{verbatim}
+l0=1-w0, u0=1+w0,
+l1=1/3-w1, u1=1/3+w1,
+l2=1/9-w2, u2=1/9+w2,
+lK=3-wK, uK=3+wK,                                     (M4)
+\end{verbatim}
+
+using the endpoint rational w values. They are positive. The full
+physical source proof U26 gives A\textgreater=kappa d I with
+
+\begin{verbatim}
+d=117/40,                                             (M5)
+\end{verbatim}
+
+since at xi=1/1024 its square-root argument
+{i\allowbreak{}s\allowbreak{}1\allowbreak{}1\allowbreak{}/\allowbreak{}1\allowbreak{}2\allowbreak{}\textgreater{}\allowbreak{}(\allowbreak{}1\allowbreak{}9\allowbreak{}/\allowbreak{}2\allowbreak{}0\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}.\allowbreak{}}
+This is a lower bound on the entire centered physical space, proved
+without selecting an observation family. All physical dimensions and
+original energies in (M3)--(M5) remain.
+
+\subsection{M3. The original observation and its inverse-energy
+family}\label{m3.-the-original-observation-and-its-inverse-energy-family}
+
+Let R:C\^{}M-\textgreater H0 have columns
+{r\allowbreak{}p\allowbreak{}=\allowbreak{}(\allowbreak{}W\allowbreak{}p\allowbreak{}-\allowbreak{}\textless{}\allowbreak{}W\allowbreak{}p\allowbreak{}\textgreater{}\allowbreak{}r\allowbreak{}h\allowbreak{}o\allowbreak{})\allowbreak{}p\allowbreak{}s\allowbreak{}i\allowbreak{}.\allowbreak{}}
+On its literal coefficient coordinates put
+
+\begin{verbatim}
+Phi=kappa A^(-1)R,
+G0=R*R, G1=R*Phi, G2=Phi*Phi, E=Phi*A Phi=kappa G1.
+\end{verbatim}
+
+The inequalities above prove R and Phi injective and their ranges
+closed. The original observation O=R* has exact left inverse on the
+primitive family
+
+\begin{verbatim}
+W=G1^(-1)R*,  W Phi=I.                                (M6)
+\end{verbatim}
+
+The state projection P\_R=R G0\^{}(-1)R* retains
+
+\begin{verbatim}
+||P_R Phi c||^2=c*G1 G0^(-1)G1 c.
+\end{verbatim}
+
+Using l1,l2,u0,u2 from the original matrices proves
+
+\begin{verbatim}
+||P_R Phi c||^2 >= [l1^2/(u0 u2)]||Phi c||^2
+                  >(624/625)||Phi c||^2.              (M7)
+\end{verbatim}
+
+This is the inverse-power
+{o\allowbreak{}b\allowbreak{}s\allowbreak{}e\allowbreak{}r\allowbreak{}v\allowbreak{}a\allowbreak{}t\allowbreak{}i\allowbreak{}o\allowbreak{}n\allowbreak{}/\allowbreak{}m\allowbreak{}i\allowbreak{}n\allowbreak{}i\allowbreak{}m\allowbreak{}u\allowbreak{}m\allowbreak{}-\allowbreak{}s\allowbreak{}e\allowbreak{}c\allowbreak{}t\allowbreak{}i\allowbreak{}o\allowbreak{}n\allowbreak{}}
+mechanism of the RH workbench\textquotesingle s IK9--12, instantiated
+here by the exact matrix G1\^{}(-1)R* and the calculated physical Grams.
+No arithmetic constant or conductor coefficient enters (M7).
+
+The correction between the minimum-state and minimum-energy sections of
+this observation is h\_R=(I-P\_R)Phi. Its original energy is
+
+\begin{verbatim}
+h_R*A h_R
+   =kappa[G1 G0^(-1)Kobs G0^(-1)G1-G1].               (M8)
+\end{verbatim}
+
+Indeed expansion has two cross terms -kappa G1 and the positive section
+term; both are retained. Also q\_A(Phi c,h\_R d)=kappa\textless Rc,h\_R
+d\textgreater=0. Consequently
+
+\begin{verbatim}
+0<=h_R*A h_R
+   <=[u1 uK/l0^2-1] E <(1/1250)E.                    (M9)
+\end{verbatim}
+
+\subsection{M4. The complete surrounding physical
+space}\label{m4.-the-complete-surrounding-physical-space}
+
+The state projection onto the primitive family is instead
+
+\begin{verbatim}
+P=Phi G2^(-1)Phi*, Q=I-P,
+B=QR:C^M->QH0.                                        (M10)
+\end{verbatim}
+
+It gives the exact leakage Gram
+
+\begin{verbatim}
+B*B=G0-G1 G2^(-1)G1.                                  (M11)
+\end{verbatim}
+
+For each c, P Rc is the state minimum over Phi x. Inserting the
+particular original-coordinate trial x=3c gives
+
+\begin{verbatim}
+0<=B*B<=(R-3Phi)*(R-3Phi)=J3<=beta I.                  (M12)
+\end{verbatim}
+
+No commutativity of G0,G1,G2 is used in this argument.
+
+Every original form vector decomposes as Phi c+h, h in QH0. Its state
+norm and complete energy are
+
+\begin{verbatim}
+||Phi c+h||^2=c*G2 c+||h||^2,
+q_A(Phi c+h)=c*E c+2kappa Re<Bc,h>+q_A(h).             (M13)
+\end{verbatim}
+
+Since q\_A(h)\textgreater=kappa
+d\textbar\textbar h\textbar\textbar\^{}2, the complete mixed term
+satisfies
+
+\begin{verbatim}
+|2kappa Re<Bc,h>|
+   <=2 sqrt(beta/(d l1)) sqrt(c*E c . q_A(h)).          (M14)
+\end{verbatim}
+
+The actual endpoint fractions give beta/(d l1)\textless1/625. Thus every
+vector in the entire physical form domain satisfies the coupled
+comparison
+
+\begin{verbatim}
+(24/25)[c*E c+q_A(h)]
+   <=q_A(Phi c+h)
+   <=(26/25)[c*E c+q_A(h)].                            (M15)
+\end{verbatim}
+
+The off-diagonal term is controlled, not set equal to zero. This is a
+full-space comparison, not a Ritz lower bound on a selected finite
+subspace.
+
+\subsection{M5. The original complementary inverse and complete Schur
+loss}\label{m5.-the-original-complementary-inverse-and-complete-schur-loss}
+
+A Phi=kappa R is bounded as a coefficient map. Hence AP is bounded and
+PA is its adjoint. Subtract the bounded self-adjoint off-diagonal
+QAP+PAQ from A. The resulting self-adjoint operator has reducing
+subspaces PH0,QH0. Its Q restriction is
+
+\begin{verbatim}
+D_Q=QAQ, Dom(D_Q)=Dom(A) intersect QH0,
+D_Q>=kappa d I.                                       (M16)
+\end{verbatim}
+
+The inverse is therefore supplied by the full physical estimate,
+including every vector of the complementary space. Minimizing M13 over
+that whole space gives
+
+\begin{verbatim}
+h_min(c)=-kappa D_Q^(-1)Bc,
+E_full=E-kappa^2 B*D_Q^(-1)B.                          (M17)
+\end{verbatim}
+
+Testing the residual against all complementary form vectors proves this
+is the actual minimum, not only a finite-column stationary point. The
+full loss and restored state metric obey
+
+\begin{verbatim}
+0<=kappa^2 B*D_Q^(-1)B
+   <=(kappa beta/d)I <(1/625)E,
+(624/625)E<E_full<=E,                                 (M18)
+
+G_restored=G2+kappa^2 B*D_Q^(-2)B,
+G2<=G_restored<(601/600)G2.                            (M19)
+\end{verbatim}
+
+The second bound uses beta/(d\^{}2 l2)\textless1/600. All signs, kappa
+factors, original Grams and complementary feedback are retained. The
+graph map c-\textgreater Phi c+h\_min(c) has these exact energy and
+state forms. These estimates address the full complementary coupling
+left by the predecessor heat construction, with constants independent of
+both the number of plaquettes and the exterior box.
+
+\subsection{M6. Fixed supports, their quotients, and a common physical
+heat
+horizon}\label{m6.-fixed-supports-their-quotients-and-a-common-physical-heat-horizon}
+
+For original face sets F subset G put V\_F=Phi(C\^{}F), U\_F=A
+V\_F=kappa R(C\^{}F). The original complexes are
+
+\begin{verbatim}
+V_F --A--> H0 --0-->0.
+\end{verbatim}
+
+Their support transitions are inclusion in degree0 and identity in
+degree1. The exact transported kernel is
+
+\begin{verbatim}
+V_G/V_F -> ker[H0/U_F -> H0/U_G], [h]->[Ah].            (M20)
+\end{verbatim}
+
+Its inverse sends {[}Ah{]} to {[}h{]}. Injectivity of A on H0 proves the
+inverse is independent of representatives. Its coefficient-energy
+minimum, with J=G\textbackslash F, is
+
+\begin{verbatim}
+c_F=-E_FF^(-1)E_FJ c_J,
+Q_E=E_JJ-E_JF E_FF^(-1)E_FJ.                           (M21)
+\end{verbatim}
+
+The removed old-support primitive Phi\_F c\_F and both mixed entries
+remain. The bounds kappa l1 I\textless=E\textless=kappa u1 I imply
+exactly the same bounds for every such quotient minimum in its original
+J coordinates. They follow by minimizing the two complete inequalities
+on the identical affine fiber.
+
+For T\textgreater0 the actual heat columns and forcing defect are
+
+\begin{verbatim}
+Phi_T=(I-exp(-TA))Phi=kappa int_0^T exp(-tA)Rdt,
+A Phi_T=kappa R-kappa exp(-TA)R.                       (M22)
+\end{verbatim}
+
+The omitted primitive is -exp(-TA)Phi. On the complete centered physical
+space, I-exp(-TA) has inverse
+{s\allowbreak{}u\allowbreak{}m\allowbreak{}\_\allowbreak{}(\allowbreak{}n\allowbreak{}\textgreater{}\allowbreak{}=\allowbreak{}0\allowbreak{})\allowbreak{}e\allowbreak{}x\allowbreak{}p\allowbreak{}(\allowbreak{}-\allowbreak{}n\allowbreak{}T\allowbreak{}A\allowbreak{})\allowbreak{},\allowbreak{}}
+also on the graph domain, and commutes with A. Thus it gives a cochain
+isomorphism of every original support diagram. Applying the Split Zero
+support reconstruction retains its support label and receiving zero
+together with this actual primitive.
+
+Set epsilon=exp(-kappa d T). Expanding all three heat Gram terms and
+then applying spectral calculus yields
+
+\begin{verbatim}
+(1-epsilon)^2 G2<=Phi_T*Phi_T<=G2,
+(1-epsilon)^2 E<=Phi_T*A Phi_T<=E.                     (M23)
+\end{verbatim}
+
+Taking minima over the same fixed fibers carries these inequalities
+through every finite sequence of original restrictions and quotients,
+without multiplying a constant for each step. This is precisely the
+HM19--24 minimum-fiber argument of the RH source, whose coefficient maps
+remain fixed before the metric comparison. Each rank remains in the
+determinant bound:
+
+\begin{verbatim}
+|L_T-L|<=2 B[-log(1-epsilon)]<=2B epsilon/(1-epsilon),
+B=sum_j |a_j| rank_j, L=sum_j a_j log det Q_j.          (M24)
+\end{verbatim}
+
+Rank-zero terms keep determinant1. For four signed returns of rank at
+most240, the single physical horizon T=10/kappa=5a/g\^{}2 gives an error
+below4*10\^{}(-10), in every exterior volume. For ranks that grow with
+M, a specified tolerance eta\textgreater0 is reached at the explicit
+original physical time
+
+\begin{verbatim}
+T=(kappa d)^(-1)log(1+2B/eta).                         (M25)
+\end{verbatim}
+
+Thus no growing determinant rank has been discarded. The original
+kappa\^{}rank factors cancel only between the two determinants in the
+identical energy frame.
+
+\subsection{M7. The actual opposite-face result in every exterior
+box}\label{m7.-the-actual-opposite-face-result-in-every-exterior-box}
+
+Keep p=(0,0,0;0,1), q=(0,0,1;0,1), xi=10\^{}(-10), g\^{}2=50000 and
+kappa=100000/a. Their inherited complete coefficient h4(tau) has zero
+degrees0 and2. All original supports contributing to degree4 lie inside
+the L=2 box; hence the same h4 applies in every L\textgreater=2. The new
+uniform tail U30 gives
+
+\begin{verbatim}
+85910/10^7 < C_pq(1/kappa;xi)/xi^4 < 85920/10^7.        (M26)
+\end{verbatim}
+
+The previously proved exact coefficient lower bound
+h4(tau)\textgreater=5 exp(-3tau)/648, tau\textgreater=1, is kept. On
+1\textless=tau\textless=3 the ratio of U30\textquotesingle s full
+remainder to that lower bound is at most
+
+\begin{verbatim}
+(512*648/5) xi^2 R0^(-6)
+   exp(9/2)/[1-(xi/R0)^2] <24/1000.                   (M27)
+\end{verbatim}
+
+Thus the actual connected heat correlation is strictly positive
+throughout
+{1\allowbreak{}/\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}t\allowbreak{}\textless{}\allowbreak{}=\allowbreak{}3\allowbreak{}/\allowbreak{}k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{},\allowbreak{}}
+uniformly over the original exterior volume. The result also passes to
+the constructed spatial-volume limit U33. These statements use all
+higher orders, not only the sign of h4.
+
+\subsection{M8. Infinite plaquette families and the original continuum
+path}\label{m8.-infinite-plaquette-families-and-the-original-continuum-path}
+
+The row-tail and local-limit constructions U9 give bounded operators
+G0,G1,G2,Kobs on l2 of all original plaquettes, with exactly the same
+numerical intervals (M2)--(M5). On finitely supported c, R c is the
+original centered local observable in L2(mu)\_phys. In this
+infinite-family statement Kobs denotes the closed-form pairing
+{k\allowbreak{}a\allowbreak{}p\allowbreak{}p\allowbreak{}a\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}1\allowbreak{})\allowbreak{}q\allowbreak{}\_\allowbreak{}(\allowbreak{}A\allowbreak{}\_\allowbreak{}i\allowbreak{}n\allowbreak{}f\allowbreak{}t\allowbreak{}y\allowbreak{})\allowbreak{}(\allowbreak{}R\allowbreak{}.\allowbreak{},\allowbreak{}R\allowbreak{}.\allowbreak{})\allowbreak{},\allowbreak{}}
+whose boundedness follows from U33 and the cylinder-generator identity
+after it. It does not require asserting that A\_infty R is a bounded
+operator on all l2 coefficients. G0 proves this map extends boundedly
+and is bounded below. Define Phi=kappa A\_infty\^{}(-1)R. Then G1,G2 are
+its original mixed and state Grams by the convergent physical heat
+integrals. They are bounded and bounded below, so P=Phi G2\^{}(-1)Phi*
+is again an actual orthogonal projection.
+
+A\_infty Phi=kappa R is bounded; hence A\_infty P and PA\_infty have the
+same bounded off-diagonal argument as M16. All maps, complementary
+minima and inequalities M6--M19 therefore pass to the complete infinite
+plaquette coefficient space and its full physical complement. This
+passage uses proved bounded operators, not a formal limit of inverses
+without a lower bound.
+
+At fixed admissible g,a this controls the spatial-volume limit. For the
+original simultaneous path a\_n=a0*2\^{}(-n),
+{g\allowbreak{}\_\allowbreak{}n\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}=\allowbreak{}1\allowbreak{}/\allowbreak{}(\allowbreak{}g\allowbreak{}0\allowbreak{}\textasciicircum{}\allowbreak{}(\allowbreak{}-\allowbreak{}2\allowbreak{})\allowbreak{}+\allowbreak{}b\allowbreak{}e\allowbreak{}t\allowbreak{}a\allowbreak{}}
+n log2), the source disk used in U13 is entered exactly when
+c\_n=g0\^{}(-2)+beta n log2\textless sqrt(3)/8. The narrower numerical
+metric domain is c\_n\textless=1/16. For beta\textgreater0 the path
+eventually leaves each of them. The current result removes the 1/M heat
+radius and the unbounded observation-rank loss on a specified
+strong-coupling domain; it does not establish a smooth four-dimensional
+continuum field or finite continuum mass. No universal conclusion is
+inferred merely from a support kernel or an auxiliary norm.
+
+\subsection{M9. What is new in this
+continuation}\label{m9.-what-is-new-in-this-continuation}
+
+The older elementary local source argument U3--U6 has been rederived at
+its own conservative radius. The new calculation combines its full
+scalar return with the Poisson identity U21 to bound an entire
+heat-matrix row, not just one entry. This produces the original
+box-independent analytic remainder U30--U31. The 199-support absolute
+assembly then gives original
+{s\allowbreak{}t\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}/\allowbreak{}r\allowbreak{}e\allowbreak{}s\allowbreak{}p\allowbreak{}o\allowbreak{}n\allowbreak{}s\allowbreak{}e\allowbreak{}/\allowbreak{}k\allowbreak{}i\allowbreak{}n\allowbreak{}e\allowbreak{}t\allowbreak{}i\allowbreak{}c\allowbreak{}}
+metrics for growing families, and M12--M19 controls their full
+complementary coupling. The spatial and physical maps are explicit
+throughout. No larger coupling threshold or previously unaudited
+historical theorem is assigned a new verification status.
+
+\subsection{M10. Sharper original-Haar return and broader family
+domains}\label{m10.-sharper-original-haar-return-and-broader-family-domains}
+
+The additional bound U29b gives the same complete inverse-moment errors
+with the smaller circle R1=45/4096 and prefactors
+{(\allowbreak{}6\allowbreak{}1\allowbreak{}8\allowbreak{}4\allowbreak{}/\allowbreak{}2\allowbreak{}5\allowbreak{})\allowbreak{}(\allowbreak{}8\allowbreak{}/\allowbreak{}1\allowbreak{}5\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}k\allowbreak{}.\allowbreak{}}
+For a fixed real x in that disk put
+{t\allowbreak{}0\allowbreak{}=\allowbreak{}(\allowbreak{}x\allowbreak{}/\allowbreak{}R\allowbreak{}0\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}6\allowbreak{}/\allowbreak{}[\allowbreak{}1\allowbreak{}-\allowbreak{}(\allowbreak{}x\allowbreak{}/\allowbreak{}R\allowbreak{}0\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}]\allowbreak{},\allowbreak{}}
+{t\allowbreak{}1\allowbreak{}=\allowbreak{}(\allowbreak{}x\allowbreak{}/\allowbreak{}R\allowbreak{}1\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}6\allowbreak{}/\allowbreak{}[\allowbreak{}1\allowbreak{}-\allowbreak{}(\allowbreak{}x\allowbreak{}/\allowbreak{}R\allowbreak{}1\allowbreak{})\allowbreak{}\textasciicircum{}\allowbreak{}2\allowbreak{}]\allowbreak{}.\allowbreak{}}
+Define the actual scalar error bounds
+
+\begin{verbatim}
+w_k^sharp=x^2 B_(k,2)+x^4 B_(k,4)
+   +min(512(2/3)^k t0,(6184/25)(8/15)^k t1), k=0,1,2,
+beta^sharp=x^2 B_(J,2)+x^4 B_(J,4)
+   +min(4608t0,(6184/25)[1+6(8/15)+9(8/15)^2]t1).
+\end{verbatim}
+
+The kinetic w\_K from M2 is retained. Each scalar expression is
+increasing in x. Replacing the endpoint l and u values in the already
+proved M7--M19 inequalities by these evaluated sharper endpoints gives
+the following complete original-family bounds, all uniform over
+L\textgreater=2 and a\textgreater0:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1579}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+g\^{}2 at least
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+observed fraction in M7 exceeds
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+E\_full/E exceeds
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+G\_restored/G2 is less than
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+h\_R energy / E is less than
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+10 & 39/50 & 18/25 & 33/25 & 1/6 \\
+12 & 97/100 & 243/250 & 103/100 & 1/60 \\
+16 & 999/1000 & 999/1000 & 1001/1000 & 1/1900 \\
+\end{longtable}
+}
+
+Here every entry with matrix forms means the displayed Loewner
+inequality in the same original coefficient coordinates. The full-space
+gap lower constants used in those three rows are respectively
+{d\allowbreak{}=\allowbreak{}1\allowbreak{}4\allowbreak{}/\allowbreak{}5\allowbreak{},\allowbreak{}7\allowbreak{}2\allowbreak{}/\allowbreak{}2\allowbreak{}5\allowbreak{},\allowbreak{}1\allowbreak{}1\allowbreak{}7\allowbreak{}/\allowbreak{}4\allowbreak{}0\allowbreak{}}
+times kappa. Each follows directly from U26 by squaring its positive
+rational comparison. The file
+{g\allowbreak{}e\allowbreak{}n\allowbreak{}e\allowbreak{}r\allowbreak{}a\allowbreak{}t\allowbreak{}e\allowbreak{}d\allowbreak{}/\allowbreak{}s\allowbreak{}h\allowbreak{}a\allowbreak{}r\allowbreak{}p\allowbreak{}\_\allowbreak{}c\allowbreak{}o\allowbreak{}n\allowbreak{}s\allowbreak{}t\allowbreak{}a\allowbreak{}n\allowbreak{}t\allowbreak{}s\allowbreak{}.\allowbreak{}j\allowbreak{}s\allowbreak{}o\allowbreak{}n\allowbreak{}}
+contains every rational input, interval endpoint and returned fraction;
+the independent auditor recomputes each from the original marked
+coefficients.
+
+At g\^{}2\textgreater=16 the absolute Gram widths obey
+
+\begin{verbatim}
+||G0-I||<124/10^6,
+||G1-I/3||<66/10^6,
+||G2-I/9||<36/10^6,
+||Kobs-3I||<205/10^6,
+B*B< (832/10^6) I.
+\end{verbatim}
+
+The exact unrounded beta\^{}sharp/(d l1\^{}sharp) is smaller than
+1/34\^{}2. Accordingly the full mixed-space comparison M15 sharpens to
+
+\begin{verbatim}
+(33/34)[c*E c+q_A(h)] <= q_A(Phi c+h)
+                        <=(35/34)[c*E c+q_A(h)].       (M28)
+\end{verbatim}
+
+The full complementary minimization loses less than 1/1000 of E and adds
+less than 1/1000 of G2 to the restored state norm. No complementary
+vector or source-kernel direction is removed. The same bounded-operator
+argument in M8 carries these stronger constants to the infinite original
+plaquette family. The earlier M2--M27 endpoints remain valid and have
+their own exact records; this paragraph retains an additional,
+explicitly proved original-Haar estimate rather than silently replacing
+their coefficients.
+\end{document}

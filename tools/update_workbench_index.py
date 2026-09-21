@@ -156,7 +156,7 @@ def programmes() -> list[dict]:
             "id": "YM",
             "title": "Yang–Mills research workbench",
             "human_entry": "yang-mills/README.md",
-            "human_reader": "yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf",
+            "human_reader": "yang-mills/consolidation/20260921/reader/yang_mills_heat_volume_20260921.pdf",
             "latest_continuation": "yang-mills/consolidation/20260921/README.md",
             "ai_entry": "yang-mills/AI_READING_INDEX.md",
             "source_directory": "yang-mills/",
@@ -166,6 +166,9 @@ def programmes() -> list[dict]:
             "fresh_finite_checks": "yang-mills/consolidation/20260921/checks/EXECUTION.json",
             "foundation_edition_doi": "10.5281/zenodo.22678364",
             "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678364",
+            "edition_doi": "10.5281/zenodo.22803564",
+            "edition_url": "https://doi.org/10.5281/zenodo.22803564",
+            "originating_constructions": "ATTRIBUTION.md",
             "research_state": (
                 "The 21 September heat and volume edition adds complete fourth-order "
                 "heat and first-band calculations, a box-independent all-time row "

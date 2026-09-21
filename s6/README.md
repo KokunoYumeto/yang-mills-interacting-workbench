@@ -6,7 +6,7 @@
 
 [What has been tried, why, and what resulted](ATTEMPTS.md)
 
-This is the public entry point for the complete S6 checkpoint frozen on 6 September 2026. The five-page reader is an orientation document; the [full 1,079-file project archive](https://doi.org/10.5281/zenodo.22678442) is hosted in Zenodo because the ZIP is 174 MB. Its guide identifies the cumulative workbench, higher-rung paper, complete TeX/Bib tree, exact checkers/results and historical material.
+This is the public entry point for the complete S6 checkpoint frozen on 6 September 2026. The originating complex-threefold construction was circulated by **Levent Alpöge and produced with Claude**; see the [original manuscript](https://alpo.ge/s6.pdf) and our [point-of-use attribution](../ATTRIBUTION.md#the-s6-construction-and-the-period-dependent-magnetic-branch). The five-page reader is an orientation document; the [full 1,079-file project archive](https://doi.org/10.5281/zenodo.22678442) is hosted in Zenodo because the ZIP is 174 MB. Its guide identifies the cumulative workbench, higher-rung paper, complete TeX/Bib tree, exact checkers/results and historical material.
 
 The full archive is byte-verified and preserves the earlier 28 published S6 artifacts. It is not a new claim that every exploratory step is a theorem: the guide and papers retain their exact qualifications. In particular, the package does not independently certify a global complex structure on S6, establish a CDP20 counterexample, or establish a Yang–Mills mass-gap theorem.
 

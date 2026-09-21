@@ -1,0 +1,84 @@
+{
+  "schema": "ym-heat-volume-reader-qa-v1",
+  "pdf_pages": 46,
+  "rendered_pages": 46,
+  "latex_material_errors": [],
+  "body_text_outliers": [],
+  "private_markers": [],
+  "required_text_missing": [],
+  "contact_sheets": [
+    "contact-1.png",
+    "contact-2.png",
+    "contact-3.png",
+    "contact-4.png"
+  ],
+  "literal_mathematical_character_counts": {
+    "*": {
+      "source": 115,
+      "pdf": 115
+    },
+    "_": {
+      "source": 826,
+      "pdf": 826
+    },
+    "<": {
+      "source": 230,
+      "pdf": 230
+    },
+    ">": {
+      "source": 134,
+      "pdf": 134
+    }
+  },
+  "standalone_tex_build": "Passed in an otherwise empty directory with two XeLaTeX passes; every page's extracted text is identical.",
+  "pdf_metadata": {
+    "/Creator": "Pandoc and XeLaTeX",
+    "/Title": "Heat correlations and the full physical complement in SU(2) lattice Yang-Mills theory",
+    "/Subject": "Fourth-order heat, volume-independent error, and the full physical complement",
+    "/Author": "KokunoYumeto",
+    "/Producer": "MiKTeX-dvipdfmx (20260404)",
+    "/CreationDate": "D:20260921062518+02'00'"
+  },
+  "artifacts": {
+    "yang_mills_heat_volume_20260921.pdf": {
+      "bytes": 217617,
+      "sha256": "9c7f5e9b821089a16884712c8e01817023064d1620709fbcbc95777b85e85f7c"
+    },
+    "yang_mills_heat_volume_20260921.md": {
+      "bytes": 112346,
+      "sha256": "77b15e69df7f3be5a9c92af166215403d472a0d188db7e55a9ec07d91c5e4af2"
+    },
+    "yang_mills_heat_volume_20260921.tex": {
+      "bytes": 166376,
+      "sha256": "9382fce9044c5cd37a36229707fa8a3cae7122563a2db1878c21ad20fde4a93d"
+    },
+    "source_integrity.json": {
+      "bytes": 2558,
+      "sha256": "75aa26d604f5fcf273fbad4d11160c06c8b8741d43503fb09f4d12d3dbfdea24"
+    },
+    "reader_introduction.md": {
+      "bytes": 17920,
+      "sha256": "25c04ccf2b86f9b77733f1b1c305e21686a0a2a1ac33804bb8d7226f4ce3ea87"
+    },
+    "build_reader.py": {
+      "bytes": 5887,
+      "sha256": "e0890dd9bb56a6faa4b3a2aaee583367e9e55f6d386858004a8ec73c8774e92e"
+    },
+    "reader_template.tex": {
+      "bytes": 2735,
+      "sha256": "19605a5f29a5a73b1c5f4e134ff19a376103d8c8dda8bd878d607b25c6f20483"
+    },
+    "inline_code.lua": {
+      "bytes": 1122,
+      "sha256": "53279c718e73a6a4976edc29ac6f6799de9b6e8db5559c3eec402912df267757"
+    }
+  },
+  "visual_review": {
+    "pdf_sha256": "9c7f5e9b821089a16884712c8e01817023064d1620709fbcbc95777b85e85f7c",
+    "pages": 46,
+    "status": "pass",
+    "review": "All 46 final pages inspected in four complete contact sheets. Introduction formulas and attribution inspected at 135 dpi; numerical tables and original-source formula blocks inspected at 135 dpi. The final literal-star repair was checked at full resolution on appendix page E.1 (PDF page 40). No clipping, overlapping text, missing glyphs, or broken tables found. Appendix headings and contents are actually lettered A-E.",
+    "source_preservation": "All five complete source texts are retained exactly once in the assembled Markdown after UTF-8 BOM/newline handling. Render-only escapes preserve literal adjoint/multiplication asterisks and coordinate underscores. Extracted PDF appendix counts equal source counts for 115 asterisks, 826 underscores, 230 less-than signs, and 134 greater-than signs.",
+    "independent_check": "A separate read-only agent checked the introduction's constants, domains, complementary-space formulas and fixed-spacing limitation against source manuscripts, and inspected all pages. Its requested clarification that the four determinant coefficients are plus or minus one was incorporated. This is presentation and source-consistency QA, not an independent proof of every analytical assertion."
+  }
+}

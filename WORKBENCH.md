@@ -22,7 +22,7 @@ The spatial manuscript includes corrected oscillator path rates in §26.13 and t
 
 ## S6: reconstructing and examining a proposed geometric construction
 
-This programme reconstructs the supplied sphere/complex-geometry construction, makes calculations and maps explicit, and records subsequent questions involving torus degenerations and higher-rung constructions. The purpose is to make the argument inspectable and to investigate consequences without silently assuming that every global claim in the original construction has been established.
+This programme reconstructs the sphere/complex-geometry construction circulated by **Levent Alpöge and produced with Claude**, makes calculations and maps explicit, and records subsequent questions involving torus degenerations and higher-rung constructions. Its regular-fibre period data also enter the Yang–Mills magnetic-background calculations. [Primary sources and precise points of use](ATTRIBUTION.md#the-s6-construction-and-the-period-dependent-magnetic-branch) distinguish this construction from Alpöge's separate Jacobian counterexample. The purpose is to make the argument inspectable and to investigate consequences without silently assuming that every global claim in the original construction has been established.
 
 Start with [the five-page key-advances reader](s6/26_s6_key_advances_frozen_2026-09-06.pdf), then [the project guide](s6/README.md). The complete project frozen on 6 September contains the original transcription, historical annotations, subsequent workbench, topic drafts, TeX/Bib sources and exact check records. It is available in the [S6 archived edition](https://doi.org/10.5281/zenodo.22678442).
 

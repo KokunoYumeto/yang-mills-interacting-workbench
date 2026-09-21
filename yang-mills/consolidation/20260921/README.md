@@ -2,9 +2,11 @@
 
 This edition studies how local plaquette observables evolve under the heat flow of the interacting SU(2) lattice Hamiltonian, and how much their inverse-energy states interact with the rest of the physical Hilbert space. It includes the complete fourth-order heat calculation, then a continuation whose heat-error bounds do not grow with the box. The latter also constructs a spatial-volume limit at fixed lattice spacing and bounds the energy change when all complementary physical states are allowed to relax.
 
-The complete arguments, coefficient tables and executable checks are available here, not only this overview. The five new proof manuscripts are supplied in Markdown; the earlier [LaTeX manuscripts](../../README.md#full-proofs-and-editable-latex) remain available separately.
+Start with the [mathematical reader](reader/yang_mills_heat_volume_20260921.pdf): it introduces the original objects, states the results and explains their connections, then includes all five complete proof manuscripts. The [standalone editable LaTeX](reader/yang_mills_heat_volume_20260921.tex), [complete Markdown](reader/yang_mills_heat_volume_20260921.md) and [reader build instructions](reader/BUILDING_READER.md) accompany it. The complete coefficient tables and executable checks are available below, not only this overview; earlier [LaTeX manuscripts](../../README.md#full-proofs-and-editable-latex) remain available separately.
 
 ## Read the arguments
+
+The [archived edition on Zenodo](https://doi.org/10.5281/zenodo.22803564) includes the new reader as its default preview, both cumulative source archives, the earlier readers and the dated attribution clarification. The five new source manuscripts retain their original bytes.
 
 | Manuscript | Contents |
 | --- | --- |
@@ -103,3 +105,5 @@ The supplied records additionally contain the full coefficient-production, polyn
 From the extracted volume archive root, a non-mutating integrity check is `python -B verify_cumulative.py`. The volume checker can be run in its directory with `python -B audit_bounds.py --verify-receipt verification.json`; the heat checker uses `python -B verify.py --verify-receipt verification.json`. Adding `-O` preserves their explicit checks. Full supplied replays regenerate files: use a disposable copy. In particular, the volume replay requires a **new disposable output directory**, since it removes its `fresh/` subdirectory.
 
 Human antecedents and their point-of-use citations remain in the original manuscripts: Schütte–Zheng–Hamer for the exponential-vacuum and character framework, Feshbach–Schur methods for the block return, Eymard for Fourier algebra, and Lumer–Phillips for semigroup generation. The source attributions and existing notices are preserved; no new priority claim is assigned by this integration.
+
+The earlier geometric and material branches also depend on **Levent Alpöge's originating work**: his announced Jacobian polynomial and, separately, the regular-fibre period data of the S6 construction circulated by him and produced with Claude. The [attribution clarification](../../../ATTRIBUTION.md) gives the original sources and exact uses in the older Yang–Mills notes, while distinguishing those inputs from the later state maps and the present heat estimates.

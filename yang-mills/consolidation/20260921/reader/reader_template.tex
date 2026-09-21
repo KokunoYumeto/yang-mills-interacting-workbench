@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}[Scale=0.86]
+\usepackage{amsmath,amssymb}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{longtable,booktabs,array}
+\newcounter{none}
+\usepackage{calc}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{244B70}
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\small,breaklines=true,breakanywhere=true,breaksymbolleft={},breaksymbolright={},xleftmargin=5pt}
+\usepackage{enumitem}
+\setlist{itemsep=2pt,parsep=1pt,topsep=4pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small SU(2) lattice Yang-Mills heat correlations}
+\fancyhead[R]{\small 21 September 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=linkblue,urlcolor=linkblue,pdftitle={$title$},pdfauthor={$author$},pdfsubject={Fourth-order heat, volume-independent error, and the full physical complement},pdfcreator={Pandoc and XeLaTeX}}
+\usepackage{bookmark}
+\urlstyle{same}
+\setlength{\emergencystretch}{4em}
+\hfuzz=0.2pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\let\originalsection\section
+\renewcommand{\section}{\clearpage\originalsection}
+\let\originaldisplaystart\[
+\let\originaldisplayend\]
+\renewcommand{\[}{\begingroup\small\originaldisplaystart}
+\renewcommand{\]}{\originaldisplayend\endgroup}
+\begin{document}
+\begin{titlepage}
+\vspace*{14mm}
+{\sffamily\Large MATHEMATICAL READER\par}
+\vspace{12mm}
+{\LARGE\bfseries $title$\par}
+\vspace{9mm}
+{\large $subtitle$\par}
+\vspace{13mm}
+{\large $author$\par}
+\vspace{3mm}
+{$date$\par}
+\vfill
+\begin{minipage}{0.96\textwidth}
+A mathematical introduction followed by all five complete proof manuscripts. The original link coordinates, Haar pairings, physical time and complementary states are retained. The results concern a stated strong-coupling domain and spatial volume at fixed lattice spacing; a four-dimensional continuum mass gap is not claimed.
+
+\medskip
+The earlier workbench's distinct \(S^6\) and Jacobian inputs are credited to Levent Alpöge and their named collaborators in the introduction. The present heat transfer's precise dependencies are identified separately.
+\end{minipage}
+\vspace{10mm}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+$body$
+\end{document}
