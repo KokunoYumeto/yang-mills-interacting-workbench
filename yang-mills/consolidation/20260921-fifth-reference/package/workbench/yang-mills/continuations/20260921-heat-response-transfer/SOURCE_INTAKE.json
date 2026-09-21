@@ -1,0 +1,96 @@
+{
+  "schema": "ym-heat-source-intake-v1",
+  "date": "2026-09-21",
+  "records": [
+    {
+      "id": "RH-HM",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "commit": "128aa308dd2a70ba6e073816a957d1ee6414ba2c",
+      "path": "workbenches/splitzero-tandem/continuations/20260919-circle-heat-original-metrics/HEAT_TO_ORIGINAL_QUOTIENT_METRICS.tex",
+      "blob": "e7e61a29947e2b93ae6f8d646e9545fa7234d405",
+      "read_lines": [
+        [
+          1,
+          300
+        ],
+        [
+          300,
+          445
+        ]
+      ],
+      "used": "HM6-HM14, HM19-HM24; complete-column heat comparison and identical-fiber minimum.",
+      "receiving_proof": "RH_HEAT_TRANSFER.md:T2-T4"
+    },
+    {
+      "id": "RH-HG",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "commit": "128aa308dd2a70ba6e073816a957d1ee6414ba2c",
+      "path": "workbenches/splitzero-tandem/continuations/20260919-original-heat-source-endpoint/ORIGINAL_HEAT_AND_SOURCE_ENDPOINT.tex",
+      "read_lines": [
+        [
+          1,
+          240
+        ]
+      ],
+      "used": "HG6-HG10 raw observed/kernel/mixed-current comparison. HG1-HG5 read as arithmetic source estimates, not imported physical constants.",
+      "receiving_proof": "RH_HEAT_TRANSFER.md:T5",
+      "blob": "9e0bba85dce3777099585bf4c179aea3a82621a5"
+    },
+    {
+      "id": "RH-IK",
+      "repository": "KokunoYumeto/zeta-function-research-reader",
+      "commit": "128aa308dd2a70ba6e073816a957d1ee6414ba2c",
+      "path": "workbenches/splitzero-tandem/continuations/20260921-directional-inverse-power/007/INVERSE_POWER_CONDUCTOR_OBSERVABILITY.tex",
+      "blob": "0923874d130d1dee05e1037e4630b156d50ca2ec",
+      "read_lines": [
+        [
+          1,
+          230
+        ],
+        [
+          231,
+          340
+        ]
+      ],
+      "used": "Complete short proof read; IK9-IK12 left inverse and original observation metric mechanism. No arithmetic node or constant imported.",
+      "receiving_proof": "RH_HEAT_TRANSFER.md:T7"
+    },
+    {
+      "id": "YM0",
+      "repository": "KokunoYumeto/yang-mills-interacting-workbench",
+      "commit": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md",
+      "blob": "dfee77c0ca0d6ed897c4172fcbfe23cd9d10d313",
+      "read_lines": [
+        [
+          1,
+          90
+        ]
+      ],
+      "used": "Original operator, all physical boundary gauge transformations, Haar domain, positive vacuum and exact maximal-tree map."
+    }
+  ],
+  "additional_orientation": "Current RH README and directional-inverse-power README inspected at the same pin. Unread current proof bodies are not mathematical premises.",
+  "primary_literature": [
+    {
+      "authors": "D. Schuette, Zheng Weihong, C. J. Hamer",
+      "title": "The Coupled Cluster Method in Hamiltonian Lattice Field Theory",
+      "source": "https://arxiv.org/abs/hep-lat/9603026",
+      "scope": "Primary abstract checked this cycle; complete historical source remains cited in predecessor. Exponential and character/Casimir antecedent, not an external verification of new coefficients."
+    },
+    {
+      "authors": "Genevieve Dusson, Israel Sigal, Benjamin Stamm",
+      "title": "The Feshbach-Schur map and perturbation theory",
+      "source": "https://arxiv.org/abs/2105.02058",
+      "scope": "Primary abstract checked; block-resolvent antecedent. New finite constants proved in own source."
+    },
+    {
+      "authors": "NIST DLMF, Chapter 28 contributors",
+      "source": "https://dlmf.nist.gov/28.6",
+      "formula": "28.6.5",
+      "scope": "Displayed b2 series checked through degree eight using retained map e_one(xi)=b2(-4xi)/4-1."
+    }
+  ],
+  "old_audit": "The supplied independent report at original line235 retains a qualification on the older volume-uniform analytical chain. This continuation supplies its own finite-volume analytic proof, not a recertification of that chain.",
+  "remote_writes": false
+}

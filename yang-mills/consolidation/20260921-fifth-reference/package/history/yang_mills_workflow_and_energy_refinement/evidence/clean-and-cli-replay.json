@@ -1,0 +1,63 @@
+{
+  "scope": "Independent process replay and named CLI failure modes; no analytic proof certification",
+  "executions": [
+    {
+      "case": "clean-ordinary",
+      "returncode": 0,
+      "stdout_sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed"
+    },
+    {
+      "case": "clean-optimized",
+      "returncode": 0,
+      "stdout_sha256": "98741429d7b350fb210c4bcb99e50fe5f16396bb8fe417d42cacdb4e8e5b40ed"
+    },
+    {
+      "case": "changed-note-receipt",
+      "optimized": false,
+      "returncode": 1,
+      "error": "execution-receipt-drift"
+    },
+    {
+      "case": "changed-peer-head",
+      "optimized": false,
+      "returncode": 1,
+      "error": "source-drift:yang-mills:main"
+    },
+    {
+      "case": "unsupported-continuum-claim",
+      "optimized": false,
+      "returncode": 1,
+      "error": "unsupported-continuum-claim"
+    },
+    {
+      "case": "changed-cached-source",
+      "optimized": false,
+      "returncode": 1,
+      "error": "cached-source-drift:YM1"
+    },
+    {
+      "case": "changed-note-receipt",
+      "optimized": true,
+      "returncode": 1,
+      "error": "execution-receipt-drift"
+    },
+    {
+      "case": "changed-peer-head",
+      "optimized": true,
+      "returncode": 1,
+      "error": "source-drift:yang-mills:main"
+    },
+    {
+      "case": "unsupported-continuum-claim",
+      "optimized": true,
+      "returncode": 1,
+      "error": "unsupported-continuum-claim"
+    },
+    {
+      "case": "changed-cached-source",
+      "optimized": true,
+      "returncode": 1,
+      "error": "cached-source-drift:YM1"
+    }
+  ]
+}

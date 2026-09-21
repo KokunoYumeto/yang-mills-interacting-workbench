@@ -1,0 +1,124 @@
+{
+  "scope": "Fresh manifest, exact fast arithmetic/tensor/anchor replay and sealed-source consistency only. Supplied full polynomial, dual-certificate and producer execution records were inspected, not rerun. No Lean or analytic certification.",
+  "checks": [
+    {
+      "name": "manifest-before",
+      "command": [
+        "python",
+        "-B",
+        "verify_cumulative.py"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "seconds": 10.057,
+      "sampled_peak_process_tree_rss_bytes": 50683904,
+      "sampled_rss_stop_bytes": 503316480,
+      "time_cap_seconds": 180,
+      "maximum_process_count": 1,
+      "stopped": null,
+      "stdout_sha256": "b8bb7455172d286e9d5dbb055fe573695e0d9837436c49ca13a56a88a3aa66c7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "files": 2767,
+        "text_bytes": 119070317
+      }
+    },
+    {
+      "name": "fifth-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-fifth-reference-return",
+      "exit_code": 0,
+      "seconds": 56.975,
+      "sampled_peak_process_tree_rss_bytes": 224387072,
+      "sampled_rss_stop_bytes": 503316480,
+      "time_cap_seconds": 180,
+      "maximum_process_count": 1,
+      "stopped": null,
+      "stdout_sha256": "b056f000c1dcbaa8b438a857f55466c5b0db80fd4e30682b18ea40019a849888",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "named_checks": 51,
+        "false_formula_controls": 11,
+        "scope": {
+          "analytic_arguments_formalized": false,
+          "continuum_mass_gap_established": false,
+          "exact_dual_certificates": 5726,
+          "external_analytical_review": false,
+          "full_new_channel_polynomials_in_separate_replay": 321,
+          "inherited_rows": 662,
+          "original_anchored_transports": 124864,
+          "sixth_catalogue_recovered": false,
+          "word_tensor_matrices": 316
+        }
+      }
+    },
+    {
+      "name": "fifth-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-fifth-reference-return",
+      "exit_code": 0,
+      "seconds": 92.16,
+      "sampled_peak_process_tree_rss_bytes": 224169984,
+      "sampled_rss_stop_bytes": 503316480,
+      "time_cap_seconds": 180,
+      "maximum_process_count": 1,
+      "stopped": null,
+      "stdout_sha256": "b056f000c1dcbaa8b438a857f55466c5b0db80fd4e30682b18ea40019a849888",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "named_checks": 51,
+        "false_formula_controls": 11,
+        "scope": {
+          "analytic_arguments_formalized": false,
+          "continuum_mass_gap_established": false,
+          "exact_dual_certificates": 5726,
+          "external_analytical_review": false,
+          "full_new_channel_polynomials_in_separate_replay": 321,
+          "inherited_rows": 662,
+          "original_anchored_transports": 124864,
+          "sixth_catalogue_recovered": false,
+          "word_tensor_matrices": 316
+        }
+      }
+    },
+    {
+      "name": "manifest-after",
+      "command": [
+        "python",
+        "-B",
+        "verify_cumulative.py"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "seconds": 26.93,
+      "sampled_peak_process_tree_rss_bytes": 44695552,
+      "sampled_rss_stop_bytes": 503316480,
+      "time_cap_seconds": 180,
+      "maximum_process_count": 1,
+      "stopped": null,
+      "stdout_sha256": "b8bb7455172d286e9d5dbb055fe573695e0d9837436c49ca13a56a88a3aa66c7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "files": 2767,
+        "text_bytes": 119070317
+      }
+    }
+  ]
+}

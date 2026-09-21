@@ -1,0 +1,30 @@
+{
+  "schema": "ym-volume-heat-state-v1",
+  "date": "2026-09-21",
+  "original_target": "Interacting four-dimensional continuum Yang-Mills mass gap",
+  "original_operator": "SU(2), all original open-box links/faces and vertex constraints, kappa=2g^2/a, xi=1/(4g^4)",
+  "new_proved_written_results": [
+    "U29-U31: full heat and inverse-moment row bounds with fixed complex source radius3/256",
+    "M2-M5: all original plaquette families in every box have computed original Gram intervals atg^2>=16",
+    "M12-M19: complete complementary Schur loss<1/625 and restored norm addition<1/600",
+    "U32-U33 and M8: coefficient-local full spatial limit and infinite plaquette-family operator return",
+    "M26-M27: actual original opposite-face heat positivity in all exterior volumes",
+    "U29a-U29b,M10: original-Haar split sharpens heat prefactors; full-complement energy loss<1/1000 atg^2>=16 and controlled family return already atg^2>=10"
+  ],
+  "new_analysis_review_scope": "The elementary local-source bound, mean return, generation domain, complete heat row estimate, and complement return are written here. Finite exact tests do not certify analytic proof. No independent external analytical review or Lean run.",
+  "older_stronger_gap_claims_recertified": false,
+  "continuum_gap_established": false,
+  "previous_missing_sixth_catalogue_recovered": false,
+  "quantified_remaining_limits": [
+    "Standing shrinking-g refinement path eventually exits the fixed strong-coupling disk.",
+    "The original kinetic/magnetic refinement defect remains to be controlled on a coupling-dependent source extending that path."
+  ],
+  "selected_next_calculation": "Quantify the same original heat-row and full-complement return under a nonzero-coupling reference and the explicit original two-link refinement defect. Keep the complex source domain and physical scale together; the fixed-radius spatial problem is now completed on its stated domain.",
+  "remote_write_performed": false,
+  "background_research": false,
+  "proofs": [
+    "VOLUME_UNIFORM_HEAT.md",
+    "GROWING_OBSERVATIONS_AND_COMPLEMENT.md"
+  ],
+  "check": "audit_bounds.py"
+}

@@ -1,0 +1,589 @@
+{
+  "all_passed": true,
+  "records": [
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "produce_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "producer-ordinary",
+      "log_sha256": "6bcf906c7e0ed867cf79800c0153beccd6e56a05abe8dd82915ff3b7f87b3722",
+      "passed": true,
+      "seconds": 1.0001290790000894
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "sharpen_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "sharpened-ordinary",
+      "log_sha256": "9945572d0f4c51555d58761834d50f710aec1cf5a2f1cb0bfc26bac5996c690b",
+      "passed": true,
+      "seconds": 0.6279024539999227
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "route_check.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "route-ordinary",
+      "log_sha256": "0453e78dedbb95b17e2d48094e1a158a4e01be5ba0a3889a773bd51077176313",
+      "passed": true,
+      "seconds": 0.5738888359999237
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "auditor-ordinary",
+      "log_sha256": "03bd0fc25c9af55ee3b9d644cbbe51efe776609d53d0815f04f740128c165236",
+      "passed": true,
+      "seconds": 3.568215031000136
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "produce_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "producer-optimized",
+      "log_sha256": "6bcf906c7e0ed867cf79800c0153beccd6e56a05abe8dd82915ff3b7f87b3722",
+      "passed": true,
+      "seconds": 2.3673018070001035
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "sharpen_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "sharpened-optimized",
+      "log_sha256": "9945572d0f4c51555d58761834d50f710aec1cf5a2f1cb0bfc26bac5996c690b",
+      "passed": true,
+      "seconds": 1.89959440299981
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "route_check.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "route-optimized",
+      "log_sha256": "0453e78dedbb95b17e2d48094e1a158a4e01be5ba0a3889a773bd51077176313",
+      "passed": true,
+      "seconds": 1.8322271810000075
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "auditor-optimized",
+      "log_sha256": "03bd0fc25c9af55ee3b9d644cbbe51efe776609d53d0815f04f740128c165236",
+      "passed": true,
+      "seconds": 4.9100208609997935
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "produce_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-producer-ordinary",
+      "log_sha256": "6bcf906c7e0ed867cf79800c0153beccd6e56a05abe8dd82915ff3b7f87b3722",
+      "passed": true,
+      "seconds": 0.9591151479999098
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "sharpen_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-sharpened-ordinary",
+      "log_sha256": "9945572d0f4c51555d58761834d50f710aec1cf5a2f1cb0bfc26bac5996c690b",
+      "passed": true,
+      "seconds": 0.5703695649999645
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "route_check.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-route-ordinary",
+      "log_sha256": "0453e78dedbb95b17e2d48094e1a158a4e01be5ba0a3889a773bd51077176313",
+      "passed": true,
+      "seconds": 0.5651880569998866
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-auditor-ordinary",
+      "log_sha256": "03bd0fc25c9af55ee3b9d644cbbe51efe776609d53d0815f04f740128c165236",
+      "passed": true,
+      "seconds": 3.432356185000117
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "produce_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-producer-optimized",
+      "log_sha256": "6bcf906c7e0ed867cf79800c0153beccd6e56a05abe8dd82915ff3b7f87b3722",
+      "passed": true,
+      "seconds": 2.3380372480000915
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "sharpen_bounds.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-sharpened-optimized",
+      "log_sha256": "9945572d0f4c51555d58761834d50f710aec1cf5a2f1cb0bfc26bac5996c690b",
+      "passed": true,
+      "seconds": 1.8945303030000105
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "route_check.py",
+        "--verify-existing"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-route-optimized",
+      "log_sha256": "0453e78dedbb95b17e2d48094e1a158a4e01be5ba0a3889a773bd51077176313",
+      "passed": true,
+      "seconds": 1.8983338309999453
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "fresh-auditor-optimized",
+      "log_sha256": "03bd0fc25c9af55ee3b9d644cbbe51efe776609d53d0815f04f740128c165236",
+      "passed": true,
+      "seconds": 4.8715421770000376
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "source-identity-mismatch",
+      "expected_exit": 1,
+      "label": "proof-identity-ordinary",
+      "log_sha256": "96132a16dab08a38f0236d1f88aeb6a38f996579437cebb0555367afdfe40633",
+      "passed": true,
+      "seconds": 0.5757541140001194
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "source-identity-mismatch",
+      "expected_exit": 1,
+      "label": "proof-identity-optimized",
+      "log_sha256": "96132a16dab08a38f0236d1f88aeb6a38f996579437cebb0555367afdfe40633",
+      "passed": true,
+      "seconds": 1.8339201589999448
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "missing-source:generated/anchored_coefficients.json",
+      "expected_exit": 1,
+      "label": "missing-coefficients-ordinary",
+      "log_sha256": "a511e552ad6020401aacbe35c5d123f3e18a8873ba55fd341f8d663e2a2bda00",
+      "passed": true,
+      "seconds": 0.5632732320000287
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "missing-source:generated/anchored_coefficients.json",
+      "expected_exit": 1,
+      "label": "missing-coefficients-optimized",
+      "log_sha256": "a511e552ad6020401aacbe35c5d123f3e18a8873ba55fd341f8d663e2a2bda00",
+      "passed": true,
+      "seconds": 1.8777060280001479
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "duplicate-json-key:schema",
+      "expected_exit": 1,
+      "label": "duplicate-receipt-key-ordinary",
+      "log_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "passed": true,
+      "seconds": 0.5927066940000714
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "duplicate-json-key:schema",
+      "expected_exit": 1,
+      "label": "duplicate-receipt-key-optimized",
+      "log_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "passed": true,
+      "seconds": 1.8222292810000909
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "receipt-mismatch",
+      "expected_exit": 1,
+      "label": "wrong-complete-receipt-ordinary",
+      "log_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "passed": true,
+      "seconds": 3.474704099000064
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "receipt-mismatch",
+      "expected_exit": 1,
+      "label": "wrong-complete-receipt-optimized",
+      "log_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "passed": true,
+      "seconds": 4.852895469000032
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "all-original-moments-0",
+      "expected_exit": 1,
+      "label": "rebound-original-moment-ordinary",
+      "log_sha256": "99e9f6bef5c7bb41abeef01d7f18c87c59219971eb29c2d7f8635f6e5a3592ce",
+      "passed": true,
+      "seconds": 0.6196759260001272
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "all-original-moments-0",
+      "expected_exit": 1,
+      "label": "rebound-original-moment-optimized",
+      "log_sha256": "99e9f6bef5c7bb41abeef01d7f18c87c59219971eb29c2d7f8635f6e5a3592ce",
+      "passed": true,
+      "seconds": 2.0707436049999615
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "complete-199-original-clusters",
+      "expected_exit": 1,
+      "label": "rebound-missing-support-ordinary",
+      "log_sha256": "94421a652aaef637e6734bee6ef1c48eec5df3aeee0399c98d6a8432423a0589",
+      "passed": true,
+      "seconds": 0.6932867779999015
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "complete-199-original-clusters",
+      "expected_exit": 1,
+      "label": "rebound-missing-support-optimized",
+      "log_sha256": "94421a652aaef637e6734bee6ef1c48eec5df3aeee0399c98d6a8432423a0589",
+      "passed": true,
+      "seconds": 1.9510288270000729
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "sharp-all-original-return-values-16",
+      "expected_exit": 1,
+      "label": "rebound-complement-loss-ordinary",
+      "log_sha256": "9bc4d1285dae16103fad6cc3bdb87db678474264d4eabd24df0ebc3099412558",
+      "passed": true,
+      "seconds": 3.556772886999852
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "sharp-all-original-return-values-16",
+      "expected_exit": 1,
+      "label": "rebound-complement-loss-optimized",
+      "log_sha256": "9bc4d1285dae16103fad6cc3bdb87db678474264d4eabd24df0ebc3099412558",
+      "passed": true,
+      "seconds": 4.79588442499994
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "missing-predecessor:heat_matrix_L2.json",
+      "expected_exit": 1,
+      "label": "missing-parent-matrix-ordinary",
+      "log_sha256": "742d41db99b067d0e27b480d1e194e4f07699fab43e37a08ce1efe57cbbf14f1",
+      "passed": true,
+      "seconds": 0.5846306260000347
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "expected_error": "missing-predecessor:heat_matrix_L2.json",
+      "expected_exit": 1,
+      "label": "missing-parent-matrix-optimized",
+      "log_sha256": "742d41db99b067d0e27b480d1e194e4f07699fab43e37a08ce1efe57cbbf14f1",
+      "passed": true,
+      "seconds": 1.889043098000002
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "restored-ordinary",
+      "log_sha256": "03bd0fc25c9af55ee3b9d644cbbe51efe776609d53d0815f04f740128c165236",
+      "passed": true,
+      "seconds": 3.584326777999877
+    },
+    {
+      "bytes_unchanged": true,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "expected_error": null,
+      "expected_exit": 0,
+      "label": "restored-optimized",
+      "log_sha256": "03bd0fc25c9af55ee3b9d644cbbe51efe776609d53d0815f04f740128c165236",
+      "passed": true,
+      "seconds": 4.93385427599992
+    }
+  ],
+  "schema": "ym-volume-replay-v1"
+}

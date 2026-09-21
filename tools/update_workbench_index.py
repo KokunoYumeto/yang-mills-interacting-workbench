@@ -156,20 +156,29 @@ def programmes() -> list[dict]:
             "id": "YM",
             "title": "Yang–Mills research workbench",
             "human_entry": "yang-mills/README.md",
-            "human_reader": "yang-mills/consolidation/20260921/reader/yang_mills_heat_volume_20260921.pdf",
-            "latest_continuation": "yang-mills/consolidation/20260921/README.md",
+            "human_reader": "yang-mills/consolidation/20260921-fifth-reference/reader/yang_mills_fifth_reference_20260921.pdf",
+            "latest_continuation": "yang-mills/consolidation/20260921-fifth-reference/README.md",
             "ai_entry": "yang-mills/AI_READING_INDEX.md",
             "source_directory": "yang-mills/",
-            "research_state_document": "yang-mills/consolidation/20260921/README.md",
-            "source_manifest": "yang-mills/consolidation/20260921/package/MANIFEST.json",
-            "source_intake": "yang-mills/consolidation/20260921/SOURCE_INTAKE.json",
-            "fresh_finite_checks": "yang-mills/consolidation/20260921/checks/EXECUTION.json",
+            "research_state_document": "yang-mills/consolidation/20260921-fifth-reference/README.md",
+            "source_manifest": "yang-mills/consolidation/20260921-fifth-reference/package/MANIFEST.json",
+            "source_intake": "yang-mills/consolidation/20260921-fifth-reference/checks/PUBLIC_VALIDATION.json",
+            "fresh_finite_checks": "yang-mills/consolidation/20260921-fifth-reference/checks/PUBLIC_VALIDATION.json",
             "foundation_edition_doi": "10.5281/zenodo.22678364",
             "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678364",
-            "edition_doi": "10.5281/zenodo.22803564",
-            "edition_url": "https://doi.org/10.5281/zenodo.22803564",
+            "edition_doi": "10.5281/zenodo.22883643",
+            "edition_url": "https://doi.org/10.5281/zenodo.22883643",
             "originating_constructions": "ATTRIBUTION.md",
             "research_state": (
+                "The fifth-reference successor evaluates the entire residual and "
+                "a convergent correction including its endpoint, with sufficient "
+                "original coupling threshold g^2>=1/(2 sqrt(alpha5)), approximately "
+                "3.6835519839857273. It returns the source to the complete physical "
+                "spectrum, enlarges the heat circle to 1/55, and bounds full-complement "
+                "energy and state corrections below 1/2000 at g^2>=13. Both full "
+                "proofs and all 2768 cumulative files are preserved. Fresh ordinary "
+                "and optimized fast finite checks are distinct from supplied full "
+                "producer executions and written analytic arguments. "
                 "The 21 September heat and volume edition adds complete fourth-order "
                 "heat and first-band calculations, a box-independent all-time row "
                 "estimate on source radius 3/256, a fixed-spacing spatial-volume "
@@ -200,7 +209,8 @@ def programmes() -> list[dict]:
             "description_basis": ["yang-mills/README.md", "yang-mills/AI_READING_INDEX.md",
                                   "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
                                   "yang-mills/consolidation/20260919/README.md",
-                                  "yang-mills/consolidation/20260921/README.md"],
+                                  "yang-mills/consolidation/20260921/README.md",
+                                  "yang-mills/consolidation/20260921-fifth-reference/README.md"],
         },
         {
             "id": "S6",

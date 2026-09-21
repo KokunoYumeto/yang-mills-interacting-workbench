@@ -1,0 +1,515 @@
+{
+  "analytic_arguments_formalized": false,
+  "anchored_transports_per_mode": 124864,
+  "complete": true,
+  "dual_certificates_per_mode": 5726,
+  "execution_count": 30,
+  "final_row_restored": true,
+  "full_channel_identities_per_mode": 321,
+  "input_rows_per_mode": 662,
+  "ordinary_optimized_polynomial_records_identical": true,
+  "passed": true,
+  "records": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 0,
+      "name": "normal-initial-receipt",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 3.345,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4350070a6384e9d230568c04d91b79bc1a7db5cb96b408131450384eeecfc213"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "evaluate_fifth_bounds.py",
+        "--workers",
+        "8"
+      ],
+      "expected_exit": 0,
+      "name": "normal-full-662-row-producer",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 17.506,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "89f488738751507865bb2b93071bfeca00b51b0eb7ca80b2d20375e1c14278da"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "assemble_fifth_bounds.py",
+        "--verify-existing"
+      ],
+      "expected_exit": 0,
+      "name": "normal-124864-anchor-return",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 2.418,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d83922303addae185d458962bdde2ada4215a89e8d77e7de823d41b8af493373"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "audit_spin_channels.py",
+        "--workers",
+        "8",
+        "--output",
+        "/mnt/data/ym_fifth_final_replay_complete/normal-spin-audit.json"
+      ],
+      "expected_exit": 0,
+      "name": "normal-complete-polynomial-dual-audit",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 13.027,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "38cf17169fbf1f36ca81a1d35c1ffc0c2271ed395510bee36f0e502924031232"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "audit_word_tensors.py",
+        "--verify-existing"
+      ],
+      "expected_exit": 0,
+      "name": "normal-tensor-matrices",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 1.158,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a823c68ffabd8cab5d76361c7f3a135277c628a88cf566b6ea8678df7e7f6b3d"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "return_bounds.py",
+        "--verify-existing"
+      ],
+      "expected_exit": 0,
+      "name": "normal-source-heat-native-return",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 0.927,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a013b61883ed5ab601ba3b1cbeda14b0fcd9f22b8a2670a9421382a26fad4e36"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 0,
+      "name": "normal-regenerated-receipt",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 3.883,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4350070a6384e9d230568c04d91b79bc1a7db5cb96b408131450384eeecfc213"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-initial-receipt",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 5.009,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4350070a6384e9d230568c04d91b79bc1a7db5cb96b408131450384eeecfc213"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "evaluate_fifth_bounds.py",
+        "--workers",
+        "8"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-full-662-row-producer",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 25.896,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e0567f34f55a82906a0d5692351120928c6a937c606418a5a09daaf34672c807"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "assemble_fifth_bounds.py",
+        "--verify-existing"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-124864-anchor-return",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 5.579,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d83922303addae185d458962bdde2ada4215a89e8d77e7de823d41b8af493373"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "audit_spin_channels.py",
+        "--workers",
+        "8",
+        "--output",
+        "/mnt/data/ym_fifth_final_replay_complete/optimized-spin-audit.json"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-complete-polynomial-dual-audit",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 20.564,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b28c3bab47872f917aa2834a156a333300e59d0a952cd11def69636564d8ff37"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "audit_word_tensors.py",
+        "--verify-existing"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-tensor-matrices",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 3.661,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a823c68ffabd8cab5d76361c7f3a135277c628a88cf566b6ea8678df7e7f6b3d"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "return_bounds.py",
+        "--verify-existing"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-source-heat-native-return",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 3.661,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a013b61883ed5ab601ba3b1cbeda14b0fcd9f22b8a2670a9421382a26fad4e36"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-regenerated-receipt",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 6.623,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4350070a6384e9d230568c04d91b79bc1a7db5cb96b408131450384eeecfc213"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 1,
+      "name": "normal-reject-proof-change",
+      "passed": true,
+      "required_error": "source-identity-mismatch:FIFTH_REFERENCE.md",
+      "returncode": 1,
+      "seconds_diagnostic": 1.07,
+      "stderr_sha256": "15b9f4d2f2be76485ee20ca1e5adb8317d45a9df8de6185c8a8c720df06a20a9",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 1,
+      "name": "normal-reject-coefficient-record-change",
+      "passed": true,
+      "required_error": "source-identity-mismatch:generated/rows/",
+      "returncode": 1,
+      "seconds_diagnostic": 0.868,
+      "stderr_sha256": "0820b91ea2d67cb2410290d9f5edb57a5843d686adf43e025d907c47880b6a66",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "/mnt/data/ym_fifth_final_replay_complete/normal-duplicate.json"
+      ],
+      "expected_exit": 1,
+      "name": "normal-reject-duplicate-key",
+      "passed": true,
+      "required_error": "duplicate-json-key:schema",
+      "returncode": 1,
+      "seconds_diagnostic": 0.865,
+      "stderr_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "/mnt/data/ym_fifth_final_replay_complete/normal-bad-receipt.json"
+      ],
+      "expected_exit": 1,
+      "name": "normal-reject-false-receipt",
+      "passed": true,
+      "required_error": "complete-receipt-mismatch",
+      "returncode": 1,
+      "seconds_diagnostic": 3.151,
+      "stderr_sha256": "e0b808100ff2db32f3551040b13bd780b8de10e04639993fc61ca45ac77e165b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-c",
+        "from audit_spin_channels import audit; audit(157)"
+      ],
+      "expected_exit": 1,
+      "name": "normal-reject-zero-dual",
+      "passed": true,
+      "required_error": "dual-feasible",
+      "returncode": 1,
+      "seconds_diagnostic": 0.924,
+      "stderr_sha256": "cd17dcde460a9f7b7c13055b0d5c52cabb2ff3903e2575849f9684304915cc0a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-c",
+        "from audit_spin_channels import audit; audit(157)"
+      ],
+      "expected_exit": 1,
+      "name": "normal-reject-partial-polynomial",
+      "passed": true,
+      "required_error": "partial-polynomial-",
+      "returncode": 1,
+      "seconds_diagnostic": 0.917,
+      "stderr_sha256": "5fe70abe201cf04ce2deb2a7d592af5c024eda4e5f63694f288e6df87b303c18",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "-c",
+        "from audit_spin_channels import audit; audit(157)"
+      ],
+      "expected_exit": 1,
+      "name": "normal-reject-channel-weight",
+      "passed": true,
+      "required_error": "original-channel-objective",
+      "returncode": 1,
+      "seconds_diagnostic": 1.928,
+      "stderr_sha256": "32fe6bab2e203ce48c70ca61bfadf27702acab33e72a36688bac65d1618cd863",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 0,
+      "name": "normal-restored-final-receipt",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 5.761,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4350070a6384e9d230568c04d91b79bc1a7db5cb96b408131450384eeecfc213"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 1,
+      "name": "optimized-reject-proof-change",
+      "passed": true,
+      "required_error": "source-identity-mismatch:FIFTH_REFERENCE.md",
+      "returncode": 1,
+      "seconds_diagnostic": 5.917,
+      "stderr_sha256": "15b9f4d2f2be76485ee20ca1e5adb8317d45a9df8de6185c8a8c720df06a20a9",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 1,
+      "name": "optimized-reject-coefficient-record-change",
+      "passed": true,
+      "required_error": "source-identity-mismatch:generated/rows/",
+      "returncode": 1,
+      "seconds_diagnostic": 2.794,
+      "stderr_sha256": "0820b91ea2d67cb2410290d9f5edb57a5843d686adf43e025d907c47880b6a66",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "/mnt/data/ym_fifth_final_replay_complete/optimized-duplicate.json"
+      ],
+      "expected_exit": 1,
+      "name": "optimized-reject-duplicate-key",
+      "passed": true,
+      "required_error": "duplicate-json-key:schema",
+      "returncode": 1,
+      "seconds_diagnostic": 2.931,
+      "stderr_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "/mnt/data/ym_fifth_final_replay_complete/optimized-bad-receipt.json"
+      ],
+      "expected_exit": 1,
+      "name": "optimized-reject-false-receipt",
+      "passed": true,
+      "required_error": "complete-receipt-mismatch",
+      "returncode": 1,
+      "seconds_diagnostic": 5.682,
+      "stderr_sha256": "e0b808100ff2db32f3551040b13bd780b8de10e04639993fc61ca45ac77e165b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "-c",
+        "from audit_spin_channels import audit; audit(157)"
+      ],
+      "expected_exit": 1,
+      "name": "optimized-reject-zero-dual",
+      "passed": true,
+      "required_error": "dual-feasible",
+      "returncode": 1,
+      "seconds_diagnostic": 2.87,
+      "stderr_sha256": "cd17dcde460a9f7b7c13055b0d5c52cabb2ff3903e2575849f9684304915cc0a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "-c",
+        "from audit_spin_channels import audit; audit(157)"
+      ],
+      "expected_exit": 1,
+      "name": "optimized-reject-partial-polynomial",
+      "passed": true,
+      "required_error": "partial-polynomial-",
+      "returncode": 1,
+      "seconds_diagnostic": 2.858,
+      "stderr_sha256": "5fe70abe201cf04ce2deb2a7d592af5c024eda4e5f63694f288e6df87b303c18",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "-c",
+        "from audit_spin_channels import audit; audit(157)"
+      ],
+      "expected_exit": 1,
+      "name": "optimized-reject-channel-weight",
+      "passed": true,
+      "required_error": "original-channel-objective",
+      "returncode": 1,
+      "seconds_diagnostic": 2.892,
+      "stderr_sha256": "32fe6bab2e203ce48c70ca61bfadf27702acab33e72a36688bac65d1618cd863",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "expected_exit": 0,
+      "name": "optimized-restored-final-receipt",
+      "passed": true,
+      "returncode": 0,
+      "seconds_diagnostic": 4.741,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4350070a6384e9d230568c04d91b79bc1a7db5cb96b408131450384eeecfc213"
+    }
+  ]
+}

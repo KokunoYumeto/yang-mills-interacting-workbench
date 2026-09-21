@@ -1,0 +1,104 @@
+{
+  "schema": "ym-uniform-gap-zero-shift-state-v1",
+  "target": "four-dimensional continuum Yang-Mills mass gap",
+  "proved_coupling_domain": {
+    "g_squared_min": "15",
+    "xi_max": "1/900",
+    "stronger_subdomain_g_min": "4"
+  },
+  "continuum_gap_established": false,
+  "actual_zero_shift_response_enclosed": true,
+  "date": "2026-09-15",
+  "remote_parent": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+  "delivered_predecessor": "../20260915-actual-loop-moments/RESEARCH_NOTE.md",
+  "completed": [
+    {
+      "id": "U14",
+      "quantity": "support-labelled nonlinear source",
+      "bound": "8/3 times the product of the retained local norms",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "U18",
+      "quantity": "complete actual vacuum symmetric second derivative",
+      "bound": "3072 xi",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "U23",
+      "quantity": "full centered physical form",
+      "bound": "kappa (1/2-6144 xi) times the original state norm squared",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "U25",
+      "quantity": "full energy-controlled primitive",
+      "bound": "norm squared at most 1/[kappa (1/2-6144 xi)]",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "U31",
+      "quantity": "full actual conditional kernel inverse at zero",
+      "bound": "1/[kappa (1/2-6144 xi)]",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "U41-U43",
+      "quantity": "actual elementary-loop zero-shift response and restored norm",
+      "bound": "explicit rationally evaluated intervals at g squared 5000",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "U45",
+      "quantity": "original zero-shift quotient class and section-correction primitive",
+      "bound": "complete nonnegative energy decomposition",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "U53-U55",
+      "quantity": "fixed-spacing volume-limit spectral endpoints and correlations",
+      "bound": "both endpoint atoms zero; nonzero gapped limiting correlation generator",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "V1-V9",
+      "quantity": "original spatial vacuum limit at fixed a,g>=8",
+      "bound": "exact cutoff-compatible support potential, influence row at most 1/6, unique full-sequence measure limit",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "V10-V22",
+      "quantity": "original spatial-volume dynamics and local time-ordered correlations",
+      "bound": "summable full drift comparison, uniform semigroup limit, unitary physical correlation representation, gap kappa (1/2-6144 xi)",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "V23-V25",
+      "quantity": "original extensive vacuum energy",
+      "bound": "explicit uniform finite-volume energy remainder and unique energy-per-plaquette limit",
+      "source_domain": "baseline g>=8; larger domain only through the explicit O1-O26 return"
+    },
+    {
+      "id": "O1-O26",
+      "quantity": "sharpened original full-field bound and its complete physical return",
+      "bound": "exact plaquette Fourier trace norm eight, summed nonlinear radius, gap kappa [(144/125)sqrt(1-(2500/3)xi)-163/250] on g^4>138240/451, and unique full spatial-volume limit on that domain"
+    },
+    {
+      "id": "H1-H23",
+      "quantity": "full physical conditional-comparison gap and actual primitive factorization",
+      "bound": "gap kappa d_HB with d_HB=(3/4)(1-q_xi) exp(-32 pi xi), at least kappa/100 on g^2>=15 and at least3kappa/20 on g>=4; return to zero shift and unique full spatial-volume dynamics"
+    }
+  ],
+  "continuum_path": {
+    "a_n": "a_0 2^(-n)",
+    "L_n": "4 2^(2n)",
+    "c_n": "g_0^(-2)+beta n log(2)",
+    "g_n_squared": "1/c_n",
+    "new_bound_valid_exactly_on": "c_n <= 1/15"
+  },
+  "next_actual_quantity": "The actual running-coupling vacuum source beyond xi=1/900: the centered equation A_L (partial_xi log psi_L)=kappa(<sum_p(2-W_p)>_rho-sum_p(2-W_p)), with its local derivative norm, scalar energy coordinate and all physical parameters retained. No extension beyond the present proved domain is assumed.",
+  "verification_scope": "Written analytic proofs plus exact finite tests; no new Lean or independent proof audit.",
+  "remote_write_performed": false,
+  "automatic_research_active": false,
+  "fixed_spacing_volume_limit": "unique vacuum and dynamics for g^2>=15"
+}

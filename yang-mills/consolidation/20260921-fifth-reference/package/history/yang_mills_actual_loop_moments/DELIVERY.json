@@ -1,0 +1,38 @@
+{
+  "archive_scope": "New contribution, patch, review description, and selected unchanged predecessor source tree; not a full repository clone.",
+  "diff_stat": " .../20260915-actual-loop-moments/ATTEMPTS.md       |  28 +\n .../20260915-actual-loop-moments/README.md         |  50 ++\n .../20260915-actual-loop-moments/RESEARCH_NOTE.md  | 981 +++++++++++++++++++++\n .../20260915-actual-loop-moments/STATUS.md         |  57 ++\n .../20260915-actual-loop-moments/execution.json    | 207 +++++\n .../20260915-actual-loop-moments/state.json        | 121 +++\n .../20260915-actual-loop-moments/verification.json | 387 ++++++++\n .../20260915-actual-loop-moments/verify.py         | 380 ++++++++\n yang-mills/research-control/CURRENT.md             |  23 +-\n 9 files changed, 2229 insertions(+), 5 deletions(-)\n",
+  "fresh_patch_replays": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    }
+  ],
+  "new_payload_bytes_matched": true,
+  "parent_commit": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+  "patch_apply": "passed",
+  "patch_apply_check": "passed",
+  "patch_sha256": "ba5446e15b4e0d31320bab7f499a1f8304bb08113e3b8c3e497fb88e06c1d6fa",
+  "remote_write_performed": false,
+  "retained_predecessor_files_checked": 22,
+  "schema": "ym-actual-loop-delivery-v1",
+  "verification_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+}

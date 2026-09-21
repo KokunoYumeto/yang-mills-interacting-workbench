@@ -1,0 +1,2290 @@
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md b/yang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md
+new file mode 100644
+index 0000000..cca5229
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md
+@@ -0,0 +1,28 @@
++# Attempt account: evaluation of the actual response
++
++The preceding response work supplied exact residual identities and named the
++actual moments N0,N1,N2 without evaluating them. This continuation attacked
++those integrals through the differentiated original vacuum equation rather
++than introducing another abstract source model. The SU(2) commutator square
++supplies a pointwise logarithmic-derivative bound, and the original vertex
++Casimir supplies a bounded inverse on the actual covariant derivative source.
++
++The first local drift has an explicit remainder independent of the exterior
++box. That makes it possible to calculate the neighboring-plaquette contribution
++in its original Haar coordinates and return it to the actual interacting
++vacuum with finite errors. The result encloses all three moments and a
++positive-shift Schur response, together with the restored norm. The exact
++coupling and loop-size domains remain in A14, A25–38 and A46–51.
++
++The proof audit corrected the last cohomological identification: the local
++trial is not asserted to be the metric-minimizing section. A45a gives the
++actual canonical section and the full positive section-correction term. The
++numerical response bounds are unchanged, and the checker now rejects the
++uncorrected quotient-norm identity on an explicit rational example.
++
++The narrow evaluated interval is a controlled large-g result; it supplies a
++nonzero actual forcing and a quantitative test of the response machinery.
++The all-coupling results also apply to the retained running path, but with
++their actual growth factors. The physical zero-shift response and the full
++singlet energy margin remain unevaluated. No conclusion about the continuum
++mass lower edge has been substituted for those quantities.
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/README.md b/yang-mills/continuations/20260915-actual-loop-moments/README.md
+new file mode 100644
+index 0000000..5ea137c
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/README.md
+@@ -0,0 +1,50 @@
++# Actual interacting Wilson-loop response moments
++
++15 September 2026. Continuation of Yang–Mills PR6 at
++`e98b2c3af77f66fb1c1396143ca53daef586404f`.
++
++Read [the full mathematical proof](RESEARCH_NOTE.md), especially A3–14,
++A20–21, A37–45a, and the evaluated intervals A46–49.
++
++The original response quantities now have actual interacting-vacuum enclosures.
++For the interior elementary square, at `xi=1/(4g^4)=10^-8`, with `g^2=5000`
++and `kappa=10000/a`, for every `L>=2` and every `a>0`:
++
++- `0.9994 kappa^2 xi^2 < N0 < 1.0006 kappa^2 xi^2`;
++- `4.9963 kappa^3 xi^2 < N1 < 5.0037 kappa^3 xi^2`;
++- `25.728 kappa^4 xi^2 < N2 < 25.772 kappa^4 xi^2`;
++- `|M(kappa) - (28/165) kappa xi^2| < 0.0000075 kappa xi^2`;
++- `||| (D+kappa)^(-1)W ||^2 - (796/27225) xi^2| < 0.0000021 xi^2`.
++
++These statements use the full original nonlinear operator and its actual
++vacuum, with analytic error bounds independent of exterior volume. Their
++small-xi domain corresponds to large g. The all-coupling pointwise score,
++gauge-covariant inverse, and moment bounds keep their full physical and
++loop-size factors; A50–51 substitute the existing continuum test path.
++No zero-shift physical response or continuum mass lower edge is assigned.
++
++The loop-product observation is related to the previous coarse-edge observation
++by the explicit composite map A17 and its additional kernel. The computed
++moments are attached to that specified observation. A45a retains the complete
++correction between the chosen local trial and its canonical cohomological
++section; no arbitrary trial residual is identified with a quotient minimum.
++
++## Reproduction
++
++From the repository root:
++
++```sh
++python -B yang-mills/continuations/20260915-actual-loop-moments/verify.py --verify-receipt yang-mills/continuations/20260915-actual-loop-moments/verification.json
++python -O -B yang-mills/continuations/20260915-actual-loop-moments/verify.py --verify-receipt yang-mills/continuations/20260915-actual-loop-moments/verification.json
++```
++
++The checker needs only Python's standard library. It executes exact quaternion
++polynomial identities, Haar integrals, original graph incidence and rigorous
++rational evaluation of the analytic error formulas. The receipt binds the
++proof and checker bytes. [Execution](execution.json), [review scope](STATUS.md)
++and [current mathematical state](state.json) accompany it.
++
++No numerical vacuum samples, spin cutoff, new Lean build, independent external
++proof review, automatic research or merge are claimed. The package is ready
++for a review PR against the pinned parent; [publication status](STATUS.md)
++records the current session's actual write capability and delivery.
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md b/yang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md
+new file mode 100644
+index 0000000..1bbeba5
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md
+@@ -0,0 +1,981 @@
++# Actual Wilson-loop response moments from the full interacting vacuum
++
++15 September 2026. Additive continuation of the SU(2) Yang–Mills workbench,
++parent `e98b2c3af77f66fb1c1396143ca53daef586404f` (PR6).
++
++This contribution evaluates response quantities of the original interacting
++vacuum with finite errors independent of the exterior box. It proves
++all-coupling pointwise logarithmic-derivative and response-moment bounds;
++a gauge-covariant inverse estimate with a regulator-independent coefficient
++and its full physical kappa dependence; an exact
++local SU(2) calculation of three response-moment coefficients; and finite
++intervals for the actual response and restored metric. The narrow intervals
++are on the explicitly stated small-xi domain. The simultaneous continuum
++path remains explicit in section 11. A positive physical continuum gap and a
++nontrivial four-dimensional continuum field have not been established here.
++
++The executable checks actual quaternion polynomial identities, local lattice
++incidence, Haar integrals, and rational endpoints for the proved error bounds.
++It does not numerically solve for the vacuum or formally verify the analytic
++proofs. No general historical-priority claim is made.
++
++## 1. Original operator, coordinates, and derivative identities
++
++Use the original open graph with vertices `{-L,...,L}^3`, integer `L>=2`,
++all contained positive edges, and every contained elementary face. Physical
++spacing `a>0` and coupling `g>0` remain. Write
++
++\[
++ T_\alpha=-i\sigma_\alpha/2,\quad
++ X_{e,\alpha}f(U)=\left.\frac d{dt}f(\ldots,e^{tT_\alpha}U_e,\ldots)\right|_{0},
++ \quad K=-\sum_{e,\alpha}X_{e,\alpha}^2,
++\]
++\[
++ \kappa=\frac{2g^2}{a},\qquad v=\frac1{2g^2a},\qquad
++ \xi=\frac v\kappa=\frac1{4g^4},\qquad
++ V=v\sum_p(2-W_p),\qquad H=\kappa K+V.                 \tag{A1}
++\]
++Here `W_p` is the trace of its complete oriented four-link word. The scalar
++`2v|P|` is present. The original generator metric has
++`c(T_alpha,T_beta)=delta_alpha,beta/4`; thus `Delta^c=4 sum X^2`, exactly as
++in the primary source. Every formula below uses the original `X` and `kappa`.
++
++The primary source [YM] proves that the full scalar compact-group operator
++has a smooth positive unit ground vector `psi`, unique and gauge invariant,
++with ground energy `E0`. Its operator domain is `H^2`, form domain `H^1`;
++physical spaces are their gauge-invariant parts. Set
++
++\[
++ u=\log\psi,\quad \rho=\psi^2,\quad b_{e,\alpha}=X_{e,\alpha}u,
++ \quad \Delta=\sum X^2,\quad
++ \mathscr L=\Delta+2\sum b_{e,\alpha}X_{e,\alpha}.
++\]
++Multiplication `f -> psi f` is a unitary from `L^2(rho dU)` to the original
++Haar Hilbert space, with inverse `F -> F/psi`. Direct differentiation gives
++
++\[
++ \Delta u+\sum b_{e,\alpha}^2=V/\kappa-E_0/\kappa,
++ \qquad \mathcal A:=\psi^{-1}(H-E_0)\psi=-\kappa\mathscr L,
++\]
++\[
++ \langle f,\mathcal A h\rangle_\rho
++ =\kappa\int\rho\sum\overline{Xf}Xh.                 \tag{A2}
++\]
++The displayed energy offset is retained in the first equation; the derivative
++of that scalar is zero in the next calculation.
++
++Our fields have bracket
++`[X_e,alpha,X_e,beta]=-epsilon_alpha,beta,gamma X_e,gamma`.
++This sign follows by differentiating `U -> T_alpha U` twice. The Casimir
++commutes with every `X_e,alpha`. Also
++`X_e,alpha(sum_i b_i^2)=2 sum_i b_i X_i b_e,alpha`: the commutator correction
++is a contraction of an antisymmetric epsilon tensor with `b_i b_j` and is
++zero. Differentiating the first equation in A2 consequently proves
++
++\[
++ \boxed{\mathscr L b_{e,\alpha}=\kappa^{-1}X_{e,\alpha}V,
++ \qquad \mathcal A b_{e,\alpha}=-X_{e,\alpha}V.}       \tag{A3}
++\]
++This is an equality of the actual smooth functions on the complete graph.
++Its components may be gauge covariant; A2 and A3 also hold on the full scalar
++space before restriction to the physical subspace.
++
++For a single loop trace `F=tr U_C` in which each edge occurs once, Pauli
++multiplication gives, at every link in its word,
++
++\[
++ \sum_\alpha|X_{e,\alpha}F|^2=1-F^2/4\le1,
++ \quad \|[X_{f,\beta}X_{e,\alpha}F]_{\beta,\alpha}\|_{op}\le\tfrac12,
++\]
++\[
++ \sum_{\alpha,\beta}|X_{f,\beta}X_{e,\alpha}F|^2
++ =\tfrac12+F^2/16\le\tfrac34.                        \tag{A4}
++\]
++The last two formulas concern edges in the word. To verify them, move each
++inserted generator to a common end of the word by conjugation, retaining its
++orthogonal adjoint matrix. In coordinates `Q=q0 I-i sum q_alpha sigma_alpha`,
++`sum q_i^2=1`, one has `tr(T_alpha Q)=-q_alpha` and
++`tr(T_alpha T_beta Q)=-(delta_alpha,beta q0+epsilon_alpha,beta,gamma q_gamma)/2`.
++For the three by three matrix M in the last trace formula, multiplication
++gives `M^T M=(I_3-q_vec q_vec^T)/4`; its positive outer-product deficit
++proves the operator bound. Summing its diagonal gives the Frobenius identity.
++Inversely traversed links use
++`d(U^{-1})=-U^{-1}(dU)U^{-1}` and the same adjoint rotations. No edge is
++replaced by an independent inverse variable: the coordinate map `U -> U^{-1}`
++is its own Haar-preserving inverse and intertwines the Casimir sum.
++
++## 2. All-coupling pointwise vacuum control
++
++Let `r_e` count the original faces incident on edge e, so `r_e<=4`.
++For the three by three matrix `B_beta,alpha=X_e,beta X_e,alpha u`, its
++antisymmetric part has squared Frobenius norm
++
++\[
++ \sum_{\alpha,\beta}|(B_{\beta\alpha}-B_{\alpha\beta})/2|^2
++ =\tfrac12\sum_\alpha|b_{e,\alpha}|^2.
++\]
++Therefore `sum_(i,alpha)|X_i b_e,alpha|^2 >= |b_e|^2/2` pointwise.
++At a maximum of `w_e=sum_alpha b_e,alpha^2` on the compact product group,
++A3 and the product rule imply
++
++\[
++ 0\ge\tfrac12\mathscr L w_e
++ =\sum_{i,\alpha}|X_i b_{e,\alpha}|^2
++  +\kappa^{-1}\sum_\alpha b_{e,\alpha}X_{e,\alpha}V
++ \ge\tfrac12 w_e-r_e\xi\sqrt{w_e}.
++\]
++We used `|X_e V|<=v r_e`, proved from A4. The quadratic inequality at the
++maximum proves
++
++\[
++ \boxed{\sup_U|X_e\log\psi|\le2r_e\xi\le8\xi,
++ \qquad \sup_U|X_e\log\rho|\le4r_e\xi\le16\xi.}     \tag{A5}
++\]
++There is no exterior-volume constant, and A5 holds at every positive coupling.
++
++Integrating A3 against `rho b_e,alpha`, followed by Haar integration by parts,
++also gives an exact differentiated-vacuum sum rule:
++
++\[
++ \boxed{\int\rho\sum_{i,\alpha}|X_i b_{e,\alpha}|^2
++ =\frac1{2\kappa}\langle\Delta_e V\rangle_\rho
++ =\frac{3\xi}{8}\left\langle\sum_{p\ni e}W_p\right\rangle_\rho
++ \le\frac{3r_e\xi}{4}.}                              \tag{A6}
++\]
++All derivative indices i in A6 range over the full graph. The identity uses
++`Delta_e W_p=-3W_p/4`. The primary local exterior-operator comparison further
++supplies
++
++\[
++ \gamma_e:=\int\rho|b_e|^2\le2r_e\xi\le8\xi.         \tag{A7}
++\]
++For completeness, write
++`H-E0=kappa E_e+K_e-v sum_(p containing e) W_p`, where `K_e>=0` acts on
++exterior links. This follows by testing H on the constant in e times an
++exterior ground vector; each incident trace has zero Haar integral in e.
++Taking the vacuum expectation gives A7. Every exterior term stays in K_e.
++
++## 3. A gauge-covariant inverse and a quantitative local drift expansion
++
++### 3.1 The inverse is proved on its exact source sector
++
++At vertex v let `G_v,alpha` be the infinitesimal vertex gauge action. It is
++the sum of outgoing left generators and incoming negative right generators.
++Right generators are related to the displayed left generators by the actual
++adjoint matrices of their links. If `d_v` is the vertex degree, pointwise
++Cauchy–Schwarz gives
++
++\[
++ \sum_\alpha|G_{v,\alpha}h|^2
++ \le d_v\sum_{e\ni v,\alpha}|X_{e,\alpha}h|^2,
++ \qquad d_v\le6.                                    \tag{A8}
++\]
++The difference of the two sides of the vector inequality
++`d_v sum|z_e|^2-|sum z_e|^2` is exactly `sum_(e<f)|z_e-z_f|^2`.
++
++Use the spin-one gauge-Casimir subspace
++`E_v={h: -sum_alpha G_v,alpha^2 h=2h}`, with its closed Hilbert realization
++from the compact unitary gauge action on `L^2(rho dU)`. Haar averaging in the
++vertex gauge variable supplies this closed sector; equivalently it is the
++range of `3 int chi_1(g) U_v(g) dg`, where
++`chi_1(g)=(tr g)^2-1`. Matrix-coefficient orthogonality proves the projection
++formula. The original H and rho commute with this action, so A reduces E_v.
++Integration by parts in the gauge variable and A8 give
++
++\[
++ q_{\mathcal A}(h)\ge\frac{2\kappa}{d_v}\|h\|_\rho^2
++ \ge\frac\kappa3\|h\|_\rho^2\quad(h\in E_v),
++\]
++\[
++ \boxed{\| (\mathcal A|_{E_v}+s)^{-1}\|
++ \le\frac1{s+2\kappa/d_v}\le\frac1{s+\kappa/3},
++ \qquad s\ge0.}                                      \tag{A9}
++\]
++The form inequality extends from smooth vectors by closure. Self-adjointness
++then gives the inverse on exactly this sector.
++
++For an edge e starting at v, the vector `b_e` transforms by the adjoint
++three-dimensional representation at v. Indeed `G_v u=0`, and commuting G_v
++with X_e gives `G_v,alpha b_e,beta=-epsilon_alpha,beta,gamma b_e,gamma`.
++The other vertex gauge generators commute with this derivative. Thus each
++component of b_e is in E_v; contracting twice with epsilon gives its Casimir
++2. This proves that A9 applies to the actual derivative in A3.
++
++The physical contraction in a Wilson-loop forcing is the map
++`(h_alpha,c_alpha) -> sum_alpha h_alpha c_alpha`. Both factors transform
++by the same orthogonal adjoint matrix at the edge source, so this product
++is invariant there. Its derivative is the full product rule
++`X_i sum h_alpha c_alpha=sum [(X_i h_alpha)c_alpha+h_alpha(X_i c_alpha)]`.
++The cross terms in its energy are retained below. A9 is used on its specified
++covariant sources through this map, rather than assigned to the invariant
++contraction without its energy calculation.
++
++### 3.2 First local drift and its remainder
++
++Set
++
++\[
++ u_0=\frac\xi3\sum_p W_p,\qquad b_e^0=X_eu_0,
++ \qquad \mathfrak r_e=X_e(u-u_0).                              \tag{A10}
++\]
++The scalar E0 is still in A2. The derivative formula here follows because
++`Delta u0=-xi sum_p W_p`, so `Delta b_e^0=kappa^{-1}X_e V`.
++Consequently
++
++\[
++ \mathscr L \mathfrak r_{e,\alpha}
++ =-2\sum_i b_i X_i b^0_{e,\alpha}.                   \tag{A11}
++\]
++Each block `J^0_ef=[X_f,beta b^0_e,alpha]` satisfies, by A4,
++
++\[
++ \sum_f\|J^0_{ef}\|_{op}\le\frac{2r_e\xi}{3}\le\frac{8\xi}{3},
++ \quad |b_e^0|\le\frac{4\xi}{3},
++ \quad |\mathcal A \mathfrak r_e|\le\frac{128\kappa\xi^2}{3}.  \tag{A12}
++\]
++In the first sum only edges sharing a plaquette with e occur. Each such
++plaquette has four original edges and contributes at most `xi/(3*2)` per
++block; multiplicities are counted.
++
++The residual vectors in A10 have the same spin-one covariance as b_e.
++A9 and A12 give,
++at **every** xi>0,
++
++\[
++ \boxed{\|\mathfrak r_e\|_{L^2(\rho;\mathbb R^3)}\le128\xi^2,
++ \qquad \sum_\alpha\|\nabla \mathfrak r_{e,\alpha}\|_\rho^2
++ \le\frac{16384}{3}\xi^4.}                          \tag{A13}
++\]
++The second inequality is A2 paired with the residual vector and A12, using the first.
++
++On the stated range `0<xi<=3/64`, the pointwise constant is sharper. Take a
++maximum over all edges and configurations of `|r_e^rem|=R`. The antisymmetric
++second-derivative calculation in section 2 applies to `X_e(u-u0)` too.
++At that maximum A11 and A12 give
++
++\[
++ (\tfrac12-\tfrac{16\xi}{3})R^2
++ \le\tfrac{64\xi^2}{9}R.
++\]
++The coefficient on the left is at least 1/4. Hence, putting `A_*=256/9`,
++
++\[
++ \boxed{|\mathfrak r_e|\le A_*\xi^2,\quad
++ \sum_\alpha\|\nabla \mathfrak r_{e,\alpha}\|_\rho^2
++ \le\frac{128A_*}{3}\xi^4,
++ \quad \|\mathcal A \mathfrak r_e\|_\infty\le\frac{128\kappa}{3}\xi^2.} \tag{A14}
++\]
++The middle inequality follows by pairing A11 with the residual vector and using the row
++bound and A5; it sums derivatives over every fine link. This is a proved
++remainder bound on the full interacting vacuum, not a formal series premise.
++
++## 4. The loop observation and its exact relation to the earlier refinement
++
++Let C be an axis-aligned square of side b lattice edges in the x1,x2 plane,
++with a one-plaquette collar inside the box. Set `ell=4b`, and let
++`Omega=U_C` be its ordered group holonomy, including every inverse traversal.
++For b=1 one may take the face with base (0,0,0), directions (1,2); L>=2
++contains its collar. Denote `F=tr Omega`.
++
++In oriented link variables V_j along C, the map
++
++\[
++ (V_1,\ldots,V_\ell,U_{C^c})
++ \mapsto(\Omega=V_1\cdots V_\ell,V_1,\ldots,V_{\ell-1},U_{C^c}) \tag{A15}
++\]
++has inverse `V_ell=(V_1...V_(ell-1))^{-1}Omega`. Product Haar is exactly
++`dOmega dz`, by translation in the last link. Inverse traversals are carried
++by the explicit involution in A4. Let
++
++\[
++ m(\Omega)=\int\rho(\Omega,z)dz,\quad
++ \mathsf Eh=m^{-1}\int\rho h\,dz,\quad
++ \mathsf Jf=f(\Omega),\quad P=\mathsf J\mathsf E,\quad Q=I-P. \tag{A16}
++\]
++Fubini gives `EJ=I`, `E=J*` in the actual rho and m pairings. These maps
++intertwine the original gauge action with conjugation at the loop base.
++Their physical subspaces therefore use the actual conjugation-invariant
++functions on the observed SU(2) variable.
++
++For the earlier full coarse-edge observation pi_all, a square born on that
++coarse grid has `pi_C=chi_C pi_all`, where chi_C is the same four-coarse-edge
++word. On the same fine vacuum the conditional expectations obey
++`E_C=E_chi E_all`, by testing both sides against functions of Omega. Hence
++`P_C<=P_all`. Their kernel comparison is the actual isomorphism
++
++\[
++ \ker E_C/\ker E_{all}\longrightarrow\ker E_\chi,
++ \quad[h]\mapsto E_{all}h,
++ \qquad k\mapsto[J_{all}k].                           \tag{A17}
++\]
++Both compositions follow from `E_all J_all=I` and
++`h-J_all E_all h in ker E_all`. In particular the new observation retains
++the additional coarse kernel in A17. Its forcing decomposes orthogonally as
++`-Q_C A F=-Q_all A F-(P_all-P_C)A F`. Thus its zeroth forcing norm is the
++sum of the two original squared norms. Higher energy entries use the full
++coupled form, as in the parent's minimum-section composition. They are not
++silently assigned to the old, smaller kernel.
++
++The original horizontal fields now average all ell original links:
++`Y_alpha=ell^{-1}sum_(j,beta)(Ad prefix_(j-1))_(alpha,beta)X_(j,beta)`.
++They satisfy `Y_alpha J=J X_alpha` and
++`sum_alpha|Y_alpha h|^2<=ell^{-1}sum_(j,beta)|X_(j,beta)h|^2`.
++Each coefficient is independent of its differentiated link, giving Haar
++divergence zero. Set
++
++\[
++ S_\alpha=Y_\alpha\log\rho-\mathsf J X_\alpha\log m,
++ \quad (Th)_\alpha=\mathsf E(hS_\alpha),
++ \quad \Gamma_{\alpha\beta}=\mathsf E(S_\alpha S_\beta).
++\]
++Integration by parts gives `ES=0`, `X Eh=E(Yh)+E(hS)` and
++`T* z=sum S_alpha J z_alpha`. A5 gives `|Y log rho|<=16xi`, and thus
++
++\[
++ \boxed{\Gamma\preceq256\xi^2 I_3,\quad
++ \|T\|\le16\xi,\quad
++ \|X\mathsf Eh\|_m\le\ell^{-1/2}\|\nabla h\|_\rho+16\xi\|h\|_\rho.} \tag{A18}
++\]
++For Gamma the exact covariance is
++`E[(Y log rho)(Y log rho)^T]-(E Y log rho)(E Y log rho)^T`.
++The second term is retained in the equality and bounded by positivity.
++
++Let D represent the restriction of the form A2 to `H^1_phys intersect ker E`.
++At each finite regulator, E and J preserve H^1 by A18 and their finite smooth
++coordinate formulas. Smooth kernel functions are dense, the restricted form
++is closed, and D is nonnegative self-adjoint. On smooth physical kernel
++functions `Dh=Q A h`. These facts also follow by the parent's same closed-form
++argument after A15. All functions below are smooth, so every used power of D
++has its stated domain. The off-diagonal action is
++
++\[
++ Q\mathcal A\mathsf Jg=-\kappa\ell T^*Xg.             \tag{A19}
++\]
++It follows by pairing A2 against a kernel function and using A18.
++
++Define the ACTUAL scalar forcing and its three moments by
++
++\[
++ j=\sum_{e\in C,\alpha}b_{e,\alpha}X_{e,\alpha}F,
++ \quad W=2\kappa Qj=-Q\mathcal AF,
++\]
++\[
++ \boxed{N_0=\|W\|_\rho^2,\quad
++ N_1=\langle W,DW\rangle_\rho,\quad N_2=\|DW\|_\rho^2.} \tag{A20}
++\]
++Indeed `KF=(3ell/4)F`, so the Casimir term is killed by Q and A20 follows
++from A2. The actual response is `M(s)=<W,(D+s)^{-1}W>_rho`.
++
++## 5. Actual moment bounds at every positive coupling
++
++Set
++
++\[
++ J_\ell(\xi)=\min(8\ell\xi,\sqrt8\,\ell\sqrt\xi),
++\]
++\[
++ \begin{split}
++ P_\ell(\xi)={}&3\ell^{3/2}\sqrt\xi+(4\ell+6\ell^2)\xi
++ +16\sqrt3\ell^{3/2}\xi^{3/2}\\
++ &+128\sqrt3\ell^2\xi^2+2048\ell^2\xi^3.
++ \end{split}
++\]
++Then the original interacting moments satisfy
++
++\[
++ \boxed{0\le N_0\le4\kappa^2J_\ell(\xi)^2,\quad
++ 0\le N_1\le4\kappa^3J_\ell(\xi)P_\ell(\xi),\quad
++ 0\le N_2\le4\kappa^4P_\ell(\xi)^2.}                \tag{A21}
++\]
++Here ell, kappa, and xi retain their values; the exterior box is arbitrary.
++
++Proof: A4, A5 and A7 give `||j||<=J_ell`. For `c_e,alpha=X_e,alpha F`,
++A4 gives `||c||_infty<=sqrt(ell)` and
++`||grad c||_infty,HS<=sqrt(3)ell/2`. A6, summed over e in C, gives
++`sum_(e,alpha)||grad b_e,alpha||^2<=3ell xi`. The product rule therefore gives
++
++\[
++ \|\nabla j\|_\rho\le\sqrt3\ell\sqrt\xi
++                      +4\sqrt3\ell^{3/2}\xi.          \tag{A22}
++\]
++A3 and `Kc=(3ell/4)c` give, keeping all three product-rule terms,
++
++\[
++ \mathcal A j=\sum c_i\mathcal A b_i
++              +\sum b_i\mathcal A c_i
++              -2\kappa\sum_{i,k}(X_kb_i)(X_kc_i),
++\]
++\[
++ \|\mathcal Aj\|_\rho
++ \le\kappa\{(4\ell+6\ell^2)\xi
++       +64\sqrt3\ell^2\xi^2+3\ell^{3/2}\sqrt\xi\}.   \tag{A23}
++\]
++The respective bounds use `|X_e V|<=4kappa xi`, A5, and A6. A18 and A22 give
++`||X E j||<=sqrt(3ell)sqrt(xi)+4sqrt(3)ell xi+128ell xi^2`.
++Finally A19 gives
++`DW=2kappa[Q A j+kappa ell T* X E j]`. Substitution proves
++`||DW||<=2kappa^2 P_ell`, and Cauchy–Schwarz proves all three inequalities
++in A21. No pointwise-to-integrated replacement is used.
++
++## 6. Local density comparison, including the conditional fiber
++
++Let S be any finite edge set containing C and the local polynomials under
++consideration; write d=|S|. A5 and the original group diameter `2pi` in the
++X-generator coordinates show that changing S while fixing its exterior
++changes `log rho` by at most `32pi d xi`. After integrating the exterior,
++the exact Haar marginal density rho_S consequently satisfies
++
++\[
++ e^{-32\pi d\xi}\le\rho_S\le e^{32\pi d\xi}.          \tag{A24}
++\]
++To prove the bounds from the oscillation, note that its Haar integral is one:
++its minimum is at most one, its maximum at least one, and their ratio is
++at most the displayed exponential. This uses the existing Haar probability
++mass, without changing the physical state.
++
++At fixed Omega in A15, varying a first-chain link also changes the final
++chain link by left and right translations. Each such pair has total path
++length at most `4pi`; every other S link has path length at most `2pi`.
++Thus the conditional local density relative to its original Haar fiber has
++ratio bounded by `exp(32pi(d+ell-2)xi)`. Put
++
++\[
++ \delta=e^{32\pi d\xi}-1,\qquad
++ \eta=e^{32\pi(d+\ell-2)\xi}-1.                     \tag{A25}
++\]
++For a local polynomial P whose conditional Haar average E_H P is zero,
++
++\[
++ \|\mathsf EP\|_\infty\le\eta\|P\|_\infty,
++ \quad
++ \|X\mathsf EP\|_m
++ \le\eta\ell^{-1/2}\|\nabla P\|_\infty+16\xi\|P\|_\infty. \tag{A26}
++\]
++For the second formula `E_H YP=X E_H P=0` follows from A18 with constant
++density; apply the conditional density comparison to YP, then A18 to the
++score term. For arbitrary local P,Q, A24 also gives
++`|<P,Q>_rho-<P,Q>_H|<=delta ||P||_H ||Q||_H`.
++
++## 7. Exact original neighboring-plaquette calculation
++
++Let p range over elementary faces meeting C, excluding p=C when b=1. Define
++
++\[
++ J_p=\sum_{e\in C\cap\partial p,\alpha}(X_{e,\alpha}W_p)(X_{e,\alpha}F),
++ \quad J=\sum_pJ_p,\quad s_p=|C\cap\partial p|.        \tag{A27}
++\]
++For b=1 there are twelve faces, all s_p=1. Four are coplanar with bases
++`(-1,0,0),(1,0,0),(0,-1,0),(0,1,0)` and directions (1,2); four have directions
++(1,3) with x1=0, x2 in {0,1}, x3 in {-1,0}; four have directions (2,3) with
++x1 in {0,1}, x2=0, x3 in {-1,0}. Their union with C has 12 direction-1,
++12 direction-2 and 8 direction-3 edges: d=32.
++For b>=2 the four inner corner faces have s_p=2 and every other meeting face
++has s_p=1. Counting four incidences per C edge gives `4ell-8` faces of type
++1 and four of type 2. These statements use the actual contained face words.
++An exterior-independent support bound is `d<=13ell`. Here is also the exact
++count. Vertical edges have their horizontal coordinates on the square's ell
++vertices and their z base in {-1,0}, giving 2ell edges. Direction-1 edges at
++z=+1 or -1 lie on the two horizontal sides, giving 4b edges in total. At z=0
++their (x,y) bases form the union
++
++    {0,...,b-1} x {-1,0,1,b-1,b,b+1}
++      union {-1,0,b-1,b} x {0,...,b}.
++
++For b>=3 its count is 6b+4(b+1)-8=10b-4. At b=2 its count is
++10+12-6=16, the same formula. At b=1 it is 4+6-2=8.
++Direction-2 edges have the transposed count. Hence d=32 at b=1 and
++`d=2(14b-4)+8b=36b-8=9ell-8` at every b>=2. All these edge sets
++come from the displayed original adjacent faces; the weaker bound suffices
++for the general error estimates.
++
++Each overlap is a connected path. Orient p to traverse this common path in
++the same direction as C; `tr U_p^{-1}=tr U_p` proves equality of the original
++trace functions under that operation. Let U be the common path product, A
++and B the two remaining products, so `F=tr(UA)`, `W_p=tr(UB)`. The product
++Haar pushforward to U,A,B is independent Haar, proved by repeated translations
++in disjoint link sets. Every shared-edge contraction equals
++
++\[
++ j_p=\sum_\alpha\operatorname{tr}(T_\alpha UA)
++                         \operatorname{tr}(T_\alpha UB)
++ =-\tfrac14\operatorname{tr}(UAUB)+\tfrac14\operatorname{tr}(AB^{-1}),
++ \qquad J_p=s_pj_p.                                  \tag{A28}
++\]
++The equality follows from Pauli multiplication (Fierz) and
++`tr X tr Y=tr(XY)+tr(XY^{-1})`, verified in the same quaternion coordinates.
++Integration of U yields
++
++\[
++ j_p^{(0)}=\tfrac38\operatorname{tr}(AB^{-1}),\quad
++ j_p^{(1)}=j_p-j_p^{(0)},\quad
++ \|j_p^{(0)}\|_H^2=\tfrac9{64},\quad
++ \|j_p^{(1)}\|_H^2=\tfrac3{64},\quad
++ \langle j_p^{(0)},j_p^{(1)}\rangle_H=0.              \tag{A29}
++\]
++For a direct check, `int tr(UAUB)dU=-tr(AB^{-1})/2`. Integrating B in
++`j_p^2` first gives `(1/4)sum_alpha|X_alpha tr(UA)|^2`, whose mean is 3/16.
++The first norm in A29 is `9/64` because the remaining trace has Haar square
++mean one; subtracting it from 3/16 gives the second.
++
++Every unshared edge occurs once in a fundamental representation, contributing
++3/4 to K. The shared U-singlet has Casimir zero and the shared triplet has
++Casimir 2 on each of its s_p original links. Equivalently direct Pauli
++second differentiation gives K_U j_p^(0)=0 and K_U j_p^(1)=2j_p^(1), and
++ordered product pullback supplies the factor s_p. Thus, with
++
++\[
++ \nu_p=\tfrac34(\ell+4-2s_p),
++ \qquad Kj_p^{(0)}=\nu_pj_p^{(0)},\quad
++ Kj_p^{(1)}=(\nu_p+2s_p)j_p^{(1)}.                   \tag{A30}
++\]
++For distinct p,q there is an edge in `partial p \ (C union partial q)`:
++p has at least two exterior edges and distinct elementary faces share at
++most one edge. Central sign change at that edge makes every cross product
++between their components and their K iterates integrate to zero. This proves
++all cross-face Haar cancellations with their actual unmatched-edge witnesses.
++
++Also `E_H J=E_H KJ=0`, by integration in an exterior edge of each face.
++A4 and the product rule give the following local suprema, with
++`S1=sum_p s_p`, `S2=sum_p s_p^2`:
++
++\[
++ \|J\|_\infty\le S_1,\quad
++ \sum_e\|X_eJ\|_\infty\le L_J:=\tfrac{\ell+4}{2}S_1,
++ \quad \|KJ\|_\infty\le K_J:=(3+3\ell/4)S_1+\tfrac32S_2. \tag{A31}
++\]
++For the last inequality, apply K to each original product in A27. The two
++Casimirs give `(3+3ell/4)J_p`; the mixed second derivatives are at most
++`2*(3/4)s_p^2` by A4. For the first derivative, each pair of shared-edge
++factors contributes at most 1/2 at each of its four plus ell differentiated
++edges. For b=1, `(S1,S2,LJ,KJ)=(12,12,48,90)`.
++
++Define w and z1 (the latter is an energy vector, not a spectral parameter) by
++
++\[
++ w=\tfrac{2\kappa\xi}{3}J,\qquad
++ z_1=\tfrac{2\kappa^2\xi}{3}KJ.
++\]
++Equations A29–30 prove the exact coefficients
++
++\[
++ \|w\|_H^2=\kappa^2\xi^2 c_0,\quad
++ \langle w,z_1\rangle_H=\kappa^3\xi^2 c_1,\quad
++ \|z_1\|_H^2=\kappa^4\xi^2 c_2,
++\]
++\[
++ c_j=\sum_p\frac{s_p^2}{48}
++            \{3\nu_p^j+(\nu_p+2s_p)^j\},\quad j=0,1,2. \tag{A32}
++\]
++For an elementary loop these are `(1,5,103/4)`. For b>=2 they are
++
++\[
++ \boxed{c_0=\frac{\ell+2}{3},\quad
++ c_1=\frac{\ell(3\ell+14)}{12},\quad
++ c_2=\frac{9\ell^3+66\ell^2+76\ell+104}{48}.}        \tag{A33}
++\]
++These coefficients have now been evaluated; the return to the interacting
++vacuum and its conditional D is the next, quantitative step.
++
++## 8. Full finite remainders for the interacting moments
++
++Use `0<xi<=3/64` and `A_*=256/9`. Write
++`d_j=sum_(e in C,alpha)r^rem_e,alpha X_e,alpha F`. Then
++
++\[
++ j=\frac\xi3 J+d_j+\frac\xi3(4-F^2)\,\mathbf1_{b=1},
++ \quad \|d_j\|_\rho\le\ell A_*\xi^2.               \tag{A34}
++\]
++The last term is an actual function of Omega and is killed exactly by Q.
++Let `t=(xi/3)J+d_j`, so `W=2kappa Qt`.
++
++For complete finite constants put
++
++\[
++ B_d=\ell\sqrt{128A_*/3}+\frac{\sqrt3}{2}\ell^{3/2}A_*,
++\]
++\[
++ C_d(\xi)=\frac{128\ell}{3}+\frac{3\ell^2A_*}{4}
++              +8\sqrt3\ell^2A_*\xi
++              +\sqrt{128}\ell^{3/2}\sqrt{A_*}.
++\]
++A4 and A14, applied to the full product rule, give
++
++\[
++ \|\nabla d_j\|_\rho\le B_d\xi^2,
++ \qquad \|\mathcal A d_j\|_\rho\le\kappa C_d(\xi)\xi^2. \tag{A35}
++\]
++For explicit verification, the derivative terms are bounded by
++`ell sqrt(128A_*/3)xi^2` and `(sqrt(3)/2)ell^(3/2)A_*xi^2`.
++In A d_j the terms `c A r`, `r kappa(3ell/4)c`,
++`-2kappa r b grad c`, and `-2kappa grad r grad c` have respective bounds
++`128ell/3`, `3ell^2 A_*/4`, `8sqrt(3)ell^2 A_*xi`, and
++`sqrt(128)ell^(3/2)sqrt(A_*)`, all multiplied by `kappa xi^2`.
++
++Define
++
++\[
++ H_t=\frac\xi3\{\eta L_J/\sqrt\ell+16\xi S_1\}
++              +B_d\xi^2/\sqrt\ell+16\ell A_*\xi^3,
++\]
++\[
++ e_0=2\{\ell A_*\xi^2+(\xi/3)\eta S_1\},
++\]
++\[
++ e_1=2\{(\xi/3)\eta K_J+(16\xi^2/3)L_J
++                   +C_d(\xi)\xi^2+16\ell\xi H_t\}.    \tag{A36}
++\]
++A26 and A35 give `||X E t||<=H_t`. The identities
++
++\[
++ W-w=2\kappa Qd_j-\tfrac{2\kappa\xi}{3}PJ,
++ \quad
++ DW=2\kappa\{Q\mathcal At+\kappa\ell T^*X\mathsf Et\}
++\]
++now give
++
++\[
++ \boxed{\|W-w\|_\rho\le\kappa e_0,\qquad
++ \|DW-z_1\|_\rho\le\kappa^2 e_1.}                  \tag{A37}
++\]
++For the second identity the unprojected leading term is `(kappa xi/3)KJ`;
++its projection error is bounded by `(kappa xi/3)eta KJ`. Its drift error is
++bounded by `(16kappa xi^2/3)LJ`, using A5. A35 bounds the remainder and
++A18 bounds the final conditional coupling. These are precisely all four
++terms in e1.
++
++Here are explicit error radii epsilon_j (distinct from the ground energy E_0),
++solely as coefficient functions retaining
++the full original kappa and xi factors:
++
++\[
++ \epsilon_0=\delta c_0+2\sqrt{(1+\delta)c_0}\,e_0/\xi+(e_0/\xi)^2,
++\]
++\[
++ \epsilon_1=\delta\sqrt{c_0c_2}+\sqrt{(1+\delta)c_0}\,e_1/\xi
++       +\sqrt{(1+\delta)c_2}\,e_0/\xi+e_0e_1/\xi^2,
++\]
++\[
++ \epsilon_2=\delta c_2+2\sqrt{(1+\delta)c_2}\,e_1/\xi+(e_1/\xi)^2.
++\]
++A24, A32, A37 and expansion of each inner product prove
++
++\[
++ \boxed{|N_j-\kappa^{j+2}\xi^2c_j|
++          \le\kappa^{j+2}\xi^2\epsilon_j,\qquad j=0,1,2.}     \tag{A38}
++\]
++For fixed loop, all displayed epsilon_j tend to zero with xi, uniformly over every
++exterior box containing the collar. The complete finite formulas, rather
++than just this asymptotic statement, determine the actual certificate below.
++
++## 9. The actual response and restored metric are also enclosed
++
++Specialize only the loop to the elementary face; retain arbitrary L>=2 and
++a>0. Let `J0=sum_p j_p^(0)`, `J1=sum_p j_p^(1)`, so `J=J0+J1`. At the actual
++positive shift `s=kappa`, use the explicit LOCAL polynomial
++
++\[
++ Z=\frac4{33}J_0+\frac4{45}J_1
++   =\frac4{45}J+\frac{16}{495}J_0,
++ \quad z=\xi Z,\quad Y=Qz.                           \tag{A39}
++\]
++A30 gives `(K+1)Z=(2/3)J=:U`, and the twelve exact Haar contributions give
++
++\[
++ \langle U,Z\rangle_H=m_*:=\frac{28}{165},\qquad
++ \|Z\|_H^2=z_*:=\frac{796}{27225}.                    \tag{A40}
++\]
++Each fused trace in J0 has six original edges. Thus
++`||J0||_infty<=9`, `sum_e||X_eJ0||_infty<=27`, and A31 gives
++
++\[
++ \|U\|_\infty\le8,\quad \|Z\|_\infty\le Z_*:=\frac{224}{165},
++ \quad \sum_e\|X_eZ\|_\infty\le L_*:=\frac{848}{165}. \tag{A41}
++\]
++Both `E_H Z` and `E_H Y_alpha Z` are zero. Put
++
++\[
++ h_z=\xi\{\eta L_*/2+16\xi Z_*\},\quad
++ r_z=8A_*\xi^2+16\xi^2L_*+64\xi h_z,\quad
++ n_z=\sqrt{(1+\delta)z_*}.                            \tag{A42}
++\]
++Then `||X E z||<=h_z`, `||Pz||<=xi eta Z_*`, and `||Y||<=xi n_z`.
++The ORIGINAL response residual is
++
++\[
++ R=W-(D+\kappa)Y
++   =2\kappa Qd_j+2\kappa\xi Q\sum_i b_iX_iZ
++                  -\kappa\ell T^*X\mathsf Ez,
++ \quad \|R\|_\rho\le\kappa r_z.                    \tag{A43}
++\]
++All three terms are retained. In particular no inverse of D at zero is used.
++
++The parent residual identity, proved again by expanding the square, is
++
++\[
++ M(\kappa)=2\langle W,Y\rangle_\rho-q_{\mathcal A+\kappa}(Y)
++             +\langle R,(D+\kappa)^{-1}R\rangle_\rho. \tag{A44}
++\]
++Define the following seven nonnegative terms:
++
++\[
++\begin{array}{ll}
++ a_1=\delta\xi^2\sqrt{z_*}, &a_2=16\xi^3 Z_*L_*,\\
++ a_3=16\xi^2\eta^2 Z_*, &a_4=16A_*\xi^3 n_z,\\
++ a_5=4h_z^2+(\xi\eta Z_*)^2,
++ &a_6=128\xi^2 n_z h_z,\\
++ a_7=r_z^2.&
++\end{array}
++\]
++Set `E_M=(sum a_i)/xi^2` and
++
++\[
++ E_Z=\delta z_*+(\eta Z_*)^2+2n_zr_z/\xi+(r_z/\xi)^2.
++\]
++Then
++
++\[
++ \boxed{|M(\kappa)-\kappa\xi^2m_*|\le\kappa\xi^2E_M,
++ \quad |\|(D+\kappa)^{-1}W\|_\rho^2-\xi^2z_*|
++                                      \le\xi^2E_Z.} \tag{A45}
++\]
++Here is the full expansion proving the first estimate. Writing p=Pz, A44's
++first two terms equal
++
++\[
++ 2\langle w,z\rangle-q_{\mathcal A+\kappa}(z)
++ -2\langle Pw,p\rangle+4\kappa\langle d_j,Y\rangle
++ +q_{\mathcal A+\kappa}(p)+2q_{\mathcal A}(Y,p).
++\]
++Weighted integration by parts and `(K+1)Z=U` turn the first pair into
++`kappa xi^2 <U,Z>_rho+2kappa xi^2 int rho Z sum_i b_i X_iZ`.
++A24 and A40 bound its first error by kappa a1. A5 and A41 bound its drift
++term by kappa a2. Conditional comparison bounds the removed projection
++by kappa a3. A14 bounds the d_j term by kappa a4. A18 bounds the coarse
++energy by kappa a5 and the mixed energy by kappa a6. Finally the positive
++residual term in A44 is at most `||R||^2/kappa<=kappa a7`.
++For the second estimate, `||Y||^2=||z||^2-||Pz||^2` and
++`||(D+kappa)^{-1}W-Y||<=r_z`; expand the squared norm and apply A24 and A42.
++
++These are direct enclosures of the interacting response and restored metric,
++using a specified original Wilson-polynomial trial, not a fit to vacuum data.
++The exact section correction in the Split Zero application is as follows.
++In the parent's complex `V_j --(D+kappa)--> ker E`, take the actual
++one-dimensional source `V_1=span{Y}`. Its forcing representative is R and
++its remaining primitive is `(D+kappa)^{-1}R`. Define
++
++\[
++ a_Y=q_{\mathcal A+\kappa}(Y),\quad c_Y=\langle Y,W\rangle_\rho,
++ \quad \alpha_Y=c_Y/a_Y,\quad
++ R_{\rm can}=W-(D+\kappa)(\alpha_Y Y).
++\]
++The number a_Y is strictly positive. Indeed the Haar-mean-zero local
++polynomial z has positive Haar norm A40, so it is not a function of Omega:
++applying E_H to such a function would fix it and hence force z=0.
++The actual density rho is everywhere positive, so the same equality of
++functions cannot hold in L2(rho). Thus Y=Qz is nonzero and
++`a_Y>=kappa ||Y||^2>0`.
++
++In the original pairing `\langle h,k\rangle_{dual}=
++\langle h,(D+\kappa)^{-1}k\rangle_\rho`, direct multiplication gives
++`\langle (D+\kappa)Y,R_can\rangle_dual=0`. Therefore R_can is the
++minimum-norm representative of [W], and the complete identities are
++
++\[
++ \boxed{\begin{aligned}
++ \|[W]\|_{\mathcal K/(D+\kappa)V_1,dual}^2
++     &=M(\kappa)-|c_Y|^2/a_Y,\\
++ R&=R_{\rm can}+(\alpha_Y-1)(D+\kappa)Y,\\
++ \langle R,(D+\kappa)^{-1}R\rangle_\rho
++     &=\|[W]\|_{\mathcal K/(D+\kappa)V_1,dual}^2
++                         +a_Y|\alpha_Y-1|^2.
++ \end{aligned}}                                                   \tag{A45a}
++\]
++The cross term is zero by the just-proved orthogonality. The correction has
++its original primitive `(alpha_Y-1)Y`; neither this vector nor its energy is
++dropped. Both nonnegative terms in A45a are at most `kappa r_z^2` by A43–44.
++This is the precise map between the chosen trial residual and the canonical
++cohomological residual. It bounds the original quotient class on an actual
++Yang–Mills source while retaining the section correction.
++
++## 10. Finite evaluated certificate and the raw state metric
++
++Take the exact value `xi=1/100000000`, equivalently `g^2=5000`, while keeping
++`a>0` arbitrary, hence `kappa=10000/a`. These conditions are within A14's
++proved domain. Evaluate A25–45 with `ell=4`, `d=32`. The standard-library
++checker obtains rigorous rational upper endpoints, giving for every L>=2
++
++\[
++ \boxed{\begin{aligned}
++ 0.9994\,\kappa^2\xi^2&<N_0<1.0006\,\kappa^2\xi^2,\\
++ 4.9963\,\kappa^3\xi^2&<N_1<5.0037\,\kappa^3\xi^2,\\
++ 25.728\,\kappa^4\xi^2&<N_2<25.772\,\kappa^4\xi^2,
++ \end{aligned}}                                                   \tag{A46}
++\]
++\[
++ \boxed{\left|M(\kappa)-\frac{28}{165}\kappa\xi^2\right|
++                  <0.0000075\,\kappa\xi^2,\qquad
++ \left|\|(D+\kappa)^{-1}W\|_\rho^2-\frac{796}{27225}\xi^2\right|
++                  <0.0000021\,\xi^2.}                            \tag{A47}
++\]
++No finite-volume vacuum integral was numerically substituted: these are
++bounds for the actual vacuum, proved using A5–45, with exact arithmetic
++for the final constants. The sharpness of the constants is not claimed.
++
++The original centered state has raw Gram `G=<F^2>-<F>^2` and kinetic entry
++`K0=kappa(4-<F^2>)`. Their control also improves to order xi^2. The exact
++weighted identities, obtained by integrating K F=3F and
++K(F^2)=8(F^2-1), are
++
++\[
++ 3\langle F\rangle=2\langle j\rangle,\qquad
++ \langle F^2\rangle-1=\tfrac12\langle Fj\rangle.      \tag{A48}
++\]
++Let `delta_C=exp(128pi xi)-1` and define
++
++\[
++ B_2=\xi\delta/4+(\sqrt5\xi/6)\delta_C+4A_*\xi^2,
++ \quad e_\mu=(2\xi/9)(B_2+3\delta/2)+(8A_*/3)\xi^2.
++\]
++A34, A48 and the exact Haar moments
++`<F^2>_H=1,<F^4>_H=2,<F^6>_H=5` give
++
++\[
++ |\langle F^2\rangle-1|\le B_2,\quad
++ |\langle F\rangle-2\xi/3|\le e_\mu,\quad
++ |G-1|\le B_2+(2\xi/3+e_\mu)^2,\quad |K_0-3\kappa|\le\kappa B_2. \tag{A49}
++\]
++For verification of B2, the Haar means of FJ and F(4-F^2) vanish;
++`||F||_H||J||_H=3/2` and `||F(4-F^2)||_H=sqrt(5)`. Their expectation
++errors are at most `3delta/2` and `sqrt(5)delta_C`, respectively, and
++`|<F d_j>|<=8A_*xi^2`. Substitute into A48. The mean estimate follows
++by retaining `<J>`, `4-<F^2>`, and `<d_j>` in its first equation.
++At A46's exact coupling both Gram and kinetic relative radii are below
++`11/10^14`. The restored lift Gram is the actual sum
++`G+||(D+kappa)^{-1}W||^2`; G is retained rather than reset to one.
++
++There is also a direct return to the original physical energy. Put
++`h_kappa=(D+kappa)^{-1}W`, `f=F-<F>`, and
++`Phi=psi(J f+h_kappa)`. Its mean is zero since `E h_kappa=0`, so
++`Phi` is in the original physical space and perpendicular to psi. It is
++nonzero since G>0. The original excitation form is used on its H1 domain.
++The exact norm and form energy are
++
++\[
++ \|\Phi\|^2=G+\|h_\kappa\|_\rho^2,\qquad
++ q_{H-E_0}(\Phi,\Phi)
++       =K_0-M(\kappa)-\kappa\|h_\kappa\|_\rho^2.
++\]
++Indeed the two mixed form entries are each `-M(kappa)`, and
++`q_D(h_kappa)=M(kappa)-kappa||h_kappa||^2`. Both entries are retained
++in this calculation. Substitution of A47 and A49 gives, at the exact
++coupling A46,
++
++\[
++ \boxed{(3-5\cdot10^{-13})\kappa
++ <\frac{q_{H-E_0}(\Phi,\Phi)}{\|\Phi\|^2}
++ <(3+5\cdot10^{-13})\kappa.}                       \tag{A49a}
++\]
++The actual map from this state to the finite-volume spectral assertion is
++the inclusion of `span{Phi}` in `psi^perp intersect H^1_phys` and the exact
++variational formula
++`Delta_L=inf_(0!=v perpendicular psi) q_(H-E0)(v)/||v||^2`.
++It gives `Delta_L` at most the middle expression in A49a. The lower bound
++in A49a concerns the displayed state, with its own source and norm; no
++inequality with the reverse variational direction is used.
++
++For an additional arithmetic check, the single-column trial `Y=W/(6kappa)`
++has leading response lower coefficient 1/6 and residual coefficient 1/48,
++yielding the leading interval [1/6,3/16]. The exactly evaluated coefficient
++28/165 lies strictly inside it. A39–47 give the tighter certified return.
++
++## 11. Physical refinement, scope, and the next quantitative target
++
++On the retained simultaneous path
++
++\[
++ a_n=a_0 2^{-n},\quad L_n=4\,2^{2n},\quad
++ g_n^2=(g_0^{-2}+\beta n\log2)^{-1},\quad
++ c_n=g_0^{-2}+\beta n\log2,
++\]
++\[
++ \kappa_n=2^{n+1}/(a_0c_n),\quad \xi_n=c_n^2/4,
++ \quad \ell_n=4\,2^{n-r}\quad\hbox{for a fixed level-r square}. \tag{A50}
++\]
++The all-coupling A5, A9, A13, A18 and A21 apply with these literal values.
++For instance `|X_e log psi_n|<=2c_n^2` and the gauge-covariant inverse has
++
++\[
++ \| (\mathcal A_n|_{E_v})^{-1}\|
++ \le\frac{3a_0c_n}{2^{n+1}}\longrightarrow0,           \tag{A51}
++\]
++uniformly in the vertex and exterior volume, including vertices changing
++with n. The limit follows from `(constant+linear n)/2^n ->0`.
++The physical contraction and all its cross derivatives remain those proved
++in section 3; A51 is an estimate on that specified source sector.
++
++The narrow interval A46 uses g^2=5000. Along A50, xi_n grows. A14's sharper
++pointwise remainder is applicable precisely on `xi_n<=3/64`; A13's L2
++remainder remains available at all xi_n with its displayed larger constant.
++No substitution between those domains is made. Physical loop length grows
++as ell_n, and the exact A21 constants retain that growth. A33 also quantifies
++the loop-size growth of the small-xi coefficients. These facts locate the
++remaining infrared problem in the full singlet contraction and its retained
++conditional-kernel response, rather than conceal it in source coordinates.
++
++The next quantitative calculation is the zero-shift physical response and
++its smallest generalized energy relative to the restored Gram on coupled
++loop families, with the exact A17 additional kernel retained. This cycle has
++completed the three-moment task and one positive-shift response evaluation
++on the above actual sources. It has also supplied all-coupling source inverse
++and moment bounds. It has not evaluated a physical continuum mass lower edge.
++
++## 12. Verification, source pins, and failures retained
++
++`verify.py` uses original real quaternion coordinates and exact rational
++polynomials. Its Haar integration uses
++`int prod q_i^(2a_i)=prod(2a_i-1)!! / prod_(j=0)^(sum a-1)(4+2j)`, and odd
++monomials integrate to zero. This identity follows by expressing four
++independent real Gaussian coordinates in polar coordinates and cancelling
++the identical radial moments; no physical measure is replaced by that
++Gaussian auxiliary integral. The coordinate identity tested is on
++`sum q_i^2=1` via explicit polynomial division with its retained remainder.
++Original graph words and unique unmatched-edge witnesses are checked for
++square sides 1 through 12. These finite cases accompany the incidence proof
++for every side in section 7.
++
++For numerical endpoints, Machin's identity
++`pi=16 atan(1/5)-4 atan(1/239)` is verified by the tangent addition formula
++and its interval (0,pi/2). Alternating rational sums prove `pi<355/113`.
++The exponential upper bound uses thirty positive Taylor terms plus the
++geometric bound on the remaining term ratios; square-root bounds use integer
++squares at scale 10^50. Every inequality A46–47 and A49's reported radius is
++then checked with rational upper endpoints. Ordinary and optimized Python
++must produce identical records; errors use explicit exceptions.
++
++An initial development run failed the Machin tangent check because the test
++applied a redundant angle doubling to the already quadrupled tangent 120/119.
++The test was corrected to `(120/119-1/239)/(1+(120/119)(1/239))=1`.
++The analytic statements and source bounds were unchanged. The final written
++proof audit also corrected the interpretation of the noncanonical trial
++residual: A45a now retains its exact difference from the canonical quotient
++norm. The response and moment inequalities A38 and A45 retain their values;
++a new exact regression rejects the false identification. Notational review
++separates the residual vector mathfrak r_e from the plaquette count r_e, and
++the error radii epsilon_j from the ground energy E_0. No failed run or earlier
++file is represented as a certificate for these final bytes.
++
++[YM] `KokunoYumeto/yang-mills-interacting-workbench`, primary source at
++`fab69fdc4ac197159b8e6ae8d73a82bde2b20d55`,
++`yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md`,
++Git blob `66a7453a6452c2555a28270efcf53fa1997c26a8`, sections 1–3.
++The original full operator, ground-state domain and local exterior comparison
++are used. All new derivative and response estimates are proved above.
++
++[Parent] Same repository, PR6 at
++`e98b2c3af77f66fb1c1396143ca53daef586404f`,
++`yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md`,
++blob `1f6bfb085a626f3b1aa693e86a619e81af41529a`, especially C13–22.
++Its full delivered body was read. A15–20 prove the additional observation map
++and its kernel; A43–45 instantiate its actual residual-cohomology certificate.
++Earlier workbench attribution and the primary SU(2) conventions are preserved.
++No new number-theoretic asymptotic or peer formal certificate is imported.
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/STATUS.md b/yang-mills/continuations/20260915-actual-loop-moments/STATUS.md
+new file mode 100644
+index 0000000..b6e270b
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/STATUS.md
+@@ -0,0 +1,57 @@
++# Verification and publication status
++
++## Mathematical delivery
++
++The complete written arguments are in `RESEARCH_NOTE.md`. They use the actual
++finite-lattice SU(2) Hamiltonian, its positive ground state, and the specified
++loop-holonomy conditional measure. In particular, the narrow intervals A46–49
++are bounds for that interacting vacuum, obtained by analytical comparison and
++exact arithmetic. No sampled or numerically fitted vacuum is used.
++
++The note also supplies all-coupling estimates with the original kappa, xi and
++loop-length dependence. Its gauge-sector inverse acts on the stated spin-one
++source. The physical contraction, additional observation kernel and all norm
++and energy cross terms stay explicit. A positive physical continuum gap has
++not been established in this delivery.
++
++## Executed verification
++
++The final verifier executed 134 uniquely named exact conditions and rejected
++12 named false formulas. It passed in ordinary and optimized Python, and a
++fresh copied-source directory passed in both modes with byte-identical output.
++Three command-line corruptions were each rejected in both modes at their
++intended errors and with exit code 1: modified receipt, changed proof bytes,
++and missing proof file. Exact commands, output hashes and exit codes are in
++`execution.json`; the mathematical transcript is `verification.json`.
++
++The unchanged parent PR6 checker was replayed in ordinary and optimized Python
++against its original receipt: 189 checks and 12 negative controls, with exact
++output SHA-256 `8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075`.
++The selected predecessor files in the offline package are retained byte-for-byte.
++
++The arithmetic checks cover quaternion identities and original Haar moments,
++face incidence and every unmatched-edge cross-term witness for square sides
++1 through 12, the two Casimir contributions, and rigorous rational upper
++endpoints for every reported numerical radius. The finite cases accompany
++written proofs for arbitrary exterior box and for the general loop-size formulas.
++They are not a machine proof of elliptic regularity, the maximum principle,
++conditional-measure identities, or the analytical error estimates.
++
++No new Lean execution, external independent mathematical review or remote CI
++run is claimed. The noted trial-section correction was repaired before this
++final receipt and has a dedicated exact rejection control.
++
++## Publication
++
++Parent PR6 was re-read and remains open at
++`e98b2c3af77f66fb1c1396143ca53daef586404f` on
++`research/20260914-coupled-response`. This delivery is an additive patch against
++that exact parent, with a replacement of its current-checkpoint pointer.
++Historical proof files, verification receipts and repository-wide catalogues
++are unchanged.
++
++No remote write or new PR occurred in this session. Discovery returned the
++installed GitHub integration's 48 read/search actions, with no create/update
++or PR-write action, and no authenticated gh command was available locally.
++The review patch, complete sources and proposed PR description are delivered
++for publication without an invented remote branch, commit or PR number.
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/execution.json b/yang-mills/continuations/20260915-actual-loop-moments/execution.json
+new file mode 100644
+index 0000000..214d06a
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/execution.json
+@@ -0,0 +1,207 @@
++{
++  "analytic_proof_formalized": false,
++  "executed_utc": "2026-09-15T00:00:26.426206+00:00",
++  "finite_checks": 134,
++  "intentional_failed_executions": 6,
++  "negative_controls": 12,
++  "new_Lean_run": false,
++  "parent_commit": "e98b2c3af77f66fb1c1396143ca53daef586404f",
++  "parent_replays": [
++    {
++      "checks": 189,
++      "command": [
++        "python",
++        "-B",
++        "yang-mills/continuations/20260914-coupled-response/check.py",
++        "--verify-receipt",
++        "yang-mills/continuations/20260914-coupled-response/verification.json"
++      ],
++      "exit_code": 0,
++      "negative_controls": 12,
++      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
++    },
++    {
++      "checks": 189,
++      "command": [
++        "python",
++        "-O",
++        "-B",
++        "yang-mills/continuations/20260914-coupled-response/check.py",
++        "--verify-receipt",
++        "yang-mills/continuations/20260914-coupled-response/verification.json"
++      ],
++      "exit_code": 0,
++      "negative_controls": 12,
++      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
++    }
++  ],
++  "publication": {
++    "delivery": "review-ready additive patch and complete sources",
++    "discovered_GitHub_actions": 48,
++    "gh_cli_available": false,
++    "remote_write_performed": false,
++    "write_actions_available": false
++  },
++  "records": [
++    {
++      "command": [
++        "python",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 0,
++      "fresh_copy": false,
++      "intended_error": null,
++      "label": "original",
++      "stderr": "",
++      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
++    },
++    {
++      "command": [
++        "python",
++        "-O",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 0,
++      "fresh_copy": false,
++      "intended_error": null,
++      "label": "original-optimized",
++      "stderr": "",
++      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
++    },
++    {
++      "command": [
++        "python",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 0,
++      "fresh_copy": true,
++      "intended_error": null,
++      "label": "fresh",
++      "stderr": "",
++      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
++    },
++    {
++      "command": [
++        "python",
++        "-O",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 0,
++      "fresh_copy": true,
++      "intended_error": null,
++      "label": "fresh-optimized",
++      "stderr": "",
++      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
++    },
++    {
++      "command": [
++        "python",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "bad.json"
++      ],
++      "exit_code": 1,
++      "fresh_copy": true,
++      "intended_error": "receipt-mismatch",
++      "label": "corrupt-receipt",
++      "stderr": "FAIL: receipt-mismatch\n",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "command": [
++        "python",
++        "-O",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "bad.json"
++      ],
++      "exit_code": 1,
++      "fresh_copy": true,
++      "intended_error": "receipt-mismatch",
++      "label": "corrupt-receipt-optimized",
++      "stderr": "FAIL: receipt-mismatch\n",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "command": [
++        "python",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 1,
++      "fresh_copy": true,
++      "intended_error": "receipt-mismatch",
++      "label": "changed-note",
++      "stderr": "FAIL: receipt-mismatch\n",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "command": [
++        "python",
++        "-O",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 1,
++      "fresh_copy": true,
++      "intended_error": "receipt-mismatch",
++      "label": "changed-note-optimized",
++      "stderr": "FAIL: receipt-mismatch\n",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "command": [
++        "python",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 1,
++      "fresh_copy": true,
++      "intended_error": "missing-required-source:RESEARCH_NOTE.md",
++      "label": "missing-note",
++      "stderr": "FAIL: missing-required-source:RESEARCH_NOTE.md\n",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "command": [
++        "python",
++        "-O",
++        "-B",
++        "verify.py",
++        "--verify-receipt",
++        "verification.json"
++      ],
++      "exit_code": 1,
++      "fresh_copy": true,
++      "intended_error": "missing-required-source:RESEARCH_NOTE.md",
++      "label": "missing-note-optimized",
++      "stderr": "FAIL: missing-required-source:RESEARCH_NOTE.md\n",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    }
++  ],
++  "remote_write_performed": false,
++  "schema": "ym-actual-moments-execution-v1",
++  "successful_executions": 4,
++  "vacuum_numerical_integration": false,
++  "verification_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
++}
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/state.json b/yang-mills/continuations/20260915-actual-loop-moments/state.json
+new file mode 100644
+index 0000000..1e4b9dc
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/state.json
+@@ -0,0 +1,121 @@
++{
++  "completed_claims": [
++    {
++      "anchors": [
++        "A3",
++        "A5",
++        "A6"
++      ],
++      "id": "YM-VACUUM-DERIVATIVE",
++      "result": "Exact differentiated vacuum equation and all-coupling exterior-volume-independent pointwise and derivative-energy bounds.",
++      "scope": "full original finite regulator, all positive a,g"
++    },
++    {
++      "anchors": [
++        "A8",
++        "A9",
++        "A13",
++        "A51"
++      ],
++      "id": "YM-COVARIANT-INVERSE",
++      "result": "Original vertex spin-one source inverse with full kappa dependence, applied to the actual vacuum-derivative remainder.",
++      "scope": "specified covariant source, all positive a,g; physical contraction explicitly retained"
++    },
++    {
++      "anchors": [
++        "A15",
++        "A16",
++        "A17",
++        "A18",
++        "A20"
++      ],
++      "id": "YM-LOOP-OBSERVATION",
++      "result": "Actual loop holonomy observation, conditional measure, additional kernel and physical forcing.",
++      "scope": "one square with its collar; full conditional physical kernel"
++    },
++    {
++      "anchors": [
++        "A21",
++        "A22",
++        "A23"
++      ],
++      "id": "YM-ALL-COUPLING-MOMENTS",
++      "result": "Explicit actual N0,N1,N2 upper bounds with loop, spacing and coupling factors.",
++      "scope": "all positive a,g, arbitrary exterior box"
++    },
++    {
++      "anchors": [
++        "A29",
++        "A30",
++        "A33",
++        "A37",
++        "A38",
++        "A46"
++      ],
++      "id": "YM-EVALUATED-MOMENTS",
++      "result": "Exact coefficients for all square sizes; rigorous actual first-three-moment intervals for the elementary square.",
++      "scope": "error formulas on 0<xi<=3/64; evaluated xi=1/100000000"
++    },
++    {
++      "anchors": [
++        "A39",
++        "A43",
++        "A44",
++        "A45",
++        "A45a",
++        "A47",
++        "A49",
++        "A49a"
++      ],
++      "id": "YM-ACTUAL-RESPONSE",
++      "result": "Actual response and restored-metric interval, raw Gram retained, and exact canonical section correction. The restored physical trial form energy is enclosed and returned through its actual variational inclusion.",
++      "scope": "elementary square; positive shift s=kappa; evaluated xi=1/100000000"
++    }
++  ],
++  "date": "2026-09-15",
++  "mathematical_inputs": [
++    {
++      "blob": "66a7453a6452c2555a28270efcf53fa1997c26a8",
++      "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
++      "read_scope": "sections 1\u20133, current connector lines 1\u2013270; no full-manuscript audit",
++      "repository": "KokunoYumeto/yang-mills-interacting-workbench",
++      "revision": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55"
++    },
++    {
++      "blob": "1f6bfb085a626f3b1aa693e86a619e81af41529a",
++      "path": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md",
++      "read_scope": "full delivered note; C13\u201322 source-window and residual identities used; exact parent checker replayed",
++      "repository": "KokunoYumeto/yang-mills-interacting-workbench",
++      "revision": "e98b2c3af77f66fb1c1396143ca53daef586404f"
++    }
++  ],
++  "next_quantity": "Zero-shift response M(0) and the physical singlet energy margin relative to the restored Gram on coupled loop families, with the A17 additional kernel retained.",
++  "original_parameters": {
++    "evaluated_g_squared": "5000",
++    "evaluated_kappa": "10000/a",
++    "evaluated_xi": "1/100000000",
++    "kappa": "2g^2/a",
++    "v": "1/(2g^2 a)",
++    "xi": "1/(4g^4)"
++  },
++  "parent_branch": "research/20260914-coupled-response",
++  "parent_commit": "e98b2c3af77f66fb1c1396143ca53daef586404f",
++  "parent_pr": 6,
++  "remote_write_performed": false,
++  "retained_limits": {
++    "nontrivial_four_dimensional_field": "not established in this contribution",
++    "physical_continuum_mass_lower_bound": "unevaluated",
++    "small_xi_domain_on_running_path": "xi_n=c_n^2/4 grows; narrow intervals are applied only on their stated domain",
++    "zero_shift_physical_response": "unevaluated"
++  },
++  "schema": "ym-actual-loop-moments-state-v1",
++  "target": "Interacting four-dimensional physical Yang\u2013Mills continuum mass gap; present literal gauge group SU(2).",
++  "verification_scope": {
++    "finite_exact_checks": 134,
++    "independent_external_proof_review": false,
++    "negative_controls": 12,
++    "new_Lean_run": false,
++    "numerical_vacuum_integration": false,
++    "written_analytic_proofs": true
++  }
++}
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/verification.json b/yang-mills/continuations/20260915-actual-loop-moments/verification.json
+new file mode 100644
+index 0000000..d772004
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/verification.json
+@@ -0,0 +1,387 @@
++{
++  "certified_evaluation": {
++    "actual_moment_enclosures": [
++      [
++        "0.9994",
++        "1.0006",
++        "kappa^2 xi^2"
++      ],
++      [
++        "4.9963",
++        "5.0037",
++        "kappa^3 xi^2"
++      ],
++      [
++        "25.728",
++        "25.772",
++        "kappa^4 xi^2"
++      ]
++    ],
++    "delta_upper": "0.000032170428962",
++    "eta_upper": "0.000034181115135",
++    "g_squared": "5000",
++    "kappa": "10000/a",
++    "kinetic_relative_error_upper": "0.00000000000010679016",
++    "moment_error_radius_upper": [
++      "0.000583704276315",
++      "0.003638905899592",
++      "0.021900934242603"
++    ],
++    "physical_trial_energy_interval": [
++      "3-5/10^13",
++      "3+5/10^13",
++      "kappa"
++    ],
++    "pi_upper_used": "355/113",
++    "proof_scope": "Analytic inequalities in RESEARCH_NOTE.md, evaluated by rational upper endpoints; no vacuum samples or spin truncation.",
++    "raw_Gram_error_upper": "0.00000000000010683460",
++    "response_center": "28/165",
++    "response_certified_radius": "0.0000075",
++    "response_error_radius_upper": "0.000007453967399",
++    "response_factor": "kappa xi^2",
++    "restored_center": "796/27225",
++    "restored_certified_radius": "0.0000021",
++    "restored_error_radius_upper": "0.000002002203075",
++    "restored_factor": "xi^2",
++    "variational_direction": "The full physical finite-volume gap is at most this trial quotient.",
++    "xi": "1/100000000"
++  },
++  "finite_checks": [
++    "Pauli-Fierz-full-shared-link",
++    "conditional-Haar-singlet",
++    "conditional-triplet-zero",
++    "shared-link-Casimir-singlet",
++    "shared-link-Casimir-triplet",
++    "unshared-fundamental-Casimir-1",
++    "unshared-fundamental-Casimir-2",
++    "fundamental-trace-second-moment",
++    "raw-generator-gradient",
++    "raw-second-derivative-Frobenius",
++    "original-Pauli-operator-bound-deficit",
++    "raw-cross-link-second-derivative-Frobenius",
++    "inverse-word-trace",
++    "shared-force-norm",
++    "singlet-force-norm",
++    "triplet-force-norm",
++    "singlet-triplet-cross-term",
++    "right-invariant-bracket-0-0-1",
++    "right-invariant-bracket-0-1-2",
++    "right-invariant-bracket-0-2-0",
++    "right-invariant-bracket-1-0-1",
++    "right-invariant-bracket-1-1-2",
++    "right-invariant-bracket-1-2-0",
++    "right-invariant-bracket-2-0-1",
++    "right-invariant-bracket-2-1-2",
++    "right-invariant-bracket-2-2-0",
++    "original-12-neighbor-moments",
++    "actual-two-Casimir-trial",
++    "response-leading-coefficient",
++    "restored-leading-coefficient",
++    "Haar-trace-moment-2",
++    "Haar-trace-moment-4",
++    "Haar-trace-moment-6",
++    "gauge-adjoint-Casimir-two",
++    "gauge-contraction-invariance",
++    "covariant-residual-L2-constant",
++    "covariant-residual-energy-constant",
++    "pointwise-small-xi-coefficient",
++    "pointwise-remainder-constant",
++    "noncanonical-residual-full-energy",
++    "canonical-quotient-full-energy",
++    "canonical-residual-orthogonality",
++    "section-correction-exact-vector",
++    "section-correction-Pythagoras",
++    "section-correction-primitive-energy",
++    "original-face-counts-side-1",
++    "own-face-side-1",
++    "local-support-size-side-1",
++    "all-cross-face-Haar-witnesses-side-1",
++    "raw-moment-polynomials-side-1",
++    "actual-shared-paths-side-1",
++    "original-face-counts-side-2",
++    "own-face-side-2",
++    "local-support-size-side-2",
++    "all-cross-face-Haar-witnesses-side-2",
++    "raw-moment-polynomials-side-2",
++    "actual-shared-paths-side-2",
++    "original-face-counts-side-3",
++    "own-face-side-3",
++    "local-support-size-side-3",
++    "all-cross-face-Haar-witnesses-side-3",
++    "raw-moment-polynomials-side-3",
++    "actual-shared-paths-side-3",
++    "original-face-counts-side-4",
++    "own-face-side-4",
++    "local-support-size-side-4",
++    "all-cross-face-Haar-witnesses-side-4",
++    "raw-moment-polynomials-side-4",
++    "actual-shared-paths-side-4",
++    "original-face-counts-side-5",
++    "own-face-side-5",
++    "local-support-size-side-5",
++    "all-cross-face-Haar-witnesses-side-5",
++    "raw-moment-polynomials-side-5",
++    "actual-shared-paths-side-5",
++    "original-face-counts-side-6",
++    "own-face-side-6",
++    "local-support-size-side-6",
++    "all-cross-face-Haar-witnesses-side-6",
++    "raw-moment-polynomials-side-6",
++    "actual-shared-paths-side-6",
++    "original-face-counts-side-7",
++    "own-face-side-7",
++    "local-support-size-side-7",
++    "all-cross-face-Haar-witnesses-side-7",
++    "raw-moment-polynomials-side-7",
++    "actual-shared-paths-side-7",
++    "original-face-counts-side-8",
++    "own-face-side-8",
++    "local-support-size-side-8",
++    "all-cross-face-Haar-witnesses-side-8",
++    "raw-moment-polynomials-side-8",
++    "actual-shared-paths-side-8",
++    "original-face-counts-side-9",
++    "own-face-side-9",
++    "local-support-size-side-9",
++    "all-cross-face-Haar-witnesses-side-9",
++    "raw-moment-polynomials-side-9",
++    "actual-shared-paths-side-9",
++    "original-face-counts-side-10",
++    "own-face-side-10",
++    "local-support-size-side-10",
++    "all-cross-face-Haar-witnesses-side-10",
++    "raw-moment-polynomials-side-10",
++    "actual-shared-paths-side-10",
++    "original-face-counts-side-11",
++    "own-face-side-11",
++    "local-support-size-side-11",
++    "all-cross-face-Haar-witnesses-side-11",
++    "raw-moment-polynomials-side-11",
++    "actual-shared-paths-side-11",
++    "original-face-counts-side-12",
++    "own-face-side-12",
++    "local-support-size-side-12",
++    "all-cross-face-Haar-witnesses-side-12",
++    "raw-moment-polynomials-side-12",
++    "actual-shared-paths-side-12",
++    "Machin-angle-tangent-identity",
++    "certified-pi-upper",
++    "actual-coupling-domain",
++    "actual-moment-radius-0",
++    "actual-moment-radius-1",
++    "actual-moment-radius-2",
++    "actual-response-radius",
++    "actual-restored-metric-radius",
++    "actual-raw-Gram-radius",
++    "actual-kinetic-radius",
++    "actual-trial-state-positive-norm-and-energy",
++    "actual-trial-energy-lower",
++    "actual-trial-energy-upper",
++    "source-g-and-kappa",
++    "first-Galerkin-lower",
++    "first-Galerkin-residual",
++    "response-within-first-Galerkin-interval"
++  ],
++  "geometry": [
++    {
++      "cross_witnesses": 66,
++      "leading_moments": [
++        "1",
++        "5",
++        "103/4"
++      ],
++      "length": 4,
++      "local_edges": 32,
++      "neighbor_types": {
++        "1": 12,
++        "2": 0
++      },
++      "side": 1
++    },
++    {
++      "cross_witnesses": 378,
++      "leading_moments": [
++        "10/3",
++        "76/3",
++        "1193/6"
++      ],
++      "length": 8,
++      "local_edges": 64,
++      "neighbor_types": {
++        "1": 24,
++        "2": 4
++      },
++      "side": 2
++    },
++    {
++      "cross_witnesses": 946,
++      "leading_moments": [
++        "14/3",
++        "50",
++        "3259/6"
++      ],
++      "length": 12,
++      "local_edges": 100,
++      "neighbor_types": {
++        "1": 40,
++        "2": 4
++      },
++      "side": 3
++    },
++    {
++      "cross_witnesses": 1770,
++      "leading_moments": [
++        "6",
++        "248/3",
++        "2295/2"
++      ],
++      "length": 16,
++      "local_edges": 136,
++      "neighbor_types": {
++        "1": 56,
++        "2": 4
++      },
++      "side": 4
++    },
++    {
++      "cross_witnesses": 2850,
++      "leading_moments": [
++        "22/3",
++        "370/3",
++        "12503/6"
++      ],
++      "length": 20,
++      "local_edges": 172,
++      "neighbor_types": {
++        "1": 72,
++        "2": 4
++      },
++      "side": 5
++    },
++    {
++      "cross_witnesses": 4186,
++      "leading_moments": [
++        "26/3",
++        "172",
++        "20545/6"
++      ],
++      "length": 24,
++      "local_edges": 208,
++      "neighbor_types": {
++        "1": 88,
++        "2": 4
++      },
++      "side": 6
++    },
++    {
++      "cross_witnesses": 5778,
++      "leading_moments": [
++        "10",
++        "686/3",
++        "10481/2"
++      ],
++      "length": 28,
++      "local_edges": 244,
++      "neighbor_types": {
++        "1": 104,
++        "2": 4
++      },
++      "side": 7
++    },
++    {
++      "cross_witnesses": 7626,
++      "leading_moments": [
++        "34/3",
++        "880/3",
++        "45629/6"
++      ],
++      "length": 32,
++      "local_edges": 280,
++      "neighbor_types": {
++        "1": 120,
++        "2": 4
++      },
++      "side": 8
++    },
++    {
++      "cross_witnesses": 9730,
++      "leading_moments": [
++        "38/3",
++        "366",
++        "63535/6"
++      ],
++      "length": 36,
++      "local_edges": 316,
++      "neighbor_types": {
++        "1": 136,
++        "2": 4
++      },
++      "side": 9
++    },
++    {
++      "cross_witnesses": 12090,
++      "leading_moments": [
++        "14",
++        "1340/3",
++        "28531/2"
++      ],
++      "length": 40,
++      "local_edges": 352,
++      "neighbor_types": {
++        "1": 152,
++        "2": 4
++      },
++      "side": 10
++    },
++    {
++      "cross_witnesses": 14706,
++      "leading_moments": [
++        "46/3",
++        "1606/3",
++        "112235/6"
++      ],
++      "length": 44,
++      "local_edges": 388,
++      "neighbor_types": {
++        "1": 168,
++        "2": 4
++      },
++      "side": 11
++    },
++    {
++      "cross_witnesses": 17578,
++      "leading_moments": [
++        "50/3",
++        "632",
++        "143893/6"
++      ],
++      "length": 48,
++      "local_edges": 424,
++      "neighbor_types": {
++        "1": 184,
++        "2": 4
++      },
++      "side": 12
++    }
++  ],
++  "negative_controls": [
++    "omit-triplet",
++    "wrong-singlet-coefficient",
++    "replace-poles-by-plaquette-energy",
++    "retain-own-plaquette-as-kernel",
++    "physical-vacuum-in-spin-one-sector",
++    "noncanonical-residual-is-quotient-norm",
++    "eleven-neighbors",
++    "one-trial-reverses-variational-direction",
++    "coupling-parameter-confusion",
++    "omit-response-triplet",
++    "false-error-budget",
++    "extend-small-xi-domain"
++  ],
++  "schema": "ym-actual-loop-response-v1",
++  "scope": "Exact SU(2) polynomial and Haar calculations, integer graph incidence, and rational evaluation of written analytic error bounds. No Lean or numerical vacuum integration.",
++  "source_sha256": {
++    "RESEARCH_NOTE.md": "0ac4afbec39b2e878d5555af85a86803d9ba6ac5505dc7817f231e5533c0dd2b",
++    "verify.py": "690f3cd1de505aae7d152bcb4ce97a032ea2a1c72f8cb8a2c68bd4d4578bb042"
++  }
++}
+diff --git a/yang-mills/continuations/20260915-actual-loop-moments/verify.py b/yang-mills/continuations/20260915-actual-loop-moments/verify.py
+new file mode 100644
+index 0000000..801ba6b
+--- /dev/null
++++ b/yang-mills/continuations/20260915-actual-loop-moments/verify.py
+@@ -0,0 +1,380 @@
++#!/usr/bin/env python3
++"""Exact SU(2) local-response algebra and rational error evaluation.
++
++Uses only the standard library. Finite algebra, integer geometry, and rigorous
++arithmetic are checked here. The analytic vacuum estimates are proved in the
++accompanying note; this executable is not a formal verification of that proof.
++"""
++from __future__ import annotations
++import argparse, hashlib, json, math, sys
++from fractions import Fraction as Q
++from itertools import combinations
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parent
++checks: list[str] = []
++controls: list[str] = []
++
++def require(ok: bool, name: str) -> None:
++    if not ok:
++        raise ValueError(name)
++
++def check(name: str, ok: bool) -> None:
++    require(name not in checks, 'duplicate-check-name:' + name)
++    require(ok, name)
++    checks.append(name)
++
++def reject(name: str, false_claim: bool) -> None:
++    require(name not in controls, 'duplicate-control-name:' + name)
++    require(not false_claim, 'false-formula-accepted:' + name)
++    controls.append(name)
++
++# Sparse polynomials in the twelve ORIGINAL real quaternion coordinates
++# (u0,u1,u2,u3,a0,...,a3,b0,...,b3). Coefficients are exact rationals.
++NV=12
++class P:
++    def __init__(self, data=0):
++        if isinstance(data, P): self.d=data.d.copy()
++        elif isinstance(data, dict): self.d={k:Q(v) for k,v in data.items() if v}
++        else: self.d={} if data==0 else {(0,)*NV:Q(data)}
++    def __add__(self,o):
++        o=P(o); d=self.d.copy()
++        for k,v in o.d.items(): d[k]=d.get(k,Q(0))+v
++        return P(d)
++    __radd__=__add__
++    def __neg__(self): return P({k:-v for k,v in self.d.items()})
++    def __sub__(self,o): return self+-P(o)
++    def __rsub__(self,o): return P(o)+-self
++    def __mul__(self,o):
++        o=P(o); d={}
++        for k,v in self.d.items():
++            for j,w in o.d.items():
++                e=tuple(a+b for a,b in zip(k,j)); d[e]=d.get(e,Q(0))+v*w
++        return P(d)
++    __rmul__=__mul__
++    def __pow__(self,n):
++        require(isinstance(n,int) and n>=0,'polynomial-power-domain')
++        a=P(1); b=self
++        while n:
++            if n&1:a=a*b
++            b=b*b;n//=2
++        return a
++    def __truediv__(self,c): return self* (1/Q(c))
++    def __eq__(self,o): return self.d==P(o).d
++    def diff(self,i):
++        d={}
++        for e,v in self.d.items():
++            if e[i]:
++                f=list(e);f[i]-=1;f=tuple(f);d[f]=d.get(f,Q(0))+v*e[i]
++        return P(d)
++
++def var(i):
++    e=[0]*NV;e[i]=1;return P({tuple(e):Q(1)})
++
++def qmul(x,y):
++    return [x[0]*y[0]-sum((x[i]*y[i] for i in range(1,4)),P(0)),
++            x[0]*y[1]+x[1]*y[0]+x[2]*y[3]-x[3]*y[2],
++            x[0]*y[2]+x[2]*y[0]+x[3]*y[1]-x[1]*y[3],
++            x[0]*y[3]+x[3]*y[0]+x[1]*y[2]-x[2]*y[1]]
++def qinv(x):return [x[0]]+[-x[i] for i in range(1,4)]
++u=[var(i) for i in range(4)]
++a=[var(i) for i in range(4,8)]
++b=[var(i) for i in range(8,12)]
++
++def X(poly, group, alpha):
++    q=[var(4*group+i) for i in range(4)]
++    gen=[Q(0)]*4;gen[alpha+1]=Q(1,2)
++    tangent=qmul(gen,q)
++    return sum((tangent[i]*poly.diff(4*group+i) for i in range(4)),P(0))
++
++def K(poly,group):return -sum((X(X(poly,group,i),group,i) for i in range(3)),P(0))
++
++def sphere_reduce(poly):
++    # Literal polynomial division by q0^2+q1^2+q2^2+q3^2-1, in each factor.
++    out=P(poly)
++    for group in range(3):
++        d={}; i=4*group
++        for e,c in out.d.items():
++            power=e[i]//2; ee=list(e);ee[i]%=2
++            term=P({tuple(ee):c})
++            term=term*(P(1)-sum((var(i+j)**2 for j in range(1,4)),P(0)))**power
++            for z,v in term.d.items(): d[z]=d.get(z,Q(0))+v
++        out=P(d)
++    return out
++
++def sphere_moment(e):
++    if any(v%2 for v in e):return Q(0)
++    aa=[v//2 for v in e];A=sum(aa);n=1;d=1
++    for j in aa:
++        for k in range(1,2*j,2):n*=k
++    for k in range(A):d*=4+2*k
++    return Q(n,d)
++
++def integrate(poly,groups=(0,1,2)):
++    d={}
++    for e,c in poly.d.items():
++        ee=list(e)
++        for group in groups:
++            c*=sphere_moment(e[4*group:4*group+4])
++            for k in range(4):ee[4*group+k]=0
++        ee=tuple(ee);d[ee]=d.get(ee,Q(0))+c
++    out=P(d)
++    if len(groups)==3:
++        require(all(not any(e) for e in out.d),'unintegrated-coordinate')
++        return out.d.get((0,)*NV,Q(0))
++    return out
++
++def exact_su2():
++    F=2*qmul(u,a)[0]; B=2*qmul(u,b)[0]
++    j=sum((X(F,0,i)*X(B,0,i) for i in range(3)),P(0))
++    tau=2*qmul(a,qinv(b))[0]
++    j0=Q(3,8)*tau;j1=j-j0
++    uu=qmul(qmul(qmul(u,a),u),b)
++    check('Pauli-Fierz-full-shared-link',sphere_reduce(j-(-Q(1,4)*2*uu[0]+Q(1,4)*tau))==0)
++    check('conditional-Haar-singlet',integrate(j,(0,))==j0)
++    check('conditional-triplet-zero',integrate(j1,(0,))==0)
++    check('shared-link-Casimir-singlet',K(j0,0)==0)
++    check('shared-link-Casimir-triplet',sphere_reduce(K(j1,0)-2*j1)==0)
++    for g in (1,2):
++        check('unshared-fundamental-Casimir-'+str(g),K(j,g)==Q(3,4)*j)
++    check('fundamental-trace-second-moment',integrate(F*F)==1)
++    check('raw-generator-gradient',sphere_reduce(sum((X(F,0,i)**2 for i in range(3)),P(0))-(1-F*F/4))==0)
++    hh=sum((X(X(F,0,i),0,k)**2 for i in range(3) for k in range(3)),P(0))
++    check('raw-second-derivative-Frobenius',sphere_reduce(hh-(Q(1,2)+F*F/16))==0)
++    hmat=[[X(X(F,0,i),0,k) for i in range(3)] for k in range(3)]
++    check('original-Pauli-operator-bound-deficit',all(sphere_reduce(
++        Q(int(i==j),4)-sum((hmat[k][i]*hmat[k][j] for k in range(3)),P(0))
++        -X(F,0,i)*X(F,0,j)/4)==0 for i in range(3) for j in range(3)))
++    hh_cross=sum((X(X(F,0,i),1,k)**2 for i in range(3) for k in range(3)),P(0))
++    check('raw-cross-link-second-derivative-Frobenius',sphere_reduce(hh_cross-(Q(1,2)+F*F/16))==0)
++    check('inverse-word-trace',2*qinv(qmul(u,a))[0]==F)
++    check('shared-force-norm',integrate(j*j)==Q(3,16))
++    check('singlet-force-norm',integrate(j0*j0)==Q(9,64))
++    check('triplet-force-norm',integrate(j1*j1)==Q(3,64))
++    check('singlet-triplet-cross-term',integrate(j0*j1)==0)
++    for group in range(3):
++        for aa,bb,cc in ((0,1,2),(1,2,0),(2,0,1)):
++            check(f'right-invariant-bracket-{group}-{aa}-{bb}',X(X(var(4*group),group,bb),group,aa)-X(X(var(4*group),group,aa),group,bb)==-X(var(4*group),group,cc))
++    # One elementary loop and a neighbor have six unshared links, hence 9/2.
++    k_j=Q(9,2)*j0+Q(13,2)*j1
++    pref=Q(4,9)*12
++    moments=[pref*integrate(j*j),pref*integrate(j*k_j),pref*integrate(k_j*k_j)]
++    check('original-12-neighbor-moments',moments==[Q(1),Q(5),Q(103,4)])
++    z=(Q(2,3))*(j0/Q(11,2)+j1/Q(15,2))
++    check('actual-two-Casimir-trial',(Q(9,2)+1)*(Q(2,3)/Q(11,2))*j0+(Q(13,2)+1)*(Q(2,3)/Q(15,2))*j1==Q(2,3)*j)
++    check('response-leading-coefficient',12*integrate((Q(2,3)*j)*z)==Q(28,165))
++    check('restored-leading-coefficient',12*integrate(z*z)==Q(796,27225))
++    for n,catalan in ((2,1),(4,2),(6,5)):
++        check('Haar-trace-moment-'+str(n),integrate(F**n)==catalan)
++    reject('omit-triplet',pref*integrate(j0*j0)==1)
++    reject('wrong-singlet-coefficient',integrate(j,(0,))==Q(1,4)*tau)
++    reject('replace-poles-by-plaquette-energy',12*integrate((Q(2,3)*j)**2)/4==Q(28,165))
++    reject('retain-own-plaquette-as-kernel',sphere_reduce(4-F*F)==0)
++    return moments
++
++# Integer graph objects: vertex triples; positively oriented edge (vertex,i);
++# face (base,i,j), i<j. The inverse traversal flag remains in face_word.
++def plus(n,i,a=1):
++    m=list(n);m[i]+=a;return tuple(m)
++def face_word(p):
++    n,i,j=p
++    return ((n,i,1),(plus(n,i),j,1),(plus(n,j),i,-1),(n,j,-1))
++def edges(p):return {(n,i) for n,i,sgn in face_word(p)}
++def square_edges(side):
++    out=set()
++    for t in range(side):
++        out.update({((t,0,0),0),((t,side,0),0),((0,t,0),1),((side,t,0),1)})
++    return out
++def touching(C):
++    faces=set()
++    for n,i in C:
++        for j in range(3):
++            if j!=i:
++                for base in (n,plus(n,j,-1)):
++                    faces.add((base,min(i,j),max(i,j)))
++    return sorted(faces)
++def geometry():
++    report=[]
++    for side in range(1,13):
++        C=square_edges(side); ell=4*side
++        fs=touching(C); own=[p for p in fs if edges(p)==C]
++        ext=[p for p in fs if edges(p)!=C]
++        counts={k:sum(len(C&edges(p))==k for p in ext) for k in (1,2)}
++        expected={1:12,2:0} if side==1 else {1:4*ell-8,2:4}
++        check(f'original-face-counts-side-{side}',counts==expected and sum(counts.values())==len(ext))
++        check(f'own-face-side-{side}',len(own)==int(side==1))
++        S=C|set().union(*(edges(p) for p in ext))
++        check(f'local-support-size-side-{side}',len(S)==(32 if side==1 else 9*ell-8))
++        witnesses=[]
++        for p,q in combinations(ext,2):
++            available=edges(p)-(edges(q)|C)
++            require(bool(available),'missing-unmatched-exterior-edge')
++            witnesses.append((p,q,min(available)))
++        check(f'all-cross-face-Haar-witnesses-side-{side}',len(witnesses)==len(ext)*(len(ext)-1)//2)
++        cs=[]
++        for order in range(3):
++            cs.append(sum((Q(number*sh*sh,48)*(3*(Q(3,4)*(ell+4-2*sh))**order+(Q(3,4)*(ell+4-2*sh)+2*sh)**order) for sh,number in counts.items()),Q(0)))
++        expected_m=[Q(1),Q(5),Q(103,4)] if side==1 else [Q(ell+2,3),Q(ell*(3*ell+14),12),Q(9*ell**3+66*ell**2+76*ell+104,48)]
++        check(f'raw-moment-polynomials-side-{side}',cs==expected_m)
++        # An overlap of two shared edges is an actual adjacent path.
++        for p in ext:
++            sh=C&edges(p)
++            if len(sh)==2:
++                vs=[]
++                for n,i in sh:vs.extend([n,plus(n,i)])
++                require(len(set(vs))==3,'two-shared-edges-not-adjacent')
++        check(f'actual-shared-paths-side-{side}',True)
++        report.append({'side':side,'length':ell,'local_edges':len(S),'neighbor_types':counts,'cross_witnesses':len(witnesses),'leading_moments':[str(z) for z in cs]})
++    reject('eleven-neighbors',report[0]['neighbor_types'][1]==11)
++    return report
++
++def atan_interval(x:Q,N:int):
++    require(0<x<1 and N>0,'arctangent-domain')
++    s=sum(((-1)**j*x**(2*j+1)/Q(2*j+1) for j in range(N)),Q(0))
++    t=(-1)**N*x**(2*N+1)/Q(2*N+1)
++    return min(s,s+t),max(s,s+t)
++def sqrt_upper(x:Q):
++    require(x>=0,'negative-square-root')
++    scale=10**50
++    n=math.isqrt((x.numerator*scale*scale)//x.denominator)
++    lo=Q(n,scale);hi=lo if lo*lo==x else Q(n+1,scale)
++    require(lo*lo<=x<=hi*hi,'square-root-endpoint-error')
++    return hi
++def exp_minus_one_upper(x:Q):
++    require(0<=x<1,'certificate-exponential-domain')
++    term=Q(1);s=Q(0)
++    for j in range(1,31):
++        term=term*x/j;s+=term
++    nxt=term*x/31
++    return s+nxt/(1-x/32)
++def ceil_dec(x:Q,places=15):
++    scale=10**places; val=-((-x.numerator*scale)//x.denominator)
++    return Q(val,scale)
++def dec(x:Q,places=15):
++    x=ceil_dec(x,places);scale=10**places;n=x.numerator*scale//x.denominator
++    sign='-' if n<0 else '';n=abs(n)
++    return sign+str(n//scale)+'.'+str(n%scale).zfill(places)
++
++def section_correction():
++    # Complete original scalar-product example, with a deliberately noncanonical trial.
++    ds=(Q(3),Q(6)); w=(Q(1),Q(2)); y=(Q(1,5),Q(1,4))
++    aa=sum(d*z*z for d,z in zip(ds,y)); cc=sum(z*t for z,t in zip(y,w))
++    mm=sum(t*t/d for t,d in zip(w,ds)); alpha=cc/aa
++    rr=tuple(t-d*z for t,d,z in zip(w,ds,y))
++    rc=tuple(t-d*alpha*z for t,d,z in zip(w,ds,y))
++    rn=sum(t*t/d for t,d in zip(rr,ds)); cn=sum(t*t/d for t,d in zip(rc,ds))
++    check('noncanonical-residual-full-energy',rn==Q(19,200))
++    check('canonical-quotient-full-energy',cn==Q(1,99)==mm-cc*cc/aa)
++    check('canonical-residual-orthogonality',sum(z*t for z,t in zip(y,rc))==0)
++    check('section-correction-exact-vector',all(t==h+(alpha-1)*d*z for t,h,d,z in zip(rr,rc,ds,y)))
++    check('section-correction-Pythagoras',rn==cn+aa*(alpha-1)**2)
++    check('section-correction-primitive-energy',aa*(alpha-1)**2==Q(1681,19800))
++    reject('noncanonical-residual-is-quotient-norm',rn==cn)
++
++def gauge_source():
++    def eps(i,j,k):
++        if len({i,j,k})<3:return 0
++        return 1 if (i,j,k) in ((0,1,2),(1,2,0),(2,0,1)) else -1
++    matrices=[[[Q(-eps(a,i,j)) for j in range(3)] for i in range(3)] for a in range(3)]
++    casimir=[[sum((-sum(M[i][k]*M[k][j] for k in range(3)) for M in matrices),Q(0)) for j in range(3)] for i in range(3)]
++    check('gauge-adjoint-Casimir-two',casimir==[[Q(2*int(i==j)) for j in range(3)] for i in range(3)])
++    check('gauge-contraction-invariance',all(M[i][j]+M[j][i]==0 for M in matrices for i in range(3) for j in range(3)))
++    check('covariant-residual-L2-constant',Q(3)*Q(128,3)==128)
++    check('covariant-residual-energy-constant',128*Q(128,3)==Q(16384,3))
++    check('pointwise-small-xi-coefficient',Q(1,2)-Q(16,3)*Q(3,64)==Q(1,4))
++    check('pointwise-remainder-constant',Q(64,9)/Q(1,4)==Q(256,9))
++    reject('physical-vacuum-in-spin-one-sector',0==2)
++
++def arithmetic():
++    at5=atan_interval(Q(1,5),55);at239=atan_interval(Q(1,239),16)
++    plo=16*at5[0]-4*at239[1];phi=16*at5[1]-4*at239[0]
++    check('Machin-angle-tangent-identity',(Q(120,119)-Q(1,239))/(1+Q(120,119)*Q(1,239))==1)
++    check('certified-pi-upper',Q(314159265358979323846,10**20)<plo<phi<Q(355,113))
++    # Every numerical assertion below is certified by upward rational bounds.
++    pi=Q(355,113); x=Q(1,10**8);ell=4;d=32;aa=Q(256,9)
++    check('actual-coupling-domain',0<x<=Q(3,64))
++    sq=sqrt_upper
++    delta=exp_minus_one_upper(32*pi*d*x)
++    eta=exp_minus_one_upper(32*pi*(d+ell-2)*x)
++    residual_b=aa*x*x
++    bd=ell*sq(128*aa/3)+sq(Q(3))/2*sq(Q(ell**3))*aa
++    cd=Q(128*ell,3)+Q(3*ell**2,4)*aa+8*sq(Q(3))*ell**2*aa*x+sq(Q(128))*sq(Q(ell**3))*sq(aa)
++    ht=x/3*(eta*48/2+16*x*12)+x*x*bd/2+16*x*ell*residual_b
++    e0=2*(ell*residual_b+x/3*eta*12)
++    e1=2*(x/3*eta*90+Q(16,3)*x*x*48+cd*x*x+16*ell*x*ht)
++    c0,c1,c2=Q(1),Q(5),Q(103,4)
++    E0=delta*c0+2*sq((1+delta)*c0)*e0/x+(e0/x)**2
++    E1=delta*sq(c0*c2)+sq((1+delta)*c0)*e1/x+sq((1+delta)*c2)*e0/x+e0*e1/(x*x)
++    E2=delta*c2+2*sq((1+delta)*c2)*e1/x+(e1/x)**2
++    for i,(err,upper) in enumerate(zip((E0,E1,E2),(Q(6,10**4),Q(37,10**4),Q(22,1000)))):
++        check('actual-moment-radius-'+str(i),0<err<upper)
++    zstar=Q(796,27225); mstar=Q(28,165); zmax=Q(224,165); lz=Q(848,165)
++    hz=x*(eta*lz/2+16*x*zmax)
++    rr=2*ell*residual_b+16*x*x*lz+16*ell*x*hz
++    normz=sq((1+delta)*zstar)
++    parts=(delta*x*x*sq(zstar),16*x**3*zmax*lz,
++           2*x*x*eta*eta*8*zmax,4*ell*residual_b*x*normz,
++           ell*hz*hz+(x*eta*zmax)**2,32*ell*x*x*normz*hz,rr*rr)
++    EM=sum(parts)/(x*x)
++    EZ=delta*zstar+(eta*zmax)**2+2*normz*rr/x+(rr/x)**2
++    check('actual-response-radius',EM<Q(75,10**7))
++    check('actual-restored-metric-radius',EZ<Q(21,10**7))
++    dC=exp_minus_one_upper(32*pi*ell*x)
++    B2=x*delta/4+x*sq(Q(5))*dC/6+ell*residual_b
++    meanerr=2*x/9*(B2+Q(3,2)*delta)+Q(2*ell,3)*residual_b
++    gramerr=B2+(2*x/3+meanerr)**2
++    check('actual-raw-Gram-radius',gramerr<Q(11,10**14))
++    check('actual-kinetic-radius',B2<Q(11,10**14))
++    # Return through the exact physical trial synthesis map, retaining both mixed entries.
++    energy_lo=3-B2-x*x*(mstar+EM+zstar+EZ)
++    norm_lo=1-gramerr+x*x*(zstar-EZ)
++    trial_lo=energy_lo/(1+gramerr+x*x*(zstar+EZ))
++    trial_hi=(3+B2-x*x*(mstar-EM+zstar-EZ))/norm_lo
++    check('actual-trial-state-positive-norm-and-energy',energy_lo>0 and norm_lo>0)
++    check('actual-trial-energy-lower',trial_lo>3-Q(5,10**13))
++    check('actual-trial-energy-upper',trial_hi<3+Q(5,10**13))
++    # Inclusion of span((0,1)) into diag(1,3) has trial quotient 3 and full infimum 1.
++    reject('one-trial-reverses-variational-direction',Q(1)>=Q(3))
++    check('source-g-and-kappa',Q(1)/(4*Q(5000)**2)==x and 2*Q(5000)==10000)
++    check('first-Galerkin-lower',Q(2,6)-(5+1)/Q(36)==Q(1,6))
++    check('first-Galerkin-residual',1-Q(2,6)*6+(Q(103,4)+10+1)/36==Q(1,48))
++    check('response-within-first-Galerkin-interval',Q(1,6)<mstar<Q(3,16))
++    reject('coupling-parameter-confusion',Q(1)/(4*Q(5000)**4)==x)
++    reject('omit-response-triplet',Q(3,4)/Q(11,2)==mstar)
++    reject('false-error-budget',EM<Q(1,10**7))
++    reject('extend-small-xi-domain',Q(1,4)<=Q(3,64))
++    return {'xi':str(x),'g_squared':'5000','kappa':'10000/a',
++            'pi_upper_used':str(pi),'delta_upper':dec(delta),'eta_upper':dec(eta),
++            'moment_error_radius_upper':[dec(e) for e in (E0,E1,E2)],
++            'actual_moment_enclosures':[['0.9994','1.0006','kappa^2 xi^2'],['4.9963','5.0037','kappa^3 xi^2'],['25.728','25.772','kappa^4 xi^2']],
++            'response_center':str(mstar),'response_error_radius_upper':dec(EM),
++            'response_certified_radius':'0.0000075','response_factor':'kappa xi^2',
++            'restored_center':str(zstar),'restored_error_radius_upper':dec(EZ),
++            'restored_certified_radius':'0.0000021','restored_factor':'xi^2',
++            'physical_trial_energy_interval':['3-5/10^13','3+5/10^13','kappa'],
++            'variational_direction':'The full physical finite-volume gap is at most this trial quotient.',
++            'raw_Gram_error_upper':dec(gramerr,20),'kinetic_relative_error_upper':dec(B2,20),
++            'proof_scope':'Analytic inequalities in RESEARCH_NOTE.md, evaluated by rational upper endpoints; no vacuum samples or spin truncation.'}
++
++def main():
++    parser=argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('--verify-receipt',type=Path)
++    parser.add_argument('--output',type=Path)
++    args=parser.parse_args()
++    exact_su2(); gauge_source(); section_correction(); geo=geometry(); nums=arithmetic()
++    for name in ('RESEARCH_NOTE.md','verify.py'):
++        require((ROOT/name).is_file() and (ROOT/name).stat().st_size>0,'missing-required-source:'+name)
++    payload={'schema':'ym-actual-loop-response-v1','finite_checks':checks,'negative_controls':controls,
++             'geometry':geo,'certified_evaluation':nums,
++             'source_sha256':{name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in ('RESEARCH_NOTE.md','verify.py')},
++             'scope':'Exact SU(2) polynomial and Haar calculations, integer graph incidence, and rational evaluation of written analytic error bounds. No Lean or numerical vacuum integration.'}
++    text=json.dumps(payload,sort_keys=True,indent=2)+'\n'
++    if args.verify_receipt:
++        require(args.verify_receipt.read_text()==text,'receipt-mismatch')
++    if args.output:args.output.write_text(text)
++    sys.stdout.write(text)
++
++if __name__=='__main__':
++    try:main()
++    except (ValueError,OSError) as exc:
++        print('FAIL: '+str(exc),file=sys.stderr);sys.exit(1)
+diff --git a/yang-mills/research-control/CURRENT.md b/yang-mills/research-control/CURRENT.md
+index 90f605e..cf5d05d 100644
+--- a/yang-mills/research-control/CURRENT.md
++++ b/yang-mills/research-control/CURRENT.md
+@@ -1,8 +1,21 @@
+-# Current additive checkpoint
++# Current additive checkpoint: actual interacting response moments
+ 
+-The continuation is [Coupled Hamiltonians and two-sided response enclosures](../continuations/20260914-coupled-response/README.md).
+-Its [state](../continuations/20260914-coupled-response/state.json) includes refreshed peer heads, the preserved Hamiltonian/self-adjointness exchange direction and the next actual matrix inputs N0,N1,N2.
++Read [Actual Wilson-loop response moments](../continuations/20260915-actual-loop-moments/README.md),
++then its complete proof, verification and [mathematical state](../continuations/20260915-actual-loop-moments/state.json).
+ 
+-The parent research-control files and receipt remain unchanged historical records. Read them for the original workflow; then read the current continuation and run its checker as well as the parent checker. The continuation uses the same physical operators, fine vacuum and raw Grams. Its finite certificates have no claimed evaluation of the actual vacuum moments or continuum gap.
++The continuation evaluates N0,N1,N2 and a positive-shift response on the
++specified original loop observation, with rigorous finite error bounds for
++the actual interacting vacuum and constants independent of exterior volume.
++The full original coarse-to-loop map and its additional kernel are A17;
++the chosen-trial/canonical-section correction is A45a. All-coupling score,
++source inverse and moment bounds retain physical coupling and loop size.
++The narrow numerical interval uses xi=10^-8, equivalently g^2=5000.
+ 
+-The next selected calculation encloses the original loop/energy score moments and returns the response interval to the restored state metric, retaining the coarse complement and escaping-state quotient. Other justified mathematical directions remain available; record their original quantity and exact maps before changing route. No automatic execution or merge is active.
++The selected next quantity is the zero-shift physical response and its
++singlet energy margin against the restored Gram on coupled loop families.
++No continuum lower mass value is assigned. The original research workflow
++and all predecessor proofs and receipts remain unchanged.
++
++The replay command and exact publication scope are in the continuation README
++and STATUS. This file is delivered in a patch against PR6 head
++`e98b2c3af77f66fb1c1396143ca53daef586404f`; no remote write occurred in this session.

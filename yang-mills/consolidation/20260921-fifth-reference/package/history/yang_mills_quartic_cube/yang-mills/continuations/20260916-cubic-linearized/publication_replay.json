@@ -1,0 +1,45 @@
+{
+  "records": [
+    {
+      "exit_code": 0,
+      "full_receipt_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6",
+      "mode": "ordinary",
+      "seconds": 25.17096458099968,
+      "stage": "fresh-public-materialization",
+      "stdout": "PASS: complete 180403-byte receipt reproduced 2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6\n"
+    },
+    {
+      "exit_code": 1,
+      "mode": "False",
+      "stage": "existing-receipt-rejection",
+      "stderr": "FAIL: existing-receipt-mismatch\n"
+    },
+    {
+      "exit_code": 1,
+      "mode": "False",
+      "stage": "source-rejection",
+      "stderr": "FAIL: source-identity-mismatch:verify.py\n"
+    },
+    {
+      "exit_code": 0,
+      "full_receipt_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6",
+      "mode": "optimized",
+      "seconds": 30.011559986000066,
+      "stage": "fresh-public-materialization",
+      "stdout": "PASS: complete 180403-byte receipt reproduced 2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6\n"
+    },
+    {
+      "exit_code": 1,
+      "mode": "True",
+      "stage": "existing-receipt-rejection",
+      "stderr": "FAIL: existing-receipt-mismatch\n"
+    },
+    {
+      "exit_code": 1,
+      "mode": "True",
+      "stage": "source-rejection",
+      "stderr": "FAIL: source-identity-mismatch:verify.py\n"
+    }
+  ],
+  "schema": "ym-cubic-public-materialization-v1"
+}

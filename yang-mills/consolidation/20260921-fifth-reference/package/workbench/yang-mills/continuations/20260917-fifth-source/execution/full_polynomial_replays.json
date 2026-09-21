@@ -1,0 +1,33 @@
+[
+  {
+    "name": "full_polynomial_ordinary",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-B",
+      "audit_fifth.py",
+      "--verify-existing",
+      "--workers",
+      "4"
+    ],
+    "started_utc": "2026-09-17T16:53:11.082904+00:00",
+    "duration_seconds": 43.885370929000146,
+    "exit_code": 0,
+    "log_sha256": "67b79986f5cc50fd83a5a5527a8e0b1a9863aa3940706c99bf74c87a480a0867"
+  },
+  {
+    "name": "full_polynomial_optimized",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-O",
+      "-B",
+      "audit_fifth.py",
+      "--verify-existing",
+      "--workers",
+      "4"
+    ],
+    "started_utc": "2026-09-17T16:53:54.968909+00:00",
+    "duration_seconds": 45.01616341199997,
+    "exit_code": 0,
+    "log_sha256": "7f80a989af8c36fa6c1bd41beed1a637d25620e7b5104e9313ab14fd81dc0b65"
+  }
+]

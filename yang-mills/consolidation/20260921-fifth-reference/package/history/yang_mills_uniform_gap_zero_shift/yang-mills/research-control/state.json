@@ -1,0 +1,276 @@
+{
+  "claims": [
+    {
+      "analytic_machine_checked": false,
+      "depends": [],
+      "evidence": "written-proof-with-separate-fixtures",
+      "id": "LOCAL-SCORE",
+      "parameter_dependence": "All positive a_n,g_n; chosen finite coarse edges F; exact b=2^(n-r); no exterior-volume factor, xi_n retained.",
+      "proof_anchor": "L8",
+      "quantity": "Integrated local conditional score trace I_F <= (4/b) sum eta_ej <= 32 |F| xi_n",
+      "scope": "finite-regulator",
+      "sources": [
+        "YM1",
+        "YM2",
+        "YM3"
+      ]
+    },
+    {
+      "analytic_machine_checked": false,
+      "depends": [
+        "LOCAL-SCORE"
+      ],
+      "evidence": "written-proof-with-separate-fixtures",
+      "id": "SCORE-COUPLING",
+      "parameter_dependence": "Actual fine vacuum and its marginal, compact finite regulator, smooth coarse g; no pointwise bound inferred from I_F.",
+      "proof_anchor": "L14",
+      "quantity": "C g = -kappa_n b T* Xg and T T*=Gamma",
+      "scope": "finite-regulator",
+      "sources": [
+        "YM1",
+        "YM3"
+      ]
+    },
+    {
+      "analytic_machine_checked": false,
+      "depends": [
+        "SCORE-COUPLING"
+      ],
+      "evidence": "written-proof-with-separate-fixtures",
+      "id": "ENERGY-SECTION",
+      "parameter_dependence": "s>0; original H^1 forms and restricted closed kernel form; raw norm and mixed entries retained.",
+      "proof_anchor": "L19",
+      "quantity": "q_eff,s retains full score-resolvent response; derivative is restored state Gram",
+      "scope": "finite-regulator",
+      "sources": [
+        "YM1",
+        "YM3",
+        "SZ2"
+      ]
+    },
+    {
+      "analytic_machine_checked": false,
+      "depends": [
+        "ENERGY-SECTION"
+      ],
+      "evidence": "written-proof-with-separate-fixtures",
+      "id": "MINIMUM-TOWER",
+      "parameter_dependence": "Every finite refinement chain in the same fine vacuum; induced middle form and marginal specified; no continuum-uniform coercivity assigned.",
+      "proof_anchor": "L25",
+      "quantity": "Direct minimum-energy section equals iterated sections with induced intermediate forms",
+      "scope": "finite-regulator",
+      "sources": [
+        "YM3",
+        "SZ1",
+        "SZ2"
+      ]
+    }
+  ],
+  "constants": [
+    "a_n",
+    "g_n",
+    "kappa_n",
+    "xi_n",
+    "b",
+    "E_0,n"
+  ],
+  "continuum_gap_proved": false,
+  "date": "2026-09-14",
+  "execution_policy": {
+    "automatic_merges": false,
+    "background_research": false,
+    "new_lean_run": false,
+    "paid_codex_jobs": false,
+    "peer_ci_replayed": false
+  },
+  "gauge_group": "SU(2)",
+  "next_calculation": "Evaluate the actual local conditional-score response on increasing physical observation families; retain all residual energies and cross entries in the L25 tower.",
+  "next_quantity": "(kappa_n b)^2 <T*Xg,(D+s)^(-1)T*Xv> relative to kinetic energy and restored state Gram",
+  "peer_discoveries": [
+    {
+      "action": "Read exact new proof before importing any extension identity",
+      "pr": 2,
+      "repo": "KokunoYumeto/collatz-workbench",
+      "scope": "PR-description discovery only",
+      "topic": "Relative cohomology retaining residual components and anchored cycle sectors"
+    },
+    {
+      "action": "Candidate completeness-certificate design; no rate transferred",
+      "pr": 4,
+      "repo": "KokunoYumeto/erdos-problem-817-workbench",
+      "scope": "PR-description discovery only",
+      "topic": "SplitZero outer controller and complete finite carry records"
+    },
+    {
+      "action": "Candidate for later certified response estimates",
+      "pr": 31,
+      "repo": "KokunoYumeto/zeta-function-research-reader",
+      "scope": "PR-description discovery only",
+      "topic": "Signed source-resolvent error controls"
+    },
+    {
+      "action": "Read full moment proof before a spectral application",
+      "pr": 6,
+      "repo": "KokunoYumeto/erdos-straus-foundation",
+      "scope": "Core first 145 lines read; moment claims discovered only",
+      "topic": "Two-sided moment certificates and labelled return kernels"
+    }
+  ],
+  "publication": {
+    "generated_repository_catalogues": "unchanged; complete Git checkout unavailable at local DNS",
+    "mode": "additive PR stacked on unmerged PR4",
+    "parent": "dc390930a8d2774e93481206602973caff7aa7da"
+  },
+  "schema": "ym-research-control-v1",
+  "sources": [
+    {
+      "blob": "dfee77c0ca0d6ed897c4172fcbfe23cd9d10d313",
+      "id": "YM1",
+      "path": "yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md",
+      "read_scope": "Sections 1-2 and 6: original operator, domains, positive vacuum and fixed-regulator spectrum. Prior conversation source read retained; not a new complete source audit.",
+      "ref": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
+      "repo": "KokunoYumeto/yang-mills-interacting-workbench",
+      "review": "partial-proof-read"
+    },
+    {
+      "blob": "66a7453a6452c2555a28270efcf53fa1997c26a8",
+      "id": "YM2",
+      "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+      "read_scope": "Sections 1-3: local exterior operator and all-coupling electric estimates. Their equations are rederived for the current local score bound; later covariance claims are not imported.",
+      "ref": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
+      "repo": "KokunoYumeto/yang-mills-interacting-workbench",
+      "review": "partial-proof-read"
+    },
+    {
+      "blob": "0d79c733ff6209c991dd2b52474b1e399dd812db",
+      "id": "YM3",
+      "path": "yang-mills/continuations/20260914-vacuum-refinement-infrared/RESEARCH_NOTE.md",
+      "read_scope": "Unmerged PR4, sections 3 and 5. Full delivered note bytes matched; parent 181-condition finite checker replayed locally. Analytic proofs are not machine-certified by that replay.",
+      "ref": "dc390930a8d2774e93481206602973caff7aa7da",
+      "repo": "KokunoYumeto/yang-mills-interacting-workbench",
+      "review": "partial-proof-read"
+    },
+    {
+      "blob": "b6cfec2ac9517acc378aa02686ada6e7923ef381",
+      "id": "SZ1",
+      "path": "workbenches/splitzero-tandem/continuations/20260914-original-kernel-web/13_ARITHMETIC_MIXED_TRANSFER.tex",
+      "read_scope": "Source lines 1-275, particularly AMT7-10: same-fiber minimum sections, composition, kernel and metric comparison. No arithmetic asymptotic constant transferred to Yang-Mills.",
+      "ref": "8fd2157e8b41783224b42781699432d824ec0c15",
+      "repo": "KokunoYumeto/zeta-function-research-reader",
+      "review": "partial-proof-read"
+    },
+    {
+      "blob": "866ed2f6e8ed9ca544f6ec0af97c5dec3fecedad",
+      "id": "SZ2",
+      "path": "workbenches/tau-observation-kernel-formal/RESEARCH_NOTE.md",
+      "read_scope": "Unmerged PR32 note sections 1-7. Full corrected rectangular residual and observed-iterate interfaces inspected. Its reported Lean execution was not replayed.",
+      "ref": "9cec8482f2ecf978cf8bdb67b4c080b9dd74f5d6",
+      "repo": "KokunoYumeto/zeta-function-research-reader",
+      "review": "proof-read"
+    },
+    {
+      "blob": "5fec479a48c4253eadffb9ed3c78da81b58a0000",
+      "id": "COLLATZ",
+      "path": "collatz_reconstruction/research_program/split_zero_history_20260913/note.tex",
+      "read_scope": "Lines 70-210: exact history/polynomial transport and specialization fiber. Used for a loss-of-information regression, not a Yang-Mills energy theorem.",
+      "ref": "63407034387466870f9e092dcdf39fb5a1ec0399",
+      "repo": "KokunoYumeto/collatz-workbench",
+      "review": "partial-proof-read"
+    },
+    {
+      "blob": "f382a5a89850951e24a6942e056c971a8b2878c4",
+      "id": "ES",
+      "path": "research/incoming/es-split-boundary-20260914/core.tex",
+      "read_scope": "Unmerged PR6, lines 1-145: original divisor states, exact denominator defects, socle and augmentation. Later moment bounds discovered in PR description, not inspected or imported.",
+      "ref": "f234ed0c34100c39e52c6a4645793823e830a983",
+      "repo": "KokunoYumeto/erdos-straus-foundation",
+      "review": "partial-proof-read"
+    },
+    {
+      "blob": "027b07d4c8f6bd0eccf3ce7bb8f4ef1076e10231",
+      "id": "EP817",
+      "path": "scripts/validate_workbench_state.py",
+      "read_scope": "Lines 1-190: content-addressed validation, duplicate-key and path checks. Design precedent for the new independently written checker; no peer checker or Lean run replayed.",
+      "ref": "23c0110c95b5a2036bdc04a1f352b6e5e27742c8",
+      "repo": "KokunoYumeto/erdos-problem-817-workbench",
+      "review": "validator-read"
+    }
+  ],
+  "target": "4D interacting Yang-Mills existence and physical mass gap",
+  "transfers": [
+    {
+      "map": "(Q,Lambda1,Lambda2) -> canonical minimum sections; same observation fibers; L25",
+      "metric": "Original q_n+s L2(rho_n) and its actual induced middle form",
+      "source": "SZ1",
+      "status": "instantiated",
+      "target": "Exact finite refinement composition"
+    },
+    {
+      "map": "Source Gram G -> E_mat+sG_YM; observation -> actual conditional matrix; L22",
+      "metric": "Full rectangular Gram, section-corrected kernel, original state cross terms",
+      "source": "SZ2",
+      "status": "instantiated",
+      "target": "Residual energy and restored state metric"
+    },
+    {
+      "map": "q -> 3; kernel (q-3); retained polynomial difference (q-3)(q+4)/32",
+      "metric": "Original polynomial coefficients retained; no energy-metric identification",
+      "source": "COLLATZ",
+      "status": "regression-only",
+      "target": "Negative control against reconstructing a source from a collapsed observation"
+    },
+    {
+      "map": "Original labelled top-socle line -> augmentation, equals success projector",
+      "metric": "Original finite arithmetic counting measure remains attached; no YM identification",
+      "source": "ES",
+      "status": "candidate-not-imported",
+      "target": "Candidate for endpoint-moment review; later proof body not imported"
+    },
+    {
+      "map": "Source file bytes -> content-addressed record -> explicit validation result",
+      "metric": "No mathematical norm transported; provenance and evidence scope only",
+      "source": "EP817",
+      "status": "regression-only",
+      "target": "Research-state validation design"
+    }
+  ],
+  "unevaluated": [
+    "Actual interacting-vacuum response integrals",
+    "Uniform continuum positive lower edge",
+    "Nontrivial four-dimensional continuum field and full physical-state identification"
+  ],
+  "watched_revisions": [
+    {
+      "key": "yang-mills:main",
+      "revision": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55"
+    },
+    {
+      "key": "yang-mills:PR4",
+      "revision": "dc390930a8d2774e93481206602973caff7aa7da"
+    },
+    {
+      "key": "zeta:main",
+      "revision": "8fd2157e8b41783224b42781699432d824ec0c15"
+    },
+    {
+      "key": "zeta:PR32",
+      "revision": "9cec8482f2ecf978cf8bdb67b4c080b9dd74f5d6"
+    },
+    {
+      "key": "collatz:main",
+      "revision": "63407034387466870f9e092dcdf39fb5a1ec0399"
+    },
+    {
+      "key": "collatz:PR2-description-head",
+      "revision": "ce8f784da8fb48aa19065c036cd815c05628cec4"
+    },
+    {
+      "key": "erdos-straus:PR6-source",
+      "revision": "f234ed0c34100c39e52c6a4645793823e830a983"
+    },
+    {
+      "key": "erdos817:main",
+      "revision": "23c0110c95b5a2036bdc04a1f352b6e5e27742c8"
+    }
+  ]
+}

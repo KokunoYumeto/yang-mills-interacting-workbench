@@ -1,0 +1,121 @@
+{
+  "completed_claims": [
+    {
+      "anchors": [
+        "A3",
+        "A5",
+        "A6"
+      ],
+      "id": "YM-VACUUM-DERIVATIVE",
+      "result": "Exact differentiated vacuum equation and all-coupling exterior-volume-independent pointwise and derivative-energy bounds.",
+      "scope": "full original finite regulator, all positive a,g"
+    },
+    {
+      "anchors": [
+        "A8",
+        "A9",
+        "A13",
+        "A51"
+      ],
+      "id": "YM-COVARIANT-INVERSE",
+      "result": "Original vertex spin-one source inverse with full kappa dependence, applied to the actual vacuum-derivative remainder.",
+      "scope": "specified covariant source, all positive a,g; physical contraction explicitly retained"
+    },
+    {
+      "anchors": [
+        "A15",
+        "A16",
+        "A17",
+        "A18",
+        "A20"
+      ],
+      "id": "YM-LOOP-OBSERVATION",
+      "result": "Actual loop holonomy observation, conditional measure, additional kernel and physical forcing.",
+      "scope": "one square with its collar; full conditional physical kernel"
+    },
+    {
+      "anchors": [
+        "A21",
+        "A22",
+        "A23"
+      ],
+      "id": "YM-ALL-COUPLING-MOMENTS",
+      "result": "Explicit actual N0,N1,N2 upper bounds with loop, spacing and coupling factors.",
+      "scope": "all positive a,g, arbitrary exterior box"
+    },
+    {
+      "anchors": [
+        "A29",
+        "A30",
+        "A33",
+        "A37",
+        "A38",
+        "A46"
+      ],
+      "id": "YM-EVALUATED-MOMENTS",
+      "result": "Exact coefficients for all square sizes; rigorous actual first-three-moment intervals for the elementary square.",
+      "scope": "error formulas on 0<xi<=3/64; evaluated xi=1/100000000"
+    },
+    {
+      "anchors": [
+        "A39",
+        "A43",
+        "A44",
+        "A45",
+        "A45a",
+        "A47",
+        "A49",
+        "A49a"
+      ],
+      "id": "YM-ACTUAL-RESPONSE",
+      "result": "Actual response and restored-metric interval, raw Gram retained, and exact canonical section correction. The restored physical trial form energy is enclosed and returned through its actual variational inclusion.",
+      "scope": "elementary square; positive shift s=kappa; evaluated xi=1/100000000"
+    }
+  ],
+  "date": "2026-09-15",
+  "mathematical_inputs": [
+    {
+      "blob": "66a7453a6452c2555a28270efcf53fa1997c26a8",
+      "path": "yang-mills/sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md",
+      "read_scope": "sections 1\u20133, current connector lines 1\u2013270; no full-manuscript audit",
+      "repository": "KokunoYumeto/yang-mills-interacting-workbench",
+      "revision": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55"
+    },
+    {
+      "blob": "1f6bfb085a626f3b1aa693e86a619e81af41529a",
+      "path": "yang-mills/continuations/20260914-coupled-response/RESEARCH_NOTE.md",
+      "read_scope": "full delivered note; C13\u201322 source-window and residual identities used; exact parent checker replayed",
+      "repository": "KokunoYumeto/yang-mills-interacting-workbench",
+      "revision": "e98b2c3af77f66fb1c1396143ca53daef586404f"
+    }
+  ],
+  "next_quantity": "Zero-shift response M(0) and the physical singlet energy margin relative to the restored Gram on coupled loop families, with the A17 additional kernel retained.",
+  "original_parameters": {
+    "evaluated_g_squared": "5000",
+    "evaluated_kappa": "10000/a",
+    "evaluated_xi": "1/100000000",
+    "kappa": "2g^2/a",
+    "v": "1/(2g^2 a)",
+    "xi": "1/(4g^4)"
+  },
+  "parent_branch": "research/20260914-coupled-response",
+  "parent_commit": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+  "parent_pr": 6,
+  "remote_write_performed": false,
+  "retained_limits": {
+    "nontrivial_four_dimensional_field": "not established in this contribution",
+    "physical_continuum_mass_lower_bound": "unevaluated",
+    "small_xi_domain_on_running_path": "xi_n=c_n^2/4 grows; narrow intervals are applied only on their stated domain",
+    "zero_shift_physical_response": "unevaluated"
+  },
+  "schema": "ym-actual-loop-moments-state-v1",
+  "target": "Interacting four-dimensional physical Yang\u2013Mills continuum mass gap; present literal gauge group SU(2).",
+  "verification_scope": {
+    "finite_exact_checks": 134,
+    "independent_external_proof_review": false,
+    "negative_controls": 12,
+    "new_Lean_run": false,
+    "numerical_vacuum_integration": false,
+    "written_analytic_proofs": true
+  }
+}

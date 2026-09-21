@@ -1,0 +1,131 @@
+{
+  "schema": "ym-fifth-reference-reader-qa-v1",
+  "pdf_pages": 24,
+  "rendered_pages": 24,
+  "latex_material_errors": [],
+  "body_text_outliers": [],
+  "private_markers": [],
+  "required_text_missing": [],
+  "contact_sheets": [
+    "contact-1.png",
+    "contact-2.png"
+  ],
+  "source_preservation": [
+    {
+      "filename": "FIFTH_REFERENCE.md",
+      "bytes_sha256_and_complete_assembly": true
+    },
+    {
+      "filename": "HEAT_AND_COMPLEMENT.md",
+      "bytes_sha256_and_complete_assembly": true
+    }
+  ],
+  "literal_mathematical_character_counts": {
+    "*": {
+      "source_prose": 11,
+      "pdf_appendices": 11
+    },
+    "_": {
+      "source_prose": 196,
+      "pdf_appendices": 196
+    }
+  },
+  "literal_prose_characters_preserved": true,
+  "standalone_tex_text_identical": true,
+  "pdf_metadata": {
+    "/Creator": "Pandoc and XeLaTeX",
+    "/Title": "The fifth reference in SU(2) lattice Yang-Mills theory",
+    "/Subject": "Fifth-reference source correction, heat estimates and complete physical complement",
+    "/Author": "KokunoYumeto",
+    "/Producer": "MiKTeX-dvipdfmx (20260404)",
+    "/CreationDate": "D:20260921234731+02'00'"
+  },
+  "artifacts": {
+    "yang_mills_fifth_reference_20260921.pdf": {
+      "bytes": 164325,
+      "sha256": "606d200bf2b8e83f6831a1b3cbc6bb941f33d82f0ba60adf3b031ab2e7fba333"
+    },
+    "yang_mills_fifth_reference_20260921.md": {
+      "bytes": 59174,
+      "sha256": "e0f45e55fc8a6860d51f595fd223981bb3f7a4cb183275fcb78dd97918ea1785"
+    },
+    "yang_mills_fifth_reference_20260921.tex": {
+      "bytes": 97610,
+      "sha256": "c43c688f5d1a9860853d5a700272132b270b25d774b4144fe14cd461018d068c"
+    },
+    "source_integrity.json": {
+      "bytes": 1860,
+      "sha256": "5cfc31b6a4f6b4425860d8d725d08002df2900c7a5cb509a1b17b8de8a51b480"
+    },
+    "reader_introduction.md": {
+      "bytes": 16298,
+      "sha256": "6fc0170327b5da89631075037be581545d4d8b23cadc679f9eac09aa991cd71b"
+    },
+    "build_reader.py": {
+      "bytes": 6638,
+      "sha256": "cfa86acb567bb93b5a44d8e5efe49e109dd2c99fc40f173669631b1cdb919f6f"
+    },
+    "reader_template.tex": {
+      "bytes": 2546,
+      "sha256": "7b0fa0e59538a097d4418a908219942728ca0d0cfcbff22ad9dff3d75f108f05"
+    },
+    "reader_filter.lua": {
+      "bytes": 2005,
+      "sha256": "051215a6e8d5613fc59cddc7c7b37e4154bab13af9c3d89d06167c06aa7ad306"
+    }
+  },
+  "visual_review": {
+    "schema": "ym-fifth-reference-reader-visual-review-v1",
+    "pdf_sha256": "606d200bf2b8e83f6831a1b3cbc6bb941f33d82f0ba60adf3b031ab2e7fba333",
+    "pdf_pages": 24,
+    "render_dpi": 90,
+    "all_pages_rendered": true,
+    "all_page_contact_sheets_inspected": [
+      "contact-1.png",
+      "contact-2.png"
+    ],
+    "full_size_pages_inspected": [
+      6,
+      7,
+      10,
+      12,
+      13,
+      15,
+      19,
+      20,
+      21,
+      22
+    ],
+    "final_locator_revision": "Only the introduction's three section references H5, H6 and H7 became unambiguous section-symbol references. Rebuilt all pages; changed PDF pages 6 and 7 were inspected at full size. Both original proof files remain unchanged.",
+    "status": "pass",
+    "findings": {
+      "clipped_text_or_formulas": false,
+      "overlapping_table_columns": false,
+      "missing_glyphs": false,
+      "unreadable_labels": false,
+      "headers_footers_and_page_numbers": "Consistent running headers, roman contents pagination and arabic body pagination.",
+      "formula_and_table_review": "Checked orientation tensor F11, exact fifth budgets F25, full residual F27, endpoint F29, corrected table separator F38, heat bound H13, leakage prefactor H18, coefficient table, full complement H24-H29, benchmark table H5 and introduction benchmark table. Original values and labels are visible and confined to the text area.",
+      "source_prose_notation": "Literal adjoint/multiplication asterisks and coordinate underscores are preserved; source ASCII formulas remain source-faithful. Original display math is typeset as math.",
+      "source_hash_wrapping": "The long original commit hash wraps without overflow; no characters were removed."
+    },
+    "independent_introduction_review": {
+      "scope": "Read-only comparison of complete introduction with both complete source proofs; no new proof or full analytic re-audit.",
+      "resolved_clarifications": [
+        "Defined d_ph as a positive rational lower bound for d5 at the benchmark.",
+        "Qualified infinite-spatial-complement minimization with the benchmark couplings carrying positive Gram lower bounds."
+      ],
+      "remaining_actionable_discrepancies": []
+    }
+  },
+  "proof_start_pdf_page": 8,
+  "table_and_formula_pages": [
+    10,
+    12,
+    13,
+    15,
+    19,
+    20,
+    21,
+    22
+  ]
+}

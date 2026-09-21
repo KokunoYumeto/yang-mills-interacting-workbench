@@ -1,0 +1,1717 @@
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md b/yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..afcab585fd730afdd7b859d97de5cf8c90bb4a35
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md
+@@ -0,0 +1,249 @@
++# The complete connected cubic vacuum source in original SU(2) link coordinates
++
++16 September 2026. This note executes the first of the two tasks retained in the delivered gauge-native checkpoint: calculate the connected third logarithmic-vacuum coefficient. `LINEARIZED_RETURN.md` executes the second task on the same coefficients. The preceding delivered second-source result had endpoint g^2 = sqrt((32+sqrt(354))/3); that stronger saved result is the comparison here. No historical-priority claim or independent analytical-review claim is made.
++
++## C1. Original operator and source
++
++Fix L>=2, vertices {-L,...,L}^3, every contained positively oriented nearest-neighbor edge e=(n,i), and every contained plaquette p=(n;i,j), i<j. Its actual word is
++
++    W_p=tr(U_i(n) U_j(n+e_i) U_i(n+e_j)^(-1) U_j(n)^(-1)).
++
++Put T_alpha=-i sigma_alpha/2, X_e,alpha f=d/dt f(...,exp(t T_alpha)U_e,...) at zero, E_e=-sum_alpha X_e,alpha^2, and K=sum_e E_e. The Hilbert space has original product Haar probability dU; the physical subspace consists of vertex-gauge invariant functions, including all boundary vertices. Retain
++
++    H=kappa K+kappa xi(2M-S),  S=sum_p W_p,  M=|P_L|,
++    kappa=2g^2/a,  xi=1/(4g^4),  a,g>0.                         (C1)
++
++Operator and form domains are the physical parts of H^2 and H^1 on the original compact product. The potential is smooth and bounded at each finite L. The actual vacuum is smooth and strictly positive. These original domains and the ground-state identity are supplied in `finite_box_weak_coupling_physical_gap.md` at Git fab69fdc4ac197159b8e6ae8d73a82bde2b20d55, blob dfee77c0ca0d6ed897c4172fcbfe23cd9d10d313, section 1.
++
++Let P_H f=int f dU, Q_H=I-P_H, and Gamma(f,h)=sum_(e,alpha) (X_e,alpha f)(X_e,alpha h). Define, on zero-Haar-mean physical coefficients,
++
++    B(f,h)=K^(-1) Q_H Gamma(f,h),
++    v=xi v_1+B(v,v),   v_1=S/3,
++    v_n=sum_(i=1)^(n-1) B(v_i,v_(n-i)).                     (C2)
++
++The inverse K^(-1) acts only on actual nonconstant representation blocks. Scalars removed by Q_H remain recorded. Once the series is summed, set
++
++    c_L=-(1/2)log int exp(2v)dU,
++    psi=exp(v+c_L),  C_L=int Gamma(v,v)dU,
++    E_0=2kappa xi M-kappa C_L.                             (C3)
++
++The companion proof constructs convergence and proves that these are the original vacuum and energy. No vacuum, measure, or coupling is assigned from the auxiliary coefficient norm below.
++
++## C2. Original Fourier coefficients and the two spin budgets
++
++In the original product spin basis write f_j(U)=Tr(A_j pi_j(U)), and c(j)=sum_e j_e(j_e+1). For each original nonempty union label S_0 retain A_(S_0,j), even when its active spin support is smaller. A zero coefficient at a present union is retained at that union. Assembly sums these matrices for each j. Its kernel consists exactly of coefficient families with sum_(S_0) A_(S_0,j)=0 for every j. The differences between an occurrence at S_0 and its occurrence at the actual active support span this kernel and retain the original coefficient matrices.
++
++The auxiliary coefficient norm and budgets are
++
++    ||f||loc=max_a sum_(S_0 contains a,j!=0) c(j)||A_(S_0,j)||_1,
++    m(f)=max_a sum_(S_0 contains a,j!=0) (sum_e j_e)||A_(S_0,j)||_1,
++    t(f)=sup_e sum_(S_0 contains e,j!=0) j_e||A_(S_0,j)||_1.       (C4)
++
++Every nonzero physical Fourier block obeys c(j)>=6j_e. To verify the gauge input, at each endpoint v of e the actual invariant vertex tensor gives j_e<=sum_(f incident v,f!=e)j_f. The other edges A_e at both endpoints therefore have total spin at least 2j_e. Their remote endpoints are distinct because the cubic graph has no triangles. At these remote endpoints the same invariant inequality gives sum_(f in A_e)j_f<=2 sum_(f outside A_e union {e})j_f; each exterior edge is counted at most twice. Thus sum_f j_f>=4j_e. For every nonzero half-integer spin, j(j+1)>=3j/2. This proves
++
++    c(j)>=6j_e,  sum_e j_e<=2c(j)/3,
++    t(f)<=||f||loc/6,  m(f)<=2||f||loc/3.                 (C5)
++
++The gauge tensor exists in every physical coefficient block: decomposing at a vertex is an orthogonal decomposition under that vertex's unitary representation, and the invariant projection kills a block without an invariant intertwiner. This proves the use of the spin inequalities for the actual coefficients. In particular every nonconstant physical block has c(j)>=3.
++
++The full coefficient-product inequality is
++
++    sum_output ||A_output(f_j h_k)||_1<=||A_j||_1||A_k||_1,
++    ||A(X_e,alpha f_j)||_1<=j_e||A_j||_1.                 (C6)
++
++For the first, the product coefficient is A_j tensor A_k. Unitary decomposition of the original tensor representations, pinching to all diagonal irreducible blocks, and partial trace over their multiplicity spaces give the actual product coefficients. Pinching is an average of unitary conjugations and has trace-norm bound one. The partial-trace bound follows from |Tr((Z tensor I)A)|<=||A||_1 for ||Z||op<=1. This retains every output multiplicity. The second bound uses the original spin-generator operator norm j_e; all three generator indices remain in Gamma.
++
++For an anchor in the first input union, the absolute product sum is at most 3m(f)t(h). Anchoring in the other input gives 3m(h)t(f); double counting their intersection is a bound. Output c(j) cancels the exact inverse Casimir in C2. Hence
++
++    ||B(f,h)||loc<=3[m(f)t(h)+m(h)t(f)],
++    ||B(f,h)||loc<= (2/3)||f||loc||h||loc.                 (C7)
++
++These are estimates on the original labelled coefficient source. The physical pairing is still int rho conjugate(f)h dU, with rho=psi^2, and its energy pairing is kappa int rho sum conjugate(Xf)Xh dU.
++
++## C3. Original loop norms and the complete second coefficient
++
++For a simple original closed link loop of length ell, let t be the number of local maxima of n_1+n_2+n_3 along the loop; the number of minima is also t. At extrema the fundamental coefficient tensor has the original alternating two-index contraction, of Euclidean norm sqrt(2). At each other vertex it has the two-dimensional identity contraction. Separate permutations of original row and column tensor indices expose their tensor product. Their singular values give ||A_loop||_1=2^(ell-t)<=2^(ell-1). No inversion of one link is asserted to preserve a tensor trace norm. For a spin-j plaquette, the same four contractions have dimension 2j+1 and one maximum/minimum pair, giving norm (2j+1)^3. In particular
++
++    ||A(W_p)||_1=8, ||A(chi_1(Omega_p))||_1=27,
++    ||A(chi_(3/2)(Omega_p))||_1=64.                       (C8)
++
++These formulas also follow from the literal plaquette index matrix: for spin 1/2 its nonzero entries are
++
++    A_[(i1,i2,1-i2,1-i3),(i0,i1,1-i3,1-i0)] += (-1)^(i0+i2).
++
++There are four nonzero singular values, each two. Keeping indices 0,...,2j and the invariant alternating spin-j form gives (2j+1)^2 singular values, each 2j+1, for the character plaquette.
++
++For adjacent p,q, write P_0 for Haar integration of their shared edge in W_pW_q and P_1=I-P_0 on that product. The two actual Casimirs are 9/2 and 13/2. If x,y denote the two original trace coefficient norms, the exact six-link boundary formula and C6 give
++
++    P_0(W_pW_q)=(1/2)W_boundary(p,q),
++    x<=16, x+y<=64.                                      (C9)
++
++It follows either by integrating the original shared matrix entries, int U_ab conjugate(U_cd)=delta_ac delta_bd/2, or by the equivalent SU(2) alternating contraction in its inverse traversal. The boundary orientation is the original oriented concatenation after that contraction.
++
++The Casimir product rule is
++
++    2Gamma(f,h)=(c_f+c_h)fh-K(fh)                         (C10)
++
++for actual Casimir eigenfunctions f,h. Since W_p^2=1+chi_1(Omega_p), its nonconstant self component has Casimir 8. Distinct nonadjacent plaquette products have Casimir 6. Applying C10 to C2 evaluates the entire second source:
++
++    v_2=-(1/72)sum_p chi_1(Omega_p)
++       +sum_{unordered adjacent {p,q}}
++         [(1/27)P_0(W_pW_q)-(1/117)P_1(W_pW_q)].           (C11)
++
++Nonadjacent terms have the exact multiplier 1/(3*6)-1/18=0 at their original union. Each edge lies in at most four self plaquettes and 42 unordered adjacent pair unions. The latter count is sum_(p contains e) deg(p)-binom(r_e,2)<=12r_e-binom(r_e,2)<=42. Thus
++
++    ||v_1||loc<=32,   ||v_2||loc<=236.                    (C12)
++
++Indeed each self term contributes at most 8*27/72=3; each pair at most x/6+y/18<=16/3.
++
++## C4. All projectors have explicit original-coordinate formulas
++
++For an edge carrying a finite product of the specified spin functions, let J_e be its complete allowed Clebsch-Gordan spin list. On that product space set
++
++    P_(e,j)=product_(l in J_e,l!=j)
++        [E_e-l(l+1)I]/[j(j+1)-l(l+1)],
++    P_boldj=product_e P_(e,j_e).                          (C13)
++
++Every denominator is a displayed nonzero rational number. The original compact SU(2) decomposition proves that C13 projects onto exactly that spin eigenspace, including its full multiplicity. Different-edge projectors commute. This is a finite polynomial in the original link derivatives, so all coefficient formulas below are effective coordinate formulas. In particular an explicit eigenvalue denominator is not an unspecified inverse problem.
++
++For the cubic product there are five connected types: a self triple; a repeated adjacent pair; three distinct faces with two adjacency edges (path); three distinct faces sharing one edge (common-edge); or three faces forming a cube corner with three different shared edges. This exhausts the original coordinates: coplanar face adjacency is the square grid; two perpendicular faces determine their shared coordinate edge; a third face adjacent to both either contains that same edge or is the third face at one endpoint, with its other two shared edges. All other multisets are disconnected in edge adjacency.
++
++## C5. The full cubic table
++
++Each triple below is an unordered multiset of original faces. Each distinct choice of the outer face in 2B(v_1,v_2) occurs once, with the second coefficient already carrying its original unordered-pair multiplicity.
++
++**Self {p,p,p}.** The contribution is
++
++    -(1/81)W_p+(1/810)chi_(3/2)(Omega_p).                 (C14)
++
++Its Casimirs are 3 and 15. The character product W_p chi_1=chi_(3/2)+W_p and C10 give K times C14 as chi_(3/2)/54-W_p/27.
++
++**Repeated adjacent {p,p,q}.** Let F=(W_p^2-1)W_q. On the shared edge its allowed spins are 1/2 and 3/2. Then the contribution is
++
++    -(11/4212)P_(1/2)F+(11/11232)P_(3/2)F.              (C15)
++
++The respective total Casimirs are 9 and 12. Here the first projector has the concrete recoupling identity
++
++    P_(1/2)F=(4/3)W_p P_0(W_pW_q)-(1/3)W_q.             (C16)
++
++To prove C16, expose the shared original unit quaternion u. The two traces can be written 2u dot v, 2u dot w with v,w unit quaternions formed from the unchanged remaining path products (inverse orientations use their exact quaternion conjugates). Original Haar moments are int u_i u_j=delta_ij/4 and
++int u_i u_j u_k u_l=(delta_ij delta_kl+delta_ik delta_jl+delta_il delta_jk)/24. The linear harmonic part of (u dot v)^2(u dot w) is [u dot w+2(v dot w)(u dot v)]/6. Also P_0(W_pW_q)=v dot w. These equations give C16 pointwise, for every original remaining path product.
++
++For full coefficient verification, put H=P_(1/2)F, J=P_(3/2)F, z=P_0(W_pW_q). Then
++W_p z=(3H+W_q)/4 and W_p P_1(W_pW_q)=H/4+J+3W_q/4. The two W_q coefficients in K v_3 from the adjacent source are 1/72 and -1/72; they cancel exactly. The self-source product has only H,J. The H coefficient in K v_3 is -1/72-1/2808-1/108=-11/468; the J coefficient is 5/702+1/216=11/936. Division by the original 9 and 12 gives C15. The cancelled W_q component remains a present zero at the original seven-link union.
++
++**Distinct path.** Let F=W_pW_qW_r. On its two distinct shared edges, use P_(s,t), s,t in {0,1}. With n=s+t, its total Casimir and coefficient are
++
++    c=6+2n;
++    n=0: 1/162;  n=1: -11/8424;  n=2: 1/3510.          (C17)
++
++The entire contribution is the sum of those four projected functions times their specified coefficients. For a selected channel, there are exactly two nonzero outer-face terms. With (c_0,a_0)=(9/2,1/27) and (c_1,a_1)=(13/2,-1/117), their sum is
++
++    [a_s(3+c_s-c)+a_t(3+c_t-c)]/(3c),
++
++which evaluates to C17. This verifies each factor without a coordinate replacement.
++
++**Distinct common-edge triple.** On the single shared edge, retain the whole spin-1/2 multiplicity space and spin-3/2 space. Their Casimirs and coefficients are
++
++    c=15/2: -2/1755;  c=21/2: 2/2457.                  (C18)
++
++On the original tensor (C^2)^(tensor 3), the three pair singlet projectors obey
++
++    P_0^(12)+P_0^(13)+P_0^(23)=(3/2)P_(total 1/2).       (C19)
++
++One verification is P_0^(ij)=1/4-J_i dot J_j, followed by expansion of (J_1+J_2+J_3)^2. The eigenvalues are 3/4 and 15/4. Thus the total singlet sum has values 3/2 and zero; this proves C19 including both copies of spin 1/2. The pair projectors need not commute, and no product of them is used. Under the original trace map,
++
++    P_(1/2)F=(2/3)sum_outer W_r P_0(W_pW_q).
++
++In C10 the summed pair-spin-zero multiplicity is 3/2 on total spin 1/2 and zero on spin 3/2; the pair-spin-one multiplicities are 3/2 and three. Substitution gives C18.
++
++**Distinct cube corner.** On its three different shared edges use P_(s,t,u), n=s+t+u. The coefficients and Casimirs are
++
++    c=9/2+2n;
++    n=0: 2/81; n=1: 34/13689; n=2: -38/17901;
++    n=3: 2/2457.                                       (C20)
++
++The entire n=1 projection is exactly zero. At the central original vertex it would have one spin-one edge and two spin-zero edges, which has no invariant vector. We retain the displayed pre-zero coefficient and its zero projected function. The channel coefficient before that zero follows from
++
++    [(3-n)a_0(3+c_0-c)+n a_1(3+c_1-c)]/(3c).
++
++Moreover P_(0,0,0)F=(1/4)W_boundary, a six-link loop. Write the original three face traces as tr(U_a A U_b^-1), tr(U_b B U_c^-1), tr(U_c C U_a^-1). Integrating U_b and U_c supplies two factors 1/2 and leaves tr(U_a ABC U_a^-1)=tr(ABC); integration of U_a leaves this same trace. This proves the complete factor 1/4 and its original boundary product.
++
++Every disconnected triple has zero source because either its second coefficient is zero by C11 or the outer derivative has no original edge in common with that second coefficient. Thus C14–20 calculate all of v_3, with all original union labels and all cancelled or zero channels retained.
++
++## C6. Evaluate the whole cubic source bound
++
++For one cluster the following are bounds in the original Casimir-weighted trace norm:
++
++    self: 40/27;
++    repeated adjacent: 66/13;
++    path: 1408/351;
++    common-edge: 512/117;
++    corner: 3504/351.                                   (C21)
++
++For self use 3*8/81+15*64/810=40/27. For repeated adjacent, the two output norms have sum at most 27*8=216. Their largest absolute Casimir-weighted coefficient is 11/468, giving 66/13.
++
++For a path let x_st denote the original norms of its four projections. C6, C9 and the actual boundary integration give
++
++    sum x_st<=512, x_00<=32,
++    x_00+x_01<=128, x_00+x_10<=128.
++
++The double spin-zero component is (1/4) times the original eight-link boundary loop, so C8 gives 32. Each single spin-zero projection is the original six-link boundary times the remaining plaquette, divided by two, giving 16*8=128. The absolute Casimir-weighted norm is exactly bounded by
++
++    [3 sum x_st+8(x_00+x_01)+8(x_00+x_10)+20x_00]/1053
++    <=4224/1053=1408/351.
++
++For a common-edge triple, sum of both complete projected coefficient norms is at most 8^3=512. Both absolute Casimir-weighted coefficients are 1/117. For a corner the total is at most 512, x_000<=8 by its six-link boundary divided by four, and the other nonzero weighted coefficients are at most 19/1053. Therefore its bound is
++
++    (19*512+98*8)/1053=3504/351.
++
++For each original anchor edge the numbers of clusters in C21 are bounded respectively by
++
++    4, 84, 460, 40, 24.                                 (C22)
++
++Here is a counting proof of the three distinct-face counts. In a cubic periodic counting grid of side at least nine, the two-neighbor patterns are in bijection with their original infinite-grid local coordinates. This is only a finite combinatorial enumeration; no Hamiltonian or measure is transported to that grid. There are three faces per cell, twelve neighbors per face, twelve common-edge triples per cell, and eight corner triples per cell. The number of centered adjacency wedges per cell is 3*binom(12,2)=198. Subtracting three for every triangle leaves 138 paths. Their unions contain ten original edges; common-edge unions also contain ten, and corner unions nine. Translation and axis permutation are explicit bijections of this incidence count. Division of total incidences by three edges per cell gives 460,40,24. Equivalently `geometry.py` enumerates all four anchor faces, all first neighbors, and all second neighbors and retains the resulting original coordinates. The 42 adjacent pairs each have two repeated-face choices. Any finite-box cluster injects into the corresponding original infinite-grid list, proving the same upper counts at boundaries.
++
++Summing all five contributions proves
++
++    ||v_3||loc <= 4*(40/27)+84*(66/13)+460*(1408/351)
++                  +40*(512/117)+24*(3504/351)
++               =944984/351.                             (C23)
++
++The predecessor's bound obtained before evaluating this source was 30208/3. C23 is less than 2693. The sharper bound follows from the actual channel coefficients and original support geometry; the complete norm remains an upper bound rather than an assigned equality.
++
++## C7. Original fourth vacuum-energy coefficient, with an independent calculation
++
++The link-center involution
++
++    (Zf)(U)=f((s_e U_e)_e), s_(n,i)=(-1)^(sum_(j<i)n_j)
++
++preserves Haar, the gauge action and K, and changes the sign of every original plaquette trace. Hence Z v_n=(-1)^n v_n by C2. It also gives the literal signed-parameter operator identity Z H(xi) Z=H(-xi)+4kappa xi M I. Negative xi is used here solely as the algebraic/analytic source coordinate; no negative physical g is introduced. Thus E_0-2kappa xi M is even.
++
++Let J be the original number of unordered adjacent plaquette pairs. The complete coefficient is
++
++    E_0=2kappa M xi-kappa M xi^2/3
++         +kappa(5M/216-2J/1053)xi^4+O(xi^6).            (C24)
++
++To verify it directly from the vacuum source, the only v_3 component pairing with v_1 in Haar energy is the self -W_p/81 in C14. The repeated lower component cancels as proved in C15–16. A product of three distinct faces and one testing face has an edge with odd occurrence: a nonempty set of at most four distinct squares cannot have every edge even, because each other square shares at most one of a chosen square's four edges. Its Haar integral is zero by the center change on that edge. Distinct v_2 labels have the same unmatched-edge argument or different spin sectors. The actual component masses are ||chi_1||_H^2=1, ||P_0(W_pW_q)||_H^2=1/4 and ||P_1(W_pW_q)||_H^2=3/4. Therefore
++
++    int Gamma(v_1,v_3)=-M/81,
++    int Gamma(v_2,v_2)=M/648+2J/1053,
++    [xi^4]C_L=2*(-M/81)+M/648+2J/1053
++              =-5M/216+2J/1053.
++
++Equation C3 proves C24, including its sign.
++
++An independent Rayleigh–Schrodinger coefficient calculation for the original K-xi S gives
++
++    [xi^4](E_0/kappa)=M^2/27
++          -(1/9)<Q_H S^2,K^(-1)Q_H S^2>_H,
++    <Q_H S^2,K^(-1)Q_H S^2>_H
++       =M/8+(2/3)binom(M,2)+(2/117)J.                  (C25)
++
++For completeness, with Haar-constant vacuum coefficient fixed at one, the first two wavefunction coefficients are u_1=S/3 and u_2=K^(-1)Q_H S^2/3. The second energy coefficient is -M/3. Testing the order-three eigen-equation against S and then the order-four constant equation gives the first line of C25. The nonconstant self sector is chi_1/8; a disjoint pair contributes 2/3; an adjacent pair contributes 4[(1/4)/(9/2)+(3/4)/(13/2)]=80/117=2/3+2/117. Cross terms vanish by the same original edge parity. Substitution reproduces C24 exactly.
++
++With m=2L the complete box counts are M=3m^2(m+1), J=6m(3m^2-1). At L=2, C24's fourth coefficient is 1198/351. As L increases, J/M tends to six and its fourth coefficient per plaquette tends to 11/936. On a planar square array the corresponding ratio tends to two, giving 163/8424; the plane-to-space operator defect is recorded in the companion literature section. These are source coefficients, with the exact finite-box counts kept before their limits. The companion note supplies an explicit all-higher-order remainder for C24.
++
++## C8. Verification scope
++
++The independent original-link checker differentiates the actual oriented plaquette products in 2Gamma(v_1,v_2), while the receiving calculation uses C14–20 and Haar projectors. It checks all 612 anchored multisets at two exact rational quaternion assignments. The 24-cell separately verifies the harmonic recouplings using all Haar moments through degree five. The original eight-by-eight singlet matrices verify C19 and reject their false commutation. These finite tests accompany the full coordinate and representation proofs above; they do not replace them or certify a continuum limit.
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md b/yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..98d7365c6b8fec508e162023bc9bcc3fd8193df1
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md
+@@ -0,0 +1,295 @@
++# The full linearized residual and its return to the original physical gap
++
++16 September 2026. This is the second executed calculation, on exactly the original operators and source coordinates of `CUBIC_SOURCE.md`. It evaluates the full residual at xi v_1+xi^2 v_2, bounds the actual linearized inverse and every nonlinear correction, and returns the result to the complete physical form domain. The proof does not assume a spectral gap to construct this inverse.
++
++## L1. Two sharper spin budgets for the evaluated second source
++
++Retain C1–13, including all union labels. The first source has
++
++    m(v_1)<=64/3,   t(v_1)<=16/3.                         (L1)
++
++An anchor meets at most four plaquettes; each has coefficient norm 8/3, total spin two and anchor spin 1/2. This proves both numbers.
++
++For the actual second source C11, its self contributions to m are at most six. On a pair, with the original x<=16, x+y<=64, its total-spin weighted norm is x/9+4y/117<=400/117. There are at most 42 anchored pairs. Thus
++
++    m(v_2)<=6+42*(400/117)=5834/39.                       (L2)
++
++For t(v_2), self terms contribute at most 3/2. At most six pairs share the anchor itself: their spin-zero term has anchor spin zero, and their spin-one contribution is at most 64/117 per pair. In the other at most 36 pairs, the anchor occurs once and its spin is 1/2, giving at most (1/2)(x/27+y/117)<=176/351. Hence
++
++    t(v_2)<=3/2+6*(64/117)+36*(176/351)=137/6.            (L3)
++
++All original boundary patterns inject into these bulk lists. C7 and C5 now prove
++
++    ||B(v_1,h)||loc<=(64/3)||h||loc,
++    ||B(v_2,h)||loc<=(1566/13)||h||loc,
++    ||B(v_2,v_2)||loc<=799258/39.                        (L4)
++
++For the middle coefficient, 3[m(v_2)/6+(2/3)t(v_2)]=1566/13. For the last, 6m(v_2)t(v_2)=799258/39. The two inputs have their actual separately evaluated budgets; neither is replaced by a generic unknown vector.
++
++## L2. Evaluate the complete residual, including its quartic source
++
++Set x=xi as the same original source parameter, and define
++
++    q_2=xv_1+x^2v_2,
++    R_2=xv_1+B(q_2,q_2)-q_2=x^3v_3+x^4b_22,
++    b_22=B(v_2,v_2),
++    J_2 h=2B(q_2,h),  L_2=I-J_2.                        (L5)
++
++The source v_3 is the complete five-family table C14–20. Here is also a finite formula for every component of b_22, avoiding an unevaluated Casimir inverse. Let mu enumerate the original terms of C11, with functions F_mu and coefficients a_mu. Their Casimirs are respectively 8,9/2,13/2 and their a_mu are -1/72,1/27,-1/117. Each F_mu has definite original edge spins, including its zero shared edge in the P_0 channel. For every ordered (mu,nu), let J_e be all spins from |j_mu,e-j_nu,e| to j_mu,e+j_nu,e in unit steps. These are at most two. With the literal polynomial projectors C13,
++
++    b_22=sum_(mu,nu) a_mu a_nu
++          sum_(boldj with c(boldj)>0)
++          [c_mu+c_nu-c(boldj)]/[2c(boldj)]
++          P_boldj(F_mu F_nu).                           (L6)
++
++Each input, edge-spin range, polynomial projector, coefficient and denominator is now specified in original coordinates. This is a finite full-coefficient formula at every finite L. For disjoint active supports c(boldj)=c_mu+c_nu and the corresponding source is exactly zero at its original union. Output constants are retained outside Q_H, as below. No truncation of the full Hamiltonian is performed.
++
++For example, the self/self term at one original plaquette is
++
++    b_22^(p,p)=chi_1(Omega_p)/10368-chi_2(Omega_p)/31104,
++    int Gamma(v_2^(p),v_2^(p))=1/648.                   (L7)
++
++This follows from chi_1^2=1+chi_1+chi_2, with Casimirs 0,8,24 and the original factor 1/72^2. The entire removed scalar for the original q_2 is
++
++    C(q_2)=int Gamma(q_2,q_2)
++          =M x^2/3+x^4(M/648+2J/1053).                  (L8)
++
++The odd term is zero by the original center involution in C7. Thus the full residual of the approximate exponential has the exact operator identity on smooth original functions
++
++    e^(-q_2) H e^(q_2)
++      =kappa[K-2Gamma(q_2,.)]
++       +kappa[2Mx-C(q_2)]I-kappa M_(K R_2).             (L9)
++
++Here M_(K R_2) is multiplication by the displayed original polynomial. To verify L9, expand the original Laplacian on e^(q_2)f and use K R_2=xS+Q_H Gamma(q_2,q_2)-Kq_2. This retains both the scalar energy and every quartic residual term.
++
++## L3. The full linearized inverse and nonlinear correction
++
++For every source h, C23 and L4 give
++
++    ||J_2 h||loc<=ell(x)||h||loc,
++    ||R_2||loc<=delta(x),
++    ell(x)=(128/3)x+(3132/13)x^2,
++    delta(x)=(944984/351)x^3+(799258/39)x^4.             (L10)
++
++No derivative term is omitted: L_2 is the Frechet derivative of v-xv_1-B(v,v) at q_2, because B is bilinear and symmetric. Put
++
++    D(x)=(1-ell(x))^2-(8/3)delta(x)
++        =[46457856x^4+183150656x^3+18324072x^2
++          -1168128x+13689]/13689.                       (L11)
++
++Let alpha be the unique root of D in (17/1000,171/10000). This is the first positive root. Indeed D(0)=1; D'' has positive coefficients on x>=0, and D'(171/10000)<0. Hence D'<0 on that whole interval. Exact rational endpoint signs give D(17/1000)>0>D(171/10000). In particular D>=0 on [0,alpha], and ell(x)<=ell(171/10000)<1 there.
++
++The Neumann sum of the ACTUAL J_2 constructs
++
++    L_2^(-1)=sum_(j>=0)J_2^j,
++    ||L_2^(-1)||<=1/(1-ell(x)).                         (L12)
++
++Its complete source coordinates are unchanged. For w=v-q_2 the full equation is
++
++    L_2 w=R_2+B(w,w).
++
++Define z=L_2^(-1)R_2 and C=L_2^(-1)B. Then
++
++    ||z||loc<=z_*:=delta/(1-ell),
++    ||C(f,h)||loc<=c_*||f||loc||h||loc,
++    c_*=(2/3)/(1-ell).                                  (L13)
++
++Construct w explicitly by the binary-tree recurrence w_1=z, w_n=sum_(i=1)^(n-1) C(w_i,w_(n-i)). Its terms have bounds
++
++    ||w_n||loc<=Catalan_(n-1) c_*^(n-1) z_*^n.
++
++The discriminant L11 gives theta_*=4c_*z_*<=1. The series converges absolutely on the ENTIRE closed interval, and its sum satisfies the full equation. Its bound is
++
++    w_*(x)=(3/4)[1-ell(x)-sqrt(D(x))],
++    ||v-q_2||loc<=w_*(x).                               (L14)
++
++At theta_*=1 the endpoint is obtained from the actual convergent Catalan series, not from a strict nonlinear contraction. Its omitted-tree tail after N>=1 is at most
++
++    [3(1-ell)/4] theta_*^(N+1) binom(2N,N)/4^N
++     <=[3(1-ell)/4] theta_*^(N+1)/sqrt(N+1).              (L15)
++
++To prove it, use Catalan_n/4^n=2(b_n-b_(n+1)), b_n=binom(2n,n)/4^n, and telescope. The original linear-source truncation has the independent exact identity and bound
++
++    L_2^(-1)R_2-sum_(j=0)^N J_2^jR_2
++        =J_2^(N+1)L_2^(-1)R_2,
++    norm <=ell^(N+1)delta/(1-ell).                       (L16)
++
++Thus both infinite operations have explicit residuals. Every application of J_2 adds at most two original plaquettes to its union label, and the initial R_2 has at most four. The finite linear sum in L16 is supported in actual unions of at most 4+2N plaquettes. The tree recurrence retains all further unions and all original coefficient multiplicities.
++
++At each finite L the labelled c-weighted source is complete. Its global c-weighted sum is bounded by |E_L| times the local norm. The original spin-generator estimates bound all first and second link derivatives by that sum. Therefore the series gives a C^2 function v on the compact original product and permits the full source equation to be summed. With C3, direct differentiation gives H psi=E_0 psi. Elliptic regularity makes psi smooth. For every smooth h,
++
++    q_(H-E_0)(psi h)=kappa int psi^2 sum_i |X_i h|^2.
++
++Multiplication and division by the positive smooth psi preserve H^1 at this finite L. This proves E_0 is the actual lowest energy and identifies psi with the original positive unit vacuum; a second ground state divided by psi has zero derivative and is constant. Gauge invariance follows from the invariant source. This identification does not presume a gap.
++
++The convergent construction is analytic for complex |x|<alpha by the same absolute coefficient majorants. At every original power x^n its unique formal coefficient is C2, so the new construction and the earlier source constructions agree coefficient by coefficient on their common domains. Their coefficient identity maps have literal inverse identities. No new source metric or different physical vacuum is selected.
++
++## L4. Numerical endpoint and fully retained benchmark
++
++Exact bisection and integer-square comparisons give
++
++    0.0170787544707772675 < alpha < 0.0170787544707772677,
++    3.825973052393385 < 1/(2sqrt(alpha))
++                         <3.825973052393386.             (L17)
++
++This is the new sufficient coupling threshold g^2. The cubic coefficient alone, with the old generic recurrence for higher orders, gives the intermediate discriminant
++
++    D_3(x)=1-(256/3)x+(10720/9)x^2+(20714816/1053)x^3
++
++and first root approximately 0.0166569913896066, or g^2 approximately 3.8741080015. The full linearized calculation L10–17 gives the additional improvement. Its source-specific m and t budgets are part of that gain.
++
++At the exact original coupling g^2=4, x=1/64, a>0 and kappa=8/a,
++
++    ell=28973/39936,
++    ||L_2^(-1)||<=39936/10963,
++    ||z||loc<=33836149/808280064,
++    D=10028381/224280576,
++    theta_*=439869937/1081686321,
++    ||w||loc<=0.047293824576905,
++    ||w-z||loc<0.005432.                                 (L18)
++
++The displayed decimal bounds are outward rational bounds checked against L13–14. They bound the ACTUAL linear response and its complete further nonlinear correction. No value of an uncomputed vacuum integral is assigned. The total source satisfies
++
++    ||v||loc<=32x+236x^2+w_*
++       =(3/4)(1-sqrt D)+(719/13)x^2.                    (L19)
++
++## L5. Return to the entire physical spectrum, using the evaluated spin budget
++
++Use the actual ground-state transform A=psi^(-1)(H-E_0)psi=kappa(K-D_v), where D_v=2Gamma(v,.). Its physical pairing is int rho conjugate(f)h dU, rho=psi^2. C5, L1 and L3 give the sharper point-spin budget
++
++    t(v)<=(16/3)x+(137/6)x^2+w_*/6.
++
++For an original zero-Haar-mean coefficient family h, C6 and sum_e j_e<=2c(j)/3 yield
++
++    ||D_v h||_X<=4t(v)||Kh||_X<=chi(x)||Kh||_X,
++    chi(x)=1/2(1-sqrt D(x))-(1136/39)x^2.                (L20)
++
++Here X is the full sum of original trace coefficient norms after assembly. The scalar output is also bounded by the same complete product estimate. To check L20 without its displayed cancellation, chi is exactly
++4[(16/3)x+(137/6)x^2+w_*/6], a positive-coefficient majorant. This form proves its monotonicity. Its closed-endpoint value is strictly less than 1/2.
++
++For an actual physical eigenfunction A f=lambda f with lambda>0, let h=Q_Hf. The source and physical-centered maps are
++
++    f -> Q_Hf,
++    h -> h-<h>_rho,
++    <f>_rho=0, int_H h=0.                               (L21)
++
++Both compositions are identities, and h is nonzero. The original eigen-equation gives
++
++    (K-lambda/kappa)h=Q_H D_vh.
++
++Every finite-regulator eigenfunction is smooth. Its original Fourier coefficients have summable c(j)||A_j||_1: Peter–Weyl Plancherel followed by Cauchy–Schwarz with sufficiently many Casimir powers gives this, since sum_j dim(j)^2(1+c(j))^(-N)<infinity for large N on the finite product. No volume-uniform smoothness constant is used. For 0<lambda/kappa<3, every actual nonconstant physical block has c(j)>=3, and therefore
++
++    ||(K-lambda/kappa)h||_X
++        >=[1-lambda/(3kappa)]||Kh||_X.
++
++Combining with L20 proves lambda>=3kappa(1-chi). For lambda>=3kappa that inequality is automatic. The full compact spectral resolution gives, on the ENTIRE centered physical form domain,
++
++    Delta_L>=kappa d(x),
++    d(x)=(3/2)(1+sqrt D(x))+(1136/13)x^2,
++    0<x<=alpha, L>=2, a>0.                              (L22)
++
++Equivalently, x=1/(4g^4), kappa=2g^2/a and g^2>=1/(2sqrt(alpha)). The scalar-space version has the original free constant 3/4 and gives one quarter of L22. No excitation is declared physical merely from an unprojected color vector.
++
++Because chi has positive power coefficients and increases on the interval, d decreases to d(alpha). The exact endpoint satisfies
++
++    d(alpha)=3/2+(1136/13)alpha^2
++             >61/40=1.525.                              (L23)
++
++At the rational interior point and throughout its lower-x interval,
++
++    g^2>=4 => Delta_L>1.8385 kappa,
++    d(1/64)= (3/2)(1+sqrt(10028381/224280576))+71/3328
++             =1.8385178195961905... .                    (L24)
++
++Every a and exterior L factor remains in kappa. This is a lower bound for the full original physical spectrum, obtained from a convergent complete source rather than a finite-dimensional trial-space lower estimate.
++
++## L6. The retained source complexes and their exact physical defect
++
++At fixed x in the closed domain, define V_N=span{R_2,J_2R_2,...,J_2^N R_2} in the original labelled coefficient space V. At support N use the actual complex
++
++    V_N --L_2--> V --0-->0,
++    H^1_N=V/L_2 V_N.
++
++The source inclusions and target identities commute. Since L_2 is invertible, the exact transported-kernel isomorphism is
++
++    V_(N+1)/V_N -> ker(H^1_N -> H^1_(N+1)),
++    [h] -> [L_2 h],
++    inverse [L_2 h] -> [h].                             (L25)
++
++Changing representatives by L_2V_N changes h by exactly V_N; this proves both inverse identities. The actual source R_2 has representative J_2^(N+1)R_2 after the primitive sum in L16 is subtracted. The same original support label survives on a zero receiving coefficient. These are the support-indexed quotient maps used by Split Zero; the formula retains the full primitive, not only its support flag.
++
++The linearized source maps to the auxiliary differential operator by the exact square
++
++    K L_2 h=Q_H[K-2Gamma(q_2,.)]h.                       (L26)
++
++Its relation to the actual physical operator is the complete defect
++
++    Q_H A h-kappa K L_2h=-2kappa Q_H Gamma(w,h).          (L27)
++
++The bound from C5–7 is at most (2kappa/3)w_*||Kh||_X on the right. Equation L9 separately retains the multiplication residual and scalar of the approximate exponential. Thus the approximate section and actual physical dynamics are connected by specified maps and controlled, unremoved terms.
++
++On the original centered physical form domain put d_Xf=(X_if)_i with norm squared kappa int rho sum_i |X_if|^2. Its inverse on its actual range is p_X(d_Xf)=f. The ground-state map U:f->psi f is unitary with inverse u->u/psi. The variational definition of the first excitation therefore gives exactly
++
++    ||p_X||^2=1/Delta_L<=1/[kappa d(x)].                 (L28)
++
++For an original physical conditional-expectation kernel, its closed restricted form has D_phys>=kappa d(x). All zero-shift primitive and response errors on that kernel consequently have the same inverse bound. The inclusion into the full scalar kernel intertwines the operators and resolvents when the original conditional expectation commutes with gauge averaging; that commuting property follows by changing variables in its actual vacuum conditional integral. No forcing or state Gram is altered by this return.
++
++## L7. Explicit complete higher-order remainder for the energy coefficient
++
++On the complex circle |x|=1/60, L19 is less than 7/10, verified by rational square bounds on D(1/60)=5458199/462003750. For each original link and each of its three generators, |X_e,alpha v|<=||v||loc/6. Hence
++
++    |C_L(x)|<=|E_L| ||v||loc^2/12<49|E_L|/1200
++
++on that circle. Analyticity inside alpha and the exact evenness from C7 give the Cauchy coefficient estimate and its full geometric tail:
++
++    |E_0-2kappa Mx+kappa Mx^2/3
++           -kappa(5M/216-2J/1053)x^4|
++      <=(49kappa |E_L|/1200)
++             (60|x|)^6/[1-(60|x|)^2],
++    0<|x|<1/60.                                        (L29)
++
++The scalar term 2kappa Mx and every extensive factor remain. This bounds all omitted orders, rather than assigning a numerical fourth-order polynomial as the exact energy. The complete finite-box coefficients M,J and the independent coefficient calculation are C24–25.
++
++## L8. Literature crosscheck with the actual parameter maps
++
++The exponential vacuum equation and connected loop expansions have established Hamiltonian lattice-gauge antecedents. The following comparisons are to inspected primary bodies, with their scope retained.
++
++D. Schuette, Zheng Weihong and C.J. Hamer, *The Coupled Cluster Method in Hamiltonian Lattice Field Theory*, Phys. Rev. D55 (1997) 2974–2986, arXiv:hep-lat/9603026v1, equations (17), (21)–(26), (30) and (38), formulate the exponential vacuum and its linear excitation equation using original gauge-invariant loop/representation coefficients. Their dimensionless coefficient is x_C=2/g_C^4 and physical operator g_C^2[K-x_C S]/(2a). At fixed a, g_C=2^(3/4)g gives x_C=xi and
++
++    H_original(a,g)=sqrt(2) H_C(a,2^(3/4)g)
++                         +2kappa xi M I.                (L30)
++
++Substituting both coefficients proves the complete identity, including the additive energy. With their Hermitian generator lambda_alpha=sigma_alpha/2, their multiplication commutator derivative is i X_alpha. Hence S_(mu mu)=K v and S_mu S_mu=-Gamma(v,v). Their equation (23) becomes exactly the original scalar equation C2–3 under S=v+c_L. No sign is inferred from an unnamed convention.
++
++B. Dahmen, *Strong coupling expansion for scattering phases in Hamiltonian lattice field theories—II. SU(2) gauge theory in (2+1) dimensions*, arXiv:hep-lat/9412080, equations (1.7), (1.24), gives the original planar coefficient H_D'=(g_D^2/2)[K-h_D S], h_D=2/g_D^4, and the ground coefficient -M h_D^2/3. The exact return is g_D=2^(3/4)g and
++
++    H_plane(a,g)=(sqrt(2)/a) H_D'+2kappa xi M I.          (L31)
++
++This reproduces the -kappa M xi^2/3 term and the actual local Casimir denominators. The inspected second-order calculation does not independently certify our cubic norm or the quartic majorant.
++
++P. Hui, X.-Y. Fang and T.-Y. Shi, *Approximated seventh order calculation of vacuum wave function of 2+1 dimensional SU(2) lattice gauge theory*, arXiv:hep-lat/0408035v1, equations (3), (4), (6), use g_H^2[K-(4/g_H^4)S]/(2a). The map g_H=2g gives
++
++    H_plane(a,g)=H_H(a,2g)+2kappa xi M I.                 (L32)
++
++Their section 2 explicitly defines subsequent finite-order/random-phase replacements. This contribution retains the exact product and every residual term in L5–16 instead. The earlier method and the existence of higher-order loop calculations are attributed; no claim that the general cubic expansion or exponential ansatz is new is made.
++
++For the original planar edge subset inside the spatial cube let J_pi be cylinder pullback, with inverse on its image the original unused-link Haar integral. Fubini proves J_pi^*J_pi=I, and original differentiation gives K_3 J_pi=J_pi K_2. The full operator difference is exactly
++
++    H_3 J_pi-J_pi H_2
++      =kappa xi [2(M_3-M_2)-sum_(p outside plane)W_p]J_pi. (L33)
++
++Thus local planar channels are compared by their actual inclusion, and all perpendicular and exterior plaquettes remain in L33. The common-edge and cube-corner contributions in C18–20 are calculated in the spatial graph rather than silently assigned a planar identity.
++
++Primary URLs: https://arxiv.org/html/hep-lat/9603026v1 ; https://arxiv.org/pdf/hep-lat/9412080 ; https://arxiv.org/html/hep-lat/0408035v1 . Their cited formulae were read. The literature check establishes these parameter/equation correspondences; it does not establish a global novelty or best-known coupling-range claim.
++
++## L9. Continuum path, completed scope, and the next actual quantity
++
++The running test path remains a_n=a_0 2^(-n), g_n^2=1/c_n, c_n=g_0^(-2)+beta n log 2. Its exact inclusion in the new domain is
++
++    c_n<=2sqrt(alpha).
++
++For beta>0 it eventually leaves the proved strong-coupling domain. A nontrivial four-dimensional continuum field and a finite positive continuum mass have not been constructed by L22. The original units and this parameter boundary are explicitly retained.
++
++The two requested calculations are complete: the actual cubic source C14–23, and the complete linearized residual/inverse L5–16 with physical return L20–28. The fourth energy coefficient and its all-order remainder are additional consequences. This is written analysis supported by finite exact regressions, not an independent external review or Lean certificate.
++
++A directly specified next computation is the full source v_4=2B(v_1,v_3)+b_22 on its original connected four-face supports, together with a signed, channel-resolved estimate of J_2 on those same supports. The b_22 formula L6 and the cubic table are now evaluated inputs; there is no reason to repeat their generic norm bounds as new work. Any different continuation must retain its exact link to the physical primitive norm L28 and the running parameter boundary above.
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/README.md b/yang-mills/continuations/20260916-cubic-linearized/README.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..7646906c03875e59c6f6e5498cd526f5911f333a
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/README.md
+@@ -0,0 +1,29 @@
++# Connected cubic source and full linearized Yang–Mills return
++
++The two calculations selected by the saved checkpoint are executed here. Read `CUBIC_SOURCE.md`, then `LINEARIZED_RETURN.md`. Both proof bodies preserve the full original SU(2) Hamiltonian, physical units, Haar mass, gauge image, source labels and scalar energy.
++
++The complete cubic source has five connected geometric/multiplicity families and norm at most 944984/351. The actual residual at q2=xi*v1+xi^2*v2 is xi^3*v3+xi^4*B(v2,v2), with a fully specified finite Casimir-projector formula for every quartic residual component. Its evaluated spin budgets give the quartic discriminant
++
++    D(x)=(46457856*x^4+183150656*x^3+18324072*x^2-1168128*x+13689)/13689.
++
++Let alpha be its first positive root, approximately0.0170787544707772676. For every original open box L>=2, every a>0 and g^2>=1/(2sqrt(alpha)), the proof gives
++
++    Delta_L >= kappa [3(1+sqrt(D(xi)))/2+(1136/13)*xi^2],
++    kappa=2g^2/a, xi=1/(4g^4).
++
++The threshold for g^2 is between3.825973052393385 and3.825973052393386. In particular g^2>=4 gives Delta_L>1.8385*kappa. The inverse, full nonlinear tail and closed endpoint are proved, rather than assumed. The actual fourth ground-energy coefficient is kappa(5M/216-2J/1053), with original finite-box M,J and an explicit analytic remainder.
++
++## Reproduce
++
++Python3.10+ and its standard library suffice. From this directory:
++
++```sh
++python -B verify.py --verify-receipt verification.json
++python -O -B verify.py --verify-receipt verification.json
++```
++
++The programs differentiate original link products and independently evaluate projected receiving formulas. All612 anchored connected cubic multisets are tested at two exact rational quaternion assignments. Haar harmonic moments, noncommuting singlet projectors, full original graph counts, coefficient recurrences, source budgets, root brackets and an independent energy recurrence have separate tests. False formulas and malformed receipts must be rejected in their specified checks. The analytical proofs are written arguments for review; no new Lean execution, vacuum sampling, spin truncation of the full Hamiltonian, or independent analytical review is claimed.
++
++`state.json` is the mathematical checkpoint. `SOURCE_INTAKE.json` records exact reading scopes and primary literature parameter maps. `execution.json` records observed local executions; the mathematical receipt contains no elapsed-time-dependent data. Existing main and earlier review branches are preserved. This packet is self-contained for its mathematical proofs and checker, so it can be reviewed on PR6 without pretending that every earlier owner-facing archive was remotely published.
++
++The four-dimensional continuum field and finite positive continuum mass remain unestablished. The next actual source is v4=2B(v1,v3)+B(v2,v2), retaining the complete same-support action rather than repeating the completed generic bounds.
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json b/yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..654ba0f53dcf0348a91356ae5621037148774d1d
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/SOURCE_INTAKE.json
+@@ -0,0 +1,64 @@
++{
++  "date": "2026-09-16",
++  "literature_independent_confirmation_of_new_norm_bound": false,
++  "literature_priority_established": false,
++  "local_parent_reads": [
++    {
++      "file": "yang_mills_gauge_native_source_note.md",
++      "sha256": "c24f5235b8c25daa1ee20fb81a13d8db94b88cb99b298ac7d10c8b4e5faafebd"
++    },
++    {
++      "file": "yang_mills_second_source_continuation.md",
++      "sha256": "044279aa33cc6a53ea933ebe0aa903741653b4964883d7ea40b14b6bf5b9ff14"
++    },
++    {
++      "file": "yang_mills_spatial_coupling_return.md",
++      "sha256": "b7c24b984cf19ac793ae6df532bfa9fb9db98d6319e1a02bb3b92607366f626e"
++    }
++  ],
++  "original_hamiltonian": {
++    "blob": "dfee77c0ca0d6ed897c4172fcbfe23cd9d10d313",
++    "commit": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
++    "path": "yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md",
++    "reading_scope": "Freshly retrieved lines 1-80; original operator, domains, vacuum form and Haar coordinate map",
++    "repo": "KokunoYumeto/yang-mills-interacting-workbench"
++  },
++  "peer_orientation": {
++    "new_peer_CI_replay": false,
++    "open_pr_scan": "Zeta, Collatz, Erdos-Straus, Erdos817; four most recently updated returned",
++    "proofs_imported_from_scan": [],
++    "read_descriptions": [
++      "Zeta PR36",
++      "Erdos-Straus PR10",
++      "Erdos-Straus PR8",
++      "Erdos-Straus PR9"
++    ],
++    "zeta_main": "1efd53337561d8f67cf0ac1d119acdaa222644c3"
++  },
++  "primary_literature": [
++    {
++      "dictionary": "g_C=2^(3/4)g; H=sqrt(2)H_C+2kappa xi M",
++      "id": "Schuette-Zheng-Hamer1996",
++      "scope": "Full relevant sections 2-4, equations17,21-26,30,38; original gauge/loop framework and exact exponential equations",
++      "url": "https://arxiv.org/html/hep-lat/9603026v1"
++    },
++    {
++      "dictionary": "g_D=2^(3/4)g; H_plane=(sqrt(2)/a)H_D_prime+2kappa xi M",
++      "id": "Dahmen1994",
++      "scope": "Original Hamiltonian and second-order ground-energy equations1.7,1.24; screenshots pages3,8 and parsed local-channel text",
++      "url": "https://arxiv.org/pdf/hep-lat/9412080"
++    },
++    {
++      "dictionary": "g_H=2g; H_plane=H_H+2kappa xi M",
++      "id": "Hui-Fang-Shi2004",
++      "scope": "Original equations3,4,6 and stated later truncation/RPA procedure",
++      "url": "https://arxiv.org/html/hep-lat/0408035v1"
++    }
++  ],
++  "remote_parent": {
++    "head": "e98b2c3af77f66fb1c1396143ca53daef586404f",
++    "pr": 6,
++    "state": "open draft at intake"
++  },
++  "schema": "ym-cubic-intake-v1"
++}
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md b/yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..149654497bf3d3ab1d28485e4d6e8089f7586037
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/TRANSPORT_RECORD.md
+@@ -0,0 +1,20 @@
++# Publication transport record
++
++The mathematical source and checker identities were checked before publication.
++A first checker text upload had one coefficient transcription mismatch in the
++independent fourth-energy regression: its unmultiplied adjacent-pair denominator
++was typed as 1053 instead of the locally tested 117. The blob identity gate caught
++it. The whole uploaded text was recovered in three line ranges, reconstructed
++locally, and the precise difference was computed. The corrected upload has the
++original tested blob `8d902750cbf5661467f00c1541ba9a77cea8ce84`.
++
++The failed transport blob and its unattached inspection commit are excluded from
++this research branch's ancestry and tree. A discarded incomplete compressed-upload
++attempt is likewise excluded. No mathematical source or local receipt was changed
++to accept either transport. The final full mathematical record is reconstructed
++by the unchanged producer and required to have its original SHA-256.
++
++Local direct-network fetching failed at DNS resolution, and the alternate download
++service did not accept the new Git object locator. Authenticated connector reads
++and content-addressed writes supplied the successful route. These were publication
++transport issues, not mathematical or executed-check failures.
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md b/yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..a8ffba0e4f928c2dccf8c2bf91f838afe906a09b
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/VERIFY_FIRST.md
+@@ -0,0 +1,39 @@
++# Reproduce the complete finite record
++
++This Git contribution exposes both complete proofs and all four producer/replay
++programs in ordinary text. The full 180,403-byte `verification.json` is reproduced
++locally with its already observed SHA-256 required exactly:
++
++```sh
++python -B materialize_receipt.py
++python -B verify.py --verify-receipt verification.json
++python -O -B verify.py --verify-receipt verification.json
++```
++
++Run these commands from this directory. The first command checks every original
++source identity before execution, runs the entire producer, verifies the exact
++full-output hash, and writes that unchanged complete record. It refuses to replace
++an existing different receipt. The owner-facing ZIP also contains the original
++uncompressed full record. No record field is omitted from the reconstructed file.
++
++Expected complete SHA-256:
++`2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6`.
++
++The producer executes 2,246 named exact checks and 15 false-formula controls.
++`execution.json` is the observed 16-run record: ordinary/optimized executions,
++the unchanged saved predecessor, copied sources, eight intended CLI corruption
++rejections, and restored sources. Those analytical claims have written proofs;
++finite checks are not an independent analytical or Lean certification.
++
++`replay.py` reruns the current/copy/corruption sequence. Its optional `--parent`
++argument replays the saved gauge-native predecessor and complete L2 certificate;
++that earlier owner-facing archive is not silently represented as published by
++this focused PR. Current replay:
++
++```sh
++python -B replay.py
++```
++
++The existing `README.md` and all eight inputs bound by the mathematical record
++are preserved byte-for-byte from the completed local verification. This setup
++page adds no changed mathematical premise or expected value.
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py b/yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..9f2270b160a2208829bbe041236f57ba347cab38
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/coordinate_audit.py
+@@ -0,0 +1,148 @@
++"""Exact original-link test of the cubic source; no vacuum sampling."""
++from fractions import Fraction as F
++from itertools import product,combinations
++from functools import lru_cache
++from geometry import pword,pedges,adjacent,incident,anchored,type3,cycle,boundary,union
++
++ZERO=(F(0),)*4
++ONE=(F(1),F(0),F(0),F(0))
++AXES=tuple(tuple(F(int(a==b)) for a in range(4)) for b in range(4))
++CELL=tuple(tuple(s*x for x in a) for a in AXES for s in (-1,1))+tuple(tuple(F(s,2) for s in ss) for ss in product((-1,1),repeat=4))
++POOL=CELL+((F(3,5),F(4,5),F(0),F(0)),(F(0),F(3,5),F(0),F(4,5)))
++
++def mul(q,r):
++ a,b,c,d=q;e,f,g,h=r
++ return (a*e-b*f-c*g-d*h,a*f+b*e+c*h-d*g,a*g-b*h+c*e+d*f,a*h+b*g-c*f+d*e)
++def conj(q):return(q[0],-q[1],-q[2],-q[3])
++def neg(q):return tuple(-x for x in q)
++def gen(a):return tuple(F(int(i==a+1),2) for i in range(4))
++def wordval(word,U):
++ q=ONE
++ for e,s in word:q=mul(q,U[e] if s==1 else conj(U[e]))
++ return 2*q[0]
++def loop(p,U):return wordval(pword(p),U)
++def dloop(p,U,e,a):
++ word=pword(p)
++ if e not in pedges(p):return F(0)
++ q=ONE
++ for f,s in word:
++  t=U[f] if s==1 else conj(U[f])
++  if f==e:t=mul(gen(a),U[e]) if s==1 else neg(mul(conj(U[e]),gen(a)))
++  q=mul(q,t)
++ return 2*q[0]
++def pzero_pair(p,q,U,der=None):
++ common=pedges(p)&pedges(q)
++ if len(common)!=1:raise ValueError('pair must have one original shared edge')
++ edge=next(iter(common))
++ if der and der[0]==edge:return F(0)
++ V=dict(U);out=F(0)
++ for u in AXES:
++  V[edge]=u
++  if der:
++   e,a=der;out+=dloop(p,V,e,a)*loop(q,V)+loop(p,V)*dloop(q,V,e,a)
++  else:out+=loop(p,V)*loop(q,V)
++ return out/4
++
++def inner2(p,q,U,der=None):
++ if p==q:
++  w=loop(p,U)
++  return -F(1,72)*(2*w*dloop(p,U,*der) if der else w*w-1)
++ if not pedges(p)&pedges(q):return F(0)
++ z=pzero_pair(p,q,U,der)
++ f=(dloop(p,U,*der)*loop(q,U)+loop(p,U)*dloop(q,U,*der)) if der else loop(p,U)*loop(q,U)
++ return F(1,27)*z-F(1,117)*(f-z)
++
++def source_rhs(ps,U):
++ # Each distinct outer-plaquette choice occurs once in 2 B(v1,v2).
++ total=F(0)
++ for p in sorted(set(ps)):
++  rest=list(ps);rest.remove(p);q,r=rest
++  for e in pedges(p)&(pedges(q)|pedges(r)):
++   for a in range(3):total+=F(2,3)*dloop(p,U,e,a)*inner2(q,r,U,(e,a))
++ return total
++
++def projected3(ps,U):
++ typ=type3(ps);edges=sorted(union(ps));ans=[]
++ if typ=='self':
++  w=loop(ps[0],U)
++  return[(F(3),-F(1,81),w),(F(15),F(1,810),w**3-2*w)]
++ if typ=='repeat':
++  p=next(p for p in set(ps) if ps.count(p)==2);q=next(q for q in set(ps) if q!=p)
++  z=pzero_pair(p,q,U);w=loop(p,U);v=loop(q,U)
++  h=F(4,3)*w*z-F(1,3)*v;f=(w*w-1)*v
++  return[(F(9),-F(11,4212),h),(F(12),F(11,11232),f-h)]
++ if typ=='disconnected':return[]
++ if typ=='common':
++  f=F(1)
++  for p in ps:f*=loop(p,U)
++  h=sum(loop(ps[i],U)*pzero_pair(ps[(i+1)%3],ps[(i+2)%3],U) for i in range(3))*F(2,3)
++  return[(F(15,2),-F(2,1755),h),(F(21,2),F(2,2457),f-h)]
++ shared=sorted(e for e in edges if sum(e in pedges(p) for p in ps)==2)
++ @lru_cache(None)
++ def integ(sub):
++  V=dict(U);total=F(0)
++  for vals in product(AXES,repeat=len(sub)):
++   V.update(zip(sub,vals));f=F(1)
++   for p in ps:f*=loop(p,V)
++   total+=f
++  return total/(4**len(sub))
++ for bits in product((0,1),repeat=len(shared)):
++  zs=tuple(shared[i] for i,b in enumerate(bits) if not b)
++  os=tuple(shared[i] for i,b in enumerate(bits) if b)
++  val=F(0)
++  for extra in product((0,1),repeat=len(os)):
++   sub=tuple(sorted(zs+tuple(e for e,t in zip(os,extra) if t)))
++   val+=(-1)**sum(extra)*integ(sub)
++  n=sum(bits)
++  if typ=='path':
++   c=F(6+2*n);coef={0:F(1,162),1:-F(11,8424),2:F(1,3510)}[n]
++  else:
++   c=F(9,2)+2*n
++   coef={0:F(2,81),1:F(34,13689),2:-F(38,17901),3:F(2,2457)}[n]
++   if n==1 and val!=0:raise ArithmeticError('one-spin corner failed')
++  ans.append((c,coef,val))
++ return ans
++
++def assignment(ps,seed):
++ U={}
++ for j,e in enumerate(sorted(union(ps))):
++  U[e]=POOL[(17*j+7*seed+sum((k+3)*n for k,n in enumerate(e)))%len(POOL)]
++ return U
++
++def half_projection(fun,U,e):
++ V=dict(U);r=F(0);q=U[e]
++ for u in CELL:
++  V[e]=u;r+=sum(q[i]*u[i] for i in range(4))*fun(V)
++ return r/6 # 4/24
++
++def run_coordinate_tests():
++ anchor,pairs,triples=anchored();rows=[]
++ pp=incident(anchor)
++ motifs=[(pp[0],)*3]+[(p,p,q) for p,q in pairs[:3]]
++ for typ in ('path','common','corner'):
++  xs=triples[typ]
++  motifs += [xs[j] for j in (0,len(xs)//3,2*len(xs)//3,len(xs)-1)]
++ for idx,ps in enumerate(motifs):
++  for seed in range(3):
++   U=assignment(ps,seed);rhs=source_rhs(ps,U)
++   kv=sum(c*a*v for c,a,v in projected3(ps,U))
++   if kv!=rhs:raise ArithmeticError((type3(ps),idx,seed,ps,kv,rhs,kv-rhs))
++   rows.append({'type':type3(ps),'seed':seed,'K_v3':str(kv)})
++ # Independent harmonic projections verify the recoupling step.
++ for p,q in pairs[::10]:
++  ps=(p,p,q);U=assignment(ps,5);e=next(iter(pedges(p)&pedges(q)))
++  fun=lambda V:(loop(p,V)**2-1)*loop(q,V)
++  explicit=F(4,3)*loop(p,U)*pzero_pair(p,q,U)-F(1,3)*loop(q,U)
++  got=half_projection(fun,U,e)
++  if got!=explicit:raise ArithmeticError('repeated harmonic projection')
++  rows.append({'type':'repeat-harmonic','value':str(got)})
++ for ps in triples['common'][::10]:
++  U=assignment(ps,6);e=next(iter(set.intersection(*(set(pedges(p)) for p in ps))))
++  fun=lambda V:loop(ps[0],V)*loop(ps[1],V)*loop(ps[2],V)
++  h=projected3(ps,U)[0][2]
++  if half_projection(fun,U,e)!=h:raise ArithmeticError('common-edge harmonic projection')
++  rows.append({'type':'common-harmonic','value':str(h)})
++ return rows
++if __name__=='__main__':
++ import json,time
++ t=time.monotonic();rows=run_coordinate_tests();print(json.dumps({'passed':len(rows),'elapsed':time.monotonic()-t,'rows':rows},indent=2))
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/execution.json b/yang-mills/continuations/20260916-cubic-linearized/execution.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..b1e04893e485b65c8e9dee2fd86b94da9aa74888
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/execution.json
+@@ -0,0 +1,145 @@
++{
++  "analytic_proof_formally_verified": false,
++  "copied_sources_match": true,
++  "finite_counts": {
++    "exact_checks": 2246,
++    "negative_controls": 15
++  },
++  "independent_external_review": false,
++  "ordinary_optimized_identical": true,
++  "paid_model_run": false,
++  "parent_replayed": true,
++  "receipt_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6",
++  "records": [
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "current-False",
++      "seconds": 24.073039654999775,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
++    },
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "current-True",
++      "seconds": 26.764939523000066,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
++    },
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "unchanged-parent-False",
++      "seconds": 21.48263768700008,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
++    },
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "unchanged-parent-True",
++      "seconds": 24.32673100699958,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
++    },
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "copied-source-False",
++      "seconds": 24.045442353,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
++    },
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "copied-source-True",
++      "seconds": 26.027595217,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "receipt-schema",
++      "name": "wrong-schema-False",
++      "seconds": 1.420096724999894,
++      "stderr_sha256": "e9ff29f7a934237b3ea4f33cecf064bbca5a044865891f650ec03628f329ca29",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "duplicate-json-key:schema",
++      "name": "duplicate-json-False",
++      "seconds": 1.4734054699997614,
++      "stderr_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "receipt-schema",
++      "name": "wrong-schema-True",
++      "seconds": 3.8225255209999887,
++      "stderr_sha256": "e9ff29f7a934237b3ea4f33cecf064bbca5a044865891f650ec03628f329ca29",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "duplicate-json-key:schema",
++      "name": "duplicate-json-True",
++      "seconds": 3.667553352000141,
++      "stderr_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "source-identity-mismatch:CUBIC_SOURCE.md",
++      "name": "modified-CUBIC_SOURCE.md-False",
++      "seconds": 1.5081577099999777,
++      "stderr_sha256": "2553745bfa169c3b2253534c9cb58b6a612771fc7fbba7c9f2c550da438d3c0a",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "source-identity-mismatch:CUBIC_SOURCE.md",
++      "name": "modified-CUBIC_SOURCE.md-True",
++      "seconds": 4.0503837239998575,
++      "stderr_sha256": "2553745bfa169c3b2253534c9cb58b6a612771fc7fbba7c9f2c550da438d3c0a",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "source-identity-mismatch:geometry.py",
++      "name": "modified-geometry.py-False",
++      "seconds": 1.5426476470001944,
++      "stderr_sha256": "8fb2326a4e47e0b801260546a111d9b385d7750a50bc03f5c20fe647e9a40308",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 1,
++      "intended_error": "source-identity-mismatch:geometry.py",
++      "name": "modified-geometry.py-True",
++      "seconds": 4.296542133000003,
++      "stderr_sha256": "8fb2326a4e47e0b801260546a111d9b385d7750a50bc03f5c20fe647e9a40308",
++      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
++    },
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "restored-source-False",
++      "seconds": 23.83809279900015,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
++    },
++    {
++      "exit_code": 0,
++      "intended_error": null,
++      "name": "restored-source-True",
++      "seconds": 25.89779287300007,
++      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
++    }
++  ],
++  "remote_CI_run": false,
++  "schema": "ym-cubic-observed-execution-v1"
++}
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/geometry.py b/yang-mills/continuations/20260916-cubic-linearized/geometry.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..c8d385b276909ea1e885747c42773e64e9553c87
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/geometry.py
+@@ -0,0 +1,63 @@
++from itertools import combinations
++from collections import defaultdict, Counter
++
++def add(n,i,k=1):
++    v=list(n);v[i]+=k;return tuple(v)
++def edge(n,i):return tuple(n)+(i,)
++def endpoints(e):return e[:3],add(e[:3],e[3])
++def pword(p):
++    n,i,j=p[:3],p[3],p[4]
++    return ((edge(n,i),1),(edge(add(n,i),j),1),(edge(add(n,j),i),-1),(edge(n,j),-1))
++def pedges(p):return frozenset(e for e,s in pword(p))
++def incident(e):
++    n,i=e[:3],e[3];out=[]
++    for j in range(3):
++        if j==i:continue
++        a,b=sorted((i,j))
++        out += [tuple(n)+(a,b),add(n,j,-1)+(a,b)]
++    return tuple(sorted(out))
++def adjacent(p):
++    return frozenset(q for e in pedges(p) for q in incident(e) if q!=p)
++def union(ps):return frozenset().union(*(pedges(p) for p in ps))
++def boundary(ps):
++    c=Counter(e for p in ps for e in pedges(p));return frozenset(e for e,n in c.items() if n%2)
++def cycle(es):
++    adj=defaultdict(list)
++    for e in es:
++        u,v=endpoints(e);adj[u].append((v,e,1));adj[v].append((u,e,-1))
++    if any(len(x)!=2 for x in adj.values()):raise ValueError('boundary is not a cycle')
++    root=min(adj);at=root;last=None;out=[]
++    while True:
++        opts=sorted(x for x in adj[at] if x[1]!=last)
++        v,e,s=opts[0];out.append((e,s));last=e;at=v
++        if at==root:break
++        if len(out)>len(es):raise ValueError('unclosed')
++    if len(out)!=len(es):raise ValueError('disconnected boundary')
++    return tuple(out)
++def type3(ps):
++    if len(set(ps))==1:return 'self'
++    if len(set(ps))==2:return 'repeat' if any(len(pedges(p)&pedges(q)) for p,q in combinations(set(ps),2)) else 'disconnected'
++    links=[pedges(p)&pedges(q) for p,q in combinations(ps,2)]
++    count=sum(bool(x) for x in links)
++    if count<2:return 'disconnected'
++    if count==2:return 'path'
++    if set.intersection(*(set(pedges(p)) for p in ps)):return 'common'
++    return 'corner'
++def anchored():
++    anchor=(0,0,0,0)
++    tris=set();pairs=set()
++    for p in incident(anchor):
++        for q in adjacent(p):
++            pairs.add(tuple(sorted((p,q))))
++            for r in adjacent(p)|adjacent(q):
++                if r not in (p,q):tris.add(tuple(sorted((p,q,r))))
++    out={t:[] for t in ('path','common','corner')}
++    for ps in sorted(tris):out[type3(ps)].append(ps)
++    return anchor, sorted(pairs),out
++if __name__=='__main__':
++    a,ps,ts=anchored();print('pairs',len(ps));print({k:len(v) for k,v in ts.items()})
++    for k,xs in ts.items():
++        print(k,'example',xs[0], 'union',len(union(xs[0])))
++        if k in ('path','corner'):
++            print('boundary histogram',Counter(len(cycle(boundary(x))) for x in xs))
++    print('pair boundaries',Counter(len(cycle(boundary(x))) for x in ps))
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py b/yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..3008904eff8adec2fc5f43d41a02cc2b284ad5f0
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/materialize_receipt.py
+@@ -0,0 +1,37 @@
++#!/usr/bin/env python3
++"""Recreate the complete observed receipt and require its exact original hash."""
++from pathlib import Path
++import hashlib, json, subprocess, sys, tempfile
++ROOT = Path(__file__).resolve().parent
++EXPECTED = "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
++SOURCES = {'CUBIC_SOURCE.md': 'd1e8fa24ce573ad1adfdaeecbb2ee6bfa1631717f9ce22b0f66d838981d5f240', 'LINEARIZED_RETURN.md': '931d8d2824062c6435dfe324cb9145bc6d8e7a450d37aa5f86a94f1190190453', 'README.md': '2fbb9f300d29ad35efd1ea3b2c9d07b29185308f3aeaefbfaf2738d180597a18', 'SOURCE_INTAKE.json': '23849c8a138107a287fd2b28f0e16d43056f80333ef1eb605df786c988c15eb9', 'coordinate_audit.py': 'de1d9841ebd4655194801cc053bc1f71393433e8c241d0d88cdae65fc82f7c9f', 'geometry.py': 'bd878efd339f05f320d051bee760bff0934ccfca10e9a2c1e6f26941a128cc1e', 'state.json': '310162656f69b84b8059d6e201a867c0ef632492058cc43838191526419c5a1d', 'verify.py': '45bd9ff364efc4d41b205702472ba0557d9248335bf4f6b879f55f1d2bec0502'}
++
++def digest(data):
++    return hashlib.sha256(data).hexdigest()
++
++def main():
++    for name, wanted in SOURCES.items():
++        if digest((ROOT / name).read_bytes()) != wanted:
++            raise RuntimeError("source-identity-mismatch:" + name)
++    target = ROOT / "verification.json"
++    if target.exists() and digest(target.read_bytes()) != EXPECTED:
++        raise RuntimeError("existing-receipt-mismatch")
++    with tempfile.TemporaryDirectory(prefix="ym-cubic-receipt-") as td:
++        out = Path(td) / "verification.json"
++        command = [sys.executable, *(["-O"] if not __debug__ else []),
++                   "-B", str(ROOT / "verify.py"), "--output", str(out)]
++        result = subprocess.run(command, capture_output=True, timeout=180)
++        if result.returncode or result.stdout or result.stderr:
++            raise RuntimeError("producer-failed:" + result.stderr.decode())
++        data = out.read_bytes()
++        if digest(data) != EXPECTED:
++            raise RuntimeError("regenerated-receipt-mismatch")
++        target.write_bytes(data)
++    print("PASS: complete 180403-byte receipt reproduced " + EXPECTED)
++
++if __name__ == "__main__":
++    try:
++        main()
++    except (OSError, RuntimeError, subprocess.TimeoutExpired) as exc:
++        sys.stderr.write("FAIL: " + str(exc) + "\n")
++        raise SystemExit(1)
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/publication_replay.json b/yang-mills/continuations/20260916-cubic-linearized/publication_replay.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..5d881715a8efb6f65a9eccf1753fa8d2c7687c7f
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/publication_replay.json
+@@ -0,0 +1,45 @@
++{
++  "records": [
++    {
++      "exit_code": 0,
++      "full_receipt_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6",
++      "mode": "ordinary",
++      "seconds": 25.17096458099968,
++      "stage": "fresh-public-materialization",
++      "stdout": "PASS: complete 180403-byte receipt reproduced 2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6\n"
++    },
++    {
++      "exit_code": 1,
++      "mode": "False",
++      "stage": "existing-receipt-rejection",
++      "stderr": "FAIL: existing-receipt-mismatch\n"
++    },
++    {
++      "exit_code": 1,
++      "mode": "False",
++      "stage": "source-rejection",
++      "stderr": "FAIL: source-identity-mismatch:verify.py\n"
++    },
++    {
++      "exit_code": 0,
++      "full_receipt_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6",
++      "mode": "optimized",
++      "seconds": 30.011559986000066,
++      "stage": "fresh-public-materialization",
++      "stdout": "PASS: complete 180403-byte receipt reproduced 2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6\n"
++    },
++    {
++      "exit_code": 1,
++      "mode": "True",
++      "stage": "existing-receipt-rejection",
++      "stderr": "FAIL: existing-receipt-mismatch\n"
++    },
++    {
++      "exit_code": 1,
++      "mode": "True",
++      "stage": "source-rejection",
++      "stderr": "FAIL: source-identity-mismatch:verify.py\n"
++    }
++  ],
++  "schema": "ym-cubic-public-materialization-v1"
++}
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/replay.py b/yang-mills/continuations/20260916-cubic-linearized/replay.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..daf80c0e472325c91818d9cc90787ec59a6ccebe
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/replay.py
+@@ -0,0 +1,36 @@
++#!/usr/bin/env python3
++"""Reproduce this finite certificate and its predecessor; record actual exits."""
++from pathlib import Path
++import argparse,hashlib,json,os,shutil,subprocess,sys,tempfile,time
++HERE=Path(__file__).resolve().parent
++sha=lambda b:hashlib.sha256(b).hexdigest()
++def main():
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--parent',type=Path);p.add_argument('--output',type=Path,default=HERE/'execution.json');a=p.parse_args()
++ expected=(HERE/'verification.json').read_bytes();records=[]
++ def run(name,script,args=(),opt=False,error=None,wanted=expected):
++  cmd=[sys.executable,*(['-O'] if opt else []),'-B',str(script),*map(str,args)]
++  t=time.monotonic();r=subprocess.run(cmd,stdout=subprocess.PIPE,stderr=subprocess.PIPE,timeout=180,env={**os.environ,'PYTHONDONTWRITEBYTECODE':'1'})
++  if error is None:
++   if r.returncode or r.stderr or r.stdout!=wanted:raise RuntimeError((name,r.returncode,r.stderr.decode(),sha(r.stdout)))
++  elif r.returncode!=1 or r.stdout or r.stderr.decode()!='FAIL: '+error+'\n':raise RuntimeError((name,r.returncode,r.stdout[:100],r.stderr))
++  records.append({'name':name,'exit_code':r.returncode,'seconds':time.monotonic()-t,'stdout_sha256':sha(r.stdout),'stderr_sha256':sha(r.stderr),'intended_error':error});print(name+': PASS',flush=True)
++ for opt in (False,True):run('current-'+str(opt),HERE/'verify.py',['--verify-receipt',HERE/'verification.json'],opt)
++ if a.parent:
++  parent=a.parent;args=['--verify-receipt',parent/'verification.json','--verify-box-certificate',parent/'BOX_L2_CERTIFICATE.json'];pe=(parent/'verification.json').read_bytes()
++  for opt in (False,True):run('unchanged-parent-'+str(opt),parent/'verify.py',args,opt,wanted=pe)
++ with tempfile.TemporaryDirectory(prefix='ym-cubic-replay-') as td:
++  copy=Path(td)/'copy';shutil.copytree(HERE,copy,ignore=shutil.ignore_patterns('__pycache__','execution.json','replay.log'))
++  for opt in (False,True):run('copied-source-'+str(opt),copy/'verify.py',['--verify-receipt',copy/'verification.json'],opt)
++  wrong=Path(td)/'wrong.json';wrong.write_text('{"schema":"wrong"}\n')
++  duplicate=Path(td)/'duplicate.json';duplicate.write_text('{"schema":"a","schema":"b"}\n')
++  for opt in (False,True):
++   run('wrong-schema-'+str(opt),copy/'verify.py',['--verify-receipt',wrong],opt,'receipt-schema')
++   run('duplicate-json-'+str(opt),copy/'verify.py',['--verify-receipt',duplicate],opt,'duplicate-json-key:schema')
++  for name in ('CUBIC_SOURCE.md','geometry.py'):
++   f=copy/name;old=f.read_bytes();f.write_bytes(old+b'\n# altered source\n')
++   for opt in (False,True):run('modified-'+name+'-'+str(opt),copy/'verify.py',['--verify-receipt',copy/'verification.json'],opt,'source-identity-mismatch:'+name)
++   f.write_bytes(old)
++  for opt in (False,True):run('restored-source-'+str(opt),copy/'verify.py',['--verify-receipt',copy/'verification.json'],opt)
++ result={'schema':'ym-cubic-observed-execution-v1','records':records,'ordinary_optimized_identical':True,'copied_sources_match':True,'parent_replayed':bool(a.parent),'finite_counts':json.loads(expected)['counts'],'receipt_sha256':sha(expected),'analytic_proof_formally_verified':False,'independent_external_review':False,'remote_CI_run':False,'paid_model_run':False}
++ a.output.write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print('REPLAY PASS',len(records),flush=True)
++if __name__=='__main__':main()
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/state.json b/yang-mills/continuations/20260916-cubic-linearized/state.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..b83bd971012ed52895da932076f9c0a52f3741c3
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/state.json
+@@ -0,0 +1,51 @@
++{
++  "automatic_research_or_merge": false,
++  "check_entry": "verify.py",
++  "completed_tasks": [
++    {
++      "equations": "C14-C23",
++      "id": "connected-cubic-source",
++      "proof": "CUBIC_SOURCE.md",
++      "result": "Complete five-family original coefficient table; norm <=944984/351"
++    },
++    {
++      "equations": "L5-L28",
++      "id": "full-linearized-residual",
++      "proof": "LINEARIZED_RETURN.md",
++      "result": "Actual quartic residual, bounded Frechet inverse, complete nonlinear tail and full physical gap"
++    },
++    {
++      "equations": "C24-C25; LINEARIZED_RETURN.md L29",
++      "id": "fourth-ground-energy",
++      "proof": "CUBIC_SOURCE.md",
++      "result": "Original E4= kappa(5M/216-2J/1053), independent coefficient derivation and full analytic tail"
++    }
++  ],
++  "date": "2026-09-16",
++  "immutable_original_sources_preserved": true,
++  "new_peer_mathematical_results_imported": false,
++  "next_actual_quantity": "v4=2 B(v1,v3)+B(v2,v2) on connected four-face supports, and signed channel-resolved J2 on those same supports",
++  "not_established": [
++    "Weak-coupling continuum path beyond the certified domain",
++    "Nontrivial four-dimensional continuum field",
++    "Finite positive continuum mass",
++    "Independent analytical review",
++    "Lean formal verification",
++    "Global priority or best literature bound"
++  ],
++  "original_parameters": {
++    "J": "6(2L)(3(2L)^2-1)",
++    "M": "3(2L)^2(2L+1)",
++    "kappa": "2g^2/a",
++    "xi": "1/(4g^4)"
++  },
++  "remote_base": "e98b2c3af77f66fb1c1396143ca53daef586404f",
++  "saved_predecessor": {
++    "archive": "yang_mills_gauge_native_continuation.zip",
++    "comparison_domain": "g^2 >= sqrt((32+sqrt(354))/3)",
++    "scope": "Saved second-source proof R1-R16, stronger than the later prose-only first-source summary",
++    "sha256": "19040fd3e72c7a3c0a7a084375b0fe3bace560791ca7054af96c2f629182b323"
++  },
++  "schema": "ym-cubic-linearized-state-v1",
++  "target": "Original interacting four-dimensional continuum Yang-Mills mass gap; current operator SU(2)"
++}
+diff --git a/yang-mills/continuations/20260916-cubic-linearized/verify.py b/yang-mills/continuations/20260916-cubic-linearized/verify.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..8d902750cbf5661467f00c1541ba9a77cea8ce84
+--- /dev/null
++++ b/yang-mills/continuations/20260916-cubic-linearized/verify.py
+@@ -0,0 +1,376 @@
++#!/usr/bin/env python3
++"""Exact finite checks for the original cubic source and linearized return.
++
++This executable tests specified coordinate identities and finite certificates.
++It does not formalize the written Banach-space, elliptic, or spectral proofs.
++All requirements use explicit exceptions and remain enabled under python -O.
++"""
++from __future__ import annotations
++import argparse
++import hashlib
++import json
++import math
++import sys
++from fractions import Fraction as F
++from itertools import combinations, product
++from pathlib import Path
++from collections import Counter
++from geometry import anchored, incident, pedges, pword, adjacent, union, boundary, cycle, type3, add
++from coordinate_audit import (AXES,CELL,POOL,ONE,mul,conj,loop,dloop,pzero_pair,
++                              source_rhs,projected3,assignment,half_projection)
++
++ROOT=Path(__file__).resolve().parent
++CHECKS=[]
++NEGATIVE=[]
++class CheckFailure(RuntimeError): pass
++
++def require(test, name):
++    if not test: raise CheckFailure(name)
++def check(name, test, value=None):
++    require(name not in {r['name'] for r in CHECKS}, 'duplicate-check-name')
++    require(bool(test), name)
++    row={'name':name,'passed':True}
++    if value is not None: row['value']=str(value)
++    CHECKS.append(row)
++def reject(name, false_formula):
++    require(not bool(false_formula), 'false-formula-accepted:'+name)
++    NEGATIVE.append({'name':name,'false_formula_accepted':False})
++def rat(q):
++    q=F(q);return str(q)
++def sqrt_box(q, decimals=28):
++    q=F(q);require(q>=0,'negative-square-root')
++    d=10**decimals;n=math.isqrt(q.numerator*d*d//q.denominator)
++    lo,hi=F(n,d),F(n+1,d)
++    require(lo*lo<=q<hi*hi,'invalid-square-root-bracket')
++    return lo,hi
++
++def mm(A,B):
++    return [[sum(A[i][k]*B[k][j] for k in range(len(B)))
++             for j in range(len(B[0]))] for i in range(len(A))]
++def ma(A,B):return [[x+y for x,y in zip(a,b)] for a,b in zip(A,B)]
++def sc(q,A):return [[q*x for x in a] for a in A]
++def eye(n):return [[F(i==j) for j in range(n)] for i in range(n)]
++def trans(A):return list(map(list,zip(*A)))
++def singlet(i,j):
++    # Original ordered tensor coordinates |a0,a1,a2>.
++    bits=list(product((0,1),repeat=3));A=[[F(0) for _ in bits] for _ in bits]
++    other=3-i-j
++    eps=lambda a,b: (1 if (a,b)==(0,1) else -1 if (a,b)==(1,0) else 0)
++    for r,a in enumerate(bits):
++      for c,b in enumerate(bits):
++       if a[other]==b[other]:A[r][c]=F(eps(a[i],a[j])*eps(b[i],b[j]),2)
++    return A
++
++def geometry_checks():
++    anchor,pairs,triples=anchored()
++    check('bulk-four-original-plaquettes',len(incident(anchor))==4)
++    check('bulk-42-adjacent-pairs',len(pairs)==42)
++    counts={'path':460,'common':40,'corner':24}
++    for typ,num in counts.items():check('bulk-'+typ,len(triples[typ])==num,num)
++    for i,(p,q) in enumerate(pairs):
++        check(f'pair-boundary-{i}',len(cycle(boundary((p,q))))==6)
++    for typ in ('path','corner'):
++      target=(10,8) if typ=='path' else (9,6)
++      for i,ps in enumerate(triples[typ]):
++        check(f'{typ}-original-union-boundary-{i}',
++              (len(union(ps)),len(cycle(boundary(ps))))==target)
++    # Independent finite-box face enumeration; no periodic Hamiltonian.
++    finite=[]
++    for L in (2,3,4):
++      vertices=list(product(range(-L,L+1),repeat=3));ps=[];es=[]
++      for n in vertices:
++       for i in range(3):
++        if n[i]<L:es.append(n+(i,))
++       for i,j in combinations(range(3),2):
++        if n[i]<L and n[j]<L:ps.append(n+(i,j))
++      deg=Counter(e for p in ps for e in pedges(p));J=sum(r*(r-1)//2 for r in deg.values())
++      m=2*L;M=3*m*m*(m+1);JJ=6*m*(3*m*m-1)
++      check(f'box-{L}-face-count',len(ps)==M,M)
++      check(f'box-{L}-pair-count',J==JJ,J)
++      check(f'box-{L}-edge-count',len(es)==3*m*(m+1)**2)
++      check(f'box-{L}-all-boundary-incidences',set(deg.values())<={2,3,4})
++      # All anchored triples embed in the enumerated original bulk templates.
++      finite.append({'L':L,'faces':M,'adjacent_pairs':J,
++                     'E4_over_kappa':rat(F(5*M,216)-F(2*J,1053))})
++    check('L2-fourth-energy',finite[0]['E4_over_kappa']=='1198/351')
++    check('bulk-incidence-paths',3*66-3*(12+8)==138)
++    check('bulk-double-count-paths',F(138*10,3)==460)
++    check('bulk-double-count-common',F(12*10,3)==40)
++    check('bulk-double-count-corner',F(8*9,3)==24)
++    # The exact central link sign sends every face to -itself.
++    for p in set(q for x in pairs for q in x):
++      sign=1
++      for e,_ in pword(p):sign*=(-1)**sum(e[:e[3]])
++      check('center-face-'+','.join(map(str,p)),sign==-1)
++    return anchor,pairs,triples,finite
++
++def coordinate_checks(anchor,pairs,triples):
++    motifs=[(p,p,p) for p in incident(anchor)]
++    motifs += [(p,p,q) for p,q in pairs]+[(q,q,p) for p,q in pairs]
++    for typ in ('path','common','corner'):motifs+=triples[typ]
++    check('all-612-anchored-multisets',len(motifs)==612)
++    transcript=hashlib.sha256();nonzero=Counter()
++    for i,ps in enumerate(motifs):
++      for seed in (1,7):
++        U=assignment(ps,seed);left=sum(c*a*v for c,a,v in projected3(ps,U));right=source_rhs(ps,U)
++        typ=type3(ps)
++        check(f'original-cubic-{i}-{seed}-{typ}',left==right)
++        transcript.update((repr(ps)+'|'+str(seed)+'|'+rat(left)+'\n').encode())
++        nonzero[typ]+=left!=0
++    for typ in ('self','repeat','path','common','corner'):
++        check('nonzero-coordinate-controls-'+typ,nonzero[typ]>0,nonzero[typ])
++    for i,(p,q) in enumerate(pairs):
++      U=assignment((p,p,q),i+5);e=next(iter(pedges(p)&pedges(q)))
++      actual=half_projection(lambda V:(loop(p,V)**2-1)*loop(q,V),U,e)
++      returned=F(4,3)*loop(p,U)*pzero_pair(p,q,U)-F(1,3)*loop(q,U)
++      check('repeated-harmonic-'+str(i),actual==returned)
++    for i,ps in enumerate(triples['common']):
++      U=assignment(ps,i+3);e=next(iter(set.intersection(*(set(pedges(p)) for p in ps))))
++      actual=half_projection(lambda V:math.prod(loop(p,V) for p in ps),U,e)
++      check('three-fundamental-harmonic-'+str(i),actual==projected3(ps,U)[0][2])
++    # Disconnected triples include repeated and fully distinct original labels.
++    p=incident(anchor)[0];remote=tuple(x+12 for x in p[:3])+p[3:]
++    for ps in ((p,p,remote),(p,remote,tuple(x+24 for x in p[:3])+p[3:])):
++      check('disconnected-source-'+str(len(set(ps))),source_rhs(ps,assignment(ps,2))==0)
++    # False formulas are evaluated on actual original-link assignments.
++    self_motif=motifs[0]
++    for seed in range(20):
++      U=assignment(self_motif,seed);w=loop(self_motif[0],U)
++      if w**3-2*w:
++       bad=-F(1,27)*w
++       reject('omit-cubic-character-on-original-links',bad==source_rhs(self_motif,U));break
++    else:raise CheckFailure('missing-nonzero-self-mutation')
++    p,q=pairs[0]
++    for seed in range(20):
++      U=assignment((p,p,q),seed);a=loop(p,U);b=loop(q,U)
++      if b:
++       wrong_h=F(4,3)*a*pzero_pair(p,q,U)
++       whole=(a*a-1)*b
++       bad=-F(11,468)*wrong_h+F(11,936)*(whole-wrong_h)
++       reject('omit-repeated-section-component',bad==source_rhs((p,p,q),U));break
++    else:raise CheckFailure('missing-nonzero-repeated-mutation')
++    for ps in triples['common']:
++      U=assignment(ps,3);terms=projected3(ps,U);h=terms[0][2]
++      if h:
++       whole=h+terms[1][2];bad=-F(1,117)*(F(3,2)*h)+F(1,117)*(whole-F(3,2)*h)
++       reject('common-spin-multiplicity-erased',bad==source_rhs(ps,U));break
++    else:raise CheckFailure('missing-common-mutation')
++    for ps in triples['corner']:
++      U=assignment(ps,7);terms=projected3(ps,U)
++      if terms[0][2]:
++       bad=sum(c*a*v for c,a,v in terms)-terms[0][0]*terms[0][1]*terms[0][2]/2
++       reject('extra-corner-half-factor',bad==source_rhs(ps,U));break
++    else:raise CheckFailure('missing-corner-mutation')
++    return {'anchored_multisets':len(motifs),'assignments_per_multiset':2,
++            'nonzero_instances':dict(nonzero),'coordinate_transcript_sha256':transcript.hexdigest()}
++
++def sphere_and_projectors():
++    # The 24-cell integrates every polynomial of degree <=5 on original S^3.
++    for deg in range(6):
++     for ex in product(range(deg+1),repeat=4):
++      if sum(ex)!=deg:continue
++      val=sum(math.prod(q[j]**ex[j] for j in range(4)) for q in CELL)/24
++      if any(x%2 for x in ex):expected=F(0)
++      else:
++       den=math.prod(4+2*j for j in range(deg//2))
++       num=math.prod(math.prod(range(1,e,2)) for e in ex)
++       expected=F(num,den)
++      check('sphere-moment-'+''.join(map(str,ex)),val==expected)
++    for i,q in enumerate(POOL):check('unit-quaternion-'+str(i),mul(q,conj(q))==ONE)
++    P=[singlet(0,1),singlet(0,2),singlet(1,2)];total=sc(F(2,3),ma(ma(P[0],P[1]),P[2]));I=eye(8)
++    for i,A in enumerate(P):
++      check('pair-projector-idempotent-'+str(i),mm(A,A)==A)
++      check('pair-projector-symmetric-'+str(i),trans(A)==A)
++    check('total-half-projector',mm(total,total)==total)
++    check('total-half-rank',sum(total[i][i] for i in range(8))==4)
++    check('three-singlets-sum',ma(ma(P[0],P[1]),P[2])==sc(F(3,2),total))
++    reject('pair-singlets-commute',mm(P[0],P[1])==mm(P[1],P[0]))
++    reject('omit-three-halves',ma(ma(P[0],P[1]),P[2])==total)
++    # Exact source factors after the product rule; checks each target channel.
++    second={0:(F(9,2),F(1,27)),1:(F(13,2),-F(1,117))}
++    for s,t in product((0,1),repeat=2):
++      c=F(6+2*(s+t));a=sum(coef*(3+ci-c)/(3*c) for ci,coef in (second[s],second[t]))
++      target={0:F(1,162),1:-F(11,8424),2:F(1,3510)}[s+t]
++      check(f'path-recurrence-{s}{t}',a==target)
++    for n in range(4):
++      c=F(9,2)+2*n
++      a=((3-n)*second[0][1]*(3+second[0][0]-c)+n*second[1][1]*(3+second[1][0]-c))/(3*c)
++      check('corner-recurrence-'+str(n),a==[F(2,81),F(34,13689),-F(38,17901),F(2,2457)][n])
++    for j,c in ((F(1,2),F(15,2)),(F(3,2),F(21,2))):
++      n0=F(3,2) if j==F(1,2) else F(0);n1=3-n0
++      a=(n0*second[0][1]*(3+second[0][0]-c)+n1*second[1][1]*(3+second[1][0]-c))/(3*c)
++      check('common-recurrence-'+str(j),a==(-F(2,1755) if j==F(1,2) else F(2,2457)))
++
++A3=F(944984,351);B22=F(799258,39)
++def ell(x):return F(128,3)*x+F(3132,13)*x*x
++def delta(x):return A3*x**3+B22*x**4
++def disc(x):return (1-ell(x))**2-F(8,3)*delta(x)
++def discpoly(x):return (46457856*x**4+183150656*x**3+18324072*x*x-1168128*x+13689)/13689
++def prime(x):return (4*46457856*x**3+3*183150656*x*x+2*18324072*x-1168128)/13689
++
++def budget_checks():
++    selfcost=F(3*8,81)+F(15*64,810)
++    repeated=F(11,468)*216
++    path=(3*512+8*128+8*128+20*32)/F(1053)
++    common=F(512,117);corner=F(19*512+98*8,1053)
++    check('self-original-norm',selfcost==F(40,27))
++    check('repeated-original-norm',repeated==F(66,13))
++    check('path-original-norm',path==F(1408,351))
++    check('corner-original-norm',corner==F(3504,351))
++    check('complete-cubic-norm',4*selfcost+84*repeated+460*path+40*common+24*corner==A3,A3)
++    check('cubic-improvement',A3<F(30208,3))
++    m1=F(64,3);t1=F(16,3)
++    m2=6+42*(F(16,9)+F(4*48,117))
++    t2=F(3,2)+6*F(64,117)+36*F(1,2)*(F(16,27)+F(48,117))
++    check('second-total-spin-budget',m2==F(5834,39),m2)
++    check('second-point-spin-budget',t2==F(137,6),t2)
++    check('linear-first-budget',3*(m1/6+F(2,3)*t1)==F(64,3))
++    check('linear-second-budget',3*(m2/6+F(2,3)*t2)==F(1566,13))
++    check('quartic-full-source-budget',6*m2*t2==B22,B22)
++    check('quartic-improvement',B22<F(2,3)*236**2)
++    for k in range(30):
++      x=F(k,1000);check('quartic-expanded-'+str(k),disc(x)==discpoly(x))
++    # Rigorous first positive root: D''>0 on x>=0 and D'(0.0171)<0.
++    high=F(171,10000);low=F(17,1000)
++    check('quartic-left-root-sign',disc(low)>0)
++    check('quartic-right-root-sign',disc(high)<0)
++    check('quartic-derivative-negative-to-right',prime(high)<0)
++    check('neumann-bound-before-root',ell(high)<1)
++    for _ in range(150):
++      mid=(low+high)/2
++      if disc(mid)>0:low=mid
++      else:high=mid
++    a0=F(170787544707772675,10**19);a1=F(170787544707772677,10**19)
++    check('root-decimal-bracket',a0<low<high<a1)
++    g0=F(3825973052393385,10**15);g1=F(3825973052393386,10**15)
++    check('coupling-threshold-bracket',4*high*g0*g0<1<4*low*g1*g1)
++    d0=F(3,2)+F(1136,13)*low*low;d1=F(3,2)+F(1136,13)*high*high
++    check('closed-endpoint-gap',d0>F(61,40))
++    # Compare cubic-only result, before using the actual linearized inverse.
++    cubic=lambda x:1-F(256,3)*x+F(10720,9)*x*x+F(20714816,1053)*x**3
++    check('cubic-only-polynomial',cubic(F(1,64))==F(140213,4313088))
++    reject('neumann-alone-closes-residual',disc(F(1,50))>=0)
++    reject('erase-quartic-residual',B22==0)
++    reject('frechet-without-two',F(1566,13)==F(3132,13))
++    benchmark=[]
++    for x in (F(1,64),F(1,60),F(1,10**8)):
++      sl,sh=sqrt_box(disc(x));wl=F(3,4)*(1-ell(x)-sh);wh=F(3,4)*(1-ell(x)-sl)
++      dl=F(3,2)*(1+sl)+F(1136,13)*x*x;dh=F(3,2)*(1+sh)+F(1136,13)*x*x
++      check('positive-disc-'+str(x),disc(x)>0)
++      check('source-radius-equation-'+str(x),
++            (1-ell(x))*wl-F(2,3)*wl*wl<=delta(x)<=
++            (1-ell(x))*wh-F(2,3)*wh*wh)
++      check('drift-refined-return-'+str(x),
++            3*(1-4*(t1*x+t2*x*x+wh/6))==dl)
++      if x==F(1,64):
++        check('g-square-four-gap',dl>F(18385,10000))
++        check('linear-error-return',wh-delta(x)/(1-ell(x))<F(5432,10**6))
++      if x==F(1,60):check('energy-cauchy-circle',32*x+236*x*x+wh<F(7,10))
++      benchmark.append({'xi':str(x),'D':str(disc(x)),
++                        'linear_inverse_bound':str(1/(1-ell(x))),
++                        'linear_response_bound':str(delta(x)/(1-ell(x))),
++                        'correction_norm_interval':[str(wl),str(wh)],
++                        'physical_gap_over_kappa_interval':[str(dl),str(dh)]})
++    for N in range(1,50):
++      b=F(math.comb(2*N,N),4**N);bn=F(math.comb(2*N+2,N+1),4**(N+1))
++      check('catalan-tail-'+str(N),F(math.comb(2*N,N),N+1)/4**N==2*(b-bn))
++      check('catalan-tail-bound-'+str(N),b*b<=F(1,N+1))
++    return {'cubic_bound':str(A3),'old_cubic_bound':str(F(30208,3)),
++            'quartic_residual_bound':str(B22),'root_bracket':[str(a0),str(a1)],
++            'g_squared_threshold_bracket':[str(g0),str(g1)],
++            'endpoint_gap_coefficient_bracket':[str(d0),str(d1)],'benchmarks':benchmark}
++
++def energy_checks():
++    check('repeated-low-channel-cancellation',F(1,72)-F(1,72)==0)
++    check('self-fourth-scalar',2*(-F(1,81))+F(1,648)==-F(5,216))
++    adj=4*(F(1,4)/F(9,2)+F(3,4)/F(13,2))
++    check('adjacent-Rayleigh-moment',adj==F(80,117))
++    check('adjacent-excess-moment',adj-F(2,3)==F(2,117))
++    check('adjacent-v2-energy',F(9,2)*F(1,27)**2/F(4)+F(13,2)*F(1,117)**2*F(3,4)==F(2,1053))
++    for M,J in ((1,0),(2,1),(240,1128),(882,3816)):
++      e4=F(M*M,27)-F(1,9)*(F(M,8)+F(2,3)*F(M*(M-1),2)+F(2*J,117))
++      check(f'fourth-energy-independent-{M}-{J}',e4==F(5*M,216)-F(2*J,1053))
++    check('fourth-energy-cubic-per-face',F(5,216)-F(12,1053)==F(11,936))
++    check('fourth-energy-planar-per-face',F(5,216)-F(4,1053)==F(163,8424))
++    # Independent formal eigenvector recurrence for ONE original plaquette.
++    # Multiplication W chi_j=chi_(j-1/2)+chi_(j+1/2), K chi_j=4j(j+1).
++    order=6;u=[[F(0)]*(order+1) for _ in range(order+1)];u[0][0]=1;E=[F(0)]*(order+1)
++    for n in range(1,order+1):
++      E[n]=-u[n-1][1]
++      for k in range(1,order+1):
++        neigh=(u[n-1][k-1] if k else 0)+(u[n-1][k+1] if k<order else 0)
++        rhs=neigh+sum(E[j]*u[n-j][k] for j in range(1,n+1))
++        u[n][k]=rhs/F(k*(k+2))
++    check('single-face-second-independent',E[2]==-F(1,3))
++    check('single-face-fourth-independent',E[4]==F(5,216))
++    check('single-face-evenness',all(E[n]==0 for n in (1,3,5)))
++    # Product-rule projection of B(v2_p,v2_p), with all nonconstant channels.
++    # chi_1^2=chi_0+chi_1+chi_2, original K=0,8,24.
++    check('self-quartic-spin-one',(16-8)/F(2*8*72**2)==F(1,10368))
++    check('self-quartic-spin-two',(16-24)/F(2*24*72**2)==-F(1,31104))
++    check('self-quartic-retained-scalar',F(8,72**2)==F(1,648))
++    reject('drop-fourth-ground-sign',-F(5,216)==E[4])
++    reject('adjacent-pairs-are-independent',adj==F(2,3))
++    reject('erase-fourth-energy-scalar',F(1,648)==0)
++    reject('erase-cubic-self-character',F(1,810)==0)
++    reject('erase-corner-n2-channel',-F(38,17901)==0)
++    reject('erase-physical-time-factor',F(2*16,3)==F(16,3))
++    # Exact planar parameter dictionaries; squared couplings avoid irrational arithmetic.
++    # Hui g_H=2g gives g_H^2/(2a)=kappa and 4/g_H^4=xi.
++    for g2,a in ((F(4),F(3)),(F(17,4),F(1,7))):
++      k=2*g2/a;xi=1/(4*g2*g2);h2=4*g2
++      check('hui-kinetic-'+str(g2),h2/(2*a)==k)
++      check('hui-magnetic-'+str(g2),F(4)/(h2*h2)==xi)
++    return {'single_plaquette_coefficients':[str(x) for x in E],
++            'cubic_infinite_volume_E4_per_face':'11/936','planar_E4_per_face':'163/8424'}
++
++def source_hashes():
++    names=['geometry.py','coordinate_audit.py','verify.py','CUBIC_SOURCE.md','LINEARIZED_RETURN.md','state.json','SOURCE_INTAKE.json','README.md']
++    out={}
++    for name in names:
++      p=ROOT/name
++      require(p.is_file(),'missing-source:'+name)
++      out[name]=hashlib.sha256(p.read_bytes()).hexdigest()
++    return out
++
++def run():
++    CHECKS.clear();NEGATIVE.clear()
++    a,p,t,finite=geometry_checks();coords=coordinate_checks(a,p,t)
++    sphere_and_projectors();budgets=budget_checks();energy=energy_checks()
++    return {'schema':'ym-cubic-linearized-exact-v1','passed':True,
++            'scope':{'finite_original_coordinate_checks':True,'analytic_proof_formalized':False,
++                     'vacuum_sampling':False,'spin_cutoff_of_full_operator':False,'continuum_gap_proved':False},
++            'counts':{'exact_checks':len(CHECKS),'negative_controls':len(NEGATIVE)},
++            'coordinate_certificate':coords,'budgets':budgets,'finite_boxes':finite,
++            'energy':energy,'checks':CHECKS,'negative_controls':NEGATIVE,'source_sha256':source_hashes()}
++
++def strict_json(text):
++    def pairs(items):
++        out={}
++        for key,value in items:
++            require(key not in out,'duplicate-json-key:'+key)
++            out[key]=value
++        return out
++    return json.loads(text,object_pairs_hook=pairs)
++
++def main():
++    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path);p.add_argument('--verify-receipt',type=Path)
++    args=p.parse_args()
++    try:
++      saved=None
++      if args.verify_receipt:
++        saved=args.verify_receipt.read_text();expected=strict_json(saved)
++        require(expected.get('schema')=='ym-cubic-linearized-exact-v1','receipt-schema')
++        actual_hashes=source_hashes()
++        require(set(expected.get('source_sha256',{}))==set(actual_hashes),'source-manifest-membership')
++        for name,h in actual_hashes.items():
++          require(expected['source_sha256'][name]==h,'source-identity-mismatch:'+name)
++      result=run();encoded=json.dumps(result,sort_keys=True,indent=2)+'\n'
++      if args.verify_receipt:
++        require(saved==encoded,'receipt-mismatch')
++      if args.output:args.output.write_text(encoded)
++      else:sys.stdout.write(encoded)
++    except (CheckFailure,OSError,ValueError) as exc:
++      sys.stderr.write('FAIL: '+str(exc)+'\n');return 1
++    return 0
++if __name__=='__main__':raise SystemExit(main())
+diff --git a/yang-mills/research-control/CURRENT.md b/yang-mills/research-control/CURRENT.md
+index 90f605e0f9de505584ebf84f2593d972422319e8..ca11d900919c17f9a79508d1379cfec2e3d6d866 100644
+--- a/yang-mills/research-control/CURRENT.md
++++ b/yang-mills/research-control/CURRENT.md
+@@ -1,8 +1,26 @@
+-# Current additive checkpoint
++# Current mathematical checkpoint: connected cubic source and linearized return
+ 
+-The continuation is [Coupled Hamiltonians and two-sided response enclosures](../continuations/20260914-coupled-response/README.md).
+-Its [state](../continuations/20260914-coupled-response/state.json) includes refreshed peer heads, the preserved Hamiltonian/self-adjointness exchange direction and the next actual matrix inputs N0,N1,N2.
++Read [the complete cubic calculation](../continuations/20260916-cubic-linearized/CUBIC_SOURCE.md)
++and [the complete linearized return](../continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md).
++[Verification setup](../continuations/20260916-cubic-linearized/VERIFY_FIRST.md) recreates the
++full observed record with its exact hash; the source, state and replay are in that directory.
+ 
+-The parent research-control files and receipt remain unchanged historical records. Read them for the original workflow; then read the current continuation and run its checker as well as the parent checker. The continuation uses the same physical operators, fine vacuum and raw Grams. Its finite certificates have no claimed evaluation of the actual vacuum moments or continuum gap.
++The actual cubic source is completely evaluated on its original five connected
++families. Its coefficient bound is 944984/351. The full residual at
++xi*v1+xi^2*v2 retains xi^3*v3 and xi^4*B(v2,v2), its original scalar, the actual
++linearized inverse and the complete nonlinear endpoint tail. The physical gap
++is bounded below uniformly in L for g^2>=1/(2sqrt(alpha)), where alpha is the
++specified first positive quartic root (threshold g^2 approximately3.825973052393386).
++The fourth original vacuum-energy coefficient and an all-order analytic remainder
++are also supplied. This does not establish a nontrivial four-dimensional continuum
++field or a finite positive continuum mass.
+ 
+-The next selected calculation encloses the original loop/energy score moments and returns the response interval to the restored state metric, retaining the coarse complement and escaping-state quotient. Other justified mathematical directions remain available; record their original quantity and exact maps before changing route. No automatic execution or merge is active.
++The next actual quantity is v4=2B(v1,v3)+B(v2,v2) on original connected four-face
++supports and the signed same-support action of the linearized operator. The cubic
++table, full quartic residual formula and evaluated first/second spin budgets are
++completed inputs, not calculations to repeat. Preserve original scalar energy,
++physical units, gauge image, support labels, original metrics and endpoint defects.
++
++All previous source files and receipts remain unchanged. The earlier coupled-response
++[checkpoint](../continuations/20260914-coupled-response/README.md) remains an ancestor.
++No automatic research, paid model run or merge is active.

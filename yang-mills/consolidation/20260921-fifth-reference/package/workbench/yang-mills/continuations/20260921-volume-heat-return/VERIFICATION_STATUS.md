@@ -1,0 +1,11 @@
+# Observed execution and proof scope
+
+The final independent auditor passed 2,425 uniquely named exact checks and16 false-formula controls. It imports no producer code. It independently enumerates the199 original anchored configurations and verifies559 marked contributions, every original coordinate inverse, all declared rational moment bounds, raw-Gram complementary identities and the sharpened returned constants. The separate route check evaluates52 exact identities/endpoints.
+
+`execution/current_full/execution.json` records34 observed executions: original producer, Haar refinement, route check and independent auditor in both modes; those same eight executions in a fresh copied-source tree; sixteen named CLI corruption rejections; and both restored-source auditor executions. Ordinary/optimized mathematical receipts match. Several corruption tests deliberately update the claimed file hash after altering mathematical data, and still fail at the specified original-moment, missing-support and complementary-loss checks.
+
+`execution/predecessor_full/execution.json` records all fourteen unchanged parent executions: full coefficient production, full product-of-spheres polynomial audit, complete original matrix assembly, independent recurrence/cube checks, bounds, band and receipt, each in ordinary and optimized Python. Every inherited generated file remained byte-for-byte unchanged. This is the complete available heat predecessor, not a claimed replay of the absent sixth-source catalogue.
+
+The two new analytic proofs explicitly rederive the conservative local source, closed generator, actual mean, full row-sum estimate, spatial limit, and complementary-space return. The auxiliary finite matrix fixtures exercise their stated algebra. Neither checker formalizes the infinite-dimensional analytic proof or substitutes for an independent mathematical review. The older stronger uniform-gap claims retain their earlier audit qualification. The new result has its own stated conservative domain and is not a continuum mass-gap proof.
+
+The cumulative archive manifest seals all source, metadata and observed logs. A separate fresh-archive validation identifies the final ZIP hash and actual extraction checks. No paid model run, scheduled task, remote commit or merge was performed.

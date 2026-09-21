@@ -1,0 +1,332 @@
+{
+  "schema": "ym-heat-fresh-corruption-v1",
+  "records": [
+    {
+      "name": "fresh-record-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 5.130929079999987,
+      "log_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+      "passed": true
+    },
+    {
+      "name": "fresh-record-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 6.55751862399984,
+      "log_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+      "passed": true
+    },
+    {
+      "name": "proof-corruption-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "source-identity:PHYSICAL_HEAT_COEFFICIENTS.md",
+      "seconds": 0.5845869899999343,
+      "log_sha256": "e58974a9a20b8bca755ba755cd310831458708bf1b3f27e5b2707435594c99a9",
+      "passed": true
+    },
+    {
+      "name": "coefficient-corruption-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "source-identity:generated/heat_coefficients.json",
+      "seconds": 0.5658081930000662,
+      "log_sha256": "fdb76116720a8d4391f14c44e25ca2504ce39108b0df8f6da27d00700357f190",
+      "passed": true
+    },
+    {
+      "name": "receipt-corruption-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad_receipt.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "receipt-mismatch",
+      "seconds": 5.170206430000235,
+      "log_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "passed": true
+    },
+    {
+      "name": "duplicate-key-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad_receipt.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "duplicate-json-key:schema",
+      "seconds": 0.5916359449997799,
+      "log_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "passed": true
+    },
+    {
+      "name": "missing-original-dependency-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "missing-source:../20260917-quartic-cube/energy.py",
+      "seconds": 0.5783976840002651,
+      "log_sha256": "63c1faae8a5abe2d3f03de21d29834fabacefa5640278de4e5178da4e6fb60cd",
+      "passed": true
+    },
+    {
+      "name": "schema-corruption-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad_receipt.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "receipt-schema",
+      "seconds": 0.6361007270002119,
+      "log_sha256": "e9ff29f7a934237b3ea4f33cecf064bbca5a044865891f650ec03628f329ca29",
+      "passed": true
+    },
+    {
+      "name": "restored-record-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 5.248426521000056,
+      "log_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+      "passed": true
+    },
+    {
+      "name": "proof-corruption-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "source-identity:PHYSICAL_HEAT_COEFFICIENTS.md",
+      "seconds": 1.853748011999869,
+      "log_sha256": "e58974a9a20b8bca755ba755cd310831458708bf1b3f27e5b2707435594c99a9",
+      "passed": true
+    },
+    {
+      "name": "coefficient-corruption-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "source-identity:generated/heat_coefficients.json",
+      "seconds": 1.8181907789999059,
+      "log_sha256": "fdb76116720a8d4391f14c44e25ca2504ce39108b0df8f6da27d00700357f190",
+      "passed": true
+    },
+    {
+      "name": "receipt-corruption-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad_receipt.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "receipt-mismatch",
+      "seconds": 6.353087670999685,
+      "log_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "passed": true
+    },
+    {
+      "name": "duplicate-key-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad_receipt.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "duplicate-json-key:schema",
+      "seconds": 1.9314181270001427,
+      "log_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "passed": true
+    },
+    {
+      "name": "missing-original-dependency-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "missing-source:../20260917-quartic-cube/energy.py",
+      "seconds": 1.8416221080001378,
+      "log_sha256": "63c1faae8a5abe2d3f03de21d29834fabacefa5640278de4e5178da4e6fb60cd",
+      "passed": true
+    },
+    {
+      "name": "schema-corruption-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad_receipt.json"
+      ],
+      "returncode": 1,
+      "expected_returncode": 1,
+      "intended_message": "receipt-schema",
+      "seconds": 1.8236542479999116,
+      "log_sha256": "e9ff29f7a934237b3ea4f33cecf064bbca5a044865891f650ec03628f329ca29",
+      "passed": true
+    },
+    {
+      "name": "restored-record-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 6.5997444560002805,
+      "log_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+      "passed": true
+    },
+    {
+      "name": "fresh-full-catalogue",
+      "command": [
+        "python",
+        "-B",
+        "produce_heat.py",
+        "--verify-existing",
+        "--workers",
+        "3"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 64.64632011999993,
+      "log_sha256": "ea6c7480838b9a995f42f63f24c2022b1e27ff70b9b59c05f3685c5c80c1029b",
+      "passed": true
+    },
+    {
+      "name": "fresh-independent-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "independent_heat.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 1.0766159680001692,
+      "log_sha256": "86a4e3d6f4826bd36b3aca3712f4f506d04e697c13d083e535b98c5db15686de",
+      "passed": true
+    },
+    {
+      "name": "fresh-independent-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "independent_heat.py"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 2.3734095640002124,
+      "log_sha256": "86a4e3d6f4826bd36b3aca3712f4f506d04e697c13d083e535b98c5db15686de",
+      "passed": true
+    },
+    {
+      "name": "final-restored-record",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "intended_message": null,
+      "seconds": 6.764366328000051,
+      "log_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+      "passed": true
+    }
+  ]
+}

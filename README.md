@@ -1,12 +1,14 @@
 # Yang–Mills, S6 and Navier–Stokes research
 
-Readable mathematical papers, their sources, and reproducibility records. Choose a topic below. Each linked Zenodo edition preserves its stated date. The Yang–Mills archive includes the 21 September heat and volume continuation; other later GitHub continuations are identified separately from their historical archives.
+Readable mathematical papers, their sources, and reproducibility records. Choose a topic below. Each linked Zenodo edition preserves its stated date. The Yang–Mills archive includes the 21 September fifth-reference, heat and volume continuations; other later GitHub continuations are identified separately from their historical archives.
 
 [What we tried and what the programmes contain](WORKBENCH.md) · [Contribute or publish a scoped check](CONTRIBUTING.md) · [Machine-readable catalogue](workbench.json) · [PolyClank design](docs/polyclank/)
 
 ## Yang–Mills: vacuum, energy and physical excitations
 
 **[Full Yang–Mills proofs and editable LaTeX](yang-mills/README.md#full-proofs-and-editable-latex)** are available directly on GitHub, alongside their PDFs and source packages.
+
+The **[fifth-reference continuation](yang-mills/consolidation/20260921-fifth-reference/)** evaluates the signed fifth-source catalogue and constructs its complete infinite correction, including the endpoint. Its sufficient source threshold is `g² ≥ 1/(2√α₅) ≈ 3.6835519839857273`; the complete physical gap satisfies the explicit bound `Δ_L ≥ κ d₅(ξ)` in the proof. The resulting heat estimate has radius `1/55`, and full complementary relaxation changes energy and state Gram by less than `1/2000` for `g² ≥ 13` (less than `1/25000` for `g² ≥ 16`). Both full proofs and the 2,768-file cumulative package are retained, with fresh ordinary/optimized finite-check receipts distinguished from the supplied analytical arguments and producer records.
 
 The **[21 September heat and volume edition](yang-mills/consolidation/20260921/)** contains the complete fourth-order heat-correlation and first-band calculations, followed by box-independent heat estimates and a fixed-spacing spatial-volume construction. Its original-metric calculation bounds the coupling of the plaquette family to the entire complementary physical space: at `g² ≥ 16`, full complementary relaxation lowers the family energy by less than one part in a thousand. Five complete proof manuscripts, both cumulative archives, all coefficient data and fresh finite-check receipts are available. The written analytic arguments and the executed finite checks have separate, explicit scopes; no four-dimensional continuum mass gap is claimed.
 
@@ -20,7 +22,7 @@ The [14–16 September reader](yang-mills/consolidation/20260916/) develops the 
 
 | Topic | Start reading | Sources and scope | Archived edition |
 | --- | --- | --- | --- |
-| Yang–Mills | [Heat, volume and full complementary space](yang-mills/consolidation/20260921/); [vacuum and energy reader](yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf) | [Reading guide, full proofs and calculations](yang-mills/) | [21 September heat and volume edition](https://doi.org/10.5281/zenodo.22803564) |
+| Yang–Mills | [Fifth-reference reader — 24 pages](yang-mills/consolidation/20260921-fifth-reference/reader/yang_mills_fifth_reference_20260921.pdf); [heat, volume and full complementary space](yang-mills/consolidation/20260921/) | [Reading guide, full proofs and calculations](yang-mills/) | [21 September fifth-reference edition](https://doi.org/10.5281/zenodo.22883643) |
 | S6 topology and related constructions | [Key advances — 5 pages](s6/26_s6_key_advances_frozen_2026-09-06.pdf) | [Full frozen project, standalone papers and calculations](s6/) | [10.5281/zenodo.22678442](https://doi.org/10.5281/zenodo.22678442) |
 | Navier–Stokes | [Corrected reconstruction — 208 pages](navier_stokes_workbench_208p.pdf); [vacuum-hydrodynamics continuation](navier-stokes/continuations/20260919-vacuum-hydrodynamics/) | [Standalone LaTeX, new manuscripts, structured proofs and checks](navier-stokes/) | [9 September archive](https://doi.org/10.5281/zenodo.22678406) |
 
@@ -28,7 +30,7 @@ The Yang–Mills foundation companions cover interacting tensor-band calculation
 
 The S6 package preserves the complete public project frozen on **6 September 2026**, including the original transcription, historical annotations, later calculations, standalone drafts and mathematical provenance. Its originating construction was circulated by **Levent Alpöge and produced with Claude**. Alpöge's separate Jacobian counterexample also supplies the explicit polynomial used in the Yang–Mills material-tensor branch. [Original sources, distinct authorship and exact points of use](ATTRIBUTION.md) identify both contributions and correct omissions in some historical notes.
 
-The corrected Navier–Stokes package and Yang–Mills foundation packet are **9 September 2026** editions; dated GitHub continuations now include the **21 September 2026** Yang–Mills heat and volume edition. Dates and provenance matter: older reviews are not silently relabelled as present conclusions.
+The corrected Navier–Stokes package and Yang–Mills foundation packet are **9 September 2026** editions; dated GitHub continuations now include the **21 September 2026** Yang–Mills fifth-reference, heat and volume editions. Dates and provenance matter: older reviews are not silently relabelled as present conclusions.
 
 These are AI-assisted research and reconstruction records. The full proofs and qualifications are in the papers. They do not constitute a claimed solution of the interacting four-dimensional Yang–Mills mass-gap problem or independent certification of every global step in the supplied S6 or Navier–Stokes constructions.
 

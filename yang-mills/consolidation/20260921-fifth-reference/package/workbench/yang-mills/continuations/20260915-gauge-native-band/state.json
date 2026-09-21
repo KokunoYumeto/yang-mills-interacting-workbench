@@ -1,0 +1,123 @@
+{
+  "schema": "ym-gauge-native-band-state-v1",
+  "target": "four-dimensional continuum Yang-Mills mass gap",
+  "date": "2026-09-15",
+  "remote_base": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+  "delivered_parent": "20260915-uniform-gap-zero-shift",
+  "finite_domain": "0<xi<=3/[4(32+sqrt(354))]; g^2>=sqrt((32+sqrt(354))/3)",
+  "spatial_domain": "0<xi<=3/[4(32+sqrt(354))]",
+  "isolated_band_domain": "0<xi<3/400",
+  "analytic_remainder_domain": "|xi|<1/320",
+  "physical_parameters": {
+    "kappa": "2g^2/a",
+    "xi": "1/(4g^4)",
+    "vacuum_scalar": "c_L=-(1/2)log integral exp(2v_L) dU",
+    "ground_energy": "2 kappa xi |P_L| - kappa integral_H sum |Xv_L|^2"
+  },
+  "completed_results": [
+    {
+      "id": "G6",
+      "quantity": "c(j)>=6j_e on every original gauge-invariant coefficient",
+      "proof": "RESEARCH_NOTE.md"
+    },
+    {
+      "id": "G13",
+      "quantity": "original nonlinear source coefficient 2/3",
+      "proof": "RESEARCH_NOTE.md"
+    },
+    {
+      "id": "G19",
+      "quantity": "closed critical source endpoint with exact Catalan tail",
+      "proof": "RESEARCH_NOTE.md"
+    },
+    {
+      "id": "G26",
+      "quantity": "full physical gap at least (3kappa/2)(1+sqrt(1-256xi/3))",
+      "proof": "RESEARCH_NOTE.md"
+    },
+    {
+      "id": "B10",
+      "quantity": "full plaquette band with uniform analytic remainder",
+      "proof": "BAND_AND_CERTIFICATE.md"
+    },
+    {
+      "id": "B15",
+      "quantity": "exact complete second-order band matrix, including boundary degrees",
+      "proof": "BAND_AND_CERTIFICATE.md"
+    },
+    {
+      "id": "B23",
+      "quantity": "full original L=2 first-excitation interval at xi=1e-10",
+      "proof": "BAND_AND_CERTIFICATE.md"
+    },
+    {
+      "id": "B27",
+      "quantity": "all spatial momenta of the original second-order band coefficient",
+      "proof": "BAND_AND_CERTIFICATE.md"
+    },
+    {
+      "id": "S20",
+      "quantity": "unique spatial vacuum/dynamics and stronger physical gap on enlarged domain",
+      "proof": "SPATIAL_RETURN.md"
+    },
+    {
+      "id": "S28",
+      "quantity": "volume-independent supremum-norm local-observable mixing on the complete closed domain",
+      "proof": "SPATIAL_RETURN.md"
+    },
+    {
+      "id": "S33",
+      "quantity": "uniform-in-time original coupling modulus for actual vacuum dynamics and expectations",
+      "proof": "SPATIAL_RETURN.md"
+    },
+    {
+      "id": "S35",
+      "quantity": "unique spatial vacuum and dynamics at the closed critical source endpoint",
+      "proof": "SPATIAL_RETURN.md"
+    },
+    {
+      "id": "R2",
+      "quantity": "complete actual second vacuum source with both shared-edge channels",
+      "proof": "SECOND_SOURCE.md"
+    },
+    {
+      "id": "R6",
+      "quantity": "actual second source Casimir trace-norm bound 236",
+      "proof": "SECOND_SOURCE.md"
+    },
+    {
+      "id": "R9",
+      "quantity": "explicit algebraic tail at the enlarged closed source endpoint",
+      "proof": "SECOND_SOURCE.md"
+    },
+    {
+      "id": "R10",
+      "quantity": "full physical gap beyond the first source-majorant endpoint",
+      "proof": "SECOND_SOURCE.md"
+    },
+    {
+      "id": "R14",
+      "quantity": "unique spatial vacuum and dynamics on the larger closed domain",
+      "proof": "SECOND_SOURCE.md"
+    },
+    {
+      "id": "R16",
+      "quantity": "full two-physical-coefficient dynamics modulus at the same original time",
+      "proof": "SECOND_SOURCE.md"
+    }
+  ],
+  "raw_band_metric": "R_xi^* R_xi",
+  "band_is_spin_truncation": false,
+  "continuum_gap_established": false,
+  "external_independent_analytic_review": false,
+  "new_Lean_execution": false,
+  "next_original_calculation": "The actual order-three connected vacuum-source coefficient and the full linearized remainder at xi v_[1]+xi^2 v_[2], retaining every union label; return the evaluated source through the same physical primitive, response, band metric and changing-coupling maps.",
+  "unevaluated": [
+    "nontrivial four-dimensional smooth continuum field",
+    "finite positive continuum mass along g_n approaching zero",
+    "interchange of the strong-coupling coefficient limit with the full spatial spectral limit",
+    "higher-order band coefficients at arbitrary coupling"
+  ],
+  "conditional_influence_subdomain": "0<xi<(sqrt(13)-2)/192",
+  "first_majorant_domain": "0<xi<=3/256; g^2>=8/sqrt(3)"
+}

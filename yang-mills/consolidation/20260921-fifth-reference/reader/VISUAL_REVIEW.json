@@ -1,0 +1,29 @@
+{
+  "schema": "ym-fifth-reference-reader-visual-review-v1",
+  "pdf_sha256": "606d200bf2b8e83f6831a1b3cbc6bb941f33d82f0ba60adf3b031ab2e7fba333",
+  "pdf_pages": 24,
+  "render_dpi": 90,
+  "all_pages_rendered": true,
+  "all_page_contact_sheets_inspected": ["contact-1.png", "contact-2.png"],
+  "full_size_pages_inspected": [6, 7, 10, 12, 13, 15, 19, 20, 21, 22],
+  "final_locator_revision": "Only the introduction's three section references H5, H6 and H7 became unambiguous section-symbol references. Rebuilt all pages; changed PDF pages 6 and 7 were inspected at full size. Both original proof files remain unchanged.",
+  "status": "pass",
+  "findings": {
+    "clipped_text_or_formulas": false,
+    "overlapping_table_columns": false,
+    "missing_glyphs": false,
+    "unreadable_labels": false,
+    "headers_footers_and_page_numbers": "Consistent running headers, roman contents pagination and arabic body pagination.",
+    "formula_and_table_review": "Checked orientation tensor F11, exact fifth budgets F25, full residual F27, endpoint F29, corrected table separator F38, heat bound H13, leakage prefactor H18, coefficient table, full complement H24-H29, benchmark table H5 and introduction benchmark table. Original values and labels are visible and confined to the text area.",
+    "source_prose_notation": "Literal adjoint/multiplication asterisks and coordinate underscores are preserved; source ASCII formulas remain source-faithful. Original display math is typeset as math.",
+    "source_hash_wrapping": "The long original commit hash wraps without overflow; no characters were removed."
+  },
+  "independent_introduction_review": {
+    "scope": "Read-only comparison of complete introduction with both complete source proofs; no new proof or full analytic re-audit.",
+    "resolved_clarifications": [
+      "Defined d_ph as a positive rational lower bound for d5 at the benchmark.",
+      "Qualified infinite-spatial-complement minimization with the benchmark couplings carrying positive Gram lower bounds."
+    ],
+    "remaining_actionable_discrepancies": []
+  }
+}

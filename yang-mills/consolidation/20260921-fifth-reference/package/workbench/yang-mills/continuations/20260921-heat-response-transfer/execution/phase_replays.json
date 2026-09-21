@@ -1,0 +1,63 @@
+[
+  {
+    "name": "catalogue_optimized",
+    "command": [
+      "python",
+      "-O",
+      "-B",
+      "produce_heat.py",
+      "--verify-existing",
+      "--workers",
+      "3"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 65.87975682899992,
+    "changed_existing_generated": []
+  },
+  {
+    "name": "independent_ordinary",
+    "command": [
+      "python",
+      "-B",
+      "independent_heat.py"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.0329528839999966,
+    "changed_existing_generated": []
+  },
+  {
+    "name": "independent_optimized",
+    "command": [
+      "python",
+      "-O",
+      "-B",
+      "independent_heat.py"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.414129915000103,
+    "changed_existing_generated": []
+  },
+  {
+    "name": "bounds_ordinary",
+    "command": [
+      "python",
+      "-B",
+      "certified_bounds.py"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.288646270999834,
+    "changed_existing_generated": []
+  },
+  {
+    "name": "bounds_optimized",
+    "command": [
+      "python",
+      "-O",
+      "-B",
+      "certified_bounds.py"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.6818265219999375,
+    "changed_existing_generated": []
+  }
+]

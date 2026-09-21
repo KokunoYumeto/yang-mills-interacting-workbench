@@ -1,0 +1,235 @@
+{
+  "status": "passed",
+  "arithmetic": "exact fractions, sparse polynomials, finite formal series",
+  "total_assertions": 76,
+  "checks": {
+    "unit_quaternion_fixture": 4,
+    "ordered_refinement_composition": 1,
+    "inverse_oriented_path": 1,
+    "gauge_cancellation_at_midpoint": 1,
+    "negative_control_reordered_word": 1,
+    "two_subedge_Casimir_monomial_degree_at_most_3": 35,
+    "negative_control_missing_kinetic_factor_two": 1,
+    "loop_trace_original_generator_derivative": 3,
+    "loop_trace_derivative_squares_plus_trace_square": 1,
+    "fundamental_trace_original_Casimir": 1,
+    "plaquette_positive_commutator_coefficient": 1,
+    "magnetic_trace_fourth_order_coefficient": 1,
+    "magnetic_trace_lower_orders": 1,
+    "negative_control_commutator_sign": 1,
+    "raw_Gram_retained_nonidentity_fixture": 1,
+    "raw_projection_idempotence": 1,
+    "raw_projection_self_adjoint": 1,
+    "raw_projection_range": 1,
+    "Schur_eliminated_boundary": 2,
+    "Schur_raw_derivative_Gram": 2,
+    "Schur_restored_energy": 2,
+    "Schur_full_compressed_resolvent": 2,
+    "negative_control_omitted_raw_Gram_factors": 2,
+    "complete_refinement_defect_composition": 1,
+    "complete_refinement_resolvent_defect": 1,
+    "retained_jet_product_coefficient": 7
+  },
+  "finite_matrix_fixture": {
+    "A": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "5",
+        "3",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "3",
+        "10",
+        "4",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "4",
+        "17",
+        "5",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "5",
+        "26",
+        "6",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6",
+        "37",
+        "7"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "7",
+        "49"
+      ]
+    ],
+    "R": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "3",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "4",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "5",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "6"
+      ],
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    ],
+    "G": [
+      [
+        "2",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "5",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "1",
+        "10",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "1",
+        "1",
+        "17",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "26",
+        "1"
+      ],
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "37"
+      ]
+    ]
+  },
+  "script_sha256": "b5732f1b393d3d76876ad1876cece7397a8e3c09f865e81cfdb8444737daff63",
+  "scope": "Finite algebraic sign, domain-coordinate, and raw-Gram checks; not a numerical Yang-Mills spectrum or a formal proof of the analytic limits."
+}

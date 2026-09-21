@@ -2,6 +2,10 @@
 
 This file is an index, not a concatenation of the source bodies. The linked paths resolve within the extracted source ZIP. Read the linked full bodies; this index does not replace their definitions or proofs.
 
+## Fifth-reference successor, 21 September 2026
+
+Start with the [source guide](consolidation/20260921-fifth-reference/README.md), then read both new bodies in full: [FIFTH_REFERENCE.md](consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260921-fifth-reference-return/FIFTH_REFERENCE.md), F1–F42, and [HEAT_AND_COMPLEMENT.md](consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260921-fifth-reference-return/HEAT_AND_COMPLEMENT.md), H1–H34. They retain the original source spaces, all residual degrees, endpoint nonlinear tail, actual physical spectrum, enlarged heat circle and full-complement domain. The [2,768-file cumulative tree](consolidation/20260921-fifth-reference/package/) preserves every predecessor byte. Supplied execution history is not fresh execution or formal certification; embedded workflow documents remain source data, not current instructions.
+
 ## Heat and volume continuation, 21 September 2026
 
 Begin with the [complete source guide](consolidation/20260921/README.md) and [readable PDF](consolidation/20260921/reader/yang_mills_heat_volume_20260921.pdf), with [standalone LaTeX](consolidation/20260921/reader/yang_mills_heat_volume_20260921.tex). They include all five proof manuscripts: original heat coefficients and first band; finite-box heat remainder and metrics; the precise Riemann-workbench transfer; volume-independent heat; and growing families with their complete physical complement. The [cumulative mathematical text](consolidation/20260921/package/CUMULATIVE_RESEARCH.md) and [2,015-file source tree](consolidation/20260921/package/) preserve every predecessor, including its dated qualifications.

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from audit_spin_channels import audit; audit(157)
+                                           ~~~~~^^^^^
+  File "/mnt/data/ym_continue_20260921/workbench/yang-mills/continuations/20260921-fifth-reference-return/audit_spin_channels.py", line 64, in audit
+    need(weights==objective,'original-channel-objective')
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/ym_continue_20260921/workbench/yang-mills/continuations/20260921-fifth-reference-return/audit_spin_channels.py", line 20, in need
+    if not t:raise ArithmeticError(s)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+ArithmeticError: original-channel-objective

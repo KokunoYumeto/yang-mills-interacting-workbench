@@ -1,0 +1,37 @@
+{
+  "schema": "ym-fifth-reference-reader-source-integrity-v1",
+  "integrity": "Two complete original source texts included exactly once, with UTF-8 BOM and line-ending handling only in the canonical assembly; exact original bytes retained in sources/.",
+  "sources": [
+    {
+      "appendix": "A",
+      "filename": "FIFTH_REFERENCE.md",
+      "bytes": 23367,
+      "sha256": "67e3b0220ce7173e0223b7f00fbf67ed5adef5fd0c83bf85c79015f84cb660d2",
+      "normalized_text_sha256": "67e3b0220ce7173e0223b7f00fbf67ed5adef5fd0c83bf85c79015f84cb660d2",
+      "display_math_blocks": 43,
+      "protected_prose_symbols": {
+        "*": 7,
+        "_": 103
+      },
+      "complete_source_preserved": true,
+      "formula_or_proof_edits": false
+    },
+    {
+      "appendix": "B",
+      "filename": "HEAT_AND_COMPLEMENT.md",
+      "bytes": 19505,
+      "sha256": "250e567605d2d1e508aad21c4942a7c028a5d82b468c089d4e2c9a9b6e78dd2c",
+      "normalized_text_sha256": "250e567605d2d1e508aad21c4942a7c028a5d82b468c089d4e2c9a9b6e78dd2c",
+      "display_math_blocks": 38,
+      "protected_prose_symbols": {
+        "*": 4,
+        "_": 93
+      },
+      "complete_source_preserved": true,
+      "formula_or_proof_edits": false
+    }
+  ],
+  "assembled_markdown_sha256": "e0f45e55fc8a6860d51f595fd223981bb3f7a4cb183275fcb78dd97918ea1785",
+  "render_input_sha256": "549f6d2d2b945ee0e30ee51dd9f6499a4d455416fb55548f9eec9bbd19d07016",
+  "render_protection": "Only literal asterisks and underscores outside display math are Markdown-escaped. Recovery to complete source text and equality of all display-math content are checked. The typesetting filter boxes wide formulas, uses aligned instead of split inside the box, and supplies the omitted array-header row terminator before hline in F38. Every mathematical value and source tag is retained."
+}

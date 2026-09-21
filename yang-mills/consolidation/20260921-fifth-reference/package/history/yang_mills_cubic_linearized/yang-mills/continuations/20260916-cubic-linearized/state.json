@@ -1,0 +1,51 @@
+{
+  "automatic_research_or_merge": false,
+  "check_entry": "verify.py",
+  "completed_tasks": [
+    {
+      "equations": "C14-C23",
+      "id": "connected-cubic-source",
+      "proof": "CUBIC_SOURCE.md",
+      "result": "Complete five-family original coefficient table; norm <=944984/351"
+    },
+    {
+      "equations": "L5-L28",
+      "id": "full-linearized-residual",
+      "proof": "LINEARIZED_RETURN.md",
+      "result": "Actual quartic residual, bounded Frechet inverse, complete nonlinear tail and full physical gap"
+    },
+    {
+      "equations": "C24-C25; LINEARIZED_RETURN.md L29",
+      "id": "fourth-ground-energy",
+      "proof": "CUBIC_SOURCE.md",
+      "result": "Original E4= kappa(5M/216-2J/1053), independent coefficient derivation and full analytic tail"
+    }
+  ],
+  "date": "2026-09-16",
+  "immutable_original_sources_preserved": true,
+  "new_peer_mathematical_results_imported": false,
+  "next_actual_quantity": "v4=2 B(v1,v3)+B(v2,v2) on connected four-face supports, and signed channel-resolved J2 on those same supports",
+  "not_established": [
+    "Weak-coupling continuum path beyond the certified domain",
+    "Nontrivial four-dimensional continuum field",
+    "Finite positive continuum mass",
+    "Independent analytical review",
+    "Lean formal verification",
+    "Global priority or best literature bound"
+  ],
+  "original_parameters": {
+    "J": "6(2L)(3(2L)^2-1)",
+    "M": "3(2L)^2(2L+1)",
+    "kappa": "2g^2/a",
+    "xi": "1/(4g^4)"
+  },
+  "remote_base": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+  "saved_predecessor": {
+    "archive": "yang_mills_gauge_native_continuation.zip",
+    "comparison_domain": "g^2 >= sqrt((32+sqrt(354))/3)",
+    "scope": "Saved second-source proof R1-R16, stronger than the later prose-only first-source summary",
+    "sha256": "19040fd3e72c7a3c0a7a084375b0fe3bace560791ca7054af96c2f629182b323"
+  },
+  "schema": "ym-cubic-linearized-state-v1",
+  "target": "Original interacting four-dimensional continuum Yang-Mills mass gap; current operator SU(2)"
+}

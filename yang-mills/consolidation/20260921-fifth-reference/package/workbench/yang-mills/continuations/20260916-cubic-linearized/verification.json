@@ -1,0 +1,9197 @@
+{
+  "budgets": {
+    "benchmarks": [
+      {
+        "D": "10028381/224280576",
+        "correction_norm_interval": [
+          "12296394389995222800096998309/260000000000000000000000000000",
+          "24592788779990445600193996657/520000000000000000000000000000"
+        ],
+        "linear_inverse_bound": "39936/10963",
+        "linear_response_bound": "33836149/808280064",
+        "physical_gap_over_kappa_interval": [
+          "478014633095009554399806003343/260000000000000000000000000000",
+          "239007316547504777199903001691/130000000000000000000000000000"
+        ],
+        "xi": "1/64"
+      },
+      {
+        "D": "5458199/462003750",
+        "correction_norm_interval": [
+          "132529085552232182270131899431/1560000000000000000000000000000",
+          "33132271388058045567532974887/390000000000000000000000000000"
+        ],
+        "linear_inverse_bound": "11700/2597",
+        "linear_response_bound": "10648727/168285600",
+        "physical_gap_over_kappa_interval": [
+          "987078185835825863297401075339/585000000000000000000000000000",
+          "3948312743343303453189604301707/2340000000000000000000000000000"
+        ],
+        "xi": "1/60"
+      },
+      {
+        "D": "1336815265500178946033510806295369/1336816406250000000000000000000000",
+        "correction_norm_interval": [
+          "1399976971/520000000000000000000000000000",
+          "139997701/52000000000000000000000000000"
+        ],
+        "linear_inverse_bound": "97500000000000000/97499958399997651",
+        "linear_response_bound": "47249203596661/17549992511999577180000000000000000",
+        "physical_gap_over_kappa_interval": [
+          "77999983359999287599860002299/26000000000000000000000000000",
+          "779999833599992875998600023029/260000000000000000000000000000"
+        ],
+        "xi": "1/100000000"
+      }
+    ],
+    "cubic_bound": "944984/351",
+    "endpoint_gap_coefficient_bracket": [
+      "252482370200343904862858917694830366532530930427226883268325141754480535159109065311452608454416271/165509173077176994509311212183261975585431806985357320364186411510043480605771107377401036800000000",
+      "63120592550085976215714729423707591633132732606815374159665296939115312534248115047797842015730671/41377293269294248627327803045815493896357951746339330091046602877510870151442776844350259200000000"
+    ],
+    "g_squared_threshold_bracket": [
+      "765194610478677/200000000000000",
+      "1912986526196693/500000000000000"
+    ],
+    "old_cubic_bound": "30208/3",
+    "quartic_residual_bound": "799258/39",
+    "root_bracket": [
+      "6831501788310907/400000000000000000",
+      "170787544707772677/10000000000000000000"
+    ]
+  },
+  "checks": [
+    {
+      "name": "bulk-four-original-plaquettes",
+      "passed": true
+    },
+    {
+      "name": "bulk-42-adjacent-pairs",
+      "passed": true
+    },
+    {
+      "name": "bulk-path",
+      "passed": true,
+      "value": "460"
+    },
+    {
+      "name": "bulk-common",
+      "passed": true,
+      "value": "40"
+    },
+    {
+      "name": "bulk-corner",
+      "passed": true,
+      "value": "24"
+    },
+    {
+      "name": "pair-boundary-0",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-1",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-2",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-3",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-4",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-5",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-6",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-7",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-8",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-9",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-10",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-11",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-12",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-13",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-14",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-15",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-16",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-17",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-18",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-19",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-20",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-21",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-22",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-23",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-24",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-25",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-26",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-27",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-28",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-29",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-30",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-31",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-32",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-33",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-34",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-35",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-36",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-37",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-38",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-39",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-40",
+      "passed": true
+    },
+    {
+      "name": "pair-boundary-41",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-0",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-1",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-2",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-3",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-4",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-5",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-6",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-7",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-8",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-9",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-10",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-11",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-12",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-13",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-14",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-15",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-16",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-17",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-18",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-19",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-20",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-21",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-22",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-23",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-24",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-25",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-26",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-27",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-28",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-29",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-30",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-31",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-32",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-33",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-34",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-35",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-36",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-37",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-38",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-39",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-40",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-41",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-42",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-43",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-44",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-45",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-46",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-47",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-48",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-49",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-50",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-51",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-52",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-53",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-54",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-55",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-56",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-57",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-58",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-59",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-60",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-61",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-62",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-63",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-64",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-65",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-66",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-67",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-68",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-69",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-70",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-71",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-72",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-73",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-74",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-75",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-76",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-77",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-78",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-79",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-80",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-81",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-82",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-83",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-84",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-85",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-86",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-87",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-88",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-89",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-90",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-91",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-92",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-93",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-94",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-95",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-96",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-97",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-98",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-99",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-100",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-101",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-102",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-103",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-104",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-105",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-106",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-107",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-108",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-109",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-110",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-111",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-112",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-113",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-114",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-115",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-116",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-117",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-118",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-119",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-120",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-121",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-122",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-123",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-124",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-125",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-126",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-127",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-128",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-129",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-130",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-131",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-132",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-133",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-134",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-135",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-136",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-137",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-138",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-139",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-140",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-141",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-142",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-143",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-144",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-145",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-146",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-147",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-148",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-149",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-150",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-151",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-152",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-153",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-154",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-155",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-156",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-157",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-158",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-159",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-160",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-161",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-162",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-163",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-164",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-165",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-166",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-167",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-168",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-169",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-170",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-171",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-172",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-173",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-174",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-175",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-176",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-177",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-178",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-179",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-180",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-181",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-182",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-183",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-184",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-185",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-186",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-187",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-188",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-189",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-190",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-191",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-192",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-193",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-194",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-195",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-196",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-197",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-198",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-199",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-200",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-201",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-202",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-203",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-204",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-205",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-206",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-207",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-208",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-209",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-210",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-211",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-212",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-213",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-214",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-215",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-216",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-217",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-218",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-219",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-220",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-221",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-222",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-223",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-224",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-225",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-226",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-227",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-228",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-229",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-230",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-231",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-232",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-233",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-234",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-235",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-236",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-237",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-238",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-239",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-240",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-241",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-242",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-243",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-244",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-245",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-246",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-247",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-248",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-249",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-250",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-251",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-252",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-253",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-254",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-255",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-256",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-257",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-258",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-259",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-260",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-261",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-262",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-263",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-264",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-265",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-266",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-267",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-268",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-269",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-270",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-271",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-272",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-273",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-274",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-275",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-276",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-277",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-278",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-279",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-280",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-281",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-282",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-283",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-284",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-285",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-286",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-287",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-288",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-289",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-290",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-291",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-292",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-293",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-294",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-295",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-296",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-297",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-298",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-299",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-300",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-301",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-302",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-303",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-304",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-305",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-306",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-307",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-308",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-309",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-310",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-311",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-312",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-313",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-314",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-315",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-316",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-317",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-318",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-319",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-320",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-321",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-322",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-323",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-324",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-325",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-326",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-327",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-328",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-329",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-330",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-331",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-332",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-333",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-334",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-335",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-336",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-337",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-338",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-339",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-340",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-341",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-342",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-343",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-344",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-345",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-346",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-347",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-348",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-349",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-350",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-351",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-352",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-353",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-354",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-355",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-356",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-357",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-358",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-359",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-360",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-361",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-362",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-363",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-364",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-365",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-366",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-367",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-368",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-369",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-370",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-371",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-372",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-373",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-374",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-375",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-376",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-377",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-378",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-379",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-380",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-381",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-382",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-383",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-384",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-385",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-386",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-387",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-388",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-389",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-390",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-391",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-392",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-393",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-394",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-395",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-396",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-397",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-398",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-399",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-400",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-401",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-402",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-403",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-404",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-405",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-406",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-407",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-408",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-409",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-410",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-411",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-412",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-413",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-414",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-415",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-416",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-417",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-418",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-419",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-420",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-421",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-422",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-423",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-424",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-425",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-426",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-427",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-428",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-429",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-430",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-431",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-432",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-433",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-434",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-435",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-436",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-437",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-438",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-439",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-440",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-441",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-442",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-443",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-444",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-445",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-446",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-447",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-448",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-449",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-450",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-451",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-452",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-453",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-454",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-455",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-456",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-457",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-458",
+      "passed": true
+    },
+    {
+      "name": "path-original-union-boundary-459",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-0",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-1",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-2",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-3",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-4",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-5",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-6",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-7",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-8",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-9",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-10",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-11",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-12",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-13",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-14",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-15",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-16",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-17",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-18",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-19",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-20",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-21",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-22",
+      "passed": true
+    },
+    {
+      "name": "corner-original-union-boundary-23",
+      "passed": true
+    },
+    {
+      "name": "box-2-face-count",
+      "passed": true,
+      "value": "240"
+    },
+    {
+      "name": "box-2-pair-count",
+      "passed": true,
+      "value": "1128"
+    },
+    {
+      "name": "box-2-edge-count",
+      "passed": true
+    },
+    {
+      "name": "box-2-all-boundary-incidences",
+      "passed": true
+    },
+    {
+      "name": "box-3-face-count",
+      "passed": true,
+      "value": "756"
+    },
+    {
+      "name": "box-3-pair-count",
+      "passed": true,
+      "value": "3852"
+    },
+    {
+      "name": "box-3-edge-count",
+      "passed": true
+    },
+    {
+      "name": "box-3-all-boundary-incidences",
+      "passed": true
+    },
+    {
+      "name": "box-4-face-count",
+      "passed": true,
+      "value": "1728"
+    },
+    {
+      "name": "box-4-pair-count",
+      "passed": true,
+      "value": "9168"
+    },
+    {
+      "name": "box-4-edge-count",
+      "passed": true
+    },
+    {
+      "name": "box-4-all-boundary-incidences",
+      "passed": true
+    },
+    {
+      "name": "L2-fourth-energy",
+      "passed": true
+    },
+    {
+      "name": "bulk-incidence-paths",
+      "passed": true
+    },
+    {
+      "name": "bulk-double-count-paths",
+      "passed": true
+    },
+    {
+      "name": "bulk-double-count-common",
+      "passed": true
+    },
+    {
+      "name": "bulk-double-count-corner",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,0,1,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,0,0,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,1,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-1,-1,1,2",
+      "passed": true
+    },
+    {
+      "name": "center-face--1,0,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,-1,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,-2,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-1,0,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,-1,-1,1,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-1,1,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,0,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,0,-1,1,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,1,-1,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face--1,-1,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,1,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,-1,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-1,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,0,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-2,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-1,-1,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,0,0,1,2",
+      "passed": true
+    },
+    {
+      "name": "center-face--1,0,-1,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,1,0,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,-1,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face--1,0,0,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-1,0,1,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,1,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,0,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,-1,-1,0,1",
+      "passed": true
+    },
+    {
+      "name": "center-face-0,0,-1,1,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,0,-1,0,2",
+      "passed": true
+    },
+    {
+      "name": "center-face-1,-1,0,1,2",
+      "passed": true
+    },
+    {
+      "name": "all-612-anchored-multisets",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-0-1-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-0-7-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-1-1-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-1-7-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-2-1-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-2-7-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-3-1-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-3-7-self",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-4-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-4-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-5-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-5-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-6-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-6-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-7-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-7-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-8-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-8-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-9-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-9-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-10-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-10-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-11-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-11-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-12-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-12-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-13-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-13-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-14-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-14-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-15-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-15-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-16-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-16-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-17-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-17-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-18-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-18-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-19-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-19-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-20-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-20-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-21-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-21-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-22-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-22-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-23-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-23-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-24-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-24-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-25-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-25-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-26-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-26-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-27-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-27-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-28-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-28-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-29-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-29-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-30-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-30-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-31-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-31-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-32-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-32-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-33-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-33-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-34-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-34-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-35-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-35-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-36-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-36-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-37-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-37-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-38-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-38-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-39-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-39-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-40-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-40-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-41-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-41-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-42-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-42-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-43-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-43-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-44-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-44-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-45-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-45-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-46-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-46-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-47-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-47-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-48-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-48-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-49-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-49-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-50-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-50-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-51-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-51-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-52-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-52-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-53-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-53-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-54-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-54-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-55-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-55-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-56-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-56-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-57-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-57-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-58-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-58-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-59-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-59-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-60-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-60-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-61-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-61-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-62-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-62-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-63-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-63-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-64-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-64-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-65-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-65-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-66-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-66-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-67-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-67-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-68-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-68-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-69-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-69-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-70-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-70-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-71-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-71-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-72-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-72-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-73-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-73-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-74-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-74-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-75-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-75-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-76-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-76-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-77-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-77-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-78-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-78-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-79-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-79-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-80-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-80-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-81-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-81-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-82-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-82-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-83-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-83-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-84-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-84-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-85-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-85-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-86-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-86-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-87-1-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-87-7-repeat",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-88-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-88-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-89-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-89-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-90-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-90-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-91-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-91-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-92-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-92-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-93-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-93-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-94-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-94-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-95-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-95-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-96-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-96-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-97-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-97-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-98-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-98-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-99-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-99-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-100-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-100-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-101-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-101-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-102-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-102-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-103-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-103-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-104-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-104-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-105-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-105-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-106-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-106-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-107-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-107-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-108-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-108-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-109-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-109-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-110-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-110-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-111-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-111-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-112-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-112-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-113-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-113-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-114-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-114-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-115-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-115-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-116-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-116-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-117-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-117-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-118-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-118-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-119-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-119-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-120-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-120-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-121-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-121-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-122-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-122-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-123-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-123-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-124-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-124-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-125-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-125-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-126-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-126-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-127-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-127-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-128-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-128-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-129-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-129-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-130-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-130-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-131-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-131-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-132-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-132-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-133-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-133-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-134-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-134-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-135-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-135-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-136-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-136-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-137-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-137-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-138-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-138-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-139-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-139-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-140-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-140-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-141-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-141-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-142-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-142-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-143-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-143-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-144-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-144-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-145-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-145-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-146-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-146-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-147-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-147-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-148-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-148-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-149-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-149-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-150-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-150-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-151-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-151-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-152-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-152-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-153-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-153-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-154-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-154-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-155-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-155-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-156-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-156-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-157-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-157-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-158-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-158-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-159-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-159-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-160-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-160-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-161-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-161-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-162-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-162-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-163-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-163-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-164-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-164-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-165-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-165-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-166-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-166-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-167-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-167-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-168-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-168-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-169-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-169-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-170-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-170-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-171-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-171-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-172-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-172-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-173-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-173-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-174-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-174-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-175-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-175-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-176-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-176-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-177-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-177-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-178-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-178-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-179-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-179-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-180-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-180-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-181-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-181-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-182-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-182-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-183-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-183-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-184-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-184-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-185-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-185-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-186-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-186-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-187-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-187-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-188-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-188-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-189-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-189-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-190-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-190-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-191-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-191-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-192-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-192-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-193-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-193-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-194-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-194-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-195-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-195-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-196-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-196-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-197-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-197-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-198-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-198-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-199-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-199-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-200-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-200-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-201-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-201-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-202-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-202-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-203-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-203-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-204-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-204-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-205-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-205-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-206-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-206-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-207-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-207-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-208-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-208-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-209-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-209-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-210-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-210-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-211-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-211-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-212-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-212-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-213-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-213-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-214-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-214-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-215-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-215-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-216-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-216-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-217-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-217-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-218-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-218-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-219-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-219-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-220-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-220-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-221-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-221-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-222-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-222-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-223-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-223-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-224-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-224-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-225-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-225-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-226-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-226-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-227-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-227-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-228-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-228-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-229-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-229-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-230-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-230-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-231-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-231-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-232-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-232-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-233-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-233-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-234-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-234-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-235-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-235-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-236-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-236-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-237-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-237-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-238-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-238-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-239-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-239-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-240-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-240-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-241-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-241-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-242-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-242-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-243-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-243-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-244-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-244-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-245-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-245-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-246-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-246-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-247-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-247-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-248-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-248-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-249-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-249-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-250-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-250-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-251-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-251-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-252-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-252-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-253-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-253-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-254-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-254-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-255-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-255-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-256-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-256-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-257-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-257-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-258-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-258-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-259-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-259-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-260-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-260-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-261-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-261-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-262-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-262-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-263-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-263-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-264-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-264-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-265-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-265-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-266-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-266-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-267-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-267-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-268-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-268-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-269-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-269-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-270-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-270-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-271-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-271-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-272-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-272-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-273-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-273-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-274-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-274-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-275-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-275-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-276-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-276-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-277-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-277-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-278-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-278-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-279-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-279-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-280-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-280-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-281-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-281-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-282-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-282-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-283-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-283-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-284-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-284-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-285-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-285-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-286-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-286-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-287-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-287-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-288-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-288-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-289-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-289-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-290-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-290-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-291-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-291-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-292-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-292-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-293-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-293-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-294-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-294-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-295-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-295-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-296-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-296-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-297-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-297-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-298-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-298-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-299-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-299-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-300-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-300-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-301-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-301-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-302-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-302-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-303-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-303-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-304-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-304-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-305-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-305-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-306-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-306-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-307-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-307-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-308-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-308-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-309-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-309-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-310-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-310-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-311-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-311-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-312-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-312-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-313-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-313-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-314-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-314-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-315-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-315-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-316-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-316-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-317-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-317-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-318-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-318-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-319-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-319-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-320-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-320-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-321-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-321-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-322-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-322-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-323-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-323-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-324-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-324-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-325-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-325-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-326-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-326-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-327-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-327-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-328-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-328-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-329-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-329-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-330-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-330-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-331-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-331-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-332-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-332-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-333-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-333-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-334-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-334-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-335-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-335-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-336-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-336-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-337-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-337-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-338-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-338-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-339-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-339-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-340-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-340-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-341-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-341-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-342-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-342-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-343-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-343-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-344-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-344-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-345-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-345-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-346-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-346-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-347-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-347-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-348-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-348-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-349-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-349-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-350-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-350-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-351-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-351-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-352-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-352-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-353-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-353-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-354-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-354-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-355-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-355-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-356-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-356-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-357-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-357-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-358-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-358-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-359-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-359-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-360-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-360-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-361-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-361-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-362-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-362-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-363-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-363-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-364-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-364-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-365-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-365-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-366-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-366-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-367-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-367-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-368-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-368-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-369-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-369-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-370-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-370-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-371-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-371-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-372-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-372-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-373-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-373-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-374-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-374-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-375-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-375-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-376-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-376-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-377-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-377-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-378-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-378-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-379-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-379-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-380-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-380-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-381-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-381-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-382-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-382-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-383-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-383-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-384-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-384-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-385-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-385-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-386-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-386-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-387-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-387-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-388-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-388-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-389-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-389-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-390-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-390-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-391-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-391-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-392-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-392-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-393-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-393-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-394-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-394-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-395-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-395-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-396-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-396-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-397-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-397-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-398-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-398-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-399-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-399-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-400-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-400-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-401-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-401-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-402-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-402-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-403-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-403-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-404-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-404-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-405-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-405-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-406-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-406-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-407-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-407-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-408-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-408-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-409-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-409-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-410-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-410-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-411-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-411-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-412-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-412-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-413-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-413-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-414-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-414-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-415-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-415-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-416-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-416-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-417-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-417-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-418-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-418-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-419-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-419-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-420-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-420-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-421-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-421-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-422-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-422-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-423-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-423-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-424-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-424-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-425-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-425-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-426-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-426-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-427-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-427-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-428-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-428-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-429-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-429-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-430-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-430-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-431-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-431-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-432-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-432-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-433-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-433-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-434-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-434-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-435-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-435-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-436-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-436-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-437-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-437-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-438-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-438-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-439-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-439-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-440-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-440-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-441-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-441-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-442-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-442-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-443-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-443-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-444-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-444-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-445-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-445-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-446-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-446-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-447-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-447-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-448-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-448-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-449-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-449-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-450-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-450-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-451-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-451-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-452-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-452-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-453-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-453-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-454-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-454-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-455-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-455-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-456-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-456-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-457-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-457-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-458-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-458-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-459-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-459-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-460-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-460-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-461-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-461-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-462-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-462-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-463-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-463-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-464-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-464-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-465-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-465-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-466-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-466-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-467-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-467-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-468-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-468-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-469-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-469-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-470-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-470-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-471-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-471-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-472-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-472-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-473-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-473-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-474-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-474-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-475-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-475-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-476-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-476-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-477-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-477-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-478-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-478-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-479-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-479-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-480-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-480-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-481-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-481-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-482-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-482-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-483-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-483-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-484-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-484-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-485-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-485-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-486-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-486-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-487-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-487-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-488-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-488-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-489-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-489-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-490-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-490-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-491-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-491-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-492-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-492-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-493-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-493-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-494-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-494-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-495-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-495-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-496-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-496-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-497-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-497-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-498-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-498-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-499-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-499-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-500-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-500-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-501-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-501-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-502-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-502-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-503-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-503-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-504-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-504-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-505-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-505-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-506-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-506-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-507-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-507-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-508-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-508-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-509-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-509-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-510-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-510-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-511-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-511-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-512-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-512-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-513-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-513-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-514-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-514-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-515-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-515-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-516-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-516-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-517-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-517-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-518-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-518-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-519-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-519-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-520-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-520-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-521-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-521-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-522-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-522-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-523-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-523-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-524-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-524-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-525-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-525-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-526-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-526-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-527-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-527-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-528-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-528-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-529-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-529-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-530-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-530-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-531-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-531-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-532-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-532-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-533-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-533-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-534-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-534-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-535-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-535-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-536-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-536-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-537-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-537-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-538-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-538-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-539-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-539-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-540-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-540-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-541-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-541-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-542-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-542-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-543-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-543-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-544-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-544-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-545-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-545-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-546-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-546-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-547-1-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-547-7-path",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-548-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-548-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-549-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-549-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-550-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-550-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-551-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-551-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-552-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-552-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-553-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-553-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-554-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-554-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-555-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-555-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-556-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-556-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-557-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-557-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-558-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-558-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-559-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-559-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-560-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-560-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-561-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-561-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-562-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-562-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-563-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-563-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-564-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-564-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-565-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-565-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-566-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-566-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-567-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-567-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-568-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-568-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-569-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-569-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-570-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-570-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-571-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-571-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-572-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-572-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-573-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-573-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-574-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-574-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-575-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-575-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-576-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-576-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-577-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-577-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-578-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-578-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-579-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-579-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-580-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-580-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-581-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-581-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-582-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-582-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-583-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-583-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-584-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-584-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-585-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-585-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-586-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-586-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-587-1-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-587-7-common",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-588-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-588-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-589-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-589-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-590-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-590-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-591-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-591-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-592-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-592-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-593-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-593-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-594-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-594-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-595-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-595-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-596-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-596-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-597-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-597-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-598-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-598-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-599-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-599-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-600-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-600-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-601-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-601-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-602-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-602-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-603-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-603-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-604-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-604-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-605-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-605-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-606-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-606-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-607-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-607-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-608-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-608-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-609-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-609-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-610-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-610-7-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-611-1-corner",
+      "passed": true
+    },
+    {
+      "name": "original-cubic-611-7-corner",
+      "passed": true
+    },
+    {
+      "name": "nonzero-coordinate-controls-self",
+      "passed": true,
+      "value": "4"
+    },
+    {
+      "name": "nonzero-coordinate-controls-repeat",
+      "passed": true,
+      "value": "108"
+    },
+    {
+      "name": "nonzero-coordinate-controls-path",
+      "passed": true,
+      "value": "879"
+    },
+    {
+      "name": "nonzero-coordinate-controls-common",
+      "passed": true,
+      "value": "59"
+    },
+    {
+      "name": "nonzero-coordinate-controls-corner",
+      "passed": true,
+      "value": "38"
+    },
+    {
+      "name": "repeated-harmonic-0",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-1",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-2",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-3",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-4",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-5",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-6",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-7",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-8",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-9",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-10",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-11",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-12",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-13",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-14",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-15",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-16",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-17",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-18",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-19",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-20",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-21",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-22",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-23",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-24",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-25",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-26",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-27",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-28",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-29",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-30",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-31",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-32",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-33",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-34",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-35",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-36",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-37",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-38",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-39",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-40",
+      "passed": true
+    },
+    {
+      "name": "repeated-harmonic-41",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-0",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-1",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-2",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-3",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-4",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-5",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-6",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-7",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-8",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-9",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-10",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-11",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-12",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-13",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-14",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-15",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-16",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-17",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-18",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-19",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-20",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-21",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-22",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-23",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-24",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-25",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-26",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-27",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-28",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-29",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-30",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-31",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-32",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-33",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-34",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-35",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-36",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-37",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-38",
+      "passed": true
+    },
+    {
+      "name": "three-fundamental-harmonic-39",
+      "passed": true
+    },
+    {
+      "name": "disconnected-source-2",
+      "passed": true
+    },
+    {
+      "name": "disconnected-source-3",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0000",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0001",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0010",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0100",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1000",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0002",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0011",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0020",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0101",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0110",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0200",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1001",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1010",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1100",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2000",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0003",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0012",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0021",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0030",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0102",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0111",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0120",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0201",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0210",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0300",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1002",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1011",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1020",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1101",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1110",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1200",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2001",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2010",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2100",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3000",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0004",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0013",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0022",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0031",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0040",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0103",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0112",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0121",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0130",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0202",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0211",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0220",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0301",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0310",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0400",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1003",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1012",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1021",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1030",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1102",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1111",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1120",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1201",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1210",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1300",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2002",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2011",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2020",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2101",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2110",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2200",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3001",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3010",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3100",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-4000",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0005",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0014",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0023",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0032",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0041",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0050",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0104",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0113",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0122",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0131",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0140",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0203",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0212",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0221",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0230",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0302",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0311",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0320",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0401",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0410",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-0500",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1004",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1013",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1022",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1031",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1040",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1103",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1112",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1121",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1130",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1202",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1211",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1220",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1301",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1310",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-1400",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2003",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2012",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2021",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2030",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2102",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2111",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2120",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2201",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2210",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-2300",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3002",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3011",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3020",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3101",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3110",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-3200",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-4001",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-4010",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-4100",
+      "passed": true
+    },
+    {
+      "name": "sphere-moment-5000",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-0",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-1",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-2",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-3",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-4",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-5",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-6",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-7",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-8",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-9",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-10",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-11",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-12",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-13",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-14",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-15",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-16",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-17",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-18",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-19",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-20",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-21",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-22",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-23",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-24",
+      "passed": true
+    },
+    {
+      "name": "unit-quaternion-25",
+      "passed": true
+    },
+    {
+      "name": "pair-projector-idempotent-0",
+      "passed": true
+    },
+    {
+      "name": "pair-projector-symmetric-0",
+      "passed": true
+    },
+    {
+      "name": "pair-projector-idempotent-1",
+      "passed": true
+    },
+    {
+      "name": "pair-projector-symmetric-1",
+      "passed": true
+    },
+    {
+      "name": "pair-projector-idempotent-2",
+      "passed": true
+    },
+    {
+      "name": "pair-projector-symmetric-2",
+      "passed": true
+    },
+    {
+      "name": "total-half-projector",
+      "passed": true
+    },
+    {
+      "name": "total-half-rank",
+      "passed": true
+    },
+    {
+      "name": "three-singlets-sum",
+      "passed": true
+    },
+    {
+      "name": "path-recurrence-00",
+      "passed": true
+    },
+    {
+      "name": "path-recurrence-01",
+      "passed": true
+    },
+    {
+      "name": "path-recurrence-10",
+      "passed": true
+    },
+    {
+      "name": "path-recurrence-11",
+      "passed": true
+    },
+    {
+      "name": "corner-recurrence-0",
+      "passed": true
+    },
+    {
+      "name": "corner-recurrence-1",
+      "passed": true
+    },
+    {
+      "name": "corner-recurrence-2",
+      "passed": true
+    },
+    {
+      "name": "corner-recurrence-3",
+      "passed": true
+    },
+    {
+      "name": "common-recurrence-1/2",
+      "passed": true
+    },
+    {
+      "name": "common-recurrence-3/2",
+      "passed": true
+    },
+    {
+      "name": "self-original-norm",
+      "passed": true
+    },
+    {
+      "name": "repeated-original-norm",
+      "passed": true
+    },
+    {
+      "name": "path-original-norm",
+      "passed": true
+    },
+    {
+      "name": "corner-original-norm",
+      "passed": true
+    },
+    {
+      "name": "complete-cubic-norm",
+      "passed": true,
+      "value": "944984/351"
+    },
+    {
+      "name": "cubic-improvement",
+      "passed": true
+    },
+    {
+      "name": "second-total-spin-budget",
+      "passed": true,
+      "value": "5834/39"
+    },
+    {
+      "name": "second-point-spin-budget",
+      "passed": true,
+      "value": "137/6"
+    },
+    {
+      "name": "linear-first-budget",
+      "passed": true
+    },
+    {
+      "name": "linear-second-budget",
+      "passed": true
+    },
+    {
+      "name": "quartic-full-source-budget",
+      "passed": true,
+      "value": "799258/39"
+    },
+    {
+      "name": "quartic-improvement",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-0",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-1",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-2",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-3",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-4",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-5",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-6",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-7",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-8",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-9",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-10",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-11",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-12",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-13",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-14",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-15",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-16",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-17",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-18",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-19",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-20",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-21",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-22",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-23",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-24",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-25",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-26",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-27",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-28",
+      "passed": true
+    },
+    {
+      "name": "quartic-expanded-29",
+      "passed": true
+    },
+    {
+      "name": "quartic-left-root-sign",
+      "passed": true
+    },
+    {
+      "name": "quartic-right-root-sign",
+      "passed": true
+    },
+    {
+      "name": "quartic-derivative-negative-to-right",
+      "passed": true
+    },
+    {
+      "name": "neumann-bound-before-root",
+      "passed": true
+    },
+    {
+      "name": "root-decimal-bracket",
+      "passed": true
+    },
+    {
+      "name": "coupling-threshold-bracket",
+      "passed": true
+    },
+    {
+      "name": "closed-endpoint-gap",
+      "passed": true
+    },
+    {
+      "name": "cubic-only-polynomial",
+      "passed": true
+    },
+    {
+      "name": "positive-disc-1/64",
+      "passed": true
+    },
+    {
+      "name": "source-radius-equation-1/64",
+      "passed": true
+    },
+    {
+      "name": "drift-refined-return-1/64",
+      "passed": true
+    },
+    {
+      "name": "g-square-four-gap",
+      "passed": true
+    },
+    {
+      "name": "linear-error-return",
+      "passed": true
+    },
+    {
+      "name": "positive-disc-1/60",
+      "passed": true
+    },
+    {
+      "name": "source-radius-equation-1/60",
+      "passed": true
+    },
+    {
+      "name": "drift-refined-return-1/60",
+      "passed": true
+    },
+    {
+      "name": "energy-cauchy-circle",
+      "passed": true
+    },
+    {
+      "name": "positive-disc-1/100000000",
+      "passed": true
+    },
+    {
+      "name": "source-radius-equation-1/100000000",
+      "passed": true
+    },
+    {
+      "name": "drift-refined-return-1/100000000",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-1",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-1",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-2",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-2",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-3",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-3",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-4",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-4",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-5",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-5",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-6",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-6",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-7",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-7",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-8",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-8",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-9",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-9",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-10",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-10",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-11",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-11",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-12",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-12",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-13",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-13",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-14",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-14",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-15",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-15",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-16",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-16",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-17",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-17",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-18",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-18",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-19",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-19",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-20",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-20",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-21",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-21",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-22",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-22",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-23",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-23",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-24",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-24",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-25",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-25",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-26",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-26",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-27",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-27",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-28",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-28",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-29",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-29",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-30",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-30",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-31",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-31",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-32",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-32",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-33",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-33",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-34",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-34",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-35",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-35",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-36",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-36",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-37",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-37",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-38",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-38",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-39",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-39",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-40",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-40",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-41",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-41",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-42",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-42",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-43",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-43",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-44",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-44",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-45",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-45",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-46",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-46",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-47",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-47",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-48",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-48",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-49",
+      "passed": true
+    },
+    {
+      "name": "catalan-tail-bound-49",
+      "passed": true
+    },
+    {
+      "name": "repeated-low-channel-cancellation",
+      "passed": true
+    },
+    {
+      "name": "self-fourth-scalar",
+      "passed": true
+    },
+    {
+      "name": "adjacent-Rayleigh-moment",
+      "passed": true
+    },
+    {
+      "name": "adjacent-excess-moment",
+      "passed": true
+    },
+    {
+      "name": "adjacent-v2-energy",
+      "passed": true
+    },
+    {
+      "name": "fourth-energy-independent-1-0",
+      "passed": true
+    },
+    {
+      "name": "fourth-energy-independent-2-1",
+      "passed": true
+    },
+    {
+      "name": "fourth-energy-independent-240-1128",
+      "passed": true
+    },
+    {
+      "name": "fourth-energy-independent-882-3816",
+      "passed": true
+    },
+    {
+      "name": "fourth-energy-cubic-per-face",
+      "passed": true
+    },
+    {
+      "name": "fourth-energy-planar-per-face",
+      "passed": true
+    },
+    {
+      "name": "single-face-second-independent",
+      "passed": true
+    },
+    {
+      "name": "single-face-fourth-independent",
+      "passed": true
+    },
+    {
+      "name": "single-face-evenness",
+      "passed": true
+    },
+    {
+      "name": "self-quartic-spin-one",
+      "passed": true
+    },
+    {
+      "name": "self-quartic-spin-two",
+      "passed": true
+    },
+    {
+      "name": "self-quartic-retained-scalar",
+      "passed": true
+    },
+    {
+      "name": "hui-kinetic-4",
+      "passed": true
+    },
+    {
+      "name": "hui-magnetic-4",
+      "passed": true
+    },
+    {
+      "name": "hui-kinetic-17/4",
+      "passed": true
+    },
+    {
+      "name": "hui-magnetic-17/4",
+      "passed": true
+    }
+  ],
+  "coordinate_certificate": {
+    "anchored_multisets": 612,
+    "assignments_per_multiset": 2,
+    "coordinate_transcript_sha256": "26cbebaa051166d7c0bac6645cb52f27fd4b69738a1ab093ea1d9ba5c040e71a",
+    "nonzero_instances": {
+      "common": 59,
+      "corner": 38,
+      "path": 879,
+      "repeat": 108,
+      "self": 4
+    }
+  },
+  "counts": {
+    "exact_checks": 2246,
+    "negative_controls": 15
+  },
+  "energy": {
+    "cubic_infinite_volume_E4_per_face": "11/936",
+    "planar_E4_per_face": "163/8424",
+    "single_plaquette_coefficients": [
+      "0",
+      "0",
+      "-1/3",
+      "0",
+      "5/216",
+      "0",
+      "-289/77760"
+    ]
+  },
+  "finite_boxes": [
+    {
+      "E4_over_kappa": "1198/351",
+      "L": 2,
+      "adjacent_pairs": 1128,
+      "faces": 240
+    },
+    {
+      "E4_over_kappa": "2383/234",
+      "L": 3,
+      "adjacent_pairs": 3852,
+      "faces": 756
+    },
+    {
+      "E4_over_kappa": "7928/351",
+      "L": 4,
+      "adjacent_pairs": 9168,
+      "faces": 1728
+    }
+  ],
+  "negative_controls": [
+    {
+      "false_formula_accepted": false,
+      "name": "omit-cubic-character-on-original-links"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "omit-repeated-section-component"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "common-spin-multiplicity-erased"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "extra-corner-half-factor"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "pair-singlets-commute"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "omit-three-halves"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "neumann-alone-closes-residual"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "erase-quartic-residual"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "frechet-without-two"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "drop-fourth-ground-sign"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "adjacent-pairs-are-independent"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "erase-fourth-energy-scalar"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "erase-cubic-self-character"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "erase-corner-n2-channel"
+    },
+    {
+      "false_formula_accepted": false,
+      "name": "erase-physical-time-factor"
+    }
+  ],
+  "passed": true,
+  "schema": "ym-cubic-linearized-exact-v1",
+  "scope": {
+    "analytic_proof_formalized": false,
+    "continuum_gap_proved": false,
+    "finite_original_coordinate_checks": true,
+    "spin_cutoff_of_full_operator": false,
+    "vacuum_sampling": false
+  },
+  "source_sha256": {
+    "CUBIC_SOURCE.md": "d1e8fa24ce573ad1adfdaeecbb2ee6bfa1631717f9ce22b0f66d838981d5f240",
+    "LINEARIZED_RETURN.md": "931d8d2824062c6435dfe324cb9145bc6d8e7a450d37aa5f86a94f1190190453",
+    "README.md": "2fbb9f300d29ad35efd1ea3b2c9d07b29185308f3aeaefbfaf2738d180597a18",
+    "SOURCE_INTAKE.json": "23849c8a138107a287fd2b28f0e16d43056f80333ef1eb605df786c988c15eb9",
+    "coordinate_audit.py": "de1d9841ebd4655194801cc053bc1f71393433e8c241d0d88cdae65fc82f7c9f",
+    "geometry.py": "bd878efd339f05f320d051bee760bff0934ccfca10e9a2c1e6f26941a128cc1e",
+    "state.json": "310162656f69b84b8059d6e201a867c0ef632492058cc43838191526419c5a1d",
+    "verify.py": "45bd9ff364efc4d41b205702472ba0557d9248335bf4f6b879f55f1d2bec0502"
+  }
+}

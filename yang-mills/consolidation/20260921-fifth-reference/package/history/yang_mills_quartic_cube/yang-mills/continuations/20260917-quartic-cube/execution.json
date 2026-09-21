@@ -1,0 +1,255 @@
+{
+  "analytic_proof_formalized": false,
+  "counts": {
+    "intended_cli_rejections": 14,
+    "successful_current_parent_and_fresh_copy_executions": 6
+  },
+  "development_execution_scope": "Earlier combined four-process harness calls exceeded the execution-service envelope. The final commands were executed separately through the stage selector, all with recorded exits. These records claim only the completed executions listed here.",
+  "normal_optimized_and_fresh_copy_stdout_identical": true,
+  "passed": true,
+  "receipt_sha256": "d42ccdf0da93ba0131b6a2a5a54151ea1e828a97b0e2efb3f25a996f739d1409",
+  "records": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "generated/verification.json"
+      ],
+      "elapsed_seconds": 20.606470116999844,
+      "exit_code": 0,
+      "label": "current-ordinary",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ecbfb9f2d916cbfcfbc566806b672668b8513b1dbd2c346f6a8f9d9007d40d7a"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "generated/verification.json"
+      ],
+      "elapsed_seconds": 22.071194434000063,
+      "exit_code": 0,
+      "label": "current-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ecbfb9f2d916cbfcfbc566806b672668b8513b1dbd2c346f6a8f9d9007d40d7a"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "elapsed_seconds": 13.650414890999855,
+      "exit_code": 0,
+      "label": "parent-ordinary",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "elapsed_seconds": 14.900086759999795,
+      "exit_code": 0,
+      "label": "parent-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
+    },
+    {
+      "elapsed_seconds": 20.789084655999886,
+      "exit_code": 0,
+      "expected_named_failure": null,
+      "label": "fresh-copy-replay",
+      "optimized": false,
+      "passed": true,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ecbfb9f2d916cbfcfbc566806b672668b8513b1dbd2c346f6a8f9d9007d40d7a"
+    },
+    {
+      "elapsed_seconds": 22.482886624000002,
+      "exit_code": 0,
+      "expected_named_failure": null,
+      "label": "fresh-copy-replay",
+      "optimized": true,
+      "passed": true,
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ecbfb9f2d916cbfcfbc566806b672668b8513b1dbd2c346f6a8f9d9007d40d7a"
+    },
+    {
+      "elapsed_seconds": 0.5525318790000711,
+      "exit_code": 1,
+      "expected_named_failure": "receipt-schema",
+      "label": "wrong-schema",
+      "optimized": false,
+      "passed": true,
+      "stderr": "FAIL: receipt-schema\n",
+      "stderr_sha256": "e9ff29f7a934237b3ea4f33cecf064bbca5a044865891f650ec03628f329ca29",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 0.5635242459998153,
+      "exit_code": 1,
+      "expected_named_failure": "duplicate-json-key:schema",
+      "label": "duplicate-key",
+      "optimized": false,
+      "passed": true,
+      "stderr": "FAIL: duplicate-json-key:schema\n",
+      "stderr_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 0.6036703260001559,
+      "exit_code": 1,
+      "expected_named_failure": "source-manifest-membership",
+      "label": "missing-source-entry",
+      "optimized": false,
+      "passed": true,
+      "stderr": "FAIL: source-manifest-membership\n",
+      "stderr_sha256": "848f0e7ee57516874d586d6faf0d152393e431bdb3c2f963d89d1492ff8c4b30",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 0.5747463540001263,
+      "exit_code": 1,
+      "expected_named_failure": "table-manifest-membership",
+      "label": "missing-table-entry",
+      "optimized": false,
+      "passed": true,
+      "stderr": "FAIL: table-manifest-membership\n",
+      "stderr_sha256": "34a06ef5fd26e9c7289fe1d468bbb73243d28f92cd3ce93c284ece86ec75e666",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 0.5565028559999519,
+      "exit_code": 1,
+      "expected_named_failure": "source-identity:PHYSICAL_RETURN.md",
+      "label": "changed-bytes:PHYSICAL_RETURN.md",
+      "optimized": false,
+      "passed": true,
+      "stderr": "FAIL: source-identity:PHYSICAL_RETURN.md\n",
+      "stderr_sha256": "89ef257c0e2773f5de8c21728c57f1bbdc190e0f0d40a286873a67154be72b73",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 0.5596486089998507,
+      "exit_code": 1,
+      "expected_named_failure": "table-identity:quartic_spin_budgets.json",
+      "label": "changed-bytes:generated/quartic_spin_budgets.json",
+      "optimized": false,
+      "passed": true,
+      "stderr": "FAIL: table-identity:quartic_spin_budgets.json\n",
+      "stderr_sha256": "d6364db879d41eaabcc07fb7d8fd82c4a25dac58f10693f8f60b70d071780252",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 1.7767418180001187,
+      "exit_code": 1,
+      "expected_named_failure": "receipt-schema",
+      "label": "wrong-schema",
+      "optimized": true,
+      "passed": true,
+      "stderr": "FAIL: receipt-schema\n",
+      "stderr_sha256": "e9ff29f7a934237b3ea4f33cecf064bbca5a044865891f650ec03628f329ca29",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 1.778738536000219,
+      "exit_code": 1,
+      "expected_named_failure": "duplicate-json-key:schema",
+      "label": "duplicate-key",
+      "optimized": true,
+      "passed": true,
+      "stderr": "FAIL: duplicate-json-key:schema\n",
+      "stderr_sha256": "264a9ef661bc2a49c843c960346aae35f9d2d3e7e7df00338fc1fb81e2baf30b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 1.7739096620002783,
+      "exit_code": 1,
+      "expected_named_failure": "source-manifest-membership",
+      "label": "missing-source-entry",
+      "optimized": true,
+      "passed": true,
+      "stderr": "FAIL: source-manifest-membership\n",
+      "stderr_sha256": "848f0e7ee57516874d586d6faf0d152393e431bdb3c2f963d89d1492ff8c4b30",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 1.8378362049998032,
+      "exit_code": 1,
+      "expected_named_failure": "table-manifest-membership",
+      "label": "missing-table-entry",
+      "optimized": true,
+      "passed": true,
+      "stderr": "FAIL: table-manifest-membership\n",
+      "stderr_sha256": "34a06ef5fd26e9c7289fe1d468bbb73243d28f92cd3ce93c284ece86ec75e666",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 1.7960105360002672,
+      "exit_code": 1,
+      "expected_named_failure": "source-identity:PHYSICAL_RETURN.md",
+      "label": "changed-bytes:PHYSICAL_RETURN.md",
+      "optimized": true,
+      "passed": true,
+      "stderr": "FAIL: source-identity:PHYSICAL_RETURN.md\n",
+      "stderr_sha256": "89ef257c0e2773f5de8c21728c57f1bbdc190e0f0d40a286873a67154be72b73",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 1.792354431000149,
+      "exit_code": 1,
+      "expected_named_failure": "table-identity:quartic_spin_budgets.json",
+      "label": "changed-bytes:generated/quartic_spin_budgets.json",
+      "optimized": true,
+      "passed": true,
+      "stderr": "FAIL: table-identity:quartic_spin_budgets.json\n",
+      "stderr_sha256": "d6364db879d41eaabcc07fb7d8fd82c4a25dac58f10693f8f60b70d071780252",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 20.925973845000044,
+      "exit_code": 1,
+      "expected_named_failure": "mathematical-receipt-mismatch",
+      "label": "altered-mathematical-count",
+      "optimized": false,
+      "passed": true,
+      "stderr": "FAIL: mathematical-receipt-mismatch\n",
+      "stderr_sha256": "616ab1f394854230ed7b2fb0870c5026de1b4bd2eee0df48ffd4471931b01148",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "elapsed_seconds": 21.923775965999994,
+      "exit_code": 1,
+      "expected_named_failure": "mathematical-receipt-mismatch",
+      "label": "altered-mathematical-count",
+      "optimized": true,
+      "passed": true,
+      "stderr": "FAIL: mathematical-receipt-mismatch\n",
+      "stderr_sha256": "616ab1f394854230ed7b2fb0870c5026de1b4bd2eee0df48ffd4471931b01148",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "remote_ci_run": false,
+  "remote_write_performed": false,
+  "runner_sha256": {
+    "audit_delivery.py": "245fe98ef507f15f90ffd7bd7cbfdfe9fc745e6c1aa664694f5b397c20a2637b",
+    "replay.py": "61bc07bfd13837cdf934b2f37f1d1134d9f419403588c86a0b50fad28be40e80"
+  },
+  "schema": "ym-quartic-complete-execution-v1",
+  "unchanged_parent_receipt_sha256": "2e6a1433b9df7bb3f1ee584b7896e6ae9dae9f5a7836a5030af7a993711190c6"
+}
