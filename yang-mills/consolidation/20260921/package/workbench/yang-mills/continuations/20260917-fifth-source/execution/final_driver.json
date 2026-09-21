@@ -1,0 +1,28 @@
+[
+  {
+    "name": "produce_receipt",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-B",
+      "verify_fifth.py",
+      "--output",
+      "generated/verification.json"
+    ],
+    "started_utc": "2026-09-17T17:05:18.059277+00:00",
+    "elapsed_seconds": 10.87194273,
+    "exit_code": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "full_replay",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-B",
+      "replay.py"
+    ],
+    "started_utc": "2026-09-17T17:05:28.931686+00:00",
+    "elapsed_seconds": 243.0854622859997,
+    "exit_code": 0,
+    "log_sha256": "c876d565a1c194a8116f4b6c400b49dd0cb4fc377608be3dd27189f76600e931"
+  }
+]

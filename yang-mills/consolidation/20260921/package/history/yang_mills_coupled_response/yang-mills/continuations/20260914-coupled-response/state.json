@@ -1,0 +1,112 @@
+{
+  "analytic_machine_checked": false,
+  "automatic_process_started": false,
+  "claims": [
+    {
+      "anchor": "C5",
+      "id": "COUPLED-DOMAIN",
+      "quantity": "Self-adjoint raw-Gram block realization of the original form restriction; full coarse complement C6 retained.",
+      "scope": "finite-regulator"
+    },
+    {
+      "anchor": "C9",
+      "id": "COMPLEX-METRIC",
+      "quantity": "Full complex two-parameter response kernel equals the restored lift Gram.",
+      "scope": "finite-regulator"
+    },
+    {
+      "anchor": "C16",
+      "id": "COHOMOLOGICAL-ERROR",
+      "quantity": "Original forcing-class residual norm equals response error, with two-sided C17 bounds.",
+      "scope": "finite-regulator"
+    },
+    {
+      "anchor": "C22",
+      "id": "SINGULAR-MOMENTS",
+      "quantity": "Actual normal-equation fibers give full response and residual matrices from moments through order 2d+2.",
+      "scope": "finite-regulator"
+    },
+    {
+      "anchor": "C24",
+      "id": "SHIFT-REMAINDER",
+      "quantity": "Finite shifted resolvent recurrence with both kinetic and forcing error bounds.",
+      "scope": "finite-regulator"
+    },
+    {
+      "anchor": "C26",
+      "id": "PHYSICAL-ERROR",
+      "quantity": "Explicit exterior-volume-independent bounds retaining b,a,g,s and observable derivatives.",
+      "scope": "finite-regulator"
+    }
+  ],
+  "continuum_gap_proved": false,
+  "cross_workbench_direction": {
+    "requested_destination": "Not fixed by the latest message; retain as a candidate on the spectral exchange ledger.",
+    "status": "Reusable proved block/metric mechanism C5-C11; no specific arithmetic spectral realization assigned.",
+    "topic": "Hamiltonian coupling and self-adjointness in peer spectral research"
+  },
+  "execution_scope": "Exact rational finite fixtures with a non-diagonal raw state Gram; written analytic proofs; no new Lean or remote CI execution.",
+  "gauge_group": "SU(2)",
+  "new_peer_discoveries": [
+    {
+      "commit_from_description": "4b1b3646ab610b4fbd3b0ad8fbf12a21054e1352",
+      "pr": 7,
+      "repo": "KokunoYumeto/erdos-straus-foundation",
+      "scope": "PR description read only; original higher-support contraction/Green-norm proof is a candidate, not an imported Hamiltonian estimate."
+    }
+  ],
+  "next_calculation": "Evaluate/enclose those moments and return the C17 interval to the C19 state metric and the original multiscale primitive norm. Retain C6, escaping-state classes and endpoint limits.",
+  "next_quantity": "Actual N0=W*W, N1=W*DW, N2=W*D^2W for original loop/energy observables, including fine-vacuum conditional derivatives.",
+  "parent_commit": "f583ed5ddb13b3ca517c1bab2958f6a4be612d78",
+  "peer_main_heads": {
+    "collatz-workbench": "63407034387466870f9e092dcdf39fb5a1ec0399",
+    "erdos-problem-817-workbench": "23c0110c95b5a2036bdc04a1f352b6e5e27742c8",
+    "erdos-straus-foundation": "63f52c3d7162d2ba0c0d8187e4b1d5369f223ed9",
+    "yang-mills-interacting-workbench": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
+    "zeta-function-research-reader": "91ed3b7c358a1f444d0d48c292e4a400ca509eff"
+  },
+  "read_sources": [
+    {
+      "blob": "d138482ac7b40017560cef5a93b21ada4440ce13",
+      "commit": "f583ed5ddb13b3ca517c1bab2958f6a4be612d78",
+      "path": "yang-mills/research-control/RESEARCH_NOTE.md",
+      "repo": "KokunoYumeto/yang-mills-interacting-workbench",
+      "scope": "Complete parent note read from delivered archive; source identity checked. Actual score/form coupling used."
+    },
+    {
+      "blob": "7166debc7724f6805aac125a012e3a59d594dc84",
+      "commit": "b4060b25c21f1a49a5e7730e9aff76d4c93c820d",
+      "path": "workbenches/tau-signed-resolvent-formal/RESEARCH_NOTE.md",
+      "repo": "KokunoYumeto/zeta-function-research-reader",
+      "scope": "Sections 1-6 read via connector at pinned historical PR31 head. SR6 directly instantiated in C23. No Lean rerun."
+    },
+    {
+      "blob": "53b359a76c7771d9377c38cadc46ce3d7130d04f",
+      "commit": "91ed3b7c358a1f444d0d48c292e4a400ca509eff",
+      "path": "README.md",
+      "repo": "KokunoYumeto/zeta-function-research-reader",
+      "scope": "Lines 1-80 orientation and four-commit comparison; conductor asymptotics not imported."
+    }
+  ],
+  "schema": "ym-coupled-response-v1",
+  "target": "4D interacting Yang-Mills existence and physical mass gap",
+  "transfers": [
+    {
+      "map": "H -> (sigma-s)(D+sigma)^-1; T -> (D+sigma)^-1; X -> (D+s)^-1",
+      "metric": "Original interacting-vacuum kernel Hilbert pairing; all physical shifts retained.",
+      "source": "SZ-R SR6",
+      "target": "C23"
+    },
+    {
+      "map": "Degree-zero V_j --D+s--> K, incoming boundary (D+s)V_j; source column W; inverse primitive (D+s)^-1.",
+      "metric": "<r,(D+s)^-1 t>, derived from the same Hamiltonian; full Gram retained.",
+      "source": "Original Split Zero support/metric construction; prior SZ-M OK1-2",
+      "target": "C13-C18"
+    }
+  ],
+  "unevaluated": [
+    "Actual interacting-vacuum moment entries",
+    "Strict positive continuum physical lower edge",
+    "Full four-dimensional continuum field identification"
+  ]
+}

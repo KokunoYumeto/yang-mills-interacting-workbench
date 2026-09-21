@@ -1,0 +1,223 @@
+{
+  "analytic_proof_independently_certified": false,
+  "exact_named_checks": 642,
+  "fresh_source_copy_reproduced": true,
+  "input_sha256": {
+    "BAND_AND_CERTIFICATE.md": "0e02c37b3ecc51f04d2f3c18cca686cc96bc7a8b5fd3bb467b143970a02d7887",
+    "BOX_L2_CERTIFICATE.json": "97c502538c316015dfe8b56f8fa6221e7d2658bf305f90ac5f31ce6a12e17b4d",
+    "RESEARCH_NOTE.md": "c24f5235b8c25daa1ee20fb81a13d8db94b88cb99b298ac7d10c8b4e5faafebd",
+    "SECOND_SOURCE.md": "044279aa33cc6a53ea933ebe0aa903741653b4964883d7ea40b14b6bf5b9ff14",
+    "SOURCE_INTAKE.json": "d89085fcd77e1fa4b3683d3bf09a846e2e95bf60e9f6dd99441fc17481589465",
+    "SPATIAL_RETURN.md": "b7c24b984cf19ac793ae6df532bfa9fb9db98d6319e1a02bb3b92607366f626e",
+    "replay.py": "100e8dad5bfefde47c183914cd1ba6cce01f7d9e2e1594011e42c61a1e94c638",
+    "state.json": "3513ae1e162e5a53274511f627fbceafb47b76057dc0f90e2ea4d4a378e45571",
+    "verification.json": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8",
+    "verify.py": "9a2db6eefdcc0beca6a562fd3d4f4e0dde9950b42222b58727b6d66cef450ad0"
+  },
+  "named_cli_corruption_executions": 20,
+  "named_false_formula_controls": 27,
+  "new_Lean_execution": false,
+  "ordinary_and_optimized_outputs_identical": true,
+  "parent_receipt_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+  "records": [
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "current-ordinary",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
+    },
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "current-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
+    },
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "unchanged-parent-ordinary",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+    },
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "unchanged-parent-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+    },
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "copied-source-ordinary",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
+    },
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "copied-source-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "wrong-target",
+      "name": "state-target-ordinary",
+      "stderr_sha256": "d82e172da506d7dff733e3aa945642347065771e90ec3f3b17a354aa76a780a1",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "wrong-target",
+      "name": "state-target-optimized",
+      "stderr_sha256": "d82e172da506d7dff733e3aa945642347065771e90ec3f3b17a354aa76a780a1",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "wrong-finite-domain",
+      "name": "state-finite_domain-ordinary",
+      "stderr_sha256": "9a24ae2ce2423ac3444b9ee7420df5a01f96198e7ae3c7abb6aa67141fc1f191",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "wrong-finite-domain",
+      "name": "state-finite_domain-optimized",
+      "stderr_sha256": "9a24ae2ce2423ac3444b9ee7420df5a01f96198e7ae3c7abb6aa67141fc1f191",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "wrong-spatial-domain",
+      "name": "state-spatial_domain-ordinary",
+      "stderr_sha256": "3109c4f0f59f25fb31a92a42cfee30f01014ff88f6971d4ebb9e94b2c22a2abd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "wrong-spatial-domain",
+      "name": "state-spatial_domain-optimized",
+      "stderr_sha256": "3109c4f0f59f25fb31a92a42cfee30f01014ff88f6971d4ebb9e94b2c22a2abd",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "unsupported-continuum-promotion",
+      "name": "state-continuum_gap_established-ordinary",
+      "stderr_sha256": "ec07fe98639c784ce1581e8b210dc7656f33399aa65b7558fa00c22edcff5c97",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "unsupported-continuum-promotion",
+      "name": "state-continuum_gap_established-optimized",
+      "stderr_sha256": "ec07fe98639c784ce1581e8b210dc7656f33399aa65b7558fa00c22edcff5c97",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "false-truncation-identification",
+      "name": "state-band_is_spin_truncation-ordinary",
+      "stderr_sha256": "cf81e0a5216b982845f2fa8448e281a1507877856c993e40c05b8292c0dca48e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "false-truncation-identification",
+      "name": "state-band_is_spin_truncation-optimized",
+      "stderr_sha256": "cf81e0a5216b982845f2fa8448e281a1507877856c993e40c05b8292c0dca48e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "missing-original-band-Gram",
+      "name": "state-raw_band_metric-ordinary",
+      "stderr_sha256": "09ed83ebec2f72a247901c16776c3084e9bcf38b925b89da6127eb4998258c7a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "missing-original-band-Gram",
+      "name": "state-raw_band_metric-optimized",
+      "stderr_sha256": "09ed83ebec2f72a247901c16776c3084e9bcf38b925b89da6127eb4998258c7a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "duplicate-json-key:target",
+      "name": "duplicate-state-ordinary",
+      "stderr_sha256": "c3a29253f1cc7f6078dd89460fd15f22339414c4ae5381a91d066ff02572e52b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "receipt-mismatch",
+      "name": "wrong-receipt-ordinary",
+      "stderr_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "box-certificate-mismatch",
+      "name": "wrong-inertia-record-ordinary",
+      "stderr_sha256": "051871131b5432269abb018e346d99464e736412ac1260276a3b6d247d49999d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "duplicate-json-key:target",
+      "name": "duplicate-state-optimized",
+      "stderr_sha256": "c3a29253f1cc7f6078dd89460fd15f22339414c4ae5381a91d066ff02572e52b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "receipt-mismatch",
+      "name": "wrong-receipt-optimized",
+      "stderr_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "box-certificate-mismatch",
+      "name": "wrong-inertia-record-optimized",
+      "stderr_sha256": "051871131b5432269abb018e346d99464e736412ac1260276a3b6d247d49999d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "receipt-mismatch",
+      "name": "modified-proof-ordinary",
+      "stderr_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 1,
+      "expected_named_error": "receipt-mismatch",
+      "name": "modified-proof-optimized",
+      "stderr_sha256": "22aef0bef8aa06673e1995fa0dd5558a90bdde8ebadd8c8d6a1ee9f7a6f9ef5e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "restored-source-ordinary",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
+    },
+    {
+      "exit_code": 0,
+      "expected_named_error": null,
+      "name": "restored-source-optimized",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "c196c6f4fa6e786e0a16475c42c3e59d48d289e3ed0c809e731e9f51dd0470c8"
+    }
+  ],
+  "remote_CI_replayed": false,
+  "remote_write_performed": false,
+  "schema": "ym-gauge-native-observed-execution-v1"
+}

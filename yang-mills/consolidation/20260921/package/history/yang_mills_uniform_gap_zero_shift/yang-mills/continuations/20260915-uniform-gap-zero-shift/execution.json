@@ -1,0 +1,213 @@
+{
+  "current_exact_checks": 273,
+  "current_false_controls": 35,
+  "current_receipt_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+  "named_cli_rejections": [
+    {
+      "exit_code": 1,
+      "name": "target-ordinary",
+      "stderr": "FAIL: wrong-target",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "target-optimized",
+      "stderr": "FAIL: wrong-target",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "domain-ordinary",
+      "stderr": "FAIL: wrong-proved-domain",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "domain-optimized",
+      "stderr": "FAIL: wrong-proved-domain",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "continuum-ordinary",
+      "stderr": "FAIL: unsupported-continuum-promotion",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "continuum-optimized",
+      "stderr": "FAIL: unsupported-continuum-promotion",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "response-ordinary",
+      "stderr": "FAIL: missing-actual-response",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "response-optimized",
+      "stderr": "FAIL: missing-actual-response",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "volume-ordinary",
+      "stderr": "FAIL: wrong-volume-limit-scope",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "volume-optimized",
+      "stderr": "FAIL: wrong-volume-limit-scope",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "duplicate-key-ordinary",
+      "stderr": "FAIL: duplicate-json-key:target",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "duplicate-key-optimized",
+      "stderr": "FAIL: duplicate-json-key:target",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "receipt-ordinary",
+      "stderr": "FAIL: receipt-mismatch",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "receipt-optimized",
+      "stderr": "FAIL: receipt-mismatch",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "source:yang-mills/continuations/20260915-uniform-gap-zero-shift/RESEARCH_NOTE.md:ordinary",
+      "stderr": "FAIL: receipt-mismatch",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "source:yang-mills/continuations/20260915-uniform-gap-zero-shift/RESEARCH_NOTE.md:optimized",
+      "stderr": "FAIL: receipt-mismatch",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "source:yang-mills/continuations/20260915-actual-loop-moments/verify.py:ordinary",
+      "stderr": "FAIL: predecessor-hash:verify.py",
+      "stdout_bytes": 0
+    },
+    {
+      "exit_code": 1,
+      "name": "source:yang-mills/continuations/20260915-actual-loop-moments/verify.py:optimized",
+      "stderr": "FAIL: predecessor-hash:verify.py",
+      "stdout_bytes": 0
+    }
+  ],
+  "paid_run_performed": false,
+  "parent_exact_checks": 134,
+  "parent_false_controls": 12,
+  "parent_receipt_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a",
+  "positive_executions": [
+    {
+      "argv": [
+        "-B",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json"
+      ],
+      "exit_code": 0,
+      "name": "current-ordinary",
+      "stderr_bytes": 0,
+      "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+    },
+    {
+      "argv": [
+        "-B",
+        "yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      ],
+      "exit_code": 0,
+      "name": "parent-ordinary",
+      "stderr_bytes": 0,
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "argv": [
+        "-O",
+        "-B",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json"
+      ],
+      "exit_code": 0,
+      "name": "current-optimized",
+      "stderr_bytes": 0,
+      "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+    },
+    {
+      "argv": [
+        "-O",
+        "-B",
+        "yang-mills/continuations/20260915-actual-loop-moments/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-actual-loop-moments/verification.json"
+      ],
+      "exit_code": 0,
+      "name": "parent-optimized",
+      "stderr_bytes": 0,
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "argv": [
+        "-B",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json"
+      ],
+      "exit_code": 0,
+      "name": "fresh-ordinary",
+      "stderr_bytes": 0,
+      "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+    },
+    {
+      "argv": [
+        "-O",
+        "-B",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json"
+      ],
+      "exit_code": 0,
+      "name": "fresh-optimized",
+      "stderr_bytes": 0,
+      "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+    },
+    {
+      "argv": [
+        "-B",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json"
+      ],
+      "exit_code": 0,
+      "name": "restored-after-corruptions",
+      "stderr_bytes": 0,
+      "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+    }
+  ],
+  "remote_write_performed": false,
+  "replay_source_sha256": "a1362e26cff9ec593046085e366a02086e04782afe2615e6ace4bbb1f70c15f1",
+  "schema": "ym-zero-shift-full-replay-v1",
+  "scope": "Actual local executions and named rejection codes; finite algebra/rational certificates accompany, rather than formally certify, the written analytical proofs.",
+  "success": true
+}

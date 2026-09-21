@@ -1,0 +1,118 @@
+{
+  "schema": "ym-heat-execution-v1",
+  "mode": "fast",
+  "records": [
+    {
+      "name": "independent-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "independent_heat.py"
+      ],
+      "returncode": 0,
+      "seconds": 1.05119010899989,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "86a4e3d6f4826bd36b3aca3712f4f506d04e697c13d083e535b98c5db15686de",
+      "source_program_sha256": "54a537ab818033828152033b62ff60c241cd5318f1609b25f5d4003452ff2d32"
+    },
+    {
+      "name": "independent-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "independent_heat.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.3466171909999503,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "86a4e3d6f4826bd36b3aca3712f4f506d04e697c13d083e535b98c5db15686de",
+      "source_program_sha256": "54a537ab818033828152033b62ff60c241cd5318f1609b25f5d4003452ff2d32"
+    },
+    {
+      "name": "bounds-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "certified_bounds.py"
+      ],
+      "returncode": 0,
+      "seconds": 3.4917765139998664,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "15f4c1ef43cefa7c12d8dd8119119980ced13749c912cd305d2895a2fa08a971",
+      "source_program_sha256": "cb181eab00c5701c315ccc9d4f8bdb3a48a5bc9e962366f0a15b7b743b3dd21c"
+    },
+    {
+      "name": "bounds-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "certified_bounds.py"
+      ],
+      "returncode": 0,
+      "seconds": 4.751676653999766,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "15f4c1ef43cefa7c12d8dd8119119980ced13749c912cd305d2895a2fa08a971",
+      "source_program_sha256": "cb181eab00c5701c315ccc9d4f8bdb3a48a5bc9e962366f0a15b7b743b3dd21c"
+    },
+    {
+      "name": "band-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "extract_band.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.426670049000222,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "eb40e43fec425523013053c927ebacd0be51d89e7b754f4928c5edfd7cb0f971",
+      "source_program_sha256": "d259f8009cc47ee9f7b715b5e05b359aaab99f4209d50df82019b96971e9c22a"
+    },
+    {
+      "name": "band-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "extract_band.py"
+      ],
+      "returncode": 0,
+      "seconds": 3.7194956899998033,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "eb40e43fec425523013053c927ebacd0be51d89e7b754f4928c5edfd7cb0f971",
+      "source_program_sha256": "d259f8009cc47ee9f7b715b5e05b359aaab99f4209d50df82019b96971e9c22a"
+    },
+    {
+      "name": "record-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 0,
+      "seconds": 5.294895271999849,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+      "source_program_sha256": "24da546124e9792ad59afac2fcab65285dfb61f03977799093e91729dfd3920c"
+    },
+    {
+      "name": "record-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "returncode": 0,
+      "seconds": 6.430111151999881,
+      "all_generated_bytes_unchanged": true,
+      "log_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+      "source_program_sha256": "24da546124e9792ad59afac2fcab65285dfb61f03977799093e91729dfd3920c"
+    }
+  ]
+}

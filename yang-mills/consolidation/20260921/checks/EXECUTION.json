@@ -1,0 +1,246 @@
+{
+  "checks": [
+    {
+      "name": "manifest-before",
+      "command": [
+        "python",
+        "-B",
+        "verify_cumulative.py"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "seconds": 0.471,
+      "peak_process_tree_rss": 20566016,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "8684774e52e0a13b677ed71064cce3a0ba2192d4ab5e97975071781172b9f609",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "files": 2014,
+        "text_bytes": 106964505
+      }
+    },
+    {
+      "name": "volume-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-volume-heat-return",
+      "exit_code": 0,
+      "seconds": 3.597,
+      "peak_process_tree_rss": 57741312,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "8c8232f7af74b24be329929bae440a8bb74adf2f7c5acaf92484b0ae89d58b7a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "count": 2425,
+        "negative_count": 16,
+        "scope": {
+          "analytic_proof_formalized": false,
+          "box_independent_bounds_derived_in_written_proof": true,
+          "continuum_mass_gap_established": false,
+          "exact_anchored_contributions": 559,
+          "original_matrix_fixtures_are_not_vacuum_samples": true
+        }
+      }
+    },
+    {
+      "name": "heat-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-heat-response-transfer",
+      "exit_code": 0,
+      "seconds": 5.335,
+      "peak_process_tree_rss": 134180864,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "f62b0ea2f3c993fbe1e7cb5a3786564a85b5566dc395810736c662235fd7c2f9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "counts": {
+          "band_entries": 9660,
+          "full_polynomial_column_terms": 2056737,
+          "heat_entries": [
+            240,
+            2496,
+            9660
+          ],
+          "independent_cube_insertions": 5400,
+          "marked_heat_responses": 84,
+          "named_checks": 879,
+          "negative_controls": 21,
+          "source_cases": 17,
+          "transports": 11988
+        },
+        "scope": {
+          "analytic_proofs_formalized": false,
+          "continuum_gap_proved": false,
+          "finite_raw_metric_fixtures": true,
+          "full_polynomial_audit_receipt_checked": true,
+          "full_time_coefficient_catalogue": true,
+          "missing_sixth_catalogue_replayed": false,
+          "old_uniform_gap_recertified": false,
+          "polynomial_audit_executed_by_separate_program": true
+        }
+      }
+    },
+    {
+      "name": "route-ordinary",
+      "command": [
+        "python",
+        "-B",
+        "route_check.py",
+        "--verify-existing"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-volume-heat-return",
+      "exit_code": 0,
+      "seconds": 0.136,
+      "peak_process_tree_rss": 12587008,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "c70e169ca8b900ae1daa4b6aec6fc0e43f8c971a9a5c99725d247754ce0b653b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_text": "COMPLETE 52 18f41aa31bab5fcdf4eaca2d4de9d1d274d3a089b9179d17eb2124872fabbd6d\r\n"
+    },
+    {
+      "name": "volume-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "audit_bounds.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-volume-heat-return",
+      "exit_code": 0,
+      "seconds": 3.67,
+      "peak_process_tree_rss": 57556992,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "8c8232f7af74b24be329929bae440a8bb74adf2f7c5acaf92484b0ae89d58b7a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "count": 2425,
+        "negative_count": 16,
+        "scope": {
+          "analytic_proof_formalized": false,
+          "box_independent_bounds_derived_in_written_proof": true,
+          "continuum_mass_gap_established": false,
+          "exact_anchored_contributions": 559,
+          "original_matrix_fixtures_are_not_vacuum_samples": true
+        }
+      }
+    },
+    {
+      "name": "heat-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-heat-response-transfer",
+      "exit_code": 0,
+      "seconds": 5.454,
+      "peak_process_tree_rss": 133578752,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "f62b0ea2f3c993fbe1e7cb5a3786564a85b5566dc395810736c662235fd7c2f9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "counts": {
+          "band_entries": 9660,
+          "full_polynomial_column_terms": 2056737,
+          "heat_entries": [
+            240,
+            2496,
+            9660
+          ],
+          "independent_cube_insertions": 5400,
+          "marked_heat_responses": 84,
+          "named_checks": 879,
+          "negative_controls": 21,
+          "source_cases": 17,
+          "transports": 11988
+        },
+        "scope": {
+          "analytic_proofs_formalized": false,
+          "continuum_gap_proved": false,
+          "finite_raw_metric_fixtures": true,
+          "full_polynomial_audit_receipt_checked": true,
+          "full_time_coefficient_catalogue": true,
+          "missing_sixth_catalogue_replayed": false,
+          "old_uniform_gap_recertified": false,
+          "polynomial_audit_executed_by_separate_program": true
+        }
+      }
+    },
+    {
+      "name": "route-optimized",
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "route_check.py",
+        "--verify-existing"
+      ],
+      "cwd": "workbench/yang-mills/continuations/20260921-volume-heat-return",
+      "exit_code": 0,
+      "seconds": 0.135,
+      "peak_process_tree_rss": 12546048,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "c70e169ca8b900ae1daa4b6aec6fc0e43f8c971a9a5c99725d247754ce0b653b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_text": "COMPLETE 52 18f41aa31bab5fcdf4eaca2d4de9d1d274d3a089b9179d17eb2124872fabbd6d\r\n"
+    },
+    {
+      "name": "manifest-after",
+      "command": [
+        "python",
+        "-B",
+        "verify_cumulative.py"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "seconds": 0.525,
+      "peak_process_tree_rss": 20869120,
+      "memory_cap_bytes": 2147483648,
+      "time_cap_seconds": 120,
+      "stopped": null,
+      "stdout_sha256": "8684774e52e0a13b677ed71064cce3a0ba2192d4ab5e97975071781172b9f609",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result": {
+        "passed": true,
+        "files": 2014,
+        "text_bytes": 106964505
+      }
+    }
+  ],
+  "scope": "Manifest integrity, finite exact audits and recorded-source consistency; no complete producer replay or formal analytic proof."
+}

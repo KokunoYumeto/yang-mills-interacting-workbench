@@ -1,0 +1,31 @@
+[
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-B",
+      "supplementary_audits/source_expectation_check.py",
+      "--verify-receipt",
+      "supplementary_audits/source_expectation_receipt.json"
+    ],
+    "started_utc": "2026-09-17T17:11:13.926632+00:00",
+    "elapsed_seconds": 1.5095808910000414,
+    "exit_code": 0,
+    "stdout_sha256": "2e7d3587defc028792fe5cef3637859710fa22b31377fd58c68c167ddcd87f44",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "-O",
+      "-B",
+      "supplementary_audits/source_expectation_check.py",
+      "--verify-receipt",
+      "supplementary_audits/source_expectation_receipt.json"
+    ],
+    "started_utc": "2026-09-17T17:11:15.436297+00:00",
+    "elapsed_seconds": 2.8281657489997087,
+    "exit_code": 0,
+    "stdout_sha256": "2e7d3587defc028792fe5cef3637859710fa22b31377fd58c68c167ddcd87f44",
+    "stderr": ""
+  }
+]

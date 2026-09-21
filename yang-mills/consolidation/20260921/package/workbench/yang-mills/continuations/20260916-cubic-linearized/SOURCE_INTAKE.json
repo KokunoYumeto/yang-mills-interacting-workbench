@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-16",
+  "literature_independent_confirmation_of_new_norm_bound": false,
+  "literature_priority_established": false,
+  "local_parent_reads": [
+    {
+      "file": "yang_mills_gauge_native_source_note.md",
+      "sha256": "c24f5235b8c25daa1ee20fb81a13d8db94b88cb99b298ac7d10c8b4e5faafebd"
+    },
+    {
+      "file": "yang_mills_second_source_continuation.md",
+      "sha256": "044279aa33cc6a53ea933ebe0aa903741653b4964883d7ea40b14b6bf5b9ff14"
+    },
+    {
+      "file": "yang_mills_spatial_coupling_return.md",
+      "sha256": "b7c24b984cf19ac793ae6df532bfa9fb9db98d6319e1a02bb3b92607366f626e"
+    }
+  ],
+  "original_hamiltonian": {
+    "blob": "dfee77c0ca0d6ed897c4172fcbfe23cd9d10d313",
+    "commit": "fab69fdc4ac197159b8e6ae8d73a82bde2b20d55",
+    "path": "yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md",
+    "reading_scope": "Freshly retrieved lines 1-80; original operator, domains, vacuum form and Haar coordinate map",
+    "repo": "KokunoYumeto/yang-mills-interacting-workbench"
+  },
+  "peer_orientation": {
+    "new_peer_CI_replay": false,
+    "open_pr_scan": "Zeta, Collatz, Erdos-Straus, Erdos817; four most recently updated returned",
+    "proofs_imported_from_scan": [],
+    "read_descriptions": [
+      "Zeta PR36",
+      "Erdos-Straus PR10",
+      "Erdos-Straus PR8",
+      "Erdos-Straus PR9"
+    ],
+    "zeta_main": "1efd53337561d8f67cf0ac1d119acdaa222644c3"
+  },
+  "primary_literature": [
+    {
+      "dictionary": "g_C=2^(3/4)g; H=sqrt(2)H_C+2kappa xi M",
+      "id": "Schuette-Zheng-Hamer1996",
+      "scope": "Full relevant sections 2-4, equations17,21-26,30,38; original gauge/loop framework and exact exponential equations",
+      "url": "https://arxiv.org/html/hep-lat/9603026v1"
+    },
+    {
+      "dictionary": "g_D=2^(3/4)g; H_plane=(sqrt(2)/a)H_D_prime+2kappa xi M",
+      "id": "Dahmen1994",
+      "scope": "Original Hamiltonian and second-order ground-energy equations1.7,1.24; screenshots pages3,8 and parsed local-channel text",
+      "url": "https://arxiv.org/pdf/hep-lat/9412080"
+    },
+    {
+      "dictionary": "g_H=2g; H_plane=H_H+2kappa xi M",
+      "id": "Hui-Fang-Shi2004",
+      "scope": "Original equations3,4,6 and stated later truncation/RPA procedure",
+      "url": "https://arxiv.org/html/hep-lat/0408035v1"
+    }
+  ],
+  "remote_parent": {
+    "head": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+    "pr": 6,
+    "state": "open draft at intake"
+  },
+  "schema": "ym-cubic-intake-v1"
+}

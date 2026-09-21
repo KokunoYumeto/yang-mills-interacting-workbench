@@ -1,0 +1,111 @@
+{
+  "schema": "ym-uniform-gap-zero-shift-delivery-v1",
+  "date": "2026-09-15",
+  "remote_base": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+  "previous_delivered_source": "20260915-actual-loop-moments",
+  "remote_write_performed": false,
+  "new_remote_pr_created": false,
+  "merge_performed": false,
+  "analytical_scope": "Original SU(2), g squared at least15, a>0, every open finite box; unique spatial infinite-volume vacuum/dynamics at fixed spacing. Actual zero-shift response enclosures at g squared5000. No 4D continuum theorem.",
+  "current_checks": 273,
+  "current_false_controls": 35,
+  "complete_replay": {
+    "success": true,
+    "positive_runs": 7,
+    "named_cli_rejections": 18,
+    "receipt_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670"
+  },
+  "patch_preparation": {
+    "schema": "ym-zero-shift-patch-preparation-v1",
+    "real_remote_base": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+    "selected_base_current_blob": "90f605e0f9de505584ebf84f2593d972422319e8",
+    "scope": "Selected paths used for local diff; local temporary Git commits are not claimed as remote ancestry.",
+    "combined_patch_sha256": "0a8d3ac6485ce19cbcf888e18ea169020c24eb260d17fb131c28cb7044b65555",
+    "incremental_patch_sha256": "ef7a36124061cd2c1d93ee7ca3db2b87203f6c18b326bd8cdba88cab2af3273f",
+    "changed_files": [
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md",
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/README.md",
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md",
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/STATUS.md",
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/execution.json",
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/state.json",
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/verification.json",
+      "A\tyang-mills/continuations/20260915-actual-loop-moments/verify.py",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/ATTEMPTS.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/DEVELOPMENT.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/HEAT_BATH_GAP.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/OPTIMIZED_DOMAIN.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/README.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/RESEARCH_NOTE.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/STATUS.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/VOLUME_LIMIT.md",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/execution.json",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/replay.py",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/source_intake.json",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/state.json",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json",
+      "A\tyang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py",
+      "M\tyang-mills/research-control/CURRENT.md"
+    ],
+    "numstat": "28\t0\tyang-mills/continuations/20260915-actual-loop-moments/ATTEMPTS.md\n50\t0\tyang-mills/continuations/20260915-actual-loop-moments/README.md\n981\t0\tyang-mills/continuations/20260915-actual-loop-moments/RESEARCH_NOTE.md\n57\t0\tyang-mills/continuations/20260915-actual-loop-moments/STATUS.md\n207\t0\tyang-mills/continuations/20260915-actual-loop-moments/execution.json\n121\t0\tyang-mills/continuations/20260915-actual-loop-moments/state.json\n387\t0\tyang-mills/continuations/20260915-actual-loop-moments/verification.json\n380\t0\tyang-mills/continuations/20260915-actual-loop-moments/verify.py\n37\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/ATTEMPTS.md\n12\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/DEVELOPMENT.md\n334\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/HEAT_BATH_GAP.md\n296\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/OPTIMIZED_DOMAIN.md\n64\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/README.md\n742\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/RESEARCH_NOTE.md\n52\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/STATUS.md\n471\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/VOLUME_LIMIT.md\n213\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/execution.json\n115\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/replay.py\n85\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/source_intake.json\n104\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/state.json\n432\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/verification.json\n637\t0\tyang-mills/continuations/20260915-uniform-gap-zero-shift/verify.py\n24\t5\tyang-mills/research-control/CURRENT.md\n",
+    "no_deletions": true,
+    "only_inherited_modification": [
+      "yang-mills/research-control/CURRENT.md"
+    ]
+  },
+  "patch_application": {
+    "schema": "ym-zero-shift-patch-application-v1",
+    "runs": [
+      {
+        "patch": "combined",
+        "mode": "ordinary",
+        "exit_code": 0,
+        "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+        "all_target_files_equal": 45,
+        "preserved_inherited_files": 22
+      },
+      {
+        "patch": "combined",
+        "mode": "optimized",
+        "exit_code": 0,
+        "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+        "all_target_files_equal": 45,
+        "preserved_inherited_files": 22
+      },
+      {
+        "patch": "incremental",
+        "mode": "ordinary",
+        "exit_code": 0,
+        "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+        "all_target_files_equal": 45,
+        "preserved_inherited_files": 22
+      },
+      {
+        "patch": "incremental",
+        "mode": "optimized",
+        "exit_code": 0,
+        "stdout_sha256": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+        "all_target_files_equal": 45,
+        "preserved_inherited_files": 22
+      }
+    ],
+    "both_patches_apply": true,
+    "complete_target_bytes_match": true
+  },
+  "scientific_files_sha256": {
+    "RESEARCH_NOTE.md": "83d4de98b7b3e5de85efd747f56f1a42261cc55570e419c0d8fe62ccab93bad8",
+    "OPTIMIZED_DOMAIN.md": "33acc63d3789f900854519500a59ba2bb033eabf8783238df34f0381033989fd",
+    "HEAT_BATH_GAP.md": "e37b1864544e0857c2dbc984d048ab8f1e0a567bead7d86c54a6ccc4870581fd",
+    "VOLUME_LIMIT.md": "3952922cfa7802d12796efe714bb469ddeb80fa3957f1ef51223b1884e94d4ad",
+    "verify.py": "d78432d5eeab097efa7aa018de30932d67c4c77edcc4ceeeae843b955f60f655",
+    "state.json": "c0409dc41bdecac317981201cbb4dfab34aabeb5747c190dd2e3893acdeb2fef",
+    "verification.json": "fd770cc11bd23e123f126ba9b1c2b597dab8fcf897f81fac08052ef262524670",
+    "replay.py": "a1362e26cff9ec593046085e366a02086e04782afe2615e6ace4bbb1f70c15f1",
+    "execution.json": "7ab973562ee7d46d0f8e141597eeb368375504badbbef5af3383c4eba350d8f0"
+  },
+  "complete_proof_reader_sha256": "456df34ca8c208cfb5fdc0ba37f828ce5acbf3deebaa474d8ca5fd5d9defb082",
+  "independent_external_analytical_review": false,
+  "new_lean_run": false,
+  "numerical_vacuum_samples": false,
+  "spin_cutoff_used_for_theorem": false
+}

@@ -1,0 +1,7 @@
+# Attempt account
+
+The parent selected quantitative score-resolvent response as the next Yang–Mills quantity. The user's Hamiltonian/self-adjointness suggestion motivated retaining a reusable block-domain and complex-parameter construction while continuing that selected calculation. The current note constructs the actual form restriction and its coupled self-adjoint operator, then ties its response to a full two-parameter lift Gram.
+
+A finite forcing-source complex makes the unresolved response a genuine retained cohomology class. Its canonical residual norm is exactly the response error, yielding two-sided energy and restored-metric bounds. The calculation reaches finite moment inputs through order 2d+2 and retains singular normal-equation fibers. During derivation the residual-moment cross term was corrected to N_(i+1)+sN_i; the checker now rejects the unshifted expression explicitly. No failed general theorem is inferred from that algebraic correction.
+
+The latest peer scan found new Zeta conductor sources and the Erdős–Straus higher-support continuation. These were recorded at orientation/PR-description scope; the current mathematical transfer uses the actually read pinned Zeta resolvent identity, not unexamined asymptotic or Green-norm claims. The actual Yang–Mills moments N0,N1,N2 and a uniform positive continuum energy edge remain unevaluated. General Schur and residual techniques retain their established attribution.

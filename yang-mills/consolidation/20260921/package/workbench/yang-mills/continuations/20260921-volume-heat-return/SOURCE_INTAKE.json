@@ -1,0 +1,47 @@
+{
+  "schema": "ym-volume-heat-source-intake-v1",
+  "date": "2026-09-21",
+  "parent_archive_sha256": "8f09cb9576d65bbe7cbd6e466d08ff84fcd398953e88116aa8b3c375fdf14694",
+  "github_baseline": {
+    "repo": "KokunoYumeto/yang-mills-interacting-workbench",
+    "pr": 8,
+    "head": "91434b6962062bd80439d4cb2cae9d2479264dde",
+    "state": "open draft unmerged",
+    "write_performed": false
+  },
+  "parent_full_proof_reads": [
+    "PHYSICAL_HEAT_COEFFICIENTS.md",
+    "HEAT_REMAINDER_AND_NATIVE_METRICS.md",
+    "RH_HEAT_TRANSFER.md"
+  ],
+  "parent_source_intake_sha256": "c98cdca67fe0e42ce312c0ee8db26486c13453aefef057ee24df4b92f8a6e069",
+  "primary_literature": [
+    {
+      "author": "G. Lumer and R. S. Phillips",
+      "title": "Dissipative operators in a Banach space",
+      "year": 1961,
+      "source": "https://msp.org/pjm/1961/11-2/pjm-v11-n2-p19-s.pdf",
+      "read_scope": "Section3 Theorem3.1 pp686-687, original page images and text",
+      "used": "Generation after proved closed dense domain, dissipativity and range surjectivity in U22-U24"
+    },
+    {
+      "author": "P. Eymard",
+      "title": "L'algebre de Fourier d'un groupe localement compact",
+      "year": 1964,
+      "source": "https://www.numdam.org/item/BSMF_1964__92__181_0/",
+      "read_scope": "Primary publication metadata; direct compact coefficient proof supplied U3-U9",
+      "used": "Antecedent attribution, not a substituted proof of the source-specific estimates"
+    },
+    {
+      "author": "D. Schuette, Zheng Weihong, C. J. Hamer",
+      "source": "https://arxiv.org/html/hep-lat/9603026v1",
+      "read_scope": "Exponential-vacuum and character construction",
+      "used": "Method antecedent; physical factors and new tail proved in original coordinates"
+    }
+  ],
+  "rh_transfer": {
+    "source_record": "../20260921-heat-response-transfer/SOURCE_INTAKE.json",
+    "used": "Previously inspected HM19-HM24 and IK9-IK12, retained exact maps in M6-M7 and M20-M25",
+    "new_arithmetic_estimates_imported": false
+  }
+}

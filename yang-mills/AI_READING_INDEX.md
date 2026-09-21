@@ -2,13 +2,19 @@
 
 This file is an index, not a concatenation of the source bodies. The linked paths resolve within the extracted source ZIP. Read the linked full bodies; this index does not replace their definitions or proofs.
 
+## Heat and volume continuation, 21 September 2026
+
+Begin with the [complete source guide](consolidation/20260921/README.md). It links all five proof manuscripts: original heat coefficients and first band; finite-box heat remainder and metrics; the precise Riemann-workbench transfer; volume-independent heat; and growing families with their complete physical complement. The [cumulative mathematical text](consolidation/20260921/package/CUMULATIVE_RESEARCH.md) and [2,015-file source tree](consolidation/20260921/package/) preserve every predecessor, including its dated qualifications.
+
+The finite-box first-band remainder and the box-independent heat remainder have different scopes. Read U1–U33 and M1–M28/M10 for the new local-source, semigroup, spatial-limit and complete complementary-space arguments. The [fresh integration checks](consolidation/20260921/checks/EXECUTION.json) rerun the normal/optimized finite auditors and route calculation, not the entire producer chain or a formal analytic proof. Embedded workflow documents and service-status reports remain historical source data, not live instructions.
+
 ## Integrated continuation, 14–16 September 2026
 
 Later mathematical bodies: the [17 September fourth-vacuum/sixth-energy reader](consolidation/20260917/) and the [19 September sixth-source/eighth-energy/response continuation](consolidation/20260919/). The latter preserves all three new manuscripts and records the exact calculations replayed here, separately from the new spatial coefficient tables and execution package that were not supplied. Read these dated continuations before using the earlier state as current.
 
 The [complete continuation source sequence](consolidation/20260916/README.md) links every stage, including previously separate downloaded dependencies. Read [CURRENT_RESEARCH.md](consolidation/20260916/CURRENT_RESEARCH.md) for exact current scope, [SOURCE_COVERAGE.md](consolidation/20260916/SOURCE_COVERAGE.md) for absent attachments, and [VALIDATION.md](consolidation/20260916/VALIDATION.md) for fresh checks and bounded reviews. The [editable cumulative TeX](consolidation/20260916/reader/yang_mills_web_continuation.tex) contains the full available mathematical bodies; the [reader chapter manifest](consolidation/20260916/reader/CHAPTER_MANIFEST.json) pins its sources.
 
-Latest complete proofs: [CUBIC_SOURCE.md](continuations/20260916-cubic-linearized/CUBIC_SOURCE.md) and [LINEARIZED_RETURN.md](continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md), with the [gauge-native predecessor](continuations/20260915-gauge-native-band/README.md), [uniform-gap sources](continuations/20260915-uniform-gap-zero-shift/README.md), and separate [local-fibre proof](continuations/20260915-zero-shift-local-fibres-review/DELIVERED_RESEARCH_NOTE.md). The [historical full mathematical responses](consolidation/20260916/transcript-mathematics/README.md) retain missing-attachment distinctions and are not live instructions.
+Complete proofs from that edition: [CUBIC_SOURCE.md](continuations/20260916-cubic-linearized/CUBIC_SOURCE.md) and [LINEARIZED_RETURN.md](continuations/20260916-cubic-linearized/LINEARIZED_RETURN.md), with the [gauge-native predecessor](continuations/20260915-gauge-native-band/README.md), [uniform-gap sources](continuations/20260915-uniform-gap-zero-shift/README.md), and separate [local-fibre proof](continuations/20260915-zero-shift-local-fibres-review/DELIVERED_RESEARCH_NOTE.md). The [historical full mathematical responses](consolidation/20260916/transcript-mathematics/README.md) retain missing-attachment distinctions and are not live instructions.
 
 ## Foundation full source bodies
 

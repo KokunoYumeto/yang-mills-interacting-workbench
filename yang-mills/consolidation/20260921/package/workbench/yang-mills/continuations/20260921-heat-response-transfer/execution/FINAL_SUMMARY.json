@@ -1,0 +1,45 @@
+{
+  "schema": "ym-heat-final-execution-summary-v1",
+  "passed": true,
+  "verification_counts": {
+    "band_entries": 9660,
+    "full_polynomial_column_terms": 2056737,
+    "heat_entries": [
+      240,
+      2496,
+      9660
+    ],
+    "independent_cube_insertions": 5400,
+    "marked_heat_responses": 84,
+    "named_checks": 879,
+    "negative_controls": 21,
+    "source_cases": 17,
+    "transports": 11988
+  },
+  "current_complete_polynomial_normal_return": 0,
+  "current_complete_polynomial_optimized_return": 0,
+  "final_source_replay_executions": 8,
+  "fresh_and_corruption": {
+    "passed": true,
+    "executions": 20,
+    "intended_corruption_rejections": 12,
+    "all_original_input_bytes_match": true
+  },
+  "full_catalogue_replayed_in_fresh_copy": true,
+  "sixth_source_missing_catalogue_replayed": false,
+  "old_uniform_gap_recertified": false,
+  "source_gate_development_failure_preserved": "execution/final_source_replay/record-ordinary.log; completed_final_replay is the finished-source successor.",
+  "verification_sha256": "1fdd11f2e6344d954a13b2a56c06932a705467f837b9fb981fb58afa3da3c37f",
+  "source_freshness": {
+    "initial_head": "128aa308dd2a70ba6e073816a957d1ee6414ba2c",
+    "final_observed_head": "fe22dc1dd51c633e82f93b731cbb6ec96b11ed64",
+    "final_readme_scope": "First38 lines, broad project/citation correction orientation.",
+    "used_proof_blobs_rechecked_unchanged": {
+      "RH-HM": "e7e61a29947e2b93ae6f8d646e9545fa7234d405",
+      "RH-HG": "9e0bba85dce3777099585bf4c179aea3a82621a5",
+      "RH-IK": "0923874d130d1dee05e1037e4630b156d50ca2ec"
+    },
+    "unread_other_changes_imported": false
+  },
+  "remote_repository_modified": false
+}

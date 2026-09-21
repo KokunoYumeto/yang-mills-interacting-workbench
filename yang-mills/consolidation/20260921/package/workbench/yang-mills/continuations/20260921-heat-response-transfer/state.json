@@ -1,0 +1,54 @@
+{
+  "schema": "ym-heat-transfer-state-v1",
+  "date": "2026-09-21",
+  "target": "Original interacting four-dimensional continuum Yang-Mills mass gap",
+  "current_operator_scope": "Original finite open-box SU(2), all physical gauge transformations and all spins",
+  "new_results": [
+    {
+      "id": "HEAT-COEFF",
+      "proof": "PHYSICAL_HEAT_COEFFICIENTS.md:H1-H7",
+      "scope": "Complete fourth-degree physical heat coefficient:17 original geometry cases,84 marked functions,full L2 240-face matrices."
+    },
+    {
+      "id": "HEAT-BAND4",
+      "proof": "PHYSICAL_HEAT_COEFFICIENTS.md:H8",
+      "scope": "Complete raw-metric fourth-order first band and finite-volume all-higher-order matrix bound."
+    },
+    {
+      "id": "HEAT-BOUND",
+      "proof": "HEAT_REMAINDER_AND_NATIVE_METRICS.md:A1-A4",
+      "scope": "All-positive-time analytic bound with radius1/M; actual opposite-face heat positivity on1<=kappa*t<=3 atxi=1e-10."
+    },
+    {
+      "id": "HEAT-METRIC",
+      "proof": "HEAT_REMAINDER_AND_NATIVE_METRICS.md:A5-A7",
+      "scope": "Original forcing, response and inverse-state Grams for L2,g^2>=20."
+    },
+    {
+      "id": "HEAT-TRANSFER",
+      "proof": "RH_HEAT_TRANSFER.md:T1-T6",
+      "scope": "Actual heat-filtered columns, same-support minima, retained cohomology, signed currents and common finite determinant error."
+    },
+    {
+      "id": "INVERSE-OBS",
+      "proof": "RH_HEAT_TRANSFER.md:T7",
+      "scope": "Original inverse-power family observation fraction>150/221 on L2,g^2>=20."
+    },
+    {
+      "id": "SECTION-ENERGY",
+      "proof": "RH_HEAT_TRANSFER.md:T8",
+      "scope": "Actual state/energy minimum-section correction energy <1322/7203 of primitive energy; all240 original columns atL2,g^2>=20."
+    }
+  ],
+  "validation": "Written proofs plus exact coefficient/algebra/polynomial executions, recorded individually; no new Lean or independent analytic peer audit.",
+  "remaining_values": [
+    "Uniform control of the heat and response remainder with increasing original spatial volume and decreasing lattice spacing.",
+    "Energy coupling of the controlled observation family to its full original physical complement.",
+    "Completion of the missing sixth-source audit requires its actual undelivered calculation files; no success is assigned here."
+  ],
+  "selected_next_calculation": "Use the complete time functions and raw first-band/source metrics to evaluate connected spatial heat-tail bounds beyond the present1/M Cauchy circle, retaining the complement couplingT12. Do not replace this with a disconnected seventh-order catalogue.",
+  "continuum_claim": false,
+  "old_uniform_gap_recertified": false,
+  "remote_write_performed": false,
+  "background_research": false
+}

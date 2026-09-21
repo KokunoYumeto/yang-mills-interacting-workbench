@@ -1,0 +1,128 @@
+cube_opposite begin ((0, 0, 0, 0, 1), (0, 0, 0, 0, 2), (0, 0, 0, 1, 2), (0, 0, 1, 0, 1), (0, 1, 0, 0, 2), (1, 0, 0, 1, 2)) (0, 1, 1, 0, 1, 1)
+correlation done 4.2393799789999775 [{'energy': '3', 'power': 1, 'coefficient': '-235/648'}, {'energy': '3', 'power': 2, 'coefficient': '10/27'}, {'energy': '9/2', 'power': 1, 'coefficient': '1123/2916'}, {'energy': '9/2', 'power': 2, 'coefficient': '23/81'}, {'energy': '9/2', 'power': 3, 'coefficient': '1/9'}, {'energy': '6', 'power': 1, 'coefficient': '1/648'}]
+{
+  "name": "cube_opposite",
+  "faces": [
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      2
+    ]
+  ],
+  "source_exponents": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "marked_indices": [
+    0,
+    3
+  ],
+  "resolvent": [
+    {
+      "energy": "3",
+      "power": 1,
+      "coefficient": "-235/648"
+    },
+    {
+      "energy": "3",
+      "power": 2,
+      "coefficient": "10/27"
+    },
+    {
+      "energy": "9/2",
+      "power": 1,
+      "coefficient": "1123/2916"
+    },
+    {
+      "energy": "9/2",
+      "power": 2,
+      "coefficient": "23/81"
+    },
+    {
+      "energy": "9/2",
+      "power": 3,
+      "coefficient": "1/9"
+    },
+    {
+      "energy": "6",
+      "power": 1,
+      "coefficient": "1/648"
+    }
+  ],
+  "static": "83/3888",
+  "covariance": "35/1458",
+  "heat": [
+    {
+      "energy": "3",
+      "degree": 0,
+      "coefficient": "-235/648"
+    },
+    {
+      "energy": "3",
+      "degree": 1,
+      "coefficient": "10/27"
+    },
+    {
+      "energy": "9/2",
+      "degree": 0,
+      "coefficient": "1123/2916"
+    },
+    {
+      "energy": "9/2",
+      "degree": 1,
+      "coefficient": "23/81"
+    },
+    {
+      "energy": "9/2",
+      "degree": 2,
+      "coefficient": "1/18"
+    },
+    {
+      "energy": "6",
+      "degree": 0,
+      "coefficient": "1/648"
+    }
+  ],
+  "elapsed": 4.2665271999999845
+}

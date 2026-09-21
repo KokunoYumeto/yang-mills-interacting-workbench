@@ -110,6 +110,8 @@ We controlled the residual left by that pulse comparison using its computed axia
 
 ## Yang–Mills states, interactions and limits
 
+**21 September continuation:** [heat, volume and full complementary-space return](yang-mills/consolidation/20260921/) now records the complete fourth-order heat calculation, box-independent row estimates and a fixed-spacing spatial-volume limit. The original state and energy Grams quantify the full complementary relaxation, including all mixed terms; at `g² ≥ 16` its energy loss is less than one part in a thousand. The unchanged proof texts and both cumulative archives accompany fresh normal/optimized finite checks. The foundation accounts below remain dated historical routes, not substitutes for these later arguments.
+
 **Source:** Yang–Mills interacting workbench source edition (2026-09-09 / source revision 8dc1a52). Test the selected 9 September 2026 Yang–Mills source edition's explicit finite-box interacting system against quantum blocking, nonabelian interaction, vacuum, and continuum-limit requirements. Each route names the finite-box or lattice object it actually computes. The results concern selected channels, fixed boxes, or specified paths; they do not by themselves establish a four-dimensional mass gap.
 
 <a id="ym-quantum-blocking"></a>

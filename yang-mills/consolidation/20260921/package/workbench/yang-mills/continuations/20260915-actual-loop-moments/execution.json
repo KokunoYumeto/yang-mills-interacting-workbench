@@ -1,0 +1,207 @@
+{
+  "analytic_proof_formalized": false,
+  "executed_utc": "2026-09-15T00:00:26.426206+00:00",
+  "finite_checks": 134,
+  "intentional_failed_executions": 6,
+  "negative_controls": 12,
+  "new_Lean_run": false,
+  "parent_commit": "e98b2c3af77f66fb1c1396143ca53daef586404f",
+  "parent_replays": [
+    {
+      "checks": 189,
+      "command": [
+        "python",
+        "-B",
+        "yang-mills/continuations/20260914-coupled-response/check.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260914-coupled-response/verification.json"
+      ],
+      "exit_code": 0,
+      "negative_controls": 12,
+      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
+    },
+    {
+      "checks": 189,
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "yang-mills/continuations/20260914-coupled-response/check.py",
+        "--verify-receipt",
+        "yang-mills/continuations/20260914-coupled-response/verification.json"
+      ],
+      "exit_code": 0,
+      "negative_controls": 12,
+      "stdout_sha256": "8678d6b9e9c17941676ad5c038e137152841387147fe709bca489dd8086b6075"
+    }
+  ],
+  "publication": {
+    "delivery": "review-ready additive patch and complete sources",
+    "discovered_GitHub_actions": 48,
+    "gh_cli_available": false,
+    "remote_write_performed": false,
+    "write_actions_available": false
+  },
+  "records": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "fresh_copy": false,
+      "intended_error": null,
+      "label": "original",
+      "stderr": "",
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "fresh_copy": false,
+      "intended_error": null,
+      "label": "original-optimized",
+      "stderr": "",
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "fresh_copy": true,
+      "intended_error": null,
+      "label": "fresh",
+      "stderr": "",
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 0,
+      "fresh_copy": true,
+      "intended_error": null,
+      "label": "fresh-optimized",
+      "stderr": "",
+      "stdout_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad.json"
+      ],
+      "exit_code": 1,
+      "fresh_copy": true,
+      "intended_error": "receipt-mismatch",
+      "label": "corrupt-receipt",
+      "stderr": "FAIL: receipt-mismatch\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "bad.json"
+      ],
+      "exit_code": 1,
+      "fresh_copy": true,
+      "intended_error": "receipt-mismatch",
+      "label": "corrupt-receipt-optimized",
+      "stderr": "FAIL: receipt-mismatch\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "fresh_copy": true,
+      "intended_error": "receipt-mismatch",
+      "label": "changed-note",
+      "stderr": "FAIL: receipt-mismatch\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "fresh_copy": true,
+      "intended_error": "receipt-mismatch",
+      "label": "changed-note-optimized",
+      "stderr": "FAIL: receipt-mismatch\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "fresh_copy": true,
+      "intended_error": "missing-required-source:RESEARCH_NOTE.md",
+      "label": "missing-note",
+      "stderr": "FAIL: missing-required-source:RESEARCH_NOTE.md\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python",
+        "-O",
+        "-B",
+        "verify.py",
+        "--verify-receipt",
+        "verification.json"
+      ],
+      "exit_code": 1,
+      "fresh_copy": true,
+      "intended_error": "missing-required-source:RESEARCH_NOTE.md",
+      "label": "missing-note-optimized",
+      "stderr": "FAIL: missing-required-source:RESEARCH_NOTE.md\n",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "remote_write_performed": false,
+  "schema": "ym-actual-moments-execution-v1",
+  "successful_executions": 4,
+  "vacuum_numerical_integration": false,
+  "verification_sha256": "11148b0572b95aac2792054fe32ad6ea9547efec2a76cc4847b22767f193d04a"
+}

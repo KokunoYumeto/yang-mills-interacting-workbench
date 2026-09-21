@@ -157,14 +157,27 @@ def programmes() -> list[dict]:
             "title": "Yang–Mills research workbench",
             "human_entry": "yang-mills/README.md",
             "human_reader": "yang-mills/consolidation/20260917/reader/yang_mills_quartic_cube_reader.pdf",
-            "latest_continuation": "yang-mills/consolidation/20260919/README.md",
+            "latest_continuation": "yang-mills/consolidation/20260921/README.md",
             "ai_entry": "yang-mills/AI_READING_INDEX.md",
             "source_directory": "yang-mills/",
-            "research_state_document": "yang-mills/consolidation/20260919/README.md",
-            "source_manifest": "yang-mills/consolidation/20260919/SOURCE_MANIFEST.json",
+            "research_state_document": "yang-mills/consolidation/20260921/README.md",
+            "source_manifest": "yang-mills/consolidation/20260921/package/MANIFEST.json",
+            "source_intake": "yang-mills/consolidation/20260921/SOURCE_INTAKE.json",
+            "fresh_finite_checks": "yang-mills/consolidation/20260921/checks/EXECUTION.json",
             "foundation_edition_doi": "10.5281/zenodo.22678364",
             "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678364",
             "research_state": (
+                "The 21 September heat and volume edition adds complete fourth-order "
+                "heat and first-band calculations, a box-independent all-time row "
+                "estimate on source radius 3/256, a fixed-spacing spatial-volume "
+                "construction and quantitative full-complement energy minimization. "
+                "At g^2>=16 the latter loses less than one part in a thousand of the "
+                "original plaquette-family energy, in every original box and the "
+                "constructed infinite family. Both cumulative archives and all 2015 "
+                "volume-edition files are preserved. Fresh ordinary/optimized finite "
+                "audits pass; the written analytic arguments are not formal or "
+                "independent external proof certificates. The shrinking-coupling "
+                "continuum route leaves the stated strong-coupling domain. "
                 "The 19 September continuation adds preserved sixth-source, eighth-energy "
                 "and finite plaquette-response manuscripts, exact arithmetic checks and "
                 "minimum-energy support maps. New spatial coefficient tables and the final "
@@ -183,7 +196,8 @@ def programmes() -> list[dict]:
             ),
             "description_basis": ["yang-mills/README.md", "yang-mills/AI_READING_INDEX.md",
                                   "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
-                                  "yang-mills/consolidation/20260919/README.md"],
+                                  "yang-mills/consolidation/20260919/README.md",
+                                  "yang-mills/consolidation/20260921/README.md"],
         },
         {
             "id": "S6",
