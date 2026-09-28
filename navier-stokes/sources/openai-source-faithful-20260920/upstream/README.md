@@ -17,6 +17,8 @@ The PDF displays `OPENAI` as its author and no visible version label. No semanti
 
 ## Verification status
 
+**Corrected 28 September 2026:** equation (10.20), page 124, now has the full product under the square root. The [D1 erratum](evidence/errata/D1.md) documents the source comparison and the corrected source and PDF.
+
 The release gate for this repository accepts only a byte state for which [`TRANSCRIPTION_AUDIT.json`](evidence/transcription/TRANSCRIPTION_AUDIT.json) has status `pass` and its recorded hashes match every staged section file. The accepted audit state has:
 
 - 166 source-page markers and 166 page-check records, covering pages 1 through 166 with no pending range;
@@ -30,7 +32,7 @@ Each page was compared with a 180-dpi rendering of the frozen official PDF. Text
 
 The supplied cumulative PDF has 166 pages. Its exact byte hash, and the hashes of every other staged file, are recorded in [`MANIFEST.sha256`](MANIFEST.sha256). The audit establishes the reported transcription checks; it does not turn this repository into official source, independently prove the paper's mathematics, or decide any Clay Mathematics Institute recognition or prize process.
 
-The final checked PDF is 3,679,554 bytes with SHA-256 `67bca97d638868c2fcb34b0ef1acdc4918cfcbb1a210afe98f0019a3c93fe8d9`. Two final pdfTeX runs produced the same PDF hash and byte-identical console transcripts. All 166 pages were rendered from those exact PDF bytes and inspected. The page records in [`visual_qa.jsonl`](evidence/build/visual_qa.jsonl) report no blank or missing pages, clipped text or equations, lost figures, bad glyphs, or broken layouts.
+The corrected PDF is 3,679,582 bytes with SHA-256 `41fd1d62501d4776efbfd3e55cda0e97d46e9f443e0a157e30c75eb98bcd4d2a`. It built successfully in two pdfTeX passes and has 166 pages. The [D1 verification record](evidence/errata/D1-verification.json) describes the new page comparison. Earlier records in `visual_qa.jsonl` concern the previous build; their page-124 check missed the radical extent, which D1 corrects.
 
 The notation checks are under [`evidence/integration/`](evidence/integration/). The static manuscript-to-Lean map under [`evidence/lean/`](evidence/lean/) covers all 80 numbered statements and points to 132 exact Lean declaration locations in the frozen commit. It is a source-reading map, not a Lean build receipt: Lean, Lake, and Elan were not run for that check.
 
@@ -70,7 +72,7 @@ The paper's six figures occur on official PDF pages 4, 5, 9, 10, 13, and 15. The
 - `evidence/integration/` records the full notation audit.
 - `evidence/lean/` contains the static manuscript-to-Lean map and its stated limits.
 - `evidence/build/` contains the final build and every-page visual-check receipts.
-- `evidence/errata/` is separate from the faithful text; suspected source defects or proposed corrections belong there and are never silently applied.
+- `evidence/errata/` records transcription corrections and distinguishes them from suspected defects in the source paper. Confirmed transcription mistakes are fixed in the LaTeX and rebuilt outputs.
 - `scripts/` contains the structural audit and inventory builder.
 - `MANIFEST.sha256` binds the staged repository files to exact bytes.
 

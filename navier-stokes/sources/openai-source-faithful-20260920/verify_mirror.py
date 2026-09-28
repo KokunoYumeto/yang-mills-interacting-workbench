@@ -1,12 +1,12 @@
-"""Verify the complete pinned public reconstruction without executing its code."""
+"""Verify the corrected public reconstruction, its manifest and source archive."""
 from pathlib import Path, PurePosixPath
 import hashlib
 import json
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
-ARCHIVE_SHA256 = '997e825e34fa825d189bd301edaa6251e5505710fe294bec99c83a9712558e4c'
-PDF_SHA256 = '67bca97d638868c2fcb34b0ef1acdc4918cfcbb1a210afe98f0019a3c93fe8d9'
+ARCHIVE_SHA256 = 'e163f0d4c92b427f368a8113600cf94f02200a76685f0c0d5859ee8e08ba02a1'
+PDF_SHA256 = '41fd1d62501d4776efbfd3e55cda0e97d46e9f443e0a157e30c75eb98bcd4d2a'
 
 
 def require(condition, message):
@@ -43,10 +43,11 @@ def main():
             require(package.read(entry) == (source / entry.filename).read_bytes(),
                     'Extracted file differs: ' + entry.filename)
     actual = {p.relative_to(source).as_posix() for p in source.rglob('*') if p.is_file()}
-    require(actual == names, 'Unexpected file in preserved snapshot')
+    require(actual == names, 'Unexpected file in corrected source')
     require(sha((source/'output/pdf/source-faithful-reconstruction.pdf').read_bytes()) == PDF_SHA256,
             'PDF identity differs')
-    print(json.dumps({'status':'passed', 'source_commit':'5e162f34cd2d3581f890660e81fbf063509085d0',
+    print(json.dumps({'status':'passed', 'base_source_commit':'5e162f34cd2d3581f890660e81fbf063509085d0',
+                      'correction':'D1, applied 2026-09-28',
                       'manifest_files':len(rows), 'complete_snapshot_files':len(names),
                       'archive_sha256':ARCHIVE_SHA256, 'pdf_sha256':PDF_SHA256,
                       'scope':'File identities and complete mirror; no rebuild or mathematical re-audit.'}, indent=2))
