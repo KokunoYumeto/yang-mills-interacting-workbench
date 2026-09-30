@@ -73,3 +73,6 @@ calculation. The original corrected reader, source reconstruction and
 vacuum-hydrodynamics continuation are retained. The infinite modified
 trajectory and complete independent global NS validation remain unfinished.
 The Everyday English reference material is an unfinished experiment.
+
+
+[30 September archived collection](https://zenodo.org/records/23056668): retained earlier readers, current complete TeX, scoped proofs and the unfinished Everyday English reference ZIP.

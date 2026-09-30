@@ -52,3 +52,6 @@ Permanent corrected edition: [10.5281/zenodo.22678406](https://doi.org/10.5281/z
 The GitHub PDF, TeX, source ZIP and check files are byte-identical to their matching corrected Zenodo artifacts; the [release map](../releases/2026-09-09/) records the differently named aliases.
 
 [All topics](../README.md) · [Yang–Mills maps](../yang-mills/) · [S6 topology](../s6/)
+
+
+[30 September archived collection](https://zenodo.org/records/23056668): retained earlier readers, current complete TeX, scoped proofs and the unfinished Everyday English reference ZIP.
