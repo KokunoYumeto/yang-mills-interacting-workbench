@@ -1,0 +1,543 @@
+\section{The actual third transition and its revived second parent}
+\label{tt:section}
+
+The released transition is the full physical interval
+$[t_3^a,t_3^a+\Gamma_3^{-1}]$, with
+$\dot\alpha=(1-\eta_b)\mathcal F_2+\eta_b\mathcal F_3$ and
+$\eta_b=\eta(\Gamma_3(t-t_3^a))$; see source (3.4)--(3.6),
+Section 3.7.5, pp.~30--31, and (5.22), p.~46.
+The following calculation retains that control, both evolving parents,
+their physical diffusion, and the original laboratory gravity.
+It does not use the exceptional fixed geometry of transition two.
+All older activation weights are one on this interval.
+
+\subsection{Exact determinant coordinates, coefficients, and inverse}
+
+Keep $A_0,\mu,\nu=\sqrt{A_0}$, $K_j=\mu\widehat\lambda_j$,
+$s_*$, and the actual inherited scales $\sigma_1,\sigma_2$.
+Physical viscosity and thermal diffusivity equal $d>0$.
+Write
+\begin{equation}\label{tt:constants}
+ a=\sin s_2,\quad c=A_0\cos s_*,\quad C=A_0\sin s_*,
+ \quad s=s_3=L_3\sigma_1/\sigma_2,\quad
+ \Gamma=\Gamma_3=\sigma_2\sin s.
+\end{equation}
+Thus $a,s$ and $d$ are distinct parameters. Let $t_b=t_2^b$,
+let $r_b=|\zeta_2(t_b)|$, and put $b=r_b\sin s>0$.
+The original third datum is $\zeta_3(t_b)=e(s)$ and
+$M_3(t_b)=I$, while $\zeta_2(t_b)=r_be_2$.
+For $e(\phi)=(\sin\phi,\cos\phi)$ and
+$J=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$,
+the two adjacent oriented determinants are exactly
+\begin{equation}\label{tt:determinants}
+ \det(\zeta_1,\zeta_2)=-a,\qquad
+ \det(\zeta_2,\zeta_3)=-b.
+\end{equation}
+Both identities persist through growth, transition and later controls
+whenever their equations exist. Indeed $|\zeta_1|=1$ and
+$\zeta_1$ also solves the transport equation of $\zeta_2$:
+the added first shear has transpose annihilating $\zeta_1$.
+Likewise the added second shear has transpose annihilating $\zeta_2$,
+so $\zeta_2,\zeta_3$ solve the same third transport equation.
+The determinant of two solutions of $\dot z=-D^Tz$ has derivative
+$-\operatorname{tr}(D)$ times itself, by differentiating its two
+columns. Every parent matrix has zero trace, proving both assertions.
+
+Use the following coordinates, with their original dimensional factors:
+\begin{equation}\label{tt:coordinates}
+\begin{gathered}
+ \zeta_2=h\zeta_1-aJ\zeta_1,\qquad
+ \zeta_3=x\zeta_1-yJ\zeta_1,\qquad D=h^2+a^2,\\
+ g=\zeta_2\cdot\zeta_3=hx+ay,\qquad
+ hy-ax=b,\qquad
+ x=\frac{hg-ab}{D},\quad y=\frac{ag+hb}{D},\\
+ E_1=-K_1\Theta_1=A_1,\qquad
+ E_2=-K_2\Theta_2=A_2/\sqrt D,\qquad
+ R=|\zeta_3|^2=\frac{g^2+b^2}{D}.
+\end{gathered}
+\end{equation}
+Here $D$ and $R$ are scalars, not velocity-gradient matrices.
+In particular the actual second amplitude is $A_2=\sqrt D E_2$;
+replacing it by $E_2$ would lose the evolving phase length.
+Put $\theta=\phi_2$, so the full phase and angular inverse is
+\begin{align}\label{tt:inverse}
+ \zeta_1&=\frac1{\sqrt D}
+    (h\sin\theta-a\cos\theta,\ h\cos\theta+a\sin\theta),\\
+ \zeta_2&=\sqrt D(\sin\theta,\cos\theta),\nonumber\\
+ \zeta_3&=\frac1{\sqrt D}
+    (g\sin\theta+b\cos\theta,\ g\cos\theta-b\sin\theta),\nonumber\\
+ \phi_1&=\theta-\arctan(a/h),\qquad
+ \alpha=s_*-\phi_1.\nonumber
+\end{align}
+The domain used below has $h,g>0$ and
+$g\cos\theta-b\sin\theta>0$; hence these expressions select the
+positive second-component branches. The original deformation matrices are
+\begin{equation}\label{tt:matrices}
+ M_1=R_\alpha,\qquad
+ M_2=R_{\alpha-s_*}
+ \begin{pmatrix}1&-(h-\cos s_2)/a\\0&1\end{pmatrix},\qquad
+ M_3=\mathcal L(t)^{-T}\mathcal L(t_b)^T,
+ \quad\mathcal L=(\zeta_2\ \zeta_3).
+\end{equation}
+The first two preserve their original activation data, and
+$\det\mathcal L=-b\ne0$. Differentiating the last formula using
+$\dot{\mathcal L}=-D_{<3}^T\mathcal L$ gives
+$\dot M_3=D_{<3}M_3$, $M_3(t_b)=I$, and
+$M_3^{-T}e(s)=\zeta_3$. All three have determinant one.
+Thus the inverse gives the complete original matrix evolution, rather
+than merely the newest phase direction.
+
+Define the exact temperature numerators
+\begin{equation}\label{tt:numerators}
+ N_2=a(E_1+c)+Ch,\qquad
+ N_3=(E_1+c)y+Cx+bE_2.
+\end{equation}
+The full older physical equations are
+\begin{align}\label{tt:physical_closed}
+ \dot h&=a\Omega_1,&
+ \dot g&=\Omega_1\frac{2ahg+(h^2-a^2)b}{D}+b\Omega_2,\\
+ \dot E_1&=-C\Omega_1-dK_1^2E_1,&
+ \dot\Omega_1&=-E_1\zeta_{1,1}-dK_1^2\Omega_1,\nonumber\\
+ \dot E_2&=-\frac{N_2}{D}\Omega_2-dK_2^2DE_2,&
+ \dot\Omega_2&=-E_2\sqrt D\sin\theta-dK_2^2D\Omega_2,\nonumber\\
+ \dot\theta&=-\dot\alpha-\frac{a^2\Omega_1}{D}.&&\nonumber
+\end{align}
+In terms of the actual amplitude $A_2$ the fifth equation is exactly
+\[
+ \dot A_2=\left(\frac{ah\Omega_1}{D}-dK_2^2D\right)A_2
+               -\frac{N_2}{\sqrt D}\Omega_2.
+\]
+The exact source feedbacks and their factored difference are
+\begin{align}\label{tt:feedback}
+ \mathcal F_2&=\frac{a\Omega_1(h\tan\theta-a)}{D},\\
+ \mathcal F_3&=
+ \frac{\Omega_1y(h\sin\theta-a\cos\theta)+b\Omega_2\sin\theta}
+      {g\cos\theta-b\sin\theta},\nonumber\\
+ \mathcal F_3-\mathcal F_2
+ &=\frac{b\Omega_1(h\sin\theta-a\cos\theta)
+                  (h\cos\theta+a\sin\theta)}
+         {D\cos\theta(g\cos\theta-b\sin\theta)}
+     +\frac{b\Omega_2\sin\theta}{g\cos\theta-b\sin\theta}.\nonumber
+\end{align}
+With $\eta_b$ as specified, the final equation in
+\eqref{tt:physical_closed} becomes
+\begin{equation}\label{tt:angle}
+ \dot\theta=-\frac{ah\Omega_1}{D}\tan\theta
+                  -\eta_b(\mathcal F_3-\mathcal F_2).
+\end{equation}
+At the actual transition entry $\theta=\Omega_2=0$,
+$\mathcal F_3-\mathcal F_2=-abh\Omega_1/(Dg)<0$.
+The switching therefore drives a positive second angle and a negative
+second vorticity, as proved on the full interval below.
+
+\begin{proof}[Verification of the closed equations and exact invariants]
+The rotating base and the sum of inherited gradients satisfy
+\begin{gather*}
+ R_\alpha e_2=\cos s_*\zeta_1+\sin s_*J\zeta_1,\\
+ G_{<3}=-(E_1+c+hE_2)\zeta_1-(C-aE_2)J\zeta_1.
+\end{gather*}
+Taking $-J\zeta_2\cdot G_{<2}$ and
+$-J\zeta_3\cdot G_{<3}$ gives respectively $N_2,N_3$;
+the shear-amplitude coefficients are therefore
+$a_2=N_2/(K_2D)$ and $a_3=N_3/(K_3R)$, with their original
+signs. Since $\dot\zeta_1=\dot\alpha J\zeta_1$, the phase
+equations in this moving orthonormal basis give, component by component,
+\[
+ \dot h=a\Omega_1,\qquad
+ \dot x=\Omega_1y+\frac{bh}{D}\Omega_2,\qquad
+ \dot y=\frac{ba}{D}\Omega_2.
+\]
+The derivative of $hy-ax$ is zero, and differentiating $g=hx+ay$
+proves its displayed row. The damped amplitude rows then give every
+remaining row of \eqref{tt:physical_closed}. Substituting these phases
+in the source feedback formula proves \eqref{tt:feedback}; the polar
+phase equation gives \eqref{tt:angle}. Conversely these calculations
+reverse: differentiating \eqref{tt:inverse}, with
+\eqref{tt:physical_closed} and \eqref{tt:angle}, gives the three
+physical phase equations and the source angular control. Together with
+\eqref{tt:matrices}, the temperature inverse and the vorticity rows,
+this proves equivalence on the stated domain.
+
+There is an exact cancellation despite the revival of $\Omega_2$:
+\begin{equation}\label{tt:numerator_derivatives}
+ \dot N_2=-adK_1^2E_1,\qquad
+ \dot N_3=-d(K_1^2E_1y+bK_2^2DE_2).
+\end{equation}
+Indeed
+\[
+\begin{aligned}
+ \dot N_3={}&(-C\Omega_1-dK_1^2E_1)y
+ +(E_1+c)\frac{ba}{D}\Omega_2
+ +C\left(\Omega_1y+\frac{bh}{D}\Omega_2\right)\\
+ &+b\left(-\frac{a(E_1+c)+Ch}{D}\Omega_2-dK_2^2DE_2\right),
+\end{aligned}
+\]
+whose two shear groups cancel exactly. Differentiating $N_2$ gives
+its first formula. Thus both numerators are conserved when $d=0$
+even though the individual phases, amplitudes and controls evolve.
+For positive $d$ the two losses in $\dot N_3$ are retained explicitly.
+\end{proof}
+
+\subsection{The general aggregate identity, including activation}
+
+The cancellation has an exact form for any finite active family.
+Write $B_j=w_jK_j\Theta_j\zeta_j$, $r_j=|\zeta_j|$,
+$E_j=-K_j\Theta_j$, and
+\[
+ G_{<q}=-A_0R_\alpha e_2+\sum_{j<q}B_j,\qquad
+ D_{<q}=\dot\alpha J+
+      \sum_{j<q}w_j\Omega_j\frac{J\zeta_j\otimes\zeta_j}{r_j^2}.
+\]
+Use the phase equations and the physical temperature rows with
+thermal diffusivity $d$, without added amplitude forcing. Direct
+pairwise cancellation gives
+\begin{equation}\label{tt:aggregate}
+ \dot G_{<q}+D_{<q}^TG_{<q}
+ =\sum_{j<q}(\dot w_jK_j\Theta_j
+                  -dw_jK_j^3r_j^2\Theta_j)\zeta_j.
+\end{equation}
+For precision, the $j$th shear applied to all lower-index gradient
+terms is
+$w_j\Omega_j\zeta_j(J\zeta_j\cdot G_{<j})/r_j^2$.
+It cancels $w_jK_j\dot\Theta_j\zeta_j$ apart from diffusion.
+The terms with lower shears cancel the phase derivative in $B_j$,
+its self-shear vanishes because $J\zeta_j\cdot\zeta_j=0$,
+and the rotational base and phase terms cancel exactly.
+The only terms left are precisely those displayed in
+\eqref{tt:aggregate}, including $\dot w_j$.
+
+Put $N_q=-J\zeta_q\cdot G_{<q}$ and
+$\Delta_{jq}=\det(\zeta_j,\zeta_q)$.
+For any trace-free $2\times2$ matrix $D$, direct multiplication gives
+$JD^T+DJ=0$. Differentiating the bilinear pairing using
+$\dot\zeta_q=-D_{<q}^T\zeta_q$ thus gives
+\begin{equation}\label{tt:general_numerator}
+ \dot N_q=
+ \sum_{j<q}(\dot w_j-dw_jK_j^2r_j^2)
+               E_j(-\Delta_{jq}).
+\end{equation}
+Equivalently its diffusion part is
+$\sum_{j<q}dK_j^2r_j^2J\zeta_q\cdot B_j$.
+The sign is fixed by $\det(\zeta_q,\zeta_j)=-\Delta_{jq}$,
+not by a convention about unoriented angle sizes.
+No nonadjacent determinant has been assumed constant.
+For $q=3$, $-\Delta_{13}=y$, $-\Delta_{23}=b$, and $w_1=w_2=1$;
+\eqref{tt:general_numerator} gives exactly
+\eqref{tt:numerator_derivatives}. During activation the term
+$\dot w_j E_j(-\Delta_{jq})$ remains, so inviscid constancy is
+asserted only after those weights become constant.
+
+\subsection{Full transition from the actual third-growth endpoint}
+
+Choose the original source data and positive physical diffusivity by
+\eqref{tge:Y3}--\eqref{tge:d3}, and construct the actual third threshold
+in Theorem~\ref{tge:actual_threshold}.
+Here are the actual endpoint bounds used in the finite proof. They are
+quantities at the already constructed threshold $t_a=t_3^a$, not
+assumptions about the subsequent unknown trajectory. The preceding
+third-growth calculation starts at the proved second return and gives
+\begin{equation}\label{tt:entrybox}
+\begin{gathered}
+ 1\leq r_b\leq\sqrt{10},\quad
+ h(t_a)\in[\sqrt{1-a^2},3),\quad 1\leq D(t_a)<10,\quad
+ \theta(t_a)=\Omega_2(t_a)=0,\\
+ E_1(t_a)/\sigma_1^2\in[1/4,2],\quad
+ 0<\Omega_1(t_a)/\sigma_1<9,\quad
+ A_2(t_a)/\sigma_2^2\in[2/5,2],\\
+ 1\leq R(t_a)\leq2,\quad
+ \tfrac12\sin s\leq\zeta_{3,1}(t_a)\leq\sin s,\quad
+ \zeta_{3,2}(t_a)\geq\cos s>15/16,\\
+ \frac25\leq\frac{N_3(t_a)}{\sigma_2^2\sin s}\leq\frac{16}{15},
+ \qquad \frac12\leq
+ \frac{\sigma_2\Omega_3(t_a)}{K_3\Theta_3(t_a)}\leq\sqrt5,\\
+ \Theta_3(t_a)=-\frac{A_0}{\mu}\widehat\lambda_3^{-7/8},\qquad
+ 0<c/\sigma_1^2\leq1/4,\quad
+ 0<C/\sigma_1^2\leq a/32.
+\end{gathered}
+\end{equation}
+In particular $E_2(t_a)/\sigma_2^2\in[1/8,2]$:
+the lower bound follows from $(2/5)/\sqrt{10}>1/8$.
+Also $g(t_a)=\sqrt{D(t_a)}\zeta_{3,2}(t_a)$ lies in
+$[15/16,\sqrt{20}]$. These are the exact converted endpoint
+bounds needed below. Retain the explicit source restrictions
+\begin{equation}\label{tt:source_box}
+ 0<a\leq1/512,\quad 0<s\leq a,\quad L_3\geq16384,
+ \qquad \delta_2=\frac{dK_2^2}{\Gamma}\leq\frac1{128},
+ \qquad \delta_3=\frac{dK_3^2}{\Gamma}\leq\frac1{108}.
+\end{equation}
+Every bound in \eqref{tt:entrybox} and \eqref{tt:source_box} follows
+from that explicit construction, as we now verify. The second hold
+gives $E_1/\sigma_1^2>191/512>1/4$ and all its other displayed
+first-parent bounds. Its second-temperature diffusion exponent on
+the third growth is at most $\log2$, while its length increases.
+Consequently
+\[
+ \frac{A_2(t_a)}{\sigma_2^2}
+ =\frac{A_{2,b}}{\sigma_2^2}
+    \frac{\sqrt{D(t_a)}}{r_b}
+    \exp\!\left(-dK_2^2\int_{t_b}^{t_a}D\,dt\right)
+ \in[2/5,2].
+\]
+Here the lower bound uses $A_{2,b}/\sigma_2^2\geq4/5$,
+$\sqrt D/r_b\geq1$ and $e^{-\log2}=1/2$; the upper bound uses
+$A_{2,b}/\sigma_2^2\leq1$ and $\sqrt D/r_b<2$.
+Equations~\eqref{tge:horizon_geometry}, \eqref{tge:coeffbox} and
+\eqref{tge:initial_rate} give the displayed third length, first
+component and numerator bounds. The positive second component has
+square $R-\zeta_{3,1}^2\geq1-\sin^2s=\cos^2s$, so it is at
+least $\cos s$. Equation~\eqref{tge:quotient} supplies the actual
+signed pair and its quotient. The two base bounds are exactly
+\eqref{ave:C_bounds} after the stated change of notation.
+Finally \eqref{tge:Y3} gives $L_3>16384$ and $a<1/12288<1/512$,
+and its proved angle satisfies $s\leq a$. The two positive entries
+in \eqref{tge:d3}, with \eqref{tge:rate_scale}, give
+\[
+ \delta_2\leq\frac{\log2}{150L_3}<\frac1{128},\qquad
+ \delta_3\leq\frac1{120}<\frac1{108}.
+\]
+Thus no assumption on an unconstructed transition is present.
+
+\begin{theorem}\label{tt:transition}
+For every original source datum, with frequencies and positive physical
+diffusivity chosen by \eqref{tge:Y3}--\eqref{tge:d3}, the actual third
+threshold constructed above is followed by the entire original third
+transition, which exists
+through $t_1=t_a+\Gamma^{-1}$. Put
+$\tau=\Gamma(t-t_a)$, $u=\theta/s$, and $V=\Omega_2/\sigma_2$.
+Throughout $0\leq\tau\leq1$,
+\begin{equation}\label{tt:revivalbounds}
+ 0\leq u\leq\frac{640a}{L_3},\qquad
+ -\frac{7040a}{L_3}\leq V\leq0.
+\end{equation}
+Both inequalities have strict signs after the switching profile has
+become positive on an interval. The full older geometry obeys
+\begin{equation}\label{tt:olderbounds}
+\begin{gathered}
+ \sqrt{1-a^2}\leq h<13/4,\quad 1\leq D<11,\quad
+ 3/4<g<5,\quad x,y>0,\\
+ 1/8<E_1/\sigma_1^2\leq2,\quad
+ 0<\Omega_1/\sigma_1<10,\quad
+ 1/16<E_2/\sigma_2^2<3,\\
+ \cos\theta>15/16,\quad
+ g\cos\theta-b\sin\theta>2/3.
+\end{gathered}
+\end{equation}
+All source feedback denominators are therefore positive, and
+\eqref{tt:matrices} gives finite original matrices and inverses.
+The third numerator and phase length satisfy
+\begin{equation}\label{tt:coefficientvariation}
+ e^{-11\delta_2\tau}N_3(t_a)\leq N_3(t)\leq N_3(t_a),
+ \qquad
+ \left|\log\frac{|\zeta_3(t)|}{|\zeta_3(t_a)|}\right|
+       \leq\frac{46000a}{L_3}<\frac1{128}.
+\end{equation}
+The actual newest amplitude remains negative and its quotient
+$v=\sigma_2\Omega_3/(K_3\Theta_3)$ satisfies $1/2\leq v\leq3$.
+Its full transition logarithmic gain is bounded by
+\begin{equation}\label{tt:gain}
+ \frac1{18}\leq\log\frac{-\Theta_3(t_1)}{-\Theta_3(t_a)}\leq4.
+\end{equation}
+The exact exponent, including physical diffusion, is given in the proof.
+This theorem completes the transition; it does not assert a third
+shooting root or an infinite fixed-viscosity cascade.
+\end{theorem}
+
+\begin{proof}
+Set $L=L_3$, $\epsilon=\sigma_1/\Gamma=s/(L\sin s)\leq2/L$,
+$q=\sigma_1/\sigma_2=s/L$, $E=E_1/\sigma_1^2$,
+$F=E_2/\sigma_2^2$, $\omega=\Omega_1/\sigma_1$,
+$\bar c=c/\sigma_1^2$, $\bar C=C/\sigma_1^2$ and
+$\delta_1=dK_1^2/\Gamma\leq\delta_2$.
+Primes now mean $d/d\tau$ exclusively. The exact dimensionless
+older equations, retaining each physical ratio, are
+\begin{align}\label{tt:scaled}
+ h'&=a\epsilon\omega,&
+ g'&=\epsilon\omega\frac{2ahg+(h^2-a^2)b}{D}
+                    +\frac b{\sin s}V,\\
+ E'&=-\epsilon\bar C\omega-\delta_1E,&
+ \omega'&=-\epsilon E\frac{h\sin(su)-a\cos(su)}{\sqrt D}
+                      -\delta_1\omega,\nonumber\\
+ F'&=-q\epsilon\frac{a(E+\bar c)+\bar Ch}{D}V
+                      -\delta_2DF,&
+ V'&=-F\sqrt D\frac{\sin(su)}{\sin s}-\delta_2DV.\nonumber
+\end{align}
+The exact $u'$ is \eqref{tt:angle} divided by $\Gamma s$,
+with \eqref{tt:feedback}; no approximation of either feedback occurs.
+
+Initially impose the temporary closed bounds
+$0\leq u\leq1/1024$, $-1/32\leq V\leq0$,
+$\sqrt{1-a^2}\leq h\leq13/4$, $3/4\leq g\leq5$,
+$1/8\leq E\leq3$, $0\leq\omega\leq10$, and $1/16\leq F\leq3$.
+The sign boundaries are invariant: at $u=0$, its vector field equals
+$\eta b\epsilon\omega ah/(sDg)\geq0$; at $V=0$ its vector field
+is nonpositive. Also
+$h\sin(su)<a\cos(su)$, since $s\leq a$ and $u\leq1/1024$.
+The $\omega$ equation and its positive datum imply $\omega>0$.
+These conclusions can equally be obtained from their integrating
+factors and a first-exit argument, so tangency of a sign boundary
+causes no loss of the sign assertion.
+
+The temporary bounds give $D\geq1$, because $h'\geq0$ and
+$D(t_a)\geq1$, and $D<11$. They give
+$\cos(su)>15/16$ and
+\[
+ g\cos(su)-b\sin(su)
+ >\frac34\frac{15}{16}-\frac{4a^2}{1024}>\frac23,
+\]
+using $b\leq\sqrt{10}\sin s<4s\leq4a$.
+Thus every equation is smooth on a fixed neighborhood of this box.
+Because $E$ decreases and $\omega'\leq\epsilon E a\leq6a/L$,
+\[
+ E\leq2,\quad 0<\omega\leq9+6a/L<10,\quad
+ h\leq3+20a/L<13/4.
+\]
+Integrating the $E$ row, using the temporary upper bounds, gives
+\[
+ E\geq\frac14-\frac{20a}{32L}-\frac3{128}>\frac18.
+\]
+The numerator in the $F$ equation obeys
+$0<a(E+\bar c)+\bar Ch<4a$. Since $V\leq0$,
+$F'\geq-11\delta_2F$, hence
+$F\geq\tfrac18e^{-11/128}>1/16$.
+Its positive derivative contribution is at most
+$q\epsilon(4a)/32\leq as/(4L^2)$, so $F<3$.
+The older contribution to $g'$ is positive, and
+\[
+ g\geq\frac{15}{16}-\frac{\sqrt{10}}{32}>\frac34,
+ \qquad
+ g\leq\sqrt{20}+\frac{300a}{L}<5.
+\]
+For the upper estimate use
+$[2ahg+(h^2-a^2)b]/D\leq2ag/h+b<15a$
+and $\epsilon\omega\leq20/L$.
+Also $hg-ab>0$ and $ag+hb>0$, proving $x,y>0$.
+
+It remains to strictly improve the two revival bounds. On the box,
+the first term in \eqref{tt:angle} is nonpositive. In the factored
+feedback difference its first numerator has negative first factor;
+the other factor is positive. Its absolute forcing in $u'$ is at most
+\[
+ \frac2L\,4\,10\,a\,\frac72\,\frac{16}{15}\,\frac32
+ =\frac{448a}{L}<\frac{512a}{L}.
+\]
+Here $|h\sin\theta-a\cos\theta|\leq a$,
+$h\cos\theta+a\sin\theta<7/2$, $b/s<4$, and $D\geq1$.
+The second-parent feedback term is at most $6|V|u$ because
+$b/\sin s<4$, $\sin(su)/s\leq u$, and the second denominator
+exceeds $2/3$. Therefore
+\[
+ u'\leq512a/L+(3/16)u,\qquad
+ u(\tau)\leq(512a/L)e^{3/16}<640a/L<1/1024.
+\]
+The elementary estimate $e^{3/16}<5/4$ follows, for example,
+from $e^x\leq(1-x)^{-1}$ for $0\leq x<1$.
+For $Z=-V\geq0$, the integrating factor in its equation gives
+\[
+ Z(\tau)\leq\int_0^\tau
+      F\sqrt D\frac{\sin(su)}{\sin s}\,dr
+ <11\int_0^\tau u\,dr\leq7040a/L<1/32,
+\]
+since $3\sqrt{11}(16/15)<11$ and $s/\sin s<16/15$.
+Every boundary has now been strictly improved, or has its invariant
+sign. The original positive data and integrating factors keep the
+positive quantities away from zero. The vector field remains in a
+compact subset of its smooth domain; its integral equation and the
+local existence theorem therefore extend it through $\tau=1$.
+This proves the full prescribed interval, not only a small initial
+piece. Once $\eta$ is positive on an interval, the strictly positive
+forcing at $u=0$ gives $u>0$ thereafter, and the integral for $Z$
+then gives $V<0$. No instantaneous derivative at a flat endpoint is
+used to assert this revival.
+
+For the numerator, $E_1,E_2,x,y,c,C>0$ and $D\geq1$ show
+\[
+ 0\leq K_1^2E_1y+bK_2^2DE_2\leq K_2^2D N_3.
+\]
+Equation \eqref{tt:numerator_derivatives} and its integrating factor
+give the first part of \eqref{tt:coefficientvariation}.
+For the length, the exact polar transport equation gives
+\[
+ \left|(\log|\zeta_3|)'\right|
+ \leq\epsilon\omega|\sin(\phi_3-\phi_1)|
+       +\frac{|V|}{\sin s}|\sin(\phi_3-\phi_2)|.
+\]
+The determinant coordinates give
+\[
+ |\sin(\phi_3-\phi_1)|=
+ \frac{ag+hb}{\sqrt D\sqrt{g^2+b^2}}\leq a+b/g<7a,
+ \qquad
+ |\sin(\phi_3-\phi_2)|=\frac b{\sqrt{g^2+b^2}}<6s.
+\]
+The cosine factors in the exact polar equation have absolute value
+at most one; these inequalities thus retain its full contribution.
+Consequently
+\[
+ |(\log|\zeta_3|)'|
+ \leq140a/L+(32/5)|V|\leq45196a/L<46000a/L<1/128.
+\]
+The last numerical inequality uses $a\leq1/512,L\geq16384$.
+This proves the second part of \eqref{tt:coefficientvariation}, and
+in particular $R(t)<2e^{1/64}<3$.
+
+For the newest linear pair define the exact scaled coefficients
+\[
+ \mathcal K=\frac{N_3}{\sigma_2^2\sin s\,R},\qquad
+ \mathcal B=\frac{\zeta_{3,1}}{\sin s}.
+\]
+At entry $1/5\leq\mathcal K(t_a)\leq16/15$.
+The proved variations give
+\[
+ \frac16<\frac15e^{-13/128}\leq\mathcal K
+ \leq\frac{16}{15}e^{1/64}<\frac98.
+\]
+For the lower strict inequality use $e^{-13/128}\geq115/128>5/6$;
+for the upper use $e^{1/64}\leq64/63$.
+Furthermore $(\log\sqrt D)'=ah\epsilon\omega/D\leq22a/L<1/64$.
+Because the second phase is vertical at entry,
+\[
+ \frac{\zeta_{3,1}(t)}{\zeta_{3,1}(t_a)}
+ =\frac{\sqrt{D(t_a)}}{\sqrt D}
+        \left(\cos\theta+\frac gb\sin\theta\right).
+\]
+Its lower bound is $(63/64)^2$, and its upper bound is
+$1+6u\leq1+3840a/L<9/8$, using $b\geq\sin s$.
+Thus
+\begin{equation}\label{tt:newestcoefficientbox}
+ 1/6<\mathcal K<9/8,\qquad 15/32<\mathcal B<9/8.
+\end{equation}
+Construct the Riccati equation $v'=\mathcal B-\mathcal K v^2$
+with its actual entry value. Its field points strictly inward at
+$v=1/2$ and $v=3$, since
+$15/32-(9/8)/4=3/16>0$ and $9/8-9/6=-3/8<0$.
+It exists on the entire interval with $1/2\leq v\leq3$.
+Then define
+\begin{equation}\label{tt:amplitudeinverse}
+ P_3(t)=P_3(t_a)
+ \exp\!\left(\int_0^\tau(\mathcal K v-\delta_3R)\,dr\right),
+ \qquad \Theta_3=-P_3,\quad
+ \Omega_3=-\frac{K_3}{\sigma_2}P_3v.
+\end{equation}
+Differentiating these expressions gives exactly
+$\dot\Theta_3=N_3\Omega_3/(K_3R)-dK_3^2R\Theta_3$
+and $\dot\Omega_3=K_3\zeta_{3,1}\Theta_3-dK_3^2R\Omega_3$.
+The inverse is thus the unique physical linear pair, by its integral
+equation; it has not assumed that its temperature avoids zero.
+Finally $\mathcal K v\geq1/12$, $\delta_3R<3/108$, and
+$\mathcal K v<27/8<4$ give
+$1/18\leq\mathcal K v-\delta_3R\leq4$.
+Integrating over the full unit transition proves \eqref{tt:gain}.
+\end{proof}
+
+The exact first, second and third diffusion exponents during this
+transition are respectively $\delta_1$, $\delta_2\int_0^1D\,d\tau$
+and $\delta_3\int_0^1R\,d\tau$. They equal
+$dK_j^2\int_{t_a}^{t_1}|\zeta_j(t)|^2dt$ in physical coordinates.
+The second phase and amplitude continue evolving inside these
+integrals. The end control is exactly $\dot\alpha=\mathcal F_3$,
+so the source next steering starts smoothly, with its actual values
+$Z_3(t_1)=\zeta_{3,1}(t_1)$ and $|\zeta_3(t_1)|$.
+The released periodic profile is not a Laplacian eigenfunction;
+realizing these damped trajectories with its compact spatial fields
+still requires the explicitly calculated profile and localization
+forces. None of the determinant or transition results discards those
+forces or asserts an unforced spatial superposition.

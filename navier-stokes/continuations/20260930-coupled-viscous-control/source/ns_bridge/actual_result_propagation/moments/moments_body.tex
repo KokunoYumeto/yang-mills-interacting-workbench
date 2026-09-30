@@ -1,0 +1,475 @@
+\section{The two moments of the actual compact curl increment}
+\label{nsmom:setup}
+The objects in this calculation are the finite smooth source state
+$(u_*,p_*)$ and the actual added curl field $v=w_y$ with its selected
+pressure $\pi=\pi_y$ from the signed covariance bridge. Their physical
+residual increment is
+\begin{equation}
+ \Delta R=\partial_t v+(u_*\cdot\nabla)v+(v\cdot\nabla)u_*
+ +(v\cdot\nabla)v-\nu_{\rm NS}\Delta v+\nabla\pi .
+ \label{nsmom:increment}
+\end{equation}
+The physical viscosity $\nu_{\rm NS}$ is unchanged. Both velocities are
+divergence free: the source state uses its actual divergence-free
+background and curl increments, and $v$ is the curl of its specified
+compact potential. No residual equation for $u_*$ is required in
+\eqref{nsmom:increment}; its residual has been subtracted exactly.
+All radial supports involving $v$ or $\pi$ lie in a fixed compact
+subinterval of $(0,\infty)$ on the compact space--time patch at issue.
+
+Here the source extended field is indispensable. Its absolute auxiliary
+coordinate is $Y\in\mathbb T^2=\mathbb R^2/\mathbb Z^2$, and physical
+evaluation uses precisely source (6.2)--(6.4):
+\begin{gather}
+ J_g=\begin{pmatrix}3&1\\1&5\end{pmatrix},\quad
+ \Lambda_g=4-\sqrt2,\quad T_g=4+\sqrt2,\quad b_g=\sqrt2-1,\nonumber\\
+ \mathbf v_r=(1,-b_g),\quad\mathbf v_t=(b_g,1),\quad
+ \rho_g=\frac{\log\Lambda_g}{\log T_g},\quad
+ \kappa_s=10^{-5},\quad d_r=2((1+h)\rho_g-h\kappa_s),\nonumber\\
+ Y(r,t)=\mathbf v_r r^{d_r}+\mathbf v_t t\pmod{\mathbb Z^2},\qquad
+ \mathscr D_r=\partial_r+d_r r^{d_r-1}\mathbf v_r\cdot\partial_Y,
+ \quad\mathscr D_t=\partial_t+\mathbf v_t\cdot\partial_Y.
+ \label{nsmom:phase}
+\end{gather}
+These are the source's original quantities, not the coupled physical
+frequency or diffusivity. Angular and axial physical derivatives are
+$\partial_\theta$ and $\partial_z$, because $Y(r,t)$ depends on neither
+variable. Every field below is first differentiated using these lifted
+physical derivatives. A tilde is suppressed for this extended
+representation. Evaluation at \eqref{nsmom:phase} recovers the physical
+field and its physical derivatives by the chain rule.
+
+The incompressibility needed below holds at every independent $Y$.
+Indeed the actual finite source construction retains the form
+$u_* =\operatorname{curl}_{\mathscr D}\mathcal A_*+
+B_*e_\theta$ with $\partial_\theta B_*=0$, and the added field is
+$v=\operatorname{curl}_{\mathscr D}\mathcal A_y$. The retained source
+potentials here include its finite mean and wave curl increments.
+The lifted derivatives in \eqref{nsmom:phase}, together with
+$\partial_\theta$ and $\partial_z$, commute, and
+$\mathscr D_r r=1$. Substitution in the cylindrical curl and
+divergence formulas therefore gives
+$\operatorname{div}_{\mathscr D}\operatorname{curl}_{\mathscr D}
+\mathcal A=0$ identically in $(r,\theta,z,t,Y)$: each mixed derivative
+cancels its opposite, including the derivative of $r^{-1}$.
+Also $\operatorname{div}_{\mathscr D}(B_*e_\theta)
+=r^{-1}\partial_\theta B_*=0$.
+Thus extended incompressibility is proved from the actual retained
+potential representation, rather than inferred from its restriction to
+the physical phase map.
+
+Use the normalized averages
+\[
+ \langle a\rangle_\theta=\frac1{2\pi}\int_0^{2\pi}a\,d\theta,
+ \qquad \langle a\rangle_Y=\int_{\mathbb T^2}a\,dY,
+ \qquad\langle a\rangle=\langle\langle a\rangle_\theta\rangle_Y,
+ \qquad\int_{\mathbb T^2}1\,dY=1.
+\]
+They act on cylindrical components before physical evaluation, exactly
+as source (3.7)--(3.9). All claimed integral identities below concern
+these specified averages; the exact relation to evaluated moments is
+also proved below.
+
+\subsection{The actual harmonic curl has zero angular mean}
+\label{nsmom:zero_mean}
+For each retained source harmonic, its extended potential and pressure
+have cylindrical components of the form
+\[
+ C_j(r,z,t,Y)e^{i(n_j\theta+\psi_j(r,z,t,Y))},\qquad
+ P_j(r,z,t,Y)e^{i(n_j\theta+\psi_j(r,z,t,Y))},\qquad
+ n_j=k_{\beta_j}m_jp_j\in\mathbb Z\setminus\{0\}.
+\]
+The coefficients include the actual cutoff $\chi$, frame $B$, map $L$,
+coupled solution $y=(\Theta,\Omega)^T$, band powers and pressure formula.
+Their cylindrical components are independent of $\theta$. In particular,
+no sign of $\Theta$, $\Omega$ or the real part of a harmonic is prescribed.
+For a vector potential $\mathcal A$ the exact cylindrical curl is
+\[
+ (\operatorname{curl}\mathcal A)_r=r^{-1}\partial_\theta\mathcal A_z
+                         -\partial_z\mathcal A_\theta,
+ \quad
+ (\operatorname{curl}\mathcal A)_\theta=\partial_z\mathcal A_r
+                         -\mathscr D_r\mathcal A_z,
+ \quad
+ (\operatorname{curl}\mathcal A)_z=(\mathscr D_r+r^{-1})\mathcal A_\theta
+                         -r^{-1}\partial_\theta\mathcal A_r.
+\]
+These formulas include the derivatives of the cylindrical basis.
+Each displayed operation retains the same factor $e^{in_j\theta}$:
+the coefficients of $\mathscr D_r$ are independent of $\theta$, and
+$\partial_\theta$ multiplies that factor by $in_j$. Integration of the
+factor over the angular circle gives zero. Taking real parts and the
+actual finite harmonic sum proves
+\begin{equation}
+ \langle v_r\rangle_\theta=\langle v_\theta\rangle_\theta
+ =\langle v_z\rangle_\theta=\langle\pi\rangle_\theta=0
+ \quad\hbox{at every }(r,z,t,Y).
+ \label{nsmom:mean_zero}
+\end{equation}
+This includes every curl and cutoff correction, not merely the
+principal amplitude. The same identities hold after physical
+evaluation because $Y(r,t)$ is independent of $\theta$.
+
+For every smooth periodic coefficient $a$, integration of its auxiliary
+derivatives gives
+\begin{equation}
+ \langle\mathscr D_r a\rangle=\partial_r\langle a\rangle,
+ \quad\langle\mathscr D_t a\rangle=\partial_t\langle a\rangle,
+ \quad\langle\partial_z a\rangle=\partial_z\langle a\rangle,
+ \quad\langle\partial_\theta a\rangle=0.
+ \label{nsmom:commute}
+\end{equation}
+There is no omitted variable coefficient in this assertion:
+$d_r r^{d_r-1}\mathbf v_r$ is independent of $Y$. Applying the first
+identity again proves
+$\langle\mathscr D_r^2a\rangle=\partial_r^2\langle a\rangle$.
+Explicitly, if $c(r)=d_r r^{d_r-1}\mathbf v_r$, then
+\[
+ \mathscr D_r^2 a=\partial_r^2a+2c\cdot\partial_Y\partial_r a
+ +c'\cdot\partial_Ya+(c\cdot\partial_Y)^2a;
+\]
+each of the three additional terms has zero auxiliary average.
+
+\subsection{Exact removal of the linear and mean-flow terms}
+\label{nsmom:linear}
+Put
+\[
+ \bar u_*:=\langle u_*\rangle_\theta,
+ \qquad w_*:=u_*-\bar u_*.
+\]
+The field $\bar u_*$ may retain auxiliary dependence; none is discarded.
+Since it is independent of $\theta$, \eqref{nsmom:mean_zero} gives
+\[
+ \langle\bar u_*\otimes v+v\otimes\bar u_*\rangle=0.
+\]
+Define the actual symmetric cross-and-quadratic tensor
+\begin{equation}
+ S:=\langle w_*\otimes v+v\otimes w_*+v\otimes v\rangle.
+ \label{nsmom:stress}
+\end{equation}
+Products of all original source waves with the added curl field are
+retained in this formula, including old and new curl remainders.
+
+For two divergence-free fields $a,b$, Cartesian component expansion
+gives
+\[
+ \nabla\cdot(a\otimes b+b\otimes a)
+ =(b\cdot\nabla)a+(a\cdot\nabla)b,
+ \qquad\nabla\cdot(v\otimes v)=(v\cdot\nabla)v.
+\]
+For example
+$\sum_j\partial_j(a_i b_j)=\sum_jb_j\partial_ja_i+
+a_i\sum_j\partial_jb_j$; the last term is zero. The lifted derivatives
+obey the same product rule, so the identities hold on the extended
+domain before evaluation. The three advection terms in
+\eqref{nsmom:increment} are therefore exactly the divergence of
+$u_*\otimes v+v\otimes u_*+v\otimes v$.
+
+For completeness, set
+$\mathscr L_0=\mathscr D_r^2+r^{-1}\mathscr D_r+
+r^{-2}\partial_\theta^2+\partial_z^2$.
+The vector Laplacian and pressure gradient in the two components are
+\[
+ (\Delta v)_\theta=(\mathscr L_0-r^{-2})v_\theta
+                       +2r^{-2}\partial_\theta v_r,
+ \qquad(\Delta v)_z=\mathscr L_0v_z,
+ \qquad(\nabla\pi)_\theta=r^{-1}\partial_\theta\pi,
+ \qquad(\nabla\pi)_z=\partial_z\pi.
+\]
+Equations \eqref{nsmom:mean_zero}--\eqref{nsmom:commute} prove separately
+\begin{equation}
+ \langle\mathscr D_t v\rangle_{\rm tan}=0,
+ \qquad -\nu_{\rm NS}\langle\Delta v\rangle_{\rm tan}=0,
+ \qquad\langle\nabla\pi\rangle_{\rm tan}=0.
+ \label{nsmom:linear_zero}
+\end{equation}
+Thus viscosity and pressure were included before averaging; their
+vanishing here is a proved consequence of the actual carriers.
+
+If $T$ is symmetric, differentiation of
+$e_r=(\cos\theta,\sin\theta,0)$,
+$e_\theta=(-\sin\theta,\cos\theta,0)$ gives
+\begin{align*}
+ (\nabla\cdot T)_\theta
+   &=(\mathscr D_r+2/r)T_{r\theta}
+       +r^{-1}\partial_\theta T_{\theta\theta}+\partial_zT_{z\theta},\\
+ (\nabla\cdot T)_z
+   &=(\mathscr D_r+1/r)T_{rz}
+       +r^{-1}\partial_\theta T_{\theta z}+\partial_zT_{zz}.
+\end{align*}
+Indeed $\partial_\theta e_r=e_\theta$ and
+$\partial_\theta e_\theta=-e_r$ supply the two radial connection
+terms in the first line and the single radial connection term in the
+second. Averaging these formulas and using
+\eqref{nsmom:commute}, \eqref{nsmom:stress}, and \eqref{nsmom:linear_zero}
+proves the exact residual identities
+\begin{equation}
+ F_2:=\langle\Delta R_\theta\rangle
+    =(\partial_r+2/r)S_{r\theta}+\partial_zS_{z\theta},
+ \qquad
+ F_1:=\langle\Delta R_z\rangle
+    =(\partial_r+1/r)S_{rz}+\partial_zS_{zz}.
+ \label{nsmom:F}
+\end{equation}
+In particular every mean-flow cross term vanishes as the divergence
+of its zero averaged tensor, even when the mean depends on $Y$.
+
+\subsection{The surviving axial fluxes and their signs}
+\label{nsmom:moments}
+Define the two moments with the original physical radial measure:
+\begin{equation}
+ M_2(z,t)=\int_0^\infty r^2F_2(r,z,t)\,dr,
+ \qquad M_1(z,t)=\int_0^\infty rF_1(r,z,t)\,dr.
+ \label{nsmom:Mdef}
+\end{equation}
+Their exact values are
+\begin{align}
+ M_2&=\partial_z J_2, &
+ J_2&=\int_0^\infty r^2
+    \langle w_{*,z}v_\theta+v_z w_{*,\theta}+v_zv_\theta\rangle\,dr,
+ \label{nsmom:M2}\\
+ M_1&=\partial_z J_1, &
+ J_1&=\int_0^\infty r
+    \langle2w_{*,z}v_z+v_z^2\rangle\,dr.
+ \label{nsmom:M1}
+\end{align}
+To prove them, multiply \eqref{nsmom:F} by the respective weight:
+$r^2(\partial_r+2/r)S_{r\theta}=\partial_r(r^2S_{r\theta})$
+and $r(\partial_r+1/r)S_{rz}=\partial_r(rS_{rz})$.
+The weighted boundary values at both ends of $(0,\infty)$ are zero,
+because each entry of $S$ contains at least one compactly supported
+factor $v$. Differentiation under the radial integral is valid by the
+same compact support and smoothness. This proves
+\eqref{nsmom:M2}--\eqref{nsmom:M1} including their signs and factors.
+
+There is no pointwise cancellation of the axial derivatives in these
+formulas. Since the added field has compact axial support, $J_1$ and
+$J_2$ have compact axial support and
+\begin{equation}
+ \int_{\mathbb R}M_e(z,t)\,dz=0\quad(e=1,2).
+ \label{nsmom:global_zero}
+\end{equation}
+This follows by evaluating the boundary values of $J_e$ at the two
+axial ends. It does not assert $M_e(z,t)=0$ at an individual axial
+point. The compact radial primitive in the covariance bridge must
+therefore retain its $b_eM_e$ terms with these actual $M_e$.
+
+At fixed source state, replacing the added field and pressure by their
+negatives sends the old-wave cross terms in \eqref{nsmom:M2}--\eqref{nsmom:M1}
+to their negatives and leaves the quadratic terms unchanged. Thus
+negating an amplitude is not a sign reversal of either full moment.
+Under the full physical reflection
+$O=\operatorname{diag}(1,-1,1)$, applied to the source state and added
+field together as $a^\sharp(x,t)=Oa(Ox,t)$, the cylindrical radial and
+axial components retain their signs and the angular components reverse
+sign at $(r,-\theta,z,t)$. Changing the angular integration variable
+therefore proves
+\[
+ J_2^\sharp=-J_2,\quad M_2^\sharp=-M_2,
+ \qquad J_1^\sharp=J_1,\quad M_1^\sharp=M_1.
+\]
+
+An explicit transverse-curl example shows why compactness and nonzero
+angular frequency alone do not force either moment to vanish. This
+example tests precisely those structural properties, and is not a
+replacement for the retained source state. Let $H$ be any nonzero real
+$C_c^\infty((r_-,r_+))$ function with $0<r_-<r_+$, let
+$g\in C_c^\infty(\mathbb R)$ be nonconstant, let $n$ be a nonzero
+integer, and put $f=rH'$. Use zero old state and the real potential
+\[
+ \mathcal A_r=fg\sin(n\theta),\qquad
+ \mathcal A_\theta=0,\qquad
+ \mathcal A_z=Hg\cos(n\theta).
+\]
+It has the required transverse representation:
+$\phi=n\theta$, $\xi=(n/r)e_\theta$,
+$C=(-ifg,0,Hg)$ in cylindrical components,
+$a=i\xi\times C$, and
+$C=i\xi\times a/|\xi|^2$ because $\xi\cdot C=0$.
+The curl is exactly
+\[
+ v_r=-\frac{nHg}{r}\sin(n\theta),\qquad
+ v_\theta=fg'\sin(n\theta)-H'g\cos(n\theta),\qquad
+ v_z=-\frac{nfg}{r}\cos(n\theta).
+\]
+Consequently
+\[
+ M_2=ngg'\int_0^\infty r^2(H')^2\,dr,
+ \qquad
+ M_1=n^2gg'\int_0^\infty r(H')^2\,dr.
+\]
+For example $g(z)=\exp(-1/(1-z^2))$ on $|z|<1$, extended by zero,
+has $g(z)g'(z)\ne0$ at every $0<|z|<1$. Both integrals are strictly
+positive: a compactly supported smooth function with $H'=0$ everywhere
+would be constant and hence zero. Thus both moments can be nonzero,
+with their displayed signed values, within the exact transverse-curl
+architecture.
+
+\subsection{Bounds in the actual fields and original chart units}
+\label{nsmom:bounds}
+At fixed $(z,t)$ set
+\[
+ \|a\|_e^2=\int_0^\infty r^e\langle|a|^2\rangle\,dr,
+ \qquad e=1,2.
+\]
+When an old-field norm is used below it can be restricted to the
+enclosing radial support of $v$ and $\partial_zv$. This avoids imposing
+any decay condition on an unused exterior part of the old field.
+The following component bounds contain only actual fields:
+\begin{align}
+ |J_2|\le{}&\|w_{*,z}\|_2\|v_\theta\|_2
+ +\|w_{*,\theta}\|_2\|v_z\|_2+\|v_z\|_2\|v_\theta\|_2,
+ \label{nsmom:J2bound}\\
+ |J_1|\le{}&2\|w_{*,z}\|_1\|v_z\|_1+\|v_z\|_1^2,
+ \label{nsmom:J1bound}\\
+ |M_2|\le{}&\|\partial_z w_{*,z}\|_2\|v_\theta\|_2
+ +\|w_{*,z}\|_2\|\partial_zv_\theta\|_2
+ +\|\partial_zv_z\|_2\|w_{*,\theta}\|_2\nonumber\\
+ &+\|v_z\|_2\|\partial_z w_{*,\theta}\|_2
+ +\|\partial_zv_z\|_2\|v_\theta\|_2
+ +\|v_z\|_2\|\partial_zv_\theta\|_2,
+ \label{nsmom:M2bound}\\
+ |M_1|\le{}&2\bigl(\|\partial_z w_{*,z}\|_1\|v_z\|_1
+ +\|w_{*,z}\|_1\|\partial_zv_z\|_1
+ +\|v_z\|_1\|\partial_zv_z\|_1\bigr).
+ \label{nsmom:M1bound}
+\end{align}
+Each is the Cauchy--Schwarz inequality on the product measure
+$r^e\,dr\,d\theta/(2\pi)\,dY$, after applying the product rule in
+\eqref{nsmom:M2}--\eqref{nsmom:M1}. For example, the derivative of
+$2w_{*,z}v_z+v_z^2$ is
+$2(\partial_z w_{*,z})v_z+2w_{*,z}\partial_zv_z+
+2v_z\partial_zv_z$, proving every coefficient in
+\eqref{nsmom:M1bound}.
+For a $(z,t)$ multi-index $I$, every further derivative is exactly
+obtained by replacing each product $ab$ in $J_e$ by
+\[
+ \partial^{I+(1,0)}(ab)
+ =\sum_{K\le I+(1,0)}{I+(1,0)\choose K}
+       (\partial^Ka)(\partial^{I+(1,0)-K}b)
+\]
+inside its original radial integral. This identity follows inductively
+from the one-derivative product rule, and gives the corresponding
+finite-order moment bound by applying the same Cauchy--Schwarz
+inequality separately to every displayed summand.
+
+The field $v$ in these bounds is not an abstract replacement amplitude.
+For each actual band and harmonic write
+\begin{gather}
+ t_j=\chi_jB_jL_jy_j,\qquad
+ c_j=\frac{i\,n_{\Phi,j}\times t_j}
+                  {k_{\beta_j}m_j|n_{\Phi,j}|^2},\qquad
+ b_j=t_j+\operatorname{curl}_{*,\mathrm{coeff}}c_j,\nonumber\\
+ v=\sum_j\operatorname{Re}
+       \bigl(Q_{\beta_j}^{-A}b_j e^{ik_{\beta_j}m_j\Phi_j}\bigr),
+ \qquad A=\tfrac12+h,\quad D=\tfrac12-h.
+ \label{nsmom:actual_amplitude}
+\end{gather}
+Here $\operatorname{curl}_{*,\mathrm{coeff}}$ differentiates the chart
+coefficient, including the cutoff, auxiliary chain rule and cylindrical
+basis, but not the displayed exponential. This is exactly the
+remainder of the physical potential
+$Q_{\beta_j}^{1/2-A}c_j e^{ik_{\beta_j}m_j\Phi_j}$: physical curl
+introduces the factor $Q_{\beta_j}^{-1/2}$, and differentiating the
+exponential produces $t_j$ by the transverse triple-product identity.
+Explicitly, on the absolute auxiliary torus in a fixed band,
+\[
+ \mathscr D_R=\partial_R+
+ \sqrt Q\,d_r r^{d_r-1}\mathbf v_r\cdot\partial_Y,
+ \qquad r=\sqrt Q R,\qquad \mathscr D_Z^*=\varepsilon\partial_Z.
+\]
+For the actual coefficient $c=(c_r,c_\theta,c_z)$, which has
+$\partial_\theta c=0$, the operator is exactly
+\[
+ \operatorname{curl}_{*,\mathrm{coeff}}c
+ =\bigl(-\varepsilon\partial_Zc_\theta,
+       \varepsilon\partial_Zc_r-\mathscr D_Rc_z,
+       (\mathscr D_R+R^{-1})c_\theta\bigr).
+\]
+Coefficients originally on a band auxiliary torus are pulled back to
+the absolute torus before applying this formula; this retains the
+integer-covering chain derivative in $\partial_Yc$.
+In the same fixed chart the exact axial derivative is
+\begin{align}
+ \partial_zv
+ &=\sum_j\operatorname{Re}\left[
+ Q_{\beta_j}^{-A-D}
+ \bigl(\partial_{Z_j}b_j+
+   ik_{\beta_j}m_j(\partial_{Z_j}\Phi_j)b_j\bigr)
+ e^{ik_{\beta_j}m_j\Phi_j}\right].
+ \label{nsmom:actual_derivative}
+\end{align}
+The band power is fixed during chart differentiation and
+$\partial_z=Q_{\beta_j}^{-D}\partial_{Z_j}$; auxiliary phase evaluation
+adds no axial derivative because of \eqref{nsmom:phase}. Thus
+\eqref{nsmom:actual_amplitude}--\eqref{nsmom:actual_derivative} substitute
+the actual retained pair and all its curl terms into the bounds.
+For example, writing
+$\|b\|_{e,\beta}^2=\int R^e\langle|b|^2\rangle\,dR$ in that band,
+the triangle inequality and $|\operatorname{Re}z|\le|z|$ give
+\begin{align}
+ \|v\|_e
+ &\le\sum_j Q_{\beta_j}^{(e+1)/4-A}\|b_j\|_{e,\beta_j},
+ \label{nsmom:scale_bound}\\
+ \|\partial_zv\|_e
+ &\le\sum_j Q_{\beta_j}^{(e+1)/4-A-D}
+ \|\partial_{Z_j}b_j+
+ ik_{\beta_j}m_j(\partial_{Z_j}\Phi_j)b_j\|_{e,\beta_j}.
+ \label{nsmom:scale_derivative_bound}
+\end{align}
+The exponent $(e+1)/4$ is exactly the square root of the radial measure
+factor $r^e\,dr=Q^{(e+1)/2}R^e\,dR$. Distinct bands and harmonics
+remain distinct in these sums. No limiting estimate as $q\downarrow0$
+has been inferred from the finite compact-patch norms.
+
+For a single fixed chart, put
+$F_e=Q^{-2A-1/2}E_e^*$ as in the covariance bridge and
+$S^*=Q^{2A}S$. Direct change of radial variable gives
+\[
+ M_e=Q^{e/2-2A}M_e^*,\qquad
+ M_e^*=\int R^eE_e^*\,dR,
+ \qquad
+ M_e^*=\varepsilon\partial_Z\int R^e S^*_{z,\tau_e}\,dR,
+ \quad\varepsilon=Q^h,
+\]
+where $\tau_2=\theta$ and $\tau_1=z$. Indeed the axial flux has
+factor $Q^{(e+1)/2-2A}$, its axial derivative contributes $Q^{-D}$,
+and dividing by $Q^{e/2-2A}$ leaves $Q^{1/2-D}=Q^h$.
+This proves the precise relation to the source chart moment without
+altering its axial anisotropy.
+
+\subsection{Exact relation to moments after phase evaluation}
+\label{nsmom:evaluated}
+Let
+\[
+ \mathcal S=\langle w_*\otimes v+v\otimes w_*+v\otimes v\rangle_\theta,
+ \qquad \mathcal S^\circ=\mathcal S-\langle\mathcal S\rangle_Y.
+\]
+Thus $\langle\mathcal S\rangle_Y=S$ and
+$\langle\mathcal S^\circ\rangle_Y=0$. For the evaluated physical
+fields, denote the angular-only residual moments by $M_e^{\rm ev}$.
+The proof of \eqref{nsmom:mean_zero} holds after evaluation. The
+physical divergence, vector Laplacian and gradient identities therefore
+prove, without any auxiliary averaging,
+\[
+ M_e^{\rm ev}
+   =\partial_z\int_0^\infty r^e
+        \mathcal S_{z,\tau_e}(r,z,t,Y(r,t))\,dr.
+\]
+The physical radial boundary terms still vanish by compact support;
+the chain rule is included in the physical radial derivative before
+that integration. Subtracting \eqref{nsmom:M2}--\eqref{nsmom:M1} proves
+the exact comparison
+\begin{equation}
+ M_e^{\rm ev}-M_e
+ =\partial_z\int_0^\infty r^e
+     \mathcal S^\circ_{z,\tau_e}(r,z,t,Y(r,t))\,dr.
+ \label{nsmom:evaluation_difference}
+\end{equation}
+For example its absolute value is bounded by
+$\int r^e\sup_Y|\partial_z\mathcal S^\circ_{z,\tau_e}|\,dr$,
+because $Y(r,t)$ is independent of $z$. Zero auxiliary Haar average
+does not make the right side of \eqref{nsmom:evaluation_difference}
+zero at the physical phase. The displayed map supplies precisely the
+remaining auxiliary-oscillation flux; it is not silently identified
+with the source fast mean.

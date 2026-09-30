@@ -1,0 +1,73 @@
+% Source-supported replacement paragraph for infinite_status.tex.
+% This file is an audit artifact, not a mutation of the mathematical source.
+For the quantitative quotient extraction, retain the fixed source
+trajectory with its fixed low-order tolerance chosen sufficiently small
+before any frequencies, as in source pp.~12 and 69. Put
+\[
+ \mathcal G_q=-Je_q\cdot G_{<q},\qquad
+ d_q=r_q\sin(\phi_q-\phi_{q-1}),\qquad
+ a_q=\frac{\mathcal G_q}{K_qr_q},\qquad
+ b_q=K_q\zeta_{q,1}.
+\]
+These are the physical-coordinate versions of (3.55)--(3.56),
+p.~26. On growth, the preceding phase is vertical by the
+holding equation, so $\zeta_{q,1}=d_q$ and $b_q=K_qd_q$.
+The bounds at the end of Subsection~3.7.4 and the beginning of
+Subsection~3.7.5, p.~29, together with (3.63), give, for one
+fixed $0<\delta\leq1/4$,
+\[
+ r_q\geq1-\delta,\quad
+ \frac{d_q}{\sin s_q}\geq1-\delta,\quad
+ \frac{\mathcal G_q}{\sigma_{q-1}^2\sin s_q}\leq1+\delta,
+ \quad
+ |(\log u_*)'|\leq\delta\gamma,
+ \qquad u_*:=\sqrt{b_q/a_q},\quad\gamma:=\sqrt{a_qb_q}.
+\]
+All these errors are fixed low-order errors: the derivative
+estimate is $C\epsilon_{\rm sch}\Gamma_q/L_q$, while
+$\gamma=(1+O(\epsilon_{\rm sch}))\Gamma_q$.
+Their finite collection is absorbed by the same fixed tolerance
+choice; this choice precedes the frequency schedule. Source
+Lemma~3.3, p.~14, applies with its local tolerance renamed
+$\delta$ to avoid confusing it with the physical time-scaling
+parameter $\nu$.
+
+Before any possible zero of $\Theta_q$, set
+$u=\Omega_q/\Theta_q$ and $z=u/u_*$. The source entry datum
+gives $z(t_q^{\rm in})=1$, and differentiation gives
+\[
+ u'=b_q-a_qu^2,\qquad
+ z'=\gamma(1-z^2)-z(\log u_*)'.
+\]
+At the upper boundary $z=1+\delta$, this derivative is at most
+$\gamma[1-(1+\delta)^2+\delta(1+\delta)]
+=-\delta\gamma<0$.
+At the lower boundary $z=1-\delta$, it is at least
+$\gamma[1-(1-\delta)^2-\delta(1-\delta)]
+=\delta\gamma>0$.
+Thus $1-\delta\leq z\leq1+\delta$ by the first-exit argument.
+The coefficient functions are continuous on the compact growth
+interval and $a_q,b_q$ are positive, so $u_*$ is bounded there.
+If $\Theta_q$ first vanished, the bounded quotient would force
+$\Omega_q$ to vanish at the same time. Backward uniqueness of
+the continuous-coefficient linear amplitude system would then
+contradict its nonzero entry datum. The quotient is therefore
+defined through the crossing. This is exactly the continuation
+step used in the source growth proof on p.~30.
+
+The coefficient identity now gives
+\[
+ u_*=K_q\sqrt{\frac{d_qr_q}{\mathcal G_q}}
+ \geq\frac{K_q}{\sigma_{q-1}}
+ \frac{1-\delta}{\sqrt{1+\delta}},\qquad
+ \left|\frac{\Omega_q}{\Theta_q}\right|
+ \geq\frac{K_q}{\sigma_{q-1}}
+ \frac{(1-\delta)^2}{\sqrt{1+\delta}}
+ >\frac{K_q}{2\sigma_{q-1}}.
+\]
+Indeed the last scalar factor decreases on $[0,1/4]$ and its
+value at $1/4$ is $9/(8\sqrt5)>1/2$, since $81>80$.
+This proves the bound for $q\geq2$. For $q=1$, source p.~27
+gives the exact growing eigenline; its physical form is
+$|\Omega_1/\Theta_1|=K_1/\nu=K_1/\sigma_0$ and $r_1=1$,
+which proves the same bound.

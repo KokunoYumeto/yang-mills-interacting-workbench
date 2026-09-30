@@ -1,0 +1,43 @@
+{
+  "status": "complete local geometry section; parent integration separate",
+  "mathematical_corrections": [],
+  "layout_changes": [
+    "Split the original seed display across two lines.",
+    "Display both inherited diagonal damping exponents."
+  ],
+  "primary_replay": "replay_third_growth_geometry.py",
+  "primary_receipt": "replay_receipt.json",
+  "checks": 43,
+  "check_count_note": "43 total includes the original independent20 and23 additional checks; do not count the20 twice.",
+  "standalone_pages": 6,
+  "build_passes": 3,
+  "latex_issues": [],
+  "visual_pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "body_sha256": "75fb45439c2af482a5de215838f1268680801628ae8924cdfb5afcfc1e9e096a",
+  "standalone_pdf_sha256": "ed4217bf44bc61bb6f4954c3c52d30f2051bd0a3691c7ef8a8226c03f906a5dc",
+  "proof": "third_growth_geometry_body.tex",
+  "audits": [
+    "audit/AUDIT.md",
+    "COMPLETION_AUDIT.md",
+    "affine_audit/AUDIT.md"
+  ],
+  "sha256": {
+    "third_growth_geometry_body.tex": "75fb45439c2af482a5de215838f1268680801628ae8924cdfb5afcfc1e9e096a",
+    "replay_third_growth_geometry.py": "22ac883a1847147e5449130c5d2b59d11e3a919ba7eaa9eb7c41ad3affe96814",
+    "replay_receipt.json": "faef6a15559233cdae9b19ec8e15bb821b245ad59f209aef9ccb63f04e4dde9f",
+    "audit/verify_third_map.py": "e9688050e628bb2e530e0a9e4620b6231ecf52af26c23ebecba2147cdddc856c",
+    "audit/verification.json": "cfee34622c0a811459177dbc0f23d0f1bd7196e30d3b4e6368d9b0009eb01540",
+    "build_receipt.json": "9207cf606451628b896aae226900f836d440a9153972eb44ce26dc8cdbffd8e6",
+    "qa/render_receipt.json": "b63a6fda19e8f4016dd5692b0ee664d7f03d247ff626b0392e6c8bcb498b6e8a",
+    "qa/visual_review.json": "c82190e662b495e803514aaf22e857d42c39f81ad0d50ed3cfc7e06335e976b0",
+    "COMPLETION_AUDIT.md": "158f33c496219b79194718614e82c29e00623229798dd163cf154d77f1fa4f3a",
+    "affine_audit/AUDIT.md": "56ffa43987f84d957d0f3742f7c6e413363257c1484d4e27452ab669c4f49a00"
+  }
+}

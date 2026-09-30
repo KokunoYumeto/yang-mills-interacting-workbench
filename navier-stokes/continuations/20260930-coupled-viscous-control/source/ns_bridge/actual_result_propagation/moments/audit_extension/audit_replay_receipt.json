@@ -1,0 +1,126 @@
+{
+  "schema": "independent-moments-scaling-audit-v1",
+  "status": "passed",
+  "all_passed": true,
+  "check_count": 23,
+  "checks": [
+    {
+      "name": "D=1/2-h gives axial derivative leftover h",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "weighted norm exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "weighted norm after one z derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical moment exponent from residual",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "chart-to-physical moment relation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "axial flux derivative leaves epsilon",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical potential then curl has Q^-A velocity power",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "axial derivative of velocity has Q^(-A-D)",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "radial measure r^e dr under r=sqrt(Q)R",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "sqrt radial measure times velocity norm",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "e=2 weighted azimuthal divergence",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "e=1 weighted axial divergence",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "example M2 integrand after z derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "example M1 integrand after z derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "M2 flux z derivative has six unit product terms",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "M1 flux z derivative factor two",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "phase map has no z derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "evaluated phase derivative equals partial z derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Haar mean of zero-mean phase mode",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full reflection reverses M2 flux",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full reflection preserves M1 flux",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "negating added field changes only linear part of M2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "negating added field changes only linear part of M1",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "body_sha256": "d650b99e43143ff03b26d84f334f5b0c84de59fe6f1191d417ea4b11c6db7017",
+  "replay_sha256": "17d298f11f22cbdd37765fd6fc90909468ae00696999c633833cf83a1f4931df",
+  "scope": "Independent exact checks of actual amplitude powers, weighted radial moments, example signs/factors, and auxiliary phase-evaluation difference on finite compact fields. No endpoint or infinite estimate."
+}\n

@@ -1,0 +1,22 @@
+{
+  "schema": "return-correction-check-v1",
+  "status": "pass",
+  "checks": {
+    "signed_space_time_jet_cases": 105,
+    "full_correction_PDE_subtraction": true,
+    "zero_force_unsigned_majorant_counterexample": {
+      "actual_residual": 0,
+      "unsigned_second_row": 2
+    },
+    "shifted_chart_and_force_jet_cases": 240,
+    "chart_inverse_exact": true,
+    "original_return_matrix_and_horizontal_gradient": true,
+    "explicit_unforced_affine_branches": 3,
+    "all_transition_cross_terms": true,
+    "generic_cutoff_derivatives_and_divergence": true,
+    "tex_structure": true
+  },
+  "proof": "infinite_modified/return_correction_body.tex",
+  "proof_sha256": "9f6751cbc21cd524348c8a1903c1c2e52c453f53960cd06e78de59262036dd3f",
+  "scope": "Exact finite/local identities; no all-stage budget or infinite blowup certified."
+}

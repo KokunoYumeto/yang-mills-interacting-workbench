@@ -1,0 +1,246 @@
+{
+  "schema": "full-stress-exact-replay-v1",
+  "all_passed": true,
+  "check_count": 59,
+  "checks": [
+    {
+      "name": "oriented cylindrical basis is orthogonal",
+      "passed": true
+    },
+    {
+      "name": "oriented cylindrical basis has determinant one",
+      "passed": true
+    },
+    {
+      "name": "full Cartesian divergence including radial connections",
+      "passed": true
+    },
+    {
+      "name": "full Cartesian divergence including angular connections",
+      "passed": true
+    },
+    {
+      "name": "full Cartesian divergence including axial connections",
+      "passed": true
+    },
+    {
+      "name": "exact weighted divergence radial identity e=1",
+      "passed": true
+    },
+    {
+      "name": "exact weighted divergence radial identity e=2",
+      "passed": true
+    },
+    {
+      "name": "original q-scaled radial bump derivative e=1",
+      "passed": true
+    },
+    {
+      "name": "moving bump time derivative e=1",
+      "passed": true
+    },
+    {
+      "name": "cumulative bump mixed radial-axial identity e=1",
+      "passed": true
+    },
+    {
+      "name": "exact primitive correction including varying bump e=1",
+      "passed": true
+    },
+    {
+      "name": "weighted fundamental-theorem radial primitive e=1",
+      "passed": true
+    },
+    {
+      "name": "old primitive residual identifies missing bump term e=1",
+      "passed": true
+    },
+    {
+      "name": "original q-scaled radial bump derivative e=2",
+      "passed": true
+    },
+    {
+      "name": "moving bump time derivative e=2",
+      "passed": true
+    },
+    {
+      "name": "cumulative bump mixed radial-axial identity e=2",
+      "passed": true
+    },
+    {
+      "name": "exact primitive correction including varying bump e=2",
+      "passed": true
+    },
+    {
+      "name": "weighted fundamental-theorem radial primitive e=2",
+      "passed": true
+    },
+    {
+      "name": "old primitive residual identifies missing bump term e=2",
+      "passed": true
+    },
+    {
+      "name": "complete compact tensor cancels radial force",
+      "passed": true
+    },
+    {
+      "name": "complete compact tensor cancels angular force",
+      "passed": true
+    },
+    {
+      "name": "complete compact tensor cancels axial force",
+      "passed": true
+    },
+    {
+      "name": "radial-zero alternative after omitting hoop radial force",
+      "passed": true
+    },
+    {
+      "name": "unique pressure gives tracefree stress",
+      "passed": true
+    },
+    {
+      "name": "tracefree-pressure map exact inverse",
+      "passed": true
+    },
+    {
+      "name": "full prescribed pressure sign and every diagonal entry",
+      "passed": true
+    },
+    {
+      "name": "tracefree decomposition entry 0",
+      "passed": true
+    },
+    {
+      "name": "tracefree decomposition entry 1",
+      "passed": true
+    },
+    {
+      "name": "tracefree decomposition entry 2",
+      "passed": true
+    },
+    {
+      "name": "isotropic stress pressure gradient Cartesian row 0",
+      "passed": true
+    },
+    {
+      "name": "isotropic stress pressure gradient Cartesian row 1",
+      "passed": true
+    },
+    {
+      "name": "isotropic stress pressure gradient Cartesian row 2",
+      "passed": true
+    },
+    {
+      "name": "full oriented cylindrical torque",
+      "passed": true
+    },
+    {
+      "name": "angular integral force component 0",
+      "passed": true
+    },
+    {
+      "name": "angular integral torque component 0",
+      "passed": true
+    },
+    {
+      "name": "angular integral force component 1",
+      "passed": true
+    },
+    {
+      "name": "angular integral torque component 1",
+      "passed": true
+    },
+    {
+      "name": "angular integral force component 2",
+      "passed": true
+    },
+    {
+      "name": "angular integral torque component 2",
+      "passed": true
+    },
+    {
+      "name": "first-moment torque antisymmetry 0,1",
+      "passed": true
+    },
+    {
+      "name": "first-moment torque antisymmetry 0,2",
+      "passed": true
+    },
+    {
+      "name": "first-moment torque antisymmetry 1,2",
+      "passed": true
+    },
+    {
+      "name": "source anisotropic derivative factor",
+      "passed": true
+    },
+    {
+      "name": "original source flux radial unit e=1",
+      "passed": true
+    },
+    {
+      "name": "original source moment unit e=1",
+      "passed": true
+    },
+    {
+      "name": "flux to moment retains epsilon exponent e=1",
+      "passed": true
+    },
+    {
+      "name": "original bump times flux stress unit e=1",
+      "passed": true
+    },
+    {
+      "name": "complete primitive force source unit e=1",
+      "passed": true
+    },
+    {
+      "name": "complete primitive axial flux source unit e=1",
+      "passed": true
+    },
+    {
+      "name": "original varying bump correction source unit e=1",
+      "passed": true
+    },
+    {
+      "name": "original source flux radial unit e=2",
+      "passed": true
+    },
+    {
+      "name": "original source moment unit e=2",
+      "passed": true
+    },
+    {
+      "name": "flux to moment retains epsilon exponent e=2",
+      "passed": true
+    },
+    {
+      "name": "original bump times flux stress unit e=2",
+      "passed": true
+    },
+    {
+      "name": "complete primitive force source unit e=2",
+      "passed": true
+    },
+    {
+      "name": "complete primitive axial flux source unit e=2",
+      "passed": true
+    },
+    {
+      "name": "original varying bump correction source unit e=2",
+      "passed": true
+    },
+    {
+      "name": "radial hoop force has exact stress unit",
+      "passed": true
+    },
+    {
+      "name": "axial hoop derivative retains epsilon",
+      "passed": true
+    }
+  ],
+  "proof_sha256": "6975ee64e1b7aa9d5615a11c706f281b5d46c3d7fb95b81984c5c2c79b9479f7",
+  "script_sha256": "883c63ce5d4044ccb19076c8d7335369fda6457387be983593342789c8fae398",
+  "scope": "Exact Cartesian/cylindrical algebra, moving-bump derivatives, full cancellation, tracefree pressure, torque, and original source units. Smooth support, moment image and projection are proved in the complete TeX."
+}

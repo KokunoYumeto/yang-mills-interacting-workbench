@@ -16,6 +16,23 @@ This page-3 example shows an attempt to make the paper's reasoning explicit in e
 
 > For any incompressible flow u and pressure p, the external force f can always be set equal to the residual in (1.1), the result of adding up the four terms on its left-hand side. The Navier–Stokes equations then hold by construction, because f has been chosen to equal that result. The hard part is choosing a flow that blows up while this residual stays smooth. The separate terms in this residual from the momentum equation can each become unbounded. Their unbounded parts have to cancel one another so that their sum, and every derivative of that sum, still extends smoothly through the singular time, the time when the velocity becomes unbounded.
 
+## Finite controls and complete signed force — 30 September 2026
+
+[Read the new complete proofs and sources](continuations/20260930-coupled-viscous-control/).
+The addition proves the finite third Boussinesq return at positive diffusion,
+its exact fixed-diffusion scaling, the based-state interface and returned-core
+correction. It calculates the complete annulus force and every mixed derivative,
+then proves the force needed to reach a compact based state. The current
+complete LaTeX includes these results; the supplied 121-page PDF is a
+clearly identified earlier snapshot pending compilation of the newest sections.
+The modified infinite return, all-stage force budget and terminal smooth
+extension remain unfinished. Full comparison and spectral reviews are included.
+
+The [Everyday English material](https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english)
+is an unfinished experiment whose success has not been established.
+Its earlier full-paper draft and later page-1 restart are preserved separately
+for reading, comparison and reference.
+
 ## Research continuations and analytical reader
 
 [Vacuum hydrodynamics continuation, 19 September 2026](continuations/20260919-vacuum-hydrodynamics/README.md): exact nonlinear Einstein constraint data with a complete-velocity decoder; the Rindler shear response and finite pole-cluster cancellation; and a separate positive-stress regularity theorem. The continuation retains its source hypotheses and distinguishes exact identities, numerical results and imported NS claims.

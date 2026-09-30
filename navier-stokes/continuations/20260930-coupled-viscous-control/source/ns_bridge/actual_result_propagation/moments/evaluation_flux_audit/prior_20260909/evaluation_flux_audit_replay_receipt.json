@@ -1,0 +1,30 @@
+{
+  "schema": "evaluation-flux-audit-v1",
+  "all_passed": true,
+  "checks_passed": 19,
+  "checks_total": 19,
+  "checks": {
+    "alpha_1": true,
+    "evaluation_exponent_1": true,
+    "measure_derivative_1": true,
+    "alpha_2": true,
+    "evaluation_exponent_2": true,
+    "measure_derivative_2": true,
+    "epsilon_definition": true,
+    "D_relation": true,
+    "quadratic_J2": true,
+    "quadratic_J1": true,
+    "quadratic_M2": true,
+    "quadratic_M1": true,
+    "old_routes_distinct_1": true,
+    "old_routes_merge_condition_1": true,
+    "old_routes_distinct_2": true,
+    "old_routes_merge_condition_2": true,
+    "kernel_equal_carrier": true,
+    "kernel_opposite_carrier": true,
+    "kernel_nonmatching_carrier": true
+  },
+  "body_sha256": "35173736e46e0331c9f2995e44d69f5bb46eb7a9989f57e52f23b7e3c1a2a636",
+  "replay_sha256": "3c4029ebf7b4c31fd322ff22d11dec1e7d25d5483dec566e388c8258f8db3ab4",
+  "scope": "finite fixed-band finite-label compact-support evaluated-phase stress expansion; no endpoint or infinite claim"
+}

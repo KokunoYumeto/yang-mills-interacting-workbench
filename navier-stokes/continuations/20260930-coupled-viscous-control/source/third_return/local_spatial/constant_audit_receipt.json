@@ -1,0 +1,195 @@
+{
+  "created_utc": "2026-09-30T09:15:30.284582+00:00",
+  "scope": "Exact local cube, explicit 3/2 collar, matrices, unchanged source margins, newest amplitude rescaling and rational bounds only; no full steering or third return claim.",
+  "all_passed": true,
+  "check_count": 35,
+  "checks": [
+    {
+      "name": "D_lower_from_cube",
+      "passed": true,
+      "exact_margin": "129/4096"
+    },
+    {
+      "name": "D_upper_from_cube",
+      "passed": true,
+      "exact_margin": "262143/262144"
+    },
+    {
+      "name": "R_lower_from_cube",
+      "passed": true,
+      "exact_margin": "53/4352"
+    },
+    {
+      "name": "R_upper_from_cube",
+      "passed": true,
+      "exact_margin": "1843/3072"
+    },
+    {
+      "name": "sqrt_R_below_7_squared",
+      "passed": true,
+      "exact_margin": "10"
+    },
+    {
+      "name": "matrix3_frobenius_margin_squared",
+      "passed": true,
+      "exact_margin": "408"
+    },
+    {
+      "name": "matrix2_difference_lower",
+      "passed": true,
+      "exact_margin": "1"
+    },
+    {
+      "name": "collar_first_exit_margin",
+      "passed": true,
+      "exact_margin": "1/512"
+    },
+    {
+      "name": "collar_time_below_1",
+      "passed": true,
+      "exact_margin": "16381/16384"
+    },
+    {
+      "name": "collar_displacement_exact",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "source_p_above_1",
+      "passed": true,
+      "exact_margin": "4715/8"
+    },
+    {
+      "name": "source_r_above_2",
+      "passed": true,
+      "exact_margin": "6231/16"
+    },
+    {
+      "name": "source_second_slack_squared",
+      "passed": true,
+      "exact_margin": "31/11"
+    },
+    {
+      "name": "older_support_u_positive",
+      "passed": true,
+      "exact_margin": "47/16"
+    },
+    {
+      "name": "older_support_v_positive",
+      "passed": true,
+      "exact_margin": "31/16"
+    },
+    {
+      "name": "numerator_bracket_below_25",
+      "passed": true,
+      "exact_margin": "36857/16384"
+    },
+    {
+      "name": "numerator_old_part_below_1",
+      "passed": true,
+      "exact_margin": "25769803771/25769803776"
+    },
+    {
+      "name": "rb_upper_squared",
+      "passed": true,
+      "exact_margin": "6"
+    },
+    {
+      "name": "newest_K_upper_product",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "S_coefficient_K_margin",
+      "passed": true,
+      "exact_margin": "1"
+    },
+    {
+      "name": "S_coefficient_B_margin",
+      "passed": true,
+      "exact_margin": "8703/8"
+    },
+    {
+      "name": "collar_exponent_exact",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "collar_exponent_below_quarter",
+      "passed": true,
+      "exact_margin": "829/16384"
+    },
+    {
+      "name": "rational_exp_upper_below_four_thirds",
+      "passed": true,
+      "exact_margin": "3316/39351"
+    },
+    {
+      "name": "amplitude_final_margin",
+      "passed": true,
+      "exact_margin": "2/3"
+    },
+    {
+      "name": "coordinate_phase_length_identity",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "coordinate_adjacent_determinant",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "coordinate_adjacent_dot_product",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "adjugate_frobenius_identity",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "source_numerator_rescaling",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "physical_to_normalized_temperature",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "physical_to_normalized_vorticity",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "exact_scale_ratio",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "first_support_source_exponent",
+      "passed": true,
+      "exact_value": "0"
+    },
+    {
+      "name": "second_support_source_exponent",
+      "passed": true,
+      "exact_value": "0"
+    }
+  ],
+  "source_sha256": {
+    "third_return/third_return_body.tex": "245091a1fe6db5746f80ce3702a85787c3cbc899489d4e3e81ac419fcfaf513d",
+    "third_return/local_spatial_body.tex": "d909daac2df2841e28413804a52c0744ab5df29adfc5032827d0373027e41511",
+    "third_transition/third_transition_body.tex": "e66bd7d0fb007a705538623a68253fb5cdc806fe86c4c6b62a00a752cc6fc258",
+    "third_transition_spatial/third_transition_spatial_body.tex": "f69ce7dee42a4a768abeb6e6344edbf31c27cb69b6e0d12b425919ee07f7f26c",
+    "finite_stage/third_growth_entry.tex": "f8ef33f593fae0c9526e2ae5d696d537b3caacb843a35d844c87425b467b4048",
+    "finite_stage/actual_viscous_entry.tex": "91e70814420bcc828f9f3bbc30bd3b88f71a1b00862d8195a46e661cacc000db",
+    "second_return/second_return_body.tex": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4",
+    "third_return/local_spatial/constant_audit.md": "76e5da0d3c43e8edbcfb28e411eeb0a6d1bedcc3f730a46c68d8ff4c87b0c9ff",
+    "third_return/local_spatial/final_body_audit.md": "74d00fc8889b2e30b297594deea2f6c60df506587f38dfeea9fab3357d9024ad",
+    "third_return/local_spatial/replay_constant_audit.py": "c40c1471b9237a9b4ddd55f3a0aea2aeed702590a69e2dc933baa6971ba12eb7"
+  }
+}

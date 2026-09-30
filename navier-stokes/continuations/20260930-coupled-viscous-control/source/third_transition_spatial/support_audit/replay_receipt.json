@@ -1,0 +1,159 @@
+{
+  "scope": "Exact algebra only; operator-norm, strict-frequency, profile and support proofs in AUDIT.md.",
+  "check_count": 26,
+  "all_passed": true,
+  "inputs": [
+    {
+      "path": "third_transition/third_transition_body.tex",
+      "sha256": "53736ef2fee0e4d0a2fe6590577765ca48f6bc1a887ab71aa35c3e192da1b288"
+    },
+    {
+      "path": "finite_stage/third_growth_entry.tex",
+      "sha256": "caf7ad690716d5b5c3a3f76c9754b5410a385148ae727a0f276901b5a3a95783"
+    },
+    {
+      "path": "finite_stage/actual_viscous_entry.tex",
+      "sha256": "91e70814420bcc828f9f3bbc30bd3b88f71a1b00862d8195a46e661cacc000db"
+    },
+    {
+      "path": "modified_spatial/modified_spatial_body.tex",
+      "sha256": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4"
+    },
+    {
+      "path": "physical_realization.tex",
+      "sha256": "d076bd1150571b9772706f07ae229890ff216ea9e5fce28792adaed528fae4e3"
+    }
+  ],
+  "checks": [
+    {
+      "name": "oriented insertion determinant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "adjugate identity preserving operator norm",
+      "passed": true,
+      "residual": "Matrix([[0, 0], [0, 0]])"
+    },
+    {
+      "name": "orthogonality of J",
+      "passed": true,
+      "residual": "Matrix([[0, 0], [0, 0]])"
+    },
+    {
+      "name": "M3 inverse transpose order",
+      "passed": true,
+      "residual": "Matrix([[0, 0], [0, 0]])"
+    },
+    {
+      "name": "M3 original insertion value",
+      "passed": true,
+      "residual": "Matrix([[0, 0], [0, 0]])"
+    },
+    {
+      "name": "transported insertion covector",
+      "passed": true,
+      "residual": "Matrix([[0], [0]])"
+    },
+    {
+      "name": "M3 determinant exact ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full matrix evolution M3dot=D_<3 M3",
+      "passed": true,
+      "residual": "Matrix([[0, 0], [0, 0]])"
+    },
+    {
+      "name": "determinant conservation under actual trace-free transport",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Frobenius product bound 14 times 11",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "strict sqrt154 less than 16 by positive squares",
+      "passed": true,
+      "residual": "True"
+    },
+    {
+      "name": "exact spare margin in doubled second deformation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "spare numerator positive for h0 at most one",
+      "passed": true,
+      "residual": "True"
+    },
+    {
+      "name": "squared scale upper constant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "third deformation frequency constant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "third deformation exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second envelope nesting exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second linear profile nesting exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "source exponent positivity at minimal Q2",
+      "passed": true,
+      "residual": "True"
+    },
+    {
+      "name": "source second exponent positivity at minimal Q2",
+      "passed": true,
+      "residual": "True"
+    },
+    {
+      "name": "first envelope exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first linear profile exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first envelope margin absorbs doubling",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first phase margin absorbs doubling",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "primitive constant retained and exact affine velocity",
+      "passed": true,
+      "residual": "Matrix([[0], [0]])"
+    },
+    {
+      "name": "physical phase-radius factors retain mu",
+      "passed": true,
+      "residual": "0"
+    }
+  ]
+}

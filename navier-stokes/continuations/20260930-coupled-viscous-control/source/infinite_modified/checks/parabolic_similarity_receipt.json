@@ -1,0 +1,28 @@
+{
+  "schema": "parabolic-similarity-check-v1",
+  "status": "pass",
+  "checks": {
+    "fixed_physical_diffusion": true,
+    "all_scalar_pde_weights": true,
+    "all_vector_pde_weights": true,
+    "temperature_gradient_weight": true,
+    "growth_vorticity_weight": true,
+    "normalized_vorticity_invariant": true,
+    "zeroth_order_radius_exponents": true,
+    "jet_cases": 196,
+    "all_jet_exponents": true,
+    "derivative_weight_cases": 5456,
+    "worst_derivative_penalty": "2m",
+    "summability_ratio_cases": 924,
+    "explicit_superalgebraic_budget": true
+  },
+  "exact_formulas": {
+    "clock": "c=(delta_*/d) r^2",
+    "vector_force_jet_radius_power": "-3-|gamma|-2b",
+    "scalar_force_jet_radius_power": "-5-|gamma|-2b",
+    "explicit_radius": "r_q=2^(-q)",
+    "explicit_normalized_budget": "2^(-q^2) times fixed smooth compactly supported force profiles"
+  },
+  "proof": "infinite_modified/parabolic_similarity_body.tex",
+  "proof_sha256": "a2e96f349aac61067fde44bacdc326ed5c1cca250c81be43fff03addd2574553"
+}

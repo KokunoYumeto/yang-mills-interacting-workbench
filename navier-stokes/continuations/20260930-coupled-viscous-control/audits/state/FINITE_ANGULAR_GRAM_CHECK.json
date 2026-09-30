@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "arithmetic": "exact fractions in Q(i)",
+  "carriers": [
+    0,
+    0,
+    1,
+    1,
+    -1,
+    2,
+    -2,
+    3,
+    5
+  ],
+  "checks": {
+    "fourier_norm_equals_folded_blocks": true,
+    "fourier_cross_equals_folded_blocks": true,
+    "all_pairwise_kernel_entries": true,
+    "pairwise_kernel_check_count": 243,
+    "norm_derivative_product_rule": true,
+    "zero_nonzero_decoupling": true,
+    "all_chart_exponents": true
+  },
+  "computed_exponents": {
+    "velocity_e2": "1/4-h",
+    "axial_derivative_e2": "-1/4",
+    "velocity_e1": "-h",
+    "axial_derivative_e1": "-1/2",
+    "J2_quadratic": "1/2-2*h",
+    "M2_quadratic": "-h",
+    "J1_quadratic": "-2*h",
+    "M1_quadratic": "-1/2-h"
+  },
+  "selection_carriers": [
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3
+  ],
+  "selection_matrix": [
+    [
+      "same",
+      "vanish",
+      "vanish",
+      "vanish",
+      "vanish",
+      "vanish",
+      "opposite"
+    ],
+    [
+      "vanish",
+      "same",
+      "vanish",
+      "vanish",
+      "vanish",
+      "opposite",
+      "vanish"
+    ],
+    [
+      "vanish",
+      "vanish",
+      "same",
+      "vanish",
+      "opposite",
+      "vanish",
+      "vanish"
+    ],
+    [
+      "vanish",
+      "vanish",
+      "vanish",
+      "zero",
+      "vanish",
+      "vanish",
+      "vanish"
+    ],
+    [
+      "vanish",
+      "vanish",
+      "opposite",
+      "vanish",
+      "same",
+      "vanish",
+      "vanish"
+    ],
+    [
+      "vanish",
+      "opposite",
+      "vanish",
+      "vanish",
+      "vanish",
+      "same",
+      "vanish"
+    ],
+    [
+      "opposite",
+      "vanish",
+      "vanish",
+      "vanish",
+      "vanish",
+      "vanish",
+      "same"
+    ]
+  ],
+  "proof_note": "editorial/finite_angular_gram_system.md"
+}

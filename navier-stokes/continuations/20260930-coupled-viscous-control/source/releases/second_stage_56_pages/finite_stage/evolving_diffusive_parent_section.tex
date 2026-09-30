@@ -1,0 +1,296 @@
+\section{Solving the next growth interval with a diffusing parent}
+\label{sec:cv-diffusive-parent}
+
+This section continues an uncompensated equal-diffusion variant of the
+first stage through the next growth interval. It keeps the laboratory
+direction and the original coefficients. The exact amplitude system
+is realized below both on a forced affine parent and on an actual
+two-wave state with an explicitly computed interaction force.
+The latter force specifies the difference between the affine-gradient
+calculation and the full spatial equations.
+
+\subsection{The inherited gradient and the original second pair}
+
+Retain the preceding section's $A_0,\mu,\nu,K_1,s,\lambda_1$, and
+let $\nu_{\rm phys}=\kappa_{\rm phys}=d>0$.
+For a sine first wave on its rotating affine base, the exact amplitude
+equations with retained diffusion are
+\[
+ \dot\Theta_{1,d}=a_1\Omega_{1,d}-dK_1^2\Theta_{1,d},\qquad
+ \dot\Omega_{1,d}=b_1\Theta_{1,d}-dK_1^2\Omega_{1,d}.
+\]
+If $(\Theta_1,\Omega_1)$ denotes the first inviscid pair of the
+preceding section on its specified control and times, direct
+differentiation proves
+\[
+ (\Theta_{1,d},\Omega_{1,d})(t)
+ =e^{-dK_1^2(t-t_0)}(\Theta_1,\Omega_1)(t).
+\]
+Both the forward map and its inverse multiplication by the positive
+exponential satisfy the indicated systems, so they are a bijection
+of solution spaces. In particular the selected vorticity still returns
+to zero at the specified $t_b$. This uses the inviscid times and does
+not assert the damped temperature crosses the same growth threshold.
+Its exact log-gain from the original seed is
+\[
+ \log(P_b/S)-\frac{dK_1^2}{\nu\sin s}
+                       (L+2+\Lambda_1^{-1}).
+\]
+
+Set $P_{d,b}=e^{-dK_1^2(t_b-t_0)}P_b>0$,
+$A_{1,d}=K_1P_{d,b}$, and $r=t-t_b\geq0$.
+During the fixed first holding control $\alpha=s$ the exact first
+pair is
+\[
+ \Theta_{1,d}(r)=-P_{d,b}e^{-qr},\quad\Omega_{1,d}=0,
+ \quad q=dK_1^2,
+ \quad G_d(r)=(A_0\sin s,-A_0\cos s-A_{1,d}e^{-qr}).
+\]
+The gradient therefore changes at the rate
+$G_d'(r)=(0,qA_{1,d}e^{-qr})$.
+Let the new laboratory phase be $\zeta_2=e(s_2)$ with
+$0<s_2\leq1/8$, and let $K_2=\mu\lambda_2>0$.
+The actual first hold has zero velocity gradient, so $\zeta_2'=0$.
+The second affine-wave coefficients are exactly
+\begin{equation}
+ a_{2,d}(r)=-\frac{J\zeta_2\cdot G_d(r)}{K_2}
+ =\frac{A_{1,d}e^{-qr}\sin s_2+A_0\sin(s+s_2)}{K_2},\quad
+ b_2=K_2\sin s_2,\quad\delta_2=dK_2^2.
+ \label{eq:cv-feedback-coefficients}
+\end{equation}
+Their signs are positive because $0<s+s_2\leq1/4$.
+The exact second sine amplitude system is
+\begin{equation}
+ \Theta_2'=a_{2,d}(r)\Omega_2-\delta_2\Theta_2,
+ \qquad\Omega_2'=b_2\Theta_2-\delta_2\Omega_2.
+ \label{eq:cv-feedback-pair}
+\end{equation}
+In particular the changing inherited gradient has not been replaced
+by its endpoint value. An affine realization alone would require the
+scalar force $G_d'(r)\cdot x$: the affine Laplacian is zero, so that
+force cannot be inferred to vanish from the old sine-wave diffusion.
+
+\subsection{Exact operator change and convergent fundamental solutions}
+
+Define
+\[
+ c_0=A_0\sin(s+s_2)\sin s_2>0,\qquad
+ c_1=A_{1,d}\sin^2s_2>0,\qquad W(r)=e^{\delta_2r}\Omega_2(r).
+\]
+Because $b_2$ is constant, differentiating the second original
+equation gives the exact system equivalence
+\begin{equation}
+ W''=(c_0+c_1e^{-qr})W,\qquad
+ \Omega_2=e^{-\delta_2r}W,\qquad
+ \Theta_2=\frac{e^{-\delta_2r}}{b_2}W'.
+ \label{eq:cv-feedback-scalar-map}
+\end{equation}
+Conversely these last two formulas give
+$\Omega_2'=b_2\Theta_2-\delta_2\Omega_2$ and
+$\Theta_2'=e^{-\delta_2r}W''/b_2-\delta_2\Theta_2
+=a_{2,d}\Omega_2-\delta_2\Theta_2$, since
+$b_2a_{2,d}=c_0+c_1e^{-qr}$.
+Thus the initial-data map is the invertible map
+$(\Theta_2(0),\Omega_2(0))\mapsto(W(0),W'(0))
+=(\Omega_2(0),b_2\Theta_2(0))$.
+
+Put
+\[
+ x(r)=x_0e^{-qr/2},\quad x_0=\frac{2\sqrt{c_1}}q,\quad
+ \vartheta=\frac{2\sqrt{c_0}}q>0,\qquad W(r)=\mathcal W(x(r)).
+\]
+Here $x(r)$ is a scalar change of independent variable and is unrelated
+to either physical spatial coordinate $x_1,x_2$, which remain fixed
+in the PDE below. Since $x'=-qx/2$ and $x''=q^2x/4$, one has
+\[
+ W''-(c_0+c_1e^{-qr})W
+ =\frac{q^2}4\left[x^2\mathcal W_{xx}+x\mathcal W_x
+                         -(x^2+\vartheta^2)\mathcal W\right].
+\]
+This proves the operator transformation including its nonzero factor.
+Rather than invoking a special-function name, define on $x>0$
+\begin{equation}
+ f(x)=x^{\vartheta}\sum_{n=0}^\infty a_nx^{2n},\quad
+ a_0=1,\quad a_n=\frac{a_{n-1}}{4n(n+\vartheta)},\qquad
+ g(x)=f(x)\int_{x_0}^x\frac{d\xi}{\xi f(\xi)^2}.
+ \label{eq:cv-feedback-fundamental}
+\end{equation}
+For every compact interval in $x>0$, the consecutive-term absolute
+ratio $x^2/[4n(n+\vartheta)]$ tends uniformly to zero.
+Every fixed derivative multiplies these terms by a polynomial in $n$
+and a bounded power of $x^{-1}$ on that compact interval; its series
+therefore converges uniformly as well. Termwise substitution is valid.
+The coefficient of $x^{\vartheta+2n}$ in
+$x^2f''+xf'-(x^2+\vartheta^2)f$ is
+$4n(n+\vartheta)a_n-a_{n-1}=0$ for $n\geq1$; the $n=0$
+coefficient is also zero. All coefficients are positive, so $f>0$.
+The defining integral for $g$ consequently exists on every compact
+subinterval of $x>0$. If $I'=1/(xf^2)$, differentiation yields
+\[
+ f(fI)' - f'(fI)=f^2I'=1/x.
+\]
+Also $I''/I'=-1/x-2f'/f$; substituting $g=fI$ into
+$g''+g'/x-(1+\vartheta^2/x^2)g$ leaves
+$fI''+(2f'+f/x)I'=0$. Thus $g$ solves the same equation and its
+Wronskian with $f$ is the nonvanishing function $1/x$.
+For completeness this proves completeness of the two solutions:
+at any $x>0$ their value-and-derivative matrix is invertible, so one
+linear combination matches arbitrary Cauchy data; linear uniqueness
+then identifies that combination with any solution on overlapping
+compact subintervals of $(0,\infty)$.
+
+For the original data let $W_0=\Omega_2(0)$ and
+$W_1=b_2\Theta_2(0)$. The exact solution is
+\begin{equation}
+ W(r)=c_ff(x(r))+c_gg(x(r)),\quad
+ c_f=\frac{W_0}{f(x_0)},\quad
+ c_g=-\frac{2f(x_0)}q\left(W_1+\frac{qx_0}{2}c_ff'(x_0)\right).
+ \label{eq:cv-feedback-initial-map}
+\end{equation}
+Indeed $g(x_0)=0$, $g'(x_0)=1/[x_0f(x_0)]$, and
+$x'(0)=-qx_0/2$ verify both initial conditions directly.
+For every finite $r$, $x(r)>0$, so the displayed functions and their
+derivatives are finite there. If $d=0$, the preceding substitutions
+dividing by $q$ are not used: the original equation is
+$W''=(c_0+c_1)W$, with the exact solution
+$W=W_0\cosh(\sqrt{c_0+c_1}\,r)
++W_1\sinh(\sqrt{c_0+c_1}\,r)/\sqrt{c_0+c_1}$.
+
+\subsection{Signs and quantitative physical gain with this feedback}
+
+Let $\gamma_0=\sqrt{c_0}$ and $\gamma_i=\sqrt{c_0+c_1}$.
+Use the original instantaneous growing eigenline at entry:
+$\Theta_2(0)<0$ and
+$\Omega_2(0)=\sqrt{b_2/a_{2,d}(0)}\Theta_2(0)<0$.
+Then $Y=-W$ has $Y(0)=Y_0>0$ and
+$Y'(0)=\gamma_iY_0>0$.
+As long as $Y>0$, its equation gives $Y''>0$ and
+$Y'\geq Y'(0)>0$; this excludes a first zero by continuity.
+Define
+\[
+ Y_-=Y_0\left(\cosh(\gamma_0r)
+          +\frac{\gamma_i}{\gamma_0}\sinh(\gamma_0r)\right),
+ \qquad Y_+=Y_0e^{\gamma_i r}.
+\]
+The differences have zero initial value and derivative and satisfy
+\begin{align*}
+ (Y-Y_-)''-\gamma_0^2(Y-Y_-)&=c_1e^{-qr}Y,\\
+ (Y_+-Y)''-\gamma_i^2(Y_+-Y)&=c_1(1-e^{-qr})Y.
+\end{align*}
+For $a>0$, the formula
+$Z(r)=\int_0^r\sinh(a(r-u))S(u)/a\,du$ has
+$Z(0)=Z'(0)=0$ and $Z''-a^2Z=S$, by two differentiations.
+Uniqueness proves it is the solution of that initial-value problem.
+Both sources above are nonnegative; both this kernel and its first
+$r$ derivative are nonnegative for $0\leq u\leq r$.
+Therefore $Y_-\leq Y\leq Y_+$ and
+$Y_-'\leq Y'\leq Y_+'$ for every finite $r\geq0$.
+The inverse physical map now gives both amplitudes negative and the
+precise temperature-gain bounds
+\begin{equation}
+ e^{-\delta_2r}\left(\cosh(\gamma_0r)
+       +\frac{\gamma_0}{\gamma_i}\sinh(\gamma_0r)\right)
+ \leq\frac{-\Theta_2(r)}{-\Theta_2(0)}
+ \leq e^{(\gamma_i-\delta_2)r}.
+ \label{eq:cv-feedback-physical-gain}
+\end{equation}
+In particular, if the actual numerical coefficients satisfy
+$\delta_2\geq\gamma_i$, this particular growth control never raises
+the second temperature above its entry amplitude. This is a proved
+obstruction to that specified uncompensated control, not a statement
+about other controls or the existence of an infinite viscous sequence.
+
+\subsection{The exact map to spatial fields and its interaction force}
+
+The affine parent $\theta_b=G_d(r)\cdot x$, $u_b=0$ is a solution
+with pressure $p_b=x_2G_d(r)\cdot x/2$ and forces
+$f_{\theta,b}=G_d'(r)\cdot x$ and
+$f_{u,b}=-(A_0\sin s/2)Jx$.
+The scalar statement follows from $\Delta\theta_b=0$.
+For momentum, direct differentiation gives
+$\nabla p_b-\theta_be_2=(G_dx_2-e_2(G_d\cdot x))/2
+=-G_{d,1}Jx/2$.
+An added sine wave whose amplitudes solve
+\eqref{eq:cv-feedback-pair} has zero additional PDE residual except
+for its activation, by the same explicit phase, transverse-vector,
+and pressure calculations below. Thus the solved system has an exact
+forced affine-background realization.
+
+There is also a full two-wave realization specifying the original
+spatial discrepancy. Let $F_1,F_2$ be smooth odd periodic profiles,
+each with mean-zero primitive $Q_j'=F_j$, and assume $F_1'(0)=1$.
+This includes both sine and the released profile which is linear
+near zero. Set
+\[
+ G_0=(A_0\sin s,-A_0\cos s),\quad
+ T(r)=-P_{d,b}e^{-qr},\quad
+ q_1=K_1x_2,\quad q_2=K_2\zeta_2\cdot x,
+\]
+and let $w_2(r)$ be any specified smooth activation, for example
+the source's $\eta(\Gamma_2r)$. Define on $\mathbb R^2$
+\begin{align}
+ \theta&=G_0\cdot x+T F_1(q_1)+w_2\Theta_2F_2(q_2),\nonumber\\
+ u&=\frac{w_2\Omega_2}{K_2}J\zeta_2F_2(q_2),\nonumber\\
+ p&=\frac12x_2(G_0\cdot x)+\frac{T}{K_1}Q_1(q_1)
+          +\frac{w_2\Theta_2\zeta_{2,2}}{K_2}Q_2(q_2).
+ \label{eq:cv-feedback-spatial-state}
+\end{align}
+Their complete retained-diffusion forces are
+\begin{align}
+ f_\theta={}&-dK_1^2T\,[F_1(q_1)+F_1''(q_1)]
+ +w_2'\Theta_2F_2(q_2)\nonumber\\
+ &-dK_2^2w_2\Theta_2\,[F_2(q_2)+F_2''(q_2)]
+ +f_{\rm cross},\label{eq:cv-feedback-spatial-scalar-force}\\
+ f_{\rm cross}={}&\frac{w_2\Omega_2}{K_2}\sin s_2\,
+        K_1T\,[F_1'(q_1)-1]F_2(q_2),
+ \label{eq:cv-feedback-exact-cross-force}\\
+ f_u={}&-\frac{A_0\sin s}2Jx
+ +\frac{w_2'\Omega_2}{K_2}J\zeta_2F_2(q_2)
+ -dK_2w_2\Omega_2J\zeta_2[F_2(q_2)+F_2''(q_2)].
+ \label{eq:cv-feedback-spatial-momentum-force}
+\end{align}
+Here is a direct verification. The old wave has derivative $T'=-dK_1^2T$
+and Laplacian $K_1^2TF_1''$, giving the first scalar force.
+The old temperature gradient differs from the coefficient gradient
+$G_d=G_0+K_1Te_2$ by precisely
+$K_1T[F_1'(q_1)-1]e_2$. Its advection by $u$ is the displayed
+$f_{\rm cross}$ because $J\zeta_2\cdot e_2=\sin s_2$.
+The remainder of that old-temperature advection is
+$(w_2\Omega_2/K_2)J\zeta_2\cdot G_d\,F_2=-w_2a_{2,d}\Omega_2F_2$;
+it cancels the coupling part of $w_2\Theta_2'F_2$.
+The new wave advects its own temperature and velocity by zero since
+$J\zeta_2\cdot\zeta_2=0$. Its amplitude damping and its Laplacian
+give the two new-profile terms in the forces.
+The old wave pressure has gradient $TF_1(q_1)e_2$, so it cancels
+old wave buoyancy exactly. The new pressure has gradient
+$w_2\Theta_2\zeta_{2,2}\zeta_2F_2$.
+The new momentum coupling vector before that pressure is
+$w_2\Theta_2(\zeta_{2,1}J\zeta_2-e_2)F_2
+=-w_2\Theta_2\zeta_{2,2}\zeta_2F_2$, by resolving $e_2$ in the
+orthonormal basis $(\zeta_2,J\zeta_2)$. Hence it cancels as well.
+The base pressure supplies exactly the first vector-force term,
+as proved above, and divergence is zero by transversality.
+This verifies both full equations including all interactions.
+
+For the sine profiles, $F_j+F_j''=0$ identically. The remaining
+scalar interaction force is then exactly
+\[
+ f_{\rm cross}=-\frac{A_{1,d}e^{-qr}}{K_2}
+   w_2\Omega_2\sin s_2\,[\cos(K_1x_2)-1]\sin(q_2),
+ \qquad
+ \|f_{\rm cross}(r)\|_\infty
+ \leq\frac{2A_{1,d}e^{-qr}}{K_2}|w_2\Omega_2|\sin s_2.
+\]
+The bound follows from $|\cos u-1|\leq2$ and $|\sin v|\leq1$.
+For the released linear-core profile the same explicit formulas hold,
+and $F_1'-1=0$ on its original linear interval, so the interaction
+force vanishes there. Its old-profile diffusion defect is instead
+$-dK_1^2Tq_1$ on that interval, since $F_1(q_1)=q_1$ and
+$F_1''(q_1)=0$. Its gradient is exactly $G_d'(r)$.
+Thus exponential damping of that released linear core requires the
+stated core force, and is not an unforced consequence of its zero
+Laplacian. The explicit forces, inverse solution maps, and convergent
+formulas above carry the feedback calculation to an actual spatial
+solution without conflating the sine state, its affine gradient, and
+the released profile. No compact-support or infinite-iteration claim
+is made in this section.

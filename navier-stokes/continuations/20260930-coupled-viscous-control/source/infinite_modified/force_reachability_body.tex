@@ -1,0 +1,125 @@
+\section{The exact force needed to reach a compact based state}
+\label{ifr:section}
+
+The annulus defect has a further finite-interval consequence for the
+actual signed force.  Retain the entire smooth parent
+$(\theta_P,u_P,p_P)$ on $[a,b]$, and let a compact smooth increment
+$(h,z,\kappa)$ have $\operatorname{div}z=0$ and $h(a)=z(a)=0$.
+The support of the increment is contained in one fixed compact set on
+this finite interval.  Write $e^\theta,e^u$ for its complete physical
+residual \eqref{ibc:scalar-residual}--\eqref{ibc:vector-residual}.
+No assumption that the parent's own force vanishes is made.
+
+For every retained weight $\lambda>0$, define the original-coordinate
+quantities
+\begin{align}
+ E_\lambda(t)^2&=\|z(t)\|_2^2+\lambda\|h(t)\|_2^2,\nonumber\\
+ F_\lambda(t)^2&=\|e^u(t)\|_2^2+\lambda\|e^\theta(t)\|_2^2,\nonumber\\
+ C_\lambda(t)&=\|\nabla u_P(t)\|_\infty+
+             \frac{1+\lambda\|\nabla\theta_P(t)\|_\infty}
+                  {2\sqrt\lambda}.
+ \label{ifr:weighted-data}
+\end{align}
+The parent norms may be restricted to the common compact support
+neighbourhood; using the full spatial norms also gives the displayed
+bounds.  The diffusion coefficient $d>0$ is unchanged.
+The exact energy identity is
+\begin{align}
+ \frac12(E_\lambda^2)'&
+   +d\bigl(\|\nabla z\|_2^2+\lambda\|\nabla h\|_2^2\bigr)\nonumber\\
+ &= -\int z^T(\nabla u_P)z
+    -\lambda\int h\,z\cdot\nabla\theta_P
+    +\int h z_2
+    +\int z\cdot e^u+\lambda\int h e^\theta .
+ \label{ifr:energy-identity}
+\end{align}
+All integrals use the original Lebesgue measure on $\mathbb R^2$.
+
+\begin{proof}
+Multiply the scalar increment equation by $\lambda h$ and the vector
+increment equation by $z$, then integrate and add.
+Both $u_P$ and $z$ are divergence free.  Therefore
+$\int h\,u_P\cdot\nabla h$, $\int h\,z\cdot\nabla h$,
+$\int z\cdot(u_P\cdot\nabla)z$, and
+$\int z\cdot(z\cdot\nabla)z$ vanish by integration by parts.
+The pressure integral $\int z\cdot\nabla\kappa$ also vanishes.
+The term $(z\cdot\nabla)u_P$ gives the first right-hand integral.
+The scalar parent-gradient term gives the second, and the original
+buoyancy $-he_2$ on the residual's left side gives the third with a
+positive sign.  Each retained $-d\Delta$ term gives the corresponding
+positive gradient norm.  Compact support removes the spatial boundary
+terms.  This proves the full identity, including all signs and $\lambda$.
+\end{proof}
+
+The parent-gradient and buoyancy terms obey
+\[
+ \left|-\lambda\int h\,z\cdot\nabla\theta_P+\int h z_2\right|
+ \leq\frac{1+\lambda\|\nabla\theta_P\|_\infty}
+             {2\sqrt\lambda}E_\lambda^2.
+\]
+Indeed their sum is bounded by
+$(1+\lambda\|\nabla\theta_P\|_\infty)\|h\|_2\|z\|_2$,
+and $2\sqrt\lambda\|h\|_2\|z\|_2\leq E_\lambda^2$.
+The strain term is at most
+$\|\nabla u_P\|_\infty E_\lambda^2$, and the signed forcing
+pairing is at most $E_\lambda F_\lambda$.
+Dropping only the displayed nonnegative diffusion integral in this
+inequality gives the exact finite-interval estimate
+\begin{equation}\label{ifr:reachability-bound}
+ E_\lambda(t)\leq
+ \int_a^t
+   \exp\!\left(\int_s^t C_\lambda(\tau)\,d\tau\right)
+       F_\lambda(s)\,ds .
+\end{equation}
+For a proof valid at zeros of $E_\lambda$, put
+$E_{\lambda,\varepsilon}=(E_\lambda^2+\varepsilon^2)^{1/2}$.
+The energy identity implies
+$E_{\lambda,\varepsilon}'\leq
+C_\lambda E_{\lambda,\varepsilon}+F_\lambda$.
+Multiply by $\exp(-\int_a^t C_\lambda)$, integrate, and let
+$\varepsilon\downarrow0$.  Its initial value is $\varepsilon$;
+the stated formula follows.
+
+In particular, the force-to-state map has zero kernel at this based
+initial state: $e^\theta=e^u=0$ throughout the interval implies
+$h=z=0$ throughout the interval.  It also gives the nonzero target cost
+\begin{equation}\label{ifr:force-cost}
+ \int_a^t F_\lambda(s)\,ds
+ \geq
+ \exp\!\left(-\int_a^t C_\lambda(\tau)\,d\tau\right)E_\lambda(t).
+\end{equation}
+This uses $C_\lambda\geq0$ in \eqref{ifr:reachability-bound}.
+It relates the actual signed residual to a reached state, not to the
+unsigned termwise majorants rejected earlier.
+
+For the compact affine correction \eqref{ifs:physical-fields},
+the target has a further exact lower bound:
+\begin{equation}\label{ifr:affine-target-cost}
+ E_\lambda(t)\geq
+ \frac{\sqrt\pi\,r^2}{8}
+ \left(\|L(t)\|_{\mathrm F}^2+\lambda|g(t)|^2\right)^{1/2}.
+\end{equation}
+To prove it, integrate only over $B_{r/2}$, where
+$z=Lx$ and $h=g\cdot x$.  The original coordinate integrals are
+\[
+ \int_{B_{r/2}}x_i x_j\,dx
+    =\delta_{ij}\frac{\pi r^4}{64}.
+\]
+Thus $\int|Lx|^2=(\pi r^4/64)\operatorname{tr}(L^TL)$
+and $\int|g\cdot x|^2=(\pi r^4/64)|g|^2$ on that ball,
+which proves the formula with the full Frobenius norm.
+Combining \eqref{ifr:force-cost} and
+\eqref{ifr:affine-target-cost} gives a quantitative necessary
+physical $L^1_tL^2_x$ force budget for the complete compact operation.
+Every radius, weight, parent gradient and exponential remains explicit.
+
+This calculation supplies the next test for a proposed annulus
+correction: it must satisfy the signed defect requirement
+\eqref{ifs:defect-maps} and the complete-state cost
+\eqref{ifr:force-cost}.  The estimate neither bounds the successive
+parent gradients uniformly nor constructs the next growing return.
+Those receiving calculations remain active.  The zero-kernel result
+shows why simply replacing the whole increment by a zero-force
+evolution from its unchanged initial jets would erase the increment
+itself.  A successful construction must retain and estimate the actual
+control that reaches its new state.

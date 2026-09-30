@@ -1,0 +1,92 @@
+{
+  "schema": "paired-entry-second-return-build-v1",
+  "all_passed": true,
+  "operations": [
+    {
+      "command": [
+        "<user-root>\\miniconda3\\python.exe",
+        "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\second_return\\replay_second_return.py"
+      ],
+      "exit_code": 0,
+      "log": "qa/replay.log"
+    },
+    {
+      "command": [
+        "<user-root>\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.EXE",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "second_return.tex"
+      ],
+      "exit_code": 0,
+      "log": "qa/latex-pass-1.log"
+    },
+    {
+      "command": [
+        "<user-root>\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.EXE",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "second_return.tex"
+      ],
+      "exit_code": 0,
+      "log": "qa/latex-pass-2.log"
+    },
+    {
+      "command": [
+        "<user-root>\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdflatex.EXE",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "second_return.tex"
+      ],
+      "exit_code": 0,
+      "log": "qa/latex-pass-3.log"
+    },
+    {
+      "command": [
+        "<user-root>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.EXE",
+        "-r",
+        "90",
+        "-png",
+        "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\second_return\\second_return.pdf",
+        "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\second_return\\qa\\page"
+      ],
+      "exit_code": 0,
+      "log": "qa/render.log"
+    }
+  ],
+  "page_count": 12,
+  "pdf": "second_return.pdf",
+  "pdf_sha256": "d37294646bc16929c022573922ec65008c2e50e545f711907e90ff20435938da",
+  "body_sha256": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4",
+  "entry_sha256": "220dd78a41c4d593af1c83ef1b35f3900387f7021082e5a95dc36efa15da4321",
+  "replay_receipt_sha256": "de627fb86c496895375a0f9c5cca99ec2e0ddcb270bc237d9bafad4884b6561b",
+  "exact_check_count": 52,
+  "earlier_reference_imports": [
+    "\\newlabel{sec:cv-diffusive-parent}{{3}{13}{Solving the next growth interval with a diffusing parent}{section.3}{}}",
+    "\\newlabel{sec:cv-first-stage}{{2}{6}{The actual first controlled stage in the original units}{section.2}{}}"
+  ],
+  "latex_diagnostics": [],
+  "out_of_page_text_blocks": [],
+  "all_pages_rendered": true,
+  "visual_review_status": "pending",
+  "rendered_page_sha256": {
+    "qa/page-01.png": "d7aa3ba2354ee45c6bdd48368adf9f46b3df5f5d389d5e3d55853905c1b415a4",
+    "qa/page-02.png": "259d36f67bc46cb08f1f9bc704342f4f9f2dabd286dbafdd9f565b6a4ba50e26",
+    "qa/page-03.png": "0d830030efb831aad0793a89cf062e025d14423dcdf72a2d44b3aa4f33545ca7",
+    "qa/page-04.png": "4993eec70009ab3c8de90c60f554da6c63f8c9131d89b5ff02b6254dd2ca54aa",
+    "qa/page-05.png": "529f5e66e5d839e8f8c8825f2a72e21356c2d3c3d84e4edbac52e4a60e350310",
+    "qa/page-06.png": "880a113933cbfc4588b2c8e00ef523305eb1eb29d18894970f5b7978dd6b6e23",
+    "qa/page-07.png": "de4e580fa4ebfd505366ef99bf1283d26aa222b1df17be66da6994d92f4bb01b",
+    "qa/page-08.png": "b970eabd00336a9399da7e0a84020e5d65b2af9a95d3c8d847cea0a9533522bd",
+    "qa/page-09.png": "2db25a6ad9f212c3f1c88095695835e40740b5c9316ffe8792b6956df4268b42",
+    "qa/page-10.png": "e43ffa374381942a1a6ab2d89e8e3a0d830e3515f8a109a36c896c94600d70dd",
+    "qa/page-11.png": "2025c911d9832c57ba4e78c821e7174f567f473fef4e2744ede1ef95febedb9d",
+    "qa/page-12.png": "c37657171fa6ae9845e643986bcf76a2cceea62a86a733fe1ab4efaf9fec422b"
+  },
+  "contact_sheets": [
+    "qa/contact-1.png",
+    "qa/contact-2.png",
+    "qa/contact-3.png"
+  ],
+  "lean_used": false,
+  "infinite_modified_viscous_sequence_proved": false
+}

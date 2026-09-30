@@ -1,0 +1,517 @@
+\section{The actual third-growth pair in the source clock and frame}
+\label{tgframe:section}
+
+This calculation uses equations (6.2)--(6.12), (7.2)--(7.12), and
+Lemma 7.4 of the retained 166-page source. Its SHA-256 is displayed
+in two consecutive segments:
+\[
+\begin{gathered}
+\texttt{0e779481c4da40bd28d1e642e1d8ca57}\\
+\texttt{447d129610df28dfa5a11e9af8ae228f}.
+\end{gathered}
+\]
+The coupled input is the actual third-growth interval proved in
+\path{finite_stage/third_growth_entry.tex}. The source's pulse
+equation is written at physical viscosity one. We retain an arbitrary
+positive physical viscosity $\nu_{\rm NS}$ when computing a candidate
+residual; when identifying the source's particular homogeneous pulse,
+we explicitly set $\nu_{\rm NS}=1$ and harmonic $m=1$.
+The original coupled time scale $\nu=\sqrt{A_0}$, the physical coupled
+diffusivity $d$, and the source chart parameter $\varepsilon=Q^h$
+are distinct.
+The source growth constant denoted $\lambda_0$ in $\lambda(v)$ below
+is the source's own growth constant. It is not identified with the
+coupled integer frequency $\lambda_0=\mu=\lceil\sqrt{A_0}/2\rceil$.
+
+\subsection{Exact physical differentiation of the source pulse clock}
+
+Fix a source label and one of its local lifts. Set
+\[
+ b_g=\sqrt2-1,\quad v_r=(1,-b_g),\quad v_t=(b_g,1),\quad
+ J_g=\begin{pmatrix}3&1\\1&5\end{pmatrix},\quad
+ T_g=4+\sqrt2,\quad\Lambda_g=4-\sqrt2.
+\]
+Direct multiplication gives $J_gv_t=T_gv_t$ and
+$J_gv_r=\Lambda_gv_r$, while $v_t\cdot v_r=0$ and
+$|v_t|^2=|v_r|^2=1+b_g^2$. The source retains
+\[
+\begin{gathered}
+ d_r=2\left((1+h)\frac{\log\Lambda_g}{\log T_g}-h\kappa_s\right),\qquad
+ \kappa_s=10^{-5},\\
+ Q=2^{-\ell},\quad
+ i=\left\lfloor\log_{T_g}\frac{Q^{-1-h}}{S_*}\right\rfloor,\quad
+ c_i=T_g^iQ^{1+h}.
+\end{gathered}
+\]
+On the local lift
+\[
+ Y_i-c_\gamma-k_{\rm copy}=\xi_gv_r+\eta_gv_t,\qquad
+ v=\frac{\eta_g+r_0}{c_i},\qquad L_s=\frac{2r_0}{c_i},
+ \quad
+ \eta_g=\frac{v_t\cdot(Y_i-c_\gamma-k_{\rm copy})}{1+b_g^2}.
+\]
+The label and integer $k_{\rm copy}$ are held fixed on this lift.
+Consequently $L_i\eta_g=0$, $N_i\eta_g=1$, where
+$L_i=v_r\cdot\partial_{Y_i}$ and $N_i=v_t\cdot\partial_{Y_i}$.
+The clock has no explicit dependence on the slow variables $R,Z,T$.
+The evaluated chart derivatives are exactly
+\[
+ D_r=\partial_R+M_id_rR^{d_r-1}L_i,\qquad
+ D_z=\varepsilon\partial_Z,\qquad
+ t_*=-\varepsilon\partial_T+c_iN_i,
+ \quad M_i=\Lambda_g^iQ^{d_r/2}.
+\]
+It follows by applying these displayed operators, without estimating
+any coefficient, that
+\begin{equation}\label{tgframe:clockchart}
+ D_rv=D_zv=0,\qquad t_*v=1.
+\end{equation}
+There is also an explicit physical verification. Evaluate at the
+source map $Y=v_rr^{d_r}+v_tt$ modulo the lattice. Locally the lift of
+$Y_i=J_g^iY$ differs from
+$\Lambda_g^iv_rr^{d_r}+T_g^iv_tt$ by a constant lattice vector.
+The dual formula for $\eta_g$ therefore gives
+$\eta_g=T_g^it+C_\gamma$ with a locally constant $C_\gamma$.
+Thus, on the evaluated local rectangle,
+\begin{equation}\label{tgframe:clockphysical}
+ \partial_rv=\partial_zv=\partial_\theta v=0,\qquad
+ \partial_tv=\frac{T_g^i}{c_i}=Q^{-1-h}.
+\end{equation}
+The $\partial_t$ in this equation is the derivative of the evaluated
+physical function. On the extended domain the corresponding derivative
+is $\partial_t+N_{\rm abs}$. These statements are identical after
+evaluation; neither drops the auxiliary derivative.
+
+Let $t_b$ and $r_a>0$ be the actual second return time and the actual
+third target-crossing elapsed time. Define
+\begin{equation}\label{tgframe:coupledclock}
+ t_c(v)=t_b+\alpha v,\qquad \alpha=\frac{r_a}{L_s}>0.
+\end{equation}
+This parametrizes the entire proved coupled growth interval, with its
+original endpoints. In physical source variables its derivative is
+$\partial_tt_c=\alpha Q^{-1-h}$ and all three spatial derivatives vanish.
+The positive orientation of this clock asserts no sign for a velocity.
+The coupled amplitudes below are strictly negative.
+
+\subsection{The actual frame, its inverse, and the direct candidate}
+
+Write the original source phase normal as
+\[
+ n=\left(x_0-v(pF_R+p_zG_R),\ \frac pR,\
+             p_z-\varepsilon v(pF_Z+p_zG_Z)\right).
+\]
+All $p,p_z,x_0,k,Q$ are the original fixed label constants, including
+$kp\in\mathbb Z\setminus\{0\}$. Set
+\[
+\begin{gathered}
+ K_a=\frac{n_{\tan}}{|n_{\tan}|},\quad
+ N_a=((K_a)_z,-(K_a)_\theta),\quad
+ s_a=\frac{n_r}{|n_{\tan}|},\\
+ c(v)=c_0\sqrt{1+s(v)^2},
+ \quad
+ s(v)=\sigma\left(\frac{u_*}{2}+\frac{u_*v}{L_s}\right).
+\end{gathered}
+\]
+Here $c_0<0$ is the unchanged source constant, and $K_a,N_a$
+are identified with their tangential three-vectors. In particular
+$c(v)\ne0$. Because $p/R\ne0$, every formula is defined throughout
+the source rectangle. The actual source frame is
+\[
+ U=[e_r-s_aK_a,\ N_a],\qquad
+ M=\begin{pmatrix}1&1\\c&-c\end{pmatrix},\qquad B=UM.
+\]
+The two columns of $U$ are orthogonal, with squared lengths
+$g_a^2=1+s_a^2$ and $1$. Both are orthogonal to $n$.
+Since $\det M=-2c\ne0$, $B$ is a bijection from $\mathbb R^2$
+onto $n^\perp$. The source left inverse, defined on all of
+$\mathbb R^3$, is
+\begin{equation}\label{tgframe:leftinverse}
+ B_\ell=M^{-1}\begin{pmatrix}e_r^T\\N_a^T\end{pmatrix},
+ \qquad
+ M^{-1}=\frac12\begin{pmatrix}1&c^{-1}\\1&-c^{-1}\end{pmatrix}.
+\end{equation}
+Indeed the last two rows applied to $U$ give $I_2$.
+
+The eigenvalues of
+\[
+ B^TB=
+ \begin{pmatrix}g_a^2+c^2&g_a^2-c^2\\
+                 g_a^2-c^2&g_a^2+c^2\end{pmatrix}
+\]
+are $2g_a^2$ and $2c^2$, with orthogonal eigenvectors $(1,1)$
+and $(1,-1)$. The Euclidean operator norm and the inverse norm on
+the tangent plane are therefore exactly
+\begin{equation}\label{tgframe:framenorms}
+ \|B\|=\sqrt2\max(g_a,|c|),\qquad
+ \|(B|_{\mathbb R^2})^{-1}\|_{n^\perp\to\mathbb R^2}
+       =\frac1{\sqrt2\min(g_a,|c|)}.
+\end{equation}
+The ambient norm of the particular extension \eqref{tgframe:leftinverse}
+is $(1/\sqrt2)\max(1,|c|^{-1})$; it need not equal the inverse norm
+restricted to $n^\perp$.
+
+Retain the actual coupled data
+\[
+ K_3=\mu\widehat\lambda_3,\quad
+ S_3=\frac{A_0}{\mu}\widehat\lambda_3^{-k_3-6},\quad
+ P_3^*=\frac{A_0}{\mu}\widehat\lambda_3^{-7/8}=S_3e^{L_3},
+ \quad u_i=\sqrt{\frac{b_i}{a_i}}
+           =\frac{K_3}{\sigma_2\sqrt{n_i}}.
+\]
+On the interval \eqref{tgframe:coupledclock}, the already constructed
+solution is
+\[
+ y_3(t_c)=\binom{\Theta_3}{\Omega_3}
+        =-P(v)\binom{1}{u(v)},\qquad
+ S_3\le P(v)\le P_3^*,\qquad
+ \frac{u_i}{\sqrt2}\le u(v)\le2u_i,
+\]
+with $P(0)=S_3$, $P(L_s)=P_3^*$ and $u(0)=u_i$.
+These inequalities follow from the actual evolving-parent system,
+rather than from a new frame approximation.
+The direct candidate $t_{\rm dir}=By_3$ consequently has the exact
+components
+\begin{align}
+ (t_{\rm dir})_r&=-P(1+u),\nonumber\\
+ (t_{\rm dir})_{\tan}
+       &=P s_a(1+u)K_a-Pc(1-u)N_a,\label{tgframe:directcomponents}\\
+ |t_{\rm dir}|^2
+       &=P^2\bigl[(1+s_a^2)(1+u)^2+c^2(1-u)^2\bigr],\nonumber\\
+ (t_{\rm dir})_r(t_{\rm dir})_{\tan}
+       &=-P^2s_a(1+u)^2K_a+P^2c(1-u^2)N_a.\nonumber
+\end{align}
+These follow by multiplying $My_3=-P(1+u,c(1-u))^T$ and using
+the orthogonality of the two columns of $U$. In particular
+\[
+ |(t_{\rm dir})_r|\ge S_3(1+u_i/\sqrt2),\qquad
+ |t_{\rm dir}|\le\sqrt2\max(g_a,|c|)P_3^*\sqrt{1+4u_i^2}.
+\]
+At the actual target,
+\begin{equation}\label{tgframe:endpointomega}
+ \frac{P_3^*u_i}{\sqrt2}\le|\Omega_3(t_b+r_a)|
+                      \le2P_3^*u_i,\qquad
+ P_3^*u_i=\frac{A_0}{\sigma_2\sqrt{n_i}}
+                          \widehat\lambda_3^{1/8}.
+\end{equation}
+The last equality retains $\mu$ until it cancels against its identical
+factor in $K_3$. Thus a decreasing temperature target does not give a
+decreasing two-component target.
+
+\subsection{The complete principal mismatch, including the cutoff}
+
+With a prime denoting $v$ differentiation at fixed slow variables,
+retain
+\[
+ \mathsf K=\begin{pmatrix}0&-2F&0\\2F+RF_R&0&0\\G_R&0&0\end{pmatrix},
+ \quad
+ A_\Phi=-\mathsf K+
+        \frac{n(n^T\mathsf K-(n')^T)}{|n|^2},
+ \quad H=B_\ell(A_\Phi B-B').
+\]
+Differentiating $n^TB=0$ shows
+$n^TB'=-(n')^TB$. Direct multiplication gives
+$n^TA_\Phi B=-(n')^TB$ as well. Therefore
+$A_\Phi B-B'$ takes values in $n^\perp$, and
+\begin{equation}\label{tgframe:frametransport}
+ A_\Phi B-B'=BH.
+\end{equation}
+The source defines the exact error matrix
+$E=H-\operatorname{diag}(\lambda,-\lambda)$ with
+$\lambda=\lambda_0/\sqrt{1+s^2}$. Its source estimate
+$\|E\|\le C/S_*$ is not an assertion that $E$ is zero.
+
+The actual coupled matrix and arbitrary-viscosity source loss are
+\[
+\begin{gathered}
+ C_c=\begin{pmatrix}-d_c&a_3\\b_3&-d_c\end{pmatrix},
+ \quad d_c=dK_3^2R_3,\quad
+ a_3=\frac{N_3}{K_3R_3},\quad b_3=\frac{K_3c_{\rm det}}{\chi_{\rm old}},\\
+ \quad
+ \delta_\nu=\nu_{\rm NS}m^2\varepsilon k^2|n|^2,\quad
+ \Delta_\nu=\delta_\nu-\alpha d_c.
+\end{gathered}
+\]
+Here $c_{\rm det}$ and $\chi_{\rm old}$ are the third-growth determinant
+constant and older phase length; these names distinguish them from the
+source $c(v)$ and the cutoff below. Every coupled quantity is evaluated
+at $t_c(v)$. The actual third growth has zero added amplitude controls,
+so $y_3'=\alpha C_cy_3$ exactly.
+
+Let $\chi=\eta(R,Z,T)\chi_g(\xi_g)\psi(v)$ be a smooth scalar
+cutoff with the source support, and set $t_\chi=\chi By_3$.
+The homogeneous-pressure formula, with zero principal source, is
+\[
+ \pi_\chi=\frac{i}{km|n|^2}
+        \bigl(n\cdot\mathsf Kt_\chi-n'\cdot t_\chi\bigr).
+\]
+The cutoff leaves $n^Tt_\chi=0$. Differentiating this identity
+and substituting the pressure gives
+\begin{equation}\label{tgframe:residual}
+ t_\chi'+\mathsf Kt_\chi+\delta_\nu t_\chi+ikmn\pi_\chi
+ =B\mathcal E_\chi,\qquad
+ \mathcal E_\chi=\chi(\alpha C_c-H+\delta_\nu I)y_3+\chi'y_3.
+\end{equation}
+For completeness, the normal component of the sum before pressure is
+$-n'\cdot t_\chi+n\cdot\mathsf Kt_\chi$; multiplication by $ikmn$
+times the displayed pressure cancels it. The remaining vector is
+$t_\chi'-A_\Phi t_\chi+\delta_\nu t_\chi$. Use
+\eqref{tgframe:frametransport} and $y_3'=\alpha C_cy_3$ to obtain
+\eqref{tgframe:residual}.
+
+In original scalar entries this is
+\begin{equation}\label{tgframe:residualentries}
+ \mathcal E_\chi=-P
+ \left\{\chi
+ \binom{\Delta_\nu-\lambda-E_{11}+(\alpha a_3-E_{12})u}
+       {\alpha b_3-E_{21}+(\Delta_\nu+\lambda-E_{22})u}
+       +\chi'\binom1u\right\}.
+\end{equation}
+All entries are signed. In particular the damping mismatch is
+$\delta_\nu-\alpha dK_3^2R_3$, not the sum of the losses.
+At fixed slow variables and fixed $\xi_g$, $\chi'=\eta\chi_g\psi'$.
+The physical derivative of $\chi$ also includes
+$-\varepsilon(\partial_T\eta)\chi_g\psi$ in $t_*\chi$; that slow term
+belongs to the complete physical residual and has not been included in,
+or removed by, the principal equation \eqref{tgframe:residual}.
+A direct finite bound is
+\[
+ |\mathcal E_\chi|
+ \le P\sqrt{1+u^2}\left[
+ |\chi|\bigl(|\Delta_\nu|+\lambda+\|E\|
+                  +\alpha\max(a_3,b_3)\bigr)+|\chi'|\right].
+\]
+This is the triangle inequality and the exact norm
+$\left\|\begin{smallmatrix}0&a_3\\b_3&0\end{smallmatrix}\right\|
+=\max(a_3,b_3)$, with $a_3,b_3>0$.
+It retains the carrier, frame, cutoff and all physical diffusion factors.
+
+\subsection{An explicit map of the actual seed to the actual source pulse}
+
+For this subsection only, take $m=1$, $\nu_{\rm NS}=1$, so
+$\delta_1=\varepsilon k^2|n|^2$. This is precisely the source
+homogeneous pulse equation with its given background. Put
+\[
+ d_{\rm ref}=\varepsilon k^2B_s^2(1+s^2),\qquad
+ {\cal P}_\sigma(v)=
+   \exp\left(\int_{L_s/2}^{v}(\lambda(w)-d_{\rm ref}(w))\,dw\right).
+\]
+Every coefficient is finite on the closed interval. Thus
+$\mathcal P_\sigma(0)>0$ exactly, without a Gaussian approximation.
+Source Lemma 7.4 specifies the initial coordinate vector
+\[
+ z_{\sigma,0}=\binom{{\cal P}_\sigma(0)}0,\qquad
+ t^h_\sigma(0)=B(0)z_{\sigma,0}.
+\]
+The fixed source label may affect this strictly positive scalar.
+
+For any nonzero real target vector $z_0=(z_1,z_2)^T$, define
+\begin{equation}\label{tgframe:L0general}
+ L_0=-\frac1{S_3(1+u_i^2)}
+ \begin{pmatrix}z_1&-z_2\\z_2&z_1\end{pmatrix}
+ \begin{pmatrix}1&u_i\\-u_i&1\end{pmatrix}.
+\end{equation}
+This is an explicit invertible linear map with
+\[
+ L_0[-S_3(1,u_i)^T]=z_0,\qquad
+ \det L_0=\frac{|z_0|^2}{S_3^2(1+u_i^2)}>0,
+\]
+and inverse
+\begin{equation}\label{tgframe:L0inverse}
+ L_0^{-1}=-\frac{S_3}{|z_0|^2}
+       \begin{pmatrix}1&-u_i\\u_i&1\end{pmatrix}
+       \begin{pmatrix}z_1&z_2\\-z_2&z_1\end{pmatrix}.
+\end{equation}
+Indeed the second matrix of \eqref{tgframe:L0general} sends
+$(1,u_i)^T$ to $(1+u_i^2,0)^T$, and each matrix times its
+transpose is a positive scalar times $I_2$.
+The same multiplication verifies the inverse and proves the exact norms
+\begin{equation}\label{tgframe:L0norms}
+ \|L_0\|=\frac{|z_0|}{S_3\sqrt{1+u_i^2}},\qquad
+ \|L_0^{-1}\|=\frac{S_3\sqrt{1+u_i^2}}{|z_0|}.
+\end{equation}
+In particular the source target gives
+\[
+ L_0=-\frac{{\cal P}_\sigma(0)}{S_3(1+u_i^2)}
+        \begin{pmatrix}1&u_i\\-u_i&1\end{pmatrix},
+ \quad
+ \|L_0\|=
+ \frac{{\cal P}_\sigma(0)\,\mu\widehat\lambda_3^{k_3+6}}
+ {A_0\sqrt{1+K_3^2/(\sigma_2^2n_i)}}.
+\]
+No seed or source initial amplitude has been set to one.
+
+Define the two identity-initial-value fundamental matrices by
+\[
+ X_c'=\alpha C_cX_c,\quad X_c(0)=I_2,\qquad
+ X_s'=(H-\delta_1I_2)X_s,\quad X_s(0)=I_2.
+\]
+Here is a direct existence, invertibility and uniqueness construction.
+For a continuous matrix $D$ on $[0,L_s]$ let
+\[
+ X_D(v)=I_2+
+ \sum_{j\ge1}\int_{0\le w_j\le\cdots\le w_1\le v}
+       D(w_1)\cdots D(w_j)\,dw_j\cdots dw_1 .
+\]
+If $\sup\|D\|=M_D$, the $j$th term is bounded by
+$(M_DL_s)^j/j!$. Uniform convergence and regrouping the integrals
+give $X_D=I_2+\int_0^vD(w)X_D(w)\,dw$, hence the differential
+equation. The corresponding right-ordered series for
+$Z'=-ZD$, $Z(0)=I_2$, converges by the same bound.
+Differentiation gives $(ZX_D)'=0$, hence $ZX_D=I_2$.
+For square matrices this is invertibility. If two solutions agree
+initially, the difference satisfies the zero-initial-value integral
+equation; iteration bounds its norm by a fixed finite bound times
+$(M_Dv)^j/j!$ for every $j$, which tends to zero.
+This proves uniqueness. Smooth coefficient dependence follows from
+the same series with the following explicit bound. On a compact
+coefficient-parameter neighborhood let $M_N\ge1$ bound every coefficient
+derivative through order $N$. Differentiating a product of $j$ factors
+$N$ times allocates each derivative to one of $j$ factors, so there are
+at most $j^N$ terms, each of norm at most $M_N^j$. The differentiated
+$j$th integral is therefore bounded by
+$j^N(M_NL_s)^j/j!$, a summable sequence. Uniform convergence of these
+derivative series justifies termwise differentiation: integrate each
+first-derivative series along a parameter segment and interchange the
+uniform sum with that integral, then iterate through order $N$.
+The right-ordered inverse series has the same bound. Pulse derivatives
+then follow from the differential equations. This proves smoothness,
+with the explicit derivative equations below providing further bounds.
+
+Now set
+\begin{equation}\label{tgframe:intertwiner}
+ L(v)=X_s(v)L_0X_c(v)^{-1},\qquad
+ L^{-1}=X_cL_0^{-1}X_s^{-1}.
+\end{equation}
+Differentiation gives
+\[
+ L'=(H-\delta_1I_2)L-\alpha LC_c.
+\]
+The original solution is $y_3(v)=X_c(v)y_3(0)$.
+Consequently $L(v)y_3(v)=X_s(v)z_{\sigma,0}$, and
+\begin{equation}\label{tgframe:exactpulsematch}
+ B(v)L(v)y_3(v)=t^h_\sigma(v)
+\end{equation}
+by uniqueness of the source homogeneous equation and the exact initial
+seed calculation. Thus this finite map reaches the actual source pulse.
+It does not merely send the coupled pair into an unspecified transverse
+solution. Multiplying both sides by the identical source cutoffs
+preserves equality of the amplitudes, and applying identical linear
+curl and pressure constructions preserves equality of the resulting
+fields. Multiplication by the source prescribed scalar leading-wave
+amplitude also preserves that equality. The cutoff principal residual
+is then $\chi'BLy_3$; the remaining source construction uses its own
+estimates for that exact source object.
+
+\subsection{All scale costs of the finite intertwiner}
+
+Here and below $\|\cdot\|$ is the Euclidean matrix norm.
+Put $D_i=\operatorname{diag}(1,u_i)$,
+$\kappa_i=\max(u_i,u_i^{-1})$, and
+\[
+ \beta_c(v)=\frac12\left(a_3(t_c(v))u_i+
+                                  \frac{b_3(t_c(v))}{u_i}\right).
+\]
+The actual coefficient bounds $a_3\le a_i$, $b_3\le b_i$ and
+$a_iu_i=b_i/u_i=\gamma_i$ give $0<\beta_c\le\gamma_i$.
+Conjugating the coupled matrix by the constant $D_i$ gives
+\[
+ D_i^{-1}C_cD_i=
+ \begin{pmatrix}-d_c&a_3u_i\\b_3/u_i&-d_c\end{pmatrix}.
+\]
+Its symmetric part has eigenvalues $-d_c\pm\beta_c$.
+For any solution $w$ in these coordinates, differentiating $|w|^2$
+therefore gives
+\[
+ 2\alpha(-d_c-\beta_c)|w|^2
+ \le (|w|^2)'
+ \le2\alpha(-d_c+\beta_c)|w|^2.
+\]
+Multiplication by the corresponding scalar integrating factors proves
+the following bounds, including the lower singular-value estimate
+needed for the inverse:
+\[
+ \|X_c(v)\|\le\kappa_i
+       e^{\int_0^v\alpha(\beta_c-d_c)\,dw},\qquad
+ \|X_c(v)^{-1}\|\le\kappa_i
+       e^{\int_0^v\alpha(\beta_c+d_c)\,dw}.
+\]
+For $D_s=H-\delta_1I_2=
+\operatorname{diag}(\lambda,-\lambda)-\delta_1I_2+E$,
+its symmetric part is bounded between
+$(-\lambda-\delta_1-\|E\|)I_2$ and
+$(\lambda-\delta_1+\|E\|)I_2$. The identical energy argument gives
+\[
+ \|X_s(v)\|\le
+ e^{\int_0^v(\lambda-\delta_1+\|E\|)\,dw},\qquad
+ \|X_s(v)^{-1}\|\le
+ e^{\int_0^v(\lambda+\delta_1+\|E\|)\,dw}.
+\]
+Combining these four proved estimates with \eqref{tgframe:intertwiner}
+yields
+\begin{align}
+ \|L(v)\|&\le\kappa_i\|L_0\|
+ e^{\int_0^v[\lambda-\delta_1+\|E\|
+                       +\alpha(\beta_c+d_c)]\,dw},\nonumber\\
+ \|L(v)^{-1}\|&\le\kappa_i\|L_0^{-1}\|
+ e^{\int_0^v[\lambda+\delta_1+\|E\|
+                       +\alpha(\beta_c-d_c)]\,dw}.
+ \label{tgframe:intertwinernorms}
+\end{align}
+All quantities on the right are the retained, finite coefficient paths.
+In particular the exact coupled diffusion integral at the endpoint is
+\[
+ \int_0^{L_s}\alpha d_c\,dv
+ =dK_3^2\int_0^{r_a}R_3(t_b+r)\,dr
+ \in[dK_3^2r_a,\ 2dK_3^2r_a].
+\]
+The equality is the substitution $r=\alpha v$; the interval is the
+proved actual phase-length bound. The determinant is also exact:
+\begin{equation}\label{tgframe:detL}
+ \det L(v)=\frac{|z_{\sigma,0}|^2}{S_3^2(1+u_i^2)}
+ \exp\left(\int_0^v[
+        \operatorname{tr}E-2\delta_1+2\alpha d_c]\,dw\right).
+\end{equation}
+For a differentiable $2$ by $2$ matrix, expanding its two-column
+determinant and inserting $X'=DX$ gives
+$(\det X)'=(\operatorname{tr}D)\det X$. Its initial determinant
+is one. Apply this calculation to $X_s$ and $X_c$, and use
+$\operatorname{tr}H=\operatorname{tr}E$ and
+$\operatorname{tr}C_c=-2d_c$ to prove \eqref{tgframe:detL}.
+
+Higher pulse derivatives have the explicit recurrence
+\[
+ L^{(n+1)}=
+ \sum_{j=0}^n\binom nj\left[
+ D_s^{(j)}L^{(n-j)}-L^{(n-j)}D_c^{(j)}\right],
+ \qquad D_c=\alpha C_c .
+\]
+For a coefficient parameter derivative $\partial_\xi$ the exact
+inhomogeneous equation is
+\[
+ (\partial_\xi L)'=D_s\partial_\xi L
+       -(\partial_\xi L)D_c
+       +(\partial_\xi D_s)L-L(\partial_\xi D_c).
+\]
+Its initial value is the derivative of the explicit
+\eqref{tgframe:L0general}. To see directly that this produces a finite
+bound, multiply on the left by $X_s^{-1}$ and on the right by $X_c$,
+differentiate, and integrate the last two terms with these same
+multipliers. The preceding norm estimates bound every resulting
+integral on $[0,L_s]$. Iteration proves the analogous assertion for
+every finite mixed derivative; all product-rule terms and initial
+derivatives are retained. This also proves smoothness on each compact
+source slow neighborhood where the frame is defined.
+
+The factor $\mathcal P_\sigma(0)/S_3$ and the two explicit propagation
+costs in \eqref{tgframe:intertwinernorms} can be very large or very small.
+There is no supplied relation identifying $L_s$ with $L_3$.
+Thus these equations prove a finite invertible map and exact matching
+to the source object, while exposing the cost of that map. They do not
+prove a uniform weighted-class estimate for $L$ or for the direct
+candidate $L=I$. The source's particular pulse retains its own source
+estimates because of the equality \eqref{tgframe:exactpulsematch}.
+Transport of the full viscosity-one witness to another physical
+viscosity uses the already proved affine orthogonal and viscosity map.
+Alternatively one may replace $\delta_1$ by $\delta_\nu$ in this
+finite ODE construction, but the resulting changed-background
+homogeneous pulse is not asserted to be the source's published witness.

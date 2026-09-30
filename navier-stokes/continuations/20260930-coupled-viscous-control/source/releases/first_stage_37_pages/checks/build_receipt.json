@@ -1,0 +1,85 @@
+{
+  "schema": "coupled-viscous-control-build-v1",
+  "all_passed": true,
+  "operations": [
+    {
+      "kind": "exact_replay",
+      "file": "replay_exact.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "finite_stage/replay_first_stage.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "paper_coupling/replay_coupled.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "paper_coupling/profile_diffusion/replay_profile_diffusion.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "integration_export",
+      "exit_code": 0
+    },
+    {
+      "kind": "latex",
+      "pass_number": 1,
+      "exit_code": 0
+    },
+    {
+      "kind": "latex",
+      "pass_number": 2,
+      "exit_code": 0
+    },
+    {
+      "kind": "latex",
+      "pass_number": 3,
+      "exit_code": 0
+    },
+    {
+      "kind": "integration_latex",
+      "pass_number": 1,
+      "exit_code": 0
+    },
+    {
+      "kind": "integration_latex",
+      "pass_number": 2,
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "replay_exact.py": "38c0baceac37a5055f5c05aa4b47fa561c020cca50158ae041ab23edfa8bf8d1",
+    "finite_stage/replay_first_stage.py": "2fd2503ad94d0b1deedc653da2b404ac61bff72eb96f82f2fd02e22d90c10100",
+    "paper_coupling/replay_coupled.py": "6b40041d0a0ff1c4dea1158b50a0a0067191c424ad96f0e22bf4ecd93ccc6585",
+    "paper_coupling/profile_diffusion/replay_profile_diffusion.py": "a9b4828cf436c077a0f61f52f159e64df1fb7cf5249512338f4652361e6f30e6",
+    "coupled_feedback.tex": "408e81e8c1ac77b83edb28ddb0660f5b321086f9c5159e9ab2ea23398707a2e9",
+    "coupled_viscous_control.tex": "994e336ffb0ab964a4319a63be3e3d31eae4616cc9e5d66564d560de1568cde3",
+    "infinite_status.tex": "353ef85d1c8db45a80e7b3605f976c75d04a9055559c6c00c45629904f67e543",
+    "physical_realization.tex": "d076bd1150571b9772706f07ae229890ff216ea9e5fce28792adaed528fae4e3",
+    "finite_stage/evolving_diffusive_parent_section.tex": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453",
+    "finite_stage/first_stage_section.tex": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e",
+    "finite_stage/first_stage_standalone.tex": "c9cfdfdf8dbc83cef22390e2e6e117154bfdbb34e4ef0943f25406f71237ed00",
+    "integration/coupled_viscous_control_body.tex": "cd5da2c7a1f5938e2eb5996b08968750c0c2aa8eb1a4f01a2adbc07381f57619",
+    "integration/coupled_viscous_control_preamble.tex": "00dbcf404f2adc97a51ccd7b9bd08f3ef175e51ddc380d2772842035aa284f1c",
+    "integration/integration_check.tex": "c7fada4945963761afd30eaa58a8d8bfc86e4bfd0c76adccfbe9485d171f0a06",
+    "paper_coupling/coupled_background.tex": "e56339409dfc361314fd667e83a677d599b6803031332a4a43aff510375e5d06",
+    "paper_coupling/coupled_background_body.tex": "c74e3e6f97d103067d1574ad41de6ec0e1c915cc43004b8e71a8b62c06a5bb78",
+    "paper_coupling/profile_diffusion/profile_diffusion.tex": "59656a47903ba6ebb4c75d3b5f9aee1eab172166c96d21da7bdd6c297982fd91",
+    "paper_coupling/profile_diffusion/profile_diffusion_body.tex": "e1ede7254ba21aa35e83c66e4dbc20ad3b9be59eb7aded51498f949e81d896fc",
+    "paper_coupling/profile_diffusion/profile_diffusion_preamble.tex": "7761d1d6ced7b5a676dcce26a2cdb310a5ea9e26c417dc101988216eda0c92c1",
+    "paper_coupling/profile_diffusion/tmp/pdfs/integration_smoke.tex": "bea383bc95ab16e9b8c59cc5f0d02a225e981bf30d2bf1a2e494acff4a6269fb",
+    "finite_stage/audit/first_stage_audit.tex": "a9ed92cc446ac1c72b181cdb0b5d957987f17fbfff9680a3f7c234cfe8457004",
+    "audit_root/source_infinite/RATIO_EXTRACTION.tex": "c30f8b87965cc243e3a0bd718cc9da04d30d046132ea18f906f2c8dc3640d23e",
+    "audit_root/source_infinite/reviewed_infinite_status.tex": "353ef85d1c8db45a80e7b3605f976c75d04a9055559c6c00c45629904f67e543",
+    "sources/alpoge_buckmaster_boussinesq.pdf": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b",
+    "coupled_viscous_control.pdf": "e9403745882a0d89165becacd09818d29a88f39905fe46a48b7b9045825a9b6f"
+  },
+  "lean_used": false,
+  "proved_scope": "Complete compact finite forced viscous first stage, original controls and feedback identities; source infinite estimates explicitly attributed.",
+  "infinite_viscous_sequence_proved": false
+}

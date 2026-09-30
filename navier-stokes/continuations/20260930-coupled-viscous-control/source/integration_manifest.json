@@ -1,0 +1,149 @@
+{
+  "schema": "coupled-viscous-control-integration-v1",
+  "primary_source": {
+    "title": "Blowup for the Boussinesq equations with smooth forcing",
+    "authors": [
+      "Levent Alpöge",
+      "Tristan Buckmaster"
+    ],
+    "pages": 76,
+    "url": "https://cims.nyu.edu/~tristanb/boussinesq.pdf",
+    "file": "sources/alpoge_buckmaster_boussinesq.pdf",
+    "sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b"
+  },
+  "complete_body": "integration/coupled_viscous_control_body.tex",
+  "preamble": "integration/coupled_viscous_control_preamble.tex",
+  "assets": [
+    {
+      "source": "third_return/figures/third_return_persistence.png",
+      "integration": "integration/third_return/figures/third_return_persistence.png",
+      "sha256": "7f2963d2f0bf0660db7c68a8a22fc29394df1a88f4acf88ca5d7a19bc32095f5"
+    },
+    {
+      "source": "infinite_modified/figures/fixed_diffusion_similarity.png",
+      "integration": "integration/infinite_modified/figures/fixed_diffusion_similarity.png",
+      "sha256": "c74045e59c5988d486f0681df8d7935fe750ae063f12659af2fbdc0eb183f786"
+    },
+    {
+      "source": "infinite_modified/figures/based_cascade_residual.png",
+      "integration": "integration/infinite_modified/figures/based_cascade_residual.png",
+      "sha256": "3e51e00e96203b43a30a4fe37d14c0edea46e7591461527a8f6859081d45e364"
+    },
+    {
+      "source": "infinite_modified/figures/return_correction.png",
+      "integration": "integration/infinite_modified/figures/return_correction.png",
+      "sha256": "d791c67b5f3f940598c4cf9b12e267122f5222113fb008c6110f077cd0b4e6f4"
+    },
+    {
+      "source": "infinite_modified/figures/full_support_force.png",
+      "integration": "integration/infinite_modified/figures/full_support_force.png",
+      "sha256": "f3ec34029fe90e5ff1698359fce23dd62535605eb3c7d8344d05be950d2cc650"
+    }
+  ],
+  "input_sections": [
+    {
+      "file": "physical_realization.tex",
+      "sha256": "d076bd1150571b9772706f07ae229890ff216ea9e5fce28792adaed528fae4e3"
+    },
+    {
+      "file": "finite_stage/first_stage_section.tex",
+      "sha256": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e"
+    },
+    {
+      "file": "finite_stage/evolving_diffusive_parent_section.tex",
+      "sha256": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453"
+    },
+    {
+      "file": "finite_stage/actual_viscous_entry.tex",
+      "sha256": "91e70814420bcc828f9f3bbc30bd3b88f71a1b00862d8195a46e661cacc000db"
+    },
+    {
+      "file": "second_return/second_return_body.tex",
+      "sha256": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4"
+    },
+    {
+      "file": "modified_spatial/modified_spatial_body.tex",
+      "sha256": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4"
+    },
+    {
+      "file": "third_growth_geometry/third_growth_geometry_body.tex",
+      "sha256": "75fb45439c2af482a5de215838f1268680801628ae8924cdfb5afcfc1e9e096a"
+    },
+    {
+      "file": "finite_stage/third_growth_entry.tex",
+      "sha256": "f8ef33f593fae0c9526e2ae5d696d537b3caacb843a35d844c87425b467b4048"
+    },
+    {
+      "file": "third_transition/third_transition_body.tex",
+      "sha256": "e66bd7d0fb007a705538623a68253fb5cdc806fe86c4c6b62a00a752cc6fc258"
+    },
+    {
+      "file": "third_growth_spatial/third_growth_spatial_body.tex",
+      "sha256": "d80d4b6100bdc3e7a6e0fbfced499453306c6c1270b2bf80e63b694215e73852"
+    },
+    {
+      "file": "third_transition_spatial/third_transition_spatial_body.tex",
+      "sha256": "f69ce7dee42a4a768abeb6e6344edbf31c27cb69b6e0d12b425919ee07f7f26c"
+    },
+    {
+      "file": "third_return/third_return_body.tex",
+      "sha256": "245091a1fe6db5746f80ce3702a85787c3cbc899489d4e3e81ac419fcfaf513d"
+    },
+    {
+      "file": "third_return/third_return_completion_body.tex",
+      "sha256": "d9159f642872df37c4d77a5c67b19756e4ae679f30fd746616ef0b3dfde135cc"
+    },
+    {
+      "file": "third_return/local_spatial_body.tex",
+      "sha256": "d909daac2df2841e28413804a52c0744ab5df29adfc5032827d0373027e41511"
+    },
+    {
+      "file": "coupled_feedback.tex",
+      "sha256": "408e81e8c1ac77b83edb28ddb0660f5b321086f9c5159e9ab2ea23398707a2e9"
+    },
+    {
+      "file": "infinite_status.tex",
+      "sha256": "353ef85d1c8db45a80e7b3605f976c75d04a9055559c6c00c45629904f67e543"
+    },
+    {
+      "file": "infinite_modified/parabolic_similarity_body.tex",
+      "sha256": "a2e96f349aac61067fde44bacdc326ed5c1cca250c81be43fff03addd2574553"
+    },
+    {
+      "file": "infinite_modified/based_cascade_body.tex",
+      "sha256": "d662329cd934330c15447fa94e837202d221ce6cea283e123cab45febfa933d4"
+    },
+    {
+      "file": "infinite_modified/return_correction_body.tex",
+      "sha256": "9f6751cbc21cd524348c8a1903c1c2e52c453f53960cd06e78de59262036dd3f"
+    },
+    {
+      "file": "infinite_modified/full_support_force_body.tex",
+      "sha256": "0dd845c23f517f01849b21c95d6d7a11908285afd8e97354d8dac3bbafbe47ff"
+    },
+    {
+      "file": "infinite_modified/force_reachability_body.tex",
+      "sha256": "3c0a4ce6b1d96d4c8dfef88b98f1dfd1192d580b136a960fd79d47c915b5c983"
+    },
+    {
+      "file": "paper_coupling/coupled_background_body.tex",
+      "sha256": "c74e3e6f97d103067d1574ad41de6ec0e1c915cc43004b8e71a8b62c06a5bb78"
+    },
+    {
+      "file": "paper_coupling/profile_diffusion/profile_diffusion_body.tex",
+      "sha256": "e1ede7254ba21aa35e83c66e4dbc20ad3b9be59eb7aded51498f949e81d896fc"
+    }
+  ],
+  "output_files_sha256": {
+    "coupled_viscous_control_body.tex": "163b3c4fced4f42c0ac0c0dc307a1611636b72574bae42ec724ad1ec349c492d",
+    "coupled_viscous_control_preamble.tex": "58b4ddea1e3517f6a18a39d407454876c23127b81505d1316e45b7f1e933b260",
+    "integration_check.tex": "c7fada4945963761afd30eaa58a8d8bfc86e4bfd0c76adccfbe9485d171f0a06"
+  },
+  "label_prefix": "cvlane:",
+  "label_count": 550,
+  "abridged": false,
+  "document_wrapper": false,
+  "mathematics_scope": "Complete compact forced first stage; three actual original growth targets, evolved-parent second return and hold, full third transition with revived second parent, complete third shooting family and selected return on a definite positive equal-diffusion interval, and compact profile forces; pressure-independent obstruction for the unchanged released infinite state; exact transfer of the finite return to every radius at fixed positive physical diffusion; raw-copy term obstruction and force-flat jet space; complete-packet reset obstruction; signed based-increment residual arrays and state interface; exact full chart transition and affine-state orbit classification; actual triangular returned core and positive horizontal temperature gradient; explicit unforced affine continuation and compact flat core correction; complete signed full-support force and all mixed jets with explicit cutoff constants; quantitative annulus diffusion lower bounds and exact cancellation-defect maps. The all-stage force budget, next full-profile return map and corrected infinite trajectory remain unproved.",
+  "source_estimate_attribution": "Source infinite existence and induction bounds remain explicitly attributed; not independently re-proved as new results.",
+  "infinite_viscous_sequence_proved": false
+}

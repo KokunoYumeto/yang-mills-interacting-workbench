@@ -1,0 +1,35 @@
+{
+  "schema": "signed-ns-operator-replay-v1",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "circulation residual is odd",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "swirl-rate residual is odd",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "meridional-vorticity residual is even under swirl reversal",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Q(2 y h)=2 y M h",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "M(h^2)=2 h M h+2|grad h|_Q^2",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "check_count": 5,
+  "scope": "Signed involution and product identities only; no source theorem or blowup endpoint is re-proved.",
+  "source_pdf_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+  "bridge_tex_sha256": "28b4582429c88b596187517da08006b35f62ab8a5fbbfe85db19bfc53c5724dd"
+}

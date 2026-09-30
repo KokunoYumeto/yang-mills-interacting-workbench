@@ -1,0 +1,2622 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\usepackage[hidelinks]{hyperref}
+\geometry{margin=1in}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\proj}{\operatorname{proj}}
+\newcommand{\av}[1]{\left\langle #1\right\rangle}
+\newcommand{\Cov}{\mathcal C}
+\newcommand{\Cross}{\mathcal B}
+\usepackage{mathrsfs}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+\section{The actual wave increment and the source's three compatibility targets}
+\label{momop:section}
+
+The source is the retained 166-page manuscript. Its SHA-256 is given
+in these two consecutive segments:
+\[
+\begin{gathered}
+\texttt{0e779481c4da40bd28d1e642e1d8ca57}\\
+\texttt{447d129610df28dfa5a11e9af8ae228f}.
+\end{gathered}
+\]
+The source operations used here are (8.3)--(8.27) and the complete
+four-step cycle of Proposition 9.6, on printed pages 89--111.
+Its coefficient classes are Definitions 6.4--6.5 and Proposition 6.6,
+printed pages 69--72. The source estimates quoted below are attributed
+to those statements. The following calculation of the actual candidate
+targets and all pressure-induced changes is a direct finite calculation.
+It does not infer source iteration exponents from finite smoothness.
+The source correction cycle is its viscosity-one cycle. The physical
+increment identities below separately retain any fixed
+$\nu_{\rm NS}>0$; using another physical viscosity in those identities
+does not identify the resulting candidate with the source's witness.
+
+\subsection{The actual covariance increment before pressure reconstruction}
+
+Use right-handed cylindrical coordinates $(r,\theta,z)$. An overbar
+means the normalized angular average followed by normalized auxiliary
+Haar average, taken at fixed slow variables before phase evaluation.
+The old source state has actual zero-angular-mean wave $w_*$, including
+all its curl corrections. The new candidate is the proved finite field
+\[
+ w_y=\sum_{j,a}y_a(t_{c,j})Z_{ja},\qquad
+ \pi_y=\sum_{j,a}y_a(t_{c,j})\Pi_{ja},\qquad
+ \langle w_y\rangle_\theta=\langle\pi_y\rangle_\theta=0.
+\]
+The $Z_{ja},\Pi_{ja}$ are the complete physical shapes from the
+third-growth quantitative calculation; $y_a$ is the actual coupled
+pair, with $t_{c,j}=t_b+(r_a/L_{s,j})v_j$. No amplitude factor is
+removed from an auxiliary average: it can depend on $v_j(Y)$.
+Write the exact double-averaged covariance increment as
+\begin{equation}\label{momop:C}
+ C_{ab}=
+ \overline{w_{*,a}w_{y,b}+w_{y,a}w_{*,b}+w_{y,a}w_{y,b}},
+ \qquad a,b\in\{r,\theta,z\}.
+\end{equation}
+Equivalently, substitute the displayed finite sum for both occurrences
+of $w_y$ inside this average. In particular $C$ retains every old-wave
+cross term and every same-label quadratic term. It is symmetric.
+All its radial integrals below are finite because the new fields are
+smooth and supported in a compact interior annulus. The old field
+need only be restricted to this support.
+
+The old source finite correction state has the two exact mean-velocity
+constraints
+\[
+ \int_0^\infty r^2\overline v\,dr=0,\qquad
+ \int_0^\infty r\overline\gamma\,dr=0 .
+\]
+These are source (9.10) in physical variables. The present initial
+addition $w_y$ leaves $(\beta,v,\gamma)$ unchanged because its angular
+mean is zero. The temporal mean operation has zero auxiliary mean,
+and the first two rows of the five-row operation below give zero
+increments of these integrals. Thus all specified operations preserve
+their initially zero values. Preservation, by itself, does not change
+a nonzero entering value to zero.
+
+The already calculated raw tangential residual moments are
+\[
+ M_2=\partial_zJ_2,\qquad M_1=\partial_zJ_1,\qquad
+ J_2=\int_0^\infty r^2C_{z\theta}\,dr,\quad
+ J_1=\int_0^\infty rC_{zz}\,dr.
+\]
+Here the candidate has been added with its zero-angular-mean pressure
+$\pi_y$, so the mean pressure is still the old mean pressure.
+The source algorithm next reconstructs the mean pressure from the
+updated velocity. This operation changes the axial residual moment.
+
+To compute it, first let $\mathcal C_{ab}$ denote the angular average
+of the tensor inside \eqref{momop:C}, retaining its auxiliary dependence.
+Let $\mathcal D_r$ be the physical radial derivative on the extended
+domain, including the auxiliary phase-map derivative. Its auxiliary
+average is ordinary $\partial_r$. Since the mean velocity is unchanged
+by $w_y$, subtracting the radial conservative equations gives
+\begin{equation}\label{momop:delta_g}
+ \Delta g_r=-(\mathcal D_r+r^{-1})\mathcal C_{rr}
+                   -\partial_z\mathcal C_{zr}
+                   +r^{-1}\mathcal C_{\theta\theta}.
+\end{equation}
+Indeed the radial transport of a divergence-free velocity is
+$(\mathcal D_r+r^{-1})u_r^2+
+r^{-1}\partial_\theta(u_\theta u_r)+
+\partial_z(u_zu_r)-u_\theta^2/r$.
+Angular averaging removes the angular derivative and all products
+containing exactly one old mean factor and one zero-angular-mean wave.
+The source defines $g_r$ as the negative of the mean radial residual
+apart from the pressure gradient, which gives exactly the signs in
+\eqref{momop:delta_g}. The time and viscous averages of $w_y$
+are zero, so no physical viscosity has been dropped in this subtraction.
+The formula remains true for any fixed $\nu_{\rm NS}>0$ in the
+physical residual.
+
+Set $g=\overline{\Delta g_r}$. Auxiliary derivative integrals vanish,
+and hence
+\begin{equation}\label{momop:gbar}
+ g=-(\partial_r+r^{-1})C_{rr}-\partial_zC_{zr}
+                                    +r^{-1}C_{\theta\theta}.
+\end{equation}
+The increment of the source's pressure defect is therefore the
+following explicit new scalar, rather than either raw tangential moment:
+\begin{equation}\label{momop:deltaP}
+ \Delta P=\int_0^\infty g\,dr
+ =\int_0^\infty\frac{C_{\theta\theta}-C_{rr}}r\,dr
+                           -\partial_z\int_0^\infty C_{zr}\,dr .
+\end{equation}
+The equality integrates the derivative $\partial_rC_{rr}$;
+both endpoints vanish by compact support. The weighted second
+moment of this same source is
+\begin{equation}\label{momop:gsecond}
+ \int_0^\infty r^2g\,dr
+ =\int_0^\infty r(C_{rr}+C_{\theta\theta})\,dr
+                   -\partial_z\int_0^\infty r^2C_{zr}\,dr .
+\end{equation}
+For its first term, integration by parts gives
+$-\int r^2\partial_rC_{rr}=2\int rC_{rr}$, after which the
+explicit $-C_{rr}/r$ contribution subtracts one copy.
+These two identities retain the radial and axial coupling exactly.
+
+\subsection{Compact mean pressure and the corrected axial flux moment}
+
+Retain the source concentration scale and its full axial derivative:
+\[
+ z=q^D\eta,\qquad 1-t=q(1-\eta^2),\qquad
+ A=\tfrac12+h,\quad D=\tfrac12-h,\quad
+ q_z=\frac{2\eta q^{1-D}}{1-2h\eta^2}.
+\]
+Choose the source fixed bump $\widehat\rho$ in its reserved mean
+interval $I_m$, with $\int\widehat\rho(x)\,dx=1$, and put
+\[
+ \rho_{\rm phys}=q^{-1/2}\widehat\rho(r/\sqrt q),\qquad
+ c_{\rho,\rm phys}=\frac12\int r^2\rho_{\rm phys}\,dr
+             =\frac q2\int x^2\widehat\rho(x)\,dx .
+\]
+Thus $(c_{\rho,\rm phys})_z=(q_z/q)c_{\rho,\rm phys}$;
+it is generally not constant in $z$.
+
+For precision the source's compact physical primitive is as follows.
+The fixed slow cutoff $\chi_m$ is zero on the inner collar and one
+on the outer collar of the active annulus. For an auxiliary-dependent
+scalar $f$ define
+\[
+ \begin{split}
+ I f(r,Y)&=\int_0^r
+ f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\\
+ J f(r,Y)&=\int_0^\infty
+ f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\qquad
+ I_cf=If-\chi_mJf.
+ \end{split}
+\]
+Here $d_r=2((1+h)\rho_g-h\kappa_s)$ is the exact source exponent,
+$\rho_g=\log(4-\sqrt2)/\log(4+\sqrt2)$,
+$v_r=(1,-(\sqrt2-1))$, and $\kappa_s=10^{-5}$.
+The derivative $\mathcal D_r$ of the shifted integral differentiates
+the integration endpoint while cancelling the derivative of its
+$-r^{d_r}v_r$ shift. Consequently
+$\mathcal D_rI_cf=f-(\partial_r\chi_m)Jf$.
+Also $\overline{Jf}=\int\overline f\,dr$, by translation invariance
+of Haar measure. This proves the mean identities used next directly.
+
+The source reconstruction after the actual wave addition changes the
+physical mean pressure by
+\[
+ \Delta p_m=I_c(\Delta g_r-\rho_{\rm phys}\Delta P).
+\]
+Its source has zero radial auxiliary-mean integral by
+\eqref{momop:deltaP}. Therefore
+\begin{equation}\label{momop:pressureidentity}
+ \partial_r\overline{\Delta p_m}
+     =g-\rho_{\rm phys}\Delta P,\qquad
+ \int r\,\overline{\Delta p_m}\,dr
+     =-\frac12\int r^2g\,dr+c_{\rho,\rm phys}\Delta P .
+\end{equation}
+The first identity follows from the displayed primitive formula;
+its cutoff remainder has zero auxiliary average. The second integrates
+$\partial_r(r^2\overline{\Delta p_m})$ between the two zero endpoints.
+The full radial residual increment after this pressure update is
+$-\rho_{\rm phys}\Delta P-
+(\partial_r\chi_m)J(\Delta g_r-\rho_{\rm phys}\Delta P)$.
+The second term is retained. The source proves its terminal flatness
+under its all-order uniform class bounds; finite smoothness alone is
+not that proof.
+
+Use different symbols for the source's two flux defects and the raw
+candidate fluxes $J_2,J_1$. Their increments are exactly
+\begin{align}
+ \Delta J_\theta&=J_2,\nonumber\\
+ \Delta J_z&=J_1-\frac12\int r^2g\,dr\nonumber\\
+ &=\int r\left(C_{zz}-\frac12C_{rr}
+                         -\frac12C_{\theta\theta}\right)\,dr
+                    +\frac12\partial_z\int r^2C_{zr}\,dr .
+ \label{momop:defectdictionary}
+\end{align}
+These are the differences of source (8.15): the mean-velocity terms
+are unchanged and the full wave covariance changes by $C$.
+The axial pressure identity \eqref{momop:pressureidentity} now proves
+the exact moments after pressure reconstruction:
+\begin{equation}\label{momop:afterpressure}
+ M_{2,\rm new}=\partial_z\Delta J_\theta=M_2,\qquad
+ M_{1,\rm new}=\partial_z(\Delta J_z+c_{\rho,\rm phys}\Delta P)
+  =M_1+\partial_z\left(-\frac12\int r^2g\,dr
+                                      +c_{\rho,\rm phys}\Delta P\right).
+\end{equation}
+These are increment identities. The old source moments and defects
+are added to obtain the full updated state. No hypothesis that the
+old defects vanish was used: identical old mean-velocity terms
+cancel in the subtraction. The product involving $c_{\rho,\rm phys}$
+stays inside $\partial_z$, including its nonzero derivative.
+
+\subsection{New quantitative budgets for the three actual inputs}
+
+Retain the previously proved quantities
+$\mathcal W_e,\mathcal W_{e,z},\mathcal V_e,\mathcal Z_e$ for
+$e=1,2$. They satisfy
+\[
+ \|w_*\|_{[e]}=\mathcal W_e,\quad
+ \|\partial_zw_*\|_{[e]}=\mathcal W_{e,z},\quad
+ \|w_y\|_{[e]}\le\mathcal V_e,\quad
+ \|\partial_zw_y\|_{[e]}\le\mathcal Z_e.
+\]
+In particular $\mathcal V_e,\mathcal Z_e$ retain separately the
+actual amplitude bounds
+$Y_1=(A_0/\mu)\widehat\lambda_3^{-7/8}$ and
+$Y_2=2A_0\widehat\lambda_3^{1/8}/(\sigma_2\sqrt{n_i})$
+and their physical source-band factors. Define merely for the
+following displayed estimates
+\[
+ B_e=2\mathcal W_e\mathcal V_e+\mathcal V_e^2,\qquad
+ D_e=\mathcal W_{e,z}\mathcal V_e+
+                    \mathcal W_e\mathcal Z_e+\mathcal V_e\mathcal Z_e.
+\]
+Choose $r_->0$ enclosing the radial support of the new fields and
+their axial derivatives from below. Cauchy--Schwarz on the original
+weighted product measures gives
+\begin{equation}\label{momop:targetbounds}
+ |\Delta P|\le r_-^{-2}B_1+2r_-^{-1}D_1,\qquad
+ |\Delta J_\theta|\le B_2,\qquad
+ |\Delta J_z|\le B_1+D_2.
+\end{equation}
+Here is the full estimate. The matrix
+$\operatorname{diag}(-1,1,0)$ has operator norm one, so
+$|C_{\theta\theta}-C_{rr}|$ is bounded after averaging by
+$2|w_*||w_y|+|w_y|^2$. Replacing $r^{-1}$ by
+$r_-^{-2}r$ and applying Cauchy--Schwarz gives the first part
+$r_-^{-2}B_1$ of the pressure bound. Differentiating $C_{zr}$
+produces the six actual cross and self product terms. Their integral
+with weight $r^e$ is at most $2D_e$. Replace the unweighted
+integral by $r_-^{-1}$ times the $r$-weighted integral to obtain
+$2r_-^{-1}D_1$ in \eqref{momop:deltaP}.
+The same product estimate without differentiation bounds
+$\int r^2C_{z\theta}$ by $B_2$.
+Finally $\operatorname{diag}(-1/2,-1/2,1)$ has norm one.
+Apply it to the first integral in \eqref{momop:defectdictionary}
+to get $B_1$; the last differentiated integral is bounded by
+$\tfrac12(2D_2)=D_2$. This proves all three claims without
+replacing the two amplitude components by a new unspecified constant.
+
+\subsection{The exact five-row map for these targets}
+
+The source map acts on the \emph{current} physical triple
+$(P,J_\theta,J_z)$, after adding \eqref{momop:deltaP} and
+\eqref{momop:defectdictionary} to the old source triple and
+reconstructing pressure. It does not take
+$(M_2,M_1)$ as its input. The five equations, in physical variables, are
+\begin{align}
+ \int r^2\Delta v\,dr&=0,&
+ \int r\gamma_d\,dr&=0,\nonumber\\
+ \int\frac{2V}{r}\Delta v\,dr&=-P,\nonumber\\
+ \int r^2(G\Delta v+V\gamma_d)\,dr&=-J_\theta,\nonumber\\
+ \int(2rG\gamma_d-rV\Delta v)\,dr&=-J_z .
+ \label{momop:fivephysical}
+\end{align}
+In the last row there is exactly one factor $r$ multiplying $V\Delta v$.
+The pressure-source term contributes
+$-\tfrac12\int r^2(2V/r)\Delta v\,dr=-\int rV\Delta v\,dr$,
+which proves that factor rather than treating the fifth row as an
+independent constraint with an arbitrary weight.
+
+Retain the source's reserved patch $x=r/\sqrt q\in I_m$. Its actual
+summed base satisfies source (5.44) and (8.24):
+\[
+\begin{gathered}
+ V_{\rm phys}=q^{-A}a(\eta)x^{-1-2\lambda},\qquad
+ G_{\rm phys}=0,\\
+ a(\eta)=2^{1/2+\lambda}c_{\rm patch}(1+\eta^2)^{-1},
+ \quad \lambda>0,\quad |a(\eta)|\ge a_0>0.
+\end{gathered}
+\]
+The source fixed $\lambda$ here is its reserved-profile exponent,
+not a frequency of the coupled problem. In a fixed $Q$ chart,
+the same physical base is
+\[
+ V_*=(Q/q)^A a(\eta)\bigl(\sqrt{Q/q}\,R\bigr)^{-1-2\lambda},
+ \qquad G_*=0.
+\]
+The factor $(Q/q)^A$ has been retained.
+
+Choose a nonnegative nonzero bump $\varphi_0\in C_c^\infty(I_m)$
+supported near an interior point and a fixed spacing $d_b>0$ so small
+that the three profiles
+\[
+ \varphi_j(x)=e^{-jd_b}\varphi_0(e^{-jd_b}x),\qquad j=0,1,2,
+\]
+have disjoint supports in the patch. This is possible because the patch
+contains an open interval about that point: choose three distinct
+scaled centers there, then decrease the support radius below half the
+minimum separation. The symbol $d_b$ distinguishes this source bump
+spacing from the coupled physical diffusivity $d$.
+For every real $p$, set
+\[
+ \mu_p=\int x^p\varphi_0(x)\,dx>0,\qquad
+ \int x^p\varphi_j(x)\,dx=\mu_pe^{jd_bp}.
+\]
+The equality is the substitution $x=e^{jd_b}\xi$ and retains the
+prefactor in $\varphi_j$.
+
+Define the two explicit moment matrices
+\[
+ A_\theta=
+ \begin{pmatrix}
+ \mu_2&\mu_2e^{2d_b}&\mu_2e^{4d_b}\\
+ 2a\mu_{-2-2\lambda}&
+ 2a\mu_{-2-2\lambda}e^{d_b(-2-2\lambda)}&
+ 2a\mu_{-2-2\lambda}e^{2d_b(-2-2\lambda)}\\
+ -a\mu_{-2\lambda}&-a\mu_{-2\lambda}e^{-2d_b\lambda}&
+                              -a\mu_{-2\lambda}e^{-4d_b\lambda}
+ \end{pmatrix},
+\]
+\[
+ A_z=
+ \begin{pmatrix}
+ \mu_1&\mu_1e^{d_b}\\
+ a\mu_{1-2\lambda}&a\mu_{1-2\lambda}e^{d_b(1-2\lambda)}
+ \end{pmatrix},\qquad a=a(\eta).
+\]
+Both inverses exist at every source parameter value. Indeed the
+angular matrix is a diagonal row factor times the matrix with rows
+$(1,t_p,t_p^2)$ for $p=2,-2-2\lambda,-2\lambda$ and
+$t_p=e^{d_bp}$. Subtracting the first row from the other two
+and factoring their differences gives
+\[
+ \det[1,t_p,t_p^2]_{p=p_1,p_2,p_3}
+ =(t_{p_2}-t_{p_1})(t_{p_3}-t_{p_1})(t_{p_3}-t_{p_2}).
+\]
+All three powers are distinct for $\lambda>0$. The diagonal
+row factor has determinant
+\[
+-2a^2\mu_2\mu_{-2-2\lambda}\mu_{-2\lambda}\ne0.
+\]
+Likewise
+\[
+\det A_z=a\mu_1\mu_{1-2\lambda}
+(e^{d_b(1-2\lambda)}-e^{d_b})\ne0.
+\]
+This also gives an explicit finite inverse norm bound
+$\|A^{-1}\|\le\|\operatorname{adj}A\|/|\det A|$
+for either matrix. No uniform limit as $\lambda\downarrow0$ is taken.
+
+Use the exact row normalizations
+\[
+ P_q=q^{2A}P,\qquad
+ J_{\theta,q}=q^{2A-3/2}J_\theta,\qquad
+ J_{z,q}=q^{2A-1}J_z,
+\]
+and define the five coefficients by
+\begin{equation}\label{momop:coefficients}
+ {\bf u}=A_\theta^{-1}(0,-P_q,-J_{z,q})^T,\qquad
+ {\bf s}=A_z^{-1}(0,-J_{\theta,q})^T .
+\end{equation}
+Then the actual physical velocity increments are
+\begin{equation}\label{momop:fiveincrement}
+ \Delta v=q^{-A}\sum_{j=0}^2u_j\varphi_j(r/\sqrt q),
+ \qquad
+ \gamma_d=q^{-A}\sum_{j=0}^1s_j\varphi_j(r/\sqrt q).
+\end{equation}
+The first and second velocity moments have factors $q^{3/2-A}$
+and $q^{1-A}$, respectively. The three inhomogeneous rows have
+factors $q^{-2A}$, $q^{3/2-2A}$, and $q^{1-2A}$, respectively.
+Substituting the original base into \eqref{momop:fivephysical}
+and changing variables $r=\sqrt q\,x$ therefore gives exactly
+the two linear systems \eqref{momop:coefficients}. This proves all
+five equations, uniqueness in the selected five-dimensional span,
+and smooth dependence on the actual target values. For instance
+$\partial_\xi A^{-1}=-A^{-1}(\partial_\xi A)A^{-1}$ follows by
+differentiating $AA^{-1}=I$; repeated product rules give every
+coefficient derivative with the actual $q,\eta$ factors retained.
+
+The desired axial increment has zero weighted integral and is
+auxiliary independent. Its exact compact azimuthal potential and
+radial increment are
+\[
+ \Psi(r,z,t)=\frac1r\int_0^r s\gamma_d(s,z,t)\,ds,\qquad
+ \Delta\beta=-\partial_z\Psi,\qquad
+ \Delta\gamma=(\partial_r+r^{-1})\Psi=\gamma_d.
+\]
+The zero moment in \eqref{momop:fivephysical} makes $\Psi$ vanish
+beyond its outer support; its lower-end definition makes it vanish
+below the inner support. Differentiation proves
+$(\partial_r+r^{-1})\Delta\beta+\partial_z\Delta\gamma=0$.
+The support includes the intervals between bump supports, which still
+lie within the reserved patch.
+To display the axial scaling cost explicitly, put
+$\Psi_j(x)=x^{-1}\int_0^x \xi\varphi_j(\xi)\,d\xi$. Then
+\begin{align}
+ \Psi&=q^{1/2-A}\sum_{j=0}^1s_j\Psi_j(x),\nonumber\\
+ \Delta\beta
+ &=-q^{1/2-A}\sum_{j=0}^1\left[
+    (\partial_zs_j)\Psi_j+
+    \frac{q_z}{q}s_j\left((1/2-A)\Psi_j
+                                      -\frac x2\Psi_j'\right)\right].
+ \label{momop:inducedradial}
+\end{align}
+The two individual $\Psi_j$ can have $x^{-1}$ tails. The exact
+linear relation $\sum_js_j\mu_1e^{jd_b}=0$ cancels those tails
+in their sum and, after differentiation, in \eqref{momop:inducedradial}.
+No individual compactness was assumed.
+
+\subsection{What the five-row operation actually leaves}
+
+Let $(\beta,v,\gamma)$ be the current mean correction, after whatever
+preceding wave and mean updates have actually been performed. Keep the
+base $(b,V,G)$ and the full current wave $w$ fixed during this
+five-row step. Use the three full current defects as its targets.
+Write $\mathcal D_r$ for the physical extended radial derivative and
+$\mathcal D_t$ for the physical extended time derivative. With
+$\Delta_0=\mathcal D_r^2+r^{-1}\mathcal D_r+\partial_z^2$, direct
+subtraction of the full radial source gives
+\begin{align}
+ R_g:={}&g_{r,\rm new}-g_r-\frac{2V}{r}\Delta v\nonumber\\
+ ={}&-\mathcal D_t\Delta\beta
+ -(\mathcal D_r+r^{-1})
+             \bigl(2b\Delta\beta+2\beta\Delta\beta+(\Delta\beta)^2\bigr)
+ \nonumber\\
+ &-\partial_z\bigl(b\Delta\gamma+G\Delta\beta+
+           \beta\Delta\gamma+\gamma\Delta\beta+\Delta\beta\Delta\gamma\bigr)
+ \nonumber\\
+ &+\frac{2v\Delta v+(\Delta v)^2}{r}
+               +\nu_{\rm NS}(\Delta_0-r^{-2})\Delta\beta .
+ \label{momop:Rg}
+\end{align}
+Here all increments are auxiliary independent, so their
+$\mathcal D_t$ is ordinary $\partial_t$. The products with the
+old means still retain their auxiliary dependence. Equation
+\eqref{momop:Rg} keeps the actual physical viscosity; the source
+unit-viscosity formula (8.26) is its case $\nu_{\rm NS}=1$.
+
+The full updated defects, with pressure recomputed from the new
+radial source, are exactly
+\begin{align}
+ P_{\rm new}&=\int\overline{R_g}\,dr,\nonumber\\
+ (J_\theta)_{\rm new}
+    &=\int r^2\overline{\gamma\Delta v+v\Delta\gamma+
+                                      \Delta\gamma\Delta v}\,dr,\nonumber\\
+ (J_z)_{\rm new}
+    &=\int r\overline{2\gamma\Delta\gamma+(\Delta\gamma)^2}\,dr
+                      -\frac12\int r^2\overline{R_g}\,dr .
+ \label{momop:recomputed}
+\end{align}
+To verify these formulas, expand every quadratic product in the
+definitions of the current and new defects. The radial source
+increment is $(2V/r)\Delta v+R_g$. The third row of
+\eqref{momop:fivephysical} cancels the old $P$ with the integral
+of the displayed linear term. The azimuthal flux increment contains
+the base-linear terms $G\Delta v+V\Delta\gamma$, cancelled by
+the fourth row because $\Delta\gamma=\gamma_d$. The axial defect
+contains $2G\Delta\gamma$ and the radial-source contribution
+$-\tfrac12r(2V\Delta v)$ after integration. These are precisely
+the fifth row. All remaining products are the terms displayed
+in \eqref{momop:recomputed}; the full wave covariance is unchanged
+during this mean step. This proves the formulas without assuming
+their right-hand sides vanish.
+
+The two velocity moments remain exactly zero. The new residual
+moments therefore have the source form
+\[
+ \int r^2\overline{E_{\theta,\rm new}}\,dr
+       =\partial_z(J_\theta)_{\rm new},\qquad
+ \int r\overline{E_{z,\rm new}}\,dr
+       =\partial_z\bigl((J_z)_{\rm new}
+                           +c_{\rho,\rm phys}P_{\rm new}\bigr).
+\]
+The pressure and $c_{\rho,\rm phys}$ are the actual reconstructed
+objects. Thus the five equations cancel specified linear defect
+contributions and expose the remaining nonlinear and differential
+terms. Equations \eqref{momop:Rg}--\eqref{momop:recomputed} supply
+the next actual inputs rather than a claim of complete cancellation.
+
+\subsection{Exact source operation dictionary and the bounds it requires}
+
+For the source's estimates, $Q=2^{-\ell}$, $\varepsilon=Q^h$,
+$S_*=\ell^2$, $R=r/\sqrt Q$, $Z=z/Q^D$, $T=(1-t)/Q$.
+Use a coarsest applicable common auxiliary torus $H$ as in source
+Lemma 6.2; different representatives agree by its integer covering
+maps. The original radial edge weights are
+\[
+\begin{gathered}
+ \zeta(X)=\exp\left(-\frac{a_a}{\log^2(X/X_a)}
+                       -\frac{a_b}{\log^2(X_b/X)}\right),\\
+ \delta(X)=\min\{1,\log(X/X_a),\log(X_b/X)\},
+ \quad X=\frac{QR^2}{2q},
+\end{gathered}
+\]
+with the source fixed $a_a,a_b>0$. In the following bounds the band,
+label, representative and harmonic are held fixed when differentiating.
+The constants may depend on the finite correction stage and derivative
+multi-index, but are uniform over bands, labels, points and rectangle
+copies.
+
+A mean coefficient $f\in M^\alpha$ has no angular dependence, descends
+to the common torus, extends smoothly by zero outside the active shell,
+and satisfies for each multi-index $I$ in $(R,Z,T,H)$
+\[
+ |\partial^If|\le C_I\varepsilon^\alpha S_*^{b_I}
+                                        \zeta\,\delta^{-d_I}.
+\]
+It can have nonzero auxiliary modes and has no rectangle or pulse
+envelope restriction. A moment coefficient $F(Z,T)\in S^\alpha$
+satisfies $|\partial_{Z,T}^IF|\le C_I\varepsilon^\alpha S_*^{b_I}$.
+A labelled nonzero harmonic amplitude $a_{\gamma,m}\in W^\alpha$
+has no angular dependence, the source slow, transverse and shell
+support, smooth zero extension across those boundaries, compatible
+lift representatives, and
+\[
+ |\partial^Ia_{\gamma,m}|\le
+ C_I\varepsilon^\alpha S_*^{b_I}\sqrt\zeta\,\delta^{-d_I}
+                          {\cal P}_\gamma(v),\qquad 0\le v\le L_s.
+\]
+The prescribed source phase has $k_\gamma p_\gamma\in
+\mathbb Z\setminus\{0\}$ and $k_\gamma=\lceil\varepsilon^{-1/2}\rceil$.
+The harmonic set is finite at a fixed stage and independent of band.
+Equal label--harmonic terms are grouped before testing the bounds.
+The pulse envelope is the original positive exponential in (7.12),
+with its proved Gaussian estimates. Actual cut-off waves additionally
+have support where the source pulse cutoff $\psi$ is supported and
+smooth zero extension in $v$. No divisibility by $\psi$ is required.
+
+The source's anisotropic derivative mappings, with the phase factored
+out, are
+\[
+\begin{gathered}
+ \partial_{R,Z,T}:C^\alpha\to C^\alpha,\quad
+ D_r:C^\alpha\to C^{\alpha-\kappa_s},\quad
+ D_z=\varepsilon\partial_Z:C^\alpha\to C^{\alpha+1},\\
+ c_{i_0}N_{i_0}:C^\alpha\to C^\alpha,\quad
+ -\varepsilon\partial_T:C^\alpha\to C^{\alpha+1},
+ \qquad C=M,W.
+\end{gathered}
+\]
+Products obey $M^\alpha M^\beta\subset M^{\alpha+\beta}$ and
+$M^\alpha W^\beta\subset W^{\alpha+\beta}$. Same-label wave
+products have this summed order, in $M$ for zero output harmonic
+and $W$ otherwise; distinct supported labels have zero products.
+The zero-harmonic global $M$ statement here is for the actual temporally
+cut-off waves. Before that cutoff, the source gives the mean bounds on
+the labelled rectangle, not a global $M$ assertion.
+These are source Proposition 6.6, not deductions from the candidate's
+finite norm bounds.
+
+Every radial target must first carry the correct measure and weight.
+For $f_*=Q^{a_f}f_{\rm phys}$,
+\[
+ \int R^e\overline{f_*}\,dR
+       =Q^{a_f-(e+1)/2}\int r^e\overline{f_{\rm phys}}\,dr .
+\]
+For the present inputs this reads
+\begin{align*}
+ P_*&=Q^{2A}P,&
+ (J_\theta)_*&=Q^{2A-3/2}J_\theta,&
+ (J_z)_*&=Q^{2A-1}J_z,&
+ (c_\rho)_*&=Q^{-1}c_{\rho,\rm phys},\\
+ (M_2)_*&=Q^{2A-1}M_2,&
+ (M_1)_*&=Q^{2A-1/2}M_1 .
+\end{align*}
+In particular \eqref{momop:afterpressure} becomes exactly
+$\varepsilon\partial_Z\Delta J_{\theta,*}$ and
+$\varepsilon\partial_Z(\Delta J_{z,*}+c_{\rho,*}\Delta P_*)$.
+The factors match because $h+D=1/2$. This is the extra axial
+factor used in source (9.12); using the raw $J_1$ after pressure
+reconstruction would omit part of its actual input.
+
+For clarity, the following are the four ordered operations of source
+Proposition 9.6, with the full current velocity and pressure
+reconstructed after each operation.
+
+\begin{enumerate}
+\item For each supported nonzero harmonic coefficient $f_{\gamma,m}$
+of the full current residual, solve the original transverse pulse
+equation with zero entrance data and source $-f_{\gamma,m}$.
+In frame coordinates its coefficient matrix is
+$H_\gamma-m^2\varepsilon k_\gamma^2|n_\gamma|^2I$.
+Multiply the solved potential and pressure by $\psi$ and take the
+full curl. Source Proposition 7.2 maps $W^\alpha$ sources to
+$W^\alpha$ velocity amplitudes and $W^{\alpha+1/2}$ pressure.
+Proposition 9.1 assigns the remaining supported linear residual
+order $\alpha+1/2-3\kappa_s$ and retains its Gaussian cutoff tails
+additively. The actual candidate's full residual formula determines
+the input coefficients. Following this wave change, replace $w_y$
+by the actual total new wave increment in \eqref{momop:C}, recompute
+$g_r$ and reconstruct pressure. Its old-wave cross terms must change
+with the updated wave.
+
+\item Let $F_2,F_1$ be the auxiliary-averaged physical tangential
+residuals of that updated state. Their two moments are the updated
+versions of \eqref{momop:afterpressure}, including the old defects.
+For each $e=1,2$ retain the fixed normalized physical bump
+$b_e=q^{-(e+1)/2}\widehat b_e(r/\sqrt q)$ with
+$\int x^e\widehat b_e(x)\,dx=1$. Form
+\[
+ \mathfrak M_e=\int r^eF_e\,dr,\qquad
+ \sigma_e=-r^{-e}\int_0^r s^e
+                         (F_e(s)-b_e(s)\mathfrak M_e)\,ds .
+\]
+The zero total weighted integral proves compact support and
+$(\partial_r+e/r)\sigma_e=-F_e+b_e\mathfrak M_e$.
+Use $\Sigma=Q^{2A}(\sigma_2,\sigma_1)$ as the input to the
+source's signed amplitude derivative (7.31), with its fixed
+positive primary amplitudes. Source Proposition 7.6 maps an
+auxiliary-independent $M^\alpha$ stress to $W^{\alpha-1/2}$.
+Take its actual curl, retain the old-wave cross and quadratic
+correction tensor (9.13), and reconstruct pressure. The source
+does not set $b_e\mathfrak M_e$ to zero.
+
+If $\mathfrak M_e=\partial_z\mathfrak J_e$, its bump term satisfies
+the exact derivative identity
+\[
+ b_e\partial_z\mathfrak J_e
+ =\partial_z(b_e\mathfrak J_e)-(\partial_zb_e)\mathfrak J_e,\qquad
+ \partial_zb_e=-\frac{q_z}{2q}
+                    \bigl((e+1)b_e+r\partial_rb_e\bigr).
+\]
+It follows by differentiating the original $q$-scaled bump.
+Thus trading the moment bump for an axial tensor flux leaves the
+displayed radial-profile derivative term. For the axial equation,
+$\mathfrak J_1=J_z+c_{\rho,\rm phys}P$, including both product
+derivatives in \eqref{momop:afterpressure}.
+
+\item For the zero-auxiliary-mean part of the current angularly
+invariant residual, first convert the physical residual to the fixed
+source chart. In this step a star denotes that chart representative:
+\[
+\begin{gathered}
+ E_*=Q^{2A+1/2}E_{\rm phys},\qquad
+ E_{a,*}^\circ=E_{a,*}-\langle E_{a,*}\rangle_Y,\\
+ (\Delta\beta_*,\Delta v_*,\Delta\gamma_*)
+       =Q^A(\Delta\beta_{\rm phys},\Delta v_{\rm phys},
+                                      \Delta\gamma_{\rm phys}).
+\end{gathered}
+\]
+The source temporal update in these exact units is
+\[
+ \Delta v_*=-c_{i_0}^{-1}N_{i_0}^{-1}E_{\theta,*}^\circ,\qquad
+ \gamma_{d,*}=-c_{i_0}^{-1}N_{i_0}^{-1}E_{z,*}^\circ,
+ \quad
+ N_{i_0}^{-1}F=
+ \sum_{k\ne0}\frac{\widehat F(k)}{2\pi i v_t\cdot k}e^{2\pi ik\cdot H}.
+\]
+Here $v_t=(\sqrt2-1,1)$ and
+$c_{i_0}=T_g^{i_0}Q^{1+h}$, with $c_{i_0}^{-1}\le CS_*$.
+The source Diophantine bound gives
+$\|N^{-1}F\|_{C^m}\le C_m\|F\|_{C^{m+4}}$.
+Let $T_{1,*}$ and $A_{1,*}$ be the source's radial potential and
+its cutoff remainder in this chart. Realize $\gamma_{d,*}$ by
+$T_{1,*}\gamma_{d,*}$:
+$\Delta\beta_*=-\varepsilon\partial_ZT_{1,*}\gamma_{d,*}$ and
+$\Delta\gamma_*=\gamma_{d,*}-A_{1,*}\gamma_{d,*}$.
+The actual axial remainder $-A_{1,*}\gamma_{d,*}$ stays in the
+new velocity. The exact normalized cancellations are
+\[
+\begin{split}
+ c_{i_0}N_{i_0}\Delta v_*&=-E_{\theta,*}^\circ,\\
+ c_{i_0}N_{i_0}\Delta\gamma_*&=-E_{z,*}^\circ
+              -c_{i_0}N_{i_0}A_{1,*}\gamma_{d,*}.
+\end{split}
+\]
+Convert every resulting velocity component back by $Q^{-A}$ before
+reconstructing the physical pressure or taking physical products and
+defects. In particular its physical angular update is exactly
+\[
+ \Delta v_{\rm phys}
+  =-Q^{-A}c_{i_0}^{-1}Q^{2A+1/2}
+                     N_{i_0}^{-1}E_{\theta,\rm phys}^\circ
+  =-T_g^{-i_0}N_{i_0}^{-1}E_{\theta,\rm phys}^\circ .
+\]
+The last equality uses $A+1/2=1+h$ and the original
+$c_{i_0}=T_g^{i_0}Q^{1+h}$. It is also
+$-N_{\rm abs}^{-1}E_{\theta,\rm phys}^\circ$, since
+$N_{\rm abs}=T_g^{i_0}N_{i_0}$ on the representative.
+This proves the conversion without applying a normalized inverse
+directly to a physical residual.
+
+\item Apply \eqref{momop:coefficients} to the three defects of this
+updated state, use \eqref{momop:fiveincrement} and its actual
+radial component \eqref{momop:inducedradial}, and reconstruct
+pressure again. The exact remaining defects are
+\eqref{momop:Rg}--\eqref{momop:recomputed}.
+Source Lemma 8.7 maps $S^\alpha$ targets to $M^\alpha$
+tangential increments and $M^{\alpha+1}$ radial increments.
+Source Lemma 8.8 gives the remaining defect class
+$S^{\alpha+0.9-2\kappa_s}$ using the actual bounds
+$v,\gamma\in M^{0.9}$, $\beta\in M^{1.9}$, $\alpha\ge0.9$,
+and its reserved-patch base derivative bounds.
+\end{enumerate}
+
+The source cycle assumes its full finite correction-state bounds
+$w\in W^{1/2}$, $w-w_0^{\tan}\in W^{0.68}$,
+$v,\gamma,p_m\in M^{0.9}$, $\beta\in M^{1.9}$,
+with supported nonzero residual order
+$B_j=1/2+\sigma_j$, mean and defect order $C_j^*=1+\sigma_j$,
+and $\sigma_j=1/5+j/10$. Its ordered estimate proves gains
+$B_{j+1}-B_j=C_{j+1}^*-C_j^*=1/10$.
+These are requirements and conclusions for the source's construction.
+The explicit candidate budgets and equations above do not by
+themselves identify those exponents.
+
+There is a precise finite-domain statement available now. Write the
+full current residual as $R_{\rm old}+\Delta R$, retaining the old
+source state and every term of the computed increment. The added
+candidate uses finitely many labels, with its cutoffs supported
+strictly inside the source rectangle and radial annulus. On those
+compact coefficient supports, $\varepsilon>0$, $\zeta>0$,
+$\delta>0$ and $\mathcal P_\gamma(v)>0$ have positive minima
+for each fixed label. By local finiteness of the retained source-label
+family, only finitely many old labels intersect this fixed compact
+perturbation support. Every differentiated coefficient of $\Delta R$
+is finite by its explicit smooth shapes, including the retained old-state
+cross terms there. For any fixed
+$\alpha$ and derivative $I$, the maximum of its derivative divided by
+$\varepsilon^\alpha\sqrt\zeta\mathcal P_\gamma$ on these finitely
+many supports is therefore a concrete finite constant. Extend the
+finite \emph{increment} family by zero on unused labels. This proves its
+finite coefficient inequalities without assigning an asymptotic gain
+to the amplitude. It does not set any old source coefficient to zero:
+$R_{\rm old}$ retains its actual locally finite family and its attributed
+source-class bounds. The finite-sum closure in source Proposition 6.6
+combines those bounds with the proved increment bounds for each full
+current input. The same compact-support argument applies to the added
+mean sources and the reserved bump operators. Thus the operations
+above are defined on the actual old-plus-increment inputs.
+Their constants can contain the inverse of a very small Gaussian
+envelope or source scale; no uniform control for an increasing family
+of coupled stages or bands follows from this compactness argument.
+The original component budgets and the full nonlinear remainders
+remain the quantities to propagate when investigating such a family.
+
+
+\section{Compact completion of the full averaged residual}
+\label{mcstress:section}
+
+This section computes a compact symmetric stress and a compact pressure
+for the complete averaged residual of the actual finite curl candidate.
+It retains the original radial bumps depending on $q(z,t)$, both axial
+fluxes, the radial force, and the full cylindrical connection terms.
+The result is a stress--pressure representation of a computed force;
+it does not by itself modify a velocity or identify the constructed
+stress with a covariance of additional waves.
+
+\subsection{The actual extended fields and all three averaged components}
+
+Use right-handed cylindrical coordinates
+$x=(r\cos\theta,r\sin\theta,z)$, with oriented orthonormal basis
+$(e_r,e_\theta,e_z)$ and $r>0$. The retained finite source state is
+$(u_*,p_*)$; the actual added field and its selected pressure are
+$(v,\pi)=(w_y,\pi_y)$. On a finite collection of source labels the
+added potential has the specified form
+\begin{equation}\label{mcstress:actual_potential}
+\begin{gathered}
+ \mathcal A_y=\sum_j\operatorname{Re}
+   \left[Q_j^{1/2-A}
+     \frac{i\,n_j\times t_j}{k_jm_j|n_j|^2}
+                      e^{ik_jm_j\Phi_j}\right],\qquad
+ v=\operatorname{curl}_{\mathscr D}\mathcal A_y,\\
+ t_j=\chi_jB_jy_3(t_{c,j}),\qquad
+ y_3=\binom{\Theta_3}{\Omega_3},\qquad
+ t_{c,j}=t_b+\alpha_jv_j,\qquad
+ n_j^TB_j=0,\qquad k_jm_jp_j\in\mathbb Z\setminus\{0\}.
+\end{gathered}
+\end{equation}
+Here $y_3$ is the actual signed third-growth trajectory, the cutoffs
+and source frame are the retained functions, and $Q_j$ is constant
+on each source chart. The chosen pressure is the real harmonic sum
+with chart coefficient
+\[
+ Q_j^{-2A}
+ \frac{i\{n_j^T\mathsf K_jt_j-(n'_j)^Tt_j\}}
+      {k_jm_j|n_j|^2}e^{ik_jm_j\Phi_j}.
+\]
+All coefficient components are independent of $\theta$; their angular
+dependence is the displayed nonzero integer harmonic. Their radial
+and axial supports lie in a fixed compact set with $r$ bounded away
+from zero on the finite time interval under consideration. Smooth
+zero extension at each source cutoff is retained.
+
+The source absolute auxiliary coordinate is $Y\in\mathbb T^2$ and
+the physical evaluation is
+\begin{equation}\label{mcstress:extended_derivatives}
+\begin{gathered}
+ Y(r,t)=v_r r^{d_r}+v_t t\pmod{\mathbb Z^2},\qquad
+ v_r=(1,-b_g),\quad v_t=(b_g,1),\quad b_g=\sqrt2-1,\\
+ \rho_g=\frac{\log(4-\sqrt2)}{\log(4+\sqrt2)},\quad
+ \kappa_s=10^{-5},\quad d_r=2((1+h)\rho_g-h\kappa_s),\\
+ \mathscr D_r=\partial_r+d_r r^{d_r-1}v_r\cdot\partial_Y,
+ \qquad \mathscr D_t=\partial_t+v_t\cdot\partial_Y,
+ \qquad \mathscr D_z=\partial_z.
+\end{gathered}
+\end{equation}
+The angular derivative is $\partial_\theta$.
+The exponent $h$ here is the unchanged source chart exponent. These
+lifted derivatives commute, obey the product rule, and satisfy
+$\mathscr D_r r=1$. Equivalently in Cartesian coordinates they are
+$\partial_{x_i}+\sum_\alpha(\partial_{x_i}Y_\alpha)\partial_{Y_\alpha}$;
+their commutators vanish because mixed derivatives of $Y$ commute.
+Thus evaluation at the physical map preserves every differentiated
+identity below.
+
+The actual finite source has its retained representation
+$u_* =\operatorname{curl}_{\mathscr D}\mathcal A_*+B_*e_\theta$,
+with $\partial_\theta B_*=0$. Commutation of the lifted derivatives
+proves $\operatorname{div}_{\mathscr D}\operatorname{curl}_{\mathscr D}=0$.
+Also $\operatorname{div}_{\mathscr D}(B_*e_\theta)=0$.
+Consequently both $u_*$ and $v$ are divergence free at every independent
+$Y$, not only after physical evaluation.
+
+Let the normalized averages act on cylindrical components before
+evaluation:
+\[
+ \langle f\rangle_\theta=\frac1{2\pi}\int_0^{2\pi}f\,d\theta,
+ \quad \langle f\rangle_Y=\int_{\mathbb T^2}f\,dY,
+ \quad \langle f\rangle=\langle\langle f\rangle_\theta\rangle_Y,
+ \quad\int_{\mathbb T^2}1\,dY=1.
+\]
+Every cylindrical curl operation retains the nonzero angular harmonic
+in \eqref{mcstress:actual_potential}. For example its radial and axial
+components are $r^{-1}\partial_\theta\mathcal A_z-\partial_z\mathcal A_\theta$
+and $(\mathscr D_r+r^{-1})\mathcal A_\theta-r^{-1}\partial_\theta\mathcal A_r$.
+Integrating the integer harmonic proves
+\begin{equation}\label{mcstress:zero_mean}
+ \langle v\rangle_\theta=0,\qquad
+ \langle\pi\rangle_\theta=0
+ \quad\hbox{at every }(r,z,t,Y).
+\end{equation}
+This statement includes the complete coefficient curl and every cutoff
+derivative, rather than only the principal amplitude.
+
+For a smooth periodic coefficient $f$, integration of its auxiliary
+derivatives gives
+\begin{equation}\label{mcstress:average_derivatives}
+ \langle\mathscr D_r f\rangle=\partial_r\langle f\rangle,
+ \quad \langle\mathscr D_t f\rangle=\partial_t\langle f\rangle,
+ \quad \langle\partial_z f\rangle=\partial_z\langle f\rangle,
+ \quad \langle\partial_\theta f\rangle=0.
+\end{equation}
+Applying the first identity twice also treats $\mathscr D_r^2$;
+the derivative of its variable coefficient has zero auxiliary average
+because that coefficient is independent of $Y$.
+
+At arbitrary fixed physical viscosity $\nu_{\rm NS}>0$, the exact
+residual increment is
+\begin{equation}\label{mcstress:residual_increment}
+ \Delta R=\mathscr D_t v+(u_*\cdot\nabla_{\mathscr D})v
+ +(v\cdot\nabla_{\mathscr D})u_*
+ +(v\cdot\nabla_{\mathscr D})v
+ -\nu_{\rm NS}\Delta_{\mathscr D}v+\nabla_{\mathscr D}\pi.
+\end{equation}
+This is the residual of the actual modified state minus the source
+state's residual at the same viscosity. Put
+\begin{equation}\label{mcstress:actual_tensor}
+ \bar u_* =\langle u_*\rangle_\theta,\qquad
+ w_*=u_*-\bar u_*,\qquad
+ S=\langle w_*\otimes v+v\otimes w_*+v\otimes v\rangle.
+\end{equation}
+It is a smooth real symmetric axisymmetric tensor compactly supported
+in the annular and axial set at issue. Each summand contains a factor
+of the actual compact field $v$.
+
+\begin{theorem}\label{mcstress:full_mean}
+The complete averaged residual is the full Cartesian divergence of
+the actual tensor $S$:
+\begin{equation}\label{mcstress:Ffull}
+ \langle\Delta R\rangle
+ =F_r e_r+F_2e_\theta+F_1e_z
+ =\operatorname{div}S,
+\end{equation}
+where
+\begin{equation}\label{mcstress:all_components}
+\begin{aligned}
+ F_r&=(\partial_r+r^{-1})S_{rr}-r^{-1}S_{\theta\theta}
+                                      +\partial_zS_{rz},\\
+ F_2&=(\partial_r+2r^{-1})S_{r\theta}+\partial_zS_{z\theta},\\
+ F_1&=(\partial_r+r^{-1})S_{rz}+\partial_zS_{zz}.
+\end{aligned}
+\end{equation}
+\end{theorem}
+\begin{proof}
+For divergence-free fields, direct Cartesian component expansion
+rewrites the three advection terms of \eqref{mcstress:residual_increment}
+as the lifted divergence of
+$u_*\otimes v+v\otimes u_*+v\otimes v$.
+The mean-flow cross tensor has zero angular average by
+\eqref{mcstress:zero_mean}, even when $\bar u_*$ depends on $Y$.
+Thus its averaged divergence is zero by
+\eqref{mcstress:average_derivatives} and the cylindrical divergence
+formula.
+
+To check the linear radial component explicitly, let
+\[
+ \mathscr L_0=\mathscr D_r^2+r^{-1}\mathscr D_r
+             +r^{-2}\partial_\theta^2+\partial_z^2.
+\]
+The complete cylindrical vector Laplacian is
+\[
+ \begin{aligned}
+ (\Delta_{\mathscr D}v)_r&=(\mathscr L_0-r^{-2})v_r
+                       -2r^{-2}\partial_\theta v_\theta,\\
+ (\Delta_{\mathscr D}v)_\theta&=(\mathscr L_0-r^{-2})v_\theta
+                       +2r^{-2}\partial_\theta v_r,\qquad
+ (\Delta_{\mathscr D}v)_z=\mathscr L_0v_z.
+ \end{aligned}
+\]
+Each average is zero by \eqref{mcstress:zero_mean} and
+\eqref{mcstress:average_derivatives}. The radial pressure average is
+$\langle\mathscr D_r\pi\rangle=\partial_r\langle\pi\rangle=0$;
+the angular and axial components vanish as well. The averaged time
+derivative is zero. These verifications retain the radial connection
+term and physical viscosity before taking the average.
+
+Finally, for a symmetric tensor independent of $\theta$ in cylindrical
+components, differentiation of
+$e_r=(\cos\theta,\sin\theta,0)$ and
+$e_\theta=(-\sin\theta,\cos\theta,0)$ gives exactly the three
+expressions in \eqref{mcstress:all_components}. One direct verification
+is to write its Cartesian matrix as $O_\theta S O_\theta^T$, where
+$O_\theta=[e_r,e_\theta,e_z]$, and use
+$\partial_x=\cos\theta\partial_r-r^{-1}\sin\theta\partial_\theta$
+and $\partial_y=\sin\theta\partial_r+r^{-1}\cos\theta\partial_\theta$.
+The derivatives of $O_\theta$ give $-S_{\theta\theta}/r$ in the radial
+row, $2S_{r\theta}/r$ in the angular row, and $S_{rz}/r$ in the axial
+row. Averaging the lifted version replaces $\mathscr D_r$ by
+$\partial_r$. This proves the full Cartesian identity.
+\end{proof}
+
+\subsection{The compact fluxes and the original varying radial bumps}
+
+For $e=1,2$, write $\tau_1=z$, $\tau_2=\theta$, and set
+\begin{equation}\label{mcstress:fluxes}
+ M_e(z,t)=\int_0^\infty r^eF_e(r,z,t)\,dr,
+ \qquad
+ J_e(z,t)=\int_0^\infty r^eS_{z\tau_e}(r,z,t)\,dr.
+\end{equation}
+Multiplication of the corresponding row of
+\eqref{mcstress:all_components} by $r^e$ makes its radial term
+$\partial_r(r^e S_{r\tau_e})$. The radial boundary values vanish
+by compact annular support. Therefore
+\begin{equation}\label{mcstress:flux_identity}
+ M_e=\partial_zJ_e,\qquad
+ \int_{\mathbb R}M_e(z,t)\,dz=0\quad(e=1,2).
+\end{equation}
+Both $J_e$ are smooth and compactly supported in $z$. No claim that
+either $M_e$ vanishes pointwise is used.
+
+Retain the original $q$-dependent bumps, for $q(z,t)>0$ on the compact
+source patch:
+\begin{equation}\label{mcstress:bumps}
+ b_e(r,z,t)=q(z,t)^{-(e+1)/2}
+             \widehat b_e(r/\sqrt{q(z,t)}),\qquad
+ \widehat b_e\in C_c^\infty((0,\infty)),\qquad
+ \int_0^\infty x^e\widehat b_e(x)\,dx=1.
+\end{equation}
+The fixed profiles may be taken to be the already selected ones.
+The change of variable $r=\sqrt q\,x$ proves
+$\int r^e b_e\,dr=1$ for every $(z,t)$. Choose a fixed annulus
+containing the supports of $S$ and of the bumps on the relevant compact
+$(z,t)$ set. This is possible because $q$ has positive lower and finite
+upper bounds there. Outside the compact axial set where a flux or
+force is nonzero all the formulas below extend by zero.
+
+The exact derivatives and cumulative bump are
+\begin{equation}\label{mcstress:bump_derivatives}
+\begin{gathered}
+ \partial_zb_e=-\frac{q_z}{2q}
+                  \bigl((e+1)b_e+r\partial_rb_e\bigr),\\
+ \beta_e(r,z,t)=\int_0^r s^eb_e(s,z,t)\,ds
+              =\int_0^{r/\sqrt q}x^e\widehat b_e(x)\,dx,\\
+ \partial_z\beta_e=-\frac{q_z}{2q}r^{e+1}b_e(r,z,t),\qquad
+ \int_0^\infty r^e\partial_zb_e\,dr=0.
+\end{gathered}
+\end{equation}
+The first identity is the product and chain rule. The second is the
+same radial substitution as the normalization. Differentiating its
+upper limit proves the third. Differentiating the normalization under
+the uniformly compact radial integral proves the fourth. In particular
+none of these identities assigns a sign to $q_z$.
+
+\subsection{Corrected radial primitives and the complete symmetric tensor}
+
+Define the actual corrected primitives
+\begin{equation}\label{mcstress:sigma}
+ \sigma_e(r,z,t)=-r^{-e}\int_0^r s^e
+       \bigl(F_e(s,z,t)-\partial_z(b_e(s,z,t)J_e(z,t))\bigr)\,ds,
+ \qquad e=1,2.
+\end{equation}
+Their exact radial equations are
+\begin{equation}\label{mcstress:sigma_equation}
+ (\partial_r+e/r)\sigma_e
+      =-F_e+\partial_z(b_eJ_e).
+\end{equation}
+This follows by multiplying \eqref{mcstress:sigma} by $r^e$ and
+using the fundamental theorem of calculus.
+
+For comparison with the initially proposed primitive, put
+\[
+ \sigma_e^{\rm old}=-r^{-e}\int_0^r s^e
+                       (F_e-b_e\partial_zJ_e)\,ds.
+\]
+Every missing term can be displayed exactly:
+\begin{equation}\label{mcstress:primitive_correction}
+ \sigma_e=\sigma_e^{\rm old}+r^{-e}J_e\partial_z\beta_e
+         =\sigma_e^{\rm old}-\frac{rq_z}{2q}b_eJ_e.
+\end{equation}
+Indeed expanding $\partial_z(b_eJ_e)$ in
+\eqref{mcstress:sigma} proves the first equality, and
+\eqref{mcstress:bump_derivatives} proves the second. With the old
+primitive the angular or axial stress divergence below would instead
+be $-F_e-(\partial_zb_e)J_e$. Thus the correction is necessary for the
+retained varying bump. It vanishes in the special case $q_z=0$.
+
+There is an exact expression entirely in the original tensor entries:
+\begin{equation}\label{mcstress:compact_flux_correction}
+\begin{gathered}
+ C_e(r,z,t)=\int_0^r s^eS_{z\tau_e}(s,z,t)\,ds
+                                    -\beta_e(r,z,t)J_e(z,t),\\
+ \sigma_e=-S_{r\tau_e}-r^{-e}\partial_zC_e.
+\end{gathered}
+\end{equation}
+To prove it, integrate the corresponding component of
+\eqref{mcstress:all_components} only up to $r$, obtaining
+$\int_0^r s^eF_e\,ds=r^eS_{r\tau_e}
++\partial_z\int_0^r s^eS_{z\tau_e}\,ds$. Substitute this identity
+and $\int_0^r s^e b_e\,ds=\beta_e$ into
+\eqref{mcstress:sigma}. Below both radial supports $C_e=0$;
+above both supports its two summands are $J_e$ and $J_e$, so it is
+again zero. This proves its compact support as well as the exact
+relation of the constructed radial stress to the actual covariance
+tensor.
+
+\begin{theorem}\label{mcstress:completion}
+The real symmetric axisymmetric tensor with cylindrical entries
+\begin{equation}\label{mcstress:tensor}
+\begin{gathered}
+ T_{rr}=0,\qquad T_{r\theta}=T_{\theta r}=\sigma_2,\qquad
+ T_{rz}=T_{zr}=\sigma_1,\\
+ T_{z\theta}=T_{\theta z}=-b_2J_2,\qquad
+ T_{zz}=-b_1J_1,\qquad
+ T_{\theta\theta}=rF_r+r\partial_z\sigma_1
+\end{gathered}
+\end{equation}
+is smooth and compactly supported in an annular cylinder and obeys
+the full Cartesian identity
+\begin{equation}\label{mcstress:divergence}
+ \operatorname{div}T=-(F_r e_r+F_2e_\theta+F_1e_z).
+\end{equation}
+If the term $rF_r$ is omitted only in $T_{\theta\theta}$, the exact
+divergence is instead $-(0,F_2,F_1)$ in cylindrical components.
+\end{theorem}
+\begin{proof}
+The integral of the numerator in \eqref{mcstress:sigma} over the
+entire radial half-line is
+\[
+ M_e-\partial_z\left(J_e\int_0^\infty s^eb_e\,ds\right)
+  =\partial_zJ_e-\partial_zJ_e=0.
+\]
+Thus the numerator primitive is zero below its support and zero above
+it. Division by $r^e$ introduces no singularity because it is zero on
+a fixed neighborhood of the axis. All derivatives under its fixed
+compact radial integral exist, and the normalization identity holds
+smoothly in $(z,t)$, so its extension by zero is smooth. Compact axial
+support follows because both $F_e$ and $J_e$ vanish outside the fixed
+compact axial set. The same statements hold for all entries of
+\eqref{mcstress:tensor}. Passing to the Cartesian matrix
+$O_\theta T O_\theta^T$ preserves smoothness away from the axis; near
+the axis it is identically zero. Hence this is a smooth compactly
+supported Cartesian tensor.
+
+Apply the full symmetric axisymmetric divergence formula already
+proved in \eqref{mcstress:all_components}. Its three rows are
+\[
+ \begin{aligned}
+ (\operatorname{div}T)_r
+   &=-\frac{rF_r+r\partial_z\sigma_1}{r}
+                                     +\partial_z\sigma_1=-F_r,\\
+ (\operatorname{div}T)_\theta
+   &=(\partial_r+2/r)\sigma_2-\partial_z(b_2J_2)=-F_2,\\
+ (\operatorname{div}T)_z
+   &=(\partial_r+1/r)\sigma_1-\partial_z(b_1J_1)=-F_1.
+ \end{aligned}
+\]
+The last two identities are \eqref{mcstress:sigma_equation}, including
+every derivative of $b_e$. This proves the Cartesian vector identity
+and, on omitting $rF_r$, its stated radial-zero variant.
+\end{proof}
+
+\subsection{Compact pressure, tracefree stress, and the exact gauge relation}
+
+The trace and its prescribed pressure are explicitly
+\begin{equation}\label{mcstress:pressure}
+ \operatorname{tr}T=rF_r+r\partial_z\sigma_1-b_1J_1,
+ \qquad
+ p_T=\frac13\bigl(rF_r+r\partial_z\sigma_1-b_1J_1\bigr),
+ \qquad T^0=T-p_TI_3.
+\end{equation}
+Then $\operatorname{tr}T^0=0$, and every field is smooth and compactly
+supported in the same annular cylinder. The exact full cancellation is
+\begin{equation}\label{mcstress:tracefree_cancellation}
+ F+\operatorname{div}T^0+\nabla p_T=0.
+\end{equation}
+To check its sign, for any scalar $p$ Cartesian differentiation gives
+$\operatorname{div}(pI_3)=\nabla p$. Therefore
+$\operatorname{div}T^0=\operatorname{div}T-\nabla p_T
+=-F-\nabla p_T$, which proves the displayed equation.
+In components the new diagonal entries are
+\[
+ T^0_{rr}=-p_T,\quad
+ T^0_{\theta\theta}=rF_r+r\partial_z\sigma_1-p_T,\quad
+ T^0_{zz}=-b_1J_1-p_T.
+\]
+The axial stress divergence alone changes by $-\partial_zp_T$;
+the pressure gradient contributes $+\partial_zp_T$. Thus the combined
+stress--pressure correction preserves the exact tangential equations.
+There is no claim that their stress term alone stays unchanged.
+
+More generally $T-pI_3$ with any smooth compact scalar $p$ satisfies
+$F+\operatorname{div}(T-pI_3)+\nabla p=0$.
+The choice in \eqref{mcstress:pressure} is the unique one making
+this stress tracefree. The map from symmetric tensors to
+tracefree-tensor--scalar pairs,
+\[
+ T\longmapsto\bigl(T-\tfrac13\operatorname{tr}T\,I_3,
+                         \tfrac13\operatorname{tr}T\bigr),
+\]
+has exact inverse $(U,p)\mapsto U+pI_3$ when $\operatorname{tr}U=0$.
+It intertwines $\operatorname{div}$ with
+$(U,p)\mapsto\operatorname{div}U+\nabla p$. This supplies the full
+map between the two presentations, including compact support and signs.
+
+\subsection{All total force and torque components and the divergence image}
+
+The Cartesian components of the averaged force are
+\[
+ F=(F_r\cos\theta-F_2\sin\theta,
+       F_r\sin\theta+F_2\cos\theta,F_1).
+\]
+Integration in $\theta$ with the physical volume element
+$dx=r\,dr\,d\theta\,dz$ gives
+\begin{equation}\label{mcstress:force_torque}
+\begin{gathered}
+ \int_{\mathbb R^3}F\,dx
+  =2\pi e_z\int_{\mathbb R}M_1(z,t)\,dz=0,\\
+ \int_{\mathbb R^3}x\times F\,dx
+  =2\pi e_z\int_{\mathbb R}M_2(z,t)\,dz=0.
+\end{gathered}
+\end{equation}
+For the torque calculation, direct multiplication in the oriented
+basis gives
+\[
+ x\times F=-zF_2e_r+(zF_r-rF_1)e_\theta+rF_2e_z.
+\]
+The first two terms integrate to zero in $\theta$, and the third
+gives the second equation of \eqref{mcstress:force_torque}.
+Thus all three force and all three torque components vanish. The last
+equalities use the already proved compact flux identities
+\eqref{mcstress:flux_identity}. The same torque vanishes about every
+fixed origin $x_0$, because subtracting $x_0$ changes it by
+$-x_0\times\int F\,dx=0$. On a finite axial slab $a<z<b$, the
+axial force and torque are respectively
+$2\pi(J_1(b,t)-J_1(a,t))$ and
+$2\pi(J_2(b,t)-J_2(a,t))$. The quantities need not vanish on an
+individual slice.
+
+There is also a direct Cartesian stress verification. Since
+$F_j=-\partial_kT_{jk}$ and $T$ is compact, integration by parts gives
+\begin{equation}\label{mcstress:first_moments}
+ \int F_j\,dx=0,\qquad
+ \int x_iF_j\,dx=\int T_{ji}\,dx=-\int S_{ji}\,dx.
+\end{equation}
+Symmetry makes the antisymmetric part of the first-moment matrix zero,
+which is precisely all three torque components. Its symmetric part
+is not asserted to vanish. The second equality with $S$ uses
+$F=\operatorname{div}S$. Equivalently
+$\operatorname{div}(T+S)=0$; multiplying this equation by $x_i$ and
+integrating proves $\int(T+S)_{ji}\,dx=0$. In the tracefree-pressure
+presentation the same first moment is
+$\int T^0_{ji}\,dx+\delta_{ij}\int p_T\,dx$.
+All these identities persist under any finite time differentiation on
+a common compact support, by differentiation under the integral.
+
+For completeness, this construction proves the exact image of compact
+symmetric-stress divergence in the axisymmetric class. Let
+an open axial interval $I_z$ contain the actual axial supports, with
+$q>0$ smooth on a neighborhood of its relevant compact subsets at the
+fixed time. In the following two spaces all supports are compact
+subsets of $\{r>0,\ z\in I_z\}$. Thus the original bump is defined
+everywhere it is used, and integrating between axial support endpoints
+stays inside $I_z$.
+Let
+$\mathcal F_0$ be the space of smooth real axisymmetric compact forces
+supported away from $r=0$ and satisfying exactly
+\[
+ \int_{\mathbb R}\int_0^\infty rF_1\,dr\,dz=0,
+ \qquad
+ \int_{\mathbb R}\int_0^\infty r^2F_2\,dr\,dz=0.
+\]
+Let $\mathcal S_c$ be the space of smooth real compact symmetric
+axisymmetric Cartesian tensors supported away from $r=0$. Define
+$\mathcal D:\mathcal S_c\to\mathcal F_0$ by
+$\mathcal D(U)=-\operatorname{div}U$.
+Integration by parts proves that its values satisfy both defining
+identities of $\mathcal F_0$, and axisymmetry makes the other force
+and torque components vanish as above.
+
+For any $F\in\mathcal F_0$, compute its actual radial moments and set
+\[
+ J_e(z)=\int_{-\infty}^z\int_0^\infty r^eF_e(r,s)\,dr\,ds.
+\]
+This is a smooth compact axial function: its derivative is $M_e$, it
+vanishes below the axial support, and the defining zero total integral
+makes it vanish above that support. Use the fixed bumps
+\eqref{mcstress:bumps}, the corrected primitive
+\eqref{mcstress:sigma}, and all entries of
+\eqref{mcstress:tensor}. The proof of Theorem~\ref{mcstress:completion}
+uses only these identities and proves a compact tensor
+$\mathcal C_bF$ with
+\begin{equation}\label{mcstress:right_inverse}
+ \mathcal D\mathcal C_bF=F\qquad(F\in\mathcal F_0).
+\end{equation}
+Thus the two total moments are necessary and sufficient, with an
+explicit right inverse. For the actual force in
+\eqref{mcstress:Ffull}, this primitive in $z$ equals the already
+computed $J_e$ from $S$, because both have derivative $M_e$ and vanish
+at the negative axial end. No additional compatibility condition has
+been imposed on the actual candidate.
+
+For fixed $q$ and bump profiles, all operations defining
+$\mathcal C_b$ are linear. Hence
+$\mathcal P_b=\mathcal C_b\mathcal D$ is a projection on
+$\mathcal S_c$: \eqref{mcstress:right_inverse} gives
+$\mathcal P_b^2=\mathcal P_b$ and
+$\ker\mathcal P_b=\ker\mathcal D$.
+In particular the completed actual tensor is
+$T=\mathcal P_b(-S)$, and $T+S$ is a compact divergence-free symmetric
+tensor. This gives an exact relation to the actual averaged covariance,
+not merely equality of its two radial moments.
+
+\subsection{Exact source chart, bump, stress, and pressure powers}
+
+Fix one source chart and retain all of its constants:
+\begin{equation}\label{mcstress:chart}
+ r=\sqrt Q\,R,\qquad z=Q^D Z,\qquad1-t=QT,
+ \qquad A=\tfrac12+h,\quad D=\tfrac12-h,\quad
+ \varepsilon=Q^h.
+\end{equation}
+The dyadic label $Q$ is fixed under differentiation. The averaged quantities
+are independent of $Y$ and $\theta$, so in this
+subsection the complete normalized spatial derivatives are
+$\partial_R$, $R^{-1}\partial_\theta$ and $\varepsilon\partial_Z$,
+with the same cylindrical basis derivatives as before.
+Define the exact chart representatives
+\begin{equation}\label{mcstress:chart_representatives}
+\begin{gathered}
+ S^*=Q^{2A}S,\qquad F^*=Q^{2A+1/2}F,\qquad
+ T^*=Q^{2A}T,\qquad \Sigma_e=Q^{2A}\sigma_e,\\
+ J_e^*=Q^{2A-(e+1)/2}J_e
+             =\int_0^\infty R^e S^*_{z\tau_e}\,dR,\qquad
+ M_e^*=Q^{2A-e/2}M_e=\varepsilon\partial_ZJ_e^*,\\
+ q_*=q/Q,\qquad
+ b_e^*=Q^{(e+1)/2}b_e(\sqrt Q R,z,t)
+       =q_*^{-(e+1)/2}\widehat b_e(R/\sqrt{q_*}).
+\end{gathered}
+\end{equation}
+The two moment powers follow directly from
+$r^e\,dr=Q^{(e+1)/2}R^e\,dR$ and
+$\partial_z=Q^{-D}\partial_Z$; the remaining factor in $M_e^*$
+is $Q^{1/2-D}=\varepsilon$. In particular the scaled bump satisfies
+$\int R^e b_e^*\,dR=1$.
+
+Every term of the corrected primitive has the same exact stress unit:
+\begin{equation}\label{mcstress:chart_sigma}
+\begin{gathered}
+ \Sigma_e=-R^{-e}\int_0^R X^e
+             \bigl(F_e^*-\varepsilon\partial_Z(b_e^*J_e^*)\bigr)\,dX,\\
+ (\partial_R+e/R)\Sigma_e
+       =-F_e^*+\varepsilon\partial_Z(b_e^*J_e^*),\\
+ \Sigma_e=\Sigma_e^{\rm old}
+       -\frac{\varepsilon R\partial_Zq_*}{2q_*}b_e^*J_e^*.
+\end{gathered}
+\end{equation}
+To verify the first line, insert
+$F_e=Q^{-2A-1/2}F_e^*$ and $b_eJ_e=Q^{-2A}b_e^*J_e^*$ in
+\eqref{mcstress:sigma}, and change the integration variable to
+$s=\sqrt Q X$. The second follows by differentiation. For the third,
+the physical correction in \eqref{mcstress:primitive_correction}
+has factor $\sqrt Q\,q_z/q$; using
+$q_z=Q^{1-D}\partial_Zq_*$ gives
+$\sqrt Q\,q_z/q=\varepsilon\partial_Zq_*/q_*$.
+This verifies the original $q$ derivative, including its sign.
+Also, with $C_e^*=Q^{2A-(e+1)/2}C_e$,
+\[
+ \Sigma_e=-S^*_{r\tau_e}
+                     -\varepsilon R^{-e}\partial_Z C_e^*.
+\]
+
+The completed stress and its pressure become exactly
+\begin{equation}\label{mcstress:chart_tensor}
+\begin{gathered}
+ T^*_{rr}=0,\quad T^*_{r\theta}=\Sigma_2,\quad
+ T^*_{rz}=\Sigma_1,\quad T^*_{z\theta}=-b_2^*J_2^*,\quad
+ T^*_{zz}=-b_1^*J_1^*,\\
+ T^*_{\theta\theta}=RF_r^*+\varepsilon R\partial_Z\Sigma_1,
+ \qquad
+ p_T^*=Q^{2A}p_T
+  =\tfrac13(RF_r^*+\varepsilon R\partial_Z\Sigma_1-b_1^*J_1^*),\\
+ (T^0)^*=T^*-p_T^*I_3,\qquad
+ F^*+\operatorname{div}_*(T^0)^*+\nabla_*p_T^*=0.
+\end{gathered}
+\end{equation}
+For example the radial row is
+$-T^*_{\theta\theta}/R+\varepsilon\partial_Z\Sigma_1=-F_r^*$,
+and the tangential rows use \eqref{mcstress:chart_sigma}. The pressure
+identity follows from the same Cartesian isotropic-tensor calculation
+as before. Physical divergence and pressure gradient both have factor
+$Q^{-2A-1/2}$ because $\nabla_x=Q^{-1/2}\nabla_*$ on the chart.
+Thus the radial residual, hoop stress, both surviving axial fluxes,
+varying-bump correction and compact pressure all have their exact
+source units. No decay or uniform estimate at a singular endpoint is
+inferred from these finite compact-support identities.
+
+
+\section{Original-scale derivative costs of the actual compatibility defects}
+\label{mcq:section}
+
+The state and increment in this section are exactly the finite source state
+and actual third-growth curl constructed in the preceding reader.
+Write \(u_*=\langle u_*\rangle_\theta+w_*\), \(v=w_y\), and
+\[
+ C=\langle w_*\otimes v+v\otimes w_*+v\otimes v\rangle,
+\]
+where the outer brackets are the normalized angular and auxiliary
+averages before physical evaluation. Every component below is in the
+original oriented cylindrical orthonormal basis. The full moment
+completion and source pressure calculation prove the formulas used here;
+we also derive the scalar compatibility formulas directly to fix all signs.
+Throughout this section the unadorned symbols \(P,J_\theta,J_z\)
+denote the defect increments \(\Delta P,\Delta J_\theta,\Delta J_z\)
+caused by this actual wave addition. They are not the full old-plus-new
+source defects. The unchanged old defects must be added when applying
+the source correction to the whole updated state.
+
+\subsection{Actual mixed derivatives of the third-growth curl}
+
+Retain the fixed finite set of source labels \(j\), the actual clocks
+\(t_{c,j}=t_b+\alpha_jv_j\), and the two full shape fields \(W_{ja}\).
+The original data \(t_b,r_a,S_3,u_i\) are independent of these spatial
+labels. In particular
+\[
+ v=\sum_{j,a}Q_j^{-A}y_a(t_{c,j})W_{ja},\quad
+ A=\tfrac12+h,\quad D=\tfrac12-h,\quad
+ \partial_t t_{c,j}=\alpha_jQ_j^{-1-h},\quad \partial_z t_{c,j}=0 .
+\]
+Let \(Y_{1,n}=T_n\) and \(Y_{2,n}=O_n\) be the complete finite
+derivative arrays already proved for the actual coupled solution.
+Thus \(Y_{1,0}=(A_0/\mu)\widehat\lambda_3^{-7/8}\),
+\(Y_{2,0}=2A_0\widehat\lambda_3^{1/8}/(\sigma_2\sqrt{n_i})\),
+\(Y_{1,1}=2\gamma_iY_{1,0}\), and
+\(Y_{2,1}=\gamma_iA_0\widehat\lambda_3^{1/8}/(\sigma_2\sqrt{n_i})\).
+Higher entries are those closed recurrences in the retained moving-parent
+data; no independent amplitude bound is introduced here.
+
+For a pair \(I=(a,b)\in\mathbb N^2\), put
+\(\partial^I=\partial_z^a\partial_t^b\) and
+\(I_z=I+(1,0)\). On a fixed chart the full time operator is
+\(\mathfrak t_{*,j}=-\varepsilon_j\partial_{T_j}+c_{i,j}N_{i,j}\).
+The exact mixed derivative formula is
+\begin{equation}\label{mcq:actual_derivative}
+\begin{split}
+ \partial_z^a\partial_t^b v
+ =\sum_{j,c}\sum_{s=0}^b&
+ \binom bs Q_j^{-A-aD-b(1+h)}\alpha_j^s
+ y_c^{(s)}(t_{c,j})\\
+ &\hspace{4mm}\cdot
+ \partial_{Z_j}^a\mathfrak t_{*,j}^{\,b-s}W_{jc}.
+\end{split}
+\end{equation}
+All operators on the shapes include their phase, frame and cutoff
+derivatives. The shape time operator is the full derivative after
+auxiliary evaluation, not a derivative that holds the fast phase fixed.
+To prove the identity, differentiate the physical product \(b\) times
+in time. If \(s\) of the derivatives act on \(y_c\), its factor is
+\((\alpha_jQ_j^{-1-h})^sy_c^{(s)}\); the other \(b-s\) derivatives
+give \(Q_j^{-(b-s)(1+h)}\mathfrak t_{*,j}^{b-s}W_{jc}\).
+There are \(\binom bs\) such choices. The \(a\) axial derivatives act
+only on the shape and give \(Q_j^{-aD}\partial_{Z_j}^a\).
+The axial derivative commutes with the stated time operator, since
+its coefficients are fixed label constants. Combining the powers proves
+\eqref{mcq:actual_derivative} without dropping any derivative.
+
+For each \(e\in\{-1,0,1,2\}\), define the precise weighted norm
+\[
+ \|f\|_{[e]}^2=\int_0^\infty r^e\langle |f|^2\rangle\,dr,\qquad
+ \|F\|_{[e],j}^2=\int_0^\infty R_j^e\langle |F|^2\rangle\,dR_j.
+\]
+Every field being integrated is supported in a compact annulus away
+from zero, so the negative weight introduces no singular integral.
+Define the explicit actual-shape budget
+\begin{equation}\label{mcq:V}
+\begin{split}
+ \mathcal V_{e,(a,b)}
+ =\sum_{j,c}\sum_{s=0}^b&
+ \binom bs \alpha_j^sY_{c,s}
+ Q_j^{(e+1)/4-A-aD-b(1+h)}\\
+ &\hspace{4mm}\cdot
+ \|\partial_{Z_j}^a\mathfrak t_{*,j}^{\,b-s}W_{jc}\|_{[e],j}.
+\end{split}
+\end{equation}
+Then \(\|\partial^I v\|_{[e]}\le\mathcal V_{e,I}\).
+Indeed the measure identity
+\(r^e\,dr=Q_j^{(e+1)/2}R_j^e\,dR_j\), valid also for \(e=-1\),
+and the triangle inequality applied to \eqref{mcq:actual_derivative}
+give this bound. There is no inter-label orthogonality assumption.
+Put \(\mathcal W_{e,I}=\|\partial^I w_*\|_{[e]}\), restricted to a
+fixed radial set enclosing the supports of the actual new fields
+and all derivatives at issue. The old wave includes its existing curl
+corrections. These are norms of the specified source state, not missing
+amplitude variables.
+
+\subsection{A contraction estimate that retains every product derivative}
+
+For \(J=(j_1,j_2)\le I=(a,b)\), set
+\(\binom IJ=\binom a{j_1}\binom b{j_2}\), and define
+\begin{equation}\label{mcq:B}
+\begin{split}
+ \mathcal B_{e,I}=\sum_{J\le I}\binom IJ
+ \bigl(&\mathcal W_{e,J}\mathcal V_{e,I-J}
+       +\mathcal V_{e,J}\mathcal W_{e,I-J}\\
+       &+\mathcal V_{e,J}\mathcal V_{e,I-J}\bigr).
+\end{split}
+\end{equation}
+If \(E\) is any fixed real symmetric three-by-three matrix in
+cylindrical components, then
+\begin{equation}\label{mcq:contraction}
+ \left|\partial^I\int r^e(E:C)\,dr\right|
+       \le \|E\|_{\mathrm{op}}\mathcal B_{e,I}.
+\end{equation}
+For a single outer product,
+\(E:(f\otimes g)=f^TEg\), whose absolute value is at most
+\(\|E\|_{\mathrm{op}}|f||g|\). The repeated product rule gives exactly
+the sum over \(J\le I\) in \eqref{mcq:B}. Cauchy--Schwarz on the
+original weighted angular-auxiliary-radial measure gives each displayed
+product of norms. Compact smooth support justifies differentiation
+under the integral. Axial and time derivatives do not differentiate
+the cylindrical basis. This proves \eqref{mcq:contraction} for every
+specified order.
+For the time derivative, the full lifted physical operator is
+\(\mathcal D_t=\partial_t+N_{\rm abs}\), with \(N_{\rm abs}\) a
+constant torus direction. The Haar integral of \(N_{\rm abs}f\) is
+zero by periodicity. Therefore
+\(\partial_t\langle f\rangle=\langle\mathcal D_tf\rangle\).
+The same identity applies repeatedly, and axial differentiation commutes
+with this average and this constant torus direction. Consequently the
+ordinary mixed derivatives of the averaged tensor in
+\eqref{mcq:contraction} are exactly the averages of the full physical
+derivatives estimated in \eqref{mcq:actual_derivative}.
+
+\subsection{The actual three defects and the pressure-corrected axial flux}
+
+Since the wave increment has zero angular mean and is divergence-free,
+the change of the radial mean pressure source is
+\[
+ g=-(\partial_r+r^{-1})C_{rr}-\partial_zC_{zr}+r^{-1}C_{\theta\theta}.
+\]
+The three actual source compatibility-defect increments are therefore
+\begin{equation}\label{mcq:defects}
+\begin{split}
+ P&=\int\frac{C_{\theta\theta}-C_{rr}}r\,dr
+                    -\partial_z\int C_{zr}\,dr,\\
+ J_\theta&=\int r^2C_{z\theta}\,dr,\\
+ J_z&=\int r\left(C_{zz}-\tfrac12C_{rr}
+                              -\tfrac12C_{\theta\theta}\right)\,dr
+                  +\tfrac12\partial_z\int r^2C_{zr}\,dr .
+\end{split}
+\end{equation}
+The first formula is \(\int g\,dr\), using the zero boundary integral
+of \(\partial_r C_{rr}\). For the last, integration by parts gives
+\[
+ \int r^2 g\,dr
+  =\int r(C_{rr}+C_{\theta\theta})\,dr
+                      -\partial_z\int r^2C_{zr}\,dr .
+\]
+Substitute it into the source definition
+\(J_z=\int rC_{zz}\,dr-\frac12\int r^2g\,dr\).
+This proves all three identities in \eqref{mcq:defects}.
+In particular the axial source defect is not replaced by the raw flux
+\(\int rC_{zz}\,dr\).
+
+Let the source pressure bump be the original
+\[
+ \rho(r,z,t)=q^{-1/2}\widehat\rho(r/\sqrt q),\qquad
+ \int\widehat\rho(x)\,dx=1,\qquad
+ c_0=\tfrac12\int x^2\widehat\rho(x)\,dx .
+\]
+It has \(\int\rho\,dr=1\) and
+\(c_\rho=\frac12\int r^2\rho\,dr=c_0q\).
+The auxiliary average of the compact source pressure increment is
+\[
+ \overline{\Delta p_m}(r)=\int_0^r(g(s)-\rho(s)P)\,ds .
+\]
+Its derivative is \(g-\rho P\), and its integrand has zero total
+radial integral, giving compact support. Its weighted pressure moment is
+\(\int r\overline{\Delta p_m}\,dr=-\frac12\int r^2g\,dr+c_\rho P\).
+Here is the exact map to the full auxiliary-dependent source operation.
+Let \(\Delta g_r\) be the angularly averaged source increment before
+auxiliary averaging, so that \(\langle\Delta g_r\rangle_Y=g\), and
+put \(f=\Delta g_r-\rho P\). The source's shifted primitive uses
+\[
+ \begin{split}
+ \mathcal I f(r,Y)&=\int_0^r
+       f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\\
+ \mathcal J f(r,Y)&=\int_0^\infty
+       f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\qquad
+ \mathcal I_cf=\mathcal If-\chi_m\mathcal Jf .
+ \end{split}
+\]
+The fixed source exponent and direction are the original \(d_r,v_r\),
+and \(\chi_m\) is its inner-zero, outer-one radial cutoff. The full
+pressure increment is \(\Delta p_m=\mathcal I_cf\).
+Haar translation invariance gives
+\(\langle\mathcal Jf\rangle_Y=\int(g-\rho P)\,dr=0\) and
+\(\langle\mathcal If\rangle_Y=\int_0^r(g-\rho P)\,ds\).
+This proves the asserted averaged pressure formula from the full map.
+The lifted radial derivative cancels the shift derivative and yields
+\[
+ \mathcal D_r\Delta p_m-\Delta g_r
+       =-\rho P-(\partial_r\chi_m)\mathcal Jf .
+\]
+The second term has zero auxiliary average but need not vanish before
+physical evaluation. No estimate for its singular-time flatness is
+inferred from its zero average.
+Consequently the double-averaged axial residual-moment increment after
+this reconstruction is
+\[
+ \partial_zK_z,\qquad K_z=J_z+c_0qP .
+\]
+The full product, including the derivatives of \(q\), is retained.
+
+The following simultaneous quantitative estimates hold at every finite
+mixed order:
+\begin{equation}\label{mcq:defect_bounds}
+\begin{split}
+ |\partial^IP|&\le
+       \mathcal B_{-1,I}+\tfrac12\mathcal B_{0,I_z},\\
+ |\partial^IJ_\theta|&\le\tfrac12\mathcal B_{2,I},\\
+ |\partial^IJ_z|&\le
+       \mathcal B_{1,I}+\tfrac14\mathcal B_{2,I_z},\\
+ |\partial^IK_z|&\le
+       \mathcal B_{1,I}+\tfrac14\mathcal B_{2,I_z}\\
+ &\quad+|c_0|\sum_{J\le I}\binom IJ
+       |\partial^Jq|\left(
+       \mathcal B_{-1,I-J}+\tfrac12\mathcal B_{0,(I-J)_z}\right).
+\end{split}
+\end{equation}
+For the first line the diagonal contraction matrix is
+\(\operatorname{diag}(-1,1,0)\), of norm one, whereas the \(rz\)
+entry is the contraction against the symmetric matrix with \(rz,zr\)
+entries \(1/2\), of norm \(1/2\). For the second line use the
+analogous \(z\theta\) matrix. For the third the diagonal matrix is
+\(\operatorname{diag}(-1/2,-1/2,1)\), of norm one, and the
+coefficient \(1/2\) multiplying \(C_{zr}\) contributes an additional
+factor \(1/2\). These facts and \eqref{mcq:contraction} prove the first
+three bounds. The exact product rule for \(qP\) proves the fourth.
+Replacing \(I\) by \(I_z\) gives bounds for the two residual moments
+that actually enter the source radial inverse. Thus every pressure,
+radial and axial coupling has a bound in the original shape fields
+and third-growth constants.
+
+\subsection{Exact derivatives of the original moving scale and bumps}
+
+The source scale is determined by
+\[
+ q-z^2q^{2h}=1-t,\qquad z=q^D\eta,\qquad
+ D=\tfrac12-h,\qquad 0<h<1/100,\quad -1<\eta<1 .
+\]
+Set \(B(\eta)=1-2h\eta^2>1-2h>0\). Implicit differentiation of the
+first equation, followed by the displayed formula for \(z\), gives
+\begin{equation}\label{mcq:q_derivatives}
+\begin{gathered}
+ q_z=\frac{2\eta q^A}{B},\qquad q_t=-\frac1B,\\
+ \eta_z=\frac{q^{-D}(1-\eta^2)}B,\qquad
+ \eta_t=\frac{D\eta q^{-1}}B .
+\end{gathered}
+\end{equation}
+For example \(q_z=2zq^{2h}/B\), and \(D+2h=A\).
+Differentiating \(\eta=zq^{-D}\) gives the last two formulas;
+the identity \(2D+2h=1\) gives the factor \(1-\eta^2\).
+This proves the derivative dictionary without assigning a sign to \(q_z\).
+
+Put \(x=r/\sqrt q\). For a smooth function \(f(x,\eta)\) define the
+explicit differential expressions
+\[
+ \mathcal Z_\sigma f=
+ \frac{2\sigma\eta f-\eta x f_x+(1-\eta^2)f_\eta}{B},\qquad
+ \mathcal T_\sigma f=
+ \frac{-\sigma f+\frac12x f_x+D\eta f_\eta}{B}.
+\]
+Equations \eqref{mcq:q_derivatives} and the ordinary chain rule prove
+\begin{equation}\label{mcq:dilation_dictionary}
+ \partial_z(q^\sigma f)=q^{\sigma-D}\mathcal Z_\sigma f,\quad
+ \partial_t(q^\sigma f)=q^{\sigma-1}\mathcal T_\sigma f,\quad
+ \partial_r(q^\sigma f)=q^{\sigma-1/2}f_x .
+\end{equation}
+For the last formula \(q,\eta\) are independent of \(r\).
+For the first two, differentiation of \(x\) gives respectively
+\(-\eta xq^{-D}/B\) and \(xq^{-1}/(2B)\), proving every term.
+
+In particular let the original radial moment bump be
+\[
+ b_e=q^{-(e+1)/2}\widehat b_e(x),\qquad
+ \int x^e\widehat b_e(x)\,dx=1 .
+\]
+For any \(k,a,b\ge0\), its derivative is exactly
+\begin{equation}\label{mcq:bump_derivatives}
+ \partial_r^k\partial_z^a\partial_t^b b_e
+ =q^{-(e+1+k)/2-aD-b} f_{e;k,a,b}(x,\eta).
+\end{equation}
+Here the coefficient is given by a finite recursion: start at
+\(\sigma=-(e+1+k)/2\) and \(f=\widehat b_e^{(k)}\);
+repeat \(f\leftarrow\mathcal Z_\sigma f\),
+\(\sigma\leftarrow\sigma-D\), \(a\) times, and then
+\(f\leftarrow\mathcal T_\sigma f\),
+\(\sigma\leftarrow\sigma-1\), \(b\) times.
+The result is \(f_{e;k,a,b}\). This proves the identity by induction
+using \eqref{mcq:dilation_dictionary}. Smooth mixed derivatives commute,
+so this fixed order computes the stated derivative.
+Every coefficient is explicitly a finite rational expression in \(x,\eta\),
+the retained constants, and derivatives of the specified bump, with
+nonzero denominator a power of \(B\). On its compact \(x\) support
+and \(|\eta|\le1\) its maximum is finite and computable directly from
+that expression. Thus \eqref{mcq:bump_derivatives} supplies the original
+power of \(q\) at every order.
+The pressure bump \(\rho\) uses exactly this recursion with \(e=0\).
+Likewise every derivative in \eqref{mcq:defect_bounds} is explicit:
+\(\partial_z^a\partial_t^bq=q^{1-aD-b}Q_{a,b}(\eta)\), where the same
+recursion starts with \(\sigma=1,f=1\).
+
+For completeness, the weighted cumulative bump has the exact form
+\[
+ \beta_e(r,z,t)=\int_0^rs^eb_e(s,z,t)\,ds
+              =\int_0^{r/\sqrt q}x^e\widehat b_e(x)\,dx .
+\]
+Its axial derivative is
+\begin{equation}\label{mcq:bump_movement}
+ \partial_z\beta_e
+ =-\frac{q_z}{2q}\,r^{e+1}b_e .
+\end{equation}
+This follows by differentiating its upper endpoint, which is
+\(-rq_z/(2q^{3/2})\). Inserting the definition of \(b_e\) gives
+the displayed original physical factors. Therefore replacing the
+primitive of \(F_e-b_e\partial_zJ_e\) by the exact primitive of
+\(F_e-\partial_z(b_eJ_e)\) changes the stress coefficient by
+\[
+ -\frac{rq_z}{2q}\,b_eJ_e .
+\]
+This is the moving-bump term required in the complete stress construction.
+Its sign and all further derivatives are fixed by
+\eqref{mcq:q_derivatives}--\eqref{mcq:bump_movement}; it is not set to zero
+by holding the physical source scale fixed during axial differentiation.
+
+These calculations supply finite quantitative inputs for the actual
+source pressure and moment operations. They do not identify the
+distinct direct candidate with a completed infinite source correction
+sequence: the complete source-operation formulas retain the new
+velocity, covariance, pressure and nonlinear defects that such a step
+actually creates.
+
+
+\section{Physical derivative and full vector-force costs of the five-row mean operation}
+\label{mcmean:section}
+
+This section completes the finite mean operation on the actual current
+source state. All coordinates are the original right-handed cylindrical
+coordinates. The physical viscosity is the fixed number
+\(\nu_{\rm NS}>0\). Write the full current velocity as
+\(U=(b+\beta,V+v,G+\gamma)+w\), where \(w\) includes every current
+wave and curl correction. During the operation below this wave is held
+fixed. The three targets are the full current defects
+\begin{equation}\label{mcmean:full_targets}
+ \mathcal P=P_{\rm old}+\Delta P,\qquad
+ \mathcal J_\theta=(J_\theta)_{\rm old}+\Delta J_\theta,\qquad
+ \mathcal J_z=(J_z)_{\rm old}+\Delta J_z.
+\end{equation}
+Here the increments are the pressure-corrected actual wave increments
+of \eqref{mcq:defects}. If other finite source operations have already
+been performed, ``old'' means their actual entering state and the
+increments are recomputed for the actual addition. Thus none of the
+following formulas substitutes an increment for a full target.
+
+Retain, without a change of scale or profile constant,
+\begin{equation}\label{mcmean:original_scale}
+\begin{gathered}
+ q-z^2q^{2h}=1-t,\quad z=q^D\eta,\quad x=r/\sqrt q,\quad
+ A=\tfrac12+h,\quad D=\tfrac12-h,\\
+ 0<h<1/100,\quad q>0,\quad -1<\eta<1,\quad
+ B(\eta)=1-2h\eta^2,\\
+ V=q^{-A}a(\eta)x^{-1-2\lambda},\quad G=0
+ \quad\hbox{on the reserved mean patch},\\
+ a(\eta)=\frac{2^{1/2+\lambda}c_{\rm patch}}{1+\eta^2},
+ \qquad \lambda>0,\qquad |a(\eta)|\ge a_0>0.
+\end{gathered}
+\end{equation}
+The symbol \(a(\eta)\) in this display is a scalar base coefficient;
+below the bold symbol \(\boldsymbol a\) denotes the vector increment.
+The original constant \(c_{\rm patch}\) can have either nonzero sign.
+
+\subsection{Exact inverse profiles and the five physical rows}
+
+Use precisely the bumps and spacing of the five-row operation:
+\[
+ \varphi_j(x)=e^{-jd_b}\varphi_0(e^{-jd_b}x),\qquad
+ \mu_p=\int_0^\infty x^p\varphi_0(x)\,dx>0,
+ \qquad t_p=e^{d_bp},\quad d_b>0.
+\]
+The nonnegative nonzero smooth bump \(\varphi_0\) and its three
+dilates have support in the reserved open interval \(I_m\Subset(0,\infty)\).
+The substitution \(x=e^{jd_b}\xi\) proves exactly
+\(\int x^p\varphi_j(x)\,dx=\mu_p t_p^j\).
+Number matrix rows and columns starting at zero, and define
+\begin{equation}\label{mcmean:vandermonde}
+\begin{gathered}
+ V_\theta=[t_p^j]_{p=2,-2-2\lambda,-2\lambda; j=0,1,2},
+ \qquad B_\theta=V_\theta^{-1},\\
+ V_z=[t_p^j]_{p=1,1-2\lambda; j=0,1},
+ \qquad B_z=V_z^{-1},\\
+ A_\theta=\operatorname{diag}
+  (\mu_2,2a\mu_{-2-2\lambda},-a\mu_{-2\lambda})V_\theta,
+ \qquad
+ A_z=\operatorname{diag}(\mu_1,a\mu_{1-2\lambda})V_z.
+\end{gathered}
+\end{equation}
+For three row values \(t_0,t_1,t_2\), subtraction of the first row
+from each later row, followed by factoring, gives
+\(\det V_\theta=(t_1-t_0)(t_2-t_0)(t_2-t_1)\).
+For two row values the determinant is \(t_1-t_0\).
+The original exponents in each displayed matrix are distinct because
+\(\lambda>0\), and the exponential with \(d_b>0\) is injective.
+The row factors are nonzero. This proves both inverses exist at the
+actual fixed source parameters. Explicitly each entry of either
+\(B\) is its corresponding transposed cofactor divided by the stated
+determinant; this is a finite formula in the original exponentials.
+
+Define the following actual profiles, including their \(\eta\) dependence:
+\begin{equation}\label{mcmean:profiles}
+\begin{split}
+ V_P(x,\eta)&=-\frac{1}{2a(\eta)\mu_{-2-2\lambda}}
+                   \sum_{j=0}^2B_\theta[j,1]\varphi_j(x),\\
+ V_{J_z}(x,\eta)&=\frac{1}{a(\eta)\mu_{-2\lambda}}
+                   \sum_{j=0}^2B_\theta[j,2]\varphi_j(x),\\
+ G_{J_\theta}(x,\eta)&=-\frac{1}{a(\eta)\mu_{1-2\lambda}}
+                   \sum_{j=0}^1B_z[j,1]\varphi_j(x).
+\end{split}
+\end{equation}
+The signs, the factor two, and all three negative powers in the moment
+denominators are part of the formulas. Multiplying the columns by
+the exact rows in \eqref{mcmean:vandermonde} proves the eight scalar
+profile identities
+\begin{equation}\label{mcmean:profile_moments}
+\begin{array}{c|cc}
+ &V_P&V_{J_z}\\ \hline
+ \int x^2(\cdot)\,dx&0&0\\
+ 2a\int x^{-2-2\lambda}(\cdot)\,dx&-1&0\\
+ -a\int x^{-2\lambda}(\cdot)\,dx&0&-1
+\end{array}
+\qquad
+\begin{array}{c|c}
+ &G_{J_\theta}\\ \hline
+ \int x(\cdot)\,dx&0\\
+ a\int x^{1-2\lambda}(\cdot)\,dx&-1
+\end{array}.
+\end{equation}
+There are eight entries in these two tables; each follows from
+\(V_\theta B_\theta=I_3\) or \(V_zB_z=I_2\), with the row factor
+left in place. The complete matrix identities include all nine and
+all four scalar inverse identities, respectively.
+
+The source coefficients are
+\[
+ \boldsymbol u=A_\theta^{-1}
+       (0,-q^{2A}\mathcal P,-q^{2A-1}\mathcal J_z)^T,
+ \qquad
+ \boldsymbol s=A_z^{-1}
+       (0,-q^{2A-3/2}\mathcal J_\theta)^T.
+\]
+Since \((DV)^{-1}=V^{-1}D^{-1}\), substitution of these coefficients
+in the original physical increments gives
+\begin{equation}\label{mcmean:tangential_increment}
+ \delta v=q^A\mathcal P V_P+q^{A-1}\mathcal J_zV_{J_z},
+ \qquad
+ \delta\gamma=q^{A-3/2}\mathcal J_\theta G_{J_\theta}.
+\end{equation}
+For example the fifth-row coefficient in \(\boldsymbol u\) is
+\((-q^{2A-1}\mathcal J_z)/(-a\mu_{-2\lambda})\), which proves
+the positive sign in \(V_{J_z}\). Multiplication by the original
+outer factor \(q^{-A}\) proves its exponent \(A-1\).
+The other two terms follow by the same displayed diagonal products.
+
+Changing variables \(r=\sqrt q\,x\) in each integral, and using
+\eqref{mcmean:profile_moments}, now proves the full five equations
+\begin{equation}\label{mcmean:five_rows}
+\begin{gathered}
+ \int r^2\delta v\,dr=0,\qquad
+ \int r\delta\gamma\,dr=0,\qquad
+ \int\frac{2V}{r}\delta v\,dr=-\mathcal P,\\
+ \int r^2(G\delta v+V\delta\gamma)\,dr=-\mathcal J_\theta,\\
+ \int(2rG\delta\gamma-rV\delta v)\,dr=-\mathcal J_z.
+\end{gathered}
+\end{equation}
+Indeed the pressure term with \(V_P\) has scale
+\(q^{-A}q^A=1\); the angular flux with \(G_{J_\theta}\) has scale
+\(q^{3/2}q^{-A}q^{A-3/2}=1\); and the fifth row with
+\(V_{J_z}\) has scale \(q q^{-A}q^{A-1}=1\).
+Every other term is one of the zero entries in the tables. The two
+homogeneous velocity moments use the first rows of those tables.
+This verifies the physical equations, including the single factor
+\(r\) multiplying \(V\delta v\) in the fifth row.
+
+\subsection{Compact potential, induced radial velocity, and support}
+
+Define the combined potential profile
+\begin{equation}\label{mcmean:H}
+ H_\theta(x,\eta)=\frac1x\int_0^x\xi G_{J_\theta}(\xi,\eta)\,d\xi.
+\end{equation}
+Choose \(0<x_-<x_+\) such that the convex hull of all the bump
+supports lies in \([x_-,x_+]\Subset I_m\). For \(x<x_-\) the
+integral in \eqref{mcmean:H} is zero. For \(x>x_+\) it is the
+zero axial moment in \eqref{mcmean:profile_moments}.
+It follows that \(H_\theta\), together with every derivative, is
+supported in this fixed compact interval. Its smoothness at the two
+collars follows from the fact that the integrand is identically zero
+there and that its total integral is zero. In particular it extends
+smoothly by zero to \(x\le0\).
+
+The primitive of an individual \(\varphi_j\) is
+\(\psi_j=x^{-1}\int_0^x\xi\varphi_j(\xi)\,d\xi\), which equals
+\(\mu_1e^{jd_b}/x\) past its support. Thus an individual primitive
+can have a tail. The exact identity
+\(\sum_{j=0}^1 B_z[j,1]e^{jd_b}=0\) cancels these tails in
+\(H_\theta=-(a\mu_{1-2\lambda})^{-1}\sum_j B_z[j,1]\psi_j\).
+The identity holds for every \(\eta\), so its \(\eta\) derivatives
+also vanish. This proves compactness for the combined profile and
+all derivatives without assuming compactness for the summands.
+
+The physical potential and radial increment are exactly
+\begin{equation}\label{mcmean:potential_radial}
+\begin{split}
+ \Psi(r,z,t)&=\frac1r\int_0^r s\delta\gamma(s,z,t)\,ds
+             =q^{A-1}\mathcal J_\theta H_\theta(x,\eta),\\
+ \delta\beta&=-\partial_z\Psi\\
+ &=-q^{A-1}(\partial_z\mathcal J_\theta)H_\theta
+   -q^{A-1-D}\mathcal J_\theta\mathcal Z_{A-1}H_\theta.
+\end{split}
+\end{equation}
+The substitution in the integral supplies one factor \(q\) and its
+outer \(1/r\) supplies \(q^{-1/2}\), giving the exponent \(A-1\).
+The operator in the second line is explicitly
+\[
+ \mathcal Z_\sigma f
+ =\frac{2\sigma\eta f-\eta x f_x+(1-\eta^2)f_\eta}{B(\eta)}.
+\]
+The chain rule \eqref{mcq:dilation_dictionary} proves the last line,
+including the \(\eta\) derivative of the original factor \(1/a\).
+Direct differentiation of \(xH_\theta\) gives
+\((\partial_x+x^{-1})H_\theta=G_{J_\theta}\), so
+\((\partial_r+r^{-1})\Psi=\delta\gamma\). Commuting the smooth
+physical \(r,z\) derivatives proves
+\begin{equation}\label{mcmean:divergence}
+ (\partial_r+r^{-1})\delta\beta+\partial_z\delta\gamma=0.
+\end{equation}
+The three velocity increments and \(\Psi\) are auxiliary independent
+and angularly independent; their support lies in
+\(\sqrt q[x_-,x_+]\), including any intervals between the bumps.
+
+\subsection{Every mixed physical derivative, with original scale powers}
+
+For clarity the original differential dictionary is
+\[
+ q_z=\frac{2\eta q^A}{B},\quad q_t=-\frac1B,\quad
+ \eta_z=\frac{q^{-D}(1-\eta^2)}B,\quad
+ \eta_t=\frac{D\eta q^{-1}}B,
+ \qquad
+ \mathcal T_\sigma f=
+ \frac{-\sigma f+\tfrac12x f_x+D\eta f_\eta}{B}.
+\]
+These equations follow by implicit differentiation of
+\eqref{mcmean:original_scale}; in particular
+\(1-2hz^2q^{2h-1}=B\) and \(D+2h=A\).
+Differentiating \(x=rq^{-1/2}\) supplies
+\(x_z=-\eta xq^{-D}/B\) and \(x_t=xq^{-1}/(2B)\).
+Consequently
+\[
+ \partial_r(q^\sigma F)=q^{\sigma-1/2}F_x,\quad
+ \partial_z(q^\sigma F)=q^{\sigma-D}\mathcal Z_\sigma F,\quad
+ \partial_t(q^\sigma F)=q^{\sigma-1}\mathcal T_\sigma F.
+\]
+Here \(F=F(x,\eta)\). These are physical derivatives of the moving
+scale; the time loss is the original one in this scale.
+
+For \(k,m,n\ge0\) define \(F_{\sigma;k,m,n}\) by the following
+finite recursion. Start with \(f=\partial_x^kF\) and
+\(s=\sigma-k/2\). Repeat
+\(f\leftarrow\mathcal Z_s f,\ s\leftarrow s-D\) exactly \(m\)
+times; then repeat \(f\leftarrow\mathcal T_s f,\ s\leftarrow s-1\)
+exactly \(n\) times. The final \(f\) is \(F_{\sigma;k,m,n}\).
+For any actual scalar target \(X=X(z,t)\), the exact product formula is
+\begin{equation}\label{mcmean:all_derivatives}
+\begin{split}
+ \partial_r^k\partial_z^m\partial_t^n(q^\sigma XF)
+  =\sum_{i=0}^m\sum_{j=0}^n&\binom mi\binom nj
+     (\partial_z^i\partial_t^jX)\\
+  &\cdot q^{\sigma-k/2-(m-i)D-(n-j)}
+       F_{\sigma;k,m-i,n-j}(x,\eta).
+\end{split}
+\end{equation}
+To prove it, first apply \(k\) radial derivatives, which do not act
+on \(X,q,\eta\). The repeated product rule for the \(m\) axial and
+\(n\) time derivatives assigns \(i,j\) derivatives to \(X\), with
+the two binomial multiplicities displayed. Apply the three chain
+rules above successively to the remaining factor. Each axial
+derivative lowers its current exponent by \(D\), and each time
+derivative lowers it by one, while its current exponent is the index
+in the next operator. This is precisely the stated recursion.
+Smooth mixed derivatives commute, so the chosen radial-then-axial-
+then-time order computes the derivative written in the formula.
+
+This proves every mixed derivative of \(\delta v,\delta\gamma,\Psi\)
+by using, respectively, the two terms and the one term in
+\eqref{mcmean:tangential_increment} and \eqref{mcmean:potential_radial}.
+It proves every derivative of \(\delta\beta\) either by applying
+\eqref{mcmean:all_derivatives} to its two displayed terms or by
+\begin{equation}\label{mcmean:radial_all_derivatives}
+ \partial_r^k\partial_z^m\partial_t^n\delta\beta
+ =-\partial_r^k\partial_z^{m+1}\partial_t^n
+          (q^{A-1}\mathcal J_\theta H_\theta).
+\end{equation}
+This equality retains, in particular, the derivative of the full
+target and the additional original factor \(q^{-D}\).
+
+The recursion is an explicit finite rational expression in
+\(x,\eta,h\), the retained profile derivatives, and powers of
+\(B^{-1}\). The other profile constants are exactly the inverse
+Vandermonde entries and moments in \eqref{mcmean:profiles}.
+In fact the reciprocal base coefficient has the exact derivatives
+\begin{equation}\label{mcmean:reciprocal_a}
+ \partial_\eta^s(a^{-1})=
+ \frac{1}{2^{1/2+\lambda}c_{\rm patch}}
+ \begin{cases}1+\eta^2&s=0,\\2\eta&s=1,\\2&s=2,\\0&s\ge3.
+ \end{cases}
+\end{equation}
+Also \(\varphi_j^{(k)}(x)=e^{-(k+1)jd_b}
+\varphi_0^{(k)}(e^{-jd_b}x)\).
+These two formulas give every mixed derivative of the three profiles
+without an unspecified inverse-matrix derivative constant.
+
+For a similarly explicit derivative of \(H_\theta\), write
+\(F_0(x,\eta)=\int_0^x\xi G_{J_\theta}(\xi,\eta)\,d\xi\).
+For \(\ell\ge1\) the fundamental theorem of calculus and the
+product rule give
+\[
+ \partial_x^\ell F_0=x\partial_x^{\ell-1}G_{J_\theta}
+              +(\ell-1)\partial_x^{\ell-2}G_{J_\theta},
+\]
+where the second term is defined to be zero for \(\ell=1\).
+Therefore, for \(x>0\),
+\begin{equation}\label{mcmean:H_derivatives}
+ \partial_x^k\partial_\eta^sH_\theta
+ =\sum_{\ell=0}^k\binom k\ell(-1)^{k-\ell}(k-\ell)!
+    x^{-1-k+\ell}\partial_x^\ell\partial_\eta^sF_0.
+\end{equation}
+The \(\ell=0\) factor is the explicitly specified integral; every
+other factor is the displayed profile derivative. For example its
+absolute integral is at most
+\(\int_{x_-}^{x_+}\xi|\partial_\eta^sG_{J_\theta}(\xi,\eta)|\,d\xi\).
+This supplies finite computable profile costs on the exact support.
+The bound \(B\ge1-2h>0\), together with \(x\ge x_->0\), proves
+that each fixed recursively specified coefficient is bounded on
+\([x_-,x_+]\times[-1,1]\). The original moments, spacing, \(h\),
+\(c_{\rm patch}\), and \(\lambda\) remain in those coefficients.
+
+\subsection{Explicit costs in full target derivative arrays}
+
+For \(I=(m,n)\), put \(I_z=(m+1,n)\). Use the original actual-shape
+arrays \(\mathcal B_{e,I}\) from \eqref{mcq:B}, with their two
+retained coupled amplitude components and old-wave cross terms.
+Define the full target majorants
+\begin{equation}\label{mcmean:target_arrays}
+\begin{split}
+ \mathsf P_I&=|\partial_z^m\partial_t^nP_{\rm old}|
+          +\mathcal B_{-1,I}+\tfrac12\mathcal B_{0,I_z},\\
+ \mathsf J_{\theta,I}
+      &=|\partial_z^m\partial_t^n(J_\theta)_{\rm old}|
+          +\tfrac12\mathcal B_{2,I},\\
+ \mathsf J_{z,I}
+      &=|\partial_z^m\partial_t^n(J_z)_{\rm old}|
+          +\mathcal B_{1,I}+\tfrac14\mathcal B_{2,I_z}.
+\end{split}
+\end{equation}
+The triangle inequality in \eqref{mcmean:full_targets} and the
+proved increment bounds \eqref{mcq:defect_bounds} give
+\(|\partial^I\mathcal P|\le\mathsf P_I\),
+\(|\partial^I\mathcal J_\theta|\le\mathsf J_{\theta,I}\), and
+\(|\partial^I\mathcal J_z|\le\mathsf J_{z,I}\).
+Thus the old absolute derivatives appear explicitly in every cost.
+
+For a nonnegative target array \(\mathsf X\), define the following
+pointwise, fully specified finite sum:
+\begin{equation}\label{mcmean:cost_operator}
+\begin{split}
+ \mathfrak C_{\sigma,F;k,m,n}[\mathsf X](r,z,t)
+  =\sum_{i=0}^m\sum_{j=0}^n&\binom mi\binom nj\mathsf X_{(i,j)}(z,t)\\
+ &\cdot q^{\sigma-k/2-(m-i)D-(n-j)}
+       |F_{\sigma;k,m-i,n-j}(x,\eta)|.
+\end{split}
+\end{equation}
+All powers are powers of the actual positive \(q\), even when their
+exponents are negative. Define
+\begin{equation}\label{mcmean:velocity_arrays}
+\begin{split}
+ \mathsf A_{\theta;k,m,n}
+    &=\mathfrak C_{A,V_P;k,m,n}[\mathsf P]
+        +\mathfrak C_{A-1,V_{J_z};k,m,n}[\mathsf J_z],\\
+ \mathsf A_{z;k,m,n}
+    &=\mathfrak C_{A-3/2,G_{J_\theta};k,m,n}[\mathsf J_\theta],\\
+ \mathsf S_{k,m,n}
+    &=\mathfrak C_{A-1,H_\theta;k,m,n}[\mathsf J_\theta],\\
+ \mathsf A_{r;k,m,n}
+    &=\mathfrak C_{A-1,H_\theta;k,m,n}[\mathsf J_\theta^{+z}]
+      +\mathfrak C_{A-1-D,\mathcal Z_{A-1}H_\theta;k,m,n}
+                                                 [\mathsf J_\theta],
+ \qquad (\mathsf J_\theta^{+z})_{(i,j)}=\mathsf J_{\theta,(i+1,j)}.
+\end{split}
+\end{equation}
+Equations \eqref{mcmean:all_derivatives}--\eqref{mcmean:potential_radial}
+and the triangle inequality prove, for every \(k,m,n\),
+\begin{equation}\label{mcmean:velocity_bounds}
+\begin{gathered}
+ |\partial_r^k\partial_z^m\partial_t^n\delta v|
+       \le\mathsf A_{\theta;k,m,n},\qquad
+ |\partial_r^k\partial_z^m\partial_t^n\delta\gamma|
+       \le\mathsf A_{z;k,m,n},\\
+ |\partial_r^k\partial_z^m\partial_t^n\Psi|
+       \le\mathsf S_{k,m,n},\qquad
+ |\partial_r^k\partial_z^m\partial_t^n\delta\beta|
+       \le\mathsf A_{r;k,m,n}.
+\end{gathered}
+\end{equation}
+The alternative upper bound \(\mathsf S_{k,m+1,n}\) for the last
+quantity follows directly from \eqref{mcmean:radial_all_derivatives}.
+For example the zero-order costs read
+\[
+\begin{split}
+ |\delta v|&\le q^A\mathsf P_{0,0}|V_P|
+                    +q^{A-1}\mathsf J_{z,0,0}|V_{J_z}|,\\
+ |\delta\gamma|&\le q^{A-3/2}\mathsf J_{\theta,0,0}|G_{J_\theta}|,
+ \qquad |\Psi|\le q^{A-1}\mathsf J_{\theta,0,0}|H_\theta|,\\
+ |\delta\beta|&\le q^{A-1}\mathsf J_{\theta,1,0}|H_\theta|
+       +q^{A-1-D}\mathsf J_{\theta,0,0}|\mathcal Z_{A-1}H_\theta|.
+\end{split}
+\]
+These display separately the target derivative and moving-scale radial
+cost. Replacing each profile value in \eqref{mcmean:cost_operator}
+by its maximum over its fixed \(x,\eta\) support supplies a pointwise
+bound depending only on \(z,t\) and the stated fixed profile data.
+
+The same formula gives weighted radial costs without a loss hidden in
+a constant. For any real \(e\), replace the final profile absolute
+value in \eqref{mcmean:cost_operator} by
+\[
+ q^{(e+1)/4}
+ \left(\int_{x_-}^{x_+}x^e
+          |F_{\sigma;k,m-i,n-j}(x,\eta)|^2\,dx\right)^{1/2}.
+\]
+Call the resulting sum \(\mathfrak C^{[e]}\). The exact measure
+identity \(r^e\,dr=q^{(e+1)/2}x^e\,dx\), followed by the triangle
+inequality in this weighted \(L^2\) space, proves all four bounds
+\eqref{mcmean:velocity_bounds} with the left sides replaced by their
+\([e]\) norms and the right sides by the corresponding
+\(\mathfrak C^{[e]}\) sums. The support is bounded away from zero,
+so these integrals are finite for every fixed real \(e\).
+
+\subsection{Actual pressure reconstruction and the surviving defects}
+
+Set \(\boldsymbol a=(a_r,a_\theta,a_z)
+=(\delta\beta,\delta v,\delta\gamma)\). Before pressure is
+changed, let \(\delta g_r\) denote the exact change in the source's
+angularly averaged negative radial residual. The angular average here
+retains auxiliary dependence. The actual pressure-defect change is
+\begin{equation}\label{mcmean:pressure_defect_step}
+ \delta P_{\rm step}=\int_0^\infty\overline{\delta g_r}\,dr
+                    =P_{\rm new}-\mathcal P.
+\end{equation}
+This is the defect change caused by the present mean operation;
+it is different from \(\Delta P\) in \eqref{mcmean:full_targets}.
+The source pressure bump is still
+\(\rho=q^{-1/2}\widehat\rho(x)\),
+\(\int\widehat\rho\,dx=1\). The actual pressure increment for this
+operation is
+\begin{equation}\label{mcmean:actual_pressure}
+ \delta p=\mathcal I_c f,\qquad
+ f=\delta g_r-\rho\,\delta P_{\rm step}.
+\end{equation}
+The original physical shifted primitive is
+\[
+\begin{split}
+ \mathcal If(r,Y)&=\int_0^r
+  f(s,Y+(s^{d_r}-r^{d_r})v_r,z,t)\,ds,\\
+ \mathcal Jf(r,Y)&=\int_0^\infty
+  f(s,Y+(s^{d_r}-r^{d_r})v_r,z,t)\,ds,\\
+ \mathcal I_cf&=\mathcal If-\chi_m\mathcal Jf,\\
+ d_r&=2((1+h)\rho_g-h\kappa_s),\quad
+ \rho_g=\frac{\log(4-\sqrt2)}{\log(4+\sqrt2)},\quad
+ \kappa_s=10^{-5},\quad v_r=(1,-(\sqrt2-1)).
+\end{split}
+\]
+Here \(\chi_m\) is the actual inner-zero, outer-one source cutoff;
+the two suppressed arguments of each integrand are exactly \(z,t\).
+The pressure entering the physical force is the physical evaluation of
+this source function, with its original phase evaluation and all its
+derivatives. Thus it includes any nonzero auxiliary modes of the
+source reconstruction.
+
+To verify the reconstruction identity, the source physical radial
+operator \(\mathcal D_r\) cancels the derivative of the term
+\(-r^{d_r}v_r\) in the shift. Endpoint differentiation gives
+\(\mathcal D_r\mathcal If=f\) and
+\(\mathcal D_r\mathcal Jf=0\), and hence
+\begin{equation}\label{mcmean:pressure_remainder}
+ \mathcal D_r\delta p-\delta g_r
+ =-\rho\,\delta P_{\rm step}
+                  -(\partial_r\chi_m)\mathcal Jf.
+\end{equation}
+Haar translation invariance and \eqref{mcmean:pressure_defect_step}
+give \(\overline{\mathcal Jf}=0\), but this does not set
+\(\mathcal Jf\) itself to zero. In the inner collar \(\mathcal If=0\)
+and \(\chi_m=0\); in the outer collar \(\mathcal If=\mathcal Jf\)
+and \(\chi_m=1\). This proves compact support of the actual pressure
+and all derivatives. In particular its gradient is retained in the
+force calculation below.
+
+For completeness the exact remaining source terms can be written
+entirely in the original current mean fields. With
+\(\Delta_0=\mathcal D_r^2+r^{-1}\mathcal D_r+\partial_z^2\),
+direct expansion of the radial conservative source gives
+\begin{equation}\label{mcmean:Rg}
+\begin{split}
+ R_g:={}&\delta g_r-\frac{2V}{r}\delta v\\
+ ={}&-\partial_t\delta\beta
+ -(\mathcal D_r+r^{-1})
+       \bigl(2b\delta\beta+2\beta\delta\beta+(\delta\beta)^2\bigr)\\
+ &-\partial_z\bigl(b\delta\gamma+G\delta\beta+
+       \beta\delta\gamma+\gamma\delta\beta+
+       \delta\beta\delta\gamma\bigr)\\
+ &+r^{-1}\bigl(2v\delta v+(\delta v)^2\bigr)
+       +\nu_{\rm NS}(\Delta_0-r^{-2})\delta\beta.
+\end{split}
+\end{equation}
+Indeed the radial conservative quadratic expression before the change
+is \(-(\mathcal D_r+r^{-1})(b+\beta)^2
+-\partial_z((b+\beta)(G+\gamma))+(V+v)^2/r\), together with
+the wave covariance, time term, and viscosity. Subtract it from its
+value after the mean change. The unchanged wave covariance cancels;
+each remaining quadratic product expands to the terms displayed.
+The term \(2V\delta v/r\) has been written separately in the
+definition of \(R_g\). The ordinary time derivative on the increment
+is exact because it is auxiliary independent.
+
+The five physical rows then give the exact new defects
+\begin{equation}\label{mcmean:nonlinear_defects}
+\begin{split}
+ P_{\rm new}&=\int\overline{R_g}\,dr,\\
+ (J_\theta)_{\rm new}
+   &=\int r^2\overline{\gamma\delta v+v\delta\gamma+
+                                    \delta\gamma\delta v}\,dr,\\
+ (J_z)_{\rm new}
+   &=\int r\overline{2\gamma\delta\gamma+(\delta\gamma)^2}\,dr
+                        -\tfrac12\int r^2\overline{R_g}\,dr.
+\end{split}
+\end{equation}
+For the first line add \(\mathcal P\) to
+\(\int(2V\delta v/r+\overline{R_g})\,dr\) and use the third
+row. For the second, expanding \((G+\gamma+\delta\gamma)
+(V+v+\delta v)-(G+\gamma)(V+v)\) gives base-linear terms
+\(G\delta v+V\delta\gamma\), cancelled by the fourth row, and
+exactly the three remaining terms displayed. For the third, expand
+\((G+\gamma+\delta\gamma)^2-(G+\gamma)^2\) and the radial-source
+moment \(-\tfrac12\int r^2\delta g_r\,dr\); the base-linear
+terms are the fifth row. This proves all three equalities.
+Neither their right sides nor the cutoff term in
+\eqref{mcmean:pressure_remainder} has been removed.
+
+\subsection{Exact full cylindrical physical force increment}
+
+For the actual physical fields, put
+\(\mathcal R(U,p)=\partial_tU+(U\cdot\nabla)U
+-\nu_{\rm NS}\Delta U+\nabla p\). Ordinary derivatives in this
+formula are derivatives after the physical source evaluation; they
+therefore include all phase, frame, cutoff and scale derivatives of
+the actual full \(U\). Expanding the two quadratic products proves
+the vector identity
+\begin{equation}\label{mcmean:vector_force}
+ \delta\mathcal R=\partial_t\boldsymbol a
+ +(U\cdot\nabla)\boldsymbol a+(\boldsymbol a\cdot\nabla)U
+ +(\boldsymbol a\cdot\nabla)\boldsymbol a
+ -\nu_{\rm NS}\Delta\boldsymbol a+\nabla\delta p.
+\end{equation}
+The pressure here is precisely \eqref{mcmean:actual_pressure}.
+
+To derive every cylindrical component, the basis derivatives are
+\(\partial_\theta e_r=e_\theta\),
+\(\partial_\theta e_\theta=-e_r\), and
+\(\partial_\theta e_z=0\). Thus for two arbitrary vector fields
+\(X,Y\) the component vector of \((X\cdot\nabla)Y\) is
+\[
+ X_r\partial_rY+\frac{X_\theta}{r}\partial_\theta Y
+ +X_z\partial_zY+\frac{X_\theta}{r}(-Y_\theta,Y_r,0).
+\]
+Apply this equality to \((U,\boldsymbol a)\),
+\((\boldsymbol a,U)\), and \((\boldsymbol a,\boldsymbol a)\).
+The scalar components of \(\boldsymbol a\) have zero angular
+derivative, whereas those of the actual \(U\) generally do not.
+Writing \(L_0=\partial_r^2+r^{-1}\partial_r+\partial_z^2\), the
+complete result is
+\begin{equation}\label{mcmean:force_r}
+\begin{split}
+ \delta\mathcal R_r={}&\partial_ta_r+U_r\partial_ra_r+U_z\partial_za_r
+       +a_r\partial_rU_r+a_z\partial_zU_r
+       +\frac{a_\theta}{r}\partial_\theta U_r\\
+ &+a_r\partial_ra_r+a_z\partial_za_r
+       -\frac{2U_\theta a_\theta+a_\theta^2}{r}
+       -\nu_{\rm NS}(L_0-r^{-2})a_r+\partial_r\delta p,
+\end{split}
+\end{equation}
+\begin{equation}\label{mcmean:force_theta}
+\begin{split}
+ \delta\mathcal R_\theta={}&\partial_ta_\theta
+       +U_r\partial_ra_\theta+U_z\partial_za_\theta
+       +a_r\partial_rU_\theta+a_z\partial_zU_\theta
+       +\frac{a_\theta}{r}\partial_\theta U_\theta\\
+ &+a_r\partial_ra_\theta+a_z\partial_za_\theta
+       +\frac{U_ra_\theta+a_rU_\theta+a_ra_\theta}{r}
+       -\nu_{\rm NS}(L_0-r^{-2})a_\theta
+       +\frac1r\partial_\theta\delta p,
+\end{split}
+\end{equation}
+\begin{equation}\label{mcmean:force_z}
+\begin{split}
+ \delta\mathcal R_z={}&\partial_ta_z+U_r\partial_ra_z+U_z\partial_za_z
+       +a_r\partial_rU_z+a_z\partial_zU_z
+       +\frac{a_\theta}{r}\partial_\theta U_z\\
+ &+a_r\partial_ra_z+a_z\partial_za_z
+       -\nu_{\rm NS}L_0a_z+\partial_z\delta p.
+\end{split}
+\end{equation}
+The self terms in the radial equation include
+\(-a_\theta^2/r\); those in the angular equation include
+\(a_ra_\theta/r\). The old-wave cross terms occur in the actual
+\(U\) and in its angular derivatives in all three equations.
+The mean pressure is angularly invariant, so its angular derivative
+is zero for this source operation; its radial and axial derivatives
+are the actual reconstructed ones and are generally nonzero.
+
+For the viscosity formula, applying the scalar cylindrical Laplacian
+to the moving basis yields, for a general vector field \(X\),
+\[
+ \Delta X=
+ \left(\Delta_sX_r-r^{-2}X_r-2r^{-2}\partial_\theta X_\theta,
+       \Delta_sX_\theta-r^{-2}X_\theta+2r^{-2}\partial_\theta X_r,
+       \Delta_sX_z\right),
+ \quad\Delta_s=L_0+r^{-2}\partial_\theta^2.
+\]
+This follows by differentiating the two basis identities twice and
+applying the product rule. Substituting the angularly independent
+components of \(\boldsymbol a\) gives exactly
+\(((L_0-r^{-2})a_r,(L_0-r^{-2})a_\theta,L_0a_z)\), proving all
+three displayed viscous terms.
+The radial expression before the pressure term, when angularly
+averaged in the extended source domain and negated, is precisely
+\(\delta g_r\): this follows from the definition of the negative
+radial source residual and linearity of the average. It is also an
+explicit formula for the input to \eqref{mcmean:actual_pressure} in
+terms of the same full velocity and mean increments.
+
+\subsection{Finite all-order force costs with every inverse-radius term}
+
+Here are explicit derivative bounds for all three components, including
+angular derivatives of the actual current velocity. Let
+\(\alpha=(k,\ell,m,n)\in\mathbb N^4\) index the scalar component
+derivative \(\partial^\alpha=\partial_r^k\partial_\theta^\ell
+\partial_z^m\partial_t^n\), and let
+\(e_r,e_\theta,e_z,e_t\) be the four coordinate multi-indices.
+Extend the arrays in \eqref{mcmean:velocity_arrays} by
+\[
+ \mathsf A_{i,\alpha}=
+ \begin{cases}\mathsf A_{i;k,m,n}&\ell=0,\\0&\ell>0,
+ \end{cases}
+ \qquad
+ \mathsf U_{i,\alpha}=|\partial^\alpha U_i|.
+\]
+The pressure array \(\mathsf\Pi\) will be the following explicit
+majorant for the derivatives of the actual specified function
+\eqref{mcmean:actual_pressure}, after physical evaluation.
+
+The original physical radial phase satisfies
+\(Y_{\rm phys}(s,z,t)-Y_{\rm phys}(r,z,t)
+=(s^{d_r}-r^{d_r})v_r\). Substituting this exact equality in the
+two shifted integrals proves the evaluated formula
+\begin{equation}\label{mcmean:evaluated_pressure}
+\begin{split}
+ \delta p(r,z,t)
+ &=\int_0^r f_{\rm phys}(s,z,t)\,ds
+        -\chi_m(r,z,t)\int_0^\infty f_{\rm phys}(s,z,t)\,ds,\\
+ f_{\rm phys}&=(\delta g_r)_{\rm phys}
+                       -\rho\,\delta P_{\rm step}.
+\end{split}
+\end{equation}
+Every original axial and temporal phase dependence is retained in
+\(f_{\rm phys}\). The second integral is independent of \(r\)
+after this evaluation. This equality does not assert that it is zero.
+
+Fix any compact interior physical domain for the finite operation,
+and choose one physical interval \([R_-,R_+]\Subset(0,\infty)\)
+containing the supports of \(\delta g_r\) and \(\rho\) for that
+domain and every auxiliary phase. Put \(L_R=R_+-R_-\), with these
+actual endpoints kept fixed during differentiation. The smooth zero
+extensions imply that all their derivatives have support in the
+same interval. Define \(\mathsf G_{k,m,n}(z,t)\) as the supremum
+over \(r\in[R_-,R_+]\) and the original auxiliary phases of the
+angular average of the following nonnegative expression: the radial
+cost \(\mathsf F_{r;(k,0,m,n)}\) in \eqref{mcmean:force_costs}
+with its last pressure term deleted. This definition involves only
+\(\mathsf A\), the actual current velocity derivatives,
+\(\nu_{\rm NS}\), and the inverse-radius arrays; it has no
+dependence on \(\mathsf\Pi\). When auxiliary phases are retained,
+the velocity derivative arrays mean the corresponding full lifted
+physical derivatives before evaluation. The chain rule for source
+evaluation identifies these with derivatives of the evaluated fields
+at each phase. The force identities and the derivative proof below
+therefore imply
+\[
+ |\partial_r^k\partial_z^m\partial_t^n(\delta g_r)_{\rm phys}|
+       \le\mathsf G_{k,m,n},\qquad
+ |\partial_z^m\partial_t^n\delta P_{\rm step}|
+       \le\mathsf D_{m,n}:=L_R\mathsf G_{0,m,n}.
+\]
+For the first inequality use the negative angularly averaged radial
+force before pressure, as proved above, and the triangle inequality
+under that average. For the second, differentiate
+\eqref{mcmean:pressure_defect_step} under its compact radial
+integral, commute axial and temporal differentiation with Haar
+average, and integrate the same bound over the interval of width
+\(L_R\). The Haar integral of each original constant torus
+direction derivative is zero by periodicity, which justifies that
+commutation for the full physical time derivative as well.
+
+The derivative of the pressure bump is already an explicit original-
+scale coefficient in \eqref{mcq:bump_derivatives}. Define its exact
+support supremum
+\[
+ \mathsf H_{k,m,n}(z,t)
+ =q^{-(1+k)/2-mD-n}
+    \sup_{r\in[R_-,R_+]}
+       |f_{0;k,m,n}(r/\sqrt q,\eta)|,
+\]
+where \(f_{0;k,m,n}\) is the recursion starting with the actual
+\(\widehat\rho\), rather than another normalized bump.
+It follows that \(|\partial_r^k\partial_z^m\partial_t^n\rho|
+\le\mathsf H_{k,m,n}\). Set
+\begin{equation}\label{mcmean:pressure_source_cost}
+ \mathsf E_{k,m,n}
+ =\mathsf G_{k,m,n}
+ +\sum_{i=0}^m\sum_{j=0}^n\binom mi\binom nj
+        \mathsf H_{k,m-i,n-j}\mathsf D_{i,j}.
+\end{equation}
+Since \(\delta P_{\rm step}\) has no radial dependence, all
+\(k\) radial derivatives in its product with \(\rho\) act on
+\(\rho\). The repeated axial and temporal product rule proves
+\(|\partial_r^k\partial_z^m\partial_t^n f_{\rm phys}|
+\le\mathsf E_{k,m,n}\) on the full interval.
+
+Write \(\mathsf X_{k,i,j}(r,z,t)
+=|\partial_r^k\partial_z^i\partial_t^j\chi_m(r,z,t)|\), retaining
+the actual cutoff and its moving-scale derivatives. Define
+\begin{equation}\label{mcmean:explicit_pressure_cost}
+\begin{split}
+ \mathsf\Pi_{(k,0,m,n)}={}&
+ \begin{cases}L_R\mathsf E_{0,m,n}&k=0,\\
+               \mathsf E_{k-1,m,n}&k\ge1
+ \end{cases}\\
+ &+L_R\sum_{i=0}^m\sum_{j=0}^n\binom mi\binom nj
+           \mathsf X_{k,i,j}\mathsf E_{0,m-i,n-j},
+ \qquad \mathsf\Pi_{(k,\ell,m,n)}=0\quad(\ell>0).
+\end{split}
+\end{equation}
+This proves the explicit bound
+\(|\partial^\alpha\delta p|\le\mathsf\Pi_\alpha\).
+In fact differentiating \eqref{mcmean:evaluated_pressure} yields
+the exact first-integral derivative
+\[
+ \partial_r^k\partial_z^m\partial_t^n
+       \int_0^r f_{\rm phys}(s,z,t)\,ds
+ =\begin{cases}
+   \displaystyle\int_0^r\partial_z^m\partial_t^n
+                         f_{\rm phys}(s,z,t)\,ds&k=0,\\
+   \partial_r^{k-1}\partial_z^m\partial_t^n f_{\rm phys}(r,z,t)&k\ge1.
+  \end{cases}
+\]
+The absolute values are bounded by the first term in
+\eqref{mcmean:explicit_pressure_cost}. In the cutoff product all
+radial derivatives act on \(\chi_m\), whereas the axial and temporal
+derivatives distribute with the two displayed binomial factors.
+Every derivative of its radial integral is bounded by
+\(L_R\mathsf E_{0,m-i,n-j}\). This proves its second term, with
+every cutoff derivative and the actual support width retained.
+Angular invariance proves the stated zero entries. This construction
+first computes the pressure-free \(\mathsf G\), then
+\(\mathsf D,\mathsf H,\mathsf E,\mathsf\Pi\), and finally the
+full force array below, so the pressure budget is a finite calculation
+without circularly assuming a pressure bound.
+
+For nonnegative arrays define their exact Leibniz convolution and
+derivative shift by
+\begin{equation}\label{mcmean:convolution}
+ (X\star Y)_\alpha=\sum_{\beta\le\alpha}
+               \binom\alpha\beta X_\beta Y_{\alpha-\beta},
+ \qquad (S_\delta X)_\alpha=X_{\alpha+\delta}.
+\end{equation}
+Products with three factors use either parenthesization; multiplying
+the binomial coefficients gives
+\(\alpha!/(\beta!\gamma!(\alpha-\beta-\gamma)!)\), proving the
+two parenthesizations agree. For the exact inverse-radius arrays put
+\begin{equation}\label{mcmean:radius_array}
+ (\mathsf R_j)_\alpha=
+ \begin{cases}
+ (j)_k r^{-j-k}&\ell=m=n=0,\\0&\text{otherwise},
+ \end{cases}
+ \quad (j)_0=1,\quad(j)_k=j(j+1)\cdots(j+k-1),\quad j=1,2.
+\end{equation}
+Induction gives \(\partial_r^k r^{-j}=(-1)^k(j)_kr^{-j-k}\),
+which proves that \(\mathsf R_j\) is its exact absolute derivative
+array. No radial derivative of an inverse-radius coefficient is
+omitted in the following costs.
+
+For \(i=r,\theta,z\) define the common transport cost
+\begin{equation}\label{mcmean:transport_cost}
+\begin{split}
+ \mathsf T_i={}&S_{e_t}\mathsf A_i
+ +\mathsf U_r\star S_{e_r}\mathsf A_i
+ +\mathsf U_z\star S_{e_z}\mathsf A_i
+ +\mathsf A_r\star S_{e_r}\mathsf U_i
+ +\mathsf A_z\star S_{e_z}\mathsf U_i\\
+ &+\mathsf R_1\star\mathsf A_\theta\star S_{e_\theta}\mathsf U_i
+ +\mathsf A_r\star S_{e_r}\mathsf A_i
+ +\mathsf A_z\star S_{e_z}\mathsf A_i,
+\end{split}
+\end{equation}
+and the exact finite upper-cost arrays
+\begin{equation}\label{mcmean:force_costs}
+\begin{split}
+ \mathsf F_r={}&\mathsf T_r
+    +2\mathsf R_1\star\mathsf U_\theta\star\mathsf A_\theta
+    +\mathsf R_1\star\mathsf A_\theta\star\mathsf A_\theta\\
+ &+\nu_{\rm NS}\bigl(S_{2e_r}\mathsf A_r
+       +\mathsf R_1\star S_{e_r}\mathsf A_r
+       +S_{2e_z}\mathsf A_r+\mathsf R_2\star\mathsf A_r\bigr)
+       +S_{e_r}\mathsf\Pi,\\
+ \mathsf F_\theta={}&\mathsf T_\theta
+    +\mathsf R_1\star\bigl(\mathsf U_r\star\mathsf A_\theta
+                    +\mathsf A_r\star\mathsf U_\theta
+                    +\mathsf A_r\star\mathsf A_\theta\bigr)\\
+ &+\nu_{\rm NS}\bigl(S_{2e_r}\mathsf A_\theta
+       +\mathsf R_1\star S_{e_r}\mathsf A_\theta
+       +S_{2e_z}\mathsf A_\theta+\mathsf R_2\star\mathsf A_\theta\bigr)
+       +\mathsf R_1\star S_{e_\theta}\mathsf\Pi,\\
+ \mathsf F_z={}&\mathsf T_z
+    +\nu_{\rm NS}\bigl(S_{2e_r}\mathsf A_z
+       +\mathsf R_1\star S_{e_r}\mathsf A_z
+       +S_{2e_z}\mathsf A_z\bigr)+S_{e_z}\mathsf\Pi.
+\end{split}
+\end{equation}
+Every addition and scalar multiplication here is entrywise. For every
+finite \(\alpha\), these arrays prove the full physical component
+inequalities
+\begin{equation}\label{mcmean:all_force_bounds}
+ |\partial^\alpha\delta\mathcal R_i|\le\mathsf F_{i,\alpha},
+ \qquad i=r,\theta,z.
+\end{equation}
+Indeed the repeated Leibniz rule gives
+\(|\partial^\alpha(fg)|\le(X\star Y)_\alpha\) whenever the
+respective derivative absolute values are bounded by \(X,Y\).
+The three-factor version is its iterated rule, proved by the explicit
+multinomial coefficient above. Apply these rules term by term to
+\eqref{mcmean:force_r}--\eqref{mcmean:force_z}, using
+\eqref{mcmean:velocity_bounds} for the increment, the actual
+derivatives for \(U,\delta p\), and \eqref{mcmean:radius_array} for
+each inverse radius. The constant viscosity passes through every
+derivative. The three resulting sums are precisely
+\eqref{mcmean:transport_cost}--\eqref{mcmean:force_costs}, proving
+the claim at every order.
+
+These are component derivatives in the original orthonormal basis.
+For an explicit bound on the actual Cartesian vector after angular
+differentiation, the moving basis gives
+\[
+ \left|\partial_r^k\partial_\theta^\ell\partial_z^m\partial_t^n
+                 \delta\mathcal R\right|
+ \le\sum_{j=0}^\ell\binom\ell j
+       \bigl(\mathsf F_{r;(k,j,m,n)}
+             +\mathsf F_{\theta;(k,j,m,n)}\bigr)
+       +\mathsf F_{z;(k,\ell,m,n)}.
+\]
+To prove it, expand each angular derivative by the binomial rule
+between a scalar component and its basis vector. Every derivative of
+\(e_r,e_\theta\) has norm one, whereas the derivatives of \(e_z\)
+of positive order vanish. The triangle inequality gives exactly the
+displayed bound. Thus the component formulas also provide a bound
+for the physical vector, with its angular basis differentiation.
+
+There is also an exact recursion for every Cartesian derivative.
+Let \(O_\theta\) be the orthogonal matrix with columns
+\((e_r,e_\theta,e_z)\), and let
+\(J(f_r,f_\theta,f_z)=(-f_\theta,f_r,0)\). Use
+\(x_{\rm C}=r\cos\theta,y_{\rm C}=r\sin\theta\) for the physical
+Cartesian coordinates, distinct from the original scaled radius
+\(x=r/\sqrt q\). Define the operators on component vectors
+\begin{equation}\label{mcmean:cartesian_recursion}
+\begin{split}
+ \mathcal Xf&=\cos\theta\,\partial_rf
+        -\frac{\sin\theta}{r}(\partial_\theta f+Jf),\\
+ \mathcal Yf&=\sin\theta\,\partial_rf
+        +\frac{\cos\theta}{r}(\partial_\theta f+Jf),
+ \qquad \mathcal Zf=\partial_zf.
+\end{split}
+\end{equation}
+The scalar coordinate rules
+\(\partial_{x_{\rm C}}=\cos\theta\partial_r
+-r^{-1}\sin\theta\partial_\theta\) and
+\(\partial_{y_{\rm C}}=\sin\theta\partial_r
++r^{-1}\cos\theta\partial_\theta\), together with
+\(\partial_\theta O_\theta=O_\theta J\), give exactly
+\(\partial_{x_{\rm C}}(O_\theta f)=O_\theta\mathcal Xf\),
+\(\partial_{y_{\rm C}}(O_\theta f)=O_\theta\mathcal Yf\), and
+\(\partial_z(O_\theta f)=O_\theta\mathcal Zf\).
+Applying these identities repeatedly proves
+\[
+ \partial_{x_{\rm C}}^i\partial_{y_{\rm C}}^j
+ \partial_z^k\partial_t^n(O_\theta f)
+   =O_\theta\mathcal X^i\mathcal Y^j\mathcal Z^k\partial_t^nf.
+\]
+The order written is a fixed composition order and is exact because
+it was obtained from commuting smooth Cartesian derivatives.
+For a fully explicit majorant recursion, if \(\mathsf C_r,
+\mathsf C_\theta,\mathsf C_z\) majorize the component derivative
+arrays of \(f\), set \((\mathsf J C)_r=\mathsf C_\theta\),
+\((\mathsf J C)_\theta=\mathsf C_r\),
+\((\mathsf J C)_z=0\). Let \(\mathsf c_\alpha
+=|\partial^\alpha\cos\theta|\),
+\(\mathsf s_\alpha=|\partial^\alpha\sin\theta|\), whose entries
+vanish unless \(k=m=n=0\) and whose remaining entries are the
+actual derivatives of these elementary functions. Then one
+\(\mathcal X\) application is bounded componentwise by
+\[
+ \mathsf c\star S_{e_r}\mathsf C_i
+ +\mathsf s\star\mathsf R_1\star
+             (S_{e_\theta}\mathsf C_i+(\mathsf J C)_i),
+\]
+and one \(\mathcal Y\) application by the same expression with
+\(\mathsf c,\mathsf s\) interchanged. A \(\mathcal Z\) or time
+application is the array shift \(S_{e_z}\) or \(S_{e_t}\).
+These rules follow from the exact product rule
+\eqref{mcmean:convolution}. Starting with \(\mathsf F\), iterating
+them the indicated finite number of times, and taking the sum of
+the three resulting zero-order component bounds gives a finite bound
+for each stated Cartesian vector derivative. Thus all Cartesian
+inverse-radius and angular-basis costs are also explicitly supplied.
+
+All costs above are finite for the actual finite state on each compact
+interior physical domain. Their dependence on the original scale,
+target derivatives, inverse-radius factors, viscosity, full current
+velocity, and reconstructed pressure is explicit. The exact nonlinear
+defects \eqref{mcmean:nonlinear_defects} remain after this operation.
+No uniform estimate over an increasing family of source stages,
+no singular-time limit, and no infinite correction gain is asserted
+by these finite derivative identities and costs.
+
+\end{document}

@@ -1,0 +1,234 @@
+\section{The released result and its actual signed path}
+\label{nsprop:source}
+The source in this section is the supplied 166-page edition of
+\emph{Finite Time Blowup for Navier--Stokes}, whose SHA-256 is
+\begin{center}\footnotesize
+\texttt{0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f}.
+\end{center}
+Its Theorem 1.1, on page 1, states the following result for the standard
+three-dimensional incompressible Navier--Stokes equation. For every
+fixed physical viscosity $\nu_{\rm NS}>0$, the source constructs
+\[
+ f\in C^\infty_c(\mathbb R^3\times(0,\infty);\mathbb R^3),
+ \qquad u,p\in C^\infty(\mathbb R^3\times[0,1)),
+\]
+with a fixed compact spatial support $K$ for $u$ and $p$, such that
+\begin{equation}
+ \begin{gathered}
+ \partial_tu+(u\cdot\nabla)u-\nu_{\rm NS}\Delta u+\nabla p=f,
+ \quad \nabla\cdot u=0,\quad u(\cdot,0)=0,\\
+ \quad \sup_{t<1}\|u(t)\|_2<\infty,\quad
+ \limsup_{t\uparrow1}\|u(t)\|_\infty=\infty .
+ \end{gathered}
+ \label{nsprop:source_theorem}
+\end{equation}
+It also excludes a global smooth solution with the same force and datum
+and uniformly bounded kinetic energy. Its Corollary 10.6, pages 125--126,
+gives a periodic construction on $\mathbb R^3/\mathbb Z^3$ with smooth
+time-compact force, zero initial datum and no global smooth continuation.
+The source identifies these with alternatives (C) and (D) in the
+referenced Millennium problem statement. The force is nonzero, as the
+source explicitly notes on page 124. These are statements of the cited
+source theorem; the finite algebra checks in this lane do not constitute
+an independent verification of the complete 166-page proof.
+
+The source proves more than an unsigned norm divergence. In its
+viscosity-one construction, equations (10.20)--(10.21), page 124, give
+\begin{equation}
+ \begin{split}
+ A&=\tfrac12+h,\qquad 0<h<1/100,\qquad X_{\rm in}>0,\quad e_0>0,\\
+ x_\tau&=(\sqrt{2X_{\rm in}\tau},0,0),\qquad t_\tau=1-\tau,\\
+ u_\theta(x_\tau,t_\tau)
+   &=\tau^{-A}(e_0+\epsilon(\tau)),\qquad
+      |\epsilon(\tau)|\le C\tau^{2h}\quad(0<\tau<\tau_0).
+ \end{split}\label{nsprop:positive_path}
+\end{equation}
+Here $C,\tau_0$ are finite constants supplied by the source asymptotic;
+$e_0$ and $X_{\rm in}$ retain their source values. If $C>0$, choose
+$0<\tau_1\le\tau_0$ so that $C\tau_1^{2h}\le e_0/2$; if $C=0$,
+take $\tau_1=\tau_0$. It follows directly that
+\[
+ u_\theta(x_\tau,t_\tau)\ge \frac{e_0}{2}\tau^{-A}
+       \longrightarrow+\infty\qquad(0<\tau<\tau_1).
+\]
+The observation point moves to the origin. This assertion does not
+replace that path by the fixed point $x=0$. On the path, $q=\tau>0$,
+and at its cylindrical angle $\theta=0$ one has $e_\theta=e_2$.
+The geometric domain $q>0$, the positive exponent $h$, and the signed
+velocity value are three retained parts of the same explicit formula.
+
+\section{Exact propagation at retained viscosities and orientations}
+\label{nsprop:map}
+For any smooth fields $u,p$ define the physical momentum residual
+\[
+ R_{\nu_b}(u,p)=\partial_tu+(u\cdot\nabla)u-\nu_b\Delta u+\nabla p.
+\]
+Let $\nu_b>0$ and $\nu_t>0$ be the base and target physical viscosities,
+and retain
+\[
+ \rho=\sqrt{\nu_t/\nu_b},\qquad O^TO=OO^T=I,\qquad a\in\mathbb R^3.
+\]
+Define the affine spatial coordinate $y=O^T(x-a)/\rho$ and the fields
+\begin{equation}
+ u^\sharp(x,t)=\rho O u(y,t),\quad
+ p^\sharp(x,t)=\rho^2p(y,t),\quad
+ f^\sharp(x,t)=\rho O f(y,t).
+ \label{nsprop:affine_map}
+\end{equation}
+No time coordinate is changed. These formulas give a bijection on smooth
+field triples, with inverse
+\[
+ u(y,t)=\rho^{-1}O^Tu^\sharp(a+\rho Oy,t),\quad
+ p(y,t)=\rho^{-2}p^\sharp(a+\rho Oy,t),\quad
+ f(y,t)=\rho^{-1}O^Tf^\sharp(a+\rho Oy,t).
+\]
+For the Jacobian convention $(Du)_{ij}=\partial_j u_i$, differentiation
+gives, without dropping an orientation or viscosity,
+\begin{align*}
+ Du^\sharp&=O(Du)(y,t)O^T,&
+ \nabla\cdot u^\sharp&=(\nabla\cdot u)(y,t),\\
+ \partial_tu^\sharp&=\rho O\partial_tu(y,t),&
+ (u^\sharp\cdot\nabla_x)u^\sharp&=\rho O((u\cdot\nabla_y)u)(y,t),\\
+ \Delta_xu^\sharp&=\rho^{-1}O\Delta_yu(y,t),&
+ \nabla_xp^\sharp&=\rho O\nabla_yp(y,t).
+\end{align*}
+The nonlinear identity follows by multiplying $Du^\sharp$ by
+$u^\sharp$ and using $O^TO=I$. The Laplacian identity follows by
+contracting the two spatial derivative indices and using orthogonality.
+Since $\nu_t=\rho^2\nu_b$, these identities prove
+\begin{equation}
+ R_{\nu_t}(u^\sharp,p^\sharp)-f^\sharp
+       =\rho O\bigl(R_{\nu_b}(u,p)-f\bigr)(y,t).
+ \label{nsprop:residual_map}
+\end{equation}
+In particular the map preserves the exact equation as well as each
+nonzero residual with its exact factor.
+
+For vorticity, the cross-product identity
+$(Ov)\times(Ow)=\det(O)O(v\times w)$ gives
+\begin{equation}
+ \omega^\sharp(x,t)=\det(O)O\omega(y,t).
+ \label{nsprop:vorticity}
+\end{equation}
+One proof of this identity takes its scalar product with $Oz$:
+both sides give $\det(O)\det[v,w,z]$ for every $z$. Applying it to
+the contracted first derivatives proves the vorticity formula; the
+factor $\rho$ in velocity cancels the inverse factor in a derivative.
+
+Spatial support becomes $a+\rho OK$. The Jacobian has absolute
+determinant $\rho^3$, for both signs of $\det O$. Hence, for
+$1\le p<\infty$,
+\begin{equation}
+ \|u^\sharp(t)\|_p=\rho^{1+3/p}\|u(t)\|_p,\qquad
+ \|u^\sharp(t)\|_\infty=\rho\|u(t)\|_\infty,\qquad
+ \|u^\sharp(t)\|_2^2=\rho^5\|u(t)\|_2^2 .
+ \label{nsprop:norms}
+\end{equation}
+The Frobenius norm of $O(Du)O^T$ equals that of $Du$. Consequently,
+with integrals over the same time interval,
+\[
+ \nu_t\int\|\nabla u^\sharp\|_2^2\,dt
+     =\rho^5\nu_b\int\|\nabla u\|_2^2\,dt .
+\]
+For arbitrary directions $v_1,\ldots,v_j$, the exact force derivative is
+\[
+ D_x^j\partial_t^m f^\sharp[v_1,\ldots,v_j](x,t)
+ =\rho^{1-j}O
+   (D_y^j\partial_t^m f)[O^Tv_1,\ldots,O^Tv_j](y,t).
+\]
+Thus smoothness, compact space-time support and vanishing of every
+derivative at a terminal point are preserved. The initial datum remains
+zero. A global smooth bounded-energy competitor for the transformed
+datum and force would, under the displayed inverse, be a competitor
+for the base datum and force, because its energy is multiplied by the
+fixed factor $\rho^{-5}$. This proves propagation of the source
+noncontinuation conclusion through the map.
+
+\section{The source positive branch and the exact negative branch}
+\label{nsprop:branches}
+Apply the map to the source field in \eqref{nsprop:positive_path}.
+Here $\nu_b=1$ specifies the source object being used; physical target
+viscosity $\nu_t$ remains arbitrary and $\rho=\sqrt{\nu_t}$ is retained.
+Take $a=0$ and the two particular orthogonal matrices
+\[
+ O_+=I,\qquad O_-=\operatorname{diag}(1,-1,1).
+\]
+Both fix $e_1$, so they give the same spatial observation path
+$x^\sharp_\tau=\rho x_\tau$ and the same time $1-\tau$.
+Since $O_+e_2=e_2$ and $O_-e_2=-e_2$, their exact signed values are
+\begin{equation}
+ u^\sharp_{\pm,\theta}(\rho x_\tau,1-\tau)
+     =\pm\rho\,\tau^{-A}(e_0+\epsilon(\tau))
+        \longrightarrow\begin{cases}+\infty,&+,\\-\infty,&-.\end{cases}
+ \label{nsprop:two_paths}
+\end{equation}
+All support, energy, force and viscosity statements in the preceding
+section apply to both triples. For the negative branch the force is
+$\rho O_-f(O_-x/\rho,t)$. Equality of this force with the positive
+branch force is not needed and is not asserted.
+
+For a general, possibly nonaxisymmetric field the reflection alone has
+the exact cylindrical component formula
+\[
+ (u^r,u^\theta,u^z)^\sharp(r,\theta,z,t)
+    =(u^r,-u^\theta,u^z)(r,-\theta,z,t).
+\]
+Indeed $O_-e_r(-\theta)=e_r(\theta)$,
+$O_-e_\theta(-\theta)=-e_\theta(\theta)$ and $O_-e_z=e_z$.
+This proves the formula even in the presence of all oscillatory
+corrections. For the axisymmetric background the argument $-\theta$
+can be dropped because its components are independent of $\theta$.
+For a velocity covariance tensor the exact Cartesian transformation is
+$T^\sharp(x,t)=\rho^2 O T(y,t)O^T$: expand the outer product of
+$\rho Ow$ with itself and use linearity of the retained average.
+For its angularly averaged symmetric tensor, the reflection basis
+calculation at $\rho=1$ gives
+\[
+ (T_{r\theta},T_{rz})^\sharp=(-T_{r\theta},T_{rz}).
+\]
+Under the additional viscosity dilation its components have factor
+$\rho^2$ at the corresponding points. Thus the two covariance columns
+and their target transform together. Positive coefficients in a source
+representation $T=c_1v_1+c_2v_2$, $c_i>0$, remain the same coefficients
+of the transformed columns; no change of coefficient sign is required
+to realize the negative-swirl branch.
+
+The source's periodic construction also has this reflection: $O_-$
+preserves $\mathbb Z^3$, so $[x]\mapsto[O_-x]$ is well defined on
+$\mathbb R^3/\mathbb Z^3$. The derivative identities apply to periodic
+lifts. This gives both signed orientations of the source Corollary 10.6.
+Arbitrary $O\in O(3)$ need not preserve this particular lattice; only
+the lattice-preserving reflection just specified is used for this
+periodic assertion.
+
+\section{Propagation into the coupled calculation}
+\label{nsprop:programme}
+The preceding sections use the released whole-space and periodic
+constructions at the precise places where those source results apply.
+The original coupled Boussinesq work is due to Levent Alp\"oge and
+Tristan Buckmaster. This lane's retained coupled system, its finite
+controlled stages and its residual maps remain the separate objects
+defined in the preceding parts of this reader.
+
+For every compact candidate $(u_*+w_y,p_*+\pi_y)$ in the covariance
+part, \eqref{nsprop:residual_map} propagates its full computed residual.
+Linearity of the transformation and the exact nonlinear identity give
+in particular
+\[
+ \Delta R_y^\sharp(x,t)=\rho O\Delta R_y(y,t).
+\]
+Thus the finite candidate's cutoff forces, curl errors and covariance
+remainders all have an exact transformed counterpart. A nonzero
+remainder is carried to a nonzero remainder, because the map is
+invertible. The source's residual flatness at the singular point belongs
+to its completed local source construction; its extended smooth force
+need not vanish on the entire time-one slice. The next section calculates the
+surviving moments of the actual finite candidate, so that propagation
+continues through its computed terms rather than assuming that its
+different coupled coefficients inherit the source's infinite estimates.
+
+The earlier suggestion of a negative blowout imposes no condition on
+the programme. Formula \eqref{nsprop:positive_path} is the source-selected
+sign; formula \eqref{nsprop:two_paths} proves the exact relation of its
+two orientations. Both formulas retain a positive physical viscosity
+and the source coordinate domain $q>0$.

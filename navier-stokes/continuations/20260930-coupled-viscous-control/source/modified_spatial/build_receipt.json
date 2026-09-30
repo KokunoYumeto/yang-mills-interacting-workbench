@@ -1,0 +1,49 @@
+{
+  "schema": "modified-spatial-component-v1",
+  "all_checks_passed": true,
+  "symbolic_checks": 33,
+  "pages": 8,
+  "operations": [
+    {
+      "name": "exact_replay",
+      "exit_code": 0
+    },
+    {
+      "name": "latex_pass_1",
+      "exit_code": 0
+    },
+    {
+      "name": "latex_pass_2",
+      "exit_code": 0
+    },
+    {
+      "name": "latex_pass_3",
+      "exit_code": 0
+    },
+    {
+      "name": "pdfinfo",
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "exit_code": 0
+    }
+  ],
+  "cross_reference_source": "../coupled_viscous_control.aux",
+  "cross_reference_labels": [
+    "ave:complete_entry",
+    "ave:nesting",
+    "ave:amplitude_sup",
+    "sr:origin_vorticity"
+  ],
+  "files_sha256": {
+    "modified_spatial_body.tex": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4",
+    "replay_spatial.py": "bd22e8b1fbf63c1ee6026c77877d68e23dcb80348cb194174909462364b70afc",
+    "standalone.tex": "054ebb287d7233e070a39c8707d37ae8f6e451e74bcdf459d0c8f8728c8c1cbd",
+    "standalone.pdf": "02c32038bffca0e8078de9ecbaa0f8416930e1e9c05a515a5073e4e0b96cee9f",
+    "audit.md": "9b779de0e75b4dd1ece9e365f659df8a89b9d3f0cf7654eecb545dbeabad9a57"
+  },
+  "scope": "Full compact realization of the actual finite damped two-stage coefficients, p=0 full scalar/vector residual forces, all derivative costs, finite hold and slab-only compact timeforce extension.",
+  "infinite_viscous_sequence_proved": false,
+  "visual_inspection": "Required separately after this build; see final_qa_receipt.json."
+}

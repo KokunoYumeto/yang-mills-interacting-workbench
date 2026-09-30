@@ -1,0 +1,117 @@
+{
+  "schema": "based-cascade-check-v1",
+  "status": "pass",
+  "checks": {
+    "scalar_residual_terms": {
+      "time": [
+        1,
+        -3
+      ],
+      "parent_transport": [
+        1,
+        -3
+      ],
+      "parent_gradient": [
+        1,
+        -3
+      ],
+      "self_transport": [
+        1,
+        -3
+      ],
+      "diffusion": [
+        1,
+        -3
+      ]
+    },
+    "vector_residual_terms": {
+      "time": [
+        1,
+        -2
+      ],
+      "parent_transport": [
+        1,
+        -2
+      ],
+      "parent_gradient": [
+        1,
+        -2
+      ],
+      "self_transport": [
+        1,
+        -2
+      ],
+      "pressure": [
+        1,
+        -2
+      ],
+      "diffusion": [
+        1,
+        -2
+      ],
+      "buoyancy": [
+        1,
+        -2
+      ]
+    },
+    "all_scalar_weights_exact": true,
+    "all_vector_weights_exact": true,
+    "normalized_parent_weights": {
+      "U": [
+        0,
+        0
+      ],
+      "D": [
+        0,
+        0
+      ],
+      "G": [
+        0,
+        0
+      ]
+    },
+    "normalized_parent_dimensionless": true,
+    "parent_jet_cases": 147,
+    "force_jet_cases": 98,
+    "all_parent_and_force_jet_powers": true,
+    "state_interface_radius_powers": {
+      "velocity": -1,
+      "velocity_gradient": -2,
+      "temperature_gradient": -4
+    },
+    "state_interface_exact": true,
+    "leibniz_convolution_cases": 252,
+    "all_three_index_convolutions": true,
+    "shift_cases": 280,
+    "first_and_second_shifts": true,
+    "required_formula_fragments": 11,
+    "missing_formula_fragments": [],
+    "formula_inventory_complete": true,
+    "single_backslash_line_endings": [],
+    "tex_row_endings_well_formed": true,
+    "missing_qquad_typo_absent": true,
+    "label_count": 25,
+    "labels_unique": true
+  },
+  "exact_formulas": {
+    "clock": "c_q=(delta_*/d) rho_q^2",
+    "normalized_parent": [
+      "U=(c/rho)u",
+      "D=c grad u",
+      "G=c^2 grad theta"
+    ],
+    "parent_radius_powers": [
+      "|gamma|+2b+1",
+      "|gamma|+2b+2",
+      "|gamma|+2b+4"
+    ],
+    "state_interface_radius_powers": [
+      -1,
+      -2,
+      -4
+    ],
+    "target_normalized_residual": "max_{|alpha|<=q} ||partial^alpha actual signed residual||_infty <= 2^(-q^2); unsigned E is sufficient only"
+  },
+  "proof": "infinite_modified/based_cascade_body.tex",
+  "proof_sha256": "d662329cd934330c15447fa94e837202d221ce6cea283e123cab45febfa933d4"
+}

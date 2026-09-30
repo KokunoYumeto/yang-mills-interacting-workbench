@@ -1,0 +1,526 @@
+{
+  "audit": "Independent exact third-steering algebra replay",
+  "created_utc": "2026-09-30T09:15:29.502778+00:00",
+  "python": "3.13.9",
+  "sympy": "1.13.1",
+  "source": "<user-root>\\Documents\\math\\research\\navier_stokes_main\\publication\\workbench\\navier-stokes\\continuations\\20260930-coupled-viscous-control\\source\\third_transition\\third_transition_body.tex",
+  "source_sha256": "e66bd7d0fb007a705538623a68253fb5cdc806fe86c4c6b62a00a752cc6fc258",
+  "script_sha256": "47d7e67d44a9e279b07ebadf0400861972cc49e03a039381c8c0486302a07ee6",
+  "assumptions": [
+    "a>0,b>0,h>0,g>0; D=h^2+a^2; R=(g^2+b^2)/D",
+    "Y=sqrt(R-Z^2)>0; original determinant orientation is retained",
+    "The prescribed Z and existing state are differentiable on the audited interval",
+    "sigma2>0,chi1=|zeta3(t1)|>0,K3>0,sin(s)>0; chi1 is constant",
+    "All older activation weights equal one; physical d,K1,K2,K3 are retained",
+    "M3 uses the actual L(tb), det L(tb)=-b and zeta3(tb)=e(s)"
+  ],
+  "identity_count": 56,
+  "all_passed": true,
+  "scope_limit": "Exact algebra and local inverse only; no interval enclosure, third shooting root, or cascade is asserted.",
+  "identities": [
+    {
+      "name": "hy-ax=b",
+      "residual": "-a*(-a*b + g*h)/(a**2 + h**2) - b + h*(a*g + b*h)/(a**2 + h**2)",
+      "full_numerator": "-a*(-a*b + g*h) - b*(a**2 + h**2) + h*(a*g + b*h)",
+      "full_denominator": "a**2 + h**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "hx+ay=g",
+      "residual": "a*(a*g + b*h)/(a**2 + h**2) - g + h*(-a*b + g*h)/(a**2 + h**2)",
+      "full_numerator": "a*(a*g + b*h) - g*(a**2 + h**2) + h*(-a*b + g*h)",
+      "full_denominator": "a**2 + h**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "x^2+y^2=R",
+      "residual": "-(b**2 + g**2)/(a**2 + h**2) + (-a*b + g*h)**2/(a**2 + h**2)**2 + (a*g + b*h)**2/(a**2 + h**2)**2",
+      "full_numerator": "-(a**2 + h**2)*(b**2 + g**2) + (-a*b + g*h)**2 + (a*g + b*h)**2",
+      "full_denominator": "(a**2 + h**2)**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "norm zeta1 squared = 1",
+      "residual": "(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 + (a**2 + h**2)**2*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 - 1",
+      "full_numerator": "-(b**2 + g**2)**2 + (Y*(-a*b + g*h) + Z*(a*g + b*h))**2 + (-Y*(a*g + b*h) + Z*(-a*b + g*h))**2",
+      "full_denominator": "(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "norm zeta2 squared = D",
+      "residual": "-a**2 - h**2 + (a**2 + h**2)**2*(-Y*b + Z*g)**2/(b**2 + g**2)**2 + (a**2 + h**2)**2*(Y*g + Z*b)**2/(b**2 + g**2)**2",
+      "full_numerator": "-a**2*(b**2 + g**2)**2 - h**2*(b**2 + g**2)**2 + (a**2 + h**2)**2*(-Y*b + Z*g)**2 + (a**2 + h**2)**2*(Y*g + Z*b)**2",
+      "full_denominator": "(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "norm zeta3 squared = R",
+      "residual": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "full_numerator": "Y**2*(a**2 + h**2) + Z**2*(a**2 + h**2) - b**2 - g**2",
+      "full_denominator": "a**2 + h**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "zeta1 dot zeta2 = h",
+      "residual": "-h + (a**2 + h**2)**2*(-Y*b + Z*g)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 + (a**2 + h**2)**2*(Y*g + Z*b)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2)**2",
+      "full_numerator": "-h*(b**2 + g**2)**2 + (a**2 + h**2)*(-Y*b + Z*g)*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + (a**2 + h**2)*(Y*g + Z*b)*(Y*(-a*b + g*h) + Z*(a*g + b*h))",
+      "full_denominator": "(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "zeta1 dot zeta3 = x",
+      "residual": "Y*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2) + Z*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) - (-a*b + g*h)/(a**2 + h**2)",
+      "full_numerator": "Y*(a**2 + h**2)*(Y*(-a*b + g*h) + Z*(a*g + b*h)) + Z*(a**2 + h**2)*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) - (b**2 + g**2)*(-a*b + g*h)",
+      "full_denominator": "(a**2 + h**2)*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "zeta2 dot zeta3 = g",
+      "residual": "Y*(a**2 + h**2)*(Y*g + Z*b)/(b**2 + g**2) + Z*(a**2 + h**2)*(-Y*b + Z*g)/(b**2 + g**2) - g",
+      "full_numerator": "Y*(a**2 + h**2)*(Y*g + Z*b) + Z*(a**2 + h**2)*(-Y*b + Z*g) - g*(b**2 + g**2)",
+      "full_denominator": "b**2 + g**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "det(zeta1,zeta2)=-a",
+      "residual": "a + (-Y**2*a**3 - Y**2*a*h**2 - Z**2*a**3 - Z**2*a*h**2)/(b**2 + g**2)",
+      "full_numerator": "a*(-Y**2*a**2 - Y**2*h**2 - Z**2*a**2 - Z**2*h**2 + b**2 + g**2)",
+      "full_denominator": "b**2 + g**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "det(zeta1,zeta3)=-y",
+      "residual": "(-Y**2*a*g - Y**2*b*h - Z**2*a*g - Z**2*b*h)/(b**2 + g**2) + (a*g + b*h)/(a**2 + h**2)",
+      "full_numerator": "(a**2 + h**2)*(-Y**2*a*g - Y**2*b*h - Z**2*a*g - Z**2*b*h) + (b**2 + g**2)*(a*g + b*h)",
+      "full_denominator": "(a**2 + h**2)*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "det(zeta2,zeta3)=-b",
+      "residual": "b + (-Y**2*a**2*b - Y**2*b*h**2 - Z**2*a**2*b - Z**2*b*h**2)/(b**2 + g**2)",
+      "full_numerator": "b*(-Y**2*a**2 - Y**2*h**2 - Z**2*a**2 - Z**2*h**2 + b**2 + g**2)",
+      "full_denominator": "b**2 + g**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "zeta2=h zeta1-a J zeta1[0]",
+      "residual": "-a*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2) - h*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + (a**2 + h**2)*(-Y*b + Z*g)/(b**2 + g**2)",
+      "full_numerator": "-a*(Y*(-a*b + g*h) + Z*(a*g + b*h)) - h*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + (a**2 + h**2)*(-Y*b + Z*g)",
+      "full_denominator": "b**2 + g**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "zeta2=h zeta1-a J zeta1[1]",
+      "residual": "a*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) - h*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2) + (a**2 + h**2)*(Y*g + Z*b)/(b**2 + g**2)",
+      "full_numerator": "a*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) - h*(Y*(-a*b + g*h) + Z*(a*g + b*h)) + (a**2 + h**2)*(Y*g + Z*b)",
+      "full_denominator": "b**2 + g**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "zeta3=x zeta1-y J zeta1[0]",
+      "residual": "Z - (-a*b + g*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) - (a*g + b*h)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2)",
+      "full_numerator": "Z*(a**2 + h**2)*(b**2 + g**2) - (Y*(-a*b + g*h) + Z*(a*g + b*h))*(a*g + b*h) - (-Y*(a*g + b*h) + Z*(-a*b + g*h))*(-a*b + g*h)",
+      "full_denominator": "(a**2 + h**2)*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "zeta3=x zeta1-y J zeta1[1]",
+      "residual": "Y - (-a*b + g*h)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2) + (a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)",
+      "full_numerator": "Y*(a**2 + h**2)*(b**2 + g**2) - (Y*(-a*b + g*h) + Z*(a*g + b*h))*(-a*b + g*h) + (-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h)",
+      "full_denominator": "(a**2 + h**2)*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "xdot=Omega1*y+bh*Omega2/D",
+      "residual": "Omega1*a*(g/(a**2 + h**2) - 2*h*(-a*b + g*h)/(a**2 + h**2)**2) - Omega1*(a*g + b*h)/(a**2 + h**2) - Omega2*b*h/(a**2 + h**2) + h*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2)",
+      "full_numerator": "Omega1*a*(g*(a**2 + h**2) - 2*h*(-a*b + g*h)) - Omega1*(a**2 + h**2)*(a*g + b*h) - Omega2*b*h*(a**2 + h**2) + h*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))",
+      "full_denominator": "(a**2 + h**2)**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "ydot=ba*Omega2/D",
+      "residual": "Omega1*a*(b/(a**2 + h**2) - 2*h*(a*g + b*h)/(a**2 + h**2)**2) - Omega2*a*b/(a**2 + h**2) + a*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2)",
+      "full_numerator": "a*(Omega1*(b*(a**2 + h**2) - 2*h*(a*g + b*h)) + Omega1*(2*a*g*h + b*(-a**2 + h**2)))",
+      "full_denominator": "(a**2 + h**2)**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "derivative hy-ax = 0",
+      "residual": "Omega1*a*(a*g + b*h)/(a**2 + h**2) - a*(Omega1*a*(g/(a**2 + h**2) - 2*h*(-a*b + g*h)/(a**2 + h**2)**2) + h*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2)) + h*(Omega1*a*(b/(a**2 + h**2) - 2*h*(a*g + b*h)/(a**2 + h**2)**2) + a*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))",
+      "full_numerator": "a*(-Omega1*a*(g*(a**2 + h**2) - 2*h*(-a*b + g*h)) + Omega1*(a**2 + h**2)*(a*g + b*h) - h*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)) + h*(Omega1*(b*(a**2 + h**2) - 2*h*(a*g + b*h)) + Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)))",
+      "full_denominator": "(a**2 + h**2)**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "Rdot=2 Omega1*x*y+2bg*Omega2/D",
+      "residual": "-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Omega1*(-a*b + g*h)*(a*g + b*h)/(a**2 + h**2)**2 - 2*Omega2*b*g/(a**2 + h**2) + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2)",
+      "full_numerator": "-2*Omega1*a*h*(b**2 + g**2) - 2*Omega1*(-a*b + g*h)*(a*g + b*h) - 2*Omega2*b*g*(a**2 + h**2) + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))",
+      "full_denominator": "(a**2 + h**2)**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "first physical phase equation[0]",
+      "residual": "Omega1*a*(2*h*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + (a**2 + h**2)*(-Y*b/(a**2 + h**2) + 2*Y*h*(a*g + b*h)/(a**2 + h**2)**2 + Z*g/(a**2 + h**2) - 2*Z*h*(-a*b + g*h)/(a**2 + h**2)**2)/(b**2 + g**2)) + Zdot*(-a*b + g*h)/(b**2 + g**2) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(-2*g*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 + (a**2 + h**2)*(-Y*a/(a**2 + h**2) + Z*h/(a**2 + h**2))/(b**2 + g**2)) + (a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/(Y*(b**2 + g**2)) - (a*g + b*h)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y*(b**2 + g**2))",
+      "full_numerator": "Omega1*Y*a*(a**2 + h**2)*(b**2 + g**2)*(-Y*b*(a**2 + h**2) + 2*Y*h*(a*g + b*h) + Z*g*(a**2 + h**2) - 2*Z*h*(-a*b + g*h) + 2*h*(-Y*(a*g + b*h) + Z*(-a*b + g*h))) + Y*Zdot*(a**2 + h**2)**2*(b**2 + g**2)*(-a*b + g*h) + Y*(a**2 + h**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(-2*g*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + (b**2 + g**2)*(-Y*a + Z*h)) + (a**2 + h**2)*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2)) - (b**2 + g**2)*(a*g + b*h)*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)))",
+      "full_denominator": "Y*(a**2 + h**2)**2*(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "first physical phase equation[1]",
+      "residual": "Omega1*a*(2*h*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2) + (a**2 + h**2)*(Y*g/(a**2 + h**2) - 2*Y*h*(-a*b + g*h)/(a**2 + h**2)**2 + Z*b/(a**2 + h**2) - 2*Z*h*(a*g + b*h)/(a**2 + h**2)**2)/(b**2 + g**2)) + Zdot*(a*g + b*h)/(b**2 + g**2) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(-2*g*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2)**2 + (a**2 + h**2)*(Y*h/(a**2 + h**2) + Z*a/(a**2 + h**2))/(b**2 + g**2)) - (a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))*(Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/(Y*(b**2 + g**2)) + (-a*b + g*h)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y*(b**2 + g**2))",
+      "full_numerator": "Omega1*Y*a*(a**2 + h**2)*(b**2 + g**2)*(Y*g*(a**2 + h**2) - 2*Y*h*(-a*b + g*h) + Z*b*(a**2 + h**2) - 2*Z*h*(a*g + b*h) + 2*h*(Y*(-a*b + g*h) + Z*(a*g + b*h))) + Y*Zdot*(a**2 + h**2)**2*(b**2 + g**2)*(a*g + b*h) + Y*(a**2 + h**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(-2*g*(Y*(-a*b + g*h) + Z*(a*g + b*h)) + (b**2 + g**2)*(Y*h + Z*a)) - (a**2 + h**2)*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2)) + (b**2 + g**2)*(-a*b + g*h)*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)))",
+      "full_denominator": "Y*(a**2 + h**2)**2*(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "second physical phase equation[0]",
+      "residual": "2*Omega1*a*h*(-Y*b + Z*g)/(b**2 + g**2) - Omega1*(a**2 + h**2)**3*(-Y*b + Z*g)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**3 + Zdot*g*(a**2 + h**2)/(b**2 + g**2) + (a**2 + h**2)*(Y*g + Z*b)*(Omega1*(a**2 + h**2)**2*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 + (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y)/(b**2 + g**2) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(Z*(a**2 + h**2)/(b**2 + g**2) - 2*g*(a**2 + h**2)*(-Y*b + Z*g)/(b**2 + g**2)**2) - b*(a**2 + h**2)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y*(b**2 + g**2))",
+      "full_numerator": "2*Omega1*Y*a*h*(a**2 + h**2)*(b**2 + g**2)**2*(-Y*b + Z*g) - Omega1*Y*(a**2 + h**2)**2*(-Y*b + Z*g)*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + Y*Zdot*g*(a**2 + h**2)**2*(b**2 + g**2)**2 + Y*(a**2 + h**2)*(b**2 + g**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(Z*(b**2 + g**2) - 2*g*(-Y*b + Z*g)) - b*(b**2 + g**2)**2*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))) + (a**2 + h**2)*(Y*g + Z*b)*(Omega1*Y*(a**2 + h**2)*(-Y*(a*g + b*h) + Z*(-a*b + g*h))**2 + (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2)))",
+      "full_denominator": "Y*(a**2 + h**2)*(b**2 + g**2)**3",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "second physical phase equation[1]",
+      "residual": "2*Omega1*a*h*(Y*g + Z*b)/(b**2 + g**2) + Omega1*(a**2 + h**2)**3*(Y*g + Z*b)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**3 + Zdot*b*(a**2 + h**2)/(b**2 + g**2) + (a**2 + h**2)*(-Y*b + Z*g)*(-Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 - (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y)/(b**2 + g**2) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(Y*(a**2 + h**2)/(b**2 + g**2) - 2*g*(a**2 + h**2)*(Y*g + Z*b)/(b**2 + g**2)**2) + g*(a**2 + h**2)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y*(b**2 + g**2))",
+      "full_numerator": "2*Omega1*Y*a*h*(a**2 + h**2)*(b**2 + g**2)**2*(Y*g + Z*b) + Omega1*Y*(a**2 + h**2)**2*(Y*g + Z*b)*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + Y*Zdot*b*(a**2 + h**2)**2*(b**2 + g**2)**2 + Y*(a**2 + h**2)*(b**2 + g**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(Y*(b**2 + g**2) - 2*g*(Y*g + Z*b)) + g*(b**2 + g**2)**2*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))) + (a**2 + h**2)*(-Y*b + Z*g)*(-Omega1*Y*(a**2 + h**2)*(Y*(-a*b + g*h) + Z*(a*g + b*h))**2 - (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2)))",
+      "full_denominator": "Y*(a**2 + h**2)*(b**2 + g**2)**3",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "third physical phase equation[0]",
+      "residual": "Y*(Omega1*(a**2 + h**2)**2*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 + Omega2*(a**2 + h**2)*(-Y*b + Z*g)**2/(b**2 + g**2)**2 + (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y) + Z*(-Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 - Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)/(b**2 + g**2)**2) + Zdot",
+      "full_numerator": "Omega1*Y*(a**2 + h**2)*(-Y*(a*g + b*h) + Z*(-a*b + g*h))**2 + Omega2*Y*(a**2 + h**2)**2*(-Y*b + Z*g)**2 + Z*(a**2 + h**2)*(-Omega1*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) - Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)) + Zdot*(a**2 + h**2)*(b**2 + g**2)**2 + (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2))",
+      "full_denominator": "(a**2 + h**2)*(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "third physical phase equation[1]",
+      "residual": "Y*(Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)/(b**2 + g**2)**2) + Z*(-Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 - Omega2*(a**2 + h**2)*(Y*g + Z*b)**2/(b**2 + g**2)**2 - (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y) + (-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y)",
+      "full_numerator": "Y**2*(a**2 + h**2)**2*(Omega1*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)) + Z*(a**2 + h**2)*(-Omega1*Y*(a**2 + h**2)*(Y*(-a*b + g*h) + Z*(a*g + b*h))**2 - Omega2*Y*(a**2 + h**2)**2*(Y*g + Z*b)**2 - (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2))) + (b**2 + g**2)**2*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)))",
+      "full_denominator": "Y*(a**2 + h**2)**2*(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "horizontal steering reproduces prescribed Zdot",
+      "residual": "Y*(-Omega1*(a**2 + h**2)**2*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 - Omega2*(a**2 + h**2)*(-Y*b + Z*g)**2/(b**2 + g**2)**2 - (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y) + Z*(Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)/(b**2 + g**2)**2) - Zdot",
+      "full_numerator": "-Omega1*Y*(a**2 + h**2)*(-Y*(a*g + b*h) + Z*(-a*b + g*h))**2 - Omega2*Y*(a**2 + h**2)**2*(-Y*b + Z*g)**2 + Z*(a**2 + h**2)*(Omega1*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)) - Zdot*(a**2 + h**2)*(b**2 + g**2)**2 - (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2))",
+      "full_denominator": "(a**2 + h**2)*(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "trace third parent matrix is zero",
+      "residual": "0",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "alpha lift derivative equals physical steering control",
+      "residual": "-Omega1*a**2/(a**2 + h**2) - b*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(b**2 + g**2) + Z*(a**2 + h**2)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y*(b**2 + g**2)) - Zdot/Y - (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y",
+      "full_numerator": "-Omega1*Y*a**2*(b**2 + g**2) - Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) - Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Y*b*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)) + Z*(-Omega1*a*h*(b**2 + g**2) + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)))",
+      "full_denominator": "Y*(a**2 + h**2)*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "N2 derivative exact diffusion loss",
+      "residual": "C*Omega1*a + E1*K1**2*a*d + a*(-C*Omega1 - E1*K1**2*d)",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "N3 derivative exact diffusion loss",
+      "residual": "C*(Omega1*a*(g/(a**2 + h**2) - 2*h*(-a*b + g*h)/(a**2 + h**2)**2) + h*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2)) + b*(-E2*K2**2*d*(a**2 + h**2) + Omega2*(-C*h - a*(E1 + c))/(a**2 + h**2)) + d*(E1*K1**2*(a*g + b*h)/(a**2 + h**2) + E2*K2**2*b*(a**2 + h**2)) + (E1 + c)*(Omega1*a*(b/(a**2 + h**2) - 2*h*(a*g + b*h)/(a**2 + h**2)**2) + a*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2)) + (-C*Omega1 - E1*K1**2*d)*(a*g + b*h)/(a**2 + h**2)",
+      "full_numerator": "C*(Omega1*a*(g*(a**2 + h**2) - 2*h*(-a*b + g*h)) + h*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))) + a*(E1 + c)*(Omega1*(b*(a**2 + h**2) - 2*h*(a*g + b*h)) + Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)) + b*(a**2 + h**2)*(-E2*K2**2*d*(a**2 + h**2)**2 + Omega2*(-C*h - a*(E1 + c))) + d*(a**2 + h**2)*(E1*K1**2*(a*g + b*h) + E2*K2**2*b*(a**2 + h**2)**2) + (a**2 + h**2)*(-C*Omega1 - E1*K1**2*d)*(a*g + b*h)",
+      "full_denominator": "(a**2 + h**2)**2",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "second temperature numerator pairing",
+      "residual": "-C*h - a*(E1 + c) - (a**2 + h**2)*(-Y*b + Z*g)*(-C*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + (-E1 - c)*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2))/(b**2 + g**2) + (a**2 + h**2)*(Y*g + Z*b)*(C*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2) + (-E1 - c)*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2))/(b**2 + g**2)",
+      "full_numerator": "-C*h*(b**2 + g**2)**2 - a*(E1 + c)*(b**2 + g**2)**2 + (a**2 + h**2)*(C*(Y*(-a*b + g*h) + Z*(a*g + b*h)) + (-E1 - c)*(-Y*(a*g + b*h) + Z*(-a*b + g*h)))*(Y*g + Z*b) - (a**2 + h**2)*(-C*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + (-E1 - c)*(Y*(-a*b + g*h) + Z*(a*g + b*h)))*(-Y*b + Z*g)",
+      "full_denominator": "(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "third temperature numerator pairing",
+      "residual": "-C*(-a*b + g*h)/(a**2 + h**2) - E2*b + Y*(C*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2) - E2*(a**2 + h**2)*(-Y*b + Z*g)/(b**2 + g**2) + (-E1 - c)*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)) - Z*(-C*(a**2 + h**2)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) - E2*(a**2 + h**2)*(Y*g + Z*b)/(b**2 + g**2) + (-E1 - c)*(a**2 + h**2)*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))/(b**2 + g**2)) - (E1 + c)*(a*g + b*h)/(a**2 + h**2)",
+      "full_numerator": "-C*(b**2 + g**2)*(-a*b + g*h) - E2*b*(a**2 + h**2)*(b**2 + g**2) + Y*(a**2 + h**2)*(C*(Y*(-a*b + g*h) + Z*(a*g + b*h)) - E2*(a**2 + h**2)*(-Y*b + Z*g) + (-E1 - c)*(-Y*(a*g + b*h) + Z*(-a*b + g*h))) - Z*(a**2 + h**2)*(-C*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) - E2*(a**2 + h**2)*(Y*g + Z*b) + (-E1 - c)*(Y*(-a*b + g*h) + Z*(a*g + b*h))) - (E1 + c)*(b**2 + g**2)*(a*g + b*h)",
+      "full_denominator": "(a**2 + h**2)*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "actual A2=sqrt(D)E2 derivative",
+      "residual": "E2*Omega1*a*h - E2*(a**2 + h**2)*(-K2**2*d*(a**2 + h**2) + Omega1*a*h/(a**2 + h**2)) + Omega2*(C*h + a*(E1 + c)) + (a**2 + h**2)*(-E2*K2**2*d*(a**2 + h**2) + Omega2*(-C*h - a*(E1 + c))/(a**2 + h**2))",
+      "full_numerator": "-E2*K2**2*d*(a**2 + h**2)**2 + E2*Omega1*a*h - E2*(-K2**2*d*(a**2 + h**2)**2 + Omega1*a*h) + Omega2*(-C*h - a*(E1 + c)) + Omega2*(C*h + a*(E1 + c))",
+      "full_denominator": "1",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M2 full matrix evolution[0]",
+      "residual": "-Omega1*cos_beta**2*sin_beta - alphadot*sin_beta - sin_beta*(-Omega1*cos_beta**2 - alphadot)",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": "cos_beta**2 + sin_beta**2 - 1",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M2 full matrix evolution[1]",
+      "residual": "-Omega1*cos_beta*sin_beta*(-sin_beta + cos_beta*(cos_s2 - h)/a) - Omega1*cos_beta - alphadot*cos_beta - (cos_beta + sin_beta*(cos_s2 - h)/a)*(-Omega1*cos_beta**2 - alphadot) - alphadot*sin_beta*(cos_s2 - h)/a",
+      "full_numerator": "-Omega1*a*cos_beta - Omega1*cos_beta*sin_beta*(-a*sin_beta + cos_beta*(cos_s2 - h)) - a*alphadot*cos_beta - alphadot*sin_beta*(cos_s2 - h) - (-Omega1*cos_beta**2 - alphadot)*(a*cos_beta + sin_beta*(cos_s2 - h))",
+      "full_denominator": "a",
+      "relation": "cos_beta**2 + sin_beta**2 - 1",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M2 full matrix evolution[2]",
+      "residual": "Omega1*cos_beta*sin_beta**2 + alphadot*cos_beta - cos_beta*(Omega1*sin_beta**2 + alphadot)",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": "cos_beta**2 + sin_beta**2 - 1",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M2 full matrix evolution[3]",
+      "residual": "Omega1*cos_beta*sin_beta*(cos_beta + sin_beta*(cos_s2 - h)/a) - Omega1*sin_beta - alphadot*sin_beta - (-sin_beta + cos_beta*(cos_s2 - h)/a)*(Omega1*sin_beta**2 + alphadot) + alphadot*cos_beta*(cos_s2 - h)/a",
+      "full_numerator": "-Omega1*a*sin_beta + Omega1*cos_beta*sin_beta*(a*cos_beta + sin_beta*(cos_s2 - h)) - a*alphadot*sin_beta + alphadot*cos_beta*(cos_s2 - h) - (Omega1*sin_beta**2 + alphadot)*(-a*sin_beta + cos_beta*(cos_s2 - h))",
+      "full_denominator": "a",
+      "relation": "cos_beta**2 + sin_beta**2 - 1",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M2 transpose inverse recovers activation vector[0]",
+      "residual": "-a + cos_beta*(a*cos_beta - h*sin_beta) + sin_beta*(a*sin_beta + cos_beta*h)",
+      "full_numerator": "-a + cos_beta*(a*cos_beta - h*sin_beta) + sin_beta*(a*sin_beta + cos_beta*h)",
+      "full_denominator": "1",
+      "relation": "cos_beta**2 + sin_beta**2 - 1",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M2 transpose inverse recovers activation vector[1]",
+      "residual": "-cos_s2 + (cos_beta + sin_beta*(cos_s2 - h)/a)*(a*sin_beta + cos_beta*h) + (-sin_beta + cos_beta*(cos_s2 - h)/a)*(a*cos_beta - h*sin_beta)",
+      "full_numerator": "-a*cos_s2 + (a*cos_beta - h*sin_beta)*(-a*sin_beta + cos_beta*(cos_s2 - h)) + (a*cos_beta + sin_beta*(cos_s2 - h))*(a*sin_beta + cos_beta*h)",
+      "full_denominator": "a",
+      "relation": "cos_beta**2 + sin_beta**2 - 1",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M2 determinant is one",
+      "residual": "cos_beta**2 + sin_beta**2 - 1",
+      "full_numerator": "cos_beta**2 + sin_beta**2 - 1",
+      "full_denominator": "1",
+      "relation": "cos_beta**2 + sin_beta**2 - 1",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 exact inverse relation[0]",
+      "residual": "-zeta2b_1 + (a**2 + h**2)*(-Y*b + Z*g)*(-Y*zeta2b_1/b + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)))/(b**2 + g**2) + (a**2 + h**2)*(Y*g + Z*b)*(Z*zeta2b_1/b - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)))/(b**2 + g**2)",
+      "full_numerator": "-b*zeta2b_1*(b**2 + g**2)**2 + (a**2 + h**2)*(-Y*b + Z*g)*(-Y*zeta2b_1*(b**2 + g**2) + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)) + (a**2 + h**2)*(Y*g + Z*b)*(Z*zeta2b_1*(b**2 + g**2) - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g))",
+      "full_denominator": "b*(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 exact inverse relation[1]",
+      "residual": "-zeta2b_2 + (a**2 + h**2)*(-Y*b + Z*g)*(-Y*zeta2b_2/b + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)))/(b**2 + g**2) + (a**2 + h**2)*(Y*g + Z*b)*(Z*zeta2b_2/b - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)))/(b**2 + g**2)",
+      "full_numerator": "-b*zeta2b_2*(b**2 + g**2)**2 + (a**2 + h**2)*(-Y*b + Z*g)*(-Y*zeta2b_2*(b**2 + g**2) + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)) + (a**2 + h**2)*(Y*g + Z*b)*(Z*zeta2b_2*(b**2 + g**2) - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g))",
+      "full_denominator": "b*(b**2 + g**2)**2",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 exact inverse relation[2]",
+      "residual": "Y*(Z*zeta2b_1/b - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2))) + Z*(-Y*zeta2b_1/b + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2))) - zeta3b_1",
+      "full_numerator": "Y*(Z*zeta2b_1*(b**2 + g**2) - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g)) + Z*(-Y*zeta2b_1*(b**2 + g**2) + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)) - b*zeta3b_1*(b**2 + g**2)",
+      "full_denominator": "b*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 exact inverse relation[3]",
+      "residual": "Y*(Z*zeta2b_2/b - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2))) + Z*(-Y*zeta2b_2/b + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2))) - zeta3b_2",
+      "full_numerator": "Y*(Z*zeta2b_2*(b**2 + g**2) - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g)) + Z*(-Y*zeta2b_2*(b**2 + g**2) + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)) - b*zeta3b_2*(b**2 + g**2)",
+      "full_denominator": "b*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 full matrix evolution[0]",
+      "residual": "2*Omega1*a*h*zeta3b_1*(Y*g + Z*b)/(b*(b**2 + g**2)) + Zdot*zeta3b_1*(a**2 + h**2)/(b**2 + g**2) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(Y*zeta3b_1*(a**2 + h**2)/(b*(b**2 + g**2)) - 2*g*zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)**2)) - (-Y*zeta2b_1/b + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)))*(-Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 - Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)/(b**2 + g**2)**2) - (Z*zeta2b_1/b - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)))*(-Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 - Omega2*(a**2 + h**2)*(Y*g + Z*b)**2/(b**2 + g**2)**2 - (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y) + (g*zeta3b_1*(a**2 + h**2)/(b*(b**2 + g**2)) - zeta2b_1/b)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y)",
+      "full_numerator": "2*Omega1*Y*a*h*zeta3b_1*(a**2 + h**2)**2*(b**2 + g**2)**2*(Y*g + Z*b) + Y*Zdot*b*zeta3b_1*(a**2 + h**2)**3*(b**2 + g**2)**2 + Y*zeta3b_1*(a**2 + h**2)**2*(b**2 + g**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(Y*(b**2 + g**2) - 2*g*(Y*g + Z*b)) - Y*(a**2 + h**2)**2*(-Omega1*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) - Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b))*(-Y*zeta2b_1*(b**2 + g**2) + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)) - (a**2 + h**2)*(Z*zeta2b_1*(b**2 + g**2) - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g))*(-Omega1*Y*(a**2 + h**2)*(Y*(-a*b + g*h) + Z*(a*g + b*h))**2 - Omega2*Y*(a**2 + h**2)**2*(Y*g + Z*b)**2 - (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2))) + (b**2 + g**2)**2*(g*zeta3b_1*(a**2 + h**2) - zeta2b_1*(b**2 + g**2))*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)))",
+      "full_denominator": "Y*b*(a**2 + h**2)**2*(b**2 + g**2)**3",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 full matrix evolution[1]",
+      "residual": "2*Omega1*a*h*zeta3b_2*(Y*g + Z*b)/(b*(b**2 + g**2)) + Zdot*zeta3b_2*(a**2 + h**2)/(b**2 + g**2) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(Y*zeta3b_2*(a**2 + h**2)/(b*(b**2 + g**2)) - 2*g*zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)**2)) - (-Y*zeta2b_2/b + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)))*(-Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 - Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)/(b**2 + g**2)**2) - (Z*zeta2b_2/b - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)))*(-Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 - Omega2*(a**2 + h**2)*(Y*g + Z*b)**2/(b**2 + g**2)**2 - (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y) + (g*zeta3b_2*(a**2 + h**2)/(b*(b**2 + g**2)) - zeta2b_2/b)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y)",
+      "full_numerator": "2*Omega1*Y*a*h*zeta3b_2*(a**2 + h**2)**2*(b**2 + g**2)**2*(Y*g + Z*b) + Y*Zdot*b*zeta3b_2*(a**2 + h**2)**3*(b**2 + g**2)**2 + Y*zeta3b_2*(a**2 + h**2)**2*(b**2 + g**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(Y*(b**2 + g**2) - 2*g*(Y*g + Z*b)) - Y*(a**2 + h**2)**2*(-Omega1*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) - Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b))*(-Y*zeta2b_2*(b**2 + g**2) + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)) - (a**2 + h**2)*(Z*zeta2b_2*(b**2 + g**2) - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g))*(-Omega1*Y*(a**2 + h**2)*(Y*(-a*b + g*h) + Z*(a*g + b*h))**2 - Omega2*Y*(a**2 + h**2)**2*(Y*g + Z*b)**2 - (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2))) + (b**2 + g**2)**2*(g*zeta3b_2*(a**2 + h**2) - zeta2b_2*(b**2 + g**2))*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2)))",
+      "full_denominator": "Y*b*(a**2 + h**2)**2*(b**2 + g**2)**3",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 full matrix evolution[2]",
+      "residual": "-2*Omega1*a*h*zeta3b_1*(-Y*b + Z*g)/(b*(b**2 + g**2)) + Zdot*(-g*zeta3b_1*(a**2 + h**2)/(b*(b**2 + g**2)) + zeta2b_1/b) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(-Z*zeta3b_1*(a**2 + h**2)/(b*(b**2 + g**2)) + 2*g*zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)**2)) - (-Y*zeta2b_1/b + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)))*(Omega1*(a**2 + h**2)**2*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 + Omega2*(a**2 + h**2)*(-Y*b + Z*g)**2/(b**2 + g**2)**2 + (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y) - (Z*zeta2b_1/b - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)))*(Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)/(b**2 + g**2)**2) + zeta3b_1*(a**2 + h**2)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y*(b**2 + g**2))",
+      "full_numerator": "-2*Omega1*Y*a*h*zeta3b_1*(a**2 + h**2)*(b**2 + g**2)**2*(-Y*b + Z*g) + Y*Zdot*(a**2 + h**2)*(b**2 + g**2)**2*(-g*zeta3b_1*(a**2 + h**2) + zeta2b_1*(b**2 + g**2)) + Y*zeta3b_1*(a**2 + h**2)*(b**2 + g**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(-Z*(b**2 + g**2) + 2*g*(-Y*b + Z*g)) - Y*(a**2 + h**2)*(Omega1*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b))*(Z*zeta2b_1*(b**2 + g**2) - zeta3b_1*(a**2 + h**2)*(-Y*b + Z*g)) + b*zeta3b_1*(b**2 + g**2)**2*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))) - (-Y*zeta2b_1*(b**2 + g**2) + zeta3b_1*(a**2 + h**2)*(Y*g + Z*b))*(Omega1*Y*(a**2 + h**2)*(-Y*(a*g + b*h) + Z*(-a*b + g*h))**2 + Omega2*Y*(a**2 + h**2)**2*(-Y*b + Z*g)**2 + (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2)))",
+      "full_denominator": "Y*b*(a**2 + h**2)*(b**2 + g**2)**3",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 full matrix evolution[3]",
+      "residual": "-2*Omega1*a*h*zeta3b_2*(-Y*b + Z*g)/(b*(b**2 + g**2)) + Zdot*(-g*zeta3b_2*(a**2 + h**2)/(b*(b**2 + g**2)) + zeta2b_2/b) + (Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)*(-Z*zeta3b_2*(a**2 + h**2)/(b*(b**2 + g**2)) + 2*g*zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)**2)) - (-Y*zeta2b_2/b + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b)/(b*(b**2 + g**2)))*(Omega1*(a**2 + h**2)**2*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))**2/(b**2 + g**2)**2 + Omega2*(a**2 + h**2)*(-Y*b + Z*g)**2/(b**2 + g**2)**2 + (Omega1*(a*g + b*h)*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2) + Omega2*b*(-Y*b + Z*g)/(b**2 + g**2) - Zdot)/Y) - (Z*zeta2b_2/b - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g)/(b*(b**2 + g**2)))*(Omega1*(a**2 + h**2)**2*(Y*(-a*b + g*h)/(a**2 + h**2) + Z*(a*g + b*h)/(a**2 + h**2))*(-Y*(a*g + b*h)/(a**2 + h**2) + Z*(-a*b + g*h)/(a**2 + h**2))/(b**2 + g**2)**2 + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b)/(b**2 + g**2)**2) + zeta3b_2*(a**2 + h**2)*(-2*Omega1*a*h*(b**2 + g**2)/(a**2 + h**2)**2 - 2*Z*Zdot + 2*g*(Omega1*(2*a*g*h + b*(-a**2 + h**2))/(a**2 + h**2) + Omega2*b)/(a**2 + h**2))/(2*Y*(b**2 + g**2))",
+      "full_numerator": "-2*Omega1*Y*a*h*zeta3b_2*(a**2 + h**2)*(b**2 + g**2)**2*(-Y*b + Z*g) + Y*Zdot*(a**2 + h**2)*(b**2 + g**2)**2*(-g*zeta3b_2*(a**2 + h**2) + zeta2b_2*(b**2 + g**2)) + Y*zeta3b_2*(a**2 + h**2)*(b**2 + g**2)*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))*(-Z*(b**2 + g**2) + 2*g*(-Y*b + Z*g)) - Y*(a**2 + h**2)*(Omega1*(Y*(-a*b + g*h) + Z*(a*g + b*h))*(-Y*(a*g + b*h) + Z*(-a*b + g*h)) + Omega2*(a**2 + h**2)*(-Y*b + Z*g)*(Y*g + Z*b))*(Z*zeta2b_2*(b**2 + g**2) - zeta3b_2*(a**2 + h**2)*(-Y*b + Z*g)) + b*zeta3b_2*(b**2 + g**2)**2*(-Omega1*a*h*(b**2 + g**2) - Z*Zdot*(a**2 + h**2)**2 + g*(Omega1*(2*a*g*h + b*(-a**2 + h**2)) + Omega2*b*(a**2 + h**2))) - (-Y*zeta2b_2*(b**2 + g**2) + zeta3b_2*(a**2 + h**2)*(Y*g + Z*b))*(Omega1*Y*(a**2 + h**2)*(-Y*(a*g + b*h) + Z*(-a*b + g*h))**2 + Omega2*Y*(a**2 + h**2)**2*(-Y*b + Z*g)**2 + (b**2 + g**2)*(Omega1*(-Y*(a*g + b*h) + Z*(-a*b + g*h))*(a*g + b*h) + Omega2*b*(a**2 + h**2)*(-Y*b + Z*g) - Zdot*(a**2 + h**2)*(b**2 + g**2)))",
+      "full_denominator": "Y*b*(a**2 + h**2)*(b**2 + g**2)**3",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "M3 determinant equals det(Lb)/(-b)",
+      "residual": "(-Y**2*a**2*zeta2b_1*zeta3b_2 + Y**2*a**2*zeta2b_2*zeta3b_1 - Y**2*h**2*zeta2b_1*zeta3b_2 + Y**2*h**2*zeta2b_2*zeta3b_1 - Z**2*a**2*zeta2b_1*zeta3b_2 + Z**2*a**2*zeta2b_2*zeta3b_1 - Z**2*h**2*zeta2b_1*zeta3b_2 + Z**2*h**2*zeta2b_2*zeta3b_1)/(b**3 + b*g**2) + (zeta2b_1*zeta3b_2 - zeta2b_2*zeta3b_1)/b",
+      "full_numerator": "-Y**2*a**2*zeta2b_1*zeta3b_2 + Y**2*a**2*zeta2b_2*zeta3b_1 - Y**2*h**2*zeta2b_1*zeta3b_2 + Y**2*h**2*zeta2b_2*zeta3b_1 - Z**2*a**2*zeta2b_1*zeta3b_2 + Z**2*a**2*zeta2b_2*zeta3b_1 - Z**2*h**2*zeta2b_1*zeta3b_2 + Z**2*h**2*zeta2b_2*zeta3b_1 + (b**2 + g**2)*(zeta2b_1*zeta3b_2 - zeta2b_2*zeta3b_1)",
+      "full_denominator": "b*(b**2 + g**2)",
+      "relation": "Y**2 + Z**2 - (b**2 + g**2)/(a**2 + h**2)",
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "physical quotient Riccati equation",
+      "residual": "N3*chi1*v**2*(a**2 + h**2)/(sigma2**2*sin_s*(b**2 + g**2)) - Z/(chi1*sin_s) + (-K3*Theta3*chi1*v*(-K3**2*Theta3*d*(b**2 + g**2)/(a**2 + h**2) + N3*Theta3*chi1*v*(a**2 + h**2)/(sigma2*(b**2 + g**2)))/sigma2 + Theta3*(-K3**3*Theta3*chi1*d*v*(b**2 + g**2)/(sigma2*(a**2 + h**2)) + K3*Theta3*Z))/(K3*Theta3**2*chi1*sin_s)",
+      "full_numerator": "N3*chi1**2*v**2*(a**2 + h**2)**2 - Z*sigma2**2*(a**2 + h**2)*(b**2 + g**2) - chi1*v*(-K3**2*d*sigma2*(b**2 + g**2)**2 + N3*chi1*v*(a**2 + h**2)**2) + sigma2*(b**2 + g**2)*(-K3**2*chi1*d*v*(b**2 + g**2) + Z*sigma2*(a**2 + h**2))",
+      "full_denominator": "chi1*sigma2**2*sin_s*(a**2 + h**2)*(b**2 + g**2)",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "physical amplitude logarithmic derivative",
+      "residual": "K3**2*d*(b**2 + g**2)/(sigma2*sin_s*(a**2 + h**2)) - N3*chi1*v*(a**2 + h**2)/(sigma2**2*sin_s*(b**2 + g**2)) + (-K3**2*Theta3*d*(b**2 + g**2)/(a**2 + h**2) + N3*Theta3*chi1*v*(a**2 + h**2)/(sigma2*(b**2 + g**2)))/(Theta3*sigma2*sin_s)",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "Riccati-to-physical temperature reconstruction",
+      "residual": "-K3**2*P3*d*(b**2 + g**2)/(a**2 + h**2) + N3*P3*chi1*v*(a**2 + h**2)/(sigma2*(b**2 + g**2)) - P3*sigma2*sin_s*(-K3**2*d*(b**2 + g**2)/(sigma2*sin_s*(a**2 + h**2)) + N3*chi1*v*(a**2 + h**2)/(sigma2**2*sin_s*(b**2 + g**2)))",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "Riccati-to-physical vorticity reconstruction",
+      "residual": "-K3**3*P3*chi1*d*v*(b**2 + g**2)/(sigma2*(a**2 + h**2)) + K3*P3*Z - K3*chi1*sin_s*(P3*v*(-K3**2*d*(b**2 + g**2)/(sigma2*sin_s*(a**2 + h**2)) + N3*chi1*v*(a**2 + h**2)/(sigma2**2*sin_s*(b**2 + g**2))) + P3*(-N3*chi1*v**2*(a**2 + h**2)/(sigma2**2*sin_s*(b**2 + g**2)) + Z/(chi1*sin_s)))",
+      "full_numerator": "K3*P3*(-K3**2*chi1*d*sigma2*v*(b**2 + g**2)**2 + Z*sigma2**2*(a**2 + h**2)*(b**2 + g**2) - chi1*v*(-K3**2*d*sigma2*(b**2 + g**2)**2 + N3*chi1*v*(a**2 + h**2)**2) - (a**2 + h**2)*(-N3*chi1**2*v**2*(a**2 + h**2) + Z*sigma2**2*(b**2 + g**2)))",
+      "full_denominator": "sigma2**2*(a**2 + h**2)*(b**2 + g**2)",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "source pulse full time derivative",
+      "residual": "0",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    },
+    {
+      "name": "source pulse scaled Riccati forcing",
+      "residual": "L*m*eta2(L*(tau - 1)) - Z1*(1 - eta(tau))/(chi1*sin_s) + (-L*chi1*m*sin_s*eta2(L*(tau - 1)) + Z1*(1 - eta(tau)))/(chi1*sin_s)",
+      "full_numerator": "0",
+      "full_denominator": "1",
+      "relation": null,
+      "remainder": "0",
+      "passed": true
+    }
+  ]
+}

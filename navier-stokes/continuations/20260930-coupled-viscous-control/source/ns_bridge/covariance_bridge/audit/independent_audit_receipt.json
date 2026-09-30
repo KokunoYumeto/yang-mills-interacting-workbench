@@ -1,0 +1,55 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "signed covariance differential right inverse",
+      "passed": true
+    },
+    {
+      "name": "full principal quadratic covariance remainder",
+      "passed": true
+    },
+    {
+      "name": "correction sign reverses cross, preserves square",
+      "passed": true
+    },
+    {
+      "name": "old-wave and curl terms in exact covariance change",
+      "passed": true
+    },
+    {
+      "name": "physical radial stress derivative scaling",
+      "passed": true
+    },
+    {
+      "name": "weighted residual moment scale",
+      "passed": true
+    },
+    {
+      "name": "normalized bump times moment scaling",
+      "passed": true
+    },
+    {
+      "name": "q-dependent bump weighted normalization exponent",
+      "passed": true
+    },
+    {
+      "name": "leading stress physical Q exponent cancels",
+      "passed": true
+    },
+    {
+      "name": "three-row Vandermonde determinant exact",
+      "passed": true
+    },
+    {
+      "name": "two-row Vandermonde determinant exact",
+      "passed": true
+    },
+    {
+      "name": "omitted axial derivative diffusion discrepancy",
+      "passed": true
+    }
+  ],
+  "scope": "independent finite covariance, full curl remainder, physical/chart scaling and general determinant identities; no endpoint or source convergence verification",
+  "defects_are_in_original_draft": true
+}

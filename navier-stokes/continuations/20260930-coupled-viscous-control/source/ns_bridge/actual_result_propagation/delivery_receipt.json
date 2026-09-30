@@ -1,0 +1,34 @@
+{
+  "schema": "actual-result-delivery-v1",
+  "sent_to_parent": true,
+  "sent_to_dissemination_owner": true,
+  "parent_integration_confirmed": false,
+  "pdf_display": "queued",
+  "messages": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"threadId\":\"01a080e3-5d12-7e72-8131-8d1cf92b9737\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"threadId\":\"01a0814d-b058-7b43-a0ec-6e323caf86ea\"}"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ],
+  "prompt": "Completed actual-result propagation and actual radial-moment calculation, following latest user steering: “So you have the Navier-Stokes counterexample, right? Exactly signed up. So, like, I may have been completely fucking wrong about the negativity thing. They just posted the Navier-Stokes counterexample, and maybe my intuition had some merit, but it wasn't literally true. However, since we have that, we can now use that to propagate the actual result where it exists.”\n\nCurrent cumulative bridge <workspace>/output/navier_stokes_research_2026-09-08/lanes/coupled_viscous_control/ns_bridge/actual_result_propagation/current_bridge_reader.pdf: 24 pages, SHA256 0e6480272410fbd1017651077d2fc134c15c3eab5e797a18df6c26b2b1545f3d.\nUnabridged complete_body.tex: SHA256 7cae02078a326ee563259bf36f99b761edbe0f336807f6a0692a64bfbde833da. complete_preamble.tex supplied; 71 unique nsbridge:/nsprop:/nsmom: labels. It INCLUDES the entire earlier bridge, so replace the old bridge body when integrating rather than duplicating it. Existing 102-page coupled reader and previous 15-page bridge unchanged. HANDOFF.md contains full exact scope and next work.\n\nSource Theorem1.1 p1 and proof (10.20)-(10.23) p124 of the166p source explicitly give smooth compact FORCING, zero initial velocity, every fixed positive physical viscosity, bounded energy and unbounded velocity. Its specific path is xτ=(sqrt(2Xin τ),0,0), uθ(xτ,1−τ)=τ^(−A)(e0+O(τ^(2h)))→+∞ with e0>0. Cor10.6 pp125–126 is the periodic analogue. State these as source-attributed results; our 108 finite registered algebra checks do not independently verify the entire source proof. The user's negativity suggestion is a possibility, not a constraint. Propagate the source's actual witness now where it applies; the distinct unfinished coupled construction is not a gate to stating that source result.\n\nNew complete local proof: ρ=sqrt(νtarget/νbase), y=Oᵀ(x−a)/ρ, u#=ρOu(y,t), p#=ρ²p(y,t), f#=ρOf(y,t), with exact inverse and residual Rνtarget(u#,p#)−f#=ρO(Rνbase(u,p)−f). Full vorticity det(O)O, every force derivative, support, energy ρ^5 and dissipation ρ^5 proved. O=diag(1,−1,1) gives the source's negative-swirl witness with its reflected force; same lattice reflection acts on T³.\n\nNew actual candidate calculation, with full curl v=wy and old wave w*=u*−angularmean(u*):\nM2=∂z∫r²⟨w*z vθ+vz w*θ+vz vθ⟩dr;\nM1=∂z∫r⟨2w*z vz+vz²⟩dr.\nActual source auxiliary map, independent-Y divergence-free potentials and nonzero angular carriers prove the time/viscosity/pressure/mean-cross cancellations before these formulas. Radial boundaries vanish exactly. Total z integrals vanish; pointwise moments need not. An explicit compact transverse-curl example proves both can be nonzero. All original Q powers, coefficient curl, amplitude/derivative norm bounds and exact fast-average versus phase-evaluated moment difference are retained. No source terminal/infinite gain is inherited without calculation.\n\nValidation: prior46-check source hashes verified;29new propagation+33new moments replays pass=108 registered cases in cumulative scope. Clean build with zero warnings or overfull/underfull boxes. Root personally inspected all24pages; build_receipt.json b7c7dae7fb4300b8907b9bb68a32d88c5dc253c8dce6dfb50bf5d51f1ba04da1; qa/visual_review.json a9faa67881e1f7d58abf4595d7c94e79909a75b781c634acc5fbdd4c9090e17e. Independent mathematical audits source_scope_audit.md, REVIEW.md, moments/INDEPENDENT_REVIEW.md retained. Full local construction remains active; next substitute the actual third-growth seed/path into these explicit amplitude and moment formulas. No Lean, publication or parent-file edits."
+}

@@ -1,0 +1,143 @@
+{
+  "schema": "actual-radial-moment-replay-v1",
+  "all_passed": true,
+  "status": "passed",
+  "check_count": 33,
+  "checks": [
+    {
+      "name": "Cartesian symmetric tensor divergence component 0",
+      "passed": true
+    },
+    {
+      "name": "Cartesian symmetric tensor divergence component 1",
+      "passed": true
+    },
+    {
+      "name": "Cartesian symmetric tensor divergence component 2",
+      "passed": true
+    },
+    {
+      "name": "azimuthal vector Laplacian retains positive radial angular coupling",
+      "passed": true
+    },
+    {
+      "name": "axial vector Laplacian is scalar cylindrical Laplacian",
+      "passed": true
+    },
+    {
+      "name": "weighted radial divergence exact derivative e=1",
+      "passed": true
+    },
+    {
+      "name": "weighted radial divergence exact derivative e=2",
+      "passed": true
+    },
+    {
+      "name": "lifted radial derivative square includes differentiated chain coefficient",
+      "passed": true
+    },
+    {
+      "name": "source lifted radial and time derivatives commute",
+      "passed": true
+    },
+    {
+      "name": "source lifted radial and axial derivatives commute",
+      "passed": true
+    },
+    {
+      "name": "compact transverse curl example component 0",
+      "passed": true
+    },
+    {
+      "name": "compact transverse curl example component 1",
+      "passed": true
+    },
+    {
+      "name": "compact transverse curl example component 2",
+      "passed": true
+    },
+    {
+      "name": "compact transverse curl example exact incompressibility",
+      "passed": true
+    },
+    {
+      "name": "potential recovered by exact transverse triple product component 0",
+      "passed": true
+    },
+    {
+      "name": "potential recovered by exact transverse triple product component 1",
+      "passed": true
+    },
+    {
+      "name": "potential recovered by exact transverse triple product component 2",
+      "passed": true
+    },
+    {
+      "name": "example angular axial-swirl covariance factor and sign",
+      "passed": true
+    },
+    {
+      "name": "example angular axial quadratic covariance factor",
+      "passed": true
+    },
+    {
+      "name": "example M2 integrand with original r squared weight",
+      "passed": true
+    },
+    {
+      "name": "example M1 integrand with original r weight",
+      "passed": true
+    },
+    {
+      "name": "full viscous example averaged angular residual equals covariance divergence",
+      "passed": true
+    },
+    {
+      "name": "full viscous example averaged axial residual equals covariance divergence",
+      "passed": true
+    },
+    {
+      "name": "moment source chart radial measure exponent e=1",
+      "passed": true
+    },
+    {
+      "name": "axial flux chart derivative leaves epsilon e=1",
+      "passed": true
+    },
+    {
+      "name": "weighted norm chart exponent e=1",
+      "passed": true
+    },
+    {
+      "name": "moment source chart radial measure exponent e=2",
+      "passed": true
+    },
+    {
+      "name": "axial flux chart derivative leaves epsilon e=2",
+      "passed": true
+    },
+    {
+      "name": "weighted norm chart exponent e=2",
+      "passed": true
+    },
+    {
+      "name": "full reflection reverses swirl moment flux",
+      "passed": true
+    },
+    {
+      "name": "full reflection preserves axial moment flux",
+      "passed": true
+    },
+    {
+      "name": "added amplitude negation preserves quadratic part of swirl flux",
+      "passed": true
+    },
+    {
+      "name": "added amplitude negation preserves quadratic part of axial flux",
+      "passed": true
+    }
+  ],
+  "body_sha256": "d650b99e43143ff03b26d84f334f5b0c84de59fe6f1191d417ea4b11c6db7017",
+  "replay_sha256": "c2e77cd0b5fcfc7f0c8e569cd30f3de6bca69dc31347c65ec1a7fe8b8ca96835",
+  "scope": "Finite symbolic moment identities, original chart factors, actual full-curl structure; no endpoint or infinite source estimates asserted."
+}

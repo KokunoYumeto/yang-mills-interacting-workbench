@@ -1,0 +1,343 @@
+{
+  "status": "passed",
+  "arithmetic": "exact symbolic differential algebra; no floating-point checks",
+  "checks_count": 42,
+  "checks": [
+    {
+      "name": "rotation_unit_length",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "rotation_phase_map",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "phase_transport",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "actual_a_from_rotating_parent",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "trace_free_background",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_uncut_divergence",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_uncut_scalar_residual",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_uncut_momentum_residual_including_pressure",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "full_uncut_temperature_laplacian",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_uncut_velocity_laplacian",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "retained_thermal_diffusion_full_PDE",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "retained_momentum_viscosity_full_PDE",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "inherited_background_G_derivative",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "inherited_background_D_derivative",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "inherited_background_scalar_residual",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "inherited_background_core_vorticity",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inherited_background_vorticity_residual",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "endpoint_full_gradient",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "endpoint_gradient_norm_squared",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "actual_second_growth_a2",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "actual_second_growth_gamma_squared",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_original_temperature_equation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_original_vorticity_equation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "Riccati_from_exact_multiplier",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "compressed_pulse_quotient",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "hold_generator_nilpotent",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "exact_hold_propagator_ODE",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "exact_second_control_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_seed_threshold_frequency_power",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "two_wave_full_scalar_feedback_PDE",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "two_wave_full_momentum_feedback_PDE",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "two_wave_divergence",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "two_wave_exact_scalar_interaction",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "linear_core_force_gradient",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_scalar_inverse_vorticity",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_scalar_inverse_temperature",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_independent_variable_operator",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_convergent_series_recurrence",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_second_fundamental_solution",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_nonzero_wronskian",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_initial_value_map",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_initial_derivative_map",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    }
+  ],
+  "proof_scope": "Full comparisons and root existence are proved in first_stage_section.tex; this replay checks algebraic morphisms, inherited feedback, pressure, activation and diffusion residuals.",
+  "excluded_claims": [
+    "infinite viscous cascade",
+    "compact support of the uncut PDE realization",
+    "terminal-time summability of compensation"
+  ],
+  "symbols_preserved": [
+    "A0",
+    "lambda0",
+    "mu=lambda0",
+    "nu_time=sqrt(A0)",
+    "K1=mu*lambda1",
+    "Lambda1 compression",
+    "nu_phys",
+    "kappa_phys",
+    "x1",
+    "x2",
+    "laboratory e2"
+  ],
+  "sha256": {
+    "replay_first_stage.py": "2fd2503ad94d0b1deedc653da2b404ac61bff72eb96f82f2fd02e22d90c10100",
+    "first_stage_section.tex": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e",
+    "evolving_diffusive_parent_section.tex": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453",
+    "alpoge_buckmaster_boussinesq.pdf": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b"
+  }
+}

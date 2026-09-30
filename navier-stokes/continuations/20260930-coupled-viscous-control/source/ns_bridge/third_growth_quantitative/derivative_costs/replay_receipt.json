@@ -1,0 +1,231 @@
+{
+  "generated_at_utc": "2026-09-08T20:48:12.205151+00:00",
+  "check_count": 55,
+  "checks": [
+    {
+      "name": "full numerator differentiation retains both parent losses",
+      "result": "pass"
+    },
+    {
+      "name": "original phase length derivative",
+      "result": "pass"
+    },
+    {
+      "name": "original chi derivative",
+      "result": "pass"
+    },
+    {
+      "name": "a3 logarithmic rate from original numerator and geometry",
+      "result": "pass"
+    },
+    {
+      "name": "b3 rate from original inverse phase length",
+      "result": "pass"
+    },
+    {
+      "name": "lambda3 rate contains d K3 squared",
+      "result": "pass"
+    },
+    {
+      "name": "inverse chi derivative",
+      "result": "pass"
+    },
+    {
+      "name": "inverse R derivative",
+      "result": "pass"
+    },
+    {
+      "name": "signed Theta first derivative",
+      "result": "pass"
+    },
+    {
+      "name": "signed Omega first derivative",
+      "result": "pass"
+    },
+    {
+      "name": "quotient diffusion cancellation in actual common-diffusion pair",
+      "result": "pass"
+    },
+    {
+      "name": "original signed birth derivative",
+      "result": "pass"
+    },
+    {
+      "name": "full second derivative matrix including lambda derivative and square",
+      "result": "pass"
+    },
+    {
+      "name": "retained rational R upper bound is less than two",
+      "result": "pass"
+    },
+    {
+      "name": "Theta lower derivative exceeds gamma over eight sqrt two",
+      "result": "pass"
+    },
+    {
+      "name": "Omega lower derivative exceeds gamma ui over four",
+      "result": "pass"
+    },
+    {
+      "name": "inverse chi invariant has exact multiplicative defect evolution",
+      "result": "pass"
+    },
+    {
+      "name": "inverse R invariant has exact multiplicative defect evolution",
+      "result": "pass"
+    },
+    {
+      "name": "independent numerator equals full parent sum along its exact ODE",
+      "result": "pass"
+    },
+    {
+      "name": "oriented determinant invariant remains constant",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence h, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence W, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence A, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence P, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence q, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence g, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence nn, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence j, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence h, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence W, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence A, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence P, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence q, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence g, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence nn, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence j, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence h, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence W, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence A, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence P, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence q, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence g, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence nn, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "parent ordinary derivative recurrence j, order 3",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 1, component 1",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 1, component 2",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 2, component 1",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 2, component 2",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 3, component 1",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 3, component 2",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 4, component 1",
+      "result": "pass"
+    },
+    {
+      "name": "actual amplitude Lie derivative, order 4, component 2",
+      "result": "pass"
+    },
+    {
+      "name": "constant source-clock derivative factor, order 1",
+      "result": "pass"
+    },
+    {
+      "name": "constant source-clock derivative factor, order 2",
+      "result": "pass"
+    },
+    {
+      "name": "constant source-clock derivative factor, order 3",
+      "result": "pass"
+    }
+  ],
+  "scope": "Exact algebra and finite-order independent derivative replay; analytic all-orders bounds are proved in derivative_costs.tex.",
+  "sources": {
+    "derivative_costs.tex": "8fd36c86545c7a1e35dd81228233dce49ea86ec976eb6641f18a1c4e1a5368a4",
+    "replay_derivative_costs.py": "3c640c2bf4916c8437f20c0cf3e55e985b68e984a5947ea51e1fc05e78dff016"
+  }
+}

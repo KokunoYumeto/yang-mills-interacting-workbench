@@ -1,0 +1,128 @@
+{
+  "schema": "exact-propagation-replay-v1",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "base_polynomial_exactly_divergence_free",
+      "passed": true
+    },
+    {
+      "name": "reflection_orthogonal",
+      "passed": true
+    },
+    {
+      "name": "reflection_full_nonlinear_retained_viscosity_residual",
+      "passed": true
+    },
+    {
+      "name": "reflection_divergence",
+      "passed": true
+    },
+    {
+      "name": "reflection_vorticity_orientation",
+      "passed": true
+    },
+    {
+      "name": "reflection_velocity_inverse",
+      "passed": true
+    },
+    {
+      "name": "reflection_pressure_inverse",
+      "passed": true
+    },
+    {
+      "name": "reflection_absolute_jacobian_squared",
+      "passed": true
+    },
+    {
+      "name": "reflection_third_force_derivative",
+      "passed": true
+    },
+    {
+      "name": "rotation_orthogonal",
+      "passed": true
+    },
+    {
+      "name": "rotation_full_nonlinear_retained_viscosity_residual",
+      "passed": true
+    },
+    {
+      "name": "rotation_divergence",
+      "passed": true
+    },
+    {
+      "name": "rotation_vorticity_orientation",
+      "passed": true
+    },
+    {
+      "name": "rotation_velocity_inverse",
+      "passed": true
+    },
+    {
+      "name": "rotation_pressure_inverse",
+      "passed": true
+    },
+    {
+      "name": "rotation_absolute_jacobian_squared",
+      "passed": true
+    },
+    {
+      "name": "rotation_third_force_derivative",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_orthogonal",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_full_nonlinear_retained_viscosity_residual",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_divergence",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_vorticity_orientation",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_velocity_inverse",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_pressure_inverse",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_absolute_jacobian_squared",
+      "passed": true
+    },
+    {
+      "name": "rotated_reflection_third_force_derivative",
+      "passed": true
+    },
+    {
+      "name": "energy_factor",
+      "passed": true
+    },
+    {
+      "name": "dissipation_factor",
+      "passed": true
+    },
+    {
+      "name": "reflection_fixes_path_direction",
+      "passed": true
+    },
+    {
+      "name": "reflection_reverses_path_observable",
+      "passed": true
+    }
+  ],
+  "check_count": 29,
+  "scope": "Exact polynomial replay supports the written general chain-rule proof. No full-source theorem verification is claimed.",
+  "sources": {
+    "propagation_body.tex": "76ffa97b77d2a28e3cef34b4cc24ef975566def3d6aaabad1e10de58496dc9db",
+    "replay_propagation.py": "da513603e76d07dc7aa6be65cc961bc9c263d33dfc6a69efecfef18032eaa4e5"
+  }
+}

@@ -1,0 +1,597 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newcommand{\R}{\mathbb R}
+\newcommand{\T}{\mathbb T}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\thd}{\kappa_{\rm th}}
+\newcommand{\vis}{\nu_{\rm phys}}
+\newcommand{\Hs}{\mathcal H}
+\newcommand{\av}[1]{\langle #1\rangle}
+\title{Retained diffusion for the actual affine-core periodic profile}
+\author{}
+\date{8 September 2026}
+\begin{document}
+\maketitle
+
+This calculation concerns the precise periodic profile in Alp\"oge--Buckmaster,
+\emph{Blowup for the Boussinesq equations with smooth forcing}, released
+76-page source, Sections 3.1 and 4.1, equations (3.1), (3.2), (4.1)--(4.4).
+It proves exact identities and a profile evolution for a prescribed affine
+background, including the exact force that keeps the original profile.
+It also identifies the change to the affine region when that force is
+omitted. No conclusion about an infinite viscous controlled sequence follows
+from these profile identities alone.
+
+\section{The original profile and all coefficients}
+
+Let $0<s_0<1$ and let $\chi\in C_c^\infty((-\pi,\pi))$ be even and equal to
+one on $[-s_0,s_0]$. The actual source profile is the $2\pi$-periodic extension
+of
+\begin{equation}\label{eq:F}
+ F(s)=\sin s+\chi(s)(s-\sin s),\qquad -\pi<s<\pi.
+\end{equation}
+It is smooth because it equals $\sin s$ near the endpoints of this period;
+it is odd because $\chi$ is even. Hence its period mean is zero. It equals
+$s$ on $[-s_0,s_0]$, in particular $F'(0)=1$. Let $P$ be its unique
+mean-zero periodic primitive. Indeed
+$\widetilde P(s)=\int_0^s F(r)\,\dd r$ is even and periodic, and
+$P=\widetilde P-\av{\widetilde P}$ has the claimed properties. Here
+$\av{h}=(2\pi)^{-1}\int_{-\pi}^{\pi}h(s)\,\dd s$.
+
+Fix a closed finite time interval $I=[t_0,t_1]$, smooth
+$D:I\to\R^{2\times2}$ with $\operatorname{tr}D=0$, smooth
+$G:I\to\R^2$, a frequency $\lambda>0$, and a nonzero initial vector
+$\zeta(t_0)$. Define $J(x_1,x_2)=(-x_2,x_1)$ and
+\begin{equation}\label{eq:phase}
+ \dot\zeta=-D^T\zeta,\qquad s(x,t)=\lambda\zeta(t)\cdot x,
+ \qquad \kappa(t)=|\zeta(t)|^2,\qquad K(t)=\lambda^2\kappa(t).
+\end{equation}
+The notation $\kappa=|\zeta|^2$ is the source's geometric notation.
+The physical temperature diffusivity is $\thd\geq0$, and the physical
+momentum viscosity is $\vis\geq0$; neither is the paper's time-scaling
+parameter named $\nu$. These constants are not set to one. This calculation
+does not rescale $A_0,\lambda_0,\mu$, the physical coordinates, time, or
+laboratory gravity $e_2=(0,1)$.
+
+The nonvanishing of $\zeta$ follows directly from the invertible fundamental
+matrix of $\dot M=DM$, $M(t_0)=\mathrm{Id}$: differentiation gives
+$\zeta=M^{-T}\zeta(t_0)$, and differentiation of the determinant gives
+$\det M=\exp\int_{t_0}^t\operatorname{tr}D=1$.
+Write
+\begin{equation}\label{eq:ab}
+ a(t)=-\frac{J\zeta\cdot G}{\lambda\kappa},\qquad
+ b(t)=\lambda\zeta_1.
+\end{equation}
+In particular the buoyancy coefficient uses the first laboratory component
+$\zeta_1$.
+
+For any smooth scalar $\theta$ and divergence-free velocity $u$, with
+$\omega=\partial_1u_2-\partial_2u_1$, define the full retained-diffusion
+residuals by
+\begin{equation}\label{eq:resdef}
+ \mathcal R_\theta(\theta,u)
+  =\partial_t\theta+u\cdot\nabla\theta-\thd\Delta\theta,
+ \qquad
+ \mathcal R_\omega(\theta,u)
+  =\partial_t\omega+u\cdot\nabla\omega-\partial_1\theta-\vis\Delta\omega.
+\end{equation}
+Thus these residuals are the required scalar force and curl of the required
+momentum force. On the region under consideration the older fields are
+$\theta_{\rm old}=G\cdot x$, $u_{\rm old}=Dx$; they need not have zero
+residual. All statements below subtract their actual residuals.
+
+\section{Exact residual and failure of constant-profile damping}
+
+\begin{proposition}\label{prop:res}
+For arbitrary smooth real amplitudes $\Theta,\Omega$, define the source wave
+\begin{equation}\label{eq:wave}
+ \vartheta=\Theta F(s),\quad
+ \psi=\frac{\Omega}{\lambda^2\kappa}P(s),\quad
+ v=\nabla^\perp\psi=\frac{\Omega}{\lambda\kappa}J\zeta F(s),\quad
+ \varpi=\Delta\psi=\Omega F'(s).
+\end{equation}
+The scalar and curl residual increments are exactly
+\begin{align}
+ \mathcal R_\theta(\theta_{\rm old}+\vartheta,u_{\rm old}+v)
+  -\mathcal R_\theta(\theta_{\rm old},u_{\rm old})
+   &=(\dot\Theta-a\Omega)F-\thd K\Theta F'',\label{eq:rtheta}\\
+ \mathcal R_\omega(\theta_{\rm old}+\vartheta,u_{\rm old}+v)
+  -\mathcal R_\omega(\theta_{\rm old},u_{\rm old})
+   &=(\dot\Omega-b\Theta)F'-\vis K\Omega F'''.\label{eq:romega}
+\end{align}
+Every profile in these formulas is evaluated at $s(x,t)$.
+\end{proposition}
+\begin{proof}
+Equation \eqref{eq:phase} gives
+$(\partial_t+Dx\cdot\nabla)s=
+\lambda(\dot\zeta+D^T\zeta)\cdot x=0$.
+The orthogonality $J\zeta\cdot\zeta=0$ gives both
+$v\cdot\nabla\vartheta=0$ and $v\cdot\nabla\varpi=0$.
+The older vorticity $D_{21}-D_{12}$ is spatially constant, so
+$v\cdot\nabla\omega_{\rm old}=0$.
+Moreover $v\cdot G=-a\Omega F$,
+$\partial_1\vartheta=b\Theta F'$,
+$\Delta\vartheta=K\Theta F''$, and
+$\Delta\varpi=K\Omega F'''$.
+Expanding \eqref{eq:resdef}, canceling the older residual, and retaining all
+these terms proves \eqref{eq:rtheta}--\eqref{eq:romega}.
+The displayed velocity and vorticity in \eqref{eq:wave} follow by
+differentiating $P'=F$ twice; their signs follow from the specified $J$.
+\end{proof}
+
+The profile derivatives, including their transition-region terms, are
+\begin{align}
+ F'&=\cos s+\chi'(s)(s-\sin s)+\chi(s)(1-\cos s),\label{eq:dF}\\
+ F''&=(\chi-1)\sin s+2\chi'(1-\cos s)+\chi''(s-\sin s),\label{eq:ddF}\\
+ F'''&=(\chi-1)\cos s+3\chi'\sin s
+              +3\chi''(1-\cos s)+\chi'''(s-\sin s).\label{eq:dddF}
+\end{align}
+These follow by the product rule on $(-\pi,\pi)$ and extend smoothly
+across the period endpoints.
+
+\begin{proposition}\label{prop:noeig}
+There is no constant $c\in\R$ such that $F''=cF$ on the circle, and no
+constant $c\in\R$ such that $F'''=cF'$ on the circle. Consequently, at
+a time with $\thd>0$ and $\Theta\ne0$, no choice of scalar
+$\dot\Theta-a\Omega$ makes \eqref{eq:rtheta} vanish for every phase.
+At a time with $\vis>0$ and $\Omega\ne0$, no choice of scalar
+$\dot\Omega-b\Theta$ makes \eqref{eq:romega} vanish for every phase.
+\end{proposition}
+\begin{proof}
+On $(-s_0,s_0)$, $F(s)=s$ and $F''=0$. An identity $F''=cF$ therefore
+implies $cs=0$ for every such $s$, so $c=0$. Then $F''=0$ everywhere
+would make $F$ globally affine. Its periodicity would force its slope to be
+zero, contradicting $F'(0)=1$.
+If $F'''=cF'$, evaluation inside that same interval gives $0=c$, since
+$F'=1$ there. Then $F'''=0$ everywhere makes $F$ a quadratic polynomial
+on $\R$. Periodicity forces both its quadratic and linear coefficients
+to vanish, again contradicting $F'(0)=1$.
+Since $K>0$, each asserted residual cancellation with a nonzero amplitude
+would imply precisely one of these excluded constant-coefficient
+identities, by division by $\thd K\Theta$ or $\vis K\Omega$.
+\end{proof}
+
+For example a proposed common damping equation
+$\dot\Theta=a\Omega-d\Theta$, $\dot\Omega=b\Theta-d\Omega$ gives
+$-d\Theta F-\thd K\Theta F''$ and
+$-d\Omega F'-\vis K\Omega F'''$ as its two residuals. On the exact affine
+core they are $-d\Theta s$ and $-d\Omega$.
+This proves failure of that fixed-profile amplitude prescription, not
+failure of a viscous controlled construction.
+
+\section{An exact evolving-profile map for all diffusivities}
+
+We now construct the profile evolution instead of replacing the missing
+profile dynamics by scalar damping. Let $T(s,t),V(s,t)$ be smooth,
+mean-zero periodic functions, and let $Q_s=V$, $\av Q=0$. Set
+\begin{equation}\label{eq:generalprofile}
+ \vartheta=T(s,t),\quad \psi=\frac{Q(s,t)}{\lambda^2\kappa},\quad
+ v=\frac{J\zeta}{\lambda\kappa}V(s,t),\quad \varpi=V_s(s,t).
+\end{equation}
+The time derivative $T_t$ here and below holds phase $s$ fixed.
+
+\begin{proposition}\label{prop:profile}
+The residual increments for \eqref{eq:generalprofile} are
+\begin{equation}\label{eq:profileR}
+ T_t-aV-\thd K T_{ss},\qquad
+ \partial_s\big(V_t-bT-\vis K V_{ss}\big).
+\end{equation}
+Their vanishing is equivalent in the mean-zero class to
+\begin{equation}\label{eq:profilePDE}
+ T_t=aV+\thd K T_{ss},\qquad
+ V_t=bT+\vis K V_{ss}.
+\end{equation}
+For the initial data $T(s,t_0)=\Theta_0F(s)$,
+$V(s,t_0)=\Omega_0F(s)$, this system has a unique smooth periodic solution
+on $I$ given by the following exact Fourier evolution. Write
+\begin{equation}\label{eq:fourier}
+ F(s)=\sum_{n\geq1} f_n\sin(ns),\qquad
+ f_n=\frac1\pi\int_{-\pi}^{\pi}F(s)\sin(ns)\,\dd s.
+\end{equation}
+For each $n\geq1$, let $U_n(t,t_0)$ solve
+\begin{equation}\label{eq:Un}
+ \partial_t U_n=
+ \begin{pmatrix}-\thd K n^2&a\\b&-\vis K n^2\end{pmatrix}U_n,
+ \qquad U_n(t_0,t_0)=\mathrm{Id}.
+\end{equation}
+Then
+\begin{equation}\label{eq:profileSolution}
+ \begin{pmatrix}T(s,t)\\V(s,t)\end{pmatrix}
+ =\sum_{n\geq1}f_n U_n(t,t_0)
+       \begin{pmatrix}\Theta_0\\\Omega_0\end{pmatrix}\sin(ns).
+\end{equation}
+\end{proposition}
+\begin{proof}
+The phase and tangency computations in Proposition~\ref{prop:res} remain
+valid, including $v\cdot\nabla T=v\cdot\nabla V_s=0$.
+Now $v\cdot G=-aV$ and $\partial_1T=bT_s$, which proves
+\eqref{eq:profileR}. The expression inside its second derivative has zero
+period mean. If its phase derivative vanishes, it is constant in $s$,
+and its zero mean forces this constant to be zero. This proves the exact
+equivalence to \eqref{eq:profilePDE}.
+
+For completeness, each matrix solution in \eqref{eq:Un} can be defined by
+the convergent iterated-integral series
+$U_n=\mathrm{Id}+\sum_{j\geq1}\int_{t_0<r_j<\cdots<r_1<t}
+ A_n(r_1)\cdots A_n(r_j)\,\dd r_j\cdots\dd r_1$, where $A_n$ is the
+displayed matrix. For a fixed $n$, its $j$th term is bounded by
+$(|I|\sup_I\|A_n\|)^j/j!$, so termwise differentiation gives the ODE.
+Uniqueness follows by integrating the difference and applying the
+iterated integral estimate, which tends to zero as $j\to\infty$.
+For its column solution $y=(y_1,y_2)$, direct differentiation gives
+\[
+ \tfrac12\partial_t|y|^2
+ =-Kn^2(\thd y_1^2+\vis y_2^2)+(a+b)y_1y_2
+ \leq \tfrac12(|a|+|b|)|y|^2.
+\]
+Multiplication by $\exp(-\int_{t_0}^t(|a|+|b|))$ and differentiation
+therefore proves the bound, uniform in $n$,
+\[
+ |y(t)|\leq e^{\frac12\int_{t_0}^t(|a|+|b|)}|y(t_0)|.
+\]
+Repeated differentiation of \eqref{eq:Un} gives, for each fixed $j$,
+$\sup_I|\partial_t^j y|\leq C_j(1+n)^{2j}|y(t_0)|$, by induction:
+the coefficient derivatives of $A_n$ are bounded by constants times
+$(1+n)^2$, and the differentiated product has finitely many terms.
+
+Integration by parts any prescribed number of times in \eqref{eq:fourier}
+shows $|f_n|\leq C_N n^{-N}$ for every $N$, without endpoint terms by
+periodicity. Thus \eqref{eq:profileSolution} and every mixed derivative
+converge uniformly on $\T\times I$, and termwise differentiation proves
+the equations and the prescribed initial values. The Fourier expansion
+indeed equals $F$: its absolutely convergent series has the same Fourier
+coefficients as $F$, and a continuous function with all Fourier
+coefficients zero is zero. To see this last assertion directly, convolve
+with the Fej\'er kernel
+$\mathfrak F_N(r)=N^{-1}(\sin(Nr/2)/\sin(r/2))^2$.
+It has integral $2\pi$, is nonnegative, and its integral outside every
+fixed neighborhood of $0$ tends to zero because its numerator is at
+most one and the denominator is bounded below there. Uniform continuity
+therefore gives uniform convergence of its convolution to the continuous
+function. When all Fourier coefficients are zero each such convolution
+is zero, proving the assertion. The same Fourier coefficient ODE and
+its uniqueness show uniqueness among smooth solutions of
+\eqref{eq:profilePDE}.
+\end{proof}
+
+\begin{proposition}\label{prop:pressure}
+The map in Proposition~\ref{prop:profile} also realizes the full momentum
+equation. Let $S_s=T$, $\av S=0$, and retain $Q_s=V$, $\av Q=0$.
+For a solution of \eqref{eq:profilePDE}, the exact pressure increment is
+\begin{equation}\label{eq:pressure}
+ p^{\rm wave}(x,t)=
+ -\frac{2\zeta\cdot D J\zeta}{\lambda^2\kappa^2}Q(s,t)
+ +\frac{\zeta_2}{\lambda\kappa}S(s,t).
+\end{equation}
+With this pressure increment, adding $(T,v)$ to any affine older state
+preserves its actual vector momentum residual, including retained
+viscosity $\vis$ and the unchanged laboratory buoyancy $\theta e_2$.
+\end{proposition}
+\begin{proof}
+Put $c=J\zeta/(\lambda\kappa)$, a vector in this proof. The vector
+momentum residual increment before adding pressure is
+\[
+ (\dot c+Dc)V+c(V_t-\vis K V_{ss})-Te_2.
+\]
+Indeed the transported phase has zero material derivative under $Dx$,
+$v\cdot\nabla v=0$, $v\cdot\nabla(Dx)=Dv$, and
+$\Delta v=KcV_{ss}$.
+For every trace-free $2\times2$ matrix,
+$DJ=-JD^T$; multiplying its four entries verifies the identity.
+It gives $\dot c=Dc-c\dot\kappa/\kappa$ and
+$\dot\kappa=-2\zeta\cdot D\zeta$.
+The identity
+$(J\zeta)\cdot D(J\zeta)+\zeta\cdot D\zeta
+=\kappa\operatorname{tr}D=0$ shows that $\dot c+Dc$ is orthogonal to
+$J\zeta$. Its component along $\zeta$ is therefore
+\[
+ \dot c+Dc=\frac{2\zeta\cdot D J\zeta}{\lambda\kappa^2}\zeta.
+\]
+Also $bc-e_2=-\zeta_2\zeta/\kappa$, by the two explicit components of
+$J\zeta=(-\zeta_2,\zeta_1)$. Substituting the second profile equation
+reduces the residual to
+\[
+ \zeta\left[
+ \frac{2\zeta\cdot D J\zeta}{\lambda\kappa^2}V
+ -\frac{\zeta_2}{\kappa}T\right].
+\]
+The spatial gradient of \eqref{eq:pressure} is its negative, because
+$\nabla s=\lambda\zeta$, $Q_s=V$ and $S_s=T$.
+This proves the full momentum statement. Mean-zero periodic primitives
+exist because the profiles have zero mean, by the same integration
+argument used for $P$ above.
+\end{proof}
+
+\begin{proposition}\label{prop:heat}
+If $\thd=\vis=\delta\geq0$, put
+\begin{equation}\label{eq:heattime}
+ \tau(t)=\delta\lambda^2\int_{t_0}^t|\zeta(r)|^2\,\dd r,
+ \qquad
+ F_{\tau}(s)=\Hs_{\tau}F(s)=\sum_{n\geq1}f_ne^{-n^2\tau}\sin(ns).
+\end{equation}
+Let $\dot\Theta=a\Omega$, $\dot\Omega=b\Theta$ with the given initial
+amplitudes. The exact solution in Proposition~\ref{prop:profile} is
+\begin{equation}\label{eq:heatmap}
+ T=\Theta F_\tau,\quad V=\Omega F_\tau,\quad
+ Q=\Omega\Hs_\tau P,
+ \quad \varpi=\Omega\partial_sF_\tau.
+\end{equation}
+In particular this is an exact retained-diffusion map with the same
+prescribed $D,G,\zeta$, all original frequency factors, and laboratory
+gravity. Each nonzero temperature mode has exact gain
+\begin{equation}\label{eq:gain}
+ \frac{T_n(t)}{T_n(t_0)}
+   =\frac{\Theta(t)}{\Theta_0}e^{-n^2\tau(t)}
+ \quad(f_n\Theta_0\ne0).
+\end{equation}
+For vorticity the corresponding ratio is
+$(\Omega(t)/\Omega_0)e^{-n^2\tau(t)}$ when $nf_n\Omega_0\ne0$.
+\end{proposition}
+\begin{proof}
+The matrix in \eqref{eq:Un} is $B(t)-\delta K(t)n^2\mathrm{Id}$,
+where $B=\left(\begin{smallmatrix}0&a\\b&0\end{smallmatrix}\right)$.
+If $U$ solves $\dot U=BU$, differentiation of
+$e^{-n^2\tau(t)}U(t,t_0)$ gives exactly \eqref{eq:Un}, including its
+initial identity. Hence uniqueness proves this factorization and
+\eqref{eq:heatmap}. Since derivatives commute termwise with the Fourier
+series, $(\Hs_\tau P)_s=\Hs_\tau F$ and its mean remains zero.
+This verifies the streamfunction as well as the scalar and vorticity
+profiles. Formula \eqref{eq:gain} is division of the actual mode
+coefficients, retaining its stated nonzero denominator.
+\end{proof}
+
+The exact temperature phase norm is
+\begin{equation}\label{eq:norm}
+ \|T(\cdot,t)\|_{L^2(-\pi,\pi)}^2
+ =\pi\Theta(t)^2\sum_{n\geq1}f_n^2e^{-2n^2\tau(t)}.
+\end{equation}
+This follows by integrating the uniformly convergent squared series and
+using the exact orthogonality identity
+\[
+ \int_{-\pi}^{\pi}\sin(ns)\sin(ms)\,\dd s=\pi\mathbf1_{n=m}.
+\]
+Thus $\|F_\tau\|_2\leq e^{-\tau}\|F\|_2$, and for any index with
+$f_n\ne0$ one has $\|F_\tau\|_2\geq\sqrt\pi|f_n|e^{-n^2\tau}$.
+These are inequalities about phase profiles; an unlocalized affine wave
+need not be integrable over $\R^2$.
+
+\section{Positive heat time and the affine core}
+
+\begin{proposition}\label{prop:analytic}
+For every $\tau>0$, $\Hs_\tau F$ has no affine restriction to any nonempty
+open interval of $\R$. In particular it cannot retain the source's
+nontrivial exact linear phase interval. Also $F$ has infinitely many
+nonzero Fourier modes.
+\end{proposition}
+\begin{proof}
+For any $R>0$ and any nonnegative integer $m$, the series of $m$th complex
+derivatives of
+$\sum_{n\geq1}f_ne^{-n^2\tau}\sin(nz)$ is bounded on
+$|\operatorname{Im}z|\leq R$ by
+$\sum_{n\geq1}|f_n|n^me^{-n^2\tau+nR}<\infty$.
+For instance boundedness of $f_n$ and completion of the square make the
+tail bounded by a polynomial times $e^{-\tau n^2/2}$.
+The sum therefore defines an entire function $h(z)$ and has its
+termwise derivatives. If $h(s)=cs+d$ on a nonempty real open interval,
+the entire function $h(z)-cz-d$ vanishes identically. The identity
+principle used here follows from Taylor expansion: a nonzero holomorphic
+function has a first nonzero Taylor coefficient at each zero where its
+Taylor series is not identically zero, hence that zero is isolated;
+an accumulating set of zeros forces the Taylor series to vanish locally,
+and this local vanishing propagates through the connected domain.
+Periodicity now gives $2\pi c=h(z+2\pi)-h(z)=0$. Oddness gives $d=0$.
+Thus every Fourier coefficient $f_ne^{-n^2\tau}$ would vanish, implying
+$f_n=0$ for all $n$. The Fourier uniqueness argument in
+Proposition~\ref{prop:profile} would imply $F=0$, contradicting $F'(0)=1$.
+If $F$ had only finitely many nonzero modes, the same entire-function
+argument, applied to its finite trigonometric sum at heat time zero,
+would contradict its interval $F(s)=s$.
+\end{proof}
+
+There is nevertheless an exact estimate of the defect deep inside the
+original interval. Define, for $\tau>0$ and $d>0$,
+\begin{equation}\label{eq:tail}
+ \mathcal E(d,\tau)=\frac{2}{\sqrt\pi}
+          \int_{d/(2\sqrt\tau)}^\infty e^{-r^2}\,\dd r
+ \leq\frac{2\sqrt\tau}{d\sqrt\pi}e^{-d^2/(4\tau)}.
+\end{equation}
+The inequality follows from $r\geq d/(2\sqrt\tau)$ and
+$\int_a^\infty r e^{-r^2}\dd r=e^{-a^2}/2$.
+
+\begin{proposition}\label{prop:tail}
+For $0<r_0<s_0$, $d=s_0-r_0$, and $|s|\leq r_0$,
+\begin{align}
+ |\partial_sF_\tau(s)-1|&\leq\|F'-1\|_\infty\mathcal E(d,\tau),\label{eq:tail1}\\
+ |F_\tau(s)-s|&\leq |s|\|F'-1\|_\infty\mathcal E(d,\tau),\label{eq:tail0}\\
+ |\partial_s^mF_\tau(s)|&\leq\|F^{(m)}\|_\infty\mathcal E(d,\tau)
+   \quad(m\geq2).\label{eq:tailm}
+\end{align}
+\end{proposition}
+\begin{proof}
+The periodized Gaussian kernel of $\Hs_\tau$ is
+$\sum_{k\in\mathbb Z}(4\pi\tau)^{-1/2}
+e^{-(r+2\pi k)^2/(4\tau)}$. To verify this representation, its $n$th
+Fourier multiplier is the Gaussian integral
+$\int_{\R}(4\pi\tau)^{-1/2}e^{-r^2/(4\tau)}e^{-inr}\dd r=e^{-n^2\tau}$.
+One direct verification of this integral differentiates it with respect
+to $n$, integrates the Gaussian derivative by parts, and obtains
+$I'(n)=-2\tau n I(n)$ with $I(0)=1$; the last normalization is the usual
+Gaussian integral, obtained by squaring it and integrating in polar
+coordinates. Fourier uniqueness then proves the representation.
+For any periodic bounded function $h$ vanishing on $[-s_0,s_0]$, its
+periodic lift satisfies $h(s-r)=0$ whenever $|s|\leq r_0$ and $|r|<d$.
+The Gaussian representation on the line therefore gives
+\[
+ |\Hs_\tau h(s)|\leq
+ \|h\|_\infty\int_{|r|\geq d}
+ (4\pi\tau)^{-1/2}e^{-r^2/(4\tau)}\,\dd r
+ =\|h\|_\infty\mathcal E(d,\tau).
+\]
+Apply this to $h=F'-1$ and $h=F^{(m)}$ for $m\geq2$, using commutation
+of derivatives with $\Hs_\tau$ and $\Hs_\tau1=1$.
+Finally $F_\tau(0)=0$ by oddness; integrating the first bound between
+$0$ and $s$ proves the second bound with the same $d$.
+\end{proof}
+
+The source background in equation (3.3) is obtained because each older
+layer is exactly affine on the newer support, by equations (4.3)--(4.6).
+For a heat-evolved older layer with nonzero scalar or velocity amplitude,
+Proposition~\ref{prop:analytic} removes this exact affine premise.
+Its gradient at the origin can still be computed, but its values away
+from the origin are not that gradient times $x$. The tail estimates give
+explicit defects rather than an identification of those two fields.
+Consequently Proposition~\ref{prop:heat} alone supplies no coupled feedback
+law for the heat-modified older background.
+
+\section{Exact preservation by force and the localized diffusion costs}
+
+For the original inviscid amplitude equations $\dot\Theta=a\Omega$,
+$\dot\Omega=b\Theta$, Proposition~\ref{prop:res} shows that the exact
+additional scalar and curl forces are
+\begin{equation}\label{eq:repair}
+ f_{\theta,\mathrm{diff}}=-\thd K\Theta F'',\qquad
+ E_{\mathrm{diff}}=-\vis K\Omega F'''.
+\end{equation}
+They vanish on the entire affine interval $|s|<s_0$. This retains exactly
+the original core, amplitudes, phase and hence its local affine feedback;
+it pays a nonzero diffusion force in the rest of the profile. In the
+unlocalized wave this force is periodic in phase and is not a compactly
+supported force on $\R^2$.
+
+Here is the exact compact counterpart for the leading fields in source
+equation (4.2). Let $M$ solve $\dot M=DM$, $M(t_0)=\mathrm{Id}$, let
+$p=\zeta(t_0)$, and let $\ell>0$. Fix the source's radial
+$f\in C_c^\infty(B_1)$, $f=1$ on $B_{1/2}$, and put
+\begin{align}\label{eq:localized}
+ a_{\rm mat}&=M^{-1}x,\qquad g(a_{\rm mat})=f(a_{\rm mat}/\ell),\notag\\
+ \theta^L&=w\Theta F(s)g(a_{\rm mat}),\qquad
+ \psi^L=\frac{w\Omega}{\lambda^2\kappa}P(s)g(a_{\rm mat}),\quad
+ u^L=\nabla^\perp\psi^L.
+\end{align}
+The activation $w(t)$ remains the original smooth scalar function; no
+time differentiation of it is omitted from the existing inviscid
+residual. The following formulas give exactly the additional diffusion
+terms, with $w$ retained.
+At a fixed time put
+\begin{equation}\label{eq:L}
+ B=M^{-1},\quad H=BB^T,\quad q=B\zeta,\quad
+ \mathscr L=\lambda^2\kappa\partial_s^2+
+            2\lambda q\cdot\nabla_a\partial_s+H:\nabla_a^2.
+\end{equation}
+Although $s=\lambda p\cdot a_{\rm mat}$ upon evaluation, $s,a$ are
+independent variables in this differential operator.
+
+\begin{proposition}\label{prop:localized}
+For every smooth profile $A(s,a)$,
+$\Delta_x[A(\lambda\zeta\cdot x,Bx)]=
+(\mathscr L A)(\lambda\zeta\cdot x,Bx)$.
+Consequently the exact added forces for \eqref{eq:localized} are
+\begin{align}
+ f^L_{\theta,\mathrm{diff}}
+ &=-\thd w\Theta\big[
+ \lambda^2\kappa F''g+2\lambda F' q\cdot\nabla g
+                         +F(H:\nabla^2g)\big],\label{eq:localtheta}\\
+ f^L_{u,\mathrm{diff}}&=-\vis\Delta u^L
+ =-\vis\nabla^\perp\Delta\psi^L,
+ \qquad
+ E^L_{\mathrm{diff}}=-\vis\frac{w\Omega}{\lambda^2\kappa}
+       \mathscr L^2(Pg).\label{eq:localomega}
+\end{align}
+Writing $\mathscr H=H:\nabla_a^2$, the last operator is explicitly
+\begin{align}\label{eq:L2}
+ \mathscr L^2(Pg)={}&
+ \lambda^4\kappa^2 F'''g
+ +4\lambda^3\kappa F''q\cdot\nabla g
+ +2\lambda^2\kappa F'\mathscr H g
+ +4\lambda^2F'(q\cdot\nabla)^2g\notag\\
+ &+4\lambda F(q\cdot\nabla)\mathscr H g
+ +P\mathscr H^2g.
+\end{align}
+All these forces are supported in $M\overline B_\ell$. They vanish in
+the exact affine region $M B_{\ell/2}\cap\{|s|<s_0\}$.
+\end{proposition}
+\begin{proof}
+The chain rule gives
+$\partial_{x_i}A=\lambda\zeta_i A_s+
+\sum_jB_{ji}A_{a_j}$. Applying it a second time and summing in $i$
+gives the three terms in \eqref{eq:L}, since
+$\sum_i B_{ji}\zeta_i=(B\zeta)_j$ and
+$\sum_iB_{ji}B_{ki}=(BB^T)_{jk}$. Applying the same identity twice to
+$Pg$ proves \eqref{eq:localomega}. Expanding the square of the
+commuting constant-in-$(s,a)$ operators in \eqref{eq:L}, and using
+$P'=F$, $P''=F'$, $P'''=F''$, $P''''=F'''$, proves all six terms
+of \eqref{eq:L2}.
+Spatial differentiation does not enlarge the support of a smooth
+compactly supported function, proving the support statement.
+On the plateau $g=1$ all positive derivatives of $g$ vanish.
+On the linear phase interval $F''=F'''=0$. Thus the scalar and curl
+formulas vanish on their intersection. There
+$\psi^L=(w\Omega/(\lambda^2\kappa))(P(0)+s^2/2)$ is quadratic in $x$,
+so $u^L$ is linear and $\Delta u^L=0$, proving the vector-force statement
+as well. Finally $\operatorname{curl}(-\vis\Delta u^L)
+=-\vis\Delta^2\psi^L$, so the specified vector force realizes the
+curl force without any inverse-curl ambiguity.
+\end{proof}
+
+For explicit quantitative costs let
+$C_j=\sup_a\|\nabla^jf(a)\|_{\rm HS}$, with the Euclidean
+Hilbert--Schmidt tensor norm, and $C_0=\|f\|_\infty$.
+Then $\|\nabla^jg\|_\infty=C_j\ell^{-j}$ by the chain rule. Write
+$h=\|H\|_{\rm HS}$ and $q_*=|q|$. Cauchy--Schwarz on the tensor
+contractions in \eqref{eq:localtheta} and \eqref{eq:L2} proves
+\begin{align}
+ \|f^L_{\theta,\mathrm{diff}}\|_\infty
+ \leq{}&\thd|w\Theta|\big[
+ \lambda^2\kappa\|F''\|_\infty C_0
+ +2\lambda q_*\|F'\|_\infty C_1\ell^{-1}
+ +h\|F\|_\infty C_2\ell^{-2}\big],\label{eq:costtheta}\\
+ \|E^L_{\mathrm{diff}}\|_\infty
+ \leq{}&\frac{\vis|w\Omega|}{\lambda^2\kappa}\big[
+ \lambda^4\kappa^2\|F'''\|_\infty C_0
+ +4\lambda^3\kappa q_*\|F''\|_\infty C_1\ell^{-1}\notag\\
+ &\quad+(2\lambda^2\kappa h+4\lambda^2q_*^2)
+       \|F'\|_\infty C_2\ell^{-2}
+ +4\lambda q_*h\|F\|_\infty C_3\ell^{-3}
+ +h^2\|P\|_\infty C_4\ell^{-4}\big].\label{eq:costomega}
+\end{align}
+The same reasoning applies to every compact correction: for a specified
+smooth correction $(\theta^c,\psi^c)$ the extra scalar and vector forces
+are exactly $-\thd\Delta\theta^c$ and
+$-\vis\nabla^\perp\Delta\psi^c$, with curl
+$-\vis\Delta^2\psi^c$. This is the exact linear map from an already
+constructed inviscid forced field to a retained-diffusion forced field:
+\begin{equation}\label{eq:force-map}
+ (\theta,u,p,f_\theta,f_u)\longmapsto
+ (\theta,u,p,f_\theta-\thd\Delta\theta,
+                      f_u-\vis\Delta u).
+\end{equation}
+Substitution in the scalar and momentum equations proves the map:
+adding $\thd\Delta\theta$ or $\vis\Delta u$ to the new right-hand side
+cancels its respective force decrement. Thus pressure, divergence,
+initial data and the entire trajectory are retained exactly. On each
+closed finite smooth stage these are smooth finite forces; where the
+original fields and their derivatives are compactly supported, the new
+terms have the same support. This statement supplies no uniform bound
+as the layer index tends to infinity. The explicit factors
+$\lambda^2$, $\ell^{-2}$, and $\ell^{-4}$ above must be retained in such
+an analysis.
+
+\section*{Source and scope receipt}
+The primary source read here is the 76-page PDF
+\emph{Blowup for the Boussinesq equations with smooth forcing},
+Levent Alp\"oge and Tristan Buckmaster; source equations (3.1)--(3.6)
+are on pages 8--9 and (4.1)--(4.6) on pages 37--38.
+The exact file SHA-256 is
+\begin{center}\small\ttfamily
+895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b.
+\end{center}
+The companion replay script checks the profile differentiation, full
+two-dimensional residual algebra, localized Laplacian square, common
+diffusivity matrix factorization, and eigenfunction obstruction
+identities. Its checks supplement the proofs above; they do not certify
+an infinite-stage existence or force-smoothness theorem.
+\end{document}

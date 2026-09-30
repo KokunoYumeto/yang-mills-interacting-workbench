@@ -1,0 +1,405 @@
+\section{The actual third growth target on the moving second hold}
+\label{tge:section}
+
+We continue from the actual second returned state, with its first
+vorticity strictly positive. The third wave sees both older temperature
+gradients and the changing first shear. This section proves attainment
+of its original growth threshold, with the original third insertion
+rule and retained positive physical diffusion. The second parent is
+held by its original feedback during this interval. The third
+transition changes that control and requires its own calculation;
+no third return is inferred from the growth result.
+
+\subsection{A further explicit choice in the same source family}
+
+Retain every original datum, profile, frequency and constant from
+Section~\ref{ave:section}. In particular $\nu=\sqrt{A_0}$,
+$\mu=\lambda_0=\lceil\sqrt{A_0}/2\rceil$ and
+$K_j=\mu\widehat\lambda_j$ are still physical quantities.
+Write $\sigma_1=\sigma$ for the actual second-stage scale in
+\eqref{ave:actual_scale}. Extend the exact source recursion to
+\begin{equation}\label{tge:source}
+\begin{gathered}
+ Q_3=Q_*+3,\qquad
+ \widehat\lambda_3=\widehat\lambda_2^{Q_3},\qquad
+ k_3=\max\{k\in\mathbb N_0:120k\leq Q_3,
+                         \ K(k)\leq\log\widehat\lambda_3\},\\
+ L_3=(k_3+41/8)\log\widehat\lambda_3,\qquad
+ S_3=(A_0/\mu)\widehat\lambda_3^{-k_3-6},\qquad
+ P_3^*=(A_0/\mu)\widehat\lambda_3^{-7/8}=S_3e^{L_3}.
+\end{gathered}
+\end{equation}
+The finite maximum exists for the same reason as the earlier two.
+Define fixed numbers
+\begin{gather*}
+ c_2=(41/8)Q_2,\qquad c_3=(41/8)Q_2Q_3,\\
+ C_3=(\lfloor Q_3/120\rfloor+41/8)Q_2Q_3,\\
+ C_2=e^9\sqrt{5\sqrt{10}/4},\qquad
+ C_M=\frac{256C_2}{15\sqrt e}.
+\end{gather*}
+Then $L_2\geq c_2\log\widehat\lambda_1$,
+$L_3\geq c_3\log\widehat\lambda_1$, and
+$L_3\leq C_3\log\widehat\lambda_1$ for all these exact choices.
+Using the already defined $Y_0,C_\sigma,C_N$, select
+\begin{equation}\label{tge:Y3}
+ Y_3=1+\max\left\{\begin{gathered}
+ Y_0,\quad 1024/c_2,\quad 16384/c_3,\quad
+ \frac8{Q_2-1}\log(12C_\sigma^2),\\
+ \frac{16}{Q_2-2}\log(2C_\sigma^2C_3/c_2),\quad
+ \frac{\log(290C_N)}{3Q_2-49/16},\quad
+ \frac{\log(145\sqrt{10}/s_0)}{2Q_2},\\
+ \frac{\log(4C_NC_M)}{47Q_2/16-3},\quad
+ \frac{\log(\sqrt{11}C_M/s_0)}{(31Q_2+1)/16}
+ \end{gathered}\right\}.
+\end{equation}
+Choose $\widehat\lambda_1\geq e^{Y_3}$.
+All denominators are positive because $Q_2\geq202$.
+These additional lower bounds retain the same source frequency family
+and integer selection; they do not replace any earlier scale by one.
+Set
+\begin{equation}\label{tge:d3}
+ \sigma_- =\sqrt e\,\nu\widehat\lambda_1^{1/16},\qquad
+ d_{3,\max}=\min\left\{d_{\max},
+      \frac{\sigma_-\log2}{160K_2^2},
+      \frac{L_3\sigma_-}{128K_3^2}\right\}>0.
+\end{equation}
+For the remainder choose any $0<d\leq d_{3,\max}$ and construct
+the actual first and second stages already proved. Every number on
+the right of \eqref{tge:d3} is specified before selecting the second
+root or solving a new growth equation. The lower bound
+$\sigma_1\geq\sigma_-$ follows from \eqref{ave:scale_bounds}.
+
+\subsection{The actual third insertion scale}
+
+Let $t_b=t_2^b$ be the selected second return, and use a subscript
+$b$ for evaluation there. Set $a=\sin s_2$, $h_b=h(t_b)$,
+$\chi_b=\sqrt{h_b^2+a^2}$, and $P_{2,b}=-\Theta_2(t_b)>0$.
+Define the original second gradient amplitude and next scale at this
+actual endpoint by
+\begin{equation}\label{tge:birthscale}
+ A_{2,b}=K_2\chi_bP_{2,b},\qquad
+ \sigma_2^2=|G_{<3}(t_b)|,\qquad
+ s_3=\frac{L_3\sigma_1}{\sigma_2},\qquad
+ \Gamma_3=\sigma_2\sin s_3.
+\end{equation}
+In particular $\sigma_2$ is evaluated after the selected second
+control, rather than at an inviscid endpoint.
+The complete older gradient at this time is
+\begin{gather*}
+ G_{<3}(t_b)=-A_0R_{\alpha_b}e_2
+              -A_{1,b}\zeta_{1,b}-A_{2,b}e_2,\\
+ A_{1,b}=-K_1\Theta_1(t_b),\quad
+ \zeta_{1,b}=\frac{(-a,h_b)}{\chi_b},\quad
+ \alpha_b=s_*+\arctan(a/h_b).
+\end{gather*}
+Theorem~\ref{sr:theorem} gives
+$\chi_b\geq1$, $P_{2,b}\geq P_2^*$,
+$A_{1,b}\leq2\sigma_1^2$, and $A_0\leq\sigma_1^2$.
+The new choice $L_2>1024$ and \eqref{ave:angle_bounds} imply
+\begin{equation}\label{tge:a_small}
+ 0<a<\frac1{12HL_2}\leq\frac1{12288}.
+\end{equation}
+Because $h_b\geq\cos s_2\geq15/16$,
+$0<\alpha_b\leq1/8+(16/15)a<1/4$.
+Both older terms in the displayed $G_{<3}$ have negative vertical
+component. Its norm is therefore at least $A_{2,b}$, while the
+triangle inequality bounds it above by $A_{2,b}+3\sigma_1^2$.
+Moreover \eqref{tge:Y3} and the original threshold give
+\[
+ A_{2,b}\geq A_0\widehat\lambda_2^{1/8},\qquad
+ \frac{A_{2,b}}{\sigma_1^2}
+ \geq\frac{\widehat\lambda_1^{(Q_2-1)/8}}{C_\sigma^2}>12.
+\]
+Consequently
+\begin{equation}\label{tge:scale_bounds}
+ A_{2,b}\leq\sigma_2^2\leq\frac54A_{2,b},\qquad
+ \sigma_2>\sigma_1,\qquad
+ \sigma_2\geq\nu\widehat\lambda_2^{1/16},\qquad
+ \frac45\leq\frac{A_{2,b}}{\sigma_2^2}\leq1.
+\end{equation}
+
+The actual third angle obeys an inequality stronger than a branch
+choice. Since $a\geq L_2\nu/(2\sigma_1)$, the scale bounds imply
+\[
+ \frac{s_3}{a}
+ \leq\frac{2L_3\sigma_1^2}{L_2\nu\sigma_2}
+ \leq2C_\sigma^2\frac{C_3}{c_2}
+             \widehat\lambda_1^{-(Q_2-2)/16}<1.
+\]
+Thus $0<s_3<a<1/8$. The elementary inequality
+$\sin x\geq x-x^3/6\geq(15/16)x$ for $0\leq x\leq1/8$
+follows by integrating $\cos x\geq1-x^2/2$.
+It proves
+\begin{equation}\label{tge:rate_scale}
+ \frac{15}{16}L_3\sigma_1\leq\Gamma_3\leq L_3\sigma_1.
+\end{equation}
+No small-angle identity has replaced the actual sine in the controls.
+
+\subsection{Exact moving geometry and the changing coupling numerator}
+
+Use physical elapsed time $r=t-t_b$ and the original third growth
+control $\dot\alpha=F_2^{\rm ctl}$. The second amplitude and its
+horizontal phase component remain zero in vorticity and phase,
+respectively, while both older temperatures and the first shear evolve:
+\begin{align}
+ \zeta_1&=(-a,h)/\chi,&\zeta_2&=(0,\chi),&
+ \chi&=\sqrt{h^2+a^2},&\dot h&=a\Omega_1,\nonumber\\
+ \dot A_1&=-A_0\sin s_*\,\Omega_1-dK_1^2A_1,&
+ \dot P_2&=-dK_2^2\chi^2P_2,&
+ \dot\alpha&=-a^2\Omega_1/\chi^2.
+ \label{tge:older_hold}
+\end{align}
+These are the previously proved holding equations in physical time.
+Let
+\begin{equation}\label{tge:detconstants}
+ \beta_b=\arctan(a/h_b),\quad
+ b=\sin(s_3+\beta_b),\quad g_b=\cos(s_3+\beta_b),\quad
+ c=bh_b-ag_b=\chi_b\sin s_3>0.
+\end{equation}
+Here $b$ is an oriented determinant magnitude, not an amplitude
+coefficient; the latter will carry its layer index below.
+Since $s_3\leq a$ and $\beta_b\leq(16/15)a$,
+$0<s_3+\beta_b<3a<1/8$, so $g_b>0$ and $0<b<3a$.
+
+The third material matrix and phase have the exact expressions
+\begin{align}
+ M_3(t)&=M_2(t)M_2(t_b)^{-1},& M_3(t_b)&=I,\nonumber\\
+ g(t)&=g_b+(b/a)(h(t)-h_b),&
+ \zeta_3(t)&=g\zeta_1-bJ\zeta_1
+       =\frac{(c,hg+ab)}{\chi},& R_3&=|\zeta_3|^2=g^2+b^2.
+ \label{tge:phase}
+\end{align}
+Here is a direct verification preserving the original datum
+$p_3=e(s_3)$. Since $\Omega_2=0$, the actual matrices
+$D_{<3}$ and $D_{<2}$ are equal, so differentiation proves the
+matrix equation for $M_3$ with its stated initial value.
+In the basis $\zeta_1,J\zeta_1$, the third phase equation is
+$\dot g=b\Omega_1$, $\dot b=0$; these follow by differentiating
+its scalar products and using
+$\dot\zeta_1=\dot\alpha J\zeta_1$,
+$\dot\zeta_3=\dot\alpha J\zeta_3
+ -\Omega_1\zeta_1(J\zeta_1\cdot\zeta_3)$.
+Integration and $\dot h=a\Omega_1$ give \eqref{tge:phase}.
+At birth, resolving $e(s_3)$ in this oriented basis gives precisely
+$g_b,b$ in \eqref{tge:detconstants}. The identity for $c$ follows
+from $h_b=\chi_b\cos\beta_b$, $a=\chi_b\sin\beta_b$ and
+the sine subtraction formula. This verifies both components of the
+phase formula and its initial datum. Uniqueness of the linear phase
+equation identifies it with $M_3^{-T}p_3$.
+
+The full inherited gradient and third amplitude coefficients are
+\begin{align}
+ G_{<3}&=-(A_1+A_0\cos s_*+K_2P_2h)\zeta_1
+              +(-A_0\sin s_*+aK_2P_2)J\zeta_1,\nonumber\\
+ N_3&=b(A_1+A_0\cos s_*)+gA_0\sin s_*+cK_2P_2,\nonumber\\
+ a_3&=\frac{N_3}{K_3R_3},\qquad
+ b_3=K_3\zeta_{3,1}=\frac{K_3c}{\chi}.
+ \label{tge:coefficients}
+\end{align}
+To verify the first line, use
+$R_\alpha e_2=\cos s_*\zeta_1+\sin s_*J\zeta_1$ and
+$\zeta_2=h\zeta_1-aJ\zeta_1$ in the original sum
+$G_{<3}=-A_0R_\alpha e_2-A_1\zeta_1-K_2P_2\zeta_2$.
+The scalar product of $J\zeta_3=gJ\zeta_1+b\zeta_1$ with
+that sum is $-N_3$, proving the coefficient including the original
+gravity direction. Differentiating its full numerator gives
+\begin{equation}\label{tge:Ndot}
+ \dot N_3=-d\{bK_1^2A_1+cK_2^3\chi^2P_2\}.
+\end{equation}
+Indeed the terms $-bA_0\sin s_*\Omega_1$ from $\dot A_1$
+and $b\Omega_1 A_0\sin s_*$ from $\dot g$ cancel exactly;
+the second temperature contributes the other displayed term.
+Thus the inviscid numerator would be exactly constant despite the
+changing shear. At positive $d$ both parent losses are retained.
+
+\subsection{A common proved horizon before taking an amplitude quotient}
+
+Set $R_H=16/\sigma_1$. Its duration in the second-stage time is
+$\Gamma_2R_H=16a<1/32$, by \eqref{tge:a_small}.
+Thus the entire closed older system exists on $0\leq r\leq R_H$
+by its already proved second hold, uniformly for the current $d$.
+There $A_1,P_2$ are positive, $\Omega_1<9\sigma_1$,
+$\chi\geq\chi_b\geq1$, and
+\begin{equation}\label{tge:horizon_geometry}
+\begin{gathered}
+ 0\leq h-h_b\leq144a,\qquad
+ 0\leq g-g_b\leq144b,\\
+ 1\leq\sqrt{R_3}\leq1+432a\leq265/256<\sqrt2,
+ \qquad1\leq\frac{\chi}{\chi_b}\leq259/256<2.
+\end{gathered}
+\end{equation}
+The first inequality integrates $\dot h=a\Omega_1$.
+The second uses the exact relation \eqref{tge:phase}.
+For the third apply the Euclidean triangle inequality to
+$(g,b)=(g_b,b)+(g-g_b,0)$, whose first summand has norm one.
+The fourth follows similarly from
+$\sqrt{h^2+a^2}\leq\chi_b+(h-h_b)$ and $\chi_b\geq1$.
+The rational constants use $432/12288=9/256$ and
+$144/12288=3/256$; $265^2<2\cdot256^2$ proves the strict square-root
+bound without a numerical approximation.
+
+All four terms in $N_3$ are positive on this horizon.
+Since $K_1<K_2$ and $\chi^2<10$, \eqref{tge:Ndot} gives
+$-10dK_2^2N_3\leq\dot N_3\leq0$.
+Multiplication by $e^{10dK_2^2r}$ and integration, followed by
+\eqref{tge:d3}, proves
+\begin{equation}\label{tge:coeffbox}
+ \frac12N_i\leq N_3(r)\leq N_i,\qquad
+ \frac14a_i\leq a_3(r)\leq a_i,\qquad
+ \frac12b_i\leq b_3(r)\leq b_i,
+\end{equation}
+where $N_i=N_3(t_b)$, $a_i=N_i/K_3$, and
+$b_i=K_3\sin s_3$ are the actual birth values.
+Indeed $10dK_2^2R_H=160dK_2^2/\sigma_1\leq\log2$;
+the remaining bounds use \eqref{tge:horizon_geometry} in the exact
+coefficient formulas. No value of a later temperature is assumed
+in these estimates.
+
+For the actual initial rate $\gamma_i=\sqrt{a_ib_i}$ put
+$n_i=\gamma_i^2/\Gamma_3^2=N_i/(\sigma_2^2\sin s_3)$.
+The positive newest-parent contribution to its numerator is
+$cK_2P_{2,b}=A_{2,b}\sin s_3$.
+Its remaining two terms satisfy
+\[
+ b(A_{1,b}+A_0\cos s_*)+g_bA_0\sin s_*\leq4\sigma_1^2,
+\]
+using $b,g_b\leq1$, $A_{1,b}\leq2\sigma_1^2$ and
+$A_0\leq\sigma_1^2$.
+Equations~\eqref{tge:scale_bounds} and \eqref{tge:rate_scale}
+therefore give
+\begin{equation}\label{tge:initial_rate}
+ \frac45\leq n_i\leq1+\frac{64\sigma_1}{15L_3\sigma_2}
+       \leq\frac{16}{15},\qquad
+ \gamma_i\geq\frac78\Gamma_3
+       \geq\frac{105}{128}L_3\sigma_1.
+\end{equation}
+For the middle upper bound use $L_3\geq64$ and $\sigma_2>\sigma_1$.
+The lower rate follows from $4/5>(7/8)^2$.
+
+The original third seed is exactly
+$\Theta_3(t_b)=-S_3$, $\Omega_3(t_b)=-S_3\sqrt{b_i/a_i}$.
+Solve its complete linear system with the changing coefficients:
+\begin{equation}\label{tge:pair}
+ \dot\Theta_3=a_3\Omega_3-dK_3^2R_3\Theta_3,
+ \qquad\dot\Omega_3=b_3\Theta_3-dK_3^2R_3\Omega_3.
+\end{equation}
+Its coefficients and derivatives are finite on the common horizon,
+so the iterated integral series provides existence and uniqueness
+there. Define
+\[
+ E(r)=\exp\left(dK_3^2\int_0^r R_3(t_b+u)\,du\right),\qquad
+ X=-E\Theta_3,\qquad Y=-E\Omega_3.
+\]
+Differentiation gives $\dot X=a_3Y$, $\dot Y=b_3X$.
+Both initial values are positive, and before a hypothetical first zero
+both derivatives are positive. This excludes the zero and proves
+$\Theta_3,\Omega_3<0$ throughout the horizon. The quotient may now
+be formed. With $u=\Omega_3/\Theta_3$ and $u_i=\sqrt{b_i/a_i}$,
+it satisfies $\dot u=b_3-a_3u^2$. The bounds in
+\eqref{tge:coeffbox} make $u_i/\sqrt2$ a constant subsolution and
+$2u_i$ a constant supersolution. The integrating-factor comparison
+for their differences proves
+\begin{equation}\label{tge:quotient}
+ \frac{u_i}{\sqrt2}\leq u\leq2u_i,
+ \qquad \sqrt{15/32}\leq
+       v_3:=\frac{\sigma_2\Omega_3}{K_3\Theta_3}\leq\sqrt5<3.
+\end{equation}
+The exact identity $\sigma_2u_i/K_3=1/\sqrt{n_i}$ and
+\eqref{tge:initial_rate} give the latter interval.
+
+\subsection{The original third threshold and its full diffusion cost}
+
+The last bound in \eqref{tge:d3} and
+\eqref{tge:initial_rate} imply
+$dK_3^2\leq L_3\sigma_1/64\leq\gamma_i/(16\sqrt2)$.
+For the last comparison it suffices to use
+$\gamma_i\geq L_3\sigma_1/2$ and $\sqrt2\leq2$.
+Thus the actual $P_3=-\Theta_3$ has the positive physical rate
+\begin{equation}\label{tge:gain_rate}
+ \frac{\gamma_i}{8\sqrt2}
+ \leq(\log P_3)'=a_3u-dK_3^2R_3
+ \leq2\gamma_i<3\Gamma_3.
+\end{equation}
+The lower bound uses $a_3u\geq a_iu_i/(4\sqrt2)$,
+$R_3<2$, and the displayed diffusion bound. The upper bound
+uses $a_3u\leq2a_iu_i$ and $n_i\leq16/15<9/4$.
+
+\begin{theorem}\label{tge:actual_threshold}
+For every fixed original datum and profiles, choose the source
+frequencies by \eqref{tge:Y3} and any $0<d\leq d_{3,\max}$ in
+\eqref{tge:d3}. After the actual two returns already constructed,
+the original third growth control reaches its original target
+$P_3^*$ exactly once, at $t_3^a=t_b+r_a$, with
+\begin{equation}\label{tge:times}
+ \frac{L_3}{2\gamma_i}\leq r_a
+       \leq\frac{8\sqrt2L_3}{\gamma_i}
+       \leq\frac{1024\sqrt2}{105\sigma_1}
+       <\frac{14}{\sigma_1}<\frac{16}{\sigma_1}.
+\end{equation}
+The crossing is transverse, its activation is already complete,
+and its initial and final physical amplitude ratios obey
+\eqref{tge:quotient}. Both inherited temperatures and the first
+shear evolve by \eqref{tge:older_hold} throughout.
+The exact logarithmic diffusion cost of the third amplitude is
+\begin{equation}\label{tge:diffusion_cost}
+ dK_3^2\int_0^{r_a}R_3(t_b+r)\,dr,
+ \qquad
+ dK_3^2r_a\leq
+ dK_3^2\int_0^{r_a}R_3(t_b+r)\,dr
+                  \leq2dK_3^2r_a.
+\end{equation}
+Its total actual logarithmic gain is exactly $L_3$.
+\end{theorem}
+\begin{proof}
+The complete older and new systems were constructed on a fixed horizon
+before the threshold was chosen. The upper candidate time in
+\eqref{tge:times} is within that horizon: squaring positive numbers
+gives $(1024\sqrt2)^2<1470^2$. Integrating the lower rate in
+\eqref{tge:gain_rate} to that candidate time gives at least $L_3$.
+Continuity and strict increase therefore prove a unique crossing.
+Integrating the upper rate gives its lower time bound.
+Because $2\gamma_i<3\Gamma_3$ and $L_3\geq64$,
+$\Gamma_3r_a>L_3/3>1$, so the original activation
+$\eta(\Gamma_3r)$ is one before this crossing.
+The rate lower bound proves transversality. The positive phase-length
+bounds in \eqref{tge:horizon_geometry} give
+\eqref{tge:diffusion_cost} by integration, with all physical factors
+retained. The target identity in \eqref{tge:source} gives the exact
+gain $L_3$.
+\end{proof}
+
+For the two older amplitudes during this third growth, the exact
+diffusion exponents are $dK_1^2r_a$ and
+$dK_2^2\int_0^{r_a}\chi(t_b+r)^2dr$. The second one is at most
+$10dK_2^2r_a\leq\log2$ on our common horizon. The additional
+first-temperature coupling $-A_0\sin s_*\Omega_1$ is retained in
+\eqref{tge:older_hold}; it is not a damping exponent.
+The numerator's exact total change is the integral of
+\eqref{tge:Ndot}, including both parent contributions.
+
+\paragraph{Exact third support nesting.}\label{tge:nesting}
+The source third support also fits the changing exact affine cells.
+Indeed the relative matrix \eqref{tge:phase} is a product of two
+rotations and the shear with off-diagonal entry $-(h-h_b)/a$;
+hence $\|M_3\|,\|M_3^{-1}\|\leq145$ on this horizon.
+The older bound is $\|M_2^{-1}\|\leq N\leq
+C_N\widehat\lambda_1^{1/16}$. With the exact source radius
+$\ell_3=\widehat\lambda_2^{-3}/\mu$, the two growth-support conditions
+in \eqref{tge:Y3} give
+\[
+ 2\cdot145N\widehat\lambda_2^{-3}<\widehat\lambda_1^{-3},
+ \qquad145\sqrt{10}\widehat\lambda_2^{-2}<s_0.
+\]
+Thus $|M_2^{-1}x|<\ell_2/2$ and
+$|K_2\zeta_2\cdot x|<s_0$ on the entire third support.
+The earlier proved nesting places it in the first and base affine
+cells as well. These explicit inequalities justify the complete
+compact third spatial increment and its full forces below.
+
+This proves a further original growth event with retained diffusion,
+not a third return or an infinite iteration. The newly permitted
+range includes a factor $K_3^{-2}$ and retains that dependence.
+The following transition must evolve both older vorticities and its
+prescribed blend of $F_2^{\rm ctl}$ and $F_3^{\rm ctl}$; the exact
+third-growth numerator identity identifies the parent losses that
+must remain in that calculation.

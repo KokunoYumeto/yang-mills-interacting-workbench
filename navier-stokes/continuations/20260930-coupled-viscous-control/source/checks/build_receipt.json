@@ -1,0 +1,212 @@
+{
+  "schema": "coupled-viscous-control-build-v1",
+  "all_passed": true,
+  "operations": [
+    {
+      "kind": "exact_replay",
+      "file": "replay_exact.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "finite_stage/replay_first_stage.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "paper_coupling/replay_coupled.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "paper_coupling/profile_diffusion/replay_profile_diffusion.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "entry_audit/replay_actual_entry.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "second_return/replay_second_return.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "modified_spatial/replay_spatial.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_growth_geometry/replay_third_growth_geometry.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_entry_audit/replay_third_entry.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_transition/replay_third_transition.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_transition/audit_finish/replay_independent.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_growth_spatial/replay_third_spatial.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_transition_spatial/replay_third_transition_spatial.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_return/audit/replay_third_steering.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_return/audit/replay_local_rational_bounds.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_return/local_spatial/replay_constant_audit.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "third_return/checks/third_return_persistence_check.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "infinite_modified/checks/parabolic_similarity_check.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "infinite_modified/checks/based_cascade_check.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "infinite_modified/checks/return_correction_check.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "infinite_modified/checks/full_support_force_check.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "integration_export",
+      "exit_code": 0
+    },
+    {
+      "kind": "static_reference_check",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "replay_exact.py": "38c0baceac37a5055f5c05aa4b47fa561c020cca50158ae041ab23edfa8bf8d1",
+    "finite_stage/replay_first_stage.py": "2fd2503ad94d0b1deedc653da2b404ac61bff72eb96f82f2fd02e22d90c10100",
+    "paper_coupling/replay_coupled.py": "740946cbcb099f71236413c07467c4ca6c0d0da8464aa9592a774c06c26aa098",
+    "paper_coupling/profile_diffusion/replay_profile_diffusion.py": "940e5062d3ee9e0b7927c90509d47efbc34687cf183dca24910671596f120a0b",
+    "entry_audit/replay_actual_entry.py": "1378c809c10755e976c7028d7ffd662e2cc278dfd77f370ec0015f282ca21163",
+    "second_return/replay_second_return.py": "350e65dd0c801c392d6e75dd08f2b89468ffea43fa1927ec1a470bd3b967fb92",
+    "modified_spatial/replay_spatial.py": "bd22e8b1fbf63c1ee6026c77877d68e23dcb80348cb194174909462364b70afc",
+    "third_growth_geometry/replay_third_growth_geometry.py": "22ac883a1847147e5449130c5d2b59d11e3a919ba7eaa9eb7c41ad3affe96814",
+    "third_entry_audit/replay_third_entry.py": "a9c183b940eed405049b04fe6c45b62832730990f208468669af2d5abb1c81e4",
+    "third_transition/replay_third_transition.py": "5217a3baa960c8477350581e63491a7b59347a75b964d9a9dc8da3411e371068",
+    "third_transition/audit_finish/replay_independent.py": "bcb2d32a33845fa2fc01927565495e2c11f361407b326eab9e7c9f5633041ad1",
+    "third_growth_spatial/replay_third_spatial.py": "8958c2625d20bae4279b29564bcb88ef7fb921f15634d0ad4147e523b9c5ec1d",
+    "third_transition_spatial/replay_third_transition_spatial.py": "f9a76278f9082aebef90f52c116838cd0d94edd726336a9389a0277ea5f34dbc",
+    "third_return/audit/replay_third_steering.py": "47d7e67d44a9e279b07ebadf0400861972cc49e03a039381c8c0486302a07ee6",
+    "third_return/audit/replay_local_rational_bounds.py": "3e365f0a489facaa77bb70f381e5f0dfc3dd6605c2dc9d421de0bd5253f4338a",
+    "third_return/local_spatial/replay_constant_audit.py": "c40c1471b9237a9b4ddd55f3a0aea2aeed702590a69e2dc933baa6971ba12eb7",
+    "third_return/checks/third_return_persistence_check.py": "a079044481f6e5c275ba32322881ac1d8f6955e1c43d30c5b6971e8bcf6d2dc8",
+    "infinite_modified/checks/parabolic_similarity_check.py": "2f27ff88da61d214a96e34498121655b8f8dd1297aa92ad798bf0ad422e425db",
+    "infinite_modified/checks/based_cascade_check.py": "6996512b829f376b7a6d82a77b58974c58987877f6e6da8101f4edebb4aa1711",
+    "infinite_modified/checks/return_correction_check.py": "f2911728cb85a39414cd1b1ff071c9e5b3fe1f814bccbbee007277f7f1eae9e9",
+    "infinite_modified/checks/full_support_force_check.py": "a4961521725371766a3f1950177b1ef298be5626816d3b6ef71530abe31db691",
+    "checks/replay_registry.json": "58fc67a670dfd2b9b3506d0277bdf572ff2baf836175fee873b3f22ad7b65082",
+    "checks/replay_exact.json": "6d2804b1f6d32fa5c0c91c99cc1395f16485321b273f34925bcd0093adeaa487",
+    "finite_stage/replay_receipt.json": "4561b85ee080dd9c52dd4f28bbdfbb54d8b72751482cf5a47923d0e98bd1a368",
+    "paper_coupling/replay_receipt.json": "130afda04bb3a2005a56ab948523f5cc62d8c8bc49f1adc249e8d250ec64d69e",
+    "paper_coupling/profile_diffusion/profile_diffusion_checks.json": "ab9736af7fcfe1d1940ac4a98f6fd20628660288057d98c1a911284e362b6356",
+    "entry_audit/replay_receipt.json": "c20530e1932334cb9f2691362af51943b4c342bcdb4cf0d8e1f346d284b28359",
+    "second_return/replay_receipt.json": "4928bc969e4df111807dd4d56716eaa362241591d755323ff21ba0d0e7d2760f",
+    "modified_spatial/replay_report.json": "51a0a5416b668cc2adea71acf63569017c801a2bee6dfbd3e02f979132b9e027",
+    "third_growth_geometry/replay_receipt.json": "8b18a2ad5a3d78322b5c3d65ad909c04e0b2a2c7e06ebb1a0c4c2be95a699fd2",
+    "third_entry_audit/replay_receipt.json": "ddb7d9ee219cc04d9e94e750678d23d71e9936ea74692638e9b3d3db99735ccf",
+    "third_transition/replay_receipt.json": "1092d2c69ca0b70a1d640f906c003363a1ea89cbf3515ddf3f1a6ef38644035a",
+    "third_transition/audit_finish/replay_receipt.json": "470eef4963e91cded751e0ec0b34a5f6e0fc269000b79df6fb6e14e94dacd6d3",
+    "third_growth_spatial/replay_report.json": "7e1a901dd20b771fd873badd5bc9ee25e74958809a482f2a5baea5466ffc12eb",
+    "third_transition_spatial/replay_receipt.json": "71919fb7ff0c3e52713af237af0368d8a9756fcf81dd18d093573bb834405102",
+    "third_return/audit/symbolic_receipt.json": "2d4e5dcdbe943fd038337b653dcf8753ba7317167ddeba73bafd7a6833db0215",
+    "third_return/audit/local_rational_receipt.json": "3962a926deaf56664f459f81d04d83bb37e3d4ea336814ad92da99dc820fef26",
+    "third_return/local_spatial/constant_audit_receipt.json": "78a797b7299b4dd565853f3ac479461fcb8c22ac611fa8daa658072e54f784e3",
+    "third_return/checks/third_return_persistence_receipt.json": "7ed16f1079aa1950d86d4a972d2e1de40d39483953979e9313677609b6c5496c",
+    "infinite_modified/checks/parabolic_similarity_receipt.json": "4f9f785a4755d3d7e1931086973309a87351a34fc58351361319d588f2a30661",
+    "infinite_modified/checks/based_cascade_receipt.json": "3031aaccf561fa98200f581144eb3b2ebe3d127f7588dd1db27f79be964af1ef",
+    "infinite_modified/checks/return_correction_receipt.json": "11d516895c5648eef47157aea23213c8b02fc15ace309718b4ee6f44407814c8",
+    "infinite_modified/checks/full_support_force_receipt.json": "9993e850eda9ecc7b81763b40fc422b09d99432efc7d99ad2b461b102caa23a2",
+    "checks/static_reference_check.py": "e8c967bdfc38100f5c8d2284a6969b646de508fd4dcfcf7e2f948224445afe27",
+    "checks/static_reference_receipt.json": "06722b742908c33b7a932424f255457e113807ce05293f072d08ba87cdd33de5",
+    "build_and_verify.py": "6164b7e4da0ba6b4a13644addea71944720f69c698247e71e1a0ddb5ea62bdb8",
+    "build_integration.py": "9e398a8ba12ec91e3e05d5255d3197c6c092bd787ef652de9148ae2127818030",
+    "physical_realization.tex": "d076bd1150571b9772706f07ae229890ff216ea9e5fce28792adaed528fae4e3",
+    "finite_stage/first_stage_section.tex": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e",
+    "finite_stage/evolving_diffusive_parent_section.tex": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453",
+    "finite_stage/actual_viscous_entry.tex": "91e70814420bcc828f9f3bbc30bd3b88f71a1b00862d8195a46e661cacc000db",
+    "second_return/second_return_body.tex": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4",
+    "modified_spatial/modified_spatial_body.tex": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4",
+    "third_growth_geometry/third_growth_geometry_body.tex": "75fb45439c2af482a5de215838f1268680801628ae8924cdfb5afcfc1e9e096a",
+    "finite_stage/third_growth_entry.tex": "f8ef33f593fae0c9526e2ae5d696d537b3caacb843a35d844c87425b467b4048",
+    "third_transition/third_transition_body.tex": "ebb1b876d6ebebdf1491b2d7c5f85f0529740032b25e217429f50fbd319c3342",
+    "third_growth_spatial/third_growth_spatial_body.tex": "d80d4b6100bdc3e7a6e0fbfced499453306c6c1270b2bf80e63b694215e73852",
+    "third_transition_spatial/third_transition_spatial_body.tex": "f250ecb2c952fff23c7385df7e9d30cae28e423c3eb44c4b4205dd63c8ada770",
+    "third_return/third_return_body.tex": "245091a1fe6db5746f80ce3702a85787c3cbc899489d4e3e81ac419fcfaf513d",
+    "third_return/third_return_completion_body.tex": "d9159f642872df37c4d77a5c67b19756e4ae679f30fd746616ef0b3dfde135cc",
+    "third_return/local_spatial_body.tex": "d909daac2df2841e28413804a52c0744ab5df29adfc5032827d0373027e41511",
+    "coupled_feedback.tex": "408e81e8c1ac77b83edb28ddb0660f5b321086f9c5159e9ab2ea23398707a2e9",
+    "infinite_status.tex": "6afd2290fe3bb5bbbb118e23207b719d1ca53be83a9481e8d6058b071721c3be",
+    "infinite_modified/parabolic_similarity_body.tex": "a2e96f349aac61067fde44bacdc326ed5c1cca250c81be43fff03addd2574553",
+    "infinite_modified/based_cascade_body.tex": "d662329cd934330c15447fa94e837202d221ce6cea283e123cab45febfa933d4",
+    "infinite_modified/return_correction_body.tex": "9f6751cbc21cd524348c8a1903c1c2e52c453f53960cd06e78de59262036dd3f",
+    "infinite_modified/full_support_force_body.tex": "0dd845c23f517f01849b21c95d6d7a11908285afd8e97354d8dac3bbafbe47ff",
+    "infinite_modified/force_reachability_body.tex": "3c0a4ce6b1d96d4c8dfef88b98f1dfd1192d580b136a960fd79d47c915b5c983",
+    "paper_coupling/coupled_background_body.tex": "5c57afbe39fa6b857c2c1629353b0d065d2caf9ac836b58fb6639d31bb008881",
+    "paper_coupling/profile_diffusion/profile_diffusion_body.tex": "4770c8f2bf3ed515195ee5a39167b4f1c3f2914c8457e1f43dc173fa5af58ec8",
+    "third_return/figures/third_return_persistence.png": "7f2963d2f0bf0660db7c68a8a22fc29394df1a88f4acf88ca5d7a19bc32095f5",
+    "integration/third_return/figures/third_return_persistence.png": "7f2963d2f0bf0660db7c68a8a22fc29394df1a88f4acf88ca5d7a19bc32095f5",
+    "infinite_modified/figures/fixed_diffusion_similarity.png": "c74045e59c5988d486f0681df8d7935fe750ae063f12659af2fbdc0eb183f786",
+    "integration/infinite_modified/figures/fixed_diffusion_similarity.png": "c74045e59c5988d486f0681df8d7935fe750ae063f12659af2fbdc0eb183f786",
+    "infinite_modified/figures/based_cascade_residual.png": "3e51e00e96203b43a30a4fe37d14c0edea46e7591461527a8f6859081d45e364",
+    "integration/infinite_modified/figures/based_cascade_residual.png": "3e51e00e96203b43a30a4fe37d14c0edea46e7591461527a8f6859081d45e364",
+    "infinite_modified/figures/return_correction.png": "d791c67b5f3f940598c4cf9b12e267122f5222113fb008c6110f077cd0b4e6f4",
+    "integration/infinite_modified/figures/return_correction.png": "d791c67b5f3f940598c4cf9b12e267122f5222113fb008c6110f077cd0b4e6f4",
+    "infinite_modified/figures/full_support_force.png": "f3ec34029fe90e5ff1698359fce23dd62535605eb3c7d8344d05be950d2cc650",
+    "integration/infinite_modified/figures/full_support_force.png": "f3ec34029fe90e5ff1698359fce23dd62535605eb3c7d8344d05be950d2cc650",
+    "coupled_viscous_control.tex": "f817e6c203ad6142688ece205551c46a51f775d6564923305f5dd4a4fed3f328",
+    "paper_coupling/profile_diffusion/profile_diffusion_preamble.tex": "9521e67776a75ed77ae48984bbd3e318c1fb6298a67979da2bf4469e7aa77a80",
+    "integration/coupled_viscous_control_body.tex": "6a55d307fbcd5c8aa45c32094d7b0811fbc3bf7dece94fea93e2982d996f0539",
+    "integration/coupled_viscous_control_preamble.tex": "d0718f3342b1e8a4f9502485d4a27092491d2c3ac36a3e40603a1459b5d34c7c",
+    "integration/integration_check.tex": "c7fada4945963761afd30eaa58a8d8bfc86e4bfd0c76adccfbe9485d171f0a06",
+    "integration_manifest.json": "429e6fbf0fa54d711849976a744af4d5857ee84d0d667b0a339c549dc9126ec9",
+    "sources/alpoge_buckmaster_boussinesq.pdf": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b"
+  },
+  "lean_used": false,
+  "proved_scope": "Complete compact forced first stage; three actual original growth targets, evolved-parent second return and hold, full third transition with revived second parent, complete third shooting family and selected return on a definite positive equal-diffusion interval, and compact profile forces; pressure-independent obstruction for the unchanged released infinite state; exact transfer of the finite return to every radius at fixed positive physical diffusion; raw-copy term obstruction and force-flat jet space; complete-packet reset obstruction; signed based-increment residual arrays and state interface; exact full chart transition and affine-state orbit classification; actual triangular returned core and positive horizontal temperature gradient; explicit unforced affine continuation and compact flat core correction; complete signed full-support force and all mixed jets with explicit cutoff constants; quantitative annulus diffusion lower bounds and exact cancellation-defect maps. The all-stage force budget, next full-profile return map and corrected infinite trajectory remain unproved.",
+  "infinite_viscous_sequence_proved": false,
+  "public_metadata_note": "Machine paths were removed and text line endings recorded as LF after the portable replay; mathematical formulas and computation were unchanged."
+}

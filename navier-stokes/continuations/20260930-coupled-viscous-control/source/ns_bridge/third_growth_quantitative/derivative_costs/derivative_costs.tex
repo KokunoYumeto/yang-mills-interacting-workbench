@@ -1,0 +1,411 @@
+\section{Time derivatives of the actual signed third growth}
+\label{tgdc:section}
+
+This calculation is on the actual interval already constructed in
+\emph{The actual third growth target on the moving second hold} and
+\emph{Exact third growth on the moving second holding state}. It gives
+quantitative derivatives of that trajectory for the source-frame map.
+All derivatives in this section are with respect to coupled physical
+time $t_c$, and $\tau=t_c-t_b$ denotes elapsed coupled time. The notation
+does not use the cylindrical spatial radius for elapsed time.
+
+\subsection{Original data, evolving parent, and proved interval}
+
+Retain the source parameters
+\begin{equation}\label{tgdc:original}
+\begin{gathered}
+ \nu=\sqrt{A_0},\qquad
+ \mu=\lambda_0=\lceil\sqrt{A_0}/2\rceil,\qquad
+ K_j=\mu\widehat\lambda_j,\\
+ S_3=\frac{A_0}{\mu}\widehat\lambda_3^{-k_3-6},\qquad
+ P_3^*=\frac{A_0}{\mu}\widehat\lambda_3^{-7/8}=S_3e^{L_3}.
+\end{gathered}
+\end{equation}
+The physical common diffusivity is $d>0$; it is distinct from $\nu$.
+Use the actual second return $t_b$, its values $h_b,A_{1,b},P_{2,b}$,
+and the original angles $s_*,s_2,s_3$. Put
+\begin{equation}\label{tgdc:constants}
+\begin{gathered}
+ a=\sin s_2,\quad \chi_b=\sqrt{h_b^2+a^2},\quad
+ \beta_b=\arctan(a/h_b),\quad
+ b=\sin(s_3+\beta_b),\quad g_b=\cos(s_3+\beta_b),\\
+ c=bh_b-ag_b=\chi_b\sin s_3,\qquad
+ S_*=A_0\sin s_*,\quad C_*=A_0\cos s_*.
+\end{gathered}
+\end{equation}
+Here $a,b,c,S_*,C_*>0$, and the letter $b$ is the original oriented
+geometric constant, whereas $b_3$ below is an amplitude coefficient.
+The moving parent is exactly
+\begin{equation}\label{tgdc:parent}
+\begin{aligned}
+ \chi^2&=h^2+a^2,& \dot h&=a\Omega_1,&
+ \dot\Omega_1&=aA_1/\chi-dK_1^2\Omega_1,\\
+ \dot A_1&=-S_*\Omega_1-dK_1^2A_1,&
+ \dot P_2&=-dK_2^2\chi^2P_2,&
+ \dot g&=b\Omega_1,\\
+ g&=g_b+(b/a)(h-h_b),&
+ N_3&=b(A_1+C_*)+gS_*+cK_2P_2,&
+ R_3&=g^2+b^2.
+\end{aligned}
+\end{equation}
+The retained feedback is $\dot\alpha=-a^2\Omega_1/\chi^2$ and
+$\Omega_2=0$. In particular the older temperature and first vorticity
+are not frozen. The cancellation in the complete numerator is
+\begin{equation}\label{tgdc:numerator}
+ \dot N_3=-dE_3,\qquad
+ E_3=bK_1^2A_1+cK_2^3\chi^2P_2.
+\end{equation}
+
+Write $N_i=N_3(t_b)$, $a_i=N_i/K_3$,
+$b_i=K_3\sin s_3$, $\gamma_i=\sqrt{a_i b_i}$ and
+$u_i=\sqrt{b_i/a_i}$. The exact new equations, including their
+original signed seed, are
+\begin{equation}\label{tgdc:actual_pair}
+\begin{gathered}
+ y=\binom{\Theta_3}{\Omega_3},\qquad
+ \dot y=C_3y,\qquad
+ C_3=\begin{pmatrix}-\lambda_3&a_3\\b_3&-\lambda_3\end{pmatrix},\\
+ a_3=\frac{N_3}{K_3R_3},\qquad
+ b_3=\frac{K_3c}{\chi},\qquad
+ \lambda_3=dK_3^2R_3,\qquad
+ y(t_b)=-S_3\binom1{u_i}.
+\end{gathered}
+\end{equation}
+There are no new amplitude controls in this growth pair:
+$c_\vartheta=c_\omega=0$. The activation of the compact wave is a
+separate original factor $\eta(\Gamma_3\tau)$; it does not replace
+\eqref{tgdc:actual_pair} by a forced coefficient trajectory.
+
+For clarity, the following facts about this actual interval were proved
+in the third-threshold construction. They identify the trajectory to
+which the estimates below apply:
+\begin{equation}\label{tgdc:proved_boxes}
+\begin{gathered}
+ I_3=[t_b,t_3^a],\quad t_3^a-t_b=\tau_a<14/\sigma_1,\quad
+ P_3=-\Theta_3>0,\quad P_3(t_b)=S_3,\quad P_3(t_3^a)=P_3^*,\\
+ u=\Omega_3/\Theta_3,\qquad
+ \frac{u_i}{\sqrt2}\leq u\leq2u_i,\qquad
+ \frac{a_i}4\leq a_3\leq a_i,\qquad
+ \frac{b_i}2\leq b_3\leq b_i,\\
+ 1\leq R_3\leq\overline R:=\left(\frac{265}{256}\right)^2<2,
+ \quad 1\leq\frac\chi{\chi_b}\leq\frac{259}{256},\quad
+ 0<dK_3^2\leq\frac{\gamma_i}{16\sqrt2},\\
+ \frac{\gamma_i}{8\sqrt2}\leq (\log P_3)'\leq2\gamma_i,
+ \quad 0<A_1\leq A_{1,b},\quad 0<P_2\leq P_{2,b},\quad
+ 0<\Omega_1<9\sigma_1,\\
+ h_b\leq h\leq h_b+144a,\qquad
+ g_b\leq g\leq g_b+144b,\qquad
+ \tfrac12N_i\leq N_3\leq N_i,\qquad 1\leq\chi^2<10.
+\end{gathered}
+\end{equation}
+The value of $d$ is precisely the previously selected range
+$0<d\leq d_{3,\max}$, retaining its $K_3^{-2}$ dependence.
+Thus \eqref{tgdc:proved_boxes} does not assert a new unrestricted
+viscosity range or assume a further return.
+
+\subsection{Signed amplitudes and first derivatives with the diffusion retained}
+
+\begin{theorem}\label{tgdc:first_derivatives}
+For every $t_c\in I_3$, both $\Theta_3(t_c)$ and $\Omega_3(t_c)$
+are negative and strictly decreasing. Their exact component rates are
+\begin{equation}\label{tgdc:exact_first}
+ \dot\Theta_3=-P_3(a_3u-\lambda_3),\qquad
+ \dot\Omega_3=-P_3(b_3-\lambda_3u).
+\end{equation}
+They obey the bounds
+\begin{equation}\label{tgdc:component_bounds}
+\begin{gathered}
+ S_3e^{\gamma_i\tau/(8\sqrt2)}
+ \leq P_3(t_c)\leq\min\{P_3^*,S_3e^{2\gamma_i\tau}\},\\
+ \frac{u_i}{\sqrt2}P_3\leq |\Omega_3|\leq2u_iP_3,\\
+ \left(\frac{\gamma_i}{4\sqrt2}-dK_3^2\overline R\right)P_3
+ \leq |\dot\Theta_3|\leq2\gamma_iP_3,\\
+ u_i\left(\frac{\gamma_i}{2}-2dK_3^2\overline R\right)P_3
+ \leq |\dot\Omega_3|\leq\gamma_i u_iP_3.
+\end{gathered}
+\end{equation}
+In particular both lower derivative bounds are positive, and
+\begin{equation}\label{tgdc:norm_bounds}
+\begin{gathered}
+ P_3\sqrt{1+u_i^2/2}\leq |y|_2
+       \leq P_3\sqrt{1+4u_i^2}\leq P_3^*\sqrt{1+4u_i^2},\\
+ |\dot y|_2\leq\gamma_iP_3\sqrt{4+u_i^2}
+       \leq\gamma_iP_3^*\sqrt{4+u_i^2}.
+\end{gathered}
+\end{equation}
+The original beginning and attained endpoint have the exact derivatives
+\begin{equation}\label{tgdc:endpoint_derivatives}
+\begin{aligned}
+ \dot y(t_b)&=-S_3(\gamma_i-dK_3^2)\binom1{u_i},\\
+ y(t_3^a)&=-P_3^*\binom1{u(t_3^a)},\\
+ \dot y(t_3^a)&=-P_3^*
+ \binom{a_3(t_3^a)u(t_3^a)-dK_3^2R_3(t_3^a)}
+       {b_3(t_3^a)-dK_3^2R_3(t_3^a)u(t_3^a)}.
+\end{aligned}
+\end{equation}
+\end{theorem}
+\begin{proof}
+The signs and quotient in \eqref{tgdc:proved_boxes} give
+$y=-P_3(1,u)^T$. Substituting this expression in the exact pair proves
+\eqref{tgdc:exact_first}. Integrating the already proved logarithmic
+rate from $t_b$ and using the attained endpoint and strict increase
+of $P_3$ gives the first line of \eqref{tgdc:component_bounds}.
+The quotient box gives its second line. Since $a_i u_i=\gamma_i$
+and $b_i=\gamma_i u_i$, direct multiplication of the positive boxes
+gives
+\[
+ \frac{\gamma_i}{4\sqrt2}\leq a_3u\leq2\gamma_i,
+ \qquad
+ \frac{\gamma_i u_i}{2}\leq b_3\leq\gamma_i u_i,
+ \qquad 0<\lambda_3\leq dK_3^2\overline R.
+\]
+Consequently the displayed lower bound for $a_3u-\lambda_3$ follows.
+It is at least $\gamma_i/(8\sqrt2)>0$, because
+$\overline R<2$ and $dK_3^2\leq\gamma_i/(16\sqrt2)$.
+Similarly,
+\[
+ b_3-\lambda_3u
+ \geq u_i(\gamma_i/2-2dK_3^2\overline R)
+ >\gamma_i u_i(1/2-1/(4\sqrt2))
+ >\gamma_i u_i/4>0.
+\]
+Thus both derivatives in \eqref{tgdc:exact_first} are strictly negative.
+Dropping their nonnegative diffusion losses only for the purpose of
+an upper bound gives the two upper derivative estimates; the exact
+rates continue to contain the losses. Squaring the two amplitude and
+two derivative bounds, adding them, and taking the positive square
+root proves \eqref{tgdc:norm_bounds}. Finally $R_3(t_b)=1$,
+$u(t_b)=u_i$, $a_3(t_b)=a_i$ and $b_3(t_b)=b_i$ give the first
+endpoint identity. Substitution of the proved target value gives
+the other two. In particular no later endpoint was substituted for
+the actual $u(t_3^a)$.
+\end{proof}
+
+\subsection{Explicit coefficient rates}
+
+Set $\overline H=h_b+144a$, $\overline G=g_b+144b$ and
+$\overline W=9\sigma_1$. Differentiating the complete coefficients
+gives
+\begin{equation}\label{tgdc:coefficient_rates}
+\begin{aligned}
+ \dot a_3&=-a_3\left(\frac{dE_3}{N_3}
+                            +\frac{2bg\Omega_1}{R_3}\right),\\
+ \dot b_3&=-b_3\frac{ah\Omega_1}{\chi^2},\qquad
+ \dot\lambda_3=2dK_3^2bg\Omega_1.
+\end{aligned}
+\end{equation}
+Every quantity on the right comes from the moving parent. In particular
+the exact numerator derivative \eqref{tgdc:numerator} is used before
+any upper estimate. Because $K_1<K_2$, $\chi^2<10$ and all summands
+of $N_3$ are positive, $E_3\leq10K_2^2N_3$. Thus
+\begin{equation}\label{tgdc:coefficient_rate_bounds}
+\begin{gathered}
+ |\dot a_3|\leq
+ a_i(10dK_2^2+2b\overline G\overline W),\qquad
+ |\dot b_3|\leq
+ b_i a\overline H\overline W\chi_b^{-2},\\
+ |\dot\lambda_3|\leq
+ 2dK_3^2 b\overline G\overline W.
+\end{gathered}
+\end{equation}
+These formulas also display the distinct inherited $K_2^2$ loss and
+new $K_3^2$ loss. They do not replace either by the source scaling
+parameter $\nu$.
+
+\subsection{A closed all-orders derivative calculation}
+
+Here are finite recurrences whose values are explicit upper bounds
+from the actual birth data and the already proved interval. They use
+ordinary derivatives, with no change to physical time or amplitudes.
+For integers $n\geq0$ and $m\geq2$ define the product expression
+\[
+ \mathcal P_n(X^{(1)},\ldots,X^{(m)})
+ =\sum_{j_1+\cdots+j_m=n}
+       \frac{n!}{j_1!\cdots j_m!}
+       X^{(1)}_{j_1}\cdots X^{(m)}_{j_m}.
+\]
+This notation is a finite sum, and repeated arguments mean repeated
+factors. Define the nonnegative arrays $H,W,A,P,Q,G,N,J$ initially by
+\begin{equation}\label{tgdc:majorant_initial}
+\begin{gathered}
+ H_0=\overline H,\quad W_0=\overline W,\quad
+ A_0^{\rm bd}=A_{1,b},\quad P_0=P_{2,b},\quad
+ Q_0=\chi_b^{-1},\quad G_0=\overline G,\quad
+ N_0=N_i,\quad J_0=1.
+\end{gathered}
+\end{equation}
+In the following recurrences the array $A$ has entries $A_n^{\rm bd}$;
+the superscript distinguishes its zeroth entry from the unchanged
+physical constant $A_0$ in \eqref{tgdc:original}. Write
+\[
+ X_n=\mathcal P_n(H,H)+a^2\mathbf1_{n=0}.
+\]
+Having computed all eight arrays up to index $n$, compute index $n+1$
+by the explicit formulas
+\begin{equation}\label{tgdc:parent_majorants}
+\begin{aligned}
+ H_{n+1}&=aW_n,\\
+ W_{n+1}&=a\mathcal P_n(A,Q)+dK_1^2W_n,\\
+ A_{n+1}^{\rm bd}&=S_*W_n+dK_1^2A_n^{\rm bd},\\
+ P_{n+1}&=dK_2^2\mathcal P_n(X,P),\\
+ Q_{n+1}&=a\mathcal P_n(H,W,Q,Q,Q),\\
+ G_{n+1}&=bW_n,\\
+ N_{n+1}&=dbK_1^2A_n^{\rm bd}
+                 +dcK_2^3\mathcal P_n(X,P),\\
+ J_{n+1}&=2b\mathcal P_n(G,W,J,J).
+\end{aligned}
+\end{equation}
+For the phase-length array use
+\[
+ R_0^{\rm bd}=\overline R,\qquad
+ R_n^{\rm bd}=\mathcal P_n(G,G)\quad(n\geq1).
+\]
+The coefficient arrays are
+\begin{equation}\label{tgdc:coefficient_majorants}
+\begin{gathered}
+ \mathfrak A_0=a_i,\quad \mathfrak B_0=b_i,\quad
+ \mathfrak D_0=dK_3^2\overline R,\\
+ \mathfrak A_n=K_3^{-1}\mathcal P_n(N,J),\qquad
+ \mathfrak B_n=K_3cQ_n,\qquad
+ \mathfrak D_n=dK_3^2R_n^{\rm bd}\quad(n\geq1).
+\end{gathered}
+\end{equation}
+No optimization of these finite sums is needed for their validity.
+In particular $\mathfrak A_1$ may be replaced by the smaller of its
+value above and the first bound in \eqref{tgdc:coefficient_rate_bounds},
+and similarly for the other two first coefficient derivatives.
+
+The amplitude arrays start with the actual target and the sharper
+first-derivative bounds already proved:
+\begin{equation}\label{tgdc:amplitude_majorants}
+\begin{gathered}
+ T_0=P_3^*,\qquad O_0=2u_iP_3^*,\qquad
+ T_1=2\gamma_iP_3^*,\qquad O_1=\gamma_i u_iP_3^*,\\
+ T_{n+1}=\sum_{j=0}^n\binom nj
+      (\mathfrak D_jT_{n-j}+\mathfrak A_jO_{n-j}),\qquad n\geq1,\\
+ O_{n+1}=\sum_{j=0}^n\binom nj
+      (\mathfrak B_jT_{n-j}+\mathfrak D_jO_{n-j}),\qquad n\geq1.
+\end{gathered}
+\end{equation}
+The choice to begin these recurrences at $n=1$ preserves the stronger
+first-derivative estimates instead of substituting a larger matrix-norm
+bound.
+
+\begin{theorem}\label{tgdc:all_orders}
+For every integer $n\geq0$ the finite arrays above satisfy on $I_3$
+\begin{equation}\label{tgdc:all_order_bounds}
+\begin{gathered}
+ |\partial_{t_c}^n\Theta_3|\leq T_n,\qquad
+ |\partial_{t_c}^n\Omega_3|\leq O_n,\qquad
+ |\partial_{t_c}^ny|_2\leq\sqrt{T_n^2+O_n^2},\\
+ |\partial_{t_c}^na_3|\leq\mathfrak A_n,\qquad
+ |\partial_{t_c}^nb_3|\leq\mathfrak B_n,\qquad
+ |\partial_{t_c}^n\lambda_3|\leq\mathfrak D_n.
+\end{gathered}
+\end{equation}
+The exact, signed amplitude derivative recurrence underlying these
+bounds is
+\begin{equation}\label{tgdc:exact_derivative_recurrence}
+ \partial_{t_c}^{n+1}y
+     =\sum_{j=0}^n\binom nj
+            (\partial_{t_c}^jC_3)(\partial_{t_c}^{n-j}y),
+ \qquad n\geq0.
+\end{equation}
+In particular the exact second derivative contains the changing
+coefficient and the complete diffusion square:
+\begin{equation}\label{tgdc:second_derivative}
+ \ddot y=
+ \begin{pmatrix}
+ \lambda_3^2+a_3b_3-\dot\lambda_3&\dot a_3-2\lambda_3a_3\\
+ \dot b_3-2\lambda_3b_3&\lambda_3^2+a_3b_3-\dot\lambda_3
+ \end{pmatrix}y.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Introduce the exact auxiliary functions $q=\chi^{-1}$ and
+$j=R_3^{-1}$, both well-defined by \eqref{tgdc:proved_boxes}.
+Direct differentiation of their specified inverses gives
+\[
+ \dot q=-ah\Omega_1q^3,\qquad
+ \dot j=-2bg\Omega_1j^2.
+\]
+These identities retain the actual phase lengths; the symbols do not
+replace them by constant values. The complete equations for
+$(h,\Omega_1,A_1,P_2,q,g,N_3,j)$ are therefore the signed polynomial
+system consisting of \eqref{tgdc:parent}, \eqref{tgdc:numerator} and
+these two equations, with $\chi^2=h^2+a^2$ in the parent losses.
+Their zero-order absolute values are bounded respectively by
+$(H_0,W_0,A_0^{\rm bd},P_0,Q_0,G_0,N_0,J_0)$:
+the claims for $q$ and $j$ use $\chi\geq\chi_b$ and $R_3\geq1$.
+
+For any $m$ differentiable factors the ordinary $n$th derivative of
+their product is $\mathcal P_n$ applied to their derivative arrays.
+To prove this formula without assuming it, start with $n=0$.
+Differentiating a term of order $n$ once chooses one factor whose
+index increases. At indices summing to $n+1$, the resulting coefficient
+is the sum of $n!/(j_1!\cdots(j_k-1)!\cdots j_m!)$ over indices
+$k$ with $j_k>0$. It is
+$n!(j_1+\cdots+j_m)/(j_1!\cdots j_m!)=(n+1)!/(j_1!\cdots j_m!)$.
+This proves the formula by induction.
+
+Apply this exact product derivative identity to the signed parent
+equations and then the triangle inequality. For instance
+\[
+ \partial_{t_c}^{n+1}N_3
+  =-dbK_1^2\partial_{t_c}^n A_1
+   -dcK_2^3\partial_{t_c}^n\{(h^2+a^2)P_2\},
+\]
+and its absolute value is bounded by the displayed recurrence for
+$N_{n+1}$. This example shows explicitly that neither inherited
+diffusion term is omitted. The other seven equations give exactly
+\eqref{tgdc:parent_majorants}. Induction in $n$ proves all eight parent
+derivative bounds. The identities $R_3=g^2+b^2$,
+$a_3=N_3j/K_3$, $b_3=K_3cq$ and $\lambda_3=dK_3^2R_3$ then prove
+\eqref{tgdc:coefficient_majorants} for $n\geq1$ by the same product
+formula. Their zero-order bounds were already proved in
+\eqref{tgdc:proved_boxes}.
+
+Repeatedly differentiate the exact pair to obtain
+\eqref{tgdc:exact_derivative_recurrence}. Its componentwise absolute
+value gives \eqref{tgdc:amplitude_majorants}, with the zero and first
+orders supplied by Theorem~\ref{tgdc:first_derivatives}. Induction
+now proves the two amplitude bounds at every order, and the Euclidean
+norm bound follows by summing squares. Finally
+$\ddot y=(\dot C_3+C_3^2)y$ and direct multiplication of the two by two
+matrix give \eqref{tgdc:second_derivative}. Every recurrence uses
+finitely many sums at each specified order. Thus each resulting bound
+is a determinate expression in the original physical constants and
+actual birth data, rather than an unevaluated supremum of a missing
+coefficient derivative.
+\end{proof}
+
+\subsection{Derivative transport through the specified source clock}
+
+Let $L_s>0$ be the source slot length used for this actual interval,
+and define its specified clock by
+\[
+ \alpha_c=\tau_a/L_s,\qquad
+ t_c=t_b+\alpha_c v,\qquad 0\leq v\leq L_s.
+\]
+The two actual endpoints are retained. Since $\alpha_c$ is constant
+for the fixed trajectory and slot, repeated chain differentiation
+gives, exactly,
+\begin{equation}\label{tgdc:clock}
+ \partial_v^ny(t_b+\alpha_cv)
+      =\alpha_c^n\partial_{t_c}^ny(t_b+\alpha_cv),\qquad
+ |\partial_v^ny|_2\leq\alpha_c^n\sqrt{T_n^2+O_n^2}.
+\end{equation}
+In a source chart with fixed label $Q$, exponent $h_{\rm src}$,
+and $\partial_t v=Q^{-1-h_{\rm src}}$, the derivative contribution
+acting on this amplitude alone is consequently
+\[
+ \partial_t^ny(t_b+\alpha_cv)
+  =(\alpha_cQ^{-1-h_{\rm src}})^n
+                      \partial_{t_c}^ny(t_b+\alpha_cv).
+\]
+This identity holds with the stated fixed chart parameters and affine
+clock; derivatives of any additional frame, cutoff, or varying
+parameter must be included by the ordinary product rule. In particular
+neither the clock factor nor the physical frequency has been replaced
+by one. These finite derivative estimates establish no uniform
+terminal extension for an infinite sequence.

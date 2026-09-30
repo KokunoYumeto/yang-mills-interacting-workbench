@@ -1,0 +1,262 @@
+{
+  "schema": "moment-quantitative-exact-v1",
+  "all_passed": true,
+  "check_count": 63,
+  "checks": [
+    {
+      "name": "source A+D retains one",
+      "passed": true
+    },
+    {
+      "name": "source D+2h retains A",
+      "passed": true
+    },
+    {
+      "name": "implicit coordinate z has unit axial derivative",
+      "passed": true
+    },
+    {
+      "name": "implicit coordinate z has zero time derivative",
+      "passed": true
+    },
+    {
+      "name": "implicit coordinate tau has zero axial derivative",
+      "passed": true
+    },
+    {
+      "name": "implicit coordinate tau has negative unit time derivative",
+      "passed": true
+    },
+    {
+      "name": "actual q axial coefficient",
+      "passed": true
+    },
+    {
+      "name": "actual q time coefficient",
+      "passed": true
+    },
+    {
+      "name": "actual eta axial coefficient",
+      "passed": true
+    },
+    {
+      "name": "actual eta time coefficient",
+      "passed": true
+    },
+    {
+      "name": "axial-time operators commute with their shifted homogeneities",
+      "passed": true
+    },
+    {
+      "name": "radial-axial operators commute with shifted homogeneity",
+      "passed": true
+    },
+    {
+      "name": "radial-time operators commute with shifted homogeneity",
+      "passed": true
+    },
+    {
+      "name": "original moving bump axial coefficient e=0",
+      "passed": true
+    },
+    {
+      "name": "weighted cumulative bump derivative e=0",
+      "passed": true
+    },
+    {
+      "name": "pressure or moment bump time coefficient e=0",
+      "passed": true
+    },
+    {
+      "name": "original moving bump axial coefficient e=1",
+      "passed": true
+    },
+    {
+      "name": "weighted cumulative bump derivative e=1",
+      "passed": true
+    },
+    {
+      "name": "pressure or moment bump time coefficient e=1",
+      "passed": true
+    },
+    {
+      "name": "original moving bump axial coefficient e=2",
+      "passed": true
+    },
+    {
+      "name": "weighted cumulative bump derivative e=2",
+      "passed": true
+    },
+    {
+      "name": "pressure or moment bump time coefficient e=2",
+      "passed": true
+    },
+    {
+      "name": "actual pressure defect includes radial and axial covariance",
+      "passed": true
+    },
+    {
+      "name": "actual corrected axial flux includes radial pressure moment",
+      "passed": true
+    },
+    {
+      "name": "source pressure bump radial integral",
+      "passed": true
+    },
+    {
+      "name": "compact mean pressure upper boundary",
+      "passed": true
+    },
+    {
+      "name": "compact mean pressure radial equation",
+      "passed": true
+    },
+    {
+      "name": "actual reconstructed pressure weighted moment",
+      "passed": true
+    },
+    {
+      "name": "actual mixed pressure defect derivative 0,0",
+      "passed": true
+    },
+    {
+      "name": "actual mixed axial flux derivative 0,0",
+      "passed": true
+    },
+    {
+      "name": "actual mixed pressure defect derivative 1,0",
+      "passed": true
+    },
+    {
+      "name": "actual mixed axial flux derivative 1,0",
+      "passed": true
+    },
+    {
+      "name": "actual mixed pressure defect derivative 0,1",
+      "passed": true
+    },
+    {
+      "name": "actual mixed axial flux derivative 0,1",
+      "passed": true
+    },
+    {
+      "name": "actual mixed pressure defect derivative 2,0",
+      "passed": true
+    },
+    {
+      "name": "actual mixed axial flux derivative 2,0",
+      "passed": true
+    },
+    {
+      "name": "actual mixed pressure defect derivative 1,1",
+      "passed": true
+    },
+    {
+      "name": "actual mixed axial flux derivative 1,1",
+      "passed": true
+    },
+    {
+      "name": "actual mixed pressure defect derivative 0,2",
+      "passed": true
+    },
+    {
+      "name": "actual mixed axial flux derivative 0,2",
+      "passed": true
+    },
+    {
+      "name": "rz contraction retains both old cross terms and self term",
+      "passed": true
+    },
+    {
+      "name": "ztheta contraction retains both old cross terms and self term",
+      "passed": true
+    },
+    {
+      "name": "pressure diagonal contraction",
+      "passed": true
+    },
+    {
+      "name": "axial defect diagonal contraction",
+      "passed": true
+    },
+    {
+      "name": "rz exact half-norm eigenvalue polynomial",
+      "passed": true
+    },
+    {
+      "name": "ztheta exact half-norm eigenvalue polynomial",
+      "passed": true
+    },
+    {
+      "name": "actual complete amplitude-shape mixed product 0,1",
+      "passed": true
+    },
+    {
+      "name": "actual complete amplitude-shape mixed product 1,1",
+      "passed": true
+    },
+    {
+      "name": "actual complete amplitude-shape mixed product 0,2",
+      "passed": true
+    },
+    {
+      "name": "actual complete amplitude-shape mixed product 2,2",
+      "passed": true
+    },
+    {
+      "name": "actual complete amplitude-shape mixed product 1,3",
+      "passed": true
+    },
+    {
+      "name": "original weighted radial norm exponent e=-1",
+      "passed": true
+    },
+    {
+      "name": "original weighted radial norm exponent e=0",
+      "passed": true
+    },
+    {
+      "name": "original weighted radial norm exponent e=1",
+      "passed": true
+    },
+    {
+      "name": "original weighted radial norm exponent e=2",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=0,b=0,s=0",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=1,b=0,s=0",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=0,b=1,s=0",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=0,b=1,s=1",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=2,b=3,s=0",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=2,b=3,s=1",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=2,b=3,s=2",
+      "passed": true
+    },
+    {
+      "name": "actual all-order time unit a=2,b=3,s=3",
+      "passed": true
+    }
+  ],
+  "proof_sha256": "da39fd2660a969f893836f232e720ad1e3c54250bf6b7702a6de8324509cad49",
+  "script_sha256": "f3f0a996b80d0e5c6fdeb4126af033ad31b92538dc29de5572b95d864624012d",
+  "scope": "Exact source-coordinate differential operators; pressure/covariance defect identities; mixed derivative product and chart units. Analytic estimates are proved in the TeX."
+}

@@ -1,0 +1,108 @@
+{
+  "schema": "coupled-viscous-control-build-v1",
+  "all_passed": true,
+  "operations": [
+    {
+      "kind": "exact_replay",
+      "file": "replay_exact.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "finite_stage/replay_first_stage.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "paper_coupling/replay_coupled.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "paper_coupling/profile_diffusion/replay_profile_diffusion.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "entry_audit/replay_actual_entry.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "second_return/replay_second_return.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "exact_replay",
+      "file": "modified_spatial/replay_spatial.py",
+      "exit_code": 0
+    },
+    {
+      "kind": "integration_export",
+      "exit_code": 0
+    },
+    {
+      "kind": "latex",
+      "pass_number": 1,
+      "exit_code": 0
+    },
+    {
+      "kind": "latex",
+      "pass_number": 2,
+      "exit_code": 0
+    },
+    {
+      "kind": "latex",
+      "pass_number": 3,
+      "exit_code": 0
+    },
+    {
+      "kind": "integration_latex",
+      "pass_number": 1,
+      "exit_code": 0
+    },
+    {
+      "kind": "integration_latex",
+      "pass_number": 2,
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "replay_exact.py": "38c0baceac37a5055f5c05aa4b47fa561c020cca50158ae041ab23edfa8bf8d1",
+    "finite_stage/replay_first_stage.py": "2fd2503ad94d0b1deedc653da2b404ac61bff72eb96f82f2fd02e22d90c10100",
+    "paper_coupling/replay_coupled.py": "6b40041d0a0ff1c4dea1158b50a0a0067191c424ad96f0e22bf4ecd93ccc6585",
+    "paper_coupling/profile_diffusion/replay_profile_diffusion.py": "a9b4828cf436c077a0f61f52f159e64df1fb7cf5249512338f4652361e6f30e6",
+    "entry_audit/replay_actual_entry.py": "1378c809c10755e976c7028d7ffd662e2cc278dfd77f370ec0015f282ca21163",
+    "second_return/replay_second_return.py": "350e65dd0c801c392d6e75dd08f2b89468ffea43fa1927ec1a470bd3b967fb92",
+    "modified_spatial/replay_spatial.py": "bd22e8b1fbf63c1ee6026c77877d68e23dcb80348cb194174909462364b70afc",
+    "coupled_feedback.tex": "408e81e8c1ac77b83edb28ddb0660f5b321086f9c5159e9ab2ea23398707a2e9",
+    "coupled_viscous_control.tex": "119324b9aac2f42b664c2ce13c081a0ed9b0afb55cb915065214b58a751620d6",
+    "infinite_status.tex": "353ef85d1c8db45a80e7b3605f976c75d04a9055559c6c00c45629904f67e543",
+    "physical_realization.tex": "d076bd1150571b9772706f07ae229890ff216ea9e5fce28792adaed528fae4e3",
+    "finite_stage/actual_viscous_entry.tex": "91e70814420bcc828f9f3bbc30bd3b88f71a1b00862d8195a46e661cacc000db",
+    "finite_stage/evolving_diffusive_parent_section.tex": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453",
+    "finite_stage/first_stage_section.tex": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e",
+    "finite_stage/first_stage_standalone.tex": "c9cfdfdf8dbc83cef22390e2e6e117154bfdbb34e4ef0943f25406f71237ed00",
+    "integration/coupled_viscous_control_body.tex": "9f0b3c430da19381bb717046b2e49564bf361508b720c8f95f422823e44dda2e",
+    "integration/coupled_viscous_control_preamble.tex": "d1b0ef573e988b6bfc0cc716492e323ae4c9d060a6ca326674a8ed8c337cc56d",
+    "integration/integration_check.tex": "c7fada4945963761afd30eaa58a8d8bfc86e4bfd0c76adccfbe9485d171f0a06",
+    "modified_spatial/modified_spatial_body.tex": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4",
+    "modified_spatial/standalone.tex": "054ebb287d7233e070a39c8707d37ae8f6e451e74bcdf459d0c8f8728c8c1cbd",
+    "paper_coupling/coupled_background.tex": "e56339409dfc361314fd667e83a677d599b6803031332a4a43aff510375e5d06",
+    "paper_coupling/coupled_background_body.tex": "c74e3e6f97d103067d1574ad41de6ec0e1c915cc43004b8e71a8b62c06a5bb78",
+    "second_return/second_return.tex": "a5d91592efeb651682243e8252653e83355f3d2dfeecc7984e3db4e33a34c2b3",
+    "second_return/second_return_body.tex": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4",
+    "paper_coupling/profile_diffusion/profile_diffusion.tex": "59656a47903ba6ebb4c75d3b5f9aee1eab172166c96d21da7bdd6c297982fd91",
+    "paper_coupling/profile_diffusion/profile_diffusion_body.tex": "e1ede7254ba21aa35e83c66e4dbc20ad3b9be59eb7aded51498f949e81d896fc",
+    "paper_coupling/profile_diffusion/profile_diffusion_preamble.tex": "7761d1d6ced7b5a676dcce26a2cdb310a5ea9e26c417dc101988216eda0c92c1",
+    "paper_coupling/profile_diffusion/tmp/pdfs/integration_smoke.tex": "bea383bc95ab16e9b8c59cc5f0d02a225e981bf30d2bf1a2e494acff4a6269fb",
+    "finite_stage/audit/first_stage_audit.tex": "a9ed92cc446ac1c72b181cdb0b5d957987f17fbfff9680a3f7c234cfe8457004",
+    "audit_root/source_infinite/RATIO_EXTRACTION.tex": "c30f8b87965cc243e3a0bd718cc9da04d30d046132ea18f906f2c8dc3640d23e",
+    "audit_root/source_infinite/reviewed_infinite_status.tex": "353ef85d1c8db45a80e7b3605f976c75d04a9055559c6c00c45629904f67e543",
+    "sources/alpoge_buckmaster_boussinesq.pdf": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b",
+    "coupled_viscous_control.pdf": "967f618532895bc0234092b299e3b6bedbd0cf87a23edff50c24f6411297d45c"
+  },
+  "lean_used": false,
+  "proved_scope": "Complete compact first stage and actual modified two-stage original growth thresholds, evolved-parent second return and hold, explicit positive equal-diffusion range and all compact profile forces/costs; source infinite estimates explicitly attributed.",
+  "infinite_viscous_sequence_proved": false
+}

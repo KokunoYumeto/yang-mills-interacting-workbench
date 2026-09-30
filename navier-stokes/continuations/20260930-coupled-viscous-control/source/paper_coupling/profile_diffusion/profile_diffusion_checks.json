@@ -1,0 +1,159 @@
+{
+  "schema": "actual-profile-retained-diffusion/v1",
+  "symbolic_engine": "SymPy 1.13.1",
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "name": "actual_F_first_derivative",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "actual_F_second_derivative",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "actual_F_third_derivative",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "phase_transport",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "wave_velocity_divergence",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "wave_vorticity",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "wave_self_scalar_advection",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "wave_self_vorticity_advection",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "exact_scalar_residual",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "exact_vorticity_residual",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "trace_free_DJ_identity",
+      "passed": true,
+      "exact_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "momentum_V_coefficient",
+      "passed": true,
+      "exact_residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "momentum_T_coefficient",
+      "passed": true,
+      "exact_residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "full_momentum_pressure_cancellation",
+      "passed": true,
+      "exact_residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "localized_Laplacian_square_six_terms",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "localized_scalar_Laplacian",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "modewise_common_heat_factor",
+      "passed": true,
+      "exact_residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "affine_core_second_derivative_obstruction",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "affine_core_third_derivative_obstruction",
+      "passed": true,
+      "exact_residuals": [
+        "0"
+      ]
+    }
+  ],
+  "source_sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b",
+  "proof_sha256": "59656a47903ba6ebb4c75d3b5f9aee1eab172166c96d21da7bdd6c297982fd91",
+  "scope": "Exact finite-interval prescribed-affine-background identities and profile solutions; fixed-profile diffusion force map.",
+  "analytic_proofs_in_tex": [
+    "No constant diffusion eigenvalue for actual profile with nontrivial affine interval.",
+    "Existence and uniqueness of the all-mode profile evolution on a closed finite interval.",
+    "Positive periodic heat time removes every exact affine interval of the nonzero odd profile.",
+    "Gaussian-tail bounds for the interior affine defect.",
+    "Compact support, affine-core vanishing and quantitative localized diffusion costs."
+  ],
+  "fully_coupled_infinite_viscous_sequence_proved": false,
+  "lean_run": false
+}

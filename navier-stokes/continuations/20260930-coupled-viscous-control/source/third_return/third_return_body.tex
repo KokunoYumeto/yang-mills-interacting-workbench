@@ -1,0 +1,579 @@
+\section{The exact third steering map with two evolving parents}
+\label{tr:section}
+
+The actual third transition supplies a nonvertical second phase and
+a nonzero second vorticity. This section derives the original next
+steering system from that state. Its prescribed horizontal component
+determines all three phases explicitly. The resulting six older
+equations retain both parent temperatures, both parent vorticities,
+and their different physical diffusion rates. We prove an explicit
+positive interval of the actual steering evolution and the exact
+shooting and holding equations. A third return root is not asserted
+here; its endpoint estimates are a subsequent calculation.
+
+\subsection{Actual source data and prescribed horizontal component}
+
+Use the parameters and actual endpoint $t_1$ of
+Theorem~\ref{tt:transition}. In particular retain
+\[
+ \begin{gathered}
+ a=\sin s_2,\quad b=r_b\sin s_3,\quad
+ c=A_0\cos s_*,\quad C=A_0\sin s_*,\\
+ s=s_3=\frac{L_3\sigma_1}{\sigma_2},\quad
+ L=L_3,\quad \Gamma=\Gamma_3=\sigma_2\sin s.
+ \end{gathered}
+\]
+The constants $a,b,c,C$ are positive. The quantity
+$\nu=\sqrt{A_0}$ remains the source time scale, whereas $d>0$
+is physical viscosity and thermal diffusivity. The original physical
+frequencies remain $K_j=\mu\widehat\lambda_j$ with
+$\mu=\lambda_0=\lceil\sqrt{A_0}/2\rceil$.
+Put
+\begin{equation}\label{tr:entry}
+ Z_1=\zeta_{3,1}(t_1)>0,\qquad
+ \chi_1=|\zeta_3(t_1)|>0,\qquad
+ P_{3,1}=-\Theta_3(t_1)>0,\qquad
+ v_1=\frac{\sigma_2\Omega_3(t_1)}{K_3\chi_1\Theta_3(t_1)}>0.
+\end{equation}
+All these numbers are the actual diffusive transition values; neither
+$\chi_1$ nor $Z_1/\sin s$ is replaced by one.
+Write $\tau=\Gamma(t-t_1)$, $T=1+L^{-1}$, and retain exactly
+the source profiles $\eta,\eta_2$ and $H=\|\eta_2\|_\infty$.
+Thus $\eta$ is a smooth nondecreasing step from zero to one on
+$[0,1]$, and $\eta_2\in C_c^\infty((0,1))$ is nonnegative
+with integral one. For the source trial parameter $m\in[0,3]$, set
+\begin{equation}\label{tr:Z}
+ Z_m(\tau)=
+ \begin{cases}
+ Z_1(1-\eta(\tau)),&0\leq\tau\leq1,\\
+ -mL\sin s\,\chi_1\eta_2(L(\tau-1)),&1\leq\tau\leq T,\\
+ 0,&\tau\geq T.
+ \end{cases}
+\end{equation}
+The source pulse parameter in (3.12) is $h_3=mL\sin s$;
+its full range $[0,3L\sin s]$ is preserved. The multiplier
+$\chi_1$ in the negative pulse is required by that equation.
+Flatness of the step and interior support of the pulse make
+\eqref{tr:Z} smooth at the two joins, with every derivative zero
+there apart from its displayed constant value at $\tau=0$.
+The prescribed family is independent of $m$ before $\tau=1$.
+For every integer $r\geq1$ its physical derivatives on the two
+pieces are exactly
+\begin{equation}\label{tr:Z_derivatives}
+ \partial_t^r Z_m=
+ \begin{cases}
+ -Z_1\Gamma^r\eta^{(r)}(\tau),&0\leq\tau\leq1,\\
+ -m\chi_1\sin s\,L(\Gamma L)^r
+          \eta_2^{(r)}(L(\tau-1)),&1\leq\tau\leq T.
+ \end{cases}
+\end{equation}
+In particular the pulse derivative in the angular control contains
+$\Gamma L^2$, with its full original coefficient.
+
+\subsection{Complete physical coordinate equations and inverse}
+
+Let $J=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$.
+Use the exact determinant coordinates of \eqref{tt:coordinates}:
+\begin{equation}\label{tr:coordinates}
+ \begin{gathered}
+ D=h^2+a^2,\qquad
+ x=\frac{hg-ab}{D},\qquad y=\frac{ag+hb}{D},\qquad
+ R=x^2+y^2=\frac{g^2+b^2}{D},\\
+ E_1=-K_1\Theta_1,\qquad E_2=-K_2\Theta_2,\qquad
+ N_2=a(E_1+c)+Ch,\qquad
+ N_3=(E_1+c)y+Cx+bE_2.
+ \end{gathered}
+\end{equation}
+Here $D=|\zeta_2|^2$ and $R=|\zeta_3|^2$ are scalars.
+For a prescribed $Z=Z_m(\Gamma(t-t_1))$ put
+\begin{equation}\label{tr:inverse}
+ \begin{gathered}
+ Y=\sqrt{R-Z^2},\qquad \zeta_3=(Z,Y),\\
+ \zeta_2=\left(\frac{gZ-bY}{R},\frac{gY+bZ}{R}\right),
+ \qquad
+ \zeta_1=\left(\frac{xZ-yY}{R},\frac{xY+yZ}{R}\right).
+ \end{gathered}
+\end{equation}
+The square root specifies the original positive third second component.
+On the component domain used below, $h,g,x,y>0$ and all three
+second components are positive. The exact angular inverse is
+\begin{equation}\label{tr:angles}
+ \begin{gathered}
+ \phi_3=\arcsin(Z/\sqrt R),\qquad
+ \phi_2=\phi_3-\arctan(b/g),\\
+ \phi_1=\phi_2-\arctan(a/h),\qquad
+ \alpha=s_*-\phi_1.
+ \end{gathered}
+\end{equation}
+Both inverse trigonometric functions take their principal real branches.
+These formulas retain the original angular lift at $t_1$; continuity
+in this positive-component domain precludes a change by $2\pi$.
+Indeed the actual transition has
+$\phi_3=\theta+\arctan(b/g)\in(-\pi/2,\pi/2)$, as follows
+from \eqref{tt:revivalbounds}, $g>3/4$ and $b<4a$.
+The principal inverse therefore agrees with the actual transition
+lift, rather than selecting a new representative. An alternative
+unwrapped initial lift would retain its fixed initial $2\pi$ multiple
+throughout the same formulas.
+
+The complete closed older system in physical time is
+\begin{equation}\label{tr:closed}
+ \begin{aligned}
+ \dot h&=a\Omega_1,\\
+ \dot g&=\Omega_1\frac{2ahg+(h^2-a^2)b}{D}+b\Omega_2,\\
+ \dot E_1&=-C\Omega_1-dK_1^2E_1,\\
+ \dot\Omega_1&=-E_1\frac{xZ-yY}{R}-dK_1^2\Omega_1,\\
+ \dot E_2&=-\frac{N_2}{D}\Omega_2-dK_2^2DE_2,\\
+ \dot\Omega_2&=-E_2\frac{gZ-bY}{R}-dK_2^2D\Omega_2.
+ \end{aligned}
+\end{equation}
+Its six initial values are inherited from $t_1$ without resetting any
+older amplitude. Neither $\Omega_3$ nor $\Theta_3$ enters this
+older system, because the third shear does not enter its own parent.
+The exact angular control reconstructed from it is
+\begin{equation}\label{tr:control}
+ \begin{gathered}
+ \mathcal F_3=
+ \frac{\Omega_1y\zeta_{1,1}+(b\Omega_2/D)\zeta_{2,1}}{Y},
+ \qquad
+ \dot\alpha=\mathcal F_3-\frac{\dot Z}{Y},\\
+ \dot Z=\Gamma\,\partial_\tau Z_m.
+ \end{gathered}
+\end{equation}
+Thus the prescribed component and the source control (3.12) are
+exactly equivalent; no independent angular forcing was substituted.
+
+The complete original deformation matrices are
+\begin{equation}\label{tr:matrices}
+ \begin{gathered}
+ M_1=R_\alpha,\qquad
+ M_2=R_{\alpha-s_*}
+ \begin{pmatrix}1&-(h-\cos s_2)/a\\0&1\end{pmatrix},\\
+ \mathcal L=(\zeta_2\ \zeta_3),\qquad
+ M_3=\mathcal L(t)^{-T}\mathcal L(t_b)^T.
+ \end{gathered}
+\end{equation}
+Here $t_b=t_2^b$ is the original third insertion time, not the
+third steering-entry time. All three matrices retain their original
+activation data, have determinant one, and obey their respective
+physical transport equations.
+
+\begin{proof}[Exact forward and inverse calculation]
+The elementary identities
+\[
+ hx+ay=g,\qquad hy-ax=b,\qquad x^2+y^2=R
+\]
+follow by expanding \eqref{tr:coordinates}. The inverse
+\eqref{tr:inverse} gives
+\[
+ |\zeta_1|^2=1,\quad |\zeta_2|^2=D,\quad
+ |\zeta_3|^2=R,\quad
+ \zeta_2=h\zeta_1-aJ\zeta_1,\quad
+ \zeta_3=x\zeta_1-yJ\zeta_1.
+\]
+For example $\zeta_1=(xI+yJ)\zeta_3/R$, whose squared
+length is $(x^2+y^2)|\zeta_3|^2/R^2=1$.
+Also $\zeta_2=(gI+bJ)\zeta_3/R$; multiplying
+$(hI-aJ)(xI+yJ)=(gI+bJ)$ proves the first relative formula.
+Taking their oriented determinants gives
+\[
+ \det(\zeta_1,\zeta_2)=-a,\qquad
+ \det(\zeta_2,\zeta_3)=-b.
+\]
+The dot products are respectively $h$ and $g$, so the construction
+is inverse to the determinant coordinates, with the original signs.
+The polar expressions for these same identities give
+\eqref{tr:angles}, since multiplication by $J$ rotates the vector
+$(\sin\phi,\cos\phi)$ in the direction of decreasing $\phi$.
+
+Differentiating $x,y$ with the first two equations of
+\eqref{tr:closed} gives the exact formulas
+\begin{equation}\label{tr:xyR}
+ \dot x=\Omega_1y+\frac{bh}{D}\Omega_2,
+ \qquad \dot y=\frac{ba}{D}\Omega_2,
+ \qquad \dot R=2\Omega_1xy+\frac{2bg}{D}\Omega_2.
+\end{equation}
+In particular the second parent's vorticity changes $y$; it has
+not disappeared in this representation. Differentiating
+\eqref{tr:angles} gives
+\[
+ \dot\alpha=-\frac{\dot Z}{Y}
+       +\frac{Z\dot R}{2RY}
+       -\frac{b\dot g}{g^2+b^2}-\frac{a\dot h}{D}.
+\]
+For an explicit check write $A=ax+hy$, so
+$\dot g=\Omega_1A+b\Omega_2$. Then
+\[
+ bA+a^2R=(hy-ax)(ax+hy)+a^2(x^2+y^2)=Dy^2.
+\]
+The last two terms in the angular derivative are consequently
+$-\Omega_1y^2/R-b^2\Omega_2/(DR)$.
+Combining these with $Z\dot R/(2RY)$ gives exactly
+$(\Omega_1y(xZ-yY)+(b\Omega_2/D)(gZ-bY))/(RY)$,
+which equals
+$(\Omega_1y\zeta_{1,1}+(b\Omega_2/D)\zeta_{2,1})/Y$.
+This proves \eqref{tr:control}.
+
+For a direct check of the phase dynamics define
+\[
+ D_{<2}=\dot\alpha J+
+       \Omega_1J\zeta_1\otimes\zeta_1,\qquad
+ D_{<3}=D_{<2}+\frac{\Omega_2}{D}
+                         J\zeta_2\otimes\zeta_2.
+\]
+Since $\phi_1+\alpha=s_*$, one has
+$\dot\zeta_1=\dot\alpha J\zeta_1$.
+Differentiating the two relative formulas above using
+\eqref{tr:xyR} gives, without dropping either shear,
+\[
+ \dot\zeta_2=\dot\alpha J\zeta_2+a\Omega_1\zeta_1
+             =-D_{<2}^T\zeta_2,
+ \qquad
+ \dot\zeta_3=\dot\alpha J\zeta_3+\Omega_1y\zeta_1
+                   +\frac{b\Omega_2}{D}\zeta_2
+             =-D_{<3}^T\zeta_3.
+\]
+Their first third component is $\dot Z$ by
+\eqref{tr:control}; their second is the derivative of the selected
+square root. The older physical gradient is
+\[
+ G_{<3}=-(E_1+c+hE_2)\zeta_1-(C-aE_2)J\zeta_1.
+\]
+Hence $-J\zeta_2\cdot G_{<2}=N_2$ and
+$-J\zeta_3\cdot G_{<3}=N_3$, proving the coefficients
+$a_2=N_2/(K_2D)$ and $a_3=N_3/(K_3R)$.
+The damped physical amplitude rows and
+$\dot\Omega_j=K_j\zeta_{j,1}\Theta_j-dK_j^2|\zeta_j|^2\Omega_j$
+are now exactly the last four equations of \eqref{tr:closed}.
+
+The added second shear has transpose annihilating $\zeta_2$.
+Thus the columns of $\mathcal L$ both solve the third transport
+equation, and $\det\mathcal L=-b$. Differentiation of
+$\mathcal L^{-T}\mathcal L(t_b)^T$ proves
+$\dot M_3=D_{<3}M_3$ and its original value $I$ at $t_b$.
+Differentiating the two earlier matrices proves their equations as
+in \eqref{tt:matrices}; the constants $a$ and $\cos s_2$ are
+their original data. Conversely, the physical phase equations give
+the first two rows of \eqref{tr:closed} by differentiating the dot
+products; the amplitude rows give the other four. These calculations
+prove the full forward and inverse equivalence.
+\end{proof}
+
+The exact loss equations continue through the prescribed steering:
+\begin{equation}\label{tr:losses}
+ \dot N_2=-adK_1^2E_1,\qquad
+ \dot N_3=-d(K_1^2E_1y+bK_2^2DE_2).
+\end{equation}
+Indeed differentiating $N_2$ cancels $-aC\Omega_1$ with
+$Ca\Omega_1$. Differentiating $N_3$ gives the shear terms
+\[
+ -C\Omega_1y+C\Omega_1y
+ +\frac{b\Omega_2}{D}
+       \{a(E_1+c)+Ch-N_2\}=0;
+\]
+the remaining terms are precisely \eqref{tr:losses}.
+The value of $\dot Z$, and therefore the possibly large derivative
+of the compressed pulse, does not enter either cancellation.
+An additional exact algebraic relation useful for continuing the
+older temperature calculation is
+\begin{equation}\label{tr:temperature_inverse}
+ E_1=\frac{N_2-Ch}{a}-c,\qquad
+ E_2=\frac{N_3}{b}-\frac{N_2y}{ab}+\frac Ca.
+\end{equation}
+To check the second relation insert the first in $N_3$ and use
+$ax-hy=-b$. Thus one may equally use $N_2,N_3$ instead of
+$E_1,E_2$ in the older system, with the displayed inverse and
+the explicit diffusion losses, without assuming either numerator
+constant at positive $d$.
+
+\subsection{An explicit actual interval of smooth steering}
+
+\begin{theorem}\label{tr:local}
+For every original datum and positive physical diffusivity constructed
+by \eqref{tge:Y3}--\eqref{tge:d3}, the actual third transition is
+followed by a unique smooth solution of \eqref{tr:closed} and the
+source steering control on
+\[
+ 0\leq\tau\leq\tau_0:=\frac{\sin s}{8192},
+ \qquad
+ t_1\leq t\leq t_1+\frac1{8192\sigma_2}.
+\]
+All $m\in[0,3]$ give the same solution there. Every older
+temperature is negative, all source phase second components are
+positive, and the original matrices and their inverses are smooth.
+On this interval the third temperature and vorticity remain strictly
+negative and the exact source quotient below is positive.
+\end{theorem}
+
+\begin{proof}
+This interval is proved from the actual entry margins, without
+assuming bounds on a future trial. Use the dimensionless state
+\[
+ U=(h,g,E,F,\omega,V)
+  =\left(h,g,\frac{E_1}{\sigma_1^2},
+       \frac{E_2}{\sigma_2^2},
+       \frac{\Omega_1}{\sigma_1},
+       \frac{\Omega_2}{\sigma_2}\right).
+\]
+Define $\epsilon=\sigma_1/\Gamma\leq2/L$,
+$q=\sigma_1/\sigma_2=s/L$, $\bar c=c/\sigma_1^2\leq1/4$,
+$\bar C=C/\sigma_1^2\leq a/32$, and
+$\delta_j=dK_j^2/\Gamma$. Primes in this proof denote $\tau$
+derivatives. The exact scaled older equations are
+\begin{equation}\label{tr:scaled}
+ \begin{aligned}
+ h'&=a\epsilon\omega,\\
+ g'&=\epsilon\omega\frac{2ahg+(h^2-a^2)b}{D}
+                          +\frac b{\sin s}V,\\
+ E'&=-\epsilon\bar C\omega-\delta_1E,\qquad
+ \omega'=-\epsilon E\zeta_{1,1}-\delta_1\omega,\\
+ F'&=-q\epsilon\frac{a(E+\bar c)+\bar Ch}{D}V-\delta_2DF,
+ \qquad
+ V'=-\frac{F\zeta_{2,1}}{\sin s}-\delta_2DV.
+ \end{aligned}
+\end{equation}
+Keep the closed cube $|U-U(t_1)|_\infty\leq1/128$.
+The actual bounds \eqref{tt:olderbounds} and
+\eqref{tt:revivalbounds} imply throughout this cube
+\[
+ \begin{gathered}
+ 63/64<h<4,\quad 11/16<g<6,\quad
+ 15/128<E<3,\quad 7/128<F<4,\\
+ |\omega|<11,\quad |V|<1/16,\quad
+ 15/16<D<17.
+ \end{gathered}
+\]
+Here the lower $h$ bound uses $a\leq1/512$ and
+$h(t_1)\geq\sqrt{1-a^2}$. The bound on $V$ uses
+$7040a/L<1/32$. For $0\leq\tau\leq1$,
+\eqref{tr:Z} and \eqref{tt:newestcoefficientbox} give
+\[
+ 0\leq Z\leq Z_1<\frac98\sin s<\frac1{128},
+ \qquad b<4\sin s\leq4a.
+\]
+Consequently
+\[
+ R>\frac{(11/16)^2}{17}>\frac1{64},\qquad
+ Y^2>\frac1{64}-\frac1{128^2}>\frac1{81},
+ \qquad x>\frac1{32},\quad y>0.
+\]
+For $x$ use
+$hg-ab>(63/64)(11/16)-4a^2>17/32$ and $D<17$.
+Thus $Y>1/9$, $gY+bZ>0$, and $xY+yZ>0$ on this entire
+known cube and time interval. The original positive-component
+domain has a fixed positive margin; $R$ and $D$ never vanish.
+All right-hand sides are smooth on a neighborhood of this cube.
+
+Their sizes can be bounded before solving. The first four rows of
+\eqref{tr:scaled} have absolute value less than one: use
+$\epsilon\leq2/L$, $L\geq16384$, $\delta_1\leq1/128$,
+$|\zeta_{1,1}|\leq1$, and
+\[
+ \left|\frac{2ahg+(h^2-a^2)b}{D}\right|
+ \leq\frac{2ag}{h}+b<17a.
+\]
+The fifth row also has absolute value less than one, since
+$a(E+\bar c)+\bar Ch<4a$, $q=s/L\leq a/L$,
+and $\delta_2DF<68/128$.
+Finally $|\zeta_{2,1}|\leq\sqrt D<5$ gives
+\[
+ |V'|<\frac{20}{\sin s}+\frac{17}{2048}
+       <\frac{21}{\sin s}.
+\]
+Thus the norm of the complete vector field is strictly less than
+$M=32/\sin s$ on this cube. Local existence follows from its
+smooth integral equation. On any initial solution inside the cube,
+$|U(\tau)-U(0)|_\infty<M\tau$. At $\tau=\tau_0$
+this is at most $1/256$, strictly smaller than its radius $1/128$.
+A first exit is impossible, and the same smooth compact-domain
+bound extends the solution through $\tau_0$. The integral
+equation and its bounded first derivatives prove uniqueness.
+Since $\tau_0<1$, every trial has the same prescribed $Z$ there.
+The reconstructed original matrices and control are smooth because
+the denominators just bounded are positive.
+They join the preceding transition smoothly: there
+$\dot\zeta_{3,1}=(1-\eta_b)(\mathcal F_3-\mathcal F_2)\zeta_{3,2}$,
+whose derivatives of every order vanish at $t_1$. The new prescribed
+$Z$ has the same constant value and the same vanishing derivatives
+there by \eqref{tr:Z_derivatives}. Both controls consequently have
+the common endpoint jet of $\mathcal F_3$; differentiating their
+smooth physical equations successively matches every state derivative.
+
+On this actual interval $E_1,E_2,x,y>0$, so $N_3>0$.
+The newest linear pair has nonnegative off-diagonal coefficients
+$A=N_3/(K_3R)>0$ and $B=K_3Z\geq0$.
+The three coefficients $A,B,\lambda=dK_3^2R$ are bounded on
+the proved compact older trajectory. In the displayed original
+pair coordinates, $C_*=\max(\lambda+A+B)$ bounds the induced
+matrix $1$-norm. Its integral equation gives
+$|\Theta_3(t)|+|\Omega_3(t)|\leq
+(|\Theta_3(t_1)|+|\Omega_3(t_1)|)e^{C_*(t-t_1)}$
+by Gronwall's inequality. This finite bound extends the unique
+linear pair through the same closed interval.
+Removing the common factor
+$\exp(-dK_3^2\int R\,dt)$ gives a pair whose negative
+temperature and negative vorticity coordinates have nonnegative
+derivatives whenever both are positive. Their strictly positive
+initial values and their integral equations therefore keep both
+positive through this interval; a first zero contradicts that
+integral representation. This proves the final sign assertion.
+\end{proof}
+
+\subsection{The source quotient, pulse equation, and exact return submanifold}
+
+The newest physical pair associated to any constructed steering
+geometry is
+\begin{equation}\label{tr:physical_pair}
+ \frac d{dt}\begin{pmatrix}\Theta_3\\\Omega_3\end{pmatrix}
+ =\begin{pmatrix}
+ -dK_3^2R&N_3/(K_3R)\\
+ K_3Z&-dK_3^2R
+ \end{pmatrix}
+ \begin{pmatrix}\Theta_3\\\Omega_3\end{pmatrix}.
+\end{equation}
+For a fundamental matrix equal to $I$ at $t_1$, direct
+differentiation of its two-column determinant gives
+\begin{equation}\label{tr:wronskian}
+ \det\mathcal U(t)=
+ \exp\left(-2dK_3^2\int_{t_1}^tR(r)\,dr\right)>0.
+\end{equation}
+Indeed differentiating a determinant column by column multiplies it
+by the trace of the displayed coefficient matrix; solving that scalar
+equation gives \eqref{tr:wronskian}. A nonzero pair therefore never
+becomes the zero vector. This does not by itself prevent an individual
+temperature zero, which is why a finite quotient bound must still be
+proved when extending through the full negative pulse.
+
+In the chart $\Theta_3<0$ define the exact source variables
+\begin{equation}\label{tr:quotient}
+ \begin{gathered}
+ v=\frac{\sigma_2\Omega_3}{K_3\chi_1\Theta_3},\qquad
+ k=\frac{\chi_1N_3}{\sigma_2^2\sin s\,R},\qquad
+ f_m=\frac{Z_m}{\chi_1\sin s},\qquad
+ \delta_3=\frac{dK_3^2}{\Gamma},\\
+ v'=f_m-kv^2,\qquad
+ P_3=P_{3,1}\exp\left(\int_0^\tau(kv-\delta_3R)\,dr\right),\\
+ \Theta_3=-P_3,\qquad
+ \Omega_3=-\frac{K_3\chi_1}{\sigma_2}P_3v.
+ \end{gathered}
+\end{equation}
+Differentiating the quotient cancels the two equal newest damping
+terms and gives its displayed Riccati row. Differentiating the
+exponential and product gives exactly \eqref{tr:physical_pair},
+including both newest diffusion terms. Thus the map is an exact
+inverse on every finite quotient interval; on the actual interval
+of Theorem~\ref{tr:local} all its divisions and signs have already
+been proved.
+
+Put $z_1=Z_1/(\chi_1\sin s)$. The forcing is exactly
+\begin{equation}\label{tr:forcing}
+ f_m(\tau)=
+ \begin{cases}
+ z_1(1-\eta(\tau)),&0\leq\tau\leq1,\\
+ -mL\eta_2(L(\tau-1)),&1\leq\tau\leq T,\\
+ 0,&\tau\geq T.
+ \end{cases}
+\end{equation}
+In particular the source normalization removes $\chi_1$ from the
+negative pulse exactly, while retaining it in $k$, in $z_1$, and in
+the amplitude inverse. The actual transition estimates imply
+\[
+ \frac{63}{64}<\chi_1<\frac32,\qquad
+ \frac13<v_1<\frac{64}{21},\qquad
+ \frac5{16}<z_1<\frac87.
+\]
+The length bounds follow from \eqref{tt:coefficientvariation},
+$1\leq R(t_a)\leq2$, and
+$e^{-1/128}>63/64$, $2e^{1/64}<9/4$.
+The bounds for $v_1$ use $1/2\leq\sigma_2\Omega_3/(K_3\Theta_3)\leq3$;
+the bounds for $z_1$ use \eqref{tt:newestcoefficientbox}.
+They are entry data, not estimates for the unconstructed full pulse.
+
+The exact pulse integral equation, written on its quotient chart,
+is
+\begin{equation}\label{tr:pulse_integral}
+ \begin{gathered}
+ V_m(y)=v(1+y/L;m),\qquad
+ H_2(y)=\int_0^y\eta_2(r)\,dr,\\
+ V_m(y)=v(1;m)-mH_2(y)
+       -\frac1L\int_0^y k(1+r/L;m)V_m(r)^2\,dr,
+ \qquad 0\leq y\leq1.
+ \end{gathered}
+\end{equation}
+It follows by substituting $\tau=1+y/L$ in the Riccati equation
+and integrating, retaining the trial dependence of every older
+coefficient. The required shooting endpoint is precisely $v(T;m)=0$,
+because the temperature inverse is strictly negative on a finite
+quotient interval. Formula \eqref{tr:pulse_integral} specifies that
+endpoint without a frozen coefficient or a second-stage substitution.
+Establishing its opposite endpoint signs and exclusion of temperature
+zeros requires full-interval geometry and quotient estimates.
+Those estimates have not been supplied by the local theorem.
+
+The exact older forcing signs identify the additional analytic work.
+For $Z\geq0$ in the positive $x,y,g,Y$ domain,
+\[
+ (gZ-bY)(gZ+bY)=R(DZ^2-b^2),\qquad
+ (xZ-yY)(xZ+yY)=R(Z^2-y^2).
+\]
+Thus the second parent's horizontal phase changes sign precisely at
+$Z=b/\sqrt D$, and the first parent's at $Z=y$.
+For the negative pulse $Z\leq0$, both horizontal components are
+strictly negative throughout this domain. Their vorticity equations
+then have strictly positive temperature forcing while still retaining
+their old vorticity data and their damping. In particular the small
+negative transition value of $\Omega_2/\sigma_2$ is not a bound
+to carry unchanged through steering. Its full coupled growth must be
+estimated from \eqref{tr:closed} before an endpoint sign is claimed.
+
+There is an exact invariant return submanifold for the holding
+equations: prescribe $Z=0$ and set $\Omega_3=0$. The vorticity
+row in \eqref{tr:physical_pair} then vanishes identically, while
+\begin{equation}\label{tr:hold}
+ \begin{gathered}
+ \zeta_3=(0,\sqrt R),\qquad
+ \zeta_2=\frac{(-b,g)}{\sqrt R},\qquad
+ \zeta_1=\frac{(-y,x)}{\sqrt R},\\
+ \dot\Omega_1=\frac{E_1y}{\sqrt R}-dK_1^2\Omega_1,\qquad
+ \dot\Omega_2=\frac{E_2b}{\sqrt R}-dK_2^2D\Omega_2,\\
+ \dot\Theta_3=-dK_3^2R\Theta_3,\qquad
+ \dot\alpha=-\frac{\Omega_1y^2}{R}
+                 -\frac{\Omega_2b^2}{DR}.
+ \end{gathered}
+\end{equation}
+The $h,g,E_1,E_2$ rows remain those of \eqref{tr:closed}, and
+the two numerator loss rows remain \eqref{tr:losses}. This
+restriction of the full vector field proves invariance of the
+return submanifold, and exhibits the continued motion of both
+parents. It does not assert that a source trial has reached it.
+The total local velocity curl on this submanifold is exactly
+\begin{equation}\label{tr:origin_curl}
+ 2\dot\alpha+\Omega_1+\Omega_2
+ =\Omega_1\left(1-\frac{2y^2}{R}\right)
+  +\Omega_2\left(1-\frac{2b^2}{DR}\right).
+\end{equation}
+This follows by taking the curl of the rotational matrix and of
+each rank-one shear; their respective curls are $2\dot\alpha$,
+$\Omega_1$, and $\Omega_2$. No sign for the full third-return
+curl follows without proving that endpoint's parent amplitudes.
+
+Finally the exact temperature gain and diffusion exponents on any
+constructed finite quotient interval $[0,\tau_f]$ are
+\begin{equation}\label{tr:costs}
+ \begin{gathered}
+ \log\frac{P_3(\tau_f)}{P_{3,1}}
+ =\int_0^{\tau_f}kv\,d\tau
+          -\delta_3\int_0^{\tau_f}R\,d\tau,\\
+ \delta_1\tau_f,\qquad
+ \delta_2\int_0^{\tau_f}D\,d\tau,\qquad
+ \delta_3\int_0^{\tau_f}R\,d\tau.
+ \end{gathered}
+\end{equation}
+Each is exactly $dK_j^2\int|\zeta_j(t)|^2dt$ in original
+physical time. The two explicit losses in \eqref{tr:losses}
+also remain part of the older response; common damping of the
+newest quotient has not removed them. Compact original-profile
+PDE realization additionally uses the scalar and full vector
+localization forces already calculated from the exact affine
+background. Nothing in this steering coordinate map discards
+those spatial forces.

@@ -1,0 +1,232 @@
+{
+  "schema": "actual-viscous-entry-independent-audit-v1",
+  "all_passed": true,
+  "count": 43,
+  "checks": [
+    {
+      "name": "seed_to_original_target_exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical_target_to_parent_gain_power",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "source_second_logarithmic_gain",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first_damped_temperature_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first_damped_vorticity_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first_actual_threshold_log_gain",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first_growth_gain_minus_diffusion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "first_post_threshold_diffusion_duration",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "translated_first_steering_temperature_map",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "translated_first_steering_vorticity_map",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "translated_first_steering_inverse_temperature",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "inherited_gradient_norm_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "inherited_parallel_perpendicular_decomposition",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "actual_second_initial_rate_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_normalized_initial_ratio_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "evolving_parent_second_coefficient_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_cooperative_temperature_map",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_cooperative_vorticity_map",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_ratio_riccati_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_actual_temperature_log_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Y0_cubic_series_constant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second_shear_constant_at_L64",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "envelope_nesting_exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "profile_nesting_exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical_first_profile_nesting_mu",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "physical_envelope_nesting_mu",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "ni_lower_implies_v_above_half",
+      "passed": true,
+      "positive_margin": "31/32"
+    },
+    {
+      "name": "ni_lower_implies_v_below_two_squared",
+      "passed": true,
+      "positive_margin": "3/2"
+    },
+    {
+      "name": "growth_diffusion_lower_scale_margin",
+      "passed": true,
+      "positive_margin": "-1/16 + sqrt(2)/16"
+    },
+    {
+      "name": "growth_plus_transition_inside_horizon",
+      "passed": true,
+      "positive_margin": "511/32 - 8*sqrt(2)"
+    },
+    {
+      "name": "Bentry_above_half",
+      "passed": true,
+      "positive_margin": "1/30"
+    },
+    {
+      "name": "Bentry_stated_lower_bound",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "dmax_to_delta2_factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "delta2_below_delta1_allowed_ceiling",
+      "passed": true,
+      "positive_margin": "1/16 - log(3)/6400"
+    },
+    {
+      "name": "selected_gain_after_entire_hold",
+      "passed": true,
+      "positive_margin": "61*log(3)/40960"
+    },
+    {
+      "name": "second_amplitude_exponent_eighteen",
+      "passed": true,
+      "positive_margin": "29/16"
+    },
+    {
+      "name": "range_limit_exponential_series_bound",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "original_scaling_first_branch_margin",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "original_scaling_second_branch_strict_margin",
+      "passed": true,
+      "positive_margin": "nu_minus_two/4"
+    },
+    {
+      "name": "original_scaling_equality_case",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "transformed_diffusion_exact_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "necessary_first_growth_in_source_time",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "necessary_first_growth_equality_case",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "scope": "Exact entry transformations and constant margins; analytic proof independently audited in AUDIT.md.",
+  "no_numerical_sampling": true,
+  "no_lean": true,
+  "files_sha256": {
+    "finite_stage/actual_viscous_entry.tex": "91e70814420bcc828f9f3bbc30bd3b88f71a1b00862d8195a46e661cacc000db",
+    "second_return/second_return_body.tex": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4",
+    "finite_stage/first_stage_section.tex": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e",
+    "finite_stage/evolving_diffusive_parent_section.tex": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453",
+    "sources/alpoge_buckmaster_boussinesq.pdf": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b"
+  }
+}

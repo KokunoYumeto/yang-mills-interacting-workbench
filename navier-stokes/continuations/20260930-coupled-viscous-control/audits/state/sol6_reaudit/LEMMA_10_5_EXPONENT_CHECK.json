@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-30T03:26:01.641558+00:00",
+  "checks": {
+    "product_L3_over_2": true,
+    "weighted_L3_interpolation": true,
+    "weighted_L4_interpolation": true,
+    "weighted_L12_over_5_interpolation": true,
+    "extended_transport_holder": true,
+    "kernel_inner_radial_power": true,
+    "kernel_outer_radial_power": true,
+    "young_3/2": true,
+    "young_1/2": true,
+    "young_3/4": true,
+    "dominant_remainder_is_R_minus_4_over_3": true
+  },
+  "young_remainders": [
+    {
+      "coefficient_R_power": "-1",
+      "field_power": "3/2",
+      "computed_remainder_R_power": "-4",
+      "expected_remainder_R_power": "-4",
+      "passed": true
+    },
+    {
+      "coefficient_R_power": "-1",
+      "field_power": "1/2",
+      "computed_remainder_R_power": "-4/3",
+      "expected_remainder_R_power": "-4/3",
+      "passed": true
+    },
+    {
+      "coefficient_R_power": "-7/4",
+      "field_power": "3/4",
+      "computed_remainder_R_power": "-14/5",
+      "expected_remainder_R_power": "-14/5",
+      "passed": true
+    }
+  ],
+  "direct_remainder_R_powers": [
+    "-5/2",
+    "-3/2",
+    "-5/2",
+    "-2"
+  ],
+  "dominant_R_power": "-4/3",
+  "scope": "Exact rational exponent arithmetic only; the analytic estimates are proved in editorial/lemma_10_5_reaudit.md."
+}

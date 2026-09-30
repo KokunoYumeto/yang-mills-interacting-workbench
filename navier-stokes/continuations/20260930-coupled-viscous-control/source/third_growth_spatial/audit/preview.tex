@@ -1,0 +1,38 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,longtable}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={The coupled Boussinesq control system with physical viscosity retained},pdfauthor={}}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newcommand{\R}{\mathbb R}
+\newcommand{\AB}{\mathrm{AB}}
+\newcommand{\epsv}{\varepsilon_{\mathrm v}}
+\newcommand{\kapth}{\kappa_{\mathrm{th}}}
+\newcommand{\Gcal}{\mathcal G}
+\newcommand{\dd}{\mathrm d}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\sym}{sym}
+\input{paper_coupling/profile_diffusion/profile_diffusion_preamble.tex}
+\allowdisplaybreaks
+\emergencystretch=2em
+\title{The coupled Boussinesq control system with physical viscosity retained}
+\author{}
+\date{8 September 2026}
+\begin{document}
+\input{physical_realization.tex}
+\input{finite_stage/first_stage_section.tex}
+\input{finite_stage/evolving_diffusive_parent_section.tex}
+\input{finite_stage/actual_viscous_entry.tex}
+\input{second_return/second_return_body.tex}
+\input{modified_spatial/modified_spatial_body.tex}
+\input{coupled_feedback.tex}
+\input{infinite_status.tex}
+\input{paper_coupling/coupled_background_body.tex}
+\input{paper_coupling/profile_diffusion/profile_diffusion_body.tex}
+\input{finite_stage/third_growth_entry.tex}
+\input{third_growth_spatial/third_growth_spatial_body.tex}
+\end{document}

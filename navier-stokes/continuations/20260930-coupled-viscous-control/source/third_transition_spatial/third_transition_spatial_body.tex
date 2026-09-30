@@ -1,0 +1,836 @@
+\section{Full compact spatial realization through the third transition}
+\label{tts:section}
+
+We continue the actual third-growth fields through the entire third
+transition just proved. The second vorticity now revives with negative
+sign. Both older velocities and temperatures enter the spatial
+equations. The construction below uses the actual coefficient solution
+and proves its complete spatial realization, including a smooth finite
+extension of its forces. Its endpoint is the third transition endpoint;
+no third return is asserted here.
+
+\subsection{The original objects and a uniform material bound}
+
+The physical equations, coordinates, and orientation remain
+\begin{align}\label{tts:PDE}
+ \theta_t+u\cdot\nabla\theta&=d\Delta\theta+f_\theta,
+ &x&\in\mathbb R^2,\nonumber\\
+ u_t+(u\cdot\nabla)u&=d\Delta u+\theta e_2+f_u,
+ &\operatorname{div}u&=0,\qquad p=0,\\
+ J&=\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+ & e(s)&=(\sin s,\cos s).\nonumber
+\end{align}
+Here $d>0$ is the common physical viscosity and thermal diffusivity;
+$A_0\geq1$, $\nu=\sqrt{A_0}$, and
+$\mu=\lambda_0=\lceil\nu/2\rceil$ retain their original values.
+In particular $\nu$ is a time scale. Retain
+$K_j=\mu\widehat\lambda_j$, the exact source integer recursion,
+the source step $\eta$, and the actual scales $\sigma_1,\sigma_2$.
+Put
+\begin{equation}\label{tts:times}
+ t_b=t_2^b,\quad t_a=t_3^a,\quad
+ s=s_3=L_3\sigma_1/\sigma_2,\quad
+ \Gamma=\Gamma_3=\sigma_2\sin s,\quad
+ t_1=t_a+\Gamma^{-1},\quad I=[t_b,t_1].
+\end{equation}
+These are the actual second return, third threshold, and third
+transition endpoint already constructed. Their proved bounds include
+$0<t_a-t_b<14/\sigma_1$, $L_3\geq16384$,
+$0<s\leq a:=\sin s_2\leq1/512$, and
+$\Gamma\geq(15/16)L_3\sigma_1$. Thus
+\begin{equation}\label{tts:duration}
+ |I|=(t_a-t_b)+\Gamma^{-1}<15/\sigma_1.
+\end{equation}
+All earlier activation weights are one on $I$; the third is
+$w_3(t)=\eta(\Gamma(t-t_b))$ and is one before $t_a$.
+The exact source control on $I$ is
+$\dot\alpha=(1-\lambda)\mathcal F_2+\lambda\mathcal F_3$,
+where $\lambda(t)=\eta(\Gamma(t-t_a))$ is zero during growth.
+The two switches $w_3,\lambda$ have different original start times.
+
+Use the determinant coordinates of the third-transition theorem:
+\begin{equation}\label{tts:geometry}
+ \begin{gathered}
+ h_0=\cos s_2,\quad D=h^2+a^2,\quad
+ r_b=|\zeta_2(t_b)|,\quad b=r_b\sin s,\quad
+ R=|\zeta_3|^2=(g^2+b^2)/D,\\
+ \zeta_1=\frac{(h\sin\vartheta-a\cos\vartheta,
+                     h\cos\vartheta+a\sin\vartheta)}{\sqrt D},\\
+ \zeta_2=\sqrt D(\sin\vartheta,\cos\vartheta),\\
+ \zeta_3=\frac{(g\sin\vartheta+b\cos\vartheta,
+                     g\cos\vartheta-b\sin\vartheta)}{\sqrt D},
+ \qquad\vartheta=su.
+ \end{gathered}
+\end{equation}
+The symbol $D$ in this display is a scalar, not a matrix.
+The actual growth and transition estimates give, on all of $I$,
+\begin{equation}\label{tts:box}
+ \begin{gathered}
+ h_0\leq h<13/4,\quad 1\leq D<11,\quad 3/4<g<5,
+ \quad e^{-1/64}\leq R<3,\\
+ 0\leq u\leq640a/L_3<1/1024,\quad
+ \cos\vartheta>15/16,\quad
+ g\cos\vartheta-b\sin\vartheta>2/3,\\
+ 0<\Omega_1<10\sigma_1,\quad
+ -7040a\sigma_2/L_3\leq\Omega_2\leq0,\quad
+ 0<-\Theta_1\leq2\sigma_1^2/K_1,\\
+ 0<-\Theta_2\leq3\sigma_2^2/K_2,\quad
+ 0<-\Theta_3\leq e^4P_3^*,\quad
+ |\Omega_3|\leq3e^4K_3P_3^*/\sigma_2,\\
+ P_3^*=(A_0/\mu)\widehat\lambda_3^{-7/8},\qquad
+ 1\leq r_b\leq\sqrt{10}.
+ \end{gathered}
+\end{equation}
+For the bound on $R$, growth has $1\leq R\leq2$, and the
+transition changes $\log|\zeta_3|$ by less than $1/128$.
+The amplitude bounds follow from the actual growth target, the
+transition gain at most four, and the proved quotient at most three.
+They are consequences of the constructed trajectory, not additional
+conditions imposed on an unknown flow.
+
+For completeness the exact material equations for all three layers are
+\begin{align}\label{tts:material}
+ G_{<j}&=-A_0R_\alpha e_2+\sum_{i<j}w_iK_i\Theta_i\zeta_i,
+ &D_{<j}&=\dot\alpha J+
+   \sum_{i<j}\frac{w_i\Omega_i}{r_i^2}J\zeta_i\otimes\zeta_i,
+ \nonumber\\
+ \dot M_j&=D_{<j}M_j,& M_j(t_{0j})&=I,
+ \quad\zeta_j=M_j^{-T}p_j,\quad r_j=|\zeta_j|,\\
+ \dot\Theta_j&=-\frac{J\zeta_j\cdot G_{<j}}{K_jr_j^2}\Omega_j
+                       -dK_j^2r_j^2\Theta_j,
+ &\dot\Omega_j&=K_j\zeta_{j,1}\Theta_j-dK_j^2r_j^2\Omega_j.
+ \nonumber
+\end{align}
+Here $p_1=e(s_*)$, $p_2=e(s_2)$, $p_3=e(s)$, and
+$t_{03}=t_b$; the first two original insertion times are unchanged.
+The scalar $r_j^2$ is strictly positive. Each matrix $D_{<j}$ has
+trace zero, since $\zeta_i\cdot J\zeta_i=0$.
+The exact matrices are
+\begin{equation}\label{tts:matrices}
+ \begin{gathered}
+ M_1=R_\alpha,\qquad
+ M_2=R_{\alpha-s_*}
+       \begin{pmatrix}1&-(h-h_0)/a\\0&1\end{pmatrix},\\
+ \mathcal L(t)=(\zeta_2(t)\ \zeta_3(t)),\qquad
+ M_3=\mathcal L(t)^{-T}\mathcal L(t_b)^T,\quad
+ M_3^{-1}=\mathcal L(t_b)^{-T}\mathcal L(t)^T.
+ \end{gathered}
+\end{equation}
+Indeed $\zeta_2$ is annihilated by the transpose of its own
+added shear. Thus both columns of $\mathcal L$ solve
+$\dot z=-D_{<3}^Tz$. Their determinant is
+$\det\mathcal L=-b$, including at birth. Differentiating the
+last two expressions proves $\dot M_3=D_{<3}M_3$,
+$M_3(t_b)=I$, and $M_3^{-T}p_3=\zeta_3$.
+The same calculation, or the displayed triangular form, proves
+the first two material equations and their original data.
+All matrices have determinant one, and hence define global linear
+diffeomorphisms of the original $\mathbb R^2$.
+
+Let $\|\cdot\|$ be Euclidean operator norm and
+$\|\cdot\|_F$ Frobenius norm. For a two by two matrix its
+adjugate has the same Frobenius norm: it permutes its four entries
+and changes two signs. Consequently
+\[
+ \|\mathcal L^{-1}\|\leq\|\mathcal L\|_F/b,\quad
+ \|\mathcal L\|_F^2=D+R<14,\quad
+ \|\mathcal L(t_b)\|_F^2=r_b^2+1\leq11.
+\]
+Applying these inequalities to both products in
+\eqref{tts:matrices} gives the uniform bounds
+\begin{equation}\label{tts:matrixbounds}
+ \begin{gathered}
+ N_1=1,\qquad N=1+(3-h_0)/a,\qquad
+ N_2=\widetilde N=1+(13/4-h_0)/a\leq2N,\\
+ N_3=\mathcal M=16/\sin s,\qquad
+ \|M_j\|,\|M_j^{-1}\|\leq N_j\quad(1\leq j\leq3).
+ \end{gathered}
+\end{equation}
+For $j=3$ the product bound is $\sqrt{154}/b<16/\sin s$.
+For $j=2$, write its triangular factor as $I-qe_1\otimes e_2$
+and its inverse as $I+qe_1\otimes e_2$, so both norms are at
+most $1+|q|$. Finally
+$2N-\widetilde N=1+(11/4-h_0)/a>0$.
+The third estimate is valid when $\Omega_2$ is nonzero; it does
+not use the shorter growth-only shear formula.
+
+\subsection{The exact source supports remain nested}
+
+The birth bound $P_{2,b}\leq e^{18}(A_0/\mu)
+\widehat\lambda_2^{-7/8}$ gives
+$A_{2,b}=K_2r_bP_{2,b}\leq\sqrt{10}e^{18}\nu^2
+\widehat\lambda_2^{1/8}$. The already proved scale relation
+$\sigma_2^2\leq5A_{2,b}/4$ therefore gives
+\begin{equation}\label{tts:sourceconstants}
+ \begin{gathered}
+ C_2=e^9\sqrt{5\sqrt{10}/4},\qquad
+ \sigma_2\leq C_2\nu\widehat\lambda_2^{1/16},\\
+ \sigma_1\geq\sqrt e\,\nu\widehat\lambda_1^{1/16},\qquad
+ C_M=\frac{256C_2}{15\sqrt e},\qquad
+ \mathcal M\leq C_M\widehat\lambda_1^{(Q_2-1)/16}.
+ \end{gathered}
+\end{equation}
+For the last estimate use
+$\sin s\geq15L_3\sigma_1/(16\sigma_2)$, $L_3\geq1$,
+and the unchanged recursion
+$\widehat\lambda_2=\widehat\lambda_1^{Q_2}$.
+With $N\leq C_N\widehat\lambda_1^{1/16}$, the strengthened
+actual source selection includes the strict inequalities
+\begin{align}\label{tts:sourceexponents}
+ \widehat\lambda_1^{47Q_2/16-3}&>4C_NC_M,
+ &\widehat\lambda_1^{(31Q_2+1)/16}&>\sqrt{11}C_M/s_0.
+\end{align}
+Their exponents are positive because $Q_2\geq202$.
+Multiplication by the corresponding negative frequency powers gives
+\begin{equation}\label{tts:nestingnumbers}
+ \begin{gathered}
+ 2N_2N_3\widehat\lambda_2^{-3}
+       <\widehat\lambda_1^{-3},\qquad
+ \sqrt{11}N_3\widehat\lambda_2^{-2}<s_0,\\
+ N_2\widehat\lambda_1^{-3}<s_0/(2C_\ell),\qquad
+ N_2\widehat\lambda_1^{-2}<s_0.
+ \end{gathered}
+\end{equation}
+For the first, the exponent of $\widehat\lambda_1$ in
+$4C_NC_M\widehat\lambda_1^{Q_2/16-3Q_2+3}$ is
+$-(47Q_2/16-3)$. For the second its exponent is
+$(Q_2-1)/16-2Q_2=-(31Q_2+1)/16$.
+The last two follow from the earlier actual first-source margins
+$N\widehat\lambda_1^{-3}<s_0/(4C_\ell)$ and
+$N\widehat\lambda_1^{-2}<s_0/2$, together with $N_2\leq2N$.
+Thus the doubling needed in the third transition is absorbed by
+proved strict margins.
+
+Retain the original profile, primitive, and spatial cutoffs. Namely
+$F(s)=\sin s+\chi_F(s)(s-\sin s)$ on $[-\pi,\pi]$ is
+extended periodically; $\chi_F$ is even, smooth, supported away
+from the endpoints, and equals one on $[-s_0,s_0]$, $0<s_0<1$.
+The even periodic primitive is uniquely specified by $P'=F$ and
+$\int_{-\pi}^{\pi}P=0$. On the affine cell it is
+$P(s)=P(0)+s^2/2$, with its original constant $P(0)$ retained.
+The radial $f\in C_c^\infty(B_1)$ equals one on $B_{1/2}$.
+Keep the exact source radii and material envelopes
+\begin{equation}\label{tts:envelopes}
+ \begin{gathered}
+ \ell_1=s_0/(C_\ell\mu),\quad
+ \ell_2=\widehat\lambda_1^{-3}/\mu,\quad
+ \ell_3=\widehat\lambda_2^{-3}/\mu,\quad C_\ell\geq4,\\
+ g_j(x,t)=f(M_j^{-1}x/\ell_j),\qquad
+ k_j=K_j\zeta_j,\quad \xi_j=k_j\cdot x,
+ \quad\rho_j=|k_j|^2.
+ \end{gathered}
+\end{equation}
+The vectors $k_j$ here are physical phases, not the source integer
+seed exponents. Every third field and derivative is supported in
+$|x|\leq N_3\ell_3$. At such points
+\[
+ |M_2^{-1}x|\leq N_2N_3\ell_3<\ell_2/2,\qquad
+ |K_2\zeta_2\cdot x|\leq K_2\sqrt{11}N_3\ell_3<s_0.
+\]
+Thus the full second field is affine on an open neighborhood of
+the third support. Every point of the second support satisfies
+$|x|\leq N_2\ell_2<\ell_1/2$ and
+$|K_1\zeta_1\cdot x|<s_0$ by the last two inequalities in
+\eqref{tts:nestingnumbers}; $M_1$ is a rotation. The first
+support lies in $B_{\ell_1}$, where the original radial base
+cutoff is one and $|\mu R_\alpha e_2\cdot x|<s_0$.
+This proves every inclusion in the original laboratory coordinates.
+Strictness ensures an open affine neighborhood for every support
+and every derivative support, not only an identity at its center.
+
+\subsection{All fields, original initial data, and full forces}
+
+Retain the original radial $\chi_0\in C_c^\infty(B_{R_0})$,
+equal to one on $B_2$, and the radial
+$H_0\in C_c^\infty(B_{R_H})$, $R_H>R_0+1$, with
+$H_0=|x|^2/2$ on $B_{R_0+1}$. Define
+\begin{align}\label{tts:base}
+ \theta_{\rm in}&=-\frac{A_0}{\mu}\sin(\mu x_2)\chi_0,
+ &\theta_{\rm ref}&=-\frac{A_0}{\mu}F(\mu x_2)\chi_0,
+ \nonumber\\
+ \theta_b&=-\frac{A_0}{\mu}F(\mu R_\alpha e_2\cdot x)\chi_0
+       +(1-\eta(\nu t))(\theta_{\rm in}-\theta_{\rm ref}),
+ &\psi_b&=\dot\alpha H_0,\quad u_b=J\nabla\psi_b.
+\end{align}
+The angle is zero before $1/\nu$. Thus this is exactly the
+original sine initial datum and zero initial velocity. The
+interpolation has finished before the first insertion and hence
+before $I$. For $j=1,2,3$ define the active increments
+\begin{equation}\label{tts:fields}
+ \begin{gathered}
+ T_j=w_j\Theta_j,\quad Q_j=w_j\Omega_j/\rho_j,\quad
+ V_j=T_jF(\xi_j)g_j,\quad\Psi_j=Q_jP(\xi_j)g_j,\quad
+ v_j=J\nabla\Psi_j,\\
+ \theta=\theta_b+\sum_{j=1}^3V_j,\qquad
+ \psi=\psi_b+\sum_{j=1}^3\Psi_j,\qquad u=J\nabla\psi.
+ \end{gathered}
+\end{equation}
+For $t\leq t_{0j}$ the $j$th increment is zero. Flatness of the
+original $\eta$ makes this zero extension smooth. Before $t_b$
+these formulas give the earlier constructed spatial solution
+exactly. On $I$ they use the actual revived $\Omega_2$ and its
+corresponding streamfunction; none of the older fields is frozen.
+
+For each layer suppress its index temporarily and set
+$k=k_j$, $\rho=\rho_j$, $\xi=k\cdot x$, $g=g_j$,
+$D_*=D_{<j}$, $G_*=G_{<j}$. All profiles in the next formulas
+are evaluated at $\xi$. Set
+\begin{equation}\label{tts:Qrest}
+ Q_{\rm r}=\frac{\dot w\Omega+w k_1\Theta}{\rho}
+                    -Q\frac{\dot\rho}{\rho},\qquad
+ \dot\rho=-2k\cdot D_*^Tk,
+ \qquad\dot Q=Q_{\rm r}-d\rho Q.
+\end{equation}
+The exact force increments, with no pressure reconstruction, are
+\begin{align}\label{tts:scalarforce}
+ E_{\theta,j}={}&\dot w\Theta Fg+QP(J\nabla g\cdot G_*)
+           +QT(F^2-PF')g(Jk\cdot\nabla g)\nonumber\\
+ &-dT\{\rho(F+F'')g+2F'k\cdot\nabla g+F\Delta g\},\\
+ E_{u,j}={}&2D_*v+Q_{\rm r}J(kFg+P\nabla g)
+          +(\nabla v)v-TFg e_2-d(\rho v+\Delta v).
+ \label{tts:vectorforce}
+\end{align}
+The complete spatial differentiations in these expressions are
+\begin{align}\label{tts:spatialjets}
+ v={}&QJ(kFg+P\nabla g),\nonumber\\
+ \nabla v={}&QJ\{k\otimes k F'g+
+ F(k\otimes\nabla g+\nabla g\otimes k)+P\nabla^2g\},\\
+ \Delta V={}&T\{\rho F''g+2F'k\cdot\nabla g+F\Delta g\},
+ \nonumber\\
+ \Delta v={}&QJ\{\rho kF''g+\rho F'\nabla g
+       +2F'k(k\cdot\nabla g)+2F(\nabla^2g)k
+       +Fk\Delta g+P\nabla\Delta g\}.
+ \nonumber
+\end{align}
+Keep the full base residuals
+\begin{align}\label{tts:baseforce}
+ f_{\theta,b}&=\nu\eta'(\nu t)(\theta_{\rm ref}-\theta_{\rm in})
+                                      -d\Delta\theta_b,\nonumber\\
+ f_{u,b}&=\ddot\alpha J\nabla H_0
+    +\dot\alpha^2\bigl(\nabla(J\nabla H_0)\bigr)J\nabla H_0
+    -\theta_b e_2-d\dot\alpha J\nabla\Delta H_0,\\
+ f_\theta&=f_{\theta,b}+\sum_{j=1}^3E_{\theta,j},\qquad
+ f_u=f_{u,b}+\sum_{j=1}^3E_{u,j}.\nonumber
+\end{align}
+
+\begin{proof}[Verification of every equation and interaction]
+On a $j$th support the proved nesting makes the full older fields
+exactly $G_*\cdot x$ and $D_*x$. For
+$\mathcal D_j=\partial_t+D_*x\cdot\nabla$, differentiating
+$M_j^{-1}$ gives $\mathcal D_j(M_j^{-1}x)=0$.
+Likewise $\dot k=-D_*^Tk$ implies $\mathcal D_j\xi=0$.
+Therefore $\mathcal D_jg=0$, $\mathcal D_jV=\dot T Fg$,
+and $\mathcal D_j\Psi=\dot QPg$. Direct contractions give
+\[
+ \begin{split}
+ v\cdot G_*&=QFg(Jk\cdot G_*)+QP(J\nabla g\cdot G_*),\\
+ v\cdot\nabla V&=QT(F^2-PF')g(Jk\cdot\nabla g).
+ \end{split}
+\]
+The second identity uses $Jk\cdot k=0$,
+$J\nabla g\cdot\nabla g=0$, and
+$J\nabla g\cdot k=-Jk\cdot\nabla g$.
+The coupling in $\dot\Theta$ in \eqref{tts:material}
+cancels exactly the first term of the first identity. Adding
+$\dot w\Theta Fg$ and subtracting the complete $d\Delta V$
+proves \eqref{tts:scalarforce}.
+
+For an arbitrary trace-free two by two $D_*$, direct entrywise
+multiplication gives $D_*J+JD_*^T=0$. Hence
+\[
+ \mathcal D_j(J\nabla\Psi)=D_*v+J\nabla(\mathcal D_j\Psi).
+\]
+The reverse velocity interaction is
+$(v\cdot\nabla)(D_*x)=D_*v$. Adding it, the exact
+self-advection, and the negative buoyancy and diffusion terms
+gives \eqref{tts:vectorforce}, including its factor two.
+The product rule applied to $\Psi=QPg$ proves all entries of
+\eqref{tts:spatialjets}; differentiating
+$\Delta\Psi=Q(\rho F'g+2Fk\cdot\nabla g+P\Delta g)$
+in particular produces all six vector Laplacian groups.
+
+These are full ordered interactions. In the third increment,
+$\mathcal D_3$ contains both $v_1\cdot\nabla V_3$ and
+$v_2\cdot\nabla V_3$, and both corresponding advections of
+$v_3$. The term $v_3\cdot G_{<3}$ contains both
+$v_3\cdot\nabla V_1$ and $v_3\cdot\nabla V_2$; the
+term $D_{<3}v_3$ contains both reverse velocity interactions.
+The same statements for $j=2$ include all pairs of the first
+two layers, and $j=1$ includes the base. Thus adding in order
+$1,2,3$ counts every ordered pair exactly once. Outside a layer's
+support its derivatives vanish; the identities consequently telescope
+on all of $\mathbb R^2$, not merely on an affine neighborhood.
+
+The base radial cutoff is transported by $\dot\alpha Jx$,
+and so is the base phase $\mu R_\alpha e_2\cdot x$.
+On its scalar support $u_b=\dot\alpha Jx$; before $1/\nu$
+the angle and velocity are zero. This proves the scalar base
+formula, including the initial interpolation. Differentiating
+$u_b=\dot\alpha J\nabla H_0$ proves its vector formula
+globally. The sum therefore solves \eqref{tts:PDE} on
+$[0,t_1]$ with the original data. Since $u=J\nabla\psi$,
+equality of mixed spatial partial derivatives gives divergence zero.
+\end{proof}
+
+The exact spatial coordinate correspondence is also retained.
+For each $j$ put $C_j=M_j^{-1}M_j^{-T}$ and
+$\widetilde g_j(y)=f(y/\ell_j)$. On a function of independent
+variables $(\xi,y)$, pulled back by
+$(\xi,y)=(K_j\zeta_j\cdot x,M_j^{-1}x)$, the chain rule gives
+\begin{equation}\label{tts:metric}
+ \begin{split}
+ \nabla_x&=K_j\zeta_j\partial_\xi+M_j^{-T}\nabla_y,\\
+ \Delta_x&=K_j^2r_j^2\partial_\xi^2
+   +2K_j(C_jp_j\cdot\nabla_y)\partial_\xi
+   +\sum_{l,m}(C_j)_{lm}\partial_{y_l}\partial_{y_m}.
+ \end{split}
+\end{equation}
+Multiplying the commuting constant spatial derivatives proves the
+second equality from the first; in particular it retains all mixed
+terms and the actual time-dependent metric.
+
+On an affine cell $g_j=1$, $|\xi_j|<s_0$, the exact fields are
+\begin{equation}\label{tts:core}
+ V_j=T_jK_j\zeta_j\cdot x,\qquad
+ v_j=\frac{w_j\Omega_j}{r_j^2}J\zeta_j\otimes\zeta_j\,x,
+ \qquad\Delta V_j=\Delta v_j=0.
+\end{equation}
+This follows by differentiating the original
+$Q_j(P(0)+\xi_j^2/2)$. The constant remains in the full cutoff
+field; it was not discarded from its definition. The damping forces
+in the core remain exactly $-d\rho_jV_j$ and $-d\rho_jv_j$.
+On an uncut sine-profile region instead, $F''=-F$ gives
+$\rho_jV_j+\Delta V_j=0$ and
+$\rho_jv_j+\Delta v_j=0$. All other vector residual terms in
+\eqref{tts:vectorforce} remain. Thus the core and sine calculations
+give the exact map from the damped amplitude trajectories to the
+released profile, including the forces that the profile requires.
+
+\subsection{Quantitative spatial costs for every layer and both forces}
+
+For any scalar, vector or tensor field $U$, write
+$|U|_m=\sup_x\|D_x^mU\|$ in the Euclidean multilinear norm.
+Let $[W]_q=\sup_\xi|W^{(q)}(\xi)|$ for a periodic profile and
+$f_m=\sup_y\|D^mf(y)\|$. Define fixed bounds on $I$ by
+\begin{equation}\label{tts:normdata}
+ \begin{gathered}
+ r_{-,j}^2=(1,1,63/64)_j,\qquad
+ r_{+,j}^2=(1,11,3)_j,\qquad \kappa_j=K_jr_{+,j},\\
+ U_{\Theta,j}=(2\sigma_1^2/K_1,\ 3\sigma_2^2/K_2,
+                                      \ e^4P_3^*)_j,\\
+ U_{\Omega,j}=(10\sigma_1,\ 7040a\sigma_2/L_3,
+                             \ 3e^4K_3P_3^*/\sigma_2)_j,\\
+ W_{j,1}=(0,0,\Gamma[\eta']_0)_j,\qquad
+ \vartheta_*=640as/L_3,\qquad
+ A_*=270a^2\sigma_1+6aU_{\Omega,2}\vartheta_*.
+ \end{gathered}
+\end{equation}
+The lower third length follows from
+$e^{-1/64}\geq1-1/64=63/64$. To verify the control bound
+$|\dot\alpha|\leq A_*$, write
+\[
+ y=\frac{ag+hb}{D},\quad
+ \mathcal F_2=\frac{a\Omega_1(h\tan\vartheta-a)}D,\quad
+ \mathcal F_3=
+ \frac{\Omega_1y(h\sin\vartheta-a\cos\vartheta)
+                  +b\Omega_2\sin\vartheta}
+      {g\cos\vartheta-b\sin\vartheta}.
+\]
+On the proved box $0\leq h\tan\vartheta<a$, $y<18a$,
+$b<4a$, and the denominator of $\mathcal F_3$ exceeds $2/3$.
+Thus $|\mathcal F_2|\leq10a^2\sigma_1$ and
+$|\mathcal F_3|\leq270a^2\sigma_1+
+6aU_{\Omega,2}\vartheta_*$. Their convex combination satisfies
+the asserted bound, including the preceding growth interval.
+
+For each layer set the explicit constants
+\begin{equation}\label{tts:parentbounds}
+ \begin{gathered}
+ D_j^*=A_*+\sum_{i<j}U_{\Omega,i},\qquad
+ G_j^*=A_0+\sum_{i<j}K_iU_{\Theta,i}r_{+,i},\\
+ Q_j^*=\frac{U_{\Omega,j}}{K_j^2r_{-,j}^2},\qquad
+ Q_{{\rm r},j}^*=
+ \frac{W_{j,1}U_{\Omega,j}+\kappa_jU_{\Theta,j}
+                              +2D_j^*U_{\Omega,j}}
+      {K_j^2r_{-,j}^2}.
+ \end{gathered}
+\end{equation}
+The rank-one operator
+$J\zeta_i\otimes\zeta_i/r_i^2$ has norm one, proving
+$\|D_{<j}\|\leq D_j^*$. The gradient sum in
+\eqref{tts:material} proves $|G_{<j}|\leq G_j^*$.
+The identity $|\dot\rho_j/\rho_j|\leq2D_j^*$ proves
+$|Q_j|\leq Q_j^*$ and $|Q_{{\rm r},j}|\leq Q_{{\rm r},j}^*$.
+In particular the second-parent velocity contributes the complete
+$U_{\Omega,2}$ to $D_3^*$, with no sign-based removal.
+
+Define finite sums
+\begin{align}\label{tts:productbounds}
+ e_{j,m}&=(N_j/\ell_j)^mf_m,\nonumber\\
+ B_{j,m}(W)&=\sum_{q=0}^m\binom mq
+                      \kappa_j^q[W]_qe_{j,m-q},\\
+ C_{j,m}(P)&=\sum_{q=0}^m\binom mq
+                      \kappa_j^q[P]_qe_{j,m-q+1}.\nonumber
+\end{align}
+The $q$ derivatives allocated to the linear phase have size at
+most $\kappa_j^q$; the other $m-q$ derivatives of the linear
+material coordinate have size at most $(N_j/\ell_j)^{m-q}$.
+The product rule with all $\binom mq$ allocations therefore proves
+$|g_j|_m\leq e_{j,m}$,
+$|W(\xi_j)g_j|_m\leq B_{j,m}(W)$, and
+$|P(\xi_j)\nabla g_j|_m\leq C_{j,m}(P)$.
+These bounds hold for every choice of unit derivative directions.
+
+The full damping-plus-diffusion costs are
+\begin{align}\label{tts:diffusionnorms}
+ \mathfrak D_{\theta,j,m}
+ &=dU_{\Theta,j}
+       \{\kappa_j^2B_{j,m}(F)+2B_{j,m+2}(F)\},\nonumber\\
+ \mathfrak D_{u,j,m}
+ &=dQ_j^*
+       \{\kappa_j^2B_{j,m+1}(P)+2B_{j,m+3}(P)\}.
+\end{align}
+They bound, respectively, $-d(\rho_jV_j+\Delta V_j)$ and
+$-d(\rho_jv_j+\Delta v_j)$. The explicit factor two bounds
+the sum of the two coordinate traces defining the Laplacian;
+it is not an identification with a single second derivative.
+The complete force estimates are
+\begin{align}\label{tts:scalarcost}
+ |E_{\theta,j}|_m\leq{}&W_{j,1}U_{\Theta,j}B_{j,m}(F)
+  +Q_j^*G_j^*C_{j,m}(P)+\mathfrak D_{\theta,j,m}\nonumber\\
+ &+Q_j^*U_{\Theta,j}
+    \sum_{q=0}^m\binom mq B_{j,q+1}(P)B_{j,m-q+1}(F),\\
+ |E_{u,j}|_m\leq{}&(2D_j^*Q_j^*+Q_{{\rm r},j}^*)B_{j,m+1}(P)
+   +U_{\Theta,j}B_{j,m}(F)+\mathfrak D_{u,j,m}\nonumber\\
+ &+(Q_j^*)^2\sum_{q=0}^m\binom mq
+                    B_{j,q+1}(P)B_{j,m-q+2}(P).
+ \label{tts:vectorcost}
+\end{align}
+For the scalar nonlinear term apply the product rule to
+$v_j\cdot\nabla V_j$; for the vector term apply it to
+$(\nabla v_j)v_j$. The displayed derivative allocations give
+exactly the two sums. All other terms follow individually from
+\eqref{tts:scalarforce}--\eqref{tts:spatialjets}. This proves
+the estimates with activation, all parent interactions, self-advection,
+buoyancy, moving phase length, and diffusion included.
+
+For the base on $I$, let
+$c_m=\sup_x\|D^m\chi_0(x)\|$, $H_m=|J\nabla H_0|_m$, and
+\[
+ B_{0,m}(F)=\sum_{q=0}^m\binom mq\mu^q[F]_qc_{m-q}.
+\]
+Write $A_{**}$ for the explicit bound on $|\ddot\alpha|$
+constructed in \eqref{tts:controljets} below. Then
+\begin{align}\label{tts:basecost}
+ |f_{\theta,b}|_m&\leq2d(A_0/\mu)B_{0,m+2}(F),\nonumber\\
+ |f_{u,b}|_m&\leq A_{**}H_m+
+ A_*^2\sum_{q=0}^m\binom mq H_{q+1}H_{m-q}
+ +(A_0/\mu)B_{0,m}(F)+2dA_*H_{m+2}.
+\end{align}
+These follow directly from \eqref{tts:baseforce}, since the
+interpolation is complete on $I$. Adding these bounds to
+\eqref{tts:scalarcost} and \eqref{tts:vectorcost} gives explicit
+bounds for both total forces at every spatial order. The previously
+proved formulas cover $[0,t_b]$ with the same initial interpolation;
+the maximum of its bounds and these new ones covers $[0,t_1]$.
+Every bound on $I$ integrates with the explicit length
+$(t_a-t_b)+\Gamma^{-1}<15/\sigma_1$ from \eqref{tts:duration}.
+
+In particular all localization and frequency factors remain visible:
+\begin{equation}\label{tts:frequencycost}
+ \begin{gathered}
+ N_1/\ell_1=C_\ell\mu/s_0,\quad
+ N_2/\ell_2=\widetilde N\mu\widehat\lambda_1^3,\quad
+ N_3/\ell_3=\frac{16\mu\widehat\lambda_2^3}{\sin s},\\
+ dU_{\Theta,3}K_3^2
+       =de^4A_0\mu\widehat\lambda_3^{9/8},\qquad
+ dQ_3^*K_3^3
+       =\frac{64e^4dA_0\mu}{21\sigma_2}
+                                      \widehat\lambda_3^{9/8}.
+ \end{gathered}
+\end{equation}
+These are exact factors in upper costs, not lower bounds for the
+total force. The exact modal diffusion exponents on $I$ are
+\begin{equation}\label{tts:exponents}
+ dK_1^2|I|,\qquad dK_2^2\int_I D\,dt,\qquad
+ dK_3^2\int_I R\,dt.
+\end{equation}
+The second lies between $dK_2^2|I|$ and $11dK_2^2|I|$.
+The third splits exactly into the proved growth cost and
+$\delta_3\int_0^1R\,d\tau$, whose transition part lies between
+$(63/64)\delta_3$ and $3\delta_3$, with
+$\delta_3=dK_3^2/\Gamma$. Older coupling terms remain in
+\eqref{tts:material}; they have not been replaced by damping.
+
+\subsection{An explicit recursion for every temporal and mixed cost}
+
+We give the coefficient recursion as well as the spatial chain rule,
+so no stationary-envelope convention enters a time derivative.
+Use $\tau=\Gamma(t-t_a)$, $L=L_3$,
+$q=\sigma_1/\sigma_2=s/L$, $\epsilon=\sigma_1/\Gamma$,
+$\delta_j=dK_j^2/\Gamma$, and the dimensionless state
+\begin{equation}\label{tts:state}
+ \begin{gathered}
+ z=(h,g,u,E,F,\omega,V,X,Y),\\
+ E=-K_1\Theta_1/\sigma_1^2,\quad
+ F=-K_2\Theta_2/\sigma_2^2,\quad
+ \omega=\Omega_1/\sigma_1,\quad V=\Omega_2/\sigma_2,\\
+ X=-\Theta_3/P_3^*,\quad Y=-\sigma_2\Omega_3/(K_3P_3^*).
+ \end{gathered}
+\end{equation}
+The two last coordinates are signed linear amplitudes; forming them
+does not divide by a temperature. Put
+$\bar c=A_0\cos s_*/\sigma_1^2$ and
+$\bar C=A_0\sin s_*/\sigma_1^2$, and define
+\[
+ \begin{gathered}
+ x_c=(hg-ab)/D,\quad y_c=(ag+hb)/D,\\
+ N_3=\sigma_1^2(E+\bar c)y_c+\sigma_1^2\bar Cx_c
+                                      +b\sigma_2^2F,\\
+ \quad\mathcal K=\frac{N_3}{\sigma_2^2\sin s\,R},
+ \quad\mathcal B=\frac{g\sin(su)+b\cos(su)}{\sqrt D\sin s}.
+ \end{gathered}
+\]
+Let $\Phi(z,\lambda)=(1-\lambda)\mathcal F_2+
+\lambda\mathcal F_3$, with the exact feedbacks displayed above
+and substitutions $\Omega_1=\sigma_1\omega$,
+$\Omega_2=\sigma_2V$, $\vartheta=su$. The complete explicit
+dimensionless vector field $\mathcal V(z,\lambda)$ is
+\begin{align}\label{tts:vectorfield}
+ h'&=a\epsilon\omega,&
+ g'&=\epsilon\omega\frac{2ahg+(h^2-a^2)b}{D}
+                                  +\frac b{\sin s}V,\nonumber\\
+ u'&=\frac{-\Phi-a^2\sigma_1\omega/D}{\Gamma s},&
+ E'&=-\epsilon\bar C\omega-\delta_1E,\nonumber\\
+ F'&=-q\epsilon\frac{a(E+\bar c)+\bar Ch}{D}V-\delta_2DF,&
+ \omega'&=-\epsilon E\frac{h\sin(su)-a\cos(su)}{\sqrt D}
+                                               -\delta_1\omega,\\
+ V'&=-F\sqrt D\frac{\sin(su)}{\sin s}-\delta_2DV,&
+ X'&=\mathcal K Y-\delta_3RX,\nonumber\\
+ Y'&=\mathcal B X-\delta_3RY.&&\nonumber
+\end{align}
+Every prime in this display is $d/d\tau$. Substitution of
+\eqref{tts:state} into the physical equations proves each row,
+including both factors $q\epsilon$ in the second-temperature row.
+Conversely those substitutions reverse, giving the physical pair,
+phases, and feedback. This explicitly proves the coordinate map and
+its inverse wherever the displayed denominators are positive.
+
+For bounds let $\mathcal Z$ be the closed rectangular box given
+by
+\[
+ \begin{gathered}
+ h\in[h_0,13/4],\ g\in[3/4,5],\ u\in[0,1/1024],\\
+ E\in[1/8,2],\ F\in[1/16,3],\ \omega\in[0,10],\\
+ V\in[-1/32,0],\ X\in[0,e^4],\ Y\in[0,3e^4].
+ \end{gathered}
+\]
+The proved actual solution on $I$ belongs to this box. All
+feedback denominators are bounded away from zero on the whole
+box by the same elementary inequalities used above. In particular
+$D\geq1$ and $g\cos(su)-b\sin(su)>2/3$ there. Introduce
+independent symbols $\lambda^{[0]},\lambda^{[1]},\ldots$ for the jets
+of the control switch and define on each finite jet expression
+\begin{equation}\label{tts:jetderivation}
+ \mathcal C=
+ \sum_{l=1}^9\mathcal V_l(z,\lambda^{[0]})\partial_{z_l}
+             +\sum_{r\geq0}\lambda^{[r+1]}\partial_{\lambda^{[r]}}.
+\end{equation}
+The second sum is finite on every expression to which it is applied.
+The chain rule proves that the physical $r$th time derivative of
+any state function $H(z,\lambda)$ is
+$\Gamma^r\mathcal C^rH$ evaluated at
+$\lambda^{[j]}=\eta^{(j)}(\Gamma(t-t_a))$. Before the transition
+these are zero for every $j\geq0$;
+the same identity therefore holds on all of $I$.
+Consequently the explicit control constants are
+\begin{equation}\label{tts:controljets}
+ A_{r+1}=\Gamma^r
+ \max\left\{|\mathcal C^r\Phi|:
+ z\in\mathcal Z,\ 0\leq\lambda^{[0]}\leq1,
+ \ |\lambda^{[j]}|\leq[\eta^{(j)}]_0\ (1\leq j\leq r)\right\},
+ \qquad A_{**}=A_2.
+\end{equation}
+This is a maximum of a fully specified continuous elementary
+function over an explicit compact rectangle; it is finite and
+depends only on the retained parameters and profile derivative
+bounds. It is not a supremum over an unspecified later solution.
+The equality of derivatives just proved yields
+$|\alpha^{(r+1)}|\leq A_{r+1}$ at every order. The sharper
+$A_*$ in \eqref{tts:normdata} bounds its first derivative.
+
+For a complete algebraic mixed-jet evaluation, set
+$A_j=M_j^{-1}/\ell_j$ and introduce independent
+$(t,x,\xi,y)$. Define
+\begin{equation}\label{tts:pullbackops}
+ \mathfrak T_j=\partial_t+(\dot k_j\cdot x)\partial_\xi
+                                  +(\dot A_jx)\cdot\nabla_y,
+ \qquad
+ \mathfrak X_{j,i}=\partial_{x_i}+k_{j,i}\partial_\xi
+                                +\sum_l(A_j)_{li}\partial_{y_l}.
+\end{equation}
+For $\iota_j^*H=H(t,x,k_j(t)\cdot x,A_j(t)x)$, the ordinary
+chain rule, iterated one derivative at a time, gives
+\begin{equation}\label{tts:pullbackidentity}
+ \partial_t^n\partial_x^\gamma\iota_j^*H
+ =\iota_j^*\bigl(\mathfrak T_j^n
+        \mathfrak X_{j,1}^{\gamma_1}\mathfrak X_{j,2}^{\gamma_2}H\bigr).
+\end{equation}
+The commutators vanish: the time derivative of $k_{j,i}$
+cancels the $x_i$ derivative of $\dot k_j\cdot x$, and
+the two corresponding terms for $A_j$ cancel as well. Thus the
+identity also verifies the consistency of all mixed derivative orders.
+Every coefficient jet in this recursion is evaluated by
+\eqref{tts:vectorfield}--\eqref{tts:controljets} and
+\[
+ \dot M_j=D_{<j}M_j,\qquad
+ \dot A_j=-A_jD_{<j},\qquad
+ \dot k_j=-D_{<j}^Tk_j,
+\]
+together with product differentiation of \eqref{tts:material}
+and the exact activation jets $\Gamma^r\eta^{(r)}$ for $w_3$.
+For example
+$\partial_t^{n+1}A_j=-\sum_{q=0}^n\binom nq
+(\partial_t^qA_j)(\partial_t^{n-q}D_{<j})$;
+the other two linear equations have the identical product recursion
+with their displayed order and signs. Their zeroth bounds are
+\eqref{tts:matrixbounds}, so induction gives explicit finite
+matrix and phase jet bounds at every prescribed order.
+
+To obtain an actual numerical expression for a mixed norm, expand
+\eqref{tts:pullbackidentity} on every displayed field or residual,
+keeping its finitely many summands. Replace each coefficient jet by
+the preceding recursive bound, each $x^\beta$ by
+$(N_j\ell_j)^{|\beta|}$ on its layer support, each periodic
+derivative by $[F]_r$ or $[P]_r$, and each envelope derivative by
+$f_m$. Sum the absolute products with their explicit binomial
+coefficients. The triangle and product inequalities prove the
+resulting bound. For the base use its support radius $R_H$ and
+its displayed functions instead. This procedure computes all mixed
+costs, including every time derivative of $d\rho_j$ and the changing
+Laplacian metric; its recursion has finite depth $n+|\gamma|$.
+
+\subsection{The transition endpoint and a proved smooth force collar}
+
+At $t_1$ all weights are one, $\Theta_3(t_1)<0$ and
+$\Omega_3(t_1)<0$, with the exact inverse amplitudes of the
+transition theorem. In the common affine cell the complete state is
+\begin{equation}\label{tts:endpoint}
+ \theta=\left(-A_0R_\alpha e_2+
+             \sum_{j=1}^3K_j\Theta_j\zeta_j\right)\cdot x,
+ \qquad
+ u=\left(\dot\alpha J+
+    \sum_{j=1}^3\frac{\Omega_j}{r_j^2}
+                          J\zeta_j\otimes\zeta_j\right)x.
+\end{equation}
+The second vorticity has the revived negative sign proved above;
+the first remains positive. Formula \eqref{tts:endpoint} and the
+full cutoff formulas give actual states of \eqref{tts:PDE}, with
+their exact material matrices and laboratory gravity.
+
+To continue smoothly to the right, use the explicit vector field
+\eqref{tts:vectorfield} with the constant control value $\lambda=1$.
+Let $z_1=z(t_1)$ and take the closed cube
+$\mathcal C_1=\{z:\|z-z_1\|_\infty\leq1/100\}$.
+Its interior is in the smooth domain of this vector field. Indeed
+$h>h_0-1/100>3/4$, $g>3/4-1/100>7/10$, and
+$|u|<1/1024+1/100<1/50$ there. Since $s\leq a\leq1/512$
+and $b<4s$, these imply $\cos(su)>15/16$ and
+\[
+ g\cos(su)-b\sin(su)
+    >(7/10)(15/16)-4s^2/50>3/5.
+\]
+Thus $D$, $R$, $\sin s$ and every feedback denominator remain
+strictly positive on a neighborhood of the cube. No amplitude
+quotient occurs in its vector field. Define the concrete finite maxima
+\begin{equation}\label{tts:collarconstants}
+ \begin{gathered}
+ B=\max_{\mathcal C_1}\|\mathcal V(z,1)\|_\infty,
+ \qquad L_{\rm lip}=\max_{\mathcal C_1}
+                            \|D_z\mathcal V(z,1)\|_{\infty\to\infty},\\
+ \Delta\tau=\min\left\{\frac1{400(1+B)},
+                            \frac1{2(1+L_{\rm lip})}\right\}>0.
+ \end{gathered}
+\end{equation}
+On continuous paths in this cube beginning at $z_1$, the Picard
+map $z(\tau)\mapsto z_1+\int_1^\tau\mathcal V(z(r),1)dr$
+moves points by at most $B\Delta\tau<1/400<1/100$.
+The mean-value formula on the convex cube makes its Lipschitz
+constant at most $L_{\rm lip}\Delta\tau<1/2$ in the uniform
+norm. Successive iterates therefore converge uniformly: their
+successive differences are bounded by a geometric series with
+ratio below $1/2$. The limit satisfies the integral equation,
+and the same contraction inequality proves uniqueness. Differentiation
+of this equation first gives $C^1$, and repeated differentiation of
+the smooth vector field gives $C^\infty$. This constructs an actual
+right collar of physical length
+\begin{equation}\label{tts:collarlength}
+ \epsilon_R=\Delta\tau/\Gamma>0.
+\end{equation}
+At $t_1$ the original switching profile is flat and equal to one,
+so the control and every derivative match this continuation.
+The matrices and phase fields continue by their exact linear ODEs.
+Their determinant stays one by the trace identity, or by the
+explicit formulas with $\det\mathcal L=-b$. The angle continues
+by $\dot\alpha=\mathcal F_3$. Hence the fields have a smooth
+right extension with the actual endpoint jets, not a frozen state.
+
+On this collar define the forces by the raw full residuals
+\begin{equation}\label{tts:rawcollar}
+ f_\theta^{\rm raw}=\theta_t+u\cdot\nabla\theta-d\Delta\theta,
+ \qquad
+ f_u^{\rm raw}=u_t+(u\cdot\nabla)u-d\Delta u-\theta e_2.
+\end{equation}
+They agree with \eqref{tts:baseforce} on the entire required
+slab by the proof above. Thus no additional nesting assertion
+outside that slab is needed for the collar. They are smooth and
+compact in space, since the fields are smooth compact fields and
+their matrices vary continuously on a compact time interval.
+All collar mixed costs are explicitly computed by the same
+derivation and pullback recursions, replacing $\mathcal Z$ by
+$\mathcal C_1$ and $\lambda$ by one in their maxima, and using
+the raw expressions \eqref{tts:rawcollar}. The compact matrix
+bounds follow directly from \eqref{tts:matrices} on that cube;
+for example $h<13/4+1/100$, $g<5+1/100$, and its positive
+denominators bound $\mathcal L$ and $\mathcal L^{-1}$ there.
+These explicit finite maxima provide every derivative order without
+assuming the original pre-endpoint amplitude bounds on the collar.
+
+Extend the original sine state constantly to negative times, with
+zero velocity and inactive increments, and put $\epsilon_L=1/\nu$.
+Use the raw residuals of these extensions and set
+\begin{equation}\label{tts:timecutoff}
+ \beta(t)=\eta(1+t/\epsilon_L)
+                   \eta(1+(t_1-t)/\epsilon_R),\qquad
+ \widetilde f_\bullet=\beta f_\bullet^{\rm raw}.
+\end{equation}
+They equal the proved forces on $[0,t_1]$. Flatness of $\eta$
+makes their zero extension outside
+$[-\epsilon_L,t_1+\epsilon_R]$ smooth. Their support is compact
+in space and time. More explicitly, with
+\[
+ B_{\beta,r}=\sum_{q=0}^r\binom rq
+ \epsilon_L^{-q}\epsilon_R^{-(r-q)}
+              [\eta^{(q)}]_0[\eta^{(r-q)}]_0,
+\]
+the product rule gives for every multi-index $\gamma$
+\begin{equation}\label{tts:cutoffcost}
+ \|\partial_t^n\partial_x^\gamma\widetilde f_\bullet\|_\infty
+ \leq\sum_{q=0}^n\binom nq B_{\beta,q}
+       \|\partial_t^{n-q}\partial_x^\gamma
+                              f_\bullet^{\rm raw}\|_\infty.
+\end{equation}
+The right-hand mixed norms have the explicit finite recursion just
+proved. The PDE is asserted on $[0,t_1]$, where the cutoff is one.
+
+Finally, the streamfunction is compact and smooth; hence the velocity
+has finite energy. If $N_0(x)=(2\pi)^{-1}\log|x|$, then
+$N_0*\Delta\psi=(\Delta N_0)*\psi=\psi$ by distributional
+integration by parts, and therefore
+$u=J\nabla N_0*\omega$, $\omega=\Delta\psi$, exactly.
+Odd $F$, even $P$, and even material envelopes make
+$\theta,u,f_\theta,f_u$ odd and $\omega$ even. Every field and
+force on the required slab has the original spatial support inside
+$B_{R_H}$ by the proved nesting. This completes the full compact
+spatial extension through the actual third transition with every
+retained physical diffusion cost and both older interaction directions.

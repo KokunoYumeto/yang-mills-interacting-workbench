@@ -1,0 +1,93 @@
+{
+  "schema": "pulse-frame-audit-v2",
+  "all_passed": true,
+  "check_count": 15,
+  "checks": [
+    {
+      "name": "left inverse entry 0,0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "left inverse entry 0,1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "left inverse entry 1,0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "left inverse entry 1,1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "frame is transverse entry 0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "frame is transverse entry 1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "projected tangent derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "moving-frame matrix entry 0,0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "moving-frame matrix entry 0,1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "moving-frame matrix entry 1,0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "moving-frame matrix entry 1,1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "projected force entry 0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "projected force entry 1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "pressure numerator",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "shear energy transfer",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "source_pulse_tex": "../pulse_comparison.tex",
+  "source_pdf_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+  "scope": "Independent replay of the frame, transversality, projected operator, force, pressure and shear identities. It does not reprove source estimates or covariance construction.",
+  "findings": [
+    "The existing audit replay's reducer does not enforce the unit-frame constraints after expansion; its first assertion fails even though the frame identity is true.",
+    "The existing audit replay's C_expected (0,1) entry omits the denominator (1+s^2) on the rotating-frame determinant term.",
+    "The existing audit replay's pressure_expected has the wrong sign on the determinant term in the y coefficient; the exact term is + (k_theta*k_z_p-k_z*k_theta_p).",
+    "The pulse note's residual-map theorem requires n^T B=0 (columns spanning n^perp), not merely full rank plus transversality of one selected B L y.",
+    "The note's diffusion discrepancy is signed m^2 d_N-q_v lambda_c^bullet (plus frame H terms), not m^2 d_N+lambda_c^bullet unless explicitly taking an absolute-cost convention."
+  ],
+  "replay_script_sha256": "4a2e02deddccfe11e0bcd7ba690ef74c64c6dc15dda45f6c5867264fffc46c7e"
+}

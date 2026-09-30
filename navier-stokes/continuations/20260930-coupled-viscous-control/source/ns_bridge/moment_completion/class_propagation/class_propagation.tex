@@ -1,0 +1,358 @@
+\section{Finite propagation of the actual coupled source classes}
+\label{mccp:section}
+
+This section records the finite class statement that follows from the
+actual coupled operation. It is a statement about a fixed source band,
+a fixed finite set of labels, and the physical viscosity
+$\nu_{\rm NS}>0$. No parameter is normalized. In particular
+$Q=2^{-\ell}$, $\varepsilon=Q^h$, $S_* = \ell^2$, and the original
+edge weights, pulse envelope, phase maps, and source constants are kept.
+The estimates below propagate a pre-existing locally finite source family
+and a newly added finite family simultaneously.
+
+\subsection{The source classes and their exact closure}
+
+Fix a common auxiliary torus $H$ and one source rectangle. Put
+\[
+ Q=2^{-\ell},\qquad \varepsilon=Q^h,\qquad
+ R=r/\sqrt Q,\quad Z=z/Q^D,\quad T=(1-t)/Q,
+ \qquad A=\tfrac12+h,\quad D=\tfrac12-h,
+\]
+where $0<h<1/100$. For $X=QR^2/(2q)$, retain
+\[
+ \zeta(X)=\exp\!\left(-\frac{a_a}{\log^2(X/X_a)}
+       -\frac{a_b}{\log^2(X_b/X)}\right),\qquad
+ \delta(X)=\min\{1,\log(X/X_a),\log(X_b/X)\},
+\]
+with the original positive $a_a,a_b$ and the original interval
+$X_a<X<X_b$. The pulse variable is the source variable
+$0\leq v\leq L_s$, and ${\cal P}_\gamma(v)$ denotes the exact positive
+exponential pulse envelope from the source equation (7.12), including
+its Gaussian factors and its fixed source parameters.
+
+For a source order $\alpha\in\mathbb R$ define the following classes.
+A mean coefficient $f\in M^\alpha$ is independent of the angular
+variable, descends to $H$, is smoothly zero outside the active shell,
+and obeys, for each finite multi-index $I$ in $(R,Z,T,H)$,
+\begin{equation}\label{mccp:Mclass}
+ |\partial^I f|\le C_I\varepsilon^\alpha S_*^{b_I}
+                  \zeta\,\delta^{-d_I}.
+\end{equation}
+A moment coefficient $F\in S^\alpha$ obeys
+\begin{equation}\label{mccp:Sclass}
+ |\partial_{Z,T,H}^I F|\le C_I\varepsilon^\alpha S_*^{b_I}.
+\end{equation}
+A nonzero labelled amplitude $a_{\gamma,m}\in W^\alpha$ is independent
+of the angular variable, has the source slow, transverse, and shell
+support, compatible representatives on all integer covers, and obeys
+\begin{equation}\label{mccp:Wclass}
+ |\partial^I a_{\gamma,m}|
+ \le C_I\varepsilon^\alpha S_*^{b_I}
+       \sqrt\zeta\,\delta^{-d_I}{\cal P}_\gamma(v).
+\end{equation}
+The constants in these three displays may depend on the fixed finite
+stage and $I$, but are uniform over the finitely many retained labels and
+representatives. Equal label--harmonic terms are summed before applying
+these bounds.
+
+The differential maps used below are exact source maps, with the phase
+factor removed:
+\begin{equation}\label{mccp:derivative_maps}
+ \partial_{R,Z,T}:C^\alpha\to C^\alpha,\quad
+ D_r:C^\alpha\to C^{\alpha-\kappa_s},\quad
+ D_z=\varepsilon\partial_Z:C^\alpha\to C^{\alpha+1},
+\end{equation}
+\[
+ c_{i_0}N_{i_0}:C^\alpha\to C^\alpha,qquad
+ -\varepsilon\partial_T:C^\alpha\to C^{\alpha+1},
+ \qquad C=M,W,
+\]
+where $\kappa_s=10^{-5}$ and $c_{i_0},N_{i_0}$ are the original source
+coefficient and torus transport operator. Products satisfy
+\begin{equation}\label{mccp:product_closure}
+ M^\alpha M^\beta\subset M^{\alpha+\beta},\qquad
+ M^\alpha W^\beta\subset W^{\alpha+\beta}.
+\end{equation}
+For equal labels, products of two $W$ coefficients belong to
+$M^{\alpha+\beta}$ in the zero output harmonic and to
+$W^{\alpha+\beta}$ in every other harmonic. Distinct disjointly
+supported labels have zero product. These inclusions follow by multiplying
+(\ref{mccp:Mclass})--(\ref{mccp:Wclass}): the factors multiply to
+$\varepsilon^{\alpha+\beta}S_*^{b_I+b_J}$, while
+$(\sqrt\zeta)^2=\zeta$ and ${\cal P}_\gamma$ is retained in every
+nonzero output. Leibniz' rule and the finite multinomial sum prove the
+same statement for every derivative $I$. Thus no product is discarded as
+``bookkeeping''.
+
+The prescribed source phases retain the exact arithmetic condition
+\begin{equation}\label{mccp:phase_arithmetic}
+ k_\gamma p_\gamma\in\mathbb Z\setminus\{0\},\qquad
+ k_\gamma=\lceil\varepsilon^{-1/2}\rceil .
+\end{equation}
+The finite harmonic set is independent of the band at a fixed stage, and
+all equal label--harmonic terms are grouped before testing.
+
+\subsection{Old family plus finite actual increment}
+
+Let $R_{\rm old}$ be the full residual of the entering coupled state,
+including every old wave, old mean, old pressure, phase derivative, and
+viscous term. Assume only the attributed source bounds for its locally
+finite family: on each compact source support and for each derivative
+$I$, its mean coefficients, moment coefficients, and nonzero harmonic
+coefficients satisfy (\ref{mccp:Mclass})--(\ref{mccp:Wclass}). This is a
+local finiteness assertion; it does not set any old coefficient equal to
+zero.
+
+Let $\Delta U=(a_r,a_\theta,a_z)$ be the actual finite increment produced
+by the five-row operation, with
+\[
+ a_\theta=q^A{\cal P}V_P+q^{A-1}{\cal J}_zV_{J_z},
+ \qquad a_z=q^{A-3/2}{\cal J}_\theta G_{J_\theta},
+\]
+\[
+ \Psi=q^{A-1}{\cal J}_\theta H_\theta,
+ \qquad a_r=-\partial_z\Psi.
+\]
+Here $V_P,V_{J_z},G_{J_\theta},H_\theta$ are the exact inverse
+Vandermonde profiles and compact combined primitive of the five-row
+operation; their coefficients contain the original $a(\eta)$,
+$\lambda$, $d_b$, moments $\mu_p$, and inverse matrices $B_\theta,B_z$.
+The targets are full current targets
+\[
+ {\cal P}=P_{\rm old}+\Delta P,\quad
+ {\cal J}_\theta=(J_\theta)_{\rm old}+\Delta J_\theta,\quad
+ {\cal J}_z=(J_z)_{\rm old}+\Delta J_z,
+\]
+not merely the increments. The exact five rows are
+\begin{equation}\label{mccp:five_rows}
+\begin{gathered}
+ \int r^2a_\theta\,dr=0,\qquad \int ra_z\,dr=0,\qquad
+ \int \frac{2V}{r}a_\theta\,dr=-{\cal P},\\
+ \int r^2(Ga_\theta+Va_z)\,dr=-{\cal J}_\theta,\\
+ \int(2rGa_z-rVa_\theta)\,dr=-{\cal J}_z.
+\end{gathered}
+\end{equation}
+The inverse matrices prove (\ref{mccp:five_rows}) at the original $q$,
+without changing signs or setting $a(\eta)$ to one. In particular the
+combined primitive has zero tail because the exact first axial moment of
+$G_{J_\theta}$ is zero; an individual primitive need not be compact.
+
+On the fixed compact support of the finite increment, all derivatives of
+$q$, $\eta$, and the profiles are finite by the exact dictionaries
+\[
+ q_z=\frac{2\eta q^A}{B},\quad q_t=-B^{-1},\quad
+ \eta_z=\frac{q^{-D}(1-\eta^2)}B,\quad
+ \eta_t=\frac{D\eta q^{-1}}B,
+ \quad B=1-2h\eta^2>0,
+\]
+\[
+ \partial_r(q^\sigma F)=q^{\sigma-1/2}F_x,\quad
+ \partial_z(q^\sigma F)=q^{\sigma-D}{\cal Z}_\sigma F,\quad
+ \partial_t(q^\sigma F)=q^{\sigma-1}{\cal T}_\sigma F.
+\]
+Repeated product and chain rules therefore produce explicit finite
+majorants for every $\partial_r^k\partial_z^m\partial_t^n a_i$.
+For $I=(m,n)$ define, using the full target derivative arrays,
+\begin{equation}\label{mccp:target_majorants}
+\begin{aligned}
+ \mathsf P_I&=|\partial^IP_{\rm old}|+{\cal B}_{-1,I}
+                         +\tfrac12{\cal B}_{0,(m+1,n)},\\
+ \mathsf J_{\theta,I}&=|\partial^I(J_\theta)_{\rm old}|
+                         +\tfrac12{\cal B}_{2,I},\\
+ \mathsf J_{z,I}&=|\partial^I(J_z)_{\rm old}|+{\cal B}_{1,I}
+                         +\tfrac14{\cal B}_{2,(m+1,n)},
+\end{aligned}
+\end{equation}
+where ${\cal B}_{e,I}$ is the exact weighted old-wave, cross-wave, and
+self-wave derivative sum. The triangle inequality gives
+$|\partial^I{\cal P}|\le\mathsf P_I$ and the analogous two bounds for
+${\cal J}_\theta,{\cal J}_z$. Consequently the increment derivative
+arrays are finite explicit sums of the target arrays times the profile
+recursions. This proves finite smoothness of the added family, including
+all mixed derivatives and every factor $q^{-D}$ generated by $a_r$.
+
+\subsection{Pressure defect and pressure derivative class}
+
+Let $\delta g_r$ be the exact negative radial residual change before the
+new pressure, including the old velocity, the complete increment, all
+wave cross terms, and $\nu_{\rm NS}(\Delta_0-r^{-2})a_r$. The full vector
+force identity is
+\begin{equation}\label{mccp:full_force_identity}
+ \delta R=\partial_t\Delta U+(U\cdot\nabla)\Delta U
+ +(\Delta U\cdot\nabla)U+(\Delta U\cdot\nabla)\Delta U
+ -\nu_{\rm NS}\Delta\Delta U+\nabla\delta p,
+\end{equation}
+where $U$ is the entering full velocity and $\delta p$ is the actual
+reconstructed pressure below. In cylindrical components the self terms
+are $a_ra_{r,r}+a_za_{r,z}-a_\theta^2/r$,
+$a_ra_{\theta,r}+a_za_{\theta,z}+a_ra_\theta/r$, and
+$a_ra_{z,r}+a_za_{z,z}$; the viscosity is
+$\nu_{\rm NS}((\Delta_0-r^{-2})a_r,
+(\Delta_0-r^{-2})a_\theta,\Delta_0a_z)$.
+Thus every inverse-radius connection term is part of $\delta g_r$.
+
+Fix a compact physical interval $[R_-,R_+]\Subset(0,\infty)$ containing
+all increment and pressure-bump supports, with $L_R=R_+-R_-$. Let
+$\mathsf G_{k,m,n}$ be the supremum over that interval and all original
+auxiliary phases of the pressure-free radial force cost obtained from
+(\ref{mccp:full_force_identity}), deleting $\partial_r\delta p$ but
+retaining all old-wave derivatives, inverse radii, and $\nu_{\rm NS}$. Then
+\begin{equation}\label{mccp:pressure_free}
+ |\partial_r^k\partial_z^m\partial_t^n(\delta g_r)_{\rm phys}|
+ \le\mathsf G_{k,m,n},\qquad
+ |\partial_z^m\partial_t^n\delta P_{\rm step}|
+ \le L_R\mathsf G_{0,m,n}=:\mathsf D_{m,n}.
+\end{equation}
+The second inequality follows by differentiating the compact radial
+integral under the original Haar average. It does not use a sign for any
+scale or amplitude.
+
+The physical bump is $\rho=q^{-1/2}\widehat\rho(r/\sqrt q)$, with its
+exact recursion giving
+\[
+ |\partial_r^k\partial_z^m\partial_t^n\rho|
+ \le \mathsf H_{k,m,n}:=
+ q^{-(1+k)/2-mD-n}\sup|\rho_{k,m,n}(r/\sqrt q,\eta)|.
+\]
+For $f=(\delta g_r)_{\rm phys}-\rho\,\delta P_{\rm step}$ set
+\begin{equation}\label{mccp:pressure_source_array}
+ \mathsf E_{k,m,n}=\mathsf G_{k,m,n}+
+ \sum_{i=0}^m\sum_{j=0}^n\binom{m}{i}\binom{n}{j}
+       \mathsf H_{k,m-i,n-j}\mathsf D_{i,j}.
+\end{equation}
+The exact physical phase evaluation of the shifted pressure primitive is
+\[
+ \delta p(r,z,t)=\int_0^r f_{\rm phys}(s,z,t)\,ds
+ -\chi_m(r,z,t)\int_0^\infty f_{\rm phys}(s,z,t)\,ds.
+\]
+The cutoff derivative array is
+$\mathsf X_{k,i,j}=|\partial_r^k\partial_z^i\partial_t^j\chi_m|$. Therefore
+\begin{equation}\label{mccp:pressure_array}
+ \mathsf\Pi_{k,m,n}=\begin{cases}L_R\mathsf E_{0,m,n}&k=0,\\
+ \mathsf E_{k-1,m,n}&k\ge1,\end{cases}
+ +L_R\sum_{i,j}\binom{m}{i}\binom{n}{j}
+       \mathsf X_{k,i,j}\mathsf E_{0,m-i,n-j}
+\end{equation}
+(with the sum ranges $0\le i\le m$, $0\le j\le n$). This proves
+$|\partial_r^k\partial_z^m\partial_t^n\delta p|\le\mathsf\Pi_{k,m,n}$.
+The auxiliary average of the shifted tail is zero, but the tail itself and
+its cutoff derivative remain in (\ref{mccp:pressure_array}). Thus this is a
+pressure derivative class bound for the actual reconstructed pressure,
+not for its auxiliary average.
+
+\subsection{Full force costs and class propagation}
+
+For a scalar derivative multi-index
+$\alpha=(k,\ell,m,n)$ let $\star$ denote the exact Leibniz convolution
+\[
+ (X\star Y)_\alpha=\sum_{\beta\le\alpha}\binom{\alpha}{\beta}
+ X_\beta Y_{\alpha-\beta},\qquad
+ (S_\delta X)_\alpha=X_{\alpha+\delta}.
+\]
+Let $\mathsf A_i$ majorize all component derivatives of $a_i$, and
+$\mathsf U_i=|\partial^\alpha U_i|$. Let $\mathsf R_j$ be the exact
+absolute derivative array of $r^{-j}$, namely
+$(\mathsf R_j)_\alpha=(j)_k r^{-j-k}$ when $\ell=m=n=0$ and zero otherwise.
+Define
+\begin{equation}\label{mccp:transport_cost}
+\begin{split}
+ \mathsf T_i={}&S_{e_t}\mathsf A_i+\mathsf U_r\star S_{e_r}\mathsf A_i
+ +\mathsf U_z\star S_{e_z}\mathsf A_i
+ +\mathsf A_r\star S_{e_r}\mathsf U_i
+ +\mathsf A_z\star S_{e_z}\mathsf U_i\\
+ &+\mathsf R_1\star\mathsf A_\theta\star S_{e_\theta}\mathsf U_i
+ +\mathsf A_r\star S_{e_r}\mathsf A_i
+ +\mathsf A_z\star S_{e_z}\mathsf A_i,
+\end{split}
+\end{equation}
+\begin{equation}\label{mccp:force_costs}
+\begin{aligned}
+ \mathsf F_r={}&\mathsf T_r+2\mathsf R_1\star\mathsf U_\theta\star\mathsf A_\theta
+ +\mathsf R_1\star\mathsf A_\theta\star\mathsf A_\theta\\
+ &+\nu_{\rm NS}(S_{2e_r}\mathsf A_r+\mathsf R_1\star S_{e_r}\mathsf A_r
+ +S_{2e_z}\mathsf A_r+\mathsf R_2\star\mathsf A_r)+S_{e_r}\mathsf\Pi,\\
+ \mathsf F_\theta={}&\mathsf T_\theta+\mathsf R_1\star(\mathsf U_r\star\mathsf A_\theta
+ +\mathsf A_r\star\mathsf U_\theta+\mathsf A_r\star\mathsf A_\theta)\\
+ &+\nu_{\rm NS}(S_{2e_r}\mathsf A_\theta+\mathsf R_1\star S_{e_r}\mathsf A_\theta
+ +S_{2e_z}\mathsf A_\theta+\mathsf R_2\star\mathsf A_\theta)
+ +\mathsf R_1\star S_{e_\theta}\mathsf\Pi,\\
+ \mathsf F_z={}&\mathsf T_z+\nu_{\rm NS}(S_{2e_r}\mathsf A_z
+ +\mathsf R_1\star S_{e_r}\mathsf A_z+S_{2e_z}\mathsf A_z)
+ +S_{e_z}\mathsf\Pi.
+\end{aligned}
+\end{equation}
+By the repeated Leibniz rule, (\ref{mccp:force_costs}) proves
+\begin{equation}\label{mccp:force_bound}
+ |\partial^\alpha\delta R_i|\le\mathsf F_{i,\alpha},
+ \qquad i=r,\theta,z.
+\end{equation}
+The proof retains all angular derivatives of the old full velocity in
+$\mathsf U$, all connection terms, the pressure tail, and physical
+viscosity. It also retains the full quadratic increment; no fixed-
+background conjugacy is used.
+
+The source-class consequence is finite and exact. On the compact support
+of the added increment, $\varepsilon$, $\zeta$, $\delta$, and each fixed
+positive ${\cal P}_\gamma(v)$ have positive minima. Local finiteness of
+the old family leaves only finitely many old labels there. For every
+fixed derivative $I$ and every added label define the concrete ratio
+\[
+ K_{I,\gamma,m}=
+ \max_{\operatorname{supp}(\Delta R)\cap\operatorname{supp}(\gamma,m)}
+ \frac{|\partial^I(\Delta R)_{\gamma,m}|}
+ {\varepsilon^\alpha S_*^{b_I}\sqrt\zeta\,\delta^{-d_I}{\cal P}_\gamma(v)},
+\]
+with the numerator and denominator evaluated using the original phase
+representative; if the support is empty set $K_{I,\gamma,m}=0$.
+Compactness and positivity prove $K_{I,\gamma,m}<\infty$. Extend the
+added family by zero on unused labels. Then the old-plus-added residual
+satisfies the source class inequalities on this finite stage, with the
+old constants and the finite constants $K_{I,\gamma,m}$ both retained.
+This is a finite compact-ratio conclusion only: it gives no uniform bound
+when labels, bands, or stages increase, and it gives no infinite gain.
+
+For the ordered source cycle, under the support, zero-mean, and phase
+hypotheses of the corresponding source propositions, the four actual
+operations have the following attributed class maps:
+\[
+ W^\alpha\xrightarrow{\rm pulse}W^\alpha\oplus W^{\alpha+1/2},\qquad
+ M^\alpha_{\,\mathrm{aux\text{-}independent}}
+       \xrightarrow{\rm stress}W^{\alpha-1/2},
+\]
+\[
+ S^\alpha\xrightarrow{\rm temporal}M^\alpha,
+ \qquad S^\alpha\xrightarrow{\rm five\ rows}M^\alpha\oplus M^{\alpha+1}.
+\]
+The full residual produced after each operation is recomputed from
+(\ref{mccp:full_force_identity}), (\ref{mccp:pressure_array}), and the
+exact nonlinear defect expansion; in particular the varying-bump term,
+the pressure cutoff remainder, old-wave cross terms, and quadratic terms
+are retained. The source's attributed finite-cycle budget is
+\[
+ w\in W^{1/2},\quad w-w_0^{\tan}\in W^{0.68},\quad
+ (v,\gamma,p_m)\in M^{0.9},\quad \beta\in M^{1.9},
+\]
+with $B_j=1/2+\sigma_j$, $C_j^*=1+\sigma_j$, and
+$\sigma_j=1/5+j/10$. Its claimed gain is
+$B_{j+1}-B_j=C_{j+1}^*-C_j^*=1/10$ for the source's finite ordered
+cycle. The present derivation proves the exact finite maps and costs on
+the actual coupled state; it does not promote the attributed cycle to a
+uniform infinite modified sequence.
+
+Finally, replacing every source class by its sign-reversed profile leaves
+(\ref{mccp:Mclass})--(\ref{mccp:Wclass}) unchanged, because the estimates
+are absolute values. The sign of the actual positive or reflected swirl is
+therefore carried by the coefficients and force, while the class bound
+itself is not a positive-scale assertion. A reflection of one coordinate
+flips the corresponding vorticity component and transforms the force by
+$\rho O$; it does not identify $u$ with $-u$. This is the exact scope of
+the negative-branch propagation.
+\label{mccp:conclusion}
+
+
+
+
+
+
+
+

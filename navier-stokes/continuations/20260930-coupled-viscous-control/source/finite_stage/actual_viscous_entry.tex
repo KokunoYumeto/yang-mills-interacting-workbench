@@ -1,0 +1,461 @@
+\section{Reaching both original growth targets with retained diffusion}
+\label{ave:section}
+
+We now join the exact evolving-parent growth calculation to the direct
+second return theorem. Both stopping events are the original temperature
+thresholds. This changes the first growth time from the earlier
+fixed-inviscid-time variant in Section~\ref{sec:cv-diffusive-parent}.
+The construction below specifies the frequencies and a nonempty interval
+of positive physical diffusivities, and proves that their actual entry
+states satisfy every inequality in Theorem~\ref{sr:theorem}.
+The spatial fields and their full forces are supplied by the compact
+construction following that theorem. In particular the amplitude damping
+on the released linear profile has its explicitly stated core force.
+
+\subsection{A finite choice within the original frequency schedule}
+
+Retain the original physical data
+\[
+ A_0\geq1,\qquad\nu=\sqrt{A_0},\qquad
+ \mu=\lambda_0=\lceil\sqrt{A_0}/2\rceil,
+\]
+and all fixed source profiles, including
+$s_*,s_0,C_\ell,\eta,\eta_2,\Lambda_1$.
+Thus $0<s_*\leq1/8$, $C_\ell\geq4$, $H=\|\eta_2\|_\infty\geq1$,
+$\Lambda_1\geq6H$, and $3\Lambda_1H\sin s_*\leq1/4$.
+The first section's $\lambda_1$ denoted a source frequency; in this section
+we write that same quantity as $\widehat\lambda_1$ and retain the
+physical frequencies separately as $K_j=\mu\widehat\lambda_j$.
+Keep the source's $Q_*\geq200$, $Q_j=Q_*+j$, its specified finite
+constants $K(k)$, and the exact choices
+\begin{align}
+ \widehat\lambda_2&=\widehat\lambda_1^{Q_2},&
+ k_j&=\max\{k\in\mathbb N_0:120k\leq Q_j,
+                   \ K(k)\leq\log\widehat\lambda_j\},\nonumber\\
+ L_j&=(k_j+41/8)\log\widehat\lambda_j,&
+ S_j&=\frac{A_0}{\mu}\widehat\lambda_j^{-k_j-6},\nonumber\\
+ P_j^*&=\frac{A_0}{\mu}\widehat\lambda_j^{-7/8}=S_je^{L_j}.
+ \label{ave:source_choices}
+\end{align}
+Here $K(k)$ is the source's prescribed parameter sequence, not the
+physical frequency $K_j$. The maximum is a nonempty finite set once
+$\log\widehat\lambda_1\geq K(0)$: $k=0$ belongs to it and
+$k\leq\lfloor Q_j/120\rfloor$. No smooth dependence of $k_j$ on the
+frequencies is required.
+
+The following fixed constants give one explicit sufficient frequency
+choice; their large numerical size is immaterial to finite existence:
+\begin{equation}\label{ave:Ychoice}
+\begin{gathered}
+ C_A=e^{2+\Lambda_1^{-1}},\qquad
+ C_\sigma=\sqrt{1+C_A},\qquad C_N=1+3C_\sigma/32,\\
+ C_L=(\lfloor Q_2/120\rfloor+41/8)Q_2,\\
+ Y_0=1+\max\left\{
+ \begin{gathered}
+ 64,K(0),Q_2,72\cdot16^3HC_L^2/\sqrt e,\quad8\log(4/e),\\
+ (16/47)\log(4C_\ell C_N/s_0),\quad
+ (16/31)\log(2C_N/s_0)
+ \end{gathered}\right\}.
+\end{gathered}
+\end{equation}
+Choose any $\widehat\lambda_1\geq e^{Y_0}$ and then use
+\eqref{ave:source_choices} literally. Write $L=L_2$,
+$\Gamma_1=\nu\sin s_*$ and $C_{\rm post}=2+\Lambda_1^{-1}$.
+Define the explicit positive number
+\begin{equation}\label{ave:dmax}
+ d_{\max}=\min\left\{
+ \frac{\Gamma_1}{2K_1^2},
+ \frac{\Gamma_1\log2}{K_1^2C_{\rm post}},
+ \frac{\nu\log(3/2)}{16K_1^2},
+ \frac{L\nu\log3}{12800K_2^2}\right\}.
+\end{equation}
+Every entry in this minimum uses only the fixed original data and
+the chosen frequencies. In particular it does not require solving
+a circular inequality involving a yet unknown diffusive growth scale.
+All subsequent statements hold for each $0<d\leq d_{\max}$, with
+physical viscosity and thermal diffusivity both equal to $d$.
+
+\subsection{First actual threshold and the changed first endpoint}
+
+Put $q=dK_1^2$ and $t_1^{\rm in}=1/\nu$.
+Growth and transition still have $\alpha=0$. The signed first pair is
+exactly
+\begin{equation}\label{ave:first_growth}
+ \Theta_1(t)=-S_1e^{(\Gamma_1-q)(t-t_1^{\rm in})},\qquad
+ \Omega_1(t)=\frac{K_1}{\nu}\Theta_1(t).
+\end{equation}
+Indeed its temperature coupling is $a_1=A_0\sin s_*/K_1$,
+its vorticity coupling is $b_1=K_1\sin s_*$, and
+$a_1K_1/\nu=\Gamma_1$, $b_1\nu/K_1=\Gamma_1$.
+Differentiation verifies both damped equations and both original
+seed values. The linear integral equation proves uniqueness.
+Since $q\leq\Gamma_1/2$, the original first threshold is attained
+uniquely and transversely at
+\begin{equation}\label{ave:first_times}
+ t_1^a=t_1^{\rm in}+\frac{L_1}{\Gamma_1-q},\qquad
+ t_1^1=t_1^a+\Gamma_1^{-1},\qquad
+ t_1^b=t_1^1+\Gamma_1^{-1}(1+\Lambda_1^{-1}).
+\end{equation}
+The first activation $\eta(\Gamma_1(t-t_1^{\rm in}))$ is already one
+at $t_1^a$, since $L_1\geq1$.
+
+Starting at $t_1^a$, take the original first transition and steering
+control with their displayed durations, translated to these actual
+times. The inverse map
+\[
+ (\Theta_1,\Omega_1)(t)
+   =e^{-q(t-t_1^a)}(\Theta_{1,E},\Omega_{1,E})(t)
+\]
+relates their damped solution to the inviscid controlled solution
+with data
+\[
+ (\Theta_{1,E},\Omega_{1,E})(t_1^a)
+       =(-P_1^*,-K_1P_1^*/\nu).
+\]
+Differentiation gives the two damped equations, and multiplication
+by $e^{q(t-t_1^a)}$ gives the inverse equations and identical data.
+Both factors are positive. Thus the quotient, its entire trial
+family, and its unique first return root proved in
+Section~\ref{sec:cv-first-stage} are unchanged on these translated
+intervals. At the selected endpoint
+\begin{equation}\label{ave:first_endpoint}
+ \alpha=s_*,\quad\zeta_1=e_2,\quad\Omega_1=0,\quad
+ A_d:=-K_1\Theta_1(t_1^b)
+       =A_Ee^{-qC_{\rm post}/\Gamma_1},
+\end{equation}
+where the proved inviscid endpoint satisfies
+\begin{equation}\label{ave:AE_bounds}
+ 2eA_0\widehat\lambda_1^{1/8}\leq A_E
+          \leq C_A A_0\widehat\lambda_1^{1/8}.
+\end{equation}
+This expression does not damp the inviscid growth duration: that
+duration has been replaced by the actual threshold time in
+\eqref{ave:first_times}. The first three diffusion exponents are
+exactly $qL_1/(\Gamma_1-q)$ in growth, $q/\Gamma_1$ in transition,
+and $q(1+\Lambda_1^{-1})/\Gamma_1$ in steering. The physical gains
+are respectively $L_1$, $1-q/\Gamma_1$, and the original selected
+steering gain minus the last exponent.
+
+\subsection{Actual second scale and all fixed design inequalities}
+
+The true inherited gradient at $t_2^{\rm in}=t_1^b$ is
+$G_d=(A_0\sin s_*,-A_0\cos s_*-A_d)$. Evaluate the source scale
+at this changed endpoint, as required by its original rule:
+\begin{equation}\label{ave:actual_scale}
+ \sigma^2=|G_d|
+   =\sqrt{A_0^2+A_d^2+2A_0A_d\cos s_*},\quad
+ s=s_2=\frac{L\nu}{\sigma},\quad a=\sin s,\quad
+ \Gamma=\Gamma_2=\sigma a.
+\end{equation}
+Since $qC_{\rm post}/\Gamma_1\leq\log2$, equations
+\eqref{ave:AE_bounds}--\eqref{ave:actual_scale} imply
+\begin{equation}\label{ave:scale_bounds}
+ eA_0\widehat\lambda_1^{1/8}\leq A_d\leq
+ C_A A_0\widehat\lambda_1^{1/8},\qquad
+ \sqrt e\,\nu\widehat\lambda_1^{1/16}\leq\sigma
+       \leq C_\sigma\nu\widehat\lambda_1^{1/16}.
+\end{equation}
+For the lower scale bound use $\sigma^2\geq A_d$, since the square
+of its left side differs from $A_d^2$ by a positive quantity.
+For the upper bound use the triangle inequality
+$\sigma^2\leq A_0+A_d\leq(1+C_A)A_0\widehat\lambda_1^{1/8}$.
+The choice $Y_0>8\log(4/e)$ also gives $A_d>4A_0$.
+
+Let $y=\log\widehat\lambda_1\geq Y_0$.
+Then $64<L\leq C_Ly$. The exponential series with nonnegative
+terms proves $e^{y/16}\geq y^3/(6\cdot16^3)$; by
+\eqref{ave:Ychoice} its right side is strictly greater than
+$12HC_L^2y^2/\sqrt e$. Consequently
+\begin{equation}\label{ave:angle_bounds}
+ 0<s\leq\frac{L}{\sqrt e\,e^{y/16}}
+      <\frac1{12HL}\leq\frac18,
+ \qquad 0<a\leq\frac18,
+ \qquad 3LHa<\frac14.
+\end{equation}
+For $0\leq s\leq1/8$, integrating $\cos r\geq1-r^2/2\geq1/2$
+on $[0,s]$ gives $s/2\leq\sin s\leq s$. Thus
+\begin{equation}\label{ave:Gamma_bounds}
+ \frac{L\nu}{2}\leq\Gamma\leq L\nu.
+\end{equation}
+The fixed base coefficients in the second-return coordinates obey
+\begin{equation}\label{ave:C_bounds}
+ 0<C_0=\frac{A_0\cos s_*}{\sigma^2}<\frac14,
+ \qquad 0<C_1=\frac{A_0\sin s_*}{\sigma^2a}
+ \leq\frac{2\nu\sin s_*}{\sigma L}<\frac1{32}.
+\end{equation}
+The last inequality uses $\sigma\geq\nu$, $L\geq64$ and
+$\sin s_*<1$; it has no missing comparison constant.
+
+The same frequency choice proves the source support nesting for the
+entire second return and its finite hold. Set
+$N=1+(3-\cos s)/a$. The exact matrix reconstruction in
+Theorem~\ref{sr:theorem} gives both $\|M_2\|$ and $\|M_2^{-1}\|$
+at most $N$, by the triangle inequality for its displayed shear.
+Equations~\eqref{ave:scale_bounds} and $a\geq s/2$ imply
+$1/a\leq 2C_\sigma\widehat\lambda_1^{1/16}/L$, whence
+$N\leq C_N\widehat\lambda_1^{1/16}$.
+The final two logarithmic bounds in \eqref{ave:Ychoice} give, strictly,
+\begin{equation}\label{ave:nesting}
+ N\widehat\lambda_1^{-3}<\frac{s_0}{2C_\ell},
+ \qquad N\widehat\lambda_1^{-2}<s_0.
+\end{equation}
+Indeed their respective left sides are at most
+$C_Ne^{-47y/16}$ and $C_Ne^{-31y/16}$, and our choices bound these
+by $s_0/(4C_\ell)$ and $s_0/2$.
+For $\ell_1=s_0/(C_\ell\mu)$ and
+$\ell_2=\widehat\lambda_1^{-3}/\mu$, this places the entire second
+support inside the first envelope's constant region and its exact
+linear profile region: $|x|\leq N\ell_2<\ell_1/2$ and
+$|K_1\zeta_1\cdot x|\leq K_1N\ell_2<s_0$.
+Every original factor of $\mu$ is present in these identities.
+
+\subsection{Second growth with the actual diffusing parent}
+
+Write $r=t-t_2^{\rm in}$. The second growth and transition have
+$\alpha=s_*$, $\Omega_1=0$, $M_2=I$, $\zeta_2=e(s)$ and
+$A_1(r)=A_de^{-qr}$. These claims follow from the closed subsystem:
+$\zeta_{1,1}=0$ makes $\dot\Omega_1=-q\Omega_1=0$;
+both controls $F_1^{\rm ctl}$ and $F_2^{\rm ctl}$ are then zero,
+and the phase matrix equation is $\dot M_2=0$. The first temperature
+equation is $\dot A_1=-qA_1$.
+The second pair has the exact coefficients
+\begin{equation}\label{ave:growth_coefficients}
+ a_2(r)=\frac{A_de^{-qr}\sin s+A_0\sin(s_*+s)}{K_2},
+ \qquad b_2=K_2\sin s,
+ \qquad d_2^{\rm phys}=dK_2^2,
+\end{equation}
+and the exact original entry data
+$\Theta_2(0)=-S_2$, $\Omega_2(0)=\sqrt{b_2/a_2(0)}\Theta_2(0)$.
+This is precisely the system solved by the convergent fundamental
+functions in Section~\ref{sec:cv-diffusive-parent}; the substitution
+here uses its displayed changed coefficients, not frozen values.
+
+Put $a_i=a_2(0)$, $u_i=\sqrt{b_2/a_i}$,
+$\gamma_i=\sqrt{a_i b_2}$ and
+\[
+ n_i=\frac{\gamma_i^2}{\Gamma^2}
+ =\frac{A_d+A_0\cos s_*}{\sigma^2}+C_1\cos s.
+\]
+One has
+\begin{equation}\label{ave:ni_bounds}
+ \frac45<n_i<\frac{33}{32}<2.
+\end{equation}
+The lower bound follows from
+$A_d/\sigma^2\geq A_d/(A_d+A_0)>4/5$.
+For the upper bound, square
+$\sigma^2=\sqrt{(A_d+A_0\cos s_*)^2+A_0^2\sin^2s_*}$
+to get $(A_d+A_0\cos s_*)/\sigma^2\leq1$, then use
+\eqref{ave:C_bounds}. In particular
+$\gamma_i\geq\Gamma/\sqrt2\geq L\nu/(2\sqrt2)$.
+
+On the explicitly fixed horizon $0\leq r\leq16/\nu$, the third
+bound in \eqref{ave:dmax} gives $qr\leq\log(3/2)$. Since both
+terms in $a_2$ are positive, it follows that
+\begin{equation}\label{ave:coeff_interval}
+ \frac12a_i\leq a_2(r)\leq a_i.
+\end{equation}
+To prove all signs and ratio estimates without assuming them, set
+$X=-e^{d_2^{\rm phys}r}\Theta_2$ and
+$Y=-e^{d_2^{\rm phys}r}\Omega_2$. They solve
+$X'=a_2Y$, $Y'=b_2X$ with positive initial values.
+Before any first zero, both derivatives are positive, excluding that
+zero by continuity. The linear integral equation, whose coefficient
+matrix is bounded on this horizon, gives existence there by its
+uniformly convergent iterated-integral series.
+Therefore $u=Y/X=\Omega_2/\Theta_2$ exists and satisfies
+$u'=b_2-a_2u^2$. The constant functions $u_i$ and $\sqrt2u_i$
+are respectively subsolution and supersolution on this horizon,
+because $b_2-a_2u_i^2\geq0$ and
+$b_2-2a_2u_i^2\leq0$. Subtracting either comparison equation
+from the equation for $u$ gives the linear difference coefficient
+$-a_2(u+u_{\rm comparison})$; its integrating factor preserves
+the stated ordering. Hence
+\begin{equation}\label{ave:ratio_growth}
+ u_i\leq u\leq\sqrt2u_i,\qquad
+ \frac1{\sqrt{n_i}}\leq
+ v:=\frac{\sigma\Omega_2}{K_2\Theta_2}
+ \leq\sqrt{\frac2{n_i}},\qquad\frac12<v<2.
+\end{equation}
+Here $\sigma u_i/K_2=\Gamma/\gamma_i=1/\sqrt{n_i}$;
+the equality follows by substituting the original $a_i,b_2,K_2$.
+
+For $P_2=-\Theta_2$, the exact physical logarithmic derivative is
+\[
+ (\log P_2)'=a_2u-d_2^{\rm phys}.
+\]
+The last bound in \eqref{ave:dmax} gives
+$d_2^{\rm phys}\leq L\nu\log3/12800<L\nu/16
+\leq\gamma_i/4$. Thus throughout the fixed horizon
+\begin{equation}\label{ave:growth_rate}
+ \frac{\gamma_i}{4}\leq(\log P_2)'
+      \leq\sqrt2\gamma_i\leq2\Gamma.
+\end{equation}
+Indeed $a_2u\geq a_iu_i/2=\gamma_i/2$ and
+$a_2u\leq\sqrt2a_iu_i=\sqrt2\gamma_i$.
+Consequently the original second target $P_2^*=S_2e^L$ is reached
+at exactly one $r=r_a$, with nonzero derivative, and
+\begin{equation}\label{ave:second_times}
+ \frac{L}{2\Gamma}\leq r_a\leq\frac{4L}{\gamma_i}
+       \leq\frac{8\sqrt2}{\nu},\qquad
+ r_1=r_a+\Gamma^{-1}<\frac{16}{\nu},
+ \quad t_2^a=t_2^{\rm in}+r_a,
+ \quad t_2^1=t_2^{\rm in}+r_1.
+\end{equation}
+For existence of the crossing, the upper candidate time is inside
+the fixed horizon; integrating the lower rate to that time gives
+at least $L$ logarithmic gain. Strict monotonicity and the intermediate
+value theorem give existence and uniqueness. The transition length
+is at most $2/(L\nu)\leq1/(32\nu)$, so the entire transition is
+also inside that already justified horizon. The lower bound on $r_a$
+ensures the second activation $\eta(\Gamma r)$ equals one before
+the growth threshold, since $L\geq64$.
+
+\subsection{Closing every entry bound and the complete finite statement}
+
+At the actual steering entry $t_2^1$, take
+$P_{1\rm in}=A_de^{-qr_1}/K_1$ and
+$P_{2\rm in}=P_2(r_1)$. Equations~\eqref{ave:ratio_growth} and
+\eqref{ave:second_times} give the initial quotient interval in
+Theorem~\ref{sr:theorem}. Also
+\begin{equation}\label{ave:Bentry}
+ \frac{8}{15}<B_{\rm in}
+ =\frac{A_de^{-qr_1}}{\sigma^2}\leq1,
+ \qquad
+ 0<\delta_2=\frac{dK_2^2}{\Gamma}\leq\frac{\log3}{6400},
+ \qquad 0<\delta_1=\frac{dK_1^2}{\Gamma}
+       \leq\delta_2<\frac1{16}.
+\end{equation}
+The lower parent bound is $(4/5)(2/3)$; the upper is
+$A_d\leq\sigma^2$. The diffusion bounds follow from
+\eqref{ave:dmax}, \eqref{ave:Gamma_bounds} and $K_1<K_2$.
+Equations~\eqref{ave:angle_bounds}, \eqref{ave:C_bounds},
+\eqref{ave:ratio_growth}, and \eqref{ave:Bentry} prove every
+entry/design hypothesis of the direct return theorem from the original
+seeds and the explicit choices \eqref{ave:Ychoice}--\eqref{ave:dmax}.
+
+\begin{theorem}\label{ave:complete_entry}
+For each fixed original source datum and profiles above, choose
+$\widehat\lambda_1$ by \eqref{ave:Ychoice}, retain the source recursion
+\eqref{ave:source_choices}, and choose any $0<d\leq d_{\max}$ in
+\eqref{ave:dmax}. The complete modified two-layer coefficient system
+exists through both original growth targets, both prescribed
+transitions, both selected vorticity returns, and a second holding
+interval of physical length $1/(32\Gamma_2)$.
+Its times, amplitudes, original coordinates, controls, and spatial
+support inequalities are the exact formulas above and the inverse
+formulas of Theorem~\ref{sr:theorem}. At the second return the new
+vorticity amplitude and horizontal phase component are zero, the
+first parent vorticity is strictly positive, and
+\begin{equation}\label{ave:total_gain}
+ \log\frac{-\Theta_2(t)}{S_2}
+ \geq L_2+\frac{\gamma_i}{4\Gamma_2}+\frac{\log3}{320}
+ \quad\text{for }t_2^b\leq t\leq t_2^b+(32\Gamma_2)^{-1}.
+\end{equation}
+The inherited parent is evolved throughout; no inviscid estimate is
+assumed to persist under diffusion. With the full profile/localization
+forces below these coefficients determine compact spatial solutions
+from the original initial datum and zero initial velocity.
+\end{theorem}
+\begin{proof}
+The first stage was proved by the exact map at its actual threshold.
+The second growth and transition, their signs and all entry bounds
+were proved on a common explicit physical horizon. Theorem~\ref{sr:theorem}
+therefore applies, constructs its entire trial family before taking
+the least root, and proves the return and nonstationary parent hold.
+The second growth contributes exactly $L_2$ to logarithmic gain.
+The transition contributes at least $\gamma_i/(4\Gamma_2)$ by
+\eqref{ave:growth_rate}. The steering and entire hold contribute at
+least $\log3/320$ by that theorem and \eqref{ave:Bentry}.
+Adding these three actual integrals proves \eqref{ave:total_gain}.
+All finite join controls are smooth by flatness of the original step
+and interior support of its pulse; the solution of the smooth ODE
+therefore matches to every order at those joins. The spatial identities
+below prove the stated compact realization with every required force.
+\end{proof}
+
+For use in those spatial bounds, throughout both stages and their hold
+one may use the following proved amplitude upper bounds:
+\begin{align}
+ \sup|\Theta_1|&\leq
+       \max\{C_AP_1^*,2\sigma^2/K_1\},&
+ \sup|\Omega_1|&\leq
+       \max\{(K_1/\nu)C_AP_1^*,9\sigma\},\nonumber\\
+ \sup|\Theta_2|&\leq e^{18}P_2^*,&
+ \sup|\Omega_2|&\leq (3K_2/\sigma)e^{18}P_2^*.
+ \label{ave:amplitude_sup}
+\end{align}
+For layer one, use its first-stage positive multiplier bounds and
+the direct second-stage bounds $B\leq2,W<9$.
+For layer two, growth never exceeds its threshold; the transition
+has dimensionless coefficient $a_2K_2/(\sigma\Gamma)
+=a_2b_2/\Gamma^2\leq n_i<2$ and $v<2$, so its logarithmic
+gain is at most $4$. The selected steering gain is at most
+$12(1+L^{-1})<14$, and holding only decreases temperature.
+These observations prove $e^{18}P_2^*$ as well as the vorticity
+bound from $0\leq v\leq3$ on the selected steering, $v<2$ before it,
+and $v=0$ on holding.
+
+The exact second-stage diffusion exponents before steering are
+$dK_2^2r_a$ and $dK_2^2/\Gamma$; the first parent's exponent
+over these same intervals is $q(r_a+1/\Gamma)$.
+The steering and holding exponents retain the evolving $|\zeta_2|^2$
+inside the integrals in Theorem~\ref{sr:theorem}; together these are
+the complete two-stage amplitude diffusion costs.
+
+Finally the proved viscosity range is explicitly frequency dependent.
+For fixed original data and $Q_2$,
+\begin{equation}\label{ave:range_limit}
+ 0<d_{\max}\leq
+ \frac{\nu C_L\log3}{12800\mu^2}
+ (\log\widehat\lambda_1)\widehat\lambda_1^{-2Q_2}
+ \longrightarrow0\qquad(\widehat\lambda_1\longrightarrow\infty).
+\end{equation}
+To verify the limit, set $y=\log\widehat\lambda_1$ and use
+$e^{2Q_2y}\geq(2Q_2y)^2/2$, giving
+$ye^{-2Q_2y}\leq1/(2Q_2^2y)\to0$.
+This is the dependence of the range proved here, not an assertion
+that every larger diffusivity fails or that a modified infinite
+construction is impossible. The actual finite result preserves both
+original thresholds and controls. A fixed-positive-diffusivity
+iteration would require further estimates or a changed scale design;
+it does not follow by iterating a range whose upper bound tends to zero.
+
+\subsection{An exact scaling restriction for this growth rule}
+
+The original datum ties the physical spatial scale to the initial
+amplitude: $\mu=\lceil\nu/2\rceil$ with $\nu=\sqrt{A_0}\geq1$.
+Consequently
+\begin{equation}\label{ave:original_scaling_restriction}
+ \frac{\mu^2}{\nu}\geq\frac12,
+ \qquad \widehat d=d\frac{\mu^2}{\nu}\geq\frac d2,
+\end{equation}
+where $\widehat d$ is exactly the transformed diffusion coefficient
+in the original map $(X,T)=(\mu x,\nu t)$.
+To prove the first inequality, if $1\leq\nu\leq2$ then $\mu=1$
+and $\mu^2/\nu=1/\nu\geq1/2$. If $\nu>2$, then
+$\mu\geq\nu/2$, whence $\mu^2/\nu\geq\nu/4>1/2$.
+Equality occurs at the original datum value $A_0=4$, $\nu=2$, $\mu=1$;
+this identifies the equality case and does not change the parameters
+of any constructed trajectory. The second inequality follows by
+multiplication by $d>0$, using the exact diffusion operator map.
+
+For the first modified growth rule proved here, attaining
+$P_1^*=S_1e^{L_1}>S_1$ requires and is equivalent to
+$dK_1^2<\Gamma_1$. This follows directly from
+\eqref{ave:first_growth}: at equality the temperature amplitude is
+constant, and above it the amplitude strictly decreases for all growth
+times. Therefore every instance of this same growth rule must satisfy
+\begin{equation}\label{ave:necessary_first_growth}
+ \widehat d\,\widehat\lambda_1^2<\sin s_*,\qquad
+ d\widehat\lambda_1^2<2\sin s_*.
+\end{equation}
+The first inequality is the identical physical inequality divided by
+$\nu$, since $K_1=\mu\widehat\lambda_1$; the second follows from
+\eqref{ave:original_scaling_restriction}.
+Thus increasing $A_0$ while preserving the original spatial scaling
+cannot make $\widehat d$ tend to zero at a fixed positive physical $d$.
+This necessary first-growth restriction is a result about the specified
+modified amplitude equation and original growth control. Any route
+past it must change an identified part of that dynamics or scale
+design and verify the corresponding full spatial forces. It is not
+an obstruction to all forced viscous flows.

@@ -1,0 +1,717 @@
+{
+  "scope": "Only equations 7.2-7.8, 7.22-7.42, 9.12-9.14 and source page attributions used by the local bridges; no full-manuscript equivalence claim.",
+  "versions": {
+    "old_165p": {
+      "pdf": "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\openai_navier_stokes.pdf",
+      "pdf_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+      "bytes": 2955931,
+      "pdfinfo": "Title:           \nSubject:         \nKeywords:        \nAuthor:          \nCreator:         LaTeX with hyperref\nProducer:        pdfTeX-1.40.29\nCreationDate:    Tue Sep  8 05:43:32 2026 W. Europe Daylight Time\nModDate:         Tue Sep  8 05:43:32 2026 W. Europe Daylight Time\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           165\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       2955931 bytes\nOptimized:       yes\nPDF version:     1.5\n",
+      "text_sha256": "c04ef2eebd8b3290b335c1d71fb35e37d285a760a8397bfefe65dea8a7d45d77",
+      "poppler_pages": 165,
+      "equation_occurrences": {
+        "7.2": [
+          {
+            "pdf_page": 74,
+            "line": 33,
+            "exact_line": "               k = ⌈ε      ⌉,  Bs = 2                 ,   s(v) = σ        +          .       (7.2)"
+          }
+        ],
+        "7.3": [
+          {
+            "pdf_page": 74,
+            "line": 46,
+            "exact_line": "                       Φ = pθ + pz Z/ε + x0 R − v( pF + pz G ),                              (7.3)"
+          }
+        ],
+        "7.4": [
+          {
+            "pdf_page": 21,
+            "line": 41,
+            "exact_line": "k, m, Φ, nΦ             Carrier frequency k = ⌈ε−1/2 ⌉, nonzero integer            (7.2), (7.3), (7.4)"
+          },
+          {
+            "pdf_page": 74,
+            "line": 49,
+            "exact_line": "                                                                                             (7.4)"
+          }
+        ],
+        "7.5": [
+          {
+            "pdf_page": 74,
+            "line": 52,
+            "exact_line": "                   t′m + K tm + m2 dtm + ikmnΦ πm = − f m ,      d = εk2 |nΦ |2 .            (7.5)"
+          },
+          {
+            "pdf_page": 101,
+            "line": 5,
+            "exact_line": "9.1. Residual estimates for velocities constructed by curls. The amplitude equations (7.5)"
+          }
+        ],
+        "7.6": [
+          {
+            "pdf_page": 75,
+            "line": 9,
+            "exact_line": "             K = ⎝2F + RFR        0    0⎠ ,     AΦ = −K +                           .    (7.6)"
+          }
+        ],
+        "7.7": [
+          {
+            "pdf_page": 75,
+            "line": 17,
+            "exact_line": "                 Ka =            ,  Na = ((Ka )z , −(Ka )θ ),     sa =           .        (7.7)"
+          }
+        ],
+        "7.8": [
+          {
+            "pdf_page": 75,
+            "line": 23,
+            "exact_line": "                  U = [ er − s a Ka , Na ],        B=U                          .                       (7.8)"
+          }
+        ],
+        "7.22": [
+          {
+            "pdf_page": 13,
+            "line": 20,
+            "exact_line": "                                                        Lemma 7.4; (7.22)"
+          },
+          {
+            "pdf_page": 81,
+            "line": 34,
+            "exact_line": "                                                                                         (7.22)"
+          }
+        ],
+        "7.23": [
+          {
+            "pdf_page": 22,
+            "line": 24,
+            "exact_line": "C(w), B(w, v)               Doubly averaged radial momentum-flux pair and        (7.23)"
+          },
+          {
+            "pdf_page": 81,
+            "line": 60,
+            "exact_line": "                 C(w) = ⟨⟨wr wtan ⟩θ ⟩Y ,    B(w, v) = ⟨⟨wr vtan + vr wtan ⟩θ ⟩Y .         (7.23)"
+          }
+        ],
+        "7.24": [
+          {
+            "pdf_page": 22,
+            "line": 12,
+            "exact_line": "                            weights, their square-root amplitudes, and the       Proposition 7.5; (7.24)"
+          },
+          {
+            "pdf_page": 82,
+            "line": 23,
+            "exact_line": "                       y = H−1 T0,∗ ,     aσ = yσ ,       W0 = ε ∑ aσ bσ .                        (7.24)"
+          }
+        ],
+        "7.25": [
+          {
+            "pdf_page": 82,
+            "line": 28,
+            "exact_line": "                             yσ ≥ c S∗ ζ,                                                         (7.25)"
+          }
+        ],
+        "7.26": [
+          {
+            "pdf_page": 13,
+            "line": 25,
+            "exact_line": "                                                  Proposition 7.5; (7.24)–(7.26)"
+          },
+          {
+            "pdf_page": 82,
+            "line": 32,
+            "exact_line": "                                            C(W0 ) = εT0,∗ .                                      (7.26)"
+          }
+        ],
+        "7.27": [
+          {
+            "pdf_page": 82,
+            "line": 49,
+            "exact_line": "                            Hσ =                          χ g dξ g ci       ψ2 x thσ,tan dv.   (7.27)"
+          }
+        ],
+        "7.28": [
+          {
+            "pdf_page": 83,
+            "line": 18,
+            "exact_line": "                       Hσ = hσ (− Ac N − σu∗ K + eσ ),                     |eσ | ≤ CS∗−1/2 .    (7.28)"
+          }
+        ],
+        "7.29": [
+          {
+            "pdf_page": 83,
+            "line": 32,
+            "exact_line": "             | det H| ≥ c/S∗ ,                           c S∗ | T | ≤ y σ ≤ C S∗ | T |. (7.29)"
+          }
+        ],
+        "7.30": [
+          {
+            "pdf_page": 83,
+            "line": 54,
+            "exact_line": "                                  ∑ Q−2A ηβ2 εT0,∗ = q− A−1/2 T0 .                              (7.30)"
+          }
+        ],
+        "7.31": [
+          {
+            "pdf_page": 84,
+            "line": 13,
+            "exact_line": "                 dΣ = H−1 (Σ/ε),       δaσ =        ,   LΣ = ε ∑ δaσ bσ .                (7.31)"
+          }
+        ],
+        "7.32": [
+          {
+            "pdf_page": 84,
+            "line": 21,
+            "exact_line": "                  ηβ LΣ ∈ Wα−1/2 ,         B(W0 , LΣ) = Σ,         C(ηβ LΣ) ∈ M2α−1 .                (7.32)"
+          }
+        ],
+        "7.33": [
+          {
+            "pdf_page": 84,
+            "line": 32,
+            "exact_line": "                                        | D I δaσ | ≤ C I εα−1 S∗I ζ δ−a I .                       (7.33)"
+          }
+        ],
+        "7.34": [
+          {
+            "pdf_page": 22,
+            "line": 27,
+            "exact_line": "Σ, LΣ in the wave           Prescribed signed covariance increment and its       (7.31), (7.34)"
+          },
+          {
+            "pdf_page": 84,
+            "line": 38,
+            "exact_line": "                               B(W0 , LΣ) = εH(2a ⊙ δa) = εHdΣ = Σ.                                  (7.34)"
+          }
+        ],
+        "7.35": [
+          {
+            "pdf_page": 85,
+            "line": 8,
+            "exact_line": "                                                                                           (7.35)"
+          }
+        ],
+        "7.36": [
+          {
+            "pdf_page": 85,
+            "line": 27,
+            "exact_line": "                                       B(W0as , Las Σ) = Σ.                                (7.36)"
+          }
+        ],
+        "7.37": [
+          {
+            "pdf_page": 85,
+            "line": 41,
+            "exact_line": "        curl∗ A = R−1 ∂θ Az − Dz Aθ , Dz Ar − Dr Az , ( Dr + R−1 ) Aθ − R−1 ∂θ Ar .        (7.37)"
+          }
+        ],
+        "7.38": [
+          {
+            "pdf_page": 85,
+            "line": 51,
+            "exact_line": "             Cm =             ,    Am = Cm eikmΦ ,      curl∗ Am = (tm + rm )eikmΦ .       (7.38)"
+          }
+        ],
+        "7.39": [
+          {
+            "pdf_page": 22,
+            "line": 14,
+            "exact_line": "Cm , Am , rm , am           Wave-potential coefficient, oscillating vector       (7.38), (7.39)"
+          },
+          {
+            "pdf_page": 86,
+            "line": 12,
+            "exact_line": "                                                                nΦ · am ∈ Wα+1/2−κs .          (7.39)"
+          }
+        ],
+        "7.40": [
+          {
+            "pdf_page": 86,
+            "line": 45,
+            "exact_line": "                   ˆ︁t′m + Kˆ︁tm + m2 dˆ︁tm + ikmnΦ π                                         (7.40)"
+          }
+        ],
+        "7.41": [
+          {
+            "pdf_page": 87,
+            "line": 27,
+            "exact_line": "                    C(U + V ) − C(U ) = Σ + B( E, Las Σ) + B(U, R) + C(V ).                    (7.41)"
+          }
+        ],
+        "7.42": [
+          {
+            "pdf_page": 87,
+            "line": 30,
+            "exact_line": "                                         B(U, R) ∈ Mα+1/2−κs ,                                 (7.42)"
+          }
+        ],
+        "9.12": [
+          {
+            "pdf_page": 108,
+            "line": 40,
+            "exact_line": "                                  R2 ⟨ Eθ ⟩Y dR,          R⟨ Ez ⟩Y dR ∈ SC∗ +1−κs .            (9.12)"
+          }
+        ],
+        "9.13": [
+          {
+            "pdf_page": 109,
+            "line": 45,
+            "exact_line": "                ⟨∆W ⟩Y = B (w0tan , ts ) + B (w − w0tan , ts ) + B (w, rs ) + ⟨⟨s ⊗ s⟩θ ⟩Y .             (9.13)"
+          }
+        ],
+        "9.14": [
+          {
+            "pdf_page": 110,
+            "line": 4,
+            "exact_line": "      ⟨ Eθ ⟩Y , ⟨ Ez ⟩Y ∈ MC∗ +0.17 ,      Eθ , Ez ∈ M H ,    (P , Jθ , Jz ) ∈ S H ,       H = C∗ − 2κs .   (9.14)"
+          }
+        ],
+        "7.12": [
+          {
+            "pdf_page": 77,
+            "line": 27,
+            "exact_line": "                            P(v) = exp              (λ(w) − dref (w)) dw .                     (7.12)"
+          }
+        ],
+        "7.13": [
+          {
+            "pdf_page": 21,
+            "line": 44,
+            "exact_line": "tm , πm , f m           Principal transverse velocity amplitude, pressure          (7.5), (7.13)"
+          },
+          {
+            "pdf_page": 77,
+            "line": 49,
+            "exact_line": "                πm =                                      .                                    (7.13)"
+          }
+        ],
+        "7.14": [
+          {
+            "pdf_page": 78,
+            "line": 10,
+            "exact_line": "                                | D I tm | ≤ C ′I εα S∗I ζ δ−a I P(v),                           (7.14)"
+          }
+        ],
+        "7.15": [
+          {
+            "pdf_page": 78,
+            "line": 14,
+            "exact_line": "                                                                                                 (7.15)"
+          }
+        ],
+        "7.16": [
+          {
+            "pdf_page": 78,
+            "line": 39,
+            "exact_line": "                            e−C(v− Ls /2) /Ls ≤ P(v) ≤ e−c(v− Ls /2) /Ls ≤ 1.                         (7.16)"
+          }
+        ],
+        "7.17": [
+          {
+            "pdf_page": 78,
+            "line": 43,
+            "exact_line": "     z′m = Am zm + gm ,       Am = diag(λ, −λ) + E − m2 d I2 ,               gm = − Bℓ projn⊥ f m .   (7.17)"
+          }
+        ],
+        "7.18": [
+          {
+            "pdf_page": 78,
+            "line": 51,
+            "exact_line": "                      Vm (v, w) = exp −(m − 1)         d( a) da V1 (v, w).             (7.18)"
+          }
+        ],
+        "7.19": [
+          {
+            "pdf_page": 79,
+            "line": 5,
+            "exact_line": "                  ∥Vm (v, w)∥ ≤ C P(v)/P(w),                 0 ≤ w ≤ v ≤ Ls ,   m ̸= 0.               (7.19)"
+          }
+        ],
+        "7.20": [
+          {
+            "pdf_page": 79,
+            "line": 24,
+            "exact_line": "                                                                   ( D J Am ) D I − J zm . (7.20)"
+          }
+        ],
+        "7.21": [
+          {
+            "pdf_page": 80,
+            "line": 36,
+            "exact_line": "                   cP(v) ≤ x (v) ≤ CP(v),                  = c0 1 + s(v)2 + O(S∗−1 ).            (7.21)"
+          }
+        ],
+        "9.1": [
+          {
+            "pdf_page": 101,
+            "line": 26,
+            "exact_line": "                     Lm ( a, π ) = Q1+h Nabs a + K a + εk2 m2 |nΦ |2 a + ikmnΦ π.                 (9.1)"
+          }
+        ],
+        "9.2": [
+          {
+            "pdf_page": 102,
+            "line": 8,
+            "exact_line": "                                                                                                 (9.2)"
+          }
+        ]
+      }
+    },
+    "new_166p": {
+      "pdf": "<workspace>\\output\\navier_stokes_research_2026-09-08\\downloaded_public_release\\navier-stokes.pdf",
+      "pdf_sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+      "bytes": 2959204,
+      "pdfinfo": "Title:           \nSubject:         \nKeywords:        \nAuthor:          \nCreator:         LaTeX with hyperref\nProducer:        pdfTeX-1.40.29\nCreationDate:    Tue Sep  8 21:06:26 2026 W. Europe Daylight Time\nModDate:         Tue Sep  8 21:06:26 2026 W. Europe Daylight Time\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           166\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       2959204 bytes\nOptimized:       yes\nPDF version:     1.5\n",
+      "text_sha256": "f83414ea543ffd89910b9b8a35d1680a2e3295246c91cbedf54e719a7bc316d0",
+      "poppler_pages": 166,
+      "equation_occurrences": {
+        "7.2": [
+          {
+            "pdf_page": 74,
+            "line": 42,
+            "exact_line": "               k = ⌈ε      ⌉,  Bs = 2                 ,   s(v) = σ        +          .       (7.2)"
+          }
+        ],
+        "7.3": [
+          {
+            "pdf_page": 74,
+            "line": 55,
+            "exact_line": "                         Φ = pθ + pz Z/ε + x0 R − v( pF + pz G ),                               (7.3)"
+          }
+        ],
+        "7.4": [
+          {
+            "pdf_page": 22,
+            "line": 8,
+            "exact_line": "k, m, Φ, nΦ                 Carrier frequency k = ⌈ε−1/2 ⌉, nonzero integer         (7.2), (7.3), (7.4)"
+          },
+          {
+            "pdf_page": 74,
+            "line": 58,
+            "exact_line": "                                                                                                (7.4)"
+          }
+        ],
+        "7.5": [
+          {
+            "pdf_page": 75,
+            "line": 5,
+            "exact_line": "                     t′m + K tm + m2 dtm + ikmnΦ πm = − f m ,            d = εk2 |nΦ |2 .               (7.5)"
+          },
+          {
+            "pdf_page": 101,
+            "line": 12,
+            "exact_line": "9.1. Residual estimates for velocities constructed by curls. The amplitude equations (7.5)"
+          }
+        ],
+        "7.6": [
+          {
+            "pdf_page": 75,
+            "line": 16,
+            "exact_line": "                                                                                     .     (7.6)"
+          }
+        ],
+        "7.7": [
+          {
+            "pdf_page": 75,
+            "line": 24,
+            "exact_line": "                 Ka =            ,  Na = ((Ka )z , −(Ka )θ ),     sa =           .        (7.7)"
+          }
+        ],
+        "7.8": [
+          {
+            "pdf_page": 75,
+            "line": 30,
+            "exact_line": "                  U = [ er − s a Ka , Na ],        B=U                          .                       (7.8)"
+          }
+        ],
+        "7.22": [
+          {
+            "pdf_page": 13,
+            "line": 22,
+            "exact_line": "                                                        Lemma 7.4; (7.22)"
+          },
+          {
+            "pdf_page": 81,
+            "line": 38,
+            "exact_line": "                                                                                         (7.22)"
+          }
+        ],
+        "7.23": [
+          {
+            "pdf_page": 22,
+            "line": 37,
+            "exact_line": "C(w), B(w, v)               Doubly averaged radial momentum-flux pair and           (7.23)"
+          },
+          {
+            "pdf_page": 82,
+            "line": 5,
+            "exact_line": "                   C(w) = ⟨⟨wr wtan ⟩θ ⟩Y ,       B(w, v) = ⟨⟨wr vtan + vr wtan ⟩θ ⟩Y .           (7.23)"
+          }
+        ],
+        "7.24": [
+          {
+            "pdf_page": 22,
+            "line": 25,
+            "exact_line": "                            weights, their square-root amplitudes, and the          Proposition 7.5; (7.24)"
+          },
+          {
+            "pdf_page": 82,
+            "line": 26,
+            "exact_line": "                       y = H−1 T0,∗ ,     aσ = yσ ,       W0 = ε ∑ aσ bσ .                        (7.24)"
+          }
+        ],
+        "7.25": [
+          {
+            "pdf_page": 82,
+            "line": 31,
+            "exact_line": "                             yσ ≥ c S∗ ζ,                                                         (7.25)"
+          }
+        ],
+        "7.26": [
+          {
+            "pdf_page": 13,
+            "line": 27,
+            "exact_line": "                                                  Proposition 7.5; (7.24)–(7.26)"
+          },
+          {
+            "pdf_page": 82,
+            "line": 35,
+            "exact_line": "                                              C(W0 ) = εT0,∗ .                                    (7.26)"
+          }
+        ],
+        "7.27": [
+          {
+            "pdf_page": 82,
+            "line": 52,
+            "exact_line": "                            Hσ =                        χ g dξ g ci       ψ2 x thσ,tan dv.     (7.27)"
+          }
+        ],
+        "7.28": [
+          {
+            "pdf_page": 83,
+            "line": 27,
+            "exact_line": "                       Hσ = hσ (− Ac N − σu∗ K + eσ ),                     |eσ | ≤ CS∗−1/2 .    (7.28)"
+          }
+        ],
+        "7.29": [
+          {
+            "pdf_page": 83,
+            "line": 41,
+            "exact_line": "             | det H| ≥ c/S∗ ,                           c S∗ | T | ≤ y σ ≤ C S∗ | T |. (7.29)"
+          }
+        ],
+        "7.30": [
+          {
+            "pdf_page": 84,
+            "line": 6,
+            "exact_line": "                                    ∑ Q−2A ηβ2 εT0,∗ = q− A−1/2 T0 .                                 (7.30)"
+          }
+        ],
+        "7.31": [
+          {
+            "pdf_page": 84,
+            "line": 19,
+            "exact_line": "                 dΣ = H−1 (Σ/ε),       δaσ =        ,   LΣ = ε ∑ δaσ bσ .                (7.31)"
+          }
+        ],
+        "7.32": [
+          {
+            "pdf_page": 84,
+            "line": 27,
+            "exact_line": "                  ηβ LΣ ∈ Wα−1/2 ,          B(W0 , LΣ) = Σ,        C(ηβ LΣ) ∈ M2α−1 .                (7.32)"
+          }
+        ],
+        "7.33": [
+          {
+            "pdf_page": 84,
+            "line": 38,
+            "exact_line": "                                        | D I δaσ | ≤ C I εα−1 S∗I ζ δ−a I .                       (7.33)"
+          }
+        ],
+        "7.34": [
+          {
+            "pdf_page": 22,
+            "line": 40,
+            "exact_line": "Σ, LΣ in the wave           Prescribed signed covariance increment and its          (7.31), (7.34)"
+          },
+          {
+            "pdf_page": 84,
+            "line": 44,
+            "exact_line": "                               B(W0 , LΣ) = εH(2a ⊙ δa) = εHdΣ = Σ.                                  (7.34)"
+          }
+        ],
+        "7.35": [
+          {
+            "pdf_page": 85,
+            "line": 13,
+            "exact_line": "                                                                                           (7.35)"
+          }
+        ],
+        "7.36": [
+          {
+            "pdf_page": 85,
+            "line": 32,
+            "exact_line": "                                       B(W0as , Las Σ) = Σ.                                (7.36)"
+          }
+        ],
+        "7.37": [
+          {
+            "pdf_page": 85,
+            "line": 47,
+            "exact_line": "        curl∗ A = R ∂θ Az − Dz Aθ , Dz Ar − Dr Az , ( Dr + R ) Aθ − R ∂θ Ar .              (7.37)"
+          }
+        ],
+        "7.38": [
+          {
+            "pdf_page": 86,
+            "line": 6,
+            "exact_line": "             Cm =             ,    Am = Cm eikmΦ ,      curl∗ Am = (tm + rm )eikmΦ .       (7.38)"
+          }
+        ],
+        "7.39": [
+          {
+            "pdf_page": 22,
+            "line": 27,
+            "exact_line": "Cm , Am , rm , am           Wave-potential coefficient, oscillating vector          (7.38), (7.39)"
+          },
+          {
+            "pdf_page": 86,
+            "line": 22,
+            "exact_line": "                                                                nΦ · am ∈ Wα+1/2−κs .          (7.39)"
+          }
+        ],
+        "7.40": [
+          {
+            "pdf_page": 87,
+            "line": 6,
+            "exact_line": "                   ˆ︁t′m + Kˆ︁tm + m2 dˆ︁tm + ikmnΦ π                                          (7.40)"
+          }
+        ],
+        "7.41": [
+          {
+            "pdf_page": 87,
+            "line": 37,
+            "exact_line": "                    C(U + V ) − C(U ) = Σ + B( E, Las Σ) + B(U, R) + C(V ).                    (7.41)"
+          }
+        ],
+        "7.42": [
+          {
+            "pdf_page": 87,
+            "line": 40,
+            "exact_line": "                                         B(U, R) ∈ Mα+1/2−κs ,                                 (7.42)"
+          }
+        ],
+        "9.12": [
+          {
+            "pdf_page": 108,
+            "line": 40,
+            "exact_line": "                                  R2 ⟨ Eθ ⟩Y dR,          R⟨ Ez ⟩Y dR ∈ SC∗ +1−κs .            (9.12)"
+          }
+        ],
+        "9.13": [
+          {
+            "pdf_page": 109,
+            "line": 45,
+            "exact_line": "                ⟨∆W ⟩Y = B (w0tan , ts ) + B (w − w0tan , ts ) + B (w, rs ) + ⟨⟨s ⊗ s⟩θ ⟩Y .             (9.13)"
+          }
+        ],
+        "9.14": [
+          {
+            "pdf_page": 110,
+            "line": 4,
+            "exact_line": "      ⟨ Eθ ⟩Y , ⟨ Ez ⟩Y ∈ MC∗ +0.17 ,      Eθ , Ez ∈ M H ,    (P , Jθ , Jz ) ∈ S H ,       H = C∗ − 2κs .   (9.14)"
+          }
+        ],
+        "7.12": [
+          {
+            "pdf_page": 77,
+            "line": 33,
+            "exact_line": "                            P(v) = exp              (λ(w) − dref (w)) dw .                     (7.12)"
+          }
+        ],
+        "7.13": [
+          {
+            "pdf_page": 22,
+            "line": 11,
+            "exact_line": "tm , πm , f m               Principal transverse velocity amplitude, pressure       (7.5), (7.13)"
+          },
+          {
+            "pdf_page": 78,
+            "line": 9,
+            "exact_line": "                πm =                                      .                                           (7.13)"
+          }
+        ],
+        "7.14": [
+          {
+            "pdf_page": 78,
+            "line": 18,
+            "exact_line": "                                | D I tm | ≤ C ′I εα S∗I ζ δ−a I P(v),                           (7.14)"
+          }
+        ],
+        "7.15": [
+          {
+            "pdf_page": 78,
+            "line": 22,
+            "exact_line": "                                                                                                 (7.15)"
+          }
+        ],
+        "7.16": [
+          {
+            "pdf_page": 78,
+            "line": 47,
+            "exact_line": "                            e−C(v− Ls /2) /Ls ≤ P(v) ≤ e−c(v− Ls /2) /Ls ≤ 1.                         (7.16)"
+          }
+        ],
+        "7.17": [
+          {
+            "pdf_page": 78,
+            "line": 51,
+            "exact_line": "     z′m = Am zm + gm ,       Am = diag(λ, −λ) + E − m2 d I2 ,               gm = − Bℓ projn⊥ f m .   (7.17)"
+          }
+        ],
+        "7.18": [
+          {
+            "pdf_page": 79,
+            "line": 8,
+            "exact_line": "                      Vm (v, w) = exp −(m − 1)         d( a) da V1 (v, w).             (7.18)"
+          }
+        ],
+        "7.19": [
+          {
+            "pdf_page": 79,
+            "line": 12,
+            "exact_line": "                  ∥Vm (v, w)∥ ≤ C P(v)/P(w),                 0 ≤ w ≤ v ≤ Ls ,   m ̸= 0.               (7.19)"
+          }
+        ],
+        "7.20": [
+          {
+            "pdf_page": 79,
+            "line": 29,
+            "exact_line": "                   ( D I z m ) ′ = A m D I z m + D I gm + ∑             ( D J Am ) D I − J zm . (7.20)"
+          }
+        ],
+        "7.21": [
+          {
+            "pdf_page": 80,
+            "line": 41,
+            "exact_line": "                   cP(v) ≤ x (v) ≤ CP(v),                  = c0 1 + s(v)2 + O(S∗−1 ).            (7.21)"
+          }
+        ],
+        "9.1": [
+          {
+            "pdf_page": 101,
+            "line": 33,
+            "exact_line": "                     Lm ( a, π ) = Q1+h Nabs a + K a + εk2 m2 |nΦ |2 a + ikmnΦ π.                 (9.1)"
+          }
+        ],
+        "9.2": [
+          {
+            "pdf_page": 102,
+            "line": 9,
+            "exact_line": "                                                                                                (9.2)"
+          }
+        ]
+      }
+    }
+  }
+}

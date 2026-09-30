@@ -1,0 +1,646 @@
+\section{Compact spatial realization of the changed two-stage trajectory}
+\label{ms:section}
+
+We now realize the actual damped two-stage trajectory, including its
+changed first threshold, inherited scale, second threshold, selected
+second return, and evolving finite hold, in the full spatial equations.
+The coefficients used here are those constructed in the direct return
+theorem and Theorem~\ref{ave:complete_entry}. The present calculation supplies their entire
+spatial realization; in particular it does not interpret a modal
+damping equation as an unforced equation for the released profile.
+The physical equations and orientation are
+\begin{align*}
+ \theta_t+u\cdot\nabla\theta&=d\Delta\theta+f_\theta,\\
+ u_t+(u\cdot\nabla)u&=d\Delta u+\theta e_2+f_u,
+ &\operatorname{div}u&=0,&p&=0,\\
+ J&=\begin{pmatrix}0&-1\\1&0\end{pmatrix},
+ &e_2&=(0,1),&x&\in\mathbb R^2.
+\end{align*}
+Both physical coefficients equal the explicitly selected $d>0$.
+The original parameters remain
+\[
+ A_0\geq1,\qquad\mu=\lambda_0=\lceil\sqrt{A_0}/2\rceil,
+ \qquad\nu=\sqrt{A_0},\qquad K_j=\mu\lambda_j\quad(j=1,2).
+\]
+Thus $d$ is not the source time-scaling parameter $\nu$.
+Here $\lambda_j$ denotes exactly the source frequency written
+$\widehat\lambda_j$ in the preceding entry calculation.
+
+\subsection{The actual coefficients and the nested material regions}
+
+Write $e(s)=(\sin s,\cos s)$, $e_0=R_\alpha e_2$,
+$p_1=e(s_*)$, and $p_2=e(s)$, where
+$s=L_2\nu/\sigma$, $a=\sin s$, $h_0=\cos s$, and
+$\Gamma=\sigma a$ use the actual diffusive inherited scale $\sigma$.
+The activation functions are
+\[
+ w_1=\eta(\Gamma_1(t-t_{01})),\qquad
+ w_2=\eta(\Gamma(t-t_{02})),\qquad
+ \Gamma_1=\nu\sin s_*,\qquad t_{01}=1/\nu.
+\]
+The source step $\eta$ is smooth nondecreasing, zero on
+$(-\infty,0]$ and one on $[1,\infty)$.
+All inactive increments below are defined to be zero. The finite
+coefficient construction has the exact equations
+\begin{align}
+ G_{<j}&=-A_0e_0+\sum_{i<j}w_iK_i\Theta_i\zeta_i,
+ &D_{<j}&=\dot\alpha J+
+       \sum_{i<j}\frac{w_i\Omega_i}{r_i^2}J\zeta_i\otimes\zeta_i,
+ \label{ms:parents}\\
+ \dot M_j&=D_{<j}M_j,&M_j(t_{0j})&=I,
+ &\zeta_j&=M_j^{-T}p_j,&r_j^2&=|\zeta_j|^2,\nonumber\\
+ \dot\Theta_j&=-\frac{J\zeta_j\cdot G_{<j}}{K_jr_j^2}\Omega_j
+                   -dK_j^2r_j^2\Theta_j,
+ &\dot\Omega_j&=K_j\zeta_{j,1}\Theta_j-dK_j^2r_j^2\Omega_j.
+ \label{ms:amplitudes}
+\end{align}
+The common angle is the selected original first control followed by
+the exact second feedback control. In particular the first threshold
+time is $t_{01}+L_1/(\Gamma_1-dK_1^2)$, not the inviscid
+threshold time. The source first transition and pulse are translated
+to that actual threshold. During second growth and transition,
+$\alpha=s_*$, $M_2=I$, $\Omega_1=0$, and $\Theta_1$ diffuses.
+The second activation time is exactly $t_{02}=t_{b1}$, the actual
+first return time, with no intervening gap.
+During second steering and holding the exact inverse is
+\begin{align}
+ M_1&=R_\alpha,&
+ M_2&=R_{\alpha-s_*}
+       \begin{pmatrix}1&-(h-h_0)/a\\0&1\end{pmatrix},
+ &\Omega_1&=\sigma W,&\Theta_1&=-\sigma^2B/K_1,
+ \label{ms:M}\\
+ h'&=W,&
+ W'&=B\frac{Y-hz}{h^2+a^2}-\delta_1W,&
+ B'&=-C_1W-\delta_1B,&
+ Y&=\sqrt{h^2+a^2-a^2z^2},\nonumber
+\end{align}
+where $\tau=\Gamma(t-t_1)$, a prime denotes $d/d\tau$,
+$\delta_1=dK_1^2/\Gamma$,
+$C_1=A_0\sin s_*/(\sigma^2a)$, and $z$ is the selected
+source ramp, pulse, and zero hold. The proved bounds give
+\[
+ h_0\leq h<3,\quad 0\leq W<9,\quad
+ 1/4<B\leq2,\quad h_0\geq\sqrt{63}/8,\quad
+ r_1=1,\quad h_0\leq r_2<\sqrt{10}.
+\]
+These are actual changing coefficients, not independently chosen
+affine backgrounds. Every $D_{<j}$ has trace zero: the rotation
+has trace zero and
+$\operatorname{tr}(J\zeta_i\otimes\zeta_i)=\zeta_i\cdot J\zeta_i=0$.
+Jacobi's determinant formula therefore gives $\det M_j=1$.
+The phase equation follows by differentiating the inverse transpose:
+$\dot\zeta_j=-D_{<j}^T\zeta_j$.
+
+On $[-\pi,\pi]$ define the released profile by the following formula
+and then extend it periodically to $\mathbb R$:
+\[
+ F(s)=\sin s+\chi(s)(s-\sin s),\qquad
+ P'=F,\qquad\int_{-\pi}^{\pi}P(s)\,ds=0.
+\]
+Here $\chi$ is even, supported in $(-\pi,\pi)$, and equals one
+on $[-s_0,s_0]$, with $0<s_0<1$. Oddness and periodicity give
+a unique even periodic primitive $P$ with the specified mean.
+In particular $F(s)=s$ on $|s|\leq s_0$; its primitive there is
+$P(0)+s^2/2$, with its original constant $P(0)$ retained.
+Let $f\in C_c^\infty(B_1)$ be radial, $0\leq f\leq1$,
+and $f=1$ on $B_{1/2}$. Retain the source radii
+\[
+ \ell_1=\frac{s_0}{C_\ell\mu},\qquad
+ \ell_2=\frac{\lambda_1^{-3}}\mu,\qquad C_\ell\geq4.
+\]
+Define the material coordinates and envelopes
+\[
+ y_j=M_j^{-1}x,\qquad g_j(x,t)=f(y_j/\ell_j),\qquad
+ s_j=K_j\zeta_j\cdot x.
+\]
+With $N=1+(3-h_0)/a$, the matrix expression \eqref{ms:M}
+and $\|I+qE_{12}\|\leq1+|q|$ show
+\begin{equation}\label{ms:N}
+ \|M_1\|=\|M_1^{-1}\|=1,
+ \qquad\|M_2\|,\|M_2^{-1}\|\leq N.
+\end{equation}
+The second inequality also holds before steering, where $M_2=I$.
+The entry construction, \eqref{ave:nesting}, selects $\lambda_1$ with the explicit strict
+inequalities
+\begin{equation}\label{ms:nesting}
+ N\lambda_1^{-3}<\frac{s_0}{2C_\ell},
+ \qquad N\lambda_1^{-2}<s_0.
+\end{equation}
+Consequently every point of the second support satisfies
+$|x|\leq N\ell_2<\ell_1/2$ and
+$|K_1\zeta_1\cdot x|\leq K_1N\ell_2<s_0$.
+It therefore lies in the exact affine cell of the first wave for
+the whole construction. The first support lies in $B_{\ell_1}$;
+since $\mu\ell_1=s_0/C_\ell<s_0$, the base is exactly affine
+there for every angle. Strictness leaves an open neighborhood of
+each support on which the corresponding affine identities hold.
+
+\subsection{Original datum, fields, and complete residual forces}
+
+Retain the original radial cutoff $\chi_0\in C_c^\infty(B_{R_0})$,
+equal to one on $B_2$, and the exact datum
+\[
+ \theta_{\rm in}(x)=-\frac{A_0}{\mu}\sin(\mu x_2)\chi_0(x),
+ \qquad u_{\rm in}=0.
+\]
+Choose the radial $H_0\in C_c^\infty(B_{R_H})$ used in the
+base construction, where $R_H>R_0+1$ and
+$H_0=|x|^2/2$ on $B_{R_0+1}$. Put
+\begin{align}
+ \theta_0&=-\frac{A_0}{\mu}F(\mu e_0\cdot x)\chi_0(x),
+ &\theta_{\rm ref}&=-\frac{A_0}{\mu}F(\mu x_2)\chi_0(x),\nonumber\\
+ \theta_b&=\theta_0+(1-\eta(\nu t))
+                          (\theta_{\rm in}-\theta_{\rm ref}),
+ &\psi_b&=\dot\alpha H_0,&u_b&=J\nabla\psi_b.
+ \label{ms:base}
+\end{align}
+The angle is zero before $1/\nu$; the initial interpolation is
+therefore exact and the initial velocity is zero. Define
+\begin{equation}\label{ms:fields}
+ \begin{gathered}
+ T_j=w_j\Theta_j,\qquad Q_j=\frac{w_j\Omega_j}{K_j^2r_j^2},
+ \qquad V_j=T_jF(s_j)g_j,\qquad\Psi_j=Q_jP(s_j)g_j,\\
+ v_j=J\nabla\Psi_j,\qquad
+ \theta=\theta_b+V_1+V_2,\qquad u=u_b+v_1+v_2.
+ \end{gathered}
+\end{equation}
+The flat activation functions make the zero extensions of the
+increments smooth, with all spatial and temporal derivatives, at
+$t=t_{0j}$. The velocity is divergence free because mixed partial
+derivatives commute.
+
+Hereafter fix a layer and temporarily suppress its index. Write
+$k=K\zeta$, $\rho=|k|^2=K^2r^2$, $D=D_{<j}$, $G=G_{<j}$,
+and $b=k_1$. All functions of one variable in the formulas below
+are evaluated at $s=k\cdot x$. Define
+\begin{equation}\label{ms:Qrest}
+ Q_* =\frac{\dot w\Omega+wb\Theta}{\rho}
+                         -Q\frac{\dot\rho}{\rho},
+ \qquad\dot\rho=-2k\cdot D^Tk.
+\end{equation}
+Thus $\dot Q=Q_*-d\rho Q$, directly from
+\eqref{ms:amplitudes}, without a constant-phase-length assumption.
+The complete added scalar and vector forces are
+\begin{align}
+ E_\theta={}&\dot w\Theta Fg+QP(J\nabla g\cdot G)
+       +QT(F^2-PF')g(Jk\cdot\nabla g)\nonumber\\
+ &\quad-dT\{\rho(F+F'')g+2F'k\cdot\nabla g+F\Delta g\},
+ \label{ms:scalar}\\
+ E_u={}&2Dv+Q_*J\{kFg+P\nabla g\}
+                         +(\nabla v)v-TFg e_2
+                         -d(\rho v+\Delta v).
+ \label{ms:vector}
+\end{align}
+These are full vector forces at the declared pressure $p=0$.
+For completely componentwise evaluation one uses
+\begin{align}
+ v&=QJ\{kFg+P\nabla g\},\nonumber\\
+ \nabla v&=QJ\{k\otimes k F'g+
+           F(k\otimes\nabla g+\nabla g\otimes k)+P\nabla^2g\},
+ \label{ms:velocityjets}\\
+ \Delta V&=T\{\rho F''g+2F'k\cdot\nabla g+F\Delta g\},
+ \label{ms:lapscalar}\\
+ \Delta v&=QJ\{\rho kF''g+\rho F'\nabla g
+       +2F'k(k\cdot\nabla g)+2F(\nabla^2g)k
+                         +Fk\Delta g+P\nabla\Delta g\}.
+ \label{ms:lapvector}
+\end{align}
+Thus every phase, envelope, and mixed Laplacian term is displayed.
+The base forces are
+\begin{align}
+ f_{\theta,b}&=\nu\eta'(\nu t)
+                 (\theta_{\rm ref}-\theta_{\rm in})-d\Delta\theta_b,
+ \nonumber\\
+ f_{u,b}&=\ddot\alpha J\nabla H_0+
+        \dot\alpha^2\bigl(\nabla(J\nabla H_0)\bigr)J\nabla H_0
+                          -\theta_b e_2-d\dot\alpha J\nabla\Delta H_0.
+ \label{ms:baseforce}
+\end{align}
+The requested total forces are exactly
+\begin{equation}\label{ms:totalforce}
+ f_\theta=f_{\theta,b}+E_{\theta,1}+E_{\theta,2},
+ \qquad f_u=f_{u,b}+E_{u,1}+E_{u,2}.
+\end{equation}
+
+\begin{proof}[Proof of the full spatial equations]
+For the material derivative $\mathcal D=\partial_t+Dx\cdot\nabla$,
+differentiating $M^{-1}x$ gives $\mathcal D(M^{-1}x)=0$.
+The phase equation gives $\mathcal D(k\cdot x)=0$ as well.
+Consequently $\mathcal Dg=0$, $\mathcal DV=\dot T Fg$,
+and $\mathcal D\Psi=\dot QPg$.
+On this support the actual older temperature and velocity are
+$G\cdot x$ and $Dx$ by \eqref{ms:nesting}; in particular their
+gradient and Jacobian are exactly $G,D$, even while these change.
+The temperature advection increment is therefore
+$\dot T Fg+v\cdot G+v\cdot\nabla V$.
+Using $Jk\cdot k=0$ and $J\nabla g\cdot\nabla g=0$ gives
+\[
+ v\cdot\nabla V=QT(F^2-PF')g(Jk\cdot\nabla g),\qquad
+ v\cdot G=QFg(Jk\cdot G)+QP(J\nabla g\cdot G).
+\]
+Since $\dot\Theta=-(Jk\cdot G)\Omega/\rho-d\rho\Theta$,
+the first term in $v\cdot G$ cancels the coupled part of
+$\dot T Fg$ exactly. Subtraction of $d\Delta V$, computed
+by the product rule, proves \eqref{ms:scalar}.
+
+For every trace-free two by two matrix, direct multiplication
+gives $DJ+JD^T=0$. Differentiation of a gradient under $\mathcal D$
+therefore gives
+\[
+ \mathcal D(J\nabla\Psi)=D J\nabla\Psi+
+                                  J\nabla(\mathcal D\Psi).
+\]
+The other linear advection increment is
+$(v\cdot\nabla)(Dx)=Dv$. Adding it to this formula, adding the
+self-advection $(\nabla v)v$, and subtracting $Ve_2+d\Delta v$
+proves \eqref{ms:vector}, after using $\dot Q=Q_*-d\rho Q$.
+Differentiating $\Delta\Psi=Q(\rho F'g+2Fk\cdot\nabla g+P\Delta g)$
+and applying $J$ proves all six groups in \eqref{ms:lapvector}.
+
+The base phase $\mu e_0\cdot x$ is transported by
+$\dot\alpha Jx$, and its radial cutoff is also transported.
+Before $1/\nu$ its velocity is zero. This proves the scalar
+base formula. Differentiating $\dot\alpha J\nabla H_0$ proves
+the vector base formula directly on all of $\mathbb R^2$.
+Finally, adding increments in the order $1,2$ accounts exactly
+for both directions of each interaction. In the second increment,
+$\mathcal D$ contains $u_b+v_1$, and the terms $v_2\cdot G_{<2}$
+and $D_{<2}v_2$ contain the reverse interactions with that full
+older state. Outside an increment's support all its derivatives
+vanish. Thus the residual identities telescope globally to
+\eqref{ms:totalforce}, with no omitted interaction and no inverse
+curl or pressure reconstruction.
+\end{proof}
+
+The material-coordinate form makes the original metric equally
+explicit. Set $C=M^{-1}M^{-T}$ and $\widetilde g(y)=f(y/\ell)$.
+The pullback of the spatial derivative and Laplacian on a function
+of $(s,y)$ are
+\begin{equation}\label{ms:operators}
+ \mathcal P=K\zeta\partial_s+M^{-T}\nabla_y,
+ \qquad\mathcal L=K^2r^2\partial_s^2
+             +2K(Cp\cdot\nabla_y)\partial_s+
+                       \sum_{l,m}C_{lm}\partial_{y_l}\partial_{y_m}.
+\end{equation}
+Indeed $s=Kp\cdot y$, $\nabla_x=M^{-T}\nabla_y$ on a
+material function, and $|M^{-T}p|^2=p^TCp=r^2$; multiplying
+the two derivative operators proves \eqref{ms:operators}.
+For example $k\cdot\nabla_xg=K(Cp)\cdot\nabla_y\widetilde g$.
+This proves an exact coordinate correspondence for every displayed
+mixed derivative and keeps the source radii in their original units.
+
+\subsection{What the affine cells and sine regions actually satisfy}
+
+On $g=1$ and $|s|<s_0$ the wave is exactly
+\[
+ V=T k\cdot x,\qquad
+ v=QJk\otimes k\,x
+   =\frac{w\Omega}{r^2}J\zeta\otimes\zeta\,x.
+\]
+Both Laplacians vanish, but their damping contributions to the
+forces \eqref{ms:scalar}--\eqref{ms:vector} are
+\begin{equation}\label{ms:coreforces}
+ -d\rho V,\qquad -d\rho v.
+\end{equation}
+They do not vanish unless the corresponding wave vanishes.
+For the first wave the scalar core force is
+$-dK_1^2(w_1K_1\Theta_1\zeta_1)\cdot x$ after activation,
+and the curl of its damping vector force is
+$-dK_1^2w_1\Omega_1$. Thus the evolving affine parent itself
+has the force required by its changed amplitude equations.
+On an uncut region where $F(s)=\sin s$, instead,
+$F''=-F$ and the two damping contributions are zero:
+$\rho V+\Delta V=0$ and $\rho v+\Delta v=0$.
+The non-damping vector terms in \eqref{ms:vector} are still
+present; this cancellation is not a claim of unforced momentum
+at $p=0$. In cutoff regions every term in
+\eqref{ms:lapscalar}--\eqref{ms:lapvector} must also be kept.
+These restrictions prove exactly how the damped coefficient
+dynamics map into the released spatial profile. They differ
+from retaining an inviscid state and adding only $-d\Delta$ of
+that state: the present amplitudes, parent, phases and controls
+have all changed according to \eqref{ms:amplitudes}.
+
+\subsection{Explicit bounds at every spatial derivative order}
+
+For a scalar, vector, or tensor field $U$, let
+$|U|_m=\sup_x\|D_x^mU(x)\|$, using Euclidean multilinear
+operator norms and $m\geq0$. For a one-variable profile $W$ write
+$[W]_m=\sup_s|W^{(m)}(s)|$, and put $F_m^f=\sup_y\|D^mf(y)\|$.
+Set $N_1=1$, $N_2=N$, $r_{1,-}=r_{1,+}=1$,
+$r_{2,-}=h_0$, $r_{2,+}=\sqrt{10}$. Define finite explicit
+numbers
+\begin{align}
+ \kappa_j^*&=K_jr_{j,+},&
+ e_{j,m}&=(N_j/\ell_j)^m F_m^f,\nonumber\\
+ \mathcal B_{j,m}(W)&=\sum_{q=0}^m\binom mq
+       (\kappa_j^*)^q[W]_q e_{j,m-q},&
+ \mathcal C_{j,m}(P)&=\sum_{q=0}^m\binom mq
+       (\kappa_j^*)^q[P]_q e_{j,m-q+1}.
+ \label{ms:Bnorm}
+\end{align}
+Here $\kappa_j^*$ is merely a frequency bound, not a diffusivity.
+Repeated differentiation and the chain rule give
+$|g_j|_m\leq e_{j,m}$,
+$|W(s_j)g_j|_m\leq\mathcal B_{j,m}(W)$, and
+$|P(s_j)\nabla g_j|_m\leq\mathcal C_{j,m}(P)$.
+To prove the middle inequality, assign each of the $m$ derivatives
+either to the profile or to the envelope. There are $\binom mq$
+assignments with $q$ profile derivatives, each bounded by the
+corresponding summand. The other inequalities follow by the same
+argument. This proof applies to all directions in the defined
+operator norm, not only coordinate derivatives.
+
+The actual threshold amplitudes are
+$P_j^*=(\nu^2/\mu)\lambda_j^{-7/8}$. The finite coefficient
+calculation, \eqref{ave:amplitude_sup}, supplies the following global
+bounds through the hold:
+\begin{align}
+ U_{\Theta,1}&=\max\{e^{2+\Lambda_1^{-1}}P_1^*,2\sigma^2/K_1\},
+ &U_{\Omega,1}&=\max\{(K_1/\nu)e^{2+\Lambda_1^{-1}}P_1^*,9\sigma\},
+ \nonumber\\
+ U_{\Theta,2}&=e^{18}P_2^*,
+ &U_{\Omega,2}&=3K_2U_{\Theta,2}/\sigma.
+ \label{ms:amplitudebounds}
+\end{align}
+In particular these preserve the actual source frequencies and
+the changed inherited scale. Put
+\[
+ A_1=\sup_{[0,T_f]}|\dot\alpha|,\quad
+ A_2=\sup_{[0,T_f]}|\ddot\alpha|,\quad
+ D_1^*=A_1,\quad D_2^*=A_1+U_{\Omega,1},\quad
+ G_1^*=A_0,\quad G_2^*=A_0+K_1U_{\Theta,1}.
+\]
+Explicit profile bounds for $A_1,A_2$ are given below. Set
+$W_{1,1}=\Gamma_1[\eta']_0$ and
+$W_{2,1}=\Gamma[\eta']_0$. Then
+\begin{align}
+ Q_j^*&=\frac{U_{\Omega,j}}{K_j^2r_{j,-}^2},\nonumber\\
+ Q_{*,j}^*&=\frac{W_{j,1}U_{\Omega,j}
+          +\kappa_j^* U_{\Theta,j}+2D_j^*U_{\Omega,j}}
+                       {K_j^2r_{j,-}^2}.
+ \label{ms:Qbounds}
+\end{align}
+The bounds $|Q_j|\leq Q_j^*$ and $|Q_{*,j}|\leq Q_{*,j}^*$
+follow from \eqref{ms:Qrest} and
+$|\dot\rho/\rho|\leq2\|D\|$. Define
+\begin{align}
+ \mathcal D_{\theta,j,m}
+ &=dU_{\Theta,j}\{(\kappa_j^*)^2\mathcal B_{j,m}(F)
+                                      +2\mathcal B_{j,m+2}(F)\},\nonumber\\
+ \mathcal D_{u,j,m}
+ &=dQ_j^*\{(\kappa_j^*)^2\mathcal B_{j,m+1}(P)
+                                      +2\mathcal B_{j,m+3}(P)\}.
+ \label{ms:diffnorm}
+\end{align}
+These bound the complete damping-plus-diffusion terms in
+\eqref{ms:scalar}--\eqref{ms:vector}. In particular they include
+the core damping and every envelope derivative. The two in front
+of $\mathcal B_{m+2}$ or $\mathcal B_{m+3}$ is the sum of the
+two coordinate Laplacian terms; $J$ has operator norm one.
+The whole added forces satisfy the explicit inequalities
+\begin{align}
+ |E_{\theta,j}|_m\leq{}&W_{j,1}U_{\Theta,j}\mathcal B_{j,m}(F)
+   +Q_j^*G_j^*\mathcal C_{j,m}(P)+\mathcal D_{\theta,j,m}\nonumber\\
+ &+Q_j^*U_{\Theta,j}\sum_{q=0}^m\binom mq
+        \mathcal B_{j,q+1}(P)\mathcal B_{j,m-q+1}(F),
+ \label{ms:fullscalarnorm}\\
+ |E_{u,j}|_m\leq{}&(2D_j^*Q_j^*+Q_{*,j}^*)\mathcal B_{j,m+1}(P)
+                  +U_{\Theta,j}\mathcal B_{j,m}(F)+\mathcal D_{u,j,m}
+ \nonumber\\
+ &+(Q_j^*)^2\sum_{q=0}^m\binom mq
+            \mathcal B_{j,q+1}(P)\mathcal B_{j,m-q+2}(P).
+ \label{ms:fullvectornorm}
+\end{align}
+For the scalar nonlinear term it is enough to use its exact
+alternative expression $v_j\cdot\nabla V_j$; differentiation
+of this product proves the displayed sum. For the vector nonlinear
+term differentiate $(\nabla v_j)v_j$ and interchange the summation
+index to obtain the final sum. These arguments prove all four
+bounds directly from the exact formulas.
+
+The base has equally explicit bounds. Put
+$c_m=|\chi_0|_m$, $h_m=|H_0|_m$, and
+\[
+ b_m(W)=\sum_{q=0}^m\binom mq\mu^q[W]_q c_{m-q},
+ \qquad B_m^0=\frac{A_0}{\mu}\max\{b_m(F),b_m(\sin)\}.
+\]
+The interpolation is a convex combination when $\alpha=0$;
+afterwards $|\mu e_0|=\mu$. Hence $|\theta_b|_m\leq B_m^0$.
+The product rule and \eqref{ms:baseforce} give
+\begin{align}
+ |f_{\theta,b}|_m\leq{}&
+       \frac{\nu A_0}{\mu}[\eta']_0\{b_m(F)+b_m(\sin)\}+2dB_{m+2}^0,
+ \nonumber\\
+ |f_{u,b}|_m\leq{}&A_2h_{m+1}+B_m^0+2dA_1h_{m+3}
+       +A_1^2\sum_{q=0}^m\binom mq h_{q+2}h_{m-q+1}.
+ \label{ms:basenorm}
+\end{align}
+All total force norms are bounded by adding their base and two
+increment bounds. Integrating any bound over its interval multiplies
+its constant by that interval's physical length. For example
+\begin{equation}\label{ms:timecost}
+ \int_0^{T_f}|\hbox{wave damping-plus-diffusion force}_j|_m\,dt
+ \leq (T_f-t_{0j})\mathcal D_{\bullet,j,m}.
+\end{equation}
+Here $T_f=t_1+(1+L_2^{-1}+1/32)/\Gamma$ is the actual end
+of the finite hold and the dot denotes the corresponding scalar or
+vector bound. Every frequency, envelope radius and diffusion
+coefficient is explicit. No estimate in this section asserts a bound
+uniform over a sequence $K_j\to\infty$.
+
+\subsection{Control derivatives and every mixed derivative order}
+
+The constants $A_1,A_2$ in the spatial force costs can be bounded
+without differentiating an unknown shooting root. The root is a
+fixed number in $[0,3]$, and differentiation below is in time.
+For a compression $L$ put
+\[
+ Z_0(L)=\max\{1,3L[\eta_2]_0\},\qquad
+ Z_b(L)=\max\{[\eta^{(b)}]_0,
+                         3L^{b+1}[\eta_2^{(b)}]_0\}\quad(b\geq1).
+\]
+These bound the derivatives of the source ramp and pulse $z$;
+the hold has zero derivatives. During the first control,
+$\alpha=s_*-\arcsin(\sin s_*z)$ and $|\sin s_*z|\leq1/4$.
+Twice differentiating this displayed formula gives
+\begin{align*}
+ A_{1,\mathrm{first}}&=\frac4{\sqrt{15}}\Gamma_1\sin s_*Z_1(\Lambda_1),\\
+ A_{2,\mathrm{first}}&=\Gamma_1^2\left\{
+   \frac4{\sqrt{15}}\sin s_*Z_2(\Lambda_1)
+  +\frac{64}{15\sqrt{15}}\sin^3s_*Z_0(\Lambda_1)Z_1(\Lambda_1)^2
+                                                    \right\}.
+\end{align*}
+During second steering and holding write $z_b=Z_b(L_2)$ and
+$y_-=\sqrt{59}/8$. The exact control is
+\[
+ \alpha_\tau=\frac{W\zeta_{1,1}-az'}Y,
+ \qquad Y'=\frac{hW-a^2zz'}Y,
+ \qquad\zeta_{1,\tau}=\alpha_\tau J\zeta_1.
+\]
+Define the explicit constants
+\begin{align*}
+ U_\alpha&=(9+az_1)/y_-,\qquad
+ U_Y=(27+az_1/4)/y_-,\\
+ U_{W'}&=\frac{128}{63}(\sqrt{10}+3z_0)+\frac9{16},\\
+ U_{\alpha'}&=(U_{W'}+9U_\alpha+az_2)/y_-
+                                      +(9+az_1)U_Y/y_-^2.
+\end{align*}
+The bounds $Y\geq y_-$, $|az|\leq1/4$, $h<3$, $W<9$,
+$B\leq2$, $h^2+a^2\geq63/64$, and $\delta_1\leq1/16$
+give $|\alpha_\tau|\leq U_\alpha$, $|Y'|\leq U_Y$ and
+$|W'|\leq U_{W'}$. Differentiating the quotient for
+$\alpha_\tau$ gives $|\alpha_{\tau\tau}|\leq U_{\alpha'}$.
+Thus one can use
+\[
+ A_1\leq\max\{A_{1,\mathrm{first}},\Gamma U_\alpha\},
+ \qquad A_2\leq\max\{A_{2,\mathrm{first}},\Gamma^2U_{\alpha'}\}.
+\]
+On intervening growth and transition intervals the angle is constant.
+
+For completeness the following exact finite recursion evaluates any
+mixed derivative, rather than treating spatial estimates as time
+estimates. For a fixed layer put $A=M^{-1}/\ell$ and introduce
+independent variables $t,x,s,y$. Define operators on smooth
+expressions in these variables by
+\begin{equation}\label{ms:jetops}
+ \mathfrak T=\partial_t+(\dot k\cdot x)\partial_s
+                          +(\dot A x)\cdot\nabla_y,
+ \qquad
+ \mathfrak X_i=\partial_{x_i}+k_i\partial_s+
+                              \sum_l A_{li}\partial_{y_l}.
+\end{equation}
+Here $\partial_t$ differentiates every time-dependent coefficient
+and $\partial_{x_i}$ differentiates the explicitly occurring $x$.
+If $\iota^*R=R(t,x,k(t)\cdot x,A(t)x)$, the chain rule proves
+\begin{equation}\label{ms:jetpullback}
+ \partial_t^b\partial_x^\gamma(\iota^*R)
+       =\iota^*(\mathfrak T^b\mathfrak X_1^{\gamma_1}
+                                         \mathfrak X_2^{\gamma_2}R).
+\end{equation}
+Induction proves this identity for all nonnegative $b,\gamma_i$.
+For example, for $R=Q(t)P(s)f(y)$ it gives every streamfunction
+jet; applying one more $\mathfrak X$ and $J$ gives every velocity
+jet. The commutators vanish: in $[\mathfrak T,\mathfrak X_i]$
+the derivative $\dot k_i$ is canceled by differentiating
+$\dot k\cdot x$, and $\dot A_{li}$ by differentiating
+$(\dot A x)_l$. The $\mathfrak X_i$ commute by their displayed
+coefficients. This checks the order consistency of the recursion.
+
+Apply \eqref{ms:jetpullback} to each summand of
+\eqref{ms:scalar}--\eqref{ms:baseforce}, using a separate pair
+$(s,y)$ for each layer when necessary. After expansion the answer
+is a finite sum of terms of the form
+\[
+ c(t)x^\beta\prod_{l=1}^q W_l^{(n_l)}(s_j)
+                         \prod_{l=1}^r\partial^{\gamma_l}f(y_j),
+\]
+or the analogous base terms with $\chi_0,H_0$. An explicit bound
+for each term is obtained by replacing it by
+\[
+ \sup_{[0,T_f]}|c(t)|\,(N_j\ell_j)^{|\beta|}
+          \prod_{l=1}^q[W_l]_{n_l}
+          \prod_{l=1}^r F^f_{|\gamma_l|},
+\]
+and summing; for a base term use $R_H^{|\beta|}$.
+Each coefficient jet in $c$ is computed by differentiating
+\eqref{ms:amplitudes}, the phase equations, \eqref{ms:M}, and
+the explicit controls. This is a finite recursion using only
+addition, multiplication, the stated profile derivatives and the
+nonzero denominators $a$, $K_j$, $\Gamma$, $r_j^2$, $Y$.
+Their positive lower bounds have already been proved. Induction
+on the requested order, applying the product and quotient rules
+to those equations, therefore supplies finite bounds for every
+coefficient jet from the preceding-order bounds. This specifies
+every mixed force and diffusion norm by an exact finite procedure,
+including the time variation of the material cutoff. It does not
+replace the cutoff by a stationary radial function for layer two.
+
+\subsection{Smooth finite slab, compact forces, and exact returned state}
+
+All fields and forces are smooth and supported in $B_{R_H}$ on
+$0\leq t\leq T_f$. Each velocity is the rotated gradient of a
+compact streamfunction, so its energy is finite. It also has the
+usual exact Biot--Savart relation. Indeed for
+$N_0(x)=(2\pi)^{-1}\log|x|$ and compact smooth
+$\psi=\psi_b+\Psi_1+\Psi_2$, distributional integration by
+parts gives $N_0*\Delta\psi=(\Delta N_0)*\psi=\psi$;
+applying $J\nabla$ gives $u=J\nabla N_0*\omega$ with
+$\omega=\Delta\psi$. All integrations are legitimate because
+$\psi$ is compact and $N_0$ is locally integrable.
+Odd $F$, even $P$, and even cutoffs give odd $\theta,u,f_\theta,f_u$
+and even $\omega$. The pressure $p=0$ has $p(0,t)=0$.
+
+At the selected second return and throughout its physical hold
+of duration $1/(32\Gamma)$, the coefficient calculation proves
+$\zeta_{2,1}=\Omega_2=0$, $w_2=1$, and
+\[
+ \Theta_2(t)=-P_2(t_b)
+     \exp\left[-dK_2^2\int_{t_b}^t|\zeta_2(r)|^2\,dr\right].
+\]
+Thus $v_2=0$ everywhere on this hold, while its temperature and
+the first parent continue changing. In the inner second affine
+cell the total fields have exactly
+\[
+ \theta=\left(-A_0e_0+K_1\Theta_1\zeta_1
+                          +K_2\Theta_2\zeta_2\right)\cdot x,
+ \qquad
+ u=\left(\dot\alpha J+\Omega_1J\zeta_1\otimes\zeta_1\right)x.
+\]
+The second holding shear is zero, but the first holding shear is
+positive at return and evolves by the displayed system. In particular
+these exact full spatial fields have the origin vorticity calculated
+in \eqref{sr:origin_vorticity}:
+\begin{equation}\label{ms:originvorticity}
+ \operatorname{curl}u(0,t)=2\dot\alpha+\Omega_1
+ =\Omega_1\left(1-\frac{2a^2}{h^2+a^2}\right)
+ \geq\frac{31}{32}\Omega_1>0\qquad(t_b\leq t\leq T_f).
+\end{equation}
+Indeed on holding $\alpha=s_*+\arctan(a/h)$ and
+$\dot h=a\Omega_1$, so $\dot\alpha=-a^2\Omega_1/(h^2+a^2)$.
+Moreover $h\geq h_0$, $h_0^2+a^2=1$ and $a\leq1/8$ prove
+the numerical lower bound. Positivity of $\Omega_1$ at return
+persists because the holding equation has positive forcing $B/r_2$.
+These are the actual final states realized by the full spatial equations.
+
+There is also an honest compact extension of the forces in time.
+For $t<0$ extend the initial state by its constant values, with
+$\alpha=0$ and both increments zero. Flatness of $\eta$ makes
+the formulas smooth at zero. To the right, continue $z=0$ and
+the exact holding ODE for a collar of physical length
+$\epsilon_R=1/(128\Gamma)$. Its extension is quantitative:
+the total scaled duration is at most $17/16$ since $L_2\geq64$;
+the same integrating-factor estimates give
+\[
+ 0\leq W\leq26/3,\qquad
+ h\leq1+16/15+(26/3)(7/128)=813/320<3,
+ \qquad B>191/512>1/4.
+\]
+For the last bound use $B_{\rm in}\geq1/2$,
+$\delta_1\leq1/16$, $C_1\leq1/32$ and
+$B=e^{-\delta_1\tau}B_{\rm in}
+       -C_1\int_0^\tau e^{-\delta_1(\tau-r)}W(r)dr$.
+These strict bounds close the positivity bootstrap and keep all
+denominators away from zero; the smooth finite-dimensional vector
+field therefore continues through this collar. The support bounds
+continue as well. Extend the newest temperature by its exact hold
+exponential, and the angle and matrices by their exact inverse.
+In particular no nonstationary endpoint is frozen.
+
+Choose $\epsilon_L=1/\nu$ and multiply the extended residual
+forces, not the fields on their required slab, by
+\[
+ \beta(t)=\eta(1+t/\epsilon_L)
+                       \eta(1+(T_f-t)/\epsilon_R).
+\]
+This function is one on $[0,T_f]$, zero outside
+$(-\epsilon_L,T_f+\epsilon_R)$, and flat at the two external
+endpoints. The resulting forces belong to
+$C_c^\infty(\mathbb R^2\times\mathbb R)$ and still give exactly
+the solution already proved on $[0,T_f]$. On the collar the same
+mixed-derivative recursion applies, and the product rule includes
+the explicit additional factors $\epsilon_L^{-b}[\eta^{(b)}]_0$
+and $\epsilon_R^{-b}[\eta^{(b)}]_0$. No equation for the
+continued fields outside the required slab is claimed after this
+force cutoff. This completes the compact finite spatial realization
+and its full derivative and support costs.

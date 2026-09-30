@@ -1,0 +1,120 @@
+{
+  "schema": "coupled-viscous-control-exact-replay-v1",
+  "source_pdf_sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b",
+  "source_title": "Blowup for the Boussinesq equations with smooth forcing",
+  "source_url": "https://cims.nyu.edu/~tristanb/boussinesq.pdf",
+  "sympy_version": "1.13.1",
+  "checks": [
+    {
+      "name": "complete_temperature_laplacian",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "complete_velocity_laplacian",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "all_localized_scalar_self_advection",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "complete_localized_velocity_gradient",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "full_vector_material_commutator",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "trace_free_J_identity",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "full_parent_shear_derivative",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "first_stage_invariant_temperature_coupling",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "coupled_common_damping_temperature_defect",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_thermal_coefficient_pullback",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_viscosity_coefficient_pullback",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "growth_crossing_thermal_cost_power",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "growth_crossing_vector_cost_power",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "growth_crossing_curl_cost_power",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    }
+  ],
+  "all_passed": true,
+  "scope": "Exact finite algebra only; analytic proofs in TeX; no infinite viscous construction."
+}

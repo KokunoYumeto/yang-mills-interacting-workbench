@@ -1,0 +1,658 @@
+\section{The actual first controlled stage in the original units}
+\label{sec:cv-first-stage}
+
+The source for this section is Alp\"oge--Buckmaster,
+\emph{Blowup for the Boussinesq equations with smooth forcing},
+\url{https://cims.nyu.edu/~tristanb/boussinesq.pdf}, released PDF,
+76 pages. The source locations used here are Lemma 1.2 and (1.6),
+pp.~6--7; (3.1)--(3.12), pp.~8--10; the complete proofs of
+Lemmas 3.7--3.8 and (3.24)--(3.34), pp.~15--18;
+(3.58) and the following second-stage calculation, p.~27; and
+the first holding integral on p.~36. The proofs below are given in
+full. The source's unit-scale convention is not imposed on the fields
+in this section.
+
+\subsection{Parameters, coordinates, and the original coupled equations}
+
+Let $x=(x_1,x_2)\in\mathbb R^2$, $e_2=(0,1)$, and
+\[
+ J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+ R_\alpha=\begin{pmatrix}\cos\alpha&-\sin\alpha\\
+ \sin\alpha&\cos\alpha\end{pmatrix},\quad
+ e(s)=(\sin s,\cos s).
+\]
+In particular $R_\alpha e(s)=e(s-\alpha)$ and
+$\operatorname{curl}u=\partial_1u_2-\partial_2u_1$.
+Retain $A_0>0$, $\lambda_0\geq1$, and the source's two scaling parameters
+\[
+ \mu=\lambda_0,\qquad \nu=\sqrt{A_0},\qquad K_1=\mu\lambda_1.
+\]
+Here $\nu$ is the source's \emph{time-scaling parameter}.
+Physical momentum viscosity below is denoted $\nu_{\rm phys}\geq0$;
+thermal diffusivity is $\kappa_{\rm phys}\geq0$.
+The first pulse compression is the source's $\Lambda_1$, which is
+different from the physical spatial frequency $K_1$.
+
+Fix a smooth nondecreasing step $\eta:\mathbb R\to[0,1]$ equal to zero
+on $(-\infty,0]$ and one on $[1,\infty)$, and
+$h\in C_c^\infty((0,1))$ with $h\geq0$ and $\int_0^1h=1$.
+Write $H=\|h\|_\infty$. The source's choice is $h=\eta_2$,
+$c_p=3$; the following calculation retains any
+\begin{equation}
+ c_p>1,\quad \Lambda_1\geq2c_pH,\quad
+ 0<s=s_*\leq\tfrac18,\quad c_p\Lambda_1H\sin s\leq\tfrac14.
+ \label{eq:cv-first-design}
+\end{equation}
+Since $\int h=1$, $H\geq1$ and $\Lambda_1>2$.
+Let $k_1\geq0$ be an integer, $\lambda_1>1$, and set
+\begin{equation}
+ S=\frac{A_0}{\mu}\lambda_1^{-k_1-6},\quad
+ L=(k_1+5+\tfrac18)\log\lambda_1\geq1,\quad
+ P_* =S e^L=\frac{A_0}{\mu}\lambda_1^{-7/8},\quad
+ \Gamma=\nu\sin s,\quad t_0=\nu^{-1}.
+ \label{eq:cv-first-seed}
+\end{equation}
+The condition $L\geq1$ is ensured explicitly by
+$\lambda_1\geq\exp((k_1+41/8)^{-1})$.
+
+The first layer's complete preceding affine background, phase transport,
+and signed amplitude pair are
+\begin{align}
+ D_{<1}&=\dot\alpha J,&G_{<1}&=-A_0R_\alpha e_2,
+ &\dot M_1&=D_{<1}M_1,&M_1(t_0)&=I,\label{eq:cv-first-background}\\
+ \zeta_1&=M_1^{-T}e(s),&
+ \dot\Theta_1&=a_1\Omega_1,&
+ \dot\Omega_1&=b_1\Theta_1,&
+ a_1&=-\frac{J\zeta_1\cdot G_{<1}}{K_1|\zeta_1|^2},\quad
+ b_1=K_1\zeta_{1,1}.\label{eq:cv-first-pair}
+\end{align}
+The entry data are
+\[
+ \alpha(t_0)=0,\quad \Theta_1(t_0)=-S,\quad
+ \Omega_1(t_0)=-\frac{K_1}{\nu}S,
+ \qquad w_1(t)=\eta(\Gamma(t-t_0)).
+\]
+The activation factor multiplies the physical increment, not the
+homogeneous amplitude equation. It is flat at $t_0$ and equals one
+by $t_0+\Gamma^{-1}$.
+
+For this actual background, $M_1=R_\alpha$: differentiation gives
+$\dot R_\alpha=\dot\alpha JR_\alpha$ and the initial values agree.
+Uniqueness follows, for example, by differentiating
+$R_\alpha^{-1}M_1$. Consequently
+\begin{equation}
+ \zeta_1=R_\alpha e(s),\quad |\zeta_1|=1,\quad
+ J\zeta_1\cdot G_{<1}=-A_0\sin s,\quad
+ a_1=\frac{A_0\sin s}{K_1},\quad
+ b_1=K_1\sin(s-\alpha).
+ \label{eq:cv-first-exact-coefficients}
+\end{equation}
+The determinant identity used here is explicit:
+$J e(s)=(-\cos s,\sin s)$ has scalar product $\sin s$
+with $e_2$, and simultaneous rotation preserves that scalar product.
+In particular $a_1$ is constant because both the parent gradient and
+the new phase rotate; it has not been frozen independently of the
+evolving parent.
+
+\subsection{Exact growth and transition}
+
+For the first stage the feedback sums $F_0$ and $F_1$ in source (3.4)
+are empty and equal zero. Thus both the source's growth control
+$\dot\alpha=F_0$ and its transition control
+$(1-\eta_b)F_0+\eta_bF_1$ give $\alpha=0$.
+Set
+\[
+ t_a=t_0+\frac L\Gamma,\qquad
+ t_1=t_a+\Gamma^{-1},\qquad
+ t_b=t_1+\Gamma^{-1}(1+\Lambda_1^{-1}).
+\]
+On $[t_0,t_1]$ the exact solution of the original pair is
+\begin{equation}
+ P_1(t):=-\Theta_1(t)=S e^{\Gamma(t-t_0)},\qquad
+ \Omega_1(t)=-\frac{K_1}{\nu}P_1(t).
+ \label{eq:cv-first-growth}
+\end{equation}
+Indeed $a_1K_1/\nu=\Gamma$ and
+$\Gamma K_1/\nu=K_1\sin s=b_1$.
+This proves both differential equations and both initial data.
+Uniqueness follows from the linear integral equation: on a bounded
+interval with coefficient norm at most $B$, the $n$-fold iterated
+integral of the difference of two solutions is bounded by its supremum
+times $(B\ell)^n/n!$, which tends to zero. The same convergent integral
+series supplies existence on every finite interval.
+Since $P_1$ is strictly increasing, $t_a$ is exactly the first crossing
+of $P_*$, and the transition contributes exactly one to $\log P_1$.
+The steering entry amplitude is therefore $P_{\rm ent}=eP_*$.
+
+\subsection{The trial steering family and proof of its unique return}
+
+Use $m\in[0,c_p]$ for the pulse trial parameter, to distinguish it
+from the unchanged spatial parameter $\mu=\lambda_0$.
+With $\tau=\Gamma(t-t_1)$ and $\tau_b=1+\Lambda_1^{-1}$ set
+\begin{equation}
+ z(\tau;m)=
+ \begin{cases}
+  1-\eta(\tau),&0\leq\tau\leq1,\\
+  -m\Lambda_1h(\Lambda_1(\tau-1)),&1\leq\tau\leq\tau_b,
+ \end{cases}
+ \quad Z=\sin s\,z,\quad \alpha=s-\arcsin Z.
+ \label{eq:cv-first-Z}
+\end{equation}
+Extend $Z=\sin s$ before $t_1$ and $Z=0$ after $t_b$.
+The two smooth pieces and extensions agree to every order, since the
+step is flat and $h$ is supported in the interior.
+The source's selected pulse height in (3.12) is precisely
+$h_1=m\Lambda_1\sin s$; its allowed interval is
+$[0,c_p\Lambda_1\sin s]$.
+The design gives
+\begin{equation}
+ |Z|\leq\tfrac14,\quad
+ \zeta_{1,1}=Z,\quad
+ \zeta_{1,2}=\sqrt{1-Z^2}\geq\frac{\sqrt{15}}4,\quad
+ \dot\alpha=-\frac{\dot Z}{\zeta_{1,2}},\quad 0\leq\alpha<\tfrac12.
+ \label{eq:cv-first-control}
+\end{equation}
+For the last bound, $Z\leq\sin s$ implies $\alpha\geq0$, and
+$\arcsin(1/4)\leq(1/4)/\sqrt{1-1/16}<1/3$ gives
+$\alpha\leq1/8+1/3<1/2$. These are the source's actual feedback and
+the original laboratory phase component; gravity remains $e_2$.
+
+Define $\mathcal P$ first as the solution of the linear equation
+\begin{equation}
+ \mathcal P_{\tau\tau}=z\mathcal P,\qquad
+ \mathcal P(0)=\mathcal P_\tau(0)=1.
+ \label{eq:cv-first-linear-multiplier}
+\end{equation}
+The same linear integral series proves existence, uniqueness, and
+smoothness for every trial on the full finite interval. Moreover the
+exact inverse map to the original amplitude pair is
+\begin{equation}
+ \Theta_1(t)=-P_{\rm ent}\mathcal P(\tau),\qquad
+ \Omega_1(t)=-\frac{K_1}{\nu}P_{\rm ent}\mathcal P_\tau(\tau).
+ \label{eq:cv-first-inverse-map}
+\end{equation}
+To check it, its component derivatives are exactly
+\[
+ -\Gamma P_{\rm ent}\mathcal P_\tau=a_1\Omega_1,\qquad
+ -\frac{K_1}{\nu}\Gamma P_{\rm ent}z\mathcal P
+ =K_1\sin s\,z\Theta_1=b_1\Theta_1.
+\]
+The data at $t_1$ match \eqref{eq:cv-first-growth}. Conversely the
+first amplitude equation with constant $a_1$ and $a_1b_1=\Gamma^2z$
+gives \eqref{eq:cv-first-linear-multiplier} for
+$-\Theta_1/P_{\rm ent}$, with the stated initial derivative.
+Thus the auxiliary equation and original pair are explicitly inverse
+descriptions of the same dynamics, not a substituted oscillator.
+
+On $0\leq\tau\leq1$, $z\geq0$. Before any first zero of either
+$\mathcal P$ or $\mathcal P_\tau$, one has
+$\mathcal P_{\tau\tau}\geq0$ and therefore
+$\mathcal P_\tau\geq1$, $\mathcal P\geq1+\tau$.
+Continuity excludes that first zero and proves these inequalities
+through $\tau=1$. Only now define $v=\mathcal P_\tau/\mathcal P$.
+It satisfies
+\[
+ v_\tau=1-\eta-v^2,\qquad v(0)=1.
+\]
+Since $(v-1)_\tau=-(v+1)(v-1)-\eta$, the integrating-factor formula
+gives $v\leq1$. Since $v>0$ and $v_\tau\geq-v^2$,
+$(1/v)_\tau\leq1$, so
+\begin{equation}
+ \frac1{1+\tau}\leq v(\tau)\leq1,\quad
+ \log2\leq\int_0^1v\,d\tau\leq1,\quad
+ v_d:=v(1)\in[1/2,1],\quad 2\leq\mathcal P(1)\leq e.
+ \label{eq:cv-first-ramp}
+\end{equation}
+
+On the negative pulse set $y=\Lambda_1(\tau-1)$ and
+$\chi(y)=\mathcal P(1+y/\Lambda_1)/\mathcal P(1)$.
+There is no division by an unknown evolving amplitude in this
+definition. Its exact equation and data are
+\begin{equation}
+ \chi_{yy}+\frac{mh(y)}{\Lambda_1}\chi=0,\qquad
+ \chi(0)=1,\quad\chi_y(0)=v_d/\Lambda_1.
+ \label{eq:cv-first-chi}
+\end{equation}
+Before a possible first zero, $\chi$ is concave, so
+$\chi\leq1+y/\Lambda_1\leq2$. Since
+$mh/\Lambda_1\leq c_pH/\Lambda_1\leq1/2$, one has
+$\chi_{yy}\geq-1$, hence
+\[
+ \chi(y)\geq1+\frac{v_d}{\Lambda_1}y-\frac{y^2}{2}\geq\frac12
+ \qquad(0\leq y\leq1).
+\]
+The strict positive lower bound excludes a first zero. Thus every
+trial satisfies on the entire pulse
+\begin{equation}
+ \tfrac12\leq\chi(y)\leq1+y/\Lambda_1,\qquad
+ \chi_y=\frac{v_d}{\Lambda_1}
+  -\frac m{\Lambda_1}\int_0^yh(r)\chi(r)\,dr
+  \geq-\frac{2c_p}{\Lambda_1}.
+ \label{eq:cv-first-trial-positive}
+\end{equation}
+Consequently the original temperature is strictly negative for every
+trial, and the quotient is well defined. Writing
+$V(y;m)=v(1+y/\Lambda_1;m)=\Lambda_1\chi_y/\chi$ gives
+\begin{equation}
+ V_y=-mh(y)-\frac{V^2}{\Lambda_1},\quad V(0;m)=v_d,
+ \qquad -4c_p\leq V(y;m)\leq v_d\leq1.
+ \label{eq:cv-first-exact-riccati}
+\end{equation}
+
+Here is the parameter dependence needed to select the return.
+In the first-order integral system for $(\chi,\chi_y)$ the coefficient
+matrix depends affinely on $m$. On the compact parameter interval,
+its iterated integrals converge uniformly with factorial denominators.
+Differentiating $r$ times in $m$ introduces at most a degree-$r$
+polynomial in the iteration index, still dominated by that factorial.
+Thus this series and each parameter derivative converge uniformly.
+The lower bound $\chi\geq1/2$ then gives smooth parameter dependence
+of $V$. Differentiating its exact equation and using an integrating
+factor gives
+\begin{equation}
+ \partial_m V(1;m)=
+ -\int_0^1h(y)\exp\!\left(-\frac2{\Lambda_1}
+                 \int_y^1V(r;m)\,dr\right)dy<0.
+ \label{eq:cv-first-root-derivative}
+\end{equation}
+The strict sign follows because $h\geq0$ has mass one and the
+exponential is positive. Indeed the explicit bounds also give
+$e^{-2/\Lambda_1}\leq-\partial_mV(1;m)
+\leq e^{8c_p/\Lambda_1}$.
+At $m=0$, direct solution of $V_y=-V^2/\Lambda_1$ gives
+$V(1;0)=v_d/(1+v_d/\Lambda_1)>0$. At $m=c_p$, integration gives
+$V(1;c_p)\leq v_d-c_p<0$. Continuity and strict monotonicity
+therefore give exactly one $m_*\in(0,c_p)$ with $V(1;m_*)=0$.
+This is exactly the source's selected return: by
+\eqref{eq:cv-first-inverse-map} and positivity, it is equivalent
+to $\Omega_1(t_b)=0$.
+
+For this selected trial $V$ is nonincreasing and ends at zero, so
+$0\leq V\leq v_d$. Integration of
+\eqref{eq:cv-first-exact-riccati} now gives the exact identity and bounds
+\begin{equation}
+ m_*=v_d-\frac1{\Lambda_1}\int_0^1V(y;m_*)^2\,dy,
+ \qquad \frac12-\frac1{4\Lambda_1}\leq m_*\leq1.
+ \label{eq:cv-first-root-bounds}
+\end{equation}
+For the lower bound, $v_d-v_d^2/\Lambda_1$ is increasing for
+$v_d\in[1/2,1]$, because its derivative is
+$1-2v_d/\Lambda_1>0$.
+
+For every trial and every steering time,
+\[
+ 0\leq\log\mathcal P(\tau)\leq1+\Lambda_1^{-1}.
+\]
+On the ramp this follows from \eqref{eq:cv-first-ramp}; on the pulse
+it follows from $\mathcal P(1)\geq2$, $\chi\geq1/2$, and
+$\log\chi\leq\log(1+\Lambda_1^{-1})\leq\Lambda_1^{-1}$.
+For the selected trial the pulse logarithmic contribution is
+nonnegative, so the endpoint obeys
+\begin{equation}
+ \log2\leq\log\mathcal P(\tau_b)\leq1+\Lambda_1^{-1},\qquad
+ 2eP_*\leq P_b:=P_1(t_b)\leq e^{2+\Lambda_1^{-1}}P_*.
+ \label{eq:cv-first-gain}
+\end{equation}
+The total duration from entry to return is exactly
+\begin{equation}
+ t_b-t_0=\frac{L+2+\Lambda_1^{-1}}{\nu\sin s}.
+ \label{eq:cv-first-duration}
+\end{equation}
+Throughout the selected stage $P_1$ is nondecreasing,
+$S\leq P_1\leq P_b$, and
+$-(K_1/\nu)P_1\leq\Omega_1\leq0$.
+For every unselected trial the valid bound instead is
+$|\Omega_1|\leq4c_p(K_1/\nu)
+ e^{2+\Lambda_1^{-1}}P_*$; its sign need not stay negative.
+
+Near $t_b$, $h=0$, so $Z=0$ and $\alpha=s$.
+The equation $\mathcal P_{\tau\tau}=0$, together with
+$\mathcal P_\tau(\tau_b)=0$, implies that $\mathcal P$ is constant
+on that whole neighborhood. Thus $\alpha$, $\Theta_1$, and $\Omega_1$
+match their stationary continuations to all orders. The endpoint state is
+\begin{equation}
+ \alpha=s,\quad M_1=R_s,\quad\zeta_1=e_2,\quad
+ w_1=1,\quad\Theta_1=-P_b,\quad\Omega_1=0.
+ \label{eq:cv-first-endpoint}
+\end{equation}
+
+\subsection{Control bounds and exact whole-stage integrals}
+
+For $j=1,2$ define the explicit finite profile quantities
+\[
+ B_j=\Gamma^j\sin s\bigl(\|\eta^{(j)}\|_\infty
+            +c_p\Lambda_1^{j+1}\|h^{(j)}\|_\infty\bigr).
+\]
+From \eqref{eq:cv-first-Z}, $|\partial_t^jZ|\leq B_j$.
+Differentiating the original control, including its denominator, gives
+\begin{align}
+ \dot\alpha&=-\dot Z(1-Z^2)^{-1/2},\\
+ \ddot\alpha&=-\ddot Z(1-Z^2)^{-1/2}
+              -Z\dot Z^2(1-Z^2)^{-3/2},\nonumber\\
+ |\dot\alpha|&\leq\frac4{\sqrt{15}}B_1,\qquad
+ |\ddot\alpha|\leq\frac4{\sqrt{15}}B_2
+                    +\frac{16}{15\sqrt{15}}B_1^2.
+ \label{eq:cv-first-control-bounds}
+\end{align}
+Higher derivatives exist because the displayed smooth composition has
+argument in $[-1/4,1/4]$; no endpoint differentiability is omitted.
+
+For exact coefficient costs use the invertible fixed map
+$Y=(\Theta_1,\nu\Omega_1/K_1)^T$. Its inverse is
+$(Y_1,K_1Y_2/\nu)^T$, and direct differentiation gives
+\[
+ \dot Y=\widehat B Y,\qquad
+ \widehat B=\begin{pmatrix}0&\Gamma\\\nu Z&0\end{pmatrix}.
+\]
+Let $J_\eta=\int_0^1(1-\eta(r))\,dr\in[0,1]$.
+On a hold of physical duration $T_h\geq0$, the following are exact:
+\begin{center}
+\begin{tabular}{c|c|c|c}
+interval&duration&$\int|\widehat B_{12}|\,dt$
+                      &$\int|\widehat B_{21}|\,dt$\\\hline
+growth&$L/\Gamma$&$L$&$L$\\
+transition&$1/\Gamma$&$1$&$1$\\
+steering ramp&$1/\Gamma$&$1$&$J_\eta$\\
+negative pulse&$1/(\Lambda_1\Gamma)$&$1/\Lambda_1$&$m_*$\\
+holding&$T_h$&$\Gamma T_h$&$0$
+\end{tabular}
+\end{center}
+For example, on the pulse substitution
+$y=\Lambda_1\Gamma(t-t_1-\Gamma^{-1})$ gives
+$\int\nu|Z|\,dt=m_*\int_0^1h=m_*$.
+Thus the two transition-and-steering costs are exactly
+$2+\Lambda_1^{-1}$ and $1+J_\eta+m_*$;
+their sum is at most $4+c_p+\Lambda_1^{-1}$.
+
+The activation and amplitude integrals needed by force estimates can
+also be retained without an asymptotic replacement. Set
+\[
+ J_a=\int_0^1\eta'(r)e^r\,dr\in[1,e],\qquad
+ J_g=\int_0^1\eta(r)e^r\,dr=e-J_a.
+\]
+For the selected stage including the hold, direct change of variable
+and integration by parts give
+\begin{align}
+ \int_{t_0}^{t_b}|\dot w_1\Theta_1|\,dt&=S J_a,\qquad
+ \int_{t_0}^{t_b}|\dot w_1\Omega_1|\,dt=\frac{K_1}{\nu}S J_a,
+ \label{eq:cv-first-activation-cost}\\
+ I_P:=\int_{t_0}^{t_b+T_h}w_1P_1\,dt
+ &=\frac S\Gamma(J_g+e^{L+1}-e)+P_bT_h\nonumber\\
+ &\quad+\frac{eP_*}{\Gamma}\int_0^{1+\Lambda_1^{-1}}
+                    \mathcal P(\tau;m_*)\,d\tau,
+ \label{eq:cv-first-P-cost}\\
+ I_\Omega:=\int_{t_0}^{t_b+T_h}w_1|\Omega_1|\,dt
+ &=\frac{P_b-SJ_a}{a_1}.
+ \label{eq:cv-first-Omega-cost}
+\end{align}
+For the last identity, $P_1'=-a_1\Omega_1=a_1|\Omega_1|$,
+$w_1(t_0)=0$, and $w_1(t_b+T_h)=1$, hence
+$\int w_1P_1'=P_b-\int\dot w_1P_1=P_b-SJ_a$.
+In particular
+\[
+ I_P\leq\frac S\Gamma(J_g+e^{L+1}-e)
+ +\frac{eP_*}{\Gamma}(1+\Lambda_1^{-1})e^{1+\Lambda_1^{-1}}
+ +P_bT_h.
+\]
+These are finite specified integrals of the prescribed profiles and
+the uniquely selected exact linear solution.
+
+\subsection{The evolving background inherited by layer two}
+
+On the affine part of the first wave, the complete background for the
+next layer is
+\begin{equation}
+ G_{<2}=-A_0R_\alpha e_2+w_1K_1\Theta_1\zeta_1,
+ \qquad
+ D_{<2}=\dot\alpha J+w_1\Omega_1J\zeta_1\otimes\zeta_1.
+ \label{eq:cv-first-inherited}
+\end{equation}
+These are source (3.3) with $A_1=-K_1\Theta_1|\zeta_1|$
+and the physical units retained. Their complete derivatives are
+\begin{align}
+ \dot G_{<2}&=\dot\alpha JG_{<2}
+      +(K_1\dot w_1\Theta_1+w_1A_0\sin s\,\Omega_1)\zeta_1,
+ \label{eq:cv-first-G-derivative}\\
+ \dot D_{<2}&=\ddot\alpha J
+  +(\dot w_1\Omega_1+w_1K_1\zeta_{1,1}\Theta_1)
+                            J\zeta_1\otimes\zeta_1\nonumber\\
+ &\hspace{5mm}+w_1\Omega_1\dot\alpha
+       (-\zeta_1\otimes\zeta_1+J\zeta_1\otimes J\zeta_1).
+ \label{eq:cv-first-D-derivative}
+\end{align}
+Indeed $\dot\zeta_1=\dot\alpha J\zeta_1$,
+$J\dot\zeta_1=-\dot\alpha\zeta_1$, and the product rule gives
+each displayed term. In particular, using
+$J\zeta_1\cdot G_{<2}=-A_0\sin s$ gives the exact identity
+\begin{equation}
+ \dot G_{<2}+D_{<2}^TG_{<2}=K_1\dot w_1\Theta_1\zeta_1.
+ \label{eq:cv-first-affine-scalar-residual}
+\end{equation}
+Thus the inherited gradient satisfies its true affine transport
+equation after activation, even while the first stage rotates it.
+The affine vorticity is $2\dot\alpha+w_1\Omega_1$ and its scalar
+source is $G_{<2,1}=A_0\sin\alpha+w_1K_1\Theta_1\zeta_{1,1}$;
+therefore its exact vorticity residual is
+\begin{equation}
+ (2\dot\alpha+w_1\Omega_1)'-G_{<2,1}
+       =2\ddot\alpha-A_0\sin\alpha+\dot w_1\Omega_1.
+ \label{eq:cv-first-affine-vorticity-residual}
+\end{equation}
+
+At the selected endpoint define $A_1=K_1P_b>0$. Then
+\begin{equation}
+ G_{<2}(t_b)=(A_0\sin s,-A_0\cos s-A_1),\quad D_{<2}(t_b)=0,
+ \quad\sigma_1^2=|G_{<2}(t_b)|
+   =\sqrt{A_0^2+A_1^2+2A_0A_1\cos s}.
+ \label{eq:cv-first-exact-sigma}
+\end{equation}
+Consequently
+\[
+ 2e A_0\lambda_1^{1/8}\leq A_1
+ \leq e^{2+\Lambda_1^{-1}}A_0\lambda_1^{1/8},\qquad
+ A_1+A_0\cos s\leq\sigma_1^2\leq A_1+A_0.
+\]
+The lower norm bound is its positive vertical component in absolute
+value; the upper bound is the triangle inequality, which also follows
+by squaring the displayed expression. No horizontal component of the
+parent gradient has been discarded.
+
+On the first hold the actual feedback is $F_1=0$.
+The endpoint state \eqref{eq:cv-first-endpoint} is stationary under
+the original equations: $b_1=K_1\zeta_{1,1}=0$ gives
+$\dot\Omega_1=0$, then $\dot\Theta_1=a_1\Omega_1=0$,
+and $\dot\alpha=0$ gives $\dot\zeta_1=0$.
+Thus \eqref{eq:cv-first-exact-sigma} remains the actual inherited
+background throughout this hold. For an arbitrary perturbation of
+the weighted amplitude pair its propagator over length $T_h$ is
+exactly
+\begin{equation}
+ \exp\!\left(T_h\begin{pmatrix}0&\Gamma\\0&0\end{pmatrix}\right)
+ =\begin{pmatrix}1&\Gamma T_h\\0&1\end{pmatrix}.
+ \label{eq:cv-first-hold-propagator}
+\end{equation}
+This follows by squaring the matrix and obtaining zero, and retains
+the nonzero first holding coefficient cost.
+
+For clarity one can construct the next growth interval itself rather
+than prescribing an unspecified holding time. Retain
+$\lambda_2=\lambda_1^{Q_2}$ with $Q_2\geq202$, an integer $k_2\geq0$,
+$L_2=(k_2+41/8)\log\lambda_2$, and the source's
+\[
+ s_2=L_2\nu/\sigma_1,\qquad K_2=\mu\lambda_2,
+ \qquad\Gamma_2=\sigma_1\sin s_2.
+\]
+An explicit sufficient finite choice ensuring $L_2\geq2$ and
+$0<s_2\leq1/8$ is
+$\log\lambda_1\geq4096(k_2+41/8)Q_2$.
+To prove this, put $B=(k_2+41/8)Q_2$ and $x=\log\lambda_1$.
+The gain implies $\sigma_1\geq\sqrt{2e}\nu e^{x/16}$;
+the exponential series gives $e^{x/16}\geq x^2/512$.
+Hence $s_2\leq512B/(\sqrt{2e}x)\leq1/8$.
+Also $L_2=Bx\geq4096B^2>2$.
+
+During the second growth, $\alpha=s$, $\Omega_1=0$, and
+$D_{<2}=0$, so $M_2=I$, $\zeta_2=e(s_2)$, and the original
+coefficient formulas yield exactly
+\begin{equation}
+ a_2=\frac{A_1\sin s_2+A_0\sin(s+s_2)}{K_2},\quad
+ b_2=K_2\sin s_2,\quad
+ \gamma_2=\sqrt{[A_1\sin s_2+A_0\sin(s+s_2)]\sin s_2}>0.
+ \label{eq:cv-first-second-growth}
+\end{equation}
+Both signs are positive because $0<s+s_2\leq1/4$.
+For its actual seed $S_2=(A_0/\mu)\lambda_2^{-k_2-6}$ and
+entry vorticity $-\sqrt{b_2/a_2}\,S_2$, the exact solution is
+$P_2=S_2e^{\gamma_2(t-t_b)}$,
+$\Omega_2=-\sqrt{b_2/a_2}\,P_2$.
+Substitution verifies both equations; the first threshold time is
+$t_{a,2}=t_b+L_2/\gamma_2$.
+Its activation is the source's $\eta(\Gamma_2(t-t_b))$.
+To see that activation completes before threshold, note
+\begin{equation}
+ R:=\frac{\gamma_2^2}{\Gamma_2^2}
+  =\frac{A_1+A_0\cos s+A_0\sin s\cot s_2}{\sigma_1^2},
+ \qquad
+ \cos s\leq R\leq1+\frac{\nu\sin s}{L_2\sigma_1}.
+ \label{eq:cv-first-rate-ratio}
+\end{equation}
+For the lower bound, discard the positive cotangent term, use
+$\sigma_1^2\leq A_1+A_0$, and then
+$(A_1+A_0\cos s)/(A_1+A_0)\geq\cos s$.
+For the upper bound use $A_1+A_0\cos s\leq\sigma_1^2$ and
+$\cot s_2\leq1/s_2$, the latter following from
+$(\sin r-r\cos r)'=r\sin r\geq0$.
+Since $\sigma_1\geq\nu$ and $L_2\geq2$,
+$R\leq1+\sin s/2<2$, and
+$\Gamma_2L_2/\gamma_2=L_2/\sqrt R>1$.
+The exact first holding integral therefore is
+\begin{equation}
+ H_1=\Gamma\frac{L_2}{\gamma_2}
+     =\sin s\,\frac{s_2}{\sin s_2}\frac1{\sqrt R},\quad
+ \frac{\sin s}{\sqrt{1+\nu\sin s/(L_2\sigma_1)}}
+ \leq H_1\leq
+ \frac{\sin s}{\sqrt{\cos s}(1-s_2^2/6)}.
+ \label{eq:cv-first-exact-holding-cost}
+\end{equation}
+Here $\sin r\leq r$ follows by integrating $\cos r\leq1$;
+$\sin r\geq r-r^3/6$ follows by integrating
+$\cos r\geq1-r^2/2$, itself obtained from
+$1-\cos r=\int_0^r\sin u\,du\leq r^2/2$.
+Thus no small-angle replacement is used in the bounds.
+The second transition also has $F_2=0$, because its only shear
+coefficient is $\Omega_1=0$; it prolongs the first pair's stationarity
+by exactly $\Gamma_2^{-1}$. The source counts that transition in
+the first layer's tail, not in $H_1$.
+
+\subsection{Exact uncut forced fields and their retained diffusion cost}
+
+This subsection gives an explicit PDE realization of the just-proved
+finite stage on $\mathbb R^2$. Its fields have the spatial domain
+$\mathbb R^2$ and need not decay; compact spatial localization is a
+separate construction. Let $F$ be any smooth odd $2\pi$-periodic
+function. Define $Q_0(r)=\int_0^rF(v)\,dv$ and
+$\mathcal Q(r)=Q_0(r)-(2\pi)^{-1}\int_{-\pi}^{\pi}Q_0(v)\,dv$.
+Oddness gives zero period integral for $F$, so $Q_0$ is periodic;
+substitution $v=-u$ gives $Q_0(-r)=Q_0(r)$. Thus $\mathcal Q$ is
+even and mean-zero, and $\mathcal Q'=F$.
+Put $q(x,t)=K_1\zeta_1(t)\cdot x$ and
+\begin{align}
+ \theta&=G_{<1}\cdot x+w_1\Theta_1F(q),\nonumber\\
+ u&=\dot\alpha Jx+\frac{w_1\Omega_1}{K_1}J\zeta_1F(q),
+ \label{eq:cv-first-uncut-fields}\\
+ p&=\frac{\dot\alpha^2}2|x|^2
+      +\frac12x_2(G_{<1}\cdot x)
+      +\left(\frac{2w_1\Omega_1\dot\alpha}{K_1^2}
+             +\frac{w_1\Theta_1\zeta_{1,2}}{K_1}\right)\mathcal Q(q).
+ \label{eq:cv-first-uncut-pressure}
+\end{align}
+An additive function of time can be subtracted if $p(0,t)=0$ is desired.
+The exact inviscid forces are
+\begin{equation}
+ f_\theta^0=\dot w_1\Theta_1F(q),\qquad
+ f_u^0=\left(\ddot\alpha-\frac{A_0}2\sin\alpha\right)Jx
+                   +\frac{\dot w_1\Omega_1}{K_1}J\zeta_1F(q).
+ \label{eq:cv-first-uncut-forces}
+\end{equation}
+We verify every component. The background derivative satisfies
+$\dot G_{<1}=\dot\alpha JG_{<1}$, hence its scalar transport
+residual vanishes. The phase satisfies
+$(\partial_t+\dot\alpha Jx\cdot\nabla)q=0$.
+The wave velocity has scalar product zero with $\nabla q$, so it
+advects neither its own temperature nor its own velocity profile.
+Its advection of the background temperature equals
+$(w_1\Omega_1/K_1)(J\zeta_1\cdot G_{<1})F(q)$,
+which cancels $w_1\dot\Theta_1F(q)$ by
+\eqref{eq:cv-first-pair}. The remaining scalar residual is exactly
+$\dot w_1\Theta_1F(q)$.
+
+For momentum, write $C=w_1\Omega_1/K_1$ and
+$v=CJ\zeta_1F(q)$. Differentiating $v$ and adding its transport
+of $\dot\alpha Jx$ gives, after subtracting the wave buoyancy,
+\[
+ \left[\frac{\dot w_1\Omega_1}{K_1}J\zeta_1
+   +\frac{w_1\dot\Omega_1}{K_1}J\zeta_1
+   -2C\dot\alpha\zeta_1-w_1\Theta_1e_2\right]F(q).
+\]
+The last three vector terms have zero scalar product with $J\zeta_1$:
+this is $w_1\dot\Omega_1/K_1-w_1\Theta_1\zeta_{1,1}=0$.
+Their scalar product with $\zeta_1$ is
+$-2C\dot\alpha-w_1\Theta_1\zeta_{1,2}$.
+Since $(\zeta_1,J\zeta_1)$ is an orthonormal basis, the wave pressure
+in \eqref{eq:cv-first-uncut-pressure} cancels precisely these three
+terms, leaving the displayed activation force. The base momentum
+residual before pressure is
+$(\ddot\alpha J-\dot\alpha^2I-e_2\otimes G_{<1})x$.
+The gradient of the first two pressure terms removes its symmetric
+part. Its antisymmetric part is
+$(\ddot\alpha-G_{<1,1}/2)Jx
+=(\ddot\alpha-A_0\sin\alpha/2)Jx$, as claimed.
+Finally $\operatorname{div}u=0$ since $\operatorname{tr}J=0$
+and $J\zeta_1\cdot\zeta_1=0$.
+
+For the retained-viscosity equations
+\[
+ \partial_t\theta+u\cdot\nabla\theta
+     =\kappa_{\rm phys}\Delta\theta+f_\theta,\qquad
+ \partial_tu+(u\cdot\nabla)u+\nabla p
+     =\nu_{\rm phys}\Delta u+\theta e_2+f_u,
+ \qquad\nabla\cdot u=0,
+\]
+the very same state and controls solve them with the explicitly
+specified compensating forces
+\begin{align}
+ f_\theta&=f_\theta^0
+ -\kappa_{\rm phys}w_1\Theta_1K_1^2F''(q),\nonumber\\
+ f_u&=f_u^0-\nu_{\rm phys}w_1\Omega_1K_1J\zeta_1F''(q).
+ \label{eq:cv-first-diffusion-compensation}
+\end{align}
+Indeed the affine Laplacians vanish, while two spatial derivatives
+of the profile multiply by $K_1^2|\zeta_1|^2=K_1^2$.
+This proves the asserted equations by substitution, without changing
+either $\nu$ or $\nu_{\rm phys}$ and without assuming damping leaves
+the parent coefficients unchanged. The exact cumulative $L^\infty_x$
+norms of the two added forces through the entire stage and hold are
+\begin{equation}
+ \kappa_{\rm phys}K_1^2\|F''\|_\infty I_P,
+ \qquad
+ \nu_{\rm phys}K_1\|F''\|_\infty I_\Omega.
+ \label{eq:cv-first-exact-diffusion-cost}
+\end{equation}
+Equality holds because $x\mapsto K_1\zeta_1\cdot x$ is surjective
+onto $\mathbb R$ and $|J\zeta_1|=1$; this verifies the norm statement
+as well as an upper bound. The scalar holding contribution is exactly
+$\kappa_{\rm phys}K_1^2\|F''\|_\infty P_bT_h$; the velocity holding
+contribution is zero. These finite costs are not asserted to be
+summable over the source's infinite frequency sequence.
+
+The construction proves a finite controlled stage, its actual evolving
+affine background, its return, and its next growth holding interval.
+It does not establish an infinite viscous cascade or a smooth
+terminal-time viscous force. In particular, simply replacing the
+first temperature by an exponentially damped amplitude during holding
+would replace $A_1$ in \eqref{eq:cv-first-exact-sigma} by a
+time-dependent quantity and would change both coefficients and the
+rate in \eqref{eq:cv-first-second-growth}. The compensating forces
+in \eqref{eq:cv-first-diffusion-compensation} give an exact specified
+relation that retains the original coupled finite trajectory; their
+costs have been retained explicitly rather than claimed negligible.

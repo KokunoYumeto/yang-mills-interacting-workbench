@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "check_count": 33,
+  "method": "Exact independent profile/envelope jets, exact matrix identities, and an independent time-dependent SL(2) polynomial transport check.",
+  "scope": "Algebraic audit of changed damped trajectories with compact material envelopes; analytic existence and support estimates are proved in the companion TeX.",
+  "assumptions": [
+    "J=[[0,-1],[1,0]]",
+    "trace(D)=0",
+    "k'=-D^T k",
+    "material derivative of phase and envelope is zero",
+    "P'=F",
+    "rho=k dot k is nonzero",
+    "Q=w Omega/rho",
+    "T=w Theta",
+    "equal physical diffusivities d",
+    "Theta'=-(Jk dot G)Omega/rho-d rho Theta",
+    "Omega'=kx Theta-d rho Omega"
+  ],
+  "script_sha256": "bd22e8b1fbf63c1ee6026c77877d68e23dcb80348cb194174909462364b70afc",
+  "sympy_version": "1.13.1",
+  "checks": [
+    {
+      "name": "velocity_from_original_primitive",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "increment_is_exactly_divergence_free",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "all_scalar_laplacian_terms",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "all_primitive_laplacian_terms",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "all_six_velocity_laplacian_groups",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "laplacian_commutes_with_rotated_gradient",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "scalar_self_advection_with_envelope",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "trace_free_transport_matrix_identity",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_velocity_derivative_sign",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_temperature_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "damped_stream_amplitude_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_scalar_parent_coupling_cancellation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "complete_damped_scalar_residual",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "complete_damped_vector_residual",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "uncut_sine_scalar_damping_cancellation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "uncut_sine_vector_damping_cancellation",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "affine_profile_cell_retains_scalar_force",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "affine_profile_cell_retains_vector_force",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_phase_metric",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "material_mixed_scalar_term",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "material_envelope_laplacian",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_SL2_matrix_determinant",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_affine_divergence_free",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_original_material_coordinates",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_transported_phase",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_transported_nonradial_envelope",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_time_dependent_velocity_transport",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "two_increment_momentum_telescoping",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "two_increment_temperature_telescoping",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_mixed_jet_commutator_axis_1",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "full_mixed_jet_commutator_axis_2",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "independent_mixed_pullback_time_1_space_1",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "independent_mixed_pullback_time_2_space_1",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    }
+  ]
+}

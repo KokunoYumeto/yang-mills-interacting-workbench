@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "started_at": "2026-09-30T03:19:35.149369+00:00",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "flint": "0.9.0",
+  "mpmath": "1.3.0",
+  "sympy": "1.13.1",
+  "source_commit": "f41c6273497b88e58f345b9dd65735db0afa9237",
+  "collision_adaptation": {
+    "source_sha256": "ba8e616d77097a5a4c4729adb8fcb9dc4c5e367f7ea613c04e53ced5128e1db3",
+    "adapted_sha256": "59cdf644d54fc582e49a2ac529e87de25af9176c1eaf91423fc31b44d7d520a1",
+    "change": "Replace machine-angle endpoints by enclosing Arb pi endpoints on all 256 Cauchy-circle arcs."
+  },
+  "steps": [
+    {
+      "step": "collision",
+      "arguments": [
+        "certify_collision_exact_circle.py"
+      ],
+      "source_sha256": "59cdf644d54fc582e49a2ac529e87de25af9176c1eaf91423fc31b44d7d520a1",
+      "exit_code": 0,
+      "seconds": 0.13742570008616894,
+      "output_file": "collision_OUTPUT.txt",
+      "output_sha256": "f02936f0b28d100f941010a610eb094488272540411a44ca27e3dee934cf907e",
+      "required_marker": "CERTIFIED:",
+      "passed": true
+    },
+    {
+      "step": "radius",
+      "arguments": [
+        "certify_hydro_radius_rerun_dump.py"
+      ],
+      "source_sha256": "be5848e1f4c8a3320d4fa825049d8bf50c043eba9b52fe768c9e3b0670c00091",
+      "exit_code": 0,
+      "seconds": 116.06894989998545,
+      "output_file": "radius_OUTPUT.txt",
+      "output_sha256": "1a8296c78d38b44ab23ea20c70ff2a046829615e01582ac98510a6a3393fd098",
+      "required_marker": "CERTIFIED: total",
+      "passed": true
+    },
+    {
+      "step": "exact_cell_geometry",
+      "arguments": [
+        "ref_cells_audit.py"
+      ],
+      "source_sha256": "0d3a16a183197d5dae9a3c0574265fa50f988a7f1f32b46b621903d6595530dd",
+      "exit_code": 0,
+      "seconds": 42.200647499994375,
+      "output_file": "exact_cell_geometry_OUTPUT.txt",
+      "output_sha256": "ff7914b1c57451947298cf5aa4138fce2abdb57111109ce7de5703412ef45cad",
+      "required_marker": "9 checks, 9 PASS, 0 FAIL",
+      "passed": true
+    },
+    {
+      "step": "sign",
+      "arguments": [
+        "ns51_sign_check.py"
+      ],
+      "source_sha256": "0e1790265a023b84cc2748a9a20d476f6fe95c141b27c5a54ce96cc80e59aa65",
+      "exit_code": 0,
+      "seconds": 0.4062087000347674,
+      "output_file": "sign_OUTPUT.txt",
+      "output_sha256": "773bc2fb5bdd7a8fd491e7ef19d23a25a8eec565a573369ac9849558ae3592fc",
+      "required_marker": "SIGN CERTIFIED",
+      "passed": true
+    },
+    {
+      "step": "rate_algebra",
+      "arguments": [
+        "ns51_rate_lemmas.py"
+      ],
+      "source_sha256": "404d4f3b06e1b41f5a35f7dbf3871e01268e6c9d195f77771a7bad24711a1335",
+      "exit_code": 0,
+      "seconds": 1.4972316999919713,
+      "output_file": "rate_algebra_OUTPUT.txt",
+      "output_sha256": "9559ac8de38eb0f87afbaa9b9064ea93a7989f4afc145406e6edd30245898d6e",
+      "required_marker": "27 checks, 27 PASS, 0 FAIL",
+      "passed": true
+    },
+    {
+      "step": "series60",
+      "arguments": [
+        "hydro_series.py",
+        "60"
+      ],
+      "source_sha256": "4493a4e07c0ad7a43fb9c897ec61dd176e5e4d3f753de29b77b99561581c07b1",
+      "exit_code": 0,
+      "seconds": 0.3339879000559449,
+      "output_file": "series60_OUTPUT.txt",
+      "output_sha256": "6c100124cf4f0bf0a6ecb1aa54ca7be894fc337e100f65eebac8fcbdf6de5559",
+      "required_marker": "G(alpha_h(x),x) = O(x^61) verified exactly",
+      "passed": true
+    }
+  ],
+  "scope": "Collision existence and nondegeneracy with exact circle coverage; radius tiling and fold certificate; exact cell geometry; fold sign; rate algebra; 60 exact rational series coefficients.",
+  "completed_at": "2026-09-30T03:22:15.796657+00:00"
+}

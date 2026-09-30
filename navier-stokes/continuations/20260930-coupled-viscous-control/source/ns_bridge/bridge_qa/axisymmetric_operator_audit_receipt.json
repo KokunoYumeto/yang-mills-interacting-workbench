@@ -1,0 +1,41 @@
+{
+  "schema": "axisymmetric-operator-audit-v1",
+  "all_passed": true,
+  "check_count": 6,
+  "checks": [
+    {
+      "name": "Q product circulation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "M square product",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "circulation residual odd under swirl reflection",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "swirl-rate residual odd under swirl reflection",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "meridional-vorticity residual even",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "square equation even under swirl reflection",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "source_pdf_sha256": "8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81",
+  "bridge_tex_sha256": "28b4582429c88b596187517da08006b35f62ab8a5fbbfe85db19bfc53c5724dd",
+  "scope": "Independent replay of coordinate-product identities and signed involution; no source theorem or singular endpoint is re-proved.",
+  "finding": "Axisymmetric displayed identities and sign reflection pass. The prior meridional check in replay_signed_operator.py was tautological; this replay replaces it with an actual h^2 and force-preserving parity check."
+}

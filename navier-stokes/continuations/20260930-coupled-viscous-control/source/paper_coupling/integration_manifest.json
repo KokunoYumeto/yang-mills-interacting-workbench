@@ -1,0 +1,55 @@
+{
+  "body": "coupled_background_body.tex",
+  "source": "coupled_background.tex",
+  "label_prefix": "pc:",
+  "labels": [
+    "pc:eq:scaling",
+    "pc:eq:scaled-diffusion",
+    "pc:eq:coupled",
+    "pc:eq:feedback",
+    "pc:eq:schedule",
+    "pc:prop:aggregate",
+    "pc:eq:Gdot",
+    "pc:eq:Cdot",
+    "pc:eq:Ddot",
+    "pc:eq:polar",
+    "pc:eq:determinant",
+    "pc:eq:older",
+    "pc:eq:model-coeff",
+    "pc:eq:model",
+    "pc:eq:omega-lower",
+    "pc:eq:actual-diffusion",
+    "pc:eq:damped",
+    "pc:eq:damped-background",
+    "pc:eq:Adrift",
+    "pc:eq:damped-model"
+  ],
+  "packages": [
+    "amsmath",
+    "amssymb",
+    "amsthm",
+    "mathtools",
+    "hyperref"
+  ],
+  "macros": {
+    "R": "\\mathbb R",
+    "AB": "\\mathrm{AB}",
+    "epsv": "\\varepsilon_{\\mathrm v}",
+    "kapth": "\\kappa_{\\mathrm{th}}",
+    "Gcal": "\\mathcal G",
+    "dd": "\\mathrm d"
+  },
+  "operators": {
+    "tr": "tr",
+    "sym": "sym"
+  },
+  "theorem_environments": [
+    "proposition"
+  ],
+  "standard_environments": [
+    "proof"
+  ],
+  "source_sha256": "d9a5eee209a6498ca8628909691c4b1b21270b5631308c138b6b53284f8bf5a4",
+  "body_sha256": "5c57afbe39fa6b857c2c1629353b0d065d2caf9ac836b58fb6639d31bb008881",
+  "mathematical_changes": "None; document wrapper removed and labels/references prefixed pc:."
+}

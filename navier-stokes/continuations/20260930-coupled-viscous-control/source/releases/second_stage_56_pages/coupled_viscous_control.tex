@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,longtable}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={The coupled Boussinesq control system with physical viscosity retained},pdfauthor={}}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newcommand{\R}{\mathbb R}
+\newcommand{\AB}{\mathrm{AB}}
+\newcommand{\epsv}{\varepsilon_{\mathrm v}}
+\newcommand{\kapth}{\kappa_{\mathrm{th}}}
+\newcommand{\Gcal}{\mathcal G}
+\newcommand{\dd}{\mathrm d}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\sym}{sym}
+\input{paper_coupling/profile_diffusion/profile_diffusion_preamble.tex}
+\allowdisplaybreaks
+\emergencystretch=2em
+\title{The coupled Boussinesq control system with physical viscosity retained}
+\author{}
+\date{8 September 2026}
+\begin{document}
+\maketitle
+\noindent This standalone calculation reconstructs the released
+Alp\"oge--Buckmaster controls, proves the complete first controlled stage
+in the original physical coordinates, and gives compact fields and
+explicit smooth compactly supported forces realizing it with arbitrary
+prescribed thermal diffusivity and physical viscosity. It then proves
+a modified two-layer stage with an explicit positive equal-diffusion
+range, both original temperature thresholds, the changing parent,
+the second selected vorticity return, and a finite hold, together
+with all original-profile compact fields and forces. It also derives
+the evolving parent feedback, exact profile diffusion, and the
+pressure-independent obstruction to retaining the released infinite
+state with a smooth viscous force. A new infinite viscous singularity
+construction is not claimed. Original $A_0,\lambda_0$, spatial scaling
+$\mu$, and the paper's time-scaling $\nu=\sqrt{A_0}$ are retained.
+The appendix sections use explicitly declared alternative notation for
+physical viscosity to avoid confusing it with this $\nu$.
+
+\medskip
+\noindent Primary source: Levent Alp\"oge and Tristan Buckmaster,
+\emph{Blowup for the Boussinesq equations with smooth forcing},
+76-page released PDF,
+\url{https://cims.nyu.edu/~tristanb/boussinesq.pdf}.
+The exact downloaded edition is identified by the SHA-256 in
+\texttt{checks/replay\_exact.json}. Printed-page and equation
+citations accompany the calculations. Source infinite existence
+results are attributed as such; the analytic finite-stage and
+operator proofs are written here in full.
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage
+\input{physical_realization.tex}
+\input{finite_stage/first_stage_section.tex}
+\input{finite_stage/evolving_diffusive_parent_section.tex}
+\input{finite_stage/actual_viscous_entry.tex}
+\input{second_return/second_return_body.tex}
+\input{modified_spatial/modified_spatial_body.tex}
+\input{coupled_feedback.tex}
+\input{infinite_status.tex}
+\appendix
+\clearpage
+\section{Full source controls and aggregate background identities}
+\input{paper_coupling/coupled_background_body.tex}
+\clearpage
+\section{Exact periodic profile evolution and the affine region}
+\begingroup
+\let\section\subsection
+\input{paper_coupling/profile_diffusion/profile_diffusion_body.tex}
+\endgroup
+\end{document}

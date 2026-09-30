@@ -1,0 +1,190 @@
+\section{Exact coupled feedback and the scope of common damping}
+\label{sec:feedback}
+Retain the source layer frequencies $\lambda_j$, and write
+$K_j=\mu\lambda_j$ for physical frequencies. Let $\Theta_j,
+\Omega_j$ denote physical amplitudes. For each activated layer
+$j$, let $\zeta_j\ne0$, $r_j=|\zeta_j|$, $e_j=\zeta_j/r_j$,
+$S_j=Je_j\otimes e_j$, and $A_j=-K_jr_j\Theta_j$.
+The exact physical counterpart of source (3.3)--(3.5) is
+\begin{align}
+ G_{<q}&=-A_0e_0+\sum_{j<q}w_jK_j\Theta_j\zeta_j,
+ &D_{<q}&=\dot\alpha J+\sum_{j<q}w_j\Omega_jS_j,\notag\\
+ \dot M_q&=D_{<q}M_q,\quad M_q(t_q^{\rm in})=I,
+ &\zeta_q&=M_q^{-T}p_q,\notag\\
+ \dot\zeta_q&=-D_{<q}^T\zeta_q,
+ &\dot\Theta_q&=-\frac{J\zeta_q\cdot G_{<q}}{K_qr_q^2}\Omega_q,
+ \quad\dot\Omega_q=K_q\zeta_{q,1}\Theta_q.
+ \label{eq:physicalcoupled}
+\end{align}
+Each sum begins at $j=1$, and contains finitely many terms at
+every finite preterminal time. The rotating base coefficient
+is the original $A_0$, not a reset unit value. The physical
+growth-scale definition is $\sigma_q^2=|G_{<q+1}(t_q^b)|$,
+so $\sigma_q=\nu\widetilde\sigma_q$.
+
+For $\zeta_{j,2}\ne0$ define
+\begin{equation}
+ \mathcal F_j=-\frac{\sum_{i<j}w_i\Omega_i e_{i,1}
+ (Je_i\cdot\zeta_j)}{\zeta_{j,2}},\qquad \mathcal F_0=0.
+ \label{eq:physicalfeedback}
+\end{equation}
+Transposing $S_i$ gives
+$S_i^T\zeta_j=e_i(Je_i\cdot\zeta_j)$, and the first
+component of $-\dot\alpha J^T\zeta_j$ is
+$-\dot\alpha\zeta_{j,2}$. Hence
+\begin{equation}
+ \dot\zeta_{j,1}=(\mathcal F_j-\dot\alpha)\zeta_{j,2}.
+ \label{eq:controlledcomponent}
+\end{equation}
+It follows by direct differentiation that
+$\dot\alpha=\mathcal F_j-\dot Z/\zeta_{j,2}$ gives
+$\dot\zeta_{j,1}=\dot Z$; equality of initial values gives
+$\zeta_{j,1}=Z$ on its entire interval of definition.
+This proves the control map exactly, including its denominator
+and the laboratory component that drives buoyancy.
+
+There is no omitted parent evolution in \eqref{eq:physicalcoupled}.
+For example, differentiation of the definitions gives
+\begin{align}
+ \dot G_{<q}={}&-A_0\dot\alpha Je_0+
+ \sum_{j<q}K_j\{(\dot w_j\Theta_j+w_j\dot\Theta_j)\zeta_j
+ -w_j\Theta_jD_{<j}^T\zeta_j\},\label{eq:Gprime}\\
+ \dot D_{<q}={}&\ddot\alpha J+
+ \sum_{j<q}\{(\dot w_j\Omega_j+w_j\dot\Omega_j)S_j
+ +w_j\Omega_j\dot S_j\},\label{eq:Dprime}\\
+ \dot S_j={}&-\frac{JD_{<j}^T\zeta_j\otimes\zeta_j
+ +J\zeta_j\otimes D_{<j}^T\zeta_j}{r_j^2}
+ +\frac{2\zeta_j\cdot D_{<j}^T\zeta_j}{r_j^2}S_j.
+ \label{eq:Sprime}
+\end{align}
+To verify the last line, use $S_j=J\zeta_j\otimes\zeta_j/r_j^2$,
+$\dot\zeta_j=-D_{<j}^T\zeta_j$, and
+$(r_j^2)'=-2\zeta_j\cdot D_{<j}^T\zeta_j$. These three
+identities give exactly the three displayed terms by the quotient
+rule. Equations \eqref{eq:Gprime}--\eqref{eq:Sprime}, together
+with the amplitude rows, are exact equations for both inherited
+backgrounds, including activation and the common angular control.
+
+\subsection{Damped amplitude equations as an exact controlled realization}
+For a sine profile on an affine background, retaining physical
+diffusion gives the amplitude rows
+\begin{align}
+ \dot\Theta_j&=-\kappa K_j^2r_j^2\Theta_j
+ -\frac{J\zeta_j\cdot G_{<j}}{K_jr_j^2}\Omega_j+c_{\theta,j},\notag\\
+ \dot\Omega_j&=-\varepsilon K_j^2r_j^2\Omega_j
+ +K_j\zeta_{j,1}\Theta_j+c_{\omega,j}.
+ \label{eq:dampedjet}
+\end{align}
+For an actual finite family these equations are coupled to the
+phase rows, $D,G$, and the control; the symbols $c_{\theta,j}$ and
+$c_{\omega,j}$ here explicitly record added amplitude forcing.
+Inserting them in \eqref{eq:Gprime}--\eqref{eq:Dprime} produces
+the exact diffusion contributions
+\begin{align}
+ (\dot G_{<q})_{\rm amplitude\ diffusion}
+ &=-\kappa\sum_{j<q}w_jK_j^3r_j^2\Theta_j\zeta_j,\notag\\
+ (\dot D_{<q})_{\rm amplitude\ diffusion}
+ &=-\varepsilon\sum_{j<q}w_jK_j^2r_j^2\Omega_jS_j,
+ \label{eq:parentdiffusion}
+\end{align}
+and additional terms $\sum w_jK_jc_{\theta,j}\zeta_j$ and
+$\sum w_jc_{\omega,j}S_j$, respectively. The phase geometry
+and feedback then use those changing backgrounds, rather than
+their inviscid values.
+
+For the released general $F$, \eqref{eq:dampedjet} has a different
+precise meaning: after substitution into the exact uncut scalar
+and vorticity residuals, the wave forces are
+\begin{align}
+ R_{\theta,j}&=c_{\theta,j}F-
+ \kappa K_j^2r_j^2\Theta_j(F+F''),\notag\\
+ R_{\omega,j}&=c_{\omega,j}F'-
+ \varepsilon K_j^2r_j^2\Omega_j(F'+F''').
+ \label{eq:dampedprofileforce}
+\end{align}
+These formulas follow because
+$\Delta[\Theta_jF(K_j\zeta_j\cdot x)]
+=K_j^2r_j^2\Theta_jF''$ and
+$\Delta[\Omega_jF'(K_j\zeta_j\cdot x)]
+=K_j^2r_j^2\Omega_jF'''$. On an affine core they are
+$c_{\theta,j}s-\kappa K_j^2r_j^2\Theta_js$ and
+$c_{\omega,j}-\varepsilon K_j^2r_j^2\Omega_j$.
+Thus damping these amplitudes for this profile requires force
+\emph{inside} the affine core. Taking
+$c_{\theta,j}=\kappa K_j^2r_j^2\Theta_j$ and
+$c_{\omega,j}=\varepsilon K_j^2r_j^2\Omega_j$ restores exactly
+the original coupled amplitude rows and leaves instead
+$-\kappa K_j^2r_j^2\Theta_jF''$ and
+$-\varepsilon K_j^2r_j^2\Omega_jF'''$.
+These vanish in the core and are precisely the compensation used
+in \eqref{eq:exactviscforce}--\eqref{eq:exactviscu}, with all
+cutoff terms additionally retained there.
+
+\subsection{The exact defect of multiplying all old amplitudes by damping}
+To quantify a proposed map, let a finite inviscid coupled trajectory
+be decorated with $E$, and suppose for this calculation that
+$\kappa=\varepsilon=\delta>0$. Keep its phases and angle and put
+\[
+ d_j(t)=\exp\left[-\delta K_j^2
+ \int_{t_j^{\rm in}}^t r_j(s)^2\,ds\right],\qquad
+ \Theta_j^d=d_j\Theta_j^E,\quad\Omega_j^d=d_j\Omega_j^E.
+\]
+The backgrounds computed from these candidate fields differ by
+\begin{align}
+ \Delta G_{<q}&=\sum_{j<q}w_jK_j(d_j-1)\Theta_j^E\zeta_j,
+ &\Delta D_{<q}&=\sum_{j<q}w_j(d_j-1)\Omega_j^ES_j.
+ \label{eq:dampingdefectbackground}
+\end{align}
+Differentiating the candidate fields and using the inviscid
+equations gives the exact defects
+\begin{align}
+ \dot\zeta_q+(D^d_{<q})^T\zeta_q
+ &=\Delta D_{<q}^T\zeta_q,\label{eq:defectphase}\\
+ \dot\Theta_q^d+\delta K_q^2r_q^2\Theta_q^d
+ +\frac{J\zeta_q\cdot G^d_{<q}}{K_qr_q^2}\Omega_q^d
+ &=\frac{J\zeta_q\cdot\Delta G_{<q}}{K_qr_q^2}\Omega_q^d,
+ \label{eq:defecttheta}\\
+ \dot\Omega_q^d+\delta K_q^2r_q^2\Omega_q^d
+ -K_q\zeta_{q,1}\Theta_q^d&=0.\label{eq:defectomega}
+\end{align}
+For instance the derivative of $d_q$ cancels the diagonal
+diffusion term, leaving the difference of the two temperature
+couplings; this is precisely \eqref{eq:defecttheta}, with its
+positive sign. Also the feedback computed at these same phases
+has the exact difference
+\begin{equation}
+ \mathcal F_j^d-\mathcal F_j^E
+ =-\frac{\sum_{i<j}w_i(d_i-1)\Omega_i^Ee_{i,1}
+ (Je_i\cdot\zeta_j)}{\zeta_{j,2}}.
+ \label{eq:feedbackdifference}
+\end{equation}
+Changing $\dot\alpha$ by this expression cancels the first
+component of \eqref{eq:defectphase} for that controlled index,
+as follows from \eqref{eq:controlledcomponent}; it does not in
+general cancel its second component or the equations for other
+phases. Equations \eqref{eq:defectphase}--\eqref{eq:feedbackdifference}
+are an exact relation between the two candidate systems, rather
+than an assertion that the systems are unrelated.
+
+The defects are nonzero even in a particularly transparent
+actual holding geometry. After the first stage,
+$\zeta_1=e_2$, $\Omega_1=0$, and $\Theta_1<0$. At the start
+of the next growth interval $\zeta_2=e(s_2)$, $s_2>0$.
+For the damping candidate with $d_1<1$,
+\[
+ J\zeta_2\cdot\Delta G_{<2}
+ =(d_1-1)K_1\Theta_1\sin s_2\ne0.
+\]
+All factors on the right are nonzero with the indicated signs.
+Thus even when the old shear vanishes exactly on a hold, its
+decaying temperature changes the next layer's amplification
+coefficient. The common scalar damping identity for a fixed
+prescribed $D,G$ has not proved a conjugacy of this coupled system.
+
+For the compact finite stage of Section~\ref{sec:physical}, the
+stronger exact forced relation is available: retain the original
+coupled fields and add the explicitly calculated Laplacian forces.
+It preserves both backgrounds and all controls, and quantifies the
+entire cost. The next section records precisely why this particular
+relation has no smooth-force extension along the unchanged infinite
+source trajectory.

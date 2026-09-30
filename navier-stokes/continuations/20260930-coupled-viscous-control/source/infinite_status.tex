@@ -1,0 +1,209 @@
+\section{The exact cost along the released infinite trajectory}
+\label{sec:infinitecost}
+The finite construction above proves no infinite viscous singularity.
+There is a precise calculation for the particular proposed extension
+that retains the released infinite fields and changes only the forces
+by their Laplacians. We record both that calculation and its scope.
+
+The source trajectory in this section means the specific construction
+of Alp\"oge--Buckmaster, including their compact corrections. Its
+existence and infinite inviscid conclusions are the source's
+Theorems 3.2, 7.3, 8.2, and 1.1, not new conclusions of this note.
+We use the following exact properties established in those proofs:
+at the growth crossing $t_q^a$, activation is complete and
+\begin{equation}
+ \Theta_q(t_q^a)=-\frac{\nu^2}{\mu}\lambda_q^{-7/8},
+ \quad r_q(t_q^a)\geq r_*>\frac12,
+ \quad \left|\frac{\Omega_q(t_q^a)}{\Theta_q(t_q^a)}\right|
+ \geq\frac{K_q}{2\sigma_{q-1}}.
+ \label{eq:sourcecrossingbounds}
+\end{equation}
+The first is the definition of the stopping time, source (3.8)
+and item (i) after (3.11), p.~10. Here $r_*:=1-C_r\epsilon_{\rm sch}>1/2$ is the improved phase-length bound, with the fixed constant $C_r$ from the source estimate; it is not the separate bootstrap constant called $\zeta_-$ in source (3.14). The second is source (3.18),
+p.~13 and the tolerance choice on p.~12. The last is the
+tracking estimate in the complete growth proof, pp.~29--30,
+between (3.63) and (3.64), with the low-order tolerance decreased
+within its permitted fixed range. For clarity the extraction of
+a numerical factor does not presume equality with the reference
+growing eigenline. With $u=\Omega/\Theta$, $u_*=(b/a)^{1/2}$,
+and $z=u/u_*$, direct differentiation gives
+\[
+ z'=\sqrt{ab}(1-z^2)-z(\log u_*)'.
+\]
+The source seed is chosen on the growing eigenline, so
+$z(t_q^{\rm in})=1$. For $q=1$ the eigenline and the ratio
+are exact throughout growth, as proved in the finite-stage
+section; the following tracking computation applies to later
+stages.
+If the source error bound is at most $\delta\leq1/4$, its
+Riccati barrier gives $z\geq1-\delta$: at $z=1-\delta$,
+$z'\geq\sqrt{ab}\{1-(1-\delta)^2-\delta(1-\delta)\}
+=\delta\sqrt{ab}>0$. At $z=1+\delta$ the corresponding
+upper derivative is $-\delta\sqrt{ab}<0$. A first exit is
+therefore impossible. To extract the coefficient ratio, use the
+exact source (3.55)--(3.56): during growth the preceding direction
+is vertical, $a_q=\mathcal G_q/(K_qr_q)$ and $b_q=K_qd_q$,
+where $d_q=r_q\sin(\phi_q-\phi_{q-1})$ and
+$\mathcal G_q=\sum_{i<q}w_iA_i\sin(\phi_q-\phi_i)$ includes
+the base term with $A_0$ and $w_0=1$. Hence
+$u_*=K_q\sqrt{d_qr_q/\mathcal G_q}$. The three source estimates
+are $r_q\geq1-\delta$, $d_q/\sin s_q\geq1-\delta$, and
+$\mathcal G_q/(\sigma_{q-1}^2\sin s_q)\leq1+\delta$.
+Together they give
+$u_*\geq(K_q/\sigma_{q-1})(1-\delta)/\sqrt{1+\delta}$.
+Their product is at least $K_q/(2\sigma_{q-1})$, because
+$(3/4)^2/\sqrt{5/4}>1/2$. This proves the displayed extraction
+from the source's explicit tracking estimates without assigning
+a sign to an uncontrolled error.
+
+The source also gives
+\begin{equation}
+ \sigma_{q-1}\leq\nu\sqrt{C_\sigma}\lambda_{q-1}^{1/16},
+ \quad \lambda_q=\lambda_{q-1}^{Q_q},\quad Q_q=Q_*+q,
+ \quad Q_*\geq200,
+ \label{eq:scalesforcost}
+\end{equation}
+by (3.7),(3.18). The material radius is
+$\ell_q^{\rm phys}=\lambda_{q-1}^{-3}/\mu$ for $q\geq2$.
+Each older layer and the base are affine on the full new support
+(Lemma 4.3, pp.~37--38), while all corrections to the newest
+layer vanish on its entire material plateau (Proposition 6.1,
+pp.~54--55). These spatial statements are essential to the following
+pointwise computation: a bound on a central affine ball alone
+would not provide the points used here.
+
+Choose one fixed $s_\dagger\in(-\pi,\pi)$ with
+$F''(s_\dagger)\ne0$. Such a point exists for the released
+profile. Otherwise $F''$ would vanish on the full period and by
+periodicity everywhere, so $F$ would be an affine periodic
+function, hence constant; oddness would make it zero, contradicting
+$F'(0)=1$. Fix this point once for every layer. At the growth
+crossing put
+\begin{equation}
+ a_q=\frac{s_\dagger}{K_q}p_q,\qquad
+ x_q=M_q(t_q^a)a_q.
+ \label{eq:testpoint}
+\end{equation}
+The activation vectors have $|p_q|=1$ and
+$\zeta_q=M_q^{-T}p_q$, so
+$K_q\zeta_q\cdot x_q=s_\dagger$ exactly. The point belongs
+to the plateau as soon as
+\[
+ \frac{|s_\dagger|}{K_q}<\frac{\ell_q^{\rm phys}}2,
+ \quad\hbox{equivalently}\quad
+ 2|s_\dagger|<\lambda_{q-1}^{Q_q-3}.
+\]
+This holds for all sufficiently large $q$ by
+\eqref{eq:scalesforcost}. The entire neighborhood of this point
+in the plateau has constant envelope, zero correction fields,
+and affine older fields. No later layer is yet activated at
+$t_q^a$. Consequently at this point the Laplacians of the
+\emph{full released fields}, not merely those of an isolated
+formal wave, are exactly
+\begin{align}
+ \Delta\theta_E(x_q,t_q^a)
+ &=\Theta_q K_q^2r_q^2F''(s_\dagger),\notag\\
+ \Delta u_E(x_q,t_q^a)
+ &=\Omega_qK_qJ\zeta_q F''(s_\dagger).
+ \label{eq:fulllaplacians}
+\end{align}
+For the second line use
+$u_q=\Omega_q J\zeta_qF(s)/(K_qr_q^2)$ on the plateau;
+applying the Laplacian contributes $K_q^2r_q^2$ and cancels
+the displayed denominator. This verifies both the vector
+direction and every frequency and phase-length factor.
+
+Inserting \eqref{eq:sourcecrossingbounds} gives
+\begin{align}
+ |\kappa\Delta\theta_E(x_q,t_q^a)|
+ &\geq\kappa\nu^2\mu r_*^2
+ |F''(s_\dagger)|\lambda_q^{9/8},\label{eq:scalarcostlower}\\
+ |\varepsilon\Delta u_E(x_q,t_q^a)|
+ &\geq\frac{\varepsilon\nu\mu r_*}{2\sqrt{C_\sigma}}
+ |F''(s_\dagger)|\lambda_q^{9/8}
+ \lambda_{q-1}^{-1/16}.
+ \label{eq:velocitycostlower}
+\end{align}
+For the second line first use
+$|\Omega_q|\geq |\Theta_q|K_q/(2\sigma_{q-1})$ and
+$|J\zeta_q|=r_q$, and then \eqref{eq:scalesforcost}.
+For fixed positive $\kappa$ the first right-hand side tends
+to infinity. For fixed positive $\varepsilon$ the second
+does also, since
+\[
+ \lambda_q^{9/8}\lambda_{q-1}^{-1/16}
+ =\lambda_{q-1}^{9Q_q/8-1/16}\longrightarrow\infty.
+\]
+In particular even the case $\kappa=0$, $\varepsilon>0$
+has an explicit diverging vector diffusion cost along these
+unchanged fields.
+
+The original forces extend smoothly through the source terminal
+time and have fixed compact support, and hence are bounded;
+this is Proposition 9.4(b),(c), pp.~72--73, proved using
+Lemma 9.3, pp.~71--72.
+For the specific exact extension
+\[
+ f_\theta^{\kappa,\varepsilon}=f_\theta^E-\kappa\Delta\theta_E,
+ \qquad f_u^{\kappa,\varepsilon}=f_u^E-\varepsilon\Delta u_E,
+ \qquad p^{\kappa,\varepsilon}=p_E,
+\]
+the reverse triangle inequality and
+\eqref{eq:scalarcostlower}--\eqref{eq:velocitycostlower}
+therefore prove unbounded forces at the corresponding positive
+coefficient, before the terminal time. They cannot have a
+continuous, and thus cannot have a smooth, terminal extension.
+This proves failure of the specified unchanged-pressure map.
+There is a stronger, pressure-independent conclusion for these
+same fields. Choose $s_\ddagger$ with $F'''(s_\ddagger)\ne0$.
+It exists: otherwise $F''$ would be constant, and periodicity
+would successively force $F''=F'=0$, contradicting $F'(0)=1$.
+Use the plateau point in \eqref{eq:testpoint} with this phase.
+The vorticity there equals a spatially constant older vorticity
+plus $\Omega_qF'(s)$, so
+\[
+ \Delta\omega_E=\Omega_qK_q^2r_q^2F'''(s_\ddagger),\qquad
+ |\varepsilon\Delta\omega_E|
+ \geq\frac{\varepsilon\nu\mu^2r_*^2}{2\sqrt{C_\sigma}}
+ |F'''(s_\ddagger)|\lambda_q^{17/8}
+ \lambda_{q-1}^{-1/16}\longrightarrow\infty.
+\]
+For any smooth pressure $p_{\rm new}$ and any vector force
+producing the same $u_E,\theta_E$ in the viscous equation,
+subtraction of the inviscid momentum equation and application
+of curl give the exact identity
+\[
+ \operatorname{curl}f_{u,\rm new}
+ =\operatorname{curl}f_u^E-\varepsilon\Delta\omega_E,
+\]
+because mixed derivatives of $p_{\rm new}-p_E$ commute.
+The source curl force is bounded. The displayed divergence
+therefore excludes a terminal extension with bounded first
+spatial derivatives for \emph{every} pressure and force that
+retain these exact state fields. In fact the failure is local
+at the origin and terminal time. Source Theorem 3.2(iv) gives
+$\|M_q\|\leq\sqrt{C_\sigma}\lambda_{q-1}^{1/16}$, so the
+test points satisfy
+\[
+ |x_q|\leq\frac{|s_\ddagger|\sqrt{C_\sigma}}\mu
+ \lambda_{q-1}^{1/16-Q_q}\longrightarrow0,
+ \qquad t_q^a\longrightarrow T_*.
+\]
+A continuous derivative on a neighborhood of $(0,T_*)$ is
+bounded on a smaller compact neighborhood, contradicting the
+computed curl divergence there. If a vector field has bounded
+first spatial derivatives then its curl is bounded by their
+sum, which proves this implication explicitly. This still
+does not exclude a modified coupled trajectory, a different
+state construction, or viscous blowup; none of those claims
+follows from evaluating the unchanged source state.
+
+The completed result of this note is the actual finite forced
+stage proved above and below, including its original datum,
+control, background feedback, return, hold, support and every
+diffusion term. The released infinite inviscid sequence is
+reconstructed as source mathematics. A new infinite viscous
+sequence with forces smooth through its terminal time is not
+established by these calculations.
+
+

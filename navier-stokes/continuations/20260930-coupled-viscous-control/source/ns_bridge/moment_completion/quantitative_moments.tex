@@ -1,0 +1,344 @@
+\section{Original-scale derivative costs of the actual compatibility defects}
+\label{mcq:section}
+
+The state and increment in this section are exactly the finite source state
+and actual third-growth curl constructed in the preceding reader.
+Write \(u_*=\langle u_*\rangle_\theta+w_*\), \(v=w_y\), and
+\[
+ C=\langle w_*\otimes v+v\otimes w_*+v\otimes v\rangle,
+\]
+where the outer brackets are the normalized angular and auxiliary
+averages before physical evaluation. Every component below is in the
+original oriented cylindrical orthonormal basis. The full moment
+completion and source pressure calculation prove the formulas used here;
+we also derive the scalar compatibility formulas directly to fix all signs.
+Throughout this section the unadorned symbols \(P,J_\theta,J_z\)
+denote the defect increments \(\Delta P,\Delta J_\theta,\Delta J_z\)
+caused by this actual wave addition. They are not the full old-plus-new
+source defects. The unchanged old defects must be added when applying
+the source correction to the whole updated state.
+
+\subsection{Actual mixed derivatives of the third-growth curl}
+
+Retain the fixed finite set of source labels \(j\), the actual clocks
+\(t_{c,j}=t_b+\alpha_jv_j\), and the two full shape fields \(W_{ja}\).
+The original data \(t_b,r_a,S_3,u_i\) are independent of these spatial
+labels. In particular
+\[
+ v=\sum_{j,a}Q_j^{-A}y_a(t_{c,j})W_{ja},\quad
+ A=\tfrac12+h,\quad D=\tfrac12-h,\quad
+ \partial_t t_{c,j}=\alpha_jQ_j^{-1-h},\quad \partial_z t_{c,j}=0 .
+\]
+Let \(Y_{1,n}=T_n\) and \(Y_{2,n}=O_n\) be the complete finite
+derivative arrays already proved for the actual coupled solution.
+Thus \(Y_{1,0}=(A_0/\mu)\widehat\lambda_3^{-7/8}\),
+\(Y_{2,0}=2A_0\widehat\lambda_3^{1/8}/(\sigma_2\sqrt{n_i})\),
+\(Y_{1,1}=2\gamma_iY_{1,0}\), and
+\(Y_{2,1}=\gamma_iA_0\widehat\lambda_3^{1/8}/(\sigma_2\sqrt{n_i})\).
+Higher entries are those closed recurrences in the retained moving-parent
+data; no independent amplitude bound is introduced here.
+
+For a pair \(I=(a,b)\in\mathbb N^2\), put
+\(\partial^I=\partial_z^a\partial_t^b\) and
+\(I_z=I+(1,0)\). On a fixed chart the full time operator is
+\(\mathfrak t_{*,j}=-\varepsilon_j\partial_{T_j}+c_{i,j}N_{i,j}\).
+The exact mixed derivative formula is
+\begin{equation}\label{mcq:actual_derivative}
+\begin{split}
+ \partial_z^a\partial_t^b v
+ =\sum_{j,c}\sum_{s=0}^b&
+ \binom bs Q_j^{-A-aD-b(1+h)}\alpha_j^s
+ y_c^{(s)}(t_{c,j})\\
+ &\hspace{4mm}\cdot
+ \partial_{Z_j}^a\mathfrak t_{*,j}^{\,b-s}W_{jc}.
+\end{split}
+\end{equation}
+All operators on the shapes include their phase, frame and cutoff
+derivatives. The shape time operator is the full derivative after
+auxiliary evaluation, not a derivative that holds the fast phase fixed.
+To prove the identity, differentiate the physical product \(b\) times
+in time. If \(s\) of the derivatives act on \(y_c\), its factor is
+\((\alpha_jQ_j^{-1-h})^sy_c^{(s)}\); the other \(b-s\) derivatives
+give \(Q_j^{-(b-s)(1+h)}\mathfrak t_{*,j}^{b-s}W_{jc}\).
+There are \(\binom bs\) such choices. The \(a\) axial derivatives act
+only on the shape and give \(Q_j^{-aD}\partial_{Z_j}^a\).
+The axial derivative commutes with the stated time operator, since
+its coefficients are fixed label constants. Combining the powers proves
+\eqref{mcq:actual_derivative} without dropping any derivative.
+
+For each \(e\in\{-1,0,1,2\}\), define the precise weighted norm
+\[
+ \|f\|_{[e]}^2=\int_0^\infty r^e\langle |f|^2\rangle\,dr,\qquad
+ \|F\|_{[e],j}^2=\int_0^\infty R_j^e\langle |F|^2\rangle\,dR_j.
+\]
+Every field being integrated is supported in a compact annulus away
+from zero, so the negative weight introduces no singular integral.
+Define the explicit actual-shape budget
+\begin{equation}\label{mcq:V}
+\begin{split}
+ \mathcal V_{e,(a,b)}
+ =\sum_{j,c}\sum_{s=0}^b&
+ \binom bs \alpha_j^sY_{c,s}
+ Q_j^{(e+1)/4-A-aD-b(1+h)}\\
+ &\hspace{4mm}\cdot
+ \|\partial_{Z_j}^a\mathfrak t_{*,j}^{\,b-s}W_{jc}\|_{[e],j}.
+\end{split}
+\end{equation}
+Then \(\|\partial^I v\|_{[e]}\le\mathcal V_{e,I}\).
+Indeed the measure identity
+\(r^e\,dr=Q_j^{(e+1)/2}R_j^e\,dR_j\), valid also for \(e=-1\),
+and the triangle inequality applied to \eqref{mcq:actual_derivative}
+give this bound. There is no inter-label orthogonality assumption.
+Put \(\mathcal W_{e,I}=\|\partial^I w_*\|_{[e]}\), restricted to a
+fixed radial set enclosing the supports of the actual new fields
+and all derivatives at issue. The old wave includes its existing curl
+corrections. These are norms of the specified source state, not missing
+amplitude variables.
+
+\subsection{A contraction estimate that retains every product derivative}
+
+For \(J=(j_1,j_2)\le I=(a,b)\), set
+\(\binom IJ=\binom a{j_1}\binom b{j_2}\), and define
+\begin{equation}\label{mcq:B}
+\begin{split}
+ \mathcal B_{e,I}=\sum_{J\le I}\binom IJ
+ \bigl(&\mathcal W_{e,J}\mathcal V_{e,I-J}
+       +\mathcal V_{e,J}\mathcal W_{e,I-J}\\
+       &+\mathcal V_{e,J}\mathcal V_{e,I-J}\bigr).
+\end{split}
+\end{equation}
+If \(E\) is any fixed real symmetric three-by-three matrix in
+cylindrical components, then
+\begin{equation}\label{mcq:contraction}
+ \left|\partial^I\int r^e(E:C)\,dr\right|
+       \le \|E\|_{\mathrm{op}}\mathcal B_{e,I}.
+\end{equation}
+For a single outer product,
+\(E:(f\otimes g)=f^TEg\), whose absolute value is at most
+\(\|E\|_{\mathrm{op}}|f||g|\). The repeated product rule gives exactly
+the sum over \(J\le I\) in \eqref{mcq:B}. Cauchy--Schwarz on the
+original weighted angular-auxiliary-radial measure gives each displayed
+product of norms. Compact smooth support justifies differentiation
+under the integral. Axial and time derivatives do not differentiate
+the cylindrical basis. This proves \eqref{mcq:contraction} for every
+specified order.
+For the time derivative, the full lifted physical operator is
+\(\mathcal D_t=\partial_t+N_{\rm abs}\), with \(N_{\rm abs}\) a
+constant torus direction. The Haar integral of \(N_{\rm abs}f\) is
+zero by periodicity. Therefore
+\(\partial_t\langle f\rangle=\langle\mathcal D_tf\rangle\).
+The same identity applies repeatedly, and axial differentiation commutes
+with this average and this constant torus direction. Consequently the
+ordinary mixed derivatives of the averaged tensor in
+\eqref{mcq:contraction} are exactly the averages of the full physical
+derivatives estimated in \eqref{mcq:actual_derivative}.
+
+\subsection{The actual three defects and the pressure-corrected axial flux}
+
+Since the wave increment has zero angular mean and is divergence-free,
+the change of the radial mean pressure source is
+\[
+ g=-(\partial_r+r^{-1})C_{rr}-\partial_zC_{zr}+r^{-1}C_{\theta\theta}.
+\]
+The three actual source compatibility-defect increments are therefore
+\begin{equation}\label{mcq:defects}
+\begin{split}
+ P&=\int\frac{C_{\theta\theta}-C_{rr}}r\,dr
+                    -\partial_z\int C_{zr}\,dr,\\
+ J_\theta&=\int r^2C_{z\theta}\,dr,\\
+ J_z&=\int r\left(C_{zz}-\tfrac12C_{rr}
+                              -\tfrac12C_{\theta\theta}\right)\,dr
+                  +\tfrac12\partial_z\int r^2C_{zr}\,dr .
+\end{split}
+\end{equation}
+The first formula is \(\int g\,dr\), using the zero boundary integral
+of \(\partial_r C_{rr}\). For the last, integration by parts gives
+\[
+ \int r^2 g\,dr
+  =\int r(C_{rr}+C_{\theta\theta})\,dr
+                      -\partial_z\int r^2C_{zr}\,dr .
+\]
+Substitute it into the source definition
+\(J_z=\int rC_{zz}\,dr-\frac12\int r^2g\,dr\).
+This proves all three identities in \eqref{mcq:defects}.
+In particular the axial source defect is not replaced by the raw flux
+\(\int rC_{zz}\,dr\).
+
+Let the source pressure bump be the original
+\[
+ \rho(r,z,t)=q^{-1/2}\widehat\rho(r/\sqrt q),\qquad
+ \int\widehat\rho(x)\,dx=1,\qquad
+ c_0=\tfrac12\int x^2\widehat\rho(x)\,dx .
+\]
+It has \(\int\rho\,dr=1\) and
+\(c_\rho=\frac12\int r^2\rho\,dr=c_0q\).
+The auxiliary average of the compact source pressure increment is
+\[
+ \overline{\Delta p_m}(r)=\int_0^r(g(s)-\rho(s)P)\,ds .
+\]
+Its derivative is \(g-\rho P\), and its integrand has zero total
+radial integral, giving compact support. Its weighted pressure moment is
+\(\int r\overline{\Delta p_m}\,dr=-\frac12\int r^2g\,dr+c_\rho P\).
+Here is the exact map to the full auxiliary-dependent source operation.
+Let \(\Delta g_r\) be the angularly averaged source increment before
+auxiliary averaging, so that \(\langle\Delta g_r\rangle_Y=g\), and
+put \(f=\Delta g_r-\rho P\). The source's shifted primitive uses
+\[
+ \begin{split}
+ \mathcal I f(r,Y)&=\int_0^r
+       f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\\
+ \mathcal J f(r,Y)&=\int_0^\infty
+       f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\qquad
+ \mathcal I_cf=\mathcal If-\chi_m\mathcal Jf .
+ \end{split}
+\]
+The fixed source exponent and direction are the original \(d_r,v_r\),
+and \(\chi_m\) is its inner-zero, outer-one radial cutoff. The full
+pressure increment is \(\Delta p_m=\mathcal I_cf\).
+Haar translation invariance gives
+\(\langle\mathcal Jf\rangle_Y=\int(g-\rho P)\,dr=0\) and
+\(\langle\mathcal If\rangle_Y=\int_0^r(g-\rho P)\,ds\).
+This proves the asserted averaged pressure formula from the full map.
+The lifted radial derivative cancels the shift derivative and yields
+\[
+ \mathcal D_r\Delta p_m-\Delta g_r
+       =-\rho P-(\partial_r\chi_m)\mathcal Jf .
+\]
+The second term has zero auxiliary average but need not vanish before
+physical evaluation. No estimate for its singular-time flatness is
+inferred from its zero average.
+Consequently the double-averaged axial residual-moment increment after
+this reconstruction is
+\[
+ \partial_zK_z,\qquad K_z=J_z+c_0qP .
+\]
+The full product, including the derivatives of \(q\), is retained.
+
+The following simultaneous quantitative estimates hold at every finite
+mixed order:
+\begin{equation}\label{mcq:defect_bounds}
+\begin{split}
+ |\partial^IP|&\le
+       \mathcal B_{-1,I}+\tfrac12\mathcal B_{0,I_z},\\
+ |\partial^IJ_\theta|&\le\tfrac12\mathcal B_{2,I},\\
+ |\partial^IJ_z|&\le
+       \mathcal B_{1,I}+\tfrac14\mathcal B_{2,I_z},\\
+ |\partial^IK_z|&\le
+       \mathcal B_{1,I}+\tfrac14\mathcal B_{2,I_z}\\
+ &\quad+|c_0|\sum_{J\le I}\binom IJ
+       |\partial^Jq|\left(
+       \mathcal B_{-1,I-J}+\tfrac12\mathcal B_{0,(I-J)_z}\right).
+\end{split}
+\end{equation}
+For the first line the diagonal contraction matrix is
+\(\operatorname{diag}(-1,1,0)\), of norm one, whereas the \(rz\)
+entry is the contraction against the symmetric matrix with \(rz,zr\)
+entries \(1/2\), of norm \(1/2\). For the second line use the
+analogous \(z\theta\) matrix. For the third the diagonal matrix is
+\(\operatorname{diag}(-1/2,-1/2,1)\), of norm one, and the
+coefficient \(1/2\) multiplying \(C_{zr}\) contributes an additional
+factor \(1/2\). These facts and \eqref{mcq:contraction} prove the first
+three bounds. The exact product rule for \(qP\) proves the fourth.
+Replacing \(I\) by \(I_z\) gives bounds for the two residual moments
+that actually enter the source radial inverse. Thus every pressure,
+radial and axial coupling has a bound in the original shape fields
+and third-growth constants.
+
+\subsection{Exact derivatives of the original moving scale and bumps}
+
+The source scale is determined by
+\[
+ q-z^2q^{2h}=1-t,\qquad z=q^D\eta,\qquad
+ D=\tfrac12-h,\qquad 0<h<1/100,\quad -1<\eta<1 .
+\]
+Set \(B(\eta)=1-2h\eta^2>1-2h>0\). Implicit differentiation of the
+first equation, followed by the displayed formula for \(z\), gives
+\begin{equation}\label{mcq:q_derivatives}
+\begin{gathered}
+ q_z=\frac{2\eta q^A}{B},\qquad q_t=-\frac1B,\\
+ \eta_z=\frac{q^{-D}(1-\eta^2)}B,\qquad
+ \eta_t=\frac{D\eta q^{-1}}B .
+\end{gathered}
+\end{equation}
+For example \(q_z=2zq^{2h}/B\), and \(D+2h=A\).
+Differentiating \(\eta=zq^{-D}\) gives the last two formulas;
+the identity \(2D+2h=1\) gives the factor \(1-\eta^2\).
+This proves the derivative dictionary without assigning a sign to \(q_z\).
+
+Put \(x=r/\sqrt q\). For a smooth function \(f(x,\eta)\) define the
+explicit differential expressions
+\[
+ \mathcal Z_\sigma f=
+ \frac{2\sigma\eta f-\eta x f_x+(1-\eta^2)f_\eta}{B},\qquad
+ \mathcal T_\sigma f=
+ \frac{-\sigma f+\frac12x f_x+D\eta f_\eta}{B}.
+\]
+Equations \eqref{mcq:q_derivatives} and the ordinary chain rule prove
+\begin{equation}\label{mcq:dilation_dictionary}
+ \partial_z(q^\sigma f)=q^{\sigma-D}\mathcal Z_\sigma f,\quad
+ \partial_t(q^\sigma f)=q^{\sigma-1}\mathcal T_\sigma f,\quad
+ \partial_r(q^\sigma f)=q^{\sigma-1/2}f_x .
+\end{equation}
+For the last formula \(q,\eta\) are independent of \(r\).
+For the first two, differentiation of \(x\) gives respectively
+\(-\eta xq^{-D}/B\) and \(xq^{-1}/(2B)\), proving every term.
+
+In particular let the original radial moment bump be
+\[
+ b_e=q^{-(e+1)/2}\widehat b_e(x),\qquad
+ \int x^e\widehat b_e(x)\,dx=1 .
+\]
+For any \(k,a,b\ge0\), its derivative is exactly
+\begin{equation}\label{mcq:bump_derivatives}
+ \partial_r^k\partial_z^a\partial_t^b b_e
+ =q^{-(e+1+k)/2-aD-b} f_{e;k,a,b}(x,\eta).
+\end{equation}
+Here the coefficient is given by a finite recursion: start at
+\(\sigma=-(e+1+k)/2\) and \(f=\widehat b_e^{(k)}\);
+repeat \(f\leftarrow\mathcal Z_\sigma f\),
+\(\sigma\leftarrow\sigma-D\), \(a\) times, and then
+\(f\leftarrow\mathcal T_\sigma f\),
+\(\sigma\leftarrow\sigma-1\), \(b\) times.
+The result is \(f_{e;k,a,b}\). This proves the identity by induction
+using \eqref{mcq:dilation_dictionary}. Smooth mixed derivatives commute,
+so this fixed order computes the stated derivative.
+Every coefficient is explicitly a finite rational expression in \(x,\eta\),
+the retained constants, and derivatives of the specified bump, with
+nonzero denominator a power of \(B\). On its compact \(x\) support
+and \(|\eta|\le1\) its maximum is finite and computable directly from
+that expression. Thus \eqref{mcq:bump_derivatives} supplies the original
+power of \(q\) at every order.
+The pressure bump \(\rho\) uses exactly this recursion with \(e=0\).
+Likewise every derivative in \eqref{mcq:defect_bounds} is explicit:
+\(\partial_z^a\partial_t^bq=q^{1-aD-b}Q_{a,b}(\eta)\), where the same
+recursion starts with \(\sigma=1,f=1\).
+
+For completeness, the weighted cumulative bump has the exact form
+\[
+ \beta_e(r,z,t)=\int_0^rs^eb_e(s,z,t)\,ds
+              =\int_0^{r/\sqrt q}x^e\widehat b_e(x)\,dx .
+\]
+Its axial derivative is
+\begin{equation}\label{mcq:bump_movement}
+ \partial_z\beta_e
+ =-\frac{q_z}{2q}\,r^{e+1}b_e .
+\end{equation}
+This follows by differentiating its upper endpoint, which is
+\(-rq_z/(2q^{3/2})\). Inserting the definition of \(b_e\) gives
+the displayed original physical factors. Therefore replacing the
+primitive of \(F_e-b_e\partial_zJ_e\) by the exact primitive of
+\(F_e-\partial_z(b_eJ_e)\) changes the stress coefficient by
+\[
+ -\frac{rq_z}{2q}\,b_eJ_e .
+\]
+This is the moving-bump term required in the complete stress construction.
+Its sign and all further derivatives are fixed by
+\eqref{mcq:q_derivatives}--\eqref{mcq:bump_movement}; it is not set to zero
+by holding the physical source scale fixed during axial differentiation.
+
+These calculations supply finite quantitative inputs for the actual
+source pressure and moment operations. They do not identify the
+distinct direct candidate with a completed infinite source correction
+sequence: the complete source-operation formulas retain the new
+velocity, covariance, pressure and nonlinear defects that such a step
+actually creates.

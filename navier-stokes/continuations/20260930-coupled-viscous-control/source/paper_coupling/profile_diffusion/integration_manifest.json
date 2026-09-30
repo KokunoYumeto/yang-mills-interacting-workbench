@@ -1,0 +1,29 @@
+{
+  "body": "profile_diffusion_body.tex",
+  "preamble": "profile_diffusion_preamble.tex",
+  "source": "profile_diffusion.tex",
+  "packages": [
+    "amsmath",
+    "amssymb",
+    "amsthm",
+    "mathtools",
+    "mathrsfs"
+  ],
+  "macros": [
+    "\\PDReal",
+    "\\PDTorus",
+    "\\PDd",
+    "\\PDthermal",
+    "\\PDviscosity",
+    "\\PDheat",
+    "\\PDmean"
+  ],
+  "theorem_environments": [
+    "pdproposition"
+  ],
+  "proof_environment": "proof from amsthm",
+  "label_prefix": "pd:",
+  "section_commands": "Original section and unnumbered section commands retained; master may choose its hierarchy.",
+  "body_contains_document_wrapper": false,
+  "body_contains_maketitle": false
+}

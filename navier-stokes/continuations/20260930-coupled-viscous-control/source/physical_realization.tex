@@ -1,0 +1,433 @@
+\section{Physical coordinates and exact finite viscous realization}
+\label{sec:physical}
+We use the orientation
+\[
+ x=(x_1,x_2)\in\mathbb R^2,\quad e_2=(0,1),\quad
+ J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+ \nabla^\perp=J\nabla,\quad \operatorname{curl}u=\partial_1u_2-\partial_2u_1.
+\]
+The physical equations throughout this note are
+\begin{align}
+ \theta_t+u\cdot\nabla\theta&=\kappa\Delta\theta+f_\theta,
+ \label{eq:physicaltheta}\\
+ u_t+(u\cdot\nabla)u+\nabla p&=\varepsilon\Delta u+\theta e_2+f_u,
+ \qquad \operatorname{div}u=0.\label{eq:physicalu}
+\end{align}
+Here $\kappa,\varepsilon\geq0$ are respectively thermal diffusivity and
+physical viscosity. In particular $\varepsilon$ is not the source's
+time-scaling parameter $\nu$ and is not its schedule error tolerance.
+The datum is retained exactly:
+\[
+ A_0\geq1,\quad \lambda_0=\lceil\sqrt{A_0}/2\rceil,
+ \qquad \theta_{\rm in}(x)=-\frac{A_0}{\lambda_0}
+ \sin(\lambda_0x_2)\chi_0(x),\qquad u_{\rm in}(x)=0.
+\]
+The original radial cutoff $\chi_0\in C_c^\infty(B_{R_0})$, $R_0>2$,
+equals one on $B_2$ and lies in $[0,1]$. Define
+\[
+ \mu=\lambda_0,\qquad \nu=\sqrt{A_0},\qquad (X,T)=(\mu x,\nu t).
+\]
+These are explicit maps between the source coordinates and the physical
+coordinates, rather than replacements of $A_0$ or $\lambda_0$ by one.
+For source fields decorated with a tilde their pullback is
+\begin{align}
+ \theta(x,t)&=\frac{\nu^2}{\mu}\widetilde\theta(\mu x,\nu t),&
+ u(x,t)&=\frac\nu\mu\widetilde u(\mu x,\nu t),\notag\\
+ p(x,t)&=\frac{\nu^2}{\mu^2}\widetilde p(\mu x,\nu t),&
+ \psi(x,t)&=\frac\nu{\mu^2}\widetilde\psi(\mu x,\nu t).
+ \label{eq:physicalmap}
+\end{align}
+Their forces pull back with factors $\nu^3/\mu$ and $\nu^2/\mu$,
+respectively. Their source diffusion coefficients must be
+\begin{equation}
+ \widetilde\kappa=\frac{\mu^2}{\nu}\kappa,
+ \qquad \widetilde\varepsilon=\frac{\mu^2}{\nu}\varepsilon.
+ \label{eq:viscscale}
+\end{equation}
+Indeed each term on the left of the scalar equation acquires
+$\nu^3/\mu$, whereas $\kappa\Delta_x\theta$ acquires
+$\kappa\nu^2\mu$. Each momentum and buoyancy term acquires
+$\nu^2/\mu$, whereas $\varepsilon\Delta_xu$ acquires
+$\varepsilon\nu\mu$. Division gives exactly \eqref{eq:viscscale}.
+Also $\nabla_x^\perp\psi=u$, $\Delta_x\psi=\nu\widetilde\omega$,
+and $\operatorname{div}_xu=\nu\operatorname{div}_X\widetilde u$.
+The inverse map substitutes $(x,t)=(X/\mu,T/\nu)$ and reciprocates
+the displayed factors, proving a bijection for corresponding forces,
+coefficients, and initial values. The cutoff is
+$\widetilde\chi_0(X)=\chi_0(X/\mu)$, so the pulled-back initial
+temperature is exactly the displayed $\theta_{\rm in}$.
+These computations extend source Lemma 1.2, equations (1.6)--(1.7),
+pp.~6--7, by retaining both diffusion coefficients.
+
+\subsection{The released profile, the initial interpolation, and the base}
+Fix $0<s_0<1$ and an even smooth cutoff $\chi$ supported in
+$(-\pi,\pi)$, equal to one on $[-s_0,s_0]$. On $[-\pi,\pi]$ put
+\[
+ F(s)=\sin s+\chi(s)(s-\sin s)
+\]
+and extend periodically. Let
+\[
+ P(s)=\int_0^sF(r)\,dr-
+ \frac1{2\pi}\int_{-\pi}^{\pi}\int_0^yF(r)\,dr\,dy.
+\]
+Oddness and zero period integral of $F$ show that $P$ is even,
+periodic, has zero mean, and $P'=F$. Near zero, $F(s)=s$ and
+$P(s)=P(0)+s^2/2$. No sinusoidal identity is substituted for this profile.
+Take a smooth nondecreasing step $\eta$ that is zero for $t\leq0$
+and one for $t\geq1$. Every derivative of positive order vanishes
+at its endpoints: smoothness and its constant extension prove this.
+
+Choose $R_H>R_0+1$ and radial $H\in C_c^\infty(B_{R_H})$ equal to
+$|x|^2/2$ on $B_{R_0+1}$. Let $\alpha=0$ on $[0,1/\nu]$ and
+$e_0=R_\alpha e_2$. Define
+\begin{align}
+ \theta_0&=-\frac{A_0}{\mu}F(\mu e_0\cdot x)\chi_0(x),&
+ \theta_{\rm ref}&=-\frac{A_0}{\mu}F(\mu x_2)\chi_0(x),\notag\\
+ \theta_b&=\theta_0+(1-\eta(\nu t))
+          (\theta_{\rm in}-\theta_{\rm ref}),&
+ \psi_b&=\dot\alpha H,\qquad u_b=\dot\alpha J\nabla H.
+ \label{eq:basephysical}
+\end{align}
+For $t\leq1/\nu$, $u_b=0$ and
+$\partial_t\theta_b=\nu\eta'(\nu t)(\theta_{\rm ref}-\theta_{\rm in})$.
+For later times, $u_b=\dot\alpha Jx$ on the support of $\theta_0$.
+Since $\dot e_0=\dot\alpha Je_0$,
+\[
+ (\partial_t+\dot\alpha Jx\cdot\nabla)(\mu e_0\cdot x)
+ =\mu\dot\alpha(Je_0\cdot x+e_0\cdot Jx)=0.
+\]
+Radiality gives $Jx\cdot\nabla\chi_0=0$. Therefore the exact
+zero-pressure base forces are
+\begin{align}
+ f^0_{\theta,b}&=\nu\eta'(\nu t)(\theta_{\rm ref}-\theta_{\rm in}),\notag\\
+ f^0_{u,b}&=\ddot\alpha J\nabla H+
+ \dot\alpha^2(J\nabla H\cdot\nabla)(J\nabla H)-\theta_b e_2.
+ \label{eq:baseforces}
+\end{align}
+On $|\mu e_0\cdot x|<s_0$, $|x|<2$, and $t\geq1/\nu$, the
+base has the exact values
+\[
+ \theta_b=-A_0e_0\cdot x,\quad u_b=\dot\alpha Jx,
+ \quad G_b=-A_0e_0,\quad D_b=\dot\alpha J.
+\]
+This is source (4.9)--(4.10), pp.~38--39, in the original coordinates.
+
+\subsection{A compact realization of the complete first controlled stage}
+Use the first-stage coefficients constructed and proved below, with
+physical frequency $K_1=\mu\lambda_1$, phase $\zeta=R_\alpha e(s_*)$,
+$|\zeta|=1$, and signed amplitudes $\Theta,\Omega$ satisfying
+\begin{equation}
+ \dot\Theta=-\frac{J\zeta\cdot G_b}{K_1}\Omega,
+ \qquad \dot\Omega=K_1\zeta_1\Theta.
+ \label{eq:firstphysicalpair}
+\end{equation}
+Here $e(\phi)=(\sin\phi,\cos\phi)$ and
+$J\zeta\cdot G_b=-A_0\sin s_*$, a rotationally invariant scalar.
+Choose $C_\ell\geq4$, set $\ell=s_0/(C_\ell\mu)$, and take
+radial $f\in C_c^\infty(B_1)$ equal to one on $B_{1/2}$.
+Put
+\[
+ g(x)=f(x/\ell),\quad s=K_1\zeta\cdot x,\quad
+ w=\eta(\Gamma(t-1/\nu)),\quad \Gamma=\nu\sin s_*,
+ \quad T=w\Theta,\quad Q=\frac{w\Omega}{K_1^2}.
+\]
+Although $g$ is written in laboratory coordinates, it is exactly
+the paper's material envelope: $M=R_\alpha$, so
+$f(M^{-1}x/\ell)=f(x/\ell)$ by radiality. Set
+\begin{align}
+ V&=TF(s)g,& \Psi&=QP(s)g,\notag\\
+ v&=Q\{K_1J\zeta F(s)g+P(s)J\nabla g\},&
+ \theta&=\theta_b+V,\quad u=u_b+v,\quad p=0.
+ \label{eq:compactfields}
+\end{align}
+The new fields are extended by zero before $t=1/\nu$. They are
+smooth across that time because $w$ is flat there. Their support
+is in $B_\ell\subset B_{s_0/\mu}\cap B_2$, where the base is
+affine for every angle. The phase and envelope satisfy
+\[
+ (\partial_t+D_bx\cdot\nabla)s=0,
+ \qquad (\partial_t+D_bx\cdot\nabla)g=0.
+\]
+For the phase this follows from
+$\dot\zeta=\dot\alpha J\zeta=-D_b^T\zeta$; for the
+envelope it follows from radiality.
+
+Write $\partial_\perp g=J\zeta\cdot\nabla g$. Direct expansion
+gives the following complete added forces at zero diffusion:
+\begin{align}
+ E^0_\theta={}&\dot w\Theta Fg+
+ QP(J\nabla g\cdot G_b)
+ +K_1QT(F^2-PF')g\partial_\perp g,
+ \label{eq:compactscalarforce}\\
+ E^0_u={}&2D_bv+
+ \dot Q\{K_1J\zeta Fg+PJ\nabla g\}
+ +(v\cdot\nabla)v-TFg e_2.
+ \label{eq:compactvectorforce}
+\end{align}
+Every function of $s$ in these equations is evaluated at the phase
+in \eqref{eq:compactfields}. The vector derivative in the last formula
+can, equivalently, be evaluated by the explicitly specified matrix
+\[
+ \nabla v=QJ\left[
+ K_1^2\zeta\otimes\zeta F'g
+ +K_1F(\zeta\otimes\nabla g+\nabla g\otimes\zeta)
+ +P\nabla^2g\right],\qquad
+ (v\cdot\nabla)v=(\nabla v)v.
+\]
+Thus \eqref{eq:compactvectorforce} is a direct component formula,
+without solving a pressure equation or an inverse-curl problem.
+
+Here is a proof of both residual identities. Since $J\zeta\cdot\zeta=0$,
+\[
+ v\cdot\nabla V=K_1QT(F^2-PF')g(J\zeta\cdot\nabla g).
+\]
+Also $v\cdot G_b=QK_1(J\zeta\cdot G_b)Fg+
+ QP(J\nabla g\cdot G_b)$ and the material derivative of $V$ is
+$\dot T Fg$. Equation \eqref{eq:firstphysicalpair} implies
+$\dot T+QK_1J\zeta\cdot G_b=\dot w\Theta$, proving
+\eqref{eq:compactscalarforce}. For any trace-free matrix $D$,
+direct multiplication proves $DJ+JD^T=0$. Consequently
+\[
+ (\partial_t+Dx\cdot\nabla)J\nabla\Psi
+ =D J\nabla\Psi+J\nabla[(\partial_t+Dx\cdot\nabla)\Psi].
+\]
+The material derivative of $\Psi$ is $\dot QPg$, and
+$(v\cdot\nabla)u_b=D_bv$ on the new support. Adding these two
+terms, the self-advection, and the negative buoyancy increment
+proves \eqref{eq:compactvectorforce}. Away from the new support
+every increment vanishes, so this verification is global.
+
+For every prescribed $\kappa,\varepsilon\geq0$ the \emph{same}
+controlled fields now solve \eqref{eq:physicaltheta}--\eqref{eq:physicalu}
+with the explicit forces
+\begin{align}
+ f_\theta^{\kappa,\varepsilon}
+ &=f^0_{\theta,b}+E^0_\theta-\kappa\Delta\theta_b-\kappa\Delta V,
+ \label{eq:exactviscforce}\\
+ f_u^{\kappa,\varepsilon}
+ &=f^0_{u,b}+E^0_u-\varepsilon\Delta u_b-\varepsilon\Delta v.
+ \label{eq:exactviscu}
+\end{align}
+Indeed substituting these right-hand sides cancels the displayed
+diffusion terms exactly and leaves the two residual identities
+already proved. This proves a concrete finite controlled viscous
+stage, for arbitrary physical coefficients, retaining the paper's
+actual profile and motion. Its costs are calculated next; no
+claim that these are small or uniform over infinitely many stages
+is part of this construction.
+
+All fields and forces are supported in the fixed spatial ball
+$B_{R_H}$. They are smooth on the complete closed finite interval,
+including interpolation, activation, growth, transition, steering,
+and any specified finite holding duration. The pressure $p=0$
+satisfies $p(0,t)=0$. Since $\psi_b+\Psi$ is compactly supported,
+$u=J\nabla(\psi_b+\Psi)$ is divergence free and has finite
+spatial energy. It also has exactly the Biot--Savart relation
+$u=K\omega$: if $N=(2\pi)^{-1}\log|x|$, integration by parts
+against the compact streamfunction gives
+$N*\Delta(\psi_b+\Psi)=(\Delta N)*(\psi_b+\Psi)=\psi_b+\Psi$;
+applying $J\nabla$ proves the assertion in distributions and hence
+for these smooth fields. Odd $F$, even $P$, and radial cutoffs
+give odd $\theta,u,f_\theta,f_u$ and even $\omega$.
+The finite-slab forces can also be specified with compact temporal
+support. Extend the state by its stationary initial values to the
+left and its stationary held values to the right; flatness of the
+interpolation and the selected pulse proves smoothness of these
+extensions. For any fixed $\tau_{\rm ext}>0$, multiply the
+resulting force formulas by
+\[
+ \eta(1+t/\tau_{\rm ext})
+ \eta(1+(T_f-t)/\tau_{\rm ext}).
+\]
+Here $T_f$ denotes the finite final time of the prescribed hold.
+This multiplier is one on $[0,T_f]$ and zero outside
+$(-\tau_{\rm ext},T_f+\tau_{\rm ext})$. Thus the same solution
+on its specified slab has forces in $C_c^\infty(\mathbb R^2\times
+\mathbb R)$, with explicitly specified spatial and temporal support.
+
+On the smaller open set
+\[
+ |x|<\ell/2,\qquad |K_1\zeta\cdot x|<s_0,
+\]
+the exact fields are
+\begin{equation}
+ \theta=(-A_0e_0+wK_1\Theta\zeta)\cdot x,
+ \quad u=(\dot\alpha J+w\Omega J\zeta\otimes\zeta)x.
+ \label{eq:actualparentcore}
+\end{equation}
+Their Laplacians vanish there, and so do the additional diffusive
+forces \emph{and all their spatial derivatives} there. Therefore
+the evolving parent background for a next layer inside this open
+set is exactly the coupled gradient and shear in
+\eqref{eq:actualparentcore}, with the actual time-dependent
+$\Theta,\Omega,\alpha,w$. It has not been replaced by prescribed
+unchanging $D,G$. The finite-stage force supplies the compensating
+diffusion outside this affine region.
+
+\subsection{Every spatial diffusion cost, including the cutoff terms}
+Put $k=K_1\zeta$, so $|k|=K_1$. Direct differentiation gives
+\begin{align}
+ \Delta V={}&T\{K_1^2F''g+2F'k\cdot\nabla g+F\Delta g\},
+ \label{eq:lapV}\\
+ \Delta v={}&QJ\{K_1^2kF''g+K_1^2F'\nabla g
+ +2F'k(k\cdot\nabla g)\notag\\
+ &\hspace{26mm}+2F\nabla(k\cdot\nabla g)
+ +Fk\Delta g+P\nabla\Delta g\}.
+ \label{eq:lapv}
+\end{align}
+For the second formula first differentiate
+$\Delta\Psi=Q\{K_1^2F'g+2F k\cdot\nabla g+P\Delta g\}$,
+and apply $J$. These are exact differential expressions on all
+of $\mathbb R^2$ and retain the phase, mixed, and envelope terms.
+For example, their zeroth-order norms satisfy
+\begin{align}
+ \|\Delta V\|_\infty\leq{}&|T|\{
+ K_1^2\|F''\|_\infty\|g\|_\infty
+ +2K_1\|F'\|_\infty\|\nabla g\|_\infty
+ +\|F\|_\infty\|\Delta g\|_\infty\},\notag\\
+ \|\Delta v\|_\infty\leq{}&|Q|\{
+ K_1^3\|F''\|_\infty\|g\|_\infty
+ +3K_1^2\|F'\|_\infty\|\nabla g\|_\infty\notag\\
+ &+2K_1\|F\|_\infty\|\nabla^2g\|_\infty
+ +K_1\|F\|_\infty\|\Delta g\|_\infty
+ +\|P\|_\infty\|\nabla\Delta g\|_\infty\}.
+ \label{eq:zerocosts}
+\end{align}
+The Hessian norm is its operator norm, and vector norms are Euclidean.
+Thus no cutoff diffusion term has been absorbed into a frequency-only
+estimate. Here $\|\partial^\beta g\|_\infty
+=\ell^{-|\beta|}\|\partial^\beta f\|_\infty$, including every
+original $s_0,C_\ell,\mu$ through $\ell=s_0/(C_\ell\mu)$.
+
+For an arbitrary nonnegative integer $m$ put
+\[
+ E_m=\max_{|\beta|=m}\|\partial^\beta g\|_\infty,
+ \quad B_m(W)=\sum_{j=0}^m\binom mj
+ K_1^j\|W^{(j)}\|_\infty E_{m-j}.
+\]
+Leibniz' rule, $\partial^\beta W(k\cdot x)=k^\beta
+W^{(|\beta|)}(k\cdot x)$, and
+$\sum_{|\beta|=j,\,\beta\leq\gamma}\binom\gamma\beta
+=\binom mj$ for $|\gamma|=m$ prove
+\begin{align}
+ \max_{|\gamma|=m}\|\partial^\gamma\Delta V\|_\infty
+ &\leq2|T|B_{m+2}(F),\notag\\
+ \max_{|\gamma|=m}\|\partial^\gamma\Delta v\|_\infty
+ &\leq2\sqrt2|Q|B_{m+3}(P).
+ \label{eq:allspacecosts}
+\end{align}
+The two in each line counts the two coordinate Laplacian terms;
+$\sqrt2$ counts the two components of $J\nabla$.
+
+Let $S=|\Theta^{\rm seed}|$, let $L$ be the prescribed growth gain,
+let $\Lambda_1$ be the paper's pulse compression, and let $H_t\geq0$
+be the specified physical holding duration. The proved selected stage
+below has durations $L/\Gamma$, $1/\Gamma$,
+$(1+\Lambda_1^{-1})/\Gamma$, and $H_t$, respectively. On its
+growth and transition $|\Theta|=S\exp(\Gamma(t-t_{\rm in}))$
+and $|\Omega|=(K_1/\nu)|\Theta|$. On its selected steering,
+\[
+ |\Theta|\leq S e^{L+2+\Lambda_1^{-1}},\qquad
+ |\Omega|\leq\frac{K_1}{\nu}|\Theta|.
+\]
+On its hold $\Omega=0$ and $\Theta$ is constant. Consequently
+the explicit costs
+\begin{align}
+ I_\Theta={}&S\frac{e^{L+1}-1}{\Gamma}
+ +S e^{L+2+\Lambda_1^{-1}}
+ \left(\frac{1+\Lambda_1^{-1}}\Gamma+H_t\right),\notag\\
+ I_\Omega={}&\frac{K_1}{\nu}S\left\{
+ \frac{e^{L+1}-1}{\Gamma}
+ +e^{L+2+\Lambda_1^{-1}}\frac{1+\Lambda_1^{-1}}\Gamma\right\}
+ \label{eq:integratedamps}
+\end{align}
+satisfy $\int|T|\,dt\leq I_\Theta$ and
+$\int|w\Omega|\,dt\leq I_\Omega$ over the complete physical
+stage. This follows by integrating the exponential exactly,
+using $0\leq w\leq1$, and then using the stated bounds on the
+remaining intervals. Combining with \eqref{eq:allspacecosts} gives
+\begin{align}
+ \int\max_{|\gamma|=m}\|\partial^\gamma(-\kappa\Delta V)\|_\infty dt
+ &\leq2\kappa B_{m+2}(F)I_\Theta,\notag\\
+ \int\max_{|\gamma|=m}\|\partial^\gamma(-\varepsilon\Delta v)\|_\infty dt
+ &\leq\frac{2\sqrt2\varepsilon}{K_1^2}B_{m+3}(P)I_\Omega.
+ \label{eq:integratedcosts}
+\end{align}
+In particular the holding scalar cost is proportional to $H_t$;
+there is no assertion that a forced hold has zero scalar diffusion cost.
+
+The base costs are equally explicit. Write
+\[
+ C_m=\max_{|\beta|=m}\|\partial^\beta\chi_0\|_\infty,
+ \qquad
+ \mathcal B_m(W)=\sum_{j=0}^m\binom mj\mu^j
+ \|W^{(j)}\|_\infty C_{m-j}.
+\]
+On the initial interpolation
+$\theta_b=(1-\eta(\nu t))\theta_{\rm in}
++\eta(\nu t)\theta_{\rm ref}$; afterwards it is a rotated
+$F$-profile with the same radial cutoff. Thus, writing
+$T_f=1/\nu+(L+2+\Lambda_1^{-1})/\Gamma+H_t$,
+\begin{align}
+ \int_0^{T_f}\max_{|\gamma|=m}\|\partial^\gamma
+ (\kappa\Delta\theta_b)\|_\infty dt
+ &\leq\frac{2\kappa A_0}{\mu}
+ \left\{\frac{\max(\mathcal B_{m+2}(\sin),\mathcal B_{m+2}(F))}{\nu}
+ +(T_f-1/\nu)\mathcal B_{m+2}(F)\right\},\notag\\
+ \int_0^{T_f}\max_{|\gamma|=m}\|\partial^\gamma
+ (\varepsilon\Delta u_b)\|_\infty dt
+ &\leq \varepsilon\max_{|\gamma|=m}
+ \|\partial^\gamma J\nabla\Delta H\|_\infty
+ \int_0^{T_f}|\dot\alpha|\,dt.\label{eq:basecosts}
+\end{align}
+The last angle variation is exactly the finite integral of the
+explicit control and has the following fixed upper bound. For
+$z(\tau)$ in the stage proof and its selected pulse multiplier
+$m_*$, $|Z|\leq1/4$, and
+\[
+ \int|\dot\alpha|dt\leq\frac4{\sqrt{15}}\int|\dot Z|dt
+ \leq\frac{4\sin s_*}{\sqrt{15}}
+ \left(1+m_*\Lambda_1\int_0^1|\eta_2'(y)|dy\right).
+\]
+This uses $\alpha=s_*-\arcsin Z$, $\int_0^1\eta'=1$, and
+the change of variables $y=\Lambda_1(\tau-1)$ on the pulse.
+
+For completeness all mixed derivatives also have an exact finite
+replay formula; spatial bounds alone are not being called bounds for
+time derivatives. For $A=T,W=F$, or $A=Q,W=P$, and any multi-index
+$\gamma$, Leibniz gives
+\begin{equation}
+ \partial_t^b\partial_x^\gamma[AW(k\cdot x)g]
+ =\sum_{\beta\leq\gamma}\binom\gamma\beta(\partial^\beta g)
+ \sum_{a+c+d=b}\frac{b!}{a!c!d!}A^{(a)}
+ (k^{\gamma-\beta})^{(c)}\partial_t^d
+ W^{(|\gamma-\beta|)}(k\cdot x).
+ \label{eq:mixedexact}
+\end{equation}
+For $d>0$ the remaining derivative is the finite sum
+\[
+ \partial_t^d W^{(n)}(k\cdot x)=
+ \sum_{\substack{m_1,\ldots,m_d\geq0\\\sum j m_j=d}}
+ \frac{d!}{\prod_{j=1}^d m_j!(j!)^{m_j}}
+ W^{(n+\sum m_j)}(k\cdot x)
+ \prod_{j=1}^d(k^{(j)}\cdot x)^{m_j}.
+\]
+For $d=0$ it is $W^{(n)}(k\cdot x)$. This identity follows by
+induction: differentiation either increases the derivative order
+on $W$ and creates $k'\cdot x$, or differentiates one of the
+displayed factors; grouping the resulting multiplicities gives
+exactly the factorial coefficients at order $d+1$.
+On the support use $|k^{(j)}\cdot x|\leq\ell|k^{(j)}|$ and
+$|\partial^\beta g|\leq E_{|\beta|}$ to obtain an explicit
+upper bound from each term. Sum the two coordinate second
+derivatives in \eqref{eq:mixedexact} for $\Delta V$ and then
+differentiate once more spatially for $\Delta v$. The same formula
+with $k=\mu e_0$, $g=\chi_0$ handles $\theta_0$; the initial
+interpolation additionally uses the exact derivatives
+$\partial_t^a\eta(\nu t)=\nu^a\eta^{(a)}(\nu t)$.
+For $u_b$, mixed diffusion derivatives are exactly
+$\varepsilon\alpha^{(b+1)}\partial^\gamma J\nabla\Delta H$.
+All coefficient derivatives are defined by the explicit smooth
+stage equations on a compact interval and the finitely many fixed
+profile derivatives, so these formulas quantify every specified
+mixed order without an asymptotic omission.

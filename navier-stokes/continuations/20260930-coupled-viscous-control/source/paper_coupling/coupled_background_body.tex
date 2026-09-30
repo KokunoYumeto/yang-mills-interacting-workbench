@@ -1,0 +1,383 @@
+\paragraph{Source and scope.}
+The source is Levent Alp\"oge and Tristan Buckmaster, \emph{Blowup for the Boussinesq equations with smooth forcing}, the supplied 76-page released PDF. Page numbers below are the printed PDF page numbers. The companion source receipt identifies the exact local PDF by SHA-256. The equations and proofs here reconstruct the finite-dimensional system in Section 3, especially pp.~8--10 and 26--33, and its exact affine realization in Section 4, pp.~37--39. The source's local comparison bounds are identified as source results where mentioned; the new claims proved below are the coordinate, operator, feedback, and aggregate-background identities. No infinite retained-viscosity construction is asserted.
+
+\paragraph{Original data and the distinct parameters.}
+Keep the original data of source (1.4), p.~2:
+\[
+ A_0\ge1,\qquad \lambda_0=\left\lceil\frac{\sqrt{A_0}}2\right\rceil,
+ \qquad \theta_{\rm in}(x)=-\frac{A_0}{\lambda_0}\sin(\lambda_0x_2)\chi_0(x),
+ \qquad u_{\rm in}=0.
+\]
+Here $\chi_0\in C_c^\infty(B_{R_0})$ is radial, $R_0>2$, $0\le\chi_0\le1$, and $\chi_0=1$ on $B_2$. Write
+\[
+ \mu=\lambda_0,\qquad \nu_{\AB}=\sqrt{A_0},\qquad X=\mu x,\quad T=\nu_{\AB}t.
+\]
+The symbol $\nu_{\AB}$ is precisely the time-scaling parameter called $\nu$ in source Lemma 1.2, pp.~6--7. It is not physical viscosity. Physical momentum viscosity is $\epsv\ge0$ and thermal diffusivity is $\kapth\ge0$. The source uses $\mu$ again locally for its shooting amplitude; we display that independent parameter as $\mu_{\rm p}$, and never identify it with $\mu=\lambda_0$.
+
+Use a hat for a source Section 3 quantity, which is expressed there in $(X,T)$. The exact dictionary, keeping both presentations, is
+\begin{align}
+ \theta(x,t)&=\frac{\nu_{\AB}^2}{\mu}\widehat\theta(X,T),&
+ u(x,t)&=\frac{\nu_{\AB}}\mu\widehat u(X,T),&
+ p(x,t)&=\frac{\nu_{\AB}^2}{\mu^2}\widehat p(X,T),\label{pc:eq:scaling}\\
+ \omega(x,t)&=\nu_{\AB}\widehat\omega(X,T),&
+ \psi(x,t)&=\frac{\nu_{\AB}}{\mu^2}\widehat\psi(X,T),\nonumber\\
+ f_\theta(x,t)&=\frac{\nu_{\AB}^3}{\mu}\widehat f_\theta(X,T),&
+ f_u(x,t)&=\frac{\nu_{\AB}^2}{\mu}\widehat f_u(X,T).\nonumber
+\end{align}
+The transformed diffusivities are
+\begin{equation}\label{pc:eq:scaled-diffusion}
+ \widehat\kapth=\kapth\frac{\mu^2}{\nu_{\AB}},\qquad
+ \widehat\epsv=\epsv\frac{\mu^2}{\nu_{\AB}}.
+\end{equation}
+These statements follow directly from $\partial_t=\nu_{\AB}\partial_T$, $\nabla_x=\mu\nabla_X$, and $\Delta_x=\mu^2\Delta_X$: both scalar transport terms have factor $\nu_{\AB}^3/\mu$, both momentum transport terms and gravity have factor $\nu_{\AB}^2/\mu$, and the respective Laplacian terms have factors $\kapth\nu_{\AB}^2\mu$ and $\epsv\nu_{\AB}\mu$. The divergence scales by $\nu_{\AB}$, curl by $\nu_{\AB}$, and $J\nabla_x\psi=(\nu_{\AB}/\mu)J\nabla_X\widehat\psi$. Thus the laboratory gravity vector $e_2=(0,1)$ is unchanged. The inverse transformations divide by the displayed nonzero factors and evaluate at $(x,t)=(X/\mu,T/\nu_{\AB})$, so these are bijections of the corresponding smooth fields, with support radii divided by $\mu$ and time intervals divided by $\nu_{\AB}$.
+
+\paragraph{Layer dictionary.}
+For $j\ge1$ retain the original source $\widehat\lambda_j$, and define its actual spatial frequency $\lambda_j=\mu\widehat\lambda_j$. The remaining dictionary is
+\begin{align}
+ M_j(t)&=\widehat M_j(\nu_{\AB}t),&\zeta_j(t)&=\widehat\zeta_j(\nu_{\AB}t),&p_j&=\widehat p_j,\\
+ \Theta_j(t)&=\frac{\nu_{\AB}^2}{\mu}\widehat\Theta_j(\nu_{\AB}t),&
+ \Omega_j(t)&=\nu_{\AB}\widehat\Omega_j(\nu_{\AB}t),&
+ \alpha(t)&=\widehat\alpha(\nu_{\AB}t),\nonumber\\
+ A_j(t)&=\nu_{\AB}^2\widehat A_j(\nu_{\AB}t),&
+ \sigma_j&=\nu_{\AB}\widehat\sigma_j,&
+ \Gamma_j&=\nu_{\AB}\widehat\Gamma_j,\nonumber\\
+ D_{<j}(t)&=\nu_{\AB}\widehat D_{<j}(\nu_{\AB}t),&
+ G_{<j}(t)&=\nu_{\AB}^2\widehat G_{<j}(\nu_{\AB}t),&
+ \ell_j&=\widehat\ell_j/\mu.\nonumber
+\end{align}
+In particular $\sigma_0=\nu_{\AB}$, $A_0=\nu_{\AB}^2$, and the original $\lambda_0=\mu$ has not been reset. All unadorned derivatives below are in original physical time $t$.
+
+\paragraph{The exact coupled variables.}
+Let
+\[
+ J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+ e(\phi)=(\sin\phi,\cos\phi),\quad e_0=R_\alpha e_2=e(-\alpha),\quad w_0=1.
+\]
+For $j\ge1$ set $r_j=|\zeta_j|$, $e_j=\zeta_j/r_j=e(\phi_j)$, $P_j=-\Theta_j$, $A_j=\lambda_jr_jP_j$, and $B_j=\lambda_j\Theta_j\zeta_j=-A_je_j$. The positive-amplitude variables are used only on intervals where their positivity has been established. Put $B_0=-A_0e_0$, and
+\begin{equation}\label{pc:eq:coupled}
+ \begin{aligned}
+ G_{<j}&=B_0+\sum_{1\le i<j}w_iB_i,
+ &D_{<j}&=\dot\alpha J+\sum_{1\le i<j}w_iS_i,
+ &S_i&=\Omega_iJe_i\otimes e_i,\\
+ \dot M_j&=D_{<j}M_j,
+ &M_j(t_j^{\rm in})&=I,
+ &\zeta_j&=M_j^{-T}p_j,\\
+ \dot\Theta_j&=a_j\Omega_j,
+ &a_j&=-\frac{J\zeta_j\cdot G_{<j}}{\lambda_jr_j^2},
+ &\dot\Omega_j&=b_j\Theta_j,\quad b_j=\lambda_j\zeta_{j,1}.
+ \end{aligned}
+\end{equation}
+These are source (3.2)--(3.3), p.~8, in original units. To check their scaling, $a_j=(\nu_{\AB}^2/\mu)\widehat a_j$ and $b_j=\mu\widehat b_j$; consequently both amplitude equations have their correct factors $\nu_{\AB}^3/\mu$ and $\nu_{\AB}^2$. Since $\tr J=\tr(Je_i\otimes e_i)=0$, Jacobi's determinant formula gives $\det M_j=1$ throughout every finite existence interval.
+
+\paragraph{Derivation of the wave equations.}
+Let $F$ be the exact odd smooth periodic profile of source (4.1), and let $\mathcal P$ be its even mean-zero primitive. Put $s=\lambda_j\zeta_j\cdot x$ and
+\[
+ \vartheta_j=\Theta_jF(s),\quad
+ \psi_j=\frac{\Omega_j}{\lambda_j^2r_j^2}\mathcal P(s),\quad
+ v_j=\frac{\Omega_j}{\lambda_jr_j^2}J\zeta_j F(s),\quad
+ \varpi_j=\Omega_jF'(s).
+\]
+Differentiating $M_j^{-T}p_j$ gives $\dot\zeta_j=-D_{<j}^T\zeta_j$, hence $(\partial_t+D_{<j}x\cdot\nabla)s=0$. Moreover $J\zeta_j\cdot\zeta_j=0$, so $v_j\cdot\nabla\vartheta_j=v_j\cdot\nabla\varpi_j=0$. On an affine earlier state $G_{<j}\cdot x,D_{<j}x$, the added scalar residual is $(\dot\Theta_j+\Omega_jJ\zeta_j\cdot G_{<j}/(\lambda_jr_j^2))F$, and the added vorticity residual is $(\dot\Omega_j-\lambda_j\zeta_{j,1}\Theta_j)F'$. This proves the exact map from \eqref{pc:eq:coupled} to the unactivated local wave equations, including the fixed sign and gravity component.
+
+\paragraph{The control maps and every stage.}
+Source (3.4), p.~9, defines
+\begin{equation}\label{pc:eq:feedback}
+ F_j^{\rm ctl}=-\frac{\sum_{1\le i<j}w_i\Omega_i e_{i,1}(Je_i\cdot\zeta_j)}{\zeta_{j,2}},\qquad F_0^{\rm ctl}=0.
+\end{equation}
+The superscript distinguishes the paper's feedback $F_j$ from its periodic profile $F$. Transposing $D_{<j}$ in \eqref{pc:eq:coupled} and taking component one gives
+\[
+ \dot\zeta_{j,1}=(F_j^{\rm ctl}-\dot\alpha)\zeta_{j,2}.
+\]
+Thus $\dot\alpha=F_j^{\rm ctl}-\dot Z/\zeta_{j,2}$ implies $\zeta_{j,1}(t)=Z(t)$ whenever equality holds initially and the second component is nonzero. This proves the feedback map; the second component is not replaced by a constant.
+
+Here is the complete source schedule (3.7)--(3.12), pp.~9--10, preserving its units. Fix $\beta=1/8$, $Q_*\ge200$, $Q_j=Q_*+j$, and
+\begin{align}
+ \widehat\lambda_1&\gg1,\qquad\widehat\lambda_j=\widehat\lambda_{j-1}^{Q_j}\quad(j\ge2),\label{pc:eq:schedule}\\
+ \widehat\ell_1&=s_0/C_\ell,\quad C_\ell\ge4,\qquad\widehat\ell_j=\widehat\lambda_{j-1}^{-3}\quad(j\ge2),\nonumber\\
+ \widehat\Pi_1&=(\log\widehat\lambda_1)^{10},\qquad
+ \widehat\Pi_j=\widehat\lambda_{j-1}^{4}(\log\widehat\lambda_j)^{10}\quad(j\ge2),\nonumber\\
+ k_j&=\max\{k\in\mathbb N_0:120k\le Q_j,\ K(k)\le\log\widehat\lambda_j\},\nonumber\\
+ J_j&=2k_j+8,\qquad L_j=(k_j+5+\beta)\log\widehat\lambda_j.\nonumber
+\end{align}
+The prescribed seed is $\Theta_j^{\rm seed}=-(\nu_{\AB}^2/\mu)\widehat\lambda_j^{-k_j-6}$, and its gain target is
+\[
+ P_j(t_j^a)=\frac{\nu_{\AB}^2}{\mu}\widehat\lambda_j^{-7/8},
+ \qquad \frac{P_j(t_j^a)}{|\Theta_j^{\rm seed}|}=e^{L_j}.
+\]
+In particular the physical frequency recursion is $\lambda_j=\mu(\lambda_{j-1}/\mu)^{Q_j}$, not $\lambda_{j-1}^{Q_j}$.
+Let $\eta$ be smooth nondecreasing, zero on $(-\infty,0]$ and one on $[1,\infty)$; let $\eta_2\in C_c^\infty((0,1))$, $\eta_2\ge0$, $\int_0^1\eta_2=1$, and $H_2=\|\eta_2\|_\infty$. The fixed design is
+\[
+ c_p=3,\quad\bar v=2,\quad\Lambda_1\ge2c_pH_2,\quad
+ 0<s_*\le1/8,\quad c_p\Lambda_1H_2\sin s_*\le1/4.
+\]
+Set $t_1^{\rm in}=1/\nu_{\AB}$, $s_1=s_*$, $\Gamma_1=\nu_{\AB}\sin s_*$, and for $j\ge2$
+\[
+ t_j^{\rm in}=t_{j-1}^b,\quad s_j=L_j\frac{\sigma_{j-2}}{\sigma_{j-1}},\quad
+ \Gamma_j=\sigma_{j-1}\sin s_j,\quad\Lambda_j=L_j.
+\]
+At activation $p_j=e(s_j)$, $\Theta_j=\Theta_j^{\rm seed}$, $\Omega_j=\sqrt{b_j/a_j}\Theta_j$, where source Theorem 3.2 proves $a_j,b_j>0$ on the constructed growth interval. The activation multiplier is $w_j(t)=\eta(\Gamma_j(t-t_j^{\rm in}))$.
+\begin{enumerate}
+\item Growth: $\dot\alpha=F_{j-1}^{\rm ctl}$ until the first amplitude threshold $t_j^a$ displayed above.
+\item Transition: $t_j^1=t_j^a+\Gamma_j^{-1}$, $\eta_b=\eta(\Gamma_j(t-t_j^a))$, and $\dot\alpha=(1-\eta_b)F_{j-1}^{\rm ctl}+\eta_b F_j^{\rm ctl}$.
+\item Steering: write $z_1=\zeta_{j,1}(t_j^1)$ and $\chi_1=r_j(t_j^1)$. For $0\le h\le h_j^{\max}=c_p\Lambda_j\sin s_j$ define
+\[
+ Z_j(t)=z_1[1-\eta(\Gamma_j(t-t_j^1))]
+ -h\chi_1\eta_2\bigl(\Lambda_j\Gamma_j(t-t_j^1-\Gamma_j^{-1})\bigr),
+\]
+and $\dot\alpha=F_j^{\rm ctl}-\dot Z_j/\zeta_{j,2}$. The fixed endpoint is $t_j^b=t_j^1+\Gamma_j^{-1}(1+\Lambda_j^{-1})$. Select the least $h$ in the compact zero set $\Omega_j(t_j^b;h)=0$ proved nonempty in the source. No uniqueness is asserted for $j\ge2$.
+\item Holding: use $\dot\alpha=F_j^{\rm ctl}$ through $t_{j+1}^a$, concurrently with next-layer growth; evaluate $\sigma_j^2=|G_{<j+1}(t_j^b)|$ only after selecting the stage. Since $\zeta_{j,1}=\Omega_j=0$, both $\dot\Omega_j=0$ and $\dot\Theta_j=0$. This proves stationarity of this amplitude pair, while the older state and $M_j$ may continue to evolve.
+\end{enumerate}
+All these control maps are in physical time; $F_j^{\rm ctl}=\nu_{\AB}\widehat F_j^{\rm ctl}$, and $Z_j$ is dimensionless. The source's smooth time joins follow from flatness of $\eta$, interior support of $\eta_2$, and uniqueness for the stationary endpoint pair.
+
+\paragraph{Exact aggregate parent evolution.}
+The following identities explicitly give the background feedback rather than prescribing $D,G$ independently.
+\begin{proposition}\label{pc:prop:aggregate}
+For every finite activated system \eqref{pc:eq:coupled}, put $G=G_{<q}$, $D=D_{<q}$, and $C=D_{21}-D_{12}=2\dot\alpha+\sum_{i<q}w_i\Omega_i$. Then
+\begin{align}
+ \dot G+D^TG&=\sum_{1\le i<q}\dot w_i B_i,\label{pc:eq:Gdot}\\
+ \dot C-G_1&=2\ddot\alpha-A_0\sin\alpha+\sum_{1\le i<q}\dot w_i\Omega_i,\label{pc:eq:Cdot}\\
+ \dot D&=\ddot\alpha J+\sum_{1\le i<q}(\dot w_i\Omega_i+w_i b_i\Theta_i)Je_i\otimes e_i\nonumber\\
+ &\hspace{10mm}+\sum_{1\le i<q}w_i\Omega_i(\dot\alpha+\Sigma_i)
+ (Je_i\otimes Je_i-e_i\otimes e_i),\label{pc:eq:Ddot}\\
+ \Sigma_i&=\sum_{1\le k<i}w_k\Omega_k\sin^2(\phi_i-\phi_k).\nonumber
+\end{align}
+\end{proposition}
+\begin{proof}
+Differentiate $B_i=\lambda_i\Theta_i\zeta_i$ and use \eqref{pc:eq:coupled}:
+\[
+ \dot B_i+D_{<i}^TB_i
+ =-\Omega_i e_i(Je_i\cdot G_{<i})=-S_i^TG_{<i}.
+\]
+Also $\dot B_0+ (\dot\alpha J)^TB_0=0$. Expand $\dot G+D^TG$, insert these equalities, and keep all cross terms. Its nonactivation terms are
+\[
+ \sum_i w_i S_i^TB_0-
+ \sum_iw_iS_i^T\Bigl(B_0+\sum_{k<i}w_kB_k\Bigr)
+ +\sum_iw_i\sum_{k\ge i}w_kS_k^TB_i.
+\]
+The $B_0$ terms cancel. The terms with $k>i$ in the last sum cancel the preceding double sum after exchanging its indices. Its diagonal terms are $w_i^2S_i^TB_i=0$, because $Je_i\cdot e_i=0$. This proves \eqref{pc:eq:Gdot} with every activation derivative retained. Next $\dot C=2\ddot\alpha+\sum_i\dot w_i\Omega_i+\sum_iw_i\lambda_i\zeta_{i,1}\Theta_i$, while $G_1=B_{0,1}+\sum_iw_i\lambda_i\Theta_i\zeta_{i,1}$ and $B_{0,1}=A_0\sin\alpha$. Subtraction proves \eqref{pc:eq:Cdot}. Finally direct projection of $\dot\zeta_i=-D_{<i}^T\zeta_i$ onto $e_i$ and $Je_i$ gives $\dot e_i=(\dot\alpha+\Sigma_i)Je_i$. Differentiate $S_i=\Omega_iJe_i\otimes e_i$, use $J^2=-I$, and sum with the activation derivatives. This proves \eqref{pc:eq:Ddot}.
+\end{proof}
+
+For completeness these affine dynamics have an exact momentum realization. On an affine region set $u=Dx$, $\theta=G\cdot x$, $H=D'+D^2-e_2\otimes G$, and
+\[
+ p=-\tfrac12 x^T(\sym H)x,\qquad
+ f_\theta=(\dot G+D^TG)\cdot x,\qquad
+ f_u=\tfrac12(\dot C-G_1)Jx.
+\]
+Indeed $H-\sym H$ is the antisymmetric matrix with entry difference $H_{21}-H_{12}=\dot C-G_1$; here $D^2=-\det(D)I$ for a trace-free $2\times2$ matrix, verified by direct matrix multiplication. Thus $u_t+u\cdot\nabla u+\nabla p-\theta e_2=f_u$. Both Laplacians $\Delta\theta$ and $\Delta u$ are identically zero, so these same fields and forces solve the retained-viscosity equations on that region for every $\kapth,\epsv\ge0$.
+
+\paragraph{Relative geometry and its proof.}
+Set $\rho_j=\log r_j$, $d_{ij}=\phi_j-\phi_i$, $\phi_0=-\alpha$, and
+\[
+ \Gcal_j=\sum_{0\le i<j}w_iA_i\sin d_{ij}.
+\]
+Projection of the phase equation, using $Je_i\cdot e_j=-\sin d_{ij}$ and $e_i\cdot e_j=\cos d_{ij}$, gives
+\begin{align}
+ \dot\rho_j&=\sum_{1\le i<j}w_i\Omega_i\sin d_{ij}\cos d_{ij},&
+ \dot\phi_j&=-\dot\alpha-\Sigma_j,&\dot d_{ij}&=\Sigma_i-\Sigma_j,\label{pc:eq:polar}\\
+ a_j&=\Gcal_j/(\lambda_jr_j),&\dot\Omega_j&=-A_j\sin\phi_j,&
+ (\log P_j)'&=-\Gcal_j\Omega_j/A_j,\nonumber\\
+ F_j^{\rm ctl}&=-\Sigma_j+\dot\rho_j\tan\phi_j
+ =\frac{\sum_{1\le i<j}w_i\Omega_i\sin\phi_i\sin d_{ij}}{\cos\phi_j}.\nonumber
+\end{align}
+The last equality follows from $\sin\phi_i=\sin\phi_j\cos d_{ij}-\cos\phi_j\sin d_{ij}$. These are source (3.6), p.~9, and (3.55), p.~26, with $A_0$ retained.
+
+For adjacent phases $\vartheta_j=\phi_j-\phi_{j-1}$, the matrix difference is $D_{<j}-D_{<j-1}=w_{j-1}\Omega_{j-1}Je_{j-1}\otimes e_{j-1}$. Its transpose annihilates $\zeta_{j-1}$, so both $\zeta_{j-1}$ and $\zeta_j$ solve the same transport matrix equation. Its trace is zero, hence the derivative of their determinant is zero. At activation $\zeta_{j-1}=r_{j-1}(t_j^{\rm in})e_2$ and $\zeta_j=e(s_j)$, and the determinant in that order is $-r_{j-1}(t_j^{\rm in})\sin s_j$. Therefore, with the sign of this orientation kept,
+\begin{equation}\label{pc:eq:determinant}
+ d_j^{\rm adj}:=r_j\sin\vartheta_j
+ =\sin s_j\,e^{-\rho_{j-1}(t)+\rho_{j-1}(t_j^{\rm in})}.
+\end{equation}
+This is source (3.56), p.~26; its symbol $d_j^{\rm adj}$ denotes the source's separate $\mathfrak d_j$ rather than an angle $d_{ij}$.
+
+For $q\ge2$, all older activation weights are one on stage $q$. Define
+\[
+ E_2=\sum_{i=1}^{q-2}\Omega_i\sin d_{iq}\cos d_{iq},\qquad E_3=\dot\rho_{q-1},\qquad
+ E_1=\sin\vartheta_q\sum_{i=1}^{q-2}\Omega_i\sin(d_{iq}+d_{i,q-1}),
+\]
+and $R_q=\sum_{i=0}^{q-2}A_i\sin d_{iq}$. Then
+\begin{equation}\label{pc:eq:older}
+ \dot\vartheta_q=-E_1-\Omega_{q-1}\sin^2\vartheta_q,\quad
+ \dot\rho_q=E_2+\Omega_{q-1}\sin\vartheta_q\cos\vartheta_q,\quad
+ \Gcal_q=A_{q-1}\sin\vartheta_q+R_q.
+\end{equation}
+The first equality follows by subtracting the two angle equations and using $\sin^2a-\sin^2b=\sin(a-b)\sin(a+b)$; the other two are the corresponding split sums. At $q=2$ the shear sums $E_1,E_2,E_3$ vanish, but $R_2=A_0\sin d_{02}$ is retained. The source makes this exceptional base term explicit on p.~28.
+
+\paragraph{Exact later-stage model, including parent response.}
+Use $\sigma=\sigma_{q-1}$, $s=s_q$, $\Gamma=\sigma\sin s$, $L=L_q$, $\tau=\Gamma(t-t_q^1)$, $\chi=r_q$, $\chi_1=r_q(t_q^1)$, $W=\Omega_{q-1}/\sigma$, and $\mu_{\rm p}=h/(L\sin s)$. Write $d=d_q^{\rm adj}$, $d_1^*=d(t_q^1)$, and $e_4=z_1/d_1^*-1$. To avoid collision with the error coefficient $d_1$, the asterisk here marks the fixed adjacent determinant factor at steering entry. Then source (3.66), p.~31, is exactly
+\begin{align}
+ c_1&=(d/\sin s)\cos\vartheta_q,&d_1&=\chi E_2/\Gamma,\nonumber\\
+ c_2=c_5&=(A_{q-1}/\sigma^2)(d/\sin s),&c_3&=\sin s/d,\nonumber\\
+ d_3&=1-(d_1^*/d)(1+e_4),&c_4&=(d_1^*/\sin s)(1+e_4)=z_1/\sin s,\label{pc:eq:model-coeff}\\
+ d_4&=\frac{\chi_1R_q}{\chi\sigma^2\sin s},&
+ d_2&=\frac{A_{q-1}}{\sigma^2\sin s}\,
+ \frac{d(\cos\phi_q-1)-Z(\cos\vartheta_q-1)}\chi.\nonumber
+\end{align}
+Define $\widetilde k=c_5\chi_1/\chi^2+d_4$ and
+\begin{align*}
+ g(\tau)&=\begin{cases}\eta(\tau)+d_3(1-\eta(\tau)),&0\le\tau\le1,\\
+ 1+\mu_{\rm p}c_3L\chi_1\eta_2(L(\tau-1)),&1\le\tau\le1+L^{-1},\end{cases}\\
+ f(\tau)&=\begin{cases}(c_4/\chi_1)(1-\eta(\tau)),&0\le\tau\le1,\\
+ -\mu_{\rm p}L\eta_2(L(\tau-1)),&1\le\tau\le1+L^{-1}.\end{cases}
+\end{align*}
+On every interval where $\Theta_q\ne0$, put $v=\sigma\Omega_q/(\lambda_q\chi_1\Theta_q)$. The exact system is
+\begin{equation}\label{pc:eq:model}
+ \chi'=c_1W+d_1,\qquad W'=c_2g/\chi+d_2,\qquad
+ v'=f-\widetilde k v^2,\qquad (\log P_q)'=\widetilde k v,
+\end{equation}
+where these primes mean $\tau$ derivatives.
+\begin{proof}
+From \eqref{pc:eq:older}, $\dot r_q=r_qE_2+\Omega_{q-1}d\cos\vartheta_q$, proving the first equation. Next
+\[
+ \dot\Omega_{q-1}=A_{q-1}\sin(\vartheta_q-\phi_q)
+ =\frac{A_{q-1}}\chi(d\cos\phi_q-Z\cos\vartheta_q).
+\]
+Split its last parentheses as $d-Z+d(\cos\phi_q-1)-Z(\cos\vartheta_q-1)$. The profile gives $1-Z/d=g$ on each of its two intervals, proving the second equation including the full $d_2$. Also
+\[
+ \frac{a_q\lambda_q\chi_1}{\sigma\Gamma}
+ =\frac{\chi_1}{\sigma^2\sin s}
+ \left(\frac{A_{q-1}d}{\chi^2}+\frac{R_q}\chi\right)
+ =\widetilde k,
+ \qquad \frac{\sigma b_q}{\Gamma\lambda_q\chi_1}
+ =\frac{Z}{\chi_1\sin s}=f.
+\]
+Differentiate the quotient and $\log P_q$ to obtain the last equations. This proves the exact substitution without freezing $A_{q-1},\Omega_{q-1},\rho_{q-1}$, or any older layer.
+\end{proof}
+
+\paragraph{Where source selection is proved.}
+The source first proves interval-uniform bounds for \eqref{pc:eq:model} in Lemma 3.9, pp.~18--21, then excludes zeros of $\Theta_q$ in Proposition 3.10, pp.~21--22. For the actual stage it first constructs the closed older/geometry subsystem on a common compact subset of
+\[
+ \det M_j>1/2,\quad |M_j^{-T}p_j|>1/4,\quad
+ \zeta_{q-1,2}>z_*/2,\quad \zeta_{q,2}>z_*/2,
+\]
+by the simultaneous bounds in Sections 3.7.2--3.7.6, pp.~26--32. In original units the pair data and coefficient sizes change by the dictionary above, while this geometric domain is unchanged. The newest pair is absent from that subsystem: $F_q^{\rm ctl}$ uses only older vorticities and phases, and $M_q$ uses only $D_{<q}$. One then solves the newest linear pair over the constructed subsystem. This order matters for the exact map \eqref{pc:eq:model}. The source's $c_i=1+O(\epsilon_{\rm sch})$, $d_i=O(\epsilon_{\rm sch})$ estimates are consequences of its coupled induction, not independent prescriptions available after changing those dynamics.
+
+For reference, source (3.67), p.~32, gives on the selected actual stage
+\[
+ \frac{\Omega_{q-1}(t_q^b)}\sigma\in
+ [1/3-C\epsilon_{\rm sch},\,1+\bar v+C\epsilon_{\rm sch}],\qquad
+ \log\frac{P_q(t_q^b)}{(\nu_{\AB}^2/\mu)\widehat\lambda_q^{-7/8}}
+ \in[1+I_0-C\epsilon_{\rm sch},\,1+\bar v+C\epsilon_{\rm sch}],
+\]
+where $I_0=\int_0^1[(1+\tau^2/2)^2(1+\tau)]^{-1}\dd\tau\in[2/9,\log2]$. Source (3.58), p.~27, gives the separate first-stage gain interval $[1+\log2,2+\Lambda_1^{-1}]$ and exact duration $(L_1+2+\Lambda_1^{-1})/(\nu_{\AB}\sin s_*)$. These are source bounds, not claims that the diffusive evolution below satisfies them without further estimates.
+
+\paragraph{An explicit growth-end vorticity lower bound.}
+The source growth proof is Section 3.7.5, pp.~29--30, including (3.63)--(3.64), not the later steering quotient alone. Its identities admit the following explicit extraction from the source's choice of low-order tolerance. Put $u=\Omega_q/\Theta_q$, $u_*=(b_q/a_q)^{1/2}$, $\gamma=(a_qb_q)^{1/2}$, and $z=u/u_*$. The source chooses its fixed error tolerance before its frequency threshold; require the following finite additional strict comparison when making that same choice: all the growth errors used here have absolute value at most $\delta\le1/4$. Thus its proved geometric and coefficient estimates give
+\[
+ r_q\ge1-\delta,\quad \frac{d_q^{\rm adj}}{\sin s_q}\ge1-\delta,\quad
+ \frac{\Gcal_q}{\sigma_{q-1}^2\sin s_q}\le1+\delta,\quad
+ |(\log u_*)'|\le\delta\gamma.
+\]
+The original source's error rates in (3.63) are $C\epsilon_{\rm sch}\Gamma_q/L_q$, while $\gamma=(1+O(\epsilon_{\rm sch}))\Gamma_q$, so this comparison is obtained by the same fixed-data choice of $\epsilon_{\rm sch}$; it imposes no new order-dependent frequency condition.
+
+Here is the complete quotient proof used for the extraction. Direct differentiation before any possible zero of $\Theta_q$ gives
+\[
+ u'=b_q-a_qu^2,\qquad z'=\gamma(1-z^2)-z(\log u_*)',\qquad z(t_q^{\rm in})=1.
+\]
+At $z=1+\delta$, the right side is at most
+$\gamma[-2\delta-\delta^2+\delta(1+\delta)]=-\delta\gamma<0$;
+at $z=1-\delta$ it is at least
+$\gamma[2\delta-\delta^2-\delta(1-\delta)]=\delta\gamma>0$.
+The first-exit argument proves $1-\delta\le z\le1+\delta$. This bound also excludes a first zero of $\Theta_q$: at such a zero it would force $\Omega_q=0$, contradicting backward uniqueness of the continuous-coefficient linear system from its nonzero entry datum. Consequently the bound holds through $t_q^a$.
+On growth the preceding phase is vertical, so $b_q=\lambda_qd_q^{\rm adj}$ and $a_q=\Gcal_q/(\lambda_qr_q)$. It follows exactly that
+\[
+ u_*=\lambda_q\sqrt{\frac{d_q^{\rm adj}r_q}{\Gcal_q}},\qquad
+ \frac{|\Omega_q|}{|\Theta_q|}=zu_*
+ \ge\frac{\lambda_q}{\sigma_{q-1}}
+ \frac{(1-\delta)^2}{\sqrt{1+\delta}}
+ \ge\frac{\lambda_q}{2\sigma_{q-1}}.
+\]
+For the last inequality the function $(1-\delta)^2/\sqrt{1+\delta}$ is decreasing on $[0,1/4]$ by direct logarithmic differentiation, and its value at $1/4$ is $9/(8\sqrt5)>1/2$ because $81>80$. Thus the exact physical growth threshold satisfies
+\begin{equation}\label{pc:eq:omega-lower}
+ |\Omega_q(t_q^a)|\ge\frac{\lambda_q}{2\sigma_{q-1}}
+ \frac{\nu_{\AB}^2}{\mu}\widehat\lambda_q^{-7/8}
+ =\frac{\nu_{\AB}^2}{2\sigma_{q-1}}\widehat\lambda_q^{1/8},
+ \qquad r_q(t_q^a)\ge3/4.
+\end{equation}
+For $q=1$ the exact growing eigenline instead gives equality $|\Omega_1/\Theta_1|=\lambda_1/\nu_{\AB}$ and $r_1=1$, which is stronger than the displayed lower bound. No unproved viscous tracking assertion is used in this extraction.
+
+\paragraph{The actual profile and retained viscosity.}
+The source profile, (4.1), p.~37, is
+\[
+ F(s)=\sin s+\chi(s)(s-\sin s),\qquad |s|\le\pi,
+\]
+periodically continued, where $\chi$ is even, smooth, compactly supported in $(-\pi,\pi)$ and one on $[-s_0,s_0]$. Thus $F=s$ on that interval. Direct differentiation of the local waves gives the retained-diffusion residual increments
+\begin{align}
+ \mathcal R_\theta&=(\dot\Theta_j-a_j\Omega_j)F(s)-\kapth\lambda_j^2r_j^2\Theta_jF''(s),\label{pc:eq:actual-diffusion}\\
+ \mathcal R_\omega&=(\dot\Omega_j-b_j\Theta_j)F'(s)-\epsv\lambda_j^2r_j^2\Omega_jF'''(s).\nonumber
+\end{align}
+Consequently the actual fixed-profile, finite-stage retained-viscosity realization uses the original coupled system and the explicit additional forces $-\kapth\Delta\theta$ and $-\epsv\Delta u$. The signs in \eqref{pc:eq:actual-diffusion} are the signs of these forces when diffusion is placed on the right of the PDE. They are not positive damping terms in the forcing.
+
+This repair preserves the exact actual $D,G$ in Proposition \ref{pc:prop:aggregate}: on every older affine region, $F''=F'''=0$, all envelope derivatives vanish, and the source's finite corrections vanish on that plateau. Hence the repaired force increments vanish in each affine core, and both Laplacians of the full older affine fields are zero. In physical coordinates the affine core of layer $j$ contains
+\[
+ B_{r_j^{\rm aff}(t)},\qquad r_j^{\rm aff}(t)=
+ \min\left\{\frac{\ell_j}{2\|M_j^{-1}\|},\frac{s_0}{\lambda_jr_j}\right\}.
+\]
+The exact source nesting criterion is $K_jK_q\ell_q<\ell_j/2$ and $\lambda_jr_jK_q\ell_q<s_0$ for every older layer $j<q$; scaling by $\mu$ preserves both inequalities. The full-vector repair and the unchanged support follow because differentiation of a smooth compactly supported field does not enlarge its support. Quantitative force costs are provided separately in the parent calculation; the algebraic identity alone gives no uniform terminal force bound.
+
+\paragraph{The exact feedback terms in a scalar-damped comparison.}
+For transparency, compute also the altered finite-dimensional equations obtained from Fourier eigenprofiles. They are not the released fixed profile. Let $d_j^\theta=\kapth\lambda_j^2r_j^2$ and $d_j^\omega=\epsv\lambda_j^2r_j^2$, and replace only the two amplitude equations by
+\begin{equation}\label{pc:eq:damped}
+ \dot\Theta_j=a_j\Omega_j-d_j^\theta\Theta_j,\qquad
+ \dot\Omega_j=b_j\Theta_j-d_j^\omega\Omega_j,
+\end{equation}
+while computing all $D,G,F_j^{\rm ctl}$ from the altered amplitudes and phases. For a sine profile these are precisely the homogeneous local wave equations, since $F''=-F$ and $F'''=-F'$. Repeating the proof of Proposition \ref{pc:prop:aggregate} gives exactly
+\begin{align}
+ \dot G+D^TG&=\sum_{i<q}\dot w_iB_i-\sum_{i<q}w_i d_i^\theta B_i,\label{pc:eq:damped-background}\\
+ \dot C-G_1&=2\ddot\alpha-A_0\sin\alpha+\sum_{i<q}\dot w_i\Omega_i
+ -\sum_{i<q}w_i d_i^\omega\Omega_i.\nonumber
+\end{align}
+In \eqref{pc:eq:Ddot}, replace $b_i\Theta_i$ by $b_i\Theta_i-d_i^\omega\Omega_i$. The geometric equations \eqref{pc:eq:polar}, \eqref{pc:eq:determinant}, and \eqref{pc:eq:older} retain their formulas but now use altered amplitudes. The exact gradient-amplitude drift becomes
+\begin{equation}\label{pc:eq:Adrift}
+ \frac{\dot A_i}{A_i}=\dot\rho_i-\frac{\Gcal_i\Omega_i}{A_i}-d_i^\theta.
+\end{equation}
+This follows by differentiating $A_i=\lambda_ir_iP_i$ and \eqref{pc:eq:damped}. In particular
+\begin{align*}
+ \dot\Gcal_j&=A_0\cos d_{0j}(\Sigma_0-\Sigma_j)
+ +\sum_{1\le i<j}\dot w_iA_i\sin d_{ij}\\
+ &\quad+\sum_{1\le i<j}w_iA_i
+ \left[\left(\dot\rho_i-\frac{\Gcal_i\Omega_i}{A_i}-d_i^\theta\right)\sin d_{ij}
+ +\cos d_{ij}(\Sigma_i-\Sigma_j)\right],\qquad \Sigma_0=0.
+\end{align*}
+No base term or activation derivative has been discarded.
+
+The feedback derivative is also explicit. With $N_{ij}=w_i\Omega_i\sin\phi_i\sin d_{ij}$,
+\begin{align*}
+ \dot F_j^{\rm ctl}&=\frac1{\cos\phi_j}\sum_{i<j}\bigl[
+ (\dot w_i\Omega_i+w_i(b_i\Theta_i-d_i^\omega\Omega_i))\sin\phi_i\sin d_{ij}\\
+ &\qquad+w_i\Omega_i\cos\phi_i(-\dot\alpha-\Sigma_i)\sin d_{ij}
+ +w_i\Omega_i\sin\phi_i\cos d_{ij}(\Sigma_i-\Sigma_j)\bigr]
+ +F_j^{\rm ctl}\tan\phi_j(-\dot\alpha-\Sigma_j).
+\end{align*}
+The direct damping term is therefore $-\sum_{i<j}w_id_i^\omega\Omega_i\sin\phi_i\sin d_{ij}/\cos\phi_j$, in addition to all changes in the evolving state and the other terms displayed above.
+
+For the later-stage variables and coefficients \eqref{pc:eq:model-coeff}, direct differentiation gives the exact altered model
+\begin{align}\label{pc:eq:damped-model}
+ \chi'&=c_1W+d_1,&
+ W'&=c_2g/\chi+d_2-\frac{d_{q-1}^\omega}{\Gamma}W,\\
+ v'&=f-\widetilde k v^2+\frac{d_q^\theta-d_q^\omega}{\Gamma}v,&
+ (\log P_q)'&=\widetilde k v-\frac{d_q^\theta}{\Gamma}.\nonumber
+\end{align}
+To prove the extra terms, $W'=\dot\Omega_{q-1}/(\sigma\Gamma)$ supplies its damping term; differentiating $\Omega_q/\Theta_q$ supplies $(d_q^\theta-d_q^\omega)\Omega_q/\Theta_q$; differentiating $\log(-\Theta_q)$ supplies $-d_q^\theta$. The previous derivation supplies all remaining terms. These are identities on every interval where their displayed denominators are nonzero, and do not assert a new existence theorem from assumed coefficient bounds.
+
+Even when $\kapth=\epsv$, only the explicit damping term in the quotient equation cancels. The preceding-layer term $-d_{q-1}^\omega W/\Gamma$ remains, $A_{q-1}$ and $R_q$ obey the altered gradient drifts, and hence $c_2,c_5,d_4$ evolve differently. On holding, $\zeta_{q,1}=\Omega_q=0$ still solves those two equations, but
+\[
+ P_q(t)=P_q(t_q^b)\exp\left(-\kapth\lambda_q^2\int_{t_q^b}^{t}r_q(s)^2\dd s\right)
+\]
+is no longer stationary if $\kapth>0$. This follows by solving $\dot P_q=-d_q^\theta P_q$; $r_q$ retains its evolving value inside the integral.
+
+\paragraph{Finite-stage gain and exact diffusion integrals.}
+For the damped comparison, \eqref{pc:eq:damped-model} proves the exact identity
+\[
+ \log\frac{P_q(t_b)}{P_q(t_a)}
+ =\int_{t_a}^{t_b}\!\left(-\frac{\Gcal_q\Omega_q}{A_q}\right)\dd t
+ -\kapth\lambda_q^2\int_{t_a}^{t_b}r_q^2\dd t.
+\]
+For a stage partitioned into growth, transition, positive steering, negative steering, and holding, the last integral is the sum over all five actual intervals. Its original-unit coefficient is
+\[
+ \kapth\lambda_q^2\int r_q^2\dd t
+ =\frac{\kapth\mu^2}{\nu_{\AB}}\widehat\lambda_q^2
+ \int \widehat r_q^2\dd T.
+\]
+On any finite interval of length $H$ with proved bounds $m\le r_q\le M$, its exact value is bracketed by $\kapth\lambda_q^2m^2H$ and $\kapth\lambda_q^2M^2H$. The inequality is simply the integrated pointwise inequality $m^2\le r_q^2\le M^2$. It does not permit retaining the original source gain integral when the coupled parent trajectory has changed. Conversely, in the actual fixed-profile force repair the trajectory and the gain integral remain exactly those of the source, and the diffusion cost is paid by the additional explicit force, not by a damping loss in that trajectory.
+
+\paragraph{Status of the infinite sequence.}
+The source constructs its inviscid infinite sequence after fixing low-order design bounds, then all coefficient/correction constants, then the nondecreasing majorant $K$ of (7.21), p.~63, and finally one initial frequency threshold in (8.1)--(8.6), pp.~66--67. It proves the coupled stages before evaluating each new $\sigma_q$, and it proves full-lifetime bounds before applying the finite corrections. The retained-viscosity finite-stage force repair proved here commutes exactly with every finite activated sum. Extending its force series smoothly to the limiting time requires estimates for the additional Laplacian terms; no such terminal estimates have been established in this document. The exact Fourier comparison \eqref{pc:eq:damped-model} does not supply them, and its altered parent terms prevent importing the source's inviscid coefficient bounds without a new calculation. Neither statement is a disproof of another retained-viscosity construction.

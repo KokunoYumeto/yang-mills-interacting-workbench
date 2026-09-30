@@ -51,3 +51,22 @@ This state records the actual outcome and makes the full work available for reus
 The reconstruction makes no prize or discovery-priority claim. Recurring mirror work is paused after the current publication update at the owner's request; the public edition and Overleaf reader remain available.
 
 [Whole-workbench reading map](../WORKBENCH.md) · [Topic overview](README.md) · [Research log](../RESEARCH_LOG.md)
+
+
+## Finite controls and complete signed force — 30 September 2026
+
+[Read the new complete proofs and sources](continuations/20260930-coupled-viscous-control/).
+The addition proves the finite third Boussinesq return at positive diffusion,
+its exact fixed-diffusion scaling, the based-state interface and returned-core
+correction. It calculates the complete annulus force and every mixed derivative,
+then proves the force needed to reach a compact based state. The current
+complete LaTeX includes these results; the supplied 121-page PDF is a
+clearly identified earlier snapshot pending compilation of the newest sections.
+The modified infinite return, all-stage force budget and terminal smooth
+extension remain unfinished. Full comparison and spectral reviews are included.
+
+The [Everyday English material](https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english)
+is an unfinished experiment whose success has not been established.
+Its earlier full-paper draft and later page-1 restart are preserved separately
+for reading, comparison and reference.
+

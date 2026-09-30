@@ -1,0 +1,123 @@
+{
+  "scope": "Actual candidate pressure-defect bridge, source five-row map, nonlinear recomputation",
+  "analytic_scope": "Written proofs and attributed source estimates in operation_body.tex; algebra checks are not terminal iteration estimates",
+  "source_pdf_sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+  "tex_sha256": "14ab6d566a4b376eed8bdc9621a2758732ceafb82b640f21359de2fa40e19a7a",
+  "script_sha256": "a008a74e9b34f31180dd42d452621b68cc89d32bcc25cf498dfdb1d8ad7c4568",
+  "check_count": 28,
+  "passed": true,
+  "checks": [
+    {
+      "name": "actual_pressure_defect_boundary_identity",
+      "passed": true
+    },
+    {
+      "name": "actual_second_radial_source_moment_boundary_identity",
+      "passed": true
+    },
+    {
+      "name": "compact_pressure_weighted_identity",
+      "passed": true
+    },
+    {
+      "name": "moving_bump_full_axial_derivative",
+      "passed": true
+    },
+    {
+      "name": "moving_pressure_bump_second_moment_derivative",
+      "passed": true
+    },
+    {
+      "name": "axial_pressure_coupling_keeps_c_rho_derivative",
+      "passed": true
+    },
+    {
+      "name": "source_theta_moment_normalization_exponent",
+      "passed": true
+    },
+    {
+      "name": "source_axial_moment_normalization_exponent",
+      "passed": true
+    },
+    {
+      "name": "source_c_rho_P_normalization_exponent",
+      "passed": true
+    },
+    {
+      "name": "temporal_update_physical_inverse_keeps_all_Q_powers",
+      "passed": true
+    },
+    {
+      "name": "temporal_update_physical_time_unit_equals_residual_unit",
+      "passed": true
+    },
+    {
+      "name": "temporal_update_physical_fast_direction_factor",
+      "passed": true
+    },
+    {
+      "name": "temporal_radial_potential_axial_factor_is_epsilon",
+      "passed": true
+    },
+    {
+      "name": "five_row_angular_velocity_scale",
+      "passed": true
+    },
+    {
+      "name": "five_row_axial_velocity_scale",
+      "passed": true
+    },
+    {
+      "name": "five_row_pressure_scale",
+      "passed": true
+    },
+    {
+      "name": "five_row_theta_flux_scale",
+      "passed": true
+    },
+    {
+      "name": "five_row_axial_flux_scale",
+      "passed": true
+    },
+    {
+      "name": "fifth_row_single_radius_from_radial_pressure",
+      "passed": true
+    },
+    {
+      "name": "reserved_patch_chart_factor_Q_over_q_to_A",
+      "passed": true
+    },
+    {
+      "name": "three_bump_Vandermonde_determinant",
+      "passed": true
+    },
+    {
+      "name": "angular_moment_matrix_full_determinant",
+      "passed": true
+    },
+    {
+      "name": "axial_moment_matrix_full_determinant",
+      "passed": true
+    },
+    {
+      "name": "complete_nonlinear_radial_source_remainder",
+      "passed": true
+    },
+    {
+      "name": "theta_flux_defect_exact_nonlinear_remainder",
+      "passed": true
+    },
+    {
+      "name": "axial_flux_defect_exact_nonlinear_remainder",
+      "passed": true
+    },
+    {
+      "name": "induced_radial_velocity_full_q_and_target_derivatives",
+      "passed": true
+    },
+    {
+      "name": "azimuthal_potential_exact_divergence",
+      "passed": true
+    }
+  ]
+}

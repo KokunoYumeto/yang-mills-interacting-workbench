@@ -1,0 +1,317 @@
+{
+  "audit": "Exact scalar rational checks for third steering local existence",
+  "created_utc": "2026-09-30T09:15:29.755518+00:00",
+  "count_scheme": "One named scalar rational equality or strict inequality per check; independent of the existing 56 symbolic identity count.",
+  "source": "<user-root>\\Documents\\math\\research\\navier_stokes_main\\publication\\workbench\\navier-stokes\\continuations\\20260930-coupled-viscous-control\\source\\third_return\\third_return_body.tex",
+  "source_sha256": "245091a1fe6db5746f80ce3702a85787c3cbc899489d4e3e81ac419fcfaf513d",
+  "script_sha256": "3e365f0a489facaa77bb70f381e5f0dfc3dd6605c2dc9d421de0bd5253f4338a",
+  "check_count": 38,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "sin(s)>=s/2 Taylor remainder coefficient",
+      "left": "1/1572864",
+      "relation": "<",
+      "right": "1/2",
+      "right_minus_left": "786431/1572864",
+      "passed": true
+    },
+    {
+      "name": "h lower bound after cube subtraction (squared comparison)",
+      "left": "262143/262144",
+      "relation": ">",
+      "right": "16129/16384",
+      "right_minus_left": "-4079/262144",
+      "passed": true
+    },
+    {
+      "name": "h cube upper bound",
+      "left": "417/128",
+      "relation": "<",
+      "right": "4",
+      "right_minus_left": "95/128",
+      "passed": true
+    },
+    {
+      "name": "g cube lower bound",
+      "left": "95/128",
+      "relation": ">",
+      "right": "11/16",
+      "right_minus_left": "-7/128",
+      "passed": true
+    },
+    {
+      "name": "g cube upper bound",
+      "left": "641/128",
+      "relation": "<",
+      "right": "6",
+      "right_minus_left": "127/128",
+      "passed": true
+    },
+    {
+      "name": "E cube lower endpoint",
+      "left": "15/128",
+      "relation": "=",
+      "right": "15/128",
+      "right_minus_left": "0",
+      "passed": true
+    },
+    {
+      "name": "E cube upper bound",
+      "left": "257/128",
+      "relation": "<",
+      "right": "3",
+      "right_minus_left": "127/128",
+      "passed": true
+    },
+    {
+      "name": "F cube lower endpoint",
+      "left": "7/128",
+      "relation": "=",
+      "right": "7/128",
+      "right_minus_left": "0",
+      "passed": true
+    },
+    {
+      "name": "F cube upper bound",
+      "left": "385/128",
+      "relation": "<",
+      "right": "4",
+      "right_minus_left": "127/128",
+      "passed": true
+    },
+    {
+      "name": "absolute omega cube upper bound",
+      "left": "1281/128",
+      "relation": "<",
+      "right": "11",
+      "right_minus_left": "127/128",
+      "passed": true
+    },
+    {
+      "name": "actual transition absolute V bound",
+      "left": "55/65536",
+      "relation": "<",
+      "right": "1/32",
+      "right_minus_left": "1993/65536",
+      "passed": true
+    },
+    {
+      "name": "absolute V cube upper bound",
+      "left": "5/128",
+      "relation": "<",
+      "right": "1/16",
+      "right_minus_left": "3/128",
+      "passed": true
+    },
+    {
+      "name": "D cube lower bound",
+      "left": "3969/4096",
+      "relation": ">",
+      "right": "15/16",
+      "right_minus_left": "-129/4096",
+      "passed": true
+    },
+    {
+      "name": "D cube upper bound",
+      "left": "4194305/262144",
+      "relation": "<",
+      "right": "17",
+      "right_minus_left": "262143/262144",
+      "passed": true
+    },
+    {
+      "name": "Z upper bound from actual transition coefficient",
+      "left": "9/4096",
+      "relation": "<",
+      "right": "1/128",
+      "right_minus_left": "23/4096",
+      "passed": true
+    },
+    {
+      "name": "b upper scale",
+      "left": "1/128",
+      "relation": "=",
+      "right": "1/128",
+      "right_minus_left": "0",
+      "passed": true
+    },
+    {
+      "name": "R positive lower bound",
+      "left": "121/4352",
+      "relation": ">",
+      "right": "1/64",
+      "right_minus_left": "-53/4352",
+      "passed": true
+    },
+    {
+      "name": "Y positive lower bound (squared)",
+      "left": "255/16384",
+      "relation": ">",
+      "right": "1/81",
+      "right_minus_left": "-4271/1327104",
+      "passed": true
+    },
+    {
+      "name": "x numerator lower bound",
+      "left": "44351/65536",
+      "relation": ">",
+      "right": "17/32",
+      "right_minus_left": "-9535/65536",
+      "passed": true
+    },
+    {
+      "name": "x lower bound after division by 17",
+      "left": "1/32",
+      "relation": "=",
+      "right": "1/32",
+      "right_minus_left": "0",
+      "passed": true
+    },
+    {
+      "name": "g shear coefficient bound in units of a",
+      "left": "340/21",
+      "relation": "<",
+      "right": "17",
+      "right_minus_left": "17/21",
+      "passed": true
+    },
+    {
+      "name": "second numerator bound in units of a",
+      "left": "27/8",
+      "relation": "<",
+      "right": "4",
+      "right_minus_left": "5/8",
+      "passed": true
+    },
+    {
+      "name": "absolute h derivative bound",
+      "left": "11/4194304",
+      "relation": "<",
+      "right": "1",
+      "right_minus_left": "4194293/4194304",
+      "passed": true
+    },
+    {
+      "name": "absolute g derivative bound",
+      "left": "1048763/4194304",
+      "relation": "<",
+      "right": "1",
+      "right_minus_left": "3145541/4194304",
+      "passed": true
+    },
+    {
+      "name": "absolute E derivative bound",
+      "left": "3145739/134217728",
+      "relation": "<",
+      "right": "1",
+      "right_minus_left": "131071989/134217728",
+      "passed": true
+    },
+    {
+      "name": "absolute omega derivative bound",
+      "left": "707/8192",
+      "relation": "<",
+      "right": "1",
+      "right_minus_left": "7485/8192",
+      "passed": true
+    },
+    {
+      "name": "absolute F derivative bound",
+      "left": "70093866270721/131941395333120",
+      "relation": "<",
+      "right": "1",
+      "right_minus_left": "61847529062399/131941395333120",
+      "passed": true
+    },
+    {
+      "name": "absolute V derivative damping term",
+      "left": "17/2048",
+      "relation": "=",
+      "right": "17/2048",
+      "right_minus_left": "0",
+      "passed": true
+    },
+    {
+      "name": "V derivative absorbs damping into one over sin(s)",
+      "left": "17/2048",
+      "relation": "<",
+      "right": "1",
+      "right_minus_left": "2031/2048",
+      "passed": true
+    },
+    {
+      "name": "V derivative coefficient below complete vector field coefficient",
+      "left": "21",
+      "relation": "<",
+      "right": "32",
+      "right_minus_left": "11",
+      "passed": true
+    },
+    {
+      "name": "unit row bound below complete vector field bound for sin(s)<=1",
+      "left": "1",
+      "relation": "<",
+      "right": "32",
+      "right_minus_left": "31",
+      "passed": true
+    },
+    {
+      "name": "local dimensionless endpoint lies before the pulse",
+      "left": "1/4194304",
+      "relation": "<",
+      "right": "1",
+      "right_minus_left": "4194303/4194304",
+      "passed": true
+    },
+    {
+      "name": "M times tau0 cancellation",
+      "left": "1/256",
+      "relation": "=",
+      "right": "1/256",
+      "right_minus_left": "0",
+      "passed": true
+    },
+    {
+      "name": "full local displacement is below cube radius",
+      "left": "1/256",
+      "relation": "<",
+      "right": "1/128",
+      "right_minus_left": "1/256",
+      "passed": true
+    },
+    {
+      "name": "R finite upper bound for newest linear pair",
+      "left": "117965/3072",
+      "relation": "<",
+      "right": "39",
+      "right_minus_left": "1843/3072",
+      "passed": true
+    },
+    {
+      "name": "y finite upper bound coefficient in units of a",
+      "left": "352/15",
+      "relation": "=",
+      "right": "352/15",
+      "right_minus_left": "0",
+      "passed": true
+    },
+    {
+      "name": "actual transition newest angular lift upper bound",
+      "left": "1048591/100663296",
+      "relation": "<",
+      "right": "1/64",
+      "right_minus_left": "524273/100663296",
+      "passed": true
+    },
+    {
+      "name": "x finite upper bound",
+      "left": "128/21",
+      "relation": "<",
+      "right": "7",
+      "right_minus_left": "19/21",
+      "passed": true
+    }
+  ],
+  "scope": "Finite arithmetic audit of the actual local theorem; no simulated solution, full trial, or third shooting root."
+}

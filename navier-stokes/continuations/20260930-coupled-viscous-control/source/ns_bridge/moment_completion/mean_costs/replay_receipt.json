@@ -1,0 +1,817 @@
+{
+  "schema": "mean-costs-exact-replay-v1",
+  "all_passed": true,
+  "check_count": 190,
+  "checks": [
+    {
+      "name": "original A plus D",
+      "passed": true
+    },
+    {
+      "name": "original D plus 2h equals A",
+      "passed": true
+    },
+    {
+      "name": "original reciprocal a eta derivative 0",
+      "passed": true
+    },
+    {
+      "name": "original reciprocal a eta derivative 1",
+      "passed": true
+    },
+    {
+      "name": "original reciprocal a eta derivative 2",
+      "passed": true
+    },
+    {
+      "name": "original reciprocal a eta derivative 3",
+      "passed": true
+    },
+    {
+      "name": "original reciprocal a eta derivative 4",
+      "passed": true
+    },
+    {
+      "name": "three-row exact Vandermonde determinant",
+      "passed": true
+    },
+    {
+      "name": "two-row exact Vandermonde determinant",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 0,0",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 0,1",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 0,2",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 1,0",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 1,1",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 1,2",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 2,0",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 2,1",
+      "passed": true
+    },
+    {
+      "name": "three-row exact inverse entry 2,2",
+      "passed": true
+    },
+    {
+      "name": "two-row exact inverse entry 0,0",
+      "passed": true
+    },
+    {
+      "name": "two-row exact inverse entry 0,1",
+      "passed": true
+    },
+    {
+      "name": "two-row exact inverse entry 1,0",
+      "passed": true
+    },
+    {
+      "name": "two-row exact inverse entry 1,1",
+      "passed": true
+    },
+    {
+      "name": "pressure profile exact row 0",
+      "passed": true
+    },
+    {
+      "name": "axial-defect angular profile exact row 0",
+      "passed": true
+    },
+    {
+      "name": "pressure profile exact row 1",
+      "passed": true
+    },
+    {
+      "name": "axial-defect angular profile exact row 1",
+      "passed": true
+    },
+    {
+      "name": "pressure profile exact row 2",
+      "passed": true
+    },
+    {
+      "name": "axial-defect angular profile exact row 2",
+      "passed": true
+    },
+    {
+      "name": "angular-defect axial profile exact row 0",
+      "passed": true
+    },
+    {
+      "name": "angular-defect axial profile exact row 1",
+      "passed": true
+    },
+    {
+      "name": "combined primitive weighted tail cancellation",
+      "passed": true
+    },
+    {
+      "name": "physical angular coefficient 0",
+      "passed": true
+    },
+    {
+      "name": "physical angular coefficient 1",
+      "passed": true
+    },
+    {
+      "name": "physical angular coefficient 2",
+      "passed": true
+    },
+    {
+      "name": "physical axial coefficient 0",
+      "passed": true
+    },
+    {
+      "name": "physical axial coefficient 1",
+      "passed": true
+    },
+    {
+      "name": "pressure row original scale exponent",
+      "passed": true
+    },
+    {
+      "name": "angular flux original scale exponent",
+      "passed": true
+    },
+    {
+      "name": "axial fifth row original scale exponent",
+      "passed": true
+    },
+    {
+      "name": "potential original scale exponent",
+      "passed": true
+    },
+    {
+      "name": "original radial chain rule",
+      "passed": true
+    },
+    {
+      "name": "original axial chain rule",
+      "passed": true
+    },
+    {
+      "name": "original time chain rule",
+      "passed": true
+    },
+    {
+      "name": "implicit scale axial derivative",
+      "passed": true
+    },
+    {
+      "name": "implicit scale time derivative",
+      "passed": true
+    },
+    {
+      "name": "physical axial coordinate axial derivative",
+      "passed": true
+    },
+    {
+      "name": "physical axial coordinate time derivative",
+      "passed": true
+    },
+    {
+      "name": "mixed axial-time coefficient identity",
+      "passed": true
+    },
+    {
+      "name": "mixed radial-axial coefficient identity",
+      "passed": true
+    },
+    {
+      "name": "mixed radial-time coefficient identity",
+      "passed": true
+    },
+    {
+      "name": "potential radial curl identity",
+      "passed": true
+    },
+    {
+      "name": "two radial increment terms keep both original exponents",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 0,0",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 0,1",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 0,2",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 1,0",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 1,1",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 1,2",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 2,0",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 2,1",
+      "passed": true
+    },
+    {
+      "name": "actual angular frame derivative 2,2",
+      "passed": true
+    },
+    {
+      "name": "full oriented cylindrical transport derivation 0",
+      "passed": true
+    },
+    {
+      "name": "full oriented cylindrical transport derivation 1",
+      "passed": true
+    },
+    {
+      "name": "full oriented cylindrical transport derivation 2",
+      "passed": true
+    },
+    {
+      "name": "all cross and self transport terms component 0",
+      "passed": true
+    },
+    {
+      "name": "all cross and self transport terms component 1",
+      "passed": true
+    },
+    {
+      "name": "all cross and self transport terms component 2",
+      "passed": true
+    },
+    {
+      "name": "actual mean vector Laplacian component 0",
+      "passed": true
+    },
+    {
+      "name": "actual mean vector Laplacian component 1",
+      "passed": true
+    },
+    {
+      "name": "actual mean vector Laplacian component 2",
+      "passed": true
+    },
+    {
+      "name": "full physical force component 0 retains nu and pressure",
+      "passed": true
+    },
+    {
+      "name": "full physical force component 1 retains nu and pressure",
+      "passed": true
+    },
+    {
+      "name": "full physical force component 2 retains nu and pressure",
+      "passed": true
+    },
+    {
+      "name": "physical Cartesian x recursion component 0",
+      "passed": true
+    },
+    {
+      "name": "physical Cartesian y recursion component 0",
+      "passed": true
+    },
+    {
+      "name": "physical Cartesian x recursion component 1",
+      "passed": true
+    },
+    {
+      "name": "physical Cartesian y recursion component 1",
+      "passed": true
+    },
+    {
+      "name": "physical Cartesian x recursion component 2",
+      "passed": true
+    },
+    {
+      "name": "physical Cartesian y recursion component 2",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=0,m=0,n=0",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=0,m=0,n=1",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=0,m=1,n=0",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=0,m=1,n=1",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=1,m=0,n=0",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=1,m=0,n=1",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=1,m=1,n=0",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=1,m=1,n=1",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=2,m=0,n=0",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=2,m=0,n=1",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=2,m=1,n=0",
+      "passed": true
+    },
+    {
+      "name": "evaluated pressure full derivative k=2,m=1,n=1",
+      "passed": true
+    },
+    {
+      "name": "original pressure bump first axial derivative",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 1 derivative 0",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 1 derivative 1",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 1 derivative 2",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 1 derivative 3",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 1 derivative 4",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 1 derivative 5",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 1 derivative 6",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 2 derivative 0",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 2 derivative 1",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 2 derivative 2",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 2 derivative 3",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 2 derivative 4",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 2 derivative 5",
+      "passed": true
+    },
+    {
+      "name": "inverse radius original power 2 derivative 6",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=0,i=0,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=1,i=0,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=1,i=0,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=1,i=1,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=2,i=0,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=2,i=0,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=2,i=0,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=2,i=1,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=2,i=1,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=2,i=2,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=0,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=0,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=0,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=0,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=1,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=1,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=1,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=2,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=2,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=3,i=3,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=0,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=0,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=0,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=0,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=0,j=4",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=1,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=1,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=1,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=1,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=2,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=2,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=2,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=3,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=3,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=4,i=4,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=0,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=0,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=0,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=0,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=0,j=4",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=0,j=5",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=1,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=1,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=1,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=1,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=1,j=4",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=2,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=2,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=2,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=2,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=3,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=3,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=3,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=4,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=4,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=5,i=5,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=0,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=0,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=0,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=0,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=0,j=4",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=0,j=5",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=0,j=6",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=1,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=1,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=1,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=1,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=1,j=4",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=1,j=5",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=2,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=2,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=2,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=2,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=2,j=4",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=3,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=3,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=3,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=3,j=3",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=4,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=4,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=4,j=2",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=5,j=0",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=5,j=1",
+      "passed": true
+    },
+    {
+      "name": "three-factor Leibniz coefficient n=6,i=6,j=0",
+      "passed": true
+    }
+  ],
+  "structural_validation": [
+    {
+      "name": "TeX equation environment count",
+      "passed": true
+    },
+    {
+      "name": "TeX gathered environment count",
+      "passed": true
+    },
+    {
+      "name": "TeX split environment count",
+      "passed": true
+    },
+    {
+      "name": "TeX array environment count",
+      "passed": true
+    },
+    {
+      "name": "TeX cases environment count",
+      "passed": true
+    },
+    {
+      "name": "all local labels use required mcmean prefix",
+      "passed": true
+    },
+    {
+      "name": "actual pressure is explicitly retained",
+      "passed": true
+    },
+    {
+      "name": "explicit support-width pressure budget is present",
+      "passed": true
+    },
+    {
+      "name": "remaining nonlinear defects are explicit",
+      "passed": true
+    },
+    {
+      "name": "full Cartesian derivative recursion is present",
+      "passed": true
+    }
+  ],
+  "structural_validation_count": 10,
+  "source_sha256": "f0a7e8a99b824dd9f84d7dbdcaa45571d2bbc5e06f57595fe56d8c53c7d5603d",
+  "replay_sha256": "b1e40e395e8691a8ec0f18f689ba2199959db4cc4da2586103dabc93c85ff41c",
+  "input_sha256": {
+    "source_operation\\operation_body.tex": "14ab6d566a4b376eed8bdc9621a2758732ceafb82b640f21359de2fa40e19a7a",
+    "quantitative_moments.tex": "da39fd2660a969f893836f232e720ad1e3c54250bf6b7702a6de8324509cad49"
+  },
+  "method": "SymPy exact expressions and integer combinatorics; no numerical tolerance; all-order proofs are in mean_costs.tex"
+}

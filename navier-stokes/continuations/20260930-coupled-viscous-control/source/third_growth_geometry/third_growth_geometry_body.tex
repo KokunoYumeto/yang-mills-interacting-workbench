@@ -1,0 +1,526 @@
+\section{Exact third growth on the moving second holding state}
+\label{tg:section}
+
+The third growth begins at the actual second return. Its inherited
+first vorticity is positive, its second vorticity is zero, and its
+second temperature and phase length continue changing. We derive the
+complete third phase and linear pair on the holding interval already
+proved in Theorem~\ref{sr:theorem}. The original source growth control
+is $\dot\alpha=\mathcal F_2$; the different control
+$\mathcal F_3$ is retained below as a computed function. This distinction
+matters at the next transition. All formulas below use the physical
+frequency $K_j=\mu\widehat\lambda_j$, the original
+$\nu=\nu_{\rm AB}=\sqrt{A_0}$, and the actual changed scales.
+
+\subsection{Actual birth data and their branches}
+
+Set $t_0=t_2^b$, $\sigma_1=\sigma$ and
+$s_2=L_2\nu/\sigma_1$, with $a=\sin s_2$ as in
+\eqref{sr:parameters}. Write $h_b=h(t_0)$, $\chi_b=\sqrt{h_b^2+a^2}$,
+$P_2=-\Theta_2$ and $A_1=-K_1\Theta_1$. On the proved interval
+\begin{equation}\label{tg:interval}
+ I=\left[t_0,t_0+\frac1{32\Gamma_2}\right],\qquad
+ \Gamma_2=\sigma_1a,
+\end{equation}
+the actual physical holding equations and phases are
+\begin{equation}\label{tg:parent}
+\begin{gathered}
+ \chi=\sqrt{h^2+a^2},\quad
+ \zeta_1=\frac{(-a,h)}\chi,\quad \zeta_2=(0,\chi),
+ \quad\theta=\arctan(a/h),\quad\alpha=s_*+\theta,\\
+ \dot h=a\Omega_1,\qquad
+ \dot\Omega_1=\frac{aA_1}{\chi}-dK_1^2\Omega_1,\qquad
+ \dot A_1=-A_0\sin s_*\Omega_1-dK_1^2 A_1,\\
+ \Omega_2=0,\qquad
+ \dot P_2=-dK_2^2\chi^2P_2,\qquad
+ \dot\alpha=-\frac{a^2\Omega_1}{\chi^2}.
+\end{gathered}
+\end{equation}
+Here $A_1,P_2,\Omega_1$ are strictly positive throughout $I$;
+$h_b\leq h<3$, $h_b\geq\cos s_2\geq15/16$ and
+$1\leq\chi<\sqrt{10}$ are proved bounds, not frozen values.
+The notation $\theta$ in this subsection denotes an angle only;
+the temperature field is denoted $\vartheta$ below where needed.
+
+Retain the original recursion
+\begin{equation}\label{tg:third_design}
+ \begin{gathered}
+ Q_3=Q_*+3,\quad
+ \widehat\lambda_3=\widehat\lambda_2^{Q_3},\quad
+ k_3=\max\{k\in\mathbb N_0:120k\leq Q_3,
+                  \ K(k)\leq\log\widehat\lambda_3\},\\
+ L_3=(k_3+41/8)\log\widehat\lambda_3,\qquad
+ \sigma_2^2=|G_{<3}(t_0)|,\qquad
+ s_3=\frac{L_3\sigma_1}{\sigma_2},\qquad
+ \Gamma_3=\sigma_2\sin s_3,\qquad p_3=e(s_3).
+ \end{gathered}
+\end{equation}
+The positive square root defining $\sigma_2$ is the source scale
+evaluated on the actual state. It is not the magnitude of only the
+second temperature contribution. The set defining $k_3$ is nonempty
+because $k=0$ belongs to it by \eqref{ave:Ychoice}, and finite because
+$120k\leq Q_3$.
+
+For completeness, even the earlier frequency choice fixes the small
+positive branch needed for the exact map. Indeed $\alpha\leq1/4$
+on $I$, so the vertical component of
+$G_{<3}=-A_0R_\alpha e_2-A_1\zeta_1-K_2P_2\zeta_2$
+at birth has three negative summands. Therefore
+\[
+ \sigma_2^2\geq K_2P_2(t_0)\chi_b
+ \geq A_0\widehat\lambda_2^{1/8},\qquad
+ \sigma_2\geq\nu\widehat\lambda_2^{1/16}.
+\]
+The threshold and selected gain in Theorem~\ref{ave:complete_entry}
+justify the second inequality. Put $y=\log\widehat\lambda_1$.
+Equations~\eqref{ave:scale_bounds} and \eqref{ave:Ychoice} give
+$\sigma_1\leq C_\sigma\nu e^{y/16}$ and $y\geq Q_2\geq202$.
+Since $\Lambda_1\geq6$, one has
+$C_\sigma=\sqrt{1+e^{2+\Lambda_1^{-1}}}<6$.
+One may verify the numerical bound by $e<3$, which follows from
+$n!\geq2^{n-1}$ for $n\geq2$ and strict inequality for $n\geq3$.
+Also $Q_3=Q_2+1\leq2Q_2$ and
+$k_3+41/8\leq Q_3/120+6\leq Q_3$; hence
+$L_3\leq8Q_2^3y$. Consequently
+\begin{equation}\label{tg:birth_angle}
+ 0<s_3\leq48Q_2^3y e^{-(Q_2-1)y/16}
+ \leq48y^4e^{-12y}
+ \leq\frac{5760}{12^5y}<\frac18.
+\end{equation}
+The penultimate inequality is the fifth positive term in the
+exponential series. Thus $0<\theta_b:=\arctan(a/h_b)\leq s_2<1/8$
+and $0<s_3+\theta_b<1/4$. These are statements about the original
+source angle, including its branch. Stronger angle and physical
+diffusion bounds needed to reach the third threshold are supplied
+by the accompanying actual third-growth theorem; none is presumed
+in the identities below.
+
+Define the oriented constants and the changing inner product by
+\begin{equation}\label{tg:constants}
+ b=\sin(s_3+\theta_b),\qquad g_b=\cos(s_3+\theta_b),\qquad
+ g=g_b+\frac ba(h-h_b),\qquad
+ c=bh_b-ag_b=\chi_b\sin s_3>0.
+\end{equation}
+The constant $b$ in \eqref{tg:constants} is dimensionless and must not
+be confused with the physical buoyancy coefficient $\mathfrak b_3$
+below. One has $b>0$, $g_b>15/16$, $g\geq g_b$, and the exact identity
+$bh-ag=c$ on $I$.
+
+\subsection{The complete material map, phases and original feedback}
+
+For $v\in\mathbb R^2$, the matrix convention is
+$Jv=(-v_2,v_1)$ and $R_\beta=\exp(\beta J)$.
+The third deformation and its inverse are
+\begin{equation}\label{tg:material}
+\begin{aligned}
+ M_3(t)&=M_2(t)M_2(t_0)^{-1}
+ =R_\theta
+   \begin{pmatrix}1&-(h-h_b)/a\\0&1\end{pmatrix}R_{-\theta_b},\\
+ M_3(t)^{-1}&=R_{\theta_b}
+   \begin{pmatrix}1&(h-h_b)/a\\0&1\end{pmatrix}R_{-\theta}.
+\end{aligned}
+\end{equation}
+These formulas describe linear maps $\mathbb R^2\to\mathbb R^2$
+in the original physical coordinates and have determinant one.
+In particular $M_3(t_0)=I$ retains the source third-birth datum;
+it does not reset $M_1$ or $M_2$.
+Their phase pullback gives
+\begin{equation}\label{tg:phase}
+ \begin{gathered}
+ \zeta_3=M_3^{-T}p_3=g\zeta_1-bJ\zeta_1
+      =\frac{(c,hg+ab)}\chi,\qquad
+ R_3:=|\zeta_3|^2=g^2+b^2,\\
+ \det(\zeta_1,\zeta_3)=-b,\qquad
+ \det(\zeta_2,\zeta_3)=-c,\qquad
+ \dot g=b\Omega_1,\quad \dot R_3=2bg\Omega_1,
+ \quad\dot\chi=\frac{ah\Omega_1}{\chi}.
+ \end{gathered}
+\end{equation}
+Thus $R_3(t_0)=1$ and $R_3\geq1$. Its first component is positive
+and decreases on growth; it is not held constant by the preceding
+feedback. The lower component is positive and satisfies the explicit
+bound
+\begin{equation}\label{tg:domain}
+ \zeta_{3,2}=\frac{hg+ab}{\chi}
+       >\frac{225}{256\sqrt{10}}>\frac14.
+\end{equation}
+For example the last strict comparison follows on squaring from
+$225^2>64^2\,10$.
+
+\begin{proof}[Proof of the geometric map]
+On holding $\Omega_2=0$ and the older cutoffs equal one, so
+$D_{<3}=D_{<2}=\dot\alpha J+
+\Omega_1J\zeta_1\otimes\zeta_1$.
+The previously proved formula for $M_2$ is
+$R_\theta\left(\begin{smallmatrix}1&-(h-\cos s_2)/a\\0&1\end{smallmatrix}\right)$.
+Multiplication by its birth inverse gives \eqref{tg:material}.
+Differentiating $M_2(t)M_2(t_0)^{-1}$ gives
+$\dot M_3=D_{<3}M_3$, including the original initial value.
+Multiplying the proposed inverse by $M_3$ on either side gives $I$.
+
+Since $R_{-\theta_b}e(s_3)=(b,g_b)$, inverse transposition
+of the shear sends this vector to $(b,g)$. Subsequent rotation gives
+$R_\theta(b,g)=(-ag+bh,hg+ab)/\chi$, proving the pullback in
+\eqref{tg:phase}. Because $\zeta_1=R_\theta e_2$ and
+$J\zeta_1=R_\theta(-e_1)$, this is also
+$g\zeta_1-bJ\zeta_1$. Its norm, inner product and signed
+determinants follow by the displayed orthonormal basis and the two
+laboratory components. Differentiating $bh-ag=c$ and using
+$\dot h=a\Omega_1$ gives $\dot g=b\Omega_1$.
+Direct differentiation gives the remaining rates.
+All maps are invertible in their specified domains because
+$a,h,\chi>0$; their branch choices were proved above.
+The lower bound \eqref{tg:domain} follows from
+$h,g>15/16$ and $\chi<\sqrt{10}$.
+\end{proof}
+
+Write the original feedback functions at the actual state as
+\begin{equation}\label{tg:feedback}
+ \mathcal F_2=-\frac{a^2\Omega_1}{\chi^2},\qquad
+ \mathcal F_3=-\frac{ab\Omega_1}{hg+ab},\qquad
+ \mathcal F_3-\mathcal F_2
+    =-\frac{ach\Omega_1}{\chi^2(hg+ab)}.
+\end{equation}
+To verify them from the original sum, use
+\[
+ \mathcal F_j=-\frac{\sum_{i<j}\Omega_i e_{i,1}
+                         (Je_i\cdot\zeta_j)}{\zeta_{j,2}}.
+\]
+Here $e_1=\zeta_1$, $J\zeta_1\cdot\zeta_2=-a$,
+$J\zeta_1\cdot\zeta_3=-b$ and $\Omega_2=0$.
+The two substitutions give the first two formulas in
+\eqref{tg:feedback}. Taking their difference and using $bh-ag=c$
+gives the third. In particular the physical controlled-component
+identity is exactly
+\[
+ \dot\zeta_{3,1}=(\mathcal F_3-\mathcal F_2)\zeta_{3,2}
+             =-\frac{ach\Omega_1}{\chi^3}
+             =\frac{d}{dt}\left(\frac c\chi\right).
+\]
+No term has been discarded by replacing the growth feedback with
+the third feedback. Conversely, substituting \eqref{tg:feedback}
+in the full phase equation reconstructs this same growth map.
+
+\subsection{Both inherited temperatures and the exact numerator identity}
+
+Put $S_*=A_0\sin s_*$ and $C_*=A_0\cos s_*$. These symbols
+retain the original constants; they are not new adjustable scales.
+The complete parent gradient can be written in two identical forms:
+\begin{equation}\label{tg:gradient}
+\begin{aligned}
+ G_{<3}&=-A_0R_\alpha e_2-A_1\zeta_1-K_2P_2\zeta_2\\
+       &=-(A_1+C_*+K_2P_2h)\zeta_1
+                   -(S_*-aK_2P_2)J\zeta_1.
+\end{aligned}
+\end{equation}
+The second form follows from
+$R_\alpha e_2=\cos s_*\zeta_1+\sin s_*J\zeta_1$ and
+$\zeta_2=h\zeta_1-aJ\zeta_1$. It also supplies the exact
+source scale formula
+\begin{equation}\label{tg:scale}
+ \sigma_2^4=
+  (A_1(t_0)+C_*+K_2P_2(t_0)h_b)^2
+  +(S_*-aK_2P_2(t_0))^2.
+\end{equation}
+There is no sign restriction on the second bracket, and none is
+needed in this identity.
+
+Define
+\begin{equation}\label{tg:numerator}
+ N_3=b(A_1+C_*)+gS_*+cK_2P_2,\qquad
+ E_3=bK_1^2A_1+cK_2^3\chi^2P_2.
+\end{equation}
+Every summand of $N_3$ and $E_3$ is positive on $I$.
+The exact scalar-temperature and vorticity couplings are
+\begin{equation}\label{tg:couplings}
+ \mathfrak a_3=-\frac{J\zeta_3\cdot G_{<3}}{K_3R_3}
+              =\frac{N_3}{K_3R_3}>0,
+ \qquad
+ \mathfrak b_3=K_3\zeta_{3,1}=\frac{K_3c}{\chi}>0.
+\end{equation}
+Their exact rates, including all changing-parent contributions, are
+\begin{equation}\label{tg:coefficient_rates}
+\begin{gathered}
+ \dot N_3=-dE_3,\qquad
+ N_3(t)=N_3(t_0)-d\int_{t_0}^t
+       \{bK_1^2A_1(r)+cK_2^3\chi(r)^2P_2(r)\}\,dr,\\
+ \frac{d}{dt}\log\mathfrak a_3
+       =-\frac{dE_3}{N_3}-\frac{2bg\Omega_1}{R_3},\qquad
+ \frac{d}{dt}\log\mathfrak b_3
+       =-\frac{ah\Omega_1}{\chi^2}.
+\end{gathered}
+\end{equation}
+In particular the numerator would be exactly constant at $d=0$
+on this holding geometry. With positive physical diffusivity its
+replacement is the integral in \eqref{tg:coefficient_rates}, with
+both older temperature losses retained. Its positivity follows from
+the original sum in \eqref{tg:numerator}, not from assuming that this
+integral is small.
+
+\begin{proof}
+Using \eqref{tg:gradient} and
+$J\zeta_3=gJ\zeta_1+b\zeta_1$ gives
+\[
+ -J\zeta_3\cdot G_{<3}
+ =b(A_1+C_*+K_2P_2h)+g(S_*-aK_2P_2)=N_3.
+\]
+This proves the full coupling and its signs. Next differentiate the
+three summands of $N_3$, using \eqref{tg:parent} and
+\eqref{tg:phase}. The two terms
+$-bS_*\Omega_1$ and $\dot gS_*=bS_*\Omega_1$ cancel exactly;
+the surviving terms are $-dbK_1^2A_1$ and
+$-dcK_2^3\chi^2P_2$. Thus $\dot N_3=-dE_3$.
+Integrating proves its displayed integral identity. Finally apply
+the logarithmic derivative to \eqref{tg:couplings} and insert
+$\dot R_3$, $\dot\chi$ and $\dot N_3$. All logarithms are defined
+because their arguments have already been proved positive.
+\end{proof}
+
+\subsection{Exact third amplitudes, inverse maps and fundamental functions}
+
+The original signed seed and activation are
+\begin{equation}\label{tg:seed}
+\begin{gathered}
+ S_3=\frac{A_0}{\mu}\widehat\lambda_3^{-k_3-6},\quad
+ u_i=\sqrt{\mathfrak b_3(t_0)/\mathfrak a_3(t_0)},\\
+ \Theta_3(t_0)=-S_3,\quad \Omega_3(t_0)=-S_3u_i,\quad
+ w_3(t)=\eta(\Gamma_3(t-t_0)).
+\end{gathered}
+\end{equation}
+The homogeneous pair is active in the coefficient construction at
+$t_0$, while its physical increment is multiplied by $w_3$, exactly
+as in source (3.11). The full physical equal-diffusion equations are
+\begin{equation}\label{tg:pair}
+ \dot\Theta_3=\mathfrak a_3\Omega_3-dK_3^2R_3\Theta_3,
+ \qquad
+ \dot\Omega_3=\mathfrak b_3\Theta_3-dK_3^2R_3\Omega_3.
+\end{equation}
+
+Here are convergent fundamental functions for the changing coefficients,
+so the solution does not rely on a constant-coefficient surrogate.
+Let
+\begin{equation}\label{tg:fundamental}
+ \begin{gathered}
+ \mathcal A(t)=\begin{pmatrix}0&\mathfrak a_3(t)\\
+                              \mathfrak b_3(t)&0\end{pmatrix},\quad
+ \mathcal H_0(t)=I,\qquad
+ \mathcal H_n(t)=\int_{t_0}^t\mathcal A(r)\mathcal H_{n-1}(r)\,dr,\\
+ \mathcal H(t)=\sum_{n=0}^\infty\mathcal H_n(t),\qquad
+ \Lambda_3(t)=dK_3^2\int_{t_0}^tR_3(r)\,dr,\qquad
+ \mathcal U(t)=e^{-\Lambda_3(t)}\mathcal H(t).
+ \end{gathered}
+\end{equation}
+Each term is an explicit ordered integral of the actual coefficients.
+The solution and inverse-data map are
+\begin{equation}\label{tg:fundamental_inverse}
+\begin{gathered}
+ \binom{\Theta_3(t)}{\Omega_3(t)}
+       =-S_3\mathcal U(t)\binom1{u_i},\qquad
+ \binom{\Theta_3(t_0)}{\Omega_3(t_0)}
+       =e^{\Lambda_3(t)}\mathcal H(t)^{-1}
+                         \binom{\Theta_3(t)}{\Omega_3(t)},\\
+ \det\mathcal U=e^{-2\Lambda_3}>0.
+\end{gathered}
+\end{equation}
+
+\begin{proof}[Existence, inversion and signs]
+All parent coefficients are smooth on the compact interval $I$, and
+their denominators have the positive bounds already proved. For any
+matrix operator norm put $M=\max_I\|\mathcal A\|$ and
+$\ell=|I|$. Repeated integration proves
+$\|\mathcal H_n(t)\|\leq M^n(t-t_0)^n/n!$ by induction.
+The scalar exponential series therefore proves absolute uniform
+convergence. Also
+$\mathcal H_n'=\mathcal A\mathcal H_{n-1}$ for $n\geq1$;
+the same bound with index $n-1$ proves uniform convergence of the
+derivative series. Termwise differentiation gives
+$\mathcal H'=\mathcal A\mathcal H$ and $\mathcal H(t_0)=I$.
+If two fundamental solutions had the same data, their difference
+$V$ would obey $V(t)=\int_{t_0}^t\mathcal A(r)V(r)\,dr$.
+Iteration bounds its norm by
+$\sup_I\|V\|(M\ell)^n/n!$ for every $n$, which tends to zero;
+this proves uniqueness without assuming invertibility first.
+
+For $\mathcal H=\left(\begin{smallmatrix}f_1&f_2\\g_1&g_2\end{smallmatrix}\right)$,
+differentiation of $f_1g_2-f_2g_1$ with
+$\dot f_j=\mathfrak a_3g_j$,
+$\dot g_j=\mathfrak b_3f_j$ gives zero. Its initial value is one.
+Thus its inverse is exactly
+$\left(\begin{smallmatrix}g_2&-f_2\\-g_1&f_1\end{smallmatrix}\right)$.
+Differentiating $\mathcal U$ now proves the full damped matrix
+equation; multiplying by $e^{\Lambda_3}$ proves its inverse and
+the determinant in \eqref{tg:fundamental_inverse}.
+Every entry in $\mathcal A$ is nonnegative, and its two off-diagonal
+entries are positive. Consequently every ordered-integral term has
+nonnegative entries, the diagonal of $\mathcal H$ is at least one,
+and its off-diagonal entries are positive for $t>t_0$ because already
+the first term has positive such entries. Since $S_3,u_i>0$, both
+amplitudes in \eqref{tg:fundamental_inverse} are strictly negative
+throughout $I$. Hence the temperature sign and all following
+quotients are established on the complete interval.
+\end{proof}
+
+An equivalent scalar fundamental equation retains the geometry in a
+particularly direct form. Put $Y=e^{\Lambda_3}\Omega_3$. Then
+\begin{equation}\label{tg:scalar_equation}
+ \frac d{dt}(\chi\dot Y)-\frac{cN_3}{R_3}Y=0,
+ \qquad
+ \Omega_3=e^{-\Lambda_3}Y,\qquad
+ \Theta_3=e^{-\Lambda_3}\frac{\chi\dot Y}{K_3c}.
+\end{equation}
+Indeed the first transformed equation is
+$\dot X=\mathfrak a_3Y$, where $X=e^{\Lambda_3}\Theta_3$,
+and the second is $\dot Y=(K_3c/\chi)X$. The latter gives
+$\chi\dot Y=K_3cX$; differentiating it and substituting the former
+gives \eqref{tg:scalar_equation}. Conversely that scalar equation
+and its displayed inverse give both transformed first-order equations,
+and hence \eqref{tg:pair}. In physical damped variables the same
+operator is exactly
+\begin{equation}\label{tg:damped_scalar}
+ (\partial_t+\lambda_3)
+       \{\chi(\partial_t+\lambda_3)\Omega_3\}
+       -\frac{cN_3}{R_3}\Omega_3=0,
+ \qquad \lambda_3=dK_3^2R_3.
+\end{equation}
+Its complete expanded left side is
+\[
+ \chi\ddot\Omega_3+(\dot\chi+2\chi\lambda_3)\dot\Omega_3+
+ (\chi\dot\lambda_3+\dot\chi\lambda_3+\chi\lambda_3^2-cN_3/R_3)\Omega_3.
+\]
+In particular $\dot\lambda_3=2dK_3^2bg\Omega_1$ is present in
+the physical second-order equation. The integrating factor cancels
+the newest diagonal damping on the same evolved parent; it does not
+replace $N_3,h,P_2$ by their inviscid counterparts.
+
+\subsection{Exact quotient, gain and diffusion accounting}
+
+Set $\rho=\Gamma_3(t-t_0)$,
+$v_3=\sigma_2\Omega_3/(K_3\Theta_3)$ and
+$P_3=-\Theta_3$. This change has inverse
+$t=t_0+\rho/\Gamma_3$, $\Theta_3=-P_3$,
+$\Omega_3=-K_3P_3v_3/\sigma_2$. Define
+\begin{equation}\label{tg:quotient_coefficients}
+ z_3=\frac{\chi_b}{\chi},\qquad
+ k_3^{\rm dyn}=\frac{N_3}{\sigma_2^2\sin s_3\,R_3},\qquad
+ \delta_3=\frac{dK_3^2}{\Gamma_3}.
+\end{equation}
+The symbol $k_3^{\rm dyn}$ is a time-dependent coupling and is
+distinct from the original integer $k_3$ in \eqref{tg:third_design}.
+Direct quotient and product differentiation prove the exact mutually
+inverse equations
+\begin{equation}\label{tg:quotient}
+ \frac{dv_3}{d\rho}=z_3-k_3^{\rm dyn}v_3^2,\qquad
+ \frac{d}{d\rho}\log P_3=k_3^{\rm dyn}v_3-\delta_3R_3,
+ \qquad
+ v_3(0)=\frac{\sigma_2u_i}{K_3}.
+\end{equation}
+Thus $z_3$ is the changing preceding phase-length ratio, not a
+prescribed constant control. The direct diffusion term cancels from
+the quotient only because both physical diffusivities equal $d$.
+For unequal physical diffusivities $\kappa$ and $\varepsilon$ in
+the newest pair on this same parent, the corresponding exact term
+is $(\kappa-\varepsilon)K_3^2R_3v_3/\Gamma_3$, and the logarithmic
+loss is $\kappa K_3^2R_3/\Gamma_3$. These are algebraic maps for
+that pair; they make no assertion that the older equal-diffusion
+trajectory solves the unequal-diffusion parent equations.
+
+The instantaneous eigenline formulation used by the source is also
+exact. With
+\[
+ \gamma_3=\sqrt{\mathfrak a_3\mathfrak b_3}
+          =\sqrt{\frac{cN_3}{\chi R_3}},\quad
+ u_* =\sqrt{\mathfrak b_3/\mathfrak a_3}
+          =K_3\sqrt{\frac{cR_3}{\chi N_3}},\quad
+ Z=\frac{\Omega_3}{u_*\Theta_3},
+\]
+one has, in physical time,
+\begin{equation}\label{tg:eigenline}
+\begin{gathered}
+ \dot Z=\gamma_3(1-Z^2)-Z\frac d{dt}\log u_*,
+ \qquad
+ \frac d{dt}\log u_*
+    =\frac{bg\Omega_1}{R_3}
+       -\frac{ah\Omega_1}{2\chi^2}+\frac{dE_3}{2N_3},\\
+ \frac d{dt}\log P_3=\gamma_3Z-dK_3^2R_3.
+\end{gathered}
+\end{equation}
+These follow by dividing \eqref{tg:pair}, substituting
+\eqref{tg:coefficient_rates}, and differentiating $u_*$; the seed
+has exactly $Z(t_0)=1$.
+
+For every $t\in I$ the full new-layer diffusion exponent is
+\begin{equation}\label{tg:diffusion}
+\begin{gathered}
+ \Lambda_3(t)=dK_3^2\int_{t_0}^t
+       \left\{\left[g_b+\frac ba(h(r)-h_b)\right]^2+b^2\right\}dr,\\
+ dK_3^2(t-t_0)\leq\Lambda_3(t)
+        \leq dK_3^2R_{3,\max}(t-t_0),
+\end{gathered}
+\end{equation}
+where the finite explicit bound is
+$R_{3,\max}=[g_b+(b/a)(3-h_b)]^2+b^2$.
+The inequalities follow from $h_b\leq h<3$ and $b,g_b>0$.
+The exact gain is the integral
+\[
+ \log\frac{P_3(t)}{S_3}
+    =\int_{t_0}^t\gamma_3(r)Z(r)\,dr-\Lambda_3(t).
+\]
+The two inherited diagonal damping exponents on this same interval are
+\[
+ dK_1^2(t-t_0),\qquad dK_2^2\int_{t_0}^t\chi(r)^2dr.
+\]
+The first temperature also retains the exact response
+\[
+ A_1(t)=e^{-dK_1^2(t-t_0)}A_1(t_0)
+       -S_*\int_{t_0}^t e^{-dK_1^2(t-r)}\Omega_1(r)\,dr.
+\]
+These expressions retain all three physical frequencies and the
+phase-length factors. The formula for $N_3$ records their combined
+effect on the third gain coefficient. No attainment of the third
+threshold is inferred from positivity of the cooperative transformed
+pair alone; actual attainment uses the quantitative estimates proved
+in the accompanying continuation.
+
+\subsection{The exact affine parent equations during third growth}
+
+The moving affine parent also has an exact spatial interpretation
+throughout $I$. Put
+\[
+ D=D_{<3},\quad B_1=-A_1\zeta_1,\quad B_2=-K_2P_2\zeta_2,
+ \quad\vartheta(x,t)=G_{<3}(t)\cdot x,\quad u(x,t)=D(t)x.
+\]
+Then
+\begin{equation}\label{tg:affine}
+\begin{gathered}
+ \dot G_{<3}+D^TG_{<3}=-dK_1^2B_1-dK_2^2\chi^2B_2,\qquad
+ C:=D_{21}-D_{12}=2\dot\alpha+\Omega_1,\\
+ \dot C-G_{<3,1}=2\ddot\alpha-A_0\sin\alpha-dK_1^2\Omega_1.
+\end{gathered}
+\end{equation}
+Thus the full equations with equal physical diffusion are satisfied by
+the explicitly specified scalar force, vector force and pressure
+\begin{equation}\label{tg:affine_forces}
+\begin{aligned}
+ f_\vartheta&=(-dK_1^2B_1-dK_2^2\chi^2B_2)\cdot x,\\
+ f_u&=\tfrac12(2\ddot\alpha-A_0\sin\alpha-dK_1^2\Omega_1)Jx,\\
+ p&=-\tfrac12x^T\operatorname{sym}
+       (\dot D+D^2-e_2\otimes G_{<3})x.
+\end{aligned}
+\end{equation}
+To verify the new temperature contribution, differentiate $B_2$
+using $\dot P_2=-dK_2^2\chi^2P_2$ and
+$\dot\zeta_2=-D^T\zeta_2$; this gives
+$\dot B_2+D^TB_2=-dK_2^2\chi^2B_2$.
+The base-plus-first contribution is the exact identity proved in
+Section~\ref{sr:section}, so their sum proves the first equation
+in \eqref{tg:affine}. The curl identity is unchanged because
+$\Omega_2=0$ and $B_{2,1}=0$, as the displayed vertical phase shows.
+The trace of $D$ is zero, so $D^2$ is scalar. Substitution of the
+quadratic pressure cancels the symmetric part of
+$\dot D+D^2-e_2\otimes G_{<3}$; its skew part is
+$(\dot C-G_{<3,1})J/2$. This proves the entire vector equation.
+Both affine Laplacians vanish by second differentiation.
+These forces are the affine-core parent forces. The compact released
+profiles add their exact profile, envelope and interaction terms;
+the present identities do not discard those spatial residuals or
+claim an unforced third-layer superposition.

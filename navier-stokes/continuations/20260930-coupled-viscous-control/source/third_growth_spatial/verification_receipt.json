@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "scope": "Third-growth spatial component, not the full parent release",
+  "body_sha256": "cd1d5bee1591b94a7bc54b216efa0a1af3a22bd632a723c0a78931a791d99d58",
+  "replay_script_sha256": "0600bfed2bda5709d5a64c16bc5f2a4c0d8a34ce7708e052bed0d89d551b2124",
+  "replay_check_count": 56,
+  "reader_sha256": "54d1976702a3c102d4178fdbba27f562d9915c9ff3c618b12606eff5fc3f4ca5",
+  "reader_pages": 64,
+  "component_page_range": [
+    58,
+    64
+  ],
+  "component_label_count": 33,
+  "component_latex_warnings": [],
+  "component_text_out_of_page": [],
+  "render_tool": "Poppler pdftoppm",
+  "render_dpi": 90,
+  "rendered_pages": [
+    {
+      "file": "audit\\preview_build\\page-58.png",
+      "sha256": "9192e27b03b020d65dc7f399ad4418e00c12603312cbbe1b872a9d0f43325e74"
+    },
+    {
+      "file": "audit\\preview_build\\page-59.png",
+      "sha256": "e08657faa35c64c7204fcb0defe126a1b591a7141362f42672a6bf2267c6161f"
+    },
+    {
+      "file": "audit\\preview_build\\page-60.png",
+      "sha256": "a79968930ddf2d793314f26fdf8597675a03dffd0968000cb39ca469d24997fa"
+    },
+    {
+      "file": "audit\\preview_build\\page-61.png",
+      "sha256": "a7eeecdc6166a5fa3fe855acb594fa6288b7c9bc30bcf2e7c54879f1a1c0ada0"
+    },
+    {
+      "file": "audit\\preview_build\\page-62.png",
+      "sha256": "73e308f36d15e8905abf49e7fc60052b1043d36bd080e86cf3adf22044d77e30"
+    },
+    {
+      "file": "audit\\preview_build\\page-63.png",
+      "sha256": "95f85faa46d3b03b4d2cada370a6522fc44c3a2d93a589f61207e0aef2bf7b94"
+    },
+    {
+      "file": "audit\\preview_build\\page-64.png",
+      "sha256": "5e3bce2afe458cca3a1c440c4c13183102b6c2e9a1b92e8a5bb405ab41c74f87"
+    }
+  ],
+  "visual_review": {
+    "status": "passed",
+    "reviewer": "third_spatial_finish",
+    "pages": [
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "method": "Inspected all final Poppler page renders in four two-page contact sheets after grouping the opening PDE pair; no clipping, overlap, bad equation breaks, or illegible glyphs.",
+    "earlier_reader_scope": "Earlier pages are compilation context; full parent-release QA belongs to the parent."
+  },
+  "earlier_owner_layout_issues": [],
+  "dependency_sha256": {
+    "finite_stage/third_growth_entry.tex": "f8ef33f593fae0c9526e2ae5d696d537b3caacb843a35d844c87425b467b4048",
+    "modified_spatial/modified_spatial_body.tex": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4"
+  }
+}

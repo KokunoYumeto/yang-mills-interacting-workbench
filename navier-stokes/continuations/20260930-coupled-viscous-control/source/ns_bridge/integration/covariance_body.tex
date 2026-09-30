@@ -1,0 +1,443 @@
+\section{Source objects and the finite calculation}
+This calculation uses the preserved 165-page supplied manuscript
+\emph{Finite Time Blowup for Navier--Stokes}, source equations
+(7.23)--(7.42), (9.12)--(9.14). Its PDF SHA-256 is
+\begin{center}\small
+\texttt{8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81}.
+\end{center}
+The source pulse fields, auxiliary rectangles, phases, and leading
+covariance columns are the given objects; their global construction is
+source input. Every finite map asserted below is proved here. The existing
+coupled-stage proofs remain in the complete 102-page reader. The companion
+pulse note proves the exact frame residual and a constructed finite-interval
+intertwiner along its evolving coefficients. The source uses positive
+$q(z,t)$, band scales $Q_\beta=2^{-\ell_\beta}$,
+$\varepsilon_\beta=Q_\beta^h$, $A=1/2+h$; none is set to one here or
+identified with the original coupled $A_0,\lambda_0,\mu,\nu=\sqrt{A_0}$
+or its physical diffusivities.
+
+All operations in this note are on a compact set inside $q>0$ and the
+source active annulus. There are finitely many relevant bands and
+locally finite source labels. Supports of newly prescribed inputs are
+strictly inside the annulus, so no lower bound on a leading amplitude
+at a vanishing shell edge is assumed. Endpoint and shell-edge estimates
+are not inferred from compact-interior estimates.
+
+\section{Physical curl of the actual retained amplitude}
+Let $y=(\Theta,\Omega)^T$ be the actual smooth retained coupled solution,
+$y'=q_v(C_cy+c_c)$, with the coefficients of the companion pulse note.
+Use the smooth actual coefficients on the chosen slow/auxiliary patch;
+all harmonic coefficients and cutoffs are independent of $\theta$ in
+cylindrical components, and each carrier has nonzero integer angular
+frequency. For its source tangent frame $B$, smooth coefficient map $L$,
+and a fixed smooth real compact cutoff $\chi$ of this type, put
+\[
+ t_m=\chi BLy,\qquad
+ \mathcal E_\chi=
+ \chi\{[L'+q_vLC_c-HL+m^2d_NL]y+q_vLc_c\}+\chi'Ly,
+ \quad H=B_\ell(\mathsf A_\Phi B-B').
+\]
+Here prime differentiates along the pulse coordinate; the other slow
+and auxiliary derivatives remain in the spatial formulas below.
+Smooth parameter dependence of the companion's constructed $L$ follows
+directly from its integral equations on a fixed interval: for a nonzero
+parameter multi-index $I$,
+\[
+ \partial^I X(v)=
+ \int_{v_0}^v\left[D\,\partial^I X+
+ \sum_{0<J\le I}{I\choose J}(\partial^JD)
+                                 \partial^{I-J}X\right]\,\dd w .
+\]
+The initial parameter derivatives vanish for identity initial data.
+Inductively the known forcing is smooth and bounded on the compact patch;
+the same convergent ordered-integral iteration solves this equation.
+This proves every finite mixed derivative of $X,X^{-1},L$.
+Since $n^TB=0$, $n^Tt_m=0$. Differentiation proves
+$t_m'-\mathsf A_\Phi t_m+m^2d_Nt_m=B\mathcal E_\chi$.
+Thus even the pulse-cutoff term is explicit.
+
+A physical version of the exact curl construction makes the intermediate
+map to momentum residual unambiguous. For each chosen harmonic let
+$\phi(x,t)=k_\beta m\Phi_\beta(x,t,Y(x,t))$ be its real evaluated phase,
+let $\xi=\nabla_x\phi\ne0$, and let $a(x,t)=Q_\beta^{-A}t_m$ be the
+physical transverse amplitude. The source coordinate change is
+$r=\sqrt{Q_\beta}R$, $z=Q_\beta^D Z$, $1-t=Q_\beta T$,
+with $D=1/2-h$ and normalized axial derivative
+$D_z=\varepsilon_\beta\partial_Z$. It gives
+$\xi=(k_\beta m/\sqrt{Q_\beta})n_\Phi$; all auxiliary chain derivatives
+are included in $n_\Phi$. Hence $\xi\cdot a=0$. Define in Cartesian
+components
+\begin{equation}
+ C=\frac{i\,\xi\times a}{|\xi|^2},\quad
+ \mathcal A=C e^{i\phi},\quad
+ \nabla\times\mathcal A=(a+r_a)e^{i\phi},\qquad
+ r_a=\nabla\times C. \label{cb:curl}
+\end{equation}
+The vector triple-product identity gives
+$i\xi\times C=a$, proving the last equality. It also shows that the
+physical potential has exactly the source factor $Q_\beta^{1/2-A}$
+relative to its chart coefficient
+$i\,n_\Phi\times t_m/(k_\beta m|n_\Phi|^2)$.
+Cartesian differentiation of $C$ includes derivatives of the cylindrical
+basis; the same terms are the $R^{-1}$ terms of source (7.37)--(7.38).
+Take real parts and sum the finite retained harmonics. This constructs
+a smooth compact velocity $w_y$ with $\nabla\cdot w_y=0$.
+
+Retain a finite smooth source state $(u_*,p_*)$, including its background,
+actual leading waves and their curl corrections, and the real
+physical pressure increments obtained from the companion pulse pressure
+formula with $f_m=0$:
+\[
+ \pi_{\chi,m}=\frac{i}{k_\beta m|n|^2}
+                  \bigl(n^T\mathsf Kt_m-(n')^Tt_m\bigr),\qquad
+ \pi_y=\sum_{\beta,m}\operatorname{Re}
+             (Q_\beta^{-2A}\pi_{\chi,m}e^{i\phi_{\beta,m}}).
+\]
+These are smooth and compact wherever $t_m$ is. This definition fixes the
+pressure map without assuming the pulse residual vanishes.
+Define the actual candidate residual
+\begin{align}
+ R_y={}&R_{\nu_{\rm NS}}(u_*+w_y,p_*+\pi_y), \nonumber\\
+ R_{\nu_{\rm NS}}(u,p)
+   :={}&\partial_tu+(u\cdot\nabla)u-\nu_{\rm NS}\Delta u+\nabla p .
+ \label{cb:Ry}
+\end{align}
+This is a definition by explicit differentiated fields, not an assumed
+source term. Its exact expansion is
+\[
+ R_y=R_{\nu_{\rm NS}}(u_*,p_*)
+ +\partial_tw_y+(u_*\cdot\nabla)w_y+(w_y\cdot\nabla)u_*
+ -\nu_{\rm NS}\Delta w_y+\nabla\pi_y
+ +(w_y\cdot\nabla)w_y .
+\]
+Every cutoff, parent, phase, and curl derivative occurs in this formula.
+Physical $\nu_{\rm NS}$ is retained and is distinct from every source
+time-scaling convention. Define
+$\Delta R_y=R_y-R_{\nu_{\rm NS}}(u_*,p_*)$.
+We correct the new compact increment; this difference has compact support
+since every added term does. The baseline residual remains explicitly.
+
+The averaging needed next is the source extended-field operation, not a
+spatial average of the evaluated field. Evaluate derivatives on the
+extended coefficients first by the complete chain rule. In a fixed
+chart set $\mathcal D_i=\partial_{x_i}
++\sum_\alpha(\partial_{x_i}Y_\alpha)\partial_{Y_\alpha}$ and similarly
+$\mathcal D_t$. These are the pullbacks of commuting physical
+derivatives, so $[\mathcal D_i,\mathcal D_j]=0$ on their lifted domain.
+For smooth periodic coefficients their auxiliary derivative terms have
+zero Haar average. In cylindrical components angular differentiation
+also differentiates the basis. This defines an extended residual
+$\widetilde R_y$ whose evaluation is exactly \eqref{cb:Ry}.
+Average the tangential components of the increment at fixed slow variables:
+\begin{equation}
+ F_2=\av{\Delta\widetilde R_{y,\theta}},\qquad
+ F_1=\av{\Delta\widetilde R_{y,z}},\qquad
+ \av{g}=\int_{\mathbb T^2}\frac1{2\pi}
+                    \int_0^{2\pi}g\,\dd\theta\,\dd Y . \label{cb:F}
+\end{equation}
+These $F_e$ are smooth and compact
+in the chosen physical annulus. Equations \eqref{cb:curl}--\eqref{cb:F}
+are the explicit intermediate map from the retained coupled pair to a
+signed momentum residual. They do not identify it with the original
+two-dimensional Boussinesq force.
+
+\section{Radial moments, support, and the original chart scales}
+For each fixed $(z,t)$, choose $0<r_-<r_+$ containing the compact
+supports of both $F_e$ and the chosen bumps in the active annulus.
+The source bump is
+\[
+ b_e(r,z,t)=q^{-(e+1)/2}\widehat b_e(r/\sqrt q),\qquad
+ \int_0^\infty x^e\widehat b_e(x)\,\dd x=1,\qquad e=1,2,
+\]
+with interior support. The change $r=\sqrt q\,x$ proves
+$\int r^eb_e\,\dd r=1$ exactly. Define
+\begin{equation}
+ M_e=\int_0^\infty r^eF_e(r)\,\dd r,\qquad
+ \sigma_e(r)=-r^{-e}\int_0^r s^e(F_e(s)-b_e(s)M_e)\,\dd s .
+ \label{cb:primitive}
+\end{equation}
+Then
+\begin{equation}
+ (\partial_r+e/r)\sigma_e=-F_e+b_eM_e,\qquad
+ \int_0^\infty r^e(F_e-b_eM_e)\,\dd r=0. \label{cb:radial}
+\end{equation}
+Differentiate $r^e\sigma_e$ to prove the first identity; integrate and
+use the bump normalization for the second. The integral is zero below
+$r_-$ and above $r_+$, so $\sigma_e$ has compact smooth support in the
+same enclosing interval. A homogeneous solution is $cr^{-e}$, and a
+compact homogeneous solution has $c=0$; thus the primitive is unique
+among compact solutions of its displayed equation. Moreover a compact
+solution of $(\partial_r+e/r)\sigma=-F_e$ exists if and only if $M_e=0$:
+necessity follows by integrating the weighted derivative, and
+sufficiency follows from \eqref{cb:primitive}. The two moments are
+therefore the exact surviving finite-dimensional terms.
+
+For $C_e=\int_{r_-}^{r_+}s^e\,\dd s$,
+$|M_e|\le C_e\|F_e\|_\infty$ and
+\[
+ \|\sigma_e\|_\infty\le r_-^{-e}C_e
+        (\|F_e\|_\infty+\|b_e\|_\infty|M_e|).
+\]
+If $G_e=F_e-b_eM_e$, successive radial derivatives obey the exact recurrence
+\[
+ \partial_r^{j+1}\sigma_e=-\partial_r^jG_e
+ -e\sum_{i=0}^j {j\choose i}(-1)^ii!r^{-i-1}
+                              \partial_r^{j-i}\sigma_e .
+\]
+This proves every finite radial derivative bound inductively. Parameter
+derivatives follow by differentiating the compact integral; all derivatives
+of $q,b_e$ and the moving physical data are retained. On the present compact
+set $q$ is bounded away from zero. No terminal uniform estimate is implied.
+
+The source (9.12)--(9.14) uses physical
+$F_e=Q^{-2A-1/2}E_e^*$, where
+$E_2^*=\av{E_\theta}_Y$ and $E_1^*=\av{E_z}_Y$.
+For our fields define $E_e^*=Q^{2A+1/2}F_e$ in that same convention.
+With $r=\sqrt Q R$ and $Q$ fixed in a chart, the exact conversions are
+\begin{gather}
+ M_e=Q^{e/2-2A}M_e^*,\quad M_e^*=\int R^eE_e^*\,\dd R,\quad
+ b_e^*(R)=Q^{(e+1)/2}b_e(\sqrt Q R),\nonumber\\
+ \Sigma_e(R)=Q^{2A}\sigma_e(\sqrt Q R),\qquad
+ (\partial_R+e/R)\Sigma_e=-E_e^*+b_e^*M_e^*. \label{cb:chart}
+\end{gather}
+Substitute $r=\sqrt Q R$ including its measure in the moment, and
+differentiate $\Sigma_e$ to prove each factor. The input $F_e$ is already
+auxiliary independent. Taking only an averaged moment of an unaveraged
+$F(R,Y)$ would not suffice: $F=b_e(R)\cos(2\pi Y_1)$ has zero averaged
+moment but a nonzero exterior primitive at each generic $Y$.
+
+\section{The source covariance derivative and its signed right inverse}
+At each slow point let $w_{\rm tan}=(w_\theta,w_z)$ and define
+\[
+ \Cov(w)=\av{w_rw_{\rm tan}},\qquad
+ \Cross(w,v)=\av{w_rv_{\rm tan}+v_rw_{\rm tan}}.
+\]
+Direct expansion proves
+$\Cov(w+v)=\Cov(w)+\Cross(w,v)+\Cov(v)$ and
+$D\Cov(w)[v]=\Cross(w,v)$.
+
+Use the exact source real pulses
+$b_\sigma=\chi_g(\xi_g)\psi(v)t_\sigma^h\cos(k\Phi_\sigma)$,
+$\sigma\in\{+,-\}$. They exclude the slow cutoff $\eta_\beta$ and
+scalar amplitudes; $\chi_g$ is an auxiliary transverse cutoff.
+The two signs have disjoint auxiliary supports. Put
+$H_{\rm cov}=[\Cov(b_+)\mid\Cov(b_-)]$.
+For slow scalar coefficients independent of both averages,
+\[
+ \Cov(a_+b_++a_-b_-)=H_{\rm cov}(a_+^2,a_-^2)^T.
+\]
+All cross products vanish by disjointness. The factor $1/2$ from
+$\av{\cos^2(k\Phi_\sigma)}_\theta$ is already inside the columns.
+
+On the source interior cone the fixed primary amplitudes satisfy
+$a_\sigma=\sqrt{(H_{\rm cov}^{-1}T_{0,*})_\sigma}>0$,
+$T_{0,*}=(Q/q)^{A+1/2}T_0$, and
+$W_0=\sqrt\varepsilon\sum_\sigma a_\sigma b_\sigma$.
+For any signed slow real vector $\Sigma$, define
+\begin{equation}
+ d_\Sigma=H_{\rm cov}^{-1}\Sigma/\varepsilon,\qquad
+ \delta a_\sigma=(d_\Sigma)_\sigma/(2a_\sigma),\qquad
+ L_\Sigma=\sqrt\varepsilon\sum_\sigma\delta a_\sigma b_\sigma .
+ \label{cb:L}
+\end{equation}
+It follows exactly that
+\begin{gather}
+ \Cross(W_0,L_\Sigma)=\varepsilon H_{\rm cov}(2a\odot\delta a)=\Sigma,
+ \label{cb:inverse}\\
+ \Cov(W_0+L_\Sigma)
+   =\varepsilon T_{0,*}+\Sigma+
+       \varepsilon H_{\rm cov}(\delta a_+^2,\delta a_-^2)^T.
+ \label{cb:quad}
+\end{gather}
+This proves a linear right inverse of the derivative. It is not an
+exact inverse of the quadratic covariance map. There is no sign or
+size restriction on $\Sigma$ in these identities; no square root of
+$H_{\rm cov}^{-1}(T_{0,*}+\Sigma/\varepsilon)$ is taken.
+
+With Euclidean and induced operator norms and
+$a_{\min}=\min_\sigma|a_\sigma|>0$, they give the explicit bound
+\begin{equation}
+ \|\Cov(L_\Sigma)\|\le
+ \frac{\|H_{\rm cov}\|\|H_{\rm cov}^{-1}\|^2}
+              {4\varepsilon a_{\min}^2}\,\|\Sigma\|^2. \label{cb:bound}
+\end{equation}
+Indeed $\|\delta a\|\le\|H_{\rm cov}^{-1}\|\|\Sigma\|/
+(2\varepsilon a_{\min})$ and
+$\|(\delta a_\sigma^2)_\sigma\|_2\le\|\delta a\|_2^2$.
+All higher derivative costs are explicit from Leibniz and
+\[
+ \partial^I H_{\rm cov}^{-1}
+ =-H_{\rm cov}^{-1}
+ \sum_{0<J\le I}{I\choose J}(\partial^JH_{\rm cov})
+                           \partial^{I-J}H_{\rm cov}^{-1},
+\]
+and, for any nonzero scalar $a$,
+$\partial^I(a^{-1})=-a^{-1}\sum_{0<J\le I}{I\choose J}
+(\partial^Ja)\partial^{I-J}(a^{-1})$.
+Together with \eqref{cb:L} these recurrences give finite bounds for
+each order without assuming constant amplitudes or constant columns.
+
+\section{Assembly, the actual covariance change, and residual cancellation}
+For the physical target $\sigma=(\sigma_2,\sigma_1)$ from
+\eqref{cb:primitive}, use the source squared slow partition
+$\sum_\beta\eta_\beta^2=1$ on its support. Set
+\begin{align}
+ W_{0,\rm phys}&=\sum_\beta Q_\beta^{-A}\eta_\beta W_{0,\beta},\nonumber\\
+ v_{\rm pr}&=\sum_\beta Q_\beta^{-A}\eta_\beta
+                        L_\beta(Q_\beta^{2A}\sigma).
+ \label{cb:assembly}
+\end{align}
+Overlapping slow labels have disjoint auxiliary supports. Taking cross
+covariance and using \eqref{cb:inverse} gives
+\[
+ \Cross(W_{0,\rm phys},v_{\rm pr})
+ =\sum_\beta Q_\beta^{-2A}\eta_\beta^2Q_\beta^{2A}\sigma=\sigma.
+\]
+Every band scale remains distinct. Likewise the leading physical factor is
+$Q^{-2A}\varepsilon(Q/q)^{A+1/2}
+=Q^{-A+h+1/2}q^{-A-1/2}=q^{-A-1/2}$ because $A=1/2+h$.
+
+Apply the exact curl \eqref{cb:curl} to each coefficient of
+$v_{\rm pr}$, including the slow cutoffs before curling. Write the
+resulting divergence-free increment as $v_s=v_{\rm pr}+r_s$.
+Let $t_{s,m}$ denote the chart transverse harmonic coefficients of
+$\eta_\beta L_\beta(Q_\beta^{2A}\sigma)$, before multiplication by
+$Q_\beta^{-A}$. For each such coefficient choose
+$\pi_{s,m}=i(n^T\mathsf Kt_{s,m}-(n')^Tt_{s,m})/
+(k_\beta m|n|^2)$ and sum
+$\operatorname{Re}(Q_\beta^{-2A}\pi_{s,m}e^{i\phi_{\beta,m}})$
+to define the smooth compact $\pi_s$. Its full gradients remain below.
+Let the actual old wave $w$ consist of the wave part of $u_*$
+plus the candidate $w_y$, including all existing curl corrections, and write
+$w=W_{0,\rm phys}+e_w$. Define tensor covariance
+$\mathcal T(w)=\av{w\otimes w}$ and
+$\mathcal B_T(u,v)=\av{u\otimes v+v\otimes u}$.
+Expansion, with $e_w=w-W_{0,\rm phys}$, proves
+\begin{equation}
+ \Delta\mathcal T=
+ \mathcal B_T(W_{0,\rm phys},v_{\rm pr})
+ +\mathcal B_T(e_w,v_{\rm pr})
+ +\mathcal B_T(w,r_s)+\mathcal T(v_s).
+ \label{cb:fullcov}
+\end{equation}
+Its first radial--tangential pair is $\sigma$.
+All other entries and the remaining three tensors are retained.
+For example their radial--tangential pair has bound
+\[
+ 2\|e_w\|_{L^2_{\theta,Y}}\|v_{\rm pr}\|_{L^2_{\theta,Y}}
+ +2\|w\|_{L^2_{\theta,Y}}\|r_s\|_{L^2_{\theta,Y}}
+ +\|v_s\|_{L^2_{\theta,Y}}^2 ,
+\]
+by Cauchy--Schwarz. The compact-set estimates above and the explicit
+curl differentiate to bound all these terms at each finite order.
+
+For clarity the complete residual after adding $v_s$ and its selected
+pressure $\pi_s$ is, without any averaging,
+\begin{align}
+ R_{\nu_{\rm NS}}(u+v_s,p+\pi_s)
+ =R_{\nu_{\rm NS}}(u,p)
+ &+\partial_tv_s+(u\cdot\nabla)v_s+(v_s\cdot\nabla)u \nonumber\\
+ &-\nu_{\rm NS}\Delta v_s+\nabla\pi_s
+ +(v_s\cdot\nabla)v_s . \label{cb:residual}
+\end{align}
+This follows by expanding the product and retains viscosity and every
+pressure term. For a symmetric tensor $S$ the averaged tangential
+divergence in physical cylindrical coordinates is
+\[
+ (\av{\nabla\cdot S})_\theta
+   =(\partial_r+2/r)\av{S_{r\theta}}+\partial_z\av{S_{z\theta}},
+ \qquad
+ (\av{\nabla\cdot S})_z
+   =(\partial_r+1/r)\av{S_{rz}}+\partial_z\av{S_{zz}} .
+\]
+To verify, write the Cartesian divergence in the orthonormal cylindrical
+basis, using $\partial_\theta e_r=e_\theta$,
+$\partial_\theta e_\theta=-e_r$; periodic angular derivatives average
+to zero and the two basis terms give $2/r$ and $1/r$ respectively.
+The auxiliary chain terms average to zero by periodicity, but the
+physical slow derivatives remain.
+
+Let $U=u_*+w_y$, $P_y=p_*+\pi_y$, and set
+\[
+ \mathcal L=
+ \partial_tv_s+(U\cdot\nabla)v_s+(v_s\cdot\nabla)U
+ -\nu_{\rm NS}\Delta v_s+\nabla\pi_s .
+\]
+For a fully explicit averaged remainder, write $U=u_{\rm mean}+w$,
+where $u_{\rm mean}$ is its angular mean, and put
+$\mathcal V=\mathcal L-(w\cdot\nabla)v_s-(v_s\cdot\nabla)w$.
+Then the average of \eqref{cb:residual} is
+$\av{R_y}+\av{\mathcal V}+\nabla\cdot\Delta\mathcal T$.
+Let $S_0=\mathcal B_T(W_{0,\rm phys},v_{\rm pr})$ and
+$S_{\rm rem}=\mathcal B_T(e_w,v_{\rm pr})
+ +\mathcal B_T(w,r_s)+\mathcal T(v_s)$.
+Consequently the radial divergence of the first pair in
+\eqref{cb:fullcov} changes the prescribed averaged residual $F_e$ into
+$b_eM_e$ by \eqref{cb:radial}. The axial tensor divergences, the other
+three tensors, the exact linear terms and the pressure terms of
+\eqref{cb:residual} remain in the new residual. Equivalently the new
+averaged tangential residual is exactly
+\begin{align*}
+ \av{R_{\rm new}}_{\rm tan}
+ ={}&\av{R_{\nu_{\rm NS}}(u_*,p_*)}_{\rm tan}
+ +(b_2M_2,b_1M_1)+\av{\mathcal V}_{\rm tan}\\
+ &+\partial_z((S_0)_{z\theta},(S_0)_{zz})
+   +(\nabla\cdot S_{\rm rem})_{\rm tan}.
+\end{align*}
+Every term here is defined by the displayed differentiated fields and
+tensors. None is assumed to vanish.
+The map from $y$ through \eqref{cb:F}, \eqref{cb:primitive},
+\eqref{cb:L}, and \eqref{cb:assembly} is now an actual composite
+construction. It retains the signed residual produced by the coupled
+candidate and the source's original physical and chart units.
+
+\section{Signs and the exact full-flow reflection}
+The maps $F_e\mapsto M_e\mapsto\sigma_e\mapsto L_\Sigma$ are linear
+and reverse sign with their inputs; $\Cov(L_\Sigma)$ is even.
+The two primary amplitudes may also be replaced independently by
+$s_\sigma a_\sigma$, $s_\sigma\in\{-1,1\}$, provided the same fixed
+choice is used in each denominator: the cross identity is unchanged.
+This does not negate the nonlinear Navier--Stokes equation.
+
+Here is the exact full-flow map. In Cartesian coordinates let
+$O=\operatorname{diag}(1,-1,1)$ and define
+\[
+ u^\sharp(x,t)=O u(Ox,t),\quad
+ p^\sharp(x,t)=p(Ox,t),\quad f^\sharp(x,t)=O f(Ox,t).
+\]
+The chain rule gives
+$\nabla u^\sharp=O(\nabla u)(Ox,t)O$,
+$\Delta u^\sharp=O(\Delta u)(Ox,t)$, and
+$(u^\sharp\cdot\nabla)u^\sharp
+ =O((u\cdot\nabla)u)(Ox,t)$.
+Thus $\nabla\cdot u^\sharp=0$ and
+$R_{\nu_{\rm NS}}(u^\sharp,p^\sharp)=O R_{\nu_{\rm NS}}(u,p)(Ox,t)$
+with the same positive viscosity.
+In cylindrical components this is
+\[
+ (u_r^\sharp,u_\theta^\sharp,u_z^\sharp)(r,\theta,z,t)
+ =(u_r,-u_\theta,u_z)(r,-\theta,z,t),
+\]
+and the force transforms identically. Pressure reflects in its argument.
+For an axisymmetric field this reverses exactly its swirl; meridional
+components remain fixed. The entire momentum tensor is mapped to
+$O\mathcal T O^T$, so its radial--tangential pair transforms by
+$(T_{r\theta},T_{rz})\mapsto(-T_{r\theta},T_{rz})$ after angular
+averaging. Vorticity transforms as
+$\omega^\sharp(x,t)=\det(O)\,O\omega(Ox,t)$, obtained by applying
+the same derivative identities to the Levi-Civita formula for curl.
+The map is an involution, preserves the kinetic-energy integral
+(by $|\det O|=1$), compact support, smoothness, and blowup magnitude
+along the reflected path. It preserves zero initial data when present.
+It proves transport of any established axisymmetric signed swirl
+divergence to the opposite sign; it does not itself prove an endpoint.
+
+The source five-moment correction, auxiliary mean inverse, and infinite
+summation are subsequent source operations. Their full estimates are
+not re-proved here. The earlier draft formulas for them are withdrawn:
+in particular the fifth moment row is
+$\int(2RG\gamma_d-RV\Delta v)\,\dd R=-J_z$, without an extra outer
+$R$, and its reserved profile in a $Q$ chart includes $(Q/q)^A$.
+The finite map proved above retains the two moments and all other
+residual terms, so it establishes neither a third shooting return nor
+an infinite modified viscous sequence.

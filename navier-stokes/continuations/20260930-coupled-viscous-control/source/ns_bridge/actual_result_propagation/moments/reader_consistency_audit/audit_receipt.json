@@ -1,0 +1,78 @@
+{
+  "schema": "reader-consistency-audit-v2",
+  "status": "passed",
+  "all_passed": true,
+  "check_count": 13,
+  "checks": [
+    {
+      "name": "direct_eval_power",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "direct_eval_power_e1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "epsilon_identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "correct_eval_exponent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no_extra_eval_exponent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "explicit_eval_majorant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "norms_are_bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "old_derivative_orders_retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reflection_scope",
+      "passed": true,
+      "detail": "reflection handled in source memo"
+    },
+    {
+      "name": "replay_receipt_binds_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "replay_receipt_binds_script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "build_binds_body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "build_binds_script",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "body_sha256": "eb01f7e702a75f82663dbb1894a682535c5b0c2575172dd2689ed4c70eba2617",
+  "replay_sha256": "2ddbe7f612db7e416f7ad5470eaa3d942ab38e25a586dbbb0c45c689460800c0",
+  "audit_sha256": "84ee95f6f9ca62abfc6a3e1f0331a47385115820b42dbd85ed9d8941ad6c1a6b",
+  "build_pdf_sha256": "cdc59d23eb09637b6b83e49557b490c6c7674df1e82505b68cf557069e57fc79",
+  "scope": "Finite consistency audit after quantitative body and receipt repair; no endpoint or infinite claim."
+}

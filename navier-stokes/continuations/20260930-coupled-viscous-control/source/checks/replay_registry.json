@@ -1,0 +1,89 @@
+{
+  "render_directory": "qa/third_release",
+  "replays": [
+    {
+      "script": "replay_exact.py",
+      "receipt": "checks/replay_exact.json"
+    },
+    {
+      "script": "finite_stage/replay_first_stage.py",
+      "receipt": "finite_stage/replay_receipt.json"
+    },
+    {
+      "script": "paper_coupling/replay_coupled.py",
+      "receipt": "paper_coupling/replay_receipt.json"
+    },
+    {
+      "script": "paper_coupling/profile_diffusion/replay_profile_diffusion.py",
+      "receipt": "paper_coupling/profile_diffusion/profile_diffusion_checks.json"
+    },
+    {
+      "script": "entry_audit/replay_actual_entry.py",
+      "receipt": "entry_audit/replay_receipt.json"
+    },
+    {
+      "script": "second_return/replay_second_return.py",
+      "receipt": "second_return/replay_receipt.json"
+    },
+    {
+      "script": "modified_spatial/replay_spatial.py",
+      "receipt": "modified_spatial/replay_report.json"
+    },
+    {
+      "script": "third_growth_geometry/replay_third_growth_geometry.py",
+      "receipt": "third_growth_geometry/replay_receipt.json"
+    },
+    {
+      "script": "third_entry_audit/replay_third_entry.py",
+      "receipt": "third_entry_audit/replay_receipt.json"
+    },
+    {
+      "script": "third_transition/replay_third_transition.py",
+      "receipt": "third_transition/replay_receipt.json"
+    },
+    {
+      "script": "third_transition/audit_finish/replay_independent.py",
+      "receipt": "third_transition/audit_finish/replay_receipt.json"
+    },
+    {
+      "script": "third_growth_spatial/replay_third_spatial.py",
+      "receipt": "third_growth_spatial/replay_report.json"
+    },
+    {
+      "script": "third_transition_spatial/replay_third_transition_spatial.py",
+      "receipt": "third_transition_spatial/replay_receipt.json"
+    },
+    {
+      "script": "third_return/audit/replay_third_steering.py",
+      "receipt": "third_return/audit/symbolic_receipt.json"
+    },
+    {
+      "script": "third_return/audit/replay_local_rational_bounds.py",
+      "receipt": "third_return/audit/local_rational_receipt.json"
+    },
+    {
+      "script": "third_return/local_spatial/replay_constant_audit.py",
+      "receipt": "third_return/local_spatial/constant_audit_receipt.json"
+    },
+    {
+      "script": "third_return/checks/third_return_persistence_check.py",
+      "receipt": "third_return/checks/third_return_persistence_receipt.json"
+    },
+    {
+      "script": "infinite_modified/checks/parabolic_similarity_check.py",
+      "receipt": "infinite_modified/checks/parabolic_similarity_receipt.json"
+    },
+    {
+      "script": "infinite_modified/checks/based_cascade_check.py",
+      "receipt": "infinite_modified/checks/based_cascade_receipt.json"
+    },
+    {
+      "script": "infinite_modified/checks/return_correction_check.py",
+      "receipt": "infinite_modified/checks/return_correction_receipt.json"
+    },
+    {
+      "script": "infinite_modified/checks/full_support_force_check.py",
+      "receipt": "infinite_modified/checks/full_support_force_receipt.json"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "scope": "Polynomial replay exercises all residual terms, including primitive constant; general proofs and remaining analytic checks are in FULL_BODY_AUDIT.md.",
+  "check_count": 21,
+  "all_passed": true,
+  "body_sha256": "f69ce7dee42a4a768abeb6e6344edbf31c27cb69b6e0d12b425919ee07f7f26c",
+  "checks": [
+    {
+      "name": "complete scalar Laplacian",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "six-group vector Laplacian",
+      "passed": true,
+      "residual": "Matrix([[0], [0]])"
+    },
+    {
+      "name": "full velocity Jacobian",
+      "passed": true,
+      "residual": "Matrix([[0, 0], [0, 0]])"
+    },
+    {
+      "name": "exact scalar self-interaction sign",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "trace-free gradient transport identity",
+      "passed": true,
+      "residual": "Matrix([[0, 0], [0, 0]])"
+    },
+    {
+      "name": "full scalar residual including coupling and modal damping",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "full vector residual and both parent interaction directions",
+      "passed": true,
+      "residual": "Matrix([[0], [0]])"
+    },
+    {
+      "name": "Q derivative including phase metric and damping",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "phase length derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "linear third X coordinate and physical time factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "linear third Y coordinate and physical time factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "second-temperature full q epsilon scaling",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "angle inverse differential and physical feedback",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "control bound first coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "control bound revived-parent coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Q3 exact frequency coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "phase lower bound rational margin",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "collar u bound",
+      "passed": true,
+      "residual": "True"
+    },
+    {
+      "name": "collar g bound",
+      "passed": true,
+      "residual": "True"
+    },
+    {
+      "name": "collar strict feedback denominator",
+      "passed": true,
+      "residual": "True"
+    },
+    {
+      "name": "Picard displacement fits cube",
+      "passed": true,
+      "residual": "True"
+    }
+  ]
+}

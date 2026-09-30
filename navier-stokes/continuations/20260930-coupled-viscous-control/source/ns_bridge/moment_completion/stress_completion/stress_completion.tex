@@ -1,0 +1,588 @@
+\section{Compact completion of the full averaged residual}
+\label{mcstress:section}
+
+This section computes a compact symmetric stress and a compact pressure
+for the complete averaged residual of the actual finite curl candidate.
+It retains the original radial bumps depending on $q(z,t)$, both axial
+fluxes, the radial force, and the full cylindrical connection terms.
+The result is a stress--pressure representation of a computed force;
+it does not by itself modify a velocity or identify the constructed
+stress with a covariance of additional waves.
+
+\subsection{The actual extended fields and all three averaged components}
+
+Use right-handed cylindrical coordinates
+$x=(r\cos\theta,r\sin\theta,z)$, with oriented orthonormal basis
+$(e_r,e_\theta,e_z)$ and $r>0$. The retained finite source state is
+$(u_*,p_*)$; the actual added field and its selected pressure are
+$(v,\pi)=(w_y,\pi_y)$. On a finite collection of source labels the
+added potential has the specified form
+\begin{equation}\label{mcstress:actual_potential}
+\begin{gathered}
+ \mathcal A_y=\sum_j\operatorname{Re}
+   \left[Q_j^{1/2-A}
+     \frac{i\,n_j\times t_j}{k_jm_j|n_j|^2}
+                      e^{ik_jm_j\Phi_j}\right],\qquad
+ v=\operatorname{curl}_{\mathscr D}\mathcal A_y,\\
+ t_j=\chi_jB_jy_3(t_{c,j}),\qquad
+ y_3=\binom{\Theta_3}{\Omega_3},\qquad
+ t_{c,j}=t_b+\alpha_jv_j,\qquad
+ n_j^TB_j=0,\qquad k_jm_jp_j\in\mathbb Z\setminus\{0\}.
+\end{gathered}
+\end{equation}
+Here $y_3$ is the actual signed third-growth trajectory, the cutoffs
+and source frame are the retained functions, and $Q_j$ is constant
+on each source chart. The chosen pressure is the real harmonic sum
+with chart coefficient
+\[
+ Q_j^{-2A}
+ \frac{i\{n_j^T\mathsf K_jt_j-(n'_j)^Tt_j\}}
+      {k_jm_j|n_j|^2}e^{ik_jm_j\Phi_j}.
+\]
+All coefficient components are independent of $\theta$; their angular
+dependence is the displayed nonzero integer harmonic. Their radial
+and axial supports lie in a fixed compact set with $r$ bounded away
+from zero on the finite time interval under consideration. Smooth
+zero extension at each source cutoff is retained.
+
+The source absolute auxiliary coordinate is $Y\in\mathbb T^2$ and
+the physical evaluation is
+\begin{equation}\label{mcstress:extended_derivatives}
+\begin{gathered}
+ Y(r,t)=v_r r^{d_r}+v_t t\pmod{\mathbb Z^2},\qquad
+ v_r=(1,-b_g),\quad v_t=(b_g,1),\quad b_g=\sqrt2-1,\\
+ \rho_g=\frac{\log(4-\sqrt2)}{\log(4+\sqrt2)},\quad
+ \kappa_s=10^{-5},\quad d_r=2((1+h)\rho_g-h\kappa_s),\\
+ \mathscr D_r=\partial_r+d_r r^{d_r-1}v_r\cdot\partial_Y,
+ \qquad \mathscr D_t=\partial_t+v_t\cdot\partial_Y,
+ \qquad \mathscr D_z=\partial_z.
+\end{gathered}
+\end{equation}
+The angular derivative is $\partial_\theta$.
+The exponent $h$ here is the unchanged source chart exponent. These
+lifted derivatives commute, obey the product rule, and satisfy
+$\mathscr D_r r=1$. Equivalently in Cartesian coordinates they are
+$\partial_{x_i}+\sum_\alpha(\partial_{x_i}Y_\alpha)\partial_{Y_\alpha}$;
+their commutators vanish because mixed derivatives of $Y$ commute.
+Thus evaluation at the physical map preserves every differentiated
+identity below.
+
+The actual finite source has its retained representation
+$u_* =\operatorname{curl}_{\mathscr D}\mathcal A_*+B_*e_\theta$,
+with $\partial_\theta B_*=0$. Commutation of the lifted derivatives
+proves $\operatorname{div}_{\mathscr D}\operatorname{curl}_{\mathscr D}=0$.
+Also $\operatorname{div}_{\mathscr D}(B_*e_\theta)=0$.
+Consequently both $u_*$ and $v$ are divergence free at every independent
+$Y$, not only after physical evaluation.
+
+Let the normalized averages act on cylindrical components before
+evaluation:
+\[
+ \langle f\rangle_\theta=\frac1{2\pi}\int_0^{2\pi}f\,d\theta,
+ \quad \langle f\rangle_Y=\int_{\mathbb T^2}f\,dY,
+ \quad \langle f\rangle=\langle\langle f\rangle_\theta\rangle_Y,
+ \quad\int_{\mathbb T^2}1\,dY=1.
+\]
+Every cylindrical curl operation retains the nonzero angular harmonic
+in \eqref{mcstress:actual_potential}. For example its radial and axial
+components are $r^{-1}\partial_\theta\mathcal A_z-\partial_z\mathcal A_\theta$
+and $(\mathscr D_r+r^{-1})\mathcal A_\theta-r^{-1}\partial_\theta\mathcal A_r$.
+Integrating the integer harmonic proves
+\begin{equation}\label{mcstress:zero_mean}
+ \langle v\rangle_\theta=0,\qquad
+ \langle\pi\rangle_\theta=0
+ \quad\hbox{at every }(r,z,t,Y).
+\end{equation}
+This statement includes the complete coefficient curl and every cutoff
+derivative, rather than only the principal amplitude.
+
+For a smooth periodic coefficient $f$, integration of its auxiliary
+derivatives gives
+\begin{equation}\label{mcstress:average_derivatives}
+ \langle\mathscr D_r f\rangle=\partial_r\langle f\rangle,
+ \quad \langle\mathscr D_t f\rangle=\partial_t\langle f\rangle,
+ \quad \langle\partial_z f\rangle=\partial_z\langle f\rangle,
+ \quad \langle\partial_\theta f\rangle=0.
+\end{equation}
+Applying the first identity twice also treats $\mathscr D_r^2$;
+the derivative of its variable coefficient has zero auxiliary average
+because that coefficient is independent of $Y$.
+
+At arbitrary fixed physical viscosity $\nu_{\rm NS}>0$, the exact
+residual increment is
+\begin{equation}\label{mcstress:residual_increment}
+ \Delta R=\mathscr D_t v+(u_*\cdot\nabla_{\mathscr D})v
+ +(v\cdot\nabla_{\mathscr D})u_*
+ +(v\cdot\nabla_{\mathscr D})v
+ -\nu_{\rm NS}\Delta_{\mathscr D}v+\nabla_{\mathscr D}\pi.
+\end{equation}
+This is the residual of the actual modified state minus the source
+state's residual at the same viscosity. Put
+\begin{equation}\label{mcstress:actual_tensor}
+ \bar u_* =\langle u_*\rangle_\theta,\qquad
+ w_*=u_*-\bar u_*,\qquad
+ S=\langle w_*\otimes v+v\otimes w_*+v\otimes v\rangle.
+\end{equation}
+It is a smooth real symmetric axisymmetric tensor compactly supported
+in the annular and axial set at issue. Each summand contains a factor
+of the actual compact field $v$.
+
+\begin{theorem}\label{mcstress:full_mean}
+The complete averaged residual is the full Cartesian divergence of
+the actual tensor $S$:
+\begin{equation}\label{mcstress:Ffull}
+ \langle\Delta R\rangle
+ =F_r e_r+F_2e_\theta+F_1e_z
+ =\operatorname{div}S,
+\end{equation}
+where
+\begin{equation}\label{mcstress:all_components}
+\begin{aligned}
+ F_r&=(\partial_r+r^{-1})S_{rr}-r^{-1}S_{\theta\theta}
+                                      +\partial_zS_{rz},\\
+ F_2&=(\partial_r+2r^{-1})S_{r\theta}+\partial_zS_{z\theta},\\
+ F_1&=(\partial_r+r^{-1})S_{rz}+\partial_zS_{zz}.
+\end{aligned}
+\end{equation}
+\end{theorem}
+\begin{proof}
+For divergence-free fields, direct Cartesian component expansion
+rewrites the three advection terms of \eqref{mcstress:residual_increment}
+as the lifted divergence of
+$u_*\otimes v+v\otimes u_*+v\otimes v$.
+The mean-flow cross tensor has zero angular average by
+\eqref{mcstress:zero_mean}, even when $\bar u_*$ depends on $Y$.
+Thus its averaged divergence is zero by
+\eqref{mcstress:average_derivatives} and the cylindrical divergence
+formula.
+
+To check the linear radial component explicitly, let
+\[
+ \mathscr L_0=\mathscr D_r^2+r^{-1}\mathscr D_r
+             +r^{-2}\partial_\theta^2+\partial_z^2.
+\]
+The complete cylindrical vector Laplacian is
+\[
+ \begin{aligned}
+ (\Delta_{\mathscr D}v)_r&=(\mathscr L_0-r^{-2})v_r
+                       -2r^{-2}\partial_\theta v_\theta,\\
+ (\Delta_{\mathscr D}v)_\theta&=(\mathscr L_0-r^{-2})v_\theta
+                       +2r^{-2}\partial_\theta v_r,\qquad
+ (\Delta_{\mathscr D}v)_z=\mathscr L_0v_z.
+ \end{aligned}
+\]
+Each average is zero by \eqref{mcstress:zero_mean} and
+\eqref{mcstress:average_derivatives}. The radial pressure average is
+$\langle\mathscr D_r\pi\rangle=\partial_r\langle\pi\rangle=0$;
+the angular and axial components vanish as well. The averaged time
+derivative is zero. These verifications retain the radial connection
+term and physical viscosity before taking the average.
+
+Finally, for a symmetric tensor independent of $\theta$ in cylindrical
+components, differentiation of
+$e_r=(\cos\theta,\sin\theta,0)$ and
+$e_\theta=(-\sin\theta,\cos\theta,0)$ gives exactly the three
+expressions in \eqref{mcstress:all_components}. One direct verification
+is to write its Cartesian matrix as $O_\theta S O_\theta^T$, where
+$O_\theta=[e_r,e_\theta,e_z]$, and use
+$\partial_x=\cos\theta\partial_r-r^{-1}\sin\theta\partial_\theta$
+and $\partial_y=\sin\theta\partial_r+r^{-1}\cos\theta\partial_\theta$.
+The derivatives of $O_\theta$ give $-S_{\theta\theta}/r$ in the radial
+row, $2S_{r\theta}/r$ in the angular row, and $S_{rz}/r$ in the axial
+row. Averaging the lifted version replaces $\mathscr D_r$ by
+$\partial_r$. This proves the full Cartesian identity.
+\end{proof}
+
+\subsection{The compact fluxes and the original varying radial bumps}
+
+For $e=1,2$, write $\tau_1=z$, $\tau_2=\theta$, and set
+\begin{equation}\label{mcstress:fluxes}
+ M_e(z,t)=\int_0^\infty r^eF_e(r,z,t)\,dr,
+ \qquad
+ J_e(z,t)=\int_0^\infty r^eS_{z\tau_e}(r,z,t)\,dr.
+\end{equation}
+Multiplication of the corresponding row of
+\eqref{mcstress:all_components} by $r^e$ makes its radial term
+$\partial_r(r^e S_{r\tau_e})$. The radial boundary values vanish
+by compact annular support. Therefore
+\begin{equation}\label{mcstress:flux_identity}
+ M_e=\partial_zJ_e,\qquad
+ \int_{\mathbb R}M_e(z,t)\,dz=0\quad(e=1,2).
+\end{equation}
+Both $J_e$ are smooth and compactly supported in $z$. No claim that
+either $M_e$ vanishes pointwise is used.
+
+Retain the original $q$-dependent bumps, for $q(z,t)>0$ on the compact
+source patch:
+\begin{equation}\label{mcstress:bumps}
+ b_e(r,z,t)=q(z,t)^{-(e+1)/2}
+             \widehat b_e(r/\sqrt{q(z,t)}),\qquad
+ \widehat b_e\in C_c^\infty((0,\infty)),\qquad
+ \int_0^\infty x^e\widehat b_e(x)\,dx=1.
+\end{equation}
+The fixed profiles may be taken to be the already selected ones.
+The change of variable $r=\sqrt q\,x$ proves
+$\int r^e b_e\,dr=1$ for every $(z,t)$. Choose a fixed annulus
+containing the supports of $S$ and of the bumps on the relevant compact
+$(z,t)$ set. This is possible because $q$ has positive lower and finite
+upper bounds there. Outside the compact axial set where a flux or
+force is nonzero all the formulas below extend by zero.
+
+The exact derivatives and cumulative bump are
+\begin{equation}\label{mcstress:bump_derivatives}
+\begin{gathered}
+ \partial_zb_e=-\frac{q_z}{2q}
+                  \bigl((e+1)b_e+r\partial_rb_e\bigr),\\
+ \beta_e(r,z,t)=\int_0^r s^eb_e(s,z,t)\,ds
+              =\int_0^{r/\sqrt q}x^e\widehat b_e(x)\,dx,\\
+ \partial_z\beta_e=-\frac{q_z}{2q}r^{e+1}b_e(r,z,t),\qquad
+ \int_0^\infty r^e\partial_zb_e\,dr=0.
+\end{gathered}
+\end{equation}
+The first identity is the product and chain rule. The second is the
+same radial substitution as the normalization. Differentiating its
+upper limit proves the third. Differentiating the normalization under
+the uniformly compact radial integral proves the fourth. In particular
+none of these identities assigns a sign to $q_z$.
+
+\subsection{Corrected radial primitives and the complete symmetric tensor}
+
+Define the actual corrected primitives
+\begin{equation}\label{mcstress:sigma}
+ \sigma_e(r,z,t)=-r^{-e}\int_0^r s^e
+       \bigl(F_e(s,z,t)-\partial_z(b_e(s,z,t)J_e(z,t))\bigr)\,ds,
+ \qquad e=1,2.
+\end{equation}
+Their exact radial equations are
+\begin{equation}\label{mcstress:sigma_equation}
+ (\partial_r+e/r)\sigma_e
+      =-F_e+\partial_z(b_eJ_e).
+\end{equation}
+This follows by multiplying \eqref{mcstress:sigma} by $r^e$ and
+using the fundamental theorem of calculus.
+
+For comparison with the initially proposed primitive, put
+\[
+ \sigma_e^{\rm old}=-r^{-e}\int_0^r s^e
+                       (F_e-b_e\partial_zJ_e)\,ds.
+\]
+Every missing term can be displayed exactly:
+\begin{equation}\label{mcstress:primitive_correction}
+ \sigma_e=\sigma_e^{\rm old}+r^{-e}J_e\partial_z\beta_e
+         =\sigma_e^{\rm old}-\frac{rq_z}{2q}b_eJ_e.
+\end{equation}
+Indeed expanding $\partial_z(b_eJ_e)$ in
+\eqref{mcstress:sigma} proves the first equality, and
+\eqref{mcstress:bump_derivatives} proves the second. With the old
+primitive the angular or axial stress divergence below would instead
+be $-F_e-(\partial_zb_e)J_e$. Thus the correction is necessary for the
+retained varying bump. It vanishes in the special case $q_z=0$.
+
+There is an exact expression entirely in the original tensor entries:
+\begin{equation}\label{mcstress:compact_flux_correction}
+\begin{gathered}
+ C_e(r,z,t)=\int_0^r s^eS_{z\tau_e}(s,z,t)\,ds
+                                    -\beta_e(r,z,t)J_e(z,t),\\
+ \sigma_e=-S_{r\tau_e}-r^{-e}\partial_zC_e.
+\end{gathered}
+\end{equation}
+To prove it, integrate the corresponding component of
+\eqref{mcstress:all_components} only up to $r$, obtaining
+$\int_0^r s^eF_e\,ds=r^eS_{r\tau_e}
++\partial_z\int_0^r s^eS_{z\tau_e}\,ds$. Substitute this identity
+and $\int_0^r s^e b_e\,ds=\beta_e$ into
+\eqref{mcstress:sigma}. Below both radial supports $C_e=0$;
+above both supports its two summands are $J_e$ and $J_e$, so it is
+again zero. This proves its compact support as well as the exact
+relation of the constructed radial stress to the actual covariance
+tensor.
+
+\begin{theorem}\label{mcstress:completion}
+The real symmetric axisymmetric tensor with cylindrical entries
+\begin{equation}\label{mcstress:tensor}
+\begin{gathered}
+ T_{rr}=0,\qquad T_{r\theta}=T_{\theta r}=\sigma_2,\qquad
+ T_{rz}=T_{zr}=\sigma_1,\\
+ T_{z\theta}=T_{\theta z}=-b_2J_2,\qquad
+ T_{zz}=-b_1J_1,\qquad
+ T_{\theta\theta}=rF_r+r\partial_z\sigma_1
+\end{gathered}
+\end{equation}
+is smooth and compactly supported in an annular cylinder and obeys
+the full Cartesian identity
+\begin{equation}\label{mcstress:divergence}
+ \operatorname{div}T=-(F_r e_r+F_2e_\theta+F_1e_z).
+\end{equation}
+If the term $rF_r$ is omitted only in $T_{\theta\theta}$, the exact
+divergence is instead $-(0,F_2,F_1)$ in cylindrical components.
+\end{theorem}
+\begin{proof}
+The integral of the numerator in \eqref{mcstress:sigma} over the
+entire radial half-line is
+\[
+ M_e-\partial_z\left(J_e\int_0^\infty s^eb_e\,ds\right)
+  =\partial_zJ_e-\partial_zJ_e=0.
+\]
+Thus the numerator primitive is zero below its support and zero above
+it. Division by $r^e$ introduces no singularity because it is zero on
+a fixed neighborhood of the axis. All derivatives under its fixed
+compact radial integral exist, and the normalization identity holds
+smoothly in $(z,t)$, so its extension by zero is smooth. Compact axial
+support follows because both $F_e$ and $J_e$ vanish outside the fixed
+compact axial set. The same statements hold for all entries of
+\eqref{mcstress:tensor}. Passing to the Cartesian matrix
+$O_\theta T O_\theta^T$ preserves smoothness away from the axis; near
+the axis it is identically zero. Hence this is a smooth compactly
+supported Cartesian tensor.
+
+Apply the full symmetric axisymmetric divergence formula already
+proved in \eqref{mcstress:all_components}. Its three rows are
+\[
+ \begin{aligned}
+ (\operatorname{div}T)_r
+   &=-\frac{rF_r+r\partial_z\sigma_1}{r}
+                                     +\partial_z\sigma_1=-F_r,\\
+ (\operatorname{div}T)_\theta
+   &=(\partial_r+2/r)\sigma_2-\partial_z(b_2J_2)=-F_2,\\
+ (\operatorname{div}T)_z
+   &=(\partial_r+1/r)\sigma_1-\partial_z(b_1J_1)=-F_1.
+ \end{aligned}
+\]
+The last two identities are \eqref{mcstress:sigma_equation}, including
+every derivative of $b_e$. This proves the Cartesian vector identity
+and, on omitting $rF_r$, its stated radial-zero variant.
+\end{proof}
+
+\subsection{Compact pressure, tracefree stress, and the exact gauge relation}
+
+The trace and its prescribed pressure are explicitly
+\begin{equation}\label{mcstress:pressure}
+ \operatorname{tr}T=rF_r+r\partial_z\sigma_1-b_1J_1,
+ \qquad
+ p_T=\frac13\bigl(rF_r+r\partial_z\sigma_1-b_1J_1\bigr),
+ \qquad T^0=T-p_TI_3.
+\end{equation}
+Then $\operatorname{tr}T^0=0$, and every field is smooth and compactly
+supported in the same annular cylinder. The exact full cancellation is
+\begin{equation}\label{mcstress:tracefree_cancellation}
+ F+\operatorname{div}T^0+\nabla p_T=0.
+\end{equation}
+To check its sign, for any scalar $p$ Cartesian differentiation gives
+$\operatorname{div}(pI_3)=\nabla p$. Therefore
+$\operatorname{div}T^0=\operatorname{div}T-\nabla p_T
+=-F-\nabla p_T$, which proves the displayed equation.
+In components the new diagonal entries are
+\[
+ T^0_{rr}=-p_T,\quad
+ T^0_{\theta\theta}=rF_r+r\partial_z\sigma_1-p_T,\quad
+ T^0_{zz}=-b_1J_1-p_T.
+\]
+The axial stress divergence alone changes by $-\partial_zp_T$;
+the pressure gradient contributes $+\partial_zp_T$. Thus the combined
+stress--pressure correction preserves the exact tangential equations.
+There is no claim that their stress term alone stays unchanged.
+
+More generally $T-pI_3$ with any smooth compact scalar $p$ satisfies
+$F+\operatorname{div}(T-pI_3)+\nabla p=0$.
+The choice in \eqref{mcstress:pressure} is the unique one making
+this stress tracefree. The map from symmetric tensors to
+tracefree-tensor--scalar pairs,
+\[
+ T\longmapsto\bigl(T-\tfrac13\operatorname{tr}T\,I_3,
+                         \tfrac13\operatorname{tr}T\bigr),
+\]
+has exact inverse $(U,p)\mapsto U+pI_3$ when $\operatorname{tr}U=0$.
+It intertwines $\operatorname{div}$ with
+$(U,p)\mapsto\operatorname{div}U+\nabla p$. This supplies the full
+map between the two presentations, including compact support and signs.
+
+\subsection{All total force and torque components and the divergence image}
+
+The Cartesian components of the averaged force are
+\[
+ F=(F_r\cos\theta-F_2\sin\theta,
+       F_r\sin\theta+F_2\cos\theta,F_1).
+\]
+Integration in $\theta$ with the physical volume element
+$dx=r\,dr\,d\theta\,dz$ gives
+\begin{equation}\label{mcstress:force_torque}
+\begin{gathered}
+ \int_{\mathbb R^3}F\,dx
+  =2\pi e_z\int_{\mathbb R}M_1(z,t)\,dz=0,\\
+ \int_{\mathbb R^3}x\times F\,dx
+  =2\pi e_z\int_{\mathbb R}M_2(z,t)\,dz=0.
+\end{gathered}
+\end{equation}
+For the torque calculation, direct multiplication in the oriented
+basis gives
+\[
+ x\times F=-zF_2e_r+(zF_r-rF_1)e_\theta+rF_2e_z.
+\]
+The first two terms integrate to zero in $\theta$, and the third
+gives the second equation of \eqref{mcstress:force_torque}.
+Thus all three force and all three torque components vanish. The last
+equalities use the already proved compact flux identities
+\eqref{mcstress:flux_identity}. The same torque vanishes about every
+fixed origin $x_0$, because subtracting $x_0$ changes it by
+$-x_0\times\int F\,dx=0$. On a finite axial slab $a<z<b$, the
+axial force and torque are respectively
+$2\pi(J_1(b,t)-J_1(a,t))$ and
+$2\pi(J_2(b,t)-J_2(a,t))$. The quantities need not vanish on an
+individual slice.
+
+There is also a direct Cartesian stress verification. Since
+$F_j=-\partial_kT_{jk}$ and $T$ is compact, integration by parts gives
+\begin{equation}\label{mcstress:first_moments}
+ \int F_j\,dx=0,\qquad
+ \int x_iF_j\,dx=\int T_{ji}\,dx=-\int S_{ji}\,dx.
+\end{equation}
+Symmetry makes the antisymmetric part of the first-moment matrix zero,
+which is precisely all three torque components. Its symmetric part
+is not asserted to vanish. The second equality with $S$ uses
+$F=\operatorname{div}S$. Equivalently
+$\operatorname{div}(T+S)=0$; multiplying this equation by $x_i$ and
+integrating proves $\int(T+S)_{ji}\,dx=0$. In the tracefree-pressure
+presentation the same first moment is
+$\int T^0_{ji}\,dx+\delta_{ij}\int p_T\,dx$.
+All these identities persist under any finite time differentiation on
+a common compact support, by differentiation under the integral.
+
+For completeness, this construction proves the exact image of compact
+symmetric-stress divergence in the axisymmetric class. Let
+an open axial interval $I_z$ contain the actual axial supports, with
+$q>0$ smooth on a neighborhood of its relevant compact subsets at the
+fixed time. In the following two spaces all supports are compact
+subsets of $\{r>0,\ z\in I_z\}$. Thus the original bump is defined
+everywhere it is used, and integrating between axial support endpoints
+stays inside $I_z$.
+Let
+$\mathcal F_0$ be the space of smooth real axisymmetric compact forces
+supported away from $r=0$ and satisfying exactly
+\[
+ \int_{\mathbb R}\int_0^\infty rF_1\,dr\,dz=0,
+ \qquad
+ \int_{\mathbb R}\int_0^\infty r^2F_2\,dr\,dz=0.
+\]
+Let $\mathcal S_c$ be the space of smooth real compact symmetric
+axisymmetric Cartesian tensors supported away from $r=0$. Define
+$\mathcal D:\mathcal S_c\to\mathcal F_0$ by
+$\mathcal D(U)=-\operatorname{div}U$.
+Integration by parts proves that its values satisfy both defining
+identities of $\mathcal F_0$, and axisymmetry makes the other force
+and torque components vanish as above.
+
+For any $F\in\mathcal F_0$, compute its actual radial moments and set
+\[
+ J_e(z)=\int_{-\infty}^z\int_0^\infty r^eF_e(r,s)\,dr\,ds.
+\]
+This is a smooth compact axial function: its derivative is $M_e$, it
+vanishes below the axial support, and the defining zero total integral
+makes it vanish above that support. Use the fixed bumps
+\eqref{mcstress:bumps}, the corrected primitive
+\eqref{mcstress:sigma}, and all entries of
+\eqref{mcstress:tensor}. The proof of Theorem~\ref{mcstress:completion}
+uses only these identities and proves a compact tensor
+$\mathcal C_bF$ with
+\begin{equation}\label{mcstress:right_inverse}
+ \mathcal D\mathcal C_bF=F\qquad(F\in\mathcal F_0).
+\end{equation}
+Thus the two total moments are necessary and sufficient, with an
+explicit right inverse. For the actual force in
+\eqref{mcstress:Ffull}, this primitive in $z$ equals the already
+computed $J_e$ from $S$, because both have derivative $M_e$ and vanish
+at the negative axial end. No additional compatibility condition has
+been imposed on the actual candidate.
+
+For fixed $q$ and bump profiles, all operations defining
+$\mathcal C_b$ are linear. Hence
+$\mathcal P_b=\mathcal C_b\mathcal D$ is a projection on
+$\mathcal S_c$: \eqref{mcstress:right_inverse} gives
+$\mathcal P_b^2=\mathcal P_b$ and
+$\ker\mathcal P_b=\ker\mathcal D$.
+In particular the completed actual tensor is
+$T=\mathcal P_b(-S)$, and $T+S$ is a compact divergence-free symmetric
+tensor. This gives an exact relation to the actual averaged covariance,
+not merely equality of its two radial moments.
+
+\subsection{Exact source chart, bump, stress, and pressure powers}
+
+Fix one source chart and retain all of its constants:
+\begin{equation}\label{mcstress:chart}
+ r=\sqrt Q\,R,\qquad z=Q^D Z,\qquad1-t=QT,
+ \qquad A=\tfrac12+h,\quad D=\tfrac12-h,\quad
+ \varepsilon=Q^h.
+\end{equation}
+The dyadic label $Q$ is fixed under differentiation. The averaged quantities
+are independent of $Y$ and $\theta$, so in this
+subsection the complete normalized spatial derivatives are
+$\partial_R$, $R^{-1}\partial_\theta$ and $\varepsilon\partial_Z$,
+with the same cylindrical basis derivatives as before.
+Define the exact chart representatives
+\begin{equation}\label{mcstress:chart_representatives}
+\begin{gathered}
+ S^*=Q^{2A}S,\qquad F^*=Q^{2A+1/2}F,\qquad
+ T^*=Q^{2A}T,\qquad \Sigma_e=Q^{2A}\sigma_e,\\
+ J_e^*=Q^{2A-(e+1)/2}J_e
+             =\int_0^\infty R^e S^*_{z\tau_e}\,dR,\qquad
+ M_e^*=Q^{2A-e/2}M_e=\varepsilon\partial_ZJ_e^*,\\
+ q_*=q/Q,\qquad
+ b_e^*=Q^{(e+1)/2}b_e(\sqrt Q R,z,t)
+       =q_*^{-(e+1)/2}\widehat b_e(R/\sqrt{q_*}).
+\end{gathered}
+\end{equation}
+The two moment powers follow directly from
+$r^e\,dr=Q^{(e+1)/2}R^e\,dR$ and
+$\partial_z=Q^{-D}\partial_Z$; the remaining factor in $M_e^*$
+is $Q^{1/2-D}=\varepsilon$. In particular the scaled bump satisfies
+$\int R^e b_e^*\,dR=1$.
+
+Every term of the corrected primitive has the same exact stress unit:
+\begin{equation}\label{mcstress:chart_sigma}
+\begin{gathered}
+ \Sigma_e=-R^{-e}\int_0^R X^e
+             \bigl(F_e^*-\varepsilon\partial_Z(b_e^*J_e^*)\bigr)\,dX,\\
+ (\partial_R+e/R)\Sigma_e
+       =-F_e^*+\varepsilon\partial_Z(b_e^*J_e^*),\\
+ \Sigma_e=\Sigma_e^{\rm old}
+       -\frac{\varepsilon R\partial_Zq_*}{2q_*}b_e^*J_e^*.
+\end{gathered}
+\end{equation}
+To verify the first line, insert
+$F_e=Q^{-2A-1/2}F_e^*$ and $b_eJ_e=Q^{-2A}b_e^*J_e^*$ in
+\eqref{mcstress:sigma}, and change the integration variable to
+$s=\sqrt Q X$. The second follows by differentiation. For the third,
+the physical correction in \eqref{mcstress:primitive_correction}
+has factor $\sqrt Q\,q_z/q$; using
+$q_z=Q^{1-D}\partial_Zq_*$ gives
+$\sqrt Q\,q_z/q=\varepsilon\partial_Zq_*/q_*$.
+This verifies the original $q$ derivative, including its sign.
+Also, with $C_e^*=Q^{2A-(e+1)/2}C_e$,
+\[
+ \Sigma_e=-S^*_{r\tau_e}
+                     -\varepsilon R^{-e}\partial_Z C_e^*.
+\]
+
+The completed stress and its pressure become exactly
+\begin{equation}\label{mcstress:chart_tensor}
+\begin{gathered}
+ T^*_{rr}=0,\quad T^*_{r\theta}=\Sigma_2,\quad
+ T^*_{rz}=\Sigma_1,\quad T^*_{z\theta}=-b_2^*J_2^*,\quad
+ T^*_{zz}=-b_1^*J_1^*,\\
+ T^*_{\theta\theta}=RF_r^*+\varepsilon R\partial_Z\Sigma_1,
+ \qquad
+ p_T^*=Q^{2A}p_T
+  =\tfrac13(RF_r^*+\varepsilon R\partial_Z\Sigma_1-b_1^*J_1^*),\\
+ (T^0)^*=T^*-p_T^*I_3,\qquad
+ F^*+\operatorname{div}_*(T^0)^*+\nabla_*p_T^*=0.
+\end{gathered}
+\end{equation}
+For example the radial row is
+$-T^*_{\theta\theta}/R+\varepsilon\partial_Z\Sigma_1=-F_r^*$,
+and the tangential rows use \eqref{mcstress:chart_sigma}. The pressure
+identity follows from the same Cartesian isotropic-tensor calculation
+as before. Physical divergence and pressure gradient both have factor
+$Q^{-2A-1/2}$ because $\nabla_x=Q^{-1/2}\nabla_*$ on the chart.
+Thus the radial residual, hoop stress, both surviving axial fluxes,
+varying-bump correction and compact pressure all have their exact
+source units. No decay or uniform estimate at a singular endpoint is
+inferred from these finite compact-support identities.

@@ -1,0 +1,379 @@
+{
+  "schema": "second-return-exact-replay-v1",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "inverse_first_phase_unit_length",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_second_phase_squared_length",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_phase_dot_product",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_phase_signed_determinant",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "signed_determinant_representation",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "source_cone_bracket_square",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_rotation_maps_original_parent",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_matrix_inverse",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_matrix_determinant",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "original_phase_material_pullback",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "first_phase_angular_equation",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "second_phase_full_parent_equation",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_deformation_full_parent_equation",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "source_control_enforces_first_component",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inner_product_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "coupling_numerator_exact_cancellation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "first_temperature_equation_physical",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "first_vorticity_equation_physical",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "second_coefficient_retains_base_and_parent",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "second_temperature_exponential_inverse",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "second_vorticity_product_inverse",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "common_diffusion_quotient_cancellation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "selected_hold_vorticity_stationarity",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "selected_hold_geometry_equation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "selected_hold_exact_angular_velocity",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "selected_hold_origin_vorticity",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "affine_parent_gradient_diffusion_identity",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "affine_parent_incompressibility",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "affine_tracefree_square",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "affine_curl_includes_parent_vorticity",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "pressure_independent_affine_curl_residual",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_vector_force_with_exact_pressure",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "affine_velocity_physical_laplacian",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "affine_temperature_physical_laplacian",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "bound_total_holding_duration",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "duration_strictly_below_17_over_16",
+      "passed": true,
+      "exact_positive_margin": "1/64"
+    },
+    {
+      "name": "older_vorticity_bound",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "older_vorticity_strict_margin",
+      "passed": true,
+      "exact_positive_margin": "1/3"
+    },
+    {
+      "name": "geometry_upper_bound_arithmetic",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "geometry_strict_margin",
+      "passed": true,
+      "exact_positive_margin": "253/480"
+    },
+    {
+      "name": "temperature_lower_bound_arithmetic",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "temperature_strict_margin",
+      "passed": true,
+      "exact_positive_margin": "63/512"
+    },
+    {
+      "name": "coupling_numerator_upper_margin",
+      "passed": true,
+      "exact_positive_margin": "23/32"
+    },
+    {
+      "name": "first_phase_cone_arithmetic",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "first_phase_cone_margin",
+      "passed": true,
+      "exact_positive_margin": "21/1280"
+    },
+    {
+      "name": "ramp_riccati_integral_margin",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "trial_riccati_first_exit_margin",
+      "passed": true,
+      "exact_positive_margin": "3/4"
+    },
+    {
+      "name": "zero_pulse_endpoint_margin",
+      "passed": true,
+      "exact_positive_margin": "15/679"
+    },
+    {
+      "name": "selected_pulse_lower_bound",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "selected_parent_vorticity_coefficient",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "net_gain_margin_in_units_log3",
+      "passed": true,
+      "exact_positive_margin": "3/2048"
+    },
+    {
+      "name": "origin_vorticity_lower_bound_factor",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    }
+  ],
+  "total_checks": 52,
+  "files_sha256": {
+    "second_return_body.tex": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4",
+    "replay_second_return.py": "350e65dd0c801c392d6e75dd08f2b89468ffea43fa1927ec1a470bd3b967fb92"
+  },
+  "analytic_claims_proved_in": "second_return_body.tex",
+  "analytic_existence_inferred_from_computation": false,
+  "numerical_trajectory_used": false,
+  "lean_used": false,
+  "infinite_modified_viscous_sequence_proved": false
+}

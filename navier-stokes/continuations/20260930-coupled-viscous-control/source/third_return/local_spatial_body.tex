@@ -1,0 +1,599 @@
+\section{Compact spatial realization of the actual local third steering}
+\label{trls:section}
+
+The interval in Theorem~\ref{tr:local} has a complete compact
+realization with the original periodic profile and physical diffusion.
+We prove the substituted material, support, amplitude, and force
+bounds here. Both older vorticities remain variables in this
+realization. We also construct an explicit right continuation of the
+same steering, which supplies a smooth compact time extension of its
+forces. The required endpoint in this section is the local steering
+endpoint, without an assertion about the full negative pulse.
+
+\subsection{A proved interval, amplitude bounds, and material matrices}
+
+Retain all the data of Theorem~\ref{tr:local}, and put
+\begin{equation}\label{trls:times}
+ \begin{gathered}
+ \tau=\Gamma(t-t_1),\quad \tau_0=\sin s/8192,\quad
+ t_*=t_1+\frac1{8192\sigma_2},\\
+ \epsilon_R=\frac1{16384\sigma_2},\qquad
+ I_*=[t_1,t_*],\quad I_+=[t_1,t_*+\epsilon_R].
+ \end{gathered}
+\end{equation}
+Thus $0\leq\tau\leq3\tau_0/2$ on $I_+$, and the
+original source steering remains its first ramp
+$Z=Z_1(1-\eta(\tau))$ throughout. In particular every original
+trial $m\in[0,3]$ gives the same solution on this interval.
+
+The existence argument in Theorem~\ref{tr:local} extends to
+this entire $I_+$. Indeed on the same closed cube of radius
+$1/128$ about its actual six-dimensional entry state, the norm of
+the scaled vector field is strictly less than $32/\sin s$.
+On $0\leq\tau\leq3\tau_0/2$ its integral can therefore
+move the state by at most
+\[
+ \frac{32}{\sin s}\frac{3\sin s}{2\cdot8192}
+     =\frac3{512}<\frac1{128}.
+\]
+A first exit from that cube is impossible. Its fixed positive
+denominator margins and bounded smooth derivatives extend the
+unique solution to this closed interval, by the same integral-equation
+argument. This proves a continuation of the actual source control,
+including all its endpoint derivatives.
+
+Write the dimensionless state as in \eqref{tr:scaled}, with
+$E=E_1/\sigma_1^2$, $F_2^{\rm amp}=E_2/\sigma_2^2$,
+$\omega=\Omega_1/\sigma_1$ and $V=\Omega_2/\sigma_2$.
+To avoid confusing the second amplitude with the original periodic
+profile $F$, denote $F_2^{\rm amp}$ by $F_a$ below. On all of
+$I_+$ the already verified cube gives
+\begin{equation}\label{trls:cube}
+ \begin{gathered}
+ 63/64<h<4,\quad 11/16<g<6,\quad
+ 15/128<E<3,\quad 7/128<F_a<4,\\
+ |\omega|<11,\quad |V|<1/16,\quad
+ 15/16<D=h^2+a^2<17,\\
+ 0\leq Z\leq Z_1<(9/8)\sin s<1/128,\\
+ b=r_b\sin s<4\sin s,\quad 1\leq r_b\leq\sqrt{10}.
+ \end{gathered}
+\end{equation}
+Use the exact $x,y,R,Y$ and phases in
+\eqref{tr:coordinates}--\eqref{tr:inverse}. Then
+\begin{equation}\label{trls:phasebounds}
+ \frac1{64}<R=\frac{g^2+b^2}{D}<39,
+ \qquad Y>1/9,\qquad 0<x<7,\quad 0<y<7.
+\end{equation}
+For the upper bound on $R$, use
+$(36+16/512^2)/(15/16)<39$. Its lower bound and that of
+$Y$ are the inequalities proved on the same cube in
+Theorem~\ref{tr:local}. Positivity of $x,y$ is also proved
+there; $x^2+y^2=R<39<49$ gives their upper bounds.
+All three second components stay positive by the exact inverse,
+without imposing a sign on either older vorticity.
+
+We prove an explicit bound for the newest amplitudes. Set
+\[
+ X=-\Theta_3/P_3^*,\qquad
+ W=-\sigma_2\Omega_3/(K_3P_3^*),\qquad
+ \mathcal K=\frac{N_3}{\sigma_2^2\sin s\,R},\qquad
+ \mathcal B=\frac Z{\sin s}.
+\]
+The exact pair \eqref{tr:physical_pair} becomes
+\begin{equation}\label{trls:pair}
+ X'=\mathcal K W-\delta_3RX,\qquad
+ W'=\mathcal B X-\delta_3RW,
+ \qquad \delta_3=dK_3^2/\Gamma.
+\end{equation}
+Its entry values satisfy $0<X(0)\leq e^4$ and
+$0<W(0)\leq3e^4$ by the actual transition theorem.
+The older geometry is already constructed on the compact interval
+$I_+$, so the coefficient matrix of \eqref{trls:pair} is smooth
+and bounded there. Its iterated integral series converges uniformly:
+if its matrix norm is bounded by $B$, the term with $n$ integrals
+is bounded by $(B\tau)^n/n!$ times the initial norm.
+The series solves the integral equation, and the same iterated
+estimate on the difference of two solutions proves uniqueness.
+It therefore constructs the newest pair through all of $I_+$
+independently of the following sign argument.
+On the cube $N_3>0$, since $E_1,E_2,c,C,x,y,b$ are positive.
+Removing the common damping and integrating the resulting positive
+off-diagonal linear system proves $X,W>0$ throughout $I_+$.
+More explicitly, a first zero of either positive coordinate would
+contradict its positive initial value plus the integral of a
+nonnegative multiple of the other coordinate.
+
+There is a useful bound on $\mathcal K$ that retains the source
+scale ratio. With $q=\sigma_1/\sigma_2=s/L$,
+$\bar c=c/\sigma_1^2\leq1/4$ and
+$\bar C=C/\sigma_1^2\leq a/32$, the exact numerator is
+\[
+ \frac{N_3}{\sigma_2^2\sin s}
+ =\frac{q^2}{\sin s}\{(E+\bar c)y+\bar Cx\}
+       +r_bF_a.
+\]
+The expression in braces is less than
+$7(13/4+1/16384)<25$. Furthermore
+\[
+ \frac{q^2}{\sin s}=\frac{s^2}{L^2\sin s}
+ \leq\frac{16s}{15L^2}
+ \leq\frac{16}{15\cdot512\cdot16384^2},
+ \qquad
+ \frac{25\cdot16}{15\cdot512\cdot16384^2}<1.
+\]
+Here $\sin s\geq15s/16$ is the established source angle
+estimate. Thus $0<N_3/(\sigma_2^2\sin s)<17$ and
+\begin{equation}\label{trls:pairbox}
+ 0<\mathcal K<1088,\qquad 0\leq\mathcal B<9/8.
+\end{equation}
+Since $X,W>0$, addition of \eqref{trls:pair} gives
+$(X+W)'\leq1089(X+W)$. Multiplication by
+$e^{-1089\tau}$ and integration show
+\[
+ X+W\leq4e^4e^{1089\tau},\qquad
+ 1089\tau\leq\frac{3267\sin s}{16384}<\frac14.
+\]
+The power series gives $e^z\leq\sum_{n\geq0}z^n
+=(1-z)^{-1}\leq4/3$ for $0\leq z\leq1/4$.
+Consequently on the required interval and its proved right collar,
+\begin{equation}\label{trls:amplitudes}
+ 0<-\Theta_3<6e^4P_3^*,\qquad
+ |\Omega_3|<6e^4K_3P_3^*/\sigma_2.
+\end{equation}
+This uses the signed linear pair before any quotient estimate.
+
+The exact matrices remain \eqref{tr:matrices}; all retain their
+original birth times. With $h_0=\cos s_2$ and
+$N=1+(3-h_0)/a$, define
+\begin{equation}\label{trls:matrixbounds}
+ \mathsf N_1=1,\qquad \mathsf N_2=2N,\qquad
+ \mathsf N_3=32/\sin s.
+ \qquad
+ \|M_j\|,\|M_j^{-1}\|\leq\mathsf N_j.
+\end{equation}
+For the second matrix, the triangular factor and its inverse have
+norm at most $1+|h-h_0|/a$. Since $h>0$, $h<4$, and
+$h_0<1$, one has $|h-h_0|<4-h_0$. The difference
+$2N-[1+(4-h_0)/a]=1+(2-h_0)/a$ is positive.
+For the third, use $\mathcal L=(\zeta_2\ \zeta_3)$.
+Its determinant is $-b$ and
+$\|\mathcal L\|_F^2=D+R<56$, whereas
+$\|\mathcal L(t_b)\|_F^2=r_b^2+1\leq11$.
+The adjugate identity for two by two matrices therefore bounds
+both products defining $M_3$ and its inverse by
+$\sqrt{616}/b<32/\sin s$. This calculation allows both
+older shears to evolve. The matrices have determinant one and
+define the same global linear diffeomorphisms of $\mathbb R^2$.
+
+\subsection{Support nesting with the unchanged source choice}
+
+Let $C_M,C_N$ and $Y_3$ retain their exact values in
+\eqref{tge:Y3} and \eqref{tts:sourceconstants}. Put
+\[
+ p=47Q_2/16-3,\qquad r=(31Q_2+1)/16.
+\]
+The literal outer $+1$ in \eqref{tge:Y3} gives the strict
+stronger margins
+\begin{equation}\label{trls:sourcemargins}
+ \widehat\lambda_1^p\geq e^p(4C_NC_M),\qquad
+ \widehat\lambda_1^r\geq e^r\sqrt{11}C_M/s_0.
+\end{equation}
+Indeed $\log\widehat\lambda_1\geq Y_3$ is at least one
+plus either logarithmic summand divided by its positive exponent.
+Also $N\leq C_N\widehat\lambda_1^{1/16}$ and
+$\mathsf N_3\leq2C_M
+\widehat\lambda_1^{(Q_2-1)/16}$, by
+\eqref{tts:sourceconstants}. Multiplying these exact powers
+proves
+\begin{align*}
+ \frac{2\mathsf N_2\mathsf N_3
+                  \widehat\lambda_2^{-3}}
+      {\widehat\lambda_1^{-3}}&\leq2e^{-p}<1,\\
+ \frac{\sqrt{17}\mathsf N_3
+                  \widehat\lambda_2^{-2}}{s_0}
+     &\leq2\sqrt{17/11}\,e^{-r}<1.
+\end{align*}
+For the last strict inequalities, $Q_2\geq202$ implies
+$p>1$ and $r>2$. The elementary inequality $e^z\geq1+z$
+therefore gives $e^p>2$ and $e^r>3$, and
+$2\sqrt{17/11}<3$ follows from $68<99$.
+The earlier source margins give
+\begin{equation}\label{trls:nestingnumbers}
+ \begin{gathered}
+ 2\mathsf N_2\mathsf N_3\widehat\lambda_2^{-3}
+      <\widehat\lambda_1^{-3},\quad
+ \sqrt{17}\mathsf N_3\widehat\lambda_2^{-2}<s_0,\\
+ \mathsf N_2\widehat\lambda_1^{-3}<s_0/(2C_\ell),
+ \qquad \mathsf N_2\widehat\lambda_1^{-2}<s_0.
+ \end{gathered}
+\end{equation}
+For the last two use $\mathsf N_2=2N$ and the proved
+first-source margins $N\widehat\lambda_1^{-3}
+<s_0/(4C_\ell)$ and $N\widehat\lambda_1^{-2}<s_0/2$.
+
+Keep exactly the radii, periodic $F$, its even zero-mean primitive
+$P$, and material cutoffs in \eqref{tts:envelopes}.
+For every $t\in I_+$ a third support point satisfies
+$|x|\leq\mathsf N_3\ell_3$. Thus
+\[
+ |M_2^{-1}x|\leq\mathsf N_2\mathsf N_3\ell_3<\ell_2/2,
+ \qquad |K_2\zeta_2\cdot x|
+    <K_2\sqrt{17}\mathsf N_3\ell_3<s_0.
+\]
+The entire second field is affine in a neighborhood of that point.
+For every second support point the last two inequalities in
+\eqref{trls:nestingnumbers} give $|x|<\ell_1/2$ and
+$|K_1\zeta_1\cdot x|<s_0$. The first material matrix is
+a rotation, so the first envelope is one there and its profile
+is linear. Finally the original first support remains inside the
+original affine cell of the radial base. The same inclusions hold
+for every derivative support because their containing closed supports
+are unchanged. All the inequalities are strict, so these are open
+affine neighborhoods in the original physical coordinates.
+
+\subsection{Full fields and exact scalar and vector equations}
+
+Define the base and all three increments by
+\eqref{tts:base} and \eqref{tts:fields}, using the exact
+solution on $I_+$. All activation weights are one on this interval.
+The fields agree at $t_1$, with every derivative, with the already
+constructed fields through the third transition: the exact control
+and phase jets match by the proof of Theorem~\ref{tr:local},
+and repeated differentiation of the amplitude and material equations
+matches their jets. They therefore give one smooth field on
+$[0,t_*+\epsilon_R]$, with the original sine initial temperature
+and zero initial velocity.
+
+Use the exact scalar and full vector increments
+\eqref{tts:Qrest}--\eqref{tts:spatialjets}, and the base
+and total forces \eqref{tts:baseforce}. These formulas remain
+the full residuals on $I_+$, as can be checked directly here.
+On a $j$th support the proved older field is precisely
+$G_{<j}\cdot x$ and $D_{<j}x$ with the unchanged sums in
+\eqref{tts:material}. The identities
+$\partial_t k_j=-D_{<j}^Tk_j$ and
+$\partial_t M_j^{-1}=-M_j^{-1}D_{<j}$ give
+\[
+ (\partial_t+D_{<j}x\cdot\nabla)\xi_j=0,
+ \qquad
+ (\partial_t+D_{<j}x\cdot\nabla)g_j=0.
+\]
+In the scalar equation, the $F g_j$ part of
+$v_j\cdot G_{<j}$ cancels the exact $\dot\Theta_j$
+coupling, leaving the cutoff term, self-advection, modal damping,
+and full Laplacian exactly as in \eqref{tts:scalarforce}.
+In the vector equation, trace zero gives
+$D_{<j}J+JD_{<j}^T=0$, whence the material derivative of
+$J\nabla\Psi_j$ contributes $D_{<j}v_j$.
+The reverse interaction $(v_j\cdot\nabla)(D_{<j}x)$
+is a second $D_{<j}v_j$. Adding its other terms gives
+\eqref{tts:vectorforce}, including both parent velocities,
+the full buoyancy, and the moving-length term in $Q_{\rm r}$.
+Adding the three identities counts every ordered older/newer
+interaction once; outside their supports every derivative vanishes.
+The identities therefore hold globally on $\mathbb R^2$.
+
+Together with the base residual this proves exactly
+\eqref{tts:PDE} on $[0,t_*+\epsilon_R]$, with $p=0$.
+The streamfunction identity gives $\operatorname{div}u=0$.
+Every spatial support remains in $B_{R_H}$ by the proved nesting.
+The phase-coordinate Laplacian is still precisely
+\eqref{tts:metric}, with its evolving positive matrix
+$M_j^{-1}M_j^{-T}$ and all mixed derivatives. On a linear
+profile cell the viscous force still includes
+$-d\rho_jV_j$ and $-d\rho_jv_j$; the corresponding
+Laplacians vanish there by \eqref{tts:core}. The full fields
+retain the constant $P(0)$ in their cutoff region. Thus the
+original profile has not been replaced by a modal eigenfunction.
+
+\subsection{Actual all-order spatial and diffusion costs}
+
+The following explicit data hold on the whole proved $I_+$:
+\begin{equation}\label{trls:normdata}
+ \begin{gathered}
+ \mathsf r_{-,j}^2=(1,15/16,1/64)_j,\qquad
+ \mathsf r_{+,j}^2=(1,17,39)_j,\quad
+ \mathsf\kappa_j=K_j\mathsf r_{+,j},\\
+ \mathsf U_{\Theta,j}=
+ (3\sigma_1^2/K_1,\ 4\sigma_2^2/K_2,\ 6e^4P_3^*)_j,\\
+ \mathsf U_{\Omega,j}=
+ (11\sigma_1,\ \sigma_2/16,\ 6e^4K_3P_3^*/\sigma_2)_j,
+ \qquad W_{j,1}=0,\\
+ \mathsf A_*=693\sigma_1+12\Gamma
+           +(81/8)\Gamma\sin s\,[\eta']_0.
+ \end{gathered}
+\end{equation}
+The older data are the actual cube estimates, rather than their
+smaller preceding-transition bounds. To verify
+$|\dot\alpha|\leq\mathsf A_*$, use \eqref{tr:control}.
+Here $Y>1/9$, $y<7$, $|\zeta_{1,1}|\leq1$,
+$|\zeta_{2,1}|<5$, $b/D<(64/15)\sin s$,
+$|\Omega_1|<11\sigma_1$, and
+$|\Omega_2|<\sigma_2/16$. Therefore
+\[
+ |\mathcal F_3|
+ <9\left(77\sigma_1+
+   \frac{64\sin s}{15}\frac{\sigma_2}{16}\,5\right)
+ =693\sigma_1+12\Gamma.
+\]
+The other control term has size
+$|\dot Z|/Y\leq(81/8)\Gamma\sin s[\eta']_0$,
+which proves the stated bound using the exact source derivative.
+
+The following finite sums specify every spatial cost, with
+$f_m,[F]_m,[P]_m,H_m,c_m$ defined as in Section~\ref{tts:section}:
+\begin{align}\label{trls:costdefinitions}
+ \mathsf D_j&=\mathsf A_*+\sum_{i<j}\mathsf U_{\Omega,i},&
+ \mathsf G_j&=A_0+\sum_{i<j}K_i\mathsf U_{\Theta,i}
+                                      \mathsf r_{+,i},\nonumber\\
+ \mathsf Q_j&=\frac{\mathsf U_{\Omega,j}}
+                         {K_j^2\mathsf r_{-,j}^2},&
+ \mathsf Q_{{\rm r},j}&=
+ \frac{\mathsf\kappa_j\mathsf U_{\Theta,j}
+                   +2\mathsf D_j\mathsf U_{\Omega,j}}
+      {K_j^2\mathsf r_{-,j}^2},\\
+ \mathsf e_{j,m}&=(\mathsf N_j/\ell_j)^mf_m,&
+ \mathsf B_{j,m}(W)&=\sum_{q=0}^m\binom mq
+          \mathsf\kappa_j^q[W]_q\mathsf e_{j,m-q},\nonumber\\
+ \mathsf C_{j,m}(P)&=\sum_{q=0}^m\binom mq
+          \mathsf\kappa_j^q[P]_q\mathsf e_{j,m-q+1}.&&\nonumber
+\end{align}
+In the occurrences $\mathsf B_{j,m}(W)$ the argument is a
+periodic test profile, not the signed amplitude $W$ of
+\eqref{trls:pair}. The operator norm of
+$J\zeta_i\otimes\zeta_i/r_i^2$ equals one, so
+$\|D_{<j}\|\leq\mathsf D_j$ with the entire second
+vorticity included. The gradient sum similarly gives
+$|G_{<j}|\leq\mathsf G_j$. Differentiating
+$\rho_j$ gives $|\dot\rho_j/\rho_j|\leq2\mathsf D_j$.
+These prove the bounds $|Q_j|\leq\mathsf Q_j$ and
+$|Q_{{\rm r},j}|\leq\mathsf Q_{{\rm r},j}$.
+The product rule with its $\binom mq$ allocations and the
+linear material bound \eqref{trls:matrixbounds} proves
+$|W(\xi_j)g_j|_m\leq\mathsf B_{j,m}(W)$ and
+$|P(\xi_j)\nabla g_j|_m\leq\mathsf C_{j,m}(P)$.
+
+In particular the complete damping and diffusion terms obey
+\begin{align}\label{trls:diffusioncost}
+ \mathsf D_{\theta,j,m}
+ &=d\mathsf U_{\Theta,j}
+   \{\mathsf\kappa_j^2\mathsf B_{j,m}(F)
+                     +2\mathsf B_{j,m+2}(F)\},\nonumber\\
+ \mathsf D_{u,j,m}
+ &=d\mathsf Q_j
+   \{\mathsf\kappa_j^2\mathsf B_{j,m+1}(P)
+                     +2\mathsf B_{j,m+3}(P)\}.
+\end{align}
+The two coordinate traces of the Laplacian account for the factor
+two in each expression. Direct termwise application to the full
+residuals proves the bounds
+\begin{align}\label{trls:forcecost}
+ \mathsf E_{\theta,j,m}={}&
+ \mathsf Q_j\mathsf G_j\mathsf C_{j,m}(P)
+                     +\mathsf D_{\theta,j,m}\nonumber\\
+ &+\mathsf Q_j\mathsf U_{\Theta,j}
+    \sum_{q=0}^m\binom mq
+       \mathsf B_{j,q+1}(P)\mathsf B_{j,m-q+1}(F),\nonumber\\
+ \mathsf E_{u,j,m}={}&
+ (2\mathsf D_j\mathsf Q_j+\mathsf Q_{{\rm r},j})
+                  \mathsf B_{j,m+1}(P)
+ +\mathsf U_{\Theta,j}\mathsf B_{j,m}(F)
+ +\mathsf D_{u,j,m}\nonumber\\
+ &+\mathsf Q_j^2\sum_{q=0}^m\binom mq
+       \mathsf B_{j,q+1}(P)\mathsf B_{j,m-q+2}(P),\\
+ |E_{\theta,j}|_m\leq{}&\mathsf E_{\theta,j,m},\qquad
+ |E_{u,j}|_m\leq\mathsf E_{u,j,m}.\nonumber
+\end{align}
+Indeed the scalar product sum bounds
+$v_j\cdot\nabla V_j$; the vector sum bounds
+$(\nabla v_j)v_j$, allocating all $m$ derivatives in
+each case. The remaining terms are exactly the linear terms of
+\eqref{tts:scalarforce} and \eqref{tts:vectorforce}.
+There is no activation derivative on $I_+$ because all weights
+are one.
+
+Let $B_{0,m}(F)=\sum_{q=0}^m\binom mq\mu^q[F]_qc_{m-q}$.
+The control constant $\mathsf A_2$ bounding $|\ddot\alpha|$
+is explicitly defined below. The base and sums now give global norms
+on the original $\mathbb R^2$:
+\begin{align}\label{trls:globalnorms}
+ |\theta|_m&\leq(A_0/\mu)B_{0,m}(F)
+       +\sum_{j=1}^3\mathsf U_{\Theta,j}\mathsf B_{j,m}(F),
+ \nonumber\\
+ |u|_m&\leq\mathsf A_*H_m
+       +\sum_{j=1}^3\mathsf Q_j\mathsf B_{j,m+1}(P),\nonumber\\
+ |f_\theta|_m&\leq2d(A_0/\mu)B_{0,m+2}(F)
+                       +\sum_{j=1}^3\mathsf E_{\theta,j,m},\\
+ |f_u|_m&\leq\mathsf A_2H_m
+       +\mathsf A_*^2\sum_{q=0}^m\binom mqH_{q+1}H_{m-q}
+       +(A_0/\mu)B_{0,m}(F)+2d\mathsf A_*H_{m+2}
+                       +\sum_{j=1}^3\mathsf E_{u,j,m}.\nonumber
+\end{align}
+These follow from the displayed fields and base residual; the
+initial interpolation is already complete on $I_+$. They bound
+the entire fields and forces, not only their common affine cell.
+For each fixed bound in this display, integration over the required
+interval multiplies it by $1/(8192\sigma_2)$; over $I_+$ the
+factor is $3/(16384\sigma_2)$. The earlier proved norms together
+with these, taking the maximum on their two adjacent intervals,
+give the corresponding bounds through $t_*$.
+
+The exact retained localization and newest diffusion factors include
+\begin{equation}\label{trls:frequencycost}
+ \begin{gathered}
+ \mathsf N_1/\ell_1=C_\ell\mu/s_0,\quad
+ \mathsf N_2/\ell_2=2N\mu\widehat\lambda_1^3,\quad
+ \mathsf N_3/\ell_3=
+                32\mu\widehat\lambda_2^3/\sin s,\\
+ d\mathsf U_{\Theta,3}K_3^2
+       =6e^4dA_0\mu\widehat\lambda_3^{9/8},\quad
+ d\mathsf Q_3K_3^3
+       =384e^4dA_0\mu\widehat\lambda_3^{9/8}/\sigma_2.
+ \end{gathered}
+\end{equation}
+They are explicit factors in upper force costs. The exact three
+modal exponents over $I_*$ are
+\begin{equation}\label{trls:exponents}
+ dK_1^2|I_*|,\qquad dK_2^2\int_{I_*}D\,dt,\qquad
+ dK_3^2\int_{I_*}R\,dt.
+\end{equation}
+The second is between $(15/16)dK_2^2|I_*|$ and
+$17dK_2^2|I_*|$, and the third between
+$dK_3^2|I_*|/64$ and $39dK_3^2|I_*|$.
+The exact newest gain is \eqref{tr:costs} with
+$\tau_f=\tau_0$; all divisions there are valid by positivity
+of the pair just proved. Both older numerator-loss terms in
+\eqref{tr:losses} remain present, separately from these modal
+exponents.
+
+\subsection{Exact source jets, mixed costs, and compact time forces}
+
+We give an explicit finite recursion for all control derivatives.
+Let $z=(h,g,E,F_a,\omega,V,X,W)$ and introduce the switch jets
+$\lambda^{[j]}$. Define $Z=Z_1(1-\lambda^{[0]})$,
+and use the exact inverse \eqref{tr:inverse} with this $Z$.
+The eight-dimensional vector field $\mathcal V^{\rm loc}$
+uses the coordinate right-hand sides in \eqref{tr:scaled}
+with $F=F_a$, ordered as $(h,g,E,F_a,\omega,V)$,
+followed by the two right-hand sides in \eqref{trls:pair}.
+In particular it depends
+on $\lambda^{[0]}$, not its derivatives. Define the exact
+physical angular function
+\begin{equation}\label{trls:controlfunction}
+ \Phi(z,\lambda^{[0]},\lambda^{[1]})
+  =\frac{\sigma_1\omega y\zeta_{1,1}
+           +(b\sigma_2V/D)\zeta_{2,1}
+           +\Gamma Z_1\lambda^{[1]}}{Y}.
+\end{equation}
+Substituting $\lambda^{[j]}=\eta^{(j)}(\tau)$ gives
+exactly $\dot\alpha$ in \eqref{tr:control}, because
+$\dot Z=-\Gamma Z_1\eta'(\tau)$.
+Thus every source-ramp derivative retains its original factor
+$\Gamma^rZ_1$. No constant switch is used on the collar.
+
+On the explicit compact rectangle
+\begin{equation}\label{trls:jetbox}
+ \begin{gathered}
+ h\in[63/64,4],\quad g\in[11/16,6],\quad
+ E\in[15/128,3],\quad F_a\in[7/128,4],\\
+ \omega\in[-11,11],\quad V\in[-1/16,1/16],\quad
+ X,W\in[0,6e^4],\quad \lambda^{[0]}\in[0,1],
+ \end{gathered}
+\end{equation}
+the estimates for $D,R,Y$ used above are uniform and positive.
+The same elementary inequalities apply at its boundary, since their
+final margins are strict even with all displayed weak bounds.
+The vector field and $\Phi$ are consequently smooth on a
+neighborhood of this rectangle for any finite control-jet bounds.
+Define the derivation
+\begin{equation}\label{trls:jetderivation}
+ \mathcal C_{\rm loc}
+ =\sum_{l=1}^8\mathcal V_l^{\rm loc}
+                   \partial_{z_l}
+   +\sum_{j\geq0}\lambda^{[j+1]}
+                   \partial_{\lambda^{[j]}}.
+\end{equation}
+Each application to a finite expression uses only finitely many
+terms. The chain rule gives, by induction on $n$,
+\begin{equation}\label{trls:controljets}
+ \begin{gathered}
+ \alpha^{(n+1)}=
+       \Gamma^n\mathcal C_{\rm loc}^n\Phi
+       \big|_{\lambda^{[j]}=\eta^{(j)}(\tau)},\\
+ \mathsf A_{n+1}=\Gamma^n\max
+ \left\{|\mathcal C_{\rm loc}^n\Phi|:
+    z,\lambda^{[0]}\text{ in \eqref{trls:jetbox}},
+    \ |\lambda^{[j]}|\leq[\eta^{(j)}]_0,
+                            \ 1\leq j\leq n+1\right\},\quad n\geq0.
+ \end{gathered}
+\end{equation}
+These are finite maxima of specified elementary expressions on
+specified compact rectangles. They contain no supremum over a
+future trajectory. The preceding identity proves
+$|\alpha^{(n+1)}|\leq\mathsf A_{n+1}$; the sharper
+$\mathsf A_*$ in \eqref{trls:normdata} may be used at first
+order. In particular the base constant in
+\eqref{trls:globalnorms} is precisely $\mathsf A_2$.
+
+For clarity, the induction behind the displayed identity differentiates
+a function of $z$ along its eight exact state rows and differentiates
+each $\eta^{(j)}$ to $\eta^{(j+1)}$. Physical time
+adds a factor $\Gamma$ at each step. Conversely substituting
+the state scalings into these rows recovers the six older physical
+equations and newest physical pair; their inverse scalings are
+exact and all scale denominators are positive.
+
+All mixed space and time norms are then evaluated by the complete
+pullback operators \eqref{tts:pullbackops} and their identity
+\eqref{tts:pullbackidentity}, replacing the transition derivation
+by \eqref{trls:jetderivation} and its rectangle by
+\eqref{trls:jetbox}. Explicitly start from the zeroth constants
+\eqref{trls:matrixbounds} and \eqref{trls:normdata} and
+differentiate
+\[
+ \dot M_j=D_{<j}M_j,\qquad
+ \dot A_j=-A_jD_{<j},\qquad
+ \dot k_j=-D_{<j}^Tk_j,\qquad A_j=M_j^{-1}/\ell_j.
+\]
+For example
+$\partial_t^{n+1}A_j=-\sum_{q=0}^n\binom nq
+(\partial_t^qA_j)(\partial_t^{n-q}D_{<j})$.
+The product rule gives the other two recursions with the displayed
+matrix order and signs. Coefficient jets of the parent sums are
+given by \eqref{trls:jetderivation}; all activation jets on
+$I_+$ vanish. On every layer support bound each factor $x^\beta$
+in the pullback expression by
+$(\mathsf N_j\ell_j)^{|\beta|}$, each periodic derivative
+by its original $[F]_r$ or $[P]_r$, and each envelope derivative
+by $f_r$. Sum the resulting finite absolute products with the
+binomial coefficients produced by these recursions. The chain and
+product rules prove the resulting bound for every prescribed mixed
+order. On the base use $R_H$, its fixed profile derivatives, and
+\eqref{trls:controljets} instead. The recursion has finite depth
+equal to the requested derivative order and retains every time
+derivative of the actual Laplacian metric and modal diffusion.
+
+Finally extend the original sine datum constantly to negative time
+with zero velocity as in Section~\ref{tts:section}, and take
+$\epsilon_L=1/\nu$. Let $f_\bullet^{\rm raw}$ be the full
+residuals \eqref{tts:rawcollar} of these fields on
+$[-\epsilon_L,t_*+\epsilon_R]$. On the nonnegative interval
+they equal the proved telescoping force formulas. Define
+\begin{equation}\label{trls:timecutoff}
+ \beta_*(t)=\eta(1+t/\epsilon_L)
+             \eta(1+(t_*-t)/\epsilon_R),\qquad
+ \widetilde f_\bullet=\beta_*f_\bullet^{\rm raw}.
+\end{equation}
+Here the right collar is the actual source steering continuation
+already constructed, with physical length $\epsilon_R$ in
+\eqref{trls:times}. The cutoff equals one on $[0,t_*]$;
+flatness of the original step makes extension by zero smooth at
+both outer times. The forces are therefore smooth and compact in
+space and time, and solve the exact PDE on the entire required
+$[0,t_*]$. Their complete cutoff costs are
+\begin{equation}\label{trls:cutoffcost}
+ \begin{gathered}
+ \mathsf B_{\beta,r}=\sum_{q=0}^r\binom rq
+      \epsilon_L^{-q}\epsilon_R^{-(r-q)}
+       [\eta^{(q)}]_0[\eta^{(r-q)}]_0,\\
+ \|\partial_t^n\partial_x^\gamma\widetilde f_\bullet\|_\infty
+ \leq\sum_{q=0}^n\binom nq\mathsf B_{\beta,q}
+  \|\partial_t^{n-q}\partial_x^\gamma
+                                f_\bullet^{\rm raw}\|_\infty.
+ \end{gathered}
+\end{equation}
+The raw mixed norms on $I_+$ have the explicit recursion just
+proved, those on the preceding slab have the proved earlier
+recursions, and those on the constant left extension are obtained
+by differentiating its fixed sine datum and residual. Taking their
+maximum gives every norm in \eqref{trls:cutoffcost}.
+
+Oddness of the original scalar profile, evenness of its primitive
+and cutoffs, and the linear material maps give the same odd
+temperature, velocity and forces and even vorticity as before.
+The compact smooth streamfunction has finite-energy velocity and
+still satisfies the exact Biot--Savart identity proved in
+Section~\ref{tts:section}. Thus the local source steering, its
+moving endpoint, and its proved right collar have a complete
+compact original-profile PDE realization with all physical
+diffusion, localization, and control costs specified.

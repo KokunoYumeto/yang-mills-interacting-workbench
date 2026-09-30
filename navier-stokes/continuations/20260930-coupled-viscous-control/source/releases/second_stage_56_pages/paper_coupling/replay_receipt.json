@@ -1,0 +1,163 @@
+{
+  "schema": "coupled-background-exact-replay-v1",
+  "source_title": "Blowup for the Boussinesq equations with smooth forcing",
+  "source_authors": [
+    "Levent Alpöge",
+    "Tristan Buckmaster"
+  ],
+  "source_pdf_relative_to_notebook": "research/alpoge_buckmaster_boussinesq.pdf",
+  "source_pdf_sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b",
+  "source_pages": [
+    2,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    18,
+    19,
+    20,
+    21,
+    22,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    37,
+    38,
+    39,
+    63,
+    66,
+    67,
+    68
+  ],
+  "sympy_version": "1.13.1",
+  "checks": [
+    {
+      "name": "one_layer_gradient_coupling",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "own_shear_annihilates_temperature_gradient",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "tracefree_square",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "rank_one_shear_trace",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "three_layer_aggregate_damped_gradient",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "polar_phase_vector",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "laboratory_phase_feedback",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "factored_feedback",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "adjacent_oriented_determinant_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "parent_vorticity_model_coefficient",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "new_amplitude_quadratic_coefficient",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "damped_quotient",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "damped_log_amplitude",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "thermal_diffusion_units",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "momentum_diffusion_units",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_gain_threshold",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    }
+  ],
+  "all_checks_passed": true,
+  "scope": "Finite exact identities. No numerical simulation, no Lean, no infinite viscous theorem."
+}

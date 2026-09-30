@@ -1,0 +1,207 @@
+{
+  "status": "all exact symbolic identities passed",
+  "check_count": 26,
+  "checks": [
+    {
+      "name": "rotation_transport_zeta",
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "rotation_transport_base_G",
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "rotation_matrix_transport",
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "determinant_one",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "unit_length_original_zeta",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "a_coefficient_original_dot_product",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "physical_phase_transport",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "affine_momentum_force_and_pressure",
+      "residuals": [
+        "0",
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "affine_scalar_transport",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "physical_temperature_amplitude",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "physical_vorticity_amplitude",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "physical_ratio",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "compressed_Riccati_equation",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "terminal_gradient_norm",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "common_diffusion_temperature",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "common_diffusion_vorticity",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "evolving_parent_feedback_derivative",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "evolving_parent_feedback_potential",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "feedback_scalar_to_pair_vorticity",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "feedback_scalar_to_pair_temperature",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "exact_feedback_coordinate_operator",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "fundamental_series_recurrence",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "fundamental_pair_reduction_of_order",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "fundamental_pair_nonzero_Wronskian",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "diffusive_scaling_exponent",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "seed_threshold_exponent",
+      "residuals": [
+        "0"
+      ],
+      "passed": true
+    }
+  ],
+  "sympy_version": "1.13.1",
+  "proof_file": "first_stage_audit.tex",
+  "proof_sha256": "a9ed92cc446ac1c72b181cdb0b5d957987f17fbfff9680a3f7c234cfe8457004",
+  "script_sha256": "a68ff52c4c7af66e99cd6d8b78e9d4585cf8a2971dccd0a0b119d86dbea7930c",
+  "source_file": "research/alpoge_buckmaster_boussinesq.pdf",
+  "source_sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b",
+  "analytical_proof_location": "first_stage_audit.tex: all-trial positivity, unique root, gain estimates, holding, exact feedback solution and series convergence",
+  "limitations": [
+    "The affine-wave proof does not assert compact spatial support.",
+    "The equal-diffusion continuation uses the sine profile.",
+    "No infinite viscous iteration is claimed.",
+    "No Lean process was started."
+  ]
+}

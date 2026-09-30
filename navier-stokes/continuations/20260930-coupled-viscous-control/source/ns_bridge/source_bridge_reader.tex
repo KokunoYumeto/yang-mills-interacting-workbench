@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\usepackage[hidelinks]{hyperref}
+\geometry{margin=1in}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\proj}{\operatorname{proj}}
+\newcommand{\av}[1]{\left\langle #1\right\rangle}
+\newcommand{\Cov}{\mathcal C}
+\newcommand{\Cross}{\mathcal B}
+\title{Exact signed operator, pulse and covariance bridges}
+\author{}\date{}
+\begin{document}\maketitle
+This reader contains the complete three finite calculations. It retains
+the original coupled-stage system, both physical diffusivities, source
+chart factors, signed amplitudes, and all displayed residual terms.
+The companion 102-page coupled-stage reader remains the complete finite
+growth/return construction.
+
+The reference source is the preserved 165-page supplied manuscript.
+A later 166-page revision was also checked on the 31 source equations
+used here: (7.2)--(7.8), (7.22)--(7.42), (9.12)--(9.14).
+The bounded comparison found no displayed formula change there.
+This does not certify the whole manuscript or equivalence of its two versions.
+The source identifiers are:
+\begin{center}\footnotesize
+165 pages: \texttt{8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81}\\
+166 pages: \texttt{0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f}
+\end{center}
+Exact page maps and the unchanged raw text of pages 108--110 are
+documented in \path{revision_check/REPORT.md}.
+The coupled Boussinesq source is the work of Levent Alp\"oge and
+Tristan Buckmaster.
+\tableofcontents
+\clearpage
+\part{Axisymmetric operators and reconstruction}\input{integration/operator_body.tex}
+\clearpage\part{Coupled amplitudes and the full pulse residual}\input{integration/pulse_body.tex}
+\clearpage\part{Physical curl, signed covariance and the retained remainder}\input{integration/covariance_body.tex}
+\end{document}

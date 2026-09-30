@@ -1,0 +1,180 @@
+\section{Exact operator bridge to the released Navier--Stokes profiles}
+\label{nsb:operator}
+
+This bounded comparison uses the locally saved released Navier--Stokes source
+(the source pages are 7--15 and 24--27 for the profile, stress and pulse
+construction). Its stated physical viscosity is denoted by $\nu_{\rm NS}>0$.
+The Boussinesq lane variables and physical viscosity remain $d$, $\mu$ and
+$\nu=\sqrt{A_0}$; none is identified with $\nu_{\rm NS}$.
+
+Use right-handed cylindrical coordinates $(r,\vartheta,z)$ and define
+\[
+ y_1=z,\qquad y_2=\frac{r^2}{2}>0,\qquad
+ v=(u^z,ru^r)=J\nabla_y\Psi,
+ \quad J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
+\]
+The meridional divergence identity is
+$\partial_{y_1}v_1+\partial_{y_2}v_2=0$. Define the circulation and
+meridional vorticity variables
+\[
+ \Gamma=ru^\vartheta,
+ \qquad \xi=\frac{\omega^\vartheta}{r},
+ \qquad h=\frac{\Gamma}{2y_2}=\frac{u^\vartheta}{r},
+ \qquad Q=\partial_{y_1}^2+2y_2\partial_{y_2}^2,
+ \qquad M=Q+4\partial_{y_2}.
+\]
+The azimuthal momentum and meridional vorticity rows of the cylindrical
+equations (with arbitrary smooth force components) become, on $y_2>0$,
+\begin{align}
+ D_v\Gamma&=\nu_{\rm NS}Q\Gamma+r f^\vartheta,
+ \label{nsb:Gamma}\\
+ D_v\xi&=\nu_{\rm NS}M\xi+\partial_{y_1}(h^2)
+       +\operatorname{curl}_y(f^z,f^r/r),
+ \label{nsb:xi}
+\end{align}
+where $D_v=\partial_t+v\cdot\nabla_y$ and
+$\operatorname{curl}_y(a,b)=\partial_{y_1}b-\partial_{y_2}a$.
+
+Indeed, $\partial_r=r\partial_{y_2}$ and
+$\partial_r^2+r^{-1}\partial_r=2y_2\partial_{y_2}^2+2\partial_{y_2}$.
+For $\Gamma$, the azimuthal viscous operator is
+$\partial_r^2-r^{-1}\partial_r+\partial_z^2=Q$.
+For $r\xi=\omega^\vartheta$, the cylindrical operator
+$(\partial_r^2+r^{-1}\partial_r-r^{-2}+\partial_z^2)(r\xi)$,
+divided by $r$, is $M\xi$; explicitly the radial terms are
+$2y_2\xi_{y_2y_2}+4\xi_{y_2}$. The centrifugal term is
+$r^{-2}\partial_z((u^\vartheta)^2)=\partial_{y_1}(\Gamma^2/(4y_2^2))
+=\partial_{y_1}(h^2)$. These calculations prove every coefficient in
+(\ref{nsb:Gamma})--(\ref{nsb:xi}), including the $r$ force conversion.
+
+The velocity--vorticity relation is also retained. Since
+$u^z=-\Psi_{y_2}$ and $u^r=\Psi_{y_1}/r$,
+\[
+ \xi=\frac{\partial_z u^r-\partial_r u^z}{r}
+     =\frac{\Psi_{y_1y_1}}{2y_2}+\Psi_{y_2y_2}
+     =\frac{Q\Psi}{2y_2}.
+\]
+Thus the two transport rows do not by themselves replace the elliptic
+velocity reconstruction. Conversely, on a simply connected meridional
+domain, a smooth $\Psi,\Gamma$ satisfying this relation and both transport
+rows recovers $u$. Define its momentum residual without pressure as
+$a=\partial_tu+(u\cdot\nabla)u-\nu_{\rm NS}\Delta u-f$.
+The circulation row is $a^\vartheta=0$, while the vorticity row is
+$\partial_z a^r-\partial_r a^z=0$. The one-form
+$a^r\,\mathrm dr+a^z\,\mathrm dz$ is therefore closed, and
+$p=-\int(a^r\,\mathrm dr+a^z\,\mathrm dz)$ along a path from a fixed
+base point is path independent. Its derivatives are $p_r=-a^r$,
+$p_z=-a^z$. This proves the local momentum reconstruction, with pressure
+unique up to a function of time; boundary data are not removed.
+
+The change from circulation to swirl rate is invertible on the exact retained
+domain: $\Gamma=2y_2h$. Product differentiation gives
+\[
+ Q(2y_2h)=2y_2Mh,\qquad
+ D_v(2y_2h)=2y_2D_vh+2v_2h.
+\]
+Therefore (\ref{nsb:Gamma}) is equivalent to
+\begin{equation}
+ D_vh=\nu_{\rm NS}Mh-\frac{v_2}{y_2}h+\frac{f^\vartheta}{r}.
+ \label{nsb:h}
+\end{equation}
+The source profile uses precisely this relation: in its similarity variables,
+$E$ is the azimuthal velocity profile and
+$H_{\rm src}=\sqrt{2X}E$ is the scaled circulation profile (source equations
+(4.3), (4.8)). Since $r=\sqrt{2qX}$ and
+$u^\vartheta=q^{-A}E$, its physical circulation is
+$\Gamma=q^{1/2-A}H_{\rm src}=q^{-h_{\rm src}}H_{\rm src}$,
+where the source exponents satisfy $A=1/2+h_{\rm src}$. Here $q>0$ is the
+geometric similarity coordinate and $h_{\rm src}>0$ is an exponent; neither
+is a signed amplitude scale. This is the exact scale dictionary; it does not
+identify $H_{\rm src}$ with the Boussinesq scalar amplitude.
+
+The sign of the blowout amplitude must be kept separate from that positive
+geometric coordinate. The axisymmetric equations have the exact involution
+\[
+ (u^r,u^\vartheta,u^z,p;f^r,f^\vartheta,f^z)
+ \longmapsto
+ (u^r,-u^\vartheta,u^z,p;f^r,-f^\vartheta,f^z).
+ \label{nsb:sign}
+\]
+It sends $(\Gamma,h)$ to $(-\Gamma,-h)$, leaves $\xi$ and the meridional
+flow unchanged, and preserves every displayed equation: the only quadratic
+swirl term is $\partial_{y_1}(h^2)$, while the azimuthal equation is linear in
+$(\Gamma,f^\vartheta)$. Consequently a source-selected positive profile
+$E>0$ (source pp. 7--9) does not justify assuming that every blowout branch is
+positive; its reflected branch has $E<0$, $\Gamma<0$ and the same blowup
+magnitude. The exponent $q^{-h_{\rm src}}$ controls the magnitude in either
+branch. The source's positive covariance coefficients and viscosity are
+separate construction choices, not a sign claim about the velocity amplitude.
+
+For comparison with the lane's controlled scalar equation, set
+$B=h^2$. The globally smooth square equation, including its geometric and
+viscous terms, is
+\begin{equation}
+ D_vB=\nu_{\rm NS}MB-2\nu_{\rm NS}
+ |\nabla h|_Q^2-\frac{2v_2}{y_2}B+\frac{2h}{r}f^\vartheta,
+ \qquad |\nabla h|_Q^2=h_{y_1}^2+2y_2h_{y_2}^2.
+ \label{nsb:B}
+\end{equation}
+This follows by multiplying (\ref{nsb:h}) by $2h$ and using
+$M(h^2)=2hMh+2|\nabla h|_Q^2$. At zeros of $h$ equation
+(\ref{nsb:B}) remains smooth; dividing by $B$ is unnecessary and would lose
+that domain. On a component where $B>0$, the equivalent expression is
+$D_vB=\nu_{\rm NS}MB-\nu_{\rm NS}|\nabla B|_Q^2/(2B)
+-2v_2B/y_2+2hf^\vartheta/r$.
+
+The exact relation to the Boussinesq lane is consequently an operator
+correspondence, not a scalar conjugacy. The lane's retained-viscosity scalar
+row has $D_v\Theta=d\Delta\Theta+f_\Theta$ in Cartesian material
+coordinates. A direct identification $\Theta=B$ would require, on the same
+physical domain, both $M=\Delta$ after the nonlinear coordinate pullback and
+$-2v_2B/y_2-2\nu_{\rm NS}|\nabla h|_Q^2+2hf^\vartheta/r$ to be absorbed into
+one prescribed force. The first condition fails as an operator identity:
+$M=\partial_{y_1}^2+2y_2\partial_{y_2}^2+4\partial_{y_2}$ has variable metric
+and drift, whereas the lane's $\Delta$ is the Euclidean Cartesian Laplacian.
+The geometric, gradient and force terms must therefore be retained or
+calculated in the particular source state. Nonconstant profiles alone
+would not prove that such terms never cancel.
+The exact bridge is (\ref{nsb:Gamma})--(\ref{nsb:B}) with the
+full residual terms retained. It neither claims that the lane's controls are
+the source pulses nor changes the source's pressure reconstruction.
+
+For the meridional velocity, the source's pulse construction supplies the
+following further exact local dictionary (source pp. 11--15 and 74--77). If
+$w$ is a divergence-free pulse and $\pi$ its pressure increment, then
+\[
+ R(u_B+w,p_B+\pi)=R(u_B,p_B)+L_{u_B}(w,\pi)
+ +\nabla\!\cdot(w\otimes w),
+\]
+\[
+ L_{u_B}(w,\pi)=\partial_tw+(u_B\cdot\nabla)w
+ +(w\cdot\nabla)u_B-\nu_{\rm NS}\Delta w+\nabla\pi,
+ \qquad \nabla\cdot w=0.
+\]
+For the moving local phase with wavevector $n$ and transverse amplitude
+$t_m$, the source equation is
+\[
+ t_m'+\mathcal Kt_m+m^2d_N t_m+i k m n\,\pi_m=-f_m,
+ \qquad n\cdot t_m=0,
+ \qquad d_N=\varepsilon k^2|n|^2,
+\]
+with the source's moving shear matrix
+$\mathcal K=\begin{pmatrix}0&-2F&0\\2F+RF_R&0&0\\G_R&0&0\end{pmatrix}$.
+The transverse projection uses
+\[
+ A_\Phi=-\mathcal K+
+ \frac{n(n^T\mathcal K-n'^T)}{|n|^2}.
+\]
+These are exact source pulse equations, including viscosity and pressure
+projection. Their quadratic covariance is chosen to cancel the annular
+stress; the source explicitly retains curl, cutoff, and correction interactions.
+The Boussinesq lane's two-dimensional pair and its full profile residuals have
+an exact algebraic form, but no identification with this three-dimensional
+pulse equation follows without an additional embedding that supplies the
+source's cylindrical geometry, moving plane, covariance cone and correction
+cycle. That embedding is not asserted here.
+
+The current bridge therefore proves a precise morphism of variables, operators,
+forces and pulse residuals and records the exact obstruction to a direct scalar
+identification. It establishes the next programme datum while preserving the
+unproved status of any singular limit or third return.

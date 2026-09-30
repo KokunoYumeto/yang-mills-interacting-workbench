@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-30T09:15:25.390240+00:00",
+  "scope": "Full generic-profile spatial algebra and scaling through actual third transition; analytic existence and estimates are proved in TeX.",
+  "checks": [
+    {
+      "name": "trace-free rotation identity",
+      "passed": true,
+      "remainder": "[0, 0, 0, 0]"
+    },
+    {
+      "name": "streamfunction velocity formula",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "divergence zero",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "full velocity Jacobian",
+      "passed": true,
+      "remainder": "[0, 0, 0, 0]"
+    },
+    {
+      "name": "full scalar Laplacian",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "six-group full vector Laplacian",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "reverse scalar parent interaction",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "complete scalar self-advection",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "exact material phase transport",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "exact material envelope transport",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "complete direct scalar PDE residual",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "complete direct vector PDE residual",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "material velocity derivative includes Dv",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "both velocity interaction directions",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "moving squared phase derivative",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "affine streamfunction with retained P0",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "core Laplacian vanishes",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "primitive constant changes localized velocity",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "material metric squared phase",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "material mixed-Laplacian vector",
+      "passed": true,
+      "remainder": "[0, 0]"
+    },
+    {
+      "name": "inverse material derivative",
+      "passed": true,
+      "remainder": "[0, 0, 0, 0]"
+    },
+    {
+      "name": "signed newest temperature inverse",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "signed newest vorticity inverse",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "second temperature exact q epsilon factors",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "third support source exponent",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "second linear-cell source exponent",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "third velocity diffusion prefactor",
+      "passed": true,
+      "remainder": "0"
+    },
+    {
+      "name": "sqrt154 less than 16",
+      "passed": true
+    },
+    {
+      "name": "collar h stays above three quarters",
+      "passed": true
+    },
+    {
+      "name": "collar g stays above seven tenths",
+      "passed": true
+    },
+    {
+      "name": "collar scaled angle less than one fiftieth",
+      "passed": true
+    },
+    {
+      "name": "collar feedback denominator above three fifths",
+      "passed": true
+    },
+    {
+      "name": "Picard movement fits stated cube",
+      "passed": true
+    },
+    {
+      "name": "third total physical interval below fifteen",
+      "passed": true
+    }
+  ],
+  "checks_total": 34,
+  "checks_passed": 34,
+  "all_passed": true,
+  "source_sha256": {
+    "third_transition_spatial_body.tex": "f69ce7dee42a4a768abeb6e6344edbf31c27cb69b6e0d12b425919ee07f7f26c",
+    "replay_third_transition_spatial.py": "f9a76278f9082aebef90f52c116838cd0d94edd726336a9389a0277ea5f34dbc",
+    "../third_transition/third_transition_body.tex": "e66bd7d0fb007a705538623a68253fb5cdc806fe86c4c6b62a00a752cc6fc258",
+    "../finite_stage/third_growth_entry.tex": "f8ef33f593fae0c9526e2ae5d696d537b3caacb843a35d844c87425b467b4048",
+    "../modified_spatial/modified_spatial_body.tex": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4"
+  },
+  "sympy_version": "1.13.1"
+}

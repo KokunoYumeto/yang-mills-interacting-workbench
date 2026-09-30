@@ -1,0 +1,70 @@
+{
+  "schema": "coupled-viscous-control-integration-v1",
+  "primary_source": {
+    "title": "Blowup for the Boussinesq equations with smooth forcing",
+    "authors": [
+      "Levent Alpöge",
+      "Tristan Buckmaster"
+    ],
+    "pages": 76,
+    "url": "https://cims.nyu.edu/~tristanb/boussinesq.pdf",
+    "file": "sources/alpoge_buckmaster_boussinesq.pdf",
+    "sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b"
+  },
+  "complete_body": "integration/coupled_viscous_control_body.tex",
+  "preamble": "integration/coupled_viscous_control_preamble.tex",
+  "input_sections": [
+    {
+      "file": "physical_realization.tex",
+      "sha256": "d076bd1150571b9772706f07ae229890ff216ea9e5fce28792adaed528fae4e3"
+    },
+    {
+      "file": "finite_stage/first_stage_section.tex",
+      "sha256": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e"
+    },
+    {
+      "file": "finite_stage/evolving_diffusive_parent_section.tex",
+      "sha256": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453"
+    },
+    {
+      "file": "finite_stage/actual_viscous_entry.tex",
+      "sha256": "91e70814420bcc828f9f3bbc30bd3b88f71a1b00862d8195a46e661cacc000db"
+    },
+    {
+      "file": "second_return/second_return_body.tex",
+      "sha256": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4"
+    },
+    {
+      "file": "modified_spatial/modified_spatial_body.tex",
+      "sha256": "025bf41d9952c52d250e6b33a4eb0a58132ab849d982473ec0a8537a181411b4"
+    },
+    {
+      "file": "coupled_feedback.tex",
+      "sha256": "408e81e8c1ac77b83edb28ddb0660f5b321086f9c5159e9ab2ea23398707a2e9"
+    },
+    {
+      "file": "infinite_status.tex",
+      "sha256": "353ef85d1c8db45a80e7b3605f976c75d04a9055559c6c00c45629904f67e543"
+    },
+    {
+      "file": "paper_coupling/coupled_background_body.tex",
+      "sha256": "c74e3e6f97d103067d1574ad41de6ec0e1c915cc43004b8e71a8b62c06a5bb78"
+    },
+    {
+      "file": "paper_coupling/profile_diffusion/profile_diffusion_body.tex",
+      "sha256": "e1ede7254ba21aa35e83c66e4dbc20ad3b9be59eb7aded51498f949e81d896fc"
+    }
+  ],
+  "output_files_sha256": {
+    "coupled_viscous_control_body.tex": "9f0b3c430da19381bb717046b2e49564bf361508b720c8f95f422823e44dda2e",
+    "coupled_viscous_control_preamble.tex": "d1b0ef573e988b6bfc0cc716492e323ae4c9d060a6ca326674a8ed8c337cc56d",
+    "integration_check.tex": "c7fada4945963761afd30eaa58a8d8bfc86e4bfd0c76adccfbe9485d171f0a06"
+  },
+  "label_prefix": "cvlane:",
+  "label_count": 229,
+  "abridged": false,
+  "document_wrapper": false,
+  "mathematics_scope": "Complete compact forced first stage; actual modified two-stage growth targets, evolved-parent second return and hold with explicit positive physical diffusion range and compact profile forces; pressure-independent obstruction for unchanged released infinite state.",
+  "source_estimate_attribution": "Source infinite existence and induction bounds remain explicitly attributed; not independently re-proved as new results.",
+  "infinite_viscous_sequence_proved": false
+}

@@ -1,0 +1,337 @@
+{
+  "schema": "source-propagation-cumulative-v1",
+  "all_passed": true,
+  "old_registered_checks": 46,
+  "new_registered_checks": 62,
+  "total_registered_checks": 108,
+  "new_replays": [
+    {
+      "schema": "exact-propagation-replay-v1",
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "base_polynomial_exactly_divergence_free",
+          "passed": true
+        },
+        {
+          "name": "reflection_orthogonal",
+          "passed": true
+        },
+        {
+          "name": "reflection_full_nonlinear_retained_viscosity_residual",
+          "passed": true
+        },
+        {
+          "name": "reflection_divergence",
+          "passed": true
+        },
+        {
+          "name": "reflection_vorticity_orientation",
+          "passed": true
+        },
+        {
+          "name": "reflection_velocity_inverse",
+          "passed": true
+        },
+        {
+          "name": "reflection_pressure_inverse",
+          "passed": true
+        },
+        {
+          "name": "reflection_absolute_jacobian_squared",
+          "passed": true
+        },
+        {
+          "name": "reflection_third_force_derivative",
+          "passed": true
+        },
+        {
+          "name": "rotation_orthogonal",
+          "passed": true
+        },
+        {
+          "name": "rotation_full_nonlinear_retained_viscosity_residual",
+          "passed": true
+        },
+        {
+          "name": "rotation_divergence",
+          "passed": true
+        },
+        {
+          "name": "rotation_vorticity_orientation",
+          "passed": true
+        },
+        {
+          "name": "rotation_velocity_inverse",
+          "passed": true
+        },
+        {
+          "name": "rotation_pressure_inverse",
+          "passed": true
+        },
+        {
+          "name": "rotation_absolute_jacobian_squared",
+          "passed": true
+        },
+        {
+          "name": "rotation_third_force_derivative",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_orthogonal",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_full_nonlinear_retained_viscosity_residual",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_divergence",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_vorticity_orientation",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_velocity_inverse",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_pressure_inverse",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_absolute_jacobian_squared",
+          "passed": true
+        },
+        {
+          "name": "rotated_reflection_third_force_derivative",
+          "passed": true
+        },
+        {
+          "name": "energy_factor",
+          "passed": true
+        },
+        {
+          "name": "dissipation_factor",
+          "passed": true
+        },
+        {
+          "name": "reflection_fixes_path_direction",
+          "passed": true
+        },
+        {
+          "name": "reflection_reverses_path_observable",
+          "passed": true
+        }
+      ],
+      "check_count": 29,
+      "scope": "Exact polynomial replay supports the written general chain-rule proof. No full-source theorem verification is claimed.",
+      "sources": {
+        "propagation_body.tex": "76ffa97b77d2a28e3cef34b4cc24ef975566def3d6aaabad1e10de58496dc9db",
+        "replay_propagation.py": "da513603e76d07dc7aa6be65cc961bc9c263d33dfc6a69efecfef18032eaa4e5"
+      }
+    },
+    {
+      "schema": "actual-radial-moment-replay-v1",
+      "all_passed": true,
+      "status": "passed",
+      "check_count": 33,
+      "checks": [
+        {
+          "name": "Cartesian symmetric tensor divergence component 0",
+          "passed": true
+        },
+        {
+          "name": "Cartesian symmetric tensor divergence component 1",
+          "passed": true
+        },
+        {
+          "name": "Cartesian symmetric tensor divergence component 2",
+          "passed": true
+        },
+        {
+          "name": "azimuthal vector Laplacian retains positive radial angular coupling",
+          "passed": true
+        },
+        {
+          "name": "axial vector Laplacian is scalar cylindrical Laplacian",
+          "passed": true
+        },
+        {
+          "name": "weighted radial divergence exact derivative e=1",
+          "passed": true
+        },
+        {
+          "name": "weighted radial divergence exact derivative e=2",
+          "passed": true
+        },
+        {
+          "name": "lifted radial derivative square includes differentiated chain coefficient",
+          "passed": true
+        },
+        {
+          "name": "source lifted radial and time derivatives commute",
+          "passed": true
+        },
+        {
+          "name": "source lifted radial and axial derivatives commute",
+          "passed": true
+        },
+        {
+          "name": "compact transverse curl example component 0",
+          "passed": true
+        },
+        {
+          "name": "compact transverse curl example component 1",
+          "passed": true
+        },
+        {
+          "name": "compact transverse curl example component 2",
+          "passed": true
+        },
+        {
+          "name": "compact transverse curl example exact incompressibility",
+          "passed": true
+        },
+        {
+          "name": "potential recovered by exact transverse triple product component 0",
+          "passed": true
+        },
+        {
+          "name": "potential recovered by exact transverse triple product component 1",
+          "passed": true
+        },
+        {
+          "name": "potential recovered by exact transverse triple product component 2",
+          "passed": true
+        },
+        {
+          "name": "example angular axial-swirl covariance factor and sign",
+          "passed": true
+        },
+        {
+          "name": "example angular axial quadratic covariance factor",
+          "passed": true
+        },
+        {
+          "name": "example M2 integrand with original r squared weight",
+          "passed": true
+        },
+        {
+          "name": "example M1 integrand with original r weight",
+          "passed": true
+        },
+        {
+          "name": "full viscous example averaged angular residual equals covariance divergence",
+          "passed": true
+        },
+        {
+          "name": "full viscous example averaged axial residual equals covariance divergence",
+          "passed": true
+        },
+        {
+          "name": "moment source chart radial measure exponent e=1",
+          "passed": true
+        },
+        {
+          "name": "axial flux chart derivative leaves epsilon e=1",
+          "passed": true
+        },
+        {
+          "name": "weighted norm chart exponent e=1",
+          "passed": true
+        },
+        {
+          "name": "moment source chart radial measure exponent e=2",
+          "passed": true
+        },
+        {
+          "name": "axial flux chart derivative leaves epsilon e=2",
+          "passed": true
+        },
+        {
+          "name": "weighted norm chart exponent e=2",
+          "passed": true
+        },
+        {
+          "name": "full reflection reverses swirl moment flux",
+          "passed": true
+        },
+        {
+          "name": "full reflection preserves axial moment flux",
+          "passed": true
+        },
+        {
+          "name": "added amplitude negation preserves quadratic part of swirl flux",
+          "passed": true
+        },
+        {
+          "name": "added amplitude negation preserves quadratic part of axial flux",
+          "passed": true
+        }
+      ],
+      "body_sha256": "d650b99e43143ff03b26d84f334f5b0c84de59fe6f1191d417ea4b11c6db7017",
+      "replay_sha256": "c2e77cd0b5fcfc7f0c8e569cd30f3de6bca69dc31347c65ec1a7fe8b8ca96835",
+      "scope": "Finite symbolic moment identities, original chart factors, actual full-curl structure; no endpoint or infinite source estimates asserted."
+    }
+  ],
+  "prefixed_labels": 71,
+  "pages": 24,
+  "warnings": [],
+  "pdf_sha256": "0e6480272410fbd1017651077d2fc134c15c3eab5e797a18df6c26b2b1545f3d",
+  "body_sha256": "7cae02078a326ee563259bf36f99b761edbe0f336807f6a0692a64bfbde833da",
+  "source_hashes": {
+    "integration\\source_bridge_complete_body_prefixed.tex": "b3429367976eff91b4c62f4f99e8f9d915caeb1c9055a236529a409ed1795a21",
+    "actual_result_propagation\\propagation_body.tex": "76ffa97b77d2a28e3cef34b4cc24ef975566def3d6aaabad1e10de58496dc9db",
+    "actual_result_propagation\\moments\\moments_body.tex": "d650b99e43143ff03b26d84f334f5b0c84de59fe6f1191d417ea4b11c6db7017",
+    "actual_result_propagation\\build_propagation.py": "f46d26a2b76803fc9522e69fea4b0c94603c3ec8dd9ad5acc1bae10cafb86a7f",
+    "actual_result_propagation\\current_bridge_reader.tex": "8aaebf8718a12c65ec893885997bfbedec81e37cf29564c36bbd275ed50f6387",
+    "actual_result_propagation\\complete_preamble.tex": "23279ba924d40d2801c241e61f6ab3f900eafc290ca0ab4b603ba817e4b0f583"
+  },
+  "source_pdf_sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f",
+  "prior_bridge_pdf_sha256": "4794e0a72eb468d8e1f21e9cd4560446fa578e2acf5b0c125b52683a03b9d1e6",
+  "typesetting_only_conversion": "Three explicit primitive choose forms rendered with amsmath binom; mathematical operands unchanged.",
+  "contacts": [
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-01.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-02.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-03.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-04.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-05.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-06.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-07.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-08.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-09.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-10.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-11.png",
+    "<workspace>\\output\\navier_stokes_research_2026-09-08\\lanes\\coupled_viscous_control\\ns_bridge\\actual_result_propagation\\qa\\contact-12.png"
+  ],
+  "rendered_pages": {
+    "page-01.png": "d2da10f0ff54f49c670761a1aa5e4f906edf856509fa84ea11c0b11aac30fd37",
+    "page-02.png": "f7cbe7df4aea26a54cdc647b71f943152de42f233135dce498b667411725e54a",
+    "page-03.png": "a37b6034c6427b4a0c121044b0e8521de5edc6563b16b302696bc804c59a17dc",
+    "page-04.png": "2be353a248238a73275fca7736d4ab0f7ba209910826cd45fa9ded18550d3139",
+    "page-05.png": "43a30eae923ca7b6d3a60a30c43ee0b051c21492ec5deba50b87b37e91f7191f",
+    "page-06.png": "ca4ecbf3a5fd712b142f81a71e9792910f01e05396bc78126b7df2b2a67ef582",
+    "page-07.png": "f7fd925f54ea1c71c9d8f77ab082a580020048523115761266a2276e4e6b589d",
+    "page-08.png": "53109a5b0ea3d97cdd57bc265bc7aec6eb201f22f4f13deeb8f9c34dddd72e95",
+    "page-09.png": "f6d366dbabc6a5af6fd2d3d7fe97e47a01ceb986a8e5bb15ebebf0ef56291a6c",
+    "page-10.png": "3b87235272b51e8245b5ed0804c7dcceeb7f039575d1b0a13d5375933b428bbd",
+    "page-11.png": "6e0e7a9591ff30bd6dd3eb8c827799073b045928c88e8e618abb2a5ed5cb4acf",
+    "page-12.png": "a8137a066f42ff126975ee425dd170621dcefdc83e5a2dcc4eb2a90da0f9a5d5",
+    "page-13.png": "4e8830195e722e82a1f27ec7bf3bbbc4e329a2defe1ffbb8fe76ee9edb21fc85",
+    "page-14.png": "fde9bbab58a0657564dce00399e2da1d5798ddf096732c44f6d76767ef2ba491",
+    "page-15.png": "94b94a3f753e3b88f57288b6820bc55f7b41991c032231dfea71c46d21dae4fd",
+    "page-16.png": "cc34c98782f865352f29aeb55836bb9b672ee4666c479f761d967377655e3860",
+    "page-17.png": "a1d5e2e3386e8c2d1c83b3a75b9c353a763c0cb9e09a2ddac3db9fcd4792546b",
+    "page-18.png": "c7886f86e110e231e6be01fe773d41e45451d79a1cecd5c994d486e10f242629",
+    "page-19.png": "9423fc5f5cb163a4a3588d7fcc012730d2c4f8f7ea6dde805607b3c68628b7eb",
+    "page-20.png": "ea2d5ff013bc5baec48ca179c9ab45bd5f0a3ed924ed4c2c6fda38e28e3e9519",
+    "page-21.png": "7fe0e27d5424d38c44ce43db50a14643a9d456aceb6055176c4ad642895bcefd",
+    "page-22.png": "d0a5472c53369af29daf4593f1a787699a3b2b1c84c2e955f15c17d099e2fcbc",
+    "page-23.png": "f2f25e8acdc51b03987fed3761f62d4f81e59ca6ed12efe70b0cf95d6db427b6",
+    "page-24.png": "77cfb94198c05e63f9ebf39b13d0bec3e1831e601edbdcc4ea40dbb750258a52"
+  },
+  "visual_review": "Not asserted by this build. Record actual inspection separately."
+}

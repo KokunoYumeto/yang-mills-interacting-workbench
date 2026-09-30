@@ -1,0 +1,58 @@
+{
+  "schema": "coupled-viscous-control-integration-v1",
+  "primary_source": {
+    "title": "Blowup for the Boussinesq equations with smooth forcing",
+    "authors": [
+      "Levent Alpöge",
+      "Tristan Buckmaster"
+    ],
+    "pages": 76,
+    "url": "https://cims.nyu.edu/~tristanb/boussinesq.pdf",
+    "file": "sources/alpoge_buckmaster_boussinesq.pdf",
+    "sha256": "895a628d1783bcb039374686f50b895b5f450f53b8ef8aa173523487a7a4a21b"
+  },
+  "complete_body": "integration/coupled_viscous_control_body.tex",
+  "preamble": "integration/coupled_viscous_control_preamble.tex",
+  "input_sections": [
+    {
+      "file": "physical_realization.tex",
+      "sha256": "d076bd1150571b9772706f07ae229890ff216ea9e5fce28792adaed528fae4e3"
+    },
+    {
+      "file": "finite_stage/first_stage_section.tex",
+      "sha256": "16868b4a25c1f8e1fcfc24addd1939815eb9829a3780914d33d75fd29981807e"
+    },
+    {
+      "file": "finite_stage/evolving_diffusive_parent_section.tex",
+      "sha256": "25803ebf10f71956ec69e0431e175c05cd248543548759eb7233b4bbe7242453"
+    },
+    {
+      "file": "coupled_feedback.tex",
+      "sha256": "408e81e8c1ac77b83edb28ddb0660f5b321086f9c5159e9ab2ea23398707a2e9"
+    },
+    {
+      "file": "infinite_status.tex",
+      "sha256": "353ef85d1c8db45a80e7b3605f976c75d04a9055559c6c00c45629904f67e543"
+    },
+    {
+      "file": "paper_coupling/coupled_background_body.tex",
+      "sha256": "c74e3e6f97d103067d1574ad41de6ec0e1c915cc43004b8e71a8b62c06a5bb78"
+    },
+    {
+      "file": "paper_coupling/profile_diffusion/profile_diffusion_body.tex",
+      "sha256": "e1ede7254ba21aa35e83c66e4dbc20ad3b9be59eb7aded51498f949e81d896fc"
+    }
+  ],
+  "output_files_sha256": {
+    "coupled_viscous_control_body.tex": "cd5da2c7a1f5938e2eb5996b08968750c0c2aa8eb1a4f01a2adbc07381f57619",
+    "coupled_viscous_control_preamble.tex": "00dbcf404f2adc97a51ccd7b9bd08f3ef175e51ddc380d2772842035aa284f1c",
+    "integration_check.tex": "c7fada4945963761afd30eaa58a8d8bfc86e4bfd0c76adccfbe9485d171f0a06"
+  },
+  "label_prefix": "cvlane:",
+  "label_count": 156,
+  "abridged": false,
+  "document_wrapper": false,
+  "mathematics_scope": "Complete finite forced viscous stage and exact evolving feedback/profile maps; pressure-independent obstruction for unchanged released infinite state.",
+  "source_estimate_attribution": "Source infinite existence and induction bounds remain explicitly attributed; not independently re-proved as new results.",
+  "infinite_viscous_sequence_proved": false
+}

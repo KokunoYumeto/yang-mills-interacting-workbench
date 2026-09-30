@@ -1,0 +1,592 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Id}{\operatorname{Id}}
+\title{Exact first-stage steering audit with the original base scales retained}
+\author{}
+\date{8 September 2026}
+\begin{document}
+\maketitle
+
+This independent audit concerns the first stage in Alp\"oge--Buckmaster,
+\emph{Blowup for the Boussinesq equations with smooth forcing}, released
+76-page PDF: Lemma 1.2, pp.~6--7; equations (3.2)--(3.5), pp.~8--9;
+Lemmas 3.7--3.8 and equations (3.24)--(3.34), pp.~15--18; equation
+(3.58), p.~27; and the holding calculation, pp.~29 and 35--36.
+The downloaded source is
+\texttt{research/alpoge\_buckmaster\_boussinesq.pdf} in the parent notebook.
+All objects below retain their laboratory coordinates and gravity direction.
+The affine wave is local; this audit asserts no compact spatial support for it.
+
+\paragraph{Parameters and physical scaling.}
+Let $A_0>0$, $\sigma _0=\nu_{\rm time}=\sqrt{A_0}$, and
+$\mu_{\rm sp}=\lambda _0>0$. The original datum of the paper additionally
+has $A_0\geq1$ and $\lambda _0=\lceil\sqrt{A_0}/2\rceil$.
+Let $\lambda _1>0$ be the paper's first frequency and put
+$\Lambda=\mu_{\rm sp}\lambda _1$. The time scaling parameter
+$\nu_{\rm time}$ is not physical viscosity. Physical viscosity will be
+denoted $\nu_{\rm phys}$ and scalar diffusivity $\kappa_{\rm phys}$.
+The paper's first pulse compression is denoted $C=\Lambda _1$ here;
+it is not the physical frequency $\Lambda$. Its pulse mass parameter,
+called $\mu$ in (3.25), is denoted $m$ here and is not $\mu_{\rm sp}$.
+
+For $(X,T)=(\mu_{\rm sp}x,\nu_{\rm time}t)$ the exact physical map is
+\begin{align}
+ \theta(x,t)&=\frac{\nu_{\rm time}^2}{\mu_{\rm sp}}
+                   \widetilde\theta(X,T),&
+ u(x,t)&=\frac{\nu_{\rm time}}{\mu_{\rm sp}}
+                   \widetilde u(X,T),\\
+ p(x,t)&=\frac{\nu_{\rm time}^2}{\mu_{\rm sp}^2}
+                   \widetilde p(X,T),&
+ \omega(x,t)&=\nu_{\rm time}\widetilde\omega(X,T).
+\end{align}
+In particular $\Theta=(A_0/\mu_{\rm sp})\widetilde\Theta$,
+$\Omega=\sigma _0\widetilde\Omega$,
+$D=\sigma _0\widetilde D$, $G=A_0\widetilde G$, and
+$\zeta(t)=\widetilde\zeta(\sigma _0t)$. These statements follow by
+differentiating each displayed expression: spatial derivatives contribute
+$\mu_{\rm sp}$ and time derivatives contribute $\sigma _0$.
+For example $\partial_t\Theta=(\sigma _0^3/\mu_{\rm sp})
+\partial_T\widetilde\Theta$, and
+\[
+-\frac{J\zeta\cdot G}{\Lambda|\zeta|^2}\Omega
+=\frac{\sigma _0^3}{\mu_{\rm sp}}
+ \left(-\frac{J\widetilde\zeta\cdot\widetilde G}
+ {\lambda _1|\widetilde\zeta|^2}\widetilde\Omega\right).
+\]
+Likewise $\partial_t\Omega=\sigma _0^2\partial_T\widetilde\Omega
+=\Lambda\zeta_1\Theta$. This proves the amplitude-system morphism.
+For retained diffusion the corresponding coefficients are
+$\widetilde\nu_{\rm phys}=\nu_{\rm phys}\mu_{\rm sp}^2/\sigma _0$
+and $\widetilde\kappa_{\rm phys}=\kappa_{\rm phys}\mu_{\rm sp}^2/\sigma _0$,
+because the Laplacian contributes $\mu_{\rm sp}^2$.
+
+\paragraph{Rigid geometry and its exact equations.}
+Set
+\[
+J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+R_\alpha=\begin{pmatrix}\cos\alpha&-\sin\alpha\\
+\sin\alpha&\cos\alpha\end{pmatrix},\quad
+e(s)=(\sin s,\cos s).
+\]
+Fix $s$ independent of time. During the first stage put
+\begin{align}
+ D&=\dot\alpha J,& M&=R_\alpha,&
+ G&=-A_0R_\alpha e_2=(A_0\sin\alpha,-A_0\cos\alpha),\\
+ \zeta&=R_\alpha e(s)=(\sin(s-\alpha),\cos(s-\alpha)).
+\end{align}
+These formulas have the exact derivative equations
+\begin{align}
+ \dot M&=DM,& \det M&=1,& M^{-T}e(s)&=\zeta,\\
+ \dot G&=\dot\alpha JG=-D^TG,&
+ \dot\zeta&=\dot\alpha J\zeta=-D^T\zeta,\\
+ \dot\zeta_1&=-\dot\alpha\zeta_2,&
+ \dot\zeta_2&=\dot\alpha\zeta_1,& |\zeta|&=1.
+\end{align}
+For verification, $R_\alpha'=JR_\alpha$, $J^T=-J$, and direct
+matrix multiplication gives all the formulas. Also
+\[
+ J\zeta\cdot G
+=-A_0\cos(s-\alpha)\sin\alpha
+ -A_0\sin(s-\alpha)\cos\alpha=-A_0\sin s.
+\]
+Consequently the physical first-layer equations are exactly
+\begin{equation}\label{eq:physical}
+ \dot\Theta=a\Omega,\qquad\dot\Omega=b\Theta,\qquad
+ a=\frac{A_0\sin s}{\Lambda},\qquad b=\Lambda\zeta_1.
+\end{equation}
+The base gradient evolves by the displayed transport law even though its
+norm is constant. No additional older shear occurs at the first stage.
+For the affine background $u_b=Dx$, $\theta_b=G\cdot x$, an exact
+pressure and force are
+\[
+ p_b=\frac{\dot\alpha^2}{2}|x|^2+\frac12(G\cdot x)x_2,
+ \qquad f_{u,b}=\left(\ddot\alpha-\frac{G_1}{2}\right)Jx,
+ \qquad f_{\theta,b}=0.
+\]
+Indeed $(\partial_t+u_b\cdot\nabla)\theta_b
+=(\dot G+D^TG)\cdot x=0$ and
+$\partial_tu_b+u_b\cdot\nabla u_b=(\ddot\alpha J-\dot\alpha^2\Id)x$.
+The gradient of the displayed pressure cancels the quadratic-rotation
+term and leaves
+\[
+ (\ddot\alpha J)x+\tfrac12[Gx_2-e_2(G\cdot x)]
+ =\left(\ddot\alpha-\frac{G_1}{2}\right)Jx
+\]
+after subtracting $\theta_be_2$. This proves the momentum equation
+and force sign in the original laboratory coordinates.
+Both affine Laplacians vanish, so these background formulas also hold
+with either retained diffusion coefficient. During first holding the
+background force is $-(A_0\sin s/2)Jx$, whose curl is
+$-A_0\sin s$; it does not vanish merely because $D=0$.
+
+\paragraph{The full pulse family.}
+Choose $h\in C_c^\infty((0,1))$ with $h\geq0$ and
+$\int_0^1h=1$, let $H=\|h\|_\infty$, and choose
+\[
+ c_p>1,\qquad C\geq2c_pH,\qquad
+ 0<s\leq\tfrac18,\qquad c_pCH\sin s\leq\tfrac14.
+\]
+The paper takes $c_p=3$, $h=\eta_2$, and $C=\Lambda _1$.
+Let $\eta$ be a smooth nondecreasing step, zero on $(-\infty,0]$
+and one on $[1,\infty)$. For $m\in[0,c_p]$ set
+\[
+ \tau_b=1+C^{-1},\qquad
+ z_m(\tau)=\begin{cases}1-\eta(\tau),&0\leq\tau\leq1,\\
+ -mC h(C(\tau-1)),&1\leq\tau\leq\tau_b.
+ \end{cases}
+\]
+The flatness of the step and the compact interior support of $h$ make
+this join smooth. Let $P_m$ solve the linear initial value problem
+\begin{equation}\label{eq:P}
+ P_m''=z_mP_m,\qquad P_m(0)=P_m'(0)=1.
+\end{equation}
+Linear ODE existence applies on the entire finite interval independently
+of any quotient. The next proof verifies positivity before defining a
+quotient globally.
+
+\begin{proposition}\label{prop:shoot}
+For every $m\in[0,c_p]$, $P_m>0$ on $[0,\tau_b]$. With
+$v=P_m'/P_m$ and $d=v(1)$, one has
+\begin{align}
+ &(1+\tau)^{-1}\leq v(\tau)\leq1\quad(0\leq\tau\leq1),
+ \qquad \log2\leq\log P_m(1)\leq1,\qquad \tfrac12\leq d\leq1,
+ \\
+ &\tfrac12\leq\chi(y):=\frac{P_m(1+y/C)}{P_m(1)}
+ \leq1+y/C,\qquad -4c_p\leq V(y):=v(1+y/C)\leq d,
+ \quad0\leq y\leq1,\\
+ &0\leq\log P_m(\tau)\leq1+C^{-1}\quad(0\leq\tau\leq\tau_b).
+\end{align}
+The map $E(m)=v(\tau_b;m)$ is smooth and strictly decreasing, with
+\begin{equation}\label{eq:rootderivative}
+ E'(m)=-\int_0^1 h(y)
+ \exp\!\left(-\frac2C\int_y^1V(r;m)\,dr\right)dy<0.
+\end{equation}
+It has a unique zero $m_*$, and
+\[
+ \tfrac12-\frac1{4C}\leq m_*\leq1,\qquad
+ 0\leq V\leq d\text{ at }m=m_*,\qquad
+ \log2\leq\log P_{m_*}(\tau_b)\leq1+C^{-1}.
+\]
+Uniformly over all trials,
+$-e^{8c_p/C}\leq E'(m)\leq-e^{-2/C}$.
+At the selected root the sharper bounds are
+$-1\leq E'(m_*)\leq-e^{-2/C}$.
+\end{proposition}
+\begin{proof}
+On $[0,1]$, while $P>0$, its equation gives $P''\geq0$,
+hence $P'\geq1$ and $P\geq1+\tau$. These inequalities exclude
+a first zero by continuity. The quotient is therefore defined and obeys
+$v'=1-\eta-v^2$. The constant $1$ is a supersolution.
+The positive function $w=(1+\tau)^{-1}$ satisfies $w'=-w^2$.
+Writing the differential equations for $v-1$ and $v-w$, and multiplying
+by the respective positive integrating factors for their linear terms,
+proves $w\leq v\leq1$. Integration proves the first displayed bounds.
+The data $P(1),d$ do not depend on $m$.
+
+On the pulse $\chi''+(mh/C)\chi=0$, $\chi(0)=1$,
+$\chi'(0)=d/C$. Before a possible first zero, concavity gives
+$\chi\leq1+dy/C\leq1+y/C<2$, since $C>2$.
+The condition $mh/C\leq1/2$ gives $\chi''\geq-1$, hence
+$\chi(y)\geq1+dy/C-y^2/2\geq1/2$. This excludes the zero and
+proves the bound on the full pulse. The exact integral identity
+\[
+ \chi'(y)=\frac dC-\frac mC\int_0^yh(r)\chi(r)\,dr
+ \geq-\frac{2c_p}C
+\]
+now gives $V=C\chi'/\chi\geq-4c_p$. Differentiating this quotient
+gives the exact equation
+\begin{equation}\label{eq:V}
+ \frac{dV}{dy}=-mh(y)-\frac{V^2}{C}\leq0,\qquad V(0)=d,
+\end{equation}
+so $V\leq d\leq1$. Positivity and smooth parameter dependence of the
+linear equation give smoothness of the quotient in $m$. Its derivative
+$W=\partial_mV$ solves $W'+(2V/C)W=-h$, $W(0)=0$.
+The integrating factor gives \eqref{eq:rootderivative}. The integrand is
+positive wherever $h>0$, which is a nonempty set of positive measure.
+The all-trial bounds on $V$ give the two exponential derivative bounds.
+
+For $m=0$, solving \eqref{eq:V} gives
+$E(0)=d/(1+d/C)>0$. For $m=c_p$, integration gives
+$E(c_p)=d-c_p-C^{-1}\int_0^1V^2\leq1-c_p<0$.
+Continuity and strict monotonicity give exactly one root in $(0,c_p)$.
+There $V$ decreases from $d$ to zero, so $0\leq V\leq d$, and
+\[
+ m_*=d-\frac1C\int_0^1V^2\,dy\in[d-d^2/C,d].
+\]
+The derivative of $x-x^2/C$ is $1-2x/C>0$ on $[1/2,1]$.
+This proves the stated interval for $m_*$. The selected derivative
+bounds follow from $0\leq V\leq1$ in \eqref{eq:rootderivative}.
+For every trial, on the pulse,
+\[
+ \log P_m(1+y/C)=\log P_m(1)+\log\chi(y)
+ \in[\log2-\log2,\,1+\log(1+C^{-1})]
+ \subset[0,1+C^{-1}].
+\]
+At the selected root the pulse contribution is
+$C^{-1}\int_0^1V\,dy\in[0,C^{-1}]$; adding the first-part
+integral proves the final gain. This also proves all-trial amplitude
+bounds without imposing all-trial positivity of $V$.
+\end{proof}
+
+If the independent first-part exit datum $d$ is varied near its actual
+value, differentiating \eqref{eq:V} gives
+\[
+ \partial_dE=\exp\!\left(-\frac2C\int_0^1V(r)dr\right),\qquad
+ \frac{dm_*}{dd}=
+ \frac{\exp[-(2/C)\int_0^1V]}{
+ \int_0^1h(y)\exp[-(2/C)\int_y^1V]dy}>0.
+\]
+The implicit function theorem applies because $E'(m_*)<0$.
+At the actual selected root the last derivative lies in
+$[e^{-2/C},e^{2/C}]$. This derivative statement concerns the displayed
+family with $d$ variable; it introduces no change to the paper's actual
+datum $d$.
+
+\paragraph{Control map, amplitudes, and every join.}
+Set $\Gamma=\sigma _0\sin s$, $\tau=\Gamma(t-t_1)$,
+$Z(t)=\sin s\,z_m(\tau)$, and
+\[
+ \alpha(t)=s-\arcsin Z(t).
+\]
+Then $\zeta_1=Z$, $\zeta_2=\sqrt{1-Z^2}\geq\sqrt{15}/4$,
+and $0\leq\alpha<1/2$. Indeed $|Z|\leq c_pCH\sin s\leq1/4$,
+$Z\leq\sin s$, and the increasing principal arcsine satisfies
+$\arcsin Z\leq s$ and $\arcsin(1/4)\leq1/3$.
+Differentiation yields the physical feedback exactly:
+\[
+ \dot\alpha=-\frac{\dot Z}{\sqrt{1-Z^2}}
+            =-\frac{\dot Z}{\zeta_2},\qquad
+ \dot G=\dot\alpha JG,\qquad \dot\zeta=\dot\alpha J\zeta.
+\]
+This is the paper's control with $F_1=0$. Given $P_{\rm ent}>0$, set
+\begin{equation}\label{eq:amplitudes}
+ \Theta(t)=-P_{\rm ent}P_m(\tau),\qquad
+ \Omega(t)=-\frac\Lambda{\sigma _0}P_{\rm ent}P_m'(\tau).
+\end{equation}
+Their initial values are $\Theta(t_1)=-P_{\rm ent}$ and
+$\Omega(t_1)=(\Lambda/\sigma _0)\Theta(t_1)$.
+Since $\Gamma\Lambda/\sigma _0=\Lambda\sin s$ and
+$a\Lambda/\sigma _0=\Gamma$, differentiation of
+\eqref{eq:amplitudes} proves both equations \eqref{eq:physical}.
+It also proves, without changing the original amplitudes,
+\[
+ v=\frac{\sigma _0\Omega}{\Lambda\Theta},\qquad
+ \partial_t\log(-\Theta)=\Gamma v,\qquad
+ |\Omega|=\frac\Lambda{\sigma _0}|v|(-\Theta).
+\]
+At the selected root $\Omega(t_b)=0$. Differentiating its endpoint
+map in $m$ gives the explicit nonzero derivative
+\[
+ \left.\partial_m\Omega(t_b;m)\right|_{m=m_*}
+=-\frac\Lambda{\sigma _0}P_{\rm ent}P_{m_*}(\tau_b)E'(m_*)>0.
+\]
+Near $\tau_b$, $h$ is identically zero, so $P''=0$.
+The selected endpoint condition $P'(\tau_b)=0$ forces $P'=0$
+throughout that neighborhood. Thus $Z=0$, $\alpha=s$, $\Omega=0$
+and $\Theta$ is constant there. Extending these constants gives a smooth
+stationary continuation and vanishing of every positive-order time
+derivative of $\alpha,\Theta,\Omega$ at the join. Near $\tau=0$,
+all derivatives of $\eta$ vanish to infinite order, so the pulse law
+joins the preceding constant-$Z$ law smoothly as well.
+
+For an explicit control bound at each derivative order $n\geq1$,
+\[
+ \|\partial_t^n Z\|_\infty\leq
+ (\sin s)\Gamma^n
+ \max\{\|\eta^{(n)}\|_\infty,c_pC^{n+1}\|h^{(n)}\|_\infty\}.
+\]
+The maximum is valid because the two pieces have disjoint interiors.
+In particular
+\[
+ \|\dot\alpha\|_\infty\leq\frac4{\sqrt{15}}\Gamma\sin s
+ \max\{\|\eta'\|_\infty,c_pC^2\|h'\|_\infty\},\qquad
+ \int_{t_1}^{t_b}|\dot\alpha|dt\leq
+ \frac4{\sqrt{15}}\sin s\left(1+c_pC\int_0^1|h'|\right).
+\]
+The first inequality follows from the feedback and the lower cosine
+bound. For the second, integrate $|\dot Z|$: the step has variation
+$\sin s$ and the pulse variation is at most
+$c_pC\sin s\int|h'|$. All higher angle derivatives are explicit:
+\[
+ \partial_t^n\alpha=-\sum_{k=1}^n
+ \frac{R_{k-1}(Z)}{(1-Z^2)^{k-1/2}}
+ B_{n,k}(Z',\ldots,Z^{(n-k+1)}),
+\]
+where $R_0=1$, $R_j=(1-z^2)R'_{j-1}+(2j-1)zR_{j-1}$, and
+\[
+ B_{n,k}(x_1,\ldots,x_{n-k+1})=
+ \sum_{\substack{\sum j\ell_j=n\\\sum\ell_j=k}}
+ \frac{n!}{\prod_j\ell_j!}\prod_j\left(\frac{x_j}{j!}\right)^{\ell_j}.
+\]
+Repeated differentiation of $(\arcsin z)'=(1-z^2)^{-1/2}$ proves
+the recurrence; repeated product and chain rules give the displayed
+finite sum. The preceding bounds and $1-Z^2\geq15/16$ quantify each
+derivative without an unspecified control singularity.
+
+\paragraph{Growth, transition, and their exact physical gain.}
+Let $k_1\geq0$ and $L_1=(k_1+41/8)\log\lambda _1>0$.
+The physical seed, threshold, and initial time dictated by Lemma 1.2 are
+\[
+ P_{\rm seed}=\frac{A_0}{\mu_{\rm sp}}\lambda _1^{-k_1-6},\quad
+ P_a=\frac{A_0}{\mu_{\rm sp}}\lambda _1^{-7/8},\quad
+ t_{\rm in}=\sigma _0^{-1}.
+\]
+With $\alpha=0$ and $\Omega=(\Lambda/\sigma _0)\Theta$,
+\eqref{eq:physical} gives
+$\Theta=-P_{\rm seed}e^{\Gamma(t-t_{\rm in})}$.
+Because $P_{\rm seed}e^{L_1}=P_a$, the first threshold occurs exactly at
+$t_a=t_{\rm in}+L_1/\Gamma$, and its derivative is
+$\partial_t(-\Theta)(t_a)=\Gamma P_a>0$.
+The first transition has both feedbacks zero and length $\Gamma^{-1}$;
+therefore $t_1=t_a+\Gamma^{-1}$ and $P_{\rm ent}=eP_a$.
+Its contribution to the logarithmic gain is exactly one.
+At the selected endpoint
+\begin{align}
+ t_b-t_{\rm in}&=\frac{L_1+2+C^{-1}}\Gamma,\\
+ 1+\log2&\leq\log\frac{P_f}{P_a}\leq2+C^{-1},
+ \qquad P_f=-\Theta(t_b)=eP_aP_{m_*}(\tau_b),\\
+ 2eA_0\lambda _1^{1/8}&\leq A_1:=\Lambda P_f
+ \leq e^{2+C^{-1}}A_0\lambda _1^{1/8}.
+\end{align}
+The gain for every trial through steering is between $1$ and
+$2+C^{-1}$ relative to $P_a$, directly from Proposition~\ref{prop:shoot}.
+The selected gain from the seed is between
+$L_1+1+\log2$ and $L_1+2+C^{-1}$.
+
+\paragraph{The actual endpoint background and first holding interval.}
+At the selected endpoint the new layer is fully activated,
+$\alpha=s$, $\zeta=e_2$, and $\Omega=0$. Its origin-gradient
+increment is $\Lambda\Theta\zeta=-A_1e_2$. Thus the next
+background gradient is exactly
+\begin{equation}\label{eq:nextG}
+ G_{<2}=G+\Lambda\Theta\zeta
+ =(A_0\sin s,-A_0\cos s-A_1),\qquad
+ \sigma _1^2=|G_{<2}|
+ =\sqrt{A_0^2+A_1^2+2A_0A_1\cos s}.
+\end{equation}
+Squaring the displayed vector proves the equality, and projection onto
+$-e_2$ followed by the triangle inequality proves
+\[
+ A_1+A_0\cos s\leq\sigma _1^2\leq A_1+A_0,
+ \qquad A_1\leq\sigma _1^2.
+\]
+The first holding law is $\dot\alpha=F_1=0$.
+Consequently $M,G,\zeta,\Theta$ remain at their endpoint values and
+$\Omega=0$. The exact linear propagator for arbitrary amplitude data
+on this prescribed holding background is
+\[
+ \begin{pmatrix}\Theta(t)\\\Omega(t)\end{pmatrix}
+ =\begin{pmatrix}1&a(t-u)\\0&1\end{pmatrix}
+ \begin{pmatrix}\Theta(u)\\\Omega(u)\end{pmatrix}.
+\]
+For $y=(\Theta,\sigma _0\Omega/\Lambda)$ the upper-right entry is
+$\Gamma(t-u)$. Only the selected reference pair has second component
+zero; the propagator is not the identity on arbitrary data.
+
+For completeness the next growth interval is explicitly solvable on
+this first holding background. Take a fixed $s_2\in(0,1/8]$,
+$\Lambda _2>0$, and $p_2=e(s_2)$. Because the first vorticity is zero,
+$D_{<2}=0$ and the next phase gradient remains $p_2$. The exact next
+growth coefficients and rate are
+\[
+ a_2=\frac{A_1\sin s_2+A_0\sin(s+s_2)}{\Lambda _2},\quad
+ b_2=\Lambda _2\sin s_2,\quad
+ \gamma _2=\sqrt{[A_1\sin s_2+A_0\sin(s+s_2)]\sin s_2}>0.
+\]
+Indeed $-Je(s_2)\cdot G_{<2}$ is the numerator in $a_2$, and
+laboratory buoyancy gives $b_2$. An eigenline datum with ratio
+$\Omega_2/\Theta_2=\sqrt{b_2/a_2}$ is multiplied by
+$e^{\gamma _2(t-t_b)}$, by direct differentiation. If its required
+logarithmic gain is $L_2>0$, the first holding integral in the paper's
+weighted coordinates is therefore exactly
+\[
+ H_1=\int_{t_b}^{t_{a2}}\Gamma\,dt=\frac{\Gamma L_2}{\gamma _2}.
+\]
+Under the actual schedule $s_2=L_2\sigma _0/\sigma _1$, write
+$\beta=\arctan[A_0\sin s/(A_1+A_0\cos s)]\in(0,s)$.
+Then $G_{<2}=-\sigma _1^2e(-\beta)$, and
+$\gamma _2=\sigma _1\sqrt{\sin s_2\sin(s_2+\beta)}$.
+Since $s_2+\beta\leq1/4<\pi/2$, this proves the quantitative bounds
+\[
+ 0<H_1=\frac{\sin s\,s_2}
+ {\sqrt{\sin s_2\sin(s_2+\beta)}}
+ \leq\sin s\frac{s_2}{\sin s_2}
+ \leq\frac{\sin s}{1-s_2^2/6}.
+\]
+The last inequality follows by integrating
+$\cos t\geq1-t^2/2$ from zero to $s_2$.
+The next transition also has $F_1=F_2=0$: the only term in $F_2$
+contains $\Omega_1=0$ and $\zeta_{1,1}=0$.
+The displayed constant first-layer state and constant second-stage
+geometry solve that closed ODE, whose coefficients are smooth for the
+positive vertical components present here. Local uniqueness therefore
+extends the constant first-layer state through the second transition.
+This proves the first-layer assertion on p.~29 directly.
+
+\paragraph{Exact diffusion check and its feedback consequence.}
+For the sine profile and equal physical coefficients
+$\kappa_{\rm phys}=\nu_{\rm phys}=d\geq0$, the first affine wave
+on its actual rotating base gradient obeys
+\[
+ \dot\Theta=a\Omega-d\Lambda^2\Theta,\qquad
+ \dot\Omega=b\Theta-d\Lambda^2\Omega.
+\]
+The base remains the displayed evolving affine $G$ because its
+Laplacian is zero. Let $(\Theta_0,\Omega_0)$ be the exact inviscid
+first-stage solution with the same geometry and data at $t_{\rm in}$.
+Then
+\[
+ (\Theta_d,\Omega_d)(t)
+ =e^{-d\Lambda^2(t-t_{\rm in})}(\Theta_0,\Omega_0)(t)
+\]
+solves both viscous equations by the product rule, with identical
+initial data; linear uniqueness proves equality. In particular its
+selected vorticity zero and all-trial temperature signs are preserved,
+but its gain from the seed is reduced by the exact cost
+$d\Lambda^2(L_1+2+C^{-1})/\Gamma$.
+This statement uses the fixed inviscid stage times. Its damped
+temperature need not cross the paper's threshold at the inviscid time.
+
+During unforced viscous holding, $b=0$ and $\Omega_d=0$, so
+\[
+ \Theta_d(t)=-P_{d,f}e^{-d\Lambda^2(t-t_b)},\qquad
+ G_{<2,d}(t)=(A_0\sin s,
+ -A_0\cos s-\Lambda P_{d,f}e^{-d\Lambda^2(t-t_b)}).
+\]
+Here $P_{d,f}=e^{-d\Lambda^2(t_b-t_{\rm in})}P_f$.
+Consequently the next growth coefficient is time dependent:
+\[
+ a_{2,d}(t)=\frac{\Lambda P_{d,f}e^{-d\Lambda^2(t-t_b)}\sin s_2
+                    +A_0\sin(s+s_2)}{\Lambda _2},\qquad
+ b_{2,d}=\Lambda _2\sin s_2,
+\]
+and, before its own diffusion terms are added,
+\[
+ \dot a_{2,d}(t)=
+ -\frac{d\Lambda^3P_{d,f}}{\Lambda _2}
+ e^{-d\Lambda^2(t-t_b)}\sin s_2.
+\]
+Differentiating the prior explicit formulas proves each equality.
+Thus the inviscid frozen-background growth rate and holding integral
+cannot be carried over unchanged to an unforced diffusive next stage.
+Compensating the first-layer scalar diffusion by the exact source
+$d\Lambda^2\Theta_{\rm hold}\sin(\Lambda x_2)$, with the constant
+$\Theta_{\rm hold}=-P_{d,f}$, makes its scalar amplitude stationary.
+This source is an affine-wave source with no
+claimed compact support. These identities locate and quantify the
+first background feedback term; they assert neither success nor
+failure of an infinite viscous iteration.
+
+\paragraph{Exact continuation through the next diffusive growth interval.}
+The preceding feedback has an explicit solution beyond merely naming
+its coefficients. Take $d>0$, put
+\[
+ q=d\Lambda^2,\quad \delta_2=d\Lambda _2^2,\quad
+ c_0=A_0\sin(s+s_2)\sin s_2>0,\quad
+ c_1=\Lambda P_{d,f}\sin^2s_2>0,
+\]
+and use $r=t-t_b\geq0$. The actual second amplitude pair on the
+constant-rotation, diffusing-parent background is
+\[
+ \Theta_2'=a_{2,d}(r)\Omega_2-\delta_2\Theta_2,\qquad
+ \Omega_2'=b_2\Theta_2-\delta_2\Omega_2,
+ \quad b_2=\Lambda _2\sin s_2.
+\]
+Set $W(r)=e^{\delta_2r}\Omega_2(r)$. Since $b_2$ is a positive
+constant, differentiating its equation and substituting the first one
+gives exactly
+\begin{equation}\label{eq:feedbackscalar}
+ W''=(c_0+c_1e^{-qr})W,\qquad
+ \Omega_2=e^{-\delta_2r}W,\qquad
+ \Theta_2=e^{-\delta_2r}W'/b_2.
+\end{equation}
+Conversely, differentiating these last two expressions verifies the
+original pair for every solution of the scalar equation. Thus this is
+an invertible morphism between the solution spaces, with initial data
+$W(0)=\Omega_2(0)$, $W'(0)=b_2\Theta_2(0)$.
+
+Let $x(r)=x_0e^{-qr/2}$, $x_0=2\sqrt{c_1}/q$, and
+$\vartheta=2\sqrt{c_0}/q>0$. Since
+$x'=-qx/2$ and $x''=q^2x/4$, the scalar equation is exactly
+\[
+ x^2\mathcal W_{xx}+x\mathcal W_x-(x^2+\vartheta^2)\mathcal W=0,
+ \qquad W(r)=\mathcal W(x(r)).
+\]
+Here $\mathcal W$ is an explicitly related coordinate representation,
+not a replacement of the physical amplitudes.
+An exact fundamental pair on $x>0$ is
+\[
+ f(x)=x^{\vartheta}\sum_{n=0}^\infty a_nx^{2n},\quad
+ a_0=1,\quad a_n=\frac{a_{n-1}}{4n(n+\vartheta)},\qquad
+ g(x)=f(x)\int_{x_0}^x\frac{d\xi}{\xi f(\xi)^2}.
+\]
+For each compact interval of $x>0$, the ratio
+$|a_nx^{2n}/(a_{n-1}x^{2n-2})|=x^2/[4n(n+\vartheta)]$
+tends uniformly to zero. Multiplying terms by any fixed polynomial in
+$n$ preserves this fact, so the series and each of its derivatives
+converge uniformly there. Substitution is therefore valid term by term;
+the coefficient equation is precisely the displayed recurrence.
+Every series coefficient is positive, so $f>0$ on $x>0$.
+The integral defining $g$ is well defined on compact subintervals.
+Differentiating it gives $fg'-f'g=1/x$, and differentiating again
+shows $g''+g'/x-(1+\vartheta^2/x^2)g=0$ because $f$ satisfies
+the same equation. Hence the Wronskian never vanishes.
+Linear uniqueness shows that every solution on $x>0$ is $c_ff+c_gg$.
+
+For actual initial data $W_0=\Omega_2(0)$ and
+$W_1=b_2\Theta_2(0)$ the coefficients are exactly
+\[
+ c_f=\frac{W_0}{f(x_0)},\qquad
+ c_g=-\frac{2f(x_0)}q\left[W_1+\frac{qx_0}{2}c_ff'(x_0)\right].
+\]
+Indeed $g(x_0)=0$, $g'(x_0)=1/[x_0f(x_0)]$, and
+$x'(0)=-qx_0/2$ give these two equations by substitution.
+Together with \eqref{eq:feedbackscalar}, the formula supplies the
+complete physical amplitudes, with no singularity at any finite $r$.
+For $d=0$ the original equation is instead
+$W''=(c_0+c_1)W$ and its elementary exponential solutions apply
+directly; the expressions dividing by $q$ are not used.
+
+The continuation also has rigorous gain bounds. Write
+$\gamma_0=\sqrt{c_0}$ and $\gamma_i=\sqrt{c_0+c_1}$, and take
+the actual initial growing eigenline
+$\Theta_2(0)<0$, $\Omega_2(0)=\sqrt{b_2/a_{2,d}(0)}\Theta_2(0)<0$.
+Then $Y=-W$ has $Y(0)=Y_0>0$ and $Y'(0)=\gamma_iY_0>0$.
+Its positive coefficient equation excludes a first loss of positivity:
+as long as $Y>0$, $Y''>0$ and $Y'\geq Y'(0)>0$.
+For all $r\geq0$ set
+\[
+ Y_-(r)=Y_0\left[\cosh(\gamma_0r)
+                  +\frac{\gamma_i}{\gamma_0}\sinh(\gamma_0r)\right],
+ \qquad Y_+(r)=Y_0e^{\gamma_ir}.
+\]
+The difference $Y-Y_-$ has zero initial value and derivative and obeys
+$(Y-Y_-)''-\gamma_0^2(Y-Y_-)=c_1e^{-qr}Y\geq0$.
+The identity
+\[
+ Y(r)-Y_-(r)=\int_0^r
+ \frac{\sinh(\gamma_0(r-u))}{\gamma_0}
+ c_1e^{-qu}Y(u)\,du
+\]
+is verified by two differentiations and uniqueness. It and its first
+derivative are nonnegative. Similarly $Y_+-Y$ has the representation
+with kernel $\sinh(\gamma_i(r-u))/\gamma_i$ and source
+$c_1(1-e^{-qu})Y(u)\geq0$. Thus
+$Y_-\leq Y\leq Y_+$ and $Y_-'\leq Y'\leq Y_+'$.
+The exact physical temperature gain consequently satisfies
+\[
+ e^{-\delta_2r}\left[\cosh(\gamma_0r)
+       +\frac{\gamma_0}{\gamma_i}\sinh(\gamma_0r)\right]
+ \leq\frac{-\Theta_2(r)}{-\Theta_2(0)}
+ \leq e^{(\gamma_i-\delta_2)r}.
+\]
+The signs of both amplitudes remain negative for finite $r$.
+These are finite-interval statements for the exact growth control;
+they do not impose a threshold crossing when the diffusion may prevent
+one, nor do they claim a subsequent steering or infinite iteration.
+
+\end{document}

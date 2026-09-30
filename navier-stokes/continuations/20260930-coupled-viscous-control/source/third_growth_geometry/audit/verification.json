@@ -1,0 +1,26 @@
+{
+  "scope": "exact algebra only; domains and analytic inverse proved in AUDIT.md",
+  "passed": 20,
+  "checks": {
+    "z1_unit": true,
+    "held_z2_phase": true,
+    "held_z1_phase": true,
+    "third_matrix_ODE": true,
+    "third_matrix_identity": true,
+    "third_matrix_unit_determinant": true,
+    "third_phase_rotation_formula": true,
+    "third_phase_transport": true,
+    "third_phase_norm": true,
+    "relative_determinant": true,
+    "third_phase_initial_datum": true,
+    "complete_gradient_coupling": true,
+    "evolving_numerator_diffusion": true,
+    "held_control": true,
+    "third_feedback": true,
+    "feedback_difference": true,
+    "controlled_first_phase_component": true,
+    "phase_norm_derivative": true,
+    "inverse_scalar_equation": true,
+    "inverse_vorticity_equation": true
+  }
+}

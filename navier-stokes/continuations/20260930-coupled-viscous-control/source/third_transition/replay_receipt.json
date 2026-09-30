@@ -1,0 +1,391 @@
+{
+  "schema": "third-transition-exact-replay-v1",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "first_phase_unit_length",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "second_phase_length",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_phase_length",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "adjacent_determinant_12",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "adjacent_determinant_23",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "nonadjacent_determinant_13",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_first_basis_zeta2",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "inverse_first_basis_zeta3",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "scalar_coordinate_inverse_1",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "scalar_coordinate_inverse_2",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "x_evolution",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "y_evolution",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "adjacent_determinant_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "dot_product_evolution",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "second_gradient_numerator",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_gradient_numerator",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "second_numerator_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_numerator_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_2_source_map",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_3_source_map",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "feedback_difference_factorization",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "initial_feedback_difference",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "phase1_transport",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "phase2_transport",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "phase3_transport",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "second_phase_is_transported_by_third_parent",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_parent_trace",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "trace_free_bilinear_identity",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "general_numerator_derivative_sign",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "activation_and_diffusion_determinant_sign",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "diffusion_Bj_sign",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "newest_temperature_inverse",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "newest_vorticity_inverse",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "converted_second_temperature_lower",
+      "passed": true,
+      "margin": "3/8000"
+    },
+    {
+      "name": "denominator_margin",
+      "passed": true,
+      "margin": "7340029/201326592"
+    },
+    {
+      "name": "first_phase_negative_horizontal",
+      "passed": true,
+      "margin": "3827/4096"
+    },
+    {
+      "name": "first_vorticity_upper_margin",
+      "passed": true,
+      "margin": "4194301/4194304"
+    },
+    {
+      "name": "first_temperature_lower_margin",
+      "passed": true,
+      "margin": "6815739/67108864"
+    },
+    {
+      "name": "h_upper_margin",
+      "passed": true,
+      "margin": "524283/2097152"
+    },
+    {
+      "name": "g_lower_margin_using_sqrt10_less4",
+      "passed": true,
+      "margin": "1/16"
+    },
+    {
+      "name": "g_upper_margin_using_sqrt20_less4_5",
+      "passed": true,
+      "margin": "1048501/2097152"
+    },
+    {
+      "name": "angular_forcing_arithmetic",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "angular_forcing_margin",
+      "passed": true,
+      "margin": "64"
+    },
+    {
+      "name": "angular_exponential_margin",
+      "passed": true,
+      "margin": "1/52"
+    },
+    {
+      "name": "revival_angle_first_exit_margin",
+      "passed": true,
+      "margin": "59/65536"
+    },
+    {
+      "name": "revival_vorticity_first_exit_margin",
+      "passed": true,
+      "margin": "1993/65536"
+    },
+    {
+      "name": "vorticity_integrand_margin_squared",
+      "passed": true,
+      "margin": "209/25"
+    },
+    {
+      "name": "log_length_arithmetic",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "log_length_strict_margin",
+      "passed": true,
+      "margin": "1221/524288"
+    },
+    {
+      "name": "second_length_log_margin",
+      "passed": true,
+      "margin": "65525/4194304"
+    },
+    {
+      "name": "newest_numerator_lower_margin",
+      "passed": true,
+      "margin": "5/384"
+    },
+    {
+      "name": "newest_numerator_upper_margin",
+      "passed": true,
+      "margin": "313/7560"
+    },
+    {
+      "name": "newest_buoyancy_lower_margin",
+      "passed": true,
+      "margin": "129/8192"
+    },
+    {
+      "name": "newest_buoyancy_upper_margin",
+      "passed": true,
+      "margin": "4081/32768"
+    },
+    {
+      "name": "newest_ratio_lower_inward_margin",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "newest_ratio_upper_inward_margin",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_transition_gain_lower_margin",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_transition_gain_upper_margin",
+      "passed": true,
+      "margin": "5/8"
+    }
+  ],
+  "total_checks": 58,
+  "files_sha256": {
+    "third_transition_body.tex": "e66bd7d0fb007a705538623a68253fb5cdc806fe86c4c6b62a00a752cc6fc258",
+    "replay_third_transition.py": "5217a3baa960c8477350581e63491a7b59347a75b964d9a9dc8da3411e371068"
+  },
+  "analytic_claims_proved_in": "third_transition_body.tex",
+  "numerical_trajectory_used": false,
+  "lean_used": false,
+  "third_shooting_return_proved": false,
+  "infinite_modified_viscous_sequence_proved": false
+}

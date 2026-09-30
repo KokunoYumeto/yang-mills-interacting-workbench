@@ -1,0 +1,584 @@
+\section{Compact spatial equations through the third threshold}
+\label{tgs:section}
+
+The third growth starts at the actual second return $t_b=t_2^b$.
+The preceding coefficient construction proves its actual crossing time
+$t_{a3}:=t_3^a>t_b$ in Theorem~\ref{tge:actual_threshold} of the
+original threshold. This section realizes that
+construction in the full equations, with the same physical diffusivity
+$d>0$ in both equations and the declared pressure $p=0$:
+\[
+\begin{aligned}
+ \theta_t+u\cdot\nabla\theta&=d\Delta\theta+f_\theta,\\
+ u_t+(u\cdot\nabla)u&=d\Delta u+\theta e_2+f_u,
+ &\operatorname{div}u&=0.
+\end{aligned}
+\]
+Every field is defined on $\mathbb R^2$ in the original coordinate $x$.
+Retain
+\[
+ J=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+ A_0\geq1,\quad\nu=\sqrt{A_0},\quad
+ \mu=\lambda_0=\lceil\sqrt{A_0}/2\rceil,\quad
+ K_j=\mu\widehat\lambda_j\quad(1\leq j\leq3).
+\]
+Here $\nu$ is the source time scale, not $d$. The hats distinguish
+the source frequencies from their physical multiples $K_j$.
+The released recursive frequency, source growth logarithm, inherited
+scales, angle, and activation are
+\begin{equation}\label{tgs:scales}
+ \begin{gathered}
+ \widehat\lambda_3=\widehat\lambda_2^{Q_3},\qquad
+ L_3=(k_3+5+1/8)\log\widehat\lambda_3,\qquad
+ s_3=L_3\sigma_1/\sigma_2,\qquad\Gamma_3=\sigma_2\sin s_3,\\
+ S_3=(\nu^2/\mu)\widehat\lambda_3^{-k_3-6},\qquad
+ P_3^*=S_3e^{L_3}=(\nu^2/\mu)\widehat\lambda_3^{-7/8},\qquad
+ w_3(t)=\eta(\Gamma_3(t-t_b)).
+ \end{gathered}
+\end{equation}
+The source step $\eta$ is smooth, nondecreasing, zero on
+$(-\infty,0]$, and one on $[1,\infty)$.
+The actual coefficient proof, rather than an inviscid comparison,
+supplies the following bounds through $t_{a3}$ and existence through
+the larger horizon $t_b+16/\sigma_1$:
+\begin{equation}\label{tgs:actualbounds}
+ \begin{gathered}
+ h_0\leq h<3,\quad 0<\Omega_1<9\sigma_1,\quad
+ 1/4<B\leq2,\quad a=\sin s_2\in(0,1/8],\quad
+ h_0=\cos s_2\geq\sqrt{63}/8,\\
+ \chi=(h^2+a^2)^{1/2},\quad r_1=1,\quad
+ 1\leq\chi^2<10,\quad 1\leq r_3^2\leq2,\quad
+ 0< -\Theta_3\leq P_3^*,\quad
+ |\Omega_3|\leq3K_3P_3^*/\sigma_2.
+ \end{gathered}
+\end{equation}
+The angle branch is the actual small source branch $0<s_2,s_3<1/8$.
+The old amplitudes remain the actual ones:
+\[
+ \Theta_1=-\sigma_1^2B/K_1,\qquad
+ \Omega_2=0,\qquad
+ \Theta_2(t)=-P_{2b}\exp\!\left[-dK_2^2
+                 \int_{t_b}^{t}\chi(r)^2\,dr\right],
+ \qquad0<P_{2b}\leq e^{18}P_2^*.
+\]
+These equations do not hold either old temperature fixed.
+
+\subsection{The exact third material flow and support inclusions}
+
+Put $\vartheta=\arctan(a/h)$ and write $h_b=h(t_b)$,
+$\vartheta_b=\vartheta(t_b)$. The actual held second feedback is
+\begin{equation}\label{tgs:parents}
+ \begin{gathered}
+ \alpha=s_*+\vartheta,\qquad
+ \dot h=a\Omega_1,\qquad
+ \dot\alpha=-a^2\Omega_1/\chi^2,\\
+ \zeta_1=(-a,h)/\chi,\qquad\zeta_2=(0,\chi),\\
+ G_{<3}=-A_0R_\alpha e_2+K_1\Theta_1\zeta_1
+                                  +K_2\Theta_2\zeta_2,\\
+ D_{<3}=\dot\alpha J+\Omega_1J\zeta_1\otimes\zeta_1.
+ \end{gathered}
+\end{equation}
+The second velocity increment is zero, but its scalar increment
+contributes the entire last term in $G_{<3}$.
+The closed older amplitude equations on this interval are
+\begin{equation}\label{tgs:olderpair}
+ \begin{aligned}
+ \dot\Theta_1&=\frac{A_0\sin s_*}{K_1}\Omega_1-dK_1^2\Theta_1,
+ &\dot\Omega_1&=-\frac{aK_1}{\chi}\Theta_1-dK_1^2\Omega_1,\\
+ \dot\Theta_2&=-dK_2^2\chi^2\Theta_2,
+ &\dot\Omega_2&=0.
+ \end{aligned}
+\end{equation}
+Indeed $-K_1\Theta_1=A_1$ in \eqref{tge:older_hold}
+gives the first equation, and $\zeta_{1,1}=-a/\chi$ in
+\eqref{ms:amplitudes} gives the second. The held identities
+$\Omega_2=\zeta_{2,1}=0$ give the remaining two equations.
+For $S(q)=\left(\begin{smallmatrix}1&-q\\0&1\end{smallmatrix}\right)$,
+the matrix in the exact geometry calculation is
+\begin{equation}\label{tgs:flow}
+ M_3(t)=R_\vartheta S((h-h_b)/a)R_{-\vartheta_b}
+       =M_2(t)M_2(t_b)^{-1},\qquad
+ \dot M_3=D_{<3}M_3,\qquad M_3(t_b)=I.
+\end{equation}
+Its determinant is one. Its inverse is
+$R_{\vartheta_b}S(-(h-h_b)/a)R_{-\vartheta}$.
+Indeed the rotation matrices have inverse rotations and
+$S(q)^{-1}=S(-q)$, while differentiating $S$ gives
+$\dot S=\Omega_1(J e_2\otimes e_2)S$.
+Since $\zeta_1=R_\vartheta e_2$, multiplication proves the ODE
+in \eqref{tgs:flow} directly, including its signs.
+Integrating $\dot h=a\Omega_1$ over $16/\sigma_1$ gives
+$0\leq(h-h_b)/a\leq144$. The elementary inequality
+$\|S(q)\|\leq1+|q|$, obtained from
+$S(q)=I-qe_1\otimes e_2$, proves
+\begin{equation}\label{tgs:matrixbounds}
+ \|M_3\|,\|M_3^{-1}\|\leq N_3:=145.
+\end{equation}
+Use the original unit insertion vector $p_3=e(s_3)$ and put
+$\zeta_3=M_3^{-T}p_3$. Differentiating this exact inverse proves
+$\dot\zeta_3=-D_{<3}^T\zeta_3$. Thus the moving phase and
+moving material envelope below are transported by the same actual
+older affine velocity, without changing the insertion coordinates.
+
+The released functions $F,P,f$ are retained without alteration:
+$F(s)=\sin s+\chi_F(s)(s-\sin s)$ on $[-\pi,\pi]$ and
+periodically extended, with $\chi_F$ smooth and even,
+$F(s)=s$ on $|s|\leq s_0$, $0<s_0<1$;
+$P'=F$, $P$ is even and periodic, and
+$\int_{-\pi}^{\pi}P=0$.
+The radial $f\in C_c^\infty(B_1)$ satisfies $0\leq f\leq1$
+and $f=1$ on $B_{1/2}$. In particular the constant $P(0)$
+on the affine cell is preserved. Keep the source radii
+\begin{equation}\label{tgs:radii}
+ \ell_1=\frac{s_0}{C_\ell\mu},\quad
+ \ell_2=\frac{\widehat\lambda_1^{-3}}\mu,\quad
+ \ell_3=\frac{\widehat\lambda_2^{-3}}\mu,\qquad C_\ell\geq4.
+\end{equation}
+Let $N=1+(3-h_0)/a$, so $\|M_2^{\pm1}\|\leq N$.
+The actual source frequency selection in \eqref{tge:Y3} proves
+the strict inequalities established in the
+\hyperref[tge:nesting]{exact third support nesting calculation}:
+\begin{equation}\label{tgs:nesting}
+ \begin{gathered}
+ N\widehat\lambda_1^{-3}<s_0/(2C_\ell),\qquad
+ N\widehat\lambda_1^{-2}<s_0,\\
+ 2N_3N\widehat\lambda_2^{-3}<\widehat\lambda_1^{-3},
+ \qquad N_3\sqrt{10}\widehat\lambda_2^{-2}<s_0.
+ \end{gathered}
+\end{equation}
+Here they have an exact spatial meaning. Put
+\[
+ y_3=M_3^{-1}x,\qquad g_3=f(y_3/\ell_3),\qquad
+ k_3^{\rm ph}=K_3\zeta_3,\qquad s_3^{\rm ph}=k_3^{\rm ph}\cdot x.
+\]
+The superscript distinguishes a phase vector and a phase variable
+from the source seed exponent $k_3$ and insertion angle $s_3$.
+On the support of any third increment or derivative,
+$|x|\leq N_3\ell_3$. Consequently
+\[
+ |M_2^{-1}x|\leq NN_3\ell_3<\ell_2/2,\qquad
+ |K_2\zeta_2\cdot x|\leq K_2\sqrt{10}N_3\ell_3<s_0.
+\]
+Thus the second envelope is one and its profile is exactly affine.
+Moreover $x=M_2y_2$ with $|y_2|<\ell_2/2$, whence
+$|x|<N\ell_2/2$. The first two inequalities in
+\eqref{tgs:nesting} imply $|x|<\ell_1/2$ and
+$|K_1\zeta_1\cdot x|<s_0$.
+This proves inclusion in the first affine cell as well.
+The base is affine there because $\mu\ell_1=s_0/C_\ell<s_0$.
+All inequalities are strict, so the identities hold on an open
+neighborhood of the supports; differentiating a force introduces
+no missing boundary term. The actual older fields are therefore
+exactly $G_{<3}\cdot x$ and $D_{<3}x$ at every point needed below.
+
+\subsection{Third fields and the entire scalar and vector forces}
+
+Write $k=k_3^{\rm ph}$, $\rho=|k|^2=K_3^2r_3^2$, $g=g_3$,
+$s=s_3^{\rm ph}$, $D=D_{<3}$, and $G=G_{<3}$ in this
+subsection only. The actual third pair satisfies
+\begin{equation}\label{tgs:pair}
+ \dot\Theta_3=-\frac{Jk\cdot G}{\rho}\Omega_3-d\rho\Theta_3,
+ \qquad\dot\Omega_3=k_1\Theta_3-d\rho\Omega_3.
+\end{equation}
+Define, with all one-variable profiles evaluated at $s$,
+\begin{equation}\label{tgs:fields}
+ T=w_3\Theta_3,\quad Q=\frac{w_3\Omega_3}{\rho},\quad
+ V_3=TFg,\quad\Psi_3=QPg,\quad
+ v_3=J\nabla\Psi_3=QJ(kFg+P\nabla g).
+\end{equation}
+For $t\leq t_b$ these three increments are defined to be zero.
+The flat activation and the smooth finite ODE solution make this
+zero extension smooth in space and time. On $[0,t_{a3}]$ set
+\[
+ \theta=\theta_b+V_1+V_2+V_3,\qquad
+ u=u_b+v_1+v_2+v_3,\qquad p=0.
+\]
+The base and first two increments are precisely those in
+\eqref{ms:base}--\eqref{ms:fields}, continued by their actual
+holding equations through the third growth. The initial data
+remain exactly
+$\theta(x,0)=-(A_0/\mu)\sin(\mu x_2)\chi_0(x)$ and $u(x,0)=0$.
+Define
+\begin{equation}\label{tgs:Qrest}
+ Q_* =\frac{\dot w_3\Omega_3+w_3k_1\Theta_3}{\rho}
+                         -Q\frac{\dot\rho}{\rho},\qquad
+ \dot\rho=-2k\cdot D^Tk.
+\end{equation}
+Then $\dot Q=Q_*-d\rho Q$, including the varying phase length.
+The complete third scalar and full vector force increments are
+\begin{align}
+ E_{\theta,3}={}&\dot w_3\Theta_3Fg+QP(J\nabla g\cdot G)
+       +QT(F^2-PF')g(Jk\cdot\nabla g)\nonumber\\
+ &-dT\{\rho(F+F'')g+2F'k\cdot\nabla g+F\Delta g\},
+ \label{tgs:scalar}\\
+ E_{u,3}={}&2Dv_3+Q_*J(kFg+P\nabla g)
+        +(\nabla v_3)v_3-TFg e_2-d(\rho v_3+\Delta v_3).
+ \label{tgs:vector}
+\end{align}
+In components, every derivative required in these formulas is
+\begin{align}
+ \nabla v_3={}&QJ\{k\otimes k F'g
+       +F(k\otimes\nabla g+\nabla g\otimes k)+P\nabla^2g\},
+ \label{tgs:velocityjet}\\
+ \Delta V_3={}&T\{\rho F''g+2F'k\cdot\nabla g+F\Delta g\},
+ \label{tgs:scalarLaplacian}\\
+ \Delta v_3={}&QJ\{\rho kF''g+\rho F'\nabla g
+       +2F'k(k\cdot\nabla g)+2F(\nabla^2g)k\nonumber\\
+ &\hspace{38mm}+Fk\Delta g+P\nabla\Delta g\}.
+ \label{tgs:vectorLaplacian}
+\end{align}
+The total forces are
+\begin{equation}\label{tgs:totalforce}
+ f_\theta=f_{\theta,b}+\sum_{j=1}^3E_{\theta,j},\qquad
+ f_u=f_{u,b}+\sum_{j=1}^3E_{u,j},
+\end{equation}
+with the exact base and old increments of
+\eqref{ms:scalar}--\eqref{ms:baseforce} evaluated at the actual
+continued coefficients. There is no change of pressure hidden in
+the vector formula.
+
+\begin{proof}[Proof of both equations and every interaction direction]
+For $\mathcal D=\partial_t+Dx\cdot\nabla$,
+\eqref{tgs:flow} and its inverse give
+$\mathcal D(M_3^{-1}x)=0$, and the phase equation gives
+$\mathcal D(k\cdot x)=0$. Hence $\mathcal Dg=0$,
+$\mathcal DV_3=\dot T Fg$, and $\mathcal D\Psi_3=\dot QPg$.
+Subtracting the old scalar equation from the new one gives
+$\dot T Fg+v_3\cdot G+v_3\cdot\nabla V_3-d\Delta V_3$.
+The two exact contractions are
+\[
+ v_3\cdot G=QFg(Jk\cdot G)+QP(J\nabla g\cdot G),\qquad
+ v_3\cdot\nabla V_3=QT(F^2-PF')g(Jk\cdot\nabla g).
+\]
+Substitution of \eqref{tgs:pair} cancels the first contraction
+against the coupling in $\dot T$ and proves \eqref{tgs:scalar}.
+
+Since $\operatorname{tr}D=0$, direct multiplication gives
+$DJ+JD^T=0$. Therefore
+$\mathcal D(J\nabla\Psi_3)=Dv_3+J\nabla(\mathcal D\Psi_3)$.
+The reverse interaction is $(v_3\cdot\nabla)(Dx)=Dv_3$.
+Together with self-advection, buoyancy, and diffusion, this proves
+\eqref{tgs:vector} after substituting \eqref{tgs:Qrest}.
+The ordinary product rule proves
+\eqref{tgs:velocityjet}--\eqref{tgs:vectorLaplacian}; in particular
+the last display contains all phase, envelope, and mixed terms.
+
+The operator $\mathcal D$ uses the full old velocity $u_b+v_1+v_2$,
+which equals $Dx$ on the third support. It accounts for
+$(u_b+v_1+v_2)\cdot\nabla V_3$ and
+$(u_b+v_1+v_2)\cdot\nabla v_3$.
+The contractions with $G$ and $D$ account for
+$v_3\cdot\nabla(\theta_b+V_1+V_2)$ and
+$v_3\cdot\nabla(u_b+v_1+v_2)$.
+Although $v_2=0$, $v_3\cdot\nabla V_2$ generally is not zero;
+it is exactly the $K_2\Theta_2\zeta_2$ part of $v_3\cdot G$.
+The earlier increments already account for interactions among
+the base and first two layers. Outside a third support all its
+derivatives vanish. Adding these identities therefore proves
+\eqref{tgs:totalforce} globally, with every ordered pair counted
+once. Finally each velocity is a rotated gradient, so mixed
+partial symmetry proves $\operatorname{div}u=0$.
+\end{proof}
+
+For the exact coordinate correspondence put
+$C_3=M_3^{-1}M_3^{-T}$ and $\widetilde g(y)=f(y/\ell_3)$.
+The spatial gradient and Laplacian pulled back to $(s,y)$ are
+\begin{equation}\label{tgs:metric}
+ \begin{split}
+ \mathcal P_3&=K_3\zeta_3\partial_s+M_3^{-T}\nabla_y,\\
+ \mathcal L_3&=K_3^2r_3^2\partial_s^2
+       +2K_3(C_3p_3\cdot\nabla_y)\partial_s
+       +\sum_{l,m}(C_3)_{lm}\partial_{y_l}\partial_{y_m}.
+ \end{split}
+\end{equation}
+The chain rule gives the first identity, and multiplying its
+commuting spatial derivatives gives the second. In particular
+$k\cdot\nabla_xg=K_3(C_3p_3)\cdot\nabla_y\widetilde g$ and
+$\Delta_xg=\operatorname{tr}(C_3\nabla_y^2\widetilde g)$.
+This proves the original-coordinate meaning of all mixed terms,
+without imposing a scalar metric or a fixed cutoff.
+
+\subsection{All spatial derivative norms and diffusion costs}
+
+For any scalar, vector, or tensor $U$, set
+$|U|_m=\sup_x\|D_x^mU(x)\|$ in the Euclidean multilinear
+operator norm, $m\geq0$. For one-variable $W$ set
+$[W]_m=\sup_s|W^{(m)}(s)|$, and set
+$f_m=\sup_y\|D^mf(y)\|$.
+Define only explicit, finite constants
+\begin{align}
+ \kappa_3^*&=\sqrt2K_3,&
+ e_{3,m}&=(N_3/\ell_3)^mf_m,\nonumber\\
+ \mathcal B_{3,m}(W)&=\sum_{q=0}^m\binom mq
+                (\kappa_3^*)^q[W]_qe_{3,m-q},&
+ \mathcal C_{3,m}(P)&=\sum_{q=0}^m\binom mq
+                (\kappa_3^*)^q[P]_qe_{3,m-q+1}.
+ \label{tgs:normdefinitions}
+\end{align}
+The symbol $\kappa_3^*$ is a frequency bound, not a diffusivity.
+Repeated product and chain rules prove
+\[
+ |g_3|_m\leq e_{3,m},\qquad
+ |W(s_3^{\rm ph})g_3|_m\leq\mathcal B_{3,m}(W),\qquad
+ |P(s_3^{\rm ph})\nabla g_3|_m\leq\mathcal C_{3,m}(P).
+\]
+Indeed choose the $q$ of $m$ directional derivatives assigned to
+the profile, producing $\binom mq$ terms, each bounded by the
+corresponding summand. The derivative of a linear phase is $k$,
+and that of $M_3^{-1}x/\ell_3$ is $M_3^{-1}/\ell_3$;
+their higher spatial derivatives vanish. This proves the stated
+operator norm bounds for arbitrary directions.
+
+The actual coefficient bounds give
+\begin{equation}\label{tgs:coefficientbounds}
+ \begin{gathered}
+ U_\Theta=P_3^*,\qquad U_\Omega=3K_3P_3^*/\sigma_2,
+ \qquad W_1=\Gamma_3[\eta']_0,\\
+ D^*=9\sigma_1(1+a^2),\qquad
+ G^*=A_0+2\sigma_1^2+\sqrt{10}K_2e^{18}P_2^*,\\
+ Q^*=\frac{U_\Omega}{K_3^2},\qquad
+ Q_*^*=\frac{W_1U_\Omega+\kappa_3^*U_\Theta+2D^*U_\Omega}{K_3^2}.
+ \end{gathered}
+\end{equation}
+In fact $\|D\|\leq|\dot\alpha|+\Omega_1$ and
+$|\dot\alpha|=a^2\Omega_1/\chi^2\leq9a^2\sigma_1$,
+which prove the bound for $D$. The three summands in $G$
+give its bound. The denominator $\rho\geq K_3^2$ and
+$|\dot\rho/\rho|\leq2D^*$ prove the bounds for $Q,Q_*$.
+In particular activation contributes its exact physical factor
+$\Gamma_3[\eta']_0$ to both forces.
+
+The full damping-plus-diffusion costs are bounded by
+\begin{align}
+ \mathcal D_{\theta,3,m}
+ &=dU_\Theta\{(\kappa_3^*)^2\mathcal B_{3,m}(F)
+                              +2\mathcal B_{3,m+2}(F)\},\nonumber\\
+ \mathcal D_{u,3,m}
+ &=dQ^*\{(\kappa_3^*)^2\mathcal B_{3,m+1}(P)
+                              +2\mathcal B_{3,m+3}(P)\}.
+ \label{tgs:diffusioncosts}
+\end{align}
+These include $-d\rho V_3$ and $-d\rho v_3$ from modal
+damping as well as the Laplacians of the changed fields.
+The factor two bounds the two coordinate traces defining
+$\Delta$ in dimension two. Keeping this factor explicitly avoids
+identifying a Laplacian with a single second derivative.
+The complete third force estimates are
+\begin{align}
+ |E_{\theta,3}|_m\leq{}&W_1U_\Theta\mathcal B_{3,m}(F)
+           +Q^*G^*\mathcal C_{3,m}(P)+\mathcal D_{\theta,3,m}
+ \nonumber\\
+ &+Q^*U_\Theta\sum_{q=0}^m\binom mq
+       \mathcal B_{3,q+1}(P)\mathcal B_{3,m-q+1}(F),
+ \label{tgs:scalarcost}\\
+ |E_{u,3}|_m\leq{}&(2D^*Q^*+Q_*^*)\mathcal B_{3,m+1}(P)
+           +U_\Theta\mathcal B_{3,m}(F)+\mathcal D_{u,3,m}
+ \nonumber\\
+ &+(Q^*)^2\sum_{q=0}^m\binom mq
+       \mathcal B_{3,q+1}(P)\mathcal B_{3,m-q+2}(P).
+ \label{tgs:vectorcost}
+\end{align}
+The nonlinear scalar term is bounded as $v_3\cdot\nabla V_3$,
+and the nonlinear vector term as $(\nabla v_3)v_3$.
+The product rule with the displayed allocation of derivatives
+proves the two sums. All other terms follow individually from
+\eqref{tgs:scalar}--\eqref{tgs:vectorLaplacian} and
+\eqref{tgs:normdefinitions}; hence the estimates include every
+activation, parent-interaction, self-interaction, buoyancy and
+diffusion term in the full vector equation.
+For time integrals one has, in particular,
+\begin{equation}\label{tgs:integratedcost}
+ \int_{t_b}^{t_{a3}}|\text{third damping-plus-diffusion force}|_m\,dt
+ \leq\frac{16}{\sigma_1}\mathcal D_{\bullet,3,m},
+\end{equation}
+with the matching scalar or vector bound. The identical physical
+length factor integrates either full-force estimate.
+
+All frequency and localization dependences are retained:
+\begin{equation}\label{tgs:frequencycost}
+ \frac{N_3}{\ell_3}=145\mu\widehat\lambda_2^3,
+ \quad\kappa_3^*=\sqrt2\mu\widehat\lambda_3,
+ \quad dU_\Theta K_3^2=d\nu^2\mu\widehat\lambda_3^{9/8},
+ \quad dQ^*K_3^3=\frac{3d\nu^2\mu}{\sigma_2}
+                      \widehat\lambda_3^{9/8}.
+\end{equation}
+The last two equalities identify coefficients occurring in the
+costs, not lower bounds for the entire forces. No cancellation of
+unrelated vector terms has been assumed. The finite positive-$d$
+range from the actual coefficient theorem is not replaced here by
+a bound uniform over an infinite frequency sequence.
+
+For completeness, the bounds for the old and base forces remain
+fully quantitative on the slab ending at the third threshold. The formulas
+\eqref{ms:Bnorm}--\eqref{ms:fullvectornorm} hold with the original
+$N_1=1,N_2=N$, radii, and global amplitude bounds
+\eqref{ms:amplitudebounds}; on the added interval the sharper
+$|\Theta_1|\leq2\sigma_1^2/K_1$, $|\Omega_1|\leq9\sigma_1$,
+$|\Theta_2|\leq e^{18}P_2^*$, $\Omega_2=0$ prove their continued
+validity. If $A_1^{\rm old},A_2^{\rm old}$ are the explicit earlier
+control derivative bounds, one may use the following bounds on this slab:
+\begin{equation}\label{tgs:oldcontrolbounds}
+ \begin{split}
+ A_1^{\rm ext}&=\max\{A_1^{\rm old},9a^2\sigma_1\},\\
+ A_2^{\rm ext}&=\max\{A_2^{\rm old},
+              a^2(4\sigma_1^2+9dK_1^2\sigma_1)
+                         +486a^3\sigma_1^2\}.
+ \end{split}
+\end{equation}
+To verify the second number, the holding equations give
+$\dot\Omega_1=\sigma_1^2aB/\chi-dK_1^2\Omega_1$,
+so $|\dot\Omega_1|\leq4\sigma_1^2+9dK_1^2\sigma_1$.
+Differentiating $\dot\alpha=-a^2\Omega_1/\chi^2$ and using
+$\dot\chi^2=2ha\Omega_1$, $h<3$, and $\chi^2\geq1$
+gives the stated additional term $486a^3\sigma_1^2$.
+Substitution into the explicit base norms \eqref{ms:basenorm}
+and old force norms completes the estimates for both total forces
+in \eqref{tgs:totalforce}, at every spatial order. Their integrals
+use this slab's actual interval length $t_{a3}$.
+
+\subsection{Mixed derivatives, affine core, and the threshold state}
+
+No stationary-envelope convention is used to estimate time
+derivatives. Set $A(t)=M_3(t)^{-1}/\ell_3$, introduce independent
+variables $(t,x,s,y)$, and define
+\begin{equation}\label{tgs:jetoperators}
+ \mathfrak T=\partial_t+(\dot k\cdot x)\partial_s
+                       +(\dot A x)\cdot\nabla_y,\qquad
+ \mathfrak X_i=\partial_{x_i}+k_i\partial_s
+                       +\sum_lA_{li}\partial_{y_l}.
+\end{equation}
+For $\iota^*R=R(t,x,k(t)\cdot x,A(t)x)$, the chain rule gives
+\begin{equation}\label{tgs:jetidentity}
+ \partial_t^b\partial_x^\gamma\iota^*R
+   =\iota^*(\mathfrak T^b\mathfrak X_1^{\gamma_1}
+                              \mathfrak X_2^{\gamma_2}R).
+\end{equation}
+Induction on $b+|\gamma|$ proves this equality. The commutators
+vanish: $\dot k_i$ cancels the $x_i$ derivative of
+$\dot k\cdot x$, and $\dot A_{li}$ cancels the corresponding
+derivative of $\dot A x$. This also proves consistency of the
+order of mixed derivatives.
+Apply these operators to the exact third fields and forces,
+starting for example with $Q(t)P(s)f(y)$ for the streamfunction.
+Every resulting term is a finite product of coefficient jets,
+explicit powers $x^\beta$, profile derivatives, and envelope
+derivatives. Its absolute value is bounded by replacing those
+factors by their coefficient suprema on $[t_b,t_{a3}]$,
+$(N_3\ell_3)^{|\beta|}$, $[P]_q,[F]_q$, and $f_m$,
+then summing all terms produced by \eqref{tgs:jetidentity}.
+The coefficient jets themselves are evaluated recursively by
+\eqref{tgs:parents}, \eqref{tgs:olderpair},
+\eqref{tgs:flow}, \eqref{tgs:pair}, and
+the explicit activation. Product and quotient rules, in increasing
+time order, use only the positive denominators
+$a,K_3,\chi^2,\rho$ and the fixed source scales.
+Their lower bounds in \eqref{tgs:actualbounds} therefore yield
+a finite explicit bound at every prescribed mixed order. The same
+recursion from \eqref{ms:jetops}--\eqref{ms:jetpullback} handles
+the base and old layers with the extended control bounds. This
+procedure includes every time derivative of the diffusion terms
+and of the changing material metric.
+
+On a third affine cell, where $g_3=1$ and $|s_3^{\rm ph}|<s_0$,
+the retained primitive is exactly $P(s)=P(0)+s^2/2$. Thus
+$\Psi_3=Q(P(0)+s^2/2)$ there; taking its gradient, with the
+original constant still present in the full cutoff formula, gives
+\begin{equation}\label{tgs:affinecell}
+ V_3=T K_3\zeta_3\cdot x,\qquad
+ v_3=\frac{w_3\Omega_3}{r_3^2}
+                  J\zeta_3\otimes\zeta_3\,x,
+ \qquad\Delta V_3=\Delta v_3=0.
+\end{equation}
+The damping parts of the forces are still
+$-dK_3^2r_3^2 V_3$ and $-dK_3^2r_3^2 v_3$ there.
+On an uncut sine-profile region instead, $F''=-F$ makes these
+damping-plus-diffusion contributions zero exactly. The remaining
+vector terms in \eqref{tgs:vector} are retained at $p=0$.
+This proves precisely how the actual damped pair maps into the
+released profile; it is not an unforced eigenfunction assertion.
+
+At the actual third threshold,
+\[
+ \Theta_3(t_{a3})=-P_3^*,\qquad \Omega_3(t_{a3})<0,
+\]
+with the exact phase $M_3(t_{a3})^{-T}e(s_3)$, the exact moving
+cutoff, and $w_3(t_{a3})=1$. The last equality follows from
+\[
+ \Gamma_3(t_{a3}-t_b)>L_3/3>1,
+\]
+proved in
+Theorem~\ref{tge:actual_threshold}.
+In the common affine cell the complete fields are
+\begin{equation}\label{tgs:thresholdfields}
+ \theta=(G_{<3}+w_3K_3\Theta_3\zeta_3)\cdot x,
+ \qquad
+ u=\left(D_{<3}+\frac{w_3\Omega_3}{r_3^2}
+                       J\zeta_3\otimes\zeta_3\right)x.
+\end{equation}
+These are actual states of the full PDE just proved. The third
+vorticity has not returned to zero at this threshold; no third
+steering or return statement follows from the growth calculation.
+
+\subsection{Smooth finite-slab realization and honest force continuation}
+
+Let $R_{\rm base}$ denote the original spatial support radius
+called $R_H$ in \eqref{ms:base}, as distinct from the temporal
+horizon $16/\sigma_1$ of the third-growth construction.
+The fields and forces are smooth and spatially supported in the
+same $B_{R_{\rm base}}$ as the base. All third derivatives are supported
+within $|x|\leq N_3\ell_3$; the proved inclusions put this ball
+inside the old base support. The velocity has finite energy since
+it is smooth and compact. For
+$N_0(x)=(2\pi)^{-1}\log|x|$, the compact smooth streamfunction
+$\psi=\psi_b+\Psi_1+\Psi_2+\Psi_3$ satisfies
+$N_0*\Delta\psi=(\Delta N_0)*\psi=\psi$ by distributional
+integration by parts. Applying $J\nabla$ gives exactly
+$u=J\nabla N_0*\omega$, $\omega=\Delta\psi$.
+Odd $F$, even $P$, and even material envelopes give odd
+$\theta,u,f_\theta,f_u$ and even $\omega$.
+
+There is a smooth right collar at the threshold. The actual
+coefficient theorem continues the same $F_2$ growth equations
+through $t_b+16/\sigma_1$, with $t_{a3}$ strictly before that
+horizon. By \eqref{tge:times} its remaining interval exceeds
+$2/\sigma_1$. Choose the explicit positive collar length
+$\epsilon_R=1/\sigma_1$.
+Continue the exact coefficient solution and fields to
+$t_{a3}+\epsilon_R$; do not freeze their nonstationary endpoint.
+The upper rate in \eqref{tge:gain_rate} holds on that entire
+horizon, as does the quotient bound \eqref{tge:quotient}.
+Consequently on the collar one has the explicit bounds
+\begin{equation}\label{tgs:collaramplitudes}
+ -\Theta_3\leq e^{3\Gamma_3/\sigma_1}P_3^*,\qquad
+ |\Omega_3|\leq
+       \frac{3K_3}{\sigma_2}e^{3\Gamma_3/\sigma_1}P_3^*.
+\end{equation}
+Indeed integrate $(\log(-\Theta_3))'<3\Gamma_3$ from the
+threshold to each collar time and then use the quotient bound.
+All spatial collar costs therefore follow from
+\eqref{tgs:coefficientbounds}--\eqref{tgs:vectorcost} by replacing
+$U_\Theta,U_\Omega$ by the right sides of
+\eqref{tgs:collaramplitudes}; the same coefficient-jet recursion
+proves the mixed costs. This does not impose the pre-threshold
+bound $-\Theta_3\leq P_3^*$ after the crossing.
+The strict support inequalities continue on the proved horizon.
+Extend the original initial state constantly to the left of zero,
+with zero angle and inactive increments as before, and put
+$\epsilon_L=1/\nu$.
+Multiplying the extended total residual forces by
+\begin{equation}\label{tgs:timecutoff}
+ \beta(t)=\eta(1+t/\epsilon_L)
+                  \eta(1+(t_{a3}-t)/\epsilon_R)
+\end{equation}
+leaves them exactly unchanged on $[0,t_{a3}]$ and makes them
+smooth and compact in time as well as space. Flatness at the two
+outer endpoints proves smoothness of their zero extensions.
+Every additional mixed derivative follows from the ordinary
+product rule, with the explicit factors
+$\epsilon_L^{-b}[\eta^{(b)}]_0$ and
+$\epsilon_R^{-b}[\eta^{(b)}]_0$.
+The spatial fields solve the prescribed equations on the required
+slab $[0,t_{a3}]$; no equation outside that slab is asserted after
+the force cutoff. This proves the complete compact realization
+through the actual third threshold and retains the precise finite
+scope of the result.

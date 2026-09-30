@@ -1,0 +1,125 @@
+\section{Finite quantitative source-chart orders for the retained third seed}
+\label{qext:setup}
+Fix one retained band, with
+\[
+0<Q\le1,\quad\varepsilon=Q^h,\quad A=\frac12+h,\quad D=\frac12-h,
+\qquad r=\sqrt Q\,R,\quad z=Q^D Z .
+\]
+Here \(A_0>0\), \(\lambda _0\), and \(\mu=\lambda _0\) retain their original
+values.  The source clock \(\nu=\sqrt{A_0}\) is distinct from the physical
+viscosity \(\nu_{\rm NS}>0\).  The actual third seed and target are
+\[
+S_3=\frac{A_0}{\mu}\widehat\lambda _3^{-k_3-6},\quad
+\Theta_3(t_3^{\rm in})=-S_3,\quad
+-\Theta_3(t_3^a)=S_3e^{L_3}
+=\frac{A_0}{\mu}\widehat\lambda _3^{-7/8},\quad
+L_3=(k_3+\tfrac{41}{8})\log\widehat\lambda _3 .
+\]
+The last equality follows by adding the exact exponents
+\(-k_3-6+k_3+41/8=-7/8\).  All constants below are finite maxima along
+the actual \((\Theta_3,\Omega_3,\zeta_3)\) coefficient path and its actual
+parent matrices; no endpoint or sign substitution is made.
+
+\subsection{Physical curl and axial derivative}
+For each retained harmonic let
+\[
+t_j=\chi_jB_jL_jy_3,\quad
+c_j=\frac{i\,n_{\Phi,j}\times t_j}{k_{\beta_j}m_j|n_{\Phi,j}|^2},\quad
+b_j=t_j+\operatorname{curl}_{*,\mathrm{coeff}}c_j,
+\]
+where the coefficient curl includes every cutoff, auxiliary chain,
+cylindrical \(R^{-1}\), and evolving-path derivative.  Put
+\[
+v_j=\Re(Q^{-A}b_je^{ik_{\beta_j}m_j\Phi_j}),\quad
+d_j=\partial_{Z_j}b_j+ik_{\beta_j}m_j(\partial_{Z_j}\Phi_j)b_j .
+\]
+For \(e=1,2\), put \(\alpha_e=(e+1)/4-A\). With \(\|a\|_e^2=\int R^e\langle|a|^2\rangle\,dR\),
+\[
+\|v_j\|_e\le Q^{(e+1)/4-A}\|b_j\|_e,\qquad
+\|\partial_zv_j\|_e\le Q^{(e+1)/4-A-D}\|d_j\|_e .
+\]
+The powers are exact chart powers; the real-part fields obey these finite
+upper bounds (a single pure nonzero harmonic has the sharper factor
+\(2^{-1/2}\)).  Thus
+\[
+\begin{array}{c|cc}
+e&\text{factor multiplying }\|b_j\|_e&\text{factor multiplying }\|d_j\|_e\\ \hline
+2&Q^{1/4-h}&Q^{-1/4}\\
+1&Q^{-h}=\varepsilon^{-1}&Q^{-1/2}
+\end{array}
+\]
+as the factors multiplying the actual coefficient norms in the preceding bounds, before summing the finite retained harmonics.
+
+\subsection{Flux products and moments}
+Write separate old-parent orders
+\[
+\|w_{*,\tau}\|_e\le Q^{\omega_{e,\tau}}W_{e,\tau},\qquad
+\|\partial_zw_{*,\tau}\|_e\le Q^{\dot\omega_{e,\tau}}\dot W_{e,\tau},
+\quad \tau\in\{z,\theta\}.
+\]
+Put \(B_{j,e,\tau}=\|b_{j,\tau}\|_e\) and
+\(D_{j,e,\tau}=\|d_{j,\tau}\|_e\).  Cauchy--Schwarz in the original
+\(r^e dr\,d\theta\,dY\) measure gives the separate old--new terms
+\[
+\begin{aligned}
+|J_{2,\mathrm{old}\times v}|&\le Q^{\alpha_2}\bigl(Q^{\omega_{2,z}}W_{2,z}B_{j,2,\theta}
+ +Q^{\omega_{2,\theta}}W_{2,\theta}B_{j,2,z}\bigr),\\
+|M_{2,\mathrm{old}\times v}|&\le Q^{\dot\omega_{2,z}+\alpha_2}\dot W_{2,z}B_{j,2,\theta}
+ +Q^{\omega_{2,z}+\alpha_2-D}W_{2,z}D_{j,2,\theta}\\
+&\quad +Q^{\dot\omega_{2,\theta}+\alpha_2}\dot W_{2,\theta}B_{j,2,z}
+ +Q^{\omega_{2,\theta}+\alpha_2-D}W_{2,\theta}D_{j,2,z},\\
+|J_{1,\mathrm{old}\times v}|&\le 2Q^{\alpha_1+\omega_{1,z}}W_{1,z}B_{j,1,z},\\
+|M_{1,\mathrm{old}\times v}|&\le 2Q^{\dot\omega_{1,z}+\alpha_1}\dot W_{1,z}B_{j,1,z}
+ +2Q^{\omega_{1,z}+\alpha_1-D}W_{1,z}D_{j,1,z}.
+\end{aligned}
+\]
+The factors (1,2) are finite majorants from
+\(|\operatorname{Re}z|\le|z|\); for a single pure harmonic they may be
+replaced by the exact Gram factors.  The new quadratic terms are
+\[
+|J_{2,\mathrm{quad}}|\le Q^{2\alpha_2}B_{j,2,z}B_{j,2,\theta},\quad
+|M_{2,\mathrm{quad}}|\le Q^{2\alpha_2-D}(D_{j,2,z}B_{j,2,\theta}+B_{j,2,z}D_{j,2,\theta}),
+\]
+\[
+|J_{1,\mathrm{quad}}|\le Q^{2\alpha_1}B_{j,1,z}^2,\qquad
+|M_{1,\mathrm{quad}}|\le 2Q^{2\alpha_1-D}B_{j,1,z}D_{j,1,z}.
+\]
+Substituting \(A=\tfrac12+h\), \(D=\tfrac12-h\), the quadratic powers are
+\[
+J_2:Q^{1/2-2h},\quad M_2:Q^{-h}=\varepsilon^{-1},\qquad
+J_1:Q^{-2h}=\varepsilon^{-2},\quad M_1:Q^{-1/2-h}.
+\]
+These are finite norm majorants, not asymptotic source theorems; old-parent
+orders remain the explicit \(\omega\) and \(\dot\omega\) symbols above.
+The old field and old derivative orders stay independent in all four cross terms. No equal-order cross-term table is inferred from the quadratic powers.
+
+The evaluated-phase correction remains the exact map
+\[
+M_e^{\rm ev}-M_e=\partial_z\int r^e
+ \mathcal S^\circ_{z,\tau_e}(r,z,t,Y(r,t))\,dr,\qquad
+ \langle\mathcal S^\circ\rangle_Y=0 .
+\]
+Define the finite normalized derivative majorant
+\[
+C_e^\circ(Z,T)=\int_0^\infty R^e\sup_Y
+ \left|\partial_Z\bigl[Q^{2A}(\mathcal S^\circ_{z,\tau_e})^Q\bigr](R,Z,T,Y)\right|\,dR .
+\]
+The direct physical change of variables gives the exact finite envelope
+\[
+|M_e^{\rm ev}-M_e|\le Q^{(e+1)/2-2A-D}C_e^\circ(Z,T)
+ =Q^{e/2-2A+h}C_e^\circ(Z,T).
+\]
+The zero auxiliary mean therefore does not cancel the evaluated flux.  This
+uses the already differentiated normalized chart stress and introduces no
+unsupported product of two stress norms.
+
+\subsection{Retained viscosity}
+The viscous term is the physical \(\nu_{\rm NS}\Delta v_j\).  In this chart
+its radial, axial and angular costs carry \(Q^{-1}\), \(Q^{-2D}=Q^{-1+2h}\),
+and \(Q^{-1}R^{-2}\), respectively, including the cylindrical
+\(2R^{-2}\partial_\theta v_r\) coupling.  Thus no source \(\varepsilon\)
+or clock \(\nu=\sqrt{A_0}\) is substituted for \(\nu_{\rm NS}\).  These
+finite identities propagate the actual signed third seed and coefficient
+path through \(v,\partial_zv,J_2,J_1,M_2,M_1\), while making no assertion
+about a uniform \(Q\downarrow0\) endpoint.
+\label{qext:conclusion}

@@ -1,0 +1,325 @@
+\section{Actual third-growth budgets in the physical curl and force}
+\label{tgq:section}
+We now use the actual third-growth pair and the original source frame
+of the preceding calculations, with the direct coefficient choice
+$L=I_2$. This fixes a particular candidate within the earlier general
+bridge. All source band, box, sign and nonzero harmonic indices below
+are retained, and only a finite collection is used on the present compact
+interior patch. The cutoff of each term has compact support inside its
+source rectangle and active annulus, with smooth extension by zero.
+The original coupled datum, its selected return time $t_b$ and its
+growth duration $r_a$ are fixed before assigning these source labels;
+they have no dependence on the source spatial or auxiliary variables.
+The source time and the coupled time have the exact dictionary proved
+above:
+\[
+ t_{c,j}=t_b+\alpha_jv_j,\qquad
+ \alpha_j=\frac{r_a}{L_{s,j}},\qquad
+ \nabla_x t_{c,j}=0,\qquad
+ \partial_t t_{c,j}=\alpha_jQ_j^{-1-h}.
+\]
+These derivative identities concern the complete physical phase
+evaluation on each lifted rectangle. They remain valid when differentiating
+a field supported strictly inside that rectangle: the field vanishes on
+a collar where its extension would otherwise be needed.
+
+Write $P(t_c)=-\Theta_3(t_c)$, $u(t_c)=\Omega_3(t_c)/\Theta_3(t_c)$.
+The actual finite third growth gives
+\[
+ S_3\le P\le P_3^*,\qquad
+ \frac{u_i}{\sqrt2}\le u\le2u_i,\qquad
+ u_i=\sqrt{b_i/a_i}=\frac{K_3}{\sigma_2\sqrt{n_i}},
+ \qquad \gamma_i=\sqrt{a_ib_i}.
+\]
+The original quantities remain
+\[
+ K_3=\mu\widehat\lambda_3,\qquad
+ S_3=\frac{A_0}{\mu}\widehat\lambda_3^{-k_3-6},\qquad
+ P_3^*=\frac{A_0}{\mu}\widehat\lambda_3^{-7/8},\qquad
+ \nu=\sqrt{A_0}.
+\]
+In particular the following two component budgets have different
+original frequency powers:
+\begin{equation}
+ \begin{split}
+ Y_1&=P_3^*=\frac{A_0}{\mu}\widehat\lambda_3^{-7/8},\\
+ Y_2&=2u_iP_3^*
+      =\frac{2A_0}{\sigma_2\sqrt{n_i}}\widehat\lambda_3^{1/8},\\
+ V_1&=2\gamma_iP_3^*,\qquad
+ V_2=\gamma_i u_iP_3^*
+      =\frac{\gamma_i A_0}{\sigma_2\sqrt{n_i}}
+                       \widehat\lambda_3^{1/8}.
+ \end{split}\label{tgq:budgets}
+\end{equation}
+Here the indices $1,2$ mean the two amplitude components, not physical
+vector directions or radial moment weights. The derivative calculation
+above proves
+$|y_a(t_c)|\le Y_a$ and $|\dot y_a(t_c)|\le V_a$ on the entire
+original interval, including its original negative seed.
+For the second component at the actual threshold, the sharper two-sided
+conclusion is
+\[
+ \frac{A_0}{\sigma_2\sqrt{2n_i}}\widehat\lambda_3^{1/8}
+ \le |\Omega_3(t_3^a)|
+ \le \frac{2A_0}{\sigma_2\sqrt{n_i}}\widehat\lambda_3^{1/8}.
+\]
+All these identities follow by multiplying the original quotient bounds
+by $P$ and using $K_3=\mu\widehat\lambda_3$; the factor $\mu$ is
+canceled only in the explicitly displayed product $u_iP_3^*$, not
+removed from the underlying objects or their definitions.
+
+\subsection{Two complete spatial shape fields for each retained harmonic}
+\label{tgq:shapes}
+For harmonic $j$, retain $k_jm_j\ne0$, where $k_j$ is the source
+carrier and $m_j$ its integer harmonic. Neither equals the coupled
+integer $k_3$ by definition. Let $B_j$ be the source frame, $n_j$ its
+normal, and $\chi_j$ the full real slow, transverse and pulse cutoff.
+All are the original specified functions on that label. Put, for
+$a=1,2$ and the standard vectors $e_a\in\mathbb R^2$,
+\begin{equation}
+ \begin{split}
+ T_{ja}&=\chi_jB_je_a,\qquad
+ C_{ja}=\frac{i\,n_j\times T_{ja}}{k_jm_j|n_j|^2},\\
+ W_{ja}&=\operatorname{Re}
+       \bigl[(T_{ja}+\operatorname{curl}_{*,j,\mathrm{coeff}}C_{ja})
+                              e^{ik_jm_j\Phi_j}\bigr],\\
+ \varpi_{ja}
+  &=\operatorname{Re}\left[
+    \frac{i\{n_j^T\mathsf K_jT_{ja}-(n'_j)^TT_{ja}\}}
+                {k_jm_j|n_j|^2}\,e^{ik_jm_j\Phi_j}\right],\\
+ Z_{ja}&=Q_j^{-A}W_{ja},\qquad
+ \Pi_{ja}=Q_j^{-2A}\varpi_{ja},\qquad A=\tfrac12+h .
+ \end{split}\label{tgq:shape_def}
+\end{equation}
+Vectors in a cross product have their cylindrical components in the
+oriented orthonormal physical basis. The coefficient curl is the full
+operator from the preceding moment calculation. Equivalently,
+\[
+ Z_{ja}=\operatorname{Re}\operatorname{curl}_x
+      \bigl[Q_j^{1/2-A}C_{ja}e^{ik_jm_j\Phi_j}\bigr].
+\]
+The transverse triple product proves this equivalence, including every
+cutoff derivative. Thus each $Z_{ja}$ is a smooth compactly supported
+divergence-free physical vector field; the same divergence identity
+holds before auxiliary evaluation, with the commuting lifted
+derivatives. The pressure coefficient is linear in $T_{ja}$ and includes
+the full moving-normal term.
+
+The actual added physical fields, with the two original amplitudes,
+are exactly
+\begin{equation}
+ w_y=\sum_j\sum_{a=1}^2 y_a(t_{c,j}) Z_{ja},\qquad
+ \pi_y=\sum_j\sum_{a=1}^2 y_a(t_{c,j})\Pi_{ja}.
+ \label{tgq:factorization}
+\end{equation}
+Indeed $\nabla_xt_{c,j}=0$ gives
+$\operatorname{curl}(y_a(t_{c,j})\mathcal A)=
+y_a(t_{c,j})\operatorname{curl}\mathcal A$. It also gives
+$\nabla(y_a(t_{c,j})\Pi)=y_a(t_{c,j})\nabla\Pi$.
+The pressure formula in \eqref{tgq:shape_def} is linear, so it agrees
+with the selected pressure for the amplitude $\chi_jB_jy(t_{c,j})$.
+This proves \eqref{tgq:factorization}; in particular it does not discard
+a spatial derivative of a rapidly growing amplitude. That derivative
+has been calculated and is zero in these precise source coordinates.
+
+The exact spatial derivative is
+\[
+ \partial_zw_y=\sum_{j,a}Q_j^{-A-D}y_a(t_{c,j})
+          \partial_{Z_j}W_{ja},\qquad D=\tfrac12-h,
+\]
+where $\partial_{Z_j}W_{ja}$ differentiates its coefficient,
+its exponential phase and all source frame and cutoff factors.
+The absolute auxiliary evaluation map is independent of $z$.
+There is no derivative of the actual coupled time in this formula.
+
+\subsection{Quantitative radial moments with the original component powers}
+\label{tgq:moment_budgets}
+For a physical field $f$, use the precise norm
+\[
+ \|f\|_{[e]}^2=\int_0^\infty r^e\langle |f|^2\rangle\,dr,
+ \qquad e=1,2,
+\]
+with the normalized angular and auxiliary averages of the moment
+calculation. In a fixed band let
+$\|F\|_{[e],j}^2=\int R_j^e\langle|F|^2\rangle\,dR_j$.
+All norms are at the corresponding fixed slow axial coordinate and
+physical time. Define the actual finite shape budgets
+\begin{equation}
+ \begin{split}
+ \mathcal V_e&=
+  \sum_{j,a}Y_a Q_j^{(e+1)/4-A}\|W_{ja}\|_{[e],j},\\
+ \mathcal Z_e&=
+  \sum_{j,a}Y_a Q_j^{(e+1)/4-A-D}
+                              \|\partial_{Z_j}W_{ja}\|_{[e],j}.
+ \end{split}\label{tgq:shape_budgets}
+\end{equation}
+The factors $Y_1,Y_2$ are the two explicit original-frequency expressions
+in \eqref{tgq:budgets}, not a common unspecified constant. Triangle
+inequality, the pointwise amplitude bounds, and
+$r^e\,dr=Q_j^{(e+1)/2}R_j^e\,dR_j$ prove
+\[
+ \|w_y\|_{[e]}\le\mathcal V_e,\qquad
+ \|\partial_zw_y\|_{[e]}\le\mathcal Z_e .
+\]
+No orthogonality of distinct harmonics has been assumed in these bounds.
+One may evaluate every norm by the explicit source fields
+\eqref{tgq:shape_def}; compactness makes each finite.
+
+Let $w_*=u_*-\langle u_*\rangle_\theta$ be the actual old wave,
+including its curl corrections, and set
+\[
+ \mathcal W_e=\|w_*\|_{[e]},\qquad
+ \mathcal W_{e,z}=\|\partial_zw_*\|_{[e]},
+\]
+restricting the old-field radial integrals to a fixed enclosing support
+of the new fields and their derivatives. The exact moments already
+proved are
+\begin{align*}
+ M_2&=\partial_z\int r^2
+   \langle w_{*,z}w_{y,\theta}+w_{y,z}w_{*,\theta}
+                         +w_{y,z}w_{y,\theta}\rangle\,dr,\\
+ M_1&=\partial_z\int r
+   \langle2w_{*,z}w_{y,z}+w_{y,z}^2\rangle\,dr .
+\end{align*}
+Apply the product rule to every term and then Cauchy--Schwarz on its
+original weighted product measure. This gives the concrete simultaneous
+bounds
+\begin{equation}
+ |M_e|\le
+ 2\bigl(\mathcal W_{e,z}\mathcal V_e+
+         \mathcal W_e\mathcal Z_e+
+         \mathcal V_e\mathcal Z_e\bigr),\qquad e=1,2.
+ \label{tgq:moment_bound}
+\end{equation}
+For $M_2$, the first two cross products contribute one term each to
+each of the first two summands, and the self product contributes two
+terms to the last. For $M_1$ the explicit coefficient $2$ and the
+derivative of the square give exactly those same three coefficients.
+Thus \eqref{tgq:moment_bound} retains the complete cross-and-quadratic
+dependence on the original component budgets.
+
+\subsection{The full physical residual with all clock and diffusion costs}
+\label{tgq:full_residual}
+Fix the actual finite source state $(u_*,p_*)$ used in the bridge and
+an arbitrary physical viscosity $\nu_{\rm NS}>0$ in the residual.
+It remains distinct from the coupled $d$ and $\nu=\sqrt{A_0}$.
+Define the explicitly differentiated shape residual
+\[
+ \mathcal K_{ja}=
+ \partial_tZ_{ja}+(u_*\cdot\nabla)Z_{ja}
+ +(Z_{ja}\cdot\nabla)u_*-\nu_{\rm NS}\Delta Z_{ja}+\nabla\Pi_{ja}.
+\]
+With $C_3(t_c)=
+\begin{pmatrix}-dK_3^2R_3&a_3\\ b_3&-dK_3^2R_3\end{pmatrix}$,
+the full residual increment of \eqref{tgq:factorization} is
+\begin{equation}
+ \begin{split}
+ \Delta R_y={}&
+ \sum_{j,a} y_a(t_{c,j})\mathcal K_{ja}\\
+ &+\sum_{j,a}\alpha_jQ_j^{-1-h}
+                   (C_3y)_a(t_{c,j})Z_{ja}\\
+ &+\sum_{j,a,k,b} y_a(t_{c,j})y_b(t_{c,k})
+                                  (Z_{ja}\cdot\nabla)Z_{kb}.
+ \end{split}\label{tgq:physical_residual}
+\end{equation}
+To prove it, substitute \eqref{tgq:factorization} into the complete
+Navier--Stokes residual and subtract $R_{\nu_{\rm NS}}(u_*,p_*)$.
+The time product rule gives
+$\partial_ty_a=\alpha_jQ_j^{-1-h}(C_3y)_a$.
+Every spatial derivative of $y_a(t_{c,j})$ vanishes, so neither
+advection nor diffusion nor pressure adds an unrecorded derivative
+of that factor. The three linear spatial terms, the time derivative
+of $Z_{ja}$ and the pressure gradient are precisely $\mathcal K_{ja}$.
+The remaining quadratic product is the last full sum in
+\eqref{tgq:physical_residual}. This proves the identity with every
+old-wave interaction, cutoff, curl term and pressure included.
+Distinct labels with disjoint source supports have zero corresponding
+products; no such cancellation is used for harmonics of the same label.
+The baseline $R_{\nu_{\rm NS}}(u_*,p_*)$ must be added back to recover
+the candidate's total residual.
+
+The source units make every factor in this identity explicit.
+Let $\nabla_{*,j}$ and $\Delta_{*,j}$ be the full cylindrical spatial
+operators, including basis derivatives and the lifted auxiliary
+derivatives, with
+$\nabla_x=Q_j^{-1/2}\nabla_{*,j}$ and
+$\Delta_x=Q_j^{-1}\Delta_{*,j}$ on that chart.
+Put $U_{*,j}=Q_j^Au_*$ and
+$\mathfrak t_{*,j}=Q_j^{1+h}\partial_t$ with the full physical
+chain rule. Its extended expression is
+$-\varepsilon_j\partial_{T_j}+c_{i,j}N_{i,j}$ as in source (6.6).
+Define
+\[
+ \mathfrak K_{ja}=
+ \mathfrak t_{*,j}W_{ja}
+ +(U_{*,j}\cdot\nabla_{*,j})W_{ja}
+ +(W_{ja}\cdot\nabla_{*,j})U_{*,j}
+ -\nu_{\rm NS}\varepsilon_j\Delta_{*,j}W_{ja}
+ +\nabla_{*,j}\varpi_{ja}.
+\]
+Each term is obtained by differentiating the explicit shapes in
+\eqref{tgq:shape_def}, and
+\[
+ \mathcal K_{ja}=Q_j^{-2A-1/2}\mathfrak K_{ja}.
+\]
+For the time term the exponent identity is $A+1+h=2A+1/2$;
+for viscosity it is
+$Q_j^{-A-1}=Q_j^{-2A-1/2}\varepsilon_j$.
+The nonlinear and pressure terms have the same stated residual unit.
+This proves every factor rather than replacing the source or coupled
+viscosity by a common normalized number.
+
+Using Euclidean vector norms and the induced norm of the differentiated
+vector map, \eqref{tgq:physical_residual} and
+\eqref{tgq:budgets} give the following pointwise bound in actual
+shape fields:
+\begin{equation}
+ \begin{split}
+ |\Delta R_y|\le{}&
+ \sum_{j,a}Q_j^{-2A-1/2}
+       \bigl(Y_a|\mathfrak K_{ja}|+\alpha_jV_a|W_{ja}|\bigr)\\
+ &+\sum_{j,a,k,b}Y_aY_bQ_j^{-A}Q_k^{-A-1/2}
+                   |W_{ja}|\,\|\nabla_{*,k}W_{kb}\|.
+ \end{split}\label{tgq:residual_bound}
+\end{equation}
+Both $Q_j$ and $Q_k$ remain in every mixed-band term.
+The expression $\nabla_{*,k}W_{kb}$ includes the cylindrical frame
+connection, so the bound controls the actual Cartesian directional
+derivative. The clock satisfies the explicit original-stage bounds
+\[
+ \frac{L_3}{2\gamma_iL_{s,j}}\le\alpha_j
+       \le\frac{8\sqrt2L_3}{\gamma_iL_{s,j}}.
+\]
+Consequently its derivative costs in the first line can, if desired,
+be bounded using the original constants by
+\[
+ \alpha_jV_1\le
+  \frac{16\sqrt2L_3}{L_{s,j}}
+       \frac{A_0}{\mu}\widehat\lambda_3^{-7/8},\qquad
+ \alpha_jV_2\le
+  \frac{8\sqrt2L_3}{L_{s,j}}
+       \frac{A_0}{\sigma_2\sqrt{n_i}}\widehat\lambda_3^{1/8}.
+\]
+These are finite quantitative costs for the actual inserted third stage.
+They do not assert decay of the resulting residual at a singular limit.
+
+The source pulse equation (7.5) itself belongs to its viscosity-one
+source object. At a general $\nu_{\rm NS}$ in the displayed candidate
+residual, the principal wave damping is
+$\nu_{\rm NS}m_j^2\varepsilon_jk_j^2|n_j|^2$.
+Alternatively, the exact viscosity transport already proved can be
+applied to the complete viscosity-one source field and this complete
+candidate. That transport rescales support, force, residual and
+vorticity together. Merely changing this one damping coefficient
+does not assert that the unchanged source background is a solution
+with the same force at the changed viscosity.
+
+Equations \eqref{tgq:shape_def}, \eqref{tgq:factorization},
+\eqref{tgq:moment_bound} and \eqref{tgq:physical_residual} are the
+explicit substitution of the actual third-growth amplitudes into
+the source-coordinate construction. Every surviving moment and
+residual has an actual differentiated field and a retained-scale
+bound. The exact intertwiner above supplies the relation to the
+source's homogeneous pulse; neither this direct candidate nor that
+finite coordinate identity is silently promoted to a completed
+infinite modified coupled construction.

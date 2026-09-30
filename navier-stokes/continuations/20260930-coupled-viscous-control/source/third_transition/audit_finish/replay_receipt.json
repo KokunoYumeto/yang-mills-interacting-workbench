@@ -1,0 +1,334 @@
+{
+  "schema": "independent-third-transition-audit-v1",
+  "all_passed": true,
+  "total_checks": 51,
+  "checks": [
+    {
+      "name": "cartesian_aggregate_after_1_older_waves",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "trace_after_1_older_waves",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "cartesian_aggregate_after_2_older_waves",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "trace_after_2_older_waves",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "cartesian_aggregate_after_3_older_waves",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "trace_after_3_older_waves",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "numerator_transport_from_cartesian_product_rule",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "activation_diffusion_oriented_sign",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "matrix_reconstruction_initial",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "matrix_reconstruction_all_phase_columns",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "matrix_reconstruction_physical_evolution",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "growth_transition_x_dictionary",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "growth_transition_y_dictionary",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "growth_transition_phase_length",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "growth_transition_numerator",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_to_dimensionless_h",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_to_dimensionless_g",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_to_dimensionless_E",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_to_dimensionless_omega",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_to_dimensionless_F",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "physical_to_dimensionless_V",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "source_ratio_kept",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "epsilon_source_conversion",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "entry_E1_lower_from_second_hold",
+      "passed": true,
+      "exact_margin": "63/512"
+    },
+    {
+      "name": "entry_F_lower_squared",
+      "passed": true,
+      "exact_margin": "3/8000"
+    },
+    {
+      "name": "growth_endpoint_quotient_above_half_squared",
+      "passed": true,
+      "exact_margin": "7/32"
+    },
+    {
+      "name": "diffusion_delta3_link",
+      "passed": true,
+      "exact_margin": "1/1080"
+    },
+    {
+      "name": "diffusion_delta2_link_using_log2_below_one",
+      "passed": true,
+      "exact_margin": "19199/2457600"
+    },
+    {
+      "name": "base_phase_positive_branch",
+      "passed": true,
+      "exact_margin": "3827/4096"
+    },
+    {
+      "name": "feedback_positive_denominator",
+      "passed": true,
+      "exact_margin": "7340029/201326592"
+    },
+    {
+      "name": "first_parent_E_lower",
+      "passed": true,
+      "exact_margin": "6815739/67108864"
+    },
+    {
+      "name": "second_parent_F_lower_using_exp_minus_x",
+      "passed": true,
+      "exact_margin": "53/1024"
+    },
+    {
+      "name": "second_parent_F_upper",
+      "passed": true,
+      "exact_margin": "281474976710655/281474976710656"
+    },
+    {
+      "name": "first_parent_omega_upper",
+      "passed": true,
+      "exact_margin": "4194301/4194304"
+    },
+    {
+      "name": "h_upper",
+      "passed": true,
+      "exact_margin": "524283/2097152"
+    },
+    {
+      "name": "g_lower_using_sqrt10_below_4",
+      "passed": true,
+      "exact_margin": "1/16"
+    },
+    {
+      "name": "g_upper_using_sqrt20_below_9over2",
+      "passed": true,
+      "exact_margin": "1048501/2097152"
+    },
+    {
+      "name": "x_positive_numerator",
+      "passed": true,
+      "exact_margin": "46079/65536"
+    },
+    {
+      "name": "revival_u_closes_bootstrap",
+      "passed": true,
+      "exact_margin": "59/65536"
+    },
+    {
+      "name": "revival_V_closes_bootstrap",
+      "passed": true,
+      "exact_margin": "1993/65536"
+    },
+    {
+      "name": "exact_integrand_11_bound_squared",
+      "passed": true,
+      "exact_margin": "209/25"
+    },
+    {
+      "name": "phase_length_variation",
+      "passed": true,
+      "exact_margin": "1221/524288"
+    },
+    {
+      "name": "second_phase_length_variation",
+      "passed": true,
+      "exact_margin": "65525/4194304"
+    },
+    {
+      "name": "K_lower_using_exp_minus_x",
+      "passed": true,
+      "exact_margin": "5/384"
+    },
+    {
+      "name": "K_upper_using_geometric_series",
+      "passed": true,
+      "exact_margin": "313/7560"
+    },
+    {
+      "name": "B_lower",
+      "passed": true,
+      "exact_margin": "129/8192"
+    },
+    {
+      "name": "B_upper",
+      "passed": true,
+      "exact_margin": "4081/32768"
+    },
+    {
+      "name": "quotient_lower_inward",
+      "passed": true,
+      "exact_margin": "3/16"
+    },
+    {
+      "name": "quotient_upper_inward",
+      "passed": true,
+      "exact_margin": "3/8"
+    },
+    {
+      "name": "gain_lower_exact",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "gain_upper",
+      "passed": true,
+      "exact_margin": "5/8"
+    }
+  ],
+  "source_sha256": {
+    "third_transition\\third_transition_body.tex": "e66bd7d0fb007a705538623a68253fb5cdc806fe86c4c6b62a00a752cc6fc258",
+    "finite_stage\\third_growth_entry.tex": "f8ef33f593fae0c9526e2ae5d696d537b3caacb843a35d844c87425b467b4048",
+    "second_return\\second_return_body.tex": "0eb6373f7a9821f480b9f25f2ef19cda4e59d58f6ce0e11f15a31060c1e692d4",
+    "third_transition\\audit_finish\\replay_independent.py": "bcb2d32a33845fa2fc01927565495e2c11f361407b326eab9e7c9f5633041ad1"
+  },
+  "analytic_proof_audit": "third_transition/audit_finish/AUDIT.md",
+  "independent_derivation": "arbitrary Cartesian phases, arbitrary active weights, physical rescaling",
+  "trajectory_sampling_used": false,
+  "lean_used": false,
+  "third_return_claimed": false,
+  "infinite_cascade_claimed": false
+}

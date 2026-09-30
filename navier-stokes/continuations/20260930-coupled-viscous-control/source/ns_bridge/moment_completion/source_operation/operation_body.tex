@@ -1,0 +1,751 @@
+\section{The actual wave increment and the source's three compatibility targets}
+\label{momop:section}
+
+The source is the retained 166-page manuscript. Its SHA-256 is given
+in these two consecutive segments:
+\[
+\begin{gathered}
+\texttt{0e779481c4da40bd28d1e642e1d8ca57}\\
+\texttt{447d129610df28dfa5a11e9af8ae228f}.
+\end{gathered}
+\]
+The source operations used here are (8.3)--(8.27) and the complete
+four-step cycle of Proposition 9.6, on printed pages 89--111.
+Its coefficient classes are Definitions 6.4--6.5 and Proposition 6.6,
+printed pages 69--72. The source estimates quoted below are attributed
+to those statements. The following calculation of the actual candidate
+targets and all pressure-induced changes is a direct finite calculation.
+It does not infer source iteration exponents from finite smoothness.
+The source correction cycle is its viscosity-one cycle. The physical
+increment identities below separately retain any fixed
+$\nu_{\rm NS}>0$; using another physical viscosity in those identities
+does not identify the resulting candidate with the source's witness.
+
+\subsection{The actual covariance increment before pressure reconstruction}
+
+Use right-handed cylindrical coordinates $(r,\theta,z)$. An overbar
+means the normalized angular average followed by normalized auxiliary
+Haar average, taken at fixed slow variables before phase evaluation.
+The old source state has actual zero-angular-mean wave $w_*$, including
+all its curl corrections. The new candidate is the proved finite field
+\[
+ w_y=\sum_{j,a}y_a(t_{c,j})Z_{ja},\qquad
+ \pi_y=\sum_{j,a}y_a(t_{c,j})\Pi_{ja},\qquad
+ \langle w_y\rangle_\theta=\langle\pi_y\rangle_\theta=0.
+\]
+The $Z_{ja},\Pi_{ja}$ are the complete physical shapes from the
+third-growth quantitative calculation; $y_a$ is the actual coupled
+pair, with $t_{c,j}=t_b+(r_a/L_{s,j})v_j$. No amplitude factor is
+removed from an auxiliary average: it can depend on $v_j(Y)$.
+Write the exact double-averaged covariance increment as
+\begin{equation}\label{momop:C}
+ C_{ab}=
+ \overline{w_{*,a}w_{y,b}+w_{y,a}w_{*,b}+w_{y,a}w_{y,b}},
+ \qquad a,b\in\{r,\theta,z\}.
+\end{equation}
+Equivalently, substitute the displayed finite sum for both occurrences
+of $w_y$ inside this average. In particular $C$ retains every old-wave
+cross term and every same-label quadratic term. It is symmetric.
+All its radial integrals below are finite because the new fields are
+smooth and supported in a compact interior annulus. The old field
+need only be restricted to this support.
+
+The old source finite correction state has the two exact mean-velocity
+constraints
+\[
+ \int_0^\infty r^2\overline v\,dr=0,\qquad
+ \int_0^\infty r\overline\gamma\,dr=0 .
+\]
+These are source (9.10) in physical variables. The present initial
+addition $w_y$ leaves $(\beta,v,\gamma)$ unchanged because its angular
+mean is zero. The temporal mean operation has zero auxiliary mean,
+and the first two rows of the five-row operation below give zero
+increments of these integrals. Thus all specified operations preserve
+their initially zero values. Preservation, by itself, does not change
+a nonzero entering value to zero.
+
+The already calculated raw tangential residual moments are
+\[
+ M_2=\partial_zJ_2,\qquad M_1=\partial_zJ_1,\qquad
+ J_2=\int_0^\infty r^2C_{z\theta}\,dr,\quad
+ J_1=\int_0^\infty rC_{zz}\,dr.
+\]
+Here the candidate has been added with its zero-angular-mean pressure
+$\pi_y$, so the mean pressure is still the old mean pressure.
+The source algorithm next reconstructs the mean pressure from the
+updated velocity. This operation changes the axial residual moment.
+
+To compute it, first let $\mathcal C_{ab}$ denote the angular average
+of the tensor inside \eqref{momop:C}, retaining its auxiliary dependence.
+Let $\mathcal D_r$ be the physical radial derivative on the extended
+domain, including the auxiliary phase-map derivative. Its auxiliary
+average is ordinary $\partial_r$. Since the mean velocity is unchanged
+by $w_y$, subtracting the radial conservative equations gives
+\begin{equation}\label{momop:delta_g}
+ \Delta g_r=-(\mathcal D_r+r^{-1})\mathcal C_{rr}
+                   -\partial_z\mathcal C_{zr}
+                   +r^{-1}\mathcal C_{\theta\theta}.
+\end{equation}
+Indeed the radial transport of a divergence-free velocity is
+$(\mathcal D_r+r^{-1})u_r^2+
+r^{-1}\partial_\theta(u_\theta u_r)+
+\partial_z(u_zu_r)-u_\theta^2/r$.
+Angular averaging removes the angular derivative and all products
+containing exactly one old mean factor and one zero-angular-mean wave.
+The source defines $g_r$ as the negative of the mean radial residual
+apart from the pressure gradient, which gives exactly the signs in
+\eqref{momop:delta_g}. The time and viscous averages of $w_y$
+are zero, so no physical viscosity has been dropped in this subtraction.
+The formula remains true for any fixed $\nu_{\rm NS}>0$ in the
+physical residual.
+
+Set $g=\overline{\Delta g_r}$. Auxiliary derivative integrals vanish,
+and hence
+\begin{equation}\label{momop:gbar}
+ g=-(\partial_r+r^{-1})C_{rr}-\partial_zC_{zr}
+                                    +r^{-1}C_{\theta\theta}.
+\end{equation}
+The increment of the source's pressure defect is therefore the
+following explicit new scalar, rather than either raw tangential moment:
+\begin{equation}\label{momop:deltaP}
+ \Delta P=\int_0^\infty g\,dr
+ =\int_0^\infty\frac{C_{\theta\theta}-C_{rr}}r\,dr
+                           -\partial_z\int_0^\infty C_{zr}\,dr .
+\end{equation}
+The equality integrates the derivative $\partial_rC_{rr}$;
+both endpoints vanish by compact support. The weighted second
+moment of this same source is
+\begin{equation}\label{momop:gsecond}
+ \int_0^\infty r^2g\,dr
+ =\int_0^\infty r(C_{rr}+C_{\theta\theta})\,dr
+                   -\partial_z\int_0^\infty r^2C_{zr}\,dr .
+\end{equation}
+For its first term, integration by parts gives
+$-\int r^2\partial_rC_{rr}=2\int rC_{rr}$, after which the
+explicit $-C_{rr}/r$ contribution subtracts one copy.
+These two identities retain the radial and axial coupling exactly.
+
+\subsection{Compact mean pressure and the corrected axial flux moment}
+
+Retain the source concentration scale and its full axial derivative:
+\[
+ z=q^D\eta,\qquad 1-t=q(1-\eta^2),\qquad
+ A=\tfrac12+h,\quad D=\tfrac12-h,\quad
+ q_z=\frac{2\eta q^{1-D}}{1-2h\eta^2}.
+\]
+Choose the source fixed bump $\widehat\rho$ in its reserved mean
+interval $I_m$, with $\int\widehat\rho(x)\,dx=1$, and put
+\[
+ \rho_{\rm phys}=q^{-1/2}\widehat\rho(r/\sqrt q),\qquad
+ c_{\rho,\rm phys}=\frac12\int r^2\rho_{\rm phys}\,dr
+             =\frac q2\int x^2\widehat\rho(x)\,dx .
+\]
+Thus $(c_{\rho,\rm phys})_z=(q_z/q)c_{\rho,\rm phys}$;
+it is generally not constant in $z$.
+
+For precision the source's compact physical primitive is as follows.
+The fixed slow cutoff $\chi_m$ is zero on the inner collar and one
+on the outer collar of the active annulus. For an auxiliary-dependent
+scalar $f$ define
+\[
+ \begin{split}
+ I f(r,Y)&=\int_0^r
+ f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\\
+ J f(r,Y)&=\int_0^\infty
+ f(s,Y+(s^{d_r}-r^{d_r})v_r)\,ds,\qquad
+ I_cf=If-\chi_mJf.
+ \end{split}
+\]
+Here $d_r=2((1+h)\rho_g-h\kappa_s)$ is the exact source exponent,
+$\rho_g=\log(4-\sqrt2)/\log(4+\sqrt2)$,
+$v_r=(1,-(\sqrt2-1))$, and $\kappa_s=10^{-5}$.
+The derivative $\mathcal D_r$ of the shifted integral differentiates
+the integration endpoint while cancelling the derivative of its
+$-r^{d_r}v_r$ shift. Consequently
+$\mathcal D_rI_cf=f-(\partial_r\chi_m)Jf$.
+Also $\overline{Jf}=\int\overline f\,dr$, by translation invariance
+of Haar measure. This proves the mean identities used next directly.
+
+The source reconstruction after the actual wave addition changes the
+physical mean pressure by
+\[
+ \Delta p_m=I_c(\Delta g_r-\rho_{\rm phys}\Delta P).
+\]
+Its source has zero radial auxiliary-mean integral by
+\eqref{momop:deltaP}. Therefore
+\begin{equation}\label{momop:pressureidentity}
+ \partial_r\overline{\Delta p_m}
+     =g-\rho_{\rm phys}\Delta P,\qquad
+ \int r\,\overline{\Delta p_m}\,dr
+     =-\frac12\int r^2g\,dr+c_{\rho,\rm phys}\Delta P .
+\end{equation}
+The first identity follows from the displayed primitive formula;
+its cutoff remainder has zero auxiliary average. The second integrates
+$\partial_r(r^2\overline{\Delta p_m})$ between the two zero endpoints.
+The full radial residual increment after this pressure update is
+$-\rho_{\rm phys}\Delta P-
+(\partial_r\chi_m)J(\Delta g_r-\rho_{\rm phys}\Delta P)$.
+The second term is retained. The source proves its terminal flatness
+under its all-order uniform class bounds; finite smoothness alone is
+not that proof.
+
+Use different symbols for the source's two flux defects and the raw
+candidate fluxes $J_2,J_1$. Their increments are exactly
+\begin{align}
+ \Delta J_\theta&=J_2,\nonumber\\
+ \Delta J_z&=J_1-\frac12\int r^2g\,dr\nonumber\\
+ &=\int r\left(C_{zz}-\frac12C_{rr}
+                         -\frac12C_{\theta\theta}\right)\,dr
+                    +\frac12\partial_z\int r^2C_{zr}\,dr .
+ \label{momop:defectdictionary}
+\end{align}
+These are the differences of source (8.15): the mean-velocity terms
+are unchanged and the full wave covariance changes by $C$.
+The axial pressure identity \eqref{momop:pressureidentity} now proves
+the exact moments after pressure reconstruction:
+\begin{equation}\label{momop:afterpressure}
+ M_{2,\rm new}=\partial_z\Delta J_\theta=M_2,\qquad
+ M_{1,\rm new}=\partial_z(\Delta J_z+c_{\rho,\rm phys}\Delta P)
+  =M_1+\partial_z\left(-\frac12\int r^2g\,dr
+                                      +c_{\rho,\rm phys}\Delta P\right).
+\end{equation}
+These are increment identities. The old source moments and defects
+are added to obtain the full updated state. No hypothesis that the
+old defects vanish was used: identical old mean-velocity terms
+cancel in the subtraction. The product involving $c_{\rho,\rm phys}$
+stays inside $\partial_z$, including its nonzero derivative.
+
+\subsection{New quantitative budgets for the three actual inputs}
+
+Retain the previously proved quantities
+$\mathcal W_e,\mathcal W_{e,z},\mathcal V_e,\mathcal Z_e$ for
+$e=1,2$. They satisfy
+\[
+ \|w_*\|_{[e]}=\mathcal W_e,\quad
+ \|\partial_zw_*\|_{[e]}=\mathcal W_{e,z},\quad
+ \|w_y\|_{[e]}\le\mathcal V_e,\quad
+ \|\partial_zw_y\|_{[e]}\le\mathcal Z_e.
+\]
+In particular $\mathcal V_e,\mathcal Z_e$ retain separately the
+actual amplitude bounds
+$Y_1=(A_0/\mu)\widehat\lambda_3^{-7/8}$ and
+$Y_2=2A_0\widehat\lambda_3^{1/8}/(\sigma_2\sqrt{n_i})$
+and their physical source-band factors. Define merely for the
+following displayed estimates
+\[
+ B_e=2\mathcal W_e\mathcal V_e+\mathcal V_e^2,\qquad
+ D_e=\mathcal W_{e,z}\mathcal V_e+
+                    \mathcal W_e\mathcal Z_e+\mathcal V_e\mathcal Z_e.
+\]
+Choose $r_->0$ enclosing the radial support of the new fields and
+their axial derivatives from below. Cauchy--Schwarz on the original
+weighted product measures gives
+\begin{equation}\label{momop:targetbounds}
+ |\Delta P|\le r_-^{-2}B_1+2r_-^{-1}D_1,\qquad
+ |\Delta J_\theta|\le B_2,\qquad
+ |\Delta J_z|\le B_1+D_2.
+\end{equation}
+Here is the full estimate. The matrix
+$\operatorname{diag}(-1,1,0)$ has operator norm one, so
+$|C_{\theta\theta}-C_{rr}|$ is bounded after averaging by
+$2|w_*||w_y|+|w_y|^2$. Replacing $r^{-1}$ by
+$r_-^{-2}r$ and applying Cauchy--Schwarz gives the first part
+$r_-^{-2}B_1$ of the pressure bound. Differentiating $C_{zr}$
+produces the six actual cross and self product terms. Their integral
+with weight $r^e$ is at most $2D_e$. Replace the unweighted
+integral by $r_-^{-1}$ times the $r$-weighted integral to obtain
+$2r_-^{-1}D_1$ in \eqref{momop:deltaP}.
+The same product estimate without differentiation bounds
+$\int r^2C_{z\theta}$ by $B_2$.
+Finally $\operatorname{diag}(-1/2,-1/2,1)$ has norm one.
+Apply it to the first integral in \eqref{momop:defectdictionary}
+to get $B_1$; the last differentiated integral is bounded by
+$\tfrac12(2D_2)=D_2$. This proves all three claims without
+replacing the two amplitude components by a new unspecified constant.
+
+\subsection{The exact five-row map for these targets}
+
+The source map acts on the \emph{current} physical triple
+$(P,J_\theta,J_z)$, after adding \eqref{momop:deltaP} and
+\eqref{momop:defectdictionary} to the old source triple and
+reconstructing pressure. It does not take
+$(M_2,M_1)$ as its input. The five equations, in physical variables, are
+\begin{align}
+ \int r^2\Delta v\,dr&=0,&
+ \int r\gamma_d\,dr&=0,\nonumber\\
+ \int\frac{2V}{r}\Delta v\,dr&=-P,\nonumber\\
+ \int r^2(G\Delta v+V\gamma_d)\,dr&=-J_\theta,\nonumber\\
+ \int(2rG\gamma_d-rV\Delta v)\,dr&=-J_z .
+ \label{momop:fivephysical}
+\end{align}
+In the last row there is exactly one factor $r$ multiplying $V\Delta v$.
+The pressure-source term contributes
+$-\tfrac12\int r^2(2V/r)\Delta v\,dr=-\int rV\Delta v\,dr$,
+which proves that factor rather than treating the fifth row as an
+independent constraint with an arbitrary weight.
+
+Retain the source's reserved patch $x=r/\sqrt q\in I_m$. Its actual
+summed base satisfies source (5.44) and (8.24):
+\[
+\begin{gathered}
+ V_{\rm phys}=q^{-A}a(\eta)x^{-1-2\lambda},\qquad
+ G_{\rm phys}=0,\\
+ a(\eta)=2^{1/2+\lambda}c_{\rm patch}(1+\eta^2)^{-1},
+ \quad \lambda>0,\quad |a(\eta)|\ge a_0>0.
+\end{gathered}
+\]
+The source fixed $\lambda$ here is its reserved-profile exponent,
+not a frequency of the coupled problem. In a fixed $Q$ chart,
+the same physical base is
+\[
+ V_*=(Q/q)^A a(\eta)\bigl(\sqrt{Q/q}\,R\bigr)^{-1-2\lambda},
+ \qquad G_*=0.
+\]
+The factor $(Q/q)^A$ has been retained.
+
+Choose a nonnegative nonzero bump $\varphi_0\in C_c^\infty(I_m)$
+supported near an interior point and a fixed spacing $d_b>0$ so small
+that the three profiles
+\[
+ \varphi_j(x)=e^{-jd_b}\varphi_0(e^{-jd_b}x),\qquad j=0,1,2,
+\]
+have disjoint supports in the patch. This is possible because the patch
+contains an open interval about that point: choose three distinct
+scaled centers there, then decrease the support radius below half the
+minimum separation. The symbol $d_b$ distinguishes this source bump
+spacing from the coupled physical diffusivity $d$.
+For every real $p$, set
+\[
+ \mu_p=\int x^p\varphi_0(x)\,dx>0,\qquad
+ \int x^p\varphi_j(x)\,dx=\mu_pe^{jd_bp}.
+\]
+The equality is the substitution $x=e^{jd_b}\xi$ and retains the
+prefactor in $\varphi_j$.
+
+Define the two explicit moment matrices
+\[
+ A_\theta=
+ \begin{pmatrix}
+ \mu_2&\mu_2e^{2d_b}&\mu_2e^{4d_b}\\
+ 2a\mu_{-2-2\lambda}&
+ 2a\mu_{-2-2\lambda}e^{d_b(-2-2\lambda)}&
+ 2a\mu_{-2-2\lambda}e^{2d_b(-2-2\lambda)}\\
+ -a\mu_{-2\lambda}&-a\mu_{-2\lambda}e^{-2d_b\lambda}&
+                              -a\mu_{-2\lambda}e^{-4d_b\lambda}
+ \end{pmatrix},
+\]
+\[
+ A_z=
+ \begin{pmatrix}
+ \mu_1&\mu_1e^{d_b}\\
+ a\mu_{1-2\lambda}&a\mu_{1-2\lambda}e^{d_b(1-2\lambda)}
+ \end{pmatrix},\qquad a=a(\eta).
+\]
+Both inverses exist at every source parameter value. Indeed the
+angular matrix is a diagonal row factor times the matrix with rows
+$(1,t_p,t_p^2)$ for $p=2,-2-2\lambda,-2\lambda$ and
+$t_p=e^{d_bp}$. Subtracting the first row from the other two
+and factoring their differences gives
+\[
+ \det[1,t_p,t_p^2]_{p=p_1,p_2,p_3}
+ =(t_{p_2}-t_{p_1})(t_{p_3}-t_{p_1})(t_{p_3}-t_{p_2}).
+\]
+All three powers are distinct for $\lambda>0$. The diagonal
+row factor has determinant
+\[
+-2a^2\mu_2\mu_{-2-2\lambda}\mu_{-2\lambda}\ne0.
+\]
+Likewise
+\[
+\det A_z=a\mu_1\mu_{1-2\lambda}
+(e^{d_b(1-2\lambda)}-e^{d_b})\ne0.
+\]
+This also gives an explicit finite inverse norm bound
+$\|A^{-1}\|\le\|\operatorname{adj}A\|/|\det A|$
+for either matrix. No uniform limit as $\lambda\downarrow0$ is taken.
+
+Use the exact row normalizations
+\[
+ P_q=q^{2A}P,\qquad
+ J_{\theta,q}=q^{2A-3/2}J_\theta,\qquad
+ J_{z,q}=q^{2A-1}J_z,
+\]
+and define the five coefficients by
+\begin{equation}\label{momop:coefficients}
+ {\bf u}=A_\theta^{-1}(0,-P_q,-J_{z,q})^T,\qquad
+ {\bf s}=A_z^{-1}(0,-J_{\theta,q})^T .
+\end{equation}
+Then the actual physical velocity increments are
+\begin{equation}\label{momop:fiveincrement}
+ \Delta v=q^{-A}\sum_{j=0}^2u_j\varphi_j(r/\sqrt q),
+ \qquad
+ \gamma_d=q^{-A}\sum_{j=0}^1s_j\varphi_j(r/\sqrt q).
+\end{equation}
+The first and second velocity moments have factors $q^{3/2-A}$
+and $q^{1-A}$, respectively. The three inhomogeneous rows have
+factors $q^{-2A}$, $q^{3/2-2A}$, and $q^{1-2A}$, respectively.
+Substituting the original base into \eqref{momop:fivephysical}
+and changing variables $r=\sqrt q\,x$ therefore gives exactly
+the two linear systems \eqref{momop:coefficients}. This proves all
+five equations, uniqueness in the selected five-dimensional span,
+and smooth dependence on the actual target values. For instance
+$\partial_\xi A^{-1}=-A^{-1}(\partial_\xi A)A^{-1}$ follows by
+differentiating $AA^{-1}=I$; repeated product rules give every
+coefficient derivative with the actual $q,\eta$ factors retained.
+
+The desired axial increment has zero weighted integral and is
+auxiliary independent. Its exact compact azimuthal potential and
+radial increment are
+\[
+ \Psi(r,z,t)=\frac1r\int_0^r s\gamma_d(s,z,t)\,ds,\qquad
+ \Delta\beta=-\partial_z\Psi,\qquad
+ \Delta\gamma=(\partial_r+r^{-1})\Psi=\gamma_d.
+\]
+The zero moment in \eqref{momop:fivephysical} makes $\Psi$ vanish
+beyond its outer support; its lower-end definition makes it vanish
+below the inner support. Differentiation proves
+$(\partial_r+r^{-1})\Delta\beta+\partial_z\Delta\gamma=0$.
+The support includes the intervals between bump supports, which still
+lie within the reserved patch.
+To display the axial scaling cost explicitly, put
+$\Psi_j(x)=x^{-1}\int_0^x \xi\varphi_j(\xi)\,d\xi$. Then
+\begin{align}
+ \Psi&=q^{1/2-A}\sum_{j=0}^1s_j\Psi_j(x),\nonumber\\
+ \Delta\beta
+ &=-q^{1/2-A}\sum_{j=0}^1\left[
+    (\partial_zs_j)\Psi_j+
+    \frac{q_z}{q}s_j\left((1/2-A)\Psi_j
+                                      -\frac x2\Psi_j'\right)\right].
+ \label{momop:inducedradial}
+\end{align}
+The two individual $\Psi_j$ can have $x^{-1}$ tails. The exact
+linear relation $\sum_js_j\mu_1e^{jd_b}=0$ cancels those tails
+in their sum and, after differentiation, in \eqref{momop:inducedradial}.
+No individual compactness was assumed.
+
+\subsection{What the five-row operation actually leaves}
+
+Let $(\beta,v,\gamma)$ be the current mean correction, after whatever
+preceding wave and mean updates have actually been performed. Keep the
+base $(b,V,G)$ and the full current wave $w$ fixed during this
+five-row step. Use the three full current defects as its targets.
+Write $\mathcal D_r$ for the physical extended radial derivative and
+$\mathcal D_t$ for the physical extended time derivative. With
+$\Delta_0=\mathcal D_r^2+r^{-1}\mathcal D_r+\partial_z^2$, direct
+subtraction of the full radial source gives
+\begin{align}
+ R_g:={}&g_{r,\rm new}-g_r-\frac{2V}{r}\Delta v\nonumber\\
+ ={}&-\mathcal D_t\Delta\beta
+ -(\mathcal D_r+r^{-1})
+             \bigl(2b\Delta\beta+2\beta\Delta\beta+(\Delta\beta)^2\bigr)
+ \nonumber\\
+ &-\partial_z\bigl(b\Delta\gamma+G\Delta\beta+
+           \beta\Delta\gamma+\gamma\Delta\beta+\Delta\beta\Delta\gamma\bigr)
+ \nonumber\\
+ &+\frac{2v\Delta v+(\Delta v)^2}{r}
+               +\nu_{\rm NS}(\Delta_0-r^{-2})\Delta\beta .
+ \label{momop:Rg}
+\end{align}
+Here all increments are auxiliary independent, so their
+$\mathcal D_t$ is ordinary $\partial_t$. The products with the
+old means still retain their auxiliary dependence. Equation
+\eqref{momop:Rg} keeps the actual physical viscosity; the source
+unit-viscosity formula (8.26) is its case $\nu_{\rm NS}=1$.
+
+The full updated defects, with pressure recomputed from the new
+radial source, are exactly
+\begin{align}
+ P_{\rm new}&=\int\overline{R_g}\,dr,\nonumber\\
+ (J_\theta)_{\rm new}
+    &=\int r^2\overline{\gamma\Delta v+v\Delta\gamma+
+                                      \Delta\gamma\Delta v}\,dr,\nonumber\\
+ (J_z)_{\rm new}
+    &=\int r\overline{2\gamma\Delta\gamma+(\Delta\gamma)^2}\,dr
+                      -\frac12\int r^2\overline{R_g}\,dr .
+ \label{momop:recomputed}
+\end{align}
+To verify these formulas, expand every quadratic product in the
+definitions of the current and new defects. The radial source
+increment is $(2V/r)\Delta v+R_g$. The third row of
+\eqref{momop:fivephysical} cancels the old $P$ with the integral
+of the displayed linear term. The azimuthal flux increment contains
+the base-linear terms $G\Delta v+V\Delta\gamma$, cancelled by
+the fourth row because $\Delta\gamma=\gamma_d$. The axial defect
+contains $2G\Delta\gamma$ and the radial-source contribution
+$-\tfrac12r(2V\Delta v)$ after integration. These are precisely
+the fifth row. All remaining products are the terms displayed
+in \eqref{momop:recomputed}; the full wave covariance is unchanged
+during this mean step. This proves the formulas without assuming
+their right-hand sides vanish.
+
+The two velocity moments remain exactly zero. The new residual
+moments therefore have the source form
+\[
+ \int r^2\overline{E_{\theta,\rm new}}\,dr
+       =\partial_z(J_\theta)_{\rm new},\qquad
+ \int r\overline{E_{z,\rm new}}\,dr
+       =\partial_z\bigl((J_z)_{\rm new}
+                           +c_{\rho,\rm phys}P_{\rm new}\bigr).
+\]
+The pressure and $c_{\rho,\rm phys}$ are the actual reconstructed
+objects. Thus the five equations cancel specified linear defect
+contributions and expose the remaining nonlinear and differential
+terms. Equations \eqref{momop:Rg}--\eqref{momop:recomputed} supply
+the next actual inputs rather than a claim of complete cancellation.
+
+\subsection{Exact source operation dictionary and the bounds it requires}
+
+For the source's estimates, $Q=2^{-\ell}$, $\varepsilon=Q^h$,
+$S_*=\ell^2$, $R=r/\sqrt Q$, $Z=z/Q^D$, $T=(1-t)/Q$.
+Use a coarsest applicable common auxiliary torus $H$ as in source
+Lemma 6.2; different representatives agree by its integer covering
+maps. The original radial edge weights are
+\[
+\begin{gathered}
+ \zeta(X)=\exp\left(-\frac{a_a}{\log^2(X/X_a)}
+                       -\frac{a_b}{\log^2(X_b/X)}\right),\\
+ \delta(X)=\min\{1,\log(X/X_a),\log(X_b/X)\},
+ \quad X=\frac{QR^2}{2q},
+\end{gathered}
+\]
+with the source fixed $a_a,a_b>0$. In the following bounds the band,
+label, representative and harmonic are held fixed when differentiating.
+The constants may depend on the finite correction stage and derivative
+multi-index, but are uniform over bands, labels, points and rectangle
+copies.
+
+A mean coefficient $f\in M^\alpha$ has no angular dependence, descends
+to the common torus, extends smoothly by zero outside the active shell,
+and satisfies for each multi-index $I$ in $(R,Z,T,H)$
+\[
+ |\partial^If|\le C_I\varepsilon^\alpha S_*^{b_I}
+                                        \zeta\,\delta^{-d_I}.
+\]
+It can have nonzero auxiliary modes and has no rectangle or pulse
+envelope restriction. A moment coefficient $F(Z,T)\in S^\alpha$
+satisfies $|\partial_{Z,T}^IF|\le C_I\varepsilon^\alpha S_*^{b_I}$.
+A labelled nonzero harmonic amplitude $a_{\gamma,m}\in W^\alpha$
+has no angular dependence, the source slow, transverse and shell
+support, smooth zero extension across those boundaries, compatible
+lift representatives, and
+\[
+ |\partial^Ia_{\gamma,m}|\le
+ C_I\varepsilon^\alpha S_*^{b_I}\sqrt\zeta\,\delta^{-d_I}
+                          {\cal P}_\gamma(v),\qquad 0\le v\le L_s.
+\]
+The prescribed source phase has $k_\gamma p_\gamma\in
+\mathbb Z\setminus\{0\}$ and $k_\gamma=\lceil\varepsilon^{-1/2}\rceil$.
+The harmonic set is finite at a fixed stage and independent of band.
+Equal label--harmonic terms are grouped before testing the bounds.
+The pulse envelope is the original positive exponential in (7.12),
+with its proved Gaussian estimates. Actual cut-off waves additionally
+have support where the source pulse cutoff $\psi$ is supported and
+smooth zero extension in $v$. No divisibility by $\psi$ is required.
+
+The source's anisotropic derivative mappings, with the phase factored
+out, are
+\[
+\begin{gathered}
+ \partial_{R,Z,T}:C^\alpha\to C^\alpha,\quad
+ D_r:C^\alpha\to C^{\alpha-\kappa_s},\quad
+ D_z=\varepsilon\partial_Z:C^\alpha\to C^{\alpha+1},\\
+ c_{i_0}N_{i_0}:C^\alpha\to C^\alpha,\quad
+ -\varepsilon\partial_T:C^\alpha\to C^{\alpha+1},
+ \qquad C=M,W.
+\end{gathered}
+\]
+Products obey $M^\alpha M^\beta\subset M^{\alpha+\beta}$ and
+$M^\alpha W^\beta\subset W^{\alpha+\beta}$. Same-label wave
+products have this summed order, in $M$ for zero output harmonic
+and $W$ otherwise; distinct supported labels have zero products.
+The zero-harmonic global $M$ statement here is for the actual temporally
+cut-off waves. Before that cutoff, the source gives the mean bounds on
+the labelled rectangle, not a global $M$ assertion.
+These are source Proposition 6.6, not deductions from the candidate's
+finite norm bounds.
+
+Every radial target must first carry the correct measure and weight.
+For $f_*=Q^{a_f}f_{\rm phys}$,
+\[
+ \int R^e\overline{f_*}\,dR
+       =Q^{a_f-(e+1)/2}\int r^e\overline{f_{\rm phys}}\,dr .
+\]
+For the present inputs this reads
+\begin{align*}
+ P_*&=Q^{2A}P,&
+ (J_\theta)_*&=Q^{2A-3/2}J_\theta,&
+ (J_z)_*&=Q^{2A-1}J_z,&
+ (c_\rho)_*&=Q^{-1}c_{\rho,\rm phys},\\
+ (M_2)_*&=Q^{2A-1}M_2,&
+ (M_1)_*&=Q^{2A-1/2}M_1 .
+\end{align*}
+In particular \eqref{momop:afterpressure} becomes exactly
+$\varepsilon\partial_Z\Delta J_{\theta,*}$ and
+$\varepsilon\partial_Z(\Delta J_{z,*}+c_{\rho,*}\Delta P_*)$.
+The factors match because $h+D=1/2$. This is the extra axial
+factor used in source (9.12); using the raw $J_1$ after pressure
+reconstruction would omit part of its actual input.
+
+For clarity, the following are the four ordered operations of source
+Proposition 9.6, with the full current velocity and pressure
+reconstructed after each operation.
+
+\begin{enumerate}
+\item For each supported nonzero harmonic coefficient $f_{\gamma,m}$
+of the full current residual, solve the original transverse pulse
+equation with zero entrance data and source $-f_{\gamma,m}$.
+In frame coordinates its coefficient matrix is
+$H_\gamma-m^2\varepsilon k_\gamma^2|n_\gamma|^2I$.
+Multiply the solved potential and pressure by $\psi$ and take the
+full curl. Source Proposition 7.2 maps $W^\alpha$ sources to
+$W^\alpha$ velocity amplitudes and $W^{\alpha+1/2}$ pressure.
+Proposition 9.1 assigns the remaining supported linear residual
+order $\alpha+1/2-3\kappa_s$ and retains its Gaussian cutoff tails
+additively. The actual candidate's full residual formula determines
+the input coefficients. Following this wave change, replace $w_y$
+by the actual total new wave increment in \eqref{momop:C}, recompute
+$g_r$ and reconstruct pressure. Its old-wave cross terms must change
+with the updated wave.
+
+\item Let $F_2,F_1$ be the auxiliary-averaged physical tangential
+residuals of that updated state. Their two moments are the updated
+versions of \eqref{momop:afterpressure}, including the old defects.
+For each $e=1,2$ retain the fixed normalized physical bump
+$b_e=q^{-(e+1)/2}\widehat b_e(r/\sqrt q)$ with
+$\int x^e\widehat b_e(x)\,dx=1$. Form
+\[
+ \mathfrak M_e=\int r^eF_e\,dr,\qquad
+ \sigma_e=-r^{-e}\int_0^r s^e
+                         (F_e(s)-b_e(s)\mathfrak M_e)\,ds .
+\]
+The zero total weighted integral proves compact support and
+$(\partial_r+e/r)\sigma_e=-F_e+b_e\mathfrak M_e$.
+Use $\Sigma=Q^{2A}(\sigma_2,\sigma_1)$ as the input to the
+source's signed amplitude derivative (7.31), with its fixed
+positive primary amplitudes. Source Proposition 7.6 maps an
+auxiliary-independent $M^\alpha$ stress to $W^{\alpha-1/2}$.
+Take its actual curl, retain the old-wave cross and quadratic
+correction tensor (9.13), and reconstruct pressure. The source
+does not set $b_e\mathfrak M_e$ to zero.
+
+If $\mathfrak M_e=\partial_z\mathfrak J_e$, its bump term satisfies
+the exact derivative identity
+\[
+ b_e\partial_z\mathfrak J_e
+ =\partial_z(b_e\mathfrak J_e)-(\partial_zb_e)\mathfrak J_e,\qquad
+ \partial_zb_e=-\frac{q_z}{2q}
+                    \bigl((e+1)b_e+r\partial_rb_e\bigr).
+\]
+It follows by differentiating the original $q$-scaled bump.
+Thus trading the moment bump for an axial tensor flux leaves the
+displayed radial-profile derivative term. For the axial equation,
+$\mathfrak J_1=J_z+c_{\rho,\rm phys}P$, including both product
+derivatives in \eqref{momop:afterpressure}.
+
+\item For the zero-auxiliary-mean part of the current angularly
+invariant residual, first convert the physical residual to the fixed
+source chart. In this step a star denotes that chart representative:
+\[
+\begin{gathered}
+ E_*=Q^{2A+1/2}E_{\rm phys},\qquad
+ E_{a,*}^\circ=E_{a,*}-\langle E_{a,*}\rangle_Y,\\
+ (\Delta\beta_*,\Delta v_*,\Delta\gamma_*)
+       =Q^A(\Delta\beta_{\rm phys},\Delta v_{\rm phys},
+                                      \Delta\gamma_{\rm phys}).
+\end{gathered}
+\]
+The source temporal update in these exact units is
+\[
+ \Delta v_*=-c_{i_0}^{-1}N_{i_0}^{-1}E_{\theta,*}^\circ,\qquad
+ \gamma_{d,*}=-c_{i_0}^{-1}N_{i_0}^{-1}E_{z,*}^\circ,
+ \quad
+ N_{i_0}^{-1}F=
+ \sum_{k\ne0}\frac{\widehat F(k)}{2\pi i v_t\cdot k}e^{2\pi ik\cdot H}.
+\]
+Here $v_t=(\sqrt2-1,1)$ and
+$c_{i_0}=T_g^{i_0}Q^{1+h}$, with $c_{i_0}^{-1}\le CS_*$.
+The source Diophantine bound gives
+$\|N^{-1}F\|_{C^m}\le C_m\|F\|_{C^{m+4}}$.
+Let $T_{1,*}$ and $A_{1,*}$ be the source's radial potential and
+its cutoff remainder in this chart. Realize $\gamma_{d,*}$ by
+$T_{1,*}\gamma_{d,*}$:
+$\Delta\beta_*=-\varepsilon\partial_ZT_{1,*}\gamma_{d,*}$ and
+$\Delta\gamma_*=\gamma_{d,*}-A_{1,*}\gamma_{d,*}$.
+The actual axial remainder $-A_{1,*}\gamma_{d,*}$ stays in the
+new velocity. The exact normalized cancellations are
+\[
+\begin{split}
+ c_{i_0}N_{i_0}\Delta v_*&=-E_{\theta,*}^\circ,\\
+ c_{i_0}N_{i_0}\Delta\gamma_*&=-E_{z,*}^\circ
+              -c_{i_0}N_{i_0}A_{1,*}\gamma_{d,*}.
+\end{split}
+\]
+Convert every resulting velocity component back by $Q^{-A}$ before
+reconstructing the physical pressure or taking physical products and
+defects. In particular its physical angular update is exactly
+\[
+ \Delta v_{\rm phys}
+  =-Q^{-A}c_{i_0}^{-1}Q^{2A+1/2}
+                     N_{i_0}^{-1}E_{\theta,\rm phys}^\circ
+  =-T_g^{-i_0}N_{i_0}^{-1}E_{\theta,\rm phys}^\circ .
+\]
+The last equality uses $A+1/2=1+h$ and the original
+$c_{i_0}=T_g^{i_0}Q^{1+h}$. It is also
+$-N_{\rm abs}^{-1}E_{\theta,\rm phys}^\circ$, since
+$N_{\rm abs}=T_g^{i_0}N_{i_0}$ on the representative.
+This proves the conversion without applying a normalized inverse
+directly to a physical residual.
+
+\item Apply \eqref{momop:coefficients} to the three defects of this
+updated state, use \eqref{momop:fiveincrement} and its actual
+radial component \eqref{momop:inducedradial}, and reconstruct
+pressure again. The exact remaining defects are
+\eqref{momop:Rg}--\eqref{momop:recomputed}.
+Source Lemma 8.7 maps $S^\alpha$ targets to $M^\alpha$
+tangential increments and $M^{\alpha+1}$ radial increments.
+Source Lemma 8.8 gives the remaining defect class
+$S^{\alpha+0.9-2\kappa_s}$ using the actual bounds
+$v,\gamma\in M^{0.9}$, $\beta\in M^{1.9}$, $\alpha\ge0.9$,
+and its reserved-patch base derivative bounds.
+\end{enumerate}
+
+The source cycle assumes its full finite correction-state bounds
+$w\in W^{1/2}$, $w-w_0^{\tan}\in W^{0.68}$,
+$v,\gamma,p_m\in M^{0.9}$, $\beta\in M^{1.9}$,
+with supported nonzero residual order
+$B_j=1/2+\sigma_j$, mean and defect order $C_j^*=1+\sigma_j$,
+and $\sigma_j=1/5+j/10$. Its ordered estimate proves gains
+$B_{j+1}-B_j=C_{j+1}^*-C_j^*=1/10$.
+These are requirements and conclusions for the source's construction.
+The explicit candidate budgets and equations above do not by
+themselves identify those exponents.
+
+There is a precise finite-domain statement available now. Write the
+full current residual as $R_{\rm old}+\Delta R$, retaining the old
+source state and every term of the computed increment. The added
+candidate uses finitely many labels, with its cutoffs supported
+strictly inside the source rectangle and radial annulus. On those
+compact coefficient supports, $\varepsilon>0$, $\zeta>0$,
+$\delta>0$ and $\mathcal P_\gamma(v)>0$ have positive minima
+for each fixed label. By local finiteness of the retained source-label
+family, only finitely many old labels intersect this fixed compact
+perturbation support. Every differentiated coefficient of $\Delta R$
+is finite by its explicit smooth shapes, including the retained old-state
+cross terms there. For any fixed
+$\alpha$ and derivative $I$, the maximum of its derivative divided by
+$\varepsilon^\alpha\sqrt\zeta\mathcal P_\gamma$ on these finitely
+many supports is therefore a concrete finite constant. Extend the
+finite \emph{increment} family by zero on unused labels. This proves its
+finite coefficient inequalities without assigning an asymptotic gain
+to the amplitude. It does not set any old source coefficient to zero:
+$R_{\rm old}$ retains its actual locally finite family and its attributed
+source-class bounds. The finite-sum closure in source Proposition 6.6
+combines those bounds with the proved increment bounds for each full
+current input. The same compact-support argument applies to the added
+mean sources and the reserved bump operators. Thus the operations
+above are defined on the actual old-plus-increment inputs.
+Their constants can contain the inverse of a very small Gaussian
+envelope or source scale; no uniform control for an increasing family
+of coupled stages or bands follows from this compactness argument.
+The original component budgets and the full nonlinear remainders
+remain the quantities to propagate when investigating such a family.

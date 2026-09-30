@@ -1,0 +1,210 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs}
+\title{Finite harmonic expansion of the evaluated-phase residual flux}
+\author{}
+\date{2026-09-09}
+\begin{document}
+\maketitle
+\small
+\section{Scope and chart}
+This memo expands the evaluated-phase coefficient already defined in
+\texttt{moments\_body.tex} and the finite chart of
+\texttt{quantitative\_extension.tex}.  It is a fixed-band, finite-label,
+compact-support statement.  The physical viscosity is the positive number
+$\nu_{\rm NS}$; it is not replaced by $\varepsilon$ or by the source clock
+$\nu=\sqrt{A_0}$.  Put
+\[
+ 0<Q\leq1,\qquad A=\tfrac12+h,\qquad D=\tfrac12-h,
+ \qquad \varepsilon=Q^h,
+ \qquad r=\sqrt Q R,\quad z=Q^D Z.
+\]
+The source constants $A_0,\lambda_0$ and $\mu=\lambda_0$ retain their given
+values.  Every statement below is at one such $Q$ and on the strict interior
+compact patch where all retained coefficients and their displayed
+$Z$-derivatives are smooth and compactly supported in $R$.
+
+\section{Exact angular kernel}
+Let $I_*$ and $I_y$ be the finite retained old-parent and new-harmonic label
+sets.  For $\tau\in I_*$ and $j\in I_y$, let $n_\tau,n_j\in\mathbb Z\setminus\{0\}$
+be their actual angular carriers.  Write their cylindrical component
+coefficients, before taking real parts, as
+\[
+ W_{\tau,\ell}=\Re(a_{\tau,\ell}e^{in_\tau\theta}),\qquad
+ V_{j,\ell}=Q^{-A}\Re(\zeta_{j,\ell}e^{in_j\theta}),
+ \qquad \zeta_{j,\ell}=b_{j,\ell}e^{i\varphi_j},
+\]
+where $\ell\in\{r,\theta,z\}$ and
+$\varphi_j=k_{\beta_j}m_j\Phi_j$.  The old coefficient $a_{\tau,\ell}$ includes its full retained old phase and all cutoff/path factors, so its $Z$ derivative is the full old axial derivative in this representation.  Thus
+\[
+ \partial_Z\zeta_{j,\ell}=\delta_{j,\ell}e^{i\varphi_j},
+ \qquad
+ \delta_{j,\ell}:=\partial_Zb_{j,\ell}
+       +ik_{\beta_j}m_j(\partial_Z\Phi_j)b_{j,\ell}.
+\]
+For complex $x,y$ and integers $n,m\ne0$ define
+\[
+ \mathcal A_{n,m}(x,y):=\frac14\left[
+ {\bf1}_{n+m=0}(xy+\bar x\bar y)
+ +{\bf1}_{n-m=0}(x\bar y+\bar x y)\right].
+ \tag{E1}\label{eflux:kernel}
+\]
+Expanding the two real parts and integrating each exponential over
+$[0,2\pi]$ proves exactly
+\[
+ \left\langle\Re(xe^{in\theta})\Re(ye^{im\theta})\right\rangle_\theta
+ =\mathcal A_{n,m}(x,y).
+ \tag{E2}\label{eflux:angular}
+\]
+No equal-frequency assumption is made: the indicators in
+\eqref{eflux:kernel} retain both $n=m$ and $n=-m$ possibilities.  Moreover,
+for real $Z$, differentiation commutes with the kernel,
+\[
+ \partial_Z\mathcal A_{n,m}(x,y)=
+ \mathcal A_{n,m}(\partial_Zx,y)+\mathcal A_{n,m}(x,\partial_Zy),
+ \tag{E3}\label{eflux:kernel-derivative}
+\]
+because complex conjugation and the integer indicators commute with
+$\partial_Z$.
+
+\section{Finite stress expansion}
+Let $\Pi_Y f=\int_{\mathbb T^2}f\,dY$ and $\mathsf R_Y=I-\Pi_Y$.
+The stress in the moments calculation is
+$\mathcal S=\langle w_*\otimes v+v\otimes w_*+v\otimes v\rangle_\theta$,
+and $\mathcal S^\circ=\mathsf R_Y\mathcal S$.  Since
+$S^*=Q^{2A}S$, the exact $z,\tau_e$ component is
+\begin{align}
+ (S^\circ_{z,\tau_e})^*
+ =\mathsf R_Y\Bigg\{&Q^A\sum_{\tau\in I_*}\sum_{j\in I_y}
+ \left[\mathcal A_{n_\tau,n_j}(a_{\tau,z},\zeta_{j,\tau_e})
+       +\mathcal A_{n_j,n_\tau}(\zeta_{j,z},a_{\tau,\tau_e})\right]
+ \nonumber\\[-2pt]
+ &+\sum_{i,j\in I_y}
+       \mathcal A_{n_i,n_j}(\zeta_{i,z},\zeta_{j,\tau_e})\Bigg\}.
+ \tag{E4}\label{eflux:stress}
+\end{align}
+The first line is every old--new and new--old product; the second is the
+complete new quadratic sum, including both ordered pairs.  Terms whose
+angular carriers do not satisfy an indicator in \eqref{eflux:kernel} vanish
+under the angular average, while their labels remain available for the
+finite sum.  The $Y$-projection is applied after the angular product, so
+$\langle\mathcal S^\circ\rangle_Y=0$ is retained without cancelling the
+physical evaluation.
+
+Applying \eqref{eflux:kernel-derivative} gives the exact differentiated
+coefficient.  Define
+\[
+ \mathcal D_{n,m}(x,y):=\mathcal A_{n,m}(\partial_Zx,y)
+                       +\mathcal A_{n,m}(x,\partial_Zy).
+\]
+Then
+\begin{align}
+ \partial_Z(S^\circ_{z,\tau_e})^*=\mathsf R_Y\Bigg\{&Q^A\sum_{\tau,j}
+ \big[\mathcal D_{n_\tau,n_j}(a_{\tau,z},\zeta_{j,\tau_e})
+      +\mathcal D_{n_j,n_\tau}(\zeta_{j,z},a_{\tau,\tau_e})\big]
+ \nonumber\\
+ &+\sum_{i,j}\mathcal D_{n_i,n_j}(\zeta_{i,z},\zeta_{j,\tau_e})\Bigg\},
+ \tag{E5}\label{eflux:stress-derivative}
+\end{align}
+where all sums have the finite ranges $\tau\in I_*$ and $i,j\in I_y$.
+In \eqref{eflux:stress-derivative}, the old terms contain
+$\partial_Za_{\tau,\ell}$ and the new terms contain
+$\partial_Z\zeta_{j,\ell}=\delta_{j,\ell}e^{i\varphi_j}$; no parent derivative
+has been identified with a new derivative.
+
+\section{The coefficient $C_e^\circ$ and its finite envelope}
+For $e\in\{1,2\}$, set $\tau_2=\theta$ and $\tau_1=z$, and define exactly
+\[
+ C_e^\circ(Z,T):=\int_0^\infty R^e\sup_{Y\in\mathbb T^2}
+ \left|\partial_Z(S^\circ_{z,\tau_e})^*(R,Z,T,Y)\right|\,dR.
+ \tag{E6}\label{eflux:C}
+\]
+Because $\|\mathsf R_Yf\|_{L^\infty_Y}\le2\|f\|_{L^\infty_Y}$, the finite sums in \eqref{eflux:stress-derivative} give the explicit envelope
+\begin{align}
+ C_e^\circ\le 2Q^A\sum_{\tau,j}\int_0^\infty R^e\sup_Y &\left(
+ |\mathcal D_{n_\tau,n_j}(a_{\tau,z},\zeta_{j,\tau_e})|
+ +|\mathcal D_{n_j,n_\tau}(\zeta_{j,z},a_{\tau,\tau_e})|\right)dR
+ \nonumber\\
+ &+2\sum_{i,j}\int_0^\infty R^e\sup_Y
+ |\mathcal D_{n_i,n_j}(\zeta_{i,z},\zeta_{j,\tau_e})|\,dR .
+ \tag{E6a}\label{eflux:C-envelope}
+\end{align}
+The indicators in $\mathcal D$ make every nonmatching pair exactly zero;
+therefore \eqref{eflux:C-envelope} is a finite pair sum, not an infinite
+or continuum estimate.\nThe $Y$-evaluation map $Y=Y(r,t)$ is independent of $z$, hence the chain
+rule in the moments body gives
+\[
+ M_e^{\rm ev}-M_e
+ =\partial_z\int_0^\infty r^e\mathcal S^\circ_{z,\tau_e}(r,z,t,Y(r,t))\,dr,
+ \qquad
+ |M_e^{\rm ev}-M_e|\le
+ Q^{(e+1)/2-2A-D}C_e^\circ
+ =Q^{e/2-2A+h}C_e^\circ.
+ \tag{E7}\label{eflux:evaluation-bound}
+\]
+The exponent uses $1/2-D=h$ exactly.
+
+For a directly checkable finite majorant, let
+\[
+ \|f\|_{e,\infty Y}:=\left(\int_0^\infty R^e\sup_Y|f(R,Y)|^2dR\right)^{1/2},
+ \quad \alpha_e:=\frac{e+1}{4}-A,
+\]
+and use the finite chart quantities
+\[
+ \|a_{\tau,\ell}\|_{e,\infty Y}\le Q^{\omega_{e,\tau}-(e+1)/4}W_{e,\tau,\ell},\quad
+ \|\partial_za_{\tau,\ell}\|_{e,\infty Y}\le Q^{\dot\omega_{e,\tau}-(e+1)/4}\dot W_{e,\tau,\ell},
+ \quad
+ \|b_{j,\ell}\|_e\le B_{j,e,\ell},\quad
+ \|\delta_{j,\ell}\|_e\le D_{j,e,\ell}.
+ \tag{E8}\label{eflux:orders}
+\]
+These are finite compact-patch constants; the displayed chart powers include the physical-to-chart measure factor and do not assert uniformity in $Q$.
+Since $\partial_Za=Q^D\partial_za$, Cauchy--Schwarz and $\|\mathsf R_Yf\|_\infty\le2\|f\|_\infty$
+give the old--new contributions to the right side of \eqref{eflux:evaluation-bound}
+with powers
+\[
+ Q^{\alpha_e+\dot\omega_{e,\tau}}\dot W_{e,\tau,\ell}B_{j,e,k},
+ \qquad
+ Q^{\alpha_e+\omega_{e,\tau}-D}W_{e,\tau,\ell}D_{j,e,k},
+ \tag{E9}\label{eflux:old-orders}
+\]
+for every angularly matched pair and the appropriate components $(\ell,k)$.
+The two exponents are distinct and are not merged unless the actual parent
+proves $\dot\omega_{e,\tau}=\omega_{e,\tau}-D$.  The quadratic evaluated terms
+carry the separate exact power
+\[
+ Q^{(e+1)/2-2A-D}=Q^{e/2-2A+h}
+\tag{E10}\label{eflux:quad-order}
+\]
+against the finite products $D_{i,e,z}B_{j,e,\tau_e}$ and
+$B_{i,e,z}D_{j,e,\tau_e}$.  Thus evaluation preserves the same finite
+$Q$ powers as the moment rows after the explicit $C_e^\circ$ factor, while
+retaining all harmonic matching and all old-parent derivative orders.
+
+\section{Support, signs, and viscosity}
+Every term in \eqref{eflux:stress} contains at least one compactly supported
+new factor, so the $R$ integrals in \eqref{eflux:C} and the boundary terms in
+the moments are finite and the radial boundary contribution vanishes.  The
+kernel is real and retains the signs of the signed amplitudes and phases.
+Full reflection reverses the corresponding signed cross flux as dictated by
+the reflected vector field; absolute envelopes use the same finite constants.
+No sign of $Q$, $\varepsilon$, $A$, $D$, or $\nu_{\rm NS}$ is changed.
+The retained viscous term remains $-\nu_{\rm NS}\Delta v$ with its radial,
+axial, angular, and cylindrical coupling costs.  Nothing in the evaluation
+map supplies a source endpoint or a uniform $Q\downarrow0$ estimate.
+
+\section{Finite conclusion}
+Equations \eqref{eflux:stress}--\eqref{eflux:quad-order} are the strongest
+finite evaluated-phase expansion established here: an exact finite harmonic
+identity, its exact $Z$ derivative, and a finite compact-patch envelope with
+separate old field and old derivative orders.  They do not prove the released
+third shooting return, a uniform infinite modified sequence, or a smooth
+terminal-force extension.
+\end{document}
+
+
+
+
+
+
+

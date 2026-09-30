@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "check_count": 56,
+  "method": "Exact independent profile/envelope jets; original-parameter third relative-flow identities; full four-field ordered-interaction telescoping; exact rational and physical-power checks.",
+  "scope": "Algebra for the actual compact third growth and its full PDE residuals. Analytic threshold existence, support and norm inequalities require the written companion proofs; this replay does not assert a third return.",
+  "assumptions": [
+    "trace(D)=0",
+    "k'=-D^T k",
+    "P'=F with independent primitive constant",
+    "material transport of the actual cutoff",
+    "rho=k dot k>0",
+    "equal physical diffusivity d",
+    "actual third-growth flow h'=a Omega1",
+    "Omega2=0 during third growth while Theta2 is retained"
+  ],
+  "script_sha256": "0600bfed2bda5709d5a64c16bc5f2a4c0d8a34ce7708e052bed0d89d551b2124",
+  "body_sha256": "d80d4b6100bdc3e7a6e0fbfced499453306c6c1270b2bf80e63b694215e73852",
+  "sympy_version": "1.13.1",
+  "checks": [
+    {
+      "name": "velocity_from_original_primitive",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "increment_is_exactly_divergence_free",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "all_scalar_laplacian_terms",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "all_primitive_laplacian_terms",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "all_six_velocity_laplacian_groups",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "laplacian_commutes_with_rotated_gradient",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "scalar_self_advection_with_envelope",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "trace_free_transport_matrix_identity",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_velocity_derivative_sign",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_temperature_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "damped_stream_amplitude_derivative",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_scalar_parent_coupling_cancellation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "complete_damped_scalar_residual",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "complete_damped_vector_residual",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "uncut_sine_scalar_damping_cancellation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "uncut_sine_vector_damping_cancellation",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "affine_profile_cell_retains_scalar_force",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "affine_profile_cell_retains_vector_force",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "material_phase_metric",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "material_mixed_scalar_term",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "material_envelope_laplacian",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_SL2_matrix_determinant",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_affine_divergence_free",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_original_material_coordinates",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_transported_phase",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_transported_nonradial_envelope",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "explicit_time_dependent_velocity_transport",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "two_increment_momentum_telescoping",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "two_increment_temperature_telescoping",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "full_mixed_jet_commutator_axis_1",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "full_mixed_jet_commutator_axis_2",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "independent_mixed_pullback_time_1_space_1",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "independent_mixed_pullback_time_2_space_1",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_relative_flow_determinant",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_explicit_inverse_both_directions",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_flow_initial_value",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_flow_actual_affine_ODE",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_inverse_actual_ODE",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_covector_actual_ODE",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_material_coordinate_transport",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_material_phase_transport",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_phase_born_in_original_coordinates",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "all_three_increment_vector_interactions",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "all_three_increment_scalar_interactions",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "held_second_velocity_still_has_reverse_temperature_interaction",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "affine_primitive_retains_original_constant",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "primitive_constant_velocity_cutoff_contribution",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "primitive_constant_vector_diffusion_cutoff_contribution",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "third_original_source_radius_cost",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_scalar_diffusion_frequency_power",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_vector_diffusion_frequency_power",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "name": "third_shear_norm_bound",
+      "passed": true,
+      "exact_comparison": "True"
+    },
+    {
+      "name": "third_hold_horizon_is_strictly_inside_second_hold",
+      "passed": true,
+      "exact_comparison": "True"
+    },
+    {
+      "name": "third_phase_length_bound",
+      "passed": true,
+      "exact_comparison": "True"
+    },
+    {
+      "name": "explicit_unit_scaled_collar_fits_remaining_horizon",
+      "passed": true,
+      "exact_comparison": "True"
+    },
+    {
+      "name": "source_Y3_nesting_denominator_is_positive",
+      "passed": true,
+      "exact_comparison": "True"
+    }
+  ]
+}

@@ -63,3 +63,13 @@ Each topic retains its own Zenodo publication family and prior versions. The old
 ## Participate in PolyClank
 
 This is an open, AI-assisted mathematical workbench, including work with ChatGPT 5.6 Sol and GPT-6 Astra. To contribute, fork this repository, add your argument or reproducible calculation with a readable explanation, and open a pull request. The [contribution guide](CONTRIBUTING.md) explains how to submit and discuss the work. Contributions are assessed on their mathematics; the code and receipts accompany the proofs rather than replacing exposition.
+
+## Navier–Stokes: 30 September additions
+
+The [finite-control and force collection](navier-stokes/continuations/20260930-coupled-viscous-control/)
+adds complete positive-diffusion Boussinesq return proofs, exact scaling and
+state maps, full-support signed forces and a quantitative force-to-state
+calculation. The original corrected reader, source reconstruction and
+vacuum-hydrodynamics continuation are retained. The infinite modified
+trajectory and complete independent global NS validation remain unfinished.
+The Everyday English reference material is an unfinished experiment.

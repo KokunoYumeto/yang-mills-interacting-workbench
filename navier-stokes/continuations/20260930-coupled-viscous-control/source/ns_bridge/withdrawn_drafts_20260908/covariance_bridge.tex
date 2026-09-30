@@ -1,0 +1,260 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\proj}{\operatorname{proj}}
+\title{A bounded covariance and correction bridge for the released Navier--Stokes pulse construction}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\sloppy
+
+\section{Scope and provenance}
+This note records exact finite algebra relating the pulse/frame residual map used in the
+coupled-viscous calculation to the covariance and compact-correction maps in the released
+Navier--Stokes construction.  It is a local bridge, not an identification of the two
+constructions and not a proof of a global or infinite correction sequence.  All operations
+below are on a fixed finite pulse interval, a fixed annular support, and a fixed chart where
+the displayed inverses exist.
+
+The read-only source is \texttt{openai\_navier\_stokes.pdf}.  Its SHA-256 hash is
+\begin{center}
+\texttt{8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81}
+\end{center}
+The covariance equations are source (7.23)--(7.36), PDF pages 81--85; exact curl and
+cutoff remainders are (7.37)--(7.42), pages 85--87; mean equations and radial primitives
+are (8.1)--(8.23), pages 88--96; the five-dimensional map is (8.24)--(8.27), pages
+96--100.  The finite correction cycle is (9.3)--(9.14), pages 103--111.  Terminal force
+localization and extension, used only for the final scope statement, are (10.4)--(10.11),
+PDF pages 118--120.
+
+\section{Pulse residual and its embedding}
+Write the released pulse equations on one lifted rectangle as
+\begin{equation}
+ n\cdot t_m=0,\qquad t_m'+\mathsf Kt_m+m^2d_Nt_m+ikm n\pi_m=-f_m,
+ \qquad d_N=\varepsilon k^2|n|^2,
+ \label{eq:source}
+\end{equation}
+with $m\in\mathbb Z\setminus\{0\}$.  The projected operator and pressure are
+\begin{equation}
+ \mathsf A_\Phi=-\mathsf K+\frac{n(n^T\mathsf K-(n')^T)}{|n|^2},\qquad
+ \pi_m=\frac{i}{km|n|^2}\bigl(n\cdot\mathsf Kt_m-(n')\cdot t_m+n\cdot f_m\bigr).
+ \label{eq:sourceproj}
+\end{equation}
+For the coupled retained-viscosity pair, let
+\begin{equation}
+ y=\binom{\Theta}{\Omega},\qquad y'=q_v(C_cy+c_c),\qquad q_v=\frac{\dd t}{\dd v}>0,
+ \qquad C_c=\begin{pmatrix}-\lambda_c^\Theta&a_c\\ b_c&-\lambda_c^\Omega\end{pmatrix},
+ \label{eq:pair}
+\end{equation}
+where every coefficient may depend on the evolving parent background.  Let $B(v)$ have full
+column rank, $B_\ell B=I_2$, and let $L(v)$ be a $C^1$ two-by-two map.  Set
+$t=B Ly$ and
+\begin{equation}
+ H=B_\ell(\mathsf A_\Phi B-B').
+\end{equation}
+A direct differentiation gives the exact projected residual
+\begin{align}
+ B_\ell\proj_{n^\perp}[t'-\mathsf A_\Phi t+m^2d_Nt+f_m]
+ &=\bigl[L'+q_vLC_c-HL+m^2d_NL\bigr]y+q_vLc_c
+   +B_\ell\proj_{n^\perp}f_m. \label{eq:bridge}
+\end{align}
+The identity retains moving-frame, shear, both coupled diffusion rates, controls, and source
+forcing.  It is the input to the covariance map below; no equality of the frames or of the
+backgrounds is assumed.
+
+\section{Covariance and the signed amplitude map}
+For real vector fields define the source covariance and symmetric cross term
+\begin{equation}
+ C(w)=\left\langle\left\langle w_r(w_\theta,w_z)\right\rangle_\theta\right\rangle_Y,qquad
+ B(w,v)=\left\langle\left\langle w_r(v_\theta,v_z)+v_r(w_\theta,w_z)\right\rangle_\theta\right\rangle_Y.
+ \label{eq:cov}
+\end{equation}
+Thus $C(w+v)=C(w)+B(w,v)+C(v)$ and $DC(w)[v]=B(w,v)$ exactly.
+Let $b_+,b_-$ be the two source homogeneous pulse fields including the radial and pulse
+cutoffs but excluding the scalar amplitudes.  Their auxiliary rectangles are disjoint.  Put
+\begin{equation}
+ H_{\rm cov}=\begin{bmatrix}C(b_+)&C(b_-)\end{bmatrix}\in\R^{2\times2}.
+ \label{eq:Hcov}
+\end{equation}
+Disjointness and bilinearity imply, for all real $a_+,a_-$,
+\begin{equation}
+ C(a_+b_++a_-b_-)=H_{\rm cov}\binom{a_+^2}{a_-^2}.\label{eq:quadratic}
+\end{equation}
+The source's positive branch chooses a target $T_*$ with
+$y_*=H_{\rm cov}^{-1}T_*$ having both components positive and sets
+$a_\sigma=\sqrt{(y_*)_\sigma}$ and
+$W_0=\sqrt\varepsilon\sum_{\sigma=\pm}a_\sigma b_\sigma$.  Then
+\begin{equation}
+ C(W_0)=\varepsilon T_* .\label{eq:leadingcov}
+\end{equation}
+This positivity is a cone condition for the selected representation only.
+
+For an arbitrary real two-vector stress increment $\Sigma$ independent of angular and
+auxiliary variables, define
+\begin{equation}
+ d_\Sigma=H_{\rm cov}^{-1}(\Sigma/\varepsilon),\qquad
+ (\delta a)_\sigma=\frac{(d_\Sigma)_\sigma}{2a_\sigma},\qquad
+ L_\Sigma=\sqrt\varepsilon\sum_{\sigma=\pm}(\delta a)_\sigma b_\sigma .
+ \label{eq:signedmap}
+\end{equation}
+The denominator is the fixed primary $a_\sigma>0$; the new stress is never square-rooted.
+The exact cross identity is
+\begin{equation}
+ B(W_0,L_\Sigma)=\varepsilon H_{\rm cov}(2a_+\delta a_+,2a_-\delta a_-)^T=\Sigma,
+ \label{eq:rightinverse}
+\end{equation}
+and therefore
+\begin{equation}
+ C(W_0+L_\Sigma)=\varepsilon T_*+\Sigma+C(L_\Sigma).\label{eq:covremainder}
+\end{equation}
+The final term is retained in the residual.  Equations \eqref{eq:signedmap}--\eqref{eq:covremainder}
+are linear in $\Sigma$ up to the explicitly displayed quadratic remainder $C(L_\Sigma)$.
+They remain valid when $\Sigma$ has either sign and when either $(\delta a)_\sigma$ is
+negative.
+
+\begin{proposition}[Exact embedding of the signed covariance correction]
+On any finite interval where $B_\ell$, $H_{\rm cov}$, and the fixed $a_\sigma$ are defined,
+the map $(y,\Sigma)\mapsto(t,L_\Sigma)$ given by \eqref{eq:pair}, \eqref{eq:bridge}, and
+\eqref{eq:signedmap} has the following exact properties: (i) its pulse residual is
+\eqref{eq:bridge} with $L$ replaced by the actual coefficient map; (ii) the covariance change
+is \eqref{eq:covremainder}; and (iii) the sign reversal $(y,c_c,\Sigma)\mapsto(-y,-c_c,-\Sigma)$
+reverses the signed pulse and correction while leaving the quadratic covariance of each
+individual wave unchanged.  No positive amplitude assumption is used for $\Sigma$.
+\end{proposition}
+\begin{proof}
+Differentiate $t=B Ly$ and use $y'=q_v(C_cy+c_c)$ to obtain \eqref{eq:bridge}.  Expand
+\eqref{eq:cov} twice to obtain \eqref{eq:rightinverse} and \eqref{eq:covremainder}.
+The map $C$ is quadratic and $B$ is bilinear, so $C(-w)=C(w)$ and
+$B(-w,-v)=B(w,v)$; the pulse residual is linear in $(t,f_m,\pi_m)$ and hence is sign-equivariant.
+\end{proof}
+
+\section{Compact radial correction and pressure defect}
+The source uses the radial operator $D_e=\partial_R+e/R$, $e\in\{0,1,2\}$, and the
+compact primitive.  For a shell-supported $F(R,Y)$ define
+\begin{equation}
+ M_e=\int_0^\infty R^e\langle F\rangle_Y\dd R,qquad
+ \sigma_e(R)=-R^{-e}\int_0^R s^e\bigl(F(s)-b_e(s)M_e\bigr)\dd s,
+ \quad \int_0^\infty R^e b_e(R)\dd R=1.\label{eq:radial}
+\end{equation}
+Differentiating the integral proves
+\begin{equation}
+ D_e\sigma_e=-F+b_eM_e,qquad
+ \int_0^\infty R^e(F-b_eM_e)\dd R=0.\label{eq:radialidentity}
+\end{equation}
+The lower-end primitive and zero weighted moment force $\sigma_e$ to vanish outside the
+source and bump supports.  In the source correction cycle, $F_2=Q^{-2A-1/2}\langle E_\theta\rangle_Y$,
+$F_1=Q^{-2A-1/2}\langle E_z\rangle_Y$ and $\Sigma=Q^{2A}(\sigma_2,\sigma_1)$.
+The covariance increment \eqref{eq:rightinverse} cancels the radial divergence of $F_e$;
+the bump term $b_eM_e$ remains and is carried to the finite moment correction.
+
+For a radial source $g_r$ and normalized bump $\rho$, define
+\begin{equation}
+ P=\int_0^\infty\langle g_r\rangle_Y\dd R,qquad
+ p_m=T_0(g_r-\rho P),\qquad \int_0^\infty\rho\dd R=1.\label{eq:pressure}
+\end{equation}
+With $A_0$ the compact-primitive remainder, the exact pressure equation is
+\begin{equation}
+ D_0p_m-g_r=-\rho P-A_0(g_r-\rho P),\qquad
+ \int_0^\infty\partial_R\langle p_m\rangle_Y\dd R=0.\label{eq:pressureidentity}
+\end{equation}
+The first term is the explicit pressure defect and $A_0$ has zero auxiliary mean; it is not
+silently discarded.
+
+\section{Three defects and the five-dimensional correction}
+For the complete divergence-free velocity tuple used by the source, set
+\begin{align}
+ J_\theta&=\int_0^\infty R^2\langle Gv+V\gamma+\gamma v+W_{z\theta}\rangle_Y\dd R,\\
+ J_z&=\int_0^\infty R\langle2G\gamma+\gamma^2+W_{zz}\rangle_Y\dd R
+ -\frac12\int_0^\infty R^2\langle g_r\rangle_Y\dd R.\label{eq:defects}
+\end{align}
+The source integrated balances are
+\begin{equation}
+ \int_0^\infty R^2\langle E_\theta\rangle_Y\dd R=\varepsilon\partial_ZJ_\theta,qquad
+ \int_0^\infty R\langle E_z\rangle_Y\dd R=\varepsilon\partial_Z(J_z+c_\rho P),
+ \quad c_\rho=\frac12\int_0^\infty R^2\rho\dd R.\label{eq:integrated}
+\end{equation}
+The retained moment constraints are
+\begin{equation}
+ \int_0^\infty R^2\langle v\rangle_Y\dd R=0,qquad
+ \int_0^\infty R\langle\gamma\rangle_Y\dd R=0.\label{eq:moments}
+\end{equation}
+The five fixed bump coefficients $(\Delta v,\gamma_d)$ solve exactly
+\begin{equation}
+\begin{gathered}
+ \int R^2\Delta v\dd R=0,\qquad \int R\gamma_d\dd R=0,\\
+ \int (2V/R)\Delta v\dd R=-P,\qquad
+ \int R^2(G\Delta v+V\gamma_d)\dd R=-J_\theta,\\
+ \int R(2RG\gamma_d-RV\Delta v)\dd R=-J_z.
+\end{gathered}\label{eq:fivemap}
+\end{equation}
+On the reserved patch, $G=0$, $V=a(\eta)x^{-1-2\lambda}$ with $\lambda>0$ and
+$|a(\eta)|\ge a_0>0$. Choosing three disjoint scaled azimuthal bumps and two disjoint
+scaled axial bumps makes the normalized coefficient matrices Vandermonde matrices in the
+distinct powers $2,-2-2\lambda,-2\lambda$ and $1,1-2\lambda$. Their determinants are nonzero,
+so \eqref{eq:fivemap} is a unique linear map in $(P,J_\theta,J_z)$.
+
+After the update, pressure is recomputed from the complete new $g_r$.  If
+$R_g=g_{r,\mathrm{new}}-g_r-(2V/R)\Delta v$, direct expansion gives
+\begin{align}
+ R_g={}&-t_*\Delta\beta-D_1(2b\Delta\beta+2\beta\Delta\beta+(\Delta\beta)^2)\\
+ &-D_z(b\Delta\gamma+G\Delta\beta+\beta\Delta\gamma+\gamma\Delta\beta+\Delta\beta\Delta\gamma)\\
+ &+\frac{2v\Delta v+(\Delta v)^2}{R}+\varepsilon(\Delta_0-R^{-2})\Delta\beta .\label{eq:rg}
+\end{align}
+The three recomputed defects are exactly
+\begin{equation}
+ P_{\rm new}=\int\langle R_g\rangle_Y\dd R,\quad
+ (J_\theta)_{\rm new}=\int R^2\langle\gamma\Delta v+v\Delta\gamma+\Delta\gamma\Delta v\rangle_Y\dd R,
+\end{equation}
+\begin{equation}
+ (J_z)_{\rm new}=\int R\langle2\gamma\Delta\gamma+(\Delta\gamma)^2\rangle_Y\dd R
+ -\frac12\int R^2\langle R_g\rangle_Y\dd R.\label{eq:newdefects}
+\end{equation}
+Thus the fixed linear map cancels only its displayed linear terms; every quadratic term in
+\eqref{eq:rg}--\eqref{eq:newdefects} remains and is part of the next source.
+
+\section{Terminal force and exact scope}
+After spatial and temporal localization, the source defines
+\begin{equation}
+ u=\operatorname{curl}(cA)+cB e_\theta,\qquad p=cp_{\rm loc},\qquad
+ f=\partial_tu+(u\cdot\nabla)u-\Delta u+\nabla p.\label{eq:force}
+\end{equation}
+Every cutoff derivative is included in $f$.  Its divergence satisfies
+\begin{equation}
+ -\Delta p=\sum_{i,j}\partial_i\partial_j(u_i u_j)-\operatorname{div}f.\label{eq:poisson}
+\end{equation}
+The source then proves that every mixed derivative of $f$ has a uniform limit as $t\uparrow1$,
+with compactly supported limits $F^j$ satisfying $\partial_x^\alpha F^j(0)=0$, and extends it
+for $t=1+\sigma$ by
+\begin{equation}
+ f(x,1+\sigma)=\sum_{j\ge0}\chi_0(b_j\sigma)\frac{\sigma^j}{j!}F^j(x).\label{eq:forceextension}
+\end{equation}
+This terminal-force argument belongs to the source's localized field.  The covariance bridge
+above proves neither the endpoint derivative limits nor this extension for the coupled pair.
+
+\begin{remark}[Sign and positive scales]
+The quantities $q_v>0$, $\varepsilon>0$, $d_N>0$, $y_*>0$ on the selected cone branch, and
+$\lambda>0$ are geometric, viscosity, orientation, or fixed-representation hypotheses.
+They do not impose a sign on a physical blowout.  The signed amplitudes in
+\eqref{eq:signedmap} may be negative, and the equations are equivariant under simultaneous
+sign reversal of the pulse, controls, and forcing.  A negative blowout branch has the same
+quadratic covariance magnitude while its signed velocity and force reverse.  Therefore no
+positive-scale conclusion is drawn from the source's positive covariance decomposition.
+\end{remark}
+
+\section{Proven limits}
+The exact results in this fragment are: the residual map \eqref{eq:bridge}; the covariance
+identity \eqref{eq:covremainder} with arbitrary signed stress increment; the compact radial
+identities \eqref{eq:radialidentity} and \eqref{eq:pressureidentity}; the integrated defects
+\eqref{eq:integrated}; and the finite correction and recomputation maps
+\eqref{eq:fivemap}--\eqref{eq:newdefects}.  No source pulse is identified with the coupled
+pair, no infinite modified sequence is constructed, and no third-return or global theorem is
+claimed.
+\end{document}
+
+

@@ -1,0 +1,112 @@
+{
+  "schema": "third-growth-quantitative-replay-v1",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "complete_physical_residual_component_0",
+      "passed": true
+    },
+    {
+      "name": "complete_physical_residual_component_1",
+      "passed": true
+    },
+    {
+      "name": "complete_physical_residual_component_2",
+      "passed": true
+    },
+    {
+      "name": "exact_shape_divergence_0",
+      "passed": true
+    },
+    {
+      "name": "exact_shape_divergence_1",
+      "passed": true
+    },
+    {
+      "name": "exact_shape_divergence_2",
+      "passed": true
+    },
+    {
+      "name": "exact_shape_divergence_3",
+      "passed": true
+    },
+    {
+      "name": "old_field_divergence",
+      "passed": true
+    },
+    {
+      "name": "actual_added_field_divergence",
+      "passed": true
+    },
+    {
+      "name": "physical_affine_clock_order_1",
+      "passed": true
+    },
+    {
+      "name": "physical_affine_clock_order_2",
+      "passed": true
+    },
+    {
+      "name": "physical_affine_clock_order_3",
+      "passed": true
+    },
+    {
+      "name": "physical_time_equals_residual_unit",
+      "passed": true
+    },
+    {
+      "name": "physical_viscosity_retains_epsilon",
+      "passed": true
+    },
+    {
+      "name": "advection_equals_residual_unit",
+      "passed": true
+    },
+    {
+      "name": "pressure_equals_residual_unit",
+      "passed": true
+    },
+    {
+      "name": "actual_radial_norm_units_1",
+      "passed": true
+    },
+    {
+      "name": "actual_axial_derivative_norm_units_1",
+      "passed": true
+    },
+    {
+      "name": "actual_radial_norm_units_2",
+      "passed": true
+    },
+    {
+      "name": "actual_axial_derivative_norm_units_2",
+      "passed": true
+    },
+    {
+      "name": "actual_second_component_frequency_power",
+      "passed": true
+    },
+    {
+      "name": "actual_second_component_budget",
+      "passed": true
+    },
+    {
+      "name": "actual_second_component_derivative_budget",
+      "passed": true
+    },
+    {
+      "name": "first_clock_cost",
+      "passed": true
+    },
+    {
+      "name": "second_clock_cost",
+      "passed": true
+    }
+  ],
+  "check_count": 25,
+  "sources": {
+    "quantitative_body.tex": "d55600b0f9eaed3ddc7ea18f9075d8b7d4c556372183e75dfc6e7324378edf26",
+    "replay_quantitative.py": "40d495a756d5bf295ed6c32bb883eddca504c16f5ef59b12e6bc535915957604"
+  },
+  "scope": "Exact full-residual product rule with four nontrivial divergence-free shape fields, arbitrary time amplitudes, unequal clocks and retained physical viscosity; exact original scale identities. Analytic bounds are proved in the TeX."
+}

@@ -1,0 +1,224 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,hyperref}
+\geometry{margin=1in}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\proj}{\operatorname{proj}}
+\newcommand{\dd}{\,\mathrm d}
+\title{A bounded pulse comparison: the released Navier--Stokes wave ODE and the coupled viscous pair}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\sloppy
+
+\section{Scope and source equations}
+This note records one local, exact comparison.  It does not identify the
+coupled Boussinesq stages with the released Navier--Stokes construction and
+makes no claim about a global Navier--Stokes solution.  The source is the
+released PDF \texttt{openai\_navier\_stokes.pdf}, SHA-256
+\texttt{8c8a94ad9ac824c8b605b9827cadf7beaca48bd10b380de3cfc872a2c37afa81}.
+The source statements used here are Section 7, equations (7.2)--(7.8),
+(7.12)--(7.22), and Section 9, equations (9.1)--(9.2), on PDF pages 74--75,
+78--81, and 102--103.  In the source notation, on one lifted pulse rectangle,
+\begin{equation}
+ \Phi=p\theta+p_zZ/\varepsilon+x_0R-v(pF+p_zG),\qquad
+ n=\nabla_*\Phi,
+\end{equation}
+with
+\begin{equation}
+ n=(x_0-v(pF_R+p_zG_R),\ p/R,\ p_z-\varepsilon v(pF_Z+p_zG_Z)).
+ \label{eq:nsource}
+\end{equation}
+For a nonzero integer harmonic $m$, the exact principal pulse equations are
+\begin{equation}
+ n\cdot t_m=0,\qquad
+ t_m'+\mathsf Kt_m+m^2d_Nt_m+ikm n\pi_m=-f_m,
+ \qquad d_N=\varepsilon k^2|n|^2,
+ \label{eq:sourcepulse}
+\end{equation}
+where a prime is the pulse-coordinate derivative and
+\begin{equation}
+ \mathsf K=\begin{pmatrix}0&-2F&0\\2F+RF_R&0&0\\G_R&0&0\end{pmatrix},\qquad
+ \mathsf A_\Phi=-\mathsf K+\frac{n(n^T\mathsf K-(n')^T)}{|n|^2}.
+ \label{eq:sourceoperator}
+\end{equation}
+The source pressure coefficient is exactly
+\begin{equation}
+ \pi_m=\frac{i}{km|n|^2}\bigl(n\cdot\mathsf Kt_m-(n')\cdot t_m+n\cdot f_m\bigr).
+ \label{eq:sourcepressure}
+\end{equation}
+The source's energy identity (7.22) is
+\begin{equation}
+ \frac12(|t_m|^2)'=-g\cdot\bigl(t_{m,r}(t_{m,\theta},t_{m,z})\bigr)
+ -\varepsilon k^2|n|^2|t_m|^2,
+ \label{eq:sourceenergy}
+\end{equation}
+where $g=(RF_R,G_R)$ in the tangential coordinates.  Thus the source pulse
+retains both shear transfer and viscous dissipation.
+
+\section{The coupled physical pair}
+For one activated layer of the coupled calculation, put
+\begin{equation}
+ a_c=-\frac{J\zeta\cdot G_{<q}}{Kr^2},\qquad b_c=K\zeta_1,qquad
+ \lambda_c^\Theta=\kappa K^2r^2,qquad \lambda_c^\Omega=\varepsilon_c K^2r^2.
+\end{equation}
+Its exact retained-viscosity pair, including optional scalar and vorticity
+controls, is
+\begin{equation}
+ \dot y=C_cy+c_c,qquad y=\binom{\Theta}{\Omega},\qquad
+ C_c=\begin{pmatrix}-\lambda_c^\Theta&a_c\\b_c&-\lambda_c^\Omega\end{pmatrix},\quad
+ c_c=\binom{c_\theta}{c_\omega}.
+ \label{eq:coupledpair}
+\end{equation}
+Here $G_{<q}$, $\zeta$, and $r$ evolve with the inherited background and phase
+ODEs; in particular no fixed-background substitution is made.  Let $v$ be a
+source pulse coordinate on an interval and let $q_v=\dd t/\dd v>0$ be its
+physical-time parametrization.  Define $y'(v)=q_v(C_cy+c_c)$.
+
+\section{Exact local residual map}
+Let $B(v)\in\R^{3\times2}$ be a $C^1$ tangent frame with full column rank and
+$n(v)^TB(v)=0$, so its range is exactly $n(v)^\perp$.  Let $B_\ell(v)$ be any
+left inverse, $B_\ell B=I_2$; then $B B_\ell$ acts as the identity on
+$n^\perp$.  Let $L(v)\in\R^{2\times2}$ be any $C^1$ coefficient map and embed
+the coupled pair into a transverse source amplitude by
+\begin{equation}
+ t(v)=B(v)L(v)y(v).
+ \label{eq:embedding}
+\end{equation}
+For an embedding with a non-tangent frame the transversality condition would be
+\begin{equation}
+ n(v)^TB(v)L(v)y(v)=0.
+ \label{eq:transversecondition}
+\end{equation}
+For the tangent frame used here, the condition holds for every $L,y$.  Set
+\begin{equation}
+ H(v)=B_\ell(v)\bigl(\mathsf A_\Phi(v)B(v)-B'(v)\bigr).
+ \label{eq:Hdef}
+\end{equation}
+Then the exact projected source residual of the embedded coupled pair is
+\begin{align}
+ \mathcal E_{L,c}:=B_\ell\proj_{n^\perp}
+ \left[t'-\mathsf A_\Phi t+m^2d_Nt+f_m\right]
+ &=\left[L'+q_vLC_c-HL+m^2d_NL\right]y+q_vLc_c \\
+ &\quad+B_\ell\proj_{n^\perp}f_m.
+ \label{eq:residualmap}
+\end{align}
+In particular, with $L=I$ and no added source, the defect is the explicit
+matrix expression
+\begin{equation}
+ \mathcal E_{I,0}=\bigl(q_vC_c-H+m^2d_NI_2\bigr)y.
+ \label{eq:identitydefect}
+\end{equation}
+This is the strongest local relation available without asserting that the two
+constructions have identical frames, coordinates, or coefficients.
+
+\begin{proof}
+Differentiate \eqref{eq:embedding}:
+$t'=B'L y+B L'y+B L y'$.  Since $y'=q_v(C_cy+c_c)$,
+left-multiply $t'-\mathsf A_\Phi t+m^2d_Nt+f_m$ by $B_\ell$ and use
+$B_\ell B=I_2$.  The terms involving $B'$ and $\mathsf A_\Phi B$ combine as
+$-HL$ by \eqref{eq:Hdef}; the remaining terms are exactly those in
+\eqref{eq:residualmap}.  Because $\mathsf A_\Phi$ is the projected operator,
+\begin{equation}
+ n^T\bigl(t'-\mathsf A_\Phi t+m^2d_Nt+f_m\bigr)=0
+\end{equation}
+whenever $n^TB=0$ and the forcing pressure below is used.  Hence the projected
+identity determines the full residual in the two-dimensional transverse plane.
+\end{proof}
+
+\section{Pressure reconstruction and full three-dimensional residual}
+For any embedded transverse $t$ and arbitrary $f_m$, define
+\begin{equation}
+ \pi_{L,c}=\frac{i}{km|n|^2}
+ \left(n\cdot\mathsf Kt-(n')\cdot t+n\cdot f_m\right).
+ \label{eq:pressuremap}
+\end{equation}
+Then the full source residual satisfies the exact decomposition
+\begin{align}
+ \mathcal R_{L,c}
+ &: =t'+\mathsf Kt+m^2d_Nt+ikm n\pi_{L,c}+f_m \\
+ &=\proj_{n^\perp}\left(t'+\mathsf Kt+m^2d_Nt+f_m\right)
+ =B\,\mathcal E_{L,c},
+ \label{eq:fullresidual}
+\end{align}
+where the last equality uses the definition of $H$ and the transverse condition.
+Thus the pressure removes precisely the normal component; it does not remove
+$\mathcal E_{L,c}$, the moving-frame, shear, diffusion, or coupled-background
+mismatch.  If one elects to force the source pulse to obey the released equation,
+then the unique transverse forcing represented in the frame is
+\begin{equation}
+ f_{m,\mathrm{corr}}=-B\,\mathcal E_{L,c},
+\end{equation}
+with pressure still given by \eqref{eq:pressuremap}; this is an exact local
+forced relation, not an identification of the physical constructions.
+
+\section{Diffusion and energy comparison}
+The source diffusion multiplier is $m^2d_N=m^2\varepsilon k^2|n|^2$ in
+\eqref{eq:sourcepulse}.  The coupled pair has the two retained physical losses
+$\lambda_c^\Theta$ and $\lambda_c^\Omega$, which are generally unequal to
+$m^2d_N$.  Their signed discrepancy in \eqref{eq:identitydefect} is explicitly
+\begin{equation}
+ \bigl(m^2d_N-q_v\lambda_c^\Theta\bigr)\Theta,
+ \qquad
+ \bigl(m^2d_N-q_v\lambda_c^\Omega\bigr)\Omega
+\end{equation}
+when $H=0$ and $C_c$ is expanded entrywise; with general $H$ the exact
+diagonal entries are those of $q_vC_c-H+m^2d_NI_2$.  No damping is dropped.
+If one compares nonnegative loss magnitudes instead, the corresponding cost
+gaps are $|m^2d_N-q_v\lambda_c^\Theta|$ and
+$|m^2d_N-q_v\lambda_c^\Omega|$.  If a coordinate map $L$ is chosen to solve
+\begin{equation}
+ L'=HL-q_vLC_c-m^2d_NL,
+ \label{eq:intertwiner}
+\end{equation}
+then the homogeneous embedded pair has zero projected residual, but this is a
+new local coefficient transformation and does not make the source phase,
+pressure, cutoff, or nonlinear covariance equal to the coupled Boussinesq fields.
+For general controls $c_c$, the forced term is $q_vLc_c$ in
+\eqref{eq:residualmap}.
+
+For the embedded field, the source energy balance is exactly
+\begin{equation}
+ \frac12(|t|^2)'=-t\cdot\mathsf Kt-m^2d_N|t|^2
+\end{equation}
+when $f_m=0$ and the transversality constraint is imposed.  Since
+$t\cdot\mathsf Kt=g\cdot(t_r(t_\theta,t_z))$, this is precisely
+\eqref{eq:sourceenergy}.  The coupled pair has instead
+\begin{equation}
+ \frac12\frac{\dd}{\dd t}|y|^2
+ =-\lambda_c^\Theta\Theta^2-\lambda_c^\Omega\Omega^2
+ +(a_c+b_c)\Theta\Omega+c_\theta\Theta+c_\omega\Omega,
+ \label{eq:coupledenergy}
+\end{equation}
+which is a two-component physical energy identity.  Equations
+\eqref{eq:residualmap} and \eqref{eq:coupledenergy} exhibit exactly where the
+source's three-dimensional shear flux and the coupled pair's two-dimensional
+exchange differ.
+
+\section{Proven scope}
+The source uses a cylindrical, localized, divergence-free curl construction
+(Section 7.7 and Section 9, PDF pages 88--89 and 102--103); the displayed
+principal pulse equation is only one component of that construction.  The
+comparison above proves an exact local map and its full pressure-projected
+residual for every finite interval on which the denominators and frame left
+inverse exist.  It preserves source viscosity, moving phase normal, pressure,
+rotation/shear matrix, and all coupled physical diffusion coefficients.  It does
+not prove that the coupled third-growth or steering stages produce the source's
+pulse phase $\Phi$, covariance, cutoff tails, or smooth terminal force.  Those
+remain separate bridge problems.
+
+The sign conventions in this comparison are also explicit.  The quantities
+$q_v>0$, $\varepsilon>0$, and $d_N=\varepsilon k^2|n|^2>0$ record the chosen
+orientation of physical time and the positive viscous coefficient; they are
+not assumptions on the sign of a pulse or blowout amplitude.  The equations
+\eqref{eq:sourcepulse}--\eqref{eq:sourcepressure} are linear in $(t_m,f_m)$,
+so the simultaneous replacement $(t_m,f_m,\pi_m)\mapsto
+(-t_m,-f_m,-\pi_m)$ is an exact reflected branch.  Likewise, the local map
+\eqref{eq:embedding} is sign-equivariant under $y\mapsto-y$ and
+$c_c\mapsto-c_c$.  The source's positive covariance weights are quadratic
+bookkeeping for its selected construction and do not rule out a negative
+velocity branch.  No conclusion about the sign of a blowout is therefore
+drawn from the positive geometric or viscosity scales.
+\end{document}

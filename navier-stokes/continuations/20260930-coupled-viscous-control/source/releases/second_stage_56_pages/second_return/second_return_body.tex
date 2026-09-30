@@ -1,0 +1,536 @@
+\section{A direct two-layer return theorem with positive physical diffusivity}
+\label{sr:section}
+
+This section proves a finite controlled return for the actual two-layer
+coefficient system, including the evolving first parent. It uses the
+released Alp\"oge--Buckmaster steering profile from Section 3.6.3,
+pp.~18--22, and its identification in Section 3.7.6, pp.~31--32.
+The estimates below are proved directly for the modified equations;
+no estimate for an inviscid trajectory is transferred to a diffusive one.
+The spatial realization of these amplitude equations requires the
+explicit profile and localization forces calculated in the companion
+sections. This section makes no assertion about an infinite sequence.
+
+\subsection{Original parameters, entry state, and control}
+
+Keep $A_0\geq1$, $\mu=\lambda_0=\lceil\sqrt{A_0}/2\rceil$,
+and the paper's time-scaling parameter $\nu_{\rm AB}=\sqrt{A_0}$.
+The physical frequencies are $K_i=\mu\widehat\lambda_i$, $i=1,2$.
+The prescribed source parameters $s_*,L=L_2$ and the source profiles
+$\eta,\eta_2$ are retained. Thus $0<s_*\leq1/8$,
+$\eta$ is smooth nondecreasing, zero on $(-\infty,0]$ and one on
+$[1,\infty)$, and $\eta_2\in C_c^\infty((0,1))$ is nonnegative with
+$\int_0^1\eta_2=1$. Put $H=\|\eta_2\|_\infty$.
+Physical viscosity and thermal diffusivity are both $d\geq0$.
+They are distinct from $\nu_{\rm AB}$, $\mu$, and the shooting parameter
+$m\in[0,3]$.
+
+Let $t_1$ be the actual second-layer steering-entry time. Its data are
+\begin{equation}\label{sr:entry}
+ \begin{gathered}
+ \alpha(t_1)=s_*,\quad \zeta_1(t_1)=e_2,\quad
+ \Omega_1(t_1)=0,\quad \Theta_1(t_1)=-P_{1\rm in}<0,\\
+ M_2(t_1)=I,\quad \zeta_2(t_1)=e(s),\quad
+ \Theta_2(t_1)=-P_{2\rm in}<0,\\
+ \Omega_2(t_1)=-\frac{K_2}{\sigma}P_{2\rm in}v_{\rm in}.
+ \end{gathered}
+\end{equation}
+Here $e(s)=(\sin s,\cos s)$, $\sigma>0$ is the actual inherited scale,
+$s=L\nu_{\rm AB}/\sigma$ is the actual source second angle, and
+$\Gamma=\sigma\sin s$. In particular $\sigma,s,\Gamma$ are not
+reset to fixed values if the preceding diffusive stage changes them.
+The data $P_{1\rm in},P_{2\rm in},v_{\rm in}$ are the actual values
+after growth and transition. Theorem~\ref{ave:complete_entry} proves
+from both original seeds and both actual threshold crossings that these
+values satisfy the explicit entry margins below, for its displayed
+nonempty range of positive $d$. No coefficient comparison during
+steering is assumed.
+
+For compact notation define the following exact coordinate change:
+\begin{equation}\label{sr:parameters}
+ \begin{gathered}
+ a=\sin s,\quad h_0=\cos s=\sqrt{1-a^2},\quad
+ B_{\rm in}=\frac{K_1P_{1\rm in}}{\sigma^2},\\
+ C_0=\frac{A_0\cos s_*}{\sigma^2},\quad
+ C_1=\frac{A_0\sin s_*}{\sigma^2a},\\
+ \delta_1=\frac{dK_1^2}{\Gamma},\qquad
+ \delta_2=\frac{dK_2^2}{\Gamma},\qquad
+ \tau=\Gamma(t-t_1).
+ \end{gathered}
+\end{equation}
+Every factor used as a divisor in this change is displayed and positive; physical
+time is recovered by $t=t_1+\tau/\Gamma$.
+Set $T=1+L^{-1}$, $T_H=T+1/32$, and use the exact control
+\begin{equation}\label{sr:z}
+ z_m(\tau)=
+ \begin{cases}
+  1-\eta(\tau),&0\leq\tau\leq1,\\
+  -mL\eta_2(L(\tau-1)),&1\leq\tau\leq T,\\
+  0,&T\leq\tau\leq T_H.
+ \end{cases}
+ \qquad Z_m(t)=a z_m(\Gamma(t-t_1)).
+\end{equation}
+Flatness and interior support make these definitions smooth at both
+joins. This is exactly the source pulse, with source pulse amplitude
+$mL\sin s$, entry first component $a$, and entry phase length one.
+
+\subsection{Exact closed equations and their inverse map}
+
+Write $J=\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$.
+The two phase gradients have the exact signed determinant
+$\det(\zeta_1,\zeta_2)=-a$. Since $|\zeta_1|=1$, put
+\[
+ \begin{gathered}
+ h=\zeta_1\cdot\zeta_2,\qquad
+ D_*=h^2+a^2=|\zeta_2|^2,\qquad
+ Y=\sqrt{D_*-a^2z_m^2},\\
+ B=\frac{-K_1\Theta_1}{\sigma^2},\quad
+ W=\frac{\Omega_1}{\sigma},\quad
+ n=B+C_0+C_1h.
+ \end{gathered}
+\]
+The symbol $D_*$ is a positive scalar, not the parent velocity matrix.
+The square root selects the positive second component of $\zeta_2$.
+The complete older/geometry system in $\tau$ is
+\begin{equation}\label{sr:closed}
+ \begin{aligned}
+ h'&=W,&h(0)&=h_0,\\
+ W'&=B\frac{Y-hz_m}{D_*}-\delta_1W,&W(0)&=0,\\
+ B'&=-C_1W-\delta_1B,&B(0)&=B_{\rm in},\\
+ n'&=-\delta_1B,&n(0)&=B_{\rm in}+C_0+C_1h_0.
+ \end{aligned}
+\end{equation}
+The last equation is a proved consequence of the preceding ones, not
+an additional independent constraint. Define $k=n/D_*$. The newest
+pair is recovered from
+\begin{equation}\label{sr:newest}
+ \begin{gathered}
+ v'=z_m-kv^2,\qquad v(0)=v_{\rm in},\\
+ P_2=P_{2\rm in}\exp\!\left(\int_0^\tau(kv-\delta_2D_*)\,dr\right),\\
+ \Theta_2=-P_2,\qquad
+ \Omega_2=-\frac{K_2}{\sigma}P_2v.
+ \end{gathered}
+\end{equation}
+Here $P_2$ is recovered only on an interval where $v$ has been proved
+finite. The proof below constructs that interval before using this map.
+
+For clarity, the full geometric inverse and the older physical state are
+\begin{align}\label{sr:inverse}
+ \zeta_2&=(az_m,Y),&
+ \zeta_1&=\left(\frac{haz_m-aY}{D_*},
+                    \frac{hY+a^2z_m}{D_*}\right),\\
+ \phi_2&=\arcsin(az_m/\sqrt{D_*}),&
+ \phi_1&=\phi_2-\arctan(a/h),&\alpha&=s_*-\phi_1,\nonumber\\
+ M_1&=R_\alpha,&
+ M_2&=R_{\alpha-s_*}
+       \begin{pmatrix}1&-(h-h_0)/a\\0&1\end{pmatrix},&
+ \Theta_1&=-\sigma^2B/K_1,&\Omega_1&=\sigma W.\nonumber
+\end{align}
+The expression for $M_1$ uses its original first-activation datum
+$M_1=I$ when $\alpha=0$ and $p_1=e(s_*)$; it is not an artificial
+reset of the first deformation at $t_1$.
+
+\begin{proof}[Proof of the exact equations and inverse]
+The actual parent is
+\[
+ G=-A_0R_\alpha e_2-K_1P_1\zeta_1,
+ \qquad D_{<2}=\dot\alpha J+
+       \Omega_1J\zeta_1\otimes\zeta_1,
+ \qquad P_1=-\Theta_1.
+\]
+The first coefficient is $a_1=A_0\sin s_*/K_1$, because
+$\phi_1+\alpha=s_*$. Therefore the diffusive first pair gives
+$\dot A_1=-A_0\sin s_*\Omega_1-dK_1^2 A_1$ and
+$\dot\Omega_1=-A_1\sin\phi_1-dK_1^2\Omega_1$, where
+$A_1=K_1P_1$. The phase equation gives $\dot h=a\Omega_1$.
+The determinant representation is $\zeta_2=h\zeta_1-aJ\zeta_1$;
+solving its two components gives \eqref{sr:inverse} and
+$-\sin\phi_1=a(Y-hz_m)/D_*$. Substitution and division by the
+nonzero physical factors in \eqref{sr:parameters} prove the first
+three equations in \eqref{sr:closed}. Differentiating
+$B+C_0+C_1h$ proves the exact cancellation $n'=-\delta_1B$.
+
+The full second coefficient retains the original base term:
+\[
+ a_2=\frac{aA_1+A_0(a\cos s_*+h\sin s_*)}{K_2D_*}
+     =\frac{\sigma^2 a n}{K_2D_*},\qquad b_2=K_2az_m.
+\]
+In particular the numerator changes when the first temperature
+diffuses; it has not been held fixed. The equations
+$\dot\Theta_2=a_2\Omega_2-dK_2^2D_*\Theta_2$ and
+$\dot\Omega_2=b_2\Theta_2-dK_2^2D_*\Omega_2$ give exactly
+\eqref{sr:newest} by differentiation. Conversely differentiating its
+exponential and product proves these two physical equations, so the
+coordinate map and its inverse preserve the complete dynamics.
+
+For the matrices, write $S=\left(\begin{smallmatrix}1&-(h-h_0)/a\\0&1\end{smallmatrix}\right)$.
+Then $\dot S=\Omega_1(Je_2\otimes e_2)S$ because
+$\dot h=a\Omega_1$. Differentiating $R_{\alpha-s_*}S$ proves
+$\dot M_2=D_{<2}M_2$ and $M_2(t_1)=I$.
+Furthermore $S^{-T}(a,h_0)=(a,h)$, proving
+$M_2^{-T}e(s)=\zeta_2$ with its original oriented datum.
+Both matrices have determinant one. Differentiating
+$\zeta_{2,1}=Z_m$ in its phase equation proves the exact control
+\[
+ \dot\alpha=F_2^{\rm ctl}-\frac{\dot Z_m}{Y},\qquad
+ F_2^{\rm ctl}=-\frac{\Omega_1\zeta_{1,1}
+                       (J\zeta_1\cdot\zeta_2)}{Y}
+                  =\frac{a\Omega_1\zeta_{1,1}}{Y}.
+\]
+Thus no extra angular control has been substituted for the source
+feedback. All divisions and inverse trigonometric branches are
+justified by the bounds proved next.
+\end{proof}
+
+\subsection{An explicit finite parameter range}
+
+\begin{theorem}\label{sr:theorem}
+Suppose the numerical entry and design parameters in
+\eqref{sr:entry}--\eqref{sr:parameters} satisfy
+\begin{equation}\label{sr:box}
+ \begin{gathered}
+ 0<s\leq\arcsin(1/8),\quad 0<a\leq\frac18,\quad
+ L\geq64,\quad 3LHa\leq\frac14,\\
+ \frac12\leq B_{\rm in}\leq2,\quad
+ 0<C_0\leq\frac14,\quad 0<C_1\leq\frac1{32},\\
+ \frac12\leq v_{\rm in}\leq2,\quad 0\leq\delta_1\leq\frac1{16}.
+ \end{gathered}
+\end{equation}
+These are explicit inequalities on actual entry data and fixed design
+numbers, not hypotheses on a subsequently unknown trajectory.
+The displayed range of $s$ fixes the original positive-cosine branch;
+the inequality on $\sin s$ alone would not fix that branch.
+Then the entire family $m\in[0,3]$ exists through $\tau=T$,
+with $P_2>0$, and its endpoint map $m\mapsto v(T;m)$ is continuous.
+It satisfies the quantitative endpoint margins
+\begin{equation}\label{sr:margins}
+ v(T;0)\geq\frac17,\qquad v(T;3)\leq-\frac1{480}.
+\end{equation}
+The zero set is a nonempty compact subset of $(0,3)$ and hence
+has a least element $m_*$. Every zero satisfies
+\begin{equation}\label{sr:rootbounds}
+ \frac{13}{96}\leq m_*\leq3-\frac1{480},\qquad
+ W(T;m_*)\geq \frac{13h_0}{3840}
+                     \exp(-\delta_1/L)>0.
+\end{equation}
+No monotonicity of the endpoint map or uniqueness of the root is claimed.
+
+The selected state continues through the nonzero holding interval
+$[T,T_H]$, with $\zeta_{2,1}=\Omega_2=0$ and with the first parent
+still evolving according to \eqref{sr:closed}. On the whole selected
+interval $[0,T_H]$,
+\begin{equation}\label{sr:geom-bounds}
+ \begin{gathered}
+ h_0\leq h<3,\quad 0\leq W<9,\quad
+ \frac{191}{512}<B\leq2,\quad
+ \frac14<n<3,\\
+ \frac{63}{64}\leq D_*<10,\quad
+ Y\geq\frac{\sqrt{59}}8,\quad
+ \zeta_{1,2}>\frac1{16},\quad
+ \frac1{40}<k<4.
+ \end{gathered}
+\end{equation}
+The same geometry bounds hold throughout every trial through $T$.
+Every trial has $|v|<6$ through $T$, so its linear amplitude pair
+never loses the negative sign of $\Theta_2$.
+
+The exact selected logarithmic gain at every
+$\tau_f\in[T,T_H]$ is
+\begin{equation}\label{sr:gain}
+ \log\frac{P_2(\tau_f)}{P_{2\rm in}}
+ =\int_0^{T}kv\,d\tau-\delta_2\int_0^{\tau_f}D_*\,d\tau,
+ \qquad
+ \frac{\log3}{160}-10\delta_2\tau_f
+ \leq\log\frac{P_2(\tau_f)}{P_{2\rm in}}
+ \leq12T.
+\end{equation}
+In particular the strictly positive physical range
+\begin{equation}\label{sr:physical-range}
+ 0<d\leq
+ \min\left\{\frac{\Gamma}{16K_1^2},
+ \frac{\Gamma\log3}{6400K_2^2}\right\}
+\end{equation}
+gives $\log(P_2(\tau_f)/P_{2\rm in})\geq\log3/320>0$.
+The interval is expressed in actual physical units.
+Theorem~\ref{ave:complete_entry} supplies an explicit positive
+$d_{\max}$ using only the original data and chosen frequencies, and
+proves \eqref{sr:box} and \eqref{sr:physical-range} for every
+$0<d\leq d_{\max}$ while retaining the dependence of the actual
+entry data and $\Gamma$ on $d$.
+\end{theorem}
+
+\begin{proof}
+First construct geometry without using the newest amplitude pair.
+On an initial interval where $B>0$, the bracket $Y-hz_m$ is
+nonnegative. If $0\leq z_m\leq1$, this follows by squaring:
+$Y^2-h^2z_m^2=D_*(1-z_m^2)\geq0$; if $z_m\leq0$, it follows
+from $Y,h>0$. Consequently the integrating-factor formula for $W$
+gives $W\geq0$. Therefore $h\geq h_0$ and
+$B'=-C_1W-\delta_1B\leq0$, giving $B\leq B_{\rm in}$.
+The control bound is $|az_m|\leq1/4$, so
+\[
+ Y^2\geq h_0^2-\frac1{16}\geq\frac{59}{64}>0.
+\]
+For $0\leq\tau\leq1$, $Y-hz_m\leq\sqrt{D_*}$, hence
+$W'\leq B_{\rm in}/h_0$ and
+$h\leq h_0+B_{\rm in}\tau^2/(2h_0)$.
+On the negative pulse the same argument gives
+\[
+ W'\leq\frac{B_{\rm in}}{h_0}
+          \{1+mL\eta_2(L(\tau-1))\}.
+\]
+During holding its right side is $B_{\rm in}/h_0$.
+Integration on any interval up to $T_H$ therefore yields
+\[
+ W\leq\frac{B_{\rm in}}{h_0}(T_H+3)
+ \leq\frac{26}{3}<9,
+\]
+because $h_0\geq15/16$, $T_H\leq17/16$, and $B_{\rm in}\leq2$.
+The duration after the first part is at most
+$L^{-1}+1/32\leq3/64$, so
+\[
+ h\leq h_0+\frac{B_{\rm in}}{2h_0}
+       +\frac{B_{\rm in}}{h_0}(T_H+3)\frac3{64}
+ \leq1+\frac{16}{15}+\frac{13}{32}
+ =\frac{1187}{480}<3.
+\]
+No quotient variable has entered these estimates.
+
+The exact integrating-factor identity for the first temperature is
+\[
+ B(\tau)=e^{-\delta_1\tau}B_{\rm in}
+  -C_1\int_0^\tau e^{-\delta_1(\tau-r)}W(r)\,dr.
+\]
+Since $W\geq0$, $h'=W$, $\delta_1T_H\leq17/256$, and
+$e^{-x}\geq1-x$ for $x\geq0$, it follows that
+\[
+ B(\tau)\geq\frac12\left(1-\frac{17}{256}\right)
+          -\frac1{32}(h(\tau)-h_0)
+ >\frac{239}{512}-\frac3{32}
+ =\frac{191}{512}>\frac14.
+\]
+This strict estimate excludes a first exit through $B=0$.
+All square-root denominators stay uniformly positive and $h,W,B$
+remain bounded. The smooth finite-dimensional vector field is therefore
+bounded with bounded first derivatives on a compact neighborhood
+of every such solution. Local existence, uniqueness and the integral
+equation extend the solution through $T_H$; the same neighborhood
+can be chosen uniformly for $m\in[0,3]$. Differentiating that integral
+equation and applying the elementary Gronwall estimate proves
+continuous dependence on $m$ on this interval. This constructs the
+entire older/geometry trial family before the newest pair.
+
+Now $n=B+C_0+C_1h>1/4$, and
+$n'=-\delta_1B\leq0$, so
+$n\leq B_{\rm in}+C_0+C_1h_0\leq73/32<3$.
+The asserted $D_*$ and $k$ bounds follow. For the first phase,
+$|az_m|\leq1/4$, $a\leq1/8$, $h\geq15/16$ and $Y>7/8$
+give
+\[
+ \zeta_{1,2}=\frac{hY+a^2z_m}{D_*}
+ >\frac{(15/16)(7/8)-1/32}{10}
+ =\frac{101}{1280}>\frac1{16}.
+\]
+Thus the branches and control denominators in \eqref{sr:inverse}
+stay in their specified domains. This proves all geometry claims.
+
+Construct the Riccati variable next. On $[0,1]$, its forcing
+$z_m=1-\eta$ is nonnegative. The reciprocal differential inequality
+$(1/v)'\leq4$, initially while $v>0$, gives
+\begin{equation}\label{sr:v-ramp}
+ \frac{v_{\rm in}}{1+4v_{\rm in}\tau}
+ \leq v(\tau)\leq v_{\rm in}+\tau\leq3.
+\end{equation}
+The positive lower bound rules out a first zero, and the upper bound
+follows by integrating $v'\leq1$. These bounds also exclude finite
+escape. Put $v_d=v(1)$. In particular $v_d\geq1/6$.
+Moreover
+\[
+ \int_0^1kv^2\,d\tau
+ \geq\frac1{40}\int_0^1
+       \frac{v_{\rm in}^2}{(1+4v_{\rm in}\tau)^2}\,d\tau
+ =\frac{v_{\rm in}^2}{40(1+4v_{\rm in})}
+ \geq\frac1{480}.
+\]
+The last inequality follows because $x^2/(1+4x)$ is increasing
+for $x>0$, as its derivative is $(2x+4x^2)/(1+4x)^2>0$.
+Integrating the Riccati equation proves
+\begin{equation}\label{sr:vd}
+ \frac16\leq v_d\leq3-\frac1{480}.
+\end{equation}
+
+On the pulse put $V(y)=v(1+y/L)$ and
+$M_2(y)=\int_0^y\eta_2(r)\,dr$. Its exact integral equation is
+\[
+ V(y)=v_d-mM_2(y)
+       -\frac1L\int_0^y k(1+r/L)V(r)^2\,dr.
+\]
+Under the temporary bound $|V|\leq6$, it gives
+$V\leq v_d<3$ and
+$V\geq-3-144/L\geq-21/4>-6$.
+The bound is strict initially and strictly improves itself at every
+possible first exit, so $|V|<6$ on the full pulse. The quotient has
+therefore been constructed with a uniform finite bound, and the
+exponential formula \eqref{sr:newest} constructs a negative
+$\Theta_2$ solving the entire original linear pair. Its uniqueness
+follows by subtracting two solutions of that linear pair and applying
+the integral Gronwall inequality to their zero initial difference.
+In particular the construction agrees with the unique linear-pair
+solution and has not assumed absence of a temperature zero.
+
+For $m=0$, the pulse solves $v'=-kv^2$, so
+$v(T;0)\geq v_d/(1+4v_d/L)\geq1/(6+4/L)>1/7$.
+For $m=3$, the integral equation and \eqref{sr:vd} give
+$v(T;3)\leq v_d-3\leq-1/480$.
+The uniformly finite quotient and geometry imply continuous
+dependence of $v(T;m)$ on $m$ by their integral equations.
+The intermediate value theorem proves existence of a zero. Its
+zero set is closed in $[0,3]$ and excludes both endpoints, proving
+the stated compactness and least-root selection.
+
+At any selected zero, $v'=-mL\eta_2-kv^2\leq0$ throughout
+the pulse. Thus $0\leq v\leq v_d$ there, and
+\[
+ m=v_d-\int_1^Tkv^2\,d\tau
+ \in\left[v_d-\frac{4v_d^2}{L},v_d\right]
+ \subseteq\left[\frac{13}{96},3-\frac1{480}\right].
+\]
+For the lower inclusion use $v_d\leq3$, $L\geq64$ and
+$v_d\geq1/6$. On the pulse,
+\[
+ W'+\delta_1W
+ =B\frac{Y+hmL\eta_2}{D_*}
+ \geq\frac{h_0}{40}mL\eta_2(L(\tau-1)).
+\]
+Its integrating-factor formula, $W(1)\geq0$ and the unit integral
+of $\eta_2$ prove \eqref{sr:rootbounds}.
+On holding, $z_m=0$ and $v(T)=0$, so uniqueness gives $v=0$.
+The older geometry continues by the already established bounds,
+and \eqref{sr:newest} gives the exact remaining temperature decay.
+
+Finally, \eqref{sr:v-ramp} gives
+\[
+ \int_0^1kv\,d\tau\geq
+ \frac1{40}\int_0^1
+ \frac{v_{\rm in}}{1+4v_{\rm in}\tau}\,d\tau
+ =\frac1{160}\log(1+4v_{\rm in})
+ \geq\frac{\log3}{160}.
+\]
+The selected pulse adds nonnegative gain, the hold adds zero gain,
+and $v\leq3$, $k<4$ bound the gain above by $12T$.
+The exact diffusion exponent is at most $10\delta_2\tau_f$.
+This proves \eqref{sr:gain}; substitution of
+\eqref{sr:physical-range} gives its positive lower bound.
+\end{proof}
+
+\subsection{Returned state, holding dynamics, and diffusion costs}
+
+At the selected physical return time $t_b=t_1+T/\Gamma$ one has
+\[
+ \zeta_2(t_b)=(0,\sqrt{D_*(T)}),\qquad\Omega_2(t_b)=0,
+ \quad\zeta_1(t_b)=\frac{(-a,h(T))}{\sqrt{D_*(T)}},\qquad
+ \alpha(t_b)=s_*+\arctan(a/h(T)),
+\]
+and $\Theta_1(t_b)=-\sigma^2B(T)/K_1<0$,
+$\Omega_1(t_b)=\sigma W(T)>0$. The first parent is therefore
+neither frozen nor returned to zero. Its full motion creates the
+specified returned state of the second wave.
+The controlled holding interval has physical duration $1/(32\Gamma)$.
+On it the complete system is
+\[
+ \begin{gathered}
+ h'=W,\quad W'=B/\sqrt{h^2+a^2}-\delta_1W,
+ \quad B'=-C_1W-\delta_1B,\\
+ P_2(\tau)=P_2(T)\exp\!\left(-\delta_2
+                  \int_T^\tau(h(r)^2+a^2)\,dr\right).
+ \end{gathered}
+\]
+These formulas retain the evolving phase length inside the diffusion
+integral. They also prove the exact stationarity of
+$\zeta_{2,1},\Omega_2$ throughout this finite hold.
+
+The returned parent vorticity also gives positive scalar curl of the
+full local velocity at the origin. Indeed $z_m=z_m'=0$ on holding,
+so the proved control and inverse give the exact physical formulas
+\begin{equation}\label{sr:origin_vorticity}
+ \dot\alpha=-\frac{a^2\Omega_1}{h^2+a^2},\qquad
+ \omega(0,t)=2\dot\alpha+\Omega_1
+   =\Omega_1\left(1-\frac{2a^2}{h^2+a^2}\right)
+   \geq\frac{31}{32}\Omega_1>0.
+\end{equation}
+For the inequality use $h\geq h_0$, $h_0^2+a^2=1$ and
+$a^2\leq1/64$. The positive forcing in the holding equation for
+$W$ gives $W(\tau)\geq W(T)e^{-\delta_1(\tau-T)}>0$ by its
+integrating factor. These statements include the return endpoint
+because the original pulse is identically zero near that endpoint.
+The compact spatial construction has constant envelopes and exact
+linear profiles near the origin, so its curl there is precisely the
+quantity in \eqref{sr:origin_vorticity}; no cutoff derivative enters it.
+
+The total first-wave damping exponents on the ramp, pulse and hold are
+$\delta_1$, $\delta_1/L$ and $\delta_1/32$, respectively.
+The corresponding second-wave exponents are exactly
+\[
+ \delta_2\int_0^1D_*\,d\tau,\qquad
+ \delta_2\int_1^T D_*\,d\tau,\qquad
+ \delta_2\int_T^{T_H}D_*\,d\tau.
+\]
+Each exponent lies between $(63/64)\delta_2$ and $10\delta_2$
+times its displayed interval length. In original physical coordinates
+these equal $dK_2^2\int|\zeta_2(t)|^2dt$, with
+$K_2=\mu\widehat\lambda_2$ and $dt=d\tau/\Gamma$; none of
+the factors $\mu$, $\nu_{\rm AB}$, $K_i$ or $\Gamma$ has been dropped.
+The exact first-amplitude identity in the proof also records the
+additional parent-response term
+$-C_1\int e^{-\delta_1(\tau-r)}W(r)dr$; a pure common-damping
+multiplier would miss that term.
+
+For the parent affine fields the altered gradient is not independently
+prescribed. With $B_1=-\sigma^2B\zeta_1$, direct differentiation gives
+\[
+ \dot G+D_{<2}^{T}G=-dK_1^2B_1,
+ \qquad C=2\dot\alpha+\Omega_1,
+ \qquad\dot C-G_1=2\ddot\alpha-A_0\sin\alpha-dK_1^2\Omega_1.
+\]
+Thus $G\cdot x,D_{<2}x$ have scalar force
+$(-dK_1^2B_1)\cdot x$ and full vector force
+$\tfrac12(2\ddot\alpha-A_0\sin\alpha-dK_1^2\Omega_1)Jx$
+with pressure
+$-\tfrac12x^T\operatorname{sym}(\dot D_{<2}+D_{<2}^2-e_2\otimes G)x$.
+Their Laplacians vanish. These affine formulas are local exact fields;
+the compact original-profile realization and its additional spatial
+forces are supplied by the accompanying finite-profile construction.
+They must not be discarded when interpreting the amplitude result
+as a statement about the full spatial equations.
+
+Here is a direct verification of the affine force and pressure, including
+their signs. Put $D=D_{<2}$, $u(x,t)=D(t)x$ and
+$\theta(x,t)=G(t)\cdot x$. Both summands in $D$ have zero trace, so
+$\operatorname{div}u=0$ and
+$D^2=-\det(D)I$ by multiplication of a general trace-free
+$2\times2$ matrix. The scalar residual is exactly
+$(\dot G+D^TG)\cdot x$. In that derivative the term
+$K_1\dot\Theta_1\zeta_1$ cancels
+$(\Omega_1J\zeta_1\otimes\zeta_1)^T(-A_0R_\alpha e_2)$,
+apart from $-dK_1^2B_1$; the angular terms cancel because
+$\dot\zeta_1=\dot\alpha J\zeta_1$ and
+$\partial_t(R_\alpha e_2)=\dot\alpha J R_\alpha e_2$.
+Also $\zeta_1\cdot J\zeta_1=0$ eliminates the self-interaction.
+For momentum let
+$\mathcal A=\dot D+D^2-e_2\otimes G$.
+Then
+$\partial_tu+(u\cdot\nabla)u-\theta e_2=\mathcal A x$,
+whereas the displayed pressure contributes
+$-\operatorname{sym}(\mathcal A)x$.
+Their sum is $\operatorname{skew}(\mathcal A)x$.
+The scalar curl of $Dx$ is $C=D_{21}-D_{12}$; since $D^2$ is
+scalar and the curl of $(G\cdot x)e_2$ is $G_1$,
+\[
+ \operatorname{skew}(\mathcal A)
+ =\frac{\dot C-G_1}{2}J.
+\]
+Finally $\dot\Omega_1=-K_1P_1\zeta_{1,1}-dK_1^2\Omega_1$
+and $G_1=A_0\sin\alpha-K_1P_1\zeta_{1,1}$ give precisely
+the force stated above. Both affine Laplacians are zero by direct
+second differentiation. Thus these are the full vector equations with
+the specified pressure, not merely a vorticity residual.
