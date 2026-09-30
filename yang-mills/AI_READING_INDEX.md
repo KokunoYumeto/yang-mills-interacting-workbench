@@ -150,3 +150,7 @@ For the Navier–Stokes inputs to the fluid-profile and curvature/current papers
 - [sources/ym_spatial_continuum_astra_20260908/spatial_continuum.tex](sources/ym_spatial_continuum_astra_20260908/spatial_continuum.tex)
 - [sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md](sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.md)
 - [sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.tex](sources/ym_volume_uniform_astra_20260908/VOLUME_UNIFORM_LOCAL_VACUUM_ESTIMATES.tex)
+
+## Higher-carrier and temporal correction
+
+The [higher-carrier and temporal evolution proof](continuations/20260930-s6-ns-moment-map-bridge/HIGHER_CARRIER_AND_EVOLUTION.md) constructs the exact pullback through the 49-dimensional reduction carrier, extends the profile map, and gives a full parameter connection. It constructs a compactly supported correction satisfying Gauss's law exactly with a computed residual, and proves global source-free evolution of every homogeneous core. The original finite-energy spatial boundary problem and the quantum construction remain active.

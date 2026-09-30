@@ -276,3 +276,36 @@ extension and the missing relation between the \(S^6\) base and the flag
 carrier.  The topological reduction, nonlinear map, and interaction witness
 are established; a globally smooth source-free state and its quantum
 reconstruction remain the programme goal.
+
+## S6NS-20260930-018 — the missing base relation is constructed
+
+The earlier open relation between \(X\) and the flag carrier is now
+the proved pullback through \(D=F_4/\rho(\operatorname{Sp}(1))\).
+The full statement and proof are Theorem 2.1 and Proposition 3.1 of
+HIGHER_CARRIER_AND_EVOLUTION.md. This strengthens finding 015.
+The map lands in one reduction fibre, while its principal pullback is nontrivial.
+
+## S6NS-20260930-019 — complete connection with mixed curvature
+
+Section 4 of HIGHER_CARRIER_AND_EVOLUTION.md supplies the missing base
+components through a specified Maurer-Cartan projection. Every base, mixed,
+and spatial curvature term is retained. This strengthens finding 016.
+The parameter dimensions are not treated as additional physical spacetime.
+
+## S6NS-20260930-020 — the static source is an initial acceleration
+
+Finding 017 remains correct for the static field. Equations HC15-HC20 prove
+that it supplies an admissible acceleration from zero-electric Gauss data.
+The exact Gauss-preserving compact-support correction has a degree-six
+spatial residual. The homogeneous restriction has an exact global source-free
+evolution by Theorem 7.1. Its nonzero R3 energy is infinite; the compact-support
+boundary equation remains unfinished. Proposition 9.1 rules out a static
+nonzero-curvature compact-support solution and makes time evolution necessary.
+This strengthens the source-defect finding without turning it into a quantum result.
+
+## Propagation of findings 018–020
+
+The corrections and strengthenings are propagated through the current proof,
+bundle note, higher-domain programme, spectral companion, source-use ledger,
+machine claim overlay, dated bulletin, cumulative TeX, status, and next action.
+Historical source editions remain unchanged. The quantum endpoint remains open.

@@ -1,0 +1,702 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,hyperref}
+\usepackage[margin=23mm]{geometry}
+\hypersetup{hidelinks,pdftitle={The higher carrier and the source-correction evolution}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\section*{The higher carrier and the source-correction evolution}
+
+30 September 2026. This note constructs the missing base-space morphism,
+extends the profile map to that carrier, and advances the source equation.
+The globally smooth interacting gapless quantum state remains the programme
+goal. The results here are classical bundle and evolution results.
+
+\subsection*{1. Exact inputs and conventions}
+
+Retain \(X\cong S^6\), the right principal bundle \(P_H\to X\),
+
+\[
+ K=\rho(\operatorname{Sp}(1))\subset G=\operatorname{Spin}(8)
+ \subset L=F_4,
+ \qquad Q_H=P_H\times_\rho G,
+\]
+
+and the source's complete ordered representation
+
+\[
+ W=W_r\oplus W_q\oplus W_p,
+ \qquad W_r\cong\mathbb R\oplus\operatorname{Im}\mathbb H\oplus\mathbb H,
+ \quad W_q\cong\mathbb H\oplus\mathbb H,
+ \quad W_p\cong\mathbb H\oplus\mathbb H.
+\]
+
+The first action is \(B_u(a,b)=(ua\bar u,b)\). The other two original
+upper-entry actions are \(D_u(a,b)=(a\bar u,b\bar u)\); the ordered
+conjugations \((a,b)\mapsto(\bar a,\bar b)\) identify each with two
+left quaternionic lines. Associated bundles use \([pu,v]=[p,\rho(u)v]\).
+The map in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PROOF.md#7-the-global-triality-to-profile-morphism}{PROOF.md, Theorem 7.1} is retained literally:
+
+\[
+ \mathcal M_H(\zeta;\alpha,\beta;\gamma,\delta)
+ =\mu_{\mathbf i}(\alpha)w^{(1)}
+  +\mu_{\mathbf j}(\beta)w^{(2)}
+  +\mu_{\mathbf k}(\gamma)w^{(3)},\qquad
+ \mu_e(a)=ae\bar a.
+ \tag{HC1}
+\]
+
+Here \(w^{(1)}=\nabla\times(0,0,\chi x_2)\),
+\(w^{(2)}=\nabla\times(0,0,-\chi x_1)\), and
+\(w^{(3)}=\nabla\times(0,\chi x_1,0)\), with the same
+\(0<r<R\), \(\chi=1\) on \(B_r(0)\), and
+\(\operatorname{supp}\chi\subset B_R(0)\). No spatial cutoff is removed
+from this original map.
+
+The quaternionic bracket is \([v,w]=2v\times w\). In the fundamental
+\(SU(2)\) representation,
+
+\[
+ T_a=-i\sigma_a/2,\quad [T_a,T_b]=\epsilon_{abc}T_c,\quad
+ -2\operatorname{tr}(T_aT_b)=\delta_{ab},\quad
+ \varphi(\mathbf i,\mathbf j,\mathbf k)=2(T_1,T_2,T_3).
+ \tag{HC2}
+\]
+
+The physical metric is \(\eta=\operatorname{diag}(-1,1,1,1)\),
+\(s=x^0=ct\), \(c>0\), and \(D_\mu=\partial_\mu+[A_\mu,\,\cdot\,]\).
+In particular \(\partial_s=c^{-1}\partial_t\). The source convention is
+\(D^\mu F_{\mu\nu}=g^2J_\nu\), \(g>0\).
+
+The exact retained source is
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/sources/higher_rung/s6_higher_rung_24d_preprint.tex#L2593}{the higher-rung TeX},
+SHA-256 `8c526746de9b56a4fcd0a274df0c470092cc82a16e49857df539a1c9d033956f`.
+Its lines 2593–2804 prove the tangent comparison, and lines 5645–5792
+prove that \(Q_H\) is trivial while its specified reduction remains
+nontrivial. Those are inputs, with their full source proofs retained.
+
+\subsection*{2. The reduction carrier and its exact pullback}
+
+Define
+
+\[
+ M=L/G,\qquad D=L/K,\qquad
+ \pi:D\longrightarrow M,\quad \ell K\longmapsto\ell G,
+ \qquad j:G/K\longrightarrow D,\quad aK\longmapsto aK.
+ \tag{HC3}
+\]
+
+The embedding of \(K\) into \(L\) is precisely the source embedding through
+the ordered Jordan-frame stabilizer. It is not an independently chosen
+copy of \(\operatorname{Sp}(1)\).
+
+Theorem 2.1. The map \(\pi\) is a smooth fibre bundle with fibre \(G/K\).
+The space \(D\) has dimension \(52-3=49\), the base \(M\) has dimension
+\(52-28=24\), and each fibre has dimension \(28-3=25\). There is a map
+\(r_H:X\to D\) such that
+
+\[
+ \pi r_H(x)=G,\qquad
+ r_H^*(L\to D)\cong P_H,
+ \qquad r_H^*(L\times_K W)\cong\mathcal W_H.
+ \tag{HC4}
+\]
+
+The first pullback uses \(\rho\) to identify the structure groups.
+Both \(r_H\) and its fibre map \(f_H:X\to G/K\) are non-null-homotopic.
+
+Proof. A local section \(\sigma:U\to L\) of \(L\to L/G\) gives
+the explicit trivialization
+
+\[
+ U\times G/K\longrightarrow\pi^{-1}(U),\qquad
+ (y,aK)\longmapsto\sigma(y)aK.
+\]
+
+Its inverse sends \(\ell K\) to
+\((\ell G,\sigma(\ell G)^{-1}\ell K)\). On an overlap
+\(\sigma'=\sigma h\), the fibre coordinate changes by \(aK\mapsto h^{-1}aK\).
+These formulas prove local triviality and smoothness. The group dimensions
+give the stated dimensions. The fibre over \(G\) is exactly \(j(G/K)\).
+
+Choose a principal-bundle trivialization
+\(\tau:Q_H\to X\times G\). For \(p\in(P_H)_x\), write
+\(\tau([p,1])=(x,a_p)\). The retained associated-bundle convention gives
+\(a_{pu}=a_p\rho(u)\). Thus \(f_H(x)=a_pK\) is independent of \(p\),
+and \(r_H=jf_H\) is well defined. The explicit pullback isomorphism is
+
+\[
+ P_H\longrightarrow r_H^*(L\to D),\qquad
+ p\longmapsto(x,a_p).
+ \tag{HC5}
+\]
+
+Every element \((x,\ell)\) of the target has \(\ell K=a_pK\), hence
+\(\ell=a_p k\) for a unique \(k\in K\). There is a unique \(u\in\operatorname{Sp}(1)\)
+with \(k=\rho(u)\), and the inverse of (HC5) is \(pu\). This proves
+bijectivity, equivariance, and continuity, and proves smoothness whenever
+smooth bundle structures and \(\tau\) have been chosen. Applying the
+representation \(W\) gives the last isomorphism in (HC4).
+
+If \(r_H\) were null-homotopic, its pullback principal bundle would be
+isomorphic to the pullback along a constant map, which is trivial. This
+contradicts the retained nonzero order-two clutching class of \(P_H\).
+The same proof applies to \(f_H\). Also \(\pi r_H\) is constant by (HC3).
+This proves every assertion. \(\square\)
+
+The dependence on \(\tau\) is explicit. If
+\(\tau'=b(x)\tau\), with \(b:X\to G\), then
+\(f'_H(x)=b(x)f_H(x)\) and \(r'_H(x)=j(b(x)f_H(x))\). No canonical
+trivialization, embedding of \(X\), or reduction of \(TM\) over \(M\)
+is being inferred. The exact relation is the pullback (HC4).
+
+Smooth-structure detail. The literal source map defining \(P_H\) is
+retained as a continuous map; its differentiability at quotient seams is
+not needed. A continuous clutching map \(S^5\to\operatorname{Sp}(1)=S^3\)
+can be uniformly approximated in \(\mathbb R^4\) by a smooth map within
+distance \(1/2\). Radial projection of that approximation onto \(S^3\)
+is smooth. Radially projecting the straight homotopy gives a homotopy
+of clutching maps, because every intermediate vector has norm at least
+\(1/2\). The resulting smooth bundle is isomorphic to the original
+topological bundle: a homotopy of clutching maps glues the product disks
+over \([0,1]\), and local trivializations along finitely many subintervals
+give the endpoint isomorphism. Transport its smooth structure through
+that isomorphism. The null-homotopy of the extended clutching map into
+\(G\subset O(N)\) can likewise be smoothed relative to its boundary:
+smooth its matrix entries with a collar held fixed, then apply the smooth
+nearest-point projection of a tubular neighbourhood of the compact
+embedded group \(G\). This gives a smooth trivialization \(\tau\).
+Accordingly \(r_H\) may be chosen smooth, without replacing the source
+map \(H\) or claiming that its original seams were smooth.
+
+\subsection*{3. The rank-24 carrier, with the spectral factors retained}
+
+Put
+
+\[
+ E_D=L\times_K W\longrightarrow D,\qquad
+ \mathcal A_D=L\times_K\operatorname{Im}\mathbb H.
+\]
+
+Choose the original distinct real parameters
+\(\lambda_1+\lambda_2+\lambda_3=0\), and retain
+
+\[
+ d_\lambda=\sum_i\lambda_i e_i,\quad
+ \Delta_1=\lambda_2-\lambda_3,\quad
+ \Delta_2=\lambda_3-\lambda_1,\quad
+ \Delta_3=\lambda_1-\lambda_2.
+ \tag{HC6}
+\]
+
+The orbit comparison is \(\Xi_\lambda:M\to Ld_\lambda\),
+\(\ell G\mapsto\ell d_\lambda\). For \(w=(r,q,p)\), let
+\(J_0(w)=J(0;p,q,r)\) be the original zero-diagonal Albert matrix.
+
+Proposition 3.1. The formula
+
+\[
+ \Psi:E_D\longrightarrow\pi^*TM,\qquad
+ [\ell,w]\longmapsto
+ \left(\ell K,(d\Xi_\lambda)^{-1}_{\ell G}
+                         (\ell J_0(w))\right)
+ \tag{HC7}
+\]
+
+is a bundle isomorphism. All three eight-dimensional labels are retained.
+
+Proof. The off-diagonal Albert matrices are exactly the tangent space
+at \(d_\lambda\): in cyclic source coordinates the three tangent maps obey
+\(D_i(a)d_\lambda=\Delta_iE_i(a)\), and each \(\Delta_i\ne0\).
+The source proves that these 24 directions exhaust the tangent space.
+For \(k\in K\), \(J_0(kw)=kJ_0(w)\); hence replacing
+\((\ell k,w)\) by \((\ell,kw)\) leaves (HC7) unchanged. The map is linear
+and invertible in every fibre. Local trivializations make the inverse
+smooth. In a cyclic slot \(E_i(a)\), the inverse tangent coordinate is
+\(K_i(a/\Delta_i)\), exactly as in the retained source. Thus the trace
+metric gives \(2h(a,b)\) on those original orbit coordinates, while
+\(K_i(a)\) gives \(2\Delta_i^2h(a,b)\). Neither the sign nor the scale
+of a \(\Delta_i\) has been removed. \(\square\)
+
+The exact sequence of tangent bundles of \(D\to M\) has vertical part
+\(L\times_K(\mathfrak g/\mathfrak k)\). At the Lie-algebra level it is
+
+\[
+ 0\longrightarrow\mathfrak g/\mathfrak k
+ \longrightarrow\mathfrak l/\mathfrak k
+ \longrightarrow\mathfrak l/\mathfrak g\longrightarrow0.
+ \tag{HC8}
+\]
+
+Its dimensions are \(25,49,24\). The rank-24 bundle \(E_D\) is the
+pullback of \(TM\); it is not all of \(TD\). Formula (HC8), with (HC7),
+proves the precise relation among those objects.
+
+The principal extension has an equally explicit comparison:
+
+\[
+ L\times_KG\longrightarrow\pi^*(L\to M),\qquad
+ [\ell,a]\longmapsto(\ell K,\ell a).
+\]
+
+It is well defined because \([\ell k,a]=[\ell,ka]\) gives the same
+second coordinate. Given \((d,b)\) with \(bG=\pi(d)\), choose a
+representative \(\ell\) of \(d\). Then \(a=\ell^{-1}b\in G\), and the
+inverse is \([\ell,\ell^{-1}b]\). Replacing \(\ell\) by \(\ell k\)
+gives the same class. The formulas and local sections prove that these
+are smooth inverse principal-bundle morphisms. Pullback by \(r_H\)
+therefore recovers the source's trivial extension \(Q_H\), together
+with its specified nontrivial \(K\)-reduction.
+
+The same polynomial (HC1) now defines
+
+\[
+ \mathcal M_D:E_D\longrightarrow
+ \mathcal A_D\otimes\underline{\mathcal V_{\mathrm{div},R}}.
+ \tag{HC9}
+\]
+
+Its equivariance is the identity
+\(\mu_e(ua)=u\mu_e(a)\bar u\). Therefore it is well defined on associated
+classes. Pullback by \(r_H\) gives exactly \(\mathcal M_H\), since (HC5)
+carries each labelled coordinate and each fixed \(w^{(a)}\) unchanged.
+The proof of Theorem 7.1 applies in every fibre: the zero subbundle has
+rank 12 and the vertical ranks are \(0,3,6,9\). This proves extension to
+the higher carrier, including its commuting pullback square.
+
+\subsection*{4. A full connection on the parameter space times spacetime}
+
+A fibre input is not a chosen global section of \(E_D\). To retain every
+input without imposing such a section, use the total space \(Y=\operatorname{Tot}(E_D)\)
+with projection \(p:Y\to D\). The pullback \(p^*E_D\) has the tautological
+section \(v\mapsto(v,v)\). Applying (HC9) to it defines a smooth adjoint-valued
+spatial one-form \(C\) on \(Y\times\mathbb R^3\).
+
+Choose the unrescaled trace inner product
+\(b(U,V)=-\operatorname{Tr}_{J}(UV)\) on \(\mathfrak l\subset\operatorname{End}(J)\).
+Automorphisms act orthogonally for the Albert trace metric, so the
+derivations are skew-adjoint. Thus \(b(U,U)>0\) for \(U\ne0\), and cyclicity
+of trace proves \(\operatorname{Ad}(L)\)-invariance. Let
+\(\mathfrak n=\mathfrak k^{\perp_b}\) and define
+
+\[
+ \omega_K=\operatorname{pr}_{\mathfrak k}(\ell^{-1}d\ell),\qquad
+ \theta=\operatorname{pr}_{\mathfrak n}(\ell^{-1}d\ell).
+ \tag{HC10}
+\]
+
+The projection commutes with \(\operatorname{Ad}(K)\). Therefore
+\(R_k^*\omega_K=\operatorname{Ad}_{k^{-1}}\omega_K\), and \(\omega_K\)
+returns the generator on every fundamental vertical vector. These two
+identities prove that it is a principal connection on \(L\to D\).
+The Maurer–Cartan identity gives its complete curvature
+
+\[
+ \Omega_K=-\tfrac12\operatorname{pr}_{\mathfrak k}[\theta\wedge\theta].
+ \tag{HC11}
+\]
+
+Indeed \([\mathfrak k,\mathfrak n]\subset\mathfrak n\), so the projected
+mixed bracket vanishes, and the \([\omega_K\wedge\omega_K]/2\) terms
+cancel exactly. No assertion of flatness follows.
+
+Pull this connection to \(Y\), then use \((d\rho)^{-1}\) and \(\varphi\)
+to express it in the same \(SU(2)\) convention as (HC2). Call the resulting
+local base form \(b_A\,dy^A\). There is now a full connection
+
+\[
+ \mathbb B=b_A\,dy^A+\varphi(C_i)\,dx^i,
+ \qquad \mathbb B_0=0,
+ \tag{HC12}
+\]
+
+on the pulled-back principal bundle over \(Y\times\mathbb R^{1,3}\).
+On base overlaps with gauge change \(u(y)\), the spatial field changes by
+adjoint conjugation and the base form acquires \(u^{-1}du\). Their sum
+therefore obeys the full connection law. Its curvature components are
+
+\[
+ \begin{aligned}
+ \mathbb F_{AB}&=\partial_A b_B-\partial_B b_A+[b_A,b_B],\\
+ \mathbb F_{Ai}&=\partial_A\varphi(C_i)+[b_A,\varphi(C_i)],\\
+ \mathbb F_{ij}&=\partial_i\varphi(C_j)-\partial_j\varphi(C_i)
+                       +[\varphi(C_i),\varphi(C_j)],\\
+ \mathbb F_{A0}&=0,\qquad\mathbb F_{0i}=0.
+ \end{aligned}\tag{HC13}
+\]
+
+The base curvature persists outside the spatial support of \(C\); it is
+explicitly retained. The fibre restriction to a fixed \(y\) is the
+four-dimensional connection studied below. No metric or Yang–Mills
+equation in the 73 parameter dimensions of \(Y\) is imposed by that
+four-dimensional restriction. Imposing such an equation would require
+additional metric and dynamical data. Formula (HC13) exhibits the mixed
+terms that must be kept when parameter derivatives are used.
+
+\subsection*{5. The exact correction equation and initial constraint}
+
+Work in the quaternionic convention until applying (HC2). For a fixed
+fibre input, write \(C_i(x)=(\mathcal M_H(v))_i(x)\), \(C_0=0\), and
+define all the following objects with spatial indices \(i,j=1,2,3\):
+
+\[
+ F_{ij}=\partial_iC_j-\partial_jC_i+[C_i,C_j],\quad
+ D_i=\partial_i+[C_i,\,\cdot\,],\quad
+ S_j=\sum_iD_iF_{ij}.
+ \tag{HC14}
+\]
+
+For a temporal-gauge correction \(a_i(s,x)\), put
+
+\[
+ K_{ij}=D_i a_j-D_j a_i,\quad Q_{ij}=[a_i,a_j],\quad
+ F_{ij}(C+a)=F_{ij}+K_{ij}+Q_{ij}.
+\]
+
+The source-free equations are exactly
+
+\[
+ \begin{aligned}
+ 0={}&\sum_i\left(D_i\dot a_i+[a_i,\dot a_i]\right),\\
+ \ddot a_j={}&S_j+\sum_i\bigl(
+ D_iK_{ij}+D_iQ_{ij}+[a_i,F_{ij}]
+                  +[a_i,K_{ij}]+[a_i,Q_{ij}]\bigr).
+ \end{aligned}\tag{HC15}
+\]
+
+A dot means \(\partial_s\), so \(\ddot a=c^{-2}\partial_t^2a\).
+To prove (HC15), use \(F_{0j}=\dot a_j\), \(F_{i0}=-\dot a_i\),
+\(D^0=-\partial_s\), and \(D_i^{C+a}=D_i+[a_i,\cdot]\), and expand
+every term in \(D^\mu F_{\mu\nu}(C+a)\). There are no omitted powers of
+\(a\). This derivation proves (HC15) for all fibre inputs, including every
+rank stratum of (HC1).
+
+In particular \(a(0)=0\), \(\dot a(0)=0\) satisfies the Gauss equation
+for every original compactly supported input. The evolution equation
+requires \(\ddot a_j(0)=S_j\). On the three-colour core this is
+\(-8(\mathbf i,\mathbf j,\mathbf k)\), or
+\(-16(T_1,T_2,T_3)\) after applying \(\varphi\). The static source is
+therefore a prescribed initial acceleration, not a failure of the
+initial Gauss constraint.
+
+\subsection*{6. An exact Gauss-preserving compactly supported correction}
+
+Proposition 6.1. The field
+
+\[
+ A_i(s,x)=C_i(x)+\frac{s^2}{2}S_i(x),\qquad A_0=0
+ \tag{HC16}
+\]
+
+is smooth for all real \(s\), is supported in the same spatial compact
+set as \(C\), has finite spatial energy at each \(s\), satisfies Gauss's
+law exactly for every \(s\), and has spatial source
+
+\[
+ D_A^\mu F_{\mu j}(A)
+ =\frac{s^2}{2}L_j+\frac{s^4}{4}Q_j+\frac{s^6}{8}N_j,
+ \tag{HC17}
+\]
+
+where the complete coefficients are
+
+\[
+ \begin{aligned}
+ B_{ij}&=D_iS_j-D_jS_i,\qquad C_{ij}=[S_i,S_j],\\
+ L_j&=\sum_i\left(D_iB_{ij}+[S_i,F_{ij}]\right),\\
+ Q_j&=\sum_i\left(D_iC_{ij}+[S_i,B_{ij}]\right),\\
+ N_j&=\sum_i[S_i,C_{ij}].
+ \end{aligned}\tag{HC18}
+\]
+
+The original three-colour core remains non-Abelian for all sufficiently
+small \(|s|\).
+
+Proof. The spatial covariant-divergence identity is
+
+\[
+ 2\sum_jD_jS_j
+ =\sum_{i,j}(D_jD_i-D_iD_j)F_{ij}
+ =\sum_{i,j}[F_{ji},F_{ij}]=0.
+ \tag{HC19}
+\]
+
+The first equality follows by exchanging \(i,j\) and using
+\(F_{ji}=-F_{ij}\); the second uses the curvature commutator identity.
+For any scalar smooth function \(\tau(s)\),
+
+\[
+ \sum_iD_i^{C+\tau S}(\dot\tau S_i)
+ =\dot\tau\sum_iD_iS_i+\tau\dot\tau\sum_i[S_i,S_i]=0.
+\]
+
+Thus Gauss holds for (HC16). Expand the spatial curvature as
+\(F+\tau B+\tau^2 C\) and its divergence as
+\(S+\tau L+\tau^2Q+\tau^3N\). For \(\tau=s^2/2\), the temporal term
+is \(-\ddot\tau S=-S\), giving (HC17) exactly. All derivatives and
+products have support inside \(\operatorname{supp}C\); every coefficient
+is smooth and bounded on that compact set. This proves support and
+finite energy. At \(s=0\) the core has nonzero commutator curvature,
+and continuity preserves it for a nonempty time interval. \(\square\)
+
+This is a concrete correction with an exactly computed residual. The
+residual in (HC17) has not been set to zero. On the equal-colour core,
+\(C_j=e_j\), \(S_j=-8e_j\), and \(A_j=(1-4s^2)e_j\); direct insertion gives
+
+\[
+ D_A^\mu F_{\mu j}
+ =(96s^2-384s^4+512s^6)e_j,
+ \quad (L_j,Q_j,N_j)=(192,-1536,4096)e_j.
+ \tag{HC20}
+\]
+
+The next Taylor coefficient is already fixed by this calculation:
+\(a_j=s^2S_j/2+s^4L_j/24+\cdots\). Proving convergence or controlling
+the full support boundary requires more than those Taylor coefficients.
+
+\subsection*{7. Exact source-free evolution of every homogeneous core}
+
+Restrict (HC1) to \(B_r(0)\). Its three components are the constants
+
+\[
+ c_1=\mu_{\mathbf i}(\alpha),\quad
+ c_2=\mu_{\mathbf j}(\beta),\quad
+ c_3=\mu_{\mathbf k}(\gamma).
+ \tag{HC21}
+\]
+
+This restriction is a proved map from the full labelled fibre. Consider
+the following separate spatially homogeneous receiving problem, retaining
+the original \(c_i\):
+
+\[
+ \ddot V_j=\sum_i[V_i,[V_i,V_j]],\qquad
+ V_j(0)=c_j,\quad\dot V_j(0)=0.
+ \tag{HC22}
+\]
+
+Theorem 7.1. Equation (HC22) has a unique smooth solution for all
+\(s\in\mathbb R\), depends smoothly on every initial \(c_i\), and is
+\(\operatorname{Sp}(1)\)-equivariant. The four-dimensional field
+\(A_0=0\), \(A_j=\varphi(V_j(s))\) solves every source-free Yang–Mills
+equation on \(\mathbb R\times\mathbb R^3\), and on
+\(\mathbb R\times T^3_{\ell_1,\ell_2,\ell_3}\) for any stated positive
+side lengths. No division by a \(c_i\) occurs, so the construction applies
+to all initial rank strata of \(\mathcal M_H\).
+
+Proof. The right side of (HC22) is polynomial in nine real coordinates,
+so a local solution follows from the contraction of its integral equation
+on a sufficiently short interval: on a closed ball the polynomial vector
+field and its derivative are bounded; choosing the interval so that the
+derivative bound times its length is less than one gives existence and
+uniqueness. Differentiating that integral equation gives smooth dependence
+on the initial data and smoothness in time.
+
+Let \(\langle\cdot,\cdot\rangle\) be the original quaternionic Euclidean
+metric and define
+
+\[
+ \mathcal E=\frac12\sum_j|\dot V_j|^2
+       +\frac12\sum_{i<j}|[V_i,V_j]|^2.
+ \tag{HC23}
+\]
+
+The identity \(\langle[x,y],z\rangle=-\langle y,[x,z]\rangle\) gives
+
+\[
+ \frac{d}{ds}\frac12\sum_{i<j}|[V_i,V_j]|^2
+ =-\sum_j\left\langle
+       \sum_i[V_i,[V_i,V_j]],\dot V_j\right\rangle.
+\]
+
+Adding the derivative of the kinetic term and using (HC22) proves
+\(\dot{\mathcal E}=0\). Consequently
+\(|\dot V_j|\le\sqrt{2\mathcal E(0)}\) and
+\(|V_j(s)|\le|c_j|+|s|\sqrt{2\mathcal E(0)}\).
+On each finite time interval these bounds keep the integral equation in
+a bounded region. Its polynomial derivative is bounded there, so the
+local construction extends through every finite endpoint. This proves
+global existence, uniqueness, and smooth dependence on each finite
+time interval.
+
+Set \(\mathcal G=\sum_j[V_j,\dot V_j]\). Its derivative is
+\(\sum_{i,j}[V_j,[V_i,[V_i,V_j]]]\). For a pair \(i\ne j\), write
+\(Z=[V_i,V_j]\). The two ordered contributions are
+\([V_j,[V_i,Z]]-[V_i,[V_j,Z]]=[[V_j,V_i],Z]=[-Z,Z]=0\).
+The diagonal terms vanish. Thus \(\dot{\mathcal G}=0\), and
+\(\mathcal G(0)=0\) proves Gauss's law. The spatial Yang–Mills equation
+for a homogeneous field is precisely (HC22), with its sign fixed by
+\(D^0=-\partial_s\). Applying the exact Lie isomorphism \(\varphi\)
+proves the matrix equation.
+
+Simultaneous conjugation by \(u\in\operatorname{Sp}(1)\) preserves
+the bracket and (HC22). Uniqueness therefore proves equivariance.
+The coefficients are independent of \(x\), so they descend to every
+stated spatial torus. \(\square\)
+
+The physical energy density, with every trace and coupling factor, is
+
+\[
+ \varepsilon=\frac1{2g^2}\left(
+ -2\sum_j\operatorname{tr}(F_{0j}^2)
+ -2\sum_{i<j}\operatorname{tr}(F_{ij}^2)\right)
+ =\frac4{g^2}\mathcal E.
+ \tag{HC24}
+\]
+
+Its torus energy is \(\ell_1\ell_2\ell_3\varepsilon\). If
+\(\mathcal E>0\), its energy on \(\mathbb R^3\) is infinite. The map
+from (HC21) to (HC22) therefore solves the homogeneous core receiving
+problem; it does not identify the full compactly supported profile with
+a homogeneous field. The cutoff derivative terms of (HC14)–(HC18)
+remain in the full problem.
+
+Equivariance gives the same construction over \(D\) and over \(X\).
+It gives a smooth map from their full rank-24 bundles into homogeneous
+solution families, without selecting a nowhere-zero global section.
+Pulling the base connection of Section 4 to this family gives a full
+parameter-space connection. Its mixed curvatures are
+\(\partial_A\varphi(V_i)+[b_A,\varphi(V_i)]\); they have not been
+declared zero.
+
+\subsection*{8. The equal-colour orbit and the retained source constants}
+
+For the core \(c_j=e_j\), uniqueness and substitution give
+\(V_j=f(s)e_j\), where
+
+\[
+ \ddot f+8f^3=0,\qquad f(0)=1,\quad\dot f(0)=0,
+ \qquad \dot f^2+4f^4=4.
+ \tag{HC25}
+\]
+
+The first integral follows by multiplication by \(2\dot f\).
+Starting at \(f=1\), the acceleration is \(-8\), so \(f\) decreases;
+on that branch \(\dot f=-2\sqrt{1-f^4}\). Its first zero occurs at
+
+\[
+ q=\frac12\int_0^1\frac{du}{\sqrt{1-u^4}}<\infty.
+ \tag{HC26}
+\]
+
+The endpoint singularity is integrable since
+\(1-u^4=(1-u)(1+u+u^2+u^3)\). Reflection at the turning points and
+odd continuation through zeros, justified by uniqueness of the smooth
+ODE, gives a periodic solution of period \(4q\). This is a complete
+quadrature construction, without an imported elliptic-function identity.
+Its Taylor coefficients begin
+\(f(s)=1-4s^2+8s^4+O(s^6)\), from differentiating (HC25).
+
+In the original matrix convention,
+
+\[
+ F_{0j}=2\dot f T_j,\quad
+ (F_{12},F_{23},F_{31})=4f^2(T_3,T_1,T_2),\quad
+ \varepsilon=\frac6{g^2}(\dot f^2+4f^4)=\frac{24}{g^2}.
+ \tag{HC27}
+\]
+
+The magnetic density is \(48f^4\), the electric density is \(12\dot f^2\),
+and their sum is \(48\). At the isolated zeros of \(f\), the magnetic
+curvature vanishes while the electric part is nonzero. At \(s=0\), the
+temporal contribution \(-2\ddot f T_j=16T_j\) cancels the exact static
+source \(-16T_j\). This proves the cancellation in the original units;
+in the physical time \(t\), the ODE is \(c^{-2}f_{tt}+8f^3=0\).
+
+The homogeneous mechanism is established literature, not a novelty claim.
+A. Tsapalis, E. P. Politis, X. N. Maintas, and F. K. Diakonos derive the
+temporal-gauge homogeneous equations in
+\href{https://arxiv.org/abs/1603.01858}{their original paper}, equations
+(A15)–(A17) and (B8) in its TeX labels. Their source has Hermitian
+\(t_a=\sigma_a/2\), physical field
+\(\mathcal A_i^a=(m/g)\delta_i^a\Phi(ms)\), and
+\(\Phi''+2\Phi^3=0\), in units where their time coordinate is a length.
+The exact comparison to our anti-Hermitian connection is
+
+\[
+ A_i=-ig\mathcal A_i^a t_a=m\Phi(ms)T_i=2f(s)T_i,
+ \qquad f(s)=\frac m2\Phi(ms).
+ \tag{HC28}
+\]
+
+Then \(f''+8f^3=(m^3/2)(\Phi''+2\Phi^3)=0\), with
+\(\Phi(0)=2/m\), \(\Phi'(0)=0\). The curvature comparison is
+\(F=-ig\mathcal F^a t_a\), and their energy density
+\(\sum_a(E_a^2+B_a^2)/2\) equals (HC24). Their metric is the negative
+of ours; changing that overall sign leaves the source-free equation
+unchanged. The value \(m>0\) remains explicit. It is not interpreted
+as a quantum mass gap.
+
+\subsection*{9. The static obstruction and the next boundary calculation}
+
+Proposition 9.1. A smooth, compactly supported, time-independent
+connection \(A_0=0\) on \(\mathbb R^{1,3}\) that solves the source-free
+Yang–Mills equation has \(F_{ij}=0\).
+
+Proof. Keep the magnetic energy
+
+\[
+ E(A)=\frac1{2g^2}\int_{\mathbb R^3}
+       \sum_{i<j}\langle F_{ij},F_{ij}\rangle_{\mathfrak{su}(2)}\,d^3x,
+ \qquad\langle U,V\rangle_{\mathfrak{su}(2)}=-2\operatorname{tr}(UV).
+\]
+
+For compactly supported variation \(a\), integration by parts gives
+
+\[
+ \delta E(A)[a]=-\frac1{g^2}\int\sum_j
+    \left\langle\sum_iD_iF_{ij},a_j\right\rangle\,d^3x.
+\]
+
+The boundary term vanishes because both fields have compact support.
+For the exact variation \(A_i^{(\lambda)}(x)=\lambda A_i(\lambda x)\),
+\(\lambda>0\), one has
+\(F_{ij}^{(\lambda)}(x)=\lambda^2F_{ij}(\lambda x)\), hence
+\(E(A^{(\lambda)})=\lambda E(A)\). Its derivative at \(\lambda=1\)
+uses \(a_i=A_i+x^k\partial_kA_i\), which has compact support. The
+source-free equation makes this derivative zero; the exact scaling
+makes it \(E(A)\). Positivity of the stated metric gives \(F=0\).
+\(\square\)
+
+Thus an interacting correction with the retained compact support cannot
+remain static. Sections 6–8 have already attempted the next construction:
+an exact Gauss-preserving compactly supported path with its complete
+residual, and an exact global source-free evolution of the core. The
+next calculation is to solve (HC15) through the original cutoff region,
+controlling the residual (HC17), spatial propagation, finite energy, and
+parameter derivatives. The soft-period family must then be coupled to
+this evolution with its full period matrix and monodromy. None of the
+classical energies above is a spectral measure of a reconstructed
+quantum Hamiltonian.
+
+\subsection*{10. Sources, checks, and figure}
+
+The higher-rung source and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PROOF.md}{PROOF.md} supply the retained
+topological class, representation, and original moment-map construction.
+The new pullback formulas and evolution calculations are proved above.
+Ichiro Yokota's
+\href{https://arxiv.org/abs/0902.0431}{Exceptional Lie groups}, Theorems
+1.16.2 and 2.7.1, supplies the human-source group conventions; its original
+TeX was read at those proofs. The temporal-gauge source comparison uses
+only Sections II–III of the Tsapalis–Politis–Maintas–Diakonos TeX,
+including its equations (A1)–(A18), (B1)–(B4), and (B8). Both original
+arXiv source archives are preserved locally; the reading ledger identifies
+their byte hashes and records the unread sections.
+
+The reproducible checker `checks/verify\_higher\_carrier\_evolution.py`
+checks the polynomial source expansion, the homogeneous force and Gauss
+identities, the energy cancellation, all equal-colour coefficients, and
+the original curvature/trace factors. These checks support the algebra;
+the bundle and ODE existence proofs are the arguments above.
+
+\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+
+Figure: the pullback square of Theorem 2.1 and the exact equal-colour
+solution of (HC25)–(HC27). The plotted curve is a numerical rendering of
+the proved ODE, not a numerical proof. Its labelled energies retain the
+original factors. Reproducible source:
+`figures/higher\_carrier\_evolution\_figure.py`.
+\end{document}

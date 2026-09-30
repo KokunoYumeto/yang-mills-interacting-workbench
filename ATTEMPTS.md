@@ -310,3 +310,7 @@ We extended the corrected fluid field's axis calculation beyond its first radial
 ## Yang–Mills continuation: retained responses, gauge-native sources and cubic return
 
 The 14–16 September session applied retained-source and minimum-energy constructions to the original lattice operator, then developed actual-loop response estimates, strong-coupling source bounds, a gauge-native band calculation and the complete cubic/linearized return. The [complete continuation edition](yang-mills/consolidation/20260916/) preserves full arguments and the source sequence; its current state keeps the finite-lattice and fixed-spacing volume-limit ranges separate. The fourth vacuum-energy coefficient is supplied, while the connected fourth vacuum-source calculation was still in progress at the export boundary. Earlier response bodies and missing attachment distinctions are retained so that attempted routes are inspectable.
+
+## Higher-carrier and temporal correction
+
+The [higher-carrier and temporal evolution proof](yang-mills/continuations/20260930-s6-ns-moment-map-bridge/HIGHER_CARRIER_AND_EVOLUTION.md) constructs the exact pullback through the 49-dimensional reduction carrier, extends the profile map, and gives a full parameter connection. It constructs a compactly supported correction satisfying Gauss's law exactly with a computed residual, and proves global source-free evolution of every homogeneous core. The original finite-energy spatial boundary problem and the quantum construction remain active.

@@ -2,7 +2,7 @@
   "schema": "s6-ns-yang-mills-research-program-v2",
   "date": "2026-09-30",
   "programme_id": "YM-S6NS-HIGHER-DOMAIN-NOGAP",
-  "status": "Sol 6 work re-audited; corrected global polynomial triality-to-profile map proved; its explicit core has nonzero source; the globally smooth source-free quantum state and contradiction remain active goals",
+  "status": "Exact higher-carrier pullback and full parameter connection proved; Gauss-preserving compact-support correction and global homogeneous source-free evolution constructed; finite-energy R3 PDE and quantum goal remain active",
   "thesis": [
     "extract the integral-lattice, soft-spectrum, holonomy, and continuous-threshold functions of the S6 cusp construction",
     "construct a functionally similar higher domain with a proved global carrier and a marked proper-subgroup frame reduction",
@@ -70,6 +70,36 @@
       "statement": "At a top-stratum fibre point the M_H core has curvature (2k,2i,2j), SU(2) magnetic density 48, and source (Jcal_1,Jcal_2,Jcal_3)=(-8i,-8j,-8k), whose SU(2) image is D^mu F_muj=-16 T_j.",
       "scope": "static spatial core where the cutoff is constant; exact quaternion bracket and phi(i,j,k)=2(T1,T2,T3)",
       "proof_locator": "PROOF.md Sections 8--9; checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json"
+    },
+    {
+      "result_id": "SZ-20260930-005",
+      "statement": "The 49-dimensional carrier F4/rho(Sp(1)) has fibre Spin(8)/rho(Sp(1)) of dimension 25 over the 24-dimensional flag. The retained reduction and complete rank-24 bundle are exact pullbacks, and the polynomial profile map extends to that carrier.",
+      "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Theorem 2.1, Proposition 3.1, equations HC3-HC9",
+      "scope": "classical bundle morphisms, with explicit dependence on the chosen trivialization"
+    },
+    {
+      "result_id": "SZ-20260930-006",
+      "statement": "The Maurer-Cartan projection gives a full connection on the parameter carrier times spacetime, retaining base and mixed curvature.",
+      "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Section 4, equations HC10-HC13",
+      "scope": "full connection construction; no higher-dimensional Yang-Mills equation is imposed"
+    },
+    {
+      "result_id": "SZ-20260930-007",
+      "statement": "For every retained compactly supported input, C+s^2 S/2 preserves Gauss exactly and has source residual s^2 L/2+s^4 Q/4+s^6 N/8 with every coefficient proved.",
+      "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Proposition 6.1, equations HC14-HC20",
+      "scope": "smooth finite-energy compactly supported correction with computed nonzero residual"
+    },
+    {
+      "result_id": "SZ-20260930-008",
+      "statement": "Every homogeneous core input has a global smooth equivariant source-free temporal evolution, including all initial rank strata. The equal-colour solution has f''+8f^3=0 and energy density 24/g^2.",
+      "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Theorem 7.1, equations HC21-HC28",
+      "scope": "classical homogeneous evolution; finite torus energy, generally infinite R3 energy; known homogeneous mechanism applied in the exact source convention"
+    },
+    {
+      "result_id": "SZ-20260930-009",
+      "statement": "A smooth compactly supported time-independent source-free connection with A0=0 on R1,3 has zero spatial curvature, by the exact energy variation.",
+      "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Proposition 9.1",
+      "scope": "static classical obstruction; it requires a time-dependent continuation rather than terminating the programme"
     }
   ],
   "defined_spaces": {
@@ -114,10 +144,10 @@
     "prove universality or theory identification and derive the intended contradiction; any unidentified gapless branch remains an intermediate comparison object"
   ],
   "immediate_calculation": {
-    "name": "source-free correction and soft-period extension of M_H",
-    "input": "P_H, A_H, the complete W_H splitting, M_H with rank strata 0,3,6,9, the exact core source -8(i,j,k), and the retained S6 period matrix",
-    "output_required": "a cusp-compatible corrected profile M_H+alpha satisfying every source and Gauss equation with nonzero commutator curvature, plus the exact base relation and all clutching, monodromy, support, rank, and boundary laws",
-    "then": "construct finite holonomies and a nonzero physical projected state before the continuum spectral calculation"
+    "name": "full compact-support evolution and coupling to the retained soft-period geometry",
+    "input": "r_H, E_D, M_D, full base connection, C=M_H(v), S(C), the exact residual L,Q,N, and the complete original period matrix",
+    "output_required": "a global finite-energy R3 source-free evolution extending the actual compactly supported data with controlled parameter derivatives and cusp/monodromy behaviour",
+    "then": "finite physical projected states, their interacting Gram and Hamiltonian kernels, and the prescribed continuum limit"
   },
   "nonclaims": [
     "no interacting quantum Hamiltonian has been constructed on the 24-dimensional carrier",
@@ -127,8 +157,8 @@
     "an unidentified gapless Yang--Mills-type branch is unfinished work rather than an alternative programme conclusion",
     "the chart-supported bump proves receiving-space nonemptiness and is not the triality-to-profile map",
     "M_H is a global fibrewise polynomial map, but no top-rank global section over X or cusp extension has been constructed",
-    "the explicit M_H core is sourced and is not a source-free classical solution or a quantum state",
-    "P_H is a reduction over X of the extended bundle Q_H; no reduction of T(F4/Spin(8)) is inferred"
+    "the static M_H core is sourced; its homogeneous temporal evolution is source-free, while the original compact-support evolution and quantum state remain unfinished",
+    "P_H is a reduction over X of the extended bundle Q_H; the reduction carrier D pulls back T(F4/Spin(8)); no reduction over the original flag base is asserted"
   ],
   "source_ids": [
     "YM-S6-CUSP-GAUGE-SPECTRAL-CHAIN",
@@ -169,7 +199,14 @@
     "CURRENT_CLAIM_DISPOSITIONS.json",
     "SOURCE_PROVENANCE.md",
     "PUBLIC_VALIDATION.json",
-    "PUBLIC_MANIFEST.json"
+    "PUBLIC_MANIFEST.json",
+    "HIGHER_CARRIER_AND_EVOLUTION.md",
+    "checks/verify_higher_carrier_evolution.py",
+    "checks/HIGHER_CARRIER_EVOLUTION_CHECK.json",
+    "figures/HIGHER_CARRIER_EVOLUTION.png",
+    "figures/HIGHER_CARRIER_EVOLUTION.svg",
+    "figures/higher_carrier_evolution_figure.py",
+    "HIGHER_CARRIER_AND_EVOLUTION.tex"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -179,7 +216,12 @@
     "SZ-20260930-001",
     "SZ-20260930-002",
     "SZ-20260930-003",
-    "SZ-20260930-004"
+    "SZ-20260930-004",
+    "SZ-20260930-005",
+    "SZ-20260930-006",
+    "SZ-20260930-007",
+    "SZ-20260930-008",
+    "SZ-20260930-009"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim."
 }

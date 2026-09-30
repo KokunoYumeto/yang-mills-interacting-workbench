@@ -37,3 +37,27 @@ The following claims are derived in this continuation rather than imported from 
 6. the precise reconstructed spectral target that distinguishes continuous support at zero from vacuum degeneracy and high-energy escape.
 
 Their complete proofs and exact limitations are in [PROOF.md](PROOF.md) and [SPECTRAL_PROGRAM.md](SPECTRAL_PROGRAM.md). The machine checks establish the displayed polynomial and matrix identities only; the global bundle arguments remain mathematical proofs in the text.
+
+## Higher-carrier and evolution source reading
+
+The retained higher-rung source was additionally read at lines 2593–2804 for its tangent morphism and all spectral factors. The new derivation uses its exact reduction-map proof at lines 5645–5792.
+
+### Ichiro Yokota
+
+Original-author source: [arXiv:0902.0431](https://arxiv.org/abs/0902.0431); [source endpoint](https://arxiv.org/src/0902.0431), acquired on 30 September 2026.
+
+Archive SHA-256: ca2eafcf84f7e3584723e5c937f4b4e3342edc3bb026665512cbe01376ec30da. Original TeX file SpEcxp.tex, SHA-256: 18d7f1a808d0a73f89b655095afd895b66ddc58ba26c4ab8c48b792c64b86d76.
+
+The section structure and original proofs of Theorems 1.16.2 and 2.7.1 were read. The latter fixes the exact Spin(8) subgroup of F4 and its ordered action.
+
+The downloaded archive and exact extracted author source are preserved in the private reading archive. The unversioned endpoint is identified by these exact byte hashes. No claim of whole-work reading or novelty is made.
+
+### A. Tsapalis, E. P. Politis, X. N. Maintas, F. K. Diakonos
+
+Original-author source: [arXiv:1603.01858](https://arxiv.org/abs/1603.01858); [source endpoint](https://arxiv.org/src/1603.01858), acquired on 30 September 2026.
+
+Archive SHA-256: e496bf991530fb8110866b8b12df0c1bd4fa43f9381545ff55431bb8197de83c. Original TeX file SU3solutions.tex, SHA-256: e9f50120f57a73b30caec404c45e1cd4fb1188efd7f3b6b72a2c6da123efcf38.
+
+The section structure, Sections II–III, equations A1–A18, B1–B4, and B8 were read. Equation HC28 proves the exact comparison retaining coupling, field scale, time coordinate, generator convention, and metric sign. Later SU(3)/SU(4) calculations were not read or used.
+
+The downloaded archive and exact extracted author source are preserved in the private reading archive. The unversioned endpoint is identified by these exact byte hashes. No claim of whole-work reading or novelty is made.

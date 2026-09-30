@@ -1,0 +1,31 @@
+{
+  "schema": "higher-carrier-evolution-exact-check-v1",
+  "sympy_version": "1.13.1",
+  "script_sha256": "40e9b3be64c5aa0f3cf18949c61fa8a3a0e4d8232a59897e385d86579e35bce0",
+  "checks": {
+    "homogeneous_gauss_derivative": true,
+    "force_is_negative_potential_gradient_1": true,
+    "force_is_negative_potential_gradient_2": true,
+    "force_is_negative_potential_gradient_3": true,
+    "energy_derivative": true,
+    "covariant_source_divergence_fixture": true,
+    "full_spatial_source_polynomial_fixture_1": true,
+    "full_spatial_source_polynomial_fixture_2": true,
+    "full_spatial_source_polynomial_fixture_3": true,
+    "exact_Gauss_for_C_plus_tau_S_fixture": true,
+    "equal_colour_force_1": true,
+    "equal_colour_force_2": true,
+    "equal_colour_force_3": true,
+    "core_correction_residual": true,
+    "equal_colour_energy": true,
+    "fourth_order_coefficient": true,
+    "matrix_electric_density_12": true,
+    "matrix_magnetic_density_48": true,
+    "physical_energy_factor": true,
+    "literature_full_scale_dictionary": true,
+    "carrier_dimensions": true
+  },
+  "check_count": 21,
+  "all_passed": true,
+  "scope": "Exact homogeneous polynomial identities, trace factors, and a nonconstant polynomial differential fixture. Global bundle descent and ODE existence are proved in HIGHER_CARRIER_AND_EVOLUTION.md; no infinite-dimensional PDE or quantum reconstruction is certified."
+}

@@ -318,5 +318,65 @@
     ],
     "proof_file": "PROOF.md Sections 8--9",
     "reviewed_utc": "2026-09-30T03:45:52.300089+00:00"
+  },
+  {
+    "finding_id": "SZ-20260930-005-HIGHER-CARRIER-EVOLUTION",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The 49-dimensional carrier F4/rho(Sp(1)) has fibre Spin(8)/rho(Sp(1)) of dimension 25 over the 24-dimensional flag. The retained reduction and complete rank-24 bundle are exact pullbacks, and the polynomial profile map extends to that carrier.",
+    "scope": "classical bundle morphisms, with explicit dependence on the chosen trivialization",
+    "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Theorem 2.1, Proposition 3.1, equations HC3-HC9",
+    "affected_findings": [
+      "S6NS-20260930-015",
+      "S6NS-20260930-016",
+      "S6NS-20260930-017"
+    ]
+  },
+  {
+    "finding_id": "SZ-20260930-006-HIGHER-CARRIER-EVOLUTION",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The Maurer-Cartan projection gives a full connection on the parameter carrier times spacetime, retaining base and mixed curvature.",
+    "scope": "full connection construction; no higher-dimensional Yang-Mills equation is imposed",
+    "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Section 4, equations HC10-HC13",
+    "affected_findings": [
+      "S6NS-20260930-015",
+      "S6NS-20260930-016",
+      "S6NS-20260930-017"
+    ]
+  },
+  {
+    "finding_id": "SZ-20260930-007-HIGHER-CARRIER-EVOLUTION",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "For every retained compactly supported input, C+s^2 S/2 preserves Gauss exactly and has source residual s^2 L/2+s^4 Q/4+s^6 N/8 with every coefficient proved.",
+    "scope": "smooth finite-energy compactly supported correction with computed nonzero residual",
+    "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Proposition 6.1, equations HC14-HC20",
+    "affected_findings": [
+      "S6NS-20260930-015",
+      "S6NS-20260930-016",
+      "S6NS-20260930-017"
+    ]
+  },
+  {
+    "finding_id": "SZ-20260930-008-HIGHER-CARRIER-EVOLUTION",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "Every homogeneous core input has a global smooth equivariant source-free temporal evolution, including all initial rank strata. The equal-colour solution has f''+8f^3=0 and energy density 24/g^2.",
+    "scope": "classical homogeneous evolution; finite torus energy, generally infinite R3 energy; known homogeneous mechanism applied in the exact source convention",
+    "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Theorem 7.1, equations HC21-HC28",
+    "affected_findings": [
+      "S6NS-20260930-015",
+      "S6NS-20260930-016",
+      "S6NS-20260930-017"
+    ]
+  },
+  {
+    "finding_id": "SZ-20260930-009-HIGHER-CARRIER-EVOLUTION",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "A smooth compactly supported time-independent source-free connection with A0=0 on R1,3 has zero spatial curvature, by the exact energy variation.",
+    "scope": "static classical obstruction; it requires a time-dependent continuation rather than terminating the programme",
+    "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Proposition 9.1",
+    "affected_findings": [
+      "S6NS-20260930-015",
+      "S6NS-20260930-016",
+      "S6NS-20260930-017"
+    ]
   }
 ]

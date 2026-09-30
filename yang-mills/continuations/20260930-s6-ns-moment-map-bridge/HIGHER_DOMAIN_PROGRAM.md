@@ -1559,3 +1559,29 @@ identification theorem must then connect this reconstructed theory to the
 four-dimensional Yang--Mills theory named in the mass-gap statement.  The
 completion certificate is the resulting contradiction; without that final
 map, the goal has not yet been reached.
+
+## Higher carrier and source evolution — proved continuation
+
+The complete derivation is in [HIGHER_CARRIER_AND_EVOLUTION.md](HIGHER_CARRIER_AND_EVOLUTION.md).
+Its Theorem 2.1 constructs the exact map \(r_H:X\to D=F_4/\rho(\operatorname{Sp}(1))\),
+with \(r_H^*(F_4\to D)\cong P_H\), \(\pi r_H\) constant, and
+\(E_D\cong\pi^*T(F_4/\operatorname{Spin}(8))\). The dimensions are
+\(\dim D=49\), \(\dim(F_4/\operatorname{Spin}(8))=24\), and fibre dimension 25.
+The profile map extends to \(E_D\); its pullback is exactly \(\mathcal M_H\).
+Section 4 supplies a full parameter-space connection and retains its mixed curvature.
+
+For the original compactly supported profile \(C=\mathcal M_H(v)\), the source
+\(S_j=\sum_iD_iF_{ij}(C)\) is a permitted initial acceleration with zero
+initial electric field. Proposition 6.1 proves that \(A=C+s^2S/2\) preserves
+Gauss's law exactly, retains the support, and has the complete residual
+\(s^2L/2+s^4Q/4+s^6N/8\). Theorem 7.1 constructs the exact source-free
+homogeneous core evolution for every input and every initial rank stratum.
+For the equal-colour core, \(f''+8f^3=0\) has
+\(f'^2+4f^4=4\) and physical energy density \(24/g^2\).
+
+The homogeneous solution has finite energy on each stated spatial torus and
+infinite total energy on \(\mathbb R^3\) when it is nontrivial. The original
+cutoff boundary still requires the full PDE correction. Proposition 9.1 proves
+that a nonzero-curvature compactly supported correction cannot remain static.
+The next calculation therefore retains time evolution, the support boundary,
+and the full soft-period data. The quantum-state and reconstruction goal remains active.

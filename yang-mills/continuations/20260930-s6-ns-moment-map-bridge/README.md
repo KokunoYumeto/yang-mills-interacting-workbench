@@ -1,13 +1,17 @@
 # S6-reduced triality-to-profile bridge for the Yang–Mills gapless-state programme
 
 **Date:** 30 September 2026
-**Status:** complete proof of a corrected classical bundle morphism, its interaction core, and its exact source obstruction. This continuation does not construct a quantum state or settle the four-dimensional Yang–Mills mass-gap problem.
+**Status:** complete proofs of the classical bundle morphism, its higher-carrier pullback, a full parameter connection, an exact Gauss-preserving correction, and global source-free homogeneous core evolution. The full finite-energy spatial evolution and quantum construction remain in progress.
 
 ## Programme goal
 
 The programme goal is to construct a globally smooth, interacting, gapless state within the stated four-dimensional Yang–Mills axioms and then derive the resulting contradiction of the mass-gap statement. That is the research goal. It is not a conclusion of this continuation.
 
-The role of the present result is narrower and exact. It replaces an invalid chart-supported profile with a global fibrewise polynomial map from the retained rank-24 triality bundle. It then calculates the first interaction core and shows exactly why that core is not yet source-free.
+The construction starts with a global fibrewise polynomial map from the retained rank-24 triality bundle. Its [higher-carrier and evolution continuation](HIGHER_CARRIER_AND_EVOLUTION.md) now proves the missing base relation through \(F_4/\rho(\operatorname{Sp}(1))\), a 49-dimensional reduction carrier over the 24-dimensional flag. It also proves the full connection formula and turns the static source into an initial-acceleration calculation.
+
+The correction \(A=C+s^2S/2\) preserves Gauss's law exactly and retains the original compact support; its complete source residual is computed. Every homogeneous core input has an exact smooth source-free evolution for all time. The latter has finite energy on stated spatial tori and generally infinite energy on \(\mathbb R^3\). The remaining PDE calculation keeps the original cutoff region and finite-energy requirement. The [complete TeX proof](HIGHER_CARRIER_AND_EVOLUTION.tex) is available; PDF compilation is unverified because the built-in compiler could not locate its standard platform directories.
+
+![Higher-carrier pullback and exact core evolution](figures/HIGHER_CARRIER_EVOLUTION.png)
 
 ![The retained bundle, moment maps, spatial profile and source defect](figures/S6_NS_MOMENT_MAP_BRIDGE.png)
 
@@ -132,7 +136,7 @@ The audit found several scope errors and repaired each affected statement.
 
 - The earlier chart-supported bump profile showed that the receiving profile space was nonempty. It was independent of the rank-24 bundle point and therefore was not the required domain-to-profile map. The map \(\mathcal M_H\) above is the replacement.
 - The proved \(\operatorname{Sp}(1)\) reduction is a bundle over \(X\cong S^6\). No reduction of the tangent frame bundle of \(F_4/\operatorname{Spin}(8)\) has been proved.
-- The displayed spatial coefficients form a partial connection along the \(\mathbb R^3\) fibres. Components in the \(X\)-directions are still required for a full connection over \(X\times\mathbb R^3\).
+- The displayed spatial coefficients form a partial connection along the \(\mathbb R^3\) fibres. Section 4 of the [higher-carrier continuation](HIGHER_CARRIER_AND_EVOLUTION.md) now supplies the base components and computes every mixed curvature term.
 - A smooth classical profile is not a physical quantum state. Link holonomy, gauge projection, a nonzero Hilbert-space vector, Hamiltonian dynamics, continuum reconstruction, uniqueness of the vacuum, interaction in the reconstructed theory, and spectral support at arbitrarily small positive energy remain to be constructed.
 - The retained Navier–Stokes material supplies regular divergence-free profiles and exact curvature/current formulae. It does not identify fluid time with Yang–Mills Hamiltonian time, and its singular endpoint is excluded from the smooth target.
 
@@ -148,6 +152,7 @@ The [spectral programme](SPECTRAL_PROGRAM.md) sharpens the “locally gapped, gl
 
 | Step | File | Purpose |
 | --- | --- | --- |
+| 0 | [HIGHER_CARRIER_AND_EVOLUTION.md](HIGHER_CARRIER_AND_EVOLUTION.md) | Exact higher-carrier pullback, full connection, complete temporal correction equation, Gauss-preserving path, and global homogeneous evolution. |
 | 1 | [PROOF.md](PROOF.md) | Complete corrected theorem, all maps, ranks, curvature, source calculation, and next correction space. |
 | 2 | [SP1_BUNDLE_BRIDGE.md](SP1_BUNDLE_BRIDGE.md) | Retained cusp class, subgroup injection, colour bundle, metric factors, and corrected partial-connection statement. |
 | 3 | [HIGHER_DOMAIN_PROGRAM.md](HIGHER_DOMAIN_PROGRAM.md) | Full domain-to-state-to-spectrum programme and the exact role of S6, triality, and regular Navier–Stokes profiles. |
@@ -157,12 +162,14 @@ The [spectral programme](SPECTRAL_PROGRAM.md) sharpens the “locally gapped, gl
 
 ## Reproduction
 
-The three symbolic calculations are independent checks of stated coordinate identities. They accompany, and do not replace, the written proofs.
+The four symbolic calculations check the stated coordinate identities. The global bundle and existence arguments are given in the written proofs.
 
 ```bash
 python checks/verify_sp1_bundle_bridge.py
 python checks/verify_sp1_moment_map_bridge.py
 python checks/verify_three_colour_curvature.py
+python checks/verify_higher_carrier_evolution.py
+python build_public_records.py
 python verify_public_package.py
 ```
 
@@ -171,7 +178,8 @@ The published receipts are:
 - [SP1_BUNDLE_BRIDGE_CHECK.json](checks/SP1_BUNDLE_BRIDGE_CHECK.json)
 - [SP1_MOMENT_MAP_BRIDGE_CHECK.json](checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json)
 - [THREE_COLOUR_CURVATURE_CHECK.json](checks/THREE_COLOUR_CURVATURE_CHECK.json)
+- [HIGHER_CARRIER_EVOLUTION_CHECK.json](checks/HIGHER_CARRIER_EVOLUTION_CHECK.json)
 - [PUBLIC_VALIDATION.json](PUBLIC_VALIDATION.json)
 - [PUBLIC_MANIFEST.json](PUBLIC_MANIFEST.json)
 
-The first three require Python and SymPy. The package verifier uses only Python's standard library. All retained source files used by this continuation are under [sources/](sources/).
+The four symbolic checks require Python and SymPy. The package verifier uses only Python's standard library. Retained programme source files are under [sources/](sources/); exact original-author reading records and external source links are in [SOURCE_PROVENANCE.md](SOURCE_PROVENANCE.md).

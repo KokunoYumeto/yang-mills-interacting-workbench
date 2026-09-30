@@ -32,6 +32,7 @@ def main() -> None:
         "checks/SP1_BUNDLE_BRIDGE_CHECK.json",
         "checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json",
         "checks/THREE_COLOUR_CURVATURE_CHECK.json",
+        "checks/HIGHER_CARRIER_EVOLUTION_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -57,10 +58,12 @@ def main() -> None:
         "date": "2026-09-30",
         "result_scope": (
             "Corrected global classical bundle morphism, its fibrewise rank data, "
-            "the interacting core, and its exact nonzero Yang--Mills source."
+            "the interacting core, its exact nonzero static source, the higher-carrier "
+            "pullback, full parameter connection, Gauss-preserving correction, and "
+            "global source-free homogeneous core evolution."
         ),
         "claim_boundary": (
-            "No physical quantum state, source-free global solution, continuum "
+            "No physical quantum state, source-free finite-energy R3 solution of the original cutoff data, continuum "
             "reconstruction, gapless spectrum, or mass-gap contradiction is established."
         ),
         "receipts": receipt_records,

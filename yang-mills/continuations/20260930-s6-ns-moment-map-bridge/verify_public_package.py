@@ -34,6 +34,11 @@ def collect_boole(value: object) -> list[bool]:
 required = [
     "README.md",
     "PROOF.md",
+    "HIGHER_CARRIER_AND_EVOLUTION.md",
+    "HIGHER_CARRIER_AND_EVOLUTION.tex",
+    "checks/HIGHER_CARRIER_EVOLUTION_CHECK.json",
+    "figures/HIGHER_CARRIER_EVOLUTION.png",
+    "figures/HIGHER_CARRIER_EVOLUTION.svg",
     "SP1_BUNDLE_BRIDGE.md",
     "HIGHER_DOMAIN_PROGRAM.md",
     "SPECTRAL_PROGRAM.md",
@@ -57,6 +62,7 @@ receipt_paths = [
     ROOT / "checks" / "SP1_BUNDLE_BRIDGE_CHECK.json",
     ROOT / "checks" / "SP1_MOMENT_MAP_BRIDGE_CHECK.json",
     ROOT / "checks" / "THREE_COLOUR_CURVATURE_CHECK.json",
+    ROOT / "checks" / "HIGHER_CARRIER_EVOLUTION_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))

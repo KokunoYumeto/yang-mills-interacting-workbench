@@ -177,7 +177,11 @@ def programmes() -> list[dict]:
                 "global bundle-valued spatial profile. Its zero subbundle and "
                 "vertical rank strata are explicit. The first three-colour core "
                 "has magnetic density 48 and exact source D^mu F_muj=-16 T_j; "
-                "that defect defines the next correction space. No source-free "
+                "the higher-carrier continuation constructs its exact pullback "
+                "through F4/rho(Sp(1)), the full parameter connection, an exact "
+                "Gauss-preserving compactly supported path with computed residual, "
+                "and global source-free evolution of every homogeneous core. "
+                "The full finite-energy cutoff evolution remains unfinished. No source-free "
                 "quantum state, continuum reconstruction, gapless spectrum or "
                 "mass-gap contradiction is established. The complete proof, "
                 "research programmes, original source TeX, claim ledger, figures, "
@@ -267,7 +271,7 @@ def programmes() -> list[dict]:
             "title": "Navier–Stokes reconstruction and validation workbench",
             "human_entry": "navier-stokes/README.md",
             "human_reader": "navier-stokes/navier_stokes_workbench_208p.pdf",
-            "latest_continuation": "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md",
+            "latest_continuation": "navier-stokes/continuations/20260930-coupled-viscous-control/README.md",
             "primary_source_reading_record": "navier-stokes/SOURCE_READING_20260920.json",
             "mirrored_primary_latex": "navier-stokes/sources/openai-source-faithful-20260920/upstream/reconstruction/main.tex",
             "mirrored_primary_pdf": "navier-stokes/sources/openai-source-faithful-20260920/upstream/output/pdf/source-faithful-reconstruction.pdf",
@@ -280,9 +284,19 @@ def programmes() -> list[dict]:
             "research_state_document": "navier-stokes/RESEARCH_STATE.md",
             "research_state_record": "navier-stokes/research-state.json",
             "overleaf_reader": "https://www.overleaf.com/read/hzthvczhdyxc#a60fc2",
-            "edition_doi": "10.5281/zenodo.22678406",
-            "edition_url": "https://doi.org/10.5281/zenodo.22678406",
+            "foundation_edition_doi": "10.5281/zenodo.22678406",
+            "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678406",
+            "edition_doi": "10.5281/zenodo.23056668",
+            "edition_url": "https://doi.org/10.5281/zenodo.23056668",
+            "concept_doi": "10.5281/zenodo.22667378",
+            "publication_record": "navier-stokes/PUBLICATION_20260930.json",
             "research_state": (
+                "The 30 September finite-control and force collection adds complete "
+                "positive-diffusion Boussinesq return proofs, exact scaling and state "
+                "maps, full-support signed forces and a quantitative force-to-state "
+                "calculation. The modified infinite trajectory and complete independent "
+                "global NS validation remain unfinished. The separately preserved "
+                "Everyday English reference is an unfinished experiment. "
                 "The 19 September vacuum-hydrodynamics continuation recovers an exact "
                 "nonlinear marked Einstein constraint-data encoding with a full-velocity "
                 "left inverse, a linear Rindler shear response and finite pole-cluster "
@@ -303,7 +317,8 @@ def programmes() -> list[dict]:
             "description_basis": ["navier-stokes/README.md", "navier-stokes/RESEARCH_STATE.md",
                                   "navier-stokes/SOURCE_READING_20260920.json",
                                   "navier-stokes/sources/openai-source-faithful-20260920/README.md",
-                                  "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md"],
+                                  "navier-stokes/continuations/20260919-vacuum-hydrodynamics/README.md",
+                                  "navier-stokes/continuations/20260930-coupled-viscous-control/README.md"],
         },
     ]
 

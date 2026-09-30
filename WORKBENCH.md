@@ -56,3 +56,7 @@ Reuse can produce a check during further research: record which statement and ve
 The [PolyClank design](docs/polyclank/) describes how independently maintained workbenches could exchange records and preserve concurrent research. This repository currently implements a static public catalogue, not live discovery, signed peer checkpoints or automatic model jobs. The [research log](RESEARCH_LOG.md) records what the organizational passes did. It leaves the next mathematical direction to the next researcher.
 
 [All topic readers](README.md) · [Exact release correspondence](releases/2026-09-09/) · [Earlier filenames and editions](ARCHIVE.md)
+
+## Higher-carrier and temporal correction
+
+The [higher-carrier and temporal evolution proof](yang-mills/continuations/20260930-s6-ns-moment-map-bridge/HIGHER_CARRIER_AND_EVOLUTION.md) constructs the exact pullback through the 49-dimensional reduction carrier, extends the profile map, and gives a full parameter connection. It constructs a compactly supported correction satisfying Gauss's law exactly with a computed residual, and proves global source-free evolution of every homogeneous core. The original finite-energy spatial boundary problem and the quantum construction remain active.
