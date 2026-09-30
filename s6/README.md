@@ -1,5 +1,7 @@
 # S6 topology and related constructions
 
+The **[30 September mathematical consolidation](consolidation/20260930/)** contains complete quaternionic Gaussian and residual-moment proofs, exact marking and observation maps, finite quantum channels, and minimal tomography designs. It also supplies the corrected recursive corpus catalogue, source-reading evidence, claim ledger, and ordered unmined queue. Start with its [mathematical note](consolidation/20260930/MATHEMATICAL_NOTE.md) or [master map](consolidation/20260930/MASTER_MAP.md).
+
 [What the geometric and marked-lattice routes tried—and why](../ATTEMPTS.md#s6-attempts)
 
 [Five-page key advances](26_s6_key_advances_frozen_2026-09-06.pdf) · [LaTeX source](27_s6_key_advances_frozen_2026-09-06.tex) · [Frozen-project guide](S6_FROZEN_PROJECT_GUIDE_2026-09-09.md) · [Package manifest](S6_FROZEN_PROJECT_PACKAGE_MANIFEST_2026-09-09.json)

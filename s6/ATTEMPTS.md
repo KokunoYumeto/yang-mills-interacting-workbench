@@ -147,6 +147,12 @@ Full source: higher-rung paper §12, pp. 125–135;
 `es_niemeier_wilson_cyclic.tex` in the complete source archive. Established
 input: R. A. Wilson, [*Octonions and the Leech lattice*](https://doi.org/10.1016/j.jalgebra.2009.03.021), §§2–4.
 
+## 6. Quaternionic measured fibres and finite quantum channels — 30 September 2026
+
+The later consolidation asks what the original quaternionic cubic and fixed difference observation determine exactly, and how their retained Gaussian law can enter a specified finite quantum channel. It proves the marking comparison, full Gaussian mass and covariance, observation and conditional fibres, residual integrability thresholds, affinity, and a separately clocked homogeneous phase semigroup. An initial 78-experiment tomography construction was strengthened to one six-level channel for all fifteen full parameters and one four-level channel for the six observed parameters, with exact measurement determinants and lower bounds proving minimality.
+
+The same review rebuilt the nested-package model so repeated package placements are counted with multiplicity and repaired a direct-member identity collision. The [complete proofs and review](consolidation/20260930/) retain the original formulas, exact checks, sources, and the [unmined queue](consolidation/20260930/UNMINED_QUEUE.md). The finite channel does not establish a field theory or resolve the historical global S6 recognition problem.
+
 ## Scope and versions
 
 These five accounts describe the 6 September 2026 mathematical checkpoint. The

@@ -216,12 +216,27 @@ def programmes() -> list[dict]:
             "id": "S6",
             "title": "S6 topology and related constructions",
             "human_entry": "s6/README.md",
-            "human_reader": "s6/26_s6_key_advances_frozen_2026-09-06.pdf",
+            "human_reader": "s6/consolidation/20260930/MATHEMATICAL_NOTE.md",
+            "latest_continuation": "s6/consolidation/20260930/README.md",
+            "current_consolidation_manifest": "s6/consolidation/20260930/PUBLICATION_MANIFEST.json",
+            "current_validation": "s6/consolidation/20260930/PUBLIC_VALIDATION.json",
+            "foundation_reader": "s6/26_s6_key_advances_frozen_2026-09-06.pdf",
             "ai_entry": "s6/S6_FROZEN_PROJECT_GUIDE_2026-09-09.md",
             "source_manifest": "s6/S6_FROZEN_PROJECT_PACKAGE_MANIFEST_2026-09-09.json",
             "edition_doi": "10.5281/zenodo.22678442",
             "edition_url": "https://doi.org/10.5281/zenodo.22678442",
             "research_state": (
+                "The 30 September consolidation supplies complete proofs R1-R8 for "
+                "the original quaternionic Gaussian law, exact markings and observation "
+                "fibres, residual negative-power moments, finite phase channels, an "
+                "integrated-phase semigroup with exact units, and minimal six-level "
+                "and four-level tomography with determinants -4096 and -16. "
+                "Twenty exact check groups and five numerical groups accompany the "
+                "proofs. The corrected privacy-preserving corpus catalogue distinguishes "
+                "71426 direct archive entries from 29324 logical nested occurrences, "
+                "including 24564 text occurrences. Source-reading coverage, corrections, "
+                "audit limits and 4228 remaining unclassified versions are explicit. "
+                "Standalone TeX is supplied; a successful cumulative PDF build is not claimed. "
                 "The full project checkpoint frozen on 6 September 2026 preserves the "
                 "original transcription, historical annotations, later calculations, "
                 "standalone papers, TeX/Bib sources and recorded checks. The five-page "
@@ -230,7 +245,9 @@ def programmes() -> list[dict]:
                 "independently certify a global complex structure on S6, a CDP20 "
                 "counterexample, or a Yang–Mills mass-gap theorem."
             ),
-            "description_basis": ["s6/README.md", "s6/S6_FROZEN_PROJECT_GUIDE_2026-09-09.md"],
+            "description_basis": ["s6/README.md", "s6/S6_FROZEN_PROJECT_GUIDE_2026-09-09.md",
+                                  "s6/consolidation/20260930/README.md",
+                                  "s6/consolidation/20260930/PUBLIC_VALIDATION.json"],
         },
         {
             "id": "NS",

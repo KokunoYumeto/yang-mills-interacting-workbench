@@ -1,5 +1,11 @@
 # Research state and publication history
 
+## 30 September 2026 — S6 recent-results mathematical consolidation
+
+The [corrected consolidation](s6/consolidation/20260930/) adds complete proofs R1–R8, exact tomography matrices, four illustrated mechanisms, source-reading records, a claim-correction ledger, and an ordered unmined queue. The corpus model now separates nested-package definitions from every logical placement and repairs a direct-member identity collision. Fresh reproduction checks cover twenty exact groups and five numerical groups. The compressed public catalogue retains structural and mathematical metadata while removing account-specific roots and pseudonymizing private operational routes. The source custody archives remain private, and the existing 6 September public edition retains its own date and scope.
+
+The standalone LaTeX source is included; the unavailable compiler environment prevented a confirmed cumulative PDF build. The mathematical note and appendix contain the full arguments and the build record states that limitation.
+
 ## Current checkpoint — 9 September 2026
 
 **Purpose of this update.** Make the existing work readable and reusable across independent workbenches, from a single checked calculation to a large programme. Preserve the mathematics, expose current readers and sources, and record what was done rather than impose a successor's research plan.
