@@ -33,6 +33,7 @@ def main() -> None:
         "checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json",
         "checks/THREE_COLOUR_CURVATURE_CHECK.json",
         "checks/HIGHER_CARRIER_EVOLUTION_CHECK.json",
+        "checks/COMPACT_CAUCHY_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -60,12 +61,22 @@ def main() -> None:
             "Corrected global classical bundle morphism, its fibrewise rank data, "
             "the interacting core, its exact nonzero static source, the higher-carrier "
             "pullback, full parameter connection, Gauss-preserving correction, and "
-            "global source-free homogeneous core evolution."
+            "global source-free homogeneous core evolution; exact application of Oh’s "
+            "global theorem to the original compact-support data; complete proofs of "
+            "propagation, energy-zero set, parameter dependence, bundle descent, dilation "
+            "and link holonomies."
         ),
         "claim_boundary": (
-            "No physical quantum state, source-free finite-energy R3 solution of the original cutoff data, continuum "
+            "No physical quantum state, continuum "
             "reconstruction, gapless spectrum, or mass-gap contradiction is established."
         ),
+        "analytical_input": {
+            "author": "Sung-Jin Oh",
+            "global_source": "https://arxiv.org/abs/1210.1557v2",
+            "local_source": "https://arxiv.org/abs/1210.1558v2",
+            "use": "Exact Main Theorem application; source conventions and hypotheses proved in CE1–CE7",
+            "whole_source_proof_independently_recertified": False,
+        },
         "receipts": receipt_records,
         "all_symbolic_receipts_passed": all(
             record["all_passed"] for record in receipt_records

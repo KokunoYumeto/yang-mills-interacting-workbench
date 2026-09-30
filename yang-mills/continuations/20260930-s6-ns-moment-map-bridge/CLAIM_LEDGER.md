@@ -309,3 +309,46 @@ The corrections and strengthenings are propagated through the current proof,
 bundle note, higher-domain programme, spectral companion, source-use ledger,
 machine claim overlay, dated bulletin, cumulative TeX, status, and next action.
 Historical source editions remain unchanged. The quantum endpoint remains open.
+
+## S6NS-20260930-021 — the full classical Cauchy step is supplied
+
+The previous unresolved item was a source-free correction of the original
+compact-support data. Theorem 2.1 of COMPACT_SUPPORT_CAUCHY_EVOLUTION.md
+now verifies Oh's exact hypotheses and constructs its global classical
+evolution. Sections 3–6 prove the parameter, support and energy consequences.
+This resolves the classical part of findings 017 and 020. The global PDE
+theorem is attributed to Oh and its predecessors; no novelty is claimed for it.
+
+## S6NS-20260930-022 — electric curvature strengthens the core claim
+
+The previous magnetic density vanishes at zeros of the homogeneous f.
+The original electric field is nonzero then. Equation CE17 proves that
+the sum of the two specified curvature-commutator squared norms is at least
+128 throughout the exact inner diamond. This strengthens result
+SZ-20260930-008 without dropping the magnetic zero or changing the field.
+
+## S6NS-20260930-023 — zero energy and redundant state labels
+
+Proposition 4.1 proves that a flat, divergence-free, compactly supported
+input C is zero, through the complete stress divergence and trace.
+The energy therefore vanishes exactly on the rank-12 input subbundle.
+CE34a proves the evolved solution map has the same vertical ranks and
+fibres as the original moment map, including the exact circle fibres.
+Later Gram kernels must identify those equal fields; labels cannot be
+declared orthogonal. The mixed cutoff energy terms remain present in CE22.
+
+## Source convention correction encountered in this reading
+
+The global Oh source, line 419, calls Maxwell theory the SU(1) case.
+SU(1) consists only of the identity and its Lie algebra is zero.
+U(1), whose Lie algebra is one-dimensional and bracket-zero, is the
+abelian example that gives Maxwell's equations. This introductory typo
+does not affect the SU(2) analytical theorem used here. The author source
+is preserved unchanged.
+
+## Propagation of findings 021–023
+
+The current programmes, claim overlay, machine ledger, daily bulletin,
+source ledger, cumulative TeX and reader paths carry the new classical
+boundary. The quantum endpoint and full period coupling remain active.
+Classical dilation is not promoted to a spectral claim.

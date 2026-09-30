@@ -1,8 +1,15 @@
 {
   "schema": "s6-ns-moment-map-public-validation-v1",
   "date": "2026-09-30",
-  "result_scope": "Corrected global classical bundle morphism, its fibrewise rank data, the interacting core, its exact nonzero static source, the higher-carrier pullback, full parameter connection, Gauss-preserving correction, and global source-free homogeneous core evolution.",
-  "claim_boundary": "No physical quantum state, source-free finite-energy R3 solution of the original cutoff data, continuum reconstruction, gapless spectrum, or mass-gap contradiction is established.",
+  "result_scope": "Corrected global classical bundle morphism, its fibrewise rank data, the interacting core, its exact nonzero static source, the higher-carrier pullback, full parameter connection, Gauss-preserving correction, and global source-free homogeneous core evolution; exact application of Oh’s global theorem to the original compact-support data; complete proofs of propagation, energy-zero set, parameter dependence, bundle descent, dilation and link holonomies.",
+  "claim_boundary": "No physical quantum state, continuum reconstruction, gapless spectrum, or mass-gap contradiction is established.",
+  "analytical_input": {
+    "author": "Sung-Jin Oh",
+    "global_source": "https://arxiv.org/abs/1210.1557v2",
+    "local_source": "https://arxiv.org/abs/1210.1558v2",
+    "use": "Exact Main Theorem application; source conventions and hypotheses proved in CE1–CE7",
+    "whole_source_proof_independently_recertified": false
+  },
   "receipts": [
     {
       "path": "checks/SP1_BUNDLE_BRIDGE_CHECK.json",
@@ -27,6 +34,12 @@
       "sha256": "21e435286048ca4d1d7f7aaa09e962367fd35ba7ad5fc76b1db11b791b84559d",
       "all_passed": true,
       "recorded_boolean_checks": 21
+    },
+    {
+      "path": "checks/COMPACT_CAUCHY_CHECK.json",
+      "sha256": "ed15c270dcee2616f185e2fcdba38d06f0fdda1f372fd0ad6880f2e3a2a1e5a8",
+      "all_passed": true,
+      "recorded_boolean_checks": 44
     }
   ],
   "all_symbolic_receipts_passed": true,

@@ -36,6 +36,15 @@ required = [
     "PROOF.md",
     "HIGHER_CARRIER_AND_EVOLUTION.md",
     "HIGHER_CARRIER_AND_EVOLUTION.tex",
+    "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md",
+    "COMPACT_SUPPORT_CAUCHY_EVOLUTION.tex",
+    "COMPACT_CAUCHY_TEX_COMPILE_STATUS.json",
+    "checks/verify_compact_cauchy.py",
+    "checks/COMPACT_CAUCHY_CHECK.json",
+    "figures/COMPACT_CAUCHY_EVOLUTION.png",
+    "figures/COMPACT_CAUCHY_EVOLUTION.svg",
+    "figures/compact_cauchy_figure.py",
+    "figures/COMPACT_CAUCHY_FIGURE_CHECK.json",
     "checks/HIGHER_CARRIER_EVOLUTION_CHECK.json",
     "figures/HIGHER_CARRIER_EVOLUTION.png",
     "figures/HIGHER_CARRIER_EVOLUTION.svg",
@@ -63,6 +72,7 @@ receipt_paths = [
     ROOT / "checks" / "SP1_MOMENT_MAP_BRIDGE_CHECK.json",
     ROOT / "checks" / "THREE_COLOUR_CURVATURE_CHECK.json",
     ROOT / "checks" / "HIGHER_CARRIER_EVOLUTION_CHECK.json",
+    ROOT / "checks" / "COMPACT_CAUCHY_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -82,6 +92,11 @@ png = (ROOT / "figures" / "S6_NS_MOMENT_MAP_BRIDGE.png").read_bytes()
 svg = (ROOT / "figures" / "S6_NS_MOMENT_MAP_BRIDGE.svg").read_text(encoding="utf-8")
 checks["figure_png_signature"] = png.startswith(b"\x89PNG\r\n\x1a\n")
 checks["figure_svg_signature"] = "<svg" in svg[:1000]
+
+cauchy_png = (ROOT / "figures/COMPACT_CAUCHY_EVOLUTION.png").read_bytes()
+checks["cauchy_figure_png_signature"] = cauchy_png.startswith(b"\x89PNG\r\n\x1a\n")
+cauchy_svg = (ROOT / "figures/COMPACT_CAUCHY_EVOLUTION.svg").read_text(encoding="utf-8")
+checks["cauchy_figure_svg_signature"] = "<svg" in cauchy_svg[:1000]
 
 proof = (ROOT / "PROOF.md").read_text(encoding="utf-8")
 for token in [

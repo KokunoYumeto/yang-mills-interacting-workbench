@@ -655,7 +655,7 @@ Thus an interacting correction with the retained compact support cannot
 remain static. Sections 6–8 have already attempted the next construction:
 an exact Gauss-preserving compactly supported path with its complete
 residual, and an exact global source-free evolution of the core. The
-next calculation is to solve (HC15) through the original cutoff region,
+next calculation at this checkpoint was to solve (HC15) through the original cutoff region,
 controlling the residual (HC17), spatial propagation, finite energy, and
 parameter derivatives. The soft-period family must then be coupled to
 this evolution with its full period matrix and monodromy. None of the
@@ -689,3 +689,24 @@ solution of (HC25)–(HC27). The plotted curve is a numerical rendering of
 the proved ODE, not a numerical proof. Its labelled energies retain the
 original factors. Reproducible source:
 `figures/higher_carrier_evolution_figure.py`.
+
+## Global compact-support Cauchy continuation
+
+The complete proof is [COMPACT_SUPPORT_CAUCHY_EVOLUTION.md](COMPACT_SUPPORT_CAUCHY_EVOLUTION.md).
+Theorem 2.1 applies Oh's established global theorem to the original cutoff
+data with zero electric field, checking every hypothesis and the metric,
+trace, coupling and time conventions. Proposition 3.1 gives the support
+bound \(R+|s|\), and Corollary 3.2 proves exact agreement with the
+homogeneous solution on \(|x|+|s|<r\). The gauge-invariant core witness
+in CE17 is at least 128, including at magnetic zeros.
+
+Proposition 4.1 identifies the energy-zero inputs exactly with the original
+rank-12 subbundle. CE22 retains all cutoff energy terms. Sections 5–6 prove
+smooth parameter dependence, exact solution-map ranks and fibres, bundle
+descent and every mixed curvature component. CE38–CE45 retain dilation,
+support, energy and the ordered gauge-equivariant link-holonomy map.
+
+The classical finite-energy Cauchy step is now supplied. The complete
+period and monodromy coupling, physical gauge projection, actual Gram and
+Hamiltonian kernels, quantum spectrum and continuum reconstruction remain
+active. Classical energies tending to zero are not quantum spectral weight.

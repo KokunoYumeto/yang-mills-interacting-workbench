@@ -2,7 +2,7 @@
   "schema": "s6-ns-yang-mills-research-program-v2",
   "date": "2026-09-30",
   "programme_id": "YM-S6NS-HIGHER-DOMAIN-NOGAP",
-  "status": "Exact higher-carrier pullback and full parameter connection proved; Gauss-preserving compact-support correction and global homogeneous source-free evolution constructed; finite-energy R3 PDE and quantum goal remain active",
+  "status": "Global smooth finite-energy classical Cauchy family constructed from the original cutoff data using Oh's theorem; exact parameter, energy, propagation and holonomy maps proved; quantum goal active",
   "thesis": [
     "extract the integral-lattice, soft-spectrum, holonomy, and continuous-threshold functions of the S6 cusp construction",
     "construct a functionally similar higher domain with a proved global carrier and a marked proper-subgroup frame reduction",
@@ -100,6 +100,36 @@
       "statement": "A smooth compactly supported time-independent source-free connection with A0=0 on R1,3 has zero spatial curvature, by the exact energy variation.",
       "proof_locator": "HIGHER_CARRIER_AND_EVOLUTION.md Proposition 9.1",
       "scope": "static classical obstruction; it requires a time-dependent continuation rather than terminating the programme"
+    },
+    {
+      "result_id": "SZ-20260930-010",
+      "statement": "Every original cutoff input has a global smooth finite-energy source-free temporal evolution, by the exact application of Oh's established global theorem.",
+      "proof_locator": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md Theorem 2.1, CE1-CE9",
+      "scope": "Application of an established classical PDE theorem with all original data retained"
+    },
+    {
+      "result_id": "SZ-20260930-011",
+      "statement": "The solution has causal support and agrees exactly with the homogeneous core on its original inner diamond; the equal-colour gauge-invariant curvature witness is at least 128 there.",
+      "proof_locator": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md Proposition 3.1, Corollary 3.2, CE10-CE17",
+      "scope": "Finite propagation and local non-Abelian curvature, with electric terms retained"
+    },
+    {
+      "result_id": "SZ-20260930-012",
+      "statement": "The complete energy retains all derivative, mixed and commutator terms; its zero set is exactly the rank-12 input subbundle.",
+      "proof_locator": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md CE18-CE23 and Proposition 4.1",
+      "scope": "Positive classical energy for every input outside the zero subbundle, including commuting colours"
+    },
+    {
+      "result_id": "SZ-20260930-013",
+      "statement": "The global solution map is smooth in parameters, descends over both retained bases, has vertical ranks 0/3/6/9 and the exact moment-map fibres, and carries the full mixed curvature and parameter equations.",
+      "proof_locator": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md Sections 5-6, CE24-CE37 and CE34a",
+      "scope": "Compact-parameter bounds; no uniform cusp bound is inferred"
+    },
+    {
+      "result_id": "SZ-20260930-014",
+      "statement": "Exact dilation gives energy lambda^-1 times the original energy and support radius lambda R+|s|; the ordered link-holonomy map and its derivative and dilation laws are explicit.",
+      "proof_locator": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md Sections 7-8, CE38-CE45",
+      "scope": "Classical dilation and holonomy morphism; no physical Hilbert-space or continuum spectral assertion"
     }
   ],
   "defined_spaces": {
@@ -144,10 +174,10 @@
     "prove universality or theory identification and derive the intended contradiction; any unidentified gapless branch remains an intermediate comparison object"
   ],
   "immediate_calculation": {
-    "name": "full compact-support evolution and coupling to the retained soft-period geometry",
-    "input": "r_H, E_D, M_D, full base connection, C=M_H(v), S(C), the exact residual L,Q,N, and the complete original period matrix",
-    "output_required": "a global finite-energy R3 source-free evolution extending the actual compactly supported data with controlled parameter derivatives and cusp/monodromy behaviour",
-    "then": "finite physical projected states, their interacting Gram and Hamiltonian kernels, and the prescribed continuum limit"
+    "name": "full period/monodromy coupling and physical state kernels",
+    "input": "the exact global Cauchy solution map, original period matrix, clutching and angular monodromy, and CE42-CE45 link holonomies",
+    "output_required": "a proved coupling to the original soft-period family and nonzero physical projected states with their actual Gram and Hamiltonian kernels",
+    "then": "one fixed regulator/coupling path, vacuum subtraction, bounded-energy spectral weight, continuum reconstruction, theory identification and contradiction"
   },
   "nonclaims": [
     "no interacting quantum Hamiltonian has been constructed on the 24-dimensional carrier",
@@ -157,7 +187,7 @@
     "an unidentified gapless Yang--Mills-type branch is unfinished work rather than an alternative programme conclusion",
     "the chart-supported bump proves receiving-space nonemptiness and is not the triality-to-profile map",
     "M_H is a global fibrewise polynomial map, but no top-rank global section over X or cusp extension has been constructed",
-    "the static M_H core is sourced; its homogeneous temporal evolution is source-free, while the original compact-support evolution and quantum state remain unfinished",
+    "the static M_H core is sourced; the original compact-support temporal evolution is now source-free by the cited global theorem, while the physical quantum state remains unfinished",
     "P_H is a reduction over X of the extended bundle Q_H; the reduction carrier D pulls back T(F4/Spin(8)); no reduction over the original flag base is asserted"
   ],
   "source_ids": [
@@ -206,7 +236,14 @@
     "figures/HIGHER_CARRIER_EVOLUTION.png",
     "figures/HIGHER_CARRIER_EVOLUTION.svg",
     "figures/higher_carrier_evolution_figure.py",
-    "HIGHER_CARRIER_AND_EVOLUTION.tex"
+    "HIGHER_CARRIER_AND_EVOLUTION.tex",
+    "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md",
+    "COMPACT_SUPPORT_CAUCHY_EVOLUTION.tex",
+    "checks/verify_compact_cauchy.py",
+    "checks/COMPACT_CAUCHY_CHECK.json",
+    "figures/COMPACT_CAUCHY_EVOLUTION.png",
+    "figures/COMPACT_CAUCHY_EVOLUTION.svg",
+    "figures/compact_cauchy_figure.py"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -221,7 +258,12 @@
     "SZ-20260930-006",
     "SZ-20260930-007",
     "SZ-20260930-008",
-    "SZ-20260930-009"
+    "SZ-20260930-009",
+    "SZ-20260930-010",
+    "SZ-20260930-011",
+    "SZ-20260930-012",
+    "SZ-20260930-013",
+    "SZ-20260930-014"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim."
 }

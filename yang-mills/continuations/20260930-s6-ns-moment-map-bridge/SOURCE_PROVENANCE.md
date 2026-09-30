@@ -61,3 +61,29 @@ Archive SHA-256: e496bf991530fb8110866b8b12df0c1bd4fa43f9381545ff55431bb8197de83
 The section structure, Sections II–III, equations A1–A18, B1–B4, and B8 were read. Equation HC28 proves the exact comparison retaining coupling, field scale, time coordinate, generator convention, and metric sign. Later SU(3)/SU(4) calculations were not read or used.
 
 The downloaded archive and exact extracted author source are preserved in the private reading archive. The unversioned endpoint is identified by these exact byte hashes. No claim of whole-work reading or novelty is made.
+
+## Compact-support Cauchy source application
+
+### Sung-Jin Oh, arXiv:1210.1557v2
+
+[Exact paper version](https://arxiv.org/abs/1210.1557v2) · [Original author source](https://arxiv.org/src/1210.1557v2).
+
+Archive SHA-256: f684ba4b3e8ea758acd06c9ffd0c6eb5332f570ac09b662bcbf3b002d183a3f5.
+Author TeX SHA-256: 868bafa2d50d27d28bc2c3bb1e4abc8f5d034db4d8c4a59896d37a339789ea94; 216815 bytes.
+
+Read coverage: section structure; lines 386-465: conventions, constraint, energy, scale; lines 783-850: admissible data and global Main Theorem; lines 872-1057: regular data, reduction and continuation argument; lines 2310-2373: dependency table. Receiving calculation: Theorem 2.1 of COMPACT_SUPPORT_CAUCHY_EVOLUTION.md; exact source map CE6 and dilation CE38-CE40.
+The complete author archive and extracted source are retained privately.
+The paper's entire analytical proof is not claimed to have been audited.
+
+### Sung-Jin Oh, arXiv:1210.1558v2
+
+[Exact paper version](https://arxiv.org/abs/1210.1558v2) · [Original author source](https://arxiv.org/src/1210.1558v2).
+
+Archive SHA-256: c2a2690e5d15308bf92cafef72388c685705709142cc4fa142ef75d175c717c2.
+Author TeX SHA-256: 0a63d5a3179eb26619aa01f5a2541e836db080b4a0a3f4fc8db48dcddc94f9d3; 423415 bytes.
+
+Read coverage: section structure; lines 443-499: admissibility, local theorem and regularity; lines 1402-1443: regular data, high-regularity local theorem and its cited proof. Receiving calculation: Uniqueness and persistence input; compare the independently supplied high-Sobolev parameter argument CE24-CE32.
+The complete author archive and extracted source are retained privately.
+The paper's entire analytical proof is not claimed to have been audited.
+
+The disk-literature index was queried before the new source search. Its hits were routing records; the exact author TeX above supplies the analytical input. The full convention map is CE6, including the factor between the source and physical energies. The Cauchy application is not a new discovery of classical global Yang--Mills existence.

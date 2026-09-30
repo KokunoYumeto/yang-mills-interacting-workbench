@@ -1,0 +1,815 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathrsfs,booktabs,hyperref}
+\usepackage[margin=23mm]{geometry}
+\hypersetup{hidelinks,pdftitle={Global classical evolution of the original compactly supported family}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\section*{Global classical evolution of the original compactly supported family}
+
+30 September 2026. This continuation solves the classical Cauchy problem
+for every input of the retained moment-map family, through its actual
+cutoff region. It applies the established global existence theorem of
+Sung-Jin Oh, with the exact hypotheses and convention map below. The
+bundle descent, parameter derivatives, support law, core comparison,
+energy kernel and dilation formulas are proved here. This is a classical
+solution family; construction of the physical quantum state remains the
+programme goal.
+
+\subsection*{1. Original data, without removing the cutoff}
+
+Use the principal bundle, ordered line coordinates and representation in
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/a15d9ffe8edaec69cdf91425dabbfe3170bd5ae9/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PROOF.md#7-the-global-triality-to-profile-morphism}{the moment-map proof, Theorem 7.1}.
+The base comparison, dimensions and full parameter connection are in
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/a15d9ffe8edaec69cdf91425dabbfe3170bd5ae9/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/HIGHER_CARRIER_AND_EVOLUTION.md#2-the-reduction-carrier-and-its-exact-pullback}{the higher-carrier proof, Sections 2–4}.
+In particular
+\[
+ X\cong S^6,\quad K=\rho(\operatorname{Sp}(1))\subset G=\operatorname{Spin}(8)
+ \subset L=F_4,\quad D=L/K,\quad E_D=L\times_K W.
+\]
+The map \(r_H:X\to D\) pulls \(L\to D\) back to \(P_H\), and pulls \(E_D\)
+back to the original \(\mathcal W_H\). Here \(\dim D=49\), while
+\(\operatorname{rank}E_D=24\). The representation retains
+\[
+ v=(\zeta;\alpha,\beta;\gamma,\delta),\qquad
+ c_1=\alpha\mathbf i\bar\alpha,\quad
+ c_2=\beta\mathbf j\bar\beta,\quad
+ c_3=\gamma\mathbf k\bar\gamma.
+ \tag{CE1}
+\]
+The unused coordinates in this polynomial map are still part of \(W\).
+Retain the fixed \(0<r<R\), the original real
+\(\chi\in C_c^\infty(B_R(0))\), and \(\chi=1\) on \(B_r(0)\).
+With \(\chi_i=\partial_i\chi\), the three original curls are
+\[
+ \begin{aligned}
+ w^{(1)}&=(\chi+x_2\chi_2,\,-x_2\chi_1,\,0),\\
+ w^{(2)}&=(-x_1\chi_2,\,\chi+x_1\chi_1,\,0),\\
+ w^{(3)}&=(-x_1\chi_3,\,0,\,\chi+x_1\chi_1).
+ \end{aligned}\tag{CE2}
+\]
+Thus
+\[
+ C_i(v,x)=\sum_{a=1}^3 c_a(v)w_i^{(a)}(x),\qquad
+ \sum_i\partial_iC_i=0,\qquad
+ C_j|_{B_r}=c_j.
+ \tag{CE3}
+\]
+Every derivative of \(\chi\) in these formulas is retained.
+
+The quaternionic bracket and matrix comparison remain
+\[
+ [u,v]=2u\times v,\quad
+ T_a=-i\sigma_a/2,\quad [T_a,T_b]=\epsilon_{abc}T_c,\quad
+ \varphi(e_a)=2T_a,\quad
+ \langle U,V\rangle_{\mathrm{mat}}=-2\operatorname{tr}(UV).
+ \tag{CE4}
+\]
+We use \(s=x^0=ct\), \(c>0\), the metric
+\(\operatorname{diag}(-1,1,1,1)\), and coupling \(g>0\).
+Time derivatives below are with respect to \(s\); in physical time they
+are \(c^{-1}\partial_t\). In quaternionic coordinates the initial data are
+\[
+ A_0=0,\qquad A_i(0,x)=C_i(v,x),\qquad
+ E_i(0,x)=\partial_s A_i(0,x)=0.
+ \tag{CE5}
+\]
+The matrix connection is always \(\varphi(A)\); its energy has the full
+coupling and trace factors in Section 4.
+
+\subsection*{2. The established global input and its exact application}
+
+Sung-Jin Oh's
+\href{https://arxiv.org/abs/1210.1557v2}{global theorem, arXiv:1210.1557v2},
+the subsection “Statement of the Main Theorem”, proves global existence and uniqueness in
+temporal gauge for admissible data
+\(\overline A_i\in\dot H^1(\mathbb R^3)\cap L^3(\mathbb R^3)\),
+\(\overline E_i\in L^2(\mathbb R^3)\) satisfying
+\textbackslash{}(\textbackslash{}sum\_i(\textbackslash{}partial\_i\textbackslash{}overline E\_i+
+[\textbackslash{}overline A\_i,\textbackslash{}overline E\_i])=0\textbackslash{}).
+Smooth data with all indicated Sobolev derivatives give a smooth solution;
+its derivatives retain the stated Sobolev regularity for every finite time.
+The companion
+\href{https://arxiv.org/abs/1210.1558v2}{local theorem, arXiv:1210.1558v2},
+Section 1.2, supplies uniqueness, difference estimates and persistence
+of regularity. These are established analytical inputs, not hypotheses
+postulated for this programme.
+
+The original author TeX for both exact versions has been obtained and
+preserved. In the global source the definitions and Main Theorem are at
+lines 783–850, the continuation argument at 1030–1057, and the dependency
+table at 2310–2373. The full heat-flow estimates are part of that cited
+proof. We do not represent this application as a new proof of that
+global PDE theorem or as an independent audit of its entire proof.
+
+The convention map is explicit. Oh's time coordinate is our \(s=ct\),
+and his Lie-algebra-valued connection is \(\varphi(A)\), with
+\(SU(2)\) and the same metric signature and curvature sign. For the
+matrix inner product displayed in his Section 1.1,
+\[
+ (U,V)_{\mathrm{Oh}}=\operatorname{tr}(UV^\star)
+ =-\operatorname{tr}(UV)=\tfrac12\langle U,V\rangle_{\mathrm{mat}},
+ \qquad
+ (\varphi(u),\varphi(v))_{\mathrm{Oh}}=2\langle u,v\rangle_{\mathbb H}.
+ \tag{CE6}
+\]
+Consequently, if \(\mathbf E_{\mathrm{Oh}}\) denotes his conserved
+energy, our physical energy is \(2\mathbf E_{\mathrm{Oh}}/g^2\).
+No coupling, generator or time factor is discarded.
+
+Theorem 2.1. For every \(v\in W\), (CE5) has a unique global smooth
+temporal-gauge solution of the source-free four-dimensional Yang–Mills
+equations. Its spatial derivatives of every order and its time
+derivatives have finite Sobolev norms on each finite time interval.
+It has finite conserved physical energy. The assertion includes every
+initial vertical rank \(0,3,6,9\) of the moment map.
+
+Proof. Each component of \(C\) is a finite sum of a constant
+quaternion \(c_a(v)\) times a fixed smooth compactly supported real
+function. Thus \(C\in H^m\cap L^3\) for every nonnegative integer \(m\).
+For example, with the usual Euclidean tuple norm,
+\[
+ \|C\|_{H^m}\leq\sum_a |c_a(v)|\,\|w^{(a)}\|_{H^m},\qquad
+ \|C\|_{L^3}\leq\sum_a |c_a(v)|\,\|w^{(a)}\|_{L^3}.
+ \tag{CE7}
+\]
+Every norm on the right is finite for the original \(\chi,r,R\).
+Since the initial electric field is identically zero, its constraint
+holds pointwise, including the cutoff region. Applying \(\varphi\)
+preserves brackets and derivatives and multiplies squared norms by
+the factors in (CE6). These are exactly the hypotheses of the cited
+Main Theorem. Its existence, uniqueness and persistence statements
+therefore apply to these original data without any smallness
+restriction. Applying \(\varphi^{-1}\) returns the asserted solution.
+The potential itself also lies in \(L^2\) on every finite time interval:
+\[
+ \|A(s)\|_{L^2}\leq\|C\|_{L^2}
+       +|s|\sup_{|\sigma|\leq|s|}\|E(\sigma)\|_{L^2},
+\]
+by the temporal equation. Thus no missing zeroth-order Sobolev term is
+inferred from a homogeneous norm.
+Energy conservation is also proved directly in Section 3 below.
+No coordinate in (CE1) was divided by, so zero and lower-rank inputs
+are included. \(\square\)
+
+This application replaces the previously unfinished classical
+compact-support Cauchy step. It does not replace a quantum
+construction by a classical solution.
+
+\subsection*{3. Constraint propagation, finite propagation and the actual core}
+
+Put
+\[
+ B_1=F_{23},\quad B_2=F_{31},\quad B_3=F_{12},\qquad
+ (\operatorname{curl}_A U)_i
+ =\sum_{j,k}\epsilon_{ijk}(\partial_jU_k+[A_j,U_k]).
+\]
+All sums in this section run from 1 to 3. With the conventions (CE4),
+the temporal-gauge equations and Bianchi identity give
+\[
+ \partial_sA_i=E_i,\qquad
+ \partial_s E=-\operatorname{curl}_A B,\qquad
+ \partial_s B=\operatorname{curl}_A E,\qquad
+ \sum_iD_iE_i=0.
+ \tag{CE8}
+\]
+Indeed \(F_{ij}=\epsilon_{ijk}B_k\), so
+\(\partial_sE_j=\sum_iD_iF_{ij}=-(\operatorname{curl}_AB)_j\).
+Differentiating the definition of \(F_{ij}\) gives the equation for \(B\).
+Conversely, along (CE8) the difference between \(B\) and
+\[
+ (\operatorname{curl}A)_i+\tfrac12
+             \sum_{j,k}\epsilon_{ijk}[A_j,A_k]
+\]
+has zero time derivative. It vanishes initially, hence vanishes always.
+For \(\mathcal G=\sum_iD_iE_i\), differentiation gives
+\[
+ \partial_s\mathcal G
+ =-\tfrac12\sum_{i,j,k}\epsilon_{ijk}[F_{ij},B_k]
+ =-\sum_k[B_k,B_k]=0.
+ \tag{CE9}
+\]
+Thus the electric constraint is preserved by the evolution, rather
+than reimposed at each time.
+
+Let
+\[
+ e=\tfrac12\sum_i(|E_i|^2+|B_i|^2),\qquad
+ q_j=-\sum_{i,k}\epsilon_{jik}\langle E_i,B_k\rangle_{\mathbb H}.
+ \tag{CE10}
+\]
+Ad-invariance gives
+\(\langle[X,Y],Z\rangle=-\langle Y,[X,Z]\rangle\).
+On differentiating \(e\) using (CE8), the two connection terms cancel
+under this identity and exchange of indices. The remaining ordinary
+derivative terms give
+\[
+ \partial_se+\sum_j\partial_jq_j=0,\qquad
+ |q\cdot n|\leq \tfrac12(|E|^2+|B|^2)=e
+ \quad(|n|=1).
+ \tag{CE11}
+\]
+For the inequality, write \(q\cdot n\) as the pairing of the spatial
+cross-product map \(n\times E\) with \(B\); its operator norm is at most
+one for each colour. Cauchy–Schwarz and \(2ab\leq a^2+b^2\) give the
+displayed bound. Integrating the identity over space proves conservation.
+One can justify the absence of a boundary term before proving support:
+use cutoffs with gradient at most \(C/N\) supported on the annulus
+\(N<|x|<2N\); the spacetime \(L^1\) norm of \(|q|\) on a finite time
+interval is finite because the solution has continuous finite energy.
+The error tends to zero.
+
+Proposition 3.1. The actual solution, including its connection
+coefficients in the specified temporal gauge, obeys
+\[
+ \operatorname{supp}(A(s),E(s),B(s))
+ \subseteq\{x:\operatorname{dist}(x,\operatorname{supp}C)\leq |s|\}
+ \subseteq\overline B_{R+|s|}(0).
+ \tag{CE12}
+\]
+In physical time the speed in this formula is \(c\).
+
+Proof. Fix a point \((s_0,x_0)\) with \(s_0>0\) whose backward
+light cone misses \(\operatorname{supp}C\) on its initial disk.
+Integrate (CE11) on the shrinking balls
+\(B_{s_0-s}(x_0)\). The derivative of their energy is
+\(-\int_{\partial B}(q\cdot n+e)\), which is nonpositive by (CE11).
+The initial energy is zero, so \(E=B=0\) throughout that open cone,
+and at its apex by continuity. For a fixed exterior \(x\), the vertical
+segment from \((0,x)\) to \((s,x)\) also remains exterior. Integrating
+\(\partial_sA=E=0\) and using \(C(x)=0\) proves \(A(s,x)=0\).
+Reverse time to prove the negative-time assertion. \(\square\)
+
+We also need domain of dependence for comparison with a nonzero field,
+not only propagation of zero. Here is a direct uniqueness estimate.
+For two smooth temporal-gauge solutions put
+\(a=A-A'\), \(e_1=E-E'\), \(b_1=B-B'\) and
+\[
+ h=\tfrac12(|a|^2+|e_1|^2+|b_1|^2),\qquad
+ q^{\mathrm{diff}}_j
+ =-\sum_{i,k}\epsilon_{jik}\langle(e_1)_i,(b_1)_k\rangle.
+\]
+Subtracting (CE8), with \(E,B\) denoting the first solution, gives
+\[
+ \begin{aligned}
+ \partial_sa&=e_1,\\
+ \partial_s(e_1)_i
+ &=-\bigl(\operatorname{curl}_{A'}b_1\bigr)_i
+       -\sum_{j,k}\epsilon_{ijk}[a_j,B_k],\\
+ \partial_s(b_1)_i
+ &=\bigl(\operatorname{curl}_{A'}e_1\bigr)_i
+       +\sum_{j,k}\epsilon_{ijk}[a_j,E_k].
+ \end{aligned}\tag{CE13}
+\]
+The \(A'\)-terms cancel in the energy identity. Since
+\(|[u,v]|\leq2|u||v|\), and each spatial alternating sum contains
+six nonzero ordered triples, the remaining terms give the explicit bound
+\[
+ \partial_sh+\operatorname{div}q^{\mathrm{diff}}
+ \leq [1+12(|E|+|B|)]h,\qquad
+ |q^{\mathrm{diff}}\cdot n|\leq h.
+ \tag{CE14}
+\]
+For example the term involving \(B\) has absolute value at most
+\(12|e_1||a||B|\leq6|B|(|e_1|^2+|a|^2)\leq12|B|h\);
+the \(E\)-term is identical, and
+\(|\langle a,e_1\rangle|\leq h\).
+Integrating on a shrinking cone and applying the integral form of
+Gronwall's inequality proves equality throughout the cone when the
+two initial triples agree on its initial disk. This argument is local
+and therefore also compares the finite-energy solution to the smooth
+homogeneous solution, whose total energy on \(\mathbb R^3\) is infinite.
+
+Corollary 3.2. Let \(V_j\) be the exact homogeneous solution of
+HC22 in the higher-carrier proof, with \(V_j(0)=c_j\).
+Then the solution of (CE5) satisfies
+\[
+ A_j(s,x)=V_j(s)\quad\hbox{whenever}\quad |x|+|s|<r.
+ \tag{CE15}
+\]
+The equality includes all spatial and time derivatives there.
+
+Proof. The initial connection, electric field and curvature agree
+on \(B_r\), by (CE3). Apply (CE13)–(CE14) to every backward or forward
+cone with initial disk inside \(B_r\). Smooth equality on this open
+diamond implies equality of derivatives. \(\square\)
+
+For the retained equal-colour input \(c_j=e_j\), HC25 gives
+\(V_j=f(s)e_j\), \(f''+8f^3=0\), \(f(0)=1\), \(f'(0)=0\), and
+\(f'^2+4f^4=4\). Inside the diamond, in matrix coordinates,
+\[
+ F_{0j}=2f'T_j,\quad
+ (F_{12},F_{23},F_{31})=4f^2(T_3,T_1,T_2).
+ \tag{CE16}
+\]
+There is a useful gauge-invariant strengthening of the earlier magnetic
+nonvanishing statement. Define the squared norms using (CE4), and keep
+the indicated spacetime components fixed:
+\[
+ \begin{aligned}
+ \mathcal I(s,x)
+ &=|[F_{12},F_{23}]|_{\mathrm{mat}}^2
+     +|[F_{01},F_{02}]|_{\mathrm{mat}}^2\\
+ &=256f^8+16(f')^4
+   =256\bigl((f^4)^2+(1-f^4)^2\bigr)\geq128.
+ \end{aligned}\tag{CE17}
+\]
+The first commutator is \(16f^4T_2\), and the second is
+\(4(f')^2T_3\). Since \(0\leq f^4\leq1\), the final inequality follows
+from \(z^2+(1-z)^2=2(z-\tfrac12)^2+\tfrac12\).
+Conjugation preserves both trace norms. Thus even at a zero of the
+magnetic part the field in this diamond remains non-Abelian through
+its electric curvature. This assertion is not a Lorentz-scalar claim;
+it is a gauge-invariant statement about the stated components.
+
+\subsection*{4. Full initial energy, and its exact zero set}
+
+Use ordered pairs \(i<j\) and \(a<b\), retaining every summand:
+\[
+ H^a_{ij}=\partial_iw^{(a)}_j-\partial_jw^{(a)}_i,\qquad
+ W^{ab}_{ij}=w^{(a)}_iw^{(b)}_j-w^{(b)}_iw^{(a)}_j.
+ \tag{CE18}
+\]
+The nine derivative coefficients, with \(\chi_{ij}=\partial_i\partial_j\chi\),
+are
+\[
+ \begin{array}{c|ccc}
+ &H^1&H^2&H^3\\ \hline
+ 12&-2\chi_2-x_2(\chi_{11}+\chi_{22})
+    &2\chi_1+x_1(\chi_{11}+\chi_{22})&x_1\chi_{23}\\
+ 13&-\chi_3-x_2\chi_{23}&x_1\chi_{23}
+    &2\chi_1+x_1(\chi_{11}+\chi_{33})\\
+ 23&x_2\chi_{13}&-\chi_3-x_1\chi_{13}&\chi_2+x_1\chi_{12}.
+ \end{array}\tag{CE19}
+\]
+All minors \(W^{ab}_{ij}\) are the exact two products specified by
+(CE2) and (CE18); none is discarded. The curvature is
+\[
+ F_{ij}(C)=\sum_a c_aH^a_{ij}
+             +\sum_{a<b}[c_a,c_b]W^{ab}_{ij}.
+ \tag{CE20}
+\]
+Define the finite, cutoff-dependent real coefficients
+\[
+ \begin{aligned}
+ I_{ab}&=\int_{\mathbb R^3}\sum_{i<j}H^a_{ij}H^b_{ij}\,d^3x,\\
+ J_{a,bc}&=\int_{\mathbb R^3}\sum_{i<j}H^a_{ij}W^{bc}_{ij}\,d^3x
+                   &&(b<c),\\
+ K_{ab,cd}&=\int_{\mathbb R^3}\sum_{i<j}W^{ab}_{ij}W^{cd}_{ij}\,d^3x
+                   &&(a<b,\ c<d).
+ \end{aligned}\tag{CE21}
+\]
+Their complete contribution to the conserved physical energy is
+\[
+ \begin{aligned}
+ \mathscr E(v)
+ &=\frac1{2g^2}\int\left(
+       \sum_i|\varphi(E_i)|_{\mathrm{mat}}^2+
+       \sum_{i<j}|\varphi(F_{ij})|_{\mathrm{mat}}^2\right)d^3x\\
+ &=\frac{4}{g^2}\int e\,d^3x\\
+ &=\frac2{g^2}\left[
+     \sum_{a,b}\langle c_a,c_b\rangle I_{ab}
+     +2\sum_{a,\ b<c}\langle c_a,[c_b,c_c]\rangle J_{a,bc}
+     +\sum_{a<b,\ c<d}\langle[c_a,c_b],[c_c,c_d]\rangle K_{ab,cd}
+              \right].
+ \end{aligned}\tag{CE22}
+\]
+The last equality evaluates the first line at \(s=0\), where \(E=0\),
+and expands (CE20). In the original line coordinates it contains
+degrees four, six and eight. No radial or parity condition on \(\chi\)
+has been assumed, so in particular the mixed \(J\)-terms are retained.
+For the equal-colour input the original ball contributes
+\[
+ \mathscr E(v)\geq\frac{24}{g^2}\operatorname{vol}(B_r)
+               =\frac{32\pi r^3}{g^2}>0.
+ \tag{CE23}
+\]
+This is a lower bound; the annulus energy in (CE22) is still present.
+
+Proposition 4.1. The zero set of \(\mathscr E\) in the complete
+rank-24 fibre is exactly the retained rank-12 linear subspace
+\(\alpha=\beta=\gamma=0\). This also describes exactly the inputs
+whose entire evolved field is zero.
+
+Proof. If the three indicated line coordinates vanish, \(C=0\)
+and uniqueness gives the zero solution. Conversely, \(\mathscr E=0\)
+implies \(F_{ij}(C)=0\) by positivity and smoothness.
+We prove that a smooth compactly supported divergence-free flat
+quaternionic connection \(C\) is zero, with no gauge choice added.
+Set
+\[
+ T_{ij}=\langle C_i,C_j\rangle-\tfrac12\delta_{ij}\sum_k|C_k|^2.
+\]
+Using \(\sum_i\partial_iC_i=0\) and flatness,
+\[
+ \begin{aligned}
+ \sum_i\partial_iT_{ij}
+ &=\sum_i\langle C_i,\partial_iC_j-\partial_jC_i\rangle\\
+ &=-\sum_i\langle C_i,[C_i,C_j]\rangle=0.
+ \end{aligned}
+\]
+Integrate the divergence of \(\sum_jx_jT_{ij}\) over \(\mathbb R^3\).
+Its compact support removes the boundary term, while its trace is
+\(\sum_iT_{ii}=-\tfrac12\sum_i|C_i|^2\). Hence \(C=0\).
+On \(B_r\), (CE3) then gives all \(c_j=0\). The exact identity
+\(|a e\bar a|=|a|^2\) for \(|e|=1\) gives
+\(\alpha=\beta=\gamma=0\). The remaining twelve real coordinates are
+unrestricted. Finally a solution vanishing identically has zero initial
+data, and the converse was already proved. \(\square\)
+
+This also covers nonzero inputs whose colours commute: their cutoff
+energy is positive even when the constant core's magnetic energy is zero.
+When all \(c_a\) lie in one fixed quaternionic line, that line is
+bracket-abelian. The linear Maxwell solution within it solves (CE8);
+uniqueness identifies it with the full solution. Such inputs are
+explicitly included, not incorrectly described as interacting.
+
+\subsection*{5. Smooth parameter dependence, with a constructive derivative equation}
+
+We prove the additional parameter statement needed for bundle descent.
+It is stronger than merely assigning a solution separately to each input.
+Work with the complete real tuple \(U=(A,E,B)\). Define
+\[
+ \mathcal L(A,E,B)=(0,-\operatorname{curl}B,\operatorname{curl}E),
+ \quad N(U)=N_1(U)+Q(U,U),
+ \tag{CE24}
+\]
+where \(N_1(U)=(E,0,0)\), and the bilinear map, with ordered arguments,
+is
+\[
+ Q(U,V)=\left(
+ 0,\ -\sum_{j,k}\epsilon_{ijk}[A_j(U),B_k(V)],\
+       \sum_{j,k}\epsilon_{ijk}[A_j(U),E_k(V)]
+ \right)_{i=1}^3.
+ \tag{CE25}
+\]
+There are no spatial derivatives in \(N\). Equation (CE8) is exactly
+\[
+ U(s)=e^{s\mathcal L}U(0)
+           +\int_0^s e^{(s-\sigma)\mathcal L}N(U(\sigma))\,d\sigma.
+ \tag{CE26}
+\]
+
+Here are explicit estimates sufficient to justify all parameter
+differentiations. For an integer \(m\geq2\), use
+\[
+ \widehat f(\xi)=\int e^{-ix\cdot\xi}f(x)\,d^3x,\qquad
+ \|f\|_{H^m}^2=(2\pi)^{-3}\int(1+|\xi|^2)^m|\widehat f(\xi)|^2\,d^3\xi.
+\]
+For tuples take the sum of the squared component norms.
+The Fourier symbol of \(\mathcal L\) is skew-Hermitian, since the curl
+operator is self-adjoint in \(L^2\). Thus \(e^{s\mathcal L}\) is an
+isometry on every such \(H^m\).
+The convolution formula for a product, the inequality
+\textbackslash{}(\textbackslash{}langle\textbackslash{}xi\textbackslash{}rangle\textasciicircum{}m\textbackslash{}leq2\textasciicircum{}\{m-1\}
+(\textbackslash{}langle\textbackslash{}eta\textbackslash{}rangle\textasciicircum{}m+\textbackslash{}langle\textbackslash{}xi-\textbackslash{}eta\textbackslash{}rangle\textasciicircum{}m)\textbackslash{}), and
+Cauchy–Schwarz give
+\[
+ \|fg\|_{H^m}\leq C_m\|f\|_{H^m}\|g\|_{H^m},\qquad
+ C_m=2^m(2\pi)^{-3/2}
+ \left(\frac{\pi^{3/2}\Gamma(m-\tfrac32)}{\Gamma(m)}\right)^{1/2}.
+ \tag{CE27}
+\]
+To check the constant, the \(L^1\) norm of \(\widehat f\) is at most
+\textbackslash{}((\textbackslash{}int\textbackslash{}langle\textbackslash{}xi\textbackslash{}rangle\textasciicircum{}\{-2m\}d\textasciicircum{}3\textbackslash{}xi)\textasciicircum{}\{1/2\}
+ \textbackslash{}|\textbackslash{}langle\textbackslash{}xi\textbackslash{}rangle\textasciicircum{}m\textbackslash{}widehat f\textbackslash{}|\_2\textbackslash{}).
+The integral equals the Gamma quotient in (CE27), by polar coordinates
+and the substitution \(u=|\xi|^2\). Applying Young's inequality to
+each of the two convolution terms gives precisely the stated factor.
+
+In each of the last two blocks of (CE25), expansion of the spatial
+and colour alternating tensors gives 36 nonzero ordered products,
+each with coefficient of absolute value 2. Bounding the norm of a
+sum by the sum of its norms therefore proves
+\[
+ \|Q(U,V)\|_{H^m}\leq144C_m\|U\|_{H^m}\|V\|_{H^m}.
+ \tag{CE28}
+\]
+The estimate retains both blocks; it is an upper bound, not an equality.
+Consequently on the ball \(\|U\|,\|V\|\leq2M\),
+\[
+ \|N(U)-N(V)\|_{H^m}
+ \leq(1+576C_mM)\|U-V\|_{H^m}.
+ \tag{CE29}
+\]
+For \(M\geq\max(1,\|U(0)\|_{H^m})\) and
+\[
+ d_m(M)=\frac1{4(1+576C_mM)},
+ \tag{CE30}
+\]
+the right side of (CE26) maps the closed radius-\(2M\) ball of
+\(C([-d_m,d_m],H^m)\) into itself and has contraction constant at most
+\(1/4\). Indeed its size is at most
+\(M+d_m(2M+576C_mM^2)\leq2M\), and (CE29) proves contraction.
+This constructs the local solution and its uniqueness in that space.
+The curvature and constraint identities (CE9) show that it is the
+same Yang–Mills solution as Theorem 2.1 when the data have the required
+constraints.
+
+Let \(y\) denote any finite collection of real parameter coordinates.
+The initial triple
+\[
+ U(0;y)=(C(y),\,0,\,(F_{23}(C(y)),F_{31}(C(y)),F_{12}(C(y))))
+ \tag{CE31}
+\]
+is a polynomial map into every \(H^m\) in a local bundle frame.
+For a nonzero parameter multiindex \(\beta\), its derivative satisfies
+the following complete equation:
+\[
+ \begin{aligned}
+ U_\beta(s)
+ &=e^{s\mathcal L}\partial_y^\beta U(0)
+ +\int_0^s e^{(s-\sigma)\mathcal L}\biggl(
+ N_1(U_\beta)+Q(U_\beta,U)+Q(U,U_\beta)\\
+ &\hspace{32mm}
+ +\sum_{\substack{0<\gamma<\beta\\\gamma\leq\beta}}
+        {\beta\choose\gamma}Q(U_\gamma,U_{\beta-\gamma})
+                    \biggr)(\sigma)\,d\sigma.
+ \end{aligned}\tag{CE32}
+\]
+In the sum, \(0<\gamma<\beta\) means that neither \(\gamma=0\) nor
+\(\gamma=\beta\); comparisons are componentwise.
+No differentiated term is removed.
+
+For completeness, the differentiability assertion follows from the
+same contraction rather than a formal differentiation alone.
+Subtract the fixed-point equations at \(y+h\) and \(y\).
+Estimate (CE29) first gives continuity and a uniform difference bound.
+After division by a coordinate increment, the error from replacing
+the difference quotient by the solution of the first-derivative version
+of (CE32) is bounded by a constant times the product of the data
+increment and the solution increment. This tends to zero by (CE28);
+the inverse of the linear fixed-point operator has norm at most
+\((1-\tfrac14)^{-1}\). This proves the first derivative.
+Repeated difference quotients give (CE32): the product rule for the
+bilinear \(Q\) gives exactly the displayed binomial sum, whose lower
+derivatives are already continuous by induction. The same inverse
+bound proves existence and continuity of the next derivative.
+This proves smooth dependence on every finite parameter collection.
+
+For a fixed input \(y_0\) and finite \(T\), the global smooth solution
+from Theorem 2.1 has finite
+\(M_T=1+\sup_{|s|\leq T}\|U(s;y_0)\|_{H^m}\).
+Applying the preceding construction successively on finitely many
+intervals of length at most \(d_m(2M_T)\) proves smooth dependence
+near \(y_0\) throughout \([-T,T]\). Local uniqueness identifies each
+extension with the global solution already constructed.
+Covering a compact parameter set by finitely many such neighbourhoods
+shows that every parameter derivative is bounded in \(H^m\) there,
+uniformly on \([-T,T]\). This argument makes no bound uniform as a
+parameter tends to infinity. Applying it for every \(m\), followed by
+Sobolev embedding and (CE8), proves joint smoothness in parameters,
+space and time.
+
+\subsection*{6. Descent over both original bases and all mixed curvatures}
+
+Simultaneous conjugation by \(u\in\operatorname{Sp}(1)\) sends
+\(C(v)\) to \(uC(v)\bar u=C(uv)\). It preserves (CE8) and its zero
+initial electric field. Uniqueness therefore gives
+\[
+ A(uv;s,x)=uA(v;s,x)\bar u.
+ \tag{CE33}
+\]
+Let \(\mathscr S\) be the set of smooth temporal-gauge solutions
+constructed above, equipped with the topology of uniform convergence
+on compact time intervals in every spatial \(H^m\), and all time
+derivatives. The smooth solution map induces
+\[
+ \mathfrak E_D:E_D=L\times_K W\longrightarrow L\times_K\mathscr S,
+ \qquad [\ell,v]\longmapsto[\ell,A(v)],
+ \quad
+ r_H^*\mathfrak E_D=\mathfrak E_H.
+ \tag{CE34}
+\]
+This is well defined by (CE33). Its initial-time restriction is exactly
+\(\mathcal M_D\), respectively \(\mathcal M_H\). This proves the
+connecting morphism while preserving all initial rank strata and the
+rank-12 zero subbundle. No global frame for the nontrivial colour
+bundle, or nowhere-zero global section, has been selected.
+
+There is also an exact differential statement. Let \(\operatorname{ev}_0\)
+evaluate the connection at \(s=0\), and let \(\mathcal T\) denote the
+Cauchy solution map on the finite-dimensional space of coefficients
+\((c_1,c_2,c_3)\) in (CE3). Then
+\(\mathfrak E=\mathcal T\mathcal M\) and
+\(\operatorname{ev}_0\mathfrak E=\mathcal M\). The chain rule and these
+two factorizations imply
+\[
+ \operatorname{rank}d_v\mathfrak E
+   =\operatorname{rank}d_v\mathcal M
+   =3\,\#\{a\in\{\alpha,\beta,\gamma\}:a\ne0\}.
+ \tag{CE34a}
+\]
+Indeed the first factorization gives the upper bound, and applying
+\(d\operatorname{ev}_0\) gives the reverse bound. In particular the
+solution map creates no new independent input directions.
+Two inputs give the same entire solution precisely when they give the
+same three moment-map values. The free spectator coordinates remain
+irrelevant to the solution. For a nonzero line coordinate \(a\) with
+label \(e\), all coordinates with the same value \(ae\bar a\) are
+exactly \(a(\cos\theta+e\sin\theta)\). To prove this, equality of moment
+maps first gives equal norms; writing \(b=au\) therefore gives
+\(|u|=1\) and \(ue\bar u=e\). The imaginary part of a quaternion
+commuting with \(e\) is parallel to \(e\), so precisely the displayed
+circle is obtained. The fibre over zero consists only of \(a=0\).
+This exact redundancy must be retained when later computing Gram
+kernels; distinct coordinate labels alone do not create distinct states.
+
+Set \(Y=\operatorname{Tot}(E_D)\), as before. The tautological input
+and the retained Maurer–Cartan base connection \(b=b_A\,dy^A\)
+give the full connection
+\[
+ \mathbb B=b_A\,dy^A+\varphi(A_i(y;s,x))\,dx^i,\qquad \mathbb B_0=0.
+ \tag{CE35}
+\]
+Its local components transform by the full connection law, because
+frame changes depend on \(y\) and (CE33) controls the physical components.
+Its curvature is
+\[
+ \begin{aligned}
+ \mathbb F_{AB}&=\partial_Ab_B-\partial_Bb_A+[b_A,b_B],\\
+ \mathbb F_{Ai}&=\partial_A\varphi(A_i)+[b_A,\varphi(A_i)],\\
+ \mathbb F_{ij}&=\varphi(\partial_iA_j-\partial_jA_i+[A_i,A_j]),\\
+ \mathbb F_{A0}&=0,\qquad \mathbb F_{0i}=\varphi(E_i).
+ \end{aligned}\tag{CE36}
+\]
+The mixed parameter derivatives exist with the compact-parameter bounds
+proved in Section 5. In a quaternionic local frame write
+\(h_A=\varphi^{-1}(b_A)\) and
+\(Z_{A i}=\partial_AA_i+[h_A,A_i]\).
+Then \(Z_{A i}\) obeys the exact linearized physical equations
+\[
+ \begin{aligned}
+ \partial_s^2 Z_{A j}
+ &=\sum_i\bigl([Z_{A i},F_{ij}]
+       +D_i(D_iZ_{A j}-D_jZ_{A i})\bigr),\\
+ 0&=\sum_i\bigl(D_i\partial_sZ_{A i}+[Z_{A i},E_i]\bigr),\\
+ Z_{A i}(0)&=\partial_AC_i+[h_A,C_i],\qquad
+ \partial_sZ_{A i}(0)=0.
+ \end{aligned}\tag{CE37}
+\]
+To prove this, differentiate the physical Yang–Mills equation and Gauss
+constraint covariantly in the parameter. The base form is independent
+of \(s,x\), so differentiation of \(D_iF_{ij}\) gives exactly the two
+displayed terms; differentiation of \(F_{ij}\) gives
+\(D_iZ_{A j}-D_jZ_{A i}\). Formula (CE32) proves these derivatives
+exist, and so justifies this calculation. The base curvature remains
+the one computed in HC11 and need not vanish outside the spatial
+support. No equation in the 73 parameter dimensions is being added
+to the four-dimensional physical Yang–Mills system.
+
+\subsection*{7. Exact dilation, including its moving support and energy}
+
+This construction now permits an actual all-time finite-energy family,
+with every scale retained. For \(\lambda>0\), define
+\[
+ \chi_\lambda(x)=\chi(x/\lambda),\qquad
+ w^{(a)}_\lambda(x)=w^{(a)}(x/\lambda),\qquad
+ v_\lambda=\lambda^{-1/2}v.
+\]
+The second identity follows directly by taking the original three
+curls with \(\chi_\lambda x_2,-\chi_\lambda x_1,\chi_\lambda x_1\);
+the derivative of the coordinate factor cancels the corresponding
+chain-rule factor, leaving exactly (CE2) at \(x/\lambda\).
+The inner and outer radii are now \(\lambda r,\lambda R\).
+Since \(\mu_e(\lambda^{-1/2}a)=\lambda^{-1}\mu_e(a)\),
+\[
+ C^{[\lambda]}(v,x)
+ =\sum_a c_a(v_\lambda)w^{(a)}_\lambda(x)
+ =\lambda^{-1}C(v,x/\lambda).
+ \tag{CE38}
+\]
+The brackets, time derivatives and spatial derivatives then give
+\[
+ \begin{aligned}
+ A^{[\lambda]}(s,x)&=\lambda^{-1}A(s/\lambda,x/\lambda),\\
+ E^{[\lambda]}(s,x)&=\lambda^{-2}E(s/\lambda,x/\lambda),\\
+ F_{ij}^{[\lambda]}(s,x)&=\lambda^{-2}F_{ij}(s/\lambda,x/\lambda),\\
+ D_{A^{[\lambda]}}^\mu F_{\mu\nu}^{[\lambda]}
+   &=\lambda^{-3}(D_A^\mu F_{\mu\nu})(s/\lambda,x/\lambda)=0,\\
+ \mathscr E^{[\lambda]}&=\lambda^{-1}\mathscr E,\qquad
+ \operatorname{supp}A^{[\lambda]}(s)
+       \subseteq\overline B_{\lambda R+|s|}.
+ \end{aligned}\tag{CE39}
+\]
+The first field has exactly the Cauchy data (CE38) and zero electric
+data, so uniqueness identifies it with the solution already constructed
+from the scaled cutoff and line input. There is no new approximation.
+The energy factor is the product \(\lambda^{-4}\lambda^3\) from curvature
+and volume. Also
+\[
+ \|C^{[\lambda]}\|_{L^2}=\lambda^{1/2}\|C\|_{L^2},\quad
+ \|\nabla C^{[\lambda]}\|_{L^2}=\lambda^{-1/2}\|\nabla C\|_{L^2},\quad
+ \|C^{[\lambda]}\|_{L^3}=\|C\|_{L^3}.
+ \tag{CE40}
+\]
+These recover the source theorem's scaling convention without
+replacing the programme field by a unit-scale field.
+For the equal-colour input the exact core diamond is now
+\(|x|+|s|<\lambda r\), and (CE17) becomes
+\[
+ \mathcal I^{[\lambda]}(s,x)
+ =\lambda^{-8}\mathcal I(s/\lambda,x/\lambda)
+ \geq128\lambda^{-8}.
+ \tag{CE41}
+\]
+Thus each finite scale has a smooth finite-energy non-Abelian region.
+Its energy tends to zero and its support scale grows as
+\(\lambda\to\infty\). Those are classical facts about this explicit
+family, not a positive-energy spectral-weight assertion for a quantum
+Hamiltonian. In particular the simultaneous decrease of amplitude is
+retained; this calculation cannot be used to assume that a quantum
+excitation remains orthogonal to the vacuum.
+
+\subsection*{8. The exact receiving map to link holonomies}
+
+To specify the next quantum calculation on the fields just constructed,
+fix \(s\), any finite oriented graph embedded by piecewise smooth
+spatial paths \(\gamma_e:[0,1]\to\mathbb R^3\), and use the matrix
+connection \(\mathcal A=\varphi(A)\). Define
+\[
+ \frac{d}{d\tau}U_e(\tau)
+ =-\sum_i\mathcal A_i(s,\gamma_e(\tau))\dot\gamma_e^i(\tau)U_e(\tau),
+ \quad U_e(0)=I,\qquad H_e=U_e(1).
+ \tag{CE42}
+\]
+The coefficients are smooth on each path piece. Picard iteration of
+the integral equation gives its unique solution; successive pieces
+are joined by their endpoint values. Differentiation gives
+\(\partial_\tau(U_e^\star U_e)=0\), and the trace of the coefficient
+is zero, so \(\det U_e=1\). Therefore \(H_e\in SU(2)\).
+Reversing the path gives \(H_{\bar e}=H_e^{-1}\).
+
+For the gauge convention
+\(\mathcal A^q=q\mathcal A q^{-1}-dq\,q^{-1}\), direct substitution
+in (CE42) gives
+\[
+ H_e(\mathcal A^q)
+   =q(\gamma_e(1))H_e(\mathcal A)q(\gamma_e(0))^{-1}.
+ \tag{CE43}
+\]
+For a variation \(z\) of the field, differentiation of its integral
+equation gives the complete insertion formula
+\[
+ \delta H_e
+ =-H_e\int_0^1 U_e(\tau)^{-1}
+       \left(\sum_i\varphi(z_i)(s,\gamma_e(\tau))
+                          \dot\gamma_e^i(\tau)\right)
+       U_e(\tau)\,d\tau.
+ \tag{CE44}
+\]
+It follows either by differentiating \(U_e^{-1}\delta U_e\), or by
+variation of constants; both retain the order of the matrix factors.
+The bounds of Section 5 on any compact path set justify differentiation
+for all fibre parameters. Consequently (CE42) is a smooth,
+gauge-equivariant map from the actual evolved bundle family to the
+edge-configuration space, including every input rank stratum.
+
+There is also an exact relation to dilation. For
+\(\gamma_e^{[\lambda]}=\lambda\gamma_e\), the product of the
+\(\lambda^{-1}\) connection factor and the \(\lambda\) tangent factor
+in (CE42) gives
+\[
+ H_{\lambda\gamma_e}\bigl(A^{[\lambda]}(s)\bigr)
+        =H_{\gamma_e}\bigl(A(s/\lambda)\bigr).
+ \tag{CE45}
+\]
+Holding an embedded graph fixed is a different limit and does not
+follow by erasing the path factor in this formula.
+
+The next construction is the physical gauge projection of vectors
+centered at these actual edge configurations, with their full Gram
+and Hamiltonian kernels. It must also receive the retained period
+matrix and angular monodromy. The spectral weight, vacuum subtraction,
+fixed regulator path and continuum reconstruction remain to be proved.
+The classical dilation formulas alone supply none of those assertions.
+
+\subsection*{9. Sources and reproducibility}
+
+The original moment-map and higher-carrier arguments are linked in
+Section 1, with their public proof locators. The external global
+existence theorem and its local companion are Sung-Jin Oh's exact
+arXiv v2 author sources, dated 29 June 2015. Their archives, hashes,
+reading coverage and exact receiving equations are recorded in
+SOURCE\_PROVENANCE.md and the private source-reading ledger.
+
+The algebraic checker checks the cutoff curls and derivatives,
+constraint identities, full initial energy expansion, stress identity,
+core commutators and scale factors. These finite checks do not certify
+the imported analytical existence theorem. The full local estimates,
+source application, connecting maps and all new arguments are written
+above.
+
+\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+
+Figure: Proposition 3.1 and Corollary 3.2 retain the expanding support
+bound and the exact inner diamond. The right panel renders the ODE
+of (CE16), with its two curvature commutator norms and the proved
+bound (CE17). The spatial example uses \(r=1,R=2\) only for drawing;
+the proof retains arbitrary \(0<r<R\). The plotted ODE is a numerical
+rendering of an exact analytical construction. The source is
+figures/compact\_cauchy\_figure.py.
+\end{document}

@@ -618,7 +618,7 @@ The following statements are now proved:
 7. that explicit core has source
    \(\mathcal J_j=-8e_j\), hence is not source-free.
 
-At the original moment-map checkpoint the following objects were unfinished. The appended higher-carrier continuation now supplies the base relation, full parameter connection, and homogeneous source-free evolution; the original finite-energy spatial correction and quantum steps remain unfinished:
+The following list records the unfinished objects at the original moment-map checkpoint. The higher-carrier continuation supplies the base relation and full parameter connection. The later COMPACT_SUPPORT_CAUCHY_EVOLUTION.md supplies the full source-free classical correction and link holonomies. The physical projection, period coupling and quantum endpoint remain active:
 
 1. a noncompact soft-period base carrying \(P_H\) with its clutching class
    controlled along the full end;
@@ -711,5 +711,26 @@ The homogeneous solution has finite energy on each stated spatial torus and
 infinite total energy on \(\mathbb R^3\) when it is nontrivial. The original
 cutoff boundary still requires the full PDE correction. Proposition 9.1 proves
 that a nonzero-curvature compactly supported correction cannot remain static.
-The next calculation therefore retains time evolution, the support boundary,
+At this earlier checkpoint the next calculation retained time evolution, the support boundary,
 and the full soft-period data. The quantum-state and reconstruction goal remains active.
+
+## Global compact-support Cauchy continuation
+
+The complete proof is [COMPACT_SUPPORT_CAUCHY_EVOLUTION.md](COMPACT_SUPPORT_CAUCHY_EVOLUTION.md).
+Theorem 2.1 applies Oh's established global theorem to the original cutoff
+data with zero electric field, checking every hypothesis and the metric,
+trace, coupling and time conventions. Proposition 3.1 gives the support
+bound \(R+|s|\), and Corollary 3.2 proves exact agreement with the
+homogeneous solution on \(|x|+|s|<r\). The gauge-invariant core witness
+in CE17 is at least 128, including at magnetic zeros.
+
+Proposition 4.1 identifies the energy-zero inputs exactly with the original
+rank-12 subbundle. CE22 retains all cutoff energy terms. Sections 5–6 prove
+smooth parameter dependence, exact solution-map ranks and fibres, bundle
+descent and every mixed curvature component. CE38–CE45 retain dilation,
+support, energy and the ordered gauge-equivariant link-holonomy map.
+
+The classical finite-energy Cauchy step is now supplied. The complete
+period and monodromy coupling, physical gauge projection, actual Gram and
+Hamiltonian kernels, quantum spectrum and continuum reconstruction remain
+active. Classical energies tending to zero are not quantum spectral weight.
