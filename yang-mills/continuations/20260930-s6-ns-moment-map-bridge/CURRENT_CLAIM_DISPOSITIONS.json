@@ -1,0 +1,322 @@
+[
+  {
+    "finding_id": "YM-S6NS-20260929-PROGRAM-SCOPE",
+    "original_statement": "Claude frames the well-posed direction as closing finite gaps plus spectral weight escaping along a reconstructible limit.",
+    "correction_or_strengthening": "The user-defined programme selects a functionally S6-like higher domain, constructs a smooth state family, internalizes its parameter in one theory, and requires low positive spectral accumulation; high-energy escape is an exclusion test.",
+    "source": "sources/claude/y9a_directions.tex lines 5--7; sources/claude/y9_open.tex line 12; the programme goal stated in README.md",
+    "hypotheses": [
+      "common gauge-invariant observable algebra",
+      "prescribed regulator and coupling path",
+      "reconstruction axioms",
+      "unique vacuum for the target no-gap criterion"
+    ],
+    "status": "well-posed programme formulated; counterexample not established",
+    "affected": [
+      "interpretation of Claude direction",
+      "state and observable definitions",
+      "spectral target",
+      "research dependency order"
+    ],
+    "propagation_completed": [
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "SPECTRAL_PROGRAM.md",
+      "RESEARCH_PROGRAM_LEDGER.json",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "admissible higher domain",
+      "continuum reconstruction",
+      "interaction and unique vacuum",
+      "universality relation"
+    ],
+    "proof_file": "HIGHER_DOMAIN_PROGRAM.md",
+    "reviewed_utc": "2026-09-29T17:42:10.484862+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260929-THREE-COLOUR-SOURCE",
+    "original_statement": "The retained one-colour fluid map has zero charge density and an explicit spatial source.",
+    "correction_or_strengthening": "The exact three-colour lift retains commutator curvature and has a generally nonzero charge defect J_0=-(1/c)sum_i[A_i,partial_t A_i], together with all spatial source coefficients.",
+    "source": "sources/navier_stokes/GAUGE_AND_NAVIER_STOKES_BRIDGE.md; sources/spatial/spatial_continuum.tex Section 21; HIGHER_DOMAIN_PROGRAM.md Proposition 7.1",
+    "hypotheses": [
+      "T_a=-i sigma_a/2",
+      "x^0=ct",
+      "metric diag(-1,1,1,1)",
+      "A_0=0",
+      "three smooth divergence-free profiles",
+      "all calibrations retained"
+    ],
+    "status": "complete exact derivation and independent symbolic matrix check",
+    "affected": [
+      "source-free candidate space",
+      "Gauss/source calculation",
+      "three-colour trial states",
+      "one-colour comparison"
+    ],
+    "propagation_completed": [
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "THREE_COLOUR_SOURCE_DEFECT.png",
+      "checks/THREE_COLOUR_CURVATURE_CHECK.json",
+      "RESEARCH_PROGRAM_LEDGER.json",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "nonempty source-free interacting image from a higher domain",
+      "finite-lattice physical projection and norm survival"
+    ],
+    "proof_file": "HIGHER_DOMAIN_PROGRAM.md Proposition 7.1",
+    "reviewed_utc": "2026-09-29T17:42:10.484862+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260929-SPIN8-LOW-DIMENSION",
+    "original_statement": "The three triality sectors might transfer directly to three ordinary spatial or colour frames with the full Spin(8) stabilizer.",
+    "correction_or_strengthening": "Every continuous homomorphism Spin(8)->G is trivial when G is a finite-dimensional Lie group of dimension below 28; a marked proper-subgroup reduction or another explicit symmetry-breaking datum is required.",
+    "source": "current-main Proposition 3.1; octonionic triality source Theorem thm:octonionic-triality",
+    "hypotheses": [
+      "finite-dimensional Lie group target",
+      "target dimension below 28",
+      "continuous group homomorphism"
+    ],
+    "status": "complete general obstruction proof; fixed-colour and bundle-valued replacement spaces distinguished; one explicit Sp(1) candidate now constructed",
+    "affected": [
+      "domain-to-three-frame map",
+      "triality carrier interpretation",
+      "candidate-domain ladder",
+      "first immediate calculation"
+    ],
+    "propagation_completed": [
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "RESEARCH_PROGRAM_LEDGER.json",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "construct the exact relation between the S6 base and the intended higher carrier",
+      "extend the candidate along the soft-period end",
+      "construct the source-free correction"
+    ],
+    "proof_file": "HIGHER_DOMAIN_PROGRAM.md Proposition 3.1",
+    "reviewed_utc": "2026-09-29T17:42:10.484862+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260929-UNIVERSALITY",
+    "original_statement": "The programme wording treated an unidentified gapless Yang--Mills-type branch as one possible final conclusion.",
+    "correction_or_strengthening": "The programme goal is to construct the globally smooth gapless state within the stated four-dimensional Yang--Mills axioms and derive the contradiction. Universality or theory identification is part of that goal. An unidentified branch is an intermediate comparison object, not an alternative conclusion.",
+    "source": "user goal/conclusion correction; main program Phase H and completion certificate",
+    "hypotheses": [
+      "existential form of the mass-gap target",
+      "possible nonuniqueness of continuum branches or regulator limits"
+    ],
+    "status": "goal and completion condition corrected; universality or theory-identification proof remains active",
+    "affected": [
+      "programme goal",
+      "Phase H",
+      "completion certificate",
+      "machine dependency order",
+      "final reporting language"
+    ],
+    "propagation_completed": [
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "SPECTRAL_PROGRAM.md",
+      "CLAIM_LEDGER.md",
+      "RESEARCH_PROGRAM_LEDGER.json",
+      "README.md#programme-goal"
+    ],
+    "unresolved": [
+      "construct and prove the required universality or theory-identification theorem and derive the contradiction"
+    ],
+    "proof_file": "HIGHER_DOMAIN_PROGRAM.md Phase H",
+    "reviewed_utc": "2026-09-29T18:34:50.523297+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260929-SP1-BUNDLE-BRIDGE",
+    "original_statement": "After the full Spin(8) stabilizer obstruction, the proper subgroup reduction and non-Abelian profile map appeared to remain unconstructed.",
+    "correction_or_strengthening": "The retained class gives an explicit Sp(1) subgroup candidate, a nontrivial reduction P_H over X, an adjoint colour bundle A_H, an exact Lie map to su(2), and a chart-supported receiving-space profile with nonzero commutator curvature. That bump is not a map from W_H; the replacement map is the quadratic M_H proved on 30 September.",
+    "source": "sources/higher_rung/s6_higher_rung_24d_preprint.tex lines 5205--5792; SP1_BUNDLE_BRIDGE.md",
+    "hypotheses": [
+      "the retained based map H=p3 q2 on X congruent to S6",
+      "the exact right quaternionic Hopf pullback convention",
+      "the explicit rho(u)=(B_u,A_u,D_u) triality injection",
+      "T_a=-i sigma_a/2 and phi(i,j,k)=2(T_1,T_2,T_3)"
+    ],
+    "status": "topological reduction, frame obstruction, spatial partial connection law, and receiving-space seed proved; original bundle-map completion overclaim corrected; M_H now supplies the actual fibrewise polynomial map",
+    "affected": [
+      "first higher-domain calculation",
+      "triality-to-colour target",
+      "candidate-domain ladder",
+      "source-equation receiving calculation"
+    ],
+    "propagation_completed": [
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "RESEARCH_PROGRAM_LEDGER.json",
+      "CLAIM_LEDGER.md",
+      "RESULTS_20260930.md",
+      "PROOF.md",
+      "SP1_BUNDLE_BRIDGE.md",
+      "CLAIM_LEDGER.md",
+      "checks/SP1_BUNDLE_BRIDGE_CHECK.json",
+      "checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json",
+      "figures/TRIALITY_SP1_BUNDLE_BRIDGE.png"
+    ],
+    "unresolved": [
+      "construct a top-rank global section and soft-period extension",
+      "solve the source and Gauss correction equations",
+      "construct the physical projection and continuum theory"
+    ],
+    "proof_file": "SP1_BUNDLE_BRIDGE.md",
+    "reviewed_utc": "2026-09-29T18:06:08.163215+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260930-BUMP-NOT-DOMAIN-MAP",
+    "original_statement": "The chart-supported bump profile completed the classical bundle-map part of the first domain calculation.",
+    "correction_or_strengthening": "The bump proves receiving-space nonemptiness only. The actual domain-to-profile map is the global quadratic M_H constructed from three quaternionic line coordinates.",
+    "source": "SP1_BUNDLE_BRIDGE.md corrected Sections 5--6; PROOF.md Theorem 7.1",
+    "hypotheses": [
+      "retained W_H splitting",
+      "associated-bundle convention (pu,v)~(p,sigma(u)v)",
+      "three compactly supported divergence-free spatial curls"
+    ],
+    "status": "overclaim corrected; replacement map proved",
+    "affected": [
+      "first higher-domain calculation",
+      "definition of the bundle-valued reduction space",
+      "candidate-domain ladder"
+    ],
+    "propagation_completed": [
+      "SP1_BUNDLE_BRIDGE.md",
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "CLAIM_LEDGER.md",
+      "RESEARCH_PROGRAM_LEDGER.json"
+    ],
+    "unresolved": [
+      "soft-period extension",
+      "source-free correction",
+      "physical state map"
+    ],
+    "proof_file": "PROOF.md Theorem 7.1",
+    "reviewed_utc": "2026-09-30T03:45:52.300089+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260930-LINEAR-ADJOINT-OBSTRUCTION",
+    "original_statement": "An unspecified equivariant map from the triality sectors could supply three non-Abelian colour directions.",
+    "correction_or_strengthening": "The real equivariant linear Hom space to the adjoint colour representation is one-dimensional, so every linear map is colour-aligned. Three quadratic moment maps provide the exact nonlinear replacement.",
+    "source": "retained source lines 5426--5433 and 5590--5614; redo Proposition 5.1 and Lemma 6.1",
+    "hypotheses": [
+      "W=R^5_triv direct-sum ImH_Ad direct-sum H_L^4",
+      "real Sp(1)-equivariance"
+    ],
+    "status": "obstruction and nonlinear replacement proved",
+    "affected": [
+      "triality-to-profile map",
+      "interaction construction"
+    ],
+    "propagation_completed": [
+      "PROOF.md",
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "source-free correction of the nonlinear map"
+    ],
+    "proof_file": "PROOF.md Proposition 5.1 and Lemma 6.1",
+    "reviewed_utc": "2026-09-30T03:45:52.300089+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260930-DISTINCT-BASES",
+    "original_statement": "The retained Sp(1) reduction was described as part of the F4/Spin(8) flag carrier.",
+    "correction_or_strengthening": "P_H reduces the extended principal bundle Q_H over X congruent to S6. The flag tangent splitting lives over a distinct base. An exact base relation or fibre product remains to be constructed.",
+    "source": "retained source lines 5590--5792; redo audit table",
+    "hypotheses": [
+      "the source bases and bundle projections are retained exactly"
+    ],
+    "status": "base conflation corrected",
+    "affected": [
+      "candidate-domain ladder",
+      "Calculation 1",
+      "higher-domain interpretation"
+    ],
+    "propagation_completed": [
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "SP1_BUNDLE_BRIDGE.md",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "construct the exact relation between the two bases"
+    ],
+    "proof_file": "PROOF.md Sections 2--4",
+    "reviewed_utc": "2026-09-30T03:45:52.300089+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260930-PARTIAL-CONNECTION",
+    "original_statement": "The spatial coefficients were called a global connection on X times R3.",
+    "correction_or_strengthening": "They form a partial connection along the R3 fibres. A full connection also requires X-direction components.",
+    "source": "corrected bridge Section 4",
+    "hypotheses": [
+      "transition functions depend on the parameter d and not on x"
+    ],
+    "status": "typing correction completed",
+    "affected": [
+      "connection claim",
+      "curvature interpretation"
+    ],
+    "propagation_completed": [
+      "SP1_BUNDLE_BRIDGE.md",
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "construct X-direction connection components"
+    ],
+    "proof_file": "SP1_BUNDLE_BRIDGE.md Section 4",
+    "reviewed_utc": "2026-09-30T03:45:52.300089+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260930-CLASSICAL-NOT-STATE",
+    "original_statement": "A classical Navier--Stokes curvature profile was said to map into finite Yang--Mills local-energy states.",
+    "correction_or_strengthening": "The proved output is a finite local classical curvature density. Link holonomy, physical projection, and a nonzero quantum state remain unconstructed.",
+    "source": "corrected main programme Section 6",
+    "hypotheses": [
+      "smooth regular divergence-free profile"
+    ],
+    "status": "state overclaim corrected",
+    "affected": [
+      "Navier--Stokes contribution",
+      "physical-state phase"
+    ],
+    "propagation_completed": [
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "construct the physical state map"
+    ],
+    "proof_file": "HIGHER_DOMAIN_PROGRAM.md Section 6",
+    "reviewed_utc": "2026-09-30T03:45:52.300089+00:00"
+  },
+  {
+    "finding_id": "YM-S6NS-20260930-MOMENT-CORE-SOURCE",
+    "original_statement": "The new global nonlinear interaction core might be treated as a source-free candidate.",
+    "correction_or_strengthening": "Its exact source is Jcal_0=0 and (Jcal_1,Jcal_2,Jcal_3)=(-8i,-8j,-8k), mapping to D^mu F_muj=-16 T_j. The defect defines the correction space for M_H+alpha.",
+    "source": "redo Sections 8--9; checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json",
+    "hypotheses": [
+      "top-stratum fibre coordinates alpha=beta=gamma=1",
+      "constant-cutoff spatial core",
+      "static A_0=0"
+    ],
+    "status": "exact source defect proved",
+    "affected": [
+      "source-free profile space",
+      "Calculation 2",
+      "next correction equation"
+    ],
+    "propagation_completed": [
+      "PROOF.md",
+      "SP1_BUNDLE_BRIDGE.md",
+      "HIGHER_DOMAIN_PROGRAM.md",
+      "CLAIM_LEDGER.md"
+    ],
+    "unresolved": [
+      "construct alpha solving every source and Gauss equation while retaining interaction"
+    ],
+    "proof_file": "PROOF.md Sections 8--9",
+    "reviewed_utc": "2026-09-30T03:45:52.300089+00:00"
+  }
+]

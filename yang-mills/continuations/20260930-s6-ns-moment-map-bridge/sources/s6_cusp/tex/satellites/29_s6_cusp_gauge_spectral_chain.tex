@@ -1,0 +1,3062 @@
+\section{The exact S6 cusp-to-gauge spectral chain}
+\label{sec:s6-cusp-gauge-spectral-chain}
+
+This section works on the regular complex two-torus fibres defined by the
+displayed S6 period functions.  It does not use the source's later
+identification of its compact total space with \(S^6\).  The metric, gauge
+bundle, lattice discretization, and quantum oscillator introduced below are
+all displayed explicitly; none is inferred from the phrase ``complex
+torus.''  The source input used here is Definition~3.3, Theorem~3.4,
+Lemma~3.14, and Proposition~3.21 of the exact transcription
+\cite{S6Internal}.
+
+\subsection{The radial cusp and the unchanged determinant}
+
+Choose the source's distinguished cusp component and its positive radial
+path
+\begin{equation}\label{eq:s6cusp-radial-parameter}
+ q_R:=e^{-2\pi R},\qquad R>R_0.
+\end{equation}
+Proposition~3.21 writes the period block as
+\(Z=sB_0+C(t_c)\), with \(e^{2\pi i s}=t_c\), and proves that the three
+functions \(h(t_c),\mu(t_c)\), and \(b(t_c)=\beta(t_c)+\tau(t_c)\) are
+holomorphic at \(t_c=0\).  On the logarithm lift selected by
+\eqref{eq:s6cusp-radial-parameter}, retain the source functions in the form
+\begin{equation}\label{eq:s6cusp-source-functions}
+ \tau_R=iR+h(q_R),\qquad
+ \mu_R=\mu(q_R),\qquad
+ \beta_R=b(q_R)-iR-h(q_R).
+\end{equation}
+Write all real and imaginary coordinates as
+\begin{align}
+ u_R&:=\operatorname{Re}\tau_R,
+ &T_R&:=\operatorname{Im}\tau_R,
+ &a_R&:=\operatorname{Re}\mu_R,
+ &m_R&:=\operatorname{Im}\mu_R,\label{eq:s6cusp-real-imag-one}\\
+ c_R^{\mathrm{re}}&:=\operatorname{Re}\beta_R,
+ &p_R&:=\operatorname{Im}\beta_R,
+ &h_R&:=\operatorname{Im}h(q_R),
+ &d_R&:=\operatorname{Im}b(q_R).
+ \label{eq:s6cusp-real-imag-two}
+\end{align}
+The identities in \eqref{eq:s6cusp-source-functions} give, without an
+asymptotic replacement,
+\begin{equation}\label{eq:s6cusp-imaginary-identities}
+ T_R=R+h_R,\qquad m_R=\operatorname{Im}\mu(q_R),\qquad
+ p_R=d_R-R-h_R=d_R-T_R.
+\end{equation}
+
+The real period matrix uses the ordered covering coordinates
+\[
+ (x^1,x^2,x^3,x^4)
+ =
+ (\operatorname{Re}\zeta_1,\operatorname{Im}\zeta_1,
+  \operatorname{Re}\zeta_2,\operatorname{Im}\zeta_2).
+\]
+In that retained order it is
+\begin{equation}\label{eq:s6cusp-real-period-matrix}
+ P_R:=
+ \begin{pmatrix}
+  6a_R&u_R&1&0\\
+  6m_R&T_R&0&0\\
+  c_R^{\mathrm{re}}&a_R&0&1\\
+  p_R&m_R&0&0
+ \end{pmatrix}.
+\end{equation}
+Retain the positive cusp quantity
+\begin{equation}\label{eq:s6cusp-delta}
+ \delta_R:=6m_R^2-p_RT_R.
+\end{equation}
+The source's selected additive constant in \(\beta\) gives
+\(T_R>0\) and
+\(p_R-6m_R^2/T_R<0\), hence \(\delta_R>0\).
+
+\begin{proposition}[Exact determinant and radial expansion]
+\label{prop:s6cusp-determinant-expansion}
+For every point of the radial cusp path,
+\begin{align}
+ \det P_R
+ &=p_RT_R-6m_R^2=-\delta_R,
+ \label{eq:s6cusp-det-period}\\
+ \operatorname{Im}\tau_R
+ \left(\operatorname{Im}\beta_R-
+ \frac{6(\operatorname{Im}\mu_R)^2}
+ {\operatorname{Im}\tau_R}\right)
+ &=-\delta_R\ne0,
+ \label{eq:s6cusp-unchanged-expression-delta}\\
+ \delta_R
+ &=T_R^2-d_RT_R+6m_R^2.
+ \label{eq:s6cusp-delta-exact-radial}
+\end{align}
+Put
+\begin{equation}\label{eq:s6cusp-boundary-values}
+ h_0:=\operatorname{Im}h(0),\qquad
+ m_0:=\operatorname{Im}\mu(0),\qquad
+ d_0:=\operatorname{Im}b(0).
+\end{equation}
+Then
+\begin{equation}\label{eq:s6cusp-delta-two-term-expansion}
+ \delta_R=R^2+(2h_0-d_0)R+
+ \bigl(h_0^2-d_0h_0+6m_0^2\bigr)
+ +O\!\left(Re^{-2\pi R}\right).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Expanding \eqref{eq:s6cusp-real-period-matrix} along its third and fourth
+columns leaves the imaginary two-by-two block, with the sign retained:
+\[
+ \det P_R
+ =\det\begin{pmatrix}6m_R&T_R\\p_R&m_R\end{pmatrix}
+ =6m_R^2-p_RT_R
+\]
+multiplied by the sign of the column-row permutation used in the source's
+real-coordinate order.  Direct expansion in that displayed order gives
+\(p_RT_R-6m_R^2=-\delta_R\), agreeing with Lemma~3.14 of
+\cite{S6Internal}.  Multiplication of the literal parenthesis in
+\eqref{eq:s6cusp-unchanged-expression-delta} by
+\(\operatorname{Im}\tau_R=T_R\) gives the same
+ \(p_RT_R-6m_R^2\); division is legitimate because \(T_R>0\).
+
+The last equality in \eqref{eq:s6cusp-imaginary-identities} gives
+\[
+ 6m_R^2-p_RT_R
+ =6m_R^2-(d_R-T_R)T_R
+ =T_R^2-d_RT_R+6m_R^2,
+\]
+which is \eqref{eq:s6cusp-delta-exact-radial}.  Holomorphy at zero gives
+\[
+ h_R=h_0+O(e^{-2\pi R}),\quad
+ m_R=m_0+O(e^{-2\pi R}),\quad
+ d_R=d_0+O(e^{-2\pi R}).
+\]
+Substituting these three retained expansions and \(T_R=R+h_R\) into
+\eqref{eq:s6cusp-delta-exact-radial}, and collecting every constant term,
+gives \eqref{eq:s6cusp-delta-two-term-expansion}.
+\end{proof}
+
+\subsection{Marked flat torus, division lattice, and holonomy}
+
+Define the regular fibre with the Euclidean covering metric by
+\begin{equation}\label{eq:s6cusp-flat-fibre}
+ F_R:=\R^4/P_R\Z^4,\qquad g_R:=\sum_{j=1}^4(dx^j)^2.
+\end{equation}
+The marking torus carries coordinates \(y\in\R^4/\Z^4\).
+
+\begin{proposition}[Exact marking and finite division cellulation]
+\label{prop:s6cusp-marking-cellulation}
+The maps
+\begin{align}
+ \Phi_R:\R^4/\Z^4&\longrightarrow F_R,
+ &[y]&\longmapsto[P_Ry],
+ \label{eq:s6cusp-marking-map}\\
+ \Phi_R^{-1}:F_R&\longrightarrow\R^4/\Z^4,
+ &[x]&\longmapsto[P_R^{-1}x]
+ \label{eq:s6cusp-marking-inverse}
+\end{align}
+are mutually inverse diffeomorphisms.  The pullback metric and volume are
+\begin{equation}\label{eq:s6cusp-marking-metric-volume}
+ G_R:=\Phi_R^*g_R=P_R^{\mathsf T}P_R,\qquad
+ \operatorname{Vol}(F_R,g_R)=\sqrt{\det G_R}=\delta_R.
+\end{equation}
+For every integer \(N\ge2\), the map
+\begin{equation}\label{eq:s6cusp-division-map}
+ \iota_{R,N}:(\Z/N\Z)^4\longrightarrow F_R[N],\qquad
+ [n]\longmapsto\left[\frac1N P_Rn\right]
+\end{equation}
+is a bijection onto the (N)-torsion subgroup.  Its coordinate edges are
+\begin{equation}\label{eq:s6cusp-division-edges}
+ e_{R,N,j}(n;t):=
+ \Phi_R\!\left(\frac{n+te_j}{N}\right),\qquad0\le t\le1.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+If \(y-y'\in\Z^4\), then \(P_Ry-P_Ry'\in P_R\Z^4\), so
+\eqref{eq:s6cusp-marking-map} is well defined.  If
+\(x-x'\in P_R\Z^4\), then \(P_R^{-1}x-P_R^{-1}x'\in\Z^4\), so
+\eqref{eq:s6cusp-marking-inverse} is well defined.  Their displayed
+compositions are the identity before passage to either quotient.  For a
+tangent vector \(v\) in \(y\)-coordinates,
+\(\lVert d\Phi_R(v)\rVert^2=v^{\mathsf T}P_R^{\mathsf T}P_Rv\), proving
+the metric formula.  The volume is
+\(|\det P_R|=\delta_R\) by
+\eqref{eq:s6cusp-det-period}.
+
+Every element of \(F_R[N]\) has a representative \(x\) satisfying
+\(Nx=P_Rz\) for some \(z\in\Z^4\), hence equals
+\([P_Rz/N]\).  If \(\iota_{R,N}([n])=0\), then
+\(P_Rn/N\in P_R\Z^4\).  Invertibility of \(P_R\) gives
+\(n/N\in\Z^4\), so \([n]=0\) in \((\Z/N\Z)^4\).  This proves
+surjectivity and injectivity.  Equation
+\eqref{eq:s6cusp-division-edges} is then the image of each standard cubical
+edge under the proved diffeomorphism.
+\end{proof}
+
+For a smooth connection \(A\) on a principal compact-\(G\) bundle which is
+trivialized along the displayed cells, define its edge holonomy by
+\begin{equation}\label{eq:s6cusp-holonomy-map}
+ \operatorname{Hol}_{R,N}(A)_j(n):=
+ \mathcal P\exp\!\left(
+ -\int_0^1A_{e_{R,N,j}(n;t)}
+ \left(\frac{P_Re_j}{N}\right)\,dt\right).
+\end{equation}
+For a gauge transformation \(g\), parallel transport gives exactly
+\begin{equation}\label{eq:s6cusp-holonomy-gauge-equivariance}
+ \operatorname{Hol}_{R,N}(A^g)_j(n)
+ =g(\iota_{R,N}(n))^{-1}\operatorname{Hol}_{R,N}(A)_j(n)
+ g(\iota_{R,N}(n+e_j)).
+\end{equation}
+Thus the continuum-to-link map has the usual finite gauge action as its
+literal codomain action; this is an equivariant map, not an analogy.
+
+\subsection{The complete dual map and the scalar spectrum}
+
+For \(k=(k_1,k_2,k_3,k_4)\in\Z^4\), retain the real-part corrections
+\begin{equation}\label{eq:s6cusp-adjusted-dual-integers}
+ r_R(k):=k_1-6a_Rk_3-c_R^{\mathrm{re}}k_4,\qquad
+ s_R(k):=k_2-u_Rk_3-a_Rk_4.
+\end{equation}
+
+\begin{theorem}[Exact dual-lattice isomorphism]
+\label{thm:s6cusp-dual-isomorphism}
+The maps
+\begin{equation}\label{eq:s6cusp-dual-maps}
+ \Z^4\longrightarrow(P_R\Z^4)^*,\quad
+ k\longmapsto P_R^{-\mathsf T}k,\qquad
+ q\longmapsto P_R^{\mathsf T}q
+\end{equation}
+are inverse group isomorphisms.  In the full displayed coordinates,
+\begin{equation}\label{eq:s6cusp-full-dual-formula}
+ P_R^{-\mathsf T}k=
+ \left(
+ k_3,
+ \frac{m_Rr_R(k)-p_Rs_R(k)}{\delta_R},
+ k_4,
+ \frac{-T_Rr_R(k)+6m_Rs_R(k)}{\delta_R}
+ \right).
+\end{equation}
+For (k=(r,s,0,0)), this becomes
+\begin{equation}\label{eq:s6cusp-soft-dual-block}
+ P_R^{-\mathsf T}(r,s,0,0)=
+ \left(0,\frac{m_Rr-p_Rs}{\delta_R},0,
+ \frac{-T_Rr+6m_Rs}{\delta_R}\right).
+\end{equation}
+The disappearance of \(u_R,a_R,c_R^{\mathrm{re}}\) from
+\eqref{eq:s6cusp-soft-dual-block} follows from setting \(k_3=k_4=0\);
+those real parts remain in the full inverse
+\eqref{eq:s6cusp-full-dual-formula}.
+\end{theorem}
+
+\begin{proof}
+A covector \(q\) pairs integrally with \(P_R\Z^4\) exactly when
+\(P_R^{\mathsf T}q\in\Z^4\), proving the two inverse maps in
+\eqref{eq:s6cusp-dual-maps}.  In the system \(P_R^{\mathsf T}q=k\), the
+third and fourth column equations are
+\(q_1=k_3\) and \(q_3=k_4\).  Substitution into the first two equations
+leaves
+\[
+ \begin{pmatrix}6m_R&p_R\\T_R&m_R\end{pmatrix}
+ \begin{pmatrix}q_2\\q_4\end{pmatrix}
+ =\begin{pmatrix}r_R(k)\\s_R(k)\end{pmatrix}.
+\]
+The determinant of the displayed coefficient matrix is
+\(6m_R^2-p_RT_R=\delta_R\), and its inverse is
+\[
+ \frac1{\delta_R}
+ \begin{pmatrix}m_R&-p_R\\-T_R&6m_R\end{pmatrix}.
+\]
+This proves \eqref{eq:s6cusp-full-dual-formula} and its specialization.
+\end{proof}
+
+The character indexed by \(k\) is
+\begin{equation}\label{eq:s6cusp-character}
+ \chi_{R,k}([x]):=
+ \exp\!\left(2\pi i\left\langle P_R^{-\mathsf T}k,x\right\rangle\right).
+\end{equation}
+For \(n\in\Z^4\), translation by \(P_Rn\) multiplies this expression by
+\(e^{2\pi i k^{\mathsf T}n}=1\), so it is well defined.  The positive
+scalar Laplacian satisfies
+\begin{equation}\label{eq:s6cusp-character-eigenvalue}
+ \Delta_R\chi_{R,k}=
+ 4\pi^2\lVert P_R^{-\mathsf T}k\rVert^2\chi_{R,k}.
+\end{equation}
+
+\begin{theorem}[Sharp scalar cusp spectrum and first correction]
+\label{thm:s6cusp-sharp-scalar-spectrum}
+For all sufficiently large \(R\), the shortest nonzero dual vectors are
+indexed among
+\((\pm1,0,0,0)\) and \((0,\pm1,0,0)\), and
+\begin{equation}\label{eq:s6cusp-first-eigenvalue-correction}
+ \lambda_1(F_R,g_R)=\frac{4\pi^2}{R^2}
+ \left[
+ 1+\frac{\min\{2(d_0-h_0),-2h_0\}}{R}
+ +O(R^{-2})
+ \right].
+\end{equation}
+The exact two coordinate values before expansion are
+\begin{align}
+ \lVert P_R^{-\mathsf T}e_1\rVert^2
+ &=\frac{m_R^2+T_R^2}{\delta_R^2},
+ \label{eq:s6cusp-e1-exact}\\
+ \lVert P_R^{-\mathsf T}e_2\rVert^2
+ &=\frac{p_R^2+36m_R^2}{\delta_R^2}.
+ \label{eq:s6cusp-e2-exact}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+On the first two integer coordinates define
+\begin{equation}\label{eq:s6cusp-dual-two-matrix}
+ A_R:=\frac1{\delta_R}
+ \begin{pmatrix}m_R&-p_R\\-T_R&6m_R\end{pmatrix}.
+\end{equation}
+Equations \eqref{eq:s6cusp-imaginary-identities} and
+\eqref{eq:s6cusp-delta-two-term-expansion} give the operator-norm limit
+\begin{equation}\label{eq:s6cusp-scaled-dual-limit}
+ RA_R=
+ \begin{pmatrix}0&1\\-1&0\end{pmatrix}+O_{\mathrm{op}}(R^{-1}).
+\end{equation}
+Consequently a constant \(C\) exists such that
+\[
+ \frac{1-C/R}{R}\lVert(r,s)\rVert
+ \le\lVert A_R(r,s)\rVert
+ \le\frac{1+C/R}{R}\lVert(r,s)\rVert
+\]
+for all \((r,s)\in\R^2\) and all large \(R\).  Integer vectors of
+Euclidean norm at least \(\sqrt2\) are therefore longer than the two
+coordinate vectors for all sufficiently large \(R\).  If \(k_3\ne0\) or
+\(k_4\ne0\), \eqref{eq:s6cusp-full-dual-formula} gives
+\[
+ \lVert P_R^{-\mathsf T}k\rVert^2\ge k_3^2+k_4^2\ge1,
+\]
+whereas both coordinate values tend to zero.  This proves the asserted
+finite list of minimizers.
+
+Equations \eqref{eq:s6cusp-e1-exact} and
+\eqref{eq:s6cusp-e2-exact} follow by putting \(e_1,e_2\) into
+\eqref{eq:s6cusp-soft-dual-block}.  Direct substitution of
+\eqref{eq:s6cusp-imaginary-identities} and
+\eqref{eq:s6cusp-delta-two-term-expansion} gives
+\begin{align*}
+ \frac{m_R^2+T_R^2}{\delta_R^2}
+ &=\frac1{R^2}\left[1+\frac{2(d_0-h_0)}R+O(R^{-2})\right],\\
+ \frac{p_R^2+36m_R^2}{\delta_R^2}
+ &=\frac1{R^2}\left[1-\frac{2h_0}R+O(R^{-2})\right].
+\end{align*}
+Taking their minimum and multiplying by \(4\pi^2\) proves
+\eqref{eq:s6cusp-first-eigenvalue-correction}.
+\end{proof}
+
+\begin{proposition}[Low-energy lattice of modes]
+\label{prop:s6cusp-low-energy-count}
+Fix \(0<E<4\pi^2\), and count nonzero complex Fourier characters with
+eigenvalue at most \(E\).  Then
+\begin{equation}\label{eq:s6cusp-low-energy-count}
+ N_R(E)=\frac{E}{4\pi}\delta_R+O_E(R).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+For large \(R\), the inequality \(E<4\pi^2\) and the exact lower bound on
+modes with \(k_3\ne0\) or \(k_4\ne0\) restrict the count to
+\(k=(r,s,0,0)\).  By \eqref{eq:s6cusp-dual-two-matrix}, these are the
+integer points, except the origin, in
+\[
+ \left\{v\in\R^2:\lVert A_Rv\rVert^2\le\frac{E}{4\pi^2}\right\}.
+\]
+Since \(\det A_R=1/\delta_R\), this ellipse has area
+\(E\delta_R/(4\pi)\).  Equation
+\eqref{eq:s6cusp-scaled-dual-limit} makes both semiaxes \(O_E(R)\), so its
+perimeter is \(O_E(R)\).  Covering each lattice point by its centered unit
+square bounds the discrepancy from area by the area of a fixed-width
+neighbourhood of the ellipse boundary, which is \(O_E(R)\).  Removing the
+origin changes the count by one and proves the formula.
+\end{proof}
+
+\subsection{The mean-zero vertical direct integral and its continuous
+threshold}
+
+The radial parameter in \eqref{eq:s6cusp-radial-parameter} can itself be
+retained as a noncompact measure variable.  This produces a precise
+operator, rather than an inference from the collection of fibrewise
+spectra.  Give every fibre its normalized Haar measure.  Under the marking
+\(\Phi_R\), this measure is the Lebesgue probability measure on
+\(\R^4/\Z^4\), so the characters
+\[
+ e_k(y):=e^{2\pi i k\cdot y},\qquad k\in\Z^4,
+\]
+provide one fixed measurable orthonormal basis along the entire radial
+ray.  Put
+\begin{equation}\label{eq:s6cusp-vertical-Hilbert-space}
+ \mathscr H_{\mathrm v}:=
+ L^2\!\left([R_0,\infty),\dd R;
+ L^2_0(\R^4/\Z^4)\right),
+\end{equation}
+where the subscript zero deletes the character \(e_0\) on every fibre.
+
+For \(k\ne0\), retain the complete fibre multiplier
+\begin{equation}\label{eq:s6cusp-vertical-multiplier}
+ \lambda_{R,k}:=4\pi^2
+ \left\lVert P_R^{-\mathsf T}k\right\rVert^2.
+\end{equation}
+Define \(H_{\mathrm v}\) by its Fourier-coordinate domain and action:
+\begin{align}
+ \operatorname{Dom}(H_{\mathrm v})
+ &:={}
+ \left\{
+ (f_k)_{k\in\Z^4\setminus\{0\}}:
+ \sum_{k\ne0}\int_{R_0}^{\infty}
+ \lambda_{R,k}^{2}|f_k(R)|^2\,\dd R<\infty
+ \right\},
+ \label{eq:s6cusp-vertical-domain}\\
+ (H_{\mathrm v}f)_k(R)&:=\lambda_{R,k}f_k(R).
+ \label{eq:s6cusp-vertical-action}
+\end{align}
+Equations \eqref{eq:s6cusp-vertical-domain}--
+\eqref{eq:s6cusp-vertical-action} are the complete operator definition;
+there is no derivative in the \(R\)-variable.
+
+\begin{theorem}[Exact continuous threshold of the vertical operator]
+\label{thm:s6cusp-vertical-continuous-threshold}
+The operator \(H_{\mathrm v}\) is nonnegative and self-adjoint on
+\(\mathscr H_{\mathrm v}\), and
+\begin{equation}\label{eq:s6cusp-vertical-threshold}
+ 0\in\operatorname{Spec}_{\mathrm{ess}}(H_{\mathrm v})
+ \cap\operatorname{Spec}_{\mathrm c}(H_{\mathrm v}),
+ \qquad
+ \ker H_{\mathrm v}=\{0\}.
+\end{equation}
+In particular, this explicitly defined mean-zero vertical operator has no
+positive spectral gap.
+\end{theorem}
+
+\begin{proof}
+The fibrewise Fourier transform and Fubini's theorem give the unitary map
+and inverse
+\begin{align*}
+ \mathcal U:\mathscr H_{\mathrm v}
+ &\longrightarrow
+ \bigoplus_{k\in\Z^4\setminus\{0\}}
+ L^2([R_0,\infty),\dd R),
+ & (\mathcal Uf)_k(R)&:=\langle e_k,f(R)\rangle,\\
+ \mathcal U^{-1}(f_k)(R,y)
+ &:=\sum_{k\ne0}f_k(R)e_k(y).
+\end{align*}
+The inverse series converges in the displayed \(L^2\) space by Parseval.
+Under \(\mathcal U\), equations \eqref{eq:s6cusp-vertical-domain}--
+\eqref{eq:s6cusp-vertical-action} are the orthogonal sum of the maximal
+multiplication operators by the real measurable functions
+\(\lambda_{R,k}\).  A maximal real multiplication operator is
+self-adjoint; the displayed square-integrability condition is exactly the
+domain of their orthogonal sum.  Every multiplier is positive because
+\(P_R\) is invertible and \(k\ne0\), proving nonnegativity.
+
+For the fixed label \(k_*=(1,0,0,0)\), equation
+\eqref{eq:s6cusp-e1-exact} and the radial estimates give constants
+\(C_1,R_2>0\) such that
+\begin{equation}\label{eq:s6cusp-vertical-e1-bound}
+ 0<\lambda_{R,k_*}\le \frac{C_1}{R^2}
+ \qquad(R\ge R_2).
+\end{equation}
+Choose integers \(j\ge R_2\) and define
+\begin{equation}\label{eq:s6cusp-vertical-Weyl-sequence}
+ \Psi_j(R,y):=\mathbf1_{[j,j+1]}(R)e_{k_*}(y).
+\end{equation}
+Each \(\Psi_j\) has norm one, different \(j\)'s have disjoint supports,
+and \eqref{eq:s6cusp-vertical-e1-bound} gives
+\[
+ \lVert H_{\mathrm v}\Psi_j\rVert^2
+ =\int_j^{j+1}\lambda_{R,k_*}^{2}\,\dd R
+ \le \frac{C_1^2}{j^4}\longrightarrow0.
+\]
+Thus \((\Psi_j)\) is an orthonormal Weyl sequence at zero.  Weyl's
+criterion puts zero in the essential spectrum.
+
+If \(H_{\mathrm v}f=0\), then
+\(\lambda_{R,k}f_k(R)=0\) for almost every \(R\) and every \(k\ne0\).
+The strict positivity of every \(\lambda_{R,k}\) forces every coefficient
+\(f_k\) to vanish almost everywhere, so \(f=0\).  Hence zero is not an
+eigenvalue.  A self-adjoint operator has empty residual spectrum, and zero
+therefore lies in its continuous spectrum as asserted.
+\end{proof}
+
+The map from the direct integral to its fibres is evaluation in the
+measurable-field sense, and the map \(\mathcal U\) above is its complete
+Fourier diagonalization.  Since \(H_{\mathrm v}\) contains no horizontal
+derivative and no boundary condition at the completed cusp, it is exactly a
+vertical decomposable operator; equation
+\eqref{eq:s6cusp-vertical-threshold} is asserted for that domain and no
+other Hamiltonian.
+
+\subsection{The flat Yang--Mills Hessian and its exact gauge quotient}
+
+Let \(G\) be a compact Lie group, let \(\mathfrak g\) be its Lie algebra,
+and fix an \(\operatorname{Ad}(G)\)-invariant positive inner product
+\(\langle\ ,\ \rangle_{\mathfrak g}\).  On the trivial \(G\)-bundle over
+\(F_R\), use
+\begin{equation}\label{eq:s6cusp-yang-mills-action}
+ \operatorname{YM}_R(A):=
+ \frac{1}{2g_{\mathrm{YM}}^2}
+ \int_{F_R}\langle F_A,F_A\rangle_{\mathfrak g}\,
+ \operatorname{vol}_{g_R},
+ \qquad g_{\mathrm{YM}}>0.
+\end{equation}
+Our curvature convention is
+\[
+ F_A=\dd A+A\wedge A,\qquad
+ (A\wedge A)_{ij}=[A_i,A_j].
+\]
+Thus \(F_{ta}=t\,\dd a+t^2a\wedge a\), with every coefficient retained.
+
+\begin{theorem}[Exact flat-connection quotient and Riesz Hessian]
+\label{thm:s6cusp-flat-gauge-hessian}
+At the flat connection \(A_0=0\), the infinitesimal gauge map, its kernel,
+and its image are
+\begin{equation}\label{eq:s6cusp-infinitesimal-gauge-map}
+ \Gamma_R:C^\infty(F_R;\mathfrak g)
+ \longrightarrow\Omega^1(F_R;\mathfrak g),
+ \qquad
+ \Gamma_R(\xi)=\dd\xi,
+\end{equation}
+\[
+ \ker\Gamma_R=
+ \{\text{constant \(\mathfrak g\)-valued functions}\},
+ \qquad
+ \operatorname{im}\Gamma_R=
+ \{\dd\xi:\xi\in C^\infty(F_R;\mathfrak g)\}.
+\]
+The bilinear Hessian of \eqref{eq:s6cusp-yang-mills-action} is
+\begin{equation}\label{eq:s6cusp-flat-yang-mills-bilinear-hessian}
+ \operatorname{Hess}_{0}\operatorname{YM}_R[a,b]
+ =\frac1{g_{\mathrm{YM}}^2}
+ \langle\dd a,\dd b\rangle_{L^2\Omega^2}.
+\end{equation}
+
+Fix \(k\in\Z^4\setminus\{0\}\).  Write a complexified one-form on its
+Fourier component in marking coordinates as
+\[
+ a_{k,\alpha,H}:=
+ \chi_{R,k}\sum_{j=1}^4\alpha_j\,\dd y^j\otimes H,
+ \qquad
+ \alpha\in\C^4,\quad H\in\mathfrak g_{\C}.
+\]
+Define
+\begin{equation}\label{eq:s6cusp-coulomb-projection}
+ \Pi_{R,k}\alpha:=
+ \alpha-k\,
+ \frac{k^{\mathsf T}G_R^{-1}\alpha}
+ {k^{\mathsf T}G_R^{-1}k}.
+\end{equation}
+Then
+\begin{align}
+ \ker\Pi_{R,k}&=\C k,\label{eq:s6cusp-coulomb-kernel}\\
+ \operatorname{im}\Pi_{R,k}
+ &=\{\alpha\in\C^4:
+ k^{\mathsf T}G_R^{-1}\alpha=0\},
+ \label{eq:s6cusp-coulomb-image}
+\end{align}
+and the mutually inverse maps
+\begin{equation}\label{eq:s6cusp-coulomb-quotient-isomorphism}
+ \C^4/\C k
+ \underset{\alpha\mapsto[\alpha]}{\overset{[\alpha]\mapsto
+ \Pi_{R,k}\alpha}{\rightleftarrows}}
+ \operatorname{im}\Pi_{R,k}
+\end{equation}
+identify the Fourier-mode gauge quotient with the Coulomb slice.
+On that slice the normalized operator and the Riesz Hessian operator are,
+respectively,
+\begin{align}
+ \mathcal L_{R,k}
+ &=4\pi^2 k^{\mathsf T}G_R^{-1}k\,I,
+ \label{eq:s6cusp-normalized-flat-hessian}\\
+ \mathcal H_{R,k}^{\mathrm{YM}}
+ &=\frac{4\pi^2}{g_{\mathrm{YM}}^2}
+ k^{\mathsf T}G_R^{-1}k\,I.
+ \label{eq:s6cusp-riesz-flat-hessian}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+The derivative at \(t=0\) of the gauge action
+\(A\mapsto u^{-1}Au+u^{-1}\dd u\), along
+\(u_t=\exp(t\xi)\), is \(\dd\xi\).  A function on the connected torus
+has zero differential exactly when it is constant, proving the kernel and
+image statements in \eqref{eq:s6cusp-infinitesimal-gauge-map}.
+
+Substitution of \(F_{ta}=t\,\dd a+t^2a\wedge a\) into the literal action
+\eqref{eq:s6cusp-yang-mills-action} gives
+\[
+ \operatorname{YM}_R(ta)
+ =\frac1{2g_{\mathrm{YM}}^2}
+ \left(
+  t^2\lVert\dd a\rVert_{L^2}^2
+  +2t^3\langle\dd a,a\wedge a\rangle_{L^2}
+  +t^4\lVert a\wedge a\rVert_{L^2}^2
+ \right).
+\]
+Polarization of the exact second derivative proves
+\eqref{eq:s6cusp-flat-yang-mills-bilinear-hessian}.
+
+In \(y\)-coordinates the inverse metric is \(G_R^{-1}\), so direct
+differentiation and contraction give
+\begin{equation}\label{eq:s6cusp-mode-divergence}
+ \dd^*a_{k,\alpha,H}
+ =-2\pi i\,\chi_{R,k}
+ \bigl(k^{\mathsf T}G_R^{-1}\alpha\bigr)H.
+\end{equation}
+The Fourier coefficient of \(\dd(\chi_{R,k}H)\) is \(2\pi i kH\);
+therefore the gauge line is exactly \(\C k\).
+The denominator in \eqref{eq:s6cusp-coulomb-projection} is positive because
+\(G_R^{-1}\) is positive definite and \(k\ne0\).  Direct substitution gives
+\[
+ \Pi_{R,k}k=0,\qquad
+ k^{\mathsf T}G_R^{-1}\Pi_{R,k}\alpha=0,\qquad
+ \Pi_{R,k}\alpha=\alpha
+ \quad\text{on \eqref{eq:s6cusp-coulomb-image}.}
+\]
+These three identities prove the kernel, image, and both compositions in
+\eqref{eq:s6cusp-coulomb-quotient-isomorphism}.
+
+For completeness, put \(\omega=2\pi k\).  A direct coordinate contraction
+gives
+\begin{align*}
+ \lVert\dd a_{k,\alpha,H}\rVert^2
+ &=
+ \left[
+ (\omega^{\mathsf T}G_R^{-1}\omega)
+ (\overline\alpha^{\mathsf T}G_R^{-1}\alpha)
+ -
+ \left|\omega^{\mathsf T}G_R^{-1}\alpha\right|^2
+ \right]
+ \lVert\chi_{R,k}H\rVert^2.
+\end{align*}
+The last term vanishes precisely on the Coulomb slice.  The Riesz
+representative of \eqref{eq:s6cusp-flat-yang-mills-bilinear-hessian} is
+therefore \(g_{\mathrm{YM}}^{-2}\mathcal L_{R,k}\), proving
+\eqref{eq:s6cusp-normalized-flat-hessian} and
+\eqref{eq:s6cusp-riesz-flat-hessian}.
+\end{proof}
+
+\begin{corollary}[Explicit non-gauge polarizations at the soft modes]
+\label{cor:s6cusp-explicit-physical-soft-modes}
+For \(k=(r,s,0,0)\ne0\), put
+\[
+ q_{R,r,s}:=P_R^{-\mathsf T}(r,s,0,0)
+ =(0,q_2,0,q_4),
+\]
+where \(q_2,q_4\) are the two displayed components in
+\eqref{eq:s6cusp-soft-dual-block}.  The maps
+\begin{align}
+ \mathcal J^{(1)}_{R,r,s}:\mathfrak g_{\C}
+ &\longrightarrow\Omega^1(F_R;\mathfrak g_{\C}),
+ &H&\longmapsto\chi_{R,(r,s,0,0)}\,\dd x^1\otimes H,
+ \label{eq:s6cusp-soft-polarization-one}\\
+ \mathcal J^{(3)}_{R,r,s}:\mathfrak g_{\C}
+ &\longrightarrow\Omega^1(F_R;\mathfrak g_{\C}),
+ &H&\longmapsto\chi_{R,(r,s,0,0)}\,\dd x^3\otimes H
+ \label{eq:s6cusp-soft-polarization-three}
+\end{align}
+are injective, lie in the Coulomb slice, have zero intersection with the
+gauge line, and are eigenmaps of \(\mathcal L_R\) with eigenvalue
+\begin{equation}\label{eq:s6cusp-soft-gauge-eigenvalue}
+ 4\pi^2\lVert q_{R,r,s}\rVert^2.
+\end{equation}
+After the harmonic \(k=0\) one-forms are removed, the first positive
+normalized gauge-Hessian eigenvalue is exactly
+\(\lambda_1(F_R,g_R)\), and the first Riesz-Hessian eigenvalue is
+\[
+ \frac1{g_{\mathrm{YM}}^2}\lambda_1(F_R,g_R).
+\]
+Each minimizing unordered Fourier pair \(\{k,-k\}\) contributes
+\(6\dim\mathfrak g\) real dimensions: two trigonometric modes, three
+transverse polarizations, and \(\dim\mathfrak g\) Lie-algebra directions.
+\end{corollary}
+
+\begin{proof}
+In covering \(x\)-coordinates,
+\[
+ \dd^*(\chi_{R,k}\dd x^jH)
+ =-2\pi i(q_{R,k})_j\chi_{R,k}H.
+\]
+Equation \eqref{eq:s6cusp-soft-dual-block} gives
+\((q_{R,r,s})_1=(q_{R,r,s})_3=0\), proving the two Coulomb identities.
+The same equation and \(k\ne0\) imply \(q_{R,r,s}\ne0\).  Its gauge line
+is \(\C q_{R,r,s}\subset\operatorname{span}_{\C}\{\dd x^2,\dd x^4\}\);
+it consequently intersects each image in
+\eqref{eq:s6cusp-soft-polarization-one}--
+\eqref{eq:s6cusp-soft-polarization-three} only at zero.  Constant
+coefficient one-forms on a flat covering have the scalar Fourier
+eigenvalue, which proves \eqref{eq:s6cusp-soft-gauge-eigenvalue}.
+For every nonzero \(k\), the Coulomb fibre has complex dimension three
+over each Lie-algebra direction.  Pairing \(k\) with \(-k\) converts one
+complex character coefficient into its two real sine/cosine coefficients,
+which proves the stated real dimension and the first-eigenvalue formulas.
+\end{proof}
+
+\subsection{The exact metric cubical Hessian and its Gaussian quantization}
+
+Fix \(N\ge2\) and write \(V_N=(\Z/N\Z)^4\).  A zero-cochain is a function
+\(\xi:V_N\to\mathfrak g\), and a one-cochain is an array
+\(a=(a_j(n))_{n\in V_N,1\le j\le4}\).  Define
+\begin{align}
+ (d_N^0\xi)_j(n)
+ &:=N\bigl(\xi(n+e_j)-\xi(n)\bigr),
+ \label{eq:s6cusp-discrete-d-zero}\\
+ (d_N^1a)_{ij}(n)
+ &:=N\bigl(
+ a_j(n+e_i)-a_j(n)
+ -a_i(n+e_j)+a_i(n)
+ \bigr).
+ \label{eq:s6cusp-discrete-d-one}
+\end{align}
+The metric cochain inner products are
+\begin{align}
+ \langle a,b\rangle_{1,R,N}
+ &:=
+ \frac{\sqrt{\det G_R}}{N^4}
+ \sum_{n\in V_N}
+ (G_R^{-1})^{ij}
+ \langle a_i(n),b_j(n)\rangle_{\mathfrak g},
+ \label{eq:s6cusp-one-cochain-inner-product}\\
+ \langle F,K\rangle_{2,R,N}
+ &:=
+ \frac{\sqrt{\det G_R}}{2N^4}
+ \sum_{n\in V_N}
+ (G_R^{-1})^{ia}(G_R^{-1})^{jb}
+ \langle F_{ij}(n),K_{ab}(n)\rangle_{\mathfrak g}.
+ \label{eq:s6cusp-two-cochain-inner-product}
+\end{align}
+Both retain the full matrix \(G_R=P_R^{\mathsf T}P_R\).
+
+For \(k\in V_N\), define
+\begin{equation}\label{eq:s6cusp-discrete-fourier-symbol}
+ \zeta_{N,k}(n):=e^{2\pi i k\cdot n/N},
+ \qquad
+ \delta_{N,j}(k):=N\left(e^{2\pi i k_j/N}-1\right).
+\end{equation}
+The complexified Fourier one-cochain
+\(a_j(n)=\alpha_j\zeta_{N,k}(n)H\) then satisfies
+\begin{equation}\label{eq:s6cusp-discrete-curvature-symbol}
+ (d_N^1a)_{ij}(n)=
+ \bigl(\delta_{N,i}(k)\alpha_j
+ -\delta_{N,j}(k)\alpha_i\bigr)
+ \zeta_{N,k}(n)H.
+\end{equation}
+
+\begin{theorem}[Exact discrete gauge quotient and cochain spectrum]
+\label{thm:s6cusp-discrete-gauge-spectrum}
+For \(k\ne0\) in \(V_N\), put \(\delta=\delta_N(k)\) and define
+\begin{equation}\label{eq:s6cusp-discrete-coulomb-projection}
+ \Pi_{R,N,k}\alpha:=
+ \alpha-\delta\,
+ \frac{\overline\delta^{\mathsf T}G_R^{-1}\alpha}
+ {\overline\delta^{\mathsf T}G_R^{-1}\delta}.
+\end{equation}
+Its exact kernel, image, quotient map, and inverse are
+\begin{align}
+ \ker\Pi_{R,N,k}&=\C\delta,
+ \label{eq:s6cusp-discrete-coulomb-kernel}\\
+ \operatorname{im}\Pi_{R,N,k}
+ &=\{\alpha:\overline\delta^{\mathsf T}G_R^{-1}\alpha=0\},
+ \label{eq:s6cusp-discrete-coulomb-image}\\
+ \C^4/\C\delta
+ &\underset{\alpha\mapsto[\alpha]}{\overset{[\alpha]\mapsto
+ \Pi_{R,N,k}\alpha}{\rightleftarrows}}
+ \operatorname{im}\Pi_{R,N,k}.
+ \label{eq:s6cusp-discrete-coulomb-quotient}
+\end{align}
+The Riesz operator \(L_{R,N}\) of the quadratic form
+\(\langle d_N^1a,d_N^1a\rangle_{2,R,N}\), restricted to the nonzero
+discrete Coulomb modes, is scalar on the \(k\)-th transverse fibre with
+eigenvalue
+\begin{equation}\label{eq:s6cusp-discrete-hessian-eigenvalue}
+ \lambda_{R,N}(k)=
+ \overline{\delta_N(k)}^{\mathsf T}
+ G_R^{-1}\delta_N(k).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The Fourier coefficient of \(d_N^0\xi\) is \(\delta\,\widehat\xi(k)\), so
+the discrete gauge line is exactly \(\C\delta\).  Since at least one
+component of \(k\) is nonzero modulo \(N\), one has \(\delta\ne0\); positive
+definiteness of \(G_R^{-1}\) makes the denominator in
+\eqref{eq:s6cusp-discrete-coulomb-projection} positive.  The three direct
+substitutions used after \eqref{eq:s6cusp-coulomb-projection} apply with
+\(k\) replaced by \(\delta\) and the transpose replaced by the Hermitian
+transpose.  They prove \eqref{eq:s6cusp-discrete-coulomb-kernel}--
+\eqref{eq:s6cusp-discrete-coulomb-quotient}.
+
+For arbitrary \(\delta,\alpha\in\C^4\), expansion of every index in
+\eqref{eq:s6cusp-two-cochain-inner-product} gives the exact identity
+\begin{align}
+ &\frac12
+ (\overline\delta_i\overline\alpha_j
+  -\overline\delta_j\overline\alpha_i)
+ (G_R^{-1})^{ia}(G_R^{-1})^{jb}
+ (\delta_a\alpha_b-\delta_b\alpha_a)
+ \notag\\
+ &\qquad=
+ (\overline\delta^{\mathsf T}G_R^{-1}\delta)
+ (\overline\alpha^{\mathsf T}G_R^{-1}\alpha)
+ -
+ \left|\overline\delta^{\mathsf T}G_R^{-1}\alpha\right|^2.
+ \label{eq:s6cusp-discrete-wedge-identity}
+\end{align}
+The last term vanishes exactly on
+\eqref{eq:s6cusp-discrete-coulomb-image}.  Comparison with
+\eqref{eq:s6cusp-one-cochain-inner-product} proves that the Riesz operator
+is multiplication by \eqref{eq:s6cusp-discrete-hessian-eigenvalue}.
+\end{proof}
+
+Put
+\begin{equation}\label{eq:s6cusp-discrete-sN}
+ s_N:=2N\sin\left(\frac{\pi}{N}\right).
+\end{equation}
+
+\begin{theorem}[Sharp finite-cubical cusp scale]
+\label{thm:s6cusp-sharp-discrete-cusp-scale}
+There is \(R_1\) independent of \(N\) such that, for all \(R\ge R_1\) and
+all \(N\ge2\), the first positive cochain-Hessian eigenvalue is
+\begin{equation}\label{eq:s6cusp-first-discrete-exact}
+ \lambda_{1,R,N}^{\mathrm{coch}}
+ =s_N^2\min\left\{
+ \frac{m_R^2+T_R^2}{\delta_R^2},
+ \frac{p_R^2+36m_R^2}{\delta_R^2}
+ \right\}.
+\end{equation}
+The realizing residues are among
+\(\pm e_1,\pm e_2\), with \(e_j=-e_j\) when \(N=2\).  Equivalently,
+\begin{equation}\label{eq:s6cusp-first-discrete-expansion}
+ \lambda_{1,R,N}^{\mathrm{coch}}
+ =\frac{s_N^2}{R^2}
+ \left[
+ 1+\frac{\min\{2(d_0-h_0),-2h_0\}}{R}
+ +O(R^{-2})
+ \right],
+\end{equation}
+where the \(O(R^{-2})\) constant is independent of \(N\).  For
+\(j=1,2\), the coordinate-mode continuum and discrete eigenvalues satisfy
+the exact identity
+\begin{equation}\label{eq:s6cusp-continuum-discrete-ratio}
+ \frac{\lambda_{R,N}(e_j)}
+ {4\pi^2\lVert P_R^{-\mathsf T}e_j\rVert^2}
+ =
+ \left[
+ \frac{N\sin(\pi/N)}{\pi}
+ \right]^2.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Since \(G_R^{-1}=P_R^{-1}P_R^{-\mathsf T}\),
+\[
+ \lambda_{R,N}(k)
+ =\lVert P_R^{-\mathsf T}\delta_N(k)\rVert^2.
+\]
+For \(k=e_j\), the vector \(\delta_N(k)\) is
+\(N(e^{2\pi i/N}-1)e_j\), whose squared modulus is \(s_N^2\).
+Equations \eqref{eq:s6cusp-e1-exact} and
+\eqref{eq:s6cusp-e2-exact} therefore give the two entries in
+\eqref{eq:s6cusp-first-discrete-exact}, and comparison with the factor
+\(4\pi^2\) in \eqref{eq:s6cusp-character-eigenvalue} proves
+\eqref{eq:s6cusp-continuum-discrete-ratio}.
+
+For a nonzero residue \(\ell\in\Z/N\Z\),
+\[
+ \left|N(e^{2\pi i\ell/N}-1)\right|\ge s_N.
+\]
+If \(\ell\not\equiv\pm1\pmod N\), the left side is at least
+\(\sqrt2\,s_N\); for \(N=2,3\) there is no additional residue class.
+If \(k_3\ne0\) or \(k_4\ne0\), the first and third components of
+\eqref{eq:s6cusp-full-dual-formula}, with the formula extended
+\(\C\)-linearly, give
+\[
+ \lambda_{R,N}(k)\ge
+ |\delta_{N,3}(k)|^2+|\delta_{N,4}(k)|^2\ge s_N^2.
+\]
+For \(k_3=k_4=0\), equation
+\eqref{eq:s6cusp-scaled-dual-limit} gives constants \(C,R_0'\),
+independent of \(N\), such that
+\[
+ \frac{1-C/R}{R}\lVert(\delta_{N,1},\delta_{N,2})\rVert
+ \le
+ \lVert A_R(\delta_{N,1},\delta_{N,2})\rVert
+ \le
+ \frac{1+C/R}{R}\lVert(\delta_{N,1},\delta_{N,2})\rVert.
+\]
+Every soft residue other than the four stated coordinate residues has
+Euclidean norm at least \(\sqrt2\,s_N\).  For one fixed sufficiently large
+\(R_1\), the lower bound for those residues exceeds the upper bound for
+the coordinate residues, while \(s_N^2\) exceeds every coordinate value.
+This proves the uniform minimizing list.  The two expansions in the proof
+of Theorem~\ref{thm:s6cusp-sharp-scalar-spectrum}, multiplied by the bounded
+factor \(s_N^2\), prove \eqref{eq:s6cusp-first-discrete-expansion} with a
+constant independent of \(N\).
+\end{proof}
+
+\begin{proposition}[Exact physical mesh criterion]
+\label{prop:s6cusp-physical-mesh-criterion}
+The largest Euclidean edge length of the division cellulation is
+\begin{equation}\label{eq:s6cusp-physical-mesh-exact}
+ \operatorname{mesh}(R,N)=
+ \frac1N\max_{1\le j\le4}\lVert P_Re_j\rVert.
+\end{equation}
+Along any sequence \(R\to\infty\), \(N=N(R)\ge2\),
+\begin{equation}\label{eq:s6cusp-physical-mesh-asymptotic}
+ \operatorname{mesh}(R,N(R))
+ =\frac{R}{N(R)}\left[1+O(R^{-1})\right].
+\end{equation}
+Consequently the physical cells shrink to zero exactly when
+\(N(R)/R\to\infty\).  This geometric criterion is distinct from the
+coordinate-mode spectral ratio \eqref{eq:s6cusp-continuum-discrete-ratio},
+which tends to one whenever \(N\to\infty\).
+\end{proposition}
+
+\begin{proof}
+Equation \eqref{eq:s6cusp-division-edges} has constant tangent vector
+\(P_Re_j/N\), proving \eqref{eq:s6cusp-physical-mesh-exact}.  The four
+column lengths are
+\begin{align*}
+ \lVert P_Re_1\rVert^2
+ &=(6a_R)^2+(6m_R)^2+(c_R^{\mathrm{re}})^2+p_R^2,\\
+ \lVert P_Re_2\rVert^2
+ &=u_R^2+T_R^2+a_R^2+m_R^2,\\
+ \lVert P_Re_3\rVert^2&=1,\qquad
+ \lVert P_Re_4\rVert^2=1.
+\end{align*}
+Holomorphy at \(q_R=0\), together with
+\(p_R=-R+(d_0-h_0)+O(e^{-2\pi R})\) and
+\(T_R=R+h_0+O(e^{-2\pi R})\), shows that each of the first two lengths is
+\(R[1+O(R^{-1})]\).  This proves
+\eqref{eq:s6cusp-physical-mesh-asymptotic} and both implications of the
+stated criterion.  The final spectral statement follows directly from
+\(N\sin(\pi/N)/\pi\to1\).
+\end{proof}
+
+Let \(\mathscr C_{R,N}\) denote the real, nonharmonic discrete Coulomb
+space: it is the orthogonal direct sum, with the reality condition coupling
+\(k\) to \(-k\), of the fibres
+\eqref{eq:s6cusp-discrete-coulomb-image} over \(k\ne0\).
+The operator \(L_{R,N}\) is strictly positive on this finite-dimensional
+space.
+
+\begin{theorem}[Exact Gaussian quantization of the cochain Hessian]
+\label{thm:s6cusp-gaussian-quantization}
+Equip \(\mathscr C_{R,N}\) with the Lebesgue measure determined by
+\eqref{eq:s6cusp-one-cochain-inner-product}.  The explicitly defined
+quadratic Hamiltonian
+\begin{equation}\label{eq:s6cusp-quadratic-hamiltonian}
+ \widehat H^{\mathrm{quad}}_{R,N}
+ :=
+ -\frac{g_{\mathrm{YM}}^2}{2}\Delta_{\mathscr C_{R,N}}
+ +\frac1{2g_{\mathrm{YM}}^2}
+ \langle a,L_{R,N}a\rangle_{1,R,N}
+\end{equation}
+is essentially self-adjoint on the Schwartz space and has excitation gap
+\begin{equation}\label{eq:s6cusp-quadratic-gap-exact}
+ \operatorname{gap}
+ \bigl(\widehat H^{\mathrm{quad}}_{R,N}\bigr)
+ =\sqrt{\lambda_{1,R,N}^{\mathrm{coch}}}.
+\end{equation}
+For all \(R\ge R_1\),
+\begin{equation}\label{eq:s6cusp-quadratic-gap-asymptotic}
+ \operatorname{gap}
+ \bigl(\widehat H^{\mathrm{quad}}_{R,N}\bigr)
+ =
+ \frac{s_N}{R}
+ \left[
+ 1+\frac{\min\{d_0-h_0,-h_0\}}{R}
+ +O(R^{-2})
+ \right].
+\end{equation}
+In particular the gap tends to zero for fixed \(N\), and also for every
+sequence \(N=N(R)\ge2\), because
+\begin{equation}\label{eq:s6cusp-sN-uniform-bounds}
+ 4\le s_N<2\pi.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Choose an orthonormal real eigenbasis of the positive symmetric operator
+\(L_{R,N}\), with eigenvalues \(\lambda_\nu>0\).  This is an orthogonal
+coordinate isomorphism with inverse given by expansion in the same basis;
+under it, \eqref{eq:s6cusp-quadratic-hamiltonian} is the sum of the
+one-dimensional operators
+\[
+ H_{\lambda_\nu,g_{\mathrm{YM}}}
+ =-\frac{g_{\mathrm{YM}}^2}{2}\frac{\dd^2}{\dd x_\nu^2}
+ +\frac{\lambda_\nu}{2g_{\mathrm{YM}}^2}x_\nu^2.
+\]
+For each \(\lambda>0\), the unitary map and its inverse are
+\begin{align*}
+ (U_{\lambda,g_{\mathrm{YM}}}f)(u)
+ &:=
+ \left(\frac{g_{\mathrm{YM}}}{\lambda^{1/4}}\right)^{1/2}
+ f\left(\frac{g_{\mathrm{YM}}}{\lambda^{1/4}}u\right),\\
+ (U_{\lambda,g_{\mathrm{YM}}}^{-1}\varphi)(x)
+ &:=
+ \left(\frac{\lambda^{1/4}}{g_{\mathrm{YM}}}\right)^{1/2}
+ \varphi\left(\frac{\lambda^{1/4}}{g_{\mathrm{YM}}}x\right).
+\end{align*}
+Direct differentiation, with no coefficient suppressed, gives
+\[
+ U_{\lambda,g_{\mathrm{YM}}}
+ H_{\lambda,g_{\mathrm{YM}}}
+ U_{\lambda,g_{\mathrm{YM}}}^{-1}
+ =
+ \sqrt\lambda\left(
+ -\frac12\frac{\dd^2}{\dd u^2}+\frac12u^2
+ \right).
+\]
+The Hermite basis therefore gives energy increments
+\(\sqrt{\lambda_\nu}\); the smallest increment proves
+\eqref{eq:s6cusp-quadratic-gap-exact}.  Taking the positive square root of
+\eqref{eq:s6cusp-first-discrete-expansion} gives
+\eqref{eq:s6cusp-quadratic-gap-asymptotic}.  Finally,
+\(\sin x\ge2x/\pi\) for \(0\le x\le\pi/2\) and
+\(\sin x<x\) for \(x>0\) give \eqref{eq:s6cusp-sN-uniform-bounds}.
+\end{proof}
+
+\subsection{The native degree-six class on the full four-torus}
+\label{subsec:s6cusp-native-four-dimensional-magnetic}
+
+The second-pass magnetic calculation becomes intrinsic to the marked S6
+fibre once the source class is retained.  Let
+\begin{equation}\label{eq:s6cusp-integral-coframe}
+ \vartheta_R^j:=(P_R^{-\mathsf T}e_j)\mathbin{\cdot}\dd x,
+ \qquad 1\le j\le4.
+\end{equation}
+Since \(x=P_Ry\), one has \(\vartheta_R^j=\dd y^j\), and therefore
+\begin{equation}\label{eq:s6cusp-integral-periods}
+ \int_{P_Re_k}\vartheta_R^j=\delta_k^j.
+\end{equation}
+In the source identification
+\((\dd y^1,\dd y^2,\dd y^3,\dd y^4)=(\gamma,u,w,\delta)\),
+the monodromy-invariant integral \((1,1)\)-class of Lemma~9.4 is
+\begin{equation}\label{eq:s6cusp-native-eta}
+ \eta_R:=
+ \vartheta_R^2\wedge\vartheta_R^3
+ +6\vartheta_R^1\wedge\vartheta_R^4
+ =u\wedge w+6\gamma\wedge\delta
+ \in H^2(F_R;\Z)
+ \end{equation}
+\cite{S6Internal}.  Its alternating matrix in the ordered source basis is
+\begin{equation}\label{eq:s6cusp-native-eta-matrix}
+ E_\eta:=
+ \begin{pmatrix}
+ 0&0&0&6\\
+ 0&0&1&0\\
+ 0&-1&0&0\\
+ -6&0&0&0
+ \end{pmatrix}.
+\end{equation}
+Direct exterior multiplication retains the orientation and gives
+\begin{equation}\label{eq:s6cusp-native-eta-square-pfaffian}
+ \frac12\eta_R\wedge\eta_R
+ =6\,\dd y^1\wedge\dd y^2\wedge\dd y^3\wedge\dd y^4,
+ \qquad
+ \operatorname{Pf}(E_\eta)=6.
+\end{equation}
+
+\begin{proposition}[Generator-by-generator monodromy invariance]
+\label{prop:s6cusp-native-eta-monodromy}
+Let the source monodromy generators act on
+\(V=\Z\langle\gamma,u,w,\delta\rangle\) by
+\begin{equation}\label{eq:s6cusp-source-cohomology-monodromy}
+ T_1=
+ \begin{pmatrix}
+ 1&0&-6&2\\
+ 0&-1&1&1\\
+ 0&-1&0&1\\
+ 0&0&0&1
+ \end{pmatrix},
+ \qquad
+ T_2=
+ \begin{pmatrix}
+ 1&6&0&-3\\
+ 0&0&-1&1\\
+ 0&1&0&0\\
+ 0&0&0&1
+ \end{pmatrix},
+\end{equation}
+where columns are images in the ordered basis
+\((\gamma,u,w,\delta)\).  Then
+\begin{equation}\label{eq:s6cusp-native-eta-generator-invariance}
+ (\bigwedge^2T_1)\eta_R=\eta_R,
+ \qquad
+ (\bigwedge^2T_2)\eta_R=\eta_R.
+\end{equation}
+Consequently the rank-one subgroup \(\Z\eta_R\) is carried identically
+around every loop in the regular base.
+\end{proposition}
+
+\begin{proof}
+Reading the columns of \eqref{eq:s6cusp-source-cohomology-monodromy} gives
+\begin{align*}
+ T_1\gamma&=\gamma,&
+ T_1u&=-u-w,&
+ T_1w&=-6\gamma+u,&
+ T_1\delta&=2\gamma+u+w+\delta,\\
+ T_2\gamma&=\gamma,&
+ T_2u&=6\gamma+w,&
+ T_2w&=-u,&
+ T_2\delta&=-3\gamma+u+\delta.
+\end{align*}
+Exterior multiplication, without changing the source basis, yields
+\begin{align*}
+ (\bigwedge^2T_1)\eta_R
+ &=(-u-w)\wedge(-6\gamma+u)
+   +6\gamma\wedge(2\gamma+u+w+\delta)\\
+ &=(-6\gamma\wedge u-6\gamma\wedge w+u\wedge w)
+   +(6\gamma\wedge u+6\gamma\wedge w
+     +6\gamma\wedge\delta)\\
+ &=u\wedge w+6\gamma\wedge\delta=\eta_R,
+\end{align*}
+and
+\begin{align*}
+ (\bigwedge^2T_2)\eta_R
+ &=(6\gamma+w)\wedge(-u)
+   +6\gamma\wedge(-3\gamma+u+\delta)\\
+ &=(-6\gamma\wedge u+u\wedge w)
+   +(6\gamma\wedge u+6\gamma\wedge\delta)\\
+ &=u\wedge w+6\gamma\wedge\delta=\eta_R.
+\end{align*}
+The source regular base has monodromy generated by these two transformations,
+so the two identities prove the last assertion.
+\end{proof}
+
+The line bundle and connection can be written without invoking an existence
+label.  On \(\R^4_y\times\C\), impose
+\begin{align}
+ (y,z)&\sim(y+e_1,e^{12\pi i y^4}z),
+ & (y,z)&\sim(y+e_2,e^{2\pi i y^3}z),
+ \label{eq:s6cusp-native-line-clutch-one}\\
+ (y,z)&\sim(y+e_3,z),
+ & (y,z)&\sim(y+e_4,z).
+ \label{eq:s6cusp-native-line-clutch-two}
+\end{align}
+The integer coefficients make the four deck transformations commute: the
+only potentially changed factors acquire \(e^{12\pi i}=1\) or
+\(e^{2\pi i}=1\).  Denote the quotient line bundle by
+\(\mathcal L_{\eta,R}\).  On the covering bundle define
+\begin{equation}\label{eq:s6cusp-native-line-connection}
+ \nabla_{\eta,R}:=
+ \dd-2\pi i\left(6y^1\dd y^4+y^2\dd y^3\right).
+\end{equation}
+
+\begin{proposition}[Exact descent, curvature, and native Chern class]
+\label{prop:s6cusp-native-line-bundle}
+The connection \eqref{eq:s6cusp-native-line-connection} descends through
+\eqref{eq:s6cusp-native-line-clutch-one}--
+\eqref{eq:s6cusp-native-line-clutch-two}, and
+\begin{equation}\label{eq:s6cusp-native-line-curvature}
+ F_{\nabla_{\eta,R}}=-2\pi i\,\eta_R.
+\end{equation}
+With the convention
+\(c_1(\mathcal L)=[iF_\nabla/(2\pi)]\),
+\begin{equation}\label{eq:s6cusp-native-line-c1}
+ c_1(\mathcal L_{\eta,R})=\eta_R,
+ \qquad
+ \frac12\int_{F_R}c_1(\mathcal L_{\eta,R})^2=6.
+\end{equation}
+The construction uses the full four-torus and no elliptic quotient.
+\end{proposition}
+
+\begin{proof}
+Let \(A_R=-2\pi i(6y^1\dd y^4+y^2\dd y^3)\).  Translation by
+\(e_1\) changes \(A_R\) by \(-12\pi i\dd y^4\), while the first clutch
+factor \(g_1=e^{12\pi i y^4}\) satisfies
+\(g_1^{-1}\dd g_1=12\pi i\dd y^4\).  Hence
+\[
+ g_1^{-1}\dd g_1+A_R(y+e_1)=A_R(y).
+\]
+Translation by \(e_2\) changes \(A_R\) by
+\(-2\pi i\dd y^3\), which is cancelled by
+\(g_2^{-1}\dd g_2=2\pi i\dd y^3\).  The remaining two translations
+leave \(A_R\) unchanged.  These are exactly the four connection-covariance
+equations for the clutch maps, proving descent.  Exterior differentiation
+gives
+\[
+ \dd A_R=-2\pi i
+ \left(6\dd y^1\wedge\dd y^4+
+ \dd y^2\wedge\dd y^3\right),
+\]
+which is \eqref{eq:s6cusp-native-line-curvature}.  Substitution into the
+stated Chern--Weil convention and then
+\eqref{eq:s6cusp-native-eta-square-pfaffian} proves
+\eqref{eq:s6cusp-native-line-c1}.
+\end{proof}
+
+To retain every coefficient in the magnetic operator, write
+\begin{equation}\label{eq:s6cusp-native-physical-two-form}
+ \eta_R=\frac12(\Omega_R)_{ij}\dd x^i\wedge\dd x^j,
+ \qquad
+ \Omega_R=P_R^{-\mathsf T}E_\eta P_R^{-1}.
+\end{equation}
+Direct multiplication gives the complete matrix
+\begin{equation}\label{eq:s6cusp-native-physical-matrix}
+ \Omega_R=\frac1{\delta_R}
+ \begin{pmatrix}
+ 0&p_R&0&-6m_R\\
+ -p_R&0&6m_R&0\\
+ 0&-6m_R&0&6T_R\\
+ 6m_R&0&-6T_R&0
+ \end{pmatrix}.
+\end{equation}
+This identity can be checked without inversion by multiplying the displayed
+right side on the left by \(P_R^{\mathsf T}\) and on the right by \(P_R\):
+the result is exactly \(E_\eta\).  In particular, all three real parts
+\(u_R,a_R,c_R^{\mathrm{re}}\) cancel from the physical curvature matrix as
+an exact consequence of the native form \eqref{eq:s6cusp-native-eta}; they
+remain present in \(P_R\) and in the marking map.
+
+Reorder the covering coordinates into the two column vectors
+\begin{equation}\label{eq:s6cusp-native-XY-blocks}
+ X:=\begin{pmatrix}x^1\\x^3\end{pmatrix},
+ \qquad
+ Y:=\begin{pmatrix}x^2\\x^4\end{pmatrix},
+ \end{equation}
+and retain the symmetric matrix
+\begin{equation}\label{eq:s6cusp-native-K-matrix}
+ K_R:=
+ \begin{pmatrix}
+ p_R&-6m_R\\
+ -6m_R&6T_R
+ \end{pmatrix}.
+\end{equation}
+In the order \((X;Y)\), equation
+\eqref{eq:s6cusp-native-physical-matrix} is
+\begin{equation}\label{eq:s6cusp-native-skew-block}
+ \Omega_R=\frac1{\delta_R}
+ \begin{pmatrix}0&K_R\\-K_R&0\end{pmatrix}.
+\end{equation}
+The two eigenvalues of \(K_R\), with their signs retained, are
+\begin{align}
+ \kappa_{R,+}
+ &:=\frac{p_R+6T_R+
+ \sqrt{(p_R-6T_R)^2+144m_R^2}}{2}>0,
+ \label{eq:s6cusp-kappa-plus}\\
+ \kappa_{R,-}
+ &:=\frac{p_R+6T_R-
+ \sqrt{(p_R-6T_R)^2+144m_R^2}}{2}<0.
+ \label{eq:s6cusp-kappa-minus}
+\end{align}
+Indeed,
+\begin{equation}\label{eq:s6cusp-kappa-product}
+ \kappa_{R,+}\kappa_{R,-}
+ =\det K_R=6p_RT_R-36m_R^2=-6\delta_R<0.
+\end{equation}
+The exact orthogonal spectral projectors, including their maps and kernels,
+are
+\begin{align}
+ \mathsf Q_{R,+}
+ &:=\frac{K_R-\kappa_{R,-}I}
+ {\kappa_{R,+}-\kappa_{R,-}},
+ &\ker\mathsf Q_{R,+}&=\operatorname{im}\mathsf Q_{R,-},
+ \label{eq:s6cusp-native-projector-plus}\\
+ \mathsf Q_{R,-}
+ &:=\frac{\kappa_{R,+}I-K_R}
+ {\kappa_{R,+}-\kappa_{R,-}},
+ &\ker\mathsf Q_{R,-}&=\operatorname{im}\mathsf Q_{R,+}.
+ \label{eq:s6cusp-native-projector-minus}
+\end{align}
+They satisfy
+\begin{equation}\label{eq:s6cusp-native-projector-identities}
+ \mathsf Q_{R,+}+\mathsf Q_{R,-}=I,
+ \quad
+ \mathsf Q_{R,\sigma}\mathsf Q_{R,\rho}
+ =\delta_{\sigma\rho}\mathsf Q_{R,\sigma},
+ \quad
+ K_R\mathsf Q_{R,\sigma}
+ =\kappa_{R,\sigma}\mathsf Q_{R,\sigma}.
+\end{equation}
+Thus the orthogonal coordinate map
+\begin{equation}\label{eq:s6cusp-native-orthogonal-map}
+ \mathscr O_R(X,Y):=
+ \bigl(
+ \mathsf Q_{R,+}X,\mathsf Q_{R,+}Y;
+ \mathsf Q_{R,-}X,-\mathsf Q_{R,-}Y
+ \bigr)
+\end{equation}
+has inverse
+\begin{equation}\label{eq:s6cusp-native-orthogonal-inverse}
+ (X_+,Y_+;X_-,Y_-)
+ \longmapsto(X_++X_-,Y_+-Y_-).
+\end{equation}
+It sends the real magnetic two-form \(2\pi\eta_R\) to the orthogonal sum
+of two positively oriented constant fields with exact frequencies
+\begin{align}
+ \mathcal B_{R,+}
+ &:=\frac{2\pi\kappa_{R,+}}{\delta_R}
+ =\frac{\pi}{\delta_R}
+ \left[p_R+6T_R+
+ \sqrt{(p_R-6T_R)^2+144m_R^2}\right],
+ \label{eq:s6cusp-native-frequency-plus}\\
+ \mathcal B_{R,-}
+ &:=-\frac{2\pi\kappa_{R,-}}{\delta_R}
+ =\frac{\pi}{\delta_R}
+ \left[-p_R-6T_R+
+ \sqrt{(p_R-6T_R)^2+144m_R^2}\right].
+ \label{eq:s6cusp-native-frequency-minus}
+\end{align}
+
+\begin{theorem}[Complete native degree-six four-dimensional Landau spectrum]
+\label{thm:s6cusp-native-four-dimensional-landau}
+Let \(H_{\eta,R}\) be the Friedrichs realization of
+\begin{equation}\label{eq:s6cusp-native-magnetic-Hamiltonian}
+ H_{\eta,R}:=\nabla_{\eta,R}^*\nabla_{\eta,R}
+\end{equation}
+on \(L^2(F_R,\mathcal L_{\eta,R})\), with the Euclidean covering metric
+\(g_R\).  Its joint Landau levels, counted before coincident numerical
+energies are combined, are
+\begin{equation}\label{eq:s6cusp-native-landau-spectrum}
+ E_{R;n_+,n_-}
+ =(2n_++1)\mathcal B_{R,+}
+ +(2n_-+1)\mathcal B_{R,-},
+ \qquad n_+,n_-\in\Z_{\ge0}.
+\end{equation}
+Every joint eigenspace in
+\eqref{eq:s6cusp-native-landau-spectrum} has complex dimension six.  If
+two different index pairs give the same numerical energy, their six-
+dimensional joint eigenspaces add orthogonally in that energy eigenspace.
+The ground space has complex dimension six, and the exact excitation gap is
+\begin{equation}\label{eq:s6cusp-native-landau-gap}
+ \operatorname{gap}(H_{\eta,R})
+ =2\min\{\mathcal B_{R,+},\mathcal B_{R,-}\}.
+\end{equation}
+The product of the two retained frequencies is
+\begin{align}
+ \mathcal B_{R,+}\mathcal B_{R,-}
+ &=\frac{24\pi^2}{\delta_R}
+ \label{eq:s6cusp-native-frequency-product}\\
+ &=-\frac{24\pi^2}{
+ \operatorname{Im}\tau_R
+ \left(
+ \operatorname{Im}\beta_R-
+ \dfrac{6(\operatorname{Im}\mu_R)^2}
+ {\operatorname{Im}\tau_R}
+ \right)}.
+ \label{eq:s6cusp-native-frequency-unchanged-expression}
+\end{align}
+Along the source radial cusp,
+\begin{align}
+ \mathcal B_{R,+}
+ &=\frac{12\pi}{R}\left[1+O(R^{-1})\right],
+ &
+ \mathcal B_{R,-}
+ &=\frac{2\pi}{R}\left[1+O(R^{-1})\right].
+ \label{eq:s6cusp-native-frequency-asymptotics}
+\end{align}
+Consequently there is \(R_3\) such that, for \(R\ge R_3\),
+\begin{equation}\label{eq:s6cusp-native-gap-exact-eventual}
+ \operatorname{gap}(H_{\eta,R})
+ =\frac{2\pi}{\delta_R}
+ \left[
+ \sqrt{(p_R-6T_R)^2+144m_R^2}-p_R-6T_R
+ \right]
+ =\frac{4\pi}{R}\left[1+O(R^{-1})\right].
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The closed quadratic form
+\(q_{\eta,R}[s]=\lVert\nabla_{\eta,R}s\rVert_{L^2}^2\) has domain
+\(H^1(F_R,\mathcal L_{\eta,R})\).  In a finite unitary trivializing cover,
+its graph norm is equivalent to the ordinary first Sobolev norm because the
+connection one-forms are smooth and bounded.  The Rellich inclusion on the
+compact torus is compact, so the associated Friedrichs operator is
+self-adjoint with compact resolvent and smooth eigensections.
+
+Apply the orthogonal map \(\mathscr O_R\) on the universal cover.  Choose a
+unit vector in each one-dimensional image
+\(\operatorname{im}\mathsf Q_{R,\sigma}\); changing its sign changes both
+coordinates in that block and leaves every operator below unchanged.  Let
+\(\Pi_{X_\sigma},\Pi_{Y_\sigma}\) be the corresponding self-adjoint
+covariant momenta.  Equations
+\eqref{eq:s6cusp-native-skew-block}--
+\eqref{eq:s6cusp-native-frequency-minus} give the complete commutator table
+\begin{equation}\label{eq:s6cusp-native-magnetic-commutators}
+ [\Pi_{X_\sigma},\Pi_{Y_\rho}]
+ =i\delta_{\sigma\rho}\mathcal B_{R,\sigma},
+ \qquad
+ [\Pi_{X_\sigma},\Pi_{X_\rho}]
+ =[\Pi_{Y_\sigma},\Pi_{Y_\rho}]=0.
+\end{equation}
+Define on smooth sections
+\begin{equation}\label{eq:s6cusp-native-ladders}
+ \mathfrak a_\sigma
+ :=\frac{\Pi_{X_\sigma}+i\Pi_{Y_\sigma}}
+ {\sqrt{2\mathcal B_{R,\sigma}}},
+ \qquad
+ \mathfrak a_\sigma^*
+ :=\frac{\Pi_{X_\sigma}-i\Pi_{Y_\sigma}}
+ {\sqrt{2\mathcal B_{R,\sigma}}}.
+\end{equation}
+Direct multiplication, with both frequencies retained, gives
+\begin{align}
+ [\mathfrak a_\sigma,\mathfrak a_\rho^*]
+ &=\delta_{\sigma\rho}I,
+ &
+ [\mathfrak a_\sigma,\mathfrak a_\rho]&=0,
+ \label{eq:s6cusp-native-ladder-commutators}\\
+ H_{\eta,R}
+ &=\mathcal B_{R,+}
+ (2\mathfrak a_+^*\mathfrak a_++I)
+ +\mathcal B_{R,-}
+ (2\mathfrak a_-^*\mathfrak a_-+I).
+ \label{eq:s6cusp-native-oscillator-factorization}
+\end{align}
+
+Put \(\mathfrak N_\sigma=\mathfrak a_\sigma^*\mathfrak a_\sigma\).
+The commutators show that the two number operators commute and that
+lowering a nonzero eigenvector decreases the corresponding eigenvalue by
+one.  If an eigenvalue \(\nu\) of one number operator were nonintegral,
+successive lowering through \(\lfloor\nu\rfloor+1\) steps would produce a
+nonzero vector with negative eigenvalue, contradicting
+\(\mathfrak N_\sigma\ge0\).  For \(n\ge1\), the maps
+\begin{equation}\label{eq:s6cusp-native-level-isomorphisms}
+ n^{-1/2}\mathfrak a_\sigma:
+ \ker(\mathfrak N_\sigma-nI)
+ \underset{n^{-1/2}\mathfrak a_\sigma^*}{\rightleftarrows}
+ \ker(\mathfrak N_\sigma-(n-1)I)
+\end{equation}
+are mutually inverse while preserving the other number eigenvalue.  Thus
+all joint eigenspaces have the dimension of
+\begin{equation}\label{eq:s6cusp-native-joint-ground}
+ \mathcal K_R:=\ker\mathfrak a_+\cap\ker\mathfrak a_-.
+\end{equation}
+
+For completeness, equip the underlying real torus with the constant complex
+structure for which the two oriented planes in
+\eqref{eq:s6cusp-native-orthogonal-map} are complex lines.  The form
+\(2\pi\eta_R\) is positive for this complex structure, and the two equations
+in \eqref{eq:s6cusp-native-joint-ground} are exactly the covariant
+\(\bar\partial\)-equations.  Hence
+\(\mathcal K_R\cong H^0(F_R,\mathcal L_{\eta,R})\) for this retained
+positive magnetic complex structure.  The canonical bundle of a complex
+torus is trivial.  The Bochner--Kodaira identity for the positive curvature
+annihilates the higher cohomology, while Hirzebruch--Riemann--Roch has
+Todd class one and gives
+\[
+ \dim_\C\mathcal K_R
+ =\chi(\mathcal L_{\eta,R})
+ =\frac12\int_{F_R}c_1(\mathcal L_{\eta,R})^2=6.
+\]
+This is the dimension-six theta-space calculation; the classical
+polarized-torus decomposition and its theta basis are recorded at source
+level in \cite{Tyurin1999}.  Raising from the six ground vectors and using
+\eqref{eq:s6cusp-native-level-isomorphisms} proves the joint spectrum and
+every multiplicity in \eqref{eq:s6cusp-native-landau-spectrum}.
+
+The smallest increase from \((n_+,n_-)=(0,0)\) is twice the smaller
+frequency, proving \eqref{eq:s6cusp-native-landau-gap}.  Equation
+\eqref{eq:s6cusp-kappa-product} gives
+\[
+ \mathcal B_{R,+}\mathcal B_{R,-}
+  =\frac{(2\pi)^2(-\kappa_{R,+}\kappa_{R,-})}{\delta_R^2}
+  =\frac{24\pi^2}{\delta_R}.
+\]
+Substitution of the unchanged identity
+\eqref{eq:s6cusp-unchanged-expression-delta} gives
+\eqref{eq:s6cusp-native-frequency-unchanged-expression} without deleting
+its parenthesis.
+
+Finally, equations \eqref{eq:s6cusp-imaginary-identities} give
+\[
+ \frac{p_R}{R}\longrightarrow-1,\qquad
+ \frac{T_R}{R}\longrightarrow1,\qquad
+ \frac{m_R}{R}\longrightarrow0,\qquad
+ \frac{\delta_R}{R^2}\longrightarrow1.
+\]
+Substitution into \eqref{eq:s6cusp-kappa-plus}--
+\eqref{eq:s6cusp-native-frequency-minus} proves
+\eqref{eq:s6cusp-native-frequency-asymptotics}.  Their ratio tends to six,
+so \(\mathcal B_{R,-}<\mathcal B_{R,+}\) for all sufficiently large
+\(R\).  Doubling the exact right side of
+\eqref{eq:s6cusp-native-frequency-minus} then gives
+\eqref{eq:s6cusp-native-gap-exact-eventual}.
+\end{proof}
+
+The source complex structure makes the same integral class \(\eta_R\) of
+type \((1,1)\) with indefinite Hermitian form; the magnetic complex
+structure used only in the multiplicity proof makes its curvature positive.
+The identity of the underlying marked smooth torus and the identity of the
+smooth clutch bundle are the exact maps relating those two presentations.
+No equality of their complex structures is used.  The spectrum
+\eqref{eq:s6cusp-native-landau-spectrum} is that of the smooth unitary
+connection \eqref{eq:s6cusp-native-line-connection} and the auxiliary
+Euclidean metric \(g_R\), not of a Yang--Mills transfer Hamiltonian.
+
+\input{tex/satellites/29a_native_magnetic_upgrade}
+
+\subsection{The exceptional elliptic quotient and its exact restriction
+from the native class}
+\label{subsec:s6cusp-exceptional-elliptic-restriction}
+
+The T1 first-coordinate construction and the native four-dimensional
+construction are related by a restriction morphism.  On the complete marked
+parameter domain, write
+\begin{equation}\label{eq:s6cusp-general-marked-fibre}
+ \Pi(z)=
+ \begin{pmatrix}
+ 6\mu(z)&\tau(z)&1&0\\
+ \beta(z)&\mu(z)&0&1
+ \end{pmatrix},
+ \qquad
+ F_z:=\C^2/\Pi(z)\Z^4,
+\end{equation}
+and retain
+\begin{align}
+ T_z&:=\operatorname{Im}\tau(z)>0,&
+ m_z&:=\operatorname{Im}\mu(z),&
+ p_z&:=\operatorname{Im}\beta(z),
+ \label{eq:s6cusp-general-imaginary-coordinates}\\
+ \delta_z&:=6m_z^2-p_zT_z>0,&
+ T_z\left(p_z-\frac{6m_z^2}{T_z}\right)&=-\delta_z\ne0.
+ \label{eq:s6cusp-general-unchanged-expression}
+\end{align}
+The corresponding real period matrix is
+\begin{equation}\label{eq:s6cusp-general-real-period-matrix}
+ P_z=
+ \begin{pmatrix}
+ 6\operatorname{Re}\mu(z)&\operatorname{Re}\tau(z)&1&0\\
+ 6m_z&T_z&0&0\\
+ \operatorname{Re}\beta(z)&\operatorname{Re}\mu(z)&0&1\\
+ p_z&m_z&0&0
+ \end{pmatrix}.
+\end{equation}
+Equations \eqref{eq:s6cusp-integral-coframe}--
+\eqref{eq:s6cusp-native-line-connection}, with \(P_R\) replaced by
+\(P_z\), define \(\eta_z\), \(\mathcal L_{\eta,z}\), and
+\(\nabla_{\eta,z}\) on this fibre.
+
+The source uniformisation used below is the holomorphic quotient map
+\begin{equation}\label{eq:s6cusp-source-uniformisation}
+ \pi:\mathfrak h_z\longrightarrow B\setminus\{p_0\},
+ \qquad
+ B=\mathbb P^1,
+ \qquad
+ \mathfrak h_z/\Delta\simeq B\setminus\{p_0\},
+\end{equation}
+where
+\begin{equation}\label{eq:s6cusp-source-deck-presentation}
+ \Delta=\langle g_1,g_2\mid g_1^3=g_2^4=1\rangle,
+ \qquad
+ g_0=(g_1g_2)^{-1}.
+\end{equation}
+Here \(p_0\) is the distinguished cusp and \(\mathfrak h_z\) is connected;
+these are the exact conventions of Proposition~2.11 and
+Definition~3.1 of the source transcription \cite{S6Internal}.  In particular,
+\(g_0,g_2\) generate \(\Delta\), since
+\(g_1=g_0^{-1}g_2^{-1}\).
+
+For \(a,b\in\Z\), define
+\begin{equation}\label{eq:s6cusp-descent-loci}
+ \mathscr D_{a,b}:=
+ \{z\in\mathfrak h_z:6\mu(z)=a\tau(z)+b\},
+ \qquad
+ \mathscr D:=\bigcup_{(a,b)\in\Z^2}\mathscr D_{a,b}.
+\end{equation}
+
+\begin{theorem}[Exact quotient, kernel, and degree-six restriction]
+\label{thm:s6cusp-exceptional-elliptic-restriction}
+The first-coordinate projection \(\operatorname{pr}_1:\C^2\to\C\)
+descends to a surjective holomorphic homomorphism
+\begin{equation}\label{eq:s6cusp-first-coordinate-quotient}
+ q_{a,b,z}:F_z\longrightarrow
+ E_{\tau(z)}:=\C/(\Z\tau(z)+\Z),
+ \qquad
+ [(\zeta_1,\zeta_2)]\longmapsto[\zeta_1],
+\end{equation}
+if and only if \(z\in\mathscr D_{a,b}\) for a unique pair
+\((a,b)\in\Z^2\).  For such a point, put
+\begin{equation}\label{eq:s6cusp-exceptional-kernel-parameter}
+ \widehat\gamma_{a,b}:=
+ \widehat\gamma-a\widehat u-b\widehat w,
+ \qquad
+ \tau_{\mathrm f}(z):=a\mu(z)-\beta(z).
+\end{equation}
+Then
+\begin{equation}\label{eq:s6cusp-exceptional-kernel-imaginary-part}
+ \operatorname{Im}\tau_{\mathrm f}(z)
+ =\frac{\delta_z}{T_z}
+ =-\left(
+ p_z-\frac{6m_z^2}{T_z}
+ \right)>0,
+\end{equation}
+and there is an exact sequence of complex tori
+\begin{equation}\label{eq:s6cusp-exceptional-exact-sequence}
+ 0\longrightarrow E_{\tau_{\mathrm f}(z)}
+ \overset{\iota_{a,b,z}}{\longrightarrow}F_z
+ \overset{q_{a,b,z}}{\longrightarrow}E_{\tau(z)}
+ \longrightarrow0,
+ \qquad
+ \iota_{a,b,z}([w])=[(0,w)].
+\end{equation}
+On integral first homology, in the target basis represented by
+\((\tau(z),1)\), the two maps are
+\begin{align}
+ (q_{a,b,z})_*\widehat\gamma&=(a,b),&
+ (q_{a,b,z})_*\widehat u&=(1,0),&
+ (q_{a,b,z})_*\widehat w&=(0,1),&
+ (q_{a,b,z})_*\widehat\delta&=(0,0),
+ \label{eq:s6cusp-exceptional-homology-quotient}\\
+ (\iota_{a,b,z})_*[1]&=\widehat\delta,&
+ (\iota_{a,b,z})_*[\tau_{\mathrm f}(z)]
+ &=-\widehat\gamma_{a,b}.
+ \label{eq:s6cusp-exceptional-homology-inclusion}
+\end{align}
+The native bundle restricts to a degree-six line bundle:
+\begin{equation}\label{eq:s6cusp-native-restriction-degree}
+ c_1(\iota_{a,b,z}^*\mathcal L_{\eta,z})
+ =\iota_{a,b,z}^*\eta_z,
+ \qquad
+ \int_{E_{\tau_{\mathrm f}(z)}}
+ \iota_{a,b,z}^*\eta_z=6.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The first coordinates of the four columns of \(\Pi(z)\) are
+\begin{equation}\label{eq:s6cusp-first-coordinate-periods}
+ 6\mu(z),\qquad\tau(z),\qquad1,\qquad0.
+\end{equation}
+Thus \(\operatorname{pr}_1\) carries the source lattice into
+\(\Z\tau(z)+\Z\) exactly when
+\(6\mu(z)=a\tau(z)+b\) for integers \(a,b\), proving descent.  The
+universal-cover projection is surjective, and the two source periods
+\(\tau(z),1\) generate the complete target lattice, so the descended map is
+surjective and its kernel is connected.  If two pairs represented the same
+point, then
+\((a-a')\tau(z)+(b-b')=0\); taking imaginary parts gives \(a=a'\), and
+then \(b=b'\).  This proves uniqueness.
+
+The integral basis replacement
+\begin{equation}\label{eq:s6cusp-exceptional-unimodular-basis}
+ (\widehat\gamma,\widehat u,\widehat w,\widehat\delta)
+ \longmapsto
+ (\widehat\gamma_{a,b},\widehat u,
+  \widehat w,\widehat\delta)
+\end{equation}
+has determinant one, and
+\begin{equation}\label{eq:s6cusp-exceptional-kernel-periods}
+ \Pi(z)\widehat\gamma_{a,b}
+ =(0,\beta(z)-a\mu(z))=(0,-\tau_{\mathrm f}(z)),
+ \qquad
+ \Pi(z)\widehat\delta=(0,1).
+\end{equation}
+More explicitly, the kernel of the lattice homomorphism in
+\eqref{eq:s6cusp-exceptional-homology-quotient} consists of the vectors
+\begin{align*}
+ n_\gamma\widehat\gamma+n_u\widehat u
+ +n_w\widehat w+n_\delta\widehat\delta
+ \quad\text{with}\quad
+ an_\gamma+n_u=0,
+ \quad bn_\gamma+n_w=0,
+\end{align*}
+and hence equals
+\(\Z\widehat\gamma_{a,b}\oplus\Z\widehat\delta\).
+Equations \eqref{eq:s6cusp-exceptional-kernel-periods} therefore prove the
+map, kernel, image, and exactness in
+\eqref{eq:s6cusp-exceptional-exact-sequence}, as well as both formulas in
+\eqref{eq:s6cusp-exceptional-homology-inclusion}.
+
+Taking imaginary parts of the descent identity gives
+\(6m_z=aT_z\).  Consequently
+\begin{align*}
+ \operatorname{Im}\tau_{\mathrm f}(z)
+ &=am_z-p_z
+ =\frac{6m_z^2}{T_z}-p_z
+ =\frac{\delta_z}{T_z},
+\end{align*}
+which proves \eqref{eq:s6cusp-exceptional-kernel-imaginary-part} while
+retaining \eqref{eq:s6cusp-general-unchanged-expression}.
+
+The positively oriented homology basis of
+\(E_{\tau_{\mathrm f}(z)}\) is represented by
+\((1,\tau_{\mathrm f}(z))\), because
+\(\operatorname{Im}\tau_{\mathrm f}(z)>0\).  Using
+\eqref{eq:s6cusp-exceptional-homology-inclusion} and
+\(\eta=u\wedge w+6\gamma\wedge\delta\), one obtains
+\begin{align*}
+ \int_{E_{\tau_{\mathrm f}(z)}}\iota_{a,b,z}^*\eta_z
+ &=\eta_z(\widehat\delta,-\widehat\gamma_{a,b})\\
+ &=\eta_z\bigl(
+ \widehat\delta,
+ -\widehat\gamma+a\widehat u+b\widehat w
+ \bigr)=6.
+\end{align*}
+Naturality of the first Chern class under pullback gives the first equality
+in \eqref{eq:s6cusp-native-restriction-degree}, completing the proof.
+\end{proof}
+
+The restriction relation also recovers the T1 Landau operator with all
+coefficients fixed.  Write
+\(w=x^3+ix^4\) on the kernel line in the physical covering coordinates.
+Restricting \eqref{eq:s6cusp-native-physical-matrix} to
+\(x^1=x^2=0\) and using
+\(\delta_z=T_z\operatorname{Im}\tau_{\mathrm f}(z)\) gives
+\begin{equation}\label{eq:s6cusp-exceptional-restricted-curvature}
+ \iota_{a,b,z}^*\eta_z
+ =\frac{6T_z}{\delta_z}\,\dd x^3\wedge\dd x^4
+ =\frac{6}{\operatorname{Im}\tau_{\mathrm f}(z)}
+ \dd x^3\wedge\dd x^4.
+\end{equation}
+Thus the real magnetic field of the restricted unitary connection is
+\begin{equation}\label{eq:s6cusp-exceptional-magnetic-field}
+ \mathcal B_{\mathrm f}(z)
+ =\frac{12\pi}{\operatorname{Im}\tau_{\mathrm f}(z)}.
+\end{equation}
+
+\begin{corollary}[The T1 degree-six spectrum as an exact restriction]
+\label{cor:s6cusp-exceptional-landau-restriction}
+Let
+\begin{equation}\label{eq:s6cusp-exceptional-landau-Hamiltonian}
+ H_{\mathrm f,z}:=\frac12
+ (\iota_{a,b,z}^*\nabla_{\eta,z})^*
+ (\iota_{a,b,z}^*\nabla_{\eta,z})
+\end{equation}
+be the Friedrichs operator on
+\(L^2(E_{\tau_{\mathrm f}(z)},
+\iota_{a,b,z}^*\mathcal L_{\eta,z})\), with the metric induced from the
+vertical complex line in \(\C^2\).  Then
+\begin{equation}\label{eq:s6cusp-exceptional-landau-spectrum}
+ \operatorname{Spec}(H_{\mathrm f,z})
+ =\left\{
+ \frac{12\pi}{\operatorname{Im}\tau_{\mathrm f}(z)}
+ \left(n+\frac12\right):n\in\Z_{\ge0}
+ \right\}.
+\end{equation}
+Every displayed level has complex multiplicity six.  Subtracting the exact
+ground energy
+\(6\pi/\operatorname{Im}\tau_{\mathrm f}(z)\) produces levels
+\begin{equation}\label{eq:s6cusp-exceptional-ground-shifted-spectrum}
+ \left\{
+ \frac{12\pi n}{\operatorname{Im}\tau_{\mathrm f}(z)}:
+ n\in\Z_{\ge0}
+ \right\},
+\end{equation}
+with a six-dimensional kernel and adjacent-level spacing
+\(12\pi/\operatorname{Im}\tau_{\mathrm f}(z)\).
+\end{corollary}
+
+\begin{proof}
+Let \(\Pi_3,\Pi_4\) be the self-adjoint covariant momenta on the restricted
+bundle.  Equations \eqref{eq:s6cusp-exceptional-restricted-curvature}--
+\eqref{eq:s6cusp-exceptional-magnetic-field} give
+\begin{equation}\label{eq:s6cusp-exceptional-momentum-commutator}
+ [\Pi_3,\Pi_4]=i\mathcal B_{\mathrm f}(z).
+\end{equation}
+Define
+\begin{equation}\label{eq:s6cusp-exceptional-ladder}
+ \mathfrak a_{\mathrm f}
+ :=\frac{\Pi_3+i\Pi_4}{\sqrt{2\mathcal B_{\mathrm f}(z)}},
+ \qquad
+ \mathfrak a_{\mathrm f}^*
+ :=\frac{\Pi_3-i\Pi_4}{\sqrt{2\mathcal B_{\mathrm f}(z)}}.
+\end{equation}
+Direct multiplication gives
+\begin{equation}\label{eq:s6cusp-exceptional-oscillator-factorization}
+ [\mathfrak a_{\mathrm f},\mathfrak a_{\mathrm f}^*]=I,
+ \qquad
+ H_{\mathrm f,z}
+ =\mathcal B_{\mathrm f}(z)
+ \left(\mathfrak a_{\mathrm f}^*\mathfrak a_{\mathrm f}
+ +\frac12I\right).
+\end{equation}
+The lowering argument used for the two native number operators above proves
+that the number spectrum is contained in \(\Z_{\ge0}\), and the normalized
+raising and lowering maps identify every level with the ground space.  The
+ground equation \(\mathfrak a_{\mathrm f}s=0\) is the covariant
+\(\bar\partial\)-equation for the standard complex structure of
+\(E_{\tau_{\mathrm f}(z)}\).  By
+\eqref{eq:s6cusp-native-restriction-degree}, the holomorphic bundle has
+degree six.  Riemann--Roch on the elliptic curve gives
+\(h^0-h^1=6\), and Serre duality identifies \(h^1\) with the space of
+sections of the degree \(-6\) dual bundle, which is zero: a nonzero section
+would have an effective zero divisor of negative degree.  Hence the ground
+space has dimension six.  Substitution of
+\eqref{eq:s6cusp-exceptional-magnetic-field} into
+\eqref{eq:s6cusp-exceptional-oscillator-factorization} proves every level,
+multiplicity, shift, kernel, and spacing asserted.
+\end{proof}
+
+\begin{theorem}[Exact transformation and finiteness of the descent locus]
+\label{thm:s6cusp-descent-locus-finite}
+The set \(\mathscr D\) is invariant under the source deck group.  More
+precisely, the source laws for \(g_0\) and \(g_2\) induce the bijections
+\begin{align}
+ g_0:\mathscr D_{a,b}&\longrightarrow\mathscr D_{a,a+b},
+ & (a,b)&\longmapsto(a,a+b),
+ \label{eq:s6cusp-descent-pair-g0}\\
+ g_2:\mathscr D_{a,b}&\longrightarrow\mathscr D_{-b,a+6},
+ & (a,b)&\longmapsto(-b,a+6).
+ \label{eq:s6cusp-descent-pair-g2}
+\end{align}
+There is a punctured neighbourhood of the distinguished cusp whose inverse
+image contains no point of \(\mathscr D\), and the image
+\begin{equation}\label{eq:s6cusp-descent-finite-image}
+ \pi(\mathscr D)\subset B\setminus\{p_0\}
+\end{equation}
+is finite.
+\end{theorem}
+
+\begin{proof}
+The directly sourced transformation laws are
+\begin{equation}\label{eq:s6cusp-descent-source-laws}
+ \tau\circ g_0=\tau-1,
+ \quad \mu\circ g_0=\mu,
+ \qquad
+ \tau\circ g_2=-\frac1\tau,
+ \quad \mu\circ g_2=1+\frac\mu\tau.
+\end{equation}
+If \(6\mu=a\tau+b\), then
+\begin{align*}
+ 6\mu(g_0z)
+ &=a\tau(g_0z)+(a+b),\\
+ 6\mu(g_2z)
+ &=6+a+\frac b\tau
+ =(-b)\tau(g_2z)+(a+6).
+\end{align*}
+The affine maps on pairs have integral inverses
+\begin{equation}\label{eq:s6cusp-descent-pair-inverses}
+ (a,b)\longmapsto(a,b-a),
+ \qquad
+ (a,b)\longmapsto(b-6,-a),
+\end{equation}
+respectively.  Since \(g_0,g_2\) generate the source deck group, these
+formulas prove invariance and the asserted bijections.
+
+No function
+\begin{equation}\label{eq:s6cusp-descent-holomorphic-function}
+ f_{a,b}:=6\mu-a\tau-b
+\end{equation}
+vanishes identically.  Indeed, applying \(g_0\) to an identity
+\(f_{a,b}=0\) and subtracting the original identity gives \(a=0\).
+Then \(6\mu=b\) is constant, whereas applying \(g_2\) gives
+\begin{equation}\label{eq:s6cusp-descent-constant-contradiction}
+ b=6+\frac b\tau,
+ \qquad
+ (b-6)\tau=b,
+\end{equation}
+which contradicts the nonconstancy of \(\tau\) proved by its source modular
+relation.
+
+Suppose points of \(\mathscr D\) occurred arbitrarily close to the cusp in
+the quotient.  Invariance permits representatives
+\(z_j\in\mathscr D_{a_j,b_j}\) in the distinguished cusp component with
+\(t_c(z_j)\to0\).  Taking imaginary parts gives the exact integer identity
+\begin{equation}\label{eq:s6cusp-descent-integer-a}
+ a_j=\frac{6\operatorname{Im}\mu(z_j)}
+ {\operatorname{Im}\tau(z_j)}.
+\end{equation}
+The numerator remains bounded and the denominator tends to infinity, so
+\(a_j=0\) for all sufficiently large \(j\).  Then
+\(6\mu(z_j)=b_j\in\Z\).  Boundedness of \(\mu\) makes the integer sequence
+\((b_j)\) bounded; after taking a subsequence it is one constant \(b\).
+The source function \(\mu\) descends on the cusp component to a holomorphic
+function of \(t_c\) extending through \(t_c=0\).  Its function
+ \(6\mu(t_c)-b\) has zeros accumulating at that interior point, so it
+ vanishes identically on the cusp component.  Pulling the identity back to
+ the connected open subset of \(\mathfrak h_z\) represented by that component
+ and applying analytic continuation on the connected surface
+ \(\mathfrak h_z\), one obtains \(f_{0,b}\equiv0\) on all of
+ \(\mathfrak h_z\).  This contradicts
+ \eqref{eq:s6cusp-descent-holomorphic-function} and proves the cusp exclusion.
+
+Delete a smaller cusp horodisc from a closed source fundamental triangle.
+The remainder \(K\subset\mathfrak h_z\) is compact and represents every
+point of the quotient outside the excluded cusp neighbourhood.  Define the
+finite constants
+\begin{equation}\label{eq:s6cusp-descent-compact-bounds}
+ M_\mu:=\max_K|\mu|,
+ \qquad
+ M_\tau:=\max_K|\tau|,
+ \qquad
+ \varepsilon_\tau:=\min_K\operatorname{Im}\tau>0.
+\end{equation}
+At a zero of \(f_{a,b}\) in \(K\), equations
+\begin{equation}\label{eq:s6cusp-descent-pair-bounds}
+ |a|\le\frac{6M_\mu}{\varepsilon_\tau},
+ \qquad
+ |b|=|6\mu-a\tau|
+ \le6M_\mu+|a|M_\tau
+\end{equation}
+leave only finitely many integer pairs.  For each retained pair,
+\(f_{a,b}\) is a nonzero holomorphic function on a neighbourhood of the
+compact set \(K\), so its zeros in \(K\) are finite by the identity theorem.
+The union over the finite pair set is finite, and the cusp exclusion proves
+\eqref{eq:s6cusp-descent-finite-image}.
+\end{proof}
+
+The exact conclusion is therefore twofold.  The native four-dimensional
+bundle \(\mathcal L_{\eta,z}\) and its spectrum do not require membership in
+\(\mathscr D\).  Membership in \(\mathscr D\) is exactly what supplies the
+additional quotient map \eqref{eq:s6cusp-first-coordinate-quotient}; on that
+finite locus, the exceptional T1 degree-six bundle and Landau operator are
+the restriction in \eqref{eq:s6cusp-native-restriction-degree}--
+\eqref{eq:s6cusp-exceptional-landau-Hamiltonian}.  Since
+\(\mathscr D\) is absent from a cusp neighbourhood, the exceptional
+two-dimensional spacing in
+\eqref{eq:s6cusp-exceptional-ground-shifted-spectrum} has no cusp sequence,
+whereas the native four-dimensional gap
+\eqref{eq:s6cusp-native-gap-exact-eventual} does tend to zero.
+
+\subsection{The native \texorpdfstring{\(T^2\times\R^2\)}{T2 x R2}
+pointed limit}
+
+The fixed third and fourth columns of \(P_R\) make the native cusp
+two-dimensional at infinity unless those two cycles are also unrolled.
+This subsection constructs the unrolling as an actual finite holomorphic
+cover and proves its compatibility with the source monodromy.
+
+\begin{proposition}[Universal cover, quotient torus, and native pointed limit]
+\label{prop:s6cusp-native-limit}
+The quotient map
+\begin{equation}\label{eq:s6cusp-universal-cover}
+ \upsilon_R:\R^4\longrightarrow F_R,\qquad x\longmapsto[x]
+\end{equation}
+is the universal covering map and
+\[
+ \ker\upsilon_R=P_R\Z^4.
+\]
+Under \(\R^4=\C^2\), it is holomorphic.  Define
+\begin{equation}\label{eq:s6cusp-BR-matrix}
+ B_R:=
+ \begin{pmatrix}
+ 6m_R&T_R\\
+ p_R&m_R
+ \end{pmatrix},
+ \qquad
+ \Sigma_R:=\R^2/B_R\Z^2,
+\end{equation}
+and
+\begin{equation}\label{eq:s6cusp-fixed-subtorus}
+ K_R:=
+ \left\{[(x^1,0,x^3,0)]:
+ (x^1,x^3)\in\R^2\right\}\subset F_R.
+\end{equation}
+Then
+\begin{equation}\label{eq:s6cusp-native-exact-sequence}
+ 0\longrightarrow K_R
+ \longrightarrow F_R
+ \overset{\pi_R}{\longrightarrow}\Sigma_R
+ \longrightarrow0,
+ \qquad
+ \pi_R([x])=[(x^2,x^4)]
+\end{equation}
+is an exact sequence of real tori, with
+\[
+ K_R\cong\R^2/\Z^2.
+\]
+In particular,
+\begin{equation}\label{eq:s6cusp-native-systole-upper}
+ \operatorname{sys}(F_R)\le1,\qquad
+ \operatorname{inj}(F_R)\le\frac12.
+\end{equation}
+
+Let
+\[
+ F_\infty^{\mathrm{native}}
+ :=
+ \R^4/
+ \Z\langle(1,0,0,0),(0,0,1,0)\rangle
+ \cong T^2\times\R^2
+\]
+with its quotient Euclidean metric and basepoint zero.  Then
+\begin{equation}\label{eq:s6cusp-native-pointed-limit}
+ (F_R,[0])\longrightarrow
+ (F_\infty^{\mathrm{native}},[0])
+\end{equation}
+in the pointed smooth and pointed local-isometric senses as
+\(R\to\infty\).
+\end{proposition}
+
+\begin{proof}
+The first assertion is the defining quotient of
+\eqref{eq:s6cusp-flat-fibre}; the action of \(P_R\Z^4\) on \(\R^4\) is
+free and properly discontinuous, and \(\R^4\) is simply connected.
+The same quotient is \(\C^2/\Pi_R\Lambda\), so the quotient map is
+holomorphic.
+
+Projection to the second and fourth real coordinates sends the first two
+columns of \(P_R\) to the two columns of \(B_R\), and sends its third and
+fourth columns to zero.  Hence \(\pi_R\) is well defined and surjective.
+If \(\pi_R([x])=0\), there is \(n\in\Z^2\) for which
+\((x^2,x^4)^{\mathsf T}=B_Rn\).  Subtracting from \(x\) the corresponding
+integer combination of the first two columns of \(P_R\) leaves
+\((v^1,0,v^3,0)\), proving \(\ker\pi_R=K_R\).
+If \((v^1,0,v^3,0)\in P_R\Z^4\), invertibility of \(B_R\), whose
+determinant is \(\delta_R>0\), forces the first two lattice coefficients
+to vanish.  The remaining two columns are
+\((1,0,0,0)\) and \((0,0,1,0)\), so the kernel of
+\(\R^2\to K_R\) is exactly \(\Z^2\).  This proves every map, kernel, and
+image in \eqref{eq:s6cusp-native-exact-sequence}.  The two displayed unit
+periods prove \eqref{eq:s6cusp-native-systole-upper}; for a flat torus the
+injectivity radius is one half its shortest period.
+
+Reorder the covering coordinates as
+\((x^1,x^3;x^2,x^4)\), and put
+\begin{equation}\label{eq:s6cusp-AR-matrix}
+ A_R:=
+ \begin{pmatrix}
+ 6a_R&u_R\\
+ c_R^{\mathrm{re}}&a_R
+ \end{pmatrix}.
+\end{equation}
+Every native period has the exact form
+\begin{equation}\label{eq:s6cusp-native-period-block-form}
+ \lambda_R(n,m)=
+ \begin{pmatrix}A_Rn+m\\B_Rn\end{pmatrix},
+ \qquad n,m\in\Z^2.
+\end{equation}
+By \eqref{eq:s6cusp-imaginary-identities},
+\begin{equation}\label{eq:s6cusp-BR-cusp-splitting}
+ B_R=RJ+C_R,\qquad
+ J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+ C_R=
+ \begin{pmatrix}
+ 6m_R&h_R\\
+ d_R-h_R&m_R
+ \end{pmatrix}.
+\end{equation}
+Holomorphy at \(q_R=0\) makes \(A_R\) and \(C_R\) bounded.  Choose
+\begin{equation}\label{eq:s6cusp-Cstar}
+ C_*:=\sup_{R\ge R_0}\lVert C_R\rVert_{\mathrm{op}}<\infty.
+\end{equation}
+Since \(J\) is orthogonal,
+\begin{equation}\label{eq:s6cusp-BR-lower-bound}
+ \lVert B_Rn\rVert
+ \ge(R-C_*)\lVert n\rVert.
+\end{equation}
+Thus every period not in the fixed lattice
+\(\Z\langle(1,0,0,0),(0,0,1,0)\rangle\) has length at least
+\(R-C_*\).  On each fixed-radius ball, all such translations disappear
+for sufficiently large \(R\), while the two fixed translations remain
+exactly.  Quotient distances on that ball therefore agree with the
+distances in \(F_\infty^{\mathrm{native}}\), which proves
+\eqref{eq:s6cusp-native-pointed-limit}.
+\end{proof}
+
+\subsection{A decomposable \texorpdfstring{\(SU(2)\)}{SU(2)}
+Yang--Mills saddle and its exact negative mode}
+\label{subsec:s6cusp-reducible-su2-saddle}
+
+The third-turn calculation uses a second integral class on the same marked
+four-torus.  Its relationship to the native class \(\eta_R\) will be computed
+at the end of this subsection.  Equations
+\eqref{eq:s6cusp-integral-coframe} and
+\eqref{eq:s6cusp-soft-dual-block} give
+\begin{align}
+ \vartheta_R^1
+ &=\frac{m_R\,\dd x^2-T_R\,\dd x^4}{\delta_R},&
+ \vartheta_R^2
+ &=\frac{-p_R\,\dd x^2+6m_R\,\dd x^4}{\delta_R},
+ \label{eq:s6cusp-decomposable-coframe}\\
+ \xi_R:=\vartheta_R^1\wedge\vartheta_R^2
+ &=\frac1{\delta_R}\,\dd x^2\wedge\dd x^4.
+ \label{eq:s6cusp-decomposable-flux}
+\end{align}
+The coefficient in \eqref{eq:s6cusp-decomposable-flux} is the exact
+determinant
+\[
+ \frac{6m_R^2-p_RT_R}{\delta_R^2}=\frac1{\delta_R};
+\]
+no period entry has been removed.
+
+\begin{proposition}[Explicit line bundle, null clutch, and trivial
+\(SU(2)\) carrier]
+\label{prop:s6cusp-su2-null-clutch}
+On \(\R^4_y\times\C\), impose
+\begin{align}
+ (y,z)&\sim(y+e_1,e^{-2\pi i y^2}z),
+ \label{eq:s6cusp-decomposable-line-clutch}\\
+ (y,z)&\sim(y+e_j,z),\qquad j=2,3,4.
+ \label{eq:s6cusp-decomposable-line-trivial-clutches}
+\end{align}
+The quotient is a line bundle \(\mathcal M_R\to F_R\), and
+\begin{equation}\label{eq:s6cusp-decomposable-line-connection}
+ \nabla^{\mathcal M_R}:=\dd+2\pi i y^1\dd y^2
+\end{equation}
+descends with
+\begin{equation}\label{eq:s6cusp-decomposable-line-curvature}
+ F_{\nabla^{\mathcal M_R}}=2\pi i\xi_R,
+ \qquad
+ c_1(\mathcal M_R)=-[\xi_R]
+\end{equation}
+under the convention \(c_1=[iF/(2\pi)]\).
+
+The determinant-one bundle
+\begin{equation}\label{eq:s6cusp-reducible-su2-bundle}
+ \mathcal E_R:=\mathcal M_R\oplus\mathcal M_R^{-1}
+\end{equation}
+is a topologically trivial \(SU(2)\) bundle.  More precisely, its only
+nonidentity clutch map is
+\begin{equation}\label{eq:s6cusp-su2-clutch-loop}
+ G(v):=
+ \begin{pmatrix}e^{-2\pi i v}&0\\0&e^{2\pi i v}\end{pmatrix},
+ \qquad v\in\R/\Z,
+\end{equation}
+and, under \(SU(2)\simeq S^3\), the following displayed homotopy contracts
+it to the identity:
+\begin{equation}\label{eq:s6cusp-quaternion-su2-map}
+ \rho(a+b\mathbf i+c\mathbf j+d\mathbf k)
+ :=
+ \begin{pmatrix}
+  a+di&c+bi\\
+  -c+bi&a-di
+ \end{pmatrix}.
+\end{equation}
+For a unit quaternion this matrix is in \(SU(2)\), and
+\(\rho(\cos(2\pi v)-\mathbf k\sin(2\pi v))=G(v)\).  Define the
+quaternion-valued map
+\begin{equation}\label{eq:s6cusp-su2-explicit-null-homotopy-quaternion}
+ \mathfrak q(s,v):=
+ \begin{cases}
+  \cos(\pi s)
+  \bigl(\cos(2\pi v)-\mathbf k\sin(2\pi v)\bigr)
+  +\sin(\pi s)\mathbf i,
+  &0\le s\le\frac12,\\[1mm]
+  \cos\!\left(\dfrac{\pi(2s-1)}2\right)\mathbf i
+  +\sin\!\left(\dfrac{\pi(2s-1)}2\right)1,
+  &\frac12\le s\le1.
+ \end{cases}
+\end{equation}
+The required matrix-valued clutch homotopy is the typed composite
+\begin{equation}\label{eq:s6cusp-su2-explicit-null-homotopy}
+ \mathscr K:[0,1]\times(\R/\Z)\longrightarrow SU(2),
+ \qquad
+ \mathscr K(s,v):=\rho\bigl(\mathfrak q(s,v)\bigr).
+\end{equation}
+It obeys \(\mathscr K(0,v)=G(v)\),
+\(\mathscr K(1,v)=I_2\), and is periodic in \(v\).
+\end{proposition}
+
+\begin{proof}
+The clutch factors commute and are unchanged by the three translations for
+which they are declared trivial, so they define the quotient line bundle.
+For a coefficient section one has
+\(s(y+e_1)=e^{-2\pi i y^2}s(y)\).  The connection one-form obeys
+\[
+ 2\pi i(y^1+1)\dd y^2
+ =2\pi i y^1\dd y^2
+ -(e^{-2\pi i y^2})^{-1}\dd(e^{-2\pi i y^2}),
+\]
+which is exactly its descent law.  Differentiation gives
+\(F=2\pi i\dd y^1\wedge\dd y^2=2\pi i\xi_R\), and the stated Chern
+class follows from the fixed convention.
+
+The determinant of \(G(v)\) is one.  Both pieces of
+\eqref{eq:s6cusp-su2-explicit-null-homotopy-quaternion} have quaternion norm one; at
+\(s=1/2\) they both equal \(\mathbf i\), so the formula is continuous.
+The first piece starts at the quaternion corresponding to
+\eqref{eq:s6cusp-su2-clutch-loop}, and the second ends at one.
+For \(a^2+b^2+c^2+d^2=1\), direct multiplication gives
+\(\rho(q)^*\rho(q)=I\) and
+\(\det\rho(q)=a^2+b^2+c^2+d^2=1\), which verifies the stated
+quaternion--matrix identification on every point of the homotopy.
+
+For an explicit bundle trivialisation, use the base marking
+\begin{equation}\label{eq:s6cusp-Sigma-marking}
+ \overline\Phi_R:\R^2/\Z^2\longrightarrow\Sigma_R,
+ \qquad [u,v]\longmapsto[B_R(u,v)^{\mathsf T}],
+\end{equation}
+whose inverse is induced by \(B_R^{-1}\).  The bundle
+\(\mathcal E_R\) is the pullback under \(\pi_R\) of the rank-two bundle
+on \(\Sigma_R\) obtained from the cylinder
+\([0,1]\times S^1\times\C^2\) by
+\((0,v,z)\sim(1,v,G(v)z)\).  The map
+\[
+ [s,v,z]\longmapsto
+ \bigl([s,v],\mathscr K(s,v)z\bigr)
+\]
+is well defined at the glued boundary because
+\(\mathscr K(0,v)=G(v)\) and \(\mathscr K(1,v)=1\); its fibrewise inverse
+uses \(\mathscr K(s,v)^{-1}\).  It is therefore an explicit trivialisation
+of the base bundle, and pulling it back by \(\pi_R\) trivialises
+\(\mathcal E_R\).  In agreement with this construction,
+\[
+ c_2(\mathcal E_R)
+ =-c_1(\mathcal M_R)^2=-[\xi_R]^2=0
+\]
+because \(\xi_R\wedge\xi_R=0\).
+\end{proof}
+
+Put
+\begin{equation}\label{eq:s6cusp-su2-Cartan-generator}
+ H:=\begin{pmatrix}i&0\\0&-i\end{pmatrix},
+ \qquad
+ \langle X,Y\rangle_{\mathfrak{su}(2)}
+ :=-\frac12\operatorname{Tr}(XY),
+\end{equation}
+so that \(\langle H,H\rangle_{\mathfrak{su}(2)}=1\).  In the diagonal
+clutch frame, the direct-sum connection on \(\mathcal E_R\) has
+connection one-form and curvature
+\begin{align}
+ A_R^{\mathrm{red}}&:=2\pi y^1\dd y^2\,H,
+ \label{eq:s6cusp-reducible-connection}\\
+ F_R^{\mathrm{red}}
+ &=2\pi\xi_R H
+ =\frac{2\pi}{\delta_R}\dd x^2\wedge\dd x^4\,H.
+ \label{eq:s6cusp-reducible-curvature}
+\end{align}
+
+\begin{theorem}[Exact nonflat Yang--Mills critical point and action]
+\label{thm:s6cusp-reducible-yang-mills-critical}
+The connection \(A_R^{\mathrm{red}}\) is nonflat and satisfies
+\begin{equation}\label{eq:s6cusp-reducible-yang-mills-equation}
+ \dd_{A_R^{\mathrm{red}}}F_R^{\mathrm{red}}=0,
+ \qquad
+ \dd_{A_R^{\mathrm{red}}}^*F_R^{\mathrm{red}}=0.
+\end{equation}
+Its Yang--Mills action in the convention
+\eqref{eq:s6cusp-yang-mills-action} is
+\begin{align}
+ \operatorname{YM}_R(A_R^{\mathrm{red}})
+ &=\frac{2\pi^2}{g_{\mathrm{YM}}^2\delta_R}
+ \label{eq:s6cusp-reducible-action-delta}\\
+ &=-\frac{2\pi^2}{g_{\mathrm{YM}}^2
+ \operatorname{Im}\tau_R
+ \left(
+  \operatorname{Im}\beta_R-
+  \dfrac{6(\operatorname{Im}\mu_R)^2}
+  {\operatorname{Im}\tau_R}
+ \right)}.
+ \label{eq:s6cusp-reducible-action-unchanged}
+\end{align}
+Along the source radial cusp it has the two-term expansion
+\begin{equation}\label{eq:s6cusp-reducible-action-cusp}
+ \operatorname{YM}_R(A_R^{\mathrm{red}})
+ =\frac{2\pi^2}{g_{\mathrm{YM}}^2R^2}
+ \left[
+  1-\frac{2h_0-d_0}{R}+O(R^{-2})
+ \right].
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The coefficient in \eqref{eq:s6cusp-reducible-curvature} is nonzero because
+\(\delta_R>0\).  It is constant in the physical covering coordinates at
+fixed \(R\), and both \(A_R^{\mathrm{red}}\) and
+\(F_R^{\mathrm{red}}\) take values in the one-dimensional Cartan algebra
+\(\R H\).  Hence the exterior derivatives of the curvature and its Hodge
+dual vanish and all commutator terms vanish.  This proves both equations in
+\eqref{eq:s6cusp-reducible-yang-mills-equation}.
+
+The Euclidean norm of \(\dd x^2\wedge\dd x^4\,H\) is one and
+\(\operatorname{Vol}(F_R,g_R)=|\det P_R|=\delta_R\).  Direct integration
+therefore gives
+\[
+ \frac1{2g_{\mathrm{YM}}^2}
+ \left(\frac{2\pi}{\delta_R}\right)^2\delta_R
+ =\frac{2\pi^2}{g_{\mathrm{YM}}^2\delta_R},
+\]
+which is \eqref{eq:s6cusp-reducible-action-delta}.  Equation
+\eqref{eq:s6cusp-unchanged-expression-delta} proves
+\eqref{eq:s6cusp-reducible-action-unchanged} without changing the
+parenthesis.  Finally, invert the complete expansion
+\eqref{eq:s6cusp-delta-two-term-expansion}; the coefficient of \(R^{-1}\)
+in the bracket is exactly \(-(2h_0-d_0)\), proving
+\eqref{eq:s6cusp-reducible-action-cusp}.
+\end{proof}
+
+To construct the negative mode rather than infer it from the shape of a
+known formula, define the two physical base periods and their modulus by
+\begin{equation}\label{eq:s6cusp-Sigma-complex-periods}
+ \omega_{1,R}:=6m_R+ip_R,
+ \qquad
+ \omega_{2,R}:=T_R+im_R,
+ \qquad
+ \tau_{\Sigma,R}:=\frac{\omega_{2,R}}{\omega_{1,R}}.
+\end{equation}
+Since \(\omega_{1,R}\ne0\), direct multiplication gives
+\begin{equation}\label{eq:s6cusp-Sigma-modulus-positive}
+ \operatorname{Im}\tau_{\Sigma,R}
+ =\frac{6m_R^2-p_RT_R}{|\omega_{1,R}|^2}
+ =\frac{\delta_R}{|\omega_{1,R}|^2}>0.
+\end{equation}
+In the base marking coordinates \((u,v)=(y^1,y^2)\),
+\begin{equation}\label{eq:s6cusp-Sigma-complex-coordinate}
+ z_{\Sigma}:=x^2+ix^4
+ =\omega_{1,R}(u+\tau_{\Sigma,R}v).
+\end{equation}
+The \(E_+\)-root connection induced by
+\eqref{eq:s6cusp-reducible-connection} is the connection on
+\(\mathcal M_R^2\) with
+\begin{equation}\label{eq:s6cusp-root-covariant-derivatives}
+ D_u^+:=\partial_u,
+ \qquad
+ D_v^+:=\partial_v+4\pi i u.
+\end{equation}
+
+\begin{proposition}[Two explicit lowest root-Landau sections]
+\label{prop:s6cusp-explicit-root-ground-sections}
+For \(r\in\{0,1\}\), the normally convergent series
+\begin{equation}\label{eq:s6cusp-root-ground-theta-series}
+ \phi_{r,R}(u,v):=
+ \sum_{k\in\Z}
+ \exp\!\left(
+  \frac{2\pi i}{\overline{\tau_{\Sigma,R}}}
+  \bigl((u+k)^2+r(u+k)\bigr)
+  +2\pi i(r+2k)v
+ \right)
+\end{equation}
+obey
+\begin{align}
+ \phi_{r,R}(u+1,v)&=e^{-4\pi i v}\phi_{r,R}(u,v),&
+ \phi_{r,R}(u,v+1)&=\phi_{r,R}(u,v),
+ \label{eq:s6cusp-root-ground-automorphy}\\
+ (D_v^+-\overline{\tau_{\Sigma,R}}D_u^+)
+ \phi_{r,R}&=0.
+ \label{eq:s6cusp-root-ground-equation}
+\end{align}
+They form a basis of the complete solution space of
+\eqref{eq:s6cusp-root-ground-equation} with automorphy
+\eqref{eq:s6cusp-root-ground-automorphy}.
+
+Let \(D_2^+,D_4^+\) be the same connection in the physical coordinates
+\((x^2,x^4)\), and put
+\begin{equation}\label{eq:s6cusp-root-magnetic-field}
+ \mathcal B_R^{\mathrm{root}}:=\frac{4\pi}{\delta_R}.
+\end{equation}
+Then each pullback \(\pi_R^*\phi_{r,R}\) satisfies
+\begin{align}
+ (D_2^+-iD_4^+)\pi_R^*\phi_{r,R}&=0,
+ \label{eq:s6cusp-root-physical-ground-equation}\\
+ -\sum_{\mu=1}^4(D_\mu^+)^2\pi_R^*\phi_{r,R}
+ &=\mathcal B_R^{\mathrm{root}}\pi_R^*\phi_{r,R}.
+ \label{eq:s6cusp-root-scalar-ground-energy}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+The real part of the quadratic coefficient in the exponent is
+\[
+ \operatorname{Re}\frac{2\pi i}{\overline{\tau_{\Sigma,R}}}
+ =-\frac{2\pi\operatorname{Im}\tau_{\Sigma,R}}
+ {|\tau_{\Sigma,R}|^2}<0.
+\]
+The series and every termwise derivative consequently converge uniformly on
+compact subsets of \(\R^2\).  Replacing \(k\) by \(k+1\) proves the first
+automorphy law, while every frequency \(r+2k\) is integral, proving the
+second.  On each summand, \(D_v^+\) multiplies by
+\(2\pi i(r+2k+2u)\), and
+\(\overline{\tau_{\Sigma,R}}D_u^+\) multiplies by that same quantity.
+This proves \eqref{eq:s6cusp-root-ground-equation} term by term.
+
+Conversely, expand any smooth solution as
+\(\phi(u,v)=\sum_{n\in\Z}f_n(u)e^{2\pi inv}\).  The equation gives the
+complete scalar ordinary differential equation
+\begin{equation}\label{eq:s6cusp-root-fourier-ode}
+ f_n'(u)=\frac{2\pi i(n+2u)}
+ {\overline{\tau_{\Sigma,R}}}f_n(u),
+\end{equation}
+and hence
+\[
+ f_n(u)=C_n
+ \exp\!\left(
+  \frac{2\pi i}{\overline{\tau_{\Sigma,R}}}(nu+u^2)
+ \right).
+\]
+The first automorphy law is equivalent to
+\begin{equation}\label{eq:s6cusp-root-coefficient-recurrence}
+ C_{n+2}=C_n
+ \exp\!\left(
+  \frac{2\pi i(n+1)}{\overline{\tau_{\Sigma,R}}}
+ \right).
+\end{equation}
+Thus all coefficients are determined by \((C_0,C_1)\).  Choosing
+\((C_0,C_1)=(1,0)\) and \((0,1)\) yields precisely the two series in
+\eqref{eq:s6cusp-root-ground-theta-series}.  Their Fourier supports have
+opposite parity, so they are nonzero and linearly independent; they are
+therefore a basis.
+
+Equation \eqref{eq:s6cusp-Sigma-complex-coordinate} gives
+\begin{equation}\label{eq:s6cusp-root-coordinate-derivative-map}
+ D_2^+-iD_4^+
+ =\frac{2}{\omega_{1,R}
+ (\tau_{\Sigma,R}-\overline{\tau_{\Sigma,R}})}
+ (D_v^+-\overline{\tau_{\Sigma,R}}D_u^+),
+\end{equation}
+which proves \eqref{eq:s6cusp-root-physical-ground-equation}.  The root
+curvature is
+\[
+ [D_2^+,D_4^+]
+ =\frac{4\pi i}{\delta_R}
+ =i\mathcal B_R^{\mathrm{root}}.
+\]
+With \(\Pi_j^+:=-iD_j^+\), define
+\[
+ \mathfrak a_R^+
+ :=\frac{\Pi_2^+-i\Pi_4^+}
+ {\sqrt{2\mathcal B_R^{\mathrm{root}}}},
+ \qquad
+ (\mathfrak a_R^+)^*
+ :=\frac{\Pi_2^++i\Pi_4^+}
+ {\sqrt{2\mathcal B_R^{\mathrm{root}}}}.
+\]
+Direct multiplication gives
+\begin{equation}\label{eq:s6cusp-root-scalar-factorisation}
+ [\mathfrak a_R^+,(\mathfrak a_R^+)^*]=I,
+ \qquad
+ -(D_2^+)^2-(D_4^+)^2
+ =2\mathcal B_R^{\mathrm{root}}
+ \left((\mathfrak a_R^+)^*\mathfrak a_R^++\frac12I\right).
+\end{equation}
+The pullbacks are constant and covariantly constant in the
+\(x^1,x^3\) directions.  Their lowering equation and
+\eqref{eq:s6cusp-root-scalar-factorisation} prove
+\eqref{eq:s6cusp-root-scalar-ground-energy}.
+\end{proof}
+
+Let
+\begin{equation}\label{eq:s6cusp-root-matrices}
+ E_+:=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+ \qquad
+ E_-:=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
+\end{equation}
+Then
+\begin{equation}\label{eq:s6cusp-adjoint-root-splitting}
+ \operatorname{ad}(\mathcal E_R)_{\C}
+ =\underline\C H\oplus\mathcal M_R^2E_+
+ \oplus\mathcal M_R^{-2}E_-,
+ \qquad
+ [H,E_+]=2iE_+,
+ \quad [H,E_-]=-2iE_-.
+\end{equation}
+
+\begin{theorem}[Exact background-gauge negative mode]
+\label{thm:s6cusp-reducible-negative-mode}
+Let
+\begin{align}
+ \mathscr H_R^{(1)}
+ &:={L^2\!\left(F_R;
+ T^*F_R\otimes_{\R}\operatorname{ad}(\mathcal E_R)\right)}_{\C},
+ \label{eq:s6cusp-background-hilbert-space}\\
+ \mathscr D_R^{\mathrm{bg}}
+ &:=\left\{a\in
+ {H^2\!\left(F_R;
+ T^*F_R\otimes_{\R}\operatorname{ad}(\mathcal E_R)\right)}_{\C}:
+ \dd_{A_R^{\mathrm{red}}}^*a=0\right\}.
+ \label{eq:s6cusp-background-sobolev-domain}
+\end{align}
+Relative to the unscaled \(L^2\) inner product on
+\(\mathscr H_R^{(1)}\), the normalized Yang--Mills Jacobi differential
+expression on \(\mathscr D_R^{\mathrm{bg}}\) is
+\begin{equation}\label{eq:s6cusp-background-jacobi-operator}
+ (\mathcal M_R^{\mathrm{red}}a)_\nu
+ =-D^\mu D_\mu a_\nu
+ -2[F^{\mathrm{red}}_{R,\nu\mu},a_\mu].
+\end{equation}
+For \(r=0,1\), define the smooth complex adjoint-valued one-form
+\begin{equation}\label{eq:s6cusp-explicit-negative-root-mode}
+ a_{r,R}^+
+ :=(\pi_R^*\phi_{r,R})
+ (\dd x^2-i\dd x^4)E_+.
+\end{equation}
+Then
+\begin{align}
+ \dd_{A_R^{\mathrm{red}}}^*a_{r,R}^+&=0,
+ \label{eq:s6cusp-negative-mode-background-gauge}\\
+ \mathcal M_R^{\mathrm{red}}a_{r,R}^+
+ &=-\frac{4\pi}{\delta_R}a_{r,R}^+.
+ \label{eq:s6cusp-negative-mode-eigenvalue}
+\end{align}
+The two \(E_+\) modes and their Hermitian-adjoint \(E_-\) partners give a real
+four-dimensional negative eigenspace.  The Riesz Hessian of
+\(\operatorname{YM}_R\) has eigenvalue
+\begin{align}
+ \lambda_R^{\mathrm{Hess}}
+ &=-\frac{4\pi}{g_{\mathrm{YM}}^2\delta_R}
+ \label{eq:s6cusp-negative-riesz-eigenvalue}\\
+ &=\frac{4\pi}{g_{\mathrm{YM}}^2
+ \operatorname{Im}\tau_R
+ \left(
+  \operatorname{Im}\beta_R-
+  \dfrac{6(\operatorname{Im}\mu_R)^2}
+  {\operatorname{Im}\tau_R}
+ \right)}<0.
+ \label{eq:s6cusp-negative-riesz-unchanged}
+\end{align}
+In particular,
+\begin{equation}\label{eq:s6cusp-negative-mode-cusp}
+ \lambda_R^{\mathrm{Hess}}
+ =-\frac{4\pi}{g_{\mathrm{YM}}^2R^2}
+ \left[
+  1-\frac{2h_0-d_0}{R}+O(R^{-2})
+ \right].
+\end{equation}
+Thus every displayed nonflat critical point is a saddle, with an explicit
+negative direction whose magnitude tends to zero at the source cusp.
+\end{theorem}
+
+\begin{proof}
+For completeness, expand the curvature at an arbitrary critical connection:
+\[
+ F_{A+ta}=F_A+t\dd_Aa+t^2a\wedge a.
+\]
+The second derivative of \eqref{eq:s6cusp-yang-mills-action} is
+\[
+ \frac1{g_{\mathrm{YM}}^2}
+ \left(\lVert\dd_Aa\rVert^2
+ +2\langle F_A,a\wedge a\rangle\right).
+\]
+Adding the background-gauge square
+\(g_{\mathrm{YM}}^{-2}\lVert\dd_A^*a\rVert^2\), integrating the two
+covariant derivatives by parts, and using
+\([D_\mu,D_\nu]=\operatorname{ad}(F_{\mu\nu})\) gives, component by
+component,
+\[
+ \dd_A^*\dd_A+\dd_A\dd_A^*
+ =-D^\mu D_\mu-\operatorname{ad}(F_{\nu\mu}),
+\]
+while \(2\langle F_A,a\wedge a\rangle\) contributes the second
+\(-\operatorname{ad}(F_{\nu\mu})\).  This proves the literal coefficient
+\(-2\) in \eqref{eq:s6cusp-background-jacobi-operator}; it agrees with the
+directly checked homogeneous-background operators
+\(K_\pm=-D^2\pm2gB\) in \cite[eqs.~(1)--(2)]{Oxman2010}.
+
+For \eqref{eq:s6cusp-explicit-negative-root-mode}, the divergence is
+\[
+ \dd_{A_R^{\mathrm{red}}}^*a_{r,R}^+
+ =-(D_2^+-iD_4^+)\pi_R^*\phi_{r,R}=0
+\]
+by \eqref{eq:s6cusp-root-physical-ground-equation}.  Put
+\(\mathcal B=\mathcal B_R^{\mathrm{root}}\).  Since
+\(F^{\mathrm{red}}_{R,24}=(\mathcal B/2)H\), the spin-curvature term on
+the \((\dd x^2,\dd x^4)E_+\) coefficients is the Hermitian matrix
+\begin{equation}\label{eq:s6cusp-root-spin-matrix}
+ \mathcal S_R^+
+ =\mathcal B
+ \begin{pmatrix}0&-2i\\2i&0\end{pmatrix}.
+\end{equation}
+Direct multiplication gives
+\[
+ \begin{pmatrix}0&-2i\\2i&0\end{pmatrix}
+ \begin{pmatrix}1\\-i\end{pmatrix}
+ =-2\begin{pmatrix}1\\-i\end{pmatrix}.
+\]
+Equation \eqref{eq:s6cusp-root-scalar-ground-energy} supplies the scalar
+eigenvalue \(+\mathcal B\), whereas the displayed polarization supplies
+\(-2\mathcal B\).  Their sum is
+\(-\mathcal B=-4\pi/\delta_R\), proving
+\eqref{eq:s6cusp-negative-mode-eigenvalue}.
+
+Hermitian adjunction exchanges \(E_+\) with \(E_-\), while scalar complex
+conjugation exchanges \(\dd x^2-i\dd x^4\) with
+\(\dd x^2+i\dd x^4\) and \(\phi_{r,R}\) with
+\(\overline{\phi_{r,R}}\).  Thus \((a_{r,R}^+)^\dagger\) is an
+\(E_-\)-root eigenform with the same real eigenvalue.  The anti-Hermitian
+combinations
+\[
+ a_{r,R}^+-(a_{r,R}^+)^\dagger,
+ \qquad
+ i\bigl(a_{r,R}^++(a_{r,R}^+)^\dagger\bigr),
+ \qquad r=0,1,
+\]
+are four real linearly independent eigenforms.  The factor
+\(g_{\mathrm{YM}}^{-2}\) in the Riesz Hessian proves
+\eqref{eq:s6cusp-negative-riesz-eigenvalue};
+\eqref{eq:s6cusp-unchanged-expression-delta} proves the unchanged form
+\eqref{eq:s6cusp-negative-riesz-unchanged}, and
+\eqref{eq:s6cusp-delta-two-term-expansion} proves the cusp expansion.
+\end{proof}
+
+The instability is therefore proved for this exact compact background; it
+is not imported merely from the general Nielsen--Olesen mechanism.  Its
+mathematical role here is negative: the small-action nonflat critical family
+does not provide stable vacua or positive excitations above them.
+
+\begin{proposition}[Exact relation to the native class and exceptional
+kernel]
+\label{prop:s6cusp-decomposable-native-relation}
+In the common integral coframe,
+\begin{equation}\label{eq:s6cusp-two-flux-classes}
+ \xi_R=\gamma\wedge u,
+ \qquad
+ \eta_R=u\wedge w+6\gamma\wedge\delta.
+\end{equation}
+Their complete square invariants are
+\begin{equation}\label{eq:s6cusp-two-flux-squares}
+ \xi_R^2=0,
+ \qquad
+ \eta_R^2=12\gamma\wedge u\wedge w\wedge\delta.
+\end{equation}
+Consequently no integral lattice automorphism carries \(\eta_R\) to
+\(\xi_R\).  On every exceptional elliptic kernel from
+Theorem~\ref{thm:s6cusp-exceptional-elliptic-restriction}, however, the
+already constructed inclusion morphism
+\(\iota_{a,b,z}:E_{\tau_{\mathrm f}(z)}\hookrightarrow F_z\) gives the
+exact pullbacks
+\begin{equation}\label{eq:s6cusp-two-flux-kernel-pullbacks}
+ \iota_{a,b,z}^*\xi_z=0,
+ \qquad
+ \int_{E_{\tau_{\mathrm f}(z)}}\iota_{a,b,z}^*\eta_z=6.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The first formula is the definition of \(\xi_R\) and the source
+identification of \((\vartheta_R^1,\ldots,\vartheta_R^4)\) with
+\((\gamma,u,w,\delta)\); the second is
+\eqref{eq:s6cusp-native-eta}.  Exterior multiplication gives
+\eqref{eq:s6cusp-two-flux-squares}.  If an integral lattice automorphism
+\(A\) obeyed \(A^*\eta_R=\xi_R\), then
+\[
+ 0=\xi_R^2=A^*(\eta_R^2)
+ =12\det(A)\gamma\wedge u\wedge w\wedge\delta,
+\]
+which is impossible because \(\det(A)=\pm1\).
+
+For the kernel's positive basis
+\((\widehat\delta,-\widehat\gamma_{a,b})\), direct evaluation gives
+\[
+ \xi_z(\widehat\delta,-\widehat\gamma
+ +a\widehat u+b\widehat w)=0.
+\]
+This proves the first pullback.  The second is the already proved evaluation
+\(\eta_z(\widehat\delta,-\widehat\gamma_{a,b})=6\) in
+\eqref{eq:s6cusp-native-restriction-degree}.  Thus the two classes are
+related on the same ambient object and by the same kernel morphism, with
+their distinct pullbacks computed rather than inferred from their
+presentations.
+\end{proof}
+
+\subsection{A subsidiary finite-cover unspooling}
+
+A compact four-torus cannot itself be replaced by \(\R^4\): every
+continuous image of \(F_R\) is compact, so no continuous map
+\(F_R\to\R^4\) is surjective.  A continuous injection would be a topological
+embedding because \(F_R\) is compact and \(\R^4\) is Hausdorff; invariance
+of domain would make its image open, while compactness would make it
+compact, which is impossible for a nonempty open subset of \(\R^4\).
+Equation \eqref{eq:s6cusp-universal-cover} and the finite covers below are
+the exact morphisms replacing either impossible identification.
+
+\paragraph{Scope of the auxiliary construction.}
+The native pointed limit is exactly
+\eqref{eq:s6cusp-native-pointed-limit}; it is obtained from the original
+marked fibres without changing their lattices.  The construction below
+instead replaces \(P_R\Z^4\) by the proper sublattice
+\(P_RS_M\Z^4\) and replaces the punctured base coordinate by
+\(t_c=s^M\).  Its domain and codomain are therefore finite covers of the
+same regular S6 fibre family.  No S12 or S24 object, and no map from such an
+object into this family, occurs in the construction.  The resulting
+\(\R^4\) pointed limit is a proved cover result, but it is not the separately
+requested S12/S24-style globalization or doubling.
+
+For the remainder of this subsection, \(M\ge1\) is the cover index; it is
+independent of the cubical discretization index \(N\) used above.  Set
+\begin{equation}\label{eq:s6cusp-cover-scaling-matrix}
+ S_M:=\operatorname{diag}(1,1,M,M)
+\end{equation}
+in the source lattice basis
+\((\widehat\gamma,\widehat u,\widehat w,\widehat\delta)\).
+
+\begin{theorem}[Finite cover, deck group, and exact cusp monodromy]
+\label{thm:s6cusp-monodromy-compatible-cover}
+The sublattice
+\begin{equation}\label{eq:s6cusp-cover-sublattice}
+ \Lambda_M:=S_M\Z^4
+ =\Z\langle
+ \widehat\gamma,\widehat u,
+ M\widehat w,M\widehat\delta\rangle
+\end{equation}
+defines the complex torus
+\begin{equation}\label{eq:s6cusp-covered-fibre}
+ \widetilde F_{R,M}:=
+ \R^4/P_RS_M\Z^4.
+\end{equation}
+The identity of \(\R^4\) descends to a holomorphic covering
+\begin{equation}\label{eq:s6cusp-finite-cover-map}
+ c_{R,M}:\widetilde F_{R,M}\longrightarrow F_R,
+ \qquad
+ [x]_{P_RS_M\Z^4}\longmapsto[x]_{P_R\Z^4},
+\end{equation}
+with
+\begin{align}
+ \operatorname{Deck}(c_{R,M})
+ &\cong
+ \frac{P_R\Z^4}{P_RS_M\Z^4}
+ \cong(\Z/M\Z)^2,
+ \label{eq:s6cusp-cover-deck-group}\\
+ \deg c_{R,M}&=M^2,\label{eq:s6cusp-cover-degree}\\
+ \operatorname{Vol}(\widetilde F_{R,M})
+ &=M^2\delta_R.
+ \label{eq:s6cusp-cover-volume}
+\end{align}
+
+The clockwise cusp monodromy printed in the source is
+\begin{equation}\label{eq:s6cusp-source-monodromy}
+ M_0=
+ \begin{pmatrix}
+ 1&0&0&0\\
+ 0&1&0&0\\
+ 0&1&1&0\\
+ -1&0&0&1
+ \end{pmatrix}
+ =I+\mathcal N_0,
+\end{equation}
+where
+\begin{equation}\label{eq:s6cusp-source-nilpotent}
+ \mathcal N_0(a,b,c,d)^{\mathsf T}
+ =(0,0,b,-a)^{\mathsf T},
+ \qquad
+ \mathcal N_0^2=0.
+\end{equation}
+After the cyclic base change
+\begin{equation}\label{eq:s6cusp-cover-base-change}
+ r_M:\Delta_s^*\longrightarrow\Delta_{t_c}^*,
+ \qquad t_c=s^M,
+\end{equation}
+the pulled-back monodromy preserves \(\Lambda_M\) and, in its displayed
+basis, is again \(M_0\):
+\begin{align}
+ M_0^M&=I+M\mathcal N_0,
+ \label{eq:s6cusp-monodromy-power}\\
+ M_0^M\Lambda_M&=\Lambda_M,
+ \label{eq:s6cusp-monodromy-preserves-sublattice}\\
+ S_M^{-1}M_0^MS_M&=M_0.
+ \label{eq:s6cusp-monodromy-conjugacy}
+\end{align}
+Consequently the fibres \(\widetilde F_{R,M}\) assemble into a holomorphic
+torus family over \(\Delta_s^*\), and the maps \(c_{R,M}\) assemble into a
+fibrewise \(M^2\)-sheeted holomorphic covering of the pulled-back source
+family.
+\end{theorem}
+
+\begin{proof}
+The inclusion \(S_M\Z^4\subset\Z^4\) and invertibility of \(P_R\) prove
+that \eqref{eq:s6cusp-finite-cover-map} is well defined.  Its fibre over a
+point is the quotient of \(P_R\Z^4\) by \(P_RS_M\Z^4\).  Multiplication by
+\(P_R^{-1}\) identifies this quotient with
+\(\Z^4/S_M\Z^4\), and the explicit homomorphism
+\[
+ [(n_1,n_2,n_3,n_4)]
+ \longmapsto([n_3],[n_4])
+\]
+has kernel \(S_M\Z^4\) and image \((\Z/M\Z)^2\).  This proves
+\eqref{eq:s6cusp-cover-deck-group} and
+\eqref{eq:s6cusp-cover-degree}.  The covolume is
+\[
+ |\det(P_RS_M)|=|\det P_R|\det S_M=M^2\delta_R,
+\]
+proving \eqref{eq:s6cusp-cover-volume}.  Since the period inclusions are
+complex translations in \(\C^2\), the covering is holomorphic.
+
+Equations \eqref{eq:s6cusp-source-monodromy} and
+\eqref{eq:s6cusp-source-nilpotent} are the coordinate form of
+Definition~2.3 and Lemmas~2.4 and~2.6 of the exact S6 transcription
+\cite{S6Internal}.  The binomial formula terminates because
+\(\mathcal N_0^2=0\), giving
+\eqref{eq:s6cusp-monodromy-power}.  On the four generators of
+\(\Lambda_M\),
+\begin{align*}
+ M_0^M\widehat\gamma
+ &=\widehat\gamma-M\widehat\delta,&
+ M_0^M\widehat u
+ &=\widehat u+M\widehat w,\\
+ M_0^M(M\widehat w)&=M\widehat w,&
+ M_0^M(M\widehat\delta)&=M\widehat\delta.
+\end{align*}
+These equations prove invariance.  Applying \(S_M^{-1}\) to the four
+displayed images gives exactly the four columns of \(M_0\), proving
+\eqref{eq:s6cusp-monodromy-conjugacy}.
+
+One positive loop around \(s=0\) maps to \(M\) loops around \(t_c=0\),
+so the pulled-back lattice local system has monodromy \(M_0^M\).
+The proved invariant sublattice therefore defines a sub-local-system.
+Quotienting the pulled-back \(\C^2\)-bundle by its translations constructs
+the asserted holomorphic torus family, and inclusion into the full
+pulled-back lattice gives the family map whose fibre is
+\eqref{eq:s6cusp-finite-cover-map}.
+\end{proof}
+
+For \(M=2\), the cover in
+\eqref{eq:s6cusp-finite-cover-map} has four sheets.  Together with the
+twofold base change \(t_c=s^2\), equation
+\eqref{eq:s6cusp-monodromy-conjugacy} is the exact four-sheet realization
+of the proposed two-cycle doubling; no tetrahedral or Fable identification
+is used in this lattice statement.
+
+\begin{theorem}[Systole bound and pointed Euclidean four-space limit]
+\label{thm:s6cusp-covered-R4-limit}
+Every period of \(\widetilde F_{R,M}\), in the reordered covering
+coordinates \((x^1,x^3;x^2,x^4)\), has the unique form
+\begin{equation}\label{eq:s6cusp-covered-period-block-form}
+ \lambda_{R,M}(n,m)=
+ \begin{pmatrix}
+ A_Rn+Mm\\
+ B_Rn
+ \end{pmatrix},
+ \qquad n,m\in\Z^2,
+\end{equation}
+with \(A_R,B_R\) as in
+\eqref{eq:s6cusp-AR-matrix} and
+\eqref{eq:s6cusp-BR-matrix}.  Its systole and injectivity radius obey
+\begin{align}
+ \operatorname{sys}(\widetilde F_{R,M})
+ &\ge\min\{R-C_*,M\},
+ \label{eq:s6cusp-covered-systole-bound}\\
+ \operatorname{inj}(\widetilde F_{R,M})
+ &\ge\frac12\min\{R-C_*,M\}.
+ \label{eq:s6cusp-covered-injectivity-bound}
+\end{align}
+For every pair of sequences \(R_j\to\infty\) and \(M_j\to\infty\),
+\begin{equation}\label{eq:s6cusp-covered-pointed-limit}
+ (\widetilde F_{R_j,M_j},[0])
+ \longrightarrow(\R^4,0)
+\end{equation}
+in pointed smooth, pointed local-isometric, and pointed
+Gromov--Hausdorff senses.
+
+Along the radial path \(t_c=e^{-2\pi R}\), the positive real lift under
+\eqref{eq:s6cusp-cover-base-change} is
+\begin{equation}\label{eq:s6cusp-covered-base-radial-coordinate}
+ s=e^{-2\pi R/M}.
+\end{equation}
+Hence the points also approach the cusp \(s=0\) of the varying covered
+bases exactly when \(R_j/M_j\to\infty\).  The explicit sequence
+\[
+ R_j=j^2,\qquad M_j=j
+\]
+satisfies all three divergence conditions and obeys
+\[
+ \operatorname{sys}(\widetilde F_{j^2,j})
+ \ge j
+\]
+for all sufficiently large \(j\).
+\end{theorem}
+
+\begin{proof}
+The first two columns of \(P_RS_M\) are unchanged and the last two are
+multiplied by \(M\).  Separating the top coordinates \(x^1,x^3\) from the
+bottom coordinates \(x^2,x^4\) gives
+\eqref{eq:s6cusp-covered-period-block-form}; uniqueness follows from
+invertibility of \(P_RS_M\).
+
+For a nonzero period with \(n\ne0\),
+\eqref{eq:s6cusp-BR-lower-bound} gives
+\[
+ \lVert\lambda_{R,M}(n,m)\rVert
+ \ge\lVert B_Rn\rVert
+ \ge R-C_*.
+\]
+For \(n=0\), nonzero means \(m\ne0\), and
+\[
+ \lVert\lambda_{R,M}(0,m)\rVert=M\lVert m\rVert\ge M.
+\]
+Taking the minimum proves \eqref{eq:s6cusp-covered-systole-bound}; the
+flat-torus identity
+\(\operatorname{inj}=\operatorname{sys}/2\) proves
+\eqref{eq:s6cusp-covered-injectivity-bound}.
+
+Fix \(L>0\).  For all large \(j\), the systole exceeds \(4L\).  Let
+\[
+ \widetilde\upsilon_{R_j,M_j}:
+ \R^4\longrightarrow\widetilde F_{R_j,M_j}
+\]
+be the quotient map.  If \(x,y\in B_L(0)\) and \(\lambda\) is a nonzero
+period, then
+\[
+ \lVert x-y+\lambda\rVert
+ \ge\lVert\lambda\rVert-\lVert x-y\rVert
+ >4L-2L\ge\lVert x-y\rVert.
+\]
+Thus the zero period uniquely realizes the quotient distance between these
+points, and the restriction of \(\widetilde\upsilon_{R_j,M_j}\) to
+\(B_L(0)\) is an isometric embedding.  Conversely, every quotient point
+at distance less than \(L\) from \([0]\) has a distance-minimizing lift in
+\(B_L(0)\), because the period lattice is discrete.  The radius-\(L\)
+pointed balls are therefore isometric for all large \(j\).  Since \(L\)
+was arbitrary and the covering maps are local Euclidean isometries and
+holomorphic maps from \(\C^2\), all three modes of convergence in
+\eqref{eq:s6cusp-covered-pointed-limit} follow.
+
+Equation \eqref{eq:s6cusp-covered-base-radial-coordinate} is the unique
+positive real solution of \(s^M=e^{-2\pi R}\).  It tends to zero exactly
+when \(R/M\to\infty\).  Substitution of \(R_j=j^2,M_j=j\) into
+\eqref{eq:s6cusp-covered-systole-bound} finishes the proof.
+\end{proof}
+
+\begin{theorem}[Exact field pullback and added momentum sectors]
+\label{thm:s6cusp-covered-dual-modes}
+The scalar characters of the covered fibre are
+\begin{equation}\label{eq:s6cusp-covered-characters}
+ \widetilde\chi_{R,M,k}([x])
+ :=
+ \exp\left(
+ 2\pi i\left\langle
+ P_R^{-\mathsf T}S_M^{-1}k,x
+ \right\rangle
+ \right),
+ \qquad k\in\Z^4,
+\end{equation}
+and the two mutually inverse dual-lattice maps are
+\[
+ k\longmapsto P_R^{-\mathsf T}S_M^{-1}k,
+ \qquad
+ q\longmapsto S_MP_R^{\mathsf T}q.
+\]
+Pullback under the finite cover is exactly
+\begin{equation}\label{eq:s6cusp-covered-character-pullback}
+ c_{R,M}^*\chi_{R,\ell}
+ =\widetilde\chi_{R,M,S_M\ell}.
+\end{equation}
+Consequently its image consists precisely of the characters whose labels
+satisfy
+\begin{equation}\label{eq:s6cusp-old-mode-congruences}
+ k_3\equiv0\pmod M,\qquad k_4\equiv0\pmod M.
+\end{equation}
+The scalar spectrum is
+\begin{equation}\label{eq:s6cusp-covered-scalar-spectrum}
+ \operatorname{Spec}(\widetilde\Delta_{R,M})
+ =
+ \left\{
+ 4\pi^2
+ \lVert P_R^{-\mathsf T}S_M^{-1}k\rVert^2:
+ k\in\Z^4
+ \right\}.
+\end{equation}
+After harmonic forms are removed, the normalized flat Yang--Mills Hessian
+has the same positive eigenvalue set,
+\begin{equation}\label{eq:s6cusp-covered-gauge-spectrum}
+ \operatorname{Spec}^+(\widetilde{\mathcal L}_{R,M})
+ =
+ \left\{
+ 4\pi^2
+ \lVert P_R^{-\mathsf T}S_M^{-1}k\rVert^2:
+ k\in\Z^4\setminus\{0\}
+ \right\},
+\end{equation}
+with three complex transverse polarizations per \(k\) and per
+\(\mathfrak g_{\C}\)-direction.  Along every sequence in
+\eqref{eq:s6cusp-covered-pointed-limit},
+\begin{equation}\label{eq:s6cusp-covered-hessian-gap-limit}
+ \inf\operatorname{Spec}^+(\widetilde{\mathcal L}_{R_j,M_j})
+ \longrightarrow0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+A covector pairs integrally with \(P_RS_M\Z^4\) exactly when
+\(S_MP_R^{\mathsf T}q\in\Z^4\), which proves the displayed inverse maps
+and the well-definedness of \eqref{eq:s6cusp-covered-characters}.  Both
+sides of \eqref{eq:s6cusp-covered-character-pullback}, evaluated on a
+representative \(x\), equal
+\[
+ \exp\left(2\pi i
+ \langle P_R^{-\mathsf T}\ell,x\rangle\right).
+\]
+The image labels are \(S_M\ell=(\ell_1,\ell_2,M\ell_3,M\ell_4)\), which
+proves both directions of \eqref{eq:s6cusp-old-mode-congruences}.
+Direct differentiation proves
+\eqref{eq:s6cusp-covered-scalar-spectrum}; the quotient calculation in
+Theorem~\ref{thm:s6cusp-flat-gauge-hessian}, with \(P_R\) replaced by
+\(P_RS_M\), proves \eqref{eq:s6cusp-covered-gauge-spectrum} and its
+multiplicity.
+
+For an explicit upper bound, the labels \(e_1\) and \(e_3\) give
+\begin{equation}\label{eq:s6cusp-covered-gap-upper-bound}
+ \inf\operatorname{Spec}^+(\widetilde{\mathcal L}_{R,M})
+ \le4\pi^2\min\left\{
+ \lVert P_R^{-\mathsf T}e_1\rVert^2,
+ \frac1{M^2}\lVert P_R^{-\mathsf T}e_3\rVert^2
+ \right\}.
+\end{equation}
+The first term tends to zero by
+\eqref{eq:s6cusp-e1-exact}.  For the second, the full dual formula gives
+\begin{equation}\label{eq:s6cusp-third-dual-coordinate}
+ P_R^{-\mathsf T}e_3=
+ \left(
+ 1,\frac{p_Ru_R-6a_Rm_R}{\delta_R},0,
+ \frac{6a_RT_R-6m_Ru_R}{\delta_R}
+ \right),
+\end{equation}
+which remains bounded because \(a_R,u_R,m_R\) are bounded,
+\(p_R,T_R=O(R)\), and \(\delta_R=R^2+O(R)\).
+Thus either entry on the right of
+\eqref{eq:s6cusp-covered-gap-upper-bound} proves the limit, and together
+they exhibit the momentum scales supplied by the \(R\)- and \(M\)-directions.
+\end{proof}
+
+The modes violating \eqref{eq:s6cusp-old-mode-congruences} are not pullbacks
+of fields on \(F_R\).  Their third and fourth label components enter
+\(S_M^{-1}k\) as \(k_3/M,k_4/M\), so the finite cover supplies genuinely
+new fractional momenta in the two directions that remain compact in the
+native limit.  This is the exact field-space map behind the geometric
+unspooling.
+
+\begin{proposition}[The alternative doubled quotient and its exact kernel]
+\label{prop:s6cusp-doubled-quotient}
+Let
+\[
+ D_R:=\Sigma_R\times\Sigma_R
+ =\R^4/
+ \begin{pmatrix}B_R&0\\0&B_R\end{pmatrix}\Z^4.
+\]
+The map
+\begin{equation}\label{eq:s6cusp-doubled-quotient-map}
+ \Pi_R:F_R\times F_R\longrightarrow D_R,
+ \qquad
+ (x,y)\longmapsto(\pi_R(x),\pi_R(y))
+\end{equation}
+is a surjective homomorphism with
+\begin{equation}\label{eq:s6cusp-doubled-quotient-kernel}
+ \ker\Pi_R=K_R\times K_R.
+\end{equation}
+Moreover,
+\[
+ \operatorname{sys}(D_R)\ge R-C_*,
+ \qquad
+ (D_R,[0])\longrightarrow(\R^4,0)
+\]
+in the same three pointed senses as
+\eqref{eq:s6cusp-covered-pointed-limit}.
+\end{proposition}
+
+\begin{proof}
+Surjectivity and the kernel formula are the product of the proved exact
+sequence \eqref{eq:s6cusp-native-exact-sequence} with itself.  Every
+nonzero period of \(\Sigma_R\) is \(B_Rn\) for \(n\ne0\), so
+\eqref{eq:s6cusp-BR-lower-bound} gives
+\(\operatorname{sys}(\Sigma_R)\ge R-C_*\).  The product lattice has the
+same shortest length.  The expanding-systole ball argument in the proof of
+Theorem~\ref{thm:s6cusp-covered-R4-limit} proves the pointed limit.
+\end{proof}
+
+The morphism \eqref{eq:s6cusp-doubled-quotient-map} removes the four-real-
+dimensional compact subgroup in
+\eqref{eq:s6cusp-doubled-quotient-kernel}; the finite-cover construction
+instead retains those directions and increases their periods.  These two
+presentations are therefore related by the exact quotient map above, not
+by an identification.
+
+\begin{proposition}[The local Wick map after four-direction unspooling]
+\label{prop:s6cusp-local-wick-map}
+On the complexification of the Euclidean pointed limit define
+\[
+ W:\R^{1,3}\longrightarrow\C^4,\qquad
+ W(t,x_1,x_2,x_3)=(it,x_1,x_2,x_3).
+\]
+Then
+\begin{equation}\label{eq:s6cusp-wick-pullback}
+ W^*\left(\dd z_0^2+\dd z_1^2+\dd z_2^2+\dd z_3^2\right)
+ =-\dd t^2+\dd x_1^2+\dd x_2^2+\dd x_3^2.
+\end{equation}
+The map is injective, with image
+\(\{(z_0,z_1,z_2,z_3):z_0\in i\R,\ z_1,z_2,z_3\in\R\}\), and inverse
+\((z_0,z_1,z_2,z_3)\mapsto(-iz_0,z_1,z_2,z_3)\) on that image.
+\end{proposition}
+
+\begin{proof}
+One has \(W^*\dd z_0=i\,\dd t\) and
+\(W^*\dd z_j=\dd x_j\) for \(j=1,2,3\).  Squaring these four retained
+terms gives \eqref{eq:s6cusp-wick-pullback}; the displayed image and inverse
+prove the remaining assertions.  The calculation changes the real slice
+of the complexified bilinear form.  It does not remove a lattice period,
+which is why it is placed after the finite-cover limit rather than used as
+a substitute for it.
+\end{proof}

@@ -1,0 +1,185 @@
+{
+  "schema": "s6-ns-yang-mills-research-program-v2",
+  "date": "2026-09-30",
+  "programme_id": "YM-S6NS-HIGHER-DOMAIN-NOGAP",
+  "status": "Sol 6 work re-audited; corrected global polynomial triality-to-profile map proved; its explicit core has nonzero source; the globally smooth source-free quantum state and contradiction remain active goals",
+  "thesis": [
+    "extract the integral-lattice, soft-spectrum, holonomy, and continuous-threshold functions of the S6 cusp construction",
+    "construct a functionally similar higher domain with a proved global carrier and a marked proper-subgroup frame reduction",
+    "use regular smooth flow profiles to produce a genuinely non-Abelian regulated physical state family",
+    "reconstruct one interacting continuum theory with unique vacuum and spectral support in every interval (0,epsilon)",
+    "prove the required universality or theory-identification theorem and derive the contradiction of the four-dimensional mass-gap statement"
+  ],
+  "proved_current_results": [
+    {
+      "result_id": "S6NS-20260929-THRESHOLD",
+      "statement": "The retained S6 cusp source has an exact vertical decomposable operator with zero in continuous and essential spectrum and zero kernel, plus finite Gaussian gaps that close along the cusp.",
+      "scope": "source theorem for the stated geometric operators; not the interacting four-dimensional Yang--Mills Hamiltonian",
+      "proof_locator": "HIGHER_DOMAIN_PROGRAM.md Sections 2.1--2.4; source labels thm:s6cusp-vertical-continuous-threshold and thm:s6cusp-gaussian-quantization"
+    },
+    {
+      "result_id": "S6NS-20260929-SPECTRAL-DETECTOR",
+      "statement": "A unique-vacuum nonnegative Hamiltonian is gapless when a vacuum-orthogonal spectral measure has positive mass in every (0,epsilon) and no zero atom; the positive-time Laplace form retains the same support test.",
+      "scope": "abstract spectral theorem and positive-time criterion",
+      "proof_locator": "SPECTRAL_PROGRAM.md Propositions 1--2"
+    },
+    {
+      "result_id": "S6NS-20260929-THREE-COLOUR-CURVATURE",
+      "statement": "For A_i=sum_a lambda_a u_i^(a) T_a, the complete derivative and commutator coefficients B_ij^c and magnetic density sum_(i<j,c)(B_ij^c)^2 are proved exactly.",
+      "scope": "smooth divergence-free real profiles with nonzero retained calibrations and T_a=-i sigma_a/2",
+      "proof_locator": "HIGHER_DOMAIN_PROGRAM.md Section 7; checks/THREE_COLOUR_CURVATURE_CHECK.json"
+    },
+    {
+      "result_id": "S6NS-20260929-FULL-SOURCE",
+      "statement": "The complete source defect has J_0^c=-(1/c) sum_(i,a,b) epsilon_abc lambda_a lambda_b u_i^(a) partial_t u_i^(b) and the displayed spatial coefficients; three divergence-free colour profiles generally carry nonzero colour charge.",
+      "scope": "Minkowski metric diag(-1,1,1,1), x^0=ct, A_0=0, D_mu X=partial_mu X+[A_mu,X]",
+      "proof_locator": "HIGHER_DOMAIN_PROGRAM.md Proposition 7.1; checks/THREE_COLOUR_CURVATURE_CHECK.json"
+    },
+    {
+      "result_id": "S6NS-20260929-SPIN8-OBSTRUCTION",
+      "statement": "Every continuous homomorphism Spin(8)->G is trivial for every finite-dimensional Lie group G of dimension below 28.",
+      "scope": "uses connectedness of Spin(8), simplicity of so(8), and the target dimension bound",
+      "proof_locator": "HIGHER_DOMAIN_PROGRAM.md Proposition 3.1"
+    },
+    {
+      "result_id": "S6NS-20260929-SP1-REDUCTION",
+      "statement": "The retained cusp class supplies an explicit Sp(1) subgroup of Spin(8), a nontrivial principal reduction P_H over X congruent to S6, and a nontrivial adjoint three-plane bundle A_H even though its extended Spin(8) bundle Q_H is trivial.",
+      "scope": "candidate reduction over X of Q_H=P_H times_rho Spin(8); no reduction of the tangent frame bundle of F4/Spin(8) is inferred",
+      "proof_locator": "SP1_BUNDLE_BRIDGE.md Sections 1 and 3; retained source labels rettri:bundleclass, rettri:subgroup, and rettri:forgetting"
+    },
+    {
+      "result_id": "S6NS-20260929-BUNDLE-NONABELIAN-SEED",
+      "statement": "The receiving space U_H contains a chart-supported divergence-free one-form with nonzero commutator curvature.",
+      "scope": "nonemptiness and interaction witness for the receiving profile space; this bump field is not a map from W_H",
+      "proof_locator": "SP1_BUNDLE_BRIDGE.md Proposition 5.1 and its corrected scope; checks/SP1_BUNDLE_BRIDGE_CHECK.json"
+    },
+    {
+      "result_id": "S6NS-20260930-LINEAR-OBSTRUCTION",
+      "statement": "Hom_Sp(1)(W,ImH_Ad) is the one-dimensional real span of the single adjoint projection; every equivariant linear profile map from one fibre input is colour-aligned and has zero commutator curvature.",
+      "scope": "W=R^5_triv direct-sum ImH_Ad direct-sum H_L^4 from the retained rank-24 splitting",
+      "proof_locator": "PROOF.md Proposition 5.1"
+    },
+    {
+      "result_id": "S6NS-20260930-MOMENT-MAP-BRIDGE",
+      "statement": "The three quadratic moment maps mu_e(a)=a e conjugate(a) define a global smooth fibrewise polynomial map M_H from W_H to compactly supported divergence-free A_H-valued profiles. Its zero subbundle has rank 12 and its vertical rank strata are 0,3,6,9.",
+      "scope": "global map over the compact base X; no selected nowhere-zero global section, cusp extension, source-free correction, or quantum state is inferred",
+      "proof_locator": "PROOF.md Lemma 6.1 and Theorem 7.1; checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json"
+    },
+    {
+      "result_id": "S6NS-20260930-MOMENT-CORE-SOURCE",
+      "statement": "At a top-stratum fibre point the M_H core has curvature (2k,2i,2j), SU(2) magnetic density 48, and source (Jcal_1,Jcal_2,Jcal_3)=(-8i,-8j,-8k), whose SU(2) image is D^mu F_muj=-16 T_j.",
+      "scope": "static spatial core where the cutoff is constant; exact quaternion bracket and phi(i,j,k)=2(T1,T2,T3)",
+      "proof_locator": "PROOF.md Sections 8--9; checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json"
+    }
+  ],
+  "defined_spaces": {
+    "admissible_domain": "ten-clause soft-period gauge domain D with point space |D|=B^circ",
+    "reduced_frame_space": "R_red^fix is the initial fixed-colour search; the proved retained candidate belongs to the distinct bundle-valued space R_bun^(X,poly)",
+    "interaction_profiles": "N_int, divergence-free triples whose coefficient matrix has rank at least two somewhere",
+    "source_free_profiles": "Z_YM, the common zero set of all twelve exact source coefficients",
+    "spectral_failure_spaces": [
+      "external-parameter",
+      "reducible-flow",
+      "sourced-flow",
+      "singular-current",
+      "gauge-kernel",
+      "high-energy escape",
+      "zero-collapse",
+      "free-limit",
+      "nonuniversal"
+    ],
+    "fixed_frame_reductions": "R_fix, reductions with a global fixed colour-three-plane trivialization; the retained cusp reduction is excluded",
+    "bundle_valued_reductions": "R_bun^(X,poly), including P_H, A_H, the complete W_H, the quadratic map M_H, and the exact metric factor",
+    "retained_bundle_profiles": "U_H, compactly spatially supported divergence-free sections of pr_X^* A_H tensor T^*R3",
+    "fixed_colour_reduction_search": "R_red^fix, proper-subgroup reductions with a fixed global R3 colour target",
+    "bundle_valued_polynomial_candidates": "R_bun^(X,poly), base-X reductions carrying the full labelled domain bundle and a polynomial map with proved zero set, vertical ranks, support, divergence, and curvature",
+    "moment_map_profile": "M_H:W_H -> A_H tensor V_div,R, the corrected quadratic triality-to-profile map",
+    "moment_map_correction_space": "C_MH, corrections alpha for which D_(M_H+alpha)^mu F_munu(M_H+alpha)=0 while nonzero commutator curvature survives"
+  },
+  "candidate_domain_order": [
+    "S6 regular-fibre cusp as the exact functional prototype",
+    "direct rank-three toroidal successor as an obstruction-bearing comparison",
+    "the octonionic flag carrier and, on the distinct base X congruent to S6, the proved Sp(1) reduction with polynomial map M_H",
+    "marked Niemeier/Leech data",
+    "an Sp(1)-reduced Leech/triality soft-period hybrid as the lead construction class after its base relation is constructed"
+  ],
+  "dependency_order": [
+    "construct the exact base map or fibre product relating the S6-based reduction to the intended higher carrier",
+    "attach the exact soft-period degeneration to P_H and W_H, extend M_H, and prove clutching, monodromy, rank, support, and boundary behavior along the full cusp",
+    "derive and solve D_(M_H+alpha)^mu F_munu(M_H+alpha)=0 on every rank stratum with Gauss, support, and nonzero-interaction conditions",
+    "map the corrected connection to link holonomies and compute physical Gram and Hamiltonian kernels without imposed fibre orthogonality",
+    "prove bounded-energy raw spectral convergence on one prescribed regulator and coupling path",
+    "prove reconstruction axioms, unique vacuum, nontriviality, and non-Wick interaction",
+    "transport positive spectral mass to every (0,epsilon) with no zero atom",
+    "prove universality or theory identification and derive the intended contradiction; any unidentified gapless branch remains an intermediate comparison object"
+  ],
+  "immediate_calculation": {
+    "name": "source-free correction and soft-period extension of M_H",
+    "input": "P_H, A_H, the complete W_H splitting, M_H with rank strata 0,3,6,9, the exact core source -8(i,j,k), and the retained S6 period matrix",
+    "output_required": "a cusp-compatible corrected profile M_H+alpha satisfying every source and Gauss equation with nonzero commutator curvature, plus the exact base relation and all clutching, monodromy, support, rank, and boundary laws",
+    "then": "construct finite holonomies and a nonzero physical projected state before the continuum spectral calculation"
+  },
+  "nonclaims": [
+    "no interacting quantum Hamiltonian has been constructed on the 24-dimensional carrier",
+    "the claimed Navier--Stokes singular endpoint is not used as an established smooth input",
+    "high-energy escape is an exclusion test rather than the desired low-energy continuum measure",
+    "a vacuum-orthogonal zero atom violates unique-vacuum reconstruction",
+    "an unidentified gapless Yang--Mills-type branch is unfinished work rather than an alternative programme conclusion",
+    "the chart-supported bump proves receiving-space nonemptiness and is not the triality-to-profile map",
+    "M_H is a global fibrewise polynomial map, but no top-rank global section over X or cusp extension has been constructed",
+    "the explicit M_H core is sourced and is not a source-free classical solution or a quantum state",
+    "P_H is a reduction over X of the extended bundle Q_H; no reduction of T(F4/Spin(8)) is inferred"
+  ],
+  "source_ids": [
+    "YM-S6-CUSP-GAUGE-SPECTRAL-CHAIN",
+    "S6-HIGHER-RUNG-24D-PREPRINT",
+    "S6-HIGHER-RUNG-24D-CONTINUATION",
+    "YM-SPATIAL-20260908-TEX",
+    "NS-YM-GAUGE-BRIDGE",
+    "YM-CLAUDE-y9a_directions.tex",
+    "YM-CLAUDE-y9_open.tex",
+    "YM-CLAUDE-y6_side.tex",
+    "S6-HIGHER-RUNG-24D-PREPRINT-SP1-REAUDIT",
+    "YM-S6NS-SOL6-REDO",
+    "YM-S6NS-MOMENT-MAP-CHECK"
+  ],
+  "artifacts": [
+    "HIGHER_DOMAIN_PROGRAM.md",
+    "SPECTRAL_PROGRAM.md",
+    "figures/S6_NS_SMOOTH_GLOBAL_NO_GAP_PROGRAM.png",
+    "figures/S6_NS_SMOOTH_GLOBAL_NO_GAP_PROGRAM.svg",
+    "figures/THREE_COLOUR_SOURCE_DEFECT.png",
+    "figures/THREE_COLOUR_SOURCE_DEFECT.svg",
+    "checks/THREE_COLOUR_CURVATURE_CHECK.json",
+    "checks/verify_three_colour_curvature.py",
+    "SP1_BUNDLE_BRIDGE.md",
+    "figures/TRIALITY_SP1_BUNDLE_BRIDGE.png",
+    "figures/TRIALITY_SP1_BUNDLE_BRIDGE.svg",
+    "figures/triality_sp1_bundle_bridge_figure.py",
+    "checks/SP1_BUNDLE_BRIDGE_CHECK.json",
+    "checks/verify_sp1_bundle_bridge.py",
+    "PROOF.md",
+    "checks/verify_sp1_moment_map_bridge.py",
+    "checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json",
+    "figures/s6_ns_moment_map_bridge_figure.py",
+    "figures/S6_NS_MOMENT_MAP_BRIDGE.png",
+    "figures/S6_NS_MOMENT_MAP_BRIDGE.svg",
+    "RESULTS_20260930.md",
+    "CLAIM_LEDGER.md",
+    "CURRENT_CLAIM_DISPOSITIONS.json",
+    "SOURCE_PROVENANCE.md",
+    "PUBLIC_VALIDATION.json",
+    "PUBLIC_MANIFEST.json"
+  ],
+  "bulletin_result_ids": [
+    "SZ-20260929-005",
+    "SZ-20260929-006",
+    "SZ-20260929-007",
+    "SZ-20260929-009",
+    "SZ-20260930-001",
+    "SZ-20260930-002",
+    "SZ-20260930-003",
+    "SZ-20260930-004"
+  ],
+  "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim."
+}

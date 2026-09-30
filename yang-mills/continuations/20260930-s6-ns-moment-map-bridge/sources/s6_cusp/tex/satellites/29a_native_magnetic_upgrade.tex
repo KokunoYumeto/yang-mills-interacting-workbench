@@ -1,0 +1,685 @@
+\subsection{Exact heat trace and the threshold-correct fixed-energy count}
+\label{subsec:s6cusp-native-heat-count}
+
+Retain the absolute ground energy
+\begin{equation}\label{eq:s6cusp-native-ground-energy}
+ E_{R;0,0}:=\mathcal B_{R,+}+\mathcal B_{R,-}
+ =\frac{2\pi}{\delta_R}
+ \sqrt{(p_R-6T_R)^2+144m_R^2}.
+\end{equation}
+The adjective ``ground'' in this definition is justified by the quadratic-
+form identity \eqref{eq:s6cusp-native-oscillator-factorization}: for every
+\(s\) in the form domain,
+\begin{align}
+ \left\langle s,
+ (H_{\eta,R}-E_{R;0,0})s\right\rangle
+ &=2\mathcal B_{R,+}\lVert\mathfrak a_+s\rVert^2
+   +2\mathcal B_{R,-}\lVert\mathfrak a_-s\rVert^2
+ \label{eq:s6cusp-native-ground-lower-bound}\\
+ &\ge0.
+\end{align}
+Both coefficients are strictly positive.  Indeed,
+\(\delta_R>0\) and
+\(\Xi_R^2-S_R^2=24\delta_R\), where
+\begin{equation}\label{eq:s6cusp-Xi-S-definitions}
+ \Xi_R:=\sqrt{(p_R-6T_R)^2+144m_R^2},
+ \qquad S_R:=p_R+6T_R,
+\end{equation}
+imply \(\Xi_R>|S_R|\).  Equations
+\eqref{eq:s6cusp-native-frequency-plus}--
+\eqref{eq:s6cusp-native-frequency-minus} therefore give
+\(\mathcal B_{R,+},\mathcal B_{R,-}>0\).  The six-dimensional simultaneous
+kernel \eqref{eq:s6cusp-native-joint-ground} proves that the lower bound is
+attained with complex multiplicity six.  Thus topology supplies six states
+\emph{at} \(E_{R;0,0}\); it supplies no state below that number.
+
+\begin{theorem}[Exact native heat trace]
+\label{thm:s6cusp-native-heat-trace}
+For every \(t>0\),
+\begin{equation}\label{eq:s6cusp-native-heat-trace}
+ \operatorname{Tr}(e^{-tH_{\eta,R}})
+ =\frac{3}{
+  2\sinh(t\mathcal B_{R,+})
+   \sinh(t\mathcal B_{R,-})}.
+\end{equation}
+At every fixed \(t>0\), the source radial cusp has the expansion
+\begin{equation}\label{eq:s6cusp-native-heat-trace-cusp}
+ \operatorname{Tr}(e^{-tH_{\eta,R}})
+ =\frac{\delta_R}{16\pi^2t^2}
+ \left[1+O_t(R^{-2})\right].
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The complete spectrum and its six-dimensional joint multiplicities give
+\begin{align*}
+ \operatorname{Tr}(e^{-tH_{\eta,R}})
+ &=6\sum_{n_+,n_-\ge0}
+ e^{-t[(2n_++1)\mathcal B_{R,+}
+       +(2n_-+1)\mathcal B_{R,-}]}\\
+ &=6\prod_{\sigma\in\{+,-\}}
+ \frac{e^{-t\mathcal B_{R,\sigma}}}
+ {1-e^{-2t\mathcal B_{R,\sigma}}}\\
+ &=\frac{3}{2\sinh(t\mathcal B_{R,+})
+                  \sinh(t\mathcal B_{R,-})},
+\end{align*}
+which proves \eqref{eq:s6cusp-native-heat-trace}.  The exact product
+\eqref{eq:s6cusp-native-frequency-product} and
+\(\mathcal B_{R,+},\mathcal B_{R,-}=O(R^{-1})\) give
+\begin{align*}
+ \sinh(t\mathcal B_{R,+})
+ \sinh(t\mathcal B_{R,-})
+ &=t^2\mathcal B_{R,+}\mathcal B_{R,-}
+ \left[1+O_t(\mathcal B_{R,+}^2+
+                  \mathcal B_{R,-}^2)\right]\\
+ &=\frac{24\pi^2t^2}{\delta_R}
+ \left[1+O_t(R^{-2})\right].
+\end{align*}
+Substitution into the exact trace proves
+\eqref{eq:s6cusp-native-heat-trace-cusp}.
+\end{proof}
+
+
+For \(E>0\), define the absolute spectral counting function
+\begin{equation}\label{eq:s6cusp-native-count-definition}
+ N_{\eta,R}(E):=
+ \operatorname{Tr}\mathbf1_{(-\infty,E]}(H_{\eta,R}).
+\end{equation}
+The exact lattice of admissible indices is
+\begin{equation}\label{eq:s6cusp-native-count-index-set}
+ \mathscr I_R(E):=
+ \left\{(n_+,n_-)\in\mathbb Z_{\ge0}^2:
+  2\mathcal B_{R,+}n_++2\mathcal B_{R,-}n_-
+  \le E-E_{R;0,0}\right\}.
+\end{equation}
+It is empty when \(E<E_{R;0,0}\).  Consequently
+\begin{equation}\label{eq:s6cusp-native-count-cardinality}
+ N_{\eta,R}(E)=6\,\#\mathscr I_R(E).
+\end{equation}
+Writing
+\begin{equation}\label{eq:s6cusp-native-count-L}
+ L_R(E):=E-E_{R;0,0}
+\end{equation}
+without deleting its sign, the exact floor formula is
+\begin{equation}\label{eq:s6cusp-native-count-piecewise}
+ N_{\eta,R}(E)=
+ \begin{cases}
+ 0,&E<E_{R;0,0},\\[0.4em]
+ 6\displaystyle\sum_{n_+=0}^{
+   \left\lfloor L_R(E)/(2\mathcal B_{R,+})\right\rfloor}
+ \left[
+  1+\left\lfloor
+  \dfrac{L_R(E)-2\mathcal B_{R,+}n_+}
+        {2\mathcal B_{R,-}}
+  \right\rfloor
+ \right],&E\ge E_{R;0,0}.
+ \end{cases}
+\end{equation}
+In particular,
+\begin{equation}\label{eq:s6cusp-native-count-threshold-values}
+ \operatorname{Tr}\mathbf1_{(-\infty,E_{R;0,0})}(H_{\eta,R})=0,
+ \qquad
+ N_{\eta,R}(E_{R;0,0})=6.
+\end{equation}
+Replacing \(L_R(E)\) by
+\((E-E_{R;0,0})_+\) inside the second line while using that line for every
+\(E>0\) would identify the two distinct cases in
+\eqref{eq:s6cusp-native-count-threshold-values}: the zero value of the
+positive part would retain the index pair \((0,0)\) even below the spectrum.
+
+\begin{theorem}[Fixed-energy accumulation with the threshold retained]
+\label{thm:s6cusp-native-fixed-energy-count}
+For every fixed \(E>0\), as \(R\to\infty\),
+\begin{align}
+ N_{\eta,R}(E)
+ &=\frac{\delta_R}{32\pi^2}
+   \bigl(E-E_{R;0,0}\bigr)^2+O_E(R)
+ \label{eq:s6cusp-native-fixed-energy-count-ground}\\
+ &=\frac{E^2\delta_R}{32\pi^2}+O_E(R).
+ \label{eq:s6cusp-native-fixed-energy-count-leading}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:s6cusp-native-ground-energy} and
+\eqref{eq:s6cusp-native-frequency-asymptotics} give
+\(E_{R;0,0}=14\pi R^{-1}+O(R^{-2})\).  Hence every fixed \(E>0\)
+eventually satisfies \(E>E_{R;0,0}\), and the second branch of
+\eqref{eq:s6cusp-native-count-piecewise} applies.  It counts the integer
+points in the closed right triangle
+\begin{equation}\label{eq:s6cusp-native-count-triangle}
+ \left\{(x,y)\in\mathbb R_{\ge0}^2:
+ 2\mathcal B_{R,+}x+2\mathcal B_{R,-}y
+ \le E-E_{R;0,0}\right\}.
+\end{equation}
+Its area, with both unequal intercepts retained, is
+\begin{equation}\label{eq:s6cusp-native-count-triangle-area}
+ \frac{(E-E_{R;0,0})^2}
+ {8\mathcal B_{R,+}\mathcal B_{R,-}}.
+\end{equation}
+Attach the half-open unit square
+\([n_+,n_++1)\times[n_-,n_-+1)\) to each counted lattice point.
+The symmetric difference between their union and the triangle is contained
+in a fixed-width neighborhood of the three boundary segments.  Its area is
+bounded by a universal constant times the perimeter plus one.  The two axis
+intercepts are
+\begin{equation*}
+ \frac{E-E_{R;0,0}}{2\mathcal B_{R,+}},
+ \qquad
+ \frac{E-E_{R;0,0}}{2\mathcal B_{R,-}},
+\end{equation*}
+and are \(O_E(R)\), so the lattice-point discrepancy is \(O_E(R)\).
+Multiplication by six and the exact identity
+\(\mathcal B_{R,+}\mathcal B_{R,-}=24\pi^2/\delta_R\)
+prove \eqref{eq:s6cusp-native-fixed-energy-count-ground}.  Finally,
+\begin{align*}
+ \delta_R\left[(E-E_{R;0,0})^2-E^2\right]
+ &=-2E\delta_RE_{R;0,0}
+   +\delta_RE_{R;0,0}^2\\
+ &=O_E(R),
+\end{align*}
+because \(\delta_R=R^2+O(R)\) and
+\(E_{R;0,0}=14\pi R^{-1}+O(R^{-2})\).  This proves
+\eqref{eq:s6cusp-native-fixed-energy-count-leading}.
+\end{proof}
+
+\subsection{The native topological split \(SU(2)\) saddle}
+\label{subsec:s6cusp-native-split-su2}
+
+Form the rank-two bundle
+\begin{equation}\label{eq:s6cusp-native-split-bundle}
+ \mathcal E_{\eta,R}:=
+ \mathcal L_{\eta,R}\oplus\mathcal L_{\eta,R}^{-1}.
+\end{equation}
+The determinant trivialization is the evaluation pairing between the two
+summands.  Retaining both Chern roots gives
+\begin{align}
+ c(\mathcal E_{\eta,R})
+ &=(1+\eta_R)(1-\eta_R)=1-\eta_R^2,
+ \label{eq:s6cusp-native-split-total-chern}\\
+ c_1(\mathcal E_{\eta,R})&=0,
+ &c_2(\mathcal E_{\eta,R})&=-\eta_R^2,
+ &\int_{F_R}c_2(\mathcal E_{\eta,R})&=-12.
+ \label{eq:s6cusp-native-split-c2}
+\end{align}
+Thus this split \(SU(2)\) bundle is not the trivial rank-two bundle: a bundle
+isomorphism would pull back the zero second Chern class of the latter to the
+nonzero class in \eqref{eq:s6cusp-native-split-c2}.
+
+Put
+\begin{equation}\label{eq:s6cusp-native-Hmag}
+ H_{\mathrm{mag}}:=\operatorname{diag}(i,-i),
+ \qquad
+ \langle X,Y\rangle_{\mathfrak{su}(2)}
+ :=-\frac12\operatorname{Tr}(XY),
+\end{equation}
+so that \(\lVert H_{\mathrm{mag}}\rVert=1\).  The direct-sum connection
+\begin{equation}\label{eq:s6cusp-native-split-connection}
+ A_{\eta,R}:=
+ \nabla_{\eta,R}\oplus\nabla_{\eta,R}^{-1}
+\end{equation}
+has the exact curvature
+\begin{equation}\label{eq:s6cusp-native-split-curvature}
+ F_{A_{\eta,R}}=-2\pi\eta_RH_{\mathrm{mag}}.
+\end{equation}
+All coefficients of \(F_{A_{\eta,R}}\) in the covering coordinates are
+constant, and both connection summands commute with
+\(H_{\mathrm{mag}}\).  Therefore
+\begin{equation}\label{eq:s6cusp-native-split-YM-equations}
+ \dd_{A_{\eta,R}}F_{A_{\eta,R}}=0,
+ \qquad
+ \dd_{A_{\eta,R}}^*F_{A_{\eta,R}}=0.
+\end{equation}
+The first identity is also the Bianchi identity; the second follows directly
+from the constant canonical coefficients and the flat covering metric.
+
+Use throughout this subsection the action
+\begin{equation}\label{eq:s6cusp-native-YM-action}
+ \operatorname{YM}_R(A):=
+ \frac1{2g_{\mathrm{YM}}^2}
+ \int_{F_R}\lVert F_A\rVert^2\operatorname{vol}_{g_R}.
+\end{equation}
+
+\begin{theorem}[Exact action and exact topological excess]
+\label{thm:s6cusp-native-split-action}
+The Yang--Mills critical connection \(A_{\eta,R}\) satisfies
+\begin{align}
+ \operatorname{YM}_R(A_{\eta,R})
+ &=\frac{\delta_R}{2g_{\mathrm{YM}}^2}
+   \left(\mathcal B_{R,+}^2+\mathcal B_{R,-}^2\right)
+ \label{eq:s6cusp-native-action-frequencies}\\
+ &=\frac{2\pi^2}{g_{\mathrm{YM}}^2\delta_R}
+   \left(p_R^2+36T_R^2+72m_R^2\right)
+ \label{eq:s6cusp-native-action-coordinates}\\
+ &=\frac{24\pi^2}{g_{\mathrm{YM}}^2}
+   +\frac{2\pi^2(p_R+6T_R)^2}
+   {g_{\mathrm{YM}}^2\delta_R}.
+ \label{eq:s6cusp-native-action-excess}
+\end{align}
+Along the source radial cusp,
+\begin{equation}\label{eq:s6cusp-native-action-cusp}
+ \operatorname{YM}_R(A_{\eta,R})
+ =\frac{74\pi^2}{g_{\mathrm{YM}}^2}
+  +\frac{70\pi^2d_0}{g_{\mathrm{YM}}^2R}
+  +O(R^{-2}).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+In the positive canonical planes, the two signed coefficients of \(\eta_R\)
+have absolute values
+\(\mathcal B_{R,+}/(2\pi)\) and
+\(\mathcal B_{R,-}/(2\pi)\).  Equations
+\eqref{eq:s6cusp-native-Hmag} and
+\eqref{eq:s6cusp-native-split-curvature} therefore give
+\begin{equation*}
+ \lVert F_{A_{\eta,R}}\rVert^2
+ =\mathcal B_{R,+}^2+\mathcal B_{R,-}^2.
+\end{equation*}
+The marked Euclidean volume is
+\(|\det P_R|=\delta_R\), proving
+\eqref{eq:s6cusp-native-action-frequencies}.  Since the signed canonical
+coefficients are the eigenvalues of \(K_R/\delta_R\),
+\begin{equation*}
+ \kappa_{R,+}^2+\kappa_{R,-}^2
+ =\operatorname{Tr}(K_R^2)
+ =p_R^2+36T_R^2+72m_R^2.
+\end{equation*}
+Substitution proves \eqref{eq:s6cusp-native-action-coordinates}.  Direct
+expansion, with \(p_R,T_R,m_R\) retained, gives
+\begin{equation}\label{eq:s6cusp-native-action-coordinate-decomposition}
+ p_R^2+36T_R^2+72m_R^2
+ =12(6m_R^2-p_RT_R)+(p_R+6T_R)^2
+ =12\delta_R+(p_R+6T_R)^2.
+\end{equation}
+This proves \eqref{eq:s6cusp-native-action-excess}.
+
+For the radial expansion, equations
+\eqref{eq:s6cusp-imaginary-identities} and
+\eqref{eq:s6cusp-delta-two-term-expansion} retain
+\begin{align*}
+ p_R+6T_R
+ &=5R+(d_0+5h_0)+O(e^{-2\pi R}),\\
+ \delta_R
+ &=R^2+(2h_0-d_0)R
+   +(h_0^2-d_0h_0+6m_0^2)+O(Re^{-2\pi R}).
+\end{align*}
+Long division without deleting either displayed polynomial yields
+\begin{equation*}
+ \frac{(p_R+6T_R)^2}{\delta_R}
+ =25+\frac{35d_0}{R}+O(R^{-2}).
+\end{equation*}
+Inserting this in \eqref{eq:s6cusp-native-action-excess} proves
+\eqref{eq:s6cusp-native-action-cusp}.
+\end{proof}
+
+\subsection{Complete Coulomb-reduced Jacobi index of the native saddle}
+\label{subsec:s6cusp-native-jacobi-index}
+
+Let
+\begin{equation}\label{eq:s6cusp-native-adjoint-root-splitting}
+ \operatorname{ad}(\mathcal E_{\eta,R})_{\mathbb C}
+ =\underline{\mathbb C}H_{\mathrm{mag}}
+ \oplus\mathcal L_{\eta,R}^{2}E_+
+ \oplus\mathcal L_{\eta,R}^{-2}E_-,
+ \qquad
+ [H_{\mathrm{mag}},E_\pm]=\pm2iE_\pm.
+\end{equation}
+The root-line Chern matrix is \(2E_\eta\), and therefore
+\begin{equation}\label{eq:s6cusp-native-root-pfaffian}
+ \left|\operatorname{Pf}(2E_\eta)\right|
+ =4\left|\operatorname{Pf}(E_\eta)\right|=24.
+\end{equation}
+Applying the proved oscillator construction of
+\cref{thm:s6cusp-native-four-dimensional-landau} to
+\(\mathcal L_{\eta,R}^{2}\) gives scalar root levels
+\begin{equation}\label{eq:s6cusp-native-root-scalar-levels}
+ \lambda^{(0)}_{R;n_+,n_-}
+ =2(2n_++1)\mathcal B_{R,+}
+  +2(2n_-+1)\mathcal B_{R,-},
+\end{equation}
+each with complex multiplicity twenty-four.
+
+On the complexified one-form Hilbert space define the full gauge-fixed
+Jacobi operator with domain \(H^2\) by
+\begin{equation}\label{eq:s6cusp-native-full-jacobi}
+ (\mathcal J^{\mathrm{gf}}_{\eta,R}a)_\nu
+ :=-D_{A_{\eta,R}}^\mu D_{A_{\eta,R},\mu}a_\nu
+   -2[F_{A_{\eta,R},\nu\mu},a_\mu].
+\end{equation}
+This is a symmetric elliptic Laplace-type operator on a smooth bundle over
+the compact torus, so its \(H^2\) realization is self-adjoint and has compact
+resolvent.  Define the closed Coulomb Hilbert subspace by
+\begin{equation}\label{eq:s6cusp-native-Coulomb-Hilbert-space}
+ \mathscr C_{\eta,R}:=
+ \left(\overline{\operatorname{im}
+  (\dd_{A_{\eta,R}}:H^1(\operatorname{ad}\mathcal E_{\eta,R})
+   \longrightarrow L^2(T^*F_R\otimes\operatorname{ad}\mathcal E_{\eta,R}))}
+ \right)^\perp.
+\end{equation}
+For an \(H^1\) one-form, membership is equivalent to the weak equation
+\(\dd_{A_{\eta,R}}^*a=0\).
+
+The Coulomb space reduces \(\mathcal J^{\mathrm{gf}}_{\eta,R}\).  To prove
+this, let \(\mathcal L^{\mathrm{YM}}_{\eta,R}\) denote the ungauged
+Yang--Mills Hessian differential at the critical connection.  Gauge
+covariance of
+\(A\mapsto\dd_A^*F_A\) gives, after differentiating the path
+\(\exp(t\phi)\cdot A_{\eta,R}\) at \(t=0\),
+\begin{equation}\label{eq:s6cusp-native-gauge-orbit-hessian-zero}
+ \mathcal L^{\mathrm{YM}}_{\eta,R}\dd_{A_{\eta,R}}\phi=0.
+\end{equation}
+The gauge-fixed operator is
+\(\mathcal J^{\mathrm{gf}}_{\eta,R}
+=\mathcal L^{\mathrm{YM}}_{\eta,R}
+ +\dd_{A_{\eta,R}}\dd_{A_{\eta,R}}^*\).
+Hence, on smooth zero-forms,
+\begin{equation}\label{eq:s6cusp-native-jacobi-gradient-intertwiner}
+ \mathcal J^{\mathrm{gf}}_{\eta,R}\dd_{A_{\eta,R}}
+ =\dd_{A_{\eta,R}}\Delta_{A_{\eta,R},0},
+ \qquad
+ \Delta_{A_{\eta,R},0}:=
+ \dd_{A_{\eta,R}}^*\dd_{A_{\eta,R}}.
+\end{equation}
+For smooth \(a\in\mathscr C_{\eta,R}\) and smooth \(\phi\), self-adjointness
+and \eqref{eq:s6cusp-native-jacobi-gradient-intertwiner} give
+\begin{align*}
+ \left\langle \dd_{A_{\eta,R}}\phi,
+ \mathcal J^{\mathrm{gf}}_{\eta,R}a\right\rangle
+ &=\left\langle
+ \mathcal J^{\mathrm{gf}}_{\eta,R}\dd_{A_{\eta,R}}\phi,a
+ \right\rangle\\
+ &=\left\langle
+ \dd_{A_{\eta,R}}\Delta_{A_{\eta,R},0}\phi,a
+ \right\rangle=0.
+\end{align*}
+Density and closedness prove invariance of \(\mathscr C_{\eta,R}\); the
+orthogonal complement is invariant as well.  The restricted operator
+\begin{equation}\label{eq:s6cusp-native-Coulomb-Jacobi}
+ \mathcal J^{\mathrm C}_{\eta,R}:=
+ \mathcal J^{\mathrm{gf}}_{\eta,R}\big|_{
+ \operatorname{Dom}(\mathcal J^{\mathrm{gf}}_{\eta,R})
+ \cap\mathscr C_{\eta,R}}
+\end{equation}
+is therefore self-adjoint with discrete spectrum.
+
+\begin{theorem}[Three negative bands and exact real Morse index]
+\label{thm:s6cusp-native-jacobi-index}
+There is \(R_4\) such that every \(R\ge R_4\) has
+\begin{equation}\label{eq:s6cusp-native-ratio-five-seven}
+ 5<\frac{\mathcal B_{R,+}}{\mathcal B_{R,-}}<7.
+\end{equation}
+For those \(R\), the complete negative spectrum of
+\(\mathcal J^{\mathrm C}_{\eta,R}\) consists of the three distinct
+eigenvalues
+\begin{align}
+ \nu_{R,n}
+ &:=2\left[(2n+1)\mathcal B_{R,-}-\mathcal B_{R,+}\right]
+ \label{eq:s6cusp-native-negative-bands}\\
+ &=\frac{4\pi}{\delta_R}
+ \left[n\Xi_R-(n+1)S_R\right],
+ \qquad n=0,1,2.
+ \label{eq:s6cusp-native-negative-bands-coordinates}
+\end{align}
+Every one of these eigenspaces has real dimension forty-eight.  Consequently
+\begin{equation}\label{eq:s6cusp-native-Morse-index}
+ \operatorname{index}_{\mathbb R}
+ (\mathcal J^{\mathrm C}_{\eta,R})=3\cdot48=144.
+\end{equation}
+Their leading cusp terms, together with the next positive member of the same
+branch, are
+\begin{align}
+ \nu_{R,0}&=-\frac{20\pi}{R}+O(R^{-2}),&
+ \nu_{R,1}&=-\frac{12\pi}{R}+O(R^{-2}),\notag\\
+ \nu_{R,2}&=-\frac{4\pi}{R}+O(R^{-2}),&
+ \nu_{R,3}&= \frac{4\pi}{R}+O(R^{-2}).
+ \label{eq:s6cusp-native-negative-band-cusp}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+The frequency ratio tends to six by
+\eqref{eq:s6cusp-native-frequency-asymptotics}; its strict containment in
+\((5,7)\) follows for all \(R\) beyond one fixed \(R_4\).
+
+Use the exact canonical coordinates supplied by
+\eqref{eq:s6cusp-native-orthogonal-map}.  On the \(E_+\) root line, the
+spin-curvature part of \eqref{eq:s6cusp-native-full-jacobi} acts on the
+\((\dd X_+,\dd Y_+)\) coefficients by
+\begin{equation}\label{eq:s6cusp-native-strong-spin-matrix}
+ \mathsf S_{R,+}
+ =4\mathcal B_{R,+}
+ \begin{pmatrix}0&i\\-i&0\end{pmatrix},
+\end{equation}
+and on the \((\dd X_-,\dd Y_-)\) coefficients by the same matrix with
+\(\mathcal B_{R,+}\) replaced by \(\mathcal B_{R,-}\).  Direct
+multiplication gives
+\begin{align*}
+ \mathsf S_{R,+}\binom{1}{i}
+ &=-4\mathcal B_{R,+}\binom{1}{i},&
+ \mathsf S_{R,+}\binom{1}{-i}
+ &=4\mathcal B_{R,+}\binom{1}{-i}.
+\end{align*}
+Thus the four constant circular one-form polarizations shift the scalar
+levels \eqref{eq:s6cusp-native-root-scalar-levels} by
+\(-4\mathcal B_{R,+},+4\mathcal B_{R,+},
+-4\mathcal B_{R,-},+4\mathcal B_{R,-}\), respectively.
+
+For the negative strong-plane polarization the complete level is
+\begin{equation}\label{eq:s6cusp-native-strong-negative-full-level}
+ 2\left[(2n_+-1)\mathcal B_{R,+}
+       +(2n_-+1)\mathcal B_{R,-}\right].
+\end{equation}
+When \(n_+\ge1\), both coefficients in brackets are positive.  When
+\(n_+=0\), negativity is equivalent to
+\begin{equation*}
+ 2n_-+1<\frac{\mathcal B_{R,+}}{\mathcal B_{R,-}}.
+\end{equation*}
+Under \eqref{eq:s6cusp-native-ratio-five-seven}, the odd integers satisfying
+this inequality are exactly \(1,3,5\), so
+\(n_-=0,1,2\).  The next odd integer is seven, and the strict upper bound in
+\eqref{eq:s6cusp-native-ratio-five-seven} makes the \(n_-=3\) level
+positive.  The weak-plane negative polarization has minimum
+\begin{equation*}
+ 2(\mathcal B_{R,+}-\mathcal B_{R,-})>0,
+\end{equation*}
+the two positive spin shifts are positive, and the Cartan sector is the
+nonnegative ordinary Hodge Laplacian.  This exhausts the Cartan summand, both
+root summands, and all four one-form polarizations.
+
+It remains to show that restricting to Coulomb gauge removes none of the
+negative spectrum.  On \(\mathcal L_{\eta,R}^{2}\), put
+\begin{equation*}
+ \mathfrak b_+:=
+ \frac{\Pi_{X_+}+i\Pi_{Y_+}}
+ {\sqrt{4\mathcal B_{R,+}}}.
+\end{equation*}
+Every \(n_+=0\) scalar state \(\phi_{0,n_-}\) is killed by
+\(\mathfrak b_+\).  Its negative-polarization one-form obeys the exact
+divergence identity
+\begin{align}
+ \dd_{A_{\eta,R}}^*
+ \left[\phi_{0,n_-}(\dd X_++i\dd Y_+)E_+\right]
+ &=-i\sqrt{4\mathcal B_{R,+}}
+   (\mathfrak b_+\phi_{0,n_-})E_+\notag\\
+ &=0.
+ \label{eq:s6cusp-native-negative-Coulomb-equation}
+\end{align}
+The Hermitian-adjoint \(E_-\) modes satisfy the conjugate equation.  Hence
+the complete negative spectral subspace of the full operator lies in the
+reducing Coulomb subspace.
+
+Equation \eqref{eq:s6cusp-native-root-pfaffian} and the root oscillator
+proof give complex dimension twenty-four for each \(E_+\) scalar joint
+level.  Hermitian adjunction identifies the \(E_-\) level with its complex
+conjugate.  If \(v_1,\ldots,v_{24}\) is a complex basis in the \(E_+\)
+level, then
+\begin{equation*}
+ v_j-v_j^\dagger,
+ \qquad i(v_j+v_j^\dagger),
+ \qquad 1\le j\le24,
+\end{equation*}
+are forty-eight real linearly independent anti-Hermitian eigenforms and
+span the real root eigenspace.  This proves the multiplicity and
+\eqref{eq:s6cusp-native-Morse-index}.  Substitution of the exact frequencies
+gives \eqref{eq:s6cusp-native-negative-bands-coordinates}; substitution of
+their retained cusp expansions gives
+\eqref{eq:s6cusp-native-negative-band-cusp}.
+\end{proof}
+
+The action excess and the lowest Jacobi branch satisfy the exact identity
+\begin{align}
+ \nu_{R,0}
+ &=-2(\mathcal B_{R,+}-\mathcal B_{R,-})
+  =-\frac{4\pi(p_R+6T_R)}{\delta_R},
+ \label{eq:s6cusp-native-lowest-instability}\\
+ \operatorname{YM}_R(A_{\eta,R})
+ -\frac{24\pi^2}{g_{\mathrm{YM}}^2}
+ &=\frac{\delta_R}{8g_{\mathrm{YM}}^2}\nu_{R,0}^2.
+ \label{eq:s6cusp-native-action-instability}
+\end{align}
+Indeed, the first equality follows from the exact frequency difference, and
+substitution into \eqref{eq:s6cusp-native-action-excess} proves the second.
+The spin-one shift and its sign agree with the homogeneous-background
+operator \(K_\pm=-D^2\pm2gB\) and its lowest negative branch in
+\cite[eqs.~(1)--(3)]{Oxman2010}; the compact bundle, the twenty-four theta
+states, the Coulomb equation, and the index \(144\) are proved above rather
+than imported from that comparison.
+
+\subsection{One decomposable native operator with continuous threshold zero}
+\label{subsec:s6cusp-native-direct-integral}
+
+The marking supplies an exact common Hilbert-space model.  Let
+\(\mathbb T_y^4:=\mathbb R_y^4/\mathbb Z^4\), let \(\mathcal L_\eta\) be
+the fixed line bundle with clutch factors
+\eqref{eq:s6cusp-native-line-clutch-one}--
+\eqref{eq:s6cusp-native-line-clutch-two}, and define
+\begin{equation}\label{eq:s6cusp-native-marking-diffeomorphism}
+ \varphi_R:\mathbb T_y^4\longrightarrow F_R,
+ \qquad
+ \varphi_R([y]):=[P_Ry].
+\end{equation}
+Its inverse is \([x]\mapsto[P_R^{-1}x]\), so it is a diffeomorphism and
+identifies \(\varphi_R^*\mathcal L_{\eta,R}\) with \(\mathcal L_\eta\).
+The pulled-back metric and volume form are
+\begin{equation}\label{eq:s6cusp-native-pulled-metric-volume}
+ \varphi_R^*g_R=(\dd y)^{\mathsf T}P_R^{\mathsf T}P_R\dd y,
+ \qquad
+ \varphi_R^*\operatorname{vol}_{g_R}
+ =\delta_R\dd y^1\dd y^2\dd y^3\dd y^4.
+\end{equation}
+Consequently
+\begin{equation}\label{eq:s6cusp-native-marking-unitary}
+ U_R:L^2(F_R,\mathcal L_{\eta,R};\operatorname{vol}_{g_R})
+ \longrightarrow
+ \mathscr K:=L^2(\mathbb T_y^4,\mathcal L_\eta;\dd^4y),
+ \qquad
+ (U_Rs)(y):=\delta_R^{1/2}s(P_Ry)
+\end{equation}
+is unitary.  Put
+\begin{equation}\label{eq:s6cusp-native-fixed-fibre-operator}
+ \widehat H_R:=U_RH_{\eta,R}U_R^{-1},
+ \qquad
+ \operatorname{Dom}(\widehat H_R)
+ =H^2(\mathbb T_y^4,\mathcal L_\eta).
+\end{equation}
+The metric matrix \(P_R^{\mathsf T}P_R\), its inverse, and the fixed
+connection coefficients make \(R\mapsto\widehat H_R\) a smooth family from
+the common \(H^2\) domain to \(\mathscr K\).
+
+Fix \(R_0\) in the regular radial range and define
+\begin{align}
+ \mathscr H_\eta
+ &:=L^2([R_0,\infty),\dd R;\mathscr K),
+ \label{eq:s6cusp-native-direct-integral-Hilbert}\\
+ (\mathscr M_\eta\Psi)(R)&:=\widehat H_R\Psi(R),
+ \label{eq:s6cusp-native-direct-integral-action}\\
+ \operatorname{Dom}(\mathscr M_\eta)
+ &:=\left\{\Psi\in\mathscr H_\eta:
+ \begin{array}{l}
+ \Psi(R)\in H^2(\mathbb T_y^4,\mathcal L_\eta)
+ \text{ for almost every }R,\\
+ R\mapsto\widehat H_R\Psi(R)\text{ is measurable, and}\\
+ \displaystyle\int_{R_0}^{\infty}
+ \lVert\widehat H_R\Psi(R)\rVert_{\mathscr K}^2\dd R<\infty
+ \end{array}\right\}.
+ \label{eq:s6cusp-native-direct-integral-domain}
+\end{align}
+
+\begin{theorem}[Self-adjointness and continuous essential threshold]
+\label{thm:s6cusp-native-direct-integral-threshold}
+The operator \(\mathscr M_\eta\) is self-adjoint and nonnegative, and
+\begin{equation}\label{eq:s6cusp-native-direct-integral-spectrum-zero}
+ 0\in\operatorname{Spec}_{\mathrm{ess}}(\mathscr M_\eta)
+ \cap\operatorname{Spec}_{\mathrm c}(\mathscr M_\eta),
+ \qquad
+ \ker\mathscr M_\eta=\{0\}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The common-domain smoothness in
+\eqref{eq:s6cusp-native-fixed-fibre-operator}, the local elliptic estimate,
+and the resolvent identity imply local norm continuity of
+\(R\mapsto(\widehat H_R\pm i)^{-1}\).  In particular the resolvent field is
+strongly measurable and has norm at most one.  Define the bounded operators
+on \(\mathscr H_\eta\)
+\begin{equation*}
+ (\mathscr R_\pm\Psi)(R):=
+ (\widehat H_R\pm i)^{-1}\Psi(R).
+\end{equation*}
+For \(\Phi=\mathscr R_\pm\Psi\),
+\begin{equation*}
+ \widehat H_R\Phi(R)=\Psi(R)\mp i\Phi(R),
+\end{equation*}
+so \(\Phi\) belongs to
+\(\operatorname{Dom}(\mathscr M_\eta)\) and
+\((\mathscr M_\eta\pm i)\Phi=\Psi\).  Fibrewise integration proves
+symmetry of \(\mathscr M_\eta\); surjectivity of both
+\(\mathscr M_\eta\pm i\) proves self-adjointness.  Equation
+\eqref{eq:s6cusp-native-ground-lower-bound} proves nonnegativity.
+
+The rank-six ground projection is isolated at each finite \(R\) by the
+strict gap \(2\min\{\mathcal B_{R,+},\mathcal B_{R,-}\}\).  A local Riesz
+contour and the norm-continuous resolvent therefore give a smooth rank-six
+projection field.  These ranges form a smooth vector bundle over the
+interval \([R_0,\infty)\); the interval is contractible, so choose a smooth
+unit section \(R\mapsto\phi_R\) with
+\begin{equation}\label{eq:s6cusp-native-ground-section}
+ \widehat H_R\phi_R=E_{R;0,0}\phi_R,
+ \qquad \lVert\phi_R\rVert_{\mathscr K}=1.
+\end{equation}
+For every integer \(j>R_0\), put
+\begin{equation}\label{eq:s6cusp-native-Weyl-sequence}
+ \Psi_j(R):=\mathbf1_{[j,j+1]}(R)\phi_R.
+\end{equation}
+The vectors are orthonormal; hence they converge weakly to zero.  Equations
+\eqref{eq:s6cusp-native-ground-section} and
+\(E_{R;0,0}=14\pi R^{-1}+O(R^{-2})\) give
+\begin{equation}\label{eq:s6cusp-native-Weyl-residual}
+ \lVert\mathscr M_\eta\Psi_j\rVert^2
+ =\int_j^{j+1}E_{R;0,0}^2\dd R
+ =O(j^{-2})\longrightarrow0.
+\end{equation}
+Thus \((\Psi_j)\) is a singular Weyl sequence at zero, proving
+\(0\in\operatorname{Spec}_{\mathrm{ess}}(\mathscr M_\eta)\).
+
+If \(\mathscr M_\eta\Psi=0\), then
+\(\widehat H_R\Psi(R)=0\) for almost every \(R\).  The strict fibrewise
+bound
+\(\widehat H_R\ge E_{R;0,0}I>0\) forces \(\Psi(R)=0\) almost everywhere,
+so the kernel is zero.  A self-adjoint operator has no residual spectrum;
+zero is therefore in the continuous spectrum, which proves
+\eqref{eq:s6cusp-native-direct-integral-spectrum-zero}.
+\end{proof}
+
+The exact morphism from the radial family to this operator is the marking
+unitary \eqref{eq:s6cusp-native-marking-unitary} followed by the decomposable
+action \eqref{eq:s6cusp-native-direct-integral-action}.  There is no
+derivative in the \(R\)-direction: a horizontal kinetic completion would
+contain an additional differential expression such as \(-\partial_R^2\)
+together with a specified measure and boundary domain.  Hence
+\cref{thm:s6cusp-native-direct-integral-threshold} proves a continuous
+threshold for the displayed decomposable magnetic operator, not the
+spectrum of an unconstructed horizontal completion or of a reconstructed
+interacting Yang--Mills Hamiltonian.

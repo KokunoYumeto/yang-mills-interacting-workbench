@@ -1,0 +1,52 @@
+{
+  "schema": "sp1-bundle-bridge-exact-check-v1",
+  "checked_utc": "2026-09-30T08:48:41.297040+00:00",
+  "sympy_version": "1.13.1",
+  "source_sha256": "55980777d30ac1cde25f2967d3103fafd48f2e28a531367a4fc457c8fe3ec0fb",
+  "normalization": {
+    "T_a": "-i sigma_a / 2",
+    "phi_quaternion_basis": "(i,j,k) -> 2(T_1,T_2,T_3)",
+    "quaternion_bracket": "[i,j]=2k and cyclic permutations"
+  },
+  "checks": {
+    "phi_bracket_1_1": true,
+    "phi_bracket_1_2": true,
+    "phi_bracket_1_3": true,
+    "phi_bracket_2_1": true,
+    "phi_bracket_2_2": true,
+    "phi_bracket_2_3": true,
+    "phi_bracket_3_1": true,
+    "phi_bracket_3_2": true,
+    "phi_bracket_3_3": true,
+    "phi_metric_1_1": true,
+    "phi_metric_1_2": true,
+    "phi_metric_1_3": true,
+    "phi_metric_2_1": true,
+    "phi_metric_2_2": true,
+    "phi_metric_2_3": true,
+    "phi_metric_3_1": true,
+    "phi_metric_3_2": true,
+    "phi_metric_3_3": true,
+    "local_nonabelian_curvature_coefficient": true,
+    "local_su2_curvature_is_4_beta2_T3": true,
+    "w_is_divergence_free": true,
+    "z_is_divergence_free": true,
+    "w_core_is_e1": true,
+    "z_core_is_e2": true
+  },
+  "derived_local_values": {
+    "w_on_chi_equals_one_region": [
+      "1",
+      "0",
+      "0"
+    ],
+    "z_on_chi_equals_one_region": [
+      "0",
+      "1",
+      "0"
+    ],
+    "phi_curvature_matrix": "Matrix([\n[-2*I*beta**2,           0],\n[           0, 2*I*beta**2]])"
+  },
+  "all_passed": true,
+  "scope": "Exact local Lie-algebra, metric-factor, curl-divergence, and commutator-curvature checks. Topological bundle results are proved in the retained TeX source and the bridge note."
+}

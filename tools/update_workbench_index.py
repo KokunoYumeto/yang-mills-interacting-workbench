@@ -157,19 +157,31 @@ def programmes() -> list[dict]:
             "title": "Yang–Mills research workbench",
             "human_entry": "yang-mills/README.md",
             "human_reader": "yang-mills/consolidation/20260921-fifth-reference/reader/yang_mills_fifth_reference_20260921.pdf",
-            "latest_continuation": "yang-mills/consolidation/20260921-fifth-reference/README.md",
+            "latest_continuation": "yang-mills/continuations/20260930-s6-ns-moment-map-bridge/README.md",
             "ai_entry": "yang-mills/AI_READING_INDEX.md",
             "source_directory": "yang-mills/",
-            "research_state_document": "yang-mills/consolidation/20260921-fifth-reference/README.md",
-            "source_manifest": "yang-mills/consolidation/20260921-fifth-reference/package/MANIFEST.json",
-            "source_intake": "yang-mills/consolidation/20260921-fifth-reference/checks/PUBLIC_VALIDATION.json",
-            "fresh_finite_checks": "yang-mills/consolidation/20260921-fifth-reference/checks/PUBLIC_VALIDATION.json",
+            "research_state_document": "yang-mills/continuations/20260930-s6-ns-moment-map-bridge/README.md",
+            "source_manifest": "yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PUBLIC_MANIFEST.json",
+            "source_intake": "yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PUBLIC_VALIDATION.json",
+            "fresh_finite_checks": "yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PUBLIC_VALIDATION.json",
             "foundation_edition_doi": "10.5281/zenodo.22678364",
             "foundation_edition_url": "https://doi.org/10.5281/zenodo.22678364",
             "edition_doi": "10.5281/zenodo.22883643",
             "edition_url": "https://doi.org/10.5281/zenodo.22883643",
             "originating_constructions": "ATTRIBUTION.md",
             "research_state": (
+                "The 30 September S6-reduced triality-to-profile continuation "
+                "repairs the first missing higher-domain morphism. It proves the "
+                "one-channel equivariant linear obstruction, constructs three "
+                "quadratic quaternionic moment maps and descends their sum to a "
+                "global bundle-valued spatial profile. Its zero subbundle and "
+                "vertical rank strata are explicit. The first three-colour core "
+                "has magnetic density 48 and exact source D^mu F_muj=-16 T_j; "
+                "that defect defines the next correction space. No source-free "
+                "quantum state, continuum reconstruction, gapless spectrum or "
+                "mass-gap contradiction is established. The complete proof, "
+                "research programmes, original source TeX, claim ledger, figures, "
+                "symbolic receipts and public manifest are preserved. "
                 "The fifth-reference successor evaluates the entire residual and "
                 "a convergent correction including its endpoint, with sufficient "
                 "original coupling threshold g^2>=1/(2 sqrt(alpha5)), approximately "
@@ -207,6 +219,7 @@ def programmes() -> list[dict]:
                 "and all its source bodies remain available."
             ),
             "description_basis": ["yang-mills/README.md", "yang-mills/AI_READING_INDEX.md",
+                                  "yang-mills/continuations/20260930-s6-ns-moment-map-bridge/README.md",
                                   "yang-mills/consolidation/20260916/CURRENT_RESEARCH.md",
                                   "yang-mills/consolidation/20260919/README.md",
                                   "yang-mills/consolidation/20260921/README.md",

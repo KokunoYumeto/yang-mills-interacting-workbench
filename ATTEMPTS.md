@@ -114,6 +114,14 @@ We controlled the residual left by that pulse comparison using its computed axia
 
 **Source:** Yang–Mills interacting workbench source edition (2026-09-09 / source revision 8dc1a52). Test the selected 9 September 2026 Yang–Mills source edition's explicit finite-box interacting system against quantum blocking, nonabelian interaction, vacuum, and continuum-limit requirements. Each route names the finite-box or lattice object it actually computes. The results concern selected channels, fixed boxes, or specified paths; they do not by themselves establish a four-dimensional mass gap.
 
+<a id="ym-s6-ns-moment-map"></a>
+
+### Map an S6-like retained domain into interacting Yang–Mills profiles
+
+We tested whether the retained \(S^6\) cusp and rank-24 triality bundle could supply the functionally similar higher domain proposed for a globally smooth gapless-state construction. The first chart-supported bump did not depend on a triality-bundle point, so it was not the needed map. Redoing the step gave an exact obstruction: every equivariant linear map to the adjoint colour bundle has one colour direction and zero commutator curvature. Three quadratic quaternionic moment maps overcome that obstruction and define a global bundle morphism with a rank-12 zero subbundle and vertical ranks `0, 3, 6, 9`. Its first three-colour core has nonzero curvature and magnetic density `48`, but its exact source is `D^μF_{μj} = -16T_j`. The source defect now defines the correction space to solve. A physical state, continuum reconstruction, and the programme's gapless conclusion remain unfinished.
+
+[Complete proof, sources, programme and checks](yang-mills/continuations/20260930-s6-ns-moment-map-bridge/)
+
 <a id="ym-quantum-blocking"></a>
 
 ### Quantum coarse-graining with retained memory

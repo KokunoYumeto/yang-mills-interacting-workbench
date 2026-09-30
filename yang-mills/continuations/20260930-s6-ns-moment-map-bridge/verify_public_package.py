@@ -1,0 +1,126 @@
+"""Verify the public S6/NS-to-Yang--Mills continuation package."""
+
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+MANIFEST = ROOT / "PUBLIC_MANIFEST.json"
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def collect_boole(value: object) -> list[bool]:
+    if isinstance(value, bool):
+        return [value]
+    if isinstance(value, dict):
+        result: list[bool] = []
+        for child in value.values():
+            result.extend(collect_boole(child))
+        return result
+    if isinstance(value, list):
+        result = []
+        for child in value:
+            result.extend(collect_boole(child))
+        return result
+    return []
+
+
+required = [
+    "README.md",
+    "PROOF.md",
+    "SP1_BUNDLE_BRIDGE.md",
+    "HIGHER_DOMAIN_PROGRAM.md",
+    "SPECTRAL_PROGRAM.md",
+    "CLAIM_LEDGER.md",
+    "SOURCE_PROVENANCE.md",
+    "checks/SP1_BUNDLE_BRIDGE_CHECK.json",
+    "checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json",
+    "checks/THREE_COLOUR_CURVATURE_CHECK.json",
+    "sources/higher_rung/s6_higher_rung_24d_preprint.tex",
+    "figures/S6_NS_MOMENT_MAP_BRIDGE.png",
+    "figures/S6_NS_MOMENT_MAP_BRIDGE.svg",
+    "PUBLIC_VALIDATION.json",
+    "PUBLIC_MANIFEST.json",
+]
+
+checks: dict[str, bool] = {}
+for relative in required:
+    checks[f"required:{relative}"] = (ROOT / relative).is_file()
+
+receipt_paths = [
+    ROOT / "checks" / "SP1_BUNDLE_BRIDGE_CHECK.json",
+    ROOT / "checks" / "SP1_MOMENT_MAP_BRIDGE_CHECK.json",
+    ROOT / "checks" / "THREE_COLOUR_CURVATURE_CHECK.json",
+]
+for receipt_path in receipt_paths:
+    receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+    checks[f"receipt:{receipt_path.name}:all_passed"] = receipt.get("all_passed") is True
+    receipt_booleans = collect_boole(receipt.get("checks", {}))
+    checks[f"receipt:{receipt_path.name}:every_check_true"] = bool(receipt_booleans) and all(
+        receipt_booleans
+    )
+
+source_path = ROOT / "sources" / "higher_rung" / "s6_higher_rung_24d_preprint.tex"
+checks["retained_source_sha256"] = (
+    sha256(source_path)
+    == "8c526746de9b56a4fcd0a274df0c470092cc82a16e49857df539a1c9d033956f"
+)
+
+png = (ROOT / "figures" / "S6_NS_MOMENT_MAP_BRIDGE.png").read_bytes()
+svg = (ROOT / "figures" / "S6_NS_MOMENT_MAP_BRIDGE.svg").read_text(encoding="utf-8")
+checks["figure_png_signature"] = png.startswith(b"\x89PNG\r\n\x1a\n")
+checks["figure_svg_signature"] = "<svg" in svg[:1000]
+
+proof = (ROOT / "PROOF.md").read_text(encoding="utf-8")
+for token in [
+    r"\operatorname{Hom}_{\operatorname{Sp}(1)}",
+    r"D\mu_e(a)D\mu_e(a)^{\mathsf T}=4|a|^2I_3",
+    r"\mathcal M_H",
+    r"\mathcal J_j=-8e_j",
+    r"J_j=-16T_j/g^2",
+]:
+    checks[f"proof_token:{token}"] = token in proof
+
+text_suffixes = {".md", ".json", ".py", ".tex", ".svg"}
+local_path_hits: list[str] = []
+windows_account_prefix = "C:" + chr(92) + "Users" + chr(92)
+slash_account_prefix = "C:/" + "Users/"
+for path in ROOT.rglob("*"):
+    if not path.is_file() or path.suffix.lower() not in text_suffixes:
+        continue
+    text = path.read_text(encoding="utf-8", errors="strict")
+    if windows_account_prefix in text or slash_account_prefix in text:
+        local_path_hits.append(path.relative_to(ROOT).as_posix())
+checks["no_machine_local_paths"] = not local_path_hits
+
+manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+listed = {entry["path"]: entry for entry in manifest["files"]}
+actual = {
+    path.relative_to(ROOT).as_posix()
+    for path in ROOT.rglob("*")
+    if path.is_file() and path.name != MANIFEST.name
+}
+checks["manifest_covers_every_other_file"] = set(listed) == actual
+for relative, entry in listed.items():
+    path = ROOT / relative
+    checks[f"manifest:{relative}:bytes"] = path.stat().st_size == entry["bytes"]
+    checks[f"manifest:{relative}:sha256"] = sha256(path) == entry["sha256"]
+
+failed = sorted(name for name, passed in checks.items() if not passed)
+result = {
+    "schema": "s6-ns-moment-map-public-package-verification-v1",
+    "file_count_excluding_manifest": len(actual),
+    "check_count": len(checks),
+    "local_path_hits": local_path_hits,
+    "all_passed": not failed,
+    "failed": failed,
+}
+print(json.dumps(result, indent=2, ensure_ascii=False))
+if failed:
+    raise SystemExit(1)

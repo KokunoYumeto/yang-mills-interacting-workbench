@@ -1,0 +1,68 @@
+{
+  "schema": "s6-ns-moment-map-public-validation-v1",
+  "date": "2026-09-30",
+  "result_scope": "Corrected global classical bundle morphism, its fibrewise rank data, the interacting core, and its exact nonzero Yang--Mills source.",
+  "claim_boundary": "No physical quantum state, source-free global solution, continuum reconstruction, gapless spectrum, or mass-gap contradiction is established.",
+  "receipts": [
+    {
+      "path": "checks/SP1_BUNDLE_BRIDGE_CHECK.json",
+      "sha256": "fdb0fb47658d24a1e4be114f4027dfe1277eec97e284dd852bb9036d38922a86",
+      "all_passed": true,
+      "recorded_boolean_checks": 24
+    },
+    {
+      "path": "checks/SP1_MOMENT_MAP_BRIDGE_CHECK.json",
+      "sha256": "e66c0834bc0e3fa9ed34cbd7b681f32f33471c21f7513c34fda2a7e343c8e5eb",
+      "all_passed": true,
+      "recorded_boolean_checks": 39
+    },
+    {
+      "path": "checks/THREE_COLOUR_CURVATURE_CHECK.json",
+      "sha256": "0e84bd4856453eaea8ecbc2c0c07a5feac1ecee844e337b2a1df9563d22f9b45",
+      "all_passed": true,
+      "recorded_boolean_checks": 20
+    }
+  ],
+  "all_symbolic_receipts_passed": true,
+  "retained_source": {
+    "path": "sources/higher_rung/s6_higher_rung_24d_preprint.tex",
+    "bytes": 301399,
+    "sha256": "8c526746de9b56a4fcd0a274df0c470092cc82a16e49857df539a1c9d033956f",
+    "expected_sha256": "8c526746de9b56a4fcd0a274df0c470092cc82a16e49857df539a1c9d033956f",
+    "identity_passed": true
+  },
+  "source_closure_file_count": 19,
+  "source_closure_files": [
+    "sources/claude/y6_side.tex",
+    "sources/claude/y9_open.tex",
+    "sources/claude/y9a_directions.tex",
+    "sources/higher_rung/s6_higher_rung_24d_preprint.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/common_d4_image.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_JM_cubic_extension.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_bibliography.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_cubic_arithmetic.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_leech.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_residue_fixed_neighbor.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_shared.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_triality_bridge.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/es_niemeier_wilson_cyclic.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/higher_rung_24d_continuation.tex",
+    "sources/higher_rung/supporting_materials/workbench/research/niemeier_umbral_shadow.tex",
+    "sources/navier_stokes/GAUGE_AND_NAVIER_STOKES_BRIDGE.md",
+    "sources/s6_cusp/tex/satellites/29_s6_cusp_gauge_spectral_chain.tex",
+    "sources/s6_cusp/tex/satellites/29a_native_magnetic_upgrade.tex",
+    "sources/spatial/spatial_continuum.tex"
+  ],
+  "principal_figure": {
+    "png_path": "figures/S6_NS_MOMENT_MAP_BRIDGE.png",
+    "png_bytes": 295976,
+    "png_sha256": "c0a92eca3608ec935e3d4d9c5adeab96c1931abcb0d5ac7a11a2eb4543b01366",
+    "png_signature_passed": true,
+    "svg_path": "figures/S6_NS_MOMENT_MAP_BRIDGE.svg",
+    "svg_bytes": 186164,
+    "svg_sha256": "985803cdf511e4f80639bd6fdc88173af09649ee1e16ba60dcbb2ecc1eb92a9a",
+    "svg_signature_passed": true,
+    "visual_inspection": "completed before publication"
+  },
+  "all_passed": true
+}

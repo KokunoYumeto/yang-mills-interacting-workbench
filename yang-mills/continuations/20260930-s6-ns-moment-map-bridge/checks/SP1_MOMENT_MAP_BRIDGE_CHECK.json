@@ -1,0 +1,109 @@
+{
+  "schema": "sp1-moment-map-bridge-exact-check-v1",
+  "checked_utc": "2026-09-30T08:48:42.292190+00:00",
+  "sympy_version": "1.13.1",
+  "script_sha256": "228bd3bb7538e89e7eaf92a029aecc07aca12efd5adba71bc11fff88718e9dbb",
+  "retained_source": "../sources/higher_rung/s6_higher_rung_24d_preprint.tex",
+  "retained_source_sha256": "8c526746de9b56a4fcd0a274df0c470092cc82a16e49857df539a1c9d033956f",
+  "retained_source_lines": {
+    "Sp1_actions": "5426-5433",
+    "associated_bundle_convention": "5576-5588",
+    "rank_24_bundle_and_splittings": "5590-5614"
+  },
+  "checks": {
+    "mu_i_is_imaginary": true,
+    "mu_i_norm_squared": true,
+    "mu_i_jacobian_gram": true,
+    "mu_i_rank_three_off_zero": true,
+    "mu_j_is_imaginary": true,
+    "mu_j_norm_squared": true,
+    "mu_j_jacobian_gram": true,
+    "mu_j_rank_three_off_zero": true,
+    "mu_k_is_imaginary": true,
+    "mu_k_norm_squared": true,
+    "mu_k_jacobian_gram": true,
+    "mu_k_rank_three_off_zero": true,
+    "mu_i_equivariant": true,
+    "mu_j_equivariant": true,
+    "mu_k_equivariant": true,
+    "w_1_is_divergence_free": true,
+    "w_1_core_value": true,
+    "w_2_is_divergence_free": true,
+    "w_2_core_value": true,
+    "w_3_is_divergence_free": true,
+    "w_3_core_value": true,
+    "core_F_12_equals_2k": true,
+    "core_F_23_equals_2i": true,
+    "core_F_31_equals_2j": true,
+    "core_quaternion_source_1": true,
+    "core_quaternion_source_2": true,
+    "core_quaternion_source_3": true,
+    "phi_bracket_1_1": true,
+    "phi_bracket_1_2": true,
+    "phi_bracket_1_3": true,
+    "phi_bracket_2_1": true,
+    "phi_bracket_2_2": true,
+    "phi_bracket_2_3": true,
+    "phi_bracket_3_1": true,
+    "phi_bracket_3_2": true,
+    "phi_bracket_3_3": true,
+    "core_su2_source_1": true,
+    "core_su2_source_2": true,
+    "core_su2_source_3": true
+  },
+  "derived": {
+    "moment_maps": {
+      "i": [
+        "a**2 + b**2 - c**2 - d**2",
+        "2*a*d + 2*b*c",
+        "-2*a*c + 2*b*d"
+      ],
+      "j": [
+        "-2*a*d + 2*b*c",
+        "a**2 - b**2 + c**2 - d**2",
+        "2*a*b + 2*c*d"
+      ],
+      "k": [
+        "2*a*c + 2*b*d",
+        "-2*a*b + 2*c*d",
+        "a**2 - b**2 - c**2 + d**2"
+      ]
+    },
+    "jacobian_gram": "4*(a^2+b^2+c^2+d^2)*I_3",
+    "jacobian_gram_determinant": "64*(a^2+b^2+c^2+d^2)^3",
+    "core_spatial_fields": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "core_quaternion_curvature": {
+      "F_12": "2k",
+      "F_23": "2i",
+      "F_31": "2j"
+    },
+    "core_quaternion_source": [
+      "-8i",
+      "-8j",
+      "-8k"
+    ],
+    "core_su2_source": [
+      "-16T_1",
+      "-16T_2",
+      "-16T_3"
+    ]
+  },
+  "scope": "Exact coordinate, equivariance, differential-rank, spatial-curl, curvature, and core-source checks.  The global associated-bundle proof and claim limits are in ../PROOF.md.",
+  "all_passed": true
+}
