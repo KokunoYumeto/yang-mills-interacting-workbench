@@ -160,5 +160,10 @@ These five accounts describe the 6 September 2026 mathematical checkpoint. The
 [complete frozen edition](https://doi.org/10.5281/zenodo.22678442), and
 [continuing Overleaf workspace](https://www.overleaf.com/read/rtmyqxyrzprn#fa24eb)
 provide the actual arguments and provenance. The archive does not, by this
-documentation, certify every global step of the S⁶ claim, establish a CDP20
-counterexample, or establish a Yang–Mills mass-gap result.
+documentation, establish a Yang–Mills mass-gap result. The S⁶ construction
+itself has an independent self-contained proof by
+[Philip Engel](https://arxiv.org/abs/2609.38442). Its one-parameter family of
+complex structures on S⁶ refutes CDP98 Corollary 4.2 and CDP20 Theorem 2.2 and
+Corollary 2.3. The earlier statement here that the archive did not establish a
+CDP20 counterexample was too cautious; see the
+[5 October status note](STATUS_2026-10-05.md).
