@@ -39,6 +39,16 @@ required = [
     "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md",
     "COMPACT_SUPPORT_CAUCHY_EVOLUTION.tex",
     "COMPACT_CAUCHY_TEX_COMPILE_STATUS.json",
+    "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md",
+    "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex",
+    "PERIOD_PHYSICAL_TEX_COMPILE_STATUS.json",
+    "RESULTS_20261008.md",
+    "checks/verify_period_physical_kernels.py",
+    "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
+    "figures/PERIOD_PHYSICAL_KERNELS.png",
+    "figures/PERIOD_PHYSICAL_KERNELS.svg",
+    "figures/period_physical_figure.py",
+    "figures/PERIOD_PHYSICAL_FIGURE_CHECK.json",
     "checks/verify_compact_cauchy.py",
     "checks/COMPACT_CAUCHY_CHECK.json",
     "figures/COMPACT_CAUCHY_EVOLUTION.png",
@@ -73,6 +83,7 @@ receipt_paths = [
     ROOT / "checks" / "THREE_COLOUR_CURVATURE_CHECK.json",
     ROOT / "checks" / "HIGHER_CARRIER_EVOLUTION_CHECK.json",
     ROOT / "checks" / "COMPACT_CAUCHY_CHECK.json",
+    ROOT / "checks" / "PERIOD_PHYSICAL_KERNEL_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -83,6 +94,12 @@ for receipt_path in receipt_paths:
     )
 
 source_path = ROOT / "sources" / "higher_rung" / "s6_higher_rung_24d_preprint.tex"
+period_receipt = json.loads((ROOT / "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json").read_text(encoding="utf-8"))
+checks["period_receipt_matches_current_proof"] = period_receipt["proof_sha256"] == sha256(ROOT / "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md")
+period_figure = json.loads((ROOT / "figures/PERIOD_PHYSICAL_FIGURE_CHECK.json").read_text(encoding="utf-8"))
+checks["period_figure_inspection_recorded"] = "inspected" in period_figure["visual_inspection"]
+for row in period_figure["files"]:
+    checks["period_figure_hash:" + row["file"]] = row["sha256"] == sha256(ROOT / "figures" / row["file"])
 checks["retained_source_sha256"] = (
     sha256(source_path)
     == "8c526746de9b56a4fcd0a274df0c470092cc82a16e49857df539a1c9d033956f"

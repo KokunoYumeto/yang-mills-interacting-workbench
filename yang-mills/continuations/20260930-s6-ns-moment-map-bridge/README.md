@@ -1,7 +1,7 @@
 # S6-reduced triality-to-profile bridge for the Yang–Mills gapless-state programme
 
-**Date:** 30 September 2026
-**Status:** the original compactly supported family now has global smooth finite-energy source-free classical evolution, by an exact application of Sung-Jin Oh’s theorem. Complete proofs here give its support, energy, parameter, bundle and holonomy maps. The physical quantum construction and continuum spectral programme remain active.
+**Date:** 8 October 2026
+**Status:** the original compactly supported family now has global smooth finite-energy source-free classical evolution, by an exact application of Sung-Jin Oh’s theorem. Complete proofs here give its support, energy, parameter, bundle and holonomy maps. The continuation now also constructs nonzero finite-lattice physical vectors, their complete kernels and an exact interacting return. The continuum spectral programme remains active.
 
 ## Programme goal
 
@@ -11,7 +11,7 @@ The construction starts with a global fibrewise polynomial map from the retained
 
 The [full compact-support Cauchy proof](COMPACT_SUPPORT_CAUCHY_EVOLUTION.md) applies [Sung-Jin Oh’s global theorem](https://arxiv.org/abs/1210.1557v2) to every original input, including its cutoff region and all four initial rank strata. It proves finite propagation, exact agreement with the homogeneous core inside its initial light cone, the full cutoff energy polynomial and its rank-12 zero set, smooth parameter dependence, bundle descent, dilation and actual link holonomies. For the equal-colour core, the sum of the two stated curvature-commutator squared norms remains at least 128 throughout that light cone. The [complete TeX source](COMPACT_SUPPORT_CAUCHY_EVOLUTION.tex) is available; [PDF compilation remains unverified](COMPACT_CAUCHY_TEX_COMPILE_STATUS.json) because the built-in compiler could not locate its standard platform directories.
 
-The earlier correction \(A=C+s^2S/2\) and its computed residual are retained in the [higher-carrier proof](HIGHER_CARRIER_AND_EVOLUTION.md). The new classical solution supplies the full correction \(A-C\), with the expanding support bound and every original cutoff term. The quantum state and spectral conclusion still require construction.
+The earlier correction \(A=C+s^2S/2\) and its computed residual are retained in the [higher-carrier proof](HIGHER_CARRIER_AND_EVOLUTION.md). The new classical solution supplies the full correction \(A-C\), with the expanding support bound and every original cutoff term. The finite physical-state construction is supplied below. The continuum state and spectral conclusion remain required.
 
 ![Support cones and the curvature-commutator lower bound](figures/COMPACT_CAUCHY_EVOLUTION.png)
 
@@ -132,7 +132,7 @@ The nonzero source is a proved obstruction, and it defines the next object rathe
  \right\}.
 \]
 
-The full Cauchy continuation constructs the correction \(A-C\) for every input, retaining all four quaternionic-line labels and the bundle transition law. Equations CE15–CE17 verify non-Abelian curvature for the equal-colour example. Equations CE34a and CE42–CE45 give the exact equal-field fibres and holonomy maps. The next calculation couples the complete original period and angular-monodromy data to these fields and constructs physical projected vectors with their actual Gram and Hamiltonian kernels.
+The full Cauchy continuation constructs the correction \(A-C\) for every input, retaining all four quaternionic-line labels and the bundle transition law. Equations CE15–CE17 verify non-Abelian curvature for the equal-colour example. Equations CE34a and CE42–CE45 give the exact equal-field fibres and holonomy maps. The period/kernel continuation now carries out that coupling and finite-state construction. Its PK54 complementary return supplies the next exact spectral calculation.
 
 ## Corrections to the earlier route
 
@@ -141,7 +141,7 @@ The audit found several scope errors and repaired each affected statement.
 - The earlier chart-supported bump profile showed that the receiving profile space was nonempty. It was independent of the rank-24 bundle point and therefore was not the required domain-to-profile map. The map \(\mathcal M_H\) above is the replacement.
 - The proved \(\operatorname{Sp}(1)\) reduction is a bundle over \(X\cong S^6\). No reduction of the tangent frame bundle of \(F_4/\operatorname{Spin}(8)\) has been proved.
 - The displayed spatial coefficients form a partial connection along the \(\mathbb R^3\) fibres. Section 4 of the [higher-carrier continuation](HIGHER_CARRIER_AND_EVOLUTION.md) now supplies the base components and computes every mixed curvature term.
-- Equations CE42–CE45 now construct link holonomies of the actual classical solution family. Physical gauge projection, a nonzero Hilbert-space vector, Hamiltonian dynamics, continuum reconstruction, uniqueness of the vacuum, interaction in the reconstructed theory, and spectral support at arbitrarily small positive energy remain to be established.
+- Equations CE42–CE45 now construct link holonomies of the actual classical solution family. PK24–PK45 construct physical projection, a nonzero vector orthogonal to the unique finite-lattice vacuum, the full Hamiltonian kernel and finite dynamics. Continuum reconstruction, its vacuum uniqueness, interaction and spectral support at arbitrarily small positive energy remain to be established.
 - The retained Navier–Stokes material supplies regular divergence-free profiles and exact curvature/current formulae. It does not identify fluid time with Yang–Mills Hamiltonian time, and its singular endpoint is excluded from the smooth target.
 
 The complete finding-by-finding record is [CLAIM_LEDGER.md](CLAIM_LEDGER.md), with a compact machine-readable companion in [CURRENT_CLAIM_DISPOSITIONS.json](CURRENT_CLAIM_DISPOSITIONS.json).
@@ -156,6 +156,7 @@ The [spectral programme](SPECTRAL_PROGRAM.md) sharpens the “locally gapped, gl
 
 | Step | File | Purpose |
 | --- | --- | --- |
+| Current | [PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md](PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) | Complete cusp coupling, finite physical vectors and kernels, corrected path, first electric layer and interacting return. |
 | First | [COMPACT_SUPPORT_CAUCHY_EVOLUTION.md](COMPACT_SUPPORT_CAUCHY_EVOLUTION.md) | Global classical Cauchy theorem application and complete proofs of propagation, energy, parameter, bundle, dilation and holonomy formulas. |
 | 0 | [HIGHER_CARRIER_AND_EVOLUTION.md](HIGHER_CARRIER_AND_EVOLUTION.md) | Exact higher-carrier pullback, full connection, complete temporal correction equation, Gauss-preserving path, and global homogeneous evolution. |
 | 1 | [PROOF.md](PROOF.md) | Complete corrected theorem, all maps, ranks, curvature, source calculation, and next correction space. |
@@ -167,7 +168,7 @@ The [spectral programme](SPECTRAL_PROGRAM.md) sharpens the “locally gapped, gl
 
 ## Reproduction
 
-The five symbolic calculations check the stated coordinate identities; the newest has 44 exact checks. They do not certify the analytical global theorem. Its source application and the complete new arguments are in the written proofs.
+The six symbolic calculations check the stated coordinate identities; the newest has 60 exact checks. They do not certify the analytical global theorem. Its source application and the complete new arguments are in the written proofs.
 
 ```bash
 python checks/verify_sp1_bundle_bridge.py
@@ -175,6 +176,7 @@ python checks/verify_sp1_moment_map_bridge.py
 python checks/verify_three_colour_curvature.py
 python checks/verify_higher_carrier_evolution.py
 python checks/verify_compact_cauchy.py
+python checks/verify_period_physical_kernels.py
 python build_public_records.py
 python verify_public_package.py
 ```
@@ -189,4 +191,23 @@ The published receipts are:
 - [PUBLIC_VALIDATION.json](PUBLIC_VALIDATION.json)
 - [PUBLIC_MANIFEST.json](PUBLIC_MANIFEST.json)
 
-The five symbolic checks require Python and SymPy. The package verifier uses only Python's standard library. Retained programme source files are under [sources/](sources/); exact original-author reading records and external source links are in [SOURCE_PROVENANCE.md](SOURCE_PROVENANCE.md).
+The six symbolic checks require Python and SymPy. The package verifier uses only Python's standard library. Retained programme source files are under [sources/](sources/); exact original-author reading records and external source links are in [SOURCE_PROVENANCE.md](SOURCE_PROVENANCE.md).
+
+## Finite physical-state continuation, 8 October 2026
+
+The [complete period and physical-kernel proof](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) now supplies the
+full angular pullback, exact physical gauge projection, actual Gram and
+Hamiltonian kernels, and a nonzero vector orthogonal to the interacting
+finite-lattice vacuum. Equations PK43–PK43g correct the joint path while
+retaining the same coupling and every original cutoff energy term.
+
+Theorem 9.1 identifies the complete first electric layer. Equations PK47–PK49
+strengthen the raw norm using all faces in both reflected core cubes.
+Equations PK50–PK54 retain the full magnetic operator, calculate its first
+compression and the exact complementary resolvent return. The continuum
+spectral measure, reconstruction and theory identification remain the active
+calculation; decreasing classical energy does not settle them.
+
+![Exact state map and interacting return](figures/PERIOD_PHYSICAL_KERNELS.png)
+
+[Complete TeX source](PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex), [sixty exact checks](checks/PERIOD_PHYSICAL_KERNEL_CHECK.json), [dated mathematical results](RESULTS_20261008.md), and [compilation status](PERIOD_PHYSICAL_TEX_COMPILE_STATUS.json) accompany the proof.

@@ -130,6 +130,41 @@
       "statement": "Exact dilation gives energy lambda^-1 times the original energy and support radius lambda R+|s|; the ordered link-holonomy map and its derivative and dilation laws are explicit.",
       "proof_locator": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md Sections 7-8, CE38-CE45",
       "scope": "Classical dilation and holonomy morphism; no physical Hilbert-space or continuum spectral assertion"
+    },
+    {
+      "result_id": "SZ-20261008-001",
+      "statement": "The original angular period matrix and covered bundle obey their full monodromy laws; determinant, inverse metric, scalar dual spectrum, counting bounds and physical-patch holonomy map are explicit.",
+      "scope": "Exact geometric and bundle calculation; no physical spectrum identified with scalar torus modes",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK1–PK23",
+      "proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md"
+    },
+    {
+      "result_id": "SZ-20261008-002",
+      "statement": "Actual classical link holonomies yield nonzero physical heat packets, exact Gram and full Hamiltonian kernels, and a nonzero reflection-odd vector orthogonal to the unique interacting finite-lattice vacuum.",
+      "scope": "Original finite open cubic lattice; fixed positive couplings and heat parameters",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK24–PK42",
+      "proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md"
+    },
+    {
+      "result_id": "SZ-20261008-003",
+      "statement": "The corrected joint path retains the same coupling in both energies and gives the complete classical energy coefficient 400/(kappa_* j); the original square-root dilation would increase that energy.",
+      "scope": "Full original I/J/K bracket retained; no quantum low-energy conclusion inferred",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK43–PK43g",
+      "proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md"
+    },
+    {
+      "result_id": "SZ-20261008-004",
+      "statement": "Elementary Wilson faces form the entire first physical electric eigenspace at eigenvalue 3; the remaining nonconstant spectrum has bottom exactly 9/2. Both core cubes give the raw-norm bound with coefficient 32 M_m.",
+      "scope": "Every face coefficient and the nonnegative complementary norm remain in the exact identity",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md Theorem 9.1 and PK47–PK49",
+      "proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md"
+    },
+    {
+      "result_id": "SZ-20261008-005",
+      "statement": "The complete magnetic face sum gives exact finite electric-layer matrices, an interacting ground-energy variational bound, and the exact complementary resolvent return with two bounds.",
+      "scope": "Actual vacuum shift and both couplings retained; uniform limiting spectral estimates remain unfinished",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK50–PK54",
+      "proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md"
     }
   ],
   "defined_spaces": {
@@ -243,7 +278,17 @@
     "checks/COMPACT_CAUCHY_CHECK.json",
     "figures/COMPACT_CAUCHY_EVOLUTION.png",
     "figures/COMPACT_CAUCHY_EVOLUTION.svg",
-    "figures/compact_cauchy_figure.py"
+    "figures/compact_cauchy_figure.py",
+    "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md",
+    "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex",
+    "PERIOD_PHYSICAL_TEX_COMPILE_STATUS.json",
+    "RESULTS_20261008.md",
+    "checks/verify_period_physical_kernels.py",
+    "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
+    "figures/PERIOD_PHYSICAL_KERNELS.png",
+    "figures/PERIOD_PHYSICAL_KERNELS.svg",
+    "figures/period_physical_figure.py",
+    "figures/PERIOD_PHYSICAL_FIGURE_CHECK.json"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -263,7 +308,13 @@
     "SZ-20260930-011",
     "SZ-20260930-012",
     "SZ-20260930-013",
-    "SZ-20260930-014"
+    "SZ-20260930-014",
+    "SZ-20261008-001",
+    "SZ-20261008-002",
+    "SZ-20261008-003",
+    "SZ-20261008-004",
+    "SZ-20261008-005"
   ],
-  "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim."
+  "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
+  "current_finite_state_boundary": "Complete finite physical vectors, full kernels, corrected joint path and exact interacting return; continuum endpoint active"
 }

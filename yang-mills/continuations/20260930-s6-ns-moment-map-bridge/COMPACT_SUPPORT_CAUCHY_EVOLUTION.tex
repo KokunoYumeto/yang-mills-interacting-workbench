@@ -4,7 +4,7 @@
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb,mathrsfs,booktabs,hyperref}
 \usepackage[margin=23mm]{geometry}
-\hypersetup{hidelinks,pdftitle={Global classical evolution of the original compactly supported family}}
+\hypersetup{hidelinks,pdftitle={Yang--Mills: complete research proofs}}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 \begin{document}
@@ -88,8 +88,8 @@ the subsection “Statement of the Main Theorem”, proves global existence and 
 temporal gauge for admissible data
 \(\overline A_i\in\dot H^1(\mathbb R^3)\cap L^3(\mathbb R^3)\),
 \(\overline E_i\in L^2(\mathbb R^3)\) satisfying
-\textbackslash{}(\textbackslash{}sum\_i(\textbackslash{}partial\_i\textbackslash{}overline E\_i+
-[\textbackslash{}overline A\_i,\textbackslash{}overline E\_i])=0\textbackslash{}).
+\(\sum_i(\partial_i\overline E_i+
+[\overline A_i,\overline E_i])=0\).
 Smooth data with all indicated Sobolev derivatives give a smooth solution;
 its derivatives retain the stated Sobolev regularity for every finite time.
 The companion
@@ -464,8 +464,8 @@ The Fourier symbol of \(\mathcal L\) is skew-Hermitian, since the curl
 operator is self-adjoint in \(L^2\). Thus \(e^{s\mathcal L}\) is an
 isometry on every such \(H^m\).
 The convolution formula for a product, the inequality
-\textbackslash{}(\textbackslash{}langle\textbackslash{}xi\textbackslash{}rangle\textasciicircum{}m\textbackslash{}leq2\textasciicircum{}\{m-1\}
-(\textbackslash{}langle\textbackslash{}eta\textbackslash{}rangle\textasciicircum{}m+\textbackslash{}langle\textbackslash{}xi-\textbackslash{}eta\textbackslash{}rangle\textasciicircum{}m)\textbackslash{}), and
+\(\langle\xi\rangle^m\leq2^{m-1}
+(\langle\eta\rangle^m+\langle\xi-\eta\rangle^m)\), and
 Cauchy–Schwarz give
 \[
  \|fg\|_{H^m}\leq C_m\|f\|_{H^m}\|g\|_{H^m},\qquad
@@ -474,8 +474,8 @@ Cauchy–Schwarz give
  \tag{CE27}
 \]
 To check the constant, the \(L^1\) norm of \(\widehat f\) is at most
-\textbackslash{}((\textbackslash{}int\textbackslash{}langle\textbackslash{}xi\textbackslash{}rangle\textasciicircum{}\{-2m\}d\textasciicircum{}3\textbackslash{}xi)\textasciicircum{}\{1/2\}
- \textbackslash{}|\textbackslash{}langle\textbackslash{}xi\textbackslash{}rangle\textasciicircum{}m\textbackslash{}widehat f\textbackslash{}|\_2\textbackslash{}).
+\((\int\langle\xi\rangle^{-2m}d^3\xi)^{1/2}
+ \|\langle\xi\rangle^m\widehat f\|_2\).
 The integral equals the Gamma quotient in (CE27), by polar coordinates
 and the substitution \(u=|\xi|^2\). Applying Young's inequality to
 each of the two convolution terms gives precisely the stated factor.
@@ -812,4 +812,19 @@ bound (CE17). The spatial example uses \(r=1,R=2\) only for drawing;
 the proof retains arbitrary \(0<r<R\). The plotted ODE is a numerical
 rendering of an exact analytical construction. The source is
 figures/compact\_cauchy\_figure.py.
+
+\subsection*{Finite physical-state continuation, 8 October 2026}
+
+The \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md}{complete period and physical-kernel proof} now supplies the
+full angular pullback, exact physical gauge projection, actual Gram and
+Hamiltonian kernels, and a nonzero vector orthogonal to the interacting
+finite-lattice vacuum. Equations PK43–PK43g correct the joint path while
+retaining the same coupling and every original cutoff energy term.
+
+Theorem 9.1 identifies the complete first electric layer. Equations PK47–PK49
+strengthen the raw norm using all faces in both reflected core cubes.
+Equations PK50–PK54 retain the full magnetic operator, calculate its first
+compression and the exact complementary resolvent return. The continuum
+spectral measure, reconstruction and theory identification remain the active
+calculation; decreasing classical energy does not settle them.
 \end{document}

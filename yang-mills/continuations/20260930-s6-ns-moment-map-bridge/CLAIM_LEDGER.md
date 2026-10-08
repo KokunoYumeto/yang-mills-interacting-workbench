@@ -352,3 +352,60 @@ The current programmes, claim overlay, machine ledger, daily bulletin,
 source ledger, cumulative TeX and reader paths carry the new classical
 boundary. The quantum endpoint and full period coupling remain active.
 Classical dilation is not promoted to a spectral claim.
+
+## S6NS-20261008-001 — restore the coupling in the joint path
+
+The earlier unpublished PK43 used \(\lambda_j=\sqrt j\) with
+\(g_j^2=\kappa_*/(200j)\). CE39's fixed-coupling law cannot erase CE22's
+\(g^{-2}\). The complete comparison is
+\(\mathscr E_{g_j}^{[\lambda_j]}=(g_{\rm ref}^2/(g_j^2\lambda_j))
+\mathscr E_{g_{\rm ref}}\). The earlier path therefore grows as
+\(200g_{\rm ref}^2\sqrt j/\kappa_*\) for every nonzero input.
+The corrected PK43 fixes \(\lambda_j=j^2\), \(T_j=j^6\), cover \(M_j=j^4\),
+and graph \(L_j=j^4\). PK43a–PK43g prove the entire box, support, cover and
+energy comparison, retaining the full I/J/K bracket and core lower bound.
+The prior draft is preserved in the private checkpoint; no published classical
+fixed-coupling identity is retracted.
+
+## S6NS-20261008-002 — Gram positivity and its exact domain
+
+The draft called the Gram kernel positive definite on unrestricted labels.
+Equal gauge orbits yield equal vectors. PK30 now states positive semidefiniteness
+there and proves strict positive definiteness for each finite set of distinct
+gauge orbits at fixed heat parameters: the heat map is injective on finite
+measures, and the orbit probability measures have disjoint compact supports.
+This strengthens the equal-field comparison of finding S6NS-20260930-023 while
+retaining its circle and spectator identifications.
+
+## S6NS-20261008-003 — all core faces strengthen the raw norm
+
+PK41's one-face lower bound has coefficient 16. Reflection doubles it.
+Theorem 9.1 proves that all elementary faces are the entire first physical
+electric layer. PK47 retains every original face coefficient and the full
+orthogonal remainder. PK48 uses both complete core cubes and yields
+\(32M_m e^{-6t}\sin^8(a/\lambda)\); PK49 supplies the explicit positive
+\(j^{-15}\) lower bound. It does not identify the actual asymptotic norm.
+The final proof does not assert that the complementary part is nonzero
+without a separate derivation.
+
+## S6NS-20261008-004 — evaluate the next interacting return
+
+The electric value 3 is not an eigenvalue assertion for the full Hamiltonian.
+PK50 retains the complete magnetic face sum. PK51–PK53 show that a vector
+confined to the first odd electric layer has actual excitation-energy mean
+\(d=2bM+3\kappa-E_0\), whose proved lower bound grows on the corrected path.
+The next calculation is carried out in PK54: it gives the exact block
+resolvent and upper/lower complementary-return estimates. The full original
+packet is still governed by PK44, PK45 and its complementary coefficients.
+No conclusion about a limiting mass gap follows from the finite compression.
+
+## Propagation of the 8 October finite-scale findings
+
+The corrected proof, current programmes, reader paths, source ledger, claim
+records, dated bulletin, cumulative TeX and inspected reproducible diagram
+carry these results. Earlier source editions remain intact. The research
+endpoint and the integrated lesson series remain required.
+
+Complete proofs: [PK1–PK54](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md). Human source conventions: [Brian C. Hall, arXiv:1707.02355v1](https://arxiv.org/abs/1707.02355v1) and [Benjamin Bahr and Thomas Thiemann, arXiv:0709.4636v1](https://arxiv.org/abs/0709.4636v1); exact comparisons in PK25–PK30.
+
+The complementary electric bound is attained at 9/2 by the six-link rectangle with corners (-1,-1,0), (1,-1,0), (1,0,0), (-1,0,0), in every original box L >= 1. Theorem 9.1 supplies its complete Casimir, nonzero-norm and orthogonality proof. This sharpness strengthens SZ-20261008-004 and preserves the PK47 lower estimate.

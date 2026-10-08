@@ -34,6 +34,7 @@ def main() -> None:
         "checks/THREE_COLOUR_CURVATURE_CHECK.json",
         "checks/HIGHER_CARRIER_EVOLUTION_CHECK.json",
         "checks/COMPACT_CAUCHY_CHECK.json",
+        "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -56,7 +57,7 @@ def main() -> None:
     )
     validation = {
         "schema": "s6-ns-moment-map-public-validation-v1",
-        "date": "2026-09-30",
+        "date": "2026-10-08",
         "result_scope": (
             "Corrected global classical bundle morphism, its fibrewise rank data, "
             "the interacting core, its exact nonzero static source, the higher-carrier "
@@ -64,10 +65,12 @@ def main() -> None:
             "global source-free homogeneous core evolution; exact application of Oh’s "
             "global theorem to the original compact-support data; complete proofs of "
             "propagation, energy-zero set, parameter dependence, bundle descent, dilation "
-            "and link holonomies."
+            "and link holonomies; full cusp coupling, physical finite-lattice "
+            "vectors, exact Gram and Hamiltonian kernels, corrected same-coupling "
+            "path, first electric layer and complete interacting return."
         ),
         "claim_boundary": (
-            "No physical quantum state, continuum "
+            "Finite physical quantum vectors are constructed. No continuum "
             "reconstruction, gapless spectrum, or mass-gap contradiction is established."
         ),
         "analytical_input": {
@@ -131,7 +134,7 @@ def main() -> None:
         )
     manifest = {
         "schema": "s6-ns-moment-map-public-manifest-v1",
-        "date": "2026-09-30",
+        "date": "2026-10-08",
         "root": "yang-mills/continuations/20260930-s6-ns-moment-map-bridge",
         "manifest_excludes_itself": True,
         "file_count": len(files),

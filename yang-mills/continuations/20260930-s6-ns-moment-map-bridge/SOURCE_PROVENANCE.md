@@ -87,3 +87,31 @@ The complete author archive and extracted source are retained privately.
 The paper's entire analytical proof is not claimed to have been audited.
 
 The disk-literature index was queried before the new source search. Its hits were routing records; the exact author TeX above supplies the analytical input. The full convention map is CE6, including the factor between the source and physical energies. The Cauchy application is not a new discovery of classical global Yang--Mills existence.
+
+## Finite physical kernels: exact heat conventions
+
+### Brian C. Hall, arXiv:1707.02355v1
+
+[Exact paper version](https://arxiv.org/abs/1707.02355v1) · [Original author source](https://arxiv.org/src/1707.02355v1).
+
+Archive SHA-256: 73bc661f07c9de11c882153ef7b039c56bc3f01b9e9b58136c3cec3276a70ed0; 21015 bytes.
+Author TeX: author.tex; SHA-256: 43544fe6d81e26a53d1a5bbf89a5536abef9f98284e75aa5f930e4d1f9759d30; 66215 bytes.
+
+Read coverage: lines 105-225: heat convention, real-label coherent states and SU(2) metric. Receiving calculation: PK27-PK30; exact rho_(t/2)=p_t comparison.
+The complete downloaded archive and extracted author files remain in the private
+reading archive. Only the specified passages were used; no whole-paper audit
+or PDF reading is asserted.
+
+### Benjamin Bahr and Thomas Thiemann, arXiv:0709.4636v1
+
+[Exact paper version](https://arxiv.org/abs/0709.4636v1) · [Original author source](https://arxiv.org/src/0709.4636v1).
+
+Archive SHA-256: 902792cc556acc4e3eb3c0a38b7ddf89de8b6269ca42aadea5870803f433b9fb; 1004277 bytes.
+Author TeX: GICS-II.tex; SHA-256: 765720dc1ff0d7bd72770fd3762dc65adef366a6c3a332cc5de4caa2264006c0; 171913 bytes.
+
+Read coverage: lines 275-374: graph gauge action, orthogonal Haar projection, packet and Casimir parameter. Receiving calculation: PK26-PK36; real-label group averaging and source parameter 2t.
+The complete downloaded archive and extracted author files remain in the private
+reading archive. Only the specified passages were used; no whole-paper audit
+or PDF reading is asserted.
+
+The existing disk-literature routing queries were read first. Their hits were not treated as paper reading. The original spatial source was re-read at lines 113–296 for PK1–PK25. The complete finite-state and first-electric-layer arguments are supplied in PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md; no novelty claim is made for heat-kernel states or group averaging.

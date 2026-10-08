@@ -802,3 +802,18 @@ bound (CE17). The spatial example uses \(r=1,R=2\) only for drawing;
 the proof retains arbitrary \(0<r<R\). The plotted ODE is a numerical
 rendering of an exact analytical construction. The source is
 figures/compact_cauchy_figure.py.
+
+## Finite physical-state continuation, 8 October 2026
+
+The [complete period and physical-kernel proof](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) now supplies the
+full angular pullback, exact physical gauge projection, actual Gram and
+Hamiltonian kernels, and a nonzero vector orthogonal to the interacting
+finite-lattice vacuum. Equations PK43–PK43g correct the joint path while
+retaining the same coupling and every original cutoff energy term.
+
+Theorem 9.1 identifies the complete first electric layer. Equations PK47–PK49
+strengthen the raw norm using all faces in both reflected core cubes.
+Equations PK50–PK54 retain the full magnetic operator, calculate its first
+compression and the exact complementary resolvent return. The continuum
+spectral measure, reconstruction and theory identification remain the active
+calculation; decreasing classical energy does not settle them.
