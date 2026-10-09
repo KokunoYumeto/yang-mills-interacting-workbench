@@ -612,3 +612,29 @@ Complete proofs: [PK177a–PK202](https://github.com/KokunoYumeto/yang-mills-int
 PK203–PK206 further prove actual rank two almost everywhere, an actual Lebesgue phase density, null boundary mass and positive definite conditional energy coefficients. The finite polynomial Gram and energy matrices have zero kernel for these original objects. The full operator identity is proved distributionally on the entire phase plane, retaining all boundary contributions. This strengthens the general construction in PK190–PK202 without a uniform ellipticity assertion.
 
 Complete strengthening: [PK203–PK206](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+## S6NS-20261009-008 — actual vacuum concentration and certified phase matrices
+
+PK190–PK206 constructed the phase matrices in the actual vacuum but did
+not evaluate their entries or control a replacement vacuum. PK207–PK211
+prove a stronger actual-vacuum statement on the unchanged path: even an
+electric cutoff proportional to the number of faces receives vanishing
+vacuum mass. The full vacuum energy has an explicit j^12 lower bound.
+The original excitation shift H-E0 remains intact.
+
+PK212–PK222 construct quantitative vacuum-cutoff comparisons and
+finite enclosures for all three actual phase matrices. These derive
+the missing approximation estimates; they do not assume an identified
+vacuum. The finite sums include all original words, derivative terms
+and every magnetic face. PK223–PK225 retain the entire complementary
+second moment and prove its degree limit. PK226–PK227 provide certified
+variational and raw spectral-weight intervals. Their shrinking-window
+lower endpoint has not yet been proved positive.
+
+Propagation: full proof and TeX, source/claim ledgers, daily bulletin,
+programmes, inspected figures and future YM-08 source map. Delivered
+YM-01–YM-03 contain no affected spectral or vacuum assertion. This
+strengthens the earlier cutoff and phase results; it does not invalidate
+their quantifiers or identify electric energy with excitation energy.
+
+Complete proof: [PK207–PK227](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).

@@ -685,5 +685,49 @@
     "affected_findings": [
       "SZ-20261009-022"
     ]
+  },
+  {
+    "finding_id": "SZ-20261009-024",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The actual vacuum mass below M/4096 electric energy vanishes on the original path, with an explicit 1/j bound; its full unshifted energy satisfies liminf E0,j/j^12 >= 3 kappa_*/512.",
+    "scope": "The Haar face tail retains all dependencies and all boundary counts. Electric-vacuum concentration is not an excitation-gap statement.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK207–PK211",
+    "affected_findings": [
+      "SZ-20261009-012",
+      "SZ-20261009-017"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-025",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The original score and physical electric gap give the explicit actual vacuum gap 3 kappa exp(-32 pi (b/kappa) M), complete L2/H1 cutoff-vacuum errors and an explicit finite cutoff for every requested accuracy.",
+    "scope": "Every finite original box and positive coupling; the bound is not uniform along the growing-volume path.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK212–PK216",
+    "affected_findings": [
+      "SZ-20261009-004",
+      "SZ-20261009-018"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-026",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "All actual phase Gram, energy and second-moment matrices have complete finite original-word approximations with proved operator-norm errors. An explicit electric cutoff gives errors at most 1/(2j) for every prescribed finite degree along the unchanged regulator path.",
+    "scope": "The original vacuum, potential and every complementary term remain. The very large finite matrices have not been numerically evaluated.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK217–PK222",
+    "affected_findings": [
+      "SZ-20261009-022",
+      "SZ-20261009-023"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-027",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The entire finite phase Hamiltonian residual has a proved matrix enclosure; increasing degree recovers the full residual outside the phase range. Actual finite variational energies and raw low-energy weights have certified receiving intervals.",
+    "scope": "Positivity of the shrinking-window lower endpoint remains unproved. The finite variational lower bound is not a lower bound for the full odd spectral bottom.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK223–PK227",
+    "affected_findings": [
+      "SZ-20261009-022",
+      "SZ-20261009-026"
+    ]
   }
 ]

@@ -177,3 +177,17 @@ original vacuum and all mixed terms. Their actual low-energy path
 estimates are the next calculation toward the full continuum endpoint.
 
 The same phase construction now has [proved full rank, an actual phase density, positive finite matrices and a complete distributional boundary identity](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md). These are exact finite-regulator results; their original-path coefficients remain to calculate.
+
+## Actual vacuum and certified phase matrices, 9 October 2026
+
+The [complete PK207–PK227 proof](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) bounds the actual vacuum mass
+below an electric cutoff proportional to the full face count and proves
+its vanishing on the original path. It retains the full vacuum energy
+and derives an explicit lower bound for that energy.
+
+Complete vacuum-cutoff comparisons now give finite original-word
+enclosures for the actual Gram, energy and second-moment matrices,
+including their full Hamiltonian residual. An explicit cutoff controls
+all three matrix errors on the unchanged path. The certified raw
+low-energy expression is now the next calculation toward the interacting
+continuum endpoint; positivity in a shrinking window is not assumed.

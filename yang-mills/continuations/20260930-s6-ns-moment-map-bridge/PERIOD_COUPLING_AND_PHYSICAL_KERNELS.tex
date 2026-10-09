@@ -11,8 +11,8 @@
 \begin{document}
 \section*{Full cusp coupling and physical kernels of the classical holonomy family}
 
-Reviewed edition, 9 October 2026: complete PK1–PK206 proofs,
-including PK109a, PK141a, PK143a and PK177a–PK177f, and 500 exact checks.
+Reviewed edition, 9 October 2026: complete PK1–PK227 proofs,
+including PK109a, PK141a, PK143a and PK177a–PK177f, and 564 exact checks.
 Original rooted-face weights and actual fourth-moment bounds are evaluated.
 The full reflected phase gives an actual large-amplitude raw mass of 1/4,
 with a different iterated weak-coupling limit and proved high-energy escape.
@@ -20,6 +20,10 @@ The actual two-phase space, its complete energy form, residual interaction
 and convergent finite variational matrices are constructed. The actual
 phase density, almost-everywhere full rank, positive finite Gram matrices
 and complete distributional boundary identity are proved.
+The actual vacuum leaves an extensive electric cutoff on the original path;
+its full energy has a proved lower bound. Complete finite approximations
+to its phase Gram, energy, second-moment and residual matrices now have
+explicit actual-vacuum errors, including a simultaneous-path cutoff.
 The original-path low-energy calculation and the interacting continuum
 endpoint remain active research.
 
@@ -4791,6 +4795,605 @@ integrated lesson series remain the programme goal.
 
 The grid is the full PK203 map at the displayed original regulator L=2,a=1,g=1. Its phase coordinates are not rescaled. PK204 proves the nonzero differential; PK205–PK206 prove actual absolute continuity, positive finite matrices and the operator identity with all boundary contributions. The plotted grid does not represent a computed vacuum density. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/phase_variational_figures.py}{Reproducible figure source}.
 
+\subsection*{9.32. Actual vacuum mass above an extensive electric cutoff}
+
+Keep all original objects of PK132: \(m=2L\), \(N=3m(m+1)^2\),
+\(M=3m^2(m+1)\), \(a,g>0\), \(\kappa=2g^2/a\),
+\(b=1/(2g^2a)\), \(H=\kappa H_0+b(2M-\mathcal W)\),
+\(\mathcal W=\sum_pW_p\), the physical unit vacuum \(\psi>0\),
+and \(d\mu=\psi^2dU\). In particular its full energy satisfies
+\(E_0\le\min\{2bM,3\sqrt{NM}/a\}\). No shift of \(H\) is made
+in the following electric estimates.
+
+We first calculate a Haar tail for the full face sum, without treating
+all faces as independent. Make a graph whose vertices are the original
+faces and whose edges join faces sharing a link. Each face has four
+links; each link belongs to at most four faces; distinct faces share
+at most one link. Hence this graph has degree at most twelve.
+Greedily assigning one of thirteen colours gives classes
+\(\mathcal F_1,\ldots,\mathcal F_{13}\) in which all link supports
+are disjoint. Empty classes are retained. In each class the traces
+are independent under product Haar, each has mean zero, and each
+lies in \([-2,2]\).
+
+For a mean-zero random variable \(Y\in[-2,2]\), convexity gives
+\[
+ \mathbb E e^{tY}\le
+ \mathbb E\left[\frac{2+Y}{4}e^{2t}
+                    +\frac{2-Y}{4}e^{-2t}\right]
+ =\cosh(2t)\le e^{2t^2}.
+\]
+The last inequality follows by integrating
+\((\log\cosh(2t))'=2\tanh(2t)\le4t\) for \(t\ge0\);
+evenness covers negative \(t\). Hölder's inequality, with all
+thirteen exponents equal to thirteen, now proves
+\[
+ \begin{split}
+ \int e^{t\mathcal W}\,dU
+ &\le\prod_{c=1}^{13}
+   \left(\int\exp\left[13t\sum_{p\in\mathcal F_c}W_p\right]dU
+                                                    \right)^{1/13}\\
+ &\le\exp(26Mt^2),\\
+ \int_{\{\mathcal W\ge M\}}dU
+ &\le \exp(-M/104).
+ \end{split}\tag{PK207}
+\]
+For the last line take \(t=1/52\) in the exponential Markov
+inequality: the full exponent is \(-M/52+26M/52^2=-M/104\).
+This calculation retains the actual dependent face collection.
+
+Let \(\mathsf P_\Lambda=\mathbf1_{[0,\Lambda]}(H_0)\) on the
+physical space, now for any \(\Lambda\ge0\). Let
+\(\mathsf P_\Lambda^{\rm all}\) be the full, ungauged product-space
+projection and \(D_\Lambda=\dim\operatorname{Ran}
+\mathsf P_\Lambda^{\rm all}\). In this subsection \(D_\Lambda\)
+is this dimension; the cutoff denominator of PK68 will below be
+written explicitly as \(\kappa\Lambda-2bM\). Every unit vector
+\(v\in\operatorname{Ran}\mathsf P_\Lambda\) satisfies
+\[
+ |v(U)|^2\le D_\Lambda,\qquad
+ D_\Lambda\le e^{16\Lambda}K_{16}(I)^N
+       \le\exp\!\left(16\Lambda+8Ne^{-12}\right).
+ \tag{PK208}
+\]
+Indeed the full electric basis of PK65 has constant reproducing
+diagonal \(D_\Lambda\): on a single spin-\(j\) block, summing the
+squared absolute values of the entries
+\(\sqrt{2j+1}D^j_{rs}(U)\) gives \((2j+1)^2\), by unitarity.
+Products and then the complete cutoff sum give the constant
+diagonal. Cauchy--Schwarz in the coefficients of \(v\) proves the
+first inequality; the physical subspace is contained in this full
+space. For every retained eigenvalue \(\lambda\le\Lambda\),
+\(1\le e^{16(\Lambda-\lambda)}\). Summing and retaining the
+whole product heat trace proves the second inequality.
+For its final bound put \(q=e^{-12}\). In the exact one-link
+series, with \(n=2j\ge1\),
+\[
+ \begin{split}
+ K_{16}(I)-1
+ &=\sum_{n\ge1}(n+1)^2e^{-4n(n+2)}
+ \le\sum_{n\ge1}(n+1)^2q^n\\
+ &=\frac{1+q}{(1-q)^3}-1\le8q,\qquad 0\le q\le1/16.
+ \end{split}
+\]
+The last rational inequality follows after multiplication by
+\((1-q)^3\): the difference \(8q(1-q)^3-(4q-3q^2+q^3)\)
+is \(q(4-21q+23q^2-8q^3)\ge0\) on this interval, since
+\(4-21/16-8/16^3>0\). Finally \(1+8q\le e^{8q}\).
+
+Define the actual, unshifted electric threshold
+\[
+ \Lambda_{\rm el}=\frac{M}{4096},\qquad
+ \alpha=\min\left\{1,\,6g^2\sqrt{\frac NM}\right\},\qquad
+ B_{\rm el}=\min\left\{1,
+           \left(\sqrt\alpha+e^{-M/416}\right)^2\right\}.
+ \tag{PK209}
+\]
+These give the actual vacuum estimates
+\[
+ \begin{split}
+ \|\mathsf P_{\Lambda_{\rm el}}\psi\|^2&\le B_{\rm el},\\
+ \langle\psi,H_0\psi\rangle
+     &\ge \frac{M}{4096}(1-B_{\rm el}),\\
+ E_0&\ge \frac{\kappa M}{4096}(1-B_{\rm el}).
+ \end{split}\tag{PK210}
+\]
+To prove them let \(A=\{\mathcal W\ge M\}\).
+On \(A^c\) the original potential is greater than \(bM\),
+so
+\(\mu(A^c)\le E_0/(bM)\le6g^2\sqrt{N/M}\);
+the probability bound supplies the additional cap one.
+For every unit \(v\) in the physical cutoff, PK207--PK208 give
+\[
+ \|\mathbf1_Av\|^2
+ \le\exp(16\Lambda_{\rm el}+8Ne^{-12}-M/104)
+ \le e^{-M/208}.
+\]
+Here \(N/M=(m+1)/m\le3/2\), including the original boundary
+links. The remaining numerical inequality is
+\[
+ \frac1{256}+12e^{-12}\le\frac1{208}.
+\]
+It follows from \(e>5/2\) and
+\(12(2/5)^{12}\le3/3328=1/208-1/256\);
+the latter is the integer inequality
+\(12\cdot2^{12}\cdot3328\le3\cdot5^{12}\).
+Splitting the original inner product over \(A\) and \(A^c\)
+and applying Cauchy--Schwarz gives
+\[
+ |\langle v,\psi\rangle|
+ \le \|\mathbf1_Av\|\,\|\mathbf1_A\psi\|
+        +\|\mathbf1_{A^c}v\|\,\|\mathbf1_{A^c}\psi\|
+ \le e^{-M/416}+\sqrt\alpha .
+\]
+Taking the supremum over this unit sphere proves the first
+line of PK210. Spectral calculus for \(H_0\) on its full
+complement gives the second. The original \(V\ge0\) and
+\(H=\kappa H_0+V\) give the third.
+
+On the unchanged path \(L_j=j^4\), \(a_j=1/(100j)\),
+\(g_j^2=\kappa_*/(200j)\), retain
+\[
+ \begin{gathered}
+ N_j=3(2j^4)(2j^4+1)^2,\quad
+ M_j=3(2j^4)^2(2j^4+1),\quad \kappa_j=\kappa_*,\\
+ \alpha_j=\min\left\{1,\frac{3\kappa_*}{100j}
+                         \sqrt{\frac{2j^4+1}{2j^4}}\right\},\\
+ B_{{\rm el},j}
+ =\min\left\{1,
+       \left(\sqrt{\alpha_j}+e^{-M_j/416}\right)^2\right\}
+       \longrightarrow0,\\
+ \limsup_{j\to\infty}j
+       \|\mathsf P_{M_j/4096}\psi_j\|^2
+       \le\frac{3\kappa_*}{100},\qquad
+ \liminf_{j\to\infty}\frac{E_{0,j}}{j^{12}}
+       \ge\frac{3\kappa_*}{512}.
+ \end{gathered}\tag{PK211}
+\]
+The limits follow directly from
+\(M_j=24j^{12}+12j^8\), with both terms retained in the
+finite estimates. The exponential term and its cross term
+vanish after multiplication by \(j\). In particular every
+fixed electric cutoff eventually lies below \(M_j/4096\)
+and has vanishing actual vacuum mass. The same is true of
+every varying cutoff bounded above by this displayed threshold.
+These statements concern \(H_0\) and the full \(E_0\).
+The actual excitation operator remains \(H-E_0\); PK211
+does not replace its spectral measure by an electric one.
+
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/ACTUAL_VACUUM_ELECTRIC_CONCENTRATION.png}\caption{Actual vacuum electric mass and full energy bounds}\end{figure}
+
+These curves evaluate the proved PK209–PK211 bounds with the displayed original path and kappa\_*=1. They are not sampled vacuum probabilities or excitation energies. All face and boundary terms remain in the plotted formulas. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/vacuum_matrix_figures.py}{Reproducible source}.
+
+\subsection*{9.33. A fully explicit vacuum gap and the complete cutoff comparison}
+
+We continue by making the actual vacuum approximation quantitative
+at every finite regulator, with no small-coupling assumption.
+The retained score estimate PK174 is in the metric for which the
+generators \(X_{e,\alpha}\) are orthonormal. Each group factor is
+the radius-two three-sphere and has diameter \(2\pi\).
+Join two configurations by changing one original link at a time
+along a shortest group geodesic. Integrating PK174 on each segment
+gives
+\[
+ \begin{split}
+ \operatorname{osc}\log\psi
+ &\le 2\pi\sum_e2r_e\xi
+      =16\pi\xi M,\qquad \xi=\frac b\kappa=\frac1{4g^4},\\
+ \Omega&=32\pi\xi M,\qquad
+ \frac{\max\psi^2}{\min\psi^2}\le e^\Omega,\qquad
+ e^{-\Omega}\le\psi^2(U)\le e^\Omega .
+ \end{split}\tag{PK212}
+\]
+Every face contributes four to \(\sum_er_e=4M\), including
+boundary faces. The final individual bounds use
+\(\int\psi^2dU=1\); they do not change that original convention.
+
+For every physical \(h\) of Haar mean zero,
+\(\int|\nabla h|^2dU\ge3\int|h|^2dU\).
+Here the constant three is the original physical electric gap:
+a nontrivial spin support admitting vertex invariants cannot
+have a degree-one vertex, since a single nontrivial irreducible
+representation has no invariant vector. Its finite support
+therefore contains a cycle. The original cubic graph has no
+cycle shorter than four links, each nontrivial link costs at
+least \(3/4\), and a fundamental plaquette has energy exactly
+three. Applying this argument to the complete Peter--Weyl
+decomposition of PK65 proves the assertion for the form domain.
+
+Write \(m_\psi=\min\psi^2\) and \(M_\psi=\max\psi^2\).
+For physical \(f\) in the weighted form domain, minimizing
+over its constant and then using the Haar mean gives
+\[
+ \begin{split}
+ \int|f-\mu(f)|^2d\mu
+ &\le M_\psi\int|f-\textstyle\int f\,dU|^2dU\\
+ &\le \frac{M_\psi}{3}\int|\nabla f|^2dU
+ \le\frac{M_\psi}{3m_\psi}
+                              \int|\nabla f|^2d\mu .
+ \end{split}
+\]
+Multiplication by the positive smooth \(\psi\) is a bijection
+of the fixed-regulator physical form domains, and the exact
+ground-state identity is PK154. Consequently the entire
+physical excitation gap, and hence also its odd restriction,
+obey
+\[
+ \delta_{\rm v}=3\kappa e^{-\Omega}>0,\qquad
+ H-E_0\ge\delta_{\rm v}
+          \bigl(I-|\psi\rangle\langle\psi|\bigr)
+       \quad\hbox{on the physical space}.
+ \tag{PK213}
+\]
+This bound uses the density ratio in PK212 once, not the
+product of its two less precise individual bounds.
+
+Return to the original physical cutoff PK65, taking
+\(\kappa\Lambda>2bM\). Keep its full matrix \(H_\Lambda\),
+both parities, \(u_\Lambda,e_\Lambda,w_\Lambda\) from
+PK68--PK69, and choose a unit eigenvector \(\phi_\Lambda\)
+at \(u_\Lambda\). Let
+\[
+ \overline E=2bM,\quad \ell=2bM,\qquad
+ \eta_\Lambda=\frac{w_\Lambda}{\delta_{\rm v}}
+ \le\frac{\ell^2}
+          {(\kappa\Lambda-2bM)\delta_{\rm v}} .
+ \tag{PK214}
+\]
+Whenever the final expression is less than one,
+\(\phi_\Lambda\) has a nonzero vacuum component. The lowest
+cutoff eigenspace is then one-dimensional: two orthonormal
+vectors in it would provide a two-dimensional subspace of
+energies less than \(E_0+\delta_{\rm v}\), contrary to PK213.
+Its symmetries are those of the vacuum, since its nonzero
+overlap with that vacuum excludes the other characters.
+In particular it can be chosen real and even. Choose its
+overall phase so that \(\langle\psi,\phi_\Lambda\rangle>0\)
+for the estimates below; computed quadratic expressions are
+independent of this phase.
+
+Let \(h_\Lambda=\phi_\Lambda-\psi\). The complete bounds are
+\[
+ \begin{split}
+ 1-|\langle\psi,\phi_\Lambda\rangle|^2&\le\eta_\Lambda,\\
+ \|h_\Lambda\|&\le\sqrt{2\eta_\Lambda},\\
+ \|\nabla h_\Lambda\|^2
+   &\le\frac{w_\Lambda+2\overline E\eta_\Lambda}{\kappa},\\
+ \left|\mu(F)-\langle\phi_\Lambda,F\phi_\Lambda\rangle\right|
+   &\le2\|F\|_\infty\sqrt{\eta_\Lambda}
+                    \quad(F\hbox{ bounded}).
+ \end{split}\tag{PK215}
+\]
+Indeed PK213 and
+\(\langle\phi_\Lambda,(H-E_0)\phi_\Lambda\rangle
+=u_\Lambda-E_0\le w_\Lambda\) prove the first.
+Writing the positive overlap as \(c\), the second follows from
+\(2(1-c)\le2(1-c^2)\).
+The excitation form of \(h_\Lambda\) is exactly that of
+\(\phi_\Lambda\), since it annihilates \(\psi\). Thus
+\(\langle h_\Lambda,Hh_\Lambda\rangle
+\le w_\Lambda+E_0\|h_\Lambda\|^2\).
+Since \(H\ge\kappa H_0\) and \(E_0\le\overline E\), this proves
+the third line. For the last line the difference of the two
+rank-one unit-vector projections has its two nonzero
+eigenvalues equal to
+\(\pm\sqrt{1-|\langle\psi,\phi_\Lambda\rangle|^2}\).
+This follows by writing their two-by-two matrices in the basis
+consisting of \(\psi\) and the orthogonal component of
+\(\phi_\Lambda\). Taking its trace against multiplication by
+\(F\) bounds the absolute value by twice that eigenvalue
+times \(\|F\|_\infty\). Approximation includes all bounded
+measurable \(F\).
+
+There is an explicit choice achieving any \(0<\varepsilon<1\):
+\[
+ \Lambda(\varepsilon)
+ =1+\left\lceil\max\left\{
+ 3,\frac{\,2bM+\ell^2/(\delta_{\rm v}\varepsilon^2)\,}
+                {\kappa}\right\}\right\rceil ,
+ \qquad \eta_{\Lambda(\varepsilon)}\le\varepsilon^2 .
+ \tag{PK216}
+\]
+This is a finite number for every original finite regulator.
+Its size is not claimed practical. All vacuum estimates are
+proved for the original \(H\), without identifying its vacuum
+with Haar, a Gaussian, or the cutoff eigenvector.
+
+\subsection*{9.34. Actual phase matrices with computed finite error bounds}
+
+Use the complete polynomials \(P_{pq}\) of PK199 and, for
+\(0\le q<p\le R\), define \(F_{pq}=P_{pq}\circ\Theta\).
+Let \(n=p+q\), \(T=4\beta_0S_1S_3>0\),
+\(\mathcal C=3\sum_eK_e^2\), and
+\(\mathcal D_0=3\sum_eQ_e\), retaining every original word
+occurrence in PK172. Define
+\[
+ \begin{gathered}
+ h_n(T)=
+ \begin{cases}0,&n=1,\\ n(n-1)T^{n-2},&n\ge2,\end{cases}\\
+ U_{pq}=2T^n,\qquad
+ V_{pq}=2nT^{n-1}\beta_0\sqrt{\mathcal C},\\
+ W_{pq}=2nT^{n-1}\beta_0\mathcal D_0
+                     +4h_n(T)\beta_0^2\mathcal C,\\
+ |F_{pq}|\le U_{pq},\qquad
+ |\nabla F_{pq}|\le V_{pq},\qquad
+ |H_0F_{pq}|\le W_{pq}.
+ \end{gathered}\tag{PK217}
+\]
+The separate \(n=1\) case retains its zero Hessian term.
+For each of the two first derivatives of \(P_{pq}\), the sum
+of absolute coefficients is \(p+q=n\); hence its bound is
+\(nT^{n-1}\). For each of its four second derivatives that
+sum is at most \(n(n-1)\). The original phase gradients
+are bounded by \(\beta_0\sqrt{\mathcal C}\), their two
+electric Laplacians by \(\beta_0\mathcal D_0\), and each
+\(|G_{ij}|\le\beta_0^2\mathcal C\).
+The full first and second chain rules, including all four
+Hessian terms and the original minus sign of \(H_0\), give
+PK217. Neither \(\mathcal C\) nor \(\mathcal D_0\) is replaced
+by a different word or a removed root segment.
+
+Write \(a,b\) for the complete pairs \((p,q),(s,t)\) in this
+finite index set. The following are entirely finite
+expressions from \(H_\Lambda,\phi_\Lambda\) and the original
+polynomials:
+\[
+ \begin{split}
+ \mathcal G^\Lambda_{ab}
+   &=\langle\phi_\Lambda,F_aF_b\phi_\Lambda\rangle,\\
+ \mathcal C^\Lambda_{ab}
+   &=\kappa\langle\phi_\Lambda,
+                    (\nabla F_a\cdot\nabla F_b)\phi_\Lambda\rangle,\\
+ Z^\Lambda_a&=[H,F_a]\phi_\Lambda
+       =\kappa\left[(H_0F_a)\phi_\Lambda
+                            -2\nabla F_a\cdot\nabla\phi_\Lambda\right],\\
+ \mathcal Q^\Lambda_{ab}
+   &=\langle Z^\Lambda_a,Z^\Lambda_b\rangle .
+ \end{split}\tag{PK218}
+\]
+Every spin matrix coefficient in the finite cutoff is a
+polynomial in the original link entries and their conjugates;
+the rooted words, \(q\), and the two phases are finite such
+polynomials as well. Left differentiation preserves these
+finite representation products. Thus every displayed Haar
+integral reduces to the exact finite entry projectors PK35.
+All links and reflected words remain in that calculation.
+The potential commutes with \(F_a\), which proves the stated
+commutator without removing it from \(H_\Lambda\) or from
+its eigenvector.
+
+The actual matrices are
+\[
+ \mathcal G_{ab}=\langle F_a\psi,F_b\psi\rangle,\qquad
+ \mathcal C_{ab}=\langle F_a\psi,(H-E_0)F_b\psi\rangle,\qquad
+ \mathcal Q_{ab}
+   =\langle(H-E_0)F_a\psi,(H-E_0)F_b\psi\rangle.
+ \tag{PK219}
+\]
+Here \(\mathcal G,\mathcal C\) are exactly PK200. For \(\mathcal Q\),
+\((H-E_0)F_a\psi=[H,F_a]\psi\), including the full actual
+vacuum energy. Put
+\[
+ \begin{split}
+ e_a&=\kappa W_a\sqrt{2\eta_\Lambda}
+       +2\sqrt{\kappa}\,V_a
+                    \sqrt{w_\Lambda+2\overline E\eta_\Lambda},\\
+ E_R^2&=\sum_a e_a^2,\qquad
+ A_R^2=\sum_a
+       \left(\kappa W_a+2\sqrt{\kappa\overline E}\,V_a\right)^2,\\
+ \epsilon_G&=2\sqrt{\eta_\Lambda}\sum_aU_a^2,\qquad
+ \epsilon_C=2\kappa\sqrt{\eta_\Lambda}\sum_aV_a^2,\qquad
+ \epsilon_Q=2A_RE_R+E_R^2 .
+ \end{split}\tag{PK220}
+\]
+Then in the original coefficient Euclidean norm,
+\[
+ \|\mathcal G-\mathcal G^\Lambda\|\le\epsilon_G,\qquad
+ \|\mathcal C-\mathcal C^\Lambda\|\le\epsilon_C,\qquad
+ \|\mathcal Q-\mathcal Q^\Lambda\|\le\epsilon_Q .
+ \tag{PK221}
+\]
+For a coefficient vector \(c\), the full polynomial
+\(F_c=\sum_ac_aF_a\) satisfies
+\(\|F_c\|_\infty^2\le(\sum_aU_a^2)\|c\|^2\) and
+\(\|\nabla F_c\|_\infty^2\le(\sum_aV_a^2)\|c\|^2\).
+Apply PK215 to these two real bounded multiplication
+functions. The supremum over coefficient vectors proves
+the first two Hermitian matrix bounds.
+For the third, PK215 and the exact commutator give
+\(\|[H,F_a](\phi_\Lambda-\psi)\|\le e_a\).
+Also \(H\ge\kappa H_0\) and
+\(\langle\phi_\Lambda,H\phi_\Lambda\rangle
+=u_\Lambda\le\overline E\) give
+\(\|Z^\Lambda_a\|\le\kappa W_a+
+2\sqrt{\kappa\overline E}V_a\).
+For arbitrary \(c\), Cauchy--Schwarz over the coefficient
+indices bounds the difference of the two resulting squared
+norms by \((2A_RE_R+E_R^2)\|c\|^2\). This proves the last
+matrix bound and includes the entire complementary
+Hamiltonian action in PK198.
+
+For completeness these errors can be driven to zero on the
+original simultaneous path by an explicit finite cutoff,
+even when the desired polynomial degree \(R_j\ge1\) varies.
+At each \(j\) use every original value in PK217 and set
+\[
+ \begin{gathered}
+ \Omega_j=\frac{320000\pi j^2M_j}{\kappa_*^2},\qquad
+ \delta_{{\rm v},j}=3\kappa_*e^{-\Omega_j},\qquad
+ \overline E_j=\ell_j=\frac{20000j^2M_j}{\kappa_*},\\
+ T_{R_j}^2=\sum_a
+    \left(\sqrt2\,\kappa_*W_a+
+             2\sqrt{\kappa_*}\,V_a
+                      \sqrt{\delta_{{\rm v},j}+2\overline E_j}\right)^2,\\
+ Z_{R_j}=\max\left\{1,\,
+       2\sum_aU_a^2,\,2\kappa_*\sum_aV_a^2,\,
+       2A_{R_j}T_{R_j}+T_{R_j}^2\right\},\qquad
+ \varepsilon_j=\frac1{2jZ_{R_j}},\\
+ \Lambda^{\rm mat}_j
+ =1+\left\lceil\max\left\{
+ 3,\frac{\overline E_j+
+          \ell_j^2/(\delta_{{\rm v},j}\varepsilon_j^2)}
+                 {\kappa_*}\right\}\right\rceil .
+ \end{gathered}\tag{PK222}
+\]
+The summation range is exactly \(0\le q<p\le R_j\);
+\(A_{R_j}\) is PK220 with the displayed path values.
+The scalar \(T_{R_j}\) in this equation is an error constant,
+not the phase-coordinate bound \(T\) in PK217.
+PK216 gives \(\eta\le\varepsilon_j^2\) and
+\(w\le\delta_{{\rm v},j}\varepsilon_j^2\), so
+\(E_{R_j}\le\varepsilon_jT_{R_j}\).
+Since \(\varepsilon_j\le1\), all three errors in PK221 are
+at most \(1/(2j)\). These are proved absolute operator-norm
+errors for the actual varying matrices. The cutoff may
+grow exponentially in \(\Omega_j\); no practical evaluation
+of these large matrices is claimed.
+
+\subsection*{9.35. Full residual matrices and certified low-energy receiving quantities}
+
+The complete Gram matrix is positive definite by PK205.
+Let \(J_Rc=\sum_ac_aF_a\psi\), so \(J_R^*J_R=\mathcal G_R\).
+Its exact physical range projection is
+\[
+ \Pi_R=J_R\mathcal G_R^{-1}J_R^*,\qquad
+ \Sigma_R=\mathcal Q_R
+               -\mathcal C_R\mathcal G_R^{-1}\mathcal C_R
+       =J_R^*(H-E_0)(I-\Pi_R)(H-E_0)J_R\ge0 .
+ \tag{PK223}
+\]
+Idempotence and self-adjointness of \(\Pi_R\) follow by
+inserting \(J_R^*J_R=\mathcal G_R\); its range is exactly
+that of \(J_R\). Every \(F_a\psi\) is smooth and in the
+domain of all powers needed in this identity. Expanding
+the projection proves the entire subtracted matrix.
+This is the residual of the full original Hamiltonian,
+with no invariant-subspace assumption.
+
+It too has a finite error enclosure. Once
+\[
+ g_\Lambda=\lambda_{\min}(\mathcal G^\Lambda_R),\qquad
+ a_\Lambda=g_\Lambda-\epsilon_G>0,
+\]
+define
+\[
+ \begin{split}
+ \Sigma^\Lambda_R
+   &=\mathcal Q^\Lambda_R
+        -\mathcal C^\Lambda_R
+          (\mathcal G^\Lambda_R)^{-1}\mathcal C^\Lambda_R,\\
+ \epsilon_\Sigma
+   &=\epsilon_Q+
+    \frac{\epsilon_C(2\|\mathcal C^\Lambda_R\|+\epsilon_C)}
+                      {a_\Lambda}
+    +\frac{\|\mathcal C^\Lambda_R\|^2\epsilon_G}
+                      {a_\Lambda g_\Lambda},\\
+ \|\Sigma_R-\Sigma^\Lambda_R\|&\le\epsilon_\Sigma .
+ \end{split}\tag{PK224}
+\]
+At fixed regulator and \(R\), success of this positivity
+test is guaranteed for all sufficiently large cutoffs:
+PK216--PK221 give norm convergence and PK205 gives
+\(\lambda_{\min}(\mathcal G_R)>0\).
+The inverse identity gives
+\(\|\mathcal G_R^{-1}-(\mathcal G^\Lambda_R)^{-1}\|
+\le\epsilon_G/(a_\Lambda g_\Lambda)\).
+Write \(\mathcal C_R=\mathcal C^\Lambda_R+D\) and expand
+both products. Bounding the two linear \(D\) terms and the
+quadratic \(D\) term with \(\|\mathcal G_R^{-1}\|\le
+1/a_\Lambda\), followed by the displayed inverse error,
+proves PK224. The finite \(\Sigma^\Lambda_R\) is an
+approximating matrix; it need not be positive. Its exact
+target is the positive matrix PK223.
+
+For a fixed polynomial \(f\) contained in some degree \(R_0\),
+the complete residual also satisfies
+\[
+ \|(I-\Pi_R)(H-E_0)Jf\|^2
+ \ \downarrow\ \|(I-JJ^*)(H-E_0)Jf\|^2
+       =\int|R_f|^2d\mu,\qquad R\ge R_0,\quad R\to\infty .
+ \tag{PK225}
+\]
+The polynomial spaces are nested and dense in the phase
+Hilbert space by PK199--PK201. Their projections therefore
+converge strongly to \(JJ^*\): for a vector in that range
+approximate in norm by a finite polynomial vector, use the
+projection contraction, and then pass to the limit; on its
+orthogonal complement every projection is zero. Squared
+residual norms decrease by the Pythagorean identity.
+Apply this to the actual vector \((H-E_0)Jf\) and use PK197.
+Thus the finite matrices retain both the higher-phase
+component and the complete coupling outside the phase range.
+No rate for the degree limit is asserted.
+
+The same computed matrices enclose the actual finite
+variational energy. At fixed regulator increase the electric
+cutoff until both
+\(\mathcal G^\Lambda-\epsilon_GI>0\) and
+\(\mathcal C^\Lambda-\epsilon_CI>0\). Termination follows
+from their proved positive definite limits. Then
+\[
+ \begin{split}
+ \lambda_R^-&=\min_{c\ne0}
+   \frac{c^*(\mathcal C^\Lambda-\epsilon_CI)c}
+        {c^*(\mathcal G^\Lambda+\epsilon_GI)c}
+       \le\lambda_R^{\rm ph}\\
+ &\le
+ \min_{c\ne0}
+   \frac{c^*(\mathcal C^\Lambda+\epsilon_CI)c}
+        {c^*(\mathcal G^\Lambda-\epsilon_GI)c}
+       =\lambda_R^+,\\
+ \Delta_{\rm odd}&\le\lambda_{\rm ph}\le\lambda_R^{\rm ph}.
+ \end{split}\tag{PK226}
+\]
+For each \(c\), PK221 bounds the numerator and denominator
+of its original Rayleigh quotient. Their positivity gives
+both displayed comparisons, and taking the minima proves
+the first two lines. PK201 gives the last line.
+In particular \(\lambda_R^-\) is a lower bound on this
+finite phase variational value; it is not a lower bound on
+the actual odd spectral bottom.
+
+Finally the full raw spectral measure of \(J_Rc\) is
+\(\nu_c(B)=\langle J_Rc,\mathbf1_B(H-E_0)J_Rc\rangle\).
+Its original mass and first moment are
+\(c^*\mathcal G_Rc\) and \(c^*\mathcal C_Rc\), with no
+rescaling of \(c\) or of the vector. Oddness removes the
+vacuum atom. For every energy \(s>0\),
+\[
+ \begin{split}
+ \nu_c((0,s])&\ge
+ \max\left\{0,\,
+  c^*(\mathcal G^\Lambda_R-\epsilon_GI)c
+  -\frac{c^*(\mathcal C^\Lambda_R+\epsilon_CI)c}{s}
+                                                    \right\}.
+ \end{split}\tag{PK227}
+\]
+Indeed the mass above \(s\) is at most the first moment
+divided by \(s\). Subtract it from the full raw mass, then
+apply PK221 with the displayed signs. For the first
+polynomial \(P_{10}=x-y\), the target entries are exactly
+the full four-loop and gradient differences of PK202.
+PK218 supplies finite original-word calculations for
+both, PK221 supplies their actual-vacuum errors, and
+PK223--PK225 retain the second-moment residual.
+The resulting lower endpoint has not been proved positive
+on a shrinking energy window along the original path.
+The next calculation is that endpoint with these certified
+vacuum and matrix comparisons, preserving the extensive
+electric-vacuum estimate PK211 and the full \(E_{0,j}\)
+subtraction. The interacting continuum construction,
+reconstruction and intended theory identification remain
+the active endpoint.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/ACTUAL_VACUUM_MATRIX_RECEIVING_MAP.png}\caption{Exact original vacuum, cutoff matrices and full residual}\end{figure}
+
+PK212–PK227 prove all maps and error bounds in this diagram, including the full complementary return and the original raw spectral-weight expression. The shrinking-window lower endpoint remains to evaluate. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/vacuum_matrix_figures.py}{Reproducible source}.
+
+
 \subsection*{10. Reproducibility and scope}
 
 The original symbolic checker verifies the full angular period law, both matrix
@@ -4821,4 +5424,6 @@ The joint-path checker adds 82 exact checks for PK132–PK157: complete heat/Haa
 The global-moment checker adds 40 exact checks for PK158–PK177, including all chord exclusions, coincident fourth-moment contractions, the original phase scale and the complete energy-bound constants. Four larger-box numerical samples are recorded separately and are not proofs. Sections 9.24–9.26 contain the full arguments.
 
 The phase-variational checker adds 65 exact checks for PK177a–PK206: all rooted words in the explicit configuration, original strip incidences, complete constants, amplitude factors and finite Gram identities. Three larger-box numerical checks are supplementary. The oscillatory, operator and variational conclusions have their complete proofs in Sections 9.26a–9.31.
+
+The vacuum-matrix checker adds 64 exact checks for PK207–PK227: original face incidence/colouring, complete heat-tail constants, all path factors, polynomial derivative coefficients and non-unit-Gram complementary identities. The concentration, cutoff convergence, residual and spectral-weight arguments are the complete proofs in Sections 9.32–9.35.
 \end{document}

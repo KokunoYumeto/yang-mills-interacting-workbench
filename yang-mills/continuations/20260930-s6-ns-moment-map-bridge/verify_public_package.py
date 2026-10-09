@@ -98,6 +98,7 @@ receipt_paths = [
     ROOT / "checks" / "JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json",
     ROOT / "checks" / "GLOBAL_FOUR_POINT_CHECK.json",
     ROOT / "checks" / "PHASE_VARIATIONAL_CHECK.json",
+    ROOT / "checks" / "VACUUM_MATRIX_ENCLOSURE_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -169,6 +170,16 @@ phase_bindings = json.loads((ROOT / "checks/PHASE_VARIATIONAL_SOURCE_BINDINGS.js
 for row in phase_bindings["bindings"]:
     if row["current_file_unchanged"]:
         checks["phase_source_binding:" + row["source_id"]] = row["sha256"] == sha256(ROOT.parents[2] / row["path"])
+
+vacuum_receipt = json.loads((ROOT / "checks/VACUUM_MATRIX_ENCLOSURE_CHECK.json").read_text(encoding="utf-8"))
+checks["vacuum_matrix_receipt_current"] = vacuum_receipt["proof_sha256"] == sha256(ROOT / "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md")
+vacuum_figure = json.loads((ROOT / "figures/VACUUM_MATRIX_FIGURE_CHECK.json").read_text(encoding="utf-8"))
+checks["vacuum_matrix_figures_inspected"] = "inspected" in vacuum_figure["visual_inspection"]
+for row in vacuum_figure["files"]:
+    checks["vacuum_matrix_figure:" + row["file"]] = row["sha256"] == sha256(ROOT / "figures" / row["file"])
+for row in json.loads((ROOT / "checks/VACUUM_MATRIX_SOURCE_BINDINGS.json").read_text(encoding="utf-8"))["bindings"]:
+    if row["current_file_unchanged"]:
+        checks["vacuum_matrix_source:" + row["source_id"]] = row["sha256"] == sha256(ROOT.parents[2] / row["path"])
 
 source_path = ROOT / "sources" / "higher_rung" / "s6_higher_rung_24d_preprint.tex"
 period_receipt = json.loads((ROOT / "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json").read_text(encoding="utf-8"))

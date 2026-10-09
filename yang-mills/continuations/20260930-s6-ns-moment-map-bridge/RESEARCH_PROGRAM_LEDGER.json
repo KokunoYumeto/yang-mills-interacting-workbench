@@ -381,6 +381,46 @@
       "strengthens": [
         "SZ-20261009-022"
       ]
+    },
+    {
+      "result_id": "SZ-20261009-024",
+      "statement": "The actual vacuum mass below M/4096 electric energy vanishes on the original path, with an explicit 1/j bound; its full unshifted energy satisfies liminf E0,j/j^12 >= 3 kappa_*/512.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK207–PK211",
+      "scope": "The Haar face tail retains all dependencies and all boundary counts. Electric-vacuum concentration is not an excitation-gap statement.",
+      "strengthens": [
+        "SZ-20261009-012",
+        "SZ-20261009-017"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-025",
+      "statement": "The original score and physical electric gap give the explicit actual vacuum gap 3 kappa exp(-32 pi (b/kappa) M), complete L2/H1 cutoff-vacuum errors and an explicit finite cutoff for every requested accuracy.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK212–PK216",
+      "scope": "Every finite original box and positive coupling; the bound is not uniform along the growing-volume path.",
+      "strengthens": [
+        "SZ-20261009-004",
+        "SZ-20261009-018"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-026",
+      "statement": "All actual phase Gram, energy and second-moment matrices have complete finite original-word approximations with proved operator-norm errors. An explicit electric cutoff gives errors at most 1/(2j) for every prescribed finite degree along the unchanged regulator path.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK217–PK222",
+      "scope": "The original vacuum, potential and every complementary term remain. The very large finite matrices have not been numerically evaluated.",
+      "strengthens": [
+        "SZ-20261009-022",
+        "SZ-20261009-023"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-027",
+      "statement": "The entire finite phase Hamiltonian residual has a proved matrix enclosure; increasing degree recovers the full residual outside the phase range. Actual finite variational energies and raw low-energy weights have certified receiving intervals.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK223–PK227",
+      "scope": "Positivity of the shrinking-window lower endpoint remains unproved. The finite variational lower bound is not a lower bound for the full odd spectral bottom.",
+      "strengthens": [
+        "SZ-20261009-022",
+        "SZ-20261009-026"
+      ]
     }
   ],
   "defined_spaces": {
@@ -555,7 +595,16 @@
     "figures/ACTUAL_PHASE_VARIATIONAL_MAP.svg",
     "figures/PHASE_VARIATIONAL_FIGURE_CHECK.json",
     "figures/ACTUAL_PHASE_RANK_AND_BOUNDARY.png",
-    "figures/ACTUAL_PHASE_RANK_AND_BOUNDARY.svg"
+    "figures/ACTUAL_PHASE_RANK_AND_BOUNDARY.svg",
+    "checks/verify_vacuum_matrix_enclosures.py",
+    "checks/VACUUM_MATRIX_ENCLOSURE_CHECK.json",
+    "checks/VACUUM_MATRIX_SOURCE_BINDINGS.json",
+    "figures/VACUUM_MATRIX_FIGURE_CHECK.json",
+    "figures/vacuum_matrix_figures.py",
+    "figures/ACTUAL_VACUUM_ELECTRIC_CONCENTRATION.png",
+    "figures/ACTUAL_VACUUM_ELECTRIC_CONCENTRATION.svg",
+    "figures/ACTUAL_VACUUM_MATRIX_RECEIVING_MAP.png",
+    "figures/ACTUAL_VACUUM_MATRIX_RECEIVING_MAP.svg"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -603,8 +652,12 @@
     "SZ-20261009-020",
     "SZ-20261009-021",
     "SZ-20261009-022",
-    "SZ-20261009-023"
+    "SZ-20261009-023",
+    "SZ-20261009-024",
+    "SZ-20261009-025",
+    "SZ-20261009-026",
+    "SZ-20261009-027"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "PK1–PK206: exact rooted-face weights, actual amplitude limits and spectral escape, complete phase form and residual, convergent finite variational matrices. Actual low-energy path estimates and the full continuum endpoint remain unfinished. Actual full phase rank, density, positive finite matrices and distributional boundary identity proved in PK203–PK206."
+  "current_finite_state_boundary": "PK1–PK227: actual extensive electric-vacuum concentration, explicit full-energy lower bound, all-coupling vacuum approximation, full phase matrix/residual enclosures and certified low-energy receiving quantities. The actual shrinking-window lower endpoint and full continuum endpoint remain unfinished."
 }
