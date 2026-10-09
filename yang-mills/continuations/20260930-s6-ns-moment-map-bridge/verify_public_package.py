@@ -92,6 +92,7 @@ receipt_paths = [
     ROOT / "checks" / "COMPACT_CAUCHY_CHECK.json",
     ROOT / "checks" / "PERIOD_PHYSICAL_KERNEL_CHECK.json",
     ROOT / "checks" / "COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
+    ROOT / "checks" / "FULL_PACKET_RESOLVENT_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -100,6 +101,13 @@ for receipt_path in receipt_paths:
     checks[f"receipt:{receipt_path.name}:every_check_true"] = bool(receipt_booleans) and all(
         receipt_booleans
     )
+
+packet_receipt = json.loads((ROOT / "checks/FULL_PACKET_RESOLVENT_CHECK.json").read_text(encoding="utf-8"))
+checks["full_packet_receipt_matches_current_proof"] = packet_receipt["proof_sha256"] == sha256(ROOT / "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md")
+packet_figure = json.loads((ROOT / "figures/FULL_PACKET_RESOLVENT_FIGURE_CHECK.json").read_text(encoding="utf-8"))
+checks["full_packet_figure_inspection_recorded"] = "inspected" in packet_figure["visual_inspection"]
+for row in packet_figure["files"]:
+    checks["full_packet_figure_hash:" + row["file"]] = row["sha256"] == sha256(ROOT / "figures" / row["file"])
 
 source_path = ROOT / "sources" / "higher_rung" / "s6_higher_rung_24d_preprint.tex"
 period_receipt = json.loads((ROOT / "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json").read_text(encoding="utf-8"))

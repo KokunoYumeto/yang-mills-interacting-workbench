@@ -226,3 +226,18 @@ continuum endpoint remains active.
 [Forty-three exact checks](checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json) and [dated results](RESULTS_20261009.md) accompany the full proof.
 
 ![Cube and complete next return](figures/COMPLEMENTARY_SECOND_MOMENT.png)
+
+## Full packet and complete cutoff, 9 October 2026
+
+The [full packet calculation](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) gives both exact complementary
+returns for the actual heat packet, with every cross term. PK65–PK75
+give a finite electric cutoff, a proved interval for the actual vacuum
+energy, and an explicit error for the full raw spectral transform.
+The cutoff is specified on the original regulator path with error at most
+Gamma_j/(kappa_* j). PK76–PK78 evaluate the whole first cutoff and the
+original smallest-box example. A positive lower spectral mass and the
+interacting continuum state remain active research calculations.
+
+[Thirty-nine exact checks](checks/FULL_PACKET_RESOLVENT_CHECK.json) and [dated results](RESULTS_20261009.md) accompany the complete proof.
+
+![Full packet and cutoff error](figures/FULL_PACKET_RESOLVENT.png)

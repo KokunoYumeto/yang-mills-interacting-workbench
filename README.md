@@ -89,3 +89,14 @@ finite-volume upper resolvent bound. The vacuum shift, both coupling factors,
 all face labels and boundary counts remain explicit. The next calculation is
 the full second-complement return and actual heat-packet coefficients; the
 continuum endpoint remains active.
+
+## Full packet and complete cutoff, 9 October 2026
+
+The [full packet calculation](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) gives both exact complementary
+returns for the actual heat packet, with every cross term. PK65–PK75
+give a finite electric cutoff, a proved interval for the actual vacuum
+energy, and an explicit error for the full raw spectral transform.
+The cutoff is specified on the original regulator path with error at most
+Gamma_j/(kappa_* j). PK76–PK78 evaluate the whole first cutoff and the
+original smallest-box example. A positive lower spectral mass and the
+interacting continuum state remain active research calculations.

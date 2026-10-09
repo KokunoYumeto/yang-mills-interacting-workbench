@@ -194,6 +194,35 @@
         "SZ-20261008-005",
         "SZ-20261009-002"
       ]
+    },
+    {
+      "result_id": "SZ-20261009-004",
+      "statement": "The entire original heat packet passes through both Schur returns with its first-face part, non-unit C component, full remainder and every cross term retained.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK63–PK66",
+      "scope": "Actual odd physical vector and interacting finite-box Hamiltonian, every s>0",
+      "strengthens": [
+        "SZ-20261009-003",
+        "SZ-20261008-005"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-005",
+      "statement": "A complete electric cutoff gives a proved vacuum-energy interval and an explicit full-resolvent error including the omitted operator space, packet tail and vacuum shift. The prescribed path cutoff gives error at most Gamma_j/(kappa_* j), with exact mass bounds.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK65–PK75",
+      "scope": "All original faces and couplings; raw vector norm retained; no positive low-mass endpoint asserted",
+      "strengthens": [
+        "SZ-20261009-004"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-006",
+      "statement": "The first full physical cutoff is evaluated exactly. At original L=1, a=1, g=2, Lambda=3 it has dimension 37, odd dimension 16, exact vacuum interval PK77 and complete finite packet resolvent PK78.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK76–PK78",
+      "scope": "Original open cubic box, complete first cutoff; no replacement one-plaquette graph",
+      "strengthens": [
+        "SZ-20261009-005",
+        "SZ-20261008-005"
+      ]
     }
   ],
   "defined_spaces": {
@@ -324,7 +353,13 @@
     "figures/COMPLEMENTARY_SECOND_MOMENT.png",
     "figures/COMPLEMENTARY_SECOND_MOMENT.svg",
     "figures/complementary_moment_figure.py",
-    "figures/COMPLEMENTARY_SECOND_MOMENT_FIGURE_CHECK.json"
+    "figures/COMPLEMENTARY_SECOND_MOMENT_FIGURE_CHECK.json",
+    "checks/verify_full_packet_resolvent.py",
+    "checks/FULL_PACKET_RESOLVENT_CHECK.json",
+    "figures/FULL_PACKET_RESOLVENT.png",
+    "figures/FULL_PACKET_RESOLVENT.svg",
+    "figures/full_packet_resolvent_figure.py",
+    "figures/FULL_PACKET_RESOLVENT_FIGURE_CHECK.json"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -352,8 +387,11 @@
     "SZ-20261008-005",
     "SZ-20261009-001",
     "SZ-20261009-002",
-    "SZ-20261009-003"
+    "SZ-20261009-003",
+    "SZ-20261009-004",
+    "SZ-20261009-005",
+    "SZ-20261009-006"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "Complete second complementary moment, nonzero next map, exact second return and stronger finite-volume resolvent bound; continuum endpoint active"
+  "current_finite_state_boundary": "Full raw-packet resolvent, complete electric cutoff, actual vacuum interval, prescribed path error and exact first cutoff; positive low-energy mass and continuum endpoint unfinished"
 }

@@ -1518,6 +1518,455 @@ moments replace that calculation.
 
 The figure shows the coordinate projection of an actual side-a lattice cube, the two shared-link electric sectors, and the exact composition T=Q2 B C. Complete proofs and all factors are PK55–PK62. Its [reproducible source](figures/complementary_moment_figure.py) retains the original operators. The finite Haar calculation is derived here; no novelty claim is made for character integration or Schur inversion.
 
+## 9.4. The full packet through both complementary returns
+
+Keep the original finite open box, Haar measure, physical Hilbert space,
+Hamiltonian \(H=\kappa H_0+2bM-b\mathcal W\), and actual ground energy
+\(E_0\) of (PK24)–(PK37). All inverses in this section have a positive
+energy parameter \(s>0\). The inner product is conjugate linear in its
+first argument. On the reflection-odd physical space put
+\(A=H-E_0\), \(p=P\eta_{h,t}\), \(q=Q\eta_{h,t}\), with the original
+first-face projections \(P,Q\) of (PK51)–(PK54). In particular \(p\)
+is the explicit face sum (PK47); \(q\) is the entire remainder.
+The complete raw Stieltjes transform is
+\[
+ \begin{aligned}
+ F_{h,t}(s)
+ &:=\langle\eta_{h,t},(A+s)^{-1}\eta_{h,t}\rangle
+   =\int_{(0,\infty)}\frac{d\nu_{h,t}(\omega)}{\omega+s},\\
+ D_s&=B+s,\qquad
+ S_s=(d+s)P-b^2C^*D_s^{-1}C,\\
+ F_{h,t}(s)
+ &=\langle q,D_s^{-1}q\rangle+
+   \langle p+bC^*D_s^{-1}q,\,
+        S_s^{-1}(p+bC^*D_s^{-1}q)\rangle .
+ \end{aligned}\tag{PK63}
+\]
+Here \(d=2bM+3\kappa-E_0\), \(C=Q\mathcal WP\), and \(B=QAQ\)
+remain the operators already proved in (PK54).
+
+Indeed the block equations for \((A+s)(x+y)=p+q\), with \(x=Px\),
+\(y=Qy\), are
+\((d+s)x-bC^*y=p\) and \(D_sy-bCx=q\). Thus
+\(y=D_s^{-1}(q+bCx)\) and
+\(S_sx=p+bC^*D_s^{-1}q\). Taking the inner product with \(p+q\)
+gives (PK63), including both cross terms. The closed form of \(A+s\)
+is at least \(sI\). Minimizing it over \(y\) proves \(S_s\ge sP\);
+also \(D_s\ge sQ\). Therefore every inverse used here is defined and
+bounded. The off-diagonal map has finite-dimensional smooth range, so
+the calculation on smooth vectors extends to the full form domain and
+the resolvent. No packet norm has been divided out.
+
+The next return also acts on the entire complementary packet. Retain
+\(m=M-1\), \(\Pi=CC^*/m\), \(Q_2=Q-\Pi\), \(T=Q_2BC\), \(B_2=Q_2BQ_2\),
+and \(\mu=\kappa(6M-4)+(2bM-E_0)m\). Define
+\[
+ \begin{gathered}
+ w=m^{-1}C^*q=m^{-1}P\mathcal W\eta_{h,t},\qquad
+ z=Q_2q,\qquad q=Cw+z,\\
+ D_{2,s}=B_2+s,\qquad
+ K_s=(\mu+sm)P-T^*D_{2,s}^{-1}T,\qquad
+ r_s=mw-T^*D_{2,s}^{-1}z,\\
+ C^*D_s^{-1}q=mK_s^{-1}r_s,\qquad
+ \langle q,D_s^{-1}q\rangle
+   =\langle z,D_{2,s}^{-1}z\rangle+\langle r_s,K_s^{-1}r_s\rangle,\\
+ S_s=(d+s)P-b^2m^2K_s^{-1},\\
+ F_{h,t}(s)=
+ \langle z,D_{2,s}^{-1}z\rangle+\langle r_s,K_s^{-1}r_s\rangle+
+ \langle p+bmK_s^{-1}r_s,\,
+ S_s^{-1}(p+bmK_s^{-1}r_s)\rangle .
+ \end{gathered}\tag{PK64}
+\]
+The equality for \(w\) uses \(C^*C=mP\) and \(P\mathcal WP=0\);
+it retains the original non-unit Gram of the map \(C\).
+To prove the other formulas, write \(D_s^{-1}q=Cf+y\), \(Q_2y=y\).
+The two equations are
+\((\mu+sm)f+T^*y=mw\) and \(Tf+D_{2,s}y=z\).
+They give \(K_sf=r_s\) and \(y=D_{2,s}^{-1}(z-Tf)\).
+Taking the inner product with \(Cw+z\) proves the middle line.
+The same minimization as in (PK61) gives \(K_s\ge smP\).
+Substitution in (PK63) proves the final line. In particular omitting
+\(z\), either of its return terms, or the change from \(p\) to
+\(p+bmK_s^{-1}r_s\) does not compute the original measure.
+
+## 9.5. A complete electric cutoff with a vacuum-energy interval
+
+We next bound the entire omitted operator space, while retaining all
+magnetic faces. This supplies a finite calculation with an explicit
+error for the same \(F_{h,t}\), without evaluating successive moments
+indefinitely.
+
+For a real number \(\Lambda\ge3\), let
+\[
+ \begin{gathered}
+ \mathsf P_\Lambda=\mathbf1_{[0,\Lambda]}(H_0)
+       \quad\hbox{on the full physical Hilbert space},\qquad
+ \mathsf Q_\Lambda=I-\mathsf P_\Lambda,\\
+ H_\Lambda=\mathsf P_\Lambda H\mathsf P_\Lambda
+          \big|_{\operatorname{Ran}\mathsf P_\Lambda},\qquad
+ u_\Lambda=\min\sigma(H_\Lambda),\qquad
+ \ell=2bM .
+ \end{gathered}\tag{PK65}
+\]
+The ground calculation uses both reflection parities. Its vacuum is
+not replaced by the bottom of the odd compression.
+
+Here is the exact finite construction of this space and matrix.
+For each assignment of link spins \(j_e\in\{0,\tfrac12,1,\ldots\}\)
+with \(\lambda_{\mathbf j}=\sum_ej_e(j_e+1)\le\Lambda\), take all
+products \(\prod_e\sqrt{2j_e+1}\,D^{j_e}(U_e)_{r_es_e}\).
+They are orthonormal in the full product Haar space by matrix-entry
+orthogonality. Their union spans the electric cutoff: on each link the
+Casimir is \(j_e(j_e+1)\), and the matrix coefficients give the complete
+Peter–Weyl expansion used in (PK27)–(PK36).
+There are finitely many assignments and finitely many entries per assignment.
+Apply the vertex Haar projections (PK35). Remove the zero eigenvectors of
+their finite Gram matrix and orthonormalize its positive eigenspaces.
+Since gauge averaging commutes with \(H_0\), this gives an orthonormal
+physical basis \(v_\alpha\), with
+\(H_0v_\alpha=\lambda_\alpha v_\alpha\).
+Reflection commutes with the same operators; diagonalize its involution
+within each electric eigenspace to retain both parities explicitly.
+Every entry is then
+\[
+ \begin{aligned}
+ (H_\Lambda)_{\alpha\beta}
+ &=\kappa\lambda_\beta\delta_{\alpha\beta}
+      +2bM\delta_{\alpha\beta}
+      -b\sum_{p\in\mathcal F_L}
+       \int\overline{v_\alpha(U)}\,W_p(U)v_\beta(U)\,dU,\\
+ a_\alpha(h,t)
+ &:=\langle v_\alpha,\eta_{h,t}\rangle
+   =e^{-t\lambda_\alpha}
+       \bigl(\overline{v_\alpha(h)}
+                    -\overline{v_\alpha(\mathcal Rh)}\bigr),\\
+ \eta_\Lambda&=\mathsf P_\Lambda\eta_{h,t}
+                      =\sum_\alpha a_\alpha(h,t)v_\alpha,\qquad
+ \Gamma_\Lambda=\sum_\alpha|a_\alpha(h,t)|^2 .
+ \end{aligned}\tag{PK66}
+\]
+The link integrals are finite products of the exact entry projectors
+(PK35), after the ordered face word has been inserted; the entire face
+sum is present. The coefficient formula follows by applying the heat
+semigroup to \(v_\alpha\) and evaluating at the label, then averaging
+over its gauge orbit. It is zero for even \(v_\alpha\). The same formula,
+over all electric eigenvalues, constructs the full packet and hence
+\(q,w,z\) in (PK64). Here \(h\) remains the actual inverse holonomy of
+(PK23), including its original compact-support field and parameters.
+This is a finite algebraic matrix together with exact evaluations at
+those holonomies; no numerical holonomy evaluation is claimed.
+
+Positivity of the original Wilson potential and its full bound give
+\[
+ H\ge\kappa H_0,\qquad
+ 0\le b\sum_p(2-W_p)\le4bM,\qquad
+ \|\mathsf Q_\Lambda H\mathsf P_\Lambda\|
+ =b\|\mathsf Q_\Lambda\mathcal W\mathsf P_\Lambda\|\le\ell .
+ \tag{PK67}
+\]
+The last equality holds because both \(H_0\) and the scalar \(2bM\)
+commute with the cutoff. The inequality uses \(|W_p|\le2\) for each
+original face. The high compression, defined by its closed quadratic
+form, is at least \(\kappa\Lambda\mathsf Q_\Lambda\).
+The cutoff contains the unit constant, whose energy is \(2bM\).
+Consequently \(0\le E_0\le u_\Lambda\le2bM\).
+
+For \(\kappa\Lambda>2bM\), define
+\[
+ \begin{aligned}
+ e_\Lambda&=\max\left\{0,\,
+  \frac{u_\Lambda+\kappa\Lambda
+    -\sqrt{(\kappa\Lambda-u_\Lambda)^2+4\ell^2}}2\right\},\\
+ w_\Lambda&=u_\Lambda-e_\Lambda,\qquad
+ D_\Lambda=\kappa\Lambda-2bM>0 .
+ \end{aligned}\tag{PK68}
+\]
+Then the true vacuum energy satisfies the proved interval
+\[
+ 0\le e_\Lambda\le E_0\le u_\Lambda\le2bM,\qquad
+ 0\le w_\Lambda\le
+ \frac{2\ell^2}{
+ \sqrt{(\kappa\Lambda-u_\Lambda)^2+4\ell^2}
+       +\kappa\Lambda-u_\Lambda}
+ \le\frac{\ell^2}{D_\Lambda}.
+ \tag{PK69}
+\]
+For a unit form-domain vector \(x+y\), \(x=\mathsf P_\Lambda x\),
+\(y=\mathsf Q_\Lambda y\), its energy is at least
+\(u_\Lambda\|x\|^2-2\ell\|x\|\|y\|
++\kappa\Lambda\|y\|^2\).
+The smallest eigenvalue of the real two-by-two matrix with diagonal
+\(u_\Lambda,\kappa\Lambda\) and off-diagonal \(-\ell\) is the root
+in (PK68). Minimizing proves the lower bound; the independent inequality
+\(H\ge0\) supplies the maximum with zero. Rayleigh minimization in the
+cutoff gives the upper bound. Subtracting that root from \(u_\Lambda\)
+and rationalizing gives the middle expression of (PK69); if the root is
+negative, taking the maximum with zero can only decrease the width.
+Finally \(\kappa\Lambda-u_\Lambda\ge D_\Lambda>0\) proves the last bound.
+Thus no unknown vacuum shift is assumed in the finite calculation.
+
+## 9.6. The raw packet, its tail, and a resolvent error
+
+For fixed original \(h,t,L,a,g\) set
+\(\Gamma=\|\eta_{h,t}\|^2\) and
+\(\tau_\Lambda=\|\mathsf Q_\Lambda\eta_{h,t}\|^2\).
+The exact identity is \(\Gamma=\Gamma_\Lambda+\tau_\Lambda\).
+The common heat parameter gives
+\(\eta_{h,t}=e^{-(t/2)H_0}\eta_{h,t/2}\), including the physical
+projection and reflection. Therefore
+\[
+ \begin{gathered}
+ 0\le\tau_\Lambda\le
+ e^{-t\Lambda}\|\eta_{h,t/2}\|^2
+ \le 4e^{-t\Lambda}Z_t^{\,N_L},\\
+ Z_t=p_t(I)=
+ \sum_{j\in\{0,1/2,\ldots\}}(2j+1)^2e^{-tj(j+1)}
+ =\sum_{n=1}^\infty n^2e^{-t(n^2-1)/4},\\
+ Z_t\le\mathcal Z_t:=
+ \frac{1+e^{-t/4}}{(1-e^{-t/4})^3}.
+ \end{gathered}\tag{PK70}
+\]
+The first inequality is spectral calculus on electric eigenvalues
+strictly greater than \(\Lambda\). Before physical projection, the squared
+norm of a product heat packet of time \(t/2\) is \(p_t(I)^{N_L}\),
+by Haar invariance and the convolution law. Orthogonal gauge projection
+decreases norm; the difference of two such packets has squared norm at
+most four times this number. Finally, with \(q_t=e^{-t/4}\),
+\(n^2\ge n\) gives
+\(Z_t\le e^{t/4}\sum_{n\ge1}n^2q_t^n
+=e^{t/4}q_t(1+q_t)/(1-q_t)^3\).
+This proves the stated bound and retains the original heat convention.
+
+The finite number to compute is
+\[
+ \begin{gathered}
+ f_\Lambda(s)=
+ \langle\eta_\Lambda,
+       (H_\Lambda-e_\Lambda+s)^{-1}\eta_\Lambda\rangle,\qquad
+ \beta_\Lambda(s)=\kappa\Lambda-e_\Lambda+s,\\
+ |F_{h,t}(s)-f_\Lambda(s)|
+ \le
+ \frac{\Gamma_\Lambda\ell^2}{\beta_\Lambda(s)s^2}
+ +\frac{2\sqrt{\Gamma_\Lambda\tau_\Lambda}+\tau_\Lambda}{s}
+ +\frac{\Gamma w_\Lambda}{s^2}
+ =:\mathcal E_\Lambda(s).
+ \end{gathered}\tag{PK71}
+\]
+Here \(\Gamma\), \(E_0\), the packet, and \(H\) have their original
+meanings. The new \(e_\Lambda\) is explicitly an endpoint used for an
+approximation with the displayed error, never a replacement definition
+of the vacuum energy.
+
+To prove (PK71), first use the full resolvent
+\(R_e=(H-e_\Lambda+s)^{-1}\). Its norm is at most \(1/s\) by (PK69).
+Its high block before inversion, \(D_e\), is at least
+\(\beta_\Lambda(s)\mathsf Q_\Lambda\).
+Writing \(J=\mathsf Q_\Lambda H\mathsf P_\Lambda\) and
+\(L_e=H_\Lambda-e_\Lambda+s\), block elimination gives
+\[
+ \mathsf P_\Lambda R_e\mathsf P_\Lambda
+       =(L_e-J^*D_e^{-1}J)^{-1},\qquad
+ 0\le J^*D_e^{-1}J\le
+       \frac{\ell^2}{\beta_\Lambda(s)}\mathsf P_\Lambda .
+ \]
+Both inverses, \(L_e^{-1}\) and the displayed compressed resolvent,
+have norm at most \(1/s\). The latter fact follows either by compression
+of \(R_e\) or by minimizing the full positive form over its high component.
+The identity
+\((L_e-R)^{-1}-L_e^{-1}=(L_e-R)^{-1}RL_e^{-1}\)
+therefore bounds their difference by
+\(\ell^2/(\beta_\Lambda(s)s^2)\). Multiplying by the actual low-vector
+norm gives the first term of (PK71). Expanding
+\(\eta_{h,t}=\eta_\Lambda+\mathsf Q_\Lambda\eta_{h,t}\) in \(R_e\)
+and applying Cauchy–Schwarz gives its second term. Lastly the resolvent
+identity for the two scalar shifts gives
+\[
+ (H-E_0+s)^{-1}-R_e
+   =(E_0-e_\Lambda)(H-E_0+s)^{-1}R_e .
+ \]
+Both factors have norm at most \(1/s\), and
+\(0\le E_0-e_\Lambda\le w_\Lambda\). This gives the third term and
+completes the proof, including all infinite complementary components.
+
+A fully finite upper error is also available: replace \(\tau_\Lambda\)
+by \(T_\Lambda=4e^{-t\Lambda}\mathcal Z_t^{N_L}\) and \(\Gamma\)
+by \(\Gamma_\Lambda+T_\Lambda\) on the right of (PK71).
+Every term is increasing in these nonnegative variables, so the resulting
+number is a proved upper bound, without a separate evaluation of \(\Gamma\).
+
+## 9.7. An explicit cutoff on the original regulator path
+
+Take the same integers \(j\) satisfying (PK43b), the same labels \(h_j\),
+and the same \(t_*>0,\kappa_*>0,r,R\). Define, without dropping any factors,
+\[
+ \begin{gathered}
+ N_j=3(2j^4)(2j^4+1)^2,\qquad
+ M_j^{\rm face}=3(2j^4)^2(2j^4+1),\qquad
+ b_j=\frac{10000j^2}{\kappa_*},\\
+ m_j^{\rm core}=\left\lfloor\frac{50rj^3}{\sqrt3}\right\rfloor,\qquad
+ \gamma_j=32\,[3(2m_j^{\rm core})^2(2m_j^{\rm core}+1)]
+       e^{-6t_*}\sin^8\left(\frac1{100j^3}\right),\\
+ s_j=\frac{\kappa_*}{j},\qquad
+ \delta_j=\frac1{\kappa_*j},\qquad
+ \rho_j=\frac1{6j^2},\\
+ \Lambda_j=
+ 1+\left\lceil\max\left\{
+ 3,\quad
+ \frac{2b_jM_j^{\rm face}}{\kappa_*}
+       +\frac{16b_j^2(M_j^{\rm face})^2j^3}{\kappa_*^2},
+ \quad
+ \frac{\log4+N_j\log\mathcal Z_{t_*}
+                   -\log\gamma_j+2\log(6j^2)}{t_*}
+ \right\}\right\rceil .
+ \end{gathered}\tag{PK72}
+\]
+The superscripts distinguish the face count and core size from the
+covering degree \(M_{\rm cov}=j^4\) and the return Gram \(m=M_L-1\).
+The proof of (PK48)–(PK49) gives \(0<\gamma_j\le\Gamma_j\).
+All entries of (PK72) are defined at the stated threshold.
+
+For this explicit finite cutoff the actual transform obeys
+\[
+ \left|F_{h_j,t_*}(s_j)-f_{\Lambda_j}(s_j)\right|
+       \le\frac{\Gamma_j}{\kappa_*j}.
+ \tag{PK73}
+\]
+To verify the constants, put \(\ell_j=2b_jM_j^{\rm face}\) and
+\(D_j=\kappa_*\Lambda_j-2b_jM_j^{\rm face}\). Formula (PK72) gives
+\[
+ D_j\ge\frac{4\ell_j^2}{\delta_js_j^2},\qquad
+ \tau_{\Lambda_j}\le\gamma_j\rho_j^2\le\Gamma_j\rho_j^2,\qquad
+ \beta_{\Lambda_j}(s_j)\ge D_j .
+ \]
+Using \(\Gamma_{\Lambda_j}\le\Gamma_j\) and (PK69), the first and third
+terms of (PK71) together are at most
+\(2\Gamma_j\ell_j^2/(D_js_j^2)\le\delta_j\Gamma_j/2\).
+The second term is at most
+\(\Gamma_j(2\rho_j+\rho_j^2)/s_j
+\le3\Gamma_j\rho_j/s_j=\delta_j\Gamma_j/2\).
+Adding proves (PK73). This is an error measured against the original
+raw norm; the measure and vectors have not been redefined.
+The cutoff grows substantially because the full
+\(b_j^2(M_j^{\rm face})^2\) contribution is retained. No feasible matrix
+size or evaluated small-energy mass at these cutoffs is asserted.
+
+The transform error has an exact consequence for the original spectral
+mass. For every \(\epsilon,s>0\), writing
+\(n(\epsilon)=\nu_{h,t}((0,\epsilon])\), one has
+\[
+ \max\left\{0,\,
+ \frac{s(\epsilon+s)}{\epsilon}F_{h,t}(s)
+                 -\frac{s\Gamma}{\epsilon}\right\}
+ \le n(\epsilon)\le
+ \min\{\Gamma,\,(\epsilon+s)F_{h,t}(s)\}.
+ \tag{PK74}
+\]
+Indeed \(1/(\omega+s)\ge1/(\epsilon+s)\) on \((0,\epsilon]\),
+which proves the upper bound. On this interval it is at most \(1/s\),
+and on \((\epsilon,\infty)\) it is at most \(1/(\epsilon+s)\).
+Thus \(F(s)\le n(\epsilon)/s+
+(\Gamma-n(\epsilon))/(\epsilon+s)\); rearranging proves the lower bound.
+There is no atom at zero by (PK44).
+Consequently a fully finite interval for \(n(\epsilon)\) is obtained by
+using \(f_\Lambda-\mathcal E_\Lambda\) in the lower expression and
+\(f_\Lambda+\mathcal E_\Lambda\) in the upper one. If \(\Gamma\) is
+not evaluated, its finite upper bound \(\Gamma_\Lambda+T_\Lambda\)
+may be used in the negative lower-bound term and in the upper cap.
+
+In particular put \(\epsilon=s=s_j\), \(f_j=f_{\Lambda_j}(s_j)\).
+The exact path estimate (PK73) yields
+\[
+ \max\{0,\,2s_jf_j-\Gamma_j-2\Gamma_j/j^2\}
+ \le\nu_j((0,s_j])
+ \le\min\{\Gamma_j,\,2s_jf_j+2\Gamma_j/j^2\}.
+ \tag{PK75}
+\]
+These inequalities are proved for the constructed original vectors.
+They do not assert that their lower endpoint is positive. They turn the
+remaining low-energy-weight question into a specific finite expression
+with a proved error, while (PK63)–(PK64) identify exactly which full
+packet components it receives. The next calculation is to estimate or
+evaluate that expression along the path, and to pursue the continuum
+state and reconstruction using the resulting spectral information.
+
+## 9.8. The complete first cutoff on the original smallest box
+
+The finite construction can already be evaluated exactly at its first
+nonconstant cutoff. For \(3\le\Lambda<9/2\), Theorem 9.1 says
+\(\operatorname{Ran}\mathsf P_\Lambda
+=\operatorname{span}\{1,W_p:p\in\mathcal F_L\}\).
+These \(M+1\) vectors are orthonormal. The constant electric eigenvalue
+is zero, every face eigenvalue is \(3\), and (PK50) gives
+\(P_{\mathcal F}\mathcal WP_{\mathcal F}=0\).
+Also \(\langle1,\mathcal WW_p\rangle=1\) and
+\(\langle1,\mathcal W1\rangle=0\). Hence the entire cutoff matrix is
+\[
+ H_\Lambda=
+ \begin{pmatrix}
+  2bM&-b\mathbf1^{\,T}\\
+  -b\mathbf1&(2bM+3\kappa)I_M
+ \end{pmatrix},\qquad
+ u_\Lambda=2bM+
+      \frac{3\kappa-\sqrt{9\kappa^2+4b^2M}}2 .
+ \tag{PK76}
+\]
+On the \(M-1\) face-coefficient vectors orthogonal to \(\mathbf1\),
+the eigenvalue is \(2bM+3\kappa\). On the remaining two-dimensional
+space, use the unit constant and the unit face sum
+\(M^{-1/2}\sum_pW_p\): the off-diagonal entry is \(-b\sqrt M\).
+Its two eigenvalues are the two roots displayed by (PK76), with minus
+and plus signs. This proves the asserted minimum and recovers the earlier
+trial bound as the exact minimum of this whole cutoff.
+
+For the actual box \(L=1\), choose \(a=1\), \(g=2\), and \(\Lambda=3\).
+Then \(N_L=54\), \(M=36\), \(\kappa=8\), \(b=1/8\), \(\ell=9\),
+and \(\kappa\Lambda=24>2bM=9\). The full physical cutoff has dimension
+37, and
+\[
+ u_\Lambda=21-\frac{3\sqrt{257}}4,\qquad
+ e_\Lambda=
+ \frac{u_\Lambda+24-\sqrt{(24-u_\Lambda)^2+324}}2>0 .
+ \tag{PK77}
+\]
+Positivity follows from \(24u_\Lambda>81\): indeed \(\sqrt{257}<17\)
+gives \(u_\Lambda>33/4\). Thus (PK69) gives the explicit genuine vacuum
+interval \(e_\Lambda\le E_0\le u_\Lambda\) in this original interacting
+box. This interval is not asserted to have sharp endpoints.
+
+Reflection fixes exactly the four faces in the \(n_1=0\) coordinate
+plane parallel to the second and third axes; the other 32 faces form
+16 pairs. Therefore the odd cutoff has dimension 16 and its entire
+Hamiltonian is \(33I_{16}\). For every original real label \(h\) and
+heat time \(t>0\) on this box,
+\[
+ f_\Lambda(s)=
+ \frac{e^{-6t}\sum_{p\in\mathcal F_1}
+       |W_p(h)-W_p(\mathcal Rh)|^2}{33-e_\Lambda+s}.
+ \tag{PK78}
+\]
+This is an evaluated finite resolvent with the full original face
+coefficients; the cutoff error is still (PK71), with
+\(\beta_\Lambda(s)=24-e_\Lambda+s\) and
+\(T_\Lambda=4e^{-3t}\mathcal Z_t^{54}\).
+It is a calculation at these stated box and coupling parameters,
+not an evaluation at the much larger cutoffs (PK72).
+
+The block-inversion method is classical; compare Geneviève Dusson,
+Israel Michael Sigal and Benjamin Stamm, [The Feshbach–Schur map and
+perturbation theory, arXiv:2105.02058v1](https://arxiv.org/abs/2105.02058v1),
+original TeX labels thm:isospF, Fesh, QP and Ulam-def.
+The original source was read at lines 398–473. Its complementary
+inverse and reconstruction map agree with the block equations above
+when its operator is \(H-E_0+s\) and its projection is the indicated
+electric projection. All invertibility and error estimates used here
+are proved above for the actual lattice operators. No perturbative
+smallness hypothesis or novelty of Schur inversion is asserted.
+
+
+![Every packet component, all three error terms, and the actual smallest-box vacuum interval](figures/FULL_PACKET_RESOLVENT.png)
+
+The diagram retains the exact maps in PK63–PK64 and the three contributions in PK71. Its numerical endpoints illustrate the exact radicals PK77; the displayed 33 is the odd cutoff eigenvalue in PK78. [Reproducible figure source](figures/full_packet_resolvent_figure.py).
+
 ## 10. Reproducibility and scope
 
 The original symbolic checker verifies the full angular period law, both matrix
@@ -1536,3 +1985,5 @@ actual corrected moment-map field, full cusp covering, and original
 interacting lattice Hamiltonian with the indicated exact factors.
 
 The complementary-moment checker adds 43 exact checks for PK55–PK62: direct Haar polynomial integration, oriented cube matrix-entry contraction, exhaustive six-face cycles in the smallest original box, every sixth-moment entry on a cube plus another face, boundary incidence and reflection in three boxes, and the full projection and resolvent identities. General proofs, including the exact cubical filling map, are given in Sections 9.2–9.3. A finite check is not a continuum estimate.
+
+The full-packet checker adds 39 exact checks for PK63–PK78, including complex packet cross terms, both returns with the original non-unit Gram, vacuum intervals, cutoff constants, and the original 37-dimensional physical cutoff in the smallest box. Infinite-space estimates are the complete written proofs in Sections 9.4–9.8.

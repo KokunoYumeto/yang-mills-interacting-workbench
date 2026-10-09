@@ -469,5 +469,37 @@
       "SZ-20261008-005",
       "SZ-20261009-002"
     ]
+  },
+  {
+    "finding_id": "SZ-20261009-004",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The entire original heat packet passes through both Schur returns with its first-face part, non-unit C component, full remainder and every cross term retained.",
+    "scope": "Actual odd physical vector and interacting finite-box Hamiltonian, every s>0",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK63–PK66",
+    "affected_findings": [
+      "SZ-20261009-003",
+      "SZ-20261008-005"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-005",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "A complete electric cutoff gives a proved vacuum-energy interval and an explicit full-resolvent error including the omitted operator space, packet tail and vacuum shift. The prescribed path cutoff gives error at most Gamma_j/(kappa_* j), with exact mass bounds.",
+    "scope": "All original faces and couplings; raw vector norm retained; no positive low-mass endpoint asserted",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK65–PK75",
+    "affected_findings": [
+      "SZ-20261009-004"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-006",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The first full physical cutoff is evaluated exactly. At original L=1, a=1, g=2, Lambda=3 it has dimension 37, odd dimension 16, exact vacuum interval PK77 and complete finite packet resolvent PK78.",
+    "scope": "Original open cubic box, complete first cutoff; no replacement one-plaquette graph",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK76–PK78",
+    "affected_findings": [
+      "SZ-20261009-005",
+      "SZ-20261008-005"
+    ]
   }
 ]

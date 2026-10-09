@@ -126,3 +126,25 @@ strong-coupling and Schur/moment routes. These routing hits are not proofs:
 no PDF was read and no external theorem is imported from them. The earlier
 Hall and Bahr–Thiemann source comparisons remain in PK25–PK30. The new
 calculation does not claim novelty for character integrals or Schur inversion.
+
+## Full-packet source scope
+
+The original objects are PK24–PK62. The new PK63–PK78 proofs retain
+their unscaled Haar, generator, Wilson, packet and ground-energy conventions.
+The existing disk indexes were searched first; routing hits were not used
+as mathematical evidence and PDF-only results were not read.
+The original author TeX of Geneviève Dusson, Israel Michael Sigal and
+Benjamin Stamm, [arXiv:2105.02058v1](https://arxiv.org/abs/2105.02058v1),
+was then obtained from the versioned arXiv source endpoint. Read the author
+line 241 and lines 398–473, labels thm:isospF, Fesh, QP and Ulam-def;
+the remainder of the source was not audited. Its Schur construction is
+compared by the exact block equations in PK63–PK71. The lattice estimates
+are proved in full here, without importing its perturbative hypotheses.
+
+Original source archive SHA-256:
+a4509293255e0f0239c8aa49edc01d5246feee16735eeb54a45e990b598f6b8f.
+Original AriFestFSM_arxiv.tex SHA-256:
+e6c45f423055bb91eafb0c85c387657d70f89a0f7b71aabb2ea0282ef8649f89.
+The intact original archive and extracted TeX are retained in the source-use
+ledger's private provenance package. No new authorship or novelty is claimed
+for the classical block inversion method.

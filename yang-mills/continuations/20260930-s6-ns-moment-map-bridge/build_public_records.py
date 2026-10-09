@@ -36,6 +36,7 @@ def main() -> None:
         "checks/COMPACT_CAUCHY_CHECK.json",
         "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
         "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
+        "checks/FULL_PACKET_RESOLVENT_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -69,7 +70,8 @@ def main() -> None:
             "and link holonomies; full cusp coupling, physical finite-lattice "
             "vectors, exact Gram and Hamiltonian kernels, corrected same-coupling "
             "path, first electric layer, complete interacting return, exact second "
-            "complementary moment, cube contributions, nonzero next map and stronger resolvent bound."
+            "complementary moment, cube contributions, nonzero next map, stronger resolvent bound, "
+            "full-packet returns, complete electric cutoff, vacuum interval and spectral-transform error."
         ),
         "claim_boundary": (
             "Finite physical quantum vectors are constructed. No continuum "
@@ -136,7 +138,7 @@ def main() -> None:
         )
     manifest = {
         "schema": "s6-ns-moment-map-public-manifest-v1",
-        "date": "2026-10-08",
+        "date": "2026-10-09",
         "root": "yang-mills/continuations/20260930-s6-ns-moment-map-bridge",
         "manifest_excludes_itself": True,
         "file_count": len(files),

@@ -430,3 +430,25 @@ source-use ledger and dated bulletin. YM-01/YM-02 have no claim depending on
 this new moment; YM-08's research provider receives PK55–PK62.
 
 Complete proof: [Theorem 9.2 and PK55–PK62](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+## S6NS-20261009-002 — the actual packet requires the full complement
+
+Earlier boundary: PK47 supplies the exact first-face projection, and
+PK54/PK61 supply compressed returns. These remain valid but do not by
+themselves equal the resolvent quadratic form of the full packet.
+PK63–PK64 prove the exact receiving map with all complementary packet
+components and cross terms. PK65–PK75 prove a complete electric cutoff,
+actual vacuum-energy interval, heat-tail estimate and full transform error.
+The explicit original path cutoff has error at most Gamma_j/(kappa_* j).
+PK76–PK78 recover the earlier two-vector ground trial value as the exact
+minimum of the entire first physical cutoff, and evaluate the original
+smallest-box example.
+
+The spectral lower endpoint has not been shown positive. The next
+calculation is the original f_j or an analytic bound on it, retaining
+Gamma_j and every coupling. No continuum conclusion or novelty claim is
+inferred from finite accuracy. Propagation covers the cumulative source,
+claim/source ledgers, programmes, result bulletin and future YM-08 provider.
+Current YM-01/YM-02 have no dependent claim requiring correction.
+
+Complete proofs: [PK63–PK78](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
