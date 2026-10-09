@@ -1,16 +1,16 @@
 {
   "schema": "period-physical-tex-compile-status-v1",
   "source": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex",
-  "source_sha256": "1537f7dfde84b73f34918a9de2eedd15b6330696520e970b6ba3b10a7df9dc63",
+  "source_sha256": "4553c21423f2e155cbad2011bd9aed571022963952ea70b509dab8e993f6e13c",
   "compiler": "built-in document compiler",
   "tool_kind": "compile-failed",
-  "status": "unverified; compiler environment failed before source compilation",
-  "diagnostic": "The compiler could not prepare its preview because the configured permission profile was rejected by environment requirements.",
+  "status": "unverified; environment rejected the compiler permission profile before compilation",
+  "diagnostic": "Could not prepare LaTeX preview: configured permission_profile disallowed by requirements.",
   "source_compilation_confirmed": false,
   "pdf_produced": false,
   "source_preserved": true,
-  "observed_utc": "2026-10-08T11:26:54.040343+00:00",
-  "attempted_source_sha256": "83a43c040f2ef0222d4230a5719ba60bebf5aec0b783bc976fd8114c2388d26d",
-  "source_changed_after_attempt": true,
+  "observed_utc": "2026-10-09T01:19:21.063994+00:00",
+  "attempted_source_sha256": "4553c21423f2e155cbad2011bd9aed571022963952ea70b509dab8e993f6e13c",
+  "source_changed_after_attempt": false,
   "formula_preservation_repair": "Multiline inline formulas retained exactly; every complete math block compared with the corresponding Markdown source"
 }

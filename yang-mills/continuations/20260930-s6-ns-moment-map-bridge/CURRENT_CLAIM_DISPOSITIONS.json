@@ -437,5 +437,37 @@
       "S6NS-20260930-017",
       "S6NS-20260930-020"
     ]
+  },
+  {
+    "finding_id": "SZ-20261009-001",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The full electric second face moment includes the exact 3(D+A)/4 term, and the full fourth magnetic face compression includes every six-face cube with coefficient 3N/2.",
+    "scope": "Original finite open cubic lattice, full boundary counts, original Haar and generator conventions",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md Theorem 9.2, PK55–PK57",
+    "affected_findings": [
+      "SZ-20261008-005"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-002",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The entire complementary second moment C*B^2C is evaluated with the exact b^2(M-1)^2 subtraction; the next map T has the full Gram PK59 and is injective by PK60.",
+    "scope": "Actual vacuum shift, both original couplings, reflection-odd physical Hilbert space",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK57–PK60",
+    "affected_findings": [
+      "SZ-20261008-005",
+      "SZ-20261009-001"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-003",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The complete second return PK61 and the strictly improved resolvent upper bound PK62 follow from the computed original moments.",
+    "scope": "Every finite original box and every positive spectral parameter; no uniform continuum conclusion",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK61–PK62",
+    "affected_findings": [
+      "SZ-20261008-005",
+      "SZ-20261009-002"
+    ]
   }
 ]

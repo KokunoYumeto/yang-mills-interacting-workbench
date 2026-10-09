@@ -409,3 +409,24 @@ endpoint and the integrated lesson series remain required.
 Complete proofs: [PK1–PK54](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md). Human source conventions: [Brian C. Hall, arXiv:1707.02355v1](https://arxiv.org/abs/1707.02355v1) and [Benjamin Bahr and Thomas Thiemann, arXiv:0709.4636v1](https://arxiv.org/abs/0709.4636v1); exact comparisons in PK25–PK30.
 
 The complementary electric bound is attained at 9/2 by the six-link rectangle with corners (-1,-1,0), (1,-1,0), (1,0,0), (-1,0,0), in every original box L >= 1. Theorem 9.1 supplies its complete Casimir, nonzero-norm and orthogonality proof. This sharpness strengthens SZ-20261008-004 and preserves the PK47 lower estimate.
+
+## S6NS-20261009-001 — the next complementary map is nonzero
+
+Original boundary: PK50 supplies first electric and lower magnetic moments;
+PK54 gives an exact first return and the upper bound (M-1)P/s.
+The full next calculation is Theorem 9.2 and PK55–PK62. Adjacent faces have
+second electric moment 147/4, not 36; six distinct faces may be a cube
+boundary, with exact integral 1/16. The complete matrices retain 3(D+A)/4
+and 3N/2. The entire complementary moment includes the exact projection
+subtraction b^2(M-1)^2P. Its next map has Gram PK59, explicit positive bounds
+PK60, exact return PK61, and a strictly improved finite-volume upper bound
+PK62. These strengthen SZ-20261008-005; its earlier equalities remain valid.
+
+The increased map norm on the prescribed path is not treated as a proof of
+a limiting mass gap or absence of one. The next original calculation is the
+full B2 return and the actual packet's complementary coefficients. Propagated
+through the cumulative proof and TeX, present programme/claim records, figure,
+source-use ledger and dated bulletin. YM-01/YM-02 have no claim depending on
+this new moment; YM-08's research provider receives PK55–PK62.
+
+Complete proof: [Theorem 9.2 and PK55–PK62](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).

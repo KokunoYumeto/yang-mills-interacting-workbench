@@ -211,3 +211,18 @@ calculation; decreasing classical energy does not settle them.
 ![Exact state map and interacting return](figures/PERIOD_PHYSICAL_KERNELS.png)
 
 [Complete TeX source](PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex), [sixty exact checks](checks/PERIOD_PHYSICAL_KERNEL_CHECK.json), [dated mathematical results](RESULTS_20261008.md), and [compilation status](PERIOD_PHYSICAL_TEX_COMPILE_STATUS.json) accompany the proof.
+
+## Complete complementary moment, 9 October 2026
+
+The [full complementary calculation](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) evaluates the second
+electric moment and fourth magnetic compression, including every six-face
+cube term. Theorem 9.2 and PK55–PK62 give the original C*B^2C, the nonzero
+next map, its complete Gram and bounds, an exact second return, and a stronger
+finite-volume upper resolvent bound. The vacuum shift, both coupling factors,
+all face labels and boundary counts remain explicit. The next calculation is
+the full second-complement return and actual heat-packet coefficients; the
+continuum endpoint remains active.
+
+[Forty-three exact checks](checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json) and [dated results](RESULTS_20261009.md) accompany the full proof.
+
+![Cube and complete next return](figures/COMPLEMENTARY_SECOND_MOMENT.png)

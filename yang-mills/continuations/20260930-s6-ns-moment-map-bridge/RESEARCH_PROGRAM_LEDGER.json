@@ -1,6 +1,6 @@
 {
   "schema": "s6-ns-yang-mills-research-program-v2",
-  "date": "2026-09-30",
+  "date": "2026-10-09",
   "programme_id": "YM-S6NS-HIGHER-DOMAIN-NOGAP",
   "status": "Global smooth finite-energy classical Cauchy family constructed from the original cutoff data using Oh's theorem; exact parameter, energy, propagation and holonomy maps proved; quantum goal active",
   "thesis": [
@@ -165,6 +165,35 @@
       "scope": "Actual vacuum shift and both couplings retained; uniform limiting spectral estimates remain unfinished",
       "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK50–PK54",
       "proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md"
+    },
+    {
+      "result_id": "SZ-20261009-001",
+      "statement": "The full electric second face moment includes the exact 3(D+A)/4 term, and the full fourth magnetic face compression includes every six-face cube with coefficient 3N/2.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md Theorem 9.2, PK55–PK57",
+      "scope": "Original finite open cubic lattice, full boundary counts, original Haar and generator conventions",
+      "strengthens": [
+        "SZ-20261008-005"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-002",
+      "statement": "The entire complementary second moment C*B^2C is evaluated with the exact b^2(M-1)^2 subtraction; the next map T has the full Gram PK59 and is injective by PK60.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK57–PK60",
+      "scope": "Actual vacuum shift, both original couplings, reflection-odd physical Hilbert space",
+      "strengthens": [
+        "SZ-20261008-005",
+        "SZ-20261009-001"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-003",
+      "statement": "The complete second return PK61 and the strictly improved resolvent upper bound PK62 follow from the computed original moments.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK61–PK62",
+      "scope": "Every finite original box and every positive spectral parameter; no uniform continuum conclusion",
+      "strengthens": [
+        "SZ-20261008-005",
+        "SZ-20261009-002"
+      ]
     }
   ],
   "defined_spaces": {
@@ -288,7 +317,14 @@
     "figures/PERIOD_PHYSICAL_KERNELS.png",
     "figures/PERIOD_PHYSICAL_KERNELS.svg",
     "figures/period_physical_figure.py",
-    "figures/PERIOD_PHYSICAL_FIGURE_CHECK.json"
+    "figures/PERIOD_PHYSICAL_FIGURE_CHECK.json",
+    "RESULTS_20261009.md",
+    "checks/verify_complementary_second_moment.py",
+    "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
+    "figures/COMPLEMENTARY_SECOND_MOMENT.png",
+    "figures/COMPLEMENTARY_SECOND_MOMENT.svg",
+    "figures/complementary_moment_figure.py",
+    "figures/COMPLEMENTARY_SECOND_MOMENT_FIGURE_CHECK.json"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -313,8 +349,11 @@
     "SZ-20261008-002",
     "SZ-20261008-003",
     "SZ-20261008-004",
-    "SZ-20261008-005"
+    "SZ-20261008-005",
+    "SZ-20261009-001",
+    "SZ-20261009-002",
+    "SZ-20261009-003"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "Complete finite physical vectors, full kernels, corrected joint path and exact interacting return; continuum endpoint active"
+  "current_finite_state_boundary": "Complete second complementary moment, nonzero next map, exact second return and stronger finite-volume resolvent bound; continuum endpoint active"
 }

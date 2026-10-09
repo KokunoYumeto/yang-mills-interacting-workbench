@@ -45,6 +45,13 @@ required = [
     "RESULTS_20261008.md",
     "checks/verify_period_physical_kernels.py",
     "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
+    "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
+    "checks/verify_complementary_second_moment.py",
+    "RESULTS_20261009.md",
+    "figures/COMPLEMENTARY_SECOND_MOMENT.png",
+    "figures/COMPLEMENTARY_SECOND_MOMENT.svg",
+    "figures/complementary_moment_figure.py",
+    "figures/COMPLEMENTARY_SECOND_MOMENT_FIGURE_CHECK.json",
     "figures/PERIOD_PHYSICAL_KERNELS.png",
     "figures/PERIOD_PHYSICAL_KERNELS.svg",
     "figures/period_physical_figure.py",
@@ -84,6 +91,7 @@ receipt_paths = [
     ROOT / "checks" / "HIGHER_CARRIER_EVOLUTION_CHECK.json",
     ROOT / "checks" / "COMPACT_CAUCHY_CHECK.json",
     ROOT / "checks" / "PERIOD_PHYSICAL_KERNEL_CHECK.json",
+    ROOT / "checks" / "COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -96,6 +104,12 @@ for receipt_path in receipt_paths:
 source_path = ROOT / "sources" / "higher_rung" / "s6_higher_rung_24d_preprint.tex"
 period_receipt = json.loads((ROOT / "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json").read_text(encoding="utf-8"))
 checks["period_receipt_matches_current_proof"] = period_receipt["proof_sha256"] == sha256(ROOT / "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md")
+complement_receipt = json.loads((ROOT / "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json").read_text(encoding="utf-8"))
+checks["complement_receipt_matches_current_proof"] = complement_receipt["proof_sha256"] == sha256(ROOT / "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md")
+complement_figure = json.loads((ROOT / "figures/COMPLEMENTARY_SECOND_MOMENT_FIGURE_CHECK.json").read_text(encoding="utf-8"))
+checks["complement_figure_inspection_recorded"] = "inspected" in complement_figure["visual_inspection"]
+for row in complement_figure["files"]:
+    checks["complement_figure_hash:" + row["file"]] = row["sha256"] == sha256(ROOT / "figures" / row["file"])
 period_figure = json.loads((ROOT / "figures/PERIOD_PHYSICAL_FIGURE_CHECK.json").read_text(encoding="utf-8"))
 checks["period_figure_inspection_recorded"] = "inspected" in period_figure["visual_inspection"]
 for row in period_figure["files"]:

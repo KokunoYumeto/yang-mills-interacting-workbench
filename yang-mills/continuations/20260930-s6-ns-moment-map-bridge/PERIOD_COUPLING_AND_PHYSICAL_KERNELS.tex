@@ -1126,9 +1126,411 @@ chosen path. The exact complementary return above is the next receiving
 operator; further uniform estimates of that operator and of the packet's
 complementary coefficients remain active calculations.
 
+\subsection*{9.2. The complete second complementary moment}
+
+Continue with the original open box and every face in (PK24). In this
+subsection write \(P=P_-\), \(Q=Q_-\), \(B=B_-\), and
+\(\mathcal W=\sum_pW_p\), with exactly the definitions of (PK53)–(PK54).
+No change of spatial scale, coupling, inner product or Hamiltonian is made.
+Put
+\[
+ m=M-1,\qquad \alpha=2bM-E_0,\qquad
+ \mu=\kappa(6M-4)+\alpha(M-1).
+ \tag{PK55}
+\]
+Thus \(C^*C=mP\) and \(C^*BC=\mu P\). The latter identity follows
+from (PK53), since \(C\) has range in \(Q\mathcal H_-\).
+The ground-energy bound (PK52) gives
+\(\alpha\ge(\sqrt{9\kappa^2+4b^2M}-3\kappa)/2>0\).
+Consequently \(m>0\) and \(\mu>0\).
+
+For two distinct original faces, define \(A_{pq}=1\) when they share a
+link and \(A_{pq}=0\) otherwise; set \(A_{pp}=0\).
+Let \(D_{pp}=\sum_qA_{pq}\), \(D_{pq}=0\) for \(p\ne q\).
+Let \(N_{pq}\), for \(p\ne q\), count elementary cubes in the original box
+whose boundaries contain both \(p\) and \(q\), and set \(N_{pp}=0\).
+All three matrices act on the full original face coefficient space
+\(\mathbb C^M\), identified isometrically with \(\mathcal F\) by
+\((z_p)\mapsto\sum_pz_pW_p\). Their definitions include faces on the box
+boundary. Reflection permutes faces, links and cubes, so these matrices
+commute with the reflection and preserve \(P\mathcal H_-\).
+
+Theorem 9.2. In the original orthonormal face basis,
+\[
+\begin{aligned}
+ P_{\mathcal F}\mathcal W H_0^2\mathcal WP_{\mathcal F}
+   &=(36M-8)I_M+36{\bf1}{\bf1}^{\mathsf T}
+                       +\frac34(D+A),\\
+ P_{\mathcal F}\mathcal W^4P_{\mathcal F}
+   &=(3M^2-7M+5)I_M+(12M-8){\bf1}{\bf1}^{\mathsf T}
+                       +\frac32N.
+\end{aligned}\tag{PK56}
+\]
+The full complementary second moment is
+\[
+\begin{aligned}
+ K_2:=C^*B^2C={}&
+ \kappa^2P\left[(36M-8)I_M+\frac34(D+A)\right]P\\
+ &+\left[2\kappa\alpha(6M-4)+\alpha^2(M-1)
+                        +b^2(2M^2-5M+4)\right]P
+ +\frac32b^2PNP.
+\end{aligned}\tag{PK57}
+\]
+Here \(B\) is the entire complementary operator, with the actual vacuum
+energy \(E_0\), not a finite compression substituted for that energy.
+
+Proof of the geometry needed for (PK56).
+The vertical-ray occupation construction before (PK50) maps every finite
+edge-even face set \(S\) to a finite cube set \(K\) with boundary \(S\),
+over \(\mathbb Z/2\mathbb Z\). To make the change law explicit, for a cube
+with lower corner \(n=(n_1,n_2,n_3)\) let its occupation be the parity of
+selected horizontal faces above its centre. The difference of occupations
+above and below a horizontal face is that face's indicator. For a vertical
+face between two horizontally adjacent columns, sum the edge-even equations
+on the common vertical strip from its lower edge to a height beyond \(S\).
+Each internal vertical-face indicator occurs twice. The surviving terms
+are the two horizontal-ray counts and the indicator of that vertical face.
+Thus the occupation difference across it is again precisely its indicator.
+At sufficiently high height all occupations are zero. At sufficiently low
+height these change laws make occupations equal across all horizontal
+columns, and an exterior column has value zero. Occupied cubes are therefore
+finite in both height and horizontal extent, and their boundary is exactly
+\(S\). A cube outside the open box has occupation zero: its column is exterior,
+or it is above or below all box faces. Thus the filling respects the original
+box when \(S\) lies there.
+
+In integer coordinates, write \(s_{ij}(n)\in\{0,1\}\) for the indicator of
+the face with lower corner \(n\) in coordinate directions \(i,j\), and let
+\(e_1,e_2,e_3\) be the integer coordinate vectors. The construction and all
+three boundary components are exactly
+\[
+\begin{aligned}
+ k(n)&=\sum_{t=n_3+1}^{\infty}s_{12}(n_1,n_2,t)\pmod2,\\
+ s_{12}(n)&=k(n-e_3)+k(n),\\
+ s_{23}(n)&=k(n-e_1)+k(n),\\
+ s_{13}(n)&=k(n-e_2)+k(n).
+\end{aligned}
+\]
+The last two equations follow by summing, respectively, the edge equations
+\[
+\begin{aligned}
+ s_{12}(n)+s_{12}(n-e_1)+s_{23}(n)+s_{23}(n-e_3)&=0,\\
+ s_{12}(n)+s_{12}(n-e_2)+s_{13}(n)+s_{13}(n-e_3)&=0
+\end{aligned}
+\]
+over heights \(t\ge n_3+1\). The vertical-face terms telescope to the
+face at height \(n_3\); the face at infinity is zero by finite support.
+All additions in these five boundary equations are modulo two.
+
+Let \(\pi_{23}K,\pi_{13}K,\pi_{12}K\) be the sets of unit cells obtained by
+projecting the occupied cubes in the three coordinate directions. Every
+nonempty line of cubes parallel to the first axis has two end faces
+normal to that axis; these end faces are distinct for different projected
+cells. The same statement holds for the second and third axes. Hence
+\[
+ |\partial K|\ge
+ 2\bigl(|\pi_{23}K|+|\pi_{13}K|+|\pi_{12}K|\bigr)\ge6.
+\]
+If \(|\partial K|=6\), each of these three projections consists of one cell.
+Any two cubes of \(K\) then have the same pair of second/third coordinates,
+the same first/third coordinates and the same first/second coordinates.
+They coincide. Conversely one cube has six boundary faces. We have proved
+that every six-face nonempty edge-even set is exactly one cube boundary,
+including at the box boundary.
+
+There are two further elementary geometric facts used below. Distinct unit
+squares of the cubic lattice share at most one edge. Therefore in a set
+of at most three distinct faces, each face has an edge unused by the other
+faces. Integrating such an edge makes any power of its trace equal to the
+corresponding single-group Haar moment, independently of all remaining
+link variables. Repeating proves factorization of trace powers for these
+sets; no independence of larger face collections is assumed.
+
+Haar coefficients.
+For \(U=q_0I-i_{\mathbb C}\sum_{a=1}^3q_a\sigma_a\), with
+\(\sum_{a=0}^3q_a^2=1\), Haar probability is uniform measure on \(S^3\) and
+\(\operatorname{tr}U=2q_0\). Its even coordinate moment is
+\[
+ \int q_0^{2r}\,dU
+ =\frac{1\cdot3\cdots(2r-1)}{4\cdot6\cdots(2r+2)}.
+\]
+For completeness, integrate a rotationally invariant Gaussian in
+\(\mathbb R^4\) in Cartesian and polar coordinates. Integration by parts
+gives the one-coordinate Gaussian recursion
+\(\int_{\mathbb R}t^{2r}e^{-t^2/2}dt
+=(2r-1)\int_{\mathbb R}t^{2r-2}e^{-t^2/2}dt\).
+Radial integration gives the recursion by \(2r+2\) for the corresponding
+four-dimensional radial moment. Dividing the Cartesian moment by that radial
+moment yields the displayed ratio, including the initial moment one.
+Thus the trace moments at powers \(2,4,6\) are respectively \(1,2,5\).
+
+The integral of one trace on each of the six cube faces is exactly \(1/16\).
+Orient the six faces outward. The two traversals of each of the twelve
+edges then have opposite orientations. Reversing any original face
+orientation does not change its trace, since for \(SU(2)\) the trace of
+the inverse equals the trace. The entry identity is
+\[
+ \int U_{ij}(U^{-1})_{kl}\,dU
+       =\frac12\delta_{il}\delta_{jk}.
+\]
+One can prove it directly from the displayed quaternion matrix and the
+second coordinate moments \(\int q_aq_b=\delta_{ab}/4\).
+Expand all six traces into matrix entries and integrate every edge.
+Each contributes \(1/2\) and identifies the corner indices at its two
+ends. At each cube vertex its three incident face-corner indices are
+identified cyclically; no equality joins distinct vertices. There remain
+eight free indices, each taking two values. The integral is therefore
+\(2^8/2^{12}=1/16\). This also proves positivity and the orientation sign
+without a surface approximation.
+
+For a diagonal entry of the second matrix in (PK56), the two external
+traces are both \(W_p\). The four internal choices have nonzero integrals
+only when every face has even multiplicity. A nonempty odd-multiplicity
+set would have at most four faces and is excluded by the proved geometry.
+The four possibilities, with their multiplicities retained, give
+\[
+ 5+2(M-1)+6\cdot2(M-1)+6\binom{M-1}{2}
+       =3M^2+5M-3.
+\]
+They are respectively four further copies of \(p\); four copies of another
+face; two further copies of \(p\) and two of another face; and two each
+of two other faces. Each integral uses at most three distinct faces, so
+the factorization proved above applies.
+
+For distinct external faces \(p,q\), the even-multiplicity cases have
+internal multiplicities \((3p,1q)\), \((1p,3q)\), or
+\((1p,1q,2r)\) with \(r\ne p,q\). Their sum is
+\[
+ 4\cdot2+4\cdot2+12(M-2)=12M-8.
+\]
+If the odd-multiplicity set is nonempty, it must contain six distinct faces,
+each appearing once in the full product, and must be a cube boundary.
+For each cube containing \(p,q\), the remaining four faces have \(4!=24\)
+orders. The additional contribution is \(24/16=3/2\) per such cube.
+This proves the magnetic matrix in (PK56), including every entry of \(N\).
+
+Electric coefficients.
+The single-face identity \(W_p^2=1+\chi_1(U_p)\) gives
+\[
+ H_0W_p^2=8\chi_1(U_p),\qquad
+ \|H_0W_p^2\|_2^2=64,\qquad
+ \langle H_0W_p^2,H_0W_q^2\rangle=0\quad(p\ne q).
+\]
+The last assertion follows by integrating an edge unique to one of the
+two faces: a spin-one character has zero average. The eigenvalue eight
+retains all four link Casimirs \(1(1+1)=2\).
+
+For faces \(p\ne q\) with no common link, \(W_pW_q\) is an electric
+eigenfunction with eigenvalue \(8\cdot3/4=6\), and its squared norm is one.
+Its second moment is therefore \(36\).
+For adjacent faces let \(U\) be the shared link, and write the two traces,
+after cyclic permutation and permitted inversion, as
+\(\operatorname{tr}(AU)\) and \(\operatorname{tr}(U^{-1}B)\).
+The other six links are distinct. Haar projection onto constants in the
+shared link is
+\[
+ F_0(A,B)=\int\operatorname{tr}(AU)\operatorname{tr}(U^{-1}B)\,dU
+                  =\frac12\operatorname{tr}(AB).
+\]
+Its squared norm over the other six links is \(1/4\).
+The full product has squared norm one by the two-face integration argument.
+The complementary part \(F_1\) consequently has squared norm \(3/4\).
+Its shared-link representation is spin one: the tensor product of the
+fundamental representation and its dual splits into the scalar identity
+matrix and the three traceless matrices. Conjugation on the traceless
+matrices is the spin-one representation. Its Casimir for the original
+\(T_a=-i_{\mathbb C}\sigma_a/2\) is two, as follows by applying
+\(-\sum_a[T_a,[T_a,V]]\) to each \(V=T_b\).
+On the scalar part the shared-link Casimir is zero. Each of the other
+six links contributes \(3/4\) to both parts. Hence
+\[
+ H_0F_0=\frac92F_0,\qquad H_0F_1=\frac{13}2F_1,\qquad
+ \|H_0(W_pW_q)\|_2^2
+  =\frac14\left(\frac92\right)^2
+       +\frac34\left(\frac{13}2\right)^2=\frac{147}4.
+\]
+This is \(36+3/4\), not \(36\). Keeping the shared-link tensor sector is
+essential for the second moment even though its first moment is six.
+
+For an arbitrary matrix entry, expand
+\(\langle H_0(\mathcal WW_p),H_0(\mathcal WW_q)\rangle\).
+Changing one link to its negative commutes with \(H_0\); therefore a term
+vanishes if its four face factors have a nonempty odd-multiplicity set.
+The diagonal terms are \(64\) for the repeated face, \(147/4\) for every
+adjacent face and \(36\) for every other face. Their sum is
+\(36M+28+(3/4)D_{pp}\).
+For \(p\ne q\), one remaining pairing gives the squared moment of
+\(W_pW_q\); the other gives
+\(\langle H_0W_p^2,H_0W_q^2\rangle=0\).
+Thus the off-diagonal entry is \(36+(3/4)A_{pq}\).
+This proves the first matrix in (PK56).
+
+Passage to the entire complement.
+All face polynomials, and their images under any finite word in \(H_0\)
+and \(\mathcal W\), are smooth on the compact product of link groups.
+They lie in the domain of every required power of the elliptic operator.
+The projections \(P\) and \(Q\) preserve this domain, since \(P\) has smooth
+finite-dimensional range. Thus the following expressions are operator
+identities between finite-dimensional maps, with no form-domain
+substitution:
+\[
+\begin{aligned}
+ C^*B^2C
+ &=C^*(H-E_0)Q(H-E_0)C\\
+ &=C^*(H-E_0)^2C-C^*(H-E_0)P(H-E_0)C.
+\end{aligned}
+\]
+Since \(PH_0=3P\), \(PC=0\), and \(P\mathcal WC=mP\),
+\(P(H-E_0)C=-bmP\). The second term is exactly \(b^2m^2P\).
+Expand the first term using \(H-E_0=\kappa H_0+\alpha-b\mathcal W\):
+\[
+\begin{aligned}
+ C^*(H-E_0)^2C={}&
+ \kappa^2C^*H_0^2C+2\kappa\alpha C^*H_0C+\alpha^2 C^*C
+ +b^2C^*\mathcal W^2C\\
+ &-\kappa b C^*(H_0\mathcal W+\mathcal WH_0)C
+ -2\alpha b C^*\mathcal WC.
+\end{aligned}
+\]
+The last term vanishes by (PK53). Each mixed electric/magnetic term on
+the preceding line has five total face factors, and \(H_0\) preserves
+each edge parity. Five factors cannot have all face multiplicities even;
+the nonempty odd set has at most five faces and is excluded. Hence both
+mixed terms vanish. Insert (PK56), (PK53), and the exact \(b^2m^2P\)
+subtraction. The all-ones matrix annihilates the odd subspace. The remaining
+magnetic scalar is
+\(b^2[(3M^2-7M+5)-(M-1)^2]=b^2(2M^2-5M+4)\).
+This proves (PK57). \(\square\)
+
+\subsection*{9.3. A second exact return and a stronger resolvent bound}
+
+The calculated moment supplies the next connecting map, not only a finite
+matrix comparison. Define projections and operators on the original
+complementary Hilbert space by
+\[
+\begin{gathered}
+ \Pi=\frac1mCC^*,\qquad Q_2=Q-\Pi,\qquad
+ T=Q_2BC,\qquad B_2=Q_2BQ_2,\\
+ V:=T^*T=K_2-\frac{\mu^2}{m}P .
+\end{gathered}\tag{PK58}
+\]
+The operator \(B_2\) is defined by restriction of the closed nonnegative
+form to \(Q_2\mathcal H_-\); it is self-adjoint and nonnegative.
+Indeed \(C^*C=mP\) proves \(\Pi^*=\Pi\), \(\Pi^2=\Pi\) and that its
+range is exactly \(\operatorname{ran}C\). This finite-dimensional range
+consists of smooth vectors. Its orthogonal complement preserves the form
+domain; restriction is therefore dense and closed.
+In the last identity of (PK58), subtract
+\(C^*B\Pi BC=(C^*BC)^2/m=(\mu^2/m)P\).
+
+The full expression, retaining both its previous form and its exact
+evaluated comparison, is
+\[
+\begin{aligned}
+ V={}&K_2-\frac{[\kappa(6M-4)+\alpha(M-1)]^2}{M-1}P\\
+ ={}&\kappa^2P\left[
+     \left(4-\frac4{M-1}\right)I_M+\frac34(D+A)\right]P\\
+ &+b^2P\left[(2M^2-5M+4)I_M+\frac32N\right]P .
+\end{aligned}\tag{PK59}
+\]
+The cancellation of \(\alpha\) follows by expanding its entire square:
+the \(\alpha^2(M-1)\) and \(2\kappa\alpha(6M-4)\) terms cancel exactly.
+Also
+\((6M-4)^2/(M-1)=36M-12+4/(M-1)\), giving the displayed electric scalar.
+No vacuum energy has been removed from \(B\), \(B_2\), or \(\mu\).
+
+These matrices give explicit nonzero bounds for the next map. For any face
+vector \(z\),
+\[
+ z^*(D+A)z=\sum_{\{p,q\}:A_{pq}=1}|z_p+z_q|^2.
+\]
+Every face has four edges, and each edge belongs to at most four faces.
+Different faces share at most one edge, so \(D_{pp}\le12\). Thus
+\(0\le D+A\le24I_M\).
+Let \(J_{pc}=1\) if face \(p\) belongs to cube \(c\), and zero otherwise.
+With \(k_p=\sum_cJ_{pc}\in\{1,2\}\), the exact identity is
+\(N=JJ^{\mathsf T}-\operatorname{diag}(k_p)\). Therefore \(N\ge-2I_M\).
+Its row sum is \(5k_p\le10\), and
+\(\left|z^*Nz\right|\le\sum_{p<q}N_{pq}(|z_p|^2+|z_q|^2)
+\le10\|z\|^2\), so \(N\le10I_M\).
+Consequently
+\[
+\begin{aligned}
+ \left[\kappa^2\left(4-\frac4m\right)
+                  +b^2(2M^2-5M+1)\right]P
+ &\le V\\
+ &\le
+ \left[\kappa^2\left(22-\frac4m\right)
+                  +b^2(2M^2-5M+19)\right]P.
+\end{aligned}\tag{PK60}
+\]
+Here \(L\ge1\) gives \(M=3(2L)^2(2L+1)\ge36\), so the lower bound is
+strictly positive. In particular \(T\) is injective on the actual odd face
+space: the next return is not zero.
+
+For every \(s>0\), the exact second return is
+\[
+ C^*(B+s)^{-1}C
+ =m^2\left[(\mu+sm)P-T^*(B_2+s)^{-1}T\right]^{-1}_{P\mathcal H_-}.
+ \tag{PK61}
+\]
+To prove it without changing the metric, solve
+\((B+s)(Cf+y)=Cu\), where \(y\in Q_2\mathcal H_-\).
+The \(Q_2\) equation gives \(y=-(B_2+s)^{-1}Tf\).
+Applying \(C^*\) to the other equation gives
+\([(\mu+sm)P-T^*(B_2+s)^{-1}T]f=mu\).
+Finally \(C^*(Cf+y)=mf\), producing both factors \(m\) in (PK61).
+Its denominator is strictly positive: minimizing the quadratic form of
+\(B+s\) over \(y\) leaves at least \(sm\|f\|^2\). These arguments extend
+from smooth vectors by the closed form and resolvent; the finite off-diagonal
+map \(T\) is bounded.
+
+There is also an upper bound using the complete second moment:
+\[
+ \frac{m^2}{\mu+sm}P
+ \ \le\ C^*(B+s)^{-1}C
+ \ \le\ \frac m sP-\frac{\mu^2}{s}(K_2+s\mu P)^{-1}.
+ \tag{PK62}
+\]
+The first inequality is (PK54). For the second put
+\[
+ X=[B(B+s)]^{1/2}C,\qquad
+ Y=[B(B+s)^{-1}]^{1/2}C .
+ \]
+These maps are defined since \(C\) has range in the domain of \(B\).
+The spectral functional calculus gives
+\[
+ X^*X=K_2+s\mu P,\quad
+ X^*Y=\mu P,\quad
+ Y^*Y=mP-sC^*(B+s)^{-1}C.
+\]
+The first matrix is positive definite because \(s\mu>0\).
+Expanding
+\([Y-X(X^*X)^{-1}X^*Y]^*[Y-X(X^*X)^{-1}X^*Y]\ge0\)
+gives \(Y^*Y\ge\mu^2(K_2+s\mu P)^{-1}\). Rearrangement proves
+(PK62). Its positive subtracted matrix makes the upper bound strictly
+stronger than \(mP/s\) for every finite box and every \(s>0\).
+
+Equations (PK57)–(PK62) retain the exact relation of the full complementary
+operator to the original first electric layer. They do not substitute a
+finite-level spectrum for the spectrum of \(H\).
+For the actual corrected path (PK43), \(M=3(2j^4)^2(2j^4+1)\) and
+\(b=10000j^2/\kappa_*\); the nonzero term
+\(b^2(2M^2-5M+1)\) in (PK60) explicitly prevents treating the next map
+as a uniformly small perturbation. The next calculation is the entire
+\(T^*(B_2+s)^{-1}T\), together with the complementary coefficients of
+the actual heat packet in (PK47). Its small-energy measure remains the
+quantity (PK44); neither a shrinking classical energy nor these finite
+moments replace that calculation.
+
+
+\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+
+The figure shows the coordinate projection of an actual side-a lattice cube, the two shared-link electric sectors, and the exact composition T=Q2 B C. Complete proofs and all factors are PK55–PK62. Its \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/complementary_moment_figure.py}{reproducible source} retains the original operators. The finite Haar calculation is derived here; no novelty claim is made for character integration or Schur inversion.
+
 \subsection*{10. Reproducibility and scope}
 
-The symbolic checker verifies the full angular period law, both matrix
+The original symbolic checker verifies the full angular period law, both matrix
 inverses, every inverse-metric block, cover conjugacy, the complete dual
 quadratic form, representation matrices and Haar projectors in the
 smallest relevant tensor sectors, the original plaquette trace and all
@@ -1142,4 +1544,6 @@ claim is made for heat-kernel coherent states, group averaging, or the
 finite-lattice ground-state facts. Their application here receives the
 actual corrected moment-map field, full cusp covering, and original
 interacting lattice Hamiltonian with the indicated exact factors.
+
+The complementary-moment checker adds 43 exact checks for PK55–PK62: direct Haar polynomial integration, oriented cube matrix-entry contraction, exhaustive six-face cycles in the smallest original box, every sixth-moment entry on a cube plus another face, boundary incidence and reflection in three boxes, and the full projection and resolvent identities. General proofs, including the exact cubical filling map, are given in Sections 9.2–9.3. A finite check is not a continuum estimate.
 \end{document}

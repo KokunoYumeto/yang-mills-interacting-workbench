@@ -115,3 +115,14 @@ reading archive. Only the specified passages were used; no whole-paper audit
 or PDF reading is asserted.
 
 The existing disk-literature routing queries were read first. Their hits were not treated as paper reading. The original spatial source was re-read at lines 113–296 for PK1–PK25. The complete finite-state and first-electric-layer arguments are supplied in PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md; no novelty claim is made for heat-kernel states or group averaging.
+
+## Complementary moment source scope
+
+The original objects for PK55–PK62 are the retained spatial Hamiltonian,
+Haar measure and face basis in PK24–PK54. The complete new derivations
+include the group-entry integrals, cubical filling map, all electric sectors
+and operator domains. Disk literature indexes were queried for Wilson/Haar,
+strong-coupling and Schur/moment routes. These routing hits are not proofs:
+no PDF was read and no external theorem is imported from them. The earlier
+Hall and Bahr–Thiemann source comparisons remain in PK25–PK30. The new
+calculation does not claim novelty for character integrals or Schur inversion.

@@ -72,3 +72,14 @@ The PDFs are supplied artifacts copied byte-for-byte into this archive. The pack
 ## Higher-carrier and temporal correction
 
 The [higher-carrier and temporal evolution proof](continuations/20260930-s6-ns-moment-map-bridge/HIGHER_CARRIER_AND_EVOLUTION.md) constructs the exact pullback through the 49-dimensional reduction carrier, extends the profile map, and gives a full parameter connection. It constructs a compactly supported correction satisfying Gauss's law exactly with a computed residual, and proves global source-free evolution of every homogeneous core. The [full compact-support Cauchy continuation](continuations/20260930-s6-ns-moment-map-bridge/COMPACT_SUPPORT_CAUCHY_EVOLUTION.md) now applies Sung-Jin Oh’s established global theorem to the original data and proves finite propagation, the full energy polynomial and its zero set, smooth parameter dependence, bundle descent, dilation and actual link holonomies. The [period and physical-kernel continuation](continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) now supplies the full angular coupling, nonzero finite-lattice physical vectors, exact Gram and Hamiltonian kernels, the corrected same-coupling path, and the full first-electric-layer interaction and complementary return. Continuum spectral weight, reconstruction and theory identification remain active.
+
+## Complete complementary moment, 9 October 2026
+
+The [full complementary calculation](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) evaluates the second
+electric moment and fourth magnetic compression, including every six-face
+cube term. Theorem 9.2 and PK55–PK62 give the original C*B^2C, the nonzero
+next map, its complete Gram and bounds, an exact second return, and a stronger
+finite-volume upper resolvent bound. The vacuum shift, both coupling factors,
+all face labels and boundary counts remain explicit. The next calculation is
+the full second-complement return and actual heat-packet coefficients; the
+continuum endpoint remains active.

@@ -35,6 +35,7 @@ def main() -> None:
         "checks/HIGHER_CARRIER_EVOLUTION_CHECK.json",
         "checks/COMPACT_CAUCHY_CHECK.json",
         "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
+        "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -57,7 +58,7 @@ def main() -> None:
     )
     validation = {
         "schema": "s6-ns-moment-map-public-validation-v1",
-        "date": "2026-10-08",
+        "date": "2026-10-09",
         "result_scope": (
             "Corrected global classical bundle morphism, its fibrewise rank data, "
             "the interacting core, its exact nonzero static source, the higher-carrier "
@@ -67,7 +68,8 @@ def main() -> None:
             "propagation, energy-zero set, parameter dependence, bundle descent, dilation "
             "and link holonomies; full cusp coupling, physical finite-lattice "
             "vectors, exact Gram and Hamiltonian kernels, corrected same-coupling "
-            "path, first electric layer and complete interacting return."
+            "path, first electric layer, complete interacting return, exact second "
+            "complementary moment, cube contributions, nonzero next map and stronger resolvent bound."
         ),
         "claim_boundary": (
             "Finite physical quantum vectors are constructed. No continuum "
