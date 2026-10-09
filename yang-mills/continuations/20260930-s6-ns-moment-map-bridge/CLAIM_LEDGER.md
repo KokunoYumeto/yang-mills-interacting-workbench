@@ -452,3 +452,26 @@ claim/source ledgers, programmes, result bulletin and future YM-08 provider.
 Current YM-01/YM-02 have no dependent claim requiring correction.
 
 Complete proofs: [PK63–PK78](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+## S6NS-20261009-003 — the actual fixed-heat path escapes
+
+Original pending statement: PK75 supplies an accurate low-mass interval,
+but its f_j and Gamma_j were not estimated sufficiently to settle weight.
+Correction/strengthening: PK79–PK83 compute both full moment kernels.
+PK84–PK97 prove nu_j((0,kappa_* j]) <= Gamma_j R_j, R_j -> 0, and
+s_j f_j/Gamma_j -> 0. Thus the original fixed-t_* family cannot provide
+a nonvanishing fraction of low-energy weight. This is not a theorem
+about every interacting state or the desired continuum theory.
+The raw norm has not been identified with its decreasing lower bound.
+
+The exact subsequent construction PK98–PK100 uses the full interacting
+semigroup, preserves physical oddness and calculates its moment flow.
+Its supported spectral bottom remains to estimate on the original path.
+The complete second moment retains both mixed terms and every ordered
+face pair, including coincident and shared-link faces. The new vacuum
+upper bound strengthens the earlier finite vacuum intervals by intersection.
+Propagation covers the programmes, cumulative TeX, claim ledgers, result
+bulletin and planned YM-08 provider. Delivered YM-01–YM-03 have no
+dependent spectral claim requiring correction.
+
+Complete proofs: [PK79–PK100](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).

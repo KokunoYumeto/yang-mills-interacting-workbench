@@ -94,3 +94,19 @@ The cutoff is specified on the original regulator path with error at most
 Gamma_j/(kappa_* j). PK76–PK78 evaluate the whole first cutoff and the
 original smallest-box example. A positive lower spectral mass and the
 interacting continuum state remain active research calculations.
+
+## Actual packet moments and spectral escape, 9 October 2026
+
+The [complete PK79–PK100 calculation](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) evaluates the actual
+first and second interacting moment kernels, with every shared-link
+contraction and vacuum-shift term. A sharper variational vacuum bound
+and an original-graph Haar estimate prove that the fixed-heat packet
+loses its spectral-weight fraction even below the expanding threshold
+kappa_* j. Its accurate finite cutoff is not the reason the low-mass
+test failed: the actual fraction tends to zero.
+
+The next state map is constructed using the full interacting semigroup.
+Its raw norms, decreasing relative energy and preserved spectral support
+are proved. The scale of its supported bottom and the required continuum
+construction remain active research. This result concerns the specified
+packet family; it does not settle the spectrum of other states.

@@ -1,9 +1,11 @@
 # Full cusp coupling and physical kernels of the classical holonomy family
 
-**Reviewed edition, 8 October 2026:** complete finite-scale proofs, the corrected
-same-coupling path and sixty passing exact checks. The results stop at the
-specified finite physical vectors and operators. The continuum construction
-and programme endpoint remain active.
+**Reviewed edition, 9 October 2026:** complete PK1–PK100 proofs and
+204 exact checks. The actual fixed-heat packet loses its spectral-weight
+fraction even below the expanding excitation threshold kappa_* j.
+Its complete interacting moments and an interacting evolution are calculated.
+This identifies a defect of the particular packet path; the construction
+of the intended continuum state and the programme endpoint remain active.
 
 30 September 2026. This note constructs the full angular cusp pullback of
 the retained bundle and its actual classical solution family. It then maps
@@ -1967,6 +1969,430 @@ smallness hypothesis or novelty of Schur inversion is asserted.
 
 The diagram retains the exact maps in PK63–PK64 and the three contributions in PK71. Its numerical endpoints illustrate the exact radicals PK77; the displayed 33 is the odd cutoff eigenvalue in PK78. [Reproducible figure source](figures/full_packet_resolvent_figure.py).
 
+## 9.9. The actual first and second interacting packet moments
+
+Retain the original open cube, all \(N=N_L\) links and \(M=M_L\) faces,
+the gauge projection (PK26), and
+\[
+ H=\kappa H_0+2bM-b\mathcal W,\qquad
+ H_0=\sum_eE_e,\qquad \mathcal W=\sum_pW_p .
+\]
+All kernels below have the original, un-divided packet norms.
+Put \(D_{\mathbf t}=\sum_e\partial_{t_e}\) and
+\(D_{\mathbf s}=\sum_e\partial_{s_e}\). The new two-face kernel is
+\[
+ C_{pq}(h,k;\mathbf t,\mathbf s)
+ =\langle\Phi_{h,\mathbf t},W_pW_q\Phi_{k,\mathbf s}\rangle .
+ \tag{PK79}
+\]
+Here the sum over \(p,q\) is ordered and includes \(p=q\), adjacent
+faces, disjoint faces and every boundary face.
+
+For completeness, (PK79) has the following exact link contraction.
+Treat \(p\) and \(q\) as two labelled occurrences \(A=1,2\), even when
+their underlying face is the same. Write their four ordered edges as
+\((e_{A,\ell}^{\epsilon_{A,\ell}})_{\ell=1}^4\). Introduce indices
+\(i_{A,\ell}\in\{1,2\}\) with \(i_{A,5}=i_{A,1}\).
+For a link \(e\), let \(O_e\) be its list of occurrences \((A,\ell)\),
+in lexicographic order. With the original \(x_e=(q_0\cdot h)_e\) and
+\(y_e=(r_0\cdot k)_e\), define
+\[
+ \begin{split}
+ S_e^{O_e}(x_e,y_e;\mathbf i)
+ &=\int_{SU(2)}p_{t_e}(Ux_e^{-1})p_{s_e}(Uy_e^{-1})
+   \prod_{(A,\ell)\in O_e}
+       (U^{\epsilon_{A,\ell}})_{i_{A,\ell},i_{A,\ell+1}}\,dU,\\
+ C_{pq}
+ &=\int dq_0\,dr_0
+   \sum_{\{i_{A,\ell}=1,2\}}
+       \prod_e S_e^{O_e}(x_e,y_e;\mathbf i).
+ \end{split}\tag{PK80}
+\]
+The empty occurrence list gives \(S_e^\varnothing=Z_e\).
+Each nonempty list has one or two slots. Shared links are integrated
+once with both slots; two independent link integrals would give a
+different answer. Formula (PK80) follows by expanding the two original
+cyclic traces into their matrix entries and then integrating each link.
+The scalar entries commute, while their index contractions preserve
+the original matrix order.
+
+There is also a fully specified representation expansion for every
+local integral. For an occurrence with matrix indices \((a_o,b_o)\),
+put
+\[
+ (\rho_o,\alpha_o,\beta_o)=
+ \begin{cases}
+ (1/2,a_o,b_o),&\epsilon_o=1,\\
+ (\overline{1/2},b_o,a_o),&\epsilon_o=-1 .
+ \end{cases}
+\]
+Using exactly the matrices and Haar polynomial of (PK34)–(PK35),
+\[
+ S_e^{O_e}
+ =\sum_{j,k}d_jd_k e^{-t_ej(j+1)-s_ek(k+1)}
+ \sum_{m,n,p',q'}
+ D^j(x_e^{-1})_{nm}D^k(y_e^{-1})_{q'p'}
+ Q^{j,k,\rho_1,\ldots,\rho_{|O_e|}}_
+ {(m,p',\alpha_1,\ldots),(n,q',\beta_1,\ldots)} .
+ \tag{PK81}
+\]
+The two minus slots, when present, each retain their own transposition.
+The remaining vertex integrals use (PK35) with the actual incident
+slots. Polynomial growth of all finite derivatives and the positive
+heat parameters prove absolute convergence. Thus (PK80) is an actual
+convergent calculation on the original graph.
+
+Define \(\mathcal L(h,k)=\langle H\Phi_h,H\Phi_k\rangle\), keeping the
+two heat-parameter lists independent until after differentiation.
+Direct expansion gives
+\[
+ \begin{split}
+ \mathcal L
+ ={}&\kappa^2D_{\mathbf t}D_{\mathbf s}G
+ -2\kappa bM(D_{\mathbf t}+D_{\mathbf s})G\\
+ &+\kappa b(D_{\mathbf t}+D_{\mathbf s})\sum_pB_p
+ +4b^2M^2G-4b^2M\sum_pB_p+b^2\sum_{p,q}C_{pq}.
+ \end{split}\tag{PK82}
+\]
+Indeed \(H_0\Phi_{h,\mathbf t}=-D_{\mathbf t}\Phi_{h,\mathbf t}\).
+The electric–magnetic terms therefore have the displayed positive
+derivative sign. Moving \(H_0\) to the opposite packet by self-adjointness
+does not move it through the multiplication operator \(W_p\). This
+accounts for both derivatives of \(B_p\), including the commutator
+contribution that a commuting substitution would lose. Smooth packets
+belong to all operator domains, so this is also the \(H^2\) kernel.
+
+Apply the four-term reflection operation in (PK39) to \(G,K,\mathcal L\)
+and then set all \(t_e=s_e=t\). The first two moments of the actual
+spectral measure (PK44) are
+\[
+ \begin{split}
+ \int_0^\infty\lambda\,d\nu(\lambda)
+ &=K^-(h,h)-E_0\Gamma,\\
+ \int_0^\infty\lambda^2\,d\nu(\lambda)
+ &=\mathcal L^-(h,h)-2E_0K^-(h,h)+E_0^2\Gamma .
+ \end{split}\tag{PK83}
+\]
+The total derivatives commute with reflection's edge permutation.
+Equations (PK79)–(PK83) retain the whole magnetic square, both mixed
+terms and the actual vacuum shift. We next estimate these actual
+moments by locating their spectral weight.
+
+## 9.10. A vacuum bound with the original couplings
+
+Write a link as \(U=x_0I+2\sum_{a=1}^3x_aT_a\), where
+\(\sum_{\alpha=0}^3x_\alpha^2=1\). For a trial parameter \(\zeta>0\)
+define
+\[
+ v_\zeta(U)=\exp\!\left(\zeta\sum_e\operatorname{tr}U_e\right),\quad
+ Z_\zeta=\frac2\pi\int_{-1}^1
+          e^{4\zeta x}\sqrt{1-x^2}\,dx,\quad
+ m_\zeta=\frac{2}{\pi Z_\zeta}\int_{-1}^1
+          x e^{4\zeta x}\sqrt{1-x^2}\,dx .
+ \tag{PK84}
+\]
+These formulas use the Haar probability measure on each original
+\(SU(2)\). The marginal follows from the spherical area element of
+the unit \(S^3\): the slice at \(x_0=x\) has density proportional to
+\(\sqrt{1-x^2}\), whose integral is \(\pi/2\).
+The full squared norm is \(Z_\zeta^N\). Reflection permutes the links
+and inverts some of them; trace is unchanged, so \(v_\zeta\) is even.
+Its gauge invariance is not assumed. The unique ground vector on the
+whole link space is gauge invariant by (PK37); therefore a trial on
+that whole space bounds the same physical ground energy.
+
+For one link,
+\[
+ \sum_a(X_a\operatorname{tr}U)^2=1-x_0^2,\qquad
+ E(\operatorname{tr}U)=\tfrac34\operatorname{tr}U .
+\]
+Integration of the derivative of
+\((1-x^2)^{3/2}e^{4\zeta x}\), whose endpoints vanish, gives
+\[
+ 4\zeta\,\mathbb E_\zeta(1-x_0^2)=3m_\zeta,\qquad
+ \frac{\langle v_\zeta,H_0v_\zeta\rangle}{Z_\zeta^N}
+ =\frac{3N\zeta m_\zeta}{4}.
+ \tag{PK85}
+\]
+The marginal is even before tilting; pairing \(x\) with \(-x\)
+shows \(0<m_\zeta<1\). For its other useful bound set \(y=1-x\).
+Its density is proportional to
+\(y^{1/2}e^{-4\zeta y}\sqrt{2-y}\,\mathbf1_{[0,2]}(y)\).
+Start with the gamma probability density proportional to
+\(y^{1/2}e^{-4\zeta y}\) on \([0,\infty)\). Its mean is
+\(3/(8\zeta)\), as one integration by parts shows. The extra factor
+\(g(y)=\sqrt{2-y}\mathbf1_{[0,2]}(y)\) is nonincreasing.
+For independent copies \(Y,Y'\),
+\[
+ 2\operatorname{Cov}(Y,g(Y))
+ =\mathbb E[(Y-Y')(g(Y)-g(Y'))]\le0 .
+ \]
+Dividing by \(\mathbb E g(Y)>0\) proves
+\[
+ 0<1-m_\zeta\le\frac3{8\zeta}.
+ \tag{PK86}
+\]
+
+The tilted link distribution is central, so
+\(\mathbb E_\zeta U=\mathbb E_\zeta U^{-1}=m_\zeta I\).
+Four distinct links occur in every face. Independence in the squared
+trial density gives \(\mathbb E_\zeta W_p=2m_\zeta^4\), including
+every boundary face. Consequently
+\[
+ \begin{split}
+ \frac{\langle v_\zeta,Hv_\zeta\rangle}{Z_\zeta^N}
+ &=\frac{3\kappa N\zeta m_\zeta}{4}
+       +2bM(1-m_\zeta^4)\\
+ &\le\frac{3\kappa N\zeta}{4}+\frac{3bM}{\zeta}.
+ \end{split}\tag{PK87}
+\]
+The inequality uses
+\(1-m^4=(1-m)(1+m+m^2+m^3)\le4(1-m)\).
+At the specific value
+\(\zeta=2\sqrt{bM/(\kappa N)}\), both upper-bound terms are equal.
+Combining with the constant trial proves the unconditional bound
+\[
+ 0\le E_0\le U_{\rm vac}:=
+ \min\{\,2bM,\;3\sqrt{\kappa bNM}\,\}.
+ \tag{PK88}
+\]
+This also tightens every earlier vacuum interval by intersecting its
+upper endpoint with \(U_{\rm vac}\); no vacuum eigenvalue is replaced
+by this bound.
+
+## 9.11. The small-potential region and a spectral projection
+
+Select the original \(12\)-faces based at
+\[
+ (-L+2u,-L+2v,-L+w),\qquad
+ 0\le u,v\le L-1,\quad 0\le w\le2L .
+ \tag{PK89}
+\]
+They use pairwise disjoint links: distinct layers use different links,
+and at a fixed layer the length-one squares have base coordinates
+separated by two. Their number is
+\(n_L=L^2(2L+1)=M/12\).
+Under product Haar measure their holonomies are independent Haar
+elements, since each face product contains four independent Haar links.
+For one such face put \(D=2-\operatorname{tr}U\). For \(s>0\),
+\[
+ \begin{split}
+ \mathbb E e^{-sD}
+ &=\frac2\pi\int_0^2e^{-2sy}\sqrt{y(2-y)}\,dy\\
+ &\le\frac{2\sqrt2}{\pi}
+        \int_0^\infty e^{-2sy}y^{1/2}\,dy
+ =\frac1{2\sqrt\pi\,s^{3/2}} .
+ \end{split}\tag{PK90}
+\]
+All \(2-W_p\) are nonnegative. For the complete potential
+\(V=b\sum_p(2-W_p)\), any \(\delta>0\) therefore satisfies
+\[
+ \begin{split}
+ \operatorname{Haar}\{V\le bM\delta\}
+ &\le \Pr\!\left\{\sum_{\text{selected }p}D_p
+                     \le12n_L\delta\right\}\\
+ &\le
+ \min\!\left\{1,\left[
+       8\sqrt{\frac2\pi}\,e^{3/2}\delta^{3/2}
+                     \right]^{n_L}\right\}.
+ \end{split}\tag{PK91}
+\]
+To obtain the second line multiply the indicator by
+\(\exp(s(12n_L\delta-\sum D_p))\), use independence and (PK90),
+and take \(s=1/(8\delta)\). This estimate uses a subset only to
+bound the complete nonnegative potential; the Hamiltonian and all its
+faces are unchanged.
+
+Let \(\mathsf P_E=\mathbf1_{[0,E]}(H)\), let \(f\in L^2(Q_L)\), and
+let \(q>0\). Set \(v=\mathsf P_Ef\) and
+\(\chi=\mathbf1_{\{V\le q\}}\). Since \(H\ge V\ge0\),
+\(\|(1-\chi)v\|^2\le E\|v\|^2/q\). Orthogonality of the spectral
+projection and Cauchy–Schwarz, with both regions retained, give
+\[
+ \begin{split}
+ \|v\|^2
+ &=\langle f,v\rangle\\
+ &\le\bigl(\|\chi f\|+\sqrt{E/q}\,\|f\|\bigr)\|v\|,\\
+ \|\mathsf P_Ef\|^2
+ &\le\bigl(\|\mathbf1_{\{V\le q\}}f\|
+                     +\sqrt{E/q}\,\|f\|\bigr)^2 .
+ \end{split}\tag{PK92}
+\]
+Absolute values in the middle line justify it also for complex \(f\).
+If \(v=0\) the last inequality is immediate; otherwise divide by
+\(\|v\|\). A bounded-energy spectral vector is in the form domain,
+so the quadratic-form comparison used here is justified without a
+pointwise eigenfunction assumption.
+
+## 9.12. The fixed-heat packet actually escapes to high energies
+
+Use the exact path (PK43), its threshold (PK43b), and the raw lower
+bound \(\gamma_j\) in (PK72). Write \(N_j,M_j^{\rm face},b_j\)
+exactly as there, and set
+\[
+ \begin{gathered}
+ n_j=j^8(2j^4+1)=M_j^{\rm face}/12,\qquad
+ Z_{t_*}=p_{t_*}(I),\qquad
+ C_{\rm H}=8\sqrt{2/\pi}\,e^{3/2},\\
+ \varepsilon_j=\kappa_*j,\qquad
+ q_j=\frac{b_jM_j^{\rm face}}{\sqrt j},\\
+ A_j=\frac{Z_{t_*}^{\,2N_j}}{\gamma_j}
+          \min\{1,(C_{\rm H}j^{-3/4})^{n_j}\},\\
+ B_j=\frac{3\kappa_*}{100\sqrt j}
+              \sqrt{\frac{N_j}{M_j^{\rm face}}}
+       +\frac{\kappa_*^2}{10000M_j^{\rm face}\sqrt j},\qquad
+ R_j=\min\{1,(\sqrt{A_j}+\sqrt{B_j})^2\}.
+ \end{gathered}\tag{PK93}
+\]
+No spatial lattice spacing or covering degree is denoted by \(q_j\)
+or \(n_j\); these are the displayed potential threshold and selected
+face count.
+
+For every \(U\), character unitarity gives
+\(|p_{t_*}(U)|\le p_{t_*}(I)=Z_{t_*}\).
+The heat kernel is positive. Each averaged packet is therefore between
+zero and \(Z_{t_*}^{N_j}\), and
+\[
+ |\eta_j(U)|\le Z_{t_*}^{N_j},\qquad
+ \|\mathbf1_{\{V_j\le q_j\}}\eta_j\|^2
+ \le Z_{t_*}^{2N_j}
+       \min\{1,(C_{\rm H}j^{-3/4})^{n_j}\}.
+ \tag{PK94}
+\]
+The difference of two numbers in that interval has absolute value at
+most its length; no extra factor two is required.
+Apply (PK92) with \(E=E_{0,j}+\varepsilon_j\).
+Reflection oddness removes the ground vector exactly. Using (PK88),
+\(\Gamma_j\ge\gamma_j\), and the original
+\(\kappa_j=\kappa_*,b_j=10000j^2/\kappa_*\) gives
+\[
+ 0\le\nu_j((0,\kappa_*j])\le\Gamma_jR_j,\qquad
+ R_j\longrightarrow0 .
+ \tag{PK95}
+\]
+Indeed \((U_{\rm vac}+\kappa_*j)/q_j\le B_j\); direct substitution
+gives both terms of (PK93), with no change of coupling.
+Moreover \(N_j/M_j^{\rm face}=1+1/(2j^4)\), so \(B_j\to0\).
+To prove \(A_j\to0\), retain the explicit positive constant \(c_\gamma\)
+from the second line of (PK49), so \(\gamma_j\ge c_\gamma j^{-15}\).
+For all sufficiently large \(j\),
+\[
+ \frac{\log A_j}{n_j}
+ \le 2\left(12+\frac6{j^4}\right)\log Z_{t_*}
+       +\log C_{\rm H}-\frac34\log j
+       +\frac{15\log j-\log c_\gamma}{n_j}
+ \longrightarrow-\infty .
+ \tag{PK96}
+\]
+Here \(N_j/n_j=12+6/j^4\) exactly. This proves (PK95) with the full
+volume counts. Ratios in this comparison do not replace \(\eta_j\)
+or its actual raw norm by a different object.
+
+The consequences for the moments (PK83) and the actual resolvent are
+now definite:
+\[
+ \begin{split}
+ K_j^--E_{0,j}\Gamma_j
+   &\ge\kappa_*j\,\Gamma_j(1-R_j),\\
+ \mathcal L_j^--2E_{0,j}K_j^-+E_{0,j}^2\Gamma_j
+   &\ge(\kappa_*j)^2\Gamma_j(1-R_j),\\
+ 0\le\frac{s_jF_{h_j,t_*}(s_j)}{\Gamma_j}
+   &\le R_j+\frac1{j^2+1},\qquad s_j=\kappa_*/j,\\
+ 0\le\frac{s_jf_j}{\Gamma_j}
+   &\le R_j+\frac1{j^2+1}+\frac1{j^2}
+       \longrightarrow0 .
+ \end{split}\tag{PK97}
+\]
+The moment inequalities integrate over
+\((\kappa_*j,\infty)\). For the resolvent split at \(\kappa_*j\);
+on the low interval \(s_j/(\lambda+s_j)\le1\), and on its complement
+it is at most \(1/(j^2+1)\). The last line uses (PK73).
+Thus the lower expression inside the maximum in (PK75) is negative
+for all sufficiently large \(j\). Its inability to certify positive
+mass is explained here by the actual packet, not by cutoff error.
+
+Equation (PK95) proves that the fraction of this packet's spectral
+mass in every fixed bounded excitation interval tends to zero; even
+the expanding interval \((0,\kappa_*j]\) loses that fraction.
+It does not assert that its un-divided raw mass tends to zero:
+\(\Gamma_j\) has not been replaced by its lower bound as an
+asymptotic equality. It also does not bound the spectral measures of
+other states or decide the intended continuum Yang–Mills problem.
+It rules out the fixed-\(t_*\) packet path as a source of a nonvanishing
+fraction of low-energy weight in the present construction.
+
+## 9.13. An exact interacting evolution of the escaping packet
+
+The next operation can be constructed on the same Hilbert space and
+classical labels. For each original finite lattice and every \(u>0\)
+put \(A=H-E_0\) and
+\[
+ \xi_{h,t}(u)=e^{-uA}\eta_{h,t},\qquad
+ Q_{h,t}(u)=\|\xi_{h,t}(u)\|^2
+          =\int_0^\infty e^{-2u\lambda}\,d\nu(\lambda).
+ \tag{PK98}
+\]
+The operator commutes with the original gauge action and reflection,
+so this map stays physical and odd. It depends on the complete
+interacting Hamiltonian. Every spectral multiplier is positive, so
+\(\xi(u)\ne0\) whenever \(\eta\ne0\). It is smooth by the elliptic
+spectral domain characterization on the compact link manifold.
+Its Gram kernel, with both original labels retained, is
+\(\langle\eta_h,e^{-2u(H-E_0)}\eta_k\rangle\).
+The product formula (PK45), with its original potential, evaluates
+this kernel; it is not the free heat operation (PK28).
+
+Let \(Q_n(u)=\int\lambda^n e^{-2u\lambda}\,d\nu(\lambda)\).
+Differentiation is justified by the exponential bound on
+\(\lambda^n e^{-u\lambda}\), and gives the exact calculation
+\[
+ \begin{split}
+ Q_0'(u)&=-2Q_1(u),\qquad Q_1'(u)=-2Q_2(u),\\
+ \frac{d}{du}\frac{Q_1(u)}{Q_0(u)}
+ &=-2\frac{Q_2(u)Q_0(u)-Q_1(u)^2}{Q_0(u)^2}\le0 .
+ \end{split}\tag{PK99}
+\]
+The numerator is one half of the double integral of
+\((\lambda-\mu)^2e^{-2u(\lambda+\mu)}\) against \(d\nu(\lambda)d\nu(\mu)\),
+so the sign is proved with every weight retained.
+
+This operation has an exactly identifiable limit and defect. The
+compact-resolvent spectrum is discrete; \(\eta\) has zero vacuum
+component. Let
+\(\alpha=\min\{\lambda>0:\mathbf1_{\{\lambda\}}(A)\eta\ne0\}\) and
+\(c_\alpha=\|\mathbf1_{\{\alpha\}}(A)\eta\|^2>0\).
+Then
+\[
+ e^{2u\alpha}Q_0(u)\longrightarrow c_\alpha,\qquad
+ \frac{Q_1(u)}{Q_0(u)}\longrightarrow\alpha>0,\qquad
+ \mathbf1_I(A)\xi(u)=e^{-uA}\mathbf1_I(A)\eta .
+ \tag{PK100}
+\]
+To prove the limits, split off the atom at \(\alpha\).
+For \(u\ge1\), each remaining summand of the first expression is
+bounded by its original squared coefficient and tends to zero.
+For the energy numerator use
+\(\lambda e^{-2(\lambda-\alpha)}\le C_\alpha\) on
+\([\alpha,\infty)\) and the same summable coefficients. Dominated
+convergence proves both limits. The last identity follows from the
+commuting spectral multipliers and shows exactly that no previously
+absent spectral support is created.
+
+We have therefore constructed and calculated the interacting
+evolution, rather than assuming that it supplies the missing state.
+On the original path take, for example, \(u_j=j/\kappa_*\);
+(PK98)–(PK100) give its actual raw norms, moments and support maps.
+The next unresolved calculation is the scale of the actual supported
+bottom \(\alpha_j\) and the corresponding weights for this new map,
+using the full odd finite operator and the vacuum intervals.
+The fixed-\(t_*\) escape theorem requires this new analysis; it does
+not answer it or close the research programme.
+
+
+![Original edge-disjoint faces and the full packet escape estimate](figures/PACKET_ESCAPE.png)
+
+The coordinate diagram shows one exact lattice layer and its physical-coordinate map. The curve is the PK96 bound, using the specified PK49 constant and the PK70 upper bound for the heat value. It is an estimate, not sampled eigenvalues. Complete proofs are PK79–PK100. [Reproducible figure source](figures/packet_escape_figure.py).
+
 ## 10. Reproducibility and scope
 
 The original symbolic checker verifies the full angular period law, both matrix
@@ -1987,3 +2413,5 @@ interacting lattice Hamiltonian with the indicated exact factors.
 The complementary-moment checker adds 43 exact checks for PK55–PK62: direct Haar polynomial integration, oriented cube matrix-entry contraction, exhaustive six-face cycles in the smallest original box, every sixth-moment entry on a cube plus another face, boundary incidence and reflection in three boxes, and the full projection and resolvent identities. General proofs, including the exact cubical filling map, are given in Sections 9.2–9.3. A finite check is not a continuum estimate.
 
 The full-packet checker adds 39 exact checks for PK63–PK78, including complex packet cross terms, both returns with the original non-unit Gram, vacuum intervals, cutoff constants, and the original 37-dimensional physical cutoff in the smallest box. Infinite-space estimates are the complete written proofs in Sections 9.4–9.8.
+
+The packet-moment checker adds 62 exact checks for PK79–PK100: noncommuting square, Haar shared-link slots, trial and small-potential constants, original graph counts, full path factors and the interacting energy-flow identity. The asymptotic escape estimate is the complete proof in Sections 9.10–9.12; no finite test is substituted for it.

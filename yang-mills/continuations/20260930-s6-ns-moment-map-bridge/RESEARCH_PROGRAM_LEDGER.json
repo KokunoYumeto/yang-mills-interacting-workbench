@@ -223,6 +223,33 @@
         "SZ-20261009-005",
         "SZ-20261008-005"
       ]
+    },
+    {
+      "result_id": "SZ-20261009-007",
+      "statement": "Complete original packet first and second interacting moments, including shared-link two-face contractions, all mixed terms and actual vacuum shift.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK79–PK83",
+      "scope": "Original finite physical lattice with all faces and both independent heat-parameter lists",
+      "strengthens": [
+        "SZ-20261009-004"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-008",
+      "statement": "An explicit vacuum-energy bound and exact independent-face small-potential estimate prove that the fixed-heat packet loses its spectral-weight fraction below kappa_* j on the original path. Its relative first and second moments diverge and s_j f_j/Gamma_j tends to zero.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK84–PK97",
+      "scope": "Exact PK43 path and raw norm retained; neither decay of raw mass nor a conclusion about other states or continuum Yang-Mills",
+      "strengthens": [
+        "SZ-20261009-005"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-009",
+      "statement": "The full interacting semigroup maps the original packet to nonzero physical odd states. Its raw Gram, moment flow, decreasing relative energy and exact supported spectral bottom are calculated.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK98–PK100",
+      "scope": "Every original finite lattice and u>0; no unsupported claim that the supported bottom closes",
+      "strengthens": [
+        "SZ-20261009-008"
+      ]
     }
   ],
   "defined_spaces": {
@@ -359,7 +386,13 @@
     "figures/FULL_PACKET_RESOLVENT.png",
     "figures/FULL_PACKET_RESOLVENT.svg",
     "figures/full_packet_resolvent_figure.py",
-    "figures/FULL_PACKET_RESOLVENT_FIGURE_CHECK.json"
+    "figures/FULL_PACKET_RESOLVENT_FIGURE_CHECK.json",
+    "checks/verify_packet_escape.py",
+    "checks/PACKET_MOMENTS_ESCAPE_CHECK.json",
+    "figures/packet_escape_figure.py",
+    "figures/PACKET_ESCAPE.png",
+    "figures/PACKET_ESCAPE.svg",
+    "figures/PACKET_ESCAPE_FIGURE_CHECK.json"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -390,8 +423,11 @@
     "SZ-20261009-003",
     "SZ-20261009-004",
     "SZ-20261009-005",
-    "SZ-20261009-006"
+    "SZ-20261009-006",
+    "SZ-20261009-007",
+    "SZ-20261009-008",
+    "SZ-20261009-009"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "Full raw-packet resolvent, complete electric cutoff, actual vacuum interval, prescribed path error and exact first cutoff; positive low-energy mass and continuum endpoint unfinished"
+  "current_finite_state_boundary": "PK1–PK100: full interacting moments and proved escape of the fixed-heat packet; interacting evolution constructed, supported bottom and continuum endpoint unfinished"
 }

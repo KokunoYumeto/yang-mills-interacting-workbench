@@ -148,3 +148,16 @@ e6c45f423055bb91eafb0c85c387657d70f89a0f7b71aabb2ea0282ef8649f89.
 The intact original archive and extracted TeX are retained in the source-use
 ledger's private provenance package. No new authorship or novelty is claimed
 for the classical block inversion method.
+
+## Packet-moment and escape source scope
+
+The exact programme inputs are PK24–PK49 and PK65–PK78 in the prior
+edition f2f7adf7ab7d08963333f2595237f91f20b53f66. Canonical disk
+metadata indexes were queried before the new calculation; no routing
+hit was treated as a read source. No new external book, article or PDF
+was downloaded or read for this increment. Bahr–Thiemann's original
+author TeX and the prior precise comparison remain the packet convention
+provider. The shared-link contraction, trial bound, disjoint-face Haar
+estimate, spectral projection inequality and full path limits are derived
+completely in PK79–PK100. No external result or novelty claim is imported
+for these estimates. The rendered figure was inspected.
