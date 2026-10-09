@@ -1,7 +1,7 @@
 {
   "schema": "s6-ns-moment-map-public-validation-v1",
   "date": "2026-10-09",
-  "result_scope": "Corrected global classical bundle morphism, its fibrewise rank data, the interacting core, its exact nonzero static source, the higher-carrier pullback, full parameter connection, Gauss-preserving correction, and global source-free homogeneous core evolution; exact application of Oh’s global theorem to the original compact-support data; complete proofs of propagation, energy-zero set, parameter dependence, bundle descent, dilation and link holonomies; full cusp coupling, physical finite-lattice vectors, exact Gram and Hamiltonian kernels, corrected same-coupling path, first electric layer, complete interacting return, exact second complementary moment, cube contributions, nonzero next map, stronger resolvent bound, full-packet returns, complete electric cutoff, vacuum interval, spectral-transform error, complete packet moments, fixed-heat spectral escape and interacting evolution.",
+  "result_scope": "Corrected global classical bundle morphism, its fibrewise rank data, the interacting core, its exact nonzero static source, the higher-carrier pullback, full parameter connection, Gauss-preserving correction, and global source-free homogeneous core evolution; exact application of Oh’s global theorem to the original compact-support data; complete proofs of propagation, energy-zero set, parameter dependence, bundle descent, dilation and link holonomies; full cusp coupling, physical finite-lattice vectors, exact Gram and Hamiltonian kernels, corrected same-coupling path, first electric layer, complete interacting return, exact second complementary moment, cube contributions, nonzero next map, stronger resolvent bound, full-packet returns, complete electric cutoff, vacuum interval, spectral-transform error, complete packet moments, fixed-heat spectral escape, interacting evolution, actual fixed-box odd support, full raw limiting spectral measure and higher-carrier receiving map.",
   "claim_boundary": "Finite physical quantum vectors are constructed. No continuum reconstruction, gapless spectrum, or mass-gap contradiction is established.",
   "analytical_input": {
     "author": "Sung-Jin Oh",
@@ -43,27 +43,33 @@
     },
     {
       "path": "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
-      "sha256": "8ce57fc9298d363ff7a28a6abac002b4f18286af79df272653586624e827b24f",
+      "sha256": "23c47f3a60d9b4a458bc9546f717ddab546b1e66666d429216e965d9bb3a96c2",
       "all_passed": true,
       "recorded_boolean_checks": 60
     },
     {
       "path": "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
-      "sha256": "6f2f6bbcf02fbefadaf3179d5f274bec21c1db0a2cb97c5ff465151e79f98369",
+      "sha256": "3be145f1769fb65dba2bf1c6ee2233a09beeb07fca063f508a8c241822a763d9",
       "all_passed": true,
       "recorded_boolean_checks": 43
     },
     {
       "path": "checks/FULL_PACKET_RESOLVENT_CHECK.json",
-      "sha256": "8d43c0e502e498bb74e458cbc07afde41cc0aab8ed24287cd0362116f97bfee7",
+      "sha256": "077257d9a15ac887bb3650f763e15a6fb9c2ad7cea32cc563c4c809b155a61ab",
       "all_passed": true,
       "recorded_boolean_checks": 39
     },
     {
       "path": "checks/PACKET_MOMENTS_ESCAPE_CHECK.json",
-      "sha256": "bed2251cc41de6ed6555f5d700759046d879956e66202d9522590815f9c52926",
+      "sha256": "61d5da71c05fcb9fe4f3e2f59f87d5fa2f90acad3f8fab4e4f32452b3715f03b",
       "all_passed": true,
       "recorded_boolean_checks": 62
+    },
+    {
+      "path": "checks/ODD_VACUUM_OBSERVABLE_CHECK.json",
+      "sha256": "6cee84a472e9b0ce8d1e3047b73373d70ecb06294e8640c811a8d3ce96bf9b3e",
+      "all_passed": true,
+      "recorded_boolean_checks": 109
     }
   ],
   "all_symbolic_receipts_passed": true,

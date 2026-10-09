@@ -192,3 +192,19 @@ Its raw norms, decreasing relative energy and preserved spectral support
 are proved. The scale of its supported bottom and the required continuum
 construction remain active research. This result concerns the specified
 packet family; it does not settle the spectrum of other states.
+
+## Actual odd vacuum observable, 9 October 2026
+
+The [complete PK101–PK131 proof](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) constructs a bounded
+smooth reflection-odd observable on the actual interacting vacuum.
+At each fixed box its raw first-cluster weight tends to 3/32, and its
+supported bottom is the actual lowest odd excitation. All limiting
+raw spectral weights and the Euclidean-time correlation are evaluated.
+The entire higher-carrier total space receives a global smooth map
+through its three selected quaternionic squared norms, with the exact
+original zero subbundle and parameter-dependent weights retained.
+
+The original simultaneous path still needs estimates for its actual
+odd energy and raw weights. The full continuum construction remains
+the research target. The earlier vacuum upper bound is now linked
+to its retained spatial-continuum proof with an exact parameter map.

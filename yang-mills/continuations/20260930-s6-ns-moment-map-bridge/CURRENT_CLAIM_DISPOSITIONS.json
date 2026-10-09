@@ -531,5 +531,44 @@
     "affected_findings": [
       "SZ-20261009-008"
     ]
+  },
+  {
+    "finding_id": "SZ-20261009-010",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "The actual first reflection-odd cluster has dimension two for sufficiently small positive coupling at every fixed open box. An explicit bounded smooth odd observable on the actual vacuum has raw first-cluster weight tending to 3/32.",
+    "scope": "L at least two and positive spacing fixed before g tends to zero; exact tree, Haar, nonlinear reflection and gauge maps retained.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK102–PK120",
+    "affected_findings": [
+      "SZ-20261009-009"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-011",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "All raw limiting spectral weights of the constructed odd observable are evaluated, with their complete generating function and Euclidean-time correlation; actual finite-box spectral measures converge to this measure.",
+    "scope": "Exact comparison spectrum and actual fixed-box convergence; no continuum identification.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK121–PK126",
+    "affected_findings": [
+      "SZ-20261009-010"
+    ]
+  },
+  {
+    "finding_id": "SZ-20261009-012",
+    "status": "proved_at_stated_scope",
+    "corrected_statement": "A global smooth receiving map from the full rank-24 higher-carrier total space to actual smooth physical odd vectors is constructed through the exact sum of the three selected quaternionic squared norms. Its raw mass and first-cluster weight are computed for every fixed parameter.",
+    "scope": "All fibre coordinates retained; scalar zero set is the original rank-12 subbundle. This map factors through the displayed scalar; uniform estimates along the original joint path remain unfinished.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK127–PK131",
+    "affected_findings": [
+      "SZ-20261009-010"
+    ]
+  },
+  {
+    "finding_id": "S6NS-20261009-004-PROVENANCE",
+    "status": "provenance_corrected",
+    "corrected_statement": "PK88 for L at least two reproduces the earlier spatial-continuum equations (93)–(99), with exact trial dictionary PK101; the L=1 extension and escape application retain their proofs.",
+    "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK101",
+    "affected_findings": [
+      "SZ-20261009-008"
+    ]
   }
 ]

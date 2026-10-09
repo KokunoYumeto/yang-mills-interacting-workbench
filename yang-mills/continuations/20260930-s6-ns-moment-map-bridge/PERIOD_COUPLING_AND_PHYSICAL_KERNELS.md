@@ -1,11 +1,12 @@
 # Full cusp coupling and physical kernels of the classical holonomy family
 
-**Reviewed edition, 9 October 2026:** complete PK1–PK100 proofs and
-204 exact checks. The actual fixed-heat packet loses its spectral-weight
-fraction even below the expanding excitation threshold kappa_* j.
-Its complete interacting moments and an interacting evolution are calculated.
-This identifies a defect of the particular packet path; the construction
-of the intended continuum state and the programme endpoint remain active.
+**Reviewed edition, 9 October 2026:** complete PK1–PK131 proofs,
+including PK109a, and 313 exact checks. The bounded odd observable on
+the actual interacting vacuum has positive first-cluster weight at
+each fixed box. Its complete limiting raw spectral measure and a
+global receiving map from the higher carrier are calculated.
+Estimates along the original joint path and the continuum endpoint
+remain active research.
 
 30 September 2026. This note constructs the full angular cusp pullback of
 the retained bundle and its actual classical solution family. It then maps
@@ -2156,6 +2157,12 @@ Combining with the constant trial proves the unconditional bound
  \min\{\,2bM,\;3\sqrt{\kappa bNM}\,\}.
  \tag{PK88}
 \]
+
+The same upper bound for L at least two appears in the retained
+spatial-continuum Section 12, equations (93)–(99). PK101 gives the
+exact trial-parameter and scalar-factor comparison. Its rederivation
+here also covers L=1; the packet-escape application below is unchanged.
+
 This also tightens every earlier vacuum interval by intersecting its
 upper endpoint with \(U_{\rm vac}\); no vacuum eigenvalue is replaced
 by this bound.
@@ -2393,6 +2400,594 @@ not answer it or close the research programme.
 
 The coordinate diagram shows one exact lattice layer and its physical-coordinate map. The curve is the PK96 bound, using the specified PK49 constant and the PK70 upper bound for the heat value. It is an estimate, not sampled eigenvalues. Complete proofs are PK79–PK100. [Reproducible figure source](figures/packet_escape_figure.py).
 
+## 9.14. Exact receiving maps from the retained weak-coupling calculation
+
+The retained programme already proves the full fixed-open-box
+weak-coupling comparison. We use its exact objects, rather than deriving
+a second boundary model. The complete providers are:
+
+- [Finite-box proof, Sections 1–7](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md):
+  original Hamiltonian, maximal-tree/Haar map, full kinetic tensor,
+  all open-boundary modes and actual eigenvalue convergence.
+- [Actual vacuum and spectral maps, Sections 1–4](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_gap_primary_20260908/weak_coupling_state_observable_limit.md):
+  compactness, strong vacuum convergence and norm convergence of finite
+  spectral projections, with the density and dilation retained.
+- [Cubic symmetry, Sections 1–3](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_gap_primary_20260908/cubic_box_gap_symmetry.md):
+  original signed graph automorphisms, the three lowest cochains, and
+  their exact nonlinear-chart and limiting intertwiners.
+
+All three providers have been read at these loci. Their mathematical
+proofs are included in this repository. Historical references to a
+literature audit do not mean that an external PDF was read again here.
+Their fixed \(L,a\) quantifiers remain in every use below.
+
+There is also a provenance correction to (PK84)–(PK88). The same vacuum
+upper bound was proved in [spatial-continuum Section 12, equations
+(93)–(99)](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md#L1214).
+For its parameter \(t_{\rm WC}\), one-link integral \(Z_t^{\rm WC}\) and
+product trial \(F_{t_{\rm WC}}\), the exact comparison is
+\[
+ t_{\rm WC}=2\zeta,\quad
+ Z_\zeta=Z_{2\zeta}^{\rm WC},\quad m_\zeta=q_{2\zeta}^{\rm WC},\quad
+ v_\zeta=(Z_{2\zeta}^{\rm WC})^{N/2}F_{2\zeta},\quad
+ 3\sqrt{\kappa bNM}=\frac{3\sqrt{NM}}a .
+ \tag{PK101}
+\]
+The last equality follows from the original \(\kappa b=1/a^2\).
+Thus the bound was rederived, not newly obtained in this programme.
+The current proof also covers \(L=1\); the earlier stated domain was
+\(L\ge2\). Its use in the new packet-escape argument is unchanged.
+
+Fix now \(L\ge2,a>0\) and let \(g\downarrow0\), retaining
+\[
+ H_g=\frac{2g^2}{a}H_0+\frac1{2g^2a}\sum_p(2-W_p),\quad
+ A_g=H_g-E_{0,g},\quad \psi_g>0,\quad \|\psi_g\|=1.
+ \tag{PK102}
+\]
+For clarity, the complete original coordinate maps used below are
+specified here. Root the tree at \((-L,-L,-L)\), with parent obtained
+by decreasing the first coordinate in the order \(1,2,3\) that exceeds
+\(-L\). If \(t_v\) is its ordered tree holonomy, set
+\(Z_c=t_{s(c)}U_ct_{t(c)}^{-1}\) for each chord.
+The inverse retains the tree links and uses
+\(U_c=t_s^{-1}Z_ct_t\). Independent left/right Haar translations
+on the chords preserve the entire product measure. Based gauge
+averaging removes the tree variables; the residual action is one
+simultaneous adjoint rotation on all chord variables.
+
+There are \(d_L=2(2L)^3+3(2L)^2\) chords. On real cochains let
+\((Tx)_c=p_s(x)+x_c-p_t(x)\), where \(p_v\) is the signed additive
+tree-path integral, let \(j_{\mathcal C}\) insert zero tree entries,
+and retain
+\[
+ G=TT^*,\quad C=d_1j_{\mathcal C},\quad
+ O^TG^{1/2}C^*CG^{1/2}O
+       =\operatorname{diag}(\sigma_1^2,\ldots,\sigma_{d_L}^2),\quad
+ z^\alpha=O^TG^{-1/2}x^\alpha .
+ \tag{PK103}
+\]
+These are maps on the original counting inner products. The source
+proves \(Tj_{\mathcal C}=I\), \(\ker T=\operatorname{im}d_0=\ker d_1\)
+and \(d_1T^*G^{-1}=C\); hence the positive matrices and all inverses
+in (PK103) exist.
+
+In the unique logarithm chart \(Z_c=\exp(y_c^\alpha T_\alpha)\),
+\(|y_c|<2\pi\), set \(y=gx\). The exact Hilbert map, including its
+zero extension, is
+\[
+ \begin{split}
+ \mathcal J(y)&=(16\pi^2)^{-d_L}
+   \prod_c\left[\frac{\sin(|y_c|/2)}{|y_c|/2}\right]^2,\qquad
+ \Omega_g=\{x:|x_c|<2\pi/g\ \text{for every }c\},\\
+ (\mathcal B_gF)(x)&=
+ \mathbf1_{\Omega_g}(x)\,g^{3d_L/2}\mathcal J(gx)^{1/2}
+                          F(\exp(gx)).
+ \end{split}\tag{PK104}
+\]
+It is an isometry onto the subspace supported in \(\Omega_g\),
+not onto all Euclidean \(L^2\). Its adjoint has the reciprocal density
+and dilation on that subspace. The complete transformed form is
+\[
+ \frac2a\int A^{ij}(gx)
+ \left(\partial_i f-\frac g2(\partial_i\log\mathcal J)(gx)f\right)^*
+ \left(\partial_j f-\frac g2(\partial_j\log\mathcal J)(gx)f\right)dx
+ +\int\frac{W(gx)}{2g^2a}|f|^2dx .
+ \tag{PK105}
+\]
+Here \(A(0)=G\otimes I_3\) and
+\(W(y)=\frac14\sum_\alpha\|Cy^\alpha\|^2+O_L(|y|^3)\).
+The full \(A,\mathcal J,W\), including their remainders, remain in
+(PK105). The retained proof localizes this form and proves convergence
+of actual eigenvalues, vacua and finite spectral projections at fixed
+\(L,a\).
+
+## 9.15. The bottom of the actual reflection-odd sector
+
+Let \(m=2L\), \(\lambda_q=4\sin^2(\pi q/[2(m+1)])\).
+On the one-dimensional vertex and edge counting spaces use
+\[
+ \begin{split}
+ v_0(l)&=(m+1)^{-1/2},\\
+ v_q(l)&=\sqrt{2/(m+1)}
+               \cos\frac{\pi q(l+1/2)}{m+1},\quad 1\le q\le m,\\
+ w_q(l)&=-\sqrt{2/(m+1)}
+               \sin\frac{\pi q(l+1)}{m+1},\quad 1\le q\le m .
+ \end{split}\tag{PK106}
+\]
+The index is \(l=n_i+L\); original physical coordinates are still
+\(o+an\) and edge midpoints \(o+a(n+e_i/2)\).
+The difference map satisfies \(Dv_q=\sqrt{\lambda_q}w_q\).
+At a frequency triple \(q\), the transverse edge multiplicity is
+\(\#\{i:q_i>0\}-1\) when at least two components are positive,
+with squared frequency \(\sum_i\lambda_{q_i}\).
+This follows from the exact curl identity
+\(\sum_{i<h}|s_ix_h-s_hx_i|^2=|s|^2|x|^2-|s\cdot x|^2\)
+on the complement of the gradient \(s_i=\sqrt{\lambda_{q_i}}\).
+These tensor bases exhaust all original cochains.
+
+For \(i<j\) let \(b_i^{ij}\) be the edge tensor with \(w_1\) in
+direction \(i\), \(v_1\) in direction \(j\), and \(v_0\) in the other
+direction; define \(b_j^{ij}\) with \(i,j\) interchanged. The three
+lowest transverse cochains are
+\[
+ V_{ij}=(b_i^{ij}-b_j^{ij})/\sqrt2,\quad
+ V_{ji}=-V_{ij},\quad
+ \sigma_*=\sqrt8\sin\frac{\pi}{4L+2},\quad
+ \delta_*=\frac{2\sigma_*}{a}.
+ \tag{PK107}
+\]
+Choose the first three columns of \(O\) in (PK103) to be
+\(G^{-1/2}TV_{12},G^{-1/2}TV_{13},G^{-1/2}TV_{23}\);
+complete them by any fixed orthonormal spectral basis. This specifies
+the three coordinates \(z_1,z_2,z_3\) used below without a basis ambiguity.
+
+A graph reflection in coordinate \(r\) maps a vertex index to \(m-l\)
+and an edge index to \(m-1-l\), reversing that directed edge. From
+(PK106), \(v_1(m-l)=-v_1(l)\) and \(w_1(m-1-l)=w_1(l)\).
+Including the directed-edge sign gives
+\[
+ V_{ij}\longmapsto\eta_i\eta_jV_{ij}
+ \quad\text{under }\operatorname{diag}(\eta_1,\eta_2,\eta_3).
+ \tag{PK108}
+\]
+Coordinate permutations send \(V_{ij}\) to \(V_{\pi(i)\pi(j)}\)
+with its displayed antisymmetric sign. Thus reflection \(\mathcal R\)
+in coordinate one acts on \((z_1,z_2,z_3)\) by \((-z_1,-z_2,z_3)\).
+These are spatial mode signs; every \(z_\mu\) still has three colour
+components.
+
+The comparison oscillator retains all modes:
+\[
+ H_{\rm osc}
+ =\sum_{\nu=1}^{d_L}
+   \left[-\frac2a\Delta_{z_\nu}
+                  +\frac{\sigma_\nu^2}{8a}|z_\nu|^2\right],
+ \qquad \mu_0=\frac3{2a}\sum_{\nu=1}^{d_L}\sigma_\nu .
+ \tag{PK109}
+\]
+In the original \(x\) coordinates its vacuum is exactly
+\[
+ \Phi_0(x)=(\det G)^{-3/4}
+     \prod_{\nu=1}^{d_L}\left(\frac{\sigma_\nu}{4\pi}\right)^{3/4}
+     \exp\!\left[-\frac18\sum_{\nu=1}^{d_L}
+                                  \sigma_\nu|z_\nu|^2\right].
+ \tag{PK109a}
+\]
+Indeed \(x=G^{1/2}Oz\) in each colour component has absolute Jacobian
+\((\det G)^{3/2}\); its square-root factor is retained in this
+wavefunction. Its physical vectors are simultaneous-colour-rotation invariants.
+One quantum transforms as an adjoint vector and has no invariant
+component. The first physical cluster therefore has excitation
+\(\delta_*\), with six basis vectors
+\[
+ D_\mu=\frac{\sigma_*}{2\sqrt6}
+          (|z_\mu|^2-6/\sigma_*)\Phi_0,\qquad
+ O_{\mu\nu}=\frac{\sigma_*}{2\sqrt3}
+                    (z_\mu\cdot z_\nu)\Phi_0,\quad\mu<\nu .
+ \tag{PK110}
+\]
+Here \(\Phi_0\) is the exact product vacuum after the full constant
+Jacobian in (PK103); each component of the three selected modes has
+variance \(2/\sigma_*\). These factors make the six vectors
+orthonormal. Under \(\mathcal R\), the odd vectors are exactly
+\(O_{13},O_{23}\). The other four are even.
+
+Let \(E_-(g)\) be the lowest eigenvalue of the actual \(H_g\) on its
+physical reflection-odd subspace. Then
+\[
+ \lim_{g\downarrow0}\bigl(E_-(g)-E_{0,g}\bigr)=\delta_* .
+ \tag{PK111}
+\]
+Here is the passage from the comparison vectors to that exact sector.
+Take an interval around \(\mu_0+\delta_*\) with endpoints outside the
+oscillator spectrum, containing no other level. The retained spectral
+projection proof gives an actual six-dimensional cluster for sufficiently
+small positive \(g\), and its chart images converge in norm to the
+span of (PK110). The original graph reflections commute with \(H_g\).
+Their exact chart maps are \(\mathcal B_g\mathscr S_R\mathcal B_g^*\),
+not a substituted linear action. The rooted-tree map after a reflection
+is the original finite word map \(\beta_R\), with
+\(g^{-1}\log\beta_R(\exp(gx))=D\beta_R(I)x+O_L(g|x|^2)\).
+The density maps (PK104) and that expansion give the strong limiting
+action (PK108) on polynomial Gaussian vectors, as proved in the cubic
+source. Uniform boundedness of the unitaries and approximation by those
+vectors give convergence on the six-dimensional cluster.
+
+For the group of all eight coordinate sign flips, each character
+projection is its exact finite average
+\(8^{-1}\sum_R\chi(R)\mathscr S_R\). Its trace on the cluster is
+an integer and converges to the corresponding trace in (PK110);
+it therefore equals that limiting integer for all sufficiently small
+\(g\). The trivial sign character has dimension three (the \(D_\mu\));
+the other three occurring characters each have dimension one
+(the \(O_{\mu\nu}\)). Signed coordinate permutations carry these
+three lines transitively to one another. Since \(H_g\) commutes with
+those permutations, its eigenvalue on these three one-dimensional
+lines is the same number, denoted \(E_T(g)\).
+
+The actual vacuum is even. Eigenvalue convergence excludes all levels
+between it and this first cluster. Within the cluster the trivial
+sign character is even under \(\mathcal R\), while two of the three
+nontrivial character lines are odd. Consequently
+\[
+ E_-(g)=E_T(g),\qquad
+ \dim\ker(H_g-E_-(g))\big|_{\rm physical,\ odd}=2
+ \tag{PK112}
+\]
+for all sufficiently small \(g>0\) at fixed \(L,a\).
+Possible equality with an even eigenvalue does not alter that dimension.
+The cluster limits prove (PK111). This identifies the actual odd
+bottom; it does not yet identify its overlap with a chosen state.
+
+## 9.16. A bounded odd observable on the actual interacting vacuum
+
+Construct that overlap explicitly. Let \(\rho=\pi/4\), let
+\(b_0(s)=e^{-1/s}\) for \(s>0\) and \(b_0(s)=0\) for \(s\le0\), and set
+\[
+ \chi(y)=
+ \frac{b_0(4\rho^2-|y|^2)}
+      {b_0(4\rho^2-|y|^2)+b_0(|y|^2-\rho^2)} .
+ \tag{PK113}
+\]
+The denominator never vanishes: its two arguments cannot both be
+nonpositive. The function is smooth, equals one on \(|y|\le\rho\),
+and vanishes on \(|y|\ge2\rho\). Its support is strictly inside every
+single-chord logarithm boundary. It is invariant under simultaneous
+colour rotation.
+
+Write \(\widetilde z^\alpha(y)=O^TG^{-1/2}y^\alpha\).
+On the logarithm chart define, with every scale shown,
+\[
+ f_g(U)=\sin\!\left(
+       \frac{\sigma_*}{2g^2}\chi(y(U))\,
+              \widetilde z_1(y(U))\cdot\widetilde z_3(y(U))
+                    \right),
+ \tag{PK114}
+\]
+and set it equal to zero outside the chart. The support property makes
+this extension smooth, including near any chord \(-I\).
+All tree and chord maps are the ones specified above.
+Residual simultaneous conjugation rotates both three-vectors by the
+same orthogonal matrix; their dot product is fixed. Thus \(f_g\) is
+physical. It is bounded in absolute value by one.
+
+Let the reflection act on functions by the original graph unitary,
+and put
+\[
+ F_g=\tfrac12(f_g-\mathscr S_{\mathcal R}f_g),\qquad
+ \upsilon_g=F_g\psi_g,\qquad
+ \Gamma_g^{\rm odd}=\|\upsilon_g\|^2 .
+ \tag{PK115}
+\]
+This is the exact nonlinear antisymmetrization, including the reflected
+root and chord words. It proves \(|F_g|\le1\),
+\(\mathscr S_{\mathcal R}F_g=-F_g\) and
+\(\langle\psi_g,\upsilon_g\rangle=0\). Every vector is smooth and
+physical on the original compact link space. No trial vacuum is
+substituted for \(\psi_g\).
+
+At fixed \(x\), \(y=gx\), the exact scale in (PK114) tends to
+\((\sigma_*/2)z_1\cdot z_3\). Under the exact reflected chart it
+tends to its negative, by (PK108). The strong actual-vacuum limit
+and boundedness therefore prove
+\[
+ \mathcal B_g\upsilon_g\longrightarrow
+ \upsilon_0:=\sin\!\left(\frac{\sigma_*}{2}z_1\cdot z_3\right)\Phi_0
+ \quad\text{in }L^2 .
+ \tag{PK116}
+\]
+For detail, subtract the limiting multiplier times the actual chart
+vacuum; its norm tends to zero by dominated convergence against
+\(|\Phi_0|^2\) and strong convergence of that vacuum, since all
+multipliers are bounded by one. The remaining term tends to zero
+by the same vacuum convergence. This argument also applies to the
+reflected multiplier, with the exact density map, and then to their
+half-difference.
+
+Under \(|\Phi_0|^2\), the vectors \(z_1,z_3\) are independent
+three-dimensional Gaussians with component variance \(2/\sigma_*\).
+Conditioning on \(z_1\), and then doing the three elementary Gaussian
+integrals, gives for real \(\theta\)
+\[
+ \mathbb E e^{i\theta z_1\cdot z_3}
+       =(1+4\theta^2/\sigma_*^2)^{-3/2}.
+ \tag{PK117}
+\]
+Taking \(\theta=\sigma_*\) in the cosine in \(\sin^2\) proves
+\[
+ \|\upsilon_0\|^2
+       =\tfrac12(1-5^{-3/2}) .
+ \tag{PK118}
+\]
+Differentiating (PK117) at \(\theta=\sigma_*/2\), with
+the exact coefficient in \(O_{13}\), gives
+\[
+ \langle O_{13},\upsilon_0\rangle
+ =\frac{\sigma_*}{2\sqrt3}
+       \mathbb E[(z_1\cdot z_3)\sin(\sigma_*z_1\cdot z_3/2)]
+ =\sqrt{3/32},\qquad
+ \langle O_{23},\upsilon_0\rangle=0 .
+ \tag{PK119}
+\]
+The second equality follows by integrating the independent centered
+vector \(z_2\). The other four first-cluster vectors have even parity.
+Combining (PK116), norm convergence of the actual cluster projection
+and (PK112) proves the actual raw limits
+\[
+ \Gamma_g^{\rm odd}\longrightarrow\tfrac12(1-5^{-3/2}),\qquad
+ \|\mathbf1_{\{E_-(g)-E_{0,g}\}}(A_g)\upsilon_g\|^2
+                       \longrightarrow\frac3{32}.
+ \tag{PK120}
+\]
+In particular the second quantity is positive for every sufficiently
+small \(g>0\) at this fixed box. The supported spectral bottom of
+\(\upsilon_g\) is exactly \(E_-(g)-E_{0,g}\), rather than an
+unspecified larger odd eigenvalue.
+
+## 9.17. Every raw spectral weight of the limiting odd observable
+
+The first weight is part of a completely calculable measure. Define the
+exact orthogonal change on the two selected spatial modes by
+\[
+ q_+=(z_1+z_3)/\sqrt2,\qquad q_-=(z_1-z_3)/\sqrt2,\qquad
+ z_1\cdot z_3=(|q_+|^2-|q_-|^2)/2 .
+ \tag{PK121}
+\]
+Its absolute Jacobian is one for each colour component; it preserves
+both equal-frequency kinetic and potential terms. The other modes
+remain in their original vacuum. For
+\(r_\pm=\sigma_*|q_\pm|^2/4\), the two independent radial densities
+are \(r^{k-1}e^{-r}/\Gamma(k)\) with \(k=3/2\).
+Thus the multiplier in (PK116) is exactly \(\sin(r_+-r_-)\).
+
+Define \(L_n^{k-1}(r)\) by the finite polynomial
+\[
+ L_n^{k-1}(r)=
+ \sum_{\ell=0}^n
+    \frac{(-1)^\ell(k)_n}{(k)_\ell(n-\ell)!\,\ell!}r^\ell,
+ \qquad (k)_n=k(k+1)\cdots(k+n-1),\quad(k)_0=1 .
+ \tag{PK122}
+\]
+Integration by parts in the identity
+\(r^{k-1}e^{-r}L_n^{k-1}(r)
+ =n!^{-1}\frac{d^n}{dr^n}(e^{-r}r^{n+k-1})\)
+proves orthogonality and squared norm \((k)_n/n!\).
+All boundary terms vanish first on the appropriate monomial integrals;
+the exponential controls infinity and \(k>0\) controls zero.
+The normalized radial polynomial is therefore
+\(\ell_n=\sqrt{n!/(k)_n}L_n^{k-1}\).
+The finite coefficients satisfy
+\(rL_n''+(k-r)L_n'+nL_n=0\). With \(r=\sigma_*|q|^2/4\),
+direct differentiation of the polynomial times the original Gaussian gives
+\[
+ (H_{\rm osc}^{(q)}-3\sigma_*/(2a))(L_n(r)\Phi^{(q)})
+ =\frac{2\sigma_*}{a}
+       [-rL_n''-(3/2-r)L_n']\Phi^{(q)}
+ =\frac{2n\sigma_*}{a}L_n(r)\Phi^{(q)} .
+\]
+For the specific vector here, exhaustion of its full norm by these
+orthogonal eigenvectors is proved below by equality of the sum of
+their squared coefficients with its directly computed norm.
+
+Termwise integration of (PK122), or its displayed derivative identity,
+gives the exact coefficient
+\[
+ a_n(\beta):=\langle\ell_n,e^{i\beta r}\rangle
+ =\sqrt{\frac{(k)_n}{n!}}\,
+       \frac{(-i\beta)^n}{(1-i\beta)^{k+n}} .
+ \tag{PK123}
+\]
+The power branch is the one continuous from \(\beta=0\).
+At \(\beta=1\), the coefficient of the two-mode radial state
+\((m,n)\) in \(\sin(r_+-r_-)\) is
+\[
+ c_{mn}=
+ \frac{a_m(1)a_n(-1)-a_m(-1)a_n(1)}{2i},\qquad
+ |c_{mn}|^2
+ =2^{-3-m-n}\frac{(3/2)_m(3/2)_n}{m!\,n!}
+                    \sin^2\frac{(n-m)\pi}{4}.
+ \tag{PK124}
+\]
+No products between the two radial factors are dropped. Reflection
+interchanges them, with a minus on both Cartesian vectors that does
+not affect their radii; the coefficients are accordingly antisymmetric.
+
+For \(l\ge0\) put \(w_l=\sum_{m+n=l}|c_{mn}|^2\). Vandermonde's
+coefficient identity and \(\sin^2x=(1-\cos2x)/2\) give
+\[
+ \begin{split}
+ w_l&=2^{-l-4}
+ \left[
+       \frac{(l+1)(l+2)}2
+       -\mathbf1_{\{l\ {\rm even}\}}(-1)^{l/2}
+                   \frac{(3/2)_{l/2}}{(l/2)!}
+ \right],\\
+ \sum_{l=0}^\infty w_ls^l
+   &=\frac1{16}\left[(1-s/2)^{-3}
+                        -(1+s^2/4)^{-3/2}\right],
+                   \qquad |s|<2 .
+ \end{split}\tag{PK125}
+\]
+To verify the cosine term, its generating function is
+\((1-is)^{-3/2}(1+is)^{-3/2}=(1+s^2)^{-3/2}\).
+The first term comes from \((1-s)^{-3}\).
+This proves the displayed coefficients, not merely their sum.
+The nonnegativity of every \(w_l\) also follows directly from
+(PK124); \(w_0=0\), \(w_1=3/32\), and \(w_2=15/128\).
+At \(s=1\) the sum is exactly (PK118).
+
+Consequently the complete raw comparison spectral measure and its
+Euclidean-time function are
+\[
+ \begin{split}
+ \nu_0^{\rm odd}
+   &=\sum_{l=1}^\infty w_l\delta_{\,2l\sigma_*/a},\\
+ \langle\upsilon_0,e^{-\tau(H_{\rm osc}-\mu_0)}\upsilon_0\rangle
+   &=\frac1{16}\left[
+       (1-\tfrac12e^{-2\tau\sigma_*/a})^{-3}
+       -(1+\tfrac14e^{-4\tau\sigma_*/a})^{-3/2}
+                \right],\qquad \tau\ge0 .
+ \end{split}\tag{PK126}
+\]
+The actual raw measures of \(\upsilon_g\) converge weakly to this
+measure at fixed \(L,a\). Indeed (PK116) gives convergence of their
+total masses, and each finite spectral projection converges in norm.
+Choosing an oscillator cutoff beyond all but a small tail of the
+explicit summable weights then proves tightness and convergence
+against every bounded continuous test function. This argument
+retains the raw total mass (PK118).
+
+The interacting evolution
+\(\widetilde\upsilon_g(u)=e^{-uA_g}\upsilon_g\) has all the exact
+moment-flow identities (PK98)–(PK100), now with a supported bottom
+known to be \(E_-(g)-E_{0,g}\) for sufficiently small \(g\) at fixed
+box. Its first atom is positive by (PK120). This constructs a
+vacuum-based state family that addresses the original packet's
+missing-overlap problem.
+
+## 9.18. A receiving map from the full higher-carrier domain
+
+The domain need not be abandoned when changing the quantum state map.
+Retain \(Y=\operatorname{Tot}(E_D)\), \(D=F_4/\rho(\operatorname{Sp}(1))\),
+and the exact ordered rank-24 decomposition and three selected
+quaternionic coordinates \(\alpha,\beta,\gamma\) of
+[the moment-map proof, Sections 4–7](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PROOF.md)
+and [HC4–HC9](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/HIGHER_CARRIER_AND_EVOLUTION.md).
+Their other twelve real fibre coordinates remain in the domain. Define
+\[
+ \mathfrak a(y)=|\alpha(y)|^2+|\beta(y)|^2+|\gamma(y)|^2,\qquad
+ d_{\rm vert}\mathfrak a(\dot y)
+ =2\operatorname{Re}
+    (\dot\alpha\bar\alpha+\dot\beta\bar\beta+\dot\gamma\bar\gamma).
+ \tag{PK127}
+\]
+Although the displayed coordinates use a local bundle frame, each
+selected quaternion transforms by the prescribed unit-quaternion
+representation. Its norm is unchanged, so both the function and its
+differential glue globally. Its zero set is exactly the retained
+rank-12 zero subbundle of the original colour-profile map. All three
+selected inputs occur; no global colour frame is chosen.
+
+In (PK114), replace the multiplier of the sine by
+\(\mathfrak a(y)\) times that entire multiplier, including
+\(\sigma_*/(2g^2)\), and apply the same exact half-difference (PK115).
+Denote the resulting vector by
+\[
+ \mathfrak V_g(y)=
+ \frac12\left[
+  \sin\!\left(\mathfrak a(y)\frac{\sigma_*}{2g^2}
+      \chi(y_{\rm ch})\widetilde z_1(y_{\rm ch})
+                            \cdot\widetilde z_3(y_{\rm ch})\right)
+  -\mathscr S_{\mathcal R}
+  \sin\!\left(\mathfrak a(y)\frac{\sigma_*}{2g^2}
+      \chi(y_{\rm ch})\widetilde z_1(y_{\rm ch})
+                            \cdot\widetilde z_3(y_{\rm ch})\right)
+ \right]\psi_g .
+ \tag{PK128}
+\]
+Here \(y\in Y\), whereas \(y_{\rm ch}\) is the chord-logarithm
+argument of the physical configuration \(U\); their domains are
+explicitly different. Reflection acts only on \(U\), not on the
+parameter \(y\). The formula extends by the same zero cutoff.
+It defines a global smooth map from \(Y\) to the smooth physical odd
+vectors at each fixed regulator. For example its first parameter
+derivative is the same half-difference with each sine replaced by
+\(d\mathfrak a\) times the entire chord multiplier times its cosine.
+Higher derivatives follow from that formula, with bounded configuration
+coefficients on each compact parameter set at fixed \(g>0\).
+The unit-quaternion transition law leaves \(\mathfrak a\) invariant,
+so no parameter derivative creates a frame inconsistency.
+
+This map factors through the explicitly proved scalar map \(\mathfrak a\);
+it is not asserted to distinguish configurations with the same scalar.
+The original rank-24 moment map and its angular data remain available
+as separate proved maps. At fixed parameter \(y\), the preceding
+Gaussian calculation, with \(A=\mathfrak a(y)\), gives
+\[
+ \begin{split}
+ \|\mathfrak V_g(y)\|^2
+     &\longrightarrow \tfrac12[1-(1+4A^2)^{-3/2}],\\
+ \|\mathbf1_{\{E_-(g)-E_{0,g}\}}(A_g)\mathfrak V_g(y)\|^2
+     &\longrightarrow \frac{3A^2}{(1+A^2)^5}.
+ \end{split}\tag{PK129}
+\]
+These follow from (PK117) at \(\theta=A\sigma_*/2\) and its
+derivative; the mode \(O_{23}\) still has zero coefficient.
+For every fixed \(A>0\) the second limit is strictly positive.
+At \(A=0\) the vector is exactly zero for every \(g\).
+The selected input with \(A=1\) gives (PK118)–(PK126).
+For the original equal-colour input
+\(|\alpha|=|\beta|=|\gamma|=1\), the first-band weight instead
+tends to \(27/100000\), with raw total mass
+\(\frac12(1-37^{-3/2})\). No division by the parameter amplitude
+has been introduced.
+
+## 9.19. The original joint path and the remaining estimate
+
+On the original geometric sequence \(L_j=j^4,a_j=1/(100j)\),
+the exactly computed comparison threshold is
+\[
+ \delta_{*,j}
+ =400\sqrt2\,j\sin\frac{\pi}{4j^4+2}
+ <100\sqrt2\,\pi j^{-3},\qquad
+ \delta_{*,j}\sim100\sqrt2\,\pi j^{-3}.
+ \tag{PK130}
+\]
+The inequality is \(\sin x<x\); the asymptotic follows from
+\(\sin x/x\to1\), with its original denominator retained.
+Equations (PK111) and (PK120) take \(g\to0\) **after fixing** \(L,a\).
+They therefore do not yet give these limits along
+\(g_j^2=\kappa_*/(200j)\). That path keeps
+\(\kappa_j=\kappa_*\), \(b_j=10000j^2/\kappa_*\) and the previous
+classical dilation \(\lambda_j=j^2\); none has been replaced by a
+smaller coupling selected from a fixed-box existence statement.
+
+The exact new quantities to estimate on that path are now specified:
+\[
+ \begin{split}
+ \mathfrak e_j&=
+       E_-(g_j;L_j,a_j)-E_{0,j}-\delta_{*,j},\\
+ \mathfrak w_j&=
+       \|\mathbf1_{\{E_-(g_j)-E_{0,j}\}}(A_j)\upsilon_{g_j}\|^2,\\
+ \Gamma_j^{\rm odd}&=\|\upsilon_{g_j}\|^2 ,
+ \end{split}\tag{PK131}
+\]
+where the observable, exact tree/Haar maps, reflection and actual
+vacuum are all given above. The fixed-box limits of these quantities
+are \(0,3/32,\frac12(1-5^{-3/2})\), respectively.
+The \(L,a\)-dependent localization constants are still present in
+(PK105); they have not been assumed uniform. This leaves a concrete
+original-operator calculation, while replacing the escaping fixed-heat
+packet by an explicit bounded observable on the actual vacuum.
+The new family is distinct from \(\eta_{h,t}\), and (PK115) specifies
+its exact receiving map. A continuum state, reconstruction and the
+intended theory identification remain to be constructed.
+
+
+![Exact reflection signs, raw spectral weights and the higher-carrier receiving map](figures/ODD_OBSERVABLE.png)
+
+The mode labels identify the cochains specifying each coordinate; they do not equate cochains with coordinates. The plot shows the exact first twelve atoms from PK125, with the full tail given by PK125–PK126. The actual fixed-box limits and the separate original joint path have their stated quantifiers. The parameter map keeps the full domain and explicitly factors through PK127. [Reproducible figure source](figures/odd_observable_figure.py).
+
 ## 10. Reproducibility and scope
 
 The original symbolic checker verifies the full angular period law, both matrix
@@ -2415,3 +3010,5 @@ The complementary-moment checker adds 43 exact checks for PK55–PK62: direct Ha
 The full-packet checker adds 39 exact checks for PK63–PK78, including complex packet cross terms, both returns with the original non-unit Gram, vacuum intervals, cutoff constants, and the original 37-dimensional physical cutoff in the smallest box. Infinite-space estimates are the complete written proofs in Sections 9.4–9.8.
 
 The packet-moment checker adds 62 exact checks for PK79–PK100: noncommuting square, Haar shared-link slots, trial and small-potential constants, original graph counts, full path factors and the interacting energy-flow identity. The asymptotic escape estimate is the complete proof in Sections 9.10–9.12; no finite test is substituted for it.
+
+The odd-observable checker adds 109 exact checks for PK101–PK131, including every sign character, Gaussian factor and radial coefficient tested. The infinite sums, actual operator limits and full higher-domain map have their written proofs in Sections 9.14–9.19. Finite checks do not certify a volume-uniform or continuum limit.

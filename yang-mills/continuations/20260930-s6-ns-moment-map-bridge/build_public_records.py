@@ -38,6 +38,7 @@ def main() -> None:
         "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
         "checks/FULL_PACKET_RESOLVENT_CHECK.json",
         "checks/PACKET_MOMENTS_ESCAPE_CHECK.json",
+        "checks/ODD_VACUUM_OBSERVABLE_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -73,7 +74,8 @@ def main() -> None:
             "path, first electric layer, complete interacting return, exact second "
             "complementary moment, cube contributions, nonzero next map, stronger resolvent bound, "
             "full-packet returns, complete electric cutoff, vacuum interval, spectral-transform error, "
-            "complete packet moments, fixed-heat spectral escape and interacting evolution."
+            "complete packet moments, fixed-heat spectral escape, interacting evolution, "
+            "actual fixed-box odd support, full raw limiting spectral measure and higher-carrier receiving map."
         ),
         "claim_boundary": (
             "Finite physical quantum vectors are constructed. No continuum "

@@ -161,3 +161,19 @@ provider. The shared-link contraction, trial bound, disjoint-face Haar
 estimate, spectral projection inequality and full path limits are derived
 completely in PK79–PK100. No external result or novelty claim is imported
 for these estimates. The rendered figure was inspected.
+
+## Odd-observable source scope and exact receiving maps
+
+- [YM-FINITE-BOX-WEAK-COUPLING](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_gap_primary_20260908/finite_box_weak_coupling_physical_gap.md): Sections 1–7, complete original maps, boundary frequencies and actual eigenvalue comparison. Receiving calculation: PK102–PK112. SHA-256: f5668637f2a7438f06b60be8f3048dc75f0276e21da5c29b490af1838739f5d4.
+
+- [YM-ACTUAL-WEAK-VACUUM](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_gap_primary_20260908/weak_coupling_state_observable_limit.md): Sections 1–4, complete compactness, strong actual vacuum, norm projection and raw measure proofs. Receiving calculation: PK104–PK105 and PK111–PK126. SHA-256: 01e2fc70769cc67ea25960c4557f485e524cbe694b1f2efd69e0af11d08c16fc.
+
+- [YM-CUBIC-GAP-SYMMETRY](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_gap_primary_20260908/cubic_box_gap_symmetry.md): Entire manuscript inspected; receiving use only Sections 1–3 and their exact graph/linearized symmetry maps. No higher-order coefficient imported. Receiving calculation: PK106–PK112. SHA-256: b05523279afbbc8ce916073ce06ec79da95d9c1c4d3f45e09ee79c7e6a5eee68.
+
+- [YM-SPATIAL-CONTINUUM](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md): Section 12.1, equations (93)–(99), complete trial, gauge averaging and optimized energy bound; partial subsequent text not imported. Receiving calculation: PK101 provenance correction. SHA-256: bcfc64f3dcf93037e6e0827ee6535caaeb05777ffd9d8b110b3021ecf111c690.
+
+- [YM-MOMENT-MAP-CARRIER](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PROOF.md): Retained Sections 4–7, with Theorem 7.1 and its complete zero-subspace proof re-read. Receiving calculation: PK127–PK129. SHA-256: cfd6645b5b8f9271c00c79bac12335f875ca1e9b316d8b0d3e59051e6c3e80cd.
+
+- [YM-HIGHER-CARRIER](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/HIGHER_CARRIER_AND_EVOLUTION.md): HC4–HC9 and Section 4 total-space definition; exact associated-bundle extension and selected quaternionic representation. Receiving calculation: PK127–PK129. SHA-256: 06f4caec1045207673d21b4ab49c1e0115520f709396ab0a67fea0f63a073d3b.
+
+Canonical disk records were used for routing and the retained original programme proofs were read at the stated loci. Their complete files remain included in the repository. No new external PDF or unseen article is used. PK101 corrects prior provenance; the full new fixed-box argument is in PK102–PK131. This record does not claim an independent reviewer or a uniform-volume theorem.

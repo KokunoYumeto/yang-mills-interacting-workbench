@@ -468,10 +468,42 @@ The exact subsequent construction PK98–PK100 uses the full interacting
 semigroup, preserves physical oddness and calculates its moment flow.
 Its supported spectral bottom remains to estimate on the original path.
 The complete second moment retains both mixed terms and every ordered
-face pair, including coincident and shared-link faces. The new vacuum
+face pair, including coincident and shared-link faces. The rederived earlier vacuum
 upper bound strengthens the earlier finite vacuum intervals by intersection.
 Propagation covers the programmes, cumulative TeX, claim ledgers, result
 bulletin and planned YM-08 provider. Delivered YM-01–YM-03 have no
 dependent spectral claim requiring correction.
 
 Complete proofs: [PK79–PK100](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+## S6NS-20261009-004 — actual odd support and prior vacuum-bound provenance
+
+Original uncertainty: PK98–PK100 preserve the old packet's supported
+bottom but do not identify its overlap with the lowest odd eigenvalue.
+PK102–PK120 construct a different explicit bounded odd observable on
+the actual vacuum. At each fixed L,a its support reaches the actual
+odd bottom for sufficiently small positive g, with raw weight tending
+to 3/32. The complete operator, character and overlap proofs are given.
+PK121–PK126 evaluate the full limiting raw measure, without dividing
+the vector by its mass. PK127–PK129 connect the full higher carrier
+through the exact invariant scalar and preserve its rank-12 zero set.
+This receiving map is not asserted to retain every angular parameter.
+
+PK130–PK131 keep the original simultaneous regulator path. Its actual
+energy error and raw weights remain to estimate. Fixed-box convergence
+does not supply uniform-in-volume constants. The old packet's proved
+escape remains valid and is not transferred to this different family.
+
+Provenance correction: the PK88 bound for L at least two is already
+spatial-continuum Section 12, equations (93)–(99). PK101 proves the
+exact map of parameters, partition factors, trial vectors and physical
+coefficients. The present rederivation also covers L=1. No new vacuum
+bound is claimed. Its previous interval and escape applications survive.
+
+Propagation: current proof and TeX, programmes, source/claim ledgers,
+dated bulletin, main reading paths and future YM-08 provider updated.
+Delivered YM-01–YM-03 have no dependent spectral statement requiring
+correction. Actual continuum reconstruction and theory identification,
+YM-04 analytical prerequisites, and J5 third return remain unfinished.
+
+Complete proofs: [PK101–PK131](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).

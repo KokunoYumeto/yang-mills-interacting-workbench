@@ -250,6 +250,33 @@
       "strengthens": [
         "SZ-20261009-008"
       ]
+    },
+    {
+      "result_id": "SZ-20261009-010",
+      "statement": "The actual first reflection-odd cluster has dimension two for sufficiently small positive coupling at every fixed open box. An explicit bounded smooth odd observable on the actual vacuum has raw first-cluster weight tending to 3/32.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK102–PK120",
+      "scope": "L at least two and positive spacing fixed before g tends to zero; exact tree, Haar, nonlinear reflection and gauge maps retained.",
+      "strengthens": [
+        "SZ-20261009-009"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-011",
+      "statement": "All raw limiting spectral weights of the constructed odd observable are evaluated, with their complete generating function and Euclidean-time correlation; actual finite-box spectral measures converge to this measure.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK121–PK126",
+      "scope": "Exact comparison spectrum and actual fixed-box convergence; no continuum identification.",
+      "strengthens": [
+        "SZ-20261009-010"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-012",
+      "statement": "A global smooth receiving map from the full rank-24 higher-carrier total space to actual smooth physical odd vectors is constructed through the exact sum of the three selected quaternionic squared norms. Its raw mass and first-cluster weight are computed for every fixed parameter.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK127–PK131",
+      "scope": "All fibre coordinates retained; scalar zero set is the original rank-12 subbundle. This map factors through the displayed scalar; uniform estimates along the original joint path remain unfinished.",
+      "strengthens": [
+        "SZ-20261009-010"
+      ]
     }
   ],
   "defined_spaces": {
@@ -392,7 +419,13 @@
     "figures/packet_escape_figure.py",
     "figures/PACKET_ESCAPE.png",
     "figures/PACKET_ESCAPE.svg",
-    "figures/PACKET_ESCAPE_FIGURE_CHECK.json"
+    "figures/PACKET_ESCAPE_FIGURE_CHECK.json",
+    "checks/verify_odd_observable.py",
+    "checks/ODD_VACUUM_OBSERVABLE_CHECK.json",
+    "figures/odd_observable_figure.py",
+    "figures/ODD_OBSERVABLE.png",
+    "figures/ODD_OBSERVABLE.svg",
+    "figures/ODD_OBSERVABLE_FIGURE_CHECK.json"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -426,8 +459,11 @@
     "SZ-20261009-006",
     "SZ-20261009-007",
     "SZ-20261009-008",
-    "SZ-20261009-009"
+    "SZ-20261009-009",
+    "SZ-20261009-010",
+    "SZ-20261009-011",
+    "SZ-20261009-012"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "PK1–PK100: full interacting moments and proved escape of the fixed-heat packet; interacting evolution constructed, supported bottom and continuum endpoint unfinished"
+  "current_finite_state_boundary": "PK1–PK131: fixed-box actual odd support, full raw limiting measure and global scalar receiving map; original joint-path estimates and continuum endpoint unfinished."
 }
