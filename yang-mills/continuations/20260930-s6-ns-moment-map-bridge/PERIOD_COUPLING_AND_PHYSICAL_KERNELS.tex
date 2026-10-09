@@ -11,15 +11,17 @@
 \begin{document}
 \section*{Full cusp coupling and physical kernels of the classical holonomy family}
 
-Reviewed edition, 9 October 2026: complete PK1–PK177 proofs,
-including PK109a, PK141a and PK143a, and 435 exact checks.
-The chart-supported odd observable loses its entire raw spectral mass
-on the original simultaneous path. Its global smooth group-coordinate
-replacement is nonzero at every finite regulator. Its original chord
-Gram matrix, complete Haar fourth moment, actual four-loop receiving
-formula and both actual energy-moment bounds are proved.
-Its joint-path vacuum moment and the interacting continuum endpoint
-remain active research.
+Reviewed edition, 9 October 2026: complete PK1–PK206 proofs,
+including PK109a, PK141a, PK143a and PK177a–PK177f, and 500 exact checks.
+Original rooted-face weights and actual fourth-moment bounds are evaluated.
+The full reflected phase gives an actual large-amplitude raw mass of 1/4,
+with a different iterated weak-coupling limit and proved high-energy escape.
+The actual two-phase space, its complete energy form, residual interaction
+and convergent finite variational matrices are constructed. The actual
+phase density, almost-everywhere full rank, positive finite Gram matrices
+and complete distributional boundary identity are proved.
+The original-path low-energy calculation and the interacting continuum
+endpoint remain active research.
 
 30 September 2026. This note constructs the full angular cusp pullback of
 the retained bundle and its actual classical solution family. It then maps
@@ -3873,6 +3875,922 @@ the same programme objective.
 
 The left curve evaluates the complete Haar moment PK166. The right curve evaluates the exact coefficient in the actual-vacuum inequality PK169 for the displayed kappa\_*=1; PK169 retains every positive kappa\_*. Neither curve is an actual-vacuum sample or an energy eigenvalue. The complete proofs are PK158–PK177. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/global_moments_figure.py}{Reproducible figure source}.
 
+\subsection*{9.26a. Full face fillings and an evaluated actual fourth-moment bound}
+
+We first apply the retained actual plaquette estimates to the original
+rooted chords. Put \(D_p=2-W_p\ge0\), and retain \(m,n,v,w,c,C\)
+from PK158. For a direction-two chord \(c_2=(i,k,l;2)\), its
+rooted loop bounds the strip of direction-\((1,2)\) faces
+\[
+ \mathcal F(c_2)=\{(a,k,l;12):0\le a<i\}.
+\]
+For a direction-three chord \(c_3=(i,k,l;3)\), use the bent strip
+\[
+ \mathcal F(c_3)=
+ \{(a,k,l;13):0\le a<i\}
+ \ \cup\ \{(0,b,l;23):0\le b<k\}.
+ \tag{PK177a}
+\]
+The cardinalities are respectively \(i\) and \(i+k\).
+These follow from the original root paths, which increase coordinates
+in order \(3,2,1\). Their common initial direction-three segment
+is retained as a conjugating path. For the second strip first
+attach the direction-\((2,3)\) faces in increasing \(b\), then the
+direction-\((1,3)\) faces in increasing \(a\). For the first
+strip attach direction-\((1,2)\) faces in increasing \(a\).
+Each attachment replaces a shared boundary segment \(q\) by \(r\).
+The exact new/old boundary ratio is \(A(rq^{-1})A^{-1}\).
+Induction therefore writes the rooted chord word as an ordered
+product of conjugated, oriented face words, with exactly the faces
+in PK177a. Reversing a boundary reverses the entire order and
+inverts every factor. This is the original non-Abelian attachment
+map, with no commutation of its factors.
+
+For \(\mu=1,3\), define every weight before evaluating its sum:
+\[
+ W_{\mu p}=\sum_{c:p\in\mathcal F(c)}|\mathsf M_{\mu c}|,\qquad
+ T_\mu=\sum_pW_{\mu p}
+      =\sum_c|\mathsf M_{\mu c}|\,|\mathcal F(c)|,\qquad
+ w_\mu=\max_p W_{\mu p}.
+ \tag{PK177b}
+\]
+Write \(V_a=\sum_{i=a+1}^{m}|v(i)|\).
+The complete nonzero weights, with all other face weights zero, are
+\[
+ \begin{array}{ll}
+ W_{1,(a,k,l;12)}=|w(k)|V_a/\sqrt{2n},&
+ W_{3,(a,k,l;12)}=(m-a)|w(k)v(l)|/\sqrt{2n},\\
+ W_{3,(a,k,l;13)}=(m-a)|v(k)w(l)|/\sqrt{2n},&
+ W_{3,(0,b,l;23)}=\sqrt{n/2}\,|w(l)|V_b .
+ \end{array}\tag{PK177c}
+\]
+Indeed, a face in a direction-one strip occurs for exactly the
+chords with \(i>a\). A direction-\((2,3)\) face occurs for
+exactly the direction-three chords with \(k>b\), and then all
+\(n\) values of \(i\) are allowed: its excluded tree corner
+\((i,k)=(0,0)\) is absent already because \(k>b\ge0\).
+Inserting every coefficient from PK160 gives PK177c.
+
+The exact sums and maxima are
+\[
+ T_1=\frac{mC^2}{\sqrt{2n}},\qquad T_3=3T_1,\qquad
+ w_1=\frac{\sqrt2\,c(C-c)}{n^{3/2}},\qquad w_3=nw_1 .
+ \tag{PK177d}
+\]
+To prove the sums, PK162's one-dimensional calculation gives
+\(\sum|v|=\sum|w|=\sqrt{2/n}C\).
+The reflection \(|v(m-i)|=|v(i)|\) gives
+\(\sum i|v(i)|=(m/2)\sum|v(i)|\).
+For \(T_1\), sum the tails \(V_a\), then all \(k\) and all
+\(n\) values of \(l\) in PK177c. The result is its displayed
+value. Each of the three direction contributions to \(T_3\)
+is exactly \(T_1\), using
+\(\sum_{a=0}^{m-1}(m-a)=mn/2\) for the first two contributions.
+For the maxima, \(\max|v|=\max|w|=\sqrt{2/n}c\), and
+\(\max_aV_a=V_0=\sqrt{2/n}(C-c)\).
+The largest direction-\((1,2)\) or \((1,3)\) third-row weight is
+\(\sqrt2\,mc^2/n^{3/2}\); the largest direction-\((2,3)\) weight
+is \(\sqrt{2/n}c(C-c)\).
+The latter is larger because
+\(n(C-c)/(mc)=n(\csc(\pi/(2n))-1)/m>1\) for \(n\ge5\).
+This proves both maxima with their original face supports.
+
+The identity \(I-XY=(I-X)+X(I-Y)\), unitary invariance, and
+\(|q(Z)|^2\le2\|I-Z\|_{\rm HS}^2\) give
+\[
+ |u_\mu|\le2\sum_pW_{\mu p}\sqrt{D_p},\qquad
+ |u_\mu|^2\le4T_\mu\sum_pW_{\mu p}D_p .
+\]
+Here \(\|I-U_p\|_{\rm HS}^2=2D_p\), and all conjugations in
+the proved ordered filling are retained before applying the norm.
+The actual potential is \(V=b\sum_pD_p\). Its retained exact
+vacuum bound PK132 and \(0\le\sum_pD_p\le4M\) therefore prove
+\[
+ \begin{split}
+ \mathcal Q_4&\le\min\{\mathcal U_{\rm point},
+                                      \mathcal U_{\rm face}\},\\
+ \mathcal U_{\rm point}&=16S_1^2S_3^2,\\
+ \mathcal U_{\rm face}
+ &=16T_1T_3w_1w_3\,4M
+                      \min\{2M,6g^2\sqrt{NM}\}.
+ \end{split}\tag{PK177e}
+\]
+In detail, the product of the two weighted face sums is at most
+\(w_1w_3(\sum_pD_p)^2\).
+Its actual expectation is at most
+\(4M\mu(\sum_pD_p)\le4M E_{0,g}/b\).
+The bound \(E_{0,g}/b\le\min\{2M,6g^2\sqrt{NM}\}\)
+retains the original vacuum, not a Wilson-density replacement.
+The first bound uses \(|u_\mu|\le2S_\mu\).
+
+These bounds are now fully evaluated on PK139. Elementary
+\(\sin x/x\to1\) and \(\cos x\to1\), applied to the exact
+formulas above with \(m=2j^4,n=2j^4+1\), give
+\[
+ \frac{\mathcal U_{\rm point}}{j^{24}}
+          \longrightarrow\frac{2^{22}}{\pi^8},\qquad
+ \frac{\mathcal U_{\rm face}}
+             {j^{19}\mathcal U_{\rm point}}
+          \longrightarrow\frac{81\pi^2\kappa_*}{50},\qquad
+ \frac{\beta_{0,j}^2\mathcal U_{\rm point}}{j^{18}}
+          \longrightarrow\frac{5000\,2^{22}}{\kappa_*^2\pi^6}.
+ \tag{PK177f}
+\]
+For example \(C/n\to2/\pi\), \(S_1/n^{3/2}\to4\sqrt2/\pi^2\),
+\(S_3/n^{3/2}\to8\sqrt2/\pi^2\), and
+\(T_1/n^{5/2}\to2\sqrt2/\pi^2\).
+Also \(w_1\sqrt n\to2\sqrt2/\pi\),
+\(w_3/\sqrt n\to2\sqrt2/\pi\);
+\(N=3m(m+1)^2,M=3m^2(m+1)\) retain their full boundary
+terms throughout. The smaller potential branch is eventually
+\(6g_j^2\sqrt{N_jM_j}\), since its ratio to \(2M_j\)
+is \(3g_j^2\sqrt{N_j/M_j}\to0\).
+Substitution gives all three constants in PK177f.
+Thus the rigorous estimate
+\(\Gamma_j(1)\le\min\{1,\beta_{0,j}^2
+\min(\mathcal U_{\rm point},\mathcal U_{\rm face})\}\)
+eventually gives only its already known upper bound one.
+This proves the precise limitation of this attempted use of the
+full actual plaquette moments. It proves neither growth nor
+decay of the actual \(\mathcal Q_{4,j}\).
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/ORIGINAL_CHORD_FACE_FILLING.png}\caption{Exact ordered face filling of an original direction-three chord}\end{figure}
+
+The drawing is the exact five-face bent strip for m=4 and chord (3,2,1;3), with the original root segment and physical coordinate map retained. PK177a–PK177f prove every face weight and the actual-vacuum bound. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/phase_variational_figures.py}{Reproducible figure source}.
+
+\subsection*{9.27. The original reflected phase is not its negative globally}
+
+Fix one of the original finite regulators \(L\ge2,a>0,g>0\).
+Throughout this section the measure is the actual vacuum measure
+\(d\mu=\psi_g^2dU\), and the excitation operator is
+\(\mathcal A=H_g-E_{0,g}\). Set
+\[
+ \beta_0=\frac{\sigma_*}{2g^2},\qquad
+ p(U)=\beta_0\mathcal S(U),\qquad
+ r(U)=p(\mathcal RU),\qquad
+ F_A(U)=\frac{\sin(Ap(U))-\sin(Ar(U))}{2}.
+ \tag{PK178}
+\]
+Thus \(F_A\psi_g\) is exactly PK145, with its original amplitude
+\(A\), not a vector obtained by dividing out its raw norm.
+Every tree word, coupling and reflection remains unchanged.
+Both \(p\) and \(r\) are real analytic: they are finite sums of
+traces of products and inverses of the original group variables.
+They are gauge invariant. The reflection interchanges them.
+
+It is necessary to determine the global relation between them before
+taking a large-amplitude limit. Their quadratic Taylor terms have
+opposite signs by PK146. Globally, however, \(p+r\) is not zero.
+Here is an exact configuration proving this for every \(L\ge2\).
+Use \(m=2L,n=m+1\), the original root and tree, and the functions
+\(v_0,v,w\) of PK158. Write
+\[
+ d_0=\frac{v_0(0)w(0)v(0)}{\sqrt2},\qquad
+ d_0^2=\frac{2\cos^2(\pi/(2n))\sin^2(\pi/n)}{n^3}>0.
+ \tag{PK179}
+\]
+The letter \(d_0\) here denotes this displayed coefficient, not the
+number \(d=2m^3+3m^2\) of chords.
+Set all physical links to \(I\), except the two direction-two chords
+based at \((m,0,0)\) and \((L,0,0)\), whose values are respectively
+\[
+ h=\exp(\pi T_1)=2T_1,\qquad
+ k=\exp(2\pi T_1)=-I .
+\]
+Coordinates in this display are the vertex indices \(l\); the physical
+vertices remain \(o+a(l_1-L,l_2-L,l_3-L)\).
+All tree links are initially \(I\). The first chord has
+\(q(h)=2(1,0,0)\), and the second has \(q(k)=0\).
+Since \(v(m)=-v(0)\) and \(v(L)=0\), PK160 gives
+\[
+ u_1(U)=2d_0(1,0,0),\quad u_3(U)=2d_0(1,0,0).
+\]
+
+For completeness, track the reflected words, including their tree
+segments. Reflection moves the link \(h\) to the direction-two
+tree edge based at \((0,0,0)\), and fixes the location of the
+middle chord \(k\). First omit \(k\). With only one physical link
+different from \(I\), each rooted word is \(I,h\), or \(h^{-1}\):
+each simple root path uses this edge at most once, and if both use
+it their identical contribution cancels in this particular word.
+Thus each of its \(q\)-vectors is exactly \(0,q(h)\), or \(-q(h)\).
+The coefficient of this one \(q(h)\) is the derivative at the identity.
+PK143a and the original cochain reflection rule PK108 therefore give
+the exact single-link values
+\(u_1(\mathcal RU)=-2d_0(1,0,0)\) and
+\(u_3(\mathcal RU)=2d_0(1,0,0)\) before restoring \(k\).
+This argument uses the full linearized tree map only to determine
+the coefficients of an expression already proved exactly linear
+in this single \(q(h)\).
+
+Restore the middle chord \(k\). A chord is absent from every tree
+path, so exactly its own rooted chord word changes.
+Its starting root path is \(I\); its ending root path is \(h\).
+Its previous word \(h^{-1}\) becomes \(kh^{-1}=h\).
+Its \(q\)-vector consequently increases by \(4(1,0,0)\).
+The first-row coefficient of this chord is zero and the third-row
+coefficient is \(d_0\). Hence the full values are
+\[
+ \begin{aligned}
+ u_1(\mathcal RU)&=-2d_0(1,0,0),&
+ u_3(\mathcal RU)&=6d_0(1,0,0),\\
+ p(U)&=4\beta_0d_0^2,&
+ r(U)&=-12\beta_0d_0^2,\\
+ (p+r)(U)&=-8\beta_0d_0^2,&
+ (p-r)(U)&=16\beta_0d_0^2 .
+ \end{aligned}\tag{PK180}
+\]
+At the identity configuration all four functions \(p,r,p+r,p-r\)
+vanish. PK180 proves that each is nonconstant. It also proves the
+precise defect of extending the quadratic reflection sign to the
+global coordinates.
+
+\subsection*{9.28. Actual amplitude limits, all raw moments, and escaping weight}
+
+We first supply the oscillatory integral argument used below.
+On a connected compact real analytic manifold with smooth volume,
+a nonconstant real analytic function \(s\) has a critical set of
+volume zero. To see the required zero-set fact, work in a coordinate
+box and expand a nonzero real analytic function in the last variable
+around an interior slice. At least one coefficient is a nonzero
+analytic function of the other variables. By induction on dimension
+its zero set has measure zero. Outside that exceptional set the
+one-variable analytic function is not identically zero and has
+isolated, hence countably many, zeros. Fubini proves zero measure
+in the box. Smaller boxes on which the series converges give a
+countable cover. In dimension one this is precisely the isolated-zero
+property from the first nonzero Taylor coefficient. Analytic
+continuation across overlapping coordinate boxes shows that a
+function zero on an open set of a connected manifold is zero
+everywhere. Accordingly, for a nonconstant \(s\), in each connected
+coordinate box some first derivative is not identically zero.
+The critical set in that box is contained in its zero set.
+Smooth positive volume densities preserve these null sets.
+
+For any integrable weight \(w\), this proves
+\[
+ \int w(U)e^{iAs(U)}\,dU\longrightarrow0\qquad(A\longrightarrow+\infty).
+ \tag{PK181}
+\]
+Here are the integration details, so that no stationary-phase
+estimate is assumed. First take \(w\) smooth. Choose a smooth cutoff
+\(\chi_\delta\), equal to zero where \(|\nabla s|^2\le\delta^2\)
+and one where \(|\nabla s|^2\ge2\delta^2\). The vector field
+\(\chi_\delta w\nabla s/|\nabla s|^2\), extended by zero near the
+critical set, is smooth. Integration by parts on the compact manifold
+gives
+\[
+ \left|\int\chi_\delta w e^{iAs}\,dU\right|
+ \le\frac1A\int\left|
+ \operatorname{div}\frac{\chi_\delta w\nabla s}{|\nabla s|^2}
+ \right|dU .
+\]
+For fixed \(\delta>0\) the last integral is finite.
+The omitted integral is bounded by
+\(\int_{\{|\nabla s|^2<2\delta^2\}}|w|\,dU\), which tends to zero
+as \(\delta\downarrow0\) by the null critical set and dominated
+convergence. Take \(A\to\infty\) first and then
+\(\delta\downarrow0\). General \(L^1\) weights follow by smooth
+approximation in finitely many coordinate charts and the bound
+\(|e^{iAs}|=1\).
+This proves PK181 for the original compact product \(SU(2)^N\).
+In particular it applies to weights containing the actual \(\psi_g\).
+
+Let
+\[
+ \Gamma(A)=\|F_A\psi_g\|^2,\qquad
+ \nu_A(B)=\langle F_A\psi_g,\mathbf1_B(\mathcal A)F_A\psi_g\rangle .
+\]
+The exact reflection invariance of \(\mu\) gives
+\[
+ \Gamma(A)=\frac14\left[
+ 1-\mu(\cos(2Ap))-\mu(\cos(A(p-r)))
+                         +\mu(\cos(A(p+r)))\right]
+ \longrightarrow\frac14 .
+ \tag{PK182}
+\]
+The equality follows by expanding the entire squared half-difference,
+using \(2\sin x\sin y=\cos(x-y)-\cos(x+y)\), and retaining all
+three cosine terms. Each nonconstant phase was proved in PK180;
+PK181 gives its actual-vacuum limit. This holds at every positive
+coupling and every original finite box.
+
+It has an exact order-of-limits consequence. PK129/PK148 prove, for
+each fixed \(A\),
+\[
+ \lim_{g\downarrow0}\Gamma(A)
+       =\frac12\left[1-(1+4A^2)^{-3/2}\right].
+\]
+At fixed \(L,a\), the two iterated limits are therefore
+\[
+ \lim_{g\downarrow0}\lim_{A\to\infty}\Gamma(A)=\frac14,
+ \qquad
+ \lim_{A\to\infty}\lim_{g\downarrow0}\Gamma(A)=\frac12 .
+ \tag{PK183}
+\]
+The nonlinear reflected words, already evaluated in PK180, cannot
+be omitted in the first limit. No uniformity in \(g\) is inferred.
+
+The complete first two energy moments can also be evaluated in
+this amplitude limit. Write
+\[
+ G_{ij}=\nabla p_i\cdot\nabla p_j,\quad
+ (p_1,p_2)=(p,r),\qquad
+ \mathscr L=\kappa[H_0-2\nabla\log\psi_g\cdot\nabla],
+ \quad d_i=\mathscr Lp_i .
+ \tag{PK184}
+\]
+Every gradient sums all original links and all three original colour
+generators. Thus \(G_{11}=\beta_0^2\sum_{e,\alpha}
+(X_{e,\alpha}\mathcal S)^2\); the full word derivatives are
+PK151–PK153. Reflection sends \(G_{11}\) to \(G_{22}\) and fixes
+the integral of \(G_{12}\). The exact formulas before any limit are
+\[
+ \begin{split}
+ m_1(A)
+ &=\frac{\kappa A^2}{4}\,
+ \mu\!\left[
+       \cos^2(Ap)G_{11}+\cos^2(Ar)G_{22}
+                  -2\cos(Ap)\cos(Ar)G_{12}\right],\\
+ m_2(A)
+ &=\frac14\,\mu\!\left(
+ A[\cos(Ap)d_1-\cos(Ar)d_2]
+ +\kappa A^2[\sin(Ap)G_{11}-\sin(Ar)G_{22}]
+                         \right)^2 .
+ \end{split}\tag{PK185}
+\]
+These follow from PK155 and its full ground-state product rule.
+In particular the sine term in the second line has its positive
+sign from \(H_0=-\sum X^2\). No score, mixed term or reflected
+word has been removed.
+
+All \(G_{ij},d_i\) are bounded smooth functions at this fixed
+regulator. Apply PK181 to the phases \(2p,p-r,p+r\), with
+weights \(G_{ij}\psi_g^2\) or \(G_{ij}G_{kh}\psi_g^2\).
+In the second moment, the terms with factors \(A^2\) and \(A^3\)
+vanish after division by \(A^4\) by boundedness. The two squared
+sine terms each tend to half their weighted integrals, and the
+cross term tends to zero. Consequently
+\[
+ \begin{split}
+ \frac{m_1(A)}{A^2}&\longrightarrow
+                  \frac{\kappa}{4}\mu(G_{11})>0,\\
+ \frac{m_2(A)}{A^4}&\longrightarrow
+                  \frac{\kappa^2}{4}\mu(G_{11}^2)>0,\\
+ \frac{m_1(A)}{A^2\Gamma(A)}&\longrightarrow\kappa\mu(G_{11}),\\
+ \frac{m_2(A)}{A^4\Gamma(A)}&\longrightarrow\kappa^2\mu(G_{11}^2).
+ \end{split}\tag{PK186}
+\]
+Nonconstancy of \(p\) and strict positivity of the actual vacuum
+make both displayed integrals strictly positive. The raw moments
+and raw norm remain explicit, including the factors \(1/4\).
+These equalities do not replace the raw vector by a unit vector.
+
+There is a stronger spectral statement than growth of moments.
+For any \(h\in L^2(dU)\), \(\overline h\psi_g\in L^1(dU)\);
+PK181 applied separately to \(p\) and \(r\) shows
+\(F_A\psi_g\rightharpoonup0\).
+The spectral projection of the original elliptic compact
+Hamiltonian onto a bounded energy interval has finite rank, also
+after restriction to physical odd vectors. Weak convergence and
+an orthonormal basis of that finite-dimensional range give
+\[
+ \nu_A([0,\Lambda])\longrightarrow0
+ \quad\text{for every finite }\Lambda\ge0,\qquad
+ \nu_A([0,\infty))\longrightarrow\frac14 .
+ \tag{PK187}
+\]
+This concerns the full interacting spectral measure.
+
+The same result produces an actual sequence on the original path
+PK139, using the amplitude already present in the full higher-carrier
+map. For each integer \(j\ge2\), define the integer
+\[
+ A_j=\min\left\{n\in\mathbb N:\ n\ge j,\
+       |\Gamma_j(n)-1/4|<\frac1{8j},\
+       \nu_{j,n}([0,\kappa_*j])<\frac1j\right\}.
+ \tag{PK188}
+\]
+The set is nonempty by PK182 and PK187 at that particular finite
+regulator, so this is an unconditional, well-defined choice from
+the actual operator. It uses neither a Gaussian vacuum nor an
+unknown limiting gap. It gives the exact conclusions
+\[
+ \begin{gathered}
+ \Gamma_j(A_j)\longrightarrow\frac14,\qquad
+ \nu_{j,A_j}([0,\Lambda])\longrightarrow0
+                         \quad(\Lambda<\infty),\\
+ m_{1,j}(A_j)\ge
+       \kappa_*\left(\frac j4-\frac98\right),\qquad
+ m_{2,j}(A_j)\ge
+       \kappa_*^2\left(\frac{j^2}{4}-\frac{9j}{8}\right).
+ \end{gathered}\tag{PK189}
+\]
+Indeed, the raw mass above \(\kappa_*j\) is at least
+\(1/4-1/(8j)-1/j\); integrate \(E\) or \(E^2\) there.
+For a fixed finite \(\Lambda\), eventually \(\Lambda\le\kappa_*j\).
+One obtains an actual point of the original rank-24 domain over
+any chosen base point by taking one selected quaternion of length
+\(\sqrt{A_j}\), the other two selected quaternions zero, and
+specified zero values for the other coordinates. Its invariant
+scalar \(\mathfrak a\) is exactly \(A_j\). The full domain map and
+its other fibres remain PK149–PK150.
+Thus amplitude can retain raw mass, but this particular proved
+choice sends that mass to high energies. It does not alter the
+unfinished fixed-\(A=1\) calculation.
+
+\subsection*{9.29. The exact two-phase space and its actual energy form}
+
+We continue from PK189 by constructing a space in which the phase
+profile can be varied while its full raw norm and energy are kept.
+Define
+\[
+ \Theta:\mathcal Q_L\longrightarrow\mathbb R^2,\quad
+ \Theta(U)=(p(U),r(U)),\qquad
+ K=\Theta(\mathcal Q_L),\qquad \rho=\Theta_*\mu .
+ \tag{PK190}
+\]
+The compact image is contained in \([-T,T]^2\), where
+\(T=4\beta_0S_1S_3\), using the exact sums PK162.
+Reflection sends \(\Theta(U)\) to \((r(U),p(U))\), so both
+\(K\) and \(\rho\) are invariant under interchange of the two
+coordinates. No rank, Lebesgue density or nonsingularity of this
+pushforward is assumed.
+
+Let \(L^2_-(\rho)\) consist of the functions satisfying
+\(f(y,x)=-f(x,y)\) as equivalence classes. The map
+\[
+ J:L^2_-(\rho)\longrightarrow
+        L^2(\mathcal Q_L,dU)_{\mathrm{physical,odd}},\qquad
+ (Jf)(U)=\psi_g(U)f(\Theta(U))
+ \tag{PK191}
+\]
+is an isometry, since \(\|Jf\|^2=\int|f|^2d\rho\) by the
+definition of pushforward. It therefore has closed range.
+Gauge invariance follows from that of \(p,r,\psi_g\); oddness
+follows from the coordinate interchange. Its vectors are exactly
+vacuum orthogonal because \(\int f\,d\rho=0\).
+In particular \(f_A(x,y)=[\sin(Ax)-\sin(Ay)]/2\) maps to
+the original \(F_A\psi_g\). This proves the exact inclusion of the
+previous amplitude family, with every original scalar retained.
+
+For a physical odd vector \(h\), its adjoint is
+\[
+ (J^*h)(x,y)
+   =\mathbb E_\mu[h/\psi_g\mid\Theta=(x,y)] .
+ \tag{PK192}
+\]
+Conditional expectation is defined here as the orthogonal projection
+in \(L^2(\mu)\) onto functions measurable with respect to \(\Theta\).
+The quotient is legitimate because \(\psi_g>0\) and
+\(\int|h/\psi_g|^2d\mu=\int|h|^2dU\).
+Testing against bounded functions of \(\Theta\) proves the adjoint
+identity; density extends it to \(L^2\).
+Reflection invariance proves its antisymmetry.
+Thus \(JJ^*\) is the exact orthogonal projection onto the
+constructed range; it is not asserted to commute with \(\mathcal A\).
+
+Construct finite signed measures on \(K\) by integrating the
+functions \(G_{ij}\) and \(d_i\) of PK184 over inverse images of
+Borel sets. They are absolutely continuous with respect to \(\rho\):
+their densities are bounded by the corresponding suprema on
+\(\mathcal Q_L\). Denote their Radon–Nikodym densities by
+\[
+ a_{ij}=\mathbb E_\mu[G_{ij}\mid\Theta],\qquad
+ b_i=\mathbb E_\mu[d_i\mid\Theta]\quad(1\le i,j\le2).
+ \tag{PK193}
+\]
+The matrix \(a\) is real symmetric and positive semidefinite
+\(\rho\)-almost everywhere. To verify the last assertion,
+for every rational vector \(z\in\mathbb Q^2\), the defining
+measure of \(z^Ta z\) integrates
+\(|z_1\nabla p+z_2\nabla r|^2\ge0\).
+Its density is nonnegative. Remove the union of the resulting
+countably many null sets and pass to real vectors by continuity.
+
+For restrictions to \(K\) of smooth antisymmetric functions on
+\(\mathbb R^2\), the complete actual form is
+\[
+ \begin{split}
+ \mathfrak q[f,h]
+ &:=\langle Jf,\mathcal A Jh\rangle\\
+ &=\kappa\int_K\left[
+  a_{11}\overline{f_1}h_1+a_{12}\overline{f_1}h_2+
+  a_{21}\overline{f_2}h_1+a_{22}\overline{f_2}h_2
+                  \right]d\rho .
+ \end{split}\tag{PK194}
+\]
+Here \(f_i\) and \(h_i\) are the ordinary coordinate derivatives
+before restriction. The ground-state identity PK154 gives the
+first line as \(\kappa\int\nabla(f\circ\Theta)^*
+\nabla(h\circ\Theta)d\mu\); the full chain rule and PK193 give
+the second line. This also proves independence of the chosen
+smooth extension: a smooth function zero \(\rho\)-almost everywhere
+pulls back to a smooth function zero \(\mu\)-almost everywhere,
+hence everywhere since \(\psi_g>0\) and Haar has full support.
+Its derivatives on \(\mathcal Q_L\) are zero.
+Individual \(f_i|_K\) need not be determined by \(f|_K\), but the
+displayed contracted form is.
+
+The form is closable in \(L^2_-(\rho)\). In fact, a form-Cauchy
+sequence \(f_n\) converging to zero in \(L^2(\rho)\) has \(Jf_n\)
+Cauchy in the closed excitation form and converging to zero in
+the original Hilbert norm. Closedness there forces
+\(\mathfrak q[f_n,f_n]\to0\).
+Take this closure as the form domain \(\mathcal D_{\rm ph}\).
+It is dense in \(L^2_-(\rho)\): continuous functions on the compact
+support are dense in \(L^2(\rho)\), their extensions to a containing
+rectangle are uniformly approximated by polynomials, and averaging
+\([f(x,y)-f(y,x)]/2\) preserves approximation to an antisymmetric
+function. Smooth functions agreeing with these polynomials near
+the compact rectangle give the stated core.
+
+At this fixed regulator, the form norm of \(\mathcal A\), plus
+the original \(L^2\) norm, is equivalent to the \(H^1\) norm on
+the compact link manifold: the potential and \(E_{0,g}\) are bounded
+and \(\kappa>0\). Its embedding into \(L^2\) is compact. For example,
+expansion in the complete free product-Casimir eigenbasis bounds
+the squared norm of the tail above electric energy \(R\) by the
+bounded electric form divided by \(R\); each remaining eigenspace
+is finite dimensional. Finite-dimensional subsequence extraction
+then proves compactness. Because \(J\) is an isometry, the closed
+phase form also has compact embedding and defines a nonnegative
+self-adjoint operator with compact resolvent, denoted \(B_{\rm ph}\).
+Explicitly, on the Hilbert space with inner product
+\(\mathfrak q[f,h]+\langle f,h\rangle_\rho\), the Riesz
+representation theorem assigns to each \(u\in L^2_-(\rho)\)
+a unique \(Ru\) satisfying
+\(\mathfrak q[h,Ru]+\langle h,Ru\rangle_\rho=\langle h,u\rangle_\rho\)
+for every form-domain \(h\). This operator is bounded, positive,
+self-adjoint and injective on \(L^2_-(\rho)\); injectivity follows
+from density of the form domain. Its range is dense because its
+orthogonal complement is its kernel. The just-proved compact
+embedding makes \(R\) compact. Its orthogonal spectral decomposition
+therefore defines \(B_{\rm ph}=R^{-1}-I\), with domain consisting
+of the spectral coefficient sequences for which this expression
+is square summable. The variational identity gives precisely the
+closed form above, proves self-adjointness and nonnegativity, and
+identifies \((B_{\rm ph}+I)^{-1}=R\).
+Its lowest eigenvalue is strictly positive. Otherwise a sequence
+of phase functions with norm one and energies tending to zero
+would have, after applying \(J\), a strongly convergent subsequence.
+Its limit would have norm one, be odd, and lie in the zero
+eigenspace of \(\mathcal A\), which consists only of the even
+vacuum. This is impossible.
+
+\subsection*{9.30. Full second moment, residual interaction, and finite receiving matrices}
+
+On the smooth phase core the full chain rule, before conditional
+expectation, is
+\[
+ \mathscr L(f\circ\Theta)
+   =\sum_{i=1}^2 d_i f_i(\Theta)
+       -\kappa\sum_{i,j=1}^2G_{ij}f_{ij}(\Theta).
+ \tag{PK195}
+\]
+The sign of the Hessian term follows from
+\(H_0=-\sum X^2\). Define the measurable phase function and the
+complete residual on the original configuration manifold by
+\[
+ \begin{split}
+ Bf&=b_1f_1+b_2f_2
+     -\kappa(a_{11}f_{11}+a_{12}f_{12}
+                     +a_{21}f_{21}+a_{22}f_{22}),\\
+ R_f(U)&=\sum_{i=1}^2[d_i(U)-b_i(\Theta(U))]f_i(\Theta(U))\\
+ &\quad-\kappa\sum_{i,j=1}^2
+       [G_{ij}(U)-a_{ij}(\Theta(U))]f_{ij}(\Theta(U)).
+ \end{split}\tag{PK196}
+\]
+Every term is square integrable at a fixed finite regulator.
+Their exact conditional expectation identities give
+\(\mathbb E_\mu[R_f\mid\Theta]=0\).
+Integration against another smooth phase function, followed by
+PK194, proves \(B_{\rm ph}f=Bf\): the functional
+\(\mathfrak q[h,f]\) is represented by this bounded \(L^2(\rho)\)
+function for every core \(h\), and extends to the closed form domain.
+This also proves that \(Bf\) is independent of the extension of \(f\).
+The original excitation vector decomposes exactly as
+\[
+ \mathcal A Jf=J(B_{\rm ph}f)+\psi_gR_f,\qquad
+ J^*(\psi_gR_f)=0 .
+ \tag{PK197}
+\]
+Thus the complete raw moments for these new profiles are
+\[
+ \begin{split}
+ m_0[f]&=\int_K|f|^2d\rho,\\
+ m_1[f]&=\kappa\int_K\sum_{i,j=1}^2
+                     a_{ij}\overline{f_i}f_j\,d\rho,\\
+ m_2[f]&=\int_K|B_{\rm ph}f|^2d\rho
+                         +\int_{\mathcal Q_L}|R_f|^2d\mu .
+ \end{split}\tag{PK198}
+\]
+The second term in \(m_2\) is the exact coupling to the complement
+of the phase range. It cannot be omitted by calling the phase
+operator the whole Hamiltonian. PK197 proves their connecting map.
+For \(f_A\), these formulas recover every term of PK185.
+
+There is a finite, convergent variational construction within this
+space. For integers \(0\le q<p\), put
+\[
+ \begin{gathered}
+ P_{pq}(x,y)=x^py^q-x^qy^p,\qquad
+ d_\ell(t)=
+ \begin{cases}0,&\ell=0,\\ \ell t^{\ell-1},&\ell\ge1,\end{cases}
+ \\
+ \begin{aligned}
+ D_{1,pq}&=d_p(x)y^q-d_q(x)y^p,\\
+ D_{2,pq}&=x^pd_q(y)-x^qd_p(y).
+ \end{aligned}
+ \end{gathered}\tag{PK199}
+\]
+The separate zero case retains the constant monomials without
+introducing undefined negative powers at \(x=0\) or \(y=0\).
+For all \(p,q,s,t\) in this indexing set define
+\[
+ \begin{split}
+ \mathcal G_{pq,st}
+ &=\int_K[
+ x^{p+s}y^{q+t}-x^{p+t}y^{q+s}
+             -x^{q+s}y^{p+t}+x^{q+t}y^{p+s}]\,d\rho,\\
+ \mathcal C_{pq,st}
+ &=\kappa\int_K[
+ a_{11}D_{1,pq}D_{1,st}+a_{12}D_{1,pq}D_{2,st}\\
+ &\hspace{37mm}
+ +a_{21}D_{2,pq}D_{1,st}+a_{22}D_{2,pq}D_{2,st}]\,d\rho .
+ \end{split}\tag{PK200}
+\]
+These are exact Gram and energy matrices in the actual interacting
+vacuum; all four mixed terms in each expression remain.
+For \(f=\sum c_{pq}P_{pq}\), the original raw norm and energy are
+exactly \(c^*\mathcal Gc\) and \(c^*\mathcal Cc\).
+A vector in the kernel of \(\mathcal G\) gives a smooth pullback
+identically zero on \(\mathcal Q_L\), by the full-support argument
+after PK194. It is also in the kernel of \(\mathcal C\).
+Hence quotienting only this exact common zero vector space makes
+the following finite minimum well-defined:
+\[
+ \begin{gathered}
+ \lambda_R^{\rm ph}
+ =\min_{\substack{c^*\mathcal G_Rc>0\\0\le q<p\le R}}
+               \frac{c^*\mathcal C_Rc}{c^*\mathcal G_Rc},\\
+ 0<\Delta_{\rm odd}\le\lambda_{\rm ph}
+       \le\lambda_{R+1}^{\rm ph}\le\lambda_R^{\rm ph},\\
+ \lambda_R^{\rm ph}\downarrow\lambda_{\rm ph}.
+ \end{gathered}
+ \tag{PK201}
+\]
+Here \(\Delta_{\rm odd}\) is the actual lowest odd excitation of
+the original Hamiltonian and \(\lambda_{\rm ph}\) is the lowest
+eigenvalue of the proved phase-form operator.
+The space for \(R=1\) is nonzero because \(p-r\) is nonconstant
+and has nonzero square integral. Every such trial vector belongs
+to the actual physical odd form domain, proving the first
+variational inequality. Increasing \(R\) increases the finite
+trial space, proving monotonicity.
+
+To prove the final limit with its required form density, approximate
+a smooth core function on a rectangle containing \(K\), together
+with its first derivatives, by two-variable polynomials. One direct
+construction uses tensor Bernstein polynomials after the affine
+coordinate map from \([0,1]^2\) onto \([-\tau,\tau]^2\), where
+\(\tau=T+1\):
+\[
+ (s,t)\longmapsto(2\tau s-\tau,2\tau t-\tau),\qquad
+ \widetilde f(s,t)=f(2\tau s-\tau,2\tau t-\tau).
+\]
+Write \(b_{R,i}(s)=\binom Ri s^i(1-s)^{R-i}\).
+The approximating polynomial is
+\(\sum_{i,j=0}^R\widetilde f(i/R,j/R)b_{R,i}(s)b_{R,j}(t)\).
+Its first \(s\)-derivative is exactly
+\[
+ R\sum_{i=0}^{R-1}\sum_{j=0}^R
+ [\widetilde f((i+1)/R,j/R)-\widetilde f(i/R,j/R)]
+                   b_{R-1,i}(s)b_{R,j}(t);
+\]
+the \(t\)-derivative has the analogous displayed-coordinate
+interchange. The fundamental theorem of calculus writes each
+bracket times \(R\) as the integral average of that first
+derivative over the interval of length \(1/R\).
+Uniform continuity of that derivative, and the binomial variance
+bound \(t(1-t)/R\le1/(4R)\), prove uniform derivative convergence;
+the use of degree \(R-1\) shifts the corresponding mean by at
+most \(1/R\), which also tends to zero. The same binomial
+argument proves function convergence.
+Return to the original coordinates by
+\(s=(x+\tau)/(2\tau),t=(y+\tau)/(2\tau)\);
+each first derivative has the factor \(1/(2\tau)\).
+Antisymmetrize the polynomials. Their coefficients then
+pair exactly into the \(P_{pq}\) of PK199. Since \(\rho\) is finite
+and \(a\) is bounded, uniform function and derivative convergence
+implies convergence in \(m_0+\mathfrak q\).
+The core defines the closed form, so these polynomial spaces
+are dense in that full form domain.
+Approximate a lowest phase eigenfunction in this norm; its
+Rayleigh quotients converge to \(\lambda_{\rm ph}\).
+Together with the preceding lower bound this proves PK201.
+
+The first receiving matrix is particularly explicit in the
+original objects. Let
+\[
+ \mathcal S_{\mathcal R}=\mathcal S\circ\mathcal R,\qquad
+ \mathcal Q_{4,\mathcal R}=\mu(\mathcal S\mathcal S_{\mathcal R}),
+ \quad
+ \mathcal K_1=\mu(|\nabla\mathcal S|^2),\qquad
+ \mathcal K_{\mathcal R}
+          =\mu(\nabla\mathcal S\cdot\nabla\mathcal S_{\mathcal R}).
+\]
+For \(P_{10}=x-y\) one has exactly
+\[
+ \begin{split}
+ \mathcal G_{10,10}
+   &=2\beta_0^2(\mathcal Q_4-\mathcal Q_{4,\mathcal R})>0,\\
+ \mathcal C_{10,10}
+   &=2\kappa\beta_0^2(\mathcal K_1-\mathcal K_{\mathcal R})>0,\\
+ \lambda_1^{\rm ph}
+   &=\frac{2\kappa\beta_0^2(\mathcal K_1-\mathcal K_{\mathcal R})}
+           {2\beta_0^2(\mathcal Q_4-\mathcal Q_{4,\mathcal R})}.
+ \end{split}\tag{PK202}
+\]
+Reflection invariance supplies the two equal diagonal terms
+in each line; both cross terms remain. Strict positivity follows
+from the nonzero odd smooth function \(p-r\), the full-support
+vacuum measure and the unique even zero eigenspace.
+PK170–PK171 give the full loop expansion for \(\mathcal Q_4\);
+replace its second pair of chord words by their reflected words
+to obtain \(\mathcal Q_{4,\mathcal R}\), with the same four trace
+terms and every ordered index tuple.
+PK151–PK153 give every derivative in the two \(\mathcal K\) terms.
+Thus this finite entry involves the actual four-loop and gradient
+calculations already identified, and retains the complete
+\(2,\kappa,\beta_0^2\) factors in its norm and energy.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/ACTUAL_PHASE_VARIATIONAL_MAP.png}\caption{Full reflection, actual amplitude limits and complete phase variational map}\end{figure}
+
+The two-link configuration is evaluated exactly in PK179–PK180. The limits are proved in PK181–PK189; no plotted vacuum sample is used. PK190–PK202 prove the phase-space isometry, full Hamiltonian action, residual second moment and finite variational matrices. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/phase_variational_figures.py}{Reproducible figure source}.
+
+\subsection*{9.31. Full phase rank, actual density, and all boundary flux terms}
+
+The preceding construction did not require a rank hypothesis.
+For the present original objects its rank can in fact be proved.
+Keep the two physical links used in PK180, but allow their values
+to vary through
+\(h(t)=\exp(tT_1)\) and \(k(s)=\exp(sT_1)\).
+Put
+\[
+ u(t)=2\sin(t/2),\qquad v(s)=2\sin(s/2),\qquad
+ w(t,s)=2\sin((s-t)/2).
+\]
+These are the full group coordinates, including their \(4\pi\)
+periods. The first-row coefficient of the middle chord is zero.
+Before reflection the two relevant mode vectors are
+\(d_0u(1,0,0)\) and \(d_0(u+v)(1,0,0)\).
+After reflection their first components are \(-d_0u\) and
+\(d_0(2u+w)\): the middle chord's word changes from \(h^{-1}\)
+to \(kh^{-1}\), whose coordinate is \(w\).
+Consequently the complete restricted phase map is
+\[
+ p(t,s)=\beta_0d_0^2 u(t)[u(t)+v(s)],\qquad
+ r(t,s)=-\beta_0d_0^2 u(t)[2u(t)+w(t,s)] .
+ \tag{PK203}
+\]
+At \((t,s)=(\pi,2\pi)\) it gives exactly PK180.
+At the different point \((t,s)=(\pi/2,\pi)\), it gives
+\[
+ \begin{gathered}
+ (p,r)=\bigl((2+2\sqrt2)\beta_0d_0^2,-6\beta_0d_0^2\bigr),\\
+ \frac{\partial(p,r)}{\partial(t,s)}
+   =\beta_0d_0^2
+          \begin{pmatrix}2+\sqrt2&0\\-4&-1\end{pmatrix},
+ \qquad
+ \det\frac{\partial(p,r)}{\partial(t,s)}
+          =-(2+\sqrt2)\beta_0^2d_0^4\ne0 .
+ \end{gathered}\tag{PK204}
+\]
+For example \(u=\sqrt2,v=2,w=\sqrt2\) at this point,
+\(u_t=\sqrt2/2,v_s=0,w_t=-\sqrt2/2,w_s=\sqrt2/2\);
+inserting these four derivatives into both full products
+in PK203 proves all four matrix entries and its determinant.
+The inverse function theorem therefore puts an open
+neighbourhood of the displayed phase value inside \(K\).
+
+On the full link manifold the nonnegative analytic function
+\(\det(G_{ij})\) is not identically zero, because PK204 gives
+two independent differentials at one configuration.
+The analytic zero-set argument preceding PK181 proves that
+its zero set has Haar measure zero, hence actual-vacuum
+measure zero. Thus the full phase map has rank two
+\(\mu\)-almost everywhere. These facts give the strengthenings
+\[
+ \begin{gathered}
+ d\rho(x,y)=\varpi(x,y)\,dx\,dy,\qquad
+ \varpi\ge0,\quad\int_{\mathbb R^2}\varpi\,dx\,dy=1,\quad
+ \rho(\partial K)=0,\\
+ a(x,y)>0\quad \rho\text{-almost everywhere}.
+ \end{gathered}
+ \tag{PK205}
+\]
+Here \(a>0\) means positive definite; no uniform ellipticity
+constant on all of \(K\) is asserted.
+
+To prove absolute continuity, cover the rank-two set by
+countably many coordinate neighbourhoods in which
+\((p,r,z_3,\ldots,z_{3N})\) is a smooth coordinate system.
+Such neighbourhoods exist by the inverse function theorem,
+retaining the other local coordinates for an invertible
+minor. The smooth positive actual-vacuum density acquires
+the full coordinate Jacobian in each neighbourhood.
+A partition into countably many measurable chart pieces,
+followed by Fubini in these exact coordinates, shows that
+the inverse image of every planar Lebesgue-null set has
+\(\mu\)-measure zero there. The complementary critical
+set has already been proved null. This proves the stated
+Radon–Nikodym density on the whole plane, extended by zero
+outside \(K\); its integral is one by the pushforward
+definition, with no mass rescaling.
+If a point of \(\partial K\) had a regular preimage, the
+submersion neighbourhood at that preimage would put an open
+neighbourhood of the point inside \(K\), a contradiction.
+Thus the boundary inverse image is contained in the null
+critical set, proving \(\rho(\partial K)=0\).
+
+Finally let \(\ell(U)\) be the smaller eigenvalue of the
+matrix \(G(U)\). It is bounded, measurable and strictly
+positive almost everywhere. Its conditional expectation
+\(\overline\ell=\mathbb E_\mu[\ell\mid\Theta]\) is strictly
+positive \(\rho\)-almost everywhere: if it vanished on a
+set of positive \(\rho\)-measure, its defining integral
+would force the integral of the strictly positive \(\ell\)
+over an inverse image of positive \(\mu\)-measure to vanish.
+Conditional expectation of \(G\ge\ell I\) gives
+\(a\ge\overline\ell I\), proving the last assertion of PK205.
+
+The support of \(\rho\) is exactly \(K\). Indeed every
+neighbourhood of an image point has a nonempty open inverse
+image, which has positive \(\mu\)-measure. Since \(K\)
+contains an open set by PK204, a nonzero polynomial cannot
+vanish \(\rho\)-almost everywhere: continuity would make it
+zero on \(K\), hence on an open set, and the analytic
+zero-set property would make it the zero polynomial.
+The polynomials \(P_{pq}\) are linearly independent because
+their ordered leading monomials \(x^py^q\), \(p>q\), have
+distinct exponent pairs and the reversed terms have \(p<q\).
+Therefore every finite \(\mathcal G_R\) in PK200 is positive
+definite, and so is \(\mathcal C_R\) by the actual odd
+spectral lower bound. For this original phase space the
+possible common kernel discussed before PK201 is exactly
+zero. This strengthening propagates PK201 to ordinary
+positive-definite generalized eigenvalue matrices.
+
+The full boundary information has an exact distributional
+form. Regard \(\varpi a_{ij}\), \(\varpi b_i\) and
+\(\varpi Bf\) as integrable functions on \(\mathbb R^2\),
+extended by zero off the actual support. Then
+\[
+ \varpi b_i=-\kappa\sum_{j=1}^2
+                     \partial_j(\varpi a_{ij}),\qquad
+ \varpi B_{\rm ph}f=-\kappa\sum_{i,j=1}^2
+                     \partial_j(\varpi a_{ij}f_i)
+       \quad\text{in }\mathcal D'(\mathbb R^2).
+ \tag{PK206}
+\]
+For the first identity, take an arbitrary smooth compactly
+supported test function \(\eta(x,y)\). The actual
+ground-state identity on the compact link manifold gives
+\[
+ \int\eta\,\varpi b_i\,dx\,dy
+ =\mu((\eta\circ\Theta)\mathscr Lp_i)
+ =\kappa\sum_j\mu(\eta_j(\Theta)G_{ij})
+ =\kappa\sum_j\int\eta_j\varpi a_{ij}\,dx\,dy .
+\]
+No antisymmetry is needed for this identity; it is the same
+full chain and ground-state calculation as PK194.
+It is exactly the distributional derivative in PK206.
+Multiplying by the smooth \(f_i\), applying the product
+rule to the distributions, and retaining all four
+\(a_{ij}f_{ij}\) terms gives its second identity and the
+operator PK196. The tests range over the entire plane,
+so derivatives of the zero-extended coefficients retain
+all contributions at the actual phase boundary.
+No imposed Dirichlet condition, classical boundary trace,
+or deleted boundary flux enters this construction.
+
+The amplitude construction has now supplied actual noncollapsing
+vectors and proved their high-energy escape, not the requested
+low-energy state. PK190–PK206 construct the next exact receiving
+space, its full interaction with the original Hamiltonian, and
+convergent finite variational matrices. The next calculation is
+the actual entries of these matrices and the residual term PK198
+on the unchanged regulator path, starting with PK202 and the
+actual coefficient identities PK205–PK206. No estimate
+of their path limit or of continuum reconstruction is assumed.
+The globally smooth interacting gapless continuum state and the
+integrated lesson series remain the programme goal.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/ACTUAL_PHASE_RANK_AND_BOUNDARY.png}\caption{Exact rank-two phase section and the full distributional operator}\end{figure}
+
+The grid is the full PK203 map at the displayed original regulator L=2,a=1,g=1. Its phase coordinates are not rescaled. PK204 proves the nonzero differential; PK205–PK206 prove actual absolute continuity, positive finite matrices and the operator identity with all boundary contributions. The plotted grid does not represent a computed vacuum density. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/phase_variational_figures.py}{Reproducible figure source}.
+
 \subsection*{10. Reproducibility and scope}
 
 The original symbolic checker verifies the full angular period law, both matrix
@@ -3901,4 +4819,6 @@ The odd-observable checker adds 109 exact checks for PK101–PK131, including ev
 The joint-path checker adds 82 exact checks for PK132–PK157: complete heat/Haar constants, original path and graph counts, SU(2) trace signs, repeated inverse-word derivatives and the full actual ground-state product rule. The operator inequalities and asymptotic collapse are proved in Sections 9.20–9.23; finite checks are not substituted for them.
 
 The global-moment checker adds 40 exact checks for PK158–PK177, including all chord exclusions, coincident fourth-moment contractions, the original phase scale and the complete energy-bound constants. Four larger-box numerical samples are recorded separately and are not proofs. Sections 9.24–9.26 contain the full arguments.
+
+The phase-variational checker adds 65 exact checks for PK177a–PK206: all rooted words in the explicit configuration, original strip incidences, complete constants, amplitude factors and finite Gram identities. Three larger-box numerical checks are supplementary. The oscillatory, operator and variational conclusions have their complete proofs in Sections 9.26a–9.31.
 \end{document}

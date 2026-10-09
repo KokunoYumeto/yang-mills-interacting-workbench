@@ -332,6 +332,55 @@
       "strengthens": [
         "SZ-20261009-015"
       ]
+    },
+    {
+      "result_id": "SZ-20261009-019",
+      "statement": "The original rooted chords have exact ordered face fillings and fully evaluated weighted face sums. Applying the actual vacuum potential bound gives a complete fourth-moment bound whose original-path limitation is explicitly proved.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK177a–PK177f",
+      "scope": "Every original boundary term, face support and conjugating word retained; this bound does not settle actual fourth-moment growth.",
+      "strengthens": [
+        "SZ-20261009-017"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-020",
+      "statement": "An exact two-link configuration proves that the global phase and its reflection are not negatives. At every finite regulator the actual large-amplitude raw mass tends to 1/4, while the opposite iterated weak-coupling limit is 1/2. The first two actual energy moments and escape from every bounded energy interval are proved.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK178–PK187",
+      "scope": "Full interacting vacuum at every positive coupling, original nonlinear reflected words, raw norm and both energy moments; no interchange of limits.",
+      "strengthens": [
+        "SZ-20261009-014",
+        "SZ-20261009-015",
+        "SZ-20261009-017"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-021",
+      "statement": "The existing higher-carrier amplitude yields a well-defined actual sequence on the unchanged regulator path with raw mass tending to 1/4 and escaping every bounded energy interval. Explicit lower bounds for its first two energy moments diverge.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK188–PK189",
+      "scope": "The amplitude is selected from the actual finite operators. This high-energy sequence leaves the fixed-amplitude low-energy question open.",
+      "strengthens": [
+        "SZ-20261009-014",
+        "SZ-20261009-020"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-022",
+      "statement": "The actual joint phase measure defines an isometric physical odd state map and a closed compact energy form. Its exact coupling to the complement remains in the full second moment. Finite polynomial Gram/energy matrices converge variationally, with their first entry expressed in the original four-loop and gradient moments.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK190–PK202",
+      "scope": "No regular density or rank of the phase image is assumed; all actual vacuum, mixed and residual terms retained. Joint-path matrix estimates remain to compute.",
+      "strengthens": [
+        "SZ-20261009-017",
+        "SZ-20261009-018"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-023",
+      "statement": "An exact two-parameter original-link section proves rank two almost everywhere for the full phase map. The actual phase measure has a Lebesgue density and null boundary mass; its conditional energy matrix is positive definite almost everywhere, all finite polynomial Gram/energy matrices are positive definite, and the distributional operator identity retains all phase-boundary contributions.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK203–PK206",
+      "scope": "Every finite L>=2,a>0,g>0; no uniform ellipticity or explicit vacuum density is claimed. The original sine periods, coupling and witness coefficient are retained.",
+      "strengthens": [
+        "SZ-20261009-022"
+      ]
     }
   ],
   "defined_spaces": {
@@ -495,7 +544,18 @@
     "figures/GLOBAL_FOUR_POINT_ESTIMATES.png",
     "figures/GLOBAL_FOUR_POINT_ESTIMATES.svg",
     "figures/GLOBAL_MOMENTS_FIGURE_CHECK.json",
-    "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.pdf"
+    "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.pdf",
+    "checks/verify_phase_variational.py",
+    "checks/PHASE_VARIATIONAL_CHECK.json",
+    "checks/PHASE_VARIATIONAL_SOURCE_BINDINGS.json",
+    "figures/phase_variational_figures.py",
+    "figures/ORIGINAL_CHORD_FACE_FILLING.png",
+    "figures/ORIGINAL_CHORD_FACE_FILLING.svg",
+    "figures/ACTUAL_PHASE_VARIATIONAL_MAP.png",
+    "figures/ACTUAL_PHASE_VARIATIONAL_MAP.svg",
+    "figures/PHASE_VARIATIONAL_FIGURE_CHECK.json",
+    "figures/ACTUAL_PHASE_RANK_AND_BOUNDARY.png",
+    "figures/ACTUAL_PHASE_RANK_AND_BOUNDARY.svg"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -538,8 +598,13 @@
     "SZ-20261009-015",
     "SZ-20261009-016",
     "SZ-20261009-017",
-    "SZ-20261009-018"
+    "SZ-20261009-018",
+    "SZ-20261009-019",
+    "SZ-20261009-020",
+    "SZ-20261009-021",
+    "SZ-20261009-022",
+    "SZ-20261009-023"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "PK1–PK177: exact global chord Gram/fourth moments and all-coupling actual energy bounds; actual joint-path four-loop growth and full continuum endpoint unfinished."
+  "current_finite_state_boundary": "PK1–PK206: exact rooted-face weights, actual amplitude limits and spectral escape, complete phase form and residual, convergent finite variational matrices. Actual low-energy path estimates and the full continuum endpoint remain unfinished. Actual full phase rank, density, positive finite matrices and distributional boundary identity proved in PK203–PK206."
 }

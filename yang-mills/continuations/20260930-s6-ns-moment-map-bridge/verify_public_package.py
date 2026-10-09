@@ -97,6 +97,7 @@ receipt_paths = [
     ROOT / "checks" / "ODD_VACUUM_OBSERVABLE_CHECK.json",
     ROOT / "checks" / "JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json",
     ROOT / "checks" / "GLOBAL_FOUR_POINT_CHECK.json",
+    ROOT / "checks" / "PHASE_VARIATIONAL_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -157,6 +158,17 @@ reader_status = json.loads((ROOT / "PERIOD_PHYSICAL_TEX_COMPILE_STATUS.json").re
 checks["reader_pdf_matches_compiled_source"] = reader_status["source_sha256"] == sha256(ROOT / reader_status["source"])
 checks["reader_pdf_bytes_verified"] = reader_status["pdf_sha256"] == sha256(ROOT / reader_status["pdf"])
 checks["reader_pdf_compiled_and_inspected"] = reader_status["source_compilation_confirmed"] and "inspected" in reader_status["visual_inspection"]
+
+phase_receipt = json.loads((ROOT / "checks/PHASE_VARIATIONAL_CHECK.json").read_text(encoding="utf-8"))
+checks["phase_receipt_matches_current_proof"] = phase_receipt["proof_sha256"] == sha256(ROOT / "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md")
+phase_figure = json.loads((ROOT / "figures/PHASE_VARIATIONAL_FIGURE_CHECK.json").read_text(encoding="utf-8"))
+checks["phase_figure_inspection_recorded"] = "inspected" in phase_figure["visual_inspection"]
+for row in phase_figure["files"]:
+    checks["phase_figure_hash:" + row["file"]] = row["sha256"] == sha256(ROOT / "figures" / row["file"])
+phase_bindings = json.loads((ROOT / "checks/PHASE_VARIATIONAL_SOURCE_BINDINGS.json").read_text(encoding="utf-8"))
+for row in phase_bindings["bindings"]:
+    if row["current_file_unchanged"]:
+        checks["phase_source_binding:" + row["source_id"]] = row["sha256"] == sha256(ROOT.parents[2] / row["path"])
 
 source_path = ROOT / "sources" / "higher_rung" / "s6_higher_rung_24d_preprint.tex"
 period_receipt = json.loads((ROOT / "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json").read_text(encoding="utf-8"))

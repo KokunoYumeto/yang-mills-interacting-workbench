@@ -571,3 +571,44 @@ expectations. Reconstruction, the intended theory and the continuum
 contradiction remain the goal.
 
 Complete proofs: [PK158–PK177](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+## S6NS-20261009-007 — actual amplitude limits and the complete phase space
+
+The previous global map was proved nonzero at each finite regulator,
+with its original fixed-box weak-coupling limit and complete actual
+moments. PK177a–PK177f apply the retained potential estimate to every
+original chord face, evaluate all weights and prove that this resulting
+bound is too weak on the unchanged path.
+
+PK178–PK180 exhibit the exact defect of a global negative-reflection
+identification: the two original nonidentity links give phase values
+4 beta_0 d_0^2 and -12 beta_0 d_0^2. PK181–PK187 consequently strengthen
+finite positivity to the exact actual large-amplitude raw-mass limit
+1/4, calculate both leading energy moments and prove spectral escape.
+The opposite iterated weak-coupling limit is 1/2. Existing fixed-A
+weak-coupling theorems remain valid with their original quantifiers.
+
+PK188–PK189 give an actual noncollapsing higher-carrier sequence on the
+unchanged coupling/regulator path, with proved high-energy escape and
+divergent first/second moment lower bounds. This is a proved property
+of that selected amplitude sequence; it does not exclude low-energy
+states or settle the original A=1 family.
+
+Continue with the exact space PK190–PK202: the joint phase image,
+actual pushforward measure, isometry, closed energy form, full residual
+Hamiltonian action and polynomial variational matrices are constructed
+and proved. The second-moment residual is retained; no invariance of
+the phase range under the full Hamiltonian is asserted. The first
+matrix retains all original four-loop and gradient cross terms.
+
+Propagation: full proof, source and claim ledgers, dated bulletin,
+programmes, illustrated reader and future YM-08 provider. Delivered
+YM-01–YM-03 have no affected phase or spectral assertion. The next
+calculation is the actual matrix entries and residual on the original
+path. The continuum endpoint and remaining lessons remain active.
+
+Complete proofs: [PK177a–PK202](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+PK203–PK206 further prove actual rank two almost everywhere, an actual Lebesgue phase density, null boundary mass and positive definite conditional energy coefficients. The finite polynomial Gram and energy matrices have zero kernel for these original objects. The full operator identity is proved distributionally on the entire phase plane, retaining all boundary contributions. This strengthens the general construction in PK190–PK202 without a uniform ellipticity assertion.
+
+Complete strengthening: [PK203–PK206](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).

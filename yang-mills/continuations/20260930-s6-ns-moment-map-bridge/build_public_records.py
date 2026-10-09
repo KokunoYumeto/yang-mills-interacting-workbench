@@ -41,6 +41,7 @@ def main() -> None:
         "checks/ODD_VACUUM_OBSERVABLE_CHECK.json",
         "checks/JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json",
         "checks/GLOBAL_FOUR_POINT_CHECK.json",
+        "checks/PHASE_VARIATIONAL_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -79,7 +80,8 @@ def main() -> None:
             "complete packet moments, fixed-heat spectral escape, interacting evolution, "
             "actual fixed-box odd support, full raw limiting spectral measure, higher-carrier receiving map, "
             "proved original-path cutoff mass collapse and global group-coordinate observable with complete actual moments, exact global chord Gram/fourth contractions, "
-            "the actual four-loop receiving formula and all-coupling energy-moment bounds."
+            "the actual four-loop receiving formula and all-coupling energy-moment bounds, exact face fillings, actual amplitude limits and "
+            "spectral escape, full phase-form/residual maps and convergent finite variational matrices, actual phase density/full rank and all distributional boundary terms."
         ),
         "claim_boundary": (
             "Finite physical quantum vectors are constructed. No continuum "

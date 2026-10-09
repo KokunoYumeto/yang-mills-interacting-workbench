@@ -235,3 +235,21 @@ the j^6 scale. Actual first and second energy-moment bounds retain every
 word occurrence, coupling, colour and boundary contribution. Calculating
 the actual four-loop growth and closing odd energy remains active work
 towards the full interacting continuum state.
+
+## Actual phase limits and variational space, 9 October 2026
+
+The [complete PK177a–PK206 proof](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) evaluates every original
+chord-face weight and the resulting actual fourth-moment bound. An exact
+two-link configuration identifies the nonlinear reflection defect.
+At each finite regulator the actual large-amplitude raw mass tends to
+1/4, while the opposite iterated weak-coupling limit is 1/2. The actual
+energy moments and high-energy escape are proved, including an amplitude
+sequence on the unchanged regulator path.
+
+The next state space is constructed through the actual joint phase
+measure. Its exact physical isometry, closed energy form, full residual
+interaction and convergent finite variational matrices retain the
+original vacuum and all mixed terms. Their actual low-energy path
+estimates are the next calculation toward the full continuum endpoint.
+
+The same phase construction now has [proved full rank, an actual phase density, positive finite matrices and a complete distributional boundary identity](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md). These are exact finite-regulator results; their original-path coefficients remain to calculate.
