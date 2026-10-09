@@ -1,10 +1,11 @@
 \documentclass[11pt]{article}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{amsmath,amssymb,mathrsfs,booktabs,hyperref}
-\usepackage[margin=23mm]{geometry}
+\usepackage{iftex}
+\ifPDFTeX\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}\else\usepackage{fontspec}\setmainfont{Latin Modern Roman}\fi
+\usepackage{amsmath,amssymb,mathrsfs,booktabs,graphicx,hyperref}
+\usepackage[margin=21.5mm]{geometry}
 \hypersetup{hidelinks,pdftitle={Yang--Mills: complete research proofs}}
+\allowdisplaybreaks
+\emergencystretch=3em
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 \begin{document}
@@ -803,7 +804,7 @@ the imported analytical existence theorem. The full local estimates,
 source application, connecting maps and all new arguments are written
 above.
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/COMPACT_CAUCHY_EVOLUTION.png}\caption{The support cones and the gauge-invariant core bound}\end{figure}
 
 Figure: Proposition 3.1 and Corollary 3.2 retain the expanding support
 bound and the exact inner diamond. The right panel renders the ODE

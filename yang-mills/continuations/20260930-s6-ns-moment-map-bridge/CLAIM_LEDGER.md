@@ -541,3 +541,33 @@ ledgers, current programmes, reading paths, dated bulletin and future YM-08
 provider updated. Delivered YM-01–YM-03 have no dependent spectral assertion.
 
 Complete proofs: [PK132–PK157](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+## S6NS-20261009-006 — full chord contractions and the actual fourth-moment scale
+
+Original pending calculation: PK157 asks for the global observable's
+actual raw norm and energy moments along the unchanged regulator path.
+PK158–PK162 derive the exact original chord coefficients, full three-row
+Gram matrix, coincident contraction and absolute sums. No tree edge is
+removed from a holonomy word by this coefficient calculation.
+
+PK163–PK171 prove the entire Haar fourth contraction, including the
+negative coincident-index correction, and the exact four-loop expression
+in the actual interacting vacuum. PK168 bounds actual raw norm by the
+actual fourth moment times beta^2. On the original path, beta^-2 is
+asymptotic to kappa_*^2 j^6/(5000 pi^2). This is a proved receiving
+inequality, not a proof of the needed growth in the actual vacuum.
+The Haar fourth moment tends to 3/2 and cannot be substituted into it.
+
+PK172–PK177 supply full word-occurrence derivative bounds and actual
+first/second energy-moment bounds at all positive couplings. The retained
+score constant xi=1/(4g^4) grows on the prescribed path; the current
+upper bounds do not establish a closing actual gap.
+
+Propagation: full proof, source and claim ledgers, programmes, bulletin,
+reading paths, inspected figure and cumulative TeX updated. Future YM-08
+receives these proved estimates; delivered YM-01–YM-03 are unaffected.
+Next calculate the actual four-loop combination and gradient-weighted
+expectations. Reconstruction, the intended theory and the continuum
+contradiction remain the goal.
+
+Complete proofs: [PK158–PK177](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).

@@ -1,0 +1,72 @@
+{
+  "all_passed": true,
+  "checks": {
+    "complete chord count m=2": true,
+    "exact full chord Gram m=2 0,0": true,
+    "exact full chord Gram m=2 0,1": true,
+    "exact full chord Gram m=2 0,2": true,
+    "exact full chord Gram m=2 1,1": true,
+    "exact full chord Gram m=2 1,2": true,
+    "exact full chord Gram m=2 2,2": true,
+    "coincident fourth contraction m=2": true,
+    "full absolute chord sum m=2 row=0": true,
+    "full absolute chord sum m=2 row=1": true,
+    "full absolute chord sum m=2 row=2": true,
+    "complete edge fourth sum m=2": true,
+    "complete chord count m=4": true,
+    "exact full chord Gram m=4 0,0": true,
+    "exact full chord Gram m=4 0,1": true,
+    "exact full chord Gram m=4 0,2": true,
+    "exact full chord Gram m=4 1,1": true,
+    "exact full chord Gram m=4 1,2": true,
+    "exact full chord Gram m=4 2,2": true,
+    "coincident fourth contraction m=4": true,
+    "full absolute chord sum m=4 row=0": true,
+    "full absolute chord sum m=4 row=1": true,
+    "full absolute chord sum m=4 row=2": true,
+    "complete edge fourth sum m=4": true,
+    "sphere full fourth diagonal": true,
+    "sphere full mixed fourth": true,
+    "global q fourth diagonal": true,
+    "global q fourth tensor": true,
+    "all ordered Haar fourth contractions including coincidences": true,
+    "full Haar fourth limiting value": true,
+    "full phase receiving dictionary": true,
+    "full phase on original path": true,
+    "original phase limit": true,
+    "Haar mass upper coefficient": true,
+    "actual fourth-moment receiving scale": true,
+    "full first derivative coarse constant": true,
+    "full second derivative coarse constant": true,
+    "all colours in first-moment bound": true,
+    "all curvature score and boundary-face contributions": true,
+    "all four physical word contributions": true
+  },
+  "check_count": 40,
+  "proof_sha256": "095fb82b20e7e0b45c7790bab66e81cc85a61dacc074276a5ad9dc6bf75d604f",
+  "larger_box_numerical_samples": [
+    {
+      "m": 6,
+      "chords": 540,
+      "maximum_absolute_gram_error": 3.469446951953614e-18
+    },
+    {
+      "m": 8,
+      "chords": 1216,
+      "maximum_absolute_gram_error": 7.771561172376096e-16
+    },
+    {
+      "m": 10,
+      "chords": 2300,
+      "maximum_absolute_gram_error": 1.2212453270876722e-15
+    },
+    {
+      "m": 14,
+      "chords": 6076,
+      "maximum_absolute_gram_error": 8.881784197001252e-16
+    }
+  ],
+  "numerical_samples_are_proofs": false,
+  "scope": "Exact chord sums and Haar contractions supplement complete written proofs; actual-vacuum inequalities retain their distinct measures and full original path.",
+  "independent_review": false
+}

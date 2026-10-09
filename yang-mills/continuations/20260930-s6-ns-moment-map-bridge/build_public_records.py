@@ -40,6 +40,7 @@ def main() -> None:
         "checks/PACKET_MOMENTS_ESCAPE_CHECK.json",
         "checks/ODD_VACUUM_OBSERVABLE_CHECK.json",
         "checks/JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json",
+        "checks/GLOBAL_FOUR_POINT_CHECK.json",
     ]:
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -77,7 +78,8 @@ def main() -> None:
             "full-packet returns, complete electric cutoff, vacuum interval, spectral-transform error, "
             "complete packet moments, fixed-heat spectral escape, interacting evolution, "
             "actual fixed-box odd support, full raw limiting spectral measure, higher-carrier receiving map, "
-            "proved original-path cutoff mass collapse and global group-coordinate observable with complete actual moments."
+            "proved original-path cutoff mass collapse and global group-coordinate observable with complete actual moments, exact global chord Gram/fourth contractions, "
+            "the actual four-loop receiving formula and all-coupling energy-moment bounds."
         ),
         "claim_boundary": (
             "Finite physical quantum vectors are constructed. No continuum "

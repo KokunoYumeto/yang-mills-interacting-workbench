@@ -1,11 +1,11 @@
 {
-  "schema": "proof-tex-source-fidelity-v1",
+  "schema": "proof-tex-source-fidelity-v2",
   "files": [
     {
       "source": "HIGHER_CARRIER_AND_EVOLUTION.md",
       "source_sha256": "06f4caec1045207673d21b4ab49c1e0115520f709396ab0a67fea0f63a073d3b",
       "tex": "HIGHER_CARRIER_AND_EVOLUTION.tex",
-      "tex_sha256": "86092dce72771b8c0303fdccb625c79cda7523c30fc5a3042163665653eb9c26",
+      "tex_sha256": "b2ee7d55a00161290c44402d3979fa1834b8992d11a5097af86513254426f197",
       "complete_math_blocks": 310,
       "all_preserved": true
     },
@@ -13,20 +13,20 @@
       "source": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.md",
       "source_sha256": "3d057dc1cf46b93e377ddcedd41f52274049c2770b266657f278a89255bd784b",
       "tex": "COMPACT_SUPPORT_CAUCHY_EVOLUTION.tex",
-      "tex_sha256": "c346b54984d2a4ef4f2e85381ad0ebc892bc7b63e74c5d92e656986087681ca2",
+      "tex_sha256": "ecd804f5eb4ead75c9bf9e294902ce45046a879d1a5b7d8fb0fdf2eddbc6a0da",
       "complete_math_blocks": 272,
       "all_preserved": true
     },
     {
       "source": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md",
-      "source_sha256": "2a270ddffee98586d92c182c65098b33314cd83aa7ec113fde4bf871ffa621d8",
+      "source_sha256": "095fb82b20e7e0b45c7790bab66e81cc85a61dacc074276a5ad9dc6bf75d604f",
       "tex": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex",
-      "tex_sha256": "157473a4dc32c621c3570779997783f3f6b2c6b7e01a0a3d1172f667efd758fe",
-      "complete_math_blocks": 1344,
+      "tex_sha256": "1a2c6698b2c003867e557a52bc863fcc5ddde971f437ac4d98a912ead1939165",
+      "complete_math_blocks": 1485,
       "all_preserved": true
     }
   ],
   "portable_rebuild_byte_identical": true,
-  "compiler_result": "Unverified; permission-profile failure during environment setup before source compilation on 9 October",
-  "scope": "Complete math-block equality and deterministic rebuild; no successful PDF compilation claimed"
+  "compiler_result": "Period/physical-kernel source compiled with XeLaTeX; its 53-page PDF rendered and inspected.",
+  "scope": "Complete math-block equality for all three standalone sources; PDF compilation confirmed only for PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex."
 }

@@ -288,3 +288,19 @@ with its exact original zero subbundle, and has the earlier fixed-box
 spectral limit. Complete ordered word derivatives and actual-vacuum
 moments are calculated. Its joint-path mass and energy remain the next
 estimates; the full interacting continuum endpoint is still the target.
+
+## Global fourth moment and energy estimates, 9 October 2026
+
+The [complete PK158–PK177 proof](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) evaluates the original
+chord Gram matrix and full Haar fourth moment, and gives the exact
+four-loop formula in the actual vacuum. The original raw norm is bounded
+by the actual fourth moment times the squared phase. On the unchanged
+path, retaining positive limiting raw weight requires growth on at least
+the j^6 scale. Actual first and second energy-moment bounds retain every
+word occurrence, coupling, colour and boundary contribution. Calculating
+the actual four-loop growth and closing odd energy remains active work
+towards the full interacting continuum state.
+
+## Complete period-kernel PDF reader
+
+The [53-page illustrated proof reader](PERIOD_COUPLING_AND_PHYSICAL_KERNELS.pdf) contains the complete PK1–PK177 arguments, seven reproducible figures and source citations. Its [TeX source](PERIOD_COUPLING_AND_PHYSICAL_KERNELS.tex) preserves every complete mathematical block from the Markdown proof. Compilation and rendered-page inspection are recorded in the [reader validation](PERIOD_PHYSICAL_TEX_COMPILE_STATUS.json). The 435 exact checks supplement the written proofs.

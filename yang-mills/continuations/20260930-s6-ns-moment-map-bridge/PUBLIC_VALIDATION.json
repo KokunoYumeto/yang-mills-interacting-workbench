@@ -1,7 +1,7 @@
 {
   "schema": "s6-ns-moment-map-public-validation-v1",
   "date": "2026-10-09",
-  "result_scope": "Corrected global classical bundle morphism, its fibrewise rank data, the interacting core, its exact nonzero static source, the higher-carrier pullback, full parameter connection, Gauss-preserving correction, and global source-free homogeneous core evolution; exact application of Oh’s global theorem to the original compact-support data; complete proofs of propagation, energy-zero set, parameter dependence, bundle descent, dilation and link holonomies; full cusp coupling, physical finite-lattice vectors, exact Gram and Hamiltonian kernels, corrected same-coupling path, first electric layer, complete interacting return, exact second complementary moment, cube contributions, nonzero next map, stronger resolvent bound, full-packet returns, complete electric cutoff, vacuum interval, spectral-transform error, complete packet moments, fixed-heat spectral escape, interacting evolution, actual fixed-box odd support, full raw limiting spectral measure, higher-carrier receiving map, proved original-path cutoff mass collapse and global group-coordinate observable with complete actual moments.",
+  "result_scope": "Corrected global classical bundle morphism, its fibrewise rank data, the interacting core, its exact nonzero static source, the higher-carrier pullback, full parameter connection, Gauss-preserving correction, and global source-free homogeneous core evolution; exact application of Oh’s global theorem to the original compact-support data; complete proofs of propagation, energy-zero set, parameter dependence, bundle descent, dilation and link holonomies; full cusp coupling, physical finite-lattice vectors, exact Gram and Hamiltonian kernels, corrected same-coupling path, first electric layer, complete interacting return, exact second complementary moment, cube contributions, nonzero next map, stronger resolvent bound, full-packet returns, complete electric cutoff, vacuum interval, spectral-transform error, complete packet moments, fixed-heat spectral escape, interacting evolution, actual fixed-box odd support, full raw limiting spectral measure, higher-carrier receiving map, proved original-path cutoff mass collapse and global group-coordinate observable with complete actual moments, exact global chord Gram/fourth contractions, the actual four-loop receiving formula and all-coupling energy-moment bounds.",
   "claim_boundary": "Finite physical quantum vectors are constructed. No continuum reconstruction, gapless spectrum, or mass-gap contradiction is established.",
   "analytical_input": {
     "author": "Sung-Jin Oh",
@@ -43,39 +43,45 @@
     },
     {
       "path": "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json",
-      "sha256": "107f66a4a7e0744214c562c1b46d688046bae0a1f5e37082019142fa87136e63",
+      "sha256": "7dd132105af9d59a29933016810d651de77b0d2426823ddc832bf0987de0a302",
       "all_passed": true,
       "recorded_boolean_checks": 60
     },
     {
       "path": "checks/COMPLEMENTARY_SECOND_MOMENT_CHECK.json",
-      "sha256": "36adb78f3bd56a3864b87003905c328b63f9e4469c14bdbb0b020a573ec28d75",
+      "sha256": "96937f2e5062d0a2e335bcd3c83e59dc76d4f73e558effa6214309a34d656069",
       "all_passed": true,
       "recorded_boolean_checks": 43
     },
     {
       "path": "checks/FULL_PACKET_RESOLVENT_CHECK.json",
-      "sha256": "689788b770b13a16595b0d75db04688d0f88a8484bef187c5e3422fdf8d7af13",
+      "sha256": "4f215d040f14fce17841ca6dfac2c7a9894d60c6b19693c0ad23fd78a3a9d9a7",
       "all_passed": true,
       "recorded_boolean_checks": 39
     },
     {
       "path": "checks/PACKET_MOMENTS_ESCAPE_CHECK.json",
-      "sha256": "a8bbdde6eabf26957cf6df543f3fef8d3e9c1bdbcf9c66795bed148c3cd523da",
+      "sha256": "f4ea5354ab5b246b222b721f2b891ec32acc56301b82183567f633eb7123a743",
       "all_passed": true,
       "recorded_boolean_checks": 62
     },
     {
       "path": "checks/ODD_VACUUM_OBSERVABLE_CHECK.json",
-      "sha256": "88461b5126a3bdfdb068d42bf844288fd9bf169decfa227578360cfd574921f0",
+      "sha256": "7f5e443e3e2d16c6c0095f56625134f796024e110a985996b8620ee63b47a457",
       "all_passed": true,
       "recorded_boolean_checks": 109
     },
     {
       "path": "checks/JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json",
-      "sha256": "49f917b564bb7e3b54d703d1455293bccd80437282145f6ada5d78afb26d543c",
+      "sha256": "235ed25d2e42d257f364ac6685ad9538706768291a6ffb4146f72e4e717b1ec5",
       "all_passed": true,
       "recorded_boolean_checks": 82
+    },
+    {
+      "path": "checks/GLOBAL_FOUR_POINT_CHECK.json",
+      "sha256": "4408ba64f59c905b02e6e5009d89011e6d3839658a2e622be43daa1a83b27d09",
+      "all_passed": true,
+      "recorded_boolean_checks": 40
     }
   ],
   "all_symbolic_receipts_passed": true,

@@ -305,6 +305,33 @@
       "strengthens": [
         "SZ-20261009-014"
       ]
+    },
+    {
+      "result_id": "SZ-20261009-016",
+      "statement": "The first three original transverse-cochain rows on the full chord sets have an exact Gram matrix, coincident fourth contraction and absolute row sums, retaining every tree exclusion and boundary term.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK158–PK162",
+      "scope": "Original tree, physical coordinates and all original cochain signs; complete formulas for every L>=2.",
+      "strengthens": [
+        "SZ-20261009-014"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-017",
+      "statement": "The global observable has a complete Haar fourth moment and an exact actual-vacuum four-loop expression. Its raw norm is bounded by its actual fourth moment times the original squared phase; on the prescribed path nonvanishing raw weight requires fourth-moment growth on at least the j^6 scale.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK163–PK171",
+      "scope": "All coincident indices retained. Haar and actual vacuum measures remain distinct; actual growth has not been proved.",
+      "strengthens": [
+        "SZ-20261009-015"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-018",
+      "statement": "Complete original-word derivative sums and the retained all-coupling vacuum-score estimate give finite explicit bounds for both actual first and second energy moments of the global odd observable.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK172–PK177",
+      "scope": "Every finite original regulator, positive coupling and amplitude; all inverse occurrences, colour factors and boundary-face counts retained. No closing-gap conclusion.",
+      "strengthens": [
+        "SZ-20261009-015"
+      ]
     }
   ],
   "defined_spaces": {
@@ -460,7 +487,15 @@
     "figures/joint_path_figure.py",
     "figures/JOINT_PATH_GLOBAL_OBSERVABLE.png",
     "figures/JOINT_PATH_GLOBAL_OBSERVABLE.svg",
-    "figures/JOINT_PATH_FIGURE_CHECK.json"
+    "figures/JOINT_PATH_FIGURE_CHECK.json",
+    "checks/verify_global_moments.py",
+    "checks/GLOBAL_FOUR_POINT_CHECK.json",
+    "checks/GLOBAL_MOMENTS_SOURCE_BINDINGS.json",
+    "figures/global_moments_figure.py",
+    "figures/GLOBAL_FOUR_POINT_ESTIMATES.png",
+    "figures/GLOBAL_FOUR_POINT_ESTIMATES.svg",
+    "figures/GLOBAL_MOMENTS_FIGURE_CHECK.json",
+    "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.pdf"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -500,8 +535,11 @@
     "SZ-20261009-012",
     "SZ-20261009-013",
     "SZ-20261009-014",
-    "SZ-20261009-015"
+    "SZ-20261009-015",
+    "SZ-20261009-016",
+    "SZ-20261009-017",
+    "SZ-20261009-018"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "PK1–PK157: actual cutoff raw-mass collapse on the original path; global group-coordinate replacement nonzero at all finite regulators, complete derivatives/moments; its joint-path estimate and continuum endpoint unfinished."
+  "current_finite_state_boundary": "PK1–PK177: exact global chord Gram/fourth moments and all-coupling actual energy bounds; actual joint-path four-loop growth and full continuum endpoint unfinished."
 }

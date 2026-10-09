@@ -36,6 +36,10 @@ def convert(text):
         mathblocks.append(match.group())
         return '@@DISPLAY'+str(len(mathblocks)-1)+'@@'
     text = re.sub(r'(?s)\\\[.*?\\\]|\\\(.*?\\\)',keep,text)
+    # A link may span several Markdown lines. Rejoin its prose before
+    # line-based layout; the saved math blocks remain byte-identical.
+    text = re.sub(r'(?s)(!?\[[^\]]*\]\([^)]+\))',
+                  lambda match: ' '.join(match.group().splitlines()),text)
     out = []; table = False
     for line in text.splitlines():
         if line.startswith('|'):
@@ -49,13 +53,20 @@ def convert(text):
             out.append(r'\bottomrule\end{tabular}\end{center}')
             table = False
         if line.startswith('!['):
-            out.append(r'\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}')
+            figure = re.fullmatch(r'!\[([^\]]*)\]\(([^)]+)\)',line)
+            if figure is None: raise ValueError("Unparsed figure: "+line)
+            out.append(r'\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{'
+                       +figure.group(2)+r'}\caption{'+inline(figure.group(1))+r'}\end{figure}')
         elif line.startswith('## '):
             out.append(r'\subsection*{'+escape(line[3:])+'}')
         elif line.startswith('# '):
             out.append(r'\section*{'+escape(line[2:])+'}')
         elif re.fullmatch(r'@@DISPLAY\d+@@',line):
-            out.append(mathblocks[int(line[9:-2])])
+            block = mathblocks[int(line[9:-2])]
+            if re.search(r'\\tag\{(?:PK25|PK132|PK158)\}',block):
+                out.append(r'\begingroup\footnotesize'+'\n'+block+'\n'+r'\endgroup')
+            else:
+                out.append(block)
         else:
             line = re.sub(r'\*\*([^*]*)\*\*',r'\1',line)
             out.append(inline(line))
@@ -66,7 +77,7 @@ def convert(text):
 
 ROOT=Path(__file__).resolve().parent
 source_base_url="https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/"
-HEADER='\\documentclass[11pt]{article}\n\\usepackage[T1]{fontenc}\n\\usepackage[utf8]{inputenc}\n\\usepackage{lmodern}\n\\usepackage{amsmath,amssymb,mathrsfs,booktabs,hyperref}\n\\usepackage[margin=23mm]{geometry}\n\\hypersetup{hidelinks,pdftitle={Yang--Mills: complete research proofs}}\n\\setlength{\\parindent}{0pt}\n\\setlength{\\parskip}{6pt}\n\\begin{document}\n'
+HEADER='\\documentclass[11pt]{article}\n\\usepackage{iftex}\n\\ifPDFTeX\\usepackage[T1]{fontenc}\\usepackage[utf8]{inputenc}\\usepackage{lmodern}\\else\\usepackage{fontspec}\\setmainfont{Latin Modern Roman}\\fi\n\\usepackage{amsmath,amssymb,mathrsfs,booktabs,graphicx,hyperref}\n\\usepackage[margin=21.5mm]{geometry}\n\\hypersetup{hidelinks,pdftitle={Yang--Mills: complete research proofs}}\n\\allowdisplaybreaks\n\\emergencystretch=3em\n\\setlength{\\parindent}{0pt}\n\\setlength{\\parskip}{6pt}\n\\begin{document}\n'
 for name in ["HIGHER_CARRIER_AND_EVOLUTION","COMPACT_SUPPORT_CAUCHY_EVOLUTION","PERIOD_COUPLING_AND_PHYSICAL_KERNELS"]:
     source=(ROOT/(name+".md")).read_text(encoding="utf-8")
     body=convert(source)

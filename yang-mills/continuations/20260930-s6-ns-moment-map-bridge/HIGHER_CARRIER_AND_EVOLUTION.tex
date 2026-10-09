@@ -1,10 +1,11 @@
 \documentclass[11pt]{article}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{amsmath,amssymb,mathrsfs,booktabs,hyperref}
-\usepackage[margin=23mm]{geometry}
+\usepackage{iftex}
+\ifPDFTeX\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}\else\usepackage{fontspec}\setmainfont{Latin Modern Roman}\fi
+\usepackage{amsmath,amssymb,mathrsfs,booktabs,graphicx,hyperref}
+\usepackage[margin=21.5mm]{geometry}
 \hypersetup{hidelinks,pdftitle={Yang--Mills: complete research proofs}}
+\allowdisplaybreaks
+\emergencystretch=3em
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 \begin{document}
@@ -692,7 +693,7 @@ identities, the energy cancellation, all equal-colour coefficients, and
 the original curvature/trace factors. These checks support the algebra;
 the bundle and ODE existence proofs are the arguments above.
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/HIGHER_CARRIER_EVOLUTION.png}\caption{Higher carrier and exact source evolution}\end{figure}
 
 Figure: the pullback square of Theorem 2.1 and the exact equal-colour
 solution of (HC25)–(HC27). The plotted curve is a numerical rendering of

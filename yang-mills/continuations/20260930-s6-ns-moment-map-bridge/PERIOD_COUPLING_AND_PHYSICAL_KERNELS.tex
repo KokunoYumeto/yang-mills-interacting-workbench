@@ -1,23 +1,25 @@
 \documentclass[11pt]{article}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{amsmath,amssymb,mathrsfs,booktabs,hyperref}
-\usepackage[margin=23mm]{geometry}
+\usepackage{iftex}
+\ifPDFTeX\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}\else\usepackage{fontspec}\setmainfont{Latin Modern Roman}\fi
+\usepackage{amsmath,amssymb,mathrsfs,booktabs,graphicx,hyperref}
+\usepackage[margin=21.5mm]{geometry}
 \hypersetup{hidelinks,pdftitle={Yang--Mills: complete research proofs}}
+\allowdisplaybreaks
+\emergencystretch=3em
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 \begin{document}
 \section*{Full cusp coupling and physical kernels of the classical holonomy family}
 
-Reviewed edition, 9 October 2026: complete PK1–PK157 proofs,
-including PK109a, PK141a and PK143a, and 395 exact checks.
+Reviewed edition, 9 October 2026: complete PK1–PK177 proofs,
+including PK109a, PK141a and PK143a, and 435 exact checks.
 The chart-supported odd observable loses its entire raw spectral mass
-on the original simultaneous path. A global smooth group-coordinate
-replacement is constructed and proved nonzero at every finite regulator.
-Its full word derivatives and actual-vacuum moments are calculated.
-Its joint-path estimates and the interacting continuum endpoint remain
-active research.
+on the original simultaneous path. Its global smooth group-coordinate
+replacement is nonzero at every finite regulator. Its original chord
+Gram matrix, complete Haar fourth moment, actual four-loop receiving
+formula and both actual energy-moment bounds are proved.
+Its joint-path vacuum moment and the interacting continuum endpoint
+remain active research.
 
 30 September 2026. This note constructs the full angular cusp pullback of
 the retained bundle and its actual classical solution family. It then maps
@@ -28,7 +30,7 @@ Sections 8–9 fix a joint path and compute its first electric projection and
 the exact interacting return through the complementary space.
 No continuum spectral conclusion is claimed here.
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/PERIOD_PHYSICAL_KERNELS.png}\caption{Actual fields, reflected core cubes and the complete interacting return}\end{figure}
 
 *The coordinate drawing is a schematic projection of the original core and its
 reflection at \(s=0\). It retains both cubes and their complete face count.
@@ -385,6 +387,7 @@ Put
 where each Haar measure has total mass one. For \(T_a=-i\sigma_a/2\),
 let \(X_{e,a}\) differentiate \(U_e\mapsto e^{tT_a}U_e\). The complete
 Hamiltonian is
+\begingroup\footnotesize
 \[
  H=\kappa\sum_e E_e+b\sum_p(2-W_p),\quad
  E_e=-\sum_aX_{e,a}^2,\quad \kappa=\frac{2g^2}{a},\quad
@@ -392,6 +395,7 @@ Hamiltonian is
  (U_i(n)U_j(n+e_i)U_i(n+e_j)^{-1}U_j(n)^{-1}).
  \tag{PK25}
 \]
+\endgroup
 Its domains are \(H^2(Q_L)\) and form domain \(H^1(Q_L)\), because
 the potential is smooth and \(0\le V\le4bM_L\). The physical Hilbert
 space is the range of the orthogonal Haar projection
@@ -1528,7 +1532,7 @@ quantity (PK44); neither a shrinking classical energy nor these finite
 moments replace that calculation.
 
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/COMPLEMENTARY_SECOND_MOMENT.png}\caption{Original cube integration and the complete next return}\end{figure}
 
 The figure shows the coordinate projection of an actual side-a lattice cube, the two shared-link electric sectors, and the exact composition T=Q2 B C. Complete proofs and all factors are PK55–PK62. Its \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/complementary_moment_figure.py}{reproducible source} retains the original operators. The finite Haar calculation is derived here; no novelty claim is made for character integration or Schur inversion.
 
@@ -1966,8 +1970,7 @@ It is a calculation at these stated box and coupling parameters,
 not an evaluation at the much larger cutoffs (PK72).
 
 The block-inversion method is classical; compare Geneviève Dusson,
-Israel Michael Sigal and Benjamin Stamm, [The Feshbach–Schur map and
-perturbation theory, arXiv:2105.02058v1](https://arxiv.org/abs/2105.02058v1),
+Israel Michael Sigal and Benjamin Stamm, \href{https://arxiv.org/abs/2105.02058v1}{The Feshbach–Schur map and perturbation theory, arXiv:2105.02058v1},
 original TeX labels thm:isospF, Fesh, QP and Ulam-def.
 The original source was read at lines 398–473. Its complementary
 inverse and reconstruction map agree with the block equations above
@@ -1977,7 +1980,7 @@ are proved above for the actual lattice operators. No perturbative
 smallness hypothesis or novelty of Schur inversion is asserted.
 
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/FULL_PACKET_RESOLVENT.png}\caption{Every packet component, all three error terms, and the actual smallest-box vacuum interval}\end{figure}
 
 The diagram retains the exact maps in PK63–PK64 and the three contributions in PK71. Its numerical endpoints illustrate the exact radicals PK77; the displayed 33 is the odd cutoff eigenvalue in PK78. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/full_packet_resolvent_figure.py}{Reproducible figure source}.
 
@@ -2407,7 +2410,7 @@ The fixed-\(t_*\) escape theorem requires this new analysis; it does
 not answer it or close the research programme.
 
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/PACKET_ESCAPE.png}\caption{Original edge-disjoint faces and the full packet escape estimate}\end{figure}
 
 The coordinate diagram shows one exact lattice layer and its physical-coordinate map. The curve is the PK96 bound, using the specified PK49 constant and the PK70 upper bound for the heat value. It is an estimate, not sampled eigenvalues. Complete proofs are PK79–PK100. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/packet_escape_figure.py}{Reproducible figure source}.
 
@@ -2433,8 +2436,7 @@ literature audit do not mean that an external PDF was read again here.
 Their fixed \(L,a\) quantifiers remain in every use below.
 
 There is also a provenance correction to (PK84)–(PK88). The same vacuum
-upper bound was proved in [spatial-continuum Section 12, equations
-(93)–(99)](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym\_spatial\_continuum\_astra\_20260908/spatial\_continuum.md\#L1214).
+upper bound was proved in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/c4a1fd2e34a5d75a5a1b04df4d097f992c345cc7/yang-mills/sources/ym_spatial_continuum_astra_20260908/spatial_continuum.md#L1214}{spatial-continuum Section 12, equations (93)–(99)}.
 For its parameter \(t_{\rm WC}\), one-link integral \(Z_t^{\rm WC}\) and
 product trial \(F_{t_{\rm WC}}\), the exact comparison is
 \[
@@ -2997,7 +2999,7 @@ intended theory identification remain to be constructed.
 Subsequent joint-path calculation: PK137–PK142 below prove that this chart-supported family's raw total mass and first weight tend to zero on the prescribed path. PK143–PK157 construct and calculate a different global observable. The preceding fixed-box theorems retain their exact quantifiers.
 
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/ODD_OBSERVABLE.png}\caption{Exact reflection signs, raw spectral weights and the higher-carrier receiving map}\end{figure}
 
 The mode labels identify the cochains specifying each coordinate; they do not equate cochains with coordinates. The plot shows the exact first twelve atoms from PK125, with the full tail given by PK125–PK126. The actual fixed-box limits and the separate original joint path have their stated quantifiers. The parameter map keeps the full domain and explicitly factors through PK127. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/odd_observable_figure.py}{Reproducible figure source}.
 
@@ -3010,6 +3012,7 @@ uses the original operator, its positive vacuum, the Haar map PK104
 and the earlier vacuum upper bound PK88/PK101.
 
 Put \(m=2L\), and retain every boundary contribution:
+\begingroup\footnotesize
 \[
  N=3m(m+1)^2,\qquad M=3m^2(m+1),\qquad
  d=2m^3+3m^2,\qquad
@@ -3017,6 +3020,7 @@ Put \(m=2L\), and retain every boundary contribution:
  \kappa=\frac{2g^2}{a},\quad b=\frac1{2g^2a}.
  \tag{PK132}
 \]
+\endgroup
 Here \(N\) is the number of links, \(M\) the number of faces, and
 \(d\) the number of chords. The actual positive unit vacuum is
 \(\psi\), with energy \(E_0\); write \(d\mu=\psi^2dU\).
@@ -3446,8 +3450,7 @@ For the middle equality, expand
 \(-\int F\psi^2X^2F=\int\psi^2(XF)^2+
 2\int F\psi(X\psi)XF\) for each field. The second term cancels
 the displayed drift term in PK154. This is the exact ground-state
-transform already used in [the retained local-energy proof, equation
-(1.3)](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/713a0e145a1b17e81b4cd9f53c703a6a8b756610/yang-mills/sources/ym\_gap\_primary\_20260908/local\_energy\_current\_true\_vacuum.md\#L64),
+transform already used in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/713a0e145a1b17e81b4cd9f53c703a6a8b756610/yang-mills/sources/ym_gap_primary_20260908/local_energy_current_true_vacuum.md#L64}{the retained local-energy proof, equation (1.3)},
 here applied to the complete new global observable with all its derivatives.
 It is not a new general transform theorem.
 
@@ -3492,9 +3495,383 @@ The former cutoff cannot be reused as a source of nonzero raw limiting
 mass: PK142 has settled that calculation.
 
 
-\textit{The reproducible figure and inspected rendering are retained with the corresponding Markdown proof.}
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/JOINT_PATH_GLOBAL_OBSERVABLE.png}\caption{Actual joint-path support-mass bound and the global group-coordinate map}\end{figure}
 
 The left curve evaluates the full PK140 bound for the displayed member kappa\_*=1; PK141 proves the result for every fixed positive kappa\_*. The right curve is the exact PK144 coordinate on the original 4-pi-periodic group circle. This is a bound and an exact map, not sampled eigenvalues. The complete proofs and remaining global-state estimates are PK132–PK157. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/joint_path_figure.py}{Reproducible figure source}.
+
+\subsection*{9.24. Exact chord coefficients and their full Gram matrix}
+
+We apply the original-tree formula PK143a before estimating the global
+observable. Set \(m=2L\), \(n=m+1\), and
+\begingroup\footnotesize
+\[
+ h=\frac{\pi}{2n},\qquad c=\cos h,\qquad C=\cot h,\qquad
+ v_0(l)=n^{-1/2},\quad
+ v(l)=\sqrt{2/n}\cos\frac{\pi(l+1/2)}n,\quad
+ w(l)=-\sqrt{2/n}\sin\frac{\pi(l+1)}n .
+ \tag{PK158}
+\]
+\endgroup
+Vertex indices are \(l_i=n_i+L\in\{0,\ldots,m\}\); an edge in
+direction \(i\) has \(l_i<m\). These indices do not replace the
+original physical coordinates \(o+a(n_1,n_2,n_3)\).
+The root and parent rule in PK103 imply that the tree contains every
+direction-one edge, the direction-two edges with \(l_1=0\), and
+the direction-three edges with \(l_1=l_2=0\). Indeed each such edge
+is exactly the edge to the prescribed parent of its positive endpoint;
+each other edge fails that parent rule. Hence the complete chord sets are
+\[
+ \begin{split}
+ \mathcal C_2&=\{(l,2):1\le l_1\le m,\ 0\le l_2<m,\
+                                      0\le l_3\le m\},\\
+ \mathcal C_3&=\{(l,3):0\le l_1,l_2\le m,\ (l_1,l_2)\ne(0,0),\
+                                      0\le l_3<m\}.
+ \end{split}\tag{PK159}
+\]
+Their sizes \(m^2(m+1)\) and \(m[(m+1)^2-1]\) add to the original
+\(d=2m^3+3m^2\). No omitted tree edge is omitted from a chord word.
+
+Write \(a_c=\mathsf M_{1c}\), \(b_c=\mathsf M_{3c}\), and retain
+the second row \(\mathsf M_{2c}\) as well. PK106–PK108 and PK143a give
+\[
+ \begin{array}{c|ccc}
+ &\mathsf M_{1c}&\mathsf M_{2c}&\mathsf M_{3c}\\ \hline
+ c=(l,2)\in\mathcal C_2
+ &-v(l_1)w(l_2)v_0(l_3)/\sqrt2&0&
+                  v_0(l_1)w(l_2)v(l_3)/\sqrt2\\
+ c=(l,3)\in\mathcal C_3
+ &0&-v(l_1)v_0(l_2)w(l_3)/\sqrt2&
+                  -v_0(l_1)v(l_2)w(l_3)/\sqrt2 .
+ \end{array}\tag{PK160}
+\]
+All signs and endpoint exclusions are part of this formula.
+Let \(R_{\mu\nu}=\sum_c\mathsf M_{\mu c}\mathsf M_{\nu c}\).
+The full first-three-row Gram matrix and the contraction needed below are
+\[
+ R=
+ \begin{pmatrix}
+ \frac12-\frac{c^2}{n}&0&0\\
+ 0&\frac12-\frac{c^2}{n^2}&-\frac{c^2}{n^2}\\
+ 0&-\frac{c^2}{n^2}&1-\frac1{2n}-\frac{c^2}{n^2}
+ \end{pmatrix},\qquad
+ D_{13}:=\sum_ca_c^2b_c^2
+       =\frac{3}{8n^3}\left(1-\frac{2c^2}{n}\right).
+ \tag{PK161}
+\]
+Here is the complete summation. The orthonormal one-dimensional
+vectors satisfy
+\(\sum v^2=\sum w^2=1\), \(\sum v_0^2=1\), and
+\(\sum vv_0=0\). Also \(v(0)^2=2c^2/n\) and \(v_0(0)^2=1/n\).
+The first row has only its direction-two component, so its squared
+norm is \(\frac12(1-v(0)^2)\). The second row loses only the
+corner term from its direction-three component, giving
+\(\frac12(1-v(0)^2/n)\). The third row's direction-two component
+has squared norm \(\frac12(1-1/n)\), and its direction-three
+component has squared norm \(\frac12(1-v(0)^2/n)\).
+The first/second cross product vanishes because their directions differ.
+The first/third product contains the full factor \(\sum_{l_3}v_0v=0\).
+The second/third product on the full direction-three rectangle is zero;
+subtracting its excluded corner leaves \(-v(0)^2/(2n)\).
+These are precisely the six independent entries in PK161.
+
+For the fourth-order contraction only direction-two chords contribute.
+Its three separate factors are
+\[
+ \frac14\left[\frac{1-v(0)^2}{n}\right]
+       \left[\sum_{l=0}^{m-1}w(l)^4\right]\left[\frac1n\right].
+\]
+The finite geometric sums of \(e^{2\pi ir/n}\) and
+\(e^{4\pi ir/n}\), \(r=0,\ldots,n-1\), are zero because
+\(n=2L+1\ge5\). Inserting
+\(\sin^4 x=(3-4\cos2x+\cos4x)/8\) therefore gives
+\(\sum_{r=1}^{n-1}\sin^4(\pi r/n)=3n/8\) and
+\(\sum w^4=3/(2n)\). Substitution proves \(D_{13}\).
+
+The absolute row sums \(S_\mu=\sum_c|\mathsf M_{\mu c}|\)
+also have complete closed expressions:
+\[
+ \begin{split}
+ S_1&=\sqrt{\frac2n}\,C(C-c),\\
+ S_2&=\sqrt{\frac2n}\,C(C-c/n),\\
+ S_3&=\sqrt{\frac2n}
+              [(2-1/n)C^2-(c/n)C].
+ \end{split}\tag{PK162}
+\]
+To verify them, sum the positive sine values on the edges to obtain
+\(\sum|w|=\sqrt{2/n}\,C\). The vertex cosine has one central zero;
+its two equal absolute half-sums give
+\(\sum|v|=\sqrt{2/n}\,C\).
+For example, the first half-sum is
+\(\sum_{l=0}^{L-1}\cos[\pi(l+1/2)/n]
+=\sin(L\pi/n)/(2\sin h)=c/(2\sin h)\).
+The first row excludes the vertex \(l_1=0\) and thus subtracts
+\(\sqrt{2/n}\,c\) in that factor. The second row subtracts its
+single corner. The third row adds the direction-two contribution
+with \(n-1\) values of \(l_1\) and the direction-three contribution
+with its single excluded corner. Multiplying the displayed factors
+gives all three formulas in PK162.
+
+\subsection*{9.25. The complete fourth moment and the actual receiving inequality}
+
+Let
+\[
+ \mathcal S(U)=u_1(U)\cdot u_3(U)
+       =\sum_{c,d}a_cb_d\,q_c(U)\cdot q_d(U).
+ \tag{PK163}
+\]
+The original tree/Haar isomorphism makes the chord variables independent
+under Haar measure. This statement is only about Haar measure.
+The actual vacuum measure is still \(d\mu=\psi^2dU\).
+For one Haar chord, write
+\(Z=x_0I+2\sum_\alpha x_\alpha T_\alpha\),
+\(x_0^2+x_1^2+x_2^2+x_3^2=1\). Its measure is the invariant
+probability measure on that unit sphere, and \(q^\alpha=2x_\alpha\).
+Rotational invariance and sign symmetry give
+\[
+ \begin{split}
+ \mathbb E_\lambda q^\alpha&=0,\qquad
+ \mathbb E_\lambda q^\alpha q^\beta=\delta_{\alpha\beta},\\
+ \mathbb E_\lambda q^\alpha q^\beta q^\gamma q^\delta
+ &=\frac23(\delta_{\alpha\beta}\delta_{\gamma\delta}
+          +\delta_{\alpha\gamma}\delta_{\beta\delta}
+          +\delta_{\alpha\delta}\delta_{\beta\gamma}).
+ \end{split}\tag{PK164}
+\]
+For the coefficient in the last line, let
+\(A_4=\mathbb E x_1^4\) and \(B_4=\mathbb E x_1^2x_2^2\).
+Rotation of \(x_1\) to \((x_1+x_2)/\sqrt2\), and sign symmetry,
+give \(A_4=3B_4\). Squaring \(\sum_{i=0}^3x_i^2=1\) gives
+\(4A_4+12B_4=1\). Thus \(B_4=1/24,A_4=1/8\);
+the factor \(2^4\) in \(q\) yields PK164.
+
+For arbitrary real chord coefficients \(a_c,b_c\), put
+\(A_2=\sum a_c^2\), \(B_2=\sum b_c^2\),
+\(C_{12}=\sum a_cb_c\), \(D_{12}=\sum a_c^2b_c^2\).
+Independence between distinct chords and PK164 give
+\[
+ \mathbb E_\lambda\mathcal S=3C_{12},\qquad
+ \mathbb E_\lambda\mathcal S^2
+       =3A_2B_2+12C_{12}^2-5D_{12}.
+ \tag{PK165}
+\]
+To check every contraction, first use covariance pairing with coefficient
+one for each of the three Kronecker pairings. Summing the two colour
+indices gives \(3A_2B_2+(9+3)C_{12}^2\).
+When all four chord indices agree, their actual fourth moment has
+coefficient \(2/3\) instead of one. The necessary correction is
+\(-(1/3)(9+3+3)\sum a_c^2b_c^2=-5D_{12}\).
+Other coincidences with an unpaired index vanish by sign symmetry.
+This proves the formula without dropping coincident-chord terms.
+
+For the exact original rows PK160, PK161 gives \(C_{12}=0\).
+Their full Haar moment is
+\[
+ \mathcal H_m:=
+ \mathbb E_\lambda\mathcal S^2
+ =3\left(\frac12-\frac{c^2}{n}\right)
+       \left(1-\frac1{2n}-\frac{c^2}{n^2}\right)
+       -\frac{15}{8n^3}\left(1-\frac{2c^2}{n}\right)
+ \longrightarrow\frac32 .
+ \tag{PK166}
+\]
+Every scalar \(c=\cos[\pi/(2n)]\), endpoint and mixed term is retained.
+
+Now use the actual vacuum and the global observable PK145 with
+parameter \(A\ge0\). Define
+\[
+ \beta=\frac{A\sigma_*}{2g^2}
+       =\frac{A\delta_*}{2\kappa},\qquad
+ \mathcal Q_{4,L,a,g}=\int\mathcal S^2\psi^2\,dU .
+ \tag{PK167}
+\]
+The equality for \(\beta\) uses the original
+\(\delta_*=2\sigma_*/a\), \(\kappa=2g^2/a\).
+Reflection invariance of the actual vacuum and contraction of \(P_-\)
+give the unconditional actual estimate
+\[
+ 0<\widehat\Gamma_g^A
+   =\|P_-(\psi\sin(\beta\mathcal S))\|^2
+   \le\int\sin^2(\beta\mathcal S)\,d\mu
+   \le\beta^2\mathcal Q_{4,L,a,g}\quad(A>0).
+ \tag{PK168}
+\]
+The strict inequality is PK147; \(|\sin x|\le|x|\) proves the last one.
+Applying the same projection argument to Haar instead gives
+\(\|P_-\sin(\beta\mathcal S)\|_{L^2(\lambda)}^2\le\beta^2\mathcal H_m\).
+No Haar expectation is substituted into PK168.
+
+On the unchanged path PK139 with \(A=1\),
+\[
+ \begin{split}
+ \beta_j&=\frac{200\sqrt2\,j}{\kappa_*}
+                 \sin\frac{\pi}{4j^4+2},\\
+ j^3\beta_j&\longrightarrow\frac{50\sqrt2\pi}{\kappa_*},\qquad
+ j^6\beta_j^2\mathcal H_{2j^4}
+                      \longrightarrow\frac{7500\pi^2}{\kappa_*^2},\\
+ \mathcal Q_{4,j}&\ge
+       \frac{4\kappa_*^2}{\delta_{*,j}^2}\widehat\Gamma_{g_j}^{\,1}.
+ \end{split}\tag{PK169}
+\]
+These follow from \(\sin x/x\to1\), PK166 and PK168.
+The final inequality is for the actual interacting vacuum at every
+finite regulator. In particular the factor multiplying its raw norm
+grows asymptotically as \(\kappa_*^2j^6/(5000\pi^2)\).
+This identifies the actual fourth-moment quantity that must be
+calculated; the bounded Haar moment alone cannot supply it.
+
+The exact physical loop content of this fourth moment is also explicit:
+\[
+ B_{cd}:=q_c\cdot q_d
+       =2\operatorname{tr}(Z_cZ_d^{-1})
+                         -\operatorname{tr}Z_c\,\operatorname{tr}Z_d,
+ \qquad
+ \mathcal Q_4=\sum_{c,d,e,f}a_cb_da_eb_f\,\mu(B_{cd}B_{ef}).
+ \tag{PK170}
+\]
+Multiplying \(Z=x_0I+2x_\alpha T_\alpha\) and
+\(Z'^{-1}=x'_0I-2x'_\alpha T_\alpha\) proves the first identity,
+including \(c=d\). For full expansion put
+\(T_{cd}=\operatorname{tr}(Z_cZ_d^{-1})\), \(t_c=\operatorname{tr}Z_c\);
+then
+\[
+ \mu(B_{cd}B_{ef})
+ =4\mu(T_{cd}T_{ef})-2\mu(T_{cd}t_et_f)
+                    -2\mu(t_ct_dT_{ef})+\mu(t_ct_dt_et_f).
+ \tag{PK171}
+\]
+All four original word expectations, all ordered index tuples and
+their coincident cases remain. Simultaneous conjugation at the root
+fixes each trace, so these are actual physical vacuum observables.
+
+\subsection*{9.26. Original-word bounds for both actual energy moments}
+
+For an original link \(e\), let \(n_{ce}\) count its occurrences,
+with either orientation, in the full rooted word \(Z_c=t_sU_ct_t^{-1}\).
+Define the following complete nonnegative finite sums for \(\mu=1,3\):
+\[
+ \begin{split}
+ B_\mu&=2S_\mu,\qquad
+ D_{\mu e}=\sum_c|\mathsf M_{\mu c}|\,n_{ce},\qquad
+ J_{\mu e}=\frac12\sum_c|\mathsf M_{\mu c}|\,n_{ce}^2,\\
+ K_e&=B_3D_{1e}+B_1D_{3e},\\
+ Q_e&=B_3J_{1e}+2D_{1e}D_{3e}+B_1J_{3e}.
+ \end{split}\tag{PK172}
+\]
+The words contain each tree link at most twice, once in each simple
+root path, and their own chord once. Thus \(n_{ce}\le2\);
+this does not cancel a tree prefix or remove an occurrence from the sums.
+
+For each original generator \(X=X_{e,\alpha}\), PK151–PK152 give
+\[
+ |u_\mu|\le B_\mu,\quad
+ |Xu_\mu|\le D_{\mu e},\quad |X^2u_\mu|\le J_{\mu e},\quad
+ |X\mathcal S|\le K_e,\quad |X^2\mathcal S|\le Q_e .
+ \tag{PK173}
+\]
+Here every norm of a colour vector is Euclidean. To prove the derivative
+constants, note that \(2T_\alpha=-i\sigma_\alpha\) is itself in
+\(SU(2)\). A single differentiated occurrence in a word is therefore
+\(\pm1/2\) times an \(SU(2)\) matrix, after retaining all surrounding
+unitary factors. Its \(q\)-vector has norm at most one.
+A twice differentiated occurrence or a product of two first derivatives
+is \(\pm1/4\) times an \(SU(2)\) matrix and has \(q\)-vector norm at most
+\(1/2\). The full second derivative has
+\(n_{ce}+2\binom{n_{ce}}2=n_{ce}^2\) such contributions.
+Triangle inequalities prove the first three bounds; the complete
+product rule for \(u_1\cdot u_3\) proves the last two, with the
+displayed factor two retained.
+
+Use the previously proved all-positive-coupling score estimate
+\[
+ \|\nabla_e\log\psi\|_\infty\le2r_e\xi,\qquad
+ r_e=\#\{p:e\in\partial p\},\quad
+ \xi=\frac b\kappa=\frac1{4g^4}.
+ \tag{PK174}
+\]
+Its complete proof is the retained spatial-continuum Section 10.1,
+equations (77)–(78): on each radius-two \(SU(2)\) factor, the partial
+Bochner identity has curvature term \(+|\nabla_e\log\psi|^2\).
+At its maximum the nonnegative mixed-Hessian sum and
+\(|\nabla_eV|\le br_e\) give
+\(w_e-2r_e\xi\sqrt{w_e}\le0\), which is exactly PK174.
+The original radius, metric, all plaquettes and exterior variables
+remain those of PK132.
+
+Set
+\[
+ \mathcal C=3\sum_eK_e^2,\qquad
+ \mathcal D=3\sum_eQ_e+4\sqrt3\,\xi\sum_er_eK_e .
+ \tag{PK175}
+\]
+The three colour derivatives in PK173 give
+\(|\nabla_e\mathcal S|\le\sqrt3K_e\) and
+\(|H_0\mathcal S|\le3\sum_eQ_e\).
+Under multiplication by the actual \(\psi\), the excitation operator is
+\(\mathscr L=\kappa[H_0-2\nabla\log\psi\cdot\nabla]\).
+Consequently
+\[
+ |\mathscr L\mathcal S|\le\kappa\mathcal D,\qquad
+ \sum_{e,\alpha}|X_{e,\alpha}\mathcal S|^2\le\mathcal C.
+\]
+The original reflection commutes with \(\mathscr L\): this follows
+from its commutation with \(H\), its preservation of \(\psi\),
+and the exact multiplication intertwiner. Thus its odd projection
+contracts both the energy form and the norm of \(\mathscr L f\).
+One can see the form assertion directly from the decomposition
+into even and odd functions: reflection invariance makes their form
+cross term equal to its own negative.
+
+The complete chain rule is
+\[
+ \mathscr L\sin(\beta\mathcal S)
+ =\beta\cos(\beta\mathcal S)\mathscr L\mathcal S
+   +\kappa\beta^2\sin(\beta\mathcal S)
+                \sum_{e,\alpha}|X_{e,\alpha}\mathcal S|^2 .
+\]
+Combining it with PK155 gives actual, finite, all-coupling bounds
+\[
+ \begin{split}
+ 0<\widehat m_{1,g}^A&\le\kappa\beta^2\mathcal C,\\
+ 0<\widehat m_{2,g}^A&\le
+                \kappa^2(\beta\mathcal D+\beta^2\mathcal C)^2
+                       \qquad(A>0).
+ \end{split}\tag{PK176}
+\]
+The positivity follows from the nonzero odd vector and the
+nonnegative compact excitation operator with its single even
+zero eigenspace. These are bounds in the actual interacting vacuum;
+they use no approximation of its density by Haar or by a Gaussian.
+
+For a fully evaluated coarse bound, \(n_{ce}\le2\) gives
+\(D_{\mu e}\le2S_\mu\), \(J_{\mu e}\le2S_\mu\),
+\(K_e\le8S_1S_3\), \(Q_e\le16S_1S_3\).
+Each original face has exactly four links, including at the boundary,
+so \(\sum_er_e=4M\). Therefore
+\[
+ \mathcal C\le192N S_1^2S_3^2,\qquad
+ \mathcal D\le S_1S_3(48N+128\sqrt3\,\xi M).
+ \tag{PK177}
+\]
+PK162 makes these fully explicit trigonometric functions of the
+original box size. They also record why the local score bound cannot
+be read as a uniform bound along the prescribed weak-coupling path:
+\(\xi_j=10000j^2/\kappa_*^2\) still appears, and both \(N_j,M_j\)
+grow with all their boundary terms. The sharper sums PK172–PK175
+remain available; PK177 does not replace them.
+
+The next receiving calculation is the actual four-loop combination
+PK170–PK171, together with the corresponding gradient-weighted
+expectations in PK155. PK169 has determined its necessary scale
+relative to the unaltered raw norm. Its growth in the true vacuum
+has not been established. The current estimates do not imply a
+closing actual odd gap or nonvanishing limiting spectral weight.
+The full interacting continuum state and the lesson series remain
+the same programme objective.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{figures/GLOBAL_FOUR_POINT_ESTIMATES.png}\caption{Exact chord fourth moment and original-path actual-vacuum receiving scale}\end{figure}
+
+The left curve evaluates the complete Haar moment PK166. The right curve evaluates the exact coefficient in the actual-vacuum inequality PK169 for the displayed kappa\_*=1; PK169 retains every positive kappa\_*. Neither curve is an actual-vacuum sample or an energy eigenvalue. The complete proofs are PK158–PK177. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/figures/global_moments_figure.py}{Reproducible figure source}.
 
 \subsection*{10. Reproducibility and scope}
 
@@ -3522,4 +3899,6 @@ The packet-moment checker adds 62 exact checks for PK79–PK100: noncommuting sq
 The odd-observable checker adds 109 exact checks for PK101–PK131, including every sign character, Gaussian factor and radial coefficient tested. The infinite sums, actual operator limits and full higher-domain map have their written proofs in Sections 9.14–9.19. Finite checks do not certify a volume-uniform or continuum limit.
 
 The joint-path checker adds 82 exact checks for PK132–PK157: complete heat/Haar constants, original path and graph counts, SU(2) trace signs, repeated inverse-word derivatives and the full actual ground-state product rule. The operator inequalities and asymptotic collapse are proved in Sections 9.20–9.23; finite checks are not substituted for them.
+
+The global-moment checker adds 40 exact checks for PK158–PK177, including all chord exclusions, coincident fourth-moment contractions, the original phase scale and the complete energy-bound constants. Four larger-box numerical samples are recorded separately and are not proofs. Sections 9.24–9.26 contain the full arguments.
 \end{document}
