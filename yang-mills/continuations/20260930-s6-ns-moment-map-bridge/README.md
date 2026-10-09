@@ -273,3 +273,18 @@ The original simultaneous path still needs estimates for its actual
 odd energy and raw weights. The full continuum construction remains
 the research target. The earlier vacuum upper bound is now linked
 to its retained spatial-continuum proof with an exact parameter map.
+
+## Joint-path raw mass and global replacement, 9 October 2026
+
+The [complete PK132–PK157 proof](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md) settles the original
+chart-supported odd observable's raw mass as zero along the prescribed
+joint path. The result uses the actual vacuum and retains the complete
+Haar dimension, graph counts and coupling factors. It extends to a
+precisely defined class of growing chart supports.
+
+A global smooth group-coordinate observable is then constructed. It is
+nonzero at every finite regulator, retains the full higher-carrier domain
+with its exact original zero subbundle, and has the earlier fixed-box
+spectral limit. Complete ordered word derivatives and actual-vacuum
+moments are calculated. Its joint-path mass and energy remain the next
+estimates; the full interacting continuum endpoint is still the target.

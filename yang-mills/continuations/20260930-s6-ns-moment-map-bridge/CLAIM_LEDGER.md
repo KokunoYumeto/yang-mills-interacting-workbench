@@ -507,3 +507,37 @@ correction. Actual continuum reconstruction and theory identification,
 YM-04 analytical prerequisites, and J5 third return remain unfinished.
 
 Complete proofs: [PK101–PK131](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).
+
+## S6NS-20261009-005 — the cutoff collapses and the global map continues
+
+Original pending calculation: PK131 asks whether the fixed-box odd-vacuum
+observable retains raw mass and first weight along the original joint path.
+PK132–PK142 settle both as zero for this chart-supported family. The exact
+operator bound retains N links, d chords, all Haar constants, the original
+Casimir shift and every boundary term. Its logarithmic exponent is at most
+-63/4 after division by d_j log j for fixed chord radius. The supported
+observable space, its exact receiving projection and its norm bound are
+given in PK141a. Radius growth below j^(21/4) has the same vanishing result.
+This does not change the fixed-box limits PK120 and PK129, nor exclude
+other states. Interacting semigroup contraction cannot restore this raw mass.
+
+The next construction PK143–PK150 uses exact smooth group trace coordinates
+on every original chord, with no logarithm-chart support restriction.
+Its original transverse-cochain coefficients are proved in PK143a.
+Its finite-regulator norm is positive at every positive coupling and
+parameter amplitude, and its higher-carrier zero set is exactly the original
+rank-12 subbundle. The same Taylor proof strengthens the earlier cutoff
+map's finite-regulator nonzero statement, even though its path mass vanishes.
+
+PK151–PK157 calculate the complete ordered derivatives and actual moments.
+The ground-state transform is an earlier programme result, with its full
+new application proved here. The new global family's joint-path norm,
+energy and spectral measure remain to estimate; finite positivity does
+not assert positive limiting weight. Continuum reconstruction and intended
+theory identification remain unfinished.
+
+Propagation: full proof, cumulative and standalone TeX, source and claim
+ledgers, current programmes, reading paths, dated bulletin and future YM-08
+provider updated. Delivered YM-01–YM-03 have no dependent spectral assertion.
+
+Complete proofs: [PK132–PK157](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md).

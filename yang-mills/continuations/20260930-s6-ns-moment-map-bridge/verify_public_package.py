@@ -95,6 +95,7 @@ receipt_paths = [
     ROOT / "checks" / "FULL_PACKET_RESOLVENT_CHECK.json",
     ROOT / "checks" / "PACKET_MOMENTS_ESCAPE_CHECK.json",
     ROOT / "checks" / "ODD_VACUUM_OBSERVABLE_CHECK.json",
+    ROOT / "checks" / "JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json",
 ]
 for receipt_path in receipt_paths:
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -128,6 +129,17 @@ source_bindings = json.loads((ROOT / "checks/ODD_OBSERVABLE_SOURCE_BINDINGS.json
 repository_root = ROOT.parents[2]
 for row in source_bindings["bindings"]:
     checks["odd_source_binding:" + row["source_id"]] = row["sha256"] == sha256(repository_root / row["path"])
+
+joint_receipt = json.loads((ROOT / "checks/JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json").read_text(encoding="utf-8"))
+checks["joint_receipt_matches_current_proof"] = joint_receipt["proof_sha256"] == sha256(ROOT / "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md")
+joint_figure = json.loads((ROOT / "figures/JOINT_PATH_FIGURE_CHECK.json").read_text(encoding="utf-8"))
+checks["joint_figure_inspection_recorded"] = "inspected" in joint_figure["visual_inspection"]
+for row in joint_figure["files"]:
+    checks["joint_figure_hash:" + row["file"]] = row["sha256"] == sha256(ROOT / "figures" / row["file"])
+joint_bindings = json.loads((ROOT / "checks/JOINT_PATH_SOURCE_BINDINGS.json").read_text(encoding="utf-8"))
+for row in joint_bindings["bindings"]:
+    if row["current_file_unchanged"]:
+        checks["joint_source_binding:" + row["source_id"]] = row["sha256"] == sha256(ROOT.parents[2] / row["path"])
 
 source_path = ROOT / "sources" / "higher_rung" / "s6_higher_rung_24d_preprint.tex"
 period_receipt = json.loads((ROOT / "checks/PERIOD_PHYSICAL_KERNEL_CHECK.json").read_text(encoding="utf-8"))

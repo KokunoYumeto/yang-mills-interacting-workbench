@@ -277,6 +277,34 @@
       "strengthens": [
         "SZ-20261009-010"
       ]
+    },
+    {
+      "result_id": "SZ-20261009-013",
+      "statement": "The actual-vacuum density and complete chord-Haar volume bound prove that the chart-supported odd observable's entire raw spectral measure tends to zero on the original joint path. The result extends to uniformly bounded observables supported in chord balls of radius at most C j^p for p<21/4.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK132–PK142 including PK141a",
+      "scope": "Original full finite operator and PK139 path, all boundary and Haar factors; no conclusion about every physical state.",
+      "strengthens": [
+        "SZ-20261009-010",
+        "SZ-20261009-012"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-014",
+      "statement": "A global group-coordinate odd observable on the actual vacuum is constructed, with exact original-cochain coefficients and nonzero raw norm for every positive coupling at each finite regulator. The full higher-carrier map has exactly the original rank-12 zero subbundle.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK143–PK150 including PK143a",
+      "scope": "Original full domain and gauge/reflection maps; same proved fixed-box limit; its joint-path limiting mass is not yet established.",
+      "strengthens": [
+        "SZ-20261009-012"
+      ]
+    },
+    {
+      "result_id": "SZ-20261009-015",
+      "statement": "All ordered word, inverse, sine and reflection derivatives of the global observable are evaluated. Its actual raw zeroth, first and second spectral moments and exact low/high mass inequalities are proved through the full interacting ground-state transform.",
+      "proof_locator": "PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md PK151–PK157",
+      "scope": "Every original finite regulator and positive parameter amplitude; actual-vacuum dependence remains explicit and no path estimate is assumed.",
+      "strengthens": [
+        "SZ-20261009-014"
+      ]
     }
   ],
   "defined_spaces": {
@@ -425,7 +453,14 @@
     "figures/odd_observable_figure.py",
     "figures/ODD_OBSERVABLE.png",
     "figures/ODD_OBSERVABLE.svg",
-    "figures/ODD_OBSERVABLE_FIGURE_CHECK.json"
+    "figures/ODD_OBSERVABLE_FIGURE_CHECK.json",
+    "checks/verify_joint_path.py",
+    "checks/JOINT_PATH_GLOBAL_OBSERVABLE_CHECK.json",
+    "checks/JOINT_PATH_SOURCE_BINDINGS.json",
+    "figures/joint_path_figure.py",
+    "figures/JOINT_PATH_GLOBAL_OBSERVABLE.png",
+    "figures/JOINT_PATH_GLOBAL_OBSERVABLE.svg",
+    "figures/JOINT_PATH_FIGURE_CHECK.json"
   ],
   "bulletin_result_ids": [
     "SZ-20260929-005",
@@ -462,8 +497,11 @@
     "SZ-20261009-009",
     "SZ-20261009-010",
     "SZ-20261009-011",
-    "SZ-20261009-012"
+    "SZ-20261009-012",
+    "SZ-20261009-013",
+    "SZ-20261009-014",
+    "SZ-20261009-015"
   ],
   "programme_goal": "Construct a globally smooth interacting state within the stated four-dimensional Yang--Mills axioms, prove that its reconstructed Hamiltonian has no positive mass gap, and derive the contradiction of the stated mass-gap claim.",
-  "current_finite_state_boundary": "PK1–PK131: fixed-box actual odd support, full raw limiting measure and global scalar receiving map; original joint-path estimates and continuum endpoint unfinished."
+  "current_finite_state_boundary": "PK1–PK157: actual cutoff raw-mass collapse on the original path; global group-coordinate replacement nonzero at all finite regulators, complete derivatives/moments; its joint-path estimate and continuum endpoint unfinished."
 }
