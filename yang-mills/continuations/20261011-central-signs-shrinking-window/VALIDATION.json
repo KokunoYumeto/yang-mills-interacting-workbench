@@ -24,6 +24,11 @@
       "source": "BASELINE_J5.md",
       "sha256": "19330587f37000433096225d6cbea04dea65480338d8bbaba736e1edfa1e50e9",
       "complete_math_blocks": 106
+    },
+    {
+      "source": "PHASE_SPECTRAL_WEIGHTS.md",
+      "sha256": "a1986503145604493d69cecb6d4c18b13d3da628192bb7c68ea6e6f8de981aa6",
+      "complete_math_blocks": 119
     }
   ],
   "figures": [
@@ -36,9 +41,15 @@
       "file": "PHASE_MOMENTS_AND_ORIGINAL_PATH.png",
       "sha256": "37ad66d6d9c995b7af1ee1d54a2d1ee33d450eebf68b7f1d72af0e9707a9eb80",
       "visually_inspected": true
+    },
+    {
+      "file": "PHASE_SPECTRAL_WEIGHTS.png",
+      "sha256": "3553616a622001915774a393d626c8bd0d9324f300672e2674f921a31c276241",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map.",
   "pdf_compiled": false,
-  "new_external_pdf_read": false
+  "new_external_pdf_read": false,
+  "spectral_weight_checks": 104
 }

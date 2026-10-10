@@ -1749,3 +1749,5 @@ The boundary proof classifies all admissible open and periodic central
 sign maps, including winding signs and the full Hamiltonian scalar.
 The actual growing-box low-energy weight and interacting continuum
 endpoint remain the continuing research calculation.
+
+The [complete phase spectral weights](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/PHASE_SPECTRAL_WEIGHTS.md) now evaluate every fixed-box polynomial cluster and the exact radial direction outside the earlier phase compression (SP1–SP16). The original raw states and full vacuum factors are retained; the joint-path estimate remains the next spectral calculation.

@@ -85,5 +85,5 @@ out=ROOT/'RESEARCH_CONTINUATION.tex'
 out.write_text(header+'\n\\clearpage\n'.join(bodies)+'\n\\end{document}\n',encoding='utf-8',newline='\n')
 (ROOT/'TEX_FIDELITY.json').write_text(json.dumps({'sources':rows,'all_math_blocks_preserved':True,
  'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'compilation_confirmed':False,
- 'compile_status':'Shared TeX slot occupied at two natural checkpoints; no PDF generated.'},indent=2)+'\n')
+ 'compile_status':'Shared TeX slot occupied at three natural checkpoints; no PDF generated.'},indent=2)+'\n')
 print(json.dumps({'math_blocks':sum(x['complete_math_blocks'] for x in rows),'source_files':len(rows)}))
