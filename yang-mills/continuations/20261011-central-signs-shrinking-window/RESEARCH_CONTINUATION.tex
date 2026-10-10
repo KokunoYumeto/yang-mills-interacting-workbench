@@ -1,0 +1,1504 @@
+\documentclass[11pt]{article}
+\usepackage{iftex}
+\ifPDFTeX\usepackage[T1]{fontenc}\usepackage[utf8]{inputenc}\usepackage{lmodern}\else\usepackage{fontspec}\setmainfont{Latin Modern Roman}\fi
+\usepackage{amsmath,amssymb,mathrsfs,booktabs,graphicx,hyperref}
+\usepackage[margin=21.5mm]{geometry}
+\hypersetup{hidelinks,pdftitle={Yang--Mills central signs and shrinking spectral windows}}
+\allowdisplaybreaks
+\emergencystretch=3em
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\section*{Original phase moments and the unchanged shrinking window}
+
+This independent derivation uses the actual vacuum and original rooted
+words throughout. Its original-path result is the explicit bound (IP8).
+Its additional fixed-box results are (IP15)–(IP20). The fixed-box limits
+do not establish the sign of the expression in (IP1) on the prescribed
+joint path. No smaller selected coupling is substituted for that path.
+
+\subsection*{1. Original objects and source locations}
+
+The finite open box has vertex indices `(i,k,l)` in `\{0,...,m\}\textasciicircum{}3`, where
+`m=2L`, `n=m+1`, and `L>=2`. The physical vertex remains
+`o+a(i-L,k-L,l-L)`. It has
+\[
+ N=3m(m+1)^2,\qquad M=3m^2(m+1).
+\]
+The root is `(0,0,0)`. The root path goes in direction three, then two,
+then one. The tree has every direction-one edge, direction-two edges
+with first coordinate zero, and direction-three edges with first two
+coordinates zero. For a chord `c=(s,t)`, retain the whole word
+\(Z_c=t_sU_ct_t^{-1}\). No common segment is erased when occurrences
+are counted below. The Lie generators are
+\(T_\alpha=-i\sigma_\alpha/2\), and
+\(q_c^\alpha=-2\operatorname{tr}(T_\alpha Z_c)\).
+
+Write
+\[
+ h={\pi\over2n},\quad c=\cos h,\quad C=\cot h,\quad
+ v_0(l)=n^{-1/2},\quad
+ v(l)=\sqrt{2/n}\cos{\pi(l+1/2)\over n},\quad
+ w(l)=-\sqrt{2/n}\sin{\pi(l+1)\over n}.
+\]
+The complete chord sets and the original first and third rows are
+\[
+\begin{split}
+\mathcal C_2&=\{(i,k,l;2):1\le i\le m,\ 0\le k<m,\ 0\le l\le m\},\\
+\mathcal C_3&=\{(i,k,l;3):0\le i,k\le m,\ (i,k)\ne(0,0),\ 0\le l<m\},\\
+a_{(i,k,l;2)}&=-v(i)w(k)v_0(l)/\sqrt2,\qquad a_{(i,k,l;3)}=0,\\
+b_{(i,k,l;2)}&=v_0(i)w(k)v(l)/\sqrt2,\\
+b_{(i,k,l;3)}&=-v_0(i)v(k)w(l)/\sqrt2.
+\end{split}
+\]
+Thus \(u_1=\sum_ca_cq_c\), \(u_3=\sum_cb_cq_c\),
+\(\mathcal S=u_1\cdot u_3\), and
+\(\mathcal S_{\mathcal R}=\mathcal S\circ\mathcal R\), with the
+original direction-one graph reflection, all reversed edges and all
+reflected root words. Put
+\[
+\sigma_*=\sqrt8\sin h,\quad \beta_0={\sigma_*\over2g^2},\quad
+p=\beta_0\mathcal S,\quad r=\beta_0\mathcal S_{\mathcal R},\quad
+F=p-r.
+\]
+
+The Hamiltonian and its actual positive unit vacuum are
+\[
+ H=\kappa H_0+bW,\quad H_0=-\sum_{e,\alpha}X_{e,\alpha}^2,
+ \quad\kappa={2g^2\over a},\quad b={1\over2g^2a},\quad
+ W=\sum_{\text{all faces }p}(2-\operatorname{tr}U_p),\quad H\psi=E_0\psi.
+\]
+In particular the constant \(2bM\) is retained in the potential and
+vacuum equation. Let \(d\mu=\psi^2dU\), \(\mathcal A=H-E_0\),
+\(G=\mu(F^2)\), \(C_F=\kappa\mu(|\nabla F|^2)\). Reflection makes
+\(F\psi\) odd and vacuum orthogonal. The original expression is
+\[
+\begin{split}
+\mathscr E(s)&=G-C_F/s\\
+ &=2\beta_0^2(\mathcal Q_4-\mathcal Q_{4,\mathcal R})
+ -{2\kappa\beta_0^2\over s}(\mathcal K_1-\mathcal K_{\mathcal R}),
+\end{split}\tag{IP1}
+\]
+with every expectation and reflected gradient as in PK202.
+The raw measure is
+\(\nu_F(B)=\langle F\psi,\mathbf1_B(\mathcal A)F\psi\rangle\);
+\(\nu_F((0,s])\ge\max\{0,\mathscr E(s)\}\).
+
+The receiving source is the retained \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md#L2440}{programme manuscript}, PK103–PK108, PK139,
+PK143a–PK174, PK177a–PK177f, PK178–PK202 and PK207–PK227.
+The cited proof edition is pinned at commit
+`485b61423c1f4e1805deb453c1b6b342b27842b6`.
+The fixed-box vacuum and cluster transport used in Section 4 is exactly
+the retained \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md#L2480}{PK104–PK105} and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md#L2632}{PK112}. It is not asserted to be
+uniform in the box. The weighted-tail input is proved again in Section 3
+from retained \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/sources/spatial/spatial_continuum.tex#L3875}{original TeX, equations (205)–(214), Section 17.4–17.5}. Both pinned files were retrieved and matched byte for byte to the local files used here. Source identities and reading coverage are in the
+separate source ledger; index hits are not reading evidence.
+
+\subsection*{2. Exact original-word sums and an actual-vacuum endpoint bound}
+
+Let \(n_{ce}\) count both orientations of link \(e\) in the full
+word \(Z_c\). Put
+\[
+ S_1=\sum_c|a_c|=\sqrt{2/n}\,C(C-c),\qquad
+ S_3=\sum_c|b_c|=\sqrt{2/n}[(2-1/n)C^2-(c/n)C].
+\]
+These are the complete PK162 sums. Define, without changing them,
+\[
+ D_{1e}=\sum_c|a_c|n_{ce},\quad D_{3e}=\sum_c|b_c|n_{ce},\quad
+ K_e=2S_3D_{1e}+2S_1D_{3e},\quad
+ \mathcal C=3\sum_eK_e^2.\tag{IP2}
+\]
+The three colours and all original physical links remain in this sum.
+PK151–PK153 give pointwise \(|\nabla\mathcal S|^2\le\mathcal C\).
+
+For either chord based at `(i,k,l)`, its original length is
+\(\ell_c=2(i+k+l+1)\). For a direction-two chord the two root paths
+share exactly \(k+l\) physical edges; for a direction-three chord they
+share exactly \(l\). A shared edge occurs twice, once in each root
+path; every other root edge and the chord occur once. Consequently
+\[
+\begin{array}{c|cc}
+ &\sum_en_{ce}&\sum_en_{ce}^2\\ \hline
+c\in\mathcal C_2&2(i+k+l+1)&2i+4k+4l+2\\
+c\in\mathcal C_3&2(i+k+l+1)&2i+2k+4l+2.
+\end{array}\tag{IP3}
+\]
+This calculation preserves the repeated root occurrences. The count
+\(\sum n^2\) differs from \(\sum n\) precisely by twice the number
+of shared edges, because \(2^2-2=2\).
+
+Define \(L_\mu=\sum_c|\mathsf M_{\mu c}|\ell_c\) and
+\(A_\mu=\sum_c|\mathsf M_{\mu c}|\sum_en_{ce}^2\), for \(\mu=1,3\).
+Their exact values are
+\[
+\begin{split}
+ L_1&=\sqrt{2/n}\,C[(3m+1)C-(2m+1)c],\\
+ L_3&=\sqrt{2/n}[(6m+1/n)C^2-cC],\\
+ A_1&=m\sqrt{2/n}\,C(5C-4c),\\
+ A_3&={m\over n}\sqrt{2/n}[(9m+5)C^2-2cC].
+\end{split}\tag{IP4}
+\]
+Here \(A_\mu\) are occurrence sums; they are unrelated to the
+amplitude parameter or the operator \(\mathcal A\).
+
+For a full summation proof, set
+\(V=\sum_{i=0}^m|v(i)|=\sqrt{2/n}C\),
+\(V_0=\sum_{i=1}^m|v(i)|=\sqrt{2/n}(C-c)\), and
+\(W_1=\sum_{k=0}^{m-1}|w(k)|=\sqrt{2/n}C\).
+Reflection gives the first absolute moments
+\[
+\sum_{i=0}^m i|v(i)|={mV\over2},\quad
+\sum_{k=0}^{m-1}k|w(k)|={(m-1)W_1\over2},\quad
+\sum_{i=0}^m i={mn\over2}.
+\]
+Removing \(i=0\) from the first moment leaves its numerator unchanged.
+Thus the first-row averages of `(i,k,l)` are
+\(mC/[2(C-c)],(m-1)/2,m/2\). Inserting these into (IP3)
+gives both first-row formulas in (IP4).
+
+The third row's direction-two absolute mass is
+\(S_{3,2}=\sqrt{2/n}(m/n)C^2\), and the corresponding coordinate
+averages are \((m+1)/2,(m-1)/2,m/2\). Its contributions to
+\(L_3,A_3\) are respectively \((3m+2)S_{3,2}\) and
+\((5m+1)S_{3,2}\).
+The unexcluded direction-three rectangle has mass
+\(S_{3,3}^{\rm all}=\sqrt{2/n}C^2\), coordinate averages
+\(m/2,m/2,(m-1)/2\), and contributions
+\((3m+1)S_{3,3}^{\rm all},4mS_{3,3}^{\rm all}\).
+Its excluded corner `(i,k)=(0,0)` has mass
+\(X=\sqrt{2/n}(cC/n)\), length average \(m+1\) and squared-occurrence
+average \(2m\). Subtracting exactly \((m+1)X,2mX\), respectively,
+gives the two third-row formulas in (IP4), including every endpoint.
+
+Cauchy–Schwarz with the original absolute coefficient measure gives
+\[
+ \sum_eD_{\mu e}^2
+ \le S_\mu\sum_c|\mathsf M_{\mu c}|\sum_en_{ce}^2=S_\mu A_\mu.
+\]
+The triangle inequality in the finite link Euclidean space, applied
+to (IP2), now proves the full explicit bound
+\[
+\boxed{\quad
+\mathcal C\le\mathcal C_{\rm occ}:=
+12\left[S_3\sqrt{S_1A_1}+S_1\sqrt{S_3A_3}\right]^2.
+\quad}\tag{IP5}
+\]
+There is also the independent length bound
+\[
+ \mathcal C\le48S_1S_3(S_3L_1+S_1L_3).\tag{IP6}
+\]
+Indeed \(0\le n_{ce}\le2\) implies
+\(K_e\le8S_1S_3\), while
+\(\sum_eK_e=2S_3L_1+2S_1L_3\); multiply these and then by three.
+Both bounds are for the same full occurrence sum, not reduced words.
+
+Since reflection is unitary for the actual vacuum energy form,
+\(\|\nabla(\mathcal S-\mathcal S_{\mathcal R})\|_{L^2(\mu)}^2
+\le4\|\nabla\mathcal S\|_{L^2(\mu)}^2\).
+For detail, its even and odd parts are form orthogonal: applying
+reflection changes the cross term's sign while preserving its value.
+The odd projection therefore contracts the form, and
+\(\mathcal S-\mathcal S_{\mathcal R}=2P_-\mathcal S\).
+The same argument in norm and \(|u_\mu|\le2S_\mu\) prove
+\[
+0<G\le64\beta_0^2S_1^2S_3^2,\qquad
+0<C_F\le4\kappa\beta_0^2\mathcal C_{\rm occ}.\tag{IP7}
+\]
+Strict positivity is the finite-regulator PK202 statement. No positive
+lower bound uniform in the regulator has been inserted.
+
+On precisely the requested path, for integers \(j\ge2\),
+\[
+ L_j=j^4,\quad a_j={1\over100j},\quad
+ g_j^2={\kappa_*\over200j},\quad s_j={\kappa_*\over j},\quad
+ m_j=2j^4,\quad n_j=2j^4+1,\quad
+ \beta_{0,j}={200\sqrt2j\over\kappa_*}\sin{\pi\over4j^4+2},
+\]
+the actual expression (IP1) obeys
+\[
+\boxed{
+ -4j\beta_{0,j}^2\mathcal C_{{\rm occ},j}
+ \ \le\ \mathscr E_j(s_j)
+ \ \le\ 64\beta_{0,j}^2S_{1,j}^2S_{3,j}^2.
+}\tag{IP8}
+\]
+Every quantity at the endpoints is the displayed finite trigonometric
+formula. This is a direct bound on the actual-vacuum expression, without
+an electric cutoff or a change of vector.
+
+For its exact growth constants, let \(\tau=19/2+3\sqrt{10}\).
+The finite formulas give
+\[
+\begin{gathered}
+ {S_1\over n^{3/2}}\to{4\sqrt2\over\pi^2},\quad
+ {S_3\over n^{3/2}}\to{8\sqrt2\over\pi^2},\quad
+ {A_1\over nS_1}\to5,\quad {A_3\over nS_3}\to{9\over2},\\
+ {\mathcal C_{\rm occ}\over n^7}\to{49152\tau\over\pi^8},\quad
+ {\mathcal C_{\rm occ}\over192NS_1^2S_3^2}\,n^2\to{\tau\over48},\\
+ {4j\beta_{0,j}^2\mathcal C_{{\rm occ},j}\over j^{23}}
+ \to {125829120000\tau\over\kappa_*^2\pi^6},\\
+ {64\beta_{0,j}^2S_{1,j}^2S_{3,j}^2\over j^{18}}
+ \to {83886080000\over\kappa_*^2\pi^6}.
+\end{gathered}\tag{IP9}
+\]
+For example, the first line follows from \(C/n\to2/\pi\), \(c\to1\)
+in (IP4), with no finite term removed. Substitution into (IP5) gives
+\(12\cdot4096(\sqrt5+3/\sqrt2)^2/\pi^8\), the second line.
+Then \(n_j/j^4\to2\) and
+\(j^6\beta_{0,j}^2\to5000\pi^2/\kappa_*^2\) give the last lines.
+The earlier bound PK177 grows as \(n^9\); (IP5) grows as \(n^7\).
+Thus the negative loss bound improves by eight powers of \(j\).
+Its sign remains negative and its magnitude grows. This result does
+not prove positivity, decay, or growth of the actual expression itself.
+
+\subsection*{3. The next calculation: control the unbounded phase moments}
+
+The obstacle to using PK148 for \(F=p-r\) is that \(p,r\) contain
+\(g^{-2}\). Strong convergence of the vacuum alone does not control
+these multipliers. We now calculate the needed tails from the actual
+vacuum equation.
+
+For a face set \(D_p=2-\operatorname{tr}U_p\), so \(W=\sum_pD_p\).
+Holding the other links fixed and writing the face product as a unit
+quaternion gives
+\(\sum_\alpha|X_{e,\alpha}D_p|^2=D_p-D_p^2/4\le D_p\)
+for every incident link. Conjugations preserve the three-colour norm;
+inverse traversals give the same result by the original bi-invariant
+metric. Each edge has \(r_e\le4\) incident faces, and every face has
+four edges. Cauchy–Schwarz over its incident faces therefore gives
+\(|\nabla W|^2\le16W\), including the boundary.
+
+For any real smooth multiplier \(f\), expansion of all product
+derivatives and Haar integration by parts yield
+\[
+ q_H[f\psi]-E_0\mu(f^2)=\kappa\mu(|\nabla f|^2).
+\]
+The potential and its constant are retained until the vacuum equation
+is inserted. The kinetic term in \(q_H\) is nonnegative. With
+\(M_k=\mu(W^k)\), \(M_0=1\), this implies
+\[
+ bM_{k+1}\le E_0M_k+4\kappa k^2M_{k-1}\quad(k\ge1),\qquad
+ M_1\le E_0/b.
+\]
+For \(k=1\), use \(f=(W+\epsilon)^{1/2}\), whose gradient square
+is at most four, and pass to \(\epsilon\downarrow0\). For every
+higher odd power use the same positive regularization; compactness
+and the bound on \(|\nabla W|^2\) justify convergence. For even powers
+ordinary differentiation suffices. The retained variational bound is
+\(E_0\le K=3\sqrt{NM}/a\), at every positive coupling. Thus, with
+\(U_g=W/g^2\),
+\[
+\begin{gathered}
+ \mu(U_g^k)\le B_k,\quad
+ B_0=1,\quad B_1=6\sqrt{NM},\quad
+ B_{k+1}=6\sqrt{NM}B_k+16k^2B_{k-1},\\
+ B_2=36NM+16,\qquad
+ B_3=216(NM)^{3/2}+480\sqrt{NM}.
+\end{gathered}\tag{IP10}
+\]
+All factors here come from the original \(b,\kappa,a,g\).
+
+The ordered non-Abelian face fillings PK177a–PK177e give the pointwise
+bound \(|u_\mu|^2\le4T_\mu w_\mu W\), where
+\[
+ T_1={mC^2\over\sqrt{2n}},\quad T_3=3T_1,\quad
+ w_1={\sqrt2c(C-c)\over n^{3/2}},\quad w_3=nw_1.
+\]
+It follows that, with \(P_{\rm fill}=T_1T_3w_1w_3\),
+\[
+ |\mathcal S|\le4\sqrt{P_{\rm fill}}\,W,\quad
+ |\mathcal S_{\mathcal R}|\le4\sqrt{P_{\rm fill}}\,W,\quad
+ |p|,|r|\le2\sigma_*\sqrt{P_{\rm fill}}\,U_g,\quad
+ |F|^2\le16\sigma_*^2P_{\rm fill}\,U_g^2.\tag{IP11}
+\]
+Reflection preserves the whole potential \(W\); that is why the same
+constant applies to its full reflected word.
+
+There is an equally explicit derivative domination. Set
+\[
+ D_W=12\sum_e
+ \left[\sqrt{T_3w_3}D_{1e}+\sqrt{T_1w_1}D_{3e}\right]^2.
+\]
+For each of the three generators,
+\(|X\mathcal S|\le|u_3|D_{1e}+|u_1|D_{3e}\).
+Square the face bounds and sum all generators to obtain
+\[
+\begin{gathered}
+ |\nabla\mathcal S|^2\le D_W W,\qquad
+ |\nabla(\mathcal S-\mathcal S_{\mathcal R})|^2\le4D_WW,\\
+ \kappa|\nabla p|^2,\ \kappa|\nabla r|^2
+       \le{\sigma_*^2D_W\over2a}U_g,\qquad
+ \kappa|\nabla F|^2\le{2\sigma_*^2D_W\over a}U_g,\\
+ D_W\le12\left[
+ \sqrt{T_3w_3S_1A_1}+\sqrt{T_1w_1S_3A_3}\right]^2.
+\end{gathered}\tag{IP12}
+\]
+For the second bound use \(|v-w|^2\le2|v|^2+2|w|^2\)
+and reflection invariance of the pointwise metric and \(W\).
+The last bound follows from the same finite-link Cauchy–Schwarz as
+(IP5). These are actual all-coupling bounds for the original global
+functions, including the region beyond a logarithm chart.
+
+At fixed box, the chord potential vanishes only at the identity chord
+configuration. To verify this, every rooted chord is the ordered product
+of conjugates of the faces in its filling; if every face is identity,
+so is every chord. Conversely identity chords are flat. Its quadratic
+form there is \(\frac14\sum_\alpha\|Cy^\alpha\|^2\), with
+\(C^*C>0\) on the chord coordinates. Therefore a radius \(\rho>0\)
+and positive constants \(c_*,c_\rho\) exist such that
+\(W(y)\ge c_*|y|^2\) when \(|y|<\rho\), and
+\(W\ge c_\rho\) outside that neighborhood. Positivity of the first
+constant follows from the least eigenvalue and the Taylor remainder;
+positivity of the second follows by compactness and the just-proved
+unique zero. They depend on this fixed box.
+
+For the exact transported coordinate \(y=gx\), any integer \(k\ge0\)
+satisfies
+\[
+ \int_{|x|>R} U_g^k\,|\mathcal B_g\psi_g|^2dx
+ \le B_{k+1}\left({1\over c_*R^2}+{g^2\over c_\rho}\right).
+ \tag{IP13}
+\]
+The notation in this equation means multiplication by
+\(U_g(\exp(gx))\) inside the exact density/dilation transport;
+the integrand is zero outside its original domain \(\Omega_g\).
+On the part \(|gx|<\rho\), \(U_g\ge c_*R^2\), so
+\(U_g^k\le U_g^{k+1}/(c_*R^2)\). On the other part
+\(U_g\ge c_\rho/g^2\), and use the other summand. (IP10)
+and the exact isometry prove (IP13).
+
+\subsection*{4. Exact fixed-box phase matrices and their degeneration}
+
+Use the exact retained coordinate maps
+\(z^\alpha=O^{\mathsf T}G_{\rm kin}^{-1/2}x^\alpha\), where here
+\(G_{\rm kin}=TT^*\) is the original quotient kinetic matrix (not the
+scalar raw norm \(G\) in (IP1)). No constant-Jacobian map is suppressed:
+it is the unitary coordinate change already specified in PK103–PK105.
+The symbol \(G_{\rm kin}\) will denote this same matrix below.
+The actual vacuum transport converges strongly to the original Gaussian
+\(\Phi_0\). The first and third selected modes have component variance
+\(2/\sigma_*\) and are independent. Put
+\[
+ q_0(z)={\sigma_*\over2}z_1\cdot z_3,\qquad
+ \delta_*={2\sigma_*\over a}.
+\]
+The local exact word expansion gives, together with every first
+derivative on compact sets,
+\[
+ p(\exp(gx))\longrightarrow q_0(z),\qquad
+ r(\exp(gx))\longrightarrow-q_0(z).\tag{IP14}
+\]
+Indeed \(q_c(\exp(gx))=g x_c+O(g^3|x_c|^3)\) locally;
+the original reflected chord map has derivative taking the first mode
+to its negative and the third to itself. Its nonlinear remainder is
+retained until the limit, and differentiation of its analytic word
+formula has the corresponding locally uniform remainder.
+
+For every fixed polynomial \(P(x,y)\), (IP11), (IP10), and (IP13)
+prove
+\[
+ \mathcal B_g[P(p,r)\psi_g]
+       \longrightarrow P(q_0,-q_0)\Phi_0
+       \quad\hbox{strongly in }L^2,\qquad g\downarrow0
+       \quad(L,a\hbox{ fixed}).\tag{IP15}
+\]
+Here is the full tail argument. Each degree-\(d\) monomial is bounded
+in absolute value by \((2\sigma_*\sqrt{P_{\rm fill}})^d U_g^d\),
+using the exact scalar \(P_{\rm fill}=T_1T_3w_1w_3\) from (IP11).
+For a polynomial, sum its finitely many such bounds and square using
+finite Cauchy–Schwarz. Formula (IP13) with powers up to \(2d\), hence
+the actual moment bounds up to \(B_{2d+1}\), makes its transported
+squared tails uniformly small by first taking \(g\downarrow0\),
+then \(R\to\infty\). On a fixed ball, (IP14) gives uniform multiplier
+convergence, and the actual vacuum converges strongly. The limit is a
+polynomial times a Gaussian and has an integrable squared tail. Adding
+the ball and its two tails proves (IP15).
+
+The actual energy forms of any two fixed such polynomials also converge.
+The gradient of a constant monomial is zero. To verify the other tails,
+for a degree-\(d\ge1\) monomial its gradient is a sum
+of \(d\) terms, each consisting of a phase gradient times \(d-1\)
+phase factors. The complete two-phase chain rule and (IP11)–(IP12)
+bound its \(\kappa|\nabla\cdot|^2\) by a finite fixed-box constant
+times \(U_g^{2d-1}\). Mixed products follow by Cauchy–Schwarz. (IP13)
+therefore controls every energy tail as well, using one more actual
+moment. On a fixed ball the original quotient fields have coefficient
+matrix tending to \(G_{\rm kin}\otimes I_3\) and
+\(\kappa=2g^2/a\); the derivative dilation supplies \(g^{-2}\).
+Thus the exact limiting form is
+\((2/a)\int\sum_\alpha(\nabla_{x^\alpha}f)^*
+G_{\rm kin}\nabla_{x^\alpha}h\,|\Phi_0|^2dx\), which becomes
+\((2/a)\int\nabla_zf\cdot\nabla_zh\,|\Phi_0|^2dz\)
+under the full constant-Jacobian unitary. Multiplication density factors
+cancel in the original ground-state form before this calculation;
+none are differentiated or dropped from the Hamiltonian.
+
+Define the exact moments
+\[
+ M_{2k}^{(0)}={(2k)!(3/2)_k\over k!},\qquad M_{2k+1}^{(0)}=0.
+ \tag{IP16}
+\]
+To prove these constants, set
+\(X=\sqrt{\sigma_*/2}\,z_1\), \(Y=\sqrt{\sigma_*/2}\,z_3\)
+only inside the Gaussian integral, with its full Jacobian and density.
+They are independent standard three-dimensional normal variables, and
+\(q_0=X\cdot Y\). Conditional integration over \(Y\) gives
+\(\mathbb E e^{itq_0}=\mathbb E e^{-t^2|X|^2/2}
+=(1+t^2)^{-3/2}\). Taylor differentiation at zero yields (IP16),
+or the same coefficients follow by Gaussian integration of each monomial.
+This is an integral calculation; it does not rescale any physical vector.
+
+For the original indices \(a=(p,q)\), \(b=(s,t)\), put
+\(d_a=(-1)^q-(-1)^p\), \(n_a=p+q\), and analogously for \(b\).
+The full fixed-box Gram and energy limits are
+\[
+\boxed{
+\begin{split}
+ \mathcal G_{ab}&\longrightarrow
+   d_ad_b M^{(0)}_{n_a+n_b},\\
+ \mathcal C_{ab}&\longrightarrow
+ \delta_*d_ad_b n_an_b(n_a+n_b+1)M^{(0)}_{n_a+n_b-2}.
+\end{split}}\tag{IP17}
+\]
+The least possible sum of degrees is two, so no negative moment occurs.
+The first line follows from (IP15). For the second, differentiate
+\(d_aq_0^{n_a}\) in the limiting form just proved. Since
+\(|\nabla_zq_0|^2=(\sigma_*^2/4)(|z_1|^2+|z_3|^2)\), its coefficient
+becomes \((\delta_*/2)(|X|^2+|Y|^2)\). Gaussian integration by parts
+gives, for every integer \(r\ge0\),
+\[
+ \mathbb E[|X|^2q_0^r]=(3+r)\mathbb E q_0^r,
+ \quad
+ \mathbb E[|Y|^2q_0^r]=(3+r)\mathbb E q_0^r.
+\]
+For example sum
+\(\mathbb E[X_i^2q_0^r]=\mathbb E[q_0^r]
++\mathbb E[X_i\partial_{X_i}q_0^r]\) over all three coordinates;
+Euler's identity contributes \(r\mathbb E q_0^r\). Gaussian decay
+justifies every boundary term. Substitute \(r=n_a+n_b-2\) to prove
+the second line with its factor \(n_a+n_b+1\).
+
+For the full original family \(0\le q<p\le R\), the limiting Gram
+matrix has rank exactly \(R\) and nullity \(R(R-1)/2\).
+Indeed even total degrees have \(d_a=0\), while all odd degrees
+\(1,3,\ldots,2R-1\) occur and have nonzero coefficient \(d_a=\pm2\).
+The resulting distinct odd monomials are linearly independent in the
+Gaussian dot-product distribution: every nonempty real interval has
+positive probability, as is seen by conditioning on any nonzero \(X\),
+where \(X\cdot Y\) is a nondegenerate normal variable. A polynomial
+zero almost everywhere must therefore vanish identically. This proves
+the rank and exact nullity. The finite-\(g\) matrices remain positive
+definite by PK205; their smallest eigenvalues need not have a positive
+limit. The nullity concerns the actual fixed-box limit, not a deletion
+of those finite-regulator vectors.
+
+For \(P_{10}=x-y\), the especially simple conclusions are
+\[
+\boxed{
+ G\longrightarrow12,\quad C_F\longrightarrow12\delta_*,\quad
+ \mu(F^4)\longrightarrow720,\quad
+ \mathscr E(s)\longrightarrow12\left(1-{\delta_*\over s}\right)
+ \quad(s>0\hbox{ fixed}).
+}\tag{IP18}
+\]
+The fourth moment is \(2^4M_4^{(0)}=16\cdot45\), justified by
+(IP15) applied to \((x-y)^2\), including its squared tail.
+The limiting vector is \(\sigma_*z_1\cdot z_3\Phi_0
+=2\sqrt3\,O_{13}\). It belongs entirely to the first physical odd
+oscillator eigenspace, of excitation energy \(\delta_*\).
+The retained actual cluster projection convergence PK112 and (IP15)
+therefore give the additional raw spectral statement
+\[
+ \left\|\mathbf1_{\{E_-(g)-E_0(g)\}}(\mathcal A)F\psi_g\right\|^2
+ \longrightarrow12.\tag{IP19}
+\]
+For completeness, projection convergence and vector convergence imply
+this by adding and subtracting the limiting projection of the limiting
+vector and using both projections' norm one. The actual odd cluster
+is exactly the two-dimensional space specified in PK112 for all
+sufficiently small positive \(g\) at this fixed box. The limit uses the
+complete original vector, not a unit-vector replacement.
+
+For \(R=2\), in original order `(1,0),(2,0),(2,1)`, (IP17) evaluates to
+\[
+ \mathcal G\longrightarrow
+ \begin{pmatrix}12&0&-180\\0&0&0\\-180&0&6300\end{pmatrix},\qquad
+ \mathcal C\longrightarrow\delta_*
+ \begin{pmatrix}12&0&-180\\0&0&0\\-180&0&11340\end{pmatrix}.
+ \tag{IP20}
+\]
+On the two-dimensional quotient their generalized eigenvalues are
+\(\delta_*\) and \((12/5)\delta_*\). To verify the second without
+removing any matrix entry, eliminate the first off-diagonal term in
+both forms: the remaining Gram entry is
+\(6300-180^2/12=3600\), and the remaining energy entry divided by
+\(\delta_*\) is \(11340-180^2/12=8640\). Their ratio is \(12/5\).
+These are limiting phase variational values, not claimed additional
+eigenvalues of the original full Hamiltonian.
+
+\subsection*{5. What the additional calculation proves on the specified path}
+
+At the fixed boxes \(L_j=j^4,a_j=1/(100j)\), but taking the inner
+limit \(g\downarrow0\) before varying \(j\), (IP18) gives exactly
+\[
+ \lim_{g\downarrow0}\mathscr E_{L_j,a_j,g}(\kappa_*/j)
+ =12\left[1-{400\sqrt2j^2\over\kappa_*}
+                         \sin{\pi\over4j^4+2}\right],
+ \qquad
+ \lim_{j\to\infty}\lim_{g\downarrow0}
+          \mathscr E_{L_j,a_j,g}(\kappa_*/j)=12.\tag{IP21}
+\]
+This is an iterated limit of the actual expression. It does not evaluate
+\(\mathscr E_{L_j,a_j,g_j}(s_j)\). Every original factor in the comparison
+frequency \(\delta_{*,j}=400\sqrt2j\sin[\pi/(4j^4+2)]\) is retained.
+
+The tail constants show precisely why the preceding proof supplies no
+uniform replacement. In (IP11), the squared phase-tail bound uses
+\(16\sigma_*^2P_{\rm fill}B_3\), which obeys
+\[
+ {16\sigma_*^2P_{\rm fill}B_3\over n^{12}}
+ \longrightarrow {35831808\over\pi^4}\quad(n=2L+1\to\infty).
+ \tag{IP22}
+\]
+Indeed \(\sigma_*^2 n^2\to2\pi^2\),
+\(P_{\rm fill}/n^5\to192/\pi^6\), and
+\(B_3/n^9\to5832\), using the full
+\(N=3(n-1)n^2\), \(M=3(n-1)^2n\) in (IP10).
+Multiplication gives the displayed constant. This is the coefficient
+in the proved tail bound, not a lower bound on the true tail.
+The additional constants \(c_*,c_\rho\) also depend on the box.
+Consequently there is no proved rate allowing the inner limit in
+(IP21) to be replaced by the prescribed \(g_j^2=\kappa_*/(200j)\).
+
+The concrete next calculation was therefore carried out: we derived
+all actual potential moments, obtained global phase and derivative
+domination, proved full polynomial norm and energy convergence, and
+evaluated the first two phase matrices. It closes the unbounded-
+multiplier gap in the fixed-box argument. The unresolved joint-path
+terms remain exactly
+\(\mathcal Q_{4,j}-\mathcal Q_{4,\mathcal R,j}\) and
+\(\mathcal K_{1,j}-\mathcal K_{\mathcal R,j}\) in (IP1), or a bound
+on their cancellation with accuracy sufficient after division by
+\(s_j=\kappa_*/j\). The geometric estimate (IP8) does not close that
+cancellation. No mass-gap, continuum, or positive-window conclusion
+is inferred from these results.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{PHASE_MOMENTS_AND_ORIGINAL_PATH.png}\caption{Exact original-path occurrence bound and fixed-box spectral receiving map}\end{figure}
+
+The left panel evaluates the finite bound in IP8 divided by its full leading coefficient in IP9. The right panel shows the exact density-and-dilation receiving map and the raw limits in IP18–IP19. The order of limits is fixed-box throughout that panel. Reproducible source: phase\_moments\_figure.py.
+\clearpage
+\section*{The original center-sign involution, all odd Schur coefficients, and a complete even tail}
+
+11 October 2026. Independent derivation for the original open three-dimensional box. The Hamiltonian, its scalar, link orientations, all vertex constraints, product-spin blocks and union labels are retained.
+
+The center-change mechanism has a human antecedent: L. Li and Y. Meurice, \href{https://arxiv.org/abs/hep-lat/0410029v2}{*Lattice gluodynamics at negative \(g^2\)*, arXiv:hep-lat/0410029v2}, \href{https://arxiv.org/src/hep-lat/0410029v2}{original author TeX}, Section IV, source lines 301–353, especially the labelled equations eq:su2id and eq:parity. They prove a negative-coupling identity for the Wilson action on even periodic lattices and perturbative parity consequences. Below the exact map is proved on the programme's open-box Hamiltonian and labelled Jacobian source. No novelty claim is made for the center-sign mechanism.
+
+The original programme inputs have verified pinned sources: \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/fa79faff2cd697e16cfa3a7953f36810c22c8922/yang-mills/continuations/20260915-gauge-native-band/RESEARCH_NOTE.md}{G1–G31, original objects and labelled bilinear bound}; \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260921-fifth-reference-return/FIFTH_REFERENCE.md}{F1–F42, the full fifth reference}, especially F10 at source line 98, F26 at 272 and F31 at 319; and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/fa79faff2cd697e16cfa3a7953f36810c22c8922/yang-mills/continuations/20260915-gauge-native-band/BAND_AND_CERTIFICATE.md#L125}{B13–B16, every original two-face channel}. The earlier J1–J7 second-coefficient calculation is reproduced as P27–P30 below. The full \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/BASELINE_J5.md}{original provider}, including its outgoing Gram calculation, is also retained.
+
+\subsection*{P1. Original objects and domains}
+
+Let \(L\ge2\) be an integer,
+\[
+ V_L=\{-L,\ldots,L\}^3,\qquad
+ E_L=\{(n,i):n,n+e_i\in V_L,\ 1\le i\le3\}.
+\]
+The original configuration space is \(SU(2)^{E_L}\) with product Haar probability \(dU\). Every positive edge \(e=(n,i)\) carries \(U_i(n)\). The physical Hilbert space is the invariant part of this Haar \(L^2\) under every vertex gauge transformation, including boundary vertices. The contained faces are \(p=(n;i,j)\), \(i<j\), and
+\[
+ M=3(2L)^2(2L+1)=12L^2(2L+1).
+\]
+Keep the original oriented words and generator convention:
+\[
+ W_p(U)=\operatorname{Tr}\{U_i(n)U_j(n+e_i)
+ U_i(n+e_j)^{-1}U_j(n)^{-1}\},\quad S=\sum_pW_p,
+\]
+\[
+ T_a=-i\sigma_a/2,\quad
+ X_{e,a}f(U)=\left.\frac{d}{dt}f(\ldots,e^{tT_a}U_e,\ldots)\right|_{t=0},
+ \quad K=-\sum_{e,a}X_{e,a}^2,
+ \quad\Gamma(f,h)=\sum_{e,a}(X_{e,a}f)(X_{e,a}h).
+ \tag{P1}
+\]
+The original Hamiltonian remains
+\[
+ H_L(\xi)=\kappa K+\kappa\xi(2M-S),\qquad
+ \kappa=2g^2/a,\quad\xi=1/(4g^4),\quad a,g>0. \tag{P2}
+\]
+For the comparison \(\xi\leftrightarrow-\xi\), fix the actual positive value of \(\kappa\) and extend only the coefficient \(\xi\) to real or complex values. This does not assign negative \(\xi\) to the original positive-\(g\) physical path.
+
+The original operator domain is the physical part of \(H^2(SU(2)^{E_L})\), and the form domain is its physical \(H^1\). The potential is bounded and smooth, so these domains are unchanged for every complex \(\xi\). This is an analytic closed-operator family on a fixed domain; for real \(\xi\) it is self-adjoint with compact resolvent. These are the original domains of F1–F3.
+
+\subsection*{P2. Explicit involution, gauge constraints and boundaries}
+
+For every original positive edge define
+\[
+ a_i(n)=\sum_{k<i}n_k\in\mathbb Z,\quad
+ z_i(n)=(-1)^{a_i(n)}I_2,\quad
+ (\tau U)_i(n)=z_i(n)U_i(n),\quad
+ (Tf)(U)=f(\tau U). \tag{P3}
+\]
+Negative integer coordinates have their usual parity. Each \(z_i(n)^2=I_2\), so \(\tau^2=I\). Haar invariance in each edge gives \(T^*=T^{-1}=T\) and \(T1=1\).
+
+For \(i<j\), the four center factors in the original oriented face word are
+\[
+ z_i(n)z_j(n+e_i)z_i(n+e_j)^{-1}z_j(n)^{-1}.
+\]
+Since \(a_i(n+e_j)=a_i(n)\) and \(a_j(n+e_i)=a_j(n)+1\), their exponent is
+\[
+ a_i(n)+[a_j(n)+1]-a_i(n)-a_j(n)=1.
+\]
+Thus the actual face holonomy acquires \(-I_2\), with its order and inverses unchanged:
+\[
+ TW_p=-W_p,\qquad TS=-S. \tag{P4}
+\]
+Only the four contained edges were used, so this proves the statement on every boundary face without adding exterior edges.
+
+For an original vertex gauge transformation \(G=(G_v)\),
+\[
+ (G\cdot U)_i(n)=G_nU_i(n)G_{n+e_i}^{-1}.
+\]
+Centrality proves \(\tau(G\cdot U)=G\cdot(\tau U)\) at every edge, including boundary endpoints. Hence \(T\) commutes with the full gauge action and gauge averaging and restricts to a unitary involution on the physical Hilbert space.
+
+The same centrality gives \(z_e e^{tT_a}U_e=e^{tT_a}z_eU_e\), so
+\[
+ X_{e,a}T=TX_{e,a},\quad KT=TK,\quad
+ T\Gamma(f,h)=\Gamma(Tf,Th). \tag{P5}
+\]
+These identities first hold on smooth functions. The smooth measure-preserving map \(\tau\), and its commutation with every original derivative, preserve \(H^1,H^2\) and extend the domain identities. Haar invariance also gives \(TP_H=P_HT=P_H\), where \(P_Hf=\int f\,dU\). Therefore \(T\) commutes with \(Q_H=I-P_H\), every original \(K\)-spectral projection and \(K^{-1}\) on the nonconstant physical blocks.
+
+\subsection*{P3. Every support label and the assembly quotient}
+
+For the original product-spin label \(j=(j_e)\), keep
+\[
+ c_j=\sum_ej_e(j_e+1),\quad
+ \pi_j(U)=\bigotimes_e\pi_{j_e}(U_e),\quad
+ A_j(f)=d_j\int f(U)\pi_j(U)^*\,dU.
+\]
+Since \(\pi_{j_e}(-I_2)=(-1)^{2j_e}I\),
+\[
+ \chi(j)=\prod_{e=(n,i)}(-1)^{2j_ea_i(n)}\in\{1,-1\},\quad
+ \pi_j(\tau U)=\chi(j)\pi_j(U),\quad
+ A_j(Tf)=\chi(j)A_j(f). \tag{P6}
+\]
+No spin block or active edge is moved.
+
+Write \(\mathscr V_L\) for the completed original physical zero-Haar-mean labelled coefficient space. An entry \(A_{A,j}\) retains its nonempty edge label \(A\supseteq\operatorname{supp}(j)\), including strict containments. Its norm is
+\[
+ \|f\|_{\rm loc}=\max_{b\in E_L}
+ \sum_{A\ni b}\sum_{j\ne0}c_j\|A_{A,j}\|_1. \tag{P7}
+\]
+Define \(T\) by \(A_{A,j}\mapsto\chi(j)A_{A,j}\). The actual label, matrix dimensions and Casimir remain. This is an isometric involution on the completion.
+
+Assembly has coefficients
+\[
+ (\operatorname{Asm}A)_j=\sum_{A\supseteq\operatorname{supp}(j)}A_{A,j}.
+\]
+Its total \(c_j\)-weighted coefficient norm is at most \(|E_L|\|A\|_{\rm loc}\): every nonempty label occurs at least once in the sum over all anchors. Its kernel is therefore the closed subspace
+\[
+ \mathscr N_L=\left\{A:
+ \sum_{A\supseteq\operatorname{supp}(j)}A_{A,j}=0
+ \text{ for every }j\right\}. \tag{P8}
+\]
+The character \(\chi(j)\) does not depend on the enlarged label, so \(T\mathscr N_L=\mathscr N_L\). It induces an isometric involution on the Banach quotient \(\widehat{\mathscr V}_L=\mathscr V_L/\mathscr N_L\), with exact intertwining \(T\operatorname{Asm}=\operatorname{Asm}T\).
+
+Keep the original union-labelled bilinear map
+\[
+ \mathcal B(f,h)_A=K^{-1}Q_H
+ \sum_{A_1\cup A_2=A}\sum_{e,a}
+ (X_{e,a}f_{A_1})(X_{e,a}h_{A_2}). \tag{P9}
+\]
+Equation (P5) proves the label-by-label identity
+\[
+ T\mathcal B(f,h)=\mathcal B(Tf,Th). \tag{P10}
+\]
+The removed scalar remains the separately recorded energy scalar and is fixed by \(T\).
+
+Here are the original estimates needed for completion and inversion. A nonzero physical block contains a singlet at every vertex, so \(j_e\le\sum_{f\ne e,\ f\ni v}j_f\). At the endpoints of one edge, the sum \(J_1\) of the other incident spins obeys \(J_1\ge2j_e\). Their outer endpoints are distinct because the cubic graph is simple and triangle-free. The vertex inequalities at those endpoints give \(J_1\le2J_2\), counting each further edge at most twice. Thus \(\sum_fj_f\ge4j_e\). Since \(j(j+1)\ge3j/2\) at every nonzero half-integer,
+\[
+ c_j\ge6j_e,\qquad \sum_ej_e\le\tfrac23c_j. \tag{P11}
+\]
+The full original coefficient product obeys \(\|fh\|_X\le\|f\|_X\|h\|_X\): unitarily decompose the tensor-product representation with all multiplicities, pinch to irreducible blocks, and partially trace their multiplicity spaces. Pinching contracts trace norm; the partial trace contracts it by duality against \(Z\otimes I\), \(\|Z\|\le1\). The original spin generator has norm \(j_e\), yielding the derivative bound \(j_e\|A_j\|_1\). Define the unchanged F6 norms
+\[
+ m(f)=\max_b\sum_{A\ni b,j}\Big(\sum_ej_e\Big)\|A_{A,j}\|_1,\qquad
+ t(f)=\max_e\sum_{A\ni e,j}j_e\|A_{A,j}\|_1.
+\]
+An output anchor belongs to at least one input union label. Sum first over anchors in the first input and then those in the second. The possible double counting only increases the nonnegative bound. The three generators give factor 3, while the actual output Casimir cancels its inverse in (P9). Therefore
+\[
+ \|\mathcal B(f,h)\|_{\rm loc}
+ \le3\{m(f)t(h)+m(h)t(f)\}
+ \le\tfrac23\|f\|_{\rm loc}\|h\|_{\rm loc}. \tag{P12}
+\]
+The last inequality uses \(m(f)\le2\|f\|_{\rm loc}/3\) and \(t(f)\le\|f\|_{\rm loc}/6\), proved by (P11). In particular,
+\[
+ \|2\mathcal B(q,\cdot)\|\le m(q)+4t(q). \tag{P13}
+\]
+The bounds include every boundary anchor and are independent of \(L\).
+
+Assembly of (P9) is \(K^{-1}Q_H\Gamma(\operatorname{Asm}f,\operatorname{Asm}h)\). This follows first for finite coefficients, then by continuity: at fixed finite \(L\), the total \(c_j\)-weighted norm controls every first and second derivative, since \(j_e\le c_j\), \(j_e^2\le c_j\), and \(j_ej_f\le[j_e(j_e+1)+j_f(j_f+1)]/2\le c_j\). Thus \(\mathcal B(\mathscr N_L,\mathscr V_L)\) and \(\mathcal B(\mathscr V_L,\mathscr N_L)\) lie in \(\mathscr N_L\). Equations (P10)–(P13) descend to the quotient by taking infima over representatives.
+
+\subsection*{P4. Original face space and coefficient parity}
+
+Let \(P\) be the original physical spectral projection onto \(\ker(K-3)\), acting blockwise while retaining every label \(A\), and \(R=I-P\). These projections contract (P7), preserve (P8), and commute with \(T\).
+
+The exact face-space identification follows in the original blocks. If \(c_j=3\), there are at most four active edges, because each contributes at least \(3/4\). The singlet inequalities exclude valence-one active vertices. Such a finite graph contains a cycle. The cubic graph has no triangle or odd cycle, so all four edges form one elementary face and there are no others. The singlet at each two-edge vertex forces equal spins, and \(4j(j+1)=3\) forces \(j=1/2\). Each such vertex invariant is one-dimensional; contracting the four original indices gives \(W_p\). Conversely \(W_p\) is physical and \(KW_p=3W_p\). Distinct faces have distinct product-spin supports and are orthogonal; successive Haar integration gives \(\int W_p^2\,dU=1\). This proves the G8 identity and, by (P4),
+\[
+ \ker(K-3)=\operatorname{span}\{W_p\},\qquad TP=PT=-P. \tag{P14}
+\]
+An enlarged label does not change its spin character.
+
+Retain the complete original recurrence
+\[
+ v_1=S/3,\qquad v_n=\sum_{i=1}^{n-1}\mathcal B(v_i,v_{n-i})\quad(n\ge2).
+ \tag{P15}
+\]
+The base case is \(Tv_1=-v_1\). If \(Tv_i=(-1)^iv_i\) for all \(i<n\), then (P10) gives
+\[
+ Tv_n=\sum_{i=1}^{n-1}\mathcal B((-1)^iv_i,(-1)^{n-i}v_{n-i})
+ =(-1)^nv_n.
+\]
+Hence, on the original labelled source,
+\[
+ \boxed{Tv_n=(-1)^nv_n\quad(n\ge1).} \tag{P16}
+\]
+In particular an actual coefficient at \((A,j)\) is zero when \(\chi(j)\ne(-1)^n\); the recurrence and every original label remain intact.
+
+For the fifth reference define
+\[
+ q_5(\xi)=\sum_{i=1}^5\xi^iv_i,\quad
+ J_i=2\mathcal B(v_i,\cdot),\quad
+ J_5(\xi)=\sum_{i=1}^5\xi^iJ_i.
+\]
+Here \(J_i\) denotes the coefficient called \(J_{[i]}\) in the earlier J1–J7, whereas \(J_5(\xi)\) denotes the fifth-reference polynomial. Equations (P10),(P16) imply
+\[
+ Tq_5(\xi)=q_5(-\xi),\quad TJ_iT=(-1)^iJ_i,\quad
+ TJ_5(\xi)T=J_5(-\xi). \tag{P17}
+\]
+
+\subsection*{P5. Certified analytic disk and full complementary inverse}
+
+The original F26 supplies proved upward bounds \(m(v_i)\le m_i\), \(t(v_i)\le t_i\):
+\[
+\begin{array}{c|cc}
+i&m_i&t_i\\\hline
+1&64/3&16/3\\
+2&5834/39&137/6\\
+3&336572872/208845&225985217/1253070\\
+4&17270702970768271/341697152160&110695177857394584026401/18025447358750832000\\
+5&1638684&190128 .
+\end{array}\tag{P18}
+\]
+They concern the full original coefficients, including all source rows and boundary anchors. This derivation reads the proofs and receiving estimates; it does not claim a fresh replay of the inherited 662-representative catalogue. Their exact source versions and hashes are in `SOURCE\_READING\_USE\_LEDGER.json`.
+
+By (P13), \(\|J_i\|\le a_i=m_i+4t_i\), explicitly
+\[
+\begin{split}
+a_1&=128/3,\quad a_2=3132/13,\quad a_3=292337810/125307,\\
+a_4&=169232115504453213210913/2253180919843854000,\quad
+a_5=2399196.
+\end{split}\tag{P19}
+\]
+Put \(\ell(x)=\sum_{i=1}^5a_ix^i\) and let \(\beta\) be the unique positive root of \(\ell(\beta)=1\). All \(a_i>0\), so \(\ell\) is strictly increasing on \([0,\infty)\), starts at zero and tends to infinity, proving existence and uniqueness. Exact rational bisection is retained in `EXACT\_CHECKS.json`; \(\beta\approx0.020200392941788888\) is only a display value.
+
+For every complex \(\xi\) with \(x=|\xi|<\beta\),
+\[
+ \|J_5(\xi)\|\le\ell(x)<1.
+\]
+Since \(R\) contracts, on the full original complement of either the labelled source or its quotient,
+\[
+ D_5(\xi)=R-RJ_5(\xi)R,\qquad
+ \boxed{D_5(\xi)^{-1}=\sum_{k=0}^\infty(RJ_5(\xi)R)^k,\quad
+ \|D_5(\xi)^{-1}\|\le\frac1{1-\ell(x)}.} \tag{P20}
+\]
+The constant term is the identity \(R\) of that complementary space. The tail after \(k=N\) is bounded by \(\ell(x)^{N+1}/(1-\ell(x))\). Convergence is uniform on each compact subdisk, proving operator holomorphy on the full certified disk \(D_\beta\). No maximal-radius claim is made.
+
+Exact rational evaluation gives
+\[
+ \ell(19/1000)<93/100,\qquad
+ \|D_5(\xi)^{-1}\|<100/7\quad(|\xi|\le19/1000). \tag{P21}
+\]
+Thus this bound covers the entire original fifth-source interval \(x\le\alpha\), since F29 gives
+\[
+ 0.018424953576117616681<\alpha
+ <0.018424953576117616682<19/1000 .
+\]
+This estimates the full complementary operator, not a face compression. From (P17),
+\[
+ TD_5(\xi)T=D_5(-\xi),\qquad
+ TD_5(\xi)^{-1}T=D_5(-\xi)^{-1}. \tag{P22}
+\]
+The same relations hold coefficientwise as formal series.
+
+\subsection*{P6. Every odd Schur coefficient vanishes before assembly}
+
+The original Schur map is
+\[
+ \mathscr S_5(\xi)=P-PJ_5(\xi)P
+ -PJ_5(\xi)R D_5(\xi)^{-1}RJ_5(\xi)P. \tag{P23}
+\]
+It is a bounded holomorphic face-range map on \(D_\beta\). Equations (P17),(P22) give \(T\mathscr S_5(\xi)T=\mathscr S_5(-\xi)\). By (P14), both its endpoint actions of \(T\) are \(-I\). Therefore
+\[
+ \boxed{\mathscr S_5(-\xi)=\mathscr S_5(\xi).} \tag{P24}
+\]
+
+More strongly, for \(k\ge1\) and \(i_s\in\{1,\ldots,5\}\), define the literal word
+\[
+ F_{i_1,\ldots,i_k}=PJ_{i_1}RJ_{i_2}R\cdots RJ_{i_k}P,
+ \quad F_i=PJ_iP\text{ if }k=1.
+\]
+Conjugating each factor gives
+\[
+ TF_{i_1,\ldots,i_k}T=(-1)^{i_1+\cdots+i_k}F_{i_1,\ldots,i_k},
+\]
+whereas its endpoints and (P14) give \(TF_{i_1,\ldots,i_k}T=F_{i_1,\ldots,i_k}\). Consequently
+\[
+ \boxed{F_{i_1,\ldots,i_k}=0
+ \quad\text{whenever }i_1+\cdots+i_k\text{ is odd}.} \tag{P25}
+\]
+This is a labelled-source identity, for every original union label, and therefore descends to the quotient. No cancellation between different words is required.
+
+In particular the full third coefficient is
+\[
+ [\xi^3]\mathscr S_5
+ =-PJ_3P-PJ_1RJ_2P-PJ_2RJ_1P-PJ_1RJ_1RJ_1P=0. \tag{P26}
+\]
+Each of these four summands is zero separately. Every \([\xi^{2r+1}]\mathscr S_5\), \(r\ge0\), vanishes; no higher even channel is discarded.
+
+\subsection*{P7. The retained complete second coefficient}
+
+To combine the original J1–J6 with this result, keep all their intermediate channels. Put \(D_p=\chi_1(U_p)\). From \(W_p^2=1+D_p\),
+\[
+ KD_p=8D_p,\quad\|D_p\|_H^2=1,\quad
+ \Gamma(W_p,W_p)=3-D_p.
+\]
+For adjacent faces \(p\sim q\), let \(C_{0,pq},C_{1,pq}\) be the original shared-edge spin-zero and spin-one projections of \(W_pW_q\). Cyclic trace and inversion of a whole SU(2) trace put the ordered words at that edge into \(\operatorname{Tr}(UA),\operatorname{Tr}(U^{-1}B)\), retaining the two three-link paths. The six nonshared links are independent Haar factors; successive integration makes \(A,B\) independent Haar variables, also independent of \(U\). Thus \(\|W_pW_q\|_H^2=1\), while \(\|\operatorname{Tr}(AB)/2\|_H^2=1/4\). Orthogonality of the two shared-edge spin projections gives the remaining norm \(3/4\). In full,
+\[
+ C_0=\tfrac12\operatorname{Tr}(AB),\quad C_0+C_1=W_pW_q,\quad
+ KC_0=\tfrac92C_0,\quad KC_1=\tfrac{13}2C_1,
+\]
+\[
+ \|C_0\|_H^2=\tfrac14,\quad\|C_1\|_H^2=\tfrac34,\quad
+ \langle C_0,C_1\rangle_H=0.
+\]
+The product rule \(K(fh)=(Kf)h+f(Kh)-2\Gamma(f,h)\) gives
+\(\Gamma(W_p,W_q)=3C_0/4-C_1/4\). Nonadjacent derivative supports are disjoint. The self-face scalar 3 is removed only by the original \(Q_H\). Thus the complete outgoing map is
+\[
+ J_1W_p=-\tfrac1{12}D_p+
+ \sum_{q\sim p}\left(\tfrac19C_{0,pq}-\tfrac1{39}C_{1,pq}\right).
+ \tag{P27}
+\]
+Its Casimirs imply \(PJ_1P=0\).
+
+Two different unordered face pairs have different independent link-center characters. Otherwise the mod-two sum of at most four distinct faces would have zero edge boundary. Each of the four edges of an included face would require a different other face, since distinct elementary faces share at most one edge. At least five faces would be required, a contradiction. The pair characters are also distinct from the completely even spin-one face character. Haar substitution therefore gives exactly the pair-selection rules below.
+
+For a Casimir-\(c\) component \(h_c\), integration by parts and the product rule give
+\[
+ \Gamma(S,\cdot)^*=3S-\Gamma(S,\cdot),\quad
+ \langle h_c,\Gamma(S,W_r)\rangle_H
+ =\tfrac{6-c}{2}\langle h_c,SW_r\rangle_H .
+\]
+Keeping \(PK^{-1}Q_H=P/3\) yields
+\[
+ PJ_1h_c=\tfrac c9PSh_c. \tag{P28}
+\]
+Indeed its scalar factor is \((2/9)[3-(6-c)/2]=c/9\).
+The selection rules force the two fundamental face factors in \(PSD_p\) to coincide. If their common face is \(r\ne p\), then \(\int W_r^2D_p=\int(1+D_r)D_p=0\) by the distinct spin-one supports. The surviving integral is \(\int W_p^2D_p=1\), giving \(PSD_p=W_p\). For the two shared-edge channels only the original unordered pair survives, and its face integrals are exactly their squared Haar norms. Hence
+\[
+ PJ_1D_p=\tfrac89W_p,\quad
+ PJ_1C_0=\tfrac18(W_p+W_q),\quad
+ PJ_1C_1=\tfrac{13}{24}(W_p+W_q).
+\]
+The adjacent return keeps the two terms
+\[
+ \tfrac19\tfrac18(W_p+W_q)
+ -\tfrac1{39}\tfrac{13}{24}(W_p+W_q)
+ =(\tfrac1{72}-\tfrac1{72})(W_p+W_q)=0.
+\]
+The self-face return is \(-\tfrac1{12}\tfrac89W_p=-2W_p/27\). Therefore
+\[
+ PJ_1RJ_1P=PJ_1^2P=-\tfrac2{27}P. \tag{P29}
+\]
+
+The complete second source is
+\[
+ v_2=-\tfrac1{72}\sum_pD_p+
+ \sum_{\{p,q\}:p\sim q}
+ \left(\tfrac1{27}C_{0,pq}-\tfrac1{117}C_{1,pq}\right).
+\]
+For a Casimir-\(c\) part \(f_c\), projecting the product rule gives
+\(P\Gamma(f_c,W_q)=cP(f_cW_q)/2\); its contribution to \(PJ_2W_q\) is \(cP(f_cW_q)/3\). The self coefficient is
+\(-\tfrac1{72}\tfrac83=-1/27\). The two adjacent coefficients to either face are
+\[
+ \tfrac1{27}\frac{9/2}{3}\tfrac14=\tfrac1{72},\qquad
+ -\tfrac1{117}\frac{13/2}{3}\tfrac34=-\tfrac1{72}.
+\]
+Thus, preserving both contributions,
+\[
+ PJ_2P=-\tfrac1{27}P,\qquad
+ -PJ_2P-PJ_1RJ_1P=\tfrac19P. \tag{P30}
+\]
+For an input face carrying an enlarged label \(A_0\), the self-return label is \(A_0\), and the two cancelling adjacent contributions both have label \(A_0\cup\partial p\cup\partial q\). Hence these identities hold on the entire labelled face range, before quotienting.
+
+\subsection*{P8. A rational bound for the complete remaining even tail}
+
+The Neumann series makes the original Schur expression exactly
+\[
+ \mathscr S_5(\xi)=P-
+ \sum_{k\ge1}\sum_{1\le i_1,\ldots,i_k\le5}
+ \xi^{i_1+\cdots+i_k}F_{i_1,\ldots,i_k}. \tag{P31}
+\]
+For \(x=|\xi|<\beta\), the sum of the operator norms is bounded by
+\[
+ h(x)=\sum_{k\ge1}\ell(x)^k=\frac{\ell(x)}{1-\ell(x)}.
+\]
+Thus regrouping by total degree is valid. Write \(h(x)=\sum_{n\ge1}h_nx^n\); all \(h_n\ge0\), and
+\(\|[\xi^n](P-\mathscr S_5)\|\le h_n\). In particular
+\[
+ h_2=a_2+a_1^2=\frac{241180}{117}. \tag{P32}
+\]
+Put \(e(x)=a_2x^2+a_4x^4\), \(o(x)=a_1x+a_3x^3+a_5x^5\). The full even part is
+\[
+ \frac{h(x)+h(-x)}2
+ =\frac12\left\{\frac{e+o}{1-e-o}+\frac{e-o}{1-e+o}\right\}
+ =\frac{e-e^2+o^2}{(1-e)^2-o^2}. \tag{P33}
+\]
+For \(x<\beta\), both denominator factors \(1-e-o\) and \(1-e+o\) are positive. Retain the entire numerator and denominator and define
+\[
+ \mathcal E_4(x)=
+ \frac{e(x)-e(x)^2+o(x)^2}{[1-e(x)]^2-o(x)^2}
+ -(a_2+a_1^2)x^2
+ =\sum_{r\ge2}h_{2r}x^{2r}. \tag{P34}
+\]
+Its nonnegative series proves nonnegativity, monotonicity and order four. Combining (P25),(P30),
+\[
+ \boxed{\mathscr S_5(\xi)=
+ (1+\xi^2/9)P+\mathcal R_4(\xi),\quad
+ \mathcal R_4(-\xi)=\mathcal R_4(\xi),\quad
+ \|\mathcal R_4(\xi)\|\le\mathcal E_4(|\xi|).} \tag{P35}
+\]
+Every even order at least four and every complementary spin and union label is included. The bound is independent of \(L\) in the original local source norm and the assembly quotient norm.
+
+Exact rational evaluation in `EXACT\_CHECKS.json` proves
+\[
+ \mathcal E_4(1/100)<66/1000,\qquad
+ \mathcal E_4(1/64)<3/4. \tag{P36}
+\]
+For size only, the corresponding decimals are \(0.06577819999898235\) and \(0.737650994481419\). Since \(x^{2k}\le(x/r)^4r^{2k}\) for \(k\ge2\), \(0\le x\le r<\beta\),
+\[
+ \mathcal E_4(x)\le(x/r)^4\mathcal E_4(r). \tag{P37}
+\]
+In particular the entire remainder has bound \((66/1000)(100|\xi|)^4\) on \(|\xi|\le1/100\).
+
+The full \(I-J_5(\xi)\) also has its complete Neumann inverse on \(D_\beta\). Solving its two block equations gives
+\[
+ \mathscr S_5(\xi)^{-1}=P(I-J_5(\xi))^{-1}P,\qquad
+ \|\mathscr S_5(\xi)^{-1}\|\le\frac1{1-\ell(|\xi|)}. \tag{P38}
+\]
+For a face forcing \(f\), the complementary equation gives \(u_R=D_5^{-1}RJ_5Pu_P\). Substituting it into the face equation gives exactly (P23); conversely this substitution solves both equations. This proves the block identity and its inverse, including points where (P34) is too large for a small-perturbation estimate.
+
+One further direct consequence of (P36), on the complete complex disk \(|\xi|\le1/64\), is
+\[
+ |1+\xi^2/9|\ge1-1/36864,\quad
+ \|\mathscr S_5(\xi)^{-1}\|<
+ \frac1{1-1/36864-3/4}.
+\]
+No Haar self-adjointness, Schur positivity, new physical gap or enlarged nonlinear source endpoint is inferred from these auxiliary Banach bounds.
+
+\subsection*{P9. Full Hamiltonian and retained vacuum scalar}
+
+Equations (P4),(P5) prove, on the original fixed domain and for every complex \(\xi\),
+\[
+ \boxed{TH_L(\xi)T
+ =\kappa K+\kappa\xi(2M+S)
+ =H_L(-\xi)+4\kappa M\xi I.} \tag{P39}
+\]
+The scalar is the difference of the two original \(2\kappa M\xi\) terms; neither Hamiltonian has lost its scalar.
+
+For real \(\xi\), list the physical eigenvalues in increasing order with multiplicity. Unitary conjugation gives for every \(n\ge0\)
+\[
+ \boxed{E_{n,L}(\xi)=E_{n,L}(-\xi)+4\kappa M\xi.} \tag{P40}
+\]
+Subtracting the exact original ground energies consequently yields
+\[
+ E_{n,L}(\xi)-E_{0,L}(\xi)
+ =E_{n,L}(-\xi)-E_{0,L}(-\xi),
+\]
+\[
+ T[H_L(\xi)-E_{0,L}(\xi)]T=H_L(-\xi)-E_{0,L}(-\xi). \tag{P41}
+\]
+Thus the physical gap on every original finite box is even in the auxiliary real coefficient \(\xi\) at fixed \(\kappa\).
+
+The positive unit ground vector exists and is unique for every real \(\xi\). The original argument F3 applies: compactness supplies a ground minimizer; the derivative modulus inequality makes it nonnegative; elliptic regularity and the strong maximum principle make it smooth and strictly positive. For this vector \(\psi\), integration by parts in its exact eigen-equation gives
+\[
+ q_{H-E_0}(\psi f)=
+ \kappa\int\psi^2\sum_{e,a}|X_{e,a}f|^2\,dU.
+\]
+Division by the smooth positive \(\psi\) preserves \(H^1\). The quotient of any other ground vector by \(\psi\) has every derivative zero, hence is constant on the connected configuration space. Positivity and unit norm fix that constant. Gauge transformations preserve all these conditions, so uniqueness makes the scalar-space ground vector physical.
+
+Define the original vacuum density \(\rho_L(\xi)=\psi_L(\xi)^2\). Since \(T\) preserves positivity and norm, (P39) and uniqueness give
+\[
+ \psi_L(-\xi)=T\psi_L(\xi),\qquad
+ \rho_L(-\xi)=T\rho_L(\xi). \tag{P42}
+\]
+The exact zero-Haar logarithm
+\[
+ v_L(\xi)=\log\psi_L(\xi)-P_H\log\psi_L(\xi)
+\]
+satisfies \(v_L(-\xi)=Tv_L(\xi)\). The original normalization constant and scalar are
+\[
+ c_L(\xi)=-\tfrac12\log\int e^{2v_L(\xi)}\,dU,\quad
+ C_L(\xi)=P_H\Gamma(v_L(\xi),v_L(\xi)).
+\]
+Haar invariance and (P5) prove \(c_L(-\xi)=c_L(\xi)\), \(C_L(-\xi)=C_L(\xi)\), with
+\[
+ E_{0,L}(\xi)=2\kappa M\xi-\kappa C_L(\xi). \tag{P43}
+\]
+Every original removed scalar is present in this energy equation.
+
+The original multiplication map \(\mathcal U_\xi f=\psi_L(\xi)f\) from \(L^2(\rho_L(\xi)dU)\) to Haar \(L^2\) has the exact intertwining
+\[
+ \mathcal U_{-\xi}T=T\mathcal U_\xi.
+\]
+Here \(T:L^2(\rho_L(\xi)dU)\to L^2(\rho_L(-\xi)dU)\) is unitary by Haar substitution. Combining with (P41) proves covariance of the original ground-transformed operators and their forms. For each integrable observable \(f\),
+\[
+ \int\rho_L(-\xi)f\,dU=\int\rho_L(\xi)Tf\,dU.
+\]
+Each original face expectation is therefore odd. This uses the exact different interacting measures and does not replace them by Haar measure.
+
+\subsection*{P10. The complete nonlinear source and its interior inverse}
+
+The parity extends to the full fifth-reference correction by its proved construction. Retain
+\[
+ R_5(\xi)=\xi v_1+\mathcal B(q_5(\xi),q_5(\xi))-q_5(\xi),\qquad
+ L_5(\xi)=I-J_5(\xi).
+\]
+Equations (P10),(P17) give \(TR_5(\xi)=R_5(-\xi)\) and \(TL_5(\xi)^{-1}T=L_5(-\xi)^{-1}\) on \(D_\beta\). For the complete original tree series,
+\[
+ w_1=L_5^{-1}R_5,\qquad
+ w_n=L_5^{-1}\sum_{i+j=n}\mathcal B(w_i,w_j),
+\]
+induction gives \(Tw_n(\xi)=w_n(-\xi)\). Its proved F30–F32 absolute convergence on \(|\xi|\le\alpha\) gives
+\[
+ T[q_5(\xi)+\sum_{n\ge1}w_n(\xi)]
+ =q_5(-\xi)+\sum_{n\ge1}w_n(-\xi). \tag{P44}
+\]
+Absolute convergence includes the closed boundary. On the real interval, the original positive-ground reconstruction identifies this source with the logarithm in (P43).
+
+Retain every scalar in
+\[
+ b_{ij}=3(m_it_j+m_jt_i),\quad
+ \delta(x)=\sum_{1\le i,j\le5,\ i+j\ge6}b_{ij}x^{i+j},
+\]
+\[
+ \mathscr D(x)=[1-\ell(x)]^2-\tfrac83\delta(x),\qquad
+ w_*(x)=\tfrac34[1-\ell(x)-\sqrt{\mathscr D(x)}].
+\]
+Original F31 proves \(\|v-q_5\|\le w_*(x)\), and \(\mathscr D(x)>0\) for \(0\le x<\alpha\). For the actual full Jacobian \(J(\xi)=2\mathcal B(v(\xi),\cdot)\), (P12) therefore gives
+\[
+ \|J(\xi)\|\le\ell(x)+\tfrac43w_*(x)
+ =1-\sqrt{\mathscr D(x)}<1.
+\]
+Consequently the full nonlinear complementary inverse exists on that interior disk and
+\[
+ \boxed{\|(R-RJ(\xi)R)^{-1}\|
+ \le1/\sqrt{\mathscr D(x)}\quad(0\le x<\alpha).} \tag{P45}
+\]
+Its Schur map is even by the same conjugation proof. At \(x=\alpha\), this estimate has zero denominator and asserts no endpoint inverse. The polynomial-reference inverse (P20) remains finite there. Their exact connecting perturbation is
+\[
+ J-J_5=2\mathcal B(v-q_5,\cdot),\qquad
+ \|J-J_5\|\le\tfrac43w_*.
+\]
+
+\subsection*{P11. Exact human-source comparison and receiving calculation}
+
+Li–Meurice's Section II, original source lines 162–198, uses the \(SU(2)\) action
+\(\beta_{\rm LM}\sum_p(1-W_p/2)\) on symmetric periodic lattices with even side length. Here \(\beta_{\rm LM}\) denotes their original variable \(\beta\), distinguished from the inverse-radius root in P5. The original potential here is exactly
+\[
+ \kappa\xi\sum_p(2-W_p)=2\kappa\xi\sum_p(1-W_p/2).
+\]
+For a static weight \(e^{-tV}\), the full parameter map is \(\beta_{\rm LM}=2t\kappa\xi\); their scalar \(2\beta_{\rm LM}M\) becomes \(4t\kappa M\xi\). The explicit open-box assignment (P3) proves the local action identity on the present geometry, and commutation with every original derivative proves the additional kinetic-operator relation (P39). Thus the quantum heat traces satisfy
+\[
+ \operatorname{Tr}_{\rm phys}e^{-tH_L(-\xi)}
+ =e^{4t\kappa M\xi}\operatorname{Tr}_{\rm phys}e^{-tH_L(\xi)}
+ \quad(t>0,\ \xi\in\mathbb R).
+\]
+This follows by exponentiating (P39) and unitary invariance of trace. For completeness, \(|2M-S|\le4M\), so the min-max principle bounds the full heat trace by
+\[
+ e^{4t\kappa M|\xi|}
+ \left[\sum_{j=0,1/2,\ldots}(2j+1)^2e^{-t\kappa j(j+1)}\right]^{|E_L|}<\infty.
+\]
+Each one-link sum converges by its Gaussian decay, proving trace class; restriction to the physical reducing subspace preserves it. No equality between the static integral and quantum heat trace is asserted.
+
+Their lines 339–353 explicitly derive perturbative parity and Wilson-loop parity; those results are an antecedent, not a new finding here. Their lines 267–288 discuss gauge equivalence within their constructed collections of special link-line configurations. This note does not use those passages as a classification of all periodic flat central twists.
+
+The previously unfinished J7 calculation is strengthened by (P26), (P20), and (P35): the third coefficient is exactly zero; every higher odd return is zero before assembly; the complete complementary inverse has an explicit uniform bound; and the complete remaining even tail has an explicit rational majorant. The fourth coefficient is now the first unevaluated coefficient that can change this face Schur map. Its value is not replaced by the majorant, and no new nonlinear endpoint or physical gap is inferred. The original fourth return with every spin channel is the next concrete calculation; the full fifth residual and the bounds above supply rigorous remainders while that coefficient is evaluated.
+\clearpage
+\section*{Central link signs and the exact boundary obstruction}
+
+Multiplying selected \(SU(2)\) links by \(-I\) can reverse every elementary plaquette trace simultaneously. On the original open box this transformation exists and is unique on gauge-invariant functions. On a periodic rectangular box it exists exactly when at most one side has an odd number of links. When it exists there are eight distinct transformations on gauge-invariant functions, distinguished by the signs of the three winding loops. The following construction retains all links, faces, orientations and the full Hamiltonian scalar.
+
+This result supplies the boundary domain of the central-sign symmetry used in the companion Jacobian calculation. It concerns the finite original operator; it does not supply its continuum limit. The original operator conventions are \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md}{PK25 and PK132}. All sign constructions and classification arguments needed here are proved below.
+
+L. Li and Y. Meurice already use center multiplication to reverse plaquette traces on even periodic cubes in \href{https://arxiv.org/abs/hep-lat/0410029v2}{Lattice gluodynamics at negative \(g^2\), arXiv:hep-lat/0410029v2}, Sections II–IV and the Appendix. Their Section III identifies one uniform set of elementary plaquette values and compares particular translated or rotated line constructions. Our classification below concerns all central link assignments and also retains winding traces. The center-reversal mechanism is therefore a literature input; the present proof gives its exact rectangular boundary conditions, winding classes and original Hamiltonian map. No novelty claim is made.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{CENTRAL_SIGNS_AND_BOUNDARIES.png}\caption{Exact central link signs and periodic face-product obstruction}\end{figure}
+
+The left panel is an exact coordinate slice of CS6. The middle panel shows the proposed face signs on a periodic \(3\)-by-\(3\) coordinate torus, whose impossibility follows by multiplying all nine faces. The right panel records the complete three-dimensional conclusions proved in CS8–CS19. Figure source: central\_signs\_figure.py.
+
+\subsection*{1. Original link and face maps}
+
+Let the open vertices be
+\[
+ V_{\rm op}=\prod_{i=1}^3\{0,\ldots,m_i\},\qquad m_i\ge1.
+ \tag{CS1}
+\]
+A positive link \((n;i)\) goes from \(n\) to \(n+e_i\), and is present exactly when \(n_i<m_i\). The face \((n;i,j)\), \(i<j\), is present when both these inequalities hold. Its original ordered holonomy and trace are
+\[
+ U_{n;ij}=U_i(n)U_j(n+e_i)U_i(n+e_j)^{-1}U_j(n)^{-1},
+ \qquad W_{n;ij}=\operatorname{Tr}U_{n;ij}.
+ \tag{CS2}
+\]
+The original cubic box is obtained by \(m_1=m_2=m_3=2L\) and the exact coordinate change \(n=k+(L,L,L)\) from \(k\in\{-L,\ldots,L\}^3\). No physical coordinate, lattice spacing or edge midpoint is changed by this relabelling.
+
+For a central sign assignment \(z_i(n)\in\{1,-1\}\), define
+\[
+ (D_zU)_i(n)=z_i(n)U_i(n),\qquad
+ (\partial z)_{n;ij}
+ =z_i(n)z_j(n+e_i)z_i(n+e_j)z_j(n).
+ \tag{CS3}
+\]
+The missing inverse signs in the second formula are intentional: \(z^{-1}=z\). Centrality, without commuting any of the \(U\) factors, gives
+\[
+ U_{n;ij}(D_zU)=(\partial z)_{n;ij}U_{n;ij}(U).
+ \tag{CS4}
+\]
+For any oriented edge word \(\gamma=(e_1^{\epsilon_1},\ldots,e_q^{\epsilon_q})\), where repetitions and \(\epsilon_l\in\{1,-1\}\) are retained,
+\[
+ U_\gamma(D_zU)=
+       \left(\prod_{l=1}^q z_{e_l}^{\epsilon_l}\right)U_\gamma(U).
+ \tag{CS5}
+\]
+This follows factor by factor from \((zU)^{-1}=z^{-1}U^{-1}\). In particular central signs do not change the order or support of a loop.
+
+\subsection*{2. The open-box construction and its gauge class}
+
+Set, on every existing positive link,
+\[
+ z_i^0(n)=(-1)^{\,\sum_{k<i}n_k}.
+ \tag{CS6}
+\]
+For \(i<j\), increasing coordinate \(i\) changes \(z_j^0\) by \(-1\), whereas increasing coordinate \(j\) leaves \(z_i^0\) unchanged. Consequently the four factors in CS3 have product \(-1\) on every existing face, including boundary faces. In the original \(k\) coordinates one may instead use \((-1)^{\sum_{h<i}k_h}\). The two assignments differ by direction-dependent constant signs \((-1)^{(i-1)L}\), which have zero face curvature; the argument below proves their physical equivalence.
+
+We prove the complete uniqueness statement. If \(z,z'\) both have face product \(-1\), then \(h_e=z_ez'_e\) has face product \(+1\). Define \(a(n)\) as the product of \(h\) along the monotone root path from \(0\) to \(n\), taking the coordinate directions in the order \(1,2,3\). Set \(a(0)=1\). The equation on an \((i,j)\)-face says exactly that the product along its two monotone two-edge paths is equal. Adjacent exchanges of unlike steps therefore preserve a monotone path product. Every ordering of the same multiset of coordinate steps is obtained by finitely many such adjacent exchanges, and every intermediate path stays inside the box. Appending the edge \((n;i)\) to the chosen path to \(n\), and reordering its steps, gives the chosen path to \(n+e_i\). Thus
+\[
+ h_i(n)=a(n)a(n+e_i),\qquad
+ z'_i(n)=a(n)z_i(n)a(n+e_i).
+ \tag{CS7}
+\]
+Conversely every choice of vertex signs \(a\) in CS7 preserves all face products, because each of the four vertex signs occurs twice. The only assignments \(a\) producing the identity link change are constants: equality of adjacent vertex values and connectedness prove this. There are therefore exactly
+\[
+ 2^{\,|V_{\rm op}|-1}
+ \quad\hbox{face-reversing link assignments, and one vertex-sign gauge class.}
+ \tag{CS8}
+\]
+The vertex signs \(a(n)I\) are actual \(SU(2)\) gauge transformations. Hence every face-reversing assignment induces the same transformation on the physical, gauge-invariant Hilbert space.
+
+\subsection*{3. Periodic boxes and the necessary parity condition}
+
+Now take the vertices
+\[
+ V_{\rm per}=\prod_{i=1}^3\mathbb Z/N_i\mathbb Z,\qquad N_i\ge3.
+ \tag{CS9}
+\]
+Every positive link and every positively based \((i,j)\)-face is retained, including links and faces crossing a periodic seam. The lower bound on \(N_i\) avoids any convention about parallel one-cell or two-cell presentations.
+
+At fixed coordinate in the third direction, multiply \((\partial z)_{n;ij}\) over all \(N_iN_j\) faces of an entire coordinate two-torus. Each of its \(i\)-links occurs in exactly two factors, once at each adjacent \(j\)-position; each \(j\)-link likewise occurs twice. Thus the product is \(+1\) for every \(z\). If every face product were \(-1\), it would instead be \((-1)^{N_iN_j}\). Existence therefore requires
+\[
+ N_1N_2\equiv N_1N_3\equiv N_2N_3\equiv0\pmod2.
+ \tag{CS10}
+\]
+These three conditions say exactly that at most one \(N_i\) is odd: two odd lengths violate their pair condition, and otherwise each pair contains an even length.
+
+The condition is also sufficient. Choose an ordering \(r_1,r_2,r_3\) of the original coordinate directions with the odd length last if there is one. Each of \(N_{r_1},N_{r_2}\) is then even. For the standard representatives \(0\le n_i<N_i\), set
+\[
+ z_{r_l}^0(n)=(-1)^{\,\sum_{h<l}n_{r_h}},
+       \qquad l=1,2,3.
+ \tag{CS11}
+\]
+Consider a face in directions \(r_h,r_l\), \(h<l\). Its \(r_h\)-links have the same sign at both \(r_l\)-positions. The signs of its \(r_l\)-links differ by \(-1\) at an interior \(r_h\)-step. At a seam step from \(N_{r_h}-1\) to zero, their ratio is \((-1)^{-(N_{r_h}-1)}=-1\), because \(N_{r_h}\) is even. Thus CS3 equals \(-1\) also at every seam. Interchanging the two direction names reverses the oriented face but leaves its central sign \(-1\). The construction preserves the original coordinates and face orientation; the ordering only defines which coordinates occur in the exponent.
+
+\subsection*{4. All periodic assignments and the eight physical maps}
+
+Let \(h\) be any flat periodic assignment, meaning \(\partial h=1\). Define its three winding signs by the original coordinate loops,
+\[
+ \omega_i(h)=\prod_{q=0}^{N_i-1}h_i(n+qe_i)\in\{1,-1\}.
+ \tag{CS12}
+\]
+This product is independent of the starting coordinate \(n_i\) by cyclic permutation. It is independent of a shift of \(n\) in another direction by multiplying the flat face equations along the intervening full strip; the transverse edges cancel in pairs. Since such shifts connect all bases, CS12 is independent of every base coordinate.
+
+For any \(\omega=(\omega_1,\omega_2,\omega_3)\), define the seam assignment
+\[
+ k_i^\omega(n)=
+ \begin{cases}
+ \omega_i,&n_i=N_i-1,\\
+ 1,&0\le n_i<N_i-1.
+ \end{cases}
+ \tag{CS13}
+\]
+It is flat: in each face the two \(i\)-signs are equal and the two \(j\)-signs are equal. Its winding signs are precisely \(\omega_i\).
+
+We next prove, without identifying flatness with triviality, that a flat \(h\) with all three winding signs \(+1\) is a vertex-sign gauge change. Cut the torus at the three seams and use the open box with vertices \(0\le n_i<N_i\) and no seam edges. The open-box proof gives vertex signs \(a(n)\) such that \(h_i(n)=a(n)a(n+e_i)\) on all non-seam edges. For the seam in direction \(i\), fix the other two coordinates and multiply these \(N_i-1\) identities along the coordinate line. The resulting product is \(a(n_i=0)a(n_i=N_i-1)\). Since the complete winding product is \(1\), the missing seam edge has exactly this same sign. CS7 therefore holds on every periodic edge.
+
+For general flat \(h\), the product \(hk^{\omega(h)}\) has trivial winding signs, so the preceding construction applies to it. Consequently the full set of face-reversing assignments, when nonempty, is
+\[
+ z_i(n)=z_i^0(n)\,k_i^\omega(n)\,a(n)a(n+e_i),
+ \quad\omega\in\{1,-1\}^3,\quad a\in\{1,-1\}^{V_{\rm per}}.
+ \tag{CS14}
+\]
+Two choices of \(a\) yield the same link assignment exactly when they differ by one global sign. Different \(\omega\) cannot be related by vertex signs, since vertex signs cancel in a closed-loop product. Thus there are exactly \(2^{|V_{\rm per}|+2}\) assignments and eight vertex-sign gauge classes.
+
+These eight classes induce distinct maps even on physical \(SU(2)\) functions. If two classes differ in winding sign \(i\), apply their transformations to the trace of the winding loop in direction \(i\). By CS5 the two transformed trace functions have opposite signs. This trace is a nonzero continuous gauge-invariant function: at the identity link configuration its value is \(2\). Its nonzero set contains an open set of positive Haar measure. The two Hilbert-space maps therefore differ.
+
+This classification is of central sign assignments. For the larger spaces of \(SU(2)\) fields, CS4 gives the exact additional map: \(D_{z^0}\) sends all configurations with every \(U_p=-I\) bijectively to all flat configurations with every \(U_p=I\), and its own inverse returns them. It commutes with the full vertex gauge group, so the bijection descends to their gauge quotients. The eight central classes above do not assert that these larger quotients have only eight points.
+
+In additive notation \(z_e=(-1)^{t_e}\), the exact defect equation is \(\delta t=\mathbf1_{\rm faces}\) over \(\mathbb F_2\). The constant face assignment is closed, since every cube has six faces. Its three coordinate-torus evaluations are the retained integers \(N_iN_j\) modulo two. The necessity and explicit sufficiency above prove that its obstruction vanishes exactly under CS10; no unspecified cohomological test remains. When it vanishes, its solution space modulo vertex changes is the explicitly constructed eight-element space CS14. On the open box that space has one element.
+
+\subsection*{5. Full Hamiltonian intertwining and path scope}
+
+Let \(\mathcal T_z f=f\circ D_z\) on the original product-Haar Hilbert space. Central multiplication preserves Haar measure, \(D_z^2=I\), and it commutes with every vertex gauge action. Hence \(\mathcal T_z\) is a self-adjoint unitary preserving the physical Hilbert space.
+
+For the original left generators \(X_{e,\alpha}\), centrality gives
+\[
+ X_{e,\alpha}\mathcal T_z f=\mathcal T_zX_{e,\alpha}f
+ \tag{CS15}
+\]
+on smooth functions, directly by differentiating
+\(z_e\exp(tT_\alpha)U_e=\exp(tT_\alpha)z_eU_e\).
+The same equality for the closed generators follows by transporting their graph closures; the unitary preserves smooth functions and their inverse images. Thus it preserves the electric form and self-adjoint operator \(K=-\sum_{e,\alpha}X_{e,\alpha}^2\) with their exact domains.
+
+Write
+\[
+ S=\sum_pW_p,\qquad
+ H(\xi)=\kappa K+\kappa\xi(2M-S),\quad \kappa>0,\quad \xi\in\mathbb R.
+ \tag{CS16}
+\]
+Here \(M=\sum_{i<j}m_im_j(m_k+1)\), with \(k\) the remaining direction, on the open rectangular box, and \(M=3N_1N_2N_3\) on the periodic box. For the original open cube this is \(12L^2(2L+1)\). The magnetic multiplication operator is bounded, so the operator domain is that of \(K\) for every real \(\xi\). When the face-reversing assignment exists, CS4 and CS15 prove the full equality
+\[
+ \mathcal T_zH(\xi)\mathcal T_z
+ =\kappa K+\kappa\xi(2M+S)
+ =H(-\xi)+4\kappa M\xi I.
+ \tag{CS17}
+\]
+No vacuum scalar is dropped. By unitary equivalence the ordered eigenvalues, with multiplicities on the physical subspace, satisfy
+\[
+ E_n(\xi)=E_n(-\xi)+4\kappa M\xi.
+ \tag{CS18}
+\]
+Subtracting the \(n=0\) equality from the operator identity gives
+\[
+ \mathcal T_z[H(\xi)-E_0(\xi)]\mathcal T_z
+       =H(-\xi)-E_0(-\xi).
+ \tag{CS19}
+\]
+The complete spectral projections obey the corresponding unitary equality. This is an equality of the original centered operators, not an assertion that individual excited branches must be analytic through a degeneracy.
+
+On the physical positive-coupling path, \(\kappa=2g^2/a\) and \(\xi=1/(4g^4)\). The auxiliary negative \(\xi\) in CS17 holds \(\kappa\) fixed and has no positive real \(g\) with these two same relations. CS17 therefore supplies exact parity of the coefficient problem and an operator comparison, while keeping the original positive-\(g\) regulator path unchanged. It cannot itself decide the shrinking-window four-loop difference or the continuum spectral gap.
+
+\subsection*{6. The next comparison}
+
+The open-box transformation is an exact tool for the existing Jacobian return calculation. On a periodic replacement, CS10 must first be checked; treating an odd-by-odd two-torus as if the same transformation existed would erase the explicit defect proved in Section 3. When CS10 holds, the eight maps CS14 have the same plaquette reversal and full Hamiltonian identity, but their winding-loop actions differ by CS5 and CS12. A continuum comparison involving winding observables must retain which one of those maps is used. The companion calculation uses the original open box and its unique physical map throughout.
+\clearpage
+Historical source, preserved below. The third coefficient and complete inverse/tail backlog at the end is now resolved by \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_J5_PARITY_AND_TAIL.md}{P1–P45}; the fourth coefficient is the next unevaluated term.
+
+\section*{Original first Jacobian block and its exact return}
+
+29 September 2026. This calculation continues the retained fifth-reference residual on the original open cubic box. It uses the complete face channels already proved in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/fa79faff2cd697e16cfa3a7953f36810c22c8922/yang-mills/continuations/20260915-gauge-native-band/BAND_AND_CERTIFICATE.md#L125}{B13–B16 of the 15 September band source}, not a new spin cutoff. No literature-priority claim is made.
+
+\subsection*{Objects and maps}
+
+Keep the vertices \(\{-L,\ldots,L\}^3\), \(L\ge2\), original positive links, Haar probability, all vertex gauge constraints and oriented face words
+\[
+ W_{(n;i,j)}=\operatorname{Tr}U_i(n)U_j(n+e_i)
+ U_i(n+e_j)^{-1}U_j(n)^{-1}.
+\]
+The working Hamiltonian remains
+\[
+ H_L=\kappa K+\kappa\xi(2M-S),\quad
+ K=-\sum_{e,\alpha}X_{e,\alpha}^2,\quad
+ S=\sum_pW_p,\quad M=12L^2(2L+1),\quad
+ \kappa=2g^2/a,\quad\xi=1/(4g^4).
+\]
+No energy multiplier or vacuum scalar is removed from that object. The following coefficient maps are auxiliary maps for its logarithmic vacuum equation.
+
+On physical finite Peter–Weyl polynomials let \(P_H\) be the constant Haar coefficient, \(Q_H=I-P_H\), and let \(K^{-1}\) act on every nonconstant original spin block by its actual inverse Casimir. For
+\[
+ \Gamma(f,h)=\sum_{e,\alpha}(X_{e,\alpha}f)(X_{e,\alpha}h),\qquad
+ \mathcal B(f,h)=K^{-1}Q_H\Gamma(f,h),
+\]
+the fifth reference is \(q_5(\xi)=\sum_{i=1}^5\xi^iv_i\), with \(v_1=S/3\) and original labeled coefficients \(v_i\). Its exact linearized map is
+\[
+ J_5(\xi)=2\mathcal B(q_5(\xi),\cdot)
+ =\sum_{i=1}^5\xi^iJ_{[i]},\qquad
+ J_{[1]}=2\mathcal B(v_1,\cdot)=\tfrac23K^{-1}Q_H\Gamma(S,\cdot).
+\]
+For the completed local source, retain every pair \((S,j)\) with its original union label and norm \(\max_e\sum_{S\ni e,j}c(j)\|A_{S,j}\|_1\). Its assembly kernel is exactly \(\sum_{S\supset\operatorname{supp}(j)}A_{S,j}=0\) at every \(j\). Assembly is continuous because its total Casimir norm is bounded by \(|E_L|\) times this local norm; the kernel is closed. Take the Banach quotient by this explicit kernel when discussing assembled operator series. The bilinear map preserves that kernel in either input because assembly of its derivative product is the derivative product of the assembled inputs. Thus the original G13 bound descends to the quotient.
+
+Let \(P\) be the original physical Haar spectral projection onto \(\ker(K-3)\). On the labeled source it selects exactly those spin blocks, retaining \(S\). It and \(I-P\) contract the displayed coefficient norm and preserve the assembly kernel, so they descend to bounded quotient projections. The band source G8 proves that the assembled range is precisely \(\operatorname{span}\{W_p\}\), with \(\int_HW_pW_q=\delta_{pq}\). The maps below are identities on finite polynomials and their finite-dimensional face domain. No assertion about the full norm of \(J_5\) follows from a face-domain compression.
+
+\subsection*{First outgoing map}
+
+For an adjacent unordered pair \(\{p,q\}\), let
+\[
+ C_{0,pq}=P_{e,0}(W_pW_q),\qquad C_{1,pq}=P_{e,1}(W_pW_q),
+\]
+where \(e\) is their original shared link. Thus \(C_0+C_1=W_pW_q\). The original word identities put the two words at this link into \(\operatorname{Tr}(UA)\), \(\operatorname{Tr}(U^{-1}B)\), with their ordered three-link paths retained. Haar integration gives \(C_0=\tfrac12\operatorname{Tr}(AB)\), so
+\[
+ KC_0=\tfrac92C_0,\quad KC_1=\tfrac{13}2C_1,\quad
+ \|C_0\|_H^2=\tfrac14,\quad\|C_1\|_H^2=\tfrac34,\quad
+ \langle C_0,C_1\rangle_H=0.
+\]
+Both channels keep the original seven-edge union label, including when the shared link has spin zero. Write \(D_p=\chi_1(U_p)\); then \(KD_p=8D_p\), \(\|D_p\|_H=1\).
+
+The product rule \(K(fh)=(Kf)h+f(Kh)-2\Gamma(f,h)\), together with \(KW_p=3W_p\), proves
+\[
+ \Gamma(W_p,W_p)=3-D_p,\qquad
+ \Gamma(W_p,W_q)=\tfrac34C_{0,pq}-\tfrac14C_{1,pq}
+\]
+for an adjacent pair. Nonadjacent \(\Gamma\) is zero since the derivative supports are disjoint. The scalar 3 in the diagonal term is removed only by the explicit \(Q_H\) and remains part of the original vacuum-scalar equation. Substituting the actual inverse Casimirs gives the complete outgoing map
+\[
+ \boxed{
+ J_{[1]}W_p=-\tfrac1{12}D_p+
+ \sum_{q\sim p}\left(\tfrac19C_{0,pq}-\tfrac1{39}C_{1,pq}\right).
+ }\tag{J1}
+\]
+In particular \(PJ_{[1]}P=0\), because none of its output Casimirs \(8,9/2,13/2\) equals 3. The nonzero connecting map (J1), rather than that zero compression alone, is the relevant object.
+
+\subsection*{Complete orthogonality and the outgoing Gram}
+
+Distinct self-face spin-1 blocks \(D_p\) are orthogonal by their spin supports. Distinct adjacent unordered pairs have distinct center parity: multiplication of any original link by the central element \(-I\) gives the half-integer parity of the symmetric difference of the two boundaries. Equal parity for different pairs would produce a nonempty mod-two sum of at most four distinct faces with zero boundary. Each edge of any included face must then be shared with another included face; each other elementary face shares at most one edge with it, so at least four other faces would be required. This contradicts the total of at most four. These pair blocks are also orthogonal to every even-parity \(D_p\). The two channels of each pair are orthogonal by the original shared-link Casimir.
+
+Thus for \(C:\operatorname{ran}P\longrightarrow L^2_{\rm phys}(dU)\), \(Cx=J_{[1]}x\), every boundary degree \(d_p=\#\{q:q\sim p\}\) is retained, and
+\[
+ \|CW_p\|_H^2=\tfrac1{144}
+ +d_p\left(\tfrac1{81}\tfrac14+\tfrac1{1521}\tfrac34\right)
+ =\tfrac1{144}+d_p\tfrac{49}{13689}.
+\]
+For \(p\ne q\) the only common outgoing channels are those of \(\{p,q\}\), when they are adjacent. Consequently
+\[
+ \boxed{C^*C=\tfrac1{144}I+
+ \tfrac{49}{13689}(D_{\deg}+A_{\rm adj}).}\tag{J2}
+\]
+This is the actual Haar Gram of this outgoing auxiliary map. It is not an identity-metric replacement for the interacting band Gram. Since \(d_p\le12\), row sums give
+\[
+ \|C\|_H^2\le\tfrac1{144}+24\,\tfrac{49}{13689}.
+\]
+This estimate is uniform in the box on the specified face domain only.
+
+\subsection*{Exact return through the higher channels}
+
+For real finite polynomials the Haar adjoint of \(\Gamma(S,\cdot)\) is
+\[
+ \Gamma(S,\cdot)^*=3S-\Gamma(S,\cdot).
+\]
+Indeed integration by parts gives
+\[
+ \int_H\overline f\,\Gamma(S,h)
+ =\int_Hh\big((KS)\overline f-\Gamma(S,\overline f)\big),
+ \qquad KS=3S.
+\]
+If \(h_c\) has Casimir \(c>0\), then for any \(W_r\) the product rule and self-adjointness of \(K\) give
+\[
+ \langle h_c,\Gamma(S,W_r)\rangle_H
+ =\tfrac{6-c}2\langle h_c,SW_r\rangle_H.
+\]
+Substituting in the adjoint formula, and retaining \(PK^{-1}Q_H=P/3\), yields the exact return map
+\[
+ PJ_{[1]}h_c=\tfrac c9PS h_c. \tag{J3}
+\]
+
+For \(D_p\), center parity forces \(\langle W_r,SD_p\rangle\) to have the same two half-integer faces. They must coincide; if that coincident face differs from \(p\), an unmatched spin-1 link of \(p\) makes the integral zero. The remaining original character integral is
+\(\int_HW_p^2D_p=\int_H(1+D_p)D_p=1\). Hence
+\[
+ PSD_p=W_p,\qquad PJ_{[1]}D_p=\tfrac89W_p.
+\]
+For an adjacent pair, the same parity argument allows only the two source faces \(p,q\). At either face the scalar product with \(S C_\lambda\) is \(\int_HW_pW_qC_\lambda=\|C_\lambda\|_H^2\). Therefore
+\[
+ PSC_0=\tfrac14(W_p+W_q),\quad
+ PSC_1=\tfrac34(W_p+W_q),
+\]
+\[
+ PJ_{[1]}C_0=\tfrac18(W_p+W_q),\qquad
+ PJ_{[1]}C_1=\tfrac{13}{24}(W_p+W_q).
+\]
+Apply these literal maps to (J1). Each adjacent pair returns
+\[
+ \tfrac19\tfrac18(W_p+W_q)
+ -\tfrac1{39}\tfrac{13}{24}(W_p+W_q)
+ =\left(\tfrac1{72}-\tfrac1{72}\right)(W_p+W_q)=0.
+\]
+The self-face channel returns \(-\tfrac1{12}\tfrac89W_p=-\tfrac2{27}W_p\). Thus
+\[
+ \boxed{PJ_{[1]}^2P=-\tfrac2{27}P.}\tag{J4}
+\]
+This is composition, not the adjoint Gram \(C^*C\) in (J2); the two distinct objects have both been calculated. It holds at every original open boundary, because cancellation occurs pair by pair, without substituting a bulk degree.
+
+The original support labels also survive this proof. A self-face return has the original four-edge face label. Each adjacent two-channel return has the same seven-edge union label in both terms, so its cancellation occurs within that label. Other second-step faces have zero projection by the four-face parity argument. Thus the assembled identity (J4) has an explicit labeled representative with no discarded larger-support contribution. Assembly's relation kernel remains the coefficient-sum equation recorded in G3 and F11.
+
+\subsection*{Second coefficient of the direct face block}
+
+The complete second vacuum source, with the same labeled products, is
+\[
+ v_2=-\tfrac1{72}\sum_pD_p+
+ \sum_{\{p,q\}:p\sim q}
+       \left(\tfrac1{27}C_{0,pq}-\tfrac1{117}C_{1,pq}\right).
+\]
+For a component \(f_c\) of \(v_2\) having Casimir \(c\), the product rule projected onto the 3-eigenspace gives
+\[
+ P\Gamma(f_c,W_q)=\tfrac c2P(f_cW_q),\qquad
+ PJ_{[2]}W_q=\tfrac23\sum_cP\Gamma(f_c,W_q)
+            =\sum_c\tfrac c3P(f_cW_q).
+\]
+The same complete parity argument used above eliminates every other face and pair. The self-face coefficient is
+\[
+ -\tfrac1{72}\tfrac83PW_qD_q=-\tfrac1{27}W_q.
+\]
+For a pair containing \(q\), its two coefficients returning to either source face are
+\[
+ \tfrac1{27}\tfrac{9/2}{3}\tfrac14=\tfrac1{72},\qquad
+ -\tfrac1{117}\tfrac{13/2}{3}\tfrac34=-\tfrac1{72}.
+\]
+They cancel within their common original union label. It follows that
+\[
+ \boxed{PJ_{[2]}P=-\tfrac1{27}P.}\tag{J5}
+\]
+In particular the second coefficient of the full complementary return is
+\[
+ PJ_{[2]}P+PJ_{[1]}(I-P)J_{[1]}P=-\tfrac19P, \tag{J6}
+\]
+because \(PJ_{[1]}P=0\). For the operator coefficient series of \(I-J_5(\xi)\), its exact Schur expression is
+\[
+ \mathscr S(\xi)=P-PJ_5(\xi)P
+ -PJ_5(\xi)(I-P)
+ \left[(I-P)-(I-P)J_5(\xi)(I-P)\right]^{-1}
+ (I-P)J_5(\xi)P.
+\]
+Here the inverse may be read coefficientwise as the series with constant coefficient \(I-P\); each coefficient is a finite sum of compositions on the original physical coefficient source. The original bilinear bound makes every coefficient a bounded map on the completed local source (or its assembly quotient); for each fixed box this series also converges for sufficiently small \(|\xi|\), since \(J_5(0)=0\) and \(J_5\) is a polynomial of bounded maps. This establishes the actual operator meaning near zero without assigning a larger certified radius. Equations (J4)–(J6) give its full second coefficient
+\[
+ \boxed{\mathscr S(\xi)=P+\tfrac19\xi^2P+
+       \text{terms of degrees at least three}.}\tag{J7}
+\]
+The phrase about degree means an exact convergent local series near zero for each fixed box, not a uniform remainder estimate or positivity claim on the full complementary block.
+
+\subsection*{Receiving calculation and present limit}
+
+The coefficient of \(\xi\) in \(PJ_5(\xi)P\) vanishes; its second coefficient is \(-P/27\). The second coefficient of \(PJ_5(\xi)^2P\) is \(-2P/27\). The direct term and the actual complementary return give the Schur coefficient \(+P/9\). The higher coefficients, full outgoing channels beyond (J1), and the remainder in
+\[
+ (I-J_5)w=R_5+\mathcal B(w,w)
+\]
+remain to be evaluated. The negative return in (J4) and the positive Schur coefficient in (J7) do not certify an enlarged source endpoint or a new physical spectral-gap bound. The next concrete calculation is the third Schur coefficient, together with a norm bound for the full complementary inverse and the accumulated tail on a specified original coupling interval. The known original band matrix and complete B10 tail remain comparison inputs; their earlier result is not an unfinished open problem.
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{JACOBIAN_RETURN.png}\caption{Original outgoing and return maps}\end{figure}
+
+Figure: the self-face term and one arbitrary adjacent unordered pair in (J1)–(J4). Every actual neighbor is included in the sum (J1); the drawing shows the two common channels of a single pair. Arrows retain the original Casimirs, Haar norms, outgoing signs and return factors. The pair cancels within its original seven-edge union, while the self-face term returns \(-2W_p/27\). The second direct coefficient is separately proved in (J5). Figure source: jacobian\_return\_figure.py, with SVG and inspected PNG beside this note.
+
+The exact outgoing norms and rational return coefficients are independently checked in CLAUDE\_EXACT\_LOCAL\_CHECKS.json. This note supplies the complete arguments for (J1)–(J7); the preserved source supplies the original face-channel and physical free-band proofs. No Lean, new worker, publication, or change of reasoning effort occurred.
+\end{document}

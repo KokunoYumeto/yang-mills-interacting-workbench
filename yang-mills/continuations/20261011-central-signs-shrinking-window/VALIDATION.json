@@ -1,0 +1,44 @@
+{
+  "checked_utc": "2026-10-10T23:19:06.535777+00:00",
+  "all_passed": true,
+  "exact_incidence_cases": 9,
+  "phase_checks": 32,
+  "jacobian_rational_certificates": 7,
+  "source_math_blocks": [
+    {
+      "source": "PHASE_MOMENTS_AND_ORIGINAL_PATH.md",
+      "sha256": "74dd9939226450bcd2d3fb6751855c0cb673a60188ecf8d0fbce5bdd2e9ffe26",
+      "complete_math_blocks": 221
+    },
+    {
+      "source": "ORIGINAL_J5_PARITY_AND_TAIL.md",
+      "sha256": "8bc3f17ce98f657951d445ec4857f3afe23848eea0702f19a5cee66dc92c6ea6",
+      "complete_math_blocks": 304
+    },
+    {
+      "source": "CENTRAL_SIGNS_AND_BOUNDARIES.md",
+      "sha256": "ba13c610f43bac6131e7a5672c97cedcea426843f4ba8b8a3c2c38bede59665e",
+      "complete_math_blocks": 147
+    },
+    {
+      "source": "BASELINE_J5.md",
+      "sha256": "19330587f37000433096225d6cbea04dea65480338d8bbaba736e1edfa1e50e9",
+      "complete_math_blocks": 106
+    }
+  ],
+  "figures": [
+    {
+      "file": "CENTRAL_SIGNS_AND_BOUNDARIES.png",
+      "sha256": "b8899ae3b715dfadf1f0571c391b09b5014295758a932271684ba0ed5844b787",
+      "visually_inspected": true
+    },
+    {
+      "file": "PHASE_MOMENTS_AND_ORIGINAL_PATH.png",
+      "sha256": "37ad66d6d9c995b7af1ee1d54a2d1ee33d450eebf68b7f1d72af0e9707a9eb80",
+      "visually_inspected": true
+    }
+  ],
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers.",
+  "pdf_compiled": false,
+  "new_external_pdf_read": false
+}

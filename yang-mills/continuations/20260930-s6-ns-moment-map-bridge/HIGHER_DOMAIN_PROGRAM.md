@@ -1734,3 +1734,18 @@ including their full Hamiltonian residual. An explicit cutoff controls
 all three matrix errors on the unchanged path. The certified raw
 low-energy expression is now the next calculation toward the interacting
 continuum endpoint; positivity in a shrinking window is not assumed.
+
+## Phase moments and central link symmetry, 11 October 2026
+
+The [new continuation](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/README.md) proves exact original-word bounds for the
+shrinking-window expression and controls every polynomial phase multiplier
+at fixed box. Its original first polynomial has raw limiting norm squared
+12 and first odd-cluster weight 12. The complete Gram and energy limits
+retain their rank degeneration and volume-dependent tail constants.
+
+An exact central-link involution also settles the third and every higher
+odd Jacobian return, with full complementary-inverse and even-tail bounds.
+The boundary proof classifies all admissible open and periodic central
+sign maps, including winding signs and the full Hamiltonian scalar.
+The actual growing-box low-energy weight and interacting continuum
+endpoint remain the continuing research calculation.
