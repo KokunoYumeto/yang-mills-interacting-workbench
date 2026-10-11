@@ -819,3 +819,7 @@ Complete original programme providers: [LC1–LC42](https://github.com/KokunoYum
 ## Actual-vacuum transported-curl bound
 
 [WC25–WC45](ACTUAL_WILSON_COVARIANCE.md) evaluate the actual conditional one-link and two-link score maps and prove the transported-curl lower bound with its original-path constant. WC7–WC24 retain all repeated-edge contributions. WC50–WC55 carry the result through the complete potential, signed kinetic, score and raw-window formulas. The signed Wilson contraction in DP28 is eventually positive on the original path; the remaining spectral estimate is preserved explicitly.
+
+## Sharper signed kinetic bound and full physical receiving map
+
+[SK1–SK39](SIGNED_KINETIC_TRACE.md) evaluate the complete original ancestor matrix. SK20–SK28 give its explicit negative remainder and sharpen the original-path kinetic upper function to 1200j^5+O(j log j). SK29–SK39 retain the actual root covariance, chord-score/Gauss map, physical variable-colour Gram and raw spectral certificate. No actual covariance is replaced by its deterministic bound.

@@ -195,3 +195,7 @@ Complete programme providers: [ZU1–ZU44](https://github.com/KokunoYumeto/yang-
 ## Complete associated-operator domain and independent phase refinement
 
 [OR6–OR10](INDEPENDENT_OPERATOR_REVIEW.md) prove the exact operator domain and actual smooth test action, including the global flux and both endpoint conditions. The independent review confirms OP9–OP19. OR13–OR15 give the exact diagonal phase cancellation, full mixed residual and original second energy, strengthening the general absolute-value residual bound for the specified scalar phases.
+
+## Actual bounded energy and complete signed covariance
+
+[BM1–BM69](BOUNDED_ENERGY_MULTIPLIER.md) and the independent [IB1–IB46](BOUNDED_MULTIPLIER_RECEIVING.md) construct the original shrinking-window vector and its central, visible and hidden limiting maps. The complete retained energy gives two-root support and exact heat-word receivers. BM66–BM68 receive the full signed observable and companion covariance with every cross term. Its limiting Gram remains to be evaluated; the original operator and signed observable are retained throughout.

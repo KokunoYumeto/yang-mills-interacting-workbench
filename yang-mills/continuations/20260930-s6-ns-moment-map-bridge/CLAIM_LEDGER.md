@@ -952,3 +952,15 @@ The original physical observable a_j³ Σ f(x_p) W_p now converges in actual vac
 ## SZ-20261011-048 — Actual transported-curl covariance and signed Wilson bound
 
 [WC1–WC55](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_WILSON_COVARIANCE.md) prove an actual-vacuum lower bound for the original transported soft curl using conditional one-link scores and an exact two-link Haar fibre. All repeated-edge Casimir cross terms and exceptional tree rows are retained. WC33–WC35 prove the scalar and full mixed-row covariance bounds. On the original path, WC39–WC45 evaluate the positive constant in the lower function of order j^-1, while the ordinary cochain curl squared is of order j^-8. WC46–WC55 retain the full curvature, kinetic, score and raw spectral maps. The potential-error upper function remains too large for the new magnetic lower function alone to close the spectral estimate.
+
+## SZ-20261011-049 — Full original root-score matrix and signed kinetic trace
+
+[SK1–SK39](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SIGNED_KINETIC_TRACE.md) prove the actual full root-frame score bound, exact ancestor decomposition and all block ranks. The positive trace is (3m−1)/2 plus an explicit logarithmic upper remainder; the negative trace is retained. The original-path kinetic upper function is 1200j^5+O(j log j). SK29–SK39 give the full actual chord-score covariance, Gauss relation, physical variable-colour Gram and original raw-window map.
+
+## SZ-20261011-050 — Bounded original energy and complete signed limiting covariance
+
+[BM1–BM69](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDED_ENERGY_MULTIPLIER.md) derive every original Hessian overlap, prove first energy of order a² and second moment O(a), and map the actual centered vector into the unchanged shrinking window. The central bounded energy map retains its original cyclic visibility defect. BM58–BM69 give the two-root support, full potential/retained-energy heat-word maps, exact signed limiting covariance and companion matrix. The actual limiting variance remains unevaluated; these equations do not establish an improved raw covariance exponent.
+
+## SZ-20261011-051 — Independent cyclic and retained-energy receiving derivation
+
+[IB1–IB46](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDED_MULTIPLIER_RECEIVING.md) independently prove the original spectral endpoint and visible/hidden decomposition, all polynomial compression defects, and the full potential/retained-energy moment map. Both root excess bounds and the shifted resolvent recurrence keep all mixed terms. IB39–IB45 identify the actual leading covariance and its exact relation to the bounded Gram, including its possible collapse.
