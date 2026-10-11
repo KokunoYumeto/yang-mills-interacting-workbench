@@ -612,3 +612,7 @@ The calculation supplies both sides of the receiving problem. The actual CM obse
 ![Exact stationary phase law, covariance and original-window weight](STATIONARY_PHASE_MAP.png)
 
 The reproducible figure and bounded checks are in check_stationary_phase.py. The [source-use ledger](STATIONARY_PHASE_SOURCE_USE_LEDGER.json) records exact editions and actual reading coverage. Numerical samples illustrate the displayed formulas; they do not assign an actual quantum spectral coefficient.
+
+## Actual energy vectors and bounded phase history maps
+
+[EF1–EF27](ENERGY_ROOT_AND_ANCHORED_HISTORIES.md) prove that all actual CE heat-increment vectors have one continuous-time receiver, with their complete escaped Gram retained. A bounded sine-cylinder approximation receives every positive-energy component of the actual energy-root vector in an explicitly enlarged curvature-phase cyclic space. The proof preserves the smaller CM space and every zero-energy, original-window and cyclic-compression defect. Exact anchored variance and reflection formulas retain both spectral endpoints; a quantitative original-energy window bound uses the actual variance and the full fourth-moment remainder. EF25–EF27 additionally prove that the actual small-phase energy measures receive the complete finite-energy spectral measure, including its zero endpoint, and give a quantitative bound for positive windows. No actual coefficient is assigned a positive value merely from whole-vector survival.

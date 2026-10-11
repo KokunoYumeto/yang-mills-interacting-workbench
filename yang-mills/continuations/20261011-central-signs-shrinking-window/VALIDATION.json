@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T16:12:23.792881+00:00",
+  "checked_utc": "2026-10-11T16:37:11.644226+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -193,7 +193,7 @@
     },
     {
       "source": "ACTUAL_LOW_ENERGY_MAPS.md",
-      "sha256": "27404cece39f17bf7f73781e0ef20b3ac0bdc19abe1163e6018ca22f33183cee",
+      "sha256": "389a922a14d45b432c886b52700e1edad008854981493074754f061ac40f14fa",
       "complete_math_blocks": 416,
       "split_to_aligned_wrappers": 2
     },
@@ -211,7 +211,7 @@
     },
     {
       "source": "CURVATURE_PHASE_RECONSTRUCTION.md",
-      "sha256": "0b47806e9728c8f52cf088f65aaf44a7a337668329def17144c046d0058192b9",
+      "sha256": "10092a9dc831179f0e2bb1e8842e68f8b0ccb709b02f4382f9b0bb00a1e6fa35",
       "complete_math_blocks": 308,
       "split_to_aligned_wrappers": 3
     },
@@ -361,13 +361,13 @@
     },
     {
       "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
-      "sha256": "5904be0329c53693ed2f5c12a1ddf36feae9d2c2d7d8d1f9869fd1460f74f191",
+      "sha256": "1896c2e09b22016aec1cf77de50c175368d3ffa8f4ee8b7141060f18206ad918",
       "complete_math_blocks": 488,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "CURRENT_COVARIANCE_EQUALITY.md",
-      "sha256": "8946112229ef64178d0c352ea879d3d2adabc56db78827458732f209a7eb7049",
+      "sha256": "561ee71ef2e6f46966b8a5b14a4b41592b632310fb0df588f35634c3d9edbb04",
       "complete_math_blocks": 242,
       "split_to_aligned_wrappers": 4
     },
@@ -391,9 +391,15 @@
     },
     {
       "source": "STATIONARY_PHASE_RECEIVING.md",
-      "sha256": "2eedec0922ba7ac9149b608696f4b646ec959bb58e005e17049c8b813e7755e3",
+      "sha256": "836476585de97f296c47c110c877cea8c33c381ab24b4a093a74d97cdef4283f",
       "complete_math_blocks": 280,
       "split_to_aligned_wrappers": 2
+    },
+    {
+      "source": "ENERGY_ROOT_AND_ANCHORED_HISTORIES.md",
+      "sha256": "dfeb72f1df6661572db7c0292a894368a0934e3ec40afc826847330c878e3445",
+      "complete_math_blocks": 220,
+      "split_to_aligned_wrappers": 4
     }
   ],
   "figures": [
@@ -685,6 +691,11 @@
     {
       "file": "STATIONARY_PHASE_MAP.png",
       "sha256": "d9213476c156305bc6616521f597b6016be238e33005e0d8c1592af09323b914",
+      "visually_inspected": true
+    },
+    {
+      "file": "ENERGY_ROOT_MAP.png",
+      "sha256": "0342ca1bc1b9dda52a1a7765a0b2f2c90cd0641315cee3a9263905c50cd96bca",
       "visually_inspected": true
     }
   ],
@@ -2067,6 +2078,133 @@
       "final_notation_edition": "All eleven HP pages rerendered and visually inspected after the calligraphic positive-generator correction. Propagation pages were inspected before this correction and their source is unchanged.",
       "result": "Equations, margins, labels, proof text and the full figure are legible; no clipping or overlap observed.",
       "figure": "STATIONARY_PHASE_MAP.png"
+    }
+  },
+  "energy_root_review": {
+    "utc": "2026-10-11T16:27:54.403820+00:00",
+    "proof_sha256": "50b006bc62f7b2f78e9a697f3a3968816129c6ab61eba85842abc5509f1351eb",
+    "coverage": "EF1–EF27 complete direct derivation and owner review. Original-time heat error, all matrix coefficients, exact shrinking-window map, full enlarged phase space, bounded sine approximation, spectral inverse, anchored covariance endpoints, reflection Gram and phase window bound proved. The complete small-phase energy measure limit follows from concave secants and heat-polynomial approximation. Exact tent weight retains zero energy and supplies the original positive-window mass coefficient, with maximum r/4.",
+    "corrections": "The CM space H+ does not by definition include all curvature phases. The proof constructs K* containing both and proves all positive-energy visibility only for that explicitly constructed space. No assertion of unchanged smaller-space visibility.",
+    "strengthening": "CE41–CE42 now have an exact common continuous receiver for every heat parameter. The positive-energy component is fully received by bounded phase words. The zero-energy slope and original-window/rate/escape components remain separate. The fourth-moment factor uses the stronger full CP26–CP27 limit, retaining factor three. EF25–EF27 construct a further receiving map from the actual bounded phases; no spectral law or coefficient is assumed.",
+    "actual_reading": "CE1–CE10 and CE31–CE50; CP12–CP27; CM1–CM13; LEM1–LEM9; HP37–HP40 read directly. Local proof text search for energy-root and anchored spectral maps inspected; routing is not source evidence. All providers had been read previously.",
+    "current_status": "Accepted after direct derivation and review; compilation and publication pending.",
+    "diagnostics": {
+      "exact_checks": [
+        "Retained heat multiplier integral",
+        "Original-time heat maximizer",
+        "Original-time heat maximum",
+        "Original-window full coefficient",
+        "Anchored reflected Gram",
+        "Anchored covariance derivative",
+        "Anchored covariance second derivative",
+        "Zero endpoint retained",
+        "Positive-energy transfer zero endpoint",
+        "Infinite endpoint retained",
+        "Phase small-parameter second moment",
+        "Full sixth-moment constant",
+        "Full fourth-moment constant",
+        "Sharper limiting fourth-moment constant",
+        "Full weighted-window maximum"
+      ],
+      "exact_check_count": 15,
+      "numerical_samples": 5558,
+      "max_heat_error_to_bound": 0.012949850817260966,
+      "finite_spectral_quadrature": "Four selected positive energies test an algebraic identity only; no actual quantum coefficients inferred.",
+      "figure": "ENERGY_ROOT_MAP.png",
+      "proof_status": "Diagnostics supplement the complete EF1–EF27 derivation."
+    },
+    "figure_inspected": true,
+    "novelty_claim": false,
+    "public_proofs": [
+      {
+        "source": "ENERGY_ROOT_AND_ANCHORED_HISTORIES.md",
+        "prefix": "EF",
+        "owner_sha256": "50b006bc62f7b2f78e9a697f3a3968816129c6ab61eba85842abc5509f1351eb",
+        "public_sha256": "dfeb72f1df6661572db7c0292a894368a0934e3ec40afc826847330c878e3445",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true,
+        "layout": "Two long inline expressions after EF5 are displayed without changing mathematical symbols. EF25–EF27 additive derivation and its exact original source are retained."
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T16:37:11.644226+00:00",
+      "tex_sha256": "c5914c1f1c938ae94626c27903154724df5bfa15c07a6216747185c14f1ba8b7",
+      "pdf_sha256": "bd4b07e48334e24bb2f42d78d4cd42e2ff8c7c1be2adc61ee27c312f53864ff6",
+      "pages": 670,
+      "source_files": 66,
+      "math_blocks": 16645,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "complete": true,
+        "pages": 670,
+        "new_proof_pages": [
+          663,
+          664,
+          665,
+          666,
+          667,
+          668,
+          669,
+          670
+        ],
+        "propagation_pages": [
+          315,
+          316,
+          354,
+          355,
+          610,
+          611,
+          621,
+          622,
+          661,
+          662
+        ],
+        "result": "All eighteen rendered pages inspected. New equations fit the margins, the reflow after EF5 retains every term, and no new clipping or overlap was found. The figure was inspected at full raster resolution and in its compiled page.",
+        "figure_repair": "The angle brackets in the EF27 annotation use mathematical font rendering; the final raster and compiled figure retain the exact formula.",
+        "figure": "ENERGY_ROOT_MAP.png"
+      }
+    },
+    "pending": "Archive and verified publication.",
+    "routing": "Existing canonical index, programme source ledger and bounded proof-text searches used before deriving the actual maps. All cited provider passages read directly; no external theorem or PDF introduced."
+  },
+  "energy_root_compile": {
+    "utc": "2026-10-11T16:37:11.644226+00:00",
+    "tex_sha256": "c5914c1f1c938ae94626c27903154724df5bfa15c07a6216747185c14f1ba8b7",
+    "pdf_sha256": "bd4b07e48334e24bb2f42d78d4cd42e2ff8c7c1be2adc61ee27c312f53864ff6",
+    "pages": 670,
+    "source_files": 66,
+    "math_blocks": 16645,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "complete": true,
+      "pages": 670,
+      "new_proof_pages": [
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670
+      ],
+      "propagation_pages": [
+        315,
+        316,
+        354,
+        355,
+        610,
+        611,
+        621,
+        622,
+        661,
+        662
+      ],
+      "result": "All eighteen rendered pages inspected. New equations fit the margins, the reflow after EF5 retains every term, and no new clipping or overlap was found. The figure was inspected at full raster resolution and in its compiled page.",
+      "figure_repair": "The angle brackets in the EF27 annotation use mathematical font rendering; the final raster and compiled figure retain the exact formula.",
+      "figure": "ENERGY_ROOT_MAP.png"
     }
   }
 }
