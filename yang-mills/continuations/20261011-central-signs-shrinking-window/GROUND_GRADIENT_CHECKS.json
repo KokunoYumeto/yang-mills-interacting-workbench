@@ -1,0 +1,58 @@
+{
+  "exact_algebra_checks": 2,
+  "numerical_checks": 540,
+  "worst_relative_residual": 3.7486100648403113e-16,
+  "coefficient_comparison": {
+    "K": 32.84587103827752,
+    "previous": 7.055145484751071e-07,
+    "sign": 0.009015483606459278,
+    "continuous": 0.0008435605508199201,
+    "sign_improvement_factor": 12778.593476130669,
+    "proved_lower_improvement": 10000
+  },
+  "samples": [
+    {
+      "parameters": [
+        0.3,
+        -0.2,
+        0.4
+      ],
+      "Z": 1.0768914956502562,
+      "manifold": "SU(2)^2 with original radius2 metric",
+      "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+    },
+    {
+      "parameters": [
+        -0.6,
+        0.5,
+        -0.3
+      ],
+      "Z": 1.4221256042062822,
+      "manifold": "SU(2)^2 with original radius2 metric",
+      "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+    },
+    {
+      "parameters": [
+        0.8,
+        0.2,
+        0.1
+      ],
+      "Z": 1.3955662811972434,
+      "manifold": "SU(2)^2 with original radius2 metric",
+      "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+    },
+    {
+      "parameters": [
+        0.02,
+        -0.01,
+        0.9
+      ],
+      "Z": 1.108583213063713,
+      "manifold": "SU(2)^2 with original radius2 metric",
+      "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+    }
+  ],
+  "scope": "Curved compact manufactured-density checks test the weighted identities with the original Ricci1/2. They are not actual Yang–Mills simulations. SG proofs are the mathematical evidence.",
+  "curved_density_checks": 252,
+  "projected_matrix_checks": 288
+}

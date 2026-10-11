@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T17:28:27.159799+00:00",
+  "checked_utc": "2026-10-11T18:08:47.547884+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -325,7 +325,7 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "e2dfdd14fc8d8e19e1afbd7ec4de8027c30d486588906cbbb6486142654a0350",
+      "sha256": "fbfa3c9944507e9ad4be3d5d19326aa1493ce2300397346534623c7d42e50705",
       "complete_math_blocks": 545,
       "split_to_aligned_wrappers": 0
     },
@@ -367,7 +367,7 @@
     },
     {
       "source": "CURRENT_COVARIANCE_EQUALITY.md",
-      "sha256": "30d10adc61b49d92b4bc605691ffbe7821df3fbadbfb71e458cab8dfe9d84705",
+      "sha256": "c5aac03f76c2f680d7fe0f093c042c2ca67eed18e75a05f4f5ccc1fef83ba14e",
       "complete_math_blocks": 242,
       "split_to_aligned_wrappers": 4
     },
@@ -403,8 +403,14 @@
     },
     {
       "source": "POSITIVE_TIME_COVARIANCE.md",
-      "sha256": "4ddb45d18d9a08b447be9f9c73a79fc6fc718fcd9bafe50e93f9152436009240",
+      "sha256": "004dc47e4a1580aa3e6e6b4e0404e42395e219a61a9538cf69b7ebce8a29054c",
       "complete_math_blocks": 213,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
+      "sha256": "85586f1637b96fc8ea428f9fa9ea9af06813710c116c6a441df1161343b0c727",
+      "complete_math_blocks": 202,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -707,6 +713,16 @@
     {
       "file": "POSITIVE_TIME_MAP.png",
       "sha256": "62d90135081ed4c6ea44aed3d5a8730687acaecba9d210f00746ac0e1c0437bb",
+      "visually_inspected": true
+    },
+    {
+      "file": "GROUND_GRADIENT_MAP.png",
+      "sha256": "0bb5c3d865dcdf0eb894853b0c1e04eeb8c9590e8a18a21ee1cceda2ab878b03",
+      "visually_inspected": true
+    },
+    {
+      "file": "GROUND_GRADIENT_GRAPH.png",
+      "sha256": "8189a1a3f453de7d5c547a830e2bbc522fdebb17136c647134d60a2284ceeedc",
       "visually_inspected": true
     }
   ],
@@ -2332,6 +2348,190 @@
       "figure": "POSITIVE_TIME_MAP.png",
       "figure_repair": "Moved the diagram arrows below their captions; all definitions, constants and transfer functions retained.",
       "final_compile": "The final edition remains 680 pages. PT pages remain672–680; the complete propagated EF note now appears on671."
+    }
+  },
+  "ground_gradient_review": {
+    "utc": "2026-10-11T17:47:13.619204+00:00",
+    "coverage": "SG1–SG33 complete owner derivation: full d and weighted divergence, exterior Hessian blocks, radius2 Ricci, original ground trace, exact source overlap, two evaluated bounds, all-edge variational matrix and physical residual, forced connection equation and strict coefficient comparison. SG29–SG33 independently derive the exact physical projection, full removed graph, projected density-current Gram, improved matrix bound and both residual norms.",
+    "strengthening": "Actual sign-weight trial improves the previous proved lower-bound coefficient by more than10000 for the same specified three-orientation tent test; exact value ratio approximately12778.59. The bound remains at scale a. Every edge gradient has positive norm, so the shifted trial matrix is strictly positive and its full inverse is justified. The entire curl energy is now removed exactly by physical exact projection, not just bounded. Kernel and all exterior graph weights are computed; the remaining matrix and both residuals have exact receiving formulas.",
+    "limitations": "No positive unscaled response, window weight, matrix-entry limit or covariance sign is assumed. The exact variational residual, conditional kinetic terms, exterior Hessians, all signs, ground energy and scalar potential contributions are preserved. Sign-square Riemann convergence is not assumed.",
+    "actual_reading": "CE1–CE11 and original sign-field derivation; BM16–BM17 and BM40–BM43 read directly; PT9–PT36 original source and compiled proof pages. Existing original Johnsen/Lo reading and archives retained through PT source ledger; no new external theorem imported. The one-layer patch count and unchanged R=1 coefficient were explicitly checked in the final source; complete prior owner source is retained. The one-layer patch count and unchanged R=1 coefficient were explicitly checked in the final source; complete prior owner source is retained. The one-layer patch count and unchanged R=1 coefficient were explicitly checked in the final source; complete prior owner source is retained.",
+    "routing": "Canonical disk index queried for Fisher/Hessian and Witten/covariance, with12 routing hits. None treated as a read source. Local complete programme sources used before derivation. No literature PDF fallback.",
+    "diagnostics": {
+      "exact_algebra_checks": 2,
+      "numerical_checks": 540,
+      "worst_relative_residual": 3.7486100648403113e-16,
+      "coefficient_comparison": {
+        "K": 32.84587103827752,
+        "previous": 7.055145484751071e-07,
+        "sign": 0.009015483606459278,
+        "continuous": 0.0008435605508199201,
+        "sign_improvement_factor": 12778.593476130669,
+        "proved_lower_improvement": 10000
+      },
+      "samples": [
+        {
+          "parameters": [
+            0.3,
+            -0.2,
+            0.4
+          ],
+          "Z": 1.0768914956502562,
+          "manifold": "SU(2)^2 with original radius2 metric",
+          "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+        },
+        {
+          "parameters": [
+            -0.6,
+            0.5,
+            -0.3
+          ],
+          "Z": 1.4221256042062822,
+          "manifold": "SU(2)^2 with original radius2 metric",
+          "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+        },
+        {
+          "parameters": [
+            0.8,
+            0.2,
+            0.1
+          ],
+          "Z": 1.3955662811972434,
+          "manifold": "SU(2)^2 with original radius2 metric",
+          "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+        },
+        {
+          "parameters": [
+            0.02,
+            -0.01,
+            0.9
+          ],
+          "Z": 1.108583213063713,
+          "manifold": "SU(2)^2 with original radius2 metric",
+          "density": "exp(2w)/Z against Haar probability; logarithmic density is w-log(Z)/2. This manufactured smooth-density check is not the Yang–Mills ground state."
+        }
+      ],
+      "scope": "Curved compact manufactured-density checks test the weighted identities with the original Ricci1/2. They are not actual Yang–Mills simulations. SG proofs are the mathematical evidence.",
+      "curved_density_checks": 252,
+      "projected_matrix_checks": 288
+    },
+    "figure_inspected": true,
+    "novelty_claim": false,
+    "status": "Accepted; compile and publication pending.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "prefix": "SG",
+        "owner_sha256": "2880c99777eb8b523b40b12943409b42022e7eaa89b31a78cc1ca9e0523806f8",
+        "public_sha256": "85586f1637b96fc8ea428f9fa9ea9af06813710c116c6a441df1161343b0c727",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T18:08:47.547884+00:00",
+      "tex_sha256": "8bffbe9f49e5d9907cdc3ac89c40cd2ccde92d0bcc544e1c57a6252894753f1d",
+      "pdf_sha256": "20b74ea32af9d0d9603a04bd44412cb65065fdba1182c7fa22379babec0e9f1f",
+      "pages": 691,
+      "source_files": 68,
+      "math_blocks": 17060,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "complete": true,
+        "utc": "2026-10-11T18:07:44.785102+00:00",
+        "pages": 691,
+        "inspected_pages": [
+          544,
+          545,
+          622,
+          623,
+          682,
+          683,
+          684,
+          685,
+          686,
+          687,
+          688,
+          689,
+          690,
+          691
+        ],
+        "new_proof_pages": [
+          683,
+          684,
+          685,
+          686,
+          687,
+          688,
+          689,
+          690,
+          691
+        ],
+        "propagation_pages": [
+          544,
+          545,
+          622,
+          623,
+          682
+        ],
+        "method": "Four rendered contact sheets visually inspected after final compilation; final source figures also inspected. Complete equations, aligned figures, legible labels, no clipping or missing glyphs in inspected scope.",
+        "new_overflows": [],
+        "inherited_warnings": "Earlier warnings retained; no assertion that all 691 pages were reinspected."
+      }
+    },
+    "pending": "Archive and verified publication."
+  },
+  "ground_gradient_compile": {
+    "utc": "2026-10-11T18:08:47.547884+00:00",
+    "tex_sha256": "8bffbe9f49e5d9907cdc3ac89c40cd2ccde92d0bcc544e1c57a6252894753f1d",
+    "pdf_sha256": "20b74ea32af9d0d9603a04bd44412cb65065fdba1182c7fa22379babec0e9f1f",
+    "pages": 691,
+    "source_files": 68,
+    "math_blocks": 17060,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "complete": true,
+      "utc": "2026-10-11T18:07:44.785102+00:00",
+      "pages": 691,
+      "inspected_pages": [
+        544,
+        545,
+        622,
+        623,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691
+      ],
+      "new_proof_pages": [
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691
+      ],
+      "propagation_pages": [
+        544,
+        545,
+        622,
+        623,
+        682
+      ],
+      "method": "Four rendered contact sheets visually inspected after final compilation; final source figures also inspected. Complete equations, aligned figures, legible labels, no clipping or missing glyphs in inspected scope.",
+      "new_overflows": [],
+      "inherited_warnings": "Earlier warnings retained; no assertion that all 691 pages were reinspected."
     }
   }
 }

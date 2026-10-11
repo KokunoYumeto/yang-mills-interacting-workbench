@@ -102,6 +102,9 @@ for name in names:
     p=ROOT/name;s=p.read_text(encoding='utf-8')
     source_base_url='https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/'+(p.parent.relative_to(ROOT).as_posix()+'/' if p.parent!=ROOT else '')
     body=convert(s)
+    if name in ['POSITIVE_TIME_COVARIANCE.md', 'CURRENT_COVARIANCE_EQUALITY.md']:
+        heading=r'\subsection*{Actual ground-gradient trials and complete variational residual}'
+        body=body.replace(heading,r'\clearpage'+'\n'+heading)
     if name == 'ENERGY_ROOT_AND_ANCHORED_HISTORIES.md':
         # Flush the existing full-page figure before the new receiving note.
         heading=r'\subsection*{Positive-time covariance and the full resolvent tail}'
@@ -109,7 +112,7 @@ for name in names:
     blocks=re.findall(r'(?s)\\\[.*?\\\]|\\\(.*?\\\)',s)
     assert all(typeset_math(x) in body for x in blocks)
     rows.append({'source':name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'complete_math_blocks':len(blocks),'split_to_aligned_wrappers':s.count(r'\begin{split}')})
-    if name in ['NEGATIVE_TRACE_COMPRESSION.md', 'GAMMA_INTEGRAL.md', 'HOLONOMY_CURVATURE_RECEIVING.md', 'HOLONOMY_CURVATURE_REVIEW.md', 'SIMULTANEOUS_CENTRAL_MEASURE.md', 'CURRENT_COVARIANCE_EQUALITY.md', 'SMOOTH_MEASURE_REALIZATION.md', 'AMPLITUDE_ALGEBRA.md', 'GLOBAL_MEASURE_EVOLUTION.md', 'STATIONARY_PHASE_RECEIVING.md', 'ENERGY_ROOT_AND_ANCHORED_HISTORIES.md', 'POSITIVE_TIME_COVARIANCE.md']:
+    if name in ['NEGATIVE_TRACE_COMPRESSION.md', 'GAMMA_INTEGRAL.md', 'HOLONOMY_CURVATURE_RECEIVING.md', 'HOLONOMY_CURVATURE_REVIEW.md', 'SIMULTANEOUS_CENTRAL_MEASURE.md', 'CURRENT_COVARIANCE_EQUALITY.md', 'SMOOTH_MEASURE_REALIZATION.md', 'AMPLITUDE_ALGEBRA.md', 'GLOBAL_MEASURE_EVOLUTION.md', 'STATIONARY_PHASE_RECEIVING.md', 'ENERGY_ROOT_AND_ANCHORED_HISTORIES.md', 'POSITIVE_TIME_COVARIANCE.md', 'ACTUAL_GROUND_GRADIENT_TRIAL.md']:
         body='\\begingroup\\ifPDFTeX\\else\\IfFontExistsTF{Cambria}{\\fontspec{Cambria}}{\\IfFontExistsTF{DejaVu Sans}{\\fontspec{DejaVu Sans}}{}}\\fi\n'+body+'\n\\endgroup'
     bodies.append(body)
 header=HEADER.replace('Yang--Mills: complete research proofs','Yang--Mills central signs and shrinking spectral windows').replace('booktabs,graphicx','booktabs,longtable,graphicx')
