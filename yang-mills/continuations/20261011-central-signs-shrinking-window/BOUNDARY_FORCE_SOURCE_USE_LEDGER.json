@@ -1,0 +1,184 @@
+[
+  {
+    "source_id": "programme:BQ-20261011",
+    "proofs": [
+      {
+        "source": "BOUNDARY_FORCE_PROJECTION.md",
+        "prefix": "BQ",
+        "tags": 18,
+        "owner_sha256": "04c3f5c2824bf45a996f7862cc0a117510e4fdb72265ca684b8e42876f602071",
+        "public_sha256": "1a8810fd5f392303194bd4b823f92b229f71e8f1402d6593d3fcc4f1b59351b7",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md",
+        "version": "52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md",
+        "sha256": "ed1d0246b343e90ab0249371c03e89d6c20a9d3cc3d1f5e73038c22e76b2ccab"
+      },
+      {
+        "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
+        "version": "52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/CONDITIONAL_GROUND_CURRENT_TRIAL.md",
+        "sha256": "afc992714aea7c0085bd63c9bb6e789a85de5b6944afde41b4b7f8f44cdf63e0"
+      },
+      {
+        "source": "RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
+        "version": "52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
+        "sha256": "6988f306a0dded2502be6768c5205154d5a44acea9d76422a6a1a92b1a6cd990"
+      },
+      {
+        "source": "SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+        "version": "52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+        "sha256": "f6d2c2d953f5b1e0ef32e9298a2d0c6e37593d467abf08cc2ce95b3a4ab797ad"
+      },
+      {
+        "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "version": "52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "sha256": "29adae4fd40af67ea18ab699fc8f3ee63b59df93fc6ae435902ff26105ec5e2f"
+      },
+      {
+        "source": "INSIDE_MARGINAL_ENERGY.md",
+        "version": "52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/INSIDE_MARGINAL_ENERGY.md",
+        "sha256": "af19c316d1f197ac41f901171cce57c074436c66074c71b41705e897fa9959f9"
+      },
+      {
+        "source": "POSITIVE_TIME_COVARIANCE.md",
+        "version": "52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_COVARIANCE.md",
+        "sha256": "004dc47e4a1580aa3e6e6b4e0404e42395e219a61a9538cf69b7ebce8a29054c"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-11T19:59:20.819382+00:00",
+      "coverage": "BQ1–BQ18 complete derivation and owner review. Full weighted-gradient range and gauge restriction; commutator identity for the original kinetic quotient, including its mean; exact cancellation of wholly inside face derivatives; full boundary projection and both projection remainders; original crossing incidence and Casimir-gradient remainder; actual force/mixed-Hessian estimates; full finite collar constants and limits; first current moment without third kinetic derivatives; complete second-moment forcing and all six covariances.",
+      "strengthening": "The conditional force is the inside component of the full orthogonal residual of the crossing-potential gradient. It yields actual a^6 force-norm and a^5 mixed-Hessian vanishing, with quantified collar rates, and an actual first-moment upper estimate. These replace previously unevaluated quantities without assigning the response limit.",
+      "limitations": "The projection retains the full interacting ground-state dependence. The unscaled force and Hessian are not proved to vanish. The boundary weighted divergence and full second-moment covariances remain to be estimated; neither limiting physical spectral mass nor the smooth no-gap endpoint is concluded.",
+      "actual_reading": "OC1–OC24 complete source; RD1–RD22 original derivatives and collar constants; SG1–SG12 ground/one-form identities and SG quantitative patch estimates; IM15–IM19 full and partial Bochner formulas; SR62–SR65 heat-score constants. Earlier CG/PT operator and gauge domains retained from their checked source editions. No claim to have reread all SG/IM/SR/PT.",
+      "routing": "Canonical index first:12 original-TeX routing hits for conditional/Bochner, ground/Hessian and Fisher/marginal. Routing only, no external paper newly read or theorem imported. Existing primary-source ledger retained; no literature PDF.",
+      "diagnostics": {
+        "file": "BOUNDARY_FORCE_CHECKS.json",
+        "checks": 1385,
+        "all_passed": true,
+        "scope": "Diagnostics for BQ1–BQ18. Manufactured curved states and projection matrices are not Yang–Mills samples."
+      },
+      "figures_inspected": [
+        "BOUNDARY_PROJECTION_MAP.png",
+        "BOUNDARY_MOMENT_RATES.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "BOUNDARY_FORCE_PROJECTION.md",
+          "prefix": "BQ",
+          "tags": 18,
+          "owner_sha256": "04c3f5c2824bf45a996f7862cc0a117510e4fdb72265ca684b8e42876f602071",
+          "public_sha256": "1a8810fd5f392303194bd4b823f92b229f71e8f1402d6593d3fcc4f1b59351b7",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-11T20:02:14.247797+00:00",
+        "tex_sha256": "a83f135f923917c68e96c78b0dd00ae6f71c43132f040cd4e829087c6da0c9b8",
+        "pdf_sha256": "a16aee6150289313b9703ec72769e2932d10425ed2465367eb67427b9171ca7b",
+        "pages": 733,
+        "source_files": 73,
+        "math_blocks": 17882,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-11T20:02:13.956269+00:00",
+          "complete": true,
+          "pages": 733,
+          "rendered_pages": [
+            208,
+            209,
+            210,
+            497,
+            498,
+            499,
+            692,
+            693,
+            694,
+            695,
+            704,
+            705,
+            706,
+            712,
+            713,
+            714,
+            725,
+            726,
+            727,
+            728,
+            729,
+            730,
+            731,
+            732,
+            733
+          ],
+          "new_proof_pages": [
+            727,
+            728,
+            729,
+            730,
+            731,
+            732,
+            733
+          ],
+          "receiving_notes": [
+            209,
+            498,
+            694,
+            705,
+            713,
+            726
+          ],
+          "figures": [
+            "BOUNDARY_PROJECTION_MAP.png",
+            "BOUNDARY_MOMENT_RATES.png"
+          ],
+          "repair": "One overlong inline equation displayed with identical mathematical content. Complete SG receiving note moved to694. Repaired formula and all changed/new pages inspected.",
+          "result": "All new formulas, captions, notes and figures legible. No new overflow or missing glyph. Existing59 overfull warnings and one earlier missing delta remain; PDF local QA.",
+          "image_sha256": {
+            "page-208.png": "d3046e04ef11deddf7ab372dbe47e6245c7d88fbc911a296ce05e3d76f504447",
+            "page-209.png": "0fff7d787a8c113cc9a48891ec948a6d03cb6d4944885e7a1a2ed4496544e710",
+            "page-210.png": "3bc5e02fd21a4e33ef499cc78115380412af87cacfba783db5dcf24480c908ed",
+            "page-497.png": "96f7a9e93cd4db346b5c7401514eda3671a112f8709e38c46c50cab33f4e6a1f",
+            "page-498.png": "756e9e6128808b34d51435603338c3eb6489ca29be68785f5adfbf585e83e406",
+            "page-499.png": "ac88d51be593747873e48c9b68398a4ce20a00d44a2fb6eaa18604c49a0943f9",
+            "page-692.png": "ee4521dc35654d4bd07a5a0db64c24e8a041e025ed2addad659aa37d9d6b4ebd",
+            "page-693.png": "fa9dd735f1fed1c4a14e5fba92bf4913b07c2d2d37335a8f8bafbdcc4b7bfda5",
+            "page-694.png": "25c5d10897aa0f51523e47c448f9fcb0f18b33f6fddcd272f34169e56902a338",
+            "page-695.png": "41eea3001d71509477adf65e1a7298d312579ba2b2e289aadd6f64c04d747087",
+            "page-704.png": "6aed1f42d71360c2af148cb1abefdd8c52fac8a9cdfccd37fd373a20b0dacb59",
+            "page-705.png": "f4336bd9df07a7377a24e170920e42e64152033d39bbd8c00cdac32daa0c17db",
+            "page-706.png": "0b0c95f0b7260fe69e85dfa3fbf80dd36317c2c12eeccb704581ad29339a582c",
+            "page-712.png": "1befa4802a1329b4aa731ae703b746ee29708f881c3ff5043eb25b6e15584f48",
+            "page-713.png": "a95b02bdde54a7f6b6818096b4b63dcee09d0d7beced47fb48ec0c1ad08d5258",
+            "page-714.png": "c0d568ab61c8f82a7a4a6757c4baefd63c6e0c91ff28019ac2d56d8df7e7e63d",
+            "page-725.png": "a5a1d6b99a073d99b1b81a851de684223b155a23148fc852a417d6b6386e32cf",
+            "page-726.png": "f316c372c50281d650aecf9a4099f8f4d367f2f1e689d23b5982525471006e47",
+            "page-727.png": "9872dcb22b6cf0e3c516fd649dbdc5a02412a6e9e9f62c48dee5799b5b97c9ee",
+            "page-728.png": "913f3ba0991a555a0c3611af248448d20c48c1f027af516058e5b71fc71e55bf",
+            "page-729.png": "095f6f86939fc5fb017e3a87bb279895378dac9b2de41d878691552f49480ecb",
+            "page-730.png": "7145326d76ea391ba025a2ef869bf67feb9409d83f57c782cd9ad0b8ed1108d2",
+            "page-731.png": "3c65a65bcd4c6f347262be4abf9a0d5891e0a3d7dd7d2d119f1198581593b321",
+            "page-732.png": "9d1ef9e1f4c15e4ed08bb6f2bc65c7e5d7a5582428a02d32201dba2d0cfe4dcf",
+            "page-733.png": "af59f8d9da1d929a09917b4618d1e2e5d1ecd0659ea19663afa9f1bbaa41923d"
+          }
+        }
+      }
+    },
+    "upstream_primary_source_ledger": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/52c2b9ef34c1bd243caf4dc9ff02fe885b7d873d/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_SOURCE_USE_LEDGER.json"
+  }
+]
