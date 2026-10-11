@@ -1,0 +1,108 @@
+[
+  {
+    "source_id": "programme:SF-20261011",
+    "proofs": [
+      {
+        "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
+        "prefix": "SF",
+        "tags": 27,
+        "owner_sha256": "e5eda3512132772095834b7da85ef75903b8f0e05ba447f7a31a60febb29595a",
+        "public_sha256": "d9ae43d29bbfda6c8214aaea314761008d23b23501c137fe2c00f7da5e808edb",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
+        "version": "59caf02049b597daceec939ef179ba60fbccbcc6",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/59caf02049b597daceec939ef179ba60fbccbcc6/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
+        "sha256": "a6deb521b7416e3097f2f051d5cae963f5d10116c8de499513e36f864b0f9da3"
+      },
+      {
+        "source": "LOCAL_CURVATURE_BUDGET.md",
+        "version": "59caf02049b597daceec939ef179ba60fbccbcc6",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/59caf02049b597daceec939ef179ba60fbccbcc6/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CURVATURE_BUDGET.md",
+        "sha256": "91d0d97b6ef018848f3cdd2829930a5ead68c5bdaad7410f3a28abdd22458b60"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-11T21:43:34.878593+00:00",
+      "coverage": "SF1–SF27 complete original edge-word derivative, Pauli contraction, four traversal cases and six/eight-edge paths; enlarged original support and source bound; exact seven-edge physical Haar isometry, full original and weighted Laplacians, mixed Casimir, strictly positive finite-regulator interaction variance for every positive coupling; exchange-even/odd decomposition and weight-kernel bound; complete exterior conditional ground, weighted quotient, norm and source receiving maps.",
+      "strengthening": "The one-face zero is replaced by a proved nonzero two-face interaction fluctuation. Exchange symmetry extends positivity from equal face averages to every weight with t_p+t_q unequal to twice the shared weight. The full-lattice map retains both exterior scalars and the complete conditional variance.",
+      "limitations": "No regulator-uniform lower mass bound, evaluated full-vacuum word difference, reconstructed continuum state or no-gap endpoint. Two-face norm positivity is not transferred to the full lattice by assumption; SF22–SF27 prove the actual receiving map and retain its exterior contributions.",
+      "actual_reading": "Complete WH1–WH33 author-source derivation read. LC1–LC7 reread for original compact ground construction and exact partition; LC14–LC20 original budget retained from the preceding complete source calculation. All new mathematical identities derived explicitly here. No newly imported external theorem or novelty claim.",
+      "routing": "Canonical index first:18 routing hits on Wilson/Hamiltonian, Fierz/SU and lattice/two-plaquette queries. Routing is not reading; no external paper newly read and no literature PDF.",
+      "diagnostics": {
+        "file": "SHARED_FACE_CHECKS.json",
+        "checks": 13516,
+        "all_passed": true,
+        "scope": "Original SU(2) word and differential identities; manufactured compact-state receiving maps. No Yang–Mills vacuum samples."
+      },
+      "figures_inspected": [
+        "SHARED_FACE_PHYSICAL_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
+          "prefix": "SF",
+          "tags": 27,
+          "owner_sha256": "e5eda3512132772095834b7da85ef75903b8f0e05ba447f7a31a60febb29595a",
+          "public_sha256": "d9ae43d29bbfda6c8214aaea314761008d23b23501c137fe2c00f7da5e808edb",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-11T21:49:07.264388+00:00",
+        "tex_sha256": "d8da9708bbc80ac91ee18bcedfed88e82fb406e4a0735df836ea73b3874c31cc",
+        "pdf_sha256": "572a44a5fa40ad2e84ddde949575ab2adf222fe02fe5adcce42e31eb3daae833",
+        "pages": 784,
+        "source_files": 78,
+        "math_blocks": 18697,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-11T21:49:06.513149+00:00",
+          "complete": true,
+          "pages": 784,
+          "inspected_pages": [
+            327,
+            328,
+            329,
+            710,
+            711,
+            712,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784
+          ],
+          "new_proof_pages": [
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784
+          ],
+          "figures": [
+            "SHARED_FACE_PHYSICAL_MAP.png"
+          ],
+          "method": "All four initial contact sheets and the final changed proof pages778–783 inspected. Other final rendered pages have identical SHA256 to the inspected first pass.",
+          "repair": "The complete original edge derivative was moved from inline math to a display, retaining every formula character and its sentence punctuation.",
+          "limitations": "Inherited59 overfull boxes and one old missing delta remain outside the new increment. No new overfull or missing glyph. The reader PDF remains local QA; complete Markdown and TeX are public."
+        }
+      }
+    },
+    "upstream_primary_source_ledger": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/59caf02049b597daceec939ef179ba60fbccbcc6/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_SOURCE_USE_LEDGER.json"
+  }
+]
