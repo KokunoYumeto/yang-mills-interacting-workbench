@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T10:44:14.183472+00:00",
+  "checked_utc": "2026-10-11T14:52:41.946679+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -229,7 +229,7 @@
     },
     {
       "source": "ORIGINAL_SOURCE_COVARIANCE.md",
-      "sha256": "1a6b3878e2414985e24905df16df287f10cd45ca8bb1a2770bcb5923501ea171",
+      "sha256": "e1225c5f5e63f5ae104b85c0c2899e8396d0769b392e9914847f30c37087db50",
       "complete_math_blocks": 285,
       "split_to_aligned_wrappers": 6
     },
@@ -295,7 +295,7 @@
     },
     {
       "source": "LOWER_SIDE_RETAINED_ENERGY.md",
-      "sha256": "17a874fb54b3618e71835601bb63fd5d7b48d8d907ed528b1882fce6b98eb9a4",
+      "sha256": "f8931efa553ab7a365fb551c084a1b5f4532638c6b3b4afe5cb7421e588e43d3",
       "complete_math_blocks": 411,
       "split_to_aligned_wrappers": 0
     },
@@ -325,13 +325,13 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "0c3f29741ca4355a2a5efbebc0b382864483d46a019b33f10d3874974bae8010",
+      "sha256": "7ddf0c7c480987aa02244b13720e74e888db2608914679d5adc3b0cda4b1d3e8",
       "complete_math_blocks": 545,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDED_MULTIPLIER_RECEIVING.md",
-      "sha256": "429cb986168a2f60cc1092872846369afa034d82aee64461a4c3cd0eb93f232d",
+      "sha256": "f40c5393cf9f2e8589018bae2fa09e3ea9046e69a381ddd9906fb030536af319",
       "complete_math_blocks": 405,
       "split_to_aligned_wrappers": 0
     },
@@ -349,7 +349,7 @@
     },
     {
       "source": "HOLONOMY_CURVATURE_RECEIVING.md",
-      "sha256": "d8030d06f6bba6130ba05e91ee4062e96308ae76cbb9e50428711de6dabb89b7",
+      "sha256": "c7e92983adffad6a830dd76b58c774d992e5d9a2d5b55992396e8dfa61a424d6",
       "complete_math_blocks": 218,
       "split_to_aligned_wrappers": 0
     },
@@ -358,6 +358,18 @@
       "sha256": "01043925279785d0ba369d409425ffd0ca0a353f8f9a23eb34a8f1ea167f2bb9",
       "complete_math_blocks": 18,
       "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+      "sha256": "33d6eebc2db13603fbc6d8484427fcd06984b6c5435eb7064e30b9849607d847",
+      "complete_math_blocks": 488,
+      "split_to_aligned_wrappers": 2
+    },
+    {
+      "source": "CURRENT_COVARIANCE_EQUALITY.md",
+      "sha256": "ba89ade031f35020f91aea958b750e53ef5379a780cff53632c2974f7fef76bd",
+      "complete_math_blocks": 242,
+      "split_to_aligned_wrappers": 4
     }
   ],
   "figures": [
@@ -614,6 +626,21 @@
     {
       "file": "PERIODIC_RECEIVER.png",
       "sha256": "f58128eb06029da3392038391642346a8df3a6258258a7f5e87a49f4abad8c11",
+      "visually_inspected": true
+    },
+    {
+      "file": "central_measure_bounds.png",
+      "sha256": "5ee2ab8633c258077c139799d381714dc9d6e857ab802e26440b7ba41f979ffe",
+      "visually_inspected": true
+    },
+    {
+      "file": "retained_current_identity.png",
+      "sha256": "9dfac6af56d139a8dd9d4898fd62d96f7f5748f499cce9b46bcae1a74dc17b5a",
+      "visually_inspected": true
+    },
+    {
+      "file": "CURRENT_COVARIANCE_MAP.png",
+      "sha256": "ac4ce69912f1f6c0ce5e1a130c8408ce12f63644c2581a2f5ed74715c5c93938",
       "visually_inspected": true
     }
   ],
@@ -1274,5 +1301,78 @@
     "exit_code": 0,
     "pdf_published": false,
     "rendered_inspection": "Pages554–588 rendered with Poppler and all35 pages inspected. No new overflow or missing glyph. Four scientific figures regenerated and inspected. Earlier inherited warnings remain."
+  },
+  "central_current_review": {
+    "observed_utc": "2026-10-11T14:43:05.252323+00:00",
+    "source_sha256": "317146ba0daef993df8149826ac732232186242d93b5bb30b5a624570ee4ae6e",
+    "owner_sha256": "906ae7eb74dc091d1e112367951e81d7eb4d3ac573103da550083daf139c52fe",
+    "reading": "CM1–CM63 and CE1–CE45 completely read. CM source proof and primary TeX ranges read. CE original finite coefficients, all current factors, equality defects, spectral window maps and third energy checked directly. No worker is used or resumed.",
+    "correction": "CE23 lower spectral quotient is defined for every nonzero signed test; positive-test ceilings retain their scope. Original copy preserved.",
+    "pending": "Archive and verified publication.",
+    "owner_ce_sha256": "6ff8ede3c42fb5d5fbddd88d8588628a733bd07c0b2befee6c2706f585ddee3c",
+    "coverage": "CM1–CM63, CE1–CE50, exact source ranges below; complete direct owner reading and calculation.",
+    "underclaim": "CE46–CE50 remove the small-parameter restriction with an exact convex spectral remainder. CE13 evaluates the CM current defect to zero.",
+    "diagnostics": [
+      {
+        "observed_utc": "2026-10-11T14:51:05.275529+00:00",
+        "passed": 5694,
+        "math_blocks_audited": 488,
+        "formula_tags": 63,
+        "checks_scope": "Exact algebra, incidence, root constants, physical factors, finite quadratic/compression identities, source serialization; no numerical ground-state inference.",
+        "figures": [
+          "central_measure_bounds.png",
+          "retained_current_identity.png"
+        ]
+      },
+      {
+        "utc": "2026-10-11T14:51:06.829708+00:00",
+        "passed": 5008,
+        "math_blocks": 242,
+        "source_sha256": "ba89ade031f35020f91aea958b750e53ef5379a780cff53632c2974f7fef76bd",
+        "maximum_relative_spectral_identity_error": 9.534087569694598e-16,
+        "scope": "Exact algebra and spectral identities on finite positive test measures; these diagnostics do not sample or determine the Yang–Mills ground-state covariance."
+      }
+    ],
+    "figures_inspected": true,
+    "public_proofs": [
+      {
+        "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+        "prefix": "CM",
+        "owner_sha256": "545d0e4583c7526b8ec5fb853170ce6432b148b332d760bf1aa1bbf8e9f0475a",
+        "public_sha256": "33d6eebc2db13603fbc6d8484427fcd06984b6c5435eb7064e30b9849607d847",
+        "all_original_math_blocks_retained": true,
+        "typesetting": "Only a figure-description paragraph was reworded to remove a prose overflow. Every original mathematical block is unchanged."
+      },
+      {
+        "source": "CURRENT_COVARIANCE_EQUALITY.md",
+        "prefix": "CE",
+        "owner_sha256": "6ff8ede3c42fb5d5fbddd88d8588628a733bd07c0b2befee6c2706f585ddee3c",
+        "public_sha256": "ba89ade031f35020f91aea958b750e53ef5379a780cff53632c2974f7fef76bd",
+        "all_original_math_blocks_retained": true,
+        "typesetting": "Only a figure-description paragraph was reworded to remove a prose overflow. Every original mathematical block is unchanged."
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T14:52:41.946679+00:00",
+      "tex_sha256": "328316b5a56fefb6c1c450a865dda688cce35d414d85a8ebfd8ca4962dd99119",
+      "pdf_sha256": "2fb0612d80c172f15e11db4060077c6c0c7c8cb0c970e3555e516125e0328056",
+      "pages": 618,
+      "source_files": 61,
+      "math_blocks": 15746,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": "Pages589–618 rendered and inspected, including all new proofs593–618. Corrected prose paragraph on607 rendered again and inspected in the final edition. No new overflow or missing glyph. All three figures inspected. Earlier inherited warnings remain."
+    }
+  },
+  "central_current_compile": {
+    "utc": "2026-10-11T14:52:41.946679+00:00",
+    "tex_sha256": "328316b5a56fefb6c1c450a865dda688cce35d414d85a8ebfd8ca4962dd99119",
+    "pdf_sha256": "2fb0612d80c172f15e11db4060077c6c0c7c8cb0c970e3555e516125e0328056",
+    "pages": 618,
+    "source_files": 61,
+    "math_blocks": 15746,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": "Pages589–618 rendered and inspected, including all new proofs593–618. Corrected prose paragraph on607 rendered again and inspected in the final edition. No new overflow or missing glyph. All three figures inspected. Earlier inherited warnings remain."
   }
 }

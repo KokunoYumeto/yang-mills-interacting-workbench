@@ -2869,5 +2869,140 @@
     "reviewed_hc_draft_sha256": "22b433fa63769991a3576b5031a5278f4e3fef77a95de138f624b0f3db434f34",
     "source_edits": "TC8.4 repaired two lost odd-index TeX qualifiers in owner copy; sealed original retained. HC adds proved gauge inversion and local extension. G quadrant table rendered as four labeled rows, with all original math blocks retained.",
     "reading": "Owner read TC1–TC18,G1–G52,HC1–HC24,HCR1–HCR8 completely and replayed all checks. No additional external literature reading or novelty claim."
+  },
+  {
+    "source_id": "DJJ-2104.12153-v1",
+    "authors": [
+      "Marcel de Jeu",
+      "Xingni Jiang"
+    ],
+    "title": "Riesz representation theorems for positive linear operators",
+    "version": "arXiv:2104.12153v1",
+    "source": "https://arxiv.org/src/2104.12153v1",
+    "archive_sha256": "83a738fe886e8bd974d2a9ae66bc59701b64c256178d58b55cdf77f79707b49a",
+    "tex": "Riesz_representation_theorem_for_positive_maps_FOR_ARXIV.tex",
+    "actual_reading_ranges": [
+      [
+        1090,
+        1108
+      ],
+      [
+        1157,
+        1171
+      ],
+      [
+        1705,
+        1749
+      ],
+      [
+        1870,
+        2020
+      ],
+      [
+        2225,
+        2262
+      ]
+    ],
+    "receiving_proof": "CM19–CM22: positive compact-test map, compatible local Radon measures and strong countable additivity. Global finite C0 hypotheses are not imposed. Complete receiving proof is included.",
+    "index_routing": "Canonical research and local-work disk indexes queried first; exact arXiv ID absent. Routing records retained privately. No PDF read."
+  },
+  {
+    "source_id": "programme:CM-CE-20261011",
+    "proofs": [
+      {
+        "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+        "prefix": "CM",
+        "owner_sha256": "545d0e4583c7526b8ec5fb853170ce6432b148b332d760bf1aa1bbf8e9f0475a",
+        "public_sha256": "33d6eebc2db13603fbc6d8484427fcd06984b6c5435eb7064e30b9849607d847",
+        "all_original_math_blocks_retained": true,
+        "typesetting": "Only a figure-description paragraph was reworded to remove a prose overflow. Every original mathematical block is unchanged."
+      },
+      {
+        "source": "CURRENT_COVARIANCE_EQUALITY.md",
+        "prefix": "CE",
+        "owner_sha256": "6ff8ede3c42fb5d5fbddd88d8588628a733bd07c0b2befee6c2706f585ddee3c",
+        "public_sha256": "ba89ade031f35020f91aea958b750e53ef5379a780cff53632c2974f7fef76bd",
+        "all_original_math_blocks_retained": true,
+        "typesetting": "Only a figure-description paragraph was reworded to remove a prose overflow. Every original mathematical block is unchanged."
+      }
+    ],
+    "owner_review": {
+      "observed_utc": "2026-10-11T14:43:05.252323+00:00",
+      "source_sha256": "317146ba0daef993df8149826ac732232186242d93b5bb30b5a624570ee4ae6e",
+      "owner_sha256": "906ae7eb74dc091d1e112367951e81d7eb4d3ac573103da550083daf139c52fe",
+      "reading": "CM1–CM63 and CE1–CE45 completely read. CM source proof and primary TeX ranges read. CE original finite coefficients, all current factors, equality defects, spectral window maps and third energy checked directly. No worker is used or resumed.",
+      "correction": "CE23 lower spectral quotient is defined for every nonzero signed test; positive-test ceilings retain their scope. Original copy preserved.",
+      "pending": "Archive and verified publication.",
+      "owner_ce_sha256": "6ff8ede3c42fb5d5fbddd88d8588628a733bd07c0b2befee6c2706f585ddee3c",
+      "coverage": "CM1–CM63, CE1–CE50, exact source ranges below; complete direct owner reading and calculation.",
+      "underclaim": "CE46–CE50 remove the small-parameter restriction with an exact convex spectral remainder. CE13 evaluates the CM current defect to zero.",
+      "diagnostics": [
+        {
+          "observed_utc": "2026-10-11T14:51:05.275529+00:00",
+          "passed": 5694,
+          "math_blocks_audited": 488,
+          "formula_tags": 63,
+          "checks_scope": "Exact algebra, incidence, root constants, physical factors, finite quadratic/compression identities, source serialization; no numerical ground-state inference.",
+          "figures": [
+            "central_measure_bounds.png",
+            "retained_current_identity.png"
+          ]
+        },
+        {
+          "utc": "2026-10-11T14:51:06.829708+00:00",
+          "passed": 5008,
+          "math_blocks": 242,
+          "source_sha256": "ba89ade031f35020f91aea958b750e53ef5379a780cff53632c2974f7fef76bd",
+          "maximum_relative_spectral_identity_error": 9.534087569694598e-16,
+          "scope": "Exact algebra and spectral identities on finite positive test measures; these diagnostics do not sample or determine the Yang–Mills ground-state covariance."
+        }
+      ],
+      "figures_inspected": true,
+      "public_proofs": [
+        {
+          "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+          "prefix": "CM",
+          "owner_sha256": "545d0e4583c7526b8ec5fb853170ce6432b148b332d760bf1aa1bbf8e9f0475a",
+          "public_sha256": "33d6eebc2db13603fbc6d8484427fcd06984b6c5435eb7064e30b9849607d847",
+          "all_original_math_blocks_retained": true,
+          "typesetting": "Only a figure-description paragraph was reworded to remove a prose overflow. Every original mathematical block is unchanged."
+        },
+        {
+          "source": "CURRENT_COVARIANCE_EQUALITY.md",
+          "prefix": "CE",
+          "owner_sha256": "6ff8ede3c42fb5d5fbddd88d8588628a733bd07c0b2befee6c2706f585ddee3c",
+          "public_sha256": "ba89ade031f35020f91aea958b750e53ef5379a780cff53632c2974f7fef76bd",
+          "all_original_math_blocks_retained": true,
+          "typesetting": "Only a figure-description paragraph was reworded to remove a prose overflow. Every original mathematical block is unchanged."
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-11T14:52:41.946679+00:00",
+        "tex_sha256": "328316b5a56fefb6c1c450a865dda688cce35d414d85a8ebfd8ca4962dd99119",
+        "pdf_sha256": "2fb0612d80c172f15e11db4060077c6c0c7c8cb0c970e3555e516125e0328056",
+        "pages": 618,
+        "source_files": 61,
+        "math_blocks": 15746,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": "Pages589–618 rendered and inspected, including all new proofs593–618. Corrected prose paragraph on607 rendered again and inspected in the final edition. No new overflow or missing glyph. All three figures inspected. Earlier inherited warnings remain."
+      }
+    },
+    "reading": "CM1–CM63 and CE1–CE50 read in full. Earlier BM/OS providers read in full previously; current finite scalar, metric, boundary, Hessian and spectral factors rechecked. Original sealed and owner sources preserved.",
+    "provider_versions": [
+      {
+        "source": "BOUNDED_ENERGY_MULTIPLIER.md",
+        "version": "8881e58616267059c0461c8baec203e7c87d623e",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/8881e58616267059c0461c8baec203e7c87d623e/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDED_ENERGY_MULTIPLIER.md",
+        "sha256": "0c3f29741ca4355a2a5efbebc0b382864483d46a019b33f10d3874974bae8010"
+      },
+      {
+        "source": "ORIGINAL_SOURCE_COVARIANCE.md",
+        "version": "8881e58616267059c0461c8baec203e7c87d623e",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/8881e58616267059c0461c8baec203e7c87d623e/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_SOURCE_COVARIANCE.md",
+        "sha256": "1a6b3878e2414985e24905df16df287f10cd45ca8bb1a2770bcb5923501ea171"
+      }
+    ],
+    "novelty_claim": false
   }
 ]

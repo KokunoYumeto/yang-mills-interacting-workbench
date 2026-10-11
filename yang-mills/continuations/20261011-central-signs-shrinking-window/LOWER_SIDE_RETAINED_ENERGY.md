@@ -700,3 +700,7 @@ Complete programme providers: [FO1–FO56](https://github.com/KokunoYumeto/yang-
 ## Actual curvature scale and explicit smooth receiving families
 
 [HC1–HC24](HOLONOMY_CURVATURE_RECEIVING.md) give the original smooth holonomy map and its exact actual-vacuum curvature constraint. [HCR1–HCR8](HOLONOMY_CURVATURE_REVIEW.md) strengthen this to universal-preimage almost-sure bounds and compute the full fixed-time accumulation interval of an explicit globally smooth classical comparison. The original signed receiver and all finite error terms are retained.
+
+## Simultaneous spatial measure and current evaluation
+
+[CM1–CM63](SIMULTANEOUS_CENTRAL_MEASURE.md) extend the original bounded-word maps to every orientation triple and construct their actual spatial measure. [CE1–CE50](CURRENT_COVARIANCE_EQUALITY.md) evaluate the current defect to zero and retain the exact geometric and outside-energy covariance terms. The further heat fluctuation survives for every positive parameter; its original-window norm and visible/escape maps are explicit, with the actual window-energy coefficient still to be evaluated.

@@ -335,3 +335,11 @@ The original physical observable a_j³ Σ f(x_p) W_p now converges in actual vac
 ## SZ-20261011-054 — Universal curvature bounds and exact physical-time accumulation
 
 [HCR1–HCR8](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_REVIEW.md) prove the exact gauge inversion dictionary, almost-sure curvature lower bounds for every smooth-preimage sequence under any coupling of the actual marginals, and bounds for every positive curvature moment. They construct a nonzero receiver for every original nonzero signed test and determine the complete fixed-time accumulation interval of the symmetric homogeneous classical family. Actual continuum-state identification, finite-energy dynamics and reconstruction remain active calculations.
+
+## SZ-20261011-055 — One simultaneous spatial measure for the original state
+
+[CM1–CM63](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SIMULTANEOUS_CENTRAL_MEASURE.md) construct the exact positive central Radon measure for all three original plaquette orientations on one state path and one ultrafilter. Full cube bounds, atomlessness, a positive absolutely continuous component, possible singular mass, covariance measures, original cyclic compression and all mixed heat-word maps are proved. The original signed observable, root constants and crossing-face terms are retained.
+
+## SZ-20261011-056 — Current collapse and surviving original fluctuations
+
+[CE1–CE50](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_COVARIANCE_EQUALITY.md) evaluate the entire CM current defect to zero, identify the next centered current with the same spatial covariance, and give complete finite variance identities with geometric and outside-energy remainders. Every nonzero orientation triple has explicit positive first-energy and raw-variance lower bounds. CE46–CE50 strengthen the first heat-increment result to every positive heat parameter, retaining the exact spectral remainder. CE35–CE42 give the unchanged shrinking-window and visible/escape maps; the actual low-window energy coefficient and central covariance remain to be evaluated.
