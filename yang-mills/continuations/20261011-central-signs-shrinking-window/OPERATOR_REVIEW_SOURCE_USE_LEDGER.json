@@ -1,0 +1,36 @@
+[
+  {
+    "source_id": "programme:OR-20261011",
+    "version": "2026-10-11",
+    "proof": {
+      "source": "INDEPENDENT_OPERATOR_REVIEW.md",
+      "sealed_sha256": "298ded90e2d43c300bcf2403fda62844071a099917445836164c226f605c1e9b",
+      "public_sha256": "0053e4dfc8b10cdb290dda62edb5a6de3e932f077171216cb2991406bc50cc47",
+      "all_original_math_blocks_retained": true,
+      "changes": "Working public proof and source links, exact illustration and caption added; mathematical blocks retained."
+    },
+    "owner_review": {
+      "utc": "2026-10-11T09:19:42.121083+00:00",
+      "proof": "OR1–OR17 read in full; the associated-operator domain is proved in both directions, endpoint fluxes and smooth test action checked, and the full complex phase residual retained.",
+      "source_sha256": "298ded90e2d43c300bcf2403fda62844071a099917445836164c226f605c1e9b",
+      "reviewed_OP_source_sha256": "e7c53e29eea9df6cff74c3b02f94320ca88b37e0afa7f12cd75905a028479dd4",
+      "checks": 17,
+      "figure": "operator_domain_maps.png inspected; exact map and phase identities checked.",
+      "correction": "OR6 set-opening brace escaped in the sealed source before integration; original pre-correction edition retained privately.",
+      "scope": "No assertion of invariant physical subspace or whole scalar operator-domain inclusion in the original operator domain."
+    },
+    "reviewed_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c/yang-mills/continuations/20261011-central-signs-shrinking-window/PUSHFORWARD_OPERATOR_RECEIVING.md",
+    "primary_source": {
+      "source_id": "arxiv:0906.4865v1",
+      "authors": [
+        "Frédéric Legoll",
+        "Tony Lelièvre"
+      ],
+      "public_source": "https://arxiv.org/src/0906.4865v1",
+      "archive_sha256": "f1f47332336cea28fcc56f17a92857cbeac13eab34b996d02ea7dae2678d3ca3",
+      "main_tex_sha256": "c8516b44226b20d6f1e61b07e03130a8b6cd37242cb7426905a72db2d952f98e",
+      "actual_reading_coverage": "Independent original-TeX reading:135–168,393–541,680–750. Owner previously read135–168,393–540,680–750. Conditional coefficients and complete physical kappa/Haar-volume map; no approximation theorem imported."
+    },
+    "receiving_calculation": "OR6–OR10 exact closed scalar domain, full original physical isometry and residual; OR13–OR17 sharper phase covariance and complete physical-time comparison."
+  }
+]

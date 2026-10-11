@@ -1,0 +1,98 @@
+[
+  {
+    "source_id": "programme:ACTUAL_PUSHFORWARD_OPTIMIZATION",
+    "version": "458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c",
+    "source_sha256": "7599730137c8fef29c87f4205bc0a1681380e9217fed739533647b4ca6d18efe",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_PUSHFORWARD_OPTIMIZATION.md",
+    "actual_reading_coverage": "FO1–FO56 read in full; original local comparison, actual coarea/flux and upper-tail calculation.",
+    "receiving_calculation": "LR1–LR58 andIM1–IM42: actual tail, inverse, inside marginal, retained-energy and signed original receiving maps."
+  },
+  {
+    "source_id": "programme:ACTUAL_PUSHFORWARD",
+    "version": "458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c",
+    "source_sha256": "0929e0d20703583172c9103c6ce6ff82f29254fcd4aeac8783f0b121640a4e71",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_PUSHFORWARD.md",
+    "actual_reading_coverage": "PF1–PF53 previously accepted and owner-read; exact scalar ground and current construction.",
+    "receiving_calculation": "LR1–LR58 andIM1–IM42: actual tail, inverse, inside marginal, retained-energy and signed original receiving maps."
+  },
+  {
+    "source_id": "programme:PUSHFORWARD_OPERATOR_RECEIVING",
+    "version": "458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c",
+    "source_sha256": "a20451572d183b159c73dace2029230e96ef338c42f9afd81c2537a663199fe6",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c/yang-mills/continuations/20261011-central-signs-shrinking-window/PUSHFORWARD_OPERATOR_RECEIVING.md",
+    "actual_reading_coverage": "OP1–OP19 owner-derived and fully read; closed scalar domain and full second-energy residual.",
+    "receiving_calculation": "LR1–LR58 andIM1–IM42: actual tail, inverse, inside marginal, retained-energy and signed original receiving maps."
+  },
+  {
+    "source_id": "programme:ORIGINAL_SOURCE_COVARIANCE",
+    "version": "458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c",
+    "source_sha256": "1a6b3878e2414985e24905df16df287f10cd45ca8bb1a2770bcb5923501ea171",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_SOURCE_COVARIANCE.md",
+    "actual_reading_coverage": "OS17–OS21 andOS37 reread by LR; complete needed Hessian signs and local Bochner argument reproduced inLR38–LR43.",
+    "receiving_calculation": "LR1–LR58 andIM1–IM42: actual tail, inverse, inside marginal, retained-energy and signed original receiving maps."
+  },
+  {
+    "source_id": "programme:LOCAL_CURVATURE_BUDGET",
+    "version": "458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c",
+    "source_sha256": "7e394f8c0e4a7d1cb2bfa4ed4e7b7438a17d6b864133ae51156ee022b4281a56",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/458d7cc7dbac2f4b7ee77cd9630a5b79b4344f5c/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CURVATURE_BUDGET.md",
+    "actual_reading_coverage": "LC1–LC42 previously accepted; original local patch counts and complete scalar/crossing cost retained.",
+    "receiving_calculation": "LR1–LR58 andIM1–IM42: actual tail, inverse, inside marginal, retained-energy and signed original receiving maps."
+  },
+  {
+    "source_id": "arxiv:0906.4865v1",
+    "authors": [
+      "Frédéric Legoll",
+      "Tony Lelièvre"
+    ],
+    "title": "Effective dynamics using conditional expectations",
+    "version": "Original authorv1",
+    "public_source": "https://arxiv.org/src/0906.4865v1",
+    "archive_sha256": "f1f47332336cea28fcc56f17a92857cbeac13eab34b996d02ea7dae2678d3ca3",
+    "main_tex_sha256": "c8516b44226b20d6f1e61b07e03130a8b6cd37242cb7426905a72db2d952f98e",
+    "actual_reading_coverage": "Previously read original TeX135–168,393–540,680–750; no new reading claim. Exact prior disk-index queries and routing-only records in the preceding public source-use ledger.",
+    "receiving_calculation": "Conditional-map context only. LR/IM derive their new inequalities directly on the original compact configuration; no noncritical-gradient assumption or source approximation theorem is imported."
+  },
+  {
+    "source_id": "programme:LR-IM-20261011",
+    "proofs": [
+      {
+        "source": "LOWER_SIDE_RETAINED_ENERGY.md",
+        "sealed_sha256": "629a2419d9df9e555039a8da5d8b74dafcd0839d4ad4f4fc8e4a09662c88dffe",
+        "public_sha256": "2ecc704cc75e4bab3e86817ecdb47c620d1dbfec576241319e6d7ddf24212cce",
+        "changes": "Public proof and source navigation added; every original mathematical block retained. LR34 or IM37 receives line reflow with every original symbol retained; internal provenance paths become working public proof links. Sealed originals and pre-reflow public copies are preserved.",
+        "all_original_mathematical_content_retained": true,
+        "all_original_math_blocks_byte_identical": false
+      },
+      {
+        "source": "INSIDE_MARGINAL_ENERGY.md",
+        "sealed_sha256": "e083cd162010a7c5fb364ef347f4ff710b01e7288282c3ab2b8102893fad42ee",
+        "public_sha256": "c2552ad3f89c4fdd02708d96e5e3e2b9c9c7f0219f90ef5964c7c087ccc38f6a",
+        "changes": "Public proof and source navigation added; every original mathematical block retained. LR34 or IM37 receives line reflow with every original symbol retained; internal provenance paths become working public proof links. Sealed originals and pre-reflow public copies are preserved.",
+        "all_original_mathematical_content_retained": true,
+        "all_original_math_blocks_byte_identical": false
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-11T09:08:20.771850+00:00",
+      "LR": "LR1–LR58 full owner reading; score-square polynomial through all parameter signs, exact negative moments, weighted Bochner signs and original signed maps checked.",
+      "IM": "IM1–IM42 full owner reading; outside/marginal derivative identities, full operator residual, evaluated conditional variance and bounded different-potential sign example checked.",
+      "figures_inspected": [
+        "lower_side_and_energy.png",
+        "inside_marginal_receiver.png"
+      ],
+      "sealed_md_sha256": {
+        "LOWER_SIDE_RETAINED_ENERGY.md": "629a2419d9df9e555039a8da5d8b74dafcd0839d4ad4f4fc8e4a09662c88dffe",
+        "INSIDE_MARGINAL_ENERGY.md": "e083cd162010a7c5fb364ef347f4ff710b01e7288282c3ab2b8102893fad42ee"
+      },
+      "next": "Replay diagnostics then full source/claim/cumulative propagation and verified publication."
+    },
+    "checks": [
+      "11 symbolic identities",
+      "7250 finite root/domain/envelope checks",
+      "88 independent compact positive-ground checks; largest discrepancy2.6645352591003757e-15"
+    ],
+    "underclaim": "Full retained-energy variance and inverse-weighted remainder are quantitatively evaluated; their exact maps retain the original signed curvature covariance.",
+    "scope": "No original-law substitution, covariance-sign assumption or continuum no-gap conclusion."
+  }
+]
