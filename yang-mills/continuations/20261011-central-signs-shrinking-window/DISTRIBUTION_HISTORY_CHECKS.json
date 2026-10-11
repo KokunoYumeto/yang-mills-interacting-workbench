@@ -1,0 +1,911 @@
+{
+  "utc": "2026-10-11T07:55:19.673591+00:00",
+  "proof_sha256": "e4a650739152edc48b5927e65486d842797bbf1ff42111a862c18c78d6aefeea",
+  "scope": "Exact shell counts, orthogonality, full original patch constants, quantitative tails and source structure. Numerical checks do not replace the proof.",
+  "count": 139,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "sine orthogonality n1 k1 l1",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sine orthogonality n1 k1 l2",
+      "passed": true,
+      "detail": 4.804423505382812e-17
+    },
+    {
+      "name": "sine orthogonality n1 k1 l5",
+      "passed": true,
+      "detail": -6.938893903907228e-17
+    },
+    {
+      "name": "sine orthogonality n1 k2 l1",
+      "passed": true,
+      "detail": 4.804423505382812e-17
+    },
+    {
+      "name": "sine orthogonality n1 k2 l2",
+      "passed": true,
+      "detail": 0.9999999999999999
+    },
+    {
+      "name": "sine orthogonality n1 k2 l5",
+      "passed": true,
+      "detail": 1.7901081098230636e-16
+    },
+    {
+      "name": "sine orthogonality n1 k5 l1",
+      "passed": true,
+      "detail": -6.938893903907228e-17
+    },
+    {
+      "name": "sine orthogonality n1 k5 l2",
+      "passed": true,
+      "detail": 1.7901081098230636e-16
+    },
+    {
+      "name": "sine orthogonality n1 k5 l5",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sine orthogonality n2 k1 l1",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sine orthogonality n2 k1 l2",
+      "passed": true,
+      "detail": 4.804423505382812e-17
+    },
+    {
+      "name": "sine orthogonality n2 k1 l5",
+      "passed": true,
+      "detail": -6.938893903907228e-17
+    },
+    {
+      "name": "sine orthogonality n2 k2 l1",
+      "passed": true,
+      "detail": 4.804423505382812e-17
+    },
+    {
+      "name": "sine orthogonality n2 k2 l2",
+      "passed": true,
+      "detail": 0.9999999999999999
+    },
+    {
+      "name": "sine orthogonality n2 k2 l5",
+      "passed": true,
+      "detail": 1.7901081098230636e-16
+    },
+    {
+      "name": "sine orthogonality n2 k5 l1",
+      "passed": true,
+      "detail": -6.938893903907228e-17
+    },
+    {
+      "name": "sine orthogonality n2 k5 l2",
+      "passed": true,
+      "detail": 1.7901081098230636e-16
+    },
+    {
+      "name": "sine orthogonality n2 k5 l5",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sine orthogonality n5 k1 l1",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sine orthogonality n5 k1 l2",
+      "passed": true,
+      "detail": -2.616650689035918e-17
+    },
+    {
+      "name": "sine orthogonality n5 k1 l5",
+      "passed": true,
+      "detail": -2.6020852139652106e-17
+    },
+    {
+      "name": "sine orthogonality n5 k2 l1",
+      "passed": true,
+      "detail": -2.616650689035918e-17
+    },
+    {
+      "name": "sine orthogonality n5 k2 l2",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sine orthogonality n5 k2 l5",
+      "passed": true,
+      "detail": -4.7817237677363096e-17
+    },
+    {
+      "name": "sine orthogonality n5 k5 l1",
+      "passed": true,
+      "detail": -2.6020852139652106e-17
+    },
+    {
+      "name": "sine orthogonality n5 k5 l2",
+      "passed": true,
+      "detail": -4.7817237677363096e-17
+    },
+    {
+      "name": "sine orthogonality n5 k5 l5",
+      "passed": true,
+      "detail": 0.9999999999999999
+    },
+    {
+      "name": "exact shell 1",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "exact shell 2",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "exact shell 3",
+      "passed": true,
+      "detail": 19
+    },
+    {
+      "name": "exact shell 4",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "name": "exact shell 5",
+      "passed": true,
+      "detail": 61
+    },
+    {
+      "name": "exact shell 6",
+      "passed": true,
+      "detail": 91
+    },
+    {
+      "name": "exact shell 7",
+      "passed": true,
+      "detail": 127
+    },
+    {
+      "name": "exact shell 8",
+      "passed": true,
+      "detail": 169
+    },
+    {
+      "name": "exact shell 9",
+      "passed": true,
+      "detail": 217
+    },
+    {
+      "name": "exact shell 10",
+      "passed": true,
+      "detail": 271
+    },
+    {
+      "name": "exact shell 11",
+      "passed": true,
+      "detail": 331
+    },
+    {
+      "name": "exact shell 12",
+      "passed": true,
+      "detail": 397
+    },
+    {
+      "name": "exact shell 13",
+      "passed": true,
+      "detail": 469
+    },
+    {
+      "name": "exact shell 14",
+      "passed": true,
+      "detail": 547
+    },
+    {
+      "name": "exact shell 15",
+      "passed": true,
+      "detail": 631
+    },
+    {
+      "name": "exact shell 16",
+      "passed": true,
+      "detail": 721
+    },
+    {
+      "name": "exact shell 17",
+      "passed": true,
+      "detail": 817
+    },
+    {
+      "name": "exact shell 18",
+      "passed": true,
+      "detail": 919
+    },
+    {
+      "name": "exact shell 19",
+      "passed": true,
+      "detail": 1027
+    },
+    {
+      "name": "exact shell 20",
+      "passed": true,
+      "detail": 1141
+    },
+    {
+      "name": "exact shell 21",
+      "passed": true,
+      "detail": 1261
+    },
+    {
+      "name": "exact shell 22",
+      "passed": true,
+      "detail": 1387
+    },
+    {
+      "name": "exact shell 23",
+      "passed": true,
+      "detail": 1519
+    },
+    {
+      "name": "exact shell 24",
+      "passed": true,
+      "detail": 1657
+    },
+    {
+      "name": "exact shell 25",
+      "passed": true,
+      "detail": 1801
+    },
+    {
+      "name": "exact shell 26",
+      "passed": true,
+      "detail": 1951
+    },
+    {
+      "name": "exact shell 27",
+      "passed": true,
+      "detail": 2107
+    },
+    {
+      "name": "exact shell 28",
+      "passed": true,
+      "detail": 2269
+    },
+    {
+      "name": "exact shell 29",
+      "passed": true,
+      "detail": 2437
+    },
+    {
+      "name": "exact shell 30",
+      "passed": true,
+      "detail": 2611
+    },
+    {
+      "name": "exact shell 31",
+      "passed": true,
+      "detail": 2791
+    },
+    {
+      "name": "shell majorant tail n1 s1.6 M1",
+      "passed": true,
+      "detail": {
+        "partial": 2.5865478346941324,
+        "bound": 3.5359625164790423
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s1.6 M3",
+      "passed": true,
+      "detail": {
+        "partial": 2.308576204085077,
+        "bound": 2.8384640728040207
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s1.6 M10",
+      "passed": true,
+      "detail": {
+        "partial": 1.8658244226681628,
+        "bound": 2.2310415195791173
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s1.6 M30",
+      "passed": true,
+      "detail": {
+        "partial": 1.467391157289596,
+        "bound": 1.7909497537788583
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s1.6 M1",
+      "passed": true,
+      "detail": {
+        "partial": 80.0143051798156,
+        "bound": 118.93116351866458
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s1.6 M3",
+      "passed": true,
+      "detail": {
+        "partial": 75.27441834000929,
+        "bound": 95.47098794493414
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s1.6 M10",
+      "passed": true,
+      "detail": {
+        "partial": 62.466798423229974,
+        "bound": 75.04049110967621
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s1.6 M30",
+      "passed": true,
+      "detail": {
+        "partial": 49.32565257352839,
+        "bound": 60.238121028636165
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.0 M1",
+      "passed": true,
+      "detail": {
+        "partial": 0.21354735878711442,
+        "bound": 0.49276714822484813
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.0 M3",
+      "passed": true,
+      "detail": {
+        "partial": 0.11901965429831991,
+        "bound": 0.16425571607494938
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.0 M10",
+      "passed": true,
+      "detail": {
+        "partial": 0.04460353241715843,
+        "bound": 0.049276714822484816
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.0 M30",
+      "passed": true,
+      "detail": {
+        "partial": 0.015884957833050654,
+        "bound": 0.016425571607494936
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.0 M1",
+      "passed": true,
+      "detail": {
+        "partial": 11.592656910675156,
+        "bound": 39.9141390062127
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.0 M3",
+      "passed": true,
+      "detail": {
+        "partial": 8.419916027228671,
+        "bound": 13.3047130020709
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.0 M10",
+      "passed": true,
+      "detail": {
+        "partial": 3.546025845307112,
+        "bound": 3.99141390062127
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.0 M30",
+      "passed": true,
+      "detail": {
+        "partial": 1.283728024029256,
+        "bound": 1.33047130020709
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.7 M1",
+      "passed": true,
+      "detail": {
+        "partial": 0.019161671906639935,
+        "bound": 0.10910952799839306
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.7 M3",
+      "passed": true,
+      "detail": {
+        "partial": 0.004105659938449248,
+        "bound": 0.007812169646573067
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.7 M10",
+      "passed": true,
+      "detail": {
+        "partial": 0.0003580841597843264,
+        "bound": 0.0004343728547186781
+      }
+    },
+    {
+      "name": "shell majorant tail n1 s2.7 M30",
+      "passed": true,
+      "detail": {
+        "partial": 2.9176128903565156e-05,
+        "bound": 3.110080753881116e-05
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.7 M1",
+      "passed": true,
+      "detail": {
+        "partial": 2.745255994375907,
+        "bound": 41.145036557400985
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.7 M3",
+      "passed": true,
+      "detail": {
+        "partial": 1.135028132103733,
+        "bound": 2.9459572559566123
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.7 M10",
+      "passed": true,
+      "detail": {
+        "partial": 0.12950573324819234,
+        "bound": 0.16380134086187098
+      }
+    },
+    {
+      "name": "shell majorant tail n3 s2.7 M30",
+      "passed": true,
+      "detail": {
+        "partial": 0.010946314806296905,
+        "bound": 0.01172806707740431
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n1 j2",
+      "passed": true,
+      "detail": {
+        "actual": 105.0778415507878,
+        "bound": 105.61772693672526
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n1 j3",
+      "passed": true,
+      "detail": {
+        "actual": 104.44992888541799,
+        "bound": 105.61772693672526
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n1 j9",
+      "passed": true,
+      "detail": {
+        "actual": 103.61576977353396,
+        "bound": 105.61772693672526
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n1 j31",
+      "passed": true,
+      "detail": {
+        "actual": 103.32061742841482,
+        "bound": 105.61772693672526
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n2 j2",
+      "passed": true,
+      "detail": {
+        "actual": 445.72647842578453,
+        "bound": 446.90944381172204
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n2 j3",
+      "passed": true,
+      "detail": {
+        "actual": 444.34865638541737,
+        "bound": 446.90944381172204
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n2 j9",
+      "passed": true,
+      "detail": {
+        "actual": 442.5151839402006,
+        "bound": 446.90944381172204
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n2 j31",
+      "passed": true,
+      "detail": {
+        "actual": 441.8655919835657,
+        "bound": 446.90944381172204
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n5 j2",
+      "passed": true,
+      "detail": {
+        "actual": 3313.1403890507827,
+        "bound": 3316.90059443672
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n5 j3",
+      "passed": true,
+      "detail": {
+        "actual": 3308.756838885418,
+        "bound": 3316.90059443672
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n5 j9",
+      "passed": true,
+      "detail": {
+        "actual": 3302.917426440201,
+        "bound": 3316.90059443672
+      }
+    },
+    {
+      "name": "complete patch constant k0.1 n5 j31",
+      "passed": true,
+      "detail": {
+        "actual": 3300.8468382296637,
+        "bound": 3316.90059443672
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n1 j2",
+      "passed": true,
+      "detail": {
+        "actual": 171.59361550787787,
+        "bound": 172.62926936725268
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n1 j3",
+      "passed": true,
+      "detail": {
+        "actual": 170.39048885417964,
+        "bound": 172.62926936725268
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n1 j9",
+      "passed": true,
+      "detail": {
+        "actual": 168.79449773533966,
+        "bound": 172.62926936725268
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n1 j31",
+      "passed": true,
+      "detail": {
+        "actual": 168.2304206941379,
+        "bound": 172.62926936725268
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n2 j2",
+      "passed": true,
+      "detail": {
+        "actual": 970.9599842578452,
+        "bound": 974.1064381172203
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n2 j3",
+      "passed": true,
+      "detail": {
+        "actual": 967.2977638541734,
+        "bound": 974.1064381172203
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n2 j9",
+      "passed": true,
+      "detail": {
+        "actual": 962.4286394020063,
+        "bound": 974.1064381172203
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n2 j31",
+      "passed": true,
+      "detail": {
+        "actual": 960.7046823746791,
+        "bound": 974.1064381172203
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n5 j2",
+      "passed": true,
+      "detail": {
+        "actual": 11455.739090507825,
+        "bound": 11471.697944367199
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n5 j3",
+      "passed": true,
+      "detail": {
+        "actual": 11437.139588854172,
+        "bound": 11471.697944367199
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n5 j9",
+      "passed": true,
+      "detail": {
+        "actual": 11412.371064402007,
+        "bound": 11471.697944367199
+      }
+    },
+    {
+      "name": "complete patch constant k1.0 n5 j31",
+      "passed": true,
+      "detail": {
+        "actual": 11403.590693222754,
+        "bound": 11471.697944367199
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n1 j2",
+      "passed": true,
+      "detail": {
+        "actual": 615.032108555145,
+        "bound": 619.3728855707687
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n1 j3",
+      "passed": true,
+      "detail": {
+        "actual": 609.9942219792574,
+        "bound": 619.3728855707687
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n1 j9",
+      "passed": true,
+      "detail": {
+        "actual": 603.3193508140442,
+        "bound": 619.3728855707687
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n1 j31",
+      "passed": true,
+      "detail": {
+        "actual": 600.9624424656251,
+        "bound": 619.3728855707687
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n2 j2",
+      "passed": true,
+      "detail": {
+        "actual": 4472.516689804917,
+        "bound": 4488.753066820543
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n2 j3",
+      "passed": true,
+      "detail": {
+        "actual": 4453.625146979213,
+        "bound": 4488.753066820543
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n2 j9",
+      "passed": true,
+      "detail": {
+        "actual": 4428.51834248071,
+        "bound": 4488.753066820543
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n2 j31",
+      "passed": true,
+      "detail": {
+        "actual": 4419.631951648767,
+        "bound": 4488.753066820543
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n5 j2",
+      "passed": true,
+      "detail": {
+        "actual": 65739.73043355478,
+        "bound": 65837.0136105704
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n5 j3",
+      "passed": true,
+      "detail": {
+        "actual": 65626.3579219792,
+        "bound": 65837.0136105704
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n5 j9",
+      "passed": true,
+      "detail": {
+        "actual": 65475.3953174807,
+        "bound": 65837.0136105704
+      }
+    },
+    {
+      "name": "complete patch constant k7.0 n5 j31",
+      "passed": true,
+      "detail": {
+        "actual": 65421.88305984336,
+        "bound": 65837.0136105704
+      }
+    },
+    {
+      "name": "dyadic Holder exponent p2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "maximal sum p2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dyadic Holder exponent p3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "maximal sum p3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dyadic Holder exponent p7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "maximal sum p7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dyadic Holder exponent p20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "maximal sum p20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact inclusion tail s01.6 s2.0 M1",
+      "passed": true,
+      "detail": {
+        "tail": 0.08269423187266264,
+        "bound": 0.18641288223404795
+      }
+    },
+    {
+      "name": "compact inclusion tail s01.6 s2.0 M2",
+      "passed": true,
+      "detail": {
+        "tail": 0.06476148470924209,
+        "bound": 0.1376311491090149
+      }
+    },
+    {
+      "name": "compact inclusion tail s01.6 s2.0 M4",
+      "passed": true,
+      "detail": {
+        "tail": 0.026428235899255935,
+        "bound": 0.09249023616191068
+      }
+    },
+    {
+      "name": "compact inclusion tail s02.0 s3.0 M1",
+      "passed": true,
+      "detail": {
+        "tail": 0.001375837306051577,
+        "bound": 0.007622120594958194
+      }
+    },
+    {
+      "name": "compact inclusion tail s02.0 s3.0 M2",
+      "passed": true,
+      "detail": {
+        "tail": 0.0009876069097756604,
+        "bound": 0.0035700792107442184
+      }
+    },
+    {
+      "name": "compact inclusion tail s02.0 s3.0 M4",
+      "passed": true,
+      "detail": {
+        "tail": 0.00028135024564005017,
+        "bound": 0.0013216782198203997
+      }
+    },
+    {
+      "name": "compact inclusion tail s03.0 s4.1 M1",
+      "passed": true,
+      "detail": {
+        "tail": 0.0001276800430181515,
+        "bound": 0.0010869725610685858
+      }
+    },
+    {
+      "name": "compact inclusion tail s03.0 s4.1 M2",
+      "passed": true,
+      "detail": {
+        "tail": 2.3677274470412192e-05,
+        "bound": 0.00047193351568044795
+      }
+    },
+    {
+      "name": "compact inclusion tail s03.0 s4.1 M4",
+      "passed": true,
+      "detail": {
+        "tail": 1.1526664850774259e-06,
+        "bound": 0.0001581879836564628
+      }
+    },
+    {
+      "name": "complete delimiters \\[",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete delimiters \\(",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unique equation locators",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "boundary kernel retained",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

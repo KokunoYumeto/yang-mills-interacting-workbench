@@ -1,0 +1,99 @@
+[
+  {
+    "canonical_source_id": "arxiv:2107.13846v1",
+    "authors": [
+      "Giacomo Ascione",
+      "Daniele Castorina",
+      "Giovanni Catino",
+      "Carlo Mantegazza"
+    ],
+    "title": "A matrix Harnack inequality for semilinear heat equations",
+    "version": "v1",
+    "url": "https://arxiv.org/abs/2107.13846v1",
+    "source_url": "https://arxiv.org/src/2107.13846v1",
+    "archive_sha256": "4add5c35998e5ae3d18fcb292b3cf94e46cd8bdff2f11e389c84da42278cfa9a",
+    "tex_sha256": "c09f17b58b9ea48e72eb7b20690a6f2e835bf560fa047640830c91628234169d",
+    "actual_reading_coverage": "Original author TeX title/authors and lines190–292; Section2 lines347–390. Intact source archive retained. No whole-paper reading claim.",
+    "receiving_calculation": "OS18–OS21 and HVR1–HVR12. Matrix minimum-principle comparison only; every stationary potential and product-curvature term is independently derived for the original Hamiltonian. No theorem for the different source PDE is imported."
+  },
+  {
+    "canonical_source_id": "arxiv:math/0211323v1",
+    "authors": [
+      "Martin Grothaus",
+      "Yuri G. Kondratiev",
+      "Eugene Lytvynov",
+      "Michael Roeckner"
+    ],
+    "title": "Scaling limit of stochastic dynamics in classical continuous systems",
+    "version": "v1",
+    "url": "https://arxiv.org/abs/math/0211323v1",
+    "actual_reading_coverage": "Original author TeX lines1398–1564, Section6.1, theorem pr777 and equations eq1605 and eq95. Archive/source hashes are retained in CURVATURE_REPRESENTATION_SOURCE_USE_LEDGER.json.",
+    "receiving_calculation": "DH1–DH19 and DR1–DR17. Comparison for Hilbert lifting of reversible coordinate moments; all original Yang–Mills maps and constants are proved in full."
+  },
+  {
+    "canonical_source_id": "programme:LOCAL_CURVATURE_BUDGET.md",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/471aca39662dea6c221c8c9c8a3dfcee195c25b6/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CURVATURE_BUDGET.md",
+    "version": "471aca39662dea6c221c8c9c8a3dfcee195c25b6",
+    "actual_reading_coverage": "LC1–LC42 in full in the preceding accepted derivations; relevant receiving sections independently rederived here.",
+    "receiving_calculation": "DH/DR spatial receiving maps and OS/HVR actual-source estimates."
+  },
+  {
+    "canonical_source_id": "programme:PHYSICAL_LOCAL_COVARIANCE.md",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/471aca39662dea6c221c8c9c8a3dfcee195c25b6/yang-mills/continuations/20261011-central-signs-shrinking-window/PHYSICAL_LOCAL_COVARIANCE.md",
+    "version": "471aca39662dea6c221c8c9c8a3dfcee195c25b6",
+    "actual_reading_coverage": "PVC1–PVC50 in full in the preceding accepted derivations; relevant receiving sections independently rederived here.",
+    "receiving_calculation": "DH/DR spatial receiving maps and OS/HVR actual-source estimates."
+  },
+  {
+    "canonical_source_id": "programme:CURVATURE_PHASE_RECONSTRUCTION.md",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/471aca39662dea6c221c8c9c8a3dfcee195c25b6/yang-mills/continuations/20261011-central-signs-shrinking-window/CURVATURE_PHASE_RECONSTRUCTION.md",
+    "version": "471aca39662dea6c221c8c9c8a3dfcee195c25b6",
+    "actual_reading_coverage": "CP1–CP50 in full in the preceding accepted derivations; relevant receiving sections independently rederived here.",
+    "receiving_calculation": "DH/DR spatial receiving maps and OS/HVR actual-source estimates."
+  },
+  {
+    "canonical_source_id": "programme:DH-DR-OS-HVR-20261011",
+    "proofs": [
+      {
+        "source": "DISTRIBUTION_CURVATURE_HISTORIES.md",
+        "private_source": "DISTRIBUTION_CURVATURE_HISTORIES.md",
+        "private_sha256": "2ad1d1ae7688e7ca2445a0fb10a914da7f6f5226dc267165144649167c706384",
+        "public_sha256": "e4a650739152edc48b5927e65486d842797bbf1ff42111a862c18c78d6aefeea",
+        "all_original_math_blocks_retained": true,
+        "changes": "Public proof links and figure captions; DH18 receives the complete DR recovery proof; integer moment scope clarified; review history wording updated. DH9 opening set braces escaped."
+      },
+      {
+        "source": "DISTRIBUTION_HISTORY_REVIEW.md",
+        "private_source": "INDEPENDENT_DH_REVIEW.md",
+        "private_sha256": "31576e6e36e5a24e3f83bbc26703ba31dc551a212e588b49905ee55cb39ee750",
+        "public_sha256": "498ec4bed008829a4f3fc80d148c706d012eb2cb180d03967999cbbd78701c60",
+        "all_original_math_blocks_retained": true,
+        "changes": "Public proof links and figure captions; DH18 receives the complete DR recovery proof; integer moment scope clarified; review history wording updated."
+      },
+      {
+        "source": "ORIGINAL_SOURCE_COVARIANCE.md",
+        "private_source": "ORIGINAL_SOURCE_COVARIANCE.md",
+        "private_sha256": "66864684f5d95b0cbbf1e4c0547230a98a08460e531b4a5758bf3e69693c5842",
+        "public_sha256": "0abff4ec5ca4780677e14aab0fa25958c4c0b2986728041acbbece5224e31615",
+        "all_original_math_blocks_retained": true,
+        "changes": "Public proof links and figure captions; DH18 receives the complete DR recovery proof; integer moment scope clarified; review history wording updated."
+      },
+      {
+        "source": "HESSIAN_RECEIVING_REVIEW.md",
+        "private_source": "INDEPENDENT_HESSIAN_REVIEW.md",
+        "private_sha256": "cfba5e99b0708cf6e973c3a543aa580de9f4ed08bfedd168ca5a5066b6b1e67b",
+        "public_sha256": "7ed74af1b0c1f6a54815eb03e3c2753f645586dbb40f64021fce6cfb91f43e7e",
+        "all_original_math_blocks_retained": true,
+        "changes": "Public proof links and figure captions; DH18 receives the complete DR recovery proof; integer moment scope clarified; review history wording updated."
+      }
+    ],
+    "owner_reading_coverage": "All DH1–DH19 and DH9a, DR1–DR17, OS1–OS40 plus OS8a/OS13a, and HVR1–HVR34 read in full; all four rendered figures inspected; checks independently replayed.",
+    "source_index_scope": "Existing disk indexes queried first; routing entries are not source reading. No PDF fallback and no exhaustive literature or novelty claim.",
+    "propagation": "DH18 recovered using DR11–DR14; all signed tests included; stronger lower-root receiving constants propagated to PVC, LC, CP, low-energy maps and cumulative reader.",
+    "remaining_calculations": "Actual-source variance upper bound of order a_j, raw S6 shrinking-window mass, nontrivial smooth four-dimensional reconstruction.",
+    "typesetting_corrections": {
+      "DH9": "Escape two opening set braces; all set members, norms and conditions unchanged. Original private source and first archive retained.",
+      "reader": "Protect literal square brackets at the start of alignment environments and rows from optional-position/row-height parsing."
+    }
+  }
+]

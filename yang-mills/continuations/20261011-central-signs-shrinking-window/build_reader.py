@@ -10,7 +10,9 @@ def typeset_math(text):
     # Keep every formula character; aligned permits the multiple alignment
     # columns already present in the retained Markdown equations.
     text = text.replace(r'\begin{split}', r'\begin{aligned}').replace(r'\end{split}', r'\end{aligned}')
-    text = re.sub(r'(\\begin\{aligned\})(\s*\[)', r'\1\\relax\2', text)
+    text = re.sub(r'(\\begin\{(?:aligned|gathered)\})(\s*\[)', r'\1\\relax\2', text)
+    # A new row's literal bracket is not an optional row-height argument.
+    text = re.sub(r'(\\\\[ \t]*\n[ \t]*)(\[)', r'\1{}\2', text)
     def place_tag(match):
         block = match.group()
         tags = list(re.finditer(r'\\tag\{[^}]+\}', block))
@@ -108,7 +110,7 @@ header=HEADER.replace('Yang--Mills: complete research proofs','Yang--Mills centr
 out=ROOT/'RESEARCH_CONTINUATION.tex'
 out.write_text(header+'\n\\clearpage\n'.join(bodies)+'\n\\end{document}\n',encoding='utf-8',newline='\n')
 (ROOT/'TEX_FIDELITY.json').write_text(json.dumps({'sources':rows,'all_math_blocks_preserved':True,
- 'typesetting_map':'Split wrappers become aligned; an inert relax protects leading square brackets; a tag inside an inner alignment moves outside that alignment. Equation content and tags are retained. Tables retain all cells with their actual column count. Original Markdown sources are unchanged.',
+ 'typesetting_map':'Split wrappers become aligned; inert relax and empty groups protect leading and new-row square brackets; a tag inside an inner alignment moves outside that alignment. Equation content and tags are retained. Tables retain all cells with their actual column count. Markdown set-delimiter corrections are recorded separately in the source-fidelity receipt.',
  'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'compilation_confirmed':False,
  'compile_status':'Compilation has not been confirmed for this source edition; no current PDF is included.'},indent=2)+'\n')
 print(json.dumps({'math_blocks':sum(x['complete_math_blocks'] for x in rows),'source_files':len(rows)}))

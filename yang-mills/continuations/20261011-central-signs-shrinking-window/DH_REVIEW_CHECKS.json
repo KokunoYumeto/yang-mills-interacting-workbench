@@ -1,0 +1,310 @@
+{
+  "created_at": "2026-10-11T07:55:20.628777+00:00",
+  "total": 50,
+  "passed": 50,
+  "source_sha256": "498ec4bed008829a4f3fc80d148c706d012eb2cb180d03967999cbbd78701c60",
+  "provider_sha256": {
+    "DISTRIBUTION_CURVATURE_HISTORIES.md": "e4a650739152edc48b5927e65486d842797bbf1ff42111a862c18c78d6aefeea",
+    "CURVATURE_PHASE_RECONSTRUCTION.md": "6501ed4fb0c10e94f7440e94f0f63487d60c291f6943c7721683e81e4205f5a6"
+  },
+  "checks": [
+    {
+      "name": "DR labels",
+      "passed": true,
+      "detail": "DR1-DR17, unique and ordered"
+    },
+    {
+      "name": "display and inline delimiters",
+      "passed": true,
+      "detail": [
+        18,
+        18
+      ]
+    },
+    {
+      "name": "control audit",
+      "passed": true,
+      "detail": "UTF-8 source"
+    },
+    {
+      "name": "sealed CP unchanged",
+      "passed": true,
+      "detail": "6501ed4fb0c10e94f7440e94f0f63487d60c291f6943c7721683e81e4205f5a6"
+    },
+    {
+      "name": "exact sine factor n=1 k=1 l=1",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "exact sine factor n=1 k=1 l=2",
+      "passed": true,
+      "detail": 4.804423505382812e-17
+    },
+    {
+      "name": "exact sine factor n=1 k=2 l=2",
+      "passed": true,
+      "detail": 0.9999999999999999
+    },
+    {
+      "name": "exact sine factor n=1 k=2 l=5",
+      "passed": true,
+      "detail": 1.7901081098230636e-16
+    },
+    {
+      "name": "exact sine factor n=1 k=5 l=5",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "exact sine factor n=2 k=1 l=1",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "exact sine factor n=2 k=1 l=2",
+      "passed": true,
+      "detail": 4.804423505382812e-17
+    },
+    {
+      "name": "exact sine factor n=2 k=2 l=2",
+      "passed": true,
+      "detail": 0.9999999999999999
+    },
+    {
+      "name": "exact sine factor n=2 k=2 l=5",
+      "passed": true,
+      "detail": 1.7901081098230636e-16
+    },
+    {
+      "name": "exact sine factor n=2 k=5 l=5",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "exact sine factor n=4 k=1 l=1",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "exact sine factor n=4 k=1 l=2",
+      "passed": true,
+      "detail": 4.804423505382812e-17
+    },
+    {
+      "name": "exact sine factor n=4 k=2 l=2",
+      "passed": true,
+      "detail": 0.9999999999999999
+    },
+    {
+      "name": "exact sine factor n=4 k=2 l=5",
+      "passed": true,
+      "detail": 1.7901081098230636e-16
+    },
+    {
+      "name": "exact sine factor n=4 k=5 l=5",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sharp inclusion tail M=1",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "sharp inclusion tail M=2",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "sharp inclusion tail M=5",
+      "passed": true,
+      "detail": 38
+    },
+    {
+      "name": "sharp inclusion tail M=10",
+      "passed": true,
+      "detail": 123
+    },
+    {
+      "name": "shell cardinality",
+      "passed": true,
+      "detail": "First hundred exact shells"
+    },
+    {
+      "name": "cutoff coefficient exact",
+      "passed": true,
+      "detail": "delta=n*2^(-l-2)"
+    },
+    {
+      "name": "cutoff supremum n=1 l=1 k=(1, 1, 1)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.12384235655899219,
+        "proved_bound": 0.19634954084936207
+      }
+    },
+    {
+      "name": "cutoff supremum n=1 l=1 k=(2, 5, 3)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.5656205350073489,
+        "proved_bound": 0.9817477042468103
+      }
+    },
+    {
+      "name": "cutoff supremum n=1 l=3 k=(1, 1, 1)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.030940815070517456,
+        "proved_bound": 0.04908738521234052
+      }
+    },
+    {
+      "name": "cutoff supremum n=1 l=3 k=(2, 5, 3)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.14657119258209877,
+        "proved_bound": 0.2454369260617026
+      }
+    },
+    {
+      "name": "cutoff supremum n=1 l=6 k=(1, 1, 1)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.003800496104027268,
+        "proved_bound": 0.006135923151542565
+      }
+    },
+    {
+      "name": "cutoff supremum n=1 l=6 k=(2, 5, 3)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.017979023410337722,
+        "proved_bound": 0.030679615757712823
+      }
+    },
+    {
+      "name": "cutoff supremum n=2 l=1 k=(1, 1, 1)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.04406320921798555,
+        "proved_bound": 0.06942004590872447
+      }
+    },
+    {
+      "name": "cutoff supremum n=2 l=1 k=(2, 5, 3)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.19715887470722757,
+        "proved_bound": 0.34710022954362235
+      }
+    },
+    {
+      "name": "cutoff supremum n=2 l=3 k=(1, 1, 1)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.010567000168183972,
+        "proved_bound": 0.017355011477181118
+      }
+    },
+    {
+      "name": "cutoff supremum n=2 l=3 k=(2, 5, 3)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.0513323501587141,
+        "proved_bound": 0.08677505738590559
+      }
+    },
+    {
+      "name": "cutoff supremum n=2 l=6 k=(1, 1, 1)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.0012679319466779588,
+        "proved_bound": 0.0021693764346476397
+      }
+    },
+    {
+      "name": "cutoff supremum n=2 l=6 k=(2, 5, 3)",
+      "passed": true,
+      "detail": {
+        "sample_error": 0.005798074275312628,
+        "proved_bound": 0.010846882173238198
+      }
+    },
+    {
+      "name": "two-sided maximal factor",
+      "passed": true,
+      "detail": "Both time halves retained"
+    },
+    {
+      "name": "Borel-Cantelli power",
+      "passed": true,
+      "detail": "p=2, threshold 2^(-l/2)"
+    },
+    {
+      "name": "plane coefficient domination eps=0.2",
+      "passed": true,
+      "detail": "Dominated by the summable boundary norm at every retained coordinate"
+    },
+    {
+      "name": "plane coefficient domination eps=0.1",
+      "passed": true,
+      "detail": "Dominated by the summable boundary norm at every retained coordinate"
+    },
+    {
+      "name": "plane coefficient domination eps=0.05",
+      "passed": true,
+      "detail": "Dominated by the summable boundary norm at every retained coordinate"
+    },
+    {
+      "name": "plane coefficient domination eps=0.025",
+      "passed": true,
+      "detail": "Dominated by the summable boundary norm at every retained coordinate"
+    },
+    {
+      "name": "boundary layer Hilbert convergence samples",
+      "passed": true,
+      "detail": {
+        "finite_sum_errors": [
+          0.06323471257271376,
+          0.03282851816852341,
+          0.016596414745785833,
+          0.00832241590545092
+        ],
+        "terms": 200000,
+        "status": "Finite numerical samples; full convergence follows by dominated convergence in DR14."
+      }
+    },
+    {
+      "name": "boundary norm threshold",
+      "passed": true,
+      "detail": "At s=3/2 the comparison series is harmonic; s>3/2 converges"
+    },
+    {
+      "name": "sharp tail improves DH14",
+      "passed": true,
+      "detail": "No existing DH bound is invalidated"
+    },
+    {
+      "name": "Hilbert limiting covariance coefficient",
+      "passed": true,
+      "detail": "Original 2 kappa bracket times 8 L times n^(-3) S"
+    },
+    {
+      "name": "three orientations retained",
+      "passed": true,
+      "detail": "Minkowski keeps a factor of three without independence"
+    },
+    {
+      "name": "Hilbert cosh coefficients",
+      "passed": true,
+      "detail": "Same coefficient identity applies to the Hilbert norm moments"
+    },
+    {
+      "name": "Hilbert logarithmic union constant",
+      "passed": true,
+      "detail": "Every dyadic interval and leading factor two retained"
+    }
+  ]
+}
