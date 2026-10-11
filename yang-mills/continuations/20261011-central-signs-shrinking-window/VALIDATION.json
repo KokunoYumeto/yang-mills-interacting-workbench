@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T01:11:32.653589+00:00",
+  "checked_utc": "2026-10-11T02:57:22.542497+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -100,6 +100,42 @@
       "sha256": "dc71c9d0473c8603f6dd933f109083dffdd09503eb609cee9fe27a04643bcf2a",
       "complete_math_blocks": 431,
       "split_to_aligned_wrappers": 7
+    },
+    {
+      "source": "PHASE_RESPONSE_AND_ENDPOINT.md",
+      "sha256": "96e09c038d938125a2223c68a537696433fc1c61eecbfe2793be5a3e27ccaba0",
+      "complete_math_blocks": 310,
+      "split_to_aligned_wrappers": 4
+    },
+    {
+      "source": "CONDITIONAL_EDGE_ENTROPY_AND_SCORE.md",
+      "sha256": "afee1f14ef72147c46ceceaa1d94538044f2ec66620f8497cfcd9cab0913fa49",
+      "complete_math_blocks": 197,
+      "split_to_aligned_wrappers": 4
+    },
+    {
+      "source": "INDEPENDENT_EDGE_ENTROPY_PROOF.md",
+      "sha256": "859b81e16bb1ee037167d79d8c0ae411fd5f9485ad1a1558d6140ac76c078bfb",
+      "complete_math_blocks": 328,
+      "split_to_aligned_wrappers": 3
+    },
+    {
+      "source": "HEAT_RATIO_PROOF.md",
+      "sha256": "4d2da443ba1d65b891da6f9ab9398c234b451d33d36a6252fecc395c52c8c585",
+      "complete_math_blocks": 186,
+      "split_to_aligned_wrappers": 7
+    },
+    {
+      "source": "SQUARE_ROOT_LOCAL_SCORE.md",
+      "sha256": "1e78074170aa830288c5d9ecb2022edc1f5bfd015d15829399fcafac13a27669",
+      "complete_math_blocks": 293,
+      "split_to_aligned_wrappers": 12
+    },
+    {
+      "source": "SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+      "sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4",
+      "complete_math_blocks": 531,
+      "split_to_aligned_wrappers": 0
     }
   ],
   "figures": [
@@ -152,9 +188,29 @@
       "file": "CAP_GRAM_COMPARISON.png",
       "sha256": "5399aceb0044c6ba3b3b10953a42e7a6540025256971e7b4d99a65683f638810",
       "visually_inspected": true
+    },
+    {
+      "file": "HEAT_RATIO_FIGURE.png",
+      "sha256": "03ff0a6403c7b33c11ab55df69cf539ef4278f2f2562de4562ec1f7579f2b48f",
+      "visually_inspected": true
+    },
+    {
+      "file": "SQUARE_ROOT_SCORE.png",
+      "sha256": "e250bc2dcb5823febfa8ea0db285743fcea551cfd720fa1102823c06b94c1f53",
+      "visually_inspected": true
+    },
+    {
+      "file": "CONDITIONAL_ENTROPY.png",
+      "sha256": "7b83e1259d8a430215ca184d14e4fb4b792986271c914fd6e3c9303e24a958d2",
+      "visually_inspected": true
+    },
+    {
+      "file": "CONTRIBUTION_POWERS.png",
+      "sha256": "9c3cf0beb0cef33eae93a7ce7871a648c2bed506627fc693b1ccf4e0ffb4c248",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure. Owner read PRE1–PRE55, ESE1–ESE38, ID1–ID57, HR1–HR25, LS1–LS57 and the complete SR derivation. Full stochastic laws, kernel endpoint signs, affine terms, all derivative supports, original-path constants, norm domains and both spectral endpoint signs checked. All retained scripts replayed. Independent source escaping repaired before acceptance.",
   "pdf_compiled": false,
   "new_external_pdf_read": false,
   "spectral_weight_checks": 104,
@@ -177,5 +233,43 @@
     "success": true,
     "pdf_published": false,
     "layout_review": "Overfull warnings remain; no PDF edition claimed"
-  }
+  },
+  "square_root_proofs": [
+    {
+      "private_source_sha256": "0c9cd4c9324914e4a6183167ea6d5ea27860e80f08f5318c088fc269e0dca914",
+      "public_file": "PHASE_RESPONSE_AND_ENDPOINT.md",
+      "public_sha256": "96e09c038d938125a2223c68a537696433fc1c61eecbfe2793be5a3e27ccaba0",
+      "changes": "Public proof links and source-comparison notes; original mathematical blocks retained."
+    },
+    {
+      "private_source_sha256": "4ce844b7db4af3bfd6ed5beb1c7bc0751f2ece140439e01542a7d2eff2de6624",
+      "public_file": "CONDITIONAL_EDGE_ENTROPY_AND_SCORE.md",
+      "public_sha256": "afee1f14ef72147c46ceceaa1d94538044f2ec66620f8497cfcd9cab0913fa49",
+      "changes": "Public proof links and source-comparison notes; original mathematical blocks retained."
+    },
+    {
+      "private_source_sha256": "2db469f163ee0d7478a809833428aa119260570f8ad6118a8e29b9ea5766b2e8",
+      "public_file": "INDEPENDENT_EDGE_ENTROPY_PROOF.md",
+      "public_sha256": "859b81e16bb1ee037167d79d8c0ae411fd5f9485ad1a1558d6140ac76c078bfb",
+      "changes": "Public proof links and source-comparison notes; original mathematical blocks retained."
+    },
+    {
+      "private_source_sha256": "cc50fe7944938640b67adaf542a6efd5c2c1404bff4dc0ffbc73c42255c92baa",
+      "public_file": "HEAT_RATIO_PROOF.md",
+      "public_sha256": "4d2da443ba1d65b891da6f9ab9398c234b451d33d36a6252fecc395c52c8c585",
+      "changes": "Public proof links and source-comparison notes; original mathematical blocks retained."
+    },
+    {
+      "private_source_sha256": "832411c7a598ebd7229838a0911b14d8e5628517a780fcd8e7475fc17c0a8215",
+      "public_file": "SQUARE_ROOT_LOCAL_SCORE.md",
+      "public_sha256": "1e78074170aa830288c5d9ecb2022edc1f5bfd015d15829399fcafac13a27669",
+      "changes": "Public proof links and source-comparison notes; original mathematical blocks retained."
+    },
+    {
+      "private_source_sha256": "35733405195f36159beef992a48548099885a3ddd1b9f5ef9c229f402e891c14",
+      "public_file": "SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+      "public_sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4",
+      "changes": "Public proof links and source-comparison notes; original mathematical blocks retained."
+    }
+  ]
 }

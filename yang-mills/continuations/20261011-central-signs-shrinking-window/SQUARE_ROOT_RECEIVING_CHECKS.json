@@ -1,0 +1,446 @@
+{
+  "observed_utc": "2026-10-11T02:57:29.820199+00:00",
+  "control_escape_repairs": 0,
+  "source_sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4",
+  "checks": {
+    "entropy_constant_derivative": {
+      "passed": true,
+      "detail": null
+    },
+    "complete_gradient_dominates_twice_mass_cap": {
+      "passed": true,
+      "detail": {
+        "c6": "41426511213649/37281188007641088",
+        "two_C2": "24398405/153158928039936"
+      }
+    },
+    "six_variable_gram_floor": {
+      "passed": true,
+      "detail": null
+    },
+    "GPR_density_constant": {
+      "passed": true,
+      "detail": null
+    },
+    "both_endpoint_identities": {
+      "passed": true,
+      "detail": null
+    },
+    "B6_boundary": {
+      "passed": true,
+      "detail": {
+        "power": 26,
+        "limit": "3*V3/16"
+      }
+    },
+    "B6_interior": {
+      "passed": true,
+      "detail": {
+        "power": 22,
+        "limit": "3*V4/32"
+      }
+    },
+    "AD_boundary": {
+      "passed": true,
+      "detail": {
+        "power": 24,
+        "limit": "3*P3*T12/16"
+      }
+    },
+    "AD_interior": {
+      "passed": true,
+      "detail": {
+        "power": 20,
+        "limit": "3*P4*T13/32"
+      }
+    },
+    "AF_boundary_0": {
+      "passed": true,
+      "detail": {
+        "power": 22,
+        "limit": "P3/8"
+      }
+    },
+    "AF_boundary_1": {
+      "passed": true,
+      "detail": {
+        "power": 24,
+        "limit": "P3*T12/16"
+      }
+    },
+    "AF_interior_0": {
+      "passed": true,
+      "detail": {
+        "power": 18,
+        "limit": "P4/16"
+      }
+    },
+    "AF_interior_1": {
+      "passed": true,
+      "detail": {
+        "power": 20,
+        "limit": "P4*T13/32"
+      }
+    },
+    "B2minus_boundary": {
+      "passed": true,
+      "detail": {
+        "power": 30,
+        "limit": "3*T12*T23/8"
+      }
+    },
+    "B2minus_interior": {
+      "passed": true,
+      "detail": {
+        "power": 26,
+        "limit": "3*T13*T24/16"
+      }
+    },
+    "B2plus_boundary_0": {
+      "passed": true,
+      "detail": {
+        "power": 28,
+        "limit": "T23/4"
+      }
+    },
+    "B2plus_boundary_1": {
+      "passed": true,
+      "detail": {
+        "power": 30,
+        "limit": "T12*T23/8"
+      }
+    },
+    "B2plus_interior_0": {
+      "passed": true,
+      "detail": {
+        "power": 24,
+        "limit": "T24/8"
+      }
+    },
+    "B2plus_interior_1": {
+      "passed": true,
+      "detail": {
+        "power": 26,
+        "limit": "T13*T24/16"
+      }
+    },
+    "rows_n5": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n7": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n9": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n11": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n13": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n15": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n17": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n19": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n21": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n23": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n25": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n27": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n29": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n31": {
+      "passed": true,
+      "detail": null
+    },
+    "rows_n33": {
+      "passed": true,
+      "detail": null
+    },
+    "edge_counts_m4": {
+      "passed": true,
+      "detail": {
+        "2": 48,
+        "3": 144,
+        "4": 108
+      }
+    },
+    "face_pair_counts_m4": {
+      "passed": true,
+      "detail": {
+        "(2, 2)": 24,
+        "(3, 3)": 60,
+        "(2, 3)": 48,
+        "(3, 4)": 72,
+        "(4, 4)": 36
+      }
+    },
+    "incidence_sum_m4": {
+      "passed": true,
+      "detail": null
+    },
+    "gradient_face_constant_m4": {
+      "passed": true,
+      "detail": null
+    },
+    "edge_counts_m6": {
+      "passed": true,
+      "detail": {
+        "2": 72,
+        "3": 360,
+        "4": 450
+      }
+    },
+    "face_pair_counts_m6": {
+      "passed": true,
+      "detail": {
+        "(2, 2)": 24,
+        "(3, 3)": 156,
+        "(2, 3)": 96,
+        "(3, 4)": 240,
+        "(4, 4)": 240
+      }
+    },
+    "incidence_sum_m6": {
+      "passed": true,
+      "detail": null
+    },
+    "gradient_face_constant_m6": {
+      "passed": true,
+      "detail": null
+    },
+    "edge_counts_m8": {
+      "passed": true,
+      "detail": {
+        "2": 96,
+        "3": 672,
+        "4": 1176
+      }
+    },
+    "face_pair_counts_m8": {
+      "passed": true,
+      "detail": {
+        "(2, 2)": 24,
+        "(3, 3)": 300,
+        "(2, 3)": 144,
+        "(3, 4)": 504,
+        "(4, 4)": 756
+      }
+    },
+    "incidence_sum_m8": {
+      "passed": true,
+      "detail": null
+    },
+    "gradient_face_constant_m8": {
+      "passed": true,
+      "detail": null
+    },
+    "symbolic_six_face_counts_sum": {
+      "passed": true,
+      "detail": null
+    },
+    "oscillation_leading_geometric_factor": {
+      "passed": true,
+      "detail": null
+    },
+    "response_inverse_constant": {
+      "passed": true,
+      "detail": null
+    },
+    "coordinate_inverse_constant": {
+      "passed": true,
+      "detail": null
+    },
+    "labels_complete_unique": {
+      "passed": true,
+      "detail": {
+        "count": 72
+      }
+    },
+    "display_delimiters_balanced": {
+      "passed": true,
+      "detail": 72
+    },
+    "inline_delimiters_balanced": {
+      "passed": true,
+      "detail": 459
+    },
+    "no_control_characters": {
+      "passed": true,
+      "detail": null
+    },
+    "no_split_rm_control_escape": {
+      "passed": true,
+      "detail": null
+    },
+    "braces_balanced": {
+      "passed": true,
+      "detail": {
+        "open": 896,
+        "close": 896
+      }
+    },
+    "environment_aligned": {
+      "passed": true,
+      "detail": null
+    },
+    "environment_gathered": {
+      "passed": true,
+      "detail": null
+    },
+    "environment_array": {
+      "passed": true,
+      "detail": null
+    },
+    "environment_pmatrix": {
+      "passed": true,
+      "detail": null
+    },
+    "banned_word_absent": {
+      "passed": true,
+      "detail": null
+    }
+  },
+  "contribution_table": {
+    "B6_boundary": {
+      "gradient_power": 26,
+      "gradient_constant": "3*V3/16",
+      "energy_power": 32,
+      "energy_constant": "1875*pi**2*V3/(2*kappa)",
+      "endpoint_power": 31,
+      "endpoint_constant": "1875*pi**2*V3/(2*kappa**2)"
+    },
+    "B6_interior": {
+      "gradient_power": 22,
+      "gradient_constant": "3*V4/32",
+      "energy_power": 28,
+      "energy_constant": "1875*pi**2*V4/(4*kappa)",
+      "endpoint_power": 27,
+      "endpoint_constant": "1875*pi**2*V4/(4*kappa**2)"
+    },
+    "AD_boundary": {
+      "gradient_power": 24,
+      "gradient_constant": "3*P3*T12/16",
+      "energy_power": 30,
+      "energy_constant": "1875*pi**2*P3*T12/(2*kappa)",
+      "endpoint_power": 29,
+      "endpoint_constant": "1875*pi**2*P3*T12/(2*kappa**2)"
+    },
+    "AD_interior": {
+      "gradient_power": 20,
+      "gradient_constant": "3*P4*T13/32",
+      "energy_power": 26,
+      "energy_constant": "1875*pi**2*P4*T13/(4*kappa)",
+      "endpoint_power": 25,
+      "endpoint_constant": "1875*pi**2*P4*T13/(4*kappa**2)"
+    },
+    "AF_boundary_0": {
+      "gradient_power": 22,
+      "gradient_constant": "P3/8",
+      "energy_power": 28,
+      "energy_constant": "625*pi**2*P3/kappa",
+      "endpoint_power": 27,
+      "endpoint_constant": "625*pi**2*P3/kappa**2"
+    },
+    "AF_boundary_1": {
+      "gradient_power": 24,
+      "gradient_constant": "P3*T12/16",
+      "energy_power": 30,
+      "energy_constant": "625*pi**2*P3*T12/(2*kappa)",
+      "endpoint_power": 29,
+      "endpoint_constant": "625*pi**2*P3*T12/(2*kappa**2)"
+    },
+    "AF_interior_0": {
+      "gradient_power": 18,
+      "gradient_constant": "P4/16",
+      "energy_power": 24,
+      "energy_constant": "625*pi**2*P4/(2*kappa)",
+      "endpoint_power": 23,
+      "endpoint_constant": "625*pi**2*P4/(2*kappa**2)"
+    },
+    "AF_interior_1": {
+      "gradient_power": 20,
+      "gradient_constant": "P4*T13/32",
+      "energy_power": 26,
+      "energy_constant": "625*pi**2*P4*T13/(4*kappa)",
+      "endpoint_power": 25,
+      "endpoint_constant": "625*pi**2*P4*T13/(4*kappa**2)"
+    },
+    "B2minus_boundary": {
+      "gradient_power": 30,
+      "gradient_constant": "3*T12*T23/8",
+      "energy_power": 36,
+      "energy_constant": "1875*pi**2*T12*T23/kappa",
+      "endpoint_power": 35,
+      "endpoint_constant": "1875*pi**2*T12*T23/kappa**2"
+    },
+    "B2minus_interior": {
+      "gradient_power": 26,
+      "gradient_constant": "3*T13*T24/16",
+      "energy_power": 32,
+      "energy_constant": "1875*pi**2*T13*T24/(2*kappa)",
+      "endpoint_power": 31,
+      "endpoint_constant": "1875*pi**2*T13*T24/(2*kappa**2)"
+    },
+    "B2plus_boundary_0": {
+      "gradient_power": 28,
+      "gradient_constant": "T23/4",
+      "energy_power": 34,
+      "energy_constant": "1250*pi**2*T23/kappa",
+      "endpoint_power": 33,
+      "endpoint_constant": "1250*pi**2*T23/kappa**2"
+    },
+    "B2plus_boundary_1": {
+      "gradient_power": 30,
+      "gradient_constant": "T12*T23/8",
+      "energy_power": 36,
+      "energy_constant": "625*pi**2*T12*T23/kappa",
+      "endpoint_power": 35,
+      "endpoint_constant": "625*pi**2*T12*T23/kappa**2"
+    },
+    "B2plus_interior_0": {
+      "gradient_power": 24,
+      "gradient_constant": "T24/8",
+      "energy_power": 30,
+      "energy_constant": "625*pi**2*T24/kappa",
+      "endpoint_power": 29,
+      "endpoint_constant": "625*pi**2*T24/kappa**2"
+    },
+    "B2plus_interior_1": {
+      "gradient_power": 26,
+      "gradient_constant": "T13*T24/16",
+      "energy_power": 32,
+      "energy_constant": "625*pi**2*T13*T24/(2*kappa)",
+      "endpoint_power": 31,
+      "endpoint_constant": "625*pi**2*T13*T24/(2*kappa**2)"
+    }
+  },
+  "scope": "Symbolic identities, exact integer lattice enumeration, and high-precision finite trigonometric checks supplement the quantified proofs. No finite check replaces a general argument."
+}

@@ -1,0 +1,60 @@
+{
+  "status": "all_checks_passed",
+  "exact_checks": [
+    "Cstar from the full entropy and potential-gradient formula",
+    "original physical times pi*a/(2*sqrt(r)) and 2*a/sqrt(r)",
+    "original quaternion Casimir 3/4 and skew adjoint-rotation axis",
+    "complete Gaussian image endpoint derivative signs",
+    "unchanged path score and optimized cap powers",
+    "exact rational mass/energy prefactors"
+  ],
+  "Cstar_exact": "2+2*sqrt(4+2*pi)",
+  "Cstar_decimal": "8.413481209820322371200091",
+  "kernel_check_precision_decimal_digits": 100,
+  "kernel_checks": [
+    {
+      "tau": "0.25",
+      "maximum_relative_representation_difference": "5.241444e-88",
+      "endpoint_ratio": "896137650637325.687",
+      "proved_endpoint_ratio_upper_bound": "896137650637325.687"
+    },
+    {
+      "tau": "0.5",
+      "maximum_relative_representation_difference": "6.0673358e-98",
+      "endpoint_ratio": "4857158.33051690633",
+      "proved_endpoint_ratio_upper_bound": "4857158.33051690633"
+    },
+    {
+      "tau": "1.0",
+      "maximum_relative_representation_difference": "8.4756149e-100",
+      "endpoint_ratio": "515.861936287227056",
+      "proved_endpoint_ratio_upper_bound": "515.861936287227632"
+    },
+    {
+      "tau": "2.0",
+      "maximum_relative_representation_difference": "1.478543e-101",
+      "endpoint_ratio": "7.8383207269435603",
+      "proved_endpoint_ratio_upper_bound": "7.83832234071066651"
+    },
+    {
+      "tau": "4.93480220054467931",
+      "maximum_relative_representation_difference": "1.428956e-101",
+      "endpoint_ratio": "1.21911398834907853",
+      "proved_endpoint_ratio_upper_bound": "1.23150934982177504"
+    },
+    {
+      "tau": "9.86960440108935862",
+      "maximum_relative_representation_difference": "1.4256007e-101",
+      "endpoint_ratio": "1.00489119234126982",
+      "proved_endpoint_ratio_upper_bound": "1.35914091422952262"
+    }
+  ],
+  "path_powers": {
+    "odd_raw_mass": -38,
+    "even_raw_mass": -34,
+    "boundary_gradient": -22,
+    "odd_and_even_energy_lower_bounds": -28,
+    "positive_endpoint_correction": -27
+  },
+  "scope": "Exact algebra plus bounded numerical comparison; infinite-series and stochastic arguments are proved in SQUARE_ROOT_LOCAL_SCORE.md."
+}
