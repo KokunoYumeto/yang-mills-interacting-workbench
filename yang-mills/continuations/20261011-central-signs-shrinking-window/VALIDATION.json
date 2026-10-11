@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T20:59:47.488239+00:00",
+  "checked_utc": "2026-10-11T21:23:24.442685+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -199,7 +199,7 @@
     },
     {
       "source": "LOCAL_CURVATURE_BUDGET.md",
-      "sha256": "825d673a1a687e092abe069fa90711924eb8bc566f52094cba6f0a4c37eeafeb",
+      "sha256": "91d0d97b6ef018848f3cdd2829930a5ead68c5bdaad7410f3a28abdd22458b60",
       "complete_math_blocks": 262,
       "split_to_aligned_wrappers": 8
     },
@@ -301,7 +301,7 @@
     },
     {
       "source": "INSIDE_MARGINAL_ENERGY.md",
-      "sha256": "5b2baace87ddb3a5c4d042c90a32e427deb8c769ef2803a282381f489d8fb26f",
+      "sha256": "d459735f7ec895a0a1e6d2cd42ad3b027b3eed034d39efc93ca1e26a5baa7b0d",
       "complete_math_blocks": 246,
       "split_to_aligned_wrappers": 4
     },
@@ -409,13 +409,13 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "7a31b0e96709b54c01943e7930013823661d034b2a605f6536ebd1f81f2af5b4",
+      "sha256": "f42055f41a5430d008d90e24e054f1e99951eafdfb9e7784514e3c6e7e60c937",
       "complete_math_blocks": 207,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "cdc37593b171cdcec373c585dab2cc2aa7304b543969ec501c782ec958ffd611",
+      "sha256": "e259fae986679cbdecd569cd428869f4f3ac65a9f7375116974f91faa2392dcf",
       "complete_math_blocks": 253,
       "split_to_aligned_wrappers": 0
     },
@@ -433,33 +433,39 @@
     },
     {
       "source": "OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md",
-      "sha256": "32f2524002a5cc5bc70abecc2b000222beaffaffc882a9f05974a7c154239071",
+      "sha256": "28af56b1d788fdc038db417a5757316b51a091e65a0df80159016b5e94ac2d04",
       "complete_math_blocks": 205,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDARY_FORCE_PROJECTION.md",
-      "sha256": "679daf6db0ceca7667024126afe5abf3cf383171a63f59cf5a83c96e895e468f",
+      "sha256": "7220b18c0e376f01d403a4a0eebdc24598efcefef8e1d7662e67c42353fb52d0",
       "complete_math_blocks": 141,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDARY_DIVERGENCE_AND_MARGINAL_MOMENTS.md",
-      "sha256": "b0237ce4ddb98f5a3dfc5f92a82d8e19b6d61d08d9664e8b8cd2e3cca22f748b",
+      "sha256": "5da971b256c4c5a20f545fbbaac5d3de1ef6725fa8aac0f5e8a715a3aa02f2ae",
       "complete_math_blocks": 149,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "KINETIC_CURRENT_AND_PHYSICAL_ENERGY.md",
-      "sha256": "edcd34cb4c2062e40612ba8276beaf575a2b10ae3609305330736932400e10dc",
+      "sha256": "4d6876fad22b75526dd3f85d9c28d5c99093ccb5c334d0b429a8c572b6b2cbbb",
       "complete_math_blocks": 160,
       "split_to_aligned_wrappers": 1
     },
     {
       "source": "LOCAL_ENERGY_PHYSICAL_WINDOWS.md",
-      "sha256": "5ecca414126c1f5908538bac1d2a2bb5e55554ce7a2f33a32587647b2ef55852",
+      "sha256": "d7695d87b3e454d9a7d8048b7f653718be4b9ac032828171f8560980886991a5",
       "complete_math_blocks": 147,
       "split_to_aligned_wrappers": 1
+    },
+    {
+      "source": "SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
+      "sha256": "a6deb521b7416e3097f2f051d5cae963f5d10116c8de499513e36f864b0f9da3",
+      "complete_math_blocks": 158,
+      "split_to_aligned_wrappers": 3
     }
   ],
   "figures": [
@@ -846,6 +852,16 @@
     {
       "file": "LOCAL_ENERGY_WINDOW_BOUNDS.png",
       "sha256": "a4e4d15bd86aa78c56387666548b99572d0fc4cd227d67a55418936023eff789",
+      "visually_inspected": true
+    },
+    {
+      "file": "SMOOTH_ENERGY_LEVEL_MAP.png",
+      "sha256": "04cd8fcaf046f2d0d6ed9505c5168661765f4311a7b4ab56240206f50164232d",
+      "visually_inspected": true
+    },
+    {
+      "file": "SMOOTH_ENERGY_WINDOW_BOUNDS.png",
+      "sha256": "4ab5c86b670acea1349715ddac2371c10edc8b93826a659098a372f6fa8d21fe",
       "visually_inspected": true
     }
   ],
@@ -4184,6 +4200,181 @@
       "method": "All eight initial contact sheets inspected; final changed pages 499,500,501,755 inspected at full resolution. Remaining rendered pages have identical SHA256 to the inspected first pass.",
       "repair": "Inside-marginal receiving note moved intact from split pages499–500 to page500. Exact provider links added; no mathematical formula changed.",
       "limitations": "Inherited59 overfull boxes and one old missing delta remain outside the new increment. No new overfull or missing glyph. The cumulative reader PDF remains local QA; complete Markdown and TeX are the public artifacts."
+    }
+  },
+  "smooth_energy_review": {
+    "utc": "2026-10-11T21:16:24.334789+00:00",
+    "coverage": "WH1–WH33 complete derivation: full weighted Hamiltonian and scalar, original edge-center sampling, projected force and exact face-trace cancellation, first and second moments, noncommuting-sector commutator and signed covariance, full energy-density covariance matrix, arbitrary actual edge-subset ground comparison with odd-degree central sign proof, exact finite level decomposition with every nested covariance, actual norm bound, complete source trace/covariance and different-face first-energy contraction, three physical moment matrices and complementary residual, dependent-span case, original-window estimates, and exact one-face physical isometry.",
+    "strengthening": "Smooth spatial weights improve the full physical first-energy power. The actual norm has a proved finite bound through arbitrary edge subsets, with all nested-sector covariances retained. The original source trace has an evaluated limit while its subtracting covariance remains explicit. Exact one-face cancellation identifies the role of distinct-face couplings.",
+    "limitations": "No positive limiting norm, nonzero limiting source covariance or surviving low-energy mass is assigned. The actual covariance matrix, nested-sector covariance, source subtraction, interacting continuum state, reconstruction, global smoothness and intended no-gap endpoint remain active. The one-face comparison is not identified with the many-face theory.",
+    "actual_reading": "LE1–LE23 complete source retained and used; BQ1–BQ9 read, including full gradient space and weighted quotient; LC4–LC20 original edge partition and local energy/moment formulas read; KC7–KC11 complete variance proof retained; SR65 exact score constant retained from the accepted source. Primary-source ledgers remain linked. No exhaustive prior-file reading claim.",
+    "routing": "Canonical index first:18 routes for local energy/commutator, variance/coarea and spectral/covariance. Routing only, no external paper newly read or imported theorem; no literature PDF.",
+    "diagnostics": {
+      "file": "SMOOTH_ENERGY_CHECKS.json",
+      "checks": 1268,
+      "all_passed": true,
+      "scope": "WH diagnostics: original SU(2) face algebra, manufactured curved states, finite central-spin sector models and positive operators; no original Yang–Mills vacuum samples."
+    },
+    "figures_inspected": [
+      "SMOOTH_ENERGY_LEVEL_MAP.png",
+      "SMOOTH_ENERGY_WINDOW_BOUNDS.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
+        "prefix": "WH",
+        "tags": 33,
+        "owner_sha256": "a5a24bb778929fa47ae52a0d79f2b02e4a6e947afd4e96c54b2b3a0135a5e7e3",
+        "public_sha256": "a6deb521b7416e3097f2f051d5cae963f5d10116c8de499513e36f864b0f9da3",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T21:23:24.442685+00:00",
+      "tex_sha256": "a140e507fe32c1a1078240a44f53e3db2709ce5198ae2cff45f57524f95ea942",
+      "pdf_sha256": "886a25410d202216a89a5ab12261b755776bc045630aa83dc19a3474c00b9e50",
+      "pages": 774,
+      "source_files": 77,
+      "math_blocks": 18506,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-11T21:23:24.166924+00:00",
+        "complete": true,
+        "pages": 774,
+        "inspected_pages": [
+          326,
+          327,
+          328,
+          499,
+          500,
+          501,
+          695,
+          696,
+          697,
+          698,
+          708,
+          709,
+          710,
+          729,
+          730,
+          731,
+          732,
+          738,
+          739,
+          740,
+          746,
+          747,
+          748,
+          755,
+          756,
+          757,
+          764,
+          765,
+          766,
+          767,
+          768,
+          769,
+          770,
+          771,
+          772,
+          773,
+          774
+        ],
+        "new_proof_pages": [
+          766,
+          767,
+          768,
+          769,
+          770,
+          771,
+          772,
+          773,
+          774
+        ],
+        "figures": [
+          "SMOOTH_ENERGY_LEVEL_MAP.png",
+          "SMOOTH_ENERGY_WINDOW_BOUNDS.png"
+        ],
+        "method": "All nine initial contact sheets inspected. Final changed pages 696,697,698,730,731,732 inspected at full resolution; the other final rendered pages have identical SHA256 to the inspected first pass.",
+        "repair": "Two receiving notes moved intact from split pages696–697 and730–731 onto697 and731. No mathematical formula changed.",
+        "limitations": "Inherited59 overfull boxes and one old missing delta remain outside the new increment. No new overfull or missing glyph. The reader PDF remains local QA; complete Markdown and TeX are public."
+      }
+    }
+  },
+  "smooth_energy_compile": {
+    "utc": "2026-10-11T21:23:24.442685+00:00",
+    "tex_sha256": "a140e507fe32c1a1078240a44f53e3db2709ce5198ae2cff45f57524f95ea942",
+    "pdf_sha256": "886a25410d202216a89a5ab12261b755776bc045630aa83dc19a3474c00b9e50",
+    "pages": 774,
+    "source_files": 77,
+    "math_blocks": 18506,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-11T21:23:24.166924+00:00",
+      "complete": true,
+      "pages": 774,
+      "inspected_pages": [
+        326,
+        327,
+        328,
+        499,
+        500,
+        501,
+        695,
+        696,
+        697,
+        698,
+        708,
+        709,
+        710,
+        729,
+        730,
+        731,
+        732,
+        738,
+        739,
+        740,
+        746,
+        747,
+        748,
+        755,
+        756,
+        757,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774
+      ],
+      "new_proof_pages": [
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774
+      ],
+      "figures": [
+        "SMOOTH_ENERGY_LEVEL_MAP.png",
+        "SMOOTH_ENERGY_WINDOW_BOUNDS.png"
+      ],
+      "method": "All nine initial contact sheets inspected. Final changed pages 696,697,698,730,731,732 inspected at full resolution; the other final rendered pages have identical SHA256 to the inspected first pass.",
+      "repair": "Two receiving notes moved intact from split pages696–697 and730–731 onto697 and731. No mathematical formula changed.",
+      "limitations": "Inherited59 overfull boxes and one old missing delta remain outside the new increment. No new overfull or missing glyph. The reader PDF remains local QA; complete Markdown and TeX are public."
     }
   }
 }
