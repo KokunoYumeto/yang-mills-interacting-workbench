@@ -1,0 +1,168 @@
+[
+  {
+    "source_id": "programme:RAW_S6_HESSIAN_RECEIVING",
+    "version": "b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392",
+    "sha256": "6b2959197f50e968c5620fe206d5c82436de33f2f2449325c3241a08bfa8c77a",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392/yang-mills/continuations/20261011-central-signs-shrinking-window/RAW_S6_HESSIAN_RECEIVING.md",
+    "actual_reading_coverage": "RH1–RH51 previously fully derived and owner-read; WC uses actual original Hessian and raw phase.",
+    "receiving_calculation": "WC1–WC55 actual conditional score, Wilson covariance, full original root-word derivatives and raw spectral map."
+  },
+  {
+    "source_id": "programme:DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT",
+    "version": "b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392",
+    "sha256": "2ddc1750b7bfec4129268887cf679b88395f6e8a3025f69253d9d839834e7d83",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392/yang-mills/continuations/20261011-central-signs-shrinking-window/DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT.md",
+    "actual_reading_coverage": "DP1–DP43 plus36a/b fully derived and owner-read; WC receives exact potential, root words, signed kinetic and score blocks.",
+    "receiving_calculation": "WC1–WC55 actual conditional score, Wilson covariance, full original root-word derivatives and raw spectral map."
+  },
+  {
+    "source_id": "programme:LOCAL_CURVATURE_BUDGET",
+    "version": "b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392",
+    "sha256": "7e394f8c0e4a7d1cb2bfa4ed4e7b7438a17d6b864133ae51156ee022b4281a56",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CURVATURE_BUDGET.md",
+    "actual_reading_coverage": "Independent worker previously readLC1–LC22; owner accepted fullLC; WC47–WC48 apply exact full and induced-cube bounds.",
+    "receiving_calculation": "WC1–WC55 actual conditional score, Wilson covariance, full original root-word derivatives and raw spectral map."
+  },
+  {
+    "source_id": "programme:ORIGINAL_SOURCE_COVARIANCE",
+    "version": "b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392",
+    "sha256": "1a6b3878e2414985e24905df16df287f10cd45ca8bb1a2770bcb5923501ea171",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b5e6c1fa3da1341bf73e42605e41bd2d7ddf8392/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_SOURCE_COVARIANCE.md",
+    "actual_reading_coverage": "OS17–OS28 actual Hessian input previously read and checked; reproduced inRH18–RH20 andLR38–LR40.",
+    "receiving_calculation": "WC1–WC55 actual conditional score, Wilson covariance, full original root-word derivatives and raw spectral map."
+  },
+  {
+    "source_id": "programme:WC-20261011",
+    "proof": {
+      "source": "ACTUAL_WILSON_COVARIANCE.md",
+      "sealed_sha256": "5fe4aa1f4efc35cec3e1069014d384dad2e9892ea394d56d319b0ff6f4012330",
+      "public_sha256": "eded0819d7aa5918f3c5cdb06af34d9e4a93f449e7d37145c98adbcccde8b71f",
+      "changes": "Pinned complete provider proofs and reproducible check/figure links added; original mathematical blocks retained. WC1,WC4,WC38,WC42,WC48 receive line breaks and grouping wrappers; the long conditional density moves to a display. Every symbol and factor retained. Sealed and pre-reflow editions preserved.",
+      "all_original_mathematical_content_retained": true,
+      "all_original_math_blocks_byte_identical": false
+    },
+    "owner_review": {
+      "utc": "2026-10-11T09:26:40.790992+00:00",
+      "complete_reading": "WC1–WC55 fully read. Repeated original word derivatives, conditional one-link and two-link Haar score arguments, original coefficient signs and tree exception, full mixed-row covariance, integral partition and original-path limits checked.",
+      "sealed_sha256": "5fe4aa1f4efc35cec3e1069014d384dad2e9892ea394d56d319b0ff6f4012330",
+      "replayed_checks": "1032 complete word/surface checks,36 complete repeated-link Casimir jets,12 exact two-link fibres, finite signed/unsigned coefficient sums and independent2048-square integral comparison.",
+      "figure": "ACTUAL_WILSON_COVARIANCE.png inspected; labels preserve bound functions versus actual expectations.",
+      "scope": "Actual-vacuum transported-curl inequality and complete signed maps proved. The potential-error upper function still exceeds the positive magnetic lower function in order; no raw-window or continuum endpoint claim."
+    },
+    "literature_routes": [
+      {
+        "query": "\"Wilson\" AND \"Casimir\"",
+        "routing_only": true,
+        "records": [
+          {
+            "unit_id": "PUBUNIT-A76EFCFD3D48D5C2BD97691D",
+            "title": "arXiv:hep-lat/9710039v2  27 Oct 1997",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-DE1C4499427DFDBA5C1A5B6C",
+            "title": "1509.07874v2 RG flow with plyakov",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-D74C98495361E63EA8A6185E",
+            "title": "",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          }
+        ]
+      },
+      {
+        "query": "\"Yang\" AND \"conditional\" AND \"ground\"",
+        "routing_only": true,
+        "records": [
+          {
+            "unit_id": "PUBUNIT-2936EFAB9F7BD0AB6BF5CF84",
+            "title": "Quantum Information Meets Quantum Matter -- From Quantum Entanglement to Topological Phase in Many-Body Systems",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-81DB8934A05D05DF627273A2",
+            "title": "Understanding Deep Learning (Simon J.D. Prince)",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-011A0561C7CE2E08A6F9C78E",
+            "title": "Holography stack of papers and work",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          }
+        ]
+      },
+      {
+        "query": "\"Wilson\" AND \"Casimir\"",
+        "routing_only": true,
+        "records": [
+          {
+            "unit_id": "PUBUNIT-274128EA5F090CB3067548AD",
+            "title": "Arithmetic Time, CPT Spectral Packets,\\ Inflow, and Holographic Twists \\\\[0.7em] Surcomplex Weighted Automata, Split-Zero Semirings, Verdier--Kasparov Boundary Duality,\\ Gerbe TQFTs, Vacuum-Casimir Scattering, and Adelic Picard Monoids",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          },
+          {
+            "unit_id": "PUBUNIT-81554A743919C2B8E522BE06",
+            "title": "Arithmetic Time, CPT Spectral Packets,\\ Inflow, and Holographic Twists \\\\[0.7em] Surcomplex Weighted Automata, Split-Zero Semirings, Verdier--Kasparov Boundary Duality,\\ Gerbe TQFTs, Vacuum-Casimir Scattering, and Adelic Picard Monoids",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          },
+          {
+            "unit_id": "PUBUNIT-220E8F5DB705D1BAE9EEA359",
+            "title": "Exact Relation Atlas: V34 Integrated Edition \\\\[0.55em] Arithmetic Time, CPT Spectral Packets, Modular Standardness, Closed-Orbit Determinants,\\\\ Character Stacks, Anomaly Inflow, and Holographic Twists\\\\[0.55em] Complete V34 source-statement integration with a theorem-level relation ledger",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          }
+        ]
+      },
+      {
+        "query": "\"Yang\" AND \"conditional\" AND \"ground\"",
+        "routing_only": true,
+        "records": [
+          {
+            "unit_id": "PUBUNIT-A08E4B862F1DE291EDF0B822",
+            "title": "Arithmetic Time, CPT Spectral Packets, Surcomplex Weighted Automata, Anomaly Inflow, BCM Gauge-Sector Stacks, and Gordanized Invariant Calculus - v23",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-42546CB70ED2DCAF1E98516D",
+            "title": "Arithmetic Time, CPT Spectral Packets,\\ Anomaly Inflow \\\\[0.7em] Surcomplex Weighted Automata, Split-Zero Semirings, Verdier--Kasparov Boundary Duality,\\ Gerbe TQFTs, Vacuum-Casimir Scattering, and Adelic Picard Monoids",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          },
+          {
+            "unit_id": "PUBUNIT-8AF23DCB1B4856458AA459C9",
+            "title": "Arithmetic Time, CPT Spectral Packets,\\ Anomaly Inflow \\\\[0.7em] Surcomplex Weighted Automata, Split-Zero Semirings, Verdier--Kasparov Boundary Duality,\\ Gerbe TQFTs, Vacuum-Casimir Scattering, and Adelic Picard Monoids",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          }
+        ]
+      }
+    ],
+    "bounded_primary_reading": {
+      "canonical_source_id": "PUBUNIT-D74C98495361E63EA8A6185E",
+      "arxiv_id": "hep-th/0307020",
+      "title": "Remarks on Stable and Quasi-stable k-Strings at Large N",
+      "authors": [
+        "A. Armoni",
+        "M. Shifman"
+      ],
+      "sha256": "9e34bdd7c36132060b6cab1186d2cd91d9e7f3afcf7dc9ce68e1cb8f7934729d",
+      "source_kind": "Existing original-author TeX; no PDF used.",
+      "read_coverage": "Lines 1–145: title, authors and abstract; bounded text search routes only beyond these lines. No argument or theorem from this work is imported.",
+      "receiving_status": "Large-N string-tension discussion is outside the present finite SU(2) conditional-score proof. No novelty comparison claimed.",
+      "archive_handling": "The existing TeX corpus and any source archive were not modified. No new archive download or archive inspection is claimed.",
+      "public_source": "https://arxiv.org/src/hep-th/0307020",
+      "owner_reading": "No additional owner reading or imported theorem; worker bounded reading is recorded exactly."
+    },
+    "novelty": "No novelty claim; all new receiving arguments are proved in full inWC1–WC55."
+  }
+]

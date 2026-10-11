@@ -897,3 +897,7 @@ The earlier full raw-phase providers are [IP1–IP22](https://github.com/KokunoY
 [DP1–DP43, including DP36a–DP36b](DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT.md) prove the complete soft-direction potential Hessian, all root-frame commutators and variable-field acceleration terms. The direction leaves every 12- and 13-face trace invariant. Its full uniform potential coefficient tends to 3/2+8/pi^2. In the actual vacuum its directional potential Hessian differs from half the transported-curl covariance by an explicit error of order j^-1/2 before multiplication by the original b_j.
 
 An exact original-link family has all elementary face defects tending to zero and transverse directional Hessian tending to 1/2. The full rooted Wilson covariance DP28, signed kinetic matrix DP41 and score-root covariance DP43 identify the remaining actual-state calculations. Local higher curvature moments receive exact maps into every finite original covariance block. No comparison configuration replaces the actual vacuum.
+
+## Actual-vacuum transported-curl bound
+
+[WC25–WC45](ACTUAL_WILSON_COVARIANCE.md) evaluate the actual conditional one-link and two-link score maps and prove the transported-curl lower bound with its original-path constant. WC7–WC24 retain all repeated-edge contributions. WC50–WC55 carry the result through the complete potential, signed kinetic, score and raw-window formulas. The signed Wilson contraction in DP28 is eventually positive on the original path; the remaining spectral estimate is preserved explicitly.

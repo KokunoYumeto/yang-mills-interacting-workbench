@@ -718,3 +718,7 @@ Complete programme providers: [LC1–LC42](https://github.com/KokunoYumeto/yang-
 [BP1–BP33](BOUNDED_PHASE_SPECTRAL_RECEIVING.md) prove complete actual curvature-phase Gram and energy matrices and explicit finite spectral and heat bounds. Fixed phase parameters retain their unit norm in the continuous Hilbert representation. On the original regulator path, parameter sequences with a_j theta_j^2 tending to a positive finite value or infinity lose a quantitatively positive amount of norm. The original curvature, state, scalar phase and energy units remain explicit.
 
 BP28–BP33 construct the nonzero defect space and its exact maps to the original multiplication algebra. Compression fails the unitary multiplication law by a positive operator with an evaluated vacuum lower bound. Every fixed bounded-energy projection annihilates the defect space. These results quantify high-energy escape; they do not establish the prescribed low-energy mass or smooth continuum theory.
+
+## Actual-vacuum transported-curl bound
+
+[WC25–WC45](ACTUAL_WILSON_COVARIANCE.md) evaluate the actual conditional one-link and two-link score maps and prove the transported-curl lower bound with its original-path constant. WC7–WC24 retain all repeated-edge contributions. WC50–WC55 carry the result through the complete potential, signed kinetic, score and raw-window formulas. The signed Wilson contraction in DP28 is eventually positive on the original path; the remaining spectral estimate is preserved explicitly.
