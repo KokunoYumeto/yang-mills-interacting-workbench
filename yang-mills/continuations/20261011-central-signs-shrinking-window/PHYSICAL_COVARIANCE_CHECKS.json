@@ -1,0 +1,974 @@
+{
+  "timestamp": "2026-10-11T05:01:27.523961+00:00",
+  "scope": "Algebra/orientations/limits, full-projection finite-matrix identity checks, source/pulse signs, and raw source structure. No matrix model replaces the actual original vacuum.",
+  "proof_sha256_raw_bytes": "77e754642610af54d07ca07be761be6288b5928e3b5220b1fab180e0992e8945",
+  "total": 155,
+  "by_kind": {
+    "exact": 80,
+    "numerical": 30,
+    "structural": 45
+  },
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "PVC28 quadratic coefficients",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC27 U2",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC27 U3",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC27 U4",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC18 pulse covariance factor",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC19 pulse energy weight",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC20 pulse energy error",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC48 two signed defect weights",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC31 a squared local budget limit",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC44 a squared source budget limit",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC32 lower-mean limit coefficient",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC35 energy lower constant",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC46 signed-test average constant squared",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC46 nonnegative-test average constant squared",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC37 inherited optimizer derivative",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC23 fundamental Casimir",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 1 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 1 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 1 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 1 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 1 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 1 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 1 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 1 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 2 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 2 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 2 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 2 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 2 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 2 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 2 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 2 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 3 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 3 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 3 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 3 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 3 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 3 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 3 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 3 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 4 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 4 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 4 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 4 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 4 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 4 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 4 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 4 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 5 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 5 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 5 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 5 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 5 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 5 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 5 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 5 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 6 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 6 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 6 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 6 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 6 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 6 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 6 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 6 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 7 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 7 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 7 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 7 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 7 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 7 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 7 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 7 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 8 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 8 signs -1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 8 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 8 signs -1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 8 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 8 signs 1,-1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 shared edge sample 8 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC22 self derivative sample 8 signs 1,1",
+      "kind": "exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "PVC9 E first derivative",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 6.375334704600277e-09,
+      "tolerance_times_scale": 1.299664287945247e-07
+    },
+    {
+      "name": "PVC9 vacuum first derivative",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.2316375919141365e-08,
+      "tolerance_times_scale": 1e-07
+    },
+    {
+      "name": "PVC9 P derivative",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.8237293085421324e-08,
+      "tolerance_times_scale": 1e-07
+    },
+    {
+      "name": "PVC9 reduced inverse derivative",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 4.5153596694991194e-08,
+      "tolerance_times_scale": 3e-07
+    },
+    {
+      "name": "PVC9 energy mixed derivative",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.1168338325331928e-08,
+      "tolerance_times_scale": 2e-06
+    },
+    {
+      "name": "PVC9 vacuum mixed derivative",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.6823878061511532e-08,
+      "tolerance_times_scale": 3e-06
+    },
+    {
+      "name": "PVC6 full reduced projection",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 2.220446049250313e-15,
+      "tolerance_times_scale": 1e-11
+    },
+    {
+      "name": "PVC6 reduced vacuum annihilation",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 2.3245294578089215e-16,
+      "tolerance_times_scale": 1e-11
+    },
+    {
+      "name": "PVC47 centered variance derivative",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 4.3062929555581775e-08,
+      "tolerance_times_scale": 2e-07
+    },
+    {
+      "name": "PVC48 exact signed original-source defect",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 5.551115123125783e-16,
+      "tolerance_times_scale": 1e-10
+    },
+    {
+      "name": "PVC48 finite check defect is nonzero",
+      "kind": "structural",
+      "passed": true,
+      "detail": "The check forbids accidentally replacing the signed defect by zero."
+    },
+    {
+      "name": "PVC12 susceptibility integral",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.3322676295501878e-15,
+      "tolerance_times_scale": 1e-10
+    },
+    {
+      "name": "PVC13 spectral Cauchy direction",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC17 mixed log pulse Hessian epsilon 0.04",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 7.04344999130635e-08,
+      "tolerance_times_scale": 2e-06
+    },
+    {
+      "name": "PVC18 covariance pulse bound epsilon 0.04",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 energy pulse bound epsilon 0.04",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 diagonal positivity epsilon 0.04",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC17 mixed log pulse Hessian epsilon 0.13",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.2699331169985228e-09,
+      "tolerance_times_scale": 2e-06
+    },
+    {
+      "name": "PVC18 covariance pulse bound epsilon 0.13",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 energy pulse bound epsilon 0.13",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 diagonal positivity epsilon 0.13",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC17 mixed log pulse Hessian epsilon 0.4",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.3057537058547286e-08,
+      "tolerance_times_scale": 2e-06
+    },
+    {
+      "name": "PVC18 covariance pulse bound epsilon 0.4",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 energy pulse bound epsilon 0.4",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 diagonal positivity epsilon 0.4",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC17 mixed log pulse Hessian epsilon 1.2",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 4.229217655943307e-08,
+      "tolerance_times_scale": 2e-06
+    },
+    {
+      "name": "PVC18 covariance pulse bound epsilon 1.2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 energy pulse bound epsilon 1.2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC20 diagonal positivity epsilon 1.2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 finite discriminant k=0.2 j=2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=0.2 j=2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=0.2 j=2",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.4401378812608987e-16,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=0.2 j=8",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=0.2 j=8",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=0.2 j=8",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=0.2 j=40",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=0.2 j=40",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=0.2 j=40",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=0.2 j=200",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=0.2 j=200",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=0.2 j=200",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC32 lower root limit k=0.2",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 3.383211621945043e-07,
+      "tolerance_times_scale": 0.002
+    },
+    {
+      "name": "PVC29 finite discriminant k=1.0 j=2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=1.0 j=2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=1.0 j=2",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.4401378812608987e-16,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=1.0 j=8",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=1.0 j=8",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=1.0 j=8",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=1.0 j=40",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=1.0 j=40",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=1.0 j=40",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=1.0 j=200",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=1.0 j=200",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=1.0 j=200",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 2.017666646557933e-16,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC32 lower root limit k=1.0",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 7.3719531773199995e-06,
+      "tolerance_times_scale": 0.002
+    },
+    {
+      "name": "PVC29 finite discriminant k=3.0 j=2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=3.0 j=2",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=3.0 j=2",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 1.4401378812608987e-16,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=3.0 j=8",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=3.0 j=8",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=3.0 j=8",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=3.0 j=40",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=3.0 j=40",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=3.0 j=40",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC29 finite discriminant k=3.0 j=200",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC34 finite denominator k=3.0 j=200",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "PVC29 lower root polynomial k=3.0 j=200",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 0.0,
+      "tolerance_times_scale": 2e-12
+    },
+    {
+      "name": "PVC32 lower root limit k=3.0",
+      "kind": "numerical",
+      "passed": true,
+      "absolute_residual": 5.004582414862291e-05,
+      "tolerance_times_scale": 0.002
+    },
+    {
+      "name": "All PVC1\u2013PVC50 tags exactly once",
+      "kind": "structural",
+      "passed": true,
+      "detail": "{1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 1, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 1, 18: 1, 19: 1, 20: 1, 21: 1, 22: 1, 23: 1, 24: 1, 25: 1, 26: 1, 27: 1, 28: 1, 29: 1, 30: 1, 31: 1, 32: 1, 33: 1, 34: 1, 35: 1, 36: 1, 37: 1, 38: 1, 39: 1, 40: 1, 41: 1, 42: 1, 43: 1, 44: 1, 45: 1, 46: 1, 47: 1, 48: 1, 49: 1, 50: 1}"
+    },
+    {
+      "name": "No old PC locators in proof",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Inline TeX delimiters balanced",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Display TeX delimiters balanced",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No ASCII control-byte TeX damage",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No forbidden prose token",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Completed AT source preserved",
+      "kind": "structural",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

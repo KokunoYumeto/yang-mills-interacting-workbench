@@ -24,7 +24,7 @@ check('control character audit',not any(ord(c)<32 and c not in '\n\t' for c in s
 for a,b in [('gathered','gathered'),('split','split'),('array','array')]:
     check('environment '+a,s.count('\\begin{'+a+'}')==s.count('\\end{'+b+'}'),'Balanced')
 for path,digest in [
-    ('ACTUAL_SEMIGROUP_LIMIT.md','bb2b5532e6efd30abb2ea676238aba163222fa321aaefce970cec703ef385f5b'),
+    ('ACTUAL_SEMIGROUP_LIMIT.md','b5246f1a00b547036f9c15ebc7d4f2450bcb037bf4b307b2b1df94cc68408402'),
     ('SQUARE_ROOT_SCORE_RECEIVING_MAPS.md','51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4')]:
     actual=hashlib.sha256((W/path).read_bytes()).hexdigest()
     check('cited public provider bytes: '+path,actual==digest,actual)
