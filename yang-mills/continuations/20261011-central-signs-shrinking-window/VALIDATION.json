@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T18:44:43.395175+00:00",
+  "checked_utc": "2026-10-11T19:17:43.396744+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -295,8 +295,8 @@
     },
     {
       "source": "LOWER_SIDE_RETAINED_ENERGY.md",
-      "sha256": "8a00da180413abc109ca70410f0872c62f01cc7712146d0716b8dd8e0f533d69",
-      "complete_math_blocks": 411,
+      "sha256": "b21aa95f052b7d1eefc1fbf0897ad5d15a11d6192776a04a16c88eaf1c5b6d66",
+      "complete_math_blocks": 412,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -313,7 +313,7 @@
     },
     {
       "source": "ACTUAL_WILSON_COVARIANCE.md",
-      "sha256": "2f01119e5f6925f5fe337a5fb81e0e3fdb8bdda928d83f264959e59756fdc8c6",
+      "sha256": "46a8db613cf744924726320502544bdffcade24d927a6f36f90528be730bd133",
       "complete_math_blocks": 314,
       "split_to_aligned_wrappers": 3
     },
@@ -325,8 +325,8 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "d54f48c5ed45e1b00ff0a029a755212c1b6dbaf75cbb2d272cb9546ba5aec19e",
-      "complete_math_blocks": 545,
+      "sha256": "b2933511013086a5a87984434dffbee36f4a59cd35063bd85903f7518ff62961",
+      "complete_math_blocks": 546,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -367,8 +367,8 @@
     },
     {
       "source": "CURRENT_COVARIANCE_EQUALITY.md",
-      "sha256": "c5aac03f76c2f680d7fe0f093c042c2ca67eed18e75a05f4f5ccc1fef83ba14e",
-      "complete_math_blocks": 242,
+      "sha256": "5d4f9d3e2acfc31906eef5b7a2241ce066a8cbba31ea82a457a4d1ebc66cccc6",
+      "complete_math_blocks": 243,
       "split_to_aligned_wrappers": 4
     },
     {
@@ -409,14 +409,26 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "b94185487228f11e5a6ecd588a59de4c5fb34771d9dcd9b1daf3698de9dad669",
-      "complete_math_blocks": 202,
+      "sha256": "c52e64c1c41e679dcb26a97a57e6212b53991bd3c95dbf6d6f00de8708244eea",
+      "complete_math_blocks": 203,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "c2b45dc53e3b3ec567d933eb0b8c85f957c82fbb64e20319c14df9ee442bc320",
-      "complete_math_blocks": 248,
+      "sha256": "ed5f8913fcb6438570120acc8b3de8b322f174f81e091aa46b9ba23aab8dc6c0",
+      "complete_math_blocks": 249,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
+      "sha256": "985c2069d9e3af929c8337c3199c3c727ebb7588092f3a15e66ffc9825e5a475",
+      "complete_math_blocks": 145,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "WILSON_AND_CURRENT_COVARIANCE_SIGNS.md",
+      "sha256": "8330e6b75acf5d769e42e5c4f47e2a659cac786f8dd2b4500592c9f556b9ce1f",
+      "complete_math_blocks": 72,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -739,6 +751,21 @@
     {
       "file": "OUTSIDE_CURRENT_MAP.png",
       "sha256": "8bc03854645a3e64c148eb07e320c00b8dff7f4c1140c83734d7a3be0549796e",
+      "visually_inspected": true
+    },
+    {
+      "file": "RETAINED_BOUNDARY_MAP.png",
+      "sha256": "66ef56e90b6e75eb5234a764bda85aa424c09e8d4aa5c0478c93b029e60e0cd5",
+      "visually_inspected": true
+    },
+    {
+      "file": "CURRENT_SIGN_COMPARISON.png",
+      "sha256": "9aa3f08d4282d41814db2da594ef294b89ea66792f4d3c44f9753422154f39ab",
+      "visually_inspected": true
+    },
+    {
+      "file": "COLLAR_RATE_MAP.png",
+      "sha256": "5f01b02d2a5864237d0efed637673aab88bf11ffc519dc1a5c859cef90f9d6e1",
       "visually_inspected": true
     }
   ],
@@ -2767,6 +2794,199 @@
       ],
       "figure_repair": "Outside figure spectral-energy axis and footer separated by a larger bottom margin; final source figure inspected.",
       "scope": "Final new and changed scope, not a repeated review of all703 pages. Earlier inherited warnings remain."
+    }
+  },
+  "retained_derivative_review": {
+    "utc": "2026-10-11T19:12:29.616841+00:00",
+    "coverage": "RD1–RD22 and GS1–GS12 complete owner review. Exact full/marginal ground-energy subtraction, conditional variance and signed Hessian contractions; all crossing faces and scalar terms; supported-weight cancellation; disjoint boundary layers in the actual ground; finite collar bound and both explicit rate choices; positive Wilson covariance with negative distinct-edge currents in a complete gauge-invariant comparison; exact original state, potential, operator and current transformations.",
+    "strengthening": "The retained derivative in CG22 is evaluated exactly. A state-dependent boundary cube improves the crossing-potential bound; the logarithmic collar improves that scale further while preserving an explicit trace error. The scalar Laplacian contribution is retained. The comparison proves the precise limit of an inference from Wilson covariance alone and supplies its full map to the actual ground.",
+    "limitations": "No sign is assigned to the remaining actual Hessian differences or conditional spectral multiplier. The GS density is not the original Wilson ground. No positive unscaled response, limiting spectral weight, reconstruction result or smooth interacting no-gap endpoint is inferred.",
+    "actual_reading": "Original SG1–SG33, CG1–CG34, CE1–CE7 used with pinned sources. Two additional primary author-TeX sources read only to the ranges in the source-use records; original archives retained.",
+    "routing": "Five canonical original-TeX routing hits preceded new source acquisition. A Ginibre–Velo bibliography mention in Mondal 2301.06996 was not a correlation-inequality theorem and supplied no imported result. Other routing hits are not reading evidence.",
+    "diagnostics": {
+      "file": "RETAINED_DERIVATIVE_CHECKS.json",
+      "checks": 430,
+      "all_passed": true,
+      "scope": "Geometric enumeration, curved manufactured density identities, and exact GS comparison diagnostics; no actual Yang--Mills ground-state samples."
+    },
+    "figures_inspected": [
+      "RETAINED_BOUNDARY_MAP.png",
+      "CURRENT_SIGN_COMPARISON.png",
+      "COLLAR_RATE_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
+        "prefix": "RD",
+        "tags": 22,
+        "owner_sha256": "d9dbe2cad2d4611f5fe2d4026cba3c5581be4a825749a6e8778ccda308247b0b",
+        "public_sha256": "985c2069d9e3af929c8337c3199c3c727ebb7588092f3a15e66ffc9825e5a475",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      },
+      {
+        "source": "WILSON_AND_CURRENT_COVARIANCE_SIGNS.md",
+        "prefix": "GS",
+        "tags": 12,
+        "owner_sha256": "b2dcf0d1fe5caa5e0a73f52e07997e40ba4076cae5a0d442ce296dd60ea075ff",
+        "public_sha256": "8330e6b75acf5d769e42e5c4f47e2a659cac786f8dd2b4500592c9f556b9ce1f",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T19:17:43.396744+00:00",
+      "tex_sha256": "dd1256a2bd19adfe84f80eeb13089d320159128f6db94cb1eed67a93fd475afb",
+      "pdf_sha256": "33944a519a46602162140fbe42b1d0e6d90e6af1eb2cd79e2aaad8a27831c529",
+      "pages": 715,
+      "source_files": 71,
+      "math_blocks": 17530,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "complete": true,
+        "utc": "2026-10-11T19:16:54.504847+00:00",
+        "pages": 715,
+        "new_proof_pages": [
+          705,
+          706,
+          707,
+          708,
+          709,
+          710,
+          711,
+          712,
+          713,
+          714,
+          715
+        ],
+        "propagation_pages": [
+          488,
+          515,
+          545,
+          623,
+          693,
+          702,
+          703,
+          704
+        ],
+        "inspected_pages": [
+          487,
+          488,
+          489,
+          514,
+          515,
+          516,
+          544,
+          545,
+          546,
+          622,
+          623,
+          624,
+          692,
+          693,
+          694,
+          702,
+          703,
+          704,
+          705,
+          706,
+          707,
+          708,
+          709,
+          710,
+          711,
+          712,
+          713,
+          714,
+          715
+        ],
+        "result": "All new proof pages, changed receiving notes and neighboring figure pages visually inspected. Two note formulas repaired to mathematical TeX to retain kappa; CG receiving notes start after both full figures. All new equations and three figures retained. No new overflow, missing glyph, clipping or overlap.",
+        "figures": [
+          "RETAINED_BOUNDARY_MAP.png",
+          "CURRENT_SIGN_COMPARISON.png",
+          "COLLAR_RATE_MAP.png"
+        ],
+        "scope": "New and changed scope, not a repeated review of all715 pages. The59 inherited overfull warnings and one old missing delta remain identical to the previous edition. The PDF is local QA; complete Markdown and TeX are the public deliverables."
+      }
+    }
+  },
+  "retained_derivative_compile": {
+    "utc": "2026-10-11T19:17:43.396744+00:00",
+    "tex_sha256": "dd1256a2bd19adfe84f80eeb13089d320159128f6db94cb1eed67a93fd475afb",
+    "pdf_sha256": "33944a519a46602162140fbe42b1d0e6d90e6af1eb2cd79e2aaad8a27831c529",
+    "pages": 715,
+    "source_files": 71,
+    "math_blocks": 17530,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "complete": true,
+      "utc": "2026-10-11T19:16:54.504847+00:00",
+      "pages": 715,
+      "new_proof_pages": [
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715
+      ],
+      "propagation_pages": [
+        488,
+        515,
+        545,
+        623,
+        693,
+        702,
+        703,
+        704
+      ],
+      "inspected_pages": [
+        487,
+        488,
+        489,
+        514,
+        515,
+        516,
+        544,
+        545,
+        546,
+        622,
+        623,
+        624,
+        692,
+        693,
+        694,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715
+      ],
+      "result": "All new proof pages, changed receiving notes and neighboring figure pages visually inspected. Two note formulas repaired to mathematical TeX to retain kappa; CG receiving notes start after both full figures. All new equations and three figures retained. No new overflow, missing glyph, clipping or overlap.",
+      "figures": [
+        "RETAINED_BOUNDARY_MAP.png",
+        "CURRENT_SIGN_COMPARISON.png",
+        "COLLAR_RATE_MAP.png"
+      ],
+      "scope": "New and changed scope, not a repeated review of all715 pages. The59 inherited overfull warnings and one old missing delta remain identical to the previous edition. The PDF is local QA; complete Markdown and TeX are the public deliverables."
     }
   }
 }

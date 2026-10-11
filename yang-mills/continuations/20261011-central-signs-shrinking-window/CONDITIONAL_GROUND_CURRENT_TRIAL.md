@@ -504,3 +504,11 @@ The next actual receiving quantity is now the complete conditional outside spect
 ![Full outside-current minimizer and its exact spectral multiplier](OUTSIDE_CURRENT_MAP.png)
 
 Complete reproducible diagnostics and figure sources are in check_conditional_current.py. The curved conditional-density checks and finite-matrix checks, including singular blocks, are not quantum ground-state samples. Exact provider editions and reading coverage are in [the source-use ledger](CONDITIONAL_CURRENT_SOURCE_USE_LEDGER.json). The second figure plots the proved operator multiplier, not an actual quantum spectral distribution.
+
+## Retained derivatives and actual good boundary cubes
+
+[RD1–RD22](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md) evaluate the derivative retained in CG22 using the full ground equation, marginal equation, conditional variance and both Hessian contractions. The original supported sign and continuous weights have exactly zero direct crossing trace. For unit edge magnitudes, deterministic boundary selection in the actual ground gives a vanishing scaled crossing potential while the full Laplacian trace tends to \(9R^2/\kappa_*\). The original square-root collar and an additional logarithmic collar have complete finite bounds and different proved error rates. Every scalar, outside energy and conditional-current term remains in the calculation; no limiting spectral weight is assumed.
+
+## Wilson covariance and ground-current signs
+
+[GS1–GS12](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/WILSON_AND_CURRENT_COVARIANCE_SIGNS.md) construct a smooth gauge-invariant comparison on two disjoint original plaquettes with strictly positive Wilson-trace covariance and strictly negative distinct-edge ground-current covariance. Complete analytic constants, partition factors and the comparison Hamiltonian are retained. The exact unitary, full potential difference, vacuum change and current transformation connect it to the original Yang–Mills ground. The comparison rules out an inference from Wilson positivity alone; the specific actual-current contractions remain to be evaluated.

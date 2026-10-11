@@ -4393,5 +4393,250 @@
     "upstream_primary_source_ledger": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/38db74e953474e60bd0f1cadd7b1eec4f37e2631/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_SOURCE_USE_LEDGER.json",
     "actual_reading": "SG1–SG33 complete original source; BM40–BM43 and LR34–LR36 conditional ground and variance derivations. Original Johnsen/Lo reading is retained via PT source-use ledger; no new external theorem imported.",
     "routing": "Canonical disk index queried for conditional expectation/ground state and conditional covariance/Schur before derivation;12 original-TeX routing hits, none represented as read. No literature PDF."
+  },
+  {
+    "source_id": "programme:RD-GS-20261011",
+    "proofs": [
+      {
+        "source": "RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
+        "prefix": "RD",
+        "tags": 22,
+        "owner_sha256": "d9dbe2cad2d4611f5fe2d4026cba3c5581be4a825749a6e8778ccda308247b0b",
+        "public_sha256": "985c2069d9e3af929c8337c3199c3c727ebb7588092f3a15e66ffc9825e5a475",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      },
+      {
+        "source": "WILSON_AND_CURRENT_COVARIANCE_SIGNS.md",
+        "prefix": "GS",
+        "tags": 12,
+        "owner_sha256": "b2dcf0d1fe5caa5e0a73f52e07997e40ba4076cae5a0d442ce296dd60ea075ff",
+        "public_sha256": "8330e6b75acf5d769e42e5c4f47e2a659cac786f8dd2b4500592c9f556b9ce1f",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "version": "419dbbe0da0e2b7f3401088cf51f60378a9fba81",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/419dbbe0da0e2b7f3401088cf51f60378a9fba81/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "sha256": "b94185487228f11e5a6ecd588a59de4c5fb34771d9dcd9b1daf3698de9dad669"
+      },
+      {
+        "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
+        "version": "419dbbe0da0e2b7f3401088cf51f60378a9fba81",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/419dbbe0da0e2b7f3401088cf51f60378a9fba81/yang-mills/continuations/20261011-central-signs-shrinking-window/CONDITIONAL_GROUND_CURRENT_TRIAL.md",
+        "sha256": "c2b45dc53e3b3ec567d933eb0b8c85f957c82fbb64e20319c14df9ee442bc320"
+      },
+      {
+        "source": "CURRENT_COVARIANCE_EQUALITY.md",
+        "version": "419dbbe0da0e2b7f3401088cf51f60378a9fba81",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/419dbbe0da0e2b7f3401088cf51f60378a9fba81/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_COVARIANCE_EQUALITY.md",
+        "sha256": "c5aac03f76c2f680d7fe0f093c042c2ca67eed18e75a05f4f5ccc1fef83ba14e"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-11T19:12:29.616841+00:00",
+      "coverage": "RD1–RD22 and GS1–GS12 complete owner review. Exact full/marginal ground-energy subtraction, conditional variance and signed Hessian contractions; all crossing faces and scalar terms; supported-weight cancellation; disjoint boundary layers in the actual ground; finite collar bound and both explicit rate choices; positive Wilson covariance with negative distinct-edge currents in a complete gauge-invariant comparison; exact original state, potential, operator and current transformations.",
+      "strengthening": "The retained derivative in CG22 is evaluated exactly. A state-dependent boundary cube improves the crossing-potential bound; the logarithmic collar improves that scale further while preserving an explicit trace error. The scalar Laplacian contribution is retained. The comparison proves the precise limit of an inference from Wilson covariance alone and supplies its full map to the actual ground.",
+      "limitations": "No sign is assigned to the remaining actual Hessian differences or conditional spectral multiplier. The GS density is not the original Wilson ground. No positive unscaled response, limiting spectral weight, reconstruction result or smooth interacting no-gap endpoint is inferred.",
+      "actual_reading": "Original SG1–SG33, CG1–CG34, CE1–CE7 used with pinned sources. Two additional primary author-TeX sources read only to the ranges in the source-use records; original archives retained.",
+      "routing": "Five canonical original-TeX routing hits preceded new source acquisition. A Ginibre–Velo bibliography mention in Mondal 2301.06996 was not a correlation-inequality theorem and supplied no imported result. Other routing hits are not reading evidence.",
+      "diagnostics": {
+        "file": "RETAINED_DERIVATIVE_CHECKS.json",
+        "checks": 430,
+        "all_passed": true,
+        "scope": "Geometric enumeration, curved manufactured density identities, and exact GS comparison diagnostics; no actual Yang--Mills ground-state samples."
+      },
+      "figures_inspected": [
+        "RETAINED_BOUNDARY_MAP.png",
+        "CURRENT_SIGN_COMPARISON.png",
+        "COLLAR_RATE_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
+          "prefix": "RD",
+          "tags": 22,
+          "owner_sha256": "d9dbe2cad2d4611f5fe2d4026cba3c5581be4a825749a6e8778ccda308247b0b",
+          "public_sha256": "985c2069d9e3af929c8337c3199c3c727ebb7588092f3a15e66ffc9825e5a475",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        },
+        {
+          "source": "WILSON_AND_CURRENT_COVARIANCE_SIGNS.md",
+          "prefix": "GS",
+          "tags": 12,
+          "owner_sha256": "b2dcf0d1fe5caa5e0a73f52e07997e40ba4076cae5a0d442ce296dd60ea075ff",
+          "public_sha256": "8330e6b75acf5d769e42e5c4f47e2a659cac786f8dd2b4500592c9f556b9ce1f",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-11T19:17:43.396744+00:00",
+        "tex_sha256": "dd1256a2bd19adfe84f80eeb13089d320159128f6db94cb1eed67a93fd475afb",
+        "pdf_sha256": "33944a519a46602162140fbe42b1d0e6d90e6af1eb2cd79e2aaad8a27831c529",
+        "pages": 715,
+        "source_files": 71,
+        "math_blocks": 17530,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "complete": true,
+          "utc": "2026-10-11T19:16:54.504847+00:00",
+          "pages": 715,
+          "new_proof_pages": [
+            705,
+            706,
+            707,
+            708,
+            709,
+            710,
+            711,
+            712,
+            713,
+            714,
+            715
+          ],
+          "propagation_pages": [
+            488,
+            515,
+            545,
+            623,
+            693,
+            702,
+            703,
+            704
+          ],
+          "inspected_pages": [
+            487,
+            488,
+            489,
+            514,
+            515,
+            516,
+            544,
+            545,
+            546,
+            622,
+            623,
+            624,
+            692,
+            693,
+            694,
+            702,
+            703,
+            704,
+            705,
+            706,
+            707,
+            708,
+            709,
+            710,
+            711,
+            712,
+            713,
+            714,
+            715
+          ],
+          "result": "All new proof pages, changed receiving notes and neighboring figure pages visually inspected. Two note formulas repaired to mathematical TeX to retain kappa; CG receiving notes start after both full figures. All new equations and three figures retained. No new overflow, missing glyph, clipping or overlap.",
+          "figures": [
+            "RETAINED_BOUNDARY_MAP.png",
+            "CURRENT_SIGN_COMPARISON.png",
+            "COLLAR_RATE_MAP.png"
+          ],
+          "scope": "New and changed scope, not a repeated review of all715 pages. The59 inherited overfull warnings and one old missing delta remain identical to the previous edition. The PDF is local QA; complete Markdown and TeX are the public deliverables."
+        }
+      }
+    },
+    "upstream_primary_source_ledger": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/419dbbe0da0e2b7f3401088cf51f60378a9fba81/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_SOURCE_USE_LEDGER.json"
+  },
+  {
+    "source_id": "arxiv:2207.07603v2",
+    "authors": "Abdelmalek Abdesselam",
+    "title": "Non-Abelian correlation inequalities and stable determinantal polynomials",
+    "version": 2,
+    "actual_reading": [
+      [
+        35,
+        224
+      ]
+    ],
+    "proof_locators": "Section 1: specified basic observables and monomial correlation inequalities; main theorem and proof not read.",
+    "receiving_proofs": "GS1–GS12: observable scope motivates an explicit ground-current sign comparison; no external positivity theorem imported.",
+    "source_url": "https://arxiv.org/src/2207.07603v2",
+    "archive_sha256": "a5ba2ffa60e2c2c7b5092b838064a46438347ab9b93ec786868a7eb3bd9c6756",
+    "original_files": [
+      {
+        "path": "original.tex",
+        "sha256": "d497e55a841a5d432eef695f957cd40d7989856722b9e7311fa16579fc979cf1"
+      }
+    ],
+    "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task machine-readable source extension after original author TeX acquisition.",
+    "original_archive_preserved": true,
+    "source_pdf_used": false,
+    "reading_is_bounded": true
+  },
+  {
+    "source_id": "arxiv:2404.09928v2",
+    "authors": "Ilya Chevyrev; Christophe Garban",
+    "title": "Villain action in lattice gauge theory",
+    "version": 2,
+    "actual_reading": [
+      [
+        1,
+        60
+      ],
+      [
+        602,
+        645
+      ],
+      [
+        1051,
+        1076
+      ]
+    ],
+    "proof_locators": "Corollary c.monotone and its proof for U(1) Wilson-loop monotonicity; the proof of the main carpet theorem was not read.",
+    "receiving_proofs": "GS1–GS12: retain the source group and observable restrictions; derive the SU(2) comparison and its full potential and state maps directly.",
+    "source_url": "https://arxiv.org/src/2404.09928v2",
+    "archive_sha256": "aaf38fcfc7919bdc5facda09be6e3e849e1541defd1f72d1cc3aab23695852e7",
+    "original_files": [
+      {
+        "path": "author_source\\carpet_graph.bbl",
+        "sha256": "eb8657dddf048b5ecd7f35ba181cac23d85927d402e69fdc0b671e3330248f5f"
+      },
+      {
+        "path": "author_source\\carpet_graph.tex",
+        "sha256": "06e27f4b519bec9227540ecaff07d104ccec394b4abd293bfa49ad67b86566df"
+      },
+      {
+        "path": "author_source\\comment.sty",
+        "sha256": "f9d014020da1af4c5c22e7322e3e6bbdf54dcb5919707c7c2ec9b01b4367808f"
+      },
+      {
+        "path": "author_source\\mhenvs.sty",
+        "sha256": "c21a0bbe1ec236595eb50d0c9943cafae0517223e6939b144559f7af435e8324"
+      },
+      {
+        "path": "author_source\\mhfig.sty",
+        "sha256": "469d0b745124ae21c0f76af2f6e18bb3fb0d3253a649b9c3dd228919a013e43d"
+      },
+      {
+        "path": "author_source\\mhsymb.sty",
+        "sha256": "fd6728c7a8821b707a2763bc7da32a40f5469f32adf6b3e7b31f683430f3e8eb"
+      },
+      {
+        "path": "author_source\\preprint.cls",
+        "sha256": "edf648e0b8cb0dd90e75a503b47112041221398e055ad574f04b8dc54279282c"
+      }
+    ],
+    "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task machine-readable source extension after original author TeX acquisition.",
+    "original_archive_preserved": true,
+    "source_pdf_used": false,
+    "reading_is_bounded": true
   }
 ]

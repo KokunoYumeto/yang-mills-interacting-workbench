@@ -906,3 +906,7 @@ Complete original local curvature provider: [LC1–LC42](https://github.com/Koku
 ## Exact negative trace and retained actual covariance
 
 [TC1–TC18](NEGATIVE_TRACE_COMPRESSION.md), with the independently evaluated [coefficient G1–G52](GAMMA_INTEGRAL.md), strengthen the earlier upper-only remainder to order log n from both sides. TC14 evaluates the actual root-cell contraction strictly negatively. All complementary and mixed covariance terms remain in the receiving identity; the deterministic trace is not substituted for the actual state.
+
+## Wilson covariance and ground-current signs
+
+[GS1–GS12](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/WILSON_AND_CURRENT_COVARIANCE_SIGNS.md) construct a smooth gauge-invariant comparison on two disjoint original plaquettes with strictly positive Wilson-trace covariance and strictly negative distinct-edge ground-current covariance. Complete analytic constants, partition factors and the comparison Hamiltonian are retained. The exact unitary, full potential difference, vacuum change and current transformation connect it to the original Yang–Mills ground. The comparison rules out an inference from Wilson positivity alone; the specific actual-current contractions remain to be evaluated.
