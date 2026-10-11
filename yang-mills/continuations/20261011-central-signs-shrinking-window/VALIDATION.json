@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T02:57:22.542497+00:00",
+  "checked_utc": "2026-10-11T03:11:16.418647+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -136,6 +136,12 @@
       "sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4",
       "complete_math_blocks": 531,
       "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "CURVATURE_ROOTED_WORDS.md",
+      "sha256": "6b36e87c6e45f791a5695ed4a0e273bc2cbafb17c3c2fffd44ec677741ebf6eb",
+      "complete_math_blocks": 287,
+      "split_to_aligned_wrappers": 2
     }
   ],
   "figures": [
@@ -208,9 +214,14 @@
       "file": "CONTRIBUTION_POWERS.png",
       "sha256": "9c3cf0beb0cef33eae93a7ce7871a648c2bed506627fc693b1ccf4e0ffb4c248",
       "visually_inspected": true
+    },
+    {
+      "file": "CURVATURE_ROOTED_WORDS_FIGURE.png",
+      "sha256": "6f6e8e00c0fadf544b4d0961baf812b773d8b57392987cdb688a6f6c311b7af4",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure. Owner read PRE1–PRE55, ESE1–ESE38, ID1–ID57, HR1–HR25, LS1–LS57 and the complete SR derivation. Full stochastic laws, kernel endpoint signs, affine terms, all derivative supports, original-path constants, norm domains and both spectral endpoint signs checked. All retained scripts replayed. Independent source escaping repaired before acceptance.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure. Owner read PRE1–PRE55, ESE1–ESE38, ID1–ID57, HR1–HR25, LS1–LS57 and the complete SR derivation. Full stochastic laws, kernel endpoint signs, affine terms, all derivative supports, original-path constants, norm domains and both spectral endpoint signs checked. All retained scripts replayed. Independent source escaping repaired before acceptance. Owner read and checked CW1–CW49 in full and replayed the exact word, rational curl, original-row and coefficient checks.",
   "pdf_compiled": false,
   "new_external_pdf_read": false,
   "spectral_weight_checks": 104,
@@ -271,5 +282,12 @@
       "public_sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4",
       "changes": "Public proof links and source-comparison notes; original mathematical blocks retained."
     }
-  ]
+  ],
+  "curvature_fidelity": {
+    "private_sha256": "67b7737339eba43b70e971c28331ef33e5765bd799584ae9205da71076fd9321",
+    "public_file": "CURVATURE_ROOTED_WORDS.md",
+    "public_sha256": "6b36e87c6e45f791a5695ed4a0e273bc2cbafb17c3c2fffd44ec677741ebf6eb",
+    "all_original_math_blocks_retained": true,
+    "changes": "Public ledger filename and figure caption only."
+  }
 }
