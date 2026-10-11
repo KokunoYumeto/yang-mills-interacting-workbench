@@ -233,3 +233,30 @@ The source's lattice model is a Euclidean \(U(r)\) Wilson Gibbs measure. Its fre
 Reading coverage: original v6 author TeX lines 187–430 for identity, definitions and statements, and 1756–1888 for the complete ordered action comparison and its proofs. The free-energy proof as a whole has not been read or applied. The downloaded v3 archive was retained for provenance but was not used as the source of a mathematical claim. Both archives remain intact; source hashes, the three exact v6 proof defects and their propagation are recorded in the private reading and claim ledgers. No claim of novelty is made.
 
 ![The exact ordered cubic term and the repaired quadratic comparison; all curves are deterministic face calculations, not vacuum data.](ORDERED_WILSON_ACTION.png)
+
+## 8. Propagated improvements from the complete independent calculation
+
+The complete derivation in [UR1–UR15](ORDERED_WILSON_INDEPENDENT_REVIEW.md) proves two strengthenings while retaining every earlier valid bound. For the general Hermitian matrices of OW5, put \(q_{\rm op}=\sum_a\|H_a\|_{\rm op}\) and \(q_{\rm HS}=\sum_a\|H_a\|_{\rm HS}\). Then
+\[
+ |\Phi^{(k)}(t)|\le\min\{r q_{\rm op}^k,
+                  q_{\rm HS}^2q_{\rm op}^{k-2}\},\quad k\ge2,
+ \qquad
+ |R_3|\le q_{\rm HS}^2q_{\rm op}/6,\quad
+ |R_4|\le q_{\rm HS}^2q_{\rm op}^2/24.
+ \tag{OW24}
+\]
+To prove it without reordering the product, index its k differentiations by ordered derivative labels. In each term choose the first two differentiation labels for Hilbert–Schmidt estimates; every other differentiated factor uses its operator norm. Move factors only cyclically inside the trace and apply the Hilbert–Schmidt inner-product inequality to those two factors, retaining all intervening unitary matrices. Summing over all derivative labels factors the bound into the exact displayed product of norm sums. The other member of the minimum is OW6. Integration of the full third and fourth derivatives proves both remainder bounds. In particular \(\|H_a\|_{\rm HS}\le\eta\) gives \(|R_3|\le32\eta^3/3\), independently of r. The original SU(2) specialization has \(q_{\rm HS}=\sqrt2q_{\rm op}\), so its constants in OW14–OW17 stay exactly as stated.
+
+On the exact original-coordinate locus \(C=\sum_a y_a=0\), \(B=\sum_{a<b}y_a\times y_b=0\), there is the stronger sixth-order estimate
+\[
+ 0\le 2-\operatorname{Tr}\prod_{a=1}^4e^{tX(y_a)}
+ \le \frac{|t|^6(\sum_a|y_a|)^6}{2304},\qquad t\in\mathbb R.
+ \tag{OW25}
+\]
+Indeed \(P'(0)=X(C)=0\) and, by expanding the entire ordered second derivative, \(P''(0)=\sum_{a<b}[X(y_a),X(y_b)]=X(B)=0\). The third derivative has operator norm at most \(q_{\rm op}^3\), with \(q_{\rm op}=\sum_a|y_a|/2\). Its exact integral remainder gives \(\|P(t)-I\|_{\rm op}\le|t|^3q_{\rm op}^3/6\). The original product is unitary, so \(2-\operatorname{Tr}P=\tfrac12\|I-P\|_{\rm HS}^2\le\|I-P\|_{\rm op}^2\) in dimension two. Squaring and keeping the factor \(2^6\) proves (OW25). This is a calculation on the displayed coordinate locus, with no claim that the actual vacuum concentrates on it.
+
+In OW17 the selected representatives must be measurable with finite fourth moments for its stated expectations. The supplied principal representatives \(|x_e|<2\pi\), with any measurable choice on the Haar-null exceptional set, satisfy this requirement. An arbitrary unbounded or nonmeasurable selection is not covered. This qualification does not change the original potential, vacuum or principal-chart calculation.
+
+![The two retained norm bounds and the exact twice-vanishing derivative locus](ORDERED_WILSON_REVIEW.png)
+
+The figure records OW24–OW25 and UR8/UR13. It is a schematic of exact bounds, with no numerical or vacuum-concentration data. The complete original human source comparison remains OW1–OW4 and UR1–UR6; draw_ordered_review.py reproduces the figure.

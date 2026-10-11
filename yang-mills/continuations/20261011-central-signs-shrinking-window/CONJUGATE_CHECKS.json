@@ -1,0 +1,127 @@
+{
+  "generated_utc": "2026-10-11T03:54:23.779190+00:00",
+  "status": "PASS",
+  "counts": {
+    "exact_rational_rooted_derivatives": 33,
+    "exact_rational_root_frame_brackets": 58,
+    "physical_cochain_norms": 2,
+    "original_additive_images": 716,
+    "row_pairings": 2,
+    "curl_frequency": 2,
+    "lambda_sum": 2,
+    "full_squared_occurrence_sums": 2,
+    "original_Bu1": 2,
+    "preserved_original_h": 2,
+    "original_BS": 2,
+    "full_reflected_commutator": 2,
+    "full_reflection_metric_pullback": 2,
+    "full_original_phase_gradient": 15,
+    "direct_physical_divergence": 2,
+    "full_face_first_variation": 996,
+    "full_face_second_variation": 996,
+    "full_potential_second_variation": 2,
+    "exact_SU2_double_commutator": 3,
+    "exact_SU2_bracket_signs": 12,
+    "original_path_limit_checks": 7
+  },
+  "max_numerical_errors": {
+    "physical_cochain_norms": 4.9960036108132044e-15,
+    "original_additive_images": 1.6653345369377348e-16,
+    "row_pairings": 2.220446049250313e-16,
+    "curl_frequency": 5.551115123125783e-16,
+    "lambda_sum": 6.661338147750939e-16,
+    "full_squared_occurrence_sums": 1.1368683772161603e-13,
+    "original_Bu1": 2.220446049250313e-16,
+    "preserved_original_h": 6.245004513516506e-16,
+    "original_BS": 2.0816681711721685e-16,
+    "full_reflected_commutator": 4.440892098500626e-16,
+    "full_reflection_metric_pullback": 3.885780586188048e-16,
+    "full_original_phase_gradient": 1.1622647289044608e-16,
+    "direct_physical_divergence": 1.563640732556966e-16,
+    "full_face_first_variation": 3.885780586188048e-16,
+    "full_face_second_variation": 1.5525775109992423e-16,
+    "full_potential_second_variation": 3.8163916471489756e-16
+  },
+  "path_columns": [
+    "S1_squared/j12",
+    "S1A1/j16",
+    "energy_over_kappa/j13",
+    "BW/j11",
+    "curvature_occupation_ratio/j7",
+    "variance_bound/j25",
+    "curvature_gain_times_j7"
+  ],
+  "path_samples": [
+    {
+      "j": 2,
+      "values": [
+        "2.6066032231408936496138995232179983",
+        "26.326479144818095314532813661548154",
+        "7540.1231443027507095518294367969187",
+        "0.75401231443027507095518294367969187",
+        "0.020795456341862989246115569326969556",
+        "78616.437163275198222489526427998689",
+        "16.029142513324197299464334084465927"
+      ]
+    },
+    {
+      "j": 4,
+      "values": [
+        "2.6273236720473904905897614681626217",
+        "26.289375743724766296756199315497312",
+        "7221.104046332309159226094650755185",
+        "0.7221104046332309159226094650755185",
+        "0.018637823082722460236322436207826014",
+        "75888.710396984289183250141736195495",
+        "17.884778273399230896045209727443323"
+      ]
+    },
+    {
+      "j": 16,
+      "values": [
+        "2.6280886175327212193073923435131425",
+        "26.280949166811655354545885632661975",
+        "7200.0823976180979846267893120419052",
+        "0.72000823976180979846267893120419052",
+        "0.018506022403876506866285762525162389",
+        "75689.818377911311602244448163031886",
+        "18.012154425118878761746258245913801"
+      ]
+    },
+    {
+      "j": 256,
+      "values": [
+        "2.6280914571558695199421982484057089",
+        "26.280914572519865826146075611386953",
+        "7200.0000012572854757674878194144258",
+        "0.72000000012572854757674878194144258",
+        "0.018505508259887720409128605626394012",
+        "75689.033979306087046618060514455568",
+        "18.012654862112703023470428056384111"
+      ]
+    },
+    {
+      "j": 65536,
+      "values": [
+        "2.6280914571991898084130262257661504",
+        "26.280914571991898084354052233331686",
+        "7200.0000000000000002927345865710862",
+        "0.72000000000000000002927345865710862",
+        "0.018505508252042547412141267303084244",
+        "75689.033967336666485372488366841966",
+        "18.012654869748937143800621931347171"
+      ]
+    }
+  ],
+  "path_limits": [
+    "2.6280914571991898084231125163823857",
+    "26.280914571991898084231125163823857",
+    "7200.0",
+    "0.72",
+    "0.018505508252042547410314670624767783",
+    "75689.033967336666482585640471812708",
+    "18.012654869748937145578571237284914"
+  ],
+  "scope": "Exact rational rooted derivatives, exact symbolic SU(2) commutators, full original/reflected noncommuting numerical derivatives and face Hessians; no vacuum sampling and no claimed spectral endpoint.",
+  "proof_sha256": "9fee4ce8d799391615cf076b2e28cd2bf8cd592423da6a66aa6293cd13742b37"
+}
