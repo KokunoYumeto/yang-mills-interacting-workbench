@@ -38,3 +38,7 @@ Run `verify_boundary_reflection.py` for its 66 checks and `fourth_return/verify_
 ## Polynomial bounds in the actual vacuum
 
 [PC1–PC52](POLYNOMIAL_CONDITIONAL_BOUNDS.md) prove the full degree-two score comparison, an explicit smooth family attaining its exponent, the sharper colour-vector bound, and the exact receiving-link optimization inside the original phase. The resulting actual-vacuum bounds replace exponential losses by powers. [The inspected illustration](POLYNOMIAL_CONDITIONAL_BOUNDS.png) includes reproducible numerical quadrature of the proved sharpness family, identified separately from the physical vacuum. Run `verify_polynomial_conditional.py` with SymPy and mpmath for the 21 recorded checks.
+
+## Full labels, inverse and connected vacuum supports
+
+[UL1–UL47](union_label_global/FULL_UNION_LABEL_INVERSE.md) prove the full inverse at every finite real source, including all assembly relation directions. [UF1–UF17](SUPPORT_AND_SCALAR_FACTORIZATION.md) prove the exact connected-support property of the vacuum and all its scalar families, and a stronger transformation bound. The complete original Hamiltonians, labels, means and coupling factors are retained. [The inspected diagram](FULL_UNION_LABEL_INVERSE.png) displays the inverse and a seven-edge adjacent-face calculation. Run `union_label_global/check_union.py` and `check_support_factorization.py` to replay the finite exact certificates; the full analytical arguments are in the linked proofs.

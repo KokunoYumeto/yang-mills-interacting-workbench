@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T00:32:39.521134+00:00",
+  "checked_utc": "2026-10-11T00:45:17.098539+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -64,6 +64,16 @@
       "source": "POLYNOMIAL_CONDITIONAL_BOUNDS.md",
       "sha256": "1d88ba3b523226280670bc023260703e0b0a6a1eb3b2da744d7fc58775be7550",
       "complete_math_blocks": 335
+    },
+    {
+      "source": "union_label_global/FULL_UNION_LABEL_INVERSE.md",
+      "sha256": "f162555e2e1f348eae36705b9a8f07798e6173520a44e24ba48975d6a29ed19f",
+      "complete_math_blocks": 236
+    },
+    {
+      "source": "SUPPORT_AND_SCALAR_FACTORIZATION.md",
+      "sha256": "4f370582b4d2a9941e9cd2cef22cf63b638892e155012b08aea8157d53dec9a1",
+      "complete_math_blocks": 84
     }
   ],
   "figures": [
@@ -106,14 +116,21 @@
       "file": "POLYNOMIAL_CONDITIONAL_BOUNDS.png",
       "sha256": "196f5513c2024741ce67b25b17825a726d67b9e12c29bfac9b1ed59465575d8b",
       "visually_inspected": true
+    },
+    {
+      "file": "FULL_UNION_LABEL_INVERSE.png",
+      "sha256": "a36bf09e1359b00394b8a60c9b11f655dacf6b39a0bc6b3d813bcd5f6dbaa06c",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure.",
   "pdf_compiled": false,
   "new_external_pdf_read": false,
   "spectral_weight_checks": 104,
   "boundary_checks": 66,
   "fourth_return_exact_replay_scripts": 7,
   "global_response_symbolic_checks": true,
-  "polynomial_conditional_checks": 21
+  "polynomial_conditional_checks": 21,
+  "full_union_inverse_checks": 7656,
+  "support_factorization_checks": 14120
 }
