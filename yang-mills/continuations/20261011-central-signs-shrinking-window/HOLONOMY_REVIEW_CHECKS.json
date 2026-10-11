@@ -1,0 +1,26 @@
+{
+  "kind": "Bounded numerical checks of proved identities; no vacuum simulation",
+  "checks": {
+    "Pauli_bracket": 0.0,
+    "double_bracket": 0.0,
+    "finite_homogeneous_deficit": 4.996003610813204e-16,
+    "maximum_Taylor_remainder_ratio": 0.2509449305874568,
+    "gauge_endpoint": 3.410399583782861e-16,
+    "full_error_expansion_relative": 6.026789643194085e-16,
+    "scalar_energy_error": 1.1222578422120932e-11,
+    "quarter_period_crossing": 1.1085490164708389e-13,
+    "period_return": 4.389128769528248e-12,
+    "sample_receiver_max_remainder": 3.6728755521853174e-05
+  },
+  "figure_parameters": {
+    "lambda": 1.3,
+    "ell": 0.8,
+    "fixed_x0": 0.45,
+    "f_amplitude": 0.7,
+    "f_hat_radius": 0.6,
+    "integral_f": 0.15119999999999997,
+    "period": 4.0339346989109535
+  },
+  "f": "Ff product_i max(1-|x_i-o_i|/radius,0); radius/a=60j makes all three sampled sums exact",
+  "all_assertions_passed": true
+}

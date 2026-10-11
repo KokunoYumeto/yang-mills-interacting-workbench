@@ -902,3 +902,7 @@ Complete original local curvature provider: [LC1–LC42](https://github.com/Koku
 ## Sharper signed kinetic bound and full physical receiving map
 
 [SK1–SK39](SIGNED_KINETIC_TRACE.md) evaluate the complete original ancestor matrix. SK20–SK28 give its explicit negative remainder and sharpen the original-path kinetic upper function to 1200j^5+O(j log j). SK29–SK39 retain the actual root covariance, chord-score/Gauss map, physical variable-colour Gram and raw spectral certificate. No actual covariance is replaced by its deterministic bound.
+
+## Exact negative trace and retained actual covariance
+
+[TC1–TC18](NEGATIVE_TRACE_COMPRESSION.md), with the independently evaluated [coefficient G1–G52](GAMMA_INTEGRAL.md), strengthen the earlier upper-only remainder to order log n from both sides. TC14 evaluates the actual root-cell contraction strictly negatively. All complementary and mixed covariance terms remain in the receiving identity; the deterministic trace is not substituted for the actual state.

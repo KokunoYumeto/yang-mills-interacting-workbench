@@ -1,0 +1,892 @@
+{
+  "check_count": 1002,
+  "all_assertions_passed": true,
+  "residuals": {
+    "original_metric": 0.0,
+    "Lie_bracket": 0.0,
+    "full_deficit_square": 6.71742340877867e-16,
+    "radius_two_deficit": 6.717423408907917e-16,
+    "original_norms": 8.881784197001252e-16,
+    "orthogonal_exact_commutator": 6.953831366681871e-16,
+    "static_source_sign": 0.0,
+    "exact_triangle_mesh": 2.842170943040401e-14
+  },
+  "exact_symbolic_energy_derivative": "0",
+  "test_function": "product_d max(1-2|x_d|,0); F=1; integral=1/8; R=1",
+  "constants": {
+    "kappa": 1,
+    "ell": 1,
+    "u": 0.5,
+    "lambda_values": [
+      1.0,
+      0.8,
+      0.6
+    ],
+    "scaled_curvature_cutoff_limit": 0.11307086114687329,
+    "original_classical_receiver_limit": 0.03845
+  },
+  "samples": [
+    {
+      "j": 4,
+      "a": 0.0025,
+      "scaled_cutoff": 0.11195563076439084,
+      "classical_receiver": 0.038220214598955055,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 5,
+      "a": 0.002,
+      "scaled_cutoff": 0.11217706911575331,
+      "classical_receiver": 0.038244414169741545,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 6,
+      "a": 0.0016666666666666668,
+      "scaled_cutoff": 0.112325138608109,
+      "classical_receiver": 0.038262286552398335,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 7,
+      "a": 0.0014285714285714286,
+      "scaled_cutoff": 0.11243112079873203,
+      "classical_receiver": 0.03827618224250797,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 8,
+      "a": 0.00125,
+      "scaled_cutoff": 0.11251072712782323,
+      "classical_receiver": 0.038287386599963016,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 9,
+      "a": 0.0011111111111111111,
+      "scaled_cutoff": 0.11257271422806374,
+      "classical_receiver": 0.038296669607842095,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 10,
+      "a": 0.001,
+      "scaled_cutoff": 0.11262234874903534,
+      "classical_receiver": 0.03830452436600963,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 11,
+      "a": 0.0009090909090909091,
+      "scaled_cutoff": 0.11266298849473928,
+      "classical_receiver": 0.03831128322563596,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 12,
+      "a": 0.0008333333333333334,
+      "scaled_cutoff": 0.11269687537697992,
+      "classical_receiver": 0.03831717944614584,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 14,
+      "a": 0.0007142857142857143,
+      "scaled_cutoff": 0.11275016375032824,
+      "classical_receiver": 0.03832701761309661,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 15,
+      "a": 0.0006666666666666666,
+      "scaled_cutoff": 0.11277149196418607,
+      "classical_receiver": 0.038331181818688755,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 16,
+      "a": 0.000625,
+      "scaled_cutoff": 0.11279016018607091,
+      "classical_receiver": 0.03833494961510601,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 17,
+      "a": 0.000588235294117647,
+      "scaled_cutoff": 0.11280663682613788,
+      "classical_receiver": 0.0383383801605296,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 19,
+      "a": 0.0005263157894736842,
+      "scaled_cutoff": 0.1128343968783443,
+      "classical_receiver": 0.038344410601013824,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 20,
+      "a": 0.0005,
+      "scaled_cutoff": 0.11284619867242263,
+      "classical_receiver": 0.03834708090394677,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 22,
+      "a": 0.00045454545454545455,
+      "scaled_cutoff": 0.11286658889136583,
+      "classical_receiver": 0.03835186488894891,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 24,
+      "a": 0.0004166666666666667,
+      "scaled_cutoff": 0.11288358587258694,
+      "classical_receiver": 0.038356038104861954,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 26,
+      "a": 0.0003846153846153846,
+      "scaled_cutoff": 0.11289797157922903,
+      "classical_receiver": 0.038359720364288245,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 28,
+      "a": 0.00035714285714285714,
+      "scaled_cutoff": 0.11291030484566095,
+      "classical_receiver": 0.038363000960689654,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 30,
+      "a": 0.0003333333333333333,
+      "scaled_cutoff": 0.11292099566384933,
+      "classical_receiver": 0.03836594798753449,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 33,
+      "a": 0.00030303030303030303,
+      "scaled_cutoff": 0.11293460482937787,
+      "classical_receiver": 0.038369855814064255,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 36,
+      "a": 0.0002777777777777778,
+      "scaled_cutoff": 0.11294594808534009,
+      "classical_receiver": 0.03837326466332639,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 38,
+      "a": 0.0002631578947368421,
+      "scaled_cutoff": 0.11295251618308508,
+      "classical_receiver": 0.03837530948590302,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 42,
+      "a": 0.0002380952380952381,
+      "scaled_cutoff": 0.11296377739965748,
+      "classical_receiver": 0.03837895206299545,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 45,
+      "a": 0.00022222222222222223,
+      "scaled_cutoff": 0.11297091056238462,
+      "classical_receiver": 0.038381359201104186,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 49,
+      "a": 0.00020408163265306123,
+      "scaled_cutoff": 0.11297906375410649,
+      "classical_receiver": 0.03838421826015948,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 53,
+      "a": 0.00018867924528301886,
+      "scaled_cutoff": 0.11298598711765111,
+      "classical_receiver": 0.0383867473739686,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 57,
+      "a": 0.00017543859649122806,
+      "scaled_cutoff": 0.11299193939944112,
+      "classical_receiver": 0.03838900548772348,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 62,
+      "a": 0.00016129032258064516,
+      "scaled_cutoff": 0.11299830033249467,
+      "classical_receiver": 0.03839151488580673,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 67,
+      "a": 0.00014925373134328358,
+      "scaled_cutoff": 0.11300371238662005,
+      "classical_receiver": 0.03839373798289234,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 73,
+      "a": 0.000136986301369863,
+      "scaled_cutoff": 0.1130092287199222,
+      "classical_receiver": 0.03839609817224078,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 78,
+      "a": 0.0001282051282051282,
+      "scaled_cutoff": 0.11301317767885202,
+      "classical_receiver": 0.03839785331452017,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 85,
+      "a": 0.00011764705882352942,
+      "scaled_cutoff": 0.11301792605439327,
+      "classical_receiver": 0.03840004535256506,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 92,
+      "a": 0.00010869565217391305,
+      "scaled_cutoff": 0.11302195213602267,
+      "classical_receiver": 0.038401982286453425,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 99,
+      "a": 0.00010101010101010101,
+      "scaled_cutoff": 0.11302540908144572,
+      "classical_receiver": 0.038403710047139314,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 108,
+      "a": 9.259259259259259e-05,
+      "scaled_cutoff": 0.11302919548099587,
+      "classical_receiver": 0.038405679703636425,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 116,
+      "a": 8.620689655172413e-05,
+      "scaled_cutoff": 0.11303206807632848,
+      "classical_receiver": 0.03840723449661203,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 126,
+      "a": 7.936507936507937e-05,
+      "scaled_cutoff": 0.11303514600477248,
+      "classical_receiver": 0.03840896577141936,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 136,
+      "a": 7.352941176470588e-05,
+      "scaled_cutoff": 0.1130377714174547,
+      "classical_receiver": 0.03841050246005796,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 148,
+      "a": 6.756756756756757e-05,
+      "scaled_cutoff": 0.11304045371064525,
+      "classical_receiver": 0.038412136818438566,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 160,
+      "a": 6.25e-05,
+      "scaled_cutoff": 0.11304273375111243,
+      "classical_receiver": 0.038413583730004267,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 173,
+      "a": 5.7803468208092484e-05,
+      "scaled_cutoff": 0.11304484692707602,
+      "classical_receiver": 0.03841497810691554,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 187,
+      "a": 5.3475935828877e-05,
+      "scaled_cutoff": 0.11304679413776123,
+      "classical_receiver": 0.03841631405142682,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 202,
+      "a": 4.950495049504951e-05,
+      "scaled_cutoff": 0.11304858097082551,
+      "classical_receiver": 0.038417588398103386,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 219,
+      "a": 4.5662100456621006e-05,
+      "scaled_cutoff": 0.11305031019560255,
+      "classical_receiver": 0.038418871315803405,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 237,
+      "a": 4.219409282700422e-05,
+      "scaled_cutoff": 0.11305187078833322,
+      "classical_receiver": 0.038420076328059945,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 256,
+      "a": 3.90625e-05,
+      "scaled_cutoff": 0.11305328002919368,
+      "classical_receiver": 0.03842120779463944,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 277,
+      "a": 3.610108303249098e-05,
+      "scaled_cutoff": 0.11305461271907778,
+      "classical_receiver": 0.03842232033769384,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 300,
+      "a": 3.3333333333333335e-05,
+      "scaled_cutoff": 0.11305585828117268,
+      "classical_receiver": 0.038423402204432675,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 324,
+      "a": 3.08641975308642e-05,
+      "scaled_cutoff": 0.11305696948007093,
+      "classical_receiver": 0.03842440595314752,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 351,
+      "a": 2.849002849002849e-05,
+      "scaled_cutoff": 0.11305803795933161,
+      "classical_receiver": 0.03842540974104119,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 379,
+      "a": 2.6385224274406334e-05,
+      "scaled_cutoff": 0.11305898522811171,
+      "classical_receiver": 0.038426335254124096,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 410,
+      "a": 2.4390243902439026e-05,
+      "scaled_cutoff": 0.11305988308394507,
+      "classical_receiver": 0.03842724723185769,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 444,
+      "a": 2.2522522522522523e-05,
+      "scaled_cutoff": 0.11306072367770204,
+      "classical_receiver": 0.038428135513542294,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 480,
+      "a": 2.0833333333333333e-05,
+      "scaled_cutoff": 0.11306148393039972,
+      "classical_receiver": 0.038428971200889575,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 519,
+      "a": 1.926782273603083e-05,
+      "scaled_cutoff": 0.11306218852744664,
+      "classical_receiver": 0.038429776534461765,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 562,
+      "a": 1.779359430604982e-05,
+      "scaled_cutoff": 0.11306285204800036,
+      "classical_receiver": 0.03843056541896763,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 608,
+      "a": 1.644736842105263e-05,
+      "scaled_cutoff": 0.1130634579633868,
+      "classical_receiver": 0.038431314899892446,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 657,
+      "a": 1.5220700152207e-05,
+      "scaled_cutoff": 0.1130640100729007,
+      "classical_receiver": 0.03843202502858735,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 711,
+      "a": 1.4064697609001406e-05,
+      "scaled_cutoff": 0.11306453038107038,
+      "classical_receiver": 0.038432720956667554,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 769,
+      "a": 1.3003901170351106e-05,
+      "scaled_cutoff": 0.11306500784152024,
+      "classical_receiver": 0.0384333852136408,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 832,
+      "a": 1.201923076923077e-05,
+      "scaled_cutoff": 0.11306545104122002,
+      "classical_receiver": 0.03843402651838263,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 900,
+      "a": 1.1111111111111112e-05,
+      "scaled_cutoff": 0.11306585978827328,
+      "classical_receiver": 0.03843464169889763,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 973,
+      "a": 1.0277492291880782e-05,
+      "scaled_cutoff": 0.11306623500467451,
+      "classical_receiver": 0.038435228960793155,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 1053,
+      "a": 9.49667616334283e-06,
+      "scaled_cutoff": 0.11306658645635453,
+      "classical_receiver": 0.03843580104949116,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 1139,
+      "a": 8.77963125548727e-06,
+      "scaled_cutoff": 0.11306690920584499,
+      "classical_receiver": 0.038436347524795945,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 1232,
+      "a": 8.116883116883117e-06,
+      "scaled_cutoff": 0.11306720751727978,
+      "classical_receiver": 0.03843687284471978,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 1333,
+      "a": 7.5018754688672165e-06,
+      "scaled_cutoff": 0.1130674843413915,
+      "classical_receiver": 0.03843737987882116,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 1442,
+      "a": 6.934812760055479e-06,
+      "scaled_cutoff": 0.11306773958586638,
+      "classical_receiver": 0.03843786615381102,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 1559,
+      "a": 6.414368184733804e-06,
+      "scaled_cutoff": 0.113067973847659,
+      "classical_receiver": 0.038438330279369264,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 1687,
+      "a": 5.927682276229994e-06,
+      "scaled_cutoff": 0.11306819291484799,
+      "classical_receiver": 0.038438781667421616,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 1825,
+      "a": 5.479452054794521e-06,
+      "scaled_cutoff": 0.1130683946730377,
+      "classical_receiver": 0.03843921409340384,
+      "scaled_log_probability_bound": -0.027161322266242315
+    },
+    {
+      "j": 1974,
+      "a": 5.065856129685917e-06,
+      "scaled_cutoff": 0.11306858084215826,
+      "classical_receiver": 0.03843962909484944,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 2135,
+      "a": 4.6838407494145196e-06,
+      "scaled_cutoff": 0.11306875279663957,
+      "classical_receiver": 0.03844002774536801,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 2309,
+      "a": 4.3308791684711995e-06,
+      "scaled_cutoff": 0.1130689116737179,
+      "classical_receiver": 0.03844041080137956,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 2498,
+      "a": 4.003202562049639e-06,
+      "scaled_cutoff": 0.11306905916974379,
+      "classical_receiver": 0.0384407806569114,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 2702,
+      "a": 3.700962250185048e-06,
+      "scaled_cutoff": 0.11306919521652256,
+      "classical_receiver": 0.03844113547728078,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 2923,
+      "a": 3.421142661648991e-06,
+      "scaled_cutoff": 0.11306932117137569,
+      "classical_receiver": 0.03844147713931242,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 3161,
+      "a": 3.1635558367605187e-06,
+      "scaled_cutoff": 0.11306943711884794,
+      "classical_receiver": 0.03844180423982409,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 3419,
+      "a": 2.924831822170225e-06,
+      "scaled_cutoff": 0.11306954457580323,
+      "classical_receiver": 0.03844211950368874,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 3699,
+      "a": 2.703433360367667e-06,
+      "scaled_cutoff": 0.11306964423416557,
+      "classical_receiver": 0.03844242360640884,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 4001,
+      "a": 2.4993751562109474e-06,
+      "scaled_cutoff": 0.11306973608727822,
+      "classical_receiver": 0.038442715127986825,
+      "scaled_log_probability_bound": -0.027161322266242315
+    },
+    {
+      "j": 4328,
+      "a": 2.310536044362292e-06,
+      "scaled_cutoff": 0.11306982108991272,
+      "classical_receiver": 0.03844299571147869,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 4681,
+      "a": 2.1362956633198035e-06,
+      "scaled_cutoff": 0.1130698995212864,
+      "classical_receiver": 0.03844326496703604,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 5063,
+      "a": 1.975113569030219e-06,
+      "scaled_cutoff": 0.11306997207478052,
+      "classical_receiver": 0.038443524006225326,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 5477,
+      "a": 1.8258170531312762e-06,
+      "scaled_cutoff": 0.11307003927825088,
+      "classical_receiver": 0.0384437735528414,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 5924,
+      "a": 1.688048615800135e-06,
+      "scaled_cutoff": 0.11307010129260321,
+      "classical_receiver": 0.03844401305330695,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 6408,
+      "a": 1.5605493133583021e-06,
+      "scaled_cutoff": 0.11307015868451699,
+      "classical_receiver": 0.03844424357491369,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 6931,
+      "a": 1.4427932477276006e-06,
+      "scaled_cutoff": 0.1130702116907049,
+      "classical_receiver": 0.038444465004084404,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 7498,
+      "a": 1.3336889837289944e-06,
+      "scaled_cutoff": 0.11307026080245,
+      "classical_receiver": 0.0384446783826933,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 8110,
+      "a": 1.2330456226880396e-06,
+      "scaled_cutoff": 0.11307030610567352,
+      "classical_receiver": 0.0384448830992899,
+      "scaled_log_probability_bound": -0.027161322266242315
+    },
+    {
+      "j": 8772,
+      "a": 1.1399908800729594e-06,
+      "scaled_cutoff": 0.11307034799301435,
+      "classical_receiver": 0.03844507995444662,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 9489,
+      "a": 1.0538518284329223e-06,
+      "scaled_cutoff": 0.11307038676737513,
+      "classical_receiver": 0.03844526947662969,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 10263,
+      "a": 9.743739647276624e-07,
+      "scaled_cutoff": 0.1130704225433113,
+      "classical_receiver": 0.03844545134297116,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 11102,
+      "a": 9.007386056566384e-07,
+      "scaled_cutoff": 0.11307045568933773,
+      "classical_receiver": 0.03844562658538935,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 12008,
+      "a": 8.32778147901399e-07,
+      "scaled_cutoff": 0.11307048628089479,
+      "classical_receiver": 0.0384457947986658,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 12989,
+      "a": 7.698822080221726e-07,
+      "scaled_cutoff": 0.11307051459273534,
+      "classical_receiver": 0.0384459567079462,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 14050,
+      "a": 7.117437722419928e-07,
+      "scaled_cutoff": 0.11307054076305495,
+      "classical_receiver": 0.038446112363832954,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 15197,
+      "a": 6.580246101204186e-07,
+      "scaled_cutoff": 0.11307056494410132,
+      "classical_receiver": 0.038446261945595535,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 16438,
+      "a": 6.083465141744738e-07,
+      "scaled_cutoff": 0.11307058730611792,
+      "classical_receiver": 0.038446405811868256,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 17781,
+      "a": 5.623980653506552e-07,
+      "scaled_cutoff": 0.11307060798928444,
+      "classical_receiver": 0.0384465442054233,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 19233,
+      "a": 5.199396869963084e-07,
+      "scaled_cutoff": 0.11307062710144192,
+      "classical_receiver": 0.03844667720780309,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 20804,
+      "a": 4.806767929244376e-07,
+      "scaled_cutoff": 0.11307064477519366,
+      "classical_receiver": 0.03844680512451544,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 22503,
+      "a": 4.443851930853664e-07,
+      "scaled_cutoff": 0.11307066111145507,
+      "classical_receiver": 0.038446928094967504,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 24340,
+      "a": 4.1084634346754315e-07,
+      "scaled_cutoff": 0.11307067620860034,
+      "classical_receiver": 0.03844704628682659,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 26328,
+      "a": 3.798237617745366e-07,
+      "scaled_cutoff": 0.11307069017307843,
+      "classical_receiver": 0.03844715998744222,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 28478,
+      "a": 3.5114825479317365e-07,
+      "scaled_cutoff": 0.11307070308104915,
+      "classical_receiver": 0.03844726929354084,
+      "scaled_log_probability_bound": -0.0271613222662423
+    },
+    {
+      "j": 30804,
+      "a": 3.2463316452408777e-07,
+      "scaled_cutoff": 0.11307071501653396,
+      "classical_receiver": 0.03844737441098424,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 33319,
+      "a": 3.0012905549386234e-07,
+      "scaled_cutoff": 0.11307072604679906,
+      "classical_receiver": 0.03844747544493676,
+      "scaled_log_probability_bound": -0.027161322266242297
+    },
+    {
+      "j": 36040,
+      "a": 2.774694783573807e-07,
+      "scaled_cutoff": 0.11307073624676944,
+      "classical_receiver": 0.0384475726134664,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 38984,
+      "a": 2.5651549353580957e-07,
+      "scaled_cutoff": 0.11307074567898684,
+      "classical_receiver": 0.038447666065769305,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 42167,
+      "a": 2.371522754760832e-07,
+      "scaled_cutoff": 0.11307075439513846,
+      "classical_receiver": 0.03844775588077933,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 45611,
+      "a": 2.1924535747955538e-07,
+      "scaled_cutoff": 0.11307076245575284,
+      "classical_receiver": 0.038447842265889126,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 49336,
+      "a": 2.0269174639208692e-07,
+      "scaled_cutoff": 0.113070769907191,
+      "classical_receiver": 0.03844792531968561,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 53365,
+      "a": 1.8738873793685e-07,
+      "scaled_cutoff": 0.113070776795684,
+      "classical_receiver": 0.03844800517266801,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 57723,
+      "a": 1.7324116903140863e-07,
+      "scaled_cutoff": 0.11307078316406839,
+      "classical_receiver": 0.038448081951798906,
+      "scaled_log_probability_bound": -0.02716132226624231
+    },
+    {
+      "j": 62437,
+      "a": 1.6016144273427615e-07,
+      "scaled_cutoff": 0.11307078905177485,
+      "classical_receiver": 0.03844815577743266,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 67536,
+      "a": 1.480691779199242e-07,
+      "scaled_cutoff": 0.11307079449498604,
+      "classical_receiver": 0.03844822676193394,
+      "scaled_log_probability_bound": -0.027161322266242304
+    },
+    {
+      "j": 73051,
+      "a": 1.3689066542552464e-07,
+      "scaled_cutoff": 0.11307079952688123,
+      "classical_receiver": 0.03844829500942171,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 79017,
+      "a": 1.265550451168736e-07,
+      "scaled_cutoff": 0.11307080417935732,
+      "classical_receiver": 0.038448360636969235,
+      "scaled_log_probability_bound": -0.027161322266242315
+    },
+    {
+      "j": 85470,
+      "a": 1.17000117000117e-07,
+      "scaled_cutoff": 0.11307080848041293,
+      "classical_receiver": 0.03844842373627903,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 92450,
+      "a": 1.081665765278529e-07,
+      "scaled_cutoff": 0.11307081245674337,
+      "classical_receiver": 0.03844848440700935,
+      "scaled_log_probability_bound": -0.027161322266242308
+    },
+    {
+      "j": 100000,
+      "a": 1e-07,
+      "scaled_cutoff": 0.11307081613284688,
+      "classical_receiver": 0.03844854274233759,
+      "scaled_log_probability_bound": -0.027161322266242304
+    }
+  ],
+  "scope": "Exact formulas sampled and algebra checked; these are not vacuum samples."
+}

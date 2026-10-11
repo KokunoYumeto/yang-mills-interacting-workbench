@@ -254,3 +254,15 @@ The original physical observable a_j³ Σ f(x_p) W_p now converges in actual vac
 ## SZ-20261011-051 — Independent cyclic and retained-energy receiving derivation
 
 [IB1–IB46](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDED_MULTIPLIER_RECEIVING.md) independently prove the original spectral endpoint and visible/hidden decomposition, all polynomial compression defects, and the full potential/retained-energy moment map. Both root excess bounds and the shifted resolvent recurrence keep all mixed terms. IB39–IB45 identify the actual leading covariance and its exact relation to the bounded Gram, including its possible collapse.
+
+## SZ-20261011-052 — Exact negative trace and actual root-cell contraction
+
+[TC1–TC18](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/NEGATIVE_TRACE_COMPRESSION.md) prove that the negative trace of the full original signed matrix has order log n, preserving every nodal and boundary channel. The exact coefficient is evaluated in [G1–G52](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GAMMA_INTEGRAL.md), including two independent rational enclosures. TC14 proves a strictly negative actual-vacuum root-cell term; TC10–TC16 retain the complete complement, cross and incoming-flux terms. The full actual contraction remains to be evaluated.
+
+## SZ-20261011-053 — Smooth holonomy map and the actual curvature scale
+
+[HC1–HC24](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_RECEIVING.md) prove a gauge-compatible surjective smooth-connection-to-link map, the exact curvature factor1/4, and the actual-vacuum curvature threshold of order a^(-3/2). A compact smooth three-colour family attains this scale and has an explicitly calculated receiver of the original signed observable, with all finite errors retained. The full static source and an exact globally smooth homogeneous Yang–Mills comparison are derived; the latter has infinite spatial total energy.
+
+## SZ-20261011-054 — Universal curvature bounds and exact physical-time accumulation
+
+[HCR1–HCR8](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_REVIEW.md) prove the exact gauge inversion dictionary, almost-sure curvature lower bounds for every smooth-preimage sequence under any coupling of the actual marginals, and bounds for every positive curvature moment. They construct a nonzero receiver for every original nonzero signed test and determine the complete fixed-time accumulation interval of the symmetric homogeneous classical family. Actual continuum-state identification, finite-energy dynamics and reconstruction remain active calculations.

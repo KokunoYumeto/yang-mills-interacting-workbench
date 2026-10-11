@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T10:00:51.707215+00:00",
+  "checked_utc": "2026-10-11T10:44:14.183472+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -241,7 +241,7 @@
     },
     {
       "source": "RAW_S6_HESSIAN_RECEIVING.md",
-      "sha256": "6c178c2a3b194024b2a2fff6777d4796defcf9b80341c84d32407b68998fb582",
+      "sha256": "83cd85e898bc37463d89b17e9de65ecbe3aaaed40e71bf3d2e167c16575faa92",
       "complete_math_blocks": 333,
       "split_to_aligned_wrappers": 5
     },
@@ -265,7 +265,7 @@
     },
     {
       "source": "DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT.md",
-      "sha256": "d1adae01887658ee1428100a7f86c03b95dcac3c1afc22083f157005b4a48932",
+      "sha256": "96662262188bc48526d95cee6e774467d6146affdfbe1538dc30f4ee32382e82",
       "complete_math_blocks": 337,
       "split_to_aligned_wrappers": 4
     },
@@ -295,7 +295,7 @@
     },
     {
       "source": "LOWER_SIDE_RETAINED_ENERGY.md",
-      "sha256": "6ecc0f5e8f6ba533d4e1625ba238dc825efaa86a614ea87f53c5b4da6268f365",
+      "sha256": "17a874fb54b3618e71835601bb63fd5d7b48d8d907ed528b1882fce6b98eb9a4",
       "complete_math_blocks": 411,
       "split_to_aligned_wrappers": 0
     },
@@ -313,26 +313,50 @@
     },
     {
       "source": "ACTUAL_WILSON_COVARIANCE.md",
-      "sha256": "702d4a452a489fd770c0902d04fcc2af6f45c721da5a57aff310eae0ba59757e",
+      "sha256": "2f01119e5f6925f5fe337a5fb81e0e3fdb8bdda928d83f264959e59756fdc8c6",
       "complete_math_blocks": 314,
       "split_to_aligned_wrappers": 3
     },
     {
       "source": "SIGNED_KINETIC_TRACE.md",
-      "sha256": "3e40545661b905088a990f865a949ba1dc8915e6179f23629ebd3cc37ebe0a79",
+      "sha256": "2568d59a53f813f17ab01d720705eeeae7aacdfba74978b5a44c6211c480c8bb",
       "complete_math_blocks": 327,
       "split_to_aligned_wrappers": 4
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "df3fccd17a2731b99f8bf962614771be3dcc2cf98b1a3c13a0e3737531dd8e94",
+      "sha256": "0c3f29741ca4355a2a5efbebc0b382864483d46a019b33f10d3874974bae8010",
       "complete_math_blocks": 545,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDED_MULTIPLIER_RECEIVING.md",
-      "sha256": "63459c3927adc373427c8a5946cd0385d651a4ecfa0d6dd7d9727574ebf18279",
+      "sha256": "429cb986168a2f60cc1092872846369afa034d82aee64461a4c3cd0eb93f232d",
       "complete_math_blocks": 405,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "NEGATIVE_TRACE_COMPRESSION.md",
+      "sha256": "27f93f22f19a8f433a36e68b9f5c19330b2e600afcd8c286cc062d9e70901ead",
+      "complete_math_blocks": 52,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "GAMMA_INTEGRAL.md",
+      "sha256": "a7ff0657f0c1939eff986e8bde14961a1f1f6e3fc4700ad904adcdad299cbad0",
+      "complete_math_blocks": 241,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "HOLONOMY_CURVATURE_RECEIVING.md",
+      "sha256": "d8030d06f6bba6130ba05e91ee4062e96308ae76cbb9e50428711de6dabb89b7",
+      "complete_math_blocks": 218,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "HOLONOMY_CURVATURE_REVIEW.md",
+      "sha256": "01043925279785d0ba369d409425ffd0ca0a353f8f9a23eb34a8f1ea167f2bb9",
+      "complete_math_blocks": 18,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -570,6 +594,26 @@
     {
       "file": "bounded_multiplier_receiving.png",
       "sha256": "faffd1ccb1ffc56fc453d7ca51922427fc45eff09eecd2310ef9ee6d11b6d844",
+      "visually_inspected": true
+    },
+    {
+      "file": "COMPRESSION.png",
+      "sha256": "d67205a5f53573882ae146088e5fcea2a0102cb13c1bee8229e056c839fffcd6",
+      "visually_inspected": true
+    },
+    {
+      "file": "INTEGRAL_GEOMETRY.png",
+      "sha256": "ea5e30cf277ea06584559ecd520baafe1a12a7b2264680ca144d01b8d72a0c70",
+      "visually_inspected": true
+    },
+    {
+      "file": "HOLONOMY_CURVATURE.png",
+      "sha256": "8f52f91f69721e5162575f39eec5c18aca421eddba364e2a102a5c90de927a7c",
+      "visually_inspected": true
+    },
+    {
+      "file": "PERIODIC_RECEIVER.png",
+      "sha256": "f58128eb06029da3392038391642346a8df3a6258258a7f5e87a49f4abad8c11",
       "visually_inspected": true
     }
   ],
@@ -1140,5 +1184,95 @@
       "all_original_math_blocks_retained": true,
       "changes": "Pinned complete proof providers, source-use links and figure embeds; every original mathematical block retained."
     }
-  ]
+  ],
+  "holonomy_trace_review": {
+    "utc": "2026-10-11T10:29:18.040019+00:00",
+    "accepted": [
+      "TC1–TC18",
+      "G1–G52",
+      "HC1–HC24",
+      "HCR1–HCR8"
+    ],
+    "independent_review": "Complete HCR1–HCR8 read, exact gauge dictionary and local extension integrated. HC1–HC21 original mathematical blocks all retained. HC22–HC24 prove every finite identity in the illustration.",
+    "underclaims": "Universal-preimage almost-sure curvature lower bound and all positive moments; nonzero signed receiver for every nonzero signed test; exact finite homogeneous deficit and complete fixed-physical-time accumulation interval.",
+    "checks": "TC full matrix/Gauss/flux tests and G rational interval certificate replayed. HC1002 checks passed. HCR algebra, full error and periodic dynamics replayed. All four figures visually inspected.",
+    "proofs": {
+      "TC": "d503ff206a4d16c8c5c8b94ec61fe084a5856048daf636d1d63b73b78f30f8d8",
+      "G": "033d9bd66fd8f9bd436aef5abf098005ccfc885475e98603d128c01c9ce5eb0d",
+      "HC": "582300146ab71d27435f879eee913ca6cc2a03a91d2467f09d4c9a96847d7f63",
+      "HCR": "1c1cbda92a9e729be9dbea4b2e82623c1cebdc927d0c5a2eaab33bf621eaae07"
+    },
+    "scope": "Original actual-vacuum curvature constraints and exact classical smooth receiving maps. Actual interacting continuum law, dynamics, reconstruction and no-gap endpoint remain active.",
+    "public_proofs": [
+      {
+        "prefix": "TC",
+        "source": "NEGATIVE_TRACE_COMPRESSION.md",
+        "owner_sha256": "d503ff206a4d16c8c5c8b94ec61fe084a5856048daf636d1d63b73b78f30f8d8",
+        "public_sha256": "27f93f22f19a8f433a36e68b9f5c19330b2e600afcd8c286cc062d9e70901ead",
+        "all_original_mathematical_content_retained": true,
+        "all_original_math_blocks_byte_identical": false,
+        "typesetting": "Documented line breaks and grouping wrappers; all mathematical tokens retained. Original prose norm lines joined to prevent table parsing. HCR5.1 gives the same complete original vector field in a display. New source prose font has verified glyph coverage."
+      },
+      {
+        "prefix": "G",
+        "source": "GAMMA_INTEGRAL.md",
+        "owner_sha256": "033d9bd66fd8f9bd436aef5abf098005ccfc885475e98603d128c01c9ce5eb0d",
+        "public_sha256": "a7ff0657f0c1939eff986e8bde14961a1f1f6e3fc4700ad904adcdad299cbad0",
+        "all_original_mathematical_content_retained": true,
+        "all_original_math_blocks_byte_identical": false,
+        "typesetting": "Documented line breaks and grouping wrappers; all mathematical tokens retained. Original prose norm lines joined to prevent table parsing. HCR5.1 gives the same complete original vector field in a display. New source prose font has verified glyph coverage."
+      },
+      {
+        "prefix": "HC",
+        "source": "HOLONOMY_CURVATURE_RECEIVING.md",
+        "owner_sha256": "582300146ab71d27435f879eee913ca6cc2a03a91d2467f09d4c9a96847d7f63",
+        "public_sha256": "d8030d06f6bba6130ba05e91ee4062e96308ae76cbb9e50428711de6dabb89b7",
+        "all_original_mathematical_content_retained": true,
+        "all_original_math_blocks_byte_identical": false,
+        "typesetting": "Documented line breaks and grouping wrappers; all mathematical tokens retained. Original prose norm lines joined to prevent table parsing. HCR5.1 gives the same complete original vector field in a display. New source prose font has verified glyph coverage."
+      },
+      {
+        "prefix": "HCR",
+        "source": "HOLONOMY_CURVATURE_REVIEW.md",
+        "owner_sha256": "1c1cbda92a9e729be9dbea4b2e82623c1cebdc927d0c5a2eaab33bf621eaae07",
+        "public_sha256": "01043925279785d0ba369d409425ffd0ca0a353f8f9a23eb34a8f1ea167f2bb9",
+        "all_original_mathematical_content_retained": true,
+        "all_original_math_blocks_byte_identical": false,
+        "typesetting": "Documented line breaks and grouping wrappers; all mathematical tokens retained. Original prose norm lines joined to prevent table parsing. HCR5.1 gives the same complete original vector field in a display. New source prose font has verified glyph coverage."
+      }
+    ],
+    "typesetting": {
+      "typesetting": "TC8.3 preceding constants, G1, HC4,HC9,HCR3.2 line breaks/group wrappers only; all mathematical factors retained. New source prose uses a font with verified coverage of every original Unicode character; earlier typesetting unchanged.",
+      "sources": {
+        "NEGATIVE_TRACE_COMPRESSION.md": "e57cd2e92ecf24b8b218c49baf734064069a09088a10a2b8fa76ab46c1cf380a",
+        "GAMMA_INTEGRAL.md": "a7ff0657f0c1939eff986e8bde14961a1f1f6e3fc4700ad904adcdad299cbad0",
+        "HOLONOMY_CURVATURE_RECEIVING.md": "d8030d06f6bba6130ba05e91ee4062e96308ae76cbb9e50428711de6dabb89b7",
+        "HOLONOMY_CURVATURE_REVIEW.md": "4839dcd1ab7c435e511e62b4c095d8e819e88622e2a3338b7f57db5d686ed31c"
+      },
+      "norm_prose_fix": "Joined four prose lines beginning with absolute-value or norm bars to their preceding lines, preventing the Markdown converter from treating them as tables. All original characters and mathematical expressions retained.",
+      "hcr5_display": "Original six-component field y=(q,p),F(y)=(p,−qiΣk≠i qk²) moved from prose to display HCR5.1, with vector index1..3 explicit. Every original term retained."
+    },
+    "compile": {
+      "utc": "2026-10-11T10:44:14.183472+00:00",
+      "tex_sha256": "e739542e9bde89937b6d178ee9422da57ebb315ba74769fe0cd0861d26de32bd",
+      "pdf_sha256": "f484d20e0c9ced318b602d9003f82d5cb9edfc722a4ab9f2a1876ed5ad455c4d",
+      "pages": 588,
+      "source_files": 59,
+      "math_blocks": 15016,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": "Pages554–588 rendered with Poppler and all35 pages inspected. No new overflow or missing glyph. Four scientific figures regenerated and inspected. Earlier inherited warnings remain."
+    }
+  },
+  "holonomy_trace_compile": {
+    "utc": "2026-10-11T10:44:14.183472+00:00",
+    "tex_sha256": "e739542e9bde89937b6d178ee9422da57ebb315ba74769fe0cd0861d26de32bd",
+    "pdf_sha256": "f484d20e0c9ced318b602d9003f82d5cb9edfc722a4ab9f2a1876ed5ad455c4d",
+    "pages": 588,
+    "source_files": 59,
+    "math_blocks": 15016,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": "Pages554–588 rendered with Poppler and all35 pages inspected. No new overflow or missing glyph. Four scientific figures regenerated and inspected. Earlier inherited warnings remain."
+  }
 }

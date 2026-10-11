@@ -1,0 +1,100 @@
+{
+  "kind": "Floating-point checks; proofs are in NEGATIVE_TRACE_COMPRESSION.md",
+  "matrix_checks": [
+    {
+      "n": 3,
+      "original_edges": 54,
+      "compression_dimension": 26,
+      "exact_formula_lower_evaluated": 0.04647312798543379,
+      "negative_trace": 0.3067412939358643,
+      "SK20_upper_evaluated": 0.9661213582132686,
+      "residuals": {
+        "B_from_original_L": 8.326672684688674e-17,
+        "isometry": 2.220446049250313e-16,
+        "A_K_zero": 8.329206016764315e-18,
+        "T_K_receiver": 6.938893903907228e-18,
+        "compression": 3.469446951953614e-18,
+        "cross_block": 1.541976423090496e-18,
+        "singular_values": 2.220446049250313e-16,
+        "inverse_J": 0.0,
+        "inverse_endpoint_form": 0.0,
+        "full_covariance_decomposition": 6.635317295611287e-17,
+        "root_Gauss": 8.881784197001252e-16,
+        "chord_Gauss": 8.881784197001252e-16,
+        "root_mean_zero": 7.355227538141662e-16,
+        "root_receiver": 5.551115123125783e-17,
+        "root_signed_contraction": 1.3877787807814457e-17,
+        "full_flux_defect_receiver": 1.3877787807814457e-17,
+        "score_compression_receiver": 1.3877787807814457e-17
+      },
+      "root_cell_test_value": -0.03903460577048333
+    },
+    {
+      "n": 5,
+      "original_edges": 300,
+      "compression_dimension": 164,
+      "exact_formula_lower_evaluated": 0.060994800439999455,
+      "negative_trace": 0.3997642541899974,
+      "SK20_upper_evaluated": 1.3024108812984336,
+      "residuals": {
+        "B_from_original_L": 1.1102230246251565e-16,
+        "isometry": 4.440892098500626e-16,
+        "A_K_zero": 6.938893903907228e-18,
+        "T_K_receiver": 1.0842021724855044e-18,
+        "compression": 1.7347680803520264e-18,
+        "cross_block": 3.3610267347050637e-18,
+        "singular_values": 1.1102230246251565e-16,
+        "inverse_J": 0.0,
+        "inverse_endpoint_form": 0.0,
+        "full_covariance_decomposition": 3.469446951953614e-18,
+        "root_Gauss": 6.217248937900877e-15,
+        "chord_Gauss": 5.329070518200751e-15,
+        "root_mean_zero": 4.218847493575595e-15,
+        "root_receiver": 4.440892098500626e-16,
+        "root_signed_contraction": 8.326672684688674e-17,
+        "full_flux_defect_receiver": 0.0,
+        "score_compression_receiver": 0.0
+      },
+      "root_cell_test_value": -0.22310409225036398
+    },
+    {
+      "n": 7,
+      "original_edges": 882,
+      "compression_dimension": 510,
+      "exact_formula_lower_evaluated": 0.07346591853124831,
+      "negative_trace": 0.4411646949956346,
+      "SK20_upper_evaluated": 1.4427065224847637,
+      "residuals": {
+        "B_from_original_L": 1.6653345369377348e-16,
+        "isometry": 5.551115123125783e-16,
+        "A_K_zero": 6.938893903907228e-18,
+        "T_K_receiver": 4.336808689942018e-19,
+        "compression": 2.31234978555287e-18,
+        "cross_block": 4.7704895589362195e-18,
+        "singular_values": 4.440892098500626e-16,
+        "inverse_J": 0.0,
+        "inverse_endpoint_form": 0.0,
+        "full_covariance_decomposition": 3.903127820947816e-18,
+        "root_Gauss": 3.907985046680551e-14,
+        "chord_Gauss": 4.263256414560601e-14,
+        "root_mean_zero": 2.731148640577885e-14,
+        "root_receiver": 5.551115123125783e-16,
+        "root_signed_contraction": 1.734723475976807e-18,
+        "full_flux_defect_receiver": 2.7755575615628914e-17,
+        "score_compression_receiver": 3.608224830031759e-16
+      },
+      "root_cell_test_value": -0.01163804273809562
+    }
+  ],
+  "riemann_samples": {
+    "3": 0.1767766952966369,
+    "5": 0.1688460799809541,
+    "9": 0.1767459565642609,
+    "17": 0.1799191948841733,
+    "33": 0.18084573609487592,
+    "65": 0.18109297475691674,
+    "129": 0.18115677226540655,
+    "257": 0.1811729834283209,
+    "513": 0.1811770705675805
+  }
+}

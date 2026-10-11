@@ -696,3 +696,7 @@ Complete programme providers: [FO1–FO56](https://github.com/KokunoYumeto/yang-
 ## Actual bounded energy and complete signed covariance
 
 [BM1–BM69](BOUNDED_ENERGY_MULTIPLIER.md) and the independent [IB1–IB46](BOUNDED_MULTIPLIER_RECEIVING.md) construct the original shrinking-window vector and its central, visible and hidden limiting maps. The complete retained energy gives two-root support and exact heat-word receivers. BM66–BM68 receive the full signed observable and companion covariance with every cross term. Its limiting Gram remains to be evaluated; the original operator and signed observable are retained throughout.
+
+## Actual curvature scale and explicit smooth receiving families
+
+[HC1–HC24](HOLONOMY_CURVATURE_RECEIVING.md) give the original smooth holonomy map and its exact actual-vacuum curvature constraint. [HCR1–HCR8](HOLONOMY_CURVATURE_REVIEW.md) strengthen this to universal-preimage almost-sure bounds and compute the full fixed-time accumulation interval of an explicit globally smooth classical comparison. The original signed receiver and all finite error terms are retained.

@@ -1,0 +1,30 @@
+{
+  "integral": "(2/pi^2) integral_[0,pi]^2 |a*b*(b-a)|/sqrt(a^2+b^2) dx dy",
+  "a": "-sin(x)*cos(y)",
+  "b": "cos(x)*sin(y)",
+  "simultaneous_zero_value": 0,
+  "closed_form": "[2+sqrt(2)/2+3*log(2/(1+sqrt(2)))-Li2(3-2*sqrt(2))/(2*sqrt(2))]/pi^2-1/(24*sqrt(2))",
+  "certified_strict_lower": "181178439743214882282299233973/1000000000000000000000000000000",
+  "certified_strict_upper": "90589219871607441141149616987/500000000000000000000000000000",
+  "certified_decimal_lower": "0.181178439743214882282299233973",
+  "certified_decimal_upper": "0.181178439743214882282299233974",
+  "closed_form_internal_outward_36_digits": [
+    "0.181178439743214882282299233973232149",
+    "0.181178439743214882282299233973232150"
+  ],
+  "independent_series_internal_outward_33_digits": [
+    "0.181178439743214882282299233973232",
+    "0.181178439743214882282299233973233"
+  ],
+  "parameters": {
+    "sqrt_decimal_digits": 50,
+    "arctan_1_over_5_terms": 40,
+    "arctan_1_over_239_terms": 12,
+    "log_terms": 20,
+    "dilog_terms": 50,
+    "independent_series_terms": 110
+  },
+  "arithmetic": "Exact Python integers and fractions.Fraction; displayed decimal endpoints rounded outward by integer division.",
+  "all_assertions_passed": true,
+  "proof": "GAMMA_INTEGRAL.md, Sections 1-8"
+}
