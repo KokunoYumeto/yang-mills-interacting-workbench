@@ -1,0 +1,202 @@
+{
+  "time_utc": "2026-10-11T15:17:16.316393+00:00",
+  "status": "passed",
+  "exact_symbolic_checks": 23,
+  "checks": [
+    "SM4.2 every full-square coefficient",
+    "SM10.4 curvature 01 colour 0",
+    "SM10.4 curvature 01 colour 1",
+    "SM10.4 curvature 01 colour 2",
+    "SM10.4 curvature 02 colour 0",
+    "SM10.4 curvature 02 colour 1",
+    "SM10.4 curvature 02 colour 2",
+    "SM10.4 curvature 12 colour 0",
+    "SM10.4 curvature 12 colour 1",
+    "SM10.4 curvature 12 colour 2",
+    "SM10.3 exact Gauss colour 0",
+    "SM10.3 exact Gauss colour 1",
+    "SM10.3 exact Gauss colour 2",
+    "SM10.5 full residual 0 colour 0",
+    "SM10.5 full residual 0 colour 1",
+    "SM10.5 full residual 0 colour 2",
+    "SM10.5 full residual 1 colour 0",
+    "SM10.5 full residual 1 colour 1",
+    "SM10.5 full residual 1 colour 2",
+    "SM10.5 full residual 2 colour 0",
+    "SM10.5 full residual 2 colour 1",
+    "SM10.5 full residual 2 colour 2",
+    "SM10.8 sixth source contraction including coefficient 4"
+  ],
+  "factor_samples": 64,
+  "factor_max_relative_error": 8.881784197001252e-16,
+  "exact_schedule_checks": 48,
+  "mollifier_integral": 0.44399381616807937,
+  "mollifier_quadrature_error": 5.427503113898958e-14,
+  "test_samples": [
+    {
+      "r": 1,
+      "h": 0.9,
+      "epsilon": 0.02,
+      "test_integrals": [
+        0.12139313455301233,
+        0.17992970182951848,
+        0.06911999999999999
+      ],
+      "target": [
+        0.5833333333333334,
+        0.875,
+        0.06479999999999998
+      ]
+    },
+    {
+      "r": 2,
+      "h": 0.45,
+      "epsilon": 0.01,
+      "test_integrals": [
+        0.3210502561951475,
+        0.4804953842927212,
+        0.06695999999999999
+      ],
+      "target": [
+        0.5833333333333334,
+        0.875,
+        0.06479999999999998
+      ]
+    },
+    {
+      "r": 4,
+      "h": 0.225,
+      "epsilon": 0.005,
+      "test_integrals": [
+        0.44726568202376593,
+        0.6703585230356488,
+        0.06588
+      ],
+      "target": [
+        0.5833333333333334,
+        0.875,
+        0.06479999999999998
+      ]
+    },
+    {
+      "r": 8,
+      "h": 0.1125,
+      "epsilon": 0.0025,
+      "test_integrals": [
+        0.513005514506413,
+        0.7692382717596195,
+        0.06534
+      ],
+      "target": [
+        0.5833333333333334,
+        0.875,
+        0.06479999999999998
+      ]
+    },
+    {
+      "r": 16,
+      "h": 0.05625,
+      "epsilon": 0.00125,
+      "test_integrals": [
+        0.5475959256268393,
+        0.8212588884402591,
+        0.06506999999999999
+      ],
+      "target": [
+        0.5833333333333334,
+        0.875,
+        0.06479999999999998
+      ]
+    },
+    {
+      "r": 32,
+      "h": 0.028125,
+      "epsilon": 0.000625,
+      "test_integrals": [
+        0.5653212549068278,
+        0.8479143823602416,
+        0.06493499999999998
+      ],
+      "target": [
+        0.5833333333333334,
+        0.875,
+        0.06479999999999998
+      ]
+    },
+    {
+      "r": 64,
+      "h": 0.0140625,
+      "epsilon": 0.0003125,
+      "test_integrals": [
+        0.5742914504767662,
+        0.8614034257151494,
+        0.06486749999999998
+      ],
+      "target": [
+        0.5833333333333334,
+        0.875,
+        0.06479999999999998
+      ]
+    }
+  ],
+  "schedule_samples": [
+    {
+      "r": 1,
+      "admissible_J": "60373213515959997916273975236012418428332726311613594338808204221184903226412881765971380795230690739891969201",
+      "log10_J": 109.78084429288356,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    },
+    {
+      "r": 2,
+      "admissible_J": "4100247045823744407162271401607337482267974690461032732516200079837606804243228425139953599260223171220443212130967037210449322690295056",
+      "log10_J": 135.61281002437968,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    },
+    {
+      "r": 3,
+      "admissible_J": "63496800192333903501314394906452916076736498875112932155458551609039791693251264359023500825233313429071877984342613361757471213895480715026911001663841",
+      "log10_J": 151.80275184034983,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    },
+    {
+      "r": 4,
+      "admissible_J": "49415266993487988319724436185982554114655315268858101456940626594553335714263440674241581630545756299464506046095992512225721302030768925815745095778315827618512896",
+      "log10_J": 163.69386114622498,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    },
+    {
+      "r": 5,
+      "admissible_J": "129465447561524615535087196333741580381418296170801319323121265534282620897490178148468436946164543573386316200750027690655980122320155341589997867100657982053681679615541361",
+      "log10_J": 173.1121538770225,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    },
+    {
+      "r": 6,
+      "admissible_J": "8250827689109498461053370353371587434884196669416132445808417345068970478149211486715158514255862256824623955090645282045958371074775608855524448528483686371692634119230225076088336",
+      "log10_J": 180.91649751737205,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    },
+    {
+      "r": 7,
+      "admissible_J": "38206094426012068778741771439632208872126602364370832979302452576762965202165368926034269844724179336077340191568163873929839682865886885403271363661833733082291432798101015689781265345296",
+      "log10_J": 187.5821326447043,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    },
+    {
+      "r": 8,
+      "admissible_J": "25144694604591221378997124430527008524691706505957169468019994382949835275052626962006147278516612159751962835567161130434379067472030383440031426269421100313738698475929026973388125446230824481",
+      "log10_J": 193.40044636525636,
+      "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+      "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+    }
+  ],
+  "script_sha256": "ccc7288d121f10234fccf57a0bb1fa9778fd31826d638460f791397fd505aa53",
+  "limits": "Finite symbolic and numerical checks supplement SM1\u2013SM11 proofs. No finite lattice vacuum law or source-free dynamics is asserted."
+}

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-11T15:16:56.275230+00:00",
+  "proofs": [
+    {
+      "source": "SMOOTH_MEASURE_REALIZATION.md",
+      "prefix": "SM",
+      "owner_sha256": "127492e91ae948db9b1fcadba488661c379e18da1dd44ffdc1e59e14fc28048c",
+      "public_sha256": "0885af2f75002790d3669070cd59b22bb538e5cebe7aae44cb168b446844bd37",
+      "all_original_math_blocks_retained": true,
+      "all_original_math_content_retained": true,
+      "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+    },
+    {
+      "source": "AMPLITUDE_ALGEBRA.md",
+      "prefix": "AA",
+      "owner_sha256": "98ad6c1d3432610ced49c84d4142724847b0797677a86458d0b105cc47f6e275",
+      "public_sha256": "4e0730de06eafd6d177ff00ee1641fcd03b916e6b691d1f87939b093b3182b51",
+      "all_original_math_blocks_retained": true,
+      "all_original_math_content_retained": true,
+      "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+    },
+    {
+      "source": "GLOBAL_MEASURE_EVOLUTION.md",
+      "prefix": "GM",
+      "owner_sha256": "41368d8f83b45f50dc3ced4c34f9a2a7e5a302456d0fb09bd4ca573c74f19a53",
+      "public_sha256": "c6d6d0f1b5112b89b049b713f40aaa88822f061505e750e1bce3d5c2d033fa43",
+      "all_original_math_blocks_retained": true,
+      "all_original_math_content_retained": true,
+      "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+    }
+  ],
+  "layout_repairs": {
+    "denominator_repair": "GM23: restore the opening denominator brace before j; all factors and the closing brace were already present.",
+    "layout": "Two long SM display formulas split into gathered rows; paragraph boundaries and short link labels prevent prose overflow. Original formulas, constants and signs retained.",
+    "reader_repair": "A prose line starting with a double norm bar is no longer parsed as a Markdown table."
+  }
+}

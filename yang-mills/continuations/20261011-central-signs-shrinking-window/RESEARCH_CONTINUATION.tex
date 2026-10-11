@@ -33195,6 +33195,10 @@ Complete source versions and reading coverage: \href{https://github.com/KokunoYu
 \subsection*{Simultaneous spatial measure and current evaluation}
 
 \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SIMULTANEOUS_CENTRAL_MEASURE.md}{CM1–CM63} extend the original bounded-word maps to every orientation triple and construct their actual spatial measure. \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_COVARIANCE_EQUALITY.md}{CE1–CE50} evaluate the current defect to zero and retain the exact geometric and outside-energy covariance terms. The further heat fluctuation survives for every positive parameter; its original-window norm and visible/escape maps are explicit, with the actual window-energy coefficient still to be evaluated.
+
+\subsection*{Global source-free evolution of the measure-realizing data}
+
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_MEASURE_EVOLUTION.md}{GM1–GM28} apply Sung-Jin Oh's global Cauchy theorem to the exact smooth compact data, construct continuous solution laws from the actual central spatial measure, and prove their zero-time Wilson and energy receiving maps. The complete time expansion, a strict electric-field stationarity defect, and time averages with an explicit invariance error are calculated. The exact virial proves that any stationary probability on conserved finite-total-energy smooth trajectories is supported on flat fields, without an energy-moment assumption. Its receiving space must therefore be enlarged to allow infinite total energy for a nonflat stationary classical law. Quantum reconstruction and the actual low-window coefficients remain to be established.
 \endgroup
 \clearpage
 \begingroup\ifPDFTeX\else\IfFontExistsTF{Cambria}{\fontspec{Cambria}}{\IfFontExistsTF{DejaVu Sans}{\fontspec{DejaVu Sans}}{}}\fi
@@ -33677,6 +33681,10 @@ accumulation set. No three-dimensional geometry is needed to clarify
 this scalar time calculation.
 
 Complete source versions and reading coverage: \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_TRACE_SOURCE_USE_LEDGER.json}{source-use ledger}.
+
+\subsection*{Global source-free evolution of the measure-realizing data}
+
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_MEASURE_EVOLUTION.md}{GM1–GM28} apply Sung-Jin Oh's global Cauchy theorem to the exact smooth compact data, construct continuous solution laws from the actual central spatial measure, and prove their zero-time Wilson and energy receiving maps. The complete time expansion, a strict electric-field stationarity defect, and time averages with an explicit invariance error are calculated. The exact virial proves that any stationary probability on conserved finite-total-energy smooth trajectories is supported on flat fields, without an energy-moment assumption. Its receiving space must therefore be enlarged to allow infinite total energy for a nonflat stationary classical law. Quantum reconstruction and the actual low-window coefficients remain to be established.
 \endgroup
 \clearpage
 \begingroup\ifPDFTeX\else\IfFontExistsTF{Cambria}{\fontspec{Cambria}}{\IfFontExistsTF{DejaVu Sans}{\fontspec{DejaVu Sans}}{}}\fi
@@ -34482,6 +34490,10 @@ The representation-theoretic human source is Marcel de Jeu and Xingni Jiang, *Ri
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{central_measure_bounds.png}\caption{Original spatial mass bounds and exact measure maps}\end{figure}
 
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{retained_current_identity.png}\caption{Full retained energy identity, with the current defect evaluated by CE13}\end{figure}
+
+\subsection*{Global source-free evolution of the measure-realizing data}
+
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_MEASURE_EVOLUTION.md}{GM1–GM28} apply Sung-Jin Oh's global Cauchy theorem to the exact smooth compact data, construct continuous solution laws from the actual central spatial measure, and prove their zero-time Wilson and energy receiving maps. The complete time expansion, a strict electric-field stationarity defect, and time averages with an explicit invariance error are calculated. The exact virial proves that any stationary probability on conserved finite-total-energy smooth trajectories is supported on flat fields, without an energy-moment assumption. Its receiving space must therefore be enlarged to allow infinite total energy for a nonflat stationary classical law. Quantum reconstruction and the actual low-window coefficients remain to be established.
 \endgroup
 \clearpage
 \begingroup\ifPDFTeX\else\IfFontExistsTF{Cambria}{\fontspec{Cambria}}{\IfFontExistsTF{DejaVu Sans}{\fontspec{DejaVu Sans}}{}}\fi
@@ -35113,5 +35125,1659 @@ Every positive heat parameter therefore gives a bounded nonzero vector in the sa
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{CURRENT_COVARIANCE_MAP.png}\caption{Exact current collapse and the surviving original heat fluctuation}\end{figure}
 
 The reproducible figure and bounded algebra checks are in check\_current\_covariance.py. Full source versions and reading coverage are in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CENTRAL_CURRENT_SOURCE_USE_LEDGER.json}{the source-use ledger}. No novelty claim is made.
+\endgroup
+\clearpage
+\begingroup\ifPDFTeX\else\IfFontExistsTF{Cambria}{\fontspec{Cambria}}{\IfFontExistsTF{DejaVu Sans}{\fontspec{DejaVu Sans}}{}}\fi
+\section*{Smooth connections receiving arbitrary positive spatial measures}
+
+This construction receives any triple of locally finite positive Radon
+measures on the original physical ℝ³ by smooth compactly supported
+connections on the unchanged regulator lattice. Every original finite
+Wilson face, density factor, cutoff term and error is retained. The
+construction is Borel, and its local mass bound gives joint moment
+convergence whenever the original measure law has the corresponding
+local moments. It does not identify the constructed finite link law
+with the vacuum. The exact static source and a globally smooth
+quadratic-time continuation with its complete remaining source are
+calculated below; source-free evolution is constructed in the companion GM1–GM28 proof, using these exact initial data.
+
+The finite holonomy estimates are \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_RECEIVING.md}{HC3–HC16}, independently checked in
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_REVIEW.md}{HCR1–HCR2}. Their full finite bound is reproduced here. No external
+theorem about the Yang–Mills vacuum or novelty claim is used.
+
+\subsection*{SM1. Original lattice and receiving measures}
+
+Retain the original physical center o, spacing a\_j=(100j)⁻¹,
+L\_j=j⁴, vertices o+a\_j(z−L\_j1), positive edges, and three ordered face
+orientations d<k. Retain T\_i=−iσ\_i/2 and
+−2Tr(T\_iT\_k)=δik. For a smooth connection B, its edge transport is
+U′=UB\_d along the original positive edge, and its ordered face is
+
+\[
+ U_p=U_d(x)U_k(x+a_je_d)U_d(x+a_je_k)^{-1}U_k(x)^{-1},
+ \qquad D_p=2-\operatorname{Tr}U_p.
+\tag{SM1.1}
+\]
+
+The edge parameter is original physical length: more explicitly,
+U′(s)=U(s)B\_d(x+se\_d), U(0)=I, 0≤s≤a\_j. The iterated integral
+series is bounded by the exponential of the integral of ||B\_d||op,
+and therefore gives its unique solution on the entire finite edge.
+Differentiating UU* and det U gives U∈SU(2). Thus Tr U is real and
+Dp=(1/2)||I−Up||F²≥0, with no exponential-curvature replacement.
+The original couplings and Hamiltonian remain
+
+\[
+ g_j^2=\kappa_*a_j/2,\qquad \kappa_j=\kappa_*,\qquad
+ b_j=(\kappa_*a_j^2)^{-1},\qquad
+ \mathcal H_j=-\kappa_*\Delta+b_j\sum_p(2-\operatorname{Tr}U_p).
+\tag{SM1.3}
+\]
+
+The connections below are inputs to its original link observables;
+no assertion about the distribution of those inputs under its ground
+state is built into this formula.
+
+The scalar 2 remains in each Dp. Define the positive finite measures
+
+\[
+ \mathcal W_j^{dk}(B)=a_j^2\sum_{p:\,d_p=d,\,k_p=k}D_p(B)\delta_{x_{p,j}}.
+\tag{SM1.2}
+\]
+
+For the original signed compact test \(f\), the exact sum over the three
+orientations and the original unmultiplied observable are
+\[
+\begin{gathered}
+\sum_{d<k}\mathcal W_j^{dk}(B)(f)=a_jC_{f,j}(\operatorname{Hol}_jB),\\
+C_{f,j}=a_j\sum_p f(x_{p,j})D_p,\qquad
+C_{f,j}=a_j^{-1}\sum_{d<k}\mathcal W_j^{dk}(f).
+\end{gathered}
+\]
+Every original factor remains explicit.
+
+Fix positive reference length ell and positive reference density σ*.
+They are parameters of the connection construction and do not change
+the lattice, Hamiltonian, coupling or test functions. Set
+K\_s=o+[−s ell,s ell]³ for s>0. Let
+ν=(ν12,ν13,ν23) be any triple of positive Radon measures with finite
+mass on every compact subset of the original ℝ³. Zero components and
+singular components are allowed.
+
+In the physical length convention, Dp and tj are dimensionless,
+Wj and ν have mass dimension length², their densities ρ and σ* have
+dimension length⁻¹, λ and A have dimension length⁻¹, and κ* has
+dimension length⁻¹. In particular (SM2.2) and (SM4.1) retain the
+length ell needed for that dictionary. These dimension assignments
+do not restrict the mathematical choice of Radon measures.
+
+\subsection*{SM2. Smooth positive densities and all three channel factors}
+
+Choose a fixed nonnegative η∈C\_c\textasciicircum{}∞(ℝ³), supported in [−1,1]³, with
+∫η=1. Such a function is obtained by multiplying three copies of
+exp(−1/(1−u²))1\_\{|u|<1\} and dividing by its positive finite integral.
+All derivatives extend by zero at the endpoints: each derivative is
+the same exponential times a rational function of 1−u², whose limit
+is zero because exponential decay dominates every power. This proves
+the asserted smoothness and support.
+
+At stage r∈\{1,2,…\}, put h\_r=ell/r, ε\_r=σ*/r and
+
+\[
+ \rho_{dk,r}(x)=\int h_r^{-3}\eta((x-y)/h_r)\,d\nu_{dk}(y)+\varepsilon_r.
+\tag{SM2.1}
+\]
+
+Each integral is over a compact neighborhood of x, hence finite;
+differentiation under that locally finite integral gives smoothness
+of every order and the exact derivative formula
+\[
+\partial^\alpha\rho_{dk,r}(x)
+=\int h_r^{-3-|\alpha|}(\partial^\alpha\eta)((x-y)/h_r)\,d\nu_{dk}(y),
+\qquad |\alpha|\ge1.
+\]
+Every ρ is at least ε\_r>0. Define the three positive smooth functions
+
+\[
+ \lambda_{1,r}=\sqrt2\,\ell^{-3/4}
+       (\rho_{12,r}\rho_{13,r}/\rho_{23,r})^{1/4},
+\quad
+ \lambda_{2,r}=\sqrt2\,\ell^{-3/4}
+       (\rho_{12,r}\rho_{23,r}/\rho_{13,r})^{1/4},
+\]
+\[
+ \lambda_{3,r}=\sqrt2\,\ell^{-3/4}
+       (\rho_{13,r}\rho_{23,r}/\rho_{12,r})^{1/4}.
+\tag{SM2.2}
+\]
+
+These are the positive fourth roots on the entire positive octant;
+no zero density is divided by, even when a target measure is zero.
+Direct multiplication proves the three exact identities
+
+\[
+ \frac{\ell^3}{4}\lambda_{1,r}^2\lambda_{2,r}^2=\rho_{12,r},\quad
+ \frac{\ell^3}{4}\lambda_{1,r}^2\lambda_{3,r}^2=\rho_{13,r},\quad
+ \frac{\ell^3}{4}\lambda_{2,r}^2\lambda_{3,r}^2=\rho_{23,r}.
+\tag{SM2.3}
+\]
+
+For example, the product of the first two squared functions is
+\[
+(4/\ell^3)\sqrt{(\rho_{12}\rho_{13}/\rho_{23})
+(\rho_{12}\rho_{23}/\rho_{13})}=(4/\ell^3)\rho_{12},
+\]
+because ρ12>0. The other two computations retain the same factor.
+Conversely the positive solution of these three product equations is
+exactly (SM2.2), by dividing the first two equations by the third.
+Thus this is a proved smooth bijection between the two positive
+octants, with its full inverse density map (SM2.3).
+
+The exact boundary image also explains why the positive floor and
+stage-dependent bounds must remain. For finite nonnegative λi,
+the density map (SM2.3) has image the positive octant, the three
+nonnegative coordinate rays and their common origin. If all three
+λi are positive, all three products are positive; if exactly two
+λi are positive, exactly their pair product is positive; if at most
+one is positive, all products vanish. Conversely a prescribed
+positive 12 density v is realized by
+λ1=λ2=(4v/ell³)¹/⁴ and λ3=0, and the other two rays follow by
+permuting the same formulas; the origin is realized by λ=0.
+Thus exactly two positive densities and a zero third cannot occur
+with finite diagonal amplitudes. For the positive path
+(ρ12,ρ13,ρ23)=(u,v,ε), u,v>0, formula (SM2.2) gives
+λ1=√2ell⁻³/⁴(uv/ε)¹/⁴→∞ and the other two displayed amplitudes
+decay as ε¹/⁴. The construction retains this precise possible
+growth rather than assuming a uniform amplitude bound.
+
+\subsection*{SM3. Compact cutoff, exact density and derivative bounds}
+
+Choose a fixed χ∈C\_c\textasciicircum{}∞(ℝ³) with 0≤χ≤1, χ=1 on [−1,1]³ and
+support in [−2,2]³. Define
+
+\[
+ \chi_r(x)=\chi((x-o)/(r\ell)),\quad
+ b_{i,r}(x)=\chi_r(x)\lambda_{i,r}(x),\quad
+ A_{i,r}(x)=b_{i,r}(x)T_i,\quad
+ H_{dk,r}(x)=\chi_r(x)^4\rho_{dk,r}(x).
+\tag{SM3.1}
+\]
+
+The connection Ar is smooth and supported in K\_2r; χr is one on K\_r.
+All three original colour channels remain. Their exact commutator
+density is
+
+\[
+ \frac{\ell^3}{4}|[A_{d,r},A_{k,r}]|^2
+ =\frac{\ell^3}{4}\chi_r^4\lambda_{d,r}^2\lambda_{k,r}^2
+ =H_{dk,r}.
+\tag{SM3.2}
+\]
+
+The fourth power of the cutoff is essential and is retained. No cutoff
+is placed inside a denominator. The spatial divergence is explicitly
+∑i∂iAi,r=∑i∂i(χrλi,r)Ti; it is generally nonzero. This construction
+lands in the full smooth-connection domain of HC3, and is not asserted
+to land in its divergence-free profile subspace.
+
+This limitation has an exact form. If a compactly supported diagonal
+connection A\_i=b\_iT\_i obeys ∑i∂iA\_i=0, independence of T1,T2,T3
+implies ∂ibi=0 for each i. For fixed other coordinates, bi is then
+constant on the entire i-coordinate line and is zero outside a
+compact interval, hence is zero everywhere. Thus the intersection
+of this compact diagonal domain with that divergence-free subspace
+is exactly \{0\}. This does not constrain general divergence-free
+connections, which can have additional spatial components in each
+colour. The exact forward holonomy map used here has the full
+smooth-connection domain; the Gauss equation with zero initial
+electric field still holds for every output, as proved in SM10.
+
+Here are finite bounds usable for a completely specified schedule.
+Let C₀≥sup|η|, C₁≥sup|∇η|, Cχ≥sup|∇χ| be finite constants and
+
+\[
+\begin{gathered}
+S_r=\sum_{d<k}\nu_{dk}(K_{2r+2}),\quad
+ R_{0,r}=\varepsilon_r+C_0h_r^{-3}S_r,\quad
+\\
+ R_{1,r}=C_1h_r^{-4}S_r,\quad\\
+ L_{\lambda,r}=\sqrt2\,\ell^{-3/4}(R_{0,r}^2/\varepsilon_r)^{1/4},
+ \quad c_r^\chi=C_\chi/(r\ell).
+\end{gathered}\tag{SM3.3}
+\]
+
+On K\_2r and the support of χr, each density is between εr and R0,r,
+and each density gradient has norm at most R1,r. The kernel's support
+is contained in K\_(2r+1), a subset of the retained K\_(2r+2), proving
+these bounds from (SM2.1). Taking a logarithmic derivative of (SM2.2)
+gives, with the indicated two plus signs and one minus sign,
+
+\[
+ \partial_s\lambda_{i,r}
+ =\frac{\lambda_{i,r}}4
+ \left(\frac{\partial_s\rho_{a,r}}{\rho_{a,r}}
+      +\frac{\partial_s\rho_{b,r}}{\rho_{b,r}}
+      -\frac{\partial_s\rho_{c,r}}{\rho_{c,r}}\right).
+\tag{SM3.4}
+\]
+
+Here (a,b,c) is (12,13,23), (12,23,13) or (13,23,12), according to i.
+
+Thus |λi,r|≤Lλ,r and |∇λi,r|≤3Lλ,rR1,r/(4εr). By differentiating
+χrλi,r and χr⁴ρdk,r, all cutoff contributions give the bounds
+
+\[
+ M_r:=\tfrac12L_{\lambda,r}\ge\max_i\sup\|A_{i,r}\|_{\rm op},\qquad
+ L_r:=\tfrac12L_{\lambda,r}
+       (c_r^\chi+3R_{1,r}/(4\varepsilon_r))
+       \ge\max_{i,s}\sup\|\partial_sA_{i,r}\|_{\rm op},
+\]
+\[
+ H_r:=R_{0,r}\ge\max_{d<k}\sup H_{dk,r},\qquad
+ G_r:=4c_r^\chi R_{0,r}+R_{1,r}
+       \ge\max_{d<k}\sup|\nabla H_{dk,r}|.
+\tag{SM3.5}
+\]
+
+Outside the support the fields and their derivatives vanish. The
+factor 1/2 in M and L is ||Ti||op=1/2. All these bounds are finite for
+every locally finite input triple, including arbitrarily singular
+ones. No rate of mass growth at infinity is assumed.
+
+For the second derivatives needed by the exact source, let
+C₂=max\_\{s,v\}sup|∂s∂vη|,
+
+Cχ,₂=max\_\{s,v\}sup|∂s∂vχ|,
+R₂,r=C₂h\_r⁻⁵S\_r and cχ,₂,r=Cχ,₂/(r ell)². The full logarithmic
+second derivative in SM9 gives
+
+\[
+ |\partial_s\partial_v\lambda_{i,r}|
+ \le L_{\lambda,r}\left(\frac{3R_{2,r}}{4\varepsilon_r}
+                  +\frac{21R_{1,r}^2}{16\varepsilon_r^2}\right),
+\]
+\[
+ |\partial_s\partial_v b_{i,r}|\le B_{2,r}:=
+ L_{\lambda,r}\left[c^\chi_{2,r}
+ +\frac{3c_r^\chi R_{1,r}}{2\varepsilon_r}
+ +\frac{3R_{2,r}}{4\varepsilon_r}
+ +\frac{21R_{1,r}^2}{16\varepsilon_r^2}\right].
+\tag{SM3.6}
+\]
+
+Indeed the product of the two logarithmic first derivatives contributes
+9R₁²/(16ε²); the logarithmic second derivative contributes at most
+3R₂/(4ε)+3R₁²/(4ε²), giving 21/16. The two distinct mixed cutoff
+terms each contribute 3cχR₁/(4ε). Smoothness gives finite constants
+at every order; these second-order constants explicitly bound the
+source, without asking the diagonal schedule to control that source.
+
+\subsection*{SM4. The full finite original face error}
+
+For any fixed stage r and any original j, put t\_j=(ell/a\_j)\textasciicircum{}(3/4),
+δ\_j=a\_jt\_j and B\_j,r=t\_jAr. The exact curvature is
+t\_j(∂dAk,r−∂kAd,r)+t\_j²[Ad,r,Ak,r], with both parts retained.
+HC14–HC15, or their following direct argument, give
+
+\[
+ \left|D_p(B_{j,r})-\frac{\ell^3a_j}{4}
+                      |[A_{d,r}(x_p),A_{k,r}(x_p)]|^2\right|
+ \le E_r(a_j),
+\]
+\[
+ E_r(a)=4M_r^2\delta^2R_r(a)+R_r(a)^2,\qquad
+ R_r(a)=\frac{32}{3}M_r^3\delta^3+4ta^2L_r,\quad
+ t=(\ell/a)^{3/4},\quad\delta=at.
+\tag{SM4.1}
+\]
+
+Each point on a face edge has coordinate-distance sum at most a from
+the center. Unitary variation of each edge transport therefore gives
+ta²Lr, and four-factor telescoping gives 4ta²Lr. The constant ordered
+commutator has second derivative 2[Ad,Ak] at zero and third derivative
+norm at most (2||Ad||+2||Ak||)³≤64Mr³. Its integral Taylor remainder
+is at most 32Mr³δ³/3. This proves Up=I+δ²[Ad,Ak]+Rp with ||Rp||op≤Rr.
+Using exactly Dp=(1/2)||I−Up||F² gives its leading term plus
+δ²ReTr([Ad,Ak]*Rp)+(1/2)||Rp||F². The bounds
+||[Ad,Ak]||op≤2Mr² and ||Rp||F≤√2Rr give (SM4.1). Thus the original
+Dp has not been replaced by an exponential of curvature.
+
+For use below, the complete positive error polynomial is
+
+\[
+ E_r(a)/a=
+ \frac{128}{3}M_r^5\ell^{15/4}a^{1/4}
+ +16M_r^2L_r\ell^{9/4}a^{3/4}
+ +\frac{1024}{9}M_r^6\ell^{9/2}a^{1/2}
+ +\frac{256}{3}M_r^3L_r\ell^3a
+ +16L_r^2\ell^{3/2}a^{3/2}.
+\tag{SM4.2}
+\]
+
+All powers and mixed terms come from the full square in (SM4.1).
+
+\subsection*{SM5. Global bounded-Lipschitz bound, with the original face centers}
+
+Suppose a\_j≤ell and a\_jL\_j≥(2r+3)ell. Every face on which Dp(Bj,r)
+can be nonzero has center in K\_(2r+1): otherwise all four edges are
+outside the support K\_2r of Ar, so each transport is I. All such faces
+belong to the original open box by the displayed geometric margin.
+The density Hdk,r is supported in K\_2r. Set
+
+\[
+ V_r=[2(2r+2)\ell]^3.
+\tag{SM5.1}
+\]
+
+For each orientation, the number of relevant face centers is at most
+Vr/a\_j³. Indeed a translated one-dimensional grid has at most
+2(2r+1)ell/a+2 points in that interval; cubing and using a≤ell gives
+this bound. The original orientation centers can be completed to a
+translated cubic mesh solely for estimating its Riemann sum; all
+added nonzero candidates lie inside the original box by the margin,
+and every other added term is zero.
+
+For any real bounded Lipschitz function f with ||f||∞≤1 and
+Lip(f)≤1/ell, the function fHdk,r is supported in K\_2r and has Lipschitz
+constant at most Hr/ell+Gr. Centered mesh cubes have maximal distance
+√3a/2 from their centers, and their union where this function or its
+sample is nonzero lies in K\_(2r+1), of volume at most Vr. Integrating
+the pointwise Lipschitz difference over those cubes proves
+
+\[
+ \left|a_j^3\sum_{p:\,dk}f(x_p)H_{dk,r}(x_p)
+                     -\int fH_{dk,r}\right|
+ \le\frac{\sqrt3}{2}a_jV_r(H_r/\ell+G_r).
+\tag{SM5.2}
+\]
+
+Combining this with the full finite Wilson error gives
+
+\[
+ \boxed{\left|\mathcal W_j^{dk}(B_{j,r})(f)-\int fH_{dk,r}\right|
+ \le V_r\left[E_r(a_j)/a_j+
+        \frac{\sqrt3}{2}a_j(H_r/\ell+G_r)\right].}
+\tag{SM5.3}
+\]
+
+For arbitrary bounded Lipschitz f the same right side is multiplied by
+max(||f||∞,ell Lip(f)). This inequality retains the original f and
+every orientation; it is a norm estimate, not a change in the
+definition of an observable.
+
+\subsection*{SM6. An explicit measurable diagonal schedule}
+
+Let β\_(r,1),…,β\_(r,5) be the five coefficients of the powers of a in
+(SM4.2), in that displayed order, and let
+β\_(r,6)=(√3/2)(Hr/ell+Gr). Their corresponding exponents are
+
+\[
+ (\alpha_1,\ldots,\alpha_6)=(1/4,3/4,1/2,1,3/2,1),\qquad
+ \tau_r=\sigma_*\ell^3/r.
+\tag{SM6.1}
+\]
+
+Starting at J₀=0, choose the following exact integer, without an
+unstated rate assumption:
+
+\[
+ J_r=\max\left\{J_{r-1}+1,\ r,
+ \left\lceil\frac1{100\ell}\right\rceil,
+ \left\lceil[100(2r+3)\ell]^{1/3}\right\rceil,
+ \max_{1\le v\le6}
+ \left\lceil\frac1{100}
+      \left(\frac{6V_r\beta_{r,v}}{\tau_r}\right)^{1/\alpha_v}
+ \right\rceil\right\}.
+\tag{SM6.2}
+\]
+
+A zero coefficient contributes zero. Every entry is finite by SM3;
+Jr strictly increases and Jr≥r. If j≥Jr then each of the six terms
+Vrβ\_(r,v)a\_j\textasciicircum{}αv is at most τr/6, and the original geometric margins
+in SM5 hold because a\_jL\_j=j³/100. Hence (SM5.3) is at most τr.
+
+Define r(j)=max\{r:Jr≤j\} when this set is nonempty, and put
+
+\[
+ \mathcal A_j[\nu]=t_jA_{r(j)}\quad(j\ge J_1),\qquad
+ \mathcal A_j[\nu]=0\quad(j<J_1).
+\tag{SM6.3}
+\]
+
+The maximum is finite since r≤Jr≤j, and r(j)→∞ since each fixed Jr
+is finite. Every output is a smooth compactly supported connection.
+The original amplitude tj=(ell/a\_j)\textasciicircum{}(3/4) is unchanged; only its
+explicitly chosen smooth template advances along the specified
+diagonal. The zero early outputs are fully specified.
+
+\subsection*{SM7. Vague convergence for every original compact test}
+
+For f∈C\_c(ℝ³), choose s with support in K\_s. For all sufficiently
+large r, χr=1 on this support. Formula (SM2.1) and interchange of a
+finite positive measure integral (or its positive and negative test
+parts) give
+
+\[
+ \int fH_{dk,r}=\int\!\int f(y+h_ru)\eta(u)\,du\,d\nu_{dk}(y)
+                         +\varepsilon_r\int f.
+\tag{SM7.1}
+\]
+
+Its difference from νdk(f) is at most
+ω\_f(√3h\_r)νdk(K\_(s+1))+εr∫|f| for r large enough, where ωf is the
+global modulus of continuity of the compactly supported continuous
+function f. Indeed the kernel moves a point by at most √3h\_r and
+only points in K\_(s+1) contribute. This bound tends to zero.
+
+For bounded Lipschitz compact f, SM5–SM6 already give
+Wj\textasciicircum{}dk(Aj[ν])(f)−∫fHdk,r(j)→0. To pass to every continuous compact
+test without a countable-test gap, we also prove a uniform local mass
+bound. For s≥1 define the Lipschitz function
+ψs(x)=max(0,1−dist∞(x,K\_s)/ell). It is one on K\_s, supported in
+K\_(s+1), and has Euclidean Lipschitz constant at most 1/ell. Since
+0≤χr≤1 and h\_r≤ell,
+
+\[
+ \int\psi_sH_{dk,r}
+ \le\nu_{dk}(K_{s+2})+\sigma_*\operatorname{Vol}(K_{s+1}).
+\]
+
+Here integrating the nonnegative convolution first in x gives at most
+one for each y∈K\_(s+2), and zero outside; the floor contributes at
+most (σ*/r)Vol K\_(s+1), bounded as displayed. SM5–SM6 give, for every
+j including its zero early output,
+
+\[
+ \boxed{\mathcal W_j^{dk}(\mathcal A_j[\nu])(K_s)
+ \le\nu_{dk}(K_{s+2})+
+       \sigma_*\operatorname{Vol}(K_{s+1})+\sigma_*\ell^3.}
+\tag{SM7.2}
+\]
+
+Approximate the original f uniformly by compactly supported Lipschitz
+functions supported in a fixed slightly larger cube. One explicit
+approximation is multilinear interpolation on finer cubical meshes
+of a compactly supported uniformly continuous f, with zero exterior
+values; its error is bounded by ωf of the mesh diameter and its
+support stays in that larger cube. Bound both measure-evaluation
+errors by the uniform error times (SM7.2) or νdk of that cube. First
+take j→∞ for the fixed approximant and then let its error tend to
+zero. This proves simultaneously, for this same deterministic
+connection sequence and all original compact continuous tests,
+
+\[
+ \boxed{\mathcal W_j^{dk}(\mathcal A_j[\nu])\longrightarrow\nu_{dk}
+ \text{ vaguely for all }d<k.}
+\tag{SM7.3}
+\]
+
+In particular a\_jC\_f,j→∑d<kνdk(f) for every original signed f. No
+absolute continuity of ν or lower density of a target component is
+required. The floor vanishes locally in the limit and the complete
+cutoff contribution lies outside each fixed test support eventually.
+
+\subsection*{SM8. Borel construction and joint laws and moments}
+
+Give positive Radon measures their vague Borel structure, and smooth
+connections the C\textasciicircum{}∞ local topology. For fixed r, ν→ρdk,r is continuous
+in C\textasciicircum{}∞ on every compact set. To prove this, each derivative evaluated
+at a fixed x is a vague integral of a compactly supported smooth test.
+For x in a fixed compact set, all such kernels have a common compact
+support. Vaguely convergent positive measures have uniformly bounded
+mass there: choose a continuous compact test at least one on that
+set and use convergence of its integrals. One more derivative of η
+then gives a uniform modulus of continuity of the derivative kernels
+in x. A finite covering transfers pointwise convergence to uniform
+convergence. This argument applies to every derivative order.
+
+The strictly positive floor allows the smooth functions in (SM2.2)
+to be differentiated and composed continuously on each compact set;
+there is a fixed lower denominator εr. Multiplication by χr gives a
+continuous map to the fixed compactly supported template Ar.
+Each mass νdk(K\_(2r+2)) is Borel: continuous compact functions
+decreasing to the indicator of that compact cube give it as the
+decreasing limit of their integrals. Thus Sr and all bounds and
+ceilings in (SM6.2) are Borel. Recursion gives Borel Jr, and the
+finite event \{r(j)=r\} is \{Jr≤j<Jr+1\}. On each such event Aj is the
+corresponding fixed-stage Borel map, multiplied by the deterministic
+tj. Hence ν→Aj[ν] is Borel for every j. The exact edge holonomy is
+continuous on a fixed finite edge union by the unitary integral
+bound; therefore ν→HoljAj[ν] and ν→Wj(Aj[ν]) are Borel as well.
+
+Let P be any probability law of a triple of locally finite positive
+Radon measures. Applying these Borel maps defines genuine finite
+connection and link laws. SM7.3 holds for every input, so for every
+finite list of original compact tests and orientations their complete
+joint observation vector converges almost surely. Consequently every
+bounded continuous function of that vector has convergent expectation,
+by its pointwise convergence and boundedness. This transfers the full
+finite-dimensional limiting law without a local moment assumption.
+
+For joint moments of total degree q, it is enough that for every
+required compact cube
+
+\[
+ \mathbb E_P\left(1+\sum_{d<k}\nu_{dk}(K_{s+2})\right)^q<\infty.
+\tag{SM8.1}
+\]
+
+Indeed (SM7.2) bounds each compact test evaluation by its original
+supremum norm times the displayed local mass plus a fixed constant.
+The absolute product of q such evaluations is bounded by a constant
+times the integrable quantity in (SM8.1). Dominated convergence yields
+
+\[
+ \boxed{\lim_j\mathbb E_P\prod_{v=1}^q
+  \mathcal W_j^{d_vk_v}(\mathcal A_j[\nu])(f_v)
+ =\mathbb E_P\prod_{v=1}^q\nu_{d_vk_v}(f_v).}
+\tag{SM8.2}
+\]
+
+All cross-orientation correlations and signed tests remain inside the
+same product; independent sampling of components is not imposed.
+Laws with deterministically bounded mass on each compact cube satisfy
+every such finite moment assumption. They also permit a common
+nonrandom schedule, obtained in SM3–SM6 by replacing Sr with its
+deterministic bound. The Borel schedule above already proves the
+stronger local-moment result. These limiting-observation laws are
+not asserted to equal the original finite quantum vacuum laws.
+
+\subsection*{SM9. Complete static curvature and source}
+
+Fix one output j and its stage r, write b\_i=χrλi,r and t=tj only in
+this section, and retain the full connection B\_i=t b\_iTi. For k≠i,
+
+\[
+ F_{ki}^B=t[(\partial_kb_i)T_i-(\partial_ib_k)T_k]
+                       +t^2b_kb_i[T_k,T_i].
+\tag{SM9.1}
+\]
+
+Its three colour terms are mutually orthogonal. Thus the full
+magnetic norm, including all cutoff derivatives, is
+
+\[
+ |F_{ki}^B|^2=t^2[(\partial_kb_i)^2+(\partial_ib_k)^2]+t^4b_k^2b_i^2.
+\tag{SM9.2}
+\]
+
+The cross term of order t³ is exactly zero because the commutator
+colour is orthogonal to Ti and Tk, not because a derivative term was
+discarded. For Minkowski metric (−,+,+,+), temporal gauge B₀=0 and
+static B, the time source is zero and the complete spatial source is
+
+\[
+ J_i:=\sum_kD_k^BF_{ki}^B
+ =t\sum_{k\ne i}[(\partial_k^2b_i)T_i-(\partial_k\partial_ib_k)T_k]
+\]
+\[
+ \hspace{8mm}+t^2\sum_{k\ne i}
+   [b_i\partial_kb_k+2b_k\partial_kb_i][T_k,T_i]
+       -t^3b_i\sum_{k\ne i}b_k^2T_i.
+\tag{SM9.3}
+\]
+
+Differentiate (SM9.1), then add [t bkTk,Fki]. Its derivative-bracket
+contribution is t²bk∂kbi[Tk,Ti], and its twice-bracket contribution is
+−t³bk²biTi because [Tk,[Tk,Ti]]=−Ti. Combining these with the
+derivative of the commutator proves every coefficient in (SM9.3).
+Every derivative of b retains
+
+\[
+ \partial_sb_i=(\partial_s\chi_r)\lambda_i+\chi_r\partial_s\lambda_i,
+\]
+\[
+ \partial_s\partial_vb_i=(\partial_s\partial_v\chi_r)\lambda_i
+ +(\partial_s\chi_r)\partial_v\lambda_i
+ +(\partial_v\chi_r)\partial_s\lambda_i
+ +\chi_r\partial_s\partial_v\lambda_i.
+\tag{SM9.4}
+\]
+
+The exact second lambda derivative is obtained by writing the
+logarithmic sum Li=logρa+logρb−logρc from SM3.4:
+∂s∂vλi=λi[(∂sLi)(∂vLi)/16+∂s∂vLi/4], where
+∂s∂vlogρ=(∂s∂vρ)/ρ−(∂sρ)(∂vρ)/ρ². This preserves each minus
+sign and denominator and completes the source in the original
+measure data and fixed smoothing/cutoff functions.
+
+In particular the full quadratic coefficient is
+
+\[
+ b_i\partial_kb_k+2b_k\partial_kb_i
+ =3\chi_r(\partial_k\chi_r)\lambda_i\lambda_k
+ +\chi_r^2(\lambda_i\partial_k\lambda_k
+                         +2\lambda_k\partial_k\lambda_i),
+\tag{SM9.5}
+\]
+
+and the cubic coefficient is χr³λi∑k≠iλk². These retain all mixed
+cutoff factors. With B₀,r=Lλ,r and
+B₁,r=Lλ,r(cχr+3R₁,r/(4εr)), the orthogonality of the colour
+components in each degree and the triangle inequality give
+
+\[
+ |J_i|\le\sqrt6\,tB_{2,r}
+             +3\sqrt2\,t^2B_{0,r}B_{1,r}
+             +2t^3B_{0,r}^3.
+\tag{SM9.6}
+\]
+
+For the first degree, the Ti coefficient is a sum of two second
+derivatives and the other two coefficients are single second
+derivatives, so its square is bounded by (4+1+1)B₂². The second
+degree has two orthogonal commutator colours, each bounded by
+3B₀B₁. The third degree is the sum of two coefficients B₀³ in
+the Ti direction. This proves (SM9.6) including its constants.
+
+Each B and J is smooth and compactly supported. The geometric
+magnetic energy (1/2)∫∑i<k|Fik|² is finite at each j by (SM9.2).
+No bound uniform in j follows from this statement. Zero initial
+electric field satisfies Gauss exactly; the source-free equation
+would require initial acceleration ∂₀²Ai=Ji. The static connection
+is not made source free by its observable realization.
+
+If a current is defined using the convention D\textasciicircum{}μFμi=g\_j²j\_i,
+the exact static current is j\_i=2J\_i/(κ*a\_j), with j₀=0.
+This defines that classical current from the calculated source and
+the original coupling; it does not assert a quantum current law.
+
+\subsection*{SM10. An explicit next dynamical map with exact Gauss constraint}
+
+The receiving source defines a concrete next smooth connection.
+Keep physical x⁰=c tphysical, put s=x⁰, and set
+
+\[
+ C_i=J_i/2,\qquad
+ \widehat A_0=0,\quad \widehat A_i(s,x)=B_i(x)+s^2C_i(x).
+\tag{SM10.1}
+\]
+
+This polynomial-time connection is globally smooth and compactly
+supported in space at each time. It preserves the original zero-time
+holonomy and every receiving measure already proved. Its electric
+field is F̂0i=2sCi=sJi.
+
+For any smooth B, its source obeys the exact covariant identity
+
+\[
+ \sum_iD_i^BJ_i=\sum_{i,k}D_i^BD_k^BF_{ki}^B
+ =\frac12\sum_{i,k}[D_i^B,D_k^B]F_{ki}^B
+ =\frac12\sum_{i,k}[F_{ik}^B,F_{ki}^B]=0.
+\tag{SM10.2}
+\]
+
+The middle identity follows by interchanging i,k and using
+Fik=−Fki. The derivative commutator is [Di,Dk]X=[Fik,X], obtained
+by expanding both derivatives and using the Jacobi identity for
+matrix commutators. Each final bracket is zero since its two inputs
+are negatives. Therefore, at every real s,
+
+\[
+ \sum_iD_i^{\widehat A}\widehat F_{0i}
+ =s\sum_iD_i^BJ_i+\frac{s^3}{2}\sum_i[J_i,J_i]=0.
+\tag{SM10.3}
+\]
+
+This proves the complete Gauss equation for the explicit extension,
+not only at its initial time. It does not imply the spatial equations.
+To calculate those, define without deleting any coefficient
+
+\[
+ G_{ki}=D_k^BC_i-D_i^BC_k,\qquad H_{ki}=[C_k,C_i],\qquad
+ \widehat F_{ki}=F_{ki}^B+s^2G_{ki}+s^4H_{ki}.
+\]
+\[
+ R_{2,i}=\sum_k(D_k^BG_{ki}+[C_k,F_{ki}^B]),\quad
+ R_{4,i}=\sum_k(D_k^BH_{ki}+[C_k,G_{ki}]),\quad
+ R_{6,i}=\sum_k[C_k,H_{ki}].
+\tag{SM10.4}
+\]
+
+Since Dk\textasciicircum{}Â=Dk\textasciicircum{}B+s²[Ck,·] and −∂₀²Âi=−2Ci=−Ji, direct
+multiplication gives the full residual
+
+\[
+ \boxed{D^\mu\widehat F_{\mu i}
+                  =s^2R_{2,i}+s^4R_{4,i}+s^6R_{6,i},\qquad
+ D^\mu\widehat F_{\mu0}=0.}
+\tag{SM10.5}
+\]
+
+Thus the original spatial equation holds exactly at s=0 with its
+required acceleration; the displayed higher source remains for later
+times. There is no assumed PDE solution or assumed long-time limit.
+All times here are the original x⁰=c tphysical, with no hidden
+regulator-dependent time change.
+
+In physical time, ∂²A\_i/∂tphysical² at zero is c²J\_i. The current
+in the preceding coupling convention is exactly
+2(s²R₂,i+s⁴R₄,i+s⁶R₆,i)/(κ*a\_j), with zero time component.
+Thus the time, length and coupling factors remain explicit in the
+continuation as well as in its initial source.
+
+There is also a checked energy consequence at the initial time. Let
+
+Egeom(s)=(1/2)∫∑i|F̂0i|²+(1/2)∫∑i<k|F̂ik|².
+
+Compact spatial
+support permits integration by parts. The magnetic first variation
+in a direction V is
+∑i<k∫<Fik,DiVk−DkVi>=−∑i∫<Ji,Vi>, because the invariant inner
+product makes ad(Bi) skew adjoint. At s=0, Â′=0 and Â″=J, so
+
+\[
+\begin{gathered}
+E_{\rm electric}'(0)=E_{\rm magnetic}'(0)=0,\qquad
+\\
+ E_{\rm electric}''(0)=\sum_i\int|J_i|^2,
+\\
+ \quad E_{\rm magnetic}''(0)=-\sum_i\int|J_i|^2,
+ \quad E_{\rm geom}''(0)=0.
+\end{gathered}\tag{SM10.6}
+\]
+
+This is the exact next kinetic/magnetic balance for the constructed
+connection. Its remaining dynamical source is still (SM10.5).
+
+The same calculation gives the entire energy polynomial, a further
+quantity determined by that source. Put
+\(\langle X,Y\rangle_{\Sigma}=\sum_{i<k}\int\langle X_{ik},Y_{ik}\rangle\)
+and \(\|X\|_\Sigma^2=\langle X,X\rangle_\Sigma\). Expansion of the
+complete curvature square in (SM10.4), followed by
+⟨FB,G⟩Σ=−∑i∫⟨Ji,Ci⟩=−(1/2)∑i∫|Ji|², proves
+
+\[
+ E_{\rm geom}(s)=E_{\rm geom}(0)
+ +\frac{s^4}{2}\big(\|G\|_\Sigma^2+2\langle F^B,H\rangle_\Sigma\big)
+ +s^6\langle G,H\rangle_\Sigma+\frac{s^8}{2}\|H\|_\Sigma^2.
+\tag{SM10.7}
+\]
+
+Every integral is finite because the coefficients are compactly
+supported. Equivalently, differentiation and integration by parts
+give E′geom=∑i∫⟨Â′i,Â″i−∑kDkFki⟩. Using (SM10.5) and Â′=sJ
+therefore yields the exact source-work identity
+
+\[
+ E_{\rm geom}(s)-E_{\rm geom}(0)
+ =-\frac{s^4}{4}\sum_i\int\langle J_i,R_{2,i}\rangle
+  -\frac{s^6}{6}\sum_i\int\langle J_i,R_{4,i}\rangle
+  -\frac{s^8}{8}\sum_i\int\langle J_i,R_{6,i}\rangle.
+\tag{SM10.8}
+\]
+
+This comparison proves, in particular,
+∑i∫⟨Ji,R6,i⟩=−4||H||Σ²≤0 and identifies every other coefficient
+by equating the displayed powers. No conservation at later times
+is inferred from the exact cancellation at the initial time.
+
+This extension is itself an exact measurable receiving map in
+space-time. For any smooth spatial B define I(B) by (SM10.1), using
+its full source J(B). Spatial derivatives and matrix products make
+B↦J(B) continuous in the C∞ local topology. Multiplication by s²
+therefore makes I continuous into the C∞ local topology on original
+ℝ×ℝ³. Evaluation at s=0 obeys ev₀∘I=id, so I is an injective
+section of that evaluation on its image. Composing it with the
+Borel map ν↦Aj[ν] from SM8 gives Borel laws of globally smooth
+space-time connections satisfying the exact Gauss identity at every
+time and the spatial equation at zero, with (SM10.5) as their full
+later source. No choice of a PDE solution enters this map.
+
+For a time-independent smooth gauge h, this section also obeys
+I(B\textasciicircum{}h)=I(B)\textasciicircum{}h. Indeed expanding the derivative gives
+Dk\textasciicircum{}\{B\textasciicircum{}h\}(hXh⁻¹)=h(Dk\textasciicircum{}BX)h⁻¹, and HC5 gives F\textasciicircum{}\{B\textasciicircum{}h\}=hFBh⁻¹.
+Thus J(B\textasciicircum{}h)=hJ(B)h⁻¹; substituting in B\textasciicircum{}h+s²J(B\textasciicircum{}h)/2 proves
+the stated identity, including the original term −(dh)h⁻¹ in
+B\textasciicircum{}h. The section is defined on all smooth spatial B for this
+identity; compact support is used only for the finite energy claims.
+
+\subsection*{SM11. Receiving scope and subsequent calculation}
+
+SM1–SM8 prove the full deterministic and measurable receiving map,
+including arbitrary singular input measures and exact joint-moment
+transfer under local moment bounds. They match the limiting spatial
+measure observables; no finite-regulator vacuum density has been
+replaced. SM9–SM10 identify the source and construct an explicit
+globally smooth continuation that satisfies Gauss for every time and
+the spatial equation at its initial time, with its full subsequent
+source polynomial visible. The companion \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_MEASURE_EVOLUTION.md}{GM1–GM28} now constructs source-free global evolution from these data, with exact energy, time and probability maps. Quantum reconstruction remains to be established.
+
+The next dynamical object is now the concrete triple R2,R4,R6 and its
+dependence on the original measure smoothing and diagonal schedule.
+Those terms, together with the actual law being received, determine
+what must be calculated next. Their presence does not invalidate or
+alter the already proved spatial receiving map.
+
+\subsection*{SM12. Exact illustration, reproducible checks and source locators}
+
+The \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_MEASURE_RECEIVER.png}{measure figure} and its vector counterpart
+are generated by the \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/check_smooth_measure.py}{reproducible script}. They use original physical
+coordinates o=0, ell=9/10, σ*=1/50 and the exact input triple
+
+\[
+ \nu_{12}=\delta_{(-1/4,0,0)},\qquad
+ \nu_{13}=\frac32\delta_{(1/4,0,0)},\qquad
+ \nu_{23}=\frac3{10}\,dx,
+ \qquad f(x)=\prod_{i=1}^3(1-|x_i|/(3/5))_+.
+\tag{SM12.1}
+\]
+
+Its target observations are 7/12, 7/8 and 81/1250 respectively:
+evaluation at either atom gives 1−(1/4)/(3/5)=7/12, the second
+measure multiplies this by 3/2, and the integral of each one-dimensional
+tent is 3/5, so (3/10)∫f=(3/10)(3/5)³=81/1250.
+
+For full reproducibility set
+β(u)=Z⁻¹exp(−1/(1−u²))1\{|u|<1\}, with its actual integral
+
+Z=∫₋₁¹exp(−1/(1−u²))du retained, and η(u)=∏iβ(ui).
+For this figure choose χ(x)=∏iθ(xi), where θ(v)=1 for |v|≤1,
+θ(v)=0 for |v|≥2, and
+θ(v)=∫\_\{2|v|−3\}¹β(u)du for 1<|v|<2. Endpoint flatness of β
+proves that θ is smooth and that this χ has exactly the support and
+unit region in SM3. Since the test support lies in K₁, χr=1 on
+that support at every illustrated stage.
+
+The density slice in the upper left of the figure is exactly
+h⁻³β((x+1/4)/h)β(0)²+ε for orientation 12 and
+(3/2)h⁻³β((x−1/4)/h)β(0)²+ε for orientation 13; orientation 23
+has the constant density 3/10+ε. Here h=ell/r and ε=σ*/r.
+The upper right shows λ1 and λ3 obtained by substituting these
+three densities into the original formula (SM2.2); λ2 is determined
+by that same displayed formula. Those are slices of smooth
+three-dimensional fields, not one-dimensional replacement measures.
+
+For an atom at (v,0,0), the exact integral in the lower left is
+
+\[
+ \left[\int_{-1}^{1}\beta(u)(1-|v+h_ru|/(3/5))_+\,du\right]
+ \left[\int_{-1}^{1}\beta(u)(1-|h_ru|/(3/5))_+\,du\right]^2
+ +\varepsilon_r(3/5)^3.
+\tag{SM12.2}
+\]
+
+For orientation 13 the atomic product is multiplied by 3/2 and the
+floor remains as displayed. For orientation 23 the answer is
+(3/10+εr)(3/5)³. Fubini and the product kernel prove these formulas.
+The script evaluates these one-dimensional integrals by bounded
+quadrature; the dotted lines show the exact limits from (SM12.1).
+These are stage-density integrals. Their transfer to the original
+Wilson faces is proved by the finite bound SM5.3 and schedule SM6,
+not inferred from the numerical plot.
+
+The lower-right schedule uses rigorous conservative constants
+C₀=512, C₁=8192, Cχ=32. To prove them, the interval [−1/2,1/2]
+gives Z≥exp(−4/3)>exp(−2)>1/8. The last inequality follows from
+e²<8: the exponential series through degree four sums to 7 and
+its remaining terms sum to at most (2⁵/5!)/(1−1/3)=2/5.
+Thus 0≤β≤8. For t=1/(1−u²), the derivative of the unscaled bump
+has magnitude at most 2t²e⁻ᵗ≤8, so |β′|≤64. The product formula
+gives η≤8³=512 and |∇η|≤4096√3<8192. Finally |θ′|≤16, hence
+The gradient satisfies \(|\nabla\chi|\le16\sqrt3<32\). All constants used in this schedule are therefore
+proved upper bounds for the actual smooth functions.
+
+The figure deliberately uses a larger sufficient integer schedule
+to allow exact rational checks. With ell=9/10, replace Lλ by
+(5/3) times the least integer N with N⁴≥R₀²/ε; this is an upper
+bound because √2 ell⁻³/⁴≤(3/2)(10/9)=5/3. Use that bound in M,L;
+replace positive fractional powers of ell in each β by 1, and
+replace √3/2 by 1. Call the resulting rational upper coefficients
+β̄v. Set Tv=max(1,ceil(6Vrβ̄v/τr)). Choosing j at least every Tv⁴
+gives j\textasciicircum{}αv≥j¹/⁴≥Tv for all αv≥1/4, so every error term is at
+most τr/6 even before the retained factor 100 in a\_j=(100j)⁻¹.
+Take also the increasing-index and geometric maxima from SM6,
+with ceil(100(2r+3)ell) as a larger geometric choice. The script
+checks each term exactly by the equivalent rational inequality
+(6Vrβ̄v/τr)\textasciicircum{}q a\_j\textasciicircum{}p≤1 for αv=p/q. The plotted logarithms are
+numerical displays of these certified integers; practical lattice
+sizes are not asserted.
+
+The bounded checks comprise 23 exact symbolic identities for the
+full error polynomial and quadratic-time curvature/Gauss/source,
+48 exact rational schedule inequalities for r=1,…,8, and 64
+positive-octant factorization samples. The independent AA1–AA20
+contribution provides 89 further exact symbolic identities for all
+amplitude derivatives, cutoff terms, static source and curvature
+squares. These checks supplement the full proofs above. The
+symbolic time test uses three explicitly recorded affine amplitudes
+only to test the local algebra; compact support and energy identities
+are established by SM3 and SM9–SM10, not by that probe.
+
+The complete source map is recorded in `SMOOTH\_GLOBAL\_SOURCE\_USE\_LEDGER.json`.
+HC1–HC4 fix the original metric, lattice and holonomy; HC14–HC16
+provide the finite estimate rederived in SM4; HCR1 proves the gauge
+notation dictionary and HCR2 its compact-local estimate domain;
+AA1–AA20 independently derive the factorization, source and diagonal
+domain obstruction. Their retained full source files accompany this
+derivation. Existing corpus routing was inspected before this
+derivation; no unread external theorem or novelty assertion is used.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{SMOOTH_MEASURE_RECEIVER.png}\caption{Exact smooth factors and original measure receiving schedule}\end{figure}
+
+\subsection*{Global source-free evolution of the measure-realizing data}
+
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_MEASURE_EVOLUTION.md}{GM1–GM28} apply Sung-Jin Oh's global Cauchy theorem to the exact smooth compact data, construct continuous solution laws from the actual central spatial measure, and prove their zero-time Wilson and energy receiving maps. The complete time expansion, a strict electric-field stationarity defect, and time averages with an explicit invariance error are calculated. The exact virial proves that any stationary probability on conserved finite-total-energy smooth trajectories is supported on flat fields, without an energy-moment assumption. Its receiving space must therefore be enlarged to allow infinite total energy for a nonflat stationary classical law. Quantum reconstruction and the actual low-window coefficients remain to be established.
+\endgroup
+\clearpage
+\begingroup\ifPDFTeX\else\IfFontExistsTF{Cambria}{\fontspec{Cambria}}{\IfFontExistsTF{DejaVu Sans}{\fontspec{DejaVu Sans}}{}}\fi
+\section*{Positive orientation densities, smooth amplitudes, and the complete Yang–Mills source}
+
+This calculation supplies the amplitude part of the smooth measure realization. The input here is a triple of strictly positive smooth functions; the receiving construction supplies their approximation to the intended measures. All assertions below are proved directly. No novelty claim, global evolution theorem, or identification with a vacuum probability law is made.
+
+\subsection*{1. Coordinates, Lie algebra, and the exact inverse map}
+
+Retain the HC1–HC21 conventions. The spatial coordinates are the original coordinates of \(\mathbb R^3\), \(\ell>0\) is the original reference length, and
+\[
+T_i=-\frac{i\sigma_i}{2},\qquad
+[T_i,T_k]=\sum_{r=1}^3\varepsilon_{ikr}T_r,\qquad
+-2\operatorname{Tr}(T_iT_k)=\delta_{ik},\qquad
+|X|^2=-2\operatorname{Tr}(X^2).
+\tag{AA1}
+\]
+Thus \(|T_i|=1\) and \(\|vT_i\|_{\mathrm{op}}=|v|/2\) for real \(v\). Let \(U\subset\mathbb R^3\) be open, and let \(\rho_{12},\rho_{13},\rho_{23}:U\to(0,\infty)\) be smooth. The unique positive solution of all three equations
+\[
+\frac{\ell^3}{4}\lambda_1^2\lambda_2^2=\rho_{12},\qquad
+\frac{\ell^3}{4}\lambda_1^2\lambda_3^2=\rho_{13},\qquad
+\frac{\ell^3}{4}\lambda_2^2\lambda_3^2=\rho_{23}
+\tag{AA2}
+\]
+is
+\[
+\begin{aligned}
+\lambda_1^2&=\frac{2}{\ell^{3/2}}
+          \sqrt{\frac{\rho_{12}\rho_{13}}{\rho_{23}}},&
+\lambda_1&=\frac{\sqrt2}{\ell^{3/4}}
+          \left(\frac{\rho_{12}\rho_{13}}{\rho_{23}}\right)^{1/4},\\
+\lambda_2^2&=\frac{2}{\ell^{3/2}}
+          \sqrt{\frac{\rho_{12}\rho_{23}}{\rho_{13}}},&
+\lambda_2&=\frac{\sqrt2}{\ell^{3/4}}
+          \left(\frac{\rho_{12}\rho_{23}}{\rho_{13}}\right)^{1/4},\\
+\lambda_3^2&=\frac{2}{\ell^{3/2}}
+          \sqrt{\frac{\rho_{13}\rho_{23}}{\rho_{12}}},&
+\lambda_3&=\frac{\sqrt2}{\ell^{3/4}}
+          \left(\frac{\rho_{13}\rho_{23}}{\rho_{12}}\right)^{1/4}.
+\end{aligned}\tag{AA3}
+\]
+For example, multiplication of the first two equations of AA2 and division by the third gives \((\ell^3/4)\lambda_1^4=\rho_{12}\rho_{13}/\rho_{23}\). The positive fourth root gives AA3 with its displayed factor. The same operations for the other two coordinates give their formulas. Conversely, substituting AA3 in each product gives exactly AA2. The positive fourth-root function is smooth on \((0,\infty)\), so these amplitudes are smooth on \(U\). This also proves that the map from the positive amplitude octant to the positive density octant in AA2 is a smooth bijection with smooth inverse. If arbitrary nonzero real amplitudes are permitted, their independent signs are additional data and the positive branch is one specific section.
+
+\subsection*{2. Every first and second derivative}
+
+Write \(\mathcal E=(12,13,23)\), and retain the full sign table
+\[
+(s_{1,e})_{e\in\mathcal E}=(1,1,-1),\qquad
+(s_{2,e})_{e\in\mathcal E}=(1,-1,1),\qquad
+(s_{3,e})_{e\in\mathcal E}=(-1,1,1).
+\]
+For spatial indices \(r,s\in\{1,2,3\}\), define the following auxiliary expressions in the original density functions:
+\[
+Q_{i,r}=\sum_{e\in\mathcal E}s_{i,e}\frac{\partial_r\rho_e}{\rho_e},\qquad
+H_{i,rs}=\sum_{e\in\mathcal E}s_{i,e}
+ \left(\frac{\partial_r\partial_s\rho_e}{\rho_e}
+ -\frac{(\partial_r\rho_e)(\partial_s\rho_e)}{\rho_e^2}\right).
+\]
+The exact derivative identities, with no omitted summand, are
+\[
+\begin{aligned}
+\partial_r\lambda_i
+ &=\frac{\lambda_i}{4}\sum_{e\in\mathcal E}
+              s_{i,e}\frac{\partial_r\rho_e}{\rho_e}
+ =\frac{\lambda_i}{4}Q_{i,r},\\
+\partial_r\partial_s\lambda_i
+ &=\frac{\lambda_i}{16}
+       \left(\sum_{e\in\mathcal E}s_{i,e}
+                  \frac{\partial_r\rho_e}{\rho_e}\right)
+       \left(\sum_{e\in\mathcal E}s_{i,e}
+                  \frac{\partial_s\rho_e}{\rho_e}\right)\\
+ &\quad+\frac{\lambda_i}{4}\sum_{e\in\mathcal E}s_{i,e}
+       \left(\frac{\partial_r\partial_s\rho_e}{\rho_e}
+          -\frac{(\partial_r\rho_e)(\partial_s\rho_e)}{\rho_e^2}\right)
+ =\lambda_i\left(\frac{Q_{i,r}Q_{i,s}}{16}
+                         +\frac{H_{i,rs}}4\right).
+\end{aligned}\tag{AA4}
+\]
+Indeed, taking the logarithm of the positive formula AA3 gives the constant \(\log(\sqrt2\ell^{-3/4})\) plus \(\frac14\sum_e s_{i,e}\log\rho_e\). Differentiation gives the first line. Differentiating that line and using the quotient rule gives the second line, including the product term and the sign of each inverse-density term. This argument uses the logarithm only to prove an identity for the original amplitudes; it does not replace them as the connection input.
+
+Fix a compact \(K\subset U\) and define actual finite bounds
+\[
+\begin{gathered}
+m=\min_{x\in K,e\in\mathcal E}\rho_e(x)>0,\qquad
+R=\max_{x\in K,e\in\mathcal E}\rho_e(x),\\
+G=\max_{x\in K,e,r}|\partial_r\rho_e(x)|,\qquad
+H=\max_{x\in K,e,r,s}|\partial_r\partial_s\rho_e(x)|,\\
+B=\frac{\sqrt2}{\ell^{3/4}}\left(\frac{R^2}{m}\right)^{1/4},\qquad
+B^{(1)}=\frac{3B G}{4m},\qquad
+B^{(2)}=B\left(\frac{3H}{4m}+\frac{21G^2}{16m^2}\right).
+\end{gathered}
+\]
+Then, for every displayed index and every \(x\in K\),
+\[
+\frac{\sqrt2}{\ell^{3/4}}\left(\frac{m^2}{R}\right)^{1/4}
+\le\lambda_i(x)\le B,\qquad
+|\partial_r\lambda_i(x)|\le B^{(1)},\qquad
+|\partial_r\partial_s\lambda_i(x)|\le B^{(2)}.
+\tag{AA5}
+\]
+The two amplitude bounds follow immediately from AA3 by bounding each of its three density factors separately. In AA4, \(|Q_{i,r}|\le3G/m\), and
+\(|H_{i,rs}|\le3H/m+3G^2/m^2\). Thus the Hessian is bounded by
+\(B(9G^2/(16m^2)+3H/(4m)+3G^2/(4m^2))\), which is the exact stated constant \(21/16\). In particular these bounds expose, rather than discard, the cost of a density approaching zero.
+
+\subsection*{3. A common cutoff and the unchanged amplitude}
+
+Let \(\chi\in C_c^\infty(U)\) satisfy \(0\le\chi\le1\), and let \(K\) contain its support. Define
+\[
+b_i=\chi\lambda_i,\qquad A_i=b_iT_i,\qquad
+A=\sum_{i=1}^3 A_i\,dx^i,
+\]
+and extend every \(b_i\) by zero to \(\mathbb R^3\). The extension is smooth: every point outside \(U\) has a neighborhood disjoint from the compact set \(\operatorname{supp}\chi\), on which the extension is identically zero. All three coefficients remain present. The product rule gives, on \(U\),
+\[
+\begin{aligned}
+\partial_r b_i
+ &= (\partial_r\chi)\lambda_i+\chi\partial_r\lambda_i,\\
+\partial_r\partial_s b_i
+ &= (\partial_r\partial_s\chi)\lambda_i
+ +(\partial_r\chi)(\partial_s\lambda_i)
+ +(\partial_s\chi)(\partial_r\lambda_i)
+ +\chi\partial_r\partial_s\lambda_i.
+\end{aligned}\tag{AA6}
+\]
+Put \(C_0=\sup|\chi|\), \(C_1=\max_r\sup|\partial_r\chi|\), \(C_2=\max_{r,s}\sup|\partial_r\partial_s\chi|\). AA5–AA6 give global bounds
+\[
+\begin{gathered}
+B_0=C_0B,\quad B_1=C_1B+C_0B^{(1)},\quad
+B_2=C_2B+2C_1B^{(1)}+C_0B^{(2)},\\
+|b_i|\le B_0,\quad |\partial_r b_i|\le B_1,\quad
+|\partial_r\partial_s b_i|\le B_2,\\
+M_A:=\max_i\sup\|A_i\|_{\mathrm{op}}\le B_0/2,\qquad
+L_A:=\max_{i,r}\sup\|\partial_r A_i\|_{\mathrm{op}}\le B_1/2.
+\end{gathered}\tag{AA7}
+\]
+These are the exact types of coefficient bounds used in HC14–HC15, with the factor \(1/2\) required by HC1. No compactness bound uniform in a measure-approximation index is asserted by AA7; the displayed constants must be retained for every input triple.
+
+For every original regulator keep
+\[
+a_j=\frac1{100j},\qquad
+t_j=\left(\frac\ell{a_j}\right)^{3/4},\qquad
+\delta_j=a_jt_j=\ell^{3/4}a_j^{1/4},\qquad
+\mathcal A_i^{(j)}=t_j b_iT_i.
+\tag{AA8}
+\]
+The connection input is exactly the HC13 input with the newly constructed smooth \(A\); no lattice, coordinate, coupling, or observable is replaced.
+
+\subsection*{4. Full curvature and each orientation density}
+
+For \(k\ne i\), the curvature of AA8 is
+\[
+\begin{aligned}
+\mathcal F_{ki}^{(j)}
+ &=t_j\left[((\partial_k\chi)\lambda_i+\chi\partial_k\lambda_i)T_i
+        -((\partial_i\chi)\lambda_k+\chi\partial_i\lambda_k)T_k\right]\\
+ &\quad+t_j^2\chi^2\lambda_k\lambda_i
+                 \sum_r\varepsilon_{kir}T_r.
+\end{aligned}\tag{AA9}
+\]
+For \(k=i\) it is exactly zero. This follows by substituting \(t_j A\) in \(\partial_k\mathcal A_i-\partial_i\mathcal A_k+[\mathcal A_k,\mathcal A_i]\), since \(t_j\) is spatially constant. AA1 gives pairwise orthogonality of the two derivative colours and the third commutator colour. Consequently its complete square is
+\[
+\begin{aligned}
+|\mathcal F_{ki}^{(j)}|^2
+ &=t_j^2\left[(\partial_k\chi)^2\lambda_i^2
+       +2\chi(\partial_k\chi)\lambda_i\partial_k\lambda_i
+       +\chi^2(\partial_k\lambda_i)^2\right]\\
+ &\quad+t_j^2\left[(\partial_i\chi)^2\lambda_k^2
+       +2\chi(\partial_i\chi)\lambda_k\partial_i\lambda_k
+       +\chi^2(\partial_i\lambda_k)^2\right]
+       +t_j^4\chi^4\lambda_k^2\lambda_i^2.
+\end{aligned}\tag{AA10}
+\]
+There is no cubic-in-\(t_j\) term in this square because its corresponding inner products are zero; the two displayed cutoff mixed terms need not vanish. The three commutator densities are individually
+\[
+\frac{\ell^3}{4}|[A_1,A_2]|^2=\chi^4\rho_{12},\qquad
+\frac{\ell^3}{4}|[A_1,A_3]|^2=\chi^4\rho_{13},\qquad
+\frac{\ell^3}{4}|[A_2,A_3]|^2=\chi^4\rho_{23}.
+\tag{AA11}
+\]
+Indeed \([A_i,A_k]=\chi^2\lambda_i\lambda_k[T_i,T_k]\) and \(|[T_i,T_k]|=1\) for \(i\ne k\); insert AA2. The common cutoff thus multiplies every receiving density by precisely its fourth power. On any neighborhood where \(\chi=1\), every orientation density equals its prescribed \(\rho_{ik}\). The derivatives of \(\lambda_i\) generally remain in AA9–AA10 on this neighborhood: a constant cutoff does not make a variable density constant.
+
+\subsection*{5. Exact static Yang–Mills source, including all cutoff terms}
+
+Write physical time as \(t_{\mathrm{phys}}\), so the retained Minkowski coordinate is \(x^0=ct_{\mathrm{phys}}\), with metric \(\operatorname{diag}(-1,1,1,1)\). Extend AA8 statically with \(\mathcal A_0^{(j)}=0\). Let
+\(\mathcal D_\mu=\partial_\mu+[\mathcal A_\mu^{(j)},\cdot]\),
+and define \(\mathcal J_\nu^{(j)}=\mathcal D^\mu\mathcal F_{\mu\nu}^{(j)}\).
+The time component is exactly \(\mathcal J_0^{(j)}=0\). For the spatial components, set
+\[
+P_{ki}=b_i\partial_k b_k+2b_k\partial_k b_i\qquad(k\ne i).
+\]
+The complete source is
+\[
+\begin{aligned}
+\mathcal J_i^{(j)}
+ &=t_j\sum_{k\ne i}\left[(\partial_k^2b_i)T_i
+                                  -(\partial_k\partial_i b_k)T_k\right]\\
+ &\quad+t_j^2\sum_{k\ne i}P_{ki}[T_k,T_i]
+       -t_j^3 b_i\left(\sum_{k\ne i}b_k^2\right)T_i.
+\end{aligned}\tag{AA12}
+\]
+Here every \(b\)-derivative and every \(P\)-coefficient has the full cutoff expansion
+\[
+\begin{aligned}
+\partial_k^2b_i
+ &= (\partial_k^2\chi)\lambda_i
+       +2(\partial_k\chi)(\partial_k\lambda_i)
+       +\chi\partial_k^2\lambda_i,\\
+\partial_k\partial_i b_k
+ &= (\partial_k\partial_i\chi)\lambda_k
+       +(\partial_k\chi)(\partial_i\lambda_k)
+       +(\partial_i\chi)(\partial_k\lambda_k)
+       +\chi\partial_k\partial_i\lambda_k,\\
+P_{ki}
+ &=3\chi(\partial_k\chi)\lambda_i\lambda_k
+       +\chi^2\left[\lambda_i\partial_k\lambda_k
+                        +2\lambda_k\partial_k\lambda_i\right],\\
+b_i\sum_{k\ne i}b_k^2
+ &=\chi^3\lambda_i\sum_{k\ne i}\lambda_k^2.
+\end{aligned}\tag{AA13}
+\]
+Substitution of AA4 in AA13 expresses every term through the original three densities and the common cutoff, including every reciprocal-density factor. Equations AA4 and AA13 are exact formulas, rather than asymptotic errors.
+
+To prove AA12, differentiate the exact curvature before collecting terms:
+\[
+\begin{aligned}
+\sum_k\partial_k\mathcal F_{ki}^{(j)}
+ &=t_j\sum_k\left[(\partial_k^2 b_i)T_i
+                         -(\partial_k\partial_i b_k)T_k\right]\\
+ &\quad+t_j^2\sum_k\left[(\partial_k b_k)b_i
+                          +b_k\partial_k b_i\right][T_k,T_i],\\
+\sum_k[t_jb_kT_k,\mathcal F_{ki}^{(j)}]
+ &=t_j^2\sum_k b_k\partial_k b_i[T_k,T_i]
+       -t_j^2\sum_k b_k\partial_i b_k[T_k,T_k]\\
+ &\quad+t_j^3\sum_k b_k^2b_i[T_k,[T_k,T_i]].
+\end{aligned}
+\]
+The displayed self-commutator is zero. For \(k\ne i\), AA1 gives \([T_k,[T_k,T_i]]=-T_i\): the vector identity \(e_k\times(e_k\times e_i)=-e_i\) is equivalently the contraction of the two displayed Levi-Civita symbols. For \(k=i\), both curvature terms and both derivative terms cancel exactly. Adding the two expressions proves AA12, with the coefficient 2 in \(P_{ki}\) and the negative cubic sign. Expanding its products proves AA13, with one copy and two copies of \(\chi\partial_k\chi\lambda_i\lambda_k\) producing the coefficient 3.
+
+For a direct sign check, retain the linear expression
+\(L_i=\sum_{k\ne i}[(\partial_k^2b_i)T_i-(\partial_k\partial_i b_k)T_k]\).
+All three sources separately are
+\[
+\begin{aligned}
+\mathcal J_1^{(j)}&=t_jL_1+t_j^2(P_{31}T_2-P_{21}T_3)
+                     -t_j^3b_1(b_2^2+b_3^2)T_1,\\
+\mathcal J_2^{(j)}&=t_jL_2+t_j^2(P_{12}T_3-P_{32}T_1)
+                     -t_j^3b_2(b_1^2+b_3^2)T_2,\\
+\mathcal J_3^{(j)}&=t_jL_3+t_j^2(P_{23}T_1-P_{13}T_2)
+                     -t_j^3b_3(b_1^2+b_2^2)T_3.
+\end{aligned}\tag{AA14}
+\]
+The powers \(t_j,t_j^2,t_j^3\) are the original powers in HC18. On a region where both the cutoff and all three amplitudes are constant, only the final terms remain. On a region where only the cutoff is constant, all amplitude derivatives in AA12–AA13 remain.
+
+The derivative bounds yield an explicit global source estimate
+\[
+|\mathcal J_i^{(j)}|
+\le\sqrt6\,t_j B_2+3\sqrt2\,t_j^2B_0B_1+2t_j^3B_0^3,
+\qquad
+\|\mathcal J_i^{(j)}\|_{\mathrm{op}}
+\le\frac12\left(\sqrt6\,t_j B_2+3\sqrt2\,t_j^2B_0B_1+2t_j^3B_0^3\right).
+\tag{AA15}
+\]
+For the linear term, the coefficient along \(T_i\) is a sum of two terms bounded by \(B_2\), and the other two orthogonal coefficients have bounds \(B_2\) each. Its squared norm is at most \(4B_2^2+B_2^2+B_2^2\). The two commutator colours are orthogonal and each coefficient has bound \(3B_0B_1\), giving \(3\sqrt2B_0B_1\). The cubic coefficient has bound \(B_0(B_0^2+B_0^2)\). The triangle inequality between these three full vectors proves the first estimate; AA1 proves the second.
+
+\subsection*{6. Zero-electric data, acceleration, and its exact compatibility}
+
+Specify temporal-gauge initial data, on the original slice \(x^0=0\), by
+\[
+\mathcal A_0^{(j)}=0,\qquad
+\mathcal A_i^{(j)}(0,x)=t_jb_i(x)T_i,\qquad
+\partial_0\mathcal A_i^{(j)}(0,x)=0.
+\tag{AA16}
+\]
+Then \(\mathcal F_{0i}^{(j)}(0,x)=0\) pointwise and all of its spatial derivatives vanish pointwise. The Gauss equation therefore holds exactly:
+\[
+\sum_i\mathcal D_i\mathcal F_{0i}^{(j)}(0,x)=0,
+\qquad
+\mathcal D^\mu\mathcal F_{\mu0}^{(j)}(0,x)
+=-\sum_i\mathcal D_i\mathcal F_{0i}^{(j)}(0,x)=0.
+\tag{AA17}
+\]
+No spatial divergence condition on \(A\) appears in this proof. Since \(g^{00}=-1\), temporal gauge gives
+\[
+\mathcal D^\mu\mathcal F_{\mu i}^{(j)}
+=-\partial_0^2\mathcal A_i^{(j)}
+  +\sum_k\mathcal D_k\mathcal F_{ki}^{(j)}.
+\]
+Hence the exact acceleration required by the source-free Yang–Mills equation at this initial slice is
+\[
+\left.\partial_0^2\mathcal A_i^{(j)}\right|_{x^0=0}
+       =\mathcal J_i^{(j)},\qquad
+\left.\partial_{t_{\mathrm{phys}}}^2\mathcal A_i^{(j)}\right|_{t_{\mathrm{phys}}=0}
+       =c^2\mathcal J_i^{(j)},
+\tag{AA18}
+\]
+with the full AA12–AA14 expression on the right. In particular the constant-core cubic term has negative sign in both acceleration formulas. The factor \(c^2\) follows from \(\partial_{t_{\mathrm{phys}}}=c\partial_0\).
+
+The prescribed acceleration satisfies the exact covariant compatibility identity
+\[
+\sum_i\mathcal D_i\mathcal J_i^{(j)}=0.
+\tag{AA19}
+\]
+Here is the full algebraic proof. For any smooth Lie-algebra-valued \(X\), expansion of the two operators and cancellation of the commuting second derivatives and the single-derivative terms gives
+\[
+[\mathcal D_i,\mathcal D_k]X
+=[\partial_i\mathcal A_k-\partial_k\mathcal A_i
+                  +[\mathcal A_i,\mathcal A_k],X]
+=[\mathcal F_{ik},X].
+\]
+The nested-commutator equality follows by expanding each matrix product, so no further structural hypothesis is used. Since \(\mathcal F_{ki}=-\mathcal F_{ik}\), relabeling the finite double sum gives
+\[
+\begin{aligned}
+\sum_i\mathcal D_i\mathcal J_i
+&=\sum_{i,k}\mathcal D_i\mathcal D_k\mathcal F_{ki}
+=\frac12\sum_{i,k}(\mathcal D_i\mathcal D_k-\mathcal D_k\mathcal D_i)\mathcal F_{ki}\\
+&=\frac12\sum_{i,k}[\mathcal F_{ik},\mathcal F_{ki}]
+=\frac12\sum_{i,k}[\mathcal F_{ik},-\mathcal F_{ik}]=0.
+\end{aligned}
+\]
+At zero electric data, differentiation of Gauss gives
+\(\partial_0\sum_i\mathcal D_i\partial_0\mathcal A_i
+=\sum_i\mathcal D_i\partial_0^2\mathcal A_i
+  +\sum_i[\partial_0\mathcal A_i,\partial_0\mathcal A_i]\).
+Its second sum is zero individually, and AA18–AA19 make its first sum zero. Thus the initial Gauss equation and its first time derivative both hold. These statements concern the exact initial data and temporal second derivatives; they do not assert a global evolution or a regulator-uniform lifespan.
+
+For completeness, a compactly supported diagonal profile of the present form cannot be assumed divergence-free unless it is zero. Indeed,
+\(\sum_i\partial_i A_i=\sum_i(\partial_i b_i)T_i\), and the three basis vectors are independent. Vanishing divergence therefore implies \(\partial_i b_i=0\) for each \(i\). For each fixed pair of other coordinates, \(b_i\) is then constant along the entire \(x^i\)-line and is zero outside a bounded interval by compact support. That constant is zero. This proves the claimed obstruction and identifies exactly the divergence-free subspace within this diagonal compact-support domain: it is \(\{0\}\). Gauss is nevertheless satisfied by every AA16 datum, as AA17 proves. The broader three-colour profile in HC17 uses additional spatial components and is a different explicitly specified domain.
+
+\subsection*{7. Boundary density data and why positive approximations have a cost}
+
+Extend the density map in AA2 to finite nonnegative amplitudes. Its image consists exactly of the positive density octant, the three nonnegative coordinate rays, and the origin. To prove necessity, if two density products are positive, every one of the three amplitudes is positive, so the third product is positive. Thus a triple having exactly two positive coordinates is impossible in this finite diagonal-amplitude domain. If exactly one amplitude is nonzero, every product is zero; if exactly two amplitudes are nonzero, precisely their mutual product is positive. For sufficiency, AA3 treats the positive octant. For a target \((r,0,0)\), \(r>0\), choose
+\(\lambda_1=\lambda_2=(4r/\ell^3)^{1/4}\) and \(\lambda_3=0\); the other two rays follow by the corresponding coordinate choices. All zero amplitudes give the origin. These choices explicitly prove the whole stated image.
+
+For example, approach the excluded triple \((r_{12},r_{13},0)\), with \(r_{12},r_{13}>0\), through \((r_{12},r_{13},\epsilon)\). The exact inverse is
+\[
+\lambda_1=\frac{\sqrt2}{\ell^{3/4}}
+       \left(\frac{r_{12}r_{13}}\epsilon\right)^{1/4},\qquad
+\lambda_2=\frac{\sqrt2}{\ell^{3/4}}
+       \left(\frac{r_{12}\epsilon}{r_{13}}\right)^{1/4},\qquad
+\lambda_3=\frac{\sqrt2}{\ell^{3/4}}
+       \left(\frac{r_{13}\epsilon}{r_{12}}\right)^{1/4}.
+\tag{AA20}
+\]
+For every \(\epsilon>0\), all three density equations hold exactly; as \(\epsilon\downarrow0\), \(\lambda_1\) diverges at its displayed rate while the other two tend to zero. This is the exact morphism approaching the boundary defect, with every product retained. It explains why the measure construction must carry the approximation-dependent bounds AA5 and AA7 into the original holonomy error. It does not impose or select a measure schedule.
+
+\subsection*{Proof and source record}
+
+The receiving conventions were read directly in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9329e5f38fd2175528ba640402e06f45999bf6b6/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_RECEIVING.md}{the complete holonomy-curvature proof}, HC1–HC21, especially HC1, HC13–HC18. The current note supplies every identity it uses from those conventions. The source hash and actual reading scope are recorded in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_GLOBAL_SOURCE_USE_LEDGER.json}{the source-use ledger}; the privately retained disk-index results are routing records and have not been represented as source reading. The exact figure `AMPLITUDE\_FACTOR\_MAP.svg` depicts AA2–AA3 and AA11; it contains no numerical approximation. The independent symbolic checks in `check\_amplitude\_algebra.py` supplement the displayed proofs.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{AMPLITUDE_FACTOR_MAP.png}\caption{Exact inverse density map and complete curvature components}\end{figure}
+
+\subsection*{Global source-free evolution of the measure-realizing data}
+
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_MEASURE_EVOLUTION.md}{GM1–GM28} apply Sung-Jin Oh's global Cauchy theorem to the exact smooth compact data, construct continuous solution laws from the actual central spatial measure, and prove their zero-time Wilson and energy receiving maps. The complete time expansion, a strict electric-field stationarity defect, and time averages with an explicit invariance error are calculated. The exact virial proves that any stationary probability on conserved finite-total-energy smooth trajectories is supported on flat fields, without an energy-moment assumption. Its receiving space must therefore be enlarged to allow infinite total energy for a nonflat stationary classical law. Quantum reconstruction and the actual low-window coefficients remain to be established.
+\endgroup
+\clearpage
+\begingroup\ifPDFTeX\else\IfFontExistsTF{Cambria}{\fontspec{Cambria}}{\IfFontExistsTF{DejaVu Sans}{\fontspec{DejaVu Sans}}{}}\fi
+\section*{Global source-free evolution receiving the actual spatial measure}
+
+The \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_MEASURE_REALIZATION.md}{spatial construction}, SM1–SM12, and its \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/AMPLITUDE_ALGEBRA.md}{amplitude calculation}, AA1–AA20, give smooth compact initial connections for every positive Radon orientation triple. This note applies the established global Yang–Mills Cauchy theorem to those exact connections, constructs the solution law receiving the actual CM spatial measure, and calculates its energy and time derivatives. Every regulator, coupling, holonomy and original observable is retained. The resulting classical probability laws and their exact receiving observables are constructed below; equality with the finite quantum vacuum laws or a reconstructed quantum theory is not asserted.
+
+\subsection*{1. Original data and the global theorem}
+
+Use the original spatial coordinates \(x\), center \(o\), time coordinate \(s=x^0=ct_{\rm phys}\), and Minkowski metric \(\operatorname{diag}(-1,1,1,1)\). Retain
+\[
+\begin{gathered}
+T_i=-i\sigma_i/2,\quad [T_i,T_k]=\varepsilon_{ikq}T_q,\quad
+|X|^2=-2\operatorname{Tr}(X^2),\\
+a_j=(100j)^{-1},\quad L_j=j^4,\quad
+g_j^2=\kappa_*a_j/2,\quad b_j=(\kappa_*a_j^2)^{-1},\quad
+t_j=(\ell/a_j)^{3/4}.
+\end{gathered}\tag{GM1}
+\]
+The symbol \(t_j\) is the original dimensionless amplitude from SM4, not the physical time. Given \(\nu=(\nu_{12},\nu_{13},\nu_{23})\), take exactly the SM2 mollified densities with floor \(\varepsilon_r=\sigma_*/r\), the three AA3 amplitudes, the cutoff \(\chi_r\), and the SM6 schedule. Write
+\[
+B_i^{j,\nu}(x)=t_j b_{i,r(j)}(x)T_i,\qquad
+b_{i,r}=\chi_r\lambda_{i,r},\qquad
+A_i^{j,\nu}(0)=B_i^{j,\nu},\quad E_i^{j,\nu}(0)=0 .
+\tag{GM2}
+\]
+For the specified early indices \(j<J_1\), set \(B=0\) and use the zero solution. Every formula below involving \(r(j)\), and every strict positivity assertion, has domain \(j\ge J_1\). For the finitely many earlier indices the solution law is the point mass at zero and all its field observations vanish; omitting those indices changes none of the limits. All non-early initial data in GM2 are smooth and supported in \(K_{2r(j)}\). Consequently \(B\in H^m\cap L^3\) for every integer \(m\ge0\), and \(B\in\dot H^1\). The initial Gauss expression \(\sum_i(\partial_iE_i+[B_i,E_i])\) is identically zero.
+
+Sung-Jin Oh's \href{https://arxiv.org/abs/1210.1557v2}{finite-energy global well-posedness theorem, arXiv:1210.1557v2}, Main Theorem in the subsection “Statement of the Main Theorem”, applies to exactly \((\dot H^1\cap L^3)\times L^2\) data satisfying this constraint. It gives a unique global admissible temporal-gauge solution and persistence of every indicated Sobolev derivative for smooth data. The original author TeX, lines783–850, was read together with its conventions at lines386–455. This is an application of that established theorem, with all its data hypotheses just verified; it is not a new proof of that global theorem.
+
+The convention map is the identity on these matrix-valued connections and on the coordinate \(s\). Curvature, covariant derivative and gauge signs agree. Oh's matrix inner product is
+\[
+(X,Y)_{\rm Oh}=\operatorname{Tr}(XY^*)=-\operatorname{Tr}(XY)
+=\tfrac12\langle X,Y\rangle,\qquad
+\mathcal E_{\rm geom}=2\mathcal E_{\rm Oh},\qquad
+\mathcal E_{\rm phys,j}=\mathcal E_{\rm geom}/g_j^2
+=\frac{2\mathcal E_{\rm geom}}{\kappa_*a_j}.
+\tag{GM3}
+\]
+The physical coupling changes the displayed energy factor, while the source-free classical equation for the retained connection is \(D^\mu F_{\mu i}=0\). We therefore obtain, for every original regulator and every input measure triple, a unique global smooth solution
+\[
+A_0^{j,\nu}=0,\qquad
+\partial_sA_i^{j,\nu}=E_i^{j,\nu},\qquad
+\partial_sE_i^{j,\nu}=\sum_kD_kF_{ki}^{j,\nu},\qquad
+\sum_iD_iE_i^{j,\nu}=0.
+\tag{GM4}
+\]
+Its connection as well as its curvature has finite Sobolev norms of every order on each bounded time interval. For the zeroth-order connection norm, which a homogeneous Sobolev assertion alone would not supply, use
+\(\|A(s)\|_2\le\|B\|_2+|s|\sup_{|v|\le|s|}\|E(v)\|_2\).
+
+\subsection*{2. Support, energy and the continuous solution map}
+
+Put \(M=(F_{23},F_{31},F_{12})\). The exact first-order system is
+\[
+\partial_s(A,E,M)=(E,-\operatorname{curl}_A M,\operatorname{curl}_A E),
+\qquad
+e=\tfrac12(|E|^2+|M|^2),\qquad
+q_d=-\sum_{i,k}\varepsilon_{dik}\langle E_i,M_k\rangle .
+\tag{GM5}
+\]
+Here all spatial and colour components remain in the tuple norm. Ad-invariance cancels the two connection contributions when GM5 is paired with \((E,M)\). The ordinary curl terms give \(\partial_se+\operatorname{div}q=0\). For every unit spatial vector \(n\), \(|q\cdot n|\le|E||M|\le e\), since the spatial cross-product by \(n\) has norm at most one. Integrating on a backward cone disjoint from the initial support gives zero curvature there: its shrinking-ball energy has derivative \(-\int_{\partial B}(e+q\cdot n)\le0\) and starts at zero. The vertical segment to any exterior point stays exterior, so integrating \(\partial_sA=E=0\), with initial \(B=0\) there, also gives zero connection. Reversing time proves
+\[
+\operatorname{supp}(A(s),E(s),M(s))
+\subset\{x:\operatorname{dist}(x,K_{2r(j)})\le|s|\}.
+\tag{GM6}
+\]
+Compact support on each bounded time interval now permits integration of the local energy identity without a boundary term. Both energies in GM3 are conserved. Equivalently the complete initial energy is
+\[
+\begin{gathered}
+\mathcal D_r=\sum_{i<k}\int_{\mathbb R^3}
+\bigl[(\partial_i b_{k,r})^2+(\partial_k b_{i,r})^2\bigr]\,dx,\qquad
+\mathcal P_r=\sum_{i<k}\int_{\mathbb R^3}b_{i,r}^2b_{k,r}^2\,dx
+=\frac4{\ell^3}\sum_{i<k}\int\chi_r^4\rho_{ik,r}\,dx,\\
+\mathcal E_{\rm geom,j}
+=\tfrac12t_j^2\mathcal D_r+\tfrac12t_j^4\mathcal P_r,\qquad
+\mathcal E_{\rm phys,j}
+=\frac{t_j^2\mathcal D_r+t_j^4\mathcal P_r}{\kappa_*a_j}.
+\end{gathered}\tag{GM7}
+\]
+The vanishing cubic cross term follows from the exact orthogonality in AA9–AA10. Every derivative of \(\chi_r\lambda_{i,r}\), including the two mixed cutoff contributions, remains inside \(\mathcal D_r\).
+
+We need a map of initial data, not merely separate existence for each input. Here is a direct continuity proof in the present matrix basis. On \(U=(A,E,M)\), define
+\[
+\begin{gathered}
+\mathcal L U=(0,-\operatorname{curl}M,\operatorname{curl}E),\qquad
+N_1(U)=(E,0,0),\\
+Q(U,V)=\left(0,-\sum_{d,k}\varepsilon_{idk}[A_d(U),M_k(V)],
+\sum_{d,k}\varepsilon_{idk}[A_d(U),E_k(V)]\right)_{i=1}^3 .
+\end{gathered}\tag{GM8}
+\]
+Use the full Fourier Sobolev norm
+\(\|f\|_{H^m}^2=(2\pi)^{-3}\int(1+|\xi|^2)^m|\widehat f(\xi)|^2\,d\xi\)
+with \(\widehat f(\xi)=\int e^{-ix\cdot\xi}f(x)\,dx\).
+The Fourier symbol of \(\mathcal L\) is skew-Hermitian, so its group is an isometry. For \(m\ge2\), convolution, Young's inequality and Cauchy–Schwarz give
+\[
+\begin{gathered}
+\|fg\|_{H^m}\le C_m\|f\|_{H^m}\|g\|_{H^m},\qquad
+C_m=2^m(2\pi)^{-3/2}
+\left(\frac{\pi^{3/2}\Gamma(m-\tfrac32)}{\Gamma(m)}\right)^{1/2},\\
+\|Q(U,V)\|_{H^m}\le72C_m\|U\|_{H^m}\|V\|_{H^m},\qquad
+d_m(M_0)=\frac1{4(1+288C_mM_0)} .
+\end{gathered}\tag{GM9}
+\]
+For completeness, the product estimate uses
+\(\langle\xi\rangle^m\le2^{m-1}(\langle\eta\rangle^m+\langle\xi-\eta\rangle^m)\)
+and
+\(\int_{\mathbb R^3}(1+|\xi|^2)^{-m}d\xi
+=\pi^{3/2}\Gamma(m-\tfrac32)/\Gamma(m)\);
+the latter follows by polar coordinates and \(u=|\xi|^2\).
+The two convolution terms give the displayed factor \(2^m\).
+Each of the last two blocks of \(Q\) has 36 nonzero ordered scalar products, all of coefficient magnitude one because \([T_i,T_k]=\varepsilon_{ikq}T_q\). The triangle inequality for all 72 terms proves GM9; no quaternionic coefficient two has been substituted for this basis.
+
+For \(M_0\ge\max(1,\|U(0)\|_{H^m})\), the Duhamel map
+\[
+U(s)=e^{s\mathcal L}U(0)+
+\int_0^s e^{(s-v)\mathcal L}\{N_1(U(v))+Q(U(v),U(v))\}\,dv
+\tag{GM10}
+\]
+maps the radius-\(2M_0\) ball on \([-d_m,d_m]\) into itself. Its size is at most \(M_0+d_m(2M_0+288C_mM_0^2)\le2M_0\), and its difference constant is at most \(d_m(1+288C_mM_0)\le1/4\). Subtracting the fixed-point equations proves continuous dependence in \(C([-d_m,d_m],H^m)\), with the data difference multiplied by at most \(4/3\). To verify compatibility, the magnetic curvature of \(A\) and the independent variable \(M\) both have derivative \(\operatorname{curl}_A E\), so their initially zero difference stays zero. Then
+\[
+\partial_s\sum_iD_iE_i
+=\sum_{i,k}D_iD_kF_{ki}
+=\tfrac12\sum_{i,k}[F_{ik},F_{ki}]=0.
+\]
+Here \(\sum_i[E_i,E_i]=0\); interchange of \(i,k\) gives the middle equality, including its factor one half. Thus Gauss propagates and the constructed solution agrees with the global theorem by uniqueness.
+
+At a fixed smooth compact datum and a finite \(T\), the global \(H^m\) norm is bounded on \([-T,T]\). A finite covering by the preceding contraction intervals gives a neighborhood of that datum on which the solution map is continuous throughout this interval. Intersect the finitely many successive neighborhoods; uniqueness identifies their solutions on overlaps. Repeat for every \(m\). The first-order equation converts spatial convergence at higher \(m\) to convergence of all time derivatives, and Sobolev embedding gives continuity in the full \(C^\infty\) topology on compact space-time sets. For initial data supported in a fixed compact set, convergence in its \(C^\infty\) topology implies convergence in every \(H^m\), so the assertion applies directly to each fixed smoothing stage.
+
+For a time-independent smooth gauge \(h\) equal to a constant outside a compact set, the initial transform \(B^h=hBh^{-1}-(dh)h^{-1}\) is again smooth compact data and its zero electric field remains zero. Expansion gives \(F^h=hFh^{-1}\), \(D^h(hXh^{-1})=h(DX)h^{-1}\), hence \(A(s)^h\) is a solution with these data. Uniqueness proves that the solution map commutes with this gauge transformation, retaining its derivative term.
+
+\subsection*{3. The actual CM law and its global solution laws}
+
+Let \(\mathsf K\), \(\mathbb P_\Omega\) and \(\nu_\xi\) be exactly the compact character space, actual vacuum probability and orientation-triple measure constructed in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SIMULTANEOUS_CENTRAL_MEASURE.md}{CM19–CM22}. No new probability measure is selected. CM23 gives, for every \(\xi\), the deterministic bound
+\[
+\sum_{d<k}\nu_{\xi,dk}(K_{2r+2})
+\le K_{(4r+4)\ell},\qquad
+K_R=\frac{\mathsf L_R+\sqrt{\mathsf L_R^2-81\kappa_*^2R^6/4}}2,
+\quad \mathsf L_R=24R^2+9\kappa_*R^3 .
+\tag{GM11}
+\]
+Use SM3–SM6 with its mass \(S_r\) replaced in every upper bound by the displayed deterministic ceiling. This defines one common sequence \(J_r\) and one stage \(r(j)\) for all \(\xi\). The underlying densities, amplitudes and all actual input measures are unchanged: only the common sufficient bounds select the stage.
+
+The map \(\xi\mapsto\nu_\xi\) is vague-continuous by CM20. The compactly supported convolution kernels and all their derivatives give continuity \(\xi\mapsto\rho_{\xi,r}\) in local \(C^\infty\): on a compact set of spatial points, the kernels have a common compact support; GM11 bounds every integral there; a finite covering and one more bounded derivative convert pointwise convergence to uniform convergence. The positive floor makes division and fourth roots continuous on that compact set. Thus \(\xi\mapsto B^{j,\nu_\xi}\) is continuous in the fixed-support smooth topology. The solution continuity just proved gives
+\[
+\mathcal S_j:\mathsf K\longrightarrow
+C^\infty(\mathbb R^{1+3};\mathfrak{su}(2)^4),\qquad
+\mathcal S_j(\xi)=A^{j,\nu_\xi},\qquad
+\mathbb Q_j=(\mathcal S_j)_*\mathbb P_\Omega .
+\tag{GM12}
+\]
+This is a continuous map from a compact space. Its image is compact in the indicated local smooth topology. Each \(\mathbb Q_j\) is consequently a Borel probability supported on globally smooth source-free solutions satisfying the original Gauss law, with finite energy and GM6 support. This compactness is asserted separately for each fixed \(j\), not uniformly in the regulator.
+
+At any fixed time and each original finite edge, the holonomy is continuous in the connection by unitary Duhamel variation. Thus all finite time/edge/test observations are measurable under GM12. At zero time they have the exact receiving law
+\[
+\begin{aligned}
+&\lim_{j\to\infty}\int
+\prod_{v=1}^q\left[
+a_j^2\sum_{p:\,d_p=d_v,\,k_p=k_v}
+f_v(x_{p,j})D_p(A(0))\right]\,d\mathbb Q_j(A)\\
+&\hspace{8mm}=
+\int_{\mathsf K}\prod_{v=1}^q\nu_{\xi,d_vk_v}(f_v)\,
+d\mathbb P_\Omega(\xi)
+=\left\langle\Omega,
+\prod_{v=1}^q S_{f_ve_{d_vk_v}}\Omega\right\rangle .
+\end{aligned}\tag{GM13}
+\]
+Every finite \(q\), cross orientation and original signed compact test is included. SM7 proves the convergence for every \(\xi\); its local mass bound and GM11 give a deterministic integrable bound for the entire product, proving dominated convergence. Summing the three components recovers the original scalar \(a_jC_{f,j}\), with its factor \(a_j\) still displayed. The receiver on the right is the actual central spatial law. No equality of the constructed finite link law and the original \(\mu_j\) has been used.
+
+\subsection*{4. Exact energy receiving map}
+
+For a compact real test \(f\), keep the original weighted magnetic energy on the zero-time slice,
+\[
+\mathcal B_j(f)=\frac12\sum_{i<k}\int f(x)|F_{ik}^{j,\nu}(0,x)|^2\,dx,\qquad
+\mathcal D_r(f)=\sum_{i<k}\int f[(\partial_i b_{k,r})^2+
+(\partial_k b_{i,r})^2]\,dx .
+\]
+The exact full curvature square gives
+\[
+a_j^3\mathcal B_j(f)
+=\frac{\ell^{3/2}a_j^{3/2}}2\mathcal D_r(f)
++2\sum_{i<k}\int f\chi_r^4\rho_{ik,r}\,dx .
+\tag{GM14}
+\]
+There are six derivative squares in \(\mathcal D_r\), each bounded by \(4L_r^2\), since SM3 defines \(L_r\ge\frac12\max|\partial b|\). Their support has volume at most \(V_r\). Hence the absolute value of the first term in GM14 is at most
+\(12\|f\|_\infty\ell^{3/2}a_j^{3/2}L_r^2V_r\).
+The fifth original error term in the common SM6 schedule says
+\(16V_rL_r^2\ell^{3/2}a_j^{3/2}\le\tau_r/6\),
+where \(\tau_r=\sigma_*\ell^3/r\). Therefore that full derivative contribution is at most \(\|f\|_\infty\tau_r/8\), and
+\[
+a_j^3\mathcal B_j(f)\longrightarrow
+2\sum_{i<k}\nu_{ik}(f),\qquad
+a_j^4\frac{\mathcal B_j(f)}{g_j^2}
+\longrightarrow\frac4{\kappa_*}\sum_{i<k}\nu_{ik}(f).
+\tag{GM15}
+\]
+The smoothing error is precisely
+\(2\omega_f(\sqrt3h_r)\sum_{i<k}\nu_{ik}(K_{s+1})
++2\varepsilon_r\int|f|\)
+for \(\operatorname{supp}f\subset K_s\) and sufficiently large \(r\). This proves GM15 with every derivative, floor and coupling contribution controlled. GM11 gives deterministic bounds, so all finite joint moments of these weighted energy quantities and the zero-time Wilson receivers also converge under the same \(\mathbb P_\Omega\). The energy rescalings in GM14–GM15 are explicit additional receiving maps; GM7 remains the full original energy.
+
+\subsection*{5. Acceleration, the first correction and strict finite-regulator time dependence}
+
+Define the complete initial source
+\[
+J_i(B)=\sum_kD_k^BF_{ki}^B .
+\]
+SM9 and AA12–AA14 give every \(t_j,t_j^2,t_j^3\) coefficient and all cutoff derivatives of this expression. The true solution obeys \(A''(0)=J(B)\). Time reversal and uniqueness give \(A(-s)=A(s)\), \(E(-s)=-E(s)\). The exact linear derivative of the source is
+\[
+(J'_B V)_i=\sum_k\left[
+D_k^B(D_k^BV_i-D_i^BV_k)+[V_k,F_{ki}^B]\right].
+\tag{GM16}
+\]
+It follows by differentiating the displayed \(D_k^BF_{ki}^B\), retaining both the variation of \(D_k^B\) and of curvature. Put \(C=J(B)/2\) and \(R_2=J'_BC\), exactly as in SM10. Differentiating \(A''=J(A)\) twice at zero gives \(A^{(4)}(0)=J'_BJ(B)=2R_2\). Taylor's formula in every local Sobolev space therefore gives
+\[
+A(s)=B+\frac{s^2}{2}J(B)+\frac{s^4}{12}R_2+
+\mathcal R_6(s),\qquad
+\|\mathcal R_6(s)\|_{H^m(K)}
+\le\frac{|s|^6}{720}
+\sup_{|v|\le|s|}\|\partial_s^6A(v)\|_{H^m(K)} .
+\tag{GM17}
+\]
+The supremum is finite by the applied persistence theorem. For a fixed \(j\), GM12 and compactness make it uniform over the actual character space on every fixed compact interval. Thus the previously computed polynomial-time section has a fully determined first correction to the actual source-free evolution, with the complete remainder retained.
+
+The initial source is strictly nonzero for every non-early datum in this construction. Indeed vary the spatial connection in the direction \(B\). Curvature variation is the sum of its linear derivative part and twice its bracket part. Integrating by parts in the derivative of \(\frac12\int\sum_{i<k}|F_{ik}|^2\), and using the exact diagonal-colour orthogonality, gives
+\[
+\sum_i\int\langle B_i,J_i(B)\rangle
+=-t_j^2\mathcal D_r-2t_j^4\mathcal P_r,\qquad
+\|J(B)\|_2^2\ge
+\frac{(t_j^2\mathcal D_r+2t_j^4\mathcal P_r)^2}
+{t_j^2\sum_i\int b_{i,r}^2}>0 .
+\tag{GM18}
+\]
+The denominator is positive and finite: all three amplitudes are positive on \(K_r\), and have compact support. Also
+\(\mathcal P_r\ge(4/\ell^3)3\varepsilon_r\operatorname{Vol}(K_r)
+=96\sigma_*r^2>0\).
+With \(L_{\lambda,r}\) the full SM3 upper bound,
+\(\sum_i\int b_{i,r}^2\le3L_{\lambda,r}^2(4r\ell)^3\).
+Thus a uniform positive lower bound at the fixed stage is
+\[
+\|J(B)\|_2^2\ge
+\frac{4t_j^6(96\sigma_*r^2)^2}
+{3L_{\lambda,r}^2(4r\ell)^3}.
+\tag{GM19}
+\]
+For the actual law use the common deterministic SM3 bound in this formula. It remains a statement at each fixed original regulator.
+
+Choose a smooth compact weight \(\zeta_j\ge0\) equal to one on \(K_{2r}\). The gauge-invariant electric observation
+\[
+Z_j(s,A)=\int\zeta_j(x)\sum_i|F_{0i}^A(s,x)|^2\,dx
+\]
+has \(Z_j(0)=0\). Since \(E(s)=sJ(B)+O(s^3)\), with the remainder uniform on the fixed compact image GM12,
+\[
+\int Z_j(s,A)\,d\mathbb Q_j(A)
+=s^2\int_{\mathsf K}\|J(B^{j,\nu_\xi})\|_2^2\,d\mathbb P_\Omega(\xi)
++O_j(s^4),\qquad
+\int_{\mathsf K}\|J(B^{j,\nu_\xi})\|_2^2\,d\mathbb P_\Omega(\xi)>0 .
+\tag{GM20}
+\]
+Uniformity and integrability follow from continuity of every derivative on that compact image; the lower bound is GM19. In physical time the leading coefficient is multiplied by \(c^2\). Hence the constructed solution law is not stationary under time translation: its electric observation is zero initially and positive at all sufficiently small nonzero times. This identifies a precise property still needed in a vacuum construction, with an actual observable and coefficient, rather than assuming stationarity from global smoothness.
+
+\subsection*{6. A quantitative original-time receiving interval}
+
+The preceding source-free solution law has a complete small-time receiving map as well. For fixed \(j\), define the finite physical derivative bound
+\[
+K_j^{(2)}=\max_{\xi\in\mathsf K,\ |s|\le\ell,\ x\in K_{2r}+\overline B_\ell(0),\ i}
+\|\partial_s^2A_i^{j,\nu_\xi}(s,x)\|_{\rm op}.
+\tag{GM21}
+\]
+The maximum is finite by GM6 and the compact continuous map GM12. This is a defined quantity of the already constructed solutions, not an assumed regulator-uniform bound. Taylor's integral formula and \(A'(0)=0\) give
+\(\max_i\|A_i(s)-B_i\|_\infty\le |s|^2K_j^{(2)}/2\)
+for \(|s|\le\ell\), including outside the displayed compact set because both fields vanish there.
+
+Unitary variation on each original edge bounds its transport difference by \(a_j\max_i\|A_i(s)-B_i\|_\infty\). Telescoping the four original factors, including inverses, gives a face matrix difference at most four times that quantity. The trace difference is at most twice the matrix operator norm. Therefore, for every original orientation test triple,
+\[
+\left|\sum_\sigma
+\mathcal W_j^\sigma(A(s))(f_\sigma)
+-\sum_\sigma\mathcal W_j^\sigma(B)(f_\sigma)\right|
+\le4a_j^3 A_{1,\mathbf f,j}K_j^{(2)}s^2 .
+\tag{GM22}
+\]
+The original \(A_{1,\mathbf f,j}=\sum_{\sigma,p:\sigma}|f_\sigma(x_p)|\) is retained; the bound uses no spatial derivative of the tests.
+
+The total original number of faces is
+\(M_j^{\rm all}=3(2L_j)^2(2L_j+1)\).
+Set, using the reference quantities already fixed in SM1,
+\[
+\theta_j=\min\left\{\ell,
+\left[\frac{\sigma_*\ell^3}
+{j(1+4a_j^3M_j^{\rm all}K_j^{(2)})}\right]^{1/2}\right\}>0 .
+\tag{GM23}
+\]
+The summand one has the same dimension as \(a_j^3K_j^{(2)}\); both are dimensionless. Since \(A_1\le F M_j^{\rm all}\), GM22 is at most \(F\sigma_*\ell^3/j\) throughout the original physical coordinate interval \(|s|\le\theta_j\). Thus the zero-time Wilson identities GM13 persist for arbitrary choices of times in this interval, using the same input \(\xi\). Their joint moments, also when multiplied by the zero-time energy quantities in GM15, converge to the same corresponding actual central moments. For this assertion GM15 is used only through its zero-time joint moments with Wilson observations; no time-dependent weighted-energy convergence is inferred from a holonomy estimate. Uniform boundedness for compact tests follows from SM7 plus GM22, so dominated convergence applies to every finite product.
+
+This is an interval in the unchanged coordinate \(s=ct_{\rm phys}\), with its exact regulator-dependent size displayed. It does not provide a fixed positive-time limit. The strict time dependence GM20 and the derivative bound GM21 identify the next calculations needed to relate these classical solution laws to a stationary interacting state. The actual quantum covariance and low-window energy coefficients in CM and the current-fluctuation proof remain unchanged and are not evaluated by this classical construction.
+
+\subsection*{7. Time averaging and the exact finite-energy stationarity defect}
+
+The next operation is available on these same solutions. Let
+\(\Phi_uA(s,x)=A(s+u,x)\). Time translation is continuous in the local smooth topology, preserves temporal gauge and the source-free equation, and obeys \(\Phi_u\Phi_v=\Phi_{u+v}\). For \(T>0\), define
+\[
+\mathbb Q_{j,T}=\frac1{2T}\int_{-T}^{T}(\Phi_u)_*\mathbb Q_j\,du.
+\tag{GM24}
+\]
+This is the pushforward of the product of \(\mathbb P_\Omega\) and uniform measure on \([-T,T]\) by the continuous map \((\xi,u)\mapsto\Phi_u\mathcal S_j(\xi)\). Thus it is a Borel probability on global smooth solutions, with compact image at each fixed \(j,T\). For every bounded Borel function \(G\) on the solution space, translation of the integration interval gives
+\[
+\left|\int G\circ\Phi_h\,d\mathbb Q_{j,T}
+-\int G\,d\mathbb Q_{j,T}\right|
+\le\min\{2,|h|/T\}\|G\|_\infty .
+\tag{GM25}
+\]
+The two intervals have symmetric difference of length \(2|h|\) when \(|h|\le2T\), and length \(4T\) otherwise; division by \(2T\) proves every constant. Both original conserved energy laws in GM7 are exactly unchanged by GM24. This gives actual approximately stationary laws, without assuming convergence of their time averages.
+
+There is a sharper restriction on any stationary limit retaining finite total classical energy. It follows directly from the full stress tensor in the same conventions. For every smooth source-free solution put
+\[
+\begin{gathered}
+\mathcal T_{ik}=e\delta_{ik}
+-\langle E_i,E_k\rangle-\langle M_i,M_k\rangle,\qquad
+\sum_i\mathcal T_{ii}=e,\\
+\partial_s q_i+\sum_k\partial_k\mathcal T_{ik}=0,\qquad
+\|\mathcal T\|_{\rm op}\le e .
+\end{gathered}\tag{GM26}
+\]
+Here \(\mathcal T\) is a real symmetric spatial matrix. To prove the differential identity, use GM5 and differentiate
+\(q_i=-\sum_{d,k}\varepsilon_{idk}\langle E_d,M_k\rangle\).
+Contraction of the two epsilon tensors gives, for any Lie-algebra-valued spatial vector \(X\),
+\[
+\bigl((\operatorname{curl}_A X)\mathbin{\times}X\bigr)_i
+=\sum_k\langle X_k,D_kX_i\rangle
+-\tfrac12\partial_i\sum_k|X_k|^2 .
+\]
+The cross product in this equation contracts colour by the invariant inner product. Gauss gives \(\sum_kD_kE_k=0\). The magnetic identity \(\sum_kD_kM_k=0\) follows by expanding the three cyclic derivatives of curvature: the second partial derivatives cancel in pairs, the mixed bracket derivatives cancel by antisymmetry, and the three double brackets cancel by Jacobi. Ad-invariance then changes each remaining covariant contraction to the derivative of the corresponding inner product. The two terms in \(\partial_s q\) are \((\operatorname{curl}_A M)\times M\) and \((\operatorname{curl}_A E)\times E\), giving precisely GM26. The Gram matrix subtracted from \(eI\) is positive and has trace \(2e\), so all its eigenvalues are in \([0,2e]\); this proves the operator-norm bound and the displayed trace.
+
+Choose once and for all a smooth function \(\eta:\mathbb R^3\to[0,1]\) equal to one on the unit ball and zero outside the ball of radius two. Keep \(C_\eta=\|\nabla\eta\|_\infty\). For \(R>0\), put \(y=x-o\) and define the finite virial
+\[
+\begin{gathered}
+V_R(s)=\int y_i\eta(y/R)q_i(s,x)\,dx,\qquad
+|V_R(s)|\le2R\mathcal E_{\rm geom},\\
+\frac{dV_R}{ds}
+=\int\left[\eta(y/R)e+
+\sum_{i,k}\frac{y_i}{R}(\partial_k\eta)(y/R)
+\mathcal T_{ik}\right]dx,\\
+\left|\frac{dV_R}{ds}\right|
+\le(1+2C_\eta)\mathcal E_{\rm geom}.
+\end{gathered}\tag{GM27}
+\]
+Repeated indices in the first integral are summed from one to three. Integrating GM26 against the compactly supported vector field \(y\eta(y/R)\) proves the derivative, with no term at infinity. The other two inequalities follow from \(|q|\le e\), GM26 and \(|y|/R\le2\) on the cutoff support.
+
+Now take a time-translation-invariant Borel probability \(\mathbb P\) on global smooth source-free solutions whose original total energy is finite almost surely and conserved. This specifies the class of objects being tested; neither stationarity nor a limit of GM24 is being assumed for the constructed laws. First suppose \(\int\mathcal E_{\rm geom}\,d\mathbb P<\infty\). The first GM27 bound makes \(V_R\) integrable. Stationarity makes its expectation constant. The derivative bound justifies taking expectations of its integral identity and then its derivative, yielding expectation zero for the middle line of GM27. As \(R\to\infty\), its first integrand tends to \(e\), and its second tends to zero pointwise. Their absolute values are bounded by \((1+2C_\eta)e\), integrable in the product of \(\mathbb P\) and spatial volume. Dominated convergence gives \(\int\mathcal E_{\rm geom}\,d\mathbb P=0\).
+
+The energy is Borel because it is the increasing limit of its integrals over finite spatial balls, each continuous in the local smooth topology. No finite first moment is needed for the conclusion. The measurable events
+\(H_n=\{\mathcal E_{\rm geom}\le n\}\) are invariant because energy is conserved. Whenever \(\mathbb P(H_n)>0\), restricting and dividing by this probability gives a stationary law with expected energy at most \(n\). The preceding argument gives zero energy on \(H_n\). Their increasing union has probability one, so
+\[
+\mathbb P(\mathcal E_{\rm geom}=0)=1,\qquad
+F_{\mu\nu}=0\quad\mathbb P\text{-almost surely}.
+\tag{GM28}
+\]
+The last assertion follows from nonnegative energy and smoothness, at every time, using conservation and then continuity. This proves that a stationary law in this finite-total-energy class is supported on flat fields, even without an energy-moment assumption.
+
+For completeness, these flat temporal-gauge fields have identity Wilson holonomy on every contractible loop in \(\mathbb R^3\). Indeed \(E=0\) makes the connection independent of time. Solve \(\partial_i h=-A_i h\) with prescribed \(h(o)\in SU(2)\) by parallel transport. The compatibility expression is \(-F_{ik}h=0\). Differentiating transport along a smooth path homotopy expresses its variation as the transported integral of that curvature, which vanishes; subdivision into coordinate rectangles gives the same conclusion directly from the compatibility equation. Since every loop in \(\mathbb R^3\) contracts, the transport is path independent and defines a global smooth \(SU(2)\)-valued \(h\). Thus \(A=-(dh)h^{-1}\) and every closed-loop transport is the identity. No decay of this gauge at infinity is required for this curvature conclusion.
+
+GM24–GM28 specify the receiving spaces needed next. Their time averages have an exact vanishing stationarity defect, but a nonflat stationary limit cannot remain supported on finite-total-energy classical trajectories. The relevant enlarged space consists of global smooth source-free trajectories with finite energy on every compact spatial set and potentially infinite total energy, equipped with the local smooth topology and compactly supported observations. Time translation and the inclusion of the finite-energy solution space into this space are continuous by their definitions; both retain the same curvatures, Gauss equation and finite-edge holonomies. The inclusion intertwines \(\Phi_u\) exactly, and its pushforward takes GM24 to the same laws and the same bound GM25. GM28 identifies the precise part of this enlarged space on which nonflat stationary mass would have to lie. Establishing a nontrivial stationary measure there with the actual quantum receiving correlations, and reconstructing the intended quantum theory, remains a calculation rather than a consequence of classical time averaging. This virial argument makes no novelty claim.
+
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{GLOBAL_MEASURE_MAP.png}\caption{Exact measure, evolution, energy and stationarity maps}\end{figure}
+
+The reproducible figure and bounded algebra checks are in check\_global\_measure.py. Exact primary-source versions and reading coverage are recorded in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_GLOBAL_SOURCE_USE_LEDGER.json}{the source-use ledger}.
 \endgroup
 \end{document}

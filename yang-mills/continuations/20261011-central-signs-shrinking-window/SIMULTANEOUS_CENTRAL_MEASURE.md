@@ -800,3 +800,7 @@ The representation-theoretic human source is Marcel de Jeu and Xingni Jiang, *Ri
 ![Original spatial mass bounds and exact measure maps](central_measure_bounds.png)
 
 ![Full retained energy identity, with the current defect evaluated by CE13](retained_current_identity.png)
+
+## Global source-free evolution of the measure-realizing data
+
+[GM1–GM28](GLOBAL_MEASURE_EVOLUTION.md) apply Sung-Jin Oh's global Cauchy theorem to the exact smooth compact data, construct continuous solution laws from the actual central spatial measure, and prove their zero-time Wilson and energy receiving maps. The complete time expansion, a strict electric-field stationarity defect, and time averages with an explicit invariance error are calculated. The exact virial proves that any stationary probability on conserved finite-total-energy smooth trajectories is supported on flat fields, without an energy-moment assumption. Its receiving space must therefore be enlarged to allow infinite total energy for a nonflat stationary classical law. Quantum reconstruction and the actual low-window coefficients remain to be established.

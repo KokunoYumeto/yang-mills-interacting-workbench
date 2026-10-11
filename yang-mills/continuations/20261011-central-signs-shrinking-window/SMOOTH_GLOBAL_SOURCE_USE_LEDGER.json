@@ -1,0 +1,535 @@
+[
+  {
+    "source_id": "ARXIV-1210.1557v2-AUTHOR-TEX",
+    "authors": [
+      "Sung-Jin Oh"
+    ],
+    "title": "Finite energy global well-posedness of the Yang-Mills equations on R^(1+3): An approach using the Yang-Mills heat flow",
+    "version": "arXiv:1210.1557v2",
+    "source": "https://arxiv.org/src/1210.1557v2",
+    "archive_sha256": "f684ba4b3e8ea758acd06c9ffd0c6eb5332f570ac09b662bcbf3b002d183a3f5",
+    "tex": "author_source/author.tex",
+    "tex_sha256": "868bafa2d50d27d28bc2c3bb1e4abc8f5d034db4d8c4a59896d37a339789ea94",
+    "actual_reading_ranges": [
+      [
+        366,
+        461
+      ],
+      [
+        769,
+        857
+      ]
+    ],
+    "decoding": "Original bytes read using Latin-1; original author source and intact archive unchanged.",
+    "receiving_proof": "GM1–GM4: original matrix, metric, coordinate, gauge and coupling comparison; exact finite-energy, smoothness and Gauss hypotheses verified. The established global theorem is cited, not claimed as a new proof.",
+    "reading_limit": "The indicated theorem, admissibility, persistence and convention passages were read. No entire-paper rereading or PDF reading is claimed."
+  },
+  {
+    "source_id": "programme:SM-AA-GM-20261011",
+    "proofs": [
+      {
+        "source": "SMOOTH_MEASURE_REALIZATION.md",
+        "prefix": "SM",
+        "owner_sha256": "127492e91ae948db9b1fcadba488661c379e18da1dd44ffdc1e59e14fc28048c",
+        "public_sha256": "0885af2f75002790d3669070cd59b22bb538e5cebe7aae44cb168b446844bd37",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true,
+        "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+      },
+      {
+        "source": "AMPLITUDE_ALGEBRA.md",
+        "prefix": "AA",
+        "owner_sha256": "98ad6c1d3432610ced49c84d4142724847b0797677a86458d0b105cc47f6e275",
+        "public_sha256": "4e0730de06eafd6d177ff00ee1641fcd03b916e6b691d1f87939b093b3182b51",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true,
+        "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+      },
+      {
+        "source": "GLOBAL_MEASURE_EVOLUTION.md",
+        "prefix": "GM",
+        "owner_sha256": "41368d8f83b45f50dc3ced4c34f9a2a7e5a302456d0fb09bd4ca573c74f19a53",
+        "public_sha256": "c6d6d0f1b5112b89b049b713f40aaa88822f061505e750e1bce3d5c2d033fa43",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true,
+        "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-11T15:16:56.275230+00:00",
+      "coverage": "SM1–SM12 and AA1–AA20 completely read directly. GM1–GM28 derived and reviewed directly, including all signs, global input, product-space continuity, energy factors, current correction and full virial. No workers used or resumed.",
+      "corrections": [
+        "GM20 restored a missing plus before its retained remainder.",
+        "Specified the non-early index domain; early solutions are zero.",
+        "Added exact curvature-compatibility and Gauss propagation identities."
+      ],
+      "strengthening": "GM24–GM28 construct actual time averages and prove finite-energy stationary flatness. Invariant energy truncation removes the finite-expectation hypothesis.",
+      "diagnostics": [
+        {
+          "time_utc": "2026-10-11T15:17:16.316393+00:00",
+          "status": "passed",
+          "exact_symbolic_checks": 23,
+          "checks": [
+            "SM4.2 every full-square coefficient",
+            "SM10.4 curvature 01 colour 0",
+            "SM10.4 curvature 01 colour 1",
+            "SM10.4 curvature 01 colour 2",
+            "SM10.4 curvature 02 colour 0",
+            "SM10.4 curvature 02 colour 1",
+            "SM10.4 curvature 02 colour 2",
+            "SM10.4 curvature 12 colour 0",
+            "SM10.4 curvature 12 colour 1",
+            "SM10.4 curvature 12 colour 2",
+            "SM10.3 exact Gauss colour 0",
+            "SM10.3 exact Gauss colour 1",
+            "SM10.3 exact Gauss colour 2",
+            "SM10.5 full residual 0 colour 0",
+            "SM10.5 full residual 0 colour 1",
+            "SM10.5 full residual 0 colour 2",
+            "SM10.5 full residual 1 colour 0",
+            "SM10.5 full residual 1 colour 1",
+            "SM10.5 full residual 1 colour 2",
+            "SM10.5 full residual 2 colour 0",
+            "SM10.5 full residual 2 colour 1",
+            "SM10.5 full residual 2 colour 2",
+            "SM10.8 sixth source contraction including coefficient 4"
+          ],
+          "factor_samples": 64,
+          "factor_max_relative_error": 8.881784197001252e-16,
+          "exact_schedule_checks": 48,
+          "mollifier_integral": 0.44399381616807937,
+          "mollifier_quadrature_error": 5.427503113898958e-14,
+          "test_samples": [
+            {
+              "r": 1,
+              "h": 0.9,
+              "epsilon": 0.02,
+              "test_integrals": [
+                0.12139313455301233,
+                0.17992970182951848,
+                0.06911999999999999
+              ],
+              "target": [
+                0.5833333333333334,
+                0.875,
+                0.06479999999999998
+              ]
+            },
+            {
+              "r": 2,
+              "h": 0.45,
+              "epsilon": 0.01,
+              "test_integrals": [
+                0.3210502561951475,
+                0.4804953842927212,
+                0.06695999999999999
+              ],
+              "target": [
+                0.5833333333333334,
+                0.875,
+                0.06479999999999998
+              ]
+            },
+            {
+              "r": 4,
+              "h": 0.225,
+              "epsilon": 0.005,
+              "test_integrals": [
+                0.44726568202376593,
+                0.6703585230356488,
+                0.06588
+              ],
+              "target": [
+                0.5833333333333334,
+                0.875,
+                0.06479999999999998
+              ]
+            },
+            {
+              "r": 8,
+              "h": 0.1125,
+              "epsilon": 0.0025,
+              "test_integrals": [
+                0.513005514506413,
+                0.7692382717596195,
+                0.06534
+              ],
+              "target": [
+                0.5833333333333334,
+                0.875,
+                0.06479999999999998
+              ]
+            },
+            {
+              "r": 16,
+              "h": 0.05625,
+              "epsilon": 0.00125,
+              "test_integrals": [
+                0.5475959256268393,
+                0.8212588884402591,
+                0.06506999999999999
+              ],
+              "target": [
+                0.5833333333333334,
+                0.875,
+                0.06479999999999998
+              ]
+            },
+            {
+              "r": 32,
+              "h": 0.028125,
+              "epsilon": 0.000625,
+              "test_integrals": [
+                0.5653212549068278,
+                0.8479143823602416,
+                0.06493499999999998
+              ],
+              "target": [
+                0.5833333333333334,
+                0.875,
+                0.06479999999999998
+              ]
+            },
+            {
+              "r": 64,
+              "h": 0.0140625,
+              "epsilon": 0.0003125,
+              "test_integrals": [
+                0.5742914504767662,
+                0.8614034257151494,
+                0.06486749999999998
+              ],
+              "target": [
+                0.5833333333333334,
+                0.875,
+                0.06479999999999998
+              ]
+            }
+          ],
+          "schedule_samples": [
+            {
+              "r": 1,
+              "admissible_J": "60373213515959997916273975236012418428332726311613594338808204221184903226412881765971380795230690739891969201",
+              "log10_J": 109.78084429288356,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            },
+            {
+              "r": 2,
+              "admissible_J": "4100247045823744407162271401607337482267974690461032732516200079837606804243228425139953599260223171220443212130967037210449322690295056",
+              "log10_J": 135.61281002437968,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            },
+            {
+              "r": 3,
+              "admissible_J": "63496800192333903501314394906452916076736498875112932155458551609039791693251264359023500825233313429071877984342613361757471213895480715026911001663841",
+              "log10_J": 151.80275184034983,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            },
+            {
+              "r": 4,
+              "admissible_J": "49415266993487988319724436185982554114655315268858101456940626594553335714263440674241581630545756299464506046095992512225721302030768925815745095778315827618512896",
+              "log10_J": 163.69386114622498,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            },
+            {
+              "r": 5,
+              "admissible_J": "129465447561524615535087196333741580381418296170801319323121265534282620897490178148468436946164543573386316200750027690655980122320155341589997867100657982053681679615541361",
+              "log10_J": 173.1121538770225,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            },
+            {
+              "r": 6,
+              "admissible_J": "8250827689109498461053370353371587434884196669416132445808417345068970478149211486715158514255862256824623955090645282045958371074775608855524448528483686371692634119230225076088336",
+              "log10_J": 180.91649751737205,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            },
+            {
+              "r": 7,
+              "admissible_J": "38206094426012068778741771439632208872126602364370832979302452576762965202165368926034269844724179336077340191568163873929839682865886885403271363661833733082291432798101015689781265345296",
+              "log10_J": 187.5821326447043,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            },
+            {
+              "r": 8,
+              "admissible_J": "25144694604591221378997124430527008524691706505957169468019994382949835275052626962006147278516612159751962835567161130434379067472030383440031426269421100313738698475929026973388125446230824481",
+              "log10_J": 193.40044636525636,
+              "six_exact_term_bounds": "Each term is at most tau/6; checked by integer cross multiplication.",
+              "limitation": "An intentionally larger sufficient schedule, not the least integer in SM6.2."
+            }
+          ],
+          "script_sha256": "ccc7288d121f10234fccf57a0bb1fa9778fd31826d638460f791397fd505aa53",
+          "limits": "Finite symbolic and numerical checks supplement SM1–SM11 proofs. No finite lattice vacuum law or source-free dynamics is asserted."
+        },
+        {
+          "time_utc": "2026-10-11T15:17:18.920989+00:00",
+          "status": "passed",
+          "exact_symbolic_checks": 89,
+          "checks": [
+            "AA2 density 12",
+            "AA2 density 13",
+            "AA2 density 23",
+            "AA4 gradient 1,1",
+            "AA4 Hessian 1,1,1",
+            "AA4 Hessian 1,1,2",
+            "AA4 Hessian 1,1,3",
+            "AA4 gradient 1,2",
+            "AA4 Hessian 1,2,1",
+            "AA4 Hessian 1,2,2",
+            "AA4 Hessian 1,2,3",
+            "AA4 gradient 1,3",
+            "AA4 Hessian 1,3,1",
+            "AA4 Hessian 1,3,2",
+            "AA4 Hessian 1,3,3",
+            "AA4 gradient 2,1",
+            "AA4 Hessian 2,1,1",
+            "AA4 Hessian 2,1,2",
+            "AA4 Hessian 2,1,3",
+            "AA4 gradient 2,2",
+            "AA4 Hessian 2,2,1",
+            "AA4 Hessian 2,2,2",
+            "AA4 Hessian 2,2,3",
+            "AA4 gradient 2,3",
+            "AA4 Hessian 2,3,1",
+            "AA4 Hessian 2,3,2",
+            "AA4 Hessian 2,3,3",
+            "AA4 gradient 3,1",
+            "AA4 Hessian 3,1,1",
+            "AA4 Hessian 3,1,2",
+            "AA4 Hessian 3,1,3",
+            "AA4 gradient 3,2",
+            "AA4 Hessian 3,2,1",
+            "AA4 Hessian 3,2,2",
+            "AA4 Hessian 3,2,3",
+            "AA4 gradient 3,3",
+            "AA4 Hessian 3,3,1",
+            "AA4 Hessian 3,3,2",
+            "AA4 Hessian 3,3,3",
+            "AA5 Hessian constant",
+            "AA12 complete matrix source 1",
+            "AA12 complete matrix source 2",
+            "AA12 complete matrix source 3",
+            "AA10 full curvature square 12",
+            "AA10 full curvature square 13",
+            "AA10 full curvature square 23",
+            "AA19 covariant divergence of full source",
+            "AA6 cutoff gradient 1,1",
+            "AA6 cutoff Hessian 1,1,1",
+            "AA6 cutoff Hessian 1,1,2",
+            "AA6 cutoff Hessian 1,1,3",
+            "AA6 cutoff gradient 1,2",
+            "AA6 cutoff Hessian 1,2,1",
+            "AA6 cutoff Hessian 1,2,2",
+            "AA6 cutoff Hessian 1,2,3",
+            "AA6 cutoff gradient 1,3",
+            "AA6 cutoff Hessian 1,3,1",
+            "AA6 cutoff Hessian 1,3,2",
+            "AA6 cutoff Hessian 1,3,3",
+            "AA13 quadratic cutoff coefficient 2,1",
+            "AA13 quadratic cutoff coefficient 3,1",
+            "AA6 cutoff gradient 2,1",
+            "AA6 cutoff Hessian 2,1,1",
+            "AA6 cutoff Hessian 2,1,2",
+            "AA6 cutoff Hessian 2,1,3",
+            "AA6 cutoff gradient 2,2",
+            "AA6 cutoff Hessian 2,2,1",
+            "AA6 cutoff Hessian 2,2,2",
+            "AA6 cutoff Hessian 2,2,3",
+            "AA6 cutoff gradient 2,3",
+            "AA6 cutoff Hessian 2,3,1",
+            "AA6 cutoff Hessian 2,3,2",
+            "AA6 cutoff Hessian 2,3,3",
+            "AA13 quadratic cutoff coefficient 1,2",
+            "AA13 quadratic cutoff coefficient 3,2",
+            "AA6 cutoff gradient 3,1",
+            "AA6 cutoff Hessian 3,1,1",
+            "AA6 cutoff Hessian 3,1,2",
+            "AA6 cutoff Hessian 3,1,3",
+            "AA6 cutoff gradient 3,2",
+            "AA6 cutoff Hessian 3,2,1",
+            "AA6 cutoff Hessian 3,2,2",
+            "AA6 cutoff Hessian 3,2,3",
+            "AA6 cutoff gradient 3,3",
+            "AA6 cutoff Hessian 3,3,1",
+            "AA6 cutoff Hessian 3,3,2",
+            "AA6 cutoff Hessian 3,3,3",
+            "AA13 quadratic cutoff coefficient 1,3",
+            "AA13 quadratic cutoff coefficient 2,3"
+          ],
+          "sympy_version": "1.13.1",
+          "script_sha256": "218a50498f9ca7613893594a1b11bba770f9870f4c550bfc3b605acd84c9bff2",
+          "limitation": "Finite symbolic checks supplement the full proofs; no PDE existence or measure-limit claim is tested here."
+        },
+        {
+          "utc": "2026-10-11T15:17:21.150863+00:00",
+          "passed": true,
+          "exact_checks": 35,
+          "checks": [
+            "GM7 original physical energy",
+            "GM14 derivative coefficient",
+            "GM14 bracket coefficient",
+            "GM15 full derivative tolerance",
+            "GM19 positive floor",
+            "GM17 fourth derivative",
+            "GM18 homogeneous radial variation",
+            "GM17 homogeneous residual constant 0",
+            "GM17 homogeneous residual quadratic 0",
+            "GM17 homogeneous residual constant 1",
+            "GM17 homogeneous residual quadratic 1",
+            "GM17 homogeneous residual constant 2",
+            "GM17 homogeneous residual quadratic 2",
+            "GM9 exactly36 scalar terms in each quadratic block",
+            "GM10 positive self-map margin",
+            "GM10 contraction and self-map constants",
+            "GM26 stress conservation component0",
+            "GM26 stress conservation component1",
+            "GM26 stress conservation component2",
+            "GM26 full spatial stress trace",
+            "GM25 interval defect 1/3,-8",
+            "GM25 interval defect 1/3,-1/2",
+            "GM25 interval defect 1/3,0",
+            "GM25 interval defect 1/3,3/2",
+            "GM25 interval defect 1/3,9",
+            "GM25 interval defect 2,-8",
+            "GM25 interval defect 2,-1/2",
+            "GM25 interval defect 2,0",
+            "GM25 interval defect 2,3/2",
+            "GM25 interval defect 2,9",
+            "GM25 interval defect 7/2,-8",
+            "GM25 interval defect 7/2,-1/2",
+            "GM25 interval defect 7/2,0",
+            "GM25 interval defect 7/2,3/2",
+            "GM25 interval defect 7/2,9"
+          ],
+          "script_sha256": "974822e6f740dcd3ff60f41795cc49f4f1efbec9a4ff5549e9572605f0592179",
+          "scope": "Finite algebra diagnostics supplement GM1–GM28. Continuity, global existence application, measure convergence and virial integration are proved in the manuscript."
+        }
+      ],
+      "figures_inspected": true,
+      "proofs": [
+        {
+          "source": "SMOOTH_MEASURE_REALIZATION.md",
+          "prefix": "SM",
+          "owner_sha256": "127492e91ae948db9b1fcadba488661c379e18da1dd44ffdc1e59e14fc28048c",
+          "public_sha256": "9f01a9ad57118a96f8258796dd73cc3d92968b398e9576179ab029e4ba09de0f",
+          "all_original_math_blocks_retained": true
+        },
+        {
+          "source": "AMPLITUDE_ALGEBRA.md",
+          "prefix": "AA",
+          "owner_sha256": "98ad6c1d3432610ced49c84d4142724847b0797677a86458d0b105cc47f6e275",
+          "public_sha256": "4e0730de06eafd6d177ff00ee1641fcd03b916e6b691d1f87939b093b3182b51",
+          "all_original_math_blocks_retained": true
+        },
+        {
+          "source": "GLOBAL_MEASURE_EVOLUTION.md",
+          "prefix": "GM",
+          "owner_sha256": "5563a107ad5e49ba345e338fcf784132acc95cb65552bd31558003a899cdae17",
+          "public_sha256": "e0fbe1fe91cc10a5ea5febf78cdd76933f2dc0ce2f115b463271bd8bbe043e4f",
+          "all_original_math_blocks_retained": true
+        }
+      ],
+      "pending": "Archive and verified publication.",
+      "novelty_claim": false,
+      "public_proofs": [
+        {
+          "source": "SMOOTH_MEASURE_REALIZATION.md",
+          "prefix": "SM",
+          "owner_sha256": "127492e91ae948db9b1fcadba488661c379e18da1dd44ffdc1e59e14fc28048c",
+          "public_sha256": "0885af2f75002790d3669070cd59b22bb538e5cebe7aae44cb168b446844bd37",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true,
+          "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+        },
+        {
+          "source": "AMPLITUDE_ALGEBRA.md",
+          "prefix": "AA",
+          "owner_sha256": "98ad6c1d3432610ced49c84d4142724847b0797677a86458d0b105cc47f6e275",
+          "public_sha256": "4e0730de06eafd6d177ff00ee1641fcd03b916e6b691d1f87939b093b3182b51",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true,
+          "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+        },
+        {
+          "source": "GLOBAL_MEASURE_EVOLUTION.md",
+          "prefix": "GM",
+          "owner_sha256": "41368d8f83b45f50dc3ced4c34f9a2a7e5a302456d0fb09bd4ca573c74f19a53",
+          "public_sha256": "c6d6d0f1b5112b89b049b713f40aaa88822f061505e750e1bce3d5c2d033fa43",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true,
+          "typesetting": "All prior math blocks retained up to gathered row wrappers and spacing, with the documented opening-denominator-brace repair in GM23. Three exact prose formulas and one gradient bound now use mathematical typesetting. No factor, sign or term changed."
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-11T15:27:07.759820+00:00",
+        "tex_sha256": "00e1c29730fc7249f446f1ce2c426dbeb4a77f2a14f1d3e4a4827557ced01b7e",
+        "pdf_sha256": "388255c91d8e719576dcc039210d06dbab542106e2de1c172e1a4167cde49b20",
+        "pages": 647,
+        "source_files": 64,
+        "math_blocks": 16145,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-11T15:27:07.694471+00:00",
+          "complete": true,
+          "pages": 647,
+          "inspected_ranges": [
+            [
+              619,
+              647
+            ]
+          ],
+          "final_reinspected": [
+            619,
+            630
+          ],
+          "unchanged_rendered_pages": [
+            631,
+            647
+          ],
+          "notes": "All29 new pages rendered and visually inspected. Final changed pages619–630 reinspected;631–647 are pixel-identical to the inspected preceding rendering. All three figures inspected. No new overflow or missing glyph; prior inherited warnings remain."
+        }
+      },
+      "routing": "Three further bounded canonical-index queries for Yang–Mills virial, stationary finite-energy laws and homogeneous periodic dynamics retained privately. Results are routing metadata only; no PDF or unread theorem used."
+    },
+    "actual_reading_coverage": "SM1–SM12,AA1–AA20,GM1–GM28 complete; compact Cauchy provider sections2,3,5 read directly; CM actual-law provider already completely read.",
+    "provider_versions": [
+      {
+        "source": "HOLONOMY_CURVATURE_RECEIVING.md",
+        "version": "9329e5f38fd2175528ba640402e06f45999bf6b6",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9329e5f38fd2175528ba640402e06f45999bf6b6/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_RECEIVING.md",
+        "sha256": "c7e92983adffad6a830dd76b58c774d992e5d9a2d5b55992396e8dfa61a424d6"
+      },
+      {
+        "source": "HOLONOMY_CURVATURE_REVIEW.md",
+        "version": "9329e5f38fd2175528ba640402e06f45999bf6b6",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9329e5f38fd2175528ba640402e06f45999bf6b6/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_REVIEW.md",
+        "sha256": "01043925279785d0ba369d409425ffd0ca0a353f8f9a23eb34a8f1ea167f2bb9"
+      },
+      {
+        "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+        "version": "9329e5f38fd2175528ba640402e06f45999bf6b6",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9329e5f38fd2175528ba640402e06f45999bf6b6/yang-mills/continuations/20261011-central-signs-shrinking-window/SIMULTANEOUS_CENTRAL_MEASURE.md",
+        "sha256": "33d6eebc2db13603fbc6d8484427fcd06984b6c5435eb7064e30b9849607d847"
+      }
+    ],
+    "compact_cauchy": {
+      "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9329e5f38fd2175528ba640402e06f45999bf6b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/COMPACT_SUPPORT_CAUCHY_EVOLUTION.md",
+      "version": "9329e5f38fd2175528ba640402e06f45999bf6b6",
+      "sha256": "3d057dc1cf46b93e377ddcedd41f52274049c2770b266657f278a89255bd784b",
+      "read_sections": [
+        2,
+        3,
+        5
+      ]
+    },
+    "index_routing": "Existing canonical disk-index routes retained for the amplitude and smooth-measure work; routing records are not source reading. Existing primary-source Oh edition was used. No external theorem is imported into the directly proved virial calculation.",
+    "novelty_claim": false
+  }
+]
