@@ -414,3 +414,7 @@ Both collar choices preserve the original ground state, test support, lattice co
 ![The two proved collar estimates with their original floor, ceiling, minimum and constants; RD20–RD22](COLLAR_RATE_MAP.png)
 
 Complete reproducible diagnostics and figure sources are in [check_retained_derivative.py](check_retained_derivative.py). The curved manufactured densities and the displayed comparison are not samples of the original Yang–Mills ground. Original source versions and bounded reading coverage are recorded in [the source-use ledger](RETAINED_DERIVATIVE_SOURCE_USE_LEDGER.json).
+
+## Conditional outside forcing and current moments
+
+[OC1–OC24](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md) derive the actual conditional score equation, positive averaged potential Hessian and complete outside-current forcing, preserving the entire original kinetic quotient and every mixed Hessian. Exact first and second moments give a quantified resolvent improvement with both physical residuals. A crossing plaquette proves that the full-cube positive-weight current is nonzero, so the specified finite-regulator improvement is strictly positive. The full covariance, Hessian and force kernels coincide and retain inside gauge directions. The global oscillation comparison is evaluated on the original path; it supplies no vanishing filter coefficient. The limiting current moments and smooth interacting no-gap endpoint remain open calculations.

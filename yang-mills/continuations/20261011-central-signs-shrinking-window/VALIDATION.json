@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T19:17:43.396744+00:00",
+  "checked_utc": "2026-10-11T19:45:31.040867+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -127,13 +127,13 @@
     },
     {
       "source": "SQUARE_ROOT_LOCAL_SCORE.md",
-      "sha256": "1e78074170aa830288c5d9ecb2022edc1f5bfd015d15829399fcafac13a27669",
+      "sha256": "db262b1f9f084120bb63d4d4c3fd44419fc8f5e3dfb1ddc4c771ee54a7996f07",
       "complete_math_blocks": 293,
       "split_to_aligned_wrappers": 12
     },
     {
       "source": "SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
-      "sha256": "5664836f2cf24e0ed6e58849e508afb9990961d5bf846626138229e88fa7f28f",
+      "sha256": "f6d2c2d953f5b1e0ef32e9298a2d0c6e37593d467abf08cc2ce95b3a4ab797ad",
       "complete_math_blocks": 531,
       "split_to_aligned_wrappers": 0
     },
@@ -301,7 +301,7 @@
     },
     {
       "source": "INSIDE_MARGINAL_ENERGY.md",
-      "sha256": "88a408c88bfde85a7c8b66111e72b83c4ee77e99d696897a651d0fbf70b36203",
+      "sha256": "af19c316d1f197ac41f901171cce57c074436c66074c71b41705e897fa9959f9",
       "complete_math_blocks": 244,
       "split_to_aligned_wrappers": 4
     },
@@ -325,7 +325,7 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "b2933511013086a5a87984434dffbee36f4a59cd35063bd85903f7518ff62961",
+      "sha256": "fbf1b3a5b10c15e89ecc3fa701c9acc12ff85ae0343cabfef9f80283c7c84507",
       "complete_math_blocks": 546,
       "split_to_aligned_wrappers": 0
     },
@@ -409,19 +409,19 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "c52e64c1c41e679dcb26a97a57e6212b53991bd3c95dbf6d6f00de8708244eea",
+      "sha256": "29adae4fd40af67ea18ab699fc8f3ee63b59df93fc6ae435902ff26105ec5e2f",
       "complete_math_blocks": 203,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "ed5f8913fcb6438570120acc8b3de8b322f174f81e091aa46b9ba23aab8dc6c0",
+      "sha256": "afc992714aea7c0085bd63c9bb6e789a85de5b6944afde41b4b7f8f44cdf63e0",
       "complete_math_blocks": 249,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
-      "sha256": "985c2069d9e3af929c8337c3199c3c727ebb7588092f3a15e66ffc9825e5a475",
+      "sha256": "6988f306a0dded2502be6768c5205154d5a44acea9d76422a6a1a92b1a6cd990",
       "complete_math_blocks": 145,
       "split_to_aligned_wrappers": 0
     },
@@ -429,6 +429,12 @@
       "source": "WILSON_AND_CURRENT_COVARIANCE_SIGNS.md",
       "sha256": "8330e6b75acf5d769e42e5c4f47e2a659cac786f8dd2b4500592c9f556b9ce1f",
       "complete_math_blocks": 72,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md",
+      "sha256": "ed1d0246b343e90ab0249371c03e89d6c20a9d3cc3d1f5e73038c22e76b2ccab",
+      "complete_math_blocks": 201,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -766,6 +772,16 @@
     {
       "file": "COLLAR_RATE_MAP.png",
       "sha256": "5f01b02d2a5864237d0efed637673aab88bf11ffc519dc1a5c859cef90f9d6e1",
+      "visually_inspected": true
+    },
+    {
+      "file": "OUTSIDE_FORCE_MAP.png",
+      "sha256": "8b5ad279b42069cc4c9cbe5b74937405381a22f224f285f00cb6260fcbdd2631",
+      "visually_inspected": true
+    },
+    {
+      "file": "OUTSIDE_MOMENT_MAP.png",
+      "sha256": "cefdc84d116cbbf1b33bceefbe67cc40775d3c5ef0d5539b8975939a3e737cf5",
       "visually_inspected": true
     }
   ],
@@ -2987,6 +3003,249 @@
         "COLLAR_RATE_MAP.png"
       ],
       "scope": "New and changed scope, not a repeated review of all715 pages. The59 inherited overfull warnings and one old missing delta remain identical to the previous edition. The PDF is local QA; complete Markdown and TeX are the public deliverables."
+    }
+  },
+  "outside_force_review": {
+    "utc": "2026-10-11T19:39:47.023016+00:00",
+    "coverage": "OC1–OC24 complete owner derivation and review. Original conditional potential and full kinetic quotient; score Poisson equation; positive averaged potential Hessian and exact force inverses; finite-regulator gap and the original j^13 comparison coefficient; full current derivative and forcing with all mixed Hessians and original face scalars; first/second moments and exact residuals; positive-spectrum sharpness with an isometric moment map; actual nonzero current proved from a crossing-plaquette mixed derivative; strictly improved fixed physical direction and both residuals; common covariance/Hessian/force kernel, full force-projection remainder and inside gauge directions.",
+    "strengthening": "The actual CG outside noise is proved nonzero for full-cube positive equal weights. Its complete moments give an explicitly positive finite-regulator energy improvement. The conditional score, force and averaged Hessian have exact operator and kernel maps. The global oscillation comparison is evaluated on the original path and supplies no vanishing filter coefficient.",
+    "limitations": "No unscaled limiting improvement or original-window spectral mass is assigned. The first two actual moments and kinetic-quotient derivatives remain to be estimated asymptotically. The finite-dimensional sharpness comparison preserves moments, not the original Hamiltonian. Fixed-direction improvement is compared with that same direction; the earlier full CG optimization is retained.",
+    "actual_reading": "CG23–CG34 complete outside construction; RD1–RD22 retained derivative and both boundary collars; CG3–CG8 score/current/source definitions; original LS1–LS12 local potential, Bochner and Feynman–Kac constants; SR62–SR65 source heat-oscillation derivation. No claim to have reread all LS or SR proofs. Existing human-source reading is retained in their public ledgers and the PT ledger.",
+    "routing": "Canonical index first:14 original-TeX routing hits for ground/Hellmann, conditional/Fisher and Poisson/Witten. No routing hit represented as read and no new external theorem imported. No literature PDF.",
+    "diagnostics": {
+      "file": "OUTSIDE_FORCE_CHECKS.json",
+      "checks": 1248,
+      "all_passed": true,
+      "scope": "OC diagnostics: exact original combinatorics, curved comparison identities and full moment remainders.\nNo computed density or matrix below is an original Yang--Mills ground-state sample."
+    },
+    "figures_inspected": [
+      "OUTSIDE_FORCE_MAP.png",
+      "OUTSIDE_MOMENT_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md",
+        "prefix": "OC",
+        "tags": 24,
+        "owner_sha256": "4b905afb73b50c106fa1332a0b5354ed40b95a81230821c832aa2cf5d2e4e071",
+        "public_sha256": "ed1d0246b343e90ab0249371c03e89d6c20a9d3cc3d1f5e73038c22e76b2ccab",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T19:45:31.040867+00:00",
+      "tex_sha256": "f413fde0e536b91895939163192c4336104bee3db5a25d38fa3c89370397cf4e",
+      "pdf_sha256": "4ed5df554514b63f5314d632ca6b6edef765ca951ed91e1a85de4efd02cae302",
+      "pages": 724,
+      "source_files": 72,
+      "math_blocks": 17731,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-11T19:45:30.783752+00:00",
+        "complete": true,
+        "pages": 724,
+        "rendered_pages": [
+          189,
+          190,
+          191,
+          208,
+          209,
+          210,
+          497,
+          498,
+          499,
+          544,
+          545,
+          546,
+          692,
+          693,
+          694,
+          703,
+          704,
+          705,
+          709,
+          710,
+          711,
+          712,
+          713,
+          717,
+          718,
+          719,
+          720,
+          721,
+          722,
+          723,
+          724
+        ],
+        "new_proof_pages": [
+          717,
+          718,
+          719,
+          720,
+          721,
+          722,
+          723,
+          724
+        ],
+        "receiving_notes": [
+          190,
+          209,
+          498,
+          545,
+          693,
+          704,
+          712
+        ],
+        "figures": [
+          "OUTSIDE_FORCE_MAP.png",
+          "OUTSIDE_MOMENT_MAP.png"
+        ],
+        "repair": "RD receiving note placed after both preceding figures. Its complete text now occurs on page712; page710 and the subsequent GS start on713 inspected after repair.",
+        "result": "All new formulas, labels, proof text, notes and two figures visible and legible. No new overflow or missing glyph. Existing59 overflow warnings and one earlier missing delta remain; PDF local QA.",
+        "image_sha256": {
+          "page-189.png": "6155800f4604a3fba95bcb241f765e3bddc4a74b55bdf04c2918c42861b41b4a",
+          "page-190.png": "813f90cfc163012c219e6bba18aec61eb8fee8a0503282e2f9b83968a01b6393",
+          "page-191.png": "836b25bfdb78bdcd4be681d06cd11c9a3c03a86e2fbe713e032a693e9b56aae1",
+          "page-208.png": "d3046e04ef11deddf7ab372dbe47e6245c7d88fbc911a296ce05e3d76f504447",
+          "page-209.png": "7fec186c268c321858698d2d60bb92750d86a5bf303b33a175fb099bd027d3b6",
+          "page-210.png": "3bc5e02fd21a4e33ef499cc78115380412af87cacfba783db5dcf24480c908ed",
+          "page-497.png": "96f7a9e93cd4db346b5c7401514eda3671a112f8709e38c46c50cab33f4e6a1f",
+          "page-498.png": "ec1de685e1392533d7e926a92424bfed4b83eb4a58dce69237b3e839774f9a00",
+          "page-499.png": "ac88d51be593747873e48c9b68398a4ce20a00d44a2fb6eaa18604c49a0943f9",
+          "page-544.png": "b978bb49c02a3a9b84edae9539f1f68b5bad5a5b4cac83d488378d6724fa6545",
+          "page-545.png": "d6ffd8c7c7e0b8c784f2bbd5a42b7b3a0c114dbd1e77c64eb9ffd312c6ca7886",
+          "page-546.png": "ba04bf9cefb731fc456a2b49bac4e8cceba2cea53bc4fb67bee901cdcd3d630a",
+          "page-692.png": "ee4521dc35654d4bd07a5a0db64c24e8a041e025ed2addad659aa37d9d6b4ebd",
+          "page-693.png": "fa9dd735f1fed1c4a14e5fba92bf4913b07c2d2d37335a8f8bafbdcc4b7bfda5",
+          "page-694.png": "a2bbc486963be2a4f07f98fb302819406fe3301bd8b5a957a9fb73fb8984f296",
+          "page-703.png": "10576c76e303b0d0606b6dee842ccd2fbe5a05aa780eef8f4ed5dfb524482b46",
+          "page-704.png": "45236f24217b6bc9f68aca340d207a39011d914d27cc1739427562d31eccb2f9",
+          "page-705.png": "616e1ab04285d963a643d1267f6ad44afb721a02fb2e84bec7b89ba3df1faa97",
+          "page-709.png": "5cd3fb6839824ee6f3ae7cbe20162649eee96e8a272f5555da634e7578753ef8",
+          "page-710.png": "9c854e6212a40e6d7ac6d3b95a2f07ebe4f4fa626408c7f2f694a1a56e71ea5d",
+          "page-711.png": "c646642742855c36912a13a853b8f3de193f3a3c6ca17495983beff0ec1a5968",
+          "page-712.png": "12265954719a3835222200a7812b41fab6671a8739b4c7e3879bfd3b5876311a",
+          "page-713.png": "9e2b6ed111df0c6bdd599c89f2d006ff8c9370514660c7e11a2347bafbfef02e",
+          "page-717.png": "d1bafa85904b1c24aa5ad636b959b4f69a10eb03b680b9db68f0ecb5b5263a14",
+          "page-718.png": "c531854c2174515266efc38dcaab61524c38c20c29534e0bec16153236d2d348",
+          "page-719.png": "100055fbbeb03ee45978a53a0a413c9e9fdceae7b4405a8be4791fb527a00153",
+          "page-720.png": "3c5e3ff4a90a3cc8daf517e82eac3a4a2120a0871561a908c909db85f6618937",
+          "page-721.png": "b3b96ac78a2048780aaa5374c726f608c04575ad881488ddd348447a60dd6a21",
+          "page-722.png": "9de872a2d8993a480c2611924a3ddc669e3b79cb11cb29e9fbc36b6a69d691e8",
+          "page-723.png": "c8827b4983add6023fec096fda1d63d0eb971edd4846b41194c0490673c295ef",
+          "page-724.png": "dbf2311761772ebf043c8760db910985039be9d7b1ae47ab55ca15a29540c871"
+        }
+      }
+    }
+  },
+  "outside_force_compile": {
+    "utc": "2026-10-11T19:45:31.040867+00:00",
+    "tex_sha256": "f413fde0e536b91895939163192c4336104bee3db5a25d38fa3c89370397cf4e",
+    "pdf_sha256": "4ed5df554514b63f5314d632ca6b6edef765ca951ed91e1a85de4efd02cae302",
+    "pages": 724,
+    "source_files": 72,
+    "math_blocks": 17731,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-11T19:45:30.783752+00:00",
+      "complete": true,
+      "pages": 724,
+      "rendered_pages": [
+        189,
+        190,
+        191,
+        208,
+        209,
+        210,
+        497,
+        498,
+        499,
+        544,
+        545,
+        546,
+        692,
+        693,
+        694,
+        703,
+        704,
+        705,
+        709,
+        710,
+        711,
+        712,
+        713,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724
+      ],
+      "new_proof_pages": [
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724
+      ],
+      "receiving_notes": [
+        190,
+        209,
+        498,
+        545,
+        693,
+        704,
+        712
+      ],
+      "figures": [
+        "OUTSIDE_FORCE_MAP.png",
+        "OUTSIDE_MOMENT_MAP.png"
+      ],
+      "repair": "RD receiving note placed after both preceding figures. Its complete text now occurs on page712; page710 and the subsequent GS start on713 inspected after repair.",
+      "result": "All new formulas, labels, proof text, notes and two figures visible and legible. No new overflow or missing glyph. Existing59 overflow warnings and one earlier missing delta remain; PDF local QA.",
+      "image_sha256": {
+        "page-189.png": "6155800f4604a3fba95bcb241f765e3bddc4a74b55bdf04c2918c42861b41b4a",
+        "page-190.png": "813f90cfc163012c219e6bba18aec61eb8fee8a0503282e2f9b83968a01b6393",
+        "page-191.png": "836b25bfdb78bdcd4be681d06cd11c9a3c03a86e2fbe713e032a693e9b56aae1",
+        "page-208.png": "d3046e04ef11deddf7ab372dbe47e6245c7d88fbc911a296ce05e3d76f504447",
+        "page-209.png": "7fec186c268c321858698d2d60bb92750d86a5bf303b33a175fb099bd027d3b6",
+        "page-210.png": "3bc5e02fd21a4e33ef499cc78115380412af87cacfba783db5dcf24480c908ed",
+        "page-497.png": "96f7a9e93cd4db346b5c7401514eda3671a112f8709e38c46c50cab33f4e6a1f",
+        "page-498.png": "ec1de685e1392533d7e926a92424bfed4b83eb4a58dce69237b3e839774f9a00",
+        "page-499.png": "ac88d51be593747873e48c9b68398a4ce20a00d44a2fb6eaa18604c49a0943f9",
+        "page-544.png": "b978bb49c02a3a9b84edae9539f1f68b5bad5a5b4cac83d488378d6724fa6545",
+        "page-545.png": "d6ffd8c7c7e0b8c784f2bbd5a42b7b3a0c114dbd1e77c64eb9ffd312c6ca7886",
+        "page-546.png": "ba04bf9cefb731fc456a2b49bac4e8cceba2cea53bc4fb67bee901cdcd3d630a",
+        "page-692.png": "ee4521dc35654d4bd07a5a0db64c24e8a041e025ed2addad659aa37d9d6b4ebd",
+        "page-693.png": "fa9dd735f1fed1c4a14e5fba92bf4913b07c2d2d37335a8f8bafbdcc4b7bfda5",
+        "page-694.png": "a2bbc486963be2a4f07f98fb302819406fe3301bd8b5a957a9fb73fb8984f296",
+        "page-703.png": "10576c76e303b0d0606b6dee842ccd2fbe5a05aa780eef8f4ed5dfb524482b46",
+        "page-704.png": "45236f24217b6bc9f68aca340d207a39011d914d27cc1739427562d31eccb2f9",
+        "page-705.png": "616e1ab04285d963a643d1267f6ad44afb721a02fb2e84bec7b89ba3df1faa97",
+        "page-709.png": "5cd3fb6839824ee6f3ae7cbe20162649eee96e8a272f5555da634e7578753ef8",
+        "page-710.png": "9c854e6212a40e6d7ac6d3b95a2f07ebe4f4fa626408c7f2f694a1a56e71ea5d",
+        "page-711.png": "c646642742855c36912a13a853b8f3de193f3a3c6ca17495983beff0ec1a5968",
+        "page-712.png": "12265954719a3835222200a7812b41fab6671a8739b4c7e3879bfd3b5876311a",
+        "page-713.png": "9e2b6ed111df0c6bdd599c89f2d006ff8c9370514660c7e11a2347bafbfef02e",
+        "page-717.png": "d1bafa85904b1c24aa5ad636b959b4f69a10eb03b680b9db68f0ecb5b5263a14",
+        "page-718.png": "c531854c2174515266efc38dcaab61524c38c20c29534e0bec16153236d2d348",
+        "page-719.png": "100055fbbeb03ee45978a53a0a413c9e9fdceae7b4405a8be4791fb527a00153",
+        "page-720.png": "3c5e3ff4a90a3cc8daf517e82eac3a4a2120a0871561a908c909db85f6618937",
+        "page-721.png": "b3b96ac78a2048780aaa5374c726f608c04575ad881488ddd348447a60dd6a21",
+        "page-722.png": "9de872a2d8993a480c2611924a3ddc669e3b79cb11cb29e9fbc36b6a69d691e8",
+        "page-723.png": "c8827b4983add6023fec096fda1d63d0eb971edd4846b41194c0490673c295ef",
+        "page-724.png": "dbf2311761772ebf043c8760db910985039be9d7b1ae47ab55ca15a29540c871"
+      }
     }
   }
 }
