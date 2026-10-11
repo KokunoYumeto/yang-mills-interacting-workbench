@@ -1,0 +1,185 @@
+[
+  {
+    "source_id": "programme:HP-20261011",
+    "proofs": [
+      {
+        "source": "STATIONARY_PHASE_RECEIVING.md",
+        "prefix": "HP",
+        "owner_sha256": "087ec81c67bff3ecc4e023cb3d914a050ff58903b6e20e98f6aa02ac5b7b2030",
+        "public_sha256": "2eedec0922ba7ac9149b608696f4b646ec959bb58e005e17049c8b813e7755e3",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true,
+        "notation": "Only the auxiliary positive-generator symbol became calligraphic L; the lattice side count L_j=j^4 retains its original symbol. Exact operator, domain, factors, terms and statements unchanged."
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "GLOBAL_MEASURE_EVOLUTION.md",
+        "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/bb3c029754e9732bdf5cb28332a047692b32a7b5/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_MEASURE_EVOLUTION.md",
+        "sha256": "c6d6d0f1b5112b89b049b713f40aaa88822f061505e750e1bce3d5c2d033fa43"
+      },
+      {
+        "source": "HOLONOMY_CURVATURE_REVIEW.md",
+        "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/bb3c029754e9732bdf5cb28332a047692b32a7b5/yang-mills/continuations/20261011-central-signs-shrinking-window/HOLONOMY_CURVATURE_REVIEW.md",
+        "sha256": "e789a7cbe351be634900fae60422298ef1b3415730982c4c4b1a101e89e71fbb"
+      },
+      {
+        "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+        "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/bb3c029754e9732bdf5cb28332a047692b32a7b5/yang-mills/continuations/20261011-central-signs-shrinking-window/SIMULTANEOUS_CENTRAL_MEASURE.md",
+        "sha256": "2686a7ea75f83c7c51632f68cd636d63f346b0cde927504d66b492e59ac263c9"
+      },
+      {
+        "source": "CURRENT_COVARIANCE_EQUALITY.md",
+        "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/bb3c029754e9732bdf5cb28332a047692b32a7b5/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_COVARIANCE_EQUALITY.md",
+        "sha256": "ba89ade031f35020f91aea958b750e53ef5379a780cff53632c2974f7fef76bd"
+      },
+      {
+        "source": "CURVATURE_PHASE_RECONSTRUCTION.md",
+        "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/bb3c029754e9732bdf5cb28332a047692b32a7b5/yang-mills/continuations/20261011-central-signs-shrinking-window/CURVATURE_PHASE_RECONSTRUCTION.md",
+        "sha256": "fb1d6572e5c53757ad6cc75f82d6c2d25a572b4e162ec106524dd61ad936a780"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-11T16:01:05.668323+00:00",
+      "proof_sha256": "835b496eda6a5460d015979dd7efd4d7b720c87d228559571f3a8cf597fd8743",
+      "reading": [
+        {
+          "source": "HOLONOMY_CURVATURE_REVIEW.md",
+          "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+          "coverage": "HCR7 complete; HCR6/HC19–HC20 previously fully read and retained"
+        },
+        {
+          "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+          "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+          "coverage": "CM1–CM6 and CM23–CM44 directly reread this turn; full source previously read"
+        },
+        {
+          "source": "CURRENT_COVARIANCE_EQUALITY.md",
+          "version": "bb3c029754e9732bdf5cb28332a047692b32a7b5",
+          "coverage": "CE1–CE13,CE20–CE34,CE37–CE42 directly reread this turn; full source previously read"
+        }
+      ],
+      "routing": "Three further bounded canonical-index queries for Yang–Mills virial, stationary finite-energy laws and homogeneous periodic dynamics retained privately. Results are routing metadata only; no PDF or unread theorem used.",
+      "current_status": "Accepted after direct derivation and review; compilation and publication pending.",
+      "novelty_claim": false,
+      "coverage": "HP1–HP40 complete direct derivation and review. All beta moments, exact quarter-period map, finite amplitudes and mesh factors, actual CM root witnesses, complete generators/Gram/energy matrices, window error, actual CE energy comparison and explicit reflection forms checked.",
+      "corrections": "The phase variance is 8/63 of lambda^8 before the retained ell^6/16 multiplier, yielding ell^6 lambda^8/126. The auxiliary positive generator is the absolute value of the two-sided composition generator; its changed dynamics and entire zero-mode kernel remain explicit.",
+      "strengthening": "Every invariant law in this isotropic family is a uniform conditional phase mixture. The violation of the necessary CM homogeneous interval is uniformly positive over amplitudes. HP32–HP33 retain amplitude-sensitive error, proving the actual finite Wilson small-window asymptotic instead of using an inadequate global error. HP38 gives the exact antiunitary constraint, and HP39 tests only the explicitly specified direct Euclidean interpretation.",
+      "additional_reading": "CP17–CP20 read directly, together with nearby CP21–CP31 context; CP complete source had been read earlier. CE9 actual first energy is O(1), whereas CE10 second energy is O(a^-1); HP37 uses these exact original estimates.",
+      "diagnostics": {
+        "utc": "2026-10-11T16:01:07.954777+00:00",
+        "passed": true,
+        "exact_algebra_checks": 17,
+        "checks": [
+          "HP13 first derivative",
+          "HP13 complete shifted ODE",
+          "HP13 squared quarter map",
+          "HP10 beta first moment",
+          "HP10 beta second moment",
+          "HP10 full density variance",
+          "HP24 covariance to squared-mean ratio",
+          "HP29–HP36 uniform amplitude integral 8",
+          "HP29–HP36 uniform amplitude integral 9",
+          "HP29–HP36 uniform amplitude integral 10",
+          "HP29–HP36 uniform amplitude integral 12",
+          "HP29–HP36 uniform amplitude integral 14",
+          "HP31 original window exponent",
+          "HP33 relative error exponent",
+          "HP31 raw observable exponent",
+          "HP33 exact full relative coefficient",
+          "HP36 energy-error product",
+          "HP2 numerical full-period and conserved energy",
+          "HP10 independent phase quadrature of both moments",
+          "HP13–HP14 numerical quarter map and negative covariance",
+          "HP8 and HP35 amplitude-sensitive finite face and derivative samples",
+          "HP39 finite original Wilson negative reflection square and retained error certificate"
+        ],
+        "numerical_face_samples": 3380,
+        "maximum_face_error_to_bound": 0.9999943572644917,
+        "maximum_derivative_error_to_bound": 0.350942788964466,
+        "illustration": {
+          "ell": 1.0,
+          "kappa": 1.0,
+          "Lambda": 1.8612097182041991,
+          "I": 1.3110287771460571,
+          "I_quadrature_error": 6.679101716144942e-13,
+          "period": 2.8175842073530806,
+          "coefficient_A_sample": 0.0019905501388882063,
+          "coefficient_B_sample": 2.538850331318417,
+          "coefficient_D_sample": 6.111549814728738,
+          "analytic_A_tail_bound_above_mode128": 3.8533722910681203e-23,
+          "caution": "Tail bound excludes numerical quadrature error. Figures are numerical samples of fully proved formulas.",
+          "vacuum_interval": [
+            0.2009618943233421,
+            2.799038105676658
+          ],
+          "uniform_violation_lower_bound_sample": 0.3168871006743619
+        },
+        "script_sha256": "29a4634aaaae5c1f0989580bdd028325573d0500a5d66da08dd9cca964ba922a",
+        "scope": "Diagnostics supplement HP1–HP40; no actual quantum window coefficient is numerically assigned."
+      },
+      "figure_inspected": true,
+      "public_proofs": [
+        {
+          "source": "STATIONARY_PHASE_RECEIVING.md",
+          "prefix": "HP",
+          "owner_sha256": "087ec81c67bff3ecc4e023cb3d914a050ff58903b6e20e98f6aa02ac5b7b2030",
+          "public_sha256": "2eedec0922ba7ac9149b608696f4b646ec959bb58e005e17049c8b813e7755e3",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true,
+          "notation": "Only the auxiliary positive-generator symbol became calligraphic L; the lattice side count L_j=j^4 retains its original symbol. Exact operator, domain, factors, terms and statements unchanged."
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-11T16:12:23.792881+00:00",
+        "tex_sha256": "25f6a46d3f2a8e752f7cf05b0f3e896b01b4026c6683acfa3bc9254b085fa921",
+        "pdf_sha256": "e7f0f4eeb6dfcc805a73292d82807875e7c29239ea6e8ab5356311aeeeba19ec",
+        "pages": 661,
+        "source_files": 65,
+        "math_blocks": 16425,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "complete": true,
+          "pages": 661,
+          "new_proof_pages": [
+            651,
+            652,
+            653,
+            654,
+            655,
+            656,
+            657,
+            658,
+            659,
+            660,
+            661
+          ],
+          "propagation_pages_previously_inspected": [
+            354,
+            355,
+            593,
+            594,
+            610,
+            611,
+            621,
+            622,
+            649,
+            650
+          ],
+          "final_notation_edition": "All eleven HP pages rerendered and visually inspected after the calligraphic positive-generator correction. Propagation pages were inspected before this correction and their source is unchanged.",
+          "result": "Equations, margins, labels, proof text and the full figure are legible; no clipping or overlap observed.",
+          "figure": "STATIONARY_PHASE_MAP.png"
+        }
+      },
+      "pending": "Archive and verified publication."
+    },
+    "actual_reading": "HCR7 complete; CM1–CM6,CM23–CM44, CE1–CE13,CE20–CE34,CE37–CE42,CP17–CP20 read directly this turn. Full providers previously read. All claims in HP have their receiving proofs present.",
+    "routing": "GLOBAL_STATIONARITY_LITERATURE_ROUTES.json from the canonical disk index inspected; metadata only. No new external theorem or PDF used. No novelty claim."
+  }
+]

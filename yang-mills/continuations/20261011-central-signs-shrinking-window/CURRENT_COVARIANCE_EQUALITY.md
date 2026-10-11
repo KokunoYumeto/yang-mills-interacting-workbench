@@ -626,3 +626,7 @@ Every positive heat parameter therefore gives a bounded nonzero vector in the sa
 ![Exact current collapse and the surviving original heat fluctuation](CURRENT_COVARIANCE_MAP.png)
 
 The reproducible figure and bounded algebra checks are in check_current_covariance.py. Full source versions and reading coverage are in [the source-use ledger](CENTRAL_CURRENT_SOURCE_USE_LEDGER.json). No novelty claim is made.
+
+## Stationary phase laws and exact quantum receiving tests
+
+[HP1–HP40](STATIONARY_PHASE_RECEIVING.md) construct stationary global smooth homogeneous Yang–Mills laws and calculate their complete phase, spatial and time correlations. The actual CM lower bounds exclude this isotropic phase family, with an explicit continuous witness and a uniform interval-defect probability. The original finite Wilson observations retain a fully calculated shrinking-window weight under the specified auxiliary positive generator: the coefficient decays as j^(-63/4) for aC and j^(-55/4) for raw C, with a relative norm error of order j^(-4). Complete energy matrices and HP37 contrast this auxiliary spectrum with the actual quantum leading receiver, whose original first energy tends to zero. HP38–HP40 prove the exact composition-generator restriction and reflection-form comparisons, keeping the direct Euclidean interpretation distinct from analytic continuation. These comparisons do not assign the actual quantum window weight or establish the interacting no-gap endpoint.

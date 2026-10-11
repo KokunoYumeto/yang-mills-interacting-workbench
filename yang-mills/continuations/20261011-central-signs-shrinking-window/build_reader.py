@@ -105,7 +105,7 @@ for name in names:
     blocks=re.findall(r'(?s)\\\[.*?\\\]|\\\(.*?\\\)',s)
     assert all(typeset_math(x) in body for x in blocks)
     rows.append({'source':name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'complete_math_blocks':len(blocks),'split_to_aligned_wrappers':s.count(r'\begin{split}')})
-    if name in ['NEGATIVE_TRACE_COMPRESSION.md', 'GAMMA_INTEGRAL.md', 'HOLONOMY_CURVATURE_RECEIVING.md', 'HOLONOMY_CURVATURE_REVIEW.md', 'SIMULTANEOUS_CENTRAL_MEASURE.md', 'CURRENT_COVARIANCE_EQUALITY.md', 'SMOOTH_MEASURE_REALIZATION.md', 'AMPLITUDE_ALGEBRA.md', 'GLOBAL_MEASURE_EVOLUTION.md']:
+    if name in ['NEGATIVE_TRACE_COMPRESSION.md', 'GAMMA_INTEGRAL.md', 'HOLONOMY_CURVATURE_RECEIVING.md', 'HOLONOMY_CURVATURE_REVIEW.md', 'SIMULTANEOUS_CENTRAL_MEASURE.md', 'CURRENT_COVARIANCE_EQUALITY.md', 'SMOOTH_MEASURE_REALIZATION.md', 'AMPLITUDE_ALGEBRA.md', 'GLOBAL_MEASURE_EVOLUTION.md', 'STATIONARY_PHASE_RECEIVING.md']:
         body='\\begingroup\\ifPDFTeX\\else\\IfFontExistsTF{Cambria}{\\fontspec{Cambria}}{\\IfFontExistsTF{DejaVu Sans}{\\fontspec{DejaVu Sans}}{}}\\fi\n'+body+'\n\\endgroup'
     bodies.append(body)
 header=HEADER.replace('Yang--Mills: complete research proofs','Yang--Mills central signs and shrinking spectral windows').replace('booktabs,graphicx','booktabs,longtable,graphicx')

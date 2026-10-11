@@ -1,0 +1,32 @@
+{
+  "proofs": [
+    {
+      "source": "STATIONARY_PHASE_RECEIVING.md",
+      "prefix": "HP",
+      "owner_sha256": "087ec81c67bff3ecc4e023cb3d914a050ff58903b6e20e98f6aa02ac5b7b2030",
+      "public_sha256": "2eedec0922ba7ac9149b608696f4b646ec959bb58e005e17049c8b813e7755e3",
+      "all_original_math_blocks_retained": true,
+      "all_original_math_content_retained": true,
+      "notation": "Only the auxiliary positive-generator symbol became calligraphic L; the lattice side count L_j=j^4 retains its original symbol. Exact operator, domain, factors, terms and statements unchanged."
+    }
+  ],
+  "utc": "2026-10-11T16:01:05.668323+00:00",
+  "notation_repair": {
+    "utc": "2026-10-11T16:08:47.687214+00:00",
+    "reason": "The lattice side count L_j=j^4 and the auxiliary positive generator had shared a symbol. The auxiliary generator alone is now written with a calligraphic L. Its operator, domain, formulas and factors are identical.",
+    "repairs": [
+      {
+        "scope": "owner",
+        "before_sha256": "835b496eda6a5460d015979dd7efd4d7b720c87d228559571f3a8cf597fd8743",
+        "after_sha256": "087ec81c67bff3ecc4e023cb3d914a050ff58903b6e20e98f6aa02ac5b7b2030",
+        "occurrences": 8
+      },
+      {
+        "scope": "public",
+        "before_sha256": "d63c9893eb0d431408e1d8b97fdb3266f45f8a2134bfbd2f7f81b4631857a709",
+        "after_sha256": "2eedec0922ba7ac9149b608696f4b646ec959bb58e005e17049c8b813e7755e3",
+        "occurrences": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-11T16:01:07.954777+00:00",
+  "passed": true,
+  "exact_algebra_checks": 17,
+  "checks": [
+    "HP13 first derivative",
+    "HP13 complete shifted ODE",
+    "HP13 squared quarter map",
+    "HP10 beta first moment",
+    "HP10 beta second moment",
+    "HP10 full density variance",
+    "HP24 covariance to squared-mean ratio",
+    "HP29\u2013HP36 uniform amplitude integral 8",
+    "HP29\u2013HP36 uniform amplitude integral 9",
+    "HP29\u2013HP36 uniform amplitude integral 10",
+    "HP29\u2013HP36 uniform amplitude integral 12",
+    "HP29\u2013HP36 uniform amplitude integral 14",
+    "HP31 original window exponent",
+    "HP33 relative error exponent",
+    "HP31 raw observable exponent",
+    "HP33 exact full relative coefficient",
+    "HP36 energy-error product",
+    "HP2 numerical full-period and conserved energy",
+    "HP10 independent phase quadrature of both moments",
+    "HP13\u2013HP14 numerical quarter map and negative covariance",
+    "HP8 and HP35 amplitude-sensitive finite face and derivative samples",
+    "HP39 finite original Wilson negative reflection square and retained error certificate"
+  ],
+  "numerical_face_samples": 3380,
+  "maximum_face_error_to_bound": 0.9999943572644917,
+  "maximum_derivative_error_to_bound": 0.350942788964466,
+  "illustration": {
+    "ell": 1.0,
+    "kappa": 1.0,
+    "Lambda": 1.8612097182041991,
+    "I": 1.3110287771460571,
+    "I_quadrature_error": 6.679101716144942e-13,
+    "period": 2.8175842073530806,
+    "coefficient_A_sample": 0.0019905501388882063,
+    "coefficient_B_sample": 2.538850331318417,
+    "coefficient_D_sample": 6.111549814728738,
+    "analytic_A_tail_bound_above_mode128": 3.8533722910681203e-23,
+    "caution": "Tail bound excludes numerical quadrature error. Figures are numerical samples of fully proved formulas.",
+    "vacuum_interval": [
+      0.2009618943233421,
+      2.799038105676658
+    ],
+    "uniform_violation_lower_bound_sample": 0.3168871006743619
+  },
+  "script_sha256": "29a4634aaaae5c1f0989580bdd028325573d0500a5d66da08dd9cca964ba922a",
+  "scope": "Diagnostics supplement HP1\u2013HP40; no actual quantum window coefficient is numerically assigned."
+}
