@@ -34,3 +34,7 @@ Run `verify_boundary_reflection.py` for its 66 checks and `fourth_return/verify_
 ## Global physical source and expectation maps
 
 [GPR1–GPR55](GLOBAL_PHYSICAL_RESPONSE.md) establish the exact physical source inverse and the original assembly-quotient inverse at every finite real source. The Wilson expectation map covers the interior of the full finite-box Wilson convex image with a unique analytic inverse. Two-link conditional averaging gives the complete original-path inverse susceptibility bound O(j⁴⁰). The [figure](GLOBAL_PHYSICAL_RESPONSE.png) shows the actual operators and Haar averaging map. Run `check_global_response.py` with SymPy for the exact trace, Gram, constant and polynomial-degree checks; the complete proof is retained alongside them.
+
+## Polynomial bounds in the actual vacuum
+
+[PC1–PC52](POLYNOMIAL_CONDITIONAL_BOUNDS.md) prove the full degree-two score comparison, an explicit smooth family attaining its exponent, the sharper colour-vector bound, and the exact receiving-link optimization inside the original phase. The resulting actual-vacuum bounds replace exponential losses by powers. [The inspected illustration](POLYNOMIAL_CONDITIONAL_BOUNDS.png) includes reproducible numerical quadrature of the proved sharpness family, identified separately from the physical vacuum. Run `verify_polynomial_conditional.py` with SymPy and mpmath for the 21 recorded checks.

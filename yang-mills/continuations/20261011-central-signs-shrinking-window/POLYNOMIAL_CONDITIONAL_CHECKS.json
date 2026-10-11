@@ -1,0 +1,124 @@
+{
+  "created_at": "2026-10-11T00:30:21.237551+00:00",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "PC7 exact rational orthogonality of all 25 Legendre pairs",
+      "passed": true
+    },
+    {
+      "name": "PC8 all five coefficient squared norms",
+      "passed": true,
+      "values": [
+        "1",
+        "3",
+        "25/2",
+        "119/2",
+        "9603/32"
+      ]
+    },
+    {
+      "name": "PC9-PC11 independently inverted exact 35 by 35 cube Gram",
+      "passed": true,
+      "inverse_trace": "105041/32",
+      "verified_inverse_entries": 1225
+    },
+    {
+      "name": "PC12 exact coordinate comparison for all 15 ambient monomials",
+      "passed": true
+    },
+    {
+      "name": "PC12 exact sphere relation retained in the numerator map",
+      "passed": true
+    },
+    {
+      "name": "PC13 exact coefficient-to-original-value comparison at rational chart points",
+      "passed": true
+    },
+    {
+      "name": "PC5 and PC25 exact dyadic inequalities",
+      "passed": true,
+      "cap_constant": "0.000000000013555920360762905259075065783267292105412965239848935658770178814",
+      "q_relative_constant": "0.09132031490214345175614562276378040107541237326119218809300503251"
+    },
+    {
+      "name": "PC16 complete 14-dimensional cap Gram at radius 1.0",
+      "passed": true,
+      "least_eigenvalue_of_difference": "0.00000017297981432462670529984925464041324628187936573733263366536991112"
+    },
+    {
+      "name": "PC16 complete 14-dimensional cap Gram at radius 0.5",
+      "passed": true,
+      "least_eigenvalue_of_difference": "0.00000000064821378082968750182466774565847730735575277796247933647058640328"
+    },
+    {
+      "name": "PC16 complete 14-dimensional cap Gram at radius 0.1",
+      "passed": true,
+      "least_eigenvalue_of_difference": "0.0000000000000016369381158670323161437027654064606155318363844455206800038579444"
+    },
+    {
+      "name": "PC16 complete 14-dimensional cap Gram at radius 0.02",
+      "passed": true,
+      "least_eigenvalue_of_difference": "4.1882605672177951684592530592346812650616796410716591615016130344e-21"
+    },
+    {
+      "name": "PC18-PC19 and PC25 radii and uniform constants across score regimes",
+      "passed": true
+    },
+    {
+      "name": "PC20-PC25 explicit smooth admissible density at B=1.0",
+      "passed": true,
+      "B8_polynomial_moment": "0.9981692221511617400004523965596123089730705713149143503903768013",
+      "B2_q_moment": "2.6318422339941676162796598488166652859472411770521413804788366292"
+    },
+    {
+      "name": "PC20-PC25 explicit smooth admissible density at B=4.0",
+      "passed": true,
+      "B8_polynomial_moment": "352.50924684435199797324093168378260200001918270584430021390292335",
+      "B2_q_moment": "11.15843665709015306438537621763476795482420950464191527261192233"
+    },
+    {
+      "name": "PC20-PC25 explicit smooth admissible density at B=16.0",
+      "passed": true,
+      "B8_polynomial_moment": "511.1069349448126215146658521712456785556944072657513532276686793",
+      "B2_q_moment": "12.983127707527847829661018871281435599996034934802531975586627066"
+    },
+    {
+      "name": "PC20-PC25 explicit smooth admissible density at B=64.0",
+      "passed": true,
+      "B8_polynomial_moment": "518.33773408239229301993419617399700585295662268954218429318132774",
+      "B2_q_moment": "13.103290303884733016632142277942121721803140942717617300767707578"
+    },
+    {
+      "name": "PC45-PC48 full original-word conjugation, coefficients and family maximum m=4",
+      "passed": true,
+      "d_circle": "0.032360679774997896964091736687312762354406183596115257242708972454",
+      "tested_family_size": 60
+    },
+    {
+      "name": "PC45-PC48 full original-word conjugation, coefficients and family maximum m=6",
+      "passed": true,
+      "d_circle": "0.016897658726646566689714939285807140947116435124925139129939716043",
+      "tested_family_size": 210
+    },
+    {
+      "name": "PC45-PC48 full original-word conjugation, coefficients and family maximum m=8",
+      "passed": true,
+      "d_circle": "0.0090771072588678453467345758348977289871277390590323451808408722116",
+      "tested_family_size": 504
+    },
+    {
+      "name": "PC49 full central-chord derivative and odd harmonic with arbitrary boundary links",
+      "passed": true,
+      "original_derivative_norm": "0.056783454270420286872646564991884111461704773907481710673450582388",
+      "harmonic_lower_bound": "0.00013090169943749474241022934171828190588601545899028814310677243113",
+      "affine_cross_remainder": "6.085416340971550710966128163476596076618660965149500863399517206e-69"
+    },
+    {
+      "name": "PC50-PC52 exact path prefactors and powers",
+      "passed": true
+    }
+  ],
+  "prior_full_word_definitions_sha256": "7c482ce9596d6c4dc62555c06cf8c495a2192ce9ffc6b0a4c024145d2e7c3f20",
+  "scope": "Exact rational Gram inversion and polynomial identities; numerical complete cap Grams and 65-digit full-word harmonic checks. General proofs are in PC1-PC52."
+}

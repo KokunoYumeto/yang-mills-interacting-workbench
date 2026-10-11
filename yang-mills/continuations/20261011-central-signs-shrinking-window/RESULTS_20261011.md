@@ -70,3 +70,14 @@ GPR19–GPR26 strengthen the earlier response statement to strict positive defin
 \left(1+128\sqrt3\,{10000j^2\over\kappa_*^2}\right)^8=O(j^{40}).
 \]
 This improves the provisional local-coordinate powers while preserving all original objects. The complete source inverse has its different explicit estimate; no full spectral inverse is assigned the face-response bound. GPR53–GPR55 also prove the actual integrated homogeneous-response identity, with its endpoint justified by the original vacuum energy bound. These finite-source results do not determine the actual shrinking-window phase weight or the continuum endpoint. The unquotiented relation-kernel inverse is a subsequent calculation, not assumed here. Exact symbolic checks and a reproducible inspected figure accompany the proof. No novelty claim is made for the underlying elliptic or convex methods.
+
+## SZ-20261011-009 — polynomial score comparison and original-row optimization
+
+[PC1–PC52](POLYNOMIAL_CONDITIONAL_BOUNDS.md) prove a complete degree-two quaternion-polynomial comparison in the original radius-two metric. For every positive unit density with logarithmic score at most \(B\),
+\[
+\int|P|^2\rho\,dU\ge c_{\rm cap}(1+B)^{-8}\int|P|^2dU,
+\qquad c_{\rm cap}=\frac{\cos^{14}(1/4)}{1024\cdot105041\pi3^{9/2}}>2^{-37}.
+\]
+The exact stereographic map retains its denominator and all lower-degree coefficients. A complete 35-dimensional cube Gram estimate and averaging every cap centre prove the bound. The explicit smooth densities PC20–PC22 prove exponent-eight optimality for this full polynomial space. The original colour-vector receiving map has exponent two, with its own proved optimality family and complete constant in PC25.
+
+PC45–PC48 prove the full word, conjugation and derivative maps for a larger pair of links already present in the original phase. Its coefficient \(d^\circ=8\cos(3h)\cos^3h/n^3\) is the exact maximum within the specified receiving family; the original state and regulator path are unchanged. PC49–PC52 give actual-vacuum lower bounds whose right sides have scales \(j^{-46}\) for odd mass and energy, \(j^{-44}\) for even mass, and \(j^{-45}\) for the positive endpoint correction. These improve the exponential bounds in JP43–JP49. They are asymptotics of proved bounds, not of the unknown expectations. The complete four-loop/gradient cancellation and low-window mass remain unresolved. All 21 checks passed; exact Gram checks and numerical word/limit checks are distinguished in the receipt. The inspected figure illustrates the proved sharpness family and original coefficients, with full reproducible quadrature retained.
