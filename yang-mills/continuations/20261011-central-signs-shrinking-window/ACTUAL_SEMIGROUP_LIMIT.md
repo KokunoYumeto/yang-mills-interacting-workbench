@@ -631,3 +631,13 @@ The complete [CP1–CP50 construction](CURVATURE_PHASE_RECONSTRUCTION.md) now ad
 [DH1–DH19 and DH9a](DISTRIBUTION_CURVATURE_HISTORIES.md) lift the original anchored curvature histories into continuous paths in explicit negative Hilbert spaces and glue their interior tests into a spatial distribution. Every coefficient, local patch and finite-volume moment is retained. [DR1–DR17](DISTRIBUTION_HISTORY_REVIEW.md) identify an infinite-dimensional ambient boundary kernel, then prove that the actual limiting histories have a unique measurable representative recovered from interior smooth cutoffs. The section is not continuous; the exact boundary-layer example is included. The actual limiting Hilbert moments give a Gaussian tail upper bound and an explicit logarithmic time modulus, without asserting a Gaussian law.
 
 These are continuous distribution histories. They do not yet prove a nonzero limiting field, spatial smoothness, a regular initial character, or positive energy surviving the original shrinking window. The complete CP character and spectral-loss maps remain in force.
+
+## Evaluated phase norm loss and the continuous defect space
+
+[BP1–BP33](BOUNDED_PHASE_SPECTRAL_RECEIVING.md) prove complete actual curvature-phase Gram and energy matrices and explicit finite spectral and heat bounds. Fixed phase parameters retain their unit norm in the continuous Hilbert representation. On the original regulator path, parameter sequences with a_j theta_j^2 tending to a positive finite value or infinity lose a quantitatively positive amount of norm. The original curvature, state, scalar phase and energy units remain explicit.
+
+BP28–BP33 construct the nonzero defect space and its exact maps to the original multiplication algebra. Compression fails the unitary multiplication law by a positive operator with an evaluated vacuum lower bound. Every fixed bounded-energy projection annihilates the defect space. These results quantify high-energy escape; they do not establish the prescribed low-energy mass or smooth continuum theory.
+
+## Complete spectral description of the discarded phase component
+
+[BR16–BR18, BR22 and BR25](BOUNDED_PHASE_SPECTRAL_REVIEW.md) strengthen the phase result. The continuous projection equals the increasing strong limit of the original bounded-energy projections. Explicit finite-regulator tail and moving-band lower bounds locate positive spectral mass in the escaping sector. Every bounded parameter sequence retains its vacuum phase norm. The complete matrix of multiplication defects is the positive Gram matrix K_theta^* K_phi. These statements keep the original energies, state, scalars and all interval endpoints; they do not assert the prescribed low-energy mass.

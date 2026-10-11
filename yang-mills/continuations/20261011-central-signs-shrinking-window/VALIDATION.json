@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T08:11:57.983710+00:00",
+  "checked_utc": "2026-10-11T08:41:19.185954+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -157,7 +157,7 @@
     },
     {
       "source": "ACTUAL_SEMIGROUP_LIMIT.md",
-      "sha256": "c9fda8c47289a1dc9a5d89d190b5c64affc56454e317ca4d07e66a450a809ef1",
+      "sha256": "0cb6a1dda5cb4956b6a140f27ed607f25ff194b192c4f22d772d6ed8169a9046",
       "complete_math_blocks": 460,
       "split_to_aligned_wrappers": 7
     },
@@ -175,7 +175,7 @@
     },
     {
       "source": "CONJUGATE_VARIANCE.md",
-      "sha256": "4e2ed66028be7e4970940a5ba38d272296cce45cbbaa9b2dcdc27f40bdcf60f3",
+      "sha256": "bb929a4c743e05ef92c76ba64584e4df2f7142818f5ca430b1b59e63e746b38b",
       "complete_math_blocks": 362,
       "split_to_aligned_wrappers": 1
     },
@@ -211,7 +211,7 @@
     },
     {
       "source": "CURVATURE_PHASE_RECONSTRUCTION.md",
-      "sha256": "6501ed4fb0c10e94f7440e94f0f63487d60c291f6943c7721683e81e4205f5a6",
+      "sha256": "bc7d0a781e268b18448542ad6f850cf0e305e7d9cfcd95d2735a87862ea5a30c",
       "complete_math_blocks": 308,
       "split_to_aligned_wrappers": 3
     },
@@ -235,13 +235,13 @@
     },
     {
       "source": "HESSIAN_RECEIVING_REVIEW.md",
-      "sha256": "7ed74af1b0c1f6a54815eb03e3c2753f645586dbb40f64021fce6cfb91f43e7e",
+      "sha256": "4cc14c64f6b2a0c5e0c92b87435acdf8c780ec8018eda2280fd08271356e6dbc",
       "complete_math_blocks": 224,
       "split_to_aligned_wrappers": 8
     },
     {
       "source": "RAW_S6_HESSIAN_RECEIVING.md",
-      "sha256": "9eb6c95bd67aceae4bc2b5cd2363dfe5112283b6302b6a8702612338a7c804f4",
+      "sha256": "6b2959197f50e968c5620fe206d5c82436de33f2f2449325c3241a08bfa8c77a",
       "complete_math_blocks": 333,
       "split_to_aligned_wrappers": 5
     },
@@ -256,6 +256,24 @@
       "sha256": "dc06575fb70f26a259adc11de16e78a41485230d77f54b8e6f3f75dcdc60828a",
       "complete_math_blocks": 168,
       "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "BOUNDED_PHASE_SPECTRAL_RECEIVING.md",
+      "sha256": "b47323d2e14e7ae45c193576ec4e44d1be574bc87c1132deb8f3d6efb2df5214",
+      "complete_math_blocks": 173,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT.md",
+      "sha256": "2ddc1750b7bfec4129268887cf679b88395f6e8a3025f69253d9d839834e7d83",
+      "complete_math_blocks": 337,
+      "split_to_aligned_wrappers": 4
+    },
+    {
+      "source": "BOUNDED_PHASE_SPECTRAL_REVIEW.md",
+      "sha256": "c170d7a38df9c71e6bd440ba8d6c87de9ff9d18b78e4e51e78cf1a95b73654c8",
+      "complete_math_blocks": 234,
+      "split_to_aligned_wrappers": 1
     }
   ],
   "figures": [
@@ -428,9 +446,24 @@
       "file": "compact_covariance_bound.png",
       "sha256": "05324951306211e79609daef3026e1cf1816f32738f0e43fe3a695aad92d3b17",
       "visually_inspected": true
+    },
+    {
+      "file": "BOUNDED_PHASE_SPECTRAL_RECEIVING.png",
+      "sha256": "f7c3027bbcf04ab42ae90a9d8913e0c0f7d6bf851f8d21b637bf26f602163a26",
+      "visually_inspected": true
+    },
+    {
+      "file": "DIRECTIONAL_ROOT_DEFECT.png",
+      "sha256": "061023512003763f1a787e073d85c5c1e00db2bb2710209069ed0a97577d3dd4",
+      "visually_inspected": true
+    },
+    {
+      "file": "projection_receiver.png",
+      "sha256": "3d74573b014dc045a128f045e7c730609d8ee35262ab8de9a3725e08f098dcc5",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure. Owner read PRE1–PRE55, ESE1–ESE38, ID1–ID57, HR1–HR25, LS1–LS57 and the complete SR derivation. Full stochastic laws, kernel endpoint signs, affine terms, all derivative supports, original-path constants, norm domains and both spectral endpoint signs checked. All retained scripts replayed. Independent source escaping repaired before acceptance. Owner read and checked CW1–CW49 in full and replayed the exact word, rational curl, original-row and coefficient checks. Owner read AC1–AC50 and derived OW1–OW23; complete signed covariance, full residual, source error, cubic order and path constants checked. Owner fully reviewed ASL1–ASL66, UR1–UR15, derived OW24–OW25 and TR1–TR17, fully read CV1–CV47 including its lettered equations; original source comparison and complete receiving scopes checked. Complete AT1–AT60, R1–R29 and LEM1–LEM55 reviewed, all 685 check groups replayed; original temporal source comparison checked. LC1–LC42 including LC15a/LC25a fully reviewed;38567 check groups replayed; corrected figure inspected. PVC1–PVC50 and CP1–CP50 completely reviewed,231 checks replayed, figures inspected. DH/DR/OS/HVR completely reviewed;35330 checks replayed; figures inspected. RH/ZU/PVI completely reviewed; all checks replayed and three figures inspected.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure. Owner read PRE1–PRE55, ESE1–ESE38, ID1–ID57, HR1–HR25, LS1–LS57 and the complete SR derivation. Full stochastic laws, kernel endpoint signs, affine terms, all derivative supports, original-path constants, norm domains and both spectral endpoint signs checked. All retained scripts replayed. Independent source escaping repaired before acceptance. Owner read and checked CW1–CW49 in full and replayed the exact word, rational curl, original-row and coefficient checks. Owner read AC1–AC50 and derived OW1–OW23; complete signed covariance, full residual, source error, cubic order and path constants checked. Owner fully reviewed ASL1–ASL66, UR1–UR15, derived OW24–OW25 and TR1–TR17, fully read CV1–CV47 including its lettered equations; original source comparison and complete receiving scopes checked. Complete AT1–AT60, R1–R29 and LEM1–LEM55 reviewed, all 685 check groups replayed; original temporal source comparison checked. LC1–LC42 including LC15a/LC25a fully reviewed;38567 check groups replayed; corrected figure inspected. PVC1–PVC50 and CP1–CP50 completely reviewed,231 checks replayed, figures inspected. DH/DR/OS/HVR completely reviewed;35330 checks replayed; figures inspected. RH/ZU/PVI completely reviewed; all checks replayed and three figures inspected. BP and DP full owner review; checks replayed; both figures inspected.",
   "pdf_compiled": false,
   "new_external_pdf_read": false,
   "spectral_weight_checks": 104,
@@ -668,5 +701,83 @@
     "exit_code": 0,
     "pdf_published": false
   },
-  "weighted_covariance_exact_checks": true
+  "weighted_covariance_exact_checks": true,
+  "phase_directional_fidelity": [
+    {
+      "source": "BOUNDED_PHASE_SPECTRAL_RECEIVING.md",
+      "private_sha256": "c5ecf72cbce0b2d33771bf0c2132215d5dd5f09af50e39cb0c28d738d3b2aad1",
+      "public_sha256": "bcb7511151a7e51162d0f792661c3c62787fbf3dbf707204744640c1f0048de4",
+      "all_original_math_blocks_retained": true,
+      "changes": "Pinned programme references and public ledger navigation; complete original mathematics retained."
+    },
+    {
+      "source": "DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT.md",
+      "private_sha256": "67d29457237ff48b8c51fe19783b32be8c3a5552f293f34ed1ef0153d4425dd7",
+      "public_sha256": "2ddc1750b7bfec4129268887cf679b88395f6e8a3025f69253d9d839834e7d83",
+      "all_original_math_blocks_retained": true,
+      "changes": "Pinned programme references and public ledger navigation; complete original mathematics retained."
+    }
+  ],
+  "phase_directional_compile": {
+    "utc": "2026-10-11T08:41:19.185954+00:00",
+    "tex_sha256": "44de5848733496840711a42f4ef55f99cb37f745a914d43fbe89d5d0d81b2aae",
+    "pages": null,
+    "source_files": 45,
+    "math_blocks": 11409,
+    "status": "One bounded mutex acquisition returned unavailable. Complete source publication continues; current45-source build retained for next natural checkpoint.",
+    "previous44_source_pages": 432,
+    "pdf_published": false
+  },
+  "phase_directional_owner_review": {
+    "utc": "2026-10-11T08:41:19.185954+00:00",
+    "complete_proofs": [
+      "BP1–BP33",
+      "DP1–DP43 plus36a/36b",
+      "BR1–BR27"
+    ],
+    "full_owner_reading": true,
+    "independent_BP_review": "BR1–BR27 fully read and its exact strengthenings propagated in their complete proof.",
+    "source_fidelity": {
+      "utc": "2026-10-11T08:35:25.669082+00:00",
+      "proofs": [
+        {
+          "source": "BOUNDED_PHASE_SPECTRAL_RECEIVING.md",
+          "private_sha256": "c5ecf72cbce0b2d33771bf0c2132215d5dd5f09af50e39cb0c28d738d3b2aad1",
+          "public_sha256": "bcb7511151a7e51162d0f792661c3c62787fbf3dbf707204744640c1f0048de4",
+          "all_original_math_blocks_retained": true,
+          "changes": "Pinned programme references and public ledger navigation; complete original mathematics retained.",
+          "published_sha256": "b47323d2e14e7ae45c193576ec4e44d1be574bc87c1132deb8f3d6efb2df5214"
+        },
+        {
+          "source": "DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT.md",
+          "private_sha256": "67d29457237ff48b8c51fe19783b32be8c3a5552f293f34ed1ef0153d4425dd7",
+          "public_sha256": "2ddc1750b7bfec4129268887cf679b88395f6e8a3025f69253d9d839834e7d83",
+          "all_original_math_blocks_retained": true,
+          "changes": "Pinned programme references and public ledger navigation; complete original mathematics retained.",
+          "published_sha256": "2ddc1750b7bfec4129268887cf679b88395f6e8a3025f69253d9d839834e7d83"
+        },
+        {
+          "source": "BOUNDED_PHASE_SPECTRAL_REVIEW.md",
+          "private_sha256": "0dac6fbe299abe3bb4289a33d38f4bd6e259efd44046c9499bff5600a015f823",
+          "public_sha256": "c170d7a38df9c71e6bd440ba8d6c87de9ff9d18b78e4e51e78cf1a95b73654c8",
+          "all_original_math_blocks_retained": true,
+          "published_sha256": "c170d7a38df9c71e6bd440ba8d6c87de9ff9d18b78e4e51e78cf1a95b73654c8"
+        }
+      ],
+      "all_original_math_blocks_retained": true
+    },
+    "checks_replayed": [
+      "798 owner phase diagnostics",
+      "Nine finite boxes and60 direct quaternion checks for DP",
+      "Independent phase review checks",
+      "Affected CP/HVR/RH checks"
+    ],
+    "figures_inspected": [
+      "BOUNDED_PHASE_SPECTRAL_RECEIVING.png",
+      "DIRECTIONAL_ROOT_DEFECT.png",
+      "projection_receiver.png"
+    ],
+    "source_correction": "DP21 universal witness k=0,l=(n-3)/2 includes n=3. Direct byte audit found all source passages intact; earlier truncated tool output was not a source defect.",
+    "scope": "Actual high-energy loss, its exact defect spaces and root-covariance maps proved. Original low-energy mass, smooth continuum state and reconstruction endpoint remain active."
+  }
 }

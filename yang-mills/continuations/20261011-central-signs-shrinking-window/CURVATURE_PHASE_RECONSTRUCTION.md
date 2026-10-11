@@ -601,3 +601,13 @@ These are continuous distribution histories. They do not yet prove a nonzero lim
 The full [OS1–OS40 calculation](ORIGINAL_SOURCE_COVARIANCE.md), including OS8a and OS13a, proves a volume-independent lower Hessian bound for the logarithm of the actual interacting vacuum. The exact face Hessian and sign-weighted integration identity give positive finite first-energy bounds for every nonzero signed test, including zero-integral tests. They also give a positive lower bound of order a_j for the original-source variance. No source average is substituted.
 
 [HVR1–HVR34](HESSIAN_RECEIVING_REVIEW.md) sharpen the lower bound using the same lower first-energy constant in the denominator, construct an explicit raw spectral window, and give a sharp Jensen heat bound at every positive time. They compute the full leading face-Hessian term, retaining the remaining ground-state Hessian contraction. These spectral windows have energies of order 1/a_j. The original window kappa_*/j, the actual variance upper bound of order a_j, and surviving positive continuum weight are still calculations to be completed.
+
+## Evaluated phase norm loss and the continuous defect space
+
+[BP1–BP33](BOUNDED_PHASE_SPECTRAL_RECEIVING.md) prove complete actual curvature-phase Gram and energy matrices and explicit finite spectral and heat bounds. Fixed phase parameters retain their unit norm in the continuous Hilbert representation. On the original regulator path, parameter sequences with a_j theta_j^2 tending to a positive finite value or infinity lose a quantitatively positive amount of norm. The original curvature, state, scalar phase and energy units remain explicit.
+
+BP28–BP33 construct the nonzero defect space and its exact maps to the original multiplication algebra. Compression fails the unitary multiplication law by a positive operator with an evaluated vacuum lower bound. Every fixed bounded-energy projection annihilates the defect space. These results quantify high-energy escape; they do not establish the prescribed low-energy mass or smooth continuum theory.
+
+## Complete spectral description of the discarded phase component
+
+[BR16–BR18, BR22 and BR25](BOUNDED_PHASE_SPECTRAL_REVIEW.md) strengthen the phase result. The continuous projection equals the increasing strong limit of the original bounded-energy projections. Explicit finite-regulator tail and moving-band lower bounds locate positive spectral mass in the escaping sector. Every bounded parameter sequence retains its vacuum phase norm. The complete matrix of multiplication defects is the positive Gram matrix K_theta^* K_phi. These statements keep the original energies, state, scalars and all interval endpoints; they do not assert the prescribed low-energy mass.

@@ -25,7 +25,7 @@ for env in ['gathered','split','array']:
 provider_hashes = {
  'LOCAL_CURVATURE_BUDGET.md':'7e394f8c0e4a7d1cb2bfa4ed4e7b7438a17d6b864133ae51156ee022b4281a56',
  'ACTUAL_LOW_ENERGY_MAPS.md':'ca25438bb2e1abef8c06fb3266f4e7dab7db4e301347933801c8e3eafe995b12',
- 'ACTUAL_SEMIGROUP_LIMIT.md':'c9fda8c47289a1dc9a5d89d190b5c64affc56454e317ca4d07e66a450a809ef1',
+ 'ACTUAL_SEMIGROUP_LIMIT.md':'0cb6a1dda5cb4956b6a140f27ed607f25ff194b192c4f22d772d6ed8169a9046',
  'SQUARE_ROOT_SCORE_RECEIVING_MAPS.md':'5664836f2cf24e0ed6e58849e508afb9990961d5bf846626138229e88fa7f28f'}
 for path, expected in provider_hashes.items():
     actual=hashlib.sha256((W/path).read_bytes()).hexdigest()

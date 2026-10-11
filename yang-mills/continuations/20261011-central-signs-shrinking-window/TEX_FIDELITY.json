@@ -152,7 +152,7 @@
     },
     {
       "source": "ACTUAL_SEMIGROUP_LIMIT.md",
-      "sha256": "c9fda8c47289a1dc9a5d89d190b5c64affc56454e317ca4d07e66a450a809ef1",
+      "sha256": "0cb6a1dda5cb4956b6a140f27ed607f25ff194b192c4f22d772d6ed8169a9046",
       "complete_math_blocks": 460,
       "split_to_aligned_wrappers": 7
     },
@@ -170,7 +170,7 @@
     },
     {
       "source": "CONJUGATE_VARIANCE.md",
-      "sha256": "4e2ed66028be7e4970940a5ba38d272296cce45cbbaa9b2dcdc27f40bdcf60f3",
+      "sha256": "bb929a4c743e05ef92c76ba64584e4df2f7142818f5ca430b1b59e63e746b38b",
       "complete_math_blocks": 362,
       "split_to_aligned_wrappers": 1
     },
@@ -206,7 +206,7 @@
     },
     {
       "source": "CURVATURE_PHASE_RECONSTRUCTION.md",
-      "sha256": "6501ed4fb0c10e94f7440e94f0f63487d60c291f6943c7721683e81e4205f5a6",
+      "sha256": "bc7d0a781e268b18448542ad6f850cf0e305e7d9cfcd95d2735a87862ea5a30c",
       "complete_math_blocks": 308,
       "split_to_aligned_wrappers": 3
     },
@@ -230,13 +230,13 @@
     },
     {
       "source": "HESSIAN_RECEIVING_REVIEW.md",
-      "sha256": "7ed74af1b0c1f6a54815eb03e3c2753f645586dbb40f64021fce6cfb91f43e7e",
+      "sha256": "4cc14c64f6b2a0c5e0c92b87435acdf8c780ec8018eda2280fd08271356e6dbc",
       "complete_math_blocks": 224,
       "split_to_aligned_wrappers": 8
     },
     {
       "source": "RAW_S6_HESSIAN_RECEIVING.md",
-      "sha256": "9eb6c95bd67aceae4bc2b5cd2363dfe5112283b6302b6a8702612338a7c804f4",
+      "sha256": "6b2959197f50e968c5620fe206d5c82436de33f2f2449325c3241a08bfa8c77a",
       "complete_math_blocks": 333,
       "split_to_aligned_wrappers": 5
     },
@@ -251,12 +251,30 @@
       "sha256": "dc06575fb70f26a259adc11de16e78a41485230d77f54b8e6f3f75dcdc60828a",
       "complete_math_blocks": 168,
       "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "BOUNDED_PHASE_SPECTRAL_RECEIVING.md",
+      "sha256": "b47323d2e14e7ae45c193576ec4e44d1be574bc87c1132deb8f3d6efb2df5214",
+      "complete_math_blocks": 173,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "DIRECTIONAL_POTENTIAL_AND_ROOT_DEFECT.md",
+      "sha256": "2ddc1750b7bfec4129268887cf679b88395f6e8a3025f69253d9d839834e7d83",
+      "complete_math_blocks": 337,
+      "split_to_aligned_wrappers": 4
+    },
+    {
+      "source": "BOUNDED_PHASE_SPECTRAL_REVIEW.md",
+      "sha256": "c170d7a38df9c71e6bd440ba8d6c87de9ff9d18b78e4e51e78cf1a95b73654c8",
+      "complete_math_blocks": 234,
+      "split_to_aligned_wrappers": 1
     }
   ],
   "all_math_blocks_preserved": true,
   "typesetting_map": "Split wrappers become aligned; inert relax and empty groups protect leading and new-row square brackets; a tag inside an inner alignment moves outside that alignment. Equation content and tags are retained. Tables retain all cells with their actual column count. Markdown set-delimiter corrections are recorded separately in the source-fidelity receipt.",
-  "sha256": "bfcaa008a26d621ad55161d8d52c7970c06eedfb206813fdcb823516c58e7830",
-  "compilation_confirmed": true,
-  "compile_status": "Current 42-source edition compiled successfully. Complete source is public; the new PDF remains local.",
-  "compile_pages": 412
+  "sha256": "44de5848733496840711a42f4ef55f99cb37f745a914d43fbe89d5d0d81b2aae",
+  "compilation_confirmed": false,
+  "compile_status": "One bounded mutex acquisition returned unavailable. Complete source publication continues; current45-source build retained for next natural checkpoint.",
+  "compile_pages": null
 }
