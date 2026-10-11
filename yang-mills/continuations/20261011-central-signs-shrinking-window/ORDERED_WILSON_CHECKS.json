@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "checks": 637,
+  "exact_rational_coefficient_and_orientation_checks": 240,
+  "exact_cubic_and_quartic_cancellation_checks": 180,
+  "explicit_source_defect_checks": 9,
+  "numerical_global_remainder_checks": 200,
+  "original_path_checks": 8,
+  "precision_digits": 90,
+  "samples": [
+    {
+      "j": 2,
+      "j2_potential_remainder": "-5231.5133946233089627797721726656371",
+      "target": "-5073.3901580209602727312673275367245",
+      "potential_over_j6": "101759.85978703626345609482995117333",
+      "target_leading": "98696.044010893586188344909998761511"
+    },
+    {
+      "j": 8,
+      "j2_potential_remainder": "-5074.0094621244235124183069630607338",
+      "target": "-5073.3901580209602727312673275367245",
+      "potential_over_j6": "98708.091565393978144918051690289504",
+      "target_leading": "98696.044010893586188344909998761511"
+    },
+    {
+      "j": 32,
+      "j2_potential_remainder": "-5073.3925772018108029779295396070604",
+      "target": "-5073.3901580209602727312673275367245",
+      "potential_over_j6": "98696.091072830124009728549041242953",
+      "target_leading": "98696.044010893586188344909998761511"
+    },
+    {
+      "j": 128,
+      "j2_potential_remainder": "-5073.3901674708858392773927516031284",
+      "target": "-5073.3901580209602727312673275367245",
+      "potential_over_j6": "98696.044194729293743113464578157679",
+      "target_leading": "98696.044010893586188344909998761511"
+    }
+  ],
+  "proof_sha256": "6529e2ebac65c5464c23a95016f49520a7a9149c6a7c930dbd51d853b2f9c6e1"
+}
