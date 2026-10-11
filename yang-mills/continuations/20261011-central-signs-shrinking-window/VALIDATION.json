@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T16:37:11.644226+00:00",
+  "checked_utc": "2026-10-11T17:28:27.159799+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -325,7 +325,7 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "7ddf0c7c480987aa02244b13720e74e888db2608914679d5adc3b0cda4b1d3e8",
+      "sha256": "e2dfdd14fc8d8e19e1afbd7ec4de8027c30d486588906cbbb6486142654a0350",
       "complete_math_blocks": 545,
       "split_to_aligned_wrappers": 0
     },
@@ -367,7 +367,7 @@
     },
     {
       "source": "CURRENT_COVARIANCE_EQUALITY.md",
-      "sha256": "561ee71ef2e6f46966b8a5b14a4b41592b632310fb0df588f35634c3d9edbb04",
+      "sha256": "30d10adc61b49d92b4bc605691ffbe7821df3fbadbfb71e458cab8dfe9d84705",
       "complete_math_blocks": 242,
       "split_to_aligned_wrappers": 4
     },
@@ -397,9 +397,15 @@
     },
     {
       "source": "ENERGY_ROOT_AND_ANCHORED_HISTORIES.md",
-      "sha256": "dfeb72f1df6661572db7c0292a894368a0934e3ec40afc826847330c878e3445",
+      "sha256": "a4744ad61a6c4abf5f9439e71a8388fb6b60a7da719cce6a0926a804d343cfdc",
       "complete_math_blocks": 220,
       "split_to_aligned_wrappers": 4
+    },
+    {
+      "source": "POSITIVE_TIME_COVARIANCE.md",
+      "sha256": "4ddb45d18d9a08b447be9f9c73a79fc6fc718fcd9bafe50e93f9152436009240",
+      "complete_math_blocks": 213,
+      "split_to_aligned_wrappers": 0
     }
   ],
   "figures": [
@@ -696,6 +702,11 @@
     {
       "file": "ENERGY_ROOT_MAP.png",
       "sha256": "0342ca1bc1b9dda52a1a7765a0b2f2c90cd0641315cee3a9263905c50cd96bca",
+      "visually_inspected": true
+    },
+    {
+      "file": "POSITIVE_TIME_MAP.png",
+      "sha256": "62d90135081ed4c6ea44aed3d5a8730687acaecba9d210f00746ac0e1c0437bb",
       "visually_inspected": true
     }
   ],
@@ -2205,6 +2216,122 @@
       "result": "All eighteen rendered pages inspected. New equations fit the margins, the reflow after EF5 retains every term, and no new clipping or overlap was found. The figure was inspected at full raster resolution and in its compiled page.",
       "figure_repair": "The angle brackets in the EF27 annotation use mathematical font rendering; the final raster and compiled figure retain the exact formula.",
       "figure": "ENERGY_ROOT_MAP.png"
+    }
+  },
+  "positive_time_review": {
+    "utc": "2026-10-11T17:24:04.574646+00:00",
+    "coverage": "PT1–PT36 complete owner derivation and review: all two-time covariance coefficients, weighted adjoints, finite-regulator domains, Ricci factor, gauge exact subspace, full exterior inverse, convergence bound, finite truncation vanishing and exact critical-tail receiver.",
+    "source_correction": "Johnsen v2 original.tex line1025: the printed range/kernel identity needs the orthogonal complement on the range. Closed range and zero kernel then give the stated inverse. Original source unchanged; independently proved specialization PT14–PT15.",
+    "strengthening": "PT33–PT34 prove that the zeroth term is of order a and every truncation with a(N+1) tending to zero vanishes. PT35–PT36 locate the entire possible surviving response near one for Q_z and give its exact unitary receiving map.",
+    "limitations": "No actual limiting response or original shrinking-window weight is assigned a positive value. No strict convexity from the Euclidean sources is imported on the compact lattice. No finite component projection is assumed to preserve exact forms.",
+    "actual_reading": "CE1–CE11, EF1–EF3 and EF19–EF27 reread directly, with previous full BM reading retained. Johnsen source lines934–1167 and1439–1558; Lo source lines308–446 and2029–2083 read directly. Only these bounded passages were read, not the complete papers. BM13–BM17 original face Hessian blocks, tensor minimum argument and full Bochner identity reread before publication; no new defect found in these inputs.",
+    "diagnostics": {
+      "exact_algebra_checks": 9,
+      "exact_labels": [
+        "PT5 complete two-time cancellation",
+        "PT24 full geometric remainder 0",
+        "PT24 full geometric remainder 1",
+        "PT24 full geometric remainder 2",
+        "PT24 full geometric remainder 7",
+        "PT24 full geometric remainder 19",
+        "PT29 exact window threshold",
+        "PT26 all kappa factors",
+        "PT23 contraction identity"
+      ],
+      "numerical_checks": 2720,
+      "worst_relative_residual": 1.518076699910111e-10,
+      "scope": "Noncommuting finite matrices test the exact operator identities and bounds. They are not sampled Yang–Mills states; complete proofs are in PT1–PT36.",
+      "figure": "Exact maps and geometric transfer functions; no physical data or assigned limiting coefficient."
+    },
+    "figure_inspected": true,
+    "novelty_claim": false,
+    "status": "Accepted; compilation and publication pending.",
+    "public_proofs": [
+      {
+        "source": "POSITIVE_TIME_COVARIANCE.md",
+        "prefix": "PT",
+        "owner_sha256": "ca6dc8265346da156593ae7ee723463902778c4c677ea81cc4755243d2dcfc30",
+        "public_sha256": "4ddb45d18d9a08b447be9f9c73a79fc6fc718fcd9bafe50e93f9152436009240",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T17:28:27.159799+00:00",
+      "tex_sha256": "97d1d62268726ad05b4ed1a92f809d890d303562ea7324ea27144d54a89a0615",
+      "pdf_sha256": "48bd6c69ec292454668b18f70dc5e73b5760b2904941b58ceebbf9010a70abc6",
+      "pages": 680,
+      "source_files": 67,
+      "math_blocks": 16858,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "complete": true,
+        "pages": 680,
+        "new_proof_pages": [
+          672,
+          673,
+          674,
+          675,
+          676,
+          677,
+          678,
+          679,
+          680
+        ],
+        "propagation_pages": [
+          544,
+          545,
+          621,
+          622,
+          669,
+          670,
+          671
+        ],
+        "result": "All new proof pages and changed receiving notes inspected after rendering. Equations fit the margins and retain all terms. The final receiving note now starts after the existing EF figure rather than being split around it. The source figure and its compiled page were inspected at full resolution. No new clipping, overlap, missing glyph or overflow was found.",
+        "figure": "POSITIVE_TIME_MAP.png",
+        "figure_repair": "Moved the diagram arrows below their captions; all definitions, constants and transfer functions retained.",
+        "final_compile": "The final edition remains 680 pages. PT pages remain672–680; the complete propagated EF note now appears on671."
+      }
+    },
+    "pending": "Archive and verified publication."
+  },
+  "positive_time_compile": {
+    "utc": "2026-10-11T17:28:27.159799+00:00",
+    "tex_sha256": "97d1d62268726ad05b4ed1a92f809d890d303562ea7324ea27144d54a89a0615",
+    "pdf_sha256": "48bd6c69ec292454668b18f70dc5e73b5760b2904941b58ceebbf9010a70abc6",
+    "pages": 680,
+    "source_files": 67,
+    "math_blocks": 16858,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "complete": true,
+      "pages": 680,
+      "new_proof_pages": [
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680
+      ],
+      "propagation_pages": [
+        544,
+        545,
+        621,
+        622,
+        669,
+        670,
+        671
+      ],
+      "result": "All new proof pages and changed receiving notes inspected after rendering. Equations fit the margins and retain all terms. The final receiving note now starts after the existing EF figure rather than being split around it. The source figure and its compiled page were inspected at full resolution. No new clipping, overlap, missing glyph or overflow was found.",
+      "figure": "POSITIVE_TIME_MAP.png",
+      "figure_repair": "Moved the diagram arrows below their captions; all definitions, constants and transfer functions retained.",
+      "final_compile": "The final edition remains 680 pages. PT pages remain672–680; the complete propagated EF note now appears on671."
     }
   }
 }
