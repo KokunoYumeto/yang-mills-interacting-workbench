@@ -1,0 +1,2116 @@
+{
+  "faces": {
+    "B": {
+      "base_vertex": [
+        0,
+        0,
+        0
+      ],
+      "axes_zero_based": [
+        0,
+        1
+      ],
+      "original_word": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          0,
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          1,
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          0,
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          1,
+          -1
+        ]
+      ]
+    },
+    "T": {
+      "base_vertex": [
+        0,
+        0,
+        1
+      ],
+      "axes_zero_based": [
+        0,
+        1
+      ],
+      "original_word": [
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          0,
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          1,
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          0,
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          1,
+          -1
+        ]
+      ]
+    },
+    "S": {
+      "base_vertex": [
+        0,
+        0,
+        0
+      ],
+      "axes_zero_based": [
+        0,
+        2
+      ],
+      "original_word": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          0,
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          2,
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          0,
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          2,
+          -1
+        ]
+      ]
+    },
+    "N": {
+      "base_vertex": [
+        0,
+        1,
+        0
+      ],
+      "axes_zero_based": [
+        0,
+        2
+      ],
+      "original_word": [
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          0,
+          1
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          2,
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          0,
+          -1
+        ],
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          2,
+          -1
+        ]
+      ]
+    },
+    "W": {
+      "base_vertex": [
+        0,
+        0,
+        0
+      ],
+      "axes_zero_based": [
+        1,
+        2
+      ],
+      "original_word": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          1,
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            0
+          ],
+          2,
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          1,
+          -1
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          2,
+          -1
+        ]
+      ]
+    },
+    "E": {
+      "base_vertex": [
+        1,
+        0,
+        0
+      ],
+      "axes_zero_based": [
+        1,
+        2
+      ],
+      "original_word": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          1,
+          1
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          2,
+          1
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          1,
+          -1
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          2,
+          -1
+        ]
+      ]
+    }
+  },
+  "subset_rows": [
+    {
+      "faces": "E",
+      "cardinality": 1,
+      "boundary_edge_count": 4,
+      "casimir": "3",
+      "a": "1/3"
+    },
+    {
+      "faces": "N",
+      "cardinality": 1,
+      "boundary_edge_count": 4,
+      "casimir": "3",
+      "a": "1/3"
+    },
+    {
+      "faces": "S",
+      "cardinality": 1,
+      "boundary_edge_count": 4,
+      "casimir": "3",
+      "a": "1/3"
+    },
+    {
+      "faces": "T",
+      "cardinality": 1,
+      "boundary_edge_count": 4,
+      "casimir": "3",
+      "a": "1/3"
+    },
+    {
+      "faces": "W",
+      "cardinality": 1,
+      "boundary_edge_count": 4,
+      "casimir": "3",
+      "a": "1/3"
+    },
+    {
+      "faces": "EN",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "ES",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "ET",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "EW",
+      "cardinality": 2,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "0"
+    },
+    {
+      "faces": "NS",
+      "cardinality": 2,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "0"
+    },
+    {
+      "faces": "NT",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "NW",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "ST",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "SW",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "TW",
+      "cardinality": 2,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "1/27"
+    },
+    {
+      "faces": "ENS",
+      "cardinality": 3,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "1/162"
+    },
+    {
+      "faces": "ENT",
+      "cardinality": 3,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "2/81"
+    },
+    {
+      "faces": "ENW",
+      "cardinality": 3,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "1/162"
+    },
+    {
+      "faces": "EST",
+      "cardinality": 3,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "2/81"
+    },
+    {
+      "faces": "ESW",
+      "cardinality": 3,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "1/162"
+    },
+    {
+      "faces": "ETW",
+      "cardinality": 3,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "1/162"
+    },
+    {
+      "faces": "NST",
+      "cardinality": 3,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "1/162"
+    },
+    {
+      "faces": "NSW",
+      "cardinality": 3,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "1/162"
+    },
+    {
+      "faces": "NTW",
+      "cardinality": 3,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "2/81"
+    },
+    {
+      "faces": "STW",
+      "cardinality": 3,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "2/81"
+    },
+    {
+      "faces": "ENST",
+      "cardinality": 4,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "13/729"
+    },
+    {
+      "faces": "ENSW",
+      "cardinality": 4,
+      "boundary_edge_count": 8,
+      "casimir": "6",
+      "a": "4/729"
+    },
+    {
+      "faces": "ENTW",
+      "cardinality": 4,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "13/729"
+    },
+    {
+      "faces": "ESTW",
+      "cardinality": 4,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "13/729"
+    },
+    {
+      "faces": "NSTW",
+      "cardinality": 4,
+      "boundary_edge_count": 6,
+      "casimir": "9/2",
+      "a": "13/729"
+    },
+    {
+      "faces": "ENSTW",
+      "cardinality": 5,
+      "boundary_edge_count": 4,
+      "casimir": "3",
+      "a": "107/2187"
+    }
+  ],
+  "ordered_splits": {
+    "EN": [
+      {
+        "C": "E",
+        "D": "N",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "N",
+        "D": "E",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "ES": [
+      {
+        "C": "E",
+        "D": "S",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "S",
+        "D": "E",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "ET": [
+      {
+        "C": "E",
+        "D": "T",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "T",
+        "D": "E",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "EW": [
+      {
+        "C": "E",
+        "D": "W",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "0",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "W",
+        "D": "E",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "0",
+        "term_before_denominator": "0"
+      }
+    ],
+    "NS": [
+      {
+        "C": "N",
+        "D": "S",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "0",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "S",
+        "D": "N",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "0",
+        "term_before_denominator": "0"
+      }
+    ],
+    "NT": [
+      {
+        "C": "N",
+        "D": "T",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "T",
+        "D": "N",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "NW": [
+      {
+        "C": "N",
+        "D": "W",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "W",
+        "D": "N",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "ST": [
+      {
+        "C": "S",
+        "D": "T",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "T",
+        "D": "S",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "SW": [
+      {
+        "C": "S",
+        "D": "W",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "W",
+        "D": "S",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "TW": [
+      {
+        "C": "T",
+        "D": "W",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      },
+      {
+        "C": "W",
+        "D": "T",
+        "c_C": "3",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/6"
+      }
+    ],
+    "ENS": [
+      {
+        "C": "E",
+        "D": "NS",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "N",
+        "D": "ES",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "S",
+        "D": "EN",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "EN",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "ES",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "NS",
+        "D": "E",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "0"
+      }
+    ],
+    "ENT": [
+      {
+        "C": "E",
+        "D": "NT",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "N",
+        "D": "ET",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "T",
+        "D": "EN",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "EN",
+        "D": "T",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "ET",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "NT",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      }
+    ],
+    "ENW": [
+      {
+        "C": "E",
+        "D": "NW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "N",
+        "D": "EW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "W",
+        "D": "EN",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "EN",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "EW",
+        "D": "N",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NW",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      }
+    ],
+    "EST": [
+      {
+        "C": "E",
+        "D": "ST",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "S",
+        "D": "ET",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "T",
+        "D": "ES",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "ES",
+        "D": "T",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "ET",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "ST",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      }
+    ],
+    "ESW": [
+      {
+        "C": "E",
+        "D": "SW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "S",
+        "D": "EW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "W",
+        "D": "ES",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "ES",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "EW",
+        "D": "S",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "SW",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      }
+    ],
+    "ETW": [
+      {
+        "C": "E",
+        "D": "TW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "T",
+        "D": "EW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "W",
+        "D": "ET",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "ET",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "EW",
+        "D": "T",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "TW",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      }
+    ],
+    "NST": [
+      {
+        "C": "N",
+        "D": "ST",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "S",
+        "D": "NT",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "T",
+        "D": "NS",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NS",
+        "D": "T",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NT",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "ST",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      }
+    ],
+    "NSW": [
+      {
+        "C": "N",
+        "D": "SW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "S",
+        "D": "NW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "W",
+        "D": "NS",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NS",
+        "D": "W",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NW",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      },
+      {
+        "C": "SW",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3/2",
+        "term_before_denominator": "1/54"
+      }
+    ],
+    "NTW": [
+      {
+        "C": "N",
+        "D": "TW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "T",
+        "D": "NW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "W",
+        "D": "NT",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "NT",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "NW",
+        "D": "T",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "TW",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      }
+    ],
+    "STW": [
+      {
+        "C": "S",
+        "D": "TW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "T",
+        "D": "SW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "W",
+        "D": "ST",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "ST",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "SW",
+        "D": "T",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      },
+      {
+        "C": "TW",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/27"
+      }
+    ],
+    "ENST": [
+      {
+        "C": "E",
+        "D": "NST",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "N",
+        "D": "EST",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "S",
+        "D": "ENT",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "T",
+        "D": "ENS",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "EN",
+        "D": "ST",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ES",
+        "D": "NT",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ET",
+        "D": "NS",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NS",
+        "D": "ET",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NT",
+        "D": "ES",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ST",
+        "D": "EN",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ENS",
+        "D": "T",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "ENT",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "EST",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "NST",
+        "D": "E",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      }
+    ],
+    "ENSW": [
+      {
+        "C": "E",
+        "D": "NSW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "N",
+        "D": "ESW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "S",
+        "D": "ENW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "W",
+        "D": "ENS",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "EN",
+        "D": "SW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/243"
+      },
+      {
+        "C": "ES",
+        "D": "NW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/243"
+      },
+      {
+        "C": "EW",
+        "D": "NS",
+        "c_C": "6",
+        "c_D": "6",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NS",
+        "D": "EW",
+        "c_C": "6",
+        "c_D": "6",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NW",
+        "D": "ES",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/243"
+      },
+      {
+        "C": "SW",
+        "D": "EN",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "1/243"
+      },
+      {
+        "C": "ENS",
+        "D": "W",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ENW",
+        "D": "S",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ESW",
+        "D": "N",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "NSW",
+        "D": "E",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "1/162"
+      }
+    ],
+    "ENTW": [
+      {
+        "C": "E",
+        "D": "NTW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "N",
+        "D": "ETW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "T",
+        "D": "ENW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "W",
+        "D": "ENT",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "EN",
+        "D": "TW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ET",
+        "D": "NW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "EW",
+        "D": "NT",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NT",
+        "D": "EW",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NW",
+        "D": "ET",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "TW",
+        "D": "EN",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ENT",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "ENW",
+        "D": "T",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "ETW",
+        "D": "N",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "NTW",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      }
+    ],
+    "ESTW": [
+      {
+        "C": "E",
+        "D": "STW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "S",
+        "D": "ETW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "T",
+        "D": "ESW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "W",
+        "D": "EST",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "ES",
+        "D": "TW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ET",
+        "D": "SW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "EW",
+        "D": "ST",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "ST",
+        "D": "EW",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "SW",
+        "D": "ET",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "TW",
+        "D": "ES",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "EST",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "ESW",
+        "D": "T",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "ETW",
+        "D": "S",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "STW",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      }
+    ],
+    "NSTW": [
+      {
+        "C": "N",
+        "D": "STW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "S",
+        "D": "NTW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "T",
+        "D": "NSW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "W",
+        "D": "NST",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "NS",
+        "D": "TW",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NT",
+        "D": "SW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "NW",
+        "D": "ST",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "ST",
+        "D": "NW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "SW",
+        "D": "NT",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "1/162"
+      },
+      {
+        "C": "TW",
+        "D": "NS",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "6",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NST",
+        "D": "W",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "NSW",
+        "D": "T",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "1/108"
+      },
+      {
+        "C": "NTW",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      },
+      {
+        "C": "STW",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "3",
+        "term_before_denominator": "2/81"
+      }
+    ],
+    "ENSTW": [
+      {
+        "C": "E",
+        "D": "NSTW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      },
+      {
+        "C": "N",
+        "D": "ESTW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      },
+      {
+        "C": "S",
+        "D": "ENTW",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      },
+      {
+        "C": "T",
+        "D": "ENSW",
+        "c_C": "3",
+        "c_D": "6",
+        "weight": "6",
+        "term_before_denominator": "8/729"
+      },
+      {
+        "C": "W",
+        "D": "ENST",
+        "c_C": "3",
+        "c_D": "9/2",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      },
+      {
+        "C": "EN",
+        "D": "STW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "ES",
+        "D": "NTW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "ET",
+        "D": "NSW",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "EW",
+        "D": "NST",
+        "c_C": "6",
+        "c_D": "6",
+        "weight": "9",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NS",
+        "D": "ETW",
+        "c_C": "6",
+        "c_D": "6",
+        "weight": "9",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NT",
+        "D": "ESW",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "NW",
+        "D": "EST",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "ST",
+        "D": "ENW",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "SW",
+        "D": "ENT",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "TW",
+        "D": "ENS",
+        "c_C": "9/2",
+        "c_D": "6",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "ENS",
+        "D": "TW",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "ENT",
+        "D": "SW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "ENW",
+        "D": "ST",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "EST",
+        "D": "NW",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "ESW",
+        "D": "NT",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "ETW",
+        "D": "NS",
+        "c_C": "6",
+        "c_D": "6",
+        "weight": "9",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NST",
+        "D": "EW",
+        "c_C": "6",
+        "c_D": "6",
+        "weight": "9",
+        "term_before_denominator": "0"
+      },
+      {
+        "C": "NSW",
+        "D": "ET",
+        "c_C": "6",
+        "c_D": "9/2",
+        "weight": "15/2",
+        "term_before_denominator": "5/2916"
+      },
+      {
+        "C": "NTW",
+        "D": "ES",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "STW",
+        "D": "EN",
+        "c_C": "9/2",
+        "c_D": "9/2",
+        "weight": "6",
+        "term_before_denominator": "4/729"
+      },
+      {
+        "C": "ENST",
+        "D": "W",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      },
+      {
+        "C": "ENSW",
+        "D": "T",
+        "c_C": "6",
+        "c_D": "3",
+        "weight": "6",
+        "term_before_denominator": "8/729"
+      },
+      {
+        "C": "ENTW",
+        "D": "S",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      },
+      {
+        "C": "ESTW",
+        "D": "N",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      },
+      {
+        "C": "NSTW",
+        "D": "E",
+        "c_C": "9/2",
+        "c_D": "3",
+        "weight": "9/2",
+        "term_before_denominator": "13/486"
+      }
+    ]
+  },
+  "a_five_faces": "107/2187",
+  "haar_multiplier": "1/16",
+  "projected_fifth_coefficient": "107/34992",
+  "inverse_face_pair_coefficient": "107/11664",
+  "checks": {
+    "all_31_nonempty_casimirs_positive": true,
+    "two_exact_recurrences_agree": true,
+    "original_edge_occurrence_count": {
+      "single": 4,
+      "double": 8
+    },
+    "exact_4096_point_haar_cubatures": [
+      {
+        "boundary_unit_quaternions_times_3": [
+          [
+            1,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            1,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            1
+          ]
+        ],
+        "integral": "7/72",
+        "missing_trace_divided_by_16": "7/72"
+      },
+      {
+        "boundary_unit_quaternions_times_3": [
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ]
+        ],
+        "integral": "1/8",
+        "missing_trace_divided_by_16": "1/8"
+      },
+      {
+        "boundary_unit_quaternions_times_3": [
+          [
+            -1,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            -1,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            -1,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            -1
+          ]
+        ],
+        "integral": "7/72",
+        "missing_trace_divided_by_16": "7/72"
+      }
+    ],
+    "haar_cubature_scope": "Exact polynomial integration in each of the four gauge-transformed top edge variables, which each have degree at most two; boundary evaluations check the general proof rather than replace it."
+  }
+}

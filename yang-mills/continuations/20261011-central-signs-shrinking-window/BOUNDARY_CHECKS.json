@@ -1,0 +1,350 @@
+{
+  "created_at": "2026-10-11T00:11:49.574379+00:00",
+  "scope": "Exact integer incidence and quaternion cubature tests, plus high-precision full-word and normal-harmonic evaluations with arbitrary boundary links; general mathematical proofs are in JP1-JP49.",
+  "checks": [
+    {
+      "name": "JP4 all original reflected rooted words, m=4 random SU(2)",
+      "passed": true,
+      "max_error": "0.0",
+      "word_count": 176
+    },
+    {
+      "name": "JP6 full affine quaternion identity, all chords m=4",
+      "passed": true,
+      "max_error": "7.33847608948024932047612610844336768271088369502646185895049e-61"
+    },
+    {
+      "name": "JP7 first vector on exact boundary fibre",
+      "passed": true,
+      "absolute_error": "3.5646798202081664073045457645535132459103561197182750830187e-61"
+    },
+    {
+      "name": "JP7 third vector on exact boundary fibre",
+      "passed": true,
+      "absolute_error": "5.66302938318758124972094370083685385995884378760379533644872e-61"
+    },
+    {
+      "name": "JP8 full defect on boundary fibre",
+      "passed": true,
+      "absolute_error": "7.7787690973264271339300800672251553007378152109014589163764e-61"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 0, 0, 2), colour=0",
+      "passed": true,
+      "absolute_error": "3.20911004665965748616827132683825910731986501578093037892006e-39"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 0, 0, 2), colour=1",
+      "passed": true,
+      "absolute_error": "1.33497026809177567372935242008263961299920479712772327963405e-39"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 0, 0, 2), colour=2",
+      "passed": true,
+      "absolute_error": "1.42586780883077162903196361580383364226033768462423075891181e-39"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 2, 3, 2), colour=0",
+      "passed": true,
+      "absolute_error": "5.6061794309500277556612954680074665810195215648511663824446e-40"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 2, 3, 2), colour=1",
+      "passed": true,
+      "absolute_error": "2.15772774281762546858924030977951910660346055435180960689319e-40"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 2, 3, 2), colour=2",
+      "passed": true,
+      "absolute_error": "2.83865763772946620649871821616515709262354959814801659420216e-41"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 0, 1, 3), colour=0",
+      "passed": true,
+      "absolute_error": "1.18530158078545880900701407644085008421768067795341913681928e-40"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 0, 1, 3), colour=1",
+      "passed": true,
+      "absolute_error": "2.95291557167905977316200346668334373810770001322396375360171e-39"
+    },
+    {
+      "name": "JP10 original derivative b=(4, 0, 1, 3), colour=2",
+      "passed": true,
+      "absolute_error": "2.18524137599919981450146428411729682117443894198192558791844e-39"
+    },
+    {
+      "name": "JP12 all integer original-word metric entries, m=4",
+      "passed": true,
+      "dimension": 24,
+      "entries": 576
+    },
+    {
+      "name": "JP12 all integer original-word metric entries, m=6",
+      "passed": true,
+      "dimension": 48,
+      "entries": 2304
+    },
+    {
+      "name": "JP12 all integer original-word metric entries, m=8",
+      "passed": true,
+      "dimension": 80,
+      "entries": 6400
+    },
+    {
+      "name": "JP15 zero-fibre value, m=4",
+      "passed": true,
+      "absolute_error": "1.21543267145725423967657501050393051574028362670335295568381e-63"
+    },
+    {
+      "name": "JP15 positive original normal derivative, m=4",
+      "passed": true,
+      "absolute_error": "1.15208802927312692985089109161817911786382191169013925067577e-42"
+    },
+    {
+      "name": "JP15 zero-fibre value, m=6",
+      "passed": true,
+      "absolute_error": "0.0"
+    },
+    {
+      "name": "JP15 positive original normal derivative, m=6",
+      "passed": true,
+      "absolute_error": "1.27629228320466544180916562826013194600566241569603787178917e-42"
+    },
+    {
+      "name": "JP15 zero-fibre value, m=8",
+      "passed": true,
+      "absolute_error": "0.0"
+    },
+    {
+      "name": "JP15 positive original normal derivative, m=8",
+      "passed": true,
+      "absolute_error": "3.2492891883224230860209779238447975469613981319870861091441e-43"
+    },
+    {
+      "name": "JP31 full quadratic harmonic identity, arbitrary bulk, trial=0",
+      "passed": true,
+      "absolute_error": "6.14965693502087754940659503074522359066421015355913248181571e-62"
+    },
+    {
+      "name": "JP31 full quadratic harmonic identity, arbitrary bulk, trial=1",
+      "passed": true,
+      "absolute_error": "5.8340768229948203504475600504188664755533614081760941872823e-62"
+    },
+    {
+      "name": "JP31 full quadratic harmonic identity, arbitrary bulk, trial=2",
+      "passed": true,
+      "absolute_error": "1.06515182605744577146148430648083300006917811544455579593986e-61"
+    },
+    {
+      "name": "JP31 full quadratic harmonic identity, arbitrary bulk, trial=3",
+      "passed": true,
+      "absolute_error": "9.91602385474999610091739775764838422796420752452670601859246e-62"
+    },
+    {
+      "name": "JP31 full quadratic harmonic identity, arbitrary bulk, trial=4",
+      "passed": true,
+      "absolute_error": "6.44981460666083107950271685125929080525106727705910136363928e-62"
+    },
+    {
+      "name": "JP32 exact 24-point Haar cubature for every quaternion monomial through degree four",
+      "passed": true,
+      "monomials": 70
+    },
+    {
+      "name": "JP33 projected component alpha=0, beta=0",
+      "passed": true,
+      "absolute_error": "3.34243984650744915911058127888580891828577997343422062813048e-63"
+    },
+    {
+      "name": "JP33 projected component alpha=0, beta=1",
+      "passed": true,
+      "absolute_error": "9.11574503592940679757431257877947886805212720027514716762859e-64"
+    },
+    {
+      "name": "JP33 projected component alpha=0, beta=2",
+      "passed": true,
+      "absolute_error": "9.11574503592940679757431257877947886805212720027514716762859e-64"
+    },
+    {
+      "name": "JP33 projected component alpha=1, beta=0",
+      "passed": true,
+      "absolute_error": "9.11574503592940679757431257877947886805212720027514716762859e-64"
+    },
+    {
+      "name": "JP33 projected component alpha=1, beta=1",
+      "passed": true,
+      "absolute_error": "3.03858167864313559919143752625982628935070906675838238920953e-64"
+    },
+    {
+      "name": "JP33 projected component alpha=1, beta=2",
+      "passed": true,
+      "absolute_error": "3.03858167864313559919143752625982628935070906675838238920953e-64"
+    },
+    {
+      "name": "JP33 projected component alpha=2, beta=0",
+      "passed": true,
+      "absolute_error": "3.03858167864313559919143752625982628935070906675838238920953e-64"
+    },
+    {
+      "name": "JP33 projected component alpha=2, beta=1",
+      "passed": true,
+      "absolute_error": "3.03858167864313559919143752625982628935070906675838238920953e-64"
+    },
+    {
+      "name": "JP33 projected component alpha=2, beta=2",
+      "passed": true,
+      "absolute_error": "3.03858167864313559919143752625982628935070906675838238920953e-64"
+    },
+    {
+      "name": "JP33 complete Haar normal norm exceeds exact d_star squared / 8",
+      "passed": true,
+      "integral": "0.0581774263936034543878935225420247156228103517365181098221586",
+      "proved_lower_bound": "0.0000190983005625052575897706582817180941139845410097118568932276"
+    },
+    {
+      "name": "JP25 and JP34 all original face incidences, m=4",
+      "passed": true,
+      "boundary_incidence_total": 60
+    },
+    {
+      "name": "JP26-JP29 full endpoint degrees and exact band dimension, m=4",
+      "passed": true,
+      "A_m": "13171067118556613479270449854",
+      "K_m": 30,
+      "boundary_count": 24
+    },
+    {
+      "name": "JP25 and JP34 all original face incidences, m=6",
+      "passed": true,
+      "boundary_incidence_total": 126
+    },
+    {
+      "name": "JP26-JP29 full endpoint degrees and exact band dimension, m=6",
+      "passed": true,
+      "A_m": "3735624920003838415626959713273848606519645510064",
+      "K_m": 46,
+      "boundary_count": 48
+    },
+    {
+      "name": "JP25 and JP34 all original face incidences, m=8",
+      "passed": true,
+      "boundary_incidence_total": 216
+    },
+    {
+      "name": "JP26-JP29 full endpoint degrees and exact band dimension, m=8",
+      "passed": true,
+      "A_m": "169457134111187069218472374172269543193236871011707776394696904772107100",
+      "K_m": 62,
+      "boundary_count": 80
+    },
+    {
+      "name": "JP42 full nonidentity-boundary product derivative, colour=0",
+      "passed": true,
+      "absolute_error": "9.36626252987111807686684476592627275664627197838817182663778e-40"
+    },
+    {
+      "name": "JP42 full nonidentity-boundary product derivative, colour=1",
+      "passed": true,
+      "absolute_error": "1.10504874886544138457869435178888866005512590807081437046859e-41"
+    },
+    {
+      "name": "JP42 full nonidentity-boundary product derivative, colour=2",
+      "passed": true,
+      "absolute_error": "1.14302144464718071092352975991364051165658908457101231387192e-39"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=0, beta=0",
+      "passed": true,
+      "absolute_error": "7.29259602874352543805945006302358309444170176022011773410287e-63"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=0, beta=1",
+      "passed": true,
+      "absolute_error": "1.82314900718588135951486251575589577361042544005502943352572e-63"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=0, beta=2",
+      "passed": true,
+      "absolute_error": "5.1655888536933305186254437946417046918962054134892500616562e-63"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=1, beta=0",
+      "passed": true,
+      "absolute_error": "1.45851920574870508761189001260471661888834035204402354682057e-62"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=1, beta=1",
+      "passed": true,
+      "absolute_error": "9.72346137165803391741260008403144412592226901362682364547049e-63"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=1, beta=2",
+      "passed": true,
+      "absolute_error": "1.276204305030116951660403761029127041527297808038520603468e-62"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=2, beta=0",
+      "passed": true,
+      "absolute_error": "5.01365976976117373866587191832871337742866996015133094219572e-63"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=2, beta=1",
+      "passed": true,
+      "absolute_error": "3.49436893043960593907015315519880023275331542677213974759096e-63"
+    },
+    {
+      "name": "JP42 global derivative harmonic alpha=2, beta=2",
+      "passed": true,
+      "absolute_error": "4.55787251796470339878715628938973943402606360013757358381429e-63"
+    },
+    {
+      "name": "JP43 arbitrary-boundary full derivative Haar energy lower bound",
+      "passed": true,
+      "integral": "1.04383341051092246221518618941122092975055960823752305000543",
+      "lower_bound": "0.0000190983005625052575897706582817180941139845410097118568932276"
+    },
+    {
+      "name": "JP46 complete harmonic mass Gram alpha=0, beta=0",
+      "passed": true,
+      "absolute_error": "1.18694596821997484343415528369524464427762072920249312078497e-66"
+    },
+    {
+      "name": "JP46 complete harmonic mass Gram alpha=0, beta=1",
+      "passed": true,
+      "absolute_error": "7.41841230137484277146347052309527902673512955751558200490608e-67"
+    },
+    {
+      "name": "JP46 complete harmonic mass Gram alpha=1, beta=0",
+      "passed": true,
+      "absolute_error": "7.41841230137484277146347052309527902673512955751558200490608e-67"
+    },
+    {
+      "name": "JP46 complete harmonic mass Gram alpha=1, beta=1",
+      "passed": true,
+      "absolute_error": "2.37389193643994968686831056739048928855524145840498624156994e-66"
+    },
+    {
+      "name": "JP47 original odd projection norm",
+      "passed": true,
+      "absolute_error": "4.74778387287989937373662113478097857711048291680997248313989e-66"
+    },
+    {
+      "name": "JP47 full affine remainder orthogonal to odd harmonic",
+      "passed": true,
+      "absolute_error": "6.31455255093026616706970610925870150755694227935726340257605e-64"
+    },
+    {
+      "name": "JP47 full original odd Haar mass exceeds harmonic mass",
+      "passed": true,
+      "raw_mass": "0.790102188464831874179749517904929725741785454079320035705602",
+      "harmonic_mass": "0.0000208192463274782588231346077093014828143655655842133648770129"
+    },
+    {
+      "name": "JP48 original even harmonic norm",
+      "passed": true,
+      "absolute_error": "2.37389193643994968686831056739048928855524145840498624156994e-66"
+    }
+  ],
+  "all_passed": true
+}

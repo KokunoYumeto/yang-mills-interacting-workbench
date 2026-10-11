@@ -1,0 +1,123 @@
+{
+  "self": "-19/1296",
+  "pair_diagonal": "15163/15769728",
+  "pair_offdiagonal": "347/438048",
+  "antisymmetry_factor": "-703/19712160",
+  "bulk_marked_triples": {
+    "path_end": 92,
+    "path_center": 46,
+    "common": 12,
+    "corner": 8
+  },
+  "uniform_absolute_row_and_column_bound": "4574447/33510672",
+  "uniform_haar_operator_bound": "4574447/33510672",
+  "uniform_haar_operator_bound_decimal": 0.13650717001437632,
+  "finite_checks": [
+    {
+      "schema": "original-j5-fourth-schur-matrix-v1",
+      "L": 2,
+      "marked_triple_incidence_counts": {
+        "corner": 1536,
+        "path_end": 13464,
+        "path_center": 6732,
+        "common": 1728
+      },
+      "nonzero_entries": 9660,
+      "antisymmetry_verified": true,
+      "antisymmetric_ordered_entries": 1440,
+      "boundary_example": {
+        "p": [
+          -2,
+          -2,
+          -2,
+          0,
+          1
+        ],
+        "q": [
+          -1,
+          -2,
+          -2,
+          1,
+          2
+        ],
+        "degrees": [
+          6,
+          10
+        ],
+        "S4_pq": "-976543/111702240",
+        "S4_qp": "-2977433/335106720",
+        "difference": "703/4928040"
+      },
+      "opposite_cube_entry": {
+        "p": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "q": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-90491/9856080"
+      }
+    },
+    {
+      "schema": "original-j5-fourth-schur-matrix-v1",
+      "L": 3,
+      "marked_triple_incidence_counts": {
+        "corner": 5184,
+        "path_end": 50280,
+        "path_center": 25140,
+        "common": 6480
+      },
+      "nonzero_entries": 35472,
+      "antisymmetry_verified": true,
+      "antisymmetric_ordered_entries": 3600,
+      "boundary_example": {
+        "p": [
+          -3,
+          -3,
+          -3,
+          0,
+          1
+        ],
+        "q": [
+          -3,
+          -2,
+          -3,
+          0,
+          2
+        ],
+        "degrees": [
+          6,
+          10
+        ],
+        "S4_pq": "-976543/111702240",
+        "S4_qp": "-2977433/335106720",
+        "difference": "703/4928040"
+      },
+      "opposite_cube_entry": {
+        "p": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "q": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "coefficient": "-90491/9856080"
+      }
+    }
+  ]
+}

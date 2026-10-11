@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-10T23:19:06.535777+00:00",
+  "checked_utc": "2026-10-11T00:15:19.230923+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -29,6 +29,31 @@
       "source": "PHASE_SPECTRAL_WEIGHTS.md",
       "sha256": "a1986503145604493d69cecb6d4c18b13d3da628192bb7c68ea6e6f8de981aa6",
       "complete_math_blocks": 119
+    },
+    {
+      "source": "BOUNDARY_REFLECTION_AND_RAW_ENDPOINT.md",
+      "sha256": "1ebef660d1d62b6ee313bf8b3e3c40e16d2978f7f7851324e7a9170a1ec48a12",
+      "complete_math_blocks": 440
+    },
+    {
+      "source": "fourth_return/FOURTH_SCHUR_COEFFICIENT.md",
+      "sha256": "051c7e9bd74dee88c068c208962ab65c9500f4ef117dea8af4da71007cd9fab8",
+      "complete_math_blocks": 330
+    },
+    {
+      "source": "fourth_return/cube_derivation/CUBE_FIFTH_PROJECTION.md",
+      "sha256": "38c3412b5a212120f7440d08bd7192c5c32f8692744d8b790be4227fad9eb47d",
+      "complete_math_blocks": 25
+    },
+    {
+      "source": "fourth_return/cube_derivation/FOURTH_ALGEBRA_CERTIFICATE.md",
+      "sha256": "d6f39b6aa1bc5af17c38a441ea1a89b5e06313d2107a0d3e90f5e33b2e3c57c7",
+      "complete_math_blocks": 14
+    },
+    {
+      "source": "BOUNDARY_AND_FOURTH_ILLUSTRATIONS.md",
+      "sha256": "1d7bfec01b39fe541af2032946ed505f56ed58a896dda794b5d73bea73d6de74",
+      "complete_math_blocks": 0
     }
   ],
   "figures": [
@@ -46,10 +71,27 @@
       "file": "PHASE_SPECTRAL_WEIGHTS.png",
       "sha256": "3553616a622001915774a393d626c8bd0d9324f300672e2674f921a31c276241",
       "visually_inspected": true
+    },
+    {
+      "file": "BOUNDARY_REFLECTION.png",
+      "sha256": "80adbb3d65e3e48cbe1f8b4e4825af0c8ba07c90f73755aaf37c2b482c9c0649",
+      "visually_inspected": true
+    },
+    {
+      "file": "TWO_LINK_HARMONICS.png",
+      "sha256": "c770254b8068dad798b7fa90d34863ff39cefca2a8d628ab08ad2e266fa44fbd",
+      "visually_inspected": true
+    },
+    {
+      "file": "FOURTH_SCHUR.png",
+      "sha256": "dcbfd1813fe0e1612a250d3e8e9139ce9cdacbf3ec77e5c0e5ea32744fe3c5ae",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected.",
   "pdf_compiled": false,
   "new_external_pdf_read": false,
-  "spectral_weight_checks": 104
+  "spectral_weight_checks": 104,
+  "boundary_checks": 66,
+  "fourth_return_exact_replay_scripts": 7
 }

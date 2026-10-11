@@ -1,0 +1,98 @@
+[
+  {
+    "id": "J5-FOURTH-001",
+    "original_statement": "Original J7 and P45 continuation left the fourth coefficient unevaluated.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "The unchanged eight original fourth Schur words equal P/81 minus three times the exact fifth-source face derivative, with every enlarged input and union label.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q7, Q10--Q16",
+    "checks": "DIRECT_RETURN_WORD_CHECKS.json",
+    "status": "proved",
+    "affected_results": "Original J5 continuation and all later face-return calculations",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  },
+  {
+    "id": "J5-FOURTH-002",
+    "original_statement": "Original fifth catalogue contains 662 source rows, with no need to carry all rows into a face projection.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "Independent link parity and the cubical cycle filling leave 25 coordinate classes; all coefficients in Q20 are evaluated from the original degree-one through degree-four recurrence.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q17--Q25; complete split certificate",
+    "checks": "FIFTH_FACE_PROJECTIONS.json, PROJECTED_RHS_REDERIVATION.json, GEOMETRY_COVERAGE_CHECKS.json",
+    "status": "proved",
+    "affected_results": "Exact fifth face projection and its complete parameter derivatives",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  },
+  {
+    "id": "J5-FOURTH-003",
+    "original_statement": "Fourth Schur boundary entries and longer-range entries were unevaluated.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "Q28 gives every original finite-box entry, with an explicit source-union rule before assembly. Opposite cube faces have coefficient -90491/9856080.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q26--Q29, Q32",
+    "checks": "FOURTH_SCHUR_L2.json, FOURTH_SCHUR_L3.json",
+    "status": "proved",
+    "affected_results": "Original finite-boundary and coefficientwise bulk Schur maps",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  },
+  {
+    "id": "J5-FOURTH-004",
+    "original_statement": "No Hermiticity of the original fifth-reference face Schur map was established.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "The exact fourth antisymmetric part is -703/19712160 times [D_degree,A_adj]; a boundary pair of degrees 6 and 10 gives nonzero defect 703/4928040.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q30--Q31",
+    "checks": "FOURTH_MATRIX_CHECKS.json; every ordered entry checked in L2 and L3",
+    "status": "proved",
+    "affected_results": "Any attempt to assign the original Schur map the Haar physical-response metric",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  },
+  {
+    "id": "J5-FOURTH-005",
+    "original_statement": "Only a large local-norm general return majorant was available for degree four.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "The assembled original Haar coefficient norm is at most 4574447/33510672, independent of L; row and column estimates are both proved.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q33--Q35",
+    "checks": "FOURTH_MATRIX_CHECKS.json",
+    "status": "proved",
+    "affected_results": "Fourth coefficient bounds only; no full-Haar remainder assertion",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  },
+  {
+    "id": "J5-FOURTH-006",
+    "original_statement": "The earlier P35 tail begins at degree four.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "After the exact fourth coefficient, the full local-norm remainder begins at degree six and is bounded by E6 on the complete certified disk |xi|<beta.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q36--Q41",
+    "checks": "SIXTH_TAIL_CHECKS.json",
+    "status": "proved",
+    "affected_results": "Earlier P35 tail strengthened after exact coefficient subtraction; P1--P45 preserved",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  },
+  {
+    "id": "J5-FOURTH-007",
+    "original_statement": "The original Schur inverse and physical response use different observations of the same source derivative.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "Q47 constructs their exact connecting operator, retaining normalized vacuum density, every mean, the original kappa and the full-source correction. Q48--Q49 give its degree-two and degree-four coefficients.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q42--Q49",
+    "checks": "Exact operator derivation; retained original energy source for Q49",
+    "status": "proved",
+    "affected_results": "Physical response comparison and interpretation of the boundary defect",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  },
+  {
+    "id": "J5-FOURTH-008",
+    "original_statement": "The scalar free and quadratic Schur coefficients leave the first non-scalar term at degree four.",
+    "finding_type": "proved strengthening or exact connecting operator",
+    "statement": "No positive Hermitian metric family tending to the original Haar metric at zero can make this original Schur family self-adjoint near zero; no differentiability of the metric family is required. The exact defining defect is the boundary skew commutator in Q30.",
+    "hypotheses": "Original open cubical SU(2) box L>=2, unchanged generators, Haar probability, Q_H, complement R, source and assembly labels. Analytic domains are exactly those specified at each proof locator.",
+    "proof_locator": "FOURTH_SCHUR_COEFFICIENT.md Q50",
+    "checks": "Exact coefficient-limit proof using Q30 and the complete degree-six remainder",
+    "status": "proved",
+    "affected_results": "Metric or similarity interpretations of the original Schur family; the correct response map remains Q47",
+    "propagation": "All consequences integrated in this fourth-return proof. Parent owns cumulative/public integration; accepted P1--P45 not edited."
+  }
+]

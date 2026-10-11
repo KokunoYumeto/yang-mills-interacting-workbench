@@ -1,0 +1,55 @@
+[
+  {
+    "id": "CUBE-FIFTH-001",
+    "original_statement": "Retained F16 evaluates distinct-face source coefficients by all ordered subset splits, but this missing-face cube specialization was not evaluated in the assigned baseline.",
+    "finding_type": "proved specialization",
+    "statement": "For the five cube faces complementary to p, with final spin zero on the eight repeated edges and spin one half on the four boundary edges, a_b=107/2187.",
+    "hypotheses": "Original SU(2) generators -i sigma_a/2, Haar probability, all twelve original cube edges, and the original source recurrence with singleton coefficient W_p/3.",
+    "proof_locator": "CUBE_FIFTH_PROJECTION.md C1--C2, equations C1--C9",
+    "checks": "CUBE_EXACT_CHECKS.json subset_rows and ordered_splits",
+    "status": "proved",
+    "affected_results": [
+      "Original full fifth coefficient",
+      "Fourth-order face inverse return"
+    ],
+    "propagation": "Provided to parent for cumulative integration; this worker edits only its assigned directory."
+  },
+  {
+    "id": "CUBE-FIFTH-002",
+    "original_statement": "Assignment proposed Haar multiplier 1/16 for verification.",
+    "finding_type": "proved exact projection",
+    "statement": "P_b product_{r in boundary(C) except p} W_r=(1/16)W_p for every contained original elementary cube and every missing face p, with no orientation sign. The source coefficient is 107/34992 times W_p at the full twelve-edge union label.",
+    "hypotheses": "The five faces and all original link orientations of the same elementary cube, SU(2) fundamental traces, and product Haar probability.",
+    "proof_locator": "CUBE_FIFTH_PROJECTION.md C3, equations C10--C16",
+    "checks": "CUBE_EXACT_CHECKS.json exact_4096_point_haar_cubatures; analytic proof retains arbitrary boundary variables",
+    "status": "proved",
+    "affected_results": [
+      "Cube specialization of original fifth source",
+      "Adjacent and opposite face-pair inverse returns"
+    ],
+    "propagation": "Provided to parent for cumulative integration."
+  },
+  {
+    "id": "CUBE-FIFTH-003",
+    "original_statement": "The exact fifth coefficient gives the fourth face inverse return by the parameter derivative of the original fixed-point equation.",
+    "finding_type": "proved consequence",
+    "statement": "For distinct cube faces p,q the squarefree monomial over the other four cube faces has coefficient 107/11664 in the p,q matrix entry of P L(t)^(-1) P. The contribution is identical for adjacent and opposite pairs; the same cube-complement term contributes zero when q=p.",
+    "hypotheses": "Original source coefficients as formal polynomials, or its convergent analytic branch where the Jacobian inverse exists. Fifth-reference and full-source inverse coefficients agree through degree four.",
+    "proof_locator": "CUBE_FIFTH_PROJECTION.md C4, equations C17--C20",
+    "status": "proved",
+    "affected_results": [
+      "Parent's complete fourth Schur coefficient after its lower-order inverse correction"
+    ],
+    "propagation": "Exact coefficient delivered to parent. Does not claim the full fourth inverse coefficient is exhausted by cubes."
+  },
+  {
+    "id": "FOURTH-ALGEBRA-001",
+    "original_statement": "Parent working proof Q20, Q28, Q30, Q34--Q35",
+    "finding_type": "independent verification of downstream algebra",
+    "statement": "Positive inverse correction P/81, all fifth-source derivative factors, the factor -703/19712160 in the boundary commutator, and separate absolute row and column bounds 4574447/33510672 are correct.",
+    "proof_locator": "FOURTH_ALGEBRA_CERTIFICATE.md A1--A10",
+    "checks": "FOURTH_ALGEBRA_CHECKS.json",
+    "status": "proved from displayed Q20 polynomial",
+    "propagation": "Final certificate delivered to parent; parent files not edited."
+  }
+]

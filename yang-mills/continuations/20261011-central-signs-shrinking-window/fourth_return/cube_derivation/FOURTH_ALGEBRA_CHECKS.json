@@ -1,0 +1,64 @@
+{
+  "observed_at": "2026-10-11T00:11:42.257383+00:00",
+  "source_file": "../FOURTH_SCHUR_COEFFICIENT.md",
+  "source_sha256": "d92d8302a9fcaa2ec7db5a949057a11015607cd1ac16a49c1b5ac9f33d10d48b",
+  "scope": "Independent algebra from displayed Q20 coefficients; does not rederive other fifth-source coefficients from the original recurrence.",
+  "inverse_correction": "1/81",
+  "self_entry": "-19/1296",
+  "pair_diagonal": "15163/15769728",
+  "pair_offdiagonal": "347/438048",
+  "antisymmetric_factor": "-703/19712160",
+  "bulk_geometry_counts": {
+    "path_endpoint": 92,
+    "path_center": 46,
+    "common_edge": 12,
+    "corner": 8
+  },
+  "row_bound": "4574447/33510672",
+  "column_bound": "4574447/33510672",
+  "bound_less_than_137_over_1000": true,
+  "finite_box_check": {
+    "L": 2,
+    "original_faces": 240,
+    "unordered_adjacent_pairs": 1128,
+    "connected_triples": 7820,
+    "contained_cubes": 64,
+    "displayed_polynomial_monomials": 28596,
+    "derivative_multiplicity_counts": {
+      "5": 240,
+      "3": 2256,
+      "2": 49176,
+      "1": 27636,
+      "4": 2256
+    },
+    "nonzero_S4_entries": 9660,
+    "nonzero_ordered_antisymmetric_entries": 1440,
+    "max_absolute_row_sum": "6471173/67021344",
+    "max_absolute_column_sum": "8064839/83776680",
+    "derivative_and_entry_formulas_agree": true,
+    "every_commutator_entry_agrees": true,
+    "boundary_example": {
+      "p": [
+        -2,
+        -2,
+        -2,
+        0,
+        1
+      ],
+      "q": [
+        -1,
+        -2,
+        -2,
+        1,
+        2
+      ],
+      "degrees": [
+        6,
+        10
+      ],
+      "pq": "-976543/111702240",
+      "qp": "-2977433/335106720",
+      "difference": "703/4928040"
+    }
+  }
+}

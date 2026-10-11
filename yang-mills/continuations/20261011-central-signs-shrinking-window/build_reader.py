@@ -75,7 +75,9 @@ source_base_url='https://github.com/KokunoYumeto/yang-mills-interacting-workbenc
 names=json.loads((ROOT/'READER_SOURCES.json').read_text(encoding='utf-8'))
 rows=[];bodies=[]
 for name in names:
-    p=ROOT/name;s=p.read_text(encoding='utf-8');body=convert(s)
+    p=ROOT/name;s=p.read_text(encoding='utf-8')
+    source_base_url='https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/'+(p.parent.relative_to(ROOT).as_posix()+'/' if p.parent!=ROOT else '')
+    body=convert(s)
     blocks=re.findall(r'(?s)\\\[.*?\\\]|\\\(.*?\\\)',s)
     assert all(x in body for x in blocks)
     rows.append({'source':name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'complete_math_blocks':len(blocks)})
@@ -85,5 +87,5 @@ out=ROOT/'RESEARCH_CONTINUATION.tex'
 out.write_text(header+'\n\\clearpage\n'.join(bodies)+'\n\\end{document}\n',encoding='utf-8',newline='\n')
 (ROOT/'TEX_FIDELITY.json').write_text(json.dumps({'sources':rows,'all_math_blocks_preserved':True,
  'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'compilation_confirmed':False,
- 'compile_status':'Shared TeX slot occupied at three natural checkpoints; no PDF generated.'},indent=2)+'\n')
+ 'compile_status':'Compilation has not been confirmed for this source edition; no current PDF is included.'},indent=2)+'\n')
 print(json.dumps({'math_blocks':sum(x['complete_math_blocks'] for x in rows),'source_files':len(rows)}))

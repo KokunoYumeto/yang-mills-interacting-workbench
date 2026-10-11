@@ -1678,4 +1678,2234 @@ The resulting next calculation on the joint path still requires estimates unifor
 \begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{PHASE_SPECTRAL_WEIGHTS.png}\caption{Complete raw spectral weights and the missing radial direction}\end{figure}
 
 The three panels show the exact raw masses in SP13–SP16, with separate vertical scales. The third panel retains the original coefficient 15. Its two occupied energies produce the quotient 12δ*/5. The full original oscillator and its vacuum remain SP3. Reproducible source: phase\_spectrum\_figure.py.
+\clearpage
+\section*{Exact boundary reflection and the original raw endpoint}
+
+This continues IP1–IP22 while retaining the actual vacuum, original
+polynomial \(F=p-r\), and prescribed simultaneous path. The calculation
+locates the full nonlinear reflection correction, computes its entire
+normal kinetic form at identity boundary holonomies, and obtains an
+actual-vacuum lower bound for the energy of that correction. It does not
+settle the sign of the original shrinking-window endpoint.
+The strongest evaluated bounds are (JP43) for the even correction
+energy and (JP47) for the original odd raw mass and energy. Their
+original-path exponential loss is proportional to \(j^2\).
+
+\subsection*{1. Original links and the two tree presentations}
+
+Retain the original box, root, tree, coefficients and coordinates of
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md#L2440}{PK103–PK108}
+and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md#L3500}{PK158–PK160}.
+Thus \(m=2L\), \(n=m+1\), \(L\ge2\); a vertex `(i,k,l)` represents
+the physical point \(o+a(i-L,k-L,l-L)\). The tree contains every
+direction-one edge, direction-two edges with \(i=0\), and direction-three
+edges with \(i=k=0\). Its root path goes first in direction three, then
+two, then one. Every original rooted word is still
+\(Z_c=t_sU_ct_t^{-1}\).
+
+Use the exact tree-gauge coordinate map: original tree links equal
+identity and chord links equal their original based words \(Z_c\).
+This is a coordinate presentation of the gauge-invariant functions,
+not a replacement configuration or vacuum. Put
+\[
+\begin{array}{ll}
+ U_2(i,k,l)=Z_{(i,k,l;2)}&(i\ge1),\qquad U_2(0,k,l)=I,\\
+ U_3(i,k,l)=Z_{(i,k,l;3)}&((i,k)\ne(0,0)),\quad U_3(0,0,l)=I.
+\end{array}\tag{JP1}
+\]
+The chord families have their original endpoint restrictions:
+\(0\le k<m,0\le l\le m\) for direction two and
+\(0\le i,k\le m,0\le l<m\) for direction three.
+
+The complete original coefficient rows are as follows:
+\[
+\begin{gathered}
+ h={\pi\over2n},\qquad v_0(l)=n^{-1/2},\qquad
+ v_1(l)=\sqrt{2/n}\cos{\pi(l+1/2)\over n},\qquad
+ w_1(l)=-\sqrt{2/n}\sin{\pi(l+1)\over n},\\
+ a_{(i,k,l;2)}=\mathsf M_{1,(i,k,l;2)}
+             =-{v_1(i)w_1(k)v_0(l)\over\sqrt2},\qquad
+ a_{(i,k,l;3)}=\mathsf M_{1,(i,k,l;3)}=0,\\
+ b_{(i,k,l;2)}=\mathsf M_{3,(i,k,l;2)}
+             ={v_0(i)w_1(k)v_1(l)\over\sqrt2},\qquad
+ b_{(i,k,l;3)}=\mathsf M_{3,(i,k,l;3)}
+             =-{v_0(i)v_1(k)w_1(l)\over\sqrt2},\\
+ S_1=\sum_c|a_c|
+       =\sqrt{2/n}\cot h(\cot h-\cos h),\\
+ S_3=\sum_c|b_c|
+       =\sqrt{2/n}\big[(2-1/n)\cot^2h-(\cos h/n)\cot h\big].
+\end{gathered}
+\]
+Here \(v_0,v_1\) have vertex indices \(0,\ldots,m\), and \(w_1\)
+has edge indices \(0,\ldots,m-1\). Every row is restricted to the
+original chords in (JP1). The absolute sums are evaluated with all
+excluded tree edges retained as exclusions; their finite trigonometric
+summations are proved in
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/256d0fb1988e810df3fcb796c54077c564d48672/yang-mills/continuations/20261011-central-signs-shrinking-window/PHASE_MOMENTS_AND_ORIGINAL_PATH.md#L108}{IP2–IP4}.
+
+Retain \(N=3m(m+1)^2\), \(M=3m^2(m+1)\) and the complete physical
+Hamiltonian
+\[
+ H=\kappa H_0+b_{\rm mag}W,\quad
+ H_0=-\sum_{e,\alpha}X_{e,\alpha}^2,\quad
+ W=\sum_{\text{all faces }p}(2-\operatorname{tr}U_p),\quad
+ \kappa={2g^2\over a},\quad b_{\rm mag}={1\over2g^2a},
+ \quad \xi={b_{\rm mag}\over\kappa}={1\over4g^4}.
+\]
+The positive unit vacuum is \(H\psi=E_0\psi\), \(d\mu=\psi^2dU\);
+the term \(2b_{\rm mag}M\) remains in this potential. Define
+\[
+ \sigma_*=\sqrt8\sin h,\quad\beta_0={\sigma_*\over2g^2},\qquad
+ p=\beta_0\mathcal S,\quad r=\beta_0\mathcal S_{\mathcal R},
+ \quad F=p-r,\qquad
+ \mathcal Q_4=\mu(\mathcal S^2),\
+ \mathcal Q_{4,\mathcal R}=\mu(\mathcal S\mathcal S_{\mathcal R}),\
+ \mathcal K_1=\mu(|\nabla\mathcal S|^2),\
+ \mathcal K_{\mathcal R}
+   =\mu(\nabla\mathcal S\cdot\nabla\mathcal S_{\mathcal R}),
+\]
+where the vectors defining \(\mathcal S\) occur below. The exact
+ground-state form is
+\(\langle F\psi,(H-E_0)F\psi\rangle
+=\kappa\mu(|\nabla F|^2)\).
+Its proof multiplies the complete vacuum equation by \(F^2\psi\),
+integrates by parts on the compact link product, and subtracts it
+from the product-rule expression for
+\(\langle F\psi,H F\psi\rangle-E_0\mu(F^2)\).
+The two mixed derivatives and the \(F^2|\nabla\psi|^2\) terms then
+cancel exactly, as do the full potential and energy terms.
+Reflection invariance makes \(F\psi\) odd and vacuum orthogonal.
+The original raw shrinking-window expression is
+\[
+ \mathscr E(s)=\mu(F^2)-{\kappa\over s}\mu(|\nabla F|^2)
+ =2\beta_0^2(\mathcal Q_4-\mathcal Q_{4,\mathcal R})
+   -{2\kappa\beta_0^2\over s}(\mathcal K_1-\mathcal K_{\mathcal R}).
+\]
+The spectral theorem gives
+\(\langle F\psi,\mathbf1_{(0,s]}(H-E_0)F\psi\rangle
+\ge\max\{0,\mathscr E(s)\}\). The requested joint path is
+\(L_j=j^4,\ a_j=1/(100j),\
+g_j^2=\kappa_*/(200j),\ s_j=\kappa_*/j\), so
+\(\kappa_j=\kappa_*>0\). All subsequent path statements concern
+this same \(F_j\psi_j\) and these exact coefficients, for \(j\ge2\).
+
+Define the exact boundary set
+\[
+\mathcal B_2=\{(m,k,l;2):0\le k<m,0\le l\le m\},\qquad
+\mathcal B_3=\{(m,0,l;3):0\le l<m\},\qquad
+\mathcal B=\mathcal B_2\sqcup\mathcal B_3.
+\tag{JP2}
+\]
+It has \(m(m+1)+m=m(m+2)=n^2-1\) members. These are exactly the
+original chords that become tree links under the direction-one
+reflection. No boundary face or direction-three member is omitted.
+
+For every `(k,l)` define the ordered matrix products
+\[
+ B_l=\prod_{r=0}^{l-1}U_3(m,0,r),\qquad
+ A_{k,l}=B_l\prod_{b=0}^{k-1}U_2(m,b,l),
+\tag{JP3}
+\]
+where factors occur in increasing index order and empty products equal
+identity. In the original tree-gauge coordinates the exact reflected
+rooted words are
+\[
+\boxed{
+\begin{split}
+ Z^{\mathcal R}_{(i,k,l;2)}
+    &=A_{k,l}U_2(m-i,k,l)A_{k+1,l}^{-1},\\
+ Z^{\mathcal R}_{(i,k,l;3)}
+    &=A_{k,l}U_3(m-i,k,l)A_{k,l+1}^{-1}.
+\end{split}}\tag{JP4}
+\]
+To prove this, reflect each edge of the original root path. Its
+direction-three segment lies at \(i=m,k=0\), its direction-two segment
+at \(i=m\), and its reversed direction-one segment consists of original
+tree links, hence identity in this exact coordinate presentation. The
+first two segments are exactly (JP3). The reflected chord is the
+corresponding link with first index \(m-i\), in the same orientation
+because its direction is two or three. The final root segment is the
+inverse of the complete endpoint product, proving both lines. In
+particular the direction-three endpoint is \(A_{k,l+1}\), not a
+commuted or abbreviated product of the direction-two factors at level
+\(l\).
+
+The reflected target link in (JP4) never belongs to \(\mathcal B\).
+For direction two that would require \(i=0\), excluded from its chord
+set. For direction three it would require \((i,k)=(0,0)\), likewise
+excluded. A reflected target may be an original tree link, in which
+case (JP1) retains its identity value. Thus all boundary dependence in
+(JP4) occurs through its two endpoint transport products. This proves
+the exact relation between the original tree coordinates and the
+reflected ones on the whole compact configuration space.
+
+\subsection*{2. Exact colour-vector transport and the reflection correction}
+
+For \(U\in SU(2)\), write
+\(U=c(U)I+\sum_\alpha q^\alpha(U)T_\alpha\), with
+\(c(U)=\operatorname{tr}U/2\) and \(T_\alpha=-i\sigma_\alpha/2\).
+The original coordinate is \(q^\alpha=-2\operatorname{tr}(T_\alpha U)\).
+Quaternion multiplication, with all signs retained, is
+\[
+ q(UV)=c(V)q(U)+c(U)q(V)+\tfrac12q(U)\times q(V).
+ \tag{JP5}
+\]
+Indeed \(T_\alpha T_\beta=-\delta_{\alpha\beta}I/4
++\epsilon_{\alpha\beta\gamma}T_\gamma/2\); multiplying the full
+matrices gives precisely this vector coefficient and the scalar
+coefficient \(c(U)c(V)-q(U)\cdot q(V)/4\).
+
+For a reflected chord with endpoints \(s=(k,l)\), \(t=(k+1,l)\)
+or \((k,l+1)\), define
+\[
+ V_c=A_sA_t^{-1},\quad v_c=q(V_c),\quad c_c=c(V_c),\quad
+ R_c=\operatorname{Ad}_{A_s}\in SO(3),\quad
+ U_{\bar c}=U_2(m-i,k,l)\text{ or }U_3(m-i,k,l).
+\]
+Then (JP4)–(JP5) give the full affine quaternion formula
+\[
+\boxed{
+ q_c^{\mathcal R}
+ =c_cR_cq(U_{\bar c})+c(U_{\bar c})v_c
+       +\tfrac12[R_cq(U_{\bar c})]\times v_c.}
+\tag{JP6}
+\]
+It includes the scalar component of each original chord. Dropping that
+component, either cross product, or an endpoint transport changes the
+reflection map.
+
+Use the original coefficients \(a_c=\mathsf M_{1c}\),
+\(b_c=\mathsf M_{3c}\), and write
+\(u_1^{\mathcal R}=\sum_ca_cq_c^{\mathcal R}\),
+\(u_3^{\mathcal R}=\sum_cb_cq_c^{\mathcal R}\).
+For clarity, define the errors as exact functions, not assumed small:
+\[
+\begin{split}
+ e_1&=u_1^{\mathcal R}+u_1
+   =\sum_ca_c[q_c^{\mathcal R}-q(U_{\bar c})]
+       +\sum_{b\in\mathcal B_2}a_bq_b,\\
+ e_3&=u_3^{\mathcal R}-u_3
+   =\sum_cb_c[q_c^{\mathcal R}-q(U_{\bar c})]
+       -\sum_{b\in\mathcal B}b_bq_b.
+\end{split}\tag{JP7}
+\]
+To check every boundary sign, change the index \(i\) to \(m-i\).
+The direction-two first-row coefficient changes sign because
+\(v_1(m-i)=-v_1(i)\). Its reflected sum misses the original \(i=m\)
+row and includes the original identity tree row \(i=0\), giving
+\(-u_1+\sum_{\mathcal B_2}a_bq_b\). The third-row coefficient is
+independent of \(i\), so its direction-two sum misses exactly
+\(\mathcal B_2\). Its direction-three sum misses exactly
+\(\mathcal B_3\) and includes the original identity tree links.
+Adding the affine errors yields (JP7).
+
+Set \(\mathcal S=u_1\cdot u_3\),
+\(\mathcal S_{\mathcal R}=u_1^{\mathcal R}\cdot u_3^{\mathcal R}\),
+and retain the complete reflection correction
+\[
+ D:=\mathcal S+\mathcal S_{\mathcal R}
+   =e_1\cdot u_3-u_1\cdot e_3+e_1\cdot e_3.
+ \tag{JP8}
+\]
+The last equality is the full product expansion of
+\((-u_1+e_1)\cdot(u_3+e_3)\). All three terms remain.
+On the exact fibre
+\[
+ \mathcal Z_{\mathcal B}
+   =\{Z_b=I\text{ for every }b\in\mathcal B\}
+\]
+every \(A_s,V_c\) is identity, so \(e_1=e_3=0\) and \(D=0\).
+Every other original chord on this fibre is arbitrary. Thus the failure
+of the global reflection sign has an exact boundary-variable description;
+it is not a statement that the reflected and original phase are unrelated.
+
+\subsection*{3. The full normal derivative on that fibre}
+
+The vanishing of \(D\) on \(\mathcal Z_{\mathcal B}\) does not imply
+vanishing physical gradient there. We now compute every normal derivative
+and its complete physical kinetic metric.
+
+For a boundary chord \(b\), let \(\epsilon_{s,b}\) equal one if its
+matrix occurs in the ordered product \(A_s\) of (JP3), and zero otherwise.
+Every such product traverses a boundary edge at most once and in positive
+orientation. Put
+\(\chi^-_{cb}=\epsilon_{s,b}-\epsilon_{t,b}\),
+\(\chi^+_{cb}=\epsilon_{s,b}+\epsilon_{t,b}\).
+At \(\mathcal Z_{\mathcal B}\), differentiation of the complete
+reflected matrix product in (JP4) gives
+\[
+ X_{b,\alpha}q_c^{\mathcal R}
+   =\chi^-_{cb}c(U_{\bar c})\mathbf e_\alpha
+       +\tfrac12\chi^+_{cb}\,\mathbf e_\alpha\times q(U_{\bar c}).
+ \tag{JP9}
+\]
+Here \(X_{b,\alpha}\) is the original left field on the physical chord
+link \(b\). The target link is never in \(\mathcal B\), as proved
+above. At boundary identity the differentiated left endpoint contributes
+\(\epsilon_{s,b}T_\alpha U_{\bar c}\), and the differentiated inverse
+right endpoint contributes \(-\epsilon_{t,b}U_{\bar c}T_\alpha\).
+The vector coefficients of these products are respectively
+\(c(U)\mathbf e_\alpha+\mathbf e_\alpha\times q(U)/2\) and
+\(c(U)\mathbf e_\alpha-\mathbf e_\alpha\times q(U)/2\).
+Subtract them with their displayed multiplicities to obtain (JP9).
+
+For \(\mu=1,3\), define the original finite sums
+\[
+ a_{\mu b}^{\partial}
+   =\sum_c\mathsf M_{\mu c}\chi^-_{cb}c(U_{\bar c}),\qquad
+ v_{\mu b}^{\partial}
+   =\tfrac12\sum_c\mathsf M_{\mu c}\chi^+_{cb}q(U_{\bar c}).
+\]
+Denote by \(n_b\in\mathbb R^3\) the vector with components
+\(X_{b,\alpha}D\) on the boundary-identity fibre. Since there
+\(u_1^{\mathcal R}=-u_1\), \(u_3^{\mathcal R}=u_3\), the complete
+product rule gives
+\[
+\boxed{
+ n_b=(\mathsf M_{1b}+a_{1b}^{\partial})u_3
+       +(\mathsf M_{3b}-a_{3b}^{\partial})u_1
+       +v_{1b}^{\partial}\times u_3
+       -v_{3b}^{\partial}\times u_1.}
+\tag{JP10}
+\]
+The direct derivatives of the original vectors are
+\(X_{b,\alpha}u_\mu=\mathsf M_{\mu b}\mathbf e_\alpha\).
+For the reflected vectors, insert (JP9); for example
+\((\mathbf e_\alpha\times v_{1b}^{\partial})\cdot u_3
+=\mathbf e_\alpha\cdot(v_{1b}^{\partial}\times u_3)\).
+This proves all four terms and both cross-product signs in (JP10).
+
+Let \(T_{be}\) be the signed sum of all occurrences of physical link
+\(e\) in the original full rooted word \(Z_b\), with its inverse
+traversals having negative sign. These are exactly the rows of the
+original tangent incidence matrix indexed by \(\mathcal B\).
+On \(\mathcal Z_{\mathcal B}\), all nonboundary chord derivatives of
+\(D\) vanish because its restriction to that entire fibre is zero.
+Every original boundary word consists only of original tree links and
+its own boundary chord, all identity at this configuration. Therefore
+the exact derivative of that word is
+\(X_{e,\alpha}Z_b=T_{be}T_\alpha\). It follows that
+\[
+ X_{e,\alpha}D=\sum_{b\in\mathcal B}T_{be}n_b^\alpha,\qquad
+ |\nabla D|^2=\sum_{\alpha=1}^3
+   (n^\alpha)^{\mathsf T}G_{\mathcal B}n^\alpha,
+ \quad G_{\mathcal B}=T_{\mathcal B}T_{\mathcal B}^{\mathsf T}.
+\tag{JP11}
+\]
+This includes every original physical link, including all tree links.
+It is not just the Euclidean chord-gradient norm.
+
+The full matrix in (JP11) can be evaluated exactly. Regard \(\mathcal B\)
+as edges of the comb-shaped tree on the \(n^2\) vertices `(k,l)` of the
+right wall: it contains every direction-two edge at every height and
+the direction-three spine at \(k=0\). Let \(D_{\rm wall}\) be its
+oriented edge-to-vertex incidence matrix, with \(-1\) at its starting
+vertex and \(+1\) at its ending vertex. Then
+\[
+\boxed{G_{\mathcal B}=2I+mD_{\rm wall}D_{\rm wall}^{\mathsf T}.}
+\tag{JP12}
+\]
+For proof, expand each original boundary word into signed physical
+occurrences before adding them. Common root prefixes occur once forward
+and once backward; their signed derivatives cancel exactly. The remaining
+cycle consists of its right-wall edge, its oppositely oriented left-wall
+tree counterpart, a direction-one path of length \(m\) at the starting
+wall vertex, and the reverse direction-one path at the endpoint. Distinct
+boundary chords have distinct right- and left-wall edge counterparts,
+giving the term \(2I\). Horizontal paths at different wall vertices are
+disjoint. Two cycles' shared horizontal contributions therefore have
+inner product \(m\) times the corresponding incidence-row inner product.
+This proves (JP12) from the entire original words and their signs.
+
+Equivalently the diagonal is \(2m+2\); adjacent direction-two edges
+on the same height have entry \(-m\); adjacent spine edges have entry
+\(-m\). A direction-two edge `(k,l;2)` and a spine edge `(l';3)` have
+entry \(m\mathbf1_{k=0}(\mathbf1_{l=l'}-\mathbf1_{l=l'+1})\).
+All other entries vanish. This lists every off-diagonal boundary term.
+The tree incidence has full row rank: a putative linear dependence can
+be removed successively at a leaf, where its incident coefficient must
+be zero. In particular \(G_{\mathcal B}>2I\) as a finite matrix, and
+the unconditional inequalities
+\[
+ 2\sum_b|n_b|^2\le |\nabla D|^2
+          \le(2+6m)\sum_b|n_b|^2
+ \quad\text{on }\mathcal Z_{\mathcal B}
+ \tag{JP13}
+\]
+follow. For the upper bound, every wall-tree vertex has degree at most
+three; the sum of squared differences over its edges is at most six
+times the vertex squared norm, using \((x-y)^2\le2x^2+2y^2\).
+The nonzero singular values of \(D_{\rm wall}\) and its transpose
+coincide, proving the required upper matrix bound.
+
+The exact linear receiving map on the normal data space is
+\(J_{\mathcal B}=T_{\mathcal B}^{\mathsf T}\otimes I_3\),
+from \(\mathbb R^{3|\mathcal B|}\) to the original
+\(\mathbb R^{3N}\) of physical link derivatives. Its squared metric
+is \(G_{\mathcal B}\otimes I_3\); its inverse on its range is
+\((G_{\mathcal B}^{-1}T_{\mathcal B})\otimes I_3\), and the
+orthogonal projection onto that range is
+\((T_{\mathcal B}^{\mathsf T}G_{\mathcal B}^{-1}T_{\mathcal B})
+\otimes I_3\). Multiplication of these matrices proves the inverse
+and the self-adjoint idempotent projection, using the positive
+invertibility already established. This specifies the complete normal
+space and its injection into the physical derivatives.
+
+\subsection*{4. A nonzero normal derivative with every original coefficient}
+
+We evaluate (JP10) at a concrete original configuration. Set every
+physical link to identity except the direction-two chord `(1,0,0;2)`,
+whose value is \(K_*=\exp(\pi T_1)=2T_1\). All boundary chords are
+identity. Vary only the boundary chord `(m,0,0;2)` through
+\(H_b(t)=\exp(tT_1)\), keeping the original physical tree identity.
+With \(h=\pi/(2n)\), retain the original cochains
+\(v_0(l)=n^{-1/2}\),
+\(v_1(l)=\sqrt{2/n}\cos(\pi(l+1/2)/n)\), and
+\(w_1(l)=-\sqrt{2/n}\sin(\pi(l+1)/n)\).
+Define the exact original coefficients and separate scalar functions
+\[
+ d_0={v_0(0)w_1(0)v_1(0)\over\sqrt2},\qquad
+ A=-{v_1(1)w_1(0)v_0(0)\over\sqrt2},\qquad
+ \eta(t)=2\sin(t/2),\quad \zeta_*=2,\quad \omega(t)=2\cos(t/2).
+\]
+Here \(d_0<0\), \(A>0\), since \(n\ge5\). The original vectors,
+all along \(\mathbf e_1\), are
+\[
+ u_1=d_0\eta(t)+A\zeta_*,\qquad u_3=d_0[\eta(t)+\zeta_*].
+\]
+For the full reflected vectors one obtains
+\[
+ u_1^{\mathcal R}=-d_0\eta(t)-A[\omega(t)+\eta(t)],\qquad
+ u_3^{\mathcal R}=d_0[2\eta(t)+\omega(t)].\tag{JP14}
+\]
+To verify these expressions directly from the full words, first omit
+the bulk matrix \(K_*\). Every reflected rooted word containing \(H_b\) is
+\(I,H_b\), or \(H_b^{-1}\), so its colour vector is exactly \(0,q(H_b)\),
+or \(-q(H_b)\). Summing the original coefficients gives
+\(u_1^{\mathcal R}=-d_0\eta(t)\), \(u_3^{\mathcal R}=d_0\eta(t)\), as
+also follows from the exact single-link calculation in
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md#L4025}{PK179–PK180}.
+Restoring \(K_*\) changes only the reflected chord based at `(m-1,0,0)`:
+its former word \(H_b^{-1}\) becomes \(K_*H_b^{-1}\), changing its colour
+vector by \([\omega(t)+\eta(t)]\mathbf e_1\). Its first-row coefficient is
+\(-A\) and its third-row coefficient is \(d_0\). This proves (JP14).
+
+Substitute every term into \(D=u_1\cdot u_3+
+u_1^{\mathcal R}\cdot u_3^{\mathcal R}\) before differentiating.
+At \(t=0\), \(\eta=0,\eta'=1,\omega=2,\omega'=0\). The original product derivative
+is \(2d_0(d_0+A)\), while the reflected product derivative is
+\(-2d_0^2-6Ad_0\). Thus
+\[
+ D(0)=0,\qquad
+ {d\over dt}D\big|_{t=0}=-4Ad_0=:d_*>0,
+ \quad
+ d_*={8\cos h\cos(3h)\sin^2(2h)\over n^3},
+ \quad n^5d_*\longrightarrow8\pi^2.
+ \tag{JP15}
+\]
+Every factor of the exact two chord coefficients remains in this formula.
+It follows that no finite constant \(C\) and no exponent \(\gamma>0\)
+can make the pointwise estimate
+\[
+ |\nabla D|^2\le
+ C\left[\sum_{b\in\mathcal B}(2-\operatorname{tr}Z_b)\right]^\gamma
+ \tag{JP16}
+\]
+hold on the whole original configuration space: the right side is zero
+at the displayed configuration, while (JP15) makes the left side
+positive. This refutes precisely that boundary-only gradient estimate.
+It does not refute estimates involving the full plaquette potential,
+such as IP12, or expectation estimates using additional actual-vacuum
+information.
+
+The exact object determined by this obstruction is the normal derivative
+map
+\(D\mapsto(n_b)_{b\in\mathcal B}\) on
+\(\mathcal Z_{\mathcal B}\), with its physical receiving form
+\(G_{\mathcal B}=2I+mD_{\rm wall}D_{\rm wall}^{\mathsf T}\).
+Equations (JP9)–(JP12) construct the map, retain the scalar and vector
+bulk components, and prove its connection to the complete physical
+gradient. The obstruction therefore yields an explicitly calculated
+space of normal derivative data, rather than ending the calculation.
+
+\subsection*{5. An actual-vacuum contribution from the nonzero normal derivative}
+
+The fibre itself has Haar measure zero. We next thicken the evaluated
+configuration and calculate a genuine actual-vacuum bound. This avoids
+mistaking a pointwise calculation for an expectation estimate.
+
+For the original absolute row sums \(S_1,S_3\), every twice
+differentiated word contribution is bounded as in PK151–PK173. A mixed
+derivative of a colour vector has norm at most
+\(\frac12\sum_c|\mathsf M_{\mu c}|n_{ce}n_{cf}\le2S_\mu\).
+This remains valid when the two fields coincide: the full count is
+\(n_{ce}+2\binom{n_{ce}}2=n_{ce}^2\).
+The complete product rule therefore gives
+\[
+ |X_{e,\alpha}X_{f,\beta}\mathcal S|
+ \le (2S_3)(2S_1)+(2S_1)(2S_3)
+       +(2S_1)(2S_3)+(2S_1)(2S_3)
+ =16S_1S_3.
+\]
+The identical count for each reflected physical word, including inverse
+traversals, gives the same bound for \(\mathcal S_{\mathcal R}\).
+No replacement of a left field by a commuting derivative is used: each
+product derivative is taken in its actual matrix order. Thus, for the
+fixed original field \(Y=X_{(m,0,0;2),1}D\),
+\[
+ |\nabla Y|\le32\sqrt{3N}\,S_1S_3=:L_D,
+ \quad N=3m(m+1)^2.\tag{JP17}
+\]
+The product bi-invariant metric has the original three fields as an
+orthonormal frame on each radius-two three-sphere.
+
+Let \(U_*\) be the exact configuration in Section 4 and define
+\[
+ R_*={d_*\over2L_D},\qquad
+ r_*={R_*\over\sqrt N}
+      ={d_*\over64\sqrt3\,N S_1S_3},\qquad
+ v(r)={r-\sin r\over2\pi}.
+\]
+On the product of one-link balls of radius \(r_*\) around \(U_*\),
+the product distance is at most \(R_*\). The bound (JP17) then implies
+\(Y\ge d_*/2\). The radius is positive and less than one for all
+\(L\ge2\): \(d_*=4|Ad_0|\le4S_1S_3\), hence
+\(r_*\le1/(16\sqrt3N)<1\).
+The Haar measure of a one-link radius-\(r\) ball on the radius-two
+three-sphere is exactly \(v(r)\): integrate its spherical density
+from angular radius zero to \(r/2\), giving
+\((r/2-\sin(r/2)\cos(r/2))/\pi\).
+
+The proved actual-vacuum floor
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md#L4940}{PK212}
+is \(\psi^2\ge e^{-\Omega}\), where
+\(\Omega=32\pi\xi M\), \(\xi=1/(4g^4)\),
+\(M=3m^2(m+1)\). Integrating the nonnegative full gradient square over
+the just-constructed product ball proves the unconditional estimate
+\[
+\boxed{
+ \mu(|\nabla D|^2)
+ \ge {d_*^2\over4}\,e^{-\Omega}[v(r_*)]^N>0,\qquad
+ \kappa\beta_0^2\mu(|\nabla D|^2)
+ \ge {\kappa\beta_0^2d_*^2\over4}\,
+                         e^{-\Omega}[v(r_*)]^N.}
+\tag{JP18}
+\]
+The second line is the actual raw energy of the even phase correction
+\(\beta_0D\psi\). It is positive at every finite original regulator.
+No unknown vacuum estimate has been assumed.
+
+This lower bound becomes small on the required path. In fact
+\[
+ m_j=2j^4,\quad N_j=3(2j^4)(2j^4+1)^2,\quad
+ M_j=24j^{12}+12j^8,\quad
+ \Omega_j={320000\pi j^2M_j\over\kappa_*^2}.
+\]
+With \(S_1S_3/n^3\to64/\pi^4\),
+\(d_*n^5\to8\pi^2\), and \(N/n^3\to3\), one has
+\[
+ n^{11}r_*\longrightarrow{\pi^6\over1536\sqrt3},\qquad
+ {\log([v(r_*)]^N)\over n^3\log n}\longrightarrow-99.
+\tag{JP19}
+\]
+Indeed \(v(r)/r^3\to1/(12\pi)\) as \(r\downarrow0\), so
+\(\log v(r_*)=-33\log n+O(1)\). Multiplication by
+\(N=3(n-1)n^2\) proves the last limit. The additional actual-vacuum
+factor has \(\Omega_j\) of order \(j^{14}\), with the full boundary
+term retained above. Thus (JP18) is an actual positive finite-regulator
+contribution but supplies no positive limiting energy or spectral mass.
+
+\subsection*{6. The exact six-term receiving cancellation}
+
+Return to the original \(F=\beta_0(\mathcal S-\mathcal S_{\mathcal R})
+=\beta_0(2\mathcal S-D)\). The complete raw endpoint, before using
+any reflection identity, is
+\[
+\begin{split}
+\mathscr E(s)
+=\beta_0^2\big[&4\mu(\mathcal S^2)-4\mu(\mathcal SD)+\mu(D^2)\\
+ &-{\kappa\over s}\{
+ 4\mu(|\nabla\mathcal S|^2)
+ -4\mu(\nabla\mathcal S\cdot\nabla D)
+ +\mu(|\nabla D|^2)\}\big].
+\end{split}\tag{JP20}
+\]
+All six terms are actual-vacuum expectations, with their original
+coefficients. The original \(D\) and every derivative in this formula
+are given by the full words (JP3)–(JP8), or directly PK151–PK153.
+Reflection invariance and \(D\circ\mathcal R=D\) prove the exact
+relations
+\[
+ 2\mu(\mathcal SD)=\mu(D^2),\qquad
+ 2\mu(\nabla\mathcal S\cdot\nabla D)=\mu(|\nabla D|^2).
+\tag{JP21}
+\]
+For example the first equality adds the equal integrals of
+\(\mathcal SD\) and \(\mathcal S_{\mathcal R}D\); their integrand sum
+is \(D^2\). The second uses reflection invariance of the original
+physical metric in exactly the same addition. Consequently (JP20) also
+satisfies, without discarding its expanded form,
+\[
+\mathscr E(s)=4\beta_0^2
+ \left[\mathcal Q_4-{\kappa\over s}\mathcal K_1\right]
+ -\beta_0^2\mu(D^2)
+ +{\kappa\beta_0^2\over s}\mu(|\nabla D|^2).
+\tag{JP22}
+\]
+In particular the nonzero boundary-normal energy has the positive sign
+in this endpoint; the even correction's mass has the negative sign.
+Neither one can replace their difference.
+
+For the actual joint path, \(\kappa/s=j\), so (JP18) yields the
+unconditional one-sided refinement
+\[
+\begin{split}
+\mathscr E_j(s_j)\ge
+&4\beta_{0,j}^2[\mathcal Q_{4,j}-j\mathcal K_{1,j}]
+  -\beta_{0,j}^2\mu_j(D_j^2)\\
+&+{j\beta_{0,j}^2d_{*,j}^2\over4}\,
+                    e^{-\Omega_j}[v(r_{*,j})]^{N_j}.
+\end{split}\tag{JP23}
+\]
+This displays a proved, strictly positive actual correction term, rather
+than a cutoff-existence statement. It still contains the actual mass and
+gradient expectations in the first line. Applying only their available
+global bounds leaves a nonpositive lower estimate, even after the positive
+term is included. It does not prove that the true endpoint is negative.
+
+The attempted boundary-only gradient estimate failed by the exact normal
+derivative (JP15). The next calculation constructed its full boundary
+kinetic form (JP12), then thickened that fibre point and integrated in the
+actual vacuum, producing (JP18) and (JP23). What remains unresolved is
+control of the complete cancellation in (JP20) or (JP22) at the specified
+\(g_j\), particularly the boundary-normal derivative contribution over
+the actual vacuum distribution and its relation to the even correction's
+raw mass. No selected smaller coupling, normalized vector, Gaussian
+replacement, conditional theorem, or continuum conclusion is used.
+
+\subsection*{7. A conditional boundary estimate with the complete word degree}
+
+The loss in (JP18) integrates a small ball in every original link.
+The next calculation instead evaluates the boundary normal data by an
+exact finite-dimensional kernel, uses the actual conditional boundary
+density, and then extracts a nonzero bulk harmonic. This removes that
+small-ball factor and reduces the vacuum exponent.
+
+First make the measure map explicit. For every nonroot vertex \(v\),
+use its original root transport \(t_v\) as a tree-coordinate variable.
+For every chord use its full word \(Z_c=t_sU_ct_t^{-1}\).
+Conversely a tree edge from \(s\) to \(t\) is \(t_s^{-1}t_t\),
+and a chord edge is \(t_s^{-1}Z_ct_t\), with \(t_{\rm root}=I\).
+Successive invariance of Haar measure under left and right multiplication,
+starting at the root and proceeding along the tree, proves that this
+change of variables takes product Haar measure exactly to product Haar
+measure in the \(t_v,Z_c\). The original gauge-invariant vacuum and the
+functions used here are independent of the \(t_v\). Thus their exact
+measure is \(\rho(Z)\prod_cdZ_c\), where \(\rho=\psi^2\) in the
+tree presentation and \(\int\rho=1\). No vacuum is changed by this map.
+
+Write \(z=(Z_c)_{c\notin\mathcal B}\), \(B=(Z_b)_{b\in\mathcal B}\).
+Define the actual marginal and conditional density by
+\[
+ \rho_{\rm bulk}(z)=\int\rho(B,z)\,dB,\qquad
+ p_{\mathcal B}(B\mid z)={\rho(B,z)\over\rho_{\rm bulk}(z)},\qquad
+ d\mu_{\rm bulk}(z)=\rho_{\rm bulk}(z)\,dz .
+ \tag{JP24}
+\]
+Positivity and smoothness of the original finite-volume vacuum make
+these definitions valid at every \(z\), with no exceptional zero
+denominator.
+
+The original local score estimate is
+\(\|\nabla_e\log\rho\|_\infty\le4r_e\xi\), where
+\(\xi=1/(4g^4)\) and \(r_e\) is the actual number of incident faces.
+Its full partial Bochner proof, including the mixed Hessians and the
+radius-two metric, is in the original
+\href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/sources/spatial/spatial_continuum.tex#L1415}{TeX, equations (77)–(79) and (113)–(115)}.
+Changing an original chord while keeping the original tree identity
+is its physical left variation, so the same score bound holds for the
+corresponding \(Z_b\) variable. Join two boundary configurations by
+shortest one-link geodesics of length at most \(2\pi\). The
+normalization in (JP24) is independent of \(B\). Therefore
+\[
+ {\max_B p_{\mathcal B}(B\mid z)\over
+       \min_B p_{\mathcal B}(B\mid z)}
+ \le e^{\Omega_{\mathcal B}},\qquad
+ p_{\mathcal B}(B\mid z)\ge e^{-\Omega_{\mathcal B}},\qquad
+ \Omega_{\mathcal B}=8\pi\xi\sum_{b\in\mathcal B}r_b
+                   =24\pi\xi m(m+1).
+ \tag{JP25}
+\]
+Here all face incidences are retained. A member \((m,k,l;2)\)
+has \(r_b=1+\mathbf1_{l>0}+\mathbf1_{l<m}\). Their sum is
+\(m(3m+1)\). Each \((m,0,l;3)\) has two incident faces, contributing
+\(2m\). The total is \(3m(m+1)\). The lower bound follows from the
+ratio bound and the fact that the conditional density has integral one;
+it is not a claim of conditional independence. The ratio of this exponent
+to the earlier \(\Omega=32\pi\xi M=96\pi\xi m^2(m+1)\) is \(1/(4m)\).
+
+For fixed \(z\), each full word (JP4) has boundary polynomial degree
+at most \(4m-1\) and degree at most two in any single boundary matrix.
+Indeed the endpoint products have respective lengths \(k+l\) and
+\(k+l+1\). Their sum is \(2k+2l+1\le4m-1\), using the original
+direction-two or direction-three endpoint restrictions. Every inverse
+\(SU(2)\) matrix is linear in its four real quaternion coordinates.
+Each factor \(q(Z_c^{\mathcal R})\) is therefore a polynomial with
+these degrees. The full dot product and the original unreflected dot
+product show that \(D(B,z)\), and every \(X_{b,\alpha}D(B,z)\), belong
+to the following explicitly finite boundary space:
+\[
+ \begin{split}
+ b_\partial&=|\mathcal B|=m(m+2),\qquad K_m=8m-2,\\
+ \mathcal H_{\partial,m}
+ &=\bigoplus_{\substack{0\le\ell_b\le4\\
+                        \sum_b\ell_b\le K_m}}
+       \bigotimes_{b\in\mathcal B}\mathcal Y_{\ell_b},\\
+ A_m:=\dim\mathcal H_{\partial,m}
+ &=\sum_{r=0}^{K_m}[z^r]
+          (1+4z+9z^2+16z^3+25z^4)^{b_\partial}
+ \le55^{b_\partial}.
+ \end{split}\tag{JP26}
+\]
+Here \(\mathcal Y_\ell\) is the space of degree-\(\ell\) spherical
+harmonics on the unit quaternion three-sphere, with the radius-two
+group metric for differentiation. Its dimension is
+\(\binom{\ell+3}{3}-\binom{\ell+1}{3}=(\ell+1)^2\), where the second
+term is zero for \(\ell<2\). This dimension follows by decomposing
+homogeneous polynomials into a harmonic part and the squared radius
+times a polynomial two degrees lower. Restriction to the sphere
+therefore takes a polynomial of degree \(d\) into harmonics of degrees
+at most \(d\). The left fields are infinitesimal orthogonal rotations
+of these four real coordinates, so they preserve each harmonic degree
+and the stated total-degree restriction. This proves every inclusion
+and multiplicity in (JP26) directly for the original words.
+
+The reproducing kernel of \(\mathcal H_{\partial,m}\) has constant
+diagonal \(A_m\). In fact the space is invariant under the transitive
+left action of the product boundary group, so an orthonormal-basis
+sum of squared absolute values is constant; its integral is the
+dimension. Cauchy–Schwarz consequently gives
+\[
+ |h(I_{\mathcal B})|^2\le A_m\int|h(B)|^2\,dB
+ \quad(h\in\mathcal H_{\partial,m}).
+ \tag{JP27}
+\]
+Apply this to every component \(X_{b,\alpha}D\), whose value at
+boundary identity is precisely \(n_b^\alpha(z)\). Combine (JP25)
+with the original full physical gradient, which includes every boundary
+chord field. Integrating the unchanged bulk marginal gives the actual
+receiving estimate
+\[
+ \boxed{\displaystyle
+ \mu(|\nabla D|^2)\ge
+ {e^{-\Omega_{\mathcal B}}\over A_m}
+       \int\sum_{b\in\mathcal B}|n_b(z)|^2\,d\mu_{\rm bulk}(z).}
+ \tag{JP28}
+\]
+All \(n_b\) here are the exact scalar-and-vector expressions (JP10).
+The full fibre metric \(G_{\mathcal B}\) is not substituted for the
+physical metric away from the fibre. Instead only the always valid
+subset inequality
+\(\sum_{b,\alpha}|X_{b,\alpha}D|^2\le|\nabla D|^2\) is used there.
+
+The dimension in (JP26) has substantially less loss than its displayed
+product bound. Coefficientwise,
+\(1+4z+9z^2+16z^3+25z^4\le(1-z)^{-4}\);
+hence, for every original \(m\ge4\),
+\[
+ A_m\le {4b_\partial+K_m\choose K_m},\qquad
+ \lim_{m\to\infty}{\log A_m\over m\log m}=8 .
+ \tag{JP29}
+\]
+For the upper bound, sum the coefficients of \((1-z)^{-4b_\partial}\)
+through \(K_m\). For the limit, once \(b_\partial\ge K_m\), selecting
+\(K_m\) distinct degree-one factors also gives
+\(A_m\ge4^{K_m}\binom{b_\partial}{K_m}\).
+The logarithms of this lower bound and the upper bound are both
+\(K_m\log(b_\partial/K_m)+O(K_m+K_m^2/b_\partial)
+=8m\log m+O(m)\), by the finite products for the binomial
+coefficients and \(\log K_m!=K_m\log K_m-K_m+O(\log K_m)\).
+These explicit upper and lower bounds prove the limit.
+
+\subsection*{8. A single bulk harmonic removes the remaining expectation}
+
+The right side of (JP28) still contains an actual expectation. We now
+evaluate a nonzero harmonic component of its integrand, with all other
+bulk chords arbitrary. Fix
+\[
+ b_*=(m,0,0;2),\qquad k_*=(1,0,0;2),
+\]
+and retain the same exact \(A,d_0,d_*=-4Ad_0\) from (JP14)–(JP15).
+In (JP10), only the reflected chord \(c=(m-1,0,0;2)\) has target
+\(k_*\). Its original coefficients are \(-A,d_0\), and its boundary
+occurrence signs for \(b_*\) are \(\chi^-=-1,\chi^+=1\).
+Writing \(c=c(Z_{k_*})\), \(q=q(Z_{k_*})\), the complete dependence is
+\[
+ \begin{array}{ll}
+ u_1=u_1^0+Aq,&u_3=u_3^0+d_0q,\\
+ a_{1b_*}^{\partial}=a_1^0+Ac,
+   &a_{3b_*}^{\partial}=a_3^0-d_0c,\\
+ v_{1b_*}^{\partial}=v_1^0-\tfrac12Aq,
+   &v_{3b_*}^{\partial}=v_3^0+\tfrac12d_0q .
+ \end{array}\tag{JP30}
+\]
+Every superscript-zero quantity is independent of \(Z_{k_*}\) but
+keeps its complete dependence on all other bulk chords. Substituting
+into (JP10), the self cross products vanish by \(q\times q=0\),
+and the two \(cq\) coefficients add. Consequently
+\[
+ n_{b_*}(z)=2Ad_0\,c q+c\,h^0+M^0q+v^0 .
+ \tag{JP31}
+\]
+Here \(h^0,v^0\) are vectors and \(M^0\) is a real matrix, all independent
+of \(Z_{k_*}\). This is an equality following from the entire (JP10),
+not an approximation at small coupling or near identity.
+
+For unit quaternions \((x_0,x_1,x_2,x_3)\), \(c=x_0\) and
+\(q_\alpha=2x_\alpha\). Rotation invariance of Haar measure gives
+\[
+ \int cq_\alpha=0,\quad
+ \int cq_\alpha\,c=0,\quad
+ \int cq_\alpha\,q_\beta=0,\quad
+ \int cq_\alpha\,cq_\beta={\delta_{\alpha\beta}\over6}.
+ \tag{JP32}
+\]
+For the last constant, let \(a=\int x_0^4\) and
+\(b=\int x_0^2x_1^2\). Invariance under the rotation
+\(x_0\mapsto(x_0+x_1)/\sqrt2\) gives \(a=3b\).
+Integration of \((\sum_{\alpha=0}^3x_\alpha^2)^2=1\) gives
+\(4a+12b=1\), hence \(b=1/24\). Multiplication by four proves
+the stated \(1/6\); parity gives all other equalities.
+The vector field \(2Ad_0cq\) is therefore the orthogonal harmonic
+projection of (JP31) onto this quadratic component. For every fixed
+choice of the other bulk chords,
+\[
+ \int |n_{b_*}|^2\,dZ_{k_*}
+ \ge (2Ad_0)^2\sum_{\alpha=1}^3{1\over6}
+ ={d_*^2\over8}.
+ \tag{JP33}
+\]
+
+The actual marginal in (JP24) has the same one-link score bound:
+differentiation under its finite compact integral gives
+\[
+ \nabla_{k_*}\log\rho_{\rm bulk}
+ ={\int\rho\,\nabla_{k_*}\log\rho\,dB\over
+          \int\rho\,dB},
+\]
+whose norm is at most \(4r_{k_*}\xi=12\xi\).
+There are exactly three incident faces: both direction-one faces
+because \(1\) is an interior first coordinate, and the positive
+direction-three face because the third coordinate is zero.
+The conditional density of \(Z_{k_*}\) within the actual bulk marginal
+is therefore at least \(e^{-24\pi\xi}\). Applying (JP33) to that
+conditional density, then integrating every remaining bulk variable,
+proves the entirely evaluated bounds
+\[
+ \int\sum_b|n_b|^2d\mu_{\rm bulk}
+       \ge {d_*^2\over8}e^{-24\pi\xi},\qquad
+ \boxed{\displaystyle
+ \mu(|\nabla D|^2)\ge
+ {d_*^2\over8A_m}
+       e^{-24\pi\xi[m(m+1)+1]}>0.}
+ \tag{JP34}
+\]
+The original raw correction energy is bounded below by the second
+expression times its full factor \(\kappa\beta_0^2\).
+This is an actual-vacuum estimate at every finite original regulator.
+It has no unproved vacuum moment or unknown marginal on its right side.
+
+Along the specified original path, no coupling is selected or changed:
+\[
+ \xi_j={10000j^2\over\kappa_*^2},\quad m_j=2j^4,\qquad
+ 24\pi\xi_j[m_j(m_j+1)+1]
+ ={240000\pi\over\kappa_*^2}
+             (4j^{10}+2j^6+j^2),\qquad
+ {\log A_{m_j}\over j^4\log j}\longrightarrow64 .
+ \tag{JP35}
+\]
+Thus (JP34) replaces the \(j^{14}\) vacuum exponent and the
+all-link small-ball term of (JP18) by this explicit \(j^{10}\)
+exponent and an explicitly counted degree space. In the original
+endpoint it proves the further unconditional estimate
+\[
+ \boxed{\begin{split}
+ \mathscr E_j(s_j)\ge&
+ 4\beta_{0,j}^2[\mathcal Q_{4,j}-j\mathcal K_{1,j}]
+       -\beta_{0,j}^2\mu_j(D_j^2)\\
+ &+{j\beta_{0,j}^2d_{*,j}^2\over8A_{m_j}}\,
+    \exp\!\left[-{240000\pi\over\kappa_*^2}
+                       (4j^{10}+2j^6+j^2)\right].
+ \end{split}}\tag{JP36}
+\]
+No statement about the sign of the remaining full expression is
+inferred from this strictly positive correction.
+
+\subsection*{9. The boundary mass-to-energy map and its precise path loss}
+
+The preceding energy lower bound does not control the negative even
+mass in (JP22). The next calculation derives the direct mass-to-energy
+map from the same exact word space. For fixed \(z\), let
+\(\overline D(z)=\int D(B,z)dB\) and \(h=D-\overline D\).
+The nonconstant part of \(\mathcal H_{\partial,m}\) has reproducing
+kernel diagonal \(A_m-1\). Since \(D(I_{\mathcal B},z)=0\),
+\(|\overline D|^2=|h(I_{\mathcal B})|^2\le(A_m-1)\int|h|^2dB\).
+The product sphere Laplacian on harmonic degree tuple
+\((\ell_b)_b\) has eigenvalue
+\(\sum_b\ell_b(\ell_b+2)/4\): the denominator four is the original
+radius-two metric. Indeed the Euclidean polar-coordinate formula in
+four dimensions gives
+\(\Delta(r^\ell Y)=r^{\ell-2}
+[\ell(\ell+2)Y+\Delta_{S^3}Y]\); a homogeneous harmonic polynomial
+makes this zero, and radius two divides the eigenvalue by four.
+The product operator sums the individual factor eigenvalues.
+Every nonconstant tuple has eigenvalue at least
+\(3/4\). Orthogonality of the finite harmonic decomposition therefore
+proves, directly for these functions,
+\[
+ \int D^2dB
+ =|\overline D|^2+\int|h|^2dB
+ \le {4A_m\over3}
+             \int\sum_{b,\alpha}|X_{b,\alpha}D|^2dB .
+ \tag{JP37}
+\]
+Multiply the first integral by the maximum conditional density,
+divide the last by its minimum, and use their ratio in (JP25).
+Finally integrate the unchanged bulk marginal. The result is
+\[
+ \boxed{\displaystyle
+ \mu(D^2)\le {4A_m\over3}e^{\Omega_{\mathcal B}}
+                      \mu(|\nabla D|^2),\qquad
+ \kappa\beta_0^2\mu(|\nabla D|^2)
+     \ge\delta_{\partial}\,\beta_0^2\mu(D^2),\quad
+ \delta_{\partial}={3\kappa\over4A_m}e^{-\Omega_{\mathcal B}}.}
+ \tag{JP38}
+\]
+This is a state-specific inequality for the original even correction;
+it is not a claim about the complete physical gap. In particular it
+retains a possible vacuum component of \(D\psi\); no centering is
+inserted in (JP37) or (JP38).
+
+The estimate has a determinate limitation on the requested window:
+\[
+ {\delta_{\partial,j}\over s_j}
+ ={3j\over4A_{m_j}}
+       \exp\!\left[-{240000\pi\over\kappa_*^2}
+                         (4j^{10}+2j^6)\right]\longrightarrow0 .
+ \tag{JP39}
+\]
+Accordingly (JP38) bounds the full even contribution in (JP22) by
+\[
+ {\kappa\beta_0^2\over s}\mu(|\nabla D|^2)
+                -\beta_0^2\mu(D^2)
+ \ge \left({\delta_\partial\over s}-1\right)
+                       \beta_0^2\mu(D^2).
+\]
+The proved coefficient approaches \(-1\), so this calculation does
+not certify a nonnegative even contribution at the shrinking window.
+It also does not prove that the actual contribution is negative.
+The unresolved issue is the actual cancellation between the complete
+four-loop mass and gradient expectations in (JP20)–(JP22) at
+\(g_j^2=\kappa_*/(200j)\). The successive calculations above identify
+the exact boundary normal defect, evaluate a nonzero bulk harmonic
+in the actual vacuum, remove all unknown expectations from the positive
+energy correction, and derive the direct even mass-to-energy map.
+Their explicit original-path losses, rather than an assumed missing
+estimate, determine precisely what these results do and do not settle.
+
+\subsection*{10. The global two-link harmonic removes the boundary loss}
+
+There is a stronger continuation of (JP30)–(JP34). Keep
+\(k=Z_{k_*}\), \(h_b=Z_{b_*}\) with the same two original physical
+chords \(k_*=(1,0,0;2)\), \(b_*=(m,0,0;2)\), but now allow every
+boundary chord to be arbitrary. The link \(k_*\) occurs as a reflected
+target in exactly one chord, \((m-1,0,0;2)\). Its endpoint products
+are \(A_{0,0}=I\) and \(A_{1,0}=h_b\). Thus its full reflected word
+is \(kh_b^{-1}\). It occurs in no boundary transport product.
+Consequently the exact dependence on \(k\), with every other chord
+fixed arbitrarily, is
+\[
+ \begin{array}{ll}
+ u_1=U_1+Aq(k),& u_3=U_3+d_0q(k),\\
+ u_1^{\mathcal R}=V_1-Aq(kh_b^{-1}),
+   &u_3^{\mathcal R}=V_3+d_0q(kh_b^{-1}),
+ \end{array}\tag{JP40}
+\]
+where \(U_1,U_3,V_1,V_3\) retain their full dependence on all
+remaining original chords and are independent of \(k\). In particular
+they may depend on \(h_b\). Multiplying the original vectors, without
+omitting any summand, gives
+\[
+ \begin{split}
+ \mathcal S={}&U_1\cdot U_3
+       +(d_0U_1+AU_3)\cdot q(k)+Ad_0|q(k)|^2,\\
+ \mathcal S_{\mathcal R}={}&V_1\cdot V_3
+       +(d_0V_1-AV_3)\cdot q(kh_b^{-1})
+                       -Ad_0|q(kh_b^{-1})|^2 .
+ \end{split}\tag{JP41}
+\]
+Right multiplication by the fixed \(h_b^{-1}\) acts linearly on the
+four real quaternion coordinates of \(k\). Therefore all terms in
+(JP41) except the two displayed squared norms are affine-linear in
+those four coordinates. This remains true after any physical
+\(b_*\)-derivative: it differentiates the retained coefficients and
+the linear right-multiplication matrix, never raising the \(k\)-degree.
+
+For \(h_b(t)=\exp(tT_\alpha)h_b\), put \(V=kh_b^{-1}\).
+Then \(kh_b(t)^{-1}=V\exp(-tT_\alpha)\). The full quaternion
+product gives
+\[
+ {d\over dt}c(V\exp(-tT_\alpha))\big|_0
+       ={q_\alpha(V)\over4},\qquad
+ {d\over dt}|q(V\exp(-tT_\alpha))|^2\big|_0
+       =-2c(V)q_\alpha(V).
+\]
+Here \(|q(V)|^2=4[1-c(V)^2]\) retains the radius and the original
+normalization of \(q\). The unreflected quadratic term in (JP41)
+does not depend on \(h_b\). It follows, globally and with every
+boundary link arbitrary, that
+\[
+ X_{b_*,\alpha}D
+   =2Ad_0c(kh_b^{-1})q_\alpha(kh_b^{-1})
+                  +R_\alpha(k),
+ \tag{JP42}
+\]
+where \(R_\alpha(k)\) is the full affine-linear remainder obtained
+by differentiating all other terms of (JP41). Its coefficients
+retain every other chord, scalar part, endpoint transport, and
+derivative of \(U_\mu,V_\mu\).
+
+The first term in (JP42) is a degree-two harmonic in \(k\).
+Right Haar invariance and (JP32) prove that it has mean zero and
+is orthogonal to the entire remainder \(R_\alpha\). This is an
+orthogonal projection used to establish an inequality; the original
+function and remainder remain in (JP42). Summing the exact
+quadratic norms gives, for every fixed exterior configuration,
+\[
+ \int\sum_{\alpha=1}^3|X_{b_*,\alpha}D|^2\,dk
+ \ge {d_*^2\over8}.
+\]
+The actual conditional density of \(k_*\), with every other chord
+fixed, is at least \(e^{-24\pi\xi}\), by the same three incident
+faces used in Section 8. Integrating that conditional and then its
+actual exterior marginal proves the global improvement
+\[
+ \boxed{\displaystyle
+ \mu(|\nabla D|^2)\ge{d_*^2\over8}e^{-24\pi\xi},\qquad
+ \kappa\beta_0^2\mu(|\nabla D|^2)
+             \ge{\kappa\beta_0^2d_*^2\over8}e^{-24\pi\xi}.}
+ \tag{JP43}
+\]
+Thus the boundary band factor and boundary density penalty in (JP34)
+were losses of that particular receiving route. The global exact word
+calculation removes both. No boundary link has been set to identity
+in this proof.
+
+The resulting bound for the unchanged endpoint is
+\[
+ \boxed{\begin{split}
+ \mathscr E_j(s_j)\ge&
+ 4\beta_{0,j}^2[\mathcal Q_{4,j}-j\mathcal K_{1,j}]
+                  -\beta_{0,j}^2\mu_j(D_j^2)\\
+ &+{j\beta_{0,j}^2d_{*,j}^2\over8}
+                  \exp\!\left(-{240000\pi j^2\over\kappa_*^2}\right).
+ \end{split}}\tag{JP44}
+\]
+In this expression
+\[
+ j^3\beta_{0,j}\longrightarrow{50\sqrt2\pi\over\kappa_*},
+ \qquad j^{20}d_{*,j}\longrightarrow{\pi^2\over4}.
+\]
+These follow directly from \(\beta_{0,j}=100j\sqrt8\sin h_j/\kappa_*\),
+\(n_j=2j^4+1\), and (JP15). In particular, multiplying the last
+positive term in (JP44) by
+\(j^{45}\exp(240000\pi j^2/\kappa_*^2)\) gives the exact limit
+\(625\pi^6/(16\kappa_*^2)\). This evaluates the scale of the
+proved positive contribution, while leaving the actual unbounded
+regulator cancellation explicit.
+
+\subsection*{11. Actual raw mass and energy of the original odd polynomial}
+
+The same global decomposition evaluates a harmonic component of
+the original \(F=\beta_0(\mathcal S-\mathcal S_{\mathcal R})\).
+For a quaternion \(U\), define only as an auxiliary polynomial
+\(\chi_1(U)=4c(U)^2-1\). Since \(|q(U)|^2=3-\chi_1(U)\),
+the complete quadratic harmonic parts in \(k\) of (JP41) are
+\[
+ P_2\mathcal S=-Ad_0\chi_1(k),\qquad
+ P_2\mathcal S_{\mathcal R}=Ad_0\chi_1(kh_b^{-1}),
+ \tag{JP45}
+\]
+where \(P_2\) is the degree-two Haar harmonic projection in the
+single original chord \(k_*\). The respective constant pieces
+\(+3Ad_0\) and \(-3Ad_0\) remain in their affine remainders.
+Thus \(P_2\) is not a redefinition of either physical polynomial.
+
+Here are the exact integrals, including their dependence on the
+arbitrary boundary link:
+\[
+ \int\chi_1(k)^2dk=1,\qquad
+ \int\chi_1(k)\chi_1(kh_b^{-1})dk
+       ={4c(h_b)^2-1\over3}=:\rho_b.
+\]
+To prove them directly, write \(k=(x_0,\mathbf x)\),
+\(h_b=(y_0,\mathbf y)\). Then \(c(kh_b^{-1})=x\cdot y\).
+The second- and fourth-order sphere moments calculated in (JP32)
+give \(\int x_0^2=1/4\) and
+\(\int x_0^2(x\cdot y)^2=(1+2y_0^2)/24\).
+Expanding both factors \(4c^2-1\) gives the two formulas.
+Consequently the full conditional harmonic Gram matrix of
+\((\mathcal S,\mathcal S_{\mathcal R})\) is
+\[
+ \Gamma_2(h_b)=A^2d_0^2
+       \begin{pmatrix}1&-\rho_b\\-\rho_b&1\end{pmatrix}.
+ \tag{JP46}
+\]
+All affine remainders are orthogonal to this harmonic matrix in
+the single-link Haar integral. In the odd combination this gives
+\[
+ \int|P_2F|^2dk
+ =\beta_0^2A^2d_0^2(2+2\rho_b)
+ ={\beta_0^2d_*^2\over12}[1+2c(h_b)^2]
+ \ge{\beta_0^2d_*^2\over12}.
+\]
+The original \(k_*\)-Laplacian acts on every degree-two harmonic
+by the original eigenvalue \(2(2+2)/4=2\). The left derivatives
+preserve harmonic degree, so the quadratic derivatives are
+orthogonal to the derivatives of the affine remainder, including
+the retained constants whose derivatives are zero. Integration by
+parts on the single compact group therefore gives
+\(\int\sum_\alpha|X_{k_*,\alpha}F|^2dk
+\ge2\int|P_2F|^2dk\).
+Applying the actual conditional density floor, before integrating
+the unchanged exterior marginal, proves
+\[
+ \boxed{\displaystyle
+ G=\mu(F^2)\ge{\beta_0^2d_*^2\over12}e^{-24\pi\xi},\qquad
+ C_F=\kappa\mu(|\nabla F|^2)
+       \ge{\kappa\beta_0^2d_*^2\over6}e^{-24\pi\xi}.}
+ \tag{JP47}
+\]
+These are evaluated actual-vacuum bounds for the original raw odd
+state. In particular the raw state is nonzero at every original
+finite regulator. Both bounds retain \(\beta_0\), \(\kappa\), the
+actual face count, and the exact two chord coefficients.
+They are separate lower bounds: they do not assert
+\(C_F\ge2\kappa G\), since the full actual mass includes the
+retained remainder and its vacuum-dependent cross terms.
+
+For completeness, the even combination of (JP46) has norm
+\[
+ \int|P_2D|^2dk
+   =2A^2d_0^2(1-\rho_b)
+   ={d_*^2\over24}|q(h_b)|^2.
+\]
+After the \(k_*\) conditional lower bound, integrate all other
+variables to obtain the actual marginal of \(h_b\). Its logarithmic
+score is at most \(4r_{b_*}\xi=8\xi\), by the same differentiation
+under the marginal integral used in Section 8. The boundary link
+\((m,0,0;2)\) has exactly two incident faces. Its marginal density
+is therefore at least \(e^{-16\pi\xi}\), and
+\(\int|q(h_b)|^2dh_b=3\). Thus
+\[
+ \boxed{\displaystyle
+ \mu(D^2)\ge{d_*^2\over8}e^{-40\pi\xi}.}
+ \tag{JP48}
+\]
+More generally the full actual mass Gram matrix of
+\((\mathcal S,\mathcal S_{\mathcal R})\) is bounded below by
+\(A^2d_0^2e^{-40\pi\xi}I_2\): apply the same two successive
+density floors to (JP46) and use \(\int\rho_b\,dh_b=0\).
+This follows for every real or complex linear combination, so it
+is a matrix inequality, with all original affine terms included.
+
+On the prescribed path, the right sides of (JP47) are respectively
+asymptotic to
+\[
+ {625\pi^6\over24\kappa_*^2}\,
+       j^{-46}e^{-240000\pi j^2/\kappa_*^2},
+ \qquad
+ {625\pi^6\over12\kappa_*}\,
+       j^{-46}e^{-240000\pi j^2/\kappa_*^2}.
+ \tag{JP49}
+\]
+These statements concern the proved bounds, not asymptotic
+equalities for the unknown actual \(G_j,C_{F,j}\).
+The positive even energy (JP43), nonzero even mass (JP48), and
+original odd mass and energy (JP47) all arise from the same complete
+two-link harmonic calculation. They strengthen the earlier
+boundary-restricted route, while (JP38) remains the proved direct
+even mass-to-energy comparison. Neither an energy lower bound
+nor a total raw mass lower bound determines spectral mass inside
+\((0,s_j]\). The actual sign of
+\(G_j-C_{F,j}/s_j\), equivalently the full four-loop/gradient
+cancellation (JP20)–(JP22), remains unresolved on this path.
+\clearpage
+\section*{The complete fourth coefficient of the original fifth-reference Schur map}
+
+11 October 2026. This note evaluates the unchanged original open-box Schur coefficient, including the complementary projection at every intermediate return, every source multiplicity, every original support label, and all boundary incidences. The accepted P1–P45 proof is preserved in the adjacent file \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/fourth_return/../ORIGINAL_J5_PARITY_AND_TAIL.md}{Original J5 parity and tail}. The present result supplies its formerly unevaluated fourth coefficient.
+
+The inputs are the original programme recurrence, not a substituted reference. Pinned public definitions are \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/fa79faff2cd697e16cfa3a7953f36810c22c8922/yang-mills/continuations/20260915-gauge-native-band/RESEARCH_NOTE.md}{G1–G31, original coefficient space and bilinear map}, \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/fa79faff2cd697e16cfa3a7953f36810c22c8922/yang-mills/continuations/20260915-gauge-native-band/BAND_AND_CERTIFICATE.md#L125}{B13–B16, both shared-edge channels}, and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260921-fifth-reference-return/FIFTH_REFERENCE.md}{F1–F42, full fifth reference}. Verbatim retained originals are the \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/fourth_return/verification_sources/FIFTH_SOURCE.md}{17 September independent-source proof}, \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/fourth_return/verification_sources/PLAQUETTE_RESPONSE.md}{physical-response proof}, and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/fourth_return/verification_sources/SIXTH_ENERGY.md}{sixth-energy proof}. These originals and the exact differential algebra are identified by complete file digests in PUBLIC\_SOURCE\_READING\_USE\_LEDGER.json and VERIFICATION\_SOURCE\_RECEIPTS.json. They are programme derivations, not human primary papers.
+
+The center-sign symmetry used below has the human antecedent L. Li and Y. Meurice, \href{https://arxiv.org/abs/hep-lat/0410029v2}{Lattice gluodynamics at negative \(g^2\), arXiv:hep-lat/0410029v2}, \href{https://arxiv.org/src/hep-lat/0410029v2}{original author TeX}, Section IV. The exact open-boundary Hamiltonian and labelled-source maps are proved in the adjacent P1–P45 note. No historical-priority claim is made for that symmetry or for the source recurrence.
+
+\subsection*{Q1. Original objects and the coefficient to be evaluated}
+
+Fix an integer \(L\ge2\). The original vertices are
+\[
+ V_L=\{-L,\ldots,L\}^3,
+\]
+the positive edge \((n,i)\) runs from \(n\) to \(n+e_i\) when both vertices lie in \(V_L\), and the original faces are
+\[
+ \mathcal P_L=\{p=(n;i,j):i<j,\ n,n+e_i,n+e_j,n+e_i+e_j\in V_L\}.
+\]
+On the product of one \(SU(2)\) per original edge, with product Haar probability measure, keep
+\[
+ \begin{split}
+ W_{(n;i,j)}
+ &=\operatorname{Tr}\!\left[
+ U_i(n)U_j(n+e_i)U_i(n+e_j)^{-1}U_j(n)^{-1}\right],\\
+ T_\alpha&=-i\sigma_\alpha/2,\qquad
+ X_{e,\alpha}f=\left.\frac d{dt}f(\ldots,e^{tT_\alpha}U_e,\ldots)\right|_{t=0},\\
+ K&=-\sum_{e,\alpha}X_{e,\alpha}^2,\qquad
+ \Gamma(f,h)=\sum_{e,\alpha}(X_{e,\alpha}f)(X_{e,\alpha}h).
+ \end{split}\tag{Q1}
+\]
+The physical subspace is invariant under every original vertex gauge transformation, including boundary vertices. Let \(P_H f=\int f\,dU\), \(Q_H=I-P_H\). The full scalar and physical parameters are
+\[
+ H(x)=\kappa K+\kappa\sum_{p\in\mathcal P_L}x_p(2-W_p),\qquad
+ \kappa=2g^2/a,\qquad x_p=\xi=1/(4g^4)
+ \tag{Q2}
+\]
+on the physical homogeneous line. The independent \(x_p\) are coordinates on this same finite-dimensional source family.
+
+The original zero-Haar-mean bilinear map is
+\[
+ \mathcal B(f,h)_A
+ =K^{-1}Q_H\!\!\sum_{A_1\cup A_2=A}\Gamma(f_{A_1},h_{A_2}).
+ \tag{Q3}
+\]
+Here \(A,A_1,A_2\) are original edge labels. A representation component with spin support contained strictly in its edge label keeps the larger label. In particular, projecting a function onto a face trace does not reduce its source label. Assembly sums the components representing the same function. Its kernel is retained until the original assembly quotient is taken.
+
+The ordinary multivariate source coefficients are defined without factorials:
+\[
+ \begin{split}
+ v(x)&=\sum_{\nu\ne0}v_\nu x^\nu,\qquad
+ v_{\mathbf e_p}=W_p/3,\\
+ v_\nu&=\sum_{\substack{\mu+\eta=\nu\\
+                 \mu,\eta\in\mathbb N_0^{\mathcal P_L}\setminus\{0\}}}
+                  \mathcal B(v_\mu,v_\eta),\\
+ V_n(x)&=\sum_{|\nu|=n}v_\nu x^\nu,\qquad
+ v_n=V_n(\mathbf1),\qquad q_5(x)=\sum_{n=1}^5V_n(x).
+ \end{split}\tag{Q4}
+\]
+Both subindices are nonzero and may have zero components; both orders of a nonidentical split occur. Every coefficient has its original union-of-face-edges label. The recurrence is the zero-Haar-mean part of the exact logarithmic ground-state equation. It is also an unambiguous finite algebraic definition at every order.
+
+The Haar face projection and its unchanged complement are
+\[
+ Pf=\sum_{p\in\mathcal P_L}W_p\langle W_p,f\rangle_H,\qquad R=I-P
+ \tag{Q5}
+\]
+on the original physical zero-mean space. Distinct face traces are orthogonal: a link belonging to one face but not the other has an odd fundamental factor, and its Haar integral is zero. Also \(\int W_p^2=1\), by integrating the face holonomy and fundamental-character orthogonality. Thus (Q5) is the original orthogonal face projection. On the labelled coefficient space it acts on the function component and keeps the label.
+
+Write
+\[
+ J_i=2\mathcal B(v_i,\cdot),\quad
+ \mathcal J_5(\xi)=\sum_{i=1}^5\xi^iJ_i,\quad
+ L_5(\xi)=I-\mathcal J_5(\xi).
+\]
+The original Schur map is exactly
+\[
+ \mathscr S_5(\xi)
+ =P-P\mathcal J_5P
+ -P\mathcal J_5R(R-R\mathcal J_5R)^{-1}R\mathcal J_5P .
+ \tag{Q6}
+\]
+All identity operators on the complementary space in this formula mean \(R\).
+
+Expanding only by total degree, the fourth coefficient is the sum of all eight original words:
+\[
+ \begin{split}
+ S_{[4]}={}&-PJ_4P\\
+ &-PJ_1RJ_3P-PJ_3RJ_1P-PJ_2RJ_2P\\
+ &-PJ_1RJ_1RJ_2P-PJ_1RJ_2RJ_1P-PJ_2RJ_1RJ_1P\\
+ &-PJ_1RJ_1RJ_1RJ_1P.
+ \end{split}\tag{Q7}
+\]
+No intermediate \(R\), \(K^{-1}Q_H\), factor 2, or occurrence of an original \(J_i\) in (Q7) will be removed.
+
+\subsection*{Q2. The exact derivative map that evaluates all eight returns}
+
+For completeness, the original parity is immediate from
+\[
+ z_i(n)=(-1)^{\sum_{k<i}n_k},\qquad Tf(U)=f(zU).
+\]
+Each \(i,j\) face contains exactly one sign change from the lower to the upper \(i\)-coordinate in \(z_j\), while the two \(z_i\) signs agree. Thus \(TW_p=-W_p\). Central multiplication commutes with every \(X_{e,\alpha}\), the gauge transformations, \(K,Q_H\), and the original support labels. Hence \(Tv_n=(-1)^nv_n\), \(TJ_iT=(-1)^iJ_i\), \(TP=PT=-P\), and \(TR=RT\). Every face-return word of odd total degree is zero, including before assembly. Both \(\mathscr S_5\) and
+\[
+ G_5(\xi):=PL_5(\xi)^{-1}P
+ \tag{Q8}
+\]
+therefore have only even powers wherever the inverse exists, or as formal series at zero.
+
+Define the exact multivariate residual
+\[
+ \mathcal R_5(x)=\tfrac13\sum_p x_pW_p+\mathcal B(q_5(x),q_5(x))-q_5(x).
+ \tag{Q9}
+\]
+By (Q4) its degrees are precisely among 6 through 10. Differentiation, with the original factor 2 from symmetry of \(\mathcal B\), gives
+\[
+ \bigl[I-2\mathcal B(q_5(x),\cdot)\bigr]\partial_{x_q}q_5(x)
+ =W_q/3-\partial_{x_q}\mathcal R_5(x).
+ \tag{Q10}
+\]
+Consequently, on setting every \(x_p=\xi\),
+\[
+ G_5(\xi)W_q
+ =3P\partial_{x_q}q_5(\xi\mathbf1)
+  +3PL_5(\xi)^{-1}\partial_{x_q}\mathcal R_5(\xi\mathbf1).
+ \tag{Q11}
+\]
+The last summand starts at degree five. Its odd face coefficients vanish because the left side and the displayed derivative polynomial are even. In particular,
+\[
+ [\xi^4]G_5\,W_q=3P\partial_{x_q}V_5(\mathbf1).
+ \tag{Q12}
+\]
+Equation (Q11), including its residual, is the exact connecting map, not an identification of different polynomial references.
+
+This identity also holds for every enlarged input label \(A_0\supseteq\partial q\). To see this without discarding labels, expand either derivative of each recurrence term or the successive \(J_i\)'s as rooted binary trees. Differentiation marks one leaf carrying \(W_q/3\); its integer multiplicity is the number of possible marked occurrences. At each vertex the original operation is (Q3), so the resulting label is \(A_0\) united with the original face-edge labels of all other leaves. Keeping the differentiated coefficient's full source label gives exactly the same union, because \(A_0\) already contains \(\partial q\). This tree bijection proves (Q10)–(Q12) on the labelled space. It also proves descent through assembly: an assembled zero input remains zero under \(K^{-1}Q_H\Gamma(f,\cdot)\), its projections, and their convergent or formal compositions.
+
+We recall the complete second return so that the inverse correction below retains its original sign. Set \(D_p=W_p^2-1=\chi_1(U_p)\). Then
+\[
+ KD_p=8D_p,\quad \Gamma(W_p,W_p)=3-D_p,\quad
+ J_1W_p=-D_p/12+\sum_{q\sim p}(C_{0,pq}/9-C_{1,pq}/39),
+ \tag{Q13}
+\]
+where, for adjacent faces,
+\[
+ KC_0=\tfrac92C_0,\quad KC_1=\tfrac{13}2C_1,\quad
+ \|C_0\|_H^2=\tfrac14,\quad\|C_1\|_H^2=\tfrac34,\quad
+ C_0+C_1=W_pW_q.
+ \tag{Q14}
+\]
+Indeed write the two face words at the common edge as \(\operatorname{Tr}(UA)\), \(\operatorname{Tr}(U^{-1}B)\). Haar projection at that edge is \(C_0=\operatorname{Tr}(AB)/2\); the remaining six fundamental edges contribute \(9/2\), and shared-edge spin one adds 2. Independent Haar integration gives the two stated norms. The Pauli identities in (Q21) below give all coefficients in (Q13).
+
+For a Casimir-\(c\) component \(h_c\), integration by parts in the original product rule gives
+\[
+ PJ_1h_c=(c/9)P\Bigl(\sum_rW_r\Bigr)h_c.
+\]
+The only surviving face pair for \(C_0,C_1\) is its original pair: otherwise the difference of at most four faces would be a nonempty mod-two two-cycle, impossible since each edge of one included face requires a distinct further face. For \(D_p\), only \(W_p^2D_p\) contributes. Thus
+\[
+ PJ_1D_p=8W_p/9,\quad
+ PJ_1C_0=(W_p+W_q)/8,\quad
+ PJ_1C_1=13(W_p+W_q)/24.
+\]
+The two adjacent returns are \(1/72\) and \(-1/72\) with the same union label and cancel. The self return is \(-2W_p/27\). Similarly the exact
+\[
+ v_2=-\sum_pD_p/72+
+       \sum_{\{p,q\}:p\sim q}(C_{0,pq}/27-C_{1,pq}/117)
+\]
+has \(PJ_2P=-P/27\): its adjacent contributions are again \(1/72-1/72\), while its self contribution is \(-1/27\). We have proved
+\[
+ PJ_1P=0,\quad PJ_1RJ_1P=-2P/27,\quad PJ_2P=-P/27,\quad
+ G_{[2]}=-P/9,\quad S_{[2]}=P/9.
+ \tag{Q15}
+\]
+
+The block inverse identity gives \(\mathscr S_5^{-1}=G_5\). Formally it follows by multiplying the two-by-two block factorization of \(L_5\); analytically all inverses used here are proved on the explicit disk in Q8 below. Comparing the degree-four coefficient in \(\mathscr S_5G_5=P\), and retaining \(G_{[2]}^2=P/81\), gives the central evaluation rule
+\[
+ \boxed{S_{[4]}W_q=\frac1{81}W_q-3P\partial_{x_q}V_5(\mathbf1).}
+ \tag{Q16}
+\]
+It is exactly the sum (Q7). More explicitly, expand \(G_{[4]}\) into all compositions of 4 with unrestricted internal identities, and insert \(I=P+R\) at each such identity. Terms with an internal face return split into even positive degrees. The only degree-four split is \(2+2\); its sum is \(G_{[2]}^2\). All remaining terms have only \(R\)'s internally and are the negatives of (Q7). This proves the equality word by word after this finite expansion and preserves every support union. The term \(P/81\) is at the original input label \(A_0\), as both surviving quadratic self returns are.
+
+\subsection*{Q3. Complete list of possible fifth face projections}
+
+The independent central substitution \(U_e\mapsto -U_e\) at any one original edge commutes with \(K,Q_H\) and differentiations. Therefore \(v_\nu\) has at that edge the parity of the number of occurrences in its source faces. A nonzero \(\langle W_p,v_\nu\rangle_H\) requires
+\[
+ \partial\!\left(\sum_r(\nu_r\bmod2)r+p\right)=0
+ \quad\text{as a finite cubical two-chain over }\mathbf F_2.
+ \tag{Q17}
+\]
+This condition applies to each coefficient before assembly.
+
+Here is the required finite cubical fact, including its filling. For a finite two-cycle, define the coefficient of a cube in a vertical column to be the sum modulo two of the horizontal face coefficients above it in that column. Differences of successive cube coefficients reproduce the horizontal faces. The two-cycle equation on each horizontal edge says that the corresponding differences between neighbouring columns reproduce the specified vertical faces; their differences have zero vertical difference and finite support, so are zero. Below all nonzero horizontal faces the column sums are independent of the horizontal column, again by the cycle equations. Outside the finite support they vanish, so all these lower sums vanish. The constructed three-chain is finite and its boundary is the given cycle.
+
+A nonempty finite set of cubes has at least two boundary faces in each occupied column in each of the three coordinate directions. If it contains at least two distinct cubes, their projections differ on at least two of the three coordinate planes. The numbers of occupied columns in those directions are therefore at least \(2,2,1\), and the boundary has at least ten faces. It follows that a nonempty finite two-cycle of at most six faces is exactly the boundary of one cube. This proof remains valid for a cycle contained in the original box: the filling is the original union of contained cubes, and the single-cube conclusion in particular has all its six faces contained.
+
+For \(|\nu|=5\), (Q17) has at most six distinct faces. If its chain is zero, the odd-multiplicity face set is exactly \(\{p\}\), leaving the possibilities
+\[
+ p^5,\qquad p^3q^2,\qquad pq^4,\qquad pq^2r^2.
+ \tag{Q18}
+\]
+If it is a cube boundary, it has exactly six faces. Thus \(p\) is absent from the five distinct source faces, which are the other five faces of that cube. There is no additional case with multiplicities or fewer distinct faces.
+
+A source multiset whose edge-sharing graph is disconnected has zero coefficient. This follows by induction in (Q4): a nonzero proper coefficient lies in one connected component; any split crossing two components has disjoint derivative supports and zero \(\Gamma\). Hence in (Q18), two distinct faces must be adjacent, and the distinct triple must be connected. A connected graph on three faces is either a path, or a triangle. A triangle consists either of three faces sharing one edge, or three faces meeting at a corner with different pairwise shared edges. This is exhaustive: fix one face; each of the other two shares an edge with it. If these edges are opposite, the other two cannot share an edge. If they coincide, all three share it. If they are consecutive and the other two also share an edge, they meet along the line perpendicular to the fixed face through their common vertex.
+
+For a connected triple \(T=\{p,q,r\}\), with \(p\) the marked output, define
+\[
+ \eta_{p,T}=
+ \begin{cases}
+ h_c,&T\text{ is a path and }p\text{ its central vertex},\\
+ h_e,&T\text{ is a path and }p\text{ an endpoint},\\
+ h_m,&T\text{ has a common edge},\\
+ h_k,&T\text{ is a corner triangle}.
+ \end{cases}\tag{Q19}
+\]
+Graph vertices in this definition are original faces; adjacency means sharing an original edge.
+
+\subsection*{Q4. Exact evaluation of all fifth face coefficients}
+
+The full projected polynomial, with each monomial's original union label retained, is
+\[
+ \begin{split}
+ PV_5(x)={}&u\sum_p x_p^5W_p\\
+ &+\sum_{\{p,q\}:p\sim q}
+ \left[
+ b(x_p^3x_q^2W_p+x_q^3x_p^2W_q)
+ +c(x_px_q^4W_p+x_qx_p^4W_q)\right]\\
+ &+\sum_{\substack{T\subset\mathcal P_L\\|T|=3,\ T\ {\rm connected}}}
+       \sum_{p\in T}\eta_{p,T}x_p
+                     \prod_{r\in T\setminus\{p\}}x_r^2\,W_p\\
+ &+d\sum_{\text{contained cubes }C}\sum_{p\in\partial C}
+                       \prod_{r\in\partial C\setminus\{p\}}x_r\,W_p .
+ \end{split}\tag{Q20}
+\]
+All pair and triple sums displayed as sets are unordered. The exact values are
+\[
+ \boxed{
+ \begin{gathered}
+ u=\frac7{3888},\quad b=-\frac{301}{2956824},\quad
+ c=-\frac{55}{3639168},\\
+ h_c=\frac{19}{3032640},\quad h_e=\frac{19}{59136480},\quad
+ h_m=-\frac4{616005},\quad h_k=\frac{164}{6283251},\quad
+ d=\frac{107}{34992}.
+ \end{gathered}}
+\]
+
+We give the complete finite derivation of the table rather than assign it the status of an uncomputed source estimate. The original Pauli matrices give
+\[
+ \sum_\alpha\operatorname{Tr}(T_\alpha A)\operatorname{Tr}(T_\alpha B)
+ =-\tfrac12\operatorname{Tr}(AB)+\tfrac14\operatorname{Tr}(A)\operatorname{Tr}(B),
+\]
+\[
+ \sum_\alpha T_\alpha A T_\alpha=-\tfrac12\operatorname{Tr}(A)I+\tfrac14A,
+ \qquad-\sum_\alpha T_\alpha^2=\tfrac34I .
+ \tag{Q21}
+\]
+For every occurrence of a positive link differentiate as \(T_\alpha U_e\); for an inverse occurrence differentiate as \(-U_e^{-1}T_\alpha\). Apply the product rule to every occurrence, then (Q21). This gives exact \(K\) and \(\Gamma\) of any product of original trace words. The only word identities used are cyclicity of the trace, cancellation of adjacent inverse factors, \(\operatorname{Tr}(U^{-1})=\operatorname{Tr}(U)\) for \(SU(2)\), and
+\[
+ \operatorname{Tr}(U^n)=\operatorname{Tr}(U)\operatorname{Tr}(U^{n-1})
+                         -\operatorname{Tr}(U^{n-2}).
+ \tag{Q22}
+\]
+The last identity follows by multiplying the characteristic equation \(U^2-\operatorname{Tr}(U)U+I=0\) by \(U^{n-2}\). None changes the original union label.
+
+To implement the exact inverse in every lower-order recurrence, if \(r_e\) is the original occurrence count at edge \(e\), its possible spins are \(r_e/2,r_e/2-1,\ldots,(r_e\bmod2)/2\). At each original vertex, retain all assignments with even sum of doubled spins and \(2\max j_e\le\sum j_e\). Every invariant tensor satisfies these tests, so the resulting finite set \(\mathcal C\) of \(c=\sum_e j_e(j_e+1)\) contains every actual Casimir in this coefficient. Define
+\[
+ q_{\mathcal C}(t)=\prod_{\substack{c\in\mathcal C\\c>0}}(1-t/c),\qquad
+ f_{\mathcal C}(t)=\frac{1-q_{\mathcal C}(t)}t
+                  -q_{\mathcal C}(t)\sum_{\substack{c\in\mathcal C\\c>0}}\frac1c .
+ \tag{Q23}
+\]
+The first quotient is a polynomial. At zero its first term is \(\sum1/c\), cancelled by its second term; at each positive \(c\in\mathcal C\) it is \(1/c\). Thus \(f_{\mathcal C}(K)=K^{-1}Q_H\) on the entire coefficient, including its constant component. The zero-Casimir functions are constants because their nonnegative electric Dirichlet integral is zero. No spin truncation of the full Hamiltonian has occurred.
+
+Haar integration is equally finite and exact. At an edge with \(r\) fundamental occurrences, odd \(r\) has zero integral by its center sign. For even \(r\), the exact projection onto edge spin zero is
+\[
+ \prod_{j=1}^{r/2}\left(1-\frac{E_e}{j(j+1)}\right),
+ \qquad E_e=-\sum_\alpha X_{e,\alpha}^2.
+ \tag{Q24}
+\]
+After this projection the function is constant in that edge and its value is obtained by setting \(U_e=I\). Repeating over all original edges proves the Haar routine. If a polynomial has terms with different occurrence numbers, apply (Q24) separately to each occurrence group and sum; all operations are linear. These formulas prove termination and exactness of the rational certificate procedure.
+
+In particular, set
+\[
+ A_{14}(\nu,p)=\sum_{\substack{\mu\le\nu\\|\mu|=1}}
+          \int W_p\,\Gamma(v_\mu,v_{\nu-\mu})\,dU,\quad
+ A_{23}(\nu,p)=\sum_{\substack{\mu\le\nu\\|\mu|=2}}
+          \int W_p\,\Gamma(v_\mu,v_{\nu-\mu})\,dU.
+\]
+Self-adjointness of \(K^{-1}Q_H\), \(KW_p=3W_p\), and both orders in (Q4) give the complete formula
+\[
+ \langle W_p,v_\nu\rangle_H=\frac23(A_{14}(\nu,p)+A_{23}(\nu,p)).
+ \tag{Q25}
+\]
+The finite evaluations of these two separate original sums are:
+
+\begin{center}\small\begin{tabular}{p{.15\linewidth}p{.23\linewidth}p{.23\linewidth}p{.17\linewidth}}\toprule
+Source monomial and marked output & \(A_{14}\) & \(A_{23}\) & \((2/3)(A_{14}+A_{23})\)\\
+\(p^5\), output \(p\) & \(17/7776\) & \(1/1944\) & \(7/3888\)\\
+\(p^3q^2\), output \(p\) & \(139/23654592\) & \(-3751/23654592\) & \(-301/2956824\)\\
+\(pq^4\), output \(p\) & \(-55/1819584\) & \(55/7278336\) & \(-55/3639168\)\\
+\(pq^2r^2\), path center \(p\) & \(19/2021760\) & \(0\) & \(19/3032640\)\\
+\(pq^2r^2\), path endpoint \(p\) & \(-2021/157697280\) & \(233/17521920\) & \(19/59136480\)\\
+\(pq^2r^2\), common edge & \(2/41067\) & \(-4/68445\) & \(-4/616005\)\\
+\(pq^2r^2\), corner & \(-10/123201\) & \(28/232713\) & \(164/6283251\)\\
+Five cube faces, output missing \(p\) & \(43/11664\) & \(7/7776\) & \(107/34992\)\\
+\bottomrule\end{tabular}\end{center}
+
+Every table entry is obtained from (Q21)–(Q25) and only the original degree-one to degree-four recurrence. The complete list of \(\mu,\nu-\mu\), original oriented words, edge endpoints, output faces and individual rational integrals is retained in PROJECTED\_RHS\_REDERIVATION.json and FIFTH\_FACE\_PROJECTIONS.json. The replay script rederive\_projected\_rhs.py uses the byte-identical original differential and source routines in verification\_sources. Thus these files constitute a finite rational certificate with the proof of its operations given above; no external fifth coefficient is required to reproduce the right-hand sums.
+
+Completeness of its geometries is also checked independently of the incoming 662-row catalogue. Fix the output face \(p=(0,0,0;0,1)\) in the infinite coordinate lattice. There are 12 adjacent faces. Enumerate all connected distinct triples containing \(p\) by taking \(q\sim p\) and \(r\sim p\) or \(r\sim q\); this reaches every such triple since a connected graph on three vertices has a spanning path starting at, or passing through, \(p\). Removing duplicates gives 158 marked triples. Together with the self case, the 24 pair cases and the two five-face cube cases, there are exactly 185 candidate source multisets. Enumerating the 48 signed coordinate permutations and a translation maps these to the 25 stored representatives: one self, four pairs, nineteen marked triples, one cube. GEOMETRY\_COVERAGE\_CHECKS.json records every concrete multiset and its explicit signed-permutation/translation witness. Each transformed face is computed from its four actual vertices, with lower corner and the two varying axes; no implicit drawing convention is used.
+
+These coordinate maps permute original links and sometimes reverse a link orientation. Inversion of an \(SU(2)\) variable preserves Haar measure; it carries a left derivative to a right derivative with a minus sign and an adjoint rotation of the three generators. The adjoint rotation is orthogonal, so the contracted sums defining \(K\) and \(\Gamma\) are preserved, including the two minus signs in \(\Gamma\). Gauge actions are intertwined by the vertex permutation. A reversed full face word has unchanged \(SU(2)\) trace. Thus the coordinate maps preserve (Q3)–(Q4), every rational coefficient, and all original support unions. They prove that the table covers the actual box by using only configurations whose original faces are contained; no exterior faces are added at a boundary.
+
+The cube value has an additional independent calculation in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/fourth_return/cube_derivation/CUBE_FIFTH_PROJECTION.md}{CUBE\_FIFTH\_PROJECTION.md}, C9, C15–C16 and C18–C20. The original spin-zero projections on its eight twice-occurring edges give coefficient \(107/2187\); the remaining four edges have spin \(1/2\). The projected product of five oriented face traces is \(W_p/16\), proved by four exact fundamental Haar integrations after an explicit vertex gauge transformation. Hence \((107/2187)(1/16)=107/34992\). Its full twelve-edge union label is preserved. The independent subset recurrence and exact Haar cubature certificates accompany that proof.
+
+\subsection*{Q5. Evaluation on the actual finite box}
+
+Let \(d_p=\#\{q\in\mathcal P_L:q\sim p\}\), let \(A_{\rm adj}\) be the actual adjacency matrix, and let \(D_{\rm deg}=\operatorname{diag}(d_p)\). For two distinct faces put
+\[
+ c_{pq}=\#\{C:\ C\text{ is an original contained cube and }p,q\in\partial C\}.
+ \tag{Q26}
+\]
+All triple sums below range only over contained connected distinct triples.
+
+Differentiate (Q20), retaining the multiplicity of the differentiated source:
+\[
+ \begin{split}
+ G_{[4],pp}&=15u+(9b+3c)d_p+3\sum_{T\ni p}\eta_{p,T},\\
+ G_{[4],pq}&=(6b+12c)\mathbf1_{p\sim q}
+                 +6\sum_{T\supset\{p,q\}}\eta_{p,T}
+                 +3d\,c_{pq}\quad(p\ne q).
+ \end{split}\tag{Q27}
+\]
+For example, the \(b\) monomial giving output \(W_p\) differentiates with factors 3 in column \(p\) and 2 in column \(q\); the \(c\) monomial differentiates with factors 1 and 4. The triple factors are 1 and 2. The cube monomial contains no \(x_p\), so its diagonal derivative is zero, and every other cube-face column has factor 1. The common factor 3 is the exact derivative map (Q12).
+
+Equations (Q16) and (Q27) are the full evaluation of (Q7):
+\[
+ \boxed{\begin{split}
+ S_{[4],pp}
+ &=\frac1{81}-15u-(9b+3c)d_p-3\sum_{T\ni p}\eta_{p,T}\\
+ &=-\frac{19}{1296}+\frac{15163}{15769728}\,d_p
+                          -3\sum_{T\ni p}\eta_{p,T},\\
+ S_{[4],pq}
+ &=-(6b+12c)\mathbf1_{p\sim q}
+                -6\sum_{T\supset\{p,q\}}\eta_{p,T}
+                -3d\,c_{pq}\\
+ &=\frac{347}{438048}\mathbf1_{p\sim q}
+                -6\sum_{T\supset\{p,q\}}\eta_{p,T}
+                -\frac{107}{11664}\,c_{pq}\qquad(p\ne q).
+ \end{split}}\tag{Q28}
+\]
+The first expressions retain each original source contribution; the second expressions evaluate their rational sums. They describe the same original map, without a changed reference or boundary completion.
+
+Before assembly, read (Q28) as a sum of labelled maps. The self term carries the input label \(A_0\). A pair term with source faces \(p,q\) carries \(A_0\cup\partial p\cup\partial q\). A triple term carries \(A_0\cup\bigcup_{r\in T}\partial r\). A cube term carries \(A_0\) united with all twelve edges of that cube, since the five source faces already cover them. Distinct geometric occurrences remain distinct labelled contributions even if their projected functions coincide. Formula (Q28) is the assembled matrix; the preceding rules specify the entire original labelled coefficient and hence its quotient.
+
+As a bounded direct check of the original complement, DIRECT\_RETURN\_WORD\_CHECKS.json evaluates each of the eight expressions in (Q7) separately for one face, for two adjacent coplanar faces, and for two adjacent perpendicular faces, with all other independent sources zero. It projects out every intermediate face component to apply \(R\), and uses the full finite Casimir polynomial for each \(K^{-1}Q_H\). The self case sums to \(-19/1296\); both pair cases sum to
+\[
+ \begin{pmatrix}
+ -216029/15769728&347/438048\\
+ 347/438048&-216029/15769728
+ \end{pmatrix}.
+ \tag{Q29}
+\]
+In these two-face supports no other elementary face can occur: their unions contain only seven original edges and the only four-edge face boundaries in those unions are the two original ones. Thus the intermediate face projection in these direct checks is the full original \(P\) on that support. These checks supplement the all-geometries proof (Q10)–(Q28).
+
+\subsection*{Q6. The exact boundary defect and a longer-range entry}
+
+The fourth coefficient is generally not symmetric in the original Haar face basis. Its complete antisymmetric part is
+\[
+ \boxed{
+ S_{[4]}-S_{[4]}^{\,t}
+ =-\frac{703}{19712160}
+       (D_{\rm deg}A_{\rm adj}-A_{\rm adj}D_{\rm deg}).}
+ \tag{Q30}
+\]
+To prove it, diagonal entries, pair terms and cube terms in (Q28) are symmetric. The two triangle types give equal \(\eta\) for every marked face. For nonadjacent \(p,q\) in a path, both are endpoints and also give equal \(\eta\). For adjacent \(p,q\), a path containing them has a third face attached exclusively to \(p\), or exclusively to \(q\). If \(m_{pq}\) is their number of common neighbours, these possibilities number \(d_p-1-m_{pq}\) and \(d_q-1-m_{pq}\), respectively. Hence their difference is \(d_p-d_q\), with
+\[
+ -6(h_c-h_e)
+ =-6\left(\frac{19}{3032640}-\frac{19}{59136480}\right)
+ =-\frac{703}{19712160}.
+\]
+This proves (Q30) with all finite-boundary degrees. The matrix transpose uses the actual Haar-orthonormal basis in (Q5).
+
+For example in the actual \(L=2\) box,
+\[
+ p=(-2,-2,-2;0,1),\qquad q=(-1,-2,-2;1,2)
+\]
+are adjacent with \(d_p=6,d_q=10\), and
+\[
+ S_{[4],pq}=-\frac{976543}{111702240},\qquad
+ S_{[4],qp}=-\frac{2977433}{335106720},\qquad
+ S_{[4],pq}-S_{[4],qp}=\frac{703}{4928040}.
+ \tag{Q31}
+\]
+These are exact entries of the complete finite-box matrix. The defect disappears for pairs of equal degree, in particular for the coefficientwise bulk matrix; this observation does not discard it from the original boundary.
+
+There is also a nonzero return between the opposite original cube faces
+\[
+ p=(0,0,0;0,1),\qquad q=(0,0,1;0,1).
+\]
+They are nonadjacent. Their connected triples are the four side-face paths, each marking an endpoint, and they belong to one common cube. Therefore
+\[
+ S_{[4],pq}
+ =-24h_e-3d
+ =-\frac{19}{2464020}-\frac{107}{11664}
+ =-\frac{90491}{9856080}.
+ \tag{Q32}
+\]
+There are no further degree-four sources for this pair by Q3.
+
+\subsection*{Q7. A uniform Haar bound for this exact coefficient}
+
+At a bulk face there are 12 neighbours: each of its four edges lies in three other faces, and distinct faces share at most one edge. There are 12 common-edge triangles containing it, namely four choices of the common edge and three choices of two of the remaining three incident faces. There are eight corner triangles, two choices of side for the perpendicular direction at each of four vertices. These account for the 20 adjacent pairs among the 12 neighbours. Hence the number of paths marking their center is
+\[
+ N_c=\binom{12}{2}-12-8=46.
+\]
+For paths marking an endpoint, sum the 11 further neighbours of each of the 12 possible central faces and remove the two counts from each of those 20 triangles:
+\[
+ N_e=12\cdot11-2(12+8)=92.
+ \tag{Q33}
+\]
+These arguments also prove the 158 total marked triples used in Q4. A fixed face belongs to two cubes, each contributing five other faces.
+
+Put \(s=-19/1296\), \(a=15163/15769728\), \(b_0=347/438048\). Taking absolute values of each separate contribution in (Q28), the absolute row sum is at most
+\[
+ \begin{split}
+ B_4={}&|s|+12(|a|+|b_0|)\\
+ &+15\left(46|h_c|+92|h_e|+12|h_m|+8|h_k|\right)+30d\\
+ ={}&\frac{4574447}{33510672}.
+ \end{split}\tag{Q34}
+\]
+A triple with marked output \(p\) contributes a diagonal \(3|\eta_{p,T}|\) and two off-diagonal contributions \(6|\eta_{p,T}|\), giving its factor 15. A boundary removes actual configurations from the infinite-coordinate list, so this upper bound also covers every original finite box.
+
+The column bound must be proved separately because (Q30) is nonzero. For a path with the input at its central face, its complete absolute column contribution is \(3h_c+12h_e\). For a path with the input at an endpoint, it is \(9h_e+6h_c\). The two triangle types contribute \(15|h_m|\) and \(15|h_k|\); pair and cube bounds are the same as for rows. Since \(N_e=2N_c\),
+\[
+ 46(3h_c+12h_e)+92(9h_e+6h_c)
+ =15(46h_c+92h_e).
+\]
+Thus every absolute column sum is at most the same \(B_4\). For a coefficient vector \(z\), Cauchy–Schwarz with weights \(|S_{pq}|\) gives
+\[
+ \sum_p\left|\sum_qS_{pq}z_q\right|^2
+ \le\left(\sup_p\sum_q|S_{pq}|\right)
+     \left(\sup_q\sum_p|S_{pq}|\right)\sum_q|z_q|^2.
+\]
+The exact Haar face norm in (Q5) is the unaltered Euclidean coefficient norm, so
+\[
+ \boxed{\|S_{[4]}\|_{H\to H}\le B_4
+ =\frac{4574447}{33510672}<0.137.}\tag{Q35}
+\]
+This bound concerns this coefficient after assembly. It is not substituted for the different labelled local norm of the full Schur tail.
+
+\subsection*{Q8. Analytic domain and the complete remainder from degree six}
+
+For clarity the original local norm is the supremum over original anchor edges \(e\) of
+\[
+ \sum_{A\ni e}\sum_{j\ne0}c_j\|A_{A,j}\|_1,\qquad
+ c_j=\sum_fj_f(j_f+1);
+\]
+the physical zero-Haar-mean labelled space and its assembly quotient carry that norm and its quotient norm. The original \(P,R\) are contractions there. The full G13 estimate and original source bounds give
+\[
+ \|J_i\|\le a_i,\quad
+ (a_1,a_2,a_3,a_4,a_5)=
+ \left(\frac{128}{3},\frac{3132}{13},\frac{292337810}{125307},
+ \frac{169232115504453213210913}{2253180919843854000},2399196\right).
+ \tag{Q36}
+\]
+These are \(a_i=m_i+4t_i\), with every original factor kept; their derivation and all \(m_i,t_i\) are retained in P12–P19 of the adjacent proof.
+
+Let \(\ell(x)=\sum_{i=1}^5a_ix^i\), and let \(\beta\) be its unique positive root at value 1. Positivity of all coefficients proves uniqueness, and \(\beta\approx0.020200392941788888\) is only a display value. For \(|\xi|<\beta\) both \(I-\mathcal J_5\) and the full original complementary block are invertible by norm-convergent Neumann series, with bound
+\[
+ \|(I-\mathcal J_5)^{-1}\|,\ {}
+ \|(R-R\mathcal J_5R)^{-1}\|
+ \le\frac1{1-\ell(|\xi|)} .
+ \tag{Q37}
+\]
+The series converge uniformly on compact subdisks, proving the holomorphic block inverse and the analytic use of (Q11), (Q16). No endpoint inverse is asserted.
+
+Set
+\[
+ e(x)=a_2x^2+a_4x^4,\qquad
+ o(x)=a_1x+a_3x^3+a_5x^5.
+\]
+Every degree-\(n\) return word in (Q6) has norm at most the product of its \(a_i\)'s. Summing all compositions gives the majorant \(\ell/(1-\ell)\). Its even part is exactly
+\[
+ h_{\rm even}(x)=\frac{e-e^2+o^2}{(1-e)^2-o^2}.
+ \tag{Q38}
+\]
+Its coefficients are nonnegative. Its degree-two and degree-four coefficients, retaining all compositions, are
+\[
+ \begin{split}
+ h_2&=a_2+a_1^2=\frac{241180}{117},\\
+ h_4&=a_4+2a_1a_3+a_2^2+3a_1^2a_2+a_1^4\\
+ &=\frac{1242256641762604168589657}{250353435538206000}.
+ \end{split}\tag{Q39}
+\]
+Since all odd returns vanish, the complete remaining operator, not just a polynomial truncation error, satisfies
+\[
+ \boxed{\begin{gathered}
+ \mathscr S_5(\xi)=(1+\xi^2/9)P+\xi^4S_{[4]}+\mathscr E_{\ge6}(\xi),\\
+ \|\mathscr E_{\ge6}(\xi)\|_{\rm loc}
+ \le E_6(|\xi|):=
+ h_{\rm even}(|\xi|)-h_2|\xi|^2-h_4|\xi|^4,
+ \qquad |\xi|<\beta .
+ \end{gathered}}\tag{Q40}
+\]
+The same statement holds on the original assembly quotient. Subtracting \(h_4x^4\) here subtracts the degree-four majorant coefficient from its nonnegative coefficient series; it does not replace the exact operator (Q28) by that bound. Exact rational checks give
+\[
+ E_6(1/100)<17/1000,\qquad E_6(1/64)<9/20.
+ \tag{Q41}
+\]
+The evaluated fractions are retained in SIXTH\_TAIL\_CHECKS.json. Their approximate values are \(0.01615808438\) and \(0.44189205795\); the inequalities themselves use rational arithmetic.
+
+\subsection*{Q9. The exact map to the physical susceptibility}
+
+The nonsymmetry (Q30) has a precise relation to the original physical response. Keep the actual normalized vacuum
+\[
+ \psi_x=e^{v(x)+c(x)},\qquad
+ c(x)=-\tfrac12\log\int e^{2v(x)}dU,\qquad \rho_x=\psi_x^2.
+ \tag{Q42}
+\]
+For real sources in the analytic neighbourhood let \(z_q=\partial_{x_q}v\) and \(Z_q=z_q-\int\rho_xz_q\,dU\). Differentiating the normalization gives \(\partial_{x_q}\psi_x=\psi_xZ_q\). The original ground-state transform is
+\[
+ \psi_x^{-1}(H(x)-E_0(x))\psi_x
+ =\kappa\bigl[K-2\Gamma(v(x),\cdot)\bigr].
+ \tag{Q43}
+\]
+It follows by applying (Q1) to \(e^{v+c}f\) and subtracting the complete original ground-state equation; the scalar \(2\kappa\sum x_p\) in (Q2) remains part of \(E_0\).
+
+Define \(r_p=(W_p-\int\rho_xW_p)\psi_x\), and let the physical inverse below act on the Haar-orthogonal complement of \(\psi_x\). Then
+\[
+ R^{\rm phys}_{pq}(x)
+ :=\kappa\langle r_p,(H(x)-E_0(x))^{-1}r_q\rangle_H
+ =\int\rho_x(W_p-\langle W_p\rangle_{\rho_x})z_q\,dU .
+ \tag{Q44}
+\]
+Indeed differentiation of the exact eigen-equation, whose source derivative is \(\kappa(2-W_q)\), gives
+\[
+ (H-E_0)(\psi_xZ_q)=\kappa r_q,\qquad
+ \partial_{x_q}E_0=\kappa(2-\langle W_q\rangle_{\rho_x}),
+\]
+proving (Q44) with the stated \(\kappa\). This also proves symmetry and positive semidefiniteness of the real response matrix.
+
+The inverse and derivatives just used exist on every real homogeneous \(|\xi|<\alpha\), where the original full-source disk has
+\(\alpha\approx0.018424953576117616681\). Here is the needed justification of source differentiation. P45 proves the actual full Jacobian bound
+\[
+ \|J(\xi)\|\le1-\sqrt{\mathscr D(|\xi|)}<1,\quad
+ J=2\mathcal B(v,\cdot),\quad
+ \mathscr D(x)=[1-\ell(x)]^2-\tfrac83\delta(x)>0
+\]
+on that interior, with the full original residual majorant \(\delta\). For each fixed finite box the original source perturbation \(\frac13\sum h_pW_p\) is a bounded map from its finite coordinate space into the labelled source space. The analytic implicit function theorem, or its convergent local contraction proof using this strict Jacobian bound, therefore gives the independent source derivatives near that homogeneous point. The reconstructed positive normalized ground state is the original one. Its simple ground eigenvalue on the compact connected product group is isolated; elliptic positivity and uniqueness give a positive distance to the next eigenvalue at each fixed real point. Thus the inverse on \(\psi_x^\perp\) in (Q44) exists. These are established interior conclusions, not assumptions about an endpoint.
+
+On the original source space set \(L=I-J\) and define the observation map to the original Haar face space by
+\[
+ \mathcal O_{\rho}h
+ =\sum_p W_p\left(\int\rho W_ph\,dU
+                      -\int\rho W_p\,dU\int\rho h\,dU\right).
+ \tag{Q45}
+\]
+All means in (Q45) are kept, including the normalization contribution in (Q42). Differentiating the full recurrence gives \(Lz_q=W_q/3\). With the original face basis and its norm one, (Q44) is therefore the exact operator identity
+\[
+ \boxed{3R^{\rm phys}=\mathcal O_\rho L^{-1}P.}\tag{Q46}
+\]
+At \(\xi=0\), \(\rho=1\), \(\mathcal O_\rho=P\), and this gives \(R^{\rm phys}(0)=P/3\).
+
+The fifth Schur inverse has a different observation map. The complete connecting operator, including the higher source correction, is
+\[
+ \boxed{\begin{split}
+ 3R^{\rm phys}-G_5
+ ={}&(\mathcal O_\rho-P)L_5^{-1}P\\
+ &+\mathcal O_\rho L_5^{-1}(J-\mathcal J_5)L^{-1}P,\\
+ J-\mathcal J_5={}&2\mathcal B(v-q_5,\cdot).
+ \end{split}}\tag{Q47}
+\]
+This follows by adding and subtracting \(\mathcal O_\rho L_5^{-1}P\) and using the exact resolvent identity
+\[
+ L^{-1}-L_5^{-1}=L_5^{-1}(J-\mathcal J_5)L^{-1}.
+\]
+All maps are defined on the original spaces, and assembly is performed before the Haar observations. The identity holds throughout the real interior \(|\xi|<\alpha\); its Taylor-coefficient identity holds near zero. It explicitly relates the boundary defect to the physical pairing without inferring Hermiticity of the original Schur block.
+
+Since \(v-q_5\) starts at degree six, its resolvent contribution in (Q47) starts at degree six. In particular, through degree four the observation change alone accounts for the difference. The original fourth energy is proved in \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260916-cubic-linearized/CUBIC_SOURCE.md#L214}{CUBIC\_SOURCE, C7, equations C24–C25}; its independent-source polynomial is \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260917-fifth-source/PLAQUETTE_RESPONSE.md#L47}{PLAQUETTE\_RESPONSE, P7}, and its Hessian is P17 at line 120. Differentiating that full polynomial gives the exact degree-two physical response
+\[
+ R^{\rm phys}_{[2]}
+ =-\tfrac5{36}P+\tfrac2{1053}D_{\rm deg}
+                   +\tfrac4{1053}A_{\rm adj}.
+\]
+Together with \(G_{[2]}=-P/9\), this gives the explicit first difference
+\[
+ [\xi^2](3R^{\rm phys}-G_5)
+ =-\tfrac{11}{36}P+\tfrac2{351}D_{\rm deg}
+                         +\tfrac4{351}A_{\rm adj}.
+ \tag{Q48}
+\]
+For the fourth coefficient, the complete exact difference is obtained directly from (Q27) and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260917-quartic-cube/SIXTH_ENERGY.md#L55}{SIXTH\_ENERGY, E1–E4, especially the complete coefficient table at line 55}. The full independent-source polynomial and its Hessian are also \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260917-fifth-source/PLAQUETTE_RESPONSE.md#L47}{PLAQUETTE\_RESPONSE, P8–P9 and P18}. The exact original sixth-energy coefficients are
+\[
+ a_E=-289/77760,\quad b_E=22285/47309184,\quad
+ c_E^{\rm path}=-4909/118272960,\quad
+ c_E^{\rm common}=244/4312035,\quad
+ c_E^{\rm corner}=-212/542997,\quad d_E=-83/1944.
+\]
+Writing \(t_p^\tau,t_{pq}^\tau\) for the counts of contained triples of type \(\tau\), it is
+\[
+ \begin{split}
+ [\xi^4](3R^{\rm phys}-G_5)_{pp}
+ ={}&-45a_E-15u
+       +(-21b_E-9b-3c)d_p\\
+ &-3\sum_\tau c_E^\tau t_p^\tau
+       -3\sum_{T\ni p}\eta_{p,T},\\
+ [\xi^4](3R^{\rm phys}-G_5)_{pq}
+ ={}&(-24b_E-6b-12c)\mathbf1_{p\sim q}\\
+ &-6\sum_\tau c_E^\tau t_{pq}^\tau
+       -6\sum_{T\supset\{p,q\}}\eta_{p,T}
+       +(-3d_E/2-3d)c_{pq},\quad p\ne q.
+ \end{split}\tag{Q49}
+\]
+The physical energy coefficients in this last comparison are the previously proved original sixth-energy calculation, whose source and coverage are recorded in the reading ledger; their Hessian map is proved by (Q44) and \(\partial_{x_p}E_0=\kappa(2-\langle W_p\rangle_\rho)\). They are not estimates assumed in the derivation of (Q28). In particular \([\xi^4](3R^{\rm phys}-G_5)-[\xi^4](3R^{\rm phys}-G_5)^t=S_{[4]}-S_{[4]}^t\), exactly the commutator (Q30).
+
+There is a further exact consequence of the degeneracy of the free and quadratic coefficients. There is no family of positive Hermitian metrics \(M(\xi)\) on the original Haar face space tending to \(P\) as real \(\xi\to0\) that makes this original Schur map self-adjoint for every sufficiently small nonzero real \(\xi\). No differentiability of this metric family is needed. Indeed
+\[
+ \lim_{\xi\to0}\xi^{-4}
+ \left[M(\xi)\mathscr S_5(\xi)-\mathscr S_5(\xi)^*M(\xi)\right]
+ =S_{[4]}-S_{[4]}^t .
+ \tag{Q50}
+\]
+The scalar terms \((1+\xi^2/9)P\) commute with \(M(\xi)\); divide the remaining terms in (Q40) by \(\xi^4\) and use \(M(\xi)\to P\) and the degree-six remainder to prove the limit. At a fixed finite box the remainder also tends to zero in the matrix norm because each face coefficient is a continuous functional on the original source quotient. The limit is nonzero: in every \(L\ge2\), the adjacent pair \(p=(-L,-L,-L;0,1)\), \(q=(-L+1,-L,-L;1,2)\) has degrees 6 and 10 by direct counting of contained faces at its four edges. Thus (Q30) rules out the asserted self-adjointness. The same argument shows that a similarity tending to \(P\) at zero preserves the first non-scalar coefficient in this limit and cannot make the map Hermitian. The precise object defined by this defect is the nonzero skew matrix \(-703[D_{\rm deg},A_{\rm adj}]/19712160\), supported on adjacent pairs of unequal original degree. The additive observation-and-resolvent map (Q47) is the established connection to the physical response.
+
+\subsection*{Q10. Reproducibility and scope}
+
+The original 662-row fifth catalogue was routed through the existing source index and source-use ledger before this derivation. Its independent link parity leaves exactly 25 rows; all other 637 have no face projection. The 25 retained projections were first obtained by exact Haar integration of the original saved coefficients, then independently rederived from degrees one through four by (Q25). The standalone geometry enumeration reaches all 25 representatives. The byte-identical kernel copies and their hashes let the latter computation run without the private corpus paths. project\_fifth.py retains the original-catalogue replay as an optional provenance comparison; rederive\_projected\_rhs.py, direct\_return\_words.py, check\_geometry\_coverage.py, fourth\_matrix.py and sixth\_tail.py require only the retained local files.
+
+The complete matrices in FOURTH\_SCHUR\_L2.json and FOURTH\_SCHUR\_L3.json have respectively 240 and 756 original faces and 9,660 and 35,472 nonzero entries. Every entry obeys (Q30); there are respectively 1,440 and 3,600 nonzero ordered antisymmetric entries. These exhaustive finite checks preserve the actual degree and cube incidence at each boundary. They verify implementation of the all-\(L\) proof, without substituting a finite sample for that proof.
+
+The completed mathematical results are the full labelled coefficient (Q7), evaluated by (Q20), (Q28) and the explicit union-label rule; its exact boundary commutator (Q30); the longer-range coefficient (Q32); the uniform coefficient bound (Q35); the full analytic degree-six remainder (Q40); the physical-response connecting operator (Q47); and the resulting metric obstruction (Q50). The accepted earlier P1–P45 statements are unchanged. No new nonlinear convergence endpoint, full-Haar tail estimate, uniform physical spectral gap or continuum Yang–Mills conclusion is inferred from this coefficient.
+\clearpage
+\section*{Exact fifth-source return across an elementary cube}
+
+This is an independent calculation in the original open three-dimensional SU(2) lattice. The sources are the retained programme formulas \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/fa79faff2cd697e16cfa3a7953f36810c22c8922/yang-mills/continuations/20260915-gauge-native-band/RESEARCH_NOTE.md}{G1--G14} and \href{https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/33a4c39de32c2c7fdf6f8ce796e40389f766669f/yang-mills/consolidation/20260921-fifth-reference/package/workbench/yang-mills/continuations/20260921-fifth-reference-return/FIFTH_REFERENCE.md#L139}{F14--F20}. The parent task has verified these public source identities. Their exact local versions, reading coverage and hashes are retained in this directory's PUBLIC\_SOURCE\_READING\_USE\_LEDGER.json. The present proof is a new calculation from those formulas, with no historical-priority claim.
+
+\subsection*{C1. Original coordinates, operators and source coefficients}
+
+For an integer L>=2, retain the vertices \{-L,...,L\}\textasciicircum{}3, each contained positive edge (n,i), and each contained face p=(n;i,j), i<j. Every edge variable U\_i(n) lies in SU(2), with Haar probability on each factor. The original face word is
+
+\[
+ W_{(n;i,j)}=\operatorname{Tr}\bigl(U_i(n)U_j(n+e_i)
+ U_i(n+e_j)^{-1}U_j(n)^{-1}\bigr). \tag{C1}
+\]
+
+The original generators are T\_a=-i sigma\_a/2 and X\_\{e,a\}f=d/ds f(...,exp(sT\_a)U\_e,...) at s=0. Retain
+
+\[
+ K=-\sum_{e,a}X_{e,a}^2,\quad
+ \Gamma(f,h)=\sum_{e,a}(X_{e,a}f)(X_{e,a}h),\quad
+ \mathcal B(f,h)=K^{-1}Q_H\Gamma(f,h). \tag{C2}
+\]
+
+Here Q\_H removes the Haar scalar and K\textasciicircum{}\{-1\} is the inverse on nonconstant physical blocks. In the labelled source every product retains the complete union of its input edge labels, even if its active product-spin support is smaller.
+
+Introduce independent face parameters t\_p solely to identify coefficients of the original recurrence:
+
+\[
+ v(t)=\frac13\sum_pt_pW_p+\mathcal B(v(t),v(t)),\qquad
+ v(t)=\sum_{n\ge1}v_n(t). \tag{C3}
+\]
+
+The degree-n polynomial v\_n satisfies the original recurrence v\_n=sum\_\{i=1\}\textasciicircum{}\{n-1\} B(v\_i,v\_\{n-i\}). A coefficient [prod\_\{p in D\}t\_p]v\_|D| is an ordinary polynomial coefficient, with no division by |D|! and with every ordered split present.
+
+Fix the cube with vertices \{0,1\}\textasciicircum{}3. Denote its faces
+
+\[
+ B=(0;1,2),\quad T=(e_3;1,2),\quad
+ S=(0;1,3),\quad N=(e_2;1,3),\quad
+ W=(0;2,3),\quad E=(e_1;2,3). \tag{C4}
+\]
+
+The missing face is B; the five input faces form A=\{T,S,N,W,E\}. Their original union contains all twelve cube edges. Its four singly occurring edges are exactly the four edges of B. Its other eight edges each occur twice. The target product-spin assignment has spin 1/2 on the four edges of B and spin zero on the other eight edges. Denote the corresponding projection by P\_b. Its total original Casimir is 4(3/4)+8[0(0+1)]=3.
+
+Every other product-spin assignment of the product of these five face traces has the same four spin-1/2 single edges and at least one spin-1 repeated edge, so its total Casimir is at least 3+2. Consequently the full face-space projection P=1\_\{K=3\} agrees with P\_b on this five-face coefficient. The four two-edge vertex invariant spaces on the missing boundary have dimension one, and their contraction is precisely W\_B; thus this target block is one-dimensional. Its original label remains all twelve cube edges.
+
+\subsection*{C2. The recurrence with all original edge Casimirs}
+
+For a nonempty subset D of A, let r\_e(D) count occurrences of the original edge e in its faces. With b\_e=0 on every repeated edge, set
+
+\[
+ c_b(D)=\sum_{r_e(D)=1}\frac34+
+ \sum_{r_e(D)=2}0(0+1). \tag{C5}
+\]
+
+The five-face adjacency graph has a vertex T joined to S,N,W,E, and the side cycle S-E-N-W-S. It has no other edges. An adjacency records one shared original edge. If D has k faces and m internal adjacencies, it has 4k-2m singly occurring edges. Formula (C5), including the zero terms on all repeated edges, gives c\_b(D)=(3/4)(4k-2m). The table below enumerates all nonempty subsets and proves c\_b(D)>0 for each; there is no Haar-scalar subtraction to alter these channels.
+
+The exact scalar recurrence is
+
+\[
+ a_b(\{p\})=\frac13,\qquad
+ a_b(D)=\frac1{2c_b(D)}\sum_{\varnothing\ne C\subsetneq D}
+ \bigl[c_b(C)+c_b(D\setminus C)-c_b(D)\bigr]
+ a_b(C)a_b(D\setminus C). \tag{C6}
+\]
+
+For completeness, this follows directly from the original differential operators. The Leibniz rule gives
+
+\[
+ 2\Gamma(f,h)=(Kf)h+f(Kh)-K(fh). \tag{C7}
+\]
+
+On an edge already repeated within C, there is no occurrence in D\textbackslash{}C. Its final spin-zero projector therefore commutes with multiplication by that second input. On an edge split between the two inputs, each input has exactly one fundamental occurrence, whose Casimir is 3/4. On an edge occurring only once in D, the same 3/4 remains. Projectors on different original edges commute. Applying the final edge projectors to (C7) therefore replaces the three K terms by c\_b(C), c\_b(D\textbackslash{}C) and c\_b(D), respectively, after the child coefficients have been projected on their internally repeated edges. The induction starts from W\_p/3, proves (C6) for every ordered split, and gives
+
+\[
+ P_b[\prod_{p\in A}t_p]v_5
+ =a_b(A)P_b\prod_{p\in A}W_p. \tag{C8}
+\]
+
+No intermediate channel capable of reaching the final channel has been removed: when both fundamental occurrences on an edge are already in a child, there is no further occurrence on that edge and its spin cannot change in a later multiplication.
+
+In the following table, the numerator is the entire ordered sum in (C6), before division by 2c\_b(D). The eight rows account for 5+8+2+4+6+1+4+1=31 subsets.
+
+\begin{center}\small\begin{tabular}{p{.15\linewidth}p{.23\linewidth}p{.23\linewidth}p{.17\linewidth}}\toprule
+Subset type & Multiplicity & k & m & Single edges & c\_b(D) & Ordered numerator & a\_b(D)\\
+One face & 5 & 1 & 0 & 4 & 3 & initial coefficient & 1/3\\
+Adjacent pair & 8 & 2 & 1 & 6 & 9/2 & 1/3 & 1/27\\
+Opposite side pair & 2 & 2 & 0 & 8 & 6 & 0 & 0\\
+T and adjacent sides, triangle & 4 & 3 & 3 & 6 & 9/2 & 2/9 & 2/81\\
+Three-face path & 6 & 3 & 2 & 8 & 6 & 2/27 & 1/162\\
+Four side faces & 1 & 4 & 4 & 8 & 6 & 16/243 & 4/729\\
+T and three side faces & 4 & 4 & 5 & 6 & 9/2 & 13/81 & 13/729\\
+All five faces A & 1 & 5 & 8 & 4 & 3 & 214/729 & 107/2187\\
+\bottomrule\end{tabular}\end{center}
+
+Here are the complete arithmetic steps producing the last row. For a singleton split, deleting T leaves the four-side row; deleting any of the other four faces leaves the T-and-three-sides row. For a pair split, the eight nonzero pairs divide into four T-and-side pairs and four adjacent-side pairs; the two opposite-side pairs have zero coefficient. Retaining their zero terms gives
+
+\[
+\begin{aligned}
+ a_b(A)=\frac1{2\cdot3}\Biggl\{&
+ 2\left[6\frac13\frac4{729}
+       +4\frac92\frac13\frac{13}{729}\right]\\
+ &+2\left[4\frac{15}2\frac1{27}\frac1{162}
+       +4\cdot6\frac1{27}\frac2{81}
+       +2\cdot9\cdot0\cdot\frac1{162}\right]\Biggr\}\\
+ &=\frac1{6}\left(\frac{172}{729}+\frac{42}{729}\right)
+ =\frac{107}{2187}. \tag{C9}
+\end{aligned}
+\]
+
+The factor 2 in each bracket retains both input orderings. The exact check file records all 31 subsets and every individual ordered split, including those with zero contribution.
+
+\subsection*{C3. The exact Haar projection with the original face orientations}
+
+Write the four bottom positive edges as
+
+\[
+ a=U_1(0,0,0),\quad b=U_2(1,0,0),\quad
+ c=U_1(0,1,0),\quad d=U_2(0,0,0),
+\]
+
+and the corresponding top edges as
+
+\[
+ A_1=U_1(0,0,1),\quad A_2=U_2(1,0,1),\quad
+ A_3=U_1(0,1,1),\quad A_4=U_2(0,0,1).
+\]
+
+The four vertical edges are h\_\{xy\}=U\_3(x,y,0), x,y in \{0,1\}. The six original words, without any changed edge traversal, are
+
+\[
+\begin{array}{ll}
+ W_B=\operatorname{Tr}(abc^{-1}d^{-1}),&
+ W_T=\operatorname{Tr}(A_1A_2A_3^{-1}A_4^{-1}),\\
+ W_S=\operatorname{Tr}(ah_{10}A_1^{-1}h_{00}^{-1}),&
+ W_N=\operatorname{Tr}(ch_{11}A_3^{-1}h_{01}^{-1}),\\
+ W_W=\operatorname{Tr}(dh_{01}A_4^{-1}h_{00}^{-1}),&
+ W_E=\operatorname{Tr}(bh_{11}A_2^{-1}h_{10}^{-1}).
+\end{array} \tag{C10}
+\]
+
+The spin-zero projection on an original edge is exactly Haar integration on that edge. Therefore P\_b of this product is the integral over the four h variables and the four A variables, while a,b,c,d remain arbitrary and unchanged. For fixed h, perform the explicit change of variables
+
+\[
+\begin{array}{ll}
+ A'_1=h_{00}A_1h_{10}^{-1},& A'_2=h_{10}A_2h_{11}^{-1},\\
+ A'_3=h_{01}A_3h_{11}^{-1},& A'_4=h_{00}A_4h_{01}^{-1}.
+\end{array} \tag{C11}
+\]
+
+Left and right Haar invariance preserve the product measure. Substitution in (C10) and cancellation of adjacent inverse factors give the unchanged traces as
+
+\[
+ W_T=\operatorname{Tr}(A'_1A'_2(A'_3)^{-1}(A'_4)^{-1}),
+\]
+
+\[
+ W_S=\operatorname{Tr}(a(A'_1)^{-1}),\quad
+ W_E=\operatorname{Tr}(b(A'_2)^{-1}),\quad
+ W_N=\operatorname{Tr}(c(A'_3)^{-1}),\quad
+ W_W=\operatorname{Tr}(d(A'_4)^{-1}). \tag{C12}
+\]
+
+The integrand is now independent of all four h variables, whose probability integrals are each 1. This is an integration identity on the original eight variables, not a replacement of the configuration space or its labels.
+
+Fundamental matrix orthogonality gives, for M in SU(2),
+
+\[
+ \int\operatorname{Tr}(MU^{-1})U\,dU=\frac M2,\qquad
+ \int\operatorname{Tr}(MU^{-1})U^{-1}\,dU=\frac{M^{-1}}2. \tag{C13}
+\]
+
+Here is a direct derivation of the matrix orthogonality used in the first identity. Identify SU(2) with the unit quaternions q=(w,x,y,z), whose matrix is
+
+\[
+ U(q)=\begin{pmatrix}w+ix&y+iz\\-y+iz&w-ix\end{pmatrix}.
+\]
+
+Left and right multiplication by fixed unit quaternions are orthogonal maps of the real four-dimensional quaternion space. Spherical probability on S\textasciicircum{}3 is therefore left and right invariant and equals Haar probability. Reflection of one quaternion coordinate preserves spherical probability, so distinct coordinate products have zero integral. Permutation of coordinates preserves that probability, and w\textasciicircum{}2+x\textasciicircum{}2+y\textasciicircum{}2+z\textasciicircum{}2=1, so each coordinate square has integral 1/4. Substituting these sixteen second moments in the displayed matrix gives int U\_\{ij\}(U\textasciicircum{}\{-1\})\_\{kl\} dU=(1/2)delta\_\{il\}delta\_\{jk\}. Summing the trace indices proves the first identity in (C13). For the second, every SU(2) matrix satisfies Tr(V)=Tr(V\textasciicircum{}\{-1\}); this follows from its characteristic polynomial lambda\textasciicircum{}2-Tr(V)lambda+1 and the identity V+V\textasciicircum{}\{-1\}=Tr(V)I. Hence Tr(MU\textasciicircum{}\{-1\})=Tr(UM\textasciicircum{}\{-1\}). The change U to U\textasciicircum{}\{-1\}, followed by the first identity with M\textasciicircum{}\{-1\}, gives the second identity. Thus the inverse traversals contribute no sign.
+
+Integrating successively in A'\_1,A'\_2,A'\_3,A'\_4 changes the top trace, with its multiplying side trace consumed at each step, into
+
+\[
+\begin{aligned}
+ &\frac12\operatorname{Tr}(aA'_2(A'_3)^{-1}(A'_4)^{-1}),\\
+ &\frac14\operatorname{Tr}(ab(A'_3)^{-1}(A'_4)^{-1}),\\
+ &\frac18\operatorname{Tr}(abc^{-1}(A'_4)^{-1}),\\
+ &\frac1{16}\operatorname{Tr}(abc^{-1}d^{-1}).
+\end{aligned} \tag{C14}
+\]
+
+Consequently the exact operator identity on the original four boundary variables is
+
+\[
+ \boxed{P_b(W_TW_SW_NW_WW_E)=\frac1{16}W_B.} \tag{C15}
+\]
+
+There is no remaining scalar component: W\_B has spin 1/2 on each of its four distinct edges and has Haar mean zero. Combining (C8), (C9) and (C15) proves
+
+\[
+ \boxed{P[\prod_{r\in\partial C\setminus\{p\}}t_r]v_5
+       =\frac{107}{34992}W_p,} \tag{C16}
+\]
+
+where C is the original elementary cube and p its missing face, with the complete twelve-edge source label retained.
+
+Equation (C16) holds for all six choices of the missing face and every contained translated cube. To prove this, translate the displayed coordinates and apply a signed coordinate permutation sending the selected missing face to B. The resulting bijection of original edge variables sends a reversed edge to its inverse. Haar probability is invariant under inversion. The edge Laplace operator from the bi-invariant metric, and its associated bilinear form Gamma, are invariant under this inversion, since left invariant generators are sent to right invariant generators with the same quadratic Casimir. The original face word becomes a cyclic conjugate of either the displayed word or its inverse. Trace is invariant under conjugation and, for SU(2), under inversion by the preceding characteristic-polynomial identity. Thus every Casimir, recurrence factor, Haar factor and trace sign in (C16) is preserved. All edges used belong to the contained cube; no exterior edge is introduced at a box boundary.
+
+\subsection*{C4. The exact face-pair term of the original Jacobian inverse}
+
+On the original source define
+
+\[
+ \mathcal L(t)=I-2\mathcal B(v(t),\cdot). \tag{C17}
+\]
+
+Its formal power-series inverse exists because its constant coefficient is I. On any of the retained analytic domains where the bilinear source converges and the Jacobian is invertible, the same coefficient identities hold for the analytic inverse. Differentiate (C3) in one original parameter t\_q. The symmetry of Gamma and B gives
+
+\[
+ \mathcal L(t)\partial_{t_q}v(t)=\frac13W_q,
+ \qquad
+ P\mathcal L(t)^{-1}W_q=3\partial_{t_q}(Pv(t)). \tag{C18}
+\]
+
+Differentiation keeps the original union label of each coefficient. On assembly, the left-hand side is the q-th column of P L(t)\textasciicircum{}\{-1\}P in the orthonormal original face basis. For a fixed cube C and two distinct faces p,q of C, (C16) gives
+
+\[
+ \boxed{
+ \left[\prod_{r\in\partial C\setminus\{p,q\}}t_r\right]
+ \bigl\langle W_p,\mathcal L(t)^{-1}W_q\bigr\rangle_H
+ =3\frac{107}{34992}=\frac{107}{11664}.} \tag{C19}
+\]
+
+The original face norm is one: successive Haar integration of W\_p\textasciicircum{}2 gives int\_\{SU(2)\}(Tr U)\textasciicircum{}2 dU=1, by the same fundamental character orthogonality. There is therefore no extra norm factor in (C19). No factor 5 occurs, because the differentiated coefficient contains t\_q exactly once. If q=p, this particular cube-complement coefficient contains no t\_q and contributes zero.
+
+On the original uniform line t\_r=xi, the contribution for this cube and ordered pair is (107/11664)xi\textasciicircum{}4. Summing actual contained cubes gives the additive cube contribution
+
+\[
+ \frac{107}{11664}\,\xi^4 N_{pq},\qquad
+ N_{pq}=\#\{C:\ C\text{ is a contained elementary cube},\ p,q\in\partial C,\ p\ne q\}. \tag{C20}
+\]
+
+Equation (C20) is the cube contribution, not a statement that all other degree-four terms vanish. It includes adjacent face pairs and opposite face pairs with the same per-cube coefficient. Labels of different original cubes remain separate until assembly.
+
+For the fifth-reference Jacobian L\_5=I-2B(q\_5,.) with q\_5=sum\_\{n=1\}\textasciicircum{}5 v\_n, the coefficient in (C19) is identical: all coefficients of inverse degree at most four depend only on the Jacobian coefficients through degree four. Thus the computed term applies both to the full source and to the retained fifth-reference inverse at this order. Computing the fourth Schur coefficient also requires its lower-order inverse correction; that complete calculation belongs to the parent derivation.
+
+\subsection*{C5. Exact finite checks and their scope}
+
+`derive\_cube.py` constructs the twelve original edge labels from (C1), verifies the single and repeated occurrences, computes all 31 positive subset Casimirs, and evaluates all ordered terms of (C6) using integer fractions. It independently evaluates the equivalent edge-count identity
+
+\[
+ c_b(C)+c_b(D\setminus C)-c_b(D)
+   =\frac32\#\{e:\ r_e(C)=r_e(D\setminus C)=1\},
+\]
+
+and obtains the same coefficient at every subset. The original recurrence and its complete factors are retained in the primary calculation.
+
+The script also checks (C15) with exact Haar cubature at three rational SU(2) boundary configurations. Write a unit quaternion as (w,x,y,z). The eight signed coordinate vectors have the same first moments and second moments as Haar probability on the unit sphere S\textasciicircum{}3: each first moment is zero and the second-moment matrix is I\_4/4. Each integrated top variable in (C12) occurs in exactly two fundamental matrix factors, so its integrand is a polynomial of degree at most two in that quaternion. The product of the eight-node rules therefore integrates it exactly. The 8\textasciicircum{}4=4096 terms are evaluated with integer quaternion multiplication; the three exact integral values are 7/72, 1/8 and 7/72 and match W\_B/16. These checks supplement the all-boundary-variable proof (C10)--(C15); they do not replace it.
+
+`CUBE\_EXACT\_CHECKS.json` preserves every subset, every ordered split, all original word labels, the exact three coefficients 107/2187, 107/34992 and 107/11664, and each exact cubature result.
+\clearpage
+\section*{Independent algebra certificate for the fourth Schur coefficient}
+
+The checked input is `../FOURTH\_SCHUR\_COEFFICIENT.md`, in particular the displayed fifth-source polynomial Q20, the inverse relation Q15--Q16, and the conclusions Q28, Q30, Q34--Q35. `FOURTH\_ALGEBRA\_CHECKS.json` records its SHA-256 at the time of this calculation. The task is to derive the downstream algebra from the displayed polynomial; this certificate does not claim a second independent derivation of its non-cube fifth-source coefficients from the original recurrence. The cube coefficient has already been independently proved in `CUBE\_FIFTH\_PROJECTION.md`.
+
+No correction is needed in Q28, Q30, Q34 or Q35.
+
+\subsection*{A1. The inverse correction and the derivative multiplicities}
+
+In the original face space, P is the identity. Write the even expansions as
+
+\[
+ G=P+\xi^2G_2+\xi^4G_4+O(\xi^6),\qquad
+ S=P+\xi^2S_2+\xi^4S_4+O(\xi^6).
+\]
+
+Multiplication in its given order, SG=P, gives
+
+\[
+ S_2+G_2=0,\qquad S_4+G_4+S_2G_2=0.
+\]
+
+The proved second coefficient G\_2=-P/9 therefore gives S\_2=P/9 and
+
+\[
+ S_4=\frac P{81}-G_4. \tag{A1}
+\]
+
+The correction has a positive sign. It is neither omitted nor multiplied by two. This coefficient comparison does not assume that higher coefficient matrices commute.
+
+The exact original source derivative map is G\_4 W\_q=3P partial\_\{x\_q\}V\_5(1). Fix one output face p. Its row of the displayed Q20 polynomial contains exactly
+
+\[
+ u x_p^5
+ +\sum_{r\sim p}(b x_p^3x_r^2+c x_px_r^4)
+ +\sum_{T\ni p}\eta_{p,T}x_p\prod_{r\in T\setminus\{p\}}x_r^2
+ +d\sum_{C\ni p}\prod_{r\in\partial C\setminus\{p\}}x_r.
+ \tag{A2}
+\]
+
+All sums in (A2) run over actual contained faces, triples and cubes. The unordered pair sum of Q20 supplies exactly one term of each displayed kind in this fixed output row. In particular it does not supply an additional factor two. Multiplying the following differentiation multiplicities by the original derivative-map factor three gives:
+
+\begin{center}\small\begin{tabular}{p{.15\linewidth}p{.23\linewidth}p{.23\linewidth}p{.17\linewidth}}\toprule
+Original output-p monomial & Derivative in x\_p & Derivative in x\_q, q different from p\\
+u x\_p\textasciicircum{}5 & 15u & 0\\
+b x\_p\textasciicircum{}3 x\_q\textasciicircum{}2 & 9b & 6b\\
+c x\_p x\_q\textasciicircum{}4 & 3c & 12c\\
+eta x\_p x\_q\textasciicircum{}2 x\_r\textasciicircum{}2 & 3 eta & 6 eta for q or r\\
+d product over the other five cube faces & 0 & 3d for each other cube face\\
+\bottomrule\end{tabular}\end{center}
+
+Thus, with d\_p the actual adjacency degree and c\_pq the actual number of contained cubes containing two distinct faces,
+
+\[
+\begin{aligned}
+ (G_4)_{pp}&=15u+(9b+3c)d_p+3\sum_{T\ni p}\eta_{p,T},\\
+ (G_4)_{pq}&=(6b+12c)\mathbf1_{p\sim q}
+             +6\sum_{T\supset\{p,q\}}\eta_{p,T}+3d c_{pq}
+             \quad(p\ne q). \tag{A3}
+\end{aligned}
+\]
+
+Substitute the original displayed values, keeping their individual factors:
+
+\[
+\begin{aligned}
+\frac1{81}-15\frac7{3888}&=-\frac{19}{1296},\\
+-\left(9\frac{-301}{2956824}+3\frac{-55}{3639168}\right)
+ &=\frac{15163}{15769728},\\
+-\left(6\frac{-301}{2956824}+12\frac{-55}{3639168}\right)
+ &=\frac{347}{438048},\\
+-3\frac{107}{34992}&=-\frac{107}{11664}.
+\end{aligned} \tag{A4}
+\]
+
+Equations (A1)--(A4) reproduce every term and sign in Q28. The derivative keeps the original union of source-edge labels. The inverse correction acts at the input label because the second return is exactly the scalar multiple -P/9 with all adjacent-pair returns cancelling at their own shared union labels.
+
+\subsection*{A2. The antisymmetric part}
+
+Self terms, the adjacent-pair terms and the cube terms are symmetric under p and q. A common-edge triple or a corner triple gives the same eta at all three output faces. For a path triple with nonadjacent p,q, both are endpoints and again give the same eta. It remains to examine adjacent p,q.
+
+Let m\_pq be the number of their common adjacent faces. A third face adjacent to p but not q, and different from p,q, can be chosen in exactly d\_p-1-m\_pq ways. These paths mark p as center and q as endpoint. A third face adjacent to q but not p can be chosen in exactly d\_q-1-m\_pq ways, with the roles reversed. Consequently
+
+\[
+\begin{aligned}
+ (S_4)_{pq}-(S_4)_{qp}
+ &=-6\bigl[(d_p-1-m_{pq})-(d_q-1-m_{pq})\bigr](h_c-h_e)\\
+ &=-6\left(\frac{19}{3032640}-\frac{19}{59136480}\right)
+       (d_p-d_q)\\
+ &=-\frac{703}{19712160}(d_p-d_q)
+ \qquad(p\sim q). \tag{A5}
+\end{aligned}
+\]
+
+For nonadjacent p,q the difference is zero. In the actual original Haar-orthonormal face basis,
+
+\[
+ S_4-S_4^t=-\frac{703}{19712160}(D_{\rm deg}A_{\rm adj}-A_{\rm adj}D_{\rm deg}), \tag{A6}
+\]
+
+which is exactly Q30. The order of the two matrix products and its sign have both been checked. Finite boundary degrees are used throughout.
+
+\subsection*{A3. Separate absolute row and column bounds}
+
+The original infinite-coordinate face graph has twelve neighbors of a fixed face p: each of its four edges has three other incident faces, and no distinct face shares two edges with p. A triangle through p has either a common edge or three distinct pairwise shared edges at one vertex of p. In the common-edge case, choose one of the four edges of p and two of the other three incident faces, giving 4 times binomial(3,2)=12. In the distinct-edge case, choose one of the four vertices of p; the two additional faces use its two face directions and the perpendicular direction with a common positive or negative displacement. This gives 4 times 2=8. No triangle arises from opposite edges of p, since the other two faces then cannot share an edge.
+
+There are therefore 20 adjacent pairs among the twelve neighbors. A path with center p selects an unordered nonadjacent pair of them:
+
+\[
+ N_c=\binom{12}{2}-20=46.
+\]
+
+A path with endpoint p selects a central neighbor q and then a neighbor r of q different from p and nonadjacent to p. There are 12 times 11 candidates before excluding the triangles. Each of the twenty triangles appears twice, once for either possible q. Hence
+
+\[
+ N_e=12\cdot11-2\cdot20=92. \tag{A7}
+\]
+
+These are exact counts in the same original face graph, not counts after any boundary completion. Every finite box supplies a subset of these configurations. Each face lies in at most two contained cubes, and each cube supplies five distinct other-face columns or rows.
+
+Retain s=-19/1296, a=15163/15769728 and b\_0=347/438048. For a fixed output row, a marked triple contributes 3|eta| in the diagonal column and 6|eta| in each of its other two columns. This gives
+
+\[
+ B_{\rm row}=|s|+12(|a|+|b_0|)
+ +15(46|h_c|+92|h_e|+12|h_m|+8|h_k|)+30d. \tag{A8}
+\]
+
+For a fixed input column, a path marking that input as center has diagonal contribution 3h\_c and two endpoint-output contributions 6h\_e each. A path marking that input as endpoint has diagonal contribution 3h\_e, one other-endpoint output contribution 6h\_e and one center-output contribution 6h\_c. Here h\_c,h\_e are positive as displayed in Q20. The common-edge and corner triples contribute 15 times their respective absolute coefficients. Thus
+
+\[
+\begin{aligned}
+ B_{\rm col}={}&|s|+12(|a|+|b_0|)
+ +46(3h_c+12h_e)+92(9h_e+6h_c)\\
+ &+15(12|h_m|+8|h_k|)+30d.
+\end{aligned} \tag{A9}
+\]
+
+The path terms in (A9) equal 690h\_c+1380h\_e, which are exactly 15(46h\_c+92h\_e). The two bounds are consequently the same rational number. Substitution without suppressing any term gives
+
+\[
+\begin{aligned}
+ B_{\rm row}=B_{\rm col}
+ ={}&\frac{19}{1296}
+ +12\left(\frac{15163}{15769728}+\frac{347}{438048}\right)\\
+ &+15\left(46\frac{19}{3032640}+92\frac{19}{59136480}
+ +12\frac4{616005}+8\frac{164}{6283251}\right)
+ +30\frac{107}{34992}\\
+ ={}&\frac{4574447}{33510672}<\frac{137}{1000}.
+\end{aligned} \tag{A10}
+\]
+
+Each finite box removes configurations from sums of nonnegative absolute bounds, so both bounds remain valid independently of L. For any original face coefficient vector z, weighted Cauchy--Schwarz gives
+
+\[
+\begin{aligned}
+ \sum_p\left|\sum_q(S_4)_{pq}z_q\right|^2
+ &\le\sum_p\left(\sum_q|(S_4)_{pq}|\right)
+             \left(\sum_q|(S_4)_{pq}|\,|z_q|^2\right)\\
+ &\le B_{\rm row}B_{\rm col}\sum_q|z_q|^2.
+\end{aligned}
+\]
+
+Since the original face traces are orthonormal in Haar measure, this proves the stated assembled Haar-operator bound in Q35. It does not assert a bound in the different original union-labelled local norm.
+
+\subsection*{A4. Independent exact implementation check}
+
+`check\_fourth\_algebra.py` imports none of the parent's source or geometry modules. It constructs each face from its four original positive edges and constructs its neighbors by listing the faces containing each of those edges. It independently obtains the counts (46,92,12,8).
+
+For the L=2 open box it builds the 28,596 displayed Q20 monomials on 240 original faces, retaining their input exponents and output face. Literal rational differentiation gives G\_4; adding P/81 and subtracting G\_4 gives S\_4. A separate geometric construction from the proposed entry formula gives the identical matrix. There are 9,660 nonzero entries and 1,440 nonzero ordered antisymmetric entries, and every entry satisfies (A6). The independent construction uses 1,128 unordered adjacent pairs, 7,820 connected triples, and 64 contained cubes.
+
+The actual maximum absolute row sum in this finite box is 6471173/67021344; the actual maximum absolute column sum is 8064839/83776680. They are different, as permitted by the nonsymmetry, and both satisfy (A10). These finite-box values are checks, not replacements for the uniform bounds just proved. The boundary example in Q31 is also reproduced exactly, including its degree pair (6,10) and antisymmetric entry 703/4928040.
+\clearpage
+\section*{Exact reflection and fourth-return illustrations}
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{BOUNDARY_REFLECTION.png}\caption{Boundary comb, complete original cycle and normal kinetic map. Exact coordinate sections at m=4; proof JP1–JP23.}\end{figure}
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{TWO_LINK_HARMONICS.png}\caption{Two original links and their complete quadratic harmonic components. Exact sections at m=4; affine remainders and the physical factor beta0 remain in JP40–JP49.}\end{figure}
+
+\begin{figure}[htbp]\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{FOURTH_SCHUR.png}\caption{Opposite faces of one original cube and the finite-boundary skew matrix. Exact rational entries and coefficient bound; proof Q7, Q28, Q30–Q35.}\end{figure}
+
+These images depict the exact objects, coordinate sections and proved coefficients in the accompanying complete proofs. They do not depict a constructed continuum quantum state or a limiting spectral measure. The three Python sources reproduce the rendered figures.
 \end{document}
