@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T20:02:14.247797+00:00",
+  "checked_utc": "2026-10-11T20:21:13.678959+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -409,20 +409,20 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "0cde5a2d903519ac1a0f2380b5ee2e09b25c9f7f151b55d33ec14b08a00e52b6",
-      "complete_math_blocks": 205,
+      "sha256": "3232e105a03fc5687630ea553a3d00514e27ad855bccbe68c2a55c5fc7af2fde",
+      "complete_math_blocks": 207,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "de80cef0713c31507048a1d206669873e0220ad17af6cc153565737e66fd2502",
-      "complete_math_blocks": 251,
+      "sha256": "22d32bd0f2a07aa27cb48477c64ceb9e97fffdd7073415e6770599fb6ba5e137",
+      "complete_math_blocks": 253,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md",
-      "sha256": "d2541753a40586e31a3b9be01958b7e1d3a24679c733e0b48c288efc664dcfde",
-      "complete_math_blocks": 147,
+      "sha256": "faa8a23c79ec13c6cdf06af032b5b71fdc811fcdd0eca2c8a8cfba86f722d2c1",
+      "complete_math_blocks": 149,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -433,14 +433,20 @@
     },
     {
       "source": "OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md",
-      "sha256": "d409ad5fe07a13b6295066634eb951fdddc7d08b54eb54e9fd66cd167b975ef2",
-      "complete_math_blocks": 203,
+      "sha256": "9ee3845f4c132d86e5fed5ef3dbfdeeacc2453e4e45205ad3cd0d9a1fd422301",
+      "complete_math_blocks": 205,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDARY_FORCE_PROJECTION.md",
-      "sha256": "1a8810fd5f392303194bd4b823f92b229f71e8f1402d6593d3fcc4f1b59351b7",
-      "complete_math_blocks": 139,
+      "sha256": "5bbd265154cc2515c5070439e0aff584ce2cc083858e41e7518c9d7abf1a6c80",
+      "complete_math_blocks": 141,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "BOUNDARY_DIVERGENCE_AND_MARGINAL_MOMENTS.md",
+      "sha256": "35a89ffddc4646ae58bc19648c6ad6ed4cae05f5a4244e922e00fd8b5be35468",
+      "complete_math_blocks": 149,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -798,6 +804,16 @@
     {
       "file": "BOUNDARY_MOMENT_RATES.png",
       "sha256": "8fe738948d98973d8e8a8b7ff9385c19dd0ea711ee90afb32c009b533827c137",
+      "visually_inspected": true
+    },
+    {
+      "file": "BOUNDARY_DIVERGENCE_MAP.png",
+      "sha256": "b0d5e324d2a590df58c18f525c0d61a785a8e60694929ed25dde48058c2a48ea",
+      "visually_inspected": true
+    },
+    {
+      "file": "BOUNDARY_DIVERGENCE_RATES.png",
+      "sha256": "5628061548757782452cdc02860f6c2b9d9ed09e1a82bfc0c855b7313971f369",
       "visually_inspected": true
     }
   ],
@@ -3477,6 +3493,257 @@
         "page-732.png": "9d1ef9e1f4c15e4ed08bb6f2bc65c7e5d7a5582428a02d32201dba2d0cfe4dcf",
         "page-733.png": "af59f8d9da1d929a09917b4618d1e2e5d1ecd0659ea19663afa9f1bbaa41923d"
       }
+    }
+  },
+  "boundary_divergence_review": {
+    "utc": "2026-10-11T20:18:43.510911+00:00",
+    "coverage": "BD1–BD19 complete derivation and owner review: original projection and mixed product derivatives; both partial Bochner identities with Ricci one-half and original drift signs; integration of the mixed Hessian; exact two-square identity and divergence bound; ordered four-link mixed Hessian with all deficit terms; complete finite collar rates; actual marginal first and second moments; full arbitrary-weight force map; entire scalar-line moment Gram and exact original-unit optimization; both physical residuals.",
+    "strengthening": "The previously unevaluated weighted boundary divergence has an actual-state bound from the full projection and inside score. The existing marginal block of the joint family has a complete second-moment estimate. Scaled divergence and marginal second moment tend to zero at the stated original lattice powers. The original full family and its signed cross terms remain explicit.",
+    "limitations": "The unscaled derivative and moment bounds need not tend to zero. The full-gradient mixed-Hessian fluctuation and its signed correlations remain. No positive lower bound on the marginal first moment or limiting physical inverse gain is assumed. Continuum state, reconstruction, global smoothness, intended theory and no-gap endpoint remain active.",
+    "actual_reading": "BQ1–BQ18 complete source; OC3 and OC10–OC14 forcing/moment formulas; CG25–CG30 full outside minimizer and joint matrix; RD collars and fitting support; SR65 original heat-score constants; OS22–OS24 exact ordered plaquette mixed Hessian rederived in BD9. Earlier SG/IM/PT domains and primary source reading retained; no claim to reread every earlier source.",
+    "routing": "Canonical index first:15 original-TeX routing records for Witten/Hodge, weighted divergence/projection, and ground/fourth/gradient. Routing records only; no newly read external paper, imported theorem or literature PDF.",
+    "diagnostics": {
+      "file": "BOUNDARY_DIVERGENCE_CHECKS.json",
+      "checks": 578,
+      "all_passed": true,
+      "scope": "Diagnostics for BD1–BD19. Manufactured curved states and face derivatives are not original ground-state samples."
+    },
+    "figures_inspected": [
+      "BOUNDARY_DIVERGENCE_MAP.png",
+      "BOUNDARY_DIVERGENCE_RATES.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "BOUNDARY_DIVERGENCE_AND_MARGINAL_MOMENTS.md",
+        "prefix": "BD",
+        "tags": 19,
+        "owner_sha256": "e75be9393b2b51b2da935be13a1a89dd112bb6d3aa4ce976b717910b22bcbfd9",
+        "public_sha256": "35a89ffddc4646ae58bc19648c6ad6ed4cae05f5a4244e922e00fd8b5be35468",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T20:21:13.678959+00:00",
+      "tex_sha256": "77bd0df757208920abd4d0ab6fb96a1f695d94854d4298ce67f33b959398032e",
+      "pdf_sha256": "d51c149bad119b8c6d7b46d6b8e00e5c764062746f1052143814610c950ace16",
+      "pages": 742,
+      "source_files": 74,
+      "math_blocks": 18041,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-11T20:21:13.629007+00:00",
+        "complete": true,
+        "pages": 742,
+        "new_pages": [
+          736,
+          737,
+          738,
+          739,
+          740,
+          741,
+          742
+        ],
+        "receiving_notes": [
+          694,
+          706,
+          714,
+          727,
+          735
+        ],
+        "rendered_pages": [
+          693,
+          694,
+          695,
+          704,
+          705,
+          706,
+          707,
+          713,
+          714,
+          715,
+          726,
+          727,
+          728,
+          734,
+          735,
+          736,
+          737,
+          738,
+          739,
+          740,
+          741,
+          742
+        ],
+        "final_page_hashes": {
+          "page-693.png": "fa9dd735f1fed1c4a14e5fba92bf4913b07c2d2d37335a8f8bafbdcc4b7bfda5",
+          "page-694.png": "953696178ef6c86f62459c630a9afd9a9151cde1b37a5939d96c1152e8618ec5",
+          "page-695.png": "41eea3001d71509477adf65e1a7298d312579ba2b2e289aadd6f64c04d747087",
+          "page-704.png": "6aed1f42d71360c2af148cb1abefdd8c52fac8a9cdfccd37fd373a20b0dacb59",
+          "page-705.png": "f4336bd9df07a7377a24e170920e42e64152033d39bbd8c00cdac32daa0c17db",
+          "page-706.png": "d39c1cf81c55eda69f6c1ec8551d9b04ace5fdcd2a341e8ef2f3cc697eb1f07e",
+          "page-707.png": "50180011472839a3d2a357406c8a63fa6f26a5854eae9edf6c637de28d6f4534",
+          "page-713.png": "0c8602b60e7dbd52e3e410afbc913c48397765ca1882c5b62dee5c729855c56d",
+          "page-714.png": "aa40e2779bb7c6f7a3853de23ed128af958aa57fad97e338a94187f5e6fd45be",
+          "page-715.png": "0b5caccd6452ce071e43fc52d486749457e4f2fda47d8a29fca391577f2f559b",
+          "page-726.png": "5457b1ff2aa816fb8199b75fccfd405a170b86860ccda530114722c473b7781c",
+          "page-727.png": "4fbe38fc0046d55ac0e07152577f07b120c0b732b210f65b45d20bfc2bd54114",
+          "page-728.png": "8a091ff0f410f334696a7c3716046731ab5f9c1c8b2f83768c9c8452c24c02b0",
+          "page-734.png": "90a3d68148728bb851296bc73a980821cc85fe19980a4e13966e1c8bf850c7e9",
+          "page-735.png": "c7412caa74b0c124f7d250ff01e16b345987a05a9d365fbbd2a771e1e3453154",
+          "page-736.png": "ff07778dc9d73cb860778dbf04b9d94095e6619a37c5ccf5221ffc9f69fc5560",
+          "page-737.png": "a087af78e1f15c67e9bc48f225cb91842839c9c2eb71c1bb78489f622cf7e8ac",
+          "page-738.png": "7297e31fe4b1656a6f87c49b11cddf212e4d88e30b8914ecbb87103bf925004a",
+          "page-739.png": "6bf009f7e555af652f39a3d65f7d2bbe1a319d5b5a8e67d3c2f35728fb1b2b41",
+          "page-740.png": "42d201c395f6d8581c850c39c4fe9cfd05961dcd751071c577be7bb59e838fcd",
+          "page-741.png": "0d8fbd5b9c7c61fb9b48d0e476725cf1463a112deab8bca2ea595e9fe44691b5",
+          "page-742.png": "98a790c4100db429b27a595c148cf2269fc5cf22c4b30c2247bb222e87c27c72"
+        },
+        "changed_after_repair": [
+          "page-705.png",
+          "page-706.png",
+          "page-707.png",
+          "page-736.png",
+          "page-737.png",
+          "page-738.png",
+          "page-739.png",
+          "page-740.png",
+          "page-741.png",
+          "page-742.png"
+        ],
+        "visually_inspected_changed_pages": [
+          705,
+          706,
+          707,
+          736,
+          737,
+          738,
+          739,
+          740,
+          741,
+          742
+        ],
+        "figures": [
+          "BOUNDARY_DIVERGENCE_MAP.png",
+          "BOUNDARY_DIVERGENCE_RATES.png"
+        ],
+        "new_layout_defects": false,
+        "inherited_warnings": "59 earlier overfull warnings and one earlier missing delta unchanged. Full PDF not certified defect-free or published.",
+        "repairs": "BD1 long row split with every term retained; complete CG receiving note moved to706; scope sentence narrowed to proved quantitative bound; original current definitions and fitting support made explicit."
+      }
+    }
+  },
+  "boundary_divergence_compile": {
+    "utc": "2026-10-11T20:21:13.678959+00:00",
+    "tex_sha256": "77bd0df757208920abd4d0ab6fb96a1f695d94854d4298ce67f33b959398032e",
+    "pdf_sha256": "d51c149bad119b8c6d7b46d6b8e00e5c764062746f1052143814610c950ace16",
+    "pages": 742,
+    "source_files": 74,
+    "math_blocks": 18041,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-11T20:21:13.629007+00:00",
+      "complete": true,
+      "pages": 742,
+      "new_pages": [
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742
+      ],
+      "receiving_notes": [
+        694,
+        706,
+        714,
+        727,
+        735
+      ],
+      "rendered_pages": [
+        693,
+        694,
+        695,
+        704,
+        705,
+        706,
+        707,
+        713,
+        714,
+        715,
+        726,
+        727,
+        728,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742
+      ],
+      "final_page_hashes": {
+        "page-693.png": "fa9dd735f1fed1c4a14e5fba92bf4913b07c2d2d37335a8f8bafbdcc4b7bfda5",
+        "page-694.png": "953696178ef6c86f62459c630a9afd9a9151cde1b37a5939d96c1152e8618ec5",
+        "page-695.png": "41eea3001d71509477adf65e1a7298d312579ba2b2e289aadd6f64c04d747087",
+        "page-704.png": "6aed1f42d71360c2af148cb1abefdd8c52fac8a9cdfccd37fd373a20b0dacb59",
+        "page-705.png": "f4336bd9df07a7377a24e170920e42e64152033d39bbd8c00cdac32daa0c17db",
+        "page-706.png": "d39c1cf81c55eda69f6c1ec8551d9b04ace5fdcd2a341e8ef2f3cc697eb1f07e",
+        "page-707.png": "50180011472839a3d2a357406c8a63fa6f26a5854eae9edf6c637de28d6f4534",
+        "page-713.png": "0c8602b60e7dbd52e3e410afbc913c48397765ca1882c5b62dee5c729855c56d",
+        "page-714.png": "aa40e2779bb7c6f7a3853de23ed128af958aa57fad97e338a94187f5e6fd45be",
+        "page-715.png": "0b5caccd6452ce071e43fc52d486749457e4f2fda47d8a29fca391577f2f559b",
+        "page-726.png": "5457b1ff2aa816fb8199b75fccfd405a170b86860ccda530114722c473b7781c",
+        "page-727.png": "4fbe38fc0046d55ac0e07152577f07b120c0b732b210f65b45d20bfc2bd54114",
+        "page-728.png": "8a091ff0f410f334696a7c3716046731ab5f9c1c8b2f83768c9c8452c24c02b0",
+        "page-734.png": "90a3d68148728bb851296bc73a980821cc85fe19980a4e13966e1c8bf850c7e9",
+        "page-735.png": "c7412caa74b0c124f7d250ff01e16b345987a05a9d365fbbd2a771e1e3453154",
+        "page-736.png": "ff07778dc9d73cb860778dbf04b9d94095e6619a37c5ccf5221ffc9f69fc5560",
+        "page-737.png": "a087af78e1f15c67e9bc48f225cb91842839c9c2eb71c1bb78489f622cf7e8ac",
+        "page-738.png": "7297e31fe4b1656a6f87c49b11cddf212e4d88e30b8914ecbb87103bf925004a",
+        "page-739.png": "6bf009f7e555af652f39a3d65f7d2bbe1a319d5b5a8e67d3c2f35728fb1b2b41",
+        "page-740.png": "42d201c395f6d8581c850c39c4fe9cfd05961dcd751071c577be7bb59e838fcd",
+        "page-741.png": "0d8fbd5b9c7c61fb9b48d0e476725cf1463a112deab8bca2ea595e9fe44691b5",
+        "page-742.png": "98a790c4100db429b27a595c148cf2269fc5cf22c4b30c2247bb222e87c27c72"
+      },
+      "changed_after_repair": [
+        "page-705.png",
+        "page-706.png",
+        "page-707.png",
+        "page-736.png",
+        "page-737.png",
+        "page-738.png",
+        "page-739.png",
+        "page-740.png",
+        "page-741.png",
+        "page-742.png"
+      ],
+      "visually_inspected_changed_pages": [
+        705,
+        706,
+        707,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742
+      ],
+      "figures": [
+        "BOUNDARY_DIVERGENCE_MAP.png",
+        "BOUNDARY_DIVERGENCE_RATES.png"
+      ],
+      "new_layout_defects": false,
+      "inherited_warnings": "59 earlier overfull warnings and one earlier missing delta unchanged. Full PDF not certified defect-free or published.",
+      "repairs": "BD1 long row split with every term retained; complete CG receiving note moved to706; scope sentence narrowed to proved quantitative bound; original current definitions and fitting support made explicit."
     }
   }
 }

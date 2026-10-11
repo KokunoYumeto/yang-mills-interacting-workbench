@@ -354,3 +354,7 @@ The current first-moment estimates above do not by themselves evaluate that inve
 ![Proved bounds from the complete original cube counts, with both collar choices; BQ12–BQ17](BOUNDARY_MOMENT_RATES.png)
 
 Complete diagnostic and figure sources are in [check_boundary_force.py](check_boundary_force.py). Manufactured curved states and projection matrices are not original Yang–Mills samples. Bounded provider coverage and exact versions are in [the source-use ledger](BOUNDARY_FORCE_SOURCE_USE_LEDGER.json).
+
+## Boundary divergence and marginal second moments
+
+[BD1–BD19](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDARY_DIVERGENCE_AND_MARGINAL_MOMENTS.md) prove an exact mixed derivative and two-square identity for the full projected boundary field. Weighted integration removes its mixed-Hessian contraction from the divergence estimate while retaining the inside score and every original crossing derivative. Both established collars give \(\smash{a_j^7\|J_j\|^2\to0}\) with explicit rates. The existing marginal-gradient block has complete first and second moments and \(\smash{a_j^{11}m_{2,j}^\gamma\to0}\), again with explicit collar constants. The arbitrary-weight force map, full scalar trial line, signed second-moment cross term, exact scalar optimizer and both physical residuals remain. The full-gradient mixed-Hessian fluctuation and limiting physical spectral weight still require evaluation.
