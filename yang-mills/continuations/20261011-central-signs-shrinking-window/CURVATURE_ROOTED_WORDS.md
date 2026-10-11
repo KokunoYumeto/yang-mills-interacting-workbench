@@ -736,3 +736,7 @@ nor any sign for its full spectral endpoint.
 ![Exact original rooted transport and factor order; deterministic family CW42 has small mean curvature and a large original odd phase. This figure does not plot vacuum samples.](CURVATURE_ROOTED_WORDS_FIGURE.png)
 
 In the factor-order label, Q13,a denotes the transported face in CW9 at (a,2,1), and Q23,b denotes the transported face at (0,b,1). The complete physical coordinate map is CW1.
+
+## Evaluated local physical quadratures
+
+The complete [local curvature calculation, LC1–LC42](LOCAL_CURVATURE_BUDGET.md), now determines the formerly unevaluated scalar component of LEM27–LEM29. LC4–LC15 partition every original edge and face and prove the exact outside-ground crossing cost 2b per crossing face. The local kinetic-plus-potential estimate retains its potential subtraction, and LC17–LC25 give actual local moments without translation invariance. LC26–LC39 prove that each original a_j³-weighted physical face quadrature acts on the entire cyclic reconstruction as exactly 2 times its test-function integral. Its centered zero-energy component is zero. LC34 retains the full finite-word error, LC35 includes the original shrinking window, and LC40–LC42 prove the complete time-interval bounds and specified coupled almost-sure limit. This strengthens the earlier positive-energy loss; it supplies neither an individual-face law nor the original raw-phase weight. Candidate fluctuating observables require their own actual covariance and spectral calculation.
