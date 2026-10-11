@@ -611,3 +611,9 @@ BP28–BP33 construct the nonzero defect space and its exact maps to the origina
 ## Complete spectral description of the discarded phase component
 
 [BR16–BR18, BR22 and BR25](BOUNDED_PHASE_SPECTRAL_REVIEW.md) strengthen the phase result. The continuous projection equals the increasing strong limit of the original bounded-energy projections. Explicit finite-regulator tail and moving-band lower bounds locate positive spectral mass in the escaping sector. Every bounded parameter sequence retains its vacuum phase norm. The complete matrix of multiplication defects is the positive Gram matrix K_theta^* K_phi. These statements keep the original energies, state, scalars and all interval endpoints; they do not assert the prescribed low-energy mass.
+
+## Actual potential law, central covariance, and complete scalar spectral map
+
+[FO1–FO56](ACTUAL_PUSHFORWARD_OPTIMIZATION.md) and the independent [PF1–PF53](ACTUAL_PUSHFORWARD.md) construct the actual weighted-potential density directly from the original interacting ground state. They prove both continuous zero-flux currents across critical values, the optimum over all score functions, the full conditional ground equation, and the original upper-tail bound. The scaled upper excess is O(a); the upper endpoint contributes less than every fixed power of a. The remaining centered variance is an explicit integral over the central range, with its actual mean and all outside terms retained.
+
+[OP1–OP19](PUSHFORWARD_OPERATOR_RECEIVING.md) prove closability and the full scalar ground-form domain, its isometry into the physical Hilbert space, and the complete second-energy matrix including the orthogonal residual and its two-variable covariance. OP18–OP19 retain the physical kappa, radius-two Haar-volume factor and source noise coefficient in the comparison with Legoll and Lelièvre. The original shrinking-window spectral mass, smooth continuum state and reconstruction remain the active calculations.

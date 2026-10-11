@@ -1725,5 +1725,303 @@
     "public_sha256": "c170d7a38df9c71e6bd440ba8d6c87de9ff9d18b78e4e51e78cf1a95b73654c8",
     "actual_reading_coverage": "BR1–BR27 read in full by owner: all matrices, minorants, Jensen proof, projection equality, finite tails, moving bands, bounded-parameter extension and exact multiplication defect.",
     "receiving_calculation": "BP21–BP33, CP phase representation and ASL spectral-loss maps. Complete proofs propagated immediately; no external theorem or novelty claim."
+  },
+  {
+    "source_id": "programme:SOURCE_ZERO_COVARIANCE_UPPER",
+    "version": "f8f4d548dde98f04429f8b7eea664806399de825",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/f8f4d548dde98f04429f8b7eea664806399de825/yang-mills/continuations/20261011-central-signs-shrinking-window/SOURCE_ZERO_COVARIANCE_UPPER.md",
+    "source_sha256": "3ee5837874911fb4f175c05d96e5aab87409c5bca533325d86ef74ecc8d5fe2b",
+    "actual_reading_coverage": "ZU1–ZU44 read in full by the FO derivation and previously accepted; complete receiving identities reconstructed in FO1–FO7,FO22–FO25.",
+    "receiving_calculation": "FO/PF full actual law and OP full operator/moment receiving maps."
+  },
+  {
+    "source_id": "programme:POTENTIAL_VARIANCE_IDENTITIES",
+    "version": "f8f4d548dde98f04429f8b7eea664806399de825",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/f8f4d548dde98f04429f8b7eea664806399de825/yang-mills/continuations/20261011-central-signs-shrinking-window/POTENTIAL_VARIANCE_IDENTITIES.md",
+    "source_sha256": "dc06575fb70f26a259adc11de16e78a41485230d77f54b8e6f3f75dcdc60828a",
+    "actual_reading_coverage": "Complete previously accepted independent variance identity; the PF continuation rederives the exact conditional currents and full potential identity.",
+    "receiving_calculation": "FO/PF full actual law and OP full operator/moment receiving maps."
+  },
+  {
+    "source_id": "programme:LOCAL_CURVATURE_BUDGET",
+    "version": "f8f4d548dde98f04429f8b7eea664806399de825",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/f8f4d548dde98f04429f8b7eea664806399de825/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CURVATURE_BUDGET.md",
+    "source_sha256": "7e394f8c0e4a7d1cb2bfa4ed4e7b7438a17d6b864133ae51156ee022b4281a56",
+    "actual_reading_coverage": "Previously accepted LC1–LC42; original counts, local boundary budget and exact regulator path retained.",
+    "receiving_calculation": "FO/PF full actual law and OP full operator/moment receiving maps."
+  },
+  {
+    "source_id": "programme:CURVATURE_PHASE_RECONSTRUCTION",
+    "version": "f8f4d548dde98f04429f8b7eea664806399de825",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/f8f4d548dde98f04429f8b7eea664806399de825/yang-mills/continuations/20261011-central-signs-shrinking-window/CURVATURE_PHASE_RECONSTRUCTION.md",
+    "source_sha256": "bc7d0a781e268b18448542ad6f850cf0e305e7d9cfcd95d2735a87862ea5a30c",
+    "actual_reading_coverage": "Previously accepted CP1–CP50; full ground-transform and moment maps receive OP11–OP17.",
+    "receiving_calculation": "FO/PF full actual law and OP full operator/moment receiving maps."
+  },
+  {
+    "source_id": "arxiv:0906.4865v1",
+    "title": "Effective dynamics using conditional expectations",
+    "authors": [
+      "Frédéric Legoll",
+      "Tony Lelièvre"
+    ],
+    "version": "Original author arXiv v1",
+    "public_source": "https://arxiv.org/src/0906.4865v1",
+    "public_record": "https://arxiv.org/abs/0906.4865v1",
+    "archive_sha256": "f1f47332336cea28fcc56f17a92857cbeac13eab34b996d02ea7dae2678d3ca3",
+    "main_tex_sha256": "c8516b44226b20d6f1e61b07e03130a8b6cd37242cb7426905a72db2d952f98e",
+    "actual_reading_coverage": "Original TeX lines135–168,393–540,680–750 read by the derivation and by the owner. Included original source files and the intact archive are preserved privately. No PDF read.",
+    "receiving_calculation": "FO11–FO14/PF1–PF16 prove the actual critical-value extension; OP18–OP19 give the full physical-time, density and Haar-volume dictionary. The source nonvanishing-gradient hypothesis fails here; no approximation or convergence theorem is imported."
+  },
+  {
+    "source_id": "programme:FO-PF-OP-20261011",
+    "proofs": [
+      {
+        "source": "ACTUAL_PUSHFORWARD_OPTIMIZATION.md",
+        "sealed_sha256": "c11fab085174eea61be4059e0317bb984eb8b940da5f5c2a7698d6d3cbede21f",
+        "reviewed_copy_sha256": "c11fab085174eea61be4059e0317bb984eb8b940da5f5c2a7698d6d3cbede21f",
+        "public_sha256": "7599730137c8fef29c87f4205bc0a1681380e9217fed739533647b4ca6d18efe",
+        "all_reviewed_copy_math_blocks_retained": true,
+        "changes": "Complete original mathematics retained. Source navigation and the explicit physical-time comparison are added."
+      },
+      {
+        "source": "ACTUAL_PUSHFORWARD.md",
+        "sealed_sha256": "1f5da7b05ad49d1c02ece64193743135f1918b5dba8eb93b96bb6f72cf1cfe44",
+        "reviewed_copy_sha256": "e66f62ab2ec6532326dc2b678cc8fd4d32f2abc90dd5be5d45729234d2050e87",
+        "public_sha256": "0929e0d20703583172c9103c6ce6ff82f29254fcd4aeac8783f0b121640a4e71",
+        "all_reviewed_copy_math_blocks_retained": true,
+        "changes": "PF17 all-face label serialization repaired in the owner copy, with the complete original scalar and face sum retained; obsolete review comparison and figure path updated. Public provider links point to exact editions; internal workflow prose is replaced by source-scope prose."
+      },
+      {
+        "source": "PUSHFORWARD_OPERATOR_RECEIVING.md",
+        "sealed_sha256": "f100b4a8d8c69d40c5b43cc96cc7a27ab6f8bdf46824a573c8b06fbea6cf3b09",
+        "reviewed_copy_sha256": "e7c53e29eea9df6cff74c3b02f94320ca88b37e0afa7f12cd75905a028479dd4",
+        "public_sha256": "a20451572d183b159c73dace2029230e96ef338c42f9afd81c2537a663199fe6",
+        "all_reviewed_copy_math_blocks_retained": true,
+        "changes": "Complete new operator-domain and residual proof retained. OP1 receives a gathered wrapper and line break with every original symbol retained."
+      }
+    ],
+    "owner_reading": "FO1–FO56,PF1–PF53,OP1–OP19 completely read; original time-factor comparison corrected explicitly; figures inspected and relevant checks replayed.",
+    "source_repair": {
+      "PF_source_sha256": "1f5da7b05ad49d1c02ece64193743135f1918b5dba8eb93b96bb6f72cf1cfe44",
+      "PF_owner_copy_sha256": "e66f62ab2ec6532326dc2b678cc8fd4d32f2abc90dd5be5d45729234d2050e87",
+      "repair": "Restore the escaped roman all-face label in PF17 after carriage-return serialization; source formula, scalar2bM and original full face index retained. Private sealed original preserved. Update superseded review wording to current FO37–FO38 without changing formulas.",
+      "FO10": "Single trailing backslash is a valid control space inside the minimum; preserved."
+    },
+    "index_searches": [
+      {
+        "query": "\"coarea\" AND \"conditional\"",
+        "routing_only": true,
+        "hits": [
+          {
+            "unit_id": "PUBUNIT-E3C99332BF8C7E349665863B",
+            "title": "Anisotropic Isoperimetric Problems and Related Topics",
+            "authors": "Valentina Franceschi · Alessandra Pluda · Giorgio Saracco",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-19C9C5EC0E240075623B5DA8",
+            "title": "Geometric Aspects of Functional Analysis",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-B924BB6AB507EBAF90826BD3",
+            "title": "Analysis and Geometry on Graphs and Manifolds (London Mathematical Society Lecture Note Series (Series Number 461)) (Matthias Keller (editor), Daniel Lenz (edito",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-B80DC69D9442FA467B7296AB",
+            "title": "Theory of Random Sets (Ilya Molchanov (auth.))",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-D652EBDDC80931F2C46C56B1",
+            "title": "Geometric Potential Analysis",
+            "authors": "Milman, Mario (Editor); Xiao, Jie (Editor); Zegarlinski, Boguslaw (Editor)",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-98604AF3EC94BF255232B7CE",
+            "title": "New Trends on Analysis and Geometry in Metric Spaces (Fabrice Baudoin, Séverine Rigot etc.)",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          }
+        ]
+      },
+      {
+        "query": "\"reaction coordinate\" AND \"effective\"",
+        "routing_only": true,
+        "hits": [
+          {
+            "unit_id": "PUBUNIT-042869EB900000DD377BAB53",
+            "title": "Book.pdf",
+            "authors": "MDPI",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-90E4609B8381ACEB04F32020",
+            "title": "Microsoft Word - Molecular Dynamics Simulation-TOC.docx",
+            "authors": "doubu",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-C139827C17B1C1D7C142B48B",
+            "title": "manual-5.1.5",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-342E6ABEE67B16C20990A3CD",
+            "title": "Emergent_Quantum_Mechanics",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          }
+        ]
+      },
+      {
+        "query": "\"ground state\" AND \"marginal\"",
+        "routing_only": true,
+        "hits": [
+          {
+            "unit_id": "PUBUNIT-26AD0B931EFE1AF819FE2E16",
+            "title": "Holographic Complexity",
+            "authors": "Mohsen Alishahiha",
+            "primary_content_kind": "latex_dependency_closure"
+          },
+          {
+            "unit_id": "PUBUNIT-2936EFAB9F7BD0AB6BF5CF84",
+            "title": "Quantum Information Meets Quantum Matter -- From Quantum Entanglement to Topological Phase in Many-Body Systems",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-D4BB91B50935C91CC192582C",
+            "title": "SYK wormhole formation in real time",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-CD251118A1AEDB426BCEF102",
+            "title": "Ordinary versus $ $-symmetric $ ^3$ quantum field theory",
+            "authors": "Carl M. Bender$^a$; V. Branchina$^b$; Emanuele Messina$^b$",
+            "primary_content_kind": "latex_dependency_closure"
+          },
+          {
+            "unit_id": "PUBUNIT-905CF4A184AFDC913D32E90A",
+            "title": "arXiv:hep-th/9802150v2  6 Apr 1998",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-D2E716AB51359FA4B527C678",
+            "title": "Dynamics_of_Open_Quantum_Systems_Quantum_Fluctuations_Decoherence_and_Emergent_Phenomena",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          }
+        ]
+      },
+      {
+        "query": "\"Fisher information\" AND \"conditional\"",
+        "routing_only": true,
+        "hits": [
+          {
+            "unit_id": "PUBUNIT-5A749A0D1AC398779FFA335C",
+            "title": "Information_Geometry",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-CEF27D0152FABE6081C7F352",
+            "title": "Information Geometry and Its Applications (Shun-ichi Amari (auth.))",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-12FDAE2C3E46FD08314117AC",
+            "title": "Theory of Statistics (James E. Gentle)",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-CD745635EF77DF32F572D0AA",
+            "title": "Theory of Statistical Inference",
+            "authors": "Anthony Almudevar",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-FA2A8C71FAFCE4F9742DBA73",
+            "title": "Complete Entropic Inequalities for Quantum Markov Chains",
+            "authors": "Li Gao",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-16AF4A4579D1440676F1B217",
+            "title": "978_3_030_80209_7_1_ New Directions for Contact Integrators",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          }
+        ]
+      },
+      {
+        "query": "\"coarea\" AND \"conditional\"",
+        "routing_only": true,
+        "hits": []
+      },
+      {
+        "query": "\"reaction coordinate\" AND \"effective\"",
+        "routing_only": true,
+        "hits": []
+      },
+      {
+        "query": "\"ground state\" AND \"marginal\"",
+        "routing_only": true,
+        "hits": [
+          {
+            "unit_id": "PUBUNIT-74D14F9AB7BA85E19624365B",
+            "title": "Arithmetic Time, CPT Spectral Packets, Surcomplex Weighted Automata, Anomaly Inflow, Holographic Boundary Twists, SO(x,1) Screen Layers, Character-Depth Layers, BCM Gauge-Sector Stacks, and Gordanized Invariant Calculus - v29",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-009CA2F2A803E7D731AB43D9",
+            "title": "Arithmetic Time, CPT Spectral Packets, Surcomplex Weighted Automata, Anomaly Inflow, Holographic Boundary Twists, BCM Gauge-Sector Stacks, and Gordanized Invariant Calculus - v28",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-C241C9809A027BC4CD2A4FF7",
+            "title": "Arithmetic Time, CPT Spectral Packets, Surcomplex Weighted Automata, Anomaly Inflow, Holographic Boundary Twists, SO(x,1) Screen Layers, Full C3 Character Triples, BCM Gauge-Sector Stacks, and Gordanized Invariant Calculus - v31",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-1F4A07DB04FD6F577ECFCEB3",
+            "title": "Arithmetic Time, CPT Spectral Packets, Surcomplex Weighted Automata, Anomaly Inflow, Holographic Boundary Twists, SO(x,1) Screen Layers, Full C3 Character Triples, BCM Gauge-Sector Stacks, Gordanized Invariant Calculus, and the Millennium Sea-Level Stack - v32",
+            "authors": "",
+            "primary_content_kind": "pdf_native_text_fallback"
+          },
+          {
+            "unit_id": "PUBUNIT-274128EA5F090CB3067548AD",
+            "title": "Arithmetic Time, CPT Spectral Packets,\\ Inflow, and Holographic Twists \\\\[0.7em] Surcomplex Weighted Automata, Split-Zero Semirings, Verdier--Kasparov Boundary Duality,\\ Gerbe TQFTs, Vacuum-Casimir Scattering, and Adelic Picard Monoids",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          },
+          {
+            "unit_id": "PUBUNIT-E25CF1E53FF0C769B47CEA0F",
+            "title": "Arithmetic Time, CPT Spectral Packets,\\ Inflow, and Holographic Twists \\\\[0.7em] Surcomplex Weighted Automata, Split-Zero Semirings, Verdier--Kasparov Boundary Duality,\\ Gerbe TQFTs, Vacuum-Casimir Scattering, and Adelic Picard Monoids",
+            "authors": "",
+            "primary_content_kind": "latex_dependency_closure"
+          }
+        ]
+      },
+      {
+        "query": "\"Fisher information\" AND \"conditional\"",
+        "routing_only": true,
+        "hits": []
+      }
+    ]
   }
 ]

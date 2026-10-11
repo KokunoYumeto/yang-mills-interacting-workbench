@@ -283,3 +283,15 @@ The original physical observable a_j³ Σ f(x_p) W_p now converges in actual vac
 ## SZ-20261011-041 — Exact bounded-energy projection and positive defect matrix
 
 [BR1–BR27](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDED_PHASE_SPECTRAL_REVIEW.md) independently prove the phase receiver and strengthen it by identifying the continuous projection with the full increasing bounded-energy projection limit. BR17–BR18 give finite spectral-tail and moving-band lower bounds with their original endpoints. BR25 proves the complete positive matrix of multiplication defects. The retained norm statement extends to all bounded parameter sequences. These complete proofs were read and the independent algebra/spectral checks replayed; no actual low-energy or smooth continuum result is asserted.
+
+## SZ-20261011-042 — Actual potential law and removal of the upper covariance endpoint
+
+[FO1–FO56](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_PUSHFORWARD_OPTIMIZATION.md) construct the actual coarea law and both zero-flux currents across critical values, evaluate the optimum over all score functions, and retain the complete conditional ground equation and outside energies. The upper-tail estimate gives O(a) scaled upper excess and a contribution from the far upper endpoint smaller than every fixed power of a. The central-range variance integral, actual mean, lower-side term and drift defect remain explicit; the full centered covariance exponent has not improved yet.
+
+## SZ-20261011-043 — Independent endpoint and scalar ground-form derivation
+
+[PF1–PF53](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_PUSHFORWARD.md) independently prove the current, optimizer, sharper tail integral, endpoint score limits and exact central variance receiver. The explicit original-link path passes through every potential value with a regular point in each interior fiber. PF27–PF32 construct the exact scalar ground representation and map it back to the full physical operator. PF17's all-face label serialization was repaired with the original full scalar and face sum preserved.
+
+## SZ-20261011-044 — Full scalar domain and second-energy residual
+
+[OP1–OP19](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/PUSHFORWARD_OPERATOR_RECEIVING.md) prove the closed scalar form domain, natural endpoint conditions and unit ground function. Its physical isometry gives the full Gram, first-energy and second-energy matrices. The positive residual matrix retains both original conditional fluctuations and their correlation, with evaluated geometric upper bounds. OP18–OP19 supply every physical-time and volume factor in the primary-source comparison. These are exact finite-regulator results; the smooth interacting gapless four-dimensional state remains the goal.

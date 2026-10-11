@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-11T08:57:34.325925+00:00",
+  "proofs": [
+    {
+      "source": "ACTUAL_PUSHFORWARD_OPTIMIZATION.md",
+      "sealed_sha256": "c11fab085174eea61be4059e0317bb984eb8b940da5f5c2a7698d6d3cbede21f",
+      "reviewed_copy_sha256": "c11fab085174eea61be4059e0317bb984eb8b940da5f5c2a7698d6d3cbede21f",
+      "public_sha256": "7599730137c8fef29c87f4205bc0a1681380e9217fed739533647b4ca6d18efe",
+      "all_reviewed_copy_math_blocks_retained": true,
+      "changes": "Complete original mathematics retained. Source navigation and the explicit physical-time comparison are added."
+    },
+    {
+      "source": "ACTUAL_PUSHFORWARD.md",
+      "sealed_sha256": "1f5da7b05ad49d1c02ece64193743135f1918b5dba8eb93b96bb6f72cf1cfe44",
+      "reviewed_copy_sha256": "e66f62ab2ec6532326dc2b678cc8fd4d32f2abc90dd5be5d45729234d2050e87",
+      "public_sha256": "0929e0d20703583172c9103c6ce6ff82f29254fcd4aeac8783f0b121640a4e71",
+      "all_reviewed_copy_math_blocks_retained": true,
+      "changes": "PF17 all-face label serialization repaired in the owner copy, with the complete original scalar and face sum retained; obsolete review comparison and figure path updated. Public provider links point to exact editions; internal workflow prose is replaced by source-scope prose."
+    },
+    {
+      "source": "PUSHFORWARD_OPERATOR_RECEIVING.md",
+      "sealed_sha256": "f100b4a8d8c69d40c5b43cc96cc7a27ab6f8bdf46824a573c8b06fbea6cf3b09",
+      "reviewed_copy_sha256": "e7c53e29eea9df6cff74c3b02f94320ca88b37e0afa7f12cd75905a028479dd4",
+      "public_sha256": "a20451572d183b159c73dace2029230e96ef338c42f9afd81c2537a663199fe6",
+      "all_reviewed_copy_math_blocks_retained": true,
+      "changes": "Complete new operator-domain and residual proof retained. OP1 receives a gathered wrapper and line break with every original symbol retained."
+    }
+  ],
+  "source_repair": {
+    "PF_source_sha256": "1f5da7b05ad49d1c02ece64193743135f1918b5dba8eb93b96bb6f72cf1cfe44",
+    "PF_owner_copy_sha256": "e66f62ab2ec6532326dc2b678cc8fd4d32f2abc90dd5be5d45729234d2050e87",
+    "repair": "Restore the escaped roman all-face label in PF17 after carriage-return serialization; source formula, scalar2bM and original full face index retained. Private sealed original preserved. Update superseded review wording to current FO37–FO38 without changing formulas.",
+    "FO10": "Single trailing backslash is a valid control space inside the minimum; preserved."
+  }
+}
