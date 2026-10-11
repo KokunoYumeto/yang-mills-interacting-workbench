@@ -178,7 +178,7 @@
     {
       "path": "check_curvature_phases.py",
       "bytes": 14556,
-      "sha256": "c159880a669c9f26a5e20153213dc8645fbbd9f468b491a24a1a631046591904"
+      "sha256": "2a1749d90609b4f8345210f8b1abd34778f5873ce62518b5d52d9b561e25c744"
     },
     {
       "path": "check_dh_review.py",
@@ -226,9 +226,24 @@
       "sha256": "a6b1f3e8df0a3a7473b6d1cd518865384d81564ae96aa97e579ac769ca51591f"
     },
     {
+      "path": "check_potential_variance.py",
+      "bytes": 2060,
+      "sha256": "cc55d7a7a6fb8faf63f72035d1d194c53b468686d283a6dd5ff62fe0327e5552"
+    },
+    {
+      "path": "check_raw_hessian.py",
+      "bytes": 8100,
+      "sha256": "15688ab2c6c81e71dad9250297faec29d2c94fa96402062d14c7a0a14cba19b8"
+    },
+    {
       "path": "check_receiving_maps.py",
       "bytes": 7230,
       "sha256": "3099a8ff1077a3bca5da9b24c884641b850b4ac432a316ca0e83e5b8e847546d"
+    },
+    {
+      "path": "check_source_zero_upper.py",
+      "bytes": 6481,
+      "sha256": "7fbc4a6ad24c3077cc448e9e29f225369f81a7facb5ef9b50560acd0d4e9f829"
     },
     {
       "path": "check_strengthened_receivers.py",
@@ -239,6 +254,11 @@
       "path": "check_support_factorization.py",
       "bytes": 1895,
       "sha256": "5d36ff27a8ff85c443e5da00b6da5bbbe44550740993754ed8673b0b01425e57"
+    },
+    {
+      "path": "check_weighted_covariance.py",
+      "bytes": 1948,
+      "sha256": "39cf994f5e5d0068c4bb987fa5630d2ea16c0a5d117a78a3db691ae6f626f34f"
     },
     {
       "path": "check_wilson_time.py",
@@ -252,8 +272,18 @@
     },
     {
       "path": "CLAIM_LEDGER.md",
-      "bytes": 44547,
-      "sha256": "1e8176d714d6e3262dae5ffab665b53336bcaea88cdab303600815397bda0a5d"
+      "bytes": 47396,
+      "sha256": "d07f7c4f1c9a5a4d751ad8830d32eab107834f049a68855cbe9b6c795144246b"
+    },
+    {
+      "path": "compact_covariance_bound.png",
+      "bytes": 135133,
+      "sha256": "05324951306211e79609daef3026e1cf1816f32738f0e43fe3a695aad92d3b17"
+    },
+    {
+      "path": "compact_covariance_bound.svg",
+      "bytes": 98804,
+      "sha256": "1f72c0b26ff4a5f952a5ce6fdaeb644249b9bcef26d0d80c7bfb878da1bc8a16"
     },
     {
       "path": "CONDITIONAL_EDGE_ENTROPY_AND_SCORE.md",
@@ -282,8 +312,8 @@
     },
     {
       "path": "CONJUGATE_VARIANCE.md",
-      "bytes": 33180,
-      "sha256": "9fee4ce8d799391615cf076b2e28cd2bf8cd592423da6a66aa6293cd13742b37"
+      "bytes": 34242,
+      "sha256": "4e2ed66028be7e4970940a5ba38d272296cce45cbbaa9b2dcdc27f40bdcf60f3"
     },
     {
       "path": "CONJUGATE_VARIANCE_FIGURE.png",
@@ -333,7 +363,7 @@
     {
       "path": "CURVATURE_PHASE_CHECKS.json",
       "bytes": 12249,
-      "sha256": "88b9c4dae19cb869a64070c892d85f866b6885999997c7d6f89a00ee54574743"
+      "sha256": "a019d44cb7958a45f69eda305b87edc5afd7e02b60fbe85e66dc77b925198040"
     },
     {
       "path": "CURVATURE_PHASE_MAPS.png",
@@ -446,6 +476,11 @@
       "sha256": "2afb6352a6a75ffeb46dfa7edbda37c2058f18e8651b4d125495aca9b2fb4c4c"
     },
     {
+      "path": "draw_counterexample.py",
+      "bytes": 1959,
+      "sha256": "37a138e7a547f28a7f4a1020629374a6af5a0f0497c326ee690e48e684a3297f"
+    },
+    {
       "path": "draw_coupling.py",
       "bytes": 2508,
       "sha256": "77b29f225be9a1c2882d1e72ea4919e49a36e78e50f9b4b110cac4bd13f3eb54"
@@ -534,6 +569,11 @@
       "path": "EXACT_CHECKS.json",
       "bytes": 2850,
       "sha256": "f412231ad30d9186b122032a6991e0fad46d10f554a253be000811176af16daf"
+    },
+    {
+      "path": "FIGURE_VALUES.json",
+      "bytes": 8305,
+      "sha256": "5925f1ae5401bf608663b5737da9ea57537adc96fb2ef74dc997541e0309637a"
     },
     {
       "path": "fourth_return/check_geometry_coverage.py",
@@ -847,8 +887,8 @@
     },
     {
       "path": "LOCAL_CURVATURE_BUDGET.md",
-      "bytes": 33738,
-      "sha256": "55ac3e1af4d5f4cf2d7aa8ba08a5efd852f05dce7e2b5b197252beba9e8b248c"
+      "bytes": 34884,
+      "sha256": "7e394f8c0e4a7d1cb2bfa4ed4e7b7438a17d6b864133ae51156ee022b4281a56"
     },
     {
       "path": "LOCAL_CURVATURE_BUDGET.png",
@@ -932,8 +972,8 @@
     },
     {
       "path": "ORIGINAL_SOURCE_COVARIANCE.md",
-      "bytes": 35618,
-      "sha256": "0abff4ec5ca4780677e14aab0fa25958c4c0b2986728041acbbece5224e31615"
+      "bytes": 36764,
+      "sha256": "1a6b3878e2414985e24905df16df287f10cd45ca8bb1a2770bcb5923501ea171"
     },
     {
       "path": "original_source_covariance.png",
@@ -952,8 +992,8 @@
     },
     {
       "path": "PHASE_MOMENTS_AND_ORIGINAL_PATH.md",
-      "bytes": 25888,
-      "sha256": "74dd9939226450bcd2d3fb6751855c0cb673a60188ecf8d0fbce5bdd2e9ffe26"
+      "bytes": 26950,
+      "sha256": "140125ad94a88eb32a6ebba34cd6c96ad39bfd16bb240adb03da6642e7132feb"
     },
     {
       "path": "PHASE_MOMENTS_AND_ORIGINAL_PATH.png",
@@ -1012,8 +1052,8 @@
     },
     {
       "path": "PHYSICAL_LOCAL_COVARIANCE.md",
-      "bytes": 40881,
-      "sha256": "78c500cd23ccc97398cc67f86cfe36c9bd27020c4b1beac9101c83a05f89fe62"
+      "bytes": 42027,
+      "sha256": "d3127d1e12f703acc1e485866151a02336828f6310ebf072c820cfcad626bc79"
     },
     {
       "path": "PHYSICAL_LOCAL_COVARIANCE.png",
@@ -1057,8 +1097,8 @@
     },
     {
       "path": "POLYNOMIAL_GRADIENT_BOUNDS.md",
-      "bytes": 46552,
-      "sha256": "dc71c9d0473c8603f6dd933f109083dffdd09503eb609cee9fe27a04643bcf2a"
+      "bytes": 47614,
+      "sha256": "9e195d605d225ddbc191489fdf6c3eff14c9628dc1d776316c3fa024fb2297d7"
     },
     {
       "path": "POLYNOMIAL_GRADIENT_CHECKS.json",
@@ -1071,24 +1111,74 @@
       "sha256": "af7c8e3098dfc6dd78e756e9a16c74f00613ff0d46541f4f3bf1aa440e8a9c43"
     },
     {
+      "path": "POTENTIAL_VARIANCE_CHECKS.json",
+      "bytes": 472,
+      "sha256": "166a71bdc2add66e68f3b5241eb110d07c4ea589fd965a5ae1858269a0a97012"
+    },
+    {
+      "path": "POTENTIAL_VARIANCE_IDENTITIES.md",
+      "bytes": 18334,
+      "sha256": "dc06575fb70f26a259adc11de16e78a41485230d77f54b8e6f3f75dcdc60828a"
+    },
+    {
+      "path": "raw_hessian_figure.py",
+      "bytes": 3544,
+      "sha256": "119b104c445526f6cf39fda78ba06ba5e5c95c7b91b208c7b94e63afc2763db3"
+    },
+    {
+      "path": "RAW_S6_HESSIAN_CHECKS.json",
+      "bytes": 6606,
+      "sha256": "5e5506d4d06f87f88377b512ba50bd009ac552e2244934e867b7b81590040c47"
+    },
+    {
+      "path": "RAW_S6_HESSIAN_RECEIVING.md",
+      "bytes": 39897,
+      "sha256": "9eb6c95bd67aceae4bc2b5cd2363dfe5112283b6302b6a8702612338a7c804f4"
+    },
+    {
+      "path": "RAW_S6_HESSIAN_RECEIVING.png",
+      "bytes": 267738,
+      "sha256": "250721a36633b0f1f661e16ac41138004e8fe709d22f4242eeb223b1d76831d1"
+    },
+    {
+      "path": "RAW_S6_HESSIAN_RECEIVING.svg",
+      "bytes": 117011,
+      "sha256": "552e6c33ce24a15aa79ad2773a4b68741f7ffca49d94389b4da16b4888a1d515"
+    },
+    {
+      "path": "RAW_S6_SOURCE_USE_LEDGER.json",
+      "bytes": 3916,
+      "sha256": "71a9a90fb079bdcf0585b7eb905a2e1c8ff028b20f33372cfb57130068975fae"
+    },
+    {
+      "path": "RAW_UPPER_SOURCE_FIDELITY.json",
+      "bytes": 1440,
+      "sha256": "7b0e01ad1cd372a9dbb9a4b34d0668f942a87326c164c11fb6636851d1565a89"
+    },
+    {
+      "path": "RAW_UPPER_SOURCE_USE_LEDGER.json",
+      "bytes": 6741,
+      "sha256": "beb56b4d9f49730c35ac7c95c1178de8feef11205ee1fae7201fd4ea26af3724"
+    },
+    {
       "path": "READER_SOURCES.json",
-      "bytes": 1457,
-      "sha256": "6fae127346fc04794248375606d95f5ebba35a831c58bf077841ae109982df84"
+      "bytes": 1565,
+      "sha256": "6e57183e4433ac70f7b8a1e5f94e1b138305ea5d16c91ffd3cf1d34b2237aa36"
     },
     {
       "path": "README.md",
-      "bytes": 35361,
-      "sha256": "0b95e06e3e1f75bc68a4179e2d55febf5e4e48b71bda9bf226675fa30171cee4"
+      "bytes": 38210,
+      "sha256": "ba5e5c3c7b0b2192bef8b18cca2934ee417354b4e474d882df743ace5dd76317"
     },
     {
       "path": "RESEARCH_CONTINUATION.tex",
-      "bytes": 1232607,
-      "sha256": "e99fbc34ab127327300327866a232c746291cd0809301ad2af232fe65b712992"
+      "bytes": 1327843,
+      "sha256": "bfcaa008a26d621ad55161d8d52c7970c06eedfb206813fdcb823516c58e7830"
     },
     {
       "path": "RESULTS_20261011.md",
-      "bytes": 45260,
-      "sha256": "50bd7aa3ee3fae92e92bb9af63550e85414f02b520fab85bebadde531f8a203c"
+      "bytes": 48109,
+      "sha256": "41a860f701f64eabb6a67975a79bd453aa8fb139a503007b6adf7bb4d7d7e43c"
     },
     {
       "path": "REVIEW_FINDINGS.png",
@@ -1107,8 +1197,28 @@
     },
     {
       "path": "SOURCE_READING_USE_LEDGER.json",
-      "bytes": 102612,
-      "sha256": "cbe2ff835f728918e41d714d1f3736de02839dfbc37b52b5974fc1922fb4de36"
+      "bytes": 109350,
+      "sha256": "778546ba5188556d6edf8f688a266839f86f63921f87aea6cdac365481754e3a"
+    },
+    {
+      "path": "SOURCE_ZERO_COVARIANCE_UPPER.md",
+      "bytes": 26615,
+      "sha256": "3ee5837874911fb4f175c05d96e5aab87409c5bca533325d86ef74ecc8d5fe2b"
+    },
+    {
+      "path": "SOURCE_ZERO_UPPER_CHECKS.json",
+      "bytes": 1475,
+      "sha256": "7e29ce258ce4c9f111da703275dc3c58ae06fbd1c790f1f76eb613b978f037fa"
+    },
+    {
+      "path": "source_zero_upper_envelope.png",
+      "bytes": 173969,
+      "sha256": "7e696f0bafb1ff992b1c954250ef74d3c96027cba186e4f3a29887efee631310"
+    },
+    {
+      "path": "source_zero_upper_envelope.svg",
+      "bytes": 98444,
+      "sha256": "d87d0b053d3fa296bb117674d83eb80302ab08a75ee8e24f9ec49bc2c27abc48"
     },
     {
       "path": "sources/temporal_transfer.tex",
@@ -1147,8 +1257,8 @@
     },
     {
       "path": "SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
-      "bytes": 61012,
-      "sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4"
+      "bytes": 62074,
+      "sha256": "5664836f2cf24e0ed6e58849e508afb9990961d5bf846626138229e88fa7f28f"
     },
     {
       "path": "SQUARE_ROOT_SOURCE_FIDELITY.json",
@@ -1197,8 +1307,8 @@
     },
     {
       "path": "TEX_FIDELITY.json",
-      "bytes": 9297,
-      "sha256": "05002b17cea4aab27ede44dd74262b9617b179ff6c4c5c1d9594c74ffd6c755f"
+      "bytes": 9946,
+      "sha256": "d45fccb31bcdfa90c6e371087b9022773a86f5bb4b2738c6120f22ea329f377a"
     },
     {
       "path": "two_link_figure.py",
@@ -1237,8 +1347,8 @@
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 27943,
-      "sha256": "b58bd99e12e4b770acff0631d1aca97281619443ef5a44b7df67eae8707473f7"
+      "bytes": 30977,
+      "sha256": "caa239b6a1a87e46fb513dd735bdb8dcd3740be8abd934a40d84bb26b368dbce"
     },
     {
       "path": "VERIFICATION.json",
@@ -1324,6 +1434,11 @@
       "path": "verify_temporal_bridge.py",
       "bytes": 12188,
       "sha256": "298c39641263848df2c15602da221570a97b955f379e87056131065aa2c0b88b"
+    },
+    {
+      "path": "WEIGHTED_COVARIANCE_CHECKS.json",
+      "bytes": 410,
+      "sha256": "af87bf36feeda0091f946275d4b7aea82f8f9d2fc00340603d12a13a2f5a2965"
     },
     {
       "path": "WILSON_TIME_CHECKS.json",

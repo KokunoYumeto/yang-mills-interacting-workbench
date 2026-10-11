@@ -1,0 +1,53 @@
+{
+  "providers": [
+    {
+      "provider_id": "OS",
+      "path": "ORIGINAL_SOURCE_COVARIANCE.md",
+      "sha256": "1a6b3878e2414985e24905df16df287f10cd45ca8bb1a2770bcb5923501ea171",
+      "read_source_sha256": "66864684f5d95b0cbbf1e4c0547230a98a08460e531b4a5758bf3e69693c5842",
+      "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_SOURCE_COVARIANCE.md",
+      "read_coverage": "OS17–OS28 read and verified; full stationary lower Hessian bound and weighted Bochner signs."
+    },
+    {
+      "provider_id": "HVR",
+      "path": "HESSIAN_RECEIVING_REVIEW.md",
+      "sha256": "7ed74af1b0c1f6a54815eb03e3c2753f645586dbb40f64021fce6cfb91f43e7e",
+      "read_source_sha256": "cfba5e99b0708cf6e973c3a543aa580de9f4ed08bfedd168ca5a5066b6b1e67b",
+      "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/HESSIAN_RECEIVING_REVIEW.md",
+      "read_coverage": "HVR1–HVR16 read and independently checked; HVR24–HVR34 receiving formulas read."
+    },
+    {
+      "provider_id": "IP",
+      "path": "PHASE_MOMENTS_AND_ORIGINAL_PATH.md",
+      "sha256": "140125ad94a88eb32a6ebba34cd6c96ad39bfd16bb240adb03da6642e7132feb",
+      "read_source_sha256": "74dd9939226450bcd2d3fb6751855c0cb673a60188ecf8d0fbce5bdd2e9ffe26",
+      "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/PHASE_MOMENTS_AND_ORIGINAL_PATH.md",
+      "read_coverage": "Entire IP1–IP22 read. Full row coefficients, original path, occurrence sums, exact fixed-box scope."
+    },
+    {
+      "provider_id": "CV",
+      "path": "CONJUGATE_VARIANCE.md",
+      "sha256": "4e2ed66028be7e4970940a5ba38d272296cce45cbbaa9b2dcdc27f40bdcf60f3",
+      "read_source_sha256": "9fee4ce8d799391615cf076b2e28cd2bf8cd592423da6a66aa6293cd13742b37",
+      "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/CONJUGATE_VARIANCE.md",
+      "read_coverage": "CV1–CV43 read. Root frame, physical conjugate, reflection gradients and all directional corrections."
+    },
+    {
+      "provider_id": "PG",
+      "path": "POLYNOMIAL_GRADIENT_BOUNDS.md",
+      "sha256": "9e195d605d225ddbc191489fdf6c3eff14c9628dc1d776316c3fa024fb2297d7",
+      "read_source_sha256": "dc71c9d0473c8603f6dd933f109083dffdd09503eb609cee9fe27a04643bcf2a",
+      "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/POLYNOMIAL_GRADIENT_BOUNDS.md",
+      "read_coverage": "PG1–PG32 read, including complete polynomial cap blocks and original bulk coefficients."
+    },
+    {
+      "provider_id": "SR",
+      "path": "SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+      "sha256": "5664836f2cf24e0ed6e58849e508afb9990961d5bf846626138229e88fa7f28f",
+      "read_source_sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4",
+      "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+      "read_coverage": "SR14–SR33 and SR62–SR72 read. Exact projected harmonic, all original energy sums and heat-score path constants."
+    }
+  ],
+  "scope": "Checks use the additive public providers. Their original reading versions are identified separately. No external source theorem is imported."
+}

@@ -23,10 +23,10 @@ check('no unexpected controls or replacement character',not any(ord(c)<32 and c 
 for env in ['gathered','split','array']:
     check('balanced '+env,source.count(r'\begin{'+env+'}')==source.count(r'\end{'+env+'}'),'Source environment audit')
 provider_hashes = {
- 'LOCAL_CURVATURE_BUDGET.md':'55ac3e1af4d5f4cf2d7aa8ba08a5efd852f05dce7e2b5b197252beba9e8b248c',
+ 'LOCAL_CURVATURE_BUDGET.md':'7e394f8c0e4a7d1cb2bfa4ed4e7b7438a17d6b864133ae51156ee022b4281a56',
  'ACTUAL_LOW_ENERGY_MAPS.md':'ca25438bb2e1abef8c06fb3266f4e7dab7db4e301347933801c8e3eafe995b12',
  'ACTUAL_SEMIGROUP_LIMIT.md':'c9fda8c47289a1dc9a5d89d190b5c64affc56454e317ca4d07e66a450a809ef1',
- 'SQUARE_ROOT_SCORE_RECEIVING_MAPS.md':'51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4'}
+ 'SQUARE_ROOT_SCORE_RECEIVING_MAPS.md':'5664836f2cf24e0ed6e58849e508afb9990961d5bf846626138229e88fa7f28f'}
 for path, expected in provider_hashes.items():
     actual=hashlib.sha256((W/path).read_bytes()).hexdigest()
     check('accepted source unchanged: '+path,actual==expected,actual)

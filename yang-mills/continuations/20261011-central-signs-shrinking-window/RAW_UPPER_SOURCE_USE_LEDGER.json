@@ -1,0 +1,85 @@
+[
+  {
+    "source_id": "OS",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_SOURCE_COVARIANCE.md",
+    "read_source_sha256": "66864684f5d95b0cbbf1e4c0547230a98a08460e531b4a5758bf3e69693c5842",
+    "actual_reading_coverage": "OS17–OS28 read and verified; full stationary lower Hessian bound and weighted Bochner signs.",
+    "receiving_calculation": "RH1–RH51 plus RH36a/RH41a."
+  },
+  {
+    "source_id": "HVR",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/HESSIAN_RECEIVING_REVIEW.md",
+    "read_source_sha256": "cfba5e99b0708cf6e973c3a543aa580de9f4ed08bfedd168ca5a5066b6b1e67b",
+    "actual_reading_coverage": "HVR1–HVR16 read and independently checked; HVR24–HVR34 receiving formulas read.",
+    "receiving_calculation": "RH1–RH51 plus RH36a/RH41a."
+  },
+  {
+    "source_id": "IP",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/PHASE_MOMENTS_AND_ORIGINAL_PATH.md",
+    "read_source_sha256": "74dd9939226450bcd2d3fb6751855c0cb673a60188ecf8d0fbce5bdd2e9ffe26",
+    "actual_reading_coverage": "Entire IP1–IP22 read. Full row coefficients, original path, occurrence sums, exact fixed-box scope.",
+    "receiving_calculation": "RH1–RH51 plus RH36a/RH41a."
+  },
+  {
+    "source_id": "CV",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/CONJUGATE_VARIANCE.md",
+    "read_source_sha256": "9fee4ce8d799391615cf076b2e28cd2bf8cd592423da6a66aa6293cd13742b37",
+    "actual_reading_coverage": "CV1–CV43 read. Root frame, physical conjugate, reflection gradients and all directional corrections.",
+    "receiving_calculation": "RH1–RH51 plus RH36a/RH41a."
+  },
+  {
+    "source_id": "PG",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/POLYNOMIAL_GRADIENT_BOUNDS.md",
+    "read_source_sha256": "dc71c9d0473c8603f6dd933f109083dffdd09503eb609cee9fe27a04643bcf2a",
+    "actual_reading_coverage": "PG1–PG32 read, including complete polynomial cap blocks and original bulk coefficients.",
+    "receiving_calculation": "RH1–RH51 plus RH36a/RH41a."
+  },
+  {
+    "source_id": "SR",
+    "public_source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/791f11fb3fcad8b36bbabd19018a792bf469c262/yang-mills/continuations/20261011-central-signs-shrinking-window/SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+    "read_source_sha256": "51e9acd88b7030bc27545903dee4c3e8805afb182798d9a9d55e7c40363144f4",
+    "actual_reading_coverage": "SR14–SR33 and SR62–SR72 read. Exact projected harmonic, all original energy sums and heat-score path constants.",
+    "receiving_calculation": "RH1–RH51 plus RH36a/RH41a."
+  },
+  {
+    "source_id": "programme:ZU-20261011",
+    "source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SOURCE_ZERO_COVARIANCE_UPPER.md",
+    "actual_reading_coverage": "ZU1–ZU44, all arguments, exact square identities, optimized square, incidence subtraction and original-path limits read in full by owner. Original spatial TeX Section12 equations93–100 was read by the derivation worker; LC7–LC16, OS1–OS40, PVC28–PVC50 and HVR1–HVR25 relevant portions read as recorded in private SOURCE_USE_LEDGER.md.",
+    "receiving_calculation": "Actual source-zero upper covariance, all signed and nonnegative terms retained."
+  },
+  {
+    "source_id": "programme:PVI-20261011",
+    "source": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/POTENTIAL_VARIANCE_IDENTITIES.md",
+    "actual_reading_coverage": "PVI1–PVI24 complete proofs read by owner, including the full Euclidean and compact gauge-invariant examples; exact polynomial checks replayed.",
+    "receiving_calculation": "Independent verification of weighted kinetic square and incidence remainder; complete source-zero potential and exterior covariance identities. Comparison potentials are explicitly different from the original potential."
+  },
+  {
+    "source_id": "programme:RH-ZU-PVI-20261011",
+    "proofs": [
+      {
+        "source": "RAW_S6_HESSIAN_RECEIVING.md",
+        "private_sha256": "96c98f9fe47327e1dd123595e8b8d800645b501cca36211bd27c879e39472bc8",
+        "public_sha256": "9eb6c95bd67aceae4bc2b5cd2363dfe5112283b6302b6a8702612338a7c804f4",
+        "all_original_math_blocks_retained": true,
+        "changes": "Public source links, unique validation filenames and figure caption; PVI adds the complete evaluation of its stated c8 constant."
+      },
+      {
+        "source": "SOURCE_ZERO_COVARIANCE_UPPER.md",
+        "private_sha256": "389a89afc08517ca7e97ef7b58b73e68192c82843167cb436f1dfe41d923cda8",
+        "public_sha256": "3ee5837874911fb4f175c05d96e5aab87409c5bca533325d86ef74ecc8d5fe2b",
+        "all_original_math_blocks_retained": true,
+        "changes": "Public source links, unique validation filenames and figure caption; PVI adds the complete evaluation of its stated c8 constant."
+      },
+      {
+        "source": "POTENTIAL_VARIANCE_IDENTITIES.md",
+        "private_sha256": "7acbd79ba17b371f90876a2becb5803c5a8d2d9785624d440bdfcf7748b36c64",
+        "public_sha256": "dc06575fb70f26a259adc11de16e78a41485230d77f54b8e6f3f75dcdc60828a",
+        "all_original_math_blocks_retained": true,
+        "changes": "Public source links, unique validation filenames and figure caption; PVI adds the complete evaluation of its stated c8 constant."
+      }
+    ],
+    "source_index_scope": "Canonical disk indexes searched first; routing records were not treated as read sources. No PDF used and no new external theorem or novelty claim imported.",
+    "owner_review": "All three complete proofs accepted; all check scripts replayed and all three figures inspected. Source serialization corrected before sealing; original worker provenance retained.",
+    "propagation": "Raw moment, conjugate, score, polynomial and local covariance receiving discussions updated. The original shrinking spectral window and covariance exponent remain open calculations."
+  }
+]
