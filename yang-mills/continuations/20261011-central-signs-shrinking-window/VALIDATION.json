@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T20:21:13.678959+00:00",
+  "checked_utc": "2026-10-11T20:38:30.151920+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -199,7 +199,7 @@
     },
     {
       "source": "LOCAL_CURVATURE_BUDGET.md",
-      "sha256": "7e394f8c0e4a7d1cb2bfa4ed4e7b7438a17d6b864133ae51156ee022b4281a56",
+      "sha256": "515a6ba1849fb1b437f437fabb005dbaf9bb45fd6a3df1938764eac8010ecdcb",
       "complete_math_blocks": 262,
       "split_to_aligned_wrappers": 8
     },
@@ -301,7 +301,7 @@
     },
     {
       "source": "INSIDE_MARGINAL_ENERGY.md",
-      "sha256": "69db931bae6b3e5f2b7bd8cdb5eb0378d77619a43fb3450ca98cc5425dc3b7c5",
+      "sha256": "78392a62882197ffec61cbdfd9254bb7366c44cf9a9e8ddd291acb6e537200e4",
       "complete_math_blocks": 246,
       "split_to_aligned_wrappers": 4
     },
@@ -409,13 +409,13 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "3232e105a03fc5687630ea553a3d00514e27ad855bccbe68c2a55c5fc7af2fde",
+      "sha256": "a097f287107b41b292c56c1d9cad86ebe84dd748623a95f456f4e7cc0b489523",
       "complete_math_blocks": 207,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "22d32bd0f2a07aa27cb48477c64ceb9e97fffdd7073415e6770599fb6ba5e137",
+      "sha256": "e5cfa0b7de9d464a1d21acd832c01c0a4c07d67b1970c196be4aef9758a962c2",
       "complete_math_blocks": 253,
       "split_to_aligned_wrappers": 0
     },
@@ -433,21 +433,27 @@
     },
     {
       "source": "OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md",
-      "sha256": "9ee3845f4c132d86e5fed5ef3dbfdeeacc2453e4e45205ad3cd0d9a1fd422301",
+      "sha256": "c3688c2ea2a653e5bf4094f9bbf77cb654e00cd93931d8f2784cace65f267282",
       "complete_math_blocks": 205,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDARY_FORCE_PROJECTION.md",
-      "sha256": "5bbd265154cc2515c5070439e0aff584ce2cc083858e41e7518c9d7abf1a6c80",
+      "sha256": "ed76db22e8d21e0920aaf5816f26914fcd4c464501ffd6df913b68b6c7d8713d",
       "complete_math_blocks": 141,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDARY_DIVERGENCE_AND_MARGINAL_MOMENTS.md",
-      "sha256": "35a89ffddc4646ae58bc19648c6ad6ed4cae05f5a4244e922e00fd8b5be35468",
+      "sha256": "9d9a38051980f8e0a08d1d05dedbd10ffc1144288edb2ceb7a598d9f7c3dce8d",
       "complete_math_blocks": 149,
       "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "KINETIC_CURRENT_AND_PHYSICAL_ENERGY.md",
+      "sha256": "8e8ab6795bc315f832b160f93a50ea36843864ce1957b7c6556a9b5a2262e85c",
+      "complete_math_blocks": 160,
+      "split_to_aligned_wrappers": 1
     }
   ],
   "figures": [
@@ -814,6 +820,16 @@
     {
       "file": "BOUNDARY_DIVERGENCE_RATES.png",
       "sha256": "5628061548757782452cdc02860f6c2b9d9ed09e1a82bfc0c855b7313971f369",
+      "visually_inspected": true
+    },
+    {
+      "file": "KINETIC_PHYSICAL_MAP.png",
+      "sha256": "c30cb2528b44dc21950ed38c337811188347e78c1b38ccc5159c1c36c7f67a87",
+      "visually_inspected": true
+    },
+    {
+      "file": "KINETIC_INVERSE_RATES.png",
+      "sha256": "674609f498bd879d3449557aa9a102fbde5cce22ed9382ed1b28420c892d7467",
       "visually_inspected": true
     }
   ],
@@ -3744,6 +3760,251 @@
       "new_layout_defects": false,
       "inherited_warnings": "59 earlier overfull warnings and one earlier missing delta unchanged. Full PDF not certified defect-free or published.",
       "repairs": "BD1 long row split with every term retained; complete CG receiving note moved to706; scope sentence narrowed to proved quantitative bound; original current definitions and fitting support made explicit."
+    }
+  },
+  "kinetic_current_review": {
+    "utc": "2026-10-11T20:37:06.892673+00:00",
+    "coverage": "KC1–KC28 complete derivation and owner review: original quotient and all conditional means, kinetic/score decomposition and full forcings, strict kinetic variance from original crossing coupling, sector energy comparison and complete nonnegative variance remainders, original collar moments, full six-entry conditional inverse Gram and original s_j column estimates, exact inside derivative and physical energy, all inside-function couplings, scalar Schur optimization with full physical residual and correct response sign.",
+    "strengthening": "The kinetic current has an actual variance upper bound with all original energy remainders, first and second moments, and quantitative estimates for its whole inverse column at the original shrinking energy. Its physical energy retains an explicit conditional covariance, which gives an exact enlargement of the full physical scalar variational space.",
+    "limitations": "No positive limiting kinetic variance, small physical covariance, nonzero source gain or limiting physical spectral mass is assumed. The conditional inverse column is estimated only at the stated original powers. The actual covariance, remaining inverse Gram, continuum state, reconstruction, global smoothness and intended no-gap endpoint remain active.",
+    "actual_reading": "BD1–BD19 complete current source and BQ projection/collar identities; OC3/10–14 and OC17–19; CG23–CG30 domains and full conditional minimizer; RD5–RD10 complete retained derivatives and fitting support; IM1–IM13 original marginal energy and physical map; LC3–LC11 original full-Haar partition, ground uniqueness and exact crossing cost; SG11–SG13 exact response convention; SR65 heat-score constant retained from the checked source edition. Earlier PT human-source ledger retained. No claim of reading every earlier file.",
+    "routing": "Canonical index first:15 original-TeX routing records for conditional/kinetic, resolvent/moments and Witten/covariance. Routing only; no external paper newly read or imported theorem, and no literature PDF.",
+    "diagnostics": {
+      "file": "KINETIC_CURRENT_CHECKS.json",
+      "checks": 900,
+      "all_passed": true,
+      "scope": "KC diagnostics: manufactured curved states, finite positive operators and proved upper functions; no original quantum samples."
+    },
+    "figures_inspected": [
+      "KINETIC_PHYSICAL_MAP.png",
+      "KINETIC_INVERSE_RATES.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "KINETIC_CURRENT_AND_PHYSICAL_ENERGY.md",
+        "prefix": "KC",
+        "tags": 28,
+        "owner_sha256": "7cdc2b23c7d1dff23467ccdfffed9e3bf4e95a7fc34163ac61f11bde5a782eb5",
+        "public_sha256": "8e8ab6795bc315f832b160f93a50ea36843864ce1957b7c6556a9b5a2262e85c",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T20:38:30.151920+00:00",
+      "tex_sha256": "f7c3b8de0beca1ab65f4c18e3dc1f9a789ff37d6b9494895b422d8dbdd24fd7d",
+      "pdf_sha256": "997e36f3f2993239d245f4d15bbb7409e4fce90efd6ccd3666b567664e8a6b20",
+      "pages": 752,
+      "source_files": 75,
+      "math_blocks": 18201,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-11T20:38:30.102890+00:00",
+        "complete": true,
+        "pages": 752,
+        "new_pages": [
+          745,
+          746,
+          747,
+          748,
+          749,
+          750,
+          751,
+          752
+        ],
+        "receiving_notes": [
+          327,
+          499,
+          695,
+          707,
+          728,
+          736,
+          744
+        ],
+        "rendered_pages": [
+          326,
+          327,
+          328,
+          498,
+          499,
+          500,
+          694,
+          695,
+          696,
+          706,
+          707,
+          708,
+          727,
+          728,
+          729,
+          735,
+          736,
+          737,
+          743,
+          744,
+          745,
+          746,
+          747,
+          748,
+          749,
+          750,
+          751,
+          752
+        ],
+        "final_page_hashes": {
+          "page-326.png": "36f782f448878b9508d337dd1f4f8509f34ec1acbdaa4468f6931f04ea4a5720",
+          "page-327.png": "303e6a254d23c763d3c197a2c05dc9520b306cc01ab06bc5b9ce81380c85ff5d",
+          "page-328.png": "4f150d2ae657e55ff624a2e89b9fa24d4c4fde839c02368a1ebd3ec3e33eeaea",
+          "page-498.png": "3444d8e8216fa4230b1cd0dd7cd3b1d8d2ff00f13f8965ee2ac6b8077029949b",
+          "page-499.png": "f695aba55cad32ba355d7fb188b0b6ca05d9687cc3ff12dbc98facb82f9d785e",
+          "page-500.png": "56a92de8ff83cea5c1afbd9d348f016e16e1a3cb3ceb199be9329eb7cf10330d",
+          "page-694.png": "ca41bb5091b031fde549fedf34b48480de53905c507b1c02443eebbafe813e5e",
+          "page-695.png": "2e9dfeb6e239ffe810c8a521bca1caab242f9440d21ffd325c74129e3f5451ea",
+          "page-696.png": "d65e86ca3e69e24600b3eb58283016d18afe0f7a74dc23604627f15661b0316f",
+          "page-706.png": "f787215f82fea5d3aea978ec84aa2e86f09e24caaf2c339913c894c3d4453d40",
+          "page-707.png": "521cdee5b6f819669bb3a3b7e0965ca1f1ac6ac68bce0c547d8dce09e235bcc3",
+          "page-708.png": "48802a07c518fcaf914518d56dd1333f7b072b0d51be677d4d6fd741d97b3fc4",
+          "page-727.png": "a779c1f353e6699da49f46e8fcf3beb5ed3730a70818150ca40728c780b837f3",
+          "page-728.png": "e7876a975a1358f3056651fe2d9514c75ac72654295093e49aff8144789bb8d8",
+          "page-729.png": "53c4ac9ed34d371eb2ef02c76b0efb03926bba907f4d1449b84ab654f168baa2",
+          "page-735.png": "312a656210420324af9f2ad8dedce3e0c3323ef8f1bda0b600d4df0df013eb7a",
+          "page-736.png": "8554c7016f95491ad20159872dd86dba62de4adff5f060bee804789db5ebcc9f",
+          "page-737.png": "aa56dc8e886e832b0a0c14f007b92e566f79e6578941882a7fb1d2547c4c23ce",
+          "page-743.png": "2db9c790c53a1f634b65ca757a606d2832eacdf75af98b5ac6321a4ea33bac64",
+          "page-744.png": "f31851ebfc2e0ef11e4ddf31b77ad8306c7a4be4709f3da802265215a37cddc4",
+          "page-745.png": "792ce30324329bef2dda80b5bc844538b0b5543a2d3c95b793eaed805c908c6e",
+          "page-746.png": "9749dab73dcdc688f64560ac7a8273e8a7a8fe50ce4a66be9a3808e8d17d0c25",
+          "page-747.png": "8c23a7b27e7832ace79edf08ceb4da958f23c6a0e2ed7e990bfe95215d99e8af",
+          "page-748.png": "eca97efa813552466d8d72c101fbaf27e858591661533b409f7c074644525832",
+          "page-749.png": "719ce7230517a521e41c6846f666a6bdf06f2da3f3217a75556761bf7f96bb27",
+          "page-750.png": "6633f3fda9adb2460fc3333902a991e515e5ff83a6c63ab8cef2d9fcfd385491",
+          "page-751.png": "f94b4e48f5611f8d4f17be915796156f4c02b78128d1585121e82a8246f502e1",
+          "page-752.png": "f82c878c37e69e895f039f4eee345cdf3e5c4df1ebe412def835b48824b2f75a"
+        },
+        "visually_inspected_all_rendered": true,
+        "full_size_additional_inspection": [
+          749,
+          750,
+          751
+        ],
+        "figures": [
+          "KINETIC_PHYSICAL_MAP.png",
+          "KINETIC_INVERSE_RATES.png"
+        ],
+        "new_layout_defects": false,
+        "inherited_warnings": "59 earlier overfull warnings and one earlier missing delta unchanged. Full PDF not certified defect-free or published.",
+        "repairs": "Figure labels wrapped before integration. No proof equation or reader pagination repair required."
+      }
+    }
+  },
+  "kinetic_current_compile": {
+    "utc": "2026-10-11T20:38:30.151920+00:00",
+    "tex_sha256": "f7c3b8de0beca1ab65f4c18e3dc1f9a789ff37d6b9494895b422d8dbdd24fd7d",
+    "pdf_sha256": "997e36f3f2993239d245f4d15bbb7409e4fce90efd6ccd3666b567664e8a6b20",
+    "pages": 752,
+    "source_files": 75,
+    "math_blocks": 18201,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-11T20:38:30.102890+00:00",
+      "complete": true,
+      "pages": 752,
+      "new_pages": [
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752
+      ],
+      "receiving_notes": [
+        327,
+        499,
+        695,
+        707,
+        728,
+        736,
+        744
+      ],
+      "rendered_pages": [
+        326,
+        327,
+        328,
+        498,
+        499,
+        500,
+        694,
+        695,
+        696,
+        706,
+        707,
+        708,
+        727,
+        728,
+        729,
+        735,
+        736,
+        737,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752
+      ],
+      "final_page_hashes": {
+        "page-326.png": "36f782f448878b9508d337dd1f4f8509f34ec1acbdaa4468f6931f04ea4a5720",
+        "page-327.png": "303e6a254d23c763d3c197a2c05dc9520b306cc01ab06bc5b9ce81380c85ff5d",
+        "page-328.png": "4f150d2ae657e55ff624a2e89b9fa24d4c4fde839c02368a1ebd3ec3e33eeaea",
+        "page-498.png": "3444d8e8216fa4230b1cd0dd7cd3b1d8d2ff00f13f8965ee2ac6b8077029949b",
+        "page-499.png": "f695aba55cad32ba355d7fb188b0b6ca05d9687cc3ff12dbc98facb82f9d785e",
+        "page-500.png": "56a92de8ff83cea5c1afbd9d348f016e16e1a3cb3ceb199be9329eb7cf10330d",
+        "page-694.png": "ca41bb5091b031fde549fedf34b48480de53905c507b1c02443eebbafe813e5e",
+        "page-695.png": "2e9dfeb6e239ffe810c8a521bca1caab242f9440d21ffd325c74129e3f5451ea",
+        "page-696.png": "d65e86ca3e69e24600b3eb58283016d18afe0f7a74dc23604627f15661b0316f",
+        "page-706.png": "f787215f82fea5d3aea978ec84aa2e86f09e24caaf2c339913c894c3d4453d40",
+        "page-707.png": "521cdee5b6f819669bb3a3b7e0965ca1f1ac6ac68bce0c547d8dce09e235bcc3",
+        "page-708.png": "48802a07c518fcaf914518d56dd1333f7b072b0d51be677d4d6fd741d97b3fc4",
+        "page-727.png": "a779c1f353e6699da49f46e8fcf3beb5ed3730a70818150ca40728c780b837f3",
+        "page-728.png": "e7876a975a1358f3056651fe2d9514c75ac72654295093e49aff8144789bb8d8",
+        "page-729.png": "53c4ac9ed34d371eb2ef02c76b0efb03926bba907f4d1449b84ab654f168baa2",
+        "page-735.png": "312a656210420324af9f2ad8dedce3e0c3323ef8f1bda0b600d4df0df013eb7a",
+        "page-736.png": "8554c7016f95491ad20159872dd86dba62de4adff5f060bee804789db5ebcc9f",
+        "page-737.png": "aa56dc8e886e832b0a0c14f007b92e566f79e6578941882a7fb1d2547c4c23ce",
+        "page-743.png": "2db9c790c53a1f634b65ca757a606d2832eacdf75af98b5ac6321a4ea33bac64",
+        "page-744.png": "f31851ebfc2e0ef11e4ddf31b77ad8306c7a4be4709f3da802265215a37cddc4",
+        "page-745.png": "792ce30324329bef2dda80b5bc844538b0b5543a2d3c95b793eaed805c908c6e",
+        "page-746.png": "9749dab73dcdc688f64560ac7a8273e8a7a8fe50ce4a66be9a3808e8d17d0c25",
+        "page-747.png": "8c23a7b27e7832ace79edf08ceb4da958f23c6a0e2ed7e990bfe95215d99e8af",
+        "page-748.png": "eca97efa813552466d8d72c101fbaf27e858591661533b409f7c074644525832",
+        "page-749.png": "719ce7230517a521e41c6846f666a6bdf06f2da3f3217a75556761bf7f96bb27",
+        "page-750.png": "6633f3fda9adb2460fc3333902a991e515e5ff83a6c63ab8cef2d9fcfd385491",
+        "page-751.png": "f94b4e48f5611f8d4f17be915796156f4c02b78128d1585121e82a8246f502e1",
+        "page-752.png": "f82c878c37e69e895f039f4eee345cdf3e5c4df1ebe412def835b48824b2f75a"
+      },
+      "visually_inspected_all_rendered": true,
+      "full_size_additional_inspection": [
+        749,
+        750,
+        751
+      ],
+      "figures": [
+        "KINETIC_PHYSICAL_MAP.png",
+        "KINETIC_INVERSE_RATES.png"
+      ],
+      "new_layout_defects": false,
+      "inherited_warnings": "59 earlier overfull warnings and one earlier missing delta unchanged. Full PDF not certified defect-free or published.",
+      "repairs": "Figure labels wrapped before integration. No proof equation or reader pagination repair required."
     }
   }
 }

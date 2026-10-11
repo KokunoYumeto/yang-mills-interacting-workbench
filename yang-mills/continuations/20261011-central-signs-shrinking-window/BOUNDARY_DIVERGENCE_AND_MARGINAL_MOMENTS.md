@@ -367,3 +367,7 @@ The boundary divergence has now been estimated, and a complete existing block of
 ![Original finite upper functions for boundary divergence and the marginal second moment, retaining both collar choices; BD10–BD15](BOUNDARY_DIVERGENCE_RATES.png)
 
 Reproducible diagnostics and figure sources are in [check_boundary_divergence.py](check_boundary_divergence.py). Manufactured curved states and comparison inverse multipliers are not original Yang–Mills samples. Bounded source coverage and exact provider versions are in [the source-use ledger](BOUNDARY_DIVERGENCE_SOURCE_USE_LEDGER.json).
+
+## Original kinetic current and its full physical energy
+
+[KC1–KC28](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/KINETIC_CURRENT_AND_PHYSICAL_ENERGY.md) retain the original kinetic quotient and its complete conditional mean, and decompose the full current into kinetic and score fluctuations. The actual kinetic variance has a boundary-count bound with all nonnegative energy remainders. Its first two moments control the full kinetic column of the conditional inverse at the original shrinking energy. Differentiating its conditional mean gives the exact full physical energy, including a retained conditional covariance. That covariance supplies an explicit enlargement of the physical scalar trial space, an exact Green-function gain and its full residual. The source gain and limiting physical spectral weight remain unevaluated; the complete earlier current family remains available.
