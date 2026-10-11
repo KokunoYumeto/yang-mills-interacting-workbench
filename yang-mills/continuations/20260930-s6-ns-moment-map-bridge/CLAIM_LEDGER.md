@@ -700,3 +700,14 @@ S_{[4]}-S_{[4]}^t=-\frac{703}{19712160}[D_{\rm deg},A_{\rm adj}],
 \qquad\|S_{[4]}\|_{H\to H}\le\frac{4574447}{33510672}.
 \]
 The full remainder from degree six has the original local-norm bound in Q40. Q47 proves the exact observation-and-resolvent map to the symmetric physical susceptibility, including the normalized vacuum scalar and higher source correction. Q50 proves that no positive metric tending to the original Haar metric can make this Schur map self-adjoint near zero. Its defect defines the explicit boundary skew matrix and its receiving map; it is not a failure of physical self-adjointness. This completes the former fourth-coefficient backlog. The independent cube proof and polynomial differentiation certificate are retained with all seven replay scripts and their exact dependencies. No new continuum gap claim follows.
+
+## SZ-20261011-008 — physical inverse at every finite real source
+
+[GPR1–GPR55](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GLOBAL_PHYSICAL_RESPONSE.md) prove the original physical source Jacobian is invertible on every physical zero-Haar-mean Sobolev space at every finite real independent source. The complete inverse retains both different means, the actual vacuum and the original factor κ. GPR11–GPR18 prove the exact bounded map from all original union labels to their assembly quotient and an independent global inverse on that quotient. The old labelled Taylor-series radius is unchanged.
+
+GPR19–GPR26 strengthen the earlier response statement to strict positive definiteness and identify the Wilson expectation map as a real analytic diffeomorphism onto the interior of the convex hull of the actual full Wilson image. GPR35–GPR40b compute the complete two-link mixed trace derivatives and cancel the exact Haar cube volume by averaging every centre, retaining every exterior link and actual density. With the full original face norm and \(C_*=1/(e2^{37})\), the unchanged path satisfies
+\[
+\|(R_j^{\rm phys})^{-1}\|\le16C_*^{-2}M_j^2
+\left(1+128\sqrt3\,{10000j^2\over\kappa_*^2}\right)^8=O(j^{40}).
+\]
+This improves the provisional local-coordinate powers while preserving all original objects. The complete source inverse has its different explicit estimate; no full spectral inverse is assigned the face-response bound. GPR53–GPR55 also prove the actual integrated homogeneous-response identity, with its endpoint justified by the original vacuum energy bound. These finite-source results do not determine the actual shrinking-window phase weight or the continuum endpoint. The unquotiented relation-kernel inverse is a subsequent calculation, not assumed here. Exact symbolic checks and a reproducible inspected figure accompany the proof. No novelty claim is made for the underlying elliptic or convex methods.

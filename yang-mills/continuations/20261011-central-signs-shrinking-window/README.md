@@ -17,7 +17,7 @@ The center-reversal mechanism has an antecedent in [L. Li and Y. Meurice, Lattic
 
 Reproduce the independent finite checks with Python, using mpmath for the phase enumeration: check_central_signs.py, verify_phase.py, and verify_jacobian.py. The nine exact incidence cases, 32 phase checks, and rational Jacobian certificates supplement the complete proofs. All displayed figures have retained reproducible sources. [Source identities and reading coverage](SOURCE_READING_USE_LEDGER.json) and [claim propagation](CLAIM_LEDGER.md) accompany this edition.
 
-The next direct spectral calculation is a volume-dependent estimate of the actual reflected four-loop and gradient difference with accuracy sufficient for division by \(s_j\). The fourth coefficient is now evaluated; the next Jacobian calculation is the full physical inverse beyond the small-source region. These are distinct calculations within the continuing programme.
+The next direct spectral calculation is a volume-dependent estimate of the actual reflected four-loop and gradient difference with accuracy sufficient for division by \(s_j\). The fourth coefficient is now evaluated; the full physical inverse beyond the small-source region is proved in the global continuation below. These are distinct calculations within the continuing programme.
 
 ## Complete fixed-box spectral weights
 
@@ -30,3 +30,7 @@ The [104 exact checks](PHASE_SPECTRAL_CHECKS.json) compare independent Hermite, 
 The [complete reflection calculation](BOUNDARY_REFLECTION_AND_RAW_ENDPOINT.md), JP1–JP49, proves the global two-link bounds and the exact original endpoint. The [fourth-return proof](fourth_return/FOURTH_SCHUR_COEFFICIENT.md), Q1–Q50, evaluates the full original coefficient and the physical-response map. The [illustrations](BOUNDARY_AND_FOURTH_ILLUSTRATIONS.md) show the exact coordinate geometry, harmonic components and boundary entries.
 
 Run `verify_boundary_reflection.py` for its 66 checks and `fourth_return/verify_fourth_return.py` for the seven independent exact replay scripts. The latter uses only the retained local sources and Python's standard library. `fourth_return/PORTABLE_REPLAY.json` lists every dependency. The [result and claim ledger](RESULTS_20261011.md) records precise scope and propagation.
+
+## Global physical source and expectation maps
+
+[GPR1–GPR55](GLOBAL_PHYSICAL_RESPONSE.md) establish the exact physical source inverse and the original assembly-quotient inverse at every finite real source. The Wilson expectation map covers the interior of the full finite-box Wilson convex image with a unique analytic inverse. Two-link conditional averaging gives the complete original-path inverse susceptibility bound O(j⁴⁰). The [figure](GLOBAL_PHYSICAL_RESPONSE.png) shows the actual operators and Haar averaging map. Run `check_global_response.py` with SymPy for the exact trace, Gram, constant and polynomial-degree checks; the complete proof is retained alongside them.
