@@ -179,3 +179,14 @@ Thus the three original orientation-average histories converge to the constant 2
 ![Exact forward/backward drift cancellation, unchanged moment constants, and continuous-path receiving maps](WILSON_TIME_REGULARITY.png)
 
 The figure shows the proved maps (TR2), (TR7), (TR9), (TR13)–(TR14) and (TR17). It depicts no simulated vacuum trajectories. Its reproducible source is draw_wilson_time.py; the complete proof and original human-source coverage accompany it.
+
+## Stronger estimates for the same original histories
+
+The complete independent derivation [R1–R29](WILSON_TIME_REVIEW.md) strengthens TR12, TR16 and TR17 while retaining all of their original valid bounds. With the same original (c=2\kappa_*D^2), time horizon (T), and actual orientation defect (Y_{de,j}=2-\overline W_{de,j}), it proves
+\[
+\mathbb E\sup_{0\le t\le T}|b(U_t)-b(U_0)|^2\le\frac{25}{4}cT,
+\qquad
+\limsup_j j^2\mathbb E\sup_{0\le t\le T}Y_{de,j}(t)^2
+\le\frac{27\kappa_*^2}{10000}.
+\]
+The first follows from the exact reversal identity and the separate terminal backward-martingale term, as proved in R9. The second follows from the full actual curvature-moment recurrence R21–R25 and the maximum estimate R26–R27. R8 and R17–R18 give the stronger logarithmic time modulus. R29 gives summable tails and the precise almost-sure bound under any specified coupling with the original marginal path laws. These complete proofs are included below in the same reader. The growing-loop and raw-phase constants retain their stated scope.

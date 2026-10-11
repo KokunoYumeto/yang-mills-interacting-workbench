@@ -1,0 +1,1625 @@
+{
+  "observed_utc": "2026-10-11T04:13:20.272417+00:00",
+  "total": 321,
+  "counts_by_kind": {
+    "numerical": 281,
+    "exact": 36,
+    "structure": 4
+  },
+  "all_passed": true,
+  "proof_sha256": "820592c648301fecfe1f569c987e080e08de6496e783fa406e1f01085e91c0df",
+  "scope": "Exact algebra, orientation, original coefficient/occurrence checks, independent compact-group quadrature, numerical representation checks, and source integrity. No actual growing-box endpoint value is computed.",
+  "constants": {
+    "D1": "127.89721270854578862153183132487434598212747652822332875268244504",
+    "D2": "788.93430839707835248093940448814804654342307363364571490017649548",
+    "a0": "239.26734155362363930653022777091451666737997684936626768749155485",
+    "b0": "525.95620559805223498729293632543203102894871575576380993345099699"
+  },
+  "checks": [
+    {
+      "name": "Haar normalization beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=1, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=2, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "radial integration by parts beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "generator moment coefficient beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "fourth remainder constant beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=0, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=0, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=0, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=1, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=1, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=1, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=2, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=2, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=2, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=3, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=3, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=3, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=4, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=4, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=4, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=5, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=5, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=5, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=6, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=6, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=6, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=7, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=7, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=7, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=8, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=8, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=8, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=9, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=9, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=9, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=10, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=10, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=10, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=11, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=11, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=11, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=12, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=12, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=12, beta=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "Haar normalization beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=1, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=2, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "radial integration by parts beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "generator moment coefficient beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "fourth remainder constant beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=0, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=0, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=0, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=1, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=1, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=1, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=2, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=2, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=2, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=3, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=3, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=3, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=4, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=4, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=4, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=5, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=5, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=5, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=6, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=6, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=6, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=7, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=7, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=7, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=8, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=8, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=8, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=9, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=9, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=9, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=10, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=10, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=10, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=11, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=11, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=11, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=12, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=12, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=12, beta=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "Haar normalization beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=1, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=2, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "radial integration by parts beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "generator moment coefficient beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "fourth remainder constant beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=0, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=0, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=0, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=1, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=1, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=1, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=2, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=2, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=2, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=3, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=3, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=3, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=4, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=4, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=4, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=5, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=5, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=5, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=6, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=6, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=6, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=7, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=7, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=7, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=8, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=8, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=8, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=9, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=9, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=9, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=10, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=10, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=10, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=11, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=11, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=11, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=12, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=12, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=12, beta=5.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "Haar normalization beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=1, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=2, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "radial integration by parts beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "generator moment coefficient beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "fourth remainder constant beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=0, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=0, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=0, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=1, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=1, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=1, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=2, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=2, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=2, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=3, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=3, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=3, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=4, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=4, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=4, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=5, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=5, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=5, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=6, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=6, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=6, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=7, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=7, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=7, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=8, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=8, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=8, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=9, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=9, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=9, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=10, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=10, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=10, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=11, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=11, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=11, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=12, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=12, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=12, beta=10.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "Haar normalization beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=1, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "global radial moment k=2, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "radial integration by parts beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "generator moment coefficient beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "fourth remainder constant beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=0, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=0, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=0, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=1, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=1, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=1, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=2, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=2, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=2, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=3, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=3, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=3, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=4, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=4, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=4, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=5, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=5, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=5, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=6, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=6, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=6, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=7, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=7, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=7, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=8, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=8, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=8, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=9, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=9, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=9, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=10, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=10, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=10, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=11, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=11, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=11, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all-spin formula sample l=12, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "one-step all-spin bound l=12, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "positive contraction l=12, beta=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=1.0, spins=(0, 1)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(0, 1), beta=1.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=1.0, spins=(1, 2, 3)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(1, 2, 3), beta=1.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=1.0, spins=(0, 2, 4, 6)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(0, 2, 4, 6), beta=1.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=1.0, spins=(1, 1, 1, 1, 1, 1, 1, 1)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(1, 1, 1, 1, 1, 1, 1, 1), beta=1.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=7.0, spins=(0, 1)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(0, 1), beta=7.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=7.0, spins=(1, 2, 3)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(1, 2, 3), beta=7.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=7.0, spins=(0, 2, 4, 6)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(0, 2, 4, 6), beta=7.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=7.0, spins=(1, 1, 1, 1, 1, 1, 1, 1)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(1, 1, 1, 1, 1, 1, 1, 1), beta=7.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=100.0, spins=(0, 1)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(0, 1), beta=100.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=100.0, spins=(1, 2, 3)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(1, 2, 3), beta=100.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=100.0, spins=(0, 2, 4, 6)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(0, 2, 4, 6), beta=100.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "dimension-free tensor multiplier beta=100.0, spins=(1, 1, 1, 1, 1, 1, 1, 1)",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "tensor quadratic sum spins=(1, 1, 1, 1, 1, 1, 1, 1), beta=100.0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=0",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=1",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=2",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=3",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=4",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=5",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=6",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=7",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two Casimir l=8",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "full potential product rule",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "H squared full scalar and cross terms",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "reverse H graph identity",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "exponential product identity signs AT28",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "four-derivative coefficient",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "Bell and Leibniz constants",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "temporal orientation inverse",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "original temporal gauge law",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "original two-word phase trace identity",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "radius-two electric versus original c metric",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "full row one sum L=2",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "full row three sum L=2",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "full row one sum L=3",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "full row three sum L=3",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "full row one sum L=5",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "full row three sum L=5",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "full row one sum L=8",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "full row three sum L=8",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all complete chord occurrences are at most two",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "all two-chord full words have at most four occurrences",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "noncommuting compressed transfer local step=0.001",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=2, step=0.001",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=7, step=0.001",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=20, step=0.001",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting compressed transfer local step=0.002",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=2, step=0.002",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=7, step=0.002",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=20, step=0.002",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting compressed transfer local step=0.005",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=2, step=0.005",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=7, step=0.005",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "noncommuting telescoping power=20, step=0.005",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "correlation error budget AT57",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "probe budget with positive slack",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "total endpoint error",
+      "kind": "exact",
+      "passed": true
+    },
+    {
+      "name": "spectral defect sign x=0.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "exact next defect integral x=0.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "spectral defect sign x=0.0001",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "exact next defect integral x=0.0001",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "spectral defect sign x=0.03",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "exact next defect integral x=0.03",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "spectral defect sign x=0.5",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "exact next defect integral x=0.5",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "spectral defect sign x=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "exact next defect integral x=1.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "spectral defect sign x=3.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "exact next defect integral x=3.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "spectral defect sign x=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "exact next defect integral x=100.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "filter test unit boundary",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=2.0, t=0.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=2.0, t=0.5",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=2.0, t=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=4.0, t=0.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=4.0, t=0.5",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=4.0, t=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=7.0, t=0.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=7.0, t=0.5",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "vacuum-filter cross terms B=7.0, t=2.0",
+      "kind": "numerical",
+      "passed": true
+    },
+    {
+      "name": "all AT1--AT60 labels exactly once",
+      "kind": "structure",
+      "passed": true
+    },
+    {
+      "name": "inline delimiters balanced",
+      "kind": "structure",
+      "passed": true
+    },
+    {
+      "name": "display delimiters balanced",
+      "kind": "structure",
+      "passed": true
+    },
+    {
+      "name": "no damaged TeX controls",
+      "kind": "structure",
+      "passed": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T03:53:59.997657+00:00",
+  "checked_utc": "2026-10-11T04:13:11.591803+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -157,7 +157,7 @@
     },
     {
       "source": "ACTUAL_SEMIGROUP_LIMIT.md",
-      "sha256": "b8fbac14d239d92b31fb0ba6e96768e12cd518f4dbc3e62c4608d6c412fc31c4",
+      "sha256": "b395ddb62336a10469774f745862ae0235db531c651f410d2af5c1eab7769dff",
       "complete_math_blocks": 460,
       "split_to_aligned_wrappers": 7
     },
@@ -169,8 +169,8 @@
     },
     {
       "source": "WILSON_TIME_REGULARITY.md",
-      "sha256": "e7621d0770cc86b5409789eef4d844cd823b16da77fa66c6bfc3193f741410a1",
-      "complete_math_blocks": 59,
+      "sha256": "03e68afc558e4b0d62c964a1d8298186a2ac1b2b2a7fc3baacae206f9da6596a",
+      "complete_math_blocks": 60,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -178,6 +178,24 @@
       "sha256": "9fee4ce8d799391615cf076b2e28cd2bf8cd592423da6a66aa6293cd13742b37",
       "complete_math_blocks": 362,
       "split_to_aligned_wrappers": 1
+    },
+    {
+      "source": "ANISOTROPIC_TEMPORAL_BRIDGE.md",
+      "sha256": "820592c648301fecfe1f569c987e080e08de6496e783fa406e1f01085e91c0df",
+      "complete_math_blocks": 384,
+      "split_to_aligned_wrappers": 4
+    },
+    {
+      "source": "WILSON_TIME_REVIEW.md",
+      "sha256": "9388e8c3f269641da18e5b53275b55c4e8a5c08823185994f087cafd684599b7",
+      "complete_math_blocks": 232,
+      "split_to_aligned_wrappers": 4
+    },
+    {
+      "source": "ACTUAL_LOW_ENERGY_MAPS.md",
+      "sha256": "a37153237ecccfb1248ae0e74931f57db4774353e9f8d884a900009e1ad75d1f",
+      "complete_math_blocks": 416,
+      "split_to_aligned_wrappers": 2
     }
   ],
   "figures": [
@@ -285,9 +303,24 @@
       "file": "CONJUGATE_VARIANCE_FIGURE.png",
       "sha256": "490f3d6b0dd05dfa1963ddb2bf78ad535b81372181a0b4f008fa8b2a4326fcea",
       "visually_inspected": true
+    },
+    {
+      "file": "TEMPORAL_RECEIVING_MAP.png",
+      "sha256": "b29abfd9811c54a2b6dcffca1f2e33058c9dab33cf9c5b27c879053cdd6a3829",
+      "visually_inspected": true
+    },
+    {
+      "file": "REVIEW_FINDINGS.png",
+      "sha256": "d1a8176c9f3578b164c2af955f0c7c45194d675e2e9d2725daec956676c46d1c",
+      "visually_inspected": true
+    },
+    {
+      "file": "ACTUAL_LOW_ENERGY_MAPS.png",
+      "sha256": "7019a41904e0e20a6f278e2c278aee70bc79811e45940f30f5164c5d23a6b093",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure. Owner read PRE1–PRE55, ESE1–ESE38, ID1–ID57, HR1–HR25, LS1–LS57 and the complete SR derivation. Full stochastic laws, kernel endpoint signs, affine terms, all derivative supports, original-path constants, norm domains and both spectral endpoint signs checked. All retained scripts replayed. Independent source escaping repaired before acceptance. Owner read and checked CW1–CW49 in full and replayed the exact word, rational curl, original-row and coefficient checks. Owner read AC1–AC50 and derived OW1–OW23; complete signed covariance, full residual, source error, cubic order and path constants checked. Owner fully reviewed ASL1–ASL66, UR1–UR15, derived OW24–OW25 and TR1–TR17, fully read CV1–CV47 including its lettered equations; original source comparison and complete receiving scopes checked.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure. Owner read PRE1–PRE55, ESE1–ESE38, ID1–ID57, HR1–HR25, LS1–LS57 and the complete SR derivation. Full stochastic laws, kernel endpoint signs, affine terms, all derivative supports, original-path constants, norm domains and both spectral endpoint signs checked. All retained scripts replayed. Independent source escaping repaired before acceptance. Owner read and checked CW1–CW49 in full and replayed the exact word, rational curl, original-row and coefficient checks. Owner read AC1–AC50 and derived OW1–OW23; complete signed covariance, full residual, source error, cubic order and path constants checked. Owner fully reviewed ASL1–ASL66, UR1–UR15, derived OW24–OW25 and TR1–TR17, fully read CV1–CV47 including its lettered equations; original source comparison and complete receiving scopes checked. Complete AT1–AT60, R1–R29 and LEM1–LEM55 reviewed, all 685 check groups replayed; original temporal source comparison checked.",
   "pdf_compiled": false,
   "new_external_pdf_read": false,
   "spectral_weight_checks": 104,
@@ -400,6 +433,29 @@
       "public_sha256": "9fee4ce8d799391615cf076b2e28cd2bf8cd592423da6a66aa6293cd13742b37",
       "all_original_math_blocks_retained": true,
       "changes": "Public provider links, scope propagation, and inspected figure captions; complete original math retained."
+    }
+  ],
+  "temporal_spectral_fidelity": [
+    {
+      "private_source_sha256": "8a297ebc6cd362fc9bb9f521baf341b2c161c348bd69b3cd86bf74b87ccc2c06",
+      "public_file": "ANISOTROPIC_TEMPORAL_BRIDGE.md",
+      "public_sha256": "820592c648301fecfe1f569c987e080e08de6496e783fa406e1f01085e91c0df",
+      "all_original_math_blocks_retained": true,
+      "changes": "Provider links, public source records and inspected figure caption; all mathematical content retained."
+    },
+    {
+      "private_source_sha256": "d3d59925cbfeaea07c72b15c9af006a4e47d15abefdc9295d0ea0afe1ccd4eec",
+      "public_file": "WILSON_TIME_REVIEW.md",
+      "public_sha256": "9388e8c3f269641da18e5b53275b55c4e8a5c08823185994f087cafd684599b7",
+      "all_original_math_blocks_retained": true,
+      "changes": "Provider links, public source records and inspected figure caption; all mathematical content retained."
+    },
+    {
+      "private_source_sha256": "1bf3dd31d96137b7585c4394bfd3ca928c1754a0a911a3e920b019fa97464e6e",
+      "public_file": "ACTUAL_LOW_ENERGY_MAPS.md",
+      "public_sha256": "a37153237ecccfb1248ae0e74931f57db4774353e9f8d884a900009e1ad75d1f",
+      "all_original_math_blocks_retained": true,
+      "changes": "Provider links, public source records and inspected figure caption; all mathematical content retained."
     }
   ]
 }

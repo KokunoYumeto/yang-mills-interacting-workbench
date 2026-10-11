@@ -611,3 +611,7 @@ The actual limit consists of the common ultraproduct (ASL5), its nonzero escape 
 
 
 The further [time-regularity calculation, TR1–TR17](WILSON_TIME_REGULARITY.md), proves continuous versions with every local Hölder exponent below one half and convergence on the stated countable continuous-path space. It strengthens ASL38 and the full-interval form of ASL52 without changing the observable family or the growing-loop scope.
+
+## Original spectral windows and stronger temporal estimates
+
+The full [LEM1–LEM55](ACTUAL_LOW_ENERGY_MAPS.md) now calculate the shrinking-window zero-energy flag, cyclic compression defect, and the three approach pieces at every endpoint. LEM21–LEM32 retain spatial coefficient arrays and prove the positive-energy loss for bounded physical quadratures; LEM42–LEM55 give actual positive-energy detectors, complete finite heat combinations and full residual error bounds. The unknown raw-phase mass remains explicit. [R1–R29](WILSON_TIME_REVIEW.md) strengthen ASL38 and ASL52 to logarithmic temporal continuity, a squared orientation-defect rate of order j^-2 and the specified coupled almost-sure bound. [AT1–AT60](ANISOTROPIC_TEMPORAL_BRIDGE.md) identify finite four-dimensional anisotropic Wilson integrals and an explicit temporal sequence that recovers the original endpoint to within 3/(4j). No asserted continuum identification is added.
