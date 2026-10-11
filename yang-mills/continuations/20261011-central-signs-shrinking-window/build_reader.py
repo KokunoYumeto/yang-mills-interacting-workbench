@@ -6,6 +6,26 @@ def escape(text):
     return ''.join((replacements.get(c, c) for c in text))
 tokens = re.compile('(?s)(\\\\\\[.*?\\\\\\]|\\\\\\(.*?\\\\\\)|\\[[^\\]]*\\]\\([^)]+\\))')
 
+def typeset_math(text):
+    # Keep every formula character; aligned permits the multiple alignment
+    # columns already present in the retained Markdown equations.
+    text = text.replace(r'\begin{split}', r'\begin{aligned}').replace(r'\end{split}', r'\end{aligned}')
+    text = re.sub(r'(\\begin\{aligned\})(\s*\[)', r'\1\\relax\2', text)
+    def place_tag(match):
+        block = match.group()
+        tags = list(re.finditer(r'\\tag\{[^}]+\}', block))
+        if len(tags) != 1:
+            return block
+        tag = tags[0]
+        prefix = block[:tag.start()]
+        depth = len(re.findall(r'\\begin\{', prefix)) - len(re.findall(r'\\end\{', prefix))
+        if depth:
+            prefix = prefix + '{}' if prefix.endswith('\\ ') else prefix.rstrip(' \t')
+            block = prefix + block[tag.end():]
+            block = block[:-2].rstrip() + '\n' + tag.group() + '\n' + block[-2:]
+        return block
+    return re.sub(r'(?s)\\\[.*?\\\]', place_tag, text)
+
 def inline(text):
     output = []
     cursor = 0
@@ -39,12 +59,14 @@ def convert(text):
             if re.fullmatch('\\|[\\s:|\\-]+\\|', line):
                 continue
             if not table:
-                out.append('\\begin{center}\\small\\begin{tabular}{p{.15\\linewidth}p{.23\\linewidth}p{.23\\linewidth}p{.17\\linewidth}}\\toprule')
+                columns = len(line.strip('|').split('|'))
+                cell = 'p{\\dimexpr(\\linewidth-6pt*' + str(columns-1) + ')/' + str(columns) + '\\relax}'
+                out.append('\\begingroup\\small\\setlength{\\tabcolsep}{3pt}\\begin{longtable}{@{}' + cell*columns + '@{}}\\toprule')
                 table = True
             out.append(' & '.join((inline(x.strip()) for x in line.strip('|').split('|'))) + '\\\\')
             continue
         if table:
-            out.append('\\bottomrule\\end{tabular}\\end{center}')
+            out.append('\\bottomrule\\end{longtable}\\endgroup')
             table = False
         if line.startswith('!['):
             figure = re.fullmatch('!\\[([^\\]]*)\\]\\(([^)]+)\\)', line)
@@ -65,8 +87,8 @@ def convert(text):
             line = re.sub('\\*\\*([^*]*)\\*\\*', '\\1', line)
             out.append(inline(line))
     if table:
-        out.append('\\bottomrule\\end{tabular}\\end{center}')
-    return re.sub('@@DISPLAY(\\d+)@@', lambda match: mathblocks[int(match.group(1))], '\n'.join(out))
+        out.append('\\bottomrule\\end{longtable}\\endgroup')
+    return typeset_math(re.sub('@@DISPLAY(\\d+)@@', lambda match: mathblocks[int(match.group(1))], '\n'.join(out)))
 HEADER = '\\documentclass[11pt]{article}\n\\usepackage{iftex}\n\\ifPDFTeX\\usepackage[T1]{fontenc}\\usepackage[utf8]{inputenc}\\usepackage{lmodern}\\else\\usepackage{fontspec}\\setmainfont{Latin Modern Roman}\\fi\n\\usepackage{amsmath,amssymb,mathrsfs,booktabs,graphicx,hyperref}\n\\usepackage[margin=21.5mm]{geometry}\n\\hypersetup{hidelinks,pdftitle={Yang--Mills: complete research proofs}}\n\\allowdisplaybreaks\n\\emergencystretch=3em\n\\setlength{\\parindent}{0pt}\n\\setlength{\\parskip}{6pt}\n\\begin{document}\n'
 
 import json,hashlib
@@ -79,13 +101,14 @@ for name in names:
     source_base_url='https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/'+(p.parent.relative_to(ROOT).as_posix()+'/' if p.parent!=ROOT else '')
     body=convert(s)
     blocks=re.findall(r'(?s)\\\[.*?\\\]|\\\(.*?\\\)',s)
-    assert all(x in body for x in blocks)
-    rows.append({'source':name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'complete_math_blocks':len(blocks)})
+    assert all(typeset_math(x) in body for x in blocks)
+    rows.append({'source':name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'complete_math_blocks':len(blocks),'split_to_aligned_wrappers':s.count(r'\begin{split}')})
     bodies.append(body)
-header=HEADER.replace('Yang--Mills: complete research proofs','Yang--Mills central signs and shrinking spectral windows')
+header=HEADER.replace('Yang--Mills: complete research proofs','Yang--Mills central signs and shrinking spectral windows').replace('booktabs,graphicx','booktabs,longtable,graphicx')
 out=ROOT/'RESEARCH_CONTINUATION.tex'
 out.write_text(header+'\n\\clearpage\n'.join(bodies)+'\n\\end{document}\n',encoding='utf-8',newline='\n')
 (ROOT/'TEX_FIDELITY.json').write_text(json.dumps({'sources':rows,'all_math_blocks_preserved':True,
+ 'typesetting_map':'Split wrappers become aligned; an inert relax protects leading square brackets; a tag inside an inner alignment moves outside that alignment. Equation content and tags are retained. Tables retain all cells with their actual column count. Original Markdown sources are unchanged.',
  'sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'compilation_confirmed':False,
  'compile_status':'Compilation has not been confirmed for this source edition; no current PDF is included.'},indent=2)+'\n')
 print(json.dumps({'math_blocks':sum(x['complete_math_blocks'] for x in rows),'source_files':len(rows)}))

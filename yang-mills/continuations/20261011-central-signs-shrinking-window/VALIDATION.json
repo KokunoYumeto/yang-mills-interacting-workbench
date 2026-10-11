@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T00:45:17.098539+00:00",
+  "checked_utc": "2026-10-11T01:11:32.653589+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -8,72 +8,98 @@
     {
       "source": "PHASE_MOMENTS_AND_ORIGINAL_PATH.md",
       "sha256": "74dd9939226450bcd2d3fb6751855c0cb673a60188ecf8d0fbce5bdd2e9ffe26",
-      "complete_math_blocks": 221
+      "complete_math_blocks": 221,
+      "split_to_aligned_wrappers": 4
     },
     {
       "source": "ORIGINAL_J5_PARITY_AND_TAIL.md",
       "sha256": "8bc3f17ce98f657951d445ec4857f3afe23848eea0702f19a5cee66dc92c6ea6",
-      "complete_math_blocks": 304
+      "complete_math_blocks": 304,
+      "split_to_aligned_wrappers": 1
     },
     {
       "source": "CENTRAL_SIGNS_AND_BOUNDARIES.md",
       "sha256": "ba13c610f43bac6131e7a5672c97cedcea426843f4ba8b8a3c2c38bede59665e",
-      "complete_math_blocks": 147
+      "complete_math_blocks": 147,
+      "split_to_aligned_wrappers": 0
     },
     {
       "source": "BASELINE_J5.md",
       "sha256": "19330587f37000433096225d6cbea04dea65480338d8bbaba736e1edfa1e50e9",
-      "complete_math_blocks": 106
+      "complete_math_blocks": 106,
+      "split_to_aligned_wrappers": 0
     },
     {
       "source": "PHASE_SPECTRAL_WEIGHTS.md",
       "sha256": "a1986503145604493d69cecb6d4c18b13d3da628192bb7c68ea6e6f8de981aa6",
-      "complete_math_blocks": 119
+      "complete_math_blocks": 119,
+      "split_to_aligned_wrappers": 1
     },
     {
       "source": "BOUNDARY_REFLECTION_AND_RAW_ENDPOINT.md",
       "sha256": "1ebef660d1d62b6ee313bf8b3e3c40e16d2978f7f7851324e7a9170a1ec48a12",
-      "complete_math_blocks": 440
+      "complete_math_blocks": 440,
+      "split_to_aligned_wrappers": 8
     },
     {
       "source": "fourth_return/FOURTH_SCHUR_COEFFICIENT.md",
       "sha256": "051c7e9bd74dee88c068c208962ab65c9500f4ef117dea8af4da71007cd9fab8",
-      "complete_math_blocks": 330
+      "complete_math_blocks": 330,
+      "split_to_aligned_wrappers": 10
     },
     {
       "source": "fourth_return/cube_derivation/CUBE_FIFTH_PROJECTION.md",
       "sha256": "38c3412b5a212120f7440d08bd7192c5c32f8692744d8b790be4227fad9eb47d",
-      "complete_math_blocks": 25
+      "complete_math_blocks": 25,
+      "split_to_aligned_wrappers": 0
     },
     {
       "source": "fourth_return/cube_derivation/FOURTH_ALGEBRA_CERTIFICATE.md",
       "sha256": "d6f39b6aa1bc5af17c38a441ea1a89b5e06313d2107a0d3e90f5e33b2e3c57c7",
-      "complete_math_blocks": 14
+      "complete_math_blocks": 14,
+      "split_to_aligned_wrappers": 0
     },
     {
       "source": "BOUNDARY_AND_FOURTH_ILLUSTRATIONS.md",
       "sha256": "1d7bfec01b39fe541af2032946ed505f56ed58a896dda794b5d73bea73d6de74",
-      "complete_math_blocks": 0
+      "complete_math_blocks": 0,
+      "split_to_aligned_wrappers": 0
     },
     {
       "source": "GLOBAL_PHYSICAL_RESPONSE.md",
       "sha256": "1ea5157e2b89b82a1810f65507e771a38da47b8270e49d4f45d09c12b3336aee",
-      "complete_math_blocks": 400
+      "complete_math_blocks": 400,
+      "split_to_aligned_wrappers": 2
     },
     {
       "source": "POLYNOMIAL_CONDITIONAL_BOUNDS.md",
       "sha256": "1d88ba3b523226280670bc023260703e0b0a6a1eb3b2da744d7fc58775be7550",
-      "complete_math_blocks": 335
+      "complete_math_blocks": 335,
+      "split_to_aligned_wrappers": 6
     },
     {
       "source": "union_label_global/FULL_UNION_LABEL_INVERSE.md",
       "sha256": "f162555e2e1f348eae36705b9a8f07798e6173520a44e24ba48975d6a29ed19f",
-      "complete_math_blocks": 236
+      "complete_math_blocks": 236,
+      "split_to_aligned_wrappers": 3
     },
     {
       "source": "SUPPORT_AND_SCALAR_FACTORIZATION.md",
       "sha256": "4f370582b4d2a9941e9cd2cef22cf63b638892e155012b08aea8157d53dec9a1",
-      "complete_math_blocks": 84
+      "complete_math_blocks": 84,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "POLYNOMIAL_SCORE_AND_ORIGINAL_ENDPOINT.md",
+      "sha256": "af7c8e3098dfc6dd78e756e9a16c74f00613ff0d46541f4f3bf1aa440e8a9c43",
+      "complete_math_blocks": 505,
+      "split_to_aligned_wrappers": 12
+    },
+    {
+      "source": "POLYNOMIAL_GRADIENT_BOUNDS.md",
+      "sha256": "dc71c9d0473c8603f6dd933f109083dffdd09503eb609cee9fe27a04643bcf2a",
+      "complete_math_blocks": 431,
+      "split_to_aligned_wrappers": 7
     }
   ],
   "figures": [
@@ -121,9 +147,14 @@
       "file": "FULL_UNION_LABEL_INVERSE.png",
       "sha256": "a36bf09e1359b00394b8a60c9b11f655dacf6b39a0bc6b3d813bcd5f6dbaa06c",
       "visually_inspected": true
+    },
+    {
+      "file": "CAP_GRAM_COMPARISON.png",
+      "sha256": "5399aceb0044c6ba3b3b10953a42e7a6540025256971e7b4d99a65683f638810",
+      "visually_inspected": true
     }
   ],
-  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure.",
+  "proof_review": "Owner read CS1–CS19, IP1–IP22 and P1–P45 in full; corrected the scope of baseline reproduction, retained raw state factors and fixed-box quantifiers. Owner independently derived and read SP1–SP16, including full operator factors, finite Hermite sums, cluster convergence and the radial complementary map. Owner read JP1–JP49, Q1–Q50 and both independent Q certificates completely; independently derived the global two-link harmonic, verified all source factors, and replayed all checks. Three new figures inspected. Owner read all GPR1–GPR55 and independently derived and checked the all-centres volume cancellation. Exact symbolic replay passed and response figure inspected. Owner read PC1–PC52 completely, independently derived the optimized original row, checked corrected boundary-index notation, replayed 21 checks and inspected the figure. Owner read UL1–UL47 in full, replayed all exact checks, derived UF1–UF17 with full scalar and gauge maps, checked the strengthened norm count and inspected the reproducible figure. Owner read PS1–PS76 and PG1–PG70 in full, independently checked cap constants, all row sums and endpoint signs, replayed all certificates, corrected the single explanatory derivative exponent and inspected the shared exact-matrix figure.",
   "pdf_compiled": false,
   "new_external_pdf_read": false,
   "spectral_weight_checks": 104,
@@ -132,5 +163,19 @@
   "global_response_symbolic_checks": true,
   "polynomial_conditional_checks": 21,
   "full_union_inverse_checks": 7656,
-  "support_factorization_checks": 14120
+  "support_factorization_checks": 14120,
+  "polynomial_gradient_checks": 31,
+  "polynomial_score_certificates": [
+    "CAP_CONSTANT_CHECKS.json",
+    "SYMBOLIC_GEOMETRY_CHECKS.json"
+  ],
+  "cap_matrix_plot_radii": 25,
+  "previous_reader_compilation": {
+    "sources": 14,
+    "math_blocks": 2761,
+    "pages": 111,
+    "success": true,
+    "pdf_published": false,
+    "layout_review": "Overfull warnings remain; no PDF edition claimed"
+  }
 }

@@ -530,5 +530,146 @@
     "coverage": "UL1–UL47 read in full; UF1–UF17 derive exact product ground states, all scalar factorization, connected-support cancellation and the improved norm count from UL1–UL19, UL22–UL30 and UL33–UL47.",
     "use_id": "YM-20261011-UF1-UF17",
     "novelty_claimed": false
+  },
+  {
+    "source_id": "YM-SPATIAL-20260908-TEX",
+    "authors": "Retained programme derivation; no human authorship inferred",
+    "version": "Pinned GitHub commit 485b61423c1f4e1805deb453c1b6b342b27842b6",
+    "bytes": 414920,
+    "sha256": "e035407b59854b77307ad1bb0021a4f834aa13231ca6028f2b8de5409ab5aba4",
+    "public_original_tex": "https://raw.githubusercontent.com/KokunoYumeto/yang-mills-interacting-workbench/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/sources/spatial/spatial_continuum.tex",
+    "reading_coverage": [
+      "lines 1415–1486, equations (77)–(79), partial Bochner proof, metric and actual conditional densities",
+      "lines 2116–2179, equations (113)–(115), same original Hamiltonian, scalar and local scores"
+    ],
+    "reading_kind": "Original TeX read, not a PDF or a routing record",
+    "application": "PS1, PS31–PS35 retain the radius-two metric and reproduce the complete original score proof; PS48–PS60 use exact physical face numbers.",
+    "public_bytes_verified": true,
+    "use_id": "YM-20261011-PS1-PS76"
+  },
+  {
+    "source_id": "YM-PERIOD-PHYSICAL-485b6142",
+    "authors": "Retained programme derivation; no human authorship inferred",
+    "version": "Pinned GitHub commit 485b61423c1f4e1805deb453c1b6b342b27842b6",
+    "bytes": 236035,
+    "sha256": "ac7dcd76979b2b80d476cc509ef02031a69026691ab53eae3a18caaa67c27a71",
+    "public_proof": "https://raw.githubusercontent.com/KokunoYumeto/yang-mills-interacting-workbench/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/PERIOD_COUPLING_AND_PHYSICAL_KERNELS.md",
+    "reading_coverage": [
+      "lines 2440–2619: PK102–PK111, original coordinate and coefficient definitions",
+      "lines 3500–3656: PK158–PK165, complete chord exclusions, rows and sphere moments",
+      "lines 4025–4126: PK179–PK181, original boundary defect and its exact word comparison"
+    ],
+    "application": "PS31, PS34, PS36–PS44, PS49–PS53 retain and apply the original objects. Fixed-box convergence and oscillator replacements are not imported into the joint path.",
+    "public_bytes_verified": true,
+    "use_id": "YM-20261011-PS1-PS76"
+  },
+  {
+    "source_id": "YM-JP1-JP49-20261011",
+    "authors": "Concurrent original programme derivation",
+    "version": "Local source at the reading and hash checkpoint",
+    "bytes": 51837,
+    "sha256": "29ffde08e545a52ceeed0218550d0da551934bc7c457d50d1ba86f379fd1a3e8",
+    "reading_coverage": [
+      "JP1–JP8: original tree, coefficients and complete reflected endpoint products",
+      "JP14–JP15: initial two-link coefficient",
+      "JP20–JP25: raw endpoint and actual conditional-density map",
+      "JP30–JP49: original exponential bounds, global two-link harmonic, raw masses and energies"
+    ],
+    "application": "PS36–PS75 rederive the receiving word map, replace the exponential-only penalties by proved polynomial factors, and add distinct original derivative rows.",
+    "public_proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/44548a167319316397e6874d8b2fc8f1d3491137/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDARY_REFLECTION_AND_RAW_ENDPOINT.md",
+    "use_id": "YM-20261011-PS1-PS76"
+  },
+  {
+    "source_id": "arXiv:math/0703768v1",
+    "canonical_index_id": null,
+    "authors": [
+      "Feng Dai",
+      "Heping Wang"
+    ],
+    "title": "Positive Cubature formulas and Marcinkiewicz-Zygmund inequalities on spherical caps",
+    "version": "arXiv math/0703768v1, 26 March 2007",
+    "source_url": "https://arxiv.org/src/math/0703768v1",
+    "abstract_url": "https://arxiv.org/abs/math/0703768v1",
+    "archive_format": "Intact gzip stream containing one original TeX file; download name source.tar was retained verbatim.",
+    "reading_coverage": [
+      "lines 217–269: title, authors, abstract definitions and cap theorem statement",
+      "lines 300–328: original spherical polynomial, measure and cap definitions",
+      "lines 416–519: auxiliary boundary metric, Theorem 1.1 and adjoining Corollaries 1.2–1.4"
+    ],
+    "reading_kind": "Bounded original author TeX reading; no PDF used; main theorem proof was not read",
+    "application": "PS76 proves the exact Pi_2^3 / physical radius / Haar-area comparison. All constants used in PS1–PS75 are independently proved finite Gram constants, not unspecified constants imported from this paper.",
+    "source_printing_note": "The displayed Corollary 1.4 has an unrooted Lp integral on the left and 1/p powers on the right. No part of that printed comparison is used. For p!=1, scaling a nonzero f by t changes the two displayed sides by t^p and t, so that printed form cannot have constants independent of f; the dimensionally consistent left side is the Lp norm.",
+    "novelty_claim": false,
+    "original_source_archive_sha256": "7063a50dde25dd800b3fdcfb3fd0eac0f985d84c326391b6fd387d6bacbc6ec5",
+    "original_author_tex_sha256": "7528fb905c11b1656f04540d2fada21849492aa5c9063572f0ae91c6d4adca86",
+    "owner_reading_coverage": "Original author TeX lines 300–328 and 416–519 read directly; only definitions and exact comparison used.",
+    "use_id": "YM-20261011-PS1-PS76"
+  },
+  {
+    "source_id": "YM-SPATIAL-20260908-TEX",
+    "authors": "Retained programme derivation; exact source retained in corpus ledger",
+    "locators": [
+      "equations (77)–(79), lines 1415–1474",
+      "equations (113)–(115), lines 2116–2164"
+    ],
+    "coverage": "Original TeX equations (77)-(79), lines 1415-1474, and (113)-(115), lines 2116-2164, read again during this derivation. The full Bochner proof and conditional-density definition were read, not only routed. No PDF was read.",
+    "receiving": "PG26-PG27 actual-vacuum score; PG33-PG43 conditional and marginal applications.",
+    "sha256": "e035407b59854b77307ad1bb0021a4f834aa13231ca6028f2b8de5409ab5aba4",
+    "bytes": 414920,
+    "public_check": {
+      "raw_url": "https://raw.githubusercontent.com/KokunoYumeto/yang-mills-interacting-workbench/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/sources/spatial/spatial_continuum.tex",
+      "bytes": 414920,
+      "sha256": "e035407b59854b77307ad1bb0021a4f834aa13231ca6028f2b8de5409ab5aba4",
+      "matches_local": true,
+      "checked_at": "2026-10-10T23:07:00.292603+00:00"
+    },
+    "public_proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/485b61423c1f4e1805deb453c1b6b342b27842b6/yang-mills/continuations/20260930-s6-ns-moment-map-bridge/sources/spatial/spatial_continuum.tex",
+    "hash_rechecked_at": "2026-10-11T01:06:21.550257+00:00",
+    "use_id": "YM-20261011-PG1-PG70"
+  },
+  {
+    "source_id": "YM-JOINT-PATH-JP1-JP49",
+    "authors": "Retained programme derivation",
+    "sha256": "29ffde08e545a52ceeed0218550d0da551934bc7c457d50d1ba86f379fd1a3e8",
+    "locators": [
+      "JP24–JP25",
+      "JP40–JP49"
+    ],
+    "coverage": "Previously read complete original-word and score derivation; its current hash is unchanged. Original-word helper definitions alone loaded by AST for independent full-word checks.",
+    "receiving": "PG25-PG34 exact words and derivative-coordinate map; verification full-word H2 recovery.",
+    "verification_source_sha256": "7c482ce9596d6c4dc62555c06cf8c495a2192ce9ffc6b0a4c024145d2e7c3f20",
+    "verification_use": "Only function definitions were loaded by AST for independent full-word tests. No earlier top-level test or file write was executed.",
+    "hash_rechecked_at": "2026-10-11T01:06:21.550257+00:00",
+    "public_proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/44548a167319316397e6874d8b2fc8f1d3491137/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDARY_REFLECTION_AND_RAW_ENDPOINT.md",
+    "use_id": "YM-20261011-PG1-PG70"
+  },
+  {
+    "source_id": "YM-POLYNOMIAL-CONDITIONAL-PC1-PC52",
+    "authors": "Retained programme derivation",
+    "sha256": "7fb199efd8a81d6c41ab6c2ba81c64d30c04128ca46ab94aa8f90a68ce42f46c",
+    "locators": [
+      "PC20-PC25",
+      "PC26-PC32",
+      "PC45-PC52"
+    ],
+    "coverage": "Complete preceding derivation already written and checked in this continuing assignment. Definitions and full general receiving-word construction read again. Source preserved without changes.",
+    "receiving": "PG21-PG24 independently compute gradient sharpness for the retained density; PG25-PG41 reconstruct complete original F and improve its energy bound.",
+    "public_proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/83ae6d6840766ff94884206ad90f1885d1cdd4b8/yang-mills/continuations/20261011-central-signs-shrinking-window/POLYNOMIAL_CONDITIONAL_BOUNDS.md",
+    "use_id": "YM-20261011-PG1-PG70"
+  },
+  {
+    "source_id": "YM-POLYNOMIAL-SCORE-PS1-PS76",
+    "authors": "Retained independent programme derivation",
+    "sha256": "d76ac1bc58611be373276771f564f6f2530b202746372883b58d305c1dd77678",
+    "locators": [
+      "PS2-PS4",
+      "PS17-PS26",
+      "PS40-PS60",
+      "PS62-PS75"
+    ],
+    "coverage": "Read the complete exact cap-density comparison, pure-linear bound, special vector-family proof, original derivative receiving map, disjoint boundary sums and joint-path evaluations. The arguments actually used are reconstructed in full in PG50-PG63. External literature discussed in PS76 is not invoked and is not represented as read here.",
+    "receiving": "PG50-PG70; independent bulk derivative sets are proved disjoint from the PS boundary derivatives.",
+    "public_proof_url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/POLYNOMIAL_SCORE_AND_ORIGINAL_ENDPOINT.md",
+    "use_id": "YM-20261011-PG1-PG70"
   }
 ]

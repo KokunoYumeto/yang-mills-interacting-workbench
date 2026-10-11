@@ -42,3 +42,7 @@ Run `verify_boundary_reflection.py` for its 66 checks and `fourth_return/verify_
 ## Full labels, inverse and connected vacuum supports
 
 [UL1–UL47](union_label_global/FULL_UNION_LABEL_INVERSE.md) prove the full inverse at every finite real source, including all assembly relation directions. [UF1–UF17](SUPPORT_AND_SCALAR_FACTORIZATION.md) prove the exact connected-support property of the vacuum and all its scalar families, and a stronger transformation bound. The complete original Hamiltonians, labels, means and coupling factors are retained. [The inspected diagram](FULL_UNION_LABEL_INVERSE.png) displays the inverse and a seven-edge adjacent-face calculation. Run `union_label_global/check_union.py` and `check_support_factorization.py` to replay the finite exact certificates; the full analytical arguments are in the linked proofs.
+
+## Complete cap and gradient estimates
+
+[PS1–PS76](POLYNOMIAL_SCORE_AND_ORIGINAL_ENDPOINT.md) give exact cap Gram blocks, explicit optimal exponents for the full polynomial and special-vector classes, and all selected boundary derivative sums. [PG1–PG70](POLYNOMIAL_GRADIENT_BOUNDS.md) give the complete gradient inequality, every original bulk derivative and their disjoint addition to the boundary energies. Full constants, affine terms, actual-vacuum score maps and both signed endpoint inequalities remain visible. [The matrix figure](CAP_GRAM_COMPARISON.png) has reproducible 60-digit data. Run `cap_constants.py`, `verify_symbolic_geometry.py` and `verify_polynomial_gradient.py` for the retained checks.

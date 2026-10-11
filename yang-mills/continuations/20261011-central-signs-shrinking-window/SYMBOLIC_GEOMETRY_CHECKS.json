@@ -1,0 +1,71 @@
+{
+  "status": "all_exact_assertions_passed",
+  "checks": [
+    {
+      "identity": "S3 second/fourth moments and full harmonic Gram",
+      "status": "exact"
+    },
+    {
+      "identity": "all-centre vector sum = 3+16(c^2-1/4)^2",
+      "status": "exact"
+    },
+    {
+      "identity": "original right derivative c'=q_alpha/4, (|q|^2)'=-2c q_alpha",
+      "status": "exact"
+    },
+    {
+      "identity": "two finite trigonometric sums",
+      "status": "exact",
+      "odd_n_tested": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33
+      ],
+      "general_proof": "PS57 finite geometric series covers every n>=5"
+    },
+    {
+      "identity": "original physical face incidences and disjoint selected derivatives",
+      "status": "exact",
+      "boxes": [
+        {
+          "L": 2,
+          "selected_k": 20,
+          "selected_b": 20,
+          "disjoint": true
+        },
+        {
+          "L": 3,
+          "selected_k": 42,
+          "selected_b": 42,
+          "disjoint": true
+        },
+        {
+          "L": 4,
+          "selected_k": 72,
+          "selected_b": 72,
+          "disjoint": true
+        },
+        {
+          "L": 5,
+          "selected_k": 110,
+          "selected_b": 110,
+          "disjoint": true
+        }
+      ],
+      "general_proof": "PS40, PS47 and PS57–PS59"
+    }
+  ],
+  "limitations": "These bounded certificates accompany the general proofs; no numerical sample is substituted for a quantified mathematical argument."
+}
