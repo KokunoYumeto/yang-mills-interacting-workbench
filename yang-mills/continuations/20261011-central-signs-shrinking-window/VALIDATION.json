@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T18:08:47.547884+00:00",
+  "checked_utc": "2026-10-11T18:44:43.395175+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -295,7 +295,7 @@
     },
     {
       "source": "LOWER_SIDE_RETAINED_ENERGY.md",
-      "sha256": "f8931efa553ab7a365fb551c084a1b5f4532638c6b3b4afe5cb7421e588e43d3",
+      "sha256": "8a00da180413abc109ca70410f0872c62f01cc7712146d0716b8dd8e0f533d69",
       "complete_math_blocks": 411,
       "split_to_aligned_wrappers": 0
     },
@@ -325,7 +325,7 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "fbfa3c9944507e9ad4be3d5d19326aa1493ce2300397346534623c7d42e50705",
+      "sha256": "d54f48c5ed45e1b00ff0a029a755212c1b6dbaf75cbb2d272cb9546ba5aec19e",
       "complete_math_blocks": 545,
       "split_to_aligned_wrappers": 0
     },
@@ -409,8 +409,14 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "85586f1637b96fc8ea428f9fa9ea9af06813710c116c6a441df1161343b0c727",
+      "sha256": "b94185487228f11e5a6ecd588a59de4c5fb34771d9dcd9b1daf3698de9dad669",
       "complete_math_blocks": 202,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
+      "sha256": "c2b45dc53e3b3ec567d933eb0b8c85f957c82fbb64e20319c14df9ee442bc320",
+      "complete_math_blocks": 248,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -723,6 +729,16 @@
     {
       "file": "GROUND_GRADIENT_GRAPH.png",
       "sha256": "8189a1a3f453de7d5c547a830e2bbc522fdebb17136c647134d60a2284ceeedc",
+      "visually_inspected": true
+    },
+    {
+      "file": "CONDITIONAL_CURRENT_MAP.png",
+      "sha256": "09ee0f5b7ede54d85c0033aba5baa5b0393dc1b22295465697805b76af169066",
+      "visually_inspected": true
+    },
+    {
+      "file": "OUTSIDE_CURRENT_MAP.png",
+      "sha256": "8bc03854645a3e64c148eb07e320c00b8dff7f4c1140c83734d7a3be0549796e",
       "visually_inspected": true
     }
   ],
@@ -2532,6 +2548,225 @@
       "method": "Four rendered contact sheets visually inspected after final compilation; final source figures also inspected. Complete equations, aligned figures, legible labels, no clipping or missing glyphs in inspected scope.",
       "new_overflows": [],
       "inherited_warnings": "Earlier warnings retained; no assertion that all 691 pages were reinspected."
+    }
+  },
+  "conditional_current_review": {
+    "utc": "2026-10-11T18:34:52.723914+00:00",
+    "coverage": "CG1–CG34 complete owner derivation and review: original disintegration and Hessian covariance; arbitrary signed conditional currents; orthogonal marginal/fluctuation trial families; complete divergence and outside curl; exact projection; joint matrix, all kernels and pseudoinverses; physical residual; exact matrix gain and its null space; original retained potential and marginal Bochner evaluation. Full outside divergence-domain minimization, exact original-Hamiltonian conjugation, direct-integral regularity, filtered current matrix, all kernels and complete physical residual.",
+    "strengthening": "Independent weights on the orthogonal conditional fluctuation enlarge the previous SG space. Exact optimization subtracts a proved nonnegative matrix, with an explicit additional lower-bound term at the old optimizer. This keeps all physical residual norms and every outside current contribution. A further exact minimization over every outside one-form replaces the conditional noise by its full outside resolvent multiplier, without an exterior-mode cutoff. Its original-Hamiltonian map, additional nonnegative gain, zero space, mixed derivatives and both physical residual norms are proved in CG23–CG34. Fixed-regulator small-z limits are not interchanged with the regulator limit.",
+    "limitations": "No value is assigned to the gain along the regulator limit. Marginalization alone does not remove the full drift: the 2p term is explicitly retained. All outside and conditional kinetic derivatives remain in CG22. No positive unscaled response, original-window weight or continuum endpoint is claimed.",
+    "actual_reading": "SG1–SG33 complete original source; BM40–BM43 and LR34–LR36 conditional ground and variance derivations. Original Johnsen/Lo reading is retained via PT source-use ledger; no new external theorem imported. Full outside divergence-domain minimization and physical residual were reviewed in CG23–CG34; no exterior spectral mode or mixed derivative removed.",
+    "routing": "Canonical disk index queried for conditional expectation/ground state and conditional covariance/Schur before derivation;12 original-TeX routing hits, none represented as read. No literature PDF.",
+    "diagnostics": {
+      "numerical_checks": 1439,
+      "curved_conditional_density_checks": 95,
+      "matrix_checks": 672,
+      "outside_correction_checks": 672,
+      "worst_relative_residual": 2.3634232220033078e-15,
+      "samples": [
+        {
+          "parameters": [
+            0.3,
+            -0.2,
+            0.4
+          ],
+          "partition": 1.0768914956502562,
+          "old_matrix": 0.00010795786340546591,
+          "schur_matrix": 7.031046294660608e-05,
+          "scope": "Manufactured smooth SU(2)^2 density with original radius2 metric; not the Yang–Mills state."
+        },
+        {
+          "parameters": [
+            -0.6,
+            0.5,
+            -0.3
+          ],
+          "partition": 1.4221256042062824,
+          "old_matrix": 0.00047033759584306806,
+          "schur_matrix": 0.0004489047218081586,
+          "scope": "Manufactured smooth SU(2)^2 density with original radius2 metric; not the Yang–Mills state."
+        },
+        {
+          "parameters": [
+            0.8,
+            0.2,
+            0.1
+          ],
+          "partition": 1.3955662811972434,
+          "old_matrix": 0.0006433249297584331,
+          "schur_matrix": 0.0006403071248364321,
+          "scope": "Manufactured smooth SU(2)^2 density with original radius2 metric; not the Yang–Mills state."
+        },
+        {
+          "parameters": [
+            0.02,
+            -0.01,
+            0.9
+          ],
+          "partition": 1.1085832130637128,
+          "old_matrix": 0.00021408430080720122,
+          "schur_matrix": 4.6439835328570285e-05,
+          "scope": "Manufactured smooth SU(2)^2 density with original radius2 metric; not the Yang–Mills state."
+        },
+        {
+          "parameters": [
+            0.4,
+            0.3,
+            0.0
+          ],
+          "partition": 1.131595259373123,
+          "old_matrix": 0.00015079142630862198,
+          "schur_matrix": 0.00015079142630862198,
+          "scope": "Manufactured smooth SU(2)^2 density with original radius2 metric; not the Yang–Mills state."
+        },
+        {
+          "parameters": [
+            0.0,
+            0.3,
+            0.0
+          ],
+          "partition": 1.0456800853497406,
+          "old_matrix": 0.0,
+          "schur_matrix": 0.0,
+          "scope": "Manufactured smooth SU(2)^2 density with original radius2 metric; not the Yang–Mills state."
+        }
+      ],
+      "scope": "Curved disintegration checks and finite matrix diagnostics, including singular fluctuation blocks. These are not samples of the actual Yang–Mills ground. CG1–CG34 contain the complete proofs."
+    },
+    "figure_inspected": true,
+    "novelty_claim": false,
+    "status": "Accepted; compile and publication pending.",
+    "figure_repair": "Outside figure bottom margin increased to separate its spectral-energy axis label from the caption; every parameter and formula retained.",
+    "public_proofs": [
+      {
+        "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
+        "prefix": "CG",
+        "owner_sha256": "9f439499b723dda31b9c388a8cdec16db49cd220d9ccf3c0994b2173ef0a634a",
+        "public_sha256": "c2b45dc53e3b3ec567d933eb0b8c85f957c82fbb64e20319c14df9ee442bc320",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-11T18:44:43.395175+00:00",
+      "tex_sha256": "b67505e22456eaef4401bb525b9b4101a73d5971962be2c28a7c936c375d367b",
+      "pdf_sha256": "66325121baa35d6483e2693d80e36797895dae3b6adfec11bf8151845436c0b8",
+      "pages": 703,
+      "source_files": 69,
+      "math_blocks": 17308,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "complete": true,
+        "utc": "2026-10-11T18:44:43.149750+00:00",
+        "pages": 703,
+        "new_proof_pages": [
+          694,
+          695,
+          696,
+          697,
+          698,
+          699,
+          700,
+          701,
+          702,
+          703
+        ],
+        "propagation_pages": [
+          488,
+          489,
+          544,
+          545,
+          546,
+          693
+        ],
+        "inspected_pages": [
+          488,
+          489,
+          544,
+          545,
+          546,
+          693,
+          694,
+          695,
+          696,
+          697,
+          698,
+          699,
+          700,
+          701,
+          702,
+          703
+        ],
+        "result": "All new proof pages and changed receiving notes visually inspected. The BM receiving paragraph was moved intact to545; final rerender changed only544,545,546, all reinspected. Other inspected page pixels remained identical. No new clipping, overflow, missing glyph or figure overlap.",
+        "figures": [
+          "CONDITIONAL_CURRENT_MAP.png",
+          "OUTSIDE_CURRENT_MAP.png"
+        ],
+        "figure_repair": "Outside figure spectral-energy axis and footer separated by a larger bottom margin; final source figure inspected.",
+        "scope": "Final new and changed scope, not a repeated review of all703 pages. Earlier inherited warnings remain."
+      }
+    },
+    "pending": "Archive and verified publication."
+  },
+  "conditional_current_compile": {
+    "utc": "2026-10-11T18:44:43.395175+00:00",
+    "tex_sha256": "b67505e22456eaef4401bb525b9b4101a73d5971962be2c28a7c936c375d367b",
+    "pdf_sha256": "66325121baa35d6483e2693d80e36797895dae3b6adfec11bf8151845436c0b8",
+    "pages": 703,
+    "source_files": 69,
+    "math_blocks": 17308,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "complete": true,
+      "utc": "2026-10-11T18:44:43.149750+00:00",
+      "pages": 703,
+      "new_proof_pages": [
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703
+      ],
+      "propagation_pages": [
+        488,
+        489,
+        544,
+        545,
+        546,
+        693
+      ],
+      "inspected_pages": [
+        488,
+        489,
+        544,
+        545,
+        546,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703
+      ],
+      "result": "All new proof pages and changed receiving notes visually inspected. The BM receiving paragraph was moved intact to545; final rerender changed only544,545,546, all reinspected. Other inspected page pixels remained identical. No new clipping, overflow, missing glyph or figure overlap.",
+      "figures": [
+        "CONDITIONAL_CURRENT_MAP.png",
+        "OUTSIDE_CURRENT_MAP.png"
+      ],
+      "figure_repair": "Outside figure spectral-energy axis and footer separated by a larger bottom margin; final source figure inspected.",
+      "scope": "Final new and changed scope, not a repeated review of all703 pages. Earlier inherited warnings remain."
     }
   }
 }
