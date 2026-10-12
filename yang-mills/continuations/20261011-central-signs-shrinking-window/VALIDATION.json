@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T09:34:54.819885+00:00",
+  "checked_utc": "2026-10-12T09:54:11.883139+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -409,8 +409,8 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "8b67a684062daa150554679cc31e6e400cd92a45e0a52989b5e0153f9167cc4c",
-      "complete_math_blocks": 216,
+      "sha256": "13ca7c9126bc969ee7b498fabefa79aa27ee7ec01577eb4968f405188bd088af",
+      "complete_math_blocks": 218,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -523,8 +523,8 @@
     },
     {
       "source": "TWO_SIDED_CURRENT_RESIDUAL.md",
-      "sha256": "13119240358710195ac673c67dbad4af7ac5331ab4ad79e1ec7b419a98f3a486",
-      "complete_math_blocks": 132,
+      "sha256": "71d8828f71643a86688def65c7514728d2ebb38e3d88cf82a8670086fb196b5e",
+      "complete_math_blocks": 134,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -535,14 +535,20 @@
     },
     {
       "source": "CENTERED_CURRENT_COVARIANCE.md",
-      "sha256": "7e2e61af22fca31c0fab00506394afb82cb1df3949d3f449a8fa57b25b3ca4d7",
-      "complete_math_blocks": 238,
+      "sha256": "06ee83c9872c1a037bcc838f916d24c0f7b4c36186afcc011b3188d5b46e81b0",
+      "complete_math_blocks": 240,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "33c60084fedb4fc8999487ebcdfdd84acafda7f87b575b5fdf57ff77a5f33010",
-      "complete_math_blocks": 229,
+      "sha256": "2f931cd85108ac41af4c4edb026b54e92c93f4b60ad4918554d210eecd479b90",
+      "complete_math_blocks": 231,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "QUANTITATIVE_FORCE_CURL.md",
+      "sha256": "98ee52fe4a0f667b25deef89e720e6bb4d3fa54d2b8c4b2a4b8301456cc1d6fa",
+      "complete_math_blocks": 185,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1055,6 +1061,16 @@
     {
       "file": "FORCE_GRAPH_AND_RESIDUAL_GAIN.png",
       "sha256": "320d474ac32b39c7b0acfa373c959b2808413a52f056bf5eccd386e9f71764db",
+      "visually_inspected": true
+    },
+    {
+      "file": "FORCE_CURL_PATCH_GEOMETRY.png",
+      "sha256": "78a55331fe4d34ad4626f27b77b7af7450c0ed562096a9fca8d130d95f35f744",
+      "visually_inspected": true
+    },
+    {
+      "file": "FORCE_CURL_ORIGINAL_PATH.png",
+      "sha256": "15398c14d729139d5ded1dd8b6710c17b661d1d5f2d668298076fc0df8c98164",
       "visually_inspected": true
     }
   ],
@@ -6428,6 +6444,132 @@
         "FORCE_GRAPH_AND_RESIDUAL_GAIN.png"
       ],
       "findings": "All24 new proof and changed receiving/adjacent pages visually inspected. DF1–21 formulas, complete domains, captions, face orientation and figures legible. No new clipping, overlap, overflow or missing glyph. Inherited59 overfull warnings and one earlier missing delta remain; cumulative PDF local QA only. Final rebuilt page914 reinspected after whitespace-only joining of the DF20 line; equation and layout correct. Pagination and all24 rendered page locators unchanged."
+    }
+  },
+  "quantitative_curl_review": {
+    "utc": "2026-10-12T09:51:54.422071+00:00",
+    "coverage": "QCF1–QCF16 fully derived and reviewed: original ordered SU(2) mixed Hessians and inverse signs; complete second face moment; Haar codifferential and both weighted drift terms; all original coface neighbors and outside scores; exact patch graph constant and attaining unscaled field; original-path coefficient limits and full receiving residual gain.",
+    "strengthening": "DF15 strict finite force-curl removal now has an explicit matrix floor m_CQ(a), with m_CQ(a)/a³ tending to pi²/(32 kappa_* R²). The complete face graph constant is exactly16sin²(pi/(2q)); preserving both transverse directions and the full six-pair identity strengthens the initial one-direction lower estimate by factor4.",
+    "correction": "No omitted inverse signs, two-form factor, face second moment, patch endpoints, outside drift score or raw coefficient norm. The limit is for a proved bound constant, not an asserted actual matrix eigenvalue asymptotic. DF16 retains its complete coefficient dependence and both additional nonnegative terms.",
+    "limitations": "The remaining collective signed source, full matrix and physical residual still require evaluation. No surviving original spectral-window mass or smooth interacting no-gap endpoint is assigned.",
+    "actual_reading": "Canonical disk index queried and routing recorded before derivation. Current DF1–DF21 read in full; SOM1–SOM5 and retained CFC source/patch constants checked. No new external reading claimed.",
+    "diagnostics": {
+      "checks": 6872,
+      "all_passed": true,
+      "scope": "Exact original ordered SU(2) derivatives with inverse signs, full third Casimir derivatives, curl and codifferential identities, complete lattice boundary matrices, exact sharp patch eigenvalues and original-path bound constants. No vacuum sampling or no-gap claim."
+    },
+    "figures_inspected": [
+      "FORCE_CURL_PATCH_GEOMETRY.png",
+      "FORCE_CURL_ORIGINAL_PATH.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "QUANTITATIVE_FORCE_CURL.md",
+        "prefix": "QCF",
+        "tags": 16,
+        "owner_sha256": "ef3535de6a6a5059532c8e123289665725b3f0db1df74f46e2cb9a93321dd573",
+        "public_sha256": "98ee52fe4a0f667b25deef89e720e6bb4d3fa54d2b8c4b2a4b8301456cc1d6fa",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T09:54:11.883139+00:00",
+      "tex_sha256": "d76335faeada069fef3b9efdc1a6cb75f5064be49a17b5c4cf0151c4967fb52a",
+      "pdf_sha256": "657d62d5d842b8d99a7283efd61da5d8a8b01507de4fe8e7ae2f7e3026173a7f",
+      "pages": 928,
+      "source_files": 91,
+      "math_blocks": 21149,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "rendered_pages": [
+          712,
+          713,
+          714,
+          887,
+          888,
+          889,
+          908,
+          909,
+          910,
+          919,
+          920,
+          921,
+          922,
+          923,
+          924,
+          925,
+          926,
+          927,
+          928
+        ],
+        "figures_inspected": [
+          "FORCE_CURL_PATCH_GEOMETRY.png",
+          "FORCE_CURL_ORIGINAL_PATH.png"
+        ],
+        "complete": true,
+        "utc": "2026-10-12T09:54:11.8217855Z",
+        "findings": "All19 new proof and changed receiving/adjacent pages inspected, including the exact patch mode, full boundary terms, finite constants and complete gain. Both full-size figures inspected. No new clipping, overlap, overflow or missing glyph. Inherited59 warnings and one earlier missing delta remain; cumulative PDF local QA only.",
+        "pages": 928,
+        "contact_sheets_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  "quantitative_curl_compile": {
+    "utc": "2026-10-12T09:54:11.883139+00:00",
+    "tex_sha256": "d76335faeada069fef3b9efdc1a6cb75f5064be49a17b5c4cf0151c4967fb52a",
+    "pdf_sha256": "657d62d5d842b8d99a7283efd61da5d8a8b01507de4fe8e7ae2f7e3026173a7f",
+    "pages": 928,
+    "source_files": 91,
+    "math_blocks": 21149,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "rendered_pages": [
+        712,
+        713,
+        714,
+        887,
+        888,
+        889,
+        908,
+        909,
+        910,
+        919,
+        920,
+        921,
+        922,
+        923,
+        924,
+        925,
+        926,
+        927,
+        928
+      ],
+      "figures_inspected": [
+        "FORCE_CURL_PATCH_GEOMETRY.png",
+        "FORCE_CURL_ORIGINAL_PATH.png"
+      ],
+      "complete": true,
+      "utc": "2026-10-12T09:54:11.8217855Z",
+      "findings": "All19 new proof and changed receiving/adjacent pages inspected, including the exact patch mode, full boundary terms, finite constants and complete gain. Both full-size figures inspected. No new clipping, overlap, overflow or missing glyph. Inherited59 warnings and one earlier missing delta remain; cumulative PDF local QA only.",
+      "pages": 928,
+      "contact_sheets_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     }
   }
 }

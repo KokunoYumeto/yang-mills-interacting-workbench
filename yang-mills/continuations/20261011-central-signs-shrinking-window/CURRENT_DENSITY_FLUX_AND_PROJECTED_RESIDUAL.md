@@ -454,3 +454,18 @@ Here \(\nu_{X,j}\) is the original spectral measure of \(X\psi\) for \(H_j-E_{0,
 ![Original ordered face, exact force-Hessian signs, and residual identities in explicitly auxiliary finite matrices. DF13–DF16.](FORCE_GRAPH_AND_RESIDUAL_GAIN.png)
 
 The face arrows show ordered traversal; their signs are relative to the original positive-edge orientation. The matrix plot tests the complete identity and is not Yang–Mills spectral data. Every exterior Hessian pair and raw coefficient remains in the proof. [Reproducible symbolic, curved, incidence and operator checks](check_density_flux.py) and the [source-use record](DENSITY_FLUX_SOURCE_USE_LEDGER.json) accompany the full derivation.
+
+## Quantitative force curl on the original patch
+
+[QCF1–QCF16](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/QUANTITATIVE_FORCE_CURL.md) calculate the full ordered SU(2) mixed-face Hessian and weighted codifferential. They retain both inverse signs, the complete second face moment, every coface neighbor and outside score. The complete original face graph has the exact patch constant
+\[
+\mathcal G(c)\ge16\sin^2\!\left(\frac{\pi}{2q}\right)\|c\|^2,
+\qquad q=\lceil R/a\rceil+3,
+\]
+with an explicit unscaled attaining field. The actual projected-current matrix then satisfies
+\[
+\mathsf Z-\mathsf Z_\star\ge m_{C,Q}(a)I,\qquad
+\frac{m_{C,Q_j}(a_j)}{a_j^3}
+\longrightarrow\frac{\pi^2}{32\kappa_*R^2}.
+\]
+The finite constant is given completely in QCF14, and the limit concerns that proved lower bound. QCF16 propagates it into the exact optimized residual gain while retaining its raw coefficient norm and both remaining positive terms. The collective signed source and physical residual still determine the original spectral window; no limiting mass or smooth interacting no-gap endpoint is assumed.
