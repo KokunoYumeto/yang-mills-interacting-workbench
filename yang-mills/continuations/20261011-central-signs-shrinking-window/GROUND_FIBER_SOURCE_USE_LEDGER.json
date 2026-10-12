@@ -1,0 +1,192 @@
+[
+  {
+    "source_id": "arxiv:2105.02058v1",
+    "canonical_index_match": null,
+    "authors": [
+      "Geneviève Dusson",
+      "Israel Michael Sigal",
+      "Benjamin Stamm"
+    ],
+    "title": "The Feshbach–Schur map and perturbation theory",
+    "version": "v1, 5 May 2021",
+    "url": "https://arxiv.org/abs/2105.02058v1",
+    "source_url": "https://arxiv.org/src/2105.02058v1",
+    "archive_sha256": "a4509293255e0f0239c8aa49edc01d5246feee16735eeb54a45e990b598f6b8f",
+    "original_file": "AriFestFSM_arxiv.tex",
+    "file_sha256": "e6c45f423055bb91eafb0c85c387657d70f89a0f7b71aabb2ea0282ef8649f89",
+    "actual_reading": "Original author TeX lines284–513 read, including setup, finite-rank hypotheses, abstract map statement and reconstruction, effective interaction and derivative formulas. Core formulas at398–473. The cited general proof is referenced by that paper, not included there; the present infinite-rank form construction is proved completely in GF3–GF14. Helium applications and remaining perturbation proofs not read.",
+    "application": "Human provenance of the Feshbach–Schur method; no finite-rank perturbation theorem imported into the present outside Hilbert space.",
+    "routing": "Canonical index first,24 broad routes plus exact arXiv/title query with no match. Extended to openly accessible original author TeX; intact archive retained privately. No literature PDF read."
+  },
+  {
+    "source_id": "programme:GF-RO-20261012",
+    "proofs": [
+      {
+        "source": "FULL_HAMILTONIAN_GROUND_FIBER.md",
+        "prefix": "GF",
+        "tags": 32,
+        "owner_sha256": "d7110161e61de5f730895a297b35d990a39d68013cf7891bde73d87c491cbd3d",
+        "public_sha256": "ca03f98d063b9df75c7b38f52d5ec3ddadd922b53e495f31ae2dc5b9feaa084b",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      },
+      {
+        "source": "RAW_OVERLAP_AND_ORIGINAL_METRIC.md",
+        "prefix": "RO",
+        "tags": 17,
+        "owner_sha256": "793ccc872f0c6d711714b9f056ff272b34d2e6abcf7c5db47e19783662609b31",
+        "public_sha256": "2c97482223766199b707d56bfb8b2eb371e67899ff2561c4fa84b1996614cb5b",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "ACTUAL_EDGE_ENERGY_VARIANCE.md",
+        "version": "b00c8daade155396db839be52c4832d17460ae62",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b00c8daade155396db839be52c4832d17460ae62/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_EDGE_ENERGY_VARIANCE.md",
+        "sha256": "8f0fe98c8ac9846812731e5c2aa3acfea642df4c62ee277be0797467bd0a9eae"
+      },
+      {
+        "source": "LOCAL_CURVATURE_BUDGET.md",
+        "version": "b00c8daade155396db839be52c4832d17460ae62",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b00c8daade155396db839be52c4832d17460ae62/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CURVATURE_BUDGET.md",
+        "sha256": "89f4296eb7360429c570eece9a9cb517846682169cb7ed32104a579c0d05e343"
+      },
+      {
+        "source": "SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
+        "version": "b00c8daade155396db839be52c4832d17460ae62",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b00c8daade155396db839be52c4832d17460ae62/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
+        "sha256": "936f12bb3cab7b0686afd11c860131fb075dafbaf4ba3f57ff3ddad9ca00ce1a"
+      },
+      {
+        "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
+        "version": "b00c8daade155396db839be52c4832d17460ae62",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b00c8daade155396db839be52c4832d17460ae62/yang-mills/continuations/20261011-central-signs-shrinking-window/SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
+        "sha256": "e7dbdcaba5a83105f9c3c9671488759deeb3ce1a4c07464a07cf1a3d50b6e29d"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-12T00:47:30.917473+00:00",
+      "coverage": "GF1–GF31 and GF22a: smooth original fiber family through zero sum, full outside derivative block, all domains and form inverses, finite complementary lower bound, raw ground and source residue, exact radial/angular metric, sharp actual zero-sum coupling, aligned and actual-marginal derivative bounds. RO1–RO17: original geodesic metric and Haar isometry with all prefactors, Jacobian derivatives and scalar potential, compactness and exact Gaussian comparison, positive variational overlap constant, actual local energy and bad-region budget, raw-measure lower bounds, and separate energy convergence strengthening all limiting constants.",
+      "strengthening": "The original full-Hamiltonian coupling is now explicit. Positive local raw overlap and its derivative contribution are proved in the actual vacuum. RO16–RO17 strengthen GF30 to the exact aligned limit9/(8sqrt(m)), double GF31 to27R³/16, and double the first raw-derivative coefficient. The zero-sum coupling bound is sharp on actual path configurations for m2,3,4.",
+      "limitations": "No numerical value assigned to the positive variational overlap constant. Character comparisons are finite Rayleigh compressions, not original full-vacuum samples. These results do not evaluate the complete complementary inverse in the original shrinking physical window and do not prove surviving spectral mass, continuum reconstruction or the no-gap endpoint.",
+      "actual_reading": "Complete EV1–EV29, LC1–LC3 and LC14–LC18 read directly; earlier WH and SF readings retained. Original Dusson–Sigal–Stamm TeX lines284–513 read, with exact coverage recorded separately. Full owner derivations and all receiving substitutions reviewed.",
+      "diagnostics": [
+        {
+          "file": "GROUND_FIBER_CHECKS.json",
+          "checks": 1493,
+          "all_passed": true,
+          "scope": "Original path/metric identities, character-compression diagnostics and finite block models. No full Yang–Mills vacuum samples."
+        },
+        {
+          "file": "RAW_OVERLAP_CHECKS.json",
+          "checks": 460,
+          "all_passed": true,
+          "scope": "Exact original-coordinate integral checks and one-edge character-compression comparisons. No full-vacuum samples and no computed value of the variational overlap constant."
+        }
+      ],
+      "figures_inspected": [
+        "GROUND_FIBER_FULL_OPERATOR_MAP.png",
+        "GROUND_FIBER_DERIVATIVE_BOUNDS.png",
+        "RAW_OVERLAP_COORDINATE_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "FULL_HAMILTONIAN_GROUND_FIBER.md",
+          "prefix": "GF",
+          "tags": 32,
+          "owner_sha256": "d7110161e61de5f730895a297b35d990a39d68013cf7891bde73d87c491cbd3d",
+          "public_sha256": "ca03f98d063b9df75c7b38f52d5ec3ddadd922b53e495f31ae2dc5b9feaa084b",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        },
+        {
+          "source": "RAW_OVERLAP_AND_ORIGINAL_METRIC.md",
+          "prefix": "RO",
+          "tags": 17,
+          "owner_sha256": "793ccc872f0c6d711714b9f056ff272b34d2e6abcf7c5db47e19783662609b31",
+          "public_sha256": "2c97482223766199b707d56bfb8b2eb371e67899ff2561c4fa84b1996614cb5b",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-12T01:09:27.392844+00:00",
+        "tex_sha256": "244c09ff8fab52094f778ce5e2ac8f2d0dbaf82406af86f53cd57272a817db2a",
+        "pdf_sha256": "122cdf6831fc2af7afc143cefe9c7c35e340f0e76d8b1ce7888abad308809aa6",
+        "pages": 813,
+        "source_files": 81,
+        "math_blocks": 19291,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-12T01:09:26.947126+00:00",
+          "complete": true,
+          "pages": 813,
+          "inspected_pages": [
+            329,
+            330,
+            331,
+            780,
+            781,
+            782,
+            798,
+            799,
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813
+          ],
+          "initial_pages_inspected": 23,
+          "final_pages_inspected": 22,
+          "final_changed_pages_inspected": [
+            330,
+            781,
+            799,
+            806,
+            813
+          ],
+          "unchanged_final_pages_verified_by_sha256": true,
+          "images": {
+            "page-329.png": "eceafdd2cbd005b496eef0ad8631ffdc04036f462c33f50cc96d05b2b723ab9a",
+            "page-330.png": "be341ec5f0b127151ac14fc5680767cb9b2f35b86b66c35f6ef29926f7996f43",
+            "page-331.png": "b2840616ab30d6a307e6d159935e54bc6a6853dc0a21291463b239146bdfeb5c",
+            "page-780.png": "c76c8d34940e6ce524ecdc14c551ba06b16e2b4165738c4c5d6c3f2322fb13f0",
+            "page-781.png": "502a850702766c166648cf336b4fecb491221f49056245c3896c739b419fb602",
+            "page-782.png": "65005a3861a94049a653e8e9c307233b13e4d44e6439f924de7ec03842e99b70",
+            "page-798.png": "1c1549a19305db9ea4375b57e62c083f5d55c5d0075303fa81dddc0572c3c99a",
+            "page-799.png": "5850df9c17391e5e8e3dcf39cdeda10842ab361f5a64592aa4b51c33210f74fb",
+            "page-800.png": "25486f2dc4396df98ad60395ff7adb4d6a9b0631e25609e606eb5f62947cedc1",
+            "page-801.png": "292ef4267885851ded481c49dc4ff6406277adc70e7c0bf274789f01aa9d3703",
+            "page-802.png": "9ff59311634509e179c1db766a6ab9ec53bb909499d2e1ab3db7b10640adef6a",
+            "page-803.png": "125930c00cf8781d559f80b0595091a548315df094d66d0d7b16eea2a8206490",
+            "page-804.png": "63c52aaf036a39f17fe275fc9b307d935943ad525ecf8b72a86dba2320134227",
+            "page-805.png": "665a4128da9fd0dc2d25857e92bb1c283f64f976e20b0afb8edd0a874618a8ce",
+            "page-806.png": "b21665161957d06ea91206baeb910b388af2fc0658c81bb147dae134ffd51c2f",
+            "page-807.png": "adb33ce525d64dc59455ea6c0cb89fa72b20932464d635539562e5aedb261ff3",
+            "page-808.png": "d334a450316e83f5f0098395b846fa53cf2b91727137d571aba8a837e6440d22",
+            "page-809.png": "8401b4e2c4aebb352393c71e72a31e93ad0af7d8f86b2fef4647bfa86eabdbe2",
+            "page-810.png": "83a17662e419a80e386d3566be1b9d5861d9e5a007fc48160843fe8a552eaecc",
+            "page-811.png": "5c3991ca292d3992fe4fc7ac76fc0bb3313006fa29cb00d1b72093f796f709ba",
+            "page-812.png": "bb4f5dc8127584284b2cc47fa96c4b0f70bd0fc4f497ca2a7bb9cfe5b6451fa2",
+            "page-813.png": "fce5a088dba471cfdb923706449ef6e266348702c782d21031867dbcc1d8a54a"
+          },
+          "findings": "All new proof pages and three receiving notes plus adjacent pages inspected. Repaired one9.76886pt equation overflow by adding a row break, preserving all formula tokens. Shortened the linked diagnostic paragraph to remove an orphan final page. Inspected all five changed final pages; other final images match their inspected earlier render. No new overflow or missing glyph. Inherited59 earlier overfull warnings and one earlier missing delta remain; reader PDF local QA only."
+        }
+      }
+    }
+  }
+]
