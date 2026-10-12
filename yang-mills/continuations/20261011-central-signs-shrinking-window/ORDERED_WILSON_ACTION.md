@@ -260,3 +260,23 @@ In OW17 the selected representatives must be measurable with finite fourth momen
 ![The two retained norm bounds and the exact twice-vanishing derivative locus](ORDERED_WILSON_REVIEW.png)
 
 The figure records OW24–OW25 and UR8/UR13. It is a schematic of exact bounds, with no numerical or vacuum-concentration data. The complete original human source comparison remains OW1–OW4 and UR1–UR6; draw_ordered_review.py reproduces the figure.
+
+## Complete residual and exact stereographic current
+
+[TCR1–TCR21](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/TWO_SIDED_CURRENT_RESIDUAL.md) give complete two-sided bounds for the original filtered response and its signed three-shift window. They retain the actual least-squares defect and the original uncut trial metric. Projection orthogonality and a direct singular-value estimate prove
+\[
+\|\widetilde c\|\le\sqrt{2q_R/\gamma},\qquad
+\sqrt{\kappa_*/z}\,\epsilon_R\|\widetilde c\|
+=O\!\left(a_j^{\rho-3}\sqrt{\log(1/a_j)}\right).
+\]
+With the original CTI13 cutoff, every \(\rho>9/2\) makes this cutoff contribution \(o(a_j^{3/2})\); the interacting residual remains to be evaluated.
+
+[SC1–SC24](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/STEREOGRAPHIC_CURRENT_AND_CUBIC.md) supply the exact stereographic coordinate, density, radius-two metric and state maps for those integrals. Gauge invariance proves that each unfixed original link has a Haar marginal: its stereographic moments are finite exactly below order three. SC8–SC15 retain every rational face term and prove that the local density approximation in Chatterjee, [arXiv:2401.10507v4](https://arxiv.org/abs/2401.10507v4), label “approxdens”, omits a cubic nonabelian contribution. The full-density counterexample and corrected expression are proved without claiming that the source's main scaling theorem fails. This extends OW's ordered-action comparison and prevents an invalid polynomial-moment substitution in the current calculation. Actual window values, reconstruction, intended-theory identification and the smooth global no-gap endpoint remain active work.
+
+The subsequent calculation [SC18–SC24](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/STEREOGRAPHIC_CURRENT_AND_CUBIC.md) evaluates all five rational action terms in the actual vacuum, including with bounded gauge-invariant score multipliers. Its original four-link tensor average is
+\[
+\mu(q_1^a q_2^b q_3^c q_4^d)
+=\frac{\mu\operatorname{Tr}U_p}{128}\,
+\frac12\operatorname{Tr}(E_aE_bE_cE_d).
+\]
+This determines every signed term in SC10 and their exact cancellation on the original coupling path. SC24 also gives the full force pairing in original staple-loop and two-plaquette expectations, with all orientations, original coefficients and remaining mixed score moments retained. These identities evaluate gauge averages; they do not yet evaluate the complete residual or establish the no-gap endpoint.

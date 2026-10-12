@@ -1,0 +1,2719 @@
+{
+  "checks": 456,
+  "all_passed": true,
+  "scope": "Finite positive operators verify full residual, two-sided response and signed window bounds; coupled radius-two sphere densities independently verify the complete force/score source identity and least-squares defect. High-precision constants check the explicit cutoff tolerance. These models are not original Yang-Mills spectral or vacuum values.",
+  "results": [
+    {
+      "name": "complete residual square 0",
+      "passed": true,
+      "lhs": 19.610290119873447,
+      "rhs": 19.610290119873447
+    },
+    {
+      "name": "full inverse residual identity 0",
+      "passed": true,
+      "lhs": 6.57028663457703e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 0",
+      "passed": true,
+      "lhs": 2.0823901998413117,
+      "rhs": 2.3513376649726587
+    },
+    {
+      "name": "uncut lower response 0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 7.012268204832498
+    },
+    {
+      "name": "uncut upper response 0",
+      "passed": true,
+      "lhs": 7.012268204832498,
+      "rhs": 10.275792779866249
+    },
+    {
+      "name": "cutoff pairing error 0",
+      "passed": true,
+      "lhs": 25.398224710832434,
+      "rhs": 306.08852172689444
+    },
+    {
+      "name": "cutoff Gram error 0",
+      "passed": true,
+      "lhs": 4371.734860868173,
+      "rhs": 40753.3174465845
+    },
+    {
+      "name": "cutoff least-squares defect 0",
+      "passed": true,
+      "lhs": 19.495777145590278,
+      "rhs": 19.495777145590278
+    },
+    {
+      "name": "complete cutoff residual 0",
+      "passed": true,
+      "lhs": 4.485163323494997,
+      "rhs": 5.768790497362627
+    },
+    {
+      "name": "cutoff lower physical response 0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 7.012268204832498
+    },
+    {
+      "name": "cutoff upper physical response 0",
+      "passed": true,
+      "lhs": 7.012268204832498,
+      "rhs": 16.482888364185143
+    },
+    {
+      "name": "signed lower response uses upper subtractions 0",
+      "passed": true,
+      "lhs": -29.341059401714805,
+      "rhs": -5.525172691048957
+    },
+    {
+      "name": "signed upper response uses lower subtractions 0",
+      "passed": true,
+      "lhs": -5.525172691048957,
+      "rhs": 10.275792779866249
+    },
+    {
+      "name": "full original-window lower receiver 0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 6.540851038992305
+    },
+    {
+      "name": "complete residual square 1",
+      "passed": true,
+      "lhs": 10.325780871428345,
+      "rhs": 10.325780871428345
+    },
+    {
+      "name": "full inverse residual identity 1",
+      "passed": true,
+      "lhs": 6.509441829625186e-14,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 1",
+      "passed": true,
+      "lhs": 33.84920795240231,
+      "rhs": 65.75712454106989
+    },
+    {
+      "name": "uncut lower response 1",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 20.751792079919195
+    },
+    {
+      "name": "uncut upper response 1",
+      "passed": true,
+      "lhs": 20.751792079919195,
+      "rhs": 82.34663058986717
+    },
+    {
+      "name": "cutoff pairing error 1",
+      "passed": true,
+      "lhs": 94.67015433980416,
+      "rhs": 374.54843553072516
+    },
+    {
+      "name": "cutoff Gram error 1",
+      "passed": true,
+      "lhs": 7668.630611823439,
+      "rhs": 74700.00990316492
+    },
+    {
+      "name": "cutoff least-squares defect 1",
+      "passed": true,
+      "lhs": 12.33202587817841,
+      "rhs": 12.332025878178403
+    },
+    {
+      "name": "complete cutoff residual 1",
+      "passed": true,
+      "lhs": 3.8034405853656685,
+      "rhs": 7.374512246374332
+    },
+    {
+      "name": "cutoff lower physical response 1",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 20.751792079919195
+    },
+    {
+      "name": "cutoff upper physical response 1",
+      "passed": true,
+      "lhs": 20.751792079919195,
+      "rhs": 423.1018347546873
+    },
+    {
+      "name": "signed lower response uses upper subtractions 1",
+      "passed": true,
+      "lhs": -263.94050150134825,
+      "rhs": 5.688928382739366
+    },
+    {
+      "name": "signed upper response uses lower subtractions 1",
+      "passed": true,
+      "lhs": 5.688928382739366,
+      "rhs": 82.34663058986717
+    },
+    {
+      "name": "full original-window lower receiver 1",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 138.84274780414415
+    },
+    {
+      "name": "complete residual square 2",
+      "passed": true,
+      "lhs": 18.43846716977075,
+      "rhs": 18.43846716977081
+    },
+    {
+      "name": "full inverse residual identity 2",
+      "passed": true,
+      "lhs": 1.440361951376473e-14,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 2",
+      "passed": true,
+      "lhs": 13.118850128833763,
+      "rhs": 18.9950891682245
+    },
+    {
+      "name": "uncut lower response 2",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 73.49009117512139
+    },
+    {
+      "name": "uncut upper response 2",
+      "passed": true,
+      "lhs": 73.49009117512139,
+      "rhs": 165.72737842509005
+    },
+    {
+      "name": "cutoff pairing error 2",
+      "passed": true,
+      "lhs": 41.3123318161904,
+      "rhs": 418.39820188937495
+    },
+    {
+      "name": "cutoff Gram error 2",
+      "passed": true,
+      "lhs": 9756.341416578647,
+      "rhs": 69486.64192685182
+    },
+    {
+      "name": "cutoff least-squares defect 2",
+      "passed": true,
+      "lhs": 16.44218491264176,
+      "rhs": 16.44218491264177
+    },
+    {
+      "name": "complete cutoff residual 2",
+      "passed": true,
+      "lhs": 4.498882961213432,
+      "rhs": 9.690672930854275
+    },
+    {
+      "name": "cutoff lower physical response 2",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 73.49009117512139
+    },
+    {
+      "name": "cutoff upper physical response 2",
+      "passed": true,
+      "lhs": 73.49009117512139,
+      "rhs": 784.2619833829133
+    },
+    {
+      "name": "signed lower response uses upper subtractions 2",
+      "passed": true,
+      "lhs": -510.3073555639391,
+      "rhs": 4.321858923860391
+    },
+    {
+      "name": "signed upper response uses lower subtractions 2",
+      "passed": true,
+      "lhs": 4.321858923860391,
+      "rhs": 165.72737842509005
+    },
+    {
+      "name": "full original-window lower receiver 2",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 119.52688506168388
+    },
+    {
+      "name": "complete residual square 3",
+      "passed": true,
+      "lhs": 15.986750357219892,
+      "rhs": 15.986750357220032
+    },
+    {
+      "name": "full inverse residual identity 3",
+      "passed": true,
+      "lhs": 1.5236471308994958e-15,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 3",
+      "passed": true,
+      "lhs": 1.5597931877087157,
+      "rhs": 1.7506411309179026
+    },
+    {
+      "name": "uncut lower response 3",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 16.025282100339517
+    },
+    {
+      "name": "uncut upper response 3",
+      "passed": true,
+      "lhs": 16.025282100339517,
+      "rhs": 29.584292844004473
+    },
+    {
+      "name": "cutoff pairing error 3",
+      "passed": true,
+      "lhs": 80.93468334299237,
+      "rhs": 628.1419165509001
+    },
+    {
+      "name": "cutoff Gram error 3",
+      "passed": true,
+      "lhs": 26030.135414611934,
+      "rhs": 116294.53332832789
+    },
+    {
+      "name": "cutoff least-squares defect 3",
+      "passed": true,
+      "lhs": 15.311749467882771,
+      "rhs": 15.31174946788277
+    },
+    {
+      "name": "complete cutoff residual 3",
+      "passed": true,
+      "lhs": 4.350161283996154,
+      "rhs": 11.600379440759427
+    },
+    {
+      "name": "cutoff lower physical response 3",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 16.025282100339517
+    },
+    {
+      "name": "cutoff upper physical response 3",
+      "passed": true,
+      "lhs": 16.025282100339517,
+      "rhs": 161.80711403931343
+    },
+    {
+      "name": "signed lower response uses upper subtractions 3",
+      "passed": true,
+      "lhs": -70.57945268548121,
+      "rhs": -22.05494995140952
+    },
+    {
+      "name": "signed upper response uses lower subtractions 3",
+      "passed": true,
+      "lhs": -22.05494995140952,
+      "rhs": 29.584292844004473
+    },
+    {
+      "name": "full original-window lower receiver 3",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 15.590183048697101
+    },
+    {
+      "name": "complete residual square 4",
+      "passed": true,
+      "lhs": 20.78151283297353,
+      "rhs": 20.781512832973572
+    },
+    {
+      "name": "full inverse residual identity 4",
+      "passed": true,
+      "lhs": 1.6077256115541506e-13,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 4",
+      "passed": true,
+      "lhs": 173.61320094762766,
+      "rhs": 358.4275682434574
+    },
+    {
+      "name": "uncut lower response 4",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 1061.652192637479
+    },
+    {
+      "name": "uncut upper response 4",
+      "passed": true,
+      "lhs": 1061.652192637479,
+      "rhs": 4551.595856228552
+    },
+    {
+      "name": "cutoff pairing error 4",
+      "passed": true,
+      "lhs": 98.98549085861085,
+      "rhs": 540.4930853635439
+    },
+    {
+      "name": "cutoff Gram error 4",
+      "passed": true,
+      "lhs": 12712.992575448507,
+      "rhs": 116436.01928571389
+    },
+    {
+      "name": "cutoff least-squares defect 4",
+      "passed": true,
+      "lhs": 19.123919938710003,
+      "rhs": 19.123919938710095
+    },
+    {
+      "name": "complete cutoff residual 4",
+      "passed": true,
+      "lhs": 4.913738709382028,
+      "rhs": 19.34232609915825
+    },
+    {
+      "name": "cutoff lower physical response 4",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 1061.652192637479
+    },
+    {
+      "name": "cutoff upper physical response 4",
+      "passed": true,
+      "lhs": 1061.652192637479,
+      "rhs": 81690.63679186665
+    },
+    {
+      "name": "signed lower response uses upper subtractions 4",
+      "passed": true,
+      "lhs": -15023.350396954334,
+      "rhs": 649.8476270215509
+    },
+    {
+      "name": "signed upper response uses lower subtractions 4",
+      "passed": true,
+      "lhs": 649.8476270215509,
+      "rhs": 4551.595856228552
+    },
+    {
+      "name": "full original-window lower receiver 4",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 6307.754115976948
+    },
+    {
+      "name": "complete residual square 5",
+      "passed": true,
+      "lhs": 11.863080031842504,
+      "rhs": 11.863080031842578
+    },
+    {
+      "name": "full inverse residual identity 5",
+      "passed": true,
+      "lhs": 4.1476972333330114e-14,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 5",
+      "passed": true,
+      "lhs": 20.135754445192116,
+      "rhs": 28.622277058229255
+    },
+    {
+      "name": "uncut lower response 5",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 130.95291961941518
+    },
+    {
+      "name": "uncut upper response 5",
+      "passed": true,
+      "lhs": 130.95291961941518,
+      "rhs": 277.1168589298731
+    },
+    {
+      "name": "cutoff pairing error 5",
+      "passed": true,
+      "lhs": 15.386254971321993,
+      "rhs": 396.82041200906804
+    },
+    {
+      "name": "cutoff Gram error 5",
+      "passed": true,
+      "lhs": 14739.916801467789,
+      "rhs": 75294.71585850017
+    },
+    {
+      "name": "cutoff least-squares defect 5",
+      "passed": true,
+      "lhs": 12.826603457161792,
+      "rhs": 12.826603457161788
+    },
+    {
+      "name": "complete cutoff residual 5",
+      "passed": true,
+      "lhs": 3.5734106559087624,
+      "rhs": 9.27641412768084
+    },
+    {
+      "name": "cutoff lower physical response 5",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 130.95291961941518
+    },
+    {
+      "name": "cutoff upper physical response 5",
+      "passed": true,
+      "lhs": 130.95291961941518,
+      "rhs": 1930.600381089285
+    },
+    {
+      "name": "signed lower response uses upper subtractions 5",
+      "passed": true,
+      "lhs": -882.0931599632045,
+      "rhs": -40.41476233515802
+    },
+    {
+      "name": "signed upper response uses lower subtractions 5",
+      "passed": true,
+      "lhs": -40.41476233515802,
+      "rhs": 277.1168589298731
+    },
+    {
+      "name": "full original-window lower receiver 5",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 292.7806777323102
+    },
+    {
+      "name": "complete residual square 6",
+      "passed": true,
+      "lhs": 14.663212199573005,
+      "rhs": 14.663212199573017
+    },
+    {
+      "name": "full inverse residual identity 6",
+      "passed": true,
+      "lhs": 2.6814816597495277e-14,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 6",
+      "passed": true,
+      "lhs": 22.95585837561801,
+      "rhs": 47.49504524445372
+    },
+    {
+      "name": "uncut lower response 6",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 72.61296667581894
+    },
+    {
+      "name": "uncut upper response 6",
+      "passed": true,
+      "lhs": 72.61296667581894,
+      "rhs": 315.89267274860697
+    },
+    {
+      "name": "cutoff pairing error 6",
+      "passed": true,
+      "lhs": 37.70002659226601,
+      "rhs": 425.7413746090257
+    },
+    {
+      "name": "cutoff Gram error 6",
+      "passed": true,
+      "lhs": 10346.720992526074,
+      "rhs": 72912.0665390933
+    },
+    {
+      "name": "cutoff least-squares defect 6",
+      "passed": true,
+      "lhs": 14.483150834767176,
+      "rhs": 14.483150834767182
+    },
+    {
+      "name": "complete cutoff residual 6",
+      "passed": true,
+      "lhs": 4.049939328022956,
+      "rhs": 9.068928916529112
+    },
+    {
+      "name": "cutoff lower physical response 6",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 72.61296667581894
+    },
+    {
+      "name": "cutoff upper physical response 6",
+      "passed": true,
+      "lhs": 72.61296667581894,
+      "rhs": 1755.290502732949
+    },
+    {
+      "name": "signed lower response uses upper subtractions 6",
+      "passed": true,
+      "lhs": -1033.5840486719062,
+      "rhs": -3.1382029399714666
+    },
+    {
+      "name": "signed upper response uses lower subtractions 6",
+      "passed": true,
+      "lhs": -3.1382029399714666,
+      "rhs": 315.89267274860697
+    },
+    {
+      "name": "full original-window lower receiver 6",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 195.1518326153225
+    },
+    {
+      "name": "complete residual square 7",
+      "passed": true,
+      "lhs": 14.087614342001313,
+      "rhs": 14.08761434200147
+    },
+    {
+      "name": "full inverse residual identity 7",
+      "passed": true,
+      "lhs": 8.9939389844064e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 7",
+      "passed": true,
+      "lhs": 1.7380296153704657,
+      "rhs": 1.9495589096646757
+    },
+    {
+      "name": "uncut lower response 7",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 14.512173132166676
+    },
+    {
+      "name": "uncut upper response 7",
+      "passed": true,
+      "lhs": 14.512173132166676,
+      "rhs": 34.96268472736781
+    },
+    {
+      "name": "cutoff pairing error 7",
+      "passed": true,
+      "lhs": 35.65220739636273,
+      "rhs": 308.11036125694824
+    },
+    {
+      "name": "cutoff Gram error 7",
+      "passed": true,
+      "lhs": 5228.94008481947,
+      "rhs": 52025.01771351342
+    },
+    {
+      "name": "cutoff least-squares defect 7",
+      "passed": true,
+      "lhs": 18.142464979539064,
+      "rhs": 18.14246497953909
+    },
+    {
+      "name": "complete cutoff residual 7",
+      "passed": true,
+      "lhs": 4.072015212278847,
+      "rhs": 10.261894659693906
+    },
+    {
+      "name": "cutoff lower physical response 7",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 14.512173132166676
+    },
+    {
+      "name": "cutoff upper physical response 7",
+      "passed": true,
+      "lhs": 14.512173132166676,
+      "rhs": 147.13975317990622
+    },
+    {
+      "name": "signed lower response uses upper subtractions 7",
+      "passed": true,
+      "lhs": -63.818590941439105,
+      "rhs": -15.3143820050039
+    },
+    {
+      "name": "signed upper response uses lower subtractions 7",
+      "passed": true,
+      "lhs": -15.3143820050039,
+      "rhs": 34.96268472736781
+    },
+    {
+      "name": "full original-window lower receiver 7",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 19.697863407843016
+    },
+    {
+      "name": "complete residual square 8",
+      "passed": true,
+      "lhs": 14.566570149327248,
+      "rhs": 14.566570149327244
+    },
+    {
+      "name": "full inverse residual identity 8",
+      "passed": true,
+      "lhs": 5.887846720064157e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 8",
+      "passed": true,
+      "lhs": 1.3448758433609505,
+      "rhs": 2.0367707548818186
+    },
+    {
+      "name": "uncut lower response 8",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 9.13438710336609
+    },
+    {
+      "name": "uncut upper response 8",
+      "passed": true,
+      "lhs": 9.13438710336609,
+      "rhs": 25.0166787202268
+    },
+    {
+      "name": "cutoff pairing error 8",
+      "passed": true,
+      "lhs": 79.1449330800785,
+      "rhs": 287.7640857655795
+    },
+    {
+      "name": "cutoff Gram error 8",
+      "passed": true,
+      "lhs": 8170.386828056932,
+      "rhs": 51408.77877798174
+    },
+    {
+      "name": "cutoff least-squares defect 8",
+      "passed": true,
+      "lhs": 12.645170057868489,
+      "rhs": 12.645170057868489
+    },
+    {
+      "name": "complete cutoff residual 8",
+      "passed": true,
+      "lhs": 3.9373018370224075,
+      "rhs": 6.2785051782719155
+    },
+    {
+      "name": "cutoff lower physical response 8",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 9.13438710336609
+    },
+    {
+      "name": "cutoff upper physical response 8",
+      "passed": true,
+      "lhs": 9.13438710336609,
+      "rhs": 62.31405404828683
+    },
+    {
+      "name": "signed lower response uses upper subtractions 8",
+      "passed": true,
+      "lhs": -70.91224406475415,
+      "rhs": -4.638443617582829
+    },
+    {
+      "name": "signed upper response uses lower subtractions 8",
+      "passed": true,
+      "lhs": -4.638443617582829,
+      "rhs": 25.0166787202268
+    },
+    {
+      "name": "full original-window lower receiver 8",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 43.030868599348594
+    },
+    {
+      "name": "complete residual square 9",
+      "passed": true,
+      "lhs": 11.962433653957659,
+      "rhs": 11.962433653957657
+    },
+    {
+      "name": "full inverse residual identity 9",
+      "passed": true,
+      "lhs": 1.2715653241669682e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 9",
+      "passed": true,
+      "lhs": 0.45162708308805477,
+      "rhs": 0.4826149633326041
+    },
+    {
+      "name": "uncut lower response 9",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 2.9625853828433035
+    },
+    {
+      "name": "uncut upper response 9",
+      "passed": true,
+      "lhs": 2.9625853828433035,
+      "rhs": 4.821753207310798
+    },
+    {
+      "name": "cutoff pairing error 9",
+      "passed": true,
+      "lhs": 115.53607081872784,
+      "rhs": 353.56875831957774
+    },
+    {
+      "name": "cutoff Gram error 9",
+      "passed": true,
+      "lhs": 12441.89918280472,
+      "rhs": 78516.46743885626
+    },
+    {
+      "name": "cutoff least-squares defect 9",
+      "passed": true,
+      "lhs": 11.63081012923919,
+      "rhs": 11.63081012923919
+    },
+    {
+      "name": "complete cutoff residual 9",
+      "passed": true,
+      "lhs": 3.540005830929146,
+      "rhs": 6.213723642264673
+    },
+    {
+      "name": "cutoff lower physical response 9",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 2.9625853828433035
+    },
+    {
+      "name": "cutoff upper physical response 9",
+      "passed": true,
+      "lhs": 2.9625853828433035,
+      "rhs": 14.357419447264132
+    },
+    {
+      "name": "signed lower response uses upper subtractions 9",
+      "passed": true,
+      "lhs": -12.377718901031217,
+      "rhs": -4.624580456253499
+    },
+    {
+      "name": "signed upper response uses lower subtractions 9",
+      "passed": true,
+      "lhs": -4.624580456253499,
+      "rhs": 4.821753207310798
+    },
+    {
+      "name": "full original-window lower receiver 9",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.8325860392768866
+    },
+    {
+      "name": "complete residual square 10",
+      "passed": true,
+      "lhs": 24.654401943574968,
+      "rhs": 24.654401943574968
+    },
+    {
+      "name": "full inverse residual identity 10",
+      "passed": true,
+      "lhs": 1.660635344387529e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 10",
+      "passed": true,
+      "lhs": 0.567870392690382,
+      "rhs": 0.6463816205040271
+    },
+    {
+      "name": "uncut lower response 10",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 6.889813905331601
+    },
+    {
+      "name": "uncut upper response 10",
+      "passed": true,
+      "lhs": 6.889813905331601,
+      "rhs": 12.789791207454476
+    },
+    {
+      "name": "cutoff pairing error 10",
+      "passed": true,
+      "lhs": 153.29004743125057,
+      "rhs": 401.8495347916625
+    },
+    {
+      "name": "cutoff Gram error 10",
+      "passed": true,
+      "lhs": 6808.471161914914,
+      "rhs": 71582.85705543244
+    },
+    {
+      "name": "cutoff least-squares defect 10",
+      "passed": true,
+      "lhs": 19.340916333855592,
+      "rhs": 19.340916333855596
+    },
+    {
+      "name": "complete cutoff residual 10",
+      "passed": true,
+      "lhs": 6.184848372481564,
+      "rhs": 8.344798445861958
+    },
+    {
+      "name": "cutoff lower physical response 10",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 6.889813905331601
+    },
+    {
+      "name": "cutoff upper physical response 10",
+      "passed": true,
+      "lhs": 6.889813905331601,
+      "rhs": 38.05479145086796
+    },
+    {
+      "name": "signed lower response uses upper subtractions 10",
+      "passed": true,
+      "lhs": -30.904068272169745,
+      "rhs": -8.358613275039488
+    },
+    {
+      "name": "signed upper response uses lower subtractions 10",
+      "passed": true,
+      "lhs": -8.358613275039488,
+      "rhs": 12.789791207454476
+    },
+    {
+      "name": "full original-window lower receiver 10",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 17.582047573264116
+    },
+    {
+      "name": "complete residual square 11",
+      "passed": true,
+      "lhs": 15.029997508173915,
+      "rhs": 15.029997508173922
+    },
+    {
+      "name": "full inverse residual identity 11",
+      "passed": true,
+      "lhs": 7.83081154346659e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 11",
+      "passed": true,
+      "lhs": 1.9991644612099182,
+      "rhs": 2.377474921989525
+    },
+    {
+      "name": "uncut lower response 11",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 12.246915795422959
+    },
+    {
+      "name": "uncut upper response 11",
+      "passed": true,
+      "lhs": 12.246915795422959,
+      "rhs": 19.37525070750135
+    },
+    {
+      "name": "cutoff pairing error 11",
+      "passed": true,
+      "lhs": 57.738558619541806,
+      "rhs": 336.4922924788335
+    },
+    {
+      "name": "cutoff Gram error 11",
+      "passed": true,
+      "lhs": 10123.72978539147,
+      "rhs": 56251.431822525294
+    },
+    {
+      "name": "cutoff least-squares defect 11",
+      "passed": true,
+      "lhs": 13.935710750756256,
+      "rhs": 13.935710750756256
+    },
+    {
+      "name": "complete cutoff residual 11",
+      "passed": true,
+      "lhs": 4.106886226965231,
+      "rhs": 8.738103361089713
+    },
+    {
+      "name": "cutoff lower physical response 11",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 12.246915795422959
+    },
+    {
+      "name": "cutoff upper physical response 11",
+      "passed": true,
+      "lhs": 12.246915795422959,
+      "rhs": 93.02145657217412
+    },
+    {
+      "name": "signed lower response uses upper subtractions 11",
+      "passed": true,
+      "lhs": -57.784140033669786,
+      "rhs": -16.730444232212754
+    },
+    {
+      "name": "signed upper response uses lower subtractions 11",
+      "passed": true,
+      "lhs": -16.730444232212754,
+      "rhs": 19.37525070750135
+    },
+    {
+      "name": "full original-window lower receiver 11",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 6.033051491096852
+    },
+    {
+      "name": "complete residual square 12",
+      "passed": true,
+      "lhs": 14.562058153826232,
+      "rhs": 14.562058153825916
+    },
+    {
+      "name": "full inverse residual identity 12",
+      "passed": true,
+      "lhs": 1.783055507196664e-13,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 12",
+      "passed": true,
+      "lhs": 58.302291754189866,
+      "rhs": 144.08797636378304
+    },
+    {
+      "name": "uncut lower response 12",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 136.04258888800723
+    },
+    {
+      "name": "uncut upper response 12",
+      "passed": true,
+      "lhs": 136.04258888800723,
+      "rhs": 837.6403313091904
+    },
+    {
+      "name": "cutoff pairing error 12",
+      "passed": true,
+      "lhs": 36.56502824793397,
+      "rhs": 190.42184273434407
+    },
+    {
+      "name": "cutoff Gram error 12",
+      "passed": true,
+      "lhs": 4107.617205831616,
+      "rhs": 27410.65485685422
+    },
+    {
+      "name": "cutoff least-squares defect 12",
+      "passed": true,
+      "lhs": 13.670159782794215,
+      "rhs": 13.670159782794219
+    },
+    {
+      "name": "complete cutoff residual 12",
+      "passed": true,
+      "lhs": 4.260083202236623,
+      "rhs": 7.049669115315945
+    },
+    {
+      "name": "cutoff lower physical response 12",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 136.04258888800723
+    },
+    {
+      "name": "cutoff upper physical response 12",
+      "passed": true,
+      "lhs": 136.04258888800723,
+      "rhs": 2833.095534607357
+    },
+    {
+      "name": "signed lower response uses upper subtractions 12",
+      "passed": true,
+      "lhs": -2745.0386453899346,
+      "rhs": 61.66476684618989
+    },
+    {
+      "name": "signed upper response uses lower subtractions 12",
+      "passed": true,
+      "lhs": 61.66476684618989,
+      "rhs": 837.6403313091904
+    },
+    {
+      "name": "full original-window lower receiver 12",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 1029.8965492936811
+    },
+    {
+      "name": "complete residual square 13",
+      "passed": true,
+      "lhs": 23.85913384840825,
+      "rhs": 23.85913384840824
+    },
+    {
+      "name": "full inverse residual identity 13",
+      "passed": true,
+      "lhs": 1.606323964851098e-15,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 13",
+      "passed": true,
+      "lhs": 1.8085725612222379,
+      "rhs": 2.1241356926160058
+    },
+    {
+      "name": "uncut lower response 13",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 12.237815183361217
+    },
+    {
+      "name": "uncut upper response 13",
+      "passed": true,
+      "lhs": 12.237815183361217,
+      "rhs": 21.626487463735266
+    },
+    {
+      "name": "cutoff pairing error 13",
+      "passed": true,
+      "lhs": 221.9635393922066,
+      "rhs": 540.8435290827017
+    },
+    {
+      "name": "cutoff Gram error 13",
+      "passed": true,
+      "lhs": 6929.449715057416,
+      "rhs": 53656.3350589268
+    },
+    {
+      "name": "cutoff least-squares defect 13",
+      "passed": true,
+      "lhs": 20.21365358613376,
+      "rhs": 20.213653586133763
+    },
+    {
+      "name": "complete cutoff residual 13",
+      "passed": true,
+      "lhs": 5.359918433536235,
+      "rhs": 16.041545621589997
+    },
+    {
+      "name": "cutoff lower physical response 13",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 12.237815183361217
+    },
+    {
+      "name": "cutoff upper physical response 13",
+      "passed": true,
+      "lhs": 12.237815183361217,
+      "rhs": 181.37056750546733
+    },
+    {
+      "name": "signed lower response uses upper subtractions 13",
+      "passed": true,
+      "lhs": -55.209763039430634,
+      "rhs": -10.315047307905909
+    },
+    {
+      "name": "signed upper response uses lower subtractions 13",
+      "passed": true,
+      "lhs": -10.315047307905909,
+      "rhs": 21.626487463735266
+    },
+    {
+      "name": "full original-window lower receiver 13",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 10.254272284214537
+    },
+    {
+      "name": "complete residual square 14",
+      "passed": true,
+      "lhs": 20.893814841894862,
+      "rhs": 20.893814841893644
+    },
+    {
+      "name": "full inverse residual identity 14",
+      "passed": true,
+      "lhs": 2.5340088419729523e-13,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 14",
+      "passed": true,
+      "lhs": 104.74849403526552,
+      "rhs": 341.04921374344224
+    },
+    {
+      "name": "uncut lower response 14",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 69.0379343290418
+    },
+    {
+      "name": "uncut upper response 14",
+      "passed": true,
+      "lhs": 69.0379343290418,
+      "rhs": 746.9454441806799
+    },
+    {
+      "name": "cutoff pairing error 14",
+      "passed": true,
+      "lhs": 147.95214318123982,
+      "rhs": 632.1339919507028
+    },
+    {
+      "name": "cutoff Gram error 14",
+      "passed": true,
+      "lhs": 14437.655007229123,
+      "rhs": 84546.21076026549
+    },
+    {
+      "name": "cutoff least-squares defect 14",
+      "passed": true,
+      "lhs": 19.80417760609052,
+      "rhs": 19.80417760609052
+    },
+    {
+      "name": "complete cutoff residual 14",
+      "passed": true,
+      "lhs": 4.869618069907697,
+      "rhs": 12.818493794566166
+    },
+    {
+      "name": "cutoff lower physical response 14",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 69.0379343290418
+    },
+    {
+      "name": "cutoff upper physical response 14",
+      "passed": true,
+      "lhs": 69.0379343290418,
+      "rhs": 5780.148858416284
+    },
+    {
+      "name": "signed lower response uses upper subtractions 14",
+      "passed": true,
+      "lhs": -2435.1137502066967,
+      "rhs": 55.59506829843387
+    },
+    {
+      "name": "signed upper response uses lower subtractions 14",
+      "passed": true,
+      "lhs": 55.59506829843387,
+      "rhs": 746.9454441806799
+    },
+    {
+      "name": "full original-window lower receiver 14",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 319.43873878126277
+    },
+    {
+      "name": "complete residual square 15",
+      "passed": true,
+      "lhs": 12.912854019486494,
+      "rhs": 12.912854019486526
+    },
+    {
+      "name": "full inverse residual identity 15",
+      "passed": true,
+      "lhs": 7.589386460497914e-15,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 15",
+      "passed": true,
+      "lhs": 9.29524277304954,
+      "rhs": 14.95189881230395
+    },
+    {
+      "name": "uncut lower response 15",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 36.883628121648904
+    },
+    {
+      "name": "uncut upper response 15",
+      "passed": true,
+      "lhs": 36.883628121648904,
+      "rhs": 104.00003163518494
+    },
+    {
+      "name": "cutoff pairing error 15",
+      "passed": true,
+      "lhs": 76.81894402406587,
+      "rhs": 377.3533060782967
+    },
+    {
+      "name": "cutoff Gram error 15",
+      "passed": true,
+      "lhs": 9281.652365569415,
+      "rhs": 65408.36682595287
+    },
+    {
+      "name": "cutoff least-squares defect 15",
+      "passed": true,
+      "lhs": 11.855283930343335,
+      "rhs": 11.855283930343335
+    },
+    {
+      "name": "complete cutoff residual 15",
+      "passed": true,
+      "lhs": 3.749833397199785,
+      "rhs": 8.025527521307696
+    },
+    {
+      "name": "cutoff lower physical response 15",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 36.883628121648904
+    },
+    {
+      "name": "cutoff upper physical response 15",
+      "passed": true,
+      "lhs": 36.883628121648904,
+      "rhs": 495.00536014771166
+    },
+    {
+      "name": "signed lower response uses upper subtractions 15",
+      "passed": true,
+      "lhs": -325.8327131124426,
+      "rhs": -26.76232936493207
+    },
+    {
+      "name": "signed upper response uses lower subtractions 15",
+      "passed": true,
+      "lhs": -26.76232936493207,
+      "rhs": 104.00003163518494
+    },
+    {
+      "name": "full original-window lower receiver 15",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 68.18976485118041
+    },
+    {
+      "name": "complete residual square 16",
+      "passed": true,
+      "lhs": 13.77503186122325,
+      "rhs": 13.775031861223265
+    },
+    {
+      "name": "full inverse residual identity 16",
+      "passed": true,
+      "lhs": 1.6276889576143804e-14,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 16",
+      "passed": true,
+      "lhs": 17.418044707136488,
+      "rhs": 23.807765737187754
+    },
+    {
+      "name": "uncut lower response 16",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 114.24359352743453
+    },
+    {
+      "name": "uncut upper response 16",
+      "passed": true,
+      "lhs": 114.24359352743453,
+      "rhs": 227.5289254969746
+    },
+    {
+      "name": "cutoff pairing error 16",
+      "passed": true,
+      "lhs": 57.942704689676425,
+      "rhs": 318.26709781495526
+    },
+    {
+      "name": "cutoff Gram error 16",
+      "passed": true,
+      "lhs": 6711.107679196037,
+      "rhs": 47093.582862446696
+    },
+    {
+      "name": "cutoff least-squares defect 16",
+      "passed": true,
+      "lhs": 13.660635842145439,
+      "rhs": 13.660635842145433
+    },
+    {
+      "name": "complete cutoff residual 16",
+      "passed": true,
+      "lhs": 3.800964826082804,
+      "rhs": 12.03411618404414
+    },
+    {
+      "name": "cutoff lower physical response 16",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 114.24359352743453
+    },
+    {
+      "name": "cutoff upper physical response 16",
+      "passed": true,
+      "lhs": 114.24359352743453,
+      "rhs": 2310.813515600086
+    },
+    {
+      "name": "signed lower response uses upper subtractions 16",
+      "passed": true,
+      "lhs": -715.7877557808566,
+      "rhs": -96.47954434515488
+    },
+    {
+      "name": "signed upper response uses lower subtractions 16",
+      "passed": true,
+      "lhs": -96.47954434515488,
+      "rhs": 227.5289254969746
+    },
+    {
+      "name": "full original-window lower receiver 16",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 114.65415780784812
+    },
+    {
+      "name": "complete residual square 17",
+      "passed": true,
+      "lhs": 14.11372696578219,
+      "rhs": 14.11372696578221
+    },
+    {
+      "name": "full inverse residual identity 17",
+      "passed": true,
+      "lhs": 1.2301271112846734e-13,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 17",
+      "passed": true,
+      "lhs": 153.85620172462882,
+      "rhs": 374.4531175362296
+    },
+    {
+      "name": "uncut lower response 17",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 431.73786518990534
+    },
+    {
+      "name": "uncut upper response 17",
+      "passed": true,
+      "lhs": 431.73786518990534,
+      "rhs": 2564.2881119238173
+    },
+    {
+      "name": "cutoff pairing error 17",
+      "passed": true,
+      "lhs": 39.50248356168793,
+      "rhs": 150.69562974040358
+    },
+    {
+      "name": "cutoff Gram error 17",
+      "passed": true,
+      "lhs": 1106.0927198481402,
+      "rhs": 17876.608870440436
+    },
+    {
+      "name": "cutoff least-squares defect 17",
+      "passed": true,
+      "lhs": 11.220229279457483,
+      "rhs": 11.22022927945752
+    },
+    {
+      "name": "complete cutoff residual 17",
+      "passed": true,
+      "lhs": 3.843957815612523,
+      "rhs": 8.253136609573925
+    },
+    {
+      "name": "cutoff lower physical response 17",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 431.73786518990534
+    },
+    {
+      "name": "cutoff upper physical response 17",
+      "passed": true,
+      "lhs": 431.73786518990534,
+      "rhs": 12350.997854258043
+    },
+    {
+      "name": "signed lower response uses upper subtractions 17",
+      "passed": true,
+      "lhs": -8470.473419925433,
+      "rhs": 286.32855786359744
+    },
+    {
+      "name": "signed upper response uses lower subtractions 17",
+      "passed": true,
+      "lhs": 286.32855786359744,
+      "rhs": 2564.2881119238173
+    },
+    {
+      "name": "full original-window lower receiver 17",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 2369.8720244960373
+    },
+    {
+      "name": "complete residual square 18",
+      "passed": true,
+      "lhs": 13.973609172792392,
+      "rhs": 13.973609172792266
+    },
+    {
+      "name": "full inverse residual identity 18",
+      "passed": true,
+      "lhs": 2.6116987842887698e-14,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 18",
+      "passed": true,
+      "lhs": 14.292664014144632,
+      "rhs": 23.37972927746522
+    },
+    {
+      "name": "uncut lower response 18",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 92.95719251016266
+    },
+    {
+      "name": "uncut upper response 18",
+      "passed": true,
+      "lhs": 92.95719251016266,
+      "rhs": 263.33871306232294
+    },
+    {
+      "name": "cutoff pairing error 18",
+      "passed": true,
+      "lhs": 45.81538459282551,
+      "rhs": 413.13181264462486
+    },
+    {
+      "name": "cutoff Gram error 18",
+      "passed": true,
+      "lhs": 11969.251561420799,
+      "rhs": 94988.10617921028
+    },
+    {
+      "name": "cutoff least-squares defect 18",
+      "passed": true,
+      "lhs": 11.948374416794586,
+      "rhs": 11.948374416794577
+    },
+    {
+      "name": "complete cutoff residual 18",
+      "passed": true,
+      "lhs": 3.8630351614227103,
+      "rhs": 10.404077969406025
+    },
+    {
+      "name": "cutoff lower physical response 18",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 92.95719251016266
+    },
+    {
+      "name": "cutoff upper physical response 18",
+      "passed": true,
+      "lhs": 92.95719251016266,
+      "rhs": 1987.1991082283391
+    },
+    {
+      "name": "signed lower response uses upper subtractions 18",
+      "passed": true,
+      "lhs": -840.0046168289139,
+      "rhs": -39.91428159074074
+    },
+    {
+      "name": "signed upper response uses lower subtractions 18",
+      "passed": true,
+      "lhs": -39.91428159074074,
+      "rhs": 263.33871306232294
+    },
+    {
+      "name": "full original-window lower receiver 18",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 222.10696953947254
+    },
+    {
+      "name": "complete residual square 19",
+      "passed": true,
+      "lhs": 15.736204153299619,
+      "rhs": 15.736204153299628
+    },
+    {
+      "name": "full inverse residual identity 19",
+      "passed": true,
+      "lhs": 3.5278153162433137e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 19",
+      "passed": true,
+      "lhs": 0.6132079773732665,
+      "rhs": 0.6886280525161481
+    },
+    {
+      "name": "uncut lower response 19",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 3.889180529347024
+    },
+    {
+      "name": "uncut upper response 19",
+      "passed": true,
+      "lhs": 3.889180529347024,
+      "rhs": 8.098603711482673
+    },
+    {
+      "name": "cutoff pairing error 19",
+      "passed": true,
+      "lhs": 52.744905381714474,
+      "rhs": 428.4725061232388
+    },
+    {
+      "name": "cutoff Gram error 19",
+      "passed": true,
+      "lhs": 14777.572059668277,
+      "rhs": 62551.87597676868
+    },
+    {
+      "name": "cutoff least-squares defect 19",
+      "passed": true,
+      "lhs": 18.39909737403056,
+      "rhs": 18.39909737403056
+    },
+    {
+      "name": "complete cutoff residual 19",
+      "passed": true,
+      "lhs": 4.184809672827093,
+      "rhs": 7.003738682319676
+    },
+    {
+      "name": "cutoff lower physical response 19",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 3.889180529347024
+    },
+    {
+      "name": "cutoff upper physical response 19",
+      "passed": true,
+      "lhs": 3.889180529347024,
+      "rhs": 16.538892797191064
+    },
+    {
+      "name": "signed lower response uses upper subtractions 19",
+      "passed": true,
+      "lhs": -20.072312608256198,
+      "rhs": -4.585698388048919
+    },
+    {
+      "name": "signed upper response uses lower subtractions 19",
+      "passed": true,
+      "lhs": -4.585698388048919,
+      "rhs": 8.098603711482673
+    },
+    {
+      "name": "full original-window lower receiver 19",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 6.361413017848183
+    },
+    {
+      "name": "complete residual square 20",
+      "passed": true,
+      "lhs": 16.502758978581248,
+      "rhs": 16.502758978581245
+    },
+    {
+      "name": "full inverse residual identity 20",
+      "passed": true,
+      "lhs": 8.431891261271938e-15,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 20",
+      "passed": true,
+      "lhs": 9.794749667509228,
+      "rhs": 15.823569577936807
+    },
+    {
+      "name": "uncut lower response 20",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 16.63993733318626
+    },
+    {
+      "name": "uncut upper response 20",
+      "passed": true,
+      "lhs": 16.63993733318626,
+      "rhs": 45.25947908790418
+    },
+    {
+      "name": "cutoff pairing error 20",
+      "passed": true,
+      "lhs": 38.95709774887386,
+      "rhs": 289.20762460513794
+    },
+    {
+      "name": "cutoff Gram error 20",
+      "passed": true,
+      "lhs": 5272.914455044127,
+      "rhs": 38933.6008343987
+    },
+    {
+      "name": "cutoff least-squares defect 20",
+      "passed": true,
+      "lhs": 14.08292356152274,
+      "rhs": 14.082923561522765
+    },
+    {
+      "name": "complete cutoff residual 20",
+      "passed": true,
+      "lhs": 4.418782076526953,
+      "rhs": 15.510336417384837
+    },
+    {
+      "name": "cutoff lower physical response 20",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 16.63993733318626
+    },
+    {
+      "name": "cutoff upper physical response 20",
+      "passed": true,
+      "lhs": 16.63993733318626,
+      "rhs": 656.3263622239842
+    },
+    {
+      "name": "signed lower response uses upper subtractions 20",
+      "passed": true,
+      "lhs": -145.6235620048521,
+      "rhs": -12.359210473896074
+    },
+    {
+      "name": "signed upper response uses lower subtractions 20",
+      "passed": true,
+      "lhs": -12.359210473896074,
+      "rhs": 45.25947908790418
+    },
+    {
+      "name": "full original-window lower receiver 20",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 25.552934905249412
+    },
+    {
+      "name": "complete residual square 21",
+      "passed": true,
+      "lhs": 20.719143046623543,
+      "rhs": 20.71914304662355
+    },
+    {
+      "name": "full inverse residual identity 21",
+      "passed": true,
+      "lhs": 2.488164381937723e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 21",
+      "passed": true,
+      "lhs": 0.5568239150925239,
+      "rhs": 0.5924178654998516
+    },
+    {
+      "name": "uncut lower response 21",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 3.530428476670052
+    },
+    {
+      "name": "uncut upper response 21",
+      "passed": true,
+      "lhs": 3.530428476670052,
+      "rhs": 7.0189503195897345
+    },
+    {
+      "name": "cutoff pairing error 21",
+      "passed": true,
+      "lhs": 84.19046387943278,
+      "rhs": 444.09460869633807
+    },
+    {
+      "name": "cutoff Gram error 21",
+      "passed": true,
+      "lhs": 8017.982738006745,
+      "rhs": 65048.39599666807
+    },
+    {
+      "name": "cutoff least-squares defect 21",
+      "passed": true,
+      "lhs": 17.53687551503701,
+      "rhs": 17.53687551503701
+    },
+    {
+      "name": "complete cutoff residual 21",
+      "passed": true,
+      "lhs": 4.631147319801257,
+      "rhs": 9.515223623743292
+    },
+    {
+      "name": "cutoff lower physical response 21",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 3.530428476670052
+    },
+    {
+      "name": "cutoff upper physical response 21",
+      "passed": true,
+      "lhs": 3.530428476670052,
+      "rhs": 24.26090456231597
+    },
+    {
+      "name": "signed lower response uses upper subtractions 21",
+      "passed": true,
+      "lhs": -13.837457090494647,
+      "rhs": -4.98646001490426
+    },
+    {
+      "name": "signed upper response uses lower subtractions 21",
+      "passed": true,
+      "lhs": -4.98646001490426,
+      "rhs": 7.0189503195897345
+    },
+    {
+      "name": "full original-window lower receiver 21",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 2.9478449280987817
+    },
+    {
+      "name": "complete residual square 22",
+      "passed": true,
+      "lhs": 11.310444613641957,
+      "rhs": 11.310444613641963
+    },
+    {
+      "name": "full inverse residual identity 22",
+      "passed": true,
+      "lhs": 1.8521169019595946e-16,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 22",
+      "passed": true,
+      "lhs": 0.4780524073935104,
+      "rhs": 0.5373366985335792
+    },
+    {
+      "name": "uncut lower response 22",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 3.56955388210054
+    },
+    {
+      "name": "uncut upper response 22",
+      "passed": true,
+      "lhs": 3.56955388210054,
+      "rhs": 8.556849137581354
+    },
+    {
+      "name": "cutoff pairing error 22",
+      "passed": true,
+      "lhs": 165.48067320143332,
+      "rhs": 536.9470437869038
+    },
+    {
+      "name": "cutoff Gram error 22",
+      "passed": true,
+      "lhs": 13745.71926670742,
+      "rhs": 84843.83789914571
+    },
+    {
+      "name": "cutoff least-squares defect 22",
+      "passed": true,
+      "lhs": 12.301116938640572,
+      "rhs": 12.301116938640574
+    },
+    {
+      "name": "complete cutoff residual 22",
+      "passed": true,
+      "lhs": 3.4435266497728962,
+      "rhs": 10.46470891655747
+    },
+    {
+      "name": "cutoff lower physical response 22",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 3.56955388210054
+    },
+    {
+      "name": "cutoff upper physical response 22",
+      "passed": true,
+      "lhs": 3.56955388210054,
+      "rhs": 47.45924196898847
+    },
+    {
+      "name": "signed lower response uses upper subtractions 22",
+      "passed": true,
+      "lhs": -15.256029727904053,
+      "rhs": -3.57869130655511
+    },
+    {
+      "name": "signed upper response uses lower subtractions 22",
+      "passed": true,
+      "lhs": -3.57869130655511,
+      "rhs": 8.556849137581354
+    },
+    {
+      "name": "full original-window lower receiver 22",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 10.188560817419887
+    },
+    {
+      "name": "complete residual square 23",
+      "passed": true,
+      "lhs": 15.138312722792708,
+      "rhs": 15.138312722792703
+    },
+    {
+      "name": "full inverse residual identity 23",
+      "passed": true,
+      "lhs": 1.4840436760164294e-14,
+      "rhs": 0.0
+    },
+    {
+      "name": "full inverse residual bound 23",
+      "passed": true,
+      "lhs": 12.830518237905055,
+      "rhs": 16.856393270266327
+    },
+    {
+      "name": "uncut lower response 23",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 73.32167163118322
+    },
+    {
+      "name": "uncut upper response 23",
+      "passed": true,
+      "lhs": 73.32167163118322,
+      "rhs": 134.42447629671017
+    },
+    {
+      "name": "cutoff pairing error 23",
+      "passed": true,
+      "lhs": 33.45794049079031,
+      "rhs": 423.09779519593786
+    },
+    {
+      "name": "cutoff Gram error 23",
+      "passed": true,
+      "lhs": 15133.108340415556,
+      "rhs": 91835.78989661357
+    },
+    {
+      "name": "cutoff least-squares defect 23",
+      "passed": true,
+      "lhs": 15.579927246334384,
+      "rhs": 15.579927246334387
+    },
+    {
+      "name": "complete cutoff residual 23",
+      "passed": true,
+      "lhs": 3.9307088758424866,
+      "rhs": 5.811811855480663
+    },
+    {
+      "name": "cutoff lower physical response 23",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 73.32167163118322
+    },
+    {
+      "name": "cutoff upper physical response 23",
+      "passed": true,
+      "lhs": 73.32167163118322,
+      "rhs": 290.3214540831858
+    },
+    {
+      "name": "signed lower response uses upper subtractions 23",
+      "passed": true,
+      "lhs": -421.9290022950024,
+      "rhs": -79.64003331360013
+    },
+    {
+      "name": "signed upper response uses lower subtractions 23",
+      "passed": true,
+      "lhs": -79.64003331360013,
+      "rhs": 134.42447629671017
+    },
+    {
+      "name": "full original-window lower receiver 23",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 93.4204218683262
+    },
+    {
+      "name": "full force-score source1 1.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.19635381412681768,
+      "rhs": 0.1963538141268171
+    },
+    {
+      "name": "full force-score source2 1.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.45776614349990896,
+      "rhs": 0.4577661434999086
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.033454221481300554,
+      "rhs": 0.03345422148130053
+    },
+    {
+      "name": "full force-score source1 1.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.22157728758181283,
+      "rhs": 0.22157728758181408
+    },
+    {
+      "name": "full force-score source2 1.0 0.01 1.0",
+      "passed": true,
+      "lhs": -0.9626770340809332,
+      "rhs": -0.9626770340809343
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.05959870241957352,
+      "rhs": 0.059598702419573546
+    },
+    {
+      "name": "full force-score source1 1.0 0.01 -0.3",
+      "passed": true,
+      "lhs": -0.06815475117154354,
+      "rhs": -0.06815475117154403
+    },
+    {
+      "name": "full force-score source2 1.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 0.38349932206300286,
+      "rhs": 0.38349932206300325
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 0.008368706233437611,
+      "rhs": 0.008368706233437592
+    },
+    {
+      "name": "full force-score source1 1.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.23015180938169122,
+      "rhs": 0.23015180938169066
+    },
+    {
+      "name": "full force-score source2 1.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.5055872707613505,
+      "rhs": 0.5055872707613501
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.026616936161056988,
+      "rhs": 0.026616936161057037
+    },
+    {
+      "name": "full force-score source1 1.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.2553752828366864,
+      "rhs": 0.25537528283668764
+    },
+    {
+      "name": "full force-score source2 1.0 0.2 1.0",
+      "passed": true,
+      "lhs": -1.0583192886038164,
+      "rhs": -1.0583192886038175
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.049279582830590224,
+      "rhs": 0.049279582830590085
+    },
+    {
+      "name": "full force-score source1 1.0 0.2 -0.3",
+      "passed": true,
+      "lhs": -0.0782941497480056,
+      "rhs": -0.0782941497480061
+    },
+    {
+      "name": "full force-score source2 1.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 0.4217562238721561,
+      "rhs": 0.42175622387215644
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 0.006981807047641519,
+      "rhs": 0.006981807047641508
+    },
+    {
+      "name": "full force-score source1 1.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.7282275289271962,
+      "rhs": 0.7282275289271956
+    },
+    {
+      "name": "full force-score source2 1.0 3.0 1.0",
+      "passed": true,
+      "lhs": 1.2103196725089103,
+      "rhs": 1.21031967250891
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.004623283071115272,
+      "rhs": 0.004623283071115258
+    },
+    {
+      "name": "full force-score source1 1.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.7534510023821913,
+      "rhs": 0.7534510023821925
+    },
+    {
+      "name": "full force-score source2 1.0 3.0 1.0",
+      "passed": true,
+      "lhs": -2.4677840920989356,
+      "rhs": -2.467784092098937
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.010045152674471909,
+      "rhs": 0.010045152674472035
+    },
+    {
+      "name": "full force-score source1 1.0 3.0 -0.3",
+      "passed": true,
+      "lhs": -0.22771686561165713,
+      "rhs": -0.2277168656116576
+    },
+    {
+      "name": "full force-score source2 1.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 0.985542145270204,
+      "rhs": 0.9855421452702042
+    },
+    {
+      "name": "actual diagnostic residual source 1.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 0.0014679581463005668,
+      "rhs": 0.0014679581463005326
+    },
+    {
+      "name": "full force-score source1 3.0 0.01 1.0",
+      "passed": true,
+      "lhs": 1.025384249525928,
+      "rhs": 1.0253842495259164
+    },
+    {
+      "name": "full force-score source2 3.0 0.01 1.0",
+      "passed": true,
+      "lhs": 1.3598120005529943,
+      "rhs": 1.3598120005529837
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.007034978811580217,
+      "rhs": 0.007034978811580189
+    },
+    {
+      "name": "full force-score source1 3.0 0.01 1.0",
+      "passed": true,
+      "lhs": 1.1457126148651344,
+      "rhs": 1.1457126148651589
+    },
+    {
+      "name": "full force-score source2 3.0 0.01 1.0",
+      "passed": true,
+      "lhs": -2.870286772808346,
+      "rhs": -2.8702867728083583
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.01071211878057442,
+      "rhs": 0.010712118780574376
+    },
+    {
+      "name": "full force-score source1 3.0 0.01 -0.3",
+      "passed": true,
+      "lhs": -0.3517356754821541,
+      "rhs": -0.3517356754821639
+    },
+    {
+      "name": "full force-score source2 3.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 1.1430926167332598,
+      "rhs": 1.1430926167332638
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 0.0015248735908381323,
+      "rhs": 0.0015248735908381453
+    },
+    {
+      "name": "full force-score source1 3.0 0.2 1.0",
+      "passed": true,
+      "lhs": 1.0832589287313383,
+      "rhs": 1.083258928731327
+    },
+    {
+      "name": "full force-score source2 3.0 0.2 1.0",
+      "passed": true,
+      "lhs": 1.4202704066491139,
+      "rhs": 1.4202704066491036
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.006442382656738405,
+      "rhs": 0.006442382656738438
+    },
+    {
+      "name": "full force-score source1 3.0 0.2 1.0",
+      "passed": true,
+      "lhs": 1.203587294070545,
+      "rhs": 1.2035872940705694
+    },
+    {
+      "name": "full force-score source2 3.0 0.2 1.0",
+      "passed": true,
+      "lhs": -2.9912035850005854,
+      "rhs": -2.9912035850005982
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.009906960429563351,
+      "rhs": 0.00990696042956335
+    },
+    {
+      "name": "full force-score source1 3.0 0.2 -0.3",
+      "passed": true,
+      "lhs": -0.36909807924377724,
+      "rhs": -0.369098079243787
+    },
+    {
+      "name": "full force-score source2 3.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 1.1914593416101558,
+      "rhs": 1.1914593416101595
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 0.0014130646542027164,
+      "rhs": 0.0014130646542027253
+    },
+    {
+      "name": "full force-score source1 3.0 3.0 1.0",
+      "passed": true,
+      "lhs": 1.9361489380742296,
+      "rhs": 1.9361489380742178
+    },
+    {
+      "name": "full force-score source2 3.0 3.0 1.0",
+      "passed": true,
+      "lhs": 2.3112363912235114,
+      "rhs": 2.3112363912235008
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.0025442367240996167,
+      "rhs": 0.002544236724099591
+    },
+    {
+      "name": "full force-score source1 3.0 3.0 1.0",
+      "passed": true,
+      "lhs": 2.056477303413436,
+      "rhs": 2.0564773034134602
+    },
+    {
+      "name": "full force-score source2 3.0 3.0 1.0",
+      "passed": true,
+      "lhs": -4.7731355541493805,
+      "rhs": -4.773135554149393
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.0042354672492193515,
+      "rhs": 0.004235467249219249
+    },
+    {
+      "name": "full force-score source1 3.0 3.0 -0.3",
+      "passed": true,
+      "lhs": -0.6249650820466446,
+      "rhs": -0.6249650820466544
+    },
+    {
+      "name": "full force-score source2 3.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 1.9042321292696738,
+      "rhs": 1.9042321292696776
+    },
+    {
+      "name": "actual diagnostic residual source 3.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 0.0006140444404779558,
+      "rhs": 0.0006140444404779538
+    },
+    {
+      "name": "full force-score source1 8.0 0.01 1.0",
+      "passed": true,
+      "lhs": 3.189624106833569,
+      "rhs": 3.189624106833495
+    },
+    {
+      "name": "full force-score source2 8.0 0.01 1.0",
+      "passed": true,
+      "lhs": 2.4741398279177442,
+      "rhs": 2.4741398279176683
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.000989896883107775,
+      "rhs": 0.0009898968831077576
+    },
+    {
+      "name": "full force-score source1 8.0 0.01 1.0",
+      "passed": true,
+      "lhs": 3.36959272645833,
+      "rhs": 3.3695927264584653
+    },
+    {
+      "name": "full force-score source2 8.0 0.01 1.0",
+      "passed": true,
+      "lhs": -5.092204123944286,
+      "rhs": -5.09220412394436
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.002276826893209741,
+      "rhs": 0.00227682689320971
+    },
+    {
+      "name": "full force-score source1 8.0 0.01 -0.3",
+      "passed": true,
+      "lhs": -1.022875725912483,
+      "rhs": -1.0228757259125376
+    },
+    {
+      "name": "full force-score source2 8.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 2.032084167307421,
+      "rhs": 2.0320841673074432
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 0.0003534139329025748,
+      "rhs": 0.0003534139329025819
+    },
+    {
+      "name": "full force-score source1 8.0 0.2 1.0",
+      "passed": true,
+      "lhs": 3.255499895657652,
+      "rhs": 3.2554998956575787
+    },
+    {
+      "name": "full force-score source2 8.0 0.2 1.0",
+      "passed": true,
+      "lhs": 2.5386961134259933,
+      "rhs": 2.5386961134259174
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.0009480472362485832,
+      "rhs": 0.0009480472362485837
+    },
+    {
+      "name": "full force-score source1 8.0 0.2 1.0",
+      "passed": true,
+      "lhs": 3.4354685152824134,
+      "rhs": 3.435468515282549
+    },
+    {
+      "name": "full force-score source2 8.0 0.2 1.0",
+      "passed": true,
+      "lhs": -5.221316694960785,
+      "rhs": -5.2213166949608585
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.002174734092239264,
+      "rhs": 0.0021747340922391722
+    },
+    {
+      "name": "full force-score source1 8.0 0.2 -0.3",
+      "passed": true,
+      "lhs": -1.042638462559708,
+      "rhs": -1.0426384625597627
+    },
+    {
+      "name": "full force-score source2 8.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 2.0837291957140205,
+      "rhs": 2.0837291957140422
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 0.0003374076863284715,
+      "rhs": 0.00033740768632847806
+    },
+    {
+      "name": "full force-score source1 8.0 3.0 1.0",
+      "passed": true,
+      "lhs": 4.226300994117827,
+      "rhs": 4.2263009941177545
+    },
+    {
+      "name": "full force-score source2 8.0 3.0 1.0",
+      "passed": true,
+      "lhs": 3.490051899863347,
+      "rhs": 3.4900518998632712
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.0005576165525530247,
+      "rhs": 0.0005576165525530141
+    },
+    {
+      "name": "full force-score source1 8.0 3.0 1.0",
+      "passed": true,
+      "lhs": 4.406269613742589,
+      "rhs": 4.406269613742724
+    },
+    {
+      "name": "full force-score source2 8.0 3.0 1.0",
+      "passed": true,
+      "lhs": -7.124028267835491,
+      "rhs": -7.124028267835566
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.0012388277289193978,
+      "rhs": 0.0012388277289194227
+    },
+    {
+      "name": "full force-score source1 8.0 3.0 -0.3",
+      "passed": true,
+      "lhs": -1.3338787920977606,
+      "rhs": -1.3338787920978155
+    },
+    {
+      "name": "full force-score source2 8.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 2.844813824863904,
+      "rhs": 2.844813824863926
+    },
+    {
+      "name": "actual diagnostic residual source 8.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 0.0001911991793222974,
+      "rhs": 0.00019119917932228572
+    },
+    {
+      "name": "full force-score source1 15.0 0.01 1.0",
+      "passed": true,
+      "lhs": 4.309777406030299,
+      "rhs": 4.30977740603023
+    },
+    {
+      "name": "full force-score source2 15.0 0.01 1.0",
+      "passed": true,
+      "lhs": 1.964535824801278,
+      "rhs": 1.964535824801202
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.0017497850523786995,
+      "rhs": 0.0017497850523787162
+    },
+    {
+      "name": "full force-score source1 15.0 0.01 1.0",
+      "passed": true,
+      "lhs": 3.970010152716359,
+      "rhs": 3.97001015271647
+    },
+    {
+      "name": "full force-score source2 15.0 0.01 1.0",
+      "passed": true,
+      "lhs": -3.7589047772999296,
+      "rhs": -3.7589047773000055
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 0.01 1.0",
+      "passed": true,
+      "lhs": 0.005313691250178928,
+      "rhs": 0.005313691250178942
+    },
+    {
+      "name": "full force-score source1 15.0 0.01 -0.3",
+      "passed": true,
+      "lhs": -1.1683518955939782,
+      "rhs": -1.1683518955940237
+    },
+    {
+      "name": "full force-score source2 15.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 1.509234139996726,
+      "rhs": 1.5092341399967495
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 0.01 -0.3",
+      "passed": true,
+      "lhs": 0.0008486377758817718,
+      "rhs": 0.0008486377758817887
+    },
+    {
+      "name": "full force-score source1 15.0 0.2 1.0",
+      "passed": true,
+      "lhs": 4.3767460471512845,
+      "rhs": 4.376746047151218
+    },
+    {
+      "name": "full force-score source2 15.0 0.2 1.0",
+      "passed": true,
+      "lhs": 2.0273257483259624,
+      "rhs": 2.0273257483258864
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.0016633368238815995,
+      "rhs": 0.0016633368238816032
+    },
+    {
+      "name": "full force-score source1 15.0 0.2 1.0",
+      "passed": true,
+      "lhs": 4.036978793837346,
+      "rhs": 4.0369787938374575
+    },
+    {
+      "name": "full force-score source2 15.0 0.2 1.0",
+      "passed": true,
+      "lhs": -3.8844846243492976,
+      "rhs": -3.884484624349374
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 0.2 1.0",
+      "passed": true,
+      "lhs": 0.005014264844999208,
+      "rhs": 0.005014264844999228
+    },
+    {
+      "name": "full force-score source1 15.0 0.2 -0.3",
+      "passed": true,
+      "lhs": -1.1884424879302744,
+      "rhs": -1.18844248793032
+    },
+    {
+      "name": "full force-score source2 15.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 1.5594660788164736,
+      "rhs": 1.559466078816497
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 0.2 -0.3",
+      "passed": true,
+      "lhs": 0.0008007169492720894,
+      "rhs": 0.0008007169492720845
+    },
+    {
+      "name": "full force-score source1 15.0 3.0 1.0",
+      "passed": true,
+      "lhs": 5.3636523373553056,
+      "rhs": 5.363652337355237
+    },
+    {
+      "name": "full force-score source2 15.0 3.0 1.0",
+      "passed": true,
+      "lhs": 2.9526509371107825,
+      "rhs": 2.9526509371107066
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.0009232333930365588,
+      "rhs": 0.0009232333930365572
+    },
+    {
+      "name": "full force-score source1 15.0 3.0 1.0",
+      "passed": true,
+      "lhs": 5.023885084041365,
+      "rhs": 5.023885084041477
+    },
+    {
+      "name": "full force-score source2 15.0 3.0 1.0",
+      "passed": true,
+      "lhs": -5.735135001918938,
+      "rhs": -5.735135001919015
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 3.0 1.0",
+      "passed": true,
+      "lhs": 0.002551032250506973,
+      "rhs": 0.002551032250506957
+    },
+    {
+      "name": "full force-score source1 15.0 3.0 -0.3",
+      "passed": true,
+      "lhs": -1.4845143749914804,
+      "rhs": -1.4845143749915257
+    },
+    {
+      "name": "full force-score source2 15.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 2.2997262298443295,
+      "rhs": 2.299726229844353
+    },
+    {
+      "name": "actual diagnostic residual source 15.0 3.0 -0.3",
+      "passed": true,
+      "lhs": 0.00040651981586104023,
+      "rhs": 0.0004065198158610603
+    },
+    {
+      "name": "finite inverse threshold 1",
+      "passed": true
+    },
+    {
+      "name": "finite amplitude tolerance 1",
+      "passed": true
+    },
+    {
+      "name": "projection singular-value threshold 1",
+      "passed": true
+    },
+    {
+      "name": "projection amplitude tolerance 1",
+      "passed": true
+    },
+    {
+      "name": "finite inverse threshold 10",
+      "passed": true
+    },
+    {
+      "name": "finite amplitude tolerance 10",
+      "passed": true
+    },
+    {
+      "name": "projection singular-value threshold 10",
+      "passed": true
+    },
+    {
+      "name": "projection amplitude tolerance 10",
+      "passed": true
+    },
+    {
+      "name": "finite inverse threshold 1000",
+      "passed": true
+    },
+    {
+      "name": "finite amplitude tolerance 1000",
+      "passed": true
+    },
+    {
+      "name": "projection singular-value threshold 1000",
+      "passed": true
+    },
+    {
+      "name": "projection amplitude tolerance 1000",
+      "passed": true
+    }
+  ]
+}

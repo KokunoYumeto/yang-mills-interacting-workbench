@@ -7283,5 +7283,297 @@
       }
     },
     "index_routes": "Three bounded canonical-index queries,18 routing records; no new source reading inferred from hits."
+  },
+  {
+    "source_id": "programme:PT-human-provenance-retained-TCR-20261012",
+    "primary_sources": [
+      {
+        "source_id": "arxiv:1703.10011v2",
+        "authors": "Jon Johnsen",
+        "title": "On the spectral properties of Witten-Laplacians, their range projections and Brascamp-Lieb’s inequality",
+        "version": 2,
+        "source_url": "https://arxiv.org/src/1703.10011v2",
+        "archive_sha256": "65d3656817237c4099ef10d1e2ea64489ceab2a090d602c52f36202733dace67",
+        "original_files": [
+          {
+            "path": "original/original.tex",
+            "bytes": 125102,
+            "sha256": "0ecf58f9c246bc1c2233c1052767a61c92d944a9948ecf0e396f08754a701120"
+          }
+        ],
+        "actual_reading": [
+          [
+            934,
+            1167
+          ],
+          [
+            1439,
+            1558
+          ]
+        ],
+        "receiving_proofs": "PT9–PT16, PT36; exact-range polar isometry and domains",
+        "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task’s machine-readable source extension after original author TeX acquisition.",
+        "original_archive_preserved": true,
+        "source_pdf_used": false,
+        "reading_is_bounded": true
+      },
+      {
+        "source_id": "arxiv:math-ph/0611002v9",
+        "authors": "Assane Lo",
+        "title": "Witten Laplacian Methods for the Decay of Correlations",
+        "version": 9,
+        "source_url": "https://arxiv.org/src/math-ph/0611002v9",
+        "archive_sha256": "22c7ba8019f39369fe8a2a60184158e25934db2b8c010647e6193eae8507ba79",
+        "original_files": [
+          {
+            "path": "original/original.tex",
+            "bytes": 121680,
+            "sha256": "14309e2d8487a2c7593b1809ec17fce32c3bbc326d81495263542da83e185ac9"
+          }
+        ],
+        "actual_reading": [
+          [
+            308,
+            446
+          ],
+          [
+            2029,
+            2083
+          ]
+        ],
+        "receiving_proofs": "PT9–PT12 and PT30–PT32; full curved weighted-operator dictionary and compact convexity obstruction",
+        "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task’s machine-readable source extension after original author TeX acquisition.",
+        "original_archive_preserved": true,
+        "source_pdf_used": false,
+        "reading_is_bounded": true
+      }
+    ],
+    "application": "Retained weighted-form provenance from Johnsen and Lo for the original current representation; no additional reading claimed for these sources."
+  },
+  {
+    "source_id": "arxiv:2401.10507v4",
+    "author": "Sourav Chatterjee",
+    "title": "A scaling limit of SU(2) lattice Yang-Mills-Higgs theory",
+    "version": "v4, 2026-04-11",
+    "archive_sha256": "5b3477e3d3bea263898624adf7c24082cff0470f8e943e812f543df66a011740",
+    "tex_sha256": "9a21f439307be9893695c408bbd593fed105dd8886cc5321291520bea0dbfe28",
+    "original_tex": "su2convergence19.tex",
+    "read_lines": [
+      [
+        300,
+        394
+      ],
+      [
+        581,
+        613
+      ],
+      [
+        1265,
+        1501
+      ]
+    ],
+    "proof_locators": [
+      "stereolmm",
+      "densitycor",
+      "vdens2",
+      "keylmm",
+      "approxdens",
+      "newdensity",
+      "ueformula",
+      "ueformula2"
+    ],
+    "application": "SC1–SC17: exact coordinate, metric, state and current map; original unfixed Haar marginal and moments; complete rational ordered action; full-density counterexample to the printed O(g^2) remainder after its quadratic action; original coupling-path comparison. Further programme derivation SC18–SC24 evaluates full actual-state gauge averages and original force contractions, not an additional result imported from this author source.",
+    "not_read": "Complete scaling-limit proof and total-variation estimates after line1501; no disproof of the main theorem claimed.",
+    "archive_intact": true,
+    "novelty_claim": false
+  },
+  {
+    "source_id": "programme:TCR-SC-20261012",
+    "proofs": [
+      {
+        "source": "TWO_SIDED_CURRENT_RESIDUAL.md",
+        "prefix": "TCR",
+        "tags": 21,
+        "owner_sha256": "17de0d938a4b698e8dcefaa72ee3b786acbc2f0257ee28531769b5aecf10a1ce",
+        "public_sha256": "a062d6713e615722b3c12f11ab4091beb7623c9b52d0034284fcafb419ed4f60",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      },
+      {
+        "source": "STEREOGRAPHIC_CURRENT_AND_CUBIC.md",
+        "prefix": "SC",
+        "tags": 24,
+        "owner_sha256": "280f8373e6c0de711603de52da4e44e0f85577f6df27520e607ed6b56a995d72",
+        "public_sha256": "6ff800455088d1d09ea631a35b51e75807f889f8677aa223bfc0d17ac92b0aa8",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "CURRENT_TAILS_AND_RETAINED_SOURCE.md",
+        "version": "49fb910b4a77964cd611df7d0d6645f61ec2c5cf",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/49fb910b4a77964cd611df7d0d6645f61ec2c5cf/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_TAILS_AND_RETAINED_SOURCE.md",
+        "sha256": "ca3cb695b47531ddb2b0fe20f4afb5deda37c2a162cb3b21567c837b7d4ba962"
+      },
+      {
+        "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
+        "version": "49fb910b4a77964cd611df7d0d6645f61ec2c5cf",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/49fb910b4a77964cd611df7d0d6645f61ec2c5cf/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
+        "sha256": "16fb486b63e023428e9615f494b4534a19cf772561061a93940c2419c04d0be6"
+      },
+      {
+        "source": "ORIGINAL_SOURCE_HESSIAN_AND_FILTER.md",
+        "version": "49fb910b4a77964cd611df7d0d6645f61ec2c5cf",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/49fb910b4a77964cd611df7d0d6645f61ec2c5cf/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_SOURCE_HESSIAN_AND_FILTER.md",
+        "sha256": "5bc5378713d67a0edf1426df215d647dff637044675b20e8de59fcfe2428bd25"
+      },
+      {
+        "source": "ORDERED_WILSON_ACTION.md",
+        "version": "49fb910b4a77964cd611df7d0d6645f61ec2c5cf",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/49fb910b4a77964cd611df7d0d6645f61ec2c5cf/yang-mills/continuations/20261011-central-signs-shrinking-window/ORDERED_WILSON_ACTION.md",
+        "sha256": "037cfb4612d6c88bb5405aff49a05e3d25559544a5b6b2f02b23c89e6fb0828b"
+      },
+      {
+        "source": "POSITIVE_TIME_COVARIANCE.md",
+        "version": "49fb910b4a77964cd611df7d0d6645f61ec2c5cf",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/49fb910b4a77964cd611df7d0d6645f61ec2c5cf/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_COVARIANCE.md",
+        "sha256": "826d030593abd2f9b9d43dacf6af766004bc4232f1f9def6ac3bf8090ce067c1"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-12T08:08:11.478758+00:00",
+      "coverage": "TCR1–TCR21 and SC1–SC24 read and derived in full: exact complete residual; actual force/score pairing; cutoff source and Gram errors; finite invertibility; original uncut metric and two-sided signed window; sharper least-squares coefficient and singular-value bound; exact source stereographic coordinates, probability-Haar factor and original radius-two metric; actual marginal and exact moment threshold; full rational ordered action and full-density counterexample; explicit state and parameter maps. SC18–SC24 full orbit-integral proof, all four-link tensor constants and contractions, all five rational action expectations, original path cancellation, score-weighted extension and complete Pauli/staple force receiver.",
+      "strengthening": "Projection orthogonality improves cutoff amplitude error to O(a^(rho-3)*sqrt(log(1/a))). Direct singular-value perturbation permits rho>9/2 for an o(a^(3/2)) cutoff amplitude without the coarse Gram loss. The interacting residual is retained. SC19 gives the exact actual-state four-link gauge tensor with factor1/128. SC21 evaluates every signed rational action term in terms of the original plaquette mean; SC22 evaluates their original-path mean limits. SC23 retains every bounded gauge-invariant multiplier, including G_e and J_X. SC24 evaluates the force contraction in original loop moments.",
+      "correction": "The printed O(g^2) plaquette-action remainder in arXiv2401.10507v4 label approxdens omits a cubic group term yielding an O(g) action term. SC8–SC15 prove an exact full-density counterexample and rational replacement. This does not disprove the main scaling theorem. Actual unfixed-link stereographic moments diverge at order three and above, so polynomial high-moment substitution cannot control this vacuum.",
+      "limitations": "No original interacting residual or signed window value has been evaluated. State comparison is finite-regulator and not uniform. Reconstruction, interacting continuum identification, global smoothness and the no-gap endpoint remain unproved.",
+      "actual_reading": "Working TCR1–TCR21 and SC1–SC24 read in full; relevant CTI current, moment, retained-source and inverse definitions directly checked; HSF/FTC proofs retained from prior review; OW14–OW25 reread for ordered-action propagation. Chatterjee v4 original author TeX lines300–394,581–613,1265–1501 read. Other index routes and SU(3) source preamble do not count as mathematical reading. PG25–PG26 directly reread for the exact rooted-word reference.",
+      "diagnostics": {
+        "checks": 2169,
+        "all_passed": true,
+        "scopes": [
+          "Finite positive operators verify full residual, two-sided response and signed window bounds; coupled radius-two sphere densities independently verify the complete force/score source identity and least-squares defect. High-precision constants check the explicit cutoff tolerance. These models are not original Yang-Mills spectral or vacuum values.",
+          "Exact symbolic radius-two metric and Casimir; full rational SU(2) face multiplication; complete periodic 2D/3D/4D density-ratio counterexample; probability-Haar moment integrals; least-squares projection and singular-value bounds. No numerical evaluation of the original interacting residual.",
+          "Exact degree-two Haar cubature in each independent gauge variable checks all 256 four-link tensor entries at four holonomies and all five rational action averages. Direct original Pauli derivatives check the full force contraction. These verify analytic identities, not sampled vacuum data."
+        ]
+      },
+      "figures_inspected": [
+        "TWO_SIDED_CURRENT_MAP.png",
+        "STEREOGRAPHIC_CUBIC_AND_HAAR.png",
+        "GAUGE_AVERAGED_ACTION.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "TWO_SIDED_CURRENT_RESIDUAL.md",
+          "prefix": "TCR",
+          "tags": 21,
+          "owner_sha256": "17de0d938a4b698e8dcefaa72ee3b786acbc2f0257ee28531769b5aecf10a1ce",
+          "public_sha256": "a062d6713e615722b3c12f11ab4091beb7623c9b52d0034284fcafb419ed4f60",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        },
+        {
+          "source": "STEREOGRAPHIC_CURRENT_AND_CUBIC.md",
+          "prefix": "SC",
+          "tags": 24,
+          "owner_sha256": "280f8373e6c0de711603de52da4e44e0f85577f6df27520e607ed6b56a995d72",
+          "public_sha256": "6ff800455088d1d09ea631a35b51e75807f889f8677aa223bfc0d17ac92b0aa8",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-12T08:26:26.649720+00:00",
+        "tex_sha256": "83580a47ff7e25f8ad168b3f0d5a2a96bbb708dc855c32ce246998171c596cf9",
+        "pdf_sha256": "7e6a243e4dd8ef0b6978844b3fb224c9f102ccfbc1f2a0743b4e38b8a22468cc",
+        "pages": 886,
+        "source_files": 88,
+        "math_blocks": 20452,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-12T08:26:26.187623+00:00",
+          "complete": true,
+          "pages": 886,
+          "inspected_pages": [
+            228,
+            229,
+            230,
+            844,
+            845,
+            846,
+            864,
+            865,
+            866,
+            871,
+            872,
+            873,
+            874,
+            875,
+            876,
+            877,
+            878,
+            879,
+            880,
+            881,
+            882,
+            883,
+            884,
+            885,
+            886
+          ],
+          "contact_sheets": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "individually_inspected": [
+            883,
+            884,
+            885
+          ],
+          "figures": [
+            "TWO_SIDED_CURRENT_MAP.png",
+            "STEREOGRAPHIC_CUBIC_AND_HAAR.png",
+            "GAUGE_AVERAGED_ACTION.png"
+          ],
+          "findings": "All25 new and receiving pages inspected, including each complete new proof and every changed receiving note with neighbours. Gauge-average and original-force pages883–885 additionally inspected at full image size. Equations, signs, all five original-path coefficients, source links and captions are readable; no new overflow or missing glyph. Earlier59 overflow warnings and one inherited missing delta remain elsewhere; PDF retained for local QA only.",
+          "page_sha256": {
+            "228": "376dbdb5cf292a92603038a44de475e5cdabe7f2e03d7f536c5517798bce9b2f",
+            "229": "9d239b79d735db39e268b1013a475b7528952c3c8b8a1a627bbfd361fbd79f59",
+            "230": "ed90e67999510fbc18bc7d9ba1b90bf1e562503a4f39670d932d184a994a07af",
+            "844": "d16663f6d2f6259415d38aa4f30d620618107cdeb1786748c76033137f88635d",
+            "845": "9ffd3f557afb950e63dee41cd76e44f68e46d46cf0c224fe0acd0d0cdb5faebc",
+            "846": "bffb485a65791a7a1621bee4ebf7b6587b04e783bf8b9c916c43903878532bc3",
+            "864": "481a1f20a788f452e3c02c52c6cccc5f421043a89b0d369ba651e86ae3127d18",
+            "865": "d791ffe1fb84aed63424540a5cb244fb68fef87eb9e0d7c441e41cd1bd64b770",
+            "866": "a76c38895cb093b2c5a5b681daba725b3ecfe01e4cf629cce2044c6865dc94c6",
+            "871": "7fcc4fe83f68b727b6314e44cf774b66283bdce85da344711970ede899b1c7a7",
+            "872": "5e91fbaee5b4cf309149b4b686367b3e3650265e9de2626ba44b65a90991de26",
+            "873": "53084ebcdc70065bf6f7c76029a12c494112353976643233f12af0b9c9318203",
+            "874": "4451cfa15794ac7ec4e31f95bd0d11ff8cd684501ea80a6bbceb031ad420ab83",
+            "875": "e3fd02fadb618d3d36a9bede32ccc1066c2e8c1773479042215fa60788d9e09f",
+            "876": "1ac9f1db825d14d15b711db301167848d02d20bbae86b859c31ed6f3b20545ee",
+            "877": "c05a63a540f149d43ec36cd02ee337f619a0d6e37dfa6bd1d9a5b034923955bf",
+            "878": "51bbcc2779b57c0d93281ba59f18ea7388ff9b9818fdf877c6e9f1cb2266fd10",
+            "879": "8fe8ec8712eae64381caf1f170f84edb36ad290f17e430889d75751913099485",
+            "880": "07493eeaf2ca9b836d590cfc7bb42f05171365f8f7ae3af90ce452a4d2381f31",
+            "881": "8e8cfa1c1baf6173d205e572e733bccb04bf9e7800539f8e0e1749a634c14111",
+            "882": "cbe383da2fc6d91d249fbf9dcf3c951087d5367024948ffb8b109d689555195d",
+            "883": "21dc07f964439b5fc50c727aa4c8d0709d09e0e56abbad804db155da0652bad3",
+            "884": "759118ad017f281163ca5595836a2c52bb4a77eb9d00fd12b7b0315ccd842bf2",
+            "885": "432e434cab9fcf94d998df657ec4364a067be5fe4eba5718d72a00ad07eedd0b",
+            "886": "5aba4b0af4f38a3b736828119eaea7883438da813804a7c132282a5ff5fe6b7a"
+          }
+        }
+      }
+    },
+    "index_routes": "32 initial routing records and bounded exact arXiv lookup returning zero records; fresh primary author source obtained. No hit treated as read."
   }
 ]
