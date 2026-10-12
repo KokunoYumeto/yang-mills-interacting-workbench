@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T09:54:11.883139+00:00",
+  "checked_utc": "2026-10-12T10:30:24.486161+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -505,8 +505,8 @@
     },
     {
       "source": "ACTUAL_SCORE_MOMENTS_AND_SECOND_ENERGY.md",
-      "sha256": "001993b59a2561323964dee46d2dbb4a3b6e97fe004af17105c0c69d8a6c3e42",
-      "complete_math_blocks": 154,
+      "sha256": "f8dd851b87a3ec1813706e7b51f8400f0c653c8ce365ab37d63de2f5dd3eb3b1",
+      "complete_math_blocks": 159,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -523,8 +523,8 @@
     },
     {
       "source": "TWO_SIDED_CURRENT_RESIDUAL.md",
-      "sha256": "71d8828f71643a86688def65c7514728d2ebb38e3d88cf82a8670086fb196b5e",
-      "complete_math_blocks": 134,
+      "sha256": "5c1c7a966bfc114e2bff9a0b06786eb1a6606015c5dd9f7502966b62dd2d6745",
+      "complete_math_blocks": 139,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -535,20 +535,26 @@
     },
     {
       "source": "CENTERED_CURRENT_COVARIANCE.md",
-      "sha256": "06ee83c9872c1a037bcc838f916d24c0f7b4c36186afcc011b3188d5b46e81b0",
-      "complete_math_blocks": 240,
+      "sha256": "6c4bb6cf1a87d12208957e5fc6ae36ff9e1dd44a3eacb45f99675caf7c4bacb3",
+      "complete_math_blocks": 245,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "2f931cd85108ac41af4c4edb026b54e92c93f4b60ad4918554d210eecd479b90",
-      "complete_math_blocks": 231,
+      "sha256": "9e85787106718661416f5f9d9c6e022c29cbd36272c0444636c3f82561b844f9",
+      "complete_math_blocks": 236,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "QUANTITATIVE_FORCE_CURL.md",
-      "sha256": "98ee52fe4a0f667b25deef89e720e6bb4d3fa54d2b8c4b2a4b8301456cc1d6fa",
-      "complete_math_blocks": 185,
+      "sha256": "8d8f5794f0cd0d876105363712da294b80c0af14a507c74c51e28d1fedf58a62",
+      "complete_math_blocks": 190,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "THREE_SHIFT_GAINS_AND_SOURCE_GRAPH.md",
+      "sha256": "f53af0c5d649bc628f05940acf9b5593110433fc8bfdc6bdc7e3ac175a4f9064",
+      "complete_math_blocks": 263,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1071,6 +1077,16 @@
     {
       "file": "FORCE_CURL_ORIGINAL_PATH.png",
       "sha256": "15398c14d729139d5ded1dd8b6710c17b661d1d5f2d668298076fc0df8c98164",
+      "visually_inspected": true
+    },
+    {
+      "file": "SOURCE_GRAPH_AND_SPATIAL_RECEIVER.png",
+      "sha256": "56c7373843e7d8c3081ae6d27403cc656de8697bcc62e21752b68b5a50e6d48d",
+      "visually_inspected": true
+    },
+    {
+      "file": "SOURCE_GRAPH_ORIGINAL_GRID_DIAGNOSTICS.png",
+      "sha256": "41c9234419ef185ffd910c165dd4604daaa38f7536f77f088f1e26bbb6947161",
       "visually_inspected": true
     }
   ],
@@ -6570,6 +6586,148 @@
         4,
         5
       ]
+    }
+  },
+  "source_graph_review": {
+    "utc": "2026-10-12T10:23:54.093703+00:00",
+    "coverage": "QG1–QG20 fully derived and reviewed: actual three-shift augmented gains; complete SOM17 trace constants; exact source signs and deficit errors; full unsigned face incidence; source graph limit and retained-mask constants; complete joint angular matrix and its equal-component kernel; original raw summation by parts and extended Dirichlet domain; full-source force lower bounds and uniform-direction joint matrix limits.",
+    "strengthening": "Original full-face incidence improves graph bound24 to16, mask constant864 to576 and enlarged threshold384 to256. Original-cutoff traceless tests already retain a positive directional force floor. The equal-component kernel has a proved next spatial-scale lower bound36Dirichlet(phi), without assuming derivative convergence of vacuum means. Full original source force matrices have the stated a4 directional and a6 common-component lower bounds, including growing raw coefficient norms.",
+    "correction": "The source deficit error does not establish derivative convergence; the next-scale proof uses exact raw summation by parts and the full lower-semicontinuity argument instead. A finite family requires a uniform-direction compactness proof for its joint matrix bound; separate scalar limits alone were not substituted. The graph/source map is not commuted through the physical inverse.",
+    "limitations": "All original powers of a, full matrix/source correlations and physical residuals remain. Evaluated finite gains do not assign a positive unscaled spectral-window mass. Interacting continuum construction, reconstruction, theory identification and smooth global no-gap endpoint remain active.",
+    "actual_reading": "Canonical disk-index routing and retained author-source records used before literature expansion. QCF1–QCF16, DF source/projection/residual formulas, SOM15–SOM24 and CFC14–CFC21 checked against original finite constants. New QG1–QG20 derived in full. No additional external reading claimed.",
+    "diagnostics": {
+      "checks": 1452,
+      "all_passed": true,
+      "scope": "Finite reducing-operator gain inequalities, full complex face identity, original-grid source formula and exact zero-extension/summation-by-parts identities. Face-mean arrays are diagnostic inputs, not sampled Yang–Mills states. The analytic proofs control the actual state."
+    },
+    "figures_inspected": [
+      "SOURCE_GRAPH_AND_SPATIAL_RECEIVER.png",
+      "SOURCE_GRAPH_ORIGINAL_GRID_DIAGNOSTICS.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "THREE_SHIFT_GAINS_AND_SOURCE_GRAPH.md",
+        "prefix": "QG",
+        "tags": 20,
+        "owner_sha256": "b1a02620870d49d71d828ee5f348365fd92cfe255bc721caffc85ac54c2c6ec9",
+        "public_sha256": "f53af0c5d649bc628f05940acf9b5593110433fc8bfdc6bdc7e3ac175a4f9064",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T10:30:24.486161+00:00",
+      "tex_sha256": "25ead652a80c0101c19936aea4227c4a84af31d8148c2bce45fa3bfcf9117822",
+      "pdf_sha256": "6ae92c00989240deb570cf8db24cc48a406cbf306bd74c7f84a140e5bacca02c",
+      "pages": 944,
+      "source_files": 92,
+      "math_blocks": 21437,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T10:30:24.432011+00:00",
+        "complete": true,
+        "pages": 944,
+        "rendered_pages": [
+          860,
+          861,
+          862,
+          889,
+          890,
+          891,
+          911,
+          912,
+          913,
+          923,
+          924,
+          925,
+          932,
+          933,
+          934,
+          935,
+          936,
+          937,
+          938,
+          939,
+          940,
+          941,
+          942,
+          943,
+          944
+        ],
+        "contact_sheets": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "figures": [
+          "SOURCE_GRAPH_AND_SPATIAL_RECEIVER.png",
+          "SOURCE_GRAPH_ORIGINAL_GRID_DIAGNOSTICS.png"
+        ],
+        "findings": "All 25 new, receiving and adjacent pages inspected in seven contact sheets; both figures inspected at full resolution. New equations, captions and labels fit without clipping or overlap. No new overflow or missing glyph. Prior 59 overfull warnings and one old missing delta remain. PDF retained locally; complete sources published."
+      }
+    }
+  },
+  "source_graph_compile": {
+    "utc": "2026-10-12T10:30:24.486161+00:00",
+    "tex_sha256": "25ead652a80c0101c19936aea4227c4a84af31d8148c2bce45fa3bfcf9117822",
+    "pdf_sha256": "6ae92c00989240deb570cf8db24cc48a406cbf306bd74c7f84a140e5bacca02c",
+    "pages": 944,
+    "source_files": 92,
+    "math_blocks": 21437,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T10:30:24.432011+00:00",
+      "complete": true,
+      "pages": 944,
+      "rendered_pages": [
+        860,
+        861,
+        862,
+        889,
+        890,
+        891,
+        911,
+        912,
+        913,
+        923,
+        924,
+        925,
+        932,
+        933,
+        934,
+        935,
+        936,
+        937,
+        938,
+        939,
+        940,
+        941,
+        942,
+        943,
+        944
+      ],
+      "contact_sheets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "figures": [
+        "SOURCE_GRAPH_AND_SPATIAL_RECEIVER.png",
+        "SOURCE_GRAPH_ORIGINAL_GRID_DIAGNOSTICS.png"
+      ],
+      "findings": "All 25 new, receiving and adjacent pages inspected in seven contact sheets; both figures inspected at full resolution. New equations, captions and labels fit without clipping or overlap. No new overflow or missing glyph. Prior 59 overfull warnings and one old missing delta remain. PDF retained locally; complete sources published."
     }
   }
 }

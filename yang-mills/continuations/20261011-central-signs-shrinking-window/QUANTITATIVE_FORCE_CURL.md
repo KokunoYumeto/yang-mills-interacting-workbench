@@ -382,3 +382,19 @@ The face diagram retains all six pairs. The field panel shows only the stated sl
 J_t=12(8/15)^3.
 \]
 Thus the plotted \(C=\max\{\kappa_*,64M_f^2K_R/J_t\}\) is the actual prescribed constant for this test. Every finite \(q_j=\lceil R/a_j\rceil+3\) is retained. The curves show proved bound constants, not measurements of eigenvalues or spectral weight. [Reproducible derivative and graph diagnostics](check_quantitative_curl.py) and the [source-use record](QUANTITATIVE_CURL_SOURCE_USE_LEDGER.json) accompany the full proofs.
+
+## Joint source graph and spatial force bounds
+
+[QG1–QG20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/THREE_SHIFT_GAINS_AND_SOURCE_GRAPH.md) quantify the original three-shift augmented gains and evaluate the actual raw-source graph:
+\[
+a_j^{-3}\mathcal G(\mathsf b_{I_j})\longrightarrow9J_{\rm an},
+\qquad
+J_{\rm an}=\int\sum_{d<k}(t_d-t_k)^2.
+\]
+The complete face incidence improves the graph-norm constant from24 to16 and strengthens the retained-source estimates. The exact joint leading matrix has the equal-component test space as its kernel. On that space, the full original summation-by-parts calculation gives
+\[
+\mathbf f=(\varphi,\varphi,\varphi):\qquad
+\liminf a_j^{-5}\mathcal G(\mathsf b_{I_j})
+\ge36\mathcal E(\varphi),
+\]
+where \(\mathcal E\) is the extended Dirichlet energy. No derivative regularity of the vacuum means is assumed. QG18–QG20 propagate these results into the full joint source-force matrices at their original \(a_j^4\) and \(a_j^6\) scales, preserving mixed entries, raw coefficient norms and the complete Hessian-pair term. The noncommuting inverse and signed physical residual still determine the spectral window; no limiting mass or smooth interacting no-gap endpoint is assumed.
