@@ -1,0 +1,189 @@
+[
+  {
+    "source_id": "programme:PT-human-provenance-retained-GG-20261012",
+    "primary_sources": [
+      {
+        "source_id": "arxiv:1703.10011v2",
+        "authors": "Jon Johnsen",
+        "title": "On the spectral properties of Witten-Laplacians, their range projections and Brascamp-Lieb’s inequality",
+        "version": 2,
+        "source_url": "https://arxiv.org/src/1703.10011v2",
+        "archive_sha256": "65d3656817237c4099ef10d1e2ea64489ceab2a090d602c52f36202733dace67",
+        "original_files": [
+          {
+            "path": "original/original.tex",
+            "bytes": 125102,
+            "sha256": "0ecf58f9c246bc1c2233c1052767a61c92d944a9948ecf0e396f08754a701120"
+          }
+        ],
+        "actual_reading": [
+          [
+            934,
+            1167
+          ],
+          [
+            1439,
+            1558
+          ]
+        ],
+        "receiving_proofs": "PT9–PT16, PT36; exact-range polar isometry and domains",
+        "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task’s machine-readable source extension after original author TeX acquisition.",
+        "original_archive_preserved": true,
+        "source_pdf_used": false,
+        "reading_is_bounded": true
+      },
+      {
+        "source_id": "arxiv:math-ph/0611002v9",
+        "authors": "Assane Lo",
+        "title": "Witten Laplacian Methods for the Decay of Correlations",
+        "version": 9,
+        "source_url": "https://arxiv.org/src/math-ph/0611002v9",
+        "archive_sha256": "22c7ba8019f39369fe8a2a60184158e25934db2b8c010647e6193eae8507ba79",
+        "original_files": [
+          {
+            "path": "original/original.tex",
+            "bytes": 121680,
+            "sha256": "14309e2d8487a2c7593b1809ec17fce32c3bbc326d81495263542da83e185ac9"
+          }
+        ],
+        "actual_reading": [
+          [
+            308,
+            446
+          ],
+          [
+            2029,
+            2083
+          ]
+        ],
+        "receiving_proofs": "PT9–PT12 and PT30–PT32; full curved weighted-operator dictionary and compact convexity obstruction",
+        "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task’s machine-readable source extension after original author TeX acquisition.",
+        "original_archive_preserved": true,
+        "source_pdf_used": false,
+        "reading_is_bounded": true
+      }
+    ],
+    "application": "Retained original-author weighted-form provenance; complete finite graph and source calculation. No additional external reading or novelty claim."
+  },
+  {
+    "source_id": "programme:GG-20261012",
+    "proofs": [
+      {
+        "source": "EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md",
+        "prefix": "GG",
+        "tags": 15,
+        "owner_sha256": "cef657264598bf735cc30063632fe505af279f235c20d07d104f60cdef1a891a",
+        "public_sha256": "02d914cc9c6b0f87cf800139acef27ef8202f76913f8fd8c7301eaaa4a89385c",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source_id": "programme:QUANTITATIVE_FORCE_CURL.md",
+        "version": "b04f7c833679773bf76ff8db71fe29dc19f5fae2",
+        "sha256": "8d8f5794f0cd0d876105363712da294b80c0af14a507c74c51e28d1fedf58a62",
+        "coverage": "Original definitions and QCF10–QCF16 reread directly, including both endpoints and full force receiver.",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b04f7c833679773bf76ff8db71fe29dc19f5fae2/yang-mills/continuations/20261011-central-signs-shrinking-window/QUANTITATIVE_FORCE_CURL.md"
+      },
+      {
+        "source_id": "programme:CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
+        "version": "b04f7c833679773bf76ff8db71fe29dc19f5fae2",
+        "sha256": "9e85787106718661416f5f9d9c6e022c29cbd36272c0444636c3f82561b844f9",
+        "coverage": "Original definitions and DF14–DF20 reread directly, exact gain and physical residual.",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b04f7c833679773bf76ff8db71fe29dc19f5fae2/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md"
+      },
+      {
+        "source_id": "programme:THREE_SHIFT_GAINS_AND_SOURCE_GRAPH.md",
+        "version": "b04f7c833679773bf76ff8db71fe29dc19f5fae2",
+        "sha256": "f53af0c5d649bc628f05940acf9b5593110433fc8bfdc6bdc7e3ac175a4f9064",
+        "coverage": "QG5–QG7 and QG18–QG20 directly reread; prior QG12–QG13 joint graph and kernel proof supplies GG15.",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/b04f7c833679773bf76ff8db71fe29dc19f5fae2/yang-mills/continuations/20261011-central-signs-shrinking-window/THREE_SHIFT_GAINS_AND_SOURCE_GRAPH.md"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-12T10:45:47.558827+00:00",
+      "coverage": "GG1–GG15 fully derived and reviewed. Full raw staggered sine basis and exceptional longitudinal modes; exact block inverse and every norm factor; retained-set Schur complement; dependent-source projection and physical gain with complete residual; fixed-mode singular inverse and full original-grid source tail; continuum comparison operator and actual source inverse-form limit; complete joint kernels and nine original shift moments.",
+      "strengthening": "The sharp graph constant is extended to the full Green matrix. Actual source inverse form divided by a tends to9/4 times the Dirichlet inverse form of the component sum. Together with the existing angular form this detects every original test direction modulo exact family relations. Original state error needs no derivative convergence.",
+      "correction": "No inverse commutation, boundary-mode deletion, or exchange of infinite sums without tail control is used. The retained-set Green limit has an explicit nonnegative complement defect. Actual ZB moments and signed physical residual remain distinct from the evaluated raw-source Green form.",
+      "limitations": "No nonzero limiting spectral-window mass or reconstructed smooth gapless interacting continuum state is established. The nine actual physical moments and full residual remain active.",
+      "actual_reading": "Canonical index queried first with zero matching routing hits; QCF10–16, DF14–20 and QG5–7/QG18–20 reread in original programme sources. QG12–13 joint matrix provider retained. No additional external reading or novelty claimed.",
+      "diagnostics": {
+        "checks": 251,
+        "all_passed": true,
+        "scope": "Direct original face graph versus complete analytical sine blocks and Green inverse q2..6; retained-set identities; complex noncommuting dependent frames; all nine polynomial terms; FFT checked against direct inverse. Original-grid source arrays explicitly diagnostic."
+      },
+      "figures_inspected": [
+        "EXACT_PATCH_GREEN_MATRIX.png",
+        "SOURCE_GREEN_LIMIT_AND_RECEIVER.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md",
+          "prefix": "GG",
+          "tags": 15,
+          "owner_sha256": "cef657264598bf735cc30063632fe505af279f235c20d07d104f60cdef1a891a",
+          "public_sha256": "02d914cc9c6b0f87cf800139acef27ef8202f76913f8fd8c7301eaaa4a89385c",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-12T10:47:55.691360+00:00",
+        "tex_sha256": "77feb947b18b6b3bce957c753d784a9fd5c2a724fa31001523c9a796eddca1f7",
+        "pdf_sha256": "07b6e3fafa279b4190f4631a96bd65a5e38ff7cf36a713fd226b28dbc30e2815",
+        "pages": 958,
+        "source_files": 93,
+        "math_blocks": 21727,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-12T10:47:55.6334646Z",
+          "complete": true,
+          "pages": 958,
+          "rendered_pages": [
+            890,
+            891,
+            892,
+            925,
+            926,
+            927,
+            935,
+            936,
+            937,
+            947,
+            948,
+            949,
+            950,
+            951,
+            952,
+            953,
+            954,
+            955,
+            956,
+            957,
+            958
+          ],
+          "contact_sheets": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "figures": [
+            "EXACT_PATCH_GREEN_MATRIX.png",
+            "SOURCE_GREEN_LIMIT_AND_RECEIVER.png"
+          ],
+          "findings": "All21 new, receiving and adjacent pages inspected in six contact sheets. Both figures inspected separately at full resolution. Every new equation, diagram and caption fits without clipping or overlap. No new overflow or missing glyph; inherited59warnings and one old missing delta remain. PDF retained locally."
+        }
+      }
+    },
+    "index_query": "SELECT unit_id,title,authors,arxiv_ids_json FROM canonical_units WHERE lower(title) LIKE '%green function%' OR lower(title) LIKE '%discrete sine%' OR lower(title) LIKE '%schur complement%' OR lower(title) LIKE '%finite difference%' LIMIT 24",
+    "index_routing_hit_count": 0,
+    "routing_is_not_reading": true
+  }
+]

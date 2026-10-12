@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T10:30:24.486161+00:00",
+  "checked_utc": "2026-10-12T10:47:55.691360+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -523,8 +523,8 @@
     },
     {
       "source": "TWO_SIDED_CURRENT_RESIDUAL.md",
-      "sha256": "5c1c7a966bfc114e2bff9a0b06786eb1a6606015c5dd9f7502966b62dd2d6745",
-      "complete_math_blocks": 139,
+      "sha256": "547a437483684b6769c9464ed496a3f4c8eb3c4181120a4877cb71b49565b430",
+      "complete_math_blocks": 142,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -541,20 +541,26 @@
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "9e85787106718661416f5f9d9c6e022c29cbd36272c0444636c3f82561b844f9",
-      "complete_math_blocks": 236,
+      "sha256": "4877e0747d95174b02fca81c8044a6bb20f6c8e3f3cd112034fbae5c75e4a593",
+      "complete_math_blocks": 239,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "QUANTITATIVE_FORCE_CURL.md",
-      "sha256": "8d8f5794f0cd0d876105363712da294b80c0af14a507c74c51e28d1fedf58a62",
-      "complete_math_blocks": 190,
+      "sha256": "b511b3e78c5fb069a0618278285502f35383b8652bcac97d8a9330da1c1e4f02",
+      "complete_math_blocks": 193,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "THREE_SHIFT_GAINS_AND_SOURCE_GRAPH.md",
-      "sha256": "f53af0c5d649bc628f05940acf9b5593110433fc8bfdc6bdc7e3ac175a4f9064",
-      "complete_math_blocks": 263,
+      "sha256": "92df3dc7b27be04c9992f6f8a52fa2135221fced52db9f3948a6519cb879a31a",
+      "complete_math_blocks": 266,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md",
+      "sha256": "02d914cc9c6b0f87cf800139acef27ef8202f76913f8fd8c7301eaaa4a89385c",
+      "complete_math_blocks": 278,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1087,6 +1093,16 @@
     {
       "file": "SOURCE_GRAPH_ORIGINAL_GRID_DIAGNOSTICS.png",
       "sha256": "41c9234419ef185ffd910c165dd4604daaa38f7536f77f088f1e26bbb6947161",
+      "visually_inspected": true
+    },
+    {
+      "file": "EXACT_PATCH_GREEN_MATRIX.png",
+      "sha256": "62622431179222fed9551ea622c63485388c2843e94bf5965cab8a9897478c65",
+      "visually_inspected": true
+    },
+    {
+      "file": "SOURCE_GREEN_LIMIT_AND_RECEIVER.png",
+      "sha256": "4374e0a9722aeeab29fceed1755b4b6fc376de8685241e246baf1c7eb19d8493",
       "visually_inspected": true
     }
   ],
@@ -6728,6 +6744,138 @@
         "SOURCE_GRAPH_ORIGINAL_GRID_DIAGNOSTICS.png"
       ],
       "findings": "All 25 new, receiving and adjacent pages inspected in seven contact sheets; both figures inspected at full resolution. New equations, captions and labels fit without clipping or overlap. No new overflow or missing glyph. Prior 59 overfull warnings and one old missing delta remain. PDF retained locally; complete sources published."
+    }
+  },
+  "graph_green_review": {
+    "utc": "2026-10-12T10:45:47.558827+00:00",
+    "coverage": "GG1–GG15 fully derived and reviewed. Full raw staggered sine basis and exceptional longitudinal modes; exact block inverse and every norm factor; retained-set Schur complement; dependent-source projection and physical gain with complete residual; fixed-mode singular inverse and full original-grid source tail; continuum comparison operator and actual source inverse-form limit; complete joint kernels and nine original shift moments.",
+    "strengthening": "The sharp graph constant is extended to the full Green matrix. Actual source inverse form divided by a tends to9/4 times the Dirichlet inverse form of the component sum. Together with the existing angular form this detects every original test direction modulo exact family relations. Original state error needs no derivative convergence.",
+    "correction": "No inverse commutation, boundary-mode deletion, or exchange of infinite sums without tail control is used. The retained-set Green limit has an explicit nonnegative complement defect. Actual ZB moments and signed physical residual remain distinct from the evaluated raw-source Green form.",
+    "limitations": "No nonzero limiting spectral-window mass or reconstructed smooth gapless interacting continuum state is established. The nine actual physical moments and full residual remain active.",
+    "actual_reading": "Canonical index queried first with zero matching routing hits; QCF10–16, DF14–20 and QG5–7/QG18–20 reread in original programme sources. QG12–13 joint matrix provider retained. No additional external reading or novelty claimed.",
+    "diagnostics": {
+      "checks": 251,
+      "all_passed": true,
+      "scope": "Direct original face graph versus complete analytical sine blocks and Green inverse q2..6; retained-set identities; complex noncommuting dependent frames; all nine polynomial terms; FFT checked against direct inverse. Original-grid source arrays explicitly diagnostic."
+    },
+    "figures_inspected": [
+      "EXACT_PATCH_GREEN_MATRIX.png",
+      "SOURCE_GREEN_LIMIT_AND_RECEIVER.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md",
+        "prefix": "GG",
+        "tags": 15,
+        "owner_sha256": "cef657264598bf735cc30063632fe505af279f235c20d07d104f60cdef1a891a",
+        "public_sha256": "02d914cc9c6b0f87cf800139acef27ef8202f76913f8fd8c7301eaaa4a89385c",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T10:47:55.691360+00:00",
+      "tex_sha256": "77feb947b18b6b3bce957c753d784a9fd5c2a724fa31001523c9a796eddca1f7",
+      "pdf_sha256": "07b6e3fafa279b4190f4631a96bd65a5e38ff7cf36a713fd226b28dbc30e2815",
+      "pages": 958,
+      "source_files": 93,
+      "math_blocks": 21727,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T10:47:55.6334646Z",
+        "complete": true,
+        "pages": 958,
+        "rendered_pages": [
+          890,
+          891,
+          892,
+          925,
+          926,
+          927,
+          935,
+          936,
+          937,
+          947,
+          948,
+          949,
+          950,
+          951,
+          952,
+          953,
+          954,
+          955,
+          956,
+          957,
+          958
+        ],
+        "contact_sheets": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "figures": [
+          "EXACT_PATCH_GREEN_MATRIX.png",
+          "SOURCE_GREEN_LIMIT_AND_RECEIVER.png"
+        ],
+        "findings": "All21 new, receiving and adjacent pages inspected in six contact sheets. Both figures inspected separately at full resolution. Every new equation, diagram and caption fits without clipping or overlap. No new overflow or missing glyph; inherited59warnings and one old missing delta remain. PDF retained locally."
+      }
+    }
+  },
+  "graph_green_compile": {
+    "utc": "2026-10-12T10:47:55.691360+00:00",
+    "tex_sha256": "77feb947b18b6b3bce957c753d784a9fd5c2a724fa31001523c9a796eddca1f7",
+    "pdf_sha256": "07b6e3fafa279b4190f4631a96bd65a5e38ff7cf36a713fd226b28dbc30e2815",
+    "pages": 958,
+    "source_files": 93,
+    "math_blocks": 21727,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T10:47:55.6334646Z",
+      "complete": true,
+      "pages": 958,
+      "rendered_pages": [
+        890,
+        891,
+        892,
+        925,
+        926,
+        927,
+        935,
+        936,
+        937,
+        947,
+        948,
+        949,
+        950,
+        951,
+        952,
+        953,
+        954,
+        955,
+        956,
+        957,
+        958
+      ],
+      "contact_sheets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "figures": [
+        "EXACT_PATCH_GREEN_MATRIX.png",
+        "SOURCE_GREEN_LIMIT_AND_RECEIVER.png"
+      ],
+      "findings": "All21 new, receiving and adjacent pages inspected in six contact sheets. Both figures inspected separately at full resolution. Every new equation, diagram and caption fits without clipping or overlap. No new overflow or missing glyph; inherited59warnings and one old missing delta remain. PDF retained locally."
     }
   }
 }

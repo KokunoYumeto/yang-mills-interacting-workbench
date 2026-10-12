@@ -514,3 +514,14 @@ I_1=\frac{144}{R}\sum_{r=0}^4\frac{(-1)^r\binom4r}{2r+3},\\
 \end{gathered}
 \]
 These follow by expanding \((1-y^2)^6\) for the squared one-dimensional factor, and \(144y^2(1-y^2)^4/R^2\) for its squared derivative, with \(x=Ry/2\) and both endpoints retained. The plots use the original \(a_j=(100j)^{-1}\), original fitting offset and full zero extension. [Reproducible gain, graph and summation-by-parts checks](check_source_graph.py) and the [source-use record](SOURCE_GRAPH_SOURCE_USE_LEDGER.json) accompany the complete proofs.
+
+## Exact source Green limit and physical inverse receiver
+
+[GG1–GG15](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md) give the complete original patch Green matrix, including every longitudinal boundary mode and its raw sine norm. They evaluate the actual interacting source form:
+\[
+a_j^{-1}\mathsf b_{I_j}^*\mathsf G_{I_j}^{-1}\mathsf b_{I_j}
+\longrightarrow
+\frac94\langle h,\mathcal T_Rh\rangle,
+\qquad h=f_{12}+f_{13}+f_{23},
+\]
+where \(\mathcal T_R\) is the fully specified Dirichlet inverse on the original physical support cube. The proof retains the full vacuum error and bounds every high and boundary mode before taking the limit. Together with QG's angular graph form, the joint limit detects every original test combination except exact zero relations. GG6–GG8 and GG14 construct the exact noncommuting map through the actual physical matrix \(Z\), preserving its nine shift-moment terms, dependent-frame kernel, graph projection residual, full Hessian-pair term and remaining optimized residual. The retained-set correction is explicit in GG13. Evaluation of the signed physical window and construction of the smooth interacting no-gap state continue.
