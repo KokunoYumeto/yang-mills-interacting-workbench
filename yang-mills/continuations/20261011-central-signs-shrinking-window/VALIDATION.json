@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T08:26:26.649720+00:00",
+  "checked_utc": "2026-10-12T09:02:56.558386+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -361,8 +361,8 @@
     },
     {
       "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
-      "sha256": "1896c2e09b22016aec1cf77de50c175368d3ffa8f4ee8b7141060f18206ad918",
-      "complete_math_blocks": 488,
+      "sha256": "dde8663f4c18225a791f7669f891127a687c1128ea78d2d1a83217360cc83335",
+      "complete_math_blocks": 493,
       "split_to_aligned_wrappers": 2
     },
     {
@@ -409,8 +409,8 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "8a300be298b85c8a523bb09ff66b81f05ffa40957d263316b3bf73dd9fe1f9d8",
-      "complete_math_blocks": 208,
+      "sha256": "72790d6d8dc0ea502ba12a1aeec8c6bde33f0296d9c5135126e19437868be863",
+      "complete_math_blocks": 213,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -505,14 +505,14 @@
     },
     {
       "source": "ACTUAL_SCORE_MOMENTS_AND_SECOND_ENERGY.md",
-      "sha256": "b98a9287ffa1320213f39542194a7b92abfa91b1ca8b19be3e2bb9ce86c746cb",
-      "complete_math_blocks": 149,
+      "sha256": "001993b59a2561323964dee46d2dbb4a3b6e97fe004af17105c0c69d8a6c3e42",
+      "complete_math_blocks": 154,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CURRENT_TAILS_AND_RETAINED_SOURCE.md",
-      "sha256": "bc57037cea6584d9704fbc4a9eff238d56ee66600340a2be93da5c742ab589a8",
-      "complete_math_blocks": 217,
+      "sha256": "ba6dea589bf21c6e390c5f93b18b332fd36efa6428b903f82598cb1e3eb725a9",
+      "complete_math_blocks": 222,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -523,14 +523,20 @@
     },
     {
       "source": "TWO_SIDED_CURRENT_RESIDUAL.md",
-      "sha256": "a062d6713e615722b3c12f11ab4091beb7623c9b52d0034284fcafb419ed4f60",
-      "complete_math_blocks": 124,
+      "sha256": "e77f8004ccf52415aa2451c3533030c00690ba6eb14b3313482389dfb27b2e9a",
+      "complete_math_blocks": 129,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "STEREOGRAPHIC_CURRENT_AND_CUBIC.md",
       "sha256": "6ff800455088d1d09ea631a35b51e75807f889f8677aa223bfc0d17ac92b0aa8",
       "complete_math_blocks": 209,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "CENTERED_CURRENT_COVARIANCE.md",
+      "sha256": "de87bc755915b3bf73e1ef78880b9a833e4f388af764a6103372bd8cad09f555",
+      "complete_math_blocks": 235,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1023,6 +1029,16 @@
     {
       "file": "GAUGE_AVERAGED_ACTION.png",
       "sha256": "47bc81b8820880fbccf7cfc1017a03f7c236715e6bd8ff570f3c576ecc71848f",
+      "visually_inspected": true
+    },
+    {
+      "file": "CENTERED_CURRENT_MAP.png",
+      "sha256": "b02dcca2fb6449691a7d7d903173c5f1a77024cc8f8df6ae94c4e2f1638be6be",
+      "visually_inspected": true
+    },
+    {
+      "file": "PLAQUETTE_FLOOR_AND_KINETIC.png",
+      "sha256": "fe0049681e3d1fcd8c8875bbfb6a242adb42cab78922bda26ea88c964dbc98bc",
       "visually_inspected": true
     }
   ],
@@ -6116,6 +6132,148 @@
         "885": "432e434cab9fcf94d998df657ec4364a067be5fe4eba5718d72a00ad07eedd0b",
         "886": "5aba4b0af4f38a3b736828119eaea7883438da813804a7c132282a5ff5fe6b7a"
       }
+    }
+  },
+  "centered_current_review": {
+    "utc": "2026-10-12T09:00:49.478843+00:00",
+    "coverage": "CFC1–CFC26 derived and read in full. Checked force signs against SOM9 and pointwise curved Bochner calculations; correct doubled force; positive mean-six-b density and full Hessian mixture; fixed-C source fraction; exact tilted tails and metric; full complementary Schur term. Direct individual-face uncertainty proves floor, deterministic spatial mean domination, full-root kinetic improvement and original resolvent receivers.",
+    "strengthening": "CFC22–CFC26 propagate CTI19-type information to each individual face and the full spatial vacuum mean. Every limiting orientation mean dominates 3*kappa/16 times volume. Additional kinetic ceiling is strictly better for kappa*R<128/3. Original force upper ceiling K_R remains. CFC14–CFC20 give uniform tilted tails and a logarithm-free inverse floor on a set carrying at least three quarters of the squared original source norm.",
+    "correction": "Checked signs retain twice the force. Total variation alone does not control the growing original observable. HVR18–HVR22 provide both deficit roots, while SG14 by itself states the complementary kinetic ceiling.",
+    "limitations": "No original signed source/Gram value, least-squares defect or spectral-window mass assigned. Comparison measures are finite-regulator. Spatial domination concerns deterministic vacuum means, not all operator-measure vectors, sample smoothness or reconstructed dynamics. Interacting continuum construction, theory identification and smooth no-gap endpoint remain active work.",
+    "actual_reading": "Full new proof, TCR source/residual providers and SC24; SOM1–SOM17; CTI1–CTI20 and retained-source definitions; SG6–SG20; HVR17–HVR22; CM58–CM63 directly read. Remaining pinned sources retain prior exact reading ledgers. Canonical-index routing and human author-source provenance were recovered before deriving; no new external source consulted in this increment.",
+    "diagnostics": {
+      "checks": 796,
+      "all_passed": true,
+      "scope": "Exact curved positive comparison densities check full Bochner, covariance and doubled-force identities. Finite group-gradient arrays check the original four-face constants. Positive mixtures, complete Gram matrices and the original finite budget constants check the stated maps and estimates. Auxiliary data are not original Yang-Mills vacuum or spectral values."
+    },
+    "figures_inspected": [
+      "CENTERED_CURRENT_MAP.png",
+      "PLAQUETTE_FLOOR_AND_KINETIC.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "CENTERED_CURRENT_COVARIANCE.md",
+        "prefix": "CFC",
+        "tags": 26,
+        "owner_sha256": "397293f1b1c8f12cf990cc24bb0318de3143aed76a6af33c44ad88110935543d",
+        "public_sha256": "de87bc755915b3bf73e1ef78880b9a833e4f388af764a6103372bd8cad09f555",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T09:02:56.558386+00:00",
+      "tex_sha256": "d712657a7ee7238818f0d206514020247710ac59b0fc7c17d722dc55dabce9b9",
+      "pdf_sha256": "ac17b67e54098aaf340980ef3e0b1b8fb689894ce76c3ec0c3efb1573f18fb70",
+      "pages": 901,
+      "source_files": 89,
+      "math_blocks": 20712,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T09:02:56.285782+00:00",
+        "complete": true,
+        "pages": 901,
+        "rendered_pages": [
+          619,
+          620,
+          621,
+          710,
+          711,
+          712,
+          856,
+          857,
+          858,
+          868,
+          869,
+          870,
+          881,
+          882,
+          883,
+          892,
+          893,
+          894,
+          895,
+          896,
+          897,
+          898,
+          899,
+          900,
+          901
+        ],
+        "contact_sheets_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "figures_inspected": [
+          "CENTERED_CURRENT_MAP.png",
+          "PLAQUETTE_FLOOR_AND_KINETIC.png"
+        ],
+        "findings": "All25 new proof and changed receiving/adjacent pages visually inspected. CFC1–26 formulas, full domains, captions and figures legible. No new clipping, overlap, overflow or missing glyph. Inherited59 overfull warnings and one earlier missing delta remain; cumulative PDF local QA only."
+      }
+    }
+  },
+  "centered_current_compile": {
+    "utc": "2026-10-12T09:02:56.558386+00:00",
+    "tex_sha256": "d712657a7ee7238818f0d206514020247710ac59b0fc7c17d722dc55dabce9b9",
+    "pdf_sha256": "ac17b67e54098aaf340980ef3e0b1b8fb689894ce76c3ec0c3efb1573f18fb70",
+    "pages": 901,
+    "source_files": 89,
+    "math_blocks": 20712,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T09:02:56.285782+00:00",
+      "complete": true,
+      "pages": 901,
+      "rendered_pages": [
+        619,
+        620,
+        621,
+        710,
+        711,
+        712,
+        856,
+        857,
+        858,
+        868,
+        869,
+        870,
+        881,
+        882,
+        883,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901
+      ],
+      "contact_sheets_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "figures_inspected": [
+        "CENTERED_CURRENT_MAP.png",
+        "PLAQUETTE_FLOOR_AND_KINETIC.png"
+      ],
+      "findings": "All25 new proof and changed receiving/adjacent pages visually inspected. CFC1–26 formulas, full domains, captions and figures legible. No new clipping, overlap, overflow or missing glyph. Inherited59 overfull warnings and one earlier missing delta remain; cumulative PDF local QA only."
     }
   }
 }
