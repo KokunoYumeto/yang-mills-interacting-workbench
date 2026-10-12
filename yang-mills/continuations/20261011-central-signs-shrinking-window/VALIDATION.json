@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-11T21:49:07.264388+00:00",
+  "checked_utc": "2026-10-12T00:16:11.528078+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -199,7 +199,7 @@
     },
     {
       "source": "LOCAL_CURVATURE_BUDGET.md",
-      "sha256": "843db99ea84de6e3a3f648a0f4650b7c94b56b8a9e49af6f5b80482b753c26d5",
+      "sha256": "89f4296eb7360429c570eece9a9cb517846682169cb7ed32104a579c0d05e343",
       "complete_math_blocks": 262,
       "split_to_aligned_wrappers": 8
     },
@@ -463,15 +463,21 @@
     },
     {
       "source": "SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
-      "sha256": "0e66eca11817e557ef50e002362cb1b11300c1d011339b03771e1bc82e16c427",
+      "sha256": "936f12bb3cab7b0686afd11c860131fb075dafbaf4ba3f57ff3ddad9ca00ce1a",
       "complete_math_blocks": 158,
       "split_to_aligned_wrappers": 3
     },
     {
       "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
-      "sha256": "d9ae43d29bbfda6c8214aaea314761008d23b23501c137fe2c00f7da5e808edb",
+      "sha256": "e7dbdcaba5a83105f9c3c9671488759deeb3ce1a4c07464a07cf1a3d50b6e29d",
       "complete_math_blocks": 191,
       "split_to_aligned_wrappers": 2
+    },
+    {
+      "source": "ACTUAL_EDGE_ENERGY_VARIANCE.md",
+      "sha256": "8f0fe98c8ac9846812731e5c2aa3acfea642df4c62ee277be0797467bd0a9eae",
+      "complete_math_blocks": 194,
+      "split_to_aligned_wrappers": 1
     }
   ],
   "figures": [
@@ -873,6 +879,16 @@
     {
       "file": "SHARED_FACE_PHYSICAL_MAP.png",
       "sha256": "c058a053ab2936fe5469e39860a0ef8bc5b88469a5e3bcc0be16f9be98fb0d1c",
+      "visually_inspected": true
+    },
+    {
+      "file": "EDGE_VARIANCE_MAP.png",
+      "sha256": "44742a448d223222e4a1ed4b06ed73d20a1b142256491ac2f5806cf6cc465aed",
+      "visually_inspected": true
+    },
+    {
+      "file": "EDGE_ENERGY_PROFILE_BOUNDS.png",
+      "sha256": "2b630d176e44a9531fff83ab7e1afbe06a028ac558d7c4e10e6352f7f1170fe8",
       "visually_inspected": true
     }
   ],
@@ -4510,6 +4526,189 @@
       "method": "All four initial contact sheets and the final changed proof pages778–783 inspected. Other final rendered pages have identical SHA256 to the inspected first pass.",
       "repair": "The complete original edge derivative was moved from inline math to a display, retaining every formula character and its sentence punctuation.",
       "limitations": "Inherited59 overfull boxes and one old missing delta remain outside the new increment. No new overfull or missing glyph. The reader PDF remains local QA; complete Markdown and TeX are public."
+    }
+  },
+  "edge_variance_review": {
+    "utc": "2026-10-12T00:12:08.248202+00:00",
+    "coverage": "EV1–EV29 complete original edge Hamiltonian and all boundary incidences; actual path assignments and surrounding six-edge loops; full polar matrix/coupling/scalar comparison; continuous positive fiber ground and raw-overlap measure; exact three-part full-vacuum variance and strict positive diagonal; negative total off-diagonal covariance; exact Haar polynomial norms, kinetic and potential integrals; original-path profile and local averaged alignment; decay of the particular extreme-configuration lower estimate; complete original source, cross-edge and smooth-weight projections; full physical first and second moments and original-window tail.",
+    "strengthening": "Strict energy variance now holds for every edge in the actual full vacuum, extending the two-face comparison without replacing the state. A complete raw ground-projection remainder and quantitative separation retain their actual overlap mass. The original conditional energy has an explicit uniform profile bound, and the actual local budget proves averaged surrounding-path alignment.",
+    "limitations": "The vanishing result concerns the particular extreme-configuration lower estimate, not the actual variance. No pointwise alignment for every edge sequence, commuting family of different-edge projections, regulator-uniform surviving mass, continuum reconstruction or no-gap endpoint is asserted. All source and cross-edge terms remain in EV24–EV29.",
+    "actual_reading": "WH14–WH24 exact covariance and arbitrary-subset variance read directly; earlier complete WH source reading retained. SF1–SF27 complete derivation retained, SF22–SF27 reread for actual exterior-state maps. LC1–LC3 compact ground construction retained and LC14–LC20 local budget reread. SR65 score constants reread. Every new identity proved here. No newly imported external theorem or novelty claim.",
+    "routing": "Canonical index first:18 hits for lattice/staple, conditional/Hamiltonian and ground/SU2/variance. Routes are not evidence of reading. Relevant accessible original TeX remains the literature route; no indexed PDF was read and no new external reading is claimed.",
+    "diagnostics": {
+      "file": "EDGE_VARIANCE_CHECKS.json",
+      "checks": 3602,
+      "all_passed": true,
+      "scope": "Diagnostics of original SU(2) paths and metrics, exact Haar integrals and fiber projection identities. No original full-vacuum samples."
+    },
+    "figures_inspected": [
+      "EDGE_VARIANCE_MAP.png",
+      "EDGE_ENERGY_PROFILE_BOUNDS.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_EDGE_ENERGY_VARIANCE.md",
+        "prefix": "EV",
+        "tags": 29,
+        "owner_sha256": "a02a29eccb6fa816d618a94de3535ed2e67be83cd843a889a1fc855a4292008e",
+        "public_sha256": "8f0fe98c8ac9846812731e5c2aa3acfea642df4c62ee277be0797467bd0a9eae",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T00:16:11.528078+00:00",
+      "tex_sha256": "4751b75c61070a331ee00ea523f4ae38d31581fa8ae107dfaf4a7311ddcfeb0b",
+      "pdf_sha256": "baf1bcb8de13ebe133abddd012b5711bbf6e770de48e4398bdd941266cd0ac44",
+      "pages": 796,
+      "source_files": 79,
+      "math_blocks": 18891,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T00:16:04.450967+00:00",
+        "complete": true,
+        "pages": 796,
+        "inspected_pages": [
+          328,
+          329,
+          330,
+          778,
+          779,
+          780,
+          786,
+          787,
+          788,
+          789,
+          790,
+          791,
+          792,
+          793,
+          794,
+          795,
+          796
+        ],
+        "contact_sheets": 5,
+        "proof_pages": [
+          788,
+          789,
+          790,
+          791,
+          792,
+          793,
+          794,
+          795,
+          796
+        ],
+        "receiving_notes": [
+          329,
+          779,
+          787
+        ],
+        "findings": "All new proof and changed receiving-note pages inspected. Equations, complete remainders, figure captions and pagination remain within the page. No new overflow or missing glyph. Inherited 59 earlier overfull warnings and one earlier missing delta remain; reader PDF local QA only.",
+        "images": {
+          "contact-1.png": "43bf23c8b6445e9cee24c852e8ef1daabbb057ab643a26570ec8e9cf5565c39b",
+          "contact-2.png": "1db65b3272bf93f73c63df225bc1f5105534ef31632ead2eb311600d19be6a1d",
+          "contact-3.png": "2a14148698fadabfcec6e063103c3a9782197e449fc46f4eb58a0165f49815d0",
+          "contact-4.png": "34d8b32d1eecd02ea3de71ba471bf3ed0103ef59d01b82505721911ccd59fdd5",
+          "contact-5.png": "7e16fa88b5293e2aa4945737aced444b79b317d646c5a2a729dfb8ee8d591b03",
+          "page-328.png": "b5f79aa708a808629e51f24a82bb4b8dba964c99d69f6ee2d4a388c1b99b9ce1",
+          "page-329.png": "eceafdd2cbd005b496eef0ad8631ffdc04036f462c33f50cc96d05b2b723ab9a",
+          "page-330.png": "0267e733845b569b2a54fd0c0a62ee454a0d7326b176da0635c73162ddc49da0",
+          "page-778.png": "2aae36ca1ff6474fed04e4761a566cc9f3fbdb75ffa3d387a24221688d6652dd",
+          "page-779.png": "2d1a8ff48c5eeaea64933a445e8814096b5c57659dad8c2f0215ac95f1dd9530",
+          "page-780.png": "6bbd332edfe7baeb0e34f9bfcb2fa9cd799a172520160ea31d935968a6727624",
+          "page-786.png": "a01a4452312eacee1eb6f71812ad8b3aa5d7cc2c1af8f0c0e6a9e9cb8d93882b",
+          "page-787.png": "10f47af24563456a35ef875010911023f871130f30ad93171166bdb8522a975d",
+          "page-788.png": "1e90f237a299502765281df7811458de29e8206d2bc3c68c19cab25dd5e339ec",
+          "page-789.png": "e6ce7d5080423fdcedbc53a2095bf493ac9ba5fb8b018b112e91673aa0fd519b",
+          "page-790.png": "f06f4bcedf1bebeec401374a3cd4fc2e896f3e6201c3f0ca2227b06dcb09ee6d",
+          "page-791.png": "92a44a9232cbb716f501a446762ced4113252547bdcee59065de752c180b9fd9",
+          "page-792.png": "c32d6e1c59fabb46fbcc03670b019263d8e698034d2d2a390edfa2aae60e28ce",
+          "page-793.png": "50e5386f1d637e168c2f2acfa28eb7ac54acbafb203aff3889f8878c511bf540",
+          "page-794.png": "2370a5a7da9b3995cd55369f683c689888a5fdd6315cacbcabcc61e8ea17c106",
+          "page-795.png": "1f318622f2d49eb1536fa9352879e5c0acc5fca553ef25d7d8778a62bbe34ed8",
+          "page-796.png": "c722c8f02f32de871e00c2de11a2b0156037e7336cade51c63448962d387baec"
+        }
+      }
+    }
+  },
+  "edge_variance_compile": {
+    "utc": "2026-10-12T00:16:11.528078+00:00",
+    "tex_sha256": "4751b75c61070a331ee00ea523f4ae38d31581fa8ae107dfaf4a7311ddcfeb0b",
+    "pdf_sha256": "baf1bcb8de13ebe133abddd012b5711bbf6e770de48e4398bdd941266cd0ac44",
+    "pages": 796,
+    "source_files": 79,
+    "math_blocks": 18891,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T00:16:04.450967+00:00",
+      "complete": true,
+      "pages": 796,
+      "inspected_pages": [
+        328,
+        329,
+        330,
+        778,
+        779,
+        780,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796
+      ],
+      "contact_sheets": 5,
+      "proof_pages": [
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796
+      ],
+      "receiving_notes": [
+        329,
+        779,
+        787
+      ],
+      "findings": "All new proof and changed receiving-note pages inspected. Equations, complete remainders, figure captions and pagination remain within the page. No new overflow or missing glyph. Inherited 59 earlier overfull warnings and one earlier missing delta remain; reader PDF local QA only.",
+      "images": {
+        "contact-1.png": "43bf23c8b6445e9cee24c852e8ef1daabbb057ab643a26570ec8e9cf5565c39b",
+        "contact-2.png": "1db65b3272bf93f73c63df225bc1f5105534ef31632ead2eb311600d19be6a1d",
+        "contact-3.png": "2a14148698fadabfcec6e063103c3a9782197e449fc46f4eb58a0165f49815d0",
+        "contact-4.png": "34d8b32d1eecd02ea3de71ba471bf3ed0103ef59d01b82505721911ccd59fdd5",
+        "contact-5.png": "7e16fa88b5293e2aa4945737aced444b79b317d646c5a2a729dfb8ee8d591b03",
+        "page-328.png": "b5f79aa708a808629e51f24a82bb4b8dba964c99d69f6ee2d4a388c1b99b9ce1",
+        "page-329.png": "eceafdd2cbd005b496eef0ad8631ffdc04036f462c33f50cc96d05b2b723ab9a",
+        "page-330.png": "0267e733845b569b2a54fd0c0a62ee454a0d7326b176da0635c73162ddc49da0",
+        "page-778.png": "2aae36ca1ff6474fed04e4761a566cc9f3fbdb75ffa3d387a24221688d6652dd",
+        "page-779.png": "2d1a8ff48c5eeaea64933a445e8814096b5c57659dad8c2f0215ac95f1dd9530",
+        "page-780.png": "6bbd332edfe7baeb0e34f9bfcb2fa9cd799a172520160ea31d935968a6727624",
+        "page-786.png": "a01a4452312eacee1eb6f71812ad8b3aa5d7cc2c1af8f0c0e6a9e9cb8d93882b",
+        "page-787.png": "10f47af24563456a35ef875010911023f871130f30ad93171166bdb8522a975d",
+        "page-788.png": "1e90f237a299502765281df7811458de29e8206d2bc3c68c19cab25dd5e339ec",
+        "page-789.png": "e6ce7d5080423fdcedbc53a2095bf493ac9ba5fb8b018b112e91673aa0fd519b",
+        "page-790.png": "f06f4bcedf1bebeec401374a3cd4fc2e896f3e6201c3f0ca2227b06dcb09ee6d",
+        "page-791.png": "92a44a9232cbb716f501a446762ced4113252547bdcee59065de752c180b9fd9",
+        "page-792.png": "c32d6e1c59fabb46fbcc03670b019263d8e698034d2d2a390edfa2aae60e28ce",
+        "page-793.png": "50e5386f1d637e168c2f2acfa28eb7ac54acbafb203aff3889f8878c511bf540",
+        "page-794.png": "2370a5a7da9b3995cd55369f683c689888a5fdd6315cacbcabcc61e8ea17c106",
+        "page-795.png": "1f318622f2d49eb1536fa9352879e5c0acc5fca553ef25d7d8778a62bbe34ed8",
+        "page-796.png": "c722c8f02f32de871e00c2de11a2b0156037e7336cade51c63448962d387baec"
+      }
     }
   }
 }

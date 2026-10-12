@@ -6,6 +6,11 @@
       "sha256": "50d4cbcf4d46409677b97f9475995c319d4e7866f6c50d9180c37e3653e231c4"
     },
     {
+      "path": "ACTUAL_EDGE_ENERGY_VARIANCE.md",
+      "bytes": 25643,
+      "sha256": "8f0fe98c8ac9846812731e5c2aa3acfea642df4c62ee277be0797467bd0a9eae"
+    },
+    {
       "path": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
       "bytes": 37726,
       "sha256": "f42055f41a5430d008d90e24e054f1e99951eafdfb9e7784514e3c6e7e60c937"
@@ -332,8 +337,8 @@
     },
     {
       "path": "build_reader.py",
-      "bytes": 10954,
-      "sha256": "b86aea7da5737dfc1aa81ecd5f87fbf3b1d19603122e7807fd80237b1c8ba193"
+      "bytes": 11264,
+      "sha256": "74136ea8d0ec203033a8ce2f90bc4060522f1450be93b5324b18be1cc3955f03"
     },
     {
       "path": "CAP_CONSTANT_CHECKS.json",
@@ -504,6 +509,11 @@
       "path": "check_edge_entropy.py",
       "bytes": 4602,
       "sha256": "765cd28730791ff044358136da9861a683a63600d546e9da2c4d8b76c59bfed8"
+    },
+    {
+      "path": "check_edge_variance.py",
+      "bytes": 12838,
+      "sha256": "385f6dc12bfeaa8926505471482c6c32c1244df38d24b1c47a9427ea30e116a7"
     },
     {
       "path": "check_energy_root.py",
@@ -702,8 +712,8 @@
     },
     {
       "path": "CLAIM_LEDGER.md",
-      "bytes": 78920,
-      "sha256": "2f1dd014a89f7fb965a0f4d6a0ea7772dd878d5f522c4f66c69cc88beb1c2eef"
+      "bytes": 79877,
+      "sha256": "464b29d4fa1ad29e53a481cb57e12577e5e75ce4421c3efbdd9a9901786de6a8"
     },
     {
       "path": "COLLAR_RATE_MAP.png",
@@ -1121,9 +1131,44 @@
       "sha256": "e418d9b799b55227c8c826995e99fa70b24e81f371f81a39a3a7d4e3123454de"
     },
     {
+      "path": "EDGE_ENERGY_PROFILE_BOUNDS.png",
+      "bytes": 161942,
+      "sha256": "2b630d176e44a9531fff83ab7e1afbe06a028ac558d7c4e10e6352f7f1170fe8"
+    },
+    {
+      "path": "EDGE_ENERGY_PROFILE_BOUNDS.svg",
+      "bytes": 217202,
+      "sha256": "68b3a07e7a5ced3df9c183f46076787dd31ef52d799057220cd741cbb8260bd6"
+    },
+    {
       "path": "EDGE_ENTROPY_CHECKS.json",
       "bytes": 2349,
       "sha256": "bd90f3c57c41967e331ebc84affa270d1142ecfed4e986f41c598a9418131da3"
+    },
+    {
+      "path": "EDGE_VARIANCE_CHECKS.json",
+      "bytes": 518495,
+      "sha256": "3bc701664b912dec07305badf5e2690ca964f446ca84e2be506eca95e19151b8"
+    },
+    {
+      "path": "EDGE_VARIANCE_MAP.png",
+      "bytes": 279339,
+      "sha256": "44742a448d223222e4a1ed4b06ed73d20a1b142256491ac2f5806cf6cc465aed"
+    },
+    {
+      "path": "EDGE_VARIANCE_MAP.svg",
+      "bytes": 106242,
+      "sha256": "a6ea8dc7200fe2bd44ba92a3063cde5440746470c450e6e81f5b3a88fe16a7c9"
+    },
+    {
+      "path": "EDGE_VARIANCE_SOURCE_FIDELITY.json",
+      "bytes": 599,
+      "sha256": "8b151a0940805a02f097b5f61d98fca43c7df6b1f730ce4f9165067cfa44b015"
+    },
+    {
+      "path": "EDGE_VARIANCE_SOURCE_USE_LEDGER.json",
+      "bytes": 9445,
+      "sha256": "aed6b53d17d0f0a7834db112ac2ed179c82c9c927be6b5b6fcf36351c663e6a1"
     },
     {
       "path": "ENERGY_ROOT_AND_ANCHORED_HISTORIES.md",
@@ -1667,8 +1712,8 @@
     },
     {
       "path": "LOCAL_CURVATURE_BUDGET.md",
-      "bytes": 38971,
-      "sha256": "843db99ea84de6e3a3f648a0f4650b7c94b56b8a9e49af6f5b80482b753c26d5"
+      "bytes": 39908,
+      "sha256": "89f4296eb7360429c570eece9a9cb517846682169cb7ed32104a579c0d05e343"
     },
     {
       "path": "LOCAL_CURVATURE_BUDGET.png",
@@ -2197,23 +2242,28 @@
     },
     {
       "path": "READER_SOURCES.json",
-      "bytes": 2900,
-      "sha256": "6cc6e9e509c4c806962d52cff5882f2d32d17b30ffaa0b3b54ce2774a6eff33a"
+      "bytes": 2936,
+      "sha256": "a0addcd53b63ec1cc8b4411a93e2ecc1b4bb2d3980384bbd331acaa820bb5f23"
     },
     {
       "path": "README.md",
-      "bytes": 69734,
-      "sha256": "cb7e853ee44d0ea3944b7419a751b377b7fd95cae1eb29b49bd8ea34df850a50"
+      "bytes": 70691,
+      "sha256": "aaf5d2cf7ba5c3de06c4b6e6b90a4afbb9d250a37dfb461123f24c0fe5058077"
     },
     {
       "path": "RESEARCH_CONTINUATION.tex",
-      "bytes": 2551485,
-      "sha256": "d8da9708bbc80ac91ee18bcedfed88e82fb406e4a0735df836ea73b3874c31cc"
+      "bytes": 2580809,
+      "sha256": "4751b75c61070a331ee00ea523f4ae38d31581fa8ae107dfaf4a7311ddcfeb0b"
     },
     {
       "path": "RESULTS_20261011.md",
       "bytes": 79633,
       "sha256": "92e3368010f901f0b8347d6c0484e06ed3d3b819b9fe1fc2f4a46fc99ffd2c66"
+    },
+    {
+      "path": "RESULTS_20261012.md",
+      "bytes": 1114,
+      "sha256": "83b658fb2381ee3e3ac5fa3e7473ae51395be35b67b79b19b852f14204e9fa6f"
     },
     {
       "path": "RETAINED_BOUNDARY_MAP.png",
@@ -2307,8 +2357,8 @@
     },
     {
       "path": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
-      "bytes": 25167,
-      "sha256": "1da293b3cb22de4850aa375ca1b9690f8f2f8985195c99c027282414cc5dcd49"
+      "bytes": 26104,
+      "sha256": "e7dbdcaba5a83105f9c3c9671488759deeb3ce1a4c07464a07cf1a3d50b6e29d"
     },
     {
       "path": "SIGNED_KINETIC_CHECKS.json",
@@ -2422,13 +2472,13 @@
     },
     {
       "path": "SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
-      "bytes": 26800,
-      "sha256": "0e66eca11817e557ef50e002362cb1b11300c1d011339b03771e1bc82e16c427"
+      "bytes": 27737,
+      "sha256": "936f12bb3cab7b0686afd11c860131fb075dafbaf4ba3f57ff3ddad9ca00ce1a"
     },
     {
       "path": "SOURCE_READING_USE_LEDGER.json",
-      "bytes": 360097,
-      "sha256": "ca73ee16a009d0e97e18c753a7bb57e5e2db0dac62818bd7d10bdc8c226b631e"
+      "bytes": 369539,
+      "sha256": "0e77d49cb69cf690143e06211dc2c0c0683404077571561fda2c6a20307e1091"
     },
     {
       "path": "SOURCE_ZERO_COVARIANCE_UPPER.md",
@@ -2567,8 +2617,8 @@
     },
     {
       "path": "TEX_FIDELITY.json",
-      "bytes": 17938,
-      "sha256": "ee74fd51560f57aef22ca29742a133e18d1bb54c1d2c8e681b06bf23d9254e2f"
+      "bytes": 18157,
+      "sha256": "6346275fee855ecdd958eb0fcbf9fecd486683b7e19d40379b272a4f90d6bde5"
     },
     {
       "path": "two_link_figure.py",
@@ -2607,8 +2657,8 @@
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 210653,
-      "sha256": "479e7688f6c53416307acbb76f1ea84f821a3f9c4c9e7f69d7a2057e6279e2a8"
+      "bytes": 221261,
+      "sha256": "fed2aea874e438fb3c41bfb60f8b25b5bf6b475dc13e2174fa086458ed81e26a"
     },
     {
       "path": "VERIFICATION.json",
