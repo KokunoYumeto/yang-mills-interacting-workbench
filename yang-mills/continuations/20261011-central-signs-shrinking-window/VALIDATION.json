@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T09:02:56.558386+00:00",
+  "checked_utc": "2026-10-12T09:34:54.819885+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -409,8 +409,8 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "72790d6d8dc0ea502ba12a1aeec8c6bde33f0296d9c5135126e19437868be863",
-      "complete_math_blocks": 213,
+      "sha256": "8b67a684062daa150554679cc31e6e400cd92a45e0a52989b5e0153f9167cc4c",
+      "complete_math_blocks": 216,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -499,8 +499,8 @@
     },
     {
       "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
-      "sha256": "e2b0f77c661d96ed9b9f4dcc8ace119f3032aa5e1031f50ce7a9afabcd11d96b",
-      "complete_math_blocks": 145,
+      "sha256": "507f2d9b719687d720aff857acd67e5acf3bfb26aaa3e2a6a16ad01006d41eba",
+      "complete_math_blocks": 148,
       "split_to_aligned_wrappers": 3
     },
     {
@@ -511,8 +511,8 @@
     },
     {
       "source": "CURRENT_TAILS_AND_RETAINED_SOURCE.md",
-      "sha256": "ba6dea589bf21c6e390c5f93b18b332fd36efa6428b903f82598cb1e3eb725a9",
-      "complete_math_blocks": 222,
+      "sha256": "5e750e4fe21ee81f72114bc364e58eee6fbd519a45d9e2c6724c5e60993a4c23",
+      "complete_math_blocks": 225,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -523,8 +523,8 @@
     },
     {
       "source": "TWO_SIDED_CURRENT_RESIDUAL.md",
-      "sha256": "e77f8004ccf52415aa2451c3533030c00690ba6eb14b3313482389dfb27b2e9a",
-      "complete_math_blocks": 129,
+      "sha256": "13119240358710195ac673c67dbad4af7ac5331ab4ad79e1ec7b419a98f3a486",
+      "complete_math_blocks": 132,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -535,8 +535,14 @@
     },
     {
       "source": "CENTERED_CURRENT_COVARIANCE.md",
-      "sha256": "de87bc755915b3bf73e1ef78880b9a833e4f388af764a6103372bd8cad09f555",
-      "complete_math_blocks": 235,
+      "sha256": "7e2e61af22fca31c0fab00506394afb82cb1df3949d3f449a8fa57b25b3ca4d7",
+      "complete_math_blocks": 238,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
+      "sha256": "33c60084fedb4fc8999487ebcdfdd84acafda7f87b575b5fdf57ff77a5f33010",
+      "complete_math_blocks": 229,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1039,6 +1045,16 @@
     {
       "file": "PLAQUETTE_FLOOR_AND_KINETIC.png",
       "sha256": "fe0049681e3d1fcd8c8875bbfb6a242adb42cab78922bda26ea88c964dbc98bc",
+      "visually_inspected": true
+    },
+    {
+      "file": "DENSITY_FLUX_AND_PROJECTION.png",
+      "sha256": "5e509f574fdc6495558d44271a650795f7849b592db6470da35998228a09a954",
+      "visually_inspected": true
+    },
+    {
+      "file": "FORCE_GRAPH_AND_RESIDUAL_GAIN.png",
+      "sha256": "320d474ac32b39c7b0acfa373c959b2808413a52f056bf5eccd386e9f71764db",
       "visually_inspected": true
     }
   ],
@@ -6274,6 +6290,144 @@
         "PLAQUETTE_FLOOR_AND_KINETIC.png"
       ],
       "findings": "All25 new proof and changed receiving/adjacent pages visually inspected. CFC1–26 formulas, full domains, captions and figures legible. No new clipping, overlap, overflow or missing glyph. Inherited59 overfull warnings and one earlier missing delta remain; cumulative PDF local QA only."
+    }
+  },
+  "density_flux_review": {
+    "utc": "2026-10-12T09:24:21.409668+00:00",
+    "coverage": "DF1–DF21 read and derived in full: exact density flux, full-original-observable energy bound, explicit partial-Laplacian potential and force projection, signed collective Gram, positive augmented squared-current matrix, original raw norm floor and exterior Hessian graph. Actual force graph connected; full zero-curl kernel consists exactly of constants, hence strict removal on proper patches. Complete optimized gain, both physical residual norms, original column cutoff and three-shift receiver retained.",
+    "strengthening": "Uniform O(sqrt(a)) comparison for the original growing observable on I(C), using unchanged bounded energy, replaces the ineffective total-variation-only estimate for this receiver. Exact Poisson potential is (Delta_e w+2T_e)/(6b). The new projected squared-current trial removes a strictly positive finite force-curl cost on each nonempty proper patch; at least two of the original three shifts have strictly positive finite gains for all sufficiently large regulators.",
+    "correction": "Projected columns may be dependent; retaining z² times the original complementary norm proves an invertible matrix without assuming projected independence. Physical amplitude uses the actual projected norm, and the complementary penalty is explicitly subtracted from the augmented residual. No uniform-gap inverse estimate is used.",
+    "limitations": "No asymptotic size assigned to the strict finite gains or remaining collective signed moments. The complete window bound is proved, but no positive original shrinking-window value is assigned. Interacting continuum construction, reconstruction, theory identification and global smooth no-gap endpoint remain active.",
+    "actual_reading": "New DF1–DF21 and CFC1–CFC26 read in full; SOM9–SOM17, SG25–SG33, TCR12–TCR21 and CTI finite moment/cutoff/metric providers checked directly. Exact primary author-source provenance and canonical-index records recovered from existing source ledgers before derivation; no fresh external reading claimed.",
+    "diagnostics": {
+      "checks": 1649,
+      "all_passed": true,
+      "scope": "Symbolic curved geometry and coupled positive densities verify the explicit partial-Laplacian potential, full flux Gram and signs. Original cube incidence checks verify force Hessian signs and graph connectivity. Reducing finite Hilbert models, deliberately with dependent projected columns, verify full augmented residual, strict removed cost, original norm floor, cutoff controls and signed window receiver. These are diagnostics, not Yang-Mills spectral data."
+    },
+    "figures_inspected": [
+      "DENSITY_FLUX_AND_PROJECTION.png",
+      "FORCE_GRAPH_AND_RESIDUAL_GAIN.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
+        "prefix": "DF",
+        "tags": 21,
+        "owner_sha256": "5b6cdffaa03f460b1fd9312eba3aa8fd786779d8a8a0b411eb60bebd3fda9a64",
+        "public_sha256": "33c60084fedb4fc8999487ebcdfdd84acafda7f87b575b5fdf57ff77a5f33010",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T09:34:54.819885+00:00",
+      "tex_sha256": "57fcedca9a2ba8b38ad86a0c6af45356749750a72ae24fd53d3f3e090a86983c",
+      "pdf_sha256": "e272db76f14555915d97c4b8b0a53be323d0186f59a6d79fec8c8ff45c810af6",
+      "pages": 916,
+      "source_files": 90,
+      "math_blocks": 20956,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T09:34:54.7625539Z",
+        "complete": true,
+        "pages": 916,
+        "rendered_pages": [
+          711,
+          712,
+          713,
+          848,
+          849,
+          850,
+          871,
+          872,
+          873,
+          885,
+          886,
+          887,
+          905,
+          906,
+          907,
+          908,
+          909,
+          910,
+          911,
+          912,
+          913,
+          914,
+          915,
+          916
+        ],
+        "contact_sheets_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "figures_inspected": [
+          "DENSITY_FLUX_AND_PROJECTION.png",
+          "FORCE_GRAPH_AND_RESIDUAL_GAIN.png"
+        ],
+        "findings": "All24 new proof and changed receiving/adjacent pages visually inspected. DF1–21 formulas, complete domains, captions, face orientation and figures legible. No new clipping, overlap, overflow or missing glyph. Inherited59 overfull warnings and one earlier missing delta remain; cumulative PDF local QA only. Final rebuilt page914 reinspected after whitespace-only joining of the DF20 line; equation and layout correct. Pagination and all24 rendered page locators unchanged."
+      }
+    }
+  },
+  "density_flux_compile": {
+    "utc": "2026-10-12T09:34:54.819885+00:00",
+    "tex_sha256": "57fcedca9a2ba8b38ad86a0c6af45356749750a72ae24fd53d3f3e090a86983c",
+    "pdf_sha256": "e272db76f14555915d97c4b8b0a53be323d0186f59a6d79fec8c8ff45c810af6",
+    "pages": 916,
+    "source_files": 90,
+    "math_blocks": 20956,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T09:34:54.7625539Z",
+      "complete": true,
+      "pages": 916,
+      "rendered_pages": [
+        711,
+        712,
+        713,
+        848,
+        849,
+        850,
+        871,
+        872,
+        873,
+        885,
+        886,
+        887,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        913,
+        914,
+        915,
+        916
+      ],
+      "contact_sheets_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "figures_inspected": [
+        "DENSITY_FLUX_AND_PROJECTION.png",
+        "FORCE_GRAPH_AND_RESIDUAL_GAIN.png"
+      ],
+      "findings": "All24 new proof and changed receiving/adjacent pages visually inspected. DF1–21 formulas, complete domains, captions, face orientation and figures legible. No new clipping, overlap, overflow or missing glyph. Inherited59 overfull warnings and one earlier missing delta remain; cumulative PDF local QA only. Final rebuilt page914 reinspected after whitespace-only joining of the DF20 line; equation and layout correct. Pagination and all24 rendered page locators unchanged."
     }
   }
 }

@@ -435,3 +435,19 @@ One may insert this proved bound wherever SOM14–SOM17 or CTI11 use the kinetic
 ![Individual-face lower coefficient and additional kinetic ceiling, at the explicitly illustrative parameter kappa=1. CFC22–CFC26.](PLAQUETTE_FLOOR_AND_KINETIC.png)
 
 The figures show exact maps and proved bounds, with every original factor retained. They are not measured vacuum values. [Reproducible checks and figure sources](check_centered_current.py) include curved positive comparison densities, group-gradient bounds and complete complementary Gram identities. Full [source-use record](CENTERED_CURRENT_SOURCE_USE_LEDGER.json).
+
+## Exact density flux and stronger physical residual
+
+[DF1–DF21](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md) evaluate the positive-density potential and its original-observable receiver:
+\[
+Y_e=\frac{\Delta_ew+2T_e}{6b},\qquad
+\nu_eX-\mu X=\frac{\kappa}{6b}\mu\langle d\Delta_ew,dX\rangle .
+\]
+The proved mean difference is uniformly \(O(\sqrt{a_j})\) on the retained source set, using the unchanged bounded energy of the full growing observable. This requires no uniform spectral gap and retains every outside derivative.
+
+The full collective calculation also gives
+\[
+\mathsf B_zc=(PD_z\mathsf Cc,zP^\perp\mathsf Cc),\qquad
+z^2\mathsf N\le\mathsf Z_\star=\mathsf B_z^*\mathsf B_z\le\mathsf Z .
+\]
+The original force graph proves strict removal of the curl cost on every nonempty proper trial patch. The optimized augmented residual is strictly improved at at least two of the three original window shifts for all sufficiently large regulators. Complete gain formulas, projected physical norms, complementary penalties and actual cutoff errors remain in the two-sided spectral bounds. The signed window still requires the collective moments and full residual; no limiting spectral weight or smooth interacting no-gap endpoint is assumed.
