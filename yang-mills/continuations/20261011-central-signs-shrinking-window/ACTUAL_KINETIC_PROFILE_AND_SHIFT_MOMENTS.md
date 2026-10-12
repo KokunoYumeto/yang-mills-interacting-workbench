@@ -548,3 +548,12 @@ Q_\infty=9(3\rho+2\sigma/3)I_0 .
 \end{gathered}
 \]
 For verification, the common raw source has leading field \(-3\varphi(1,1,1)\). Its projection on \(g\) has coefficient \(-1\), since \(\sum\omega_d=2\) and \(\sum\omega_d^2=6\). Hence the sum of the \(Y_1/a_j^5\) components is \(-(18\rho+4\sigma)\varphi\), and the sum of the \(Y_2/a_j^6\) components is \(-(27/2)\varphi\). Their Green products give the first three constants by KP3; the original norm and energy quadratic forms give the last two. No diagnostic matrix is identified with the unknown actual limit operator. [Complete checks](check_kinetic_profile.py), [figure source](figure_kinetic_profile.py) and [source-use record](KINETIC_PROFILE_SOURCE_USE_LEDGER.json) accompany the proofs.
+
+## Full current complement and its relative-energy measure
+
+[CSR1–CSR21](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md) construct the full current-span Schur response with its corrected source and both physical solution components. The actual complementary coupling measure satisfies
+\[
+M_j([0,\theta s_j])\le1500\theta a_j^3I,\qquad
+\int\lambda^{-1}dM_j(\lambda)\le Q_j .
+\]
+A common actual subsequence gives a bounded relative-energy measure with both endpoint atoms retained. It evaluates the effective current energy and the full complementary lift's norm and energy at their original \(a_j^4,a_j^5\) scales. The exact effective kernel includes KP17's current-trial kernel; the full physical projection and source cross measure remain in the response. All three original shifts, raw coefficient norms and complementary contributions are preserved. The signed physical window and smooth interacting no-gap endpoint remain active calculations.

@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T23:03:39.040485+00:00",
+  "checked_utc": "2026-10-12T23:19:24.260085+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -403,14 +403,14 @@
     },
     {
       "source": "POSITIVE_TIME_COVARIANCE.md",
-      "sha256": "826d030593abd2f9b9d43dacf6af766004bc4232f1f9def6ac3bf8090ce067c1",
-      "complete_math_blocks": 213,
+      "sha256": "1c0dd5ed71dd497f0beed6b79dad97c81ca1e1113d8ce99a184b5b55284f04f7",
+      "complete_math_blocks": 215,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "a22cac93db21cd56f68f45ad1ca5046fd3377cd7da61d0debe36259b5ecf987c",
-      "complete_math_blocks": 221,
+      "sha256": "02738ead61f02ab85b1dd07bd25be22ed8d94b824d829bc8fd97db271e78f6c9",
+      "complete_math_blocks": 223,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -541,8 +541,8 @@
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "34a0d6f4b7b4291dd037b37c21846fcdb91cd743fa33a70161e7c67e981762e5",
-      "complete_math_blocks": 242,
+      "sha256": "b2c221476913b840d5b50669659be78963e47c1914c0f138c1bba711cf7de26f",
+      "complete_math_blocks": 244,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -559,14 +559,20 @@
     },
     {
       "source": "EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md",
-      "sha256": "f739a280b9c6e166e49b508c2a3736d0b992edc14ce116a200c53f7746e8ca9b",
-      "complete_math_blocks": 281,
+      "sha256": "05047bfec26429d9204ebc274487e6b84d6817b7ba1015b635bb4e2f0dd6a5bf",
+      "complete_math_blocks": 283,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
-      "sha256": "b604e85399021ee5a6c5693ba7689a980e4c3c08e2c21b180ded2f690e15bf11",
-      "complete_math_blocks": 277,
+      "sha256": "28b85b8f5fe39050ea93c211121095aeb8875717c2420aaf030e47bf6d041ca3",
+      "complete_math_blocks": 279,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
+      "sha256": "4234936ea0b3fde66b80c5df883fcb0f9d8525b4e932e5b06e63ed39dfc48360",
+      "complete_math_blocks": 209,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1119,6 +1125,16 @@
     {
       "file": "KINETIC_MOMENTS_ORIGINAL_GRID.png",
       "sha256": "5b3d3577701b727848bad4156c740daa2d52a5e1f15bff8629d0011cf77882e9",
+      "visually_inspected": true
+    },
+    {
+      "file": "CURRENT_SCHUR_FULL_MAP.png",
+      "sha256": "371a2af5c9a7b6b59c5e815b7c95256e6fd534f0fb8efa839bbe0aa0da2308a4",
+      "visually_inspected": true
+    },
+    {
+      "file": "CURRENT_SCHUR_ORIGINAL_SCALE.png",
+      "sha256": "b23eb0678b37eff54227485d1758d4e3d2a484e49bdd967a7cd84d21b284c859",
       "visually_inspected": true
     }
   ],
@@ -7034,6 +7050,156 @@
         "KINETIC_MOMENTS_ORIGINAL_GRID.png"
       ],
       "findings": "All25 new, receiving and adjacent pages inspected in seven contact sheets; sheets1–3 before recovery and4–7 after recovery against unchanged sources. Both figures inspected at full resolution. All new equations, diagrams and captions fit without clipping or overlap. No new overflow or missing glyph; inherited59warnings and one old missing delta remain. PDF local only."
+    }
+  },
+  "current_schur_review": {
+    "utc": "2026-10-12T23:16:27.616287+00:00",
+    "coverage": "CSR1–CSR21 complete derivation reviewed: complementary domain, bounded offdiagonal removal, raw Schur/source equations, full response and derivative, all three shifts, positive matrix spectral measure and source cross measure, actual low-energy bound, inverse-energy moment and variational defect, common compact relative-energy measure with both endpoint atoms, exact effective kernel, and full lifted norm/energy maps with physical projection and raw coefficient errors.",
+    "strengthening": "KP13 complementary residual now has its full inverse/source/response receiver. KP8 yields M([0,theta s])<=1500theta a³ and an actual bounded inverse-energy measure. A common actual subsequence gives S(theta), its endpoint values and theta-independent kernel, and joint lifted norm/energy limits at a4/a5, with exact physical projection costs.",
+    "correction": "KP17 current-trial kernel is only included in the full effective kernel. No identification of their kernels, physical exactness of separate current/complement pieces, nonzero finite-frequency mass, nonzero corrected overlap, strong convergence of inverses or interchange of shrinking limits is asserted.",
+    "limitations": "Full source cross measure and physical exact-form component remain unevaluated; no positive original signed window or smooth interacting continuum no-gap result established.",
+    "actual_reading": "Disk index first. Original Dusson–Sigal–Stamm 2105.02058v1 TeX lines398–490 reread and exact correspondence proved after CSR18. PT9–21, SG4–13, DF definitions/DF16–21 and KP8–17 reread with full formulas.",
+    "diagnostics": {
+      "checks": 2181,
+      "all_passed": true,
+      "scope": "Finite complex positive block operators, complete source and lift identities, original-scale scalar diagnostics with endpoint escape, exact kernel and original three-shift inequality. No Yang–Mills vacuum samples."
+    },
+    "figures_inspected": [
+      "CURRENT_SCHUR_FULL_MAP.png",
+      "CURRENT_SCHUR_ORIGINAL_SCALE.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
+        "prefix": "CSR",
+        "tags": 21,
+        "owner_sha256": "bc531d494be230902eb794040324083be85b7bc7816e8aaa48335e012a32c092",
+        "public_sha256": "4234936ea0b3fde66b80c5df883fcb0f9d8525b4e932e5b06e63ed39dfc48360",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T23:19:24.260085+00:00",
+      "tex_sha256": "32167186406ea3a4961164a289b595b811fb77af5caf7fd9c4398bcf850d2b54",
+      "pdf_sha256": "6b077ea870687a3176a6fbfdbc08d93bc33db7835d48d56f3e10e0061c260ae2",
+      "pages": 989,
+      "source_files": 95,
+      "math_blocks": 22238,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T23:19:24.189554+00:00",
+        "complete": true,
+        "pages": 989,
+        "inspected_pages": [
+          695,
+          696,
+          697,
+          715,
+          716,
+          717,
+          932,
+          933,
+          934,
+          966,
+          967,
+          968,
+          978,
+          979,
+          980,
+          981,
+          982,
+          983,
+          984,
+          985,
+          986,
+          987,
+          988,
+          989
+        ],
+        "contact_sheets": 6,
+        "figures": [
+          "CURRENT_SCHUR_FULL_MAP.png",
+          "CURRENT_SCHUR_ORIGINAL_SCALE.png"
+        ],
+        "new_proof_pages": [
+          980,
+          981,
+          982,
+          983,
+          984,
+          985,
+          986,
+          987,
+          988,
+          989
+        ],
+        "new_overflow_or_missing_glyph": false,
+        "notes": "All24 new/receiving/adjacent pages inspected. Sigma glyph corrected; both figures fit and no diagnostic sentence is interrupted. Two figure originals also inspected.59 inherited overfull warnings and one prior missing delta unchanged. PDF retained locally."
+      }
+    }
+  },
+  "current_schur_compile": {
+    "utc": "2026-10-12T23:19:24.260085+00:00",
+    "tex_sha256": "32167186406ea3a4961164a289b595b811fb77af5caf7fd9c4398bcf850d2b54",
+    "pdf_sha256": "6b077ea870687a3176a6fbfdbc08d93bc33db7835d48d56f3e10e0061c260ae2",
+    "pages": 989,
+    "source_files": 95,
+    "math_blocks": 22238,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T23:19:24.189554+00:00",
+      "complete": true,
+      "pages": 989,
+      "inspected_pages": [
+        695,
+        696,
+        697,
+        715,
+        716,
+        717,
+        932,
+        933,
+        934,
+        966,
+        967,
+        968,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989
+      ],
+      "contact_sheets": 6,
+      "figures": [
+        "CURRENT_SCHUR_FULL_MAP.png",
+        "CURRENT_SCHUR_ORIGINAL_SCALE.png"
+      ],
+      "new_proof_pages": [
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989
+      ],
+      "new_overflow_or_missing_glyph": false,
+      "notes": "All24 new/receiving/adjacent pages inspected. Sigma glyph corrected; both figures fit and no diagnostic sentence is interrupted. Two figure originals also inspected.59 inherited overfull warnings and one prior missing delta unchanged. PDF retained locally."
     }
   }
 }

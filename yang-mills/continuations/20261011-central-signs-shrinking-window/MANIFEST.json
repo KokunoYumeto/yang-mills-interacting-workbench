@@ -17,13 +17,13 @@
     },
     {
       "path": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "bytes": 46204,
-      "sha256": "a22cac93db21cd56f68f45ad1ca5046fd3377cd7da61d0debe36259b5ecf987c"
+      "bytes": 47288,
+      "sha256": "02738ead61f02ab85b1dd07bd25be22ed8d94b824d829bc8fd97db271e78f6c9"
     },
     {
       "path": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
-      "bytes": 33041,
-      "sha256": "b604e85399021ee5a6c5693ba7689a980e4c3c08e2c21b180ded2f690e15bf11"
+      "bytes": 34125,
+      "sha256": "28b85b8f5fe39050ea93c211121095aeb8875717c2420aaf030e47bf6d041ca3"
     },
     {
       "path": "ACTUAL_LIMIT_CHECKS.json",
@@ -362,8 +362,8 @@
     },
     {
       "path": "build_reader.py",
-      "bytes": 15959,
-      "sha256": "b77b052bf736321f168a29b8e20317c67b9c98065bdb8512b5a630db3172f739"
+      "bytes": 16586,
+      "sha256": "ffb33fe7035b28cca9327282a0e42b7de5f510449662a8e9fe019d24d0a988bf"
     },
     {
       "path": "CAP_CONSTANT_CHECKS.json",
@@ -549,6 +549,11 @@
       "path": "check_current_residual.py",
       "bytes": 6803,
       "sha256": "b9208a10c564e1547ea26187b061e70d6eeb70bc65a4c14d1311f259db6319a0"
+    },
+    {
+      "path": "check_current_schur.py",
+      "bytes": 6926,
+      "sha256": "db1dd1d5b3d37cd233f3031a5035f7a068e7e2acfda6f8d6ea6e66cffd92f313"
     },
     {
       "path": "check_current_tail.py",
@@ -847,8 +852,8 @@
     },
     {
       "path": "CLAIM_LEDGER.md",
-      "bytes": 97501,
-      "sha256": "53cef51eb4e51d93d51edddeaed43542710b0dce287bbc8cdebade3533762f33"
+      "bytes": 98610,
+      "sha256": "4c022f9a0f48e19cb2066b17feb8609a872f467b37790bfe43e7d0fb9d423502"
     },
     {
       "path": "COLLAR_RATE_MAP.png",
@@ -1007,8 +1012,8 @@
     },
     {
       "path": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "bytes": 37140,
-      "sha256": "34a0d6f4b7b4291dd037b37c21846fcdb91cd743fa33a70161e7c67e981762e5"
+      "bytes": 38224,
+      "sha256": "b2c221476913b840d5b50669659be78963e47c1914c0f138c1bba711cf7de26f"
     },
     {
       "path": "CURRENT_RESIDUAL_CHECKS.json",
@@ -1024,6 +1029,41 @@
       "path": "CURRENT_RESIDUAL_SOURCE_USE_LEDGER.json",
       "bytes": 16290,
       "sha256": "1ec91f980bc05de935702783a26e88080942a68ca7cdd8a64bee6aebf447ef87"
+    },
+    {
+      "path": "CURRENT_SCHUR_CHECKS.json",
+      "bytes": 296185,
+      "sha256": "b2602790d711f4c5fb9f051b663bc9591db3726a972efe594cdbf7910abe2c22"
+    },
+    {
+      "path": "CURRENT_SCHUR_FULL_MAP.png",
+      "bytes": 179595,
+      "sha256": "371a2af5c9a7b6b59c5e815b7c95256e6fd534f0fb8efa839bbe0aa0da2308a4"
+    },
+    {
+      "path": "CURRENT_SCHUR_FULL_MAP.svg",
+      "bytes": 36569,
+      "sha256": "ca0d571e91a551b08370783ea6de699dff3e6230e3278c2f02be19acef7ffd20"
+    },
+    {
+      "path": "CURRENT_SCHUR_ORIGINAL_SCALE.png",
+      "bytes": 172900,
+      "sha256": "b23eb0678b37eff54227485d1758d4e3d2a484e49bdd967a7cd84d21b284c859"
+    },
+    {
+      "path": "CURRENT_SCHUR_ORIGINAL_SCALE.svg",
+      "bytes": 58511,
+      "sha256": "f1eb9155c1839dc6df95dcf1a3cb81480216d950d60eda338d867929b298d4a9"
+    },
+    {
+      "path": "CURRENT_SCHUR_SOURCE_FIDELITY.json",
+      "bytes": 938,
+      "sha256": "f990ea869d0c3e33a236fb931d9b9d987859847ebac939892fac5a5b833f2c1a"
+    },
+    {
+      "path": "CURRENT_SCHUR_SOURCE_USE_LEDGER.json",
+      "bytes": 9144,
+      "sha256": "72a3a3cf6315cf68552cd3025b22f533e0f709abb1f75f558c130512c1fcf646"
     },
     {
       "path": "CURRENT_SIGN_COMPARISON.png",
@@ -1412,8 +1452,8 @@
     },
     {
       "path": "EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md",
-      "bytes": 31465,
-      "sha256": "f739a280b9c6e166e49b508c2a3736d0b992edc14ce116a200c53f7746e8ca9b"
+      "bytes": 32549,
+      "sha256": "05047bfec26429d9204ebc274487e6b84d6817b7ba1015b635bb4e2f0dd6a5bf"
     },
     {
       "path": "EXACT_PATCH_GREEN_MATRIX.png",
@@ -1424,6 +1464,11 @@
       "path": "EXACT_PATCH_GREEN_MATRIX.svg",
       "bytes": 41823,
       "sha256": "8f2e50722d53a7973e8701e43ecab365dad90bf5eb33fb64934b687c71dc2861"
+    },
+    {
+      "path": "figure_current_schur.py",
+      "bytes": 4097,
+      "sha256": "185276908d33b2e36f64b3232982742f7badc5e8effb0f609d043c040143a72c"
     },
     {
       "path": "figure_graph_green.py",
@@ -1719,6 +1764,11 @@
       "path": "fourth_schur_figure.py",
       "bytes": 2436,
       "sha256": "a551d4977ae0e2ed410d1cf27c03a57fd6b0c7151ebda491d5a5ee53a7fe67ed"
+    },
+    {
+      "path": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
+      "bytes": 28897,
+      "sha256": "4234936ea0b3fde66b80c5df883fcb0f9d8525b4e932e5b06e63ed39dfc48360"
     },
     {
       "path": "FULL_HAMILTONIAN_GROUND_FIBER.md",
@@ -2552,8 +2602,8 @@
     },
     {
       "path": "POSITIVE_TIME_COVARIANCE.md",
-      "bytes": 33685,
-      "sha256": "826d030593abd2f9b9d43dacf6af766004bc4232f1f9def6ac3bf8090ce067c1"
+      "bytes": 34769,
+      "sha256": "1c0dd5ed71dd497f0beed6b79dad97c81ca1e1113d8ce99a184b5b55284f04f7"
     },
     {
       "path": "POSITIVE_TIME_MAP.png",
@@ -2722,18 +2772,18 @@
     },
     {
       "path": "READER_SOURCES.json",
-      "bytes": 3560,
-      "sha256": "0d151eb330a6f39f22a57ab3406e992d392fb0de4e856222537cb58ad7aa7b08"
+      "bytes": 3606,
+      "sha256": "8b0f7e6214fbef192aa5991be99066e61455e59f95bcede68a1b0b1dd89b97d5"
     },
     {
       "path": "README.md",
-      "bytes": 88315,
-      "sha256": "4242374cc770558b035ce61a02a17bf9a0af459aa754541bff285a2caccc670d"
+      "bytes": 89424,
+      "sha256": "f6ca514ddcf5f5f86510c9d217f022174f6119c133b25039e0131ecc0f16bb80"
     },
     {
       "path": "RESEARCH_CONTINUATION.tex",
-      "bytes": 3031546,
-      "sha256": "6f9e4b2f1bb837c43558933caf0a444d80839b0281433cb47ecf5ac3b0bef4c7"
+      "bytes": 3066947,
+      "sha256": "32167186406ea3a4961164a289b595b811fb77af5caf7fd9c4398bcf850d2b54"
     },
     {
       "path": "RESULTS_20261011.md",
@@ -2744,6 +2794,11 @@
       "path": "RESULTS_20261012.md",
       "bytes": 18738,
       "sha256": "56c201fe57d10320cecf8b5766cd29e777f7f3009f530068b4b020bae45ea780"
+    },
+    {
+      "path": "RESULTS_20261013.md",
+      "bytes": 1108,
+      "sha256": "7da0c1f5ee68a0919a80afd8c82997e82a46f8036d2453002e554e439fc5b8f4"
     },
     {
       "path": "RETAINED_BOUNDARY_MAP.png",
@@ -3082,8 +3137,8 @@
     },
     {
       "path": "SOURCE_READING_USE_LEDGER.json",
-      "bytes": 516236,
-      "sha256": "7f6841894689878c3bb1e9a704106a788872d5c8955c32dc019e3e15d6643315"
+      "bytes": 525377,
+      "sha256": "2406184601d4cdac85043ef6618ccca012711157a326849516f9363547df65f8"
     },
     {
       "path": "SOURCE_ZERO_COVARIANCE_UPPER.md",
@@ -3242,8 +3297,8 @@
     },
     {
       "path": "TEX_FIDELITY.json",
-      "bytes": 21526,
-      "sha256": "98c7f01592a8179adac8669f0ba6dd91ff784efa1a1075e591121e208726df67"
+      "bytes": 21755,
+      "sha256": "0e86a501fc2e67b28739953d8f7762b9ded3e7ad82ffe3b41af7554588d7230d"
     },
     {
       "path": "THREE_SCALE_PHYSICAL_WINDOW.png",
@@ -3312,8 +3367,8 @@
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 330958,
-      "sha256": "c157a1f5273769267ffdae20a5b6495a870f31d358493d4bd3eafc6c9ef0ad4a"
+      "bytes": 337278,
+      "sha256": "e8e5d7bd26fc2b830f82c896ae2e4361fa2382e063e989b62656b4e638bd72a6"
     },
     {
       "path": "VERIFICATION.json",

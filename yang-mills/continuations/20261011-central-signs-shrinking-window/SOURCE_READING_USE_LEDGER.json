@@ -8769,5 +8769,161 @@
     "index_query": "SELECT unit_id,title,authors,arxiv_ids_json FROM canonical_units WHERE lower(title) LIKE '%weak operator%' OR lower(title) LIKE '%witten laplac%' OR lower(title) LIKE '%witten-laplac%' OR lower(title) LIKE '%semiclassical%' LIMIT 20",
     "index_routing_hit_count": 6,
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "arxiv:2105.02058v1",
+    "canonical_index_match": null,
+    "authors": [
+      "Geneviève Dusson",
+      "Israel Michael Sigal",
+      "Benjamin Stamm"
+    ],
+    "title": "The Feshbach–Schur map and perturbation theory",
+    "version": "v1, 5 May 2021",
+    "url": "https://arxiv.org/abs/2105.02058v1",
+    "source_url": "https://arxiv.org/src/2105.02058v1",
+    "archive_sha256": "a4509293255e0f0239c8aa49edc01d5246feee16735eeb54a45e990b598f6b8f",
+    "original_file": "AriFestFSM_arxiv.tex",
+    "file_sha256": "e6c45f423055bb91eafb0c85c387657d70f89a0f7b71aabb2ea0282ef8649f89",
+    "actual_reading": "Original author TeX lines398–490 reread: abstract Feshbach statement, full reconstruction, effective interaction, derivative formula. Source refers to other works for the general proof. Complete original-domain block and response proofs are supplied in CSR1–CSR21; explicit source comparison follows CSR18. Remaining perturbation and helium sections not reread.",
+    "application": "Exact correspondence F_P(L+z) and Q_P(-z) with the current-span raw Schur matrix and lift, retaining every N factor.",
+    "routing": "Canonical index first,24 broad routes plus exact arXiv/title query with no match. Extended to openly accessible original author TeX; intact archive retained privately. No literature PDF read."
+  },
+  {
+    "source_id": "programme:CSR-20261013",
+    "proofs": [
+      {
+        "source": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
+        "prefix": "CSR",
+        "tags": 21,
+        "owner_sha256": "bc531d494be230902eb794040324083be85b7bc7816e8aaa48335e012a32c092",
+        "public_sha256": "4234936ea0b3fde66b80c5df883fcb0f9d8525b4e932e5b06e63ed39dfc48360",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source_id": "programme:ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
+        "version": "d0e2f70785f9b0eb075d6955fd263c0f59c2db4e",
+        "sha256": "b604e85399021ee5a6c5693ba7689a980e4c3c08e2c21b180ded2f690e15bf11",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/d0e2f70785f9b0eb075d6955fd263c0f59c2db4e/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
+        "coverage": "KP8–KP17 and their complete original definitions reread; source norm, current-span residual, cell maps, actual operator bounds and common-subsequence hypotheses used."
+      },
+      {
+        "source_id": "programme:CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
+        "version": "d0e2f70785f9b0eb075d6955fd263c0f59c2db4e",
+        "sha256": "34a0d6f4b7b4291dd037b37c21846fcdb91cd743fa33a70161e7c67e981762e5",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/d0e2f70785f9b0eb075d6955fd263c0f59c2db4e/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
+        "coverage": "Original objects and domain section, DF16–DF21 with full residual and physical spectral window reread."
+      },
+      {
+        "source_id": "programme:ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "version": "d0e2f70785f9b0eb075d6955fd263c0f59c2db4e",
+        "sha256": "a22cac93db21cd56f68f45ad1ca5046fd3377cd7da61d0debe36259b5ecf987c",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/d0e2f70785f9b0eb075d6955fd263c0f59c2db4e/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "coverage": "SG4–SG13 reread, including full weighted energy, raw source and physical resolvent identities."
+      },
+      {
+        "source_id": "programme:POSITIVE_TIME_COVARIANCE.md",
+        "version": "d0e2f70785f9b0eb075d6955fd263c0f59c2db4e",
+        "sha256": "826d030593abd2f9b9d43dacf6af766004bc4232f1f9def6ac3bf8090ce067c1",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/d0e2f70785f9b0eb075d6955fd263c0f59c2db4e/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_COVARIANCE.md",
+        "coverage": "PT9–PT21 reread: weighted domains, exact-form/gauge-invariant projection, original scalar-Hamiltonian map and full outside-edge Schur receiver."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-12T23:16:27.616287+00:00",
+      "coverage": "CSR1–CSR21 complete derivation reviewed: complementary domain, bounded offdiagonal removal, raw Schur/source equations, full response and derivative, all three shifts, positive matrix spectral measure and source cross measure, actual low-energy bound, inverse-energy moment and variational defect, common compact relative-energy measure with both endpoint atoms, exact effective kernel, and full lifted norm/energy maps with physical projection and raw coefficient errors.",
+      "strengthening": "KP13 complementary residual now has its full inverse/source/response receiver. KP8 yields M([0,theta s])<=1500theta a³ and an actual bounded inverse-energy measure. A common actual subsequence gives S(theta), its endpoint values and theta-independent kernel, and joint lifted norm/energy limits at a4/a5, with exact physical projection costs.",
+      "correction": "KP17 current-trial kernel is only included in the full effective kernel. No identification of their kernels, physical exactness of separate current/complement pieces, nonzero finite-frequency mass, nonzero corrected overlap, strong convergence of inverses or interchange of shrinking limits is asserted.",
+      "limitations": "Full source cross measure and physical exact-form component remain unevaluated; no positive original signed window or smooth interacting continuum no-gap result established.",
+      "actual_reading": "Disk index first. Original Dusson–Sigal–Stamm 2105.02058v1 TeX lines398–490 reread and exact correspondence proved after CSR18. PT9–21, SG4–13, DF definitions/DF16–21 and KP8–17 reread with full formulas.",
+      "diagnostics": {
+        "checks": 2181,
+        "all_passed": true,
+        "scope": "Finite complex positive block operators, complete source and lift identities, original-scale scalar diagnostics with endpoint escape, exact kernel and original three-shift inequality. No Yang–Mills vacuum samples."
+      },
+      "figures_inspected": [
+        "CURRENT_SCHUR_FULL_MAP.png",
+        "CURRENT_SCHUR_ORIGINAL_SCALE.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
+          "prefix": "CSR",
+          "tags": 21,
+          "owner_sha256": "bc531d494be230902eb794040324083be85b7bc7816e8aaa48335e012a32c092",
+          "public_sha256": "4234936ea0b3fde66b80c5df883fcb0f9d8525b4e932e5b06e63ed39dfc48360",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-12T23:19:24.260085+00:00",
+        "tex_sha256": "32167186406ea3a4961164a289b595b811fb77af5caf7fd9c4398bcf850d2b54",
+        "pdf_sha256": "6b077ea870687a3176a6fbfdbc08d93bc33db7835d48d56f3e10e0061c260ae2",
+        "pages": 989,
+        "source_files": 95,
+        "math_blocks": 22238,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-12T23:19:24.189554+00:00",
+          "complete": true,
+          "pages": 989,
+          "inspected_pages": [
+            695,
+            696,
+            697,
+            715,
+            716,
+            717,
+            932,
+            933,
+            934,
+            966,
+            967,
+            968,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985,
+            986,
+            987,
+            988,
+            989
+          ],
+          "contact_sheets": 6,
+          "figures": [
+            "CURRENT_SCHUR_FULL_MAP.png",
+            "CURRENT_SCHUR_ORIGINAL_SCALE.png"
+          ],
+          "new_proof_pages": [
+            980,
+            981,
+            982,
+            983,
+            984,
+            985,
+            986,
+            987,
+            988,
+            989
+          ],
+          "new_overflow_or_missing_glyph": false,
+          "notes": "All24 new/receiving/adjacent pages inspected. Sigma glyph corrected; both figures fit and no diagnostic sentence is interrupted. Two figure originals also inspected.59 inherited overfull warnings and one prior missing delta unchanged. PDF retained locally."
+        }
+      }
+    },
+    "index_query": "SELECT unit_id,title,authors,arxiv_ids_json,primary_content_paths_json FROM canonical_units WHERE lower(title) LIKE '%feshbach%' OR lower(title) LIKE '%schur complement%' OR lower(title) LIKE '%witten%' OR lower(title) LIKE '%spectral theory%' LIMIT 30",
+    "index_routing_hit_count": 21,
+    "routing_is_not_reading": true
   }
 ]
