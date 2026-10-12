@@ -1,0 +1,159 @@
+[
+  {
+    "source_id": "arxiv:2105.02058v1",
+    "canonical_index_match": null,
+    "authors": [
+      "Geneviève Dusson",
+      "Israel Michael Sigal",
+      "Benjamin Stamm"
+    ],
+    "title": "The Feshbach–Schur map and perturbation theory",
+    "version": "v1, 5 May 2021",
+    "url": "https://arxiv.org/abs/2105.02058v1",
+    "source_url": "https://arxiv.org/src/2105.02058v1",
+    "archive_sha256": "a4509293255e0f0239c8aa49edc01d5246feee16735eeb54a45e990b598f6b8f",
+    "original_file": "AriFestFSM_arxiv.tex",
+    "file_sha256": "e6c45f423055bb91eafb0c85c387657d70f89a0f7b71aabb2ea0282ef8649f89",
+    "actual_reading": "Original author TeX lines284–513 read, including setup, finite-rank hypotheses, abstract map statement and reconstruction, effective interaction and derivative formulas. Core formulas at398–473. The cited general proof is referenced by that paper, not included there; the present infinite-rank form construction is proved completely in GF3–GF14. Helium applications and remaining perturbation proofs not read.",
+    "application": "Retained provenance for the Feshbach–Schur method. GF3–GF14 supply the proved infinite-rank form construction; PLF1–PLF26 derive its full physical norm, moments and actual Wilson-source window receiver. No additional author-source reading claimed.",
+    "routing": "Canonical index first,24 broad routes plus exact arXiv/title query with no match. Extended to openly accessible original author TeX; intact archive retained privately. No literature PDF read."
+  },
+  {
+    "source_id": "programme:PLF-20261012",
+    "proofs": [
+      {
+        "source": "FULL_PHYSICAL_LIFT_AND_SOURCE.md",
+        "prefix": "PLF",
+        "tags": 26,
+        "owner_sha256": "da77cac51690313543c303d55048823c7c65e9cd4489da59b8e2c3f11dd3b270",
+        "public_sha256": "c232b2862f46ea7c00cc8d2250971b5acb04ef23587617bb3137ef7a5cb9c6d4",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "FULL_HAMILTONIAN_GROUND_FIBER.md",
+        "version": "7e16e6360eae3e46a3adb52a55e270e06ee66113",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/7e16e6360eae3e46a3adb52a55e270e06ee66113/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_HAMILTONIAN_GROUND_FIBER.md",
+        "sha256": "ca03f98d063b9df75c7b38f52d5ec3ddadd922b53e495f31ae2dc5b9feaa084b"
+      },
+      {
+        "source": "RAW_OVERLAP_AND_ORIGINAL_METRIC.md",
+        "version": "7e16e6360eae3e46a3adb52a55e270e06ee66113",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/7e16e6360eae3e46a3adb52a55e270e06ee66113/yang-mills/continuations/20261011-central-signs-shrinking-window/RAW_OVERLAP_AND_ORIGINAL_METRIC.md",
+        "sha256": "2c97482223766199b707d56bfb8b2eb371e67899ff2561c4fa84b1996614cb5b"
+      },
+      {
+        "source": "LOCAL_CURVATURE_BUDGET.md",
+        "version": "7e16e6360eae3e46a3adb52a55e270e06ee66113",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/7e16e6360eae3e46a3adb52a55e270e06ee66113/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CURVATURE_BUDGET.md",
+        "sha256": "e29e60918dcbce2dc553a17066aab308a07f9a88e56c9c81d9920778b37b7310"
+      },
+      {
+        "source": "SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+        "version": "7e16e6360eae3e46a3adb52a55e270e06ee66113",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/7e16e6360eae3e46a3adb52a55e270e06ee66113/yang-mills/continuations/20261011-central-signs-shrinking-window/SQUARE_ROOT_SCORE_RECEIVING_MAPS.md",
+        "sha256": "d222414ce4ba2bc6551be399d272a825c968185ff6eae4bccbd8e354dedb0b36"
+      },
+      {
+        "source": "LOCAL_ENERGY_PHYSICAL_WINDOWS.md",
+        "version": "7e16e6360eae3e46a3adb52a55e270e06ee66113",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/7e16e6360eae3e46a3adb52a55e270e06ee66113/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_ENERGY_PHYSICAL_WINDOWS.md",
+        "sha256": "d7695d87b3e454d9a7d8048b7f653718be4b9ac032828171f8560980886991a5"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-12T01:29:07.427736+00:00",
+      "coverage": "PLF1–PLF26: full lift domains, Schur derivatives and complete physical norm, energy and second moment; exact vacuum subtraction and original-source pairings; actual outside Wilson multiplier and evaluated incident error; full original current, norm and inverse defect; original ordered face-gradient and second-moment bounds; complete coupled resolvent filter and exact three-scale raw spectral-window estimates without a total source-norm hypothesis.",
+      "strengthening": "The Schur lower inequality strengthens to S_z≥z S_z prime. The original observable has an evaluated projection-amplitude error≤16a_j M_f and a complete corrected-source error≤8M_f sqrt(a_j/kappa_*)/5 at s_j. The actual window receives the full three-scale complementary calculation with explicit low/high subtractions.",
+      "limitations": "The actual signed three-scale quantity is not evaluated as positive. Raw fiber overlap does not determine centered physical variance. Full interacting continuum reconstruction, intended-theory identification and the smooth no-gap endpoint remain unproved.",
+      "actual_reading": "GF3–GF14 and the complete pending ground-multiplier derivation read directly. Original path derivatives checked from their full ordered matrices; inherited LC and SR proof inputs retained at pinned versions. Human original-author reading coverage is unchanged from the GF ledger. New indexed routes are routing records only.",
+      "diagnostics": {
+        "checks": 6087,
+        "all_passed": true,
+        "scope": "Full-block finite graph diagnostics, actual ordered original SU(2) path derivatives, scalar filter bounds including divergent raw escape examples. No full Yang–Mills vacuum samples."
+      },
+      "figures_inspected": [
+        "PHYSICAL_LIFT_MAP.png",
+        "THREE_SCALE_PHYSICAL_WINDOW.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "FULL_PHYSICAL_LIFT_AND_SOURCE.md",
+          "prefix": "PLF",
+          "tags": 26,
+          "owner_sha256": "da77cac51690313543c303d55048823c7c65e9cd4489da59b8e2c3f11dd3b270",
+          "public_sha256": "c232b2862f46ea7c00cc8d2250971b5acb04ef23587617bb3137ef7a5cb9c6d4",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-12T01:31:06.984791+00:00",
+        "tex_sha256": "e00d6e27134d6bd1a30abb70d533cfde112609cc9d9a5af3fe460914ad43c1ec",
+        "pdf_sha256": "34fdc2353efe626ab6bdc170dd2a07eb213317b050f0245d217387fab8036351",
+        "pages": 823,
+        "source_files": 82,
+        "math_blocks": 19466,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-12T01:31:06.721230+00:00",
+          "complete": true,
+          "pages": 823,
+          "inspected_pages": [
+            808,
+            809,
+            810,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819,
+            820,
+            821,
+            822,
+            823
+          ],
+          "contact_sheets": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "individual_detail_pages": [
+            817,
+            819,
+            820,
+            821
+          ],
+          "page_sha256": {
+            "808": "d334a450316e83f5f0098395b846fa53cf2b91727137d571aba8a837e6440d22",
+            "809": "b6314a092f4f169f7643962fbe81c0fb2aba4958039e8933123f2234f376d048",
+            "810": "429892e50f76c42481b8b612ef74c813d69f54749c927650e7969200b871785b",
+            "814": "b8f01357ed88ff0166dc194581a842e69241dd7c5168a82ad646cd8fbf47520c",
+            "815": "90c9f10ac2d6045ec5f322b37429f7f5bca4dfb2305043f0f9fb31ab610a648b",
+            "816": "8c0ee1aadfa735ef1cbd3fffd5206474f7fb54f7a0f7b3ea6c40cffb078f882d",
+            "817": "7c5c8d5b544eba8d8500697471dcb0f3a20fba8435c47f42d7a9e275a5307d76",
+            "818": "997cbecbb3728668d2e391fcae1339570bf2bc6267b777bf0c9476636d289439",
+            "819": "9ea04e69a6573ba27b09c5e31aad4c733bc1d0aecd4013c37440be9a3d8d2827",
+            "820": "6013111094606078e88dc667da3bcda8ca3ce8d3a49eacfdd20af103a4518095",
+            "821": "f7651cbbdc44582fd3ee37140a43647dd7e27e6e2922d960781fc9b174b47d2f",
+            "822": "8fad8f772d425ae5459756d81b5c1b011d34a1bb1c91525bf4da4b57d7938cec",
+            "823": "b59e731e3fda6f5dcc41ac419e24faa4da178f1f87428b7100b1e8f26eb2fdad"
+          },
+          "figures": [
+            "PHYSICAL_LIFT_MAP.png",
+            "THREE_SCALE_PHYSICAL_WINDOW.png"
+          ],
+          "finding": "All new proof and changed receiving-note pages inspected. No new clipping, overlapping formula, missing glyph or equation overflow. Both mathematical figures inspected at full resolution. Earlier59 overfull warnings and one earlier missing delta remain; PDF is local QA."
+        }
+      }
+    },
+    "index_routes": "Three bounded index queries,24 routing records; no new source reading inferred from hits."
+  }
+]

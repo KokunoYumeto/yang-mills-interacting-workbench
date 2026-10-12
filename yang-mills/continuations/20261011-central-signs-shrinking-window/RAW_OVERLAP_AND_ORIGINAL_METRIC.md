@@ -266,3 +266,7 @@ Provider proofs: [EV1–EV29](https://github.com/KokunoYumeto/yang-mills-interac
 ![Exact original radius-two coordinate map, complete Haar prefactor and Jacobian, positive variational overlap, and actual raw-measure lower bound; RO1–RO17. The constant is retained by its proved variational definition.](RAW_OVERLAP_COORDINATE_MAP.png)
 
 Reproducible [diagnostics and figures](check_raw_overlap.py); [source record](GROUND_FIBER_SOURCE_USE_LEDGER.json). No full-vacuum samples.
+
+## Full physical lift and original-source spectral windows
+
+[PLF1–PLF26](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_PHYSICAL_LIFT_AND_SOURCE.md) calculate the complete physical norm, vacuum subtraction and first two energy moments of the coupled ground-family lift. The original Wilson observable differs from an outside multiplier by a proved spectral-amplitude error at most16a_j M_f. At the original scale s_j=100kappa_*a_j, the complete corrected-source error also tends to zero. A three-scale resolvent estimate subtracts low- and high-energy contributions and gives an exact lower bound for the original physical window, with no bounded total source-norm assumption. Every complementary term is retained. The actual signed three-scale value remains to be evaluated; these formulas do not assert a continuum no-gap result.
