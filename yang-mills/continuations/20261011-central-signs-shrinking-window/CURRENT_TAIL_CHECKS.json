@@ -1,0 +1,4219 @@
+{
+  "checks": 671,
+  "all_passed": true,
+  "scope": "Coupled radius-two sphere densities verify exponential and signed derivative identities, including refined first-moment bounds. Finite-dimensional matrices check Gram, Bessel, Schur, inverse and full residual formulas. Original regulator constants and tent integrals are evaluated independently. These diagnostics do not supply original Yang-Mills vacuum or spectral values.",
+  "results": [
+    {
+      "name": "exponential full identity 1.0 0.03",
+      "passed": true,
+      "lhs": 0.3931302411414465,
+      "rhs": 0.39313024114144635,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 1.0 0.03",
+      "passed": true,
+      "lhs": 0.3931302411414465,
+      "rhs": 0.9761187858745876
+    },
+    {
+      "name": "exponential derivative bound 1.0 0.03",
+      "passed": true,
+      "lhs": 0.017022418021927874,
+      "rhs": 9.761187858745876
+    },
+    {
+      "name": "weighted moment comparison 1.0 0.03",
+      "passed": true,
+      "lhs": 0.21225976750680908,
+      "rhs": 1.2388987908061038
+    },
+    {
+      "name": "refined exponential full bound 1.0 0.03",
+      "passed": true,
+      "lhs": 0.3931302411414465,
+      "rhs": 0.46252636546202736
+    },
+    {
+      "name": "refined exponential derivative bound 1.0 0.03",
+      "passed": true,
+      "lhs": 0.017022418021927874,
+      "rhs": 4.625263654620273
+    },
+    {
+      "name": "refined weighted first moment 1.0 0.03",
+      "passed": true,
+      "lhs": 0.21225976750680908,
+      "rhs": 0.2781656345136675
+    },
+    {
+      "name": "refined exponential moment 1.0 0.03",
+      "passed": true,
+      "lhs": 1.0204574798993875,
+      "rhs": 1.0218366960688525
+    },
+    {
+      "name": "actual score tail 1.0 0.03 1.0",
+      "passed": true,
+      "lhs": 0.05925676897768891,
+      "rhs": 0.22890837730567531
+    },
+    {
+      "name": "full derivative tail 1.0 0.03 1.0",
+      "passed": true,
+      "lhs": 0.0009607513713391618,
+      "rhs": 4.488566455110494
+    },
+    {
+      "name": "actual score tail 1.0 0.03 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.20920650458948933
+    },
+    {
+      "name": "full derivative tail 1.0 0.03 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 4.102240860487809
+    },
+    {
+      "name": "actual score tail 1.0 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.1645676652264401
+    },
+    {
+      "name": "full derivative tail 1.0 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 3.2269369536653425
+    },
+    {
+      "name": "exponential full identity 1.0 0.08",
+      "passed": true,
+      "lhs": 0.4089861542325214,
+      "rhs": 0.4089861542325212,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 1.0 0.08",
+      "passed": true,
+      "lhs": 0.4089861542325214,
+      "rhs": 1.3473172505515532
+    },
+    {
+      "name": "exponential derivative bound 1.0 0.08",
+      "passed": true,
+      "lhs": 0.01755009202815125,
+      "rhs": 5.052439689568325
+    },
+    {
+      "name": "weighted moment comparison 1.0 0.08",
+      "passed": true,
+      "lhs": 0.2305066872516592,
+      "rhs": 2.3603164201200224
+    },
+    {
+      "name": "refined exponential full bound 1.0 0.08",
+      "passed": true,
+      "lhs": 0.4089861542325214,
+      "rhs": 0.6384158977778006
+    },
+    {
+      "name": "refined exponential derivative bound 1.0 0.08",
+      "passed": true,
+      "lhs": 0.01755009202815125,
+      "rhs": 2.3940596166667523
+    },
+    {
+      "name": "refined weighted first moment 1.0 0.08",
+      "passed": true,
+      "lhs": 0.2305066872516592,
+      "rhs": 0.5299536326357349
+    },
+    {
+      "name": "refined exponential moment 1.0 0.08",
+      "passed": true,
+      "lhs": 1.055691826124941,
+      "rhs": 1.0671145723327615
+    },
+    {
+      "name": "actual score tail 1.0 0.08 1.0",
+      "passed": true,
+      "lhs": 0.05925676897768891,
+      "rhs": 0.28844856417308923
+    },
+    {
+      "name": "full derivative tail 1.0 0.08 1.0",
+      "passed": true,
+      "lhs": 0.0009607513713391618,
+      "rhs": 2.2099955663692024
+    },
+    {
+      "name": "actual score tail 1.0 0.08 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.2269016770631957
+    },
+    {
+      "name": "full derivative tail 1.0 0.08 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 1.738444085339572
+    },
+    {
+      "name": "actual score tail 1.0 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.11964353531808544
+    },
+    {
+      "name": "full derivative tail 1.0 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.9166683958220033
+    },
+    {
+      "name": "exponential full identity 1.0 0.13",
+      "passed": true,
+      "lhs": 0.42555456252921875,
+      "rhs": 0.4255545625292185,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 1.0 0.13",
+      "passed": true,
+      "lhs": 0.42555456252921875,
+      "rhs": 2.0823535351539415
+    },
+    {
+      "name": "exponential derivative bound 1.0 0.13",
+      "passed": true,
+      "lhs": 0.01809693326106146,
+      "rhs": 4.8054312349706345
+    },
+    {
+      "name": "weighted moment comparison 1.0 0.13",
+      "passed": true,
+      "lhs": 0.25047821484075994,
+      "rhs": 5.638186222554939
+    },
+    {
+      "name": "refined exponential full bound 1.0 0.13",
+      "passed": true,
+      "lhs": 0.42555456252921875,
+      "rhs": 0.9867071776093264
+    },
+    {
+      "name": "refined exponential derivative bound 1.0 0.13",
+      "passed": true,
+      "lhs": 0.01809693326106146,
+      "rhs": 2.27701656371383
+    },
+    {
+      "name": "refined weighted first moment 1.0 0.13",
+      "passed": true,
+      "lhs": 0.25047821484075994,
+      "rhs": 1.2659223333996052
+    },
+    {
+      "name": "refined exponential moment 1.0 0.13",
+      "passed": true,
+      "lhs": 1.0924059651398679,
+      "rhs": 1.1281853421403443
+    },
+    {
+      "name": "actual score tail 1.0 0.13 1.0",
+      "passed": true,
+      "lhs": 0.05925676897768891,
+      "rhs": 0.37668000994966583
+    },
+    {
+      "name": "full derivative tail 1.0 0.13 1.0",
+      "passed": true,
+      "lhs": 0.0009607513713391618,
+      "rhs": 1.9994378407275513
+    },
+    {
+      "name": "actual score tail 1.0 0.13 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.25503379022245837
+    },
+    {
+      "name": "full derivative tail 1.0 0.13 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 1.3537331351963553
+    },
+    {
+      "name": "actual score tail 1.0 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.09014288721182126
+    },
+    {
+      "name": "full derivative tail 1.0 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.47848331475788997
+    },
+    {
+      "name": "exponential full identity 1.0 0.18",
+      "passed": true,
+      "lhs": 0.4428695470537908,
+      "rhs": 0.4428695470537906,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 1.0 0.18",
+      "passed": true,
+      "lhs": 0.4428695470537908,
+      "rhs": 4.0846840739494334
+    },
+    {
+      "name": "exponential derivative bound 1.0 0.18",
+      "passed": true,
+      "lhs": 0.0186637097923339,
+      "rhs": 6.807806789915722
+    },
+    {
+      "name": "weighted moment comparison 1.0 0.18",
+      "passed": true,
+      "lhs": 0.2723465656373196,
+      "rhs": 21.69438939466227
+    },
+    {
+      "name": "refined exponential full bound 1.0 0.18",
+      "passed": true,
+      "lhs": 0.4428695470537908,
+      "rhs": 1.9354960749901948
+    },
+    {
+      "name": "refined exponential derivative bound 1.0 0.18",
+      "passed": true,
+      "lhs": 0.0186637097923339,
+      "rhs": 3.225826791650325
+    },
+    {
+      "name": "refined weighted first moment 1.0 0.18",
+      "passed": true,
+      "lhs": 0.2723465656373196,
+      "rhs": 4.870965760993523
+    },
+    {
+      "name": "refined exponential moment 1.0 0.18",
+      "passed": true,
+      "lhs": 1.1306680664964588,
+      "rhs": 1.2140018396687042
+    },
+    {
+      "name": "actual score tail 1.0 0.18 1.0",
+      "passed": true,
+      "lhs": 0.05925676897768891,
+      "rhs": 0.5150948568014591
+    },
+    {
+      "name": "full derivative tail 1.0 0.18 1.0",
+      "passed": true,
+      "lhs": 0.0009607513713391618,
+      "rhs": 2.694437026237912
+    },
+    {
+      "name": "actual score tail 1.0 0.18 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.3001706276078807
+    },
+    {
+      "name": "full derivative tail 1.0 0.18 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 1.570178468171913
+    },
+    {
+      "name": "actual score tail 1.0 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.07111875402134099
+    },
+    {
+      "name": "full derivative tail 1.0 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.3720188651948986
+    },
+    {
+      "name": "exponential full identity 1.0 0.23",
+      "passed": true,
+      "lhs": 0.46096688652362394,
+      "rhs": 0.46096688652362383,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 1.0 0.23",
+      "passed": true,
+      "lhs": 0.46096688652362394,
+      "rhs": 19.554356448783203
+    },
+    {
+      "name": "exponential derivative bound 1.0 0.23",
+      "passed": true,
+      "lhs": 0.019251222596571162,
+      "rhs": 25.50568232449983
+    },
+    {
+      "name": "weighted moment comparison 1.0 0.23",
+      "passed": true,
+      "lhs": 0.2963017833905994,
+      "rhs": 497.18445552179185
+    },
+    {
+      "name": "refined exponential full bound 1.0 0.23",
+      "passed": true,
+      "lhs": 0.46096688652362394,
+      "rhs": 9.265681132343952
+    },
+    {
+      "name": "refined exponential derivative bound 1.0 0.23",
+      "passed": true,
+      "lhs": 0.019251222596571162,
+      "rhs": 12.085671042187762
+    },
+    {
+      "name": "refined weighted first moment 1.0 0.23",
+      "passed": true,
+      "lhs": 0.2963017833905994,
+      "rhs": 111.63109574960941
+    },
+    {
+      "name": "refined exponential moment 1.0 0.23",
+      "passed": true,
+      "lhs": 1.170549613502291,
+      "rhs": 1.341291801170873
+    },
+    {
+      "name": "actual score tail 1.0 0.23 1.0",
+      "passed": true,
+      "lhs": 0.05925676897768891,
+      "rhs": 0.7492694488785274
+    },
+    {
+      "name": "full derivative tail 1.0 0.23 1.0",
+      "passed": true,
+      "lhs": 0.0009607513713391618,
+      "rhs": 9.602471751819667
+    },
+    {
+      "name": "actual score tail 1.0 0.23 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.3758156248397816
+    },
+    {
+      "name": "full derivative tail 1.0 0.23 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 4.816370034595547
+    },
+    {
+      "name": "actual score tail 1.0 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.05968607022781824
+    },
+    {
+      "name": "full derivative tail 1.0 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.7649234920729653
+    },
+    {
+      "name": "signed derivative identity 1.0 1.0 1.0",
+      "passed": true,
+      "lhs": 0.20373964498765804,
+      "rhs": 0.20373964498765684,
+      "scale": 2.667303121369687
+    },
+    {
+      "name": "full directional second energy 1.0 1.0 1.0",
+      "passed": true,
+      "lhs": 2.2368846795939437,
+      "rhs": 2.2368846795939366,
+      "scale": 8.673315923652511
+    },
+    {
+      "name": "signed derivative identity 1.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 0.9228752878173992,
+      "rhs": 0.9228752878173953,
+      "scale": 4.700620514119096
+    },
+    {
+      "name": "full directional second energy 1.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 8.65998901650814,
+      "rhs": 8.659989016508122,
+      "scale": 16.245172930763133
+    },
+    {
+      "name": "signed derivative identity 1.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 0.14438253893058975,
+      "rhs": 0.14438253893058914,
+      "scale": 1.0
+    },
+    {
+      "name": "full directional second energy 1.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 1.3563168431710095,
+      "rhs": 1.3563168431710066,
+      "scale": 2.7761894375972553
+    },
+    {
+      "name": "exponential full identity 3.0 0.03",
+      "passed": true,
+      "lhs": 5.314571471445622,
+      "rhs": 5.314571471445631,
+      "scale": 5.314571471445631
+    },
+    {
+      "name": "exponential full bound 3.0 0.03",
+      "passed": true,
+      "lhs": 5.314571471445622,
+      "rhs": 8.237843007237585
+    },
+    {
+      "name": "exponential derivative bound 3.0 0.03",
+      "passed": true,
+      "lhs": 2.5197088426538876,
+      "rhs": 205.94607518093966
+    },
+    {
+      "name": "weighted moment comparison 3.0 0.03",
+      "passed": true,
+      "lhs": 1.347850530657283,
+      "rhs": 3.09724697701526
+    },
+    {
+      "name": "refined exponential full bound 3.0 0.03",
+      "passed": true,
+      "lhs": 5.314571471445622,
+      "rhs": 5.946887805171402
+    },
+    {
+      "name": "refined exponential derivative bound 3.0 0.03",
+      "passed": true,
+      "lhs": 2.5197088426538876,
+      "rhs": 148.67219512928506
+    },
+    {
+      "name": "refined weighted first moment 3.0 0.03",
+      "passed": true,
+      "lhs": 1.347850530657283,
+      "rhs": 1.614092076953034
+    },
+    {
+      "name": "refined exponential moment 3.0 0.03",
+      "passed": true,
+      "lhs": 1.0485563267149045,
+      "rhs": 1.0506841014680903
+    },
+    {
+      "name": "actual score tail 3.0 0.03 1.0",
+      "passed": true,
+      "lhs": 1.022140789285397,
+      "rhs": 1.328270470229895
+    },
+    {
+      "name": "full derivative tail 3.0 0.03 1.0",
+      "passed": true,
+      "lhs": 1.9019241198190338,
+      "rhs": 144.27826772606696
+    },
+    {
+      "name": "actual score tail 3.0 0.03 4.0",
+      "passed": true,
+      "lhs": 0.09578126509150872,
+      "rhs": 1.2139478052179797
+    },
+    {
+      "name": "full derivative tail 3.0 0.03 4.0",
+      "passed": true,
+      "lhs": 0.04660836516523746,
+      "rhs": 131.86040823176396
+    },
+    {
+      "name": "actual score tail 3.0 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.9549251654650563
+    },
+    {
+      "name": "full derivative tail 3.0 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 103.72507088671505
+    },
+    {
+      "name": "exponential full identity 3.0 0.08",
+      "passed": true,
+      "lhs": 5.927667483685434,
+      "rhs": 5.927667483685442,
+      "scale": 5.927667483685442
+    },
+    {
+      "name": "exponential full bound 3.0 0.08",
+      "passed": true,
+      "lhs": 5.927667483685434,
+      "rhs": 11.370530053923874
+    },
+    {
+      "name": "exponential derivative bound 3.0 0.08",
+      "passed": true,
+      "lhs": 2.770218890218337,
+      "rhs": 106.59871925553632
+    },
+    {
+      "name": "weighted moment comparison 3.0 0.08",
+      "passed": true,
+      "lhs": 1.7174394242651574,
+      "rhs": 5.900791050300057
+    },
+    {
+      "name": "refined exponential full bound 3.0 0.08",
+      "passed": true,
+      "lhs": 5.927667483685434,
+      "rhs": 8.208370377610503
+    },
+    {
+      "name": "refined exponential derivative bound 3.0 0.08",
+      "passed": true,
+      "lhs": 2.770218890218337,
+      "rhs": 76.95347229009847
+    },
+    {
+      "name": "refined weighted first moment 3.0 0.08",
+      "passed": true,
+      "lhs": 1.7174394242651574,
+      "rhs": 3.0751245066104294
+    },
+    {
+      "name": "refined exponential moment 3.0 0.08",
+      "passed": true,
+      "lhs": 1.1374234263808864,
+      "rhs": 1.1557763950817281
+    },
+    {
+      "name": "actual score tail 3.0 0.08 1.0",
+      "passed": true,
+      "lhs": 1.022140789285397,
+      "rhs": 1.6737601064713337
+    },
+    {
+      "name": "full derivative tail 3.0 0.08 1.0",
+      "passed": true,
+      "lhs": 1.9019241198190338,
+      "rhs": 71.03700818220092
+    },
+    {
+      "name": "actual score tail 3.0 0.08 4.0",
+      "passed": true,
+      "lhs": 0.09578126509150872,
+      "rhs": 1.316626332492072
+    },
+    {
+      "name": "full derivative tail 3.0 0.08 4.0",
+      "passed": true,
+      "lhs": 0.04660836516523746,
+      "rhs": 55.87968980293196
+    },
+    {
+      "name": "actual score tail 3.0 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.6942470904186535
+    },
+    {
+      "name": "full derivative tail 3.0 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 29.464937090961623
+    },
+    {
+      "name": "exponential full identity 3.0 0.13",
+      "passed": true,
+      "lhs": 6.630514246868352,
+      "rhs": 6.6305142468683576,
+      "scale": 6.6305142468683576
+    },
+    {
+      "name": "exponential full bound 3.0 0.13",
+      "passed": true,
+      "lhs": 6.630514246868352,
+      "rhs": 17.573784826602374
+    },
+    {
+      "name": "exponential derivative bound 3.0 0.13",
+      "passed": true,
+      "lhs": 3.0525690046312053,
+      "rhs": 101.38722015347523
+    },
+    {
+      "name": "weighted moment comparison 3.0 0.13",
+      "passed": true,
+      "lhs": 2.2169094271339818,
+      "rhs": 14.095465556387348
+    },
+    {
+      "name": "refined exponential full bound 3.0 0.13",
+      "passed": true,
+      "lhs": 6.630514246868352,
+      "rhs": 12.686491668293307
+    },
+    {
+      "name": "refined exponential derivative bound 3.0 0.13",
+      "passed": true,
+      "lhs": 3.0525690046312053,
+      "rhs": 73.19129808630754
+    },
+    {
+      "name": "refined weighted first moment 3.0 0.13",
+      "passed": true,
+      "lhs": 2.2169094271339818,
+      "rhs": 7.345678095537008
+    },
+    {
+      "name": "refined exponential moment 3.0 0.13",
+      "passed": true,
+      "lhs": 1.2375485402546842,
+      "rhs": 1.2975248117791163
+    },
+    {
+      "name": "actual score tail 3.0 0.13 1.0",
+      "passed": true,
+      "lhs": 1.022140789285397,
+      "rhs": 2.1857344839499655
+    },
+    {
+      "name": "full derivative tail 3.0 0.13 1.0",
+      "passed": true,
+      "lhs": 1.9019241198190338,
+      "rhs": 64.26894443273147
+    },
+    {
+      "name": "actual score tail 3.0 0.13 4.0",
+      "passed": true,
+      "lhs": 0.09578126509150872,
+      "rhs": 1.4798665581860226
+    },
+    {
+      "name": "full derivative tail 3.0 0.13 4.0",
+      "passed": true,
+      "lhs": 0.04660836516523746,
+      "rhs": 43.513730644921395
+    },
+    {
+      "name": "actual score tail 3.0 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.5230657636650752
+    },
+    {
+      "name": "full derivative tail 3.0 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 15.380131825940717
+    },
+    {
+      "name": "exponential full identity 3.0 0.18",
+      "passed": true,
+      "lhs": 7.438441592229777,
+      "rhs": 7.438441592229783,
+      "scale": 7.438441592229783
+    },
+    {
+      "name": "exponential full bound 3.0 0.18",
+      "passed": true,
+      "lhs": 7.438441592229777,
+      "rhs": 34.47222471516117
+    },
+    {
+      "name": "exponential derivative bound 3.0 0.18",
+      "passed": true,
+      "lhs": 3.37152133489762,
+      "rhs": 143.63426964650486
+    },
+    {
+      "name": "weighted moment comparison 3.0 0.18",
+      "passed": true,
+      "lhs": 2.8996585002588047,
+      "rhs": 54.23597348665568
+    },
+    {
+      "name": "refined exponential full bound 3.0 0.18",
+      "passed": true,
+      "lhs": 7.438441592229777,
+      "rhs": 24.885452732664316
+    },
+    {
+      "name": "refined exponential derivative bound 3.0 0.18",
+      "passed": true,
+      "lhs": 3.37152133489762,
+      "rhs": 103.68938638610132
+    },
+    {
+      "name": "refined weighted first moment 3.0 0.18",
+      "passed": true,
+      "lhs": 2.8996585002588047,
+      "rhs": 28.264408921954193
+    },
+    {
+      "name": "refined exponential moment 3.0 0.18",
+      "passed": true,
+      "lhs": 1.3507189053139772,
+      "rhs": 1.4967093429302203
+    },
+    {
+      "name": "actual score tail 3.0 0.18 1.0",
+      "passed": true,
+      "lhs": 1.022140789285397,
+      "rhs": 2.98890453774455
+    },
+    {
+      "name": "full derivative tail 3.0 0.18 1.0",
+      "passed": true,
+      "lhs": 1.9019241198190338,
+      "rhs": 86.60865568782393
+    },
+    {
+      "name": "actual score tail 3.0 0.18 4.0",
+      "passed": true,
+      "lhs": 0.09578126509150872,
+      "rhs": 1.741778895883324
+    },
+    {
+      "name": "full derivative tail 3.0 0.18 4.0",
+      "passed": true,
+      "lhs": 0.04660836516523746,
+      "rhs": 50.47104274253999
+    },
+    {
+      "name": "actual score tail 3.0 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.4126757699214566
+    },
+    {
+      "name": "full derivative tail 3.0 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 11.957991035339566
+    },
+    {
+      "name": "exponential full identity 3.0 0.23",
+      "passed": true,
+      "lhs": 8.369692806821817,
+      "rhs": 8.369692806821819,
+      "scale": 8.369692806821819
+    },
+    {
+      "name": "exponential full bound 3.0 0.23",
+      "passed": true,
+      "lhs": 8.369692806821817,
+      "rhs": 165.0267578738478
+    },
+    {
+      "name": "exponential derivative bound 3.0 0.23",
+      "passed": true,
+      "lhs": 3.732637482180443,
+      "rhs": 538.1307321973298
+    },
+    {
+      "name": "weighted moment comparison 3.0 0.23",
+      "passed": true,
+      "lhs": 3.8434845715133705,
+      "rhs": 1242.9611388044798
+    },
+    {
+      "name": "refined exponential full bound 3.0 0.23",
+      "passed": true,
+      "lhs": 8.369692806821817,
+      "rhs": 119.1325949116446
+    },
+    {
+      "name": "refined exponential derivative bound 3.0 0.23",
+      "passed": true,
+      "lhs": 3.732637482180443,
+      "rhs": 388.4758529727542
+    },
+    {
+      "name": "refined weighted first moment 3.0 0.23",
+      "passed": true,
+      "lhs": 3.8434845715133705,
+      "rhs": 647.7538733569797
+    },
+    {
+      "name": "refined exponential moment 3.0 0.23",
+      "passed": true,
+      "lhs": 1.4790490474998825,
+      "rhs": 1.7921559299186103
+    },
+    {
+      "name": "actual score tail 3.0 0.23 1.0",
+      "passed": true,
+      "lhs": 1.022140789285397,
+      "rhs": 4.347732900407491
+    },
+    {
+      "name": "full derivative tail 3.0 0.23 1.0",
+      "passed": true,
+      "lhs": 1.9019241198190338,
+      "rhs": 308.6571189479979
+    },
+    {
+      "name": "actual score tail 3.0 0.23 4.0",
+      "passed": true,
+      "lhs": 0.09578126509150872,
+      "rhs": 2.1807187775355494
+    },
+    {
+      "name": "full derivative tail 3.0 0.23 4.0",
+      "passed": true,
+      "lhs": 0.04660836516523746,
+      "rhs": 154.81502441119068
+    },
+    {
+      "name": "actual score tail 3.0 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.34633614331122653
+    },
+    {
+      "name": "full derivative tail 3.0 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 24.587323699665397
+    },
+    {
+      "name": "signed derivative identity 3.0 1.0 1.0",
+      "passed": true,
+      "lhs": 6.622067860459354,
+      "rhs": 6.622067860459332,
+      "scale": 73.5083983698758
+    },
+    {
+      "name": "full directional second energy 3.0 1.0 1.0",
+      "passed": true,
+      "lhs": 43.089866984812495,
+      "rhs": 43.08986698481239,
+      "scale": 229.30828152970787
+    },
+    {
+      "name": "signed derivative identity 3.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 26.455990517008477,
+      "rhs": 26.45599051700809,
+      "scale": 65.28040558868422
+    },
+    {
+      "name": "full directional second energy 3.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 144.60607940637692,
+      "rhs": 144.60607940637558,
+      "scale": 225.76444173603915
+    },
+    {
+      "name": "signed derivative identity 3.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 3.9712631146072814,
+      "rhs": 3.9712631146072273,
+      "scale": 12.012145080937144
+    },
+    {
+      "name": "full directional second energy 3.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 21.857547807520355,
+      "rhs": 21.857547807520167,
+      "scale": 40.55162448023015
+    },
+    {
+      "name": "exponential full identity 8.0 0.03",
+      "passed": true,
+      "lhs": 38.23427767115405,
+      "rhs": 38.234277671154906,
+      "scale": 38.234277671154906
+    },
+    {
+      "name": "exponential full bound 8.0 0.03",
+      "passed": true,
+      "lhs": 38.23427767115405,
+      "rhs": 46.61183328579769
+    },
+    {
+      "name": "exponential derivative bound 8.0 0.03",
+      "passed": true,
+      "lhs": 70.41336711532672,
+      "rhs": 2330.5916642898846
+    },
+    {
+      "name": "weighted moment comparison 8.0 0.03",
+      "passed": true,
+      "lhs": 4.253345122059023,
+      "rhs": 6.19449395403052
+    },
+    {
+      "name": "refined exponential full bound 8.0 0.03",
+      "passed": true,
+      "lhs": 38.23427767115405,
+      "rhs": 40.528594272143444
+    },
+    {
+      "name": "refined exponential derivative bound 8.0 0.03",
+      "passed": true,
+      "lhs": 70.41336711532672,
+      "rhs": 2026.4297136071725
+    },
+    {
+      "name": "refined weighted first moment 8.0 0.03",
+      "passed": true,
+      "lhs": 4.253345122059023,
+      "rhs": 4.683133579868808
+    },
+    {
+      "name": "refined exponential moment 8.0 0.03",
+      "passed": true,
+      "lhs": 1.071887866393135,
+      "rhs": 1.0735275331995817
+    },
+    {
+      "name": "actual score tail 8.0 0.03 1.0",
+      "passed": true,
+      "lhs": 3.183725938774827,
+      "rhs": 3.853849561063643
+    },
+    {
+      "name": "full derivative tail 8.0 0.03 1.0",
+      "passed": true,
+      "lhs": 58.729199716491,
+      "rhs": 1966.539664620063
+    },
+    {
+      "name": "actual score tail 8.0 0.03 4.0",
+      "passed": true,
+      "lhs": 1.2305287556044286,
+      "rhs": 3.5221532971998974
+    },
+    {
+      "name": "full derivative tail 8.0 0.03 4.0",
+      "passed": true,
+      "lhs": 19.01766883593184,
+      "rhs": 1797.281926569098
+    },
+    {
+      "name": "actual score tail 8.0 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0035989665425761454,
+      "rhs": 2.770623914524864
+    },
+    {
+      "name": "full derivative tail 8.0 0.03 12.0",
+      "passed": true,
+      "lhs": 0.01858286533869809,
+      "rhs": 1413.7920376306238
+    },
+    {
+      "name": "exponential full identity 8.0 0.08",
+      "passed": true,
+      "lhs": 45.92736641047254,
+      "rhs": 45.927366410473326,
+      "scale": 45.927366410473326
+    },
+    {
+      "name": "exponential full bound 8.0 0.08",
+      "passed": true,
+      "lhs": 45.92736641047254,
+      "rhs": 64.33738185821271
+    },
+    {
+      "name": "exponential derivative bound 8.0 0.08",
+      "passed": true,
+      "lhs": 83.70125513535899,
+      "rhs": 1206.3259098414883
+    },
+    {
+      "name": "weighted moment comparison 8.0 0.08",
+      "passed": true,
+      "lhs": 6.417145897716218,
+      "rhs": 11.801582100600115
+    },
+    {
+      "name": "refined exponential full bound 8.0 0.08",
+      "passed": true,
+      "lhs": 45.92736641047254,
+      "rhs": 55.94080863277167
+    },
+    {
+      "name": "refined exponential derivative bound 8.0 0.08",
+      "passed": true,
+      "lhs": 83.70125513535899,
+      "rhs": 1048.8901618644688
+    },
+    {
+      "name": "refined weighted first moment 8.0 0.08",
+      "passed": true,
+      "lhs": 6.417145897716218,
+      "rhs": 8.922179251613933
+    },
+    {
+      "name": "refined exponential moment 8.0 0.08",
+      "passed": true,
+      "lhs": 1.2112463305216354,
+      "rhs": 1.2259851458212003
+    },
+    {
+      "name": "actual score tail 8.0 0.08 1.0",
+      "passed": true,
+      "lhs": 3.183725938774827,
+      "rhs": 4.85625465311591
+    },
+    {
+      "name": "full derivative tail 8.0 0.08 1.0",
+      "passed": true,
+      "lhs": 58.729199716491,
+      "rhs": 968.2476539812155
+    },
+    {
+      "name": "actual score tail 8.0 0.08 4.0",
+      "passed": true,
+      "lhs": 1.2305287556044286,
+      "rhs": 3.8200652105750654
+    },
+    {
+      "name": "full derivative tail 8.0 0.08 4.0",
+      "passed": true,
+      "lhs": 19.01766883593184,
+      "rhs": 761.6505810339519
+    },
+    {
+      "name": "actual score tail 8.0 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0035989665425761454,
+      "rhs": 2.014291444886645
+    },
+    {
+      "name": "full derivative tail 8.0 0.08 12.0",
+      "passed": true,
+      "lhs": 0.01858286533869809,
+      "rhs": 401.61258114718896
+    },
+    {
+      "name": "exponential full identity 8.0 0.13",
+      "passed": true,
+      "lhs": 55.79653153103161,
+      "rhs": 55.79653153103232,
+      "scale": 55.79653153103232
+    },
+    {
+      "name": "exponential full bound 8.0 0.13",
+      "passed": true,
+      "lhs": 55.79653153103161,
+      "rhs": 99.43699191868399
+    },
+    {
+      "name": "exponential derivative bound 8.0 0.13",
+      "passed": true,
+      "lhs": 100.50563056663434,
+      "rhs": 1147.349906754046
+    },
+    {
+      "name": "weighted moment comparison 8.0 0.13",
+      "passed": true,
+      "lhs": 10.251825866969334,
+      "rhs": 28.190931112774695
+    },
+    {
+      "name": "refined exponential full bound 8.0 0.13",
+      "passed": true,
+      "lhs": 55.79653153103161,
+      "rhs": 86.45962231102968
+    },
+    {
+      "name": "refined exponential derivative bound 8.0 0.13",
+      "passed": true,
+      "lhs": 100.50563056663434,
+      "rhs": 997.611026665727
+    },
+    {
+      "name": "refined weighted first moment 8.0 0.13",
+      "passed": true,
+      "lhs": 10.251825866969334,
+      "rhs": 21.31278149946404
+    },
+    {
+      "name": "refined exponential moment 8.0 0.13",
+      "passed": true,
+      "lhs": 1.3811395578216397,
+      "rhs": 1.4316198737302483
+    },
+    {
+      "name": "actual score tail 8.0 0.13 1.0",
+      "passed": true,
+      "lhs": 3.183725938774827,
+      "rhs": 6.341699277643593
+    },
+    {
+      "name": "full derivative tail 8.0 0.13 1.0",
+      "passed": true,
+      "lhs": 58.729199716491,
+      "rhs": 875.9976843511452
+    },
+    {
+      "name": "actual score tail 8.0 0.13 4.0",
+      "passed": true,
+      "lhs": 1.2305287556044286,
+      "rhs": 4.293691091928641
+    },
+    {
+      "name": "full derivative tail 8.0 0.13 4.0",
+      "passed": true,
+      "lhs": 19.01766883593184,
+      "rhs": 593.1002542344162
+    },
+    {
+      "name": "actual score tail 8.0 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0035989665425761454,
+      "rhs": 1.517625219326885
+    },
+    {
+      "name": "full derivative tail 8.0 0.13 12.0",
+      "passed": true,
+      "lhs": 0.01858286533869809,
+      "rhs": 209.63406173009722
+    },
+    {
+      "name": "exponential full identity 8.0 0.18",
+      "passed": true,
+      "lhs": 68.63092828029994,
+      "rhs": 68.63092828030058,
+      "scale": 68.63092828030058
+    },
+    {
+      "name": "exponential full bound 8.0 0.18",
+      "passed": true,
+      "lhs": 68.63092828029994,
+      "rhs": 195.05270857941048
+    },
+    {
+      "name": "exponential derivative bound 8.0 0.18",
+      "passed": true,
+      "lhs": 122.01752429214804,
+      "rhs": 1625.439238161754
+    },
+    {
+      "name": "weighted moment comparison 8.0 0.18",
+      "passed": true,
+      "lhs": 17.526910594989047,
+      "rhs": 108.47194697331136
+    },
+    {
+      "name": "refined exponential full bound 8.0 0.18",
+      "passed": true,
+      "lhs": 68.63092828029994,
+      "rhs": 169.59667814881303
+    },
+    {
+      "name": "refined exponential derivative bound 8.0 0.18",
+      "passed": true,
+      "lhs": 122.01752429214804,
+      "rhs": 1413.3056512401085
+    },
+    {
+      "name": "refined weighted first moment 8.0 0.18",
+      "passed": true,
+      "lhs": 17.526910594989047,
+      "rhs": 82.00647560789602
+    },
+    {
+      "name": "refined exponential moment 8.0 0.18",
+      "passed": true,
+      "lhs": 1.5909613158777887,
+      "rhs": 1.720577294358025
+    },
+    {
+      "name": "actual score tail 8.0 0.18 1.0",
+      "passed": true,
+      "lhs": 3.183725938774827,
+      "rhs": 8.672020269225971
+    },
+    {
+      "name": "full derivative tail 8.0 0.18 1.0",
+      "passed": true,
+      "lhs": 58.729199716491,
+      "rhs": 1180.492110100071
+    },
+    {
+      "name": "actual score tail 8.0 0.18 4.0",
+      "passed": true,
+      "lhs": 1.2305287556044286,
+      "rhs": 5.053604656443251
+    },
+    {
+      "name": "full derivative tail 8.0 0.18 4.0",
+      "passed": true,
+      "lhs": 19.01766883593184,
+      "rhs": 687.9297141020998
+    },
+    {
+      "name": "actual score tail 8.0 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0035989665425761454,
+      "rhs": 1.1973392245166332
+    },
+    {
+      "name": "full derivative tail 8.0 0.18 12.0",
+      "passed": true,
+      "lhs": 0.01858286533869809,
+      "rhs": 162.98964529304328
+    },
+    {
+      "name": "exponential full identity 8.0 0.23",
+      "passed": true,
+      "lhs": 85.56623497999269,
+      "rhs": 85.56623497999323,
+      "scale": 85.56623497999323
+    },
+    {
+      "name": "exponential full bound 8.0 0.23",
+      "passed": true,
+      "lhs": 85.56623497999269,
+      "rhs": 933.763816444827
+    },
+    {
+      "name": "exponential derivative bound 8.0 0.23",
+      "passed": true,
+      "lhs": 149.9159322984442,
+      "rhs": 6089.76402029235
+    },
+    {
+      "name": "weighted moment comparison 8.0 0.23",
+      "passed": true,
+      "lhs": 32.41045040211926,
+      "rhs": 2485.9222776089596
+    },
+    {
+      "name": "refined exponential full bound 8.0 0.23",
+      "passed": true,
+      "lhs": 85.56623497999269,
+      "rhs": 811.8997300677179
+    },
+    {
+      "name": "refined exponential derivative bound 8.0 0.23",
+      "passed": true,
+      "lhs": 149.9159322984442,
+      "rhs": 5294.9982395720735
+    },
+    {
+      "name": "refined weighted first moment 8.0 0.23",
+      "passed": true,
+      "lhs": 32.41045040211926,
+      "rhs": 1879.3958282321876
+    },
+    {
+      "name": "refined exponential moment 8.0 0.23",
+      "passed": true,
+      "lhs": 1.8538020493959102,
+      "rhs": 2.149182282988801
+    },
+    {
+      "name": "actual score tail 8.0 0.23 1.0",
+      "passed": true,
+      "lhs": 3.183725938774827,
+      "rhs": 12.614530628658295
+    },
+    {
+      "name": "full derivative tail 8.0 0.23 1.0",
+      "passed": true,
+      "lhs": 58.729199716491,
+      "rhs": 4207.054026536011
+    },
+    {
+      "name": "actual score tail 8.0 0.23 4.0",
+      "passed": true,
+      "lhs": 1.2305287556044286,
+      "rhs": 6.327146685835785
+    },
+    {
+      "name": "full derivative tail 8.0 0.23 4.0",
+      "passed": true,
+      "lhs": 19.01766883593184,
+      "rhs": 2110.1576209784535
+    },
+    {
+      "name": "actual score tail 8.0 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0035989665425761454,
+      "rhs": 1.004861151245373
+    },
+    {
+      "name": "full derivative tail 8.0 0.23 12.0",
+      "passed": true,
+      "lhs": 0.01858286533869809,
+      "rhs": 335.129802043701
+    },
+    {
+      "name": "signed derivative identity 8.0 1.0 1.0",
+      "passed": true,
+      "lhs": 86.84111588910928,
+      "rhs": 86.84111588911045,
+      "scale": 751.2781603793106
+    },
+    {
+      "name": "full directional second energy 8.0 1.0 1.0",
+      "passed": true,
+      "lhs": 434.0347341683117,
+      "rhs": 434.03473416831537,
+      "scale": 2345.6523206157644
+    },
+    {
+      "name": "signed derivative identity 8.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 198.21302936952205,
+      "rhs": 198.2130293695099,
+      "scale": 253.76199203056333
+    },
+    {
+      "name": "full directional second energy 8.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 925.2763902770969,
+      "rhs": 925.2763902770582,
+      "scale": 980.8253529381117
+    },
+    {
+      "name": "signed derivative identity 8.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 26.68897551547741,
+      "rhs": 26.688975515475885,
+      "scale": 41.193571315683
+    },
+    {
+      "name": "full directional second energy 8.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 125.7683396486506,
+      "rhs": 125.76833964864574,
+      "scale": 151.23623054530657
+    },
+    {
+      "name": "exponential full identity 15.0 0.03",
+      "passed": true,
+      "lhs": 59.60824311921661,
+      "rhs": 59.60824311921894,
+      "scale": 59.60824311921894
+    },
+    {
+      "name": "exponential full bound 15.0 0.03",
+      "passed": true,
+      "lhs": 59.60824311921661,
+      "rhs": 87.22428244289408
+    },
+    {
+      "name": "exponential derivative bound 15.0 0.03",
+      "passed": true,
+      "lhs": 147.14767511597486,
+      "rhs": 7632.124713753233
+    },
+    {
+      "name": "weighted moment comparison 15.0 0.03",
+      "passed": true,
+      "lhs": 5.1306715974685595,
+      "rhs": 10.84036441955341
+    },
+    {
+      "name": "refined exponential full bound 15.0 0.03",
+      "passed": true,
+      "lhs": 59.60824311921661,
+      "rhs": 64.86659524703063
+    },
+    {
+      "name": "refined exponential derivative bound 15.0 0.03",
+      "passed": true,
+      "lhs": 147.14767511597486,
+      "rhs": 5675.827084115181
+    },
+    {
+      "name": "refined weighted first moment 15.0 0.03",
+      "passed": true,
+      "lhs": 5.1306715974685595,
+      "rhs": 5.995304937829507
+    },
+    {
+      "name": "refined exponential moment 15.0 0.03",
+      "passed": true,
+      "lhs": 1.0518306992221245,
+      "rhs": 1.0537881588824334
+    },
+    {
+      "name": "actual score tail 15.0 0.03 1.0",
+      "passed": true,
+      "lhs": 3.8217312065653495,
+      "rhs": 4.933663093108736
+    },
+    {
+      "name": "full derivative tail 15.0 0.03 1.0",
+      "passed": true,
+      "lhs": 117.14123677232253,
+      "rhs": 5508.08104297323
+    },
+    {
+      "name": "actual score tail 15.0 0.03 4.0",
+      "passed": true,
+      "lhs": 0.7879283908048955,
+      "rhs": 4.509028558413782
+    },
+    {
+      "name": "full derivative tail 15.0 0.03 4.0",
+      "passed": true,
+      "lhs": 19.57961829881172,
+      "rhs": 5034.0070361745065
+    },
+    {
+      "name": "actual score tail 15.0 0.03 12.0",
+      "passed": true,
+      "lhs": 9.092619843560245e-05,
+      "rhs": 3.546927490393038
+    },
+    {
+      "name": "full derivative tail 15.0 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0007351030481186432,
+      "rhs": 3959.8901874599323
+    },
+    {
+      "name": "exponential full identity 15.0 0.08",
+      "passed": true,
+      "lhs": 68.21281792813647,
+      "rhs": 68.21281792813872,
+      "scale": 68.21281792813872
+    },
+    {
+      "name": "exponential full bound 15.0 0.08",
+      "passed": true,
+      "lhs": 68.21281792813647,
+      "rhs": 120.39393371268552
+    },
+    {
+      "name": "exponential derivative bound 15.0 0.08",
+      "passed": true,
+      "lhs": 167.4002691401506,
+      "rhs": 3950.425949947494
+    },
+    {
+      "name": "weighted moment comparison 15.0 0.08",
+      "passed": true,
+      "lhs": 6.890475464311546,
+      "rhs": 20.6527686760502
+    },
+    {
+      "name": "refined exponential full bound 15.0 0.08",
+      "passed": true,
+      "lhs": 68.21281792813647,
+      "rhs": 89.53406493715248
+    },
+    {
+      "name": "refined exponential derivative bound 15.0 0.08",
+      "passed": true,
+      "lhs": 167.4002691401506,
+      "rhs": 2937.8365057503156
+    },
+    {
+      "name": "refined weighted first moment 15.0 0.08",
+      "passed": true,
+      "lhs": 6.890475464311546,
+      "rhs": 11.42209258205688
+    },
+    {
+      "name": "refined exponential moment 15.0 0.08",
+      "passed": true,
+      "lhs": 1.1483034003322814,
+      "rhs": 1.1653166426174866
+    },
+    {
+      "name": "actual score tail 15.0 0.08 1.0",
+      "passed": true,
+      "lhs": 3.8217312065653495,
+      "rhs": 6.216932958380175
+    },
+    {
+      "name": "full derivative tail 15.0 0.08 1.0",
+      "passed": true,
+      "lhs": 117.14123677232253,
+      "rhs": 2711.964901469512
+    },
+    {
+      "name": "actual score tail 15.0 0.08 4.0",
+      "passed": true,
+      "lhs": 0.7879283908048955,
+      "rhs": 4.890412675444757
+    },
+    {
+      "name": "full derivative tail 15.0 0.08 4.0",
+      "passed": true,
+      "lhs": 19.57961829881172,
+      "rhs": 2133.3071497305286
+    },
+    {
+      "name": "actual score tail 15.0 0.08 12.0",
+      "passed": true,
+      "lhs": 9.092619843560245e-05,
+      "rhs": 2.5786775542061173
+    },
+    {
+      "name": "full derivative tail 15.0 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0007351030481186432,
+      "rhs": 1124.8766982097773
+    },
+    {
+      "name": "exponential full identity 15.0 0.13",
+      "passed": true,
+      "lhs": 78.5625764217121,
+      "rhs": 78.56257642171425,
+      "scale": 78.56257642171425
+    },
+    {
+      "name": "exponential full bound 15.0 0.13",
+      "passed": true,
+      "lhs": 78.5625764217121,
+      "rhs": 186.07550179816184
+    },
+    {
+      "name": "exponential derivative bound 15.0 0.13",
+      "passed": true,
+      "lhs": 191.56378111695852,
+      "rhs": 3757.293786309037
+    },
+    {
+      "name": "weighted moment comparison 15.0 0.13",
+      "passed": true,
+      "lhs": 9.54814566111331,
+      "rhs": 49.33412944735572
+    },
+    {
+      "name": "refined exponential full bound 15.0 0.13",
+      "passed": true,
+      "lhs": 78.5625764217121,
+      "rhs": 138.37986306659266
+    },
+    {
+      "name": "refined exponential derivative bound 15.0 0.13",
+      "passed": true,
+      "lhs": 191.56378111695852,
+      "rhs": 2794.208773460044
+    },
+    {
+      "name": "refined weighted first moment 15.0 0.13",
+      "passed": true,
+      "lhs": 9.54814566111331,
+      "rhs": 27.28442868080599
+    },
+    {
+      "name": "refined exponential moment 15.0 0.13",
+      "passed": true,
+      "lhs": 1.259635232504715,
+      "rhs": 1.3157461883292252
+    },
+    {
+      "name": "actual score tail 15.0 0.13 1.0",
+      "passed": true,
+      "lhs": 3.8217312065653495,
+      "rhs": 8.118585631834902
+    },
+    {
+      "name": "full derivative tail 15.0 0.13 1.0",
+      "passed": true,
+      "lhs": 117.14123677232253,
+      "rhs": 2453.5819570134104
+    },
+    {
+      "name": "actual score tail 15.0 0.13 4.0",
+      "passed": true,
+      "lhs": 0.7879283908048955,
+      "rhs": 5.496744213235846
+    },
+    {
+      "name": "full derivative tail 15.0 0.13 4.0",
+      "passed": true,
+      "lhs": 19.57961829881172,
+      "rhs": 1661.2145311405902
+    },
+    {
+      "name": "actual score tail 15.0 0.13 12.0",
+      "passed": true,
+      "lhs": 9.092619843560245e-05,
+      "rhs": 1.942849977698041
+    },
+    {
+      "name": "full derivative tail 15.0 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0007351030481186432,
+      "rhs": 587.1640537696013
+    },
+    {
+      "name": "exponential full identity 15.0 0.18",
+      "passed": true,
+      "lhs": 91.11248086381119,
+      "rhs": 91.11248086381322,
+      "scale": 91.11248086381322
+    },
+    {
+      "name": "exponential full bound 15.0 0.18",
+      "passed": true,
+      "lhs": 91.11248086381119,
+      "rhs": 365.00028737479107
+    },
+    {
+      "name": "exponential derivative bound 15.0 0.18",
+      "passed": true,
+      "lhs": 220.6079087314353,
+      "rhs": 5322.9208575490375
+    },
+    {
+      "name": "weighted moment comparison 15.0 0.18",
+      "passed": true,
+      "lhs": 13.724811597336481,
+      "rhs": 189.8259072032949
+    },
+    {
+      "name": "refined exponential full bound 15.0 0.18",
+      "passed": true,
+      "lhs": 91.11248086381119,
+      "rhs": 271.44191093450814
+    },
+    {
+      "name": "refined exponential derivative bound 15.0 0.18",
+      "passed": true,
+      "lhs": 220.6079087314353,
+      "rhs": 3958.527867794911
+    },
+    {
+      "name": "refined weighted first moment 15.0 0.18",
+      "passed": true,
+      "lhs": 13.724811597336481,
+      "rhs": 104.9839428581465
+    },
+    {
+      "name": "refined exponential moment 15.0 0.18",
+      "passed": true,
+      "lhs": 1.3890402334269785,
+      "rhs": 1.5271294209041137
+    },
+    {
+      "name": "actual score tail 15.0 0.18 1.0",
+      "passed": true,
+      "lhs": 3.8217312065653495,
+      "rhs": 11.101841332167277
+    },
+    {
+      "name": "full derivative tail 15.0 0.18 1.0",
+      "passed": true,
+      "lhs": 117.14123677232253,
+      "rhs": 3306.440409010467
+    },
+    {
+      "name": "actual score tail 15.0 0.18 4.0",
+      "passed": true,
+      "lhs": 0.7879283908048955,
+      "rhs": 6.469578634453807
+    },
+    {
+      "name": "full derivative tail 15.0 0.18 4.0",
+      "passed": true,
+      "lhs": 19.57961829881172,
+      "rhs": 1926.8223699295893
+    },
+    {
+      "name": "actual score tail 15.0 0.18 12.0",
+      "passed": true,
+      "lhs": 9.092619843560245e-05,
+      "rhs": 1.5328227654788822
+    },
+    {
+      "name": "full derivative tail 15.0 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0007351030481186432,
+      "rhs": 456.51770548599166
+    },
+    {
+      "name": "exponential full identity 15.0 0.23",
+      "passed": true,
+      "lhs": 106.4618824153286,
+      "rhs": 106.46188241533054,
+      "scale": 106.46188241533054
+    },
+    {
+      "name": "exponential full bound 15.0 0.23",
+      "passed": true,
+      "lhs": 106.4618824153286,
+      "rhs": 1747.3433915622152
+    },
+    {
+      "name": "exponential derivative bound 15.0 0.23",
+      "passed": true,
+      "lhs": 255.7948467524283,
+      "rhs": 19942.50609935137
+    },
+    {
+      "name": "weighted moment comparison 15.0 0.23",
+      "passed": true,
+      "lhs": 20.590628761856717,
+      "rhs": 4350.363985815679
+    },
+    {
+      "name": "refined exponential full bound 15.0 0.23",
+      "passed": true,
+      "lhs": 106.4618824153286,
+      "rhs": 1299.4571392690636
+    },
+    {
+      "name": "refined exponential derivative bound 15.0 0.23",
+      "passed": true,
+      "lhs": 255.7948467524283,
+      "rhs": 14830.760828614313
+    },
+    {
+      "name": "refined weighted first moment 15.0 0.23",
+      "passed": true,
+      "lhs": 20.590628761856717,
+      "rhs": 2405.9854148880067
+    },
+    {
+      "name": "refined exponential moment 15.0 0.23",
+      "passed": true,
+      "lhs": 1.5406250900103817,
+      "rhs": 1.8406701072712024
+    },
+    {
+      "name": "actual score tail 15.0 0.23 1.0",
+      "passed": true,
+      "lhs": 3.8217312065653495,
+      "rhs": 16.149007171500596
+    },
+    {
+      "name": "full derivative tail 15.0 0.23 1.0",
+      "passed": true,
+      "lhs": 117.14123677232253,
+      "rhs": 11783.53782902426
+    },
+    {
+      "name": "actual score tail 15.0 0.23 4.0",
+      "passed": true,
+      "lhs": 0.7879283908048955,
+      "rhs": 8.099955536400808
+    },
+    {
+      "name": "full derivative tail 15.0 0.23 4.0",
+      "passed": true,
+      "lhs": 19.57961829881172,
+      "rhs": 5910.34058397315
+    },
+    {
+      "name": "actual score tail 15.0 0.23 12.0",
+      "passed": true,
+      "lhs": 9.092619843560245e-05,
+      "rhs": 1.286414089871678
+    },
+    {
+      "name": "full derivative tail 15.0 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0007351030481186432,
+      "rhs": 938.6650789618901
+    },
+    {
+      "name": "signed derivative identity 15.0 1.0 1.0",
+      "passed": true,
+      "lhs": 161.57286830167646,
+      "rhs": 161.572868301678,
+      "scale": 1036.9802137592276
+    },
+    {
+      "name": "full directional second energy 15.0 1.0 1.0",
+      "passed": true,
+      "lhs": 716.7891738193933,
+      "rhs": 716.7891738193982,
+      "scale": 3274.370422798642
+    },
+    {
+      "name": "signed derivative identity 15.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 166.37451472816429,
+      "rhs": 166.37451472815036,
+      "scale": 203.19549164591965
+    },
+    {
+      "name": "full directional second energy 15.0 1.0 -2.0",
+      "passed": true,
+      "lhs": 847.8854981267274,
+      "rhs": 847.8854981266791,
+      "scale": 884.7064750444484
+    },
+    {
+      "name": "signed derivative identity 15.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 17.99794689463104,
+      "rhs": 17.997946894629468,
+      "scale": 22.644197142471388
+    },
+    {
+      "name": "full directional second energy 15.0 -0.3 0.8",
+      "passed": true,
+      "lhs": 94.26566199073228,
+      "rhs": 94.26566199072676,
+      "scale": 98.91191223856868
+    },
+    {
+      "name": "exponential full identity 0.5 0.03",
+      "passed": true,
+      "lhs": 0.06113695653341184,
+      "rhs": 0.06113695653341181,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 0.5 0.03",
+      "passed": true,
+      "lhs": 0.06113695653341184,
+      "rhs": 0.24736069952237255
+    },
+    {
+      "name": "exponential derivative bound 0.5 0.03",
+      "passed": true,
+      "lhs": 0.0004348236104062143,
+      "rhs": 1.2368034976118627
+    },
+    {
+      "name": "weighted moment comparison 0.5 0.03",
+      "passed": true,
+      "lhs": 0.03887153929925581,
+      "rhs": 0.6194493954030519
+    },
+    {
+      "name": "refined exponential full bound 0.5 0.03",
+      "passed": true,
+      "lhs": 0.06113695653341184,
+      "rhs": 0.07205569245092906
+    },
+    {
+      "name": "refined exponential derivative bound 0.5 0.03",
+      "passed": true,
+      "lhs": 0.0004348236104062143,
+      "rhs": 0.36027846225464527
+    },
+    {
+      "name": "refined weighted first moment 0.5 0.03",
+      "passed": true,
+      "lhs": 0.03887153929925581,
+      "rhs": 0.05256310655713001
+    },
+    {
+      "name": "refined exponential moment 0.5 0.03",
+      "passed": true,
+      "lhs": 1.0076710365314618,
+      "rhs": 1.008252669919701
+    },
+    {
+      "name": "actual score tail 0.5 0.03 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.04325529085997408
+    },
+    {
+      "name": "full derivative tail 0.5 0.03 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.3496306245287453
+    },
+    {
+      "name": "actual score tail 0.5 0.03 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.03953235924490783
+    },
+    {
+      "name": "full derivative tail 0.5 0.03 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.31953833108267593
+    },
+    {
+      "name": "actual score tail 0.5 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.031097255195736438
+    },
+    {
+      "name": "full derivative tail 0.5 0.03 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.25135775390834153
+    },
+    {
+      "name": "exponential full identity 0.5 0.08",
+      "passed": true,
+      "lhs": 0.062062410445778385,
+      "rhs": 0.06206241044577834,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 0.5 0.08",
+      "passed": true,
+      "lhs": 0.062062410445778385,
+      "rhs": 0.34142702957651205
+    },
+    {
+      "name": "exponential derivative bound 0.5 0.08",
+      "passed": true,
+      "lhs": 0.0004401015588499279,
+      "rhs": 0.6401756804559601
+    },
+    {
+      "name": "weighted moment comparison 0.5 0.08",
+      "passed": true,
+      "lhs": 0.040046786592704185,
+      "rhs": 1.1801582100600112
+    },
+    {
+      "name": "refined exponential full bound 0.5 0.08",
+      "passed": true,
+      "lhs": 0.062062410445778385,
+      "rhs": 0.09945703211990758
+    },
+    {
+      "name": "refined exponential derivative bound 0.5 0.08",
+      "passed": true,
+      "lhs": 0.0004401015588499279,
+      "rhs": 0.18648193522482673
+    },
+    {
+      "name": "refined weighted first moment 0.5 0.08",
+      "passed": true,
+      "lhs": 0.040046786592704185,
+      "rhs": 0.10014180691756724
+    },
+    {
+      "name": "refined exponential moment 0.5 0.08",
+      "passed": true,
+      "lhs": 1.0206090925590363,
+      "rhs": 1.0253643871086442
+    },
+    {
+      "name": "actual score tail 0.5 0.08 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.05450620326047601
+    },
+    {
+      "name": "full derivative tail 0.5 0.08 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.17214452271185132
+    },
+    {
+      "name": "actual score tail 0.5 0.08 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.04287609808564705
+    },
+    {
+      "name": "full derivative tail 0.5 0.08 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.13541367769514634
+    },
+    {
+      "name": "actual score tail 0.5 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.022608241693088352
+    },
+    {
+      "name": "full derivative tail 0.5 0.08 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.07140260636045781
+    },
+    {
+      "name": "exponential full identity 0.5 0.13",
+      "passed": true,
+      "lhs": 0.06300328544665665,
+      "rhs": 0.06300328544665662,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 0.5 0.13",
+      "passed": true,
+      "lhs": 0.06300328544665665,
+      "rhs": 0.5276944103140576
+    },
+    {
+      "name": "exponential derivative bound 0.5 0.13",
+      "passed": true,
+      "lhs": 0.0004454544921193492,
+      "rhs": 0.6088781657469895
+    },
+    {
+      "name": "weighted moment comparison 0.5 0.13",
+      "passed": true,
+      "lhs": 0.04126103552358868,
+      "rhs": 2.8190931112774695
+    },
+    {
+      "name": "refined exponential full bound 0.5 0.13",
+      "passed": true,
+      "lhs": 0.06300328544665665,
+      "rhs": 0.1537163591915905
+    },
+    {
+      "name": "refined exponential derivative bound 0.5 0.13",
+      "passed": true,
+      "lhs": 0.0004454544921193492,
+      "rhs": 0.17736502983645056
+    },
+    {
+      "name": "refined weighted first moment 0.5 0.13",
+      "passed": true,
+      "lhs": 0.04126103552358868,
+      "rhs": 0.23921290859624386
+    },
+    {
+      "name": "refined exponential moment 0.5 0.13",
+      "passed": true,
+      "lhs": 1.0337411123599747,
+      "rhs": 1.048444660029735
+    },
+    {
+      "name": "actual score tail 0.5 0.13 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.07117871168931993
+    },
+    {
+      "name": "full derivative tail 0.5 0.13 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.15574342230447627
+    },
+    {
+      "name": "actual score tail 0.5 0.13 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.04819203606717693
+    },
+    {
+      "name": "full derivative tail 0.5 0.13 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.10544715472911646
+    },
+    {
+      "name": "actual score tail 0.5 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.017033700781070082
+    },
+    {
+      "name": "full derivative tail 0.5 0.13 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.03727079053823814
+    },
+    {
+      "name": "exponential full identity 0.5 0.18",
+      "passed": true,
+      "lhs": 0.06395985754697125,
+      "rhs": 0.06395985754697123,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 0.5 0.18",
+      "passed": true,
+      "lhs": 0.06395985754697125,
+      "rhs": 1.0351099932522372
+    },
+    {
+      "name": "exponential derivative bound 0.5 0.18",
+      "passed": true,
+      "lhs": 0.0004508835975643988,
+      "rhs": 0.862591661043531
+    },
+    {
+      "name": "weighted moment comparison 0.5 0.18",
+      "passed": true,
+      "lhs": 0.042515676087697796,
+      "rhs": 10.847194697331135
+    },
+    {
+      "name": "refined exponential full bound 0.5 0.18",
+      "passed": true,
+      "lhs": 0.06395985754697125,
+      "rhs": 0.3015255352636184
+    },
+    {
+      "name": "refined exponential derivative bound 0.5 0.18",
+      "passed": true,
+      "lhs": 0.0004508835975643988,
+      "rhs": 0.2512712793863487
+    },
+    {
+      "name": "refined weighted first moment 0.5 0.18",
+      "passed": true,
+      "lhs": 0.042515676087697796,
+      "rhs": 0.9204339449726467
+    },
+    {
+      "name": "refined exponential moment 0.5 0.18",
+      "passed": true,
+      "lhs": 1.0470702839564454,
+      "rhs": 1.0808770035277326
+    },
+    {
+      "name": "actual score tail 0.5 0.18 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.09733404305108151
+    },
+    {
+      "name": "full derivative tail 0.5 0.18 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.20987941465461624
+    },
+    {
+      "name": "actual score tail 0.5 0.18 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.05672124348451242
+    },
+    {
+      "name": "full derivative tail 0.5 0.18 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.12230686209925355
+    },
+    {
+      "name": "actual score tail 0.5 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.01343883708844843
+    },
+    {
+      "name": "full derivative tail 0.5 0.18 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.028977890708619485
+    },
+    {
+      "name": "exponential full identity 0.5 0.23",
+      "passed": true,
+      "lhs": 0.06493240800077024,
+      "rhs": 0.06493240800077021,
+      "scale": 1.0
+    },
+    {
+      "name": "exponential full bound 0.5 0.23",
+      "passed": true,
+      "lhs": 0.06493240800077024,
+      "rhs": 4.95531830744039
+    },
+    {
+      "name": "exponential derivative bound 0.5 0.23",
+      "passed": true,
+      "lhs": 0.0004563900829536776,
+      "rhs": 3.2317293309393844
+    },
+    {
+      "name": "weighted moment comparison 0.5 0.23",
+      "passed": true,
+      "lhs": 0.043812150930789565,
+      "rhs": 248.59222776089592
+    },
+    {
+      "name": "refined exponential full bound 0.5 0.23",
+      "passed": true,
+      "lhs": 0.06493240800077024,
+      "rhs": 1.443474620854591
+    },
+    {
+      "name": "refined exponential derivative bound 0.5 0.23",
+      "passed": true,
+      "lhs": 0.0004563900829536776,
+      "rhs": 0.9413964918616897
+    },
+    {
+      "name": "refined weighted first moment 0.5 0.23",
+      "passed": true,
+      "lhs": 0.043812150930789565,
+      "rhs": 21.09418437412188
+    },
+    {
+      "name": "refined exponential moment 0.5 0.23",
+      "passed": true,
+      "lhs": 1.0605998515861006,
+      "rhs": 1.128983275330785
+    },
+    {
+      "name": "actual score tail 0.5 0.23 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.1415844554280087
+    },
+    {
+      "name": "full derivative tail 0.5 0.23 1.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.747971146062869
+    },
+    {
+      "name": "actual score tail 0.5 0.23 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.07101537459443874
+    },
+    {
+      "name": "full derivative tail 0.5 0.23 4.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.37516442721704624
+    },
+    {
+      "name": "actual score tail 0.5 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.011278479007107567
+    },
+    {
+      "name": "full derivative tail 0.5 0.23 12.0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 0.05958264869748845
+    },
+    {
+      "name": "signed derivative identity 0.5 1.0 1.0",
+      "passed": true,
+      "lhs": 0.010144319096907353,
+      "rhs": 0.0101443190969073,
+      "scale": 1.0
+    },
+    {
+      "name": "full directional second energy 0.5 1.0 1.0",
+      "passed": true,
+      "lhs": 0.23183126636827672,
+      "rhs": 0.23183126636827645,
+      "scale": 1.0
+    },
+    {
+      "name": "signed derivative identity 0.5 1.0 -2.0",
+      "passed": true,
+      "lhs": 0.03372444443784295,
+      "rhs": 0.03372444443784288,
+      "scale": 1.0
+    },
+    {
+      "name": "full directional second energy 0.5 1.0 -2.0",
+      "passed": true,
+      "lhs": 0.7818174894389425,
+      "rhs": 0.7818174894389417,
+      "scale": 1.3071311147633156
+    },
+    {
+      "name": "signed derivative identity 0.5 -0.3 0.8",
+      "passed": true,
+      "lhs": 0.00543979604447867,
+      "rhs": 0.00543979604447865,
+      "scale": 1.0
+    },
+    {
+      "name": "full directional second energy 0.5 -0.3 0.8",
+      "passed": true,
+      "lhs": 0.12395465171928238,
+      "rhs": 0.12395465171928226,
+      "scale": 1.0
+    },
+    {
+      "name": "full noncommuting Gram identity 0",
+      "passed": true,
+      "lhs": 5.305462215140949e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 0",
+      "passed": true,
+      "lhs": 33.67172812126753,
+      "rhs": 540.0453858792631
+    },
+    {
+      "name": "complete finite Schur source 0",
+      "passed": true,
+      "lhs": 0.21738128070215612,
+      "rhs": 0.21738128070215612,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 0",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 48.45329068815349
+    },
+    {
+      "name": "complete projection residual 0",
+      "passed": true,
+      "lhs": 95.79220797668566,
+      "rhs": 95.79220797668566,
+      "scale": 95.79220797668566
+    },
+    {
+      "name": "energy matrix Bessel identity 0",
+      "passed": true,
+      "lhs": 2.523310044617009e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 0",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 30.957357019359442
+    },
+    {
+      "name": "quantitative inverse bound 0",
+      "passed": true,
+      "lhs": 0.0011746897923517177,
+      "rhs": 0.01700615708789881
+    },
+    {
+      "name": "full noncommuting Gram identity 1",
+      "passed": true,
+      "lhs": 5.989637171108386e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 1",
+      "passed": true,
+      "lhs": 66.0877531643334,
+      "rhs": 648.2228455239343
+    },
+    {
+      "name": "complete finite Schur source 1",
+      "passed": true,
+      "lhs": 0.18774255721014058,
+      "rhs": 0.18774255721014058,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 1",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 51.16346248367191
+    },
+    {
+      "name": "complete projection residual 1",
+      "passed": true,
+      "lhs": 106.26794161277317,
+      "rhs": 106.26794161277317,
+      "scale": 106.26794161277317
+    },
+    {
+      "name": "energy matrix Bessel identity 1",
+      "passed": true,
+      "lhs": 1.0769610423262986e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 1",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 19.242429959183543
+    },
+    {
+      "name": "quantitative inverse bound 1",
+      "passed": true,
+      "lhs": 0.004301597877684788,
+      "rhs": 0.058659486335495836
+    },
+    {
+      "name": "full noncommuting Gram identity 2",
+      "passed": true,
+      "lhs": 7.635079804173747e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 2",
+      "passed": true,
+      "lhs": 72.81674774870174,
+      "rhs": 867.6109942699964
+    },
+    {
+      "name": "complete finite Schur source 2",
+      "passed": true,
+      "lhs": 0.14883393421431546,
+      "rhs": 0.14883393421431546,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 2",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 50.105524561359715
+    },
+    {
+      "name": "complete projection residual 2",
+      "passed": true,
+      "lhs": 78.03611771226348,
+      "rhs": 78.03611771226349,
+      "scale": 78.03611771226349
+    },
+    {
+      "name": "energy matrix Bessel identity 2",
+      "passed": true,
+      "lhs": 1.5625378400726914e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 2",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 29.42982673453303
+    },
+    {
+      "name": "quantitative inverse bound 2",
+      "passed": true,
+      "lhs": 0.000519245903510827,
+      "rhs": 0.04222776502302081
+    },
+    {
+      "name": "full noncommuting Gram identity 3",
+      "passed": true,
+      "lhs": 6.801046746706902e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 3",
+      "passed": true,
+      "lhs": 47.63506498750753,
+      "rhs": 664.113627476546
+    },
+    {
+      "name": "complete finite Schur source 3",
+      "passed": true,
+      "lhs": 0.2025549215180408,
+      "rhs": 0.2025549215180408,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 3",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 51.092655841346634
+    },
+    {
+      "name": "complete projection residual 3",
+      "passed": true,
+      "lhs": 88.50664959585842,
+      "rhs": 88.50664959585842,
+      "scale": 88.50664959585842
+    },
+    {
+      "name": "energy matrix Bessel identity 3",
+      "passed": true,
+      "lhs": 1.8396231362423503e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 3",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 26.226511731251065
+    },
+    {
+      "name": "quantitative inverse bound 3",
+      "passed": true,
+      "lhs": 0.00202458367437385,
+      "rhs": 0.0430931537242752
+    },
+    {
+      "name": "full noncommuting Gram identity 4",
+      "passed": true,
+      "lhs": 3.6561965641414595e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 4",
+      "passed": true,
+      "lhs": 45.3915592197868,
+      "rhs": 681.8237637319338
+    },
+    {
+      "name": "complete finite Schur source 4",
+      "passed": true,
+      "lhs": 0.47839225444005484,
+      "rhs": 0.47839225444005484,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 4",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 41.93794242209846
+    },
+    {
+      "name": "complete projection residual 4",
+      "passed": true,
+      "lhs": 73.33508333180649,
+      "rhs": 73.33508333180647,
+      "scale": 73.33508333180649
+    },
+    {
+      "name": "energy matrix Bessel identity 4",
+      "passed": true,
+      "lhs": 2.4653951558985215e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 4",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 22.142262381172703
+    },
+    {
+      "name": "quantitative inverse bound 4",
+      "passed": true,
+      "lhs": 0.0008779539981907047,
+      "rhs": 0.11150558573180197
+    },
+    {
+      "name": "full noncommuting Gram identity 5",
+      "passed": true,
+      "lhs": 3.9173905727778196e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 5",
+      "passed": true,
+      "lhs": 50.06083447481574,
+      "rhs": 696.837171392968
+    },
+    {
+      "name": "complete finite Schur source 5",
+      "passed": true,
+      "lhs": 0.3555401175767,
+      "rhs": 0.3555401175767,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 5",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 50.89855633135945
+    },
+    {
+      "name": "complete projection residual 5",
+      "passed": true,
+      "lhs": 83.5375274661748,
+      "rhs": 83.53752746617478,
+      "scale": 83.5375274661748
+    },
+    {
+      "name": "energy matrix Bessel identity 5",
+      "passed": true,
+      "lhs": 2.4112040294174312e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 5",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 20.285573697854556
+    },
+    {
+      "name": "quantitative inverse bound 5",
+      "passed": true,
+      "lhs": 0.00026139377274531783,
+      "rhs": 0.08864198396326949
+    },
+    {
+      "name": "full noncommuting Gram identity 6",
+      "passed": true,
+      "lhs": 4.029763253490527e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 6",
+      "passed": true,
+      "lhs": 44.721309807153695,
+      "rhs": 643.2878879890501
+    },
+    {
+      "name": "complete finite Schur source 6",
+      "passed": true,
+      "lhs": 0.12671193369252498,
+      "rhs": 0.12671193369252498,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 6",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 39.369268297339275
+    },
+    {
+      "name": "complete projection residual 6",
+      "passed": true,
+      "lhs": 80.55352153528123,
+      "rhs": 80.55352153528123,
+      "scale": 80.55352153528123
+    },
+    {
+      "name": "energy matrix Bessel identity 6",
+      "passed": true,
+      "lhs": 1.869845358702404e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 6",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 23.033926716832823
+    },
+    {
+      "name": "quantitative inverse bound 6",
+      "passed": true,
+      "lhs": 8.768064768185159e-05,
+      "rhs": 0.05339041974993206
+    },
+    {
+      "name": "full noncommuting Gram identity 7",
+      "passed": true,
+      "lhs": 6.806764996386452e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 7",
+      "passed": true,
+      "lhs": 55.06471196194692,
+      "rhs": 750.2943042896204
+    },
+    {
+      "name": "complete finite Schur source 7",
+      "passed": true,
+      "lhs": 0.14048813070697586,
+      "rhs": 0.14048813070697586,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 7",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 49.657054213295545
+    },
+    {
+      "name": "complete projection residual 7",
+      "passed": true,
+      "lhs": 62.024208101201225,
+      "rhs": 62.024208101201225,
+      "scale": 62.024208101201225
+    },
+    {
+      "name": "energy matrix Bessel identity 7",
+      "passed": true,
+      "lhs": 9.890336306082086e-15,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 7",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 21.03470780074084
+    },
+    {
+      "name": "quantitative inverse bound 7",
+      "passed": true,
+      "lhs": 0.01675233671664381,
+      "rhs": 0.04954315278853587
+    },
+    {
+      "name": "full noncommuting Gram identity 8",
+      "passed": true,
+      "lhs": 3.780135329018944e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 8",
+      "passed": true,
+      "lhs": 41.486755736081626,
+      "rhs": 545.2122769074238
+    },
+    {
+      "name": "complete finite Schur source 8",
+      "passed": true,
+      "lhs": 0.5308404593002126,
+      "rhs": 0.5308404593002125,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 8",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 49.55598640211745
+    },
+    {
+      "name": "complete projection residual 8",
+      "passed": true,
+      "lhs": 87.52232710547293,
+      "rhs": 87.52232710547293,
+      "scale": 87.52232710547293
+    },
+    {
+      "name": "energy matrix Bessel identity 8",
+      "passed": true,
+      "lhs": 1.481555084624755e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 8",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 24.634678840400237
+    },
+    {
+      "name": "quantitative inverse bound 8",
+      "passed": true,
+      "lhs": 0.010124618259358016,
+      "rhs": 0.10414611531448696
+    },
+    {
+      "name": "full noncommuting Gram identity 9",
+      "passed": true,
+      "lhs": 4.679271900165755e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 9",
+      "passed": true,
+      "lhs": 55.521968941199255,
+      "rhs": 734.9546450241794
+    },
+    {
+      "name": "complete finite Schur source 9",
+      "passed": true,
+      "lhs": 0.2614524106963723,
+      "rhs": 0.2614524106963724,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 9",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 53.72467727773223
+    },
+    {
+      "name": "complete projection residual 9",
+      "passed": true,
+      "lhs": 98.98414624443816,
+      "rhs": 98.98414624443815,
+      "scale": 98.98414624443816
+    },
+    {
+      "name": "energy matrix Bessel identity 9",
+      "passed": true,
+      "lhs": 1.5619066391420388e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 9",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 32.942864317136376
+    },
+    {
+      "name": "quantitative inverse bound 9",
+      "passed": true,
+      "lhs": 0.0022236378935232568,
+      "rhs": 0.10076661097528883
+    },
+    {
+      "name": "full noncommuting Gram identity 10",
+      "passed": true,
+      "lhs": 6.023671713529432e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 10",
+      "passed": true,
+      "lhs": 47.3403197724409,
+      "rhs": 663.5301828125157
+    },
+    {
+      "name": "complete finite Schur source 10",
+      "passed": true,
+      "lhs": 0.3051152118691564,
+      "rhs": 0.30511521186915647,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 10",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 41.599314518476405
+    },
+    {
+      "name": "complete projection residual 10",
+      "passed": true,
+      "lhs": 90.19150485510274,
+      "rhs": 90.19150485510272,
+      "scale": 90.19150485510274
+    },
+    {
+      "name": "energy matrix Bessel identity 10",
+      "passed": true,
+      "lhs": 2.045343000085848e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 10",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 25.777192035414473
+    },
+    {
+      "name": "quantitative inverse bound 10",
+      "passed": true,
+      "lhs": 0.005105594602943596,
+      "rhs": 0.06459897723534747
+    },
+    {
+      "name": "full noncommuting Gram identity 11",
+      "passed": true,
+      "lhs": 6.628835926432942e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 11",
+      "passed": true,
+      "lhs": 54.29306501532959,
+      "rhs": 662.8098793299746
+    },
+    {
+      "name": "complete finite Schur source 11",
+      "passed": true,
+      "lhs": 0.32295719909378295,
+      "rhs": 0.32295719909378295,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 11",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 44.77604938700623
+    },
+    {
+      "name": "complete projection residual 11",
+      "passed": true,
+      "lhs": 69.80101167399087,
+      "rhs": 69.80101167399087,
+      "scale": 69.80101167399087
+    },
+    {
+      "name": "energy matrix Bessel identity 11",
+      "passed": true,
+      "lhs": 9.230220894641107e-15,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 11",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 26.68021665079159
+    },
+    {
+      "name": "quantitative inverse bound 11",
+      "passed": true,
+      "lhs": 0.003522041465688845,
+      "rhs": 0.05526133776739581
+    },
+    {
+      "name": "full noncommuting Gram identity 12",
+      "passed": true,
+      "lhs": 8.963172194330752e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 12",
+      "passed": true,
+      "lhs": 64.04814523447342,
+      "rhs": 869.5210319446367
+    },
+    {
+      "name": "complete finite Schur source 12",
+      "passed": true,
+      "lhs": 0.299178335991761,
+      "rhs": 0.299178335991761,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 12",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 62.60141409159776
+    },
+    {
+      "name": "complete projection residual 12",
+      "passed": true,
+      "lhs": 72.3425022932675,
+      "rhs": 72.3425022932675,
+      "scale": 72.3425022932675
+    },
+    {
+      "name": "energy matrix Bessel identity 12",
+      "passed": true,
+      "lhs": 3.352800008858181e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 12",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 27.73955628989548
+    },
+    {
+      "name": "quantitative inverse bound 12",
+      "passed": true,
+      "lhs": 0.0009344198417207492,
+      "rhs": 0.08998216217478186
+    },
+    {
+      "name": "full noncommuting Gram identity 13",
+      "passed": true,
+      "lhs": 5.116998429636621e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 13",
+      "passed": true,
+      "lhs": 35.697927587557764,
+      "rhs": 592.5466379465041
+    },
+    {
+      "name": "complete finite Schur source 13",
+      "passed": true,
+      "lhs": 0.33997843250076604,
+      "rhs": 0.3399784325007661,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 13",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 46.3716506799341
+    },
+    {
+      "name": "complete projection residual 13",
+      "passed": true,
+      "lhs": 101.92173776449447,
+      "rhs": 101.92173776449448,
+      "scale": 101.92173776449448
+    },
+    {
+      "name": "energy matrix Bessel identity 13",
+      "passed": true,
+      "lhs": 1.9188559808174955e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 13",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 33.28299037495855
+    },
+    {
+      "name": "quantitative inverse bound 13",
+      "passed": true,
+      "lhs": 0.008787722060170353,
+      "rhs": 0.06449437785596117
+    },
+    {
+      "name": "full noncommuting Gram identity 14",
+      "passed": true,
+      "lhs": 5.83821407103991e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 14",
+      "passed": true,
+      "lhs": 50.268517315960935,
+      "rhs": 660.4293448669688
+    },
+    {
+      "name": "complete finite Schur source 14",
+      "passed": true,
+      "lhs": 0.1626213161983781,
+      "rhs": 0.1626213161983781,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 14",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 51.266323585392016
+    },
+    {
+      "name": "complete projection residual 14",
+      "passed": true,
+      "lhs": 90.4658871909202,
+      "rhs": 90.46588719092021,
+      "scale": 90.46588719092021
+    },
+    {
+      "name": "energy matrix Bessel identity 14",
+      "passed": true,
+      "lhs": 2.2909499863171968e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 14",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 32.30450436235992
+    },
+    {
+      "name": "quantitative inverse bound 14",
+      "passed": true,
+      "lhs": 0.003831393985306557,
+      "rhs": 0.02758612075630509
+    },
+    {
+      "name": "full noncommuting Gram identity 15",
+      "passed": true,
+      "lhs": 4.979568239162264e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "raw coefficient Gram norm bound 15",
+      "passed": true,
+      "lhs": 59.57344789931412,
+      "rhs": 773.3341281411347
+    },
+    {
+      "name": "complete finite Schur source 15",
+      "passed": true,
+      "lhs": 0.20983047747526665,
+      "rhs": 0.20983047747526667,
+      "scale": 1.0
+    },
+    {
+      "name": "positive Schur matrix 15",
+      "passed": true,
+      "lhs": 0.0,
+      "rhs": 44.97110651068735
+    },
+    {
+      "name": "complete projection residual 15",
+      "passed": true,
+      "lhs": 75.72377794127884,
+      "rhs": 75.72377794127884,
+      "scale": 75.72377794127884
+    },
+    {
+      "name": "energy matrix Bessel identity 15",
+      "passed": true,
+      "lhs": 2.225768740185726e-14,
+      "rhs": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "energy matrix lower order 15",
+      "passed": true,
+      "lhs": -1e-11,
+      "rhs": 30.273829109171146
+    },
+    {
+      "name": "quantitative inverse bound 15",
+      "passed": true,
+      "lhs": 0.001450066853882193,
+      "rhs": 0.047429284002553786
+    },
+    {
+      "name": "different masks need not preserve Gram order",
+      "passed": true,
+      "lhs": -1.0,
+      "rhs": -1.0,
+      "scale": 1.0
+    },
+    {
+      "name": "exact incident-deficit lower root 0.3 1",
+      "passed": true,
+      "lhs": 0.5756762276332489,
+      "rhs": 0.5756762276332489,
+      "scale": 1.0
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 1 0.25",
+      "passed": true,
+      "lhs": 5.668386143573784e-15,
+      "rhs": 5.66860220852039e-15
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 1 0.25",
+      "passed": true,
+      "lhs": 0.0004999819851585752,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 1 0.25",
+      "passed": true,
+      "lhs": 5.668386143573784e-15,
+      "rhs": 1.358360106166669e-09
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 1 1.0",
+      "passed": true,
+      "lhs": 3.6277671463123783e-13,
+      "rhs": 3.6279054134530495e-13
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 1 1.0",
+      "passed": true,
+      "lhs": 0.0004999851167821217,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 1 1.0",
+      "passed": true,
+      "lhs": 3.6277671463123783e-13,
+      "rhs": 2.1733761698666704e-08
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 1 4.0",
+      "passed": true,
+      "lhs": 2.3217710105891967e-11,
+      "rhs": 2.3218594646099517e-11
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 1 4.0",
+      "passed": true,
+      "lhs": 0.0004999976436731098,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 1 4.0",
+      "passed": true,
+      "lhs": 2.3217710105891967e-11,
+      "rhs": 3.4774018717866726e-07
+    },
+    {
+      "name": "exact incident-deficit lower root 0.3 10",
+      "passed": true,
+      "lhs": 0.05759676022779456,
+      "rhs": 0.05759676022779456,
+      "scale": 1.0
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 10 0.25",
+      "passed": true,
+      "lhs": 2.734142784102895e-21,
+      "rhs": 2.7341535504674174e-21
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 10 0.25",
+      "passed": true,
+      "lhs": 0.0004999981058771061,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 10 0.25",
+      "passed": true,
+      "lhs": 2.734142784102895e-21,
+      "rhs": 9.145085745324668e-15
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 10 1.0",
+      "passed": true,
+      "lhs": 1.74985138183304e-19,
+      "rhs": 1.749858272299147e-19
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 10 1.0",
+      "passed": true,
+      "lhs": 0.0004999983301089378,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 10 1.0",
+      "passed": true,
+      "lhs": 1.74985138183304e-19,
+      "rhs": 1.463213719251947e-13
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 10 4.0",
+      "passed": true,
+      "lhs": 1.1199048843915457e-17,
+      "rhs": 1.1199092942714541e-17
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 10 4.0",
+      "passed": true,
+      "lhs": 0.0004999992270382757,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 10 4.0",
+      "passed": true,
+      "lhs": 1.1199048843915457e-17,
+      "rhs": 2.341141950803115e-12
+    },
+    {
+      "name": "exact incident-deficit lower root 0.3 1000",
+      "passed": true,
+      "lhs": 0.0005759996760002278,
+      "rhs": 0.0005759996760002278,
+      "scale": 1.0
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 1000 0.25",
+      "passed": true,
+      "lhs": 9.945050853218339e-34,
+      "rhs": 9.945051246255161e-34
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 1000 0.25",
+      "passed": true,
+      "lhs": 0.0004999999806919231,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 1000 0.25",
+      "passed": true,
+      "lhs": 9.945050853218339e-34,
+      "rhs": 5.496381334601394e-25
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 1000 1.0",
+      "passed": true,
+      "lhs": 6.364832546059737e-32,
+      "rhs": 6.364832797603303e-32
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 1000 1.0",
+      "passed": true,
+      "lhs": 0.0004999999820489592,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 1000 1.0",
+      "passed": true,
+      "lhs": 6.364832546059737e-32,
+      "rhs": 8.79421013536223e-24
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 0.3 1000 4.0",
+      "passed": true,
+      "lhs": 4.0734928294782315e-30,
+      "rhs": 4.073492990466114e-30
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 0.3 1000 4.0",
+      "passed": true,
+      "lhs": 0.0004999999874771037,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 0.3 1000 4.0",
+      "passed": true,
+      "lhs": 4.0734928294782315e-30,
+      "rhs": 1.407073621657957e-22
+    },
+    {
+      "name": "exact incident-deficit lower root 1.0 1",
+      "passed": true,
+      "lhs": 1.916408415413672,
+      "rhs": 1.916408415413672,
+      "scale": 1.916408415413672
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 1 0.25",
+      "passed": true,
+      "lhs": 6.297729348071973e-14,
+      "rhs": 6.29844689835599e-14
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 1 0.25",
+      "passed": true,
+      "lhs": 0.0004999440805670738,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 1 0.25",
+      "passed": true,
+      "lhs": 6.297729348071973e-14,
+      "rhs": 1.5092890068518543e-08
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 1 1.0",
+      "passed": true,
+      "lhs": 4.030546953323121e-12,
+      "rhs": 4.031006014947833e-12
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 1 1.0",
+      "passed": true,
+      "lhs": 0.0004999472308839904,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 1 1.0",
+      "passed": true,
+      "lhs": 4.030546953323121e-12,
+      "rhs": 2.414862410962967e-07
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 1 4.0",
+      "passed": true,
+      "lhs": 2.579550487367535e-10,
+      "rhs": 2.5798438495666133e-10
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 1 4.0",
+      "passed": true,
+      "lhs": 0.00049995983266781,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 1 4.0",
+      "passed": true,
+      "lhs": 2.579550487367535e-10,
+      "rhs": 3.863779857540747e-06
+    },
+    {
+      "name": "exact incident-deficit lower root 1.0 10",
+      "passed": true,
+      "lhs": 0.19196400843528577,
+      "rhs": 0.19196400843528577,
+      "scale": 1.0
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 10 0.25",
+      "passed": true,
+      "lhs": 3.037912532747491e-20,
+      "rhs": 3.037948389408241e-20
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 10 0.25",
+      "passed": true,
+      "lhs": 0.0004999941732822124,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 10 0.25",
+      "passed": true,
+      "lhs": 3.037912532747491e-20,
+      "rhs": 1.0161206383694075e-13
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 10 1.0",
+      "passed": true,
+      "lhs": 1.944264021043652e-18,
+      "rhs": 1.9442869692212744e-18
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 10 1.0",
+      "passed": true,
+      "lhs": 0.0004999943975303883,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 10 1.0",
+      "passed": true,
+      "lhs": 1.944264021043652e-18,
+      "rhs": 1.625793021391052e-12
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 10 4.0",
+      "passed": true,
+      "lhs": 1.2443289736862005e-16,
+      "rhs": 1.2443436603016156e-16
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 10 4.0",
+      "passed": true,
+      "lhs": 0.000499995294525105,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 10 4.0",
+      "passed": true,
+      "lhs": 1.2443289736862005e-16,
+      "rhs": 2.6012688342256832e-11
+    },
+    {
+      "name": "exact incident-deficit lower root 1.0 1000",
+      "passed": true,
+      "lhs": 0.0019199964000084374,
+      "rhs": 0.0019199964000084374,
+      "scale": 1.0
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 1000 0.25",
+      "passed": true,
+      "lhs": 1.1050055630900207e-32,
+      "rhs": 1.1050056940283513e-32
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 1000 0.25",
+      "passed": true,
+      "lhs": 0.0004999999412045372,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 1000 0.25",
+      "passed": true,
+      "lhs": 1.1050055630900207e-32,
+      "rhs": 6.1070903717793264e-24
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 1000 1.0",
+      "passed": true,
+      "lhs": 7.0720356037761325e-31,
+      "rhs": 7.0720364417814485e-31
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 1000 1.0",
+      "passed": true,
+      "lhs": 0.0004999999425615731,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 1000 1.0",
+      "passed": true,
+      "lhs": 7.0720356037761325e-31,
+      "rhs": 9.771344594846922e-23
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 1.0 1000 4.0",
+      "passed": true,
+      "lhs": 4.5261027864167254e-29,
+      "rhs": 4.526103322740127e-29
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 1.0 1000 4.0",
+      "passed": true,
+      "lhs": 0.0004999999479897168,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 1.0 1000 4.0",
+      "passed": true,
+      "lhs": 4.5261027864167254e-29,
+      "rhs": 1.5634151351755076e-21
+    },
+    {
+      "name": "exact incident-deficit lower root 2.0 1",
+      "passed": true,
+      "lhs": 3.825667147606684,
+      "rhs": 3.825667147606684,
+      "scale": 3.825667147606684
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 1 0.25",
+      "passed": true,
+      "lhs": 2.518871410005532e-13,
+      "rhs": 2.519378759342396e-13
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 1 0.25",
+      "passed": true,
+      "lhs": 0.0004999003534891665,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 1 0.25",
+      "passed": true,
+      "lhs": 2.518871410005532e-13,
+      "rhs": 6.037156027407417e-08
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 1 1.0",
+      "passed": true,
+      "lhs": 1.6120779574012873e-11,
+      "rhs": 1.6124024059791333e-11
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 1 1.0",
+      "passed": true,
+      "lhs": 0.0004999035611779048,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 1 1.0",
+      "passed": true,
+      "lhs": 1.6120779574012873e-11,
+      "rhs": 9.659449643851867e-07
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 1 4.0",
+      "passed": true,
+      "lhs": 1.0317305468423773e-09,
+      "rhs": 1.0319375398266453e-09
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 1 4.0",
+      "passed": true,
+      "lhs": 0.0004999163929796822,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 1 4.0",
+      "passed": true,
+      "lhs": 1.0317305468423773e-09,
+      "rhs": 1.5455119430162988e-05
+    },
+    {
+      "name": "exact incident-deficit lower root 2.0 10",
+      "passed": true,
+      "lhs": 0.3838560674645824,
+      "rhs": 0.3838560674645824,
+      "scale": 1.0
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 10 0.25",
+      "passed": true,
+      "lhs": 1.2151539361288883e-19,
+      "rhs": 1.2151793557632965e-19
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 10 0.25",
+      "passed": true,
+      "lhs": 0.0004999896155297427,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 10 0.25",
+      "passed": true,
+      "lhs": 1.2151539361288883e-19,
+      "rhs": 4.06448255347763e-13
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 10 1.0",
+      "passed": true,
+      "lhs": 7.776985192504023e-18,
+      "rhs": 7.777147876885097e-18
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 10 1.0",
+      "passed": true,
+      "lhs": 0.0004999898398341426,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 10 1.0",
+      "passed": true,
+      "lhs": 7.776985192504023e-18,
+      "rhs": 6.503172085564208e-12
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 10 4.0",
+      "passed": true,
+      "lhs": 4.977270526477237e-16,
+      "rhs": 4.977374641206462e-16
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 10 4.0",
+      "passed": true,
+      "lhs": 0.0004999907370537615,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 10 4.0",
+      "passed": true,
+      "lhs": 4.977270526477237e-16,
+      "rhs": 1.0405075336902733e-10
+    },
+    {
+      "name": "exact incident-deficit lower root 2.0 1000",
+      "passed": true,
+      "lhs": 0.0038399856000674998,
+      "rhs": 0.0038399856000674998,
+      "scale": 1.0
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 1000 0.25",
+      "passed": true,
+      "lhs": 4.420021847600622e-32,
+      "rhs": 4.4200227761134053e-32
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 1000 0.25",
+      "passed": true,
+      "lhs": 0.0004999998954175037,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 1000 0.25",
+      "passed": true,
+      "lhs": 4.420021847600622e-32,
+      "rhs": 2.4428361487117306e-23
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 1000 1.0",
+      "passed": true,
+      "lhs": 2.8288139824643986e-30,
+      "rhs": 2.8288145767125794e-30
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 1000 1.0",
+      "passed": true,
+      "lhs": 0.0004999998967745395,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 1000 1.0",
+      "passed": true,
+      "lhs": 2.8288139824643986e-30,
+      "rhs": 3.908537837938769e-22
+    },
+    {
+      "name": "finite cutoff yields requested Gram error 2.0 1000 4.0",
+      "passed": true,
+      "lhs": 1.8104409487772162e-28,
+      "rhs": 1.8104413290960508e-28
+    },
+    {
+      "name": "finite cutoff yields inverse tolerance 2.0 1000 4.0",
+      "passed": true,
+      "lhs": 0.0004999999022026823,
+      "rhs": 0.001
+    },
+    {
+      "name": "finite retained Gram invertibility 2.0 1000 4.0",
+      "passed": true,
+      "lhs": 1.8104409487772162e-28,
+      "rhs": 6.25366054070203e-21
+    },
+    {
+      "name": "tent exact ratio 0.3 0.25",
+      "passed": true,
+      "lhs": 86.64615288684877,
+      "rhs": 86.64615288684877,
+      "scale": 86.64615288684877
+    },
+    {
+      "name": "tent strict improvement 0.3 0.25",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 86.64615288684877
+    },
+    {
+      "name": "original tent first integral 0.3 0.25",
+      "passed": true,
+      "lhs": 0.001953125,
+      "rhs": 0.001953125,
+      "scale": 1.0
+    },
+    {
+      "name": "original tent second integral 0.3 0.25",
+      "passed": true,
+      "lhs": 0.0005787037037037033,
+      "rhs": 0.0005787037037037037,
+      "scale": 1.0
+    },
+    {
+      "name": "tent exact ratio 0.3 1.0",
+      "passed": true,
+      "lhs": 23.425338357550977,
+      "rhs": 23.42533835755098,
+      "scale": 23.42533835755098
+    },
+    {
+      "name": "tent strict improvement 0.3 1.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 23.425338357550977
+    },
+    {
+      "name": "original tent first integral 0.3 1.0",
+      "passed": true,
+      "lhs": 0.125,
+      "rhs": 0.125,
+      "scale": 1.0
+    },
+    {
+      "name": "original tent second integral 0.3 1.0",
+      "passed": true,
+      "lhs": 0.037037037037037014,
+      "rhs": 0.037037037037037035,
+      "scale": 1.0
+    },
+    {
+      "name": "tent exact ratio 0.3 4.0",
+      "passed": true,
+      "lhs": 7.591602923661376,
+      "rhs": 7.591602923661376,
+      "scale": 7.591602923661376
+    },
+    {
+      "name": "tent strict improvement 0.3 4.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 7.591602923661376
+    },
+    {
+      "name": "original tent first integral 0.3 4.0",
+      "passed": true,
+      "lhs": 8.0,
+      "rhs": 8.0,
+      "scale": 8.0
+    },
+    {
+      "name": "original tent second integral 0.3 4.0",
+      "passed": true,
+      "lhs": 2.370370370370369,
+      "rhs": 2.3703703703703702,
+      "scale": 2.3703703703703702
+    },
+    {
+      "name": "tent exact ratio 0.3 16.0",
+      "passed": true,
+      "lhs": 3.5894088669712394,
+      "rhs": 3.58940886697124,
+      "scale": 3.58940886697124
+    },
+    {
+      "name": "tent strict improvement 0.3 16.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 3.5894088669712394
+    },
+    {
+      "name": "original tent first integral 0.3 16.0",
+      "passed": true,
+      "lhs": 512.0,
+      "rhs": 512.0,
+      "scale": 512.0
+    },
+    {
+      "name": "original tent second integral 0.3 16.0",
+      "passed": true,
+      "lhs": 151.7037037037036,
+      "rhs": 151.7037037037037,
+      "scale": 151.7037037037037
+    },
+    {
+      "name": "tent exact ratio 0.3 64.0",
+      "passed": true,
+      "lhs": 2.5625508119436287,
+      "rhs": 2.5625508119436287,
+      "scale": 2.5625508119436287
+    },
+    {
+      "name": "tent strict improvement 0.3 64.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 2.5625508119436287
+    },
+    {
+      "name": "original tent first integral 0.3 64.0",
+      "passed": true,
+      "lhs": 32768.0,
+      "rhs": 32768.0,
+      "scale": 32768.0
+    },
+    {
+      "name": "original tent second integral 0.3 64.0",
+      "passed": true,
+      "lhs": 9709.037037037031,
+      "rhs": 9709.037037037036,
+      "scale": 9709.037037037036
+    },
+    {
+      "name": "tent exact ratio 1.0 0.25",
+      "passed": true,
+      "lhs": 27.64161673869105,
+      "rhs": 27.641616738691052,
+      "scale": 27.641616738691052
+    },
+    {
+      "name": "tent strict improvement 1.0 0.25",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 27.64161673869105
+    },
+    {
+      "name": "original tent first integral 1.0 0.25",
+      "passed": true,
+      "lhs": 0.001953125,
+      "rhs": 0.001953125,
+      "scale": 1.0
+    },
+    {
+      "name": "original tent second integral 1.0 0.25",
+      "passed": true,
+      "lhs": 0.0005787037037037033,
+      "rhs": 0.0005787037037037037,
+      "scale": 1.0
+    },
+    {
+      "name": "tent exact ratio 1.0 1.0",
+      "passed": true,
+      "lhs": 8.650764388682145,
+      "rhs": 8.650764388682147,
+      "scale": 8.650764388682147
+    },
+    {
+      "name": "tent strict improvement 1.0 1.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 8.650764388682145
+    },
+    {
+      "name": "original tent first integral 1.0 1.0",
+      "passed": true,
+      "lhs": 0.125,
+      "rhs": 0.125,
+      "scale": 1.0
+    },
+    {
+      "name": "original tent second integral 1.0 1.0",
+      "passed": true,
+      "lhs": 0.037037037037037014,
+      "rhs": 0.037037037037037035,
+      "scale": 1.0
+    },
+    {
+      "name": "tent exact ratio 1.0 4.0",
+      "passed": true,
+      "lhs": 3.859632990453225,
+      "rhs": 3.8596329904532256,
+      "scale": 3.8596329904532256
+    },
+    {
+      "name": "tent strict improvement 1.0 4.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 3.859632990453225
+    },
+    {
+      "name": "original tent first integral 1.0 4.0",
+      "passed": true,
+      "lhs": 8.0,
+      "rhs": 8.0,
+      "scale": 8.0
+    },
+    {
+      "name": "original tent second integral 1.0 4.0",
+      "passed": true,
+      "lhs": 2.370370370370369,
+      "rhs": 2.3703703703703702,
+      "scale": 2.3703703703703702
+    },
+    {
+      "name": "tent exact ratio 1.0 16.0",
+      "passed": true,
+      "lhs": 2.632010927473927,
+      "rhs": 2.6320109274739276,
+      "scale": 2.6320109274739276
+    },
+    {
+      "name": "tent strict improvement 1.0 16.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 2.632010927473927
+    },
+    {
+      "name": "original tent first integral 1.0 16.0",
+      "passed": true,
+      "lhs": 512.0,
+      "rhs": 512.0,
+      "scale": 512.0
+    },
+    {
+      "name": "original tent second integral 1.0 16.0",
+      "passed": true,
+      "lhs": 151.7037037037036,
+      "rhs": 151.7037037037037,
+      "scale": 151.7037037037037
+    },
+    {
+      "name": "tent exact ratio 1.0 64.0",
+      "passed": true,
+      "lhs": 2.3176154172573487,
+      "rhs": 2.3176154172573487,
+      "scale": 2.3176154172573487
+    },
+    {
+      "name": "tent strict improvement 1.0 64.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 2.3176154172573487
+    },
+    {
+      "name": "original tent first integral 1.0 64.0",
+      "passed": true,
+      "lhs": 32768.0,
+      "rhs": 32768.0,
+      "scale": 32768.0
+    },
+    {
+      "name": "original tent second integral 1.0 64.0",
+      "passed": true,
+      "lhs": 9709.037037037031,
+      "rhs": 9709.037037037036,
+      "scale": 9709.037037037036
+    },
+    {
+      "name": "tent exact ratio 2.0 0.25",
+      "passed": true,
+      "lhs": 14.988917303654642,
+      "rhs": 14.988917303654642,
+      "scale": 14.988917303654642
+    },
+    {
+      "name": "tent strict improvement 2.0 0.25",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 14.988917303654642
+    },
+    {
+      "name": "original tent first integral 2.0 0.25",
+      "passed": true,
+      "lhs": 0.001953125,
+      "rhs": 0.001953125,
+      "scale": 1.0
+    },
+    {
+      "name": "original tent second integral 2.0 0.25",
+      "passed": true,
+      "lhs": 0.0005787037037037033,
+      "rhs": 0.0005787037037037037,
+      "scale": 1.0
+    },
+    {
+      "name": "tent exact ratio 2.0 1.0",
+      "passed": true,
+      "lhs": 5.466626040726388,
+      "rhs": 5.466626040726389,
+      "scale": 5.466626040726389
+    },
+    {
+      "name": "tent strict improvement 2.0 1.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 5.466626040726388
+    },
+    {
+      "name": "original tent first integral 2.0 1.0",
+      "passed": true,
+      "lhs": 0.125,
+      "rhs": 0.125,
+      "scale": 1.0
+    },
+    {
+      "name": "original tent second integral 2.0 1.0",
+      "passed": true,
+      "lhs": 0.037037037037037014,
+      "rhs": 0.037037037037037035,
+      "scale": 1.0
+    },
+    {
+      "name": "tent exact ratio 2.0 4.0",
+      "passed": true,
+      "lhs": 3.045175009796674,
+      "rhs": 3.045175009796674,
+      "scale": 3.045175009796674
+    },
+    {
+      "name": "tent strict improvement 2.0 4.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 3.045175009796674
+    },
+    {
+      "name": "original tent first integral 2.0 4.0",
+      "passed": true,
+      "lhs": 8.0,
+      "rhs": 8.0,
+      "scale": 8.0
+    },
+    {
+      "name": "original tent second integral 2.0 4.0",
+      "passed": true,
+      "lhs": 2.370370370370369,
+      "rhs": 2.3703703703703702,
+      "scale": 2.3703703703703702
+    },
+    {
+      "name": "tent exact ratio 2.0 16.0",
+      "passed": true,
+      "lhs": 2.422969145152671,
+      "rhs": 2.422969145152671,
+      "scale": 2.422969145152671
+    },
+    {
+      "name": "tent strict improvement 2.0 16.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 2.422969145152671
+    },
+    {
+      "name": "original tent first integral 2.0 16.0",
+      "passed": true,
+      "lhs": 512.0,
+      "rhs": 512.0,
+      "scale": 512.0
+    },
+    {
+      "name": "original tent second integral 2.0 16.0",
+      "passed": true,
+      "lhs": 151.7037037037036,
+      "rhs": 151.7037037037037,
+      "scale": 151.7037037037037
+    },
+    {
+      "name": "tent exact ratio 2.0 64.0",
+      "passed": true,
+      "lhs": 2.2646918204095714,
+      "rhs": 2.2646918204095714,
+      "scale": 2.2646918204095714
+    },
+    {
+      "name": "tent strict improvement 2.0 64.0",
+      "passed": true,
+      "lhs": 2.2115856637445197,
+      "rhs": 2.2646918204095714
+    },
+    {
+      "name": "original tent first integral 2.0 64.0",
+      "passed": true,
+      "lhs": 32768.0,
+      "rhs": 32768.0,
+      "scale": 32768.0
+    },
+    {
+      "name": "original tent second integral 2.0 64.0",
+      "passed": true,
+      "lhs": 9709.037037037031,
+      "rhs": 9709.037037037036,
+      "scale": 9709.037037037036
+    },
+    {
+      "name": "orientation cross terms retained 0",
+      "passed": true,
+      "lhs": 295.1654814187352,
+      "rhs": 295.1654814187352,
+      "scale": 295.1654814187352
+    },
+    {
+      "name": "orientation cross terms retained 1",
+      "passed": true,
+      "lhs": 345.6854276427423,
+      "rhs": 345.6854276427423,
+      "scale": 345.6854276427423
+    },
+    {
+      "name": "orientation cross terms retained 2",
+      "passed": true,
+      "lhs": 327.93584539121315,
+      "rhs": 327.93584539121315,
+      "scale": 327.93584539121315
+    },
+    {
+      "name": "orientation cross terms retained 3",
+      "passed": true,
+      "lhs": 340.0043825693658,
+      "rhs": 340.0043825693657,
+      "scale": 340.0043825693658
+    },
+    {
+      "name": "orientation cross terms retained 4",
+      "passed": true,
+      "lhs": 322.6134076836404,
+      "rhs": 322.61340768364045,
+      "scale": 322.61340768364045
+    },
+    {
+      "name": "orientation cross terms retained 5",
+      "passed": true,
+      "lhs": 317.48557197367404,
+      "rhs": 317.48557197367404,
+      "scale": 317.48557197367404
+    },
+    {
+      "name": "orientation cross terms retained 6",
+      "passed": true,
+      "lhs": 351.2230627356681,
+      "rhs": 351.2230627356681,
+      "scale": 351.2230627356681
+    },
+    {
+      "name": "orientation cross terms retained 7",
+      "passed": true,
+      "lhs": 214.37500336979872,
+      "rhs": 214.3750033697987,
+      "scale": 214.37500336979872
+    },
+    {
+      "name": "orientation cross terms retained 8",
+      "passed": true,
+      "lhs": 332.76986108408755,
+      "rhs": 332.7698610840876,
+      "scale": 332.7698610840876
+    },
+    {
+      "name": "orientation cross terms retained 9",
+      "passed": true,
+      "lhs": 252.22685694981826,
+      "rhs": 252.22685694981828,
+      "scale": 252.22685694981828
+    },
+    {
+      "name": "orientation cross terms retained 10",
+      "passed": true,
+      "lhs": 278.72297457049115,
+      "rhs": 278.72297457049115,
+      "scale": 278.72297457049115
+    },
+    {
+      "name": "orientation cross terms retained 11",
+      "passed": true,
+      "lhs": 336.5572650363035,
+      "rhs": 336.5572650363035,
+      "scale": 336.5572650363035
+    }
+  ]
+}
