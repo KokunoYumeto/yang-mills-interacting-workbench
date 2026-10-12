@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T01:59:12.479892+00:00",
+  "checked_utc": "2026-10-12T02:19:40.296182+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -325,7 +325,7 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "fbf1b3a5b10c15e89ecc3fa701c9acc12ff85ae0343cabfef9f80283c7c84507",
+      "sha256": "a401eca365b36224c5d37b075673f715a79b912aa2c62e3b330af7fcc4eb6768",
       "complete_math_blocks": 546,
       "split_to_aligned_wrappers": 0
     },
@@ -409,7 +409,7 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "054fe81fd70b4c0bd3b201aa1600fd440d7d78200a34e9e2b5bbf3fdac72f7b9",
+      "sha256": "c7d7f4745054750df79026b914346df98723467116ee236c7712ad7bcb74e78b",
       "complete_math_blocks": 207,
       "split_to_aligned_wrappers": 0
     },
@@ -499,9 +499,15 @@
     },
     {
       "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
-      "sha256": "bb06ac059bf9adab3e638f2949bfedbd22d47f69a25c0c56e960c71550f7759a",
+      "sha256": "b5a3ed98ef67de6533986a239cef5cd8ac641efb20968022795cc15ed177e985",
       "complete_math_blocks": 135,
       "split_to_aligned_wrappers": 3
+    },
+    {
+      "source": "ACTUAL_SCORE_MOMENTS_AND_SECOND_ENERGY.md",
+      "sha256": "a85f463b505d422aa046d439ec2900ad96beffde0cf4eae882ee3fe8c86e8949",
+      "complete_math_blocks": 148,
+      "split_to_aligned_wrappers": 0
     }
   ],
   "figures": [
@@ -948,6 +954,16 @@
     {
       "file": "FILTERED_CURRENT_OPTIMIZATION.png",
       "sha256": "14bfa8a4e02d8d5348ce22e353b86ef57ecab4cfad0ab5eb231048b451fa13b2",
+      "visually_inspected": true
+    },
+    {
+      "file": "ACTUAL_SCORE_TAIL.png",
+      "sha256": "1a02dcd55e43ad7981e2b763b3b9bc353ec0bca17171d26559da6b4b9951f647",
+      "visually_inspected": true
+    },
+    {
+      "file": "SCORE_SECOND_ENERGY_MAP.png",
+      "sha256": "685f6d81a50b54c7644a95f193b9d47edb1d3ec78c774f6aba149fe44ed664e2",
       "visually_inspected": true
     }
   ],
@@ -5282,6 +5298,175 @@
         "FILTERED_CURRENT_OPTIMIZATION.png"
       ],
       "finding": "All fifteen new proof and receiving-note pages inspected in contact sheets; six final pages inspected individually. No new clipping, overlapping formula, missing glyph or equation overflow. Both final mathematical figures inspected. Earlier59 overfull warnings and one earlier missing delta remain; PDF is local QA."
+    }
+  },
+  "score_moments_review": {
+    "utc": "2026-10-12T02:13:39.743197+00:00",
+    "coverage": "SOM1–SOM24: actual conditional score moments of every even order, exponential tail, correlated multiplier estimate with derivative cost, complete weighted score/Hessian identity, original staple force, full second-energy matrix trace with the shared local deficit, and exact source-vector norm limit including all removed-star and half-edge errors.",
+    "strengthening": "Uniform conditional moment control replaces a pointwise supremum in the full score/Hessian contraction. Every outside Hessian row remains. The actual finite second-energy matrix now has an evaluated trace budget, and its original source norm has a positive evaluated limit after retaining its exact lattice-spacing power.",
+    "limitations": "The trace-only physical filter estimate has order a_j to the sixth power, weaker than FTC12. The source-directed inverse, both physical residuals and the signed three-scale response remain unevaluated. The interacting continuum state, reconstruction, global smoothness, theory identification and no-gap endpoint remain unproved.",
+    "actual_reading": "SOM derivation read in full. BM1–BM6, BM13–BM17; SG1–SG19; FTC21–FTC31 read directly. Original-author provenance and previous bounded PT reading retained; no new source reading inferred from index hits.",
+    "diagnostics": {
+      "checks": 773,
+      "all_passed": true,
+      "scope": "Radius-two analytic one- and two-sphere diagnostics, correlated multiplier inequalities, original trace constants, exact face/edge sampling and removed-star bounds. Analytic diagnostic densities and arbitrary bounded face means are not the original Yang-Mills vacuum."
+    },
+    "figures_inspected": [
+      "ACTUAL_SCORE_TAIL.png",
+      "SCORE_SECOND_ENERGY_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_SCORE_MOMENTS_AND_SECOND_ENERGY.md",
+        "prefix": "SOM",
+        "tags": 24,
+        "owner_sha256": "1cd8ec73310e0afa65e102754e21cc3e06433292af369fc363a701f19b458b7e",
+        "public_sha256": "a85f463b505d422aa046d439ec2900ad96beffde0cf4eae882ee3fe8c86e8949",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T02:19:40.296182+00:00",
+      "tex_sha256": "7e59133fb4e006709d44c42e735ed83ec23a2555e2a7f78e4997de08f901b6ca",
+      "pdf_sha256": "217d586eda039dafe17990a31326318e3f8a133adf6c63b99fee647ef0bad5b0",
+      "pages": 844,
+      "source_files": 84,
+      "math_blocks": 19749,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T02:19:39.492708+00:00",
+        "complete": true,
+        "pages": 844,
+        "inspected_pages": [
+          550,
+          551,
+          552,
+          703,
+          704,
+          705,
+          835,
+          836,
+          837,
+          838,
+          839,
+          840,
+          841,
+          842,
+          843,
+          844
+        ],
+        "contact_sheets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "individual_detail_pages": [
+          837,
+          838,
+          839,
+          840,
+          841,
+          842
+        ],
+        "page_sha256": {
+          "550": "7cbf5e19bf7c77aa851fa20bcabad6e653ecd95f9180321a012d7fc28c8b3d1c",
+          "551": "9b36927e7211c91dec123397fd4e70c23f692260d2cd465543bfea98f3ec285f",
+          "552": "f6eebaf2d5a6b52bfdab834881428db069ecdc6357ef431da2a1b8da388d490a",
+          "703": "ef1197955659c8ae54fc357de06c500ace52425bdf3f65170e90eeef60bfc4bd",
+          "704": "44475097b043a0edca7b3a12c62076053fb5b8eed12eb79f4f3de679562d16bd",
+          "705": "53f9a3a7fdc75e9b43dabfb3ea48112eb127eff284197a54b2bc82cb11c27a94",
+          "835": "cbc655d094a8c2db47e54faf3db355150c0b6a8fb77ea79763efe4324623b288",
+          "836": "6b7e6c3e50da47afcb47aaba2f7c1bafbd1a1acdca90f56a0d836606d84eb137",
+          "837": "0a84fbcbef0f90a513a6b1551b4e7f1affd0936c06e358652166e6b06905fceb",
+          "838": "602dad2a248ebfe3dc7858be5e480243e4aa7aad251228bdf6d497784d6ecf1f",
+          "839": "fceae21235445df2c641f6de4aa7670f3199b678f32431b0ff4ac21ddabb1163",
+          "840": "500d20bc2c7918d2d36f1912bf3a409410ec933d842e205547923d15160fb610",
+          "841": "d218fad2508c569731183d77c3feda7d467ef593695e169d2a1bbd89750cbdb3",
+          "842": "58d71a0722fd3d10b8d1879774a9ef3b7f3ceefc4bdbe1bab86567fae0c52e2c",
+          "843": "742e00e96d58e24159d3f53cf6b664e8d80c16e9f5cfb56991898acc71b4ac02",
+          "844": "23b0c2873ef2b8ad125ea0d0055b2afa1b34d08d4df38287f1a14b6c1a5d54f3"
+        },
+        "figures": [
+          "ACTUAL_SCORE_TAIL.png",
+          "SCORE_SECOND_ENERGY_MAP.png"
+        ],
+        "finding": "All sixteen proof and receiving-note pages inspected in contact sheets, with six final proof pages individually inspected after the SOM4 plus-sign correction and explicit domain/source additions. Both final figures inspected. No new clipping, overlap, overflow or missing glyph. Earlier59 overfull warnings and one earlier missing delta remain; PDF local QA."
+      }
+    }
+  },
+  "score_moments_compile": {
+    "utc": "2026-10-12T02:19:40.296182+00:00",
+    "tex_sha256": "7e59133fb4e006709d44c42e735ed83ec23a2555e2a7f78e4997de08f901b6ca",
+    "pdf_sha256": "217d586eda039dafe17990a31326318e3f8a133adf6c63b99fee647ef0bad5b0",
+    "pages": 844,
+    "source_files": 84,
+    "math_blocks": 19749,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T02:19:39.492708+00:00",
+      "complete": true,
+      "pages": 844,
+      "inspected_pages": [
+        550,
+        551,
+        552,
+        703,
+        704,
+        705,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842,
+        843,
+        844
+      ],
+      "contact_sheets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "individual_detail_pages": [
+        837,
+        838,
+        839,
+        840,
+        841,
+        842
+      ],
+      "page_sha256": {
+        "550": "7cbf5e19bf7c77aa851fa20bcabad6e653ecd95f9180321a012d7fc28c8b3d1c",
+        "551": "9b36927e7211c91dec123397fd4e70c23f692260d2cd465543bfea98f3ec285f",
+        "552": "f6eebaf2d5a6b52bfdab834881428db069ecdc6357ef431da2a1b8da388d490a",
+        "703": "ef1197955659c8ae54fc357de06c500ace52425bdf3f65170e90eeef60bfc4bd",
+        "704": "44475097b043a0edca7b3a12c62076053fb5b8eed12eb79f4f3de679562d16bd",
+        "705": "53f9a3a7fdc75e9b43dabfb3ea48112eb127eff284197a54b2bc82cb11c27a94",
+        "835": "cbc655d094a8c2db47e54faf3db355150c0b6a8fb77ea79763efe4324623b288",
+        "836": "6b7e6c3e50da47afcb47aaba2f7c1bafbd1a1acdca90f56a0d836606d84eb137",
+        "837": "0a84fbcbef0f90a513a6b1551b4e7f1affd0936c06e358652166e6b06905fceb",
+        "838": "602dad2a248ebfe3dc7858be5e480243e4aa7aad251228bdf6d497784d6ecf1f",
+        "839": "fceae21235445df2c641f6de4aa7670f3199b678f32431b0ff4ac21ddabb1163",
+        "840": "500d20bc2c7918d2d36f1912bf3a409410ec933d842e205547923d15160fb610",
+        "841": "d218fad2508c569731183d77c3feda7d467ef593695e169d2a1bbd89750cbdb3",
+        "842": "58d71a0722fd3d10b8d1879774a9ef3b7f3ceefc4bdbe1bab86567fae0c52e2c",
+        "843": "742e00e96d58e24159d3f53cf6b664e8d80c16e9f5cfb56991898acc71b4ac02",
+        "844": "23b0c2873ef2b8ad125ea0d0055b2afa1b34d08d4df38287f1a14b6c1a5d54f3"
+      },
+      "figures": [
+        "ACTUAL_SCORE_TAIL.png",
+        "SCORE_SECOND_ENERGY_MAP.png"
+      ],
+      "finding": "All sixteen proof and receiving-note pages inspected in contact sheets, with six final proof pages individually inspected after the SOM4 plus-sign correction and explicit domain/source additions. Both final figures inspected. No new clipping, overlap, overflow or missing glyph. Earlier59 overfull warnings and one earlier missing delta remain; PDF local QA."
     }
   }
 }

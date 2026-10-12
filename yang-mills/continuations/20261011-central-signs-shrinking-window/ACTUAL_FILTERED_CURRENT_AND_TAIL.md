@@ -389,3 +389,7 @@ Complete provider proofs: [PLF1–PLF26](https://github.com/KokunoYumeto/yang-mi
 ![Direct optimization of the full physical filter using the original force, every Hessian row and both physical residual norms; FTC21–FTC31.](FILTERED_CURRENT_OPTIMIZATION.png)
 
 Reproducible [diagnostics and figures](check_filtered_current.py) and [source-use record](FILTERED_CURRENT_SOURCE_USE_LEDGER.json). Finite matrix models are not samples of the original Yang–Mills vacuum.
+
+## Actual score moments and the full second-energy matrix
+
+[SOM1–SOM24](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_SCORE_MOMENTS_AND_SECOND_ENERGY.md) prove all even moments and an exponential tail for the actual conditional ground-state score at every outside configuration. A full weighted score/Hessian identity controls the second-energy matrix with all exterior rows and force cross terms retained. Its original source-vector norm is evaluated with explicit removed-face and lattice-sampling errors. The matrix trace bound is sufficient for a fully evaluated filter estimate at its stated vanishing scale; it does not improve the earlier filter bound or establish surviving low-energy weight. Source-directed inverse and residual calculations, reconstruction and the smooth no-gap endpoint remain active.

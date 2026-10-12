@@ -1,0 +1,4684 @@
+{
+  "checks": 773,
+  "all_passed": true,
+  "scope": "Radius-two analytic one- and two-sphere diagnostics, correlated multiplier inequalities, original trace constants, exact face/edge sampling and removed-star bounds. Analytic diagnostic densities and arbitrary bounded face means are not the original Yang-Mills vacuum.",
+  "source_grid_diagnostics": [
+    {
+      "j": 1,
+      "original_a": 0.01,
+      "original_raw_b_squared": 1.6043319639843752e-12,
+      "a_minus3_b_squared": 1.604331963984375e-06,
+      "limit": 2.653333333333334e-06
+    },
+    {
+      "j": 2,
+      "original_a": 0.005,
+      "original_raw_b_squared": 2.850213152775766e-13,
+      "a_minus3_b_squared": 2.2801705222206125e-06,
+      "limit": 2.653333333333334e-06
+    },
+    {
+      "j": 4,
+      "original_a": 0.0025,
+      "original_raw_b_squared": 3.977884585494659e-14,
+      "a_minus3_b_squared": 2.545846134716581e-06,
+      "limit": 2.653333333333334e-06
+    },
+    {
+      "j": 8,
+      "original_a": 0.00125,
+      "original_raw_b_squared": 5.125510328414069e-15,
+      "a_minus3_b_squared": 2.624261288148003e-06,
+      "limit": 2.653333333333334e-06
+    },
+    {
+      "j": 16,
+      "original_a": 0.000625,
+      "original_raw_b_squared": 6.459227106701056e-16,
+      "a_minus3_b_squared": 2.6456994229047525e-06,
+      "limit": 2.653333333333334e-06
+    },
+    {
+      "j": 32,
+      "original_a": 0.0003125,
+      "original_raw_b_squared": 8.091265750119532e-17,
+      "a_minus3_b_squared": 2.6513459609991675e-06,
+      "limit": 2.653333333333334e-06
+    }
+  ],
+  "results": [
+    {
+      "name": "sphere divergence t0.3 p1",
+      "passed": true,
+      "residual": -4.75380300987531e-17,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p1",
+      "passed": true,
+      "lhs": 0.016627436877153845,
+      "rhs": 0.11249999999999999
+    },
+    {
+      "name": "correlated multiplier t0.3 p1 l-3.0",
+      "passed": true,
+      "lhs": 0.11501639207105488,
+      "rhs": 14.166676442376861
+    },
+    {
+      "name": "correlated multiplier t0.3 p1 l0.5",
+      "passed": true,
+      "lhs": 0.01986804764061642,
+      "rhs": 0.2673585714143123
+    },
+    {
+      "name": "correlated multiplier t0.3 p1 l4.0",
+      "passed": true,
+      "lhs": 1.0236388159737952,
+      "rhs": 215.83405596468677
+    },
+    {
+      "name": "sphere divergence t0.3 p2",
+      "passed": true,
+      "residual": -7.661441959236586e-19,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p2",
+      "passed": true,
+      "lhs": 0.00030945390355768126,
+      "rhs": 0.003117644414466346
+    },
+    {
+      "name": "correlated multiplier t0.3 p2 l-3.0",
+      "passed": true,
+      "lhs": 0.0014701507196721985,
+      "rhs": 0.18766804558124153
+    },
+    {
+      "name": "correlated multiplier t0.3 p2 l0.5",
+      "passed": true,
+      "lhs": 0.0003542088359205789,
+      "rhs": 0.0061939183877212966
+    },
+    {
+      "name": "correlated multiplier t0.3 p2 l4.0",
+      "passed": true,
+      "lhs": 0.009878763097071506,
+      "rhs": 2.1227350807911365
+    },
+    {
+      "name": "sphere divergence t0.3 p3",
+      "passed": true,
+      "residual": -8.043192872045583e-21,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p3",
+      "passed": true,
+      "lhs": 6.065161958502363e-06,
+      "rhs": 8.123164968389133e-05
+    },
+    {
+      "name": "correlated multiplier t0.3 p3 l-3.0",
+      "passed": true,
+      "lhs": 2.2244659359354373e-05,
+      "rhs": 0.0029457372446947475
+    },
+    {
+      "name": "correlated multiplier t0.3 p3 l0.5",
+      "passed": true,
+      "lhs": 6.761569995009767e-06,
+      "rhs": 0.00014520256016575773
+    },
+    {
+      "name": "correlated multiplier t0.3 p3 l4.0",
+      "passed": true,
+      "lhs": 0.00011901256278803501,
+      "rhs": 0.026086358929750204
+    },
+    {
+      "name": "sphere divergence t0.3 p4",
+      "passed": true,
+      "residual": -1.067088281074027e-22,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p4",
+      "passed": true,
+      "lhs": 1.224529550526868e-07,
+      "rhs": 2.046992160994547e-06
+    },
+    {
+      "name": "correlated multiplier t0.3 p4 l-3.0",
+      "passed": true,
+      "lhs": 3.7216294078844594e-07,
+      "rhs": 5.112905928377186e-05
+    },
+    {
+      "name": "correlated multiplier t0.3 p4 l0.5",
+      "passed": true,
+      "lhs": 1.3410338622114857e-07,
+      "rhs": 3.408905864375857e-06
+    },
+    {
+      "name": "correlated multiplier t0.3 p4 l4.0",
+      "passed": true,
+      "lhs": 1.6531969822959368e-06,
+      "rhs": 0.00036987321965997137
+    },
+    {
+      "name": "sphere divergence t0.3 p5",
+      "passed": true,
+      "residual": -9.09269590824635e-25,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p5",
+      "passed": true,
+      "lhs": 2.520200423028934e-09,
+      "rhs": 5.051184395923331e-08
+    },
+    {
+      "name": "correlated multiplier t0.3 p5 l-3.0",
+      "passed": true,
+      "lhs": 6.645104348945052e-09,
+      "rhs": 9.466491163564927e-07
+    },
+    {
+      "name": "correlated multiplier t0.3 p5 l0.5",
+      "passed": true,
+      "lhs": 2.724826285176948e-09,
+      "rhs": 7.991124734086751e-08
+    },
+    {
+      "name": "correlated multiplier t0.3 p5 l4.0",
+      "passed": true,
+      "lhs": 2.5325829503114985e-08,
+      "rhs": 5.7858809723487615e-06
+    },
+    {
+      "name": "sphere divergence t0.3 p6",
+      "passed": true,
+      "residual": 5.70972007215237e-27,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p6",
+      "passed": true,
+      "lhs": 5.2569805594133225e-11,
+      "rhs": 1.2285977062266051e-09
+    },
+    {
+      "name": "correlated multiplier t0.3 p6 l-3.0",
+      "passed": true,
+      "lhs": 1.2407251817237377e-10,
+      "rhs": 1.8313183183820303e-08
+    },
+    {
+      "name": "correlated multiplier t0.3 p6 l0.5",
+      "passed": true,
+      "lhs": 5.6291701279760173e-11,
+      "rhs": 1.868944175496426e-09
+    },
+    {
+      "name": "correlated multiplier t0.3 p6 l4.0",
+      "passed": true,
+      "lhs": 4.162718696748624e-10,
+      "rhs": 9.712716360155849e-08
+    },
+    {
+      "name": "sphere divergence t0.3 p7",
+      "passed": true,
+      "residual": 3.053690843761615e-28,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p7",
+      "passed": true,
+      "lhs": 1.1075113294668415e-12,
+      "rhs": 2.957051564669994e-11
+    },
+    {
+      "name": "correlated multiplier t0.3 p7 l-3.0",
+      "passed": true,
+      "lhs": 2.3921037922823423e-12,
+      "rhs": 3.654643856261173e-10
+    },
+    {
+      "name": "correlated multiplier t0.3 p7 l0.5",
+      "passed": true,
+      "lhs": 1.1770141769316362e-12,
+      "rhs": 4.360404512919681e-11
+    },
+    {
+      "name": "correlated multiplier t0.3 p7 l4.0",
+      "passed": true,
+      "lhs": 7.209973594468722e-12,
+      "rhs": 1.7181684491954372e-09
+    },
+    {
+      "name": "sphere divergence t0.3 p8",
+      "passed": true,
+      "residual": 1.9831799129612063e-29,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t0.3 p8",
+      "passed": true,
+      "lhs": 2.3511123834905712e-14,
+      "rhs": 7.060384725351114e-13
+    },
+    {
+      "name": "correlated multiplier t0.3 p8 l-3.0",
+      "passed": true,
+      "lhs": 4.7232902402158367e-14,
+      "rhs": 7.461555411631595e-12
+    },
+    {
+      "name": "correlated multiplier t0.3 p8 l0.5",
+      "passed": true,
+      "lhs": 2.483595674313536e-14,
+      "rhs": 1.0149612087850358e-12
+    },
+    {
+      "name": "correlated multiplier t0.3 p8 l4.0",
+      "passed": true,
+      "lhs": 1.2997645048256718e-13,
+      "rhs": 3.163175156365967e-11
+    },
+    {
+      "name": "exponential t0.3 tau0.02",
+      "passed": true,
+      "lhs": 1.0089121313212974,
+      "rhs": 1.0631465897496433
+    },
+    {
+      "name": "exponential t0.3 tau0.1",
+      "passed": true,
+      "lhs": 1.0454595419916912,
+      "rhs": 1.3975424859373684
+    },
+    {
+      "name": "exponential t0.3 tau0.25",
+      "passed": true,
+      "lhs": 1.1180362083028252,
+      "rhs": 2.8284271247461903
+    },
+    {
+      "name": "exponential t0.3 tau0.4",
+      "passed": true,
+      "lhs": 1.1962596865747703,
+      "rhs": 11.180339887498953
+    },
+    {
+      "name": "exponential t0.3 tau0.49",
+      "passed": true,
+      "lhs": 1.2460952282258462,
+      "rhs": 353.55339059327326
+    },
+    {
+      "name": "sphere divergence t1.0 p1",
+      "passed": true,
+      "residual": -4.223848376096184e-16,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p1",
+      "passed": true,
+      "lhs": 0.16242278502086682,
+      "rhs": 0.375
+    },
+    {
+      "name": "correlated multiplier t1.0 p1 l-3.0",
+      "passed": true,
+      "lhs": 0.3785152168312871,
+      "rhs": 5.465319056412442
+    },
+    {
+      "name": "correlated multiplier t1.0 p1 l0.5",
+      "passed": true,
+      "lhs": 0.23525298838473385,
+      "rhs": 0.8441692838631709
+    },
+    {
+      "name": "correlated multiplier t1.0 p1 l4.0",
+      "passed": true,
+      "lhs": 21.515146223424516,
+      "rhs": 568.207792374943
+    },
+    {
+      "name": "sphere divergence t1.0 p2",
+      "passed": true,
+      "residual": -8.580824920512327e-17,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p2",
+      "passed": true,
+      "lhs": 0.03134651872391634,
+      "rhs": 0.10151424063804176
+    },
+    {
+      "name": "correlated multiplier t1.0 p2 l-3.0",
+      "passed": true,
+      "lhs": 0.061467047639356245,
+      "rhs": 0.9685647170814462
+    },
+    {
+      "name": "correlated multiplier t1.0 p2 l0.5",
+      "passed": true,
+      "lhs": 0.04190117776384965,
+      "rhs": 0.19186430167225443
+    },
+    {
+      "name": "correlated multiplier t1.0 p2 l4.0",
+      "passed": true,
+      "lhs": 2.072731958921618,
+      "rhs": 56.878575305463784
+    },
+    {
+      "name": "sphere divergence t1.0 p3",
+      "passed": true,
+      "residual": -1.0181019215822082e-17,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p3",
+      "passed": true,
+      "lhs": 0.006540348908006131,
+      "rhs": 0.0274282038834268
+    },
+    {
+      "name": "correlated multiplier t1.0 p3 l-3.0",
+      "passed": true,
+      "lhs": 0.011412377287824951,
+      "rhs": 0.19548095601512003
+    },
+    {
+      "name": "correlated multiplier t1.0 p3 l0.5",
+      "passed": true,
+      "lhs": 0.008294838396798194,
+      "rhs": 0.04648130688365985
+    },
+    {
+      "name": "correlated multiplier t1.0 p3 l4.0",
+      "passed": true,
+      "lhs": 0.25300696795063987,
+      "rhs": 7.219799170233335
+    },
+    {
+      "name": "sphere divergence t1.0 p4",
+      "passed": true,
+      "residual": -1.5800404429354495e-18,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p4",
+      "passed": true,
+      "lhs": 0.0014251592828275503,
+      "rhs": 0.007357892521506897
+    },
+    {
+      "name": "correlated multiplier t1.0 p4 l-3.0",
+      "passed": true,
+      "lhs": 0.0022877318061947515,
+      "rhs": 0.04237770125770284
+    },
+    {
+      "name": "correlated multiplier t1.0 p4 l0.5",
+      "passed": true,
+      "lhs": 0.001742088478087831,
+      "rhs": 0.011577157064455099
+    },
+    {
+      "name": "correlated multiplier t1.0 p4 l4.0",
+      "passed": true,
+      "lhs": 0.036072566651423506,
+      "rhs": 1.070765095108057
+    },
+    {
+      "name": "sphere divergence t1.0 p5",
+      "passed": true,
+      "residual": -1.8632310284038487e-19,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p5",
+      "passed": true,
+      "lhs": 0.0003191321476325756,
+      "rhs": 0.0019595940138878816
+    },
+    {
+      "name": "correlated multiplier t1.0 p5 l-3.0",
+      "passed": true,
+      "lhs": 0.00048134123737882584,
+      "rhs": 0.009591714506507846
+    },
+    {
+      "name": "correlated multiplier t1.0 p5 l0.5",
+      "passed": true,
+      "lhs": 0.0003796532703081616,
+      "rhs": 0.0029219992723893617
+    },
+    {
+      "name": "correlated multiplier t1.0 p5 l4.0",
+      "passed": true,
+      "lhs": 0.005734850312804375,
+      "rhs": 0.17706302539962004
+    },
+    {
+      "name": "sphere divergence t1.0 p6",
+      "passed": true,
+      "residual": -6.805368481225674e-21,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p6",
+      "passed": true,
+      "lhs": 7.280183315019483e-05,
+      "rhs": 0.0005185897399029354
+    },
+    {
+      "name": "correlated multiplier t1.0 p6 l-3.0",
+      "passed": true,
+      "lhs": 0.00010464342250571125,
+      "rhs": 0.002232049859653997
+    },
+    {
+      "name": "correlated multiplier t1.0 p6 l0.5",
+      "passed": true,
+      "lhs": 8.482647009907634e-05,
+      "rhs": 0.0007424118361365373
+    },
+    {
+      "name": "correlated multiplier t1.0 p6 l4.0",
+      "passed": true,
+      "lhs": 0.000987394022477268,
+      "rhs": 0.03169665004225502
+    },
+    {
+      "name": "sphere divergence t1.0 p7",
+      "passed": true,
+      "residual": 6.070662502439155e-21,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p7",
+      "passed": true,
+      "lhs": 1.6831702221696843e-05,
+      "rhs": 0.0001365034371566153
+    },
+    {
+      "name": "correlated multiplier t1.0 p7 l-3.0",
+      "passed": true,
+      "lhs": 2.32854155627874e-05,
+      "rhs": 0.0005292417365125244
+    },
+    {
+      "name": "correlated multiplier t1.0 p7 l0.5",
+      "passed": true,
+      "lhs": 1.929272796435674e-05,
+      "rhs": 0.00018926304052222474
+    },
+    {
+      "name": "correlated multiplier t1.0 p7 l4.0",
+      "passed": true,
+      "lhs": 0.00018055302007246722,
+      "rhs": 0.006022447142733453
+    },
+    {
+      "name": "sphere divergence t1.0 p8",
+      "passed": true,
+      "residual": 2.607778717893423e-21,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t1.0 p8",
+      "passed": true,
+      "lhs": 3.9308661889612304e-06,
+      "rhs": 3.576736722110579e-05
+    },
+    {
+      "name": "correlated multiplier t1.0 p8 l-3.0",
+      "passed": true,
+      "lhs": 5.271642994701848e-06,
+      "rhs": 0.00012715194656024177
+    },
+    {
+      "name": "correlated multiplier t1.0 p8 l0.5",
+      "passed": true,
+      "lhs": 4.446262847530116e-06,
+      "rhs": 4.8326293165529075e-05
+    },
+    {
+      "name": "correlated multiplier t1.0 p8 l4.0",
+      "passed": true,
+      "lhs": 3.4589868683036816e-05,
+      "rhs": 0.0011979010990730546
+    },
+    {
+      "name": "exponential t1.0 tau0.02",
+      "passed": true,
+      "lhs": 1.0263933851181095,
+      "rhs": 1.0631465897496433
+    },
+    {
+      "name": "exponential t1.0 tau0.1",
+      "passed": true,
+      "lhs": 1.1405524451671882,
+      "rhs": 1.3975424859373684
+    },
+    {
+      "name": "exponential t1.0 tau0.25",
+      "passed": true,
+      "lhs": 1.3973012058686387,
+      "rhs": 2.8284271247461903
+    },
+    {
+      "name": "exponential t1.0 tau0.4",
+      "passed": true,
+      "lhs": 1.7232063012814238,
+      "rhs": 11.180339887498953
+    },
+    {
+      "name": "exponential t1.0 tau0.49",
+      "passed": true,
+      "lhs": 1.9601035540948475,
+      "rhs": 353.55339059327326
+    },
+    {
+      "name": "sphere divergence t3.0 p1",
+      "passed": true,
+      "residual": 8.565197162635485e-16,
+      "comparison_scale": 1.0
+    },
+    {
+      "name": "conditional moment t3.0 p1",
+      "passed": true,
+      "lhs": 0.8580668352178413,
+      "rhs": 1.1250000000000002
+    },
+    {
+      "name": "correlated multiplier t3.0 p1 l-3.0",
+      "passed": true,
+      "lhs": 0.0825291842080429,
+      "rhs": 0.17529972638451335
+    },
+    {
+      "name": "correlated multiplier t3.0 p1 l0.5",
+      "passed": true,
+      "lhs": 1.6709473129879107,
+      "rhs": 2.8143351655958964
+    },
+    {
+      "name": "correlated multiplier t3.0 p1 l4.0",
+      "passed": true,
+      "lhs": 375.9397693588372,
+      "rhs": 2190.0097469091356
+    },
+    {
+      "name": "sphere divergence t3.0 p2",
+      "passed": true,
+      "residual": -4.244461769900565e-15,
+      "comparison_scale": 1.0367914559776983
+    },
+    {
+      "name": "conditional moment t3.0 p2",
+      "passed": true,
+      "lhs": 1.0367914559776983,
+      "rhs": 1.6088753160334526
+    },
+    {
+      "name": "correlated multiplier t3.0 p2 l-3.0",
+      "passed": true,
+      "lhs": 0.1547422203900804,
+      "rhs": 0.40512039247585757
+    },
+    {
+      "name": "correlated multiplier t3.0 p2 l0.5",
+      "passed": true,
+      "lhs": 1.8444656266170618,
+      "rhs": 3.5601127775324177
+    },
+    {
+      "name": "correlated multiplier t3.0 p2 l4.0",
+      "passed": true,
+      "lhs": 251.25251381901296,
+      "rhs": 1532.152666804917
+    },
+    {
+      "name": "sphere divergence t3.0 p3",
+      "passed": true,
+      "residual": -2.2669274057473664e-15,
+      "comparison_scale": 1.5017201326463487
+    },
+    {
+      "name": "conditional moment t3.0 p3",
+      "passed": true,
+      "lhs": 1.5017201326463487,
+      "rhs": 2.721577571941458
+    },
+    {
+      "name": "correlated multiplier t3.0 p3 l-3.0",
+      "passed": true,
+      "lhs": 0.3046487463929708,
+      "rhs": 0.941863967750399
+    },
+    {
+      "name": "correlated multiplier t3.0 p3 l0.5",
+      "passed": true,
+      "lhs": 2.4850811286680106,
+      "rhs": 5.455387979573946
+    },
+    {
+      "name": "correlated multiplier t3.0 p3 l4.0",
+      "passed": true,
+      "lhs": 218.7166598335298,
+      "rhs": 1396.3961728348886
+    },
+    {
+      "name": "sphere divergence t3.0 p4",
+      "passed": true,
+      "residual": -3.680318027634059e-15,
+      "comparison_scale": 2.4275837083938483
+    },
+    {
+      "name": "conditional moment t3.0 p4",
+      "passed": true,
+      "lhs": 2.4275837083938483,
+      "rhs": 5.068305447681427
+    },
+    {
+      "name": "correlated multiplier t3.0 p4 l-3.0",
+      "passed": true,
+      "lhs": 0.6169137114457659,
+      "rhs": 2.190724734275285
+    },
+    {
+      "name": "correlated multiplier t3.0 p4 l0.5",
+      "passed": true,
+      "lhs": 3.789512509080841,
+      "rhs": 9.3808637901727
+    },
+    {
+      "name": "correlated multiplier t3.0 p4 l4.0",
+      "passed": true,
+      "lhs": 228.07015169958947,
+      "rhs": 1524.3319867153377
+    },
+    {
+      "name": "sphere divergence t3.0 p5",
+      "passed": true,
+      "residual": -6.2406890394689225e-15,
+      "comparison_scale": 4.217121976478169
+    },
+    {
+      "name": "conditional moment t3.0 p5",
+      "passed": true,
+      "lhs": 4.217121976478169,
+      "rhs": 10.013782797124625
+    },
+    {
+      "name": "correlated multiplier t3.0 p5 l-3.0",
+      "passed": true,
+      "lhs": 1.2723845298568919,
+      "rhs": 5.0895381194275675
+    },
+    {
+      "name": "correlated multiplier t3.0 p5 l0.5",
+      "passed": true,
+      "lhs": 6.277290860750821,
+      "rhs": 17.372191625080482
+    },
+    {
+      "name": "correlated multiplier t3.0 p5 l4.0",
+      "passed": true,
+      "lhs": 271.2790479830044,
+      "rhs": 1897.3738220403668
+    },
+    {
+      "name": "sphere divergence t3.0 p6",
+      "passed": true,
+      "residual": -9.253931735502345e-15,
+      "comparison_scale": 7.7002518653203795
+    },
+    {
+      "name": "conditional moment t3.0 p6",
+      "passed": true,
+      "lhs": 7.7002518653203795,
+      "rhs": 20.558469635331075
+    },
+    {
+      "name": "correlated multiplier t3.0 p6 l-3.0",
+      "passed": true,
+      "lhs": 2.6583748213081497,
+      "rhs": 11.804801721791897
+    },
+    {
+      "name": "correlated multiplier t3.0 p6 l0.5",
+      "passed": true,
+      "lhs": 11.021247345289225,
+      "rhs": 33.819509435397165
+    },
+    {
+      "name": "correlated multiplier t3.0 p6 l4.0",
+      "passed": true,
+      "lhs": 356.5795387958521,
+      "rhs": 2608.368174045099
+    },
+    {
+      "name": "sphere divergence t3.0 p7",
+      "passed": true,
+      "residual": -1.1430127221871097e-14,
+      "comparison_scale": 14.575585966407308
+    },
+    {
+      "name": "conditional moment t3.0 p7",
+      "passed": true,
+      "lhs": 14.575585966407308,
+      "rhs": 43.31391674242713
+    },
+    {
+      "name": "correlated multiplier t3.0 p7 l-3.0",
+      "passed": true,
+      "lhs": 5.607509388696878,
+      "rhs": 27.3337585018123
+    },
+    {
+      "name": "correlated multiplier t3.0 p7 l0.5",
+      "passed": true,
+      "lhs": 20.190279611189595,
+      "rhs": 68.17813163207111
+    },
+    {
+      "name": "correlated multiplier t3.0 p7 l4.0",
+      "passed": true,
+      "lhs": 506.73190356980604,
+      "rhs": 3873.85818055987
+    },
+    {
+      "name": "sphere divergence t3.0 p8",
+      "passed": true,
+      "residual": -1.0098336802742458e-14,
+      "comparison_scale": 28.341257804048688
+    },
+    {
+      "name": "conditional moment t3.0 p8",
+      "passed": true,
+      "lhs": 28.341257804048688,
+      "rhs": 92.9193605358466
+    },
+    {
+      "name": "correlated multiplier t3.0 p8 l-3.0",
+      "passed": true,
+      "lhs": 11.915957450980866,
+      "rhs": 63.18764887131236
+    },
+    {
+      "name": "correlated multiplier t3.0 p8 l0.5",
+      "passed": true,
+      "lhs": 38.18959944410764,
+      "rhs": 140.94057913472503
+    },
+    {
+      "name": "correlated multiplier t3.0 p8 l4.0",
+      "passed": true,
+      "lhs": 766.3365988752489,
+      "rhs": 6117.29181393742
+    },
+    {
+      "name": "exponential t3.0 tau0.02",
+      "passed": true,
+      "lhs": 1.047276915610792,
+      "rhs": 1.0631465897496433
+    },
+    {
+      "name": "exponential t3.0 tau0.1",
+      "passed": true,
+      "lhs": 1.2709907183394409,
+      "rhs": 1.3975424859373684
+    },
+    {
+      "name": "exponential t3.0 tau0.25",
+      "passed": true,
+      "lhs": 1.9023498829234904,
+      "rhs": 2.8284271247461903
+    },
+    {
+      "name": "exponential t3.0 tau0.4",
+      "passed": true,
+      "lhs": 3.010138914224119,
+      "rhs": 11.180339887498953
+    },
+    {
+      "name": "exponential t3.0 tau0.49",
+      "passed": true,
+      "lhs": 4.073743296416703,
+      "rhs": 353.55339059327326
+    },
+    {
+      "name": "sphere divergence t10.0 p1",
+      "passed": true,
+      "residual": 1.8758258835127606e-13,
+      "comparison_scale": 3.472454057185904
+    },
+    {
+      "name": "conditional moment t10.0 p1",
+      "passed": true,
+      "lhs": 3.472454057185904,
+      "rhs": 3.7499999999999996
+    },
+    {
+      "name": "correlated multiplier t10.0 p1 l-3.0",
+      "passed": true,
+      "lhs": 0.02011793578472245,
+      "rhs": 0.022055394431702603
+    },
+    {
+      "name": "correlated multiplier t10.0 p1 l0.5",
+      "passed": true,
+      "lhs": 8.394475575453178,
+      "rhs": 9.939815016039041
+    },
+    {
+      "name": "correlated multiplier t10.0 p1 l4.0",
+      "passed": true,
+      "lhs": 4590.023985083119,
+      "rhs": 9415.860113104194
+    },
+    {
+      "name": "sphere divergence t10.0 p2",
+      "passed": true,
+      "residual": -3.9184974709449705e-13,
+      "comparison_scale": 19.09693242851803
+    },
+    {
+      "name": "conditional moment t10.0 p2",
+      "passed": true,
+      "lhs": 19.09693242851803,
+      "rhs": 21.7028378574119
+    },
+    {
+      "name": "correlated multiplier t10.0 p2 l-3.0",
+      "passed": true,
+      "lhs": 0.14939396475314587,
+      "rhs": 0.17412261392834869
+    },
+    {
+      "name": "correlated multiplier t10.0 p2 l0.5",
+      "passed": true,
+      "lhs": 44.241460801759125,
+      "rhs": 54.930324159122904
+    },
+    {
+      "name": "correlated multiplier t10.0 p2 l4.0",
+      "passed": true,
+      "lhs": 18712.398690102033,
+      "rhs": 39572.47134561154
+    },
+    {
+      "name": "sphere divergence t10.0 p3",
+      "passed": true,
+      "residual": -1.4663756320310029e-12,
+      "comparison_scale": 139.77038362749198
+    },
+    {
+      "name": "conditional moment t10.0 p3",
+      "passed": true,
+      "lhs": 139.77038362749198,
+      "rhs": 167.09815874953276
+    },
+    {
+      "name": "correlated multiplier t10.0 p3 l-3.0",
+      "passed": true,
+      "lhs": 1.444980521938764,
+      "rhs": 1.7896262022690024
+    },
+    {
+      "name": "correlated multiplier t10.0 p3 l0.5",
+      "passed": true,
+      "lhs": 311.0558262385233,
+      "rhs": 404.85629558594485
+    },
+    {
+      "name": "correlated multiplier t10.0 p3 l4.0",
+      "passed": true,
+      "lhs": 103008.61740954638,
+      "rhs": 224571.35091740242
+    },
+    {
+      "name": "sphere divergence t10.0 p4",
+      "passed": true,
+      "residual": -5.479297571220343e-13,
+      "comparison_scale": 1250.8875596085215
+    },
+    {
+      "name": "conditional moment t10.0 p4",
+      "passed": true,
+      "lhs": 1250.8875596085215,
+      "rhs": 1572.4168158092848
+    },
+    {
+      "name": "correlated multiplier t10.0 p4 l-3.0",
+      "passed": true,
+      "lhs": 16.741951136047643,
+      "rhs": 22.015593248979762
+    },
+    {
+      "name": "correlated multiplier t10.0 p4 l0.5",
+      "passed": true,
+      "lhs": 2680.5148114283766,
+      "rhs": 3655.900368567723
+    },
+    {
+      "name": "correlated multiplier t10.0 p4 l4.0",
+      "passed": true,
+      "lhs": 703297.4325071101,
+      "rhs": 1580580.120370003
+    },
+    {
+      "name": "sphere divergence t10.0 p5",
+      "passed": true,
+      "residual": 3.105471435560503e-11,
+      "comparison_scale": 13020.879245069089
+    },
+    {
+      "name": "conditional moment t10.0 p5",
+      "passed": true,
+      "lhs": 13020.879245069089,
+      "rhs": 17199.703944617173
+    },
+    {
+      "name": "correlated multiplier t10.0 p5 l-3.0",
+      "passed": true,
+      "lhs": 221.26430699403085,
+      "rhs": 308.5935818501014
+    },
+    {
+      "name": "correlated multiplier t10.0 p5 l0.5",
+      "passed": true,
+      "lhs": 26927.808428754182,
+      "rhs": 38466.280820401866
+    },
+    {
+      "name": "correlated multiplier t10.0 p5 l4.0",
+      "passed": true,
+      "lhs": 5662742.682169777,
+      "rhs": 13117842.346844409
+    },
+    {
+      "name": "sphere divergence t10.0 p6",
+      "passed": true,
+      "residual": 2.8237168159250814e-10,
+      "comparison_scale": 152541.6164606057
+    },
+    {
+      "name": "conditional moment t10.0 p6",
+      "passed": true,
+      "lhs": 152541.6164606057,
+      "rhs": 211589.2877323727
+    },
+    {
+      "name": "correlated multiplier t10.0 p6 l-3.0",
+      "passed": true,
+      "lhs": 3231.5361505486626,
+      "rhs": 4773.8575017410985
+    },
+    {
+      "name": "correlated multiplier t10.0 p6 l0.5",
+      "passed": true,
+      "lhs": 305107.8421752159,
+      "rhs": 456231.635001426
+    },
+    {
+      "name": "correlated multiplier t10.0 p6 l4.0",
+      "passed": true,
+      "lhs": 52005754.553393975,
+      "rhs": 124162111.89764816
+    },
+    {
+      "name": "sphere divergence t10.0 p7",
+      "passed": true,
+      "residual": 1.1479599493213755e-09,
+      "comparison_scale": 1965190.4289365413
+    },
+    {
+      "name": "conditional moment t10.0 p7",
+      "passed": true,
+      "lhs": 1965190.4289365413,
+      "rhs": 2860155.308636357
+    },
+    {
+      "name": "correlated multiplier t10.0 p7 l-3.0",
+      "passed": true,
+      "lhs": 51025.625635290955,
+      "rhs": 79725.69048649685
+    },
+    {
+      "name": "correlated multiplier t10.0 p7 l0.5",
+      "passed": true,
+      "lhs": 3809547.575588516,
+      "rhs": 5959000.373620934
+    },
+    {
+      "name": "correlated multiplier t10.0 p7 l4.0",
+      "passed": true,
+      "lhs": 532036419.62260807,
+      "rhs": 1308906914.9232287
+    },
+    {
+      "name": "sphere divergence t10.0 p8",
+      "passed": true,
+      "residual": -1.4289241789811058e-08,
+      "comparison_scale": 27370063.0166014
+    },
+    {
+      "name": "conditional moment t10.0 p8",
+      "passed": true,
+      "lhs": 27370063.0166014,
+      "rhs": 41760296.614901505
+    },
+    {
+      "name": "correlated multiplier t10.0 p8 l-3.0",
+      "passed": true,
+      "lhs": 857407.2432332365,
+      "rhs": 1414699.8245012304
+    },
+    {
+      "name": "correlated multiplier t10.0 p8 l0.5",
+      "passed": true,
+      "lhs": 51522990.55027922,
+      "rhs": 84247070.63926911
+    },
+    {
+      "name": "correlated multiplier t10.0 p8 l4.0",
+      "passed": true,
+      "lhs": 5957359028.716127,
+      "rhs": 15099521891.043058
+    },
+    {
+      "name": "exponential t10.0 tau0.02",
+      "passed": true,
+      "lhs": 1.0581026220449958,
+      "rhs": 1.0631465897496433
+    },
+    {
+      "name": "exponential t10.0 tau0.1",
+      "passed": true,
+      "lhs": 1.3533890126590151,
+      "rhs": 1.3975424859373684
+    },
+    {
+      "name": "exponential t10.0 tau0.25",
+      "passed": true,
+      "lhs": 2.4020218586294355,
+      "rhs": 2.8284271247461903
+    },
+    {
+      "name": "exponential t10.0 tau0.4",
+      "passed": true,
+      "lhs": 5.275235894631638,
+      "rhs": 11.180339887498953
+    },
+    {
+      "name": "exponential t10.0 tau0.49",
+      "passed": true,
+      "lhs": 9.754219789483418,
+      "rhs": 353.55339059327326
+    },
+    {
+      "name": "sphere divergence t30.0 p1",
+      "passed": true,
+      "residual": 3.3115177267006857e-12,
+      "comparison_scale": 10.969941846173437
+    },
+    {
+      "name": "conditional moment t30.0 p1",
+      "passed": true,
+      "lhs": 10.969941846173437,
+      "rhs": 11.249999999999998
+    },
+    {
+      "name": "correlated multiplier t30.0 p1 l-3.0",
+      "passed": true,
+      "lhs": 0.035261144811371464,
+      "rhs": 0.03621061927472047
+    },
+    {
+      "name": "correlated multiplier t30.0 p1 l0.5",
+      "passed": true,
+      "lhs": 28.627178346602108,
+      "rhs": 30.325957716761973
+    },
+    {
+      "name": "correlated multiplier t30.0 p1 l4.0",
+      "passed": true,
+      "lhs": 24004.239855112934,
+      "rhs": 31481.40829798945
+    },
+    {
+      "name": "sphere divergence t30.0 p2",
+      "passed": true,
+      "residual": 1.7707613153561397e-11,
+      "comparison_scale": 197.22507269232273
+    },
+    {
+      "name": "conditional moment t30.0 p2",
+      "passed": true,
+      "lhs": 197.22507269232273,
+      "rhs": 205.68640961575196
+    },
+    {
+      "name": "correlated multiplier t30.0 p2 l-3.0",
+      "passed": true,
+      "lhs": 0.7010787831445119,
+      "rhs": 0.7328240336550896
+    },
+    {
+      "name": "correlated multiplier t30.0 p2 l0.5",
+      "passed": true,
+      "lhs": 506.5929789809113,
+      "rhs": 545.5212087382204
+    },
+    {
+      "name": "correlated multiplier t30.0 p2 l4.0",
+      "passed": true,
+      "lhs": 382692.0588344922,
+      "rhs": 508921.70352776663
+    },
+    {
+      "name": "sphere divergence t30.0 p3",
+      "passed": true,
+      "residual": -7.815970093361102e-11,
+      "comparison_scale": 4881.552436596337
+    },
+    {
+      "name": "conditional moment t30.0 p3",
+      "passed": true,
+      "lhs": 4881.552436596337,
+      "rhs": 5177.158158173472
+    },
+    {
+      "name": "correlated multiplier t30.0 p3 l-3.0",
+      "passed": true,
+      "lhs": 19.154028279127015,
+      "rhs": 20.379021353341773
+    },
+    {
+      "name": "correlated multiplier t30.0 p3 l0.5",
+      "passed": true,
+      "lhs": 12345.19698508949,
+      "rhs": 13513.333466628166
+    },
+    {
+      "name": "correlated multiplier t30.0 p3 l4.0",
+      "passed": true,
+      "lhs": 8416105.65252917,
+      "rhs": 11348737.616416773
+    },
+    {
+      "name": "sphere divergence t30.0 p4",
+      "passed": true,
+      "residual": -5.831907401443459e-09,
+      "comparison_scale": 152762.10187366715
+    },
+    {
+      "name": "conditional moment t30.0 p4",
+      "passed": true,
+      "lhs": 152762.10187366715,
+      "rhs": 164752.39473512638
+    },
+    {
+      "name": "correlated multiplier t30.0 p4 l-3.0",
+      "passed": true,
+      "lhs": 660.3936508469171,
+      "rhs": 715.1721892616133
+    },
+    {
+      "name": "correlated multiplier t30.0 p4 l0.5",
+      "passed": true,
+      "lhs": 380468.36634742236,
+      "rhs": 423339.2612362911
+    },
+    {
+      "name": "correlated multiplier t30.0 p4 l4.0",
+      "passed": true,
+      "lhs": 234473956.2228089,
+      "rhs": 320600354.72465676
+    },
+    {
+      "name": "sphere divergence t30.0 p5",
+      "passed": true,
+      "residual": -1.8102582544088364e-07,
+      "comparison_scale": 5745796.8324423
+    },
+    {
+      "name": "conditional moment t30.0 p5",
+      "passed": true,
+      "lhs": 5745796.8324423,
+      "rhs": 6301436.70228877
+    },
+    {
+      "name": "correlated multiplier t30.0 p5 l-3.0",
+      "passed": true,
+      "lhs": 27315.79308058502,
+      "rhs": 30109.083077908097
+    },
+    {
+      "name": "correlated multiplier t30.0 p5 l0.5",
+      "passed": true,
+      "lhs": 14097283.545429941,
+      "rhs": 15944192.18921063
+    },
+    {
+      "name": "correlated multiplier t30.0 p5 l4.0",
+      "passed": true,
+      "lhs": 7867049978.536722,
+      "rhs": 10907145346.919073
+    },
+    {
+      "name": "sphere divergence t30.0 p6",
+      "passed": true,
+      "residual": -5.142996087670326e-06,
+      "comparison_scale": 251173520.1202584
+    },
+    {
+      "name": "conditional moment t30.0 p6",
+      "passed": true,
+      "lhs": 251173520.1202584,
+      "rhs": 280107595.58156216
+    },
+    {
+      "name": "correlated multiplier t30.0 p6 l-3.0",
+      "passed": true,
+      "lhs": 1310717.7465607966,
+      "rhs": 1470474.9381524534
+    },
+    {
+      "name": "correlated multiplier t30.0 p6 l0.5",
+      "passed": true,
+      "lhs": 607239593.4377098,
+      "rhs": 698093971.874736
+    },
+    {
+      "name": "correlated multiplier t30.0 p6 l4.0",
+      "passed": true,
+      "lhs": 307377042081.27454,
+      "rhs": 432111537553.3612
+    },
+    {
+      "name": "sphere divergence t30.0 p7",
+      "passed": true,
+      "residual": -0.00014130771160125732,
+      "comparison_scale": 12459399799.884274
+    },
+    {
+      "name": "conditional moment t30.0 p7",
+      "passed": true,
+      "lhs": 12459399799.884274,
+      "rhs": 14128510506.764534
+    },
+    {
+      "name": "correlated multiplier t30.0 p7 l-3.0",
+      "passed": true,
+      "lhs": 71236859.15377235,
+      "rhs": 81339971.57406768
+    },
+    {
+      "name": "correlated multiplier t30.0 p7 l0.5",
+      "passed": true,
+      "lhs": 29689478691.240936,
+      "rhs": 34692118321.1692
+    },
+    {
+      "name": "correlated multiplier t30.0 p7 l4.0",
+      "passed": true,
+      "lhs": 13654621273470.066,
+      "rhs": 19463611967888.32
+    },
+    {
+      "name": "sphere divergence t30.0 p8",
+      "passed": true,
+      "residual": -0.00307464599609375,
+      "comparison_scale": 688882748208.2006
+    },
+    {
+      "name": "conditional moment t30.0 p8",
+      "passed": true,
+      "lhs": 688882748208.2006,
+      "rhs": 794286737242.6224
+    },
+    {
+      "name": "correlated multiplier t30.0 p8 l-3.0",
+      "passed": true,
+      "lhs": 4307562115.671249,
+      "rhs": 5005702824.77741
+    },
+    {
+      "name": "correlated multiplier t30.0 p8 l0.5",
+      "passed": true,
+      "lhs": 1618405678750.587,
+      "rhs": 1922099736401.4382
+    },
+    {
+      "name": "correlated multiplier t30.0 p8 l4.0",
+      "passed": true,
+      "lhs": 677418399801371.5,
+      "rhs": 979068065776619.4
+    },
+    {
+      "name": "exponential t30.0 tau0.02",
+      "passed": true,
+      "lhs": 1.0614401251201164,
+      "rhs": 1.0631465897496433
+    },
+    {
+      "name": "exponential t30.0 tau0.1",
+      "passed": true,
+      "lhs": 1.3821032070753916,
+      "rhs": 1.3975424859373684
+    },
+    {
+      "name": "exponential t30.0 tau0.25",
+      "passed": true,
+      "lhs": 2.656518895207839,
+      "rhs": 2.8284271247461903
+    },
+    {
+      "name": "exponential t30.0 tau0.4",
+      "passed": true,
+      "lhs": 7.5955097250060355,
+      "rhs": 11.180339887498953
+    },
+    {
+      "name": "exponential t30.0 tau0.49",
+      "passed": true,
+      "lhs": 21.13044621606973,
+      "rhs": 353.55339059327326
+    },
+    {
+      "name": "sphere divergence t60.0 p1",
+      "passed": true,
+      "residual": 7.014833158791589e-12,
+      "comparison_scale": 22.219340874498965
+    },
+    {
+      "name": "conditional moment t60.0 p1",
+      "passed": true,
+      "lhs": 22.219340874498965,
+      "rhs": 22.5
+    },
+    {
+      "name": "correlated multiplier t60.0 p1 l-3.0",
+      "passed": true,
+      "lhs": 0.06255975624142998,
+      "rhs": 0.06337060936915626
+    },
+    {
+      "name": "correlated multiplier t60.0 p1 l0.5",
+      "passed": true,
+      "lhs": 59.1659567718048,
+      "rhs": 60.90653401234661
+    },
+    {
+      "name": "correlated multiplier t60.0 p1 l4.0",
+      "passed": true,
+      "lhs": 56421.25899111775,
+      "rhs": 64929.96873648082
+    },
+    {
+      "name": "sphere divergence t60.0 p2",
+      "passed": true,
+      "residual": 2.397797516096034e-10,
+      "comparison_scale": 815.9758239071251
+    },
+    {
+      "name": "conditional moment t60.0 p2",
+      "passed": true,
+      "lhs": 815.9758239071251,
+      "rhs": 833.2252827937111
+    },
+    {
+      "name": "correlated multiplier t60.0 p2 l-3.0",
+      "passed": true,
+      "lhs": 2.4156685713603943,
+      "rhs": 2.468077479942015
+    },
+    {
+      "name": "correlated multiplier t60.0 p2 l0.5",
+      "passed": true,
+      "lhs": 2155.2084166006116,
+      "rhs": 2237.0211604435694
+    },
+    {
+      "name": "correlated multiplier t60.0 p2 l4.0",
+      "passed": true,
+      "lhs": 1945047.2639392926,
+      "rhs": 2255430.360929941
+    },
+    {
+      "name": "sphere divergence t60.0 p3",
+      "passed": true,
+      "residual": 6.4956111600622535e-09,
+      "comparison_scale": 41602.390808923075
+    },
+    {
+      "name": "conditional moment t60.0 p3",
+      "passed": true,
+      "lhs": 41602.390808923075,
+      "rhs": 42838.73075512407
+    },
+    {
+      "name": "correlated multiplier t60.0 p3 l-3.0",
+      "passed": true,
+      "lhs": 129.4441995573619,
+      "rhs": 133.39278302768932
+    },
+    {
+      "name": "correlated multiplier t60.0 p3 l0.5",
+      "passed": true,
+      "lhs": 109001.29747514028,
+      "rhs": 114077.69698632407
+    },
+    {
+      "name": "correlated multiplier t60.0 p3 l4.0",
+      "passed": true,
+      "lhs": 93140863.39243492,
+      "rhs": 108826905.04059553
+    },
+    {
+      "name": "sphere divergence t60.0 p4",
+      "passed": true,
+      "residual": 1.2488453648984432e-07,
+      "comparison_scale": 2704403.567331
+    },
+    {
+      "name": "conditional moment t60.0 p4",
+      "passed": true,
+      "lhs": 2704403.567331,
+      "rhs": 2808161.3796023075
+    },
+    {
+      "name": "correlated multiplier t60.0 p4 l-3.0",
+      "passed": true,
+      "lhs": 8839.918672300242,
+      "rhs": 9188.099869056294
+    },
+    {
+      "name": "correlated multiplier t60.0 p4 l0.5",
+      "passed": true,
+      "lhs": 7029369.675756507,
+      "rhs": 7417762.205493619
+    },
+    {
+      "name": "correlated multiplier t60.0 p4 l4.0",
+      "passed": true,
+      "lhs": 5689711543.640371,
+      "rhs": 6698579719.283493
+    },
+    {
+      "name": "sphere divergence t60.0 p5",
+      "passed": true,
+      "residual": -3.1031668186187744e-06,
+      "comparison_scale": 213080539.29179347
+    },
+    {
+      "name": "conditional moment t60.0 p5",
+      "passed": true,
+      "lhs": 213080539.29179347,
+      "rhs": 223113294.3048075
+    },
+    {
+      "name": "correlated multiplier t60.0 p5 l-3.0",
+      "passed": true,
+      "lhs": 731377.2248343487,
+      "rhs": 766735.6800060471
+    },
+    {
+      "name": "correlated multiplier t60.0 p5 l0.5",
+      "passed": true,
+      "lhs": 549477935.0202689,
+      "rhs": 584646243.1503102
+    },
+    {
+      "name": "correlated multiplier t60.0 p5 l4.0",
+      "passed": true,
+      "lhs": 421489525916.6982,
+      "rhs": 500006016709.31714
+    },
+    {
+      "name": "sphere divergence t60.0 p6",
+      "passed": true,
+      "residual": -0.0007078647613525391,
+      "comparison_scale": 19676010936.62326
+    },
+    {
+      "name": "conditional moment t60.0 p6",
+      "passed": true,
+      "lhs": 19676010936.62326,
+      "rhs": 20775352580.949863
+    },
+    {
+      "name": "correlated multiplier t60.0 p6 l-3.0",
+      "passed": true,
+      "lhs": 70886612.6073998,
+      "rhs": 74953873.42792553
+    },
+    {
+      "name": "correlated multiplier t60.0 p6 l0.5",
+      "passed": true,
+      "lhs": 50342544052.04649,
+      "rhs": 54008626798.859116
+    },
+    {
+      "name": "correlated multiplier t60.0 p6 l4.0",
+      "passed": true,
+      "lhs": 36612680582345.53,
+      "rhs": 43763820396473.375
+    },
+    {
+      "name": "sphere divergence t60.0 p7",
+      "passed": true,
+      "residual": -0.07427215576171875,
+      "comparison_scale": 2078979521813.6045
+    },
+    {
+      "name": "conditional moment t60.0 p7",
+      "passed": true,
+      "lhs": 2078979521813.6045,
+      "rhs": 2213551230370.1167
+    },
+    {
+      "name": "correlated multiplier t60.0 p7 l-3.0",
+      "passed": true,
+      "lhs": 7858068858.0935,
+      "rhs": 8380497938.225336
+    },
+    {
+      "name": "correlated multiplier t60.0 p7 l0.5",
+      "passed": true,
+      "lhs": 5278006899160.708,
+      "rhs": 5709281292149.656
+    },
+    {
+      "name": "correlated multiplier t60.0 p7 l4.0",
+      "passed": true,
+      "lhs": 3641020140898260.0,
+      "rhs": 4385318361160272.5
+    },
+    {
+      "name": "sphere divergence t60.0 p8",
+      "passed": true,
+      "residual": -7.0361328125,
+      "comparison_scale": 246885130001350.62
+    },
+    {
+      "name": "conditional moment t60.0 p8",
+      "passed": true,
+      "lhs": 246885130001350.62,
+      "rhs": 265069889031234.56
+    },
+    {
+      "name": "correlated multiplier t60.0 p8 l-3.0",
+      "passed": true,
+      "lhs": 978606846537.1458,
+      "rhs": 1052651487550.6033
+    },
+    {
+      "name": "correlated multiplier t60.0 p8 l0.5",
+      "passed": true,
+      "lhs": 621965465817592.0,
+      "rhs": 678358799801882.8
+    },
+    {
+      "name": "correlated multiplier t60.0 p8 l4.0",
+      "passed": true,
+      "lhs": 4.071672023798431e+17,
+      "rhs": 4.9413323363431315e+17
+    },
+    {
+      "name": "exponential t60.0 tau0.02",
+      "passed": true,
+      "lhs": 1.0622902549897448,
+      "rhs": 1.0631465897496433
+    },
+    {
+      "name": "exponential t60.0 tau0.1",
+      "passed": true,
+      "lhs": 1.3897262355986586,
+      "rhs": 1.3975424859373684
+    },
+    {
+      "name": "exponential t60.0 tau0.25",
+      "passed": true,
+      "lhs": 2.7373168610027823,
+      "rhs": 2.8284271247461903
+    },
+    {
+      "name": "exponential t60.0 tau0.4",
+      "passed": true,
+      "lhs": 8.844373867261208,
+      "rhs": 11.180339887498953
+    },
+    {
+      "name": "exponential t60.0 tau0.49",
+      "passed": true,
+      "lhs": 33.616028824775654,
+      "rhs": 353.55339059327326
+    },
+    {
+      "name": "coupled full score identity 1.0",
+      "passed": true,
+      "lhs": 0.09064994784750108,
+      "rhs": 0.09064994784750101
+    },
+    {
+      "name": "coupled sixth moment 1.0",
+      "passed": true,
+      "lhs": 0.01332721559159442,
+      "rhs": 0.6365326850736013
+    },
+    {
+      "name": "coupled full score bound 1.0",
+      "passed": true,
+      "lhs": 0.09064994784750108,
+      "rhs": 0.6996729935087346
+    },
+    {
+      "name": "full second matrix diagonal 1.0",
+      "passed": true,
+      "lhs": 0.30104904995631615,
+      "rhs": 0.30104904995631615
+    },
+    {
+      "name": "exterior row nonzero 1.0",
+      "passed": true,
+      "exterior": 0.0007080235973317285
+    },
+    {
+      "name": "coupled full score identity 3.0",
+      "passed": true,
+      "lhs": 7.9313095404926575,
+      "rhs": 7.931309540492636
+    },
+    {
+      "name": "coupled sixth moment 3.0",
+      "passed": true,
+      "lhs": 4.256329017090461,
+      "rhs": 23.084770282084826
+    },
+    {
+      "name": "coupled full score bound 3.0",
+      "passed": true,
+      "lhs": 7.9313095404926575,
+      "rhs": 22.48994383567992
+    },
+    {
+      "name": "full second matrix diagonal 3.0",
+      "passed": true,
+      "lhs": 14.995182526711458,
+      "rhs": 14.995182526711458
+    },
+    {
+      "name": "exterior row nonzero 3.0",
+      "passed": true,
+      "exterior": 0.03535845392004181
+    },
+    {
+      "name": "coupled full score identity 8.0",
+      "passed": true,
+      "lhs": 177.59095395229951,
+      "rhs": 177.59095395229775
+    },
+    {
+      "name": "coupled sixth moment 8.0",
+      "passed": true,
+      "lhs": 131.17728692872598,
+      "rhs": 267.9130005908199
+    },
+    {
+      "name": "coupled full score bound 8.0",
+      "passed": true,
+      "lhs": 177.59095395229951,
+      "rhs": 306.5421238069898
+    },
+    {
+      "name": "full second matrix diagonal 8.0",
+      "passed": true,
+      "lhs": 300.79439467545706,
+      "rhs": 300.79439467545706
+    },
+    {
+      "name": "exterior row nonzero 8.0",
+      "passed": true,
+      "exterior": 0.13142349230079198
+    },
+    {
+      "name": "coupled full score identity 15.0",
+      "passed": true,
+      "lhs": 371.3587355949825,
+      "rhs": 371.358735594979
+    },
+    {
+      "name": "coupled sixth moment 15.0",
+      "passed": true,
+      "lhs": 284.5888826714843,
+      "rhs": 1050.3755830620182
+    },
+    {
+      "name": "coupled full score bound 15.0",
+      "passed": true,
+      "lhs": 371.3587355949825,
+      "rhs": 858.5938495882029
+    },
+    {
+      "name": "full second matrix diagonal 15.0",
+      "passed": true,
+      "lhs": 621.0875788323218,
+      "rhs": 621.0875788323218
+    },
+    {
+      "name": "exterior row nonzero 15.0",
+      "passed": true,
+      "exterior": 0.3837495180672242
+    },
+    {
+      "name": "coupled full score identity 0.5",
+      "passed": true,
+      "lhs": 0.0027263769616323284,
+      "rhs": 0.0027263769616323267
+    },
+    {
+      "name": "coupled sixth moment 0.5",
+      "passed": true,
+      "lhs": 8.297590636977461e-05,
+      "rhs": 0.03007033508211439
+    },
+    {
+      "name": "coupled full score bound 0.5",
+      "passed": true,
+      "lhs": 0.0027263769616323284,
+      "rhs": 0.05450005210635423
+    },
+    {
+      "name": "full second matrix diagonal 0.5",
+      "passed": true,
+      "lhs": 0.027965887315793417,
+      "rhs": 0.027965887315793417
+    },
+    {
+      "name": "exterior row nonzero 0.5",
+      "passed": true,
+      "exterior": 5.360940518040882e-05
+    },
+    {
+      "name": "original trace constants 0",
+      "passed": true,
+      "lhs": 167.14307035917523,
+      "rhs": 167.1430703591753
+    },
+    {
+      "name": "coarse trace budget 0",
+      "passed": true,
+      "lhs": 167.1430703591753,
+      "rhs": 344.41105058919413
+    },
+    {
+      "name": "original trace constants 1",
+      "passed": true,
+      "lhs": 8216301.423985516,
+      "rhs": 8216301.423985512
+    },
+    {
+      "name": "coarse trace budget 1",
+      "passed": true,
+      "lhs": 8216301.423985512,
+      "rhs": 15177991.033620011
+    },
+    {
+      "name": "original trace constants 2",
+      "passed": true,
+      "lhs": 16540295.671306904,
+      "rhs": 16540295.671306904
+    },
+    {
+      "name": "coarse trace budget 2",
+      "passed": true,
+      "lhs": 16540295.671306904,
+      "rhs": 59258817.68406758
+    },
+    {
+      "name": "original trace constants 3",
+      "passed": true,
+      "lhs": 634.3024288845313,
+      "rhs": 634.3024288845317
+    },
+    {
+      "name": "coarse trace budget 3",
+      "passed": true,
+      "lhs": 634.3024288845317,
+      "rhs": 1886.6929245277945
+    },
+    {
+      "name": "original trace constants 4",
+      "passed": true,
+      "lhs": 158.41225359212504,
+      "rhs": 158.4122535921251
+    },
+    {
+      "name": "coarse trace budget 4",
+      "passed": true,
+      "lhs": 158.4122535921251,
+      "rhs": 540.6528026020449
+    },
+    {
+      "name": "original trace constants 5",
+      "passed": true,
+      "lhs": 1609.2862732864296,
+      "rhs": 1609.2862732864294
+    },
+    {
+      "name": "coarse trace budget 5",
+      "passed": true,
+      "lhs": 1609.2862732864294,
+      "rhs": 4091.8350718886095
+    },
+    {
+      "name": "original trace constants 6",
+      "passed": true,
+      "lhs": 74679.80142586799,
+      "rhs": 74679.80142586796
+    },
+    {
+      "name": "coarse trace budget 6",
+      "passed": true,
+      "lhs": 74679.80142586796,
+      "rhs": 143419.068679536
+    },
+    {
+      "name": "original trace constants 7",
+      "passed": true,
+      "lhs": 1357748.7894342288,
+      "rhs": 1357748.7894342288
+    },
+    {
+      "name": "coarse trace budget 7",
+      "passed": true,
+      "lhs": 1357748.7894342288,
+      "rhs": 2968833.692485254
+    },
+    {
+      "name": "original trace constants 8",
+      "passed": true,
+      "lhs": 15049.591637966456,
+      "rhs": 15049.591637966454
+    },
+    {
+      "name": "coarse trace budget 8",
+      "passed": true,
+      "lhs": 15049.591637966454,
+      "rhs": 33598.18220173756
+    },
+    {
+      "name": "original trace constants 9",
+      "passed": true,
+      "lhs": 8924.815096193894,
+      "rhs": 8924.815096193897
+    },
+    {
+      "name": "coarse trace budget 9",
+      "passed": true,
+      "lhs": 8924.815096193897,
+      "rhs": 16611.533085016323
+    },
+    {
+      "name": "original trace constants 10",
+      "passed": true,
+      "lhs": 940.3726920273122,
+      "rhs": 940.3726920273125
+    },
+    {
+      "name": "coarse trace budget 10",
+      "passed": true,
+      "lhs": 940.3726920273125,
+      "rhs": 2259.644319462267
+    },
+    {
+      "name": "original trace constants 11",
+      "passed": true,
+      "lhs": 28234383.932121154,
+      "rhs": 28234383.932121158
+    },
+    {
+      "name": "coarse trace budget 11",
+      "passed": true,
+      "lhs": 28234383.932121158,
+      "rhs": 71215097.77054083
+    },
+    {
+      "name": "original trace constants 12",
+      "passed": true,
+      "lhs": 23.90857499497365,
+      "rhs": 23.908574994973655
+    },
+    {
+      "name": "coarse trace budget 12",
+      "passed": true,
+      "lhs": 23.908574994973655,
+      "rhs": 44.257146684562315
+    },
+    {
+      "name": "original trace constants 13",
+      "passed": true,
+      "lhs": 65648462.23766753,
+      "rhs": 65648462.23766753
+    },
+    {
+      "name": "coarse trace budget 13",
+      "passed": true,
+      "lhs": 65648462.23766753,
+      "rhs": 124839940.67816977
+    },
+    {
+      "name": "original trace constants 14",
+      "passed": true,
+      "lhs": 14074.297869449196,
+      "rhs": 14074.297869449201
+    },
+    {
+      "name": "coarse trace budget 14",
+      "passed": true,
+      "lhs": 14074.297869449201,
+      "rhs": 67474.89228727759
+    },
+    {
+      "name": "original trace constants 15",
+      "passed": true,
+      "lhs": 2332.2002488681333,
+      "rhs": 2332.2002488681337
+    },
+    {
+      "name": "coarse trace budget 15",
+      "passed": true,
+      "lhs": 2332.2002488681337,
+      "rhs": 11270.802531649111
+    },
+    {
+      "name": "original trace constants 16",
+      "passed": true,
+      "lhs": 53748.62443350903,
+      "rhs": 53748.624433509016
+    },
+    {
+      "name": "coarse trace budget 16",
+      "passed": true,
+      "lhs": 53748.624433509016,
+      "rhs": 113820.25002524961
+    },
+    {
+      "name": "original trace constants 17",
+      "passed": true,
+      "lhs": 85.11686772539794,
+      "rhs": 85.11686772539792
+    },
+    {
+      "name": "coarse trace budget 17",
+      "passed": true,
+      "lhs": 85.11686772539792,
+      "rhs": 188.61171266705816
+    },
+    {
+      "name": "original trace constants 18",
+      "passed": true,
+      "lhs": 7036.8414622487835,
+      "rhs": 7036.841462248787
+    },
+    {
+      "name": "coarse trace budget 18",
+      "passed": true,
+      "lhs": 7036.841462248787,
+      "rhs": 17597.333810361557
+    },
+    {
+      "name": "original trace constants 19",
+      "passed": true,
+      "lhs": 426.530981775091,
+      "rhs": 426.5309817750911
+    },
+    {
+      "name": "coarse trace budget 19",
+      "passed": true,
+      "lhs": 426.5309817750911,
+      "rhs": 851.1524294094727
+    },
+    {
+      "name": "original trace constants 20",
+      "passed": true,
+      "lhs": 355.3713330392352,
+      "rhs": 355.3713330392351
+    },
+    {
+      "name": "coarse trace budget 20",
+      "passed": true,
+      "lhs": 355.3713330392351,
+      "rhs": 660.1248655216666
+    },
+    {
+      "name": "original trace constants 21",
+      "passed": true,
+      "lhs": 1307.839726217469,
+      "rhs": 1307.8397262174694
+    },
+    {
+      "name": "coarse trace budget 21",
+      "passed": true,
+      "lhs": 1307.8397262174694,
+      "rhs": 3268.3296081154517
+    },
+    {
+      "name": "original trace constants 22",
+      "passed": true,
+      "lhs": 599690.3992824241,
+      "rhs": 599690.3992824242
+    },
+    {
+      "name": "coarse trace budget 22",
+      "passed": true,
+      "lhs": 599690.3992824242,
+      "rhs": 1841093.9459905415
+    },
+    {
+      "name": "original trace constants 23",
+      "passed": true,
+      "lhs": 23598566.65056549,
+      "rhs": 23598566.650565498
+    },
+    {
+      "name": "coarse trace budget 23",
+      "passed": true,
+      "lhs": 23598566.650565498,
+      "rhs": 64895947.566018686
+    },
+    {
+      "name": "original trace constants 24",
+      "passed": true,
+      "lhs": 6453.593579840618,
+      "rhs": 6453.59357984062
+    },
+    {
+      "name": "coarse trace budget 24",
+      "passed": true,
+      "lhs": 6453.59357984062,
+      "rhs": 12093.073108431185
+    },
+    {
+      "name": "original trace constants 25",
+      "passed": true,
+      "lhs": 3.3649801830986856,
+      "rhs": 3.3649801830986856
+    },
+    {
+      "name": "coarse trace budget 25",
+      "passed": true,
+      "lhs": 3.3649801830986856,
+      "rhs": 6.688308437368447
+    },
+    {
+      "name": "original trace constants 26",
+      "passed": true,
+      "lhs": 4017.340601676077,
+      "rhs": 4017.3406016760755
+    },
+    {
+      "name": "coarse trace budget 26",
+      "passed": true,
+      "lhs": 4017.3406016760755,
+      "rhs": 7919.569069404622
+    },
+    {
+      "name": "original trace constants 27",
+      "passed": true,
+      "lhs": 24.000223847734794,
+      "rhs": 24.000223847734794
+    },
+    {
+      "name": "coarse trace budget 27",
+      "passed": true,
+      "lhs": 24.000223847734794,
+      "rhs": 45.00014066698986
+    },
+    {
+      "name": "original trace constants 28",
+      "passed": true,
+      "lhs": 23.955852319929296,
+      "rhs": 23.955852319929296
+    },
+    {
+      "name": "coarse trace budget 28",
+      "passed": true,
+      "lhs": 23.955852319929296,
+      "rhs": 55.518004867114115
+    },
+    {
+      "name": "original trace constants 29",
+      "passed": true,
+      "lhs": 3286750.390034778,
+      "rhs": 3286750.3900347785
+    },
+    {
+      "name": "coarse trace budget 29",
+      "passed": true,
+      "lhs": 3286750.3900347785,
+      "rhs": 6224570.232030283
+    },
+    {
+      "name": "original trace constants 30",
+      "passed": true,
+      "lhs": 167047.64807476357,
+      "rhs": 167047.64807476354
+    },
+    {
+      "name": "coarse trace budget 30",
+      "passed": true,
+      "lhs": 167047.64807476354,
+      "rhs": 309144.0057511437
+    },
+    {
+      "name": "original trace constants 31",
+      "passed": true,
+      "lhs": 1987768.423566622,
+      "rhs": 1987768.423566622
+    },
+    {
+      "name": "coarse trace budget 31",
+      "passed": true,
+      "lhs": 1987768.423566622,
+      "rhs": 6972066.680815375
+    },
+    {
+      "name": "original trace constants 32",
+      "passed": true,
+      "lhs": 478276.12067491765,
+      "rhs": 478276.12067491753
+    },
+    {
+      "name": "coarse trace budget 32",
+      "passed": true,
+      "lhs": 478276.12067491753,
+      "rhs": 885108.6876855704
+    },
+    {
+      "name": "original trace constants 33",
+      "passed": true,
+      "lhs": 8190.972838564597,
+      "rhs": 8190.9728385645985
+    },
+    {
+      "name": "coarse trace budget 33",
+      "passed": true,
+      "lhs": 8190.9728385645985,
+      "rhs": 16898.27503252133
+    },
+    {
+      "name": "original trace constants 34",
+      "passed": true,
+      "lhs": 6573.598961739727,
+      "rhs": 6573.598961739726
+    },
+    {
+      "name": "coarse trace budget 34",
+      "passed": true,
+      "lhs": 6573.598961739726,
+      "rhs": 18373.184895759085
+    },
+    {
+      "name": "original trace constants 35",
+      "passed": true,
+      "lhs": 171337.80083629122,
+      "rhs": 171337.8008362912
+    },
+    {
+      "name": "coarse trace budget 35",
+      "passed": true,
+      "lhs": 171337.8008362912,
+      "rhs": 325160.9108887527
+    },
+    {
+      "name": "original trace constants 36",
+      "passed": true,
+      "lhs": 10.464315216731263,
+      "rhs": 10.464315216731258
+    },
+    {
+      "name": "coarse trace budget 36",
+      "passed": true,
+      "lhs": 10.464315216731258,
+      "rhs": 27.662018417636002
+    },
+    {
+      "name": "original trace constants 37",
+      "passed": true,
+      "lhs": 39704.184239767135,
+      "rhs": 39704.18423976715
+    },
+    {
+      "name": "coarse trace budget 37",
+      "passed": true,
+      "lhs": 39704.18423976715,
+      "rhs": 598791.9173762327
+    },
+    {
+      "name": "original trace constants 38",
+      "passed": true,
+      "lhs": 410.2554106897001,
+      "rhs": 410.25541068969994
+    },
+    {
+      "name": "coarse trace budget 38",
+      "passed": true,
+      "lhs": 410.25541068969994,
+      "rhs": 1216.8482896263627
+    },
+    {
+      "name": "original trace constants 39",
+      "passed": true,
+      "lhs": 103.08199490094039,
+      "rhs": 103.08199490094033
+    },
+    {
+      "name": "coarse trace budget 39",
+      "passed": true,
+      "lhs": 103.08199490094033,
+      "rhs": 1086.3938228519908
+    },
+    {
+      "name": "original trace constants 40",
+      "passed": true,
+      "lhs": 259451.05806200425,
+      "rhs": 259451.05806200425
+    },
+    {
+      "name": "coarse trace budget 40",
+      "passed": true,
+      "lhs": 259451.05806200425,
+      "rhs": 480476.8689014742
+    },
+    {
+      "name": "original trace constants 41",
+      "passed": true,
+      "lhs": 6095.104631809628,
+      "rhs": 6095.104631809625
+    },
+    {
+      "name": "coarse trace budget 41",
+      "passed": true,
+      "lhs": 6095.104631809625,
+      "rhs": 11261.811614103883
+    },
+    {
+      "name": "original trace constants 42",
+      "passed": true,
+      "lhs": 34.02734551526868,
+      "rhs": 34.027345515268664
+    },
+    {
+      "name": "coarse trace budget 42",
+      "passed": true,
+      "lhs": 34.027345515268664,
+      "rhs": 63.8949621495691
+    },
+    {
+      "name": "original trace constants 43",
+      "passed": true,
+      "lhs": 31997.018242732447,
+      "rhs": 31997.018242732447
+    },
+    {
+      "name": "coarse trace budget 43",
+      "passed": true,
+      "lhs": 31997.018242732447,
+      "rhs": 124025.78309851215
+    },
+    {
+      "name": "original trace constants 44",
+      "passed": true,
+      "lhs": 804532.1828358475,
+      "rhs": 804532.1828358477
+    },
+    {
+      "name": "coarse trace budget 44",
+      "passed": true,
+      "lhs": 804532.1828358477,
+      "rhs": 3673464.6294105332
+    },
+    {
+      "name": "original trace constants 45",
+      "passed": true,
+      "lhs": 482.68238755780413,
+      "rhs": 482.6823875578043
+    },
+    {
+      "name": "coarse trace budget 45",
+      "passed": true,
+      "lhs": 482.6823875578043,
+      "rhs": 1065.2571190788021
+    },
+    {
+      "name": "original trace constants 46",
+      "passed": true,
+      "lhs": 584071.444041219,
+      "rhs": 584071.444041219
+    },
+    {
+      "name": "coarse trace budget 46",
+      "passed": true,
+      "lhs": 584071.444041219,
+      "rhs": 4676025.445854774
+    },
+    {
+      "name": "original trace constants 47",
+      "passed": true,
+      "lhs": 3517.4694380769074,
+      "rhs": 3517.4694380769092
+    },
+    {
+      "name": "coarse trace budget 47",
+      "passed": true,
+      "lhs": 3517.4694380769092,
+      "rhs": 6753.27207488901
+    },
+    {
+      "name": "original trace constants 48",
+      "passed": true,
+      "lhs": 275.6531502037317,
+      "rhs": 275.6531502037316
+    },
+    {
+      "name": "coarse trace budget 48",
+      "passed": true,
+      "lhs": 275.6531502037316,
+      "rhs": 554.8258142568012
+    },
+    {
+      "name": "original trace constants 49",
+      "passed": true,
+      "lhs": 9405879.350798113,
+      "rhs": 9405879.350798115
+    },
+    {
+      "name": "coarse trace budget 49",
+      "passed": true,
+      "lhs": 9405879.350798115,
+      "rhs": 120897937.27015741
+    },
+    {
+      "name": "original trace constants 50",
+      "passed": true,
+      "lhs": 740319.6081396743,
+      "rhs": 740319.6081396742
+    },
+    {
+      "name": "coarse trace budget 50",
+      "passed": true,
+      "lhs": 740319.6081396742,
+      "rhs": 2869777.1923863664
+    },
+    {
+      "name": "original trace constants 51",
+      "passed": true,
+      "lhs": 79800.73065803805,
+      "rhs": 79800.73065803808
+    },
+    {
+      "name": "coarse trace budget 51",
+      "passed": true,
+      "lhs": 79800.73065803808,
+      "rhs": 149455.9361646174
+    },
+    {
+      "name": "original trace constants 52",
+      "passed": true,
+      "lhs": 6962.123985698636,
+      "rhs": 6962.123985698634
+    },
+    {
+      "name": "coarse trace budget 52",
+      "passed": true,
+      "lhs": 6962.123985698634,
+      "rhs": 13135.343033361327
+    },
+    {
+      "name": "original trace constants 53",
+      "passed": true,
+      "lhs": 143811.7371621708,
+      "rhs": 143811.73716217084
+    },
+    {
+      "name": "coarse trace budget 53",
+      "passed": true,
+      "lhs": 143811.73716217084,
+      "rhs": 265723.0910024218
+    },
+    {
+      "name": "original trace constants 54",
+      "passed": true,
+      "lhs": 24358445.098843377,
+      "rhs": 24358445.09884337
+    },
+    {
+      "name": "coarse trace budget 54",
+      "passed": true,
+      "lhs": 24358445.09884337,
+      "rhs": 59036992.764076136
+    },
+    {
+      "name": "original trace constants 55",
+      "passed": true,
+      "lhs": 428.919445019056,
+      "rhs": 428.91944501905635
+    },
+    {
+      "name": "coarse trace budget 55",
+      "passed": true,
+      "lhs": 428.91944501905635,
+      "rhs": 6566.86111413955
+    },
+    {
+      "name": "original trace constants 56",
+      "passed": true,
+      "lhs": 49139.96033602573,
+      "rhs": 49139.96033602571
+    },
+    {
+      "name": "coarse trace budget 56",
+      "passed": true,
+      "lhs": 49139.96033602571,
+      "rhs": 333441.20342758653
+    },
+    {
+      "name": "original trace constants 57",
+      "passed": true,
+      "lhs": 249.36759688622297,
+      "rhs": 249.367596886223
+    },
+    {
+      "name": "coarse trace budget 57",
+      "passed": true,
+      "lhs": 249.367596886223,
+      "rhs": 460.69912445976064
+    },
+    {
+      "name": "original trace constants 58",
+      "passed": true,
+      "lhs": 7133.892924094337,
+      "rhs": 7133.892924094338
+    },
+    {
+      "name": "coarse trace budget 58",
+      "passed": true,
+      "lhs": 7133.892924094338,
+      "rhs": 15664.900608376185
+    },
+    {
+      "name": "original trace constants 59",
+      "passed": true,
+      "lhs": 11532.86248850547,
+      "rhs": 11532.862488505476
+    },
+    {
+      "name": "coarse trace budget 59",
+      "passed": true,
+      "lhs": 11532.862488505476,
+      "rhs": 27220.817606654593
+    },
+    {
+      "name": "original trace constants 60",
+      "passed": true,
+      "lhs": 986234.1569360051,
+      "rhs": 986234.156936005
+    },
+    {
+      "name": "coarse trace budget 60",
+      "passed": true,
+      "lhs": 986234.156936005,
+      "rhs": 2414328.487993302
+    },
+    {
+      "name": "original trace constants 61",
+      "passed": true,
+      "lhs": 3.6533870940299296,
+      "rhs": 3.6533870940299304
+    },
+    {
+      "name": "coarse trace budget 61",
+      "passed": true,
+      "lhs": 3.6533870940299304,
+      "rhs": 7.5867216108149576
+    },
+    {
+      "name": "original trace constants 62",
+      "passed": true,
+      "lhs": 1041.0291616658233,
+      "rhs": 1041.0291616658235
+    },
+    {
+      "name": "coarse trace budget 62",
+      "passed": true,
+      "lhs": 1041.0291616658235,
+      "rhs": 2281.2653527783996
+    },
+    {
+      "name": "original trace constants 63",
+      "passed": true,
+      "lhs": 6508.731134705631,
+      "rhs": 6508.731134705631
+    },
+    {
+      "name": "coarse trace budget 63",
+      "passed": true,
+      "lhs": 6508.731134705631,
+      "rhs": 16408.33783795994
+    },
+    {
+      "name": "original trace constants 64",
+      "passed": true,
+      "lhs": 3503.655129389495,
+      "rhs": 3503.6551293894945
+    },
+    {
+      "name": "coarse trace budget 64",
+      "passed": true,
+      "lhs": 3503.6551293894945,
+      "rhs": 7470.562054833834
+    },
+    {
+      "name": "original trace constants 65",
+      "passed": true,
+      "lhs": 110.09799046708616,
+      "rhs": 110.09799046708615
+    },
+    {
+      "name": "coarse trace budget 65",
+      "passed": true,
+      "lhs": 110.09799046708615,
+      "rhs": 290.4530881417043
+    },
+    {
+      "name": "original trace constants 66",
+      "passed": true,
+      "lhs": 87609.30622716516,
+      "rhs": 87609.30622716514
+    },
+    {
+      "name": "coarse trace budget 66",
+      "passed": true,
+      "lhs": 87609.30622716514,
+      "rhs": 166583.37105666945
+    },
+    {
+      "name": "original trace constants 67",
+      "passed": true,
+      "lhs": 1264.1299065774174,
+      "rhs": 1264.1299065774176
+    },
+    {
+      "name": "coarse trace budget 67",
+      "passed": true,
+      "lhs": 1264.1299065774176,
+      "rhs": 2660.357267117786
+    },
+    {
+      "name": "original trace constants 68",
+      "passed": true,
+      "lhs": 79.81268828632676,
+      "rhs": 79.81268828632675
+    },
+    {
+      "name": "coarse trace budget 68",
+      "passed": true,
+      "lhs": 79.81268828632675,
+      "rhs": 148.35828043559093
+    },
+    {
+      "name": "original trace constants 69",
+      "passed": true,
+      "lhs": 792.3923574602672,
+      "rhs": 792.3923574602675
+    },
+    {
+      "name": "coarse trace budget 69",
+      "passed": true,
+      "lhs": 792.3923574602675,
+      "rhs": 2962.8899789404127
+    },
+    {
+      "name": "original trace constants 70",
+      "passed": true,
+      "lhs": 170.37198042194132,
+      "rhs": 170.37198042194132
+    },
+    {
+      "name": "coarse trace budget 70",
+      "passed": true,
+      "lhs": 170.37198042194132,
+      "rhs": 371.03749821679696
+    },
+    {
+      "name": "original trace constants 71",
+      "passed": true,
+      "lhs": 386.8221702067359,
+      "rhs": 386.82217020673596
+    },
+    {
+      "name": "coarse trace budget 71",
+      "passed": true,
+      "lhs": 386.82217020673596,
+      "rhs": 1117.4017605353226
+    },
+    {
+      "name": "original trace constants 72",
+      "passed": true,
+      "lhs": 67544.66447955398,
+      "rhs": 67544.664479554
+    },
+    {
+      "name": "coarse trace budget 72",
+      "passed": true,
+      "lhs": 67544.664479554,
+      "rhs": 171850.06243773826
+    },
+    {
+      "name": "original trace constants 73",
+      "passed": true,
+      "lhs": 61075.50900286,
+      "rhs": 61075.50900286001
+    },
+    {
+      "name": "coarse trace budget 73",
+      "passed": true,
+      "lhs": 61075.50900286001,
+      "rhs": 274870.51361921616
+    },
+    {
+      "name": "original trace constants 74",
+      "passed": true,
+      "lhs": 4664331.697766738,
+      "rhs": 4664331.697766739
+    },
+    {
+      "name": "coarse trace budget 74",
+      "passed": true,
+      "lhs": 4664331.697766739,
+      "rhs": 12513494.431712026
+    },
+    {
+      "name": "original trace constants 75",
+      "passed": true,
+      "lhs": 1081.6474064190186,
+      "rhs": 1081.647406419019
+    },
+    {
+      "name": "coarse trace budget 75",
+      "passed": true,
+      "lhs": 1081.647406419019,
+      "rhs": 4027.625653197524
+    },
+    {
+      "name": "original trace constants 76",
+      "passed": true,
+      "lhs": 387166086.85890925,
+      "rhs": 387166086.85890937
+    },
+    {
+      "name": "coarse trace budget 76",
+      "passed": true,
+      "lhs": 387166086.85890937,
+      "rhs": 716197042.3054817
+    },
+    {
+      "name": "original trace constants 77",
+      "passed": true,
+      "lhs": 1458.2969598346085,
+      "rhs": 1458.2969598346085
+    },
+    {
+      "name": "coarse trace budget 77",
+      "passed": true,
+      "lhs": 1458.2969598346085,
+      "rhs": 4177.061743481258
+    },
+    {
+      "name": "original trace constants 78",
+      "passed": true,
+      "lhs": 43031.10986105322,
+      "rhs": 43031.109861053235
+    },
+    {
+      "name": "coarse trace budget 78",
+      "passed": true,
+      "lhs": 43031.109861053235,
+      "rhs": 98134.46053516693
+    },
+    {
+      "name": "original trace constants 79",
+      "passed": true,
+      "lhs": 10619.752221736702,
+      "rhs": 10619.752221736702
+    },
+    {
+      "name": "coarse trace budget 79",
+      "passed": true,
+      "lhs": 10619.752221736702,
+      "rhs": 19920.422837368296
+    },
+    {
+      "name": "original trace constants 80",
+      "passed": true,
+      "lhs": 3547.11223353591,
+      "rhs": 3547.1122335359105
+    },
+    {
+      "name": "coarse trace budget 80",
+      "passed": true,
+      "lhs": 3547.1122335359105,
+      "rhs": 6560.410983408834
+    },
+    {
+      "name": "original trace constants 81",
+      "passed": true,
+      "lhs": 2582562.593817563,
+      "rhs": 2582562.593817563
+    },
+    {
+      "name": "coarse trace budget 81",
+      "passed": true,
+      "lhs": 2582562.593817563,
+      "rhs": 6645945.766971362
+    },
+    {
+      "name": "original trace constants 82",
+      "passed": true,
+      "lhs": 1.6752177178779075,
+      "rhs": 1.6752177178779073
+    },
+    {
+      "name": "coarse trace budget 82",
+      "passed": true,
+      "lhs": 1.6752177178779073,
+      "rhs": 3.656887245844246
+    },
+    {
+      "name": "original trace constants 83",
+      "passed": true,
+      "lhs": 31269.133952154472,
+      "rhs": 31269.133952154476
+    },
+    {
+      "name": "coarse trace budget 83",
+      "passed": true,
+      "lhs": 31269.133952154476,
+      "rhs": 60957.87079050545
+    },
+    {
+      "name": "original trace constants 84",
+      "passed": true,
+      "lhs": 991.5269864645103,
+      "rhs": 991.5269864645102
+    },
+    {
+      "name": "coarse trace budget 84",
+      "passed": true,
+      "lhs": 991.5269864645102,
+      "rhs": 1997.1634242344658
+    },
+    {
+      "name": "original trace constants 85",
+      "passed": true,
+      "lhs": 12.825316474327474,
+      "rhs": 12.825316474327474
+    },
+    {
+      "name": "coarse trace budget 85",
+      "passed": true,
+      "lhs": 12.825316474327474,
+      "rhs": 36.90379953641769
+    },
+    {
+      "name": "original trace constants 86",
+      "passed": true,
+      "lhs": 611.6677667390234,
+      "rhs": 611.6677667390234
+    },
+    {
+      "name": "coarse trace budget 86",
+      "passed": true,
+      "lhs": 611.6677667390234,
+      "rhs": 1180.9606267760284
+    },
+    {
+      "name": "original trace constants 87",
+      "passed": true,
+      "lhs": 1727799.2632523496,
+      "rhs": 1727799.2632523498
+    },
+    {
+      "name": "coarse trace budget 87",
+      "passed": true,
+      "lhs": 1727799.2632523498,
+      "rhs": 14355444.452569483
+    },
+    {
+      "name": "original trace constants 88",
+      "passed": true,
+      "lhs": 164912.86115044815,
+      "rhs": 164912.86115044818
+    },
+    {
+      "name": "coarse trace budget 88",
+      "passed": true,
+      "lhs": 164912.86115044818,
+      "rhs": 623267.1278241472
+    },
+    {
+      "name": "original trace constants 89",
+      "passed": true,
+      "lhs": 3.178767809866154,
+      "rhs": 3.1787678098661525
+    },
+    {
+      "name": "coarse trace budget 89",
+      "passed": true,
+      "lhs": 3.1787678098661525,
+      "rhs": 6.485267601908524
+    },
+    {
+      "name": "original trace constants 90",
+      "passed": true,
+      "lhs": 1.6316550620980392,
+      "rhs": 1.631655062098039
+    },
+    {
+      "name": "coarse trace budget 90",
+      "passed": true,
+      "lhs": 1.631655062098039,
+      "rhs": 4.448853044218936
+    },
+    {
+      "name": "original trace constants 91",
+      "passed": true,
+      "lhs": 2421403.896722278,
+      "rhs": 2421403.8967222786
+    },
+    {
+      "name": "coarse trace budget 91",
+      "passed": true,
+      "lhs": 2421403.8967222786,
+      "rhs": 4559576.78508332
+    },
+    {
+      "name": "original trace constants 92",
+      "passed": true,
+      "lhs": 119680.57010044124,
+      "rhs": 119680.57010044128
+    },
+    {
+      "name": "coarse trace budget 92",
+      "passed": true,
+      "lhs": 119680.57010044128,
+      "rhs": 614229.4954696794
+    },
+    {
+      "name": "original trace constants 93",
+      "passed": true,
+      "lhs": 2480784.2187015293,
+      "rhs": 2480784.218701529
+    },
+    {
+      "name": "coarse trace budget 93",
+      "passed": true,
+      "lhs": 2480784.218701529,
+      "rhs": 7503288.845397042
+    },
+    {
+      "name": "original trace constants 94",
+      "passed": true,
+      "lhs": 84.5282217927019,
+      "rhs": 84.52822179270187
+    },
+    {
+      "name": "coarse trace budget 94",
+      "passed": true,
+      "lhs": 84.52822179270187,
+      "rhs": 279.5678588667196
+    },
+    {
+      "name": "original trace constants 95",
+      "passed": true,
+      "lhs": 5995270.822288772,
+      "rhs": 5995270.822288771
+    },
+    {
+      "name": "coarse trace budget 95",
+      "passed": true,
+      "lhs": 5995270.822288771,
+      "rhs": 14982868.610191474
+    },
+    {
+      "name": "original trace constants 96",
+      "passed": true,
+      "lhs": 2516703.4023931287,
+      "rhs": 2516703.4023931287
+    },
+    {
+      "name": "coarse trace budget 96",
+      "passed": true,
+      "lhs": 2516703.4023931287,
+      "rhs": 4662882.967111456
+    },
+    {
+      "name": "original trace constants 97",
+      "passed": true,
+      "lhs": 3736511.657460017,
+      "rhs": 3736511.6574600185
+    },
+    {
+      "name": "coarse trace budget 97",
+      "passed": true,
+      "lhs": 3736511.6574600185,
+      "rhs": 8113356.92567051
+    },
+    {
+      "name": "original trace constants 98",
+      "passed": true,
+      "lhs": 198.81141491120474,
+      "rhs": 198.81141491120476
+    },
+    {
+      "name": "coarse trace budget 98",
+      "passed": true,
+      "lhs": 198.81141491120476,
+      "rhs": 395.2769360064449
+    },
+    {
+      "name": "original trace constants 99",
+      "passed": true,
+      "lhs": 79.09496576955783,
+      "rhs": 79.09496576955786
+    },
+    {
+      "name": "coarse trace budget 99",
+      "passed": true,
+      "lhs": 79.09496576955786,
+      "rhs": 171.19343424007113
+    },
+    {
+      "name": "original trace constants 100",
+      "passed": true,
+      "lhs": 12530.13510163635,
+      "rhs": 12530.135101636351
+    },
+    {
+      "name": "coarse trace budget 100",
+      "passed": true,
+      "lhs": 12530.135101636351,
+      "rhs": 27481.741002768234
+    },
+    {
+      "name": "original trace constants 101",
+      "passed": true,
+      "lhs": 2160291.902173436,
+      "rhs": 2160291.9021734362
+    },
+    {
+      "name": "coarse trace budget 101",
+      "passed": true,
+      "lhs": 2160291.9021734362,
+      "rhs": 4025993.039002905
+    },
+    {
+      "name": "original trace constants 102",
+      "passed": true,
+      "lhs": 361796.7872149476,
+      "rhs": 361796.7872149474
+    },
+    {
+      "name": "coarse trace budget 102",
+      "passed": true,
+      "lhs": 361796.7872149474,
+      "rhs": 892650.6875699615
+    },
+    {
+      "name": "original trace constants 103",
+      "passed": true,
+      "lhs": 4945.414719461425,
+      "rhs": 4945.414719461426
+    },
+    {
+      "name": "coarse trace budget 103",
+      "passed": true,
+      "lhs": 4945.414719461426,
+      "rhs": 9146.154348926031
+    },
+    {
+      "name": "original trace constants 104",
+      "passed": true,
+      "lhs": 147.7056004692829,
+      "rhs": 147.7056004692829
+    },
+    {
+      "name": "coarse trace budget 104",
+      "passed": true,
+      "lhs": 147.7056004692829,
+      "rhs": 279.1772046291038
+    },
+    {
+      "name": "original trace constants 105",
+      "passed": true,
+      "lhs": 233587.0889798166,
+      "rhs": 233587.0889798166
+    },
+    {
+      "name": "coarse trace budget 105",
+      "passed": true,
+      "lhs": 233587.0889798166,
+      "rhs": 1213743.8962989599
+    },
+    {
+      "name": "original trace constants 106",
+      "passed": true,
+      "lhs": 1359.3338632674654,
+      "rhs": 1359.3338632674652
+    },
+    {
+      "name": "coarse trace budget 106",
+      "passed": true,
+      "lhs": 1359.3338632674652,
+      "rhs": 2795.9034521193435
+    },
+    {
+      "name": "original trace constants 107",
+      "passed": true,
+      "lhs": 1053.8191766424463,
+      "rhs": 1053.819176642446
+    },
+    {
+      "name": "coarse trace budget 107",
+      "passed": true,
+      "lhs": 1053.819176642446,
+      "rhs": 1977.3491799331443
+    },
+    {
+      "name": "original trace constants 108",
+      "passed": true,
+      "lhs": 245484.07908942155,
+      "rhs": 245484.07908942152
+    },
+    {
+      "name": "coarse trace budget 108",
+      "passed": true,
+      "lhs": 245484.07908942152,
+      "rhs": 747340.088628548
+    },
+    {
+      "name": "original trace constants 109",
+      "passed": true,
+      "lhs": 225.3511320430889,
+      "rhs": 225.35113204308894
+    },
+    {
+      "name": "coarse trace budget 109",
+      "passed": true,
+      "lhs": 225.35113204308894,
+      "rhs": 849.075019112243
+    },
+    {
+      "name": "original trace constants 110",
+      "passed": true,
+      "lhs": 160179.24695813682,
+      "rhs": 160179.2469581368
+    },
+    {
+      "name": "coarse trace budget 110",
+      "passed": true,
+      "lhs": 160179.2469581368,
+      "rhs": 300916.53902118065
+    },
+    {
+      "name": "original trace constants 111",
+      "passed": true,
+      "lhs": 25.52267598615438,
+      "rhs": 25.52267598615438
+    },
+    {
+      "name": "coarse trace budget 111",
+      "passed": true,
+      "lhs": 25.52267598615438,
+      "rhs": 92.62090472153413
+    },
+    {
+      "name": "original trace constants 112",
+      "passed": true,
+      "lhs": 322303.7826385682,
+      "rhs": 322303.7826385682
+    },
+    {
+      "name": "coarse trace budget 112",
+      "passed": true,
+      "lhs": 322303.7826385682,
+      "rhs": 638169.3322391605
+    },
+    {
+      "name": "original trace constants 113",
+      "passed": true,
+      "lhs": 43063.68236122977,
+      "rhs": 43063.68236122979
+    },
+    {
+      "name": "coarse trace budget 113",
+      "passed": true,
+      "lhs": 43063.68236122979,
+      "rhs": 109764.67985343674
+    },
+    {
+      "name": "original trace constants 114",
+      "passed": true,
+      "lhs": 25930.078288458288,
+      "rhs": 25930.078288458295
+    },
+    {
+      "name": "coarse trace budget 114",
+      "passed": true,
+      "lhs": 25930.078288458295,
+      "rhs": 67270.45307923159
+    },
+    {
+      "name": "original trace constants 115",
+      "passed": true,
+      "lhs": 92377.48821610586,
+      "rhs": 92377.48821610588
+    },
+    {
+      "name": "coarse trace budget 115",
+      "passed": true,
+      "lhs": 92377.48821610588,
+      "rhs": 312101.4893523773
+    },
+    {
+      "name": "original trace constants 116",
+      "passed": true,
+      "lhs": 531.8225370010647,
+      "rhs": 531.8225370010646
+    },
+    {
+      "name": "coarse trace budget 116",
+      "passed": true,
+      "lhs": 531.8225370010646,
+      "rhs": 1724.3602932441283
+    },
+    {
+      "name": "original trace constants 117",
+      "passed": true,
+      "lhs": 183.8783970342094,
+      "rhs": 183.8783970342093
+    },
+    {
+      "name": "coarse trace budget 117",
+      "passed": true,
+      "lhs": 183.8783970342093,
+      "rhs": 422.565483710679
+    },
+    {
+      "name": "original trace constants 118",
+      "passed": true,
+      "lhs": 3942.5692914680676,
+      "rhs": 3942.5692914680667
+    },
+    {
+      "name": "coarse trace budget 118",
+      "passed": true,
+      "lhs": 3942.5692914680667,
+      "rhs": 19178.058154668932
+    },
+    {
+      "name": "original trace constants 119",
+      "passed": true,
+      "lhs": 104.04019807852795,
+      "rhs": 104.04019807852794
+    },
+    {
+      "name": "coarse trace budget 119",
+      "passed": true,
+      "lhs": 104.04019807852794,
+      "rhs": 195.07433987605788
+    },
+    {
+      "name": "original trace constants 120",
+      "passed": true,
+      "lhs": 6490.388861192787,
+      "rhs": 6490.388861192789
+    },
+    {
+      "name": "coarse trace budget 120",
+      "passed": true,
+      "lhs": 6490.388861192789,
+      "rhs": 12828.602132238966
+    },
+    {
+      "name": "original trace constants 121",
+      "passed": true,
+      "lhs": 688.637765266564,
+      "rhs": 688.6377652665639
+    },
+    {
+      "name": "coarse trace budget 121",
+      "passed": true,
+      "lhs": 688.6377652665639,
+      "rhs": 12610.786734524077
+    },
+    {
+      "name": "original trace constants 122",
+      "passed": true,
+      "lhs": 11524598.93577508,
+      "rhs": 11524598.935775079
+    },
+    {
+      "name": "coarse trace budget 122",
+      "passed": true,
+      "lhs": 11524598.935775079,
+      "rhs": 35988545.23890928
+    },
+    {
+      "name": "original trace constants 123",
+      "passed": true,
+      "lhs": 11562.823317241799,
+      "rhs": 11562.823317241799
+    },
+    {
+      "name": "coarse trace budget 123",
+      "passed": true,
+      "lhs": 11562.823317241799,
+      "rhs": 28156.56237744181
+    },
+    {
+      "name": "original trace constants 124",
+      "passed": true,
+      "lhs": 3491.9584077377135,
+      "rhs": 3491.9584077377135
+    },
+    {
+      "name": "coarse trace budget 124",
+      "passed": true,
+      "lhs": 3491.9584077377135,
+      "rhs": 19185.64269370672
+    },
+    {
+      "name": "original trace constants 125",
+      "passed": true,
+      "lhs": 17301689.605970293,
+      "rhs": 17301689.605970297
+    },
+    {
+      "name": "coarse trace budget 125",
+      "passed": true,
+      "lhs": 17301689.605970297,
+      "rhs": 36793046.18751596
+    },
+    {
+      "name": "original trace constants 126",
+      "passed": true,
+      "lhs": 0.7680209397313643,
+      "rhs": 0.7680209397313641
+    },
+    {
+      "name": "coarse trace budget 126",
+      "passed": true,
+      "lhs": 0.7680209397313641,
+      "rhs": 5.101341026739885
+    },
+    {
+      "name": "original trace constants 127",
+      "passed": true,
+      "lhs": 31351.789433355993,
+      "rhs": 31351.789433355985
+    },
+    {
+      "name": "coarse trace budget 127",
+      "passed": true,
+      "lhs": 31351.789433355985,
+      "rhs": 59220.67905575601
+    },
+    {
+      "name": "original trace constants 128",
+      "passed": true,
+      "lhs": 309.6195940487951,
+      "rhs": 309.6195940487951
+    },
+    {
+      "name": "coarse trace budget 128",
+      "passed": true,
+      "lhs": 309.6195940487951,
+      "rhs": 581.9990597886064
+    },
+    {
+      "name": "original trace constants 129",
+      "passed": true,
+      "lhs": 17464.13178469238,
+      "rhs": 17464.131784692385
+    },
+    {
+      "name": "coarse trace budget 129",
+      "passed": true,
+      "lhs": 17464.131784692385,
+      "rhs": 33166.22356244077
+    },
+    {
+      "name": "original trace constants 130",
+      "passed": true,
+      "lhs": 140843.88068322852,
+      "rhs": 140843.88068322852
+    },
+    {
+      "name": "coarse trace budget 130",
+      "passed": true,
+      "lhs": 140843.88068322852,
+      "rhs": 293744.90220090235
+    },
+    {
+      "name": "original trace constants 131",
+      "passed": true,
+      "lhs": 13020.272594699945,
+      "rhs": 13020.272594699944
+    },
+    {
+      "name": "coarse trace budget 131",
+      "passed": true,
+      "lhs": 13020.272594699944,
+      "rhs": 28771.103723651213
+    },
+    {
+      "name": "original trace constants 132",
+      "passed": true,
+      "lhs": 2400.0732108753405,
+      "rhs": 2400.0732108753414
+    },
+    {
+      "name": "coarse trace budget 132",
+      "passed": true,
+      "lhs": 2400.0732108753414,
+      "rhs": 9900.799910777238
+    },
+    {
+      "name": "original trace constants 133",
+      "passed": true,
+      "lhs": 1240884.2859268663,
+      "rhs": 1240884.2859268656
+    },
+    {
+      "name": "coarse trace budget 133",
+      "passed": true,
+      "lhs": 1240884.2859268656,
+      "rhs": 3538131.681088143
+    },
+    {
+      "name": "original trace constants 134",
+      "passed": true,
+      "lhs": 3850961.587630881,
+      "rhs": 3850961.5876308815
+    },
+    {
+      "name": "coarse trace budget 134",
+      "passed": true,
+      "lhs": 3850961.5876308815,
+      "rhs": 7117520.049982502
+    },
+    {
+      "name": "original trace constants 135",
+      "passed": true,
+      "lhs": 70649.33802513588,
+      "rhs": 70649.33802513586
+    },
+    {
+      "name": "coarse trace budget 135",
+      "passed": true,
+      "lhs": 70649.33802513586,
+      "rhs": 150827.37386860288
+    },
+    {
+      "name": "original trace constants 136",
+      "passed": true,
+      "lhs": 3.1216239582609244,
+      "rhs": 3.1216239582609244
+    },
+    {
+      "name": "coarse trace budget 136",
+      "passed": true,
+      "lhs": 3.1216239582609244,
+      "rhs": 7.237798046673866
+    },
+    {
+      "name": "original trace constants 137",
+      "passed": true,
+      "lhs": 78533.26290812358,
+      "rhs": 78533.26290812358
+    },
+    {
+      "name": "coarse trace budget 137",
+      "passed": true,
+      "lhs": 78533.26290812358,
+      "rhs": 300156.6822024492
+    },
+    {
+      "name": "original trace constants 138",
+      "passed": true,
+      "lhs": 5696.967166640143,
+      "rhs": 5696.9671666401455
+    },
+    {
+      "name": "coarse trace budget 138",
+      "passed": true,
+      "lhs": 5696.9671666401455,
+      "rhs": 10744.248389980863
+    },
+    {
+      "name": "original trace constants 139",
+      "passed": true,
+      "lhs": 23916.241284329557,
+      "rhs": 23916.241284329564
+    },
+    {
+      "name": "coarse trace budget 139",
+      "passed": true,
+      "lhs": 23916.241284329564,
+      "rhs": 50288.857487453744
+    },
+    {
+      "name": "original trace constants 140",
+      "passed": true,
+      "lhs": 279142.7033762014,
+      "rhs": 279142.70337620145
+    },
+    {
+      "name": "coarse trace budget 140",
+      "passed": true,
+      "lhs": 279142.70337620145,
+      "rhs": 516278.9217816521
+    },
+    {
+      "name": "original trace constants 141",
+      "passed": true,
+      "lhs": 45796774.07329683,
+      "rhs": 45796774.07329684
+    },
+    {
+      "name": "coarse trace budget 141",
+      "passed": true,
+      "lhs": 45796774.07329684,
+      "rhs": 85058895.68089814
+    },
+    {
+      "name": "original trace constants 142",
+      "passed": true,
+      "lhs": 15912.845822776473,
+      "rhs": 15912.845822776477
+    },
+    {
+      "name": "coarse trace budget 142",
+      "passed": true,
+      "lhs": 15912.845822776477,
+      "rhs": 56431.86665087908
+    },
+    {
+      "name": "original trace constants 143",
+      "passed": true,
+      "lhs": 4052.6535660496843,
+      "rhs": 4052.6535660496847
+    },
+    {
+      "name": "coarse trace budget 143",
+      "passed": true,
+      "lhs": 4052.6535660496847,
+      "rhs": 15765.119620267566
+    },
+    {
+      "name": "original trace constants 144",
+      "passed": true,
+      "lhs": 10222.06362760311,
+      "rhs": 10222.06362760311
+    },
+    {
+      "name": "coarse trace budget 144",
+      "passed": true,
+      "lhs": 10222.06362760311,
+      "rhs": 22219.680339490216
+    },
+    {
+      "name": "original trace constants 145",
+      "passed": true,
+      "lhs": 130607.75475956475,
+      "rhs": 130607.75475956475
+    },
+    {
+      "name": "coarse trace budget 145",
+      "passed": true,
+      "lhs": 130607.75475956475,
+      "rhs": 500136.1605431834
+    },
+    {
+      "name": "original trace constants 146",
+      "passed": true,
+      "lhs": 6100.389497529797,
+      "rhs": 6100.389497529796
+    },
+    {
+      "name": "coarse trace budget 146",
+      "passed": true,
+      "lhs": 6100.389497529796,
+      "rhs": 12126.130994476936
+    },
+    {
+      "name": "original trace constants 147",
+      "passed": true,
+      "lhs": 3172.5154534420826,
+      "rhs": 3172.5154534420813
+    },
+    {
+      "name": "coarse trace budget 147",
+      "passed": true,
+      "lhs": 3172.5154534420813,
+      "rhs": 5952.372175976349
+    },
+    {
+      "name": "original trace constants 148",
+      "passed": true,
+      "lhs": 12673.506811756188,
+      "rhs": 12673.506811756191
+    },
+    {
+      "name": "coarse trace budget 148",
+      "passed": true,
+      "lhs": 12673.506811756191,
+      "rhs": 24759.660136006525
+    },
+    {
+      "name": "original trace constants 149",
+      "passed": true,
+      "lhs": 771.7372298349801,
+      "rhs": 771.7372298349804
+    },
+    {
+      "name": "coarse trace budget 149",
+      "passed": true,
+      "lhs": 771.7372298349804,
+      "rhs": 1676.583914750069
+    },
+    {
+      "name": "original trace constants 150",
+      "passed": true,
+      "lhs": 34897.93970383524,
+      "rhs": 34897.93970383523
+    },
+    {
+      "name": "coarse trace budget 150",
+      "passed": true,
+      "lhs": 34897.93970383523,
+      "rhs": 97115.67344702211
+    },
+    {
+      "name": "original trace constants 151",
+      "passed": true,
+      "lhs": 8246212.737246826,
+      "rhs": 8246212.737246824
+    },
+    {
+      "name": "coarse trace budget 151",
+      "passed": true,
+      "lhs": 8246212.737246824,
+      "rhs": 15272583.534497341
+    },
+    {
+      "name": "original trace constants 152",
+      "passed": true,
+      "lhs": 42432.94573415656,
+      "rhs": 42432.9457341566
+    },
+    {
+      "name": "coarse trace budget 152",
+      "passed": true,
+      "lhs": 42432.9457341566,
+      "rhs": 148398.56824590228
+    },
+    {
+      "name": "original trace constants 153",
+      "passed": true,
+      "lhs": 12341.697276883886,
+      "rhs": 12341.697276883886
+    },
+    {
+      "name": "coarse trace budget 153",
+      "passed": true,
+      "lhs": 12341.697276883886,
+      "rhs": 25117.321797143384
+    },
+    {
+      "name": "original trace constants 154",
+      "passed": true,
+      "lhs": 29578348.86277045,
+      "rhs": 29578348.86277045
+    },
+    {
+      "name": "coarse trace budget 154",
+      "passed": true,
+      "lhs": 29578348.86277045,
+      "rhs": 90688355.72204323
+    },
+    {
+      "name": "original trace constants 155",
+      "passed": true,
+      "lhs": 1.2526279331130752,
+      "rhs": 1.2526279331130756
+    },
+    {
+      "name": "coarse trace budget 155",
+      "passed": true,
+      "lhs": 1.2526279331130756,
+      "rhs": 9.73477474113706
+    },
+    {
+      "name": "original trace constants 156",
+      "passed": true,
+      "lhs": 721.4362015829413,
+      "rhs": 721.4362015829414
+    },
+    {
+      "name": "coarse trace budget 156",
+      "passed": true,
+      "lhs": 721.4362015829414,
+      "rhs": 1526.7391540260385
+    },
+    {
+      "name": "original trace constants 157",
+      "passed": true,
+      "lhs": 298374.51888319815,
+      "rhs": 298374.5188831983
+    },
+    {
+      "name": "coarse trace budget 157",
+      "passed": true,
+      "lhs": 298374.5188831983,
+      "rhs": 563195.6222302803
+    },
+    {
+      "name": "original trace constants 158",
+      "passed": true,
+      "lhs": 3998.471504134263,
+      "rhs": 3998.4715041342647
+    },
+    {
+      "name": "coarse trace budget 158",
+      "passed": true,
+      "lhs": 3998.4715041342647,
+      "rhs": 10621.431817778077
+    },
+    {
+      "name": "original trace constants 159",
+      "passed": true,
+      "lhs": 68520.16012295532,
+      "rhs": 68520.16012295535
+    },
+    {
+      "name": "coarse trace budget 159",
+      "passed": true,
+      "lhs": 68520.16012295535,
+      "rhs": 139003.80068050337
+    },
+    {
+      "name": "original trace constants 160",
+      "passed": true,
+      "lhs": 1665.1178780809369,
+      "rhs": 1665.1178780809373
+    },
+    {
+      "name": "coarse trace budget 160",
+      "passed": true,
+      "lhs": 1665.1178780809373,
+      "rhs": 3109.170007174609
+    },
+    {
+      "name": "original trace constants 161",
+      "passed": true,
+      "lhs": 10990.580353680041,
+      "rhs": 10990.58035368004
+    },
+    {
+      "name": "coarse trace budget 161",
+      "passed": true,
+      "lhs": 10990.58035368004,
+      "rhs": 23546.641939572884
+    },
+    {
+      "name": "original trace constants 162",
+      "passed": true,
+      "lhs": 80.71964150253122,
+      "rhs": 80.71964150253126
+    },
+    {
+      "name": "coarse trace budget 162",
+      "passed": true,
+      "lhs": 80.71964150253126,
+      "rhs": 199.31763476759028
+    },
+    {
+      "name": "original trace constants 163",
+      "passed": true,
+      "lhs": 2855717.263141642,
+      "rhs": 2855717.263141642
+    },
+    {
+      "name": "coarse trace budget 163",
+      "passed": true,
+      "lhs": 2855717.263141642,
+      "rhs": 6248839.082491636
+    },
+    {
+      "name": "original trace constants 164",
+      "passed": true,
+      "lhs": 111660.88962289941,
+      "rhs": 111660.88962289938
+    },
+    {
+      "name": "coarse trace budget 164",
+      "passed": true,
+      "lhs": 111660.88962289938,
+      "rhs": 221206.72235180132
+    },
+    {
+      "name": "original trace constants 165",
+      "passed": true,
+      "lhs": 6227659.911556219,
+      "rhs": 6227659.91155622
+    },
+    {
+      "name": "coarse trace budget 165",
+      "passed": true,
+      "lhs": 6227659.91155622,
+      "rhs": 13644314.694222275
+    },
+    {
+      "name": "original trace constants 166",
+      "passed": true,
+      "lhs": 62175278.00831396,
+      "rhs": 62175278.00831396
+    },
+    {
+      "name": "coarse trace budget 166",
+      "passed": true,
+      "lhs": 62175278.00831396,
+      "rhs": 116020407.25021763
+    },
+    {
+      "name": "original trace constants 167",
+      "passed": true,
+      "lhs": 38739.22174511321,
+      "rhs": 38739.22174511321
+    },
+    {
+      "name": "coarse trace budget 167",
+      "passed": true,
+      "lhs": 38739.22174511321,
+      "rhs": 96920.31407289978
+    },
+    {
+      "name": "original trace constants 168",
+      "passed": true,
+      "lhs": 230691.4255598863,
+      "rhs": 230691.42555988632
+    },
+    {
+      "name": "coarse trace budget 168",
+      "passed": true,
+      "lhs": 230691.42555988632,
+      "rhs": 427381.254207207
+    },
+    {
+      "name": "original trace constants 169",
+      "passed": true,
+      "lhs": 21727.53453476043,
+      "rhs": 21727.534534760438
+    },
+    {
+      "name": "coarse trace budget 169",
+      "passed": true,
+      "lhs": 21727.534534760438,
+      "rhs": 40416.89895566153
+    },
+    {
+      "name": "original trace constants 170",
+      "passed": true,
+      "lhs": 4187610.62048829,
+      "rhs": 4187610.62048829
+    },
+    {
+      "name": "coarse trace budget 170",
+      "passed": true,
+      "lhs": 4187610.62048829,
+      "rhs": 12665805.378956158
+    },
+    {
+      "name": "original trace constants 171",
+      "passed": true,
+      "lhs": 2899315.097122296,
+      "rhs": 2899315.097122297
+    },
+    {
+      "name": "coarse trace budget 171",
+      "passed": true,
+      "lhs": 2899315.097122297,
+      "rhs": 33806848.29066279
+    },
+    {
+      "name": "original trace constants 172",
+      "passed": true,
+      "lhs": 1425.7578493381268,
+      "rhs": 1425.7578493381272
+    },
+    {
+      "name": "coarse trace budget 172",
+      "passed": true,
+      "lhs": 1425.7578493381272,
+      "rhs": 5459.7935503831295
+    },
+    {
+      "name": "original trace constants 173",
+      "passed": true,
+      "lhs": 7870.961768957992,
+      "rhs": 7870.961768957991
+    },
+    {
+      "name": "coarse trace budget 173",
+      "passed": true,
+      "lhs": 7870.961768957991,
+      "rhs": 16654.327329288244
+    },
+    {
+      "name": "original trace constants 174",
+      "passed": true,
+      "lhs": 207288.88807088116,
+      "rhs": 207288.88807088116
+    },
+    {
+      "name": "coarse trace budget 174",
+      "passed": true,
+      "lhs": 207288.88807088116,
+      "rhs": 423871.4257723177
+    },
+    {
+      "name": "original trace constants 175",
+      "passed": true,
+      "lhs": 2.9794722186900326,
+      "rhs": 2.9794722186900335
+    },
+    {
+      "name": "coarse trace budget 175",
+      "passed": true,
+      "lhs": 2.9794722186900335,
+      "rhs": 10.01182970093307
+    },
+    {
+      "name": "original trace constants 176",
+      "passed": true,
+      "lhs": 15755552.96409477,
+      "rhs": 15755552.964094775
+    },
+    {
+      "name": "coarse trace budget 176",
+      "passed": true,
+      "lhs": 15755552.964094775,
+      "rhs": 29106168.168269824
+    },
+    {
+      "name": "original trace constants 177",
+      "passed": true,
+      "lhs": 2553.946353102198,
+      "rhs": 2553.946353102198
+    },
+    {
+      "name": "coarse trace budget 177",
+      "passed": true,
+      "lhs": 2553.946353102198,
+      "rhs": 5312.530282476561
+    },
+    {
+      "name": "original trace constants 178",
+      "passed": true,
+      "lhs": 85.02481757038308,
+      "rhs": 85.02481757038306
+    },
+    {
+      "name": "coarse trace budget 178",
+      "passed": true,
+      "lhs": 85.02481757038306,
+      "rhs": 159.12932278753945
+    },
+    {
+      "name": "original trace constants 179",
+      "passed": true,
+      "lhs": 62090.11689584981,
+      "rhs": 62090.11689584983
+    },
+    {
+      "name": "coarse trace budget 179",
+      "passed": true,
+      "lhs": 62090.11689584983,
+      "rhs": 123243.30852078112
+    },
+    {
+      "name": "original trace constants 180",
+      "passed": true,
+      "lhs": 3330.0887694329963,
+      "rhs": 3330.0887694329967
+    },
+    {
+      "name": "coarse trace budget 180",
+      "passed": true,
+      "lhs": 3330.0887694329967,
+      "rhs": 6215.896236424659
+    },
+    {
+      "name": "original trace constants 181",
+      "passed": true,
+      "lhs": 3685494.869302111,
+      "rhs": 3685494.8693021126
+    },
+    {
+      "name": "coarse trace budget 181",
+      "passed": true,
+      "lhs": 3685494.8693021126,
+      "rhs": 7677833.781656387
+    },
+    {
+      "name": "original trace constants 182",
+      "passed": true,
+      "lhs": 11537165.623295745,
+      "rhs": 11537165.623295745
+    },
+    {
+      "name": "coarse trace budget 182",
+      "passed": true,
+      "lhs": 11537165.623295745,
+      "rhs": 21420967.740904924
+    },
+    {
+      "name": "original trace constants 183",
+      "passed": true,
+      "lhs": 3542905.077069372,
+      "rhs": 3542905.077069372
+    },
+    {
+      "name": "coarse trace budget 183",
+      "passed": true,
+      "lhs": 3542905.077069372,
+      "rhs": 7924667.160562307
+    },
+    {
+      "name": "original trace constants 184",
+      "passed": true,
+      "lhs": 12539916.809348885,
+      "rhs": 12539916.809348885
+    },
+    {
+      "name": "coarse trace budget 184",
+      "passed": true,
+      "lhs": 12539916.809348885,
+      "rhs": 24035718.45996488
+    },
+    {
+      "name": "original trace constants 185",
+      "passed": true,
+      "lhs": 34738.80233493552,
+      "rhs": 34738.80233493552
+    },
+    {
+      "name": "coarse trace budget 185",
+      "passed": true,
+      "lhs": 34738.80233493552,
+      "rhs": 65703.88235239382
+    },
+    {
+      "name": "original trace constants 186",
+      "passed": true,
+      "lhs": 34733.37710227057,
+      "rhs": 34733.37710227058
+    },
+    {
+      "name": "coarse trace budget 186",
+      "passed": true,
+      "lhs": 34733.37710227058,
+      "rhs": 69523.86820689008
+    },
+    {
+      "name": "original trace constants 187",
+      "passed": true,
+      "lhs": 2844.1739517172596,
+      "rhs": 2844.1739517172596
+    },
+    {
+      "name": "coarse trace budget 187",
+      "passed": true,
+      "lhs": 2844.1739517172596,
+      "rhs": 5326.607737182944
+    },
+    {
+      "name": "original trace constants 188",
+      "passed": true,
+      "lhs": 271830.56587331387,
+      "rhs": 271830.5658733138
+    },
+    {
+      "name": "coarse trace budget 188",
+      "passed": true,
+      "lhs": 271830.5658733138,
+      "rhs": 732801.3015919303
+    },
+    {
+      "name": "original trace constants 189",
+      "passed": true,
+      "lhs": 2582.721882275195,
+      "rhs": 2582.721882275195
+    },
+    {
+      "name": "coarse trace budget 189",
+      "passed": true,
+      "lhs": 2582.721882275195,
+      "rhs": 4779.262853717723
+    },
+    {
+      "name": "original trace constants 190",
+      "passed": true,
+      "lhs": 14.947954249599942,
+      "rhs": 14.947954249599938
+    },
+    {
+      "name": "coarse trace budget 190",
+      "passed": true,
+      "lhs": 14.947954249599938,
+      "rhs": 65.61608747805928
+    },
+    {
+      "name": "original trace constants 191",
+      "passed": true,
+      "lhs": 12702830.513995066,
+      "rhs": 12702830.513995066
+    },
+    {
+      "name": "coarse trace budget 191",
+      "passed": true,
+      "lhs": 12702830.513995066,
+      "rhs": 31126971.711112447
+    },
+    {
+      "name": "original trace constants 192",
+      "passed": true,
+      "lhs": 8.752063723723564,
+      "rhs": 8.752063723723566
+    },
+    {
+      "name": "coarse trace budget 192",
+      "passed": true,
+      "lhs": 8.752063723723566,
+      "rhs": 17.934104718796537
+    },
+    {
+      "name": "original trace constants 193",
+      "passed": true,
+      "lhs": 52266122.23364854,
+      "rhs": 52266122.23364853
+    },
+    {
+      "name": "coarse trace budget 193",
+      "passed": true,
+      "lhs": 52266122.23364853,
+      "rhs": 99169020.3130107
+    },
+    {
+      "name": "original trace constants 194",
+      "passed": true,
+      "lhs": 3423.594738951449,
+      "rhs": 3423.594738951449
+    },
+    {
+      "name": "coarse trace budget 194",
+      "passed": true,
+      "lhs": 3423.594738951449,
+      "rhs": 6976.394207828173
+    },
+    {
+      "name": "original trace constants 195",
+      "passed": true,
+      "lhs": 94287.77287510195,
+      "rhs": 94287.77287510195
+    },
+    {
+      "name": "coarse trace budget 195",
+      "passed": true,
+      "lhs": 94287.77287510195,
+      "rhs": 174229.2840640016
+    },
+    {
+      "name": "original trace constants 196",
+      "passed": true,
+      "lhs": 154884.70767414753,
+      "rhs": 154884.70767414756
+    },
+    {
+      "name": "coarse trace budget 196",
+      "passed": true,
+      "lhs": 154884.70767414756,
+      "rhs": 403284.6159320582
+    },
+    {
+      "name": "original trace constants 197",
+      "passed": true,
+      "lhs": 237484.20172502732,
+      "rhs": 237484.20172502726
+    },
+    {
+      "name": "coarse trace budget 197",
+      "passed": true,
+      "lhs": 237484.20172502726,
+      "rhs": 565142.9844913819
+    },
+    {
+      "name": "original trace constants 198",
+      "passed": true,
+      "lhs": 138250.54620378936,
+      "rhs": 138250.54620378936
+    },
+    {
+      "name": "coarse trace budget 198",
+      "passed": true,
+      "lhs": 138250.54620378936,
+      "rhs": 257589.15706957818
+    },
+    {
+      "name": "original trace constants 199",
+      "passed": true,
+      "lhs": 231.898977984656,
+      "rhs": 231.89897798465603
+    },
+    {
+      "name": "coarse trace budget 199",
+      "passed": true,
+      "lhs": 231.89897798465603,
+      "rhs": 471.0500241617341
+    },
+    {
+      "name": "raw source deficit error j1",
+      "passed": true,
+      "lhs": 4.014843750000001e-19,
+      "rhs": 4.050000000000001e-12
+    },
+    {
+      "name": "original half-edge sampling j1",
+      "passed": true,
+      "lhs": 1.2672558936536853e-06,
+      "rhs": 4.024922359499622e-05
+    },
+    {
+      "name": "complete source error j1",
+      "passed": true,
+      "lhs": 0.0008493881312430244,
+      "rhs": 0.04226168477474603
+    },
+    {
+      "name": "raw source deficit error j2",
+      "passed": true,
+      "lhs": 1.7822742462158208e-20,
+      "rhs": 8.268750000000001e-14
+    },
+    {
+      "name": "original half-edge sampling j2",
+      "passed": true,
+      "lhs": 1.510310026767063e-07,
+      "rhs": 4.464705337421497e-06
+    },
+    {
+      "name": "complete source error j2",
+      "passed": true,
+      "lhs": 0.0002643053067054764,
+      "rhs": 0.01344142018306561
+    },
+    {
+      "name": "raw source deficit error j4",
+      "passed": true,
+      "lhs": 6.216998817399147e-22,
+      "rhs": 2.3928222656250004e-15
+    },
+    {
+      "name": "original half-edge sampling j4",
+      "passed": true,
+      "lhs": 1.8256046821902793e-08,
+      "rhs": 5.830004514296601e-07
+    },
+    {
+      "name": "complete source error j4",
+      "passed": true,
+      "lhs": 7.106290051584548e-05,
+      "rhs": 0.005055335471883119
+    },
+    {
+      "name": "raw source deficit error j8",
+      "passed": true,
+      "lhs": 2.0024027645604297e-23,
+      "rhs": 9.29546356201172e-17
+    },
+    {
+      "name": "original half-edge sampling j8",
+      "passed": true,
+      "lhs": 2.249749528272625e-09,
+      "rhs": 8.619892930341665e-08
+    },
+    {
+      "name": "complete source error j8",
+      "passed": true,
+      "lhs": 1.8464752028332556e-05,
+      "rhs": 0.0021686167983435293
+    },
+    {
+      "name": "raw source deficit error j16",
+      "passed": true,
+      "lhs": 6.308233229804231e-25,
+      "rhs": 4.435703158378602e-18
+    },
+    {
+      "name": "original half-edge sampling j16",
+      "passed": true,
+      "lhs": 2.795319762205486e-10,
+      "rhs": 1.3811648663547383e-08
+    },
+    {
+      "name": "complete source error j16",
+      "passed": true,
+      "lhs": 4.729295575788646e-06,
+      "rhs": 0.0010187366126030695
+    },
+    {
+      "name": "raw source deficit error j32",
+      "passed": true,
+      "lhs": 1.975468410180802e-26,
+      "rhs": 2.398680662736297e-19
+    },
+    {
+      "name": "original half-edge sampling j32",
+      "passed": true,
+      "lhs": 3.48476652766977e-11,
+      "rhs": 2.3184297306500602e-09
+    },
+    {
+      "name": "complete source error j32",
+      "passed": true,
+      "lhs": 1.2065610843798192e-06,
+      "rhs": 0.0005083372333328149
+    },
+    {
+      "name": "removed star m2 k0",
+      "passed": true,
+      "lhs": 1.7961931615576439,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k1",
+      "passed": true,
+      "lhs": 3.8908753791759096,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k2",
+      "passed": true,
+      "lhs": 2.0551985330639715,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k3",
+      "passed": true,
+      "lhs": 0.733394359207818,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k4",
+      "passed": true,
+      "lhs": 3.1354426552585237,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k5",
+      "passed": true,
+      "lhs": 1.4294680199278296,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k6",
+      "passed": true,
+      "lhs": 1.2214864926308702,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k7",
+      "passed": true,
+      "lhs": 5.293490653287085,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k8",
+      "passed": true,
+      "lhs": 2.890403872614559,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k9",
+      "passed": true,
+      "lhs": 3.282116974079826,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k10",
+      "passed": true,
+      "lhs": 1.9118062364831756,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k11",
+      "passed": true,
+      "lhs": 3.2312973091524504,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k12",
+      "passed": true,
+      "lhs": 1.3931384075287432,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k13",
+      "passed": true,
+      "lhs": 3.590120744189787,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k14",
+      "passed": true,
+      "lhs": 2.2389387079140994,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k15",
+      "passed": true,
+      "lhs": 5.3571534108885865,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k16",
+      "passed": true,
+      "lhs": 4.26885660054933,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k17",
+      "passed": true,
+      "lhs": 8.051591178086893,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k18",
+      "passed": true,
+      "lhs": 3.4704120873338797,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m2 k19",
+      "passed": true,
+      "lhs": 3.821146335347856,
+      "rhs": 10.0
+    },
+    {
+      "name": "removed star m3 k0",
+      "passed": true,
+      "lhs": 3.4335460029293343,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k1",
+      "passed": true,
+      "lhs": 8.513138460931232,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k2",
+      "passed": true,
+      "lhs": 2.270349600389473,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k3",
+      "passed": true,
+      "lhs": 5.0991188082597745,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k4",
+      "passed": true,
+      "lhs": 1.0546206964257618,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k5",
+      "passed": true,
+      "lhs": 9.175858751726443,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k6",
+      "passed": true,
+      "lhs": 5.912040820964844,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k7",
+      "passed": true,
+      "lhs": 2.3864211501094763,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k8",
+      "passed": true,
+      "lhs": 1.4594407142692254,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k9",
+      "passed": true,
+      "lhs": 2.33144945841367,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k10",
+      "passed": true,
+      "lhs": 2.4395306593321715,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k11",
+      "passed": true,
+      "lhs": 4.142060966676897,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k12",
+      "passed": true,
+      "lhs": 0.6569295648271172,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k13",
+      "passed": true,
+      "lhs": 4.486214403813683,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k14",
+      "passed": true,
+      "lhs": 5.09701267470453,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k15",
+      "passed": true,
+      "lhs": 5.1519935352032356,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k16",
+      "passed": true,
+      "lhs": 1.5681816478166573,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k17",
+      "passed": true,
+      "lhs": 1.03014343269979,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k18",
+      "passed": true,
+      "lhs": 1.449456974226786,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m3 k19",
+      "passed": true,
+      "lhs": 3.7800848568733154,
+      "rhs": 18.0
+    },
+    {
+      "name": "removed star m4 k0",
+      "passed": true,
+      "lhs": 5.30195133851785,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k1",
+      "passed": true,
+      "lhs": 1.5717913914204347,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k2",
+      "passed": true,
+      "lhs": 6.0130381971549225,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k3",
+      "passed": true,
+      "lhs": 8.6458088276171,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k4",
+      "passed": true,
+      "lhs": 3.6508474427526054,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k5",
+      "passed": true,
+      "lhs": 6.68865884352523,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k6",
+      "passed": true,
+      "lhs": 4.742759500130432,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k7",
+      "passed": true,
+      "lhs": 1.185403112981794,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k8",
+      "passed": true,
+      "lhs": 6.935699616017119,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k9",
+      "passed": true,
+      "lhs": 3.6211616657597037,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k10",
+      "passed": true,
+      "lhs": 4.071708571427367,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k11",
+      "passed": true,
+      "lhs": 7.900394481882997,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k12",
+      "passed": true,
+      "lhs": 4.74928696520752,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k13",
+      "passed": true,
+      "lhs": 5.85768544320695,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k14",
+      "passed": true,
+      "lhs": 1.2460682624358084,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k15",
+      "passed": true,
+      "lhs": 6.64871244335551,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k16",
+      "passed": true,
+      "lhs": 7.4320713773763565,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k17",
+      "passed": true,
+      "lhs": 5.83802836135803,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k18",
+      "passed": true,
+      "lhs": 2.1215915107610073,
+      "rhs": 28.0
+    },
+    {
+      "name": "removed star m4 k19",
+      "passed": true,
+      "lhs": 4.405518499882054,
+      "rhs": 28.0
+    }
+  ]
+}
