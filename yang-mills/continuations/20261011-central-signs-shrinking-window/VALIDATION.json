@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T02:58:33.130163+00:00",
+  "checked_utc": "2026-10-12T07:34:23.565969+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -325,8 +325,8 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "a401eca365b36224c5d37b075673f715a79b912aa2c62e3b330af7fcc4eb6768",
-      "complete_math_blocks": 546,
+      "sha256": "73a966cbd090323f52009c741d2ff12fa210041fb0b0fd0ac986698bfe43b30a",
+      "complete_math_blocks": 551,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -493,14 +493,14 @@
     },
     {
       "source": "FULL_PHYSICAL_LIFT_AND_SOURCE.md",
-      "sha256": "b6e8252433d9daa3620958943fcfa81f1c43700d932a862af82f4acb0e8638c3",
-      "complete_math_blocks": 175,
+      "sha256": "a9fa3df187155c9e8bac7c822af1f5a1a7fcf91ca2d4ae3ef129d0554a978e8f",
+      "complete_math_blocks": 180,
       "split_to_aligned_wrappers": 6
     },
     {
       "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
-      "sha256": "aae529e86b4db82b5fe7178b373b24abcadcba1a890863fdc3a9cc7a5e2d9009",
-      "complete_math_blocks": 136,
+      "sha256": "16fb486b63e023428e9615f494b4534a19cf772561061a93940c2419c04d0be6",
+      "complete_math_blocks": 141,
       "split_to_aligned_wrappers": 3
     },
     {
@@ -511,8 +511,14 @@
     },
     {
       "source": "CURRENT_TAILS_AND_RETAINED_SOURCE.md",
-      "sha256": "e5b5a0780978d41a32a50770d1560c110769ad0fceac51e8bd3df7d2b795b3dc",
-      "complete_math_blocks": 208,
+      "sha256": "ca3cb695b47531ddb2b0fe20f4afb5deda37c2a162cb3b21567c837b7d4ba962",
+      "complete_math_blocks": 213,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "ORIGINAL_SOURCE_HESSIAN_AND_FILTER.md",
+      "sha256": "5bc5378713d67a0edf1426df215d647dff637044675b20e8de59fcfe2428bd25",
+      "complete_math_blocks": 121,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -980,6 +986,16 @@
     {
       "file": "RETAINED_SOURCE_FULL_FILTER.png",
       "sha256": "5dd06f1dc523c36608e6a68e1a968b3994d0c2e389f81624fb41cc4e250c7b1b",
+      "visually_inspected": true
+    },
+    {
+      "file": "SOURCE_HESSIAN_FILTER_BOUNDS.png",
+      "sha256": "3a4d43f2b8f7d952613572a308d84cd02699f02334221e17d5794d02b51a0140",
+      "visually_inspected": true
+    },
+    {
+      "file": "SOURCE_HESSIAN_FULL_SOURCE_MAP.png",
+      "sha256": "1e3fae0633be2901f427cdfc385ed7d6ad41ce4a41466c8a0dbd75e663dc30c5",
       "visually_inspected": true
     }
   ],
@@ -5680,6 +5696,177 @@
         "RETAINED_SOURCE_FULL_FILTER.png"
       ],
       "finding": "All23 new proof and affected receiving-note pages inspected in six contact sheets; four proof pages individually inspected. Both reproducible figures inspected. All signs, full CTI38 trace terms and original source formulas render correctly. No new clipping, overlap, overflow or missing glyph. Earlier59overfull warnings and one earlier missing delta remain; PDF local QA."
+    }
+  },
+  "source_hessian_review": {
+    "utc": "2026-10-12T03:35:38.167516+00:00",
+    "coverage": "HSF1–HSF17 read in full: complete signed original source-Hessian expansion; exact finite same-link and distinct-link errors; all orientation cross terms, half-edge sampling and removed-star corrections; actual scalar and finite-source Hessian limits; full energy-dependent denominator and its exact monotonicity; direct full-original-source extension, exact source cross terms and original physical-window receiver; all original regulator and geometric constants.",
+    "strengthening": "The actual a_j-weighted source-Hessian limit is 3J_t+9J_2^Sigma. Retaining the energy inside the finite denominator strengthens the response coefficient beyond FTC12 and CTI23. For the unchanged three-orientation tent the coefficient is100theta*kappa_*^3*R^3/363. The same lower bound applies directly to the full original Wilson observable, with its original a_j^3 factor retained.",
+    "limitations": "The signed physical-window value remains unevaluated. Separate lower bounds cannot be subtracted as exact responses. Complete current inverse, omitted-direction Schur and physical residual calculations remain active. The interacting continuum state, reconstruction, global smoothness, theory identification and no-gap endpoint remain unproved.",
+    "actual_reading": "HSF1–HSF17 read in full. FTC1–FTC12 and BM13–BM17 reread directly. CTI1–CTI39 and SOM1–SOM24 retained from full direct reading. PLF21–PLF26 read directly. Original Johnsen/Lo TeX provenance and bounded PT reading retained; no new author-source reading inferred from18 index routes.",
+    "diagnostics": {
+      "checks": 2699,
+      "all_passed": true,
+      "scope": "Exact cubical incidence checks the full signed Hessian expansion, bilinear error and finite deficit bound. Independent radius-two SU(2) matrix derivatives check every original one-face Hessian block. Spectral diagnostics check the full-source correction, inverse/Cauchy inequality and direct physical-window receiver. The original tent constants and denominator derivative are checked independently. These are algebraic diagnostics, not original Yang-Mills vacuum values."
+    },
+    "figures_inspected": [
+      "SOURCE_HESSIAN_FILTER_BOUNDS.png",
+      "SOURCE_HESSIAN_FULL_SOURCE_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ORIGINAL_SOURCE_HESSIAN_AND_FILTER.md",
+        "prefix": "HSF",
+        "tags": 17,
+        "owner_sha256": "9f908e514239870d440345487de488bb2823f1bf77346081042074b4dd543afb",
+        "public_sha256": "5bc5378713d67a0edf1426df215d647dff637044675b20e8de59fcfe2428bd25",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T07:34:23.565969+00:00",
+      "tex_sha256": "a607c4c7c5708ae3ccc6fe47d7eea4d23a7a22154ecf93da137e2b9d1143e91c",
+      "pdf_sha256": "779303fa21ca302c1af4ddfebed03f641b6fbd2240a206f0750bff5cf6ac0ee9",
+      "pages": 868,
+      "source_files": 86,
+      "math_blocks": 20103,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T07:34:23.500531+00:00",
+        "complete": true,
+        "pages": 868,
+        "inspected_pages": [
+          551,
+          552,
+          553,
+          832,
+          833,
+          834,
+          842,
+          843,
+          844,
+          861,
+          862,
+          863,
+          864,
+          865,
+          866,
+          867,
+          868
+        ],
+        "contact_sheets": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "individual_detail_pages": [
+          863,
+          864,
+          865,
+          866
+        ],
+        "page_sha256": {
+          "551": "9b36927e7211c91dec123397fd4e70c23f692260d2cd465543bfea98f3ec285f",
+          "552": "6ecc790f4312c48d9965e987f9b567e40f39a61e90c3002ef50b47da9a2c1cac",
+          "553": "74bb1f30445cc22f0022ae321cad0e29cda2b11a6fdc98cfb21c3ad3751efe30",
+          "832": "bfbcf7073ce70b51732894c3d90e32e280477b20b8b533f24da36a0502c3129f",
+          "833": "a3a4f83bededee0cac9add62e54658ca08967bee0ab6b6c925178410bf7c5b4c",
+          "834": "11becddc7f4c24896b06190b7cacf559e56a0bd974668adf5b929142db22efa9",
+          "842": "14b8f67747d3f7d78d9231176f78f2994fb61361e99c225b0cfe325ca6e1ee06",
+          "843": "cb7c12c5b2358e5922ee6f9cf1b4065a3589e38304e2c5ac2c7a7fa8a2feeec5",
+          "844": "2b12c171ef1b233f8676312a4c0d46cf9002f1e7f02fc0156b0cfe324e5c2cf9",
+          "861": "a7bac7ae1b321a20e8fe5917d9aa5bb6205eafee928028205c924c09dc5b5822",
+          "862": "a369c1d602b059cf3c195192c014da61a3ce498a6a620b926ffecf930bb89105",
+          "863": "7f815444eb044528e7480301b303d12b6381c12cf8d0ae12bc7e2bcbb0e884fd",
+          "864": "dbf5564f62d65670577287954a934771af4b4fb023807c853ebb6f82bc5e6061",
+          "865": "a4cdbf865bd2b3d6b4d0e35b402ac6835a07426a955cca380aad3df8149134dd",
+          "866": "329057598947d8dd3ae15d05547b36ccad2f0ba5ff6daa7f77334268ab8104c6",
+          "867": "7d0ea908efb1eddc437ac5b260f063371feec1a81179fedc5f0f54851cd1dea0",
+          "868": "7098c01c38fa681fb974603eb32defc591aeb1f069352ffc6c985ea129f8d782"
+        },
+        "figures": [
+          "SOURCE_HESSIAN_FILTER_BOUNDS.png",
+          "SOURCE_HESSIAN_FULL_SOURCE_MAP.png"
+        ],
+        "finding": "All17 new proof and affected receiving-note pages inspected in five contact sheets; four proof pages individually inspected. Both final reproducible figures inspected. Full signed source-Hessian formula, finite denominators and direct original-source terms render correctly. No new clipping, overlap, overflow or missing glyph. Earlier59overfull warnings and one earlier missing delta remain; PDF local QA."
+      }
+    }
+  },
+  "source_hessian_compile": {
+    "utc": "2026-10-12T07:34:23.565969+00:00",
+    "tex_sha256": "a607c4c7c5708ae3ccc6fe47d7eea4d23a7a22154ecf93da137e2b9d1143e91c",
+    "pdf_sha256": "779303fa21ca302c1af4ddfebed03f641b6fbd2240a206f0750bff5cf6ac0ee9",
+    "pages": 868,
+    "source_files": 86,
+    "math_blocks": 20103,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T07:34:23.500531+00:00",
+      "complete": true,
+      "pages": 868,
+      "inspected_pages": [
+        551,
+        552,
+        553,
+        832,
+        833,
+        834,
+        842,
+        843,
+        844,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868
+      ],
+      "contact_sheets": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "individual_detail_pages": [
+        863,
+        864,
+        865,
+        866
+      ],
+      "page_sha256": {
+        "551": "9b36927e7211c91dec123397fd4e70c23f692260d2cd465543bfea98f3ec285f",
+        "552": "6ecc790f4312c48d9965e987f9b567e40f39a61e90c3002ef50b47da9a2c1cac",
+        "553": "74bb1f30445cc22f0022ae321cad0e29cda2b11a6fdc98cfb21c3ad3751efe30",
+        "832": "bfbcf7073ce70b51732894c3d90e32e280477b20b8b533f24da36a0502c3129f",
+        "833": "a3a4f83bededee0cac9add62e54658ca08967bee0ab6b6c925178410bf7c5b4c",
+        "834": "11becddc7f4c24896b06190b7cacf559e56a0bd974668adf5b929142db22efa9",
+        "842": "14b8f67747d3f7d78d9231176f78f2994fb61361e99c225b0cfe325ca6e1ee06",
+        "843": "cb7c12c5b2358e5922ee6f9cf1b4065a3589e38304e2c5ac2c7a7fa8a2feeec5",
+        "844": "2b12c171ef1b233f8676312a4c0d46cf9002f1e7f02fc0156b0cfe324e5c2cf9",
+        "861": "a7bac7ae1b321a20e8fe5917d9aa5bb6205eafee928028205c924c09dc5b5822",
+        "862": "a369c1d602b059cf3c195192c014da61a3ce498a6a620b926ffecf930bb89105",
+        "863": "7f815444eb044528e7480301b303d12b6381c12cf8d0ae12bc7e2bcbb0e884fd",
+        "864": "dbf5564f62d65670577287954a934771af4b4fb023807c853ebb6f82bc5e6061",
+        "865": "a4cdbf865bd2b3d6b4d0e35b402ac6835a07426a955cca380aad3df8149134dd",
+        "866": "329057598947d8dd3ae15d05547b36ccad2f0ba5ff6daa7f77334268ab8104c6",
+        "867": "7d0ea908efb1eddc437ac5b260f063371feec1a81179fedc5f0f54851cd1dea0",
+        "868": "7098c01c38fa681fb974603eb32defc591aeb1f069352ffc6c985ea129f8d782"
+      },
+      "figures": [
+        "SOURCE_HESSIAN_FILTER_BOUNDS.png",
+        "SOURCE_HESSIAN_FULL_SOURCE_MAP.png"
+      ],
+      "finding": "All17 new proof and affected receiving-note pages inspected in five contact sheets; four proof pages individually inspected. Both final reproducible figures inspected. Full signed source-Hessian formula, finite denominators and direct original-source terms render correctly. No new clipping, overlap, overflow or missing glyph. Earlier59overfull warnings and one earlier missing delta remain; PDF local QA."
     }
   }
 }
