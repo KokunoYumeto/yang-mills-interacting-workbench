@@ -553,3 +553,16 @@ with an explicit unscaled attaining field. The actual projected-current matrix t
 \longrightarrow\frac{\pi^2}{32\kappa_*R^2}.
 \]
 The finite constant is given completely in QCF14, and the limit concerns that proved lower bound. QCF16 propagates it into the exact optimized residual gain while retaining its raw coefficient norm and both remaining positive terms. The collective signed source and physical residual still determine the original spectral window; no limiting mass or smooth interacting no-gap endpoint is assumed.
+
+## Actual kinetic profiles and joint shift moments
+
+[KP1–KP17](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md) construct actual subsequential kinetic profiles and prove
+\[
+0<\tau_d\le3/\kappa_*,\qquad
+\sum_d\int_{\mathcal Q}\tau_d^{-1}\le16K_R/9.
+\]
+The full first current-energy matrix obeys
+\[
+0\le Q_j\le15a_j^2/\kappa_*,
+\]
+with its entire positive Hessian remainder retained. One constructed actual subsequence carries the kinetic profiles, a bounded first-energy operator and every member of a finite original test family. KP11 evaluates four joint Green moments, including both mixed entries, at their unchanged \(a_j^5,a_j^6,a_j^7\) scales. KP16 gives the original source norm and energy matrices; KP15 proves their local relation to the plaquette-mean measures. The five remaining moments retain the complete current-span residual in KP13, and KP17 identifies the exact remainder-saturation space for further calculation. All raw coefficient factors, shift powers and physical residuals remain; the smooth interacting no-gap goal continues.

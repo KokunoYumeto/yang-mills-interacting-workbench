@@ -489,3 +489,16 @@ The common test is \((\varphi,\varphi,\varphi)\), and the component-sum-zero tes
 =\frac{27R^5}{32\pi^2}.
 \]
 All intermediate factors remain displayed. The figure uses the full actual-grid source formula with these specified means, original \(a_j=(100j)^{-1}\) and \(q_j=\lceil R/a_j\rceil+3\), and every half-step and integer sample. The proof of GG11 uses the actual interacting state and its full established error bound instead. The [finite checks](check_graph_green.py), [figure source](figure_graph_green.py) and [source-use record](GRAPH_GREEN_SOURCE_USE_LEDGER.json) accompany the complete arguments. Random complex matrix checks test the noncommuting identities; they are not substitute Yang–Mills states.
+
+## Actual kinetic profiles and joint shift moments
+
+[KP1–KP17](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md) construct actual subsequential kinetic profiles and prove
+\[
+0<\tau_d\le3/\kappa_*,\qquad
+\sum_d\int_{\mathcal Q}\tau_d^{-1}\le16K_R/9.
+\]
+The full first current-energy matrix obeys
+\[
+0\le Q_j\le15a_j^2/\kappa_*,
+\]
+with its entire positive Hessian remainder retained. One constructed actual subsequence carries the kinetic profiles, a bounded first-energy operator and every member of a finite original test family. KP11 evaluates four joint Green moments, including both mixed entries, at their unchanged \(a_j^5,a_j^6,a_j^7\) scales. KP16 gives the original source norm and energy matrices; KP15 proves their local relation to the plaquette-mean measures. The five remaining moments retain the complete current-span residual in KP13, and KP17 identifies the exact remainder-saturation space for further calculation. All raw coefficient factors, shift powers and physical residuals remain; the smooth interacting no-gap goal continues.

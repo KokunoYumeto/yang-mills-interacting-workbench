@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T10:47:55.691360+00:00",
+  "checked_utc": "2026-10-12T23:03:39.040485+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -409,8 +409,8 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "13ca7c9126bc969ee7b498fabefa79aa27ee7ec01577eb4968f405188bd088af",
-      "complete_math_blocks": 218,
+      "sha256": "a22cac93db21cd56f68f45ad1ca5046fd3377cd7da61d0debe36259b5ecf987c",
+      "complete_math_blocks": 221,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -505,8 +505,8 @@
     },
     {
       "source": "ACTUAL_SCORE_MOMENTS_AND_SECOND_ENERGY.md",
-      "sha256": "f8dd851b87a3ec1813706e7b51f8400f0c653c8ce365ab37d63de2f5dd3eb3b1",
-      "complete_math_blocks": 159,
+      "sha256": "d48715fb3b63aa24bc7c21e9c6134c63bc30294595d9d6a2b4f968929ad03058",
+      "complete_math_blocks": 162,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -535,14 +535,14 @@
     },
     {
       "source": "CENTERED_CURRENT_COVARIANCE.md",
-      "sha256": "6c4bb6cf1a87d12208957e5fc6ae36ff9e1dd44a3eacb45f99675caf7c4bacb3",
-      "complete_math_blocks": 245,
+      "sha256": "26d0be3788b2868370182b8faaf22b18f29bd3fa540692f6819e393442a4178a",
+      "complete_math_blocks": 248,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "4877e0747d95174b02fca81c8044a6bb20f6c8e3f3cd112034fbae5c75e4a593",
-      "complete_math_blocks": 239,
+      "sha256": "34a0d6f4b7b4291dd037b37c21846fcdb91cd743fa33a70161e7c67e981762e5",
+      "complete_math_blocks": 242,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -559,8 +559,14 @@
     },
     {
       "source": "EXACT_PATCH_GREEN_AND_PHYSICAL_RECEIVER.md",
-      "sha256": "02d914cc9c6b0f87cf800139acef27ef8202f76913f8fd8c7301eaaa4a89385c",
-      "complete_math_blocks": 278,
+      "sha256": "f739a280b9c6e166e49b508c2a3736d0b992edc14ce116a200c53f7746e8ca9b",
+      "complete_math_blocks": 281,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
+      "sha256": "b604e85399021ee5a6c5693ba7689a980e4c3c08e2c21b180ded2f690e15bf11",
+      "complete_math_blocks": 277,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1103,6 +1109,16 @@
     {
       "file": "SOURCE_GREEN_LIMIT_AND_RECEIVER.png",
       "sha256": "4374e0a9722aeeab29fceed1755b4b6fc376de8685241e246baf1c7eb19d8493",
+      "visually_inspected": true
+    },
+    {
+      "file": "KINETIC_PROFILE_AND_MOMENT_MAP.png",
+      "sha256": "d3005ee9d1ae60155b2a5cb59fcf3475169ed0acb8689d316e230901305273fc",
+      "visually_inspected": true
+    },
+    {
+      "file": "KINETIC_MOMENTS_ORIGINAL_GRID.png",
+      "sha256": "5b3d3577701b727848bad4156c740daa2d52a5e1f15bff8629d0011cf77882e9",
       "visually_inspected": true
     }
   ],
@@ -6876,6 +6892,148 @@
         "SOURCE_GREEN_LIMIT_AND_RECEIVER.png"
       ],
       "findings": "All21 new, receiving and adjacent pages inspected in six contact sheets. Both figures inspected separately at full resolution. Every new equation, diagram and caption fits without clipping or overlap. No new overflow or missing glyph; inherited59warnings and one old missing delta remain. PDF retained locally."
+    }
+  },
+  "kinetic_profile_review": {
+    "utc": "2026-10-12T11:09:50.639737+00:00",
+    "coverage": "KP1–KP17 fully derived and reviewed. Full graph inverse tail; actual weak kinetic profiles and reciprocal estimate; nonzero highest shift coefficient; full-row Hessian mean; exact first-energy operator and positive remainder; original cell maps and actual weak operator limit; four joint Green moments with distinct powers; exact five remaining moment columns; full three-shift curvature; local reciprocal/plaquette measure relation; source norm and first-energy matrices with complete candidate kernel.",
+    "strengthening": "The exact vanishing deficit threshold improves reciprocal constant64KR/9 to16KR/9, strengthening the common-test highest-coefficient lower bound byfactor16. Full Hessian-row means convergeL1 throughout the physical cube. SG9 yields the operator boundQ<=15a²/kappa and retains its entire positive remainder. Four joint actual-subsequence Green moments and original norm/energy matrices are calculated with all mixed entries and raw coefficient errors.",
+    "correction": "Limits share one constructed actual subsequence; no uniqueness, multiplier form for the nonlocal first-energy limit, strong operator convergence or moment rates beyond those proved are assumed. The five Z0 moments retain the full current-span complement. Separate coefficient limits do not justify subtracting a leading error at a smaller scale.",
+    "limitations": "No signed positive spectral-window mass or reconstructed smooth gapless interacting continuum state is established. The exact saturation space and current-span residual remain active calculations.",
+    "actual_reading": "Canonical disk index and retained source records used; GG1–15, QG5–7/QG12–13, CFC17/CFC20/CFC24–26, SG2–10 and SOM14–20 checked against their full original formulas. No new external reading or novelty claim.",
+    "diagnostics": {
+      "checks": 772,
+      "all_passed": true,
+      "scope": "Original full graph eigenvalue/tail constants, threshold-dependent reciprocal inequality, complex full first-energy/remainder identities, exact current-span residual, three original shift interpolation, original-grid mixed Green and norm/energy diagnostics with explicitly specified nonlocal matrix."
+    },
+    "figures_inspected": [
+      "KINETIC_PROFILE_AND_MOMENT_MAP.png",
+      "KINETIC_MOMENTS_ORIGINAL_GRID.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
+        "prefix": "KP",
+        "tags": 17,
+        "owner_sha256": "91f66cbcd9c809e70c5e88c5c84ff2aad52a7aa86881c508023427140670570a",
+        "public_sha256": "b604e85399021ee5a6c5693ba7689a980e4c3c08e2c21b180ded2f690e15bf11",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T23:03:39.040485+00:00",
+      "tex_sha256": "6f9e4b2f1bb837c43558933caf0a444d80839b0281433cb47ecf5ac3b0bef4c7",
+      "pdf_sha256": "e536ccbf32da97dd72efdd868e7aee22f4f677db2de6ff184d97a0e6bc069d58",
+      "pages": 974,
+      "source_files": 94,
+      "math_blocks": 22019,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T23:03:38.9648248Z",
+        "complete": true,
+        "pages": 974,
+        "rendered_pages": [
+          713,
+          714,
+          715,
+          862,
+          863,
+          864,
+          915,
+          916,
+          917,
+          929,
+          930,
+          931,
+          962,
+          963,
+          964,
+          965,
+          966,
+          967,
+          968,
+          969,
+          970,
+          971,
+          972,
+          973,
+          974
+        ],
+        "contact_sheets": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "figures": [
+          "KINETIC_PROFILE_AND_MOMENT_MAP.png",
+          "KINETIC_MOMENTS_ORIGINAL_GRID.png"
+        ],
+        "findings": "All25 new, receiving and adjacent pages inspected in seven contact sheets; sheets1–3 before recovery and4–7 after recovery against unchanged sources. Both figures inspected at full resolution. All new equations, diagrams and captions fit without clipping or overlap. No new overflow or missing glyph; inherited59warnings and one old missing delta remain. PDF local only."
+      }
+    }
+  },
+  "kinetic_profile_compile": {
+    "utc": "2026-10-12T23:03:39.040485+00:00",
+    "tex_sha256": "6f9e4b2f1bb837c43558933caf0a444d80839b0281433cb47ecf5ac3b0bef4c7",
+    "pdf_sha256": "e536ccbf32da97dd72efdd868e7aee22f4f677db2de6ff184d97a0e6bc069d58",
+    "pages": 974,
+    "source_files": 94,
+    "math_blocks": 22019,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T23:03:38.9648248Z",
+      "complete": true,
+      "pages": 974,
+      "rendered_pages": [
+        713,
+        714,
+        715,
+        862,
+        863,
+        864,
+        915,
+        916,
+        917,
+        929,
+        930,
+        931,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        971,
+        972,
+        973,
+        974
+      ],
+      "contact_sheets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "figures": [
+        "KINETIC_PROFILE_AND_MOMENT_MAP.png",
+        "KINETIC_MOMENTS_ORIGINAL_GRID.png"
+      ],
+      "findings": "All25 new, receiving and adjacent pages inspected in seven contact sheets; sheets1–3 before recovery and4–7 after recovery against unchanged sources. Both figures inspected at full resolution. All new equations, diagrams and captions fit without clipping or overlap. No new overflow or missing glyph; inherited59warnings and one old missing delta remain. PDF local only."
     }
   }
 }
