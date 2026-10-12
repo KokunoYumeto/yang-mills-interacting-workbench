@@ -407,3 +407,7 @@ Provider proofs: [GF3–GF14](https://github.com/KokunoYumeto/yang-mills-interac
 ![Exact three-scale scalar kernels in the comparison coordinate lambda/s, with original s retained. The signed kernel is nonpositive outside the shaded window; its actual spectral integral is not assigned a value. PLF25–PLF26.](THREE_SCALE_PHYSICAL_WINDOW.png)
 
 Reproducible [diagnostics and figures](check_physical_lift.py) and [source-use record](PHYSICAL_LIFT_SOURCE_USE_LEDGER.json). Finite graph models are not samples of the original Yang–Mills vacuum.
+
+## Actual filtered currents and the complete inverse contribution
+
+[FTC1–FTC33](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_FILTERED_CURRENT_AND_TAIL.md) transfer the original positive first energy to the outside Wilson source and prove a positive filtered-response bound with its original vanishing scale retained. The complete inverse contribution is located through an exact map from the physical window, including its full metric. Direct optimization of the filtered response retains the original force, every mixed Hessian and all exterior rows in a complete second-moment matrix. Both physical residual norms remain. An explicit comparison measure shows why the moment bounds alone do not establish surviving low-energy weight. The signed three-scale interacting response and the continuum no-gap endpoint remain active calculations.

@@ -102,6 +102,9 @@ for name in names:
     p=ROOT/name;s=p.read_text(encoding='utf-8')
     source_base_url='https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/'+(p.parent.relative_to(ROOT).as_posix()+'/' if p.parent!=ROOT else '')
     body=convert(s)
+    if name in ['FULL_PHYSICAL_LIFT_AND_SOURCE.md', 'POSITIVE_TIME_COVARIANCE.md', 'ACTUAL_GROUND_GRADIENT_TRIAL.md']:
+        heading=r'\subsection*{Actual filtered currents and the complete inverse contribution}'
+        body=body.replace(heading,r'\clearpage'+'\n'+heading)
     if name in ['FULL_HAMILTONIAN_GROUND_FIBER.md', 'RAW_OVERLAP_AND_ORIGINAL_METRIC.md']:
         heading=r'\subsection*{Full physical lift and original-source spectral windows}'
         body=body.replace(heading,r'\clearpage'+'\n'+heading)
@@ -151,7 +154,7 @@ for name in names:
     blocks=re.findall(r'(?s)\\\[.*?\\\]|\\\(.*?\\\)',s)
     assert all(typeset_math(x) in body for x in blocks)
     rows.append({'source':name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'complete_math_blocks':len(blocks),'split_to_aligned_wrappers':s.count(r'\begin{split}')})
-    if name in ['NEGATIVE_TRACE_COMPRESSION.md', 'GAMMA_INTEGRAL.md', 'HOLONOMY_CURVATURE_RECEIVING.md', 'HOLONOMY_CURVATURE_REVIEW.md', 'SIMULTANEOUS_CENTRAL_MEASURE.md', 'CURRENT_COVARIANCE_EQUALITY.md', 'SMOOTH_MEASURE_REALIZATION.md', 'AMPLITUDE_ALGEBRA.md', 'GLOBAL_MEASURE_EVOLUTION.md', 'STATIONARY_PHASE_RECEIVING.md', 'ENERGY_ROOT_AND_ANCHORED_HISTORIES.md', 'POSITIVE_TIME_COVARIANCE.md', 'ACTUAL_GROUND_GRADIENT_TRIAL.md', 'CONDITIONAL_GROUND_CURRENT_TRIAL.md', 'RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md', 'WILSON_AND_CURRENT_COVARIANCE_SIGNS.md', 'OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md', 'BOUNDARY_FORCE_PROJECTION.md', 'BOUNDARY_DIVERGENCE_AND_MARGINAL_MOMENTS.md', 'KINETIC_CURRENT_AND_PHYSICAL_ENERGY.md', 'LOCAL_ENERGY_PHYSICAL_WINDOWS.md', 'SMOOTH_WEIGHTED_LOCAL_ENERGY.md', 'SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md', 'ACTUAL_EDGE_ENERGY_VARIANCE.md', 'FULL_HAMILTONIAN_GROUND_FIBER.md', 'RAW_OVERLAP_AND_ORIGINAL_METRIC.md', 'FULL_PHYSICAL_LIFT_AND_SOURCE.md']:
+    if name in ['NEGATIVE_TRACE_COMPRESSION.md', 'GAMMA_INTEGRAL.md', 'HOLONOMY_CURVATURE_RECEIVING.md', 'HOLONOMY_CURVATURE_REVIEW.md', 'SIMULTANEOUS_CENTRAL_MEASURE.md', 'CURRENT_COVARIANCE_EQUALITY.md', 'SMOOTH_MEASURE_REALIZATION.md', 'AMPLITUDE_ALGEBRA.md', 'GLOBAL_MEASURE_EVOLUTION.md', 'STATIONARY_PHASE_RECEIVING.md', 'ENERGY_ROOT_AND_ANCHORED_HISTORIES.md', 'POSITIVE_TIME_COVARIANCE.md', 'ACTUAL_GROUND_GRADIENT_TRIAL.md', 'CONDITIONAL_GROUND_CURRENT_TRIAL.md', 'RETAINED_DERIVATIVE_AND_GOOD_BOUNDARIES.md', 'WILSON_AND_CURRENT_COVARIANCE_SIGNS.md', 'OUTSIDE_FORCE_AND_CURRENT_MOMENTS.md', 'BOUNDARY_FORCE_PROJECTION.md', 'BOUNDARY_DIVERGENCE_AND_MARGINAL_MOMENTS.md', 'KINETIC_CURRENT_AND_PHYSICAL_ENERGY.md', 'LOCAL_ENERGY_PHYSICAL_WINDOWS.md', 'SMOOTH_WEIGHTED_LOCAL_ENERGY.md', 'SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md', 'ACTUAL_EDGE_ENERGY_VARIANCE.md', 'FULL_HAMILTONIAN_GROUND_FIBER.md', 'RAW_OVERLAP_AND_ORIGINAL_METRIC.md', 'FULL_PHYSICAL_LIFT_AND_SOURCE.md', 'ACTUAL_FILTERED_CURRENT_AND_TAIL.md']:
         body='\\begingroup\\ifPDFTeX\\else\\IfFontExistsTF{Cambria}{\\fontspec{Cambria}}{\\IfFontExistsTF{DejaVu Sans}{\\fontspec{DejaVu Sans}}{}}\\fi\n'+body+'\n\\endgroup'
     bodies.append(body)
 header=HEADER.replace('Yang--Mills: complete research proofs','Yang--Mills central signs and shrinking spectral windows').replace('booktabs,graphicx','booktabs,longtable,graphicx')

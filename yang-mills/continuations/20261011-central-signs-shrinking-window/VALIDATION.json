@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T01:31:06.984791+00:00",
+  "checked_utc": "2026-10-12T01:59:12.479892+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -403,13 +403,13 @@
     },
     {
       "source": "POSITIVE_TIME_COVARIANCE.md",
-      "sha256": "004dc47e4a1580aa3e6e6b4e0404e42395e219a61a9538cf69b7ebce8a29054c",
+      "sha256": "826d030593abd2f9b9d43dacf6af766004bc4232f1f9def6ac3bf8090ce067c1",
       "complete_math_blocks": 213,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "f42055f41a5430d008d90e24e054f1e99951eafdfb9e7784514e3c6e7e60c937",
+      "sha256": "054fe81fd70b4c0bd3b201aa1600fd440d7d78200a34e9e2b5bbf3fdac72f7b9",
       "complete_math_blocks": 207,
       "split_to_aligned_wrappers": 0
     },
@@ -493,9 +493,15 @@
     },
     {
       "source": "FULL_PHYSICAL_LIFT_AND_SOURCE.md",
-      "sha256": "c232b2862f46ea7c00cc8d2250971b5acb04ef23587617bb3137ef7a5cb9c6d4",
+      "sha256": "b6e8252433d9daa3620958943fcfa81f1c43700d932a862af82f4acb0e8638c3",
       "complete_math_blocks": 175,
       "split_to_aligned_wrappers": 6
+    },
+    {
+      "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
+      "sha256": "bb06ac059bf9adab3e638f2949bfedbd22d47f69a25c0c56e960c71550f7759a",
+      "complete_math_blocks": 135,
+      "split_to_aligned_wrappers": 3
     }
   ],
   "figures": [
@@ -932,6 +938,16 @@
     {
       "file": "THREE_SCALE_PHYSICAL_WINDOW.png",
       "sha256": "8f32e4fcbe08d54cef76dfa31530d27c546109634257f1f7ac1bbddc55946944",
+      "visually_inspected": true
+    },
+    {
+      "file": "FILTERED_FINITE_SUM_BOUNDS.png",
+      "sha256": "d9f65f9355da2a54d0d125f74a3e4acff79cb839b5d8f0cfc4d06f18978d9e83",
+      "visually_inspected": true
+    },
+    {
+      "file": "FILTERED_CURRENT_OPTIMIZATION.png",
+      "sha256": "14bfa8a4e02d8d5348ce22e353b86ef57ecab4cfad0ab5eb231048b451fa13b2",
       "visually_inspected": true
     }
   ],
@@ -5101,6 +5117,171 @@
         "THREE_SCALE_PHYSICAL_WINDOW.png"
       ],
       "finding": "All new proof and changed receiving-note pages inspected. No new clipping, overlapping formula, missing glyph or equation overflow. Both mathematical figures inspected at full resolution. Earlier59 overfull warnings and one earlier missing delta remain; PDF is local QA."
+    }
+  },
+  "filtered_current_review": {
+    "utc": "2026-10-12T01:49:47.192511+00:00",
+    "coverage": "FTC1–FTC33: original outside-source energy transfer, complete original Hessian and filtered-current map, actual positive a_j cubed response bound, full noncommuting inverse remainder, vanishing finite sums below order a_j to minus three halves, original-window receiver near one at distance order a_j squared, complete original force/Hessian second-moment matrix, direct squared-resolvent optimization and both physical residuals.",
+    "strengthening": "The actual outside Wilson source inherits the original positive first-energy constants. Its filtered response has a proved lower bound with the original a_j cubed scale. A complete finite matrix optimization now targets the physical filter itself. Its source, original force and every mixed/exterior Hessian contribution are explicit. Both residual norms remain.",
+    "limitations": "The actual signed three-scale quantity remains unevaluated as positive. An exact comparison measure shows that the retained moment and a_j cubed filter bounds permit high-energy escape. The full interacting continuum state, reconstruction, intended-theory identification and smooth no-gap endpoint remain unproved.",
+    "actual_reading": "Complete current-tail derivation, PLF1–PLF26, PT14–PT36, EF1–EF3, CE7–CE10, BM13, SG1–SG11 and SG21–SG33 read directly. Original-author reading coverage is retained from PT; index hits are routing records only.",
+    "diagnostics": {
+      "checks": 3986,
+      "all_passed": true,
+      "scope": "Noncommuting finite-operator diagnostics, exact original ordered SU(2) Hessian checks, complete force/Hessian-square algebra including exterior rows, and explicit comparison measures. No Yang–Mills vacuum samples."
+    },
+    "figures_inspected": [
+      "FILTERED_FINITE_SUM_BOUNDS.png",
+      "FILTERED_CURRENT_OPTIMIZATION.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
+        "prefix": "FTC",
+        "tags": 33,
+        "owner_sha256": "ac253bf89275fb146de26cef00c105a94f7c5ede9fcab87c2c7569c965accbb9",
+        "public_sha256": "bb06ac059bf9adab3e638f2949bfedbd22d47f69a25c0c56e960c71550f7759a",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-12T01:59:12.479892+00:00",
+      "tex_sha256": "1cc4b35f18a36ef992054c6135c7c2d1fabd7e143f21e78b6bd92602d16372fb",
+      "pdf_sha256": "9b8db4b337217e25f3fe749a6e395d4d3aa0eddb705ccfd07c3d10cd8a66979c",
+      "pages": 833,
+      "source_files": 83,
+      "math_blocks": 19601,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-12T01:59:07.375324+00:00",
+        "complete": true,
+        "pages": 833,
+        "inspected_pages": [
+          688,
+          689,
+          690,
+          701,
+          702,
+          703,
+          825,
+          826,
+          827,
+          828,
+          829,
+          830,
+          831,
+          832,
+          833
+        ],
+        "contact_sheets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "individual_detail_pages": [
+          828,
+          829,
+          830,
+          831,
+          832,
+          833
+        ],
+        "page_sha256": {
+          "688": "43ca6f4357f876a672ac1dc052870efb77b48f3e327e43e93e02b218ad525b6b",
+          "689": "a171e58c05faef0db102729d14055292d8b4642c46b3bf9cf2fa1f926e7ba9a4",
+          "690": "616aef6227350b2e7f97e987a08cdf6e9d025944f7527f5c986c3b0b5066d67e",
+          "701": "14e85891115ee11b2bf4af0a59f96ef0dff63e09f09d64be26cffa30a05e04b9",
+          "702": "8c5e30b301f0c5aeecb66399f24149b762a3159a2ba82aa4e577fac83bc305e1",
+          "703": "a72cd63d60adf2b58d3f52f72bc8c9f1ecf51d319dd59a4277e524ba002c239b",
+          "825": "5e7a1e4f3d90b8da872106abe106dc422de3f46dbad75bd4fc3801b1731dc40a",
+          "826": "35bd3d305b5797016fde419302c70437451eb21733326c6db349f0e7110bb1d8",
+          "827": "88b6379c658101fca8a31c35bbd404f7a2d62f09bb9b91f448b68c04dd4d0f70",
+          "828": "69f052453ce0f929d0377d6830879ad807d6c83a00a3c583cd15cccf0d13b70f",
+          "829": "b6349e6f699b5960d7b86c877a95b8743fe3430853de403330350de483435676",
+          "830": "1a6dd2fca57d310910de6265f7394033c567c5b5502476451819dd0045948dc9",
+          "831": "40272751261be036a1b81cc4c2a4222c9e70fdb61030e4562c1ddae175606efe",
+          "832": "f86d7434a81c339d64ae6dce78c5bd6996d2136cb857a15377d968086bc9c637",
+          "833": "a5f3fd06b30bd9c806cce5c2098b66621ebe39c554479c8e85c288fd679592dc"
+        },
+        "figures": [
+          "FILTERED_FINITE_SUM_BOUNDS.png",
+          "FILTERED_CURRENT_OPTIMIZATION.png"
+        ],
+        "finding": "All fifteen new proof and receiving-note pages inspected in contact sheets; six final pages inspected individually. No new clipping, overlapping formula, missing glyph or equation overflow. Both final mathematical figures inspected. Earlier59 overfull warnings and one earlier missing delta remain; PDF is local QA."
+      }
+    }
+  },
+  "filtered_current_compile": {
+    "utc": "2026-10-12T01:59:12.479892+00:00",
+    "tex_sha256": "1cc4b35f18a36ef992054c6135c7c2d1fabd7e143f21e78b6bd92602d16372fb",
+    "pdf_sha256": "9b8db4b337217e25f3fe749a6e395d4d3aa0eddb705ccfd07c3d10cd8a66979c",
+    "pages": 833,
+    "source_files": 83,
+    "math_blocks": 19601,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-12T01:59:07.375324+00:00",
+      "complete": true,
+      "pages": 833,
+      "inspected_pages": [
+        688,
+        689,
+        690,
+        701,
+        702,
+        703,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833
+      ],
+      "contact_sheets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "individual_detail_pages": [
+        828,
+        829,
+        830,
+        831,
+        832,
+        833
+      ],
+      "page_sha256": {
+        "688": "43ca6f4357f876a672ac1dc052870efb77b48f3e327e43e93e02b218ad525b6b",
+        "689": "a171e58c05faef0db102729d14055292d8b4642c46b3bf9cf2fa1f926e7ba9a4",
+        "690": "616aef6227350b2e7f97e987a08cdf6e9d025944f7527f5c986c3b0b5066d67e",
+        "701": "14e85891115ee11b2bf4af0a59f96ef0dff63e09f09d64be26cffa30a05e04b9",
+        "702": "8c5e30b301f0c5aeecb66399f24149b762a3159a2ba82aa4e577fac83bc305e1",
+        "703": "a72cd63d60adf2b58d3f52f72bc8c9f1ecf51d319dd59a4277e524ba002c239b",
+        "825": "5e7a1e4f3d90b8da872106abe106dc422de3f46dbad75bd4fc3801b1731dc40a",
+        "826": "35bd3d305b5797016fde419302c70437451eb21733326c6db349f0e7110bb1d8",
+        "827": "88b6379c658101fca8a31c35bbd404f7a2d62f09bb9b91f448b68c04dd4d0f70",
+        "828": "69f052453ce0f929d0377d6830879ad807d6c83a00a3c583cd15cccf0d13b70f",
+        "829": "b6349e6f699b5960d7b86c877a95b8743fe3430853de403330350de483435676",
+        "830": "1a6dd2fca57d310910de6265f7394033c567c5b5502476451819dd0045948dc9",
+        "831": "40272751261be036a1b81cc4c2a4222c9e70fdb61030e4562c1ddae175606efe",
+        "832": "f86d7434a81c339d64ae6dce78c5bd6996d2136cb857a15377d968086bc9c637",
+        "833": "a5f3fd06b30bd9c806cce5c2098b66621ebe39c554479c8e85c288fd679592dc"
+      },
+      "figures": [
+        "FILTERED_FINITE_SUM_BOUNDS.png",
+        "FILTERED_CURRENT_OPTIMIZATION.png"
+      ],
+      "finding": "All fifteen new proof and receiving-note pages inspected in contact sheets; six final pages inspected individually. No new clipping, overlapping formula, missing glyph or equation overflow. Both final mathematical figures inspected. Earlier59 overfull warnings and one earlier missing delta remain; PDF is local QA."
     }
   }
 }

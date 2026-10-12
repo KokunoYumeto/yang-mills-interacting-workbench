@@ -6410,5 +6410,221 @@
       }
     },
     "index_routes": "Three bounded index queries,24 routing records; no new source reading inferred from hits."
+  },
+  {
+    "source_id": "programme:PT-human-provenance-retained-FTC-20261012",
+    "primary_sources": [
+      {
+        "source_id": "arxiv:1703.10011v2",
+        "authors": "Jon Johnsen",
+        "title": "On the spectral properties of Witten-Laplacians, their range projections and Brascamp-Lieb’s inequality",
+        "version": 2,
+        "source_url": "https://arxiv.org/src/1703.10011v2",
+        "archive_sha256": "65d3656817237c4099ef10d1e2ea64489ceab2a090d602c52f36202733dace67",
+        "original_files": [
+          {
+            "path": "original/original.tex",
+            "bytes": 125102,
+            "sha256": "0ecf58f9c246bc1c2233c1052767a61c92d944a9948ecf0e396f08754a701120"
+          }
+        ],
+        "actual_reading": [
+          [
+            934,
+            1167
+          ],
+          [
+            1439,
+            1558
+          ]
+        ],
+        "receiving_proofs": "PT9–PT16, PT36; exact-range polar isometry and domains",
+        "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task’s machine-readable source extension after original author TeX acquisition.",
+        "original_archive_preserved": true,
+        "source_pdf_used": false,
+        "reading_is_bounded": true
+      },
+      {
+        "source_id": "arxiv:math-ph/0611002v9",
+        "authors": "Assane Lo",
+        "title": "Witten Laplacian Methods for the Decay of Correlations",
+        "version": 9,
+        "source_url": "https://arxiv.org/src/math-ph/0611002v9",
+        "archive_sha256": "22c7ba8019f39369fe8a2a60184158e25934db2b8c010647e6193eae8507ba79",
+        "original_files": [
+          {
+            "path": "original/original.tex",
+            "bytes": 121680,
+            "sha256": "14309e2d8487a2c7593b1809ec17fce32c3bbc326d81495263542da83e185ac9"
+          }
+        ],
+        "actual_reading": [
+          [
+            308,
+            446
+          ],
+          [
+            2029,
+            2083
+          ]
+        ],
+        "receiving_proofs": "PT9–PT12 and PT30–PT32; full curved weighted-operator dictionary and compact convexity obstruction",
+        "index_status": "Exact arXiv identifier query had no indexed hit. Added to this task’s machine-readable source extension after original author TeX acquisition.",
+        "original_archive_preserved": true,
+        "source_pdf_used": false,
+        "reading_is_bounded": true
+      }
+    ],
+    "application": "Retained original-author provenance for the weighted differential-form and exact physical gradient maps in PT14–PT36. FTC derives the particular full filtered-current and finite optimization formulas directly. No additional author-source reading claimed."
+  },
+  {
+    "source_id": "programme:FTC-20261012",
+    "proofs": [
+      {
+        "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
+        "prefix": "FTC",
+        "tags": 33,
+        "owner_sha256": "ac253bf89275fb146de26cef00c105a94f7c5ede9fcab87c2c7569c965accbb9",
+        "public_sha256": "bb06ac059bf9adab3e638f2949bfedbd22d47f69a25c0c56e960c71550f7759a",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "FULL_PHYSICAL_LIFT_AND_SOURCE.md",
+        "version": "9b1d9ee0d30286c403a27722c3cc935a44a7ea00",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9b1d9ee0d30286c403a27722c3cc935a44a7ea00/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_PHYSICAL_LIFT_AND_SOURCE.md",
+        "sha256": "c232b2862f46ea7c00cc8d2250971b5acb04ef23587617bb3137ef7a5cb9c6d4"
+      },
+      {
+        "source": "POSITIVE_TIME_COVARIANCE.md",
+        "version": "9b1d9ee0d30286c403a27722c3cc935a44a7ea00",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9b1d9ee0d30286c403a27722c3cc935a44a7ea00/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_TIME_COVARIANCE.md",
+        "sha256": "004dc47e4a1580aa3e6e6b4e0404e42395e219a61a9538cf69b7ebce8a29054c"
+      },
+      {
+        "source": "ENERGY_ROOT_AND_ANCHORED_HISTORIES.md",
+        "version": "9b1d9ee0d30286c403a27722c3cc935a44a7ea00",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9b1d9ee0d30286c403a27722c3cc935a44a7ea00/yang-mills/continuations/20261011-central-signs-shrinking-window/ENERGY_ROOT_AND_ANCHORED_HISTORIES.md",
+        "sha256": "a4744ad61a6c4abf5f9439e71a8388fb6b60a7da719cce6a0926a804d343cfdc"
+      },
+      {
+        "source": "CURRENT_COVARIANCE_EQUALITY.md",
+        "version": "9b1d9ee0d30286c403a27722c3cc935a44a7ea00",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9b1d9ee0d30286c403a27722c3cc935a44a7ea00/yang-mills/continuations/20261011-central-signs-shrinking-window/CURRENT_COVARIANCE_EQUALITY.md",
+        "sha256": "5d4f9d3e2acfc31906eef5b7a2241ce066a8cbba31ea82a457a4d1ebc66cccc6"
+      },
+      {
+        "source": "BOUNDED_ENERGY_MULTIPLIER.md",
+        "version": "9b1d9ee0d30286c403a27722c3cc935a44a7ea00",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9b1d9ee0d30286c403a27722c3cc935a44a7ea00/yang-mills/continuations/20261011-central-signs-shrinking-window/BOUNDED_ENERGY_MULTIPLIER.md",
+        "sha256": "fbf1b3a5b10c15e89ecc3fa701c9acc12ff85ae0343cabfef9f80283c7c84507"
+      },
+      {
+        "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "version": "9b1d9ee0d30286c403a27722c3cc935a44a7ea00",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/9b1d9ee0d30286c403a27722c3cc935a44a7ea00/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "sha256": "f42055f41a5430d008d90e24e054f1e99951eafdfb9e7784514e3c6e7e60c937"
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-12T01:49:47.192511+00:00",
+      "coverage": "FTC1–FTC33: original outside-source energy transfer, complete original Hessian and filtered-current map, actual positive a_j cubed response bound, full noncommuting inverse remainder, vanishing finite sums below order a_j to minus three halves, original-window receiver near one at distance order a_j squared, complete original force/Hessian second-moment matrix, direct squared-resolvent optimization and both physical residuals.",
+      "strengthening": "The actual outside Wilson source inherits the original positive first-energy constants. Its filtered response has a proved lower bound with the original a_j cubed scale. A complete finite matrix optimization now targets the physical filter itself. Its source, original force and every mixed/exterior Hessian contribution are explicit. Both residual norms remain.",
+      "limitations": "The actual signed three-scale quantity remains unevaluated as positive. An exact comparison measure shows that the retained moment and a_j cubed filter bounds permit high-energy escape. The full interacting continuum state, reconstruction, intended-theory identification and smooth no-gap endpoint remain unproved.",
+      "actual_reading": "Complete current-tail derivation, PLF1–PLF26, PT14–PT36, EF1–EF3, CE7–CE10, BM13, SG1–SG11 and SG21–SG33 read directly. Original-author reading coverage is retained from PT; index hits are routing records only.",
+      "diagnostics": {
+        "checks": 3986,
+        "all_passed": true,
+        "scope": "Noncommuting finite-operator diagnostics, exact original ordered SU(2) Hessian checks, complete force/Hessian-square algebra including exterior rows, and explicit comparison measures. No Yang–Mills vacuum samples."
+      },
+      "figures_inspected": [
+        "FILTERED_FINITE_SUM_BOUNDS.png",
+        "FILTERED_CURRENT_OPTIMIZATION.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
+          "prefix": "FTC",
+          "tags": 33,
+          "owner_sha256": "ac253bf89275fb146de26cef00c105a94f7c5ede9fcab87c2c7569c965accbb9",
+          "public_sha256": "bb06ac059bf9adab3e638f2949bfedbd22d47f69a25c0c56e960c71550f7759a",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-12T01:59:12.479892+00:00",
+        "tex_sha256": "1cc4b35f18a36ef992054c6135c7c2d1fabd7e143f21e78b6bd92602d16372fb",
+        "pdf_sha256": "9b8db4b337217e25f3fe749a6e395d4d3aa0eddb705ccfd07c3d10cd8a66979c",
+        "pages": 833,
+        "source_files": 83,
+        "math_blocks": 19601,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-12T01:59:07.375324+00:00",
+          "complete": true,
+          "pages": 833,
+          "inspected_pages": [
+            688,
+            689,
+            690,
+            701,
+            702,
+            703,
+            825,
+            826,
+            827,
+            828,
+            829,
+            830,
+            831,
+            832,
+            833
+          ],
+          "contact_sheets": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "individual_detail_pages": [
+            828,
+            829,
+            830,
+            831,
+            832,
+            833
+          ],
+          "page_sha256": {
+            "688": "43ca6f4357f876a672ac1dc052870efb77b48f3e327e43e93e02b218ad525b6b",
+            "689": "a171e58c05faef0db102729d14055292d8b4642c46b3bf9cf2fa1f926e7ba9a4",
+            "690": "616aef6227350b2e7f97e987a08cdf6e9d025944f7527f5c986c3b0b5066d67e",
+            "701": "14e85891115ee11b2bf4af0a59f96ef0dff63e09f09d64be26cffa30a05e04b9",
+            "702": "8c5e30b301f0c5aeecb66399f24149b762a3159a2ba82aa4e577fac83bc305e1",
+            "703": "a72cd63d60adf2b58d3f52f72bc8c9f1ecf51d319dd59a4277e524ba002c239b",
+            "825": "5e7a1e4f3d90b8da872106abe106dc422de3f46dbad75bd4fc3801b1731dc40a",
+            "826": "35bd3d305b5797016fde419302c70437451eb21733326c6db349f0e7110bb1d8",
+            "827": "88b6379c658101fca8a31c35bbd404f7a2d62f09bb9b91f448b68c04dd4d0f70",
+            "828": "69f052453ce0f929d0377d6830879ad807d6c83a00a3c583cd15cccf0d13b70f",
+            "829": "b6349e6f699b5960d7b86c877a95b8743fe3430853de403330350de483435676",
+            "830": "1a6dd2fca57d310910de6265f7394033c567c5b5502476451819dd0045948dc9",
+            "831": "40272751261be036a1b81cc4c2a4222c9e70fdb61030e4562c1ddae175606efe",
+            "832": "f86d7434a81c339d64ae6dce78c5bd6996d2136cb857a15377d968086bc9c637",
+            "833": "a5f3fd06b30bd9c806cce5c2098b66621ebe39c554479c8e85c288fd679592dc"
+          },
+          "figures": [
+            "FILTERED_FINITE_SUM_BOUNDS.png",
+            "FILTERED_CURRENT_OPTIMIZATION.png"
+          ],
+          "finding": "All fifteen new proof and receiving-note pages inspected in contact sheets; six final pages inspected individually. No new clipping, overlapping formula, missing glyph or equation overflow. Both final mathematical figures inspected. Earlier59 overfull warnings and one earlier missing delta remain; PDF is local QA."
+        }
+      }
+    },
+    "index_routes": "Three bounded canonical-index queries,18 routing records; no new source reading inferred from hits."
   }
 ]
