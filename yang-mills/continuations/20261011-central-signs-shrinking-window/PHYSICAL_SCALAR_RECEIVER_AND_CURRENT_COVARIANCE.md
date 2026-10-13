@@ -574,3 +574,15 @@ The complete KP11 and CSR19 limiting matrices, their raw coefficient error facto
 ![Proved original kinetic and plaquette bounds at the illustrative coupling kappa*=1. These curves are bounds, not measured vacuum values. Exact finite roots and limits are PFR10 and PFR12.](KINETIC_CEILING_AND_FACE_FLOOR.png)
 
 [The diagnostic source](check_physical_receiver.py) checks the finite physical intertwinings, exact defect, both quadratic roots, retained budget and full exterior-pair covariance algebra. Its specified finite arrays are algebra diagnostics, not simulated Yang–Mills vacua. [The figure source](figure_physical_receiver.py), [diagnostic results](PHYSICAL_RECEIVER_CHECKS.json) and [source-use ledger](PHYSICAL_RECEIVER_SOURCE_USE_LEDGER.json) retain the exact inputs and reading coverage. The written proofs establish the claims.
+
+## Actual physical spectral measure and its total kernel
+
+[PSC1–PSC10](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md) construct the actual physical current-norm measure and its complete joint source/energy measure on the original relative-energy interval. They prove
+\[
+\ker\mathcal M([0,\infty])\cap L^2(\mathcal Q;\mathbb C^3)=\{0\},
+\qquad
+d\mathcal C_j(r)=100a_j^2r\,d\mathcal M_j(r).
+\]
+The first statement concerns the total physical measure, including both endpoint atoms. The second preserves the exact map to the leading score covariance, whose original-scale limit is \(\mathcal G\delta_\infty\). Its possible zero coefficient is retained.
+
+PSC7 keeps the surviving original source in one positive block measure. PSC8–PSC9 give all physical cross-shift norm, energy, source and original signed-window limits with their full factors and signs. PSC10 identifies the different kernels obtained when infinity or both endpoints are excluded. Thus total injectivity is proved without assigning it to finite relative energies. The actual allocation of mass and the sign of the original three-shift window remain active calculations toward the smooth interacting continuum no-gap goal.

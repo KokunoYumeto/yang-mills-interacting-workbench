@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-12T23:42:06.788194+00:00",
+  "checked_utc": "2026-10-13T00:03:57.736293+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -409,8 +409,8 @@
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "10273d45d1e60f0694ec86e854ba727f33bfcfc16f6fa3c54e4a17f28dbe8ab6",
-      "complete_math_blocks": 231,
+      "sha256": "a71b7604dc1cd09d2b5e5c10d5e35fc5902ba33268139274e0bf76c495e70e20",
+      "complete_math_blocks": 233,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -541,8 +541,8 @@
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "52ffc514fb15089f84ebb17bb752d6d32031ac46543c6b9ddf0e2c19e23ec83d",
-      "complete_math_blocks": 252,
+      "sha256": "3bde66aeed2068b42c1d0e2035f54d77c8eac884113579fd45ab11098a229bf4",
+      "complete_math_blocks": 254,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -565,20 +565,26 @@
     },
     {
       "source": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
-      "sha256": "30457fbf6c481c6ee661233180baf03b5b361901290fc20be0a1de3f1f8a3cc1",
-      "complete_math_blocks": 287,
+      "sha256": "f1a323b5e0983e0485651103fa5e614c9df047f1591160c3f89c2a1b7cdb738c",
+      "complete_math_blocks": 289,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
-      "sha256": "d7727bfc8b8cbf0960f95334601c94115f244246bed614b8b9e7bab50a888dca",
-      "complete_math_blocks": 217,
+      "sha256": "ace5d5a6d8d1c27bbc41ebda434219e1a6049e01387b19538c9e75859242797e",
+      "complete_math_blocks": 219,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
-      "sha256": "7f9e6025ff9dc772a4ba4fa8c6b1bceaa4c913faa162836e1eec256d37ce331a",
-      "complete_math_blocks": 211,
+      "sha256": "d7b217f2808e6dfa3e17390ba40347008e44b135ff79300bda6e3c03f6c32b9e",
+      "complete_math_blocks": 213,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
+      "sha256": "681a1219816de340dada0056ea3fb872d35b53e273b44a29c82bf90b38b4352d",
+      "complete_math_blocks": 127,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1151,6 +1157,11 @@
     {
       "file": "KINETIC_CEILING_AND_FACE_FLOOR.png",
       "sha256": "e6ede7cc65c6a74102934205d3685b3c0da0f63b89a5f7b7311fb054a28cf06d",
+      "visually_inspected": true
+    },
+    {
+      "file": "PHYSICAL_SCORE_SPECTRAL_MAP.png",
+      "sha256": "6dc341cd7cfb94b92dfbdc83c6c0f097fa4b2a122df95abde89ed399328733ff",
       "visually_inspected": true
     }
   ],
@@ -7346,6 +7357,121 @@
       ],
       "contacts": 8,
       "method": "Poppler 105dpi; all eight contact sheets inspected, including complete PFR proof, both figures and every changed receiving-note page with adjacent pages. Both source figure images inspected separately. No clipping, overlap or missing new mathematical glyph found.",
+      "inherited_overfull": 59,
+      "inherited_missing": [
+        "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+      ]
+    }
+  },
+  "physical_score_review": {
+    "utc": "2026-10-12T23:55:47.837076+00:00",
+    "coverage": "PSC1–PSC10 complete derivation reviewed: all original cell adjoints and physical scalar intertwinings, complete Hessian graph, bounded actual joint extraction, leading covariance at relative-energy infinity, exact inverse-energy weight, full phase-gradient cross sum and second face moments, physical total injectivity from actual source convergence, complete joint measure and all original three-shift signs.",
+    "strengthening": "The total actual physical current-norm measure is injective on the original physical cube. Its exact spectral kernels and the original source cross measure have actual common subsequential limits. The leading score covariance has only an infinity atom at the original relative-energy scale.",
+    "correction": "The covariance limit need not be nonzero; the total norm measure is injective but is not proved uniformly coercive. Its finite-energy part can have a kernel, precisely identified in PSC10. No physical mass is inferred from the distinct energy-weighted measure; the exact s/kappa factor and source-mass map are retained.",
+    "limitations": "Allocation among zero, finite positive relative energy and infinity, the sign of the original signed window, and the interacting continuum no-gap endpoint remain to be calculated.",
+    "actual_reading": "Complete programme providers read with exact source versions. The disk index was used before new gauge-Hessian routing; routing records are not source reading. No new external-author reading or novelty claim.",
+    "diagnostics": {
+      "checks": 420,
+      "all_passed": true,
+      "scope": "Exact finite spectral and cell-adjoint algebra for specified complex arrays; all raw powers, full cross blocks, two shifts and original signed three-shift expression. These arrays are not actual Yang–Mills state data. Analytic source comparison and injectivity are proved in PSC5–PSC7, not tested by a substitute state."
+    },
+    "figures_inspected": [
+      "PHYSICAL_SCORE_SPECTRAL_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
+        "prefix": "PSC",
+        "tags": 10,
+        "owner_sha256": "681a1219816de340dada0056ea3fb872d35b53e273b44a29c82bf90b38b4352d",
+        "public_sha256": "681a1219816de340dada0056ea3fb872d35b53e273b44a29c82bf90b38b4352d",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-13T00:03:57.736293+00:00",
+      "tex_sha256": "7d877af2bd38522f6de06f413feaa820cfb87ec40e54da9f7907ee92457770c9",
+      "pdf_sha256": "7a4bbbdef64c8cef4d583f817fe6ca0d114d8d471abe096b0696c03067ed2049",
+      "pages": 1016,
+      "source_files": 97,
+      "math_blocks": 22642,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-13T00:03:57.569416+00:00",
+        "complete": true,
+        "pages": 1016,
+        "inspected_pages": [
+          718,
+          719,
+          720,
+          939,
+          940,
+          941,
+          987,
+          988,
+          989,
+          999,
+          1000,
+          1001,
+          1009,
+          1010,
+          1011,
+          1012,
+          1013,
+          1014,
+          1015,
+          1016
+        ],
+        "contacts": 5,
+        "method": "All receiving and adjacent pages inspected in the first render. Final two proof contact sheets reinspected after moving the final diagnostic paragraph before its figure on the same page. Both rendered mathematical signs and source figure inspected. No new clipping, overlap or missing glyph.",
+        "inherited_overfull": 59,
+        "inherited_missing": [
+          "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+        ]
+      }
+    }
+  },
+  "physical_score_compile": {
+    "utc": "2026-10-13T00:03:57.736293+00:00",
+    "tex_sha256": "7d877af2bd38522f6de06f413feaa820cfb87ec40e54da9f7907ee92457770c9",
+    "pdf_sha256": "7a4bbbdef64c8cef4d583f817fe6ca0d114d8d471abe096b0696c03067ed2049",
+    "pages": 1016,
+    "source_files": 97,
+    "math_blocks": 22642,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-13T00:03:57.569416+00:00",
+      "complete": true,
+      "pages": 1016,
+      "inspected_pages": [
+        718,
+        719,
+        720,
+        939,
+        940,
+        941,
+        987,
+        988,
+        989,
+        999,
+        1000,
+        1001,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016
+      ],
+      "contacts": 5,
+      "method": "All receiving and adjacent pages inspected in the first render. Final two proof contact sheets reinspected after moving the final diagnostic paragraph before its figure on the same page. Both rendered mathematical signs and source figure inspected. No new clipping, overlap or missing glyph.",
       "inherited_overfull": 59,
       "inherited_missing": [
         "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"

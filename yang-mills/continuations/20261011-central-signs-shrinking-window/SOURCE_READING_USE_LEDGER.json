@@ -9102,5 +9102,144 @@
     "index_query": "SELECT unit_id,title,authors,arxiv_ids_json FROM canonical_units WHERE lower(title) LIKE '%score covariance%' OR lower(title) LIKE '%witten laplac%' OR lower(title) LIKE '%witten-laplac%' OR lower(title) LIKE '%brascamp%' LIMIT 20",
     "index_routing_hit_count": 0,
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "programme:PSC-20261013",
+    "proofs": [
+      {
+        "source": "ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
+        "prefix": "PSC",
+        "tags": 10,
+        "owner_sha256": "681a1219816de340dada0056ea3fb872d35b53e273b44a29c82bf90b38b4352d",
+        "public_sha256": "681a1219816de340dada0056ea3fb872d35b53e273b44a29c82bf90b38b4352d",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source_id": "programme:PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
+        "version": "1c76b4823f06b70d6ddd78343d31a6421a1c7db1",
+        "sha256": "7f9e6025ff9dc772a4ba4fa8c6b1bceaa4c913faa162836e1eec256d37ce331a",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/1c76b4823f06b70d6ddd78343d31a6421a1c7db1/yang-mills/continuations/20261011-central-signs-shrinking-window/PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
+        "coverage": "Complete PFR1–PFR19, original scalar physical maps and improved bounds used in PSC1–PSC10."
+      },
+      {
+        "source_id": "programme:ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
+        "version": "1c76b4823f06b70d6ddd78343d31a6421a1c7db1",
+        "sha256": "30457fbf6c481c6ee661233180baf03b5b361901290fc20be0a1de3f1f8a3cc1",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/1c76b4823f06b70d6ddd78343d31a6421a1c7db1/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
+        "coverage": "KP4–KP10, KP16 with complete cell-volume/adjoint maps and actual strong-source comparison."
+      },
+      {
+        "source_id": "programme:FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
+        "version": "1c76b4823f06b70d6ddd78343d31a6421a1c7db1",
+        "sha256": "d7727bfc8b8cbf0960f95334601c94115f244246bed614b8b9e7bab50a888dca",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/1c76b4823f06b70d6ddd78343d31a6421a1c7db1/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
+        "coverage": "CSR8 signed window and CSR13–CSR16 compact positive operator-measure extraction."
+      },
+      {
+        "source_id": "programme:RAW_S6_HESSIAN_RECEIVING.md",
+        "version": "1c76b4823f06b70d6ddd78343d31a6421a1c7db1",
+        "sha256": "83cd85e898bc37463d89b17e9de65ecbe3aaaed40e71bf3d2e167c16575faa92",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/1c76b4823f06b70d6ddd78343d31a6421a1c7db1/yang-mills/continuations/20261011-central-signs-shrinking-window/RAW_S6_HESSIAN_RECEIVING.md",
+        "coverage": "RH1–RH4 read directly: original radius-two metric, right-field bracket sign and full gauge action; receiver is next gauge-Hessian calculation, not a new external source."
+      }
+    ],
+    "inherited_primary_provenance": {
+      "source_id": "arxiv:2105.02058v1",
+      "canonical_index_match": null,
+      "authors": [
+        "Geneviève Dusson",
+        "Israel Michael Sigal",
+        "Benjamin Stamm"
+      ],
+      "title": "The Feshbach–Schur map and perturbation theory",
+      "version": "v1, 5 May 2021",
+      "url": "https://arxiv.org/abs/2105.02058v1",
+      "source_url": "https://arxiv.org/src/2105.02058v1",
+      "archive_sha256": "a4509293255e0f0239c8aa49edc01d5246feee16735eeb54a45e990b598f6b8f",
+      "original_file": "AriFestFSM_arxiv.tex",
+      "file_sha256": "e6c45f423055bb91eafb0c85c387657d70f89a0f7b71aabb2ea0282ef8649f89",
+      "actual_reading": "Original author TeX lines398–490 reread: abstract Feshbach statement, full reconstruction, effective interaction, derivative formula. Source refers to other works for the general proof. Complete original-domain block and response proofs are supplied in CSR1–CSR21; explicit source comparison follows CSR18. Remaining perturbation and helium sections not reread.",
+      "application": "Exact correspondence F_P(L+z) and Q_P(-z) with the current-span raw Schur matrix and lift, retaining every N factor.",
+      "routing": "Canonical index first,24 broad routes plus exact arXiv/title query with no match. Extended to openly accessible original author TeX; intact archive retained privately. No literature PDF read."
+    },
+    "new_external_reading": false,
+    "owner_review": {
+      "utc": "2026-10-12T23:55:47.837076+00:00",
+      "coverage": "PSC1–PSC10 complete derivation reviewed: all original cell adjoints and physical scalar intertwinings, complete Hessian graph, bounded actual joint extraction, leading covariance at relative-energy infinity, exact inverse-energy weight, full phase-gradient cross sum and second face moments, physical total injectivity from actual source convergence, complete joint measure and all original three-shift signs.",
+      "strengthening": "The total actual physical current-norm measure is injective on the original physical cube. Its exact spectral kernels and the original source cross measure have actual common subsequential limits. The leading score covariance has only an infinity atom at the original relative-energy scale.",
+      "correction": "The covariance limit need not be nonzero; the total norm measure is injective but is not proved uniformly coercive. Its finite-energy part can have a kernel, precisely identified in PSC10. No physical mass is inferred from the distinct energy-weighted measure; the exact s/kappa factor and source-mass map are retained.",
+      "limitations": "Allocation among zero, finite positive relative energy and infinity, the sign of the original signed window, and the interacting continuum no-gap endpoint remain to be calculated.",
+      "actual_reading": "Complete programme providers read with exact source versions. The disk index was used before new gauge-Hessian routing; routing records are not source reading. No new external-author reading or novelty claim.",
+      "diagnostics": {
+        "checks": 420,
+        "all_passed": true,
+        "scope": "Exact finite spectral and cell-adjoint algebra for specified complex arrays; all raw powers, full cross blocks, two shifts and original signed three-shift expression. These arrays are not actual Yang–Mills state data. Analytic source comparison and injectivity are proved in PSC5–PSC7, not tested by a substitute state."
+      },
+      "figures_inspected": [
+        "PHYSICAL_SCORE_SPECTRAL_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
+          "prefix": "PSC",
+          "tags": 10,
+          "owner_sha256": "681a1219816de340dada0056ea3fb872d35b53e273b44a29c82bf90b38b4352d",
+          "public_sha256": "681a1219816de340dada0056ea3fb872d35b53e273b44a29c82bf90b38b4352d",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-13T00:03:57.736293+00:00",
+        "tex_sha256": "7d877af2bd38522f6de06f413feaa820cfb87ec40e54da9f7907ee92457770c9",
+        "pdf_sha256": "7a4bbbdef64c8cef4d583f817fe6ca0d114d8d471abe096b0696c03067ed2049",
+        "pages": 1016,
+        "source_files": 97,
+        "math_blocks": 22642,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-13T00:03:57.569416+00:00",
+          "complete": true,
+          "pages": 1016,
+          "inspected_pages": [
+            718,
+            719,
+            720,
+            939,
+            940,
+            941,
+            987,
+            988,
+            989,
+            999,
+            1000,
+            1001,
+            1009,
+            1010,
+            1011,
+            1012,
+            1013,
+            1014,
+            1015,
+            1016
+          ],
+          "contacts": 5,
+          "method": "All receiving and adjacent pages inspected in the first render. Final two proof contact sheets reinspected after moving the final diagnostic paragraph before its figure on the same page. Both rendered mathematical signs and source figure inspected. No new clipping, overlap or missing glyph.",
+          "inherited_overfull": 59,
+          "inherited_missing": [
+            "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+          ]
+        }
+      }
+    },
+    "index_query": "SELECT unit_id,title,authors,arxiv_ids_json FROM canonical_units WHERE lower(title) LIKE '%score covariance%' OR lower(title) LIKE '%witten laplac%' OR lower(title) LIKE '%witten-laplac%' OR lower(title) LIKE '%brascamp%' LIMIT 20",
+    "index_routing_hit_count": 0,
+    "routing_is_not_reading": true
   }
 ]
