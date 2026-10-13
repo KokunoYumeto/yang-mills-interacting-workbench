@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-13T03:03:51.118279+00:00",
+  "checked_utc": "2026-10-13T03:37:13.487697+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -19,8 +19,8 @@
     },
     {
       "source": "CENTRAL_SIGNS_AND_BOUNDARIES.md",
-      "sha256": "ba13c610f43bac6131e7a5672c97cedcea426843f4ba8b8a3c2c38bede59665e",
-      "complete_math_blocks": 147,
+      "sha256": "cbf74ce2b43a221ecebe4c98769b302b1165f29bb9b5f9634c36ac4b3500b477",
+      "complete_math_blocks": 152,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -469,8 +469,8 @@
     },
     {
       "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
-      "sha256": "1de227ea47cde3d01822f94e963fcbae9456edfc828aafe8fa402d782ae72312",
-      "complete_math_blocks": 196,
+      "sha256": "8e3008e85bcc2ebf03d3ae3ddd4a2aff3ad4635d5de41d2cb1964a58a1a9a76c",
+      "complete_math_blocks": 201,
       "split_to_aligned_wrappers": 2
     },
     {
@@ -613,8 +613,14 @@
     },
     {
       "source": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
-      "sha256": "ce61ce68879f228e47fe381d6ddc39b99b300818c157deab9846f556a39bb67d",
-      "complete_math_blocks": 243,
+      "sha256": "b7ac99ce0818bb6c1ff6776994fc44cf9c343805653d3251802875cca3863ed3",
+      "complete_math_blocks": 248,
+      "split_to_aligned_wrappers": 1
+    },
+    {
+      "source": "FACE_FIELD_PHYSICAL_ACTION.md",
+      "sha256": "c9360c336a1695b75d788424624668bf9be3164bfe975d8482e151bd80617236",
+      "complete_math_blocks": 116,
       "split_to_aligned_wrappers": 1
     }
   ],
@@ -1227,6 +1233,11 @@
     {
       "file": "SCALAR_ENERGY_MAP.png",
       "sha256": "14b3f05ac9e567de555f09f94b6183a939143480bb550be27617b4b752adaa67",
+      "visually_inspected": true
+    },
+    {
+      "file": "FACE_FIELD_PARITY_MAP.png",
+      "sha256": "874b7cb26e3b800c944e43501f127fb779c35c15f7db7ea1ccc044c7d4de24c4",
       "visually_inspected": true
     }
   ],
@@ -8299,6 +8310,110 @@
       ],
       "figure_inspected": "SCALAR_ENERGY_MAP.png",
       "assessment": "All21 new/receiving/adjacent pages inspected through six contact sheets. Equations, labels, figure and all source content fit. No new overflow or missing glyph; inherited59overflow warnings and one older missing delta remain."
+    }
+  },
+  "face_field_review": {
+    "utc": "2026-10-13T03:33:45.127426+00:00",
+    "coverage": "Complete FPA1–FPA11. Original face action and its complete self-face cancellation, independent center characters, exact3/16 Haar coefficient with radius-two generators, raw signed/complex coefficient form and boundary counts, physical-action kernel, full interacting density-character receiver, weighted divergence and full source/curvature equation.",
+    "strengthening": "Every nonconstant original coefficient array acts nontrivially on a gauge-invariant elementary face. The remaining energy-vector kernel preserves the actual density rather than every observable. Exact cross-density and metric-deformation terms are calculated.",
+    "correction": "No provider error identified. Figure label moved clear of the shared edge. Original Ricci factor1/2 verified with the full radius-two test.",
+    "limitations": "No interacting density character or physical annulus value is assigned. Score-contracted source kernel, original inverse moments, continuum state, reconstruction and theory identification remain active.",
+    "diagnostics": {
+      "checks": 3465,
+      "all_passed": true,
+      "scope": "Original cubic incidence, ordered SU2 configurations, exact Haar quaternion moments and finite central-character algebra. An independent radius-two S3 identity tests all curvature signs. No actual Yang–Mills vacuum or spectral mass is numerically sampled."
+    },
+    "figures_inspected": [
+      "FACE_FIELD_PARITY_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "FACE_FIELD_PHYSICAL_ACTION.md",
+        "prefix": "FPA",
+        "tags": 11,
+        "owner_sha256": "c9360c336a1695b75d788424624668bf9be3164bfe975d8482e151bd80617236",
+        "public_sha256": "c9360c336a1695b75d788424624668bf9be3164bfe975d8482e151bd80617236",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-13T03:37:13.487697+00:00",
+      "tex_sha256": "24cd7f667030277f4964990aeac524a7d11e9c9f923f290422eb5f1959c021a5",
+      "pdf_sha256": "719b80a69466c103f399b9d9ea958ddbbeb190a93f89a816a16eede2d8e7a423",
+      "pages": 1114,
+      "source_files": 103,
+      "math_blocks": 24263,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-13T03:37:11.921881+00:00",
+        "complete": true,
+        "pages": 1114,
+        "rendered_pages": [
+          24,
+          25,
+          26,
+          818,
+          819,
+          820,
+          1108,
+          1109,
+          1110,
+          1111,
+          1112,
+          1113,
+          1114
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "figure_inspected": "FACE_FIELD_PARITY_MAP.png",
+        "assessment": "All13 new/receiving/adjacent pages inspected through four contact sheets. Equations, labels, figure and source content fit. No new overflow or missing glyph; inherited59overflow warnings and one older missing delta remain."
+      }
+    }
+  },
+  "face_field_compile": {
+    "utc": "2026-10-13T03:37:13.487697+00:00",
+    "tex_sha256": "24cd7f667030277f4964990aeac524a7d11e9c9f923f290422eb5f1959c021a5",
+    "pdf_sha256": "719b80a69466c103f399b9d9ea958ddbbeb190a93f89a816a16eede2d8e7a423",
+    "pages": 1114,
+    "source_files": 103,
+    "math_blocks": 24263,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-13T03:37:11.921881+00:00",
+      "complete": true,
+      "pages": 1114,
+      "rendered_pages": [
+        24,
+        25,
+        26,
+        818,
+        819,
+        820,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112,
+        1113,
+        1114
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "figure_inspected": "FACE_FIELD_PARITY_MAP.png",
+      "assessment": "All13 new/receiving/adjacent pages inspected through four contact sheets. Equations, labels, figure and source content fit. No new overflow or missing glyph; inherited59overflow warnings and one older missing delta remain."
     }
   }
 }

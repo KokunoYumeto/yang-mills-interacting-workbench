@@ -172,3 +172,17 @@ On the physical positive-coupling path, \(\kappa=2g^2/a\) and \(\xi=1/(4g^4)\). 
 ## 6. The next comparison
 
 The open-box transformation is an exact tool for the existing Jacobian return calculation. On a periodic replacement, CS10 must first be checked; treating an odd-by-odd two-torus as if the same transformation existed would erase the explicit defect proved in Section 3. When CS10 holds, the eight maps CS14 have the same plaquette reversal and full Hamiltonian identity, but their winding-loop actions differ by CS5 and CS12. A continuum comparison involving winding observables must retain which one of those maps is used. The companion calculation uses the original open box and its unique physical map throughout.
+
+## Face action and the exact ground-density receiver
+
+[FPA1–FPA11](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FACE_FIELD_PHYSICAL_ACTION.md) calculate the original field action on every elementary face:
+\[
+Y_cD_q=\sum_{\substack{p\ne q\\p\cap q=\{g\}}}
+(c_g-\bar c_p)\theta_{pq,g}.
+\]
+Independent central link characters isolate every term. Their exact Haar coefficient is \(3/16\), giving
+\[
+\sum_q\|Y_cD_q\|_{\rm Haar}^2
+=\frac3{16}\sum_p\sum_{g\in\partial p}(m_g-1)|c_g-\bar c_p|^2 .
+\]
+Every nonconstant original coefficient array therefore changes at least one gauge-invariant face observable. The actual interacting form retains all cross terms through the exact density component \(\Pi_{\partial p\triangle\partial r}(\psi^2)\); it has not been replaced by Haar measure. FPA9–FPA11 derive the full score-source equation and kinetic-deformation cancellation, including the original Ricci coefficient \(1/2\). A possible nonconstant energy-kernel field preserves the ground density while acting on observables. Its density contributions and physical-window inverse moments remain the next calculation toward the smooth interacting global no-gap goal.

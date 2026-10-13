@@ -461,3 +461,17 @@ The bracket need not be in the original linear family \(Y_e\). This describes th
 The scalar residual has now been identified with a specific original local-energy fluctuation, up to a vanishing original-norm interpolation error. Its entire band above \(\epsilon s_j\) has the bound (SLE9), and its first energy matrix is determined by the local double commutator, including the exact six/eight-edge expression at distance two.
 
 The next concrete receiving calculation is to evaluate the actual entries in (SLE17)–(SLE18), together with the source inverse moments in (SLE20), in the original interacting vacuum. In particular the sparse first moment and the positive diagonal variance previously proved in EV12 do not by themselves determine the mass of \(X_\varphi\) or \(Q_\varphi\) in the original shrinking annulus. Equations (SLE23)–(SLE24) identify exactly where an additional kernel can occur: a nonzero original face field preserving the actual ground density. Its geometric kernel alone consists of constants; classifying those density-preserving fields is the next kernel calculation. Equation (SLE8) retains energy approaching zero. No replacement vacuum, sign pattern for off-diagonal entries, uniform inverse bound, positive annulus mass, continuum state or theory identification has been assumed. The five original Green moments and J5 comparison remain in the programme alongside this map.
+
+## Face action and the exact ground-density receiver
+
+[FPA1–FPA11](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FACE_FIELD_PHYSICAL_ACTION.md) calculate the original field action on every elementary face:
+\[
+Y_cD_q=\sum_{\substack{p\ne q\\p\cap q=\{g\}}}
+(c_g-\bar c_p)\theta_{pq,g}.
+\]
+Independent central link characters isolate every term. Their exact Haar coefficient is \(3/16\), giving
+\[
+\sum_q\|Y_cD_q\|_{\rm Haar}^2
+=\frac3{16}\sum_p\sum_{g\in\partial p}(m_g-1)|c_g-\bar c_p|^2 .
+\]
+Every nonconstant original coefficient array therefore changes at least one gauge-invariant face observable. The actual interacting form retains all cross terms through the exact density component \(\Pi_{\partial p\triangle\partial r}(\psi^2)\); it has not been replaced by Haar measure. FPA9–FPA11 derive the full score-source equation and kinetic-deformation cancellation, including the original Ricci coefficient \(1/2\). A possible nonconstant energy-kernel field preserves the ground density while acting on observables. Its density contributions and physical-window inverse moments remain the next calculation toward the smooth interacting global no-gap goal.

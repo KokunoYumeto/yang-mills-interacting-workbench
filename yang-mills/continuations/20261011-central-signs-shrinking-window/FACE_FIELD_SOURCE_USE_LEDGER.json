@@ -1,0 +1,130 @@
+[
+  {
+    "source_id": "programme:FPA-20261013",
+    "proofs": [
+      {
+        "source": "FACE_FIELD_PHYSICAL_ACTION.md",
+        "prefix": "FPA",
+        "tags": 11,
+        "owner_sha256": "c9360c336a1695b75d788424624668bf9be3164bfe975d8482e151bd80617236",
+        "public_sha256": "c9360c336a1695b75d788424624668bf9be3164bfe975d8482e151bd80617236",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
+        "commit": "819b16440d723d7b5d72513a55038001de98e9bf",
+        "sha256": "ce61ce68879f228e47fe381d6ddc39b99b300818c157deab9846f556a39bb67d",
+        "actual_reading": "SLE1–SLE24 complete"
+      },
+      {
+        "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
+        "commit": "819b16440d723d7b5d72513a55038001de98e9bf",
+        "sha256": "1de227ea47cde3d01822f94e963fcbae9456edfc828aafe8fa402d782ae72312",
+        "actual_reading": "SF1–SF15 including all four traversal cases and the probability-Haar pair map"
+      },
+      {
+        "source": "CENTRAL_SIGNS_AND_BOUNDARIES.md",
+        "commit": "819b16440d723d7b5d72513a55038001de98e9bf",
+        "sha256": "ba13c610f43bac6131e7a5672c97cedcea426843f4ba8b8a3c2c38bede59665e",
+        "actual_reading": "CS1–CS14 current bounded read; FPA uses CS1–CS5"
+      },
+      {
+        "source": "SIMULTANEOUS_CENTRAL_MEASURE.md",
+        "commit": "819b16440d723d7b5d72513a55038001de98e9bf",
+        "sha256": "dde8663f4c18225a791f7669f891127a687c1128ea78d2d1a83217360cc83335",
+        "actual_reading": "CM1–CM8 current bounded read; context only, no input to the central character proof"
+      }
+    ],
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "owner_review": {
+      "utc": "2026-10-13T03:33:45.127426+00:00",
+      "coverage": "Complete FPA1–FPA11. Original face action and its complete self-face cancellation, independent center characters, exact3/16 Haar coefficient with radius-two generators, raw signed/complex coefficient form and boundary counts, physical-action kernel, full interacting density-character receiver, weighted divergence and full source/curvature equation.",
+      "strengthening": "Every nonconstant original coefficient array acts nontrivially on a gauge-invariant elementary face. The remaining energy-vector kernel preserves the actual density rather than every observable. Exact cross-density and metric-deformation terms are calculated.",
+      "correction": "No provider error identified. Figure label moved clear of the shared edge. Original Ricci factor1/2 verified with the full radius-two test.",
+      "limitations": "No interacting density character or physical annulus value is assigned. Score-contracted source kernel, original inverse moments, continuum state, reconstruction and theory identification remain active.",
+      "diagnostics": {
+        "checks": 3465,
+        "all_passed": true,
+        "scope": "Original cubic incidence, ordered SU2 configurations, exact Haar quaternion moments and finite central-character algebra. An independent radius-two S3 identity tests all curvature signs. No actual Yang–Mills vacuum or spectral mass is numerically sampled."
+      },
+      "figures_inspected": [
+        "FACE_FIELD_PARITY_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "FACE_FIELD_PHYSICAL_ACTION.md",
+          "prefix": "FPA",
+          "tags": 11,
+          "owner_sha256": "c9360c336a1695b75d788424624668bf9be3164bfe975d8482e151bd80617236",
+          "public_sha256": "c9360c336a1695b75d788424624668bf9be3164bfe975d8482e151bd80617236",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-13T03:37:13.487697+00:00",
+        "tex_sha256": "24cd7f667030277f4964990aeac524a7d11e9c9f923f290422eb5f1959c021a5",
+        "pdf_sha256": "719b80a69466c103f399b9d9ea958ddbbeb190a93f89a816a16eede2d8e7a423",
+        "pages": 1114,
+        "source_files": 103,
+        "math_blocks": 24263,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-13T03:37:11.921881+00:00",
+          "complete": true,
+          "pages": 1114,
+          "rendered_pages": [
+            24,
+            25,
+            26,
+            818,
+            819,
+            820,
+            1108,
+            1109,
+            1110,
+            1111,
+            1112,
+            1113,
+            1114
+          ],
+          "contacts_inspected": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "figure_inspected": "FACE_FIELD_PARITY_MAP.png",
+          "assessment": "All13 new/receiving/adjacent pages inspected through four contact sheets. Equations, labels, figure and source content fit. No new overflow or missing glyph; inherited59overflow warnings and one older missing delta remain."
+        }
+      }
+    },
+    "index_queries": [
+      "\"double commutator\"",
+      "\"energy covariance\"",
+      "\"sum rule\" AND \"local\"",
+      "\"double commutator\"",
+      "\"energy covariance\"",
+      "\"sum rule\" AND \"local\""
+    ],
+    "index_routing_hit_count": 15,
+    "routing_assessment": "The15routing hits include Kubo/transport and unrelated zeta/local-source material. They were not used as proof inputs and are not claimed read. This further FPA calculation derives central character and original density/curvature identities directly from the read SLE/SF/CS providers.",
+    "routing_is_not_reading": true
+  }
+]

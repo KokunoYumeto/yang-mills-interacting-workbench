@@ -1,0 +1,27 @@
+[
+  {
+    "id": "FPA-physical-action",
+    "original": "SLE23 characterized only the geometric field kernel.",
+    "change": "FPA1–FPA6 calculate its exact action on every face and full Haar form, proving that the physical-action kernel is also exactly constants.",
+    "affects": [
+      "SLE23–SLE24",
+      "SF shared-face contractions",
+      "CS central signs"
+    ],
+    "proof": "FACE_FIELD_PHYSICAL_ACTION.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SLE,SF,CS and programme/cumulative source."
+  },
+  {
+    "id": "FPA-actual-density",
+    "original": "A nonconstant SLE energy-kernel field preserves the density, with unresolved physical action.",
+    "change": "FPA7–FPA11 retain all interacting density-character cross terms and derive the exact score-source equation with full deformation and Ricci1/2.",
+    "affects": [
+      "SLE21/SLE24",
+      "TSC residual and physical window"
+    ],
+    "proof": "FACE_FIELD_PHYSICAL_ACTION.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SLE,SF,CS and programme/cumulative source."
+  }
+]
