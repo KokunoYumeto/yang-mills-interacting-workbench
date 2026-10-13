@@ -427,3 +427,21 @@ GCM16 is now an exact dynamic map from the original mixed Hessian curl to the ve
 The finite current checks and independent right-flow derivative checks test the displayed universal algebra and signs. Their three-plaquette test function is not a substitute for the actual Yang–Mills ground state. The written actual-state substitutions and domain arguments establish the receiving results. Sources: check_gauge_current.py, check_gauge_dynamics.py and figure_gauge_current.py; exact reading record: GAUGE_CURRENT_SOURCE_USE_LEDGER.json.
 
 ![The full original vertex covariance, surviving physical norm, graph scale for a common smooth weight, collective constant mode and complete dynamic curl map. Every displayed map is defined and proved in GCM1–GCM16.](GAUGE_CURRENT_AND_DYNAMIC_MAP.png)
+
+## Exact force receiver and common physical source
+
+[TFC1–TFC26](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/TWO_FORM_FORCE_AND_COMMON_SPECTRUM.md) prove the full original force-curl receiver, including
+\[
+L_2d\mathsf Cc=-a_j^2d(D_cdV),\qquad
+\mathsf N^\perp=\kappa_*a_j^4
+\int_{(0,\infty)}\lambda^{-3}\,d\Omega_j(\lambda).
+\]
+The actual force covariance tends strongly to \(9/\kappa_*^2\) times the direction-difference projection on the original support cube. Its kernel is exactly the common-coefficient subspace. For a common \(C_c^1\) coefficient, TFC15 evaluates the next spatial term and TFC21–TFC22 prove a uniform removed-current second moment at the unchanged energy. All face deficits, their second moments, outside neighbors and limiting zero atoms remain.
+
+The original common plaquette observable \(X_{\varphi,j}\) and the explicitly defined centered squared-score observable \(Q_{\varphi,j}\) satisfy
+\[
+dX_{\varphi,j}+dQ_{\varphi,j}
+=-\frac{\kappa_*a_j}{2}L_1P\mathsf Cc_j+Pe_{\varphi,j},
+\qquad \|e_{\varphi,j}\|=O(a_j).
+\]
+TFC23–TFC25 prove the complete low-band and original three-shift comparisons. The displayed scaled response error is \(O(a_j)\); its unscaled error is only \(O(1)\), and no positive window sign is inferred. TFC26 proves that the leading full Hessian-pair remainder kills the common subspace, with \(\mathcal Qh=\kappa_*\mathcal Gh\) there. These formulas strengthen the existing physical, score and force receivers while leaving the actual spectral allocation and interacting smooth global no-gap construction active.

@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-13T00:56:48.738914+00:00",
+  "checked_utc": "2026-10-13T01:39:33.153050+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -403,14 +403,14 @@
     },
     {
       "source": "POSITIVE_TIME_COVARIANCE.md",
-      "sha256": "0f79f719c5e2c5205e82fba92375ac33e01e8e35d335544631b06ad7d7291cfa",
-      "complete_math_blocks": 224,
+      "sha256": "16359c64e9e0172fa093f184632dbbc619651cb676b7194b0d0f3df6f93c3037",
+      "complete_math_blocks": 233,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "462b63bd95926f08418525b145513e5adb6600a06a836623156cce1e852db5a4",
-      "complete_math_blocks": 247,
+      "sha256": "e915359de492237930c86436099c68e7fae71edd46b036cba549ededa6718e4b",
+      "complete_math_blocks": 256,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -541,14 +541,14 @@
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "c97af1f7413d78c729adc4608c5c4f94d165be41dddf5faa500a1b365ee78368",
-      "complete_math_blocks": 268,
+      "sha256": "5ed3fce55d9bdeadfa901bf72a7b71e2cdb673d19afe10626f2e4162f566a962",
+      "complete_math_blocks": 277,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "QUANTITATIVE_FORCE_CURL.md",
-      "sha256": "ebee7d00adabd1389f7b2091b4d5b4faab633237e6cb34f823a6aecdae73c4e3",
-      "complete_math_blocks": 202,
+      "sha256": "3610248484ea5f1d8fbc76e8a6185b5ab97048c5b7a0f284e67b8446037cd780",
+      "complete_math_blocks": 211,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -565,38 +565,44 @@
     },
     {
       "source": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
-      "sha256": "e31b774774516853df1908c797356ac00f09b5f9185b64eb9dba7840d3837012",
-      "complete_math_blocks": 303,
+      "sha256": "912b0bfd3948e57b65b35ba503879407f4a93faadf6424c8a3fc354b5cd30159",
+      "complete_math_blocks": 312,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
-      "sha256": "4352807af7fca352b3e01b7a43c4c65f2b9ce14b625d1871a75391de1fd29c82",
-      "complete_math_blocks": 233,
+      "sha256": "210b807fe75953d34e1ff96978d534f345088b26bb28f7b2d6c7deedcb98ddce",
+      "complete_math_blocks": 242,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
-      "sha256": "52633bb08978068c2a714896a8b6fd94e543f13272d56e77a2a3d8bdeb457711",
-      "complete_math_blocks": 227,
+      "sha256": "461e8a32b595849eaed02a791244d05972da8fd430cc6832c001164ae582e9ca",
+      "complete_math_blocks": 236,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
-      "sha256": "6ce8c14127a10039b2f50905fd96b0f01d84ec8bc4dc4edc99514f02058dbaf9",
-      "complete_math_blocks": 141,
+      "sha256": "acc2ed326eb30eb9ec9b4f322f66e2b1b0f1b61cedfe1914961034443f22ca90",
+      "complete_math_blocks": 150,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "GAUGE_HESSIAN_AND_COVARIANT_GRAPH.md",
-      "sha256": "504bd02171636ac00e5981de389f4006fe945d894a485e30eb7fbacf12688fc5",
-      "complete_math_blocks": 196,
+      "sha256": "6f496c78af26e4a3cb9feb47320fdbcea8e57264c1ebd5c19107d256c0f56843",
+      "complete_math_blocks": 205,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "GAUGE_CURRENT_COVARIANCE_AND_DYNAMIC_CURL.md",
-      "sha256": "0bfdd1a6e6761fd9b6aa7c21a79b2725e362f1287d5831b641dfaf437c930fb5",
-      "complete_math_blocks": 231,
+      "sha256": "2d1079f09712d6f4d0a12991ae5f9f3f5e75838f5a6cf35800ef90a6c78342d5",
+      "complete_math_blocks": 240,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "TWO_FORM_FORCE_AND_COMMON_SPECTRUM.md",
+      "sha256": "8692922a92a695a3c7e2a001ff9f1aa685559be6d6aa827ed3e6db8a357952d3",
+      "complete_math_blocks": 409,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1184,6 +1190,21 @@
     {
       "file": "GAUGE_CURRENT_AND_DYNAMIC_MAP.png",
       "sha256": "98f21a32fa70b4b922ce8296c6b9531992f4fccec4c7b99b0fe49f575a2fd8c1",
+      "visually_inspected": true
+    },
+    {
+      "file": "TWO_FORM_FORCE_RECEIVER.png",
+      "sha256": "070fe1913fb7df31a8f9b982f42c46e5f0432c399d8e4587103aeff428f84d24",
+      "visually_inspected": true
+    },
+    {
+      "file": "COMMON_FORCE_SCALE.png",
+      "sha256": "a56bbbf74192fa0b1d6fe0eccf3771a4eea73687d23e49b5ecef01a7f5c281b8",
+      "visually_inspected": true
+    },
+    {
+      "file": "COMMON_SOURCE_BRIDGE.png",
+      "sha256": "6afd5d229ec3bd4c09e0f08b950c85559b253e067f0f6f96fb09e7f27789a78d",
       "visually_inspected": true
     }
   ],
@@ -7775,6 +7796,212 @@
       "contacts": 9,
       "figure_inspected": true,
       "finding": "All nine rendered contact sheets were inspected in the preceding work. The 35 new, receiving and adjacent pages fit; equations and figure labels are readable. No new overflow or missing glyph; inherited warning comparison retained."
+    }
+  },
+  "two_form_force_review": {
+    "utc": "2026-10-13T01:30:15.283704+00:00",
+    "coverage": "Complete TFC1–TFC26. Charged Casimir receiver and low-band domain; full two-form curvature/Hessian blocks and signs; exact inverse third force moment; all cell factors and actual deficit transfer; strong orientation limit, common spatial term, force/current endpoint allocation; full exact-gradient defect, uniform common second moment, original centered source/score comparison, all three signed resolvent shifts and the common Hessian kernel.",
+    "strengthening": "TFC21–TFC22 improve the earlier common-sector growing moment bounds to a uniform second moment at the unchanged energy. TFC23–TFC25 prove an original-source comparison; TFC26 annihilates the leading Hessian remainder on every common L2 coefficient.",
+    "correction": "Retain zero atoms and all original unscaled masses. TFC25 has O(a) error only after its displayed s/kappa factor; the resulting unscaled error is only O(1). Neither this comparison nor force escape proves a positive physical window.",
+    "limitations": "The actual squared-score window sign, full scalar cross covariance, J5 comparison, interacting continuum state, reconstruction, intended theory and smooth global no-gap endpoint remain active.",
+    "actual_reading": "Direct source rereading during review: PSC5–PSC9, CSR8, PFR17, original SG32 relation and KP9 cell adjoints. Applied with all original coefficients in TFC21–TFC26.",
+    "diagnostics": {
+      "checks": 1052,
+      "all_passed": true,
+      "suites": [
+        {
+          "checks": 677,
+          "scope": "Independent finite algebra and original-coordinate spatial diagnostics.\n\nNo finite array here approximates the interacting Yang--Mills ground state.\nThe actual-state deficit bounds and operator limits are proved in the note."
+        },
+        {
+          "checks": 375,
+          "scope": "Original SU(2) plaquette derivatives and independent spectral diagnostics.\nConfigurations and spectral arrays test universal identities, not the vacuum."
+        }
+      ]
+    },
+    "figures_inspected": [
+      "TWO_FORM_FORCE_RECEIVER.png",
+      "COMMON_FORCE_SCALE.png",
+      "COMMON_SOURCE_BRIDGE.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "TWO_FORM_FORCE_AND_COMMON_SPECTRUM.md",
+        "prefix": "TFC",
+        "tags": 26,
+        "owner_sha256": "8692922a92a695a3c7e2a001ff9f1aa685559be6d6aa827ed3e6db8a357952d3",
+        "public_sha256": "8692922a92a695a3c7e2a001ff9f1aa685559be6d6aa827ed3e6db8a357952d3",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-13T01:39:33.153050+00:00",
+      "tex_sha256": "be3d9d640820b07390c65d28db005ea2a50610c0dcd0eca0ff6f163d108feda8",
+      "pdf_sha256": "31945afe83572710c60920606c525ad86f4b8e4c4e386ae68cfaf7d378f3c631",
+      "pages": 1077,
+      "source_files": 100,
+      "math_blocks": 23680,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-13T01:39:32.340135+00:00",
+        "complete": true,
+        "pages": 1077,
+        "rendered_pages": [
+          698,
+          699,
+          700,
+          723,
+          724,
+          725,
+          949,
+          950,
+          951,
+          961,
+          962,
+          963,
+          1002,
+          1003,
+          1004,
+          1017,
+          1018,
+          1019,
+          1030,
+          1031,
+          1032,
+          1039,
+          1040,
+          1041,
+          1049,
+          1050,
+          1051,
+          1059,
+          1060,
+          1061,
+          1062,
+          1063,
+          1064,
+          1065,
+          1066,
+          1067,
+          1068,
+          1069,
+          1070,
+          1071,
+          1072,
+          1073,
+          1074,
+          1075,
+          1076,
+          1077
+        ],
+        "contact_sheets": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "figures": [
+          "TWO_FORM_FORCE_RECEIVER.png",
+          "COMMON_FORCE_SCALE.png",
+          "COMMON_SOURCE_BRIDGE.png"
+        ],
+        "inspection": "All 46 changed receiving, adjacent and new proof pages inspected through twelve rendered contact sheets; all three standalone figures inspected. Equations and labels readable, no new overflow or missing glyph. Earlier edition warnings retained and compared separately."
+      }
+    }
+  },
+  "two_form_force_compile": {
+    "utc": "2026-10-13T01:39:33.153050+00:00",
+    "tex_sha256": "be3d9d640820b07390c65d28db005ea2a50610c0dcd0eca0ff6f163d108feda8",
+    "pdf_sha256": "31945afe83572710c60920606c525ad86f4b8e4c4e386ae68cfaf7d378f3c631",
+    "pages": 1077,
+    "source_files": 100,
+    "math_blocks": 23680,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-13T01:39:32.340135+00:00",
+      "complete": true,
+      "pages": 1077,
+      "rendered_pages": [
+        698,
+        699,
+        700,
+        723,
+        724,
+        725,
+        949,
+        950,
+        951,
+        961,
+        962,
+        963,
+        1002,
+        1003,
+        1004,
+        1017,
+        1018,
+        1019,
+        1030,
+        1031,
+        1032,
+        1039,
+        1040,
+        1041,
+        1049,
+        1050,
+        1051,
+        1059,
+        1060,
+        1061,
+        1062,
+        1063,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077
+      ],
+      "contact_sheets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "figures": [
+        "TWO_FORM_FORCE_RECEIVER.png",
+        "COMMON_FORCE_SCALE.png",
+        "COMMON_SOURCE_BRIDGE.png"
+      ],
+      "inspection": "All 46 changed receiving, adjacent and new proof pages inspected through twelve rendered contact sheets; all three standalone figures inspected. Equations and labels readable, no new overflow or missing glyph. Earlier edition warnings retained and compared separately."
     }
   }
 }
