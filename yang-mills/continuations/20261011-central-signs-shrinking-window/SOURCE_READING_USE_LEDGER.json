@@ -9241,5 +9241,151 @@
     "index_query": "SELECT unit_id,title,authors,arxiv_ids_json FROM canonical_units WHERE lower(title) LIKE '%score covariance%' OR lower(title) LIKE '%witten laplac%' OR lower(title) LIKE '%witten-laplac%' OR lower(title) LIKE '%brascamp%' LIMIT 20",
     "index_routing_hit_count": 0,
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "programme:GWH-20261013",
+    "proofs": [
+      {
+        "source": "GAUGE_HESSIAN_AND_COVARIANT_GRAPH.md",
+        "prefix": "GWH",
+        "tags": 15,
+        "owner_sha256": "1b0181d950d3bd8c8b9d301d90a5009ee42b6b6f455debabfa62864043331095",
+        "public_sha256": "4e6ca2a28b7fe2ff7da630e24bdd81223712be98a4c19f53c4c4aae00541c693",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source_id": "programme:RAW_S6_HESSIAN_RECEIVING.md",
+        "version": "5e213261cc711e5ad2a5fcd9abecee1b8497baca",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/5e213261cc711e5ad2a5fcd9abecee1b8497baca/yang-mills/continuations/20261011-central-signs-shrinking-window/RAW_S6_HESSIAN_RECEIVING.md",
+        "sha256": "83cd85e898bc37463d89b17e9de65ecbe3aaaed40e71bf3d2e167c16575faa92",
+        "coverage": "RH1–RH4 directly read: original open graph, radius-two metric, right-frame bracket sign, complete gauge action and invariant actual ground."
+      },
+      {
+        "source_id": "programme:ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "version": "5e213261cc711e5ad2a5fcd9abecee1b8497baca",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/5e213261cc711e5ad2a5fcd9abecee1b8497baca/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_GROUND_GRADIENT_TRIAL.md",
+        "sha256": "a71b7604dc1cd09d2b5e5c10d5e35fc5902ba33268139274e0bf76c495e70e20",
+        "coverage": "SG3–SG9 directly reread, full row-Hessian and original potential trace."
+      },
+      {
+        "source_id": "programme:PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
+        "version": "5e213261cc711e5ad2a5fcd9abecee1b8497baca",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/5e213261cc711e5ad2a5fcd9abecee1b8497baca/yang-mills/continuations/20261011-central-signs-shrinking-window/PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
+        "sha256": "d7b217f2808e6dfa3e17390ba40347008e44b135ff79300bda6e3c03f6c32b9e",
+        "coverage": "PFR9–PFR19 full trace defect, improved finite roots and every receiving constant."
+      },
+      {
+        "source_id": "programme:ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
+        "version": "5e213261cc711e5ad2a5fcd9abecee1b8497baca",
+        "url": "https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/5e213261cc711e5ad2a5fcd9abecee1b8497baca/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
+        "sha256": "7b33637b6eb7581bd3c9402be1633a60f8d2105e00e8a0112d892cd48548c559",
+        "coverage": "Complete PSC1–PSC10 reviewed and published; physical total and exact cell receiver used in GWH10–GWH11."
+      }
+    ],
+    "inherited_primary_provenance": {
+      "source_id": "arxiv:2105.02058v1",
+      "canonical_index_match": null,
+      "authors": [
+        "Geneviève Dusson",
+        "Israel Michael Sigal",
+        "Benjamin Stamm"
+      ],
+      "title": "The Feshbach–Schur map and perturbation theory",
+      "version": "v1, 5 May 2021",
+      "url": "https://arxiv.org/abs/2105.02058v1",
+      "source_url": "https://arxiv.org/src/2105.02058v1",
+      "archive_sha256": "a4509293255e0f0239c8aa49edc01d5246feee16735eeb54a45e990b598f6b8f",
+      "original_file": "AriFestFSM_arxiv.tex",
+      "file_sha256": "e6c45f423055bb91eafb0c85c387657d70f89a0f7b71aabb2ea0282ef8649f89",
+      "actual_reading": "Original author TeX lines398–490 reread: abstract Feshbach statement, full reconstruction, effective interaction, derivative formula. Source refers to other works for the general proof. Complete original-domain block and response proofs are supplied in CSR1–CSR21; explicit source comparison follows CSR18. Remaining perturbation and helium sections not reread.",
+      "application": "Exact correspondence F_P(L+z) and Q_P(-z) with the current-span raw Schur matrix and lift, retaining every N factor.",
+      "routing": "Canonical index first,24 broad routes plus exact arXiv/title query with no match. Extended to openly accessible original author TeX; intact archive retained privately. No literature PDF read."
+    },
+    "new_external_reading": false,
+    "owner_review": {
+      "utc": "2026-10-13T00:17:35.240638+00:00",
+      "coverage": "Complete GWH1–GWH15: original right and left connection signs; both endpoint Ward constraints and complete nonnegative row defect; actual SG averaging and exact finite kinetic root; full covariant graph with changing gauge rank and row minimum; equivariance of physical exact-current projection; complete physical gauge norm correction; all current, scalar, complementary, spatial and mixed-variance receivers.",
+      "strengthening": "The actual kinetic ceiling is 3sqrt(5/7)/(2kappa), with a stronger individual face floor and full current bounds. The exact full gauge graph gives both the entire minimum row energy and the physical vertical norm loss, retaining all zero modes.",
+      "correction": "Horizontality is proved for the invariant exact-current columns by gauge equivariance and the invariant scalar inverse. Exactness alone would not establish horizontality. A row minimizer is not asserted to assemble into a new Hessian.",
+      "limitations": "The full gauge norm cross covariance and spectral allocation remain next calculations. This increment does not establish the smooth interacting continuum state or no-gap endpoint.",
+      "actual_reading": "Exact programme sources and their versions retained. Existing disk-index routes are not source reading. No new external reading or novelty claim.",
+      "diagnostics": {
+        "checks": 484,
+        "all_passed": true,
+        "scope": "Original open cubic graph, right-field SU(2) convention, gauge-invariant three-plaquette trace function, all endpoint transport signs, connection term, boundary degrees and complete row defect. This test function is not the actual Yang–Mills ground logarithm; only the universal gauge identity is tested. Flat and nonflat full graph pseudoinverses, their gauge zero modes, full row remainders and exact vertical norm loss are checked. Actual-ground root checks are algebra diagnostics after the written SG substitution."
+      },
+      "figures_inspected": [
+        "GAUGE_HESSIAN_ORIGINAL_STARS.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "GAUGE_HESSIAN_AND_COVARIANT_GRAPH.md",
+          "prefix": "GWH",
+          "tags": 15,
+          "owner_sha256": "1b0181d950d3bd8c8b9d301d90a5009ee42b6b6f455debabfa62864043331095",
+          "public_sha256": "4e6ca2a28b7fe2ff7da630e24bdd81223712be98a4c19f53c4c4aae00541c693",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-13T00:28:15.307912+00:00",
+        "tex_sha256": "ce68dd77f00c9591c050f86e16e7044730fba70547dbbb2bb723297faec74a11",
+        "pdf_sha256": "a47dfaf8974754180f6f46dec8553e8353ea113eb3ebd466b488c1d6d43e9d37",
+        "pages": 1032,
+        "source_files": 98,
+        "math_blocks": 22869,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "finding": "All new proof pages, eight receiving notes and adjacent transitions inspected. GWH6 line breaks repaired; no new overflow or missing glyph. Original formulas and visible endpoint data retained.",
+          "complete": true,
+          "contacts": 8,
+          "inspected_pages": [
+            719,
+            720,
+            721,
+            870,
+            871,
+            872,
+            925,
+            926,
+            927,
+            943,
+            944,
+            945,
+            992,
+            993,
+            994,
+            1005,
+            1006,
+            1007,
+            1016,
+            1017,
+            1018,
+            1023,
+            1024,
+            1025,
+            1026,
+            1027,
+            1028,
+            1029,
+            1030,
+            1031,
+            1032
+          ],
+          "figure": "GAUGE_HESSIAN_ORIGINAL_STARS.png",
+          "pages": 1032
+        }
+      }
+    },
+    "index_query": "SELECT unit_id,title,authors,arxiv_ids_json FROM canonical_units WHERE lower(title) LIKE '%ward%' OR lower(title) LIKE '%gauge%hessian%' OR lower(title) LIKE '%gauge%invariant%' LIMIT 30",
+    "index_routing_hit_count": 17,
+    "routing_is_not_reading": true
   }
 ]

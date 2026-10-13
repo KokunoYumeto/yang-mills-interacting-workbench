@@ -289,3 +289,21 @@ The next calculation is the actual allocation of \(\mathcal M,\mathcal Z,\mathca
 The image is an exact map schematic, not a sample from a vacuum. Its [reproducible source](figure_physical_score_spectral.py) is retained. The [finite spectral diagnostics](check_physical_score_spectral.py) preserve the complete raw factors and three signs; their specified complex arrays are not actual Yang–Mills state data.
 
 ![Exact relation between leading score covariance, physical inverse-energy norm measure, surviving original source and all physical resolvent kernels. Complete definitions and proofs: PSC1–PSC10.](PHYSICAL_SCORE_SPECTRAL_MAP.png)
+
+## Original gauge constraints and stronger actual-state bounds
+
+[GWH1–GWH15](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GAUGE_HESSIAN_AND_COVARIANT_GRAPH.md) differentiate the original vertex gauge invariance with its full connection term, apply both endpoint constraints, and retain every outside Hessian row. They prove the stronger actual ceiling and the physical norm correction
+\[
+\begin{gathered}
+\Theta_G(a)=\frac{-3a/2+\sqrt{9a^2/4+144/[\kappa_*^2(7/5)]}}8,
+\qquad a_jT_e\le\Theta_G(a_j)<\frac3{2\kappa_*}\sqrt{\frac57},\\
+\mathsf C_j^*P\mathsf C_j+\mathsf V_{g,j}\le\mathsf N_j,\qquad
+c^*\mathsf V_{g,j}c
+=a_j^4\mu\langle K_U^*D_cg,(K_U^*K_U)^\dagger K_U^*D_cg\rangle .
+\end{gathered}
+\]
+The original full gauge graph, holonomy transports and all gauge zero modes remain. Horizontality of the physical exact-current columns follows from their proved gauge invariance and projection equivariance. The full row minimum and its complete residual are GWH8–GWH9.
+
+GWH6 and GWH12–GWH15 propagate the finite root through the complete current and scalar covariance bounds, complementary spectral measure and derivatives, original cube budget and oriented means, first-energy and both original resolvent trials, and the exact density variance. The scalar-score low-energy ceiling is \(100\theta\Theta_G(a_j)\); the current energy ceiling is \(a_j^2(3/\kappa_*+4\Theta_G(a_j))\). The complete four mixed density/score terms, raw coefficient errors and source upper constant \(K_R\) remain. The actual physical total satisfies
+\(\mathcal M([0,\infty])+\mathcal V_g\le M_{\mathbf1_{\mathcal Q}\tau}\).
+These strengthen the existing receivers without assigning physical mass to a spectral interval. The original window and interacting smooth global no-gap endpoint remain active.
