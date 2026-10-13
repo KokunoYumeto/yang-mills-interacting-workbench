@@ -511,3 +511,22 @@ M_j([0,\theta s_j])\le1500\theta a_j^3I,\qquad
 \int\lambda^{-1}dM_j(\lambda)\le Q_j .
 \]
 A common actual subsequence gives a bounded relative-energy measure with both endpoint atoms retained. It evaluates the effective current energy and the full complementary lift's norm and energy at their original \(a_j^4,a_j^5\) scales. The exact effective kernel includes KP17's current-trial kernel; the full physical projection and source cross measure remain in the response. All three original shifts, raw coefficient norms and complementary contributions are preserved. The signed physical window and smooth interacting no-gap endpoint remain active calculations.
+
+## Full gauge-current matrix and exact dynamic curl
+
+[GCM1–GCM16](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GAUGE_CURRENT_COVARIANCE_AND_DYNAMIC_CURL.md) retain the complete vertex cross covariance and prove the full matrix lower bound
+\[
+\mathsf V_g\ge a_j^4\mathsf A_0\mathsf A_1^\dagger\mathsf A_0
+\ge\frac{a_j^4}{12}\mathsf A_0,\qquad
+\mathsf A_0=\mu B_U^*B_U,\quad
+\mathsf A_1=\mu B_U^*(K_U^*K_U)B_U .
+\]
+The physical source-energy receiver keeps this entire correction. Its scalar inverse and continuum inverse-half domains are proved in GCM6–GCM9. The single-edge bound \((\mathsf V_g)_{ee}\ge2\mathsf N_{ee}/7\) is a diagonal statement: the full original constant list has \(\mathsf V_g\mathbf1=0\) and \(P\mathsf C\mathbf1=\mathsf C\mathbf1\). No factor inferred from the diagonal replaces the actual matrix.
+
+The original contraction \(\mathscr T\alpha=K_U^*\alpha^\sharp\) satisfies
+\[
+\mathscr T L_1-L_0^{\mathbb V}\mathscr T
+=\kappa_*\mathscr R\,d,\qquad
+\mathscr R\omega=\mathscr S_U((*_e\omega_{ee})_e).
+\]
+GCM13–GCM16 prove every connection sign, the \(12\) degree bounds, the current identity with zero initial diagonal curl, and the complete two-form resolvent correction. GCM10–GCM12 construct the graph-energy receiver for a common smooth spatial weight, with no infinity atom at \(\lambda/a_j^2\). Its connection to physical time energy \(\lambda/s_j\) remains the exact norm and dynamic maps above. All endpoint atoms in the physical measure, original raw coefficients, mixed scalar kernels and the signed physical window remain.

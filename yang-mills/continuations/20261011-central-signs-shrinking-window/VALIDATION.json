@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-13T00:28:15.307912+00:00",
+  "checked_utc": "2026-10-13T00:56:48.738914+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -403,14 +403,14 @@
     },
     {
       "source": "POSITIVE_TIME_COVARIANCE.md",
-      "sha256": "1c0dd5ed71dd497f0beed6b79dad97c81ca1e1113d8ce99a184b5b55284f04f7",
-      "complete_math_blocks": 215,
+      "sha256": "0f79f719c5e2c5205e82fba92375ac33e01e8e35d335544631b06ad7d7291cfa",
+      "complete_math_blocks": 224,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "sha256": "c831d3fd06b84ea794b7666edf3f336bb5fd1deea7886313f14c661c41c12506",
-      "complete_math_blocks": 238,
+      "sha256": "462b63bd95926f08418525b145513e5adb6600a06a836623156cce1e852db5a4",
+      "complete_math_blocks": 247,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -541,14 +541,14 @@
     },
     {
       "source": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "sha256": "d13be844053eaa64c100a6a6eedb63afbf68183ae76fb4dbc60ca754c9b1ef68",
-      "complete_math_blocks": 259,
+      "sha256": "c97af1f7413d78c729adc4608c5c4f94d165be41dddf5faa500a1b365ee78368",
+      "complete_math_blocks": 268,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "QUANTITATIVE_FORCE_CURL.md",
-      "sha256": "b511b3e78c5fb069a0618278285502f35383b8652bcac97d8a9330da1c1e4f02",
-      "complete_math_blocks": 193,
+      "sha256": "ebee7d00adabd1389f7b2091b4d5b4faab633237e6cb34f823a6aecdae73c4e3",
+      "complete_math_blocks": 202,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -565,32 +565,38 @@
     },
     {
       "source": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
-      "sha256": "d0421e631429679ee601c3b5f2c13cfc0165e0c52c50eb5c34230409c49ffac4",
-      "complete_math_blocks": 294,
+      "sha256": "e31b774774516853df1908c797356ac00f09b5f9185b64eb9dba7840d3837012",
+      "complete_math_blocks": 303,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
-      "sha256": "f6366a6306fae6e152eea1f015b50317f7581ebcae4e1364ef1c8457f8492ae3",
-      "complete_math_blocks": 224,
+      "sha256": "4352807af7fca352b3e01b7a43c4c65f2b9ce14b625d1871a75391de1fd29c82",
+      "complete_math_blocks": 233,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
-      "sha256": "4727870a91723d8527c9afb9533d998ac9782b0467ff11e8cf57d057e0e62b32",
-      "complete_math_blocks": 218,
+      "sha256": "52633bb08978068c2a714896a8b6fd94e543f13272d56e77a2a3d8bdeb457711",
+      "complete_math_blocks": 227,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
-      "sha256": "3b2751e74daa17263682867f1b16c41fea7e381e08123eb8602c8ebb9d20ea1f",
-      "complete_math_blocks": 132,
+      "sha256": "6ce8c14127a10039b2f50905fd96b0f01d84ec8bc4dc4edc99514f02058dbaf9",
+      "complete_math_blocks": 141,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "GAUGE_HESSIAN_AND_COVARIANT_GRAPH.md",
-      "sha256": "4e6ca2a28b7fe2ff7da630e24bdd81223712be98a4c19f53c4c4aae00541c693",
-      "complete_math_blocks": 187,
+      "sha256": "504bd02171636ac00e5981de389f4006fe945d894a485e30eb7fbacf12688fc5",
+      "complete_math_blocks": 196,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "GAUGE_CURRENT_COVARIANCE_AND_DYNAMIC_CURL.md",
+      "sha256": "0bfdd1a6e6761fd9b6aa7c21a79b2725e362f1287d5831b641dfaf437c930fb5",
+      "complete_math_blocks": 231,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1173,6 +1179,11 @@
     {
       "file": "GAUGE_HESSIAN_ORIGINAL_STARS.png",
       "sha256": "448f18a99279b5f9bb3393e623f6f6aa8ac494720a4affad6d62532bc48eedc3",
+      "visually_inspected": true
+    },
+    {
+      "file": "GAUGE_CURRENT_AND_DYNAMIC_MAP.png",
+      "sha256": "98f21a32fa70b4b922ce8296c6b9531992f4fccec4c7b99b0fe49f575a2fd8c1",
       "visually_inspected": true
     }
   ],
@@ -7616,6 +7627,154 @@
       ],
       "figure": "GAUGE_HESSIAN_ORIGINAL_STARS.png",
       "pages": 1032
+    }
+  },
+  "gauge_current_review": {
+    "utc": "2026-10-13T00:44:35.967625+00:00",
+    "coverage": "Complete GCM1–GCM16: signed local vertex covariance and Lie-component isotropy; full moment block with kernel and pseudoinverse proof; diagonal bound and exact full-list collective counterexample; physical/source receiver with inverse-half domain; original cell weak limits; common smooth-weight graph scale with both endpoint treatment; exact weighted Killing contraction, every original connection sign and full two-form resolvent correction.",
+    "strengthening": "The full gauge norm correction has a positive matrix lower bound from two actual local moments. Each single current loses at least two sevenths of its norm vertically, while the complete matrix retains the collective constant direction. The actual physical source-energy receiver and exact dynamic curl map are proved.",
+    "correction": "No diagonal/trace bound is substituted for a Loewner bound. Graph energy lambda/a² and physical energy lambda/s retain their distinct exact maps. The signed resolvent combination stays inside the graph inverse; separate inverse-graph terms need not have justified finite limits.",
+    "limitations": "The two-form resolvent correction and original physical window remain to be evaluated. Continuum state, reconstruction, theory identification and smooth global no-gap endpoint remain active.",
+    "actual_reading": "Exact programme providers and original-author provenance retained in the ledger. Bounded disk-index routes are not readings; no new external-author reading or novelty claim.",
+    "diagnostics": {
+      "checks": 4685,
+      "all_passed": true,
+      "suites": [
+        {
+          "checks": 4627,
+          "scope": "Universal finite SU(2) graph/current identities using the retained three-plaquette function. Two nonflat and one flat configuration preserve all original edges and gauge zero modes. These arrays and their finite averages are not an approximation of the Yang–Mills vacuum; actual-state and continuum assertions follow from the written proof."
+        },
+        {
+          "checks": 58,
+          "scope": "Two original nonflat SU(2) configurations of the retained gauge-invariant three-plaquette test function. Independent finite right-flow derivatives check the component scalar weighted operator against the full one-form Hessian expression. Connection signs and all diagonal/mixed curl blocks are checked. These are universal algebra/derivative diagnostics, not an actual Yang–Mills vacuum computation."
+        }
+      ]
+    },
+    "figures_inspected": [
+      "GAUGE_CURRENT_AND_DYNAMIC_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "GAUGE_CURRENT_COVARIANCE_AND_DYNAMIC_CURL.md",
+        "prefix": "GCM",
+        "tags": 16,
+        "owner_sha256": "0bfdd1a6e6761fd9b6aa7c21a79b2725e362f1287d5831b641dfaf437c930fb5",
+        "public_sha256": "0bfdd1a6e6761fd9b6aa7c21a79b2725e362f1287d5831b641dfaf437c930fb5",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-13T00:56:48.738914+00:00",
+      "tex_sha256": "bfa19d8e5f82f75294f9786043ae09677e92a13afa8fda84c46ad726c3032137",
+      "pdf_sha256": "3e2f50d997a5843e0e9a93f88dcae05f28bb28353b41dff8fb178e24bb2c7217",
+      "pages": 1050,
+      "source_files": 99,
+      "math_blocks": 23181,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-13T00:56:46.957465+00:00",
+        "complete": true,
+        "pages": 1050,
+        "inspected_pages": [
+          697,
+          698,
+          699,
+          721,
+          722,
+          723,
+          946,
+          947,
+          948,
+          957,
+          958,
+          959,
+          997,
+          998,
+          999,
+          1011,
+          1012,
+          1013,
+          1023,
+          1024,
+          1025,
+          1031,
+          1032,
+          1033,
+          1040,
+          1041,
+          1042,
+          1043,
+          1044,
+          1045,
+          1046,
+          1047,
+          1048,
+          1049,
+          1050
+        ],
+        "contacts": 9,
+        "figure_inspected": true,
+        "finding": "All nine rendered contact sheets were inspected in the preceding work. The 35 new, receiving and adjacent pages fit; equations and figure labels are readable. No new overflow or missing glyph; inherited warning comparison retained."
+      }
+    }
+  },
+  "gauge_current_compile": {
+    "utc": "2026-10-13T00:56:48.738914+00:00",
+    "tex_sha256": "bfa19d8e5f82f75294f9786043ae09677e92a13afa8fda84c46ad726c3032137",
+    "pdf_sha256": "3e2f50d997a5843e0e9a93f88dcae05f28bb28353b41dff8fb178e24bb2c7217",
+    "pages": 1050,
+    "source_files": 99,
+    "math_blocks": 23181,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-13T00:56:46.957465+00:00",
+      "complete": true,
+      "pages": 1050,
+      "inspected_pages": [
+        697,
+        698,
+        699,
+        721,
+        722,
+        723,
+        946,
+        947,
+        948,
+        957,
+        958,
+        959,
+        997,
+        998,
+        999,
+        1011,
+        1012,
+        1013,
+        1023,
+        1024,
+        1025,
+        1031,
+        1032,
+        1033,
+        1040,
+        1041,
+        1042,
+        1043,
+        1044,
+        1045,
+        1046,
+        1047,
+        1048,
+        1049,
+        1050
+      ],
+      "contacts": 9,
+      "figure_inspected": true,
+      "finding": "All nine rendered contact sheets were inspected in the preceding work. The 35 new, receiving and adjacent pages fit; equations and figure labels are readable. No new overflow or missing glyph; inherited warning comparison retained."
     }
   }
 }

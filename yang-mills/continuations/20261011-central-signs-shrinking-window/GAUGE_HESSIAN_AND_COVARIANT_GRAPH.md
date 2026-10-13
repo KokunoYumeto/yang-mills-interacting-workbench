@@ -385,3 +385,22 @@ The next actual calculation is the complete matrix of the gauge norm loss in GWH
 The reproducible source is figure_gauge_hessian.py. The finite checks in check_gauge_hessian_rows.py use a specified gauge-invariant three-plaquette trace function, both flat and nonflat link configurations, all endpoint transport signs, the full original graph and the flat graph's three gauge zero modes. This function tests the universal gauge identity; the actual Yang–Mills state bounds follow from the written SG substitution. All GWH1–GWH15 proofs retain the original factors, support and boundary data.
 
 ![The two original endpoint stars at the exact j=2 physical coordinates, the full Hessian-row defect, original kinetic root, covariant graph receiver and physical vertical-norm correction. GWH1–GWH11 retain every exterior edge and every gauge zero mode.](GAUGE_HESSIAN_ORIGINAL_STARS.png)
+
+## Full gauge-current matrix and exact dynamic curl
+
+[GCM1–GCM16](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/GAUGE_CURRENT_COVARIANCE_AND_DYNAMIC_CURL.md) retain the complete vertex cross covariance and prove the full matrix lower bound
+\[
+\mathsf V_g\ge a_j^4\mathsf A_0\mathsf A_1^\dagger\mathsf A_0
+\ge\frac{a_j^4}{12}\mathsf A_0,\qquad
+\mathsf A_0=\mu B_U^*B_U,\quad
+\mathsf A_1=\mu B_U^*(K_U^*K_U)B_U .
+\]
+The physical source-energy receiver keeps this entire correction. Its scalar inverse and continuum inverse-half domains are proved in GCM6–GCM9. The single-edge bound \((\mathsf V_g)_{ee}\ge2\mathsf N_{ee}/7\) is a diagonal statement: the full original constant list has \(\mathsf V_g\mathbf1=0\) and \(P\mathsf C\mathbf1=\mathsf C\mathbf1\). No factor inferred from the diagonal replaces the actual matrix.
+
+The original contraction \(\mathscr T\alpha=K_U^*\alpha^\sharp\) satisfies
+\[
+\mathscr T L_1-L_0^{\mathbb V}\mathscr T
+=\kappa_*\mathscr R\,d,\qquad
+\mathscr R\omega=\mathscr S_U((*_e\omega_{ee})_e).
+\]
+GCM13–GCM16 prove every connection sign, the \(12\) degree bounds, the current identity with zero initial diagonal curl, and the complete two-form resolvent correction. GCM10–GCM12 construct the graph-energy receiver for a common smooth spatial weight, with no infinity atom at \(\lambda/a_j^2\). Its connection to physical time energy \(\lambda/s_j\) remains the exact norm and dynamic maps above. All endpoint atoms in the physical measure, original raw coefficients, mixed scalar kernels and the signed physical window remain.

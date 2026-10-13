@@ -17,13 +17,13 @@
     },
     {
       "path": "ACTUAL_GROUND_GRADIENT_TRIAL.md",
-      "bytes": 52238,
-      "sha256": "c831d3fd06b84ea794b7666edf3f336bb5fd1deea7886313f14c661c41c12506"
+      "bytes": 53897,
+      "sha256": "462b63bd95926f08418525b145513e5adb6600a06a836623156cce1e852db5a4"
     },
     {
       "path": "ACTUAL_KINETIC_PROFILE_AND_SHIFT_MOMENTS.md",
-      "bytes": 39075,
-      "sha256": "d0421e631429679ee601c3b5f2c13cfc0165e0c52c50eb5c34230409c49ffac4"
+      "bytes": 40734,
+      "sha256": "e31b774774516853df1908c797356ac00f09b5f9185b64eb9dba7840d3837012"
     },
     {
       "path": "ACTUAL_LIMIT_CHECKS.json",
@@ -62,8 +62,8 @@
     },
     {
       "path": "ACTUAL_PHYSICAL_SCORE_SPECTRAL_MEASURE.md",
-      "bytes": 21434,
-      "sha256": "3b2751e74daa17263682867f1b16c41fea7e381e08123eb8602c8ebb9d20ea1f"
+      "bytes": 23093,
+      "sha256": "6ce8c14127a10039b2f50905fd96b0f01d84ec8bc4dc4edc99514f02058dbaf9"
     },
     {
       "path": "ACTUAL_PUSHFORWARD.md",
@@ -367,8 +367,8 @@
     },
     {
       "path": "build_reader.py",
-      "bytes": 18488,
-      "sha256": "f6bb6e196744d8974dd987d21c48abbb42521179b09f58152591401f6c4d5482"
+      "bytes": 19267,
+      "sha256": "9b33eef9ae9cce65c1305b6127890e540ce68352d85164693f79db69305f48ee"
     },
     {
       "path": "CAP_CONSTANT_CHECKS.json",
@@ -614,6 +614,16 @@
       "path": "check_gauge_averaged_action.py",
       "bytes": 4592,
       "sha256": "0584b22af11521df3d46297c3746f564960489ba4f7a99e63bcea1827a05a105"
+    },
+    {
+      "path": "check_gauge_current.py",
+      "bytes": 5269,
+      "sha256": "d95405b573d805d3d81ba1976cf8944a17386078d4f75a801adddc729b1b9fff"
+    },
+    {
+      "path": "check_gauge_dynamics.py",
+      "bytes": 4738,
+      "sha256": "beef1190db1a62860b7a4332384d209abb18c1bd6bad0ea238f9643518d913cc"
     },
     {
       "path": "check_gauge_hessian_rows.py",
@@ -872,8 +882,8 @@
     },
     {
       "path": "CLAIM_LEDGER.md",
-      "bytes": 103632,
-      "sha256": "d6bef643e6fb811afd0d1fa99c3a1c412d681fa64eecfeef574645e70dc7eed4"
+      "bytes": 105315,
+      "sha256": "e9b64b744db61dc150d4a371bb0fb7fea77e78d60a553401739ebacb42e465f6"
     },
     {
       "path": "COLLAR_RATE_MAP.png",
@@ -1032,8 +1042,8 @@
     },
     {
       "path": "CURRENT_DENSITY_FLUX_AND_PROJECTED_RESIDUAL.md",
-      "bytes": 43174,
-      "sha256": "d13be844053eaa64c100a6a6eedb63afbf68183ae76fb4dbc60ca754c9b1ef68"
+      "bytes": 44833,
+      "sha256": "c97af1f7413d78c729adc4608c5c4f94d165be41dddf5faa500a1b365ee78368"
     },
     {
       "path": "CURRENT_RESIDUAL_CHECKS.json",
@@ -1491,6 +1501,11 @@
       "sha256": "185276908d33b2e36f64b3232982742f7badc5e8effb0f609d043c040143a72c"
     },
     {
+      "path": "figure_gauge_current.py",
+      "bytes": 2963,
+      "sha256": "1c6d7bc3f101992469c5113a7e403e221e31c1b8c2c9761c67cb03ac72133640"
+    },
+    {
       "path": "figure_gauge_hessian.py",
       "bytes": 3366,
       "sha256": "96efa950a1197283cb013d8b4f01ab27620d6a6b35f37280ee21bc2b66c38148"
@@ -1802,8 +1817,8 @@
     },
     {
       "path": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
-      "bytes": 33847,
-      "sha256": "f6366a6306fae6e152eea1f015b50317f7581ebcae4e1364ef1c8457f8492ae3"
+      "bytes": 35506,
+      "sha256": "4352807af7fca352b3e01b7a43c4c65f2b9ce14b625d1871a75391de1fd29c82"
     },
     {
       "path": "FULL_HAMILTONIAN_GROUND_FIBER.md",
@@ -1851,9 +1866,44 @@
       "sha256": "f1d21f262bf6a20c478419e4807d0e53cfc8f5428b8ddf53d5eb4cec0ad34cdf"
     },
     {
+      "path": "GAUGE_CURRENT_AND_DYNAMIC_MAP.png",
+      "bytes": 247595,
+      "sha256": "98f21a32fa70b4b922ce8296c6b9531992f4fccec4c7b99b0fe49f575a2fd8c1"
+    },
+    {
+      "path": "GAUGE_CURRENT_AND_DYNAMIC_MAP.svg",
+      "bytes": 48965,
+      "sha256": "3d2d0c50b878c184c5072e35140b84bf2a375cdde5e12d6bd1215bdcccb30d44"
+    },
+    {
+      "path": "GAUGE_CURRENT_CHECKS.json",
+      "bytes": 373031,
+      "sha256": "19afb5d7b332884bdc90ebbbb61de6261ad185ecbcbabdc8a3c24d9959f58345"
+    },
+    {
+      "path": "GAUGE_CURRENT_COVARIANCE_AND_DYNAMIC_CURL.md",
+      "bytes": 29208,
+      "sha256": "0bfdd1a6e6761fd9b6aa7c21a79b2725e362f1287d5831b641dfaf437c930fb5"
+    },
+    {
+      "path": "GAUGE_CURRENT_SOURCE_FIDELITY.json",
+      "bytes": 671,
+      "sha256": "cf761c424f5944064f61cee22220272c1f631fd586c993d79b0ceb4e9add3938"
+    },
+    {
+      "path": "GAUGE_CURRENT_SOURCE_USE_LEDGER.json",
+      "bytes": 11497,
+      "sha256": "b2a4f630391489acb5ceb6295df864dc0a5a9c3c590d4f5b822863e2817c753b"
+    },
+    {
+      "path": "GAUGE_DYNAMIC_CHECKS.json",
+      "bytes": 8583,
+      "sha256": "f7313db713cf26a97735aba0a11cfc101780097d449ed24d14d76ef64507c53b"
+    },
+    {
       "path": "GAUGE_HESSIAN_AND_COVARIANT_GRAPH.md",
-      "bytes": 24615,
-      "sha256": "4e6ca2a28b7fe2ff7da630e24bdd81223712be98a4c19f53c4c4aae00541c693"
+      "bytes": 26274,
+      "sha256": "504bd02171636ac00e5981de389f4006fe945d894a485e30eb7fbacf12688fc5"
     },
     {
       "path": "GAUGE_HESSIAN_CHECKS.json",
@@ -2642,8 +2692,8 @@
     },
     {
       "path": "PHYSICAL_SCALAR_RECEIVER_AND_CURRENT_COVARIANCE.md",
-      "bytes": 32558,
-      "sha256": "4727870a91723d8527c9afb9533d998ac9782b0467ff11e8cf57d057e0e62b32"
+      "bytes": 34217,
+      "sha256": "52633bb08978068c2a714896a8b6fd94e543f13272d56e77a2a3d8bdeb457711"
     },
     {
       "path": "PHYSICAL_SCORE_SOURCE_FIDELITY.json",
@@ -2732,8 +2782,8 @@
     },
     {
       "path": "POSITIVE_TIME_COVARIANCE.md",
-      "bytes": 34769,
-      "sha256": "1c0dd5ed71dd497f0beed6b79dad97c81ca1e1113d8ce99a184b5b55284f04f7"
+      "bytes": 36428,
+      "sha256": "0f79f719c5e2c5205e82fba92375ac33e01e8e35d335544631b06ad7d7291cfa"
     },
     {
       "path": "POSITIVE_TIME_MAP.png",
@@ -2832,8 +2882,8 @@
     },
     {
       "path": "QUANTITATIVE_FORCE_CURL.md",
-      "bytes": 23559,
-      "sha256": "b511b3e78c5fb069a0618278285502f35383b8652bcac97d8a9330da1c1e4f02"
+      "bytes": 25218,
+      "sha256": "ebee7d00adabd1389f7b2091b4d5b4faab633237e6cb34f823a6aecdae73c4e3"
     },
     {
       "path": "QUANTITATIVE_FORCE_CURL_CHECKS.json",
@@ -2902,18 +2952,18 @@
     },
     {
       "path": "READER_SOURCES.json",
-      "bytes": 3751,
-      "sha256": "172d0f8d05091d1b5cb62fb2baeeb8ea35bbcc8a0c52bf4091ce701d706c63d0"
+      "bytes": 3801,
+      "sha256": "b1e6d22eda4674fb2ce9a6a6e05aea287a7d62c80c69d659e23e9981d05fdb89"
     },
     {
       "path": "README.md",
-      "bytes": 94446,
-      "sha256": "66f8f3131969dac1904f481317db21100b45e5da24a34cb02552e07d95d0fd4f"
+      "bytes": 96129,
+      "sha256": "79c8c872e718fc31b957c00734b73579edf828bd6bd619c29ce62c1bbaf2821f"
     },
     {
       "path": "RESEARCH_CONTINUATION.tex",
-      "bytes": 3177101,
-      "sha256": "ce68dd77f00c9591c050f86e16e7044730fba70547dbbb2bb723297faec74a11"
+      "bytes": 3221902,
+      "sha256": "bfa19d8e5f82f75294f9786043ae09677e92a13afa8fda84c46ad726c3032137"
     },
     {
       "path": "RESULTS_20261011.md",
@@ -2927,8 +2977,8 @@
     },
     {
       "path": "RESULTS_20261013.md",
-      "bytes": 6130,
-      "sha256": "f480940f8e613a20643c4c7ecbb57fede72f3f3c9baf5b7b0749ace9f7494c2b"
+      "bytes": 7813,
+      "sha256": "3bc6416dfc0e30edc9942ce0fbaaf3cb5d266d292f38e58f7a5bf100b92dba3e"
     },
     {
       "path": "RETAINED_BOUNDARY_MAP.png",
@@ -3267,8 +3317,8 @@
     },
     {
       "path": "SOURCE_READING_USE_LEDGER.json",
-      "bytes": 554333,
-      "sha256": "e0a706f38486094207e6eb4327f0fadc53f31016b6802bd6ace0138987ec8d49"
+      "bytes": 565827,
+      "sha256": "1fb308610d3128e014c13fcf027015f9fdf2bb9ce2f4c8aef8b304838ff2af59"
     },
     {
       "path": "SOURCE_ZERO_COVARIANCE_UPPER.md",
@@ -3427,8 +3477,8 @@
     },
     {
       "path": "TEX_FIDELITY.json",
-      "bytes": 22450,
-      "sha256": "d9e722a5e759322bbb703629fc83bfe7b543b2926c8ce4b447b5a0aa0968e982"
+      "bytes": 22683,
+      "sha256": "bb8737c8e421172d0ce183af005af687119e0b61f98442c8fecc3b077b267962"
     },
     {
       "path": "THREE_SCALE_PHYSICAL_WINDOW.png",
@@ -3497,8 +3547,8 @@
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 354539,
-      "sha256": "24f2ad2445a2e010d830c4c5eece9ce68720985ac11ae4dd5ffd572f383ecbdd"
+      "bytes": 360911,
+      "sha256": "e61fb88795aa8ab4df438f0e92812c04f9126184cbf1b85d16fe38306b1ac216"
     },
     {
       "path": "VERIFICATION.json",
