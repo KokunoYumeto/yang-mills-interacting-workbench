@@ -794,3 +794,18 @@ The file check_two_form_force.py checks the Pauli adjoint Casimir, full two-form
 ## Next calculation
 
 The common smooth coefficient is in the exact kernel of the leading orientation force operator, and TFC15 evaluates its first surviving spatial term. TFC23–TFC25 insert that sector into the original response with its full error. The next calculation evaluates the actual squared-score covariance and the remaining complete TFC5/TFC9 correction in the original physical \(Y/G_0/X\) cross kernels and three-shift window, retaining the full zero-atom term in TFC18 and all five original second-energy Green moments. The third-order contraction TFC8 must be compared explicitly with the original J5 third Schur coefficient. None of these comparisons is replaced by assuming a positive window. The interacting continuum state, reconstruction, intended-theory identification and smooth global no-gap endpoint remain unfinished.
+
+## Exact scalar source and full positive-energy band
+
+[TSC1–TSC12](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SCALAR_COMMON_SOURCE_RECONSTRUCTION.md) integrate the common-source gradient identity with every original centering constant:
+\[
+X_{\varphi,j}+Q_{\varphi,j}
+=\frac{\kappa_*^2a_j^3}{2}B_{c_j}+r_{\varphi,j},
+\qquad r_{\varphi,j}=\kappa_*L_0^{-1}\delta_\mu e_{\varphi,j}.
+\]
+The full scalar score term has norm \(O(\sqrt{a_j})\). For every Borel subset \(B\subset[\epsilon s_j,\infty)\), the exact finite estimate proves
+\[
+\|E_0(B)(X_{\varphi,j}+Q_{\varphi,j})\|
+\le d_{\varphi,j}(\epsilon s_j)=O(\sqrt{a_j}).
+\]
+Consequently the original \(X\) and squared-score \(Q\) masses have equal extended liminf and limsup on every such sequence of bands, including the original shrinking annulus. This compares the actual unweighted physical masses without assigning a positive value to either one. TSC8–TSC9 retain all three original response shifts and give explicit signed bounds. TSC10–TSC12 evaluate the actual mixed density/score covariance combination and give a whole-variance floor of order \(a_j\). The weighted Poisson residual at zero, all mixed terms and original coefficient norms remain. The spectral allocation and smooth interacting continuum no-gap construction continue.

@@ -1,0 +1,1831 @@
+{
+  "checks": 456,
+  "all_passed": true,
+  "scope": "Specified finite complex spectral arrays with both endpoint scales, full raw factors, scalar projection and mixed covariances. Universal algebra diagnostics only; these arrays are not the actual Yang\u2013Mills ground state.",
+  "results": [
+    {
+      "name": "k0.6-j2-full-gradient",
+      "relative_error": 1.0668034602945286e-16
+    },
+    {
+      "name": "k0.6-j2-scalar-reconstruction",
+      "relative_error": 2.8014652361859974e-15
+    },
+    {
+      "name": "k0.6-j2-scalar-score-norm",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j2-inverse-score",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j2-residual-energy",
+      "relative_error": 6.776263578034403e-21
+    },
+    {
+      "name": "k0.6-j2-source-integration",
+      "relative_error": 1.357500267286947e-16
+    },
+    {
+      "name": "k0.6-j2-mixed-covariance",
+      "relative_error": 5.551115123125783e-17
+    },
+    {
+      "name": "k0.6-j2-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j2-variance-floor",
+      "excess": -20428.355636889835
+    },
+    {
+      "name": "k0.6-j2-highpass-0.05",
+      "excess": -0.06526627285322292
+    },
+    {
+      "name": "k0.6-j2-root-mass-0.05",
+      "excess": -0.0706245455063441
+    },
+    {
+      "name": "k0.6-j2-residual-highpass-0.05",
+      "excess": -0.004392392454181422
+    },
+    {
+      "name": "k0.6-j2-arbitrary-subset-0.05",
+      "excess": -0.06626760246842985
+    },
+    {
+      "name": "k0.6-j2-finite-upper-0.05",
+      "excess": -0.0012861598364035964
+    },
+    {
+      "name": "k0.6-j2-highpass-0.4",
+      "excess": -0.02266015622572648
+    },
+    {
+      "name": "k0.6-j2-root-mass-0.4",
+      "excess": -0.027387233701348154
+    },
+    {
+      "name": "k0.6-j2-residual-highpass-0.4",
+      "excess": -0.0005381530886721065
+    },
+    {
+      "name": "k0.6-j2-arbitrary-subset-0.4",
+      "excess": -0.023341486291550657
+    },
+    {
+      "name": "k0.6-j2-finite-upper-0.4",
+      "excess": -0.0012977575259110917
+    },
+    {
+      "name": "k0.6-j2-highpass-1.7",
+      "excess": -0.011003611442722327
+    },
+    {
+      "name": "k0.6-j2-root-mass-1.7",
+      "excess": -0.015006678359708332
+    },
+    {
+      "name": "k0.6-j2-residual-highpass-1.7",
+      "excess": -0.0001232029954885793
+    },
+    {
+      "name": "k0.6-j2-arbitrary-subset-1.7",
+      "excess": -0.0117463829900243
+    },
+    {
+      "name": "k0.6-j2-finite-upper-1.7",
+      "excess": -0.0014802103305580692
+    },
+    {
+      "name": "k0.6-j2-full-three-by-three-positive",
+      "relative_error": 1.8714521155377408e-16
+    },
+    {
+      "name": "k0.6-j2-nine-covariance-products",
+      "relative_error": 1.547191147169269e-16
+    },
+    {
+      "name": "k0.6-j2-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j2-response-polar-0.8",
+      "relative_error": 1.339630181647552e-16
+    },
+    {
+      "name": "k0.6-j2-response-vector-0.8",
+      "excess": -0.010850068841621742
+    },
+    {
+      "name": "k0.6-j2-response-root-0.8",
+      "excess": -0.015131725315495309
+    },
+    {
+      "name": "k0.6-j2-response-polar-0.16000000000000003",
+      "relative_error": 1.5989970327345255e-16
+    },
+    {
+      "name": "k0.6-j2-response-vector-0.16000000000000003",
+      "excess": -0.023818418821048473
+    },
+    {
+      "name": "k0.6-j2-response-root-0.16000000000000003",
+      "excess": -0.031745290636518764
+    },
+    {
+      "name": "k0.6-j2-response-polar-4.800000000000001",
+      "relative_error": 5.551115123125783e-17
+    },
+    {
+      "name": "k0.6-j2-response-vector-4.800000000000001",
+      "excess": -0.0054637934422822765
+    },
+    {
+      "name": "k0.6-j2-response-root-4.800000000000001",
+      "excess": -0.0080042756018021
+    },
+    {
+      "name": "k0.6-j2-signed-lower",
+      "excess": -0.1583460846905438
+    },
+    {
+      "name": "k0.6-j2-signed-upper",
+      "excess": -0.13805283046762784
+    },
+    {
+      "name": "k0.6-j3-full-gradient",
+      "relative_error": 1.0893113174544804e-16
+    },
+    {
+      "name": "k0.6-j3-scalar-reconstruction",
+      "relative_error": 9.407605031067354e-15
+    },
+    {
+      "name": "k0.6-j3-scalar-score-norm",
+      "relative_error": 1.3552527156068805e-20
+    },
+    {
+      "name": "k0.6-j3-inverse-score",
+      "relative_error": 1.5922071652288207e-16
+    },
+    {
+      "name": "k0.6-j3-residual-energy",
+      "relative_error": 6.776470370032194e-21
+    },
+    {
+      "name": "k0.6-j3-source-integration",
+      "relative_error": 3.129684266321666e-16
+    },
+    {
+      "name": "k0.6-j3-mixed-covariance",
+      "relative_error": 1.4304896245381993e-16
+    },
+    {
+      "name": "k0.6-j3-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j3-variance-floor",
+      "excess": -188744.60894099722
+    },
+    {
+      "name": "k0.6-j3-highpass-0.05",
+      "excess": -0.0692665357749949
+    },
+    {
+      "name": "k0.6-j3-root-mass-0.05",
+      "excess": -0.07340829705473262
+    },
+    {
+      "name": "k0.6-j3-residual-highpass-0.05",
+      "excess": -0.005131569164084833
+    },
+    {
+      "name": "k0.6-j3-arbitrary-subset-0.05",
+      "excess": -0.07497343338949194
+    },
+    {
+      "name": "k0.6-j3-finite-upper-0.05",
+      "excess": -0.0012669013043450535
+    },
+    {
+      "name": "k0.6-j3-highpass-0.4",
+      "excess": -0.02537372693850085
+    },
+    {
+      "name": "k0.6-j3-root-mass-0.4",
+      "excess": -0.033043962008627185
+    },
+    {
+      "name": "k0.6-j3-residual-highpass-0.4",
+      "excess": -0.0006451476860084983
+    },
+    {
+      "name": "k0.6-j3-arbitrary-subset-0.4",
+      "excess": -0.028420180511441424
+    },
+    {
+      "name": "k0.6-j3-finite-upper-0.4",
+      "excess": -0.0012867452109907025
+    },
+    {
+      "name": "k0.6-j3-highpass-1.7",
+      "excess": -0.012296596347078739
+    },
+    {
+      "name": "k0.6-j3-root-mass-1.7",
+      "excess": -0.02018586045387697
+    },
+    {
+      "name": "k0.6-j3-residual-highpass-1.7",
+      "excess": -0.00014994062504119243
+    },
+    {
+      "name": "k0.6-j3-arbitrary-subset-1.7",
+      "excess": -0.015363320501992243
+    },
+    {
+      "name": "k0.6-j3-finite-upper-1.7",
+      "excess": -0.0013988981364136705
+    },
+    {
+      "name": "k0.6-j3-full-three-by-three-positive",
+      "relative_error": 1.7210655861186738e-16
+    },
+    {
+      "name": "k0.6-j3-nine-covariance-products",
+      "relative_error": 1.7623130349981968e-16
+    },
+    {
+      "name": "k0.6-j3-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j3-response-polar-0.8",
+      "relative_error": 3.687028817061882e-16
+    },
+    {
+      "name": "k0.6-j3-response-vector-0.8",
+      "excess": -0.012674927851403053
+    },
+    {
+      "name": "k0.6-j3-response-root-0.8",
+      "excess": -0.0170510198214723
+    },
+    {
+      "name": "k0.6-j3-response-polar-0.16000000000000003",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j3-response-vector-0.16000000000000003",
+      "excess": -0.02911950277731
+    },
+    {
+      "name": "k0.6-j3-response-root-0.16000000000000003",
+      "excess": -0.039154516426227776
+    },
+    {
+      "name": "k0.6-j3-response-polar-4.800000000000001",
+      "relative_error": 4.440892098500626e-16
+    },
+    {
+      "name": "k0.6-j3-response-vector-4.800000000000001",
+      "excess": -0.005834702167123532
+    },
+    {
+      "name": "k0.6-j3-response-root-4.800000000000001",
+      "excess": -0.0077561030853183135
+    },
+    {
+      "name": "k0.6-j3-signed-lower",
+      "excess": -0.2914819223490248
+    },
+    {
+      "name": "k0.6-j3-signed-upper",
+      "excess": -0.28833745971824065
+    },
+    {
+      "name": "k0.6-j7-full-gradient",
+      "relative_error": 2.353480996011794e-17
+    },
+    {
+      "name": "k0.6-j7-scalar-reconstruction",
+      "relative_error": 2.0977704229402682e-14
+    },
+    {
+      "name": "k0.6-j7-scalar-score-norm",
+      "relative_error": 1.3552527156068805e-20
+    },
+    {
+      "name": "k0.6-j7-inverse-score",
+      "relative_error": 4.4073764570838705e-16
+    },
+    {
+      "name": "k0.6-j7-residual-energy",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j7-source-integration",
+      "relative_error": 2.5900174115296094e-16
+    },
+    {
+      "name": "k0.6-j7-mixed-covariance",
+      "relative_error": 1.7554167342883506e-16
+    },
+    {
+      "name": "k0.6-j7-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j7-variance-floor",
+      "excess": -185656.29900367509
+    },
+    {
+      "name": "k0.6-j7-highpass-0.05",
+      "excess": -0.03889188347118271
+    },
+    {
+      "name": "k0.6-j7-root-mass-0.05",
+      "excess": -0.04650435993547917
+    },
+    {
+      "name": "k0.6-j7-residual-highpass-0.05",
+      "excess": -0.0015706980273737195
+    },
+    {
+      "name": "k0.6-j7-arbitrary-subset-0.05",
+      "excess": -0.04426245508509677
+    },
+    {
+      "name": "k0.6-j7-finite-upper-0.05",
+      "excess": -0.0003075495596772926
+    },
+    {
+      "name": "k0.6-j7-highpass-0.4",
+      "excess": -0.013813267902596557
+    },
+    {
+      "name": "k0.6-j7-root-mass-0.4",
+      "excess": -0.021906337510495838
+    },
+    {
+      "name": "k0.6-j7-residual-highpass-0.4",
+      "excess": -0.00019354850931388735
+    },
+    {
+      "name": "k0.6-j7-arbitrary-subset-0.4",
+      "excess": -0.01848877962095321
+    },
+    {
+      "name": "k0.6-j7-finite-upper-0.4",
+      "excess": -0.00031402110384540796
+    },
+    {
+      "name": "k0.6-j7-highpass-1.7",
+      "excess": -0.00668542792188076
+    },
+    {
+      "name": "k0.6-j7-root-mass-1.7",
+      "excess": -0.015210247721943276
+    },
+    {
+      "name": "k0.6-j7-residual-highpass-1.7",
+      "excess": -4.3961068402244204e-05
+    },
+    {
+      "name": "k0.6-j7-arbitrary-subset-1.7",
+      "excess": -0.011495693075183826
+    },
+    {
+      "name": "k0.6-j7-finite-upper-1.7",
+      "excess": -0.0003215189044504817
+    },
+    {
+      "name": "k0.6-j7-full-three-by-three-positive",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j7-nine-covariance-products",
+      "relative_error": 2.121232491300394e-16
+    },
+    {
+      "name": "k0.6-j7-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j7-response-polar-0.8",
+      "relative_error": 2.4331561608977853e-16
+    },
+    {
+      "name": "k0.6-j7-response-vector-0.8",
+      "excess": -0.007069316040331999
+    },
+    {
+      "name": "k0.6-j7-response-root-0.8",
+      "excess": -0.00996073990839408
+    },
+    {
+      "name": "k0.6-j7-response-polar-0.16000000000000003",
+      "relative_error": 1.212167523219492e-16
+    },
+    {
+      "name": "k0.6-j7-response-vector-0.16000000000000003",
+      "excess": -0.01685353582280342
+    },
+    {
+      "name": "k0.6-j7-response-root-0.16000000000000003",
+      "excess": -0.021536373524397183
+    },
+    {
+      "name": "k0.6-j7-response-polar-4.800000000000001",
+      "relative_error": 2.220446049250313e-16
+    },
+    {
+      "name": "k0.6-j7-response-vector-4.800000000000001",
+      "excess": -0.002741030354321556
+    },
+    {
+      "name": "k0.6-j7-response-root-4.800000000000001",
+      "excess": -0.004104368537808848
+    },
+    {
+      "name": "k0.6-j7-signed-lower",
+      "excess": -0.13398197491423947
+    },
+    {
+      "name": "k0.6-j7-signed-upper",
+      "excess": -0.14099057276438565
+    },
+    {
+      "name": "k0.6-j19-full-gradient",
+      "relative_error": 4.2969320946501475e-16
+    },
+    {
+      "name": "k0.6-j19-scalar-reconstruction",
+      "relative_error": 7.744234896983303e-14
+    },
+    {
+      "name": "k0.6-j19-scalar-score-norm",
+      "relative_error": 8.470329472543003e-22
+    },
+    {
+      "name": "k0.6-j19-inverse-score",
+      "relative_error": 1.17265458755623e-16
+    },
+    {
+      "name": "k0.6-j19-residual-energy",
+      "relative_error": 5.293955920339377e-23
+    },
+    {
+      "name": "k0.6-j19-source-integration",
+      "relative_error": 2.177719382870435e-16
+    },
+    {
+      "name": "k0.6-j19-mixed-covariance",
+      "relative_error": 2.0014830212433605e-16
+    },
+    {
+      "name": "k0.6-j19-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j19-variance-floor",
+      "excess": -3917771.489802456
+    },
+    {
+      "name": "k0.6-j19-highpass-0.05",
+      "excess": -0.013347795013383224
+    },
+    {
+      "name": "k0.6-j19-root-mass-0.05",
+      "excess": -0.0165014252838353
+    },
+    {
+      "name": "k0.6-j19-residual-highpass-0.05",
+      "excess": -0.0002257875047758768
+    },
+    {
+      "name": "k0.6-j19-arbitrary-subset-0.05",
+      "excess": -0.017190827391857896
+    },
+    {
+      "name": "k0.6-j19-finite-upper-0.05",
+      "excess": -5.904067249062968e-05
+    },
+    {
+      "name": "k0.6-j19-highpass-0.4",
+      "excess": -0.005347102268459053
+    },
+    {
+      "name": "k0.6-j19-root-mass-0.4",
+      "excess": -0.007498022132931019
+    },
+    {
+      "name": "k0.6-j19-residual-highpass-0.4",
+      "excess": -2.9347615934603812e-05
+    },
+    {
+      "name": "k0.6-j19-arbitrary-subset-0.4",
+      "excess": -0.007189130133958582
+    },
+    {
+      "name": "k0.6-j19-finite-upper-0.4",
+      "excess": -5.910091473749921e-05
+    },
+    {
+      "name": "k0.6-j19-highpass-1.7",
+      "excess": -0.002539446952370929
+    },
+    {
+      "name": "k0.6-j19-root-mass-1.7",
+      "excess": -0.00466871891144637
+    },
+    {
+      "name": "k0.6-j19-residual-highpass-1.7",
+      "excess": -6.507835692228764e-06
+    },
+    {
+      "name": "k0.6-j19-arbitrary-subset-1.7",
+      "excess": -0.004425623258656562
+    },
+    {
+      "name": "k0.6-j19-finite-upper-1.7",
+      "excess": -5.998159582151426e-05
+    },
+    {
+      "name": "k0.6-j19-full-three-by-three-positive",
+      "relative_error": 3.2863448299558393e-16
+    },
+    {
+      "name": "k0.6-j19-nine-covariance-products",
+      "relative_error": 5.287859927265202e-16
+    },
+    {
+      "name": "k0.6-j19-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j19-response-polar-0.8",
+      "relative_error": 1.6748873628596266e-16
+    },
+    {
+      "name": "k0.6-j19-response-vector-0.8",
+      "excess": -0.0015161770113236981
+    },
+    {
+      "name": "k0.6-j19-response-root-0.8",
+      "excess": -0.0038871683491842235
+    },
+    {
+      "name": "k0.6-j19-response-polar-0.16000000000000003",
+      "relative_error": 1.5788030211508307e-16
+    },
+    {
+      "name": "k0.6-j19-response-vector-0.16000000000000003",
+      "excess": -0.004533345548679973
+    },
+    {
+      "name": "k0.6-j19-response-root-0.16000000000000003",
+      "excess": -0.008168064043589985
+    },
+    {
+      "name": "k0.6-j19-response-polar-4.800000000000001",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k0.6-j19-response-vector-4.800000000000001",
+      "excess": -0.000483093448824298
+    },
+    {
+      "name": "k0.6-j19-response-root-4.800000000000001",
+      "excess": -0.0015790814394927694
+    },
+    {
+      "name": "k0.6-j19-signed-lower",
+      "excess": -0.1356318239949914
+    },
+    {
+      "name": "k0.6-j19-signed-upper",
+      "excess": -0.12530741665228362
+    },
+    {
+      "name": "k1.0-j2-full-gradient",
+      "relative_error": 1.9785807511563404e-16
+    },
+    {
+      "name": "k1.0-j2-scalar-reconstruction",
+      "relative_error": 5.883281638081514e-15
+    },
+    {
+      "name": "k1.0-j2-scalar-score-norm",
+      "relative_error": 5.421010862427522e-20
+    },
+    {
+      "name": "k1.0-j2-inverse-score",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j2-residual-energy",
+      "relative_error": 6.822633830709499e-21
+    },
+    {
+      "name": "k1.0-j2-source-integration",
+      "relative_error": 4.996625672687463e-16
+    },
+    {
+      "name": "k1.0-j2-mixed-covariance",
+      "relative_error": 1.5700924586837752e-16
+    },
+    {
+      "name": "k1.0-j2-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j2-variance-floor",
+      "excess": -84990.97783943701
+    },
+    {
+      "name": "k1.0-j2-highpass-0.05",
+      "excess": -0.060446740633970826
+    },
+    {
+      "name": "k1.0-j2-root-mass-0.05",
+      "excess": -0.07337382615511182
+    },
+    {
+      "name": "k1.0-j2-residual-highpass-0.05",
+      "excess": -0.0038639223701979497
+    },
+    {
+      "name": "k1.0-j2-arbitrary-subset-0.05",
+      "excess": -0.07698838547897675
+    },
+    {
+      "name": "k1.0-j2-finite-upper-0.05",
+      "excess": -0.0031945086817736527
+    },
+    {
+      "name": "k1.0-j2-highpass-0.4",
+      "excess": -0.021880919787231414
+    },
+    {
+      "name": "k1.0-j2-root-mass-0.4",
+      "excess": -0.03794138208669259
+    },
+    {
+      "name": "k1.0-j2-residual-highpass-0.4",
+      "excess": -0.00047495328426082735
+    },
+    {
+      "name": "k1.0-j2-arbitrary-subset-0.4",
+      "excess": -0.03634168806855049
+    },
+    {
+      "name": "k1.0-j2-finite-upper-0.4",
+      "excess": -0.0032754305809195214
+    },
+    {
+      "name": "k1.0-j2-highpass-1.7",
+      "excess": -0.010436161600615734
+    },
+    {
+      "name": "k1.0-j2-root-mass-1.7",
+      "excess": -0.02646550725306488
+    },
+    {
+      "name": "k1.0-j2-residual-highpass-1.7",
+      "excess": -9.73630378225454e-05
+    },
+    {
+      "name": "k1.0-j2-arbitrary-subset-1.7",
+      "excess": -0.024907738779157335
+    },
+    {
+      "name": "k1.0-j2-finite-upper-1.7",
+      "excess": -0.0033067108960093917
+    },
+    {
+      "name": "k1.0-j2-full-three-by-three-positive",
+      "relative_error": 4.789755056074969e-17
+    },
+    {
+      "name": "k1.0-j2-nine-covariance-products",
+      "relative_error": 1.3463634669834069e-16
+    },
+    {
+      "name": "k1.0-j2-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j2-response-polar-0.8",
+      "relative_error": 1.1615832262403813e-16
+    },
+    {
+      "name": "k1.0-j2-response-vector-0.8",
+      "excess": -0.011608788926762318
+    },
+    {
+      "name": "k1.0-j2-response-root-0.8",
+      "excess": -0.016411607728884267
+    },
+    {
+      "name": "k1.0-j2-response-polar-0.16000000000000003",
+      "relative_error": 3.5677035775311333e-16
+    },
+    {
+      "name": "k1.0-j2-response-vector-0.16000000000000003",
+      "excess": -0.026711708577615442
+    },
+    {
+      "name": "k1.0-j2-response-root-0.16000000000000003",
+      "excess": -0.03548569357218973
+    },
+    {
+      "name": "k1.0-j2-response-polar-4.800000000000001",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j2-response-vector-4.800000000000001",
+      "excess": -0.006891212300750671
+    },
+    {
+      "name": "k1.0-j2-response-root-4.800000000000001",
+      "excess": -0.00977125615048765
+    },
+    {
+      "name": "k1.0-j2-signed-lower",
+      "excess": -0.16021819889904876
+    },
+    {
+      "name": "k1.0-j2-signed-upper",
+      "excess": -0.16565385808963473
+    },
+    {
+      "name": "k1.0-j3-full-gradient",
+      "relative_error": 1.5719734650541874e-16
+    },
+    {
+      "name": "k1.0-j3-scalar-reconstruction",
+      "relative_error": 1.3868995790298702e-14
+    },
+    {
+      "name": "k1.0-j3-scalar-score-norm",
+      "relative_error": 1.0842021724855044e-19
+    },
+    {
+      "name": "k1.0-j3-inverse-score",
+      "relative_error": 1.3299733673526712e-16
+    },
+    {
+      "name": "k1.0-j3-residual-energy",
+      "relative_error": 1.6940658945086007e-21
+    },
+    {
+      "name": "k1.0-j3-source-integration",
+      "relative_error": 1.406827386721741e-16
+    },
+    {
+      "name": "k1.0-j3-mixed-covariance",
+      "relative_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "k1.0-j3-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j3-variance-floor",
+      "excess": -175630.604238398
+    },
+    {
+      "name": "k1.0-j3-highpass-0.05",
+      "excess": -0.04521050458798351
+    },
+    {
+      "name": "k1.0-j3-root-mass-0.05",
+      "excess": -0.06070328348007313
+    },
+    {
+      "name": "k1.0-j3-residual-highpass-0.05",
+      "excess": -0.0020562891489886125
+    },
+    {
+      "name": "k1.0-j3-arbitrary-subset-0.05",
+      "excess": -0.04869250476113017
+    },
+    {
+      "name": "k1.0-j3-finite-upper-0.05",
+      "excess": -0.0019383122908102342
+    },
+    {
+      "name": "k1.0-j3-highpass-0.4",
+      "excess": -0.015962484058031755
+    },
+    {
+      "name": "k1.0-j3-root-mass-0.4",
+      "excess": -0.0318020050405276
+    },
+    {
+      "name": "k1.0-j3-residual-highpass-0.4",
+      "excess": -0.00025132832862609985
+    },
+    {
+      "name": "k1.0-j3-arbitrary-subset-0.4",
+      "excess": -0.01928281921994296
+    },
+    {
+      "name": "k1.0-j3-finite-upper-0.4",
+      "excess": -0.0019458422598663163
+    },
+    {
+      "name": "k1.0-j3-highpass-1.7",
+      "excess": -0.00781472090409335
+    },
+    {
+      "name": "k1.0-j3-root-mass-1.7",
+      "excess": -0.023522756896128094
+    },
+    {
+      "name": "k1.0-j3-residual-highpass-1.7",
+      "excess": -5.864603807908379e-05
+    },
+    {
+      "name": "k1.0-j3-arbitrary-subset-1.7",
+      "excess": -0.01116772139574224
+    },
+    {
+      "name": "k1.0-j3-finite-upper-1.7",
+      "excess": -0.0020202656229517304
+    },
+    {
+      "name": "k1.0-j3-full-three-by-three-positive",
+      "relative_error": 3.231739774026825e-16
+    },
+    {
+      "name": "k1.0-j3-nine-covariance-products",
+      "relative_error": 3.4425597917181234e-16
+    },
+    {
+      "name": "k1.0-j3-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j3-response-polar-0.8",
+      "relative_error": 1.7451930295586001e-16
+    },
+    {
+      "name": "k1.0-j3-response-vector-0.8",
+      "excess": -0.008601881797400901
+    },
+    {
+      "name": "k1.0-j3-response-root-0.8",
+      "excess": -0.011201494176005865
+    },
+    {
+      "name": "k1.0-j3-response-polar-0.16000000000000003",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j3-response-vector-0.16000000000000003",
+      "excess": -0.017991330003290625
+    },
+    {
+      "name": "k1.0-j3-response-root-0.16000000000000003",
+      "excess": -0.023543818204432777
+    },
+    {
+      "name": "k1.0-j3-response-polar-4.800000000000001",
+      "relative_error": 1.9983923755970309e-16
+    },
+    {
+      "name": "k1.0-j3-response-vector-4.800000000000001",
+      "excess": -0.005260196922818979
+    },
+    {
+      "name": "k1.0-j3-response-root-4.800000000000001",
+      "excess": -0.006658767339978197
+    },
+    {
+      "name": "k1.0-j3-signed-lower",
+      "excess": -0.1858382803094365
+    },
+    {
+      "name": "k1.0-j3-signed-upper",
+      "excess": -0.19887022835577461
+    },
+    {
+      "name": "k1.0-j7-full-gradient",
+      "relative_error": 1.6392632540067052e-16
+    },
+    {
+      "name": "k1.0-j7-scalar-reconstruction",
+      "relative_error": 7.241657859706017e-15
+    },
+    {
+      "name": "k1.0-j7-scalar-score-norm",
+      "relative_error": 2.710505431213761e-20
+    },
+    {
+      "name": "k1.0-j7-inverse-score",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j7-residual-energy",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j7-source-integration",
+      "relative_error": 1.0522343825815466e-16
+    },
+    {
+      "name": "k1.0-j7-mixed-covariance",
+      "relative_error": 5.551115123125783e-17
+    },
+    {
+      "name": "k1.0-j7-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j7-variance-floor",
+      "excess": -724193.0896539594
+    },
+    {
+      "name": "k1.0-j7-highpass-0.05",
+      "excess": -0.03439642696454662
+    },
+    {
+      "name": "k1.0-j7-root-mass-0.05",
+      "excess": -0.04675811269857151
+    },
+    {
+      "name": "k1.0-j7-residual-highpass-0.05",
+      "excess": -0.0011949074281745386
+    },
+    {
+      "name": "k1.0-j7-arbitrary-subset-0.05",
+      "excess": -0.04138856507150502
+    },
+    {
+      "name": "k1.0-j7-finite-upper-0.05",
+      "excess": -0.0005352487426405349
+    },
+    {
+      "name": "k1.0-j7-highpass-0.4",
+      "excess": -0.012156539156493788
+    },
+    {
+      "name": "k1.0-j7-root-mass-0.4",
+      "excess": -0.024449196582707458
+    },
+    {
+      "name": "k1.0-j7-residual-highpass-0.4",
+      "excess": -0.00014733706343282352
+    },
+    {
+      "name": "k1.0-j7-arbitrary-subset-0.4",
+      "excess": -0.01897616411841741
+    },
+    {
+      "name": "k1.0-j7-finite-upper-0.4",
+      "excess": -0.0005386755104985963
+    },
+    {
+      "name": "k1.0-j7-highpass-1.7",
+      "excess": -0.005876965294224684
+    },
+    {
+      "name": "k1.0-j7-root-mass-1.7",
+      "excess": -0.018011744166710086
+    },
+    {
+      "name": "k1.0-j7-residual-highpass-1.7",
+      "excess": -3.32909268151814e-05
+    },
+    {
+      "name": "k1.0-j7-arbitrary-subset-1.7",
+      "excess": -0.012735266492967069
+    },
+    {
+      "name": "k1.0-j7-finite-upper-1.7",
+      "excess": -0.0005416653739902788
+    },
+    {
+      "name": "k1.0-j7-full-three-by-three-positive",
+      "relative_error": 2.29881377676182e-16
+    },
+    {
+      "name": "k1.0-j7-nine-covariance-products",
+      "relative_error": 3.7145939706640215e-16
+    },
+    {
+      "name": "k1.0-j7-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j7-response-polar-0.8",
+      "relative_error": 1.2676906936833164e-16
+    },
+    {
+      "name": "k1.0-j7-response-vector-0.8",
+      "excess": -0.005036677538753545
+    },
+    {
+      "name": "k1.0-j7-response-root-0.8",
+      "excess": -0.00766952951145195
+    },
+    {
+      "name": "k1.0-j7-response-polar-0.16000000000000003",
+      "relative_error": 1.1287142728557993e-16
+    },
+    {
+      "name": "k1.0-j7-response-vector-0.16000000000000003",
+      "excess": -0.01118206742885127
+    },
+    {
+      "name": "k1.0-j7-response-root-0.16000000000000003",
+      "excess": -0.016532970008825355
+    },
+    {
+      "name": "k1.0-j7-response-polar-4.800000000000001",
+      "relative_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "k1.0-j7-response-vector-4.800000000000001",
+      "excess": -0.002422232689505226
+    },
+    {
+      "name": "k1.0-j7-response-root-4.800000000000001",
+      "excess": -0.003681947427130644
+    },
+    {
+      "name": "k1.0-j7-signed-lower",
+      "excess": -0.11428877188249231
+    },
+    {
+      "name": "k1.0-j7-signed-upper",
+      "excess": -0.13155864366192382
+    },
+    {
+      "name": "k1.0-j19-full-gradient",
+      "relative_error": 1.9200009398751403e-16
+    },
+    {
+      "name": "k1.0-j19-scalar-reconstruction",
+      "relative_error": 1.1212286502149318e-13
+    },
+    {
+      "name": "k1.0-j19-scalar-score-norm",
+      "relative_error": 1.3552527156068805e-20
+    },
+    {
+      "name": "k1.0-j19-inverse-score",
+      "relative_error": 3.4713054072599607e-16
+    },
+    {
+      "name": "k1.0-j19-residual-energy",
+      "relative_error": 1.0587911840678754e-22
+    },
+    {
+      "name": "k1.0-j19-source-integration",
+      "relative_error": 8.0640172141004e-17
+    },
+    {
+      "name": "k1.0-j19-mixed-covariance",
+      "relative_error": 1.1443916996305594e-16
+    },
+    {
+      "name": "k1.0-j19-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j19-variance-floor",
+      "excess": -7819867.042946146
+    },
+    {
+      "name": "k1.0-j19-highpass-0.05",
+      "excess": -0.01886615709380548
+    },
+    {
+      "name": "k1.0-j19-root-mass-0.05",
+      "excess": -0.026735627968093714
+    },
+    {
+      "name": "k1.0-j19-residual-highpass-0.05",
+      "excess": -0.0003564896113698072
+    },
+    {
+      "name": "k1.0-j19-arbitrary-subset-0.05",
+      "excess": -0.02275207013538237
+    },
+    {
+      "name": "k1.0-j19-finite-upper-0.05",
+      "excess": -0.00014376369886860135
+    },
+    {
+      "name": "k1.0-j19-highpass-0.4",
+      "excess": -0.006672129630249348
+    },
+    {
+      "name": "k1.0-j19-root-mass-0.4",
+      "excess": -0.014750668188967399
+    },
+    {
+      "name": "k1.0-j19-residual-highpass-0.4",
+      "excess": -4.4481282820054034e-05
+    },
+    {
+      "name": "k1.0-j19-arbitrary-subset-0.4",
+      "excess": -0.010538457770335748
+    },
+    {
+      "name": "k1.0-j19-finite-upper-0.4",
+      "excess": -0.00015036986778272355
+    },
+    {
+      "name": "k1.0-j19-highpass-1.7",
+      "excess": -0.0032330502932802156
+    },
+    {
+      "name": "k1.0-j19-root-mass-1.7",
+      "excess": -0.011257138028102484
+    },
+    {
+      "name": "k1.0-j19-residual-highpass-1.7",
+      "excess": -1.0370417337521575e-05
+    },
+    {
+      "name": "k1.0-j19-arbitrary-subset-1.7",
+      "excess": -0.007099897473831464
+    },
+    {
+      "name": "k1.0-j19-finite-upper-1.7",
+      "excess": -0.00015321585264797084
+    },
+    {
+      "name": "k1.0-j19-full-three-by-three-positive",
+      "relative_error": 5.2125590698811676e-17
+    },
+    {
+      "name": "k1.0-j19-nine-covariance-products",
+      "relative_error": 3.456439226282092e-16
+    },
+    {
+      "name": "k1.0-j19-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j19-response-polar-0.8",
+      "relative_error": 1.3978653432757805e-16
+    },
+    {
+      "name": "k1.0-j19-response-vector-0.8",
+      "excess": -0.0037255855447569856
+    },
+    {
+      "name": "k1.0-j19-response-root-0.8",
+      "excess": -0.004232612504159253
+    },
+    {
+      "name": "k1.0-j19-response-polar-0.16000000000000003",
+      "relative_error": 1.3407193016396464e-16
+    },
+    {
+      "name": "k1.0-j19-response-vector-0.16000000000000003",
+      "excess": -0.008382039237573916
+    },
+    {
+      "name": "k1.0-j19-response-root-0.16000000000000003",
+      "excess": -0.009265357424919117
+    },
+    {
+      "name": "k1.0-j19-response-polar-4.800000000000001",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k1.0-j19-response-vector-4.800000000000001",
+      "excess": -0.0016014875718215885
+    },
+    {
+      "name": "k1.0-j19-response-root-4.800000000000001",
+      "excess": -0.0018674215199169482
+    },
+    {
+      "name": "k1.0-j19-signed-lower",
+      "excess": -0.11611330498434214
+    },
+    {
+      "name": "k1.0-j19-signed-upper",
+      "excess": -0.1302741226585198
+    },
+    {
+      "name": "k2.3-j2-full-gradient",
+      "relative_error": 1.8943794925295144e-16
+    },
+    {
+      "name": "k2.3-j2-scalar-reconstruction",
+      "relative_error": 4.8980911978187125e-15
+    },
+    {
+      "name": "k2.3-j2-scalar-score-norm",
+      "relative_error": 1.734723475976807e-18
+    },
+    {
+      "name": "k2.3-j2-inverse-score",
+      "relative_error": 1.2078322987424583e-16
+    },
+    {
+      "name": "k2.3-j2-residual-energy",
+      "relative_error": 5.421010862427522e-20
+    },
+    {
+      "name": "k2.3-j2-source-integration",
+      "relative_error": 2.711618200090745e-16
+    },
+    {
+      "name": "k2.3-j2-mixed-covariance",
+      "relative_error": 8.326672684688674e-17
+    },
+    {
+      "name": "k2.3-j2-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j2-variance-floor",
+      "excess": -49774.687262631516
+    },
+    {
+      "name": "k2.3-j2-highpass-0.05",
+      "excess": -0.07103777925186593
+    },
+    {
+      "name": "k2.3-j2-root-mass-0.05",
+      "excess": -0.14208900523185886
+    },
+    {
+      "name": "k2.3-j2-residual-highpass-0.05",
+      "excess": -0.005015629253369967
+    },
+    {
+      "name": "k2.3-j2-arbitrary-subset-0.05",
+      "excess": -0.09038586498481713
+    },
+    {
+      "name": "k2.3-j2-finite-upper-0.05",
+      "excess": -0.02426877533248308
+    },
+    {
+      "name": "k2.3-j2-highpass-0.4",
+      "excess": -0.025260917108424624
+    },
+    {
+      "name": "k2.3-j2-root-mass-0.4",
+      "excess": -0.09323440252746723
+    },
+    {
+      "name": "k2.3-j2-residual-highpass-0.4",
+      "excess": -0.0006118986867007809
+    },
+    {
+      "name": "k2.3-j2-arbitrary-subset-0.4",
+      "excess": -0.04450912981184687
+    },
+    {
+      "name": "k2.3-j2-finite-upper-0.4",
+      "excess": -0.024602268202861988
+    },
+    {
+      "name": "k2.3-j2-highpass-1.7",
+      "excess": -0.012649877117686975
+    },
+    {
+      "name": "k2.3-j2-root-mass-1.7",
+      "excess": -0.07863408128316893
+    },
+    {
+      "name": "k2.3-j2-residual-highpass-1.7",
+      "excess": -0.0001447575736806403
+    },
+    {
+      "name": "k2.3-j2-arbitrary-subset-1.7",
+      "excess": -0.03181602242311613
+    },
+    {
+      "name": "k2.3-j2-finite-upper-1.7",
+      "excess": -0.026456105892023768
+    },
+    {
+      "name": "k2.3-j2-full-three-by-three-positive",
+      "relative_error": 2.2513578993666267e-16
+    },
+    {
+      "name": "k2.3-j2-nine-covariance-products",
+      "relative_error": 1.6760910979731934e-16
+    },
+    {
+      "name": "k2.3-j2-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j2-response-polar-0.8",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j2-response-vector-0.8",
+      "excess": -0.018196194824821543
+    },
+    {
+      "name": "k2.3-j2-response-root-0.8",
+      "excess": -0.02575157044414591
+    },
+    {
+      "name": "k2.3-j2-response-polar-0.16000000000000003",
+      "relative_error": 1.4956503361417653e-16
+    },
+    {
+      "name": "k2.3-j2-response-vector-0.16000000000000003",
+      "excess": -0.025743344501662335
+    },
+    {
+      "name": "k2.3-j2-response-root-0.16000000000000003",
+      "excess": -0.03760347995574198
+    },
+    {
+      "name": "k2.3-j2-response-polar-4.800000000000001",
+      "relative_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "k2.3-j2-response-vector-4.800000000000001",
+      "excess": -0.024560730362425745
+    },
+    {
+      "name": "k2.3-j2-response-root-4.800000000000001",
+      "excess": -0.03269876234094656
+    },
+    {
+      "name": "k2.3-j2-signed-lower",
+      "excess": -0.17760197639490083
+    },
+    {
+      "name": "k2.3-j2-signed-upper",
+      "excess": -0.15944259135583505
+    },
+    {
+      "name": "k2.3-j3-full-gradient",
+      "relative_error": 1.4541977858806103e-16
+    },
+    {
+      "name": "k2.3-j3-scalar-reconstruction",
+      "relative_error": 1.2239900433436534e-14
+    },
+    {
+      "name": "k2.3-j3-scalar-score-norm",
+      "relative_error": 8.673617379884035e-19
+    },
+    {
+      "name": "k2.3-j3-inverse-score",
+      "relative_error": 3.894952872447607e-16
+    },
+    {
+      "name": "k2.3-j3-residual-energy",
+      "relative_error": 6.776263578034403e-21
+    },
+    {
+      "name": "k2.3-j3-source-integration",
+      "relative_error": 9.28634904761829e-17
+    },
+    {
+      "name": "k2.3-j3-mixed-covariance",
+      "relative_error": 1.2412670766236366e-16
+    },
+    {
+      "name": "k2.3-j3-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j3-variance-floor",
+      "excess": -349337.50022527453
+    },
+    {
+      "name": "k2.3-j3-highpass-0.05",
+      "excess": -0.04626253792492413
+    },
+    {
+      "name": "k2.3-j3-root-mass-0.05",
+      "excess": -0.11719380413612045
+    },
+    {
+      "name": "k2.3-j3-residual-highpass-0.05",
+      "excess": -0.0021341002331286213
+    },
+    {
+      "name": "k2.3-j3-arbitrary-subset-0.05",
+      "excess": -0.06610530023531488
+    },
+    {
+      "name": "k2.3-j3-finite-upper-0.05",
+      "excess": -0.01571435853378271
+    },
+    {
+      "name": "k2.3-j3-highpass-0.4",
+      "excess": -0.016429184680751913
+    },
+    {
+      "name": "k2.3-j3-root-mass-0.4",
+      "excess": -0.08719275472964977
+    },
+    {
+      "name": "k2.3-j3-residual-highpass-0.4",
+      "excess": -0.00026446751800366676
+    },
+    {
+      "name": "k2.3-j3-arbitrary-subset-0.4",
+      "excess": -0.036082817988825656
+    },
+    {
+      "name": "k2.3-j3-finite-upper-0.4",
+      "excess": -0.016515930068560686
+    },
+    {
+      "name": "k2.3-j3-highpass-1.7",
+      "excess": -0.008101317991341353
+    },
+    {
+      "name": "k2.3-j3-root-mass-1.7",
+      "excess": -0.07594224484305862
+    },
+    {
+      "name": "k2.3-j3-residual-highpass-1.7",
+      "excess": -5.972989823298639e-05
+    },
+    {
+      "name": "k2.3-j3-arbitrary-subset-1.7",
+      "excess": -0.027638471167400855
+    },
+    {
+      "name": "k2.3-j3-finite-upper-1.7",
+      "excess": -0.018792485767116545
+    },
+    {
+      "name": "k2.3-j3-full-three-by-three-positive",
+      "relative_error": 2.0549518886146626e-16
+    },
+    {
+      "name": "k2.3-j3-nine-covariance-products",
+      "relative_error": 3.0793193066239107e-16
+    },
+    {
+      "name": "k2.3-j3-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j3-response-polar-0.8",
+      "relative_error": 2.3249620890495134e-16
+    },
+    {
+      "name": "k2.3-j3-response-vector-0.8",
+      "excess": -0.013203710907378574
+    },
+    {
+      "name": "k2.3-j3-response-root-0.8",
+      "excess": -0.017634290741824342
+    },
+    {
+      "name": "k2.3-j3-response-polar-0.16000000000000003",
+      "relative_error": 2.4787014942630706e-16
+    },
+    {
+      "name": "k2.3-j3-response-vector-0.16000000000000003",
+      "excess": -0.02036258610909735
+    },
+    {
+      "name": "k2.3-j3-response-root-0.16000000000000003",
+      "excess": -0.027833408181139288
+    },
+    {
+      "name": "k2.3-j3-response-polar-4.800000000000001",
+      "relative_error": 2.220446049250313e-16
+    },
+    {
+      "name": "k2.3-j3-response-vector-4.800000000000001",
+      "excess": -0.015891530502964785
+    },
+    {
+      "name": "k2.3-j3-response-root-4.800000000000001",
+      "excess": -0.020958372862422574
+    },
+    {
+      "name": "k2.3-j3-signed-lower",
+      "excess": -0.15258071453918776
+    },
+    {
+      "name": "k2.3-j3-signed-upper",
+      "excess": -0.15527619391815728
+    },
+    {
+      "name": "k2.3-j7-full-gradient",
+      "relative_error": 2.1121447967512281e-16
+    },
+    {
+      "name": "k2.3-j7-scalar-reconstruction",
+      "relative_error": 3.0667502800393476e-14
+    },
+    {
+      "name": "k2.3-j7-scalar-score-norm",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j7-inverse-score",
+      "relative_error": 1.8271084770784208e-16
+    },
+    {
+      "name": "k2.3-j7-residual-energy",
+      "relative_error": 1.697371392080067e-21
+    },
+    {
+      "name": "k2.3-j7-source-integration",
+      "relative_error": 1.8027215454041573e-16
+    },
+    {
+      "name": "k2.3-j7-mixed-covariance",
+      "relative_error": 5.869931039739981e-17
+    },
+    {
+      "name": "k2.3-j7-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j7-variance-floor",
+      "excess": -1933737.9784823013
+    },
+    {
+      "name": "k2.3-j7-highpass-0.05",
+      "excess": -0.03209510428322918
+    },
+    {
+      "name": "k2.3-j7-root-mass-0.05",
+      "excess": -0.05094341771123893
+    },
+    {
+      "name": "k2.3-j7-residual-highpass-0.05",
+      "excess": -0.0010325728863330179
+    },
+    {
+      "name": "k2.3-j7-arbitrary-subset-0.05",
+      "excess": -0.034992061895793056
+    },
+    {
+      "name": "k2.3-j7-finite-upper-0.05",
+      "excess": -0.002410779268979606
+    },
+    {
+      "name": "k2.3-j7-highpass-0.4",
+      "excess": -0.011354066723462248
+    },
+    {
+      "name": "k2.3-j7-root-mass-0.4",
+      "excess": -0.031688691527090626
+    },
+    {
+      "name": "k2.3-j7-residual-highpass-0.4",
+      "excess": -0.00012640597590803096
+    },
+    {
+      "name": "k2.3-j7-arbitrary-subset-0.4",
+      "excess": -0.014129502449683296
+    },
+    {
+      "name": "k2.3-j7-finite-upper-0.4",
+      "excess": -0.002413154131688292
+    },
+    {
+      "name": "k2.3-j7-highpass-1.7",
+      "excess": -0.00551665930643697
+    },
+    {
+      "name": "k2.3-j7-root-mass-1.7",
+      "excess": -0.02540313471874149
+    },
+    {
+      "name": "k2.3-j7-residual-highpass-1.7",
+      "excess": -2.744781848661705e-05
+    },
+    {
+      "name": "k2.3-j7-arbitrary-subset-1.7",
+      "excess": -0.008298038581683154
+    },
+    {
+      "name": "k2.3-j7-finite-upper-1.7",
+      "excess": -0.002523913099022118
+    },
+    {
+      "name": "k2.3-j7-full-three-by-three-positive",
+      "relative_error": 1.5032256984769914e-16
+    },
+    {
+      "name": "k2.3-j7-nine-covariance-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j7-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j7-response-polar-0.8",
+      "relative_error": 2.5631697154981817e-16
+    },
+    {
+      "name": "k2.3-j7-response-vector-0.8",
+      "excess": -0.00604988210249037
+    },
+    {
+      "name": "k2.3-j7-response-root-0.8",
+      "excess": -0.009137960200128855
+    },
+    {
+      "name": "k2.3-j7-response-polar-0.16000000000000003",
+      "relative_error": 2.561727670723935e-16
+    },
+    {
+      "name": "k2.3-j7-response-vector-0.16000000000000003",
+      "excess": -0.012086425829145911
+    },
+    {
+      "name": "k2.3-j7-response-root-0.16000000000000003",
+      "excess": -0.017451679444346283
+    },
+    {
+      "name": "k2.3-j7-response-polar-4.800000000000001",
+      "relative_error": 3.257049760401801e-16
+    },
+    {
+      "name": "k2.3-j7-response-vector-4.800000000000001",
+      "excess": -0.00450621037219081
+    },
+    {
+      "name": "k2.3-j7-response-root-4.800000000000001",
+      "excess": -0.006681519701091154
+    },
+    {
+      "name": "k2.3-j7-signed-lower",
+      "excess": -0.172445041185334
+    },
+    {
+      "name": "k2.3-j7-signed-upper",
+      "excess": -0.16134650588895916
+    },
+    {
+      "name": "k2.3-j19-full-gradient",
+      "relative_error": 8.982227350826601e-17
+    },
+    {
+      "name": "k2.3-j19-scalar-reconstruction",
+      "relative_error": 2.7439717541974514e-14
+    },
+    {
+      "name": "k2.3-j19-scalar-score-norm",
+      "relative_error": 5.421010862427522e-20
+    },
+    {
+      "name": "k2.3-j19-inverse-score",
+      "relative_error": 3.730562697889016e-16
+    },
+    {
+      "name": "k2.3-j19-residual-energy",
+      "relative_error": 2.134061856895356e-22
+    },
+    {
+      "name": "k2.3-j19-source-integration",
+      "relative_error": 2.322843581744555e-16
+    },
+    {
+      "name": "k2.3-j19-mixed-covariance",
+      "relative_error": 1.4037332632488234e-16
+    },
+    {
+      "name": "k2.3-j19-density-score-sum",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j19-variance-floor",
+      "excess": -12041199.22190819
+    },
+    {
+      "name": "k2.3-j19-highpass-0.05",
+      "excess": -0.01698324012750572
+    },
+    {
+      "name": "k2.3-j19-root-mass-0.05",
+      "excess": -0.034846779523768585
+    },
+    {
+      "name": "k2.3-j19-residual-highpass-0.05",
+      "excess": -0.0002886787902214812
+    },
+    {
+      "name": "k2.3-j19-arbitrary-subset-0.05",
+      "excess": -0.028658487031539177
+    },
+    {
+      "name": "k2.3-j19-finite-upper-0.05",
+      "excess": -0.0010204209725983532
+    },
+    {
+      "name": "k2.3-j19-highpass-0.4",
+      "excess": -0.005974000842544024
+    },
+    {
+      "name": "k2.3-j19-root-mass-0.4",
+      "excess": -0.02376425048655884
+    },
+    {
+      "name": "k2.3-j19-residual-highpass-0.4",
+      "excess": -3.475193198935598e-05
+    },
+    {
+      "name": "k2.3-j19-arbitrary-subset-0.4",
+      "excess": -0.017631807186975768
+    },
+    {
+      "name": "k2.3-j19-finite-upper-0.4",
+      "excess": -0.0010214010996795833
+    },
+    {
+      "name": "k2.3-j19-highpass-1.7",
+      "excess": -0.002918916834175337
+    },
+    {
+      "name": "k2.3-j19-root-mass-1.7",
+      "excess": -0.02108913568797532
+    },
+    {
+      "name": "k2.3-j19-residual-highpass-1.7",
+      "excess": -8.389175533884898e-06
+    },
+    {
+      "name": "k2.3-j19-arbitrary-subset-1.7",
+      "excess": -0.014659276908949923
+    },
+    {
+      "name": "k2.3-j19-finite-upper-1.7",
+      "excess": -0.0012428688398816096
+    },
+    {
+      "name": "k2.3-j19-full-three-by-three-positive",
+      "relative_error": 1.9338055888940626e-16
+    },
+    {
+      "name": "k2.3-j19-nine-covariance-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j19-four-density-products",
+      "relative_error": 0.0
+    },
+    {
+      "name": "k2.3-j19-response-polar-0.8",
+      "relative_error": 1.543353970544328e-16
+    },
+    {
+      "name": "k2.3-j19-response-vector-0.8",
+      "excess": -0.002969285991875995
+    },
+    {
+      "name": "k2.3-j19-response-root-0.8",
+      "excess": -0.004159881897858263
+    },
+    {
+      "name": "k2.3-j19-response-polar-0.16000000000000003",
+      "relative_error": 1.80821126040422e-16
+    },
+    {
+      "name": "k2.3-j19-response-vector-0.16000000000000003",
+      "excess": -0.006325502510562142
+    },
+    {
+      "name": "k2.3-j19-response-root-0.16000000000000003",
+      "excess": -0.007891007779513213
+    },
+    {
+      "name": "k2.3-j19-response-polar-4.800000000000001",
+      "relative_error": 1.7721266615484381e-16
+    },
+    {
+      "name": "k2.3-j19-response-vector-4.800000000000001",
+      "excess": -0.0018107457096237388
+    },
+    {
+      "name": "k2.3-j19-response-root-4.800000000000001",
+      "excess": -0.00273965690679691
+    },
+    {
+      "name": "k2.3-j19-signed-lower",
+      "excess": -0.13412716749869347
+    },
+    {
+      "name": "k2.3-j19-signed-upper",
+      "excess": -0.16022390779120954
+    }
+  ]
+}
