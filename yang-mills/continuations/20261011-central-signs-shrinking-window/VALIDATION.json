@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-13T02:09:06.165796+00:00",
+  "checked_utc": "2026-10-13T03:03:51.118279+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -463,20 +463,20 @@
     },
     {
       "source": "SMOOTH_WEIGHTED_LOCAL_ENERGY.md",
-      "sha256": "71c459a2e85597369825f0a9f69120eb165eeb9890cb3e9a93fb73c1c238ceba",
-      "complete_math_blocks": 158,
+      "sha256": "28784bf1982709944f0ac9f1c59d7d48584d1ce087ad53745460a503e60e0066",
+      "complete_math_blocks": 163,
       "split_to_aligned_wrappers": 3
     },
     {
       "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
-      "sha256": "e7dbdcaba5a83105f9c3c9671488759deeb3ce1a4c07464a07cf1a3d50b6e29d",
-      "complete_math_blocks": 191,
+      "sha256": "1de227ea47cde3d01822f94e963fcbae9456edfc828aafe8fa402d782ae72312",
+      "complete_math_blocks": 196,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "ACTUAL_EDGE_ENERGY_VARIANCE.md",
-      "sha256": "813fe7b4684cffbd2ed26da8196e3799cc4405db59bdaecb384840df66b90d66",
-      "complete_math_blocks": 194,
+      "sha256": "24f5e953b26ccca015d5a52069564959ef6230ea1f7400588be633cca6a674f8",
+      "complete_math_blocks": 199,
       "split_to_aligned_wrappers": 1
     },
     {
@@ -607,9 +607,15 @@
     },
     {
       "source": "SCALAR_COMMON_SOURCE_RECONSTRUCTION.md",
-      "sha256": "650fac4c3d3df4d3247a7fe4fab66e31a5cedf4bb1ec1318fa932132438bea0d",
-      "complete_math_blocks": 133,
+      "sha256": "b66edfb113417e5e59ad792f9bf9209663c499b53fba37a1f1eb85b5128317e3",
+      "complete_math_blocks": 138,
       "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
+      "sha256": "ce61ce68879f228e47fe381d6ddc39b99b300818c157deab9846f556a39bb67d",
+      "complete_math_blocks": 243,
+      "split_to_aligned_wrappers": 1
     }
   ],
   "figures": [
@@ -1216,6 +1222,11 @@
     {
       "file": "SCALAR_COMMON_RECONSTRUCTION.png",
       "sha256": "5f13d53e1c79097aef7de0ffc29547659e419a44a4dd34a816f879443a40205f",
+      "visually_inspected": true
+    },
+    {
+      "file": "SCALAR_ENERGY_MAP.png",
+      "sha256": "14b3f05ac9e567de555f09f94b6183a939143480bb550be27617b4b752adaa67",
       "visually_inspected": true
     }
   ],
@@ -8164,6 +8175,130 @@
         "SCALAR_COMMON_RECONSTRUCTION.png"
       ],
       "inspection": "All30 new, receiving and adjacent pages inspected through eight contact sheets. Standalone figure also inspected. Readable mathematics and captions; no new overflow or missing glyph. Earlier59overfull and oneold missingdelta unchanged."
+    }
+  },
+  "scalar_energy_review": {
+    "utc": "2026-10-13T02:56:08.520294+00:00",
+    "coverage": "Complete SLE1–SLE24. Original signed/complex coefficient map and means, full interpolation covariance and C1/C2 constants, all-Borel root comparison, original upper-energy tail, signed level decomposition, first-energy double commutator and actual boundary coface range two, distance-two six/eight Wilson words, all three inverse moments and exact kernels, geometric kernel by four distinct-edge derivatives, complete Haar/ground-density-preserving flows.",
+    "strengthening": "TSC residual is an original centered local-energy fluctuation up to an o(1) original-norm error. Exact locality belongs to the first energy moment; the complete ordinary and second-moment covariances remain. The geometric face field kernel is exactly constants; the remaining energy-vector defect is characterized by nonzero ground-density-preserving flows.",
+    "correction": "No error in published providers identified. The temporary illustration parser failure was repaired by writing an explicit fraction; no formula changed.",
+    "limitations": "Actual shrinking-annulus positivity, full score/energy covariance evaluation, density-preserving nonconstant coefficient kernel, J5 and five Green moments, interacting continuum state, reconstruction and theory identification remain active.",
+    "diagnostics": {
+      "checks": 3634,
+      "all_passed": true,
+      "scope": "Original SU2 configurations and cubic incidence test operator algebra, ordered traversals and coefficients; independent finite tensor Hamiltonians test spectral identities. None is a sample of the Yang–Mills vacuum or evidence of physical annulus positivity."
+    },
+    "figures_inspected": [
+      "SCALAR_ENERGY_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
+        "prefix": "SLE",
+        "tags": 24,
+        "owner_sha256": "ce61ce68879f228e47fe381d6ddc39b99b300818c157deab9846f556a39bb67d",
+        "public_sha256": "ce61ce68879f228e47fe381d6ddc39b99b300818c157deab9846f556a39bb67d",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-13T03:03:51.118279+00:00",
+      "tex_sha256": "137cfff2783b701eed6dfe6652e22a024bdb1ebad428bb268902325bfa18d9fb",
+      "pdf_sha256": "e8d227c747e2df3f89c7f71f3057c6a2c6978e4c937347dd241cd079bcd0af40",
+      "pages": 1106,
+      "source_files": 102,
+      "math_blocks": 24132,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-13T03:03:45.625435+00:00",
+        "complete": true,
+        "pages": 1106,
+        "rendered_pages": [
+          807,
+          808,
+          809,
+          816,
+          817,
+          818,
+          827,
+          828,
+          829,
+          1095,
+          1096,
+          1097,
+          1098,
+          1099,
+          1100,
+          1101,
+          1102,
+          1103,
+          1104,
+          1105,
+          1106
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "figure_inspected": "SCALAR_ENERGY_MAP.png",
+        "assessment": "All21 new/receiving/adjacent pages inspected through six contact sheets. Equations, labels, figure and all source content fit. No new overflow or missing glyph; inherited59overflow warnings and one older missing delta remain."
+      }
+    }
+  },
+  "scalar_energy_compile": {
+    "utc": "2026-10-13T03:03:51.118279+00:00",
+    "tex_sha256": "137cfff2783b701eed6dfe6652e22a024bdb1ebad428bb268902325bfa18d9fb",
+    "pdf_sha256": "e8d227c747e2df3f89c7f71f3057c6a2c6978e4c937347dd241cd079bcd0af40",
+    "pages": 1106,
+    "source_files": 102,
+    "math_blocks": 24132,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-13T03:03:45.625435+00:00",
+      "complete": true,
+      "pages": 1106,
+      "rendered_pages": [
+        807,
+        808,
+        809,
+        816,
+        817,
+        818,
+        827,
+        828,
+        829,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "figure_inspected": "SCALAR_ENERGY_MAP.png",
+      "assessment": "All21 new/receiving/adjacent pages inspected through six contact sheets. Equations, labels, figure and all source content fit. No new overflow or missing glyph; inherited59overflow warnings and one older missing delta remain."
     }
   }
 }

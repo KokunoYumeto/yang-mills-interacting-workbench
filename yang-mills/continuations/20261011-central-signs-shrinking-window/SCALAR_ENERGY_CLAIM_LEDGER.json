@@ -1,0 +1,40 @@
+[
+  {
+    "id": "SLE-residual",
+    "original": "TSC1 retained an exact weighted Poisson residual.",
+    "change": "SLE2–SLE8 identify it with original local energy up to a vanishing original-norm interpolation error, with C2 constant1/4.",
+    "affects": [
+      "TSC residual",
+      "WH local energy"
+    ],
+    "proof": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in TSC,WH,SF,EV and programme/cumulative source."
+  },
+  {
+    "id": "SLE-first-moment",
+    "original": "WH14 retained the full ordinary covariance and did not impose finite range.",
+    "change": "SLE15–SLE18 prove coface range2 of its first-energy moment, with complete distance2 Wilson words; no range claim for ordinary covariance.",
+    "affects": [
+      "WH14",
+      "SF4",
+      "EV12"
+    ],
+    "proof": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in TSC,WH,SF,EV and programme/cumulative source."
+  },
+  {
+    "id": "SLE-spectral-defect",
+    "original": "WH actual energy covariance had undetermined kernel.",
+    "change": "SLE20–SLE24 prove all three inverse moment maps and common kernel, constant-only geometric kernel, and exact ground-density-preserving flow description of the remaining contraction defect.",
+    "affects": [
+      "WH moments",
+      "TSC zero residual",
+      "EV covariance kernel"
+    ],
+    "proof": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in TSC,WH,SF,EV and programme/cumulative source."
+  }
+]
