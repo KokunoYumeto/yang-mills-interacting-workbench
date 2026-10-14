@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T13:32:19.844171+00:00",
+  "checked_utc": "2026-10-14T13:52:33.712247+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -325,8 +325,8 @@
     },
     {
       "source": "BOUNDED_ENERGY_MULTIPLIER.md",
-      "sha256": "73a966cbd090323f52009c741d2ff12fa210041fb0b0fd0ac986698bfe43b30a",
-      "complete_math_blocks": 551,
+      "sha256": "789aa55031290fbb08ddcb9638a4a8283abc465215bdffdd5fd1bfb6cf7a8e24",
+      "complete_math_blocks": 557,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -415,8 +415,8 @@
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "830c54ee0905b3a01d5166ce87daa9c2bc3ddd3a1233d6c78db7ae44278d771b",
-      "complete_math_blocks": 253,
+      "sha256": "292c1e31c7489825d6f90cb5f77ca859e389710df444af340ce37d84b194eabb",
+      "complete_math_blocks": 259,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -607,8 +607,8 @@
     },
     {
       "source": "SCALAR_COMMON_SOURCE_RECONSTRUCTION.md",
-      "sha256": "95c04f7490349640ea99c08f3182e65f600218bd4133573ac5700d5cbbaa98d3",
-      "complete_math_blocks": 143,
+      "sha256": "a448d65b954c99a5b434a589ca8f75aeead1039b320c78f43b57b9343dd85c47",
+      "complete_math_blocks": 149,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -619,15 +619,21 @@
     },
     {
       "source": "FACE_FIELD_PHYSICAL_ACTION.md",
-      "sha256": "95c253ec1c1b80c76735996f5d989ca1218cabdb82f93b05f1d2d687eeb88f36",
-      "complete_math_blocks": 121,
+      "sha256": "dfeeda48b2e57c94748c4f198669008c5dfd9162c98362fa78337adb92da19e1",
+      "complete_math_blocks": 127,
       "split_to_aligned_wrappers": 1
     },
     {
       "source": "ACTUAL_DENSITY_CHARACTERS.md",
-      "sha256": "e05dbee5077bc1550861b463bcdfd2905f47a3a830e54bcda5f4594a6c59c168",
-      "complete_math_blocks": 224,
+      "sha256": "59c0cdd1e346bb7a4ffeebd2e52f1afe004e36210da7e6b94cc8fb42311e88b0",
+      "complete_math_blocks": 230,
       "split_to_aligned_wrappers": 2
+    },
+    {
+      "source": "CENTRAL_KINETIC_SOURCE.md",
+      "sha256": "fec6a32569d55f9ba290b5efbc11993ae87aeef61f0f2579352318d8709d46a9",
+      "complete_math_blocks": 283,
+      "split_to_aligned_wrappers": 0
     }
   ],
   "figures": [
@@ -1254,6 +1260,11 @@
     {
       "file": "CENTRAL_REVERSAL_SPECTRAL_BOUNDS.png",
       "sha256": "20e65066c516b0a83fba2259e42ef843b7c34ae71822450b284956837024ebbd",
+      "visually_inspected": true
+    },
+    {
+      "file": "CENTRAL_KINETIC_RESOLVENT_MAP.png",
+      "sha256": "7deb5886a893ba4cae4e19e733d041b49bdacdc59474d4aea808420a37994e4f",
       "visually_inspected": true
     }
   ],
@@ -8561,6 +8572,140 @@
         "CENTRAL_REVERSAL_SPECTRAL_BOUNDS.png"
       ],
       "assessment": "All21new/receiving/adjacent pages inspected. Complete DCH1–DCH22 formulas and original factors legible, no clipping or overlap; both figures and proof locators retained.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+    }
+  },
+  "central_kinetic_review": {
+    "utc": "2026-10-14T13:50:43.149594+00:00",
+    "coverage": "Complete CK1–CK24: every density-character kinetic cross term, strict finite-regulator Fisher contribution, averaged and conditional equations, full original operator/domain/isometry, scalar conditional covariance, retained physical coupling, two energy moments, full form-domain resolvent, derivatives and residual gain.",
+    "strengthening": "The conditional kinetic source and original physical coupling are explicit. The complete two-component inverse, squared response, shift derivatives and exact residual gain retain all terms; no central-average operator replaces the original Hamiltonian.",
+    "correction": "Owner reread found three missing plus signs in unpublished CK3 and its expanded-square display. Restored before acceptance; existing diagnostic code already used the correct sums. Added exact form-domain closedness/coercivity and the full weak test equation.",
+    "limitations": "The actual signed three-shift response has no assigned positive limit. Full conditional inverse, zero residual, five Green moments/J5, continuum state, reconstruction and theory identification remain active.",
+    "diagnostics": {
+      "checks": 1268,
+      "all_passed": true,
+      "scope": "Continuous radius-two one-face diagnostic with its explicitly constructed potential V=E+kappa Delta(psi)/psi, retained Haar constant and integral. This potential is not the Wilson potential. Independent finite-character diagnostics retain all original covariance factors and complex coefficients. No numerical YM vacuum or gap conclusion. Complex positive finite block matrices, exact vacuum zero direction, nonzero coupling and both source components. Original a_j=(100j)^-1 and s_j=kappa/j used in fixtures. Both low and high energy scales retained. These matrices are algebra diagnostics, not Yang–Mills vacuum spectra."
+    },
+    "figures_inspected": [
+      "CENTRAL_KINETIC_RESOLVENT_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "CENTRAL_KINETIC_SOURCE.md",
+        "prefix": "CK",
+        "tags": 24,
+        "owner_sha256": "fec6a32569d55f9ba290b5efbc11993ae87aeef61f0f2579352318d8709d46a9",
+        "public_sha256": "fec6a32569d55f9ba290b5efbc11993ae87aeef61f0f2579352318d8709d46a9",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T13:52:33.712247+00:00",
+      "tex_sha256": "e473674a1a9fca65cdfff8e19a95e2fb02a502a74645a0095cc409e30ed54128",
+      "pdf_sha256": "473b5afad42275b629d892ecc75b58ec5fee6c716c02b9d6eea5cb281bce3a12",
+      "pages": 1143,
+      "source_files": 105,
+      "math_blocks": 24820,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T13:52:33.647510+00:00",
+        "complete": true,
+        "pages": 1143,
+        "rendered": [
+          556,
+          557,
+          558,
+          742,
+          743,
+          744,
+          1102,
+          1103,
+          1104,
+          1121,
+          1122,
+          1123,
+          1132,
+          1133,
+          1134,
+          1135,
+          1136,
+          1137,
+          1138,
+          1139,
+          1140,
+          1141,
+          1142,
+          1143
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "figures_inspected": [
+          "CENTRAL_KINETIC_RESOLVENT_MAP.png"
+        ],
+        "assessment": "All24new/receiving/adjacent pages inspected. CK1–CK24 retain complete formulas, plus signs and domains; figure and source locators legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+      }
+    }
+  },
+  "central_kinetic_compile": {
+    "utc": "2026-10-14T13:52:33.712247+00:00",
+    "tex_sha256": "e473674a1a9fca65cdfff8e19a95e2fb02a502a74645a0095cc409e30ed54128",
+    "pdf_sha256": "473b5afad42275b629d892ecc75b58ec5fee6c716c02b9d6eea5cb281bce3a12",
+    "pages": 1143,
+    "source_files": 105,
+    "math_blocks": 24820,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T13:52:33.647510+00:00",
+      "complete": true,
+      "pages": 1143,
+      "rendered": [
+        556,
+        557,
+        558,
+        742,
+        743,
+        744,
+        1102,
+        1103,
+        1104,
+        1121,
+        1122,
+        1123,
+        1132,
+        1133,
+        1134,
+        1135,
+        1136,
+        1137,
+        1138,
+        1139,
+        1140,
+        1141,
+        1142,
+        1143
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "figures_inspected": [
+        "CENTRAL_KINETIC_RESOLVENT_MAP.png"
+      ],
+      "assessment": "All24new/receiving/adjacent pages inspected. CK1–CK24 retain complete formulas, plus signs and domains; figure and source locators legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
     }
   }
 }
