@@ -1,0 +1,40 @@
+[
+  {
+    "id": "TPL-shared-link-trace-space",
+    "original": "OPC1 gives the exact one-face scalar trace map. A proposed two-face extension must retain the shared link.",
+    "change": "TPL1–TPL9 prove the exact three-coordinate trace domain, Haar measure, original kinetic matrix and inherited domain. The actual ground requires the joint perimeter coordinate; its short-time heat derivative is strictly positive on interior compact subsets.",
+    "affects": [
+      "OPC1–OPC7",
+      "MTO17–MTO20"
+    ],
+    "proof": "SHARED_LINK_TWO_PLAQUETTE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in OPC,MTO,MSA, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "TPL-actual-two-face-mixed-sign",
+    "original": "OPC7 proves the actual one-face mixed sign at every coupling. It does not assert a multi-face sign.",
+    "change": "TPL10–TPL14 compute the unit-ground coefficients and prove the actual two-face mixed sign for sufficiently small b, uniformly on bounded times and compact positive-shift intervals. All complex source samples and the analytic remainder remain explicit.",
+    "affects": [
+      "OPC7",
+      "MTO14–MTO20",
+      "MSA4–MSA6"
+    ],
+    "proof": "SHARED_LINK_TWO_PLAQUETTE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in OPC,MTO,MSA, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "TPL-full-lattice-and-covariance",
+    "original": "An isolated two-face ground cannot replace the original full-lattice ground.",
+    "change": "TPL15–TPL17 prove the exact full-lattice kinetic/potential map, actual ground-density compression and conditional-score residual covariance. TPL18 retains all127covariance indices and inverse blocks.",
+    "affects": [
+      "MTO8–MTO18",
+      "OPC8",
+      "original full regulator state"
+    ],
+    "proof": "SHARED_LINK_TWO_PLAQUETTE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in OPC,MTO,MSA, programme sources and cumulative manuscript."
+  }
+]

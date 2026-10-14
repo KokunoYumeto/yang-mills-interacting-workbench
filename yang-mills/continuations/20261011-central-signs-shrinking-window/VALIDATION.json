@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T16:56:01.276725+00:00",
+  "checked_utc": "2026-10-14T17:17:42.645025+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -673,20 +673,26 @@
     },
     {
       "source": "ACTUAL_MIXED_TIME_EVOLUTION.md",
-      "sha256": "6b9f9afed6a21f27d834fa7920b214fd93f32de613608def0dbfb8da99001824",
-      "complete_math_blocks": 266,
+      "sha256": "209411dc9310c8708954ffd402664c4473068d28beb11e6d4fcc55cae486c8ea",
+      "complete_math_blocks": 269,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "MIXED_SOURCE_OPERATOR_ACTION.md",
-      "sha256": "6b6aac5c3052135d3dd373e89712fe7a3713acf4f9f41a91aecfc2afd08dbcb1",
-      "complete_math_blocks": 109,
+      "sha256": "2c15b832ef53e6bcbe927233d6c7c90e94b78d060b2b200f6d798a30e992a7ea",
+      "complete_math_blocks": 112,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_ONE_PLAQUETTE_ORIENTATION.md",
-      "sha256": "8e49d2f40d250836aca17b576ff66990231e383a8fdb2b318082123140d74c8a",
-      "complete_math_blocks": 109,
+      "sha256": "58d39cc78f8f10796a03b11f312782fa91b424a4b00284145eb7471c4c25deba",
+      "complete_math_blocks": 112,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "SHARED_LINK_TWO_PLAQUETTE.md",
+      "sha256": "d9b1aaae0ac8ecb78f437bfa7efb909ae95e305b93258da28de06a23876b1433",
+      "complete_math_blocks": 148,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1374,6 +1380,11 @@
     {
       "file": "ACTUAL_ONE_PLAQUETTE_SIGN.png",
       "sha256": "4976ef3a91cc49647eb4a6ba3ae4d4f456c55ba80ad4baeb5bc2e72cf81d0c89",
+      "visually_inspected": true
+    },
+    {
+      "file": "TWO_PLAQUETTE_GEOMETRY.png",
+      "sha256": "237f75dbd376fef48304ac270db40e39472a13c170f1dcc69e55216c291f183c",
       "visually_inspected": true
     }
   ],
@@ -10066,6 +10077,131 @@
       ],
       "figure_inspected": "ACTUAL_ONE_PLAQUETTE_SIGN.png",
       "findings": "All eleven rendered new, receiving and adjacent pages were inspected before the current recovery. Equations and figure readable; no new overflow or missing glyph. The inherited 59 overflow warnings and one missing glyph are unchanged."
+    }
+  },
+  "two_plaquette_review": {
+    "utc": "2026-10-14T17:11:47.708650+00:00",
+    "coverage": "Complete TPL1–TPL18: original seven-link gauge map, exact trace solid and Haar density, all shared-edge kinetic contractions, boundary and domain identities, necessary perimeter dependence of the actual ground, complete heat coefficients and differentiated forcing, unit-ground coefficients about b=0, all128probabilities and127covariance blocks/inverses, actual mixed-source sign at small b, full-lattice potential and conditional-score receiving maps.",
+    "strengthening": "The actual mixed sign extends from one face to two adjacent interacting faces for sufficiently small b, uniformly over bounded times and compact positive-shift intervals with every complex raw sample retained. The full-lattice relation includes the exact remaining potential and score covariance.",
+    "corrections": "No error in the previously published OPC theorem identified. Its one-face scalar cone cannot simply be assigned to the two-face covariance: TPL12 proves a sign-changing off-diagonal entry, while TPL14 computes and controls the actual integrated pairing. The perimeter coordinate is required by the actual ground equation.",
+    "limitations": "The two-face theorem does not control increasing b on the original shrinking-spacing path. The full-state conditional scores, full Schur inverse, signed three-shift spectral correction, limiting annular mass and continuum construction remain active.",
+    "diagnostics": [
+      {
+        "all_passed": true,
+        "checks": 168,
+        "scope": "Exact symbolic identities, original seven-link matrix derivatives, complete128sign algebra, and exact-degree Haar quadrature. Polynomial density checks test the finite-character identities only; they are not computations of the exact Wilson ground. Analytic ground, semigroup sign and full-lattice receiver proofs are in SHARED_LINK_TWO_PLAQUETTE.md."
+      }
+    ],
+    "diagnostic_count": 168,
+    "figures_inspected": [
+      "TWO_PLAQUETTE_GEOMETRY.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "SHARED_LINK_TWO_PLAQUETTE.md",
+        "prefix": "TPL",
+        "tags": 18,
+        "owner_sha256": "d9b1aaae0ac8ecb78f437bfa7efb909ae95e305b93258da28de06a23876b1433",
+        "public_sha256": "d9b1aaae0ac8ecb78f437bfa7efb909ae95e305b93258da28de06a23876b1433",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T17:17:42.645025+00:00",
+      "tex_sha256": "dbb787f492f3e9a74a18eb9f5f908339aa04b760ece25913d6da0fb3b8627c72",
+      "pdf_sha256": "7a0701500b8a2e7717395868a02fafa20efd4437c55e34b14691827797ca18b3",
+      "pages": 1267,
+      "source_files": 115,
+      "math_blocks": 26698,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T17:17:42.584741+00:00",
+        "complete": true,
+        "pages": 1267,
+        "rendered_pages": [
+          1243,
+          1244,
+          1245,
+          1250,
+          1251,
+          1252,
+          1257,
+          1258,
+          1259,
+          1260,
+          1261,
+          1262,
+          1263,
+          1264,
+          1265,
+          1266,
+          1267
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "final_revised_pages_inspected": [
+          1266,
+          1267
+        ],
+        "figure_inspected": "TWO_PLAQUETTE_GEOMETRY.png",
+        "findings": "All seventeen new, receiving and adjacent pages inspected. Replaced the wide figure with a portrait layout for readable PDF labels, updated its caption and regenerated the full reader; final caption and figure pages inspected again. Every equation and original factor retained. No new overflow or missing glyph; inherited59overflows and one glyph warning unchanged."
+      }
+    }
+  },
+  "two_plaquette_compile": {
+    "utc": "2026-10-14T17:17:42.645025+00:00",
+    "tex_sha256": "dbb787f492f3e9a74a18eb9f5f908339aa04b760ece25913d6da0fb3b8627c72",
+    "pdf_sha256": "7a0701500b8a2e7717395868a02fafa20efd4437c55e34b14691827797ca18b3",
+    "pages": 1267,
+    "source_files": 115,
+    "math_blocks": 26698,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T17:17:42.584741+00:00",
+      "complete": true,
+      "pages": 1267,
+      "rendered_pages": [
+        1243,
+        1244,
+        1245,
+        1250,
+        1251,
+        1252,
+        1257,
+        1258,
+        1259,
+        1260,
+        1261,
+        1262,
+        1263,
+        1264,
+        1265,
+        1266,
+        1267
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "final_revised_pages_inspected": [
+        1266,
+        1267
+      ],
+      "figure_inspected": "TWO_PLAQUETTE_GEOMETRY.png",
+      "findings": "All seventeen new, receiving and adjacent pages inspected. Replaced the wide figure with a portrait layout for readable PDF labels, updated its caption and regenerated the full reader; final caption and figure pages inspected again. Every equation and original factor retained. No new overflow or missing glyph; inherited59overflows and one glyph warning unchanged."
     }
   }
 }

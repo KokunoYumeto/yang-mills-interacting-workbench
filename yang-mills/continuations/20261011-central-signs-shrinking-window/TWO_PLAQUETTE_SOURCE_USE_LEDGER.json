@@ -1,0 +1,128 @@
+[
+  {
+    "source_id": "programme:TPL-20261014",
+    "proofs": [
+      {
+        "source": "SHARED_LINK_TWO_PLAQUETTE.md",
+        "prefix": "TPL",
+        "tags": 18,
+        "owner_sha256": "d9b1aaae0ac8ecb78f437bfa7efb909ae95e305b93258da28de06a23876b1433",
+        "public_sha256": "d9b1aaae0ac8ecb78f437bfa7efb909ae95e305b93258da28de06a23876b1433",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "commit": "bb5761720a9a27ad0c178c9743c0d1b2e7dca591",
+        "source": "ACTUAL_ONE_PLAQUETTE_ORIENTATION.md",
+        "sha256": "8e49d2f40d250836aca17b576ff66990231e383a8fdb2b318082123140d74c8a",
+        "actual_reading": "OPC1–OPC8 entire proof and operator-domain review."
+      },
+      {
+        "commit": "bb5761720a9a27ad0c178c9743c0d1b2e7dca591",
+        "source": "ACTUAL_MIXED_TIME_EVOLUTION.md",
+        "sha256": "6b9f9afed6a21f27d834fa7920b214fd93f32de613608def0dbfb8da99001824",
+        "actual_reading": "Retained complete MTO source review; MTO17–MTO18 exact conditional coefficient form applied with all three physical cycles and full127 covariance indices."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-14T17:11:47.708650+00:00",
+      "coverage": "Complete TPL1–TPL18: original seven-link gauge map, exact trace solid and Haar density, all shared-edge kinetic contractions, boundary and domain identities, necessary perimeter dependence of the actual ground, complete heat coefficients and differentiated forcing, unit-ground coefficients about b=0, all128probabilities and127covariance blocks/inverses, actual mixed-source sign at small b, full-lattice potential and conditional-score receiving maps.",
+      "strengthening": "The actual mixed sign extends from one face to two adjacent interacting faces for sufficiently small b, uniformly over bounded times and compact positive-shift intervals with every complex raw sample retained. The full-lattice relation includes the exact remaining potential and score covariance.",
+      "corrections": "No error in the previously published OPC theorem identified. Its one-face scalar cone cannot simply be assigned to the two-face covariance: TPL12 proves a sign-changing off-diagonal entry, while TPL14 computes and controls the actual integrated pairing. The perimeter coordinate is required by the actual ground equation.",
+      "limitations": "The two-face theorem does not control increasing b on the original shrinking-spacing path. The full-state conditional scores, full Schur inverse, signed three-shift spectral correction, limiting annular mass and continuum construction remain active.",
+      "diagnostics": [
+        {
+          "all_passed": true,
+          "checks": 168,
+          "scope": "Exact symbolic identities, original seven-link matrix derivatives, complete128sign algebra, and exact-degree Haar quadrature. Polynomial density checks test the finite-character identities only; they are not computations of the exact Wilson ground. Analytic ground, semigroup sign and full-lattice receiver proofs are in SHARED_LINK_TWO_PLAQUETTE.md."
+        }
+      ],
+      "diagnostic_count": 168,
+      "figures_inspected": [
+        "TWO_PLAQUETTE_GEOMETRY.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "SHARED_LINK_TWO_PLAQUETTE.md",
+          "prefix": "TPL",
+          "tags": 18,
+          "owner_sha256": "d9b1aaae0ac8ecb78f437bfa7efb909ae95e305b93258da28de06a23876b1433",
+          "public_sha256": "d9b1aaae0ac8ecb78f437bfa7efb909ae95e305b93258da28de06a23876b1433",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T17:17:42.645025+00:00",
+        "tex_sha256": "dbb787f492f3e9a74a18eb9f5f908339aa04b760ece25913d6da0fb3b8627c72",
+        "pdf_sha256": "7a0701500b8a2e7717395868a02fafa20efd4437c55e34b14691827797ca18b3",
+        "pages": 1267,
+        "source_files": 115,
+        "math_blocks": 26698,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T17:17:42.584741+00:00",
+          "complete": true,
+          "pages": 1267,
+          "rendered_pages": [
+            1243,
+            1244,
+            1245,
+            1250,
+            1251,
+            1252,
+            1257,
+            1258,
+            1259,
+            1260,
+            1261,
+            1262,
+            1263,
+            1264,
+            1265,
+            1266,
+            1267
+          ],
+          "contacts_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "final_revised_pages_inspected": [
+            1266,
+            1267
+          ],
+          "figure_inspected": "TWO_PLAQUETTE_GEOMETRY.png",
+          "findings": "All seventeen new, receiving and adjacent pages inspected. Replaced the wide figure with a portrait layout for readable PDF labels, updated its caption and regenerated the full reader; final caption and figure pages inspected again. Every equation and original factor retained. No new overflow or missing glyph; inherited59overflows and one glyph warning unchanged."
+        }
+      }
+    },
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS/CK author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "index_queries": [
+      "\"plaquette\" AND \"trace\"",
+      "\"SU(2)\" AND \"character\"",
+      "\"plaquette\" AND \"trace\"",
+      "\"SU(2)\" AND \"character\""
+    ],
+    "index_routing_hit_count": 12,
+    "routing_assessment": "Twelve bounded disk-index metadata hits were routing records only and were not read or used. Exact bounded current provider coverage and hashes are recorded. The complete actual two-face ground, kinetic, mixed-sign at small b and full-lattice receiving maps are proved in the source.",
+    "routing_is_not_reading": true
+  }
+]

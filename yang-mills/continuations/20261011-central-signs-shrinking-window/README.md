@@ -746,3 +746,16 @@ The entire last term is bounded by the explicit \(\mathcal B_{j,z}\mathcal Y_j/[
 \quad(z>0,\ t\ge0,\ \varphi\ne0).
 \]
 The exact residual source and entire restricted-resolvent cross terms have the same strict sign. This theorem concerns the separate one-plaquette Wilson model. Shared-face coupling, the original full open box, its full Schur inverse and signed spectral window, and the smooth global no-gap construction remain active.
+
+## SZ-20261014-012 — Shared-link two-face geometry and actual mixed orientation
+
+[TPL1–TPL18](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SHARED_LINK_TWO_PLAQUETTE.md) retain all seven radius-two links of two adjacent Wilson plaquettes. Their exact gauge quotient has the three traces x,y,z with domain \(4-x^2-y^2-z^2+xyz\ge0\) and Haar density \(dx\,dy\,dz/(4\pi^2)\). The original kinetic matrix proves that the actual ground cannot depend only on the two face traces. The complete unit-ground expansion yields, on every bounded time interval and compact positive-shift interval,
+\[
+\begin{aligned}
+\langle Bf_{s,\varphi},e^{-tD}y_\varphi\rangle
+={}&-\frac{4a^2b^2e^{-3\kappa_*t}}{9\kappa_*(8\kappa_*+s)}
+(|\varphi_1|^2+|\varphi_2|^2)\\
+&+a^2O(b^3)(|\varphi_1|^2+|\varphi_2|^2).
+\end{aligned}
+\]
+The proved analytic remainder gives a strict negative sign for sufficiently small b and every nonzero pair of raw samples. All 128 sign probabilities and 127 covariance indices and their inverse blocks are retained. TPL15–TPL17 give the exact receiving maps into the original full lattice, including its remaining potential and the full-state conditional score covariance. Increasing coupling on the original regulator path, the complete signed spectral window and the smooth global no-gap construction remain active.

@@ -163,3 +163,16 @@ The script retains the comparison and evaluates the final complete positive prod
 ![Actual Wilson ground and strict conditional mixed sign](ACTUAL_ONE_PLAQUETTE_SIGN.png)
 
 The upper receiving map is the exact pullback of the differentiated equation to the unit S5, retaining T=2x6, its drift coefficient five, the original four radius-two links and their complete Hamiltonian. It does not replace the original state by a state on that auxiliary sphere. The physical conditional block and its domain are proved in OPC4–OPC5 and OPC8. OPC7 retains the full time interval, source shift, complex source amplitude, Haar density and conditional probability weight in the strict mixed sign. The figure states a one-plaquette result; the shared-face and full-lattice continuation remains active. Reproducible figure: [figure_one_plaquette.py](figure_one_plaquette.py). The inherited center-multiplication provenance is L. Li and Y. Meurice, [arXiv:hep-lat/0410029v2](https://arxiv.org/abs/hep-lat/0410029v2), Sections II–IV and Appendix, through the retained CS/CK author-source record. No new external source reading or novelty claim is asserted.
+
+## Shared-link two-face geometry and actual mixed sign
+
+[TPL1–TPL18](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SHARED_LINK_TWO_PLAQUETTE.md) retain all seven radius-two links of two adjacent Wilson plaquettes. Their exact gauge quotient has the three traces x,y,z with domain \(4-x^2-y^2-z^2+xyz\ge0\) and Haar density \(dx\,dy\,dz/(4\pi^2)\). The original kinetic matrix proves that the actual ground cannot depend only on the two face traces. The complete unit-ground expansion yields, on every bounded time interval and compact positive-shift interval,
+\[
+\begin{aligned}
+\langle Bf_{s,\varphi},e^{-tD}y_\varphi\rangle
+={}&-\frac{4a^2b^2e^{-3\kappa_*t}}{9\kappa_*(8\kappa_*+s)}
+(|\varphi_1|^2+|\varphi_2|^2)\\
+&+a^2O(b^3)(|\varphi_1|^2+|\varphi_2|^2).
+\end{aligned}
+\]
+The proved analytic remainder gives a strict negative sign for sufficiently small b and every nonzero pair of raw samples. All 128 sign probabilities and 127 covariance indices and their inverse blocks are retained. TPL15–TPL17 give the exact receiving maps into the original full lattice, including its remaining potential and the full-state conditional score covariance. Increasing coupling on the original regulator path, the complete signed spectral window and the smooth global no-gap construction remain active.
