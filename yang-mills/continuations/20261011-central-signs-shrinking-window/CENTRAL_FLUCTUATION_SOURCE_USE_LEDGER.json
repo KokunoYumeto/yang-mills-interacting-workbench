@@ -1,0 +1,122 @@
+[
+  {
+    "source_id": "programme:CFE-20261014",
+    "proofs": [
+      {
+        "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+        "prefix": "CFE",
+        "tags": 14,
+        "owner_sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
+        "public_sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "CENTRAL_KINETIC_SOURCE.md",
+        "commit": "25cc399b2cfa6ac81b7d16df14112c61828061bc",
+        "sha256": "fec6a32569d55f9ba290b5efbc11993ae87aeef61f0f2579352318d8709d46a9",
+        "actual_reading": "Complete CK1–CK24 owner derivation and review; CK7 conditional equation rechecked against the source in this increment."
+      }
+    ],
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS/CK author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "owner_review": {
+      "utc": "2026-10-14T14:09:44.351416+00:00",
+      "coverage": "Complete CFE1–CFE14: original conditional derivative defect and full adjoint, positive fluctuation energy, full residual norm with its complex cross term, all three original shift bounds, complete covariance inverse and kinetic tensor, logarithmic score, residual Gram square and original character ground equation.",
+      "strengthening": "CK residual and kinetic coupling now have exact positive energy and all-character covariance formulas. The actual original X source retains every raw coefficient, shared-link term, inverse probability and cross-term cancellation.",
+      "correction": "Before acceptance corrected the CK7 source locator and made the figure arrow one-way from y to t_Z; no inverse is claimed. Explicitly proved the smooth physical Q-vector representation.",
+      "limitations": "No positive limiting signed response has been assigned. Original derivative contractions, full X/Q residual, five Green moments/J5, continuum state, reconstruction and theory identification remain active.",
+      "diagnostics": {
+        "all_passed": true,
+        "checks": 406,
+        "scope": "Continuous radius-two diagnostics with an explicitly constructed potential V=E+kappa Delta(psi)/psi and complex observables; not the Wilson potential. Finite positive matrix diagnostics retain original a_j,s_j, vacuum zero direction and both full source components. Full finite-character inverse and kinetic tensors retain all probabilities and n^-2. No sampled YM vacuum or assigned continuum response."
+      },
+      "figures_inspected": [
+        "CENTRAL_FLUCTUATION_ENERGY_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+          "prefix": "CFE",
+          "tags": 14,
+          "owner_sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
+          "public_sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T14:15:53.023345+00:00",
+        "tex_sha256": "23475a90410485c41e734e097135e0f74e5be91db8f93270c9b991dc61c77142",
+        "pdf_sha256": "5933a7789e7273c64cbc788b87b15eab41f368dc39674d1533cfcd0096ae8338",
+        "pages": 1155,
+        "source_files": 106,
+        "math_blocks": 25026,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T14:15:52.956988+00:00",
+          "complete": true,
+          "pages": 1155,
+          "rendered": [
+            743,
+            744,
+            745,
+            1104,
+            1105,
+            1106,
+            1124,
+            1125,
+            1126,
+            1136,
+            1137,
+            1138,
+            1147,
+            1148,
+            1149,
+            1150,
+            1151,
+            1152,
+            1153,
+            1154,
+            1155
+          ],
+          "contacts_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "figures_inspected": [
+            "CENTRAL_FLUCTUATION_ENERGY_MAP.png"
+          ],
+          "assessment": "All21new/receiving/adjacent pages inspected. CFE1–CFE14 retain complete formulas, cross terms, inverse factors and source locators; one-way figure arrow and labels legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+        }
+      }
+    },
+    "index_queries": [
+      "\"Fisher\" AND \"conditional\"",
+      "\"ground state\" AND \"density\" AND \"symmetry\"",
+      "\"Fisher\" AND \"conditional\"",
+      "\"ground state\" AND \"density\" AND \"symmetry\""
+    ],
+    "index_routing_hit_count": 15,
+    "routing_assessment": "Continues the CK calculation after its existing disk-index search and reading of conditional-density providers. Its15routing hits are not claimed read or used as proof inputs. Complete finite Fourier, weighted ground-form and spectral-calculus proofs are supplied here.",
+    "routing_is_not_reading": true
+  }
+]

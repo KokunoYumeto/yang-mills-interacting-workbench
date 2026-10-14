@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T13:52:33.712247+00:00",
+  "checked_utc": "2026-10-14T14:15:53.023345+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -415,8 +415,8 @@
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "292c1e31c7489825d6f90cb5f77ca859e389710df444af340ce37d84b194eabb",
-      "complete_math_blocks": 259,
+      "sha256": "898d2a69e9924f6ae6e0bbb26984208722cf19a3a80d1ee1684ca4b7039a69af",
+      "complete_math_blocks": 264,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -607,8 +607,8 @@
     },
     {
       "source": "SCALAR_COMMON_SOURCE_RECONSTRUCTION.md",
-      "sha256": "a448d65b954c99a5b434a589ca8f75aeead1039b320c78f43b57b9343dd85c47",
-      "complete_math_blocks": 149,
+      "sha256": "4c9439af0f177377122db859449073e26e257ce6da055e58f72f04192ed23b6e",
+      "complete_math_blocks": 154,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -619,21 +619,27 @@
     },
     {
       "source": "FACE_FIELD_PHYSICAL_ACTION.md",
-      "sha256": "dfeeda48b2e57c94748c4f198669008c5dfd9162c98362fa78337adb92da19e1",
-      "complete_math_blocks": 127,
+      "sha256": "d6f455e2fd1e5aa0510f240588404eed6a0c7f9f4919371aa6e2c9e2c0e9c49e",
+      "complete_math_blocks": 132,
       "split_to_aligned_wrappers": 1
     },
     {
       "source": "ACTUAL_DENSITY_CHARACTERS.md",
-      "sha256": "59c0cdd1e346bb7a4ffeebd2e52f1afe004e36210da7e6b94cc8fb42311e88b0",
-      "complete_math_blocks": 230,
+      "sha256": "acfcf1b7d9094e92383c1ad0fed79018592a3bb03ec716dcafe3eb7ec508b613",
+      "complete_math_blocks": 235,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "CENTRAL_KINETIC_SOURCE.md",
-      "sha256": "fec6a32569d55f9ba290b5efbc11993ae87aeef61f0f2579352318d8709d46a9",
-      "complete_math_blocks": 283,
+      "sha256": "c701cb2266ba58cb3b44d68c57aeb2034d1a243a298678860de53d93d4f5aea7",
+      "complete_math_blocks": 288,
       "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+      "sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
+      "complete_math_blocks": 181,
+      "split_to_aligned_wrappers": 2
     }
   ],
   "figures": [
@@ -1265,6 +1271,11 @@
     {
       "file": "CENTRAL_KINETIC_RESOLVENT_MAP.png",
       "sha256": "7deb5886a893ba4cae4e19e733d041b49bdacdc59474d4aea808420a37994e4f",
+      "visually_inspected": true
+    },
+    {
+      "file": "CENTRAL_FLUCTUATION_ENERGY_MAP.png",
+      "sha256": "c9b8700e5aee184477e37a7dabaadfec699e1728ce07b3d4efcd12605cb92282",
       "visually_inspected": true
     }
   ],
@@ -8706,6 +8717,134 @@
         "CENTRAL_KINETIC_RESOLVENT_MAP.png"
       ],
       "assessment": "All24new/receiving/adjacent pages inspected. CK1–CK24 retain complete formulas, plus signs and domains; figure and source locators legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+    }
+  },
+  "central_fluctuation_review": {
+    "utc": "2026-10-14T14:09:44.351416+00:00",
+    "coverage": "Complete CFE1–CFE14: original conditional derivative defect and full adjoint, positive fluctuation energy, full residual norm with its complex cross term, all three original shift bounds, complete covariance inverse and kinetic tensor, logarithmic score, residual Gram square and original character ground equation.",
+    "strengthening": "CK residual and kinetic coupling now have exact positive energy and all-character covariance formulas. The actual original X source retains every raw coefficient, shared-link term, inverse probability and cross-term cancellation.",
+    "correction": "Before acceptance corrected the CK7 source locator and made the figure arrow one-way from y to t_Z; no inverse is claimed. Explicitly proved the smooth physical Q-vector representation.",
+    "limitations": "No positive limiting signed response has been assigned. Original derivative contractions, full X/Q residual, five Green moments/J5, continuum state, reconstruction and theory identification remain active.",
+    "diagnostics": {
+      "all_passed": true,
+      "checks": 406,
+      "scope": "Continuous radius-two diagnostics with an explicitly constructed potential V=E+kappa Delta(psi)/psi and complex observables; not the Wilson potential. Finite positive matrix diagnostics retain original a_j,s_j, vacuum zero direction and both full source components. Full finite-character inverse and kinetic tensors retain all probabilities and n^-2. No sampled YM vacuum or assigned continuum response."
+    },
+    "figures_inspected": [
+      "CENTRAL_FLUCTUATION_ENERGY_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+        "prefix": "CFE",
+        "tags": 14,
+        "owner_sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
+        "public_sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T14:15:53.023345+00:00",
+      "tex_sha256": "23475a90410485c41e734e097135e0f74e5be91db8f93270c9b991dc61c77142",
+      "pdf_sha256": "5933a7789e7273c64cbc788b87b15eab41f368dc39674d1533cfcd0096ae8338",
+      "pages": 1155,
+      "source_files": 106,
+      "math_blocks": 25026,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T14:15:52.956988+00:00",
+        "complete": true,
+        "pages": 1155,
+        "rendered": [
+          743,
+          744,
+          745,
+          1104,
+          1105,
+          1106,
+          1124,
+          1125,
+          1126,
+          1136,
+          1137,
+          1138,
+          1147,
+          1148,
+          1149,
+          1150,
+          1151,
+          1152,
+          1153,
+          1154,
+          1155
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "figures_inspected": [
+          "CENTRAL_FLUCTUATION_ENERGY_MAP.png"
+        ],
+        "assessment": "All21new/receiving/adjacent pages inspected. CFE1–CFE14 retain complete formulas, cross terms, inverse factors and source locators; one-way figure arrow and labels legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+      }
+    }
+  },
+  "central_fluctuation_compile": {
+    "utc": "2026-10-14T14:15:53.023345+00:00",
+    "tex_sha256": "23475a90410485c41e734e097135e0f74e5be91db8f93270c9b991dc61c77142",
+    "pdf_sha256": "5933a7789e7273c64cbc788b87b15eab41f368dc39674d1533cfcd0096ae8338",
+    "pages": 1155,
+    "source_files": 106,
+    "math_blocks": 25026,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T14:15:52.956988+00:00",
+      "complete": true,
+      "pages": 1155,
+      "rendered": [
+        743,
+        744,
+        745,
+        1104,
+        1105,
+        1106,
+        1124,
+        1125,
+        1126,
+        1136,
+        1137,
+        1138,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "figures_inspected": [
+        "CENTRAL_FLUCTUATION_ENERGY_MAP.png"
+      ],
+      "assessment": "All21new/receiving/adjacent pages inspected. CFE1–CFE14 retain complete formulas, cross terms, inverse factors and source locators; one-way figure arrow and labels legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
     }
   }
 }

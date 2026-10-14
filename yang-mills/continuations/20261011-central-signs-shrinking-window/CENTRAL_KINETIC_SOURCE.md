@@ -466,3 +466,13 @@ The full central kinetic source, scalar covariance, two-component inverse and al
 \(x=\overline X_\varphi\) and \(y=(h_\tau[(X_\varphi)_\tau-\overline X_\varphi])_\tau\), explicitly evaluated in (CK16). Its retained coupling is (CK17), and its residual in the central-average trial is (CK24). The next calculation is to bound these actual \(R_z\), \(s_z\), and source terms jointly on the unchanged shrinking scale; a gain at one shift alone does not control the signed three-shift expression.
 
 The original \(X+Q\) residual, zero-energy analysis, five Green moments and J5 comparison remain. Strict positivity of the conditional kinetic integral in (CK4) alone gives neither a regulator-uniform lower bound nor positive weight in a specified shrinking annulus. Every comparison above preserves the full original operator and provides the explicit next terms to calculate.
+
+## Exact central fluctuation energy and full response residual
+
+[CFE1–CFE14](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CENTRAL_FLUCTUATION_ENERGY.md) compute the original conditional mean-gradient defect \(t_Z=dx-\sum_\tau p_\tau dZ_\tau\), its complete adjoint coupling, and the full positive fluctuation energy
+\[
+q(y,y)=\kappa_*\int A^2\left[
+\sum_\tau p_\tau|dZ_\tau-v_Z|^2+|t_Z|^2\right]dU,
+\quad v_Z=\sum_\tau p_\tau dZ_\tau .
+\]
+Every nonempty original character is retained in \(C_{S,T}=r_{S\triangle T}-r_Sr_T\). Its exact inverse contains \(n^{-2}\sum_\tau\chi_S\chi_T/p_\tau\). The full physical residual \(\eta_z=y-B(L_A+z)^{-1}x\) has the exact Gram square in CFE13, including its possible cross-term cancellation. CFE7–CFE8 bound all three original signed responses, and CFE14 derives the density-character derivative source from the original Wilson ground equation. These formulas keep every raw coefficient, metric, boundary and inverse probability. The actual derivative estimates and nonzero shrinking-window weight, followed by reconstruction and the smooth global no-gap endpoint, remain the active calculation.

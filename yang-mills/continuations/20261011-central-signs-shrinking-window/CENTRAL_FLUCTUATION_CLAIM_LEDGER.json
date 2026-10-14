@@ -1,0 +1,28 @@
+[
+  {
+    "id": "CFE-full-energy",
+    "original": "CK15–CK24 retain the conditional fluctuation and full physical residual.",
+    "change": "CFE1–CFE8 compute their full positive energy, exact adjoint, raw residual norm and signed three-shift response bounds.",
+    "affects": [
+      "CK15–CK24",
+      "TSC8–TSC12",
+      "CG conditional source"
+    ],
+    "proof": "CENTRAL_FLUCTUATION_ENERGY.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in CK,DCH,FPA,TSC,CG and programme/cumulative source."
+  },
+  {
+    "id": "CFE-full-covariance",
+    "original": "CK3–CK7 retain all character kinetic terms; DCH establishes actual density alignment.",
+    "change": "CFE9–CFE14 prove the entire inverse covariance, kinetic and score maps, residual Gram square and exact original character ground equation. No derivative estimate follows from alignment alone.",
+    "affects": [
+      "CK3–CK7",
+      "DCH2–DCH5",
+      "FPA physical covariance"
+    ],
+    "proof": "CENTRAL_FLUCTUATION_ENERGY.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in CK,DCH,FPA,TSC,CG and programme/cumulative source."
+  }
+]
