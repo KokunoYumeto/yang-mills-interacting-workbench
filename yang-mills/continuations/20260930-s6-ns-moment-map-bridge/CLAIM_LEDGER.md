@@ -1469,3 +1469,13 @@ The exact residual source and entire restricted-resolvent cross terms have the s
 \end{aligned}
 \]
 The proved analytic remainder gives a strict negative sign for sufficiently small b and every nonzero pair of raw samples. All 128 sign probabilities and 127 covariance indices and their inverse blocks are retained. TPL15–TPL17 give the exact receiving maps into the original full lattice, including its remaining potential and the full-state conditional score covariance. Increasing coupling on the original regulator path, the complete signed spectral window and the smooth global no-gap construction remain active.
+
+## SZ-20261014-013 — Actual full-state marginal ground and nonzero trace memory
+
+[FMP1–FMP13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_STATE_MARGINAL_GROUND.md) prove the actual full-lattice marginal equation with every remaining Wilson face, the original vacuum energy and both conditional score contributions retained. A global SU(2) loop-gradient argument shows that a smooth first integral is constant, for every loop length and arbitrary positive original link weights. Applied to the original seven-link patch and an explicit crossing Wilson face, this gives
+\[
+\|\mathcal Kx\|^2=\|\mathcal Ky\|^2>0,\qquad
+\langle\mathcal Kx,e^{-t\mathcal D}\mathcal Kx\rangle>0
+\quad(t\ge0)
+\]
+at every original regulator, with equal diagonal memory for y and strict positive-shift resolvent memory. This is the complement of trace-measurable functions in the actual full-ground measure, whose entire receiving maps and operator domains are proved. Its nonzero coupling is established beyond the earlier two-face expansion about b=0. The original single-face observable retains its full quadratic factor \(a^2/4\). Regulator-uniform shrinking-window weight, the signed three-shift combination and the smooth global no-gap construction remain active.

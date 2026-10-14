@@ -1,0 +1,39 @@
+[
+  {
+    "id": "FMP-actual-marginal-ground",
+    "original": "TPL16–TPL17 give the actual full-state trace density and dynamic residual without evaluating the marginal ground equation.",
+    "change": "FMP1–FMP10 derive the exact marginal ground equation, original energy decomposition, trace/perpendicular score relation and strictly positive retained gradient contribution.",
+    "affects": [
+      "TPL15–TPL17",
+      "actual full regulator ground"
+    ],
+    "proof": "FULL_STATE_MARGINAL_GROUND.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in TPL,MTO,MSA, programme sources and cumulative manuscript; prior private working block replaced without duplication."
+  },
+  {
+    "id": "FMP-weighted-loop-rigidity",
+    "original": "A local first integral of the loop-trace gradient need not extend to both critical holonomies.",
+    "change": "FMP11 proves that every globally smooth first integral is constant on the original SU2 product, for every loop length and arbitrary positive original link weights, retaining all metric and endpoint transport constants.",
+    "affects": [
+      "FMP10",
+      "original four-link Wilson traces"
+    ],
+    "proof": "FULL_STATE_MARGINAL_GROUND.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in TPL,MTO,MSA, programme sources and cumulative manuscript; prior private working block replaced without duplication."
+  },
+  {
+    "id": "FMP-nonzero-actual-trace-memory",
+    "original": "The small-b two-face sign theorem TPL14 does not determine actual full-lattice coupling along the original regulator path. Positive total conditional energy alone does not prove nonzero trace covariance.",
+    "change": "FMP12–FMP13 prove equal strictly positive individual face residual norms and complete diagonal trace-complement memory on every original regulator, by global loop rigidity, the complete crossing-face potential and full-box reflection.",
+    "affects": [
+      "TPL14–TPL17",
+      "FMP8–FMP10",
+      "actual full regulator spectral receiving map"
+    ],
+    "proof": "FULL_STATE_MARGINAL_GROUND.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in TPL,MTO,MSA, programme sources and cumulative manuscript; prior private working block replaced without duplication."
+  }
+]
