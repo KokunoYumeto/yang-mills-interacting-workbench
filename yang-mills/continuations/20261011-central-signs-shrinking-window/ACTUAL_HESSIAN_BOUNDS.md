@@ -330,3 +330,12 @@ The accompanying 365 diagnostics check noncommuting positive-matrix families, th
 ![Actual conditional Hessian bounds and the complete original response contraction](ACTUAL_HESSIAN_BOUNDS.png)
 
 The auxiliary positive matrices retain the explicit inverse \(K_\tau=B_\tau-c_jP\). The diagram shows the complete original energy and dimension constants and the actual source receiving map. Its unresolved factor is the actual resolvent Hessian at each original shift, which is retained explicitly. HCB8–HCB9 supply the global squared-tensor relation and every localization derivative term. Reproducible source: [figure_hessian_bounds.py](figure_hessian_bounds.py); diagnostics: [check_hessian_bounds.py](check_hessian_bounds.py). Original human center-multiplication provenance remains L. Li and Y. Meurice, arXiv:hep-lat/0410029v2, Sections II–IV and Appendix, through CK and CS; no new reading or novelty is claimed.
+
+## Actual resolvent derivatives and explicit residual gain
+
+[RHB1–RHB13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_RESOLVENT_HESSIAN.md) evaluate the actual marginal resolvent derivatives using the original closed-geodesic, full-dimensional Hessian and weighted Bochner calculations. The heat-semigroup gradient estimate and original conditional-state derivatives remove the unevaluated maxima from a positive residual-mass bound. Every original source sample, vacuum-energy term, density factor and radius-two Haar-ball volume is retained. The resulting full residual energy and mass give
+\[
+\mathcal G_{X_\varphi}(z)-\langle x,(L_A+z)^{-1}x\rangle
+\ge\frac{(m^-_{j,z})^2}{\mathcal E^+_{j,z}+z\,m^-_{j,z}}>0
+\]
+for nonzero original face samples. All constants are explicitly given in RHB9–RHB13. This is a finite-regulator gain; its signed differentiated three-shift response, limiting annular mass and the smooth interacting global no-gap state remain the continuing calculation.

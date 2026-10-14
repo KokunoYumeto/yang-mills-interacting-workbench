@@ -11086,5 +11086,172 @@
     "index_routing_hit_count": 13,
     "routing_assessment": "Thirteen bounded metadata hits, of which twelve route to PDFs only and one to a different local programme TeX; none was read or used. Actual original HVR1–15 and PVI1–17 provider reading is recorded with hashes. All new finite matrix and conditional weighted calculations are proved in full.",
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "programme:RHB-20261014",
+    "proofs": [
+      {
+        "source": "ACTUAL_RESOLVENT_HESSIAN.md",
+        "prefix": "RHB",
+        "tags": 13,
+        "owner_sha256": "1713f62898e9b9a435d10641b2e5553a6aca1c32ddb1ce0fe723ce860bc61348",
+        "public_sha256": "1713f62898e9b9a435d10641b2e5553a6aca1c32ddb1ce0fe723ce860bc61348",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "ACTUAL_HESSIAN_BOUNDS.md",
+        "commit": "5f513b3aa56d9859c59ffadca44d06f8e97c1fb4",
+        "sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+        "actual_reading": "Complete HCB1–HCB10 owner derivation and review."
+      },
+      {
+        "source": "HESSIAN_RECEIVING_REVIEW.md",
+        "commit": "5f513b3aa56d9859c59ffadca44d06f8e97c1fb4",
+        "sha256": "51cb00fd48a029fc03c7393caddcb2b2208c44ffb35ef80d16d1d9d021ddc231",
+        "actual_reading": "Current HVR1–HVR15 actual read; later sections not reread."
+      },
+      {
+        "source": "CENTRAL_KINETIC_SOURCE.md",
+        "commit": "5f513b3aa56d9859c59ffadca44d06f8e97c1fb4",
+        "sha256": "9fd0d8030671ccfc7c897e383657670e8d409b73726f077068e8d3fc1f9e6f6c",
+        "actual_reading": "Complete prior CK1–CK24 owner derivation and review; current CK1–CK6."
+      },
+      {
+        "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+        "commit": "5f513b3aa56d9859c59ffadca44d06f8e97c1fb4",
+        "sha256": "215e79a2c43fb9c62cc5167f8d4cd7678ba418b20f6b37fed997cbf1d14b295d",
+        "actual_reading": "Complete prior CFE1–CFE14 owner derivation and review; current CFE1–CFE6."
+      },
+      {
+        "source": "CENTRAL_HESSIAN_FACE_MAP.md",
+        "commit": "5f513b3aa56d9859c59ffadca44d06f8e97c1fb4",
+        "sha256": "beab03a3c66b34d7c6e61e24980d6f1652e167e094e807752bbd60c97de09a10",
+        "actual_reading": "Complete CHM1–CHM13 owner derivation and current reread."
+      },
+      {
+        "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
+        "commit": "5f513b3aa56d9859c59ffadca44d06f8e97c1fb4",
+        "sha256": "d23a95901653df7e199e4fa1b62901eb2f1e1849f5eb0ee51b1d6ca5fdf28b18",
+        "actual_reading": "Complete FPR1–FPR8 reread during RHB9–RHB13 derivation, including all original residual energy terms and Haar-ball volumes."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-14T15:39:43.206920+00:00",
+      "coverage": "Complete RHB1–RHB13: original closed-geodesic score, full 3N-dimensional Hessian bounds, complex weighted and localized Bochner identities, exact spectral scalar optimization and every shift derivative, full coupling, heat-semigroup gradient proof, original density and character covariance, all-component h Hessian estimate, explicit original Haar-ball residual mass, complete original physical residual energy and strict gain.",
+      "strengthening": "Evaluates the actual marginal resolvent Hessian in HCB/FPR and removes all unevaluated derivative maxima from a positive original-state residual-mass bound. Supplies explicit residual energy and strict finite-regulator resolvent gain without changing the original source.",
+      "corrections": "No change to previous theorem statements. RHB gives an upper function after retaining E0, not actual growth asymptotics. Numerical constructed potentials and sources are identified explicitly and are not Wilson-vacuum samples.",
+      "limitations": "The entire exponentially small density factor and N-fold Haar volume remain. Individual positive-shift gain does not yet evaluate the signed differentiated three-shift response or limiting annular mass. Five Green moments/J5 and smooth interacting continuum reconstruction remain active.",
+      "diagnostics": [
+        {
+          "all_passed": true,
+          "checks": 266,
+          "scope": "Exact rational spectral multiplier and derivative inequalities; continuous four-link original-radius-two conditional density with constructed potential and complex sources, full Bochner/localization identities, actual resolvent fixture and complete coupling; original regulator counts. Not sampled Wilson vacua and not evaluation of original limiting spectral mass."
+        },
+        {
+          "all_passed": true,
+          "checks": 363,
+          "scope": "Original radius-two Haar heat multipliers and exact gradient-integral constants; continuous four-link constructed ground potential with actual conditional marginal resolvent of an explicitly specified source, full energy, density/covariance factors, all16signs and exact Haar-series remainder; explicit lower-mass/gain comparison. These fixtures are not Wilson vacua or evaluation of the limiting spectral window."
+        }
+      ],
+      "diagnostic_count": 629,
+      "figures_inspected": [
+        "RESOLVENT_HESSIAN_MULTIPLIER.png",
+        "EXPLICIT_ORIGINAL_RESIDUAL_GAIN.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "ACTUAL_RESOLVENT_HESSIAN.md",
+          "prefix": "RHB",
+          "tags": 13,
+          "owner_sha256": "1713f62898e9b9a435d10641b2e5553a6aca1c32ddb1ce0fe723ce860bc61348",
+          "public_sha256": "1713f62898e9b9a435d10641b2e5553a6aca1c32ddb1ce0fe723ce860bc61348",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T15:41:48.053739+00:00",
+        "tex_sha256": "1e808d650a981a8683440f97dedcbd9b29464888bd5d2ac71afa820e3da06b5e",
+        "pdf_sha256": "346bed0238abe587179093f47277cff81c345d575544347b61a377553c16e2c4",
+        "pages": 1208,
+        "source_files": 110,
+        "math_blocks": 25828,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T15:41:47.996139+00:00",
+          "complete": true,
+          "pages": 1208,
+          "inspected_pages": [
+            397,
+            398,
+            399,
+            1160,
+            1161,
+            1162,
+            1171,
+            1172,
+            1173,
+            1180,
+            1181,
+            1182,
+            1190,
+            1191,
+            1192,
+            1198,
+            1199,
+            1200,
+            1201,
+            1202,
+            1203,
+            1204,
+            1205,
+            1206,
+            1207,
+            1208
+          ],
+          "contact_sheets_inspected": 7,
+          "new_source_pages": [
+            1200,
+            1201,
+            1202,
+            1203,
+            1204,
+            1205,
+            1206,
+            1207,
+            1208
+          ],
+          "figures_inspected": [
+            "RESOLVENT_HESSIAN_MULTIPLIER.png",
+            "EXPLICIT_ORIGINAL_RESIDUAL_GAIN.png"
+          ],
+          "result": "All 26 new/receiving/adjacent pages inspected. Equations, signs, labels, original factors and both illustrations legible; no clipping or overlap in new content.59 inherited overflow warnings and one inherited glyph warning unchanged; no new warnings."
+        }
+      }
+    },
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS/CK author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "index_queries": [
+      "\"resolvent\" AND \"Hessian\"",
+      "\"resolvent\" AND \"Hessian\""
+    ],
+    "index_routing_hit_count": 7,
+    "routing_assessment": "Seven bounded metadata hits, six routing to PDFs and one to a different local programme TeX; none read or used. Provider reading and exact source hashes recorded. The semigroup and residual calculations are proved in full here; a bounded local text search did not identify the heat formula and is not asserted exhaustive.",
+    "routing_is_not_reading": true
   }
 ]

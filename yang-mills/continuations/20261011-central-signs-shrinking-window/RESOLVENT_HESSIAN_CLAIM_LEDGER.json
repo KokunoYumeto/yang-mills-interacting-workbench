@@ -1,0 +1,29 @@
+[
+  {
+    "id": "RHB-actual-resolvent-derivatives",
+    "original": "HCB7 and FPR8 retain the actual marginal resolvent Hessian, and HCB bounds actual conditional ground Hessians.",
+    "change": "RHB1–RHB9 bound the actual marginal Hessian, weighted resolvent Hessian, all shift derivatives, localized costs, full coupling and supremum gradient with explicit original constants.",
+    "affects": [
+      "HCB7–HCB9",
+      "FPR8",
+      "CK17",
+      "CFE6"
+    ],
+    "proof": "ACTUAL_RESOLVENT_HESSIAN.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in HCB,CHM,CK,CFE,FPR,HVR, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "RHB-explicit-original-residual",
+    "original": "FPR4/FPR7 positive local residual-mass estimates retain actual derivative maxima; FPR5 gives the exact energy and strict resolvent gain.",
+    "change": "RHB10–RHB13 evaluate density, covariance, conditional derivatives, original Haar-ball mass and full residual-energy bounds, yielding a computable strictly positive original-state gain for nonzero raw face samples.",
+    "affects": [
+      "FPR3–FPR7",
+      "CK24",
+      "CFE13"
+    ],
+    "proof": "ACTUAL_RESOLVENT_HESSIAN.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in HCB,CHM,CK,CFE,FPR,HVR, programme sources and cumulative manuscript."
+  }
+]
