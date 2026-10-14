@@ -1,0 +1,632 @@
+{
+  "all_passed": true,
+  "checks": 125,
+  "scope": "Finite Galerkin diagnostics for the actual one-plaquette Wilson Jacobi matrix: full original kinetic eigenvalues kappa*n*(n+2), potential constant2b, offdiagonal-b, coupling b=1/(kappa*a^2), exact Haar measure and all weighted mass matrices retained.32/48-dimensional ground comparisons and the complete omitted Jacobi residual are reported. Conditional and marginal Galerkin functions remain approximations; no finite check replaces OPC1\u2013OPC8 or proves a full-lattice statement.",
+  "results": [
+    {
+      "name": "original trace Haar mass",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "original complete Chebyshev Gram",
+      "passed": true,
+      "error": 4.2454928461665986e-13
+    },
+    {
+      "name": "b0.3 full finite eigenvector residual",
+      "passed": true,
+      "error": 4.9960036108132044e-15
+    },
+    {
+      "name": "b0.3 retained scalar coupling",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "b0.3 original ground norm",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "b0.3 two Galerkin energies",
+      "passed": true,
+      "error": 8.770761894538737e-14
+    },
+    {
+      "name": "b0.3 full omitted Jacobi residual",
+      "passed": true,
+      "error": 2.4538234295955912e-54
+    },
+    {
+      "name": "b0.3 Galerkin ground positivity",
+      "passed": true,
+      "minimum": 0.7633295351946696
+    },
+    {
+      "name": "b0.3 Galerkin derivative positivity",
+      "passed": true,
+      "minimum": 0.10132213149384629
+    },
+    {
+      "name": "b0.3 retain full covariance comparison",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "b0.3 T-0.3 all fifteen covariance blocks",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "b0.3 T-0.3 full inverse character comparison",
+      "passed": true,
+      "error": 9.71445146547012e-17
+    },
+    {
+      "name": "b0.3 T-0.3 all inverse products",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "b0.3 T-0.3 physical cycle block",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "b0.3 T0.3 all fifteen covariance blocks",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "b0.3 T0.3 full inverse character comparison",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "b0.3 T0.3 all inverse products",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "b0.3 T0.3 physical cycle block",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "b0.3 actual-form covariance floor",
+      "passed": true,
+      "minimum": 0.7879627946526686
+    },
+    {
+      "name": "b0.3 conditional moment derivative",
+      "passed": true,
+      "minimum": 0.1969904914592868
+    },
+    {
+      "name": "b0.3 full centered source",
+      "passed": true,
+      "error": 4.977610290363577e-17
+    },
+    {
+      "name": "b0.3 retained conditional Galerkin spectrum",
+      "passed": true,
+      "minimum": 2.6015523237628977
+    },
+    {
+      "name": "b0.3 z0.1 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.0010040090969928844
+    },
+    {
+      "name": "b0.3 z0.1 gradient-source direction",
+      "passed": true,
+      "minimum": 1.9221735237563013e-05
+    },
+    {
+      "name": "b0.3 z0.1 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 0.028064780823689916
+    },
+    {
+      "name": "b0.3 z0.1 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 0.016599555388891768
+    },
+    {
+      "name": "b0.3 z0.1 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 0.002069491649001258
+    },
+    {
+      "name": "b0.3 z0.1 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.009973807430187082
+    },
+    {
+      "name": "b0.3 z0.1 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.007164361527583724
+    },
+    {
+      "name": "b0.3 z0.7 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.0009188971642251064
+    },
+    {
+      "name": "b0.3 z0.7 gradient-source direction",
+      "passed": true,
+      "minimum": 1.7557251427409984e-05
+    },
+    {
+      "name": "b0.3 z0.7 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 0.02566663785175439
+    },
+    {
+      "name": "b0.3 z0.7 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 0.015181066259942517
+    },
+    {
+      "name": "b0.3 z0.7 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 0.0018926453469698754
+    },
+    {
+      "name": "b0.3 z0.7 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.009121514220295179
+    },
+    {
+      "name": "b0.3 z0.7 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.006552145979331213
+    },
+    {
+      "name": "b0.3 z2.0 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.0007764855969189488
+    },
+    {
+      "name": "b0.3 z2.0 gradient-source direction",
+      "passed": true,
+      "minimum": 1.477802981025689e-05
+    },
+    {
+      "name": "b0.3 z2.0 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 0.021657119469530316
+    },
+    {
+      "name": "b0.3 z2.0 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 0.01280946560154847
+    },
+    {
+      "name": "b0.3 z2.0 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 0.0015969726226001198
+    },
+    {
+      "name": "b0.3 z2.0 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.007696547482158398
+    },
+    {
+      "name": "b0.3 z2.0 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.00552856979996643
+    },
+    {
+      "name": "b3.0 full finite eigenvector residual",
+      "passed": true,
+      "error": 1.6653345369377348e-14
+    },
+    {
+      "name": "b3.0 retained scalar coupling",
+      "passed": true,
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "b3.0 original ground norm",
+      "passed": true,
+      "error": 7.327471962526033e-15
+    },
+    {
+      "name": "b3.0 two Galerkin energies",
+      "passed": true,
+      "error": 9.325873406851315e-14
+    },
+    {
+      "name": "b3.0 full omitted Jacobi residual",
+      "passed": true,
+      "error": 7.523293408651462e-52
+    },
+    {
+      "name": "b3.0 Galerkin ground positivity",
+      "passed": true,
+      "minimum": 0.04592354302879725
+    },
+    {
+      "name": "b3.0 Galerkin derivative positivity",
+      "passed": true,
+      "minimum": 0.0805478753712468
+    },
+    {
+      "name": "b3.0 retain full covariance comparison",
+      "passed": true,
+      "error": 4.996003610813204e-16
+    },
+    {
+      "name": "b3.0 T-0.3 all fifteen covariance blocks",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "b3.0 T-0.3 full inverse character comparison",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "b3.0 T-0.3 all inverse products",
+      "passed": true,
+      "error": 1.3250560136073047e-16
+    },
+    {
+      "name": "b3.0 T-0.3 physical cycle block",
+      "passed": true,
+      "error": 1.734723475976807e-17
+    },
+    {
+      "name": "b3.0 T0.3 all fifteen covariance blocks",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "b3.0 T0.3 full inverse character comparison",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "b3.0 T0.3 all inverse products",
+      "passed": true,
+      "error": 1.3250560136073047e-16
+    },
+    {
+      "name": "b3.0 T0.3 physical cycle block",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "b3.0 actual-form covariance floor",
+      "passed": true,
+      "minimum": 0.0010148347353020662
+    },
+    {
+      "name": "b3.0 conditional moment derivative",
+      "passed": true,
+      "minimum": 0.0025369129933369883
+    },
+    {
+      "name": "b3.0 full centered source",
+      "passed": true,
+      "error": 2.8813646821691623e-15
+    },
+    {
+      "name": "b3.0 retained conditional Galerkin spectrum",
+      "passed": true,
+      "minimum": 8.869753615325013
+    },
+    {
+      "name": "b3.0 z0.1 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.0015834767803514843
+    },
+    {
+      "name": "b3.0 z0.1 gradient-source direction",
+      "passed": true,
+      "minimum": 6.973077755424047e-05
+    },
+    {
+      "name": "b3.0 z0.1 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 0.004517310962241391
+    },
+    {
+      "name": "b3.0 z0.1 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 0.0005589506240522326
+    },
+    {
+      "name": "b3.0 z0.1 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 4.4121030719998667e-07
+    },
+    {
+      "name": "b3.0 z0.1 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.00041130277357463995
+    },
+    {
+      "name": "b3.0 z0.1 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.00037046924460723356
+    },
+    {
+      "name": "b3.0 z0.7 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.0014629294801417067
+    },
+    {
+      "name": "b3.0 z0.7 gradient-source direction",
+      "passed": true,
+      "minimum": 6.367989531486071e-05
+    },
+    {
+      "name": "b3.0 z0.7 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 0.004152646823209983
+    },
+    {
+      "name": "b3.0 z0.7 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 0.0005134294570429161
+    },
+    {
+      "name": "b3.0 z0.7 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 4.0523925488629916e-07
+    },
+    {
+      "name": "b3.0 z0.7 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.0003779157976519509
+    },
+    {
+      "name": "b3.0 z0.7 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.000340404399194115
+    },
+    {
+      "name": "b3.0 z2.0 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.0012588555801350786
+    },
+    {
+      "name": "b3.0 z2.0 gradient-source direction",
+      "passed": true,
+      "minimum": 5.356101448944857e-05
+    },
+    {
+      "name": "b3.0 z2.0 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 0.003537624449837213
+    },
+    {
+      "name": "b3.0 z2.0 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 0.0004367109618727931
+    },
+    {
+      "name": "b3.0 z2.0 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 3.4462161214378574e-07
+    },
+    {
+      "name": "b3.0 z2.0 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.0003216320813616135
+    },
+    {
+      "name": "b3.0 z2.0 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 0.0002897200697361463
+    },
+    {
+      "name": "b30.0 full finite eigenvector residual",
+      "passed": true,
+      "error": 8.348877145181177e-14
+    },
+    {
+      "name": "b30.0 retained scalar coupling",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "b30.0 original ground norm",
+      "passed": true,
+      "error": 5.1514348342607263e-14
+    },
+    {
+      "name": "b30.0 two Galerkin energies",
+      "passed": true,
+      "error": 1.4921397450962104e-13
+    },
+    {
+      "name": "b30.0 full omitted Jacobi residual",
+      "passed": true,
+      "error": 2.675698941253156e-48
+    },
+    {
+      "name": "b30.0 Galerkin ground positivity",
+      "passed": true,
+      "minimum": 2.191694936390972e-08
+    },
+    {
+      "name": "b30.0 Galerkin derivative positivity",
+      "passed": true,
+      "minimum": 4.849144440630435e-07
+    },
+    {
+      "name": "b30.0 retain full covariance comparison",
+      "passed": true,
+      "error": 4.718822865259422e-16
+    },
+    {
+      "name": "b30.0 T-0.3 all fifteen covariance blocks",
+      "passed": true,
+      "error": 4.2327252813834093e-16
+    },
+    {
+      "name": "b30.0 T-0.3 full inverse character comparison",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "b30.0 T-0.3 all inverse products",
+      "passed": true,
+      "error": 1.176836406102666e-14
+    },
+    {
+      "name": "b30.0 T-0.3 physical cycle block",
+      "passed": true,
+      "error": 4.2327252813834093e-16
+    },
+    {
+      "name": "b30.0 T0.3 all fifteen covariance blocks",
+      "passed": true,
+      "error": 4.2327252813834093e-16
+    },
+    {
+      "name": "b30.0 T0.3 full inverse character comparison",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "b30.0 T0.3 all inverse products",
+      "passed": true,
+      "error": 1.176836406102666e-14
+    },
+    {
+      "name": "b30.0 T0.3 physical cycle block",
+      "passed": true,
+      "error": 4.2327252813834093e-16
+    },
+    {
+      "name": "b30.0 actual-form covariance floor",
+      "passed": true,
+      "minimum": 3.725673682787917e-17
+    },
+    {
+      "name": "b30.0 conditional moment derivative",
+      "passed": true,
+      "minimum": 9.301981823240544e-16
+    },
+    {
+      "name": "b30.0 full centered source",
+      "passed": true,
+      "error": 9.238485229441326e-15
+    },
+    {
+      "name": "b30.0 retained conditional Galerkin spectrum",
+      "passed": true,
+      "minimum": 78.47182094627212
+    },
+    {
+      "name": "b30.0 z0.1 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.000431659880839789
+    },
+    {
+      "name": "b30.0 z0.1 gradient-source direction",
+      "passed": true,
+      "minimum": 6.868693374496981e-05
+    },
+    {
+      "name": "b30.0 z0.1 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 2.172463669734442e-08
+    },
+    {
+      "name": "b30.0 z0.1 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 1.2445143496773174e-15
+    },
+    {
+      "name": "b30.0 z0.1 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 6.736110625325396e-43
+    },
+    {
+      "name": "b30.0 z0.1 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 1.9874736055866963e-10
+    },
+    {
+      "name": "b30.0 z0.1 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 1.9650537950462994e-10
+    },
+    {
+      "name": "b30.0 z0.7 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.0004172038368715425
+    },
+    {
+      "name": "b30.0 z0.7 gradient-source direction",
+      "passed": true,
+      "minimum": 6.660679230503371e-05
+    },
+    {
+      "name": "b30.0 z0.7 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 2.0995367812741525e-08
+    },
+    {
+      "name": "b30.0 z0.7 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 1.2027809500981016e-15
+    },
+    {
+      "name": "b30.0 z0.7 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 6.510225426800203e-43
+    },
+    {
+      "name": "b30.0 z0.7 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 1.9207593938194851e-10
+    },
+    {
+      "name": "b30.0 z0.7 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 1.8990920153288044e-10
+    },
+    {
+      "name": "b30.0 z2.0 marginal derivative direction",
+      "passed": true,
+      "minimum": 0.00038890832116126895
+    },
+    {
+      "name": "b30.0 z2.0 gradient-source direction",
+      "passed": true,
+      "minimum": 6.251019734233545e-05
+    },
+    {
+      "name": "b30.0 z2.0 t0.0 mixed sign",
+      "passed": true,
+      "minimum": 1.956761468412288e-08
+    },
+    {
+      "name": "b30.0 z2.0 t0.2 mixed sign",
+      "passed": true,
+      "minimum": 1.1210575412078247e-15
+    },
+    {
+      "name": "b30.0 z2.0 t1.0 mixed sign",
+      "passed": true,
+      "minimum": 6.067890763208705e-43
+    },
+    {
+      "name": "b30.0 z2.0 sigma0.2 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 1.7901375900251656e-10
+    },
+    {
+      "name": "b30.0 z2.0 sigma1.3 full Galerkin inverse sign",
+      "passed": true,
+      "minimum": 1.7699434919731018e-10
+    }
+  ]
+}

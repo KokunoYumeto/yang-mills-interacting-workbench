@@ -806,3 +806,12 @@ MTO11 and MTO16 retain the exact comparison with all original Wilson-potential t
 \end{aligned}
 \]
 The entire last term is bounded by the explicit \(\mathcal B_{j,z}\mathcal Y_j/[\sigma^2(\sigma+\delta_j)]\). The original time-domain remainder and source-dependent versions are also retained. The joint signed moments, full Schur solution, limiting annular mass and smooth global no-gap construction remain active.
+
+## SZ-20261014-011 — Strict actual one-plaquette Wilson mixed orientation
+
+[OPC1–OPC8](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_ONE_PLAQUETTE_ORIENTATION.md) prove a strict mixed sign for the actual four-link one-plaquette Wilson ground state. The original trace kinetic operator, full16sign probabilities and all15character covariance blocks are retained. Differentiating the actual ground equation gives an exact scalar receiving map to the unit sphere S5; its positive source proves ground monotonicity. The full physical odd coefficient domain is the hemisphere Dirichlet domain, yielding
+\[
+\langle Bf_{z,\varphi}^0,e^{-tD}y_\varphi\rangle<0
+\quad(z>0,\ t\ge0,\ \varphi\ne0).
+\]
+The exact residual source and entire restricted-resolvent cross terms have the same strict sign. This theorem concerns the separate one-plaquette Wilson model. Shared-face coupling, the original full open box, its full Schur inverse and signed spectral window, and the smooth global no-gap construction remain active.
