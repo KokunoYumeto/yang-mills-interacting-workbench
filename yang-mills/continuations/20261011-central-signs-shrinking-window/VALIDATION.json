@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T16:24:26.776364+00:00",
+  "checked_utc": "2026-10-14T16:35:22.486704+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -631,8 +631,8 @@
     },
     {
       "source": "CENTRAL_KINETIC_SOURCE.md",
-      "sha256": "82fa27c0aca665898d59fa70f9aa4614ef88c03e1ed5e807e9bdf2846bcbb74f",
-      "complete_math_blocks": 301,
+      "sha256": "aa37c53f863ef242c1391b9f98a27f40a9c2a03f8620cb0f790f5e5cbc1e22f1",
+      "complete_math_blocks": 304,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -661,20 +661,26 @@
     },
     {
       "source": "ACTUAL_RESOLVENT_HESSIAN.md",
-      "sha256": "d1a2c1bf07ef160e8cce100db869792c5a6bfa9b8587303205755e93216f1cd5",
-      "complete_math_blocks": 235,
+      "sha256": "a8ca91d4720bf8c2ee3f798fb4488542341057cebedab905fa35fc4d7aa58e66",
+      "complete_math_blocks": 238,
       "split_to_aligned_wrappers": 1
     },
     {
       "source": "SIGNED_RESIDUAL_RESPONSE.md",
-      "sha256": "2ae6b538c4491e9bf604c9fda91d9fc868c423faa18bfdeda293e6628997cac1",
-      "complete_math_blocks": 211,
+      "sha256": "6a36e5e1fd2e6f8d23b15cd25f6ce56afc95b4682e9cc911fbbc13fa23ffa3d9",
+      "complete_math_blocks": 214,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_MIXED_TIME_EVOLUTION.md",
-      "sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
-      "complete_math_blocks": 262,
+      "sha256": "cebb29e920767cfcca64b93ca10b93a70249f9e722a7be17bbf01113867ea60e",
+      "complete_math_blocks": 265,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "MIXED_SOURCE_OPERATOR_ACTION.md",
+      "sha256": "1409dfe870f35af3153aa2f1a282bbe7d1143aca32b406f1ab80f2da6851f036",
+      "complete_math_blocks": 108,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1352,6 +1358,11 @@
     {
       "file": "ACTUAL_CHARACTER_MEMORY_MAP.png",
       "sha256": "343b57af3012e3427e2e2133faba1ba400caa3d01ce777785d4aeef38a7129ff",
+      "visually_inspected": true
+    },
+    {
+      "file": "MIXED_SOURCES_AND_ENTIRE_TAIL.png",
+      "sha256": "b4f326194f770413d0b78fea284f6c1af15bce4b2b4e30d295ab68082a6a241e",
       "visually_inspected": true
     }
   ],
@@ -9830,6 +9841,119 @@
       ],
       "figure_inspected": "ACTUAL_CHARACTER_MEMORY_MAP.png",
       "findings": "All eleven new proof pages and all four receiving notes with adjacent pages inspected. Full character formulas, curvature, operator, ground-equation comparison, face source, remainder and figure legible. No new clipping, overlapping equation, glyph loss or overflow.59 inherited overflow warnings and one inherited glyph warning unchanged."
+    }
+  },
+  "mixed_source_review": {
+    "utc": "2026-10-14T16:33:20.399425+00:00",
+    "coverage": "Complete MSA1–MSA6: full bilinear weighted Bochner calculation and original DBf commutator, full Dy face source, all second-derivative and original potential-incidence bounds, evaluated source norms, complete actual mixed-time remainder and entire resolvent cross tail.",
+    "strengthening": "Both operator norms required in MTO20 now have evaluated original-state upper functions. The actual resolvent equation and complete differentiated ground equation evaluate the gradient source without an assumed third derivative. All original potential, Ricci, Hessian and projection terms remain.",
+    "corrections": "No published claim withdrawn. Constructed four-link ground fixtures and actual Wilson-potential derivative diagnostics are separately identified. The tail bound does not set a mixed sign or a continuum conclusion.",
+    "limitations": "Actual joint oriented source moments, the full Schur solution at the three original shifts, limiting annular mass, reconstruction and smooth global no-gap construction remain active.",
+    "diagnostics": [
+      {
+        "all_passed": true,
+        "checks": 305,
+        "scope": "Full radius-two four-link constructed-ground commutator and original centered face source, including the complete 12-dimensional Hessian/Ricci contractions; full complex operator time/resolvent tails; every face, link and boundary incidence in the original j=1 open box. The continuous ground potential is explicitly constructed, not the Wilson vacuum. Original Wilson potential derivatives are checked separately without claiming a sampled ground state."
+      }
+    ],
+    "diagnostic_count": 305,
+    "figures_inspected": [
+      "MIXED_SOURCES_AND_ENTIRE_TAIL.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "MIXED_SOURCE_OPERATOR_ACTION.md",
+        "prefix": "MSA",
+        "tags": 6,
+        "owner_sha256": "1409dfe870f35af3153aa2f1a282bbe7d1143aca32b406f1ab80f2da6851f036",
+        "public_sha256": "1409dfe870f35af3153aa2f1a282bbe7d1143aca32b406f1ab80f2da6851f036",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T16:35:22.486704+00:00",
+      "tex_sha256": "b1fbde6de1e09d7dbef9bd23a0817618e95555b496ea48a8fce703b779e1d65e",
+      "pdf_sha256": "9203f5dc644b8945e762ab8f36f88031632b558b13b6e90a08c4c1917bee8812",
+      "pages": 1247,
+      "source_files": 113,
+      "math_blocks": 26430,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T16:35:22.417466+00:00",
+        "complete": true,
+        "pages": 1247,
+        "rendered_pages": [
+          1166,
+          1167,
+          1168,
+          1218,
+          1219,
+          1220,
+          1229,
+          1230,
+          1231,
+          1241,
+          1242,
+          1243,
+          1244,
+          1245,
+          1246,
+          1247
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "figure_inspected": "MIXED_SOURCES_AND_ENTIRE_TAIL.png",
+        "findings": "All five new proof/figure pages and all four receiving notes with adjacent pages inspected. Original commutator, source action, every norm constant and full remainder/tail legible. No new clipping, overlapping equation, glyph loss or overflow.59 inherited overflow warnings and one inherited glyph warning unchanged."
+      }
+    }
+  },
+  "mixed_source_compile": {
+    "utc": "2026-10-14T16:35:22.486704+00:00",
+    "tex_sha256": "b1fbde6de1e09d7dbef9bd23a0817618e95555b496ea48a8fce703b779e1d65e",
+    "pdf_sha256": "9203f5dc644b8945e762ab8f36f88031632b558b13b6e90a08c4c1917bee8812",
+    "pages": 1247,
+    "source_files": 113,
+    "math_blocks": 26430,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T16:35:22.417466+00:00",
+      "complete": true,
+      "pages": 1247,
+      "rendered_pages": [
+        1166,
+        1167,
+        1168,
+        1218,
+        1219,
+        1220,
+        1229,
+        1230,
+        1231,
+        1241,
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1247
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "figure_inspected": "MIXED_SOURCES_AND_ENTIRE_TAIL.png",
+      "findings": "All five new proof/figure pages and all four receiving notes with adjacent pages inspected. Original commutator, source action, every norm constant and full remainder/tail legible. No new clipping, overlapping equation, glyph loss or overflow.59 inherited overflow warnings and one inherited glyph warning unchanged."
     }
   }
 }

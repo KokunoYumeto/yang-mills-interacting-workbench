@@ -489,3 +489,16 @@ The accompanying scripts perform 629 diagnostic checks: 266 for the exact scalar
 \langle f_z^0,\bar v_z\rangle_A=\mu[\overline{f_z^0}Z_z].
 \]
 SDR10 gives an exact finite example with positive resolvent gain at all shifts and negative signed correction. SDR11 proves that the independent norm lower function is eventually negative on the original path. SDR12–SDR13 retain the actual original ground diffusion and conditional covariance in the mixed overlap, supplying the next calculation without replacing the state. The actual joint overlap, limiting annular mass and smooth global no-gap state remain active.
+
+## Both original mixed sources and the entire inverse tail
+
+[MSA1–MSA6](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/MIXED_SOURCE_OPERATOR_ACTION.md) evaluate the full complementary operator on the actual gradient and face sources. The original ground equation and actual resolvent equation give the complete commutator with all potential, Hessian and Ricci terms. Both operator norms in MTO20 now have explicit bounds from the original state estimates, retaining every lattice count, coupling and source coefficient. For \(b_z=Bf_z^0\), the full cross term is
+\[
+\begin{aligned}
+\langle b_z,(D+\sigma)^{-1}y\rangle
+={}&\frac{\langle b_z,y\rangle}{\sigma}
+-\frac{\langle b_z,Dy\rangle}{\sigma^2}\\
+&+\frac{\langle Db_z,(D+\sigma)^{-1}Dy\rangle}{\sigma^2}.
+\end{aligned}
+\]
+The entire last term is bounded by the explicit \(\mathcal B_{j,z}\mathcal Y_j/[\sigma^2(\sigma+\delta_j)]\). The original time-domain remainder and source-dependent versions are also retained. The joint signed moments, full Schur solution, limiting annular mass and smooth global no-gap construction remain active.

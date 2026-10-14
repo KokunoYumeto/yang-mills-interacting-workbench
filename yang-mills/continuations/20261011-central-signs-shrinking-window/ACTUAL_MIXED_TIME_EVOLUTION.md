@@ -432,3 +432,16 @@ Smoothness and the proved domain maps allow two derivatives of this actual semig
 The figure displays exact maps of the original conditional state, rather than a low-dimensional projection of the full sphere. Its tangent fiber is the ambient conditional fiber; physical sections satisfy every additional sign and gauge law proved in MTO12. MTO8 proves the full frame and inverse; MTO9–MTO10 retain the normal derivative and curvature. MTO11–MTO18 prove both complete energy formulas and the original ground-equation comparison, including every Wilson-potential term. MTO14–MTO20 supply the actual sources and time-memory maps. Reproducible figure: [figure_mixed_time.py](figure_mixed_time.py). The inherited center-multiplication provenance is L. Li and Y. Meurice, [arXiv:hep-lat/0410029v2](https://arxiv.org/abs/hep-lat/0410029v2), Sections II–IV and Appendix, through the retained CS/CK author-source record. No new external source reading or novelty claim is made.
 
 The accompanying diagnostics contain 235 full complex-matrix time, remainder and Laplace-tail checks, and 190 all-character geometry and differential-operator checks. The latter include a continuous gauge-invariant four-link radius-two fixture with all sixteen signs, all fifteen nonempty characters, the original trace Casimir and Haar density, and its entire constructed ground potential. That fixture is explicitly different from the Wilson ground state. Separate algebra checks retain the complete Wilson potential. These diagnostics check the formulas; the proofs above establish them for the actual original state. The joint mixed correlation at the three original shifts, its limiting spectral mass, continuum reconstruction and smooth global no-gap state remain the continuing calculation.
+
+## Both original mixed sources and the entire inverse tail
+
+[MSA1–MSA6](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/MIXED_SOURCE_OPERATOR_ACTION.md) evaluate the full complementary operator on the actual gradient and face sources. The original ground equation and actual resolvent equation give the complete commutator with all potential, Hessian and Ricci terms. Both operator norms in MTO20 now have explicit bounds from the original state estimates, retaining every lattice count, coupling and source coefficient. For \(b_z=Bf_z^0\), the full cross term is
+\[
+\begin{aligned}
+\langle b_z,(D+\sigma)^{-1}y\rangle
+={}&\frac{\langle b_z,y\rangle}{\sigma}
+-\frac{\langle b_z,Dy\rangle}{\sigma^2}\\
+&+\frac{\langle Db_z,(D+\sigma)^{-1}Dy\rangle}{\sigma^2}.
+\end{aligned}
+\]
+The entire last term is bounded by the explicit \(\mathcal B_{j,z}\mathcal Y_j/[\sigma^2(\sigma+\delta_j)]\). The original time-domain remainder and source-dependent versions are also retained. The joint signed moments, full Schur solution, limiting annular mass and smooth global no-gap construction remain active.
