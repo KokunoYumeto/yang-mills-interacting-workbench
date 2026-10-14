@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T14:57:35.148061+00:00",
+  "checked_utc": "2026-10-14T15:12:20.037171+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -235,8 +235,8 @@
     },
     {
       "source": "HESSIAN_RECEIVING_REVIEW.md",
-      "sha256": "2a49728befcce06ee881bf10d877d73e609053b3fbabeb87db1b1c6f3a1bf9c4",
-      "complete_math_blocks": 232,
+      "sha256": "51cb00fd48a029fc03c7393caddcb2b2208c44ffb35ef80d16d1d9d021ddc231",
+      "complete_math_blocks": 233,
       "split_to_aligned_wrappers": 8
     },
     {
@@ -253,8 +253,8 @@
     },
     {
       "source": "POTENTIAL_VARIANCE_IDENTITIES.md",
-      "sha256": "86415c6ba3583e2b7a13e3ef3a1e6efbcf654532877968f986c134f5b047b941",
-      "complete_math_blocks": 168,
+      "sha256": "12bb01acfffa6c981a4da768a1db6dfe9e2ce801cf007bc3882cdc5f61f21ddb",
+      "complete_math_blocks": 169,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -631,27 +631,33 @@
     },
     {
       "source": "CENTRAL_KINETIC_SOURCE.md",
-      "sha256": "4e25cd36ea7e4a5599ca53af02d9cedcbbadb1e4c00ce1351f4e40e301707254",
-      "complete_math_blocks": 297,
+      "sha256": "9fd0d8030671ccfc7c897e383657670e8d409b73726f077068e8d3fc1f9e6f6c",
+      "complete_math_blocks": 298,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CENTRAL_FLUCTUATION_ENERGY.md",
-      "sha256": "ecda3d0a4d1a20ea62f5bf609344c1836a8fc92a2df96d6bcb0785f3f01787ee",
-      "complete_math_blocks": 190,
+      "sha256": "215e79a2c43fb9c62cc5167f8d4cd7678ba418b20f6b37fed997cbf1d14b295d",
+      "complete_math_blocks": 191,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
-      "sha256": "6c5d7e4a054d6b18d76d1f289a6310c5b332c28e301c80d25e4ab7fd0bbc93d2",
-      "complete_math_blocks": 156,
+      "sha256": "d23a95901653df7e199e4fa1b62901eb2f1e1849f5eb0ee51b1d6ca5fdf28b18",
+      "complete_math_blocks": 157,
       "split_to_aligned_wrappers": 1
     },
     {
       "source": "CENTRAL_HESSIAN_FACE_MAP.md",
-      "sha256": "d9e3b8eb4c06c112a56368f0560463a85d670217d05f2e0942ad559a881f133e",
-      "complete_math_blocks": 216,
+      "sha256": "beab03a3c66b34d7c6e61e24980d6f1652e167e094e807752bbd60c97de09a10",
+      "complete_math_blocks": 217,
       "split_to_aligned_wrappers": 1
+    },
+    {
+      "source": "ACTUAL_HESSIAN_BOUNDS.md",
+      "sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+      "complete_math_blocks": 139,
+      "split_to_aligned_wrappers": 4
     }
   ],
   "figures": [
@@ -1303,6 +1309,11 @@
     {
       "file": "ACTUAL_CENTRAL_HESSIAN_VARIANCE.png",
       "sha256": "935ecb88f43193444d7fc6819a4e35eedf2789d6311605b4879d52a0f7e9319a",
+      "visually_inspected": true
+    },
+    {
+      "file": "ACTUAL_HESSIAN_BOUNDS.png",
+      "sha256": "893d27bfe6127fd061ddd5fba31dd30b99961ff9ddac44fb51f783540b4c7c88",
       "visually_inspected": true
     }
   ],
@@ -9173,6 +9184,174 @@
         "ACTUAL_CENTRAL_HESSIAN_VARIANCE.png"
       ],
       "findings": "All 25 rendered proof, receiving-note and adjacent pages inspected. Equations, original factors, figure labels and margins legible. No new overflow or missing glyph. Inherited warnings unchanged."
+    }
+  },
+  "hessian_bounds_review": {
+    "utc": "2026-10-14T15:10:33.424460+00:00",
+    "coverage": "Complete HCB1–HCB10: original tensor minimum principle, actual translated-state matrices and traces, full nonnegative matrix remainder, sharp trace ceiling, exact traceless defect, complete face projection, complex source contraction, global positive squares and both localization derivatives, every original regulator coefficient.",
+    "strengthening": "Supplies actual upper estimates for the CHM conditional Hessians and the original FPR8 source contraction. Converts the existing PVI7 identity into a complete actual conditional Hessian mean/variance decomposition, with exact localized derivative costs.",
+    "corrections": "No change to published proof statements. PVI7 was found in the corpus and credited as an existing input. The original score term in the energy form of the global identity is positive and remains explicit.",
+    "limitations": "The actual resolvent Hessian, signed shrinking-window spectral allocation, five Green moments/J5 and interacting continuum reconstruction remain active. Upper-bound growth is not asserted asymptotic growth of actual quantities.",
+    "diagnostics": {
+      "all_passed": true,
+      "checks": 365,
+      "scope": "Noncommuting positive-matrix and full covariance fixtures, including sharp trace equality; continuous original-radius-two four-link Haar integrals with explicitly constructed potential and every localized derivative term; exact original regulator counts and retained energy constants. None is a sampled Wilson vacuum. Complete written proofs establish original-state claims."
+    },
+    "figures_inspected": [
+      "ACTUAL_HESSIAN_BOUNDS.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_HESSIAN_BOUNDS.md",
+        "prefix": "HCB",
+        "tags": 10,
+        "owner_sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+        "public_sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T15:12:20.037171+00:00",
+      "tex_sha256": "c53760f4963cb6eb3bff249e355b584f1ff83add66069600ce99dc06bc9b141f",
+      "pdf_sha256": "022affd6a839591fe5e9c951bff3368decee7cc16875bbb23c902c770fa34bea",
+      "pages": 1193,
+      "source_files": 109,
+      "math_blocks": 25588,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T15:12:19.979146+00:00",
+        "complete": true,
+        "pages": 1193,
+        "rendered_pages": [
+          396,
+          397,
+          398,
+          426,
+          427,
+          428,
+          1158,
+          1159,
+          1160,
+          1168,
+          1169,
+          1170,
+          1176,
+          1177,
+          1178,
+          1185,
+          1186,
+          1187,
+          1188,
+          1189,
+          1190,
+          1191,
+          1192,
+          1193
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "new_proof_pages": [
+          1187,
+          1188,
+          1189,
+          1190,
+          1191,
+          1192,
+          1193
+        ],
+        "changed_receiving_notes": [
+          397,
+          427,
+          1159,
+          1169,
+          1177,
+          1186
+        ],
+        "figures_inspected": [
+          "ACTUAL_HESSIAN_BOUNDS.png"
+        ],
+        "findings": "All 24 rendered proof, receiving-note and adjacent pages inspected. Original factors, positive remainders, localization signs, equations, labels and margins legible. No new overflow or missing glyph; inherited warnings unchanged."
+      }
+    }
+  },
+  "hessian_bounds_compile": {
+    "utc": "2026-10-14T15:12:20.037171+00:00",
+    "tex_sha256": "c53760f4963cb6eb3bff249e355b584f1ff83add66069600ce99dc06bc9b141f",
+    "pdf_sha256": "022affd6a839591fe5e9c951bff3368decee7cc16875bbb23c902c770fa34bea",
+    "pages": 1193,
+    "source_files": 109,
+    "math_blocks": 25588,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T15:12:19.979146+00:00",
+      "complete": true,
+      "pages": 1193,
+      "rendered_pages": [
+        396,
+        397,
+        398,
+        426,
+        427,
+        428,
+        1158,
+        1159,
+        1160,
+        1168,
+        1169,
+        1170,
+        1176,
+        1177,
+        1178,
+        1185,
+        1186,
+        1187,
+        1188,
+        1189,
+        1190,
+        1191,
+        1192,
+        1193
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "new_proof_pages": [
+        1187,
+        1188,
+        1189,
+        1190,
+        1191,
+        1192,
+        1193
+      ],
+      "changed_receiving_notes": [
+        397,
+        427,
+        1159,
+        1169,
+        1177,
+        1186
+      ],
+      "figures_inspected": [
+        "ACTUAL_HESSIAN_BOUNDS.png"
+      ],
+      "findings": "All 24 rendered proof, receiving-note and adjacent pages inspected. Original factors, positive remainders, localization signs, equations, labels and margins legible. No new overflow or missing glyph; inherited warnings unchanged."
     }
   }
 }

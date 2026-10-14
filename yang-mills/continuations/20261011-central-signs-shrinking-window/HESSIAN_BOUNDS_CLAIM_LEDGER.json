@@ -1,0 +1,28 @@
+[
+  {
+    "id": "HCB-actual-upper-bound",
+    "original": "CHM7–CHM13 give exact actual matrices, curvature and fourth-derivative equations without an evaluated upper matrix bound.",
+    "change": "HCB1–HCB7 apply original HVR semiconvexity, retain the full energy and positive remainder, and bound actual conditional matrices and the full original complex source contraction.",
+    "affects": [
+      "CHM7–CHM13",
+      "FPR8",
+      "CFE13"
+    ],
+    "proof": "ACTUAL_HESSIAN_BOUNDS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in CHM,CK,CFE,FPR,HVR,PVI, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "HCB-global-conditional-squares",
+    "original": "PVI7 already proves the integrated original log-Hessian identity.",
+    "change": "HCB8–HCB10 prove its complete conditional mean/variance decomposition, both exact localization derivative costs and explicit original-path bounds.",
+    "affects": [
+      "PVI7",
+      "CK4",
+      "CHM8"
+    ],
+    "proof": "ACTUAL_HESSIAN_BOUNDS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in CHM,CK,CFE,FPR,HVR,PVI, programme sources and cumulative manuscript."
+  }
+]

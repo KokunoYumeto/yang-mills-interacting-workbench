@@ -344,3 +344,12 @@ This is the exact \(j=1\), \(o=(0,0,0)\) spatial box in the original coordinates
 ![The actual original conditional kinetic Hessian and its complete matrix variance](ACTUAL_CENTRAL_HESSIAN_VARIANCE.png)
 
 The full conditional Hessian covariance determines the positive matrix variance in CHM7–CHM9. Every matrix product keeps its order, and every inverse conditional probability is retained through \(\mathcal C^{-1}\). CHM10–CHM13 prove its exact original ground and resolvent receiving equations. Neither diagram is a sampled vacuum or an assigned continuum rate. Reproducible source: [figure_central_hessian.py](figure_central_hessian.py). The inherited human center-multiplication provenance remains L. Li and Y. Meurice, arXiv:hep-lat/0410029v2, Sections II–IV and Appendix, through the author-source records in CK and CS.
+
+## Actual conditional Hessian bounds and complete response terms
+
+[HCB1–HCB10](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_HESSIAN_BOUNDS.md) apply the original global log-Hessian bound to every actual central translation. The resulting matrix and trace bounds retain all gauge directions, the full original potential, vacuum energy and a nonnegative remainder. The exact traceless defect strengthens CHM9, and the full face-covariance projection bounds the original FPR8 source contraction without assigning its remaining resolvent Hessian. PVI7's existing weighted identity gives the complete global conditional Hessian mean and variance squares, bounded by
+\[
+\frac{3b_jM_j}{\kappa_*}
+=\frac{720000j^{14}+360000j^{10}}{\kappa_*^2}.
+\]
+Both localization derivatives are proved and retained. Every displayed growth rate belongs to an upper-bound function; the actual signed shrinking-window mass and smooth interacting no-gap state remain the continuing calculation.

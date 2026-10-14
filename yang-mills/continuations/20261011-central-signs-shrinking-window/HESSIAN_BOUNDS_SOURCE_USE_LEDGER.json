@@ -1,0 +1,172 @@
+[
+  {
+    "source_id": "programme:HCB-20261014",
+    "proofs": [
+      {
+        "source": "ACTUAL_HESSIAN_BOUNDS.md",
+        "prefix": "HCB",
+        "tags": 10,
+        "owner_sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+        "public_sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "CENTRAL_HESSIAN_FACE_MAP.md",
+        "commit": "db938fb3be2c57ac841d71a505ae9313e07ab33d",
+        "sha256": "d9e3b8eb4c06c112a56368f0560463a85d670217d05f2e0942ad559a881f133e",
+        "actual_reading": "Complete CHM1–CHM13 owner derivation and current full reread."
+      },
+      {
+        "source": "HESSIAN_RECEIVING_REVIEW.md",
+        "commit": "db938fb3be2c57ac841d71a505ae9313e07ab33d",
+        "sha256": "2a49728befcce06ee881bf10d877d73e609053b3fbabeb87db1b1c6f3a1bf9c4",
+        "actual_reading": "Current bounded actual read HVR1–HVR15, complete original metric, tensor equation, minimum-principle bound and full Wilson potential Hessian. Later sections not reread."
+      },
+      {
+        "source": "POTENTIAL_VARIANCE_IDENTITIES.md",
+        "commit": "db938fb3be2c57ac841d71a505ae9313e07ab33d",
+        "sha256": "86415c6ba3583e2b7a13e3ef3a1e6efbcf654532877968f986c134f5b047b941",
+        "actual_reading": "Current actual read PVI1–PVI17; PVI7 already contains the integrated log-Hessian identity, so no new claim for that identity."
+      },
+      {
+        "source": "CENTRAL_KINETIC_SOURCE.md",
+        "commit": "db938fb3be2c57ac841d71a505ae9313e07ab33d",
+        "sha256": "4e25cd36ea7e4a5599ca53af02d9cedcbbadb1e4c00ce1351f4e40e301707254",
+        "actual_reading": "Prior complete CK1–CK24 owner read; current CK1–CK6 reread."
+      },
+      {
+        "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+        "commit": "db938fb3be2c57ac841d71a505ae9313e07ab33d",
+        "sha256": "ecda3d0a4d1a20ea62f5bf609344c1836a8fc92a2df96d6bcb0785f3f01787ee",
+        "actual_reading": "Prior complete CFE1–CFE14 owner read; current CFE1–CFE6 reread."
+      },
+      {
+        "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
+        "commit": "db938fb3be2c57ac841d71a505ae9313e07ab33d",
+        "sha256": "6c5d7e4a054d6b18d76d1f289a6310c5b332c28e301c80d25e4ab7fd0bbc93d2",
+        "actual_reading": "Prior complete FPR1–FPR8 owner derivation and review."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-14T15:10:33.424460+00:00",
+      "coverage": "Complete HCB1–HCB10: original tensor minimum principle, actual translated-state matrices and traces, full nonnegative matrix remainder, sharp trace ceiling, exact traceless defect, complete face projection, complex source contraction, global positive squares and both localization derivatives, every original regulator coefficient.",
+      "strengthening": "Supplies actual upper estimates for the CHM conditional Hessians and the original FPR8 source contraction. Converts the existing PVI7 identity into a complete actual conditional Hessian mean/variance decomposition, with exact localized derivative costs.",
+      "corrections": "No change to published proof statements. PVI7 was found in the corpus and credited as an existing input. The original score term in the energy form of the global identity is positive and remains explicit.",
+      "limitations": "The actual resolvent Hessian, signed shrinking-window spectral allocation, five Green moments/J5 and interacting continuum reconstruction remain active. Upper-bound growth is not asserted asymptotic growth of actual quantities.",
+      "diagnostics": {
+        "all_passed": true,
+        "checks": 365,
+        "scope": "Noncommuting positive-matrix and full covariance fixtures, including sharp trace equality; continuous original-radius-two four-link Haar integrals with explicitly constructed potential and every localized derivative term; exact original regulator counts and retained energy constants. None is a sampled Wilson vacuum. Complete written proofs establish original-state claims."
+      },
+      "figures_inspected": [
+        "ACTUAL_HESSIAN_BOUNDS.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "ACTUAL_HESSIAN_BOUNDS.md",
+          "prefix": "HCB",
+          "tags": 10,
+          "owner_sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+          "public_sha256": "857ca11dca529a0448f7bde8958d0bc1910488c491edda6e551abff6f296a30e",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T15:12:20.037171+00:00",
+        "tex_sha256": "c53760f4963cb6eb3bff249e355b584f1ff83add66069600ce99dc06bc9b141f",
+        "pdf_sha256": "022affd6a839591fe5e9c951bff3368decee7cc16875bbb23c902c770fa34bea",
+        "pages": 1193,
+        "source_files": 109,
+        "math_blocks": 25588,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T15:12:19.979146+00:00",
+          "complete": true,
+          "pages": 1193,
+          "rendered_pages": [
+            396,
+            397,
+            398,
+            426,
+            427,
+            428,
+            1158,
+            1159,
+            1160,
+            1168,
+            1169,
+            1170,
+            1176,
+            1177,
+            1178,
+            1185,
+            1186,
+            1187,
+            1188,
+            1189,
+            1190,
+            1191,
+            1192,
+            1193
+          ],
+          "contacts_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "new_proof_pages": [
+            1187,
+            1188,
+            1189,
+            1190,
+            1191,
+            1192,
+            1193
+          ],
+          "changed_receiving_notes": [
+            397,
+            427,
+            1159,
+            1169,
+            1177,
+            1186
+          ],
+          "figures_inspected": [
+            "ACTUAL_HESSIAN_BOUNDS.png"
+          ],
+          "findings": "All 24 rendered proof, receiving-note and adjacent pages inspected. Original factors, positive remainders, localization signs, equations, labels and margins legible. No new overflow or missing glyph; inherited warnings unchanged."
+        }
+      }
+    },
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS/CK author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "index_queries": [
+      "\"ground\" AND \"Hessian\" AND \"bound\"",
+      "\"matrix\" AND \"variance\" AND \"conditional\"",
+      "\"ground\" AND \"Hessian\" AND \"bound\"",
+      "\"matrix\" AND \"variance\" AND \"conditional\""
+    ],
+    "index_routing_hit_count": 13,
+    "routing_assessment": "Thirteen bounded metadata hits, of which twelve route to PDFs only and one to a different local programme TeX; none was read or used. Actual original HVR1–15 and PVI1–17 provider reading is recorded with hashes. All new finite matrix and conditional weighted calculations are proved in full.",
+    "routing_is_not_reading": true
+  }
+]
