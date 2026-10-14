@@ -2191,3 +2191,13 @@ The full original norm has the explicit radius-two product-ball bounds FPR4/FPR7
 \ge\frac{m_z^2}{e_z+zm_z}>0.
 \]
 FPR6–FPR8 calculate the exact covariance and residual-density curvature, retaining the original potential, vacuum energy, Casimir factor and Hessian cross term. This strengthens CK24 at each finite regulator. The product volumes and derivative maxima retain their full regulator dependence; the signed three-shift limit and the smooth global no-gap endpoint remain active.
+
+## Actual central Hessians and their full original face maps
+
+[CHM1–CHM13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CENTRAL_HESSIAN_FACE_MAP.md) prove the complete central Hessian form \(\mathscr H^f=K^f\otimes I_3\), all original vertex constraints, an explicit integer face filling and the exact map \(K^f=R(FK^fF^{\mathsf T})R^{\mathsf T}\). Both face Gram factors and the full colour factor \(3\) remain in the FPR8 receiving contraction. The actual original conditional ground Hessians satisfy
+\[
+K^{\mathcal F}=2\mathfrak V,\qquad
+\mathfrak V=\sum_\tau p_\tau(K_\tau-\overline K)^2\ge0,
+\quad \Delta\mathcal F(\mathbf I)=6\operatorname{Tr}\mathfrak V.
+\]
+CHM9 proves its strict original-state curvature bound with the complete face covariance and circulation dimension. CHM10–CHM13 calculate every original second/fourth-derivative ground, marginal, test-source, resolvent and character term, including both matrix product orders. The global Wilson-word realization CHM6 does not assign an actual ground state. The actual matrix estimates and signed shrinking-window response, followed by reconstruction and the smooth global no-gap construction, remain active.

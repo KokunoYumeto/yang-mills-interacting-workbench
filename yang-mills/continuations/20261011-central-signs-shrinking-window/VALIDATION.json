@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T14:26:33.224824+00:00",
+  "checked_utc": "2026-10-14T14:57:35.148061+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -589,8 +589,8 @@
     },
     {
       "source": "GAUGE_HESSIAN_AND_COVARIANT_GRAPH.md",
-      "sha256": "885437650c646fd8404454e59832427a3cbc6f46287d0387490fcbcc6bfe5ab1",
-      "complete_math_blocks": 212,
+      "sha256": "1aa2e95bd750ced3d20d27adc7de73699544efaad7cbaa8054cd5e7d150de235",
+      "complete_math_blocks": 216,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -607,8 +607,8 @@
     },
     {
       "source": "SCALAR_COMMON_SOURCE_RECONSTRUCTION.md",
-      "sha256": "6ba4d40db4c364dabf8ba7cb8b1edf803a1c72198eabc24d501342d5c6f778e3",
-      "complete_math_blocks": 159,
+      "sha256": "b56fd00ae28ef80f43a8975e857620a77fb8a51a887b4ca1349a2b8a80d00ebe",
+      "complete_math_blocks": 163,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -625,26 +625,32 @@
     },
     {
       "source": "ACTUAL_DENSITY_CHARACTERS.md",
-      "sha256": "cabad64a039bfdd2ac26c41a39426e3cd4e7b8ff01d84f8f739fae2d1ab3fb59",
-      "complete_math_blocks": 240,
+      "sha256": "102380f70870515b2e1af11131efad3461a15037d0b56d6de225194df620c590",
+      "complete_math_blocks": 244,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "CENTRAL_KINETIC_SOURCE.md",
-      "sha256": "16c9d9da9d17a4de86784975036037a819221985796a4797384bed88349ddf90",
-      "complete_math_blocks": 293,
+      "sha256": "4e25cd36ea7e4a5599ca53af02d9cedcbbadb1e4c00ce1351f4e40e301707254",
+      "complete_math_blocks": 297,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CENTRAL_FLUCTUATION_ENERGY.md",
-      "sha256": "8ee663d8ee7612293270a1fe84cb1938a01ac78d5538239dcd6c931630204c16",
-      "complete_math_blocks": 186,
+      "sha256": "ecda3d0a4d1a20ea62f5bf609344c1836a8fc92a2df96d6bcb0785f3f01787ee",
+      "complete_math_blocks": 190,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
-      "sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
-      "complete_math_blocks": 152,
+      "sha256": "6c5d7e4a054d6b18d76d1f289a6310c5b332c28e301c80d25e4ab7fd0bbc93d2",
+      "complete_math_blocks": 156,
+      "split_to_aligned_wrappers": 1
+    },
+    {
+      "source": "CENTRAL_HESSIAN_FACE_MAP.md",
+      "sha256": "d9e3b8eb4c06c112a56368f0560463a85d670217d05f2e0942ad559a881f133e",
+      "complete_math_blocks": 216,
       "split_to_aligned_wrappers": 1
     }
   ],
@@ -1287,6 +1293,16 @@
     {
       "file": "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png",
       "sha256": "f01b18feeb0698fc4e62cf7dd51f1665b07c6fb01e2895055ea5f73d2551fe2e",
+      "visually_inspected": true
+    },
+    {
+      "file": "CENTRAL_HESSIAN_FACE_MAP.png",
+      "sha256": "08a013dfdc34791bda42725f1759c55055ec062c5ca9962ab6e609713fa58c60",
+      "visually_inspected": true
+    },
+    {
+      "file": "ACTUAL_CENTRAL_HESSIAN_VARIANCE.png",
+      "sha256": "935ecb88f43193444d7fc6819a4e35eedf2789d6311605b4879d52a0f7e9319a",
       "visually_inspected": true
     }
   ],
@@ -8980,6 +8996,183 @@
         "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png"
       ],
       "assessment": "All20new/receiving/adjacent pages inspected. FPR1–FPR8 retain complete original formulas, Haar volume factors, zero-sample case, potential/vacuum terms and Hessian contraction; source locators and figure legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+    }
+  },
+  "central_hessian_review": {
+    "utc": "2026-10-14T14:55:59.787962+00:00",
+    "coverage": "Complete CHM1–CHM13: every original colour and vertex constraint, integer face filling and full Hessian map, global Wilson-word realization, actual conditional Hessian covariance and positive matrix variance, strict original kinetic-curvature trace and complete original second/fourth-derivative ground, marginal, test-source, resolvent and character equations.",
+    "strengthening": "The full FPR8 Hessian contraction now has an exact original face-boundary receiver. CK conditional kinetic contribution has a positive Hessian trace at the central configuration with every covariance and dimension factor retained. Actual original-state non-trace equations are calculated.",
+    "correction": "Made the full covariance notation distinct from the integer cycle matrix. The diagram title and caption explicitly locate Hessians at the central configuration. Clarified the earlier FPR claim-ledger wording: its residual-norm bound retains an actual Hessian maximum; it does not bound that maximum.",
+    "limitations": "No regulator-uniform covariance, matrix or signed-window lower bound has been assigned. Actual-state matrix estimates, full X/Q residual, five Green moments/J5, continuum reconstruction and intended-theory identification remain active.",
+    "diagnostics": {
+      "all_passed": true,
+      "checks": 222,
+      "scope": "Exact integer incidence and monotone face filling on the original j=1 open box; complete Hessian/colour/face maps and analytic second derivatives of complete repeated-link Wilson words. Specified arbitrary allowed Hessians, not sampled ground-state Hessians or assigned continuum limits. Continuous original radius-two four-link loop formulas with explicitly constructed V=E+kappa Delta(psi)/psi, complete sixteen central signs and retained probability mass. Marginal resolvent identity uses a specified f with its computed source. Original a_j,s_j retained in those diagnostics; no Wilson vacuum or its resolvent is sampled. Finite matrix diagnostics retain noncommuting products and every covariance component."
+    },
+    "figures_inspected": [
+      "CENTRAL_HESSIAN_FACE_MAP.png",
+      "ACTUAL_CENTRAL_HESSIAN_VARIANCE.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "CENTRAL_HESSIAN_FACE_MAP.md",
+        "prefix": "CHM",
+        "tags": 13,
+        "owner_sha256": "d9e3b8eb4c06c112a56368f0560463a85d670217d05f2e0942ad559a881f133e",
+        "public_sha256": "d9e3b8eb4c06c112a56368f0560463a85d670217d05f2e0942ad559a881f133e",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T14:57:35.148061+00:00",
+      "tex_sha256": "75b3be320f071159b54563ef74d271268cbb691aa826998ccaf308bdb6f7347b",
+      "pdf_sha256": "72325bf4de5dd7ea46a199e1a12008b005ea6433a9407b42760765cd36991397",
+      "pages": 1180,
+      "source_files": 108,
+      "math_blocks": 25443,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T14:57:35.085344+00:00",
+        "complete": true,
+        "pages": 1180,
+        "rendered_pages": [
+          1067,
+          1068,
+          1069,
+          1108,
+          1109,
+          1110,
+          1142,
+          1143,
+          1144,
+          1155,
+          1156,
+          1157,
+          1164,
+          1165,
+          1166,
+          1171,
+          1172,
+          1173,
+          1174,
+          1175,
+          1176,
+          1177,
+          1178,
+          1179,
+          1180
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "new_proof_pages": [
+          1173,
+          1174,
+          1175,
+          1176,
+          1177,
+          1178,
+          1179,
+          1180
+        ],
+        "changed_receiving_notes": [
+          1068,
+          1109,
+          1143,
+          1156,
+          1165,
+          1172
+        ],
+        "figures_inspected": [
+          "CENTRAL_HESSIAN_FACE_MAP.png",
+          "ACTUAL_CENTRAL_HESSIAN_VARIANCE.png"
+        ],
+        "findings": "All 25 rendered proof, receiving-note and adjacent pages inspected. Equations, original factors, figure labels and margins legible. No new overflow or missing glyph. Inherited warnings unchanged."
+      }
+    }
+  },
+  "central_hessian_compile": {
+    "utc": "2026-10-14T14:57:35.148061+00:00",
+    "tex_sha256": "75b3be320f071159b54563ef74d271268cbb691aa826998ccaf308bdb6f7347b",
+    "pdf_sha256": "72325bf4de5dd7ea46a199e1a12008b005ea6433a9407b42760765cd36991397",
+    "pages": 1180,
+    "source_files": 108,
+    "math_blocks": 25443,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T14:57:35.085344+00:00",
+      "complete": true,
+      "pages": 1180,
+      "rendered_pages": [
+        1067,
+        1068,
+        1069,
+        1108,
+        1109,
+        1110,
+        1142,
+        1143,
+        1144,
+        1155,
+        1156,
+        1157,
+        1164,
+        1165,
+        1166,
+        1171,
+        1172,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1178,
+        1179,
+        1180
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "new_proof_pages": [
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1178,
+        1179,
+        1180
+      ],
+      "changed_receiving_notes": [
+        1068,
+        1109,
+        1143,
+        1156,
+        1165,
+        1172
+      ],
+      "figures_inspected": [
+        "CENTRAL_HESSIAN_FACE_MAP.png",
+        "ACTUAL_CENTRAL_HESSIAN_VARIANCE.png"
+      ],
+      "findings": "All 25 rendered proof, receiving-note and adjacent pages inspected. Equations, original factors, figure labels and margins legible. No new overflow or missing glyph. Inherited warnings unchanged."
     }
   }
 }

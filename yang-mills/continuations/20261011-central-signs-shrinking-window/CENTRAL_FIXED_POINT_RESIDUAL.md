@@ -235,3 +235,13 @@ The arrow records the exact implication from the original gauge isotropy to the 
 The accompanying 96 diagnostics check the original Pauli adjoint factors, four-link trace Hessian, exact radius-two Haar volume, complete central residual Laplacian and the positive-matrix resolvent lower bound. The continuous loop fixture uses the explicitly constructed potential \(V=E+\kappa\Delta\psi/\psi\) and a specified smooth central-even test function. It is not a sampled Wilson vacuum or its resolvent solution. The complete proofs above establish the original-state statements; the diagnostics check coefficients, signs, metric factors and retained cross terms.
 
 At \(z=\theta s_j,\varepsilon\theta s_j,R_{\rm win}\theta s_j\), FPR5 supplies three actual positive resolvent gains. The signed squared-resolvent combination from TSC and CFE8 still depends on their derivatives and relative sizes; strict gain separately does not determine its sign. The next calculation must bound the actual curvature and residual energy through FPR6–FPR8, with the full character equation CFE14 and residual square CFE13. The product volume retains its \(N_j\)-dependence, and a Laplacian trace does not bound the full Hessian without its other components. Thus this calculation has not supplied a nonzero limiting spectral weight. The smooth interacting global no-gap state and reconstruction remain the programme goal.
+
+## Actual central Hessians and their full original face maps
+
+[CHM1–CHM13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CENTRAL_HESSIAN_FACE_MAP.md) prove the complete central Hessian form \(\mathscr H^f=K^f\otimes I_3\), all original vertex constraints, an explicit integer face filling and the exact map \(K^f=R(FK^fF^{\mathsf T})R^{\mathsf T}\). Both face Gram factors and the full colour factor \(3\) remain in the FPR8 receiving contraction. The actual original conditional ground Hessians satisfy
+\[
+K^{\mathcal F}=2\mathfrak V,\qquad
+\mathfrak V=\sum_\tau p_\tau(K_\tau-\overline K)^2\ge0,
+\quad \Delta\mathcal F(\mathbf I)=6\operatorname{Tr}\mathfrak V.
+\]
+CHM9 proves its strict original-state curvature bound with the complete face covariance and circulation dimension. CHM10–CHM13 calculate every original second/fourth-derivative ground, marginal, test-source, resolvent and character term, including both matrix product orders. The global Wilson-word realization CHM6 does not assign an actual ground state. The actual matrix estimates and signed shrinking-window response, followed by reconstruction and the smooth global no-gap construction, remain active.
