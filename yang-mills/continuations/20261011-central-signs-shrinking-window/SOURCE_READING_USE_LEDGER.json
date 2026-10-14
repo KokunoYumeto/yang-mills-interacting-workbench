@@ -11253,5 +11253,167 @@
     "index_routing_hit_count": 7,
     "routing_assessment": "Seven bounded metadata hits, six routing to PDFs and one to a different local programme TeX; none read or used. Provider reading and exact source hashes recorded. The semigroup and residual calculations are proved in full here; a bounded local text search did not identify the heat formula and is not asserted exhaustive.",
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "programme:SDR-20261014",
+    "proofs": [
+      {
+        "source": "SIGNED_RESIDUAL_RESPONSE.md",
+        "prefix": "SDR",
+        "tags": 13,
+        "owner_sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
+        "public_sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "ACTUAL_RESOLVENT_HESSIAN.md",
+        "commit": "4098575cb67d4e455e3b0d2bfb516b6ad3e178ce",
+        "sha256": "1713f62898e9b9a435d10641b2e5553a6aca1c32ddb1ce0fe723ce860bc61348",
+        "actual_reading": "Complete RHB1–RHB13 derivation, review and publication."
+      },
+      {
+        "source": "CENTRAL_KINETIC_SOURCE.md",
+        "commit": "4098575cb67d4e455e3b0d2bfb516b6ad3e178ce",
+        "sha256": "0eaece0e2b97a8471d077318ebd5a55433d3bb4e9ba46963f337b2f7eac4d329",
+        "actual_reading": "Complete prior CK1–CK24 reading; current CK14 and CK20–CK24 reread."
+      },
+      {
+        "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+        "commit": "4098575cb67d4e455e3b0d2bfb516b6ad3e178ce",
+        "sha256": "1034c83f154433276a05bf52068a0c76447e06cbf768ac6a82b4e32792aae9bd",
+        "actual_reading": "Complete prior CFE1–CFE14 reading; current CFE6–CFE8 reread."
+      },
+      {
+        "source": "ACTUAL_LOW_ENERGY_MAPS.md",
+        "commit": "4098575cb67d4e455e3b0d2bfb516b6ad3e178ce",
+        "sha256": "389a922a14d45b432c886b52700e1edad008854981493074754f061ac40f14fa",
+        "actual_reading": "Current bounded LEM44–LEM50 reading, including complete physical Haar-gap comparison in LEM48. Other sections not reread."
+      },
+      {
+        "source": "union_label_global/FULL_UNION_LABEL_INVERSE.md",
+        "commit": "4098575cb67d4e455e3b0d2bfb516b6ad3e178ce",
+        "sha256": "f162555e2e1f348eae36705b9a8f07798e6173520a44e24ba48975d6a29ed19f",
+        "actual_reading": "Current bounded UL1–UL6 reading: original spins, gauge constraints, full Fourier convention and physical Haar gap. Later sections not reread."
+      },
+      {
+        "source": "THREE_SHIFT_GAINS_AND_SOURCE_GRAPH.md",
+        "commit": "4098575cb67d4e455e3b0d2bfb516b6ad3e178ce",
+        "sha256": "92df3dc7b27be04c9992f6f8a52fa2135221fced52db9f3948a6519cb879a31a",
+        "actual_reading": "Current original objects, QG1–QG5 and source definitions read. These use a different source and residual and are not substituted for X_phi."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-14T15:56:07.501189+00:00",
+      "coverage": "Complete SDR1–SDR13: full physical Haar gap3 and central-invariant Haar gap8 with density comparison; complete residual derivative and positive term; optimized common-source mixed bound; all signed shifts; exact cross-shift map and scalar maximum; complete rational finite example; eventual failure of the independent norm lower function on the original path; actual original scalar and positive-time receiving maps.",
+      "strengthening": "The actual central-invariant marginal retains its stronger Haar gap8. All positive-shift derivatives, common raw source mass and full mixed terms receive evaluated estimates. The exact mixed overlap is mapped to the original ground diffusion and conditional covariance.",
+      "corrections": "No earlier proof claim changed. Existing physical Haar gap3 is credited to UL/LEM. The finite example proves failure of a general positive-gain implication, not a sign assertion about Yang–Mills. SDR11 proves the limitation of these particular independent norm estimates and immediately constructs the next exact scalar map.",
+      "limitations": "The actual joint mixed overlap at the three shifts, nonzero limiting annular mass, five Green moments/J5 and the smooth interacting continuum construction remain to be evaluated. No missing mathematics is assumed.",
+      "diagnostics": [
+        {
+          "all_passed": true,
+          "checks": 612,
+          "scope": "Exact rational finite compression with vacuum and both raw source components; original four-link radius-two Haar Casimirs and weighted comparisons; complex finite-matrix derivative, moment, mixed, cross-shift and exact central-overlap identities; original-path negative norm-certificate checks. Finite matrices and constructed densities are not Wilson-vacuum samples. Written proofs establish the original-state statements."
+        }
+      ],
+      "diagnostic_count": 612,
+      "figures_inspected": [
+        "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "SIGNED_RESIDUAL_RESPONSE.md",
+          "prefix": "SDR",
+          "tags": 13,
+          "owner_sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
+          "public_sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T15:59:08.767111+00:00",
+        "tex_sha256": "0c1022dd427e7fb7f9691febdfaef98c8785aac6d5c862a39af16655b84cc781",
+        "pdf_sha256": "0dbcc0b0faf74ebcaaab673e0599ea2baa96ce8be7c1fb553b5bd64d7f97af62",
+        "pages": 1223,
+        "source_files": 111,
+        "math_blocks": 26044,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T15:59:08.702334+00:00",
+          "complete": true,
+          "pages": 1223,
+          "inspected_pages": [
+            109,
+            110,
+            111,
+            319,
+            320,
+            321,
+            1163,
+            1164,
+            1165,
+            1175,
+            1176,
+            1177,
+            1185,
+            1186,
+            1187,
+            1213,
+            1214,
+            1215,
+            1216,
+            1217,
+            1218,
+            1219,
+            1220,
+            1221,
+            1222,
+            1223
+          ],
+          "contact_sheets_inspected": 7,
+          "new_source_pages": [
+            1215,
+            1216,
+            1217,
+            1218,
+            1219,
+            1220,
+            1221,
+            1222,
+            1223
+          ],
+          "figures_inspected": [
+            "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png"
+          ],
+          "result": "All26new/receiving/adjacent pages inspected; original signs, full matrices, equations, source/shift factors and figure legible. Two display-width issues were repaired by wrapping with all mathematical content retained.59inherited overflow warnings and one inherited glyph warning unchanged; no new warnings."
+        }
+      }
+    },
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS/CK author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "index_queries": [
+      "\"Poincare\" AND \"spectral\"",
+      "\"resolvent\" AND \"compression\"",
+      "\"Poincare\" AND \"spectral\"",
+      "\"resolvent\" AND \"compression\""
+    ],
+    "index_routing_hit_count": 16,
+    "routing_assessment": "Sixteen bounded disk-index metadata hits were routing records only and were not read or used. Exact bounded current provider coverage and hashes are recorded. The complete original constraint, derivative and scalar receiving calculations are proved in the source.",
+    "routing_is_not_reading": true
   }
 ]

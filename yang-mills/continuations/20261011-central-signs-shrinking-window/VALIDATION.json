@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T15:41:48.053739+00:00",
+  "checked_utc": "2026-10-14T15:59:08.767111+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -79,8 +79,8 @@
     },
     {
       "source": "union_label_global/FULL_UNION_LABEL_INVERSE.md",
-      "sha256": "f162555e2e1f348eae36705b9a8f07798e6173520a44e24ba48975d6a29ed19f",
-      "complete_math_blocks": 236,
+      "sha256": "107f26943d40df5d9945178a217a7508e28889f354de539b6aec815000fc329a",
+      "complete_math_blocks": 237,
       "split_to_aligned_wrappers": 3
     },
     {
@@ -193,8 +193,8 @@
     },
     {
       "source": "ACTUAL_LOW_ENERGY_MAPS.md",
-      "sha256": "389a922a14d45b432c886b52700e1edad008854981493074754f061ac40f14fa",
-      "complete_math_blocks": 416,
+      "sha256": "9045220d17ca02dd520f28a7ca5ddce29291973d2aefa82709ecb924c7407e13",
+      "complete_math_blocks": 417,
       "split_to_aligned_wrappers": 2
     },
     {
@@ -631,20 +631,20 @@
     },
     {
       "source": "CENTRAL_KINETIC_SOURCE.md",
-      "sha256": "0eaece0e2b97a8471d077318ebd5a55433d3bb4e9ba46963f337b2f7eac4d329",
-      "complete_math_blocks": 299,
+      "sha256": "7d7c803ebc4d4c597d88093df26a13c2d3b2d5bab3557f2ea37ee468a291e5ce",
+      "complete_math_blocks": 300,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CENTRAL_FLUCTUATION_ENERGY.md",
-      "sha256": "1034c83f154433276a05bf52068a0c76447e06cbf768ac6a82b4e32792aae9bd",
-      "complete_math_blocks": 192,
+      "sha256": "15333da4ac42be6329d51cebada89ca351c6de3c12573817c1b6e30764cd4275",
+      "complete_math_blocks": 193,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
-      "sha256": "ebff18e1706cf1e9dd3dc0b1683315dfdf12c3ee2e071c397d98e6a43e1d3a5d",
-      "complete_math_blocks": 158,
+      "sha256": "2ff3a089732538fb873639b5eaf359c42f68a4f599cc07853a438059dbb3f122",
+      "complete_math_blocks": 159,
       "split_to_aligned_wrappers": 1
     },
     {
@@ -661,9 +661,15 @@
     },
     {
       "source": "ACTUAL_RESOLVENT_HESSIAN.md",
-      "sha256": "1713f62898e9b9a435d10641b2e5553a6aca1c32ddb1ce0fe723ce860bc61348",
-      "complete_math_blocks": 234,
+      "sha256": "d1a2c1bf07ef160e8cce100db869792c5a6bfa9b8587303205755e93216f1cd5",
+      "complete_math_blocks": 235,
       "split_to_aligned_wrappers": 1
+    },
+    {
+      "source": "SIGNED_RESIDUAL_RESPONSE.md",
+      "sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
+      "complete_math_blocks": 210,
+      "split_to_aligned_wrappers": 0
     }
   ],
   "figures": [
@@ -1330,6 +1336,11 @@
     {
       "file": "EXPLICIT_ORIGINAL_RESIDUAL_GAIN.png",
       "sha256": "8e3a00f098e2c5372984d921fe68acbb25eed32f91425e933ebf53f8826931f6",
+      "visually_inspected": true
+    },
+    {
+      "file": "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png",
+      "sha256": "1c1b96f9087521f63995c94a1fe58e34274bacfc2fa537f8d3209a3c977379e6",
       "visually_inspected": true
     }
   ],
@@ -9525,6 +9536,155 @@
         "EXPLICIT_ORIGINAL_RESIDUAL_GAIN.png"
       ],
       "result": "All 26 new/receiving/adjacent pages inspected. Equations, signs, labels, original factors and both illustrations legible; no clipping or overlap in new content.59 inherited overflow warnings and one inherited glyph warning unchanged; no new warnings."
+    }
+  },
+  "signed_residual_review": {
+    "utc": "2026-10-14T15:56:07.501189+00:00",
+    "coverage": "Complete SDR1–SDR13: full physical Haar gap3 and central-invariant Haar gap8 with density comparison; complete residual derivative and positive term; optimized common-source mixed bound; all signed shifts; exact cross-shift map and scalar maximum; complete rational finite example; eventual failure of the independent norm lower function on the original path; actual original scalar and positive-time receiving maps.",
+    "strengthening": "The actual central-invariant marginal retains its stronger Haar gap8. All positive-shift derivatives, common raw source mass and full mixed terms receive evaluated estimates. The exact mixed overlap is mapped to the original ground diffusion and conditional covariance.",
+    "corrections": "No earlier proof claim changed. Existing physical Haar gap3 is credited to UL/LEM. The finite example proves failure of a general positive-gain implication, not a sign assertion about Yang–Mills. SDR11 proves the limitation of these particular independent norm estimates and immediately constructs the next exact scalar map.",
+    "limitations": "The actual joint mixed overlap at the three shifts, nonzero limiting annular mass, five Green moments/J5 and the smooth interacting continuum construction remain to be evaluated. No missing mathematics is assumed.",
+    "diagnostics": [
+      {
+        "all_passed": true,
+        "checks": 612,
+        "scope": "Exact rational finite compression with vacuum and both raw source components; original four-link radius-two Haar Casimirs and weighted comparisons; complex finite-matrix derivative, moment, mixed, cross-shift and exact central-overlap identities; original-path negative norm-certificate checks. Finite matrices and constructed densities are not Wilson-vacuum samples. Written proofs establish the original-state statements."
+      }
+    ],
+    "diagnostic_count": 612,
+    "figures_inspected": [
+      "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "SIGNED_RESIDUAL_RESPONSE.md",
+        "prefix": "SDR",
+        "tags": 13,
+        "owner_sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
+        "public_sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T15:59:08.767111+00:00",
+      "tex_sha256": "0c1022dd427e7fb7f9691febdfaef98c8785aac6d5c862a39af16655b84cc781",
+      "pdf_sha256": "0dbcc0b0faf74ebcaaab673e0599ea2baa96ce8be7c1fb553b5bd64d7f97af62",
+      "pages": 1223,
+      "source_files": 111,
+      "math_blocks": 26044,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T15:59:08.702334+00:00",
+        "complete": true,
+        "pages": 1223,
+        "inspected_pages": [
+          109,
+          110,
+          111,
+          319,
+          320,
+          321,
+          1163,
+          1164,
+          1165,
+          1175,
+          1176,
+          1177,
+          1185,
+          1186,
+          1187,
+          1213,
+          1214,
+          1215,
+          1216,
+          1217,
+          1218,
+          1219,
+          1220,
+          1221,
+          1222,
+          1223
+        ],
+        "contact_sheets_inspected": 7,
+        "new_source_pages": [
+          1215,
+          1216,
+          1217,
+          1218,
+          1219,
+          1220,
+          1221,
+          1222,
+          1223
+        ],
+        "figures_inspected": [
+          "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png"
+        ],
+        "result": "All26new/receiving/adjacent pages inspected; original signs, full matrices, equations, source/shift factors and figure legible. Two display-width issues were repaired by wrapping with all mathematical content retained.59inherited overflow warnings and one inherited glyph warning unchanged; no new warnings."
+      }
+    }
+  },
+  "signed_residual_compile": {
+    "utc": "2026-10-14T15:59:08.767111+00:00",
+    "tex_sha256": "0c1022dd427e7fb7f9691febdfaef98c8785aac6d5c862a39af16655b84cc781",
+    "pdf_sha256": "0dbcc0b0faf74ebcaaab673e0599ea2baa96ce8be7c1fb553b5bd64d7f97af62",
+    "pages": 1223,
+    "source_files": 111,
+    "math_blocks": 26044,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T15:59:08.702334+00:00",
+      "complete": true,
+      "pages": 1223,
+      "inspected_pages": [
+        109,
+        110,
+        111,
+        319,
+        320,
+        321,
+        1163,
+        1164,
+        1165,
+        1175,
+        1176,
+        1177,
+        1185,
+        1186,
+        1187,
+        1213,
+        1214,
+        1215,
+        1216,
+        1217,
+        1218,
+        1219,
+        1220,
+        1221,
+        1222,
+        1223
+      ],
+      "contact_sheets_inspected": 7,
+      "new_source_pages": [
+        1215,
+        1216,
+        1217,
+        1218,
+        1219,
+        1220,
+        1221,
+        1222,
+        1223
+      ],
+      "figures_inspected": [
+        "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png"
+      ],
+      "result": "All26new/receiving/adjacent pages inspected; original signs, full matrices, equations, source/shift factors and figure legible. Two display-width issues were repaired by wrapping with all mathematical content retained.59inherited overflow warnings and one inherited glyph warning unchanged; no new warnings."
     }
   }
 }

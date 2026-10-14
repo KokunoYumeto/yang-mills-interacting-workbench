@@ -433,3 +433,13 @@ one has \(\Omega_j=32\pi\xi_jM_j\) and \(S_j\le8\xi_j\sqrt{N_j}\). Thus the comp
  \tag{UL47}
 \]
 Every factor arises from the original labels or the actual vacuum estimate. This is not a volume-uniform bound, and it is not the polynomial finite face-response bound proved separately in GPR52. The new result removes the previously untreated full relation-kernel inverse from the finite-source calculation. The asymptotic excitation gap and low-energy spectral weight of the actual original path remain separate mathematical calculations; no limit of (UL47) establishes them.
+
+## Full differentiated residual and original scalar overlap
+
+[SDR1–SDR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SIGNED_RESIDUAL_RESPONSE.md) retain the full differentiated original residual, its exact cross-shift map, every signed coefficient and the common raw source norm. The central-invariant marginal has Haar gap eight; the full physical Haar gap remains three. The complete correction is
+\[
+\Delta\mathcal W(z)=P_z-2z^2\operatorname{Re}\langle f_z^0,\bar v_z\rangle_A,
+\qquad
+\langle f_z^0,\bar v_z\rangle_A=\mu[\overline{f_z^0}Z_z].
+\]
+SDR10 gives an exact finite example with positive resolvent gain at all shifts and negative signed correction. SDR11 proves that the independent norm lower function is eventually negative on the original path. SDR12–SDR13 retain the actual original ground diffusion and conditional covariance in the mixed overlap, supplying the next calculation without replacing the state. The actual joint overlap, limiting annular mass and smooth global no-gap state remain active.

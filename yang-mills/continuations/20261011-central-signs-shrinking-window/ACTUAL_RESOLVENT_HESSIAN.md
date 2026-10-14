@@ -479,3 +479,13 @@ Figure 1. RHB3–RHB5 at the explicitly displayed original values \(\kappa_*=1\)
 Figure 2. RHB9–RHB13 retain the actual resolvent, original conditional components, original central configuration, complete density factor and all \(N_j\) radius-two Haar-ball volumes. The displayed gain is finite-regulator information. Its signed differentiated response and limiting annular mass remain the next calculation. Both illustrations are reproduced by `figure_resolvent_hessian.py`.
 
 The accompanying scripts perform 629 diagnostic checks: 266 for the exact scalar multipliers, original counts, weighted global and localized Bochner formulas and coupling identities; 363 for the heat variance estimate, its exact gradient integral, original Haar-ball volume and explicit residual mass and energy estimates. The continuous four-link fixtures retain the original radius-two metric and every central sign, but use explicitly constructed potentials and sources. They are not asserted to be Wilson-vacuum samples or the original \(X_\varphi\). The original-state claims are proved in RHB1–RHB13 above; the diagnostics only test the stated calculations and do not replace those proofs.
+
+## Full differentiated residual and original scalar overlap
+
+[SDR1–SDR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SIGNED_RESIDUAL_RESPONSE.md) retain the full differentiated original residual, its exact cross-shift map, every signed coefficient and the common raw source norm. The central-invariant marginal has Haar gap eight; the full physical Haar gap remains three. The complete correction is
+\[
+\Delta\mathcal W(z)=P_z-2z^2\operatorname{Re}\langle f_z^0,\bar v_z\rangle_A,
+\qquad
+\langle f_z^0,\bar v_z\rangle_A=\mu[\overline{f_z^0}Z_z].
+\]
+SDR10 gives an exact finite example with positive resolvent gain at all shifts and negative signed correction. SDR11 proves that the independent norm lower function is eventually negative on the original path. SDR12–SDR13 retain the actual original ground diffusion and conditional covariance in the mixed overlap, supplying the next calculation without replacing the state. The actual joint overlap, limiting annular mass and smooth global no-gap state remain active.
