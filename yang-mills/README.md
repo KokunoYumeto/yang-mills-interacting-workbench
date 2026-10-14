@@ -735,3 +735,17 @@ The proved analytic remainder gives a strict negative sign for sufficiently smal
 \quad(t\ge0)
 \]
 at every original regulator, with equal diagonal memory for y and strict positive-shift resolvent memory. This is the complement of trace-measurable functions in the actual full-ground measure, whose entire receiving maps and operator domains are proved. Its nonzero coupling is established beyond the earlier two-face expansion about b=0. The original single-face observable retains its full quadratic factor \(a^2/4\). Regulator-uniform shrinking-window weight, the signed three-shift combination and the smooth global no-gap construction remain active.
+
+## Quantitative full-state loop coupling and complete memory bounds
+
+[QLR1–QLR10](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/QUANTITATIVE_LOOP_RIGIDITY.md) give an evaluated positive lower bound for the actual face-to-trace-complement coupling on every original regulator. The proof retains the full nine-by-nine endpoint derivative, the exact crossing Wilson coefficient and all original ground-density and link-ball factors. It proves
+\[
+\begin{gathered}
+\|\mathcal Kx\|^2=\|\mathcal Ky\|^2\ge m_*>0,\\
+\langle\mathcal Kx,e^{-t\mathcal D}\mathcal Kx\rangle
+\ge m_*e^{-tE_*/m_*},\qquad
+\langle\mathcal Kx,(\mathcal D+\sigma)^{-1}\mathcal Kx\rangle
+\ge\frac{m_*^2}{E_*+\sigma m_*},
+\end{gathered}
+\]
+with every constant specified in the proof, t>=0 and sigma>0. The centered original observable keeps its factor \(a^2/4\). The proof also constructs the exact unrestricted L2 coercivity defect and overcomes it using the actual ground derivatives. These complete finite-regulator bounds are small: at kappa=4/5 and j=1 the displayed formula has log10 mass floor about -466826.28. This is a bound, not the actual spectral mass. The full signed shrinking window and smooth global no-gap construction remain active.

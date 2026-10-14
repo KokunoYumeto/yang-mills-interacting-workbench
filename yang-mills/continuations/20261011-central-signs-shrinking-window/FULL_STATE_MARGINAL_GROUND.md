@@ -286,3 +286,17 @@ The spatial graph uses the exact projection (X,Y,Z) to (X+9Y/20,Z+3Y/10) of the 
 This diagram specializes FMP11 to the original four links with all weights one. The integer i labels the partial products, with Q4=I. The two critical holonomies and their exact endpoint transports determine the global first-integral condition; the coefficient vectors in bold are distinct from the physical scalar spacing and coupling. Their square is componentwise, the determinant is exactly one quarter, and the Lie bracket retains its factor two. FMP12 uses this complete compact argument and the explicit crossing face to prove nonzero dynamic residuals at every original regulator. FMP13 applies the actual entire complementary spectral measure. No uniform shrinking-window lower bound is inferred. Reproducible sources: [figure_full_marginal.py](figure_full_marginal.py), [check_full_marginal.py](check_full_marginal.py), and [check_loop_rigidity.py](check_loop_rigidity.py).
 
 The diagnostics comprise 80 conditional-score/full-potential checks and 147 original generator, weighted-flow, endpoint coefficient, crossing-face and full-box reflection checks. They do not compute the full ground. All actual-ground and global-rigidity conclusions are proved in the text. The inherited Wilson center-multiplication human provenance remains L. Li and Y. Meurice, [arXiv:hep-lat/0410029v2](https://arxiv.org/abs/hep-lat/0410029v2), Sections II–IV and Appendix, through the retained CS/CK author-source record; no new external theorem reading or novelty claim is asserted.
+
+## Quantitative full-state loop coupling and complete memory bounds
+
+[QLR1–QLR10](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/QUANTITATIVE_LOOP_RIGIDITY.md) give an evaluated positive lower bound for the actual face-to-trace-complement coupling on every original regulator. The proof retains the full nine-by-nine endpoint derivative, the exact crossing Wilson coefficient and all original ground-density and link-ball factors. It proves
+\[
+\begin{gathered}
+\|\mathcal Kx\|^2=\|\mathcal Ky\|^2\ge m_*>0,\\
+\langle\mathcal Kx,e^{-t\mathcal D}\mathcal Kx\rangle
+\ge m_*e^{-tE_*/m_*},\qquad
+\langle\mathcal Kx,(\mathcal D+\sigma)^{-1}\mathcal Kx\rangle
+\ge\frac{m_*^2}{E_*+\sigma m_*},
+\end{gathered}
+\]
+with every constant specified in the proof, t>=0 and sigma>0. The centered original observable keeps its factor \(a^2/4\). The proof also constructs the exact unrestricted L2 coercivity defect and overcomes it using the actual ground derivatives. These complete finite-regulator bounds are small: at kappa=4/5 and j=1 the displayed formula has log10 mass floor about -466826.28. This is a bound, not the actual spectral mass. The full signed shrinking window and smooth global no-gap construction remain active.

@@ -1,0 +1,183 @@
+[
+  {
+    "source_id": "programme:QLR-20261014",
+    "proofs": [
+      {
+        "source": "QUANTITATIVE_LOOP_RIGIDITY.md",
+        "prefix": "QLR",
+        "tags": 10,
+        "owner_sha256": "07a7472dd2f63944dee540f30391c7b0bbf7a31ca48e5708f14e53171fbdd06c",
+        "public_sha256": "07a7472dd2f63944dee540f30391c7b0bbf7a31ca48e5708f14e53171fbdd06c",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "commit": "c40ff0c78fdc3f72942e269a37a592fa938c7a47",
+        "source": "FULL_STATE_MARGINAL_GROUND.md",
+        "sha256": "5db7c3eded72586958173e8668c26f18094012c83d9ae093708f05908d24473c",
+        "actual_reading": "Complete FMP1–FMP13; original full-state conditional maps, global endpoint rigidity, crossing face, reflection and full trace-complement domains."
+      },
+      {
+        "commit": "c40ff0c78fdc3f72942e269a37a592fa938c7a47",
+        "source": "ACTUAL_HESSIAN_BOUNDS.md",
+        "sha256": "bc8e5e48936218239ef0cc1c09901cc48fc73dbe59d2ab44fe571b1aa9200865",
+        "actual_reading": "HCB1 original Hessian minimum principle and exact four-link potential Hessian, reused without changing any original metric or coupling."
+      },
+      {
+        "commit": "c40ff0c78fdc3f72942e269a37a592fa938c7a47",
+        "source": "ACTUAL_RESOLVENT_HESSIAN.md",
+        "sha256": "a8ca91d4720bf8c2ee3f798fb4488542341057cebedab905fa35fc4d7aa58e66",
+        "actual_reading": "RHB1–RHB3 original closed-geodesic gradient and full-dimensional Hessian estimates, applied here to the actual trace marginal with an explicit continuous-isometry averaging calculation."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-14T18:04:15.034211+00:00",
+      "coverage": "Complete QLR1–QLR10: original Haar coordinates and smooth cutoff closure defect; explicit nine-by-nine endpoint map, determinant, all factor derivatives, contraction radius and numerical word bound; quantitative loop and two-face oscillation; actual marginal Hessian; exact complete Wilson crossing Fourier coefficient; original global density and Haar-ball norm floor; full complementary energy and Jensen memory bounds.",
+      "strengthening": "FMP12–FMP13 positivity is strengthened to an evaluated positive lower bound at every original regulator, with every constant fixed. The endpoint group-generation argument is made quantitative by the complete original matrix.",
+      "corrections": "No published error found. QLR1–QLR2 exhibit the exact failure of unrestricted L2 coercivity, which FMP11 did not claim. The actual proof uses established derivative bounds. The cutoff is not claimed gauge invariant.",
+      "limitations": "The bound has severe full-volume and density losses; its displayed evaluations do not prove uniform shrinking-window mass, the signed three-shift combination or continuum reconstruction.",
+      "diagnostics": [
+        {
+          "all_passed": true,
+          "checks": 144,
+          "cutoff_diagnostics": [
+            {
+              "delta": 0.12,
+              "mass": 0.9969885682929611,
+              "gradient_squared": 0.07495340842690758,
+              "gradient_squared_over_delta_cubed": 43.37581506186782
+            },
+            {
+              "delta": 0.06,
+              "mass": 0.9996213994677717,
+              "gradient_squared": 0.009533912365345946,
+              "gradient_squared_over_delta_cubed": 44.13848317289791
+            },
+            {
+              "delta": 0.03,
+              "mass": 0.9999526068337358,
+              "gradient_squared": 0.0011969391662551192,
+              "gradient_squared_over_delta_cubed": 44.33108023167109
+            },
+            {
+              "delta": 0.015,
+              "mass": 0.9999940737242357,
+              "gradient_squared": 0.00014978030932234686,
+              "gradient_squared_over_delta_cubed": 44.379350910325
+            }
+          ],
+          "original_regulator_floors": [
+            {
+              "j": 1,
+              "kappa": "4/5",
+              "a": "0.01",
+              "N": 54,
+              "M": 36,
+              "b": "12500.0",
+              "R_floor": "2.5603708439783865066e-6",
+              "epsilon_floor": "3.0941680505646244962e-14",
+              "log10_mass_floor": "-466826.280633895321415428",
+              "energy_ceiling": "591868933171049895.03",
+              "precision_digits": 180
+            },
+            {
+              "j": 2,
+              "kappa": "4/5",
+              "a": "0.005",
+              "N": 104544,
+              "M": 101376,
+              "b": "50000.0",
+              "R_floor": "7.7714426365516765976e-12",
+              "epsilon_floor": "6.513198857019441798e-20",
+              "log10_mass_floor": "-1803456057.45768146233744",
+              "energy_ceiling": "3.5753303340332588742e+25",
+              "precision_digits": 180
+            },
+            {
+              "j": 3,
+              "kappa": "4/5",
+              "a": "0.00333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333",
+              "N": 12912534,
+              "M": 12833316,
+              "b": "112500.0",
+              "R_floor": "5.0084680904903045794e-16",
+              "epsilon_floor": "3.4341182759112724913e-24",
+              "log10_mass_floor": "-333745384069.778039500269",
+              "energy_ceiling": "2.7627780872240711638e+30",
+              "precision_digits": 180
+            }
+          ],
+          "scope": "Exact rational endpoint matrix, direct original SU2 endpoint curves and Hessian, explicit finite-word constants, original Haar cutoff sequence, complete original 36-face crossing Fourier coefficient and full-parameter high-precision bound evaluation. Numerical checks do not compute the actual ground or replace the proofs."
+        }
+      ],
+      "diagnostic_count": 144,
+      "figures_inspected": [
+        "QUANTITATIVE_LOOP_ENDPOINTS.png",
+        "ACTUAL_QUANTITATIVE_MEMORY_FLOOR.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "QUANTITATIVE_LOOP_RIGIDITY.md",
+          "prefix": "QLR",
+          "tags": 10,
+          "owner_sha256": "07a7472dd2f63944dee540f30391c7b0bbf7a31ca48e5708f14e53171fbdd06c",
+          "public_sha256": "07a7472dd2f63944dee540f30391c7b0bbf7a31ca48e5708f14e53171fbdd06c",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T18:10:16.108062+00:00",
+        "tex_sha256": "2cdbcc296b0ba0034e767d924d26702ad2f5da29ac5d7b66f3ee1dfb31dc9078",
+        "pdf_sha256": "c6668c06e9b83c426532d00a47f5666da0885bc6421289ca1fab87c5b7411951",
+        "pages": 1291,
+        "source_files": 117,
+        "math_blocks": 26935,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T18:10:16.045227+00:00",
+          "complete": true,
+          "pages": 1291,
+          "inspected_pages": [
+            1208,
+            1209,
+            1210,
+            1220,
+            1221,
+            1222,
+            1281,
+            1282,
+            1283,
+            1284,
+            1285,
+            1286,
+            1287,
+            1288,
+            1289,
+            1290,
+            1291
+          ],
+          "method": "All five contact sheets inspected; final changed caption/figure pages reinspected after dedicated-float-page repair.",
+          "findings": "All new proof equations, the complete nine-by-nine matrix, three receiving notes and both figures are legible and unclipped. Caption prose and source links retained together before complete figure pages. No new overflow or missing glyph; 59 inherited overflows and one inherited missing-glyph warning retained."
+        }
+      }
+    },
+    "new_external_reading": false,
+    "index_queries": [
+      "\"first integral\" AND \"gradient\"",
+      "\"coercivity\" AND \"transport\"",
+      "\"conditional\" AND \"Hessian\"",
+      "\"first integral\" AND \"gradient\"",
+      "\"coercivity\" AND \"transport\"",
+      "\"conditional\" AND \"Hessian\""
+    ],
+    "index_routing_hit_count": 15,
+    "routing_assessment": "Bounded index hits are metadata routes only and have not been read or used. Complete current proof sources and precise reused sections are recorded; no external result or novelty is claimed.",
+    "routing_is_not_reading": true
+  }
+]
