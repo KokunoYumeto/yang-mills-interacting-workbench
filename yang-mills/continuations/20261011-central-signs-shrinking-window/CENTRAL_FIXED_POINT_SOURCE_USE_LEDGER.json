@@ -1,0 +1,126 @@
+[
+  {
+    "source_id": "programme:FPR-20261014",
+    "proofs": [
+      {
+        "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
+        "prefix": "FPR",
+        "tags": 8,
+        "owner_sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
+        "public_sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "CENTRAL_KINETIC_SOURCE.md",
+        "commit": "bad0139c4fe3892e3bca138488b3970b65fce829",
+        "sha256": "c701cb2266ba58cb3b44d68c57aeb2034d1a243a298678860de53d93d4f5aea7",
+        "actual_reading": "Complete CK1–CK24 owner derivation and review, with current receiving note. CK6–CK7 and CK24 supply the exact ground and resolvent equations."
+      },
+      {
+        "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+        "commit": "bad0139c4fe3892e3bca138488b3970b65fce829",
+        "sha256": "8403976fa7ad5aebcaeaab073d37acaf0ca973f36c99f33b60f675710533ecad",
+        "actual_reading": "Complete CFE1–CFE14 owner derivation and review; full covariance inverse, residual Gram square and character source."
+      }
+    ],
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS/CK author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "owner_review": {
+      "utc": "2026-10-14T14:23:56.473566+00:00",
+      "coverage": "Complete FPR1–FPR8: original global gauge isotropy on the full tangent space, strict face-test residual at every fixed regulator, explicit retained-metric product-ball bounds, full residual energy and strict resolvent gain, exact covariance and residual-density curvature sources.",
+      "strengthening": "CK24 nonnegative resolvent gain is strictly positive for every original nonzero sampled face test. The quantitative norm bounds retain all original volume and derivative factors; FPR8 computes every potential, Casimir and Hessian contribution.",
+      "correction": "No inverse of the isotropy implication or uniform-in-regulator bound is asserted. Empty sampled tests are handled explicitly; the original radius-two Haar-ball factor is derived completely.",
+      "limitations": "The explicit product-volume bounds retain their N_j-dependence. Actual derivative and Hessian estimates and signed three-shift weight, full X/Q residual, five Green moments/J5, continuum reconstruction and intended-theory identification remain active.",
+      "diagnostics": {
+        "all_passed": true,
+        "checks": 96,
+        "scope": "Exact original Pauli adjoint and four-link Hessian factors; radius-two Haar volumes; continuous four-link loop fixture with explicitly constructed potential V=E+kappa Delta(psi)/psi and a specified central-even test f, not the Wilson ground state or its resolvent. Finite positive matrices retain their zero direction. No regulator-uniform lower bound or continuum mass assigned."
+      },
+      "figures_inspected": [
+        "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
+          "prefix": "FPR",
+          "tags": 8,
+          "owner_sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
+          "public_sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T14:26:33.224824+00:00",
+        "tex_sha256": "8083ef411bbfb4282f5a208f922d53594db23d95c5367328ad077a43980cd9ab",
+        "pdf_sha256": "6213f7cfaab508b4deef0e7b5ba0713fe7ba1476a452ee0e616ab842d5977741",
+        "pages": 1166,
+        "source_files": 107,
+        "math_blocks": 25203,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T14:26:33.164983+00:00",
+          "complete": true,
+          "pages": 1166,
+          "rendered": [
+            744,
+            745,
+            746,
+            1106,
+            1107,
+            1108,
+            1139,
+            1140,
+            1141,
+            1151,
+            1152,
+            1153,
+            1159,
+            1160,
+            1161,
+            1162,
+            1163,
+            1164,
+            1165,
+            1166
+          ],
+          "contacts_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "figures_inspected": [
+            "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png"
+          ],
+          "assessment": "All20new/receiving/adjacent pages inspected. FPR1–FPR8 retain complete original formulas, Haar volume factors, zero-sample case, potential/vacuum terms and Hessian contraction; source locators and figure legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+        }
+      }
+    },
+    "index_queries": [
+      "\"Fisher\" AND \"conditional\"",
+      "\"ground state\" AND \"density\" AND \"symmetry\"",
+      "\"Fisher\" AND \"conditional\"",
+      "\"ground state\" AND \"density\" AND \"symmetry\""
+    ],
+    "index_routing_hit_count": 15,
+    "routing_assessment": "Continues the CK calculation after its existing disk-index search and reading of conditional-density providers. Its15routing hits are not claimed read or used as proof inputs. Complete finite Fourier, weighted ground-form and spectral-calculus proofs are supplied here.",
+    "routing_is_not_reading": true
+  }
+]

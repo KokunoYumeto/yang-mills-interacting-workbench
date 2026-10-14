@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T14:15:53.023345+00:00",
+  "checked_utc": "2026-10-14T14:26:33.224824+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -415,8 +415,8 @@
     },
     {
       "source": "CONDITIONAL_GROUND_CURRENT_TRIAL.md",
-      "sha256": "898d2a69e9924f6ae6e0bbb26984208722cf19a3a80d1ee1684ca4b7039a69af",
-      "complete_math_blocks": 264,
+      "sha256": "8b8293d510bdcd2ec4ef90ccf0e33a90ccc9a19d4fcf30dcf3ec2eddbc30559f",
+      "complete_math_blocks": 269,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -607,8 +607,8 @@
     },
     {
       "source": "SCALAR_COMMON_SOURCE_RECONSTRUCTION.md",
-      "sha256": "4c9439af0f177377122db859449073e26e257ce6da055e58f72f04192ed23b6e",
-      "complete_math_blocks": 154,
+      "sha256": "6ba4d40db4c364dabf8ba7cb8b1edf803a1c72198eabc24d501342d5c6f778e3",
+      "complete_math_blocks": 159,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -625,21 +625,27 @@
     },
     {
       "source": "ACTUAL_DENSITY_CHARACTERS.md",
-      "sha256": "acfcf1b7d9094e92383c1ad0fed79018592a3bb03ec716dcafe3eb7ec508b613",
-      "complete_math_blocks": 235,
+      "sha256": "cabad64a039bfdd2ac26c41a39426e3cd4e7b8ff01d84f8f739fae2d1ab3fb59",
+      "complete_math_blocks": 240,
       "split_to_aligned_wrappers": 2
     },
     {
       "source": "CENTRAL_KINETIC_SOURCE.md",
-      "sha256": "c701cb2266ba58cb3b44d68c57aeb2034d1a243a298678860de53d93d4f5aea7",
-      "complete_math_blocks": 288,
+      "sha256": "16c9d9da9d17a4de86784975036037a819221985796a4797384bed88349ddf90",
+      "complete_math_blocks": 293,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CENTRAL_FLUCTUATION_ENERGY.md",
-      "sha256": "403539ce273889dc234fa4839d82f13125ff74ab11d557a235bb104000a0015e",
-      "complete_math_blocks": 181,
+      "sha256": "8ee663d8ee7612293270a1fe84cb1938a01ac78d5538239dcd6c931630204c16",
+      "complete_math_blocks": 186,
       "split_to_aligned_wrappers": 2
+    },
+    {
+      "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
+      "sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
+      "complete_math_blocks": 152,
+      "split_to_aligned_wrappers": 1
     }
   ],
   "figures": [
@@ -1276,6 +1282,11 @@
     {
       "file": "CENTRAL_FLUCTUATION_ENERGY_MAP.png",
       "sha256": "c9b8700e5aee184477e37a7dabaadfec699e1728ce07b3d4efcd12605cb92282",
+      "visually_inspected": true
+    },
+    {
+      "file": "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png",
+      "sha256": "f01b18feeb0698fc4e62cf7dd51f1665b07c6fb01e2895055ea5f73d2551fe2e",
       "visually_inspected": true
     }
   ],
@@ -8845,6 +8856,130 @@
         "CENTRAL_FLUCTUATION_ENERGY_MAP.png"
       ],
       "assessment": "All21new/receiving/adjacent pages inspected. CFE1–CFE14 retain complete formulas, cross terms, inverse factors and source locators; one-way figure arrow and labels legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+    }
+  },
+  "central_fixed_point_review": {
+    "utc": "2026-10-14T14:23:56.473566+00:00",
+    "coverage": "Complete FPR1–FPR8: original global gauge isotropy on the full tangent space, strict face-test residual at every fixed regulator, explicit retained-metric product-ball bounds, full residual energy and strict resolvent gain, exact covariance and residual-density curvature sources.",
+    "strengthening": "CK24 nonnegative resolvent gain is strictly positive for every original nonzero sampled face test. The quantitative norm bounds retain all original volume and derivative factors; FPR8 computes every potential, Casimir and Hessian contribution.",
+    "correction": "No inverse of the isotropy implication or uniform-in-regulator bound is asserted. Empty sampled tests are handled explicitly; the original radius-two Haar-ball factor is derived completely.",
+    "limitations": "The explicit product-volume bounds retain their N_j-dependence. Actual derivative and Hessian estimates and signed three-shift weight, full X/Q residual, five Green moments/J5, continuum reconstruction and intended-theory identification remain active.",
+    "diagnostics": {
+      "all_passed": true,
+      "checks": 96,
+      "scope": "Exact original Pauli adjoint and four-link Hessian factors; radius-two Haar volumes; continuous four-link loop fixture with explicitly constructed potential V=E+kappa Delta(psi)/psi and a specified central-even test f, not the Wilson ground state or its resolvent. Finite positive matrices retain their zero direction. No regulator-uniform lower bound or continuum mass assigned."
+    },
+    "figures_inspected": [
+      "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "CENTRAL_FIXED_POINT_RESIDUAL.md",
+        "prefix": "FPR",
+        "tags": 8,
+        "owner_sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
+        "public_sha256": "330b5d890d21ba5f79354c9088ded8cea9fa7a36e912587e93a7602f4e0995f0",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T14:26:33.224824+00:00",
+      "tex_sha256": "8083ef411bbfb4282f5a208f922d53594db23d95c5367328ad077a43980cd9ab",
+      "pdf_sha256": "6213f7cfaab508b4deef0e7b5ba0713fe7ba1476a452ee0e616ab842d5977741",
+      "pages": 1166,
+      "source_files": 107,
+      "math_blocks": 25203,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T14:26:33.164983+00:00",
+        "complete": true,
+        "pages": 1166,
+        "rendered": [
+          744,
+          745,
+          746,
+          1106,
+          1107,
+          1108,
+          1139,
+          1140,
+          1141,
+          1151,
+          1152,
+          1153,
+          1159,
+          1160,
+          1161,
+          1162,
+          1163,
+          1164,
+          1165,
+          1166
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "figures_inspected": [
+          "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png"
+        ],
+        "assessment": "All20new/receiving/adjacent pages inspected. FPR1–FPR8 retain complete original formulas, Haar volume factors, zero-sample case, potential/vacuum terms and Hessian contraction; source locators and figure legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+      }
+    }
+  },
+  "central_fixed_point_compile": {
+    "utc": "2026-10-14T14:26:33.224824+00:00",
+    "tex_sha256": "8083ef411bbfb4282f5a208f922d53594db23d95c5367328ad077a43980cd9ab",
+    "pdf_sha256": "6213f7cfaab508b4deef0e7b5ba0713fe7ba1476a452ee0e616ab842d5977741",
+    "pages": 1166,
+    "source_files": 107,
+    "math_blocks": 25203,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T14:26:33.164983+00:00",
+      "complete": true,
+      "pages": 1166,
+      "rendered": [
+        744,
+        745,
+        746,
+        1106,
+        1107,
+        1108,
+        1139,
+        1140,
+        1141,
+        1151,
+        1152,
+        1153,
+        1159,
+        1160,
+        1161,
+        1162,
+        1163,
+        1164,
+        1165,
+        1166
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "figures_inspected": [
+        "CENTRAL_FIXED_POINT_RESIDUAL_MAP.png"
+      ],
+      "assessment": "All20new/receiving/adjacent pages inspected. FPR1–FPR8 retain complete original formulas, Haar volume factors, zero-sample case, potential/vacuum terms and Hessian contraction; source locators and figure legible. No clipping or overlap.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
     }
   }
 }

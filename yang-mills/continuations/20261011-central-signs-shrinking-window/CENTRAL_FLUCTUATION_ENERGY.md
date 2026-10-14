@@ -346,3 +346,18 @@ The next estimate is the size of these full derivative and covariance contractio
 ![Exact conditional energy and full residual map](CENTRAL_FLUCTUATION_ENERGY_MAP.png)
 
 The arrow sends the original physical fluctuation \(y\) to its conditional mean-gradient defect \(t_Z\), as proved in CFE1. It does not assert an inverse for that map. The lower formulas show the complete fluctuation energy, all-character covariance inverse, and residual square used in the three original spectral shifts. Proof locators: CFE1–CFE14 and CK9–CK24. Reproducible source: [figure_central_fluctuation.py](figure_central_fluctuation.py). The inherited human center-multiplication source remains L. Li and Y. Meurice, arXiv:hep-lat/0410029v2, Sections II–IV and Appendix, through the author-source record in CK and CS; no new external reading or novelty claim is asserted here.
+
+## Central configurations and strict physical resolvent gain
+
+[FPR1–FPR8](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CENTRAL_FIXED_POINT_RESIDUAL.md) prove that global gauge isotropy makes every first derivative of a smooth physical scalar vanish at each original central configuration. Thus \(Bf_z^0(I)=0\), and every nonzero original sampled face test has the strictly positive residual
+\[
+\sum_\tau|\eta_{z,\tau}(I)|^2
+=a_j^2\sum_{p,r}\overline{\varphi(x_p)}\varphi(x_r)
+C_{\partial p,\partial r}(I)>0.
+\]
+The full original norm has the explicit radius-two product-ball bounds FPR4/FPR7. With \(m_z=\|\eta_z\|^2\) and the complete residual energy \(e_z\) in FPR5,
+\[
+\mathcal G_{X_\varphi}(z)-\langle x,(L_A+z)^{-1}x\rangle
+\ge\frac{m_z^2}{e_z+zm_z}>0.
+\]
+FPR6–FPR8 calculate the exact covariance and residual-density curvature, retaining the original potential, vacuum energy, Casimir factor and Hessian cross term. This strengthens CK24 at each finite regulator. The product volumes and derivative maxima retain their full regulator dependence; the signed three-shift limit and the smooth global no-gap endpoint remain active.
