@@ -1,0 +1,39 @@
+[
+  {
+    "id": "DCH-density-equations",
+    "original": "FPA8 retains unspecified actual density characters in the physical face covariance.",
+    "change": "DCH1–DCH14 give the full coupled source equations, exact signed-density L1 error and quantitative actual local averages, with all cross terms.",
+    "affects": [
+      "FPA8–FPA10",
+      "SLE21/SLE24",
+      "TSC scalar source"
+    ],
+    "proof": "ACTUAL_DENSITY_CHARACTERS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in FPA,SLE,TSC,CS and programme/cumulative source."
+  },
+  {
+    "id": "DCH-common-field",
+    "original": "FPA5 calculates the finite Haar comparison, without its actual-vacuum common-field bound.",
+    "change": "DCH15–DCH16 prove O(1) actual forms and the full9/(16a) Haar derivative form for original raw common coefficients.",
+    "affects": [
+      "FPA5/FPA8",
+      "SLE original common source"
+    ],
+    "proof": "ACTUAL_DENSITY_CHARACTERS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in FPA,SLE,TSC,CS and programme/cumulative source."
+  },
+  {
+    "id": "DCH-reversal-spectrum",
+    "original": "CS17–CS19 intertwine the full Hamiltonians; the same-coupling flipped-ground spectral weight was not calculated there.",
+    "change": "DCH17–DCH22 calculate all original first/second moments, O(a^2) low-window probability, O(a) overlap and the two amplitude-sector masses.",
+    "affects": [
+      "CS17–CS19",
+      "central-sign candidate comparison"
+    ],
+    "proof": "ACTUAL_DENSITY_CHARACTERS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in FPA,SLE,TSC,CS and programme/cumulative source."
+  }
+]

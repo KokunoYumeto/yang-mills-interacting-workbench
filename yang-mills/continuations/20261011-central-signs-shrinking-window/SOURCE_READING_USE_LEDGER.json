@@ -10222,5 +10222,153 @@
     "index_routing_hit_count": 15,
     "routing_assessment": "The15routing hits include Kubo/transport and unrelated zeta/local-source material. They were not used as proof inputs and are not claimed read. This further FPA calculation derives central character and original density/curvature identities directly from the read SLE/SF/CS providers.",
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "programme:DCH-20261014",
+    "proofs": [
+      {
+        "source": "ACTUAL_DENSITY_CHARACTERS.md",
+        "prefix": "DCH",
+        "tags": 22,
+        "owner_sha256": "e05dbee5077bc1550861b463bcdfd2905f47a3a830e54bcda5f4594a6c59c168",
+        "public_sha256": "e05dbee5077bc1550861b463bcdfd2905f47a3a830e54bcda5f4594a6c59c168",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "FACE_FIELD_PHYSICAL_ACTION.md",
+        "commit": "fdc6940a40e748cdff14ebb7e70df5a655c5f18e",
+        "sha256": "c7bebfbb195201ea8c4407c6eb2b069dbed90a56a9a27fcf469a95710c45c9d8",
+        "actual_reading": "FPA1–FPA11 complete proof and exact density/character/source definitions"
+      },
+      {
+        "source": "SCALAR_RESIDUAL_AND_LOCAL_ENERGY.md",
+        "commit": "fdc6940a40e748cdff14ebb7e70df5a655c5f18e",
+        "sha256": "b7ac99ce0818bb6c1ff6776994fc44cf9c343805653d3251802875cca3863ed3",
+        "actual_reading": "SLE1–SLE24 prior complete reading; original definitions and coefficient estimates checked for this derivation"
+      },
+      {
+        "source": "LOCAL_CURVATURE_BUDGET.md",
+        "commit": "fdc6940a40e748cdff14ebb7e70df5a655c5f18e",
+        "sha256": "e29e60918dcbce2dc553a17066aab308a07f9a88e56c9c81d9920778b37b7310",
+        "actual_reading": "LC1–LC7 and LC12–LC20 read during derivation; LC15–LC30 current recovery read, with actual moment recurrence and complete coupling factors"
+      },
+      {
+        "source": "HESSIAN_RECEIVING_REVIEW.md",
+        "commit": "fdc6940a40e748cdff14ebb7e70df5a655c5f18e",
+        "sha256": "2a49728befcce06ee881bf10d877d73e609053b3fbabeb87db1b1c6f3a1bf9c4",
+        "actual_reading": "HVR16–HVR22 current bounded read; exact uncertainty polynomial and limiting roots rederived in the new proof"
+      },
+      {
+        "source": "CENTRAL_SIGNS_AND_BOUNDARIES.md",
+        "commit": "fdc6940a40e748cdff14ebb7e70df5a655c5f18e",
+        "sha256": "cbf74ce2b43a221ecebe4c98769b302b1165f29bb9b5f9634c36ac4b3500b477",
+        "actual_reading": "CS1–CS19 current complete read; original open-box central map and full operator domains"
+      }
+    ],
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "owner_review": {
+      "utc": "2026-10-14T13:30:10.453961+00:00",
+      "coverage": "Complete DCH1–DCH22: full amplitude/density/source equations; positive finite character matrix; exact L1 alignment and raw trace-product bound; all mixed covariance terms; full patch-boundary counts; actual common-field bounds and9/16 original Haar asymptotic; complete central reversal energy moments, overlap, spectral interval and amplitude-sector formulas.",
+      "strengthening": "Actual density characters have deficit-controlled signed alignment and large average L1 norm. Common smooth face action stays bounded in the actual vacuum although its original Haar form grows like1/a. Central reversal has O(a^2) low-window mass and concentrates near4bM.",
+      "correction": "No false provider conclusion identified. Added a complete derivation and precise provider link for the local curvature root constant. Fixed figure mathtext and caption spacing before acceptance.",
+      "limitations": "No original X/Q low-window mass is assigned. The even-density Gram, complete J sources, signed three-shift response, all five Green moments/J5, continuum state, reconstruction and theory identification remain active.",
+      "diagnostics": {
+        "checks": 1597,
+        "all_passed": true,
+        "scope": "Finite central-group operators check complete character algebra with an explicitly different discrete kinetic operator. The radius-two differential test retains its non-ground residual. Cubic incidence and cell integrals use the original coordinates and spacing. No YM ground sample or numerical continuum claim."
+      },
+      "figures_inspected": [
+        "DENSITY_CHARACTER_MAP.png",
+        "CENTRAL_REVERSAL_SPECTRAL_BOUNDS.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "ACTUAL_DENSITY_CHARACTERS.md",
+          "prefix": "DCH",
+          "tags": 22,
+          "owner_sha256": "e05dbee5077bc1550861b463bcdfd2905f47a3a830e54bcda5f4594a6c59c168",
+          "public_sha256": "e05dbee5077bc1550861b463bcdfd2905f47a3a830e54bcda5f4594a6c59c168",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T13:32:19.844171+00:00",
+        "tex_sha256": "aa46ed33ffac3088470ce53d7116d59641985e4a065fa16bdef78377f0f9f459",
+        "pdf_sha256": "bd87a847a7c50cb5c8e4d30b6e9248b4f43ba213edb45b0bf784128c28dab309",
+        "pages": 1128,
+        "source_files": 104,
+        "math_blocks": 24507,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T13:32:19.784393+00:00",
+          "complete": true,
+          "pages": 1128,
+          "rendered": [
+            25,
+            26,
+            27,
+            1099,
+            1100,
+            1101,
+            1111,
+            1112,
+            1113,
+            1117,
+            1118,
+            1119,
+            1120,
+            1121,
+            1122,
+            1123,
+            1124,
+            1125,
+            1126,
+            1127,
+            1128
+          ],
+          "contacts_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "figures_inspected": [
+            "DENSITY_CHARACTER_MAP.png",
+            "CENTRAL_REVERSAL_SPECTRAL_BOUNDS.png"
+          ],
+          "assessment": "All21new/receiving/adjacent pages inspected. Complete DCH1–DCH22 formulas and original factors legible, no clipping or overlap; both figures and proof locators retained.59earlier overflow warnings and one earlier missing glyph unchanged; no new warnings."
+        }
+      }
+    },
+    "index_queries": [
+      "\"Yang Mills\" AND \"correlation\"",
+      "\"ground state\" AND \"density\" AND \"Wilson\"",
+      "\"Meurice\"",
+      "\"Yang Mills\" AND \"correlation\"",
+      "\"ground state\" AND \"density\" AND \"Wilson\"",
+      "\"Meurice\""
+    ],
+    "index_routing_hit_count": 25,
+    "routing_assessment": "The25routing hits include gauge-theory treatments and unrelated local/zeta material. Routing records are not claimed read or used as proof inputs. New finite character/density/operator calculations use the explicitly read programme sources and inherited human central-sign source.",
+    "routing_is_not_reading": true
   }
 ]

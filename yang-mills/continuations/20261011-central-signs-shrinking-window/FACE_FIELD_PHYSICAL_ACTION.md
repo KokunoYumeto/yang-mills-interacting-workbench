@@ -220,3 +220,16 @@ The two pictured faces are an exact lattice-coordinate sample of the shared-edge
 ## Next receiving calculation
 
 The calculation has established the full raw-coefficient physical-action kernel and the exact state-density term between that action and the Haar comparison. It also derives the equation actually satisfied by the score-contracted source, including kinetic deformation and the original Ricci coefficient. The next task is to evaluate the density-character contributions in (FPA8) and their cancellation against the full Hessian and score terms of (FPA10) along the unchanged regulator path. These formulas do not yet determine \(z_c\)'s physical-window inverse moments, the original \(X_\varphi/Q_\varphi\) annulus mass, or a continuum state. Their exact receiving maps remain SLE19–SLE22 and TSC1–TSC12.
+
+## Actual density characters and central-reversal spectral weight
+
+[DCH1–DCH22](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_DENSITY_CHARACTERS.md) derive the complete original density-character equations, including the kinetic-density and weighted local-energy sources. For every original face collection \(A\), the exact map satisfies
+\[
+\begin{gathered}
+\|\rho_{S_A}-\sigma_A\rho_\varnothing\|_1
+=2\mu(\mathcal T_A<0)\le\sum_{p\in A}\mu D_p,\\
+[1-\tfrac12\sum_{p\in A}\mu D_p]_+
+\le\|\rho_{S_A}\|_1\le1 .
+\end{gathered}
+\]
+All physical face cross terms retain their actual central density and a proved mixed-deficit error. For the original common smooth coefficients, DCH15 bounds the actual face-action form uniformly, while DCH16 gives its full Haar comparison \(9(16a_j)^{-1}\int|\nabla\varphi|^2+o(a_j^{-1})\). DCH17–DCH22 calculate the original central-reversed ground's spectral weight: it concentrates near the full energy \(4b_jM_j\), and its mass in each fixed multiple of the original shrinking window is \(O(a_j^2)\). The original scalar observable and squared-score source retain their own unresolved signed response. The even-density Gram and complete kinetic-density sources are the next receiving calculation toward the smooth interacting global no-gap goal.
