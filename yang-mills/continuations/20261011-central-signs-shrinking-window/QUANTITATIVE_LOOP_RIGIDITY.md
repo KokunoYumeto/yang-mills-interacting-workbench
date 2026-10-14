@@ -254,3 +254,15 @@ The matrix displays every entry of the original nine-parameter endpoint map in Q
 ![Actual crossing coefficient and complete quantitative memory bounds](ACTUAL_QUANTITATIVE_MEMORY_FLOOR.png)
 
 The square is the exact xz coordinate projection of the crossing face at integer lower corner (0,0,0). The bottom selected edge and the three outside edges follow the ordered Wilson traversal; the upper and left traversals use inverses of positively oriented original links. The complete Haar coefficient is minus b. Each later box records a proved receiving estimate, with the original density and all N link-ball factors visible. The numerical logarithms evaluate the bound at kappa=4/5 and j=1,2,3 using 180 decimal digits; they are not computations of the actual ground or its spectral mass. All constants are defined in QLR5–QLR10, including their sharper vacuum-energy-dependent precursors. The source's full argument accompanies both figures. Reproducible sources: [figure_quantitative_loop.py](figure_quantitative_loop.py) and [check_quantitative_loop.py](check_quantitative_loop.py).
+
+## Actual local conditional memory bound and its original-path coefficient
+
+[LPF1–LPF7](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/LOCAL_CONDITIONAL_MEMORY_FLOOR.md) retain the actual outside marginal and every density derivative in the crossing Wilson identity. The original four-link and seven-link conditional comparisons give an evaluated positive full-state residual floor, with the earlier bound retained as well:
+\[
+\|\mathcal Kx\|^2=\|\mathcal Ky\|^2\ge\max\{m_*,m_C\},\qquad m_C=2\kappa_*^2B_Pe_C^{23}>0.
+\]
+The complete time and resolvent memory bounds keep the same original complementary operator and the physical factor \(a^2/4\). Every constant is specified. The lower-bound formula has the exact limit
+\[
+m_C j^{869}e^{84800\pi^2j/\kappa_*}\longrightarrow A_{\kappa_*}>0,
+\]
+with its full coefficient proved in LPF7. This improves the volume dependence of the earlier estimate while retaining every original boundary term. It describes the bound formula, not the actual spectral mass. The signed shrinking window and smooth global no-gap construction remain active.

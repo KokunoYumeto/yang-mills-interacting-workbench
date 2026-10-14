@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T18:10:16.108062+00:00",
+  "checked_utc": "2026-10-14T18:27:52.522801+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -661,8 +661,8 @@
     },
     {
       "source": "ACTUAL_RESOLVENT_HESSIAN.md",
-      "sha256": "d0f834f3fbfb49f6d631f604a353e1db9f4d3d4b9907539eb7972711cb842180",
-      "complete_math_blocks": 240,
+      "sha256": "1f2a4f289f39f2d19624ed59ec669c76d11c1048d98a8d800bc855dafcc04011",
+      "complete_math_blocks": 243,
       "split_to_aligned_wrappers": 1
     },
     {
@@ -697,14 +697,20 @@
     },
     {
       "source": "FULL_STATE_MARGINAL_GROUND.md",
-      "sha256": "fd682b3c68aad195cf83972ed59e09e1aafd49a8c58f0fc37b13929dcf6731ac",
-      "complete_math_blocks": 108,
+      "sha256": "f0f5de74266172c4de5af7504ade4abdfb38636e54ffe8731f55e859f257dfb5",
+      "complete_math_blocks": 111,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "QUANTITATIVE_LOOP_RIGIDITY.md",
-      "sha256": "07a7472dd2f63944dee540f30391c7b0bbf7a31ca48e5708f14e53171fbdd06c",
-      "complete_math_blocks": 119,
+      "sha256": "dae57e9c9747eaf0e3bb839044d1c24b2302350c3d2e37b690244fcfbd5aea68",
+      "complete_math_blocks": 122,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "LOCAL_CONDITIONAL_MEMORY_FLOOR.md",
+      "sha256": "75a8f230b64ea821094dd5080c167ba8b7944028272269f30e74534179f7e579",
+      "complete_math_blocks": 74,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1417,6 +1423,16 @@
     {
       "file": "ACTUAL_QUANTITATIVE_MEMORY_FLOOR.png",
       "sha256": "d644480e36cb7c182ce31000ecef7060d383eec340f7061d41b02da763a53c96",
+      "visually_inspected": true
+    },
+    {
+      "file": "LOCAL_CONDITIONAL_FORCE_AND_MEMORY.png",
+      "sha256": "d44bb6e930f46c56b584d6feaf69ad392deebabccf3d49ab27478b079460ea86",
+      "visually_inspected": true
+    },
+    {
+      "file": "LOCAL_MEMORY_ORIGINAL_PATH_BOUNDS.png",
+      "sha256": "6128ca95f2396a5855c9fe36c1af1a0629f3f1a420cd62186251b6c9c6e1b062",
       "visually_inspected": true
     }
   ],
@@ -10514,6 +10530,171 @@
       ],
       "method": "All five contact sheets inspected; final changed caption/figure pages reinspected after dedicated-float-page repair.",
       "findings": "All new proof equations, the complete nine-by-nine matrix, three receiving notes and both figures are legible and unclipped. Caption prose and source links retained together before complete figure pages. No new overflow or missing glyph; 59 inherited overflows and one inherited missing-glyph warning retained."
+    }
+  },
+  "local_memory_review": {
+    "utc": "2026-10-14T18:23:27.871599+00:00",
+    "coverage": "Complete LPF1–LPF7: actual four-link conditional measure and density ratio; all marginal-density derivative terms; original conditional crossing Fourier identity; actual L2(mu) lower bound; seven-link conditional ball and complete exponent23; unchanged complete memory domain; full original-path polynomial, exponential and positive-coefficient asymptotics.",
+    "strengthening": "QLR7–QLR10 is strengthened by retaining the actual outside marginal and using four-link and seven-link density costs. The full N-link ball penalty is removed, with all full-dimensional derivative factors retained. LPF7 evaluates the exact resulting lower-bound asymptotics.",
+    "corrections": "No published source error found. The original global bound is retained through the maximum of both bounds. The lower-bound function is not claimed to equal the actual spectral mass; no signed-window conclusion is inferred.",
+    "limitations": "The lower-bound function still decays as a polynomial times an exponential in j. The actual joint signed shrinking-window response and continuum construction remain active.",
+    "diagnostics": [
+      {
+        "all_passed": true,
+        "checks": 194,
+        "evaluated_original_bounds": [
+          {
+            "j": 1,
+            "kappa": "4/5",
+            "N": 54,
+            "M": 36,
+            "log10_R_C": "-17152.00913710501090708756",
+            "log10_e_C": "-17162.93397791026927773163",
+            "log10_m_C": "-454970.1658622340786488032",
+            "log_mass_over_j": "-1047607.521671408645043393",
+            "log_asymptotic_quotient": "-54.25475600867072447655868",
+            "precision_digits": 180,
+            "previous_log10_floor": "-466826.280633895321415428"
+          },
+          {
+            "j": 2,
+            "kappa": "4/5",
+            "N": 104544,
+            "M": 101376,
+            "log10_R_C": "-34303.84201638883135700727",
+            "log10_e_C": "-34315.06775301081828546552",
+            "log10_m_C": "-909559.3503606059143147424",
+            "log_mass_over_j": "-1047168.900666839774486162",
+            "log_asymptotic_quotient": "-4.12300290096858306738302",
+            "precision_digits": 180,
+            "previous_log10_floor": "-1803456057.45768146233744"
+          },
+          {
+            "j": 3,
+            "kappa": "4/5",
+            "N": 12912534,
+            "M": 12833316,
+            "log10_R_C": "-51453.28453939941551830035",
+            "log10_e_C": "-51464.68630131957773753812",
+            "log10_m_C": "-1364060.307504370064645634",
+            "log_mass_over_j": "-1046954.976668145499039695",
+            "log_asymptotic_quotient": "-0.8359792399082854349141039",
+            "precision_digits": 180,
+            "previous_log10_floor": "-333745384069.778039500269"
+          },
+          {
+            "j": 10,
+            "kappa": "4/5",
+            "N": 24002400060000,
+            "M": 24001200000000,
+            "log10_R_C": "-171482.635491284846122471",
+            "log10_e_C": "-171494.559995383490017203",
+            "log10_m_C": "-4544959.861392534372073721",
+            "log_mass_over_j": "-1046515.682509873373948679",
+            "log_asymptotic_quotient": "-0.01309827381710035685196454",
+            "precision_digits": 180
+          },
+          {
+            "j": 100,
+            "kappa": "4/5",
+            "N": 24000000240000000600000000,
+            "M": 24000000120000000000000000,
+            "log10_R_C": "-1714579.938182113693951866",
+            "log10_e_C": "-1714592.862597322844730151",
+            "log10_m_C": "-45437271.37995880720174706",
+            "log_mass_over_j": "-1046231.837458181405456473",
+            "log_asymptotic_quotient": "-0.0009793875738803875339201865",
+            "precision_digits": 180
+          }
+        ],
+        "scope": "Exact conditional density algebra and retained probability weights, exponent-23 convexity, original radius-two ball inequality and full original-parameter bound evaluations. Synthetic conditional arrays test only algebra; they are not computed Yang–Mills ground states."
+      }
+    ],
+    "diagnostic_count": 194,
+    "figures_inspected": [
+      "LOCAL_CONDITIONAL_FORCE_AND_MEMORY.png",
+      "LOCAL_MEMORY_ORIGINAL_PATH_BOUNDS.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "LOCAL_CONDITIONAL_MEMORY_FLOOR.md",
+        "prefix": "LPF",
+        "tags": 7,
+        "owner_sha256": "75a8f230b64ea821094dd5080c167ba8b7944028272269f30e74534179f7e579",
+        "public_sha256": "75a8f230b64ea821094dd5080c167ba8b7944028272269f30e74534179f7e579",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T18:27:52.522801+00:00",
+      "tex_sha256": "1916b72e1de164951d36af52e8732610489652c76f23ed4c6dbf06760034d226",
+      "pdf_sha256": "8701b56e7a693f747ba6be9a461a7aefda225bf68052334e1c5f3fc2c00136ab",
+      "pages": 1301,
+      "source_files": 118,
+      "math_blocks": 27018,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "complete": true,
+        "pages": 1301,
+        "inspected_pages": [
+          1221,
+          1222,
+          1223,
+          1283,
+          1284,
+          1285,
+          1293,
+          1294,
+          1295,
+          1296,
+          1297,
+          1298,
+          1299,
+          1300,
+          1301
+        ],
+        "coverage": "Every LPF proof page, both complete figure pages, all three receiving notes and adjacent pages visually inspected. Equations, signs, labels, figure captions and page boundaries are readable and retained.",
+        "new_layout_defects": [],
+        "inherited_layout": "Earlier compiler warnings are compared separately in LOCAL_MEMORY_RENDER_LOCATORS.json; they are not claimed repaired by this increment."
+      }
+    }
+  },
+  "local_memory_compile": {
+    "utc": "2026-10-14T18:27:52.522801+00:00",
+    "tex_sha256": "1916b72e1de164951d36af52e8732610489652c76f23ed4c6dbf06760034d226",
+    "pdf_sha256": "8701b56e7a693f747ba6be9a461a7aefda225bf68052334e1c5f3fc2c00136ab",
+    "pages": 1301,
+    "source_files": 118,
+    "math_blocks": 27018,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "complete": true,
+      "pages": 1301,
+      "inspected_pages": [
+        1221,
+        1222,
+        1223,
+        1283,
+        1284,
+        1285,
+        1293,
+        1294,
+        1295,
+        1296,
+        1297,
+        1298,
+        1299,
+        1300,
+        1301
+      ],
+      "coverage": "Every LPF proof page, both complete figure pages, all three receiving notes and adjacent pages visually inspected. Equations, signs, labels, figure captions and page boundaries are readable and retained.",
+      "new_layout_defects": [],
+      "inherited_layout": "Earlier compiler warnings are compared separately in LOCAL_MEMORY_RENDER_LOCATORS.json; they are not claimed repaired by this increment."
     }
   }
 }
