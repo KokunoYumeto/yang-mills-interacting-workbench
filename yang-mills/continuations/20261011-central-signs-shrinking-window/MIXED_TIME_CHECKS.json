@@ -1,0 +1,1182 @@
+{
+  "all_passed": true,
+  "checks": 235,
+  "scope": "Complex finite positive matrices with both original source components and full coupling; all time-history integrals, initial derivatives, diagonal memory, cross-source terms and Laplace tails retained. A vacuum zero direction can be adjoined independently; these are not Wilson-vacuum samples or numerical evaluations of the original positive-time correlation.",
+  "results": [
+    {
+      "name": "0 initial first derivative",
+      "passed": true,
+      "error": 1.1801832636420706e-15
+    },
+    {
+      "name": "0 initial second derivative",
+      "passed": true,
+      "error": 1.5888218580782548e-14
+    },
+    {
+      "name": "0 t0.03 central strong equation",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "0 t0.03 conditional strong equation",
+      "passed": true,
+      "error": 2.808666774861361e-15
+    },
+    {
+      "name": "0 t0.03 full variation of constants",
+      "passed": true,
+      "error": 4.577566798522237e-16
+    },
+    {
+      "name": "0 t0.03 full memory equation",
+      "passed": true,
+      "error": 2.6479404645468863e-15
+    },
+    {
+      "name": "0 t0.03 retained source split",
+      "passed": true,
+      "error": 3.66205343881779e-15
+    },
+    {
+      "name": "0 t0.03 memory positivity",
+      "passed": true,
+      "excess": -2.206558178332658
+    },
+    {
+      "name": "0 t0.03 retained physical gap",
+      "passed": true,
+      "excess": -1.5775030106070767
+    },
+    {
+      "name": "0 t0.03 cross-source bound",
+      "passed": true,
+      "excess": -13.906329344693917
+    },
+    {
+      "name": "0 t0.03 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 1.5700924586837752e-16
+    },
+    {
+      "name": "0 t0.03 complete remainder bound",
+      "passed": true,
+      "excess": -0.38227691716210466
+    },
+    {
+      "name": "0 t0.03 alternating derivative 1",
+      "passed": true,
+      "excess": -40.42463044339965
+    },
+    {
+      "name": "0 t0.03 alternating derivative 2",
+      "passed": true,
+      "excess": -758.9671581531006
+    },
+    {
+      "name": "0 t0.03 alternating derivative 3",
+      "passed": true,
+      "excess": -14468.2126691925
+    },
+    {
+      "name": "0 t0.2 central strong equation",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "0 t0.2 conditional strong equation",
+      "passed": true,
+      "error": 9.930136612989092e-16
+    },
+    {
+      "name": "0 t0.2 full variation of constants",
+      "passed": true,
+      "error": 2.7755575615628914e-16
+    },
+    {
+      "name": "0 t0.2 full memory equation",
+      "passed": true,
+      "error": 3.972054645195637e-15
+    },
+    {
+      "name": "0 t0.2 retained source split",
+      "passed": true,
+      "error": 4.965068306494546e-16
+    },
+    {
+      "name": "0 t0.2 memory positivity",
+      "passed": true,
+      "excess": -0.11566573702543831
+    },
+    {
+      "name": "0 t0.2 retained physical gap",
+      "passed": true,
+      "excess": -3.3842782033007306
+    },
+    {
+      "name": "0 t0.2 cross-source bound",
+      "passed": true,
+      "excess": -0.27455282266530173
+    },
+    {
+      "name": "0 t0.2 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 1.0007415106216803e-15
+    },
+    {
+      "name": "0 t0.2 complete remainder bound",
+      "passed": true,
+      "excess": -17.877972347657902
+    },
+    {
+      "name": "0 t0.2 alternating derivative 1",
+      "passed": true,
+      "excess": -1.860375323264476
+    },
+    {
+      "name": "0 t0.2 alternating derivative 2",
+      "passed": true,
+      "excess": -32.02259935938963
+    },
+    {
+      "name": "0 t0.2 alternating derivative 3",
+      "passed": true,
+      "excess": -576.2133222800671
+    },
+    {
+      "name": "0 t0.8 central strong equation",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "0 t0.8 conditional strong equation",
+      "passed": true,
+      "error": 1.2560739669470201e-15
+    },
+    {
+      "name": "0 t0.8 full variation of constants",
+      "passed": true,
+      "error": 1.246531298897714e-15
+    },
+    {
+      "name": "0 t0.8 full memory equation",
+      "passed": true,
+      "error": 3.2836441332233214e-15
+    },
+    {
+      "name": "0 t0.8 retained source split",
+      "passed": true,
+      "error": 6.206335383118183e-17
+    },
+    {
+      "name": "0 t0.8 memory positivity",
+      "passed": true,
+      "excess": -0.0005527727725884417
+    },
+    {
+      "name": "0 t0.8 retained physical gap",
+      "passed": true,
+      "excess": -2.6566481706647425
+    },
+    {
+      "name": "0 t0.8 cross-source bound",
+      "passed": true,
+      "excess": -2.5244385922330338e-05
+    },
+    {
+      "name": "0 t0.8 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 1.088676851860048e-14
+    },
+    {
+      "name": "0 t0.8 complete remainder bound",
+      "passed": true,
+      "excess": -271.1355714003289
+    },
+    {
+      "name": "0 t0.8 alternating derivative 1",
+      "passed": true,
+      "excess": -0.0015747662588576463
+    },
+    {
+      "name": "0 t0.8 alternating derivative 2",
+      "passed": true,
+      "excess": -0.008405306475496456
+    },
+    {
+      "name": "0 t0.8 alternating derivative 3",
+      "passed": true,
+      "excess": -0.07840160327498473
+    },
+    {
+      "name": "0 sigma0.3 memory Laplace with entire tail",
+      "passed": true,
+      "error": 1.8346442066239157e-15
+    },
+    {
+      "name": "0 sigma0.3 actual Laplace with entire tail",
+      "passed": true,
+      "error": 1.1801832636420706e-15
+    },
+    {
+      "name": "0 sigma0.3 full Schur receiver",
+      "passed": true,
+      "error": 2.2232198742534223e-15
+    },
+    {
+      "name": "0 sigma1.1 memory Laplace with entire tail",
+      "passed": true,
+      "error": 4.965068306494546e-16
+    },
+    {
+      "name": "0 sigma1.1 actual Laplace with entire tail",
+      "passed": true,
+      "error": 5.978733960281817e-16
+    },
+    {
+      "name": "0 sigma1.1 full Schur receiver",
+      "passed": true,
+      "error": 1.336885555457667e-15
+    },
+    {
+      "name": "1 initial first derivative",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "1 initial second derivative",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "1 t0.03 central strong equation",
+      "passed": true,
+      "error": 1.542371118540254e-15
+    },
+    {
+      "name": "1 t0.03 conditional strong equation",
+      "passed": true,
+      "error": 1.9860273225978185e-15
+    },
+    {
+      "name": "1 t0.03 full variation of constants",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "1 t0.03 full memory equation",
+      "passed": true,
+      "error": 1.8610729195778454e-15
+    },
+    {
+      "name": "1 t0.03 retained source split",
+      "passed": true,
+      "error": 1.2560739669470201e-15
+    },
+    {
+      "name": "1 t0.03 memory positivity",
+      "passed": true,
+      "excess": -1.6888030104039866
+    },
+    {
+      "name": "1 t0.03 retained physical gap",
+      "passed": true,
+      "excess": -0.8030686698473937
+    },
+    {
+      "name": "1 t0.03 cross-source bound",
+      "passed": true,
+      "excess": -6.345501794829728
+    },
+    {
+      "name": "1 t0.03 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "1 t0.03 complete remainder bound",
+      "passed": true,
+      "excess": -0.05038930155273108
+    },
+    {
+      "name": "1 t0.03 alternating derivative 1",
+      "passed": true,
+      "excess": -22.886064794939298
+    },
+    {
+      "name": "1 t0.03 alternating derivative 2",
+      "passed": true,
+      "excess": -340.78432579887243
+    },
+    {
+      "name": "1 t0.03 alternating derivative 3",
+      "passed": true,
+      "excess": -5527.360055545418
+    },
+    {
+      "name": "1 t0.2 central strong equation",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "1 t0.2 conditional strong equation",
+      "passed": true,
+      "error": 2.6737711109153337e-15
+    },
+    {
+      "name": "1 t0.2 full variation of constants",
+      "passed": true,
+      "error": 2.482534153247273e-16
+    },
+    {
+      "name": "1 t0.2 full memory equation",
+      "passed": true,
+      "error": 4.965068306494546e-16
+    },
+    {
+      "name": "1 t0.2 retained source split",
+      "passed": true,
+      "error": 3.1401849173675503e-16
+    },
+    {
+      "name": "1 t0.2 memory positivity",
+      "passed": true,
+      "excess": -0.21259224428099205
+    },
+    {
+      "name": "1 t0.2 retained physical gap",
+      "passed": true,
+      "excess": -1.9390372788088566
+    },
+    {
+      "name": "1 t0.2 cross-source bound",
+      "passed": true,
+      "excess": -0.4345660912594727
+    },
+    {
+      "name": "1 t0.2 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 1.0429598422709816e-15
+    },
+    {
+      "name": "1 t0.2 complete remainder bound",
+      "passed": true,
+      "excess": -7.123204545590635
+    },
+    {
+      "name": "1 t0.2 alternating derivative 1",
+      "passed": true,
+      "excess": -2.3244150165172477
+    },
+    {
+      "name": "1 t0.2 alternating derivative 2",
+      "passed": true,
+      "excess": -28.540402960102668
+    },
+    {
+      "name": "1 t0.2 alternating derivative 3",
+      "passed": true,
+      "excess": -376.13746176222367
+    },
+    {
+      "name": "1 t0.8 central strong equation",
+      "passed": true,
+      "error": 2.9893669801409083e-16
+    },
+    {
+      "name": "1 t0.8 conditional strong equation",
+      "passed": true,
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "1 t0.8 full variation of constants",
+      "passed": true,
+      "error": 3.2256528834566253e-16
+    },
+    {
+      "name": "1 t0.8 full memory equation",
+      "passed": true,
+      "error": 2.39471271813707e-15
+    },
+    {
+      "name": "1 t0.8 retained source split",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "1 t0.8 memory positivity",
+      "passed": true,
+      "excess": -0.005882740872928699
+    },
+    {
+      "name": "1 t0.8 retained physical gap",
+      "passed": true,
+      "excess": -1.2756763190014684
+    },
+    {
+      "name": "1 t0.8 cross-source bound",
+      "passed": true,
+      "excess": -0.00042382402754330656
+    },
+    {
+      "name": "1 t0.8 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 1.1471939217501081e-14
+    },
+    {
+      "name": "1 t0.8 complete remainder bound",
+      "passed": true,
+      "excess": -144.84092831573662
+    },
+    {
+      "name": "1 t0.8 alternating derivative 1",
+      "passed": true,
+      "excess": -0.01658758998012255
+    },
+    {
+      "name": "1 t0.8 alternating derivative 2",
+      "passed": true,
+      "excess": -0.06134406964382706
+    },
+    {
+      "name": "1 t0.8 alternating derivative 3",
+      "passed": true,
+      "excess": -0.3665378030985625
+    },
+    {
+      "name": "1 sigma0.3 memory Laplace with entire tail",
+      "passed": true,
+      "error": 2.1977728119174823e-15
+    },
+    {
+      "name": "1 sigma0.3 actual Laplace with entire tail",
+      "passed": true,
+      "error": 2.7755575615628914e-16
+    },
+    {
+      "name": "1 sigma0.3 full Schur receiver",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "1 sigma1.1 memory Laplace with entire tail",
+      "passed": true,
+      "error": 9.578755747132647e-16
+    },
+    {
+      "name": "1 sigma1.1 actual Laplace with entire tail",
+      "passed": true,
+      "error": 1.0007415106216804e-16
+    },
+    {
+      "name": "1 sigma1.1 full Schur receiver",
+      "passed": true,
+      "error": 8.005932084973443e-16
+    },
+    {
+      "name": "2 initial first derivative",
+      "passed": true,
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "2 initial second derivative",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "2 t0.03 central strong equation",
+      "passed": true,
+      "error": 1.9860273225978185e-15
+    },
+    {
+      "name": "2 t0.03 conditional strong equation",
+      "passed": true,
+      "error": 9.930136612989092e-16
+    },
+    {
+      "name": "2 t0.03 full variation of constants",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "2 t0.03 full memory equation",
+      "passed": true,
+      "error": 3.614624287906422e-15
+    },
+    {
+      "name": "2 t0.03 retained source split",
+      "passed": true,
+      "error": 2.5121479338940403e-15
+    },
+    {
+      "name": "2 t0.03 memory positivity",
+      "passed": true,
+      "excess": -1.0758617031985576
+    },
+    {
+      "name": "2 t0.03 retained physical gap",
+      "passed": true,
+      "excess": -0.4874916303729737
+    },
+    {
+      "name": "2 t0.03 cross-source bound",
+      "passed": true,
+      "excess": -4.281788670624308
+    },
+    {
+      "name": "2 t0.03 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 5.551115123125783e-16
+    },
+    {
+      "name": "2 t0.03 complete remainder bound",
+      "passed": true,
+      "excess": -0.04565563493590474
+    },
+    {
+      "name": "2 t0.03 alternating derivative 1",
+      "passed": true,
+      "excess": -13.13837620748555
+    },
+    {
+      "name": "2 t0.03 alternating derivative 2",
+      "passed": true,
+      "excess": -211.93093470878225
+    },
+    {
+      "name": "2 t0.03 alternating derivative 3",
+      "passed": true,
+      "excess": -4029.674625028046
+    },
+    {
+      "name": "2 t0.2 central strong equation",
+      "passed": true,
+      "error": 1.897149936107019e-15
+    },
+    {
+      "name": "2 t0.2 conditional strong equation",
+      "passed": true,
+      "error": 9.155133597044475e-16
+    },
+    {
+      "name": "2 t0.2 full variation of constants",
+      "passed": true,
+      "error": 5.551115123125783e-16
+    },
+    {
+      "name": "2 t0.2 full memory equation",
+      "passed": true,
+      "error": 4.869818370658876e-15
+    },
+    {
+      "name": "2 t0.2 retained source split",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "2 t0.2 memory positivity",
+      "passed": true,
+      "excess": -0.2233654901376274
+    },
+    {
+      "name": "2 t0.2 retained physical gap",
+      "passed": true,
+      "excess": -1.2140450138333543
+    },
+    {
+      "name": "2 t0.2 cross-source bound",
+      "passed": true,
+      "excess": -0.5115037272557221
+    },
+    {
+      "name": "2 t0.2 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 2.531698018113677e-15
+    },
+    {
+      "name": "2 t0.2 complete remainder bound",
+      "passed": true,
+      "excess": -6.554639234773129
+    },
+    {
+      "name": "2 t0.2 alternating derivative 1",
+      "passed": true,
+      "excess": -1.6376065204182164
+    },
+    {
+      "name": "2 t0.2 alternating derivative 2",
+      "passed": true,
+      "excess": -14.929409627775925
+    },
+    {
+      "name": "2 t0.2 alternating derivative 3",
+      "passed": true,
+      "excess": -175.38752549355783
+    },
+    {
+      "name": "2 t0.8 central strong equation",
+      "passed": true,
+      "error": 1.047382306668854e-15
+    },
+    {
+      "name": "2 t0.8 conditional strong equation",
+      "passed": true,
+      "error": 1.047382306668854e-15
+    },
+    {
+      "name": "2 t0.8 full variation of constants",
+      "passed": true,
+      "error": 1.117140368961273e-15
+    },
+    {
+      "name": "2 t0.8 full memory equation",
+      "passed": true,
+      "error": 9.815432722912785e-15
+    },
+    {
+      "name": "2 t0.8 retained source split",
+      "passed": true,
+      "error": 2.2887833992611187e-16
+    },
+    {
+      "name": "2 t0.8 memory positivity",
+      "passed": true,
+      "excess": -0.011176350494356287
+    },
+    {
+      "name": "2 t0.8 retained physical gap",
+      "passed": true,
+      "excess": -1.0574867804325219
+    },
+    {
+      "name": "2 t0.8 cross-source bound",
+      "passed": true,
+      "excess": -0.0012489308080377466
+    },
+    {
+      "name": "2 t0.8 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 4.0330914360216624e-15
+    },
+    {
+      "name": "2 t0.8 complete remainder bound",
+      "passed": true,
+      "excess": -136.7661537191574
+    },
+    {
+      "name": "2 t0.8 alternating derivative 1",
+      "passed": true,
+      "excess": -0.03557978139050511
+    },
+    {
+      "name": "2 t0.8 alternating derivative 2",
+      "passed": true,
+      "excess": -0.15614811095339315
+    },
+    {
+      "name": "2 t0.8 alternating derivative 3",
+      "passed": true,
+      "excess": -0.9229499676111729
+    },
+    {
+      "name": "2 sigma0.3 memory Laplace with entire tail",
+      "passed": true,
+      "error": 1.7853042877480057e-15
+    },
+    {
+      "name": "2 sigma0.3 actual Laplace with entire tail",
+      "passed": true,
+      "error": 7.468261590855958e-16
+    },
+    {
+      "name": "2 sigma0.3 full Schur receiver",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "2 sigma1.1 memory Laplace with entire tail",
+      "passed": true,
+      "error": 2.7012892057857034e-15
+    },
+    {
+      "name": "2 sigma1.1 actual Laplace with entire tail",
+      "passed": true,
+      "error": 2.482534153247273e-16
+    },
+    {
+      "name": "2 sigma1.1 full Schur receiver",
+      "passed": true,
+      "error": 7.021666937153402e-16
+    },
+    {
+      "name": "3 initial first derivative",
+      "passed": true,
+      "error": 2.482534153247273e-16
+    },
+    {
+      "name": "3 initial second derivative",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "3 t0.03 central strong equation",
+      "passed": true,
+      "error": 1.047382306668854e-15
+    },
+    {
+      "name": "3 t0.03 conditional strong equation",
+      "passed": true,
+      "error": 1.9860273225978185e-15
+    },
+    {
+      "name": "3 t0.03 full variation of constants",
+      "passed": true,
+      "error": 1.0007415106216804e-16
+    },
+    {
+      "name": "3 t0.03 full memory equation",
+      "passed": true,
+      "error": 6.280369834735101e-16
+    },
+    {
+      "name": "3 t0.03 retained source split",
+      "passed": true,
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "3 t0.03 memory positivity",
+      "passed": true,
+      "excess": -0.26807295487878136
+    },
+    {
+      "name": "3 t0.03 retained physical gap",
+      "passed": true,
+      "excess": -0.17055990833019558
+    },
+    {
+      "name": "3 t0.03 cross-source bound",
+      "passed": true,
+      "excess": -0.45959593605079274
+    },
+    {
+      "name": "3 t0.03 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 4.85722573273506e-17
+    },
+    {
+      "name": "3 t0.03 complete remainder bound",
+      "passed": true,
+      "excess": -0.09386409528584216
+    },
+    {
+      "name": "3 t0.03 alternating derivative 1",
+      "passed": true,
+      "excess": -4.166718751396203
+    },
+    {
+      "name": "3 t0.03 alternating derivative 2",
+      "passed": true,
+      "excess": -91.69777404866807
+    },
+    {
+      "name": "3 t0.03 alternating derivative 3",
+      "passed": true,
+      "excess": -2561.222676433333
+    },
+    {
+      "name": "3 t0.2 central strong equation",
+      "passed": true,
+      "error": 9.155133597044475e-16
+    },
+    {
+      "name": "3 t0.2 conditional strong equation",
+      "passed": true,
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "3 t0.2 full variation of constants",
+      "passed": true,
+      "error": 4.652682298944613e-16
+    },
+    {
+      "name": "3 t0.2 full memory equation",
+      "passed": true,
+      "error": 4.915166856007382e-15
+    },
+    {
+      "name": "3 t0.2 retained source split",
+      "passed": true,
+      "error": 9.155133597044475e-16
+    },
+    {
+      "name": "3 t0.2 memory positivity",
+      "passed": true,
+      "excess": -0.04123882637919613
+    },
+    {
+      "name": "3 t0.2 retained physical gap",
+      "passed": true,
+      "excess": -0.34200249049649717
+    },
+    {
+      "name": "3 t0.2 cross-source bound",
+      "passed": true,
+      "excess": -0.024370895868623274
+    },
+    {
+      "name": "3 t0.2 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 4.577566798522237e-16
+    },
+    {
+      "name": "3 t0.2 complete remainder bound",
+      "passed": true,
+      "excess": -5.224330038102521
+    },
+    {
+      "name": "3 t0.2 alternating derivative 1",
+      "passed": true,
+      "excess": -0.35925399637651706
+    },
+    {
+      "name": "3 t0.2 alternating derivative 2",
+      "passed": true,
+      "excess": -3.828457379748305
+    },
+    {
+      "name": "3 t0.2 alternating derivative 3",
+      "passed": true,
+      "excess": -46.061121519349314
+    },
+    {
+      "name": "3 t0.8 central strong equation",
+      "passed": true,
+      "error": 4.0029660424867215e-16
+    },
+    {
+      "name": "3 t0.8 conditional strong equation",
+      "passed": true,
+      "error": 1.1443916996305592e-15
+    },
+    {
+      "name": "3 t0.8 full variation of constants",
+      "passed": true,
+      "error": 7.2377686124476805e-16
+    },
+    {
+      "name": "3 t0.8 full memory equation",
+      "passed": true,
+      "error": 7.578847845246988e-15
+    },
+    {
+      "name": "3 t0.8 retained source split",
+      "passed": true,
+      "error": 1.2412670766236366e-16
+    },
+    {
+      "name": "3 t0.8 memory positivity",
+      "passed": true,
+      "excess": -0.003511720565305673
+    },
+    {
+      "name": "3 t0.8 retained physical gap",
+      "passed": true,
+      "excess": -0.23447186077907115
+    },
+    {
+      "name": "3 t0.8 cross-source bound",
+      "passed": true,
+      "excess": -2.1208828449466354e-05
+    },
+    {
+      "name": "3 t0.8 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 2.5692279562920864e-15
+    },
+    {
+      "name": "3 t0.8 complete remainder bound",
+      "passed": true,
+      "excess": -77.89617830843605
+    },
+    {
+      "name": "3 t0.8 alternating derivative 1",
+      "passed": true,
+      "excess": -0.005779675618065327
+    },
+    {
+      "name": "3 t0.8 alternating derivative 2",
+      "passed": true,
+      "excess": -0.014805867378270901
+    },
+    {
+      "name": "3 t0.8 alternating derivative 3",
+      "passed": true,
+      "excess": -0.08579518087432486
+    },
+    {
+      "name": "3 sigma0.3 memory Laplace with entire tail",
+      "passed": true,
+      "error": 3.683420471909601e-15
+    },
+    {
+      "name": "3 sigma0.3 actual Laplace with entire tail",
+      "passed": true,
+      "error": 2.5476231888929306e-16
+    },
+    {
+      "name": "3 sigma0.3 full Schur receiver",
+      "passed": true,
+      "error": 1.7798229048217483e-15
+    },
+    {
+      "name": "3 sigma1.1 memory Laplace with entire tail",
+      "passed": true,
+      "error": 3.614624287906422e-15
+    },
+    {
+      "name": "3 sigma1.1 actual Laplace with entire tail",
+      "passed": true,
+      "error": 1.389512421408389e-16
+    },
+    {
+      "name": "3 sigma1.1 full Schur receiver",
+      "passed": true,
+      "error": 6.280369834735101e-16
+    },
+    {
+      "name": "4 initial first derivative",
+      "passed": true,
+      "error": 9.155133597044475e-16
+    },
+    {
+      "name": "4 initial second derivative",
+      "passed": true,
+      "error": 1.432144669219779e-14
+    },
+    {
+      "name": "4 t0.03 central strong equation",
+      "passed": true,
+      "error": 1.3322676295501878e-15
+    },
+    {
+      "name": "4 t0.03 conditional strong equation",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "4 t0.03 full variation of constants",
+      "passed": true,
+      "error": 3.1401849173675503e-16
+    },
+    {
+      "name": "4 t0.03 full memory equation",
+      "passed": true,
+      "error": 2.220446049250313e-15
+    },
+    {
+      "name": "4 t0.03 retained source split",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "4 t0.03 memory positivity",
+      "passed": true,
+      "excess": -1.0829135992703238
+    },
+    {
+      "name": "4 t0.03 retained physical gap",
+      "passed": true,
+      "excess": -0.5405021949967348
+    },
+    {
+      "name": "4 t0.03 cross-source bound",
+      "passed": true,
+      "excess": -1.2734767155424804
+    },
+    {
+      "name": "4 t0.03 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 1.2412670766236366e-16
+    },
+    {
+      "name": "4 t0.03 complete remainder bound",
+      "passed": true,
+      "excess": -0.03569143688291307
+    },
+    {
+      "name": "4 t0.03 alternating derivative 1",
+      "passed": true,
+      "excess": -14.562216451356033
+    },
+    {
+      "name": "4 t0.03 alternating derivative 2",
+      "passed": true,
+      "excess": -243.2277157149378
+    },
+    {
+      "name": "4 t0.03 alternating derivative 3",
+      "passed": true,
+      "excess": -4316.300615870563
+    },
+    {
+      "name": "4 t0.2 central strong equation",
+      "passed": true,
+      "error": 2.482534153247273e-16
+    },
+    {
+      "name": "4 t0.2 conditional strong equation",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "4 t0.2 full variation of constants",
+      "passed": true,
+      "error": 3.376611507232129e-16
+    },
+    {
+      "name": "4 t0.2 full memory equation",
+      "passed": true,
+      "error": 1.336885555457667e-15
+    },
+    {
+      "name": "4 t0.2 retained source split",
+      "passed": true,
+      "error": 2.482534153247273e-16
+    },
+    {
+      "name": "4 t0.2 memory positivity",
+      "passed": true,
+      "excess": -0.21617375812290718
+    },
+    {
+      "name": "4 t0.2 retained physical gap",
+      "passed": true,
+      "excess": -1.2563782575964755
+    },
+    {
+      "name": "4 t0.2 cross-source bound",
+      "passed": true,
+      "excess": -0.10962536927379557
+    },
+    {
+      "name": "4 t0.2 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 6.77599954797753e-16
+    },
+    {
+      "name": "4 t0.2 complete remainder bound",
+      "passed": true,
+      "excess": -4.694880080930434
+    },
+    {
+      "name": "4 t0.2 alternating derivative 1",
+      "passed": true,
+      "excess": -1.2992047095127246
+    },
+    {
+      "name": "4 t0.2 alternating derivative 2",
+      "passed": true,
+      "excess": -14.078885284646686
+    },
+    {
+      "name": "4 t0.2 alternating derivative 3",
+      "passed": true,
+      "excess": -211.58558891762738
+    },
+    {
+      "name": "4 t0.8 central strong equation",
+      "passed": true,
+      "error": 1.2412670766236366e-16
+    },
+    {
+      "name": "4 t0.8 conditional strong equation",
+      "passed": true,
+      "error": 4.163336342344337e-16
+    },
+    {
+      "name": "4 t0.8 full variation of constants",
+      "passed": true,
+      "error": 4.335559509131367e-16
+    },
+    {
+      "name": "4 t0.8 full memory equation",
+      "passed": true,
+      "error": 1.5742574924190435e-15
+    },
+    {
+      "name": "4 t0.8 retained source split",
+      "passed": true,
+      "error": 6.206335383118183e-17
+    },
+    {
+      "name": "4 t0.8 memory positivity",
+      "passed": true,
+      "excess": -0.03491128422644392
+    },
+    {
+      "name": "4 t0.8 retained physical gap",
+      "passed": true,
+      "excess": -1.0087699137468247
+    },
+    {
+      "name": "4 t0.8 cross-source bound",
+      "passed": true,
+      "excess": -0.002016751096618762
+    },
+    {
+      "name": "4 t0.8 full cross-source Taylor remainder",
+      "passed": true,
+      "error": 5.939891779943892e-15
+    },
+    {
+      "name": "4 t0.8 complete remainder bound",
+      "passed": true,
+      "excess": -95.76248413464913
+    },
+    {
+      "name": "4 t0.8 alternating derivative 1",
+      "passed": true,
+      "excess": -0.06355721458322684
+    },
+    {
+      "name": "4 t0.8 alternating derivative 2",
+      "passed": true,
+      "excess": -0.1914107297729204
+    },
+    {
+      "name": "4 t0.8 alternating derivative 3",
+      "passed": true,
+      "excess": -0.8273420757822484
+    },
+    {
+      "name": "4 sigma0.3 memory Laplace with entire tail",
+      "passed": true,
+      "error": 9.420554752102651e-16
+    },
+    {
+      "name": "4 sigma0.3 actual Laplace with entire tail",
+      "passed": true,
+      "error": 2.8066088919804617e-16
+    },
+    {
+      "name": "4 sigma0.3 full Schur receiver",
+      "passed": true,
+      "error": 4.742874840267547e-16
+    },
+    {
+      "name": "4 sigma1.1 memory Laplace with entire tail",
+      "passed": true,
+      "error": 4.662207372005263e-16
+    },
+    {
+      "name": "4 sigma1.1 actual Laplace with entire tail",
+      "passed": true,
+      "error": 4.163336342344337e-17
+    },
+    {
+      "name": "4 sigma1.1 full Schur receiver",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    }
+  ]
+}

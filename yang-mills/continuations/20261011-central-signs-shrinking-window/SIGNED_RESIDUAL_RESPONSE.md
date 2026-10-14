@@ -384,3 +384,13 @@ In the last displayed covector contraction the original real metric is extended 
 The left plot evaluates the exact rational functions in SDR10 without rescaling the source or spectral variable. Its three marked shifts retain the displayed signed coefficients. The right side shows the full original-state map in SDR2 and SDR12–SDR13, including the mixed term. SDR11 evaluates why the independent norm lower function becomes negative on the original regulator path; it does not determine the sign of the actual physical response. The finite matrix is explicitly specified and is not a sampled Yang–Mills vacuum. Reproducible source: `figure_signed_residual.py`.
 
 The 612 diagnostics in `check_signed_residual.py` check exact rational example coefficients and signs; the original radius-two fundamental and adjoint Haar Casimirs; weighted original Haar comparisons; complex finite-matrix residual derivatives, all reciprocal moments, joint source bounds, cross-shift maps and scalar overlap identities; and the explicitly displayed original-path bound comparison. The continuous comparison densities are constructed examples, and the finite matrices are operator diagnostics. The proofs for the original interacting state are SDR1–SDR13 above; the checks are not replacements for those proofs.
+
+## Actual memory and complete character-coordinate operator
+
+[MTO1–MTO20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_MIXED_TIME_EVOLUTION.md) prove the actual conditional memory and its exact Laplace map to the full Schur inverse. The original character frame identifies every conditional fluctuation with the tangent space of the actual square-root probability map into the sphere. Its metric, connection, curvature, physical coefficient laws and full complementary Hamiltonian are explicit. The original ground equation evaluates the entire connection-and-potential combination and proves
+\[
+q(\boldsymbol\Xi c,\boldsymbol\Xi d)
+=\kappa_*\int A^2\sum_i[(X_ic)^*C(X_id)
++\overline{r_i^Tc}(r_i^Td)]\,dU.
+\]
+MTO11 and MTO16 retain the exact comparison with all original Wilson-potential terms. MTO19 calculates the full action on the actual face source, and MTO20 retains the mixed-time remainder. The joint three-shift correlation, limiting annular mass, reconstruction and smooth global no-gap state remain active.

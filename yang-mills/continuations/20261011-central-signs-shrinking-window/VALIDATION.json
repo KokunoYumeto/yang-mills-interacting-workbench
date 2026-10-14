@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-14T15:59:08.767111+00:00",
+  "checked_utc": "2026-10-14T16:24:26.776364+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -403,8 +403,8 @@
     },
     {
       "source": "POSITIVE_TIME_COVARIANCE.md",
-      "sha256": "442a2f7476aeb598afc022defa06a603097506f133ff1da948c0e26cd9b81db1",
-      "complete_math_blocks": 240,
+      "sha256": "b5f159170c2e4b6b5ca5dbaf27c45a15957b048550bdeb9fe0e979feff6c5128",
+      "complete_math_blocks": 241,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -631,14 +631,14 @@
     },
     {
       "source": "CENTRAL_KINETIC_SOURCE.md",
-      "sha256": "7d7c803ebc4d4c597d88093df26a13c2d3b2d5bab3557f2ea37ee468a291e5ce",
-      "complete_math_blocks": 300,
+      "sha256": "82fa27c0aca665898d59fa70f9aa4614ef88c03e1ed5e807e9bdf2846bcbb74f",
+      "complete_math_blocks": 301,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "CENTRAL_FLUCTUATION_ENERGY.md",
-      "sha256": "15333da4ac42be6329d51cebada89ca351c6de3c12573817c1b6e30764cd4275",
-      "complete_math_blocks": 193,
+      "sha256": "2fdfbd415d8d9c7f6559f3ef571bdfda9155cbc3bddaeddc10f8eba31fae7086",
+      "complete_math_blocks": 194,
       "split_to_aligned_wrappers": 2
     },
     {
@@ -667,8 +667,14 @@
     },
     {
       "source": "SIGNED_RESIDUAL_RESPONSE.md",
-      "sha256": "5c587c52890bfb612cdfa9f29b905af07b42b817bbe7878d2cdd5b6f36845640",
-      "complete_math_blocks": 210,
+      "sha256": "2ae6b538c4491e9bf604c9fda91d9fc868c423faa18bfdeda293e6628997cac1",
+      "complete_math_blocks": 211,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "ACTUAL_MIXED_TIME_EVOLUTION.md",
+      "sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
+      "complete_math_blocks": 262,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1341,6 +1347,11 @@
     {
       "file": "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png",
       "sha256": "1c1b96f9087521f63995c94a1fe58e34274bacfc2fa537f8d3209a3c977379e6",
+      "visually_inspected": true
+    },
+    {
+      "file": "ACTUAL_CHARACTER_MEMORY_MAP.png",
+      "sha256": "343b57af3012e3427e2e2133faba1ba400caa3d01ce777785d4aeef38a7129ff",
       "visually_inspected": true
     }
   ],
@@ -9685,6 +9696,140 @@
         "SIGNED_RESIDUAL_AND_ORIGINAL_OVERLAP.png"
       ],
       "result": "All26new/receiving/adjacent pages inspected; original signs, full matrices, equations, source/shift factors and figure legible. Two display-width issues were repaired by wrapping with all mathematical content retained.59inherited overflow warnings and one inherited glyph warning unchanged; no new warnings."
+    }
+  },
+  "mixed_time_review": {
+    "utc": "2026-10-14T16:22:13.898919+00:00",
+    "coverage": "Complete MTO1–MTO20: actual coupled time equations, full memory and source, Laplace/Schur map, initial mixed derivatives; all-character frame, covariance inverse, spherical connection and curvature; physical coefficient laws and operator domains; full Wilson potential and exact ground-equation evaluation of every zero-order term; complete first-derivative energy, actual face-source operator and full mixed-time remainder.",
+    "strengthening": "The full conditional operator has an explicit character metric, connection, potential and physical domain. The original ground equation evaluates its complete zero-order combination and energy without omitting the original potential. The actual original face source receives a complete differential action.",
+    "corrections": "Fixed draft differential-product punctuation and justified the H2 operator domain after the elliptic coefficient formula, independently of the Sobolev multiplication map. Every noncycle coefficient remains indexed with its proved zero constraint. No previous published mathematical statement is withdrawn.",
+    "limitations": "The actual joint mixed overlap at three original shifts, nonzero limiting annular mass, five Green moments/J5 and smooth interacting continuum construction remain to be evaluated. No missing mathematics is assumed.",
+    "diagnostics": [
+      {
+        "all_passed": true,
+        "checks": 235,
+        "scope": "Complex finite positive matrices with both original source components and full coupling; all time-history integrals, initial derivatives, diagonal memory, cross-source terms and Laplace tails retained. A vacuum zero direction can be adjoined independently; these are not Wilson-vacuum samples or numerical evaluations of the original positive-time correlation."
+      },
+      {
+        "all_passed": true,
+        "checks": 190,
+        "scope": "Full sign-character jets, covariance inverse, curvature, third moments, full zero-order identity and operator. Continuous four-link radius-two gauge-invariant constructed ground-state fixture retains every one of its 16 signs, 15 nonempty characters, ground-state normalization, E0, trace Casimir and Haar density. Its potential is constructed, not the Wilson potential; separate exact algebra diagnostics retain the full Wilson potential. No actual Wilson-vacuum samples, continuum limit or cross-source sign is inferred."
+      }
+    ],
+    "diagnostic_count": 425,
+    "figures_inspected": [
+      "ACTUAL_CHARACTER_MEMORY_MAP.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_MIXED_TIME_EVOLUTION.md",
+        "prefix": "MTO",
+        "tags": 20,
+        "owner_sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
+        "public_sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-14T16:24:26.776364+00:00",
+      "tex_sha256": "1852baab714d35420397335d556419f6d6c42bf0052510fe1207e108990b45b9",
+      "pdf_sha256": "f919c2ac1f579a3234caabfb9e88507a2246cb329ab501592429fbeb184fafa3",
+      "pages": 1238,
+      "source_files": 112,
+      "math_blocks": 26310,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-14T16:24:26.714895+00:00",
+        "complete": true,
+        "pages": 1238,
+        "rendered_pages": [
+          708,
+          709,
+          710,
+          1165,
+          1166,
+          1167,
+          1178,
+          1179,
+          1180,
+          1226,
+          1227,
+          1228,
+          1229,
+          1230,
+          1231,
+          1232,
+          1233,
+          1234,
+          1235,
+          1236,
+          1237,
+          1238
+        ],
+        "contacts_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "figure_inspected": "ACTUAL_CHARACTER_MEMORY_MAP.png",
+        "findings": "All eleven new proof pages and all four receiving notes with adjacent pages inspected. Full character formulas, curvature, operator, ground-equation comparison, face source, remainder and figure legible. No new clipping, overlapping equation, glyph loss or overflow.59 inherited overflow warnings and one inherited glyph warning unchanged."
+      }
+    }
+  },
+  "mixed_time_compile": {
+    "utc": "2026-10-14T16:24:26.776364+00:00",
+    "tex_sha256": "1852baab714d35420397335d556419f6d6c42bf0052510fe1207e108990b45b9",
+    "pdf_sha256": "f919c2ac1f579a3234caabfb9e88507a2246cb329ab501592429fbeb184fafa3",
+    "pages": 1238,
+    "source_files": 112,
+    "math_blocks": 26310,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-14T16:24:26.714895+00:00",
+      "complete": true,
+      "pages": 1238,
+      "rendered_pages": [
+        708,
+        709,
+        710,
+        1165,
+        1166,
+        1167,
+        1178,
+        1179,
+        1180,
+        1226,
+        1227,
+        1228,
+        1229,
+        1230,
+        1231,
+        1232,
+        1233,
+        1234,
+        1235,
+        1236,
+        1237,
+        1238
+      ],
+      "contacts_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "figure_inspected": "ACTUAL_CHARACTER_MEMORY_MAP.png",
+      "findings": "All eleven new proof pages and all four receiving notes with adjacent pages inspected. Full character formulas, curvature, operator, ground-equation comparison, face source, remainder and figure legible. No new clipping, overlapping equation, glyph loss or overflow.59 inherited overflow warnings and one inherited glyph warning unchanged."
     }
   }
 }

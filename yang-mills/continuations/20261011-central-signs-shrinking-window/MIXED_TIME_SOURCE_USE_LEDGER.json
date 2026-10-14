@@ -1,0 +1,147 @@
+[
+  {
+    "source_id": "programme:MTO-20261014",
+    "proofs": [
+      {
+        "source": "ACTUAL_MIXED_TIME_EVOLUTION.md",
+        "prefix": "MTO",
+        "tags": 20,
+        "owner_sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
+        "public_sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "source": "SIGNED_RESIDUAL_RESPONSE.md",
+        "commit": "4c2f9d4211edeefa003d4e4d469445ba7025d2b0",
+        "sha256": "d4cfd56d4a6efc2a2d4a7868000b80f51871a2a4ee1c1964431d5c44f3eb178a",
+        "actual_reading": "Complete SDR1–SDR13 current derivation/review/publication."
+      },
+      {
+        "source": "CENTRAL_KINETIC_SOURCE.md",
+        "commit": "4c2f9d4211edeefa003d4e4d469445ba7025d2b0",
+        "sha256": "7d7c803ebc4d4c597d88093df26a13c2d3b2d5bab3557f2ea37ee468a291e5ce",
+        "actual_reading": "Prior complete CK1–CK24, current CK14 and CK19–CK24 reread."
+      },
+      {
+        "source": "CENTRAL_FLUCTUATION_ENERGY.md",
+        "commit": "4c2f9d4211edeefa003d4e4d469445ba7025d2b0",
+        "sha256": "15333da4ac42be6329d51cebada89ca351c6de3c12573817c1b6e30764cd4275",
+        "actual_reading": "Complete prior CFE1–CFE14; current CFE1, CFE6–CFE14, including full covariance inverse, score and residual character formulas."
+      },
+      {
+        "source": "POSITIVE_TIME_COVARIANCE.md",
+        "commit": "4c2f9d4211edeefa003d4e4d469445ba7025d2b0",
+        "sha256": "442a2f7476aeb598afc022defa06a603097506f133ff1da948c0e26cd9b81db1",
+        "actual_reading": "Current PT1–PT11 read: original actual two-time identities, full scalar/score covariance, Jensen moment remainder and original ground/form domains. Later PT sections not reread."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-14T16:22:13.898919+00:00",
+      "coverage": "Complete MTO1–MTO20: actual coupled time equations, full memory and source, Laplace/Schur map, initial mixed derivatives; all-character frame, covariance inverse, spherical connection and curvature; physical coefficient laws and operator domains; full Wilson potential and exact ground-equation evaluation of every zero-order term; complete first-derivative energy, actual face-source operator and full mixed-time remainder.",
+      "strengthening": "The full conditional operator has an explicit character metric, connection, potential and physical domain. The original ground equation evaluates its complete zero-order combination and energy without omitting the original potential. The actual original face source receives a complete differential action.",
+      "corrections": "Fixed draft differential-product punctuation and justified the H2 operator domain after the elliptic coefficient formula, independently of the Sobolev multiplication map. Every noncycle coefficient remains indexed with its proved zero constraint. No previous published mathematical statement is withdrawn.",
+      "limitations": "The actual joint mixed overlap at three original shifts, nonzero limiting annular mass, five Green moments/J5 and smooth interacting continuum construction remain to be evaluated. No missing mathematics is assumed.",
+      "diagnostics": [
+        {
+          "all_passed": true,
+          "checks": 235,
+          "scope": "Complex finite positive matrices with both original source components and full coupling; all time-history integrals, initial derivatives, diagonal memory, cross-source terms and Laplace tails retained. A vacuum zero direction can be adjoined independently; these are not Wilson-vacuum samples or numerical evaluations of the original positive-time correlation."
+        },
+        {
+          "all_passed": true,
+          "checks": 190,
+          "scope": "Full sign-character jets, covariance inverse, curvature, third moments, full zero-order identity and operator. Continuous four-link radius-two gauge-invariant constructed ground-state fixture retains every one of its 16 signs, 15 nonempty characters, ground-state normalization, E0, trace Casimir and Haar density. Its potential is constructed, not the Wilson potential; separate exact algebra diagnostics retain the full Wilson potential. No actual Wilson-vacuum samples, continuum limit or cross-source sign is inferred."
+        }
+      ],
+      "diagnostic_count": 425,
+      "figures_inspected": [
+        "ACTUAL_CHARACTER_MEMORY_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "ACTUAL_MIXED_TIME_EVOLUTION.md",
+          "prefix": "MTO",
+          "tags": 20,
+          "owner_sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
+          "public_sha256": "3d4d4f4c1c3c5acaac1c3dd14c66ed4daad35d2d71eda908fcf9e8c7ad925359",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-14T16:24:26.776364+00:00",
+        "tex_sha256": "1852baab714d35420397335d556419f6d6c42bf0052510fe1207e108990b45b9",
+        "pdf_sha256": "f919c2ac1f579a3234caabfb9e88507a2246cb329ab501592429fbeb184fafa3",
+        "pages": 1238,
+        "source_files": 112,
+        "math_blocks": 26310,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-14T16:24:26.714895+00:00",
+          "complete": true,
+          "pages": 1238,
+          "rendered_pages": [
+            708,
+            709,
+            710,
+            1165,
+            1166,
+            1167,
+            1178,
+            1179,
+            1180,
+            1226,
+            1227,
+            1228,
+            1229,
+            1230,
+            1231,
+            1232,
+            1233,
+            1234,
+            1235,
+            1236,
+            1237,
+            1238
+          ],
+          "contacts_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "figure_inspected": "ACTUAL_CHARACTER_MEMORY_MAP.png",
+          "findings": "All eleven new proof pages and all four receiving notes with adjacent pages inspected. Full character formulas, curvature, operator, ground-equation comparison, face source, remainder and figure legible. No new clipping, overlapping equation, glyph loss or overflow.59 inherited overflow warnings and one inherited glyph warning unchanged."
+        }
+      }
+    },
+    "inherited_human_reading": [
+      {
+        "source_id": "arXiv:hep-lat/0410029v2",
+        "authors": [
+          "L. Li",
+          "Y. Meurice"
+        ],
+        "coverage": "Inherited CS/CK author-source provenance, Sections II–IV and Appendix; no new external reading"
+      }
+    ],
+    "new_external_reading": false,
+    "index_queries": [
+      "\"memory\" AND \"projection\"",
+      "\"memory\" AND \"projection\"",
+      "\"covariance\" AND \"connection\"",
+      "\"covariance\" AND \"connection\""
+    ],
+    "index_routing_hit_count": 16,
+    "routing_assessment": "Sixteen bounded disk-index metadata hits were routing records only and were not read or used. Exact bounded current provider coverage and hashes are recorded. The complete original memory, character geometry, full complementary operator and ground-equation comparison are proved in the source.",
+    "routing_is_not_reading": true
+  }
+]

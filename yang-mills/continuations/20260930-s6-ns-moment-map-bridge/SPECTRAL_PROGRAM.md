@@ -1383,3 +1383,13 @@ for nonzero original face samples. All constants are explicitly given in RHB9–
 \langle f_z^0,\bar v_z\rangle_A=\mu[\overline{f_z^0}Z_z].
 \]
 SDR10 gives an exact finite example with positive resolvent gain at all shifts and negative signed correction. SDR11 proves that the independent norm lower function is eventually negative on the original path. SDR12–SDR13 retain the actual original ground diffusion and conditional covariance in the mixed overlap, supplying the next calculation without replacing the state. The actual joint overlap, limiting annular mass and smooth global no-gap state remain active.
+
+## Actual memory and complete character-coordinate operator
+
+[MTO1–MTO20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_MIXED_TIME_EVOLUTION.md) prove the actual conditional memory and its exact Laplace map to the full Schur inverse. The original character frame identifies every conditional fluctuation with the tangent space of the actual square-root probability map into the sphere. Its metric, connection, curvature, physical coefficient laws and full complementary Hamiltonian are explicit. The original ground equation evaluates the entire connection-and-potential combination and proves
+\[
+q(\boldsymbol\Xi c,\boldsymbol\Xi d)
+=\kappa_*\int A^2\sum_i[(X_ic)^*C(X_id)
++\overline{r_i^Tc}(r_i^Td)]\,dU.
+\]
+MTO11 and MTO16 retain the exact comparison with all original Wilson-potential terms. MTO19 calculates the full action on the actual face source, and MTO20 retains the mixed-time remainder. The joint three-shift correlation, limiting annular mass, reconstruction and smooth global no-gap state remain active.
