@@ -249,3 +249,13 @@ The subsequent calculation [SC18–SC24](https://github.com/KokunoYumeto/yang-mi
 \frac12\operatorname{Tr}(E_aE_bE_cE_d).
 \]
 This determines every signed term in SC10 and their exact cancellation on the original coupling path. SC24 also gives the full force pairing in original staple-loop and two-plaquette expectations, with all orientations, original coefficients and remaining mixed score moments retained. These identities evaluate gauge averages; they do not yet evaluate the complete residual or establish the no-gap endpoint.
+
+## Actual spatial moment matrices and the polynomial covariance floor
+
+[SMP1–SMP13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_SPATIAL_MOMENT_MATRICES.md) use the actual conditional density on at most four original links to prove a first-energy floor for every complex raw face coefficient vector. The original shared-link correlations, full source Hessian and vacuum log-Hessian remain in the calculation. The full source covariance matrix satisfies
+\[
+S\ge
+\frac{64\kappa_*^2a^4}
+{(32+7\kappa_*a)(736+155\kappa_*a)}\,I .
+\]
+This evaluated bound is independent of the total box volume and the number of selected faces. It retains arbitrary support and coefficient growth. The proof compares its smooth-test refinement with the stronger earlier HSF result and applies the polynomial floor to missing directions in the exact common-cubic trial space. It does not locate spectral mass in the shrinking annulus; that actual signed response and the smooth global no-gap programme remain active.

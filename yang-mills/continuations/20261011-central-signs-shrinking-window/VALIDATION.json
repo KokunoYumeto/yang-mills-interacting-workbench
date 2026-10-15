@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-15T05:54:42.538714+00:00",
+  "checked_utc": "2026-10-15T06:14:22.142735+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -517,8 +517,8 @@
     },
     {
       "source": "ORIGINAL_SOURCE_HESSIAN_AND_FILTER.md",
-      "sha256": "f393792c5e2f8ca93571e5b900d38b29d93bb0835f2f83db7e366c00371f4a74",
-      "complete_math_blocks": 125,
+      "sha256": "b9855cfcbb0208ad08640888707914a52dc8e5f4fe11164982b7e44786c8f3ff",
+      "complete_math_blocks": 126,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -697,8 +697,8 @@
     },
     {
       "source": "FULL_STATE_MARGINAL_GROUND.md",
-      "sha256": "a173d82805f97ff69d4ae7afb5985b0e4f016ad4485526bfb027eba5d13b5c15",
-      "complete_math_blocks": 113,
+      "sha256": "94cbe82466e5fba7543b1690cb23026454587c7081e9c32a610974ff28d550f8",
+      "complete_math_blocks": 114,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -721,8 +721,14 @@
     },
     {
       "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
-      "sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
-      "complete_math_blocks": 37,
+      "sha256": "ddb4646b340e00d945382a290c7fc3d272dbd7d13f13776e80ed80d4fdcc266c",
+      "complete_math_blocks": 38,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
+      "sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
+      "complete_math_blocks": 96,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1465,6 +1471,11 @@
     {
       "file": "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png",
       "sha256": "ba874fb13a6a603f5644b06ad6e2b18a47dab27a7335d59f6a83925aa1e06e9c",
+      "visually_inspected": true
+    },
+    {
+      "file": "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png",
+      "sha256": "f90cf583a39e79db7386aa07fefe3c3b895c3a50eb2cdfdf3ca53698f4fdafb2",
       "visually_inspected": true
     }
   ],
@@ -11045,6 +11056,139 @@
         "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png"
       ],
       "method": "All18new/receiving/adjacent pages viewed in five rendered contact sheets. After the squared-source-norm wording correction, all three receiving pages viewed again at full render size; proof and figure pages unchanged.",
+      "new_overflows": 0,
+      "new_missing_characters": 0,
+      "inherited_overflows": 59,
+      "inherited_missing": [
+        "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+      ]
+    }
+  },
+  "spatial_moment_review": {
+    "utc": "2026-10-15T06:12:53.128520+00:00",
+    "coverage": "Complete SMP1–SMP13: original edge-star conditioning, full conditional weighted Bochner identity, polynomial first-moment matrix floor, complete deficit refinement, exact source Hessian provider, energy-dependent second-moment matrix upper bound, original covariance floor with all finite factors, and the exact SCR missing-trial receiver.",
+    "strengthening": "Actual full raw face covariance has a strictly positive polynomial matrix floor independent of total box volume and face count. The first-moment floor applies to all complex raw coefficients, including oscillating and growing families. Conditional links are allowed to be coupled.",
+    "corrections": "No earlier published error found. Shared-link gradient and coefficient21 Hessian results already exist in PVC,SF,FTC,HSF and are explicitly used as providers. The smooth-test refinement is compared with the stronger prior HSF bound; it is not claimed to supersede it.",
+    "limitations": "The polynomial covariance floor tends to zero on fixed smooth support and does not locate mass in the shrinking annulus. Actual cross-patch filtered matrices, full residual, reconstruction and smooth global no-gap remain active.",
+    "diagnostic_count": 143,
+    "diagnostic_scope": "Symbolic finite constants and original-path limits; coupled positive two-factor densities with full Bochner cross terms, not Yang-Mills ground samples; exact full box Hessian tensors and complex coefficients; finite spectral and dependent-trial matrix fixtures.",
+    "figures_inspected": [
+      "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
+        "prefix": "SMP",
+        "tags": 13,
+        "owner_sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
+        "public_sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-15T06:14:22.142735+00:00",
+      "tex_sha256": "ffdf7a1acf3db616a60b01fa515a3a65167f753a5f32f35d6ca158dd3b5ed6cf",
+      "pdf_sha256": "48318ee8a340d414f55d6e88f3a901d8704e8dcc71d98d0228133a85be9e4077",
+      "pages": 1336,
+      "source_files": 121,
+      "math_blocks": 27201,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-15T06:14:21.842780+00:00",
+        "complete": true,
+        "pages": 1336,
+        "inspected_pages": [
+          914,
+          915,
+          916,
+          1289,
+          1290,
+          1291,
+          1329,
+          1330,
+          1331,
+          1332,
+          1333,
+          1334,
+          1335,
+          1336
+        ],
+        "new_proof_pages": [
+          1331,
+          1332,
+          1333,
+          1334,
+          1335,
+          1336
+        ],
+        "receiving_pages": [
+          915,
+          1290,
+          1330
+        ],
+        "figures_inspected": [
+          "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png"
+        ],
+        "method": "All14new/receiving/adjacent pages viewed in four rendered contact sheets; original figure inspected after spacing correction. All equations and the full finite coefficients visible; no new clipping or overflow.",
+        "new_overflows": 0,
+        "new_missing_characters": 0,
+        "inherited_overflows": 59,
+        "inherited_missing": [
+          "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+        ]
+      }
+    }
+  },
+  "spatial_moment_compile": {
+    "utc": "2026-10-15T06:14:22.142735+00:00",
+    "tex_sha256": "ffdf7a1acf3db616a60b01fa515a3a65167f753a5f32f35d6ca158dd3b5ed6cf",
+    "pdf_sha256": "48318ee8a340d414f55d6e88f3a901d8704e8dcc71d98d0228133a85be9e4077",
+    "pages": 1336,
+    "source_files": 121,
+    "math_blocks": 27201,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-15T06:14:21.842780+00:00",
+      "complete": true,
+      "pages": 1336,
+      "inspected_pages": [
+        914,
+        915,
+        916,
+        1289,
+        1290,
+        1291,
+        1329,
+        1330,
+        1331,
+        1332,
+        1333,
+        1334,
+        1335,
+        1336
+      ],
+      "new_proof_pages": [
+        1331,
+        1332,
+        1333,
+        1334,
+        1335,
+        1336
+      ],
+      "receiving_pages": [
+        915,
+        1290,
+        1330
+      ],
+      "figures_inspected": [
+        "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png"
+      ],
+      "method": "All14new/receiving/adjacent pages viewed in four rendered contact sheets; original figure inspected after spacing correction. All equations and the full finite coefficients visible; no new clipping or overflow.",
       "new_overflows": 0,
       "new_missing_characters": 0,
       "inherited_overflows": 59,

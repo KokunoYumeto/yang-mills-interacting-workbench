@@ -352,3 +352,13 @@ The graph evaluates the original scalar kernel at zeta=1, epsilon=1/4 and R_win=
 ![Full spatial residual matrices and original source bounds](SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png)
 
 SCR7 and SCR12–SCR13 retain the complete overlapping-patch matrices and original raw source coefficients, including dependent trial columns. The graph compares the evaluated source-bound formulas at kappa=4/5, q=100j and unit face coefficients; it does not measure an actual ground-state norm. SCR8–SCR10 retain the exact counts and the full boundary contribution 24 ell squared. Reproducible sources: [figure_common_residual.py](figure_common_residual.py) and [check_common_residual.py](check_common_residual.py). The 905 diagnostic identities and inequalities include finite matrix fixtures, constructed positive non-Yang–Mills densities and exact source-bound evaluations; the preceding proofs establish the actual-state statements.
+
+## Actual spatial moment matrices and the polynomial covariance floor
+
+[SMP1–SMP13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_SPATIAL_MOMENT_MATRICES.md) use the actual conditional density on at most four original links to prove a first-energy floor for every complex raw face coefficient vector. The original shared-link correlations, full source Hessian and vacuum log-Hessian remain in the calculation. The full source covariance matrix satisfies
+\[
+S\ge
+\frac{64\kappa_*^2a^4}
+{(32+7\kappa_*a)(736+155\kappa_*a)}\,I .
+\]
+This evaluated bound is independent of the total box volume and the number of selected faces. It retains arbitrary support and coefficient growth. The proof compares its smooth-test refinement with the stronger earlier HSF result and applies the polynomial floor to missing directions in the exact common-cubic trial space. It does not locate spectral mass in the shrinking annulus; that actual signed response and the smooth global no-gap programme remain active.

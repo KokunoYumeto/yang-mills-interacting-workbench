@@ -12721,5 +12721,146 @@
     "index_routing_hit_count": 16,
     "routing_assessment": "Bounded index hits are metadata routes only and were not read or used. The retained programme sources supply exact operators and actual-state estimates. No new external result or novelty claimed.",
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "programme:SMP-20261015",
+    "proofs": [
+      {
+        "source": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
+        "prefix": "SMP",
+        "tags": 13,
+        "owner_sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
+        "public_sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "commit": "ace49ec037c9eb1e2352485c8505d411f86bad25",
+        "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+        "sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+        "actual_reading": "SMP predecessor SCR1–SCR13 complete actual raw matrix receiver; SCR5–SCR8 and SCR12–SCR13 reread for full spatial and optimization use."
+      },
+      {
+        "commit": "ace49ec037c9eb1e2352485c8505d411f86bad25",
+        "source": "PHYSICAL_LOCAL_COVARIANCE.md",
+        "sha256": "d3127d1e12f703acc1e485866151a02336828f6310ebf072c820cfcad626bc79",
+        "actual_reading": "PVC1–PVC30 original state, full source, shared-link gradients, kinetic and local curvature budgets; source read through these sections."
+      },
+      {
+        "commit": "ace49ec037c9eb1e2352485c8505d411f86bad25",
+        "source": "SHARED_FACE_WORDS_AND_PHYSICAL_COUPLING.md",
+        "sha256": "8e3008e85bcc2ebf03d3ae3ddd4a2aff3ad4635d5de41d2cb1964a58a1a9a76c",
+        "actual_reading": "SF1–SF5 exact ordered words, signs, shared-edge geometry and disjoint three-edge paths; no claim to have reread entire source."
+      },
+      {
+        "commit": "ace49ec037c9eb1e2352485c8505d411f86bad25",
+        "source": "ACTUAL_HESSIAN_BOUNDS.md",
+        "sha256": "fb1cbd3688ae88fa8ed3160811e218af5ca3753015ef0b2b74dabbc13faa21ea",
+        "actual_reading": "HCB1 complete original-state Hessian minimum-principle calculation read and used."
+      },
+      {
+        "commit": "ace49ec037c9eb1e2352485c8505d411f86bad25",
+        "source": "ORIGINAL_SOURCE_HESSIAN_AND_FILTER.md",
+        "sha256": "f393792c5e2f8ca93571e5b900d38b29d93bb0835f2f83db7e366c00371f4a74",
+        "actual_reading": "HSF1–HSF13 full source Hessian, finite constants, actual smooth-test limit and stronger smooth-test comparison read."
+      },
+      {
+        "commit": "ace49ec037c9eb1e2352485c8505d411f86bad25",
+        "source": "ACTUAL_FILTERED_CURRENT_AND_TAIL.md",
+        "sha256": "507f2d9b719687d720aff857acd67e5acf3bfb26aaa3e2a6a16ad01006d41eba",
+        "actual_reading": "FTC11 complete original Hessian identity and coefficient21, retained as provider rather than a new bound."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-15T06:12:53.128520+00:00",
+      "coverage": "Complete SMP1–SMP13: original edge-star conditioning, full conditional weighted Bochner identity, polynomial first-moment matrix floor, complete deficit refinement, exact source Hessian provider, energy-dependent second-moment matrix upper bound, original covariance floor with all finite factors, and the exact SCR missing-trial receiver.",
+      "strengthening": "Actual full raw face covariance has a strictly positive polynomial matrix floor independent of total box volume and face count. The first-moment floor applies to all complex raw coefficients, including oscillating and growing families. Conditional links are allowed to be coupled.",
+      "corrections": "No earlier published error found. Shared-link gradient and coefficient21 Hessian results already exist in PVC,SF,FTC,HSF and are explicitly used as providers. The smooth-test refinement is compared with the stronger prior HSF bound; it is not claimed to supersede it.",
+      "limitations": "The polynomial covariance floor tends to zero on fixed smooth support and does not locate mass in the shrinking annulus. Actual cross-patch filtered matrices, full residual, reconstruction and smooth global no-gap remain active.",
+      "diagnostic_count": 143,
+      "diagnostic_scope": "Symbolic finite constants and original-path limits; coupled positive two-factor densities with full Bochner cross terms, not Yang-Mills ground samples; exact full box Hessian tensors and complex coefficients; finite spectral and dependent-trial matrix fixtures.",
+      "figures_inspected": [
+        "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
+          "prefix": "SMP",
+          "tags": 13,
+          "owner_sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
+          "public_sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-15T06:14:22.142735+00:00",
+        "tex_sha256": "ffdf7a1acf3db616a60b01fa515a3a65167f753a5f32f35d6ca158dd3b5ed6cf",
+        "pdf_sha256": "48318ee8a340d414f55d6e88f3a901d8704e8dcc71d98d0228133a85be9e4077",
+        "pages": 1336,
+        "source_files": 121,
+        "math_blocks": 27201,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-15T06:14:21.842780+00:00",
+          "complete": true,
+          "pages": 1336,
+          "inspected_pages": [
+            914,
+            915,
+            916,
+            1289,
+            1290,
+            1291,
+            1329,
+            1330,
+            1331,
+            1332,
+            1333,
+            1334,
+            1335,
+            1336
+          ],
+          "new_proof_pages": [
+            1331,
+            1332,
+            1333,
+            1334,
+            1335,
+            1336
+          ],
+          "receiving_pages": [
+            915,
+            1290,
+            1330
+          ],
+          "figures_inspected": [
+            "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png"
+          ],
+          "method": "All14new/receiving/adjacent pages viewed in four rendered contact sheets; original figure inspected after spacing correction. All equations and the full finite coefficients visible; no new clipping or overflow.",
+          "new_overflows": 0,
+          "new_missing_characters": 0,
+          "inherited_overflows": 59,
+          "inherited_missing": [
+            "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+          ]
+        }
+      }
+    },
+    "new_external_reading": false,
+    "index_queries": [
+      "\"Yang\" AND \"correlation\"",
+      "\"Wilson\" AND \"gradient\"",
+      "\"Yang\" AND \"correlation\"",
+      "\"Wilson\" AND \"gradient\""
+    ],
+    "index_routing_hit_count": 16,
+    "routing_assessment": "Bounded index hits are metadata routes only and were not read or used. The retained programme sources supply exact operators and actual-state estimates. No new external result or novelty claimed.",
+    "routing_is_not_reading": true
   }
 ]

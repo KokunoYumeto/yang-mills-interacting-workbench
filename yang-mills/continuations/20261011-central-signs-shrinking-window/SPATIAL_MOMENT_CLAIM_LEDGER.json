@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SMP-local-conditional-energy-floor",
+    "original": "The current raw full-source receiver does not provide a box-volume-independent polynomial first-energy floor for every complex face coefficient vector.",
+    "change": "SMP2–SMP8 condition on at most four original links, keep the coupled actual density, and prove the explicit full first-moment matrix floor and its retained-curvature refinement.",
+    "affects": [
+      "SCR7–SCR13",
+      "PVC22",
+      "HCB1",
+      "all raw spatial coefficients"
+    ],
+    "proof": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SCR,HSF,FMP, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "SMP-actual-covariance-metric-floor",
+    "original": "The full original source matrix S in SCR12 contains unevaluated correlations and its possible degeneracy has not been excluded by a polynomial bound.",
+    "change": "SMP9–SMP12 retain the exact original source Hessian and full weighted Bochner term, then prove S>=sigma I with sigma=64kappa²a4/((32+7kappa a)(736+155kappa a)). All finite factors and coefficient limit are retained.",
+    "affects": [
+      "SCR8",
+      "SCR12–SCR13",
+      "FTC11",
+      "HSF1–HSF13"
+    ],
+    "proof": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SCR,HSF,FMP, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "SMP-missing-trial-cost",
+    "original": "Dependent trial columns in SCR12 are retained without an evaluated cost for source directions omitted by their overlap matrix.",
+    "change": "SMP13 proves E=S on ker H and a positive polynomial lower bound there, including the complete residual trace consequence.",
+    "affects": [
+      "SCR12–SCR13",
+      "full cross-patch residual"
+    ],
+    "proof": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SCR,HSF,FMP, programme sources and cumulative manuscript."
+  }
+]

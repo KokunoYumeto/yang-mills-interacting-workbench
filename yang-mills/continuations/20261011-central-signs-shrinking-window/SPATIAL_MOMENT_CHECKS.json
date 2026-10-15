@@ -1,0 +1,763 @@
+{
+  "checks": 143,
+  "all_passed": true,
+  "scope": "Exact algebra; constructed coupled positive densities, not Yang-Mills ground samples; full original link Hessian fixtures; finite spectral moment matrices; original bound formulas.",
+  "conditional_samples": [
+    {
+      "strength": 0.2,
+      "gamma": "-1.0",
+      "partition": 1.0150835768269244,
+      "actual_fixture_variance": 1.3530632621105765,
+      "proved_floor": 0.9302325581395349
+    },
+    {
+      "strength": 0.2,
+      "gamma": "1.0",
+      "partition": 1.0150835768269244,
+      "actual_fixture_variance": 1.6519036321502973,
+      "proved_floor": 0.9302325581395349
+    },
+    {
+      "strength": 0.2,
+      "gamma": "(0.3+0.7j)",
+      "partition": 1.0150835768269244,
+      "actual_fixture_variance": 1.2317879787390034,
+      "proved_floor": 0.7348837209302326
+    },
+    {
+      "strength": 1.0,
+      "gamma": "-1.0",
+      "partition": 1.4310573141315777,
+      "actual_fixture_variance": 0.8670263443368302,
+      "proved_floor": 0.5333333333333333
+    },
+    {
+      "strength": 1.0,
+      "gamma": "1.0",
+      "partition": 1.4310573141315777,
+      "actual_fixture_variance": 2.240193723870102,
+      "proved_floor": 0.5333333333333333
+    },
+    {
+      "strength": 1.0,
+      "gamma": "(0.3+0.7j)",
+      "partition": 1.4310573141315777,
+      "actual_fixture_variance": 1.4333270338717292,
+      "proved_floor": 0.42133333333333334
+    },
+    {
+      "strength": 4.0,
+      "gamma": "-1.0",
+      "partition": 55.15035673088402,
+      "actual_fixture_variance": 0.2625494688599362,
+      "proved_floor": 0.20512820512820512
+    },
+    {
+      "strength": 4.0,
+      "gamma": "1.0",
+      "partition": 55.15035673088402,
+      "actual_fixture_variance": 3.3056892256277917,
+      "proved_floor": 0.20512820512820512
+    },
+    {
+      "strength": 4.0,
+      "gamma": "(0.3+0.7j)",
+      "partition": 55.15035673088402,
+      "actual_fixture_variance": 1.8659252478378305,
+      "proved_floor": 0.16205128205128205
+    },
+    {
+      "strength": 12.0,
+      "gamma": "-1.0",
+      "partition": 57293177.29981466,
+      "actual_fixture_variance": 0.08498768225306758,
+      "proved_floor": 0.07766990291262135
+    },
+    {
+      "strength": 12.0,
+      "gamma": "1.0",
+      "partition": 57293177.29981466,
+      "actual_fixture_variance": 3.7554487501810607,
+      "proved_floor": 0.07766990291262135
+    },
+    {
+      "strength": 12.0,
+      "gamma": "(0.3+0.7j)",
+      "partition": 57293177.29981466,
+      "actual_fixture_variance": 2.067541551000679,
+      "proved_floor": 0.06135922330097088
+    }
+  ],
+  "original_path": [
+    {
+      "j": 1,
+      "a": 0.01,
+      "c": 250.0,
+      "first_floor_per_coefficient": 7.986024457199901e-08,
+      "covariance_floor_per_coefficient": 1.733172254831512e-11,
+      "first_floor_over_a3": 0.07986024457199899,
+      "covariance_floor_over_a4": 0.001733172254831512
+    },
+    {
+      "j": 5,
+      "a": 0.002,
+      "c": 1250.0,
+      "first_floor_per_coefficient": 6.397760783725697e-10,
+      "covariance_floor_per_coefficient": 2.7806981489827106e-14,
+      "first_floor_over_a3": 0.07997200979657121,
+      "covariance_floor_over_a4": 0.0017379363431141938
+    },
+    {
+      "j": 10,
+      "a": 0.001,
+      "c": 2500.0,
+      "first_floor_per_coefficient": 7.998600244957134e-11,
+      "covariance_floor_per_coefficient": 1.7385332351521499e-15,
+      "first_floor_over_a3": 0.07998600244957134,
+      "covariance_floor_over_a4": 0.0017385332351521495
+    },
+    {
+      "j": 100,
+      "a": 0.0001,
+      "c": 24999.999999999996,
+      "first_floor_per_coefficient": 7.999860002449958e-14,
+      "covariance_floor_per_coefficient": 1.7390707009718772e-19,
+      "first_floor_over_a3": 0.07999860002449957,
+      "covariance_floor_over_a4": 0.0017390707009718768
+    },
+    {
+      "j": 1000,
+      "a": 1e-05,
+      "c": 249999.99999999997,
+      "first_floor_per_coefficient": 7.999986000024503e-17,
+      "covariance_floor_per_coefficient": 1.7391244612630282e-23,
+      "first_floor_over_a3": 0.07999986000024502,
+      "covariance_floor_over_a4": 0.0017391244612630274
+    }
+  ],
+  "rows": [
+    {
+      "name": "exact covariance constant",
+      "passed": true
+    },
+    {
+      "name": "full original parameter dictionary",
+      "passed": true
+    },
+    {
+      "name": "full covariance floor coefficient",
+      "passed": true
+    },
+    {
+      "name": "retained deficit monotonic derivative",
+      "passed": true
+    },
+    {
+      "name": "universal first moment substitution",
+      "passed": true
+    },
+    {
+      "name": "smooth coefficient limit",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 -1.0 integration by parts",
+      "passed": true,
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "name": "coupled 0.2 -1.0 full weighted Bochner",
+      "passed": true,
+      "error": 3.1086244689504383e-15
+    },
+    {
+      "name": "coupled 0.2 -1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 -1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 -1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 1.0 integration by parts",
+      "passed": true,
+      "error": 3.1086244689504383e-15
+    },
+    {
+      "name": "coupled 0.2 1.0 full weighted Bochner",
+      "passed": true,
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "name": "coupled 0.2 1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 (0.3+0.7j) integration by parts",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "coupled 0.2 (0.3+0.7j) full weighted Bochner",
+      "passed": true,
+      "error": 5.551115123125783e-16
+    },
+    {
+      "name": "coupled 0.2 (0.3+0.7j) Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 (0.3+0.7j) exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 0.2 (0.3+0.7j) polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 -1.0 integration by parts",
+      "passed": true,
+      "error": 1.4432899320127035e-14
+    },
+    {
+      "name": "coupled 1.0 -1.0 full weighted Bochner",
+      "passed": true,
+      "error": 2.4424906541753444e-14
+    },
+    {
+      "name": "coupled 1.0 -1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 -1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 -1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 1.0 integration by parts",
+      "passed": true,
+      "error": 1.4654943925052066e-14
+    },
+    {
+      "name": "coupled 1.0 1.0 full weighted Bochner",
+      "passed": true,
+      "error": 9.992007221626409e-15
+    },
+    {
+      "name": "coupled 1.0 1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 (0.3+0.7j) integration by parts",
+      "passed": true,
+      "error": 4.3298697960381105e-15
+    },
+    {
+      "name": "coupled 1.0 (0.3+0.7j) full weighted Bochner",
+      "passed": true,
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "coupled 1.0 (0.3+0.7j) Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 (0.3+0.7j) exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 1.0 (0.3+0.7j) polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 -1.0 integration by parts",
+      "passed": true,
+      "error": 6.306066779870889e-14
+    },
+    {
+      "name": "coupled 4.0 -1.0 full weighted Bochner",
+      "passed": true,
+      "error": 2.877698079828406e-13
+    },
+    {
+      "name": "coupled 4.0 -1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 -1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 -1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 1.0 integration by parts",
+      "passed": true,
+      "error": 6.306066779870889e-14
+    },
+    {
+      "name": "coupled 4.0 1.0 full weighted Bochner",
+      "passed": true,
+      "error": 3.397282455352979e-14
+    },
+    {
+      "name": "coupled 4.0 1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 (0.3+0.7j) integration by parts",
+      "passed": true,
+      "error": 1.8984813721090177e-14
+    },
+    {
+      "name": "coupled 4.0 (0.3+0.7j) full weighted Bochner",
+      "passed": true,
+      "error": 5.1958437552457326e-14
+    },
+    {
+      "name": "coupled 4.0 (0.3+0.7j) Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 (0.3+0.7j) exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 4.0 (0.3+0.7j) polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 -1.0 integration by parts",
+      "passed": true,
+      "error": 1.9340085088970227e-13
+    },
+    {
+      "name": "coupled 12.0 -1.0 full weighted Bochner",
+      "passed": true,
+      "error": 2.419398015263141e-12
+    },
+    {
+      "name": "coupled 12.0 -1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 -1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 -1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 1.0 integration by parts",
+      "passed": true,
+      "error": 1.9340085088970227e-13
+    },
+    {
+      "name": "coupled 12.0 1.0 full weighted Bochner",
+      "passed": true,
+      "error": 9.803269307440132e-14
+    },
+    {
+      "name": "coupled 12.0 1.0 Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 1.0 exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 1.0 polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 (0.3+0.7j) integration by parts",
+      "passed": true,
+      "error": 5.81756864903582e-14
+    },
+    {
+      "name": "coupled 12.0 (0.3+0.7j) full weighted Bochner",
+      "passed": true,
+      "error": 5.395683899678261e-13
+    },
+    {
+      "name": "coupled 12.0 (0.3+0.7j) Hessian upper receiver",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 (0.3+0.7j) exact conditional variance bound",
+      "passed": true
+    },
+    {
+      "name": "coupled 12.0 (0.3+0.7j) polynomial raw coefficient floor",
+      "passed": true
+    },
+    {
+      "name": "box2 exact edge count",
+      "passed": true
+    },
+    {
+      "name": "box2 exact face count",
+      "passed": true
+    },
+    {
+      "name": "box2 all four incidence contributions",
+      "passed": true
+    },
+    {
+      "name": "box2 every noncommon star edge disjoint",
+      "passed": true
+    },
+    {
+      "name": "box2case0 full complex Hessian identity",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "box2case0 covariant Hessian symmetry",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box2case0 retained Hessian upper bound",
+      "passed": true
+    },
+    {
+      "name": "box2case0 complete gradient upper bound",
+      "passed": true
+    },
+    {
+      "name": "box2case1 full complex Hessian identity",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box2case1 covariant Hessian symmetry",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box2case1 retained Hessian upper bound",
+      "passed": true
+    },
+    {
+      "name": "box2case1 complete gradient upper bound",
+      "passed": true
+    },
+    {
+      "name": "box2case2 full complex Hessian identity",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box2case2 covariant Hessian symmetry",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box2case2 retained Hessian upper bound",
+      "passed": true
+    },
+    {
+      "name": "box2case2 complete gradient upper bound",
+      "passed": true
+    },
+    {
+      "name": "box3 exact edge count",
+      "passed": true
+    },
+    {
+      "name": "box3 exact face count",
+      "passed": true
+    },
+    {
+      "name": "box3 all four incidence contributions",
+      "passed": true
+    },
+    {
+      "name": "box3 every noncommon star edge disjoint",
+      "passed": true
+    },
+    {
+      "name": "box3case0 full complex Hessian identity",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box3case0 covariant Hessian symmetry",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box3case0 retained Hessian upper bound",
+      "passed": true
+    },
+    {
+      "name": "box3case0 complete gradient upper bound",
+      "passed": true
+    },
+    {
+      "name": "box3case1 full complex Hessian identity",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "box3case1 covariant Hessian symmetry",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box3case1 retained Hessian upper bound",
+      "passed": true
+    },
+    {
+      "name": "box3case1 complete gradient upper bound",
+      "passed": true
+    },
+    {
+      "name": "box3case2 full complex Hessian identity",
+      "passed": true,
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "box3case2 covariant Hessian symmetry",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "box3case2 retained Hessian upper bound",
+      "passed": true
+    },
+    {
+      "name": "box3case2 complete gradient upper bound",
+      "passed": true
+    },
+    {
+      "name": "matrix0 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix0 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "matrix0 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix1 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix1 complete missing-trial covariance",
+      "passed": true,
+      "error": 1.831026719408895e-15
+    },
+    {
+      "name": "matrix1 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix2 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix2 complete missing-trial covariance",
+      "passed": true,
+      "error": 2.094764613337708e-15
+    },
+    {
+      "name": "matrix2 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix3 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix3 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.794299872214038e-15
+    },
+    {
+      "name": "matrix3 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix4 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix4 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.614624287906422e-15
+    },
+    {
+      "name": "matrix4 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix5 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix5 complete missing-trial covariance",
+      "passed": true,
+      "error": 1.8841109504205303e-15
+    },
+    {
+      "name": "matrix5 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix6 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix6 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.923660740106592e-15
+    },
+    {
+      "name": "matrix6 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix7 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix7 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.66205343881779e-15
+    },
+    {
+      "name": "matrix7 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix8 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix8 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.972054645195637e-15
+    },
+    {
+      "name": "matrix8 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix9 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix9 complete missing-trial covariance",
+      "passed": true,
+      "error": 7.771561172376096e-16
+    },
+    {
+      "name": "matrix9 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix10 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix10 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.580361673049448e-15
+    },
+    {
+      "name": "matrix10 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix11 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix11 complete missing-trial covariance",
+      "passed": true,
+      "error": 7.444291678311382e-15
+    },
+    {
+      "name": "matrix11 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix12 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix12 complete missing-trial covariance",
+      "passed": true,
+      "error": 7.588599744428075e-15
+    },
+    {
+      "name": "matrix12 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix13 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix13 complete missing-trial covariance",
+      "passed": true,
+      "error": 1.831026719408895e-15
+    },
+    {
+      "name": "matrix13 missing-trial trace lower bound",
+      "passed": true
+    },
+    {
+      "name": "matrix14 energy-dependent covariance lower floor",
+      "passed": true
+    },
+    {
+      "name": "matrix14 complete missing-trial covariance",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "matrix14 missing-trial trace lower bound",
+      "passed": true
+    }
+  ]
+}
