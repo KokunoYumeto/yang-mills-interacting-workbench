@@ -325,3 +325,14 @@ f=(\mathcal L+\zeta)^{-1}(\mathcal L+\varepsilon\zeta)^{-1}
 (\mathcal L+R_{\rm win}\zeta)^{-1}X.
 \]
 Every coefficient, both spectral tails and the full noncommuting map from the trace vector are proved. The precise central-sign receiving map includes its additional baseline. The actual five moments and filtered coupling sources, limiting annular mass and smooth global no-gap construction remain active.
+
+## Common cubic residual and the full spatial response
+
+[SCR1–SCR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/COMMON_CUBIC_SPATIAL_RESPONSE.md) compute the complete common-cubic forcing from the actual trace vector, including all ordered complementary terms and the original conditional covariance. The full signed-filter response error retains its centered source-norm difference and mixed inner product; its bound has no explicit inverse shrinking-shift prefactor.
+
+Every original spatial face, raw coefficient and cross-face term remains. The actual local curvature estimates give three explicit source bounds and their original-path coefficient, including the full boundary contribution. The complete trial-space optimization also retains dependent columns. Writing the exact squared source norm as s_phi and the optimal residual norm as r_phi, its full signed response obeys
+\[
+\left|\mathcal C_X-c^*\mathsf T c-\alpha r_\varphi^2\right|
+\le d\,r_\varphi\sqrt{4s_\varphi-3r_\varphi^2}.
+\]
+All constants, actual matrices, domains and proof steps are given in SCR1–SCR13. The state-dependent matrix entries still require evaluation; no surviving annular mass or smooth global no-gap conclusion is inferred from the finite error formula.

@@ -789,3 +789,14 @@ The full [OS1–OS40 calculation](ORIGINAL_SOURCE_COVARIANCE.md), including OS8a
 ## Full ground-family coupling and positive actual raw overlap
 
 [GF1–GF31](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_HAMILTONIAN_GROUND_FIBER.md) compute the complete original full-Hamiltonian coupling to the positive one-edge ground family, including every outside derivative, potential scalar, complementary inverse and source correction. [RO1–RO17](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/RAW_OVERLAP_AND_ORIGINAL_METRIC.md) retain the exact radius-two metric, Haar prefactor and Jacobian to prove a positive local raw overlap and derivative contribution in the actual vacuum. Separate kinetic and potential limits give the exact aligned derivative constant 9/(8 sqrt(m)) and strengthen the local marginal lower coefficient to 27R³/16. The variational overlap constant is proved positive and retained explicitly. The full complementary interaction and original shrinking spectral window remain active calculations; no continuum no-gap endpoint is asserted.
+
+## Common cubic residual and the full spatial response
+
+[SCR1–SCR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/COMMON_CUBIC_SPATIAL_RESPONSE.md) compute the complete common-cubic forcing from the actual trace vector, including all ordered complementary terms and the original conditional covariance. The full signed-filter response error retains its centered source-norm difference and mixed inner product; its bound has no explicit inverse shrinking-shift prefactor.
+
+Every original spatial face, raw coefficient and cross-face term remains. The actual local curvature estimates give three explicit source bounds and their original-path coefficient, including the full boundary contribution. The complete trial-space optimization also retains dependent columns. Writing the exact squared source norm as s_phi and the optimal residual norm as r_phi, its full signed response obeys
+\[
+\left|\mathcal C_X-c^*\mathsf T c-\alpha r_\varphi^2\right|
+\le d\,r_\varphi\sqrt{4s_\varphi-3r_\varphi^2}.
+\]
+All constants, actual matrices, domains and proof steps are given in SCR1–SCR13. The state-dependent matrix entries still require evaluation; no surviving annular mass or smooth global no-gap conclusion is inferred from the finite error formula.

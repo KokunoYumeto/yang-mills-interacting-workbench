@@ -343,3 +343,14 @@ The original source and orthogonal second-moment identity in JTR1 retain the ful
 ![Complete signed filter and the exact full-state common-resolvent map](JOINT_FILTER_AND_FULL_STATE_MAP.png)
 
 The graph is the original scalar filter at zeta=1, epsilon=1/4 and R_win=4. Its shaded interval and exact endpoints are proved in JTR12; no state-dependent spectral density is depicted. All five signed moments and all three ordered coupling terms of JTR11–JTR13 appear beneath it. The identities hold at the original shrinking shifts as well. Reproducible sources: [figure_joint_trace.py](figure_joint_trace.py) and [check_joint_trace.py](check_joint_trace.py).
+
+## Common cubic residual and the full spatial response
+
+[SCR1–SCR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/COMMON_CUBIC_SPATIAL_RESPONSE.md) compute the complete common-cubic forcing from the actual trace vector, including all ordered complementary terms and the original conditional covariance. The full signed-filter response error retains its centered source-norm difference and mixed inner product; its bound has no explicit inverse shrinking-shift prefactor.
+
+Every original spatial face, raw coefficient and cross-face term remains. The actual local curvature estimates give three explicit source bounds and their original-path coefficient, including the full boundary contribution. The complete trial-space optimization also retains dependent columns. Writing the exact squared source norm as s_phi and the optimal residual norm as r_phi, its full signed response obeys
+\[
+\left|\mathcal C_X-c^*\mathsf T c-\alpha r_\varphi^2\right|
+\le d\,r_\varphi\sqrt{4s_\varphi-3r_\varphi^2}.
+\]
+All constants, actual matrices, domains and proof steps are given in SCR1–SCR13. The state-dependent matrix entries still require evaluation; no surviving annular mass or smooth global no-gap conclusion is inferred from the finite error formula.

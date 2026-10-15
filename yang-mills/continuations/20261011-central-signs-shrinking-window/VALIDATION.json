@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-15T05:26:30.709879+00:00",
+  "checked_utc": "2026-10-15T05:54:42.538714+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -199,8 +199,8 @@
     },
     {
       "source": "LOCAL_CURVATURE_BUDGET.md",
-      "sha256": "e29e60918dcbce2dc553a17066aab308a07f9a88e56c9c81d9920778b37b7310",
-      "complete_math_blocks": 262,
+      "sha256": "221485099fbae0c69a822da20f1561ae4678d3b5ae8c5865c86c7c440dc4953b",
+      "complete_math_blocks": 263,
       "split_to_aligned_wrappers": 8
     },
     {
@@ -697,8 +697,8 @@
     },
     {
       "source": "FULL_STATE_MARGINAL_GROUND.md",
-      "sha256": "287ec92b090dd9175d0437a5dc10ca89393eeefc1283ded8474490beb7c09dc6",
-      "complete_math_blocks": 112,
+      "sha256": "a173d82805f97ff69d4ae7afb5985b0e4f016ad4485526bfb027eba5d13b5c15",
+      "complete_math_blocks": 113,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -715,8 +715,14 @@
     },
     {
       "source": "ACTUAL_TRACE_SIGNED_RESPONSE.md",
-      "sha256": "87da6acf40e50ca9238df8a3d691f8aa9a3e59bf236c8a192390860e64921544",
-      "complete_math_blocks": 41,
+      "sha256": "893535e12073b6d98dc692814dc1fe0337dac42401a140e558f33f0c6b7c4c12",
+      "complete_math_blocks": 42,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+      "sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+      "complete_math_blocks": 37,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1449,6 +1455,16 @@
     {
       "file": "JOINT_FILTER_AND_FULL_STATE_MAP.png",
       "sha256": "988acfaf1779bc53c20ebb2738b3ab46d3c298f3d2e0530d435ae7fe01d16fca",
+      "visually_inspected": true
+    },
+    {
+      "file": "COMMON_FILTER_AND_CUBIC_RESIDUAL.png",
+      "sha256": "2b81921e0883c37cd30d28f1952e509bde9819ccc9fbbc1b0d43bb217afaeb95",
+      "visually_inspected": true
+    },
+    {
+      "file": "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png",
+      "sha256": "ba874fb13a6a603f5644b06ad6e2b18a47dab27a7335d59f6a83925aa1e06e9c",
       "visually_inspected": true
     }
   ],
@@ -10883,6 +10899,158 @@
       "coverage": "Every JTR proof page, both complete figure pages, all three receiving notes and adjacent pages visually inspected. The full polynomial coefficients, operator order, signs, roots, original factors, captions and page boundaries are readable and retained.",
       "new_layout_defects": [],
       "inherited_layout": "Earlier compiler warnings are compared separately in JOINT_TRACE_RENDER_LOCATORS.json; they are not claimed repaired by this increment."
+    }
+  },
+  "common_residual_review": {
+    "utc": "2026-10-15T05:51:32.929087+00:00",
+    "coverage": "Complete SCR1–SCR13: sharp retained filter extrema; common-cubic response residual with centered mixed term and full raw matrix inequality; all ordered actual trace block terms and conditional adjoint; overlapping full spatial receiver; three actual source budgets and original-path coefficient; complete finite optimization with dependent columns and exact optimized signed interval.",
+    "strengthening": "The full response error is bounded directly by the cubic forcing without an explicit inverse shrinking-shift prefactor. The curvature budget improves the full spatial source bound. Actual conditional covariance determines K*K, and full trial-space optimization retains all cross-face terms and dependent columns.",
+    "corrections": "The source now supplies the full seven-link elliptic resolvent argument for smooth trial lifts. No earlier published error found. Sharp scalar extrema are not asserted to be actual eigenvalues, and neither the residual nor the original spatial spectral mass is assumed small or positive.",
+    "limitations": "The actual state-dependent matrices S,G,H,T are explicit but not evaluated to sufficient original-path bounds. Surviving annular weight, continuum reconstruction, theory identification and smooth global no-gap remain active.",
+    "diagnostic_count": 905,
+    "diagnostic_scope": "Exact symbolic filter identities; complex finite positive-operator fixtures with overlapping and dependent columns; three constructed positive non-Yang–Mills density checks of the conditional adjoint; original full source-budget formulas.",
+    "figures_inspected": [
+      "COMMON_FILTER_AND_CUBIC_RESIDUAL.png",
+      "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+        "prefix": "SCR",
+        "tags": 13,
+        "owner_sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+        "public_sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-15T05:54:42.538714+00:00",
+      "tex_sha256": "60ed618d92dbe6dba65e1812682412ab4138e12343c8553265a9f10b2828ef2b",
+      "pdf_sha256": "55fe0f26f328624ef6a2207e69a63c6fdb6cf28930cb84845ba36865562015fb",
+      "pages": 1327,
+      "source_files": 120,
+      "math_blocks": 27102,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-15T05:54:42.250777+00:00",
+        "complete": true,
+        "pages": 1327,
+        "inspected_pages": [
+          335,
+          336,
+          337,
+          1287,
+          1288,
+          1289,
+          1316,
+          1317,
+          1318,
+          1319,
+          1320,
+          1321,
+          1322,
+          1323,
+          1324,
+          1325,
+          1326,
+          1327
+        ],
+        "new_proof_pages": [
+          1318,
+          1319,
+          1320,
+          1321,
+          1322,
+          1323,
+          1324,
+          1325,
+          1326,
+          1327
+        ],
+        "receiving_pages": [
+          336,
+          1288,
+          1317
+        ],
+        "figures_inspected": [
+          "COMMON_FILTER_AND_CUBIC_RESIDUAL.png",
+          "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png"
+        ],
+        "method": "All18new/receiving/adjacent pages viewed in five rendered contact sheets. After the squared-source-norm wording correction, all three receiving pages viewed again at full render size; proof and figure pages unchanged.",
+        "new_overflows": 0,
+        "new_missing_characters": 0,
+        "inherited_overflows": 59,
+        "inherited_missing": [
+          "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+        ]
+      }
+    }
+  },
+  "common_residual_compile": {
+    "utc": "2026-10-15T05:54:42.538714+00:00",
+    "tex_sha256": "60ed618d92dbe6dba65e1812682412ab4138e12343c8553265a9f10b2828ef2b",
+    "pdf_sha256": "55fe0f26f328624ef6a2207e69a63c6fdb6cf28930cb84845ba36865562015fb",
+    "pages": 1327,
+    "source_files": 120,
+    "math_blocks": 27102,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-15T05:54:42.250777+00:00",
+      "complete": true,
+      "pages": 1327,
+      "inspected_pages": [
+        335,
+        336,
+        337,
+        1287,
+        1288,
+        1289,
+        1316,
+        1317,
+        1318,
+        1319,
+        1320,
+        1321,
+        1322,
+        1323,
+        1324,
+        1325,
+        1326,
+        1327
+      ],
+      "new_proof_pages": [
+        1318,
+        1319,
+        1320,
+        1321,
+        1322,
+        1323,
+        1324,
+        1325,
+        1326,
+        1327
+      ],
+      "receiving_pages": [
+        336,
+        1288,
+        1317
+      ],
+      "figures_inspected": [
+        "COMMON_FILTER_AND_CUBIC_RESIDUAL.png",
+        "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png"
+      ],
+      "method": "All18new/receiving/adjacent pages viewed in five rendered contact sheets. After the squared-source-norm wording correction, all three receiving pages viewed again at full render size; proof and figure pages unchanged.",
+      "new_overflows": 0,
+      "new_missing_characters": 0,
+      "inherited_overflows": 59,
+      "inherited_missing": [
+        "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+      ]
     }
   }
 }

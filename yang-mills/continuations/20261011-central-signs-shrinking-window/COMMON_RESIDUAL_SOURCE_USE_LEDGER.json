@@ -1,0 +1,135 @@
+[
+  {
+    "source_id": "programme:SCR-20261015",
+    "proofs": [
+      {
+        "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+        "prefix": "SCR",
+        "tags": 13,
+        "owner_sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+        "public_sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "commit": "3cc036c0b9f0692e2745d5b3a1556ada5eeaeaee",
+        "source": "ACTUAL_TRACE_SIGNED_RESPONSE.md",
+        "sha256": "87da6acf40e50ca9238df8a3d691f8aa9a3e59bf236c8a192390860e64921544",
+        "actual_reading": "JTR11–JTR13 complete common-resolvent polynomial, both spectral tails and full ordered trace map; JTR1–JTR3 and JTR7 original source and baseline context."
+      },
+      {
+        "commit": "3cc036c0b9f0692e2745d5b3a1556ada5eeaeaee",
+        "source": "FULL_STATE_MARGINAL_GROUND.md",
+        "sha256": "287ec92b090dd9175d0437a5dc10ca89393eeefc1283ded8474490beb7c09dc6",
+        "actual_reading": "FMP1–FMP9 actual conditional density, seven-link smooth inherited domains, full marginal equation, residual operator and conditional covariance."
+      },
+      {
+        "commit": "3cc036c0b9f0692e2745d5b3a1556ada5eeaeaee",
+        "source": "LOCAL_CURVATURE_BUDGET.md",
+        "sha256": "e29e60918dcbce2dc553a17066aab308a07f9a88e56c9c81d9920778b37b7310",
+        "actual_reading": "LC1–LC20 full source read, including original induced-cube incidence counts, full/outside ground construction, exact crossing expectation and first/second actual curvature budgets."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-15T05:51:32.929087+00:00",
+      "coverage": "Complete SCR1–SCR13: sharp retained filter extrema; common-cubic response residual with centered mixed term and full raw matrix inequality; all ordered actual trace block terms and conditional adjoint; overlapping full spatial receiver; three actual source budgets and original-path coefficient; complete finite optimization with dependent columns and exact optimized signed interval.",
+      "strengthening": "The full response error is bounded directly by the cubic forcing without an explicit inverse shrinking-shift prefactor. The curvature budget improves the full spatial source bound. Actual conditional covariance determines K*K, and full trial-space optimization retains all cross-face terms and dependent columns.",
+      "corrections": "The source now supplies the full seven-link elliptic resolvent argument for smooth trial lifts. No earlier published error found. Sharp scalar extrema are not asserted to be actual eigenvalues, and neither the residual nor the original spatial spectral mass is assumed small or positive.",
+      "limitations": "The actual state-dependent matrices S,G,H,T are explicit but not evaluated to sufficient original-path bounds. Surviving annular weight, continuum reconstruction, theory identification and smooth global no-gap remain active.",
+      "diagnostic_count": 905,
+      "diagnostic_scope": "Exact symbolic filter identities; complex finite positive-operator fixtures with overlapping and dependent columns; three constructed positive non-Yang–Mills density checks of the conditional adjoint; original full source-budget formulas.",
+      "figures_inspected": [
+        "COMMON_FILTER_AND_CUBIC_RESIDUAL.png",
+        "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+          "prefix": "SCR",
+          "tags": 13,
+          "owner_sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+          "public_sha256": "7fae53c0d25eec46e469f6f2d4824f48c73c5f3303ebfcd78a94080f56d122fb",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-15T05:54:42.538714+00:00",
+        "tex_sha256": "60ed618d92dbe6dba65e1812682412ab4138e12343c8553265a9f10b2828ef2b",
+        "pdf_sha256": "55fe0f26f328624ef6a2207e69a63c6fdb6cf28930cb84845ba36865562015fb",
+        "pages": 1327,
+        "source_files": 120,
+        "math_blocks": 27102,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-15T05:54:42.250777+00:00",
+          "complete": true,
+          "pages": 1327,
+          "inspected_pages": [
+            335,
+            336,
+            337,
+            1287,
+            1288,
+            1289,
+            1316,
+            1317,
+            1318,
+            1319,
+            1320,
+            1321,
+            1322,
+            1323,
+            1324,
+            1325,
+            1326,
+            1327
+          ],
+          "new_proof_pages": [
+            1318,
+            1319,
+            1320,
+            1321,
+            1322,
+            1323,
+            1324,
+            1325,
+            1326,
+            1327
+          ],
+          "receiving_pages": [
+            336,
+            1288,
+            1317
+          ],
+          "figures_inspected": [
+            "COMMON_FILTER_AND_CUBIC_RESIDUAL.png",
+            "SPATIAL_COMMON_RESIDUAL_AND_SOURCE_BOUNDS.png"
+          ],
+          "method": "All18new/receiving/adjacent pages viewed in five rendered contact sheets. After the squared-source-norm wording correction, all three receiving pages viewed again at full render size; proof and figure pages unchanged.",
+          "new_overflows": 0,
+          "new_missing_characters": 0,
+          "inherited_overflows": 59,
+          "inherited_missing": [
+            "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+          ]
+        }
+      }
+    },
+    "new_external_reading": false,
+    "index_queries": [
+      "\"spectral\" AND \"residual\"",
+      "\"conditional\" AND \"covariance\"",
+      "\"spectral\" AND \"residual\"",
+      "\"conditional\" AND \"covariance\""
+    ],
+    "index_routing_hit_count": 16,
+    "routing_assessment": "Bounded index hits are metadata routes only and were not read or used. The retained programme sources supply exact operators and actual-state estimates. No new external result or novelty claimed.",
+    "routing_is_not_reading": true
+  }
+]

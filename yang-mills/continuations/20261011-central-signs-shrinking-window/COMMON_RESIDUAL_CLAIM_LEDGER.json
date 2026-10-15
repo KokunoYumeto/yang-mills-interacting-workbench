@@ -1,0 +1,40 @@
+[
+  {
+    "id": "SCR-common-equation-error",
+    "original": "JTR11–JTR13 preserve the common signed filter but do not evaluate its full cubic forcing or a direct response-error norm.",
+    "change": "SCR1–SCR6 prove both sharp scalar extrema, the centered response identity and raw matrix interval, all original ordered block terms and the exact conditional divergence operator.",
+    "affects": [
+      "JTR11–JTR13",
+      "FMP3–FMP9",
+      "original shrinking signed filter"
+    ],
+    "proof": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in JTR,FMP,LC, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "SCR-full-spatial-source-budget",
+    "original": "A one-face coupling and triangle estimate do not retain the improved local budget for the full growing spatial source.",
+    "change": "SCR7–SCR11 keep all overlapping-patch and cross-face entries, three actual-state norm bounds, the complete original-path coefficient including the boundary term and the exact one-face upper bound.",
+    "affects": [
+      "LC15–LC20",
+      "full spatial observable",
+      "raw source coefficients"
+    ],
+    "proof": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in JTR,FMP,LC, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "SCR-optimal-common-residual",
+    "original": "The initial trace trial coefficients need not minimize the full original cubic forcing.",
+    "change": "SCR12–SCR13 solve the complete finite trial-space problem even with dependent columns, prove its kernel and norm identities, and give the optimized centered signed interval with full matrices S,G,H,T.",
+    "affects": [
+      "SCR3–SCR7",
+      "actual state-dependent residual evaluation"
+    ],
+    "proof": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in JTR,FMP,LC, programme sources and cumulative manuscript."
+  }
+]

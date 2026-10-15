@@ -1,0 +1,4210 @@
+{
+  "checks": 905,
+  "all_passed": true,
+  "constants": {
+    "beta": "9.63893755801456175597839226223820700372990396733354827326298832527275",
+    "kminus": "0.0632651455855418134319708947611654800989655916108528024408242467230041",
+    "kplus": "113/2500",
+    "alpha": "-0.009032572792770906715985447380582740049482795805426401220412123361502052",
+    "d": "0.05423257279277090671598544738058274004948279580542640122041212336150205"
+  },
+  "original_spatial_bounds": [
+    {
+      "j": 5,
+      "q": 500,
+      "kappa": "4/5",
+      "physical_side": "1",
+      "a2_Lambda": "31.26961079640269730314596",
+      "a_Z": "15.63480539820134865288288",
+      "original_Z": "1503000.0",
+      "improved_Z": "7817.402699100674326441438",
+      "limiting_aZ": "15.6"
+    },
+    {
+      "j": 10,
+      "q": 1000,
+      "kappa": "4/5",
+      "physical_side": "1",
+      "a2_Lambda": "31.23480269955016866567419",
+      "a_Z": "15.61740134977508433285758",
+      "original_Z": "6006000.0",
+      "improved_Z": "15617.40134977508433285758",
+      "limiting_aZ": "15.6"
+    },
+    {
+      "j": 20,
+      "q": 2000,
+      "kappa": "4/5",
+      "physical_side": "1",
+      "a2_Lambda": "31.21740067494376054423905",
+      "a_Z": "15.60870033747188027211985",
+      "original_Z": "24012000.0",
+      "improved_Z": "31217.40067494376054423969",
+      "limiting_aZ": "15.6"
+    },
+    {
+      "j": 100,
+      "q": 10000,
+      "kappa": "4/5",
+      "physical_side": "1",
+      "a2_Lambda": "31.20348002699955001687416",
+      "a_Z": "15.60174001349977500843708",
+      "original_Z": "600060000.0",
+      "improved_Z": "156017.4001349977500843708",
+      "limiting_aZ": "15.6"
+    }
+  ],
+  "scope": "Exact rational filter extrema; complex full cubic residual and five-moment identities; overlapping nonorthogonal patch matrices with raw complex coefficients; original radius-two four-link conditional-density adjoint with every Haar-density derivative; source bounds and full original counts. Matrix and constructed-density fixtures are not Yang\u2013Mills vacuum samples.",
+  "rows": [
+    {
+      "name": "exact filter derivative",
+      "passed": true
+    },
+    {
+      "name": "exact full upper difference",
+      "passed": true
+    },
+    {
+      "name": "integer root isolation",
+      "passed": true
+    },
+    {
+      "name": "derivative and convexity constants",
+      "passed": true
+    },
+    {
+      "name": "original signed kernel rational comparison",
+      "passed": true
+    },
+    {
+      "name": "full negative value retained",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 0 0.03 0",
+      "passed": true,
+      "error": 1.8115356374411765e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 0 0.03 0",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "common inverse receives full forcing 0 0.03 0",
+      "passed": true,
+      "error": 9.46404144130364e-16
+    },
+    {
+      "name": "full cubic block residual 0 0.03 1",
+      "passed": true,
+      "error": 4.451537480371452e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 0 0.03 1",
+      "passed": true,
+      "error": 1.8189894035458565e-12
+    },
+    {
+      "name": "common inverse receives full forcing 0 0.03 1",
+      "passed": true,
+      "error": 2.7168250861853867e-15
+    },
+    {
+      "name": "full cubic block residual 0 0.03 2",
+      "passed": true,
+      "error": 3.66205343881779e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 0 0.03 2",
+      "passed": true,
+      "error": 2.7284841053187847e-12
+    },
+    {
+      "name": "common inverse receives full forcing 0 0.03 2",
+      "passed": true,
+      "error": 5.37529199120099e-16
+    },
+    {
+      "name": "all overlapping residual entries 0 0.03",
+      "passed": true,
+      "error": 3.2792297820051222e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 0 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 0 0.03",
+      "passed": true,
+      "error": 1.1102230246251565e-14
+    },
+    {
+      "name": "exact centered oriented error 0 0.03",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "sharp centered interval 0 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 0 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 0 0.03",
+      "passed": true,
+      "error": 9.380240630155896e-13
+    },
+    {
+      "name": "optimized actual residual Gram 0 0.03",
+      "passed": true,
+      "error": 1.963086544582557e-14
+    },
+    {
+      "name": "full optimal source orthogonality 0 0.03",
+      "passed": true,
+      "error": 1.9128082721559434e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 0 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 0 0.03",
+      "passed": true,
+      "error": 3.8191672047105385e-14
+    },
+    {
+      "name": "exact optimized sum norm 0 0.03",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "complete optimized signed interval 0 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 0 0.8 0",
+      "passed": true,
+      "error": 1.4043333874306805e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 0 0.8 0",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "common inverse receives full forcing 0 0.8 0",
+      "passed": true,
+      "error": 1.4659183199485642e-16
+    },
+    {
+      "name": "full cubic block residual 0 0.8 1",
+      "passed": true,
+      "error": 4.0827234693669837e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 0 0.8 1",
+      "passed": true,
+      "error": 3.637978807091713e-12
+    },
+    {
+      "name": "common inverse receives full forcing 0 0.8 1",
+      "passed": true,
+      "error": 4.041803326708953e-16
+    },
+    {
+      "name": "full cubic block residual 0 0.8 2",
+      "passed": true,
+      "error": 1.807312143953211e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 0 0.8 2",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "common inverse receives full forcing 0 0.8 2",
+      "passed": true,
+      "error": 2.173602285337623e-17
+    },
+    {
+      "name": "all overlapping residual entries 0 0.8",
+      "passed": true,
+      "error": 2.7284841053187847e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 0 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 0 0.8",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "exact centered oriented error 0 0.8",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "sharp centered interval 0 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 0 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 0 0.8",
+      "passed": true,
+      "error": 1.5635169592848326e-12
+    },
+    {
+      "name": "optimized actual residual Gram 0 0.8",
+      "passed": true,
+      "error": 3.19745464670804e-13
+    },
+    {
+      "name": "full optimal source orthogonality 0 0.8",
+      "passed": true,
+      "error": 3.122202975631525e-13
+    },
+    {
+      "name": "full residual minimization improves old coefficients 0 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 0 0.8",
+      "passed": true,
+      "error": 6.252776074688882e-13
+    },
+    {
+      "name": "exact optimized sum norm 0 0.8",
+      "passed": true,
+      "error": 1.2647660696529783e-12
+    },
+    {
+      "name": "complete optimized signed interval 0 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 0 4.0 0",
+      "passed": true,
+      "error": 2.7487830685268716e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 0 4.0 0",
+      "passed": true,
+      "error": 3.552713678800501e-14
+    },
+    {
+      "name": "common inverse receives full forcing 0 4.0 0",
+      "passed": true,
+      "error": 2.5310954569082268e-18
+    },
+    {
+      "name": "full cubic block residual 0 4.0 1",
+      "passed": true,
+      "error": 1.1901673676157817e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 0 4.0 1",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "common inverse receives full forcing 0 4.0 1",
+      "passed": true,
+      "error": 5.597046046747692e-18
+    },
+    {
+      "name": "full cubic block residual 0 4.0 2",
+      "passed": true,
+      "error": 2.531698018113677e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 0 4.0 2",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 0 4.0 2",
+      "passed": true,
+      "error": 2.905682049843217e-18
+    },
+    {
+      "name": "all overlapping residual entries 0 4.0",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 0 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 0 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 0 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 0 4.0",
+      "passed": true,
+      "error": 3.019806626980426e-14
+    },
+    {
+      "name": "exact centered oriented error 0 4.0",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "sharp centered interval 0 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 0 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 0 4.0",
+      "passed": true,
+      "error": 8.738520219430401e-14
+    },
+    {
+      "name": "optimized actual residual Gram 0 4.0",
+      "passed": true,
+      "error": 2.7012892057857038e-15
+    },
+    {
+      "name": "full optimal source orthogonality 0 4.0",
+      "passed": true,
+      "error": 2.6945789820192467e-15
+    },
+    {
+      "name": "full residual minimization improves old coefficients 0 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 0 4.0",
+      "passed": true,
+      "error": 5.329070518200751e-15
+    },
+    {
+      "name": "exact optimized sum norm 0 4.0",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "complete optimized signed interval 0 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 1 0.03 0",
+      "passed": true,
+      "error": 7.369205161712791e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 1 0.03 0",
+      "passed": true,
+      "error": 2.2737367544323206e-12
+    },
+    {
+      "name": "common inverse receives full forcing 1 0.03 0",
+      "passed": true,
+      "error": 6.256774122628426e-15
+    },
+    {
+      "name": "full cubic block residual 1 0.03 1",
+      "passed": true,
+      "error": 1.859350133011823e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 1 0.03 1",
+      "passed": true,
+      "error": 9.094947017729282e-13
+    },
+    {
+      "name": "common inverse receives full forcing 1 0.03 1",
+      "passed": true,
+      "error": 2.1925587185261374e-15
+    },
+    {
+      "name": "full cubic block residual 1 0.03 2",
+      "passed": true,
+      "error": 6.394884621840902e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 1 0.03 2",
+      "passed": true,
+      "error": 9.094947017729282e-12
+    },
+    {
+      "name": "common inverse receives full forcing 1 0.03 2",
+      "passed": true,
+      "error": 5.959649507765207e-15
+    },
+    {
+      "name": "all overlapping residual entries 1 0.03",
+      "passed": true,
+      "error": 9.094947017729282e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 1 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 1 0.03",
+      "passed": true,
+      "error": 2.7711166694643907e-13
+    },
+    {
+      "name": "exact centered oriented error 1 0.03",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "sharp centered interval 1 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 1 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 1 0.03",
+      "passed": true,
+      "error": 1.4210854715202004e-13
+    },
+    {
+      "name": "optimized actual residual Gram 1 0.03",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "full optimal source orthogonality 1 0.03",
+      "passed": true,
+      "error": 1.1322097734007351e-15
+    },
+    {
+      "name": "full residual minimization improves old coefficients 1 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 1 0.03",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "exact optimized sum norm 1 0.03",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "complete optimized signed interval 1 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 1 0.8 0",
+      "passed": true,
+      "error": 7.160723346098895e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 1 0.8 0",
+      "passed": true,
+      "error": 4.092726157978177e-12
+    },
+    {
+      "name": "common inverse receives full forcing 1 0.8 0",
+      "passed": true,
+      "error": 1.2739297094816719e-15
+    },
+    {
+      "name": "full cubic block residual 1 0.8 1",
+      "passed": true,
+      "error": 2.787522182230478e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 1 0.8 1",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "common inverse receives full forcing 1 0.8 1",
+      "passed": true,
+      "error": 9.3748443467737e-16
+    },
+    {
+      "name": "full cubic block residual 1 0.8 2",
+      "passed": true,
+      "error": 3.3893637946200148e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 1 0.8 2",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "common inverse receives full forcing 1 0.8 2",
+      "passed": true,
+      "error": 1.632576640497973e-16
+    },
+    {
+      "name": "all overlapping residual entries 1 0.8",
+      "passed": true,
+      "error": 4.547473508864641e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 1 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 1 0.8",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "exact centered oriented error 1 0.8",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "sharp centered interval 1 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 1 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 1 0.8",
+      "passed": true,
+      "error": 4.43961293735052e-13
+    },
+    {
+      "name": "optimized actual residual Gram 1 0.8",
+      "passed": true,
+      "error": 1.4210854715202004e-13
+    },
+    {
+      "name": "full optimal source orthogonality 1 0.8",
+      "passed": true,
+      "error": 1.1066735186486805e-13
+    },
+    {
+      "name": "full residual minimization improves old coefficients 1 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 1 0.8",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "exact optimized sum norm 1 0.8",
+      "passed": true,
+      "error": 5.115907697472721e-13
+    },
+    {
+      "name": "complete optimized signed interval 1 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 1 4.0 0",
+      "passed": true,
+      "error": 2.1482170038296686e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 1 4.0 0",
+      "passed": true,
+      "error": 1.8189894035458565e-12
+    },
+    {
+      "name": "common inverse receives full forcing 1 4.0 0",
+      "passed": true,
+      "error": 1.1781441887353843e-17
+    },
+    {
+      "name": "full cubic block residual 1 4.0 1",
+      "passed": true,
+      "error": 3.9968028886505635e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 1 4.0 1",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "common inverse receives full forcing 1 4.0 1",
+      "passed": true,
+      "error": 5.702377791730529e-18
+    },
+    {
+      "name": "full cubic block residual 1 4.0 2",
+      "passed": true,
+      "error": 1.1916163935586911e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 1 4.0 2",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "common inverse receives full forcing 1 4.0 2",
+      "passed": true,
+      "error": 2.793120281609325e-17
+    },
+    {
+      "name": "all overlapping residual entries 1 4.0",
+      "passed": true,
+      "error": 1.3642420526593924e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 1 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 1 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 1 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 1 4.0",
+      "passed": true,
+      "error": 1.0658141036401503e-13
+    },
+    {
+      "name": "exact centered oriented error 1 4.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "sharp centered interval 1 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 1 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 1 4.0",
+      "passed": true,
+      "error": 6.348257973085591e-13
+    },
+    {
+      "name": "optimized actual residual Gram 1 4.0",
+      "passed": true,
+      "error": 7.127770162299144e-14
+    },
+    {
+      "name": "full optimal source orthogonality 1 4.0",
+      "passed": true,
+      "error": 6.869631125417011e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 1 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 1 4.0",
+      "passed": true,
+      "error": 1.3589129821411916e-13
+    },
+    {
+      "name": "exact optimized sum norm 1 4.0",
+      "passed": true,
+      "error": 2.7711166694643907e-13
+    },
+    {
+      "name": "complete optimized signed interval 1 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 2 0.03 0",
+      "passed": true,
+      "error": 3.4684476073050936e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 2 0.03 0",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 2 0.03 0",
+      "passed": true,
+      "error": 8.635508522760764e-16
+    },
+    {
+      "name": "full cubic block residual 2 0.03 1",
+      "passed": true,
+      "error": 8.556067554929069e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 2 0.03 1",
+      "passed": true,
+      "error": 1.8189894035458565e-11
+    },
+    {
+      "name": "common inverse receives full forcing 2 0.03 1",
+      "passed": true,
+      "error": 1.8472294793334052e-14
+    },
+    {
+      "name": "full cubic block residual 2 0.03 2",
+      "passed": true,
+      "error": 7.114303597610951e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 2 0.03 2",
+      "passed": true,
+      "error": 1.000444171950221e-11
+    },
+    {
+      "name": "common inverse receives full forcing 2 0.03 2",
+      "passed": true,
+      "error": 1.2328600537410588e-14
+    },
+    {
+      "name": "all overlapping residual entries 2 0.03",
+      "passed": true,
+      "error": 2.1827872842550278e-11
+    },
+    {
+      "name": "cross-patch mixed term nonzero 2 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 2 0.03",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "exact centered oriented error 2 0.03",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "sharp centered interval 2 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 2 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 2 0.03",
+      "passed": true,
+      "error": 1.4121042525277592e-12
+    },
+    {
+      "name": "optimized actual residual Gram 2 0.03",
+      "passed": true,
+      "error": 3.736951989880919e-14
+    },
+    {
+      "name": "full optimal source orthogonality 2 0.03",
+      "passed": true,
+      "error": 3.86363993108964e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 2 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 2 0.03",
+      "passed": true,
+      "error": 7.638334409421077e-14
+    },
+    {
+      "name": "exact optimized sum norm 2 0.03",
+      "passed": true,
+      "error": 1.4921397450962104e-13
+    },
+    {
+      "name": "complete optimized signed interval 2 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 2 0.8 0",
+      "passed": true,
+      "error": 3.202372833989377e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 2 0.8 0",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 2 0.8 0",
+      "passed": true,
+      "error": 1.72846718980451e-16
+    },
+    {
+      "name": "full cubic block residual 2 0.8 1",
+      "passed": true,
+      "error": 6.764165321960921e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 2 0.8 1",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 2 0.8 1",
+      "passed": true,
+      "error": 7.505561329662603e-17
+    },
+    {
+      "name": "full cubic block residual 2 0.8 2",
+      "passed": true,
+      "error": 8.188600426433445e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 2 0.8 2",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "common inverse receives full forcing 2 0.8 2",
+      "passed": true,
+      "error": 4.1957363356048215e-17
+    },
+    {
+      "name": "all overlapping residual entries 2 0.8",
+      "passed": true,
+      "error": 2.8421709430404007e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 2 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 2 0.8",
+      "passed": true,
+      "error": 1.7763568394002505e-14
+    },
+    {
+      "name": "exact centered oriented error 2 0.8",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "sharp centered interval 2 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 2 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 2 0.8",
+      "passed": true,
+      "error": 9.345730545338358e-14
+    },
+    {
+      "name": "optimized actual residual Gram 2 0.8",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "full optimal source orthogonality 2 0.8",
+      "passed": true,
+      "error": 1.3265568231575033e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 2 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 2 0.8",
+      "passed": true,
+      "error": 2.4868995751603507e-14
+    },
+    {
+      "name": "exact optimized sum norm 2 0.8",
+      "passed": true,
+      "error": 5.1514348342607263e-14
+    },
+    {
+      "name": "complete optimized signed interval 2 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 2 4.0 0",
+      "passed": true,
+      "error": 3.552822097363439e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 2 4.0 0",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "common inverse receives full forcing 2 4.0 0",
+      "passed": true,
+      "error": 3.78695538395053e-18
+    },
+    {
+      "name": "full cubic block residual 2 4.0 1",
+      "passed": true,
+      "error": 7.160723346098895e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 2 4.0 1",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "common inverse receives full forcing 2 4.0 1",
+      "passed": true,
+      "error": 1.8182623192729053e-18
+    },
+    {
+      "name": "full cubic block residual 2 4.0 2",
+      "passed": true,
+      "error": 2.756060177257249e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 2 4.0 2",
+      "passed": true,
+      "error": 3.552713678800501e-14
+    },
+    {
+      "name": "common inverse receives full forcing 2 4.0 2",
+      "passed": true,
+      "error": 6.2433478737987236e-18
+    },
+    {
+      "name": "all overlapping residual entries 2 4.0",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 2 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 2 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 2 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 2 4.0",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "exact centered oriented error 2 4.0",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "sharp centered interval 2 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 2 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 2 4.0",
+      "passed": true,
+      "error": 1.0928565370187489e-13
+    },
+    {
+      "name": "optimized actual residual Gram 2 4.0",
+      "passed": true,
+      "error": 2.731148640577885e-14
+    },
+    {
+      "name": "full optimal source orthogonality 2 4.0",
+      "passed": true,
+      "error": 2.224778631027185e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 2 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 2 4.0",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "exact optimized sum norm 2 4.0",
+      "passed": true,
+      "error": 9.947598300641403e-14
+    },
+    {
+      "name": "complete optimized signed interval 2 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 3 0.03 0",
+      "passed": true,
+      "error": 1.6758116906701664e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 3 0.03 0",
+      "passed": true,
+      "error": 4.547473508864641e-13
+    },
+    {
+      "name": "common inverse receives full forcing 3 0.03 0",
+      "passed": true,
+      "error": 2.38989246438483e-16
+    },
+    {
+      "name": "full cubic block residual 3 0.03 1",
+      "passed": true,
+      "error": 1.1656813068944672e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 3 0.03 1",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "common inverse receives full forcing 3 0.03 1",
+      "passed": true,
+      "error": 6.012462478564703e-16
+    },
+    {
+      "name": "full cubic block residual 3 0.03 2",
+      "passed": true,
+      "error": 1.897149936107019e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 3 0.03 2",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 3 0.03 2",
+      "passed": true,
+      "error": 1.517461693011718e-16
+    },
+    {
+      "name": "all overlapping residual entries 3 0.03",
+      "passed": true,
+      "error": 1.6167931168329112e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 3 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 3 0.03",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "exact centered oriented error 3 0.03",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "sharp centered interval 3 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 3 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 3 0.03",
+      "passed": true,
+      "error": 1.602188003026487e-11
+    },
+    {
+      "name": "optimized actual residual Gram 3 0.03",
+      "passed": true,
+      "error": 6.095156356882112e-13
+    },
+    {
+      "name": "full optimal source orthogonality 3 0.03",
+      "passed": true,
+      "error": 6.749169225143484e-13
+    },
+    {
+      "name": "full residual minimization improves old coefficients 3 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 3 0.03",
+      "passed": true,
+      "error": 1.3145040611561853e-12
+    },
+    {
+      "name": "exact optimized sum norm 3 0.03",
+      "passed": true,
+      "error": 2.6432189770275727e-12
+    },
+    {
+      "name": "complete optimized signed interval 3 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 3 0.8 0",
+      "passed": true,
+      "error": 5.9580819677934555e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 3 0.8 0",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "common inverse receives full forcing 3 0.8 0",
+      "passed": true,
+      "error": 5.647850449853784e-17
+    },
+    {
+      "name": "full cubic block residual 3 0.8 1",
+      "passed": true,
+      "error": 8.426000324584083e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 3 0.8 1",
+      "passed": true,
+      "error": 1.4210854715202004e-13
+    },
+    {
+      "name": "common inverse receives full forcing 3 0.8 1",
+      "passed": true,
+      "error": 5.776915683787072e-17
+    },
+    {
+      "name": "full cubic block residual 3 0.8 2",
+      "passed": true,
+      "error": 3.747228857827343e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 3 0.8 2",
+      "passed": true,
+      "error": 5.4569682106375694e-12
+    },
+    {
+      "name": "common inverse receives full forcing 3 0.8 2",
+      "passed": true,
+      "error": 1.8596365118996589e-16
+    },
+    {
+      "name": "all overlapping residual entries 3 0.8",
+      "passed": true,
+      "error": 5.4569682106375694e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 3 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 3 0.8",
+      "passed": true,
+      "error": 4.547473508864641e-13
+    },
+    {
+      "name": "exact centered oriented error 3 0.8",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "sharp centered interval 3 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 3 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 3 0.8",
+      "passed": true,
+      "error": 8.741769478233216e-13
+    },
+    {
+      "name": "optimized actual residual Gram 3 0.8",
+      "passed": true,
+      "error": 1.0942877183705065e-12
+    },
+    {
+      "name": "full optimal source orthogonality 3 0.8",
+      "passed": true,
+      "error": 1.0835907762266815e-12
+    },
+    {
+      "name": "full residual minimization improves old coefficients 3 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 3 0.8",
+      "passed": true,
+      "error": 2.1529444893531036e-12
+    },
+    {
+      "name": "exact optimized sum norm 3 0.8",
+      "passed": true,
+      "error": 4.320099833421409e-12
+    },
+    {
+      "name": "complete optimized signed interval 3 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 3 4.0 0",
+      "passed": true,
+      "error": 1.6165091241761062e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 3 4.0 0",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "common inverse receives full forcing 3 4.0 0",
+      "passed": true,
+      "error": 6.013169399850096e-18
+    },
+    {
+      "name": "full cubic block residual 3 4.0 1",
+      "passed": true,
+      "error": 1.861900614935455e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 3 4.0 1",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "common inverse receives full forcing 3 4.0 1",
+      "passed": true,
+      "error": 2.091835968936371e-18
+    },
+    {
+      "name": "full cubic block residual 3 4.0 2",
+      "passed": true,
+      "error": 2.5894628196555746e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 3 4.0 2",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 3 4.0 2",
+      "passed": true,
+      "error": 5.364336092018247e-18
+    },
+    {
+      "name": "all overlapping residual entries 3 4.0",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 3 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 3 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 3 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 3 4.0",
+      "passed": true,
+      "error": 2.8421709430404007e-13
+    },
+    {
+      "name": "exact centered oriented error 3 4.0",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "sharp centered interval 3 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 3 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 3 4.0",
+      "passed": true,
+      "error": 1.797546735911271e-13
+    },
+    {
+      "name": "optimized actual residual Gram 3 4.0",
+      "passed": true,
+      "error": 4.3944641265813476e-14
+    },
+    {
+      "name": "full optimal source orthogonality 3 4.0",
+      "passed": true,
+      "error": 4.7106960487667916e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 3 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 3 4.0",
+      "passed": true,
+      "error": 9.947598300641403e-14
+    },
+    {
+      "name": "exact optimized sum norm 3 4.0",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "complete optimized signed interval 3 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 4 0.03 0",
+      "passed": true,
+      "error": 1.432144669219779e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 4 0.03 0",
+      "passed": true,
+      "error": 7.958078640513122e-13
+    },
+    {
+      "name": "common inverse receives full forcing 4 0.03 0",
+      "passed": true,
+      "error": 4.335559509131367e-16
+    },
+    {
+      "name": "full cubic block residual 4 0.03 1",
+      "passed": true,
+      "error": 3.9241005173051e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 4 0.03 1",
+      "passed": true,
+      "error": 2.2737367544323206e-12
+    },
+    {
+      "name": "common inverse receives full forcing 4 0.03 1",
+      "passed": true,
+      "error": 4.291225192605716e-15
+    },
+    {
+      "name": "full cubic block residual 4 0.03 2",
+      "passed": true,
+      "error": 2.171905271660778e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 4 0.03 2",
+      "passed": true,
+      "error": 1.5916157281026244e-12
+    },
+    {
+      "name": "common inverse receives full forcing 4 0.03 2",
+      "passed": true,
+      "error": 4.52041112178401e-15
+    },
+    {
+      "name": "all overlapping residual entries 4 0.03",
+      "passed": true,
+      "error": 2.7284841053187847e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 4 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 4 0.03",
+      "passed": true,
+      "error": 4.884981308350689e-15
+    },
+    {
+      "name": "exact centered oriented error 4 0.03",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "sharp centered interval 4 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 4 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 4 0.03",
+      "passed": true,
+      "error": 5.529921809457298e-13
+    },
+    {
+      "name": "optimized actual residual Gram 4 0.03",
+      "passed": true,
+      "error": 1.3557455178480058e-14
+    },
+    {
+      "name": "full optimal source orthogonality 4 0.03",
+      "passed": true,
+      "error": 1.6197084762158984e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 4 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 4 0.03",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "exact optimized sum norm 4 0.03",
+      "passed": true,
+      "error": 6.394884621840902e-14
+    },
+    {
+      "name": "complete optimized signed interval 4 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 4 0.8 0",
+      "passed": true,
+      "error": 3.127914221490672e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 4 0.8 0",
+      "passed": true,
+      "error": 9.094947017729282e-13
+    },
+    {
+      "name": "common inverse receives full forcing 4 0.8 0",
+      "passed": true,
+      "error": 3.78695538395053e-16
+    },
+    {
+      "name": "full cubic block residual 4 0.8 1",
+      "passed": true,
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 4 0.8 1",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "common inverse receives full forcing 4 0.8 1",
+      "passed": true,
+      "error": 4.560471905369405e-17
+    },
+    {
+      "name": "full cubic block residual 4 0.8 2",
+      "passed": true,
+      "error": 9.792645392892018e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 4 0.8 2",
+      "passed": true,
+      "error": 2.8421709430404007e-13
+    },
+    {
+      "name": "common inverse receives full forcing 4 0.8 2",
+      "passed": true,
+      "error": 1.5800274334365065e-16
+    },
+    {
+      "name": "all overlapping residual entries 4 0.8",
+      "passed": true,
+      "error": 1.1368683772161603e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 4 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 4 0.8",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "exact centered oriented error 4 0.8",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "sharp centered interval 4 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 4 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 4 0.8",
+      "passed": true,
+      "error": 4.060403597520456e-13
+    },
+    {
+      "name": "optimized actual residual Gram 4 0.8",
+      "passed": true,
+      "error": 1.9184705264667956e-13
+    },
+    {
+      "name": "full optimal source orthogonality 4 0.8",
+      "passed": true,
+      "error": 1.939929788815284e-13
+    },
+    {
+      "name": "full residual minimization improves old coefficients 4 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 4 0.8",
+      "passed": true,
+      "error": 3.9257486150745535e-13
+    },
+    {
+      "name": "exact optimized sum norm 4 0.8",
+      "passed": true,
+      "error": 7.673861546209082e-13
+    },
+    {
+      "name": "complete optimized signed interval 4 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 4 4.0 0",
+      "passed": true,
+      "error": 5.564421850464315e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 4 4.0 0",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "common inverse receives full forcing 4 4.0 0",
+      "passed": true,
+      "error": 7.379746152381976e-18
+    },
+    {
+      "name": "full cubic block residual 4 4.0 1",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 4 4.0 1",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "common inverse receives full forcing 4 4.0 1",
+      "passed": true,
+      "error": 1.202829350736035e-17
+    },
+    {
+      "name": "full cubic block residual 4 4.0 2",
+      "passed": true,
+      "error": 9.930136612989092e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 4 4.0 2",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 4 4.0 2",
+      "passed": true,
+      "error": 8.246353630245876e-18
+    },
+    {
+      "name": "all overlapping residual entries 4 4.0",
+      "passed": true,
+      "error": 5.684341886080801e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 4 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 4 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 4 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 4 4.0",
+      "passed": true,
+      "error": 9.947598300641403e-14
+    },
+    {
+      "name": "exact centered oriented error 4 4.0",
+      "passed": true,
+      "error": 3.552713678800501e-14
+    },
+    {
+      "name": "sharp centered interval 4 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 4 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 4 4.0",
+      "passed": true,
+      "error": 7.627999762001951e-14
+    },
+    {
+      "name": "optimized actual residual Gram 4 4.0",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "full optimal source orthogonality 4 4.0",
+      "passed": true,
+      "error": 1.3203721447146771e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 4 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 4 4.0",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "exact optimized sum norm 4 4.0",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "complete optimized signed interval 4 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 5 0.03 0",
+      "passed": true,
+      "error": 1.0593180059249863e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 5 0.03 0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 5 0.03 0",
+      "passed": true,
+      "error": 1.8629347169951496e-15
+    },
+    {
+      "name": "full cubic block residual 5 0.03 1",
+      "passed": true,
+      "error": 3.66205343881779e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 5 0.03 1",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 5 0.03 1",
+      "passed": true,
+      "error": 5.224024053540252e-16
+    },
+    {
+      "name": "full cubic block residual 5 0.03 2",
+      "passed": true,
+      "error": 1.8481795690914294e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 5 0.03 2",
+      "passed": true,
+      "error": 6.821210263296962e-13
+    },
+    {
+      "name": "common inverse receives full forcing 5 0.03 2",
+      "passed": true,
+      "error": 3.6579638072545405e-16
+    },
+    {
+      "name": "all overlapping residual entries 5 0.03",
+      "passed": true,
+      "error": 9.094947017729282e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 5 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 5 0.03",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "exact centered oriented error 5 0.03",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "sharp centered interval 5 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 5 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 5 0.03",
+      "passed": true,
+      "error": 1.202161876938748e-13
+    },
+    {
+      "name": "optimized actual residual Gram 5 0.03",
+      "passed": true,
+      "error": 2.1482170038296686e-14
+    },
+    {
+      "name": "full optimal source orthogonality 5 0.03",
+      "passed": true,
+      "error": 1.8229307620542017e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 5 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 5 0.03",
+      "passed": true,
+      "error": 3.197442310920451e-14
+    },
+    {
+      "name": "exact optimized sum norm 5 0.03",
+      "passed": true,
+      "error": 7.105427357601002e-14
+    },
+    {
+      "name": "complete optimized signed interval 5 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 5 0.8 0",
+      "passed": true,
+      "error": 1.551136925266137e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 5 0.8 0",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "common inverse receives full forcing 5 0.8 0",
+      "passed": true,
+      "error": 1.799101445940667e-16
+    },
+    {
+      "name": "full cubic block residual 5 0.8 1",
+      "passed": true,
+      "error": 7.536443801682121e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 5 0.8 1",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "common inverse receives full forcing 5 0.8 1",
+      "passed": true,
+      "error": 6.546139416680338e-17
+    },
+    {
+      "name": "full cubic block residual 5 0.8 2",
+      "passed": true,
+      "error": 3.7846434683331464e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 5 0.8 2",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 5 0.8 2",
+      "passed": true,
+      "error": 2.0230178278559177e-17
+    },
+    {
+      "name": "all overlapping residual entries 5 0.8",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 5 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 5 0.8",
+      "passed": true,
+      "error": 1.4210854715202004e-13
+    },
+    {
+      "name": "exact centered oriented error 5 0.8",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "sharp centered interval 5 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 5 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 5 0.8",
+      "passed": true,
+      "error": 2.382173337059642e-13
+    },
+    {
+      "name": "optimized actual residual Gram 5 0.8",
+      "passed": true,
+      "error": 2.847716647714797e-14
+    },
+    {
+      "name": "full optimal source orthogonality 5 0.8",
+      "passed": true,
+      "error": 2.9451687033123906e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 5 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 5 0.8",
+      "passed": true,
+      "error": 6.394884621840902e-14
+    },
+    {
+      "name": "exact optimized sum norm 5 0.8",
+      "passed": true,
+      "error": 1.2789769243681803e-13
+    },
+    {
+      "name": "complete optimized signed interval 5 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 5 4.0 0",
+      "passed": true,
+      "error": 6.661338147750939e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 5 4.0 0",
+      "passed": true,
+      "error": 3.552713678800501e-14
+    },
+    {
+      "name": "common inverse receives full forcing 5 4.0 0",
+      "passed": true,
+      "error": 7.710804385055511e-18
+    },
+    {
+      "name": "full cubic block residual 5 4.0 1",
+      "passed": true,
+      "error": 3.179194921382489e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 5 4.0 1",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "common inverse receives full forcing 5 4.0 1",
+      "passed": true,
+      "error": 5.339076512604073e-18
+    },
+    {
+      "name": "full cubic block residual 5 4.0 2",
+      "passed": true,
+      "error": 1.9173136984671848e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 5 4.0 2",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 5 4.0 2",
+      "passed": true,
+      "error": 1.1547643879046508e-17
+    },
+    {
+      "name": "all overlapping residual entries 5 4.0",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 5 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 5 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 5 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 5 4.0",
+      "passed": true,
+      "error": 6.252776074688882e-13
+    },
+    {
+      "name": "exact centered oriented error 5 4.0",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "sharp centered interval 5 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 5 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 5 4.0",
+      "passed": true,
+      "error": 5.1237965343830035e-14
+    },
+    {
+      "name": "optimized actual residual Gram 5 4.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full optimal source orthogonality 5 4.0",
+      "passed": true,
+      "error": 4.705040823708615e-15
+    },
+    {
+      "name": "full residual minimization improves old coefficients 5 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 5 4.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "exact optimized sum norm 5 4.0",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "complete optimized signed interval 5 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 6 0.03 0",
+      "passed": true,
+      "error": 7.588599744428075e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 6 0.03 0",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "common inverse receives full forcing 6 0.03 0",
+      "passed": true,
+      "error": 4.172577943820896e-16
+    },
+    {
+      "name": "full cubic block residual 6 0.03 1",
+      "passed": true,
+      "error": 2.9790409838967277e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 6 0.03 1",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "common inverse receives full forcing 6 0.03 1",
+      "passed": true,
+      "error": 2.796511984674376e-16
+    },
+    {
+      "name": "full cubic block residual 6 0.03 2",
+      "passed": true,
+      "error": 5.411332257568737e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 6 0.03 2",
+      "passed": true,
+      "error": 1.0913936421275139e-11
+    },
+    {
+      "name": "common inverse receives full forcing 6 0.03 2",
+      "passed": true,
+      "error": 7.309998759575168e-15
+    },
+    {
+      "name": "all overlapping residual entries 6 0.03",
+      "passed": true,
+      "error": 1.0913936421275139e-11
+    },
+    {
+      "name": "cross-patch mixed term nonzero 6 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 6 0.03",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "exact centered oriented error 6 0.03",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "sharp centered interval 6 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 6 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 6 0.03",
+      "passed": true,
+      "error": 4.4487012026191134e-13
+    },
+    {
+      "name": "optimized actual residual Gram 6 0.03",
+      "passed": true,
+      "error": 6.839118014979478e-14
+    },
+    {
+      "name": "full optimal source orthogonality 6 0.03",
+      "passed": true,
+      "error": 6.545209798875618e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 6 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 6 0.03",
+      "passed": true,
+      "error": 1.3233858453531866e-13
+    },
+    {
+      "name": "exact optimized sum norm 6 0.03",
+      "passed": true,
+      "error": 2.6290081223123707e-13
+    },
+    {
+      "name": "complete optimized signed interval 6 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 6 0.8 0",
+      "passed": true,
+      "error": 1.7763568394002505e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 6 0.8 0",
+      "passed": true,
+      "error": 1.1368683772161603e-12
+    },
+    {
+      "name": "common inverse receives full forcing 6 0.8 0",
+      "passed": true,
+      "error": 1.572007907070404e-16
+    },
+    {
+      "name": "full cubic block residual 6 0.8 1",
+      "passed": true,
+      "error": 5.3290705182007514e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 6 0.8 1",
+      "passed": true,
+      "error": 2.2737367544323206e-12
+    },
+    {
+      "name": "common inverse receives full forcing 6 0.8 1",
+      "passed": true,
+      "error": 1.2571659638300646e-16
+    },
+    {
+      "name": "full cubic block residual 6 0.8 2",
+      "passed": true,
+      "error": 9.565974336450906e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 6 0.8 2",
+      "passed": true,
+      "error": 2.8421709430404007e-13
+    },
+    {
+      "name": "common inverse receives full forcing 6 0.8 2",
+      "passed": true,
+      "error": 8.97803197973282e-17
+    },
+    {
+      "name": "all overlapping residual entries 6 0.8",
+      "passed": true,
+      "error": 1.8189894035458565e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 6 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 6 0.8",
+      "passed": true,
+      "error": 5.684341886080801e-13
+    },
+    {
+      "name": "exact centered oriented error 6 0.8",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "sharp centered interval 6 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 6 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 6 0.8",
+      "passed": true,
+      "error": 1.9328852131274408e-13
+    },
+    {
+      "name": "optimized actual residual Gram 6 0.8",
+      "passed": true,
+      "error": 6.394884621840902e-14
+    },
+    {
+      "name": "full optimal source orthogonality 6 0.8",
+      "passed": true,
+      "error": 6.542982386475545e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 6 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 6 0.8",
+      "passed": true,
+      "error": 1.2612133559741778e-13
+    },
+    {
+      "name": "exact optimized sum norm 6 0.8",
+      "passed": true,
+      "error": 2.4158453015843406e-13
+    },
+    {
+      "name": "complete optimized signed interval 6 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 6 4.0 0",
+      "passed": true,
+      "error": 1.831026719408895e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 6 4.0 0",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "common inverse receives full forcing 6 4.0 0",
+      "passed": true,
+      "error": 1.4435191054588854e-18
+    },
+    {
+      "name": "full cubic block residual 6 4.0 1",
+      "passed": true,
+      "error": 8.045862168512413e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 6 4.0 1",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "common inverse receives full forcing 6 4.0 1",
+      "passed": true,
+      "error": 5.838607383087712e-18
+    },
+    {
+      "name": "full cubic block residual 6 4.0 2",
+      "passed": true,
+      "error": 4.051933808678555e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 6 4.0 2",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 6 4.0 2",
+      "passed": true,
+      "error": 4.293563806067231e-18
+    },
+    {
+      "name": "all overlapping residual entries 6 4.0",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "cross-patch mixed term nonzero 6 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 6 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 6 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 6 4.0",
+      "passed": true,
+      "error": 1.4921397450962104e-13
+    },
+    {
+      "name": "exact centered oriented error 6 4.0",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "sharp centered interval 6 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 6 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 6 4.0",
+      "passed": true,
+      "error": 6.28539212249071e-14
+    },
+    {
+      "name": "optimized actual residual Gram 6 4.0",
+      "passed": true,
+      "error": 6.928360995408551e-14
+    },
+    {
+      "name": "full optimal source orthogonality 6 4.0",
+      "passed": true,
+      "error": 4.6764512661835256e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 6 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 6 4.0",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "exact optimized sum norm 6 4.0",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "complete optimized signed interval 6 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 7 0.03 0",
+      "passed": true,
+      "error": 5.3762313535875544e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 7 0.03 0",
+      "passed": true,
+      "error": 7.275957614183426e-12
+    },
+    {
+      "name": "common inverse receives full forcing 7 0.03 0",
+      "passed": true,
+      "error": 5.2909145643884054e-15
+    },
+    {
+      "name": "full cubic block residual 7 0.03 1",
+      "passed": true,
+      "error": 1.0841599276764049e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 7 0.03 1",
+      "passed": true,
+      "error": 3.126388037344441e-13
+    },
+    {
+      "name": "common inverse receives full forcing 7 0.03 1",
+      "passed": true,
+      "error": 2.435203085934108e-15
+    },
+    {
+      "name": "full cubic block residual 7 0.03 2",
+      "passed": true,
+      "error": 3.8150339056589873e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 7 0.03 2",
+      "passed": true,
+      "error": 9.094947017729282e-13
+    },
+    {
+      "name": "common inverse receives full forcing 7 0.03 2",
+      "passed": true,
+      "error": 3.150471799809365e-15
+    },
+    {
+      "name": "all overlapping residual entries 7 0.03",
+      "passed": true,
+      "error": 6.366462912410498e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 7 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 7 0.03",
+      "passed": true,
+      "error": 7.815970093361102e-14
+    },
+    {
+      "name": "exact centered oriented error 7 0.03",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "sharp centered interval 7 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 7 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 7 0.03",
+      "passed": true,
+      "error": 1.0536237142122696e-12
+    },
+    {
+      "name": "optimized actual residual Gram 7 0.03",
+      "passed": true,
+      "error": 4.833290365629905e-13
+    },
+    {
+      "name": "full optimal source orthogonality 7 0.03",
+      "passed": true,
+      "error": 4.800612574738748e-13
+    },
+    {
+      "name": "full residual minimization improves old coefficients 7 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 7 0.03",
+      "passed": true,
+      "error": 9.521272659185342e-13
+    },
+    {
+      "name": "exact optimized sum norm 7 0.03",
+      "passed": true,
+      "error": 1.9042545318370685e-12
+    },
+    {
+      "name": "complete optimized signed interval 7 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 7 0.8 0",
+      "passed": true,
+      "error": 1.5713480306226774e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 7 0.8 0",
+      "passed": true,
+      "error": 1.8189894035458565e-12
+    },
+    {
+      "name": "common inverse receives full forcing 7 0.8 0",
+      "passed": true,
+      "error": 3.31073236550372e-16
+    },
+    {
+      "name": "full cubic block residual 7 0.8 1",
+      "passed": true,
+      "error": 1.2316972551536998e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 7 0.8 1",
+      "passed": true,
+      "error": 2.1316282072803006e-14
+    },
+    {
+      "name": "common inverse receives full forcing 7 0.8 1",
+      "passed": true,
+      "error": 1.184194975819842e-16
+    },
+    {
+      "name": "full cubic block residual 7 0.8 2",
+      "passed": true,
+      "error": 1.120830491896282e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 7 0.8 2",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "common inverse receives full forcing 7 0.8 2",
+      "passed": true,
+      "error": 1.445972923631488e-16
+    },
+    {
+      "name": "all overlapping residual entries 7 0.8",
+      "passed": true,
+      "error": 2.2737367544323206e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 7 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 7 0.8",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "exact centered oriented error 7 0.8",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "sharp centered interval 7 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 7 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 7 0.8",
+      "passed": true,
+      "error": 8.043896115216799e-13
+    },
+    {
+      "name": "optimized actual residual Gram 7 0.8",
+      "passed": true,
+      "error": 9.60260127315948e-14
+    },
+    {
+      "name": "full optimal source orthogonality 7 0.8",
+      "passed": true,
+      "error": 1.0316651875749872e-13
+    },
+    {
+      "name": "full residual minimization improves old coefficients 7 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 7 0.8",
+      "passed": true,
+      "error": 2.0605739337042905e-13
+    },
+    {
+      "name": "exact optimized sum norm 7 0.8",
+      "passed": true,
+      "error": 3.979039320256561e-13
+    },
+    {
+      "name": "complete optimized signed interval 7 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 7 4.0 0",
+      "passed": true,
+      "error": 3.3399081181809284e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 7 4.0 0",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 7 4.0 0",
+      "passed": true,
+      "error": 4.9447226916282755e-18
+    },
+    {
+      "name": "full cubic block residual 7 4.0 1",
+      "passed": true,
+      "error": 3.675492212195508e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 7 4.0 1",
+      "passed": true,
+      "error": 7.105427357601002e-14
+    },
+    {
+      "name": "common inverse receives full forcing 7 4.0 1",
+      "passed": true,
+      "error": 4.771721447803476e-18
+    },
+    {
+      "name": "full cubic block residual 7 4.0 2",
+      "passed": true,
+      "error": 1.9131948672901813e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 7 4.0 2",
+      "passed": true,
+      "error": 9.094947017729282e-13
+    },
+    {
+      "name": "common inverse receives full forcing 7 4.0 2",
+      "passed": true,
+      "error": 1.7460704877789688e-17
+    },
+    {
+      "name": "all overlapping residual entries 7 4.0",
+      "passed": true,
+      "error": 1.0231815394945443e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 7 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 7 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 7 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 7 4.0",
+      "passed": true,
+      "error": 7.531752999057062e-13
+    },
+    {
+      "name": "exact centered oriented error 7 4.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "sharp centered interval 7 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 7 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 7 4.0",
+      "passed": true,
+      "error": 6.07087979554246e-14
+    },
+    {
+      "name": "optimized actual residual Gram 7 4.0",
+      "passed": true,
+      "error": 7.32410687763558e-15
+    },
+    {
+      "name": "full optimal source orthogonality 7 4.0",
+      "passed": true,
+      "error": 2.2315206618374916e-15
+    },
+    {
+      "name": "full residual minimization improves old coefficients 7 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 7 4.0",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "exact optimized sum norm 7 4.0",
+      "passed": true,
+      "error": 2.1316282072803006e-14
+    },
+    {
+      "name": "complete optimized signed interval 7 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 8 0.03 0",
+      "passed": true,
+      "error": 1.474376176702208e-13
+    },
+    {
+      "name": "orthogonal residual squared norm 8 0.03 0",
+      "passed": true,
+      "error": 2.7284841053187847e-11
+    },
+    {
+      "name": "common inverse receives full forcing 8 0.03 0",
+      "passed": true,
+      "error": 1.457944214716287e-14
+    },
+    {
+      "name": "full cubic block residual 8 0.03 1",
+      "passed": true,
+      "error": 1.2902014453304474e-13
+    },
+    {
+      "name": "orthogonal residual squared norm 8 0.03 1",
+      "passed": true,
+      "error": 1.8189894035458565e-11
+    },
+    {
+      "name": "common inverse receives full forcing 8 0.03 1",
+      "passed": true,
+      "error": 1.6328961570311263e-14
+    },
+    {
+      "name": "full cubic block residual 8 0.03 2",
+      "passed": true,
+      "error": 1.1461137232881496e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 8 0.03 2",
+      "passed": true,
+      "error": 1.4210854715202004e-13
+    },
+    {
+      "name": "common inverse receives full forcing 8 0.03 2",
+      "passed": true,
+      "error": 2.6040366243954823e-15
+    },
+    {
+      "name": "all overlapping residual entries 8 0.03",
+      "passed": true,
+      "error": 2.3646862246096134e-11
+    },
+    {
+      "name": "cross-patch mixed term nonzero 8 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 8 0.03",
+      "passed": true,
+      "error": 4.440892098500626e-14
+    },
+    {
+      "name": "exact centered oriented error 8 0.03",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "sharp centered interval 8 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 8 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 8 0.03",
+      "passed": true,
+      "error": 4.933029617208656e-13
+    },
+    {
+      "name": "optimized actual residual Gram 8 0.03",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "full optimal source orthogonality 8 0.03",
+      "passed": true,
+      "error": 6.0647044203266556e-15
+    },
+    {
+      "name": "full residual minimization improves old coefficients 8 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 8 0.03",
+      "passed": true,
+      "error": 1.2434497875801753e-14
+    },
+    {
+      "name": "exact optimized sum norm 8 0.03",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "complete optimized signed interval 8 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 8 0.8 0",
+      "passed": true,
+      "error": 9.903189379656396e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 8 0.8 0",
+      "passed": true,
+      "error": 5.684341886080801e-13
+    },
+    {
+      "name": "common inverse receives full forcing 8 0.8 0",
+      "passed": true,
+      "error": 3.206482787904558e-16
+    },
+    {
+      "name": "full cubic block residual 8 0.8 1",
+      "passed": true,
+      "error": 1.1957467920563633e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 8 0.8 1",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 8 0.8 1",
+      "passed": true,
+      "error": 3.8879798294016767e-17
+    },
+    {
+      "name": "full cubic block residual 8 0.8 2",
+      "passed": true,
+      "error": 2.4629941861785993e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 8 0.8 2",
+      "passed": true,
+      "error": 3.979039320256561e-13
+    },
+    {
+      "name": "common inverse receives full forcing 8 0.8 2",
+      "passed": true,
+      "error": 1.2509268882771003e-16
+    },
+    {
+      "name": "all overlapping residual entries 8 0.8",
+      "passed": true,
+      "error": 1.226574397605873e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 8 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 8 0.8",
+      "passed": true,
+      "error": 7.389644451905042e-13
+    },
+    {
+      "name": "exact centered oriented error 8 0.8",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "sharp centered interval 8 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 8 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 8 0.8",
+      "passed": true,
+      "error": 2.620352136458703e-13
+    },
+    {
+      "name": "optimized actual residual Gram 8 0.8",
+      "passed": true,
+      "error": 2.3598818713016666e-13
+    },
+    {
+      "name": "full optimal source orthogonality 8 0.8",
+      "passed": true,
+      "error": 2.152166688922691e-13
+    },
+    {
+      "name": "full residual minimization improves old coefficients 8 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 8 0.8",
+      "passed": true,
+      "error": 4.263256414560601e-13
+    },
+    {
+      "name": "exact optimized sum norm 8 0.8",
+      "passed": true,
+      "error": 8.526512829121202e-13
+    },
+    {
+      "name": "complete optimized signed interval 8 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 8 4.0 0",
+      "passed": true,
+      "error": 9.368072144568355e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 8 4.0 0",
+      "passed": true,
+      "error": 7.105427357601002e-14
+    },
+    {
+      "name": "common inverse receives full forcing 8 4.0 0",
+      "passed": true,
+      "error": 6.594944350062753e-18
+    },
+    {
+      "name": "full cubic block residual 8 4.0 1",
+      "passed": true,
+      "error": 6.0402662910232525e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 8 4.0 1",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "common inverse receives full forcing 8 4.0 1",
+      "passed": true,
+      "error": 2.637977740025101e-18
+    },
+    {
+      "name": "full cubic block residual 8 4.0 2",
+      "passed": true,
+      "error": 8.343678738167853e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 8 4.0 2",
+      "passed": true,
+      "error": 3.126388037344441e-13
+    },
+    {
+      "name": "common inverse receives full forcing 8 4.0 2",
+      "passed": true,
+      "error": 4.827439849967252e-18
+    },
+    {
+      "name": "all overlapping residual entries 8 4.0",
+      "passed": true,
+      "error": 3.126388037344441e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 8 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 8 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 8 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 8 4.0",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "exact centered oriented error 8 4.0",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "sharp centered interval 8 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 8 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 8 4.0",
+      "passed": true,
+      "error": 8.747542958250513e-15
+    },
+    {
+      "name": "optimized actual residual Gram 8 4.0",
+      "passed": true,
+      "error": 3.66205343881779e-15
+    },
+    {
+      "name": "full optimal source orthogonality 8 4.0",
+      "passed": true,
+      "error": 1.3947004136484323e-16
+    },
+    {
+      "name": "full residual minimization improves old coefficients 8 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 8 4.0",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "name": "exact optimized sum norm 8 4.0",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "complete optimized signed interval 8 4.0",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 9 0.03 0",
+      "passed": true,
+      "error": 1.0395861869767154e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 9 0.03 0",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "common inverse receives full forcing 9 0.03 0",
+      "passed": true,
+      "error": 1.9385901698687262e-16
+    },
+    {
+      "name": "full cubic block residual 9 0.03 1",
+      "passed": true,
+      "error": 1.5072887603364242e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 9 0.03 1",
+      "passed": true,
+      "error": 7.958078640513122e-13
+    },
+    {
+      "name": "common inverse receives full forcing 9 0.03 1",
+      "passed": true,
+      "error": 5.933464366067995e-16
+    },
+    {
+      "name": "full cubic block residual 9 0.03 2",
+      "passed": true,
+      "error": 1.464821375527116e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 9 0.03 2",
+      "passed": true,
+      "error": 1.3642420526593924e-12
+    },
+    {
+      "name": "common inverse receives full forcing 9 0.03 2",
+      "passed": true,
+      "error": 7.644129414963403e-16
+    },
+    {
+      "name": "all overlapping residual entries 9 0.03",
+      "passed": true,
+      "error": 1.8189894035458565e-12
+    },
+    {
+      "name": "cross-patch mixed term nonzero 9 0.03",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 0.03 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 0.03 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 0.03 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 9 0.03",
+      "passed": true,
+      "error": 2.220446049250313e-15
+    },
+    {
+      "name": "exact centered oriented error 9 0.03",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "name": "sharp centered interval 9 0.03",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 9 0.03",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 9 0.03",
+      "passed": true,
+      "error": 3.126388037344441e-13
+    },
+    {
+      "name": "optimized actual residual Gram 9 0.03",
+      "passed": true,
+      "error": 4.973997400481225e-14
+    },
+    {
+      "name": "full optimal source orthogonality 9 0.03",
+      "passed": true,
+      "error": 4.0157551039599683e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 9 0.03",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 9 0.03",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "exact optimized sum norm 9 0.03",
+      "passed": true,
+      "error": 1.9895196601282805e-13
+    },
+    {
+      "name": "complete optimized signed interval 9 0.03",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 9 0.8 0",
+      "passed": true,
+      "error": 1.897149936107019e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 9 0.8 0",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "common inverse receives full forcing 9 0.8 0",
+      "passed": true,
+      "error": 3.141717836627692e-17
+    },
+    {
+      "name": "full cubic block residual 9 0.8 1",
+      "passed": true,
+      "error": 1.2716779685529957e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 9 0.8 1",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "common inverse receives full forcing 9 0.8 1",
+      "passed": true,
+      "error": 9.934984129320279e-17
+    },
+    {
+      "name": "full cubic block residual 9 0.8 2",
+      "passed": true,
+      "error": 1.882016329483446e-14
+    },
+    {
+      "name": "orthogonal residual squared norm 9 0.8 2",
+      "passed": true,
+      "error": 1.3642420526593924e-12
+    },
+    {
+      "name": "common inverse receives full forcing 9 0.8 2",
+      "passed": true,
+      "error": 1.1443916996305594e-16
+    },
+    {
+      "name": "all overlapping residual entries 9 0.8",
+      "passed": true,
+      "error": 9.915063141370641e-13
+    },
+    {
+      "name": "cross-patch mixed term nonzero 9 0.8",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 0.8 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 0.8 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 0.8 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 9 0.8",
+      "passed": true,
+      "error": 1.3642420526593924e-12
+    },
+    {
+      "name": "exact centered oriented error 9 0.8",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "sharp centered interval 9 0.8",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 9 0.8",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 9 0.8",
+      "passed": true,
+      "error": 1.7934167621518176e-13
+    },
+    {
+      "name": "optimized actual residual Gram 9 0.8",
+      "passed": true,
+      "error": 3.972054645195637e-14
+    },
+    {
+      "name": "full optimal source orthogonality 9 0.8",
+      "passed": true,
+      "error": 4.418910792780146e-14
+    },
+    {
+      "name": "full residual minimization improves old coefficients 9 0.8",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 9 0.8",
+      "passed": true,
+      "error": 8.881784197001252e-14
+    },
+    {
+      "name": "exact optimized sum norm 9 0.8",
+      "passed": true,
+      "error": 1.5631940186722204e-13
+    },
+    {
+      "name": "complete optimized signed interval 9 0.8",
+      "passed": true
+    },
+    {
+      "name": "full cubic block residual 9 4.0 0",
+      "passed": true,
+      "error": 2.949935907900252e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 9 4.0 0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "common inverse receives full forcing 9 4.0 0",
+      "passed": true,
+      "error": 4.336808689942018e-18
+    },
+    {
+      "name": "full cubic block residual 9 4.0 1",
+      "passed": true,
+      "error": 2.808666774861361e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 9 4.0 1",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "name": "common inverse receives full forcing 9 4.0 1",
+      "passed": true,
+      "error": 1.16425595265472e-18
+    },
+    {
+      "name": "full cubic block residual 9 4.0 2",
+      "passed": true,
+      "error": 3.972054645195637e-15
+    },
+    {
+      "name": "orthogonal residual squared norm 9 4.0 2",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "common inverse receives full forcing 9 4.0 2",
+      "passed": true,
+      "error": 2.2638805996750743e-18
+    },
+    {
+      "name": "all overlapping residual entries 9 4.0",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "cross-patch mixed term nonzero 9 4.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 4.0 0.1",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 4.0 1.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix upper 9 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full raw-coefficient matrix lower 9 4.0 10.0",
+      "passed": true
+    },
+    {
+      "name": "full trial five-moment identity 9 4.0",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "exact centered oriented error 9 4.0",
+      "passed": true,
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "name": "sharp centered interval 9 4.0",
+      "passed": true
+    },
+    {
+      "name": "no inverse-shift error factor 9 4.0",
+      "passed": true
+    },
+    {
+      "name": "dependent-frame full normal equation 9 4.0",
+      "passed": true,
+      "error": 2.864289338439558e-14
+    },
+    {
+      "name": "optimized actual residual Gram 9 4.0",
+      "passed": true,
+      "error": 3.580361673049448e-15
+    },
+    {
+      "name": "full optimal source orthogonality 9 4.0",
+      "passed": true,
+      "error": 3.1401849173675502e-15
+    },
+    {
+      "name": "full residual minimization improves old coefficients 9 4.0",
+      "passed": true
+    },
+    {
+      "name": "exact common-source norm difference 9 4.0",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "exact optimized sum norm 9 4.0",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "complete optimized signed interval 9 4.0",
+      "passed": true
+    },
+    {
+      "name": "full conditional covariance adjoint with Haar derivative 0.2",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "actual conditional residual covariance 0.2",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "full conditional covariance adjoint with Haar derivative -0.3",
+      "passed": true,
+      "error": 2.7755575615628914e-16
+    },
+    {
+      "name": "actual conditional residual covariance -0.3",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "full conditional covariance adjoint with Haar derivative 0.45",
+      "passed": true,
+      "error": 6.280369834735101e-16
+    },
+    {
+      "name": "actual conditional residual covariance 0.45",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "centered spatial bound with full correlations 0 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 0 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 0 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 0",
+      "passed": true,
+      "error": 5.421010862427522e-20
+    },
+    {
+      "name": "centered spatial bound with full correlations 1 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 1 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 1 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 1",
+      "passed": true,
+      "error": 1.0842021724855044e-19
+    },
+    {
+      "name": "centered spatial bound with full correlations 2 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 2 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 2 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 2",
+      "passed": true,
+      "error": 5.421010862427522e-20
+    },
+    {
+      "name": "centered spatial bound with full correlations 3 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 3 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 3 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 3",
+      "passed": true,
+      "error": 5.421010862427522e-20
+    },
+    {
+      "name": "centered spatial bound with full correlations 4 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 4 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 4 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 4",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "centered spatial bound with full correlations 5 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 5 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 5 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 5",
+      "passed": true,
+      "error": 1.0842021724855044e-19
+    },
+    {
+      "name": "centered spatial bound with full correlations 6 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 6 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 6 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 6",
+      "passed": true,
+      "error": 2.168404344971009e-19
+    },
+    {
+      "name": "centered spatial bound with full correlations 7 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 7 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 7 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 7",
+      "passed": true,
+      "error": 1.0842021724855044e-19
+    },
+    {
+      "name": "centered spatial bound with full correlations 8 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 8 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 8 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 8",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "centered spatial bound with full correlations 9 0",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 9 1",
+      "passed": true
+    },
+    {
+      "name": "centered spatial bound with full correlations 9 2",
+      "passed": true
+    },
+    {
+      "name": "raw spatial covariance equality 9",
+      "passed": true,
+      "error": 1.0842021724855044e-19
+    },
+    {
+      "name": "original fitting cube exists 5",
+      "passed": true
+    },
+    {
+      "name": "all original boundary counts 5",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "local source bound improves original full sample bound 5",
+      "passed": true
+    },
+    {
+      "name": "original fitting cube exists 10",
+      "passed": true
+    },
+    {
+      "name": "all original boundary counts 10",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "local source bound improves original full sample bound 10",
+      "passed": true
+    },
+    {
+      "name": "original fitting cube exists 20",
+      "passed": true
+    },
+    {
+      "name": "all original boundary counts 20",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "local source bound improves original full sample bound 20",
+      "passed": true
+    },
+    {
+      "name": "original fitting cube exists 100",
+      "passed": true
+    },
+    {
+      "name": "all original boundary counts 100",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "local source bound improves original full sample bound 100",
+      "passed": true
+    },
+    {
+      "name": "complete boundary coefficient convergence",
+      "passed": true
+    }
+  ]
+}
