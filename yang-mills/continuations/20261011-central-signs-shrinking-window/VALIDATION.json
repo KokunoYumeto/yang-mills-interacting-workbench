@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-15T08:02:36.658071+00:00",
+  "checked_utc": "2026-10-15T09:05:59.749113+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -655,8 +655,8 @@
     },
     {
       "source": "ACTUAL_HESSIAN_BOUNDS.md",
-      "sha256": "fb1cbd3688ae88fa8ed3160811e218af5ca3753015ef0b2b74dabbc13faa21ea",
-      "complete_math_blocks": 142,
+      "sha256": "1c7d9272bda943d4729bca7dd17d3ebd34d4ada2868580180670f86de26b043a",
+      "complete_math_blocks": 143,
       "split_to_aligned_wrappers": 4
     },
     {
@@ -733,8 +733,8 @@
     },
     {
       "source": "FULL_CUBIC_SOURCE_COMPRESSION.md",
-      "sha256": "6a07a073e37784d406b95040ab905d5759ef78891cab4d832d9732872d880ce6",
-      "complete_math_blocks": 122,
+      "sha256": "db8b97dff8c9fb7c4557dc111b3f9b68ae8c6a77dc29dcbc0c41bd268338e4ed",
+      "complete_math_blocks": 123,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -745,8 +745,14 @@
     },
     {
       "source": "CUBIC_INVERSE_TRIAL_BOUNDS.md",
-      "sha256": "5ae0099e84edc32ee6943485618f1706bc9256392afba4d9515dac9d3427fa95",
-      "complete_math_blocks": 217,
+      "sha256": "5a5fcb0e133e8c18afd4a2c63750e64de24429cb38a32dff8b3e1f9f6b5e93d7",
+      "complete_math_blocks": 218,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "CONTRACTED_CUBIC_BOUNDS.md",
+      "sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
+      "complete_math_blocks": 188,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1509,6 +1515,16 @@
     {
       "file": "EXACT_MARGINAL_UNITARY_AND_RESIDUAL.png",
       "sha256": "9dfac5d2e171817dde063d02f2535ac0e5f8a0b1b06f574c9db142e99b6bbfa7",
+      "visually_inspected": true
+    },
+    {
+      "file": "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.png",
+      "sha256": "4509c2f34b807d0ad7660600b3f0be9788b81bb211a2a4ed2b70701c685d8df2",
+      "visually_inspected": true
+    },
+    {
+      "file": "ORIGINAL_PATH_CONTRACTED_BOUND.png",
+      "sha256": "3d2b6ba8540a84b7e63ea4c28709087b4d9404da3d7f1ce62ebeaf214083840e",
       "visually_inspected": true
     }
   ],
@@ -11566,6 +11582,134 @@
       "inherited_missing": [
         "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
       ]
+    }
+  },
+  "contracted_cubic_review": {
+    "utc": "2026-10-15T08:57:06.802789+00:00",
+    "coverage": "Complete CCJ1–CCJ20: actual compressed energy form; global Hessian trace bound and original connection contribution; full and inside derivative recursions; every contracted Casimir product and inverse-multiplier partition; complete ten-row original cubic and all lower orders; exact fifth-order cancellation and fourth-order marginal potential/covariance; full graph/residual estimate and exact original-path degree45 with explicit leading coefficient.",
+    "strengthening": "Retaining the original Hessian trace and Laplacian contractions improves the preceding degree60 residual upper function to degree45. The actual marginal geometry supplies the sharper fourth-order coefficient. All original finite terms remain.",
+    "corrections": "The count C_Q and operator mathsf C_Q have explicit different types. Fifth-order terms are cancelled by a proved identity before estimates. Split contraction indices, every lower-order term, all outside scores, crossing incidences and vacuum energy remain. Numerical finite values are not interval-certified constants or actual Wilson data.",
+    "limitations": "The explicit upper function still diverges, and its guaranteed captured fraction tends to zero. No actual residual divergence, surviving annular mass, reconstruction or smooth global no-gap conclusion is inferred.",
+    "diagnostic_count": 209,
+    "diagnostic_scope": "Exact rational original SU2 contracted products/partitions and two-link fifth/fourth coefficients in a constructed potential; matrix Hessian trace equality cases and noncommuting compressed energy bounds; complete original-path evaluation and independent leading-coefficient checks.",
+    "figures_inspected": [
+      "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.png",
+      "ORIGINAL_PATH_CONTRACTED_BOUND.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "CONTRACTED_CUBIC_BOUNDS.md",
+        "prefix": "CCJ",
+        "tags": 20,
+        "owner_sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
+        "public_sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-15T09:05:59.749113+00:00",
+      "tex_sha256": "3b80512d51852eb2e047c77392994c284a0e8b8fad2ba59a7b4bedd669d5825b",
+      "pdf_sha256": "d5289f7a136e06e8f2c1a7fec26bb6962fb5ca0b8e9a1c30def71c4f85b3fd73",
+      "pages": 1385,
+      "source_files": 125,
+      "math_blocks": 27877,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-15T09:00:51.575651+00:00",
+        "complete": true,
+        "pages": 1385,
+        "rendered": [
+          1212,
+          1213,
+          1214,
+          1349,
+          1350,
+          1351,
+          1372,
+          1373,
+          1374,
+          1375,
+          1376,
+          1377,
+          1378,
+          1379,
+          1380,
+          1381,
+          1382,
+          1383,
+          1384,
+          1385
+        ],
+        "inspected_page_count": 20,
+        "contact_sheets_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "figures_inspected": [
+          "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.png",
+          "ORIGINAL_PATH_CONTRACTED_BOUND.png"
+        ],
+        "findings": "All new proof pages, changed receiving notes and adjacent pages inspected. One count display repaired; every original formula retained. No new overflow or missing glyph. Earlier59 overflows and one earlier glyph retained.",
+        "final_eof_cleanup_rerender": "All20 page PNGs byte-identical to visually inspected images."
+      }
+    }
+  },
+  "contracted_cubic_compile": {
+    "utc": "2026-10-15T09:05:59.749113+00:00",
+    "tex_sha256": "3b80512d51852eb2e047c77392994c284a0e8b8fad2ba59a7b4bedd669d5825b",
+    "pdf_sha256": "d5289f7a136e06e8f2c1a7fec26bb6962fb5ca0b8e9a1c30def71c4f85b3fd73",
+    "pages": 1385,
+    "source_files": 125,
+    "math_blocks": 27877,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-15T09:00:51.575651+00:00",
+      "complete": true,
+      "pages": 1385,
+      "rendered": [
+        1212,
+        1213,
+        1214,
+        1349,
+        1350,
+        1351,
+        1372,
+        1373,
+        1374,
+        1375,
+        1376,
+        1377,
+        1378,
+        1379,
+        1380,
+        1381,
+        1382,
+        1383,
+        1384,
+        1385
+      ],
+      "inspected_page_count": 20,
+      "contact_sheets_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "figures_inspected": [
+        "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.png",
+        "ORIGINAL_PATH_CONTRACTED_BOUND.png"
+      ],
+      "findings": "All new proof pages, changed receiving notes and adjacent pages inspected. One count display repaired; every original formula retained. No new overflow or missing glyph. Earlier59 overflows and one earlier glyph retained.",
+      "final_eof_cleanup_rerender": "All20 page PNGs byte-identical to visually inspected images."
     }
   }
 }

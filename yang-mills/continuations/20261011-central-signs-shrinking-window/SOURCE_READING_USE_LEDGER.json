@@ -13158,5 +13158,132 @@
     "index_routing_hit_count": 25,
     "routing_assessment": "Thirteen CDE and twelve CIT disk-index hits were metadata routes only; no new external result was read or used. Original programme proof sources and exact reading coverage are listed.",
     "routing_is_not_reading": true
+  },
+  {
+    "source_id": "programme:CCJ-20261015",
+    "proofs": [
+      {
+        "source": "CONTRACTED_CUBIC_BOUNDS.md",
+        "prefix": "CCJ",
+        "tags": 20,
+        "owner_sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
+        "public_sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "commit": "d2971f6cb7f870efa71fb986e5b8f2c694d7d91f",
+        "source": "ACTUAL_HESSIAN_BOUNDS.md",
+        "sha256": "fb1cbd3688ae88fa8ed3160811e218af5ca3753015ef0b2b74dabbc13faa21ea",
+        "actual_reading": "HCB1–HCB4 reread, including the complete global Hessian proof and retained positive-matrix trace comparison; HCB1 supplies the actual lower bound."
+      },
+      {
+        "commit": "d2971f6cb7f870efa71fb986e5b8f2c694d7d91f",
+        "source": "ORIGINAL_FRAME_CUBIC_RESIDUAL.md",
+        "sha256": "a244d3e8201df748691e8b969132eef02e96252564737a32ec7dab9097bab5a1",
+        "actual_reading": "Complete CDE1–CDE8 accepted and published; all original fields, exact cubic coefficients, full outside-index term and typed maps used."
+      },
+      {
+        "commit": "d2971f6cb7f870efa71fb986e5b8f2c694d7d91f",
+        "source": "CUBIC_INVERSE_TRIAL_BOUNDS.md",
+        "sha256": "5ae0099e84edc32ee6943485618f1706bc9256392afba4d9515dac9d3427fa95",
+        "actual_reading": "Complete CIT1–CIT20 previously read and published; CIT14–CIT20 reread for every ground/multiplier derivative, graph norm, incidence ceiling and original-path comparison."
+      },
+      {
+        "commit": "d2971f6cb7f870efa71fb986e5b8f2c694d7d91f",
+        "source": "FULL_CUBIC_SOURCE_COMPRESSION.md",
+        "sha256": "6a07a073e37784d406b95040ab905d5759ef78891cab4d832d9732872d880ce6",
+        "actual_reading": "FCC1–FCC8 reread, including the actual marginal equation, conditional covariance, full compression domain and energy form; accepted FCC9–FCC13 matrix and signed-filter receivers retained."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-15T08:57:06.802789+00:00",
+      "coverage": "Complete CCJ1–CCJ20: actual compressed energy form; global Hessian trace bound and original connection contribution; full and inside derivative recursions; every contracted Casimir product and inverse-multiplier partition; complete ten-row original cubic and all lower orders; exact fifth-order cancellation and fourth-order marginal potential/covariance; full graph/residual estimate and exact original-path degree45 with explicit leading coefficient.",
+      "strengthening": "Retaining the original Hessian trace and Laplacian contractions improves the preceding degree60 residual upper function to degree45. The actual marginal geometry supplies the sharper fourth-order coefficient. All original finite terms remain.",
+      "corrections": "The count C_Q and operator mathsf C_Q have explicit different types. Fifth-order terms are cancelled by a proved identity before estimates. Split contraction indices, every lower-order term, all outside scores, crossing incidences and vacuum energy remain. Numerical finite values are not interval-certified constants or actual Wilson data.",
+      "limitations": "The explicit upper function still diverges, and its guaranteed captured fraction tends to zero. No actual residual divergence, surviving annular mass, reconstruction or smooth global no-gap conclusion is inferred.",
+      "diagnostic_count": 209,
+      "diagnostic_scope": "Exact rational original SU2 contracted products/partitions and two-link fifth/fourth coefficients in a constructed potential; matrix Hessian trace equality cases and noncommuting compressed energy bounds; complete original-path evaluation and independent leading-coefficient checks.",
+      "figures_inspected": [
+        "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.png",
+        "ORIGINAL_PATH_CONTRACTED_BOUND.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "CONTRACTED_CUBIC_BOUNDS.md",
+          "prefix": "CCJ",
+          "tags": 20,
+          "owner_sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
+          "public_sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-15T09:05:59.749113+00:00",
+        "tex_sha256": "3b80512d51852eb2e047c77392994c284a0e8b8fad2ba59a7b4bedd669d5825b",
+        "pdf_sha256": "d5289f7a136e06e8f2c1a7fec26bb6962fb5ca0b8e9a1c30def71c4f85b3fd73",
+        "pages": 1385,
+        "source_files": 125,
+        "math_blocks": 27877,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-15T09:00:51.575651+00:00",
+          "complete": true,
+          "pages": 1385,
+          "rendered": [
+            1212,
+            1213,
+            1214,
+            1349,
+            1350,
+            1351,
+            1372,
+            1373,
+            1374,
+            1375,
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385
+          ],
+          "inspected_page_count": 20,
+          "contact_sheets_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "figures_inspected": [
+            "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.png",
+            "ORIGINAL_PATH_CONTRACTED_BOUND.png"
+          ],
+          "findings": "All new proof pages, changed receiving notes and adjacent pages inspected. One count display repaired; every original formula retained. No new overflow or missing glyph. Earlier59 overflows and one earlier glyph retained.",
+          "final_eof_cleanup_rerender": "All20 page PNGs byte-identical to visually inspected images."
+        }
+      }
+    },
+    "new_external_reading": false,
+    "index_queries": [
+      "\"Laplacian\" AND \"product\"",
+      "\"Hessian\" AND \"trace\"",
+      "\"Laplacian\" AND \"product\"",
+      "\"Hessian\" AND \"trace\""
+    ],
+    "index_routing_hit_count": 11,
+    "routing_assessment": "Eleven bounded disk-index hits are metadata routes only and were not read or used. Exact programme sources and reading coverage are retained; no new external result or novelty claimed.",
+    "routing_is_not_reading": true
   }
 ]

@@ -353,3 +353,16 @@ for nonzero original face samples. All constants are explicitly given in RHB9–
 \end{gathered}
 \]
 with every constant specified in the proof, t>=0 and sigma>0. The centered original observable keeps its factor \(a^2/4\). The proof also constructs the exact unrestricted L2 coercivity defect and overcomes it using the actual ground derivatives. These complete finite-regulator bounds are small: at kappa=4/5 and j=1 the displayed formula has log10 mass floor about -466826.28. This is a bound, not the actual spectral mass. The full signed shrinking window and smooth global no-gap construction remain active.
+
+## Contracted cubic and actual marginal geometry
+
+[CCJ1–CCJ20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CONTRACTED_CUBIC_BOUNDS.md) retain the original Hessian trace and every Laplacian contraction, derive all inverse-multiplier terms, and prove exact cancellation of the mapped fifth-order coefficient. The fourth-order terms are the actual marginal potential and conditional score covariance; the complete lower-order expression and all outside contributions remain. The resulting full residual and raw matrix bounds are
+\[
+\begin{gathered}
+\|\mathcal W_\zeta\mathcal B_\zeta^{-1}F\|_\mu
+\le\widehat{\mathfrak P}_\zeta\|F\|_\rho,\\
+R\le\widehat{\mathfrak P}_\zeta^2S,\qquad
+E\le\frac{\widehat{\mathfrak P}_\zeta^2}{1+\widehat{\mathfrak P}_\zeta^2}S .
+\end{gathered}
+\]
+The complete finite upper function has exact original-path growth of degree45 with its positive leading coefficient proved, improving the preceding degree60 estimate. Its guaranteed captured fraction still tends to zero; neither divergence of the actual residual nor spectral survival follows. The entire signed response, both spectral tails and the smooth global no-gap goal remain.

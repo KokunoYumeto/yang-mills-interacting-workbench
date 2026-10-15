@@ -670,3 +670,16 @@ The exact ordered identities through order six and all their subset and partitio
 ![The exact marginal unitary and complete residual bound](EXACT_MARGINAL_UNITARY_AND_RESIDUAL.png)
 
 The figure displays the original weighted spaces, the unitary and its inverse, the full ordered product rule, and the retained complementary response. Its plot evaluates the complete CIT19 upper function at the displayed parameters and compares it with the independently proved CIT20 asymptotic term; it does not plot an actual Wilson residual. All counts and lower-order contributions remain in the finite calculation. Proof locators: CIT14–CIT20. Reproducible figure source: [figure_inverse_trial.py](figure_inverse_trial.py).
+
+## Contracted cubic and actual marginal geometry
+
+[CCJ1–CCJ20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CONTRACTED_CUBIC_BOUNDS.md) retain the original Hessian trace and every Laplacian contraction, derive all inverse-multiplier terms, and prove exact cancellation of the mapped fifth-order coefficient. The fourth-order terms are the actual marginal potential and conditional score covariance; the complete lower-order expression and all outside contributions remain. The resulting full residual and raw matrix bounds are
+\[
+\begin{gathered}
+\|\mathcal W_\zeta\mathcal B_\zeta^{-1}F\|_\mu
+\le\widehat{\mathfrak P}_\zeta\|F\|_\rho,\\
+R\le\widehat{\mathfrak P}_\zeta^2S,\qquad
+E\le\frac{\widehat{\mathfrak P}_\zeta^2}{1+\widehat{\mathfrak P}_\zeta^2}S .
+\end{gathered}
+\]
+The complete finite upper function has exact original-path growth of degree45 with its positive leading coefficient proved, improving the preceding degree60 estimate. Its guaranteed captured fraction still tends to zero; neither divergence of the actual residual nor spectral survival follows. The entire signed response, both spectral tails and the smooth global no-gap goal remain.

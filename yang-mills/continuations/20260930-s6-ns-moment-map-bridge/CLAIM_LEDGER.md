@@ -1560,3 +1560,16 @@ E\le\frac{\mathfrak P_\zeta^2}{1+\mathfrak P_\zeta^2}S .
 \end{gathered}
 \]
 The finite expression for the upper function is explicit. Its exact original-path growth is a positive constant times j to the sixtieth power, with every finite term retained. This improves the earlier exponential density comparison but remains insufficient to prove surviving spectral mass. It does not establish divergence of the actual residual. The signed response and actual shrinking-window behavior remain the next calculations toward the smooth global no-gap goal.
+
+## SZ-20261015-006 — Contracted cubic and actual marginal geometry
+
+[CCJ1–CCJ20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CONTRACTED_CUBIC_BOUNDS.md) retain the original Hessian trace and every Laplacian contraction, derive all inverse-multiplier terms, and prove exact cancellation of the mapped fifth-order coefficient. The fourth-order terms are the actual marginal potential and conditional score covariance; the complete lower-order expression and all outside contributions remain. The resulting full residual and raw matrix bounds are
+\[
+\begin{gathered}
+\|\mathcal W_\zeta\mathcal B_\zeta^{-1}F\|_\mu
+\le\widehat{\mathfrak P}_\zeta\|F\|_\rho,\\
+R\le\widehat{\mathfrak P}_\zeta^2S,\qquad
+E\le\frac{\widehat{\mathfrak P}_\zeta^2}{1+\widehat{\mathfrak P}_\zeta^2}S .
+\end{gathered}
+\]
+The complete finite upper function has exact original-path growth of degree45 with its positive leading coefficient proved, improving the preceding degree60 estimate. Its guaranteed captured fraction still tends to zero; neither divergence of the actual residual nor spectral survival follows. The entire signed response, both spectral tails and the smooth global no-gap goal remain.

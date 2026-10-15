@@ -1,0 +1,41 @@
+[
+  {
+    "id": "CCJ-full-Hessian-trace-and-contractions",
+    "original": "CIT1 bounds the Hessian array by a dimension factor times its operator ceiling, and CIT17 bounds each Laplacian pair by its full Kronecker tensor norm.",
+    "change": "CCJ1–CCJ11 retain the actual Hessian trace, all original Casimir contractions, every ordered partition and the complete energy form to derive stronger original-state coefficient bounds.",
+    "affects": [
+      "HCB1",
+      "CDE4–CDE8",
+      "CIT1–CIT18"
+    ],
+    "proof": "CONTRACTED_CUBIC_BOUNDS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in CIT, FCC and HCB, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "CCJ-exact-marginal-cubic-geometry",
+    "original": "The earlier complete transformed coefficient estimate does not use the cancellation between the principal multiplier and the conditional mean score.",
+    "change": "CCJ12–CCJ14 give the entire ten-row cubic and every mapped lower-order term, prove exact fifth-order cancellation, and identify the fourth-order potential and covariance with the actual marginal state and conditional fiber metric.",
+    "affects": [
+      "FCC1–FCC5",
+      "CDE2–CDE4",
+      "CIT17"
+    ],
+    "proof": "CONTRACTED_CUBIC_BOUNDS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in CIT, FCC and HCB, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "CCJ-evaluated-contracted-residual",
+    "original": "CIT19–CIT20 give an explicit upper function of degree60 on the original shrinking path.",
+    "change": "CCJ15–CCJ20 prove a complete contracted residual bound and all raw matrix consequences, with exact degree45 and an explicit positive leading coefficient. Full finite formulas and both negative spectral tails remain.",
+    "affects": [
+      "CIT13–CIT20",
+      "FCC8–FCC13",
+      "actual shrinking spectral response"
+    ],
+    "proof": "CONTRACTED_CUBIC_BOUNDS.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in CIT, FCC and HCB, programme sources and cumulative manuscript."
+  }
+]

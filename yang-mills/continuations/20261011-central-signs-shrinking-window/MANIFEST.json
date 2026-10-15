@@ -52,8 +52,8 @@
     },
     {
       "path": "ACTUAL_HESSIAN_BOUNDS.md",
-      "bytes": 22557,
-      "sha256": "fb1cbd3688ae88fa8ed3160811e218af5ca3753015ef0b2b74dabbc13faa21ea"
+      "bytes": 23814,
+      "sha256": "1c7d9272bda943d4729bca7dd17d3ebd34d4ada2868580180670f86de26b043a"
     },
     {
       "path": "ACTUAL_HESSIAN_BOUNDS.png",
@@ -467,8 +467,8 @@
     },
     {
       "path": "build_reader.py",
-      "bytes": 28992,
-      "sha256": "34176cfe179bfb27f38cb7416a7e5aa941725d3acddd7e4a23fd9a9e41435ce0"
+      "bytes": 29424,
+      "sha256": "b4a5e13c2500dcfe1f36463d156abd611f0296c8ab42515b527961bfd1135172"
     },
     {
       "path": "CAP_CONSTANT_CHECKS.json",
@@ -849,6 +849,11 @@
       "path": "check_conditional_current.py",
       "bytes": 10831,
       "sha256": "e22f6b00dd7d34ea5ddb6595725ef5a6d9a26f5767d029c0d435f8efed0c8d60"
+    },
+    {
+      "path": "check_contracted_cubic.py",
+      "bytes": 9778,
+      "sha256": "28b2e84eb94fbda40f7bb78d130140605f901d4d22b2606593c37e02250254c7"
     },
     {
       "path": "check_covariance.py",
@@ -1307,8 +1312,8 @@
     },
     {
       "path": "CLAIM_LEDGER.md",
-      "bytes": 136232,
-      "sha256": "cf1a5b5d51a27f2f592ae450410966504f730ccd3909ca6259ece8a607950aec"
+      "bytes": 137509,
+      "sha256": "e690fa4181267a5a55c511ea5f1e34204a46169fe4ece608c40f9e8513aafc04"
     },
     {
       "path": "COLLAR_RATE_MAP.png",
@@ -1481,6 +1486,46 @@
       "sha256": "f34709444cd7c5cbfd787bd6fedac991b14ea6f918cf772f2edca5bdad15072e"
     },
     {
+      "path": "contracted_constants.py",
+      "bytes": 7448,
+      "sha256": "4e4eb07795e69acd900a33be38b4ad3da51863931acf8253c00770423d35a7fd"
+    },
+    {
+      "path": "CONTRACTED_CUBIC_BOUNDS.md",
+      "bytes": 31914,
+      "sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77"
+    },
+    {
+      "path": "CONTRACTED_CUBIC_CHECKS.json",
+      "bytes": 39827,
+      "sha256": "b73b840c5d610ba1beb9fbbaff7235258acc5bb6ab396ea6857edd9a5d0abdae"
+    },
+    {
+      "path": "CONTRACTED_CUBIC_CLAIM_LEDGER.json",
+      "bytes": 2202,
+      "sha256": "f8003c6a3f0b6db1c2b17a73a65c4e8197fbaf9b2894322eb3acc07d583c4a00"
+    },
+    {
+      "path": "CONTRACTED_CUBIC_SOURCE_FIDELITY.json",
+      "bytes": 653,
+      "sha256": "6c7c3741a5c627f9b2ba1734f86d882ed82955991778bdca8ee7d0bc1e768ed8"
+    },
+    {
+      "path": "CONTRACTED_CUBIC_SOURCE_USE_LEDGER.json",
+      "bytes": 6736,
+      "sha256": "26a1c366e810fcdacc3c4a0be8ad5441b34c3c709141af230598040e0bc9d05f"
+    },
+    {
+      "path": "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.png",
+      "bytes": 224523,
+      "sha256": "4509c2f34b807d0ad7660600b3f0be9788b81bb211a2a4ed2b70701c685d8df2"
+    },
+    {
+      "path": "CONTRACTED_LAPLACIAN_AND_MARGINAL_CUBIC.svg",
+      "bytes": 123946,
+      "sha256": "12b64ea0d23b5bbbfb68f892b94627403852a0b20cd09bbbdf23ece9e8571ede"
+    },
+    {
       "path": "contribution_figure.py",
       "bytes": 2901,
       "sha256": "638c3c68b2b8eeca62d93f9931af1a5da703a851ea07262e76184bf52c9d2374"
@@ -1542,8 +1587,8 @@
     },
     {
       "path": "CUBIC_INVERSE_TRIAL_BOUNDS.md",
-      "bytes": 34360,
-      "sha256": "5ae0099e84edc32ee6943485618f1706bc9256392afba4d9515dac9d3427fa95"
+      "bytes": 35617,
+      "sha256": "5a5fcb0e133e8c18afd4a2c63750e64de24429cb38a32dff8b3e1f9f6b5e93d7"
     },
     {
       "path": "CURRENT_COVARIANCE_CHECKS.json",
@@ -2141,6 +2186,11 @@
       "sha256": "f30a1ac1628da55a2d9e26652cd330ac812df4e5f590554966e134bea34072b8"
     },
     {
+      "path": "figure_contracted_cubic.py",
+      "bytes": 5161,
+      "sha256": "71498c6cd3ab8283a8fd5d3ccc92b24fee834117900fb2070eeaa3536b9f5d56"
+    },
+    {
       "path": "figure_cubic_compression.py",
       "bytes": 2913,
       "sha256": "2b9ec4a4aa2fb6d23af1731d0054b05639daecf286d285e9837148681bd7fab9"
@@ -2572,8 +2622,8 @@
     },
     {
       "path": "FULL_CUBIC_SOURCE_COMPRESSION.md",
-      "bytes": 20833,
-      "sha256": "6a07a073e37784d406b95040ab905d5759ef78891cab4d832d9732872d880ce6"
+      "bytes": 22090,
+      "sha256": "db8b97dff8c9fb7c4557dc111b3f9b68ae8c6a77dc29dcbc0c41bd268338e4ed"
     },
     {
       "path": "FULL_CURRENT_SCHUR_AND_ENERGY_MEASURE.md",
@@ -3476,6 +3526,16 @@
       "sha256": "8bc3f17ce98f657951d445ec4857f3afe23848eea0702f19a5cee66dc92c6ea6"
     },
     {
+      "path": "ORIGINAL_PATH_CONTRACTED_BOUND.png",
+      "bytes": 187540,
+      "sha256": "3d2b6ba8540a84b7e63ea4c28709087b4d9404da3d7f1ce62ebeaf214083840e"
+    },
+    {
+      "path": "ORIGINAL_PATH_CONTRACTED_BOUND.svg",
+      "bytes": 101493,
+      "sha256": "1fdbfa00ddec6e377aaab3f772162c964830b8ab214044d19c5be0095bd72a3c"
+    },
+    {
       "path": "ORIGINAL_SOURCE_CHECKS.json",
       "bytes": 964,
       "sha256": "38d6026990165bda49fd927bcf3511981d5f69757bb5c64559fda8ba1261d0ba"
@@ -3997,18 +4057,18 @@
     },
     {
       "path": "READER_SOURCES.json",
-      "bytes": 4712,
-      "sha256": "6d7e85d3f269e031ab814c2c8b6e41a5605a932fc439e399634aa9f10da05ed8"
+      "bytes": 4744,
+      "sha256": "8823953222b664ac3a9ed60d28f314fc0fbce63f29a30707b670f48f1ef4e558"
     },
     {
       "path": "README.md",
-      "bytes": 127046,
-      "sha256": "1319d838a69054dd932f0066726433080c7a69de30d14590acae1706e1f62c16"
+      "bytes": 128323,
+      "sha256": "043e14f36d3fecdddd4a493271d632332f2487fb2d6ae1b7decf38a80714ce56"
     },
     {
       "path": "RESEARCH_CONTINUATION.tex",
-      "bytes": 3989813,
-      "sha256": "9a8a6ef91643a0b1848cb4f555f8488dbc0919736003e7b696d0ba4a4382ef07"
+      "bytes": 4026522,
+      "sha256": "3b80512d51852eb2e047c77392994c284a0e8b8fad2ba59a7b4bedd669d5825b"
     },
     {
       "path": "RESOLVENT_HESSIAN_CHECKS.json",
@@ -4062,8 +4122,8 @@
     },
     {
       "path": "RESULTS_20261015.md",
-      "bytes": 6342,
-      "sha256": "df496b93d4ed57513ec3b470749e4a812d0012b16493a6e32da517a93a4d201f"
+      "bytes": 7619,
+      "sha256": "18ac5763bdd69359a8ff72f1208bb404324fb5eb378fa56219e586d787de4c19"
     },
     {
       "path": "RETAINED_BOUNDARY_MAP.png",
@@ -4522,8 +4582,8 @@
     },
     {
       "path": "SOURCE_READING_USE_LEDGER.json",
-      "bytes": 744631,
-      "sha256": "7ac8dceb75d8ce5ff3fee38b7262db4a59820ff5f383271646a9d6ee9b4439b3"
+      "bytes": 751364,
+      "sha256": "3cb5c0f41f7b4ddf43a4fee497a3cb26bfa59450d34dbd6d759fae9d87acb665"
     },
     {
       "path": "SOURCE_ZERO_COVARIANCE_UPPER.md",
@@ -4712,8 +4772,8 @@
     },
     {
       "path": "TEX_FIDELITY.json",
-      "bytes": 28178,
-      "sha256": "b04cac065ef34126f998babc4764ab08f7ac78dbc8e494856256e5122df4cc73"
+      "bytes": 28393,
+      "sha256": "75f7e4f201d868c1a12c4f8836cd2e027bb2748f3349dc320c45018da0e87915"
     },
     {
       "path": "THREE_SCALE_PHYSICAL_WINDOW.png",
@@ -4842,8 +4902,8 @@
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 509998,
-      "sha256": "a74fafdf794b4477e8fff93d938fc9bfb600e9b668f30d5dd795da9927356bf6"
+      "bytes": 515971,
+      "sha256": "08d0a5977399a99952b8a1743c7c68aee00279dab1c2561023227616c71b2ccb"
     },
     {
       "path": "VERIFICATION.json",
