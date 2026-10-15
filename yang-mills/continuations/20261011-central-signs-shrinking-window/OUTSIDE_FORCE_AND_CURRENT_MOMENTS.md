@@ -468,3 +468,28 @@ Complete reproducible diagnostics and figure sources are in [check_outside_force
 ## Smooth spatial energy and exact sector covariances
 
 [WH1–WH33](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_WEIGHTED_LOCAL_ENERGY.md) construct the complete original energy with smooth spatial weights and calculate its full physical forcing, including exact face-trace cancellation. A comparison for every actual edge subset and an exact finite level decomposition prove a variance bound while retaining all nested-sector covariances. The noncommuting weighted-sector defect is computed explicitly. The original observable trace has an evaluated limit; its subtracting covariance and all distinct-face energy contractions remain. Complete norm, first-energy and second-moment matrices give the scalar Green gain and full physical residual, including dependent-vector cases. Original shrinking-window upper functions improve. The exact one-face physical vector vanishes, demonstrating why surviving mass requires the actual coupling between faces. No limiting spectral mass is assigned.
+
+## Cubic residual and conditional boundary moments
+
+The full conditional transformation retains the outside remainder:
+\[
+\mathcal U_rf=(J_r^*f,(I-J_rJ_r^*)f)
+:\mathscr H_\mu\longrightarrow\mathscr H_r\oplus\ker J_r^*,
+\qquad
+\mathcal U_r^{-1}(g,h)=J_rg+h .
+\]
+Its inverse and norm identity are proved in the original-state section of
+[Outside flux, complete cubic moments and boundary forcing](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/OUTSIDE_FLUX_AND_CUBIC_MOMENTS.md).
+For the original full flux-and-scalar pair, ROF1–ROF4 give the exact forcing
+map, outside projection and both orthogonal kernel components:
+\[
+\|P\|_{\mathscr V}^2
+=\mathfrak b_r+\|\Pi_{\rm out}P-\mathfrak JW_r\|_{\mathscr V}^2
++\|(I-\Pi_{\rm out})P\|_{\mathscr V}^2 .
+\]
+ROF8–ROF14 calculate all six outside derivative and generator rows and
+the full moment matrices, including singular directions and every mixed
+source entry. ROF15–ROF17 identify the highest row with the original
+kinetic and score fluctuations. The factor \(\Delta_Q^2t_v\) stays inside
+each conditional moment integral. These finite-regulator identities do
+not establish vanishing signed error or positive limiting spectral weight.

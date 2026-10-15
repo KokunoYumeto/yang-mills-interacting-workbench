@@ -730,3 +730,28 @@ The entire flux and variational identities, coefficient contractions, derivative
 The left panel shows WCR3–WCR7, with all full-field flux components retained. The pair is the sum of its isometric resolvent representative and a vector in the divergence kernel; the squared kernel norm is explicitly subtracted in the exact identity. The right panel evaluates every finite term in WCR13 on the original parameter path, with \(\kappa_*=4/5,\theta=1\). Both plotted quantities multiply the unchanged \(\|F\|_\rho^2\); the ordinate is their base-ten logarithm. The plot does not replace any finite formula by its limiting degree and does not show measured Wilson-state energy. Proof locators: WCR4–WCR7,WCR13–WCR15. Provider citations and source versions are listed above.
 
 The accompanying exact diagnostics check original radius-two noncommuting field contractions, complete ground-equation divergences, positive-half contracted partitions, and the weighted Hessian identity by exact Haar integration. A separate two-factor conditional-integration fixture retains every covariance term. Finite Hermitian fixtures check the complete noncommuting cubic block and variational kernel identities, including a vacuum. The positive-ground fixtures use their constructed potentials and are not claimed to be Wilson states. Eighty-digit evaluations check the complete finite upper functions, exact rational growth exponents and an independently written leading coefficient at several original parameter choices. These diagnostics supplement the arguments above and do not prove spectral survival.
+
+## Cubic residual and conditional boundary moments
+
+The full conditional transformation retains the outside remainder:
+\[
+\mathcal U_rf=(J_r^*f,(I-J_rJ_r^*)f)
+:\mathscr H_\mu\longrightarrow\mathscr H_r\oplus\ker J_r^*,
+\qquad
+\mathcal U_r^{-1}(g,h)=J_rg+h .
+\]
+Its inverse and norm identity are proved in the original-state section of
+[Outside flux, complete cubic moments and boundary forcing](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/OUTSIDE_FLUX_AND_CUBIC_MOMENTS.md).
+For the original full flux-and-scalar pair, ROF1–ROF4 give the exact forcing
+map, outside projection and both orthogonal kernel components:
+\[
+\|P\|_{\mathscr V}^2
+=\mathfrak b_r+\|\Pi_{\rm out}P-\mathfrak JW_r\|_{\mathscr V}^2
++\|(I-\Pi_{\rm out})P\|_{\mathscr V}^2 .
+\]
+ROF8–ROF14 calculate all six outside derivative and generator rows and
+the full moment matrices, including singular directions and every mixed
+source entry. ROF15–ROF17 identify the highest row with the original
+kinetic and score fluctuations. The factor \(\Delta_Q^2t_v\) stays inside
+each conditional moment integral. These finite-regulator identities do
+not establish vanishing signed error or positive limiting spectral weight.
