@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-15T09:05:59.749113+00:00",
+  "checked_utc": "2026-10-15T09:51:33.813596+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -721,8 +721,8 @@
     },
     {
       "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
-      "sha256": "71f2ce235fb27a50fbb1960b9e90be6402316773f000846bb5c1a3a9fdd69270",
-      "complete_math_blocks": 40,
+      "sha256": "919ecc52fcb8d520b1097c608ccd03ffd27b457f7f277043e1f2a142be4a45a4",
+      "complete_math_blocks": 41,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -733,8 +733,8 @@
     },
     {
       "source": "FULL_CUBIC_SOURCE_COMPRESSION.md",
-      "sha256": "db8b97dff8c9fb7c4557dc111b3f9b68ae8c6a77dc29dcbc0c41bd268338e4ed",
-      "complete_math_blocks": 123,
+      "sha256": "a969ba0ab6d4a1d10beacff0d6c5225fbe9ec69c8745ce68f56a04743521c7af",
+      "complete_math_blocks": 124,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -751,8 +751,14 @@
     },
     {
       "source": "CONTRACTED_CUBIC_BOUNDS.md",
-      "sha256": "cfac728e7fae787bf84b5a03c71929f6d0f81b8124610b8f6494a7940937dc77",
-      "complete_math_blocks": 188,
+      "sha256": "5a9107386fa6eb488cd9fd0c9e093897c415fc8505f90bcd9fb3a134c2a193ad",
+      "complete_math_blocks": 189,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "NESTED_INVERSE_ENERGY_AND_SIGNED_RESPONSE.md",
+      "sha256": "63f28d9a50fe535c9cde008fd5e93e1606557500f53cfc71a016c876a0c137f4",
+      "complete_math_blocks": 122,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1525,6 +1531,16 @@
     {
       "file": "ORIGINAL_PATH_CONTRACTED_BOUND.png",
       "sha256": "3d2b6ba8540a84b7e63ea4c28709087b4d9404da3d7f1ce62ebeaf214083840e",
+      "visually_inspected": true
+    },
+    {
+      "file": "NESTED_CUBES_AND_SIGNED_TAIL.png",
+      "sha256": "18418775eef818842b22e2560526143e1da5cb29bfe0ee124b97d47d0d799d23",
+      "visually_inspected": true
+    },
+    {
+      "file": "ORIGINAL_ANNULAR_SOURCE_BOUNDS.png",
+      "sha256": "9740bec34ff8b8999a46b87e1f967bda7287f4539b4466b544e92eab5b48a40c",
       "visually_inspected": true
     }
   ],
@@ -11710,6 +11726,126 @@
       ],
       "findings": "All new proof pages, changed receiving notes and adjacent pages inspected. One count display repaired; every original formula retained. No new overflow or missing glyph. Earlier59 overflows and one earlier glyph retained.",
       "final_eof_cleanup_rerender": "All20 page PNGs byte-identical to visually inspected images."
+    }
+  },
+  "nested_energy_review": {
+    "utc": "2026-10-15T09:35:10.722291+00:00",
+    "coverage": "Complete NSE1–NSE13: exact inverse-energy defect; full signed rational kernel and positive polynomial certificates; sharp squared-kernel coefficient; original nested cube maps, adjoints and form domains; all inverse increments and terminal finite tail; evaluated original-state annular source bounds, family dependence and full signed double sum.",
+    "strengthening": "The inverse-energy comparison controls the signed source response with sharper complete scalar constants. The original cube hierarchy gives a selected actual source-to-annular coupling bound of order j^(-1/2) and a one-sided signed quadratic ceiling of order j^(-2).",
+    "corrections": "The selected increment is not the complete tail; its index depends on the actual source. Simultaneous families retain their full sum and the whole face basis retains the trace/dimension cost. Energy orthogonality does not remove filtered mixed terms. The signed quadratic estimate is not an absolute-value bound.",
+    "limitations": "The actual signed trial matrix and complete remaining inverse-energy defect have not been evaluated as a positive response. No surviving spectral mass, reconstruction, intended theory identification or smooth global no-gap conclusion is asserted.",
+    "diagnostic_count": 217,
+    "diagnostic_scope": "88 earlier exact rational inverse-energy checks plus129 new rational polynomial, nested noncommuting matrix and full original-parameter checks. Fixtures retain a vacuum and filtered cross terms; they are not Wilson-state samples.",
+    "figures_inspected": [
+      "NESTED_CUBES_AND_SIGNED_TAIL.png",
+      "ORIGINAL_ANNULAR_SOURCE_BOUNDS.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "NESTED_INVERSE_ENERGY_AND_SIGNED_RESPONSE.md",
+        "prefix": "NSE",
+        "tags": 13,
+        "owner_sha256": "63f28d9a50fe535c9cde008fd5e93e1606557500f53cfc71a016c876a0c137f4",
+        "public_sha256": "63f28d9a50fe535c9cde008fd5e93e1606557500f53cfc71a016c876a0c137f4",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-15T09:51:33.813596+00:00",
+      "tex_sha256": "92443d6ca2e05492e1f8c5b6c4ba1d789e0dd903eede9d2f000979fe132c0eb6",
+      "pdf_sha256": "343b4c557ad2366113040260ad77ece6e15f37f76521cf82f4c33ef3b82e21a6",
+      "pages": 1397,
+      "source_files": 126,
+      "math_blocks": 28002,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-15T09:51:31.366855+00:00",
+        "complete": true,
+        "pages": 1397,
+        "rendered": [
+          1334,
+          1335,
+          1336,
+          1351,
+          1352,
+          1353,
+          1387,
+          1388,
+          1389,
+          1390,
+          1391,
+          1392,
+          1393,
+          1394,
+          1395,
+          1396,
+          1397
+        ],
+        "inspected_page_count": 17,
+        "contact_sheets_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "figures_inspected": [
+          "NESTED_CUBES_AND_SIGNED_TAIL.png",
+          "ORIGINAL_ANNULAR_SOURCE_BOUNDS.png"
+        ],
+        "findings": "All17 new proof, receiving-note and adjacent pages and both corrected figures visually inspected. Complete formulas retained; no new overflow or missing glyph. Earlier59 overflows and one earlier glyph remain. The missing NSE1 display delimiter was repaired before the successful compile and inspection."
+      }
+    }
+  },
+  "nested_energy_compile": {
+    "utc": "2026-10-15T09:51:33.813596+00:00",
+    "tex_sha256": "92443d6ca2e05492e1f8c5b6c4ba1d789e0dd903eede9d2f000979fe132c0eb6",
+    "pdf_sha256": "343b4c557ad2366113040260ad77ece6e15f37f76521cf82f4c33ef3b82e21a6",
+    "pages": 1397,
+    "source_files": 126,
+    "math_blocks": 28002,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-15T09:51:31.366855+00:00",
+      "complete": true,
+      "pages": 1397,
+      "rendered": [
+        1334,
+        1335,
+        1336,
+        1351,
+        1352,
+        1353,
+        1387,
+        1388,
+        1389,
+        1390,
+        1391,
+        1392,
+        1393,
+        1394,
+        1395,
+        1396,
+        1397
+      ],
+      "inspected_page_count": 17,
+      "contact_sheets_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "figures_inspected": [
+        "NESTED_CUBES_AND_SIGNED_TAIL.png",
+        "ORIGINAL_ANNULAR_SOURCE_BOUNDS.png"
+      ],
+      "findings": "All17 new proof, receiving-note and adjacent pages and both corrected figures visually inspected. Complete formulas retained; no new overflow or missing glyph. Earlier59 overflows and one earlier glyph remain. The missing NSE1 display delimiter was repaired before the successful compile and inspection."
     }
   }
 }

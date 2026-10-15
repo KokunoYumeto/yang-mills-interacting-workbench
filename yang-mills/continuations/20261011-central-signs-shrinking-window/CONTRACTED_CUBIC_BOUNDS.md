@@ -648,3 +648,16 @@ The diagram retains the original trace in the Hessian estimate, every shared der
 Every plotted point is the evaluation of the entire finite expression at the indicated original parameters. The curves are upper functions, not actual residual or spectral samples. Their exact asymptotic powers are proved in CIT20 and CCJ19–CCJ20. Figure source: [figure_contracted_cubic.py](figure_contracted_cubic.py); complete finite constants and their independent leading-coefficient calculation: [contracted_constants.py](contracted_constants.py).
 
 The 209 checks in [check_contracted_cubic.py](check_contracted_cubic.py) cover exact rational noncommuting original SU(2) product and contracted inverse-partition identities, exact two-link fifth/fourth compressed coefficients in an explicitly constructed positive-ground potential, full Hessian trace estimates and their matrix equality case, the complete compressed energy form, and exact rational growth exponents with 80-digit finite evaluations. The constructed potential is not Wilson, and no test is presented as an evaluation of the original Wilson spectral measure. The complete written proofs above establish the results; the diagnostics check the stated algebra and estimates.
+
+## Nested inverse-energy defects and signed response
+
+[NSE1–NSE13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/NESTED_INVERSE_ENERGY_AND_SIGNED_RESPONSE.md) prove the exact cubic inverse-energy defect and its complete signed-source comparison. Typed inclusions between the original nested cubes give every inverse increment and the entire remaining defect, with the full complementary state retained:
+\[
+\begin{gathered}
+C(F)\ge T_r(F)-\frac{86}{25}\zeta\sqrt{m_1(F)\delta_r(F)}
+-\zeta^3\delta_r(F),\\
+\delta_r(F)=\sum_{s=r}^{L-1}
+\|\mathscr A_\zeta^{1/2}(u_{s+1}-u_s)\|_\mu^2 .
+\end{gathered}
+\]
+The original source budgets give a selected actual source-to-annular coupling bound of order j^(-1/2), with its full finite formula and parameter-dependent constant, and a one-sided signed quadratic ceiling of order j^(-2). The selected increment is not the whole remaining tail. Both negative spectral tails, all filtered mixed terms, raw coefficient and family-size factors remain. A positive shrinking-window response and the smooth global no-gap result are not yet established.
