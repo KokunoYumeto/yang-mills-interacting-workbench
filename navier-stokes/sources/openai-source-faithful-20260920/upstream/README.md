@@ -1,89 +1,34 @@
-# Finite Time Blowup for Navier--Stokes: Independent LaTeX Reconstruction
+# Finite Time Blowup for Navier–Stokes: Independent LaTeX Reconstruction
 
-This repository contains an independently prepared, editable LaTeX reconstruction of OpenAI's 166-page paper *Finite Time Blowup for Navier--Stokes*. It is page-corresponded to the official PDF and preserves the source's wording, mathematical notation, numbering, cross-references, figures, appendices, and bibliography.
+[Read the 166-page transcription PDF](output/pdf/source-faithful-reconstruction.pdf) · [Browse the LaTeX](reconstruction/) · [Read OpenAI’s original paper](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf)
 
-This is not an official OpenAI source release. It is a source-faithful reconstruction made because a bounded search of the public official surfaces listed below did not find complete manuscript source. That result is limited to the places and time searched; it is not proof that source does not exist privately, under another name, or at a later date.
+This repository contains an independently prepared LaTeX transcription of OpenAI’s *Finite Time Blowup for Navier–Stokes*. The document includes the paper’s main text, appendices and bibliography in 29 section files, together with its style file, six figure assets and a 166-page reading PDF. Its page markers follow the original paper’s pages 1–166.
 
-## Official sources and frozen identities
+The transcription is intended to reproduce OpenAI’s actual wording and mathematics, including any irregularities in the original. Mathematical criticism, supplementary proofs and proposed mathematical corrections belong in separate works. OpenAI’s PDF is the transcription authority; this repository is an independent reconstruction, not an official author-source release.
 
-| Role | Official location | Frozen identity used for this reconstruction |
-| --- | --- | --- |
-| Paper; transcription authority | [OpenAI PDF](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf) | 2,959,204 bytes; 166 pages; SHA-256 `0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f` |
-| Release description and status language | [OpenAI announcement](https://openai.com/index/navier-stokes-solution/) | Frozen HTML SHA-256 `c2f55d8b2cc538bc9cd93503937440303cfc9afbef78895240db54ca3de62179` |
-| Complementary formalization | [OpenAI Lean repository at commit `f9e8bc5...`](https://github.com/openai/NavierStokesAndEuler/commit/f9e8bc5b38b6e212696e8a30e3e91517af887bbd) | Commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`; Git tree `a503f07635f200c0f2f9c5361df1fa07f95c4741`; frozen checkout archive SHA-256 `a9322b2112ef89c9a0cbb5029578cd672a757fe715a565d55f032e0b443cb7a7` |
-| Official problem formulation | [Clay Mathematics Institute statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf) | 203,736 bytes; 6 PDF pages; SHA-256 `c1b5f27b1a64705cfaf1afceea513db5deedca8a18ca56ab32e7f86445a06d0c` |
+## Reading and comparison
 
-The PDF displays `OPENAI` as its author and no visible version label. No semantic version has been invented here. The Lean repository is a complementary authority for its formalized results, not the transcription authority for the paper's prose or typesetting.
+Comparison with the original is ongoing. Full fidelity of the present transcription has not been established. The [current source-comparison status](evidence/transcription/TRANSCRIPTION_AUDIT.json) identifies the exact formulas and symbols compared with the original. The [formula index](evidence/transcription/FORMULA_INVENTORY.json) and [page index](evidence/transcription/PDF_TEX_CORRESPONDENCE.json) locate the editable text; they are navigation aids, not proof of fidelity.
 
-## Verification status
+The [current document-build record](evidence/build/CURRENT_DOCUMENT.json) identifies the supplied PDF and the pages inspected in it. Its 166 pages contain extractable text, and its build resolves the internal references. These checks do not verify every transcription detail or establish the paper’s theorem. Evidence records apply only to the files and scope they identify.
 
-**Corrected 28 September 2026:** equation (10.20), page 124, now has the full product under the square root. The [D1 erratum](evidence/errata/D1.md) documents the source comparison and the corrected source and PDF.
-
-The release gate for this repository accepts only a byte state for which [`TRANSCRIPTION_AUDIT.json`](evidence/transcription/TRANSCRIPTION_AUDIT.json) has status `pass` and its recorded hashes match every staged section file. The accepted audit state has:
-
-- 166 source-page markers and 166 page-check records, covering pages 1 through 166 with no pending range;
-- 6,175 individually identified mathematical occurrences: 5,408 inline and 767 displayed;
-- page-level `visual_inspection`, `text_order`, and `formula_visual_check` results of `pass`;
-- 527 labels, 1,671 references, and no unresolved internal reference recorded by the structural audit;
-- all 22 bibliography entries; and
-- six checked source figures, with no redrawing.
-
-Each page was compared with a 180-dpi rendering of the frozen official PDF. Text extraction was used only as a draft aid. It was never treated as verification. Formula checks used the visible page as authority for symbols, delimiters, indices, exponents, signs, constants, domains, quantifiers, asymptotics, printed numbers, and cross-references. [`PDF_TEX_CORRESPONDENCE.json`](evidence/transcription/PDF_TEX_CORRESPONDENCE.json) binds each source page to exact LaTeX spans and hashes; [`FORMULA_INVENTORY.json`](evidence/transcription/FORMULA_INVENTORY.json) gives the formula locators and source text.
-
-The supplied cumulative PDF has 166 pages. Its exact byte hash, and the hashes of every other staged file, are recorded in [`MANIFEST.sha256`](MANIFEST.sha256). The audit establishes the reported transcription checks; it does not turn this repository into official source, independently prove the paper's mathematics, or decide any Clay Mathematics Institute recognition or prize process.
-
-The corrected PDF is 3,679,582 bytes with SHA-256 `41fd1d62501d4776efbfd3e55cda0e97d46e9f443e0a157e30c75eb98bcd4d2a`. It built successfully in two pdfTeX passes and has 166 pages. The [D1 verification record](evidence/errata/D1-verification.json) describes the new page comparison. Earlier records in `visual_qa.jsonl` concern the previous build; their page-124 check missed the radical extent, which D1 corrects.
-
-The notation checks are under [`evidence/integration/`](evidence/integration/). The static manuscript-to-Lean map under [`evidence/lean/`](evidence/lean/) covers all 80 numbered statements and points to 132 exact Lean declaration locations in the frozen commit. It is a source-reading map, not a Lean build receipt: Lean, Lake, and Elan were not run for that check.
+The original PDF used for comparison has SHA-256 `0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f`. The [manifest](MANIFEST.sha256) identifies repository files. The [archival source-edition family](https://doi.org/10.5281/zenodo.22852309) is available separately.
 
 ## Build
 
-The recorded full build used MiKTeX pdfTeX 1.40.29. A current TeX Live or MiKTeX installation needs the packages named in `reconstruction/ns-edition.sty`, including the AMS packages, `mathtools`, `mathpazo`, `mathrsfs`, `graphicx`, `microtype`, `enumitem`, `geometry`, `fancyhdr`, `hyperref`, and `cleveref`.
+Open [reconstruction/main.tex](reconstruction/main.tex). A TeX installation needs the packages listed in [ns-edition.sty](reconstruction/ns-edition.sty), including the AMS packages, `mathtools`, `mathpazo`, `mathrsfs`, `graphicx`, `microtype`, `enumitem`, `geometry`, `fancyhdr`, `hyperref` and `cleveref`.
 
-From the repository root:
+From the `reconstruction` directory, run:
 
-```powershell
-Set-Location reconstruction
+```text
 pdflatex -interaction=nonstopmode -halt-on-error -file-line-error main.tex
 pdflatex -interaction=nonstopmode -halt-on-error -file-line-error main.tex
 ```
 
-The result is `reconstruction/main.pdf`. Two passes resolve the table of contents and internal references. The edition suppresses volatile PDF dates and trailer identifiers, but exact PDF bytes can still depend on the TeX engine, package versions, and installed fonts; preserve those inputs when bit-for-bit reproduction matters.
+The result is `main.pdf`. Exact PDF bytes can depend on the TeX engine, fonts and package versions. The repository also supplies source-comparison and inventory tools under `scripts/`.
 
-The build receipt under `evidence/build/` records the hashes of the final log and both deterministic console transcripts. The log has no undefined reference, undefined citation, duplicate destination, multiply defined label, overfull box, or fatal TeX error. It has seven underfull-box notices and four Hyperref warnings caused by mathematics in the page-150 bookmark text. The visible page-150 heading is intact.
+## Related works, citation and rights
 
-The receipts also name temporary page renders, contact sheets, build logs, and console transcripts from the checked build workspace. Those temporary files are not part of this repository; their paths and hashes are kept in the receipts so the reported checks remain specific about the artifacts that were inspected.
+The [Everyday English edition](https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english) is a separate experimental exposition. The [Navier–Stokes workbench](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/tree/main/navier-stokes) contains separate analytical material. Neither is a substitute for the original paper or a certificate of its theorem.
 
-The structural audit script is included under `scripts/`. It checks against the official PDF and therefore expects the frozen official file at `sources/official/paper/navier-stokes.pdf`. That PDF is not copied into this repository; download it from the official link above and confirm its SHA-256 before running the audit.
-
-## Figures
-
-The paper's six figures occur on official PDF pages 4, 5, 9, 10, 13, and 15. The PDF assets under `reconstruction/assets/figures/` are direct vector crops of those pages: only the page boxes were changed, and the drawings were not recreated. SVG counterparts are supplied as derived convenience files. Crop coordinates, source pages, inspection results, and hashes are in [`FIGURE_CROP_RECEIPT.json`](evidence/figures/FIGURE_CROP_RECEIPT.json) and [`FIGURE_LEDGER.jsonl`](evidence/figures/FIGURE_LEDGER.jsonl).
-
-## Repository contents
-
-- `reconstruction/main.tex` is the master document.
-- `reconstruction/sections/` contains the complete page-corresponded source in bounded ranges.
-- `reconstruction/assets/figures/` contains the six checked vector figure assets.
-- `output/pdf/source-faithful-reconstruction.pdf` is the cumulative 166-page build.
-- `evidence/source/` records source custody and the bounded official-source search.
-- `evidence/transcription/` contains the fail-closed audit, page correspondence, formula inventory, page-check ledgers, and uncertainty ledgers.
-- `evidence/figures/` records figure provenance and inspection.
-- `evidence/integration/` records the full notation audit.
-- `evidence/lean/` contains the static manuscript-to-Lean map and its stated limits.
-- `evidence/build/` contains the final build and every-page visual-check receipts.
-- `evidence/errata/` records transcription corrections and distinguishes them from suspected defects in the source paper. Confirmed transcription mistakes are fixed in the LaTeX and rebuilt outputs.
-- `scripts/` contains the structural audit and inventory builder.
-- `MANIFEST.sha256` binds the staged repository files to exact bytes.
-
-## Relationship to the Everyday English Edition
-
-This repository is the source-faithful layer, not the **Everyday English Edition of the Navier--Stokes Proof**. That edition is a separate work with its own repository target, [`KokunoYumeto/navier-stokes-proof-everyday-english`](https://github.com/KokunoYumeto/navier-stokes-proof-everyday-english). It is derived from verified spans of this reconstruction while retaining exact traceability to the official PDF. Explanations or teaching additions from that edition do not belong in the faithful source here.
-
-## Citation
-
-For the mathematical work, cite the official OpenAI paper at the PDF link above. When referring specifically to this reconstruction, also identify [`KokunoYumeto/openai-navier-stokes-latex`](https://github.com/KokunoYumeto/openai-navier-stokes-latex) and the exact Git commit used. No `CITATION.cff` is supplied at this stage because a valid CFF record requires public author attribution that has not been established for the reconstruction; inventing or transferring attribution from the source paper would be misleading.
-
-## Rights and reuse
-
-The records reviewed for this project do not establish a licence for the paper or for this reconstruction. In particular, the Apache-2.0 licence in the separate Lean repository does not automatically license the paper, its figures, or this reconstructed edition. Source links and hashes document provenance; they do not grant reuse permission. See [`LICENSE-NOTICE.md`](LICENSE-NOTICE.md), and assess the rights needed for your intended use and jurisdiction.
+For the mathematics, cite OpenAI’s paper. When referring to this transcription, identify this repository and the exact Git revision used. The [rights notice](LICENSE-NOTICE.md) accompanies the source and figure assets; no additional licence is inferred from a related repository.
