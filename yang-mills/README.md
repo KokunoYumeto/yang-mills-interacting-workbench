@@ -856,3 +856,16 @@ The original source budgets give a selected actual source-to-annular coupling bo
 \end{gathered}
 \]
 The complete polynomial certificates, six moment maps, original resolvent equation and both signed matrix comparisons are proved. This strengthens the lower bound for the full remaining tail. The original residual energy and signed trial response still require estimates that establish positive shrinking-window mass; the inherited upper function does not do so. The smooth global no-gap construction remains the goal.
+
+## Full cubic flux and stronger residual energy bound
+
+[WCR1–WCR15](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CUBIC_FLUX_AND_RESIDUAL_ENERGY.md) retain every original cubic coefficient, conditional covariance and outside flux. The exact typed divergence map has an isometric resolvent right inverse, and
+\[
+\begin{gathered}
+\mathfrak b_r=\|(\widetilde{\mathcal F},\widetilde{\mathcal S})\|_{\mathscr V}^2
+-\|(\widetilde{\mathcal F},\widetilde{\mathcal S})-\mathfrak JW_r\|_{\mathscr V}^2,\\
+\mathsf B_{{\rm res},50j}\le\Xi_\zeta^{\rm best}\mathsf S,\qquad
+\Xi_\zeta^{\rm best}=\min\{\Xi_\zeta,\widehat{\mathfrak P}_\zeta^2/\zeta\}.
+\end{gathered}
+\]
+All six coefficient divergences and complete finite derivative bounds are proved. The new upper coefficient has exact growth degree76, compared with degree91 for the inherited one; its full leading constant and every finite term are retained. WCR15 propagates the bound through both signed matrix orders. These upper functions do not establish vanishing tail error or measure actual residual growth. The smooth global no-gap result remains the programme goal.

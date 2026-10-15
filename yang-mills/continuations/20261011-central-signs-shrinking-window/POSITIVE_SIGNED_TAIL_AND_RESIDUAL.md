@@ -476,3 +476,16 @@ The receiving quantity exposed by the full calculation is the original energy \(
 PST5–PST8 prove the displayed typed map, its inverse, and the two bounds on the full quadratic form. Every annular and face mixed entry is retained. The right panel evaluates the complete scalar ratio with its exact inverse coordinate map; it is not a Wilson-state spectral sample. Figure source: [figure_positive_tail.py](figure_positive_tail.py).
 
 The 266 diagnostics in [check_positive_residual.py](check_positive_residual.py) verify every rational certificate, six moment maps, the full annular Gram identities, both residual bounds, and signed raw matrix orders on six noncommuting nested Hermitian fixtures, including two complex cases and a retained vacuum. These are algebra diagnostics, not evaluations of the actual Wilson ground state. The complete arguments above establish the actual finite-regulator maps and bounds.
+
+## Full cubic flux and stronger residual energy bound
+
+[WCR1–WCR15](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CUBIC_FLUX_AND_RESIDUAL_ENERGY.md) retain every original cubic coefficient, conditional covariance and outside flux. The exact typed divergence map has an isometric resolvent right inverse, and
+\[
+\begin{gathered}
+\mathfrak b_r=\|(\widetilde{\mathcal F},\widetilde{\mathcal S})\|_{\mathscr V}^2
+-\|(\widetilde{\mathcal F},\widetilde{\mathcal S})-\mathfrak JW_r\|_{\mathscr V}^2,\\
+\mathsf B_{{\rm res},50j}\le\Xi_\zeta^{\rm best}\mathsf S,\qquad
+\Xi_\zeta^{\rm best}=\min\{\Xi_\zeta,\widehat{\mathfrak P}_\zeta^2/\zeta\}.
+\end{gathered}
+\]
+All six coefficient divergences and complete finite derivative bounds are proved. The new upper coefficient has exact growth degree76, compared with degree91 for the inherited one; its full leading constant and every finite term are retained. WCR15 propagates the bound through both signed matrix orders. These upper functions do not establish vanishing tail error or measure actual residual growth. The smooth global no-gap result remains the programme goal.

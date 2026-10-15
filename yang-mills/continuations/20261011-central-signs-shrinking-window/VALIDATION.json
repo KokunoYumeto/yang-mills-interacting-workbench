@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-15T10:25:31.602629+00:00",
+  "checked_utc": "2026-10-15T11:16:11.666530+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -739,8 +739,8 @@
     },
     {
       "source": "ORIGINAL_FRAME_CUBIC_RESIDUAL.md",
-      "sha256": "a244d3e8201df748691e8b969132eef02e96252564737a32ec7dab9097bab5a1",
-      "complete_math_blocks": 142,
+      "sha256": "a40d33e98ce6e40bc800a59aa76a691134ff47f822ac4bfe0008aef902c69c1b",
+      "complete_math_blocks": 143,
       "split_to_aligned_wrappers": 2
     },
     {
@@ -751,8 +751,8 @@
     },
     {
       "source": "CONTRACTED_CUBIC_BOUNDS.md",
-      "sha256": "274797cd70d97571a7666cdf5dd53ef3e4f94d327e230d78d21352d758e659c8",
-      "complete_math_blocks": 190,
+      "sha256": "066b120fd7e50ba5da2b3e881c1221d5a90cd8ec73b1312ed12331898ac240ee",
+      "complete_math_blocks": 191,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -763,8 +763,14 @@
     },
     {
       "source": "POSITIVE_SIGNED_TAIL_AND_RESIDUAL.md",
-      "sha256": "07284477834b937a1579f40836adfcc7da432dc62dad082998268482b0d14966",
-      "complete_math_blocks": 124,
+      "sha256": "bbe5dda69ef7d280a5165585d1b71313b021b2b1a5b7e53aa33898e467875328",
+      "complete_math_blocks": 125,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "FULL_CUBIC_FLUX_AND_RESIDUAL_ENERGY.md",
+      "sha256": "cd98097ac09a10359e0b6c43d32bfab5d6c0e012efd6d9f994940dd4437e7959",
+      "complete_math_blocks": 226,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1552,6 +1558,11 @@
     {
       "file": "COMPLETE_TAIL_RESIDUAL_MAP.png",
       "sha256": "a34f6418f11693581ac14f84454cbd143c394d3d3a804e903208e930f2858b39",
+      "visually_inspected": true
+    },
+    {
+      "file": "FULL_CUBIC_FLUX_ENERGY.png",
+      "sha256": "69bc87bc6286b98eb59d4454a923d72f4fdefb0025c513f4cdd9a9bc00cdc75c",
       "visually_inspected": true
     }
   ],
@@ -11974,6 +11985,119 @@
         "COMPLETE_TAIL_RESIDUAL_MAP.png"
       ],
       "findings": "All17 new proof, changed receiving-note and adjacent pages inspected, together with the original figure. Exact polynomial certificates, typed maps and full signed matrix formulas fit within the margins. No new overflow or missing glyph;59 earlier overflows and one earlier glyph remain. The intended NSE receiving note was restored after a filename substitution error before this final compile and inspection."
+    }
+  },
+  "weak_energy_review": {
+    "utc": "2026-10-15T11:01:37.659957+00:00",
+    "coverage": "Complete WCR1–WCR15 proofs: original six coefficient rows; conditional covariance derivatives; typed divergence and isometric right inverse; retained kernel norm; all full-field divergences; original energy/Hessian bounds; actual marginal generator, full noncommuting block and potential; complete finite upper function and both signed matrix orders.",
+    "strengthening": "Full residual-energy upper coefficient has exact degree76 and explicit positive leading constant, versus degree91 for the inherited coefficient. Every finite term remains. Exact flux/kernel identity exposes the retained contribution lost only in the proved upper inequality.",
+    "corrections": "The conditional integral does not represent the whole state. Its complement, score covariance, outside flux and kernel norm remain explicit. The auxiliary generator is not substituted for the full cubic compression. The marginal potential does not inherit the Wilson Laplacian identity.",
+    "limitations": "The finite upper coefficient still grows; its growth does not measure actual energy. Vanishing signed error, positive shrinking-window mass, continuum construction and smooth global no-gap result remain unestablished.",
+    "diagnostic_count": 208,
+    "diagnostic_scope": "Exact rational original SU2 noncommuting field, ground divergence, positive-half partition and weighted Hessian identities; conditional integration with its covariance; full noncommuting Hermitian block and variational kernel fixtures with vacuum; complete80-digit original-path upper functions and independent leading coefficients. Constructed positive-ground fixtures are not Wilson states. No actual spectral survival or vanishing residual is measured.",
+    "figures_inspected": [
+      "FULL_CUBIC_FLUX_ENERGY.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "FULL_CUBIC_FLUX_AND_RESIDUAL_ENERGY.md",
+        "prefix": "WCR",
+        "tags": 15,
+        "owner_sha256": "cd98097ac09a10359e0b6c43d32bfab5d6c0e012efd6d9f994940dd4437e7959",
+        "public_sha256": "cd98097ac09a10359e0b6c43d32bfab5d6c0e012efd6d9f994940dd4437e7959",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-15T11:16:11.666530+00:00",
+      "tex_sha256": "5f5a6eb660bf81eed6b0731b7ab9c64fddbd04eab63ad26d41b9eabc45c9f6b4",
+      "pdf_sha256": "fb49252a8d241e405668fb715774c981da652bc77556addc5163482741319713",
+      "pages": 1426,
+      "source_files": 128,
+      "math_blocks": 28358,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-15T11:16:11.552774+00:00",
+        "complete": true,
+        "pages": 1426,
+        "inspected_page_count": 22,
+        "inspected_pages": [
+          1362,
+          1363,
+          1364,
+          1391,
+          1392,
+          1393,
+          1411,
+          1412,
+          1413,
+          1414,
+          1415,
+          1416,
+          1417,
+          1418,
+          1419,
+          1420,
+          1421,
+          1422,
+          1423,
+          1424,
+          1425,
+          1426
+        ],
+        "figure": "FULL_CUBIC_FLUX_ENERGY.png",
+        "method": "Poppler page renders and six contact sheets visually inspected. Changed source pages re-inspected after punctuation and line-layout corrections. Entire new argument, three receiving notes and adjacent pages checked. The standalone figure was separately inspected.",
+        "finding": "All new text, equations, signs, tables, typed maps and labels fit their pages. No new overflow or missing glyph. Earlier59 overflows and one earlier missing glyph remain.",
+        "pdf_sha256": "fb49252a8d241e405668fb715774c981da652bc77556addc5163482741319713"
+      }
+    }
+  },
+  "weak_energy_compile": {
+    "utc": "2026-10-15T11:16:11.666530+00:00",
+    "tex_sha256": "5f5a6eb660bf81eed6b0731b7ab9c64fddbd04eab63ad26d41b9eabc45c9f6b4",
+    "pdf_sha256": "fb49252a8d241e405668fb715774c981da652bc77556addc5163482741319713",
+    "pages": 1426,
+    "source_files": 128,
+    "math_blocks": 28358,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-15T11:16:11.552774+00:00",
+      "complete": true,
+      "pages": 1426,
+      "inspected_page_count": 22,
+      "inspected_pages": [
+        1362,
+        1363,
+        1364,
+        1391,
+        1392,
+        1393,
+        1411,
+        1412,
+        1413,
+        1414,
+        1415,
+        1416,
+        1417,
+        1418,
+        1419,
+        1420,
+        1421,
+        1422,
+        1423,
+        1424,
+        1425,
+        1426
+      ],
+      "figure": "FULL_CUBIC_FLUX_ENERGY.png",
+      "method": "Poppler page renders and six contact sheets visually inspected. Changed source pages re-inspected after punctuation and line-layout corrections. Entire new argument, three receiving notes and adjacent pages checked. The standalone figure was separately inspected.",
+      "finding": "All new text, equations, signs, tables, typed maps and labels fit their pages. No new overflow or missing glyph. Earlier59 overflows and one earlier missing glyph remain.",
+      "pdf_sha256": "fb49252a8d241e405668fb715774c981da652bc77556addc5163482741319713"
     }
   }
 }

@@ -420,3 +420,16 @@ The coefficient table contains every term of CDE4, with the original ordered der
 ## Evaluated inverse-trial receiver
 
 [CIT1–CIT20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CUBIC_INVERSE_TRIAL_BOUNDS.md) retain the full CDE4 differential expression, derive actual ground derivative ceilings through order six, and estimate the matched trial in the original weighted L2 graph norms. The exact marginal unitary includes every derivative of its inverse multiplier. This proves an explicit polynomial upper bound for the entire residual and both source-matrix consequences. Its original-path growth is also evaluated; the bound remains too large to establish surviving spectral mass. CDE8 and all its original terms remain as a separate valid inequality.
+
+## Full cubic flux and stronger residual energy bound
+
+[WCR1–WCR15](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CUBIC_FLUX_AND_RESIDUAL_ENERGY.md) retain every original cubic coefficient, conditional covariance and outside flux. The exact typed divergence map has an isometric resolvent right inverse, and
+\[
+\begin{gathered}
+\mathfrak b_r=\|(\widetilde{\mathcal F},\widetilde{\mathcal S})\|_{\mathscr V}^2
+-\|(\widetilde{\mathcal F},\widetilde{\mathcal S})-\mathfrak JW_r\|_{\mathscr V}^2,\\
+\mathsf B_{{\rm res},50j}\le\Xi_\zeta^{\rm best}\mathsf S,\qquad
+\Xi_\zeta^{\rm best}=\min\{\Xi_\zeta,\widehat{\mathfrak P}_\zeta^2/\zeta\}.
+\end{gathered}
+\]
+All six coefficient divergences and complete finite derivative bounds are proved. The new upper coefficient has exact growth degree76, compared with degree91 for the inherited one; its full leading constant and every finite term are retained. WCR15 propagates the bound through both signed matrix orders. These upper functions do not establish vanishing tail error or measure actual residual growth. The smooth global no-gap result remains the programme goal.
