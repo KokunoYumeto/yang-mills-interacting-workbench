@@ -13,7 +13,7 @@ The fixed-box phase limit cannot yet be exchanged with the specified joint path:
 
 The center-reversal mechanism has an antecedent in [L. Li and Y. Meurice, Lattice gluodynamics at negative \(g^2\)](https://arxiv.org/abs/hep-lat/0410029v2). The proofs give the exact comparison to their conventions and preserve the scope of their periodic construction. No novelty claim is made.
 
-[Combined editable TeX source](RESEARCH_CONTINUATION.tex) contains all 129 proof documents listed in [the source index](READER_SOURCES.json), including [outside flux, cubic moment matrices and boundary forcing](OUTSIDE_FLUX_AND_CUBIC_MOMENTS.md). The mathematical sources, original formulas and reproducible figures accompany the TeX.
+[Combined editable TeX source](RESEARCH_CONTINUATION.tex) contains all 130 proof documents listed in [the source index](READER_SOURCES.json), including [outside flux and cubic moment matrices](OUTSIDE_FLUX_AND_CUBIC_MOMENTS.md) and [trial-weighted variance and complete cubic derivatives](TRIAL_WEIGHTED_VARIANCE_AND_CUBIC_DERIVATIVES.md). The mathematical sources, original formulas and reproducible figures accompany the TeX.
 
 Reproduce the independent finite checks with Python, using mpmath for the phase enumeration: check_central_signs.py, verify_phase.py, and verify_jacobian.py. The nine exact incidence cases, 32 phase checks, and rational Jacobian certificates supplement the complete proofs. All displayed figures have retained reproducible sources. [Source identities and reading coverage](SOURCE_READING_USE_LEDGER.json) and [claim propagation](CLAIM_LEDGER.md) accompany this edition.
 

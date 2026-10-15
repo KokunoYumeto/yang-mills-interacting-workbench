@@ -688,3 +688,19 @@ The complete polynomial certificates, six moment maps, original resolvent equati
 \end{gathered}
 \]
 All six coefficient divergences and complete finite derivative bounds are proved. The new upper coefficient has exact growth degree76, compared with degree91 for the inherited one; its full leading constant and every finite term are retained. WCR15 propagates the bound through both signed matrix orders. These upper functions do not establish vanishing tail error or measure actual residual growth. The smooth global no-gap result remains the programme goal.
+
+## Weighted kinetic variance and complete cubic derivative estimates
+
+[WKM1–WKM15](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/TRIAL_WEIGHTED_VARIANCE_AND_CUBIC_DERIVATIVES.md) retain the actual inverse-trial multiplier in the conditional kinetic and score variances. The four positive energy remainders, the complete source Gram matrices and the full first-derivative cost are explicit. The original commutators and ten-row cubic equation give
+\[
+D_{3,0}(t)\le t^\sharp_{3,0}\|F\|_\rho,\quad
+D_{2,1}(t)\le t^\sharp_{2,1}\|F\|_\rho,\quad
+D_{1,2}(t)\le t^\sharp_{1,2}\|F\|_\rho,\quad
+D_{0,3}(t)\le t^\sharp_{0,3}\|F\|_\rho .
+\]
+Every finite coefficient is retained in WKM9–WKM12. All six residual rows and their mixed entries give
+\[
+\mathsf B_{\rm res}\le\Xi_*\mathsf S,\qquad
+\Xi_*=\min\{\Xi_\zeta^{\rm best},\Xi_{\rm dir}^\sharp,\Xi_{\rm wt}^\sharp\}.
+\]
+WKM13 carries this order through both signed filter bounds. The direct upper function has exact leading coefficient \(\kappa_*^5r_6^2/\theta\) at power \(j^{76}\), with every constituent of \(r_6\) given in WKM14. This coefficient comparison does not establish vanishing signed error, positive surviving mass or the continuum no-gap result.

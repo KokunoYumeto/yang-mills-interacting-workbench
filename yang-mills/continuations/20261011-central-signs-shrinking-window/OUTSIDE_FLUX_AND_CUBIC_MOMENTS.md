@@ -653,3 +653,19 @@ The next original-state calculation is therefore the conditional boundary/curren
 The diagram represents the exact typed maps ROF1–ROF4. The projection removes a vector in the outside divergence kernel, while the remaining global kernel component is retained separately. Both squared norms appear in ROF2. The lower panel records ROF15–ROF17: the original highest derivative word multiplies the complete kinetic and score fluctuation, whose forcing has the indicated boundary expression. It is one of six rows; the other rows and every cross entry are included in ROF10–ROF14. The arrows are exact algebraic and Hilbert-space maps, not a numerical trajectory or a physical state sample.
 
 The reproducible diagnostics in [check_outside_flux.py](check_outside_flux.py) check the ordered coefficient identities with exact rational arithmetic on two original radius-two SU(2) factors and a constructed positive ground with its own potential. They also check the leading conditional quotient identity, original edge counts, and complex matrix projection identities with vacuum and singular source directions. These fixtures are algebra checks and do not evaluate the original Wilson spectral moments. The proof uses the full original state and the source identities cited above.
+
+## Weighted kinetic variance and complete cubic derivative estimates
+
+[WKM1–WKM15](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/TRIAL_WEIGHTED_VARIANCE_AND_CUBIC_DERIVATIVES.md) retain the actual inverse-trial multiplier in the conditional kinetic and score variances. The four positive energy remainders, the complete source Gram matrices and the full first-derivative cost are explicit. The original commutators and ten-row cubic equation give
+\[
+D_{3,0}(t)\le t^\sharp_{3,0}\|F\|_\rho,\quad
+D_{2,1}(t)\le t^\sharp_{2,1}\|F\|_\rho,\quad
+D_{1,2}(t)\le t^\sharp_{1,2}\|F\|_\rho,\quad
+D_{0,3}(t)\le t^\sharp_{0,3}\|F\|_\rho .
+\]
+Every finite coefficient is retained in WKM9–WKM12. All six residual rows and their mixed entries give
+\[
+\mathsf B_{\rm res}\le\Xi_*\mathsf S,\qquad
+\Xi_*=\min\{\Xi_\zeta^{\rm best},\Xi_{\rm dir}^\sharp,\Xi_{\rm wt}^\sharp\}.
+\]
+WKM13 carries this order through both signed filter bounds. The direct upper function has exact leading coefficient \(\kappa_*^5r_6^2/\theta\) at power \(j^{76}\), with every constituent of \(r_6\) given in WKM14. This coefficient comparison does not establish vanishing signed error, positive surviving mass or the continuum no-gap result.
