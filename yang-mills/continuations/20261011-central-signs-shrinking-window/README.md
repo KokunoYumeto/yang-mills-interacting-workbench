@@ -829,3 +829,11 @@ S\ge
 {(32+7\kappa_*a)(736+155\kappa_*a)}\,I .
 \]
 This evaluated bound is independent of the total box volume and the number of selected faces. It retains arbitrary support and coefficient growth. The proof compares its smooth-test refinement with the stronger earlier HSF result and applies the polynomial floor to missing directions in the exact common-cubic trial space. It does not locate spectral mass in the shrinking annulus; that actual signed response and the smooth global no-gap programme remain active.
+
+## SZ-20261015-004 — Full cubic compression and exact source matching
+
+[FCC1–FCC13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CUBIC_SOURCE_COMPRESSION.md) place the complete original spatial source in one actual inside-cube conditional space and solve the full compressed cubic equation. Every marginal and complementary term remains. This evaluates the source-overlap and equation Gram matrices exactly:
+\[
+H_{\rm src}=S,\qquad G=S+R,\qquad R=W^*W\ge0 .
+\]
+The polynomial covariance floor of SMP11 therefore makes both matrices invertible, with no additional shrinking-shift penalty. The unique raw coefficient optimum and its complete noncommuting residual bounds are proved. All filtered cross terms remain; an exact rational example shows that their vanishing cannot be inferred from unfiltered orthogonality. The actual complementary forcing and signed trial response are the next calculations toward spectral survival and the smooth global no-gap target.

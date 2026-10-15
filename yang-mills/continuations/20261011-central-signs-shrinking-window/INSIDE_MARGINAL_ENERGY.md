@@ -471,3 +471,11 @@ Complete programme providers: [FO1–FO56](https://github.com/KokunoYumeto/yang-
 ## Smooth spatial energy and exact sector covariances
 
 [WH1–WH33](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/SMOOTH_WEIGHTED_LOCAL_ENERGY.md) construct the complete original energy with smooth spatial weights and calculate its full physical forcing, including exact face-trace cancellation. A comparison for every actual edge subset and an exact finite level decomposition prove a variance bound while retaining all nested-sector covariances. The noncommuting weighted-sector defect is computed explicitly. The original observable trace has an evaluated limit; its subtracting covariance and all distinct-face energy contractions remain. Complete norm, first-energy and second-moment matrices give the scalar Green gain and full physical residual, including dependent-vector cases. Original shrinking-window upper functions improve. The exact one-face physical vector vanishes, demonstrating why surviving mass requires the actual coupling between faces. No limiting spectral mass is assigned.
+
+## Full cubic compression and exact source matching
+
+[FCC1–FCC13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CUBIC_SOURCE_COMPRESSION.md) place the complete original spatial source in one actual inside-cube conditional space and solve the full compressed cubic equation. Every marginal and complementary term remains. This evaluates the source-overlap and equation Gram matrices exactly:
+\[
+H_{\rm src}=S,\qquad G=S+R,\qquad R=W^*W\ge0 .
+\]
+The polynomial covariance floor of SMP11 therefore makes both matrices invertible, with no additional shrinking-shift penalty. The unique raw coefficient optimum and its complete noncommuting residual bounds are proved. All filtered cross terms remain; an exact rational example shows that their vanishing cannot be inferred from unfiltered orthogonality. The actual complementary forcing and signed trial response are the next calculations toward spectral survival and the smooth global no-gap target.

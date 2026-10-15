@@ -258,3 +258,11 @@ The actual full signed response, all original shifts and both spectral tails rem
 ![Original conditional links and the full spatial covariance floor](CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png)
 
 The schematic shows the exact thirteen-link interior star: four pairwise disjoint exterior three-link paths and the retained common edge. One red link from each path is varied in the actual conditional measure. SMP3–SMP5 keep its full coupled density and metric. SMP6, SMP10 and SMP11 give the displayed full raw matrix inequalities. The two graphs evaluate the bound formulas at kappa=4/5 on the original path; they are not actual covariance samples. The complete proof also handles every original boundary star with fewer incident faces. Reproducible sources: [figure_spatial_moment.py](figure_spatial_moment.py) and [check_spatial_moment.py](check_spatial_moment.py). The143 diagnostics include nonproduct comparison densities, full original link tensors and finite spectral fixtures; the actual-state claims follow from the preceding proof.
+
+## Full cubic compression and exact source matching
+
+[FCC1–FCC13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/FULL_CUBIC_SOURCE_COMPRESSION.md) place the complete original spatial source in one actual inside-cube conditional space and solve the full compressed cubic equation. Every marginal and complementary term remains. This evaluates the source-overlap and equation Gram matrices exactly:
+\[
+H_{\rm src}=S,\qquad G=S+R,\qquad R=W^*W\ge0 .
+\]
+The polynomial covariance floor of SMP11 therefore makes both matrices invertible, with no additional shrinking-shift penalty. The unique raw coefficient optimum and its complete noncommuting residual bounds are proved. All filtered cross terms remain; an exact rational example shows that their vanishing cannot be inferred from unfiltered orthogonality. The actual complementary forcing and signed trial response are the next calculations toward spectral survival and the smooth global no-gap target.

@@ -1,0 +1,4925 @@
+{
+  "checks": 996,
+  "all_passed": true,
+  "scope": "Exact block algebra and noncommuting positive-operator fixtures, including exact vacuum and singular residual directions; no Yang-Mills vacuum sampled.",
+  "examples": [
+    {
+      "z": 0.2,
+      "unfiltered_cross_norm": 0.0,
+      "filtered_cross_norm": 0.8349895276721764,
+      "residual_eigenvalues": [
+        0.47147433649142934,
+        9.11942671161445,
+        25.126778499310955,
+        36.59822571240699
+      ],
+      "source_floor": 1.9530043184400008,
+      "full_gram_floor": 2.788693980672732,
+      "coefficient_count": 4
+    }
+  ],
+  "rows": [
+    {
+      "name": "exact indefinite cubic correction",
+      "passed": true
+    },
+    {
+      "name": "positive full fixture minors",
+      "passed": true
+    },
+    {
+      "name": "exact matched rational trial",
+      "passed": true
+    },
+    {
+      "name": "exact full rational complementary forcing",
+      "passed": true
+    },
+    {
+      "name": "exact rational unfiltered orthogonality",
+      "passed": true
+    },
+    {
+      "name": "exact nonzero signed filtered cross term",
+      "passed": true
+    },
+    {
+      "name": "case0z0.008 full compressed cubic",
+      "passed": true,
+      "error": 5.684941762524931e-14
+    },
+    {
+      "name": "case0z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 1.5888218580782548e-14
+    },
+    {
+      "name": "case0z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.008 exact interior source matching",
+      "passed": true,
+      "error": 4.1614855592600616e-15
+    },
+    {
+      "name": "case0z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 5.978733960281817e-15
+    },
+    {
+      "name": "case0z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 1.1169196774599172e-14
+    },
+    {
+      "name": "case0z0.008 retained complementary correction",
+      "passed": true,
+      "error": 1.0100271890557265e-13
+    },
+    {
+      "name": "case0z0.008 entire inverse tail",
+      "passed": true,
+      "error": 1.7538319308410856e-13
+    },
+    {
+      "name": "case0z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.2314970930892997e-14
+    },
+    {
+      "name": "case0z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 4.9043214617507134e-14
+    },
+    {
+      "name": "case0z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 3.1188376038904045e-14
+    },
+    {
+      "name": "case0z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.393761091115239e-14
+    },
+    {
+      "name": "case0z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -3.740036709151684e-15
+    },
+    {
+      "name": "case0z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case0z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.008 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.766439196932952e-16
+    },
+    {
+      "name": "case0z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 2.062620650570019e-15
+    },
+    {
+      "name": "case0z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.363393375430871e-14
+    },
+    {
+      "name": "case0z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 2.1316282072803006e-14
+    },
+    {
+      "name": "case0z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case0z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case0z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case0z0.2 full compressed cubic",
+      "passed": true,
+      "error": 8.526890298088947e-14
+    },
+    {
+      "name": "case0z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 2.0097183471152322e-14
+    },
+    {
+      "name": "case0z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.2 exact interior source matching",
+      "passed": true,
+      "error": 4.621782578095567e-15
+    },
+    {
+      "name": "case0z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 4.621782578095567e-15
+    },
+    {
+      "name": "case0z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 3.911961060401928e-15
+    },
+    {
+      "name": "case0z0.2 retained complementary correction",
+      "passed": true,
+      "error": 4.370388388651945e-14
+    },
+    {
+      "name": "case0z0.2 entire inverse tail",
+      "passed": true,
+      "error": 1.7568205063913642e-14
+    },
+    {
+      "name": "case0z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 9.441466109136565e-15
+    },
+    {
+      "name": "case0z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.551136925266137e-14
+    },
+    {
+      "name": "case0z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 7.998423002109695e-15
+    },
+    {
+      "name": "case0z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 8.510422543011842e-15
+    },
+    {
+      "name": "case0z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -4.8691519566324e-16
+    },
+    {
+      "name": "case0z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case0z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z0.2 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 8.919924666673824e-16
+    },
+    {
+      "name": "case0z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 2.8099521501365458e-14
+    },
+    {
+      "name": "case0z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.3914935841127267e-14
+    },
+    {
+      "name": "case0z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 2.1316282072803006e-14
+    },
+    {
+      "name": "case0z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "case0z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case0z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case0z1.7 full compressed cubic",
+      "passed": true,
+      "error": 5.696950400334438e-14
+    },
+    {
+      "name": "case0z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case0z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z1.7 exact interior source matching",
+      "passed": true,
+      "error": 1.5565409952966682e-15
+    },
+    {
+      "name": "case0z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 1.5565409952966682e-15
+    },
+    {
+      "name": "case0z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 3.17061944866176e-17
+    },
+    {
+      "name": "case0z1.7 retained complementary correction",
+      "passed": true,
+      "error": 2.4424906541753444e-15
+    },
+    {
+      "name": "case0z1.7 entire inverse tail",
+      "passed": true,
+      "error": 7.473417450352271e-17
+    },
+    {
+      "name": "case0z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 3.636721891222372e-15
+    },
+    {
+      "name": "case0z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "case0z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 3.554447978966673e-15
+    },
+    {
+      "name": "case0z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 7.129293932524782e-15
+    },
+    {
+      "name": "case0z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -5.181808758122908e-16
+    },
+    {
+      "name": "case0z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case0z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case0z1.7 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.6734687751490969e-16
+    },
+    {
+      "name": "case0z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 4.156361099222234e-15
+    },
+    {
+      "name": "case0z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 7.381104677948019e-15
+    },
+    {
+      "name": "case0z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "case0z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case0z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case0z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case1z0.008 full compressed cubic",
+      "passed": true,
+      "error": 2.957218004894064e-14
+    },
+    {
+      "name": "case1z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 2.929642751054232e-14
+    },
+    {
+      "name": "case1z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case1z0.008 exact interior source matching",
+      "passed": true,
+      "error": 5.3707720150339703e-14
+    },
+    {
+      "name": "case1z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 5.3707720150339703e-14
+    },
+    {
+      "name": "case1z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case1z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 4.1293730158969575e-14
+    },
+    {
+      "name": "case1z0.008 retained complementary correction",
+      "passed": true,
+      "error": 1.7781382011091293e-13
+    },
+    {
+      "name": "case1z0.008 entire inverse tail",
+      "passed": true,
+      "error": 5.345299471754876e-13
+    },
+    {
+      "name": "case1z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case1z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.435067942883752e-13
+    },
+    {
+      "name": "case1z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 3.781971759427256e-13
+    },
+    {
+      "name": "case1z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.9351747202460796
+    },
+    {
+      "name": "case1z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.16579271482758748
+    },
+    {
+      "name": "case1z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.4085265230661252e-13
+    },
+    {
+      "name": "case1z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 2.072851500800425e-13
+    },
+    {
+      "name": "case1z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 4.1797362448672154e-14
+    },
+    {
+      "name": "case1z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.6918209051596139e-13
+    },
+    {
+      "name": "case1z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.8876873007316861
+    },
+    {
+      "name": "case1z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0987818996686234
+    },
+    {
+      "name": "case1z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.315757738723085e-15
+    },
+    {
+      "name": "case1z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 1.6788706171229828e-13
+    },
+    {
+      "name": "case1z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.9155488341641527e-13
+    },
+    {
+      "name": "case1z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.101361385419766e-13
+    },
+    {
+      "name": "case1z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "case1z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case1z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case1z0.2 full compressed cubic",
+      "passed": true,
+      "error": 4.26727443554282e-14
+    },
+    {
+      "name": "case1z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 2.929642751054232e-14
+    },
+    {
+      "name": "case1z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case1z0.2 exact interior source matching",
+      "passed": true,
+      "error": 2.3420180361420892e-14
+    },
+    {
+      "name": "case1z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 2.9134418374455476e-14
+    },
+    {
+      "name": "case1z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case1z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 1.7599486366140203e-14
+    },
+    {
+      "name": "case1z0.2 retained complementary correction",
+      "passed": true,
+      "error": 7.297214790423996e-14
+    },
+    {
+      "name": "case1z0.2 entire inverse tail",
+      "passed": true,
+      "error": 5.2200792923668125e-14
+    },
+    {
+      "name": "case1z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case1z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 6.124085204050476e-14
+    },
+    {
+      "name": "case1z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.958836176028417e-13
+    },
+    {
+      "name": "case1z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.8356896622327319
+    },
+    {
+      "name": "case1z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.15344083986847096
+    },
+    {
+      "name": "case1z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 4.757470830855277e-14
+    },
+    {
+      "name": "case1z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 8.369822571090553e-14
+    },
+    {
+      "name": "case1z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -2.1975045293902765e-14
+    },
+    {
+      "name": "case1z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -4.1086764466519245e-14
+    },
+    {
+      "name": "case1z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.9161213202236906
+    },
+    {
+      "name": "case1z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.07505294966990901
+    },
+    {
+      "name": "case1z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 9.207198423197273e-15
+    },
+    {
+      "name": "case1z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 7.5753796678281e-13
+    },
+    {
+      "name": "case1z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.0650829560322735e-13
+    },
+    {
+      "name": "case1z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 2.847716647714797e-14
+    },
+    {
+      "name": "case1z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "case1z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case1z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case1z1.7 full compressed cubic",
+      "passed": true,
+      "error": 5.735336793174738e-14
+    },
+    {
+      "name": "case1z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case1z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case1z1.7 exact interior source matching",
+      "passed": true,
+      "error": 5.240440846246284e-15
+    },
+    {
+      "name": "case1z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 5.240440846246284e-15
+    },
+    {
+      "name": "case1z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case1z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 1.441393678152275e-16
+    },
+    {
+      "name": "case1z1.7 retained complementary correction",
+      "passed": true,
+      "error": 6.732486617525854e-15
+    },
+    {
+      "name": "case1z1.7 entire inverse tail",
+      "passed": true,
+      "error": 1.800439068018345e-16
+    },
+    {
+      "name": "case1z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case1z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.6091724337024826e-14
+    },
+    {
+      "name": "case1z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 3.197442310920451e-14
+    },
+    {
+      "name": "case1z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.7305891111865814
+    },
+    {
+      "name": "case1z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.13939695003877448
+    },
+    {
+      "name": "case1z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.5990680625176796e-14
+    },
+    {
+      "name": "case1z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 2.4868995751603507e-14
+    },
+    {
+      "name": "case1z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 2.857032987265637e-15
+    },
+    {
+      "name": "case1z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -7.72387307186202e-15
+    },
+    {
+      "name": "case1z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0403715302662626
+    },
+    {
+      "name": "case1z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.025434004076298727
+    },
+    {
+      "name": "case1z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 6.428227274659931e-16
+    },
+    {
+      "name": "case1z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 3.0780232577782987e-14
+    },
+    {
+      "name": "case1z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 6.367688004948109e-14
+    },
+    {
+      "name": "case1z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.848777036351761e-13
+    },
+    {
+      "name": "case1z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.2737367544323206e-13
+    },
+    {
+      "name": "case1z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case1z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case2z0.008 full compressed cubic",
+      "passed": true,
+      "error": 8.987733679556355e-14
+    },
+    {
+      "name": "case2z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 2.864289338439558e-14
+    },
+    {
+      "name": "case2z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.008 exact interior source matching",
+      "passed": true,
+      "error": 4.342749864707564e-15
+    },
+    {
+      "name": "case2z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 8.04892550849339e-15
+    },
+    {
+      "name": "case2z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 1.6401643046719713e-15
+    },
+    {
+      "name": "case2z0.008 retained complementary correction",
+      "passed": true,
+      "error": 8.042797661766892e-14
+    },
+    {
+      "name": "case2z0.008 entire inverse tail",
+      "passed": true,
+      "error": 6.74606445434671e-14
+    },
+    {
+      "name": "case2z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.0970441734624025e-14
+    },
+    {
+      "name": "case2z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 5.486613905063287e-14
+    },
+    {
+      "name": "case2z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.5326715609368603e-14
+    },
+    {
+      "name": "case2z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.742873352589527e-14
+    },
+    {
+      "name": "case2z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.6420215646256205
+    },
+    {
+      "name": "case2z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.008 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.5265566588595902e-16
+    },
+    {
+      "name": "case2z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 4.039978628638196e-15
+    },
+    {
+      "name": "case2z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.759077334070715e-14
+    },
+    {
+      "name": "case2z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "case2z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case2z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case2z0.2 full compressed cubic",
+      "passed": true,
+      "error": 9.532931148469529e-14
+    },
+    {
+      "name": "case2z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case2z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.2 exact interior source matching",
+      "passed": true,
+      "error": 1.1140190488874167e-14
+    },
+    {
+      "name": "case2z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 1.1140190488874167e-14
+    },
+    {
+      "name": "case2z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 1.2779626727101132e-15
+    },
+    {
+      "name": "case2z0.2 retained complementary correction",
+      "passed": true,
+      "error": 6.939115944959553e-14
+    },
+    {
+      "name": "case2z0.2 entire inverse tail",
+      "passed": true,
+      "error": 6.8113788610171116e-15
+    },
+    {
+      "name": "case2z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.859350133011823e-14
+    },
+    {
+      "name": "case2z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 4.1010382221227806e-14
+    },
+    {
+      "name": "case2z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.7563994925642397e-14
+    },
+    {
+      "name": "case2z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.5879294467416048e-14
+    },
+    {
+      "name": "case2z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -2.9132644640865455e-15
+    },
+    {
+      "name": "case2z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.6808320560504534
+    },
+    {
+      "name": "case2z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z0.2 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.5218182408308986e-15
+    },
+    {
+      "name": "case2z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 4.4745072201098854e-14
+    },
+    {
+      "name": "case2z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 5.812576860051044e-14
+    },
+    {
+      "name": "case2z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case2z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "case2z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case2z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case2z1.7 full compressed cubic",
+      "passed": true,
+      "error": 1.2058310082691394e-13
+    },
+    {
+      "name": "case2z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case2z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z1.7 exact interior source matching",
+      "passed": true,
+      "error": 1.7136679897814678e-15
+    },
+    {
+      "name": "case2z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 1.7136679897814678e-15
+    },
+    {
+      "name": "case2z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 3.3045941534686305e-17
+    },
+    {
+      "name": "case2z1.7 retained complementary correction",
+      "passed": true,
+      "error": 7.340287196300789e-15
+    },
+    {
+      "name": "case2z1.7 entire inverse tail",
+      "passed": true,
+      "error": 5.806143056334548e-17
+    },
+    {
+      "name": "case2z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 3.580361673049448e-15
+    },
+    {
+      "name": "case2z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "case2z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.3603665272841412e-15
+    },
+    {
+      "name": "case2z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 4.490574227168739e-15
+    },
+    {
+      "name": "case2z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.9215023714613756
+    },
+    {
+      "name": "case2z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case2z1.7 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case2z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 2.948009306981137e-16
+    },
+    {
+      "name": "case2z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 9.990812459099961e-15
+    },
+    {
+      "name": "case2z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.1949218545369532e-14
+    },
+    {
+      "name": "case2z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.7852165294699933e-14
+    },
+    {
+      "name": "case2z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 8.526512829121202e-14
+    },
+    {
+      "name": "case2z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case2z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case3z0.008 full compressed cubic",
+      "passed": true,
+      "error": 4.278033777464534e-14
+    },
+    {
+      "name": "case3z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 1.6758116906701664e-14
+    },
+    {
+      "name": "case3z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case3z0.008 exact interior source matching",
+      "passed": true,
+      "error": 2.025480127084693e-14
+    },
+    {
+      "name": "case3z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 2.025480127084693e-14
+    },
+    {
+      "name": "case3z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case3z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 3.421920295108834e-14
+    },
+    {
+      "name": "case3z0.008 retained complementary correction",
+      "passed": true,
+      "error": 1.263324531060229e-13
+    },
+    {
+      "name": "case3z0.008 entire inverse tail",
+      "passed": true,
+      "error": 6.070983748073621e-13
+    },
+    {
+      "name": "case3z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case3z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 4.39648317751562e-14
+    },
+    {
+      "name": "case3z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 4.522738470482329e-14
+    },
+    {
+      "name": "case3z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.976303320947609
+    },
+    {
+      "name": "case3z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.2672961151709017
+    },
+    {
+      "name": "case3z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.088281995247506e-14
+    },
+    {
+      "name": "case3z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 3.935641834793567e-14
+    },
+    {
+      "name": "case3z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -3.1281286731104383e-16
+    },
+    {
+      "name": "case3z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 1.7783870516433572e-15
+    },
+    {
+      "name": "case3z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.4976916775497403
+    },
+    {
+      "name": "case3z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0051865990873145125
+    },
+    {
+      "name": "case3z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "case3z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 1.1416056965847629e-14
+    },
+    {
+      "name": "case3z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.3025561226547616e-13
+    },
+    {
+      "name": "case3z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.9363104374904415e-13
+    },
+    {
+      "name": "case3z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "case3z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case3z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case3z0.2 full compressed cubic",
+      "passed": true,
+      "error": 2.864289338439558e-14
+    },
+    {
+      "name": "case3z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 1.7763568394002505e-14
+    },
+    {
+      "name": "case3z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case3z0.2 exact interior source matching",
+      "passed": true,
+      "error": 1.1024240709028996e-14
+    },
+    {
+      "name": "case3z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 1.1024240709028996e-14
+    },
+    {
+      "name": "case3z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case3z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 3.858424350705004e-15
+    },
+    {
+      "name": "case3z0.2 retained complementary correction",
+      "passed": true,
+      "error": 1.963180725269685e-14
+    },
+    {
+      "name": "case3z0.2 entire inverse tail",
+      "passed": true,
+      "error": 3.9574428813270186e-14
+    },
+    {
+      "name": "case3z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case3z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 2.9393875321966534e-14
+    },
+    {
+      "name": "case3z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 7.105427357601002e-14
+    },
+    {
+      "name": "case3z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.810996009413368
+    },
+    {
+      "name": "case3z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.2380283688730703
+    },
+    {
+      "name": "case3z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.8229307620542017e-14
+    },
+    {
+      "name": "case3z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 4.202786479007091e-14
+    },
+    {
+      "name": "case3z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -7.85213795158431e-15
+    },
+    {
+      "name": "case3z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 4.70719581604417e-15
+    },
+    {
+      "name": "case3z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.5901601472502888
+    },
+    {
+      "name": "case3z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.004545336679238367
+    },
+    {
+      "name": "case3z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 3.3308497693360052e-15
+    },
+    {
+      "name": "case3z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 9.253372110954638e-14
+    },
+    {
+      "name": "case3z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 6.003751070107011e-14
+    },
+    {
+      "name": "case3z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.7053025658242404e-13
+    },
+    {
+      "name": "case3z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.4210854715202004e-13
+    },
+    {
+      "name": "case3z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case3z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case3z1.7 full compressed cubic",
+      "passed": true,
+      "error": 1.1370675700201878e-13
+    },
+    {
+      "name": "case3z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 2.864289338439558e-14
+    },
+    {
+      "name": "case3z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case3z1.7 exact interior source matching",
+      "passed": true,
+      "error": 1.5700924586837751e-15
+    },
+    {
+      "name": "case3z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 1.5700924586837751e-15
+    },
+    {
+      "name": "case3z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case3z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 6.146049399126141e-17
+    },
+    {
+      "name": "case3z1.7 retained complementary correction",
+      "passed": true,
+      "error": 3.2617525359520346e-15
+    },
+    {
+      "name": "case3z1.7 entire inverse tail",
+      "passed": true,
+      "error": 6.206335383118183e-17
+    },
+    {
+      "name": "case3z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case3z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 3.8778423131653425e-15
+    },
+    {
+      "name": "case3z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "case3z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.36470234909048943
+    },
+    {
+      "name": "case3z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.13287613776625373
+    },
+    {
+      "name": "case3z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.7012892057857034e-15
+    },
+    {
+      "name": "case3z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 4.076197102228689e-15
+    },
+    {
+      "name": "case3z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 1.03120501504169e-15
+    },
+    {
+      "name": "case3z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.1618475363687882e-15
+    },
+    {
+      "name": "case3z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0148562631346316
+    },
+    {
+      "name": "case3z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.005007579186519252
+    },
+    {
+      "name": "case3z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 4.444278938805073e-16
+    },
+    {
+      "name": "case3z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 5.130278610367664e-15
+    },
+    {
+      "name": "case3z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 5.178925639311149e-15
+    },
+    {
+      "name": "case3z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 7.0810995818524236e-15
+    },
+    {
+      "name": "case3z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case3z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case3z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case4z0.008 full compressed cubic",
+      "passed": true,
+      "error": 4.26391653155134e-14
+    },
+    {
+      "name": "case4z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case4z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.008 exact interior source matching",
+      "passed": true,
+      "error": 1.9688565809286277e-14
+    },
+    {
+      "name": "case4z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 1.9688565809286277e-14
+    },
+    {
+      "name": "case4z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 5.363940028112711e-15
+    },
+    {
+      "name": "case4z0.008 retained complementary correction",
+      "passed": true,
+      "error": 9.046955311296226e-14
+    },
+    {
+      "name": "case4z0.008 entire inverse tail",
+      "passed": true,
+      "error": 5.664879665481939e-13
+    },
+    {
+      "name": "case4z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 7.221059883085646e-14
+    },
+    {
+      "name": "case4z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.5631940186722204e-13
+    },
+    {
+      "name": "case4z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 3.5527830670619264e-14
+    },
+    {
+      "name": "case4z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 7.964471007348029e-14
+    },
+    {
+      "name": "case4z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.430965587134421
+    },
+    {
+      "name": "case4z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.008 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 8.604572780171474e-16
+    },
+    {
+      "name": "case4z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 4.1169399587349434e-15
+    },
+    {
+      "name": "case4z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 9.863680225614091e-14
+    },
+    {
+      "name": "case4z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.0659621230983516e-13
+    },
+    {
+      "name": "case4z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.4158453015843406e-13
+    },
+    {
+      "name": "case4z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case4z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case4z0.2 full compressed cubic",
+      "passed": true,
+      "error": 5.684930752046744e-14
+    },
+    {
+      "name": "case4z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case4z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.2 exact interior source matching",
+      "passed": true,
+      "error": 8.008337352290734e-15
+    },
+    {
+      "name": "case4z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 1.0838188002063181e-14
+    },
+    {
+      "name": "case4z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 3.871579467242921e-15
+    },
+    {
+      "name": "case4z0.2 retained complementary correction",
+      "passed": true,
+      "error": 5.446387994678041e-14
+    },
+    {
+      "name": "case4z0.2 entire inverse tail",
+      "passed": true,
+      "error": 3.758264826749469e-14
+    },
+    {
+      "name": "case4z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.4888583356622763e-14
+    },
+    {
+      "name": "case4z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "case4z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.487296051779077e-14
+    },
+    {
+      "name": "case4z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.4823868115664955e-14
+    },
+    {
+      "name": "case4z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -8.814997343176145e-15
+    },
+    {
+      "name": "case4z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.514067362225462
+    },
+    {
+      "name": "case4z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z0.2 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 2.4428454582072626e-15
+    },
+    {
+      "name": "case4z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 6.174367383016122e-14
+    },
+    {
+      "name": "case4z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.2208900940601216e-14
+    },
+    {
+      "name": "case4z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 3.972054645195637e-15
+    },
+    {
+      "name": "case4z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 7.105427357601002e-14
+    },
+    {
+      "name": "case4z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case4z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case4z1.7 full compressed cubic",
+      "passed": true,
+      "error": 5.859285502108464e-14
+    },
+    {
+      "name": "case4z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 5.859285502108464e-14
+    },
+    {
+      "name": "case4z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z1.7 exact interior source matching",
+      "passed": true,
+      "error": 5.4570772181716125e-15
+    },
+    {
+      "name": "case4z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 5.4570772181716125e-15
+    },
+    {
+      "name": "case4z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 3.937908261507322e-17
+    },
+    {
+      "name": "case4z1.7 retained complementary correction",
+      "passed": true,
+      "error": 4.599392841359542e-15
+    },
+    {
+      "name": "case4z1.7 entire inverse tail",
+      "passed": true,
+      "error": 1.412282265928462e-16
+    },
+    {
+      "name": "case4z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 8.95090418262362e-15
+    },
+    {
+      "name": "case4z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 8.881784197001252e-15
+    },
+    {
+      "name": "case4z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.684419421060705e-15
+    },
+    {
+      "name": "case4z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 6.466036496704425e-15
+    },
+    {
+      "name": "case4z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.8346929144126038
+    },
+    {
+      "name": "case4z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case4z1.7 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case4z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 5.79553433516819e-16
+    },
+    {
+      "name": "case4z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 1.1955923236841359e-14
+    },
+    {
+      "name": "case4z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.1610313646285627e-14
+    },
+    {
+      "name": "case4z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 4.263487704750087e-14
+    },
+    {
+      "name": "case4z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case4z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case4z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case5z0.008 full compressed cubic",
+      "passed": true,
+      "error": 5.696688428888065e-14
+    },
+    {
+      "name": "case5z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case5z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case5z0.008 exact interior source matching",
+      "passed": true,
+      "error": 1.54951467027319e-14
+    },
+    {
+      "name": "case5z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 1.7486981853308444e-14
+    },
+    {
+      "name": "case5z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case5z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 4.592956557736838e-14
+    },
+    {
+      "name": "case5z0.008 retained complementary correction",
+      "passed": true,
+      "error": 1.6985468923817045e-13
+    },
+    {
+      "name": "case5z0.008 entire inverse tail",
+      "passed": true,
+      "error": 1.8464340718549362e-13
+    },
+    {
+      "name": "case5z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case5z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 4.0457386181908626e-14
+    },
+    {
+      "name": "case5z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.2768337088891652e-13
+    },
+    {
+      "name": "case5z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 1.1809129775041132
+    },
+    {
+      "name": "case5z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.8102859773614344
+    },
+    {
+      "name": "case5z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 6.757820941647973e-14
+    },
+    {
+      "name": "case5z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 7.097095800280676e-14
+    },
+    {
+      "name": "case5z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -2.000506152168452e-15
+    },
+    {
+      "name": "case5z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 9.87241972107853e-15
+    },
+    {
+      "name": "case5z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.1903989789314014
+    },
+    {
+      "name": "case5z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.039965077505155565
+    },
+    {
+      "name": "case5z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 4.792932974330523e-16
+    },
+    {
+      "name": "case5z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 1.5697061321182267e-14
+    },
+    {
+      "name": "case5z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 6.957476359760364e-14
+    },
+    {
+      "name": "case5z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.4213352497495056e-13
+    },
+    {
+      "name": "case5z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.4210854715202004e-13
+    },
+    {
+      "name": "case5z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case5z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case5z0.2 full compressed cubic",
+      "passed": true,
+      "error": 5.695646465783684e-14
+    },
+    {
+      "name": "case5z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case5z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case5z0.2 exact interior source matching",
+      "passed": true,
+      "error": 1.4470646913611666e-14
+    },
+    {
+      "name": "case5z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 1.4470646913611666e-14
+    },
+    {
+      "name": "case5z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case5z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 1.0892640199965193e-14
+    },
+    {
+      "name": "case5z0.2 retained complementary correction",
+      "passed": true,
+      "error": 6.829913474664955e-14
+    },
+    {
+      "name": "case5z0.2 entire inverse tail",
+      "passed": true,
+      "error": 1.010988983721427e-14
+    },
+    {
+      "name": "case5z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case5z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 3.46453629090582e-14
+    },
+    {
+      "name": "case5z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 7.143627367013712e-14
+    },
+    {
+      "name": "case5z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 1.0434094114563466
+    },
+    {
+      "name": "case5z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.7707247858490051
+    },
+    {
+      "name": "case5z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.6647434177866122e-14
+    },
+    {
+      "name": "case5z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 4.525789809973898e-14
+    },
+    {
+      "name": "case5z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 3.62755168832274e-15
+    },
+    {
+      "name": "case5z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -3.5757312909460365e-14
+    },
+    {
+      "name": "case5z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.21594672922991334
+    },
+    {
+      "name": "case5z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.03460474342425356
+    },
+    {
+      "name": "case5z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 3.639183598360878e-15
+    },
+    {
+      "name": "case5z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 9.533087644012663e-14
+    },
+    {
+      "name": "case5z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 6.661930240383347e-14
+    },
+    {
+      "name": "case5z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.8829382497642655e-13
+    },
+    {
+      "name": "case5z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "case5z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case5z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case5z1.7 full compressed cubic",
+      "passed": true,
+      "error": 5.706212814956314e-14
+    },
+    {
+      "name": "case5z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 5.728578676879116e-14
+    },
+    {
+      "name": "case5z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case5z1.7 exact interior source matching",
+      "passed": true,
+      "error": 2.7420485960113413e-15
+    },
+    {
+      "name": "case5z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 2.7420485960113413e-15
+    },
+    {
+      "name": "case5z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case5z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 7.650504213196888e-17
+    },
+    {
+      "name": "case5z1.7 retained complementary correction",
+      "passed": true,
+      "error": 4.002966042486721e-15
+    },
+    {
+      "name": "case5z1.7 entire inverse tail",
+      "passed": true,
+      "error": 7.112366251504909e-17
+    },
+    {
+      "name": "case5z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case5z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 7.283604593613869e-15
+    },
+    {
+      "name": "case5z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.293207299340885e-14
+    },
+    {
+      "name": "case5z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.5551366569941597
+    },
+    {
+      "name": "case5z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.5630637108786481
+    },
+    {
+      "name": "case5z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.4232089213012222e-14
+    },
+    {
+      "name": "case5z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.2121276483828484e-14
+    },
+    {
+      "name": "case5z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 2.0956264992814806e-15
+    },
+    {
+      "name": "case5z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.0523688810001198e-15
+    },
+    {
+      "name": "case5z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.36213047875299864
+    },
+    {
+      "name": "case5z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.010948816849374461
+    },
+    {
+      "name": "case5z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 4.746933783963144e-16
+    },
+    {
+      "name": "case5z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 5.481638349282964e-15
+    },
+    {
+      "name": "case5z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.204848141805799e-14
+    },
+    {
+      "name": "case5z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 5.701662731533487e-14
+    },
+    {
+      "name": "case5z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "case5z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case5z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case6z0.008 full compressed cubic",
+      "passed": true,
+      "error": 5.684533078490384e-14
+    },
+    {
+      "name": "case6z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 1.464821375527116e-14
+    },
+    {
+      "name": "case6z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.008 exact interior source matching",
+      "passed": true,
+      "error": 2.0014830212433605e-15
+    },
+    {
+      "name": "case6z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 2.808666774861361e-15
+    },
+    {
+      "name": "case6z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 2.914203267236168e-15
+    },
+    {
+      "name": "case6z0.008 retained complementary correction",
+      "passed": true,
+      "error": 5.022148798243162e-14
+    },
+    {
+      "name": "case6z0.008 entire inverse tail",
+      "passed": true,
+      "error": 3.200698078535807e-14
+    },
+    {
+      "name": "case6z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 6.141450319825084e-15
+    },
+    {
+      "name": "case6z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 7.971988878370803e-15
+    },
+    {
+      "name": "case6z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 3.9968992610151244e-15
+    },
+    {
+      "name": "case6z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 7.327682229021407e-15
+    },
+    {
+      "name": "case6z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case6z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.008 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 4.7662001037001027e-17
+    },
+    {
+      "name": "case6z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 6.412247533239972e-16
+    },
+    {
+      "name": "case6z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.3671980715406512e-14
+    },
+    {
+      "name": "case6z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.7852165294699933e-14
+    },
+    {
+      "name": "case6z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case6z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case6z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case6z0.2 full compressed cubic",
+      "passed": true,
+      "error": 5.684429187145018e-14
+    },
+    {
+      "name": "case6z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 2.864289338439558e-14
+    },
+    {
+      "name": "case6z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.2 exact interior source matching",
+      "passed": true,
+      "error": 3.202372833989377e-15
+    },
+    {
+      "name": "case6z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 3.271980955760557e-15
+    },
+    {
+      "name": "case6z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 1.2092005680526244e-15
+    },
+    {
+      "name": "case6z0.2 retained complementary correction",
+      "passed": true,
+      "error": 1.472584351656195e-14
+    },
+    {
+      "name": "case6z0.2 entire inverse tail",
+      "passed": true,
+      "error": 7.9966891354784e-15
+    },
+    {
+      "name": "case6z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 8.89287949701369e-15
+    },
+    {
+      "name": "case6z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 2.1829367617044416e-14
+    },
+    {
+      "name": "case6z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 8.882174501207515e-15
+    },
+    {
+      "name": "case6z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.7288938916452044e-14
+    },
+    {
+      "name": "case6z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case6z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z0.2 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 9.50197851991224e-16
+    },
+    {
+      "name": "case6z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 8.759461196669834e-15
+    },
+    {
+      "name": "case6z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.684077535566156e-14
+    },
+    {
+      "name": "case6z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 3.197442310920451e-14
+    },
+    {
+      "name": "case6z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case6z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case6z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case6z1.7 full compressed cubic",
+      "passed": true,
+      "error": 5.684408456985562e-14
+    },
+    {
+      "name": "case6z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 5.695433295429594e-14
+    },
+    {
+      "name": "case6z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z1.7 exact interior source matching",
+      "passed": true,
+      "error": 9.155133597044475e-16
+    },
+    {
+      "name": "case6z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "case6z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 1.4770638155225948e-17
+    },
+    {
+      "name": "case6z1.7 retained complementary correction",
+      "passed": true,
+      "error": 1.4602703977091184e-15
+    },
+    {
+      "name": "case6z1.7 entire inverse tail",
+      "passed": true,
+      "error": 5.721958498152797e-17
+    },
+    {
+      "name": "case6z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 2.2644195468014707e-15
+    },
+    {
+      "name": "case6z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "case6z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.8906416838689214e-15
+    },
+    {
+      "name": "case6z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 3.698163560617978e-15
+    },
+    {
+      "name": "case6z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case6z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case6z1.7 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case6z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.3877787807814457e-16
+    },
+    {
+      "name": "case6z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 1.3288661204232187e-15
+    },
+    {
+      "name": "case6z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.0695084443661335e-14
+    },
+    {
+      "name": "case6z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 7.32410687763558e-15
+    },
+    {
+      "name": "case6z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "case6z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case6z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case7z0.008 full compressed cubic",
+      "passed": true,
+      "error": 4.4938668397781776e-14
+    },
+    {
+      "name": "case7z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 4.0194366942304644e-14
+    },
+    {
+      "name": "case7z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case7z0.008 exact interior source matching",
+      "passed": true,
+      "error": 5.07961660995884e-14
+    },
+    {
+      "name": "case7z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 6.295424678153464e-14
+    },
+    {
+      "name": "case7z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case7z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 2.7016542202060964e-14
+    },
+    {
+      "name": "case7z0.008 retained complementary correction",
+      "passed": true,
+      "error": 1.523421803709742e-13
+    },
+    {
+      "name": "case7z0.008 entire inverse tail",
+      "passed": true,
+      "error": 9.61545747464983e-13
+    },
+    {
+      "name": "case7z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case7z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 2.123089275466792e-13
+    },
+    {
+      "name": "case7z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 5.400124791776761e-13
+    },
+    {
+      "name": "case7z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.7913683645691699
+    },
+    {
+      "name": "case7z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.2672470325041108
+    },
+    {
+      "name": "case7z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 2.717825964282383e-13
+    },
+    {
+      "name": "case7z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.49500352423851e-13
+    },
+    {
+      "name": "case7z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 3.763739486224585e-14
+    },
+    {
+      "name": "case7z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.1202495253258893e-13
+    },
+    {
+      "name": "case7z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.5828161157244063
+    },
+    {
+      "name": "case7z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.06371306477013991
+    },
+    {
+      "name": "case7z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 2.0262825161689008e-15
+    },
+    {
+      "name": "case7z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 4.070369996808544e-14
+    },
+    {
+      "name": "case7z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 8.135765305468058e-13
+    },
+    {
+      "name": "case7z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 4.973830870877398e-13
+    },
+    {
+      "name": "case7z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 6.821210263296962e-13
+    },
+    {
+      "name": "case7z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case7z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case7z0.2 full compressed cubic",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case7z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 4.0194366942304644e-14
+    },
+    {
+      "name": "case7z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case7z0.2 exact interior source matching",
+      "passed": true,
+      "error": 3.465674583693003e-14
+    },
+    {
+      "name": "case7z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 5.1858231069956535e-14
+    },
+    {
+      "name": "case7z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case7z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 9.243065094059316e-15
+    },
+    {
+      "name": "case7z0.2 retained complementary correction",
+      "passed": true,
+      "error": 4.4490031970816964e-14
+    },
+    {
+      "name": "case7z0.2 entire inverse tail",
+      "passed": true,
+      "error": 4.8941068922571284e-14
+    },
+    {
+      "name": "case7z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case7z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 9.286881218569194e-14
+    },
+    {
+      "name": "case7z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 3.339550858072471e-13
+    },
+    {
+      "name": "case7z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.79683263703709
+    },
+    {
+      "name": "case7z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.26841374930332207
+    },
+    {
+      "name": "case7z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 5.0581838980652165e-14
+    },
+    {
+      "name": "case7z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.4921810474644905e-13
+    },
+    {
+      "name": "case7z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.0223159124800318e-14
+    },
+    {
+      "name": "case7z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.7546672433710186e-14
+    },
+    {
+      "name": "case7z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.5830776686963306
+    },
+    {
+      "name": "case7z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.06490595883636005
+    },
+    {
+      "name": "case7z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.820777693181041e-14
+    },
+    {
+      "name": "case7z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 2.655036031122864e-13
+    },
+    {
+      "name": "case7z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.5515205357630836e-13
+    },
+    {
+      "name": "case7z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 4.27457491654804e-14
+    },
+    {
+      "name": "case7z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.0231815394945443e-12
+    },
+    {
+      "name": "case7z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case7z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case7z1.7 full compressed cubic",
+      "passed": true,
+      "error": 1.1385992284545084e-13
+    },
+    {
+      "name": "case7z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 8.038873388460929e-14
+    },
+    {
+      "name": "case7z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case7z1.7 exact interior source matching",
+      "passed": true,
+      "error": 2.482534153247273e-15
+    },
+    {
+      "name": "case7z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 6.661338147750939e-15
+    },
+    {
+      "name": "case7z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case7z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 8.520146051207134e-17
+    },
+    {
+      "name": "case7z1.7 retained complementary correction",
+      "passed": true,
+      "error": 9.412864702392462e-15
+    },
+    {
+      "name": "case7z1.7 entire inverse tail",
+      "passed": true,
+      "error": 2.0888836804026044e-16
+    },
+    {
+      "name": "case7z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case7z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 7.021666937153402e-15
+    },
+    {
+      "name": "case7z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case7z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.8845073971997862
+    },
+    {
+      "name": "case7z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.28636046902519013
+    },
+    {
+      "name": "case7z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 5.015702075040325e-15
+    },
+    {
+      "name": "case7z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.5829537926688444e-14
+    },
+    {
+      "name": "case7z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.1245010355005487e-15
+    },
+    {
+      "name": "case7z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 2.741898391295228e-15
+    },
+    {
+      "name": "case7z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.6278590329451075
+    },
+    {
+      "name": "case7z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.06885767800161162
+    },
+    {
+      "name": "case7z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 7.494005416219807e-16
+    },
+    {
+      "name": "case7z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 2.6395289793483112e-14
+    },
+    {
+      "name": "case7z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 9.254934270251623e-15
+    },
+    {
+      "name": "case7z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 7.32410687763558e-15
+    },
+    {
+      "name": "case7z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case7z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case7z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case8z0.008 full compressed cubic",
+      "passed": true,
+      "error": 2.929642751054232e-14
+    },
+    {
+      "name": "case8z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case8z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.008 exact interior source matching",
+      "passed": true,
+      "error": 8.169433000449895e-15
+    },
+    {
+      "name": "case8z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 8.169433000449895e-15
+    },
+    {
+      "name": "case8z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 5.0967822799220994e-14
+    },
+    {
+      "name": "case8z0.008 retained complementary correction",
+      "passed": true,
+      "error": 2.2312610391330492e-13
+    },
+    {
+      "name": "case8z0.008 entire inverse tail",
+      "passed": true,
+      "error": 9.339080995124634e-14
+    },
+    {
+      "name": "case8z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 2.1186360118499727e-14
+    },
+    {
+      "name": "case8z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 9.237055564881302e-14
+    },
+    {
+      "name": "case8z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 3.108694166880184e-14
+    },
+    {
+      "name": "case8z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 3.109666367520849e-14
+    },
+    {
+      "name": "case8z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.36411158045184494
+    },
+    {
+      "name": "case8z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.008 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.1107649934270853e-16
+    },
+    {
+      "name": "case8z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 5.312158362823495e-15
+    },
+    {
+      "name": "case8z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 2.45690624539368e-14
+    },
+    {
+      "name": "case8z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 3.908994210040608e-14
+    },
+    {
+      "name": "case8z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "case8z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case8z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case8z0.2 full compressed cubic",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case8z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case8z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.2 exact interior source matching",
+      "passed": true,
+      "error": 7.938870967844446e-15
+    },
+    {
+      "name": "case8z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 7.938870967844446e-15
+    },
+    {
+      "name": "case8z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 4.905125646631375e-15
+    },
+    {
+      "name": "case8z0.2 retained complementary correction",
+      "passed": true,
+      "error": 5.2675139512821234e-14
+    },
+    {
+      "name": "case8z0.2 entire inverse tail",
+      "passed": true,
+      "error": 7.229248575812844e-15
+    },
+    {
+      "name": "case8z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 2.692605570269597e-14
+    },
+    {
+      "name": "case8z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "case8z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.678751197736599e-14
+    },
+    {
+      "name": "case8z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 2.1865475352036357e-14
+    },
+    {
+      "name": "case8z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.5009449213082376
+    },
+    {
+      "name": "case8z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z0.2 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 1.9995463049314036e-15
+    },
+    {
+      "name": "case8z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 4.940659463288652e-14
+    },
+    {
+      "name": "case8z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 8.709584642567778e-14
+    },
+    {
+      "name": "case8z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 7.160723346098895e-15
+    },
+    {
+      "name": "case8z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case8z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case8z1.7 full compressed cubic",
+      "passed": true,
+      "error": 6.355287432313019e-14
+    },
+    {
+      "name": "case8z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 3.1776437161565096e-14
+    },
+    {
+      "name": "case8z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z1.7 exact interior source matching",
+      "passed": true,
+      "error": 2.5548702056106923e-15
+    },
+    {
+      "name": "case8z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 2.5548702056106923e-15
+    },
+    {
+      "name": "case8z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 6.588524522771804e-17
+    },
+    {
+      "name": "case8z1.7 retained complementary correction",
+      "passed": true,
+      "error": 2.9893669801409084e-15
+    },
+    {
+      "name": "case8z1.7 entire inverse tail",
+      "passed": true,
+      "error": 6.202091319936194e-17
+    },
+    {
+      "name": "case8z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 4.965068306494546e-15
+    },
+    {
+      "name": "case8z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "case8z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "case8z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 5.484097192022683e-15
+    },
+    {
+      "name": "case8z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -3.987745083777116e-15
+    },
+    {
+      "name": "case8z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case8z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case8z1.7 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case8z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 4.442551972871225e-16
+    },
+    {
+      "name": "case8z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 7.855721829764067e-15
+    },
+    {
+      "name": "case8z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.1601830607332886e-14
+    },
+    {
+      "name": "case8z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.7769118642034836e-14
+    },
+    {
+      "name": "case8z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "case8z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case8z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case9z0.008 full compressed cubic",
+      "passed": true,
+      "error": 3.0145775206728485e-14
+    },
+    {
+      "name": "case9z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 5.728578676879116e-14
+    },
+    {
+      "name": "case9z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case9z0.008 exact interior source matching",
+      "passed": true,
+      "error": 1.8758498541598355e-14
+    },
+    {
+      "name": "case9z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 1.8893373431245885e-14
+    },
+    {
+      "name": "case9z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case9z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 7.847321480213184e-15
+    },
+    {
+      "name": "case9z0.008 retained complementary correction",
+      "passed": true,
+      "error": 1.6128816336303386e-13
+    },
+    {
+      "name": "case9z0.008 entire inverse tail",
+      "passed": true,
+      "error": 7.150691306063739e-13
+    },
+    {
+      "name": "case9z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case9z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 3.8191672047105385e-14
+    },
+    {
+      "name": "case9z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.8474111129762605e-13
+    },
+    {
+      "name": "case9z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 1.906975802137721
+    },
+    {
+      "name": "case9z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.6304760804652324
+    },
+    {
+      "name": "case9z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.1199855916001468e-13
+    },
+    {
+      "name": "case9z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 8.35985405050785e-14
+    },
+    {
+      "name": "case9z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -4.0959614119062376e-15
+    },
+    {
+      "name": "case9z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 1.449901110324777e-14
+    },
+    {
+      "name": "case9z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.09252665074220622
+    },
+    {
+      "name": "case9z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.002686229759065115
+    },
+    {
+      "name": "case9z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 4.447527879066319e-16
+    },
+    {
+      "name": "case9z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 4.1077328005583704e-15
+    },
+    {
+      "name": "case9z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 9.23748256386754e-14
+    },
+    {
+      "name": "case9z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "case9z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case9z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case9z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case9z0.2 full compressed cubic",
+      "passed": true,
+      "error": 4.2633399995184954e-14
+    },
+    {
+      "name": "case9z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 5.728578676879116e-14
+    },
+    {
+      "name": "case9z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case9z0.2 exact interior source matching",
+      "passed": true,
+      "error": 7.696856831808124e-15
+    },
+    {
+      "name": "case9z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 9.550499576785473e-15
+    },
+    {
+      "name": "case9z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case9z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 2.564501038037133e-15
+    },
+    {
+      "name": "case9z0.2 retained complementary correction",
+      "passed": true,
+      "error": 8.026628381049281e-14
+    },
+    {
+      "name": "case9z0.2 entire inverse tail",
+      "passed": true,
+      "error": 1.7500721312336182e-14
+    },
+    {
+      "name": "case9z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case9z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 2.9243367197813476e-14
+    },
+    {
+      "name": "case9z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.2789769243681803e-13
+    },
+    {
+      "name": "case9z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 1.8749985586003968
+    },
+    {
+      "name": "case9z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.626727847307308
+    },
+    {
+      "name": "case9z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 6.755412893897422e-14
+    },
+    {
+      "name": "case9z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 3.304214721875502e-14
+    },
+    {
+      "name": "case9z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -9.999742729192341e-15
+    },
+    {
+      "name": "case9z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 1.4913484075343758e-14
+    },
+    {
+      "name": "case9z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.11361465328714596
+    },
+    {
+      "name": "case9z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0025293991646961347
+    },
+    {
+      "name": "case9z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 6.217283787158751e-15
+    },
+    {
+      "name": "case9z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 3.5978069667088564e-14
+    },
+    {
+      "name": "case9z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 8.10921975650084e-14
+    },
+    {
+      "name": "case9z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "case9z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case9z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case9z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case9z1.7 full compressed cubic",
+      "passed": true,
+      "error": 5.686622195615314e-14
+    },
+    {
+      "name": "case9z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case9z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case9z1.7 exact interior source matching",
+      "passed": true,
+      "error": 3.64264834218873e-15
+    },
+    {
+      "name": "case9z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 3.64264834218873e-15
+    },
+    {
+      "name": "case9z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case9z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 5.090903598275045e-17
+    },
+    {
+      "name": "case9z1.7 retained complementary correction",
+      "passed": true,
+      "error": 4.591346077054628e-15
+    },
+    {
+      "name": "case9z1.7 entire inverse tail",
+      "passed": true,
+      "error": 1.0888758524337804e-16
+    },
+    {
+      "name": "case9z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case9z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 7.588599744428075e-15
+    },
+    {
+      "name": "case9z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 3.552713678800501e-14
+    },
+    {
+      "name": "case9z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 1.3555716647484153
+    },
+    {
+      "name": "case9z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.5517692296923387
+    },
+    {
+      "name": "case9z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 9.41008164741723e-15
+    },
+    {
+      "name": "case9z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.628663499255034e-14
+    },
+    {
+      "name": "case9z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 1.5474360867702653e-15
+    },
+    {
+      "name": "case9z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.9146387582327805e-15
+    },
+    {
+      "name": "case9z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.2934423093916593
+    },
+    {
+      "name": "case9z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.002037556665181244
+    },
+    {
+      "name": "case9z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 7.049724974416564e-16
+    },
+    {
+      "name": "case9z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 5.4342953043395026e-15
+    },
+    {
+      "name": "case9z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 3.2171190647067566e-14
+    },
+    {
+      "name": "case9z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 2.929642751054232e-14
+    },
+    {
+      "name": "case9z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case9z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case9z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case10z0.008 full compressed cubic",
+      "passed": true,
+      "error": 1.1369933552173158e-13
+    },
+    {
+      "name": "case10z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 2.929642751054232e-14
+    },
+    {
+      "name": "case10z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.008 exact interior source matching",
+      "passed": true,
+      "error": 4.440892098500626e-15
+    },
+    {
+      "name": "case10z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 5.515473566030869e-15
+    },
+    {
+      "name": "case10z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 2.2887833992611184e-15
+    },
+    {
+      "name": "case10z0.008 retained complementary correction",
+      "passed": true,
+      "error": 3.7975510843767114e-14
+    },
+    {
+      "name": "case10z0.008 entire inverse tail",
+      "passed": true,
+      "error": 8.903074960742904e-14
+    },
+    {
+      "name": "case10z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.517719948885615e-14
+    },
+    {
+      "name": "case10z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case10z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.512513347095137e-14
+    },
+    {
+      "name": "case10z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 2.4781859104316643e-14
+    },
+    {
+      "name": "case10z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.960435878398719
+    },
+    {
+      "name": "case10z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.008 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 2.250130944603393e-16
+    },
+    {
+      "name": "case10z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 1.3208213800868981e-15
+    },
+    {
+      "name": "case10z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.6259745902499083e-14
+    },
+    {
+      "name": "case10z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.8746996005429907e-14
+    },
+    {
+      "name": "case10z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case10z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case10z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case10z0.2 full compressed cubic",
+      "passed": true,
+      "error": 1.1369976993479222e-13
+    },
+    {
+      "name": "case10z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case10z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.2 exact interior source matching",
+      "passed": true,
+      "error": 2.9790409838967277e-15
+    },
+    {
+      "name": "case10z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 3.614624287906422e-15
+    },
+    {
+      "name": "case10z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 2.0358293740687926e-15
+    },
+    {
+      "name": "case10z0.2 retained complementary correction",
+      "passed": true,
+      "error": 4.957316748998149e-14
+    },
+    {
+      "name": "case10z0.2 entire inverse tail",
+      "passed": true,
+      "error": 1.1949218545369532e-14
+    },
+    {
+      "name": "case10z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 1.0658141036401503e-14
+    },
+    {
+      "name": "case10z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "case10z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.5230706153739355e-14
+    },
+    {
+      "name": "case10z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 2.516168079136285e-14
+    },
+    {
+      "name": "case10z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case10z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z0.2 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 2.2241536358170013e-15
+    },
+    {
+      "name": "case10z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 7.203645431782659e-15
+    },
+    {
+      "name": "case10z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.6687357476335705e-14
+    },
+    {
+      "name": "case10z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 2.1094237467877974e-15
+    },
+    {
+      "name": "case10z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "case10z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case10z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case10z1.7 full compressed cubic",
+      "passed": true,
+      "error": 2.2739263023702395e-13
+    },
+    {
+      "name": "case10z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "case10z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z1.7 exact interior source matching",
+      "passed": true,
+      "error": 1.4155343563970746e-15
+    },
+    {
+      "name": "case10z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 1.831026719408895e-15
+    },
+    {
+      "name": "case10z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 2.6479404645468866e-17
+    },
+    {
+      "name": "case10z1.7 retained complementary correction",
+      "passed": true,
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "name": "case10z1.7 entire inverse tail",
+      "passed": true,
+      "error": 6.565074688799029e-17
+    },
+    {
+      "name": "case10z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 3.722145839155691e-15
+    },
+    {
+      "name": "case10z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 2.1316282072803006e-14
+    },
+    {
+      "name": "case10z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 5.333694441429199e-15
+    },
+    {
+      "name": "case10z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.0660453750117863e-14
+    },
+    {
+      "name": "case10z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -5.438528231695827e-16
+    },
+    {
+      "name": "case10z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 1.0
+    },
+    {
+      "name": "case10z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case10z1.7 zero residual direction retained",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 2.618455766672135e-16
+    },
+    {
+      "name": "case10z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 6.747176429226405e-15
+    },
+    {
+      "name": "case10z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "case10z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.0986160316453369e-14
+    },
+    {
+      "name": "case10z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case10z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case10z1.7 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case11z0.008 full compressed cubic",
+      "passed": true,
+      "error": 5.687116766346677e-14
+    },
+    {
+      "name": "case11z0.008 full ordered complementary operator",
+      "passed": true,
+      "error": 2.864289338439558e-14
+    },
+    {
+      "name": "case11z0.008 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case11z0.008 exact interior source matching",
+      "passed": true,
+      "error": 1.884460540830488e-14
+    },
+    {
+      "name": "case11z0.008 complete complementary forcing",
+      "passed": true,
+      "error": 2.7622920022601226e-14
+    },
+    {
+      "name": "case11z0.008 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case11z0.008 exact old new trial correction",
+      "passed": true,
+      "error": 5.825064181954095e-14
+    },
+    {
+      "name": "case11z0.008 retained complementary correction",
+      "passed": true,
+      "error": 2.2594410603272033e-13
+    },
+    {
+      "name": "case11z0.008 entire inverse tail",
+      "passed": true,
+      "error": 1.6412806643437652e-12
+    },
+    {
+      "name": "case11z0.008 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case11z0.008 source overlap equals full covariance",
+      "passed": true,
+      "error": 6.793258640404411e-14
+    },
+    {
+      "name": "case11z0.008 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 2.42373459541259e-13
+    },
+    {
+      "name": "case11z0.008 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 3.195359397053078
+    },
+    {
+      "name": "case11z0.008 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.3859781027484102
+    },
+    {
+      "name": "case11z0.008 all noncommuting residual expressions",
+      "passed": true,
+      "error": 1.9540127091091856e-13
+    },
+    {
+      "name": "case11z0.008 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.0218781247113981e-13
+    },
+    {
+      "name": "case11z0.008 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 1.789703886289477e-14
+    },
+    {
+      "name": "case11z0.008 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -5.5597816298083626e-14
+    },
+    {
+      "name": "case11z0.008 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.3535101026542005
+    },
+    {
+      "name": "case11z0.008 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.05461903132711515
+    },
+    {
+      "name": "case11z0.008 all filtered mixed terms retained",
+      "passed": true,
+      "error": 8.045527044939628e-16
+    },
+    {
+      "name": "case11z0.008 complete five signed trial moments",
+      "passed": true,
+      "error": 6.476248749687921e-14
+    },
+    {
+      "name": "case11z0.008 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.6573052917851848e-13
+    },
+    {
+      "name": "case11z0.008 exact optimal residual Gram",
+      "passed": true,
+      "error": 1.1937448379715926e-12
+    },
+    {
+      "name": "case11z0.008 full optimization Pythagoras",
+      "passed": true,
+      "error": 9.094947017729282e-13
+    },
+    {
+      "name": "case11z0.008 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case11z0.008 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case11z0.2 full compressed cubic",
+      "passed": true,
+      "error": 4.266955553143359e-14
+    },
+    {
+      "name": "case11z0.2 full ordered complementary operator",
+      "passed": true,
+      "error": 2.929642751054232e-14
+    },
+    {
+      "name": "case11z0.2 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case11z0.2 exact interior source matching",
+      "passed": true,
+      "error": 1.1745825978179767e-14
+    },
+    {
+      "name": "case11z0.2 complete complementary forcing",
+      "passed": true,
+      "error": 1.3708557190803449e-14
+    },
+    {
+      "name": "case11z0.2 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case11z0.2 exact old new trial correction",
+      "passed": true,
+      "error": 4.602160898172067e-15
+    },
+    {
+      "name": "case11z0.2 retained complementary correction",
+      "passed": true,
+      "error": 7.494457715654686e-14
+    },
+    {
+      "name": "case11z0.2 entire inverse tail",
+      "passed": true,
+      "error": 9.459829865714899e-14
+    },
+    {
+      "name": "case11z0.2 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case11z0.2 source overlap equals full covariance",
+      "passed": true,
+      "error": 4.269742238024917e-14
+    },
+    {
+      "name": "case11z0.2 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.0302869668521453e-13
+    },
+    {
+      "name": "case11z0.2 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 3.0395131321451174
+    },
+    {
+      "name": "case11z0.2 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.37924260314505376
+    },
+    {
+      "name": "case11z0.2 all noncommuting residual expressions",
+      "passed": true,
+      "error": 5.040754879694984e-14
+    },
+    {
+      "name": "case11z0.2 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 4.610206958308223e-14
+    },
+    {
+      "name": "case11z0.2 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": -1.826170813727794e-14
+    },
+    {
+      "name": "case11z0.2 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": 4.3015317769466684e-14
+    },
+    {
+      "name": "case11z0.2 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.3836903354886766
+    },
+    {
+      "name": "case11z0.2 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.03632082457399159
+    },
+    {
+      "name": "case11z0.2 all filtered mixed terms retained",
+      "passed": true,
+      "error": 4.8851587200300415e-15
+    },
+    {
+      "name": "case11z0.2 complete five signed trial moments",
+      "passed": true,
+      "error": 3.688914245642699e-13
+    },
+    {
+      "name": "case11z0.2 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 3.820199830714189e-14
+    },
+    {
+      "name": "case11z0.2 exact optimal residual Gram",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "case11z0.2 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.2079226507921703e-13
+    },
+    {
+      "name": "case11z0.2 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case11z0.2 optimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case11z1.7 full compressed cubic",
+      "passed": true,
+      "error": 1.1368859783054647e-13
+    },
+    {
+      "name": "case11z1.7 full ordered complementary operator",
+      "passed": true,
+      "error": 5.701662731533487e-14
+    },
+    {
+      "name": "case11z1.7 positive full compressed equation",
+      "passed": true,
+      "min_eigenvalue": 0.0
+    },
+    {
+      "name": "case11z1.7 exact interior source matching",
+      "passed": true,
+      "error": 2.7290944067463696e-15
+    },
+    {
+      "name": "case11z1.7 complete complementary forcing",
+      "passed": true,
+      "error": 3.1401849173675502e-15
+    },
+    {
+      "name": "case11z1.7 all source complement inner products",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case11z1.7 exact old new trial correction",
+      "passed": true,
+      "error": 1.6405039390093973e-16
+    },
+    {
+      "name": "case11z1.7 retained complementary correction",
+      "passed": true,
+      "error": 6.753223014464259e-15
+    },
+    {
+      "name": "case11z1.7 entire inverse tail",
+      "passed": true,
+      "error": 2.0613303810414136e-16
+    },
+    {
+      "name": "case11z1.7 every source and trial vacuum projection",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "case11z1.7 source overlap equals full covariance",
+      "passed": true,
+      "error": 8.758808311222673e-15
+    },
+    {
+      "name": "case11z1.7 full Gram equals covariance plus residual",
+      "passed": true,
+      "error": 1.5157695690493977e-14
+    },
+    {
+      "name": "case11z1.7 original source floor reaches full Gram",
+      "passed": true,
+      "min_eigenvalue": 2.080341381883999
+    },
+    {
+      "name": "case11z1.7 coefficient inverse bound",
+      "passed": true,
+      "min_eigenvalue": 0.3255398668409967
+    },
+    {
+      "name": "case11z1.7 all noncommuting residual expressions",
+      "passed": true,
+      "error": 6.584099933341187e-15
+    },
+    {
+      "name": "case11z1.7 noncommuting mixed residual expression",
+      "passed": true,
+      "error": 1.1774777517240138e-14
+    },
+    {
+      "name": "case11z1.7 exact residual lower sandwich",
+      "passed": true,
+      "min_eigenvalue": 1.423549700816696e-15
+    },
+    {
+      "name": "case11z1.7 exact residual upper sandwich",
+      "passed": true,
+      "min_eigenvalue": -4.907667180406264e-15
+    },
+    {
+      "name": "case11z1.7 covariance residual order",
+      "passed": true,
+      "min_eigenvalue": 0.5841499189640171
+    },
+    {
+      "name": "case11z1.7 forcing residual order",
+      "passed": true,
+      "min_eigenvalue": 0.018762064181381984
+    },
+    {
+      "name": "case11z1.7 all filtered mixed terms retained",
+      "passed": true,
+      "error": 7.772800161809615e-16
+    },
+    {
+      "name": "case11z1.7 complete five signed trial moments",
+      "passed": true,
+      "error": 4.1419695654258604e-14
+    },
+    {
+      "name": "case11z1.7 optimal raw coefficient normal equation",
+      "passed": true,
+      "error": 1.0325074129013956e-14
+    },
+    {
+      "name": "case11z1.7 exact optimal residual Gram",
+      "passed": true,
+      "error": 7.944109290391274e-15
+    },
+    {
+      "name": "case11z1.7 full optimization Pythagoras",
+      "passed": true,
+      "error": 1.1368683772161603e-13
+    },
+    {
+      "name": "case11z1.7 unoptimized signed correction sign",
+      "passed": true
+    },
+    {
+      "name": "case11z1.7 optimized signed correction sign",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "FCC-full-cubic-source-matching",
+    "original": "Separate conditional patch trials in SCR12 retain a general overlap matrix H and possible missing source directions.",
+    "change": "FCC1–FCC8 construct one original source cube and solve its full compressed cubic equation, retaining all actual marginal and complementary terms. The exact overlap becomes H=S and G=S+R.",
+    "affects": [
+      "SCR5–SCR13",
+      "IM1–IM13",
+      "full spatial source trial"
+    ],
+    "proof": "FULL_CUBIC_SOURCE_COMPRESSION.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SCR,SMP,IM, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "FCC-polynomial-full-Gram-invertibility",
+    "original": "SMP11 bounds the actual source covariance, but it does not by itself make the earlier trial overlap invertible.",
+    "change": "FCC8–FCC10 transfer the full polynomial covariance floor to the new actual equation Gram matrix, prove unique raw optimal coefficients and both residual matrix bounds, including singular R.",
+    "affects": [
+      "SMP11–SMP13",
+      "SCR12–SCR13"
+    ],
+    "proof": "FULL_CUBIC_SOURCE_COMPRESSION.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SCR,SMP,IM, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "FCC-retained-filtered-cross-terms",
+    "original": "The vanishing of unfiltered source-complement products could be misapplied to the signed spectral filter.",
+    "change": "FCC11–FCC13 retain every filtered cross term, both centered error intervals and an exact rational positive-operator example with nonzero filtered cross term. The correction to q(A) is also proved indefinite in an explicit positive-block example.",
+    "affects": [
+      "SCR2–SCR3",
+      "full signed shrinking response"
+    ],
+    "proof": "FULL_CUBIC_SOURCE_COMPRESSION.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in SCR,SMP,IM, programme sources and cumulative manuscript."
+  }
+]

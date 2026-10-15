@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-15T06:14:22.142735+00:00",
+  "checked_utc": "2026-10-15T06:40:29.025719+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -301,8 +301,8 @@
     },
     {
       "source": "INSIDE_MARGINAL_ENERGY.md",
-      "sha256": "d459735f7ec895a0a1e6d2cd42ad3b027b3eed034d39efc93ca1e26a5baa7b0d",
-      "complete_math_blocks": 246,
+      "sha256": "85ef92a7a32f4004fff1e13efefe3018a4338ec99c460cbd62dacf157223f43d",
+      "complete_math_blocks": 247,
       "split_to_aligned_wrappers": 4
     },
     {
@@ -721,14 +721,20 @@
     },
     {
       "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
-      "sha256": "ddb4646b340e00d945382a290c7fc3d272dbd7d13f13776e80ed80d4fdcc266c",
-      "complete_math_blocks": 38,
+      "sha256": "8888d7fc1268382c47bb2ee14ab2ba027ecbc48ba384b55660a89df46bfc3088",
+      "complete_math_blocks": 39,
       "split_to_aligned_wrappers": 0
     },
     {
       "source": "ACTUAL_SPATIAL_MOMENT_MATRICES.md",
-      "sha256": "da91af2b19d79081a9340bce09a0c612c7310187d3655b712cf72bccb9a9281a",
-      "complete_math_blocks": 96,
+      "sha256": "86518d7cac0936cd963c4f697bb9d48c6a992b197563e748c5736be60e0f10c4",
+      "complete_math_blocks": 97,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "FULL_CUBIC_SOURCE_COMPRESSION.md",
+      "sha256": "b8bdc70182a8574be7c06b95857eeb483a147a89054a362027f41056f73d053b",
+      "complete_math_blocks": 121,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1476,6 +1482,11 @@
     {
       "file": "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png",
       "sha256": "f90cf583a39e79db7386aa07fefe3c3b895c3a50eb2cdfdf3ca53698f4fdafb2",
+      "visually_inspected": true
+    },
+    {
+      "file": "FULL_CUBIC_COMPRESSION_AND_RESIDUAL.png",
+      "sha256": "9bc67ed6a5ac90a084ae5215ce81cd465d63ccea145aeec2fcd2a98b7c3de471",
       "visually_inspected": true
     }
   ],
@@ -11189,6 +11200,143 @@
         "CONDITIONAL_LINKS_AND_SPATIAL_COVARIANCE.png"
       ],
       "method": "All14new/receiving/adjacent pages viewed in four rendered contact sheets; original figure inspected after spacing correction. All equations and the full finite coefficients visible; no new clipping or overflow.",
+      "new_overflows": 0,
+      "new_missing_characters": 0,
+      "inherited_overflows": 59,
+      "inherited_missing": [
+        "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+      ]
+    }
+  },
+  "cubic_compression_review": {
+    "utc": "2026-10-15T06:37:59.924984+00:00",
+    "coverage": "Complete FCC1–FCC13: original cube conditional space and full marginal equation; exact conditional adjoint; closed full cubic compression and smooth domain; all ordered blocks, indefinite correction example; exact source matching and entire inverse tail; H=S and G=S+R with actual polynomial invertibility; complete noncommuting residual interval; all signed filtered terms and an exact nonzero rational cross term.",
+    "strengthening": "Using one actual conditional cube and solving the full compressed cubic removes missing source directions: the source-overlap matrix equals S and the full equation Gram matrix is at least the proved polynomial covariance floor, with no extra inverse-shift penalty. The remaining residual matrix retains every cross-face term.",
+    "corrections": "The compression is defined first by its closed form, with the operator pairing only on its operator domain. The correction to q(A) is not assumed positive; an exact positive-block example has correction determinant minus nine. Unfiltered orthogonality does not remove filtered cross terms; the rational counterexample is proved.",
+    "limitations": "The full complementary forcing R and signed trial matrix still require actual evaluation. Neither matrix invertibility nor the finite residual interval establishes surviving annular mass, reconstruction or the smooth global no-gap endpoint.",
+    "diagnostic_count": 996,
+    "diagnostic_scope": "Exact rational positive-block and nonzero filtered-cross identities; full complex positive-operator fixtures with noncommuting blocks, vacuum sector, singular residual directions, all inverse tails, exact Gram and raw optimization identities, and both signed error intervals.",
+    "figures_inspected": [
+      "FULL_CUBIC_COMPRESSION_AND_RESIDUAL.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "FULL_CUBIC_SOURCE_COMPRESSION.md",
+        "prefix": "FCC",
+        "tags": 13,
+        "owner_sha256": "b8bdc70182a8574be7c06b95857eeb483a147a89054a362027f41056f73d053b",
+        "public_sha256": "b8bdc70182a8574be7c06b95857eeb483a147a89054a362027f41056f73d053b",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-15T06:40:29.025719+00:00",
+      "tex_sha256": "5b321350ee07ea5b77a1d245ca77f3a5db9fd10713879039e2d3505b8ac05533",
+      "pdf_sha256": "9b354bead2095bde19ed2e5f90f58ff008d3b38b58580b4755d1b91cef117d52",
+      "pages": 1346,
+      "source_files": 122,
+      "math_blocks": 27325,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-15T06:40:28.947875+00:00",
+        "complete": true,
+        "pages": 1346,
+        "inspected_pages": [
+          513,
+          514,
+          515,
+          1331,
+          1332,
+          1333,
+          1338,
+          1339,
+          1340,
+          1341,
+          1342,
+          1343,
+          1344,
+          1345,
+          1346
+        ],
+        "new_proof_pages": [
+          1340,
+          1341,
+          1342,
+          1343,
+          1344,
+          1345,
+          1346
+        ],
+        "receiving_pages": [
+          514,
+          1332,
+          1339
+        ],
+        "figures_inspected": [
+          "FULL_CUBIC_COMPRESSION_AND_RESIDUAL.png"
+        ],
+        "method": "All15new/receiving/adjacent pages viewed in four rendered contact sheets; full compression figure inspected in the reader and at original size. All equations and the full finite coefficients visible; no new clipping or overflow.",
+        "new_overflows": 0,
+        "new_missing_characters": 0,
+        "inherited_overflows": 59,
+        "inherited_missing": [
+          "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+        ]
+      }
+    }
+  },
+  "cubic_compression_compile": {
+    "utc": "2026-10-15T06:40:29.025719+00:00",
+    "tex_sha256": "5b321350ee07ea5b77a1d245ca77f3a5db9fd10713879039e2d3505b8ac05533",
+    "pdf_sha256": "9b354bead2095bde19ed2e5f90f58ff008d3b38b58580b4755d1b91cef117d52",
+    "pages": 1346,
+    "source_files": 122,
+    "math_blocks": 27325,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-15T06:40:28.947875+00:00",
+      "complete": true,
+      "pages": 1346,
+      "inspected_pages": [
+        513,
+        514,
+        515,
+        1331,
+        1332,
+        1333,
+        1338,
+        1339,
+        1340,
+        1341,
+        1342,
+        1343,
+        1344,
+        1345,
+        1346
+      ],
+      "new_proof_pages": [
+        1340,
+        1341,
+        1342,
+        1343,
+        1344,
+        1345,
+        1346
+      ],
+      "receiving_pages": [
+        514,
+        1332,
+        1339
+      ],
+      "figures_inspected": [
+        "FULL_CUBIC_COMPRESSION_AND_RESIDUAL.png"
+      ],
+      "method": "All15new/receiving/adjacent pages viewed in four rendered contact sheets; full compression figure inspected in the reader and at original size. All equations and the full finite coefficients visible; no new clipping or overflow.",
       "new_overflows": 0,
       "new_missing_characters": 0,
       "inherited_overflows": 59,
