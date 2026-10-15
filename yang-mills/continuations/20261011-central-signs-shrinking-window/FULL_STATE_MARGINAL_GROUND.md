@@ -312,3 +312,16 @@ The complete time and resolvent memory bounds keep the same original complementa
 m_C j^{869}e^{84800\pi^2j/\kappa_*}\longrightarrow A_{\kappa_*}>0,
 \]
 with its full coefficient proved in LPF7. This improves the volume dependence of the earlier estimate while retaining every original boundary term. It describes the bound formula, not the actual spectral mass. The signed shrinking window and smooth global no-gap construction remain active.
+
+## Actual trace moments and the joint signed spectral filter
+
+[JTR1–JTR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_TRACE_SIGNED_RESPONSE.md) prove that the retained actual trace-complement coupling is the exact positive defect in the physical second spectral moment. Complete third-moment bounds give explicit large-shift signs: the individual correction is negative, its original three-shift combination is positive, and the full signed response is negative. The actual baseline is retained throughout.
+
+The original regulator-path threshold is evaluated with its entire coefficient. Its growth does not reach the intended shrinking shifts. At those same shifts the complete signed response has the exact five-moment form
+\[
+\mathcal C=\zeta\sum_{k=0}^4p_k
+\|\mathcal L^{(k+1)/2}f\|^2,\qquad
+f=(\mathcal L+\zeta)^{-1}(\mathcal L+\varepsilon\zeta)^{-1}
+(\mathcal L+R_{\rm win}\zeta)^{-1}X.
+\]
+Every coefficient, both spectral tails and the full noncommuting map from the trace vector are proved. The precise central-sign receiving map includes its additional baseline. The actual five moments and filtered coupling sources, limiting annular mass and smooth global no-gap construction remain active.

@@ -242,3 +242,16 @@ The diagram records the actual probability measures and every derivative term in
 ![Original-regulator lower bounds and their exact coefficient comparison](LOCAL_MEMORY_ORIGINAL_PATH_BOUNDS.png)
 
 The upper graph evaluates the entire QLR9 and LPF6 formulas at kappa=4/5 and j=1,2,3, retaining a=1/(100j), L=j^4, b=1/(kappa a^2) and every boundary contribution. Its vertical coordinate is minus the decimal logarithm of each positive bound. Points are evaluated at 180 decimal digits; connecting segments are guides between those samples. The lower graph evaluates the precise comparison ratio proved in LPF7 at j=1,2,3,10,100, with its full coefficient displayed. Neither graph is a numerical computation of the actual ground or a conclusion about its spectral mass. Reproducible sources: [figure_local_memory.py](figure_local_memory.py) and [check_local_memory.py](check_local_memory.py).
+
+## Actual trace moments and the joint signed spectral filter
+
+[JTR1–JTR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_TRACE_SIGNED_RESPONSE.md) prove that the retained actual trace-complement coupling is the exact positive defect in the physical second spectral moment. Complete third-moment bounds give explicit large-shift signs: the individual correction is negative, its original three-shift combination is positive, and the full signed response is negative. The actual baseline is retained throughout.
+
+The original regulator-path threshold is evaluated with its entire coefficient. Its growth does not reach the intended shrinking shifts. At those same shifts the complete signed response has the exact five-moment form
+\[
+\mathcal C=\zeta\sum_{k=0}^4p_k
+\|\mathcal L^{(k+1)/2}f\|^2,\qquad
+f=(\mathcal L+\zeta)^{-1}(\mathcal L+\varepsilon\zeta)^{-1}
+(\mathcal L+R_{\rm win}\zeta)^{-1}X.
+\]
+Every coefficient, both spectral tails and the full noncommuting map from the trace vector are proved. The precise central-sign receiving map includes its additional baseline. The actual five moments and filtered coupling sources, limiting annular mass and smooth global no-gap construction remain active.

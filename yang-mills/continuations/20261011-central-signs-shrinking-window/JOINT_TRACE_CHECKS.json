@@ -1,0 +1,2006 @@
+{
+  "checks": 413,
+  "all_passed": true,
+  "scope": "Exact symbolic remainders and original signed coefficients; complex positive-matrix compression diagnostics with a separate vacuum; direct original-radius four-link Hessians; 180-digit evaluation of the entire original regulator threshold. Matrix fixtures are not Yang\u2013Mills ground data.",
+  "rational_fixture": {
+    "matrix": [
+      [
+        1,
+        "1/2"
+      ],
+      [
+        "1/2",
+        1
+      ]
+    ],
+    "source": [
+      1,
+      0
+    ],
+    "compression": "first coordinate",
+    "full_vacuum": "adjoin independent zero eigenvector",
+    "single_difference": "-zeta*(8*zeta**3 + 12*zeta**2 - 3)/((zeta + 1)**2*(2*zeta + 1)**2*(2*zeta + 3)**2)",
+    "joint_difference": "zeta*(121634816*zeta**15 + 1473970176*zeta**14 + 5500223488*zeta**13 - 1093118976*zeta**12 - 68260246656*zeta**11 - 231944356608*zeta**10 - 392567672936*zeta**9 - 372847436892*zeta**8 - 180062989576*zeta**7 - 9405906237*zeta**6 + 38483165448*zeta**5 + 21814430712*zeta**4 + 5419449216*zeta**3 + 579492144*zeta**2 + 2851200*zeta - 2674944)/(25*(zeta + 1)**2*(zeta + 2)**2*(zeta + 4)**2*(zeta + 6)**2*(2*zeta + 1)**2*(2*zeta + 3)**2*(4*zeta + 1)**2*(8*zeta + 1)**2*(8*zeta + 3)**2)",
+    "positive_band_at_zeta_one": [
+      "-sqrt(-4 + (25/172 + 9*sqrt(689)/86)**2)/2 + 25/344 + 9*sqrt(689)/172",
+      "25/344 + sqrt(-4 + (25/172 + 9*sqrt(689)/86)**2)/2 + 9*sqrt(689)/172"
+    ]
+  },
+  "evaluated_original_thresholds": [
+    {
+      "j": 1,
+      "kappa": "4/5",
+      "raw_xi": "7/3",
+      "log10_Zcorr": "454987.4489259224473488418",
+      "log10_Zcorr_over_s": "454987.5458359354554052561",
+      "log_asymptotic_quotient": "55.8652587889532360831467"
+    },
+    {
+      "j": 2,
+      "kappa": "4/5",
+      "raw_xi": "7/3",
+      "log10_Zcorr": "909584.4158929259224939518",
+      "log10_Zcorr_over_s": "909584.8138329345945315614",
+      "log_asymptotic_quotient": "4.245180883479459622070653"
+    },
+    {
+      "j": 3,
+      "kappa": "4/5",
+      "raw_xi": "7/3",
+      "log10_Zcorr": "1364090.261186275770777415",
+      "log10_Zcorr_over_s": "1364090.835217543498496267",
+      "log_asymptotic_quotient": "0.8605145637436852992290765"
+    },
+    {
+      "j": 10,
+      "kappa": "4/5",
+      "raw_xi": "7/3",
+      "log10_Zcorr": "4545004.445129385966717232",
+      "log10_Zcorr_over_s": "4545005.542039398974773646",
+      "log_asymptotic_quotient": "0.01334150461298920615873707"
+    },
+    {
+      "j": 100,
+      "kappa": "4/5",
+      "raw_xi": "7/3",
+      "log10_Zcorr": "45437343.96359199263699623",
+      "log10_Zcorr_over_s": "45437346.06050200564505264",
+      "log_asymptotic_quotient": "0.0009839182164998827123979503"
+    }
+  ],
+  "rows": [
+    {
+      "name": "complete rational remainder identity",
+      "passed": true
+    },
+    {
+      "name": "every original coefficient exact",
+      "passed": true
+    },
+    {
+      "name": "rational actual moment defect sign",
+      "passed": true
+    },
+    {
+      "name": "rational joint signed defect sign",
+      "passed": true
+    },
+    {
+      "name": "full moment norm isometry 0",
+      "passed": true,
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "name": "full first moment identity 0",
+      "passed": true,
+      "error": 6.394884621840902e-14
+    },
+    {
+      "name": "complete orthogonal second moment 0",
+      "passed": true,
+      "error": 1.4779288903810084e-12
+    },
+    {
+      "name": "full remainder at shift 0 0.07",
+      "passed": true,
+      "error": 1.571175828329885e-11
+    },
+    {
+      "name": "full mixed difference 0 0.07",
+      "passed": true,
+      "error": 6.007648059580539e-10
+    },
+    {
+      "name": "joint original shifts and all remainders 0 0.07",
+      "passed": true,
+      "error": 5.552898568045306e-09
+    },
+    {
+      "name": "joint two sided finite bound 0 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 0 0.4",
+      "passed": true,
+      "error": 1.2496670365180762e-12
+    },
+    {
+      "name": "full mixed difference 0 0.4",
+      "passed": true,
+      "error": 1.813607597433986e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 0 0.4",
+      "passed": true,
+      "error": 1.6311549333458686e-10
+    },
+    {
+      "name": "joint two sided finite bound 0 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 0 3.0",
+      "passed": true,
+      "error": 2.0539125955565396e-14
+    },
+    {
+      "name": "full mixed difference 0 3.0",
+      "passed": true,
+      "error": 2.927658115936538e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 0 3.0",
+      "passed": true,
+      "error": 3.262501380163485e-12
+    },
+    {
+      "name": "joint two sided finite bound 0 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 0 20.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full mixed difference 0 20.0",
+      "passed": true,
+      "error": 3.9968028886505635e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 0 20.0",
+      "passed": true,
+      "error": 6.869504964868156e-14
+    },
+    {
+      "name": "joint two sided finite bound 0 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 0",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 0",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 0",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 0 0.3",
+      "passed": true,
+      "error": 1.84811952349084e-17
+    },
+    {
+      "name": "five complete physical common moments 0 0.3",
+      "passed": true,
+      "error": 6.106226635438361e-16
+    },
+    {
+      "name": "five complete trace common moments 0 0.3",
+      "passed": true,
+      "error": 1.942890293094024e-16
+    },
+    {
+      "name": "five joint moment differences 0 0.3",
+      "passed": true,
+      "error": 4.0592529337857286e-16
+    },
+    {
+      "name": "complete noncommuting common-vector map 0 2.0",
+      "passed": true,
+      "error": 1.2468324983583301e-18
+    },
+    {
+      "name": "five complete physical common moments 0 2.0",
+      "passed": true,
+      "error": 9.43689570931383e-16
+    },
+    {
+      "name": "five complete trace common moments 0 2.0",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "five joint moment differences 0 2.0",
+      "passed": true,
+      "error": 9.159339953157541e-16
+    },
+    {
+      "name": "full moment norm isometry 1",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "full first moment identity 1",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "complete orthogonal second moment 1",
+      "passed": true,
+      "error": 1.0800249583553523e-12
+    },
+    {
+      "name": "full remainder at shift 1 0.07",
+      "passed": true,
+      "error": 7.446394889587538e-11
+    },
+    {
+      "name": "full mixed difference 1 0.07",
+      "passed": true,
+      "error": 4.0937481182723445e-10
+    },
+    {
+      "name": "joint original shifts and all remainders 1 0.07",
+      "passed": true,
+      "error": 3.1170534139923767e-09
+    },
+    {
+      "name": "joint two sided finite bound 1 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 1 0.4",
+      "passed": true,
+      "error": 2.0267121314532233e-12
+    },
+    {
+      "name": "full mixed difference 1 0.4",
+      "passed": true,
+      "error": 1.1859541126924e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 1 0.4",
+      "passed": true,
+      "error": 1.0962914603895868e-10
+    },
+    {
+      "name": "joint two sided finite bound 1 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 1 3.0",
+      "passed": true,
+      "error": 3.5860203695392556e-14
+    },
+    {
+      "name": "full mixed difference 1 3.0",
+      "passed": true,
+      "error": 2.5857094243519896e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 1 3.0",
+      "passed": true,
+      "error": 1.7000706398206944e-12
+    },
+    {
+      "name": "joint two sided finite bound 1 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 1 20.0",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "full mixed difference 1 20.0",
+      "passed": true,
+      "error": 4.163336342344337e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 1 20.0",
+      "passed": true,
+      "error": 3.9170056087556304e-14
+    },
+    {
+      "name": "joint two sided finite bound 1 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 1",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 1",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 1",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 1 0.3",
+      "passed": true,
+      "error": 4.443059973708341e-17
+    },
+    {
+      "name": "five complete physical common moments 1 0.3",
+      "passed": true,
+      "error": 1.5779044737485037e-14
+    },
+    {
+      "name": "five complete trace common moments 1 0.3",
+      "passed": true,
+      "error": 6.106226635438361e-16
+    },
+    {
+      "name": "five joint moment differences 1 0.3",
+      "passed": true,
+      "error": 1.5151074839181433e-14
+    },
+    {
+      "name": "complete noncommuting common-vector map 1 2.0",
+      "passed": true,
+      "error": 4.336808689942018e-18
+    },
+    {
+      "name": "five complete physical common moments 1 2.0",
+      "passed": true,
+      "error": 8.618106228652778e-15
+    },
+    {
+      "name": "five complete trace common moments 1 2.0",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "five joint moment differences 1 2.0",
+      "passed": true,
+      "error": 8.28503932126523e-15
+    },
+    {
+      "name": "full moment norm isometry 2",
+      "passed": true,
+      "error": 1.3322676295501878e-15
+    },
+    {
+      "name": "full first moment identity 2",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "complete orthogonal second moment 2",
+      "passed": true,
+      "error": 1.8474111129762605e-13
+    },
+    {
+      "name": "full remainder at shift 2 0.07",
+      "passed": true,
+      "error": 2.918789515637954e-11
+    },
+    {
+      "name": "full mixed difference 2 0.07",
+      "passed": true,
+      "error": 4.387036393882493e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 2 0.07",
+      "passed": true,
+      "error": 5.217741308460866e-10
+    },
+    {
+      "name": "joint two sided finite bound 2 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 2 0.4",
+      "passed": true,
+      "error": 5.132283487085942e-13
+    },
+    {
+      "name": "full mixed difference 2 0.4",
+      "passed": true,
+      "error": 1.5198675651362237e-12
+    },
+    {
+      "name": "joint original shifts and all remainders 2 0.4",
+      "passed": true,
+      "error": 1.562246859654337e-11
+    },
+    {
+      "name": "joint two sided finite bound 2 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 2 3.0",
+      "passed": true,
+      "error": 8.271161533457416e-15
+    },
+    {
+      "name": "full mixed difference 2 3.0",
+      "passed": true,
+      "error": 1.2045919817182948e-14
+    },
+    {
+      "name": "joint original shifts and all remainders 2 3.0",
+      "passed": true,
+      "error": 6.348394032684723e-14
+    },
+    {
+      "name": "joint two sided finite bound 2 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 2 20.0",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "full mixed difference 2 20.0",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "joint original shifts and all remainders 2 20.0",
+      "passed": true,
+      "error": 2.282896094385478e-15
+    },
+    {
+      "name": "joint two sided finite bound 2 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 2",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 2",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 2",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 2 0.3",
+      "passed": true,
+      "error": 1.769077770938649e-17
+    },
+    {
+      "name": "five complete physical common moments 2 0.3",
+      "passed": true,
+      "error": 4.3576253716537394e-15
+    },
+    {
+      "name": "five complete trace common moments 2 0.3",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "five joint moment differences 2 0.3",
+      "passed": true,
+      "error": 4.343747583845925e-15
+    },
+    {
+      "name": "complete noncommuting common-vector map 2 2.0",
+      "passed": true,
+      "error": 1.2266347333466993e-18
+    },
+    {
+      "name": "five complete physical common moments 2 2.0",
+      "passed": true,
+      "error": 2.525757381022231e-15
+    },
+    {
+      "name": "five complete trace common moments 2 2.0",
+      "passed": true,
+      "error": 1.5265566588595902e-16
+    },
+    {
+      "name": "five joint moment differences 2 2.0",
+      "passed": true,
+      "error": 2.671474153004283e-15
+    },
+    {
+      "name": "full moment norm isometry 3",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "full first moment identity 3",
+      "passed": true,
+      "error": 7.105427357601002e-15
+    },
+    {
+      "name": "complete orthogonal second moment 3",
+      "passed": true,
+      "error": 2.842170943040401e-14
+    },
+    {
+      "name": "full remainder at shift 3 0.07",
+      "passed": true,
+      "error": 1.371826263696363e-11
+    },
+    {
+      "name": "full mixed difference 3 0.07",
+      "passed": true,
+      "error": 1.525133491719899e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 3 0.07",
+      "passed": true,
+      "error": 7.595564038842539e-10
+    },
+    {
+      "name": "joint two sided finite bound 3 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 3 0.4",
+      "passed": true,
+      "error": 3.217981436876016e-13
+    },
+    {
+      "name": "full mixed difference 3 0.4",
+      "passed": true,
+      "error": 5.817013537523508e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 3 0.4",
+      "passed": true,
+      "error": 8.831185782653961e-12
+    },
+    {
+      "name": "joint two sided finite bound 3 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 3 3.0",
+      "passed": true,
+      "error": 1.432187701766452e-14
+    },
+    {
+      "name": "full mixed difference 3 3.0",
+      "passed": true,
+      "error": 2.1649348980190553e-14
+    },
+    {
+      "name": "joint original shifts and all remainders 3 3.0",
+      "passed": true,
+      "error": 1.7565116028350758e-13
+    },
+    {
+      "name": "joint two sided finite bound 3 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 3 20.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full mixed difference 3 20.0",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "joint original shifts and all remainders 3 20.0",
+      "passed": true,
+      "error": 6.800116025829084e-16
+    },
+    {
+      "name": "joint two sided finite bound 3 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 3",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 3",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 3",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 3 0.3",
+      "passed": true,
+      "error": 1.962615573354719e-17
+    },
+    {
+      "name": "five complete physical common moments 3 0.3",
+      "passed": true,
+      "error": 8.493206138382448e-15
+    },
+    {
+      "name": "five complete trace common moments 3 0.3",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "five joint moment differences 3 0.3",
+      "passed": true,
+      "error": 8.526165884426007e-15
+    },
+    {
+      "name": "complete noncommuting common-vector map 3 2.0",
+      "passed": true,
+      "error": 2.4532694666933987e-18
+    },
+    {
+      "name": "five complete physical common moments 3 2.0",
+      "passed": true,
+      "error": 2.1094237467877974e-15
+    },
+    {
+      "name": "five complete trace common moments 3 2.0",
+      "passed": true,
+      "error": 2.7755575615628914e-16
+    },
+    {
+      "name": "five joint moment differences 3 2.0",
+      "passed": true,
+      "error": 1.8318679906315083e-15
+    },
+    {
+      "name": "full moment norm isometry 4",
+      "passed": true,
+      "error": 6.661338147750939e-16
+    },
+    {
+      "name": "full first moment identity 4",
+      "passed": true,
+      "error": 5.329070518200751e-15
+    },
+    {
+      "name": "complete orthogonal second moment 4",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "full remainder at shift 4 0.07",
+      "passed": true,
+      "error": 1.0157126008325523e-11
+    },
+    {
+      "name": "full mixed difference 4 0.07",
+      "passed": true,
+      "error": 1.1058428478483151e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 4 0.07",
+      "passed": true,
+      "error": 5.926516430387885e-10
+    },
+    {
+      "name": "joint two sided finite bound 4 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 4 0.4",
+      "passed": true,
+      "error": 1.1030204527529008e-12
+    },
+    {
+      "name": "full mixed difference 4 0.4",
+      "passed": true,
+      "error": 1.3061773884714967e-12
+    },
+    {
+      "name": "joint original shifts and all remainders 4 0.4",
+      "passed": true,
+      "error": 9.190742784881412e-12
+    },
+    {
+      "name": "joint two sided finite bound 4 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 4 3.0",
+      "passed": true,
+      "error": 8.701372955499664e-15
+    },
+    {
+      "name": "full mixed difference 4 3.0",
+      "passed": true,
+      "error": 2.033095913844818e-14
+    },
+    {
+      "name": "joint original shifts and all remainders 4 3.0",
+      "passed": true,
+      "error": 1.4121863400884394e-13
+    },
+    {
+      "name": "joint two sided finite bound 4 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 4 20.0",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "full mixed difference 4 20.0",
+      "passed": true,
+      "error": 1.6653345369377348e-16
+    },
+    {
+      "name": "joint original shifts and all remainders 4 20.0",
+      "passed": true,
+      "error": 4.714978407704962e-15
+    },
+    {
+      "name": "joint two sided finite bound 4 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 4",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 4",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 4",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 4 0.3",
+      "passed": true,
+      "error": 4.9065389333867974e-18
+    },
+    {
+      "name": "five complete physical common moments 4 0.3",
+      "passed": true,
+      "error": 5.204170427930421e-16
+    },
+    {
+      "name": "five complete trace common moments 4 0.3",
+      "passed": true,
+      "error": 6.938893903907228e-18
+    },
+    {
+      "name": "five joint moment differences 4 0.3",
+      "passed": true,
+      "error": 5.169475958410885e-16
+    },
+    {
+      "name": "complete noncommuting common-vector map 4 2.0",
+      "passed": true,
+      "error": 1.3010426069826053e-18
+    },
+    {
+      "name": "five complete physical common moments 4 2.0",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "five complete trace common moments 4 2.0",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "five joint moment differences 4 2.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full moment norm isometry 5",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "full first moment identity 5",
+      "passed": true,
+      "error": 4.263256414560601e-14
+    },
+    {
+      "name": "complete orthogonal second moment 5",
+      "passed": true,
+      "error": 6.821210263296962e-13
+    },
+    {
+      "name": "full remainder at shift 5 0.07",
+      "passed": true,
+      "error": 1.338670146955323e-10
+    },
+    {
+      "name": "full mixed difference 5 0.07",
+      "passed": true,
+      "error": 3.326774584977432e-10
+    },
+    {
+      "name": "joint original shifts and all remainders 5 0.07",
+      "passed": true,
+      "error": 3.749595307855902e-09
+    },
+    {
+      "name": "joint two sided finite bound 5 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 5 0.4",
+      "passed": true,
+      "error": 1.551397899035578e-11
+    },
+    {
+      "name": "full mixed difference 5 0.4",
+      "passed": true,
+      "error": 1.9708373821814007e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 5 0.4",
+      "passed": true,
+      "error": 1.9831178366125357e-10
+    },
+    {
+      "name": "joint two sided finite bound 5 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 5 3.0",
+      "passed": true,
+      "error": 8.637535131583718e-14
+    },
+    {
+      "name": "full mixed difference 5 3.0",
+      "passed": true,
+      "error": 2.738920201750261e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 5 3.0",
+      "passed": true,
+      "error": 2.1034979313938607e-12
+    },
+    {
+      "name": "joint two sided finite bound 5 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 5 20.0",
+      "passed": true,
+      "error": 1.3322676295501878e-15
+    },
+    {
+      "name": "full mixed difference 5 20.0",
+      "passed": true,
+      "error": 3.1086244689504383e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 5 20.0",
+      "passed": true,
+      "error": 4.18554080283684e-14
+    },
+    {
+      "name": "joint two sided finite bound 5 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 5",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 5",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 5",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 5 0.3",
+      "passed": true,
+      "error": 1.788112030672749e-17
+    },
+    {
+      "name": "five complete physical common moments 5 0.3",
+      "passed": true,
+      "error": 1.942890293094024e-16
+    },
+    {
+      "name": "five complete trace common moments 5 0.3",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "five joint moment differences 5 0.3",
+      "passed": true,
+      "error": 3.157196726277789e-16
+    },
+    {
+      "name": "complete noncommuting common-vector map 5 2.0",
+      "passed": true,
+      "error": 2.1792193963256754e-18
+    },
+    {
+      "name": "five complete physical common moments 5 2.0",
+      "passed": true,
+      "error": 6.050715484207103e-15
+    },
+    {
+      "name": "five complete trace common moments 5 2.0",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "five joint moment differences 5 2.0",
+      "passed": true,
+      "error": 6.2727600891321345e-15
+    },
+    {
+      "name": "full moment norm isometry 6",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full first moment identity 6",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "complete orthogonal second moment 6",
+      "passed": true,
+      "error": 5.684341886080801e-13
+    },
+    {
+      "name": "full remainder at shift 6 0.07",
+      "passed": true,
+      "error": 5.3237768360414606e-11
+    },
+    {
+      "name": "full mixed difference 6 0.07",
+      "passed": true,
+      "error": 2.445500468795103e-10
+    },
+    {
+      "name": "joint original shifts and all remainders 6 0.07",
+      "passed": true,
+      "error": 2.0657412343194625e-09
+    },
+    {
+      "name": "joint two sided finite bound 6 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 6 0.4",
+      "passed": true,
+      "error": 1.8808288260174777e-12
+    },
+    {
+      "name": "full mixed difference 6 0.4",
+      "passed": true,
+      "error": 6.8946792719515315e-12
+    },
+    {
+      "name": "joint original shifts and all remainders 6 0.4",
+      "passed": true,
+      "error": 5.800340069361809e-11
+    },
+    {
+      "name": "joint two sided finite bound 6 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 6 3.0",
+      "passed": true,
+      "error": 1.459943277382081e-14
+    },
+    {
+      "name": "full mixed difference 6 3.0",
+      "passed": true,
+      "error": 1.0663692151524629e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 6 3.0",
+      "passed": true,
+      "error": 1.2202461263655096e-12
+    },
+    {
+      "name": "joint two sided finite bound 6 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 6 20.0",
+      "passed": true,
+      "error": 4.440892098500626e-16
+    },
+    {
+      "name": "full mixed difference 6 20.0",
+      "passed": true,
+      "error": 2.6645352591003757e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 6 20.0",
+      "passed": true,
+      "error": 3.236300116782331e-14
+    },
+    {
+      "name": "joint two sided finite bound 6 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 6",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 6",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 6",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 6 0.3",
+      "passed": true,
+      "error": 2.787728152484798e-17
+    },
+    {
+      "name": "five complete physical common moments 6 0.3",
+      "passed": true,
+      "error": 4.5602410736478305e-14
+    },
+    {
+      "name": "five complete trace common moments 6 0.3",
+      "passed": true,
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "name": "five joint moment differences 6 0.3",
+      "passed": true,
+      "error": 4.5618890609500085e-14
+    },
+    {
+      "name": "complete noncommuting common-vector map 6 2.0",
+      "passed": true,
+      "error": 2.6020852139652106e-18
+    },
+    {
+      "name": "five complete physical common moments 6 2.0",
+      "passed": true,
+      "error": 1.6861512186494565e-14
+    },
+    {
+      "name": "five complete trace common moments 6 2.0",
+      "passed": true,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "name": "five joint moment differences 6 2.0",
+      "passed": true,
+      "error": 1.6958656701149266e-14
+    },
+    {
+      "name": "full moment norm isometry 7",
+      "passed": true,
+      "error": 2.220446049250313e-15
+    },
+    {
+      "name": "full first moment identity 7",
+      "passed": true,
+      "error": 4.973799150320701e-14
+    },
+    {
+      "name": "complete orthogonal second moment 7",
+      "passed": true,
+      "error": 1.9326762412674725e-12
+    },
+    {
+      "name": "full remainder at shift 7 0.07",
+      "passed": true,
+      "error": 1.2875547850121905e-11
+    },
+    {
+      "name": "full mixed difference 7 0.07",
+      "passed": true,
+      "error": 8.169732286511522e-10
+    },
+    {
+      "name": "joint original shifts and all remainders 7 0.07",
+      "passed": true,
+      "error": 6.742193775499672e-09
+    },
+    {
+      "name": "joint two sided finite bound 7 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 7 0.4",
+      "passed": true,
+      "error": 3.002598170098736e-13
+    },
+    {
+      "name": "full mixed difference 7 0.4",
+      "passed": true,
+      "error": 2.314862190821998e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 7 0.4",
+      "passed": true,
+      "error": 2.38711356237431e-10
+    },
+    {
+      "name": "joint two sided finite bound 7 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 7 3.0",
+      "passed": true,
+      "error": 7.549516567451064e-15
+    },
+    {
+      "name": "full mixed difference 7 3.0",
+      "passed": true,
+      "error": 3.943512183468556e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 7 3.0",
+      "passed": true,
+      "error": 4.03758970701773e-12
+    },
+    {
+      "name": "joint two sided finite bound 7 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 7 20.0",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "full mixed difference 7 20.0",
+      "passed": true,
+      "error": 6.994405055138486e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 7 20.0",
+      "passed": true,
+      "error": 9.06219543850284e-14
+    },
+    {
+      "name": "joint two sided finite bound 7 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 7",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 7",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 7",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 7 0.3",
+      "passed": true,
+      "error": 3.7367087251761353e-17
+    },
+    {
+      "name": "five complete physical common moments 7 0.3",
+      "passed": true,
+      "error": 7.327471962526033e-15
+    },
+    {
+      "name": "five complete trace common moments 7 0.3",
+      "passed": true,
+      "error": 1.249000902703301e-16
+    },
+    {
+      "name": "five joint moment differences 7 0.3",
+      "passed": true,
+      "error": 7.19910242530375e-15
+    },
+    {
+      "name": "complete noncommuting common-vector map 7 2.0",
+      "passed": true,
+      "error": 1.734723475976807e-18
+    },
+    {
+      "name": "five complete physical common moments 7 2.0",
+      "passed": true,
+      "error": 1.136590821460004e-14
+    },
+    {
+      "name": "five complete trace common moments 7 2.0",
+      "passed": true,
+      "error": 1.6653345369377348e-16
+    },
+    {
+      "name": "five joint moment differences 7 2.0",
+      "passed": true,
+      "error": 1.1546319456101628e-14
+    },
+    {
+      "name": "full moment norm isometry 8",
+      "passed": true,
+      "error": 8.881784197001252e-16
+    },
+    {
+      "name": "full first moment identity 8",
+      "passed": true,
+      "error": 5.684341886080802e-14
+    },
+    {
+      "name": "complete orthogonal second moment 8",
+      "passed": true,
+      "error": 2.1600499167107046e-12
+    },
+    {
+      "name": "full remainder at shift 8 0.07",
+      "passed": true,
+      "error": 1.505563382298014e-11
+    },
+    {
+      "name": "full mixed difference 8 0.07",
+      "passed": true,
+      "error": 9.09613433186518e-10
+    },
+    {
+      "name": "joint original shifts and all remainders 8 0.07",
+      "passed": true,
+      "error": 8.100785431341961e-09
+    },
+    {
+      "name": "joint two sided finite bound 8 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 8 0.4",
+      "passed": true,
+      "error": 2.678343657969151e-12
+    },
+    {
+      "name": "full mixed difference 8 0.4",
+      "passed": true,
+      "error": 2.986602631871449e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 8 0.4",
+      "passed": true,
+      "error": 2.60551524799979e-10
+    },
+    {
+      "name": "joint two sided finite bound 8 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 8 3.0",
+      "passed": true,
+      "error": 4.4797499043625066e-14
+    },
+    {
+      "name": "full mixed difference 8 3.0",
+      "passed": true,
+      "error": 4.89386309254769e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 8 3.0",
+      "passed": true,
+      "error": 4.968733757770849e-12
+    },
+    {
+      "name": "joint two sided finite bound 8 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 8 20.0",
+      "passed": true,
+      "error": 1.1657341758564144e-15
+    },
+    {
+      "name": "full mixed difference 8 20.0",
+      "passed": true,
+      "error": 9.381384558082573e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 8 20.0",
+      "passed": true,
+      "error": 1.1667056210029614e-13
+    },
+    {
+      "name": "joint two sided finite bound 8 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 8",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 8",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 8",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 8 0.3",
+      "passed": true,
+      "error": 3.878959614448864e-18
+    },
+    {
+      "name": "five complete physical common moments 8 0.3",
+      "passed": true,
+      "error": 2.4216739724636227e-15
+    },
+    {
+      "name": "five complete trace common moments 8 0.3",
+      "passed": true,
+      "error": 2.706168622523819e-16
+    },
+    {
+      "name": "five joint moment differences 8 0.3",
+      "passed": true,
+      "error": 2.707903345999796e-15
+    },
+    {
+      "name": "complete noncommuting common-vector map 8 2.0",
+      "passed": true,
+      "error": 9.087270115126198e-19
+    },
+    {
+      "name": "five complete physical common moments 8 2.0",
+      "passed": true,
+      "error": 2.0261570199409107e-15
+    },
+    {
+      "name": "five complete trace common moments 8 2.0",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "five joint moment differences 8 2.0",
+      "passed": true,
+      "error": 2.3245294578089215e-15
+    },
+    {
+      "name": "full moment norm isometry 9",
+      "passed": true,
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "full first moment identity 9",
+      "passed": true,
+      "error": 2.220446049250313e-15
+    },
+    {
+      "name": "complete orthogonal second moment 9",
+      "passed": true,
+      "error": 2.930988785010413e-14
+    },
+    {
+      "name": "full remainder at shift 9 0.07",
+      "passed": true,
+      "error": 2.664500564630856e-13
+    },
+    {
+      "name": "full mixed difference 9 0.07",
+      "passed": true,
+      "error": 1.1777563299619764e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 9 0.07",
+      "passed": true,
+      "error": 1.1762575895940541e-10
+    },
+    {
+      "name": "joint two sided finite bound 9 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 9 0.4",
+      "passed": true,
+      "error": 7.067263441129512e-14
+    },
+    {
+      "name": "full mixed difference 9 0.4",
+      "passed": true,
+      "error": 3.6838587735843475e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 9 0.4",
+      "passed": true,
+      "error": 4.080533654027274e-12
+    },
+    {
+      "name": "joint two sided finite bound 9 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 9 3.0",
+      "passed": true,
+      "error": 1.2628786905111156e-15
+    },
+    {
+      "name": "full mixed difference 9 3.0",
+      "passed": true,
+      "error": 3.5110803153770576e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 9 3.0",
+      "passed": true,
+      "error": 5.306085432144059e-14
+    },
+    {
+      "name": "joint two sided finite bound 9 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 9 20.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full mixed difference 9 20.0",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "joint original shifts and all remainders 9 20.0",
+      "passed": true,
+      "error": 9.939965517347105e-16
+    },
+    {
+      "name": "joint two sided finite bound 9 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 9",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 9",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 9",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 9 0.3",
+      "passed": true,
+      "error": 3.878959614448864e-18
+    },
+    {
+      "name": "five complete physical common moments 9 0.3",
+      "passed": true,
+      "error": 3.2612801348363973e-16
+    },
+    {
+      "name": "five complete trace common moments 9 0.3",
+      "passed": true,
+      "error": 1.0408340855860843e-17
+    },
+    {
+      "name": "five joint moment differences 9 0.3",
+      "passed": true,
+      "error": 3.126839065448195e-16
+    },
+    {
+      "name": "complete noncommuting common-vector map 9 2.0",
+      "passed": true,
+      "error": 3.909146525865939e-19
+    },
+    {
+      "name": "five complete physical common moments 9 2.0",
+      "passed": true,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "name": "five complete trace common moments 9 2.0",
+      "passed": true,
+      "error": 2.0816681711721685e-17
+    },
+    {
+      "name": "five joint moment differences 9 2.0",
+      "passed": true,
+      "error": 3.469446951953614e-17
+    },
+    {
+      "name": "full moment norm isometry 10",
+      "passed": true,
+      "error": 1.7763568394002505e-15
+    },
+    {
+      "name": "full first moment identity 10",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "complete orthogonal second moment 10",
+      "passed": true,
+      "error": 3.410605131648481e-13
+    },
+    {
+      "name": "full remainder at shift 10 0.07",
+      "passed": true,
+      "error": 4.952777077349424e-11
+    },
+    {
+      "name": "full mixed difference 10 0.07",
+      "passed": true,
+      "error": 1.7248248662671273e-10
+    },
+    {
+      "name": "joint original shifts and all remainders 10 0.07",
+      "passed": true,
+      "error": 1.7361314191832733e-09
+    },
+    {
+      "name": "joint two sided finite bound 10 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 10 0.4",
+      "passed": true,
+      "error": 2.339239912885205e-13
+    },
+    {
+      "name": "full mixed difference 10 0.4",
+      "passed": true,
+      "error": 3.9537262352951075e-12
+    },
+    {
+      "name": "joint original shifts and all remainders 10 0.4",
+      "passed": true,
+      "error": 3.7320785351013797e-11
+    },
+    {
+      "name": "joint two sided finite bound 10 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 10 3.0",
+      "passed": true,
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "full mixed difference 10 3.0",
+      "passed": true,
+      "error": 8.060219158778636e-14
+    },
+    {
+      "name": "joint original shifts and all remainders 10 3.0",
+      "passed": true,
+      "error": 6.465383783904599e-13
+    },
+    {
+      "name": "joint two sided finite bound 10 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 10 20.0",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full mixed difference 10 20.0",
+      "passed": true,
+      "error": 1.1657341758564144e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 10 20.0",
+      "passed": true,
+      "error": 1.4072076837123859e-14
+    },
+    {
+      "name": "joint two sided finite bound 10 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 10",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 10",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 10",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 10 0.3",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "five complete physical common moments 10 0.3",
+      "passed": true,
+      "error": 6.400435736964027e-14
+    },
+    {
+      "name": "five complete trace common moments 10 0.3",
+      "passed": true,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "name": "five joint moment differences 10 0.3",
+      "passed": true,
+      "error": 6.367129046225273e-14
+    },
+    {
+      "name": "complete noncommuting common-vector map 10 2.0",
+      "passed": true,
+      "error": 3.878959614448864e-18
+    },
+    {
+      "name": "five complete physical common moments 10 2.0",
+      "passed": true,
+      "error": 3.042011087472929e-14
+    },
+    {
+      "name": "five complete trace common moments 10 2.0",
+      "passed": true,
+      "error": 1.6653345369377348e-16
+    },
+    {
+      "name": "five joint moment differences 10 2.0",
+      "passed": true,
+      "error": 3.0558888752807434e-14
+    },
+    {
+      "name": "full moment norm isometry 11",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "full first moment identity 11",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "complete orthogonal second moment 11",
+      "passed": true,
+      "error": 1.4210854715202004e-14
+    },
+    {
+      "name": "full remainder at shift 11 0.07",
+      "passed": true,
+      "error": 2.3047674879705937e-12
+    },
+    {
+      "name": "full mixed difference 11 0.07",
+      "passed": true,
+      "error": 1.1642718039661659e-11
+    },
+    {
+      "name": "joint original shifts and all remainders 11 0.07",
+      "passed": true,
+      "error": 3.215330900835367e-10
+    },
+    {
+      "name": "joint two sided finite bound 11 0.07",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 11 0.4",
+      "passed": true,
+      "error": 1.0335898803504051e-12
+    },
+    {
+      "name": "full mixed difference 11 0.4",
+      "passed": true,
+      "error": 9.173009574148239e-13
+    },
+    {
+      "name": "joint original shifts and all remainders 11 0.4",
+      "passed": true,
+      "error": 2.9331988227188077e-12
+    },
+    {
+      "name": "joint two sided finite bound 11 0.4",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 11 3.0",
+      "passed": true,
+      "error": 3.552713678800501e-15
+    },
+    {
+      "name": "full mixed difference 11 3.0",
+      "passed": true,
+      "error": 4.3021142204224816e-15
+    },
+    {
+      "name": "joint original shifts and all remainders 11 3.0",
+      "passed": true,
+      "error": 1.738401089745878e-13
+    },
+    {
+      "name": "joint two sided finite bound 11 3.0",
+      "passed": true
+    },
+    {
+      "name": "full remainder at shift 11 20.0",
+      "passed": true,
+      "error": 2.7755575615628914e-17
+    },
+    {
+      "name": "full mixed difference 11 20.0",
+      "passed": true,
+      "error": 1.942890293094024e-16
+    },
+    {
+      "name": "joint original shifts and all remainders 11 20.0",
+      "passed": true,
+      "error": 1.4085954624931674e-15
+    },
+    {
+      "name": "joint two sided finite bound 11 20.0",
+      "passed": true
+    },
+    {
+      "name": "all actual single corrections negative 11",
+      "passed": true
+    },
+    {
+      "name": "actual signed correction positive 11",
+      "passed": true
+    },
+    {
+      "name": "complete full response negative 11",
+      "passed": true
+    },
+    {
+      "name": "complete noncommuting common-vector map 11 0.3",
+      "passed": true,
+      "error": 2.0978681678024108e-17
+    },
+    {
+      "name": "five complete physical common moments 11 0.3",
+      "passed": true,
+      "error": 8.805456364058273e-15
+    },
+    {
+      "name": "five complete trace common moments 11 0.3",
+      "passed": true,
+      "error": 4.163336342344337e-17
+    },
+    {
+      "name": "five joint moment differences 11 0.3",
+      "passed": true,
+      "error": 8.849691812695681e-15
+    },
+    {
+      "name": "complete noncommuting common-vector map 11 2.0",
+      "passed": true,
+      "error": 2.6821680460091233e-18
+    },
+    {
+      "name": "five complete physical common moments 11 2.0",
+      "passed": true,
+      "error": 1.1102230246251565e-15
+    },
+    {
+      "name": "five complete trace common moments 11 2.0",
+      "passed": true,
+      "error": 1.3877787807814457e-17
+    },
+    {
+      "name": "five joint moment differences 11 2.0",
+      "passed": true,
+      "error": 1.1171619185290638e-15
+    },
+    {
+      "name": "complete four-link Hessian constant 0",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 1",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 2",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 3",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 4",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 5",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 6",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 7",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 8",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 9",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 10",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 11",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 12",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 13",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 14",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 15",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 16",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 17",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 18",
+      "passed": true
+    },
+    {
+      "name": "complete four-link Hessian constant 19",
+      "passed": true
+    },
+    {
+      "name": "original threshold finite positive 1",
+      "passed": true
+    },
+    {
+      "name": "raw amplitude cancels only in threshold ratio 1",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "original threshold finite positive 2",
+      "passed": true
+    },
+    {
+      "name": "raw amplitude cancels only in threshold ratio 2",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "original threshold finite positive 3",
+      "passed": true
+    },
+    {
+      "name": "raw amplitude cancels only in threshold ratio 3",
+      "passed": true,
+      "error": 5.053968264940244e-175
+    },
+    {
+      "name": "original threshold finite positive 10",
+      "passed": true
+    },
+    {
+      "name": "raw amplitude cancels only in threshold ratio 10",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "original threshold finite positive 100",
+      "passed": true
+    },
+    {
+      "name": "raw amplitude cancels only in threshold ratio 100",
+      "passed": true,
+      "error": 0.0
+    },
+    {
+      "name": "threshold coefficient converges in evaluated samples",
+      "passed": true
+    },
+    {
+      "name": "complete common polynomial coefficient 0",
+      "passed": true
+    },
+    {
+      "name": "complete common polynomial coefficient 1",
+      "passed": true
+    },
+    {
+      "name": "complete common polynomial coefficient 2",
+      "passed": true
+    },
+    {
+      "name": "complete common polynomial coefficient 3",
+      "passed": true
+    },
+    {
+      "name": "complete common polynomial coefficient 4",
+      "passed": true
+    },
+    {
+      "name": "full common denominator with original factors",
+      "passed": true
+    },
+    {
+      "name": "exact positive-band quadratic",
+      "passed": true
+    },
+    {
+      "name": "positive band root exact",
+      "passed": true
+    },
+    {
+      "name": "positive band endpoint product",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 0.01",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 0.1",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 0.3",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 0.5",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 1",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 2",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 3",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 10",
+      "passed": true
+    },
+    {
+      "name": "complete kernel sign at original energy 100",
+      "passed": true
+    }
+  ]
+}

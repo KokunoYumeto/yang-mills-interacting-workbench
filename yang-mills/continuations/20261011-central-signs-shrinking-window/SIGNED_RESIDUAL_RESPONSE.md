@@ -407,3 +407,16 @@ MTO11 and MTO16 retain the exact comparison with all original Wilson-potential t
 \end{aligned}
 \]
 The entire last term is bounded by the explicit \(\mathcal B_{j,z}\mathcal Y_j/[\sigma^2(\sigma+\delta_j)]\). The original time-domain remainder and source-dependent versions are also retained. The joint signed moments, full Schur solution, limiting annular mass and smooth global no-gap construction remain active.
+
+## Actual trace moments and the joint signed spectral filter
+
+[JTR1–JTR13](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ACTUAL_TRACE_SIGNED_RESPONSE.md) prove that the retained actual trace-complement coupling is the exact positive defect in the physical second spectral moment. Complete third-moment bounds give explicit large-shift signs: the individual correction is negative, its original three-shift combination is positive, and the full signed response is negative. The actual baseline is retained throughout.
+
+The original regulator-path threshold is evaluated with its entire coefficient. Its growth does not reach the intended shrinking shifts. At those same shifts the complete signed response has the exact five-moment form
+\[
+\mathcal C=\zeta\sum_{k=0}^4p_k
+\|\mathcal L^{(k+1)/2}f\|^2,\qquad
+f=(\mathcal L+\zeta)^{-1}(\mathcal L+\varepsilon\zeta)^{-1}
+(\mathcal L+R_{\rm win}\zeta)^{-1}X.
+\]
+Every coefficient, both spectral tails and the full noncommuting map from the trace vector are proved. The precise central-sign receiving map includes its additional baseline. The actual five moments and filtered coupling sources, limiting annular mass and smooth global no-gap construction remain active.

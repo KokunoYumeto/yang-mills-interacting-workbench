@@ -1,0 +1,39 @@
+[
+  {
+    "id": "JTR-actual-moment-and-response-signs",
+    "original": "LPF controls a nonzero full-state trace residual but does not evaluate its response signs.",
+    "change": "JTR1–JTR7 prove the exact second-moment defect, full third-moment estimates, negative individual large-shift corrections, positive three-shift correction and negative full response, with all explicit sufficient thresholds.",
+    "affects": [
+      "FMP9–FMP13",
+      "LPF6",
+      "actual trace spectral response"
+    ],
+    "proof": "ACTUAL_TRACE_SIGNED_RESPONSE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in FMP,LPF,SDR, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "JTR-original-threshold-and-central-map",
+    "original": "The trace residual must be related exactly to the original central-sign observable and original regulator path.",
+    "change": "JTR8–JTR10 give the exact full-state unitary, original raw source and additional central baseline; evaluate the full threshold coefficient, valid for arbitrary nonzero raw coefficient sequences by exact homogeneity.",
+    "affects": [
+      "SDR1–SDR13",
+      "LPF7"
+    ],
+    "proof": "ACTUAL_TRACE_SIGNED_RESPONSE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in FMP,LPF,SDR, programme sources and cumulative manuscript."
+  },
+  {
+    "id": "JTR-common-resolvent-signed-filter",
+    "original": "Independent three-shift remainder bounds lose the original joint spectral cancellations.",
+    "change": "JTR11–JTR13 keep one common full-state vector, all five signed moments, the exact positive interval and both tails, and the entire ordered map from the trace resolvent vector.",
+    "affects": [
+      "signed shrinking window",
+      "filtered trace-complement coupling sources"
+    ],
+    "proof": "ACTUAL_TRACE_SIGNED_RESPONSE.md",
+    "status": "Accepted complete proof; no novelty claim",
+    "propagation": "Receiving notes in FMP,LPF,SDR, programme sources and cumulative manuscript."
+  }
+]
