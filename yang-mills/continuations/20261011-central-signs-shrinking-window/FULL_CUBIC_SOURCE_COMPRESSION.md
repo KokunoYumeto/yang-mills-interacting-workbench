@@ -331,3 +331,16 @@ The construction solves the actual compressed cubic equation, evaluates \(H_{\rm
 ![Full original cube compression and the retained signed residual](FULL_CUBIC_COMPRESSION_AND_RESIDUAL.png)
 
 FCC1–FCC7 preserve the actual inside marginal, every ordered cubic block and the full complementary forcing. All faces share one original conditional space, which proves the unfiltered orthogonality for every pair. FCC8–FCC10 transfer the actual polynomial source floor to the full equation Gram matrix, with the original raw coefficients and singular residual directions retained. FCC11–FCC13 keep the filtered cross terms and give an exact rational example where one is nonzero. The figure displays these proved maps, not a simulated vacuum or spectral density. Reproducible sources: [figure_cubic_compression.py](figure_cubic_compression.py) and [check_cubic_compression.py](check_cubic_compression.py). The 996 diagnostics use exact rational algebra and finite positive-operator fixtures, including vacuum and singular-residual cases; the preceding proof establishes the original-state claims.
+
+## Original-field residual and exact inverse-trial bounds
+
+[CDE1–CDE8](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_FRAME_CUBIC_RESIDUAL.md) retain every term of the original cubic residual, with explicit typed maps and the full outside-index contribution. [CIT1–CIT20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CUBIC_INVERSE_TRIAL_BOUNDS.md) derive weighted graph bounds for the matched inverse trial, retaining every derivative introduced by the exact marginal unitary. They give the complete original-state estimate and its raw matrix consequences:
+\[
+\begin{gathered}
+\|\mathcal W_\zeta\mathcal B_\zeta^{-1}F\|_\mu
+\le\mathfrak P_\zeta\|F\|_\rho,\\
+R\le\mathfrak P_\zeta^2S,\qquad
+E\le\frac{\mathfrak P_\zeta^2}{1+\mathfrak P_\zeta^2}S .
+\end{gathered}
+\]
+The finite expression for the upper function is explicit. Its exact original-path growth is a positive constant times j to the sixtieth power, with every finite term retained. This improves the earlier exponential density comparison but remains insufficient to prove surviving spectral mass. It does not establish divergence of the actual residual. The signed response and actual shrinking-window behavior remain the next calculations toward the smooth global no-gap goal.

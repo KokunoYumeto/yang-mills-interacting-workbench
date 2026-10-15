@@ -1,0 +1,81 @@
+{
+  "checks": 17,
+  "all_passed": true,
+  "details": [
+    {
+      "name": "complete second power",
+      "passed": true
+    },
+    {
+      "name": "complete third power with all ordered derivatives",
+      "passed": true
+    },
+    {
+      "name": "original Casimir commutes with field 0",
+      "passed": true
+    },
+    {
+      "name": "original Casimir commutes with field 1",
+      "passed": true
+    },
+    {
+      "name": "original Casimir commutes with field 2",
+      "passed": true
+    },
+    {
+      "name": "full three-shift polynomial",
+      "passed": true
+    },
+    {
+      "name": "original ground equation including E",
+      "passed": true
+    },
+    {
+      "name": "complete original Haar derivative moment 1",
+      "passed": true
+    },
+    {
+      "name": "complete original Haar derivative moment 2",
+      "passed": true
+    },
+    {
+      "name": "complete original Haar derivative moment 3",
+      "passed": true
+    },
+    {
+      "name": "ground third-moment gradient identity 0",
+      "passed": true
+    },
+    {
+      "name": "ground third-moment gradient identity 1",
+      "passed": true
+    },
+    {
+      "name": "ground third-moment gradient identity 2",
+      "passed": true
+    },
+    {
+      "name": "noncommuting left field bracket (0, 1)",
+      "passed": true
+    },
+    {
+      "name": "noncommuting left field bracket (1, 2)",
+      "passed": true
+    },
+    {
+      "name": "noncommuting left field bracket (2, 0)",
+      "passed": true
+    },
+    {
+      "name": "outside index contribution in positive two-link fixture",
+      "passed": true,
+      "exact_value": "35026992/76245015625",
+      "scope": "psi=1+eta*x0*y0, t=x0, constructed potential E+kappa*Delta(psi)/psi; the contribution vanishes at y=identity and is positive here, so it is not inside-measurable."
+    }
+  ],
+  "seconds": 20.86185359954834,
+  "scope": "Exact rational differential identities on original radius-two SU2 with noncommuting fields; positive psi=1+x0/5+x1/7 and its explicitly constructed potential. This potential is not Wilson and no Wilson vacuum is simulated. The general formula retains Delta(V_i).",
+  "potential": "(91*x0 + 65*x1 + 1400)/(420*x0 + 300*x1 + 2100)",
+  "unit_square": "2487/2450",
+  "outside_term": "35026992/76245015625"
+}

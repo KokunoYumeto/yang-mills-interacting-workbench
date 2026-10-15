@@ -837,3 +837,16 @@ This evaluated bound is independent of the total box volume and the number of se
 H_{\rm src}=S,\qquad G=S+R,\qquad R=W^*W\ge0 .
 \]
 The polynomial covariance floor of SMP11 therefore makes both matrices invertible, with no additional shrinking-shift penalty. The unique raw coefficient optimum and its complete noncommuting residual bounds are proved. All filtered cross terms remain; an exact rational example shows that their vanishing cannot be inferred from unfiltered orthogonality. The actual complementary forcing and signed trial response are the next calculations toward spectral survival and the smooth global no-gap target.
+
+## SZ-20261015-005 — Original-field residual and exact inverse-trial bounds
+
+[CDE1–CDE8](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/ORIGINAL_FRAME_CUBIC_RESIDUAL.md) retain every term of the original cubic residual, with explicit typed maps and the full outside-index contribution. [CIT1–CIT20](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/CUBIC_INVERSE_TRIAL_BOUNDS.md) derive weighted graph bounds for the matched inverse trial, retaining every derivative introduced by the exact marginal unitary. They give the complete original-state estimate and its raw matrix consequences:
+\[
+\begin{gathered}
+\|\mathcal W_\zeta\mathcal B_\zeta^{-1}F\|_\mu
+\le\mathfrak P_\zeta\|F\|_\rho,\\
+R\le\mathfrak P_\zeta^2S,\qquad
+E\le\frac{\mathfrak P_\zeta^2}{1+\mathfrak P_\zeta^2}S .
+\end{gathered}
+\]
+The finite expression for the upper function is explicit. Its exact original-path growth is a positive constant times j to the sixtieth power, with every finite term retained. This improves the earlier exponential density comparison but remains insufficient to prove surviving spectral mass. It does not establish divergence of the actual residual. The signed response and actual shrinking-window behavior remain the next calculations toward the smooth global no-gap goal.

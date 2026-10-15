@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-15T06:40:29.025719+00:00",
+  "checked_utc": "2026-10-15T08:02:36.658071+00:00",
   "all_passed": true,
   "exact_incidence_cases": 9,
   "phase_checks": 32,
@@ -721,8 +721,8 @@
     },
     {
       "source": "COMMON_CUBIC_SPATIAL_RESPONSE.md",
-      "sha256": "8888d7fc1268382c47bb2ee14ab2ba027ecbc48ba384b55660a89df46bfc3088",
-      "complete_math_blocks": 39,
+      "sha256": "71f2ce235fb27a50fbb1960b9e90be6402316773f000846bb5c1a3a9fdd69270",
+      "complete_math_blocks": 40,
       "split_to_aligned_wrappers": 0
     },
     {
@@ -733,8 +733,20 @@
     },
     {
       "source": "FULL_CUBIC_SOURCE_COMPRESSION.md",
-      "sha256": "b8bdc70182a8574be7c06b95857eeb483a147a89054a362027f41056f73d053b",
-      "complete_math_blocks": 121,
+      "sha256": "6a07a073e37784d406b95040ab905d5759ef78891cab4d832d9732872d880ce6",
+      "complete_math_blocks": 122,
+      "split_to_aligned_wrappers": 0
+    },
+    {
+      "source": "ORIGINAL_FRAME_CUBIC_RESIDUAL.md",
+      "sha256": "a244d3e8201df748691e8b969132eef02e96252564737a32ec7dab9097bab5a1",
+      "complete_math_blocks": 142,
+      "split_to_aligned_wrappers": 2
+    },
+    {
+      "source": "CUBIC_INVERSE_TRIAL_BOUNDS.md",
+      "sha256": "5ae0099e84edc32ee6943485618f1706bc9256392afba4d9515dac9d3427fa95",
+      "complete_math_blocks": 217,
       "split_to_aligned_wrappers": 0
     }
   ],
@@ -1487,6 +1499,16 @@
     {
       "file": "FULL_CUBIC_COMPRESSION_AND_RESIDUAL.png",
       "sha256": "9bc67ed6a5ac90a084ae5215ce81cd465d63ccea145aeec2fcd2a98b7c3de471",
+      "visually_inspected": true
+    },
+    {
+      "file": "ORIGINAL_FRAME_CUBIC_RESIDUAL.png",
+      "sha256": "1b4788bccd59363796862bf4402e3f42af3b9b83d6dccf81f494ccc3d87891b1",
+      "visually_inspected": true
+    },
+    {
+      "file": "EXACT_MARGINAL_UNITARY_AND_RESIDUAL.png",
+      "sha256": "9dfac5d2e171817dde063d02f2535ac0e5f8a0b1b06f574c9db142e99b6bbfa7",
       "visually_inspected": true
     }
   ],
@@ -11337,6 +11359,207 @@
         "FULL_CUBIC_COMPRESSION_AND_RESIDUAL.png"
       ],
       "method": "All15new/receiving/adjacent pages viewed in four rendered contact sheets; full compression figure inspected in the reader and at original size. All equations and the full finite coefficients visible; no new clipping or overflow.",
+      "new_overflows": 0,
+      "new_missing_characters": 0,
+      "inherited_overflows": 59,
+      "inherited_missing": [
+        "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+      ]
+    }
+  },
+  "inverse_trial_review": {
+    "utc": "2026-10-15T07:51:41.707801+00:00",
+    "coverage": "Complete CDE1–CDE8 and CIT1–CIT20: exact typed maps, full ordered original-field cubic, actual ground moments and incidence arrays, weighted heat comparison and all derivative recursions, every ordered inverse-multiplier partition, full transformed graph estimate and original-path asymptotic coefficient.",
+    "strengthening": "Derives the actual inverse-trial graph bounds and a complete explicit polynomial upper bound for the entire complementary residual; transfers it to noncommuting raw source/error matrices.",
+    "corrections": "CDE8 alone retains unevaluated supremum norms. CIT supplies a distinct proved weighted L2 estimate, not an assumed value for those norms. Pure potential terms use the exact crossing-face projection identity; score products and outside-score sum keep all faces. The degree60 asymptotic is proved separately and never replaces the finite formula. The crossing-face count C_Q and the original Haar Casimir are explicitly distinguished by type and notation; the operator is written mathsf C_Q without changing it.",
+    "limitations": "The upper bound grows as j^60 and gives no positive limiting captured fraction. No actual residual divergence, spectral survival, reconstruction or global gaplessness is inferred.",
+    "diagnostic_count": 717,
+    "diagnostic_scope": "17 exact rational original SU2 identities;150 incidence, heat, interpolation, original-path and noncommuting matrix checks;550 exact rational noncommuting ordered-jet/partition checks and complete-bound growth diagnostics. Constructed fixtures are not Wilson ground samples.",
+    "figures_inspected": [
+      "ORIGINAL_FRAME_CUBIC_RESIDUAL.png",
+      "EXACT_MARGINAL_UNITARY_AND_RESIDUAL.png"
+    ],
+    "novelty_claim": false,
+    "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+    "public_proofs": [
+      {
+        "source": "ORIGINAL_FRAME_CUBIC_RESIDUAL.md",
+        "prefix": "CDE",
+        "tags": 8,
+        "owner_sha256": "a244d3e8201df748691e8b969132eef02e96252564737a32ec7dab9097bab5a1",
+        "public_sha256": "a244d3e8201df748691e8b969132eef02e96252564737a32ec7dab9097bab5a1",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      },
+      {
+        "source": "CUBIC_INVERSE_TRIAL_BOUNDS.md",
+        "prefix": "CIT",
+        "tags": 20,
+        "owner_sha256": "5ae0099e84edc32ee6943485618f1706bc9256392afba4d9515dac9d3427fa95",
+        "public_sha256": "5ae0099e84edc32ee6943485618f1706bc9256392afba4d9515dac9d3427fa95",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "compile": {
+      "utc": "2026-10-15T08:02:36.658071+00:00",
+      "tex_sha256": "9a8a6ef91643a0b1848cb4f555f8488dbc0919736003e7b696d0ba4a4382ef07",
+      "pdf_sha256": "5840bd058a91573793df1ca2d7ecbe3961ef4fcf6d8661c6dcd089996429c5ab",
+      "pages": 1370,
+      "source_files": 124,
+      "math_blocks": 27686,
+      "exit_code": 0,
+      "pdf_published": false,
+      "rendered_inspection": {
+        "utc": "2026-10-15T08:01:20.775806+00:00",
+        "complete": true,
+        "pages": 1370,
+        "inspected_pages": [
+          1332,
+          1333,
+          1334,
+          1347,
+          1348,
+          1349,
+          1350,
+          1351,
+          1352,
+          1353,
+          1354,
+          1355,
+          1356,
+          1357,
+          1358,
+          1359,
+          1360,
+          1361,
+          1362,
+          1363,
+          1364,
+          1365,
+          1366,
+          1367,
+          1368,
+          1369,
+          1370
+        ],
+        "new_proof_pages": [
+          1349,
+          1350,
+          1351,
+          1352,
+          1353,
+          1354,
+          1355,
+          1356,
+          1357,
+          1358,
+          1359,
+          1360,
+          1361,
+          1362,
+          1363,
+          1364,
+          1365,
+          1366,
+          1367,
+          1368,
+          1369,
+          1370
+        ],
+        "receiving_pages": [
+          1333,
+          1348
+        ],
+        "figures_inspected": [
+          "ORIGINAL_FRAME_CUBIC_RESIDUAL.png",
+          "EXACT_MARGINAL_UNITARY_AND_RESIDUAL.png"
+        ],
+        "method": "All27 new, receiving and adjacent pages visually inspected in seven rendered contact sheets; both figures inspected separately at full size. Typed maps, complete ordered equations, growth table and boxed bounds visible without new clipping or overflow.",
+        "new_overflows": 0,
+        "new_missing_characters": 0,
+        "inherited_overflows": 59,
+        "inherited_missing": [
+          "Missing character: There is no δ in font Latin Modern Roman 10 Regular/OT:scrip"
+        ]
+      }
+    }
+  },
+  "inverse_trial_compile": {
+    "utc": "2026-10-15T08:02:36.658071+00:00",
+    "tex_sha256": "9a8a6ef91643a0b1848cb4f555f8488dbc0919736003e7b696d0ba4a4382ef07",
+    "pdf_sha256": "5840bd058a91573793df1ca2d7ecbe3961ef4fcf6d8661c6dcd089996429c5ab",
+    "pages": 1370,
+    "source_files": 124,
+    "math_blocks": 27686,
+    "exit_code": 0,
+    "pdf_published": false,
+    "rendered_inspection": {
+      "utc": "2026-10-15T08:01:20.775806+00:00",
+      "complete": true,
+      "pages": 1370,
+      "inspected_pages": [
+        1332,
+        1333,
+        1334,
+        1347,
+        1348,
+        1349,
+        1350,
+        1351,
+        1352,
+        1353,
+        1354,
+        1355,
+        1356,
+        1357,
+        1358,
+        1359,
+        1360,
+        1361,
+        1362,
+        1363,
+        1364,
+        1365,
+        1366,
+        1367,
+        1368,
+        1369,
+        1370
+      ],
+      "new_proof_pages": [
+        1349,
+        1350,
+        1351,
+        1352,
+        1353,
+        1354,
+        1355,
+        1356,
+        1357,
+        1358,
+        1359,
+        1360,
+        1361,
+        1362,
+        1363,
+        1364,
+        1365,
+        1366,
+        1367,
+        1368,
+        1369,
+        1370
+      ],
+      "receiving_pages": [
+        1333,
+        1348
+      ],
+      "figures_inspected": [
+        "ORIGINAL_FRAME_CUBIC_RESIDUAL.png",
+        "EXACT_MARGINAL_UNITARY_AND_RESIDUAL.png"
+      ],
+      "method": "All27 new, receiving and adjacent pages visually inspected in seven rendered contact sheets; both figures inspected separately at full size. Typed maps, complete ordered equations, growth table and boxed bounds visible without new clipping or overflow.",
       "new_overflows": 0,
       "new_missing_characters": 0,
       "inherited_overflows": 59,
