@@ -1,0 +1,119 @@
+[
+  {
+    "source_id": "programme:PST-20261015",
+    "proofs": [
+      {
+        "source": "POSITIVE_SIGNED_TAIL_AND_RESIDUAL.md",
+        "prefix": "PST",
+        "tags": 11,
+        "owner_sha256": "07284477834b937a1579f40836adfcc7da432dc62dad082998268482b0d14966",
+        "public_sha256": "07284477834b937a1579f40836adfcc7da432dc62dad082998268482b0d14966",
+        "all_original_math_blocks_retained": true,
+        "all_original_math_content_retained": true
+      }
+    ],
+    "provider_versions": [
+      {
+        "commit": "a2653f400dadacb0cee092aca1ec7b36322d368a",
+        "source": "NESTED_INVERSE_ENERGY_AND_SIGNED_RESPONSE.md",
+        "sha256": "63f28d9a50fe535c9cde008fd5e93e1606557500f53cfc71a016c876a0c137f4",
+        "actual_reading": "Complete NSE1–NSE13 reread for original state, cubic and filter, rational certificates, typed maps and the complete nested inverse tail."
+      },
+      {
+        "commit": "a2653f400dadacb0cee092aca1ec7b36322d368a",
+        "source": "ORIGINAL_FRAME_CUBIC_RESIDUAL.md",
+        "sha256": "a244d3e8201df748691e8b969132eef02e96252564737a32ec7dab9097bab5a1",
+        "actual_reading": "Original fields, state, entire typed-map section and CDE1–CDE4 reread; full drift, outside indices, potential and vacuum energy retained."
+      },
+      {
+        "commit": "a2653f400dadacb0cee092aca1ec7b36322d368a",
+        "source": "CONTRACTED_CUBIC_BOUNDS.md",
+        "sha256": "5a9107386fa6eb488cd9fd0c9e093897c415fc8505f90bcd9fb3a134c2a193ad",
+        "actual_reading": "CCJ17–CCJ20 reread for the complete original finite residual upper function, raw coefficients and exact growth; no claim to a new state evaluation."
+      }
+    ],
+    "owner_review": {
+      "utc": "2026-10-15T10:17:36.779039+00:00",
+      "coverage": "Complete PST1–PST11: full positive polynomial, all annular and face Gram entries, six original moment maps, exact residual multiplier certificates, typed invertible Sobolev maps, full original resolvent equation, strengthened signed lower bound and two-sided raw matrix comparison.",
+      "strengthening": "The entire signed tail is compared in both directions to the original first-resolvent residual energy, with constants1/100 and43/25; the latter is sharp. No selected increment replaces the full tail.",
+      "corrections": "The positive Gram contribution is the sum of every entry, not the trace. The inverse Sobolev map keeps the original operator and vector. Residual smoothing preserves all directions and neither a finite fixture nor a multiplier curve is a Wilson-state measurement.",
+      "limitations": "The actual shifted residual energy and signed trial response are not evaluated as establishing positive shrinking-window mass. The inherited complete residual upper function still does not yield vanishing tail error. No global no-gap or continuum claim.",
+      "diagnostic_count": 266,
+      "diagnostic_scope": "Exact rational complete certificates and six nested noncommuting Hermitian fixtures, including two complex cases and a retained vacuum. Direct complex symbolic comparisons were expanded exactly; no term was omitted.",
+      "figures_inspected": [
+        "COMPLETE_TAIL_RESIDUAL_MAP.png"
+      ],
+      "novelty_claim": false,
+      "status": "Complete proof and local reader checks accepted; remote verification recorded separately.",
+      "public_proofs": [
+        {
+          "source": "POSITIVE_SIGNED_TAIL_AND_RESIDUAL.md",
+          "prefix": "PST",
+          "tags": 11,
+          "owner_sha256": "07284477834b937a1579f40836adfcc7da432dc62dad082998268482b0d14966",
+          "public_sha256": "07284477834b937a1579f40836adfcc7da432dc62dad082998268482b0d14966",
+          "all_original_math_blocks_retained": true,
+          "all_original_math_content_retained": true
+        }
+      ],
+      "compile": {
+        "utc": "2026-10-15T10:25:31.602629+00:00",
+        "tex_sha256": "bdd282d45639b532e48fb41b254c4e060d86dd648f67d96703af8e6e9b74fda4",
+        "pdf_sha256": "bae288eff4583a49468d9e1f3f6d56468f20cc3914b632f6b3c7702b4d155d8c",
+        "pages": 1409,
+        "source_files": 127,
+        "math_blocks": 28129,
+        "exit_code": 0,
+        "pdf_published": false,
+        "rendered_inspection": {
+          "utc": "2026-10-15T10:25:31.528366+00:00",
+          "complete": true,
+          "pages": 1409,
+          "rendered": [
+            1352,
+            1353,
+            1354,
+            1389,
+            1390,
+            1391,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1408,
+            1409
+          ],
+          "inspected_page_count": 17,
+          "contact_sheets_inspected": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "figures_inspected": [
+            "COMPLETE_TAIL_RESIDUAL_MAP.png"
+          ],
+          "findings": "All17 new proof, changed receiving-note and adjacent pages inspected, together with the original figure. Exact polynomial certificates, typed maps and full signed matrix formulas fit within the margins. No new overflow or missing glyph;59 earlier overflows and one earlier glyph remain. The intended NSE receiving note was restored after a filename substitution error before this final compile and inspection."
+        }
+      }
+    },
+    "new_external_reading": false,
+    "index_queries": [
+      "\"resolvent\" AND \"residual\"",
+      "\"negative Sobolev\"",
+      "\"Bernstein\" AND \"positive polynomial\"",
+      "\"resolvent\" AND \"residual\"",
+      "\"negative Sobolev\"",
+      "\"Bernstein\" AND \"positive polynomial\""
+    ],
+    "index_routing_hit_count": 12,
+    "routing_assessment": "Twelve bounded disk-index hits are metadata routes only and were not read or used. Exact programme sources and reading coverage are retained; no new external result or novelty claimed.",
+    "routing_is_not_reading": true
+  }
+]

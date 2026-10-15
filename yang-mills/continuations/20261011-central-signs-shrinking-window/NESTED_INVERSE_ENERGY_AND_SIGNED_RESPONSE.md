@@ -375,3 +375,17 @@ The nested rectangles are a schematic of the actual original cube inclusions, no
 Each point evaluates every term of NSE10 for the unchanged original path, kappa=4/5, theta=1, and coefficients one on all original faces of the side-one cube. The second graph is an upper bound for a signed quantity and is not a bound on its absolute value. The index is defined by the actual minimizing increment; neither its location nor an actual Wilson spectral sample is plotted. NSE11 proves the displayed rates with the full numerical factors 172 and 2500. Sources: [figure_nested_energy.py](figure_nested_energy.py) and the complete finite calculation in [check_nested_energy.py](check_nested_energy.py).
 
 The 217 diagnostics comprise 88 exact rational checks of NSE1–NSE4 in [check_signed_energy.py](check_signed_energy.py) and 129 additional checks in [check_nested_energy.py](check_nested_energy.py). They retain complete rational multiplier polynomials, every Bernstein coefficient, noncommuting nested matrix compressions, their vacuum, all filtered mixed terms, and the original finite path formulas. The matrix examples are algebra diagnostics, not Yang–Mills ground states. The complete written arguments above prove the original-state statements.
+
+## Complete signed tail and its original residual energy
+
+[PST1–PST11](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_SIGNED_TAIL_AND_RESIDUAL.md) retain the whole signed tail as a positive Gram form, including every mixed face and annulus entry. The exact residual map is invertible between its stated Sobolev spaces, and its full quadratic form obeys
+\[
+\begin{gathered}
+\mathcal R_\zeta=\zeta^3q_\zeta(\mathcal L)-q_\zeta(\mathcal L)^2k_\zeta(\mathcal L),\\
+\frac{\zeta}{100}\mathfrak b_r
+\le\|\mathcal R_\zeta^{1/2}h_r\|_\mu^2
+\le\frac{43\zeta}{25}\mathfrak b_r,\qquad
+\mathfrak b_r=\langle W_r,(\mathcal L+\zeta)^{-1}W_r\rangle_\mu .
+\end{gathered}
+\]
+The complete polynomial certificates, six moment maps, original resolvent equation and both signed matrix comparisons are proved. This strengthens the lower bound for the full remaining tail. The original residual energy and signed trial response still require estimates that establish positive shrinking-window mass; the inherited upper function does not do so. The smooth global no-gap construction remains the goal.

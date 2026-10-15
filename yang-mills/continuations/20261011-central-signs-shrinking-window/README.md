@@ -876,3 +876,17 @@ C(F)\ge T_r(F)-\frac{86}{25}\zeta\sqrt{m_1(F)\delta_r(F)}
 \end{gathered}
 \]
 The original source budgets give a selected actual source-to-annular coupling bound of order j^(-1/2), with its full finite formula and parameter-dependent constant, and a one-sided signed quadratic ceiling of order j^(-2). The selected increment is not the whole remaining tail. Both negative spectral tails, all filtered mixed terms, raw coefficient and family-size factors remain. A positive shrinking-window response and the smooth global no-gap result are not yet established.
+
+## SZ-20261015-008 — Complete signed tails and the original residual resolvent
+
+[PST1–PST11](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_SIGNED_TAIL_AND_RESIDUAL.md) retain the whole signed tail as a positive Gram form, including every mixed face and annulus entry. The exact residual map is invertible between its stated Sobolev spaces, and its full quadratic form obeys
+\[
+\begin{gathered}
+\mathcal R_\zeta=\zeta^3q_\zeta(\mathcal L)-q_\zeta(\mathcal L)^2k_\zeta(\mathcal L),\\
+\frac{\zeta}{100}\mathfrak b_r
+\le\|\mathcal R_\zeta^{1/2}h_r\|_\mu^2
+\le\frac{43\zeta}{25}\mathfrak b_r,\qquad
+\mathfrak b_r=\langle W_r,(\mathcal L+\zeta)^{-1}W_r\rangle_\mu .
+\end{gathered}
+\]
+The complete polynomial certificates, six moment maps, original resolvent equation and both signed matrix comparisons are proved. This strengthens the lower bound for the full remaining tail. The original residual energy and signed trial response still require estimates that establish positive shrinking-window mass; the inherited upper function does not do so. The smooth global no-gap construction remains the goal.
