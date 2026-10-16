@@ -734,3 +734,12 @@ The classical finite-energy Cauchy step is now supplied. The complete
 period and monodromy coupling, physical gauge projection, actual Gram and
 Hamiltonian kernels, quantum spectrum and continuum reconstruction remain
 active. Classical energies tending to zero are not quantum spectral weight.
+
+## The three marked Jordan slots and their composed profile
+
+[JMO1–JMO12](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/JORDAN_MARKED_SLOTS_AND_PROFILE_MAP.md) give the exact upper-entry to cyclic-slot map \((r,q,p)\mapsto(r,\bar q,p)\), the complete Jordan square, and the existing tangent receiver with all \(\Delta_i\) factors. The equivariant map
+\[
+\mathcal P(r,q,p)=(\bar p q,pr,q\bar r),\qquad
+\mathcal N=\mathcal M\circ\mathcal P
+\]
+is a smooth quartic bundle map into the original compact-support divergence-free profile space. JMO9 gives its exact common zero set with \(\mathcal M\); the full graph retains the original input and the square's diagonal terms. On the specified fibre curve \((r,q,p)=(t,1,1)\), the original profile is constant while \(\mathcal N=t^2(\mathbf i w^{(1)}+\mathbf k w^{(3)})\). Its full curvature retains both cutoff and commutator terms, with core magnetic density \(16t^8\). The existing classical Cauchy and holonomy maps receive this profile by evaluation at \(\mathcal P(w)\); no quantum spectral value is supplied by that composition.

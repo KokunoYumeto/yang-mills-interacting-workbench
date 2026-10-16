@@ -476,3 +476,12 @@ source entry. ROF15–ROF17 identify the highest row with the original
 kinetic and score fluctuations. The factor \(\Delta_Q^2t_v\) stays inside
 each conditional moment integral. These finite-regulator identities do
 not establish vanishing signed error or positive limiting spectral weight.
+
+## Positive sector moments and the full second-derivative receiver
+
+[PSE1–PSE25](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_SECTOR_CUBIC_ENERGY.md) give exact sector graph maps and full first, second and third positive sector-energy moments of the actual inverse trial. The crossing potential, vacuum energies, joint mixed norms and raw source matrices remain. In the original weighted measure,
+\[
+D_{2,0}(t)\le
+(\kappa_*^{-1}s_L+2\alpha_Qs_1)\|F\|_\rho .
+\]
+PSE18–PSE20 prove this bound by the complete weighted integration identity; its explicit upper function has power \(j^5\). PSE21–PSE24 receive it through all six original cubic residual rows and the complete representing pair. Their exact finite minima retain every previous bound. The total direct energy ceiling still has power \(j^{76}\), with coefficient \(\kappa_*^5(r_6^\dagger)^2/\theta\). PSE15–PSE16 retain the actual derivative-weighted sector moments and every ordered ground-derivative correction. These results do not evaluate physical spectral mass.

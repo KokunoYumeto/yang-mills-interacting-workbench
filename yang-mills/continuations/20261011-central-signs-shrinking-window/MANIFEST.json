@@ -467,8 +467,8 @@
     },
     {
       "path": "build_reader.py",
-      "bytes": 31900,
-      "sha256": "066831f597ed4fdd2f7b666804d85b6a5c078ca080df997dfad98ee94279761d"
+      "bytes": 32532,
+      "sha256": "6ed2491fb675df156b4e20e3c289c49be420a3850aaa00bbb067222478bd0d18"
     },
     {
       "path": "CAP_CONSTANT_CHECKS.json",
@@ -1036,6 +1036,11 @@
       "sha256": "e95c03cbc3bd8388ede56e601fe95fd9a1ab939be6083133783f6be7f60684be"
     },
     {
+      "path": "check_jordan_marked_slots.py",
+      "bytes": 5981,
+      "sha256": "2dec87008d96ce5c048b5a11288f867428594cb080b4381821c01ac6ffbfb8bc"
+    },
+    {
       "path": "check_kinetic_current.py",
       "bytes": 10562,
       "sha256": "5726d997458b7ddd0c8dc1324851dfb24bafe9acd61664abf98bcbbef3886f1c"
@@ -1154,6 +1159,11 @@
       "path": "check_positive_residual.py",
       "bytes": 5861,
       "sha256": "e3f61bd065ec99564c32f17924a51879815c26c858f4686506caf4d9fb335c93"
+    },
+    {
+      "path": "check_positive_sector.py",
+      "bytes": 10227,
+      "sha256": "ae5865d437137882877ade2caecc5cbda7c6d81015574a28c750d6c456e29c48"
     },
     {
       "path": "check_positive_time.py",
@@ -2116,6 +2126,11 @@
       "sha256": "a288725683cec5c0340afcc92b10dc450bc3b0dfb0a10feb32c29b7312fcc1bc"
     },
     {
+      "path": "evaluate_positive_receiver.py",
+      "bytes": 3849,
+      "sha256": "3c7a1a4a43047eb063cbfb7b818ede69dde28172fe35d1112a68b812c973cb92"
+    },
+    {
       "path": "evaluate_weighted_cubic.py",
       "bytes": 5433,
       "sha256": "08989944d023893edd6b9966bde44ca3166c43f2cfb57da49c73f337af68a809"
@@ -2296,6 +2311,11 @@
       "sha256": "545c77ded0f8f81d8a8afae431629114cffae6d2937abd2531aca533bbc3ca5e"
     },
     {
+      "path": "figure_jordan_marked_slots.py",
+      "bytes": 2635,
+      "sha256": "8c83dc246bfa1d2efe45367a3a78de51cd92c09f31191c1d3823bcf379bc19ed"
+    },
+    {
       "path": "figure_kinetic_profile.py",
       "bytes": 3677,
       "sha256": "018d58773914e2227133292a989556e1b76f61199a5ec08d7ed50de2f737eae3"
@@ -2339,6 +2359,11 @@
       "path": "figure_physical_score_spectral.py",
       "bytes": 2765,
       "sha256": "bc6238686b4177970316496f7d51857aceff3b43d2a94893248e7bff5cf07e97"
+    },
+    {
+      "path": "figure_positive_sector.py",
+      "bytes": 2952,
+      "sha256": "712badda0269f18909bb46a78234848b4f48328f1cef3a311e2ca8d15868fd7c"
     },
     {
       "path": "figure_positive_tail.py",
@@ -2692,8 +2717,8 @@
     },
     {
       "path": "FULL_CUBIC_FLUX_AND_RESIDUAL_ENERGY.md",
-      "bytes": 41767,
-      "sha256": "0ddc17eb5e49b276e5cae7d4a8f9e55a182e0610369f1b5d435e482615f3e0c8"
+      "bytes": 42905,
+      "sha256": "42781a3215c5fc4e68759cb8b9ad486f3e1bc7b8d02e06b3f7c55afa37d4ae40"
     },
     {
       "path": "FULL_CUBIC_FLUX_ENERGY.png",
@@ -3206,6 +3231,21 @@
       "sha256": "fe90c03e9c45e216ebf0a1c3ca3e682800a94e34a7d8332846b486bd353a58ed"
     },
     {
+      "path": "JORDAN_MARKED_SLOTS.png",
+      "bytes": 217466,
+      "sha256": "2d87de82d9f9b9973bc1b8ff181338fbc35fe3976c70903d8046c8d4ac3ad999"
+    },
+    {
+      "path": "JORDAN_MARKED_SLOTS.svg",
+      "bytes": 123696,
+      "sha256": "7b9a6c6c0584a541c964e0ff059345b1bd0068fcaf54b374eaaf92f247c02dfb"
+    },
+    {
+      "path": "JORDAN_MARKED_SLOTS_AND_PROFILE_MAP.md",
+      "bytes": 18351,
+      "sha256": "dc0a3bc02a901f2f13d3092105228fbca9a8ebe2ee42ac2a2a2836ffd54348c7"
+    },
+    {
       "path": "KINETIC_CEILING_AND_FACE_FLOOR.png",
       "bytes": 125325,
       "sha256": "e6ede7cc65c6a74102934205d3685b3c0da0f63b89a5f7b7311fb054a28cf06d"
@@ -3217,8 +3257,8 @@
     },
     {
       "path": "KINETIC_CURRENT_AND_PHYSICAL_ENERGY.md",
-      "bytes": 28592,
-      "sha256": "aabeb7ee5d330e9377e3c7f1c7fc281e2bc2b24c870653d6df9c208d59d2a3c4"
+      "bytes": 29730,
+      "sha256": "a1069dcd31fd9e9ca3650a132af0510ca51e9863bcac6315572bb0050b80ad3d"
     },
     {
       "path": "KINETIC_CURRENT_CHECKS.json",
@@ -3996,6 +4036,21 @@
       "sha256": "2b81da0fbd50bf7297a6f0d500d9903dbeccd7966d902d600f19bfa88b1952dc"
     },
     {
+      "path": "POSITIVE_SECTOR_CUBIC_ENERGY.md",
+      "bytes": 30559,
+      "sha256": "c5bcc2aa57e57a35dfeab8937cffad1730822d9551089e101edd42aae63dab8f"
+    },
+    {
+      "path": "POSITIVE_SECTOR_ENERGY.png",
+      "bytes": 218775,
+      "sha256": "939078ca77b7b3373b48f3d73d1e9171309d62c7f0db3d329750688d846ca63c"
+    },
+    {
+      "path": "POSITIVE_SECTOR_ENERGY.svg",
+      "bytes": 121650,
+      "sha256": "03f845482753a7095529469eee51b27ca6fde5047ca80a7d49ccaa1e3a8e1f34"
+    },
+    {
       "path": "POSITIVE_SIGNED_TAIL_AND_RESIDUAL.md",
       "bytes": 25916,
       "sha256": "bbe5dda69ef7d280a5165585d1b71313b021b2b1a5b7e53aa33898e467875328"
@@ -4227,18 +4282,18 @@
     },
     {
       "path": "READER_SOURCES.json",
-      "bytes": 4973,
-      "sha256": "0f0495bce122708e8e89dfe879bcef810e60c3369088129c92104dcde96e4571"
+      "bytes": 5054,
+      "sha256": "d9bc5219fd8e1aca92560b66f079cb8b5e21c38ffa664885aef8dc67e6b2299f"
     },
     {
       "path": "README.md",
-      "bytes": 132057,
-      "sha256": "82c8a2a63ae15b74eb31228a869d7a240e970b7d5b7d09a186b7380e2a0a24be"
+      "bytes": 132016,
+      "sha256": "04a212867f1495a406f5f1f24f92078a1281ed0f6810dcec3abf16685e625b25"
     },
     {
       "path": "RESEARCH_CONTINUATION.tex",
-      "bytes": 4207417,
-      "sha256": "d565728efd2d6e8e81f42cdc7190d39b18f65ed25ac2c83d3178b2d296f41668"
+      "bytes": 4260594,
+      "sha256": "896cc25365a18fcf2fdc293642972c7274dcafe2643c975e22e3619f9b78de77"
     },
     {
       "path": "RESOLVENT_HESSIAN_CHECKS.json",
@@ -4947,8 +5002,8 @@
     },
     {
       "path": "TEX_FIDELITY.json",
-      "bytes": 29470,
-      "sha256": "160e6ae9e4efe7b93de48ee715ca7ad5e571ee1ca9fd816ed64f7bd6eebea0bd"
+      "bytes": 29917,
+      "sha256": "bac3055a19c2dbb15eaef45eb3489cd6f1824ec89c29b46a2343d7f5f405b941"
     },
     {
       "path": "THREE_SCALE_PHYSICAL_WINDOW.png",
@@ -4967,8 +5022,8 @@
     },
     {
       "path": "TRIAL_WEIGHTED_VARIANCE_AND_CUBIC_DERIVATIVES.md",
-      "bytes": 33858,
-      "sha256": "8cb82daaf9c0c040b2d87a1975ae88f594bf8e1c5e2c5b86100364c1e7fd6e64"
+      "bytes": 34996,
+      "sha256": "76c7ffa2d4acc4ca6278e11d0469d85e14121ada6434b8b46c762067bbe64d57"
     },
     {
       "path": "TWO_FORM_FORCE_AND_COMMON_SPECTRUM.md",

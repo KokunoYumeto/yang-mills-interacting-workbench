@@ -781,3 +781,12 @@ remain available for the next calculation.
 The left panel follows the original ordered derivative arrays in WKM8–WKM10. Each arrow names a proved energy or full-equation estimate on the same inverse trial. The right panel evaluates the complete finite expressions WKM11–WKM12 at \(\kappa_*=4/5,\theta=1\); its denominator is the full WCR13 upper function. The horizontal line is equality of these upper functions. All constants, source norms and operator scales remain as displayed in the proof. These curves are not sampled spectral masses or actual residual energies.
 
 [check_weighted_cubic.py](check_weighted_cubic.py) checks the original two-factor SU(2) ordered commutators as exact rational polynomial identities. A separate finite tensor fixture checks the weighted matrix remainder with complex, dependent source columns. Exact score-variance fixtures and independent evaluations of the complete finite constants check all six row powers and the leading formula. These diagnostics supplement the proofs; the constructed fixtures do not replace the interacting Wilson state.
+
+## Positive sector moments and the full second-derivative receiver
+
+[PSE1–PSE25](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/main/yang-mills/continuations/20261011-central-signs-shrinking-window/POSITIVE_SECTOR_CUBIC_ENERGY.md) give exact sector graph maps and full first, second and third positive sector-energy moments of the actual inverse trial. The crossing potential, vacuum energies, joint mixed norms and raw source matrices remain. In the original weighted measure,
+\[
+D_{2,0}(t)\le
+(\kappa_*^{-1}s_L+2\alpha_Qs_1)\|F\|_\rho .
+\]
+PSE18–PSE20 prove this bound by the complete weighted integration identity; its explicit upper function has power \(j^5\). PSE21–PSE24 receive it through all six original cubic residual rows and the complete representing pair. Their exact finite minima retain every previous bound. The total direct energy ceiling still has power \(j^{76}\), with coefficient \(\kappa_*^5(r_6^\dagger)^2/\theta\). PSE15–PSE16 retain the actual derivative-weighted sector moments and every ordered ground-derivative correction. These results do not evaluate physical spectral mass.
