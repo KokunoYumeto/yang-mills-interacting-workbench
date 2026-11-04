@@ -214,7 +214,7 @@ We passed Erdős–Straus character packets through the auxiliary torus and back
 
 ## S6 geometry and marked lattice constructions
 
-**Source:** 27_s6_key_advances_frozen_2026-09-06.tex (2026-09-06 / Zenodo 22678442). Inspect the claimed complex-threefold construction on S^6 circulated by Levent Alpöge with Fable, using the frozen key-advances reader and complete archive (Zenodo 22678442), while separating geometric certificates from broader physical interpretations. The calculations ask whether the proposed fibration, period deformation, finite fillings, and marked cubic lattices are intrinsic and exact. They do not turn the geometric construction into a Yang–Mills or mass-gap theorem.
+**Source:** 27_s6_key_advances_frozen_2026-09-06.tex (2026-09-06). Inspect the claimed complex-threefold construction on S^6 circulated by Levent Alpöge with Fable, using the frozen key-advances reader and complete archive, while separating geometric certificates from broader physical interpretations. The calculations ask whether the proposed fibration, period deformation, finite fillings, and marked cubic lattices are intrinsic and exact. They do not turn the geometric construction into a Yang–Mills or mass-gap theorem.
 
 For a self-contained explanation of the object, the two aims, and each route's
 concrete result and limit, read the [S6 cold-start attempt history](s6/ATTEMPTS.md).
@@ -225,7 +225,7 @@ concrete result and limit, read the [S6 cold-start attempt history](s6/ATTEMPTS.
 
 For the claimed complex threefold on S^6, we tested whether the fibration is recoverable from the threefold rather than chosen as an external coordinate. Canonical sections and the full anticanonical graded algebra give an explicit degree-two map with the original projective coordinates retained. This is a certificate for the specified analytic construction.
 
-[1. The anticanonical ring recovers the fibration; full proof Theorem 53.17, CR1–CR5](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
+[1. The anticanonical ring recovers the fibration; full proof Theorem 53.17, CR1–CR5](s6/27_s6_key_advances_frozen_2026-09-06.tex)
 
 <a id="s6-period-deformation"></a>
 
@@ -233,7 +233,7 @@ For the claimed complex threefold on S^6, we tested whether the fibration is rec
 
 We varied the S^6 construction's original period parameter and computed the period and Kodaira–Spencer maps. The intrinsic fibration and three fixed critical values give a nonzero first-order fibre variation. This does not classify all deformations or distinguish every pair of unmarked fibres.
 
-[2. The original period constant gives a nonzero deformation; Theorem 53.18, PD1–PD18](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
+[2. The original period constant gives a nonzero deformation; Theorem 53.18, PD1–PD18](s6/27_s6_key_advances_frozen_2026-09-06.tex)
 
 <a id="s6-finite-fillings"></a>
 
@@ -241,7 +241,7 @@ We varied the S^6 construction's original period parameter and computed the peri
 
 We computed the finite fillings and attachment maps in the S^6 construction while retaining its periods and affine generators. Product covers and deck groups give the cover kernels, complete central attachment kernel, and a smooth normal-line trivialization with inverse. These finish the specified finite-centre calculations, not every global step.
 
-[3. Finite fillings; full proofs Theorems 53.4, 53.6, 53.7, 53.9, FF1–FF46](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
+[3. Finite fillings; full proofs Theorems 53.4, 53.6, 53.7, 53.9, FF1–FF46](s6/27_s6_key_advances_frozen_2026-09-06.tex)
 
 <a id="s6-marked-cubic-transport"></a>
 
@@ -249,7 +249,7 @@ We computed the finite fillings and attachment maps in the S^6 construction whil
 
 We carried the cubic arithmetic through the marked Niemeier and Leech lattices in the S^6 reader. Integral neighbours and full cubic polarization give explicit value-group inclusions and quotients. They concern generated value groups; they do not identify the lattices or prove a physical mass gap.
 
-[4. Niemeier–Leech transport; higher-rung Sections 9–11, pp.106–125](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete higher-rung paper and source](https://doi.org/10.5281/zenodo.22678442)
+[4. Niemeier–Leech transport; higher-rung Sections 9–11, pp.106–125](s6/27_s6_key_advances_frozen_2026-09-06.tex)
 
 <a id="s6-literal-triality-intersection"></a>
 
@@ -257,13 +257,13 @@ We carried the cubic arithmetic through the marked Niemeier and Leech lattices i
 
 We computed the literal intersection of the cyclic octonionic construction with the retained embeddings in the original Cayley frame. Both contain the same diagonal D4 lattice, while its cubic has a generated-group value that is not attained. This separates the literal intersection from the abstract arithmetic value group.
 
-[5. A literal common lattice; higher-rung Section 12, pp.125–135](s6/27_s6_key_advances_frozen_2026-09-06.tex) · [Complete S6 source archive](https://doi.org/10.5281/zenodo.22678442)
+[5. A literal common lattice; higher-rung Section 12, pp.125–135](s6/27_s6_key_advances_frozen_2026-09-06.tex)
 
 <a id="zeta-attempts"></a>
 
 ## Zeta and arithmetic transport routes
 
-**Source:** zeta-function-research-reader complete source archive (2026-09-09 / archive commit 490a7ac7). Reconstruct the frozen 411-page zeta reader (Zenodo 22678086) and its complete source archive, then test explicit Weil, Mellin, angular-momentum, and radial-recursion claims without treating a transported signal as an RH proof. The route keeps the actual polynomial mechanism, theta input, corrected fluid field, full Mellin factors, and axis recursion named. This makes clear which calculations are exact source results and which RH-relevant conclusions remain unproved.
+**Source:** zeta-function-research-reader complete source archive (2026-09-09 / archive commit 490a7ac7). Reconstruct the frozen 411-page zeta reader and its complete source archive, then test explicit Weil, Mellin, angular-momentum, and radial-recursion claims without treating a transported signal as an RH proof. The route keeps the actual polynomial mechanism, theta input, corrected fluid field, full Mellin factors, and axis recursion named. This makes clear which calculations are exact source results and which RH-relevant conclusions remain unproved.
 
 [Maintaining workbench](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/63dc28e53c37a0c17c2648a5e006b3aea758e182/ATTEMPTS.md)
 

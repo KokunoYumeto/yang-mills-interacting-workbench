@@ -2,9 +2,9 @@
 
 ## Integration update — 9 September 2026
 
-The current [workbench map](../../WORKBENCH.md) supersedes the discovery gaps described in the historical inspection below. It incorporates both documentation proposals and the 284-file source revision e0a04c0. The [Navier–Stokes state](../../navier-stokes/RESEARCH_STATE.md) supplies the programme intent, complete source-body map, correction history and unfinished validation status requested in issue #2. Its corrected DOI is [10.5281/zenodo.22678406](https://doi.org/10.5281/zenodo.22678406); the earlier 162-page DOI remains historical.
+The current [workbench map](../../WORKBENCH.md) supersedes the discovery gaps described in the historical inspection below. It incorporates both documentation proposals and the 284-file source revision e0a04c0. The [Navier–Stokes state](../../navier-stokes/RESEARCH_STATE.md) supplies the programme intent, complete source-body map, correction history and unfinished validation status requested in issue #2.
 
-Published raw Git JSON/check blobs match the corrected Zenodo objects. Local CRLF conversion caused an earlier apparent mismatch. The formal run is stopped without a completed endpoint certificate. Mirror work is paused after this update. The dated observations below describe the earlier documentation session and are retained as history.
+Local CRLF conversion caused an earlier apparent mismatch. The formal run is stopped without a completed endpoint certificate. Mirror work is paused after this update. The dated observations below describe the earlier documentation session and are retained as history.
 
 [Documentation home](README.md) • Inspected 9 September 2026
 
@@ -12,7 +12,7 @@ Published raw Git JSON/check blobs match the corrected Zenodo objects. Local CRL
 
 The current [workbench overview](../../WORKBENCH.md) and [machine catalogue](../../workbench.json) supersede the earlier 22-file navigation snapshot. [Yang–Mills](../../yang-mills/) contains the 79-page quantum and 81-page volume readers, their companion readers and full selected sources; [S6](../../s6/) links its complete frozen project; [Navier–Stokes](../../navier-stokes/) gives the corrected reader and source records.
 
-The directly inspected current editions are [Yang–Mills 22678364](https://doi.org/10.5281/zenodo.22678364), [S6 22678442](https://doi.org/10.5281/zenodo.22678442), and [Navier–Stokes 22678406](https://doi.org/10.5281/zenodo.22678406). The last is the corrected **208-page** edition; **22667379 is the earlier 162-page edition**. The historical observation below reported a DOI from another README before the actual record could be inspected; it is not the current publication pointer.
+The current Navier–Stokes reader is the corrected **208-page** edition; the earlier edition had 162 pages.
 
 The [public Overleaf](https://www.overleaf.com/read/rtmyqxyrzprn#fa24eb) is the shared evolving workbench, not an immutable DOI snapshot. The Navier–Stokes task has now supplied [its own current research state](../../navier-stokes/RESEARCH_STATE.md), including the stopped formal run and a [dedicated corrected Overleaf reader](https://www.overleaf.com/read/hzthvczhdyxc#a60fc2). This supplies the descriptive handoff requested in issue #2; archived mathematical checks retain their original scopes.
 
@@ -22,7 +22,7 @@ PRs #1 and #3 have been integrated into the current topic organization with thes
 
 [The Yang–Mills repository README](https://github.com/KokunoYumeto/yang-mills-interacting-workbench/blob/ed8cb4bee090d8f7cc14166199aebdef557d066e/README.md) identifies a 208-page Navier–Stokes workbench, full TeX, source bundle and JSON records. It expressly says complete analytical/Lean validation remains in progress. That is the source's scope statement, not a new assessment of the mathematics by this documentation session.
 
-[The zeta reader README](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/cf3c5f9dd58524ad2f911a2ecccaff994c3f4f97/README.md) lists a 208-page fluid reader in a frozen six-reader release and links a separate Navier–Stokes DOI, 10.5281/zenodo.22667379. The DOI is reported from that README. The Zenodo landing page could not be retrieved in this pass. Equal page counts do not establish that the two fluid readers are byte-identical or equally current.
+[The zeta reader README](https://github.com/KokunoYumeto/zeta-function-research-reader/blob/cf3c5f9dd58524ad2f911a2ecccaff994c3f4f97/README.md) lists a 208-page fluid reader in a frozen six-reader release. Equal page counts do not establish that the two fluid readers are byte-identical or equally current.
 
 Targeted accessible-repository searches for Navier/Stokes returned the Yang–Mills and zeta repositories, not a separately named Navier–Stokes repository. This does not exclude private or differently named working locations. The newest source session has not been identified.
 

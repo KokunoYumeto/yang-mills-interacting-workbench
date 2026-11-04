@@ -9,4 +9,4 @@ The repository's original root-level files remain at their existing URLs. Start 
 - `navier_stokes_workbench_208p.pdf`, `navier_stokes_workbench.tex`, `navier_stokes_source_bundle.zip`, `navier_stokes_primary_manifest.json`, `navier_stokes_checks.json`: still-current corrected Navier–Stokes artifacts, also indexed under `navier-stokes/`.
 - `check_fixed_coupling_analytic_disk_obstruction.py` and `scaled_angle_prescribed_kernel_rates.md`: retained standalone entries; the complete current spatial manuscript is under `yang-mills/`.
 
-Earlier permanent publications remain available in the version histories of the [Yang–Mills](https://doi.org/10.5281/zenodo.22666540), [S6](https://doi.org/10.5281/zenodo.22235523) and [Navier–Stokes](https://doi.org/10.5281/zenodo.22667378) collections. Historical statements keep their original dates and should be read alongside subsequent corrections.
+Historical statements keep their original dates and should be read alongside subsequent corrections.
