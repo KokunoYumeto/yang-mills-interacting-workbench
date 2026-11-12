@@ -41,6 +41,8 @@ unfinished. For the S6 construction, see the [5 October status note](s6/STATUS_2
   readers are at the top level of the repository.
 - **S6.** The [five-page key-advances reader](s6/26_s6_key_advances_frozen_2026-09-06.pdf)
   ([LaTeX](s6/27_s6_key_advances_frozen_2026-09-06.tex)) and the [project guide](s6/README.md).
+  The S6 work as a whole (workbench, course CG-S6, consolidation and the survey of 12 November 2026) is now in
+  [s6-complex-structure-workbench](https://github.com/KokunoYumeto/s6-complex-structure-workbench).
 - **Navier–Stokes.** The [208-page corrected reader](navier_stokes_workbench_208p.pdf) with its
   [LaTeX](navier_stokes_workbench.tex); [navier-stokes/](navier-stokes/) holds the structured proofs, checks, the
   [vacuum-hydrodynamics continuation](navier-stokes/continuations/20260919-vacuum-hydrodynamics/), the
