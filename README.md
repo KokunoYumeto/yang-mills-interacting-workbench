@@ -9,7 +9,7 @@ reproducible computations, check records and an account of what was tried.
 
 ## How it was made
 
-The research is AI-produced, by OpenAI models GPT-5.6 Sol (effort not recorded) and GPT-6 Astra (effort not recorded), in an open human–AI collaboration
+The research is AI-produced, by OpenAI models GPT-5.6 Sol and GPT-6 Astra, at reasoning effort ultra,, in an open human–AI collaboration
 ([PolyClank](docs/polyclank/)). The written analytic arguments and the executed finite checks have separate, stated
 scopes, and each continuation records which proofs were supplied and which checks were replayed. The originating
 constructions by Levent Alpöge and the other sources are credited at their point of use ([ATTRIBUTION.md](ATTRIBUTION.md)).
