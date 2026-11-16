@@ -1,5 +1,7 @@
 # What has been tried in the S6 reconstruction
 
+**Status, 5 October 2026.** The construction does give complex structures on S⁶ ([AC26]; an independent, self-contained proof by Engel, [E26]), and every member of the family is a counterexample to CDP20, Corollary 2.3 and Theorem 2.2: see [STATUS_2026-10-05.md](STATUS_2026-10-05.md). Where the map below calls the identification with S⁶ a claim, it keeps the wording of its date. The S6 work continues in [s6-complex-structure-workbench](https://github.com/KokunoYumeto/s6-complex-structure-workbench).
+
 The originating construction is due to the programme circulated by **Levent Alpöge and produced with Claude**. Its period data, and their later use in Yang–Mills maps, are credited with exact locators in the [attribution clarification](../ATTRIBUTION.md). The dated archive and its own mathematical qualifications are retained.
 
 This page is a cold-start map for a reader encountering this repository without

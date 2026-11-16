@@ -101,6 +101,8 @@ The fixed-coordinate covariance is $\frac12\mathscr L(H)^{-1}$, and $\mathbb E_H
 
 ## MC-006 — global S6 recognition remains a source claim
 
+**Superseded, 5 October 2026.** Global recognition is no longer only a source claim: by Engel's independent proof [E26, Theorem 4.1], every member is diffeomorphic to S6; see [../../STATUS_2026-10-05.md](../../STATUS_2026-10-05.md). The entry below is kept as the record of 30 September.
+
 **Risk in the corpus.** Local gluing, cohomological checks, compilation, and repeated historical summaries could be read as a completed global recognition theorem.
 
 **Exact status.** The current audit has structural routes and bounded readings, but no complete chain proving that the glued global candidate is the intended S6 object. Local compatibility and numerical checks do not supply the missing global morphism or recognition theorem.

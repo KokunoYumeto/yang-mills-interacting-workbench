@@ -216,6 +216,8 @@ We passed Erdős–Straus character packets through the auxiliary torus and back
 
 **Source:** 27_s6_key_advances_frozen_2026-09-06.tex (2026-09-06). Inspect the claimed complex-threefold construction on S^6 circulated by Levent Alpöge with Fable, using the frozen key-advances reader and complete archive, while separating geometric certificates from broader physical interpretations. The calculations ask whether the proposed fibration, period deformation, finite fillings, and marked cubic lattices are intrinsic and exact. They do not turn the geometric construction into a Yang–Mills or mass-gap theorem.
 
+**Status, 5 October 2026.** The construction gives complex structures on S^6 ([AC26]; an independent proof by Engel, [E26]), and every member of the family is a counterexample to CDP20, Corollary 2.3 and Theorem 2.2: see [the S6 status of 5 October](s6/STATUS_2026-10-05.md). The paragraph above describes the task as it stood on 6 September.
+
 For a self-contained explanation of the object, the two aims, and each route's
 concrete result and limit, read the [S6 cold-start attempt history](s6/ATTEMPTS.md).
 
